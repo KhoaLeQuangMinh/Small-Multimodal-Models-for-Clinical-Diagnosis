@@ -13,3 +13,5 @@ Copy dataset all files to /Users/khoale/Downloads/Project - SLM for Disease Diag
 Run explore_dataset.ipynb to create tropical custom dataset
 
 explore the tropical dataset in explore_tropical dataset.ipynb
+
+make sure to gitignore the dataset before pushing 
