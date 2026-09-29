@@ -47,6 +47,7 @@ Datasets/                                                  # Root of this reposi
 │   │   ├── tropical_lightrag_colab.ipynb                  # End-to-end KG builder with local Ollama Qwen 3B
 │   │   ├── setup_tropical_rag.py                          # CLI runner for local LightRAG ingestion & testing
 │   │   ├── kg_extraction/                                 # Decoupled subagent extraction pipeline
+│   │   │   ├── HOW_TO_RUN_IN_ANTIGRAVITY.md               # Step-by-step operational guide for teammates
 │   │   │   ├── runner.md                                  # Antigravity driving prompt for parallel triplet extraction
 │   │   │   ├── prompt.md                                  # Reference LightRAG triplet extraction prompt
 │   │   │   ├── prepare_case_prompts.py                    # Generates 1,797 prompt files in case_prompts/
