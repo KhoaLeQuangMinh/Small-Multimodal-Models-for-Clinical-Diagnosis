@@ -24,10 +24,24 @@ dist/
 build/
 .env
 
+# Image Files & Folders (NEVER commit medical images to git)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tif
+*.tiff
+**/images/
+**/PMC[0-9]*/
+Official_MultiCaRe/MultiCaReClassifier/cofunsion_matrices/
+
 # Large Medical Datasets & Archives
-MultiCaRe_Dataset/Demos/medical_datasets/
-MultiCaRe_Dataset/Demos/v1/
+Official_MultiCaRe/whole_multicare_dataset/
+Custom_Tropical_Project/2_Clinical_Verification/*
+!Custom_Tropical_Project/2_Clinical_Verification/todo.md
+!Custom_Tropical_Project/2_Clinical_Verification/README.md
 *.parquet
+*.jsonl
 *.zip
 *.tar
 *.tar.gz
@@ -36,6 +50,8 @@ MultiCaRe_Dataset/Demos/v1/
 # LightRAG Knowledge Graph & Vector DB Storage
 *_storage/
 tropical_kg_storage/
+tropical_kg_gemini_storage/
+test_storage/
 *.graphml
 kv_store_*.json
 vdb_*.json

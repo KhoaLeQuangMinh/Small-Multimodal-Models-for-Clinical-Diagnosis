@@ -36,9 +36,15 @@ async def main():
     await rag.initialize_storages()
 
     # 4. Path to filtered tropical clinical cases
-    cases_file = "MultiCaRe_Dataset/Demos/medical_datasets/tropical_infectious_diseases_cohort/cases.csv"
-    if not os.path.exists(cases_file):
-        print(f"Error: {cases_file} not found! Please run explore_dataset.ipynb first.")
+    candidate_paths = [
+        "../2_Tropical_Cohort/tropical_infectious_diseases_cohort/cases.csv",
+        "./Custom_Tropical_Project/2_Tropical_Cohort/tropical_infectious_diseases_cohort/cases.csv",
+        "./cases.csv",
+        "cases.csv"
+    ]
+    cases_file = next((p for p in candidate_paths if os.path.exists(p)), None)
+    if not cases_file:
+        print("Error: cases.csv not found! Checked:", candidate_paths)
         return
 
     print(f"\nIngesting first {MAX_CASES_TO_INDEX} tropical clinical cases into Knowledge Graph...")
