@@ -43,8 +43,16 @@ Datasets/                                                  # Root of this reposi
 │   │       └── images/                                    # 3,013 verified multimodal image panels (.webp format)
 │   │
 │   ├── 3_LightRAG_Knowledge_Graph/                        # [READING STEP 5] Knowledge Graph construction & clinical retrieval
-│   │   ├── tropical_lightrag_colab.ipynb                  # Active notebook: Builds & queries hybrid KG (Mac M1 local / Colab T4 GPU)
+│   │   ├── tropical_lightrag_mock_llm.ipynb               # Fast Decoupled KG builder (Pre-extracted triplets + bge-m3, ~10 min total)
+│   │   ├── tropical_lightrag_colab.ipynb                  # End-to-end KG builder with local Ollama Qwen 3B
 │   │   ├── setup_tropical_rag.py                          # CLI runner for local LightRAG ingestion & testing
+│   │   ├── kg_extraction/                                 # Decoupled subagent extraction pipeline
+│   │   │   ├── runner.md                                  # Antigravity driving prompt for parallel triplet extraction
+│   │   │   ├── prompt.md                                  # Reference LightRAG triplet extraction prompt
+│   │   │   ├── prepare_case_prompts.py                    # Generates 1,797 prompt files in case_prompts/
+│   │   │   ├── validate_triplets.py                       # Validates and summarizes extracted triplet JSON files
+│   │   │   ├── case_prompts/                              # [Git-ignored] 1,797 self-contained prompt files
+│   │   │   └── extracted_triplets/                        # [Git-ignored] Extracted entities and relationships per case
 │   │   ├── tropical_kg_storage/                           # [Git-ignored] Local Ollama graph database & vector index (GraphML + JSON)
 │   │   ├── tropical_kg_gemini_storage/                    # [Git-ignored] Cloud graph storage cache
 │   │   └── test_storage/                                  # [Git-ignored] Scratch folder for quick unit tests
