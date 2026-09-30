@@ -8,6 +8,7 @@ This directory contains the pipeline to extract high-quality clinical entities a
 
 * **👉 [HOW_TO_RUN_IN_ANTIGRAVITY.md](HOW_TO_RUN_IN_ANTIGRAVITY.md)** — **Start here!** Full step-by-step guide on which folder to open, how to paste the runner prompt, and how to switch accounts when quota is exhausted.
 * **[runner.md](runner.md)** — The driving prompt block to copy and paste into Antigravity chat.
+* **[subagent_prompt.md](subagent_prompt.md)** — Verbatim subagent worker prompt template passed into `invoke_subagent`.
 * **[prompt.md](prompt.md)** — Reference copy of LightRAG's entity and relationship extraction prompt.
 
 ---
@@ -19,6 +20,7 @@ kg_extraction/
 ├── HOW_TO_RUN_IN_ANTIGRAVITY.md # Step-by-step instructions for running in Antigravity
 ├── README.md                    # Overview of the extraction pipeline
 ├── runner.md                    # Antigravity driving prompt (paste into chat)
+├── subagent_prompt.md           # Verbatim subagent worker prompt template
 ├── prompt.md                    # Reference copy of the extraction prompt
 ├── prepare_case_prompts.py      # Generates 1,797 prompt files from partA_final.jsonl
 ├── validate_triplets.py         # Progress & graph density verification script

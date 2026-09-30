@@ -49,6 +49,7 @@ Datasets/                                                  # Root of this reposi
 │   │   ├── kg_extraction/                                 # Decoupled subagent extraction pipeline
 │   │   │   ├── HOW_TO_RUN_IN_ANTIGRAVITY.md               # Step-by-step operational guide for teammates
 │   │   │   ├── runner.md                                  # Antigravity driving prompt for parallel triplet extraction
+│   │   │   ├── subagent_prompt.md                         # Verbatim subagent worker prompt template
 │   │   │   ├── prompt.md                                  # Reference LightRAG triplet extraction prompt
 │   │   │   ├── prepare_case_prompts.py                    # Generates 1,797 prompt files in case_prompts/
 │   │   │   ├── validate_triplets.py                       # Validates and summarizes extracted triplet JSON files

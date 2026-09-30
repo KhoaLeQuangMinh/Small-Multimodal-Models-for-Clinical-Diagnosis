@@ -28,8 +28,10 @@ This guide provides step-by-step instructions for running the distributed extrac
 3. Verify in the file explorer sidebar that you see:
    - `case_prompts/` (containing 1,797 `.txt` prompt files)
    - `extracted_triplets/` (destination folder)
-   - `runner.md`
-   - `validate_triplets.py`
+   - `runner.md` (driving prompt)
+   - `subagent_prompt.md` (subagent worker prompt template)
+   - `validate_triplets.py` (verification script)
+
 
 ---
 

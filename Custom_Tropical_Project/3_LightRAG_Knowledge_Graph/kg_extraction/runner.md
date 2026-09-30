@@ -38,16 +38,32 @@ HOW TO RUN IT
   Do not skip it, even if the first waves feel slow.
 
 EACH SUBAGENT
-  Give each subagent one chunk of 10 files and these instructions:
-    - Read each file and follow the instructions inside it exactly.
-    - The file asks for a JSON object with "entities" and "relationships"
-      arrays. Produce exactly that — nothing else, no prose around it,
-      no markdown fences.
-    - Write the JSON to `extracted_triplets/<case_id>.json`.
-    - Treat every case as completely independent. Do not let one case
-      influence another. Do not look for patterns across the 10. Do not
-      reason about them together or reuse a previous answer's shape. Each
-      file is a different patient and a separate extraction task.
+  Invoke each subagent using `invoke_subagent` with:
+    - TypeName: "self"
+    - Role: "Clinical Triplet Extractor"
+    - Model: "inherit"
+    - Prompt: Use this EXACT prompt template (replacing {FILE_LIST} with the 10 assigned filenames):
+      """
+      You are a specialized Clinical Knowledge Graph Extractor worker.
+      You are assigned a batch of 10 clinical case prompt files in `case_prompts/`:
+      {FILE_LIST}
+
+      For each file:
+      1. Read the file using `view_file`: case_prompts/<filename>.txt
+      2. Follow the extraction instructions inside the file strictly.
+      3. Construct a valid JSON object: {"entities": [...], "relationships": [...]}
+      4. Determine case_id by stripping the 4-digit prefix (e.g. 0001_PMC10018284_01.txt -> PMC10018284_01).
+      5. Write ONLY the raw JSON string directly to disk using `write_to_file`:
+         extracted_triplets/<case_id>.json
+         (No markdown ```json fences, no prose before or after).
+      6. If invalid or error occurs, save verbatim to:
+         extracted_triplets/<case_id>.raw.txt
+      7. Treat every case as completely independent.
+
+      When all 10 files are done, reply:
+      "Batch complete: X/10 cases successfully written to extracted_triplets/."
+      """
+
 
 IF SOMETHING FAILS
   - Quota / 429 / RESOURCE_EXHAUSTED: stop launching new subagents, wait
