@@ -445,12 +445,54 @@ async def main():
     await rag.initialize_storages()
     print("LightRAG storages ready. Commencing benchmark...\n")
 
+    # Check for existing progress to enable Auto-Resume
+    completed_case_ids = set()
     results_log = []
+    
+    fieldnames = [
+        "case_id",
+        "ground_truth",
+        "predicted_primary",
+        "predicted_diffs",
+        "confidence",
+        "top1_acc",
+        "top3_acc",
+        "num_entities",
+        "num_relations",
+        "num_chunks",
+        "raw_response"
+    ]
+
+    if os.path.exists(OUTPUT_CSV):
+        try:
+            with open(OUTPUT_CSV, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    completed_case_ids.add(row["case_id"])
+                    row["top1_acc"] = int(row.get("top1_acc", 0))
+                    row["top3_acc"] = int(row.get("top3_acc", 0))
+                    results_log.append(row)
+            if completed_case_ids:
+                print(f"--> [AUTO-RESUME] Detected existing CSV with {len(completed_case_ids)} completed cases. Resuming from case {len(completed_case_ids) + 1}...\n")
+        except Exception as e:
+            print(f"Warning reading existing CSV: {e}")
+
+    # If starting fresh, write header
+    if not os.path.exists(OUTPUT_CSV) or len(completed_case_ids) == 0:
+        with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+
     global current_clues
 
     async with aiohttp.ClientSession() as session:
         for i, tc in enumerate(test_cases, start=1):
             cid = tc["case_id"]
+            
+            # Skip already completed cases
+            if cid in completed_case_ids:
+                continue
+
             masked_text = tc["masked_text"]
             ground_truth = tc["ground_truth"]
             current_clues = tc.get("remaining_clues", "")
@@ -505,42 +547,29 @@ async def main():
                 "raw_response": json.dumps(prediction, ensure_ascii=False),
             }
             results_log.append(row)
+            completed_case_ids.add(cid)
 
-            # Progress log every 10 cases (or final)
-            if i % 10 == 0 or i == len(test_cases):
-                running_top1 = sum(r["top1_acc"] for r in results_log) / len(results_log) * 100
-                running_top3 = sum(r["top3_acc"] for r in results_log) / len(results_log) * 100
-                print(
-                    f"  [{i:>3}/{len(test_cases)}] Case: {cid} | "
-                    f"Top-1: {eval_metrics['top1_acc']} (Acc: {running_top1:4.1f}%) | "
-                    f"Top-3: {eval_metrics['top3_acc']} (Acc: {running_top3:4.1f}%) | "
-                    f"Pred: {eval_metrics['predicted_primary'][:22]}"
-                )
+            # Append immediately to CSV on disk (crash & interrupt-proof)
+            with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writerow(row)
+
+            # Progress log every 5 cases or final
+            running_top1 = sum(int(r["top1_acc"]) for r in results_log) / len(results_log) * 100
+            running_top3 = sum(int(r["top3_acc"]) for r in results_log) / len(results_log) * 100
+            print(
+                f"  [{len(results_log):>3}/{len(test_cases)}] Case: {cid} | "
+                f"Top-1: {eval_metrics['top1_acc']} (Acc: {running_top1:4.1f}%) | "
+                f"Top-3: {eval_metrics['top3_acc']} (Acc: {running_top3:4.1f}%) | "
+                f"Pred: {eval_metrics['predicted_primary'][:22]}"
+            )
 
     # =====================================================================
-    # BLOCK 9: SAVE CSV & SUMMARY REPORT
+    # BLOCK 9: SUMMARY REPORT
     # =====================================================================
-    fieldnames = [
-        "case_id",
-        "ground_truth",
-        "predicted_primary",
-        "predicted_diffs",
-        "confidence",
-        "top1_acc",
-        "top3_acc",
-        "num_entities",
-        "num_relations",
-        "num_chunks",
-        "raw_response"
-    ]
-    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(results_log)
-
     total = len(results_log)
-    final_top1 = sum(r["top1_acc"] for r in results_log) / total * 100 if total > 0 else 0
-    final_top3 = sum(r["top3_acc"] for r in results_log) / total * 100 if total > 0 else 0
+    final_top1 = sum(int(r["top1_acc"]) for r in results_log) / total * 100 if total > 0 else 0
+    final_top3 = sum(int(r["top3_acc"]) for r in results_log) / total * 100 if total > 0 else 0
 
     print("\n" + "=" * 65)
     print(f"         {tier_name} REPORT")
