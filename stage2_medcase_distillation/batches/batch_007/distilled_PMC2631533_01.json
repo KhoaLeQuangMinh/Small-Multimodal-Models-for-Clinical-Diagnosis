@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2631533_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 2-month-old Bedouin male infant born in a desert tent presents with multiple disfiguring facial crusty ulcers surrounded by marked erythema and edema that distort facial architecture. The massive perilesional facial edema obscures underlying syndromic features of Down syndrome. The diagnostic challenge lies in distinguishing this chronic indolent parasitic skin ulceration from bacterial ecthyma/pyoderma, atypical mycobacterial infection, or deep fungal infection in an infant.\n2. Admission Breakpoint: The admission breakpoint concludes after pediatric clinical evaluation, physical exam describing facial ulcerative lesions, recognition of syndromic dysmorphisms directing karyotyping, and initial baseline laboratory investigations (complete blood count, ESR, liver, renal, and thyroid panels). Skin biopsy, histopathologic examination, and Giemsa staining represent confirmatory testing.\n3. Differential Distinctions: Visceral leishmaniasis (Kala-azar) was an important consideration given endemic desert exposure, but the child had no fever, organomegaly, or marked pancytopenia. Bacterial pyoderma (staphylococcal/streptococcal ecthyma or impetigo) was suspected due to crusted facial ulcers, but lesions progressed over a month without systemic toxicity or spontaneous healing. Deep fungal or atypical mycobacterial infection was considered given rural desert birth, but punch biopsy Giemsa staining confirmed amastigotes inside histiocytes.",
+  "case_prompt": "A two-month-old male infant born to healthy Bedouin parents is brought to the pediatric service for evaluation of multiple progressive facial ulcers. The lesions were first noted by the parents at one month of age as small skin papules that gradually enlarged into ulcers over the course of four weeks. There has been no history of fever, irritability, or feeding difficulties. The child was delivered without perinatal complications in a desert tent where the family resides.\n\nOn physical examination, the infant is afebrile with normal vital signs. Examination of the face reveals severe distortion of facial features by three crusted ulcerative lesions surrounded by prominent erythema and extensive edema that keeps the eyes mostly closed. The largest ulcer, located on the right cheek, measures 2 x 2 cm; a second ulcer on the right lower eyelid measures 1 x 1.5 cm; and a third ulcer on the forehead measures 0.5 x 0.5 cm. There is no peripheral lymphadenopathy and no hepatosplenomegaly. Physical examination also reveals generalized hypotonia, a flat occiput, short neck, low-set ears, short broad hands with clinodactyly of the fifth finger, bilateral single transverse palmar creases, and an increased space between the first and second toes.\n\nComplete blood count and routine immunological evaluation demonstrate lymphopenia and an inverted CD4/CD8 ratio, with a normal total leukocyte count. Baseline erythrocyte sedimentation rate (ESR), liver function tests, renal function tests, and thyroid hormone levels (TSH, free T3, and free T4) are all within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Visceral leishmaniasis (Kala-azar) or systemic reticuloendothelial infection",
+      "rule_out_reason": "Considered given the desert living conditions and infant age, but ruled out by the absence of fever, absence of hepatosplenomegaly, absence of lymphadenopathy, and normal inflammatory markers.",
+      "quote": "The examination also revealed no lymphadenphathy or hepatosplenomegaly."
+    },
+    {
+      "candidate": "Bacterial ecthyma / Impetigo / Pyoderma",
+      "rule_out_reason": "Considered due to the crusted, erythematous facial ulcerative appearance in a young child; however, the ulcers demonstrated a chronic, progressive course over several weeks without acute suppurative drainage or response to routine topical hygiene, and biopsy showed intracellular parasites rather than bacterial colonies.",
+      "quote": "The ulcers was observed by the parents at the age of one month and progressively increased in size with no history of fever."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic evaluation of ulcer biopsy specimens revealed superficial reticular dermis packed with large pale histiocytes containing characteristic intracellular amastigotes, confirmed on Giemsa stain as cutaneous leishmaniasis.",
+      "quote": "Histopathologic examination of the ulcers' sections stained with hematoxylin and eosin showed a superficial reticular dermis occupied by large pale histiocytes with leishmania. With the Giemsa stain technique multiple leishmania were seen confirming the diagnosis of cutaneous leishmaniasis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to skin biopsy and Giemsa staining. Chromosomal karyotyping mentioned in discussion of dysmorphisms; clinical triage exam and baseline labs faithfully preserved. Verbatim quotes from the text substantiate candidate rule-outs."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9703518_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An immunosuppressed renal transplant recipient presents with chronic diarrhea, fever, crampy left-sided abdominal pain, 10 kg weight loss, refractory iron-deficiency anemia, and a colonoscopy/CT showing an 80% stenotic colonic mass lesion, strongly suggesting colorectal adenocarcinoma or post-transplant lymphoproliferative disorder (PTLD). The diagnostic dilemma is identifying opportunistic mycobacterial colitis in a renal allograft recipient without typical pulmonary disease.\n\n2. Admission Breakpoint: The breakpoint occurs following initial clinical presentation, physical exam, baseline stool/blood tests, colonoscopy identifying colitis with luminal stenosis, and contrast abdominal CT, prior to mucosal biopsy histopathology, viral PCR loads, and tissue mycobacterial PCR.\n\n3. Differential Distinctions: Colorectal adenocarcinoma or PTLD presents identically with significant weight loss, anemia, and stenotic colonic mass lesions in transplant recipients; however, biopsies demonstrate non-dysplastic ulceration. Opportunistic pathogens (Histoplasma, syphilis, herpesviruses, enteric bacteria) are ruled out by negative stool cultures and specific antigen/serological assays.",
+  "case_prompt": "A 32-year-old woman with a history of cadaveric renal transplantation in 2006 for membranoproliferative glomerulonephritis presents with a 4-week history of diarrhea (averaging 4 loose stools daily, previously controlled with loperamide), which has become associated over the past week with nausea, crampy abdominal pain, and subjective fevers.\n\nShe received basiliximab induction and is maintained on chronic immunosuppression with tacrolimus, mycophenolate mofetil, and deflazacort. Over the preceding 6 months, she experienced an involuntary 10 kg weight loss and was managed with oral iron supplements for refractory normochromic normocytic anemia without improvement in hemoglobin levels.\n\nOn physical examination, she is tachycardic, afebrile, and normotensive. Abdominal examination reveals localized tenderness in the left flank without guarding, rigidity, or signs of peritoneal irritation.\n\nLaboratory evaluation shows stable baseline renal allograft function with serum creatinine within her baseline range, normal electrolytes, and fecal microscopy positive for inflammatory leukocytes. Ferrokinetic and nutritional testing confirms severe iron-deficiency anemia.\n\nColonoscopy reveals left-sided and transverse colitis complicated by 80% stenosis of the colonic lumen. Contrast-enhanced computed tomography (CT) of the abdomen demonstrates marked thickening and hyperenhancement of the walls of the cecum, ascending colon, and hepatic flexure, with a 4-cm segment displaying 80% luminal stenosis of the ascending colon.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colorectal Carcinoma / Post-Transplant Lymphoproliferative Disorder (PTLD)",
+      "rule_out_reason": "Marked involuntary weight loss (10 kg), refractory iron-deficiency anemia, long-term immunosuppression, and contrast CT showing a 4-cm segment of 80% colonic stenosis strongly raised suspicion for an invasive intestinal malignancy; however, endoscopic biopsies showed ulcerative inflammation without dysplasia, clonal proliferation, or malignant cells.",
+      "quote": "Given the suspicion of neoplasia, contrast abdominal tomography was carried out, which showed thickening and enhancement of the walls of the cecum, ascending colon, and hepatic flexure of the colon, with a 4-cm segment with 80% stenosis of the ascending colon lumen. Colon biopsy reported ulcerative component, without identifying microorganisms, dysplasia, or malignancy."
+    },
+    {
+      "candidate": "Opportunistic Enteric Infections (Histoplasmosis, Syphilis, HSV Colitis, Bacterial Enteritis)",
+      "rule_out_reason": "Enteric opportunistic pathogens in an immunocompromised host were evaluated; stool bacterial cultures were negative, gastrointestinal film array was negative, urine Histoplasma antigen was negative, rapid plasma reagin was negative, and biopsy HSV I/II studies were negative.",
+      "quote": "Given the results found in colonoscopy, studies with gastrointestinal film array, CMV viral load in plasma, HIV, and rapid plasma reagin were evaluated, which were negative, as was the Histoplasma urine antigen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Colonic biopsy polymerase chain reaction (PCR) returned positive for both Mycobacterium tuberculosis and Cytomegalovirus, establishing intestinal tuberculosis with CMV coinfection in a renal transplant patient.",
+      "quote": "Polymerase chain reaction (PCR) for TB and CMV was positive in the biopsy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero biopsy PCR results in case prompt. Quotes exactly matched text."
+}

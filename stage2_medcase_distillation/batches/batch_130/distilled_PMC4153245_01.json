@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4153245_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 16-year-old adolescent presents with 4 months of fever, wasting, pancytopenia, marked hepatosplenomegaly, and retroperitoneal/paraaortic lymphadenopathy, strongly fulfilling criteria for hemophagocytic syndrome (HPS/HLH) and mimicking lymphoma. The diagnostic tension is compounded by the fact that three consecutive bone marrow aspirates failed to identify the causative organism.\n2. Admission Breakpoint: Admission triage ends after clinical presentation, travel history to northern Iran, baseline blood work (pancytopenia, transaminitis, raised ESR/CRP), negative initial routine cultures, and abdominal CT/ultrasound confirming hepatosplenomegaly and retroperitoneal lymphadenopathy. Invasive serial bone marrow aspirations constitute the confirmatory procedure.\n3. Differential Distinctions: Primary familial HLH or malignant lymphoma involves persistent lymphadenopathy and cytopenias without infectious bodies on repeated bone marrow cytology. Pyogenic bacterial sepsis causes acute inflammatory leukocytosis rather than chronic indolent pancytopenia and negative bacterial cultures.",
+  "case_prompt": "A 16-year-old boy presented with a 4-month history of persistent fever, diaphoresis, and anorexia. He had a history of travel 4 months earlier to a province located in northern Iran. On physical examination, he was ill-appearing and febrile, and abdominal examination revealed massive hepatosplenomegaly. Initial laboratory testing showed pancytopenia, elevated transaminases, an elevated erythrocyte sedimentation rate (ESR), and a positive C-reactive protein (CRP). Abdominal ultrasonography and computed tomography (CT) of the abdomen demonstrated massive hepatosplenomegaly accompanied by retroperitoneal and para-aortic lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Hemophagocytic Lymphohistiocytosis / Lymphoma",
+      "rule_out_reason": "The combination of prolonged fever, cytopenias, massive organomegaly, and deep retroperitoneal lymphadenopathy strongly mimicked a malignant lymphoproliferative process or primary HPS, but the hyperinflammatory syndrome was secondary to an occult protozoan infection.",
+      "quote": "Abdominal sonography and CT-scan of the abdomen demonstrated huge hepatosplenomegaly with retroperitoneal and paraaortic lymphadenopathy. The initial diagnosis of HPS associated with VL was made."
+    },
+    {
+      "candidate": "Bacterial sepsis / pyogenic systemic infection",
+      "rule_out_reason": "Bacterial bloodstream infection was suspected as a trigger for prolonged fever and severe systemic inflammation, but microbiological cultures remained sterile.",
+      "quote": "Blood and urine culture were negative for infectious disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite three initial negative bone marrow aspirates causing a substantial diagnostic dilemma, persistence of clinical suspicion led to a fourth bone marrow aspiration, which definitively revealed intracellular Leishman-Donovan bodies within marrow macrophages.",
+      "quote": "For confirmation of diagnosis, bone marrow aspiration (BMA) was performed 4 times. The first three BMAs were reported negative and surprisingly on the fourth BMA Leishman Donovan bodies were observed within bone marrow macrophages (Figures 1 and 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation strictly isolated to admission exam, labs, and cross-sectional imaging prior to invasive bone marrow aspirations. Zero disease spoilers. Differential quotes directly verified."
+}

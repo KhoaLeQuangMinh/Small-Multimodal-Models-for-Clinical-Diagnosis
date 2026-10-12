@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12838217_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old man presents with recurrent right upper quadrant pain, dyspepsia, anorexia, and weight loss with imaging showing marked gallbladder wall thickening, acoustic shadowing, and pericholecystic inflammatory adhesions, strongly mimicking chronic calculous cholecystitis with concealed perforation or gallbladder carcinoma. The clinical tension lies in suspecting isolated gallbladder tuberculosis in the absence of active pulmonary symptoms or systemic fevers, occurring decades after treated primary pulmonary infection.\n2. Admission Breakpoint: The admission breakpoint occurs following outpatient surgical triage, physical examination, routine hepatic biochemistry (mild hyperbilirubinemia, slight transaminitis), abdominal ultrasonography demonstrating gallbladder thickening and cholelithiasis, and magnetic resonance cholangiopancreatography (MRCP), prior to surgical intervention (laparoscopic cholecystectomy), gross specimen resection, and histopathological analysis.\n3. Differential Distinctions: Chronic calculous cholecystitis presents with biliary colic and gallstones on ultrasound but displays conventional chronic inflammatory mucosal fibrosis without caseating granulomas; gallbladder adenocarcinoma presents with irregular wall thickening, weight loss, and regional invasion but demonstrates neoplastic epithelial atypia and ductal infiltration on histology; whereas gallbladder tuberculosis is an extraordinary presentation featuring intramural chalky white nodules, Langhans giant cells, and classic caseating granulomatous necrosis on microscopic evaluation.",
+  "case_prompt": "A 50-year-old male presented to the outpatient department with chief complaints of recurrent pain in the right upper abdomen for the past 4 months, along with dyspepsia, weight loss, and loss of appetite. No history of fever, night sweats, nausea, vomiting, jaundice, or cough with expectoration was reported. The patient had been diagnosed with gallbladder perforation 3 months before admission based on ultrasound and contrast-enhanced computed tomography (CECT) whole abdomen findings, managed conservatively with antibiotics and analgesics, and advised to undergo cholecystectomy within the next 2 months. However, he deferred surgery and returned with a recurrence of more severe symptoms and additional complaints. He had a history of a remote treated pulmonary infection 30 years prior, for which he completed a 6-month antimicrobial regimen under a national health program.\n\nThe general physical and abdominal examinations were unremarkable. Routine laboratory investigations showed slightly elevated serum bilirubin (2.4 mg%) and serum glutamic-oxaloacetic transaminase (SGOT) (54 U/L) levels.\n\nUltrasound of the abdomen revealed a thickened, edematous gallbladder (7.5 mm) with a narrow lumen and a few hypodense, echogenic masses with positive DAS suggestive of cholelithiasis. Magnetic resonance cholangiopancreatography (MRCP) images showed a contracted gallbladder with few intraluminal voids in the neck (largest measuring 17 mm), diffuse wall thickening (up to 10 mm), and a streak of fluid in the pericholecystic region, causing adhesions to the liver, duodenum, and hepatic flexure.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Calculous Cholecystitis with Concealed Gallbladder Perforation",
+      "rule_out_reason": "Considered as the primary working diagnosis based on recurrent right upper quadrant pain, prior conservatively managed perforation, ultrasound showing a 7.5 mm thickened wall with acoustic shadowing indicating cholelithiasis, and MRCP showing a contracted gallbladder with pericholecystic adhesions. Ruled out when surgical pathology demonstrated chalky intramural white areas and caseating granulomatous inflammation rather than simple chronic calculous inflammation.",
+      "quote": "A diagnosis of chronic cholecystitis with concealed gallbladder perforation was considered, and the patient was scheduled for laparoscopic cholecystectomy."
+    },
+    {
+      "candidate": "Gallbladder Carcinoma",
+      "rule_out_reason": "Considered due to the patient's age, constitutional symptoms (weight loss and anorexia), diffuse asymmetric wall thickening up to 10 mm on MRCP, and dense adhesions infiltrating the adjacent liver bed, duodenum, and colon. Ruled out by histopathological evaluation of the resected gallbladder, which confirmed benign granulomatous inflammation without malignant cells or dysplastic changes.",
+      "quote": "The cut section of the specimen showed an obliterated lumen and numerous chalky white areas extending into the peritoneal layer."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnostic pivot was established upon histopathological examination of the resected gallbladder specimen, which demonstrated chronic granulomatous inflammation with caseous necrosis, multinucleated giant cells, and Langhans giant cells, confirming isolated gallbladder tuberculosis.",
+      "quote": "Histopathological examination (Figure 2) revealed chronic granulomatous inflammation with caseous necrosis, multinucleated giant cells, and Langhans giant cells, confirming GBTB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Admission prompt terminates prior to laparoscopic cholecystectomy, gross resection, and histopathology. Verbatim quotes match source report."
+}

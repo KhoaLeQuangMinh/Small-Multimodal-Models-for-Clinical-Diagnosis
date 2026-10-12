@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8378191_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 48-year-old HIV-negative man presents with severe wasting, 3 months of cough, drenching night sweats, generalized cervical and axillary lymphadenopathy, hepatomegaly, and bilateral pulmonary infiltrates with pleural effusion. A profound absolute lymphocytosis with smudge cells points toward a hematologic malignancy (chronic lymphocytic leukemia), creating tension between attributing all systemic B-symptoms and adenopathy to malignancy versus recognizing an underlying active infectious granulomatous lung disease.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following triage physical examination, baseline complete blood count revealing absolute lymphocytosis, and admission chest radiography showing extensive bilateral infiltrates, hilar lymphadenopathy, and pleural effusion, strictly prior to sputum molecular testing (GeneXpert) and bone marrow biopsy.\n3. Differential Distinctions: Isolated hematologic malignancy (CLL/lymphoma) explains the peripheral smear lymphocytosis and generalized lymphadenopathy, but cannot account for the extensive bilateral destructive parenchymal infiltrates and tree-in-bud pattern. Common community-acquired bacterial pneumonia is inconsistent with the indolent 3-month wasting course. The combination of chronic cough, constitutional B-symptoms, and extensive radiographic lung involvement confirms active pulmonary tuberculosis occurring concomitantly with incidental CLL.",
+  "case_prompt": "A 48-year-old HIV-negative man presents to a clinic with a 3-month history of cough, severe fatigue, drenching night sweats, generalized body weakness, anorexia, marked weight loss, chest pain, and shortness of breath, alongside nausea, vomiting, and intermittent fevers over several months. He has no family history of malignancy.\n\nOn physical examination, the patient appears visibly wasted and cachectic. He is afebrile, and the remaining vital signs are normal. Examination reveals palpable cervical and axillary lymphadenopathy, as well as hepatomegaly without splenomegaly. Auscultation of the chest demonstrates scattered crackles bilaterally throughout the lung fields.\n\nA baseline full blood count demonstrates marked abnormalities in the leukocyte series, characterized by profound absolute lymphocytosis with small mature lymphocytes and occasional smudge cells, accompanied by reactive thrombocytosis and eosinophilia. Serum lactate dehydrogenase (LDH) is elevated at 262 U/L (reference range: 100–190 U/L); liver and renal function panels are within normal limits. A chest radiograph reveals extensive bilateral pulmonary infiltrates involving approximately 80% of the lung fields, left hilar lymphadenopathy, and a right-sided pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Lymphoproliferative Malignancy / Chronic Lymphocytic Leukemia",
+      "rule_out_reason": "A primary hematologic malignancy was considered due to generalized lymphadenopathy, hepatomegaly, and marked peripheral lymphocytosis with smudge cells; however, the extensive bilateral tree-in-bud infiltrates and parenchymal destruction could not be attributed to leukemia alone.",
+      "quote": "His blood results were suggestive of a lymphoproliferative disorder which required further workup... These morphological and immunophenotypical findings were in line with a diagnosis of CLL."
+    },
+    {
+      "candidate": "Community-Acquired Bacterial Pneumonia",
+      "rule_out_reason": "Acute bacterial pneumonia was inconsistent with the indolent 3-month progression, severe cachexia, lack of acute neutrophilia, and prominent bilateral hilar adenopathy.",
+      "quote": "At the screening visit, the patient complained of a 3 month history of cough, fatigue, night sweats, body weakness, loss of appetite, loss of weight, chest pain, shortness of breath, nausea and vomiting."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Tuberculosis",
+      "rule_out_reason": "The constellation of chronic constitutional wasting, chronic productive cough, bilateral pulmonary infiltrates, and pleural effusion was definitively established by automated molecular sputum testing identifying drug-sensitive mycobacterial infection.",
+      "quote": "His sputum was collected and sent for GeneXpert testing. This confirmed a diagnosis of rifampicin-sensitive TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning framework. Case prompt is confined to triage presentation and initial CBC/radiograph findings, excluding sputum GeneXpert results and bone marrow biopsy details."
+}

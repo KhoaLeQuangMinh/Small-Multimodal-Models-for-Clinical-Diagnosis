@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9483779_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 22-year-old woman presenting with acute intracranial hypertension (headache, vomiting) secondary to cerebral venous sinus thrombosis (CVST) and concurrent asymptomatic bilateral pulmonary thromboembolism (PTE) without typical thrombophilic risk factors, masking subclinical cavitary pulmonary tuberculosis as the occult pro-inflammatory trigger of hypercoagulability.\n2. Admission Breakpoint: The presentation ends after initial history, unremarkable physical examination, initial coagulopathy screening (elevated D-dimer, normal AT-III and Protein C/S, negative antiphospholipid antibodies), and initial chest radiograph showing left hilar prominence, prior to send-out IGRA, sputum AFB/PCR, and advanced contrast-enhanced vascular imaging.\n3. Differential Distinctions: Inherited or autoimmune thrombophilia (antiphospholipid syndrome) was excluded by normal antithrombin III, proteins C and S, and negative lupus anticoagulant/anticardiolipin antibodies; occult malignancy was excluded by whole-body contrast CT; the diagnostic pivot was chest CT showing thick-walled cavitary lesions and hilar adenopathy, positive IGRA, and eventual culture confirmation of Mycobacterium tuberculosis.",
+  "case_prompt": "A 22-year-old Asian woman presented to the hospital with acute-onset headache, nausea, and vomiting that had started one day prior to admission. She had no fever, dyspnea, chest pain, hemoptysis, or cough. She denied taking oral contraceptives, corticosteroids, hormonal replacement therapy, erythropoietin, or antipsychotics. She had no personal or family history of thromboembolism, immobilization, pregnancy, abortion, or smoking. On physical examination, her body mass index was 18.4 kg/m² and vital signs were within normal limits. Cardiopulmonary and abdominal examinations were unremarkable. The lower extremities showed no edema, erythema, or tenderness, and Homans' sign was negative. Neurological examination was completely normal: she was alert and oriented with no cranial nerve deficits, motor weakness, sensory disturbances, photophobia, or meningeal signs (negative Kernig and neck stiffness). Baseline laboratory evaluation demonstrated a normal white blood cell count and platelet count, but elevated C-reactive protein, D-dimer, and fibrin degradation products. Coagulation panels showed normal antithrombin III activity and normal levels of proteins C and S. Lupus anticoagulant, antinuclear antibodies, and anticardiolipin antibodies were negative. Initial chest radiography revealed a protruding shadow in the left pulmonary hilum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hereditary or Autoimmune Thrombophilia (Antiphospholipid Syndrome)",
+      "rule_out_reason": "Considered as the primary cause of concurrent cerebral sinus thrombosis and pulmonary embolism in a young female without exogenous risk factors, but coagulation factor assays and autoantibodies were completely normal.",
+      "quote": "Activation of antithrombin III (AT-III) and proteins S and C were within normal limits. Lupus anticoagulant, anti-nuclear and anti-cardiolipin antibodies were also negative."
+    },
+    {
+      "candidate": "Occult Malignancy-Associated Hypercoagulability (Trousseau Syndrome)",
+      "rule_out_reason": "Considered given the unprovoked multifocal venous thromboses in distinct vascular territories, but excluded by systemic contrast imaging showing no neoplastic lesions.",
+      "quote": "No mass suspicious of cancer was found in a whole-body contrast-enhanced CT. DVT in the lower limbs was not detectable on contrast-enhanced CT or Doppler ultrasonography."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Thoracic CT revealed left upper lobe cavitary lesions and hilar lymphadenopathy, with positive interferon-gamma release assay implicating Mycobacterium tuberculosis as the chronic inflammatory trigger of hypercoagulability, subsequently confirmed by culture.",
+      "quote": "M. tuberculosis was confirmed in both sputum and gastric aspirates after eight weeks of culture."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly respected. The prompt stops after initial coagulopathy screening and plain radiograph, cleanly isolating CT angiography, MR venography, IGRA, and culture results to the diagnostic reasoning."
+}

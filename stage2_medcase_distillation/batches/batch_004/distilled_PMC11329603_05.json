@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11329603_05",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: In a patient with established Sjögren's syndrome and newly identified pulmonary and bronchial pathology, autoimmune interstitial or lymphoproliferative lung manifestations frequently mimic indolent granulomatous infection; simultaneously, recurrent leukopenia and hypokalemia complicate diagnostic distinction between autoimmune cytopenia, bone marrow infiltration, and drug toxicities.\n2. Admission Breakpoint: The admission triage evaluation ends upon noting the patient's autoimmune history, absence of constitutional symptoms, and baseline cytopenias/hypokalemia, immediately prior to invasive bronchoalveolar lavage fluid (BALF) mycobacterial culture and bronchial biopsy histopathology.\n3. Differential Distinctions: Sjögren's-related lymphocytic pulmonary involvement or autoimmune leukopenia lack positive mycobacterial cultures and caseating necrosis; primary bone marrow infiltration causes progressive multi-lineage dysplasia ruled out on marrow evaluation.",
+  "case_prompt": "A 48-year-old woman with a 7-year history of Sjögren's syndrome presented for clinical evaluation after pulmonary and bronchial lesions were detected on thoracic imaging. The patient reported no overt respiratory complaints or constitutional symptoms, such as fever, cough, night sweats, or weight loss. Physical examination revealed an afebrile woman in no distress with clear lung fields bilaterally and no peripheral lymphadenopathy. Routine triage laboratory testing was notable for recurrent leukopenia and hypokalemia, while renal and hepatic parameters were normal. Further specialized pulmonary and microbiological investigations were initiated to establish the etiology of her tracheobronchial and parenchymal pulmonary lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune Pulmonary Disease secondary to Sjögren's Syndrome",
+      "rule_out_reason": "Sjögren's syndrome is frequently associated with tracheobronchial inflammation, lymphocytic interstitial pneumonia, and autoimmune cytopenias; however, invasive bronchoscopic evaluation confirmed an infectious mycobacterial disease rather than autoimmune lymphoid hyperplasia.",
+      "quote": "A 48-year-old woman with a 7-year history of Sjogren's syndrome was diagnosed with pulmonary and bronchial TB in 2021 based on the culture of M. tuberculosis in BALF and pathologic examination of bronchial biopsy."
+    },
+    {
+      "candidate": "Infectious Bone Marrow Infiltration / Primary Hematologic Cytopenia",
+      "rule_out_reason": "Persistent leukopenia raised concern for primary marrow dysplasia or infectious infiltration of the hematopoietic compartment; however, a dedicated diagnostic panel excluded bone marrow infiltration as the primary driver of her leukopenia.",
+      "quote": "The patient has no other discomfort symptoms, and a thorough series of tests have ruled out other causes of leukocyte reduction such as tuberculosis bone marrow infiltration."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microbiological culture of bronchoalveolar lavage fluid yielding Mycobacterium tuberculosis and drug susceptibility testing demonstrating resistance to isoniazid, rifampicin, and streptomycin confirmed multidrug-resistant tuberculosis (MDR-TB).",
+      "quote": "Following culturing and DST of BALF for M. tuberculosis, resistance to H/R/Sm was identified, leading to the diagnosis of MDR-TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt halts before BALF culture, bronchial biopsy, and antimicrobial resistance testing. No disease or pathogen names leaked in prompt. Exact verbatim quotes supplied."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_03",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 37-year-old man presents with acute high fever, severe headache, neck rigidity, and recurrent generalized tonic-clonic seizures over two days. This constellation immediately raises suspicion for acute pyogenic bacterial meningitis or fulminant viral encephalitis, whereas diffuse cerebral edema without focal structural necrosis in the setting of normal routine blood tests reflects an atypical arboviral neuro-infection.\n2. Admission Breakpoint: The admission clinical and neurological examination (GCS E3M6V5, positive Kernig sign, bilateral extensor plantars) marks the boundary of triage before brain MRI and CSF/serological MAC ELISA assays.\n3. Differential Distinctions: Acute bacterial meningitis typically features purulent CSF pleocytosis and septic shock requiring urgent empiric antibiotics; status epilepticus secondary to HSV encephalitis usually exhibits temporal lobe necrotic focus; whereas dengue meningoencephalitis in this patient demonstrated diffuse brain edema without structural abnormalities and reactivity on dengue IgM MAC ELISA.",
+  "case_prompt": "A 37-year-old man presented with a 6-day history of high-grade continuous fever accompanied by chills and rigors, persistent severe headache, and multiple episodes of vomiting for 5 days. For the preceding 2 days, he had experienced progressive disorientation and recurrent episodes of generalized tonic-clonic seizures. There was no history of similar neurological or febrile illness in the past.\n\nOn admission examination, the patient was drowsy but arousable, with a Glasgow Coma Scale (GCS) score of 14 (E3M6V5). Neurological examination revealed marked neck rigidity with a positive Kernig sign and bilateral extensor plantar responses. Cranial nerves, motor strength, sensory examination, and cerebellar function were intact. Examination of other organ systems revealed no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial / Pyogenic Meningoencephalitis",
+      "rule_out_reason": "Recurrent seizures, continuous high fever, vomiting, and meningismus prompted strong consideration of acute bacterial meningitis, but normal routine blood tests and resolution without antimicrobial therapy excluded pyogenic infection.",
+      "quote": "normal routine blood test during and after GTCS"
+    },
+    {
+      "candidate": "Herpes Simplex Encephalitis (HSV)",
+      "rule_out_reason": "Repetitive generalized seizures and acute encephalopathy frequently suggest HSV encephalitis, but MRI revealed diffuse cerebral edema without temporal focal lesions, and the clinical course resolved with supportive care.",
+      "quote": "MRI of brain, done on 7th day of fever, showed diffuse brain edema without any structural abnormality"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of diffuse cerebral edema on neuroimaging combined with IgM reactivity on MAC ELISA and compatible CSF findings confirmed dengue meningoencephalitis.",
+      "quote": "patient was diagnosed as dengue meningoencephalitis based on clinical presentation, MAC ELISA reactivity of IgM dengue, CSF profile, and normal routine blood test during and after GTCS."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced. No diagnostic or pathogen terms revealed in case prompt. All quotes verbatim from source text."
+}

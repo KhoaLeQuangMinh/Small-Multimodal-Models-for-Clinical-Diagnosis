@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10896270_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 5-year-old girl presents with fever, headache, vomiting, and meningismus with altered sensorium in central India, without cutaneous rash, classical eschar, or lymphadenopathy. The diagnostic tension lies in distinguishing acute bacterial or viral meningoencephalitis and severe cerebral malaria from pediatric scrub typhus presenting with isolated neurological manifestations.\n2. Admission Breakpoint: Admission triage ends after pediatric emergency assessment, physical exam demonstrating positive Kernig and Brudzinski signs, and baseline blood work (showing anemia, lymphocytosis, thrombocytopenia of 89 x 10^9/L, transaminitis, and elevated CRP of 84.5 mg/L), right before lumbar puncture analysis, peripheral malaria smears, and scrub typhus serologies.\n3. Differential Distinctions: Pyogenic bacterial meningitis displays neutrophilic pleocytosis and hypoglycorrhachia. Cerebral malaria shows intraerythrocytic Plasmodium parasites. Scrub typhus meningitis demonstrates lymphocytic CSF pleocytosis, normal glucose, and diagnostic elevation of scrub typhus IgM antibodies.",
+  "case_prompt": "A 5-year-old girl from the Amravati district of Maharashtra, India, presented to the pediatric emergency department with a 5- to 6-day history of fever, headache, and persistent vomiting. On physical examination, the child was febrile, irritable, and exhibited altered sensorium with clinical signs of increased intracranial pressure. Nuchal rigidity was noted, and both Kernig's sign and Brudzinski's sign were positive. Thorough dermatological and systemic examination revealed no cutaneous rashes, focal eschars, or lymphadenopathy. Baseline blood investigations revealed a hemoglobin level of 10.8 g/dL, complete blood count showing relative lymphocytosis (51% lymphocytes), and thrombocytopenia with a platelet count of 89 x 10^9/L. C-reactive protein was markedly elevated at 84.5 mg/L. Serum biochemistry demonstrated deranged renal and hepatic parameters, including blood urea nitrogen of 6 mg/dL, serum creatinine of 0.3 mg/dL, serum albumin of 2.7 g/dL, aspartate aminotransferase of 381 U/L, and alanine aminotransferase of 148 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Initial presumed emergency diagnosis based on fever, altered sensorium, and signs of meningeal irritation; ruled out by CSF examination showing clear fluid, lymphocytic pleocytosis (90% lymphocytes), normal glucose (57 mg/dL), and sterile CSF cultures.",
+      "quote": "Following aerobic incubation at 37 C, no growth was observed in urine, CSF, and blood cultures, indicating the absence of commonly cultivable bacterial pathogens in these samples."
+    },
+    {
+      "candidate": "Severe Cerebral Malaria",
+      "rule_out_reason": "Considered in a tropical pediatric setting with acute fever, altered sensorium, thrombocytopenia (89 x 10^9/L), and elevated transaminases; ruled out by negative peripheral blood smear and negative rapid malaria card test.",
+      "quote": "Peripheral blood smear examination for malarial parasites and rapid malaria card test were negative, ruling out malaria as the cause of the symptoms."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pediatric Scrub Typhus Meningitis",
+      "rule_out_reason": "Confirmation of positive Scrub Typhus IgM antibodies by rapid immunochromatography (ICT) and reactive ELISA (76.25 units), with rapid neurological recovery following intravenous doxycycline, established Scrub Typhus.",
+      "quote": "Additionally, the Scrub Typhus IgM test was positive by immunochromatography (ICT), indicating the presence of IgM antibodies associated with scrub typhus. This finding was further confirmed by the \"reactive\" Scrub Typhus IgM ELISA test result for the same serum specimen. The Scrub Typhus IgM Units for this patient were 76.25"
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10896270_01. Admission prompt includes fever, meningismus, and deranged baseline labs (thrombocytopenia, transaminitis), while cleanly stopping before lumbar puncture and scrub typhus serologies. Quotes verified verbatim."
+}

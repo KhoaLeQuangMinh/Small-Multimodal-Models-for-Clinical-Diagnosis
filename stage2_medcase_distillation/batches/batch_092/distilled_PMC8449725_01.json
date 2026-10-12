@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8449725_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 61-year-old Caribbean man presents with acute febrile altered mental status, meningismus, and cerebral MRI findings characteristic of acute necrotizing encephalopathy, with a background of chronic diarrhea and profound weight loss. Despite an underlying parasitic infection, initial triage labs show marked neutrophilic leukocytosis with near-total absence of eosinophils (0.01/μL), masking chronic helminthic infestation and mimicking typical community-acquired pyogenic or viral meningoencephalitis.\n2. Admission Breakpoint: Admission presentation concludes following initial neurological examination, triage blood counts showing leukocytosis with eosinopenia, emergent brain MRI showing acute necrotizing encephalopathy, and initial lumbar puncture showing high neutrophilic pleocytosis, immediately prior to microbiological culture identification (Gram-negative bacilli), retroviral serologies, and skin biopsy of the purpuric eruption.\n3. Differential Distinctions: Routine community-acquired meningitis (pneumococcal, meningococcal, or listerial) and viral necrotizing encephalitis were initially suspected; however, CSF and blood cultures isolated enteric Escherichia coli, pointing toward gut-barrier disruption; confirmation of disseminated soil-transmitted helminthiasis (Strongyloides hyperinfection) was established by identifying filariform larvae in dermal punch biopsy and bronchoalveolar lavage.",
+  "case_prompt": "A 61-year-old Caribbean man was admitted to the intensive care unit with acute deterioration of consciousness, severe neck stiffness, and high fever of 102.2 °F (39.0 °C). He had no significant prior past medical history aside from an ongoing 3-month history of severe chronic watery diarrhea accompanied by an unintentional 33-pound weight loss that was undergoing outpatient evaluation.\n\nOn physical examination, the patient had a Glasgow Coma Scale score of 13 with marked nuchal rigidity. The remainder of the initial general examination was non-focal.\n\nInitial triage laboratory evaluation revealed a white blood cell count of 13,100/μL with 10,420/μL neutrophils (80%), 1780/μL lymphocytes, and severe eosinopenia (0.01/μL). Emergent cerebral magnetic resonance imaging demonstrated severe diffuse cerebral edema with ventricular compression and abnormal T2/FLAIR hyperintensity involving the deep white matter and basal ganglia with patchy gadolinium enhancement, consistent with acute necrotizing encephalopathy. An emergent lumbar puncture revealed marked cloudy cerebrospinal fluid with pleocytosis exceeding 4500 cells/mm³ (87% neutrophils), an elevated CSF lactate of 15.80 mmol/L, elevated protein of 3.67 g/L, and normal CSF glucose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-acquired pyogenic bacterial / viral meningoencephalitis",
+      "rule_out_reason": "Considered on initial emergency presentation given high fever, meningism, and neutrophilic CSF pleocytosis, prompting standard empiric antimicrobial coverage, but microbiological isolation of enteric bacilli pointed to intestinal breach rather than nasopharyngeal pathogens.",
+      "quote": "Empiric anti-infective therapy for community-acquired meningitis, including cefotaxime 300 mg/kg/d, amoxicillin 200 mg/kg/d, acyclovir 10 mg/kg/d, and dexamethasone 10 mg/6 h, was initiated."
+    },
+    {
+      "candidate": "Primary viral acute necrotizing encephalopathy",
+      "rule_out_reason": "Considered based on bilateral basal ganglia hyperintensities and diffuse cerebral edema on MRI, but clinical features were secondary to severe enteric bacterial sepsis and parasitic translocation.",
+      "quote": "Cerebral magnetic resonance imaging (MRI) showed severe cerebral edema compressing ventricles and gadolinium-enhancing T2/FLAIR white matter and basal ganglia hyperintensity, revealing acute necrotizing encephalopathy (ANE) (Figure 1(a))."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Disseminated strongyloidiasis / Helminthic hyperinfection)",
+      "rule_out_reason": "The combination of enteric rod meningitis with purpura and alveolar hemorrhage was confirmed by identifying invasive filariform larvae on dermal punch biopsy and in respiratory secretions.",
+      "quote": "Punch biopsy of this rash confirmed parasitic chronic infection, showing filariform larvae between collagen bundles in the dermis (Figure 2(b))."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set before culture results, HTLV-1 serology, and biopsy. Zero pathogen spoilers in case prompt. Quotes verified."
+}

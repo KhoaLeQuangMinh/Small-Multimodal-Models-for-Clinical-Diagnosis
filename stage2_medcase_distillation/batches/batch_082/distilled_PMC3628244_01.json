@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3628244_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A pediatric patient presenting with prolonged fever, hepatomegaly, and ascites found to have a large left hepatic lobe abscess complicated by extensive intraluminal thrombosis propagating through the hepatic veins and inferior vena cava into the right atrium. The central clinical dilemma is distinguishing an invasive amebic liver abscess with vascular compression and thrombosis from a pyogenic liver abscess with septic thrombophlebitis or primary Budd-Chiari syndrome, and determining the urgency of operative cavoatrial thrombectomy versus medical therapy alone.\n2. Admission Breakpoint: The admission clinical narrative halts after initial physical examination, triage labs, chest radiography, abdominal ultrasound, abdominal contrast CT, and echocardiography demonstrating the abscess and contiguous cavoatrial thrombosis, strictly before the disclosure of amebic serology (ELISA), operative findings, and aspirate microbiology.\n3. Differential Distinctions: Pyogenic liver abscess usually presents with high-grade bacteremic sepsis and polymicrobial bacterial cultures; amebic abscess typically produces sterile 'anchovy sauce' fluid with positive amebic serology. Budd-Chiari syndrome or primary caval thrombosis involves primary vascular occlusion or hypercoagulability, whereas here thrombosis directly abuts and propagates from the contiguous liver abscess cavity.",
+  "case_prompt": "A 6-year-old malnourished boy is referred with a 1-month history of fever and a 14-day history of right upper abdominal pain, loose motions, and vomiting. His prior medical history is unremarkable. On physical examination, the child is tachycardic and tachypneic. Abdominal examination demonstrates hepatomegaly with tenderness and guarding in the upper abdomen, accompanied by ascites. Chest auscultation reveals diminished air entry on the left side. Chest radiography confirms a left pleural effusion. An abdominal ultrasound demonstrates a large single abscess measuring 94 mL in the left lobe of the liver closely abutting the intra-hepatic inferior vena cava, with an echogenic lesion measuring 27 mm in length extending from the abscess into the inferior vena cava; ascites is also present. Contrast-enhanced computed tomography of the abdomen demonstrates a left lobe liver abscess in segments II and III, with visible thrombus in the middle and left hepatic veins as well as in the inferior vena cava extending up to the right atrium. Two-dimensional echocardiography confirms these vascular and intracardiac findings.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "Considered due to prolonged fever, hepatomegaly, and liver abscess with secondary septic thrombophlebitis. However, pus aspirate from the surgically deroofed cavity showed no pyogenic bacteria on culture or microscopy.",
+      "quote": "Pus was sent for examination which failed to reveal any trophozoites on microscopic examination and was negative for pyogenic organisms."
+    },
+    {
+      "candidate": "Primary Budd-Chiari syndrome / Inferior vena cava thrombosis",
+      "rule_out_reason": "Primary hepatic vein or inferior vena cava thrombosis causes hepatomegaly and ascites, but imaging revealed that the cavoatrial thrombus originated from contiguous inflammatory and mechanical extension of a solitary hepatic abscess rather than a primary prothrombotic state.",
+      "quote": "An ultrasound showed a large single abscess of 94 ml in the left lobe of liver closely abutting the intra-hepatic vena cava. An echogenic lesion of 27 mm length extended from abscess to the IVC."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of a solitary left-lobe hepatic abscess with contiguous caval extension, positive serum amebic ELISA antibody testing, and evacuation of classic sterile anchovy sauce pus confirmed amebic liver abscess complicated by cavoatrial thrombosis.",
+      "quote": "The patient tested positive for amebic antibody by Enzyme-linked immunosorbent assay (ELISA) test."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint strictly maintained before serological ELISA testing and surgical drainage."
+}

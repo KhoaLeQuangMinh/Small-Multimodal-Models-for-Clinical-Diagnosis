@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6461566_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A patient presents with biliary symptoms found to have both gallbladder stones and a well-circumscribed cystic lesion in segment VI of the liver with marginal calcifications. Distinguishing a parasitic hydatid cyst from a benign biliary cyst, cystadenoma, or uncomplicated cholelithiasis alone dictates surgical approach to prevent intraperitoneal spillage and anaphylaxis.\n2. Admission Breakpoint: Completion of physical examination, normal routine blood investigations, abdominal ultrasound, and abdominopelvic CT demonstrating the segment VI liver mass and gallstones, prior to Gharbi staging and laparoscopic intervention.\n3. Differential Distinctions: Simple hepatic cysts are thin-walled without calcifications or internal architecture, whereas this lesion displayed regular thickened borders and minimal calcifications; acute cholecystitis was suspected due to biliary colic, but sonography showed no inflammatory changes; biliary cystadenomas have internal septations and lack hydatid wall calcifications and Gharbi type II morphology.",
+  "case_prompt": "A patient presented for evaluation following the recent development of symptomatic cholelithiasis. Physical examination was unremarkable, with no localized abdominal tenderness or jaundice. Routine laboratory investigations were within normal limits.\n\nTransabdominal ultrasound revealed a cyst in the right lobe of the liver and gallbladder calculi without sonographic features of acute cholecystitis or biliary tract dilation. Contrast-enhanced abdominopelvic computed tomography (CT) demonstrated a well-defined cystic mass measuring 5 x 4.5 cm with regular borders and minimal peripheral calcifications located in segment VI of the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple hepatic biliary cyst",
+      "rule_out_reason": "Simple developmental cysts of the liver are typically non-calcified with imperceptible walls, whereas this lesion had well-defined borders with minimal peripheral calcifications.",
+      "quote": "The abdominopelvic computerized tomography (CT) revealed a cystic mass of 5 x 4.5 cm2 with regular borders and minimal calcifications in the 6th segment of liver [Fig. 1]."
+    },
+    {
+      "candidate": "Acute calculous cholecystitis",
+      "rule_out_reason": "The patient experienced symptoms attributed to gallstones, but ultrasound and clinical exam showed no wall thickening, pericholecystic fluid, or signs of acute inflammation.",
+      "quote": "The ultrasound showed a cyst in the right lobe of liver and gallbladder stones with no signs of inflammatory."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cross-sectional imaging identified a well-defined 5 x 4.5 cm hepatic segment VI cystic mass with peripheral calcifications classified as Gharbi stage II, confirming hepatic echinococcosis (hydatid cyst) coexisting with cholelithiasis, which was directly confirmed on laparoscopic visualization.",
+      "quote": "It was classified as a second degree in the Gharbi classification system [Table 2]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission presentation stopping prior to Gharbi classification and laparoscopic surgery. Zero disease or pathogen name leaks. Exact quotes support all differential candidates."
+}

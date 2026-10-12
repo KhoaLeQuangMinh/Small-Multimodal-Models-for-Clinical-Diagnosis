@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10599860_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 69-year-old woman presents with intractable vulvar pruritus and an ulcerated, firm vulvar plaque that failed medical therapy, leading clinicians to suspect an inflammatory dermatosis (vulvar lichen planus) or vulvar malignancy. In reality, the lesion represents ectopic female genital schistosomiasis caused by Schistosoma mansoni ova deposition following freshwater exposure.\n2. Admission Breakpoint: The breakpoint occurs during outpatient clinic evaluation at the peripheral healthcare facility after documentation of the 8-month refractory pruritus, clinical examination of the ulcerated vulvar plaque, and relevant freshwater wading exposure, strictly before surgical excision (vulvectomy) and histopathologic processing.\n3. Differential Distinctions: Vulvar lichen planus is a common cause of chronic erosive vulvar pruritus in postmenopausal women, but biopsy demonstrates granulomatous inflammation around parasitic ova rather than band-like interface dermatitis. Vulvar intraepithelial neoplasia or squamous cell carcinoma presents with solid, non-healing ulcerated vulvar masses, but histopathology shows no neoplastic dysplasia.",
+  "case_prompt": "A 69-year-old married woman, employed as an urban office worker in Ghana, presented to a peripheral healthcare clinic with an 8-month history of severe, persistent vulvar pruritus that had failed to respond to multiple rounds of empirical topical medical therapy. As part of her travel history, she routinely traveled across various rural and suburban districts of Ghana, where she reported frequent wading through local freshwater bodies. Physical examination of the external genitalia revealed a solitary, solid, whitish indurated plaque measuring approximately 2 cm in diameter with a central 7-mm superficial ulceration on the vulvar surface.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Vulvar Lichen Planus",
+      "rule_out_reason": "Chronic intractable vulvar pruritus accompanied by mucosal erosions in an older woman was initially diagnosed clinically as erosive lichen planus; however, histopathologic evaluation of the lesion lacked classic lichenoid interface dermatitis and instead demonstrated dense dermal fibrosis with granulomatous inflammation around parasitic ova.",
+      "quote": "A clinical diagnosis of vulvar lichen planus unresponsive to medical therapy was made, and a vulvectomy was done for histopathology examination."
+    },
+    {
+      "candidate": "Vulvar Squamous Cell Carcinoma",
+      "rule_out_reason": "A persistent, solid, ulcerated vulvar plaque refractory to medical management in an elderly woman raised strong concern for invasive squamous cell carcinoma; however, histological examination confirmed completely benign reactive epithelial changes without dysplasia or malignancy.",
+      "quote": "There was no malignancy seen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the excised vulvar lesion revealed foreign body multinucleated giant cells engulfing characteristic golden-brown, ovoid helminth ova, with Ziehl-Neelsen staining demonstrating Schistosoma mansoni, leading to complete clinical cure with oral praziquantel.",
+      "quote": "There were multiple areas of multinucleated giant cells with haphazardly arranged nuclei (foreign body giant cells). These giant cells had engulfed shiny golden-brown and well-defined ovoid structures (schistosome, ova) (Figures 3, 4(a), and 4(b)). There was no malignancy seen. Zeil-Neelson (ZN) staining was consistent with S. mansoni ova (Figure 5). A diagnosis of chronic schistosomiasis of the vulva was made."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Zero-leakage admission narrative stops prior to surgical excision and tissue staining, excluding terms such as schistosomiasis, schistosome ova, and praziquantel. Verbatim quotes from the text substantiate both rule-outs and diagnostic pivot."
+}

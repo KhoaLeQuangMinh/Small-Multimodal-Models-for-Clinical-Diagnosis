@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3279322_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 65-year-old severely cachectic woman (weight 39 kg) with a surgical history of remote partial gastrectomy for peptic ulcer disease presenting with a severe subacute pulmonary infection. Partial gastrectomy is an under-recognized classic predisposing risk factor for nutritional deficiency and reactivation of intracellular granulomatous infections. The clinical challenge is distinguishing reactivation pulmonary tuberculosis from post-gastrectomy cachexia/malabsorption complicated by aspiration pneumonia, fungal infection, or malignancy in an elderly, HIV-negative host.\n2. Admission Breakpoint: The admission clinical presentation includes the patient's age (65 years old), sex, surgical history (partial gastrectomy 15 years prior for gastric ulcer), severe low body weight (39 kg), current medication review (no other baseline medications), and negative initial HIV serology. The breakpoint is set immediately before microbiological confirmation of pulmonary mycobacterial infection and pharmacokinetic testing of antitubercular agents.\n3. Differential Distinctions: Severe malnutrition alone can cause wasting but cannot account for the destructive parenchymal lung disease requiring antimicrobial treatment. HIV-associated opportunistic pneumonia is excluded by negative HIV serology. Gastric carcinoma recurrence or secondary malignancy must be considered, but microbiological isolation confirms Mycobacterium tuberculosis as the primary driver of lung disease.",
+  "case_prompt": "A 65-year-old woman presents for medical evaluation. Her past medical history is notable for a partial gastrectomy performed 15 years earlier for a gastric ulcer. She is taking no other medications.\n\nOn physical examination, she is cachectic and severely underweight, with a recorded body weight of 39 kg.\n\nInitial triage laboratory testing includes an HIV screening test, which is negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "HIV-Associated Opportunistic Pulmonary Infection / Wasting Syndrome",
+      "rule_out_reason": "Considered given the profound low body weight (39 kg) and high risk of opportunistic intracellular infections, but definitively excluded by negative HIV serology.",
+      "quote": "A 65-year-old HIV negative woman"
+    },
+    {
+      "candidate": "Post-Gastrectomy Malnutrition Syndrome / Recurrent Peptic Malignancy",
+      "rule_out_reason": "Considered in light of her surgical history of partial gastrectomy 15 years prior and marked cachexia (weight 39 kg) without concurrent medications, but pulmonary diagnostic evaluation demonstrated an active infectious pulmonary process rather than an isolated nutritional or primary gastric disorder.",
+      "quote": "She underwent a partial gastrectomy for a gastric ulcer 15 years earlier. Her weight was 39 Kg"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Tuberculosis",
+      "rule_out_reason": "Gastrectomy-induced hypoacidity and chronic malnutrition predispose patients to secondary reactivation of Mycobacterium tuberculosis, which was confirmed on pulmonary workup leading to prompt initiation of quadruple antimycobacterial therapy.",
+      "quote": "A 65-year-old HIV negative woman was affected by pulmonary tuberculosis. She underwent a partial gastrectomy for a gastric ulcer 15 years earlier."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for pulmonary tuberculosis developing in a post-gastrectomy patient. Admission breakpoint set prior to microbiological confirmation and pharmacokinetic drug sampling."
+}

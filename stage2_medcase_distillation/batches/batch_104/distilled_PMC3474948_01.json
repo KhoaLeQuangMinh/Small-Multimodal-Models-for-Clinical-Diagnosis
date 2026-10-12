@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3474948_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 28-year-old native female veterinarian with no immigration or foreign travel history presented with insidious, progressive right hip pain leading to acute immobility. Initial pelvic MRI and radiographs were initially attributed to early non-specific osteoarthritis or mechanical coxitis, and standard bacterial synovial fluid cultures were sterile, masking monoarticular tuberculous arthritis.\n2. Admission Breakpoint: The admission narrative halts following physical exam, admission laboratory evaluation (mildly elevated CRP 4.2 mg/L), right hip radiographs, ultrasound-guided aspiration revealing sterile routine bacterial cultures, and pelvic MRI demonstrating synovial enhancement with bone marrow edema. It stops prior to current interferon-gamma release assay (QuantiFERON), chest imaging, repeat targeted mycobacterial joint fluid cultures, and gastric aspirate PCR.\n3. Differential Distinctions: Acute pyogenic septic arthritis was ruled out by lack of systemic toxicity, low CRP, and sterile standard aerobic and anaerobic synovial cultures. Idiopathic osteoarthritis or avascular necrosis was refuted by progressive acetabular destruction, synovial hyperenhancement, and past history of necrotizing granulomatous lymphadenitis. Positive QuantiFERON and repeat synovial aspirate mycobacterial culture confirmed tuberculous coxitis with active pulmonary disease.",
+  "case_prompt": "A 28-year-old native female veterinarian presented with severe, acute exacerbation of recurrent right hip pain that had originated 1.5 years earlier without antecedent trauma. The pain had historically worsened with mechanical strain but had temporarily responded to nonsteroidal anti-inflammatory drugs and physical therapy. Three months prior, a pelvic MRI had noted capsular swelling and mild cartilage reduction attributed to early non-specific arthritis. Over the days preceding admission, the pain escalated severely, rendering her completely unable to stand or walk.\n\nHer medical history was notable for the surgical excision of a left supraclavicular lymph node two years earlier; histopathology at that time had revealed necrotizing granulomatous lymphadenitis, but workup including tuberculin skin testing, sputum examinations, and chest CT had been negative, and no treatment was initiated. She had no history of foreign travel or residence abroad.\n\nOn physical examination, vital signs were normal. The patient was in marked discomfort and unable to bear weight. The active and passive range of motion of the right hip was severely restricted by pain. There was no overlying erythema, local warmth, or palpable swelling in the groin or pelvic region. Cardiopulmonary examination was clear.\n\nTriage laboratory testing showed normal complete blood counts and normal renal and hepatic panels; C-reactive protein (CRP) was mildly elevated at 4.2 mg/L (reference <0.5 mg/L). Plain pelvic radiography showed mild joint space narrowing involving the right acetabulum and femoral head. Bedside ultrasonography identified a joint effusion, and an urgent ultrasound-guided arthrocentesis was performed; routine aerobic and anaerobic bacterial cultures of the aspirate yielded no growth. Pelvic MRI revealed joint space narrowing in the cranial acetabulum with increased subchondral sclerosis, marked synovial enhancement, and extensive bone marrow edema involving both the femoral head and acetabulum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Septic Arthritis",
+      "rule_out_reason": "Considered given acute inability to bear weight, joint effusion, and synovial enhancement; ruled out by absence of fever or marked systemic inflammatory response (CRP only 4.2 mg/L) and sterile routine aerobic/anaerobic synovial fluid cultures.",
+      "quote": "An effusion was detected by ultrasound, aspiration of the hip joint led to no further diagnosis as aerobic and anaerobic cultures were sterile."
+    },
+    {
+      "candidate": "Early Idiopathic Osteoarthritis / Mechanical Coxitis",
+      "rule_out_reason": "Initially suspected given transient relief with NSAIDs and physical therapy; ruled out by rapid progression to complete immobility, MRI evidence of profound bone marrow edema and synovial enhancement, and subsequent microbiological confirmation of mycobacterial infection.",
+      "quote": "A MRI of the pelvis performed 3 months before admittance showed a swelling of the capsule and reduction of the cartilage in the right hip joint which was considered as an early arthritis or coxitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Interferon-gamma release assay (QuantiFERON) yielded a positive result, prompting chest imaging that uncovered apical pulmonary infiltrates; a repeat hip joint aspirate confirmed Mycobacterium tuberculosis on microscopy and culture alongside positive sputum and gastric PCR.",
+      "quote": "Although the initial microbiological examination of the first aspirate being inconspicuous, a current Quantiferon-Test showed a positive reaction as an indication of a latent or active infection with Mycobacterium tuberculosis (M. tbc)... Furthermore a second aspiration of the right hip joint confirmed M. tbc by microscopical analysis and bacterial culture."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt concludes after pelvic MRI and initial sterile synovial cultures. QuantiFERON, chest CT, repeat mycobacterial cultures, and PCR excluded from prompt."
+}

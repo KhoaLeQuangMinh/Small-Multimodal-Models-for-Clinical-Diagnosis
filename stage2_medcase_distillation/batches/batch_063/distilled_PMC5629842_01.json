@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5629842_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 51-year-old male presents with acute intracranial hypertension (intractable 10/10 headache, nausea, vomiting, papilledema) and rightward gait lateralization. Cranial CT shows marked fourth ventricular dilation with tetraventricular hydrocephalus. The central clinical problem is distinguishing an intraventricular neoplasm (e.g., ependymoma or choroid plexus tumor) or idiopathic outflow obstruction from a mobile intraventricular parasitic cyst requiring urgent neuro-endoscopic decompression.\n2. Admission Breakpoint: The admission narrative concludes after documenting the 2-day history of acute severe headache and vomiting, physical exam findings of papilledema and gait lateralization, and cranial CT demonstrating tetraventricular hydrocephalus with marked fourth ventricular dilatation, prior to surgical transcerebellar rigid neuro-endoscopic exploration.\n3. Differential Distinctions: Posterior fossa neoplasms typically produce solid, enhancing, adherent tissue infiltrates within the fourth ventricle; neuro-endoscopy immediately reveals a free-floating, non-adherent translucent cystic vesicle that can be extracted intact to restore cerebrospinal fluid pathways.",
+  "case_prompt": "A 51-year-old right-handed male from the State of Mexico, with a history of poor hygiene and dietary habits and hypertension controlled on losartan, presented with severe headache. Two days prior to admission, he experienced an intermittent holocranial headache rated 7/10 on the visual analogue scale that was refractory to analgesics, followed by sudden worsening to 10/10 accompanied by persistent nausea and vomiting. On physical examination, his Glasgow Coma Scale score was 14 (E4, V4, M6). Pupils were 3 mm and reactive to light, and bilateral papilledema was present on funduscopy. Cranial nerve examination was otherwise unremarkable, motor strength was 5/5 in all extremities, and deep tendon reflexes were symmetric (2+/2+). Cerebellar examination revealed gait disturbance with lateralization to the right side. Emergent cranial computed tomography (CT) demonstrated tetraventricular hydrocephalus with marked dilatation of the fourth ventricle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Posterior Fossa Neoplasm (e.g., Fourth Ventricle Ependymoma)",
+      "rule_out_reason": "Considered primary diagnosis for adult-onset solitary fourth ventricular mass causing tetraventricular hydrocephalus and gait ataxia; ruled out during neuro-endoscopic exploration, which revealed a mobile, non-adherent translucent cystic vesicle rather than a solid or vascular neoplastic tumor.",
+      "quote": "The computed tomography (CT) scans showed tetraventricular hydrocephalus and important dilatation of the fourth ventricle"
+    },
+    {
+      "candidate": "Idiopathic Fourth Ventricular Outlet Stenosis / Ependymitis",
+      "rule_out_reason": "Considered due to isolated fourth ventricular dilation and symmetric hydrocephalus; ruled out when endoscopic inspection revealed completely normal ependymal lining without ependymitis and confirmed patent fourth ventricular exits (foramina of Luschka, aqueduct, and obex) once the cyst was extracted.",
+      "quote": "we performed a fourth ventricle exploration, showing that the aqueduct and both Luschka foramina were permeable, as well as the obex."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was urgent transcerebellar rigid neuro-endoscopy entering the fourth ventricle, which visualized and completely excised an intact, non-adherent cystic lesion (cysticercus vesicle) that immediately restored normal CSF dynamics, followed by postoperative albendazole therapy.",
+      "quote": "Just as soon as the endoscope passed through to the fourth ventricle, a cystic lesion was found, which was compatible with a neurocysti; as shown in the image it was not adherent to any of the fourth ventricle structures. We were able to remove the entire cystic lesion"
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency triage presentation. Fourth ventricular neurocysticercosis presenting as acute tetraventricular hydrocephalus; managed by direct transcerebellar rigid neuro-endoscopy."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5748105_02",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A 33-year-old healthcare worker develops acute high-grade fever, multiorgan failure, and severe cytopenias shortly after providing care to a fellow hospital worker with a fatal hemorrhagic syndrome. The clinical challenge is prompt recognition of human-to-human transmission of an arenaviral hemorrhagic fever (Lassa fever) in an endemic setting often misattributed to complicated malaria, typhoid, or yellow fever.\n2. Admission Breakpoint: The breakpoint is set at the patient's initial clinical presentation and baseline laboratory evaluation showing multiorgan failure (acute renal failure, severe transaminitis, pancytopenia), before reference laboratory RT-PCR testing or the initiation of intravenous ribavirin.\n3. Differential Distinctions: Falciparum malaria with multiorgan failure is endemic in West Africa, but fails to improve on artemether/lumefantrine. Yellow fever causes acute fever, jaundice, and renal dysfunction, but the patient was fully vaccinated. The hallmark transaminitis of Lassa fever displays an AST significantly greater than ALT, accompanied by acute sensorineural hearing impairment and acute renal failure following close contact with a febrile bleeding patient.",
+  "case_prompt": "A 33-year-old male healthcare professional at a hospital in northern Togo presented on March 5, 2016, with acute fever, severe headache, chills, and generalized body aches, approximately three weeks after providing nursing care to a critically ill colleague who had suffered a fatal hemorrhagic illness. Over the subsequent days, his symptoms progressed to include diffuse abdominal pain, generalized fatigue, intense myalgias, and watery diarrhea. Physical examination was otherwise unremarkable. He had documented prior vaccination against yellow fever. A thick blood smear was performed, and he received oral artemether/lumefantrine without clinical improvement. Admission laboratory evaluation revealed anemia with a hemoglobin level of 7 g/dL, leukopenia with a white blood cell count of 3,300/\u00b5L, and severe thrombocytopenia with a platelet count of 30,000/\u00b5L. Erythrocyte sedimentation rate was 17 mm at the 1st hour. Chemistry panels demonstrated acute renal failure with blood urea elevated to 27.5 mmol/L and serum creatinine elevated to 637 \u00b5mol/L. Liver function testing revealed hepatocellular injury with total bilirubin of 50 \u00b5mol/L, aspartate aminotransferase (AST) of 1,321 IU/L, and alanine aminotransferase (ALT) of 1,060 IU/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe falciparum malaria",
+      "rule_out_reason": "Considered as the leading cause of acute febrile jaundice, cytopenias, and acute renal failure in West Africa, but empiric artemisinin combination therapy failed to provide any therapeutic benefit.",
+      "quote": "A thick smear was performed, and the patient received antimalarial treatment (artemether/lumefantrine) without success."
+    },
+    {
+      "candidate": "Yellow fever",
+      "rule_out_reason": "Considered given the classic presentation of acute viral hemorrhagic fever with fever, jaundice, and acute renal failure in Togo, but the patient had documented protective vaccination.",
+      "quote": "He was vaccinated against yellow fever."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the epidemiologic clustering of severe febrile illness and hemorrhagic manifestations among healthcare workers in the same hospital ward, combined with marked AST-predominant transaminitis and profound thrombocytopenia, confirmed by molecular detection of viral RNA.",
+      "quote": "A reverse transcriptase polymerase chain reaction (RT-PCR) assay was performed on the blood sample on day 5 after onset, which confirmed the presence of Lassa fever virus."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Flawless adherence to admission breakpoint. No mention of ribavirin, air evacuation, or RT-PCR results in prompt. All candidate quotes match source text character for character."
+}

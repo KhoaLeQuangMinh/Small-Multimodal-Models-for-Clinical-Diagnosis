@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5214670_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 64-year-old female who recently immigrated from Bangladesh presents with an acute tender breast lump, fatigue, and feverishness, followed by a nonhealing breast lesion. The clinical tension lies in distinguishing acute bacterial mastitis/pyogenic abscess or primary breast carcinoma from extrapulmonary tuberculosis of the breast, an uncommon and often misdiagnosed entity.\n2. Admission Breakpoint: Clinical presentation stops after initial history, physical examination (tender movable breast lump), and triage evaluation before histopathologic evaluation (needle biopsy showing necrotizing granulomatous inflammation) and confirmatory mycobacterial cultures.\n3. Differential Distinctions: Acute pyogenic bacterial breast abscess is ruled out by negative Gram and acid-fast smears and failure of conventional antibiotic treatment; breast carcinoma is ruled out by histopathology demonstrating necrotizing granulomatous inflammation without malignancy; mammary tuberculosis is confirmed by culture growth of Mycobacterium tuberculosis from the lesion.",
+  "case_prompt": "A 64-year-old female who recently moved to the United States from Bangladesh presented to primary care with a tender right breast lump that had been present for 4 to 5 days. She reported accompanying fatigue and feeling feverish. She had no significant prior personal or family history of breast disease.\n\nOn physical examination, she was afebrile but tachycardic. Breast examination was significant for a 1-inch movable mass located along the right anterior axillary line, without overlying skin changes, warmth, erythema, or nipple changes. Physical examination was otherwise unremarkable. Initial clinical impression was an acute inflammatory or infectious breast mass.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic breast abscess / bacterial mastitis",
+      "rule_out_reason": "Considered as the leading acute presentation for a painful breast mass with systemic feverishness, prompting empiric oral antibiotics; ruled out when the lesion failed to resolve, Gram stain was negative, and histology showed necrotizing granulomatous inflammation.",
+      "quote": "Biopsy showed abscess formation and necrotizing granulomatous inflammation. Ziehl-Neelsen and Gram stains were negative for any organisms. Patient diagnosed with an abscess and prescribed a course of oral antibiotics."
+    },
+    {
+      "candidate": "Primary breast carcinoma",
+      "rule_out_reason": "Considered in a 64-year-old postmenopausal woman presenting with a distinct palpable breast lump; ruled out by needle biopsy showing inflammatory abscess formation and necrotizing granulomatous inflammation without malignant cells.",
+      "quote": "Biopsy showed abscess formation and necrotizing granulomatous inflammation."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Extrapulmonary tuberculosis of the breast",
+      "rule_out_reason": "Although initial smears were negative, specialized mycobacterial cultures from the needle aspirate grew Mycobacterium tuberculosis, establishing primary mammary tuberculosis.",
+      "quote": "Several weeks later, cultures from the site grew tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clear breakpoint before biopsy histology and mycobacterial culture. Verbatim quotes matched. Zero spoilers in prompt."
+}

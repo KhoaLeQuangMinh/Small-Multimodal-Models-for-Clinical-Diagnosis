@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3593510_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 30-year-old woman presents with a massive, painful left upper quadrant abdominal mass, fever, weight loss, and peripheral eosinophilia. CT reveals a giant heterogeneous splenic mass (17.5 cm) with air-fluid levels elevating the left diaphragm. The primary clinical tension is distinguishing an infected pyogenic splenic abscess, a splenic neoplasm/lymphoma, or a benign non-parasitic pseudocyst from an isolated primary splenic hydatid cyst (Echinococcus granulosus), which represents an exceedingly rare primary anatomical site (<2% of cases).\n2. Admission Breakpoint: Admission evaluation concludes after history, physical examination, CBC with differential, ESR, chest and abdominal plain radiographs, and abdominal ultrasound/CT imaging, immediately prior to exploratory laparotomy, splenectomy, and histopathologic tissue examination.\n3. Differential Distinctions: Splenic pyogenic abscess causes fever, leukocytosis, and air-fluid levels on CT, but typically lacks marked peripheral eosinophilia and multivesicular daughter cyst architecture. Benign non-parasitic cysts (pseudocysts or epidermoid cysts) are unilocular, do not cause eosinophilia, and lack laminated parasitic cuticles. Splenic lymphoma or sarcoma causes massive splenomegaly and B-symptoms but presents as solid infiltrative tissue rather than a three-layered cyst wall with internal daughter cysts.",
+  "case_prompt": "A 30-year-old woman presents with a 3-month history of fever, breathlessness, and continuous dull-aching pain accompanied by a dragging sensation in the left side of her abdomen. She also reports progressive loss of appetite and weight loss. Her past medical history is unremarkable.\n\nOn physical examination, the abdomen is slightly distended with a large, palpable mass extending 6 to 7 cm below the left costal margin, reaching the level of the umbilicus. The mass is tender, firm, and irregular; examiner fingers cannot be insinuated beneath the costal margin. Systemic examination is otherwise normal.\n\nLaboratory investigations reveal a total leukocyte count of 12,000/mm3 with 7% eosinophils (absolute eosinophil count 840/mm3) and an elevated erythrocyte sedimentation rate (ESR 35 mm/h). Plain radiographs of the chest and abdomen are normal.\n\nAbdominal ultrasonography shows an enlarged spleen containing multiple cystic areas measuring 18 x 15 x 11 cm in aggregate. Abdominal computed tomography (CT) demonstrates a large mass measuring 17.5 x 15 x 10 cm containing air-fluid levels and heterogeneous contents with predominant low-density areas, elevating the left dome of the diaphragm. Other abdominal viscera appear normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Splenic abscess / Pyogenic infected cyst",
+      "rule_out_reason": "Fever, leukocytosis, and air-fluid levels on CT scan strongly suggested a pyogenic splenic abscess; however, the presence of peripheral eosinophilia and subsequent histology demonstrating daughter cysts without bacterial suppuration ruled out a simple bacterial abscess.",
+      "quote": "A computed tomography (CT) scan showed a large mass measuring 17.5x15x10 cm, containing air fluid levels and heterogeneous contents with predominant low-density areas, elevating left dome of the diaphragm... Definitive diagnosis of a hydatid cyst was, hence, made."
+    },
+    {
+      "candidate": "Non-parasitic splenic pseudocyst / Epidermoid cyst",
+      "rule_out_reason": "Non-parasitic congenital or post-traumatic splenic cysts are typically unilocular, devoid of peripheral eosinophilia, and lack daughter cyst formations and laminated membranes.",
+      "quote": "Routine investigations revealed leucocytosis (Total leukocyte count=12,000/mm3) with eosinophilia (7%, absolute eosinophil count=840/mm3)... The posterior aspect showed a cystic cavity having a white and smooth cyst wall, filled with multiple, variable-sized daughter cysts in a flower-shaped arrangement"
+    },
+    {
+      "candidate": "Splenic neoplasm / Cystic lymphoma",
+      "rule_out_reason": "A massive splenic mass associated with weight loss and abdominal distension raised concern for splenic malignancy, but imaging and gross examination revealed multivesicular cystic architecture rather than malignant solid neoplastic tissue.",
+      "quote": "Ultrasonography of the abdomen showed enlarged spleen with multiple cystic areas, together measuring 18x15x11 cm... Grossly, the splenectomy specimen measured 17x14x10 cm. The posterior aspect showed a cystic cavity having a white and smooth cyst wall, filled with multiple, variable-sized daughter cysts in a flower-shaped arrangement"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Gross and histopathological examination of the resected spleen revealing a three-layered cyst wall containing multiple daughter cysts in a flower-shaped pattern, laminated membranes, hydatid sand, and scolices of Echinococcus granulosus established isolated splenic echinococcosis.",
+      "quote": "The posterior aspect showed a cystic cavity having a white and smooth cyst wall, filled with multiple, variable-sized daughter cysts in a flower-shaped arrangement [Figure 3]. The hematoxylin and eosin (H and E)-stained slides showed a cyst wall comprising of three layers [Figure 4]. The cystic contents consisted of mixture of multiple infolded membranes, fragmented hooklets, and debris which were part of hydatid sand. Multiple scolices of Echinococcus granulosus were also seen [Figure 5]. Definitive diagnosis of a hydatid cyst was, hence, made."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero pathogen spoilers in case prompt. Admission breakpoint set prior to laparotomy and histopathology. Look-alikes and diagnostic pivot thoroughly substantiated with exact quotes."
+}

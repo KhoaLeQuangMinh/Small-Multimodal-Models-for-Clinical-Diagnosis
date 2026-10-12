@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4153245_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: An 8-year-old boy presents with 2 months of fever, toxic appearance, jaundice, hepatosplenomegaly, and profound pancytopenia with hyperferritinemia and hyperlipidemia, fulfilling criteria for hemophagocytic syndrome (HPS). His own serial bone marrow aspirates are repeatedly negative for pathogens, posing an intense diagnostic dilemma resolved by shared epidemiologic exposure and his sibling's diagnostic marrow.\n2. Admission Breakpoint: Admission triage terminates following admission physical exam, baseline labs (pancytopenia, LFT derangement, hyperferritinemia, hyperlipidemia), negative routine cultures and malaria blood smear, and abdominal imaging. Confirmatory send-out serology panels, serial BMAs, and family marrow correlation mark the diagnostic pivot.\n3. Differential Distinctions: Acute viral hepatitis (HAV, HBV, HCV, HDV) and systemic viral infections (EBV, CMV, HIV) cause hepatosplenomegaly and liver enzyme elevations but serologies were non-reactive. Malaria causes febrile jaundice and anemia but peripheral blood smear and serologies were negative.",
+  "case_prompt": "An 8-year-old boy from Tehran presented with a 2-month history of prolonged fever, abdominal pain, and jaundice. He had a travel history to a province located in northern Iran 4 months prior to presentation. He had previously been hospitalized for 14 days and monitored in an intensive care unit without an ascertained cause for his fever. On physical examination, the child was febrile, appeared toxic, and had marked jaundice with palpable hepatosplenomegaly. Cardiovascular, respiratory, and renal examinations were normal. Admission laboratory testing demonstrated severe pancytopenia (hemoglobin 5.4 g/dL, white blood cell count < 1,000/µL, platelet count 63,000/µL), deranged liver function tests (serum bilirubin 2.4 mg/dL, elevated transaminases, LDH 601 U/L, alkaline phosphatase 1443 U/L), hyperlipidemia, and marked hyperferritinemia. Abdominal ultrasound showed diffuse hepatosplenomegaly without focal lesions, and abdominal CT revealed hepatosplenomegaly with para-aortic lymphadenopathy and a pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral hepatitis (HAV, HBV, HCV, HDV) and systemic viral infections (CMV, EBV, HIV)",
+      "rule_out_reason": "Marked jaundice, hepatosplenomegaly, transaminitis, and systemic toxicity prompted extensive evaluation for viral hepatitis and acute mononucleosis-like viruses, but targeted serological assays were completely negative.",
+      "quote": "The patient was also found to be negative for antibodies to HIV, hepatitis A, B, C, D virus, CMV, EBV, Borrelia and malaria."
+    },
+    {
+      "candidate": "Malaria and Borreliosis",
+      "rule_out_reason": "Hemolytic jaundice, severe anemia, thrombocytopenia, and fever in a returning traveler raised suspicion for endemic blood protozoa or spirochetes, but peripheral smear and serologic testing were negative.",
+      "quote": "peripheral smear was negative for malaria parasite. The patient was also found to be negative for antibodies to HIV, hepatitis A, B, C, D virus, CMV, EBV, Borrelia and malaria."
+    },
+    {
+      "candidate": "Pyogenic bacterial sepsis",
+      "rule_out_reason": "Severe toxicity, leukopenia, and pleural effusion suggested occult severe bacterial infection, but blood and urine cultures were sterile.",
+      "quote": "Blood and urine cultures were sterile"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Although three consecutive bone marrow aspirates from the patient were negative, the patient presented with full features of secondary hemophagocytic syndrome, and his co-traveling older brother had an identical clinical presentation with a bone marrow aspirate definitively demonstrating Leishman-Donovan bodies and hemophagocytosis.",
+      "quote": "Bone marrow Aspiration (BMA) was performed three times. All of them were negative but his brother had a positive BMA for Leishman Donovan bodies and numerous histiocytes showing hemophagocytosis. With the final diagnosis of HPS associated with VL, The child was treated with glucantime/cyclosporine and corticosteroids."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly maintained prior to bone marrow aspiration and send-out serology panels. Zero pathogen names in presentation. Exact quotes validated."
+}

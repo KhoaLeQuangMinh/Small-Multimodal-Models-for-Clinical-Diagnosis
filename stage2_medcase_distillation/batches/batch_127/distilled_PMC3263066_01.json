@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3263066_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old kidney transplant recipient maintained on chronic immunosuppression presents with severe cachexia (16 kg weight loss), fever, hematochezia, and an abdominal mass found to be an ileocolic intussusception with necrotic retroperitoneal and mesenteric lymphadenopathy. The diagnostic dilemma lies in differentiating post-transplant lymphoproliferative disorder (PTLD) or an aggressive gastrointestinal adenocarcinoma from chronic granulomatous opportunistic infection acting as a pathologic lead point.\n2. Admission Breakpoint: The admission workup concludes after baseline cross-sectional imaging (abdominal ultrasound and contrast CT) establishes an ileocolic intussusception, colonic thickening, and necrotic lymphadenopathy. Emergency exploratory laparotomy, bowel resection, and subsequent tissue histopathology represent the invasive confirmatory phase.\n3. Differential Distinctions: PTLD and intestinal malignancies typically cause mechanical intussusception via neoplastic masses in immunosuppressed transplant recipients; however, central necrosis of multiple lymph node basins and subsequent histology showing transmural caseous granulomas with acid-fast bacilli definitively distinguish mycobacterial infection from malignancy. Crohn's disease causes transmural ileocolic inflammation but lacks extensive caseous necrosis and acid-fast bacilli.",
+  "case_prompt": "A 27-year-old male renal allograft recipient presented with a 4-month history of fever, diffuse abdominal pain, episodic small-volume diarrhea, occasional hematochezia, and a 16-kg weight loss. Three years prior, he had received a living-donor kidney transplant for end-stage renal disease secondary to chronic glomerulonephritis and was maintained on maintenance immunosuppression (prednisolone 10 mg daily and azathioprine 100 mg daily; cyclosporine had been discontinued 4 months prior to presentation). On physical examination, he was severely cachectic, weighing 38 kg (baseline weight was 58 kg). Vital signs were within normal limits. He exhibited marked conjunctival pallor without icterus, peripheral lymphadenopathy, or allograft tenderness. Abdominal examination revealed a diffuse, ill-defined, firm, tender mass measuring 9 × 7 cm in the right hypochondrium; there was no hepatosplenomegaly or ascites. Laboratory testing revealed severe anemia with a hemoglobin of 6.7 g/dL, a total leukocyte count of 4,200/mm^3, a normal platelet count, and hypoalbuminemia with serum albumin of 2.2 g/dL. Serum creatinine was elevated at 3.1 mg/dL, indicating allograft dysfunction; serum electrolytes and liver enzymes were normal. Plain chest radiography revealed ill-defined minimal haziness in the right upper and midzones with minimal pleural effusion. Abdominal ultrasonography demonstrated a right hypochondrial mass measuring 7.1 × 5.0 × 10.1 cm consistent with intussusception, accompanied by enlarged mesenteric lymph nodes; the renal allograft appeared structurally normal. Contrast-enhanced computed tomography of the abdomen confirmed an ileocolic intussusception extending to the hepatic flexure with thickened ascending colon, along with multiple enlarged mesenteric, para-aortic, and para-iliac lymph nodes exhibiting central necrosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-Transplant Lymphoproliferative Disorder (PTLD) / Colonic Neoplasm",
+      "rule_out_reason": "In an immunosuppressed renal allograft recipient presenting with severe wasting, anemia, hematochezia, and an intussusception lead point with extensive abdominal adenopathy, PTLD or carcinoma is the primary differential diagnosis; however, resected tissue demonstrated caseating granulomatous inflammation rather than monoclonal lymphoid or malignant epithelial infiltration.",
+      "quote": "Histopathological examination of the ileocolic intussusception revealed fragments of a lymph node with extensive caseation necrosis and many acid-fast bacilli (AFB)."
+    },
+    {
+      "candidate": "Crohn's Disease",
+      "rule_out_reason": "Transmural ileocecal inflammation with mucosal ulcerations and polypoid lesions can cause intussusception, but extensive caseation necrosis and the presence of Langhans multinucleated giant cells and acid-fast organisms exclude idiopathic inflammatory bowel disease.",
+      "quote": "The proximal polypoidal lesion of the intussusceptum and the mucosal ulcerations of the intussuscepient colonic segment revealed dense inflammatory infiltrates of lymphocytes and plasma cells, along with microabscesses in the submucosa and lamina propria, transmural granulomas with epitheloid histiocytes, lymphocytes; Langhans type multinucleated giant cells and central foci of caseation"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency exploratory laparotomy with ileocolic resection revealed transmural caseating granulomas, extensive nodal caseation, and numerous beaded acid-fast bacilli characteristic of Mycobacterium tuberculosis, establishing ileocecal tuberculosis as the cause of mechanical intussusception in this immunosuppressed allograft recipient.",
+      "quote": "Long, curved and beaded AFB, morphologically typical of Mycobacterium tuberculosis (MTB), were detected in all the above-mentioned lesions"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Ileocolic intussusception caused by extensive ileocecal and nodal tuberculosis in a renal transplant recipient on immunosuppressive therapy."
+}

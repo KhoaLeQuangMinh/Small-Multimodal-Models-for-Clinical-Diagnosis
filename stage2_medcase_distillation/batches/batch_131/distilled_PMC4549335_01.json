@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4549335_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A patient with long-standing HIV infection presents with severe B-symptoms (drenching sweats), massive hepatosplenomegaly, and progressive pancytopenia despite viral suppression, creating diagnostic overlap with HIV-associated lymphoma, Kaposi's sarcoma, or disseminated mycobacteriosis.\n2. Admission Breakpoint: The clinical narrative ends at the initial evaluation of persistent sweats, organomegaly, and refractory cytopenias before bone marrow aspiration and tissue biopsies are performed.\n3. Differential Distinctions: Hematologic malignancy exhibits atypical lymphoid blasts; disseminated MAC shows acid-fast bacilli; Kaposi's sarcoma presents with vascular spindle cell proliferation. Visceral leishmaniasis is confirmed by identifying intracellular amastigotes in reticuloendothelial tissues and positive urine antigen testing.",
+  "case_prompt": "A 60-year-old European male with HIV infection diagnosed in 1985 presented with a history of drenching sweats, increasing abdominal distension, and severe lethargy. He had traveled to Spain in 1992. Combination antiretroviral therapy (ART) initiated in 1996 achieved sustained viral suppression, but his CD4 count had dropped to a nadir of 39 cells/µL and failed to rise above 140 cells/µL. On examination, he had marked pallor and profound hepatosplenomegaly causing significant abdominal discomfort. Laboratory testing revealed progressive pancytopenia requiring ongoing red blood cell transfusions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Kaposi's sarcoma",
+      "rule_out_reason": "Visceral Kaposi's sarcoma is a well-recognized complication of advanced HIV immunodeficiency presenting with organomegaly and skin lesions, prompting chemotherapeutic consideration, but histology lacked spindle cell neoplastic changes.",
+      "quote": "Daunorubicin was chosen instead of doxorubicin because of personal and institutional experience in the use of this agent for the treatment of Kaposi's sarcoma in patients with HIV infection."
+    },
+    {
+      "candidate": "HIV-associated lymphoma / Disseminated opportunistic infection",
+      "rule_out_reason": "Drenching sweats, hepatosplenomegaly, and worsening pancytopenia in an HIV-positive patient with low CD4 count strongly suggested lymphoma or disseminated mycobacterial infection, but bone marrow analysis demonstrated parasitic amastigotes.",
+      "quote": "In view of his worsening symptoms and pancytopenia, and the consistent increase in the density of amastigotes in his bone marrow samples despite maximal conventional treatment"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic demonstration of intracellular amastigotes in bone marrow aspirates and tissue biopsies confirmed visceral leishmaniasis, subsequently corroborated by urine antigen detection.",
+      "quote": "the diagnosis of VL was confirmed by the visualization of amastigotes in bone marrow samples."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

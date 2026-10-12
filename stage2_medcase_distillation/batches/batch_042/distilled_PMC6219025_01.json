@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6219025_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 55-year-old traveler returning from Nigeria presents with acute high fever, thrombocytopenia, hyperbilirubinemia, transaminitis, elevated CK/LDH, and acute encephalopathy with prominent cerebellar signs (dysarthria, expressive aphasia, urinary incontinence, truncal ataxia, GCS 13) and a normal initial head CT. The core tension is distinguishing whether the central nervous system presentation represents classical severe cerebral malaria (which carries high mortality and typically features unarousable coma with high parasitemia), acute viral encephalitis/meningoencephalitis, acute ischemic stroke, or an infection-associated encephalopathy syndrome with a reversible splenial lesion (MERS) complicating low-parasitemia malaria.\n2. Admission Breakpoint: Emergency presentation and triage following clinical examination, baseline CBC, chemistries, LFTs, renal function, CRP, and emergent non-contrast head CT. Confirmatory testing (peripheral blood smears demonstrating intraerythrocytic ring forms, malaria PCR, and subsequent brain MRI / delayed CSF analysis) begins immediately after this breakpoint.\n3. Differential Distinctions: Severe cerebral malaria is characterized by unarousable coma (GCS <= 11) and severe organ failure, whereas this patient had low parasitemia (0.05%), maintained a GCS of 13, and lacked features of severe malaria. Acute stroke presents with acute focal deficits, but was excluded by systemic inflammatory/hepatic/hematologic abnormalities and normal initial CT. Acute viral meningoencephalitis is excluded by normal initial CT, near-normal CSF (protein and glucose normal), and positive blood smear/PCR.",
+  "case_prompt": "A 55-year-old Japanese man who had returned from Nigeria was admitted to the hospital with a persistent high fever of 2 days' duration. Upon presentation, he exhibited dysarthria, expressive aphasia, urinary incontinence, and truncal ataxia, with clinical signs suggestive of cerebellar ataxia. He appeared dazed and was unable to use appropriate words in conversation. His Glasgow Coma Scale score was 13 (E4V4M5). He had no significant past medical history and had received no vaccinations within the preceding 5 years.\nOn physical examination, the patient was hemodynamically stable without respiratory distress. Neurological examination confirmed prominent cerebellar ataxia, expressive dysphasia, and blunted sensorium without focal cranial nerve palsies.\nHematological investigations revealed a white blood cell count of 5,800/μL, hemoglobin level of 18.8 g/dL, hematocrit of 50.0%, and platelet count of 54,000/μL. Serum biochemical analysis revealed total bilirubin of 2.1 mg/dL, aspartate aminotransferase (AST) of 407 IU/L, alanine aminotransferase (ALT) of 175 IU/L, lactate dehydrogenase (LDH) of 1,354 IU/L, creatine kinase (CK) of 1,593 IU/L, serum creatinine of 1.54 mg/dL, and C-reactive protein (CRP) of 6.56 mg/dL. Electrolyte testing revealed hyponatremia with a serum sodium level of 123 mEq/L. A non-contrast computed tomography (CT) scan of the brain did not show any remarkable acute intracranial abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral malaria (severe malaria)",
+      "rule_out_reason": "Considered given the patient's acute febrile encephalopathy, travel to an endemic region in West Africa, thrombocytopenia, and hepatorenal impairment. However, classical cerebral malaria is defined by unarousable coma (Glasgow Coma Scale score <= 11) with severe multiorgan failure, whereas this patient retained a GCS of 13, exhibited low parasitemia (0.05%), and lacked classical hallmarks of severe cerebral sequestration.",
+      "quote": "He had no other signs or symptoms of severe malaria."
+    },
+    {
+      "candidate": "Acute viral encephalitis / meningoencephalitis",
+      "rule_out_reason": "Considered because of acute fever, confusion, aphasia, ataxia, and elevated inflammatory markers. However, emergent head CT was unremarkable, cerebrospinal fluid evaluation revealed only a slightly elevated cell count with normal protein and glucose, and blood testing demonstrated parasitemia.",
+      "quote": "Analysis of the cerebrospinal fluid upon recovery of the platelet count on day 10 revealed a slightly increased total cell count (6.3 cells/muL), and normal levels of protein and glucose."
+    },
+    {
+      "candidate": "Acute ischemic stroke / focal intracranial vascular lesion",
+      "rule_out_reason": "Considered given the abrupt onset of focal neurological deficits including expressive aphasia, dysarthria, and truncal ataxia in a middle-aged male. However, initial head CT showed no acute infarction or hemorrhage, and subsequent brain MRI revealed a restricted lesion isolated to the splenium of the corpus callosum rather than a vascular territorial infarction, which fully regressed on follow-up imaging.",
+      "quote": "A computed tomography (CT) scan of the brain did not show any remarkable findings."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal clinical and confirmatory turning point was peripheral blood smear examination demonstrating intraerythrocytic ring forms with 0.05% parasitemia, confirmed by PCR as Plasmodium falciparum, in conjunction with brain MRI revealing diffusion restriction in the splenium of the corpus callosum that completely resolved on follow-up, confirming mild encephalitis/encephalopathy with a reversible splenial lesion (MERS) due to malaria.",
+      "quote": "Blood smears revealed parasitemia with 0.05% of the erythrocytes containing ring forms (Fig. 1). The polymerase chain reaction (PCR) detected P. falciparum."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified admission breakpoint strictly excludes blood smear results, PCR, antimalarials, and MRI findings. Quotes verified against raw case text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5928731_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 25-year-old male in an endemic Caribbean region presents with acute fever, retro-orbital/headache, severe bone pain, nausea, thrombocytopenia, and transaminitis, mimicking dengue fever or a self-limiting viral syndrome so closely that he was discharged with a clinical diagnosis of dengue, concealing an infection caused by uncommon Leptospira serogroups.\n2. Admission Breakpoint: The breakpoint occurs following initial emergency department presentation, triage laboratory analysis showing thrombocytopenia and transaminitis, and baseline chest radiography on day 1 of hospitalization, strictly prior to send-out serological microscopic agglutination testing.\n3. Differential Distinctions: Dengue virus infection presents identically with acute febrile illness, bone pain, leukopenia, and thrombocytopenia, but yields positive dengue NS1/IgM and lacks microscopic agglutination seroconversion against Leptospira. Non-specific viral syndrome typically causes mild constitutional symptoms without significant dynamic thrombocytopenia or transaminitis.",
+  "case_prompt": "A 25-year-old male presented to the emergency department in July with a 4-day history of acute fevers, generalized myalgias, bone pain, headache, malaise, chills, and nausea. Two days prior to arrival, he had been evaluated at a local health center for dehydration and received intravenous fluid resuscitation.\n\nOn physical examination in the emergency department, he was afebrile, alert, and oriented. Vital signs were stable. He developed nausea, vomiting, and a dry non-productive cough during initial evaluation. Examination of the chest demonstrated clear lung fields bilaterally without crackles or wheezes, and cardiac examination was normal. There were no petechiae, purpura, or mucosal bleeding.\n\nTriage laboratory evaluation revealed significant thrombocytopenia and mildly elevated serum aminotransferases (transaminitis). An admission chest radiograph was unremarkable, with clear lung fields and normal cardiothoracic contours.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue fever",
+      "rule_out_reason": "Considered the primary provisional diagnosis due to acute onset of fever, bone pain, headache, nausea, and marked thrombocytopenia in an endemic region, leading clinicians to discharge the patient under this clinical impression; however, confirmatory spirochetal serology established an alternative diagnosis.",
+      "quote": "He was given a provisional diagnosis of viral syndrome with a rule-out of dengue, given acetaminophen and IV fluids, and admitted for care. ... He was discharged home on day 4 of hospitalization with a diagnosis of dengue."
+    },
+    {
+      "candidate": "Non-specific viral syndrome",
+      "rule_out_reason": "Considered due to the absence of fever at ED arrival, dry cough, and constitutional complaints, but ruled out given the marked hematologic and hepatic involvement that progressed to leukocytosis and dynamic thrombocytopenia.",
+      "quote": "He was given a provisional diagnosis of viral syndrome with a rule-out of dengue, given acetaminophen and IV fluids, and admitted for care. ... On the first day of hospitalization, he remained afebrile and developed nausea, vomiting, and dry cough."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serological analysis demonstrated an acute microscopic agglutination test (MAT) reciprocal titer of 100 on day 5 that rose 32-fold to a convalescent reciprocal titer of 3,200 against serogroup Icterohaemorrhagiae (serovar Mankarso) on day 8, confirming acute leptospirosis.",
+      "quote": "A serum specimen collected on day 5 of illness was positive by MAT with a reciprocal titer of 100 against serogroup Icterohaemorrhagiae (serovar Mankarso). Serum collected upon discharge 8 days after illness onset had a reciprocal MAT titer of 3,200 against serovar Mankarso."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case highlights an anicteric presentation of leptospirosis caused by an uncommon serovar (serovar Mankarso) clinically misdiagnosed as dengue fever due to fever, severe bone pain, and thrombocytopenia."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4977379_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A diabetic agricultural worker from Southeast Asia presents with high fevers and right upper quadrant pain refractory to standard empirical beta-lactam therapy, found to have a focal hepatic abscess despite completely normal baseline liver function tests, metabolic profile, and blood counts. This clinical picture challenges the clinician to differentiate typical enteric pyogenic hepatic abscesses and typhoid fever from regional environmental pathogens like Burkholderia pseudomallei.\n2. Admission Breakpoint: Admission triage concludes following initial physical examination, triage blood work (unremarkable CBC, LFTs, and chemistry), and the abdominal triphasic CT showing a segment 8 hepatic abscess. It stops immediately prior to invasive laparoscopic-guided percutaneous needle aspiration and subsequent microbiological culture.\n3. Differential Distinctions: Typhoid fever presents with prolonged high fever, abdominal symptoms, and hepatosplenomegaly in endemic zones, but does not typically form thick-walled suppurative liver abscesses and failed to improve with ampicillin-sulbactam. Typical pyogenic liver abscesses (e.g., Klebsiella pneumoniae, Escherichia coli) occur frequently in diabetics, but usually show elevated inflammatory markers, abnormal LFTs, and respond to ampicillin-sulbactam. In contrast, hepatic melioidosis commonly occurs in diabetic farmers with soil/water exposure and possesses intrinsic beta-lactam resistance requiring carbapenem induction.",
+  "case_prompt": "A 44-year-old male farmer from the Philippines with a history of diabetes mellitus presented for further evaluation of persistent fever and right upper quadrant abdominal pain. He had no history of international travel.\n\nTwo weeks prior to presentation, he developed vague abdominal pain localized to the right upper quadrant, rated at 5 out of 10 in severity, without distinct precipitating or alleviating factors. This was accompanied by high-grade fevers with a maximum temperature of 40°C. He was initially admitted to a local hospital and treated empirically with intravenous ampicillin-sulbactam for four days without clinical improvement. An abdominal ultrasound performed during that admission revealed a liver mass, prompting referral to a tertiary institution.\n\nOn arrival, the patient was awake, febrile, and tachycardic, with a normal blood pressure and respiratory rate. Physical examination revealed anicteric sclerae, clear breath sounds bilaterally, and regular heart sounds. His abdomen was soft and non-distended, with no focal tenderness, rebound, or guarding. Initial laboratory evaluation, including complete blood count, liver function tests, and basic metabolic profile, was unremarkable. A whole-abdominal triphasic computed tomography (CT) scan was obtained, demonstrating a focal liver abscess localized to segment 8.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Typhoid fever",
+      "rule_out_reason": "Considered due to the two-week history of high-grade fever, right upper abdominal pain, and geographic endemicity in the Philippines. Ruled out by the lack of clinical response to four days of intravenous ampicillin-sulbactam and cross-sectional imaging demonstrating a discrete, localized segment 8 hepatic abscess.",
+      "quote": "The patient was admitted to a local hospital and managed as a case of typhoid fever; however, there was no improvement on IV Ampi-Sulbactam for four days. Further workup revealed a liver mass on abdominal ultrasound. The patient was then referred to our institution for further evaluation."
+    },
+    {
+      "candidate": "Typical pyogenic liver abscess (Enterobacteriaceae / Klebsiella pneumoniae)",
+      "rule_out_reason": "Considered given the segment 8 liver abscess in a patient with diabetes mellitus. However, the infection failed to respond to initial broad-spectrum beta-lactam/beta-lactamase inhibitor coverage and needle aspiration cultures specifically yielded Burkholderia pseudomallei.",
+      "quote": "Under laparoscopic ultrasound guidance, a 21-gauge Chiba needle was inserted into the larger cystic area and aspirated approximately 5 cc of grossly purulent material... Culture studies revealed moderate growth of Burkholderia pseudomallei."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous laparoscopic ultrasound-guided aspiration of the segment 8 hepatic lesion yielded purulent exudate whose culture demonstrated moderate growth of Burkholderia pseudomallei, confirming hepatic melioidosis and prompting prompt transition to intravenous meropenem.",
+      "quote": "Culture studies revealed moderate growth of Burkholderia pseudomallei. Antibiotic was then shifted accordingly: intravenous Meropenem every 8 hours for 7 days. There was note of gradual decrease in the amount of abscess drained from the pigtail as observed on serial liver ultrasound (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "The case prompt strictly stops at the admission triage breakpoint with the segment 8 liver abscess on CT and unremarkable baseline labs. Zero mentions of Burkholderia or typhoid diagnosis in the prompt narrative. Differential diagnoses and Diagnostic Pivot are rigorously supported with exact quotes."
+}

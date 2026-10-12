@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10492604_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A young adult male with daily methadone use presenting with chest pain, nonproductive cough, and diffuse bilateral lung lesions with air-fluid levels that mimic septic emboli or metastatic cancer, yet with absent systemic fever and concurrent silent cysts in the myocardium, liver, and spleen.\n2. Admission Breakpoint: Immediately following chest radiography and multidetector computed tomography defining multiorgan cystic lesions, prior to transesophageal echocardiography and confirmatory serological testing.\n3. Differential Distinctions: Septic pulmonary emboli from right-sided endocarditis (ruled out by afebrile state, lack of murmurs, and non-inflammatory cystic multiorgan involvement) and cavitary metastatic malignancy (ruled out by absence of primary malignancy, absence of hilar/mediastinal lymphadenopathy, and thin-walled fluid characteristics).",
+  "case_prompt": "A 33-year-old man presents to the emergency department with a 2-week history of sharp, continuous left hemithoracic chest pain and anorexia. The pain is localized along the mid-axillary line between the fourth and seventh ribs and is exacerbated by local palpation, without variation during respiration or postural changes. He also reports a persistent nonproductive cough, but denies fever, dyspnea, or weight loss. His medical history is notable for opioid dependence managed with daily methadone syrup, and a 7 to 10 pack-year smoking history; he has no history of contact with domestic or farm animals. On physical examination, he appears mildly uncomfortable. Vital signs show a normal body temperature and oxygen saturation of 96% on room air. Cardiac auscultation reveals normal heart sounds without murmurs, lung fields are clear, and abdominal examination demonstrates no organomegaly or tenderness. Electrocardiography shows normal sinus rhythm. Chest radiography reveals diffuse round masses throughout both lung fields, several exhibiting air-fluid levels. Contrast-enhanced multidetector CT (MDCT) of the chest demonstrates multiple intraparenchymal thin-walled, thick-walled, and air-containing cystic lesions in both lungs, a 25 mm cystic mass in the myocardium, and no mediastinal or hilar lymphadenopathy. Abdominopelvic MDCT reveals three thin-walled hepatic cysts measuring up to 38 mm and two splenic cysts measuring up to 26 mm. Brain CT is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Septic pulmonary emboli secondary to infective endocarditis",
+      "rule_out_reason": "Given the patient's history of opioid dependence and multiple lung lesions with air-fluid levels, septic embolization was a major consideration; however, he was afebrile, had normal cardiac auscultation without murmurs, and cross-sectional imaging revealed well-defined multiorgan cysts rather than acute wedge-shaped necrotizing infarctions.",
+      "quote": "He was opioid-addicted and uses methadone syrup every day."
+    },
+    {
+      "candidate": "Metastatic pulmonary malignancy",
+      "rule_out_reason": "Bilateral round pulmonary masses with air-fluid levels and concurrent hepatic and splenic lesions raised strong suspicion for widely metastatic disease; however, there was no lymphadenopathy, the lesions possessed thin-walled cystic architecture without solid enhancing nodules, and constitutional cachexia was absent.",
+      "quote": "In the chest X-ray of patient, diffuse round masses were visible in all lung fields. Some of them had air-fluid levels [Figure 1]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Transesophageal echocardiography confirmed an intramyocardial right ventricular cyst (20 x 19 mm), and serum enzyme-linked immunosorbent assay (ELISA) testing for hydatid disease returned positive, confirming disseminated echinococcal cyst disease.",
+      "quote": "Because hydatidosis was the first diagnosis, we tested the serology of hydatid disease in ELISA method which was positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Presentation ends after triage CT imaging. Serology, pathogen terminology, and treatment follow-up excluded from case prompt."
+}

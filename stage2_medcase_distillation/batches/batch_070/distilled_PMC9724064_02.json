@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9724064_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 10-year-old child presents with a biphasic illness beginning with high fevers, retro-orbital pain, and headaches, followed days later by progressive multifocal neurological deficits (asymmetric limb weakness and altered consciousness) and thrombocytopenia. The clinical dilemma is distinguishing acute meningoencephalitis from post-infectious acute disseminated encephalomyelitis (ADEM) triggered by an endemic tropical pathogen.\n2. Admission Breakpoint: Clinical history of febrile prodrome and progressive motor weakness/altered consciousness, along with initial triage platelet count (80,000/μL). Excludes send-out serologies, pathogen antigen tests, and neuroimaging studies.\n3. Differential Distinctions: Malaria can cause fever, encephalopathy, and thrombocytopenia, but is excluded by negative rapid antigen testing. Herpes simplex virus and Japanese encephalitis can cause febrile focal deficits, but serological and neuroimaging evaluations are negative for these entities while revealing demyelinating white-matter changes secondary to acute dengue.",
+  "case_prompt": "A 10-year-old boy presents with a 12-day history of high-grade fever and chills, accompanied by severe headaches, retro-orbital pain, and occasional episodes of vomiting. Five days after the onset of fever, he developed acute weakness of the right upper and lower extremities, followed by progressive weakness of the left upper extremity and a decreased level of consciousness. Initial haematological evaluation at presentation reveals thrombocytopenia with a platelet count of 80,000/μL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered given the prolonged febrile illness with chills, headaches, vomiting, neurological impairment, and thrombocytopenia; ruled out by negative dual antigen diagnostic testing.",
+      "quote": "Dual antigen for malaria and serology markers for Japanese encephalitis and herpes simplex virus (HSV-1) were negative."
+    },
+    {
+      "candidate": "Herpes Simplex Virus (HSV-1) Encephalitis / Japanese Encephalitis",
+      "rule_out_reason": "Considered due to pediatric febrile encephalopathy presenting with focal neurological deficits and impaired consciousness; ruled out by negative serological markers for both HSV-1 and Japanese encephalitis.",
+      "quote": "serology markers for Japanese encephalitis and herpes simplex virus (HSV-1) were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serological detection of specific IgM antibodies in conjunction with acute thrombocytopenia and typical MRI findings of multifocal non-enhancing demyelinating lesions confirmed acute disseminated encephalomyelitis secondary to dengue infection.",
+      "quote": "Haematological investigations revealed a platelet count of 80 000/microl with anti-dengue positive IgM and negative IgG status."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced prior to confirmatory serology and MRI. Zero pathogen leakage in case_prompt. Differential candidates and exact verbatim quotes verified against case text."
+}

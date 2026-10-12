@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7080332_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: Disentangling acute myopericarditis with tamponade from a structural intracardiac cystic lesion with reactive effusion in a patient from an endemic region, distinguishing parasitic cyst from cardiac neoplasm or idiopathic perimyocarditis.\n2. Admission Breakpoint: The breakpoint occurs following transthoracic echocardiography and thoracoabdominal CT defining the septal mass and tamponade, prior to sternotomy, surgical cyst enucleation, and histopathologic assessment.\n3. Differential Distinctions: Idiopathic or viral perimyocarditis produces troponin elevation and pericardial effusion but lacks an intramyocardial thick-walled cystic structure; cardiac neoplasms (e.g., myxoma, cystic teratoma) do not exhibit multi-layered capsular architecture with protoscolices; disseminated hydatid disease was excluded by absence of hepatic or pulmonary cysts on CT.",
+  "case_prompt": "A 42-year-old male construction worker residing in northeastern Iran presents to a cardiology clinic complaining of palpitations for two weeks, accompanied by intermittent atypical chest pain that is neither positional nor exertional.\nOn physical examination, his blood pressure is 100/65 mm Hg with a pulse rate of 70 beats per minute, and he is afebrile. Cardiac auscultation reveals distinctly muffled heart sounds without audible murmurs or pericardial friction rubs.\nElectrocardiography demonstrates low QRS voltages across the limb leads. Initial hematologic and biochemical laboratory testing reveals leukocytosis, thrombocytopenia, a normocytic normochromic anemia, and a significantly elevated cardiac troponin I level.\nUrgent transthoracic echocardiography demonstrates a large pericardial effusion with signs of severe hemodynamic compromise, including diastolic collapse of the right atrium and right ventricle. In addition, there is left ventricular hypertrophy with depressed systolic function (ejection fraction approximately 45%) and a well-defined, thick-walled 2.0 cm x 2.1 cm cystic structure located in the mid-portion of the interventricular septum. Pulmonary arterial pressure is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Viral / Idiopathic Perimyocarditis",
+      "rule_out_reason": "Transthoracic echocardiography demonstrated a discrete, thick-walled intramyocardial cystic lesion embedded in the interventricular septum rather than isolated diffuse myocarditis.",
+      "quote": "Transthoracic echocardiography (TTE) demonstrated a well-defined cyst (2x2.1 cm) with thickened wall in interventricular septum (IVS, at its mid-portion)."
+    },
+    {
+      "candidate": "Disseminated Visceral Hydatid Disease with Secondary Cardiac Involvement",
+      "rule_out_reason": "Cross-sectional computed tomography of the chest and abdomen confirmed isolated cardiac involvement without hepatic or pulmonary lesions.",
+      "quote": "HRCT of the lungs and CT of abdominal area showed no additional organ involvement."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical resection of the interventricular septal cyst via cardiopulmonary bypass and histological examination revealing protoscolices and classic three-layered cyst architecture confirmed cardiac hydatidosis.",
+      "quote": "Histopathological evaluation showed a capsule including several protoscolices. The cyst consists of three layers: Outer, intermediate, and inner layers."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC7080332_01. Echocardiographic findings of the septal cyst are presented as admission triage imaging without disclosing parasitic etiology."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11329603_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 43-year-old female presents with a 1-year history of chronic cough, 2 months of unremitting fever, and extensive parenchymal destruction with bilateral pleural effusions on chest CT, failing initial empiric therapy. The core clinical challenge is identifying high-level antimicrobial resistance in a newly treated patient while managing subsequent life-threatening cardiotoxicity (QTc prolongation to 491 ms and frequent PVCs) and worsening anemia induced by second-line antimicrobials.\n2. Admission Breakpoint: Admission triage ends following presentation with chronic cough and intermittent fever, baseline CBC showing moderate anemia (Hb 97 g/L), and chest CT revealing bilateral lung destruction and pleural effusions, immediately prior to sputum smear confirmation and culture-based drug susceptibility testing.\n3. Differential Distinctions: Drug-susceptible disease is ruled out by persistent fevers on first-line therapy and phenotypic resistance to isoniazid, rifampin, and moxifloxacin. Non-tuberculous chronic structural lung diseases and primary cardiac arrhythmia are excluded by culture isolation and toxicity resolution following medication adjustments.",
+  "case_prompt": "A 43-year-old woman presented to the hospital with a 1-year history of recurrent cough with sputum production and intermittent daily fevers persisting over the preceding two months. \n\nOn physical examination, she appeared chronically ill with conjunctival pallor. Breath sounds were markedly decreased across the left hemithorax, and bilateral basilar rales were appreciated on chest auscultation. \n\nInitial laboratory testing demonstrated a hemoglobin level of 97 g/L with a red blood cell count of 3.24 x 10^12/L. Chest computed tomography revealed extensive parenchymal destruction of the left lung, multiple active infiltrative lesions in the right lung, and bilateral pleural effusions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Drug-Susceptible Pulmonary Infection",
+      "rule_out_reason": "Considered initially and empirically treated with a standard four-drug regimen; however, persistent intermittent fevers and subsequent culture DST confirmed high-level resistance to multiple core agents.",
+      "quote": "The patient received HRZE treatment for 10 days; however, intermittent fever persisted. On 26th September 2022, the sputum culture results indicated positivity for M. tuberculosis, intermediate susceptibility to Lfx, and resistance to H/R/Mfx, resulting in a diagnosis of pre-XDR-TB."
+    },
+    {
+      "candidate": "Anemia of Chronic Disease / Primary Cardiac Arrhythmia",
+      "rule_out_reason": "Considered when the patient later developed palpitations, chest tightness, worsening anemia (Hb 82 g/L), and QTcF prolongation (491 ms). Ruled out as chronic disease anemia, confirming oxazolidinone toxicity and hypokalemia-induced cardiotoxicity.",
+      "quote": "We have ruled out anemia caused by chronic diseases or other reasons. We considered that the anemia was related to LZD, which led to its discontinuation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when sputum smear and culture confirmed Mycobacterium tuberculosis with intermediate susceptibility to levofloxacin and resistance to isoniazid, rifampicin, and moxifloxacin, confirming pre-XDR tuberculosis.",
+      "quote": "A chest CT revealed destruction of the left lung, lesions in the right lung with bilateral pleural effusion, and detection of M. tuberculosis by sputum smear."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case strictly confines the case prompt to the baseline presentation and chest CT, reserving the phenotypic drug resistance and drug toxicity details for the diagnostic reasoning."
+}

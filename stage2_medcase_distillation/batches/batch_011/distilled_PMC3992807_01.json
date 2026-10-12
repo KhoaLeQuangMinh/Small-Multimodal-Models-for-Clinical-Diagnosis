@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3992807_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 40-year-old male presents with high fever, rigors, epigastric abdominal pain, vomiting, and jaundice. Triage workup demonstrates markedly elevated pancreatic enzymes (amylase 525 IU/L, lipase 250 IU/L) and ultrasound findings of acute pancreatitis, leading clinicians toward typical abdominal pathologies (choledocholithiasis, alcoholic or metabolic pancreatitis), while the underlying trigger is microvascular sequestration from severe falciparum malaria.\n2. Admission Breakpoint: The admission breakpoint falls immediately after physical examination and emergency department diagnostic imaging/triage labs (CBC, liver function, pancreatic enzymes, renal panel, electrolytes, serum calcium, lipid profile, plain radiographs, and abdominal ultrasonography), prior to peripheral blood film microscopy, rapid malaria antigen testing, and contrast abdominal CT.\n3. Differential Distinctions: Gallstone pancreatitis and acute ascending cholangitis are ruled out by normal transaminases/alkaline phosphatase and absence of biliary dilatation or calculi; hypertriglyceridemic/hypercalcemic pancreatitis are excluded by normal lipids and calcium. Severe falciparum malaria is established by identification of Plasmodium falciparum ring forms on peripheral blood smear and a positive histidine-rich protein 2 (HRP2) antigen assay, responding promptly to intravenous artesunate.",
+  "case_prompt": "A 40-year-old male presents to the emergency department with a four-day history of high-grade fever associated with chills, progressive jaundice, intractable vomiting, and severe abdominal pain. He reports no cough, dysuria, diarrhea, or confusion on initial presentation.\n\nOn physical examination, he is alert and oriented but visibly febrile with a body temperature of 103°F (39.4°C) and scleral icterus. Abdominal examination demonstrates marked epigastric tenderness and abdominal distension, with normal active bowel sounds and no involuntary guarding. Cardiovascular, respiratory, and neurological examinations are otherwise within normal limits.\n\nInitial laboratory evaluation reveals a hemoglobin of 10.2 g/dL, a total leukocyte count of 15,100/mm³ (87% neutrophils), and a platelet count of 275,000/mm³. Total serum bilirubin is elevated at 4.4 mg/dL with a direct bilirubin of 2.0 mg/dL; serum aminotransferases and alkaline phosphatase levels are within normal limits. Serum amylase is elevated at 525 IU/L and serum lipase is elevated at 250 IU/L. Renal function and electrolytes are normal (urea 32 mg/dL, creatinine 1.2 mg/dL, sodium 140 mEq/L, and potassium 4.1 mEq/L). Serum calcium is 9.2 mg/dL, and a fasting lipid profile is normal (total cholesterol 170 mg/dL, triglycerides 103 mg/dL). A plain chest radiograph is unremarkable, and an abdominal radiograph shows non-obstructive ileus without air-fluid levels. Bedside abdominal ultrasonography reveals an edematous, enlarged pancreas with minimal free fluid in the peritoneal cavity, without biliary ductal dilatation or gallstones.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gallstone Pancreatitis / Choledocholithiasis / Ascending Cholangitis",
+      "rule_out_reason": "Acute abdominal pain, elevated amylase and lipase, and conjugated hyperbilirubinemia in a febrile patient raised immediate suspicion for biliary pancreatitis or acute cholangitis; ruled out by normal hepatic transaminases and alkaline phosphatase, and imaging demonstrating pancreatic enlargement and peripancreatic fluid without cholelithiasis or common bile duct dilatation.",
+      "quote": "Liver function testing showed serum Total Bilirubin - 4.4 mg/dl (Direct Bilirubin - 2 mg/dl) and serum aminotransferases and alkaline phosphatase were within normal limits... Ultra sonography abdomen demonstrated an edematous, enlarged pancreas with minimal fluid in the peritoneal cavity."
+    },
+    {
+      "candidate": "Hypertriglyceridemic or Hypercalcemic Pancreatitis",
+      "rule_out_reason": "Systemic metabolic etiologies of acute pancreatitis were considered in the workup; ruled out by completely normal fasting serum lipid levels and normal serum calcium.",
+      "quote": "Serum calcium was 9.2 mg/dl and fasting lipid profile was within the normal limits (cholesterol - 170 mg/dl, triglycerides - 103 mg/dl, high density lipoprotein - 36 mg/dl, low density lipoprotein - 114 mg/dl and very low density lipoprotein-20 mg/dl)."
+    },
+    {
+      "candidate": "Bacterial Sepsis / Spontaneous Peritonitis",
+      "rule_out_reason": "High fever with chills, leukocytosis (15,100/mm³), and ascites/ileus suggested acute bacterial intra-abdominal sepsis; ruled out by sterile blood and urine cultures and absence of gastrointestinal perforation.",
+      "quote": "Urine and blood cultures came out to be sterile... abdominal X-ray showed \"Ileus\" without air-fluid levels."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Severe Falciparum Malaria Complicated by Acute Pancreatitis",
+      "rule_out_reason": "The definitive diagnosis was established by the detection of ring forms of Plasmodium falciparum on peripheral blood smear alongside a strongly positive histidine-rich protein 2 (HRP2) immunochromatographic rapid assay, identifying cytoadherence and microcirculatory pancreatic ischemia due to falciparum malaria as the primary trigger, which responded rapidly to intravenous artesunate.",
+      "quote": "Peripheral blood smear revealed ring forms of P. falciparum. Immunochromatographic test for P. falciparum histidine-rich protein 2-based assay was strongly positive... A diagnosis of severe falciparum malaria with acute pancreatitis (Grade E, CT severity index-4) was made and treatment was initiated with intravenous artesunate."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Breakpoint established before blood smear microscopy and rapid malaria antigen test. Clear separation between acute pancreatitis presentation and infectious etiology."
+}

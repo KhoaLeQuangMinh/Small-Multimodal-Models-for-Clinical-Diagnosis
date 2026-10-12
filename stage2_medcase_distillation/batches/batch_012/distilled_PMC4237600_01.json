@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4237600_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A previously healthy 13-year-old girl presenting with recent-onset epilepsy that is rapidly refractory to maximal doses of two standard anticonvulsants (carbamazepine and phenobarbital) without trauma or focal deficits, indicating a secondary structural or infectious CNS pathology rather than primary idiopathic epilepsy.\n2. Admission Breakpoint: The admission presentation concludes after the clinical history, physical examination, and baseline blood tests (CBC, LFTs, renal function) return normal, immediately before neuroimaging with brain CT is performed.\n3. Differential Distinctions: Idiopathic generalized epilepsy and post-traumatic epilepsy are ruled out by the absence of trauma and the neuroimaging identification of parenchymal calcifications and vesicular cysts; active intestinal cestode carriage is excluded by negative stool microscopy.",
+  "case_prompt": "A 13-year-old girl presented to the medical outpatient department with epilepsy diagnosed within the preceding 3 months. Her seizures had become progressively more frequent despite treatment with carbamazepine and phenobarbital administered at maximal tolerable dosages. She had no recent history of head trauma and no history of any other medical illness.\n\nOn physical examination, the findings were entirely unremarkable, with no focal neurological deficits. Baseline laboratory investigations, including a full blood count, liver function tests, and kidney function tests, were all within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Drug-Resistant Epilepsy / Post-Traumatic Epilepsy",
+      "rule_out_reason": "Considered given the new onset of seizures in an adolescent refractory to dual anticonvulsant therapy; ruled out by the absence of trauma history and the subsequent neuroimaging demonstration of structural parasitic cystic lesions within the cerebral parenchyma.",
+      "quote": "She had no recent history of head trauma neither any other medical illness."
+    },
+    {
+      "candidate": "Intestinal Cestode Co-infection (Taeniasis)",
+      "rule_out_reason": "Considered as an associated intestinal source of parasitic transmission; ruled out by microscopic stool examination.",
+      "quote": "The stool examination was negative for Taenia species ova."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Neurocysticercosis",
+      "rule_out_reason": "The diagnostic pivot occurred when brain CT neuroimaging demonstrated pathognomonic multiple calcified and vesicular cysts in the cerebral parenchyma, with marked clinical and radiological resolution following targeted antiparasitic therapy with albendazole.",
+      "quote": "A Brain CT scan was ordered which revealed multiple calcified and vesicular cysts within the Brain parenchyma; features consistent with Neurocysticercosis."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4237600. Presentation stops at outpatient triage breakpoint after normal baseline laboratories (FBC, LFTs, RFTs), withholding brain CT findings for the diagnostic reasoning phase. Zero pathogen or diagnostic disclosure in prompt."
+}

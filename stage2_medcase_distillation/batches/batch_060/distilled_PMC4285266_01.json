@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC4285266_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A returning traveler from sub-Saharan Africa presenting with acute febrile illness, severe headache, profound thrombocytopenia, transaminitis, hyperbilirubinemia, and acute renal impairment. The principal clinical challenge is distinguishing severe protozoal hemoparasitic infection from viral hemorrhagic fevers, severe arboviral diseases (such as dengue), leptospirosis, and systemic bacterial sepsis, as well as anticipating rare post-treatment complications such as delayed intravascular hemolysis.\n2. Admission Breakpoint: Admission triage ends following emergency department assessment of symptom chronology, travel exposure (recent return from South Sudan without chemoprophylaxis), vitals, normal plain chest radiography, and baseline triage laboratory results (demonstrating profound thrombocytopenia, elevated transaminases, hyperbilirubinemia, and azotemia), immediately prior to examination of peripheral thick and thin blood films for microscopic parasite identification.\n3. Differential Distinctions: Arboviral infections like dengue present with fever, headache, and severe thrombocytopenia, but rarely produce marked early hyperbilirubinemia and renal dysfunction without hemorrhagic shock. Leptospirosis presents with jaundice and renal impairment but typically features conjunctival suffusion and freshwater contact. Bacterial sepsis causes cytopenias and acute kidney injury but is ruled out by sterile blood cultures. The diagnosis of severe falciparum malaria is established microscopically by demonstrating high intraerythrocytic parasitemia.",
+  "case_prompt": "A 31-year-old previously healthy man presents to the emergency department with a 3-day history of high fever and severe headaches. He had returned 10 days earlier from a 10-day work trip to South Sudan, during which he slept under an insecticide-treated bed net but did not take chemoprophylaxis.\n\nOn initial triage evaluation, plain chest radiography demonstrates no cardiopulmonary abnormalities. Laboratory testing reveals a hemoglobin level of 144 g/L (reference range 140–160), a profound thrombocytopenia with a platelet count of 17 × 10^9/L (reference range 150–450 × 10^9/L), serum creatinine of 130 µmol/L (reference range 80–115), total bilirubin of 88 µmol/L (reference range 5–17), and serum aminotransferase of 105 U/L (reference range 10–38).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Sepsis",
+      "rule_out_reason": "Considered in the differential diagnosis of acute febrile illness with thrombocytopenia, transaminitis, and acute renal dysfunction in a returned traveler, but excluded by sterile blood cultures.",
+      "quote": "blood cultures were negative"
+    },
+    {
+      "candidate": "Glucose-6-Phosphate Dehydrogenase (G6PD) Deficiency",
+      "rule_out_reason": "Evaluated during the clinical course as a potential predisposing cause of severe intravascular hemolysis following oxidant or antimalarial exposure, but excluded by normal enzyme activity.",
+      "quote": "His glucose-6-phosphate dehydrogenase level was within reference range."
+    },
+    {
+      "candidate": "Delayed Hemolytic Transfusion Reaction",
+      "rule_out_reason": "Considered when the patient developed severe secondary delayed intravascular hemolysis and dark urine following blood transfusions, but ruled out by absence of red blood cell alloantibodies.",
+      "quote": "Pre- and post-transfusion and follow-up testing did not show evidence of red blood cell alloantibodies, making the possibility of a delayed hemolytic transfusion reaction unlikely."
+    },
+    {
+      "candidate": "Acute Schistosomiasis / Strongyloidiasis / Q-Fever",
+      "rule_out_reason": "Serological screens showed positive antibody titers to these organisms, but these represented past remote exposures rather than the etiology of the acute febrile and hemolytic crisis.",
+      "quote": "Serologic tests showed that the he was also positive for causative organisms for schistosomiasis, strongyloidiasis, and Q-fever. These diagnoses were consistent with past infections and were not considered to be contributory to the current severe hemolytic event."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Review of peripheral blood smears during initial assessment revealed massive intraerythrocytic parasitemia, confirming severe falciparum disease.",
+      "quote": "During initial assessment, a blood smear showed Plasmodium falciparum malaria with parasitemia of 22% (1,100,000 parasites/muL)"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial Day 1 triage presentation (headache, fever, South Sudan travel, baseline CBC/platelets/creatinine/bilirubin/LFTs, normal chest X-ray) strictly before blood smear parasite identification. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

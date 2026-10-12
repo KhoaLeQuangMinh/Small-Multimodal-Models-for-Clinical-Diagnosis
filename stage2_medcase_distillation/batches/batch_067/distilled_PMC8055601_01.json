@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8055601_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 24-year-old previously healthy male presents with progressive pleuritic chest pain, an 8-kg weight loss, and two large, cold, non-tender anterior chest wall masses slowly enlarging over four months without pulmonary symptoms or fever. Chest CT demonstrates cortical destruction of the left third rib and necrotic hilar adenopathy. The primary diagnostic tension is distinguishing an aggressive primary chest wall or rib malignancy (e.g., chondrosarcoma, osteosarcoma, Ewing sarcoma) from an extrapulmonary cold tuberculous abscess.\n2. Admission Breakpoint: The admission breakpoint occurs following physical examination, triage labs (mild anemia, elevated CRP), chest radiography, chest CT, and bedside ultrasound confirming necrotic lenticular collections with rib destruction, strictly before aspiration of the mass, AFB smear, PCR, and mycobacterial culture.\n3. Differential Distinctions: Malignant chest wall tumors (sarcoma, chondrosarcoma) are ruled out by CT/ultrasound demonstration of fluid collections with peripheral rim enhancement and definitive microbiological aspiration. Acute pyogenic bacterial abscess/osteomyelitis is excluded by the indolent four-month progression, afebrile presentation, and cold non-tender masses. Sputum-positive pulmonary tuberculosis is ruled out by the absence of productive cough and failed sputum induction.",
+  "case_prompt": "A 24-year-old previously healthy male presented to the hospital complaining of progressive left-sided pleuritic chest pain lasting several weeks. He noted two large swellings on the front of his chest that had been slowly increasing in size over four months at the exact site of his pain. Over the same duration, he experienced marked anorexia and an unintentional weight loss of eight kilograms. The patient denied cough, dyspnea, fever, chills, or night sweats. He was a lifelong non-smoker with no sick contacts, no recent travel, and an unremarkable family history.\n\nOn physical examination, the patient was afebrile and in no respiratory distress, maintaining normal oxygen saturation on ambient room air. Physical inspection revealed two distinct anterior chest wall masses: one situated superior to the left second rib measuring 7 × 7 cm, and a second mass overlying the left costal margin measuring 10 × 10 cm. The overlying skin appeared normal without erythema, warmth, or draining sinuses. Palpation revealed the lumps to be mobile, cold, non-pulsatile, and non-tender. Chest auscultation and systemic physical examination were unremarkable.\n\nLaboratory investigations demonstrated mild anemia with a hemoglobin level of 11.4 g/dL, an elevated C-reactive protein (CRP) level of 65 mg/L, and normal renal and hepatic function tests. A chest radiograph revealed an airspace opacity in the left perihilar region. Chest computed tomography (CT) demonstrated two lenticular-shaped collections in the left anterior chest wall: one along the internal aspect of the left third rib measuring 19 × 53 mm with frank cortical bone destruction of the third rib, and a second subcutaneous collection measuring 60 × 33 mm. An enlarged left hilar lymph node with peripheral enhancement and central necrotic hypodensity was also present. Ultrasound examination of the lower chest wall lesion confirmed a well-defined hypoechoic area with internal heterogeneity. Induced sputum collection was attempted, but the patient failed to produce any sputum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Chest Wall / Rib Malignancy (Chondrosarcoma, Osteosarcoma, Ewing Sarcoma)",
+      "rule_out_reason": "The combination of painless, slowly enlarging anterior chest wall masses with cortical rib osteolysis and significant weight loss in a young male strongly mimicked an osseous or soft tissue chest wall malignancy, but imaging demonstrated cystic collections rather than solid tumor matrix, and aspirate confirmed mycobacterial infection.",
+      "quote": "Chest computed tomography (CT) showed two lenticular-shaped collections noted in the left anterior chest wall. One is noted along the internal surface of the left third rib measures 19 x 53 mm causing bone destruction."
+    },
+    {
+      "candidate": "Acute Pyogenic Bacterial Chest Wall Abscess / Osteomyelitis",
+      "rule_out_reason": "Pyogenic bacterial infections of the ribs and soft tissues typically manifest with acute inflammatory signs including erythema, marked tenderness, calor, and systemic fever, whereas this presentation was indolent over four months with completely cold, painless masses.",
+      "quote": "The lumps were mobile, cold, non-pulsatile, and not tender. Chest auscultation and examination of other relevant systems were unremarkable."
+    },
+    {
+      "candidate": "Primary Sputum-Positive Pulmonary Tuberculosis",
+      "rule_out_reason": "Parenchymal pulmonary tuberculosis was investigated as the primary source of the perihilar opacity, but the patient was completely asymptomatic pulmonarily and failed to produce sputum for analysis.",
+      "quote": "The patient denied any history of cough, shortness of breath, fever, or night sweats... The patient failed to produce any sputum even after induction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine-needle aspiration of the anterior chest wall collection yielded fluid that, despite a negative direct acid-fast smear, was positive by polymerase chain reaction (PCR) and grew pan-sensitive Mycobacterium tuberculosis complex on culture, confirming primary chest wall tuberculosis with rib destruction.",
+      "quote": "The acid-fast bacilli smear (AFB) of the aspirated fluid from the chest wall swelling was negative, but the Polymerase Chain Reaction (PCR) was positive. The aspirated fluid culture grew a pan-sensitive Mycobacterium Tuberculosis Complex (MTB). We diagnosed him with primary chest wall tuberculosis..."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to chest wall aspirate PCR and MTB culture results. Verbatim quotes support all differential candidates and the diagnostic pivot."
+}

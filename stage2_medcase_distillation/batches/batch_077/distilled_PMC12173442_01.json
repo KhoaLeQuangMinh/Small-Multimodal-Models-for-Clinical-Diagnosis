@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12173442_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old male with marked leukocytosis (120 x 10^9/L) diagnosed with chronic myeloid leukemia (CML) presented with persistent painless cervical lymphadenopathy. The clinical conundrum was whether the lymph node represented an extramedullary blast phase / granulocytic sarcoma of CML or an independent concomitant infectious process.\n2. Admission Breakpoint: The admission breakpoint occurs upon completion of physical examination and initial laboratory evaluation showing marked leukocytosis with myeloid precursors and left shift, prior to bone marrow cytogenetics, trial of imatinib, and lymph node excisional biopsy.\n3. Differential Distinctions: Extramedullary blast phase of CML was initially suspected given the newly diagnosed leukemia with profound leukocytosis, but ruled out by persistent lymphadenopathy despite 4 months of hematologic response to imatinib, and biopsy demonstrating granulomatous inflammation; malignant lymphoma was considered given solitary persistent lymphadenopathy in a young male, but excluded by histopathology demonstrating caseating granulomas; tuberculous cervical lymphadenitis was confirmed by caseating granulomas, positive acid-fast bacilli smear, PCR, and culture.",
+  "case_prompt": "A 35-year-old Asian male with no significant past medical history presented with progressive, painless swelling in the left cervical region that had been increasing in size over the preceding three months. He denied fever, chills, night sweats, unintentional weight loss, cough, or other systemic symptoms. He had no recent travel history, no known contacts with chronic infectious illnesses, and no occupational or environmental exposures of significance.\n\nOn physical examination, vital signs were normal. Examination of the neck identified a firm, non-tender lymph node measuring approximately 3 x 2 cm in the left cervical region. There was no other palpable peripheral lymphadenopathy, and abdominal examination revealed no hepatosplenomegaly. Initial laboratory evaluation revealed marked leukocytosis, with a white blood cell count of 120 x 109/L. Examination of the peripheral blood smear demonstrated a marked myeloid left shift with an increased proportion of myeloid precursors, including basophils and myeloblasts, raising suspicion for a myeloproliferative neoplasm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Extramedullary Blast Phase / Granulocytic Sarcoma of CML",
+      "rule_out_reason": "Initially suspected as the cause of isolated lymphadenopathy in a patient newly diagnosed with Philadelphia chromosome-positive CML, but ruled out when the lymphadenopathy showed no regression after four months of imatinib therapy, prompting a biopsy that demonstrated caseating granulomas rather than leukemic blasts.",
+      "quote": "The cervical lymphadenopathy was initially thought to represent extramedullary blast phase of CML, a rare but recognized presentation according to the WHO classification. However, as there was no improvement after 4 months of treatment with imatinib, a biopsy was performed for further evaluation."
+    },
+    {
+      "candidate": "Malignant Lymphoma (Hodgkin or Non-Hodgkin Lymphoma)",
+      "rule_out_reason": "Considered due to the chronic, painless, solitary firm cervical lymphadenopathy in a young adult, but ruled out by histopathology showing classic caseating granulomatous lymphadenitis without neoplastic lymphoid architecture.",
+      "quote": "A lymph node biopsy revealed caseating granulomas on histopathology, consistent with TB."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excisional lymph node biopsy demonstrated caseating granulomas, and Mycobacterium tuberculosis was confirmed through acid-fast bacilli smear, polymerase chain reaction, and mycobacterial culture, establishing tuberculous cervical lymphadenitis concomitant with CML.",
+      "quote": "A lymph node biopsy revealed caseating granulomas on histopathology, consistent with TB. Mycobacterium tuberculosis was diagnosed through acid-fast bacilli (AFB) smear, polymerase chain reaction (PCR), and culture. Pulmonary TB was excluded through sputum analysis and imaging studies."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint set at initial presentation and triage CBC/peripheral smear, strictly before bone marrow biopsy, imatinib trial, and lymph node histology. Zero pathogen spoilers in prompt. Exact verbatim quotes confirmed."
+}

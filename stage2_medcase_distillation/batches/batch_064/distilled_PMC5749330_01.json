@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5749330_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 33-year-old female presents with subacute respiratory symptoms and unilateral \"white lung\" on chest radiography. While a complete hemithoracic opacification typically suggests massive pleural effusion, empyema, or pleural malignancy, thoracic cross-sectional imaging reveals an extensive multi-cystic mass occupying the pleural cavity. Primary pleural hydatid cysts without concomitant hepatic or pulmonary parenchymal involvement are exceedingly rare and mimic loculated pleural collections or cystic thoracic neoplasms.\n2. Admission Breakpoint: The admission workup ends following the clinical examination, chest radiography showing right-sided complete opacification (\"white lung\"), and chest computed tomography demonstrating multiple cysts filling the right pleural space, immediately prior to surgical thoracotomy.\n3. Differential Distinctions: Massive pleural effusion or chronic empyema was suspected based on percussion dullness and decreased breath sounds, but CT imaging identified defined multi-cystic architecture rather than free or simple loculated fluid. Pleural neoplasm (e.g., mesothelioma) typically presents with irregular pleural thickening and solid invasive soft tissue rather than well-encapsulated fluid cysts. Congenital or developmental thoracic cysts are typically solitary rather than a massive multi-cystic pleural replacement.",
+  "case_prompt": "A 33-year-old woman presented to the hospital with a 3-month history of progressive dyspnea, cough, low-grade fever, and chills.\n\nOn physical examination, she was hemodynamically stable. The pulse rate was 80 beats per minute, blood pressure was 120/80 mmHg, and oral temperature was 37.3°C (99.1°F). Respiratory examination demonstrated percussion dullness throughout the right hemithorax with normal resonance over the left hemithorax. On chest auscultation, breath sounds were markedly decreased to absent over the right lung fields.\n\nA plain chest radiograph revealed complete opacification of the right hemithorax (\"white lung\"). Computed tomography (CT) of the chest revealed multiple discrete cysts occupying and filling the entire right pleural space with secondary compression of the right lung parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Massive pleural effusion or chronic empyema",
+      "rule_out_reason": "Considered given 3 months of fever, chills, cough, percussion dullness, and a completely opacified hemithorax on plain radiography, but cross-sectional CT revealed well-encapsulated multi-cystic structures rather than diffuse loculated pleural fluid.",
+      "quote": "Chest X-ray revealed right side white lung (Figure 1). Computed tomography showed multiple cysts that filled the entire right pleural area (Figure 2)."
+    },
+    {
+      "candidate": "Pleural neoplasm (e.g., malignant mesothelioma or pleural sarcoma)",
+      "rule_out_reason": "Considered in a patient with chronic respiratory symptoms and hemithoracic opacification, but the CT appearance showed non-invasive cystic collections and surgical exploration confirmed benign cystic architecture without malignant soft-tissue infiltration.",
+      "quote": "Computed tomography showed multiple cysts that filled the entire right pleural area (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Right posterolateral thoracotomy directly demonstrated a large primary pleural hydatid cyst containing numerous daughter cysts, which were excised and irrigated with scolicidal hypertonic saline.",
+      "quote": "The patient was posted for thoracotomy and right posterior-lateral thoracotomy was performed; the right pleural cavity was entered and the wound was irrigated with hypertonic saline. The large hydatid cyst and its daughter cysts were evacuated completely."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC5749330_01. The case prompt ends strictly at the initial imaging triage (CXR showing white lung, CT showing multi-cystic pleural space occupation) without disclosing the hydatid identity, operative findings, or surgical outcome. Differential candidates and the diagnostic pivot cite direct quotes from the text."
+}

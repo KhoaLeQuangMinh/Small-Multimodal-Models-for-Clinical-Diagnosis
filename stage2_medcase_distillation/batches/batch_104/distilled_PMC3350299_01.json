@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3350299_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 6-year-old girl presented with high-grade paroxysmal fever, profound icterus, progressive anasarca, severe anemia, extreme thrombocytopenia, and striking transaminitis with coagulopathy, closely mimicking acute fulminant viral hepatitis or acute liver failure.\n2. Admission Breakpoint: The admission narrative halts following triage physical examination, baseline laboratory investigations (CBC, coagulation profile, liver/renal biochemistries, arterial blood gas, urinalysis), acute viral hepatitis serologies, and abdominal ultrasonography. It stops immediately prior to peripheral blood smear microscopy and rapid malarial antigen testing.\n3. Differential Distinctions: Acute viral hepatitis (hepatitis A, B, C, or E) was strongly considered due to acute jaundice, transaminitis, and coagulopathy, but excluded by negative serological panels. Nephrotic or nephritic syndrome was considered due to rapid-onset anasarca, but refuted by completely normal urine routine and microscopy. The triad of intermittent fevers with chills, severe hemolytic anemia, profound thrombocytopenia, and hepatosplenomegaly strongly pointed toward severe malaria.",
+  "case_prompt": "A 6-year-old girl residing in New Delhi presented with a 4-day history of fever, yellowish discoloration of her sclerae and urine for 2 days, and progressive whole-body edema beginning in the feet over the past 24 hours. The fever was moderate-to-high grade and intermittent, accompanied by prominent chills and rigors, and subsided with profuse diaphoresis following antipyretics. The urine was high-colored. The edema started in the lower extremities and rapidly progressed to generalized anasarca. Stool color was normal, with no melena or hematochezia. There was no history of vomiting, active bleeding, altered mental status, prior jaundice, blood transfusions, recent medications, respiratory illness, or preceding skin infections. She had an unremarkable birth and developmental history, was fully immunized, and was appropriately nourished for her age.\n\nOn physical examination, she was conscious, cooperative, and oriented. Vital signs revealed a pulse rate of 78 beats per minute, respiratory rate of 26 breaths per minute, and blood pressure of 98/68 mmHg. Marked conjunctival pallor and deep scleral icterus were present. Generalized edema was noted. There was no peripheral lymphadenopathy. Abdominal examination revealed tender hepatosplenomegaly, with the liver palpable 4 cm below the right costal margin (liver span 10 cm) and the spleen palpable 1 cm below the left costal margin. Auscultation of the heart and lungs was normal, and neurological examination was non-focal.\n\nTriage laboratory evaluation revealed profound anemia with a hemoglobin of 4.9 g/dL, leukocyte count of 10,600/µL (54% neutrophils, 42% lymphocytes, 4% monocytes), severe thrombocytopenia with a platelet count of 11,000/µL, and an erythrocyte sedimentation rate (ESR) of 8 mm/hr. Random blood glucose was 84 mg/dL. Hepatic panel demonstrated marked hyperbilirubinemia with a total serum bilirubin of 27.5 mg/dL (indirect fraction 18.0 mg/dL), SGOT (AST) 495 U/L, SGPT (ALT) 210 U/L, total protein 2.8 g/dL, and albumin 1.0 g/dL. Renal function showed blood urea nitrogen (BUN) 189 mg/dL, serum creatinine 0.6 mg/dL, sodium 136 mEq/L, and potassium 4.1 mEq/L. Coagulation studies showed a prolonged prothrombin time of 17.3 seconds (control 12.0 seconds) with an INR of 1.44. Arterial blood gas showed a pH of 7.45, PaO2 104 mmHg, PaCO2 45 mmHg, and bicarbonate 28 mEq/L. Routine urinalysis and microscopy were normal. Serological markers for acute hepatitis viruses (HBsAg, IgM anti-HCV, IgM anti-HAV, and IgM anti-HEV) were all negative. Chest radiography was normal, and abdominal ultrasonography confirmed hepatosplenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Fulminant Viral Hepatitis",
+      "rule_out_reason": "Considered the primary suspect due to severe acute icterus, marked transaminitis, coagulopathy, and hepatomegaly; ruled out by negative acute viral serologies (HAV, HBV, HCV, HEV) and presence of profound hemolytic anemia and thrombocytopenia.",
+      "quote": "Viral markers (HBsAg, IgM hepatitis C, A and E) were negative."
+    },
+    {
+      "candidate": "Acute Nephritic / Nephrotic Syndrome",
+      "rule_out_reason": "Considered due to the rapid development of whole-body anasarca starting from the lower extremities; ruled out by completely normal urine routine and microscopy and normal serum creatinine.",
+      "quote": "Urine routine and microscopy were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood smear examination identified intraerythrocytic trophozoites and schizonts of Plasmodium vivax alongside trophozoites and gametocytes of Plasmodium falciparum, corroborated by a positive rapid malarial antigen test, confirming severe mixed malaria with fulminant hepatic involvement.",
+      "quote": "On peripheral smear trophozoites and schizonts of P. vivax and trophozoites and gametocytes of P. falciparum were seen. Rapid malarial antigen test was positive."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt stops before blood smear microscopy and malarial antigen testing. Pathogen names excluded from case prompt."
+}

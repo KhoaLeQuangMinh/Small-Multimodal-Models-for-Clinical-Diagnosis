@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC13052778_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: An acute febrile encephalopathy with seizure, signs of raised intracranial pressure, and symmetric bilateral thalamic hyperintensities with diffusion restriction during peak monsoon season. This neuroimaging pattern classically points toward Japanese encephalitis or an acute vascular event (Artery of Percheron infarct / deep cerebral venous thrombosis), masking scrub typhus which rarely presents with isolated bilateral thalamic involvement.\n2. Admission Breakpoint: Emergency presentation, endotracheal intubation, funduscopic discovery of papilledema, baseline labs (leukocytosis, BUN/creatinine), and brain MRI showing bilateral thalamic lesions, prior to scrub typhus and viral serological testing.\n3. Differential Distinctions: Japanese encephalitis classically presents with bilateral thalamic lesions during monsoon season but is ruled out by negative specific IgM serology. Vascular insults like Artery of Percheron infarction and cerebral venous sinus thrombosis are excluded by the high-grade febrile prodrome, subtle leptomeningeal enhancement, and absence of venous occlusions or hemorrhages. Scrub typhus is confirmed by positive IgM/IgG serology in the context of seasonal meningoencephalitis.",
+  "case_prompt": "A woman in her mid-40s was brought to the emergency department during the peak monsoon season with a 3-day history of high-grade fever (maximum temperature 104 °F) accompanied by chills and rigor, headache, progressive limb stiffness (upper extremities greater than lower extremities), and rapidly declining mental status. On the day of admission, she experienced a generalized tonic-clonic seizure characterized by frothing at the mouth and upward eye deviation. There was no history of vomiting, photophobia, neck stiffness, ear discharge, bowel or bladder incontinence, or recent travel.\n\nHer medical history was notable for hyperthyroidism, for which she had received carbimazole for 10 years. She reported no use of tobacco, alcohol, or illicit substances.\n\nOn physical examination, her pulse was 92 beats/min, blood pressure 170/80 mmHg, temperature 103 °F, and oxygen saturation 90% while breathing ambient air. Neurological evaluation revealed a Glasgow Coma Scale score of 9 (E2V2M5) with marked disorientation. Pupils were sluggishly reactive to light, deep tendon reflexes were brisk (3+) symmetrically, and plantar responses were bilaterally extensor (upgoing). Funduscopic examination revealed papilledema consistent with elevated intracranial pressure. Other systemic physical examination findings were unremarkable. Due to worsening level of consciousness, she was intubated for airway protection.\n\nInitial laboratory evaluation revealed a leukocytosis of 11.6 × 10^9/L with 89% neutrophils, normal serum transaminases, international normalized ratio (INR) of 1.21, serum creatinine of 1.5 mg/dL, and blood urea nitrogen of 30.8 mg/dL. Lumbar puncture was deferred due to elevated intracranial pressure. Brain MRI demonstrated symmetric T2/FLAIR hyperintensities involving bilateral thalami accompanied by diffusion restriction and subtle leptomeningeal enhancement along the tentorium. Spine imaging was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Japanese Encephalitis",
+      "rule_out_reason": "Bilateral thalamic involvement during peak monsoon season strongly pointed to Japanese encephalitis as the leading diagnosis, but it was excluded by negative specific IgM serology.",
+      "quote": "The principal differential diagnosis was JE, given the strong epidemiological overlap and the fact that bilateral thalamic lesions are characteristic of the disease; however, the diagnosis was excluded due to negative JE IgM serology."
+    },
+    {
+      "candidate": "Deep Cerebral Venous Thrombosis",
+      "rule_out_reason": "Considered in the setting of raised intracranial pressure, altered sensorium, and thalamic hyperintensities, but ruled out by the absence of dural sinus occlusion or parenchymal hemorrhagic transformation on neuroimaging.",
+      "quote": "Deep cerebral venous thrombosis was considered but was unlikely, given the absence of venous sinus abnormalities or haemorrhagic changes on imaging."
+    },
+    {
+      "candidate": "Artery of Percheron Infarction",
+      "rule_out_reason": "Although bilateral thalamic diffusion restriction can occur in acute Artery of Percheron infarction, the presence of a high-grade febrile prodrome and progressive meningoencephalitic illness made a primary ischemic vascular event unlikely.",
+      "quote": "Artery of Percheron infarction was another possibility due to its ability to produce bilateral thalamic lesions with diffusion restriction; however, the patient's febrile prodrome and subacute presentation made vascular aetiology less likely."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The patient's meningoencephalitis with an atypical neuroimaging pattern of bilateral thalamic lesions was confirmed as scrub typhus by positive serological testing.",
+      "quote": "Scrub typhus IgM and IgG were positive, confirming active infection... Scrub typhus meningoencephalitis was strongly supported by positive serology, although thalamic involvement is an uncommon manifestation."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to serological assays. Zero pathogen names or spoilers in the case prompt."
+}

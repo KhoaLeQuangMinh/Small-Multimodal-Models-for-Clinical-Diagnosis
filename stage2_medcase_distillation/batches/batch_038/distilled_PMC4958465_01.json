@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4958465_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 10-year-old girl presenting with acute febrile illness, retroorbital pain, and leukopenia who abruptly develops extrapyramidal neurologic signs (cogwheel rigidity, generalized hypertonia) and lethargy with bilateral thalamic and basal ganglia hypodensities on head CT, mimicking arboviral encephalitis (e.g., Japanese encephalitis) or acute toxic/metabolic encephalopathy.\n2. Admission Breakpoint: Day 3 admission triage presentation and initial laboratories (leukopenia, mild thrombocytopenia, baseline transaminases), prior to high dependency transfer for extrapyramidal neurologic deterioration on Day 4, profound cytopenic nadirs, brain CT, and confirmatory viral serology.\n3. Differential Distinctions: Japanese encephalitis / primary viral encephalitis commonly causes fever, encephalopathy, and basal ganglia/thalamic lesions, but typically produces marked CSF pleocytosis and lacks progressive bicytopenia (profound leukopenia down to 1.9k and thrombocytopenia down to 50k) or marked acute hepatic transaminitis; acute toxic/metabolic encephalopathy or ADEM would present with encephalopathy but without transient acute epidemic viral hematologic dynamics; severe dengue neurotropism features acellular CSF, bilateral thalamic and basal ganglia involvement, and positive specific IgM serology.",
+  "case_prompt": "A 10-year-old girl presents with a two-day history of continuous fever, severe retro-orbital headache, vomiting, and generalized myalgias. On initial examination on illness day three, she is febrile and uncomfortable but alert. Vital signs and hemodynamic parameters are stable. Admission complete blood count demonstrates a white blood cell count of 2.2 × 10³/mm³ with 65% neutrophils and a platelet count of 117,000/mm³. Serum alanine transaminase (ALT) is 17.8 U/L and aspartate transaminase (AST) is 55.2 U/L. Serial packed cell volume (PCV) measurements show no hemoconcentration or signs of vascular plasma leakage.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Japanese Encephalitis / Other Viral Meningoencephalitis",
+      "rule_out_reason": "The subsequent acute emergence of altered consciousness, cogwheel rigidity, and bilateral thalamic and basal ganglia hypodensities in an endemic pediatric setting raised strong suspicion for Japanese encephalitis or other neurotropic viral encephalitides; however, lumbar puncture revealed completely acellular cerebrospinal fluid with normal protein, which is uncharacteristic of typical primary viral encephalitis.",
+      "quote": "Cerebrospinal fluid examination did not reveal any cells and had normal protein levels (42 mg/dL)."
+    },
+    {
+      "candidate": "Acute Disseminated Encephalomyelitis (ADEM) / Toxic Encephalopathy",
+      "rule_out_reason": "Acute extrapyramidal signs and declining Glasgow Coma Scale (10/15) could suggest acute demyelinating encephalomyelitis or systemic toxic-metabolic injury; however, these disorders do not account for progressive systemic cytopenias (leukopenia nadir 1.9 × 10³/mm³ and thrombocytopenia nadir 50,000/mm³) and marked acute hepatocellular injury.",
+      "quote": "Lowest WBC count (1.9 x 103) was reported on day 5 of the illness and lowest platelet count was 50,000/mm3 on day 6. Liver enzymes deteriorated (ALT: 357, AST: 478)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when serologic testing revealed positive IgM antibodies and negative IgG antibodies specific to dengue virus in the presence of acute transaminitis, hepatomegaly, and bilateral basal ganglia/thalamic CT hypodensities, confirming primary dengue infection with atypical neurologic involvement.",
+      "quote": "Primary dengue infection was suggested by the presence of IgM antibodies and absence of IgG antibodies to dengue virus... A CT scan revealed hypodense areas in bilateral thalamic and basal ganglia regions (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed precisely on Day 3 presentation prior to neurologic decompensation and serologic testing. Differentials examine viral meningoencephalitis and demyelinating/toxic syndromes, with verbatim textual quotes."
+}

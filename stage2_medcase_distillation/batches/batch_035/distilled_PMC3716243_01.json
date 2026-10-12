@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3716243_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old male presents with painless progressive obstructive jaundice, profound weight loss, palpable gallbladder (Courvoisier sign), and a tight stricture with a soft-tissue mass at the lower end of the common bile duct. The entire clinical, biochemical, and radiologic picture points compellingly toward a periampullary malignancy (cholangiocarcinoma), yet the underlying pathology is an isolated tuberculous granulomatous lesion of the distal biliary tree.\n2. Admission Breakpoint: The admission evaluation ends following clinical history, physical exam, initial laboratory evaluation (profound conjugated hyperbilirubinemia, markedly elevated alkaline phosphatase, negative viral hepatitis and HIV serology), and initial abdominal ultrasonography/cross-sectional biliary imaging demonstrating distal biliary obstruction. Confirmatory surgical resection (pylorus-preserving pancreaticoduodenectomy) and histopathologic examination mark the post-breakpoint period.\n3. Differential Distinctions: Cholangiocarcinoma and periampullary carcinoma are the primary clinical suspects given painless jaundice and an obstructing soft-tissue stricture, but ruled out when surgical histopathology revealed granulomatous inflammation without malignancy. Choledocholithiasis is considered given proximal ductal echogenic shadowing but excluded as the primary cause of high-grade stricture. Viral hepatitis is ruled out by negative viral serologies and a predominantly cholestatic enzyme pattern.",
+  "case_prompt": "A 55-year-old north Indian man presented with a 6-month history of painless, progressive yellow discoloration of the eyes and skin, accompanied by several episodes of intermittent fever over the preceding 3 months. He reported anorexia and an unprompted weight loss of 5 kg over the previous 6 months. There was no history of hematemesis, melena, or abdominal pain. He did not consume alcohol, was a non-smoker, and had no history of diabetes mellitus.\n\nOn physical examination, his Karnofsky performance score was 80%. He was deeply jaundiced with marked conjunctival pallor. No peripheral lymphadenopathy was palpable. Abdominal examination revealed mild hepatomegaly and a palpable, non-tender gallbladder.\n\nInitial laboratory investigations revealed a hemoglobin level of 8.9 g/dL. Liver biochemistries demonstrated severe cholestatic jaundice: total bilirubin was 18.4 mg/dL with a direct conjugated fraction of 12.4 mg/dL and unconjugated fraction of 6.0 mg/dL; serum alkaline phosphatase was markedly elevated at 850 U/L; aspartate aminotransferase was 110 U/L; and alanine aminotransferase was 85 U/L. Serological viral markers for acute and chronic viral hepatitis were nonreactive, and human immunodeficiency virus (HIV types 1 and 2) antibody screening was nonreactive.\n\nTransabdominal ultrasonography demonstrated dilation of the proximal common bile duct and intrahepatic biliary radicles, with a soft-tissue mass lesion obstructing the lower end of the common bile duct, along with multiple echogenic shadows in the proximal common bile duct.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cholangiocarcinoma / Periampullary Carcinoma",
+      "rule_out_reason": "Painless progressive jaundice, palpable gallbladder, substantial weight loss, and cross-sectional biliary imaging with a tight distal common bile duct mass strongly suggested cholangiocarcinoma, but surgical resection specimen revealed necrotizing granulomatous inflammation without malignant cells.",
+      "quote": "Magnetic resonance cholangio pancreaticogram (MRCP) showed soft tissue lesion in the terminal end of CBD suggestive of cholangiocarcinoma."
+    },
+    {
+      "candidate": "Choledocholithiasis",
+      "rule_out_reason": "Echogenic shadows in the proximal duct raised the possibility of gallstones, but the obstructive pathology was driven by a fixed soft-tissue stricture in the lower CBD rather than simple choledocholithiasis.",
+      "quote": "Ultrasonography showed dilated proximal (CBD) with dilated intrahepatic biliary radicles and soft tissue shadow in lower end of CBD. There were multiple echogenic shadows in proximal CBD."
+    },
+    {
+      "candidate": "Viral Hepatitis",
+      "rule_out_reason": "Considered in the differential diagnosis of jaundice and elevated transaminases, but ruled out by nonreactive hepatitis serologies and an overwhelmingly obstructive biliary pattern.",
+      "quote": "Viral markers for hepatitis were nonreactive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the pylorus-preserving pancreaticoduodenectomy specimen revealed granulomatous inflammation of the distal common bile duct and periampullary region with granulomatous lymphadenitis, confirming tuberculosis, which was further supported by complete normalization of liver biochemistry on anti-tubercular therapy.",
+      "quote": "Histopathology revealed granulomatous inflammation at lower end of CBD and periampullary region along with granulomatous lymphadenitis, both consistent with tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Strict exclusion of pathogen names and histopathology in case_prompt. Verbatim quotes from source text substantiate differentials and diagnostic pivot."
+}

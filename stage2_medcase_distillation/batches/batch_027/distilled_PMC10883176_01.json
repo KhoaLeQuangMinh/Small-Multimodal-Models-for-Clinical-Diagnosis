@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10883176_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 15-year-old adolescent female from an endemic region presents with chronic constipation and a non-tender pelvic mass that was initially interpreted on pelvic ultrasound as an adnexal/ovarian cyst. Primary pelvic hydatid cysts located in the Pouch of Douglas without hepatic or pulmonary involvement are exceedingly rare and prone to intraoperative rupture if misidentified as routine gynecologic cysts.\n2. Admission Breakpoint: Initial outpatient clinical presentation following history, physical/digital rectal examination, baseline routine blood tests (CBC, renal, liver enzymes), and pelvic ultrasound/CT demonstrating a multivesicular pelvic mass, immediately prior to send-out Echinococcus IgG serology and surgical intervention.\n3. Differential Distinctions: Ovarian cystadenoma or benign adnexal cyst was the initial presumption on pelvic ultrasound, but pelvic CT precisely localized the lesion to the rectouterine excavation (Pouch of Douglas) demonstrating internal enhancing membranes and pathognomonic daughter cysts ('cyst within a cyst'); absence of non-cystic solid masses or pelvic free fluid excluded ovarian malignancy.",
+  "case_prompt": "A 15-year-old girl presented with complaints of suprapubic discomfort and persistent constipation for two months. She belonged to an endemic region but had no prior history of fever, weight loss, urinary symptoms, or menstrual abnormalities.\n\nOn physical examination, a smooth and nonmobile lump was visible and palpable in the suprapubic region, extending 4 cm above the pubic symphysis; the lower border of the mass was impalpable. Digital rectal examination revealed a smooth, spherical mass felt along the anterolateral aspect compressing the rectum.\n\nInitial laboratory tests, including complete blood count, renal function tests, and liver function tests, were all within normal limits.\n\nPelvic ultrasonography revealed a cystic mass suggestive of a left adnexal cyst. Subsequent computed tomography (CT) scan of the abdomen and pelvis showed a large 10 cm x 5 cm x 11 cm cystic lesion situated in the Pouch of Douglas. The mass demonstrated internal enhancing membranes with a distinctive 'cyst within the cyst' architecture.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Left Ovarian / Adnexal Cyst",
+      "rule_out_reason": "In an adolescent female with a pelvic cystic mass, an ovarian cyst or adnexal neoplasm was the primary initial clinical and ultrasonographic suspicion, but CT accurately localized the mass to the rectouterine pouch and revealed internal folded daughter membranes.",
+      "quote": "Ultrasonography revealed a cystic mass suggestive of the left adnexal cyst."
+    },
+    {
+      "candidate": "Pelvic Mesenteric / Peritoneal Inclusion Cyst",
+      "rule_out_reason": "Non-gynecologic pelvic cystic masses can include mesenteric or peritoneal cysts, but these unilocular thin-walled structures lack the internal enhancing membranes and daughter vesicles characteristic of hydatid cysts.",
+      "quote": "Internal enhancing membranes with cyst within the cyst appearance was seen [Figure 1b]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Pelvic CT demonstration of internal membranes with a pathognomonic 'cyst within the cyst' pattern in the Pouch of Douglas, strongly positive Echinococcus IgG serology, and surgical excision identifying laminated membranes with hooklets and protoscolices confirmed a primary pelvic hydatid cyst.",
+      "quote": "Internal enhancing membranes with cyst within the cyst appearance was seen [Figure 1b]. Since she belonged to an endemic region, hydatid serology (Echinococcus Immunoglobulin G [IgG] antibodies) was done which was positive... Microscopy showed hooklets, protoscolices, and daughter cysts strongly suggestive of Echinococcus. The diagnosis was confirmed by histopathology."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Compliant with Stanford MedCaseReasoning methodology. Breakpoint is set cleanly prior to Echinococcus IgG serology and surgical histopathology. Case prompt describes admission presentation and imaging with zero spoilers or pathogen names."
+}

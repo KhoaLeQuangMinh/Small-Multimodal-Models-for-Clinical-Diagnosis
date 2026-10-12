@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10404425_02",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 35-year-old Ethiopian woman presents with an acute surgical abdomen, septic shock physiology (fever 38.9°C, tachycardia 138 bpm, tachypnea 32 bpm), and generalized peritonitis following two days of severe right upper quadrant/epigastric pain. She has a two-year history of burning epigastric pain partially relieved by milk. The clinical presentation is classically indicative of a perforated peptic ulcer, yet erect abdominal radiograph shows no pneumoperitoneum. The diagnostic dilemma centers on uncovering an extraordinary parasitic mechanical complication—biliary helminthic invasion causing gallbladder necrosis, perforation, and a choledochogastric fistula.\n2. Admission Breakpoint: The breakpoint is set at the pre-laparotomy emergency triage stage following initial resuscitation, physical exam, baseline CBC (leukocytosis 12,700/mm^3 with 89% granulocytes), liver function tests, and erect abdominal radiograph, immediately before emergency exploratory laparotomy and intraoperative visualization of the biliary tract.\n3. Differential Distinctions: Perforated peptic ulcer disease was the primary clinical diagnosis given acute peritonitis and a chronic history of food-relieved burning epigastric pain; however, erect abdominal x-ray lacked subdiaphragmatic free air, and laparotomy demonstrated an intact gastroduodenal wall other than a fistulous tract created by extraluminal erosion. Acute calculous gangrenous cholecystitis was also considered, but bile duct exploration revealed no cholelithiasis, revealing instead an intraluminal migrating nematode.",
+  "case_prompt": "A 35-year-old Ethiopian woman presents to the emergency surgical service with severe abdominal pain of 2 days' duration. The pain originated in the epigastrium and right upper quadrant before becoming diffusely generalized over the preceding 24 hours. She has experienced multiple episodes of vomiting and progressive abdominal distension, but continues to pass flatus without diarrhea. Her past medical history is significant for a 2-year history of intermittent, burning epigastric pain that was partially relieved by milk ingestion, as well as a remote history of passing worms in her stool. She has had no prior abdominal surgeries.\n\nOn examination, she appears acutely ill, toxic, and in severe distress. Vital signs reveal marked tachycardia and fever: blood pressure 100/60 mm Hg, pulse 138 beats per minute, respiratory rate 32 breaths per minute, and temperature 38.9°C. The abdomen is mildly distended with diffuse involuntary guarding, rigidity, and generalized direct and rebound tenderness across all quadrants.\n\nInitial laboratory testing reveals a complete blood count with leukocytosis of 12,700/mm^3 and 89% granulocytes. Baseline liver function tests are within normal limits, except for a low serum albumin of 2.2 g/dL. An erect plain abdominal radiograph demonstrates no subdiaphragmatic free air (pneumoperitoneum) and no radiological signs of mechanical bowel obstruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Perforated Peptic Ulcer Disease",
+      "rule_out_reason": "Considered the primary working diagnosis given the chronic history of food-relieved epigastric pain followed by generalized peritonitis; however, erect radiographs showed no pneumoperitoneum, and surgical exploration demonstrated that the stomach perforation was actually part of a fistulous tract secondary to biliary parasite migration.",
+      "quote": "With the preoperative diagnosis of generalized peritonitis secondary to likely perforated peptic ulcer disease, she was resuscitated with normal saline, a nasogastric tube inserted, and broad-spectrum antibiotics started (ceftriaxone 1gm IV and metronidazole 500mg IV), and, laparotomy was done."
+    },
+    {
+      "candidate": "Acute Calculous Gangrenous Cholecystitis",
+      "rule_out_reason": "Although gallbladder perforation with 600 mL of purulent bile peritonitis was found, cholelithiasis was absent; rather, mechanical disruption and fistulization to the distal gastric antrum arose from migrating helminths.",
+      "quote": "There was a 2*2 cm gallbladder perforation on the anterior part of the body with gastric content coming out through the perforation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Exploratory laparotomy demonstrated a choledochogastric fistula connecting the common bile duct to the gastric antrum, within which a large, live adult Ascaris was extracted from the common bile duct, followed by postoperative emesis of multiple worms.",
+      "quote": "After the release of the fistulous tract, there was one large live ascaris inside the CBD (Figure 1A-C) and (Video 1)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation stops at the emergency pre-laparotomy breakpoint. Zero pathogen genus spoilers in prompt."
+}

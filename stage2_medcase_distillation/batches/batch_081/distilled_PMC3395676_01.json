@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3395676_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 22-year-old stem cell transplant recipient on immunosuppression (cyclosporine) develops an indolent nodular foot lesion that progresses to draining sinuses. In immunocompromised transplant patients, subcutaneous nodular sinus-tract lesions raise a broad differential including actinomycetoma, cutaneous nocardiosis, botryomycosis, cutaneous tuberculosis, and invasive fungal infections. The absence of trauma or thorn prick injury makes mycetoma unexpected in post-transplant surveillance.\n2. Admission Breakpoint: Admission triage ends following physical examination, symptom chronology, and initial plain radiography of the foot, immediately prior to microscopic KOH mount examination of discharged granules, fungal culture, and tissue excision biopsy.\n3. Differential Distinctions: Actinomycetoma is caused by filamentous bacteria and produces bacterial grains, whereas eumycetoma produces grains containing true fungal hyphae. Botryomycosis is a bacterial pseudomycosis yielding coccal or bacillary colonies in grains. Cutaneous tuberculosis and nocardiosis produce chronic sinus tracts but do not discharge black fungal grains with septate hyphae.",
+  "case_prompt": "A 22-year-old male who underwent allogeneic peripheral blood stem cell transplantation for very severe aplastic anemia 7 months earlier presents with a progressive right foot lesion. His post-transplant immunosuppressive regimen includes oral cyclosporine (therapeutic trough levels maintained between 150–300 ng/mL). He achieved donor engraftment on day +9.\n\nTwo months post-transplant, he noticed a small, painless nodular swelling over the plantar surface of his right foot. He denies any history of trauma, barefoot walking, or thorn prick injury. Over the subsequent two months, the swelling progressively enlarged, with the appearance of two draining sinus tracts.\n\nPlain radiography of the right foot demonstrates soft-tissue radio-opacity over the plantar aspect without involvement of the underlying bony structures.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Actinomycetoma",
+      "rule_out_reason": "Bacterial actinomycetoma presents identically with tumefaction and draining sinuses, but discharged granules in this patient contained fungal septate hyphae rather than bacterial filaments, and culture yielded a mold.",
+      "quote": "The differential diagnosis of eumycetoma lesions include actinomycetoma, botryomycosis, cutaneous tuberculosis, fungal diseases such as blastomycosis and coccidioidomycosis, and cutaneous nocardiosis... There was discharge of black grains which on KOH mount examination under microscope (40x magnification) revealed presence of septate hyphae."
+    },
+    {
+      "candidate": "Botryomycosis",
+      "rule_out_reason": "Botryomycosis is a chronic bacterial pseudo-mycosis producing grain-filled sinus tracts, but microscopic examination demonstrated fungal septate hyphae and Sabouraud's agar grew a pathogenic fungus.",
+      "quote": "The differential diagnosis of eumycetoma lesions include actinomycetoma, botryomycosis, cutaneous tuberculosis... The culture of the discharged granules in Sabouraud's dextrose agar (SDA) grew Madurella mycetomatis"
+    },
+    {
+      "candidate": "Cutaneous tuberculosis / Cutaneous nocardiosis",
+      "rule_out_reason": "Cutaneous mycobacterial or nocardial infections cause chronic nodular and sinus-draining lesions in transplant recipients, but the macroscopic presence of black grains containing thick septate fungal hyphae ruled out bacterial and mycobacterial etiologies.",
+      "quote": "The differential diagnosis of eumycetoma lesions include actinomycetoma, botryomycosis, cutaneous tuberculosis, fungal diseases such as blastomycosis and coccidioidomycosis, and cutaneous nocardiosis... There was discharge of black grains which on KOH mount examination under microscope (40x magnification) revealed presence of septate hyphae."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of discharged black granules on KOH mount demonstrating septate hyphae, accompanied by Sabouraud's dextrose agar culture growing Madurella mycetomatis and biopsy confirmation of pigmented fungal colonies, established eumycetoma.",
+      "quote": "There was discharge of black grains which on KOH mount examination under microscope (40x magnification) revealed presence of septate hyphae. The culture of the discharged granules in Sabouraud's dextrose agar (SDA) grew Madurella mycetomatis (Figure 2) after an incubation for 12 days... Biopsy smears showed distinct brown-black colonies of the fungus having branching and septate hyphae embedded in matrix like material"
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint set before KOH mount and fungal cultures. Look-alike infectious diseases evaluated with direct article quotes. Verified ground-truth canonical disease is Mycetoma."
+}

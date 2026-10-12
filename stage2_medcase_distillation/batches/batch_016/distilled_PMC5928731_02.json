@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5928731_02",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 54-year-old female in Puerto Rico presenting with acute fever, abdominal pain, diarrhea, vomiting, dehydration, acute kidney injury, mild amylase/lipase elevations, and cholelithiasis on ultrasound, masquerading as acute gastroenteritis or acute pancreatitis. On day 3, she developed acute respiratory distress with bilateral alveolar opacities, dramatic thrombocytopenia, falling hematocrit, and massive LDH elevation (~10,000 u/L). The diagnostic tension is recognizing acute spirochetal multiorgan involvement (Weil's disease / severe pulmonary hemorrhagic syndrome) when initial commercial IgM serology is negative early in the illness.\n2. Admission Breakpoint: Admission clinical evaluation concludes following the initial ED evaluation on day 1: 3-day history of fever, abdominal pain, vomiting, diarrhea, headache, anorexia, physical finding of dry oral mucosa, initial laboratory findings of leukocytosis, elevated serum creatinine, amylase 130 u/L, lipase 118 u/L, and ultrasound showing cholelithiasis. It stops immediately before day 3 pulmonary deterioration, intensive care transfer, cultures, send-out PCR, and serology.\n3. Differential Distinctions: Acute pancreatitis and acute biliary sepsis were initially suspected due to abdominal pain, elevated pancreatic enzymes, and gallstones on ultrasound, but could not account for multisystem alveolar hemorrhage and profound thrombocytopenia. Severe community-acquired pneumonia / ARDS was considered on hospital day 3, but sputum/blood cultures and mycoplasma serology were negative. Leptospirosis was confirmed by detecting Leptospira interrogans DNA via PCR in early acute serum and subsequent convalescent MAT seroconversion (titer 3,200).",
+  "case_prompt": "A 54-year-old female presented to the emergency department in Puerto Rico with a 3-day history of fever, abdominal pain, vomiting, diarrhea, headache, and anorexia.\n\nOn physical examination, she appeared dehydrated with dry oral mucosa. Initial laboratory results demonstrated leukocytosis, elevated serum creatinine, serum amylase of 130 U/L, and serum lipase of 118 U/L. Abdominal ultrasound examination revealed evidence of cholelithiasis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pancreatitis / Biliary tract sepsis",
+      "rule_out_reason": "Considered because of fever, acute abdominal pain, elevated amylase and lipase, and ultrasound evidence of cholelithiasis, but excluded as the primary cause because enzyme elevations were modest and could not explain the rapidly progressive multiorgan involvement, pulmonary hemorrhage, and marked thrombocytopenia.",
+      "quote": "Ultrasound examination revealed evidence of cholelithiasis. The initial diagnostic impression was acute kidney injury with dehydration, IV piperacillin-tazobactam and IV fluids were initiated, and the patient was hospitalized."
+    },
+    {
+      "candidate": "Severe community-acquired pneumonia / Atypical respiratory tract infection",
+      "rule_out_reason": "Considered when the patient developed acute respiratory failure with bilateral confluent alveolar opacities on hospital day 3, but ruled out by negative blood and sputum cultures, negative mycoplasma IgM serology, and characteristic pulmonary hemorrhage.",
+      "quote": "All blood and sputum cultures were negative. A serum specimen drawn on the sixth day of symptoms (third day of hospitalization) was negative for Leptospira IgM antibody test performed at a commercial reference laboratory and also negative for mycoplasma IgM antibody and HIV."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when DNA specific to Leptospira interrogans was detected by PCR in early acute serum collected on illness day 2, subsequently corroborated by a convalescent microscopic agglutination test (MAT) titer of 3,200 against serogroup Australis.",
+      "quote": "DNA specific to L. interrogans was detected by PCR in a serum specimen collected on day 2 of illness, which was negative by MAT. Serum collected upon patient discharge had a reciprocal MAT titer of 3,200 against serogroup Australis (serovar Bratislava)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly observed at ED triage prior to acute pulmonary decompensation and send-out PCR/serology. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

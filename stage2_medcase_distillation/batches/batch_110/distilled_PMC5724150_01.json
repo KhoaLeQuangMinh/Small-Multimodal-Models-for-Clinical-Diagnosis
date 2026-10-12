@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5724150_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 25-year-old Peruvian woman presents with severe gastrointestinal symptoms, profound wasting, enteropathy with small bowel thickening, and petechial lesions, which was initially misdiagnosed as systemic vasculitis. The core tension is distinguishing primary autoimmune enteropathy/vasculitis from occult helminthic hyperinfection syndrome in an endemic immigrant, where immunosuppressive corticosteroid therapy triggers a life-threatening acceleration of the nematode life cycle.\n2. Admission Breakpoint: The admission breakpoint is placed at initial hospital presentation and baseline gastroenterology workup (including initial CT showing small bowel thickening) before the initiation of systemic corticosteroids, development of secondary Gram-negative bacteremia, skin/duodenal biopsy, or specialized parasitic coprology.\n3. Differential Distinctions: Systemic vasculitis and inflammatory bowel disease cause small bowel mucosal thickening, petechiae, and chronic diarrhea with wasting, but do not explain the sudden explosion of enteric bacteremia and disseminated larvae upon steroid administration. HIV-1 enteropathy causes similar wasting and opportunistic infections, but is excluded by negative serology. In patients from endemic areas (e.g., Peru), unexplained enteropathy and marked failure to thrive must prompt rigorous evaluation for Strongyloides and HTLV-1 co-infection before immunosuppression.",
+  "case_prompt": "A 25-year-old Peruvian woman residing in Buenos Aires, Argentina, presented to the hospital and was admitted to the gastroenterology ward following multiple emergency department visits for intractable vomiting, chronic diarrhea, diffuse abdominal pain, fever, profound weight loss exceeding 16 kg, and decreased visual acuity in her right eye. Her gastrointestinal symptoms began 3 months earlier upon returning to Argentina from a visit to Peru. Physical examination revealed severe malnutrition and marked abdominal distension. Initial admission laboratory testing revealed marked leukocytosis with neutrophilia (26,600/mm\u00b3), thrombocytosis (platelets 625,000/mm\u00b3), serum creatinine of 0.44 mg/dL, severe hyponatremia with sodium of 111 mmol/L, potassium of 5.1 mmol/L, chloride of 75 mmol/L, and profound hypoalbuminemia with serum albumin of 1.8 g/dL; other routine chemistries were normal. Abdominal computed tomography demonstrated diffuse wall thickening involving the duodenum and jejunum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gastrointestinal vasculitis",
+      "rule_out_reason": "Considered due to diffuse small bowel wall thickening, severe jejunal and duodenal atrophy, and mucosal petechial lesions, but administration of high-dose corticosteroids led to catastrophic clinical deterioration and systemic sepsis rather than remission.",
+      "quote": "Then, vasculitis was suspected and corticosteroid therapy was initiated. The patient worsened rapidly."
+    },
+    {
+      "candidate": "HIV-1 infection / Primary immunodeficiency",
+      "rule_out_reason": "Considered given the patient's profound cachexia, chronic diarrhea, fever, and opportunistic ocular pathology (endophthalmitis), but specific viral and immunologic testing ruled out HIV infection and primary immune deficiencies.",
+      "quote": "HIV-1 and other immunodeficiencies were discarded."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when immunosuppression unmasked a fulminant hyperinfection syndrome featuring enteric bacteremia (E. coli, K. pneumoniae) and purpuric cutaneous lesions, leading to direct microscopic visualization of filariform larvae on enteral biopsies, skin lesions, and specialized stool sedimentation, subsequently confirmed to be driven by HTLV-1 co-infection.",
+      "quote": "Skin, new enteral biopsies (Figures 1C,D) and a set of coproparasitological (fresh stool and Ritchie method) samples revealed S. stercoralis infection."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete clinical fidelity. Breakpoint set prior to steroid initiation, secondary bacteremia, and specialized parasitological/biopsy findings. No pathogen or diagnostic leak. Verbatim quotes verified against source text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4516346_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 22-year-old male of Caribbean descent presenting with acute-to-subacute profound visual decline, bilateral panuveitis, neuroretinitis, and severe uveitic ocular hypertension (intraocular pressure exceeding 40 mmHg), in the setting of severe constitutional symptoms (pyrexia, headache, prostration, severe arthralgia, and dehydration). The primary diagnostic challenge is differentiating post-viral or para-infectious arboviral immune-mediated ocular inflammation from classic systemic granulomatous or autoimmune panuveitides (such as sarcoidosis, syphilis, Vogt-Koyanagi-Harada syndrome, tuberculosis, or toxoplasmosis), particularly given the atypical absence of thrombocytopenia.\n2. Admission Breakpoint: Admission triage ends following comprehensive ophthalmic examination (slit lamp showing pronounced ciliary flush, keratic precipitates, anterior chamber cells, and synechiae; dilated funduscopy revealing bilateral vitritis, pars planitis, and neuroretinitis; and applanation tonometry revealing IOPs of 46 mmHg OD and 44 mmHg OS), baseline complete blood count showing normal platelets, and a normal plain chest radiograph, immediately prior to send-out serological antibody testing.\n3. Differential Distinctions: Systemic autoimmune diseases, sarcoidosis, and chronic infectious granulomatous panuveitides typically present with ocular inflammation, but systemic serologic workup and plain chest radiography are negative. Classic severe arboviral manifestations involve hemorrhagic diathesis and plasma leakage with profound thrombocytopenia, which are absent here. The diagnosis of acute dengue-associated bilateral panuveitis and uveitic glaucoma is confirmed by elevated specific serum IgM antibodies on serial testing.",
+  "case_prompt": "A 22-year-old male of Caribbean descent presents to an ophthalmology clinic with complaints of progressive visual blurring, pain, and photosensitivity in the right eye of several weeks' duration. Concurrently, he reports acute constitutional symptoms consisting of high fever, severe generalized arthralgia, malaise, severe headache, and dehydration.\n\nOn physical examination, he appears acutely ill and dehydrated. Ophthalmic examination demonstrates visual acuity of 20/80 in the right eye (OD) and 20/60 in the left eye (OS), which does not improve with refraction. Intraocular pressures are markedly elevated at 46 mmHg OD and 44 mmHg OS. Slit-lamp biomicroscopy reveals pronounced ciliary flush, large nongranulomatous keratic precipitates, scattered anterior synechiae, and 3+ anterior chamber cells in the right eye, with mild ciliary flush in the left eye. Anterior vitritis is present bilaterally, with marked vitreous opacity OD greater than OS. Dilated funduscopic examination demonstrates dense core vitritis, pars planitis, and significant neuroretinitis OD, accompanied by milder vitritis, neuroretinal folds, and pars planitis OS; optic nerves show increased cup-to-disc ratios bilaterally.\n\nBaseline laboratory testing demonstrates an absence of thrombocytopenia on complete blood count. A plain chest radiograph is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Autoimmune Panuveitis / Sarcoidosis / Syphilitic or Tubercular Uveitis",
+      "rule_out_reason": "Considered the initial presumptive differential diagnosis for bilateral panuveitis with secondary ocular hypertension, but ruled out following a negative comprehensive systemic workup and a normal plain chest radiograph.",
+      "quote": "The presumptive diagnosis of bilateral panuveitis was made, and a comprehensive lab workup was initiated to locate any other causative etiology. After a normal chest radiograph"
+    },
+    {
+      "candidate": "Severe Dengue Hemorrhagic Manifestations",
+      "rule_out_reason": "Considered given the severe acute febrile and algic syndrome in an endemic tropical Caribbean setting, but classical hemorrhagic plasma leakage was excluded by the complete absence of thrombocytopenia.",
+      "quote": "There was no thrombocytopenia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive diagnosis of acute arboviral panuveitis and secondary uveitic glaucoma was established by demonstration of significantly elevated specific serum IgM antibody titers on two independent serial measurements.",
+      "quote": "His dengue infection was confirmed with an elevated dengue fever IgM performed at a contract reference laboratory (LAbCorp, Tampa, FL, USA) on two separate occasions separated by several weeks."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial presentation (fever, arthralgia, headache, ophthalmic exam showing bilateral panuveitis/neuroretinitis with IOPs >40 mmHg, normal CBC/platelets, and normal chest radiograph) strictly before reference lab serologies. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

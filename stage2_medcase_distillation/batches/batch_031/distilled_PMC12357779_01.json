@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12357779_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 62-year-old man with end-stage renal disease on hemodialysis, type 2 diabetes mellitus, and a history of total gastrectomy presents with fever, rapid neurological deterioration, severe pancytopenia, and miliary pulmonary nodules unresponsive to empirical antibiotics. The diagnostic challenge involves untangling disseminated granulomatous disease from pyogenic bacterial sepsis, fungal meningoencephalitis, or opportunistic viral/fungal coinfections in an immunocompromised host.\n2. Admission Breakpoint: The admission breakpoint occurs upon transfer to the intensive care unit, after initial blood counts revealing severe pancytopenia and acute-on-chronic renal failure, brain MRI demonstrating multifocal frontoparietal abnormalities, and chest CT demonstrating miliary nodules and consolidation, but prior to metagenomic next-generation sequencing (mNGS), bronchoalveolar lavage GeneXpert, fungal antigen tests, and mycobacterial cultures.\n3. Differential Distinctions: Common pyogenic meningoencephalitis fails to explain the diffuse miliary pattern on chest CT or the unresponsiveness to empirical antibiotics. Invasive pulmonary aspergillosis, while co-present as an opportunistic coinfection, does not account for the characteristic miliary dissemination or the lymphocytic CNS presentation confirmed as mycobacterial disease.",
+  "case_prompt": "A 62-year-old man was admitted to the intensive care unit with a 4-day history of altered consciousness and an 11-day history of intermittent fever that had progressively worsened despite empirical antimicrobial therapy at an outside hospital.\n\nHis medical history included a 16-year history of type 2 diabetes mellitus, a 10-year history of hypertension, a 13-year history of chronic kidney disease on thrice-weekly hemodialysis for the past 4 years, and a total gastrectomy for gastric cancer performed 3 years earlier.\n\nOn physical examination upon ICU admission, the patient was febrile and had an altered sensorium. The remainder of the physical examination was notable for lethargy and decreased responsiveness without focal neurological lateralizing signs.\n\nLaboratory investigations demonstrated severe pancytopenia with a white blood cell count of 1.90 x 109/L, red blood cell count of 4.11 x 1012/L, and platelet count of 9 x 109/L. Serum albumin was 31.7 g/L, and serum creatinine was 445.9 mumol/L.\n\nBrain magnetic resonance imaging revealed multifocal abnormal signals in the bilateral frontoparietal cortices and centrum semiovale. Chest computed tomography demonstrated diffuse miliary nodules, left upper-lobe consolidation, and right lower-lobe bronchiectasis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial meningoencephalitis / sepsis",
+      "rule_out_reason": "Considered initially as the primary cause of acute fever, encephalopathy, and leukopenia, but excluded by failure to improve on broad-spectrum empirical antibacterial therapy, miliary nodular patterns on chest imaging, and microbiological identification of mycobacterial DNA rather than typical pyogenic bacteria.",
+      "quote": "intermittent fever that had initially been overlooked until neurological deterioration prompted prior hospitalization, where empirical antimicrobial therapy proved ineffective."
+    },
+    {
+      "candidate": "Isolated invasive pulmonary aspergillosis",
+      "rule_out_reason": "Considered and confirmed as a pulmonary coinfection by bronchoalveolar lavage galactomannan and fungal culture, but ruled out as the solitary etiology because Aspergillus failed to explain the diffuse miliary pulmonary distribution or the predominant central nervous system infection.",
+      "quote": "BALF also yielded Aspergillus fumigatus with a positive galactomannan (GM) antigen test, indicating concomitant invasive pulmonary aspergillosis. Final diagnoses were CNS TB, miliary pulmonary tuberculosis (PTB), invasive pulmonary aspergillosis, and polymicrobial pulmonary coinfection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detection of Mycobacterium tuberculosis DNA in cerebrospinal fluid by mNGS and positive GeneXpert MTB/RIF in bronchoalveolar lavage fluid, followed by culture growth of MTB from both CSF and BALF, confirming disseminated tuberculous meningitis and miliary pulmonary tuberculosis.",
+      "quote": "CSF analyzed by metagenomic next-generation sequencing (mNGS) yielded MTB DNA, confirming tuberculous meningitis. Bronchoalveolar lavage fluid (BALF) obtained via bedside bronchoscopy was positive on GeneXpert MTB/RIF (rifampicin-susceptible, \"low\" detection level)... Subsequent cultures of both BALF and CSF confirmed growth of MTB"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning protocol. Case prompt stops at admission brain MRI and chest CT. Excluded mNGS, GeneXpert, galactomannan, and culture results."
+}

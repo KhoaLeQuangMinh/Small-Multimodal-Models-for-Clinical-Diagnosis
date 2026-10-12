@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9724064_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: The patient presents with acute febrile encephalopathy, a generalized macular rash, seizures, altered sensorium, severe anemia, and thrombocytopenia, with brain CT demonstrating symmetric thalamic and deep white matter hypodensities with petechial hemorrhages. The tension lies in distinguishing primary neurotropic viral infection from acute necrotizing encephalopathy or cerebral malaria in an endemic tropical environment.\n2. Admission Breakpoint: Admission clinical history, physical exam noting rash, presentation CBC (Hb 7 gm/dL, platelets 60,000/μL), and initial triage non-contrast CT brain. Confirmatory testing begins with viral non-structural antigen and IgM/IgG serology, along with follow-up neuroimaging.\n3. Differential Distinctions: Japanese encephalitis can cause bilateral thalamic lesions and seizures, but typically lacks acute erythematous macular rash and severe thrombocytopenia. Acute necrotizing encephalopathy presents with similar thalamic lesions but is usually a parainfectious cytokine-mediated syndrome without direct viral hemorrhagic pathogenesis. Cerebral malaria can cause fever, coma, and thrombocytopenia, but is distinguished by peripheral blood smear examination and arbovirus-specific serology.",
+  "case_prompt": "A 25-year-old man presents with a 5-day history of high-grade fever, chills, and one episode of vomiting. On admission, he suffers a single seizure episode, followed by altered sensorium and rapidly deteriorating neurological status. Physical examination reveals an erythematous macular rash distributed over his body. Complete blood count obtained at presentation demonstrates a reduced haemoglobin of 7 gm/dL and significant thrombocytopenia with a platelet count of 60,000/μL. Emergent non-contrast CT imaging of the brain reveals ill-defined symmetrical bilateral hypodensities in the thalami, cerebellar white matter, and bilateral frontal subcortical and deep white matter, with tiny hyperdense haemorrhagic foci noted within some of these hypodense areas.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Japanese Encephalitis",
+      "rule_out_reason": "Considered due to acute febrile illness accompanied by seizures, rapid altered sensorium, and symmetric bilateral thalamic lesions on neuroimaging; however, the presence of a generalized erythematous macular rash and acute thrombocytopenia (60,000/μL) are characteristic of an arboviral hemorrhagic syndrome.",
+      "quote": "On admission, he had a single seizure episode, followed by an altered sensorium and deteriorating neurological status. He also had an erythematous macular rash over his body."
+    },
+    {
+      "candidate": "Acute Necrotizing Encephalopathy",
+      "rule_out_reason": "Considered given the symmetric bilateral hypodensities in the thalami, cerebellum, and deep white matter with petechial microhemorrhages; however, the presentation occurs in the setting of acute primary flaviviral infection with marked thrombocytopenia rather than a secondary post-infectious demyelinating or metabolic necrotizing syndrome.",
+      "quote": "CT imaging of the brain (Figures 1a-c) revealed ill-defined symmetrical bilateral hypodensities in the thalami, cerebellar white matter and bilateral frontal subcortical and deep white matter. Tiny hyperdense haemorrhagic foci were observed within some of these hypodense areas (Figure 1c)."
+    },
+    {
+      "candidate": "Cerebral Malaria",
+      "rule_out_reason": "Considered in a patient from an endemic region presenting with acute high-grade fever, seizures, severe anemia (7 gm/dL), and thrombocytopenia; however, the prominent cutaneous rash and rapid development of symmetric thalamic hemorrhagic necrosis prompted evaluation for viral hemorrhagic fever pathogens.",
+      "quote": "The haematological investigations at the time of presentation revealed a reduced haemoglobin (7 gm/dL) and thrombocytopaenia with a platelet count of 60 000/microl"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by positive non-structural NS1 antigen and IgM antibodies indicating acute primary infection, confirming dengue-associated haemorrhagic encephalitis complicated by obstructive hydrocephalus.",
+      "quote": "The patient tested positive for dengue non-structural (NS1) antigen and immunoglobulin M (IgM) dengue antibody, while the test for dengue immunoglobulin G (IgG) antibody was negative."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced at initial presentation and emergency CT brain. Zero mention of pathogen or serology in case_prompt. Differential candidates and quotes exactly verified against source text. Canonical disease verified."
+}

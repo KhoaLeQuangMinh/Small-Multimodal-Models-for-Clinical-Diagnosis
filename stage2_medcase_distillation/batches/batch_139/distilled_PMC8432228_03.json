@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8432228_03",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: Two pediatric cases illustrate severe, complex manifestations of visceral leishmaniasis complicated by hemophagocytic lymphohistiocytosis (HLH): one with a 3-month protracted course of fever, hypertriglyceridemia, and hemodynamic collapse; the other presenting hyperacutely with 4 days of fever, oliguria, generalized edema, and hematochezia mimicking hemolytic uremic syndrome or acute dysenteric septic shock.\n2. Admission Breakpoint: Clinical narratives conclude following initial triage presentation and baseline labs (fever, organomegaly, cytopenias, hypertriglyceridemia, elevated ferritin, oliguria, anasarca, hematochezia), strictly before rK39 testing, bone marrow myelogram, and antileishmanial/steroid therapies.\n3. Differential Distinctions: Pediatric hematologic malignancies (e.g., leukemia, lymphoma) and familial HLH share the classic triad of prolonged fever, hepatosplenomegaly, and cytopenias, but are ruled out by identifying intracellular Leishmania amastigotes without malignant blasts. Enteric bacterial sepsis / hemolytic uremic syndrome (considered in the second child due to hematochezia and oliguria) was ruled out by negative blood cultures and demonstration of parasite amastigotes on bone marrow examination.",
+  "case_prompt": "Two pediatric patients presented with severe febrile illness and organomegaly:\nPatient 1: A one-year-old male child was admitted with a 3-month history of continuous fever, hepatosplenomegaly, anemia, hypertriglyceridemia, increased ferritin, and hemodynamic instability requiring blood transfusion.\nPatient 2: A 2-year-old female infant was admitted with fever for 4 days, oliguria, generalized edema, and hematochezia for 2 days. Physical examination revealed pallor, hepatosplenomegaly, and anasarca, with laboratory tests demonstrating pancytopenia and clinical instability requiring broad-spectrum antimicrobial stabilization.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Hemophagocytic Lymphohistiocytosis / Hematologic Malignancy",
+      "rule_out_reason": "Both patients fulfilled diagnostic criteria for HLH (fever, organomegaly, severe cytopenias, hyperferritinemia, and hypertriglyceridemia); however, the disorder was determined to be secondary to visceral leishmaniasis rather than primary familial HLH or leukemia, as evidenced by bone marrow findings.",
+      "quote": "A one-year-old male child was admitted with a history of continuous fever for 3 months and hepatosplenomegaly, anemia, hypertriglyceridemia, increased ferritin, and hemodynamic instability, requiring blood transfusion."
+    },
+    {
+      "candidate": "Acute Bacterial Enteric Sepsis / Hemolytic Uremic Syndrome",
+      "rule_out_reason": "In the second patient, acute onset of fever, hematochezia, oliguria, generalized edema, and pancytopenia strongly suggested acute severe bacterial sepsis or hemolytic uremic syndrome, prompting immediate empiric cefepime; however, blood cultures were negative and bone marrow revealed parasitic amastigotes.",
+      "quote": "A female infant aged 2 years was admitted presenting with fever for 4 days, oliguria, generalized edema, and hematochezia for 2 days. She was pale, with hepatosplenomegaly and anasarca. Laboratory tests revealed pancytopenia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point in both patients was the demonstration of Leishmania spp. with hemophagocytosis on bone marrow myelogram, corroborated by positive rK39 rapid testing, with clinical cure achieved using liposomal amphotericin B.",
+      "quote": "Immunochromatographic rapid test with rK39 antigen was positive for Leishmania and the myelogram presented Leishmania spp with hemophagocytosis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8254521_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: An 83-year-old male with extensive lifetime UV exposure presents with a 6-month history of generalized pruritic papules and excoriations across the trunk, accompanied by a solitary, highly suspicious ulcerated nodule on the left scapula. The clinical challenge lies in disentangling widespread intensely pruritic parasitic infestation from suspected malignant cutaneous neoplasms (melanoma vs. pigmented basal cell carcinoma) and benign background seborrheic keratoses.\n2. Admission Breakpoint: Clinical evaluation and triage examination documenting generalized itching, trunk papules, excoriations, solar lentigines, and the ulcerated scapular nodule with inflamed infiltrated margins, immediately prior to bedside dermoscopic inspection and biopsy.\n3. Differential Distinctions: Melanoma was suspected based on the asymmetric pigmented scapular lesion with blue-gray veil and irregular globules; however, histopathology revealed pigmented basal cell carcinoma. Pigmented BCC accounted for the solitary ulcerated scapular tumor, but did not explain the 6 months of generalized pruritus and papular excoriations. Seborrheic keratosis was noted concurrently on dermoscopy with fingerprint patterns and milia cysts, but is benign and non-pruritic. Scabies was confirmed by identifying the characteristic 'triangle sign' (delta sign) on dermoscopy and prompt resolution of pruritus after permethrin therapy.",
+  "case_prompt": "An 83-year-old man presented to an outpatient dermatology clinic with generalized skin pruritus lasting for approximately six months. He had a history of extensive lifetime ultraviolet (UV) radiation exposure, having worked outdoors for decades as a marine radio navigator, frequently sunbathing without photoprotection.\n\nOn physical examination, the skin of the trunk showed generalized erythematous papules and excoriations alongside numerous solar lentigines and verrucous stuck-on plaques. Over the left scapula, there was a solitary suspicious nodule of unknown duration featuring an inflamed, infiltrated margin and central ulceration covered with horny and bloody crusts. The remainder of the physical examination was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Melanoma",
+      "rule_out_reason": "Considered due to the patient's long-term unprotected UV radiation exposure and the asymmetric, ulcerated, pigmented scapular lesion showing a grey-blue veil with brown globules and streaks, but complete surgical excision and histopathology confirmed basal cell carcinoma rather than melanoma.",
+      "quote": "After a clinical and dermoscopic assessment, the patient was referred for complete excision with suspected melanoma/pigmented BCC."
+    },
+    {
+      "candidate": "Pigmented Basal Cell Carcinoma (BCC)",
+      "rule_out_reason": "Confirmed histologically as the etiology of the isolated left scapular nodule, but could not account for the generalized six-month pruritus, disseminated papules, and excoriations across the trunk.",
+      "quote": "The result was basal ulcerative pigmentary carcinoma with total excision."
+    },
+    {
+      "candidate": "Seborrheic Keratosis",
+      "rule_out_reason": "Present as co-existing benign background lesions on the trunk exhibiting classic fingerprint-like structures and milia-like cysts, but benign and incapable of explaining the diffuse excoriated pruritic eruption.",
+      "quote": "The dermoscopic examination also confirmed the diagnosis of seborrheic keratosis with characteristic fingerprint-like structures, the presence of comedo-like openings and milia-like cysts (Figure 1C)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Scabies",
+      "rule_out_reason": "Clinical and dermoscopic evaluation of the pruritic trunk papules revealed the pathognomonic triangle sign representing the burrowing mite, with rapid symptomatic resolution following topical 5% permethrin treatment.",
+      "quote": "The patient was diagnosed with scabies based on clinical and dermoscopic examination (positive triangle sign). The treatment with 5% permethrin gave relief to pruritus."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission breakpoint cleanly isolates clinical presentation before dermoscopic triangle sign and histopathology. Zero spoilers present."
+}

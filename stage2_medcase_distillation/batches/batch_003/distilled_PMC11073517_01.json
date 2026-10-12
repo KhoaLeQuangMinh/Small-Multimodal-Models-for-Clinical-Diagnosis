@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11073517_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 63-year-old man with chronic esophageal motility disorder (achalasia with megaesophagus) presents with a 5-month history of cervical lymphadenopathy, pulmonary infiltrates, and an indolent, painless ulcer in the supraclavicular fossa. The tension lies in distinguishing between an aspiration-related chronic pulmonary process, metastatic esophageal/gastrointestinal carcinoma (Virchow's node with ulceration), and an indolent granulomatous infection causing contiguous cutaneolymphatic fistulization.\n2. Admission Breakpoint: Day 1 triage ends upon completion of physical examination documenting non-tender lymph nodes with a painless supraclavicular ulcer and chest CT demonstrating bilateral pleural effusion, left ground-glass opacity, and right tree-in-bud opacities, immediately prior to sputum smear microscopy and rapid molecular amplification.\n3. Differential Distinctions: Malignancy and standard bacterial adenitis are distinguished by the non-tender, non-exudative nature of the lymphadenopathy, characteristic bronchiolar tree-in-bud tree impaction on CT, and absence of acute inflammatory necrosis or malignant cytology.",
+  "case_prompt": "A 63-year-old man with a long-standing history of achalasia complicated by megaesophagus presented to the clinic with a 5-month history of persistent dry cough, progressive involuntary weight loss, generalized fatigue, painless neck swelling, and an indolent skin ulcer over the left lower neck.\n\nPhysical examination revealed firm, non-tender cervical lymph nodes without fluctuance, warmth, or active discharge. In the left supraclavicular fossa, there was a painless, well-demarcated ulcerative lesion characterized by an indurated border and a clean, non-exudative base.\n\nInitial imaging with chest computed tomography revealed bilateral pleural effusions, patchy ground-glass opacities in the left lung parenchyma, and extensive centrilobular nodularity with a 'tree-in-bud' pattern in the right lung.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Cervical Lymphadenitis / Abscess",
+      "rule_out_reason": "Considered given the prolonged lymph node enlargement and skin breakdown. Ruled out by the lack of local acute inflammation, tenderness, fluctuance, or purulent drainage, alongside an indolent five-month course.",
+      "quote": "Physical examination revealed non-tender cervical lymph nodes without fluctuance or discharge and a painless ulcer in the left supraclavicular fossa with a non-exudative base"
+    },
+    {
+      "candidate": "Metastatic Malignancy (Virchow's Node from Esophageal Carcinoma)",
+      "rule_out_reason": "Considered given the patient's age, chronic esophageal stasis from megaesophagus predisposing to malignancy, profound weight loss, and left supraclavicular lymph node ulceration. Ruled out by infectious tree-in-bud bronchiolitis on CT and subsequent microbiological confirmation.",
+      "quote": "Chest computed tomography revealed bilateral pleural effusion, ground-glass opacity in the left lung, and a tree-in-bud pattern in the right lung"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic breakthrough came when induced sputum underwent rapid molecular amplification, identifying the pathogen responsible for both the endobronchial disease and contiguous cutaneous lymph node breakdown (scrofuloderma).",
+      "quote": "The induced sputum samples tested positive for Mycobacterium tuberculosiscomplex through rapid molecular testing (GeneXpert), while yielding negative results on sputum smear microscopy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly adheres to Day 1 triage findings in a patient with achalasia and scrofuloderma, withholding sputum smear and GeneXpert results for the diagnostic pivot."
+}

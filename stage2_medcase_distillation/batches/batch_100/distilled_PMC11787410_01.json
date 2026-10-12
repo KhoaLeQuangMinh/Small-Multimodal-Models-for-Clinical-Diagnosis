@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11787410_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 62-year-old man presents with subacute paraparesis, severe thoracic back pain, acute-on-chronic renal impairment, and multi-organ imaging abnormalities including spiculated pulmonary nodules with diffuse bilateral micronodules, a destructive thoracic spinal abscess, bladder wall thickening with unilateral hydronephrosis, and a 7.4 cm right renal hilar mass that proves to be a large arterial pseudoaneurysm. The diagnostic dilemma hinges on distinguishing between disseminated metastatic malignancy (e.g., primary lung or renal neoplasm with vertebral metastasis) versus multi-system disseminated granulomatous mycobacterial infection complicated by a rare infectious mycotic pseudoaneurysm.\n2. Admission Breakpoint: The admission breakpoint falls at the conclusion of initial emergency imaging and baseline biochemical testing (CT chest, CT abdomen/pelvis, renal MRI, renogram, serum creatinine), before urine and sputum mycobacteriological stains and cultures return positive for acid-fast bacilli and prior to surgical laminectomy.\n3. Differential Distinctions: Disseminated pulmonary or renal cell adenocarcinoma can produce spiculated pulmonary nodules, hilar lymphadenopathy, retroperitoneal masses, and osteolytic spinal destruction causing cord compression, but typically lacks a diffuse miliary micronodular pattern, frank paraspinal cold abscess formation, and rapid mycotic vascular degeneration. Pyogenic staphylococcal spondylodiscitis causes destructive vertebral abscesses and potential septic pseudoaneurysms, but is generally acute, associated with fulminant systemic sepsis and high-grade pyogenic bacteremia, rather than widespread miliary lung infiltrates and chronic granulomatous genitourinary fibrosis.",
+  "case_prompt": "A 62-year-old male with limited access to routine healthcare presented to an urgent care clinic with severe, progressive thoracic back pain and bilateral lower extremity weakness leading to impaired mobility.\n\nOn physical examination, he demonstrated significant paraparesis with motor weakness in both lower extremities and midline lower thoracic spine tenderness without external soft-tissue erythema. Initial laboratory evaluation revealed renal dysfunction with a serum creatinine of 3.7 mg/dL (baseline unknown).\n\nNon-contrast and contrast-enhanced CT of the chest demonstrated spiculated lung nodules along with diffuse, bilateral pulmonary micronodules arranged in a classic miliary distribution, as well as mediastinal lymphadenopathy. Cross-sectional abdominal imaging revealed a 4 cm thoracic paraspinal/epidural abscess causing significant osseous destruction of the lower thoracic vertebral bodies. In addition, imaging identified moderate left hydroureteronephrosis, a thickened bladder wall, and an atrophic right kidney surrounded by a non-specific 7.4 cm right hilar mass. Subsequent abdominal MRI identified this large hilar mass as an expansive vascular lesion arising from the right renal artery, consistent with a pseudoaneurysm. A functional diuretic washout renogram demonstrated a split renal function of only 6% in the right kidney.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Malignancy (Primary Lung or Renal Carcinoma with Skeletal Metastases)",
+      "rule_out_reason": "Considered given the spiculated pulmonary nodules, prominent 7.4 cm renal hilar mass, atrophic kidney, and destructive osteolytic spinal lesion causing cord compression, but ruled out because the diffuse miliary micronodular pattern, paraspinous fluid collection, and subsequent microbiological isolation proved a disseminated infectious etiology rather than carcinoma.",
+      "quote": "Computed Tomography (CT) chest demonstrated spiculated lung nodules with diffuse bilateral pulmonary micronodules in a miliary distribution suggestive of tuberculosis... non-specific 7.4 cm right hilar mass with an atrophic right kidney."
+    },
+    {
+      "candidate": "Pyogenic Spondylodiscitis with Secondary Pyogenic Mycotic Pseudoaneurysm",
+      "rule_out_reason": "Considered due to the 4 cm thoracic spinal abscess with extensive lower thoracic vertebral osseous destruction and an adjacent expanding large vascular pseudoaneurysm, but ruled out when cultures showed no growth of common pyogenic bacteria (e.g., Staphylococcus aureus) and specifically confirmed acid-fast organisms.",
+      "quote": "Abdominal imaging demonstrated a 4 cm thoracic spinal abscess with significant osseous destruction of the lower thoracic spine."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic confirmation occurred when both sputum and urine microbiological smears and cultures demonstrated acid-fast bacilli (AFB), definitively proving disseminated tuberculosis manifesting simultaneously as miliary lung disease, tuberculous spondylodiscitis (Pott's disease), genitourinary tuberculosis, and a tuberculous pseudoaneurysm of the right renal artery.",
+      "quote": "Urine and sputum cultures demonstrated acid-fast bacilli (AFB), confirming the diagnosis of disseminated tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning. Breakpoint stops following initial cross-sectional imaging and triage labs prior to AFB results. Zero pathogen or disease spoilers in case_prompt. Candidates and Diagnostic Pivot supported by verbatim quotes."
+}

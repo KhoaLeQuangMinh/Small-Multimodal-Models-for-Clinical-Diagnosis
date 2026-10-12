@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11769722_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young, completely asymptomatic 26-year-old woman presenting with incidental bilateral pulmonary lesions on screening radiography, with high-attenuation mucus plugging, tree-in-bud opacities, dramatic eosinophilia (EOS 0.91 x 10^9/L, 17.6%), and extreme hyper-IgE (>6,000 ng/mL). The core clinical tension is identifying active pulmonary tuberculosis in an asymptomatic patient whose striking allergic and radiographic features point toward allergic bronchopulmonary aspergillosis (ABPA), particularly when routine sputum acid-fast smears and cultures are completely negative.\n2. Admission Breakpoint: The presentation ends after initial health screening CT findings and baseline laboratories (peripheral eosinophilia, total IgE >6,000 ng/mL, negative routine sputum smears), prior to PPD skin test, bronchoalveolar lavage mNGS/GeneXpert, surgical segmentectomy, and Aspergillus serology.\n3. Differential Distinctions: Differentiating active tuberculosis from isolated allergic bronchopulmonary aspergillosis (ABPA) (which was actually present as a comorbidity but overshadowed by active mycobacterial infection), ANCA-associated vasculitis / eosinophilic granulomatosis with polyangiitis (ruled out by rheumatologic markers), and pulmonary malignancy (ruled out by benign biopsy and clinical course).",
+  "case_prompt": "A 26-year-old woman presented for evaluation after routine health screening chest radiography revealed incidental bilateral pulmonary lesions. She was entirely asymptomatic, reporting no fever, dry cough, wheezing, dyspnea, or weight loss, and had no prior history of respiratory disease. A subsequent chest CT scan demonstrated bronchiectasis with intraluminal high-attenuation mucus plugging in the right upper lobe, accompanied by peripheral atelectasis and centrilobular tree-in-bud opacities, along with a distinct solid nodule in the lingular segment of the left upper lobe. Initial laboratory investigations showed marked peripheral blood eosinophilia with an absolute eosinophil count of 0.91 \u00d7 10^9/L (17.6%) and a total serum IgE level markedly elevated above 6,000 ng/mL (reference: < 165 IU/mL). Routine sputum smears and special microbiological stain examinations were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "ANCA-Associated Vasculitis / Pulmonary Malignancy",
+      "rule_out_reason": "Considered on the differential for bilateral pulmonary nodules and tree-in-bud opacities accompanied by marked eosinophilia, but systemic vasculitis and malignancy were systematically ruled out.",
+      "quote": "Further assessments excluded malignancies and autoimmune disorders such as ANCA-associated vasculitis."
+    },
+    {
+      "candidate": "Isolated Allergic Bronchopulmonary Aspergillosis (ABPA)",
+      "rule_out_reason": "Although the patient met ISHAM criteria for ABPA based on mucus impaction, severe hyper-IgE, and peripheral eosinophilia, bronchoalveolar lavage fluid testing demonstrated active mycobacterial infection.",
+      "quote": "Considering all findings, the patient met the criteria outlined by the International Society for Human and Animal Mycology (ISHAM) for ABPA."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoalveolar lavage fluid metagenomic sequencing and positive molecular Xpert MTB/RIF testing confirmed active pulmonary tuberculosis despite negative sputum smears and cultures.",
+      "quote": "Ultimately, metagenomic next-generation sequencing (mNGS) of bronchoalveolar lavage fluid (BALF) collected from the right upper lobe revealed the presence of Mycobacterium tuberculosis (reads of 23). Additionally, the Xpert MTB/RIF analysis of BALF yielded a positive result"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for active pulmonary Tuberculosis coexisting with allergic bronchopulmonary aspergillosis. Breakpoint set prior to PPD, mNGS, and BALF Xpert. Zero spoilers in case_prompt. Verbatim quotes verified."
+}

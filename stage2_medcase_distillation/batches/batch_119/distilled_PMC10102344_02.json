@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10102344_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 7-year-old boy presented with a 6-week history of nocturnal high fevers with drenching night sweats, profound weight loss, severe sleep-disturbing abdominal pain, and a productive cough, with triage imaging revealing bilateral hilar lymphadenopathy and mesenteric/para-aortic lymphadenitis. The striking family history of severe recurrent lymphadenitis across multiple generations and prior diagnoses of typhoid fever raises critical differentials between chronic granulomatous infection, lymphoid malignancy, and inherited defects of the interferon-gamma/IL-12 pathway.\n2. Admission Breakpoint: The admission breakpoint is reached following completion of the admission clinical history, baseline chest radiography (revealing bilateral hilar adenopathy), and abdominal ultrasonography (revealing mesenteric and para-aortic adenitis), strictly before send-out IS6110/mtp40 mycobacterial PCR panels and NextSeq primary immunodeficiency sequencing.\n3. Differential Distinctions: Recurrent typhoid fever accounts for fever and mesenteric adenitis with high Widal titers, but does not explain prominent bilateral hilar lymphadenopathy, productive mucoid cough, or chronic multisystem dissemination. Lymphoma (e.g., Hodgkin's disease) typically causes B-symptoms and hilar adenopathy, but does not present with familial clusters of infantile adenitis or response to antimicrobials. Chronic granulomatous disease causes recurrent deep-seated catalase-positive bacterial and fungal infections, but features an abnormal dihydrorhodamine (DHR) oxidation burst test. Disseminated mycobacterial disease with dual pulmonic and abdominal adenitis in this genetic context reflects autosomal recessive Mendelian susceptibility.",
+  "case_prompt": "A 7-year-old boy was referred to the Pediatric Tropical and Infectious Diseases unit for evaluation of a six-week illness characterized by prolonged high-grade fever, severe abdominal pain, and progressive weight loss. The fever was predominantly nocturnal, associated with profuse drenching night sweats, and temporarily responsive to oral paracetamol. His abdominal pain was severe and debilitating, disrupting sleep and normal daytime activities, though he had no associated abdominal distension, vomiting, diarrhea, or constipation. Four weeks into the illness, he developed a persistent cough that began dry and evolved into a productive cough with thick mucoid sputum without hemoptysis. He reported no chest pain or dyspnea. His past medical history was notable for multiple prior febrile episodes associated with abdominal pain and mesenteric lymphadenitis that had been attributed to enteric fever based on elevated Widal antibody titers. His family history was highly remarkable: multiple relatives across two generations suffered from severe recurrent lymphadenitis, his father had developed recurrent adenitis since childhood followed by infectious meningitis complicated by hydrocephalus and sensory loss, and an infantile maternal cousin had died following disseminated vaccination complications.\n\nOn physical examination, the child appeared thin and fatigued. His weight was 20 kg (10th percentile) and height was 118 cm (25th percentile). Abdominal examination revealed diffuse tenderness, most pronounced over the periumbilical region, with deep palpation revealing mesenteric fullness without guarding or rigidity.\n\nEmergency imaging was performed upon referral. An abdominal ultrasound revealed minimal free intra-abdominal fluid alongside prominent mesenteric and para-aortic lymphadenitis. A plain chest radiograph demonstrated prominent bilateral hilar lymph node enlargement without focal lobar alveolar consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent enteric fever (Typhoid fever)",
+      "rule_out_reason": "Considered due to the patient's history of recurrent febrile illness with severe abdominal pain and elevated Widal titers, but ruled out as the cause of the current presentation given the prominent bilateral hilar lymphadenopathy and productive pulmonary symptoms.",
+      "quote": "He also had recurrent febrile illnesses associated with abdominal pain and mesenteric lymphadenitis that were diagnosed as typhoid fever on many occasions based on a very high antibody titer on Widal test (culture not done)... The chest x-ray showed bilateral prominent hilar lymph nodes"
+    },
+    {
+      "candidate": "Lymphoma / Systemic malignancy",
+      "rule_out_reason": "Considered given prolonged nocturnal fevers, drenching night sweats, marked weight loss, and widespread hilar and retroperitoneal lymphadenopathy, but excluded by molecular identification of a specific infectious pathogen.",
+      "quote": "The patient's new TB condition started 6 weeks before referral... high-grade fever, mainly at night with sweating... significant weight loss and fatigability... The diagnosis of TB infection was further confirmed with PCRs using IS6110 and mtp40 primers"
+    },
+    {
+      "candidate": "Chronic granulomatous disease (CGD)",
+      "rule_out_reason": "Considered in the differential diagnosis of an inherited immunodeficiency presenting with recurrent granulomatous lymphadenitis and deep visceral infections, but ruled out by a normal dihydrorhodamine reduction (DHR) flow cytometry assay.",
+      "quote": "dihydrorhodamine reduction (DHR) test by flow cytometer showed normal oxidative burst"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis of disseminated mycobacterial infection was conclusively established by specific molecular PCR assays detecting IS6110 and mtp40 target sequences in blood and sputum, in the setting of homozygous IL12RB1 loss-of-function mutation.",
+      "quote": "The diagnosis of TB infection was further confirmed with PCRs using IS6110 and mtp40 primers on blood and sputum, respectively... Primary immunodeficiency genetic testing performed on the NextSeq Illumina platform revealed two pathogenic homozygous variants in IL12RB1 gene of our patient"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation restricted strictly to referral evaluation, chest X-ray, and abdominal ultrasound, withholding IS6110/mtp40 PCR confirmations and genetic sequencing."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11185014_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old male smoker with new-onset diabetes presented with painless jaundice, weight loss, a pancreatic head mass causing biliary duct ectasia, and markedly elevated CA 19-9 (1147.86 U/mL), strongly mimicking unresectable pancreatic adenocarcinoma, but actually representing isolated pancreatic tuberculosis.\n2. Admission Breakpoint: Stops after presentation to the institution with recurrent jaundice following accidental removal of PTBD, initial laboratory workup demonstrating obstructive jaundice and elevated CA 19-9, and abdominal CT demonstrating an ill-defined pancreatic head/neck mass with ductal ectasia, before EUS fine-needle biopsy, metallic stent placement, or treatment response.\n3. Differential Distinctions: Pancreatic ductal adenocarcinoma typically presents with painless obstructive jaundice and markedly elevated CA 19-9 in older smokers, but fine-needle biopsy shows malignant epithelial cells and the lesion progresses without oncologic resection/chemotherapy. Pancreatic neuroendocrine tumors or lymphoma do not resolve on anti-tubercular therapy. Isolated pancreatic tuberculosis is an exceptionally rare imitator that completely resolves under medical anti-tuberculosis therapy without surgical resection.",
+  "case_prompt": "A 44-year-old male with a 12.5 pack-year smoking history and no family history of malignancy presented with painless jaundice and unintentional weight loss. He was recently diagnosed with type 2 diabetes mellitus maintained on sitagliptin/metformin. Initial diagnostic workup at another medical center identified a pancreatic mass on cross-sectional imaging, where a failed endoscopic retrograde cholangiopancreatography (ERCP) necessitated biliary decompression via percutaneous transhepatic biliary drainage (PTBD). Around that time, evaluation for weight loss noted an abnormal chest radiograph for which he was started on empiric multi-drug antimicrobial therapy. The external drainage catheter was subsequently dislodged accidentally, causing a recurrence of obstructive jaundice and prompting referral to our center for definitive management. On arrival, laboratory studies revealed alkaline phosphatase (ALP) 253 U/L, aspartate aminotransferase (AST) 29 U/L, alanine aminotransferase (ALT) 22 U/L, total bilirubin 5.24 mg/dL, direct bilirubin 4.05 mg/dL, serum albumin 34 g/L, and a serum CA 19-9 level of 1147.86 U/mL. An abdominal computed tomography (CT) scan with pancreatic protocol demonstrated an ill-defined focus in the pancreatic head and neck region, with consequent pancreatic duct and biliary ectasia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic ductal adenocarcinoma",
+      "rule_out_reason": "Considered the primary diagnosis given age, smoking history, new-onset diabetes, obstructive jaundice, ill-defined pancreatic head mass, and markedly elevated CA 19-9 (>1000 U/mL). Ruled out when fine-needle biopsy showed fibrocollagenous stroma without neoplastic cells and the mass resolved completely with medical therapy.",
+      "quote": "Fine-needle biopsy of the mass only yielded fibrocollagenous tissue without a definite neoplastic process identified."
+    },
+    {
+      "candidate": "Pancreatic neuroendocrine tumor / Periampullary malignancy",
+      "rule_out_reason": "Solid infiltrating tumors of the pancreatic head can present with obstructive jaundice and biliary duct ectasia. Ruled out by the absence of neoplastic cells on fine-needle biopsy and complete radiographic disappearance on surveillance imaging.",
+      "quote": "A repeat EUS was done, which no longer showed any pancreatic mass but rather a common bile duct sludge seen as an intraductal hyperechoic focus without posterior shadowing (Figure 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Presentation of an ill-defined pancreatic head mass causing severe biliary duct ectasia and extreme CA 19-9 elevation that resolved completely, along with resolution of peripancreatic and perihepatic lymphadenopathy, following completion of a 6-month course of anti-tuberculosis therapy.",
+      "quote": "The patient continued and completed the 6-month course of anti-tuberculosis treatment, with good weight gain. A few months later, the patient was readmitted due to 10-day mild abdominal pains with febrile episodes and a recurrence of jaundice. A repeat EUS was done, which no longer showed any pancreatic mass"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete source fidelity maintained. The prompt strictly ends at the initial institution presentation and triage CT without spoiling the nature of the pulmonary infiltrates, histology, or resolution on anti-tubercular therapy. All verbatim quotes verified from case text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9972053_01",
+  "disease": "Dengue, Malaria",
+  "think": "1. Core Clinical Tension: An international traveler presenting to an arbovirus-endemic region (Colombia) following long-term residence in a malaria-hyperendemic area (Uganda), presenting with fever, retroocular headache, epistaxis, choluria, bicytopenia, and sonographic plasma leakage (pleural effusion, ascites, gallbladder thickening). Finding serologic markers of arboviral infection creates premature closure risk, overlooking concurrent life-threatening protozoal infection signaled by persistent remittent high fever.\n2. Admission Breakpoint: The admission narrative halts after initial triage vitals, physical exam demonstrating hepatosplenomegaly, baseline blood counts, liver enzymes, viral hepatitis serologies, and abdominal ultrasound findings, immediately before acute-phase arboviral antibody titers and Giemsa blood smear examination.\n3. Differential Distinctions: Viral hepatitis is excluded by negative HBsAg and HCV antibody testing. Isolated dengue with warning signs accounts for plasma leakage, epistaxis, and thrombocytopenia, but persistent high fevers after 72 hours of hydration point away from isolated viral defervescence. Isolated malaria produces cyclical fever, anemia, and splenomegaly but rarely produces extensive polyserositis and plasma leakage without severe disease criteria.",
+  "case_prompt": "A 34-year-old male presented to an emergency department in rural Colombia with a 10-day history of high fever, holocranial headache, generalized myalgia, arthralgia, and retro-ocular pain, accompanied by sudden-onset epistaxis and dark urine (choluria). Nine days prior to presentation, he had returned to Colombia from Uganda, where he had resided for 10 months.\n\nOn physical examination, he had an oral temperature of 39.0 °C, blood pressure of 110/80 mmHg, heart rate of 89 beats/min, respiratory rate of 16 breaths/min, and oxygen saturation of 97% on ambient air. The skin was cool and diaphoretic without scleral icterus or cutaneous rash. Chest examination demonstrated preserved ventilatory dynamics. Abdominal examination revealed marked hepatosplenomegaly extending 5 cm below the costal margin, without focal tenderness or peritoneal signs. Neurological examination was normal.\n\nInitial triage laboratories revealed normocytic anemia with a hemoglobin of 10.0 g/dL (reference range 12–14 g/dL), thrombocytopenia with a platelet count of 97,000/mm³ (reference range 150,000–400,000/mm³), and elevated serum transaminases. Serological screening for hepatitis B surface antigen and hepatitis C antibody was non-reactive. Bedside and total abdominal ultrasonography demonstrated moderate free peritoneal fluid surrounding the urinary bladder, gallbladder wall thickening, hepatomegaly, splenomegaly, and bilateral pleural effusions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis (Hepatitis B / Hepatitis C)",
+      "rule_out_reason": "Considered due to the presence of high fevers, choluria, and elevated serum transaminases; however, serological screening for hepatitis B surface antigen and hepatitis C antibody was completely non-reactive.",
+      "quote": "including those for hepatitis B surface antigen and hepatitis C antibody, both came out normal."
+    },
+    {
+      "candidate": "Isolated Dengue Virus Monoinfection",
+      "rule_out_reason": "Initial presentation with retroocular pain, epistaxis, thrombocytopenia, and plasma leakage on ultrasound met criteria for dengue with warning signs; however, persistence of high fevers 72 hours into inpatient fluid therapy prompted blood smear analysis, revealing intraerythrocytic protozoa and disproving isolated viral disease.",
+      "quote": "Diagnosis of dengue virus infection with warning signs (Group B) was made and admitted to hospitalization... A 72 hours after admission, the patient persisted with fever... parasitic tests were performed because the patient had returned from an endemic country with persistent prolonged febrile syndrome"
+    },
+    {
+      "candidate": "Isolated Malaria Monoinfection",
+      "rule_out_reason": "Although Plasmodium falciparum parasitemia was confirmed, isolated malaria does not explain prominent third-space plasma leakage (ascites, pleural effusion, and gallbladder wall thickening), and acute MAC-ELISA and molecular PCR testing confirmed active viral co-infection.",
+      "quote": "Ultrasound scan shows pleural effusion in addition to moderate free fluid in the peritoneal cavity surrounding urinary bladder and gallbladder wall thickening... MAC-ELISA (considering more than 5 days illness) was positive for dengue virus type 2 (DENV-2)... Therefore, a diagnosis of concurrent malaria and dengue infection was established."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Giemsa-stained thick and thin blood films revealed intraerythrocytic ring forms of Plasmodium falciparum (parasitemia index 2.3%, 215,000 parasites/μL) alongside positive MAC-ELISA and PCR for dengue virus type 2, confirming concurrent dual infection.",
+      "quote": "a thick and thin blood smear stained with Giemsa was performed and revealed the characteristic intraerythrocytic ring forms of Plasmodium falciparum (trophozoites: a total of 215 000 parasites/mul, parasitemia index of 2.3% and gametocytes), which confirmed the diagnosis of malaria as uncomplicated... MAC-ELISA (considering more than 5 days illness) was positive for dengue virus type 2 (DENV-2)."
+    }
+  ],
+  "final_diagnosis": "Dengue, Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. Case prompt ends prior to dengue serologies and malaria smears. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

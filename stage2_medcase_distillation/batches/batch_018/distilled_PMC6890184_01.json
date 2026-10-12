@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6890184_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An elderly male presents with a subacute 2-month history of worsening left medial thigh pain, lameness, and markedly elevated inflammatory markers (CRP > 150 mg/L), initially treated with repeated local aspirations without definitive diagnosis, masking an indolent deep-seated granulomatous joint infection.\n2. Admission Breakpoint: The breakpoint occurs following clinical evaluation, inflammatory markers, standard bacterial blood cultures, hip MRI revealing acetabular effusion and iliopsoas signal changes, and chest CT showing old pulmonary calcifications, prior to interferon-gamma release assay, open joint clearance, and metagenomic next-generation sequencing.\n3. Differential Distinctions: Acute pyogenic bacterial septic arthritis or iliopsoas abscess is challenged by an indolent 2-month duration and negative conventional aerobic/anaerobic blood cultures. Mechanical osteoarthritis or lumbar radiculopathy is incompatible with profound inflammatory elevations (CRP > 150 mg/L, ESR 60 mm/hr) and MRI evidence of active iliopsoas infection.",
+  "case_prompt": "A 77-year-old male presented with a 2-month history of worsening pain and swelling in the medial aspect of the left thigh, progressive lameness, and intermittent fever. Prior to presentation, he had undergone two needle aspirations at a community hospital with only temporary symptomatic relief followed by rapid relapse. His past medical history was notable for degenerative lumbar disc disease and an inguinal herniorrhaphy performed 16 years earlier; he was taking no long-term medications.\n\nOn physical examination, the patient had an antalgic gait with marked restriction of movement in the left hip joint. Patrick's test (flexion, abduction, and external rotation) was positive on the left side. His body temperature was 37.3°C without chills, and systemic examination was otherwise unremarkable.\n\nLaboratory evaluation demonstrated a hemoglobin of 118 g/L (reference: 120–160 g/L), erythrocyte sedimentation rate (ESR) of 60 mm/hr (reference: 0–15 mm/hr), and C-reactive protein (CRP) greater than 150 mg/L (reference: 0–5 mg/L). Blood cultures for aerobic and anaerobic bacteria showed no growth. Magnetic resonance imaging (MRI) of the left hip demonstrated a small effusion within the left acetabular cavity and hyperintense T2 signal abnormalities within the left iliopsoas muscle consistent with localized soft tissue infection, without articular cartilage collapse. Plain chest computed tomography (CT) demonstrated spotted calcifications scattered throughout the upper and lower lobes of both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Septic Coxitis or Pyogenic Iliopsoas Abscess",
+      "rule_out_reason": "A high CRP (>150 mg/L) with hip effusion and iliopsoas signal changes strongly suggests typical pyogenic infection (e.g., Staphylococcus aureus); however, the subacute 2-month course, lack of acute fulminant systemic toxicity, and negative aerobic/anaerobic blood cultures make common pyogenic bacteria unlikely.",
+      "quote": "Blood cultures tested for aerobic and anaerobic bacteria were negative. Magnetic resonance imaging (MRI) revealed a small amount of effusion in the left acetabular cavity. An increased T2 signal of the left iliopsoas was also revealed by MRI, indicating infection."
+    },
+    {
+      "candidate": "Degenerative Osteoarthritis or Lumbar Radiculopathy",
+      "rule_out_reason": "Given the patient's age and history of degenerative lumbar spine disease, musculoskeletal or neurogenic pain was considered; however, this cannot account for the marked systemic inflammation (CRP > 150 mg/L, ESR 60 mm/hr) or MRI evidence of active acetabular synovitis and iliopsoas infection.",
+      "quote": "The patient's medical history was noteworthy for degenerative lumbar disk disease... erythrocyte sedimentation rate (ESR) 60 mm/hour (reference: 0-15 mm/hour), and C-reactive protein (CRP) > 150 mg/L (reference: 0-5 mg/L)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Joint exploration surgery revealed gross caseous material and granulomatous inflammation involving the femoral neck, femoral head, and capsule, while ultra-deep metagenomic next-generation sequencing (mNGS) identified specific Mycobacterium tuberculosis sequence reads in synovial fluid.",
+      "quote": "During the surgery, granulomatous inflammation was found and caseous materials were removed from the femoral neck, femoral head, and joint capsule... Among all hits, only two paired-end reads from synovial fluid samples were identified as MTB... Considering all the above, we conclude that the results of mNGS can provide evidence of MTB infection."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for tuberculous coxitis with iliopsoas involvement. Admission breakpoint strictly maintained before T-SPOT, surgical debridement, histopathology, and mNGS sequencing."
+}

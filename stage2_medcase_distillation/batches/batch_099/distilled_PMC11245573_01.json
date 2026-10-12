@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11245573_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 57-year-old uncircumcised man presents with an 8-month history of indolent, painful penile ulcers unresponsive to corticosteroid therapy, lacking constitutional symptoms, inguinal lymphadenopathy, or urinary symptoms. Penile ulcerations classically suggest sexually transmitted infections (syphilis, herpes simplex, lymphogranuloma venereum) or squamous cell carcinoma. Isolated primary or secondary tuberculous ulceration of the penis is an extraordinarily rare presentation that can evade diagnosis when pulmonary signs are absent.\n2. Admission Breakpoint: The admission breakpoint is reached after completion of physical examination, baseline routine urine microscopy, and initial genitourinary ultrasound demonstrating normal genital architecture without lymphadenopathy, immediately prior to send-out serologies, ulcer swabs, IGRA/TST, chest CT, and lesion biopsy.\n3. Differential Distinctions: Sexually transmitted infections such as syphilis were initially considered but ruled out by negative serologies. Active pulmonary disease seeding the skin was considered after chest CT showed non-specific high-density lung lesions, but bronchoalveolar lavage sequencing was negative and lesions showed no interval change after therapy. The diagnosis of cutaneous penile tuberculosis was confirmed by strongly positive tuberculin skin testing, positive IGRA, and biopsy showing classic granulomatous inflammation with Langhans giant cells and caseous necrosis.",
+  "case_prompt": "A 57-year-old uncircumcised man presents to the clinic with painful ulcers located on the coronal groove of the penis that have persisted and progressed over the past eight months. The lesion began as small papules that gradually enlarged and broke down into tender, open ulcerations draining a yellowish exudate. He initially received oral corticosteroid therapy at an outside hospital, which produced no clinical improvement.\n\nThe patient reports no fever, chills, night sweats, cough, hemoptysis, fatigue, or unintended weight loss. He reports no dysuria, hematuria, or altered urinary stream. Medical history is negative for diabetes mellitus, malignancies, chronic renal failure, or known immunosuppression. He has no past history of mycobacterial infections or known exposure to infected individuals. He denies prior penile trauma, urological interventions, or high-risk sexual behavior.\n\nOn physical examination, the patient is afebrile and systemically well. Examination of the external genitalia reveals multiple well-defined, non-indurated, tender, punched-out ulcers measuring 0.5 to 1.0 cm in diameter with ragged, regular borders located along the coronal groove of the penis. The ulcer bases are covered with yellowish purulent discharge. No palpable superficial inguinal or femoral lymphadenopathy is present. Other mucocutaneous surfaces and general physical examination findings are completely normal.\n\nInitial diagnostic evaluation reveals normal urine microscopy. Bedside ultrasound of the genitourinary system and regional superficial lymph node basins demonstrates normal anatomy without lymphadenopathy or pelvic collections.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Syphilis and Sexually Transmitted Infections",
+      "rule_out_reason": "Considered because of painful, punched-out coronal groove ulcers in a sexually active adult, but refuted by negative treponemal and retroviral serological testing.",
+      "quote": "The results of syphilis and HIV serological tests were negative."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Ulcerative Infection",
+      "rule_out_reason": "Considered due to the purulent yellowish discharge over the ulcer base, but ulcer swab Gram stain, Ziehl-Neelsen stain, and routine bacterial cultures yielded non-significant results.",
+      "quote": "The results of Gram and Ziehl-Neelsen staining examinations and the culture of the swab taken from the ulcer surface were not significant."
+    },
+    {
+      "candidate": "Active Secondary Pulmonary Tuberculosis with Cutaneous Seeding",
+      "rule_out_reason": "Considered when chest CT revealed patchy and nodular opacities, but bronchoalveolar lavage genomic sequencing was negative and lung lesions did not change after treatment, excluding active pulmonary infection.",
+      "quote": "Chest computed tomography scans revealed linear, patchy, and nodular high-density lesions in the lungs... but M. tuberculosis was not detected in the genome sequencing examination of bronchoalveolar lavage... no significant changes in the chest CT scan were found after anti-tuberculosis treatment. Therefore, pulmonary tuberculosis was unlikely."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A strongly positive Tuberculin Skin Test (30 x 20 mm induration), positive interferon-gamma release assay, and punch biopsy revealing granulomatous infiltrate with Langhans giant cells and caseous necrosis confirmed penile cutaneous tuberculosis, with complete ulcer healing under quadruple antitubercular therapy.",
+      "quote": "The interferon-gamma release assay provided positive results. The Tuberculin Skin Test, which was performed intradermally, demonstrated a 30 mm x 20 mm induration and erythema after 72 h... The histopathology of lesion tissue biopsy showed nodular infiltration of lymphocytes, Langhans giant cells, and small foci of Caseous necrosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint preserved at the clinical exam and baseline ultrasound stage. Zero spoilers, pathogen names, or confirmatory histology in the case presentation."
+}

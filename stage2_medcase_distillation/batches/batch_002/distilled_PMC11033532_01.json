@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11033532_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: An immunocompromised HIV-positive male in India presents with subacute respiratory symptoms, chest pain, bilateral pleural effusions, and right lower lobe consolidation that masquerades as an opportunistic fungal, bacterial, or mycobacterial pulmonary infection, with negative routine microbiological cultures.\n2. Admission Breakpoint: Admission triage and evaluation including HIV history on ART, symptoms of cough, chest pain, and dyspnea, physical exam (finger clubbing, lower limb hyperkeratosis), baseline laboratories (negative routine blood tests and bacterial cultures), and initial thorax HRCT/CECT demonstrating right lower zone consolidation and bilateral effusions, stopping strictly before fiberoptic bronchoscopy, bronchoalveolar lavage, and wet mount identification of helminth eggs.\n3. Differential Distinctions: Opportunistic bacterial pneumonia and Pneumocystis jirovecii pneumonia are major causes of pulmonary consolidation and infiltrates in HIV-positive individuals but typically respond to standard empiric antimicrobials and do not show parasitic forms on lavage. Pulmonary tuberculosis is endemic in western India and causes subacute cough, hemoptysis, and lower lobe consolidation in HIV, but yields acid-fast bacilli on stain/culture or granulomas on bronchoscopy, rather than lateral- or terminal-spined trematode eggs.",
+  "case_prompt": "A 51-year-old male vegetable vendor with known HIV-positive status on antiretroviral therapy (tenofovir 300 mg, lamivudine 300 mg, and dolutegravir 50 mg daily since 2020) and a history of treated Hansen's disease in 2022 presents to a tertiary care hospital in western India with complaints of dysphagia, odynophagia, fever, and chest pain of 3 days' duration, along with cough and breathlessness for 1 month. The cough has been accompanied by whitish expectoration, with a remote history of two episodes of blood-tinged sputum in 2020. Exertional breathlessness is graded as mMRC class I. He reports no recent travel outside his home region.\n\nOn physical examination, the patient has grade 2 digital clubbing of the fingers and hyperkeratotic patches on both lower extremities. Vital signs are notable for fever. The rest of the systemic physical examination is otherwise unremarkable. Routine blood investigations and initial blood and sputum bacterial cultures are all negative. High-resolution computed tomography (HRCT) of the chest reveals bilateral pleural effusions with compressive atelectasis. Contrast-enhanced computed tomography (CECT) of the thorax demonstrates right lower zone pulmonary consolidation suggestive of an opportunistic pulmonary infection. A 2D echocardiogram is normal with no evidence of pulmonary arterial hypertension, and upper gastrointestinal endoscopy reveals pangastritis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic Pyogenic Bacterial or Pneumocystis Pneumonia",
+      "rule_out_reason": "Considered due to underlying HIV-induced immunosuppression, subacute fever, dyspnea, and right lower lobe consolidation with bilateral pleural effusions, but routine blood investigations and bacterial cultures were negative and symptoms persisted despite initial supportive therapy.",
+      "quote": "All routine blood investigations and cultures were negative... CECT thorax suggestive of right lower zone consolidation with opportunistic infection"
+    },
+    {
+      "candidate": "Pulmonary Tuberculosis",
+      "rule_out_reason": "Considered highly likely given the high regional co-prevalence in HIV-infected patients presenting with subacute cough, hemoptysis history, and lung consolidation, but bronchoscopy showed no endobronchial granulomas or mycobacteria.",
+      "quote": "Fiberoptic bronchoscopy done showed no structural abnormality or endobronchial mass."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fiberoptic bronchoscopy with bronchoalveolar lavage (BAL) from the posterobasal segment of the right lower lobe identified Schistosoma haematobium eggs, subsequently corroborated by sputum wet mount microscopy, establishing ectopic pulmonary schistosomiasis with successful clinical resolution upon praziquantel therapy.",
+      "quote": "Bronchoalveolar lavage from posterobasal segment of right lower lobe was sent for investigation, which was suggestive of parasitic infection Schistosoma haematobium... a sputum culture was sent for wet mount suggested schistosomiasis, and a repeat dose of tablet praziquantel 3000 mg in divided doses for 1 day along with glucocorticoid... was administered."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt isolates admission clinical and thoracic CT findings in an HIV-positive patient before bronchoscopic BAL fluid analysis and praziquantel therapy. Zero pathogen names in prompt."
+}

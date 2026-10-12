@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8044558_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 25-year-old male emigrant from Iraq presents with two months of progressive thoracic/back pain, weight loss, hemoptysis, and a giant 9-cm smoothly circumscribed cystic pulmonary mass in the left lower lobe. The primary diagnostic tension is distinguishing an infectious tuberculous cavity, bronchogenic cyst, or necrotic pulmonary neoplasm from a hydatid cyst, compounded by negative circulating parasite serologies.\n2. Admission Breakpoint: The admission evaluation concludes after outpatient triage, initial inflammatory labs, and contrast-enhanced chest CT defining the 9-cm cystic left lower lobe mass, prior to bronchoscopy, serum/BAL mycobacterial PCR, Echinococcus serology, and surgical lobectomy.\n3. Differential Distinctions: Cavitary pulmonary tuberculosis presents with subacute hemoptysis, weight loss, and cavitary lesions in young immigrants, but shows positive sputum/BAL acid-fast smears or mycobacterial PCR. Cystic pulmonary neoplasms or necrotic lung carcinoma show thick, irregular enhancing walls with malignant cytology on biopsy or resection rather than layered parasitic membranes with protoscolices.",
+  "case_prompt": "A 25-year-old male presented to the outpatient thoracic clinic complaining of progressive left-sided thoracic and back pain of increasing intensity over the preceding two months, accompanied by an involuntary weight loss of 5 kg. He also reported intermittent episodes of hemoptysis (blood-streaked sputum). He had emigrated from Iraq to Germany three years earlier and had returned to Iraq for a visit one year prior to presentation.\n\nOn physical examination, the patient was lean but in no acute distress. Vital signs were stable. Auscultation of the lungs revealed decreased breath sounds over the left lower lung base without focal wheezes or crackles. The remainder of the examination, including abdominal palpation and peripheral lymph node survey, was normal.\n\nInitial blood work revealed elevated inflammatory markers. Chest radiography and subsequent contrast-enhanced chest computed tomography (CT) demonstrated a large, smoothly circumscribed cystic mass measuring 9 cm in greatest diameter in the left lower lobe, exhibiting subtle peripheral rim attenuation with intravenous contrast media; the remainder of the pulmonary parenchyma appeared unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous cavern / Cavitary pulmonary tuberculosis",
+      "rule_out_reason": "Considered the leading infectious differential because an immigrant from an endemic region with hemoptysis, constitutional weight loss, and a large cavitary/cystic pulmonary mass strongly suggests cavitary mycobacterial disease. However, bronchoscopy was unremarkable, and mycobacterial PCR performed on both serum and bronchoalveolar lavage fluid was negative.",
+      "quote": "Radiologically, either a tuberculous cavern or echinococcosis was suspected. Bronchoscopy revealed no pathological changes. A mycobacterial infection could not be verified by PCR neither in the serum nor in a bronchoalveolar washing."
+    },
+    {
+      "candidate": "Primary cystic lung neoplasm or necrotic pulmonary malignancy",
+      "rule_out_reason": "Considered because a giant 9-cm expanding intrathoracic pseudotumor causing hemoptysis, localized thoracic pain, and weight loss can represent a congenital bronchogenic cyst, cystic sarcoma, or cavitating lung carcinoma. However, histological examination of the resected specimen revealed parasitic laminar architecture without neoplastic cells.",
+      "quote": "revealed a smoothly delineated cystic tumour with a maximal diameter of 9 cm in the lower lobe of the left lung with attenuation of contrast media in the periphery of the lesion, whereas the remainder lung parenchyma appeared inconspicuous."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative pre-operative Echinococcus serology, definitive diagnostic lobectomy of the left lower lobe demonstrated a thick acellular laminated cuticular membrane, an inner nucleated germinal layer, and intraoperative smears teeming with protoscolices and hooklets, pathognomonic for hydatid cyst echinococcosis.",
+      "quote": "Histomorphologically, the periphery of the cystic lesion showed a thick fibrous rim, consisting of an outer acellular laminated membrane and a germinal membrane with nucleated lining with numerous protoscolices with occasional hooklets (Figure 2(b) and (c)). During workup for frozen section, cytological smear preparations had been performed, which also clearly showed protoscolices and hooklets, facilitating the frozen section diagnosis."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pulmonary echinococcosis (hydatid cyst pseudotumor) in a young Iraqi immigrant with negative circulating serology. All bronchoscopy findings, PCR assays, Echinococcus serology, and surgical histopathology excluded from case_prompt."
+}

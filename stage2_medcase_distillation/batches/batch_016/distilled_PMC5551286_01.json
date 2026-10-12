@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5551286_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 34-year-old immigrant from Mexico presenting with a new-onset generalized seizure and a massive, multi-lobulated cystic intracranial mass (6.5 x 4.5 x 4 cm) centered around the sylvian fissure with midline shift. Unlike classic parenchymal neurocysticercosis which presents with small cysts containing an identifiable scolex, this extra-parenchymal racemose variant lacks a scolex on neuroimaging and mimics an arachnoid cyst, hydatid cyst, or cystic metastasis.\n2. Admission Breakpoint: Admission clinical presentation ends after the patient presentation, history of immigration from Mexico, clinical neurological exam, initial lumbar puncture (unremarkable CSF labs, culture, cytology, and flow cytometry), and neuroimaging (CT and MRI brain demonstrating the non-enhancing multi-lobulated cystic lesion with central calcifications). It stops immediately before serum cysticercosis IgG antibody serology returns and surgical resection.\n3. Differential Distinctions: Metastatic intracranial neoplasm is ruled out by the lack of contrast enhancement on MRI and unremarkable systemic staging CT. Hydatid cyst (echinococcosis) is ruled out by the absence of extracranial cysts on CT chest/abdomen/pelvis and confirmation of cysticercal serology. Racemose neurocysticercosis is confirmed by positive IgG serology and intraoperative excision demonstrating folded cystic membranes with calcareous corpuscles and microtriches.",
+  "case_prompt": "A 34-year-old right-handed Hispanic male presented after experiencing a new-onset generalized seizure while driving. He had emigrated from Mexico 15 years prior to presentation and had not returned for 6 years; he had worked in several states across the United States before residing in Alabama for the past 11 years.\n\nOn physical examination, he was fully oriented with no focal neurological deficits. Lumbar puncture was performed; cerebrospinal fluid analysis, routine cultures, cytology, and flow cytometry were unremarkable.\n\nNon-contrast head CT revealed a large left fronto-temporal multi-lobulated cystic lesion measuring approximately 6.5 cm x 4.5 cm x 4 cm, primarily centered around the sylvian fissure and producing significant mass effect with a 0.5 cm midline shift. Central calcifications were present at the confluence of the cysts. The largest cyst cavity was in the left temporal lobe and did not communicate with the temporal horn. Brain MRI demonstrated high T2-weighted signal intensity within the cyst identical to cerebrospinal fluid. FLAIR sequences showed minimal increased signal in the cyst walls. Diffusion-weighted imaging showed no diffusion restriction, and contrast-enhanced sequences showed no peripheral enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic intracranial disease",
+      "rule_out_reason": "Considered due to the large intracranial mass causing mass effect and midline shift, but excluded by lack of peripheral contrast enhancement or restricted diffusion on MRI and unremarkable systemic staging CT.",
+      "quote": "The CT of his chest, abdomen, and pelvis with contrast were obtained to rule out other possible diagnoses on the differential, including metastatic disease and hydatid cysts; this was unremarkable."
+    },
+    {
+      "candidate": "Hydatid cyst (Echinococcosis)",
+      "rule_out_reason": "Considered because cestode larval infections can cause large multiloculated intracranial cysts, but excluded by the absence of extracranial hepatic or pulmonary cysts on CT imaging and confirmation of cysticercosis.",
+      "quote": "The CT of his chest, abdomen, and pelvis with contrast were obtained to rule out other possible diagnoses on the differential, including metastatic disease and hydatid cysts; this was unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred with positive serum cysticercosis IgG antibody serology, followed by surgical resection and histopathologic demonstration of membranous racemose cyst walls containing microtriches and calcareous corpuscles without scolices.",
+      "quote": "Serology for serum cysticercosis IgG antibodies was positive."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly observed before serology and surgical exploration. Zero disease/pathogen mentions in case_prompt. Direct quotes verified from text."
+}

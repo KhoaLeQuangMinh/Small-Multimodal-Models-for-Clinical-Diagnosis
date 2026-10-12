@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8435476_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 28-year-old HIV-negative female presenting with prolonged fever, cervical lymphadenopathy, erythema nodosum, and pulmonary infiltrates with a past exposure history of rat bites. The tension lies in untangling an occult dimorphic endemic fungal infection that mimics disseminated tuberculosis or non-tuberculous mycobacteriosis in an ostensibly immunocompetent host, leading to initial culture-negative evaluations and treatment failures.\n2. Admission Breakpoint: Initial hospital admission with physical examination, baseline laboratory panels (CBC, inflammatory markers, HIV, cryptococcal antigen), routine microbiological cultures, and baseline chest CT, prior to invasive tissue biopsies (EBUS-TBNA, lymph node histology) and send-out molecular testing (qPCR/mNGS).\n3. Differential Distinctions: Unresponsiveness to extensive broad-spectrum antibacterial and quadruple antituberculous regimens, negative cryptococcal antigen, lack of bone marrow malignancy, and targeted quantitative real-time PCR identifying Talaromyces marneffei DNA establishing disseminated talaromycosis.",
+  "case_prompt": "A 28-year-old woman presented to the hospital with a 2-month history of right cervical lymph node enlargement and recurrent fevers persisting for over 1 month, accompanied by an erythematous cutaneous rash, lower extremity edema, and painful subcutaneous nodules over both lower legs. Her past medical history was notable for sustaining pet rat bites 2 years previously (in 2015).\n\nOn physical examination, the patient was febrile. Physical examination revealed firm, palpable lymphadenopathy in the right cervical region and classical tender, erythematous subcutaneous nodules consistent with erythema nodosum distributed over bilateral calves.\n\nAdmission laboratory testing revealed normocytic anemia with hemoglobin of 9.4 g/dL and hematocrit of 28.8%, leukocytosis of 16.27 × 10⁹/L with 78.6% neutrophils, thrombocytosis with a platelet count of 418 × 10⁹/L, marked elevation of C-reactive protein at 138.15 mg/L, and an erythrocyte sedimentation rate of 88 mm/h. Screening serology for HIV and serum cryptococcal capsular antigen tests were both negative. Quantitative serum immunoglobulins and peripheral blood lymphocyte subset enumerations were within normal limits, while a T-cell interferon-gamma release assay (T-SPOT) yielded an indeterminate result. Baseline routine bacterial and fungal cultures obtained from peripheral blood, sputum, bronchoalveolar lavage fluid, and skin lesions were negative. Initial chest CT demonstrated patchy pulmonary infiltrates in the right upper lobe associated with right hilar and mediastinal lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Cryptococcosis",
+      "rule_out_reason": "Considered given subacute febrile illness with pulmonary and lymph node involvement in a young adult, but ruled out by negative serum cryptococcal capsular antigen testing.",
+      "quote": "HIV serology and serum cryptococcal capsular antigen tests were negative."
+    },
+    {
+      "candidate": "Disseminated Tuberculosis / Mycobacterial Disease",
+      "rule_out_reason": "Considered due to the combination of subacute fevers, cervical lymphadenopathy, erythema nodosum, and upper-lobe infiltrates with mediastinal adenopathy; however, indeterminate T-SPOT, repeatedly negative conventional cultures, and lack of clinical response to empirical quadruple antituberculous therapy ruled it out as the primary standalone cause.",
+      "quote": "During the course, empirical treatments with cefoxitin (CFX), levofloxacin (LVFX), moxifloxacin (MFX), cefodizime (CDZ), clarithromycin (CLA), etimicin (ETM) and anti-tuberculosis isoniazid (H), rifampicin (R), pyrazinamide (Z), ethambutol (E) regimen were successively administered, but no improvement was observed."
+    },
+    {
+      "candidate": "Hematologic Malignancy / Lymphoma",
+      "rule_out_reason": "Considered in a young patient with B symptoms, persistent generalized lymphadenopathy, and high inflammatory markers, but excluded by bone marrow biopsy demonstrating reactive infectious changes without clonal malignant proliferation.",
+      "quote": "Although bone marrow biopsy was consistent with infection and there was no evidence of hematological malignancy, the culture of bone marrow and lymph node tissue was both negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Refractory symptoms despite multiple antibacterial and antituberculous courses prompted consideration of endemic dimorphic fungal infection given the prior rodent exposure; targeted qPCR confirmed Talaromyces marneffei (1,798 copies/μL), establishing disseminated talaromycosis with prompt clinical response to liposomal amphotericin B.",
+      "quote": "As the patient had a history of rat bites, an important natural reservoir for T. marneffei, we conducted T. marneffei qPCR and obtained a result of 1798 copies/uL. Therefore, the patient was diagnosed with disseminated T. marneffei infection, and intravenous antifungal therapy with amphotericin B liposome (AMPB) commenced on November 6, 2017."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation stops cleanly before invasive tissue biopsies and molecular assay results, completely withholding the pathogen identity."
+}

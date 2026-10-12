@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6218752_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 68-year-old male with cirrhosis, hepatitis C, and ESRD on hemodialysis presents with fevers, exudative pleural effusion, and new ascites. Because ascites in a cirrhotic patient is typically assumed to be portal hypertensive or spontaneous bacterial peritonitis, the low SAAG (<1.1) and CT appearance of diffuse peritoneal nodules strongly bias clinicians toward peritoneal carcinomatosis. Furthermore, initial ascites fluid analysis—including ADA (3.4 IU/L), AFB smear, and mycobacterial PCR—was falsely negative, creating severe diagnostic complexity.\n2. Admission Breakpoint: Concludes after initial ED triage, baseline laboratory panels, chest radiography demonstrating large left pleural effusion, and initial bedside paracentesis/thoracentesis fluid analysis, strictly prior to send-out specialized mycobacterial PCR, repeat paracentesis ADA, and omental tissue biopsy.\n3. Differential Distinctions: Decompensated cirrhotic ascites / Spontaneous bacterial peritonitis (SBP) is excluded by a low SAAG (<1.1), low PMN count (<250/mm3), and negative bacterial cultures. Peritoneal carcinomatosis is suggested by CT nodules and low SAAG exudate, but ruled out by negative fluid cytologies and lack of neoplastic cells on histology. Peritoneal tuberculosis is confirmed by omental core biopsy showing necrotizing granulomas with acid-fast bacilli and tissue culture yielding Mycobacterium tuberculosis complex.",
+  "case_prompt": "A 68-year-old male presents to the emergency department with a 2-week history of progressive dyspnea, generalized weakness, subjective fevers, and right upper quadrant abdominal pain. His past medical history is significant for end-stage renal disease on maintenance hemodialysis, cirrhosis secondary to chronic hepatitis C, chronic obstructive pulmonary disease, type 2 diabetes mellitus, hypertension, hyperlipidemia, and benign prostatic hyperplasia.\n\nOn physical examination, he appears chronically ill and mildly dyspneic. Abdominal examination reveals mild right upper quadrant tenderness and clinically detectable ascites with shifting dullness, without signs of overt peritonitis. Chest examination reveals decreased breath sounds and dullness to percussion over the left hemithorax.\n\nInitial laboratory testing reveals a normal complete blood count with normal differential, stable electrolyte and renal parameters, aspartate aminotransferase (AST) 19 IU/L, alanine aminotransferase (ALT) 5 IU/L, total bilirubin 1.4 mg/dL, serum albumin 2.9 g/dL, and prothrombin time 15.6 seconds. Hepatitis B surface antigen and HIV-1/HIV-2 antibodies are negative. Plain chest radiography demonstrates a large left-sided pleural effusion. Diagnostic thoracentesis yields an exudative pleural fluid by Light's criteria with negative fluid cytology. Diagnostic paracentesis demonstrates a serum-ascites albumin gradient (SAAG) of < 1.1 g/dL, a polymorphonuclear cell count of < 250/mm³, and negative routine bacterial cultures.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Decompensated portal hypertension / Spontaneous bacterial peritonitis",
+      "rule_out_reason": "Although the patient has pre-existing cirrhosis and hepatitis C, the ascitic fluid revealed a low serum-ascites albumin gradient (<1.1 g/dL), a normal polymorphonuclear neutrophil count (<250/mm³), and negative bacterial culture, ruling out uncomplicated portal hypertension transudate and spontaneous bacterial peritonitis.",
+      "quote": "revealed a serum ascites albumin gradient of <1.1, polymorphonuclear cell count <250/mm3, and negative culture."
+    },
+    {
+      "candidate": "Metastatic peritoneal carcinomatosis",
+      "rule_out_reason": "Abdominal CT imaging demonstrated diffuse nodular peritoneal implants mimicking carcinomatosis, but multiple cytological examinations of pleural fluid and ascites revealed no malignant cells, and core tissue biopsy identified granulomatous inflammation rather than carcinoma.",
+      "quote": "revealed an exudative pleural fluid per Light's criteria and negative cytology... No malignant cells were found... Decision for abdominal computed tomography was made, which revealed peritoneal carcinomatosis with multiple subcentimeter lesions in the liver, spleen, and adrenal glands."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Peritoneal Tuberculosis",
+      "rule_out_reason": "Despite false-negative ascites fluid ADA (3.4 IU/L), smear, and PCR, ultrasound/CT-guided omental tissue biopsy revealed necrotizing granulomatous inflammation with acid-fast bacilli, and subsequent tissue culture confirmed Mycobacterium tuberculosis complex.",
+      "quote": "an omental biopsy was obtained which showed necrotizing granulomatous inflammation with rare acid-fast bacilli (AFB). Repeat biopsy was done for tissue culture, and this was positive for Mycobacterium tuberculosis complex."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Excellent diagnostic dilemma highlighting the limitation of ascites fluid PCR and ADA in peritoneal TB in ESRD/cirrhotic patients, and the necessity of peritoneal tissue biopsy. Strict adherence to admission breakpoint."
+}

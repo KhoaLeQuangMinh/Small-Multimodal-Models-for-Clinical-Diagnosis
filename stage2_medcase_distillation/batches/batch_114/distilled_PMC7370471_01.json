@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7370471_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 14-year-old boy presents with an acute febrile illness accompanied by retro-orbital pain, significant plasma leakage (hemoconcentration with 16.7% rise in hematocrit, gallbladder wall thickening, pleural effusion), transaminitis, and precipitous thrombocytopenia. While initially presenting as severe acute viral hemorrhagic fever, the profound thrombocytopenia failed to resolve and persisted for more than 12 months with purpura, mimicking primary autoimmune immune thrombocytopenic purpura (ITP), systemic lupus erythematosus, or an occult bone marrow disorder.\n2. Admission Breakpoint: The breakpoint is positioned at hospital admission on illness day 5 following triage vital signs (tachycardia 140 bpm, BP 100/70 mmHg), physical examination (facial flushing, hepatomegaly, right upper quadrant tenderness), bedside ultrasound (gallbladder wall thickening and pleural effusion), and baseline labs (hematocrit 42% representing a 16.7% hemoconcentration, WBC 2.2 x 10^3/µL, platelets 68 x 10^3/µL, AST 124 U/L, ALT 88 U/L), strictly excluding viral serology (NS1 antigen, IgM, IgG) and subsequent chronic hematological workup.\n3. Differential Distinctions: Primary idiopathic ITP or autoimmune diseases (SLE, antiphospholipid syndrome) typically present without severe acute capillary leak/polyserositis and feature positive autoantibodies (ANA, anti-dsDNA); secondary chronic ITP here was initiated by post-dengue immune mimicry. Aplastic anemia or acute leukemia features marrow dysplasia or blast infiltration, whereas bone marrow examination showed adequate megakaryocytes without cellular abnormalities.",
+  "case_prompt": "A 14-year-old previously healthy boy presented with high fever, headache, generalized body aches, and retro-orbital pain for 5 days. On day 3 of fever, an outpatient complete blood count had revealed a white blood cell count of 5.7 x 10^3/µL and a platelet count of 170 x 10^3/µL. On day 5 of illness, repeat blood counts showed a decline in platelets to 98 x 10^3/µL and white cells to 4.2 x 10^3/µL, accompanied by new-onset vomiting and abdominal pain, prompting acute hospital admission.\n\nOn admission, vital signs revealed a pulse rate of 140 beats per minute, blood pressure of 100/70 mmHg, and a capillary refill time of less than 2 seconds. Physical examination demonstrated generalized flushing, right hypochondrial tenderness, and palpable hepatomegaly 3 cm below the costal margin, without active bleeding manifestations. Bedside point-of-care ultrasonography demonstrated a thickened gallbladder wall and a mild right pleural effusion.\n\nAdmission laboratory evaluation revealed marked leukopenia with a white blood cell count of 2.2 x 10^3/µL, progressive thrombocytopenia with a platelet count of 68 x 10^3/µL, and a hematocrit of 42% (representing a 16.7% increase above his baseline hematocrit of 36%). Liver function tests showed elevated transaminases with an alanine aminotransferase (ALT) of 88 U/L and aspartate aminotransferase (AST) of 124 U/L. Serum electrolytes, renal function tests, and C-reactive protein levels were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Immune Thrombocytopenic Purpura (ITP) / Systemic Lupus Erythematosus",
+      "rule_out_reason": "Considered when profound thrombocytopenia persisted for over 12 months with cutaneous purpura; ruled out as primary autoimmune disease by negative antinuclear antibodies, negative anti-double-stranded DNA, negative antiphospholipid antibodies, and normal complement and immunoglobulin profiles, confirming secondary post-infectious pathogenesis.",
+      "quote": "Anti-nuclear antibody, anti-double standard DNA, and anti-phospholipid antibodies were negative... baseline immunodeficiency screen (serum immunoglobulins and complement levels) was negative."
+    },
+    {
+      "candidate": "Primary Bone Marrow Failure / Leukemia",
+      "rule_out_reason": "Considered due to severe persistent refractory thrombocytopenia requiring long-term evaluation; ruled out by normal peripheral blood cell morphology and a normal bone marrow examination with preserved megakaryopoiesis and absence of dysplasia or blast cells.",
+      "quote": "Blood film showed normal morphology of cells including platelets and showed only thrombocytopenia. Bone marrow examination showed megakaryocytes but was otherwise completely normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Hemorrhagic Fever with Post-Infectious Chronic ITP",
+      "rule_out_reason": "The acute presentation of retro-orbital pain, hemoconcentration, polyserositis (pleural effusion, gallbladder thickening), and severe thrombocytopenia was confirmed by positive NS1 antigen and seroconversion with positive IgM and IgG on day 7; cross-reactive post-infectious immune destruction led to chronic immune thrombocytopenic purpura successfully managed with corticosteroids.",
+      "quote": "Following NS1 antigen was detected positive... Dengue serology including both IgM and IgG were positive on day 7 of illness... confirming the diagnosis of chronic ITP secondary due to dengue infection."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly scrubbed of NS1, Dengue, and serology. Breakpoint established at hospital admission on day 5 with bedside ultrasound and labs."
+}

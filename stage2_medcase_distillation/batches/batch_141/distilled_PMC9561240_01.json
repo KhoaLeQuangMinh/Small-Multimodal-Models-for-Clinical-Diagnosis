@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9561240_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 53-year-old male with profound HIV-associated immunosuppression (CD4 count 10 cells/μL) and long-term residence in an endemic region of southern China presents with fever, chronic diarrhea, severe wasting, generalized lymphadenopathy, and multiple discrete colonic mucosal ulcers. The clinical picture mimics cytomegalovirus colitis, gastrointestinal tuberculosis, or inflammatory bowel disease.\n2. Admission Breakpoint: Initial hospital presentation, baseline labs (anemia, leukopenia, elevated CRP/ESR, hyponatremia), positive HIV antibody with CD4 10 cells/μL, chest CT lymphadenopathy, and colonoscopy demonstrating multiple scattered colonic ulcers, prior to mucosal biopsy histopathology, special fungal stains (PAS/GMS), and viral immunohistochemistry.\n3. Differential Distinctions: Cytomegalovirus (CMV) colitis was considered due to low-level CMV viremia and deep mucosal ulcers in advanced AIDS, but excluded by negative CMV immunohistochemistry and positive fungal histology. Intestinal tuberculosis was considered but ruled out by negative T-SPOT and observation of septate yeast cells. Bacterial colitis and inflammatory bowel disease were considered and treated empirically with cefixime and mesalazine without response.",
+  "case_prompt": "A 53-year-old man from Hubei Province, China, who has resided in Guangdong Province for a long period, is admitted with a one-month history of intermittent high fevers (reaching >39°C), generalized abdominal pain, watery diarrhea, fatigue, anorexia, involuntary weight loss, and mild cough. Two weeks prior to admission, upper gastrointestinal endoscopy revealed chronic non-atrophic gastritis with erosion, fungal esophagitis, and xanthoma of the gastric corpus. On physical examination, his temperature is 37.8°C, heart rate is 107 beats per minute, respiratory rate is 20 breaths per minute, and blood pressure is 117/85 mmHg; the remainder of the examination is unremarkable. Laboratory evaluation demonstrates hemoglobin of 98 g/L, total leukocyte count of 3.17 × 10^9/L with 76.1% neutrophils and absolute neutrophil count of 2.41 × 10^9/L, serum albumin of 26.8 g/L, and prealbumin of 0.062 g/L. Inflammatory markers are elevated, with high-sensitivity C-reactive protein of 78.44 mg/L and erythrocyte sedimentation rate of 73 mm/h. Serum electrolytes reveal hyponatremia (129.0 mmol/L) and hypochloremia (88.8 mmol/L). Anti-HIV antibody testing is positive, with a CD4+ T-cell count of 10 cells/μL (2.16% of total T lymphocytes). Chest computed tomography (CT) reveals thickened, blurred lung markings and multiple enlarged lymph nodes involving bilateral axillary, supraclavicular, abdominal, and retroperitoneal stations. Colonoscopy demonstrates multiple scattered, swollen ulcers with sharp boundaries and adherent surface exudate across the ileocecal region and the ascending, transverse, descending, and sigmoid colon, the largest measuring approximately 1.0 × 1.5 cm in the transverse colon.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cytomegalovirus (CMV) Colitis",
+      "rule_out_reason": "CMV colitis frequently produces discrete mucosal ulcers in advanced AIDS with CD4 < 50 cells/μL, and low-level CMV-DNA was detected; however, immunohistochemical staining of colonic tissue was negative for CMV and revealed fungal yeast cells.",
+      "quote": "Combined with the results of immunohistochemistry, cluster of differentiation (CD) 68(+), pan-cytokeratin(-), CD34(-), S100(-), and CMV(-) confirmed T. marneffei infection."
+    },
+    {
+      "candidate": "Gastrointestinal Tuberculosis",
+      "rule_out_reason": "Mycobacterium tuberculosis is a prominent cause of ileocecal ulceration, lymphadenopathy, and systemic wasting in advanced HIV, but tuberculosis T-SPOT testing was negative and colonic histology revealed septate fungal spores rather than caseating granulomas.",
+      "quote": "The rest of the blood tests, including immunoglobulin, complement 3 (C3) and 4 (C4), hepatic transaminase, creatinine, extractable nuclear antigen, antineutrophil cytoplasmic antibody, and tuberculosis T-SPOT, were within the normal range."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of colonic mucosal biopsies with periodic acid-Schiff (PAS) and Gomori methenamine silver (GMS) stains revealed intracellular short fusiform and sausage-shaped yeast cells with characteristic central transverse septa aggregated within CD68+ histiocytes, establishing intestinal talaromycosis.",
+      "quote": "PAS staining ( Figures 1E, F ) and GMS ( Figures 1G, H ) staining of the intestinal biopsy specimens were positive. Fungal spores with a transverse septum were observed in the tissue cells, which were presented in the form of short fusiform or sausage-shaped spores aggregated into mulberry shapes."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC9561240. Presentation includes admission endoscopy findings but excludes biopsy histopathology, fungal stains, and CMV PCR."
+}

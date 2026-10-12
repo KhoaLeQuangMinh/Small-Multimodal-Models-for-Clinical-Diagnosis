@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3773105_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A subacute 24-day history of high fever and tension-type headache in a middle-aged woman with clear sensorium, normal neurological exam, and absence of classic signs of meningeal irritation or papilledema initially suggests tension headache or mild viral meningoencephalitis, masking progressive tuberculous intracranial hypertension.\n2. Admission Breakpoint: History, vital signs, physical examination, routine laboratory tests, HIV serology, cranial CT scan, and Day 1 lumbar puncture opening pressure and initial CSF cytochemical analysis, stopping prior to empiric antiviral therapy and confirmatory CSF mycobacterial PCR/staining on Day 18.\n3. Differential Distinctions: Viral encephalitis was the initial presumptive diagnosis, but high fever and severe headache persisted despite acyclovir, with subsequent CSF showing rising intracranial pressure and progressive hypoglycorrhachia. Acute bacterial meningitis was excluded by the lymphocytic CSF predominance (98% lymphocytes) and subacute 3-week course. Identification of acid-fast bacilli on Ziehl-Neelsen stain and positive PCR in CSF established tuberculous meningitis.",
+  "case_prompt": "A 50-year-old previously healthy woman presented to the hospital with a 24-day history of persistent fever and headache. She had no history of overseas travel for several years and no known history of pulmonary disease.\n\nOn admission examination, her body temperature was 39.4°C. She complained of a frontal tension-type headache. Her consciousness was clear, and no focal neurologic deficits were identified. Signs of meningeal irritation (meningismus) and papilledema were absent.\n\nRoutine hematologic counts and biochemical analysis were normal, with the exception of a serum glucose of 117 mg/dL. An HIV screening assay was negative. Cranial computed tomography (CT) demonstrated spotty calcification in the pons without hydrocephalus or mass effect.\n\nLumbar puncture performed on day 1 revealed an opening pressure of 220 mmH2O (recorded as mmHg in report). Cerebrospinal fluid (CSF) analysis showed a leukocyte count of 173 cells/mm^3 with 98% lymphocytes, a protein concentration of 160 mg/dL, and a glucose concentration of 40 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral encephalitis / aseptic meningitis",
+      "rule_out_reason": "Initially suspected and treated with intravenous acyclovir, but ruled out due to lack of therapeutic response, escalating intracranial pressure, worsening CSF pleocytosis, and profound hypoglycorrhachia.",
+      "quote": "Intravenous acyclovir (10 mg/kg/day, 17 days) and glycerin (40 mg/day) were started for a suspected diagnosis of viral encephalitis."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial meningitis",
+      "rule_out_reason": "Inconsistent with the 24-day subacute duration, absence of marked nuchal rigidity on admission, and near-pure lymphocytic predominance (98% lymphocytes) rather than neutrophilia in the CSF.",
+      "quote": "Lumbar puncture on day 1 showed an initial pressure of 220 mmHg, 173 white cells/mm3 (98% lymphocytes), a protein concentration of 160 mg/dl, and a glucose concentration of 40 mg/dl."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeated lumbar puncture in the face of refractory intracranial hypertension demonstrated definitive microbiological evidence of Mycobacterium tuberculosis via direct microscopy and nucleic acid amplification.",
+      "quote": "The results of polymerase chain reaction amplification and Ziehl-Neelsen staining were positive for Mycobacterium tuberculosis in cerebrospinal fluid (CSF) on day 18."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9167476_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old female presents with subacute progressive dysphagia, anorexia, significant involuntary weight loss, and low-grade fevers, found to have a large 3-cm mid-esophageal ulcer with a central fistula. The critical diagnostic tension lies in distinguishing esophageal squamous cell carcinoma or esophageal Crohn's disease from secondary esophageal involvement by mediastinal lymph node erosion in miliary tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs following clinical assessment, baseline laboratory tests, esophagogastroduodenoscopy (EGD) showing the mid-esophageal fistulizing ulcer, and chest CT demonstrating mediastinal adenopathy and pulmonary micronodules, prior to histopathological biopsy interpretation and sputum acid-fast bacilli staining.\n3. Differential Distinctions: Esophageal malignancy (squamous cell carcinoma) is the foremost consideration for progressive dysphagia with large ulcerative esophageal lesions and profound weight loss in a 55-year-old, but biopsy demonstrates granulomas without malignant cytopathology. Esophageal Crohn's disease can present with non-caseating granulomatous ulcers and fistulae, but does not present with diffuse pulmonary miliary micronodules, necrotic mediastinal lymphadenopathy, or positive sputum acid-fast bacilli.",
+  "case_prompt": "A 55-year-old woman without significant past medical history presents with a 3-month history of progressive dysphagia, initially for solid foods and subsequently for both liquids and solids. She reports an intentional or unintentional 10-kg weight loss, loss of appetite, and intermittent fever. She reports no chest pain, dyspnea, coughing episodes, nausea, vomiting, or hematemesis.\nOn physical examination, temperature is 37.8°C, blood pressure is 130/80 mmHg, and heart rate is 80 beats per minute. The abdomen is soft without palpable masses or hepatosplenomegaly. The remainder of the examination is normal.\nAdmission blood investigations reveal lymphocytosis with an elevated erythrocyte sedimentation rate (ESR).\nEsophagogastroduodenoscopy (EGD) reveals a large ulcer measuring 3 cm in diameter in the middle third of the esophagus with a fistula opening in the center of the ulcer. Computed tomography (CT) scan of the chest reveals a fistula of the middle third of the esophagus without signs of mediastinitis, multiple mediastinal necrotic adenopathies, and diffuse pulmonary micronodules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Esophageal carcinoma / Malignant esophageal ulcer",
+      "rule_out_reason": "Progressive dysphagia, a 10-kg weight loss, and a large 3-cm esophageal ulcer in a 55-year-old strongly raised suspicion for esophageal cancer; however, endoscopic biopsies showed granulomatous inflammation without cellular atypia or malignancy, and chest CT revealed diffuse pulmonary micronodules rather than primary esophageal tumor mass.",
+      "quote": "Multiple biopsies were taken from the lesion. Histopathological examination revealed epithelioid cell granulomas without caseous necrosis. No evidence of malignancy and no acid-fast bacilli have been seen."
+    },
+    {
+      "candidate": "Esophageal Crohn's disease / Idiopathic fistulizing esophagitis",
+      "rule_out_reason": "Although mucosal ulceration with a fistula tract and epithelioid cell granulomas without caseation can mimic esophageal Crohn's disease, Crohn's disease does not typically manifest with widespread necrotic mediastinal adenopathy or diffuse bilateral pulmonary micronodules, and sputum testing demonstrated acid-fast bacilli.",
+      "quote": "Histopathological examination revealed epithelioid cell granulomas without caseous necrosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Chest CT imaging demonstrating necrotic mediastinal lymphadenopathy eroding into the esophagus and diffuse miliary pulmonary micronodules, corroborated by a positive sputum smear for acid-fast bacilli.",
+      "quote": "We completed with computed tomography (CT) scan of the chest which revealed a fistula of the middle third of the esophagus without signs of mediastinitis, multiple mediastinal necrotic adenopathies and diffuse pulmonary micronodules suggesting miliary tuberculosis (Figure 2). Sputum examination for acid-fast-bacilli was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Classic presentation of secondary esophageal tuberculosis presenting with dysphagia and mimicking esophageal carcinoma. Strict breakpoint stopping before biopsy histology and sputum AFB staining."
+}

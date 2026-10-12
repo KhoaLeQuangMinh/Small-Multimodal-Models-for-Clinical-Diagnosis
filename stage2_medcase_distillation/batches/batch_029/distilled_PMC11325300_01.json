@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11325300_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 20-year-old postpartum woman presenting 17 days after an uncomplicated vaginal delivery with high fever, acute generalized peritonitis, leukocytosis, and septated peritoneal fluid on ultrasound, mimicking common puerperal/surgical causes of peritonitis (postpartum endometritis with pelvic peritonitis or perforated appendicitis), but caused by spontaneous rupture of an unrecognized hepatic hydatid cyst.\n2. Admission Breakpoint: Stops after emergency department presentation, toxic appearance with high fever (38.9 C) and peritonitic exam, triage laboratory findings (leukocytosis of 18,500/mm^3, absolute eosinophilia of 980/mm^3, elevated CRP, mild transaminitis), and bedside abdominal ultrasound demonstrating septated free peritoneal fluid with debris, before contrast CT scan or emergency laparotomy.\n3. Differential Distinctions: Postpartum puerperal sepsis / endometritis with peritonitis presents with acute fever and abdominal tenderness within weeks of delivery, but typically involves foul lochia, uterine tenderness, and pelvic localization rather than a hepatic cystic source. Perforated appendicitis or viscus causes generalized peritonitis and leukocytosis, but lacks peripheral eosinophilia and shows gastrointestinal pathology. Ruptured hepatic hydatid cyst causes acute peritonism from peritoneal contamination with scolicidal cyst fluid, characteristically associated with eosinophilia and serpentine intracavitary structures on cross-sectional imaging.",
+  "case_prompt": "A 20-year-old woman, gravida 1, para 1, presented to the emergency department with complaints of severe abdominal pain, abdominal distension, and high fever. She had delivered a healthy infant via uncomplicated vaginal delivery 17 days prior. She reported the onset of mild abdominal discomfort beginning approximately 2 weeks postpartum, which progressively worsened over subsequent days. She had no prior medical history and no known hepatobiliary disease, and denied any history of abdominal trauma or recent travel. On physical examination, she appeared acutely ill, with a body temperature of 38.9 C, blood pressure of 120/60 mmHg, and heart rate of 108 beats per minute. Abdominal examination revealed marked tenderness, voluntary and involuntary guarding, and diffuse rebound tenderness throughout the abdomen. No urticaria, facial edema, or allergy-related symptoms were noted. Laboratory investigations showed a leukocytosis of 18,500/mm^3 with neutrophil predominance, an absolute eosinophil count of 980/mm^3 (5.3% of total white blood cells), elevated C-reactive protein (CRP), and mild transaminitis. Bedside abdominal ultrasonography revealed free fluid in the peritoneal cavity with multiple internal septations and debris, suggestive of peritonitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Puerperal sepsis / Postpartum endometritis with secondary peritonitis",
+      "rule_out_reason": "Initial primary suspicion for acute fever and peritonitis presenting 2 weeks after vaginal delivery. Ruled out by the absence of uterine tenderness or lochial foul odor, peripheral eosinophilia, and discovery of a ruptured left hepatic lobe cystic source.",
+      "quote": "She had delivered a healthy baby boy vaginally 17 days prior. The patient reported the onset of abdominal discomfort 2 weeks of postpartum, which progressively worsened."
+    },
+    {
+      "candidate": "Perforated acute appendicitis / Perforated hollow viscus",
+      "rule_out_reason": "Considered due to acute surgical peritonitis with diffuse guarding and rebound tenderness in a previously healthy young adult. Ruled out by cross-sectional imaging and laparotomy confirming normal bowel and a collapsed cystic lesion in segment II of the liver.",
+      "quote": "An abdominal ultrasound revealed free fluid in the peritoneal cavity with multiple septations and debris, suggestive of peritonitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast-enhanced CT scan demonstrating a collapsed peripheral cystic lesion in segment II of the liver with thick enhancing walls, a parietal defect, and serpentine structures spilling into the peritoneal cavity, confirmed at emergency laparotomy with hydatid cyst contents and serous fluid.",
+      "quote": "A contrast-enhanced CT scan of the abdomen and pelvis was performed, revealing a peripheral superficial collapsed cystic lesion in the left lobe (II segment) of the liver that has lost its spherical shape, with thick enhancing walls and a parietal defect, consistent with a ruptured hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt stops cleanly at bedside ultrasound and initial triage labs, preserving complete diagnostic tension. Zero mentions of hydatid, echinococcus, or parasite. Verbatim quotes match article text."
+}

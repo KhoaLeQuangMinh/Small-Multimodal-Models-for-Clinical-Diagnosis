@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3037856_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 6-year-old immigrant boy from Cameroon presents in status epilepticus lasting over 30 minutes with focal neurological signs (head and gaze deviation, right hemiclonic convulsions) refractory to rectal diazepam. In a child presenting in a developed country with a remote history of an isolated febrile seizure, distinguishing idiopathic status epilepticus or acute encephalitis from an imported central nervous system parasitic infection is a critical diagnostic challenge.\n2. Admission Breakpoint: The breakpoint is positioned following emergency resuscitation, admission EEG demonstrating asymmetric focal left slowing, and urgent brain MRI showing two parenchymal cystic lesions, prior to peripheral eosinophil/IgE quantification and confirmatory Western blot serology.\n3. Differential Distinctions: Idiopathic status epilepticus or recurrent complex febrile seizure was considered given an isolated convulsion at age 1, but excluded by the focal clinical presentation (gaze deviation, right hemiclonic jerking), initial benzodiazepine resistance, asymmetric EEG focal slowing, and intracranial lesions on MRI. Acute viral encephalitis or toxic ingestion was excluded by the absence of preceding fever, infection, or ingestions. MRI revealing two cystic lesions in the basal ganglia and frontoparietal cortex, alongside specific Western blot serology, confirmed neurocysticercosis.",
+  "case_prompt": "A 6-year-old boy who was born and lived in rural Cameroon for four years before immigrating to Italy two years prior was brought to the Emergency Department in status epilepticus lasting over 30 minutes, which had failed to terminate following rectal diazepam (0.5 mg/kg). At one year of age, he had experienced an isolated febrile seizure with oculogyric crisis. He had no recent history of trauma, infectious symptoms, weight loss, or toxin/drug ingestions, and no family history of epilepsy or headaches.\n\nOn the morning of admission, he woke up with speech difficulty, right facial deviation, rightward head and gaze deviation, followed by right hemiclonic convulsions and loss of consciousness.\n\nOn arrival, he was afebrile and unconscious, with tachycardia and respiratory distress. His head remained deviated to the right, and physical examination revealed generalized hypertonia with hyperextension of the right arm and flexion of the left arm.\n\nAn emergency electroencephalogram (EEG) demonstrated slow mono-polymorphic activity localized over the left and central leads, which was absent on the right leads, consistent with focal cerebral dysfunction. Brain magnetic resonance imaging (MRI) revealed two round cystic parenchymal lesions: one in the right lentiform nucleus and one in the left frontoparietal lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Status Epilepticus / Recurrent Febrile Seizure",
+      "rule_out_reason": "Considered given the prior history of an isolated febrile seizure at age 1, but excluded by focal semiology (right head and gaze deviation, right hemiclonic jerks), focal EEG slowing over left leads, and distinct structural parenchymal cysts on brain MRI.",
+      "quote": "The electroencephalogram (EEG) detected a slow mono-polymorphic activity on the left and central electroencephalographic leads. This activity was absent on the right leads."
+    },
+    {
+      "candidate": "Acute Viral Encephalitis / Accidental Toxic Ingestion",
+      "rule_out_reason": "Considered in a child with sudden onset of prolonged seizure, coma, and respiratory compromise, but the child was afebrile without preceding systemic infection, trauma, or toxic exposure.",
+      "quote": "He had no recent history of traumatic or infective episodes, neither ingestion of drugs or weight loss."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Brain MRI demonstrated two distinct round cystic lesions in the right lentiform nucleus and left frontoparietal lobe, and serological evaluation confirmed specific anticysticercal antibodies by Western blot assay.",
+      "quote": "Western blot assay detected specific antibodies against cysticercus (LDBIO DIAGNOSTICS, Lyon, France)."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly preserves admission status epilepticus and emergency neuroimaging findings. Serologic Western blot assay and parasite identification isolated to diagnostic reasoning."
+}

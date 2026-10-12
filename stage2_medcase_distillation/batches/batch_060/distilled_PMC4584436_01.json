@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4584436_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 28-year-old man without cardiovascular risk factors or history of intravascular intervention presenting with chronic wasting, low-grade fever, dizziness, marked leukocytosis (20,000/mm3), and a pulsatile abdominal mass demonstrated on angiography to be multiple saccular aneurysms of the abdominal aorta intimately embedded within extensive, conglomerate, necrotic retroperitoneal and peripancreatic lymphadenopathy. The primary diagnostic tension is distinguishing an infectious (mycotic) aortic aneurysm caused by acute bacterial sepsis (such as Salmonella, Staphylococcus, or Gram-negative bacilli) or fungal invasion from retroperitoneal lymphoma, gastrointestinal malignancy, systemic large-vessel vasculitis, and tuberculous aortitis/contiguous caseous nodal erosion.\n2. Admission Breakpoint: Admission triage ends following physical examination (fever of 38°C and palpable pulsatile abdominal mass), baseline laboratory evaluation (leukocytosis and elevated CRP), abdominal ultrasound with Doppler, and multi-detector CT angiography (documenting suprarenal and infrarenal saccular aortic aneurysms and extensive necrotic para-aortic lymphadenopathy), immediately prior to tuberculin skin testing, serial blood cultures, and ultrasound-guided core lymph node biopsy.\n3. Differential Distinctions: Pyogenic bacterial pathogens (particularly Salmonella and Staphylococcus) are the leading causes of infected aortic aneurysms, but are excluded by sterile microbial blood cultures. Fungal vascular infection is excluded by negative fungal blood cultures. Retroperitoneal lymphoma and gastrointestinal malignancy are ruled out by absence of discrete neoplastic mass lesions or bowel wall thickening on CT and by core biopsy findings. Tuberculous mycotic aneurysm is confirmed by core needle biopsy of the peri-aneurysmal retroperitoneal lymph node revealing caseous necrosis with epithelioid histiocytes.",
+  "case_prompt": "A 28-year-old Indian male presents with a 1-month history of progressive weakness, loss of appetite, dizziness, involuntary weight loss, and low-grade fever, accompanied by a noticeable pulsatile mass in the abdomen. He is normotensive, a non-smoker, and non-diabetic, with no history of previous intravascular catheterization or surgical procedures.\n\nOn physical examination, his body temperature is 38.0°C and he has a distinct, tender pulsatile mass in the periumbilical abdominal region.\n\nBaseline laboratory evaluation reveals a significant leukocytosis with a white blood cell count of 20,000/mm3 (reference range 3,000–11,000) and an elevated C-reactive protein.\n\nAbdominal ultrasonography reveals mild hepatosplenomegaly and multiple significantly enlarged, heterogeneous, necrotic, conglomerate retroperitoneal lymph nodes involving the periportal and peripancreatic regions. Color Doppler interrogation demonstrates multiple variable-sized aneurysms of the abdominal aorta with central pulsatile turbulent flow and peripheral laminated thrombus. Contrast-enhanced computed tomographic angiography of the abdomen reveals two distinct saccular aneurysms with thin, irregular walls arising from the abdominal aorta: a suprarenal aneurysm measuring 5.2 × 2.5 cm and an infrarenal aneurysm measuring 4.5 × 4.0 cm, with near-total compression of the right renal artery producing chronic ischemic renal parenchymal changes. Multiple enlarged necrotic para-aortic lymph nodes (up to 2.8 cm in short axis) are identified immediately adjacent to the aneurysmal walls. Computed tomographic screening of the thorax is unremarkable, and no abnormal bowel wall thickening or discrete gastrointestinal masses are observed.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Mycotic Aneurysm (Staphylococcus, Streptococcus, Salmonella, Gram-Negative Bacilli)",
+      "rule_out_reason": "Considered the primary diagnostic possibility for an infected saccular aortic aneurysm in a young adult, but ruled out by repeatedly sterile microbial blood cultures.",
+      "quote": "Blood culture result was negative for Staphylococcus and Streptococcus species, Salmonella, Gram-negative bacteria, such as Escherichia coli, Klebsiella, and Pseudomonas mycobacterium, and fungi, such as C. albicans and Aspergillus."
+    },
+    {
+      "candidate": "Fungal Mycotic Aneurysm (Candida albicans, Aspergillus)",
+      "rule_out_reason": "Considered as an opportunistic fungal cause of infective aortitis and aneurysmal degeneration, but excluded by negative fungal blood cultures.",
+      "quote": "Blood culture result was negative for Staphylococcus and Streptococcus species, Salmonella, Gram-negative bacteria, such as Escherichia coli, Klebsiella, and Pseudomonas mycobacterium, and fungi, such as C. albicans and Aspergillus."
+    },
+    {
+      "candidate": "Retroperitoneal Malignancy or Gastrointestinal Lymphoma",
+      "rule_out_reason": "Considered in the differential diagnosis of extensive conglomerate necrotic retroperitoneal lymphadenopathy and marked constitutional decline, but ruled out by lack of primary neoplastic mass lesions or bowel involvement on CT angiography and absence of neoplastic cells on histology.",
+      "quote": "No evidence of any abnormally enhancing mass lesion or bowel wall thickening could be identified."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided core needle biopsy of the enlarged peri-aneurysmal retroperitoneal lymph node revealed classic central caseous necrosis with epithelioid cells and macrophages, confirming a tuberculous etiology.",
+      "quote": "The lymph node biopsy revealed central caseous necrotic material with epithelioid cells and macrophages consistent with tubercular etiology [Figure 5]. Based on the biopsy results, a presumptive diagnosis of tubercular aneurysm was made, and the patient was put on anti-tubercular treatment and advised surgical management of abdominal aortic aneurysms."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial Day 1 presentation (fever, pulsatile abdominal mass, weight loss, triage leukocytosis and CRP, abdominal ultrasound and CT angiography revealing saccular aortic aneurysms and necrotic retroperitoneal adenopathy) strictly before tuberculin testing, blood cultures, or lymph node biopsy. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

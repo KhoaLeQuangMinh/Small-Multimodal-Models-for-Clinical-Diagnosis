@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9508359_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 16-year-old girl presents with new-onset generalized tonic-clonic seizures and a chronic unilateral headache, found to harbor a solitary, massive (5 cm) intracranial cystic mass with marked midline shift. The clinical challenge is recognizing a primary solitary cerebral parasitic cyst in the complete absence of typical visceral involvement (clear liver ultrasound and clear chest radiograph).\n2. Admission Breakpoint: The admission breakpoint occurs following admission evaluation, neurological and physical examination, initial laboratory tests (liver enzymes), triage imaging (chest X-ray, abdominal ultrasound), and neuroimaging (brain MRI with contrast and MRS), immediately prior to craniotomy and histopathological examination.\n3. Differential Distinctions: Brain abscess presents with peripheral contrast enhancement, perilesional edema, and lipid-lactate peaks on MRS, but patients typically exhibit constitutional symptoms, fever, or infectious source. High-grade cystic glial neoplasms or cystic neurocysticercosis cause intracranial mass lesions in young individuals, but neurocysticercosis cysts are typically smaller and glial neoplasms lack internal daughter cysts.",
+  "case_prompt": "A 16-year-old female residing in the Vidarbha region of Maharashtra presents to a rural hospital following two episodes of generalized tonic-clonic seizures. She reports a 1-year history of persistent left-sided headaches. She denies abdominal pain, nausea, vomiting, shortness of breath, fever, or prior trauma.\n\nOn physical examination, her vital signs are normal. General physical and comprehensive systemic neurological examinations are completely unremarkable, with no focal motor deficits, cranial nerve palsies, or cutaneous lesions.\n\nBaseline laboratory evaluation, including serum liver enzymes, is within normal limits. A screening chest radiograph and abdominal ultrasonography demonstrate no focal parenchymal lesions or cysts in the lungs or liver. Magnetic resonance imaging (MRI) of the brain with intravenous contrast reveals a well-defined, peripherally enhancing rounded predominantly cystic lesion measuring 5.0 cm × 4.9 cm × 4.8 cm in the left frontotemporal region, containing multiple smaller internal daughter cysts. Significant perilesional edema produces mass effect with compression and effacement of the left lateral ventricle and a midline shift of 9 mm. Magnetic resonance spectroscopy (MRS) of the lesion demonstrates elevated lipid and lactate peaks.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Brain Abscess",
+      "rule_out_reason": "A ring-enhancing cystic intracranial lesion with extensive perilesional edema, 9 mm midline shift, and high lipid-lactate peak on MRS raised immediate concern for an encapsulated cerebral abscess; however, the patient was completely afebrile, systemic exam was unremarkable, inflammatory markers and visceral scans were clear, and the internal architecture revealed multivesicular daughter cysts rather than purulent fluid.",
+      "quote": "MRS shows increased lipid lactate in the lesion. Liver enzymes, chest X-ray and USG abdomen showed no evidence of any lung or liver hydatid lesions (Figure 2)."
+    },
+    {
+      "candidate": "Cystic Brain Neoplasm (Astrocytoma / Neuroglial Tumor)",
+      "rule_out_reason": "A 5 cm mass producing chronic headache, new-onset seizures, ventricular effacement, and subfalcine herniation in a teenager strongly mimics a primary cystic neoplasm; however, classic daughter cyst architecture within a large unilocular mother cyst on neuroimaging was characteristic of parasitic hydatid disease.",
+      "quote": "MRI of brain with contrast showed well-defined peripherally enhancing rounded predominantly cystic lesion of size 5 x 4.9 x 4.8 cm in left fronto-temporal region with multiple daughter cysts within a large cyst suggestive of intra-cerebral hydatid cyst."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Left frontotemporal craniotomy with surgical identification and excision of the multivesicular cyst, followed by definitive histopathological examination confirming a hydatid cyst.",
+      "quote": "The sample was sent for histopathological examination, which confirmed it as a hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9508359_02. Craniotomy, operative rupture, and histopathology strictly withheld from case_prompt. Direct quotes match article text."
+}

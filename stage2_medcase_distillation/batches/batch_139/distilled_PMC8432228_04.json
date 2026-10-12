@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8432228_04",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 9-year-old child with autoimmune hepatitis on chronic immunosuppressive therapy (prednisone and azathioprine) presents with prolonged fever, polyarthralgia, jaundice, and hepatosplenomegaly. In a patient with known autoimmune hepatitis, worsening jaundice and hepatomegaly typically suggest an autoimmune relapse or azathioprine-induced hepatotoxicity, while the underlying infection triggers secondary hemophagocytic syndrome.\n2. Admission Breakpoint: Clinical evaluation ends following admission history, exam (pallor, jaundice, hepatosplenomegaly), and baseline labs (hyperferritinemia, hypertriglyceridemia, hypofibrinogenemia), immediately prior to rK39 antigen testing and antiparasitic therapy.\n3. Differential Distinctions: Acute flare of autoimmune hepatitis or azathioprine toxicity can cause jaundice and liver enlargement, but does not explain the combination of 12-day fever, polyarthralgia, and classic HLH triad (hyperferritinemia, hypertriglyceridemia, and hypofibrinogenemia). Febrile neutropenia / bacterial sepsis in an immunosuppressed host was managed empirically with cefepime, but the underlying driver was visceral leishmaniasis.",
+  "case_prompt": "A 9-year-old male child with a history of autoimmune hepatitis treated with maintenance prednisone, azathioprine, and vitamin D was admitted with fever and headache of 12 days' duration associated with polyarthralgia. Physical examination revealed pallor, marked hepatosplenomegaly, and jaundice. Initial laboratory evaluation revealed significantly elevated serum ferritin, hypertriglyceridemia, and hypofibrinogenemia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune Hepatitis Relapse / Azathioprine Hepatotoxicity",
+      "rule_out_reason": "Because the patient had pre-existing autoimmune hepatitis on immunosuppressants, new jaundice and hepatosplenomegaly were initially suspected to represent an autoimmune relapse or drug toxicity; however, the presence of persistent fever, polyarthralgia, and markers of secondary hemophagocytic syndrome (hyperferritinemia, hypertriglyceridemia, hypofibrinogenemia) indicated an infectious driver.",
+      "quote": "He had autoimmune hepatitis treated with prednisone, azathioprine, and vitamin D. He was pale with hepatosplenomegaly and jaundice."
+    },
+    {
+      "candidate": "Opportunistic Bacterial Sepsis / Febrile Neutropenia",
+      "rule_out_reason": "Febrile neutropenia in a chronically immunosuppressed child prompted empiric broad-spectrum antibiotic coverage with cefepime; however, the primary infectious pathogen was a protozoan parasite, and the patient improved definitively once antileishmanial treatment was administered.",
+      "quote": "Because of the febrile neutropenia in an immunosuppressed patient, cefepime was started on day 5."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred on day 2 when an immunochromatographic rapid test with rK39 antigen returned positive for visceral leishmaniasis with hemophagocytic syndrome, successfully treated with liposomal amphotericin B.",
+      "quote": "On day 2, the patient was diagnosed with VL by means of an immunochromatographic rapid test with rK39 antigen and hemophagocytic syndrome and lipossomal amphotericin was started."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

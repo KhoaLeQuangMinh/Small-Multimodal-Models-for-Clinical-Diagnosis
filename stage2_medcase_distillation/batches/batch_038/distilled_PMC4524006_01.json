@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4524006_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 8-year-old boy presenting with symptoms of intracranial hypertension (headaches, vomiting, low-grade intermittent fever) and multiple large intracranial cysts on brain MRI, without focal neurological deficits, peripheral eosinophilia, or extracranial cystic lesions in the liver or lungs on abdominal ultrasound and chest radiograph.\n2. Admission Breakpoint: Triage and preoperative workup following presentation, baseline laboratory investigations, normal chest radiograph and abdominal ultrasound, and brain MRI showing multiple right frontal intracranial cysts with mass effect, prior to craniotomy, cyst delivery, and histopathological analysis.\n3. Differential Distinctions: Bacterial or pyogenic brain abscess is ruled out by the lack of surrounding inflammatory reaction or systemic signs, and sterile intraoperative culture; neurocysticercosis and cystic astrocytoma present with multiseptated or single parenchymal cystic lesions, but neurocysticercosis typically demonstrates smaller cysts with scoleces and calcifications, whereas hydatid disease typically forms spherical unilocular or multivesicular cysts containing numerous daughter cysts, confirmed by histopathology without bacterial growth.",
+  "case_prompt": "An 8-year-old boy presents to the emergency department with a 20-day history of progressively worsening headaches, vomiting, and intermittent fever. On physical examination, he appears well, and both general physical and detailed neurological examinations are completely normal. Baseline routine laboratory tests, including complete blood count and peripheral eosinophil count, are normal. A plain chest radiograph and abdominal ultrasound show no focal abnormalities or organomegaly. Magnetic resonance imaging (MRI) of the brain reveals multiple intracranial cysts located predominantly in the right frontal region, associated with significant mass effect.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic / Bacterial Brain Abscess",
+      "rule_out_reason": "Bacterial brain abscess was considered given the subacute presentation with headaches, vomiting, and intermittent fever; however, routine inflammatory markers and eosinophil counts were normal, and operative cultures failed to isolate any infectious bacterial pathogen.",
+      "quote": "Histopathological examination confirmed hydatid cyst and no bacterial agent was isolated."
+    },
+    {
+      "candidate": "Neurocysticercosis / Primary Cystic Brain Tumor",
+      "rule_out_reason": "Intracranial cystic lesions in pediatric patients typically raise suspicion for neurocysticercosis, cystic astrocytoma, or arachnoid cysts; however, the absence of perilesional edema, scolex identification, or solid mural neoplastic nodules, along with the operative finding of multiple spherical unruptured daughter cysts, excluded primary neoplasm.",
+      "quote": "A magnetic resonance imaging (MRI) brain was performed which showed multiple intracranial cysts predominantly in the right frontal region with significant mass effect [Figure 1]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Frontoparietal craniotomy using Dowling's technique allowed delivery of a huge intracranial cyst and 19 intact daughter cysts without rupture, with definitive histopathological examination confirming the diagnosis of cerebral hydatid cysts.",
+      "quote": "We were able to remove all of the 19 cysts without rupturing the cyst capsule this way. An endoscope was used after removing all the cysts to make sure that none of the daughter cysts was left behind... Histopathological examination confirmed hydatid cyst and no bacterial agent was isolated."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following strict Stanford MedCaseReasoning criteria. Breakpoint stops at the completion of initial neuroimaging and triage laboratories before craniotomy or surgical delivery of the cysts. Rule-outs include pyogenic brain abscess and neurocysticercosis/cystic neoplasms, quoting exact text."
+}

@@ -52,11 +52,11 @@ It implements the **Clinician's Dual-Brain Architecture** (grounded in cognitive
 - [ ] **1.4** Ingest the 22 canonical guides into LightRAG to construct the clean, noise-free Semantic Knowledge Graph.
 
 ### Stage 2: MedCaseReasoning Distillation & Vector Case Memory (Episodic Brain)
-- [ ] **2.1** Inspect the 1,427 training cohort cases in `train_kg_cases.jsonl`.
-- [ ] **2.2** Finalize the Gemini Flash distillation prompt with the **Admission-Phase Temporal Constraint**.
-- [ ] **2.3** Run batch distillation to convert 1,427 raw cases into `train_medcase_profiles.jsonl`.
-- [ ] **2.4** Compute dense embeddings (`all-MiniLM-L6-v2`) and build the fast vector retrieval index (`train_medcase_embeddings.npy`).
-- [ ] **2.5** Unit test "Patient Twin" lookup to verify relevant real-world case matching in < 5ms.
+- [x] **2.1** Inspect the 1,427 training cohort cases in `train_kg_cases.jsonl`.
+- [x] **2.2** Finalize the Gemini Flash distillation prompt with the **Admission-Phase Temporal Constraint**.
+- [x] **2.3** Run batch distillation to convert 1,427 raw cases into `train_medcase_profiles.jsonl`.
+- [x] **2.4** Compute dense embeddings (`NeuML/pubmedbert-base-embeddings`) and build the fast vector retrieval index (`train_medcase_embeddings.npy`).
+- [x] **2.5** Unit test "Patient Twin" lookup to verify relevant real-world case matching in < 5ms.
 
 ### Stage 3: Graph Evaluation & Generic Term Weight Discounting
 - [ ] **3.1** Export and analyze node degree distribution from the canonical LightRAG graph.

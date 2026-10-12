@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11095243_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 29-year-old traveler returning from Central Africa presents with cyclic fevers, nocturnal sweats, leukopenia, and thrombocytopenia. The clinical tension involves navigating false-negative initial smears, a misidentification of the species as Plasmodium vivax on routine thick film, and failure of standard quad-species PCR assays due to genetic variation in Plasmodium ovale wallikeri.\n2. Admission Breakpoint: The breakpoint is set at the second hospital admission after vital signs, physical exam, and routine hematologic/biochemical laboratory panels (showing leukopenia and thrombocytopenia), immediately before repeat thick/thin blood smears and molecular assays are performed.\n3. Differential Distinctions: Dengue fever was considered given acute fever, thrombocytopenia, and leukopenia in an endemic area, but excluded by negative serology. Misidentification of Plasmodium vivax on routine thick smear was ruled out by reference microscopy and failure of species-specific primers. Amplification using variant-specific primers and sequencing confirmed Plasmodium ovale wallikeri.",
+  "case_prompt": "A 29-year-old Colombian male presented to a hospital in Bogotá with a 10-day history of recurrent spiking fevers reaching 39°C, accompanied by nocturnal diaphoresis, exertional dyspnea, and profound muscle weakness. He had returned 10 days prior from a journey to Douala, Cameroon, in Central Africa, and noted that three of his travel companions had recently developed diagnosed tropical febrile illnesses. Several days prior to this evaluation, he had visited another clinic where an initial complete blood count was reported as normal, two preliminary blood smears for parasites were reported as negative, and acute arboviral serologies were negative. He was treated symptomatically with metamizole and paracetamol without clinical improvement.\n\nOn admission to the second hospital, he was alert and oriented with a Glasgow Coma Scale score of 15/15. Vital signs revealed a temperature of 37.1°C, a blood pressure of 110/62 mmHg, sinus tachycardia with a heart rate of 129 beats/min, a respiratory rate of 20 breaths/min, and an oxygen saturation of 96% while breathing ambient air. Physical examination was otherwise unremarkable. Laboratory evaluation revealed leukopenia with a white blood cell count of 3,650/µL (81.4% neutrophils, 11.8% lymphocytes), thrombocytopenia with a platelet count of 76,000/µL, a hematocrit of 42.8%, and a hemoglobin concentration of 15.4 g/dL. Serum total bilirubin was 0.67 mg/dL (direct 0.24 mg/dL, indirect 0.43 mg/dL), serum creatinine was 0.62 mg/dL, aspartate aminotransferase (AST) was 19 U/L, and alanine aminotransferase (ALT) was 20 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue Fever",
+      "rule_out_reason": "Considered early during initial outpatient evaluation in a febrile traveler with leukopenia and thrombocytopenia, but ruled out by negative dengue antibody testing.",
+      "quote": "The patient had visited another private hospital several days earlier, where he had a normal hemogram, two negative malaria thick blood smears, and a negative test for dengue antibodies."
+    },
+    {
+      "candidate": "Plasmodium vivax Malaria",
+      "rule_out_reason": "Initial hospital thick blood smear was misidentified as P. vivax with gametocytes, but subsequent reference microscopy and standard species-specific PCR failed to demonstrate P. vivax DNA.",
+      "quote": "Lastly, the thick blood smear was positive for P. vivax (2,190/muL parasite count) and revealed the presence of gametocytes... Although the patient's sample was positive in the first reaction, indicating the presence of Plasmodium, no amplification for any of the four species was obtained in the second PCR"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Reference laboratory microscopy and subsequent variant-specific PCR with Sanger sequencing confirmed Plasmodium ovale wallikeri displaying 99% homology.",
+      "quote": "Therefore, an aliquot of the extracted DNA was sent to the Universidad El Bosque, where a PCR assay for P. ovale wallikeri was performed as described by Calderaro et al... revealing 99% homology with P. ovale wallikeri sequences."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Zero pathogen leaks before the breakpoint. Differential and pivot fully referenced with exact quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6670196_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 34-year-old Ethiopian woman presenting with prolonged (5-6 years) secondary amenorrhea and infertility following an open abdominal myomectomy performed 8 years earlier. While hormonal testing indicates preserved ovulatory function despite reduced ovarian reserve and hysterosalpingography shows bilateral tubal occlusion, the clinical tension is distinguishing between post-surgical intrauterine adhesions (iatrogenic Asherman's syndrome secondary to myomectomy), primary ovarian insufficiency, and chronic pelvic/genital tuberculosis causing end-organ endometrial destruction and tubal scarring.\n2. Admission Breakpoint: Initial outpatient clinical consultation and infertility workup including medical/surgical history, endocrine laboratory profile, transvaginal pelvic ultrasonography, hysterosalpingography, and plain chest radiography. Confirmatory diagnostic hysteroscopy, endometrial curettage histopathology, acid-fast staining, and mycobacterial culture begin after this point.\n3. Differential Distinctions: Premature ovarian insufficiency was ruled out by normal serum gonadotropins (FSH, LH), estradiol, and progesterone confirming preserved ovulatory cycles, localizing pathology to the uterus. Post-surgical Asherman's syndrome was ruled out by hysteroscopy showing an absence of dense fibrous adhesions and instead demonstrating mottled endometrium. Definitive pelvic tuberculosis was confirmed by endometrial biopsy demonstrating necrotizing granulomas with acid-fast bacilli and positive culture for Mycobacterium tuberculosis.",
+  "case_prompt": "A 34-year-old non-obese Ethiopian woman (para 0) presented for medical evaluation after experiencing prolonged secondary amenorrhea and infertility of 5 to 6 years' duration. She had no other significant past medical history. Her surgical history was notable for an open abdominal myomectomy via Pfannenstiel incision performed in Ethiopia in 2009 for subserosal uterine fibroids. She had immigrated to the United States in 2010. Family history was notable for an older sister who had been treated for a chronic pulmonary mycobacterial infection 20 years earlier; no other family members had received similar treatment.\nPhysical and pelvic examinations were unremarkable. A comprehensive hormonal evaluation was performed to assess the hypothalamic-pituitary-ovarian axis. The anti-Müllerian hormone (AMH) level was low at 0.61 ng/mL, indicating diminished ovarian reserve; however, serum levels of thyroid-stimulating hormone (TSH), prolactin, follicle-stimulating hormone (FSH), luteinizing hormone (LH), estradiol, and progesterone were normal, indicating preserved follicular maturation and recent ovulation, pointing toward a uterine end-organ pathology.\nPelvic ultrasonography demonstrated a uterus measuring 7.5 x 3.5 x 6.2 cm with an unremarkable myometrium and a uniform endometrial stripe measuring 4 mm. Hysterosalpingography demonstrated no opacification of the left fallopian tube and an absence of intraperitoneal free contrast spill from the right fallopian tube, indicating bilateral tubal occlusion. A plain chest radiograph showed no evidence of active pulmonary disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary ovarian insufficiency / Hypothalamic-pituitary anovulation",
+      "rule_out_reason": "Considered because of prolonged secondary amenorrhea and low anti-Müllerian hormone (AMH 0.61). However, normal serum gonadotropins (FSH, LH), estradiol, and progesterone confirmed intact cyclic hypothalamic-pituitary-ovarian function with recent ovulation, pointing toward uterine end-organ pathology.",
+      "quote": "There was a low ovarian reserve based on AMH (0.61), however the normal values of FSH, LH, estradiol and progesterone levels suggested recent ovulation therefore leaning to more of a uterine pathology."
+    },
+    {
+      "candidate": "Iatrogenic intrauterine adhesions (post-surgical Asherman's syndrome)",
+      "rule_out_reason": "Considered due to the onset of secondary amenorrhea following an open abdominal myomectomy. However, diagnostic workup and subsequent hysteroscopic inspection revealed no typical dense fibrous intrauterine synechiae, identifying instead a mottled, inflamed endometrium.",
+      "quote": "At this time there was no evidence of adhesions."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal confirmatory turning point was diagnostic hysteroscopy demonstrating mottled fundal endometrium, with endometrial curettings showing necrotizing granulomas positive for acid-fast bacilli and positive culture for Mycobacterium tuberculosis, confirming pelvic tuberculosis causing secondary amenorrhea and infertility.",
+      "quote": "The pathology from this demonstrated necrotizing granulomas with acid-fast bacilli positive and culture positive for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified admission breakpoint strictly excludes hysteroscopy findings, endometrial curettage histopathology, acid-fast staining, and RIPE antitubercular therapy."
+}

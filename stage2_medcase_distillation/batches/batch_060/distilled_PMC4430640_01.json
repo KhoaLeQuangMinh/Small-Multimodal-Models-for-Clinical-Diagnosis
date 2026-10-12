@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4430640_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old woman from Guinea-Bissau presenting with an 18-month history of debilitating back pain, severe asthenia, weight loss, and progressive paraplegia, accompanied by simultaneous nodular and ulcerated cutaneous lesions and mediastinal lymphadenopathy. The primary clinical challenge is distinguishing disseminated skeletal and cutaneous tuberculosis (Pott disease with tuberculous gummas/scrofuloderma) from pyogenic bacterial spondylodiscitis, primary or metastatic osseous malignancy, systemic deep fungal infections, and HIV-associated opportunistic infections.\n2. Admission Breakpoint: Admission triage concludes after documenting the chronic history of dorsal spine pain and paraplegia, physical examination revealing subclavicular and thigh skin lesions alongside an ASIA A paraplegia with a D4 sensory level, baseline blood tests (anemia of chronic disease, ESR of 75 mm/h, elevated CRP, and severe hypergammaglobulinemia), and imaging (chest X-ray showing mediastinal widening; CT and MRI of the spine showing extensive D1–D10 paravertebral abscesses, osteolytic vertebral destruction, and spinal cord compression), immediately prior to HIV testing, histopathologic biopsies, and microbiological cultures.\n3. Differential Distinctions: Pyogenic bacterial spondylodiscitis usually manifests with a more acute presentation, prominent fever, and leukocytosis, and is identified by positive routine bacterial cultures. Osseous neoplasms and lymphomas cause vertebral destruction and cord compression, but biopsy reveals neoplastic architecture rather than granulomas. Disseminated mycobacterial disease with concomitant skeletal and cutaneous localization is confirmed by core bone biopsy showing acid-fast bacilli and positive Mycobacterium tuberculosis culture.",
+  "case_prompt": "A 25-year-old woman originally from Guinea-Bissau, West Africa, is admitted with an 18-month history of progressive dorsal back pain, asthenia, and marked weight loss, complicated over the preceding 8 months by complete loss of the ability to walk.\n\nOn physical examination, she is emaciated and exhibits three cutaneous lesions (two ulcerated and one nodular) over the right subclavicular region, as well as two distinct cutaneous lesions on her left thigh (one ulcerated and one healing). Neurological examination demonstrates complete flaccid paraplegia classified as ASIA A, with a well-defined sensory level at D4.\n\nBaseline laboratory evaluation reveals anemia with a hemoglobin of 11.2 g/dL, an elevated erythrocyte sedimentation rate of 75 mm/h, a C-reactive protein of 5.26 mg/dL, a total gamma globulin level of 44 g/dL, and normal routine blood chemistry. A plain chest radiograph reveals an enlarged mediastinal shadow. Computed tomography of the spine demonstrates a large anterior and paravertebral abscess extending from D1 to D10, with osteolytic destruction of the vertebral bodies and a sharp kyphotic deformity. Spinal MRI confirms anterior and paravertebral epidural abscesses with marked spinal column angulation and severe compression of the spinal cord at the kyphotic apex, consistent with spondylodiscitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "HIV-Associated Opportunistic Infection / Primary Immunodeficiency",
+      "rule_out_reason": "Considered due to multifocal, disseminated musculoskeletal and dermatologic disease in a young patient from an endemic region of West Africa, but excluded by negative HIV serology and normal immunodeficiency screening.",
+      "quote": "HIV and primary immunodeficiency testing were negative."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Spondylodiscitis / Epidural Abscess",
+      "rule_out_reason": "Considered in the differential diagnosis of large destructive paravertebral and epidural abscesses with osteolytic vertebral collapse, but excluded by negative routine bacterial blood and urine cultures.",
+      "quote": "Blood and urine cultures including cultures for mycobacteria all proved negative."
+    },
+    {
+      "candidate": "Spinal Primary Neoplasm or Metastatic Malignancy",
+      "rule_out_reason": "Considered as an etiology of multi-level osteolytic vertebral destruction, pathologic kyphotic collapse, and complete paraplegia, but ruled out by histopathology demonstrating granulomatous inflammation and absence of neoplastic cells.",
+      "quote": "Bone biopsy revealed granulomatous inflammation with few acid-fast bacilli. Skin biopsy of the lesions (Figure 6) revealed acanthosis and pseudoepitheliomatous, hyperplasia of the epidermis, and necrosis foci surrounded by a histiocytic and lymphocyte infiltrate with giant cells on the dermis"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of bone biopsy material demonstrated chronic granulomatous inflammation containing acid-fast bacilli, and tissue cultures conclusively isolated Mycobacterium tuberculosis.",
+      "quote": "Bone biopsy revealed granulomatous inflammation with few acid-fast bacilli."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial admission presentation (18-month history of back pain, 8-month paraplegia, exam with skin ulcers and ASIA A D4 sensory level, baseline labs with anemia/ESR/CRP/hypergammaglobulinemia, CXR with mediastinal widening, and spine CT/MRI showing D1-D10 paravertebral abscesses and osteolytic kyphosis) strictly before HIV testing, skin/bone biopsies, or cultures. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

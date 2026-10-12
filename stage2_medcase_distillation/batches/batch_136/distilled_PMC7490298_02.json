@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7490298_02",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 23-year-old pregnant patient in her third trimester presented with an acute febrile pruritic rash and arthralgia. In tropical and endemic arboviral regions, distinguishing between dengue, chikungunya, and Zika virus is critical due to disparate risks of maternal hemorrhagic complications, severe arthropathy, and vertical transmission/teratogenicity.\n2. Admission Breakpoint: The admission clinical presentation concludes after the history of acute fever, pruritus, arthralgia, and third-trimester physical examination, strictly prior to any viral PCR, NS1 antigen testing, or specialized serologies.\n3. Differential Distinctions: Dengue presents with higher fever, severe retro-orbital pain, and hemorrhagic thrombocytopenia; chikungunya presents with debilitating symmetric polyarthritis; Zika virus characteristically features prominent low-grade fever, pruritic maculopapular exanthema, mild arthralgias, and carries a unique risk of transplacental fetal infection.",
+  "case_prompt": "A 23-year-old pregnant female presented for clinical evaluation during the third trimester of gestation with an acute onset of fever, generalized arthralgia, a diffuse erythematous cutaneous exanthema, and prominent pruritus. She reported no prior medical illnesses or chronic conditions complicating her pregnancy. On clinical examination, she was febrile with an erythematous maculopapular rash distributed across the trunk and extremities, without mucosal ulcerations or hemodynamic instability. Obstetric evaluation confirmed an active third-trimester singleton pregnancy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue Virus",
+      "rule_out_reason": "Dengue co-circulates in the same geographical regions and shares overlapping acute symptoms of fever, rash, and arthralgia in pregnancy; however, rapid diagnostic antigen screening was negative.",
+      "quote": "The test for dengue NS1 was negative."
+    },
+    {
+      "candidate": "Primary TORCH Viral Infection (Cytomegalovirus / Rubella)",
+      "rule_out_reason": "Acute exanthematous febrile illness in pregnancy requires ruling out primary maternal CMV or rubella, but serological evaluation demonstrated chronic preexisting IgG immunity rather than primary acute infection.",
+      "quote": "Her IgG serology was positive for cytomegalovirus and rubella."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive diagnosis of acute maternal infection was established by positive quantitative RT-PCR in both serum and urine, corroborated by reactive IgM and plaque reduction neutralization testing (PRNT90%).",
+      "quote": "Her IgM serology was positive for Zika, the PRNT90% was positive (Supplementary Table S1) and the qPCR was positive for Zika in serum (820 copies/ml) and urine (160 copies/ml)."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops before serologic or PCR results. Zero pathogen or disease names in prompt. Differential includes verbatim quotes from the report."
+}

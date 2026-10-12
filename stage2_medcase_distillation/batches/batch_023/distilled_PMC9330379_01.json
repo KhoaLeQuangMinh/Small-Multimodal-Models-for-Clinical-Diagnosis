@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9330379_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 36-year-old previously healthy female presents with high fever, sore throat, myalgias, abdominal pain, and rapidly fatal ARDS refractory to mechanical ventilation, requiring emergency veno-venous ECMO. Bilateral consolidative lung infiltrates, leukopenia, and hepatic dysfunction in a young patient initially point to fulminant viral pneumonia (e.g., severe influenza, SARS-CoV-2) or acute pyogenic sepsis. Recognizing acute miliary/disseminated tuberculosis causing catastrophic respiratory failure and multisystem failure in an immunocompetent host without typical chronic cough or cavitary disease is a critical diagnostic challenge.\n2. Admission Breakpoint: Admission triage terminates after emergency room and initial ICU assessment, arterial blood gas showing severe hypoxemic ARDS (PaO2/FiO2 74.4), initial complete blood count, liver biochemistries, inflammatory markers, and admission thoracic/abdominal CT, immediately prior to salvage VV-ECMO cannulation, invasive liver biopsy, and send-out metagenomic sequencing.\n3. Differential Distinctions: Fulminant viral or bacterial pneumonia causing ARDS (ruled out by persistent fever and negative broad viral/bacterial screens despite broad-spectrum antimicrobials), hemophagocytic lymphohistiocytosis / autoimmune connective tissue disease (ruled out by negative comprehensive autoantibody panel), and metastatic malignancy / lymphoma (ruled out when PET-positive nodular lesions in the liver demonstrated necrotizing granulomas with acid-fast bacilli on biopsy).",
+  "case_prompt": "A 36-year-old female presented with high fever of 15 days' duration, upper abdominal pain and limb muscle soreness for 7 days, and rapidly progressive shortness of breath for 4 days. Her peak temperature reached 41.0°C, accompanied by chills and sore throat. Prior outpatient treatment at another facility with oseltamivir and imipenem/cilastatin failed to halt progression of respiratory symptoms and worsening bilateral lung infiltrates. Her medical history was notable only for epilepsy controlled on lamotrigine and escitalopram. She had no preceding chronic cough or night sweats.\n\nOn arrival at the emergency department, she was in severe respiratory distress with a respiratory rate of 36 breaths/min and oxygen saturation of 85% on a 10 L/min reservoir mask. Heart rate was 110 beats/min, blood pressure 96/60 mmHg, and temperature 38.6°C. Physical examination revealed scleral icterus, moderate abdominal distension, and hepatomegaly. She was urgently intubated and placed on mechanical ventilation. Arterial blood gas analysis on 100% FiO2 revealed pH 7.376, PaO2 74.4 mmHg, PaCO2 59.4 mmHg, and an oxygenation index (PaO2/FiO2) of 74.4.\n\nLaboratory testing revealed a white blood cell count of 3.8 x 10^9/L (45.1% neutrophils, 50.7% lymphocytes), procalcitonin 0.25 ng/mL, and C-reactive protein 24.3 mg/L. Liver biochemistries demonstrated total bilirubin of 80.97 µmol/L, alanine aminotransferase 143 U/L, and aspartate aminotransferase 296 U/L. Computed tomography of the chest and abdomen revealed multiple patchy infiltrates and consolidation in the dorsal regions of bilateral lungs, moderate pleural effusions, hepatosplenomegaly, and moderate ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Fulminant viral or acute pyogenic bacterial ARDS",
+      "rule_out_reason": "Rapidly progressive ARDS with high fever and leukopenia prompted empiric antiviral and carbapenem therapy, but procalcitonin was only mildly elevated (0.25 ng/mL) and respiratory failure persisted without response to standard antimicrobial coverage.",
+      "quote": "She had visited Zhongshan hospital affiliated to Xiamen university where she received oseltamivir, imipenem and cilastatin for 4 days due to leukopenia (WBC 1.44 x 109/L) and patchy shadows on lung CT"
+    },
+    {
+      "candidate": "Systemic autoimmune disease / systemic vasculitis",
+      "rule_out_reason": "The constellation of high unremitting fever, polyserositis, transaminitis, and hepatosplenomegaly raised suspicion for a systemic rheumatic or autoimmune disorder, but extensive autoantibody screening was completely negative.",
+      "quote": "Auto-antibodies, viral antibodies and tumor markers were negative (Table 1)."
+    },
+    {
+      "candidate": "Disseminated lymphoma or metastatic malignancy",
+      "rule_out_reason": "Whole-body PET-CT demonstrated multiple nodular hypermetabolic foci in the liver, lungs, and bone marrow, raising concern for lymphoma or secondary malignancy, but ultrasound-guided biopsy revealed infectious granulomas.",
+      "quote": "The results showed multiple nodular hyper-metabolic foci in the liver and lungs, slightly increased metabolism including bone marrow"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of contrast-enhanced ultrasound-guided liver biopsy revealed Langhans giant cells and confluent granulomas with caseous necrosis and positive acid-fast staining, with cerebrospinal fluid metagenomic sequencing confirming disseminated Mycobacterium tuberculosis.",
+      "quote": "The histopathological examination showed Langhans giant cells and fusion granulomas with caseous necrosis in the liver tissue (Figures 5A,B). Acid-fast staining revealed mycobacterial accumulation in the cytoplasm"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Catastrophic ARDS from acute hematogenous disseminated tuberculosis requiring VV-ECMO in a previously immunocompetent female. Prompt stops before ECMO cannulation and liver biopsy."
+}

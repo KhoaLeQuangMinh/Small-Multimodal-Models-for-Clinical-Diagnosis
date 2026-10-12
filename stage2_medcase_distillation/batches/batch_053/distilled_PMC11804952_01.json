@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11804952_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 39-year-old woman presents with severe physical exhaustion, a 4-cm open chest wall defect with purulent drainage and continuous air leakage, and aphonia upon dressing removal following pneumonectomy, 8-rib thoracoplasty, and six failed endobronchial valve attempts. The diagnostic tension lies in distinguishing pure mechanical stump dehiscence or secondary pyogenic empyema from persistent, active, multidrug-resistant mycobacterial infection destroying the bronchial stump.\n2. Admission Breakpoint: The admission clinical presentation stops after recording the surgical history, physical examination (thoracostomy defect, aphonia on tampon removal, BMI 18 kg/m²), arterial blood gas analysis, spirometry, initial CT, and bronchoscopy confirming the 2 × 2.5 cm dehiscent stump defect. Empyema fluid mycobacterial and bacterial cultures, drug susceptibility testing, pleural irrigation, and subsequent staged surgical reconstruction occur post-breakpoint.\n3. Differential Distinctions: Isolated mechanical bronchial stump dehiscence is ruled out by persistent purulent infection; isolated pyogenic bacterial empyema (such as Pseudomonas colonization) is excluded as the primary driver by the demonstration of active extensively drug-resistant mycobacterial replication preventing stump healing.",
+  "case_prompt": "A 39-year-old female was admitted to a specialized thoracic clinic for the management of refractory post-surgical complications spanning an 11-year history of chronic destructive pulmonary infection. Her prior course included 2 years of ineffective medical therapy, a partial right lung resection in 2006, disease relapse in 2012, and a completion right pneumonectomy in 2015. The pneumonectomy was complicated by bronchial stump insufficiency and pleural empyema, which persisted despite transpleural stump reamputation with an 8-rib thoracoplasty, six unsuccessful endobronchial valve implantations, and an open thoracostomy.\n\nOn physical examination, the patient had severe exhaustion and cachexia (height 165 cm, weight 50 kg, body mass index 18 kg/m²). She exhibited dyspnea on minimal exertion, including while speaking. The right hemithorax was severely deformed with a patent thoracic defect measuring up to 4 cm in the right axillary region exhibiting continuous purulent discharge and air leakage. Removal of packing tampons from the empyema cavity resulted in immediate aphonia. Additional past medical history included chronic viral hepatitis C, chronic bronchitis, chronic gastritis, and contracture of the right shoulder girdle.\n\nArterial blood gas analysis on ambient air showed a pO2 of 72 mmHg and pCO2 of 38.7 mmHg. Spirometry revealed a vital capacity of 36.7% of predicted and forced expiratory volume in 1 second (FEV1) of 30.6% of predicted. Chest CT and flexible bronchoscopy demonstrated a dehiscent short stump of the right main bronchus measuring 2.0 × 2.5 cm communicating directly from the lateral wall of the trachea into the empyema cavity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated mechanical bronchial stump dehiscence",
+      "rule_out_reason": "Although primary mechanical tension or technical suture failure was suspected following repeated interventions and valve implants, the ongoing copiously purulent drainage and deep tissue necrosis pointed to persistent chronic microbial infection undermining tissue viability.",
+      "quote": "A final right lung pneumonectomy in 2015, complicated by right main bronchial stump insufficiency (BSI) and pleural empyema\nTranspleural reamputation of the right main bronchial stump with simultaneous 8-rib thoracoplasty on the 21st day after surgery, again complicated by BSI and pleural empyema"
+    },
+    {
+      "candidate": "Primary pyogenic postpneumonectomy empyema (e.g., Pseudomonas aeruginosa infection)",
+      "rule_out_reason": "Nosocomial bacterial superinfection is frequent in open thoracostomies and Pseudomonas was indeed isolated from the cavity; however, bacterial infection alone failed to explain the 11-year progressive relapsing tissue destruction that originated as chronic cavitary disease.",
+      "quote": "Microbiological analysis of the fluid from empyema cavity revealed the growth of Pseudomonas aeruginosa by the BASTEC method and Mycobacterium tuberculosis with multiple drug resistance (H, R, Rb, Z, E, Fq, Pt, Pas, and Cs)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microbiological examination of the cavity fluid isolated Mycobacterium tuberculosis harboring broad multidrug resistance (H, R, Rb, Z, E, Fq, Pt, Pas, and Cs), proving that active multi-resistant tuberculosis was the direct cause of chronic stump necrotization and failure to close.",
+      "quote": "Microbiological analysis of the fluid from empyema cavity revealed the growth of Pseudomonas aeruginosa by the BASTEC method and Mycobacterium tuberculosis with multiple drug resistance (H, R, Rb, Z, E, Fq, Pt, Pas, and Cs)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled preserving the full clinical complexity and surgical tension. The admission prompt strictly excludes the diagnosis and drug susceptibility results while presenting the mechanical and purulent features on Day 1. Verbatim quotes document the differential candidates and pivot."
+}

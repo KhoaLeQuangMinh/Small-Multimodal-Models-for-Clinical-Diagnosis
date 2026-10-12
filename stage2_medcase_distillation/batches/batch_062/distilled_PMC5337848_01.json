@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5337848_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 71-year-old Vietnamese renal allograft recipient on triple immunosuppression presents with gross hematuria, productive cough, dyspnea, and basilar lung crackles. Gross hematuria suggests an opportunistic urinary tract infection or urologic malignancy, which diverts attention from a disseminated systemic nematode autoinfection stemming from a remote exposure decades prior.\n2. Admission Breakpoint: The admission narrative stops after initial nephrology outpatient evaluation, physical examination, initial urinalysis, urine culture, cystoscopy, bladder wash cytology, baseline complete blood count with peripheral eosinophilia review, and screening for retroviral co-infection, prior to specific Strongyloides IgG serology, wet mount stool examinations, blood cultures, chest CT, and antiparasitic therapy.\n3. Differential Distinctions: Bacterial cystitis/pyelonephritis or urologic malignancy readily causes hematuria and pyuria, but urine culture and cystoscopy are unrevealing. In an immunosuppressed patient with remote tropical/jungle exposure, Strongyloides stercoralis autoinfection can accelerate into hyperinfection syndrome, causing mucosal micro-ulcerations, pulmonary infiltrates, and eosinophilia due to larval migration across intestinal, pulmonary, and urinary tracts.",
+  "case_prompt": "A 71-year-old Vietnamese male kidney transplant recipient presented to his outpatient nephrologist for the acute evaluation of gross hematuria. Over the preceding several weeks, he had also experienced an insidious cough productive of yellow sputum, exertional dyspnea, intermittent chills, generalized fatigue, and unintentional weight loss. His medical history was notable for chronic kidney disease secondary to adult polycystic kidney disease diagnosed two years after immigrating to the United States; he had a remote history of having been a prisoner of war for 14 years in the jungles of Vietnam before emigrating. He had undergone a successful deceased-donor renal transplantation 19 years after immigration and was maintained on triple immunosuppressive therapy comprising prednisone, mycophenolate mofetil, and tacrolimus.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Chest examination revealed bilateral basilar crackles, more pronounced over the left base than the right. Abdominal examination demonstrated a soft, non-tender abdomen without palpable organomegaly or masses. Dermatologic examination revealed no cutaneous rashes.\n\nUrinalysis demonstrated gross hematuria, pyuria, and proteinuria. Urine culture showed no bacterial growth. Diagnostic cystoscopy revealed normal bladder mucosa, and bladder wash cytology demonstrated atypical inflammatory cells without malignant changes; an empiric 10-day course of cephalexin for presumptive urinary tract infection resulted in resolution of the hematuria. Complete blood count revealed marked peripheral eosinophilia of 1,200/muL (reference range 0–500/muL). A review of previous records revealed documented intermittent mild eosinophilia (600–800/muL) spanning at least 7 years prior to transplantation. Serologic screening for HTLV-1 was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Urinary Tract Infection",
+      "rule_out_reason": "Considered because of gross hematuria, pyuria, and systemic chills in a renal transplant recipient, but urine culture failed to isolate any bacterial organism.",
+      "quote": "The urine culture failed to isolate an organism. A cystoscopy showed no abnormalities and a cytology of a bladder wash showed atypical inflammatory cells. He was empirically treated with a ten-day course of cephalexin for a presumed urinary tract infection with resolution of the hematuria."
+    },
+    {
+      "candidate": "Opportunistic Bacterial or Fungal Pneumonia (Pneumocystis / Nocardia)",
+      "rule_out_reason": "Considered due to productive cough, dyspnea, bilateral lung crackles, and chest CT opacities in an immunosuppressed transplant recipient, but blood cultures remained negative and all symptoms resolved completely on antiparasitic therapy alone.",
+      "quote": "Blood cultures were negative. A computed tomography (CT) of the chest showed mild peribronchial thickening with a mosaic pattern within the bilateral lobes and ill-defined patchy nodular opacity within the posterior segment of the right upper lobe suggestive of infectious etiology."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Stool wet mount microscopy directly demonstrated numerous nematode larvae characterized by a large genital primordium and short buccal capsule, confirmed by a positive Strongyloides stercoralis IgG titer (1.96 IU), diagnosing severe hyperinfection syndrome.",
+      "quote": "A Strongyloides stercoralis IgG was therefore obtained which yielded a positive result of 1.96 IU (<1 IU is considered negative). Numerous Strongyloides larvae were easily identified on a wet mount of a stool specimen by their morphological characteristics of a large genital primordium and short buccal capsule (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to specific stool wet mounts, chest CT, and serology. Zero spoilers or pathogen names. Exact quotes verified against source text."
+}

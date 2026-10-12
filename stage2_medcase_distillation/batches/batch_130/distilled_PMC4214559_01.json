@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4214559_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 64-year-old woman with long-standing type 1 diabetes mellitus presents with a 20-month history of bilateral pretibial erythematoviolaceous ulcerated plaques with central atrophy and indurated borders. The lesions clinically and morphologically mirror necrobiosis lipoidica diabeticorum, obscuring an atypical cutaneous protozoan infection.\n2. Admission Breakpoint: Triage concludes with dermatological physical examination, normal routine blood counts and biochemistries (aside from diabetic hyperglycemia), normal chest radiograph, and negative routine bacterial swabs. Skin punch biopsy and histopathology represent the confirmatory diagnostic step.\n3. Differential Distinctions: Necrobiosis lipoidica diabeticorum presents with palisading granulomas surrounding degenerated collagen bundles rather than dense dermal lymphohistiocytic infiltrates packed with intracellular amastigotes. Chronic bacterial ecthyma/pyoderma is ruled out by negative bacteriological cultures and failure to heal over 20 months.",
+  "case_prompt": "A 64-year-old woman with a history of type 1 diabetes mellitus presented to the dermatology department with a 20-month history of nonpruritic, erythematous, ulcerated lesions on both lower legs. She reported no history of local trauma or insect bites, and denied fever or constitutional symptoms. Physical examination revealed a large oval erythematoviolaceous plaque involving more than half of the right pretibial region, with slightly elevated, indurated, and infiltrative borders surrounding a center scattered with small necrotic, crusted ulcers and atrophic areas. Similar smaller plaques were present on the left leg. No regional lymphadenopathy or other systemic abnormalities were detected. Complete blood count, routine biochemical tests, urinalysis, and plain chest radiography were normal, except for marked hyperglycemia at 11.8 mmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Necrobiosis lipoidica (diabeticorum)",
+      "rule_out_reason": "In a diabetic patient, chronic atrophic violaceous pretibial plaques with indurated borders are classic for necrobiosis lipoidica; however, histopathology revealed granulomatous inflammation containing intracellular amastigotes rather than interstitial collagen degeneration.",
+      "quote": "A 64-year-old woman with past medical history of diabetes mellitus type 1, referred to our dermatology department for a 20-month nonpruritic erythematous ulcerated lesions of the two legs. Upon physical examination, a large oval erythematoviolaceous plaque covering more than the half of the right pretibial region was observed."
+    },
+    {
+      "candidate": "Chronic bacterial pyoderma / ecthyma",
+      "rule_out_reason": "Crusted, necrotic ulcerations on the lower limbs in diabetes frequently stem from bacterial infections, but bacteriological investigations showed no pathogenic bacterial growth.",
+      "quote": "Bacteriological tests were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A skin biopsy showed a dense dermal lymphocytic and granulomatous infiltrate with multinucleated giant cells, and Giemsa staining identified pathognomonic intracellular basophilic structures corresponding to Leishmania amastigotes.",
+      "quote": "Skin biopsy showed a dense lymphocytic infiltrate throughout the entire dermis admixed with multiple granuloma without necrosis... Basophilic regular structures in the intracellular spaces corresponding to amastigotes belonging to leishmania were determined with the Giemsa stain (C)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly respected prior to skin biopsy and special staining. Zero pathogen or disease names in presentation. Verbatim quotes matched."
+}

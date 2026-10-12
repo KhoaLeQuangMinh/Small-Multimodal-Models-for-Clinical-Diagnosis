@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3220172_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 36-year-old woman presented with a 1-year history of chronic fiery red, ulcerated, and bleeding gingival enlargement alongside systemic constitutional symptoms (evening fever, malaise, and 5.5 kg weight loss), but in the complete absence of cough, sputum, known contacts, or pulmonary symptoms, mimicking localized periodontal disease, pyogenic granuloma, or gingival malignancy.\n2. Admission Breakpoint: The admission narrative halts following oral physical examination, baseline hematologic testing (elevated ESR, marginal leukocytosis), and intraoral periapical (IOPA) radiography. It stops prior to the tuberculin skin test, chest radiography, sputum culture, mycobacterial ELISA, and incisional gingival biopsy.\n3. Differential Distinctions: Periodontitis or chronic inflammatory gingival hyperplasia was ruled out by lack of typical periapical/periodontal destruction on IOPA X-rays and presence of prominent constitutional symptoms. Oral gingival carcinoma was excluded by biopsy demonstrating caseating granulomatous inflammation rather than invasive malignant neoplasia. Secondary mucosal involvement from pulmonary infection was ruled out by a normal chest radiograph and negative sputum cultures, establishing a primary extrapulmonary gingival focus.",
+  "case_prompt": "A 36-year-old woman presented to a dental clinic with a 1-year history of progressive, painless swelling of the maxillary anterior gingiva. For the past 4 to 5 months, she had experienced low-grade fevers rising characteristically in the evening, generalized weakness, anorexia, and an unintentional weight loss of approximately 5.5 kg over the preceding 10 months. She reported no cough, sputum production, or hemoptysis, and denied known contact with individuals having chronic cough. Her medical history was otherwise negative for systemic disease, dental trauma, or prior surgical interventions in the oral cavity.\n\nOn physical examination, she appeared well-built. Vital signs including pulse, blood pressure, temperature, and respiratory rate were normal at the time of evaluation. Extraoral examination revealed no palpable cervical lymphadenopathy. Examination of the chest was clinically clear to auscultation. Intraoral examination revealed diffuse, striking fiery red enlargement of the palatal mucosa and labial maxillary gingiva extending from the right to left maxillary canines. The gingival surface was irregular and pebbled, with superficial ulcerations and serous discharge on both labial and palatal aspects. The enlargement was mildly tender to palpation and demonstrated a marked tendency to bleed spontaneously upon provocation. The remainder of the dentition and oral cavity was normal.\n\nBaseline laboratory evaluation showed a marginal elevation in the total leukocyte count and an elevated erythrocyte sedimentation rate (ESR), with other complete blood count parameters within normal limits. Intraoral periapical (IOPA) radiographs of the anterior maxilla demonstrated slight crestal alveolar bone loss without evidence of periodontal bone destruction or periapical pathosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Periodontitis / Inflammatory Gingival Hyperplasia",
+      "rule_out_reason": "Considered due to fiery red gingival swelling and bleeding upon provocation; ruled out because intraoral radiographs revealed only minimal crestal loss without periodontal pocketing or periapical pathology, and localized periodontitis does not account for evening pyrexia and 5.5 kg weight loss.",
+      "quote": "IOPA X-rays revealed slight crestal bone loss without any periodontal or periapical pathology [Figure 3]."
+    },
+    {
+      "candidate": "Oral Squamous Cell Carcinoma / Malignant Neoplasm",
+      "rule_out_reason": "Considered given the chronic, non-healing, ulcerated, pebbled exophytic gingival mass with contact bleeding and systemic weight loss; ruled out by incisional biopsy demonstrating caseating granulomatous inflammation with Langhans giant cells rather than neoplastic epithelial proliferation.",
+      "quote": "Histopathologic examination revealed clusters of epithelioid cells, caseating necrosis, and nume-rous Langhans-type giant cells surrounded by a chronic inflammatory type of infil-trate [Figure 4]."
+    },
+    {
+      "candidate": "Secondary Gingival Tuberculosis (from pulmonary focus)",
+      "rule_out_reason": "Considered because oral tuberculosis is typically secondary to hematogenous or sputum seeding from active pulmonary disease; ruled out by absence of respiratory symptoms, clear lung fields on chest radiography, and negative sputum mycobacterial cultures, confirming a primary gingival manifestation.",
+      "quote": "Chest radiography (posteroan-terior view) revealed no abnormalities. Culture of sputum was negative for M. tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Incisional biopsy of the enlarged labial gingiva demonstrated caseating necrosis surrounded by epithelioid histiocytes and Langhans-type multinucleated giant cells, corroborated by a positive tuberculin skin test and serum mycobacterial ELISA, establishing primary gingival tuberculosis which regressed completely on standard anti-tubercular therapy.",
+      "quote": "Histopathologic examination revealed clusters of epithelioid cells, caseating necrosis, and nume-rous Langhans-type giant cells surrounded by a chronic inflammatory type of infil-trate [Figure 4]. In view of these findings, a working diagnosis of primary tuberculous gingival enlargement was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt ends with initial triage labs and dental X-rays. Zero mention of tuberculin skin test, sputum cultures, mycobacterial ELISA, or histology in prompt."
+}

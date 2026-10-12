@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6243350_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An HIV-positive female presenting with biliary colic, hepatomegaly, and periportal lymphadenopathy underwent ultrasound-guided FNAC, which was non-diagnostic. Fifteen days later, a painful, erythematous subcutaneous nodule appeared exactly at the needle entry site. In an immunocompromised patient with biliary obstruction and lymphadenopathy, the nodule could represent needle track seeding by malignancy (cholangiocarcinoma/lymphoma), an acute pyogenic stitch/injection abscess, or cutaneous implantation of mycobacteria.\n2. Admission Breakpoint: Admission triage for this presentation terminates after documentation of the post-procedural abdominal pain, biliary tract imaging, initial inconclusive FNAC, and physical appearance of the newly developed needle tract nodule, immediately before the excision biopsy of the skin nodule.\n3. Differential Distinctions: Pyogenic needle track abscess or stitch granuloma presents as an acute, fluctuant, purulent lesion occurring after percutaneous puncture, responding to drainage and antibacterial therapy. Malignant needle track seeding from cholangiocarcinoma or lymphoma presents as a firm subcutaneous nodule following biopsy of an occult malignancy, showing malignant neoplastic cells on excision. Cutaneous implantation tuberculosis presents as an indolent erythematous nodule at the inoculation site that displays epithelioid granulomas with Langhans giant cells and acid-fast bacilli on Ziehl-Neelsen stain.",
+  "case_prompt": "A 45-year-old female with HIV infection (on antiretroviral therapy for 5 months with a CD4 count of 417 cells/\u03bcL) presents with a 3-month history of right upper quadrant colicky pain radiating to the infrascapular area, accompanied by low-grade fever, anorexia, and weight loss. Physical examination reveals firm 3-cm hepatomegaly without peripheral lymphadenopathy or jaundice. Laboratory evaluation shows mild anemia (hemoglobin 10.2 g/dL), elevated ESR (47 mm/h), AST 49 U/L, ALT 145 U/L, and alkaline phosphatase 460 U/L. Abdominal ultrasound and dynamic MRCP demonstrate mild intrahepatic biliary dilatation, a dilated common bile duct with an abrupt distal cut-off, and multiple subcentimeter periportal and peripancreatic lymph nodes. A tuberculin skin test (Mantoux) is positive with 25 mm induration. She underwent ultrasound-guided fine-needle aspiration of the periportal lymph nodes, which yielded bloody, non-diagnostic cytology. Fifteen days after the procedure, she develops a painful, well-defined, firm, erythematous, mildly tender skin nodule measuring 1 x 1 cm located precisely at the cutaneous site of the needle insertion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Needle Track Abscess / Foreign Body Reaction",
+      "rule_out_reason": "The sudden development of an erythematous, tender subcutaneous nodule at a recent percutaneous needle puncture site suggested a superficial bacterial infection or localized foreign body response; however, excision revealed caseating granulomatous inflammation rather than acute suppurative abscess formation.",
+      "quote": "15 days after the second FNAC, the patient developed a painful skin nodule at the site of insertion of the FNAC needle."
+    },
+    {
+      "candidate": "Iatrogenic Neoplastic Needle Track Seeding (Cholangiocarcinoma / Lymphoma)",
+      "rule_out_reason": "In the setting of biliary ductal dilatation with abrupt cut-off and periportal adenopathy, malignant tract seeding was an important differential concern; however, high clinical suspicion for tuberculous inoculation prompted an excision biopsy that ruled out malignancy.",
+      "quote": "FNAC tract seeding by tuberculosis was suspected and excision biopsy of the nodule was performed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excision biopsy of the puncture site skin nodule demonstrated epithelioid cell granulomas, Langhans giant cells, and positive Ziehl-Neelsen staining for acid-fast bacilli, definitively establishing implantation cutaneous tuberculosis and enabling curative four-drug antitubercular therapy.",
+      "quote": "Biopsy of the skin revealed many scattered, ill-formed epithelioid cell granulomas and Langerhans-type giant cells, and periappendageal and perivascular lymphohistiocytic infiltrate admixed with neutrophils and eosinophils. Ziehl-Neelsen stain for acid-fast bacilli was positive (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned prior to excision biopsy of the inoculation site skin nodule. No pathogen spoilers in case prompt. Quotes are exact matches from the text."
+}

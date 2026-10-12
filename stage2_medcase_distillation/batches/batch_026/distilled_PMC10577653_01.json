@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10577653_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old immunocompetent male presents with subacute blurring of vision, vitritis, and focal retinitis with a macular star. The focal retinitis and vitritis strongly mimicked ocular toxoplasmosis and transiently improved on trimethoprim-sulfamethoxazole, causing diagnostic confusion before comprehensive testing identified ocular tuberculosis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial comprehensive ophthalmologic evaluation, dilated funduscopy, fluorescein angiography, and optical coherence tomography, stopping strictly prior to systemic infectious serology panels and initiation of empiric antibiotic therapy.\n3. Differential Distinctions: Ocular tuberculosis presenting as retinitis and neuroretinitis is distinguished from ocular toxoplasmosis by negative Toxoplasma IgG/IgM serology and positive interferon-gamma release assay; from ocular syphilis by negative treponemal antibodies; and from viral necrotizing retinitis (HSV, VZV, CMV) by subacute indolent course and lack of confluent peripheral retinal necrosis.",
+  "case_prompt": "A 29-year-old male presents with a 2-month history of progressive blurring of vision accompanied by floaters in his left eye. He reports no ocular pain, redness, fever, weight loss, night sweats, or systemic symptoms, and has no prior chronic medical conditions.\n\nOn ophthalmological examination, best corrected visual acuity (BCVA) is 20/20 in the right eye and 20/30-2 in the left eye. Intraocular pressure in the left eye is normal at 18 mmHg. Slit-lamp biomicroscopy of the left eye reveals 2+ cells and 2+ flare in the anterior chamber without keratic precipitates. Dilated funduscopy of the left eye reveals vitritis with snowball opacities, focal areas of retinitis accompanied by retinal hemorrhages along the distal ends of the temporal arcades, and lipid-rich retinal exudates arranged in a macular star configuration. The right eye is normal.\n\nFluorescein angiography reveals retinal vasculitis along the distal temporal arcades adjacent to peripheral retinitis foci, which appear as blocked hypofluorescent lesions. Optical coherence tomography (OCT) through the lesion demonstrates hyperreflectivity of the inner retinal layers with posterior shadowing, consistent with focal retinitis; the retinal pigment epithelium and choroid are normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ocular toxoplasmosis",
+      "rule_out_reason": "Considered the initial primary diagnosis due to focal retinitis and vitritis, even showing initial clinical response to trimethoprim-sulfamethoxazole, but ruled out when specific serologic testing showed completely negative Toxoplasma antibody titers.",
+      "quote": "Surprisingly, he had negative Toxoplasma IgG and IgM antibody titers."
+    },
+    {
+      "candidate": "Ocular syphilis / Treponema pallidum infection",
+      "rule_out_reason": "Considered in the differential for posterior uveitis with retinal vasculitis and neuroretinitis with macular star, but ruled out by negative specific treponemal serology.",
+      "quote": "The rest of the infectious panel, including tests for syphilis and HIV, was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Systemic infectious workup demonstrated a positive Mycobacterium tuberculosis interferon-gamma release assay (QuantiFERON) and a positive tuberculin purified protein derivative (PPD) skin test with 12 mm induration, with definitive cure achieved after a six-month course of anti-tuberculous therapy.",
+      "quote": "There was a positive M. tuberculosis interferon-gamma release assay (QuantiFERON) test. In addition, there was a positive reaction in the tuberculin purified protein derivative (PPD) skin test with an induration of 12 mm."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to send-out serological workup and empiric antibiotics. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

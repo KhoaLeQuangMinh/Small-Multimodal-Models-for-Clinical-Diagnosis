@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7096561_02",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A pediatric patient is referred to a tertiary center with an alarming provisional diagnosis of a solid abdominal mass (raising fear of pediatric hepatic malignancy such as hepatoblastoma or lymphoma). Distinguishing a true neoplastic lesion from a parasitic pseudotumor formed by parenchymal tissue destruction and eosinophilic granulomatous inflammation is critical to avoid unnecessary oncologic resection or chemotherapy.\n2. Admission Breakpoint: Referral evaluation for a suspicious abdominal mass and initial abdominal ultrasonography revealing a focal hepatic parenchymal lesion, prior to percutaneous liver biopsy, histopathology, and anthelmintic therapy.\n3. Differential Distinctions: Pediatric hepatic malignancy (e.g., hepatoblastoma, neuroblastoma, or hepatic sarcoma) was the provisional diagnosis prompting tertiary referral, but ultrasound identified features favoring parasitic inflammation, and histopathology demonstrated necrotic tracts and eosinophilic infiltration rather than malignant cells. Pyogenic liver abscess / bacterial infectious phlegmon presents with acute nocturnal abdominal pain, anorexia, and high fevers (as seen in acute presentations like Patient 6), but lacks the characteristic track-like parenchymal architecture and profound eosinophilic-histiocytic response of migrating liver flukes. Definitive response to flukicidal therapy confirms hepatic trematodiasis.",
+  "case_prompt": "A pediatric patient was referred to the hospital for comprehensive evaluation of an abdominal mass identified on preliminary outpatient assessment. Abdominal examination revealed a palpable right upper quadrant fullness without severe peritoneal signs. Initial diagnostic abdominal ultrasonography was performed to characterize the lesion and evaluate the hepatic parenchyma and biliary tree, revealing an irregular focal hepatic mass-like lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pediatric hepatic malignancy (e.g. hepatoblastoma or solid abdominal tumor)",
+      "rule_out_reason": "Considered as the primary referral diagnosis due to the detection of a solitary solid-appearing hepatic lesion in a child; however, high-resolution ultrasonography showed features more consistent with parasitic infection, and histopathology lacked cellular atypia, demonstrating an inflammatory and necrotic pseudotumor.",
+      "quote": "Patient 4 was referred to our hospital with a preliminary diagnosis of an abdominal mass. Ultrasonography (US) indicated a higher possibility of F. hepatica than of mass lesions."
+    },
+    {
+      "candidate": "Pyogenic bacterial liver abscess / systemic bacterial phlegmon",
+      "rule_out_reason": "Considered in children presenting with acute, sleep-disrupting abdominal pain, anorexia, and fever (as observed in acute hepatic cohort presentations such as Patient 6); however, this patient presented with an indolent mass-like lesion, and biopsy revealed eosinophil-predominant granulomatous necrosis rather than purulent polymorphonuclear suppuration.",
+      "quote": "Patient 6 presented with abdominal pain, poor appetite, and fever. The patient's abdominal pain was very disturbing and woke him up at night. He had hepatic fascioliasis accompanied by Loeffler's syndrome (Fig. 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasonographic identification of parasitic liver parenchyma changes corroborated by percutaneous liver biopsy revealing intense mixed infiltrates of eosinophils and lymphocytes with histiocyte-rimmed necrotic tracts, culminating in complete radiological resolution following flukicidal treatment with triclabendazole.",
+      "quote": "The patient underwent liver biopsy, and a pathologic examination of the specimen revealed severe mixed inflammatory infiltrates of eosinophils and lymphocytes and necrotic foci surrounded by histiocytes... After the second triclabendazole treatment, the residual lesion completely disappeared."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at ultrasound evaluation of the referred abdominal mass prior to invasive liver biopsy and histopathology. Zero pathogen or disease names in case prompt. Verbatim quotes match article."
+}

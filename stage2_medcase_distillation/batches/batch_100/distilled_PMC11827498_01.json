@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11827498_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 72-year-old agricultural laborer with poorly controlled type 2 diabetes mellitus, hypertension, and chronic kidney disease/nephrotic syndrome presents with sudden, life-threatening massive hemoptysis (200 mL) requiring emergent bronchial artery embolization, alongside an untreated laceration sustained during field work. Thoracic vascular and computed tomography imaging reveals hypertrophied bronchial arteries, patchy consolidation, diffuse bilateral miliary nodular infiltrates, and mediastinal lymphadenopathy. The core tension lies in distinguishing acute necrotizing bacterial pneumonia or bronchogenic carcinoma from disseminated granulomatous mycobacterial disease with bronchial vessel erosion, which predisposes an immunocompromised diabetic host to catastrophic secondary opportunistic fungal superinfections.\n2. Admission Breakpoint: The admission breakpoint is established at the patient's initial emergency presentation for massive hemoptysis on May 27 following bronchial artery computed tomography angiography and emergency vascular embolization, strictly before confirmatory send-out interferon-gamma release assays (T-SPOT.TB) and sputum nucleic acid amplification (TB-PCR) return positive on May 30.\n3. Differential Distinctions: Severe necrotizing bacterial pneumonia or acute bronchiectasis typically causes purulent sputum, focal segmental or lobar consolidation, and systemic inflammatory spikes, but does not present with a diffuse bilateral miliary micronodular pattern and mediastinal adenopathy. Bronchogenic carcinoma frequently causes hemoptysis, bronchial vascular neo-proliferation, and mediastinal lymphadenopathy in elderly patients, but is ruled out by the absence of an identifiable endobronchial or parenchymal neoplastic mass and the rapid microbiological isolation of mycobacterial DNA.",
+  "case_prompt": "A 72-year-old male agricultural worker presented to an emergency hospital facility following a sudden episode of massive hemoptysis, coughing up approximately 200 mL of fresh blood. Three days prior, while working in an agricultural field, he had sustained a minor knife laceration to his left lower leg that had resulted in brief bleeding and was left untreated. His past medical history was notable for long-standing nephrotic syndrome of over ten years' duration with baseline renal insufficiency (serum creatinine 170–200 µmol/L), type 2 diabetes mellitus for five years, and essential hypertension for four years, managed with insulin and antihypertensive medications.\n\nOn physical examination, he was pale and fatigued but alert. Vital signs were stabilized following initial emergency airway and circulatory evaluation. Cardiopulmonary auscultation revealed no prominent wheezing or murmurs. Examination of the left lower extremity revealed the healing superficial laceration without overt purulent drainage at initial presentation.\n\nEmergency bronchial artery computed tomography angiography (CTA) revealed significant tortuosity and marked caliber thickening of the right bronchial arteries, patchy opacities in the right middle pulmonary lobe, diffuse bilateral miliary, nodular, and patchy parenchymal lesions throughout both lung fields, and mildly enlarged mediastinal lymph nodes. Emergency bronchial artery embolization was immediately performed to secure hemostasis, along with initiation of hemostatic agents and baseline antimicrobial coverage.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Necrotizing Bacterial Pneumonia / Bronchiectasis with Severe Hemoptysis",
+      "rule_out_reason": "Considered given sudden life-threatening hemoptysis, right middle lobe patchy consolidation, and prominent hypertrophic bronchial arteries, but ruled out because the diffuse bilateral miliary micronodular pattern and mediastinal lymphadenopathy strongly pointed toward a granulomatous process rather than standard pyogenic pneumonia.",
+      "quote": "Bronchial artery computed tomography angiography revealed several significant findings as follows: 1) tortuosity and thickening of the right bronchial arteries; 2) patchy opacities in the right middle lung lobe; 3) diffuse miliary, nodular, and patchy lesions in both lungs; and 4) mildly enlarged mediastinal lymph nodes."
+    },
+    {
+      "candidate": "Bronchogenic Carcinoma / Pulmonary Malignancy",
+      "rule_out_reason": "Considered in a 72-year-old male with massive hemoptysis, localized parenchymal opacity, and mediastinal lymphadenopathy, but excluded by the miliary distribution of lesions and definitive microbiological confirmation of mycobacteria rather than malignant cytology.",
+      "quote": "The imaging findings suggested a diagnosis of pulmonary TB."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive turning point occurred when both the T-SPOT.TB interferon-gamma release assay and sputum mycobacterial polymerase chain reaction (TB-PCR) returned positive, confirming active pulmonary tuberculosis (which later provided the immunocompromised substrate for invasive fungal necrotizing fasciitis).",
+      "quote": "On May 30, both T-SPOT.TB and sputum TB-PCR tests returned positive results, confirming the diagnosis of pulmonary TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning. Breakpoint stops at initial presentation for hemoptysis following CTA imaging prior to send-out T-SPOT and PCR testing. Zero spoilers in case_prompt. Candidates and Diagnostic Pivot supported by verbatim quotes."
+}

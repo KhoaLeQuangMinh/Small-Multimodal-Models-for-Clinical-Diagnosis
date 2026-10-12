@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10585360_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 73-year-old asymptomatic male with five bilateral pulmonary nodules demonstrating intense fluorodeoxyglucose (FDG) avidity on PET-CT refractory to anti-inflammatory therapy, pointing toward disseminated or multifocal metastatic lung cancer, concealing synchronous active tuberculosis nodules.\n2. Admission Breakpoint: At preoperative surgical decision following PET-CT staging and routine baseline laboratory panels, prior to staged VATS wedge resections and histopathologic assessment.\n3. Differential Distinctions: Disseminated metastatic malignancy / multifocal lung carcinoma (the primary suspicion due to marked SUVmax elevations up to 13.94, but histopathology disclosed co-existing necrotizing granulomatous nodules) and transient benign inflammatory pneumonitis (ruled out by lack of resolution after anti-inflammatory therapy and confirmed caseating granulomas).",
+  "case_prompt": "A 73-year-old male is evaluated for multiple bilateral pulmonary nodules incidentally detected on a routine chest CT one month prior. The scan identified five discrete lesions: an 18.3 mm nodule in the anterior segment of the right upper lobe (RUL), an 18.6 mm nodule in the posterior segment of the RUL, a 20.1 mm nodule in the dorsal segment of the right lower lobe (RLL), a 6.0 mm nodule in the posterior apical segment of the left upper lobe (LUL), and a 16.2 mm nodule in the dorsal segment of the left lower lobe (LLL). An empiric 14-day course of anti-inflammatory therapy was administered to assess for reversible inflammatory etiology. Subsequent 18F-FDG PET-CT reveals persistent bilateral nodules with marked hypermetabolism concerning for multifocal malignancy, with SUVmax values of 13.94 (RUL anterior), 8.17 (RUL posterior), 11.39 (RLL), 7.23 (LUL), and 5.30 (LLL). He is completely asymptomatic. Physical examination reveals normal vital signs (temperature 36.2 °C, blood pressure 144/88 mmHg, heart rate 78 beats/min, respiratory rate 16 breaths/min), normal chest expansion, and clear vesicular breath sounds bilaterally. Electrocardiography shows normal sinus rhythm. Laboratory evaluations—including complete blood count, coagulation profile, hepatic and renal panels, and serologic screens for HIV, hepatitis B, hepatitis C, and syphilis—are all within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated metastatic lung cancer / multifocal malignancy",
+      "rule_out_reason": "Widespread metastatic carcinoma was the leading preoperative diagnosis given multiple bilateral nodules exhibiting marked 18F-FDG avidity on PET-CT; however, histopathology of the resected tissue demonstrated that multiple discrete hypermetabolic nodules were composed of chronic necrotizing granulomas rather than malignant metastasis.",
+      "quote": "On reevaluation with positron emission tomography-CT(PET-CT)after 14 days, multiple abnormal density shadows were detected in both lungs, accompanied by increased metabolic activity, suggesting malignancy. Among these, the SUVmax values were 13.94 for the nodule in the anterior segment of the RUL"
+    },
+    {
+      "candidate": "Benign non-specific reactive pneumonitis",
+      "rule_out_reason": "Transient infectious or non-specific inflammatory nodules were initially suspected, but the total absence of resolution following a 14-day anti-inflammatory trial and subsequent intense PET tracer uptake initially argued against simple reactive inflammation.",
+      "quote": "To rule out lung nodules caused by inflammatory conditions, the patient underwent anti-inflammatory treatment. On reevaluation with positron emission tomography-CT(PET-CT)after 14 days, multiple abnormal density shadows were detected in both lungs, accompanied by increased metabolic activity, suggesting malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the VATS wedge resection specimens revealed that the second RUL nodule and the LLL nodule exhibited extensive necrosis surrounded by chronic granulomatous inflammation characteristic of tuberculosis, existing synchronously with separate primary lung neoplasms and a hamartoma.",
+      "quote": "The intraoperative pathological diagnosis revealed squamous cell carcinoma for the nodule in the RUL(Nodule 1), chronic granulomatous inflammation suggestive of tuberculosis for the nodules in the RUL(Nodule 2), and LLL, invasive adenocarcinoma for the nodule in the RLL, and hamartoma for the nodule in the LUL. Postoperative pathological examination revealed the following findings: The nodule in the RUL (Nodule 1) is consistent with moderately to poorly differentiated squamous cell carcinoma, supported by immunohistochemical staining and morphological features. The tissue sample from the second nodule in the RUL exhibited extensive necrosis, surrounded by chronic granulomatous inflammation."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Clinical narrative stops prior to VATS resection. Zero-spoiler adherence verified."
+}

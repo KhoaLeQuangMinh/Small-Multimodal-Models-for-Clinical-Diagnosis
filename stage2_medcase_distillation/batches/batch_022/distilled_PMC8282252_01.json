@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8282252_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 16-year-old female with sickle beta-plus-thalassemia presents during the summer with high fever, chills, retro-orbital headache, diffuse myalgias, abdominal pain, marked jaundice, and rapid third-space plasma leakage (moderate ascites and bilateral pleural effusions). In a patient with underlying sickle cell disease, jaundice and hepatic tenderness typically evoke acute sickle hepatic crisis, acute viral hepatitis, or biliary tract disease, potentially obscuring an epidemic mosquito-borne arbovirus causing severe plasma leakage and triggering sickle cell intrahepatic cholestasis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the initial triage physical examination, baseline outpatient laboratory review, arterial blood gas analysis showing metabolic acidosis, and admission abdominal ultrasonography, prior to the disclosure of confirmatory arboviral serologies and subsequent rapid deterioration.\n3. Differential Distinctions: Acute viral hepatitis (A, B, C) is excluded by non-reactive viral serologies. Choledocholithiasis and biliary duct obstruction are ruled out by ultrasonography demonstrating normal biliary duct caliber and no gallstones. The presence of summer onset, retro-orbital pain, diffuse myalgias, and plasma leakage manifestations (ascites, bilateral effusions) points directly toward severe dengue triggering sickle cell intrahepatic cholestasis.",
+  "case_prompt": "A 16-year-old female with a history of sickle beta-plus-thalassemia (genotype S/beta+-thalassemia, not on hydroxyurea; baseline outpatient laboratory values: hemoglobin 11.7 g/dL, mean corpuscular volume 62 fL, leukocyte count 6.7 x 10^9/L, platelet count 123 x 10^9/L) is admitted during the summer with a 4-day history of diffuse myalgia, retro-orbital headache, abdominal pain, fever, and chills.\n\nOn physical examination, the patient appears pale and visibly icteric. The blood pressure is normal, heart rate is 123 beats per minute, and arterial oxygen saturation is 99% on ambient air. The liver is palpable 1 cm below the right costal margin; the spleen is not palpable.\n\nArterial blood gas analysis reveals metabolic acidosis with pH 7.29, partial pressure of carbon dioxide (pCO2) 28 mmHg, and bicarbonate (HCO3) 13.8 mmol/L. An admission abdominal ultrasound demonstrates hepatosplenomegaly, moderate ascites, and bilateral pleural effusions, without gallstones or dilatation of either intrahepatic or extrahepatic bile ducts.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis (A, B, and C)",
+      "rule_out_reason": "Acute viral infection of the liver was considered due to acute fever, jaundice, and hepatomegaly in a patient with a hemoglobinopathy, but specific viral serologic panels were non-reactive.",
+      "quote": "Serology for viral hepatitis (A, B, and C) was non-reactive."
+    },
+    {
+      "candidate": "Biliary Tract Obstruction / Choledocholithiasis",
+      "rule_out_reason": "Biliary disease or choledocholithiasis was considered given the acute right upper quadrant pain and jaundice in a patient at risk for pigmented gallstones, but imaging confirmed normal ductal caliber and no lithiasis.",
+      "quote": "Abdominal ultrasound revealed hepatosplenomegaly, moderate ascites, and bilateral pleural effusion without detection of gallstones or dilatation of the intrahepatic and extrahepatic bile ducts."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Hemorrhagic Fever / Severe Dengue",
+      "rule_out_reason": "The clinical picture of acute retro-orbital headache, severe myalgias, summer presentation in an endemic region, and evidence of systemic plasma leakage (ascites and pleural effusions) precipitating sickle cell intrahepatic cholestasis was confirmed by reactive IgM serology.",
+      "quote": "Based on the local epidemiological, clinical, and laboratory data for a SCD patient along with serological confirmation of dengue (IgM reagent - risk group D according to the criteria of the Brazilian Ministry of Health), the diagnosis of SCIC associated with dengue (dengue hemorrhagic fever) was considered."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission triage findings with zero disease/pathogen spoilers."
+}

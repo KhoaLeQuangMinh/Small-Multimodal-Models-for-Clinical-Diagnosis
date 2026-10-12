@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2732509_02",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A 38-year-old physician develops acute severe illness with high fever, marked asthenia, petechiae, soft palate enanthem, respiratory symptoms, and severe bicytopenia (leukopenia and thrombocytopenia) following occupational exposure (intubating a critically ill patient). The combination of hemorrhagic cutaneous manifestations, respiratory symptoms, and severe cytopenia raises a broad differential including sepsis-induced disseminated intravascular coagulation and severe atypical respiratory infection.\n2. Admission Breakpoint: The breakpoint is set at hospital admission following initial physical examination and urgent complete blood count/coagulation screening, prior to viral immunoprecipitation, RT-PCR amplification, and ribavirin therapy.\n3. Differential Distinctions: Disseminated intravascular coagulation (DIC) was suspected given prominent petechiae and profound cytopenias, but ruled out by normal coagulation profile without consumption coagulopathy. Severe atypical pneumonia with secondary sepsis was considered due to respiratory signs, but excluded by the distinctive oral enanthem, petechial rash, and lack of primary bacterial etiology. Nested RT-PCR identifying specific viral RNA along with precipitin serology confirmed Crimean-Congo hemorrhagic fever.",
+  "case_prompt": "A 38-year-old physician presented with the acute onset of high fever, profound asthenia, and severe systemic illness. Several days prior, he had performed endotracheal intubation on a critically ill patient admitted to the hospital in Kosovo.\n\nOn physical examination, he was acutely toxic and febrile. Examination of the skin and mucous membranes revealed petechiae and an exanthema of the soft palate. Respiratory examination demonstrated signs and symptoms consistent with pneumonia.\n\nInitial triage laboratory investigations revealed leukopenia with a white blood cell count of 3 x 10^9/L and thrombocytopenia (erythrocyte/platelet count reported at 80 x 10^9/L). Coagulation testing showed no evidence of disseminated intravascular coagulation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Intravascular Coagulation (DIC) / Sepsis-Induced Coagulopathy",
+      "rule_out_reason": "Considered due to petechiae, mucosal bleeding signs, high fever, and marked thrombocytopenia, but ruled out by coagulation testing showing no evidence of consumptive coagulopathy.",
+      "quote": "No evidence of disseminated intravascular coagulation was observed."
+    },
+    {
+      "candidate": "Severe Community-Acquired / Atypical Bacterial Pneumonia with Sepsis",
+      "rule_out_reason": "Considered given fever, asthenia, and respiratory manifestations, but the presence of soft palate enanthem, petechiae, and direct occupational exposure during airway instrumentation pointed to a nosocomial viral hemorrhagic syndrome.",
+      "quote": "On July 6, the 38-year-old physician who had intubated the index patient when she was admitted became severely ill, with high fever, asthenia, petechiae, exanthema of soft palate, pneumonia symptoms, leukopenia, and thrombocytopenia (leukocyte count: 3x109/L; erythrocyte count: 80x109/L)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Viral RNA extraction from serum and whole blood followed by nested RT-PCR targeting the small (S) RNA segment yielded a specific 260-bp band identical to the index patient, confirming Crimean-Congo hemorrhagic fever virus infection.",
+      "quote": "Complementary DNA was amplified by nested polymerase chain reaction (PCR) by using primers from the small (S) RNA segment of C-CHFV. We found a specific 260-bp band in both cases."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation sanitized of virus nomenclature and molecular testing. Molecular amplification and serology reserved for diagnostic reasoning."
+}

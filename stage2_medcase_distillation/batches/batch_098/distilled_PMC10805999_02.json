@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10805999_02",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 43-year-old previously healthy man presented with recurrent generalized tonic-clonic seizures spanning 12 months, with an acute seizure upon hospital arrival requiring intravenous benzodiazepine abortive therapy. The lack of fever, focal neurological signs, or metabolic derangements raised diagnostic questions between late-onset idiopathic epilepsy, toxic/withdrawal seizure, and an endemic parasitic structural brain lesion given his history of pig farming and poor community sanitation.\n2. Admission Breakpoint: The breakpoint occurs following acute seizure termination with intravenous diazepam, clinical recovery and physical/neurological examination, and return of baseline laboratory investigations (blood glucose, electrolytes, CBC, organ function panels, HIV), immediately prior to contrast-enhanced computed tomography of the head.\n3. Differential Distinctions: Idiopathic generalized epilepsy was improbable due to adult onset without family history. Acute bacterial or viral meningoencephalitis was ruled out by normal temperature, lack of nuchal rigidity (negative Kernig's sign), and normal hematologic values. Toxic or metabolic seizures were excluded by normal blood glucose, electrolytes, and absence of substance abuse. The diagnosis of parenchymal neurocysticercosis was established by contrast-enhanced head CT showing characteristic frontal rim-enhancing cystic lesions with eccentric hyperdense internal scolex foci alongside a calcified parietal nodule.",
+  "case_prompt": "A 43-year-old man with no history of chronic medical illness presented to the emergency department following an acute seizure episode. While asleep, family members observed sudden generalized body stiffening followed rapidly by rhythmic clonic jerking of all four limbs lasting approximately 45 seconds, during which he was unresponsive. The episode was not associated with tongue biting, urinary or fecal incontinence, or oral foaming. He had experienced two similar episodes of generalized convulsions over the preceding 12 months; he had been briefly admitted to a clinic during the first episode but was subsequently lost to medical follow-up. He had no family history of epilepsy and had never traveled outside of Ghana. He was a non-smoker, consumed alcohol occasionally, and denied illicit drug use. He reported regular pork consumption, a history of pig farming, and residence in a rural community characterized by free-ranging pigs and limited sanitation infrastructure. Upon arrival at the emergency department, he suffered another generalized convulsive seizure that was terminated with intravenous diazepam.\n\nFollowing postictal recovery, physical examination revealed an afebrile man (temperature 37.1 °C) with a regular pulse of 63 beats per minute, blood pressure of 117/63 mmHg, and no respiratory distress. He was fully conscious, oriented, anicteric, without pallor, wasting, tongue lacerations, oral lesions, or lymphadenopathy. Neurological examination revealed no focal motor or sensory deficits. The neck was supple with a negative Kernig sign.\n\nInitial emergency laboratory testing revealed a random blood glucose of 6.6 mmol/L. Complete blood count, serum electrolytes (sodium, potassium, calcium, magnesium), renal function tests, and liver function panels were all within normal limits. HIV serologic testing was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Generalized Epilepsy",
+      "rule_out_reason": "Considered due to recurrent unprovoked generalized seizures occurring over a 12-month interval in a previously healthy adult, but adult-onset presentation without childhood history or family history of epilepsy suggested a secondary structural brain pathology.",
+      "quote": "He had had two similar episodes of generalized seizures in the preceding 12 months... There was no family history of epilepsy and he had never traveled outside of Ghana."
+    },
+    {
+      "candidate": "Acute Meningoencephalitis / Central Nervous System Infection",
+      "rule_out_reason": "Acute recurrent convulsions in an endemic environment could indicate infectious encephalitis or meningitis; however, the patient was completely afebrile, alert postictally, had a supple neck with negative Kernig's sign, and displayed normal white blood cell counts.",
+      "quote": "On physical examination, he was afebrile (37.1 C)... He was fully conscious with no obvious neurologic deficit. His neck was supple with negative Kernig's sign."
+    },
+    {
+      "candidate": "Toxic or Metabolic Seizure / Alcohol-Related Convulsion",
+      "rule_out_reason": "Electrolyte disturbances, hypoglycemia, and alcohol withdrawal can precipitate acute generalized seizures in adults; excluded by normal random blood glucose, normal serum electrolytes and calcium/magnesium, and denial of chronic heavy drinking or substance abuse.",
+      "quote": "He was a non-smoker and also drank alcohol occasionally but did not use illicit drugs... Random blood sugar was 6.6 mmol/L... Laboratory investigations revealed normal complete blood count, renal and liver biochemistries, serum electrolytes (Ca2+, Mg2+, Na+, K+) and negative HIV status."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast-enhanced head CT demonstrated pathognomonic rim-enhancing cystic lesions with eccentric internal hyperdense foci (scolex) in both frontal lobes without perilesional edema, accompanied by a calcified cortical nodule in the left parietal region, establishing vesicular and calcified parenchymal neurocysticercosis.",
+      "quote": "Contrast enhanced CT scan of the head showed rim-enhancing, cystic lesions with eccentric internal hyperdense foci in both frontal lobes (Figure 3). There was no perilesional edema. Also noted was a calcified cortical nodule in the left parietal region (Figure 4). A diagnosis of vesicular and calcified stages of parenchymal neurocysticercosis was made."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation completed in accordance with Stanford MedCaseReasoning methodology. Admission prompt captures clinical, epidemiological, and baseline laboratory findings while strictly avoiding diagnostic neuroimaging spoilers. Differential reasoning utilizes exact quotes from the source text."
+}

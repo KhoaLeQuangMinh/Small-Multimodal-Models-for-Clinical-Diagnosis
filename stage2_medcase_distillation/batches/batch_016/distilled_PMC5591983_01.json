@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5591983_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 43-year-old newly diagnosed HIV-positive patient presenting with subacute lymphocytic meningitis. He sequentially tested positive for neurosyphilis (reactive RPR and CSF VDRL) and cryptococcal meningitis (positive CSF cryptococcal antigen), but experienced refractory neurological symptoms and progressive posterior fossa leptomeningeal enhancement. The central challenge is recognizing that these two documented opportunistic pathogens coexisted with a third indolent pathogen—Mycobacterium tuberculosis—causing chronic basilar meningitis.\n2. Admission Breakpoint: Admission clinical evaluation concludes following the history of headache, fever, nausea, and vomiting for 2 weeks, normal vital signs, mild cervical stiffness on examination, baseline laboratories (WBC 6.7 k/uL, hemoglobin 10.8 g/dL, platelet count 172 K/uL, normal chemistry panel, reactive rapid HIV test), unremarkable chest X-ray and head CT, and initial CSF analysis showing lymphocytic pleocytosis (73 leukocytes/mm3, 96% lymphocytes), elevated protein (112 mg/dL), and low glucose (37 mg/dL). It stops immediately before CD4/viral load, syphilis serology, cryptococcal antigen, and mycobacterial culture results.\n3. Differential Distinctions: Acute bacterial meningitis is excluded by the subacute course and lymphocytic pleocytosis. Viral meningoencephalitis is excluded by marked hypoglycorrhachia. Neurosyphilis and cryptococcal meningitis were confirmed co-infections that explained initial findings but failed to arrest posterior fossa disease progression, which was ultimately caused by tuberculous meningitis confirmed by CSF culture.",
+  "case_prompt": "A 43-year-old Hispanic male presented to the emergency department with frontal headache, fever, nausea, and vomiting that had been ongoing for two weeks. His medical history was notable for herpes zoster ophthalmicus two years prior.\n\nOn admission, vital signs were within normal limits. Neurological examination was remarkable for mild cervical stiffness and pain with neck flexion, without focal neurologic deficits.\n\nInitial laboratory studies revealed a white blood cell count of 6.7 x 10^3/uL, hemoglobin of 10.8 g/dL, and platelet count of 172 x 10^3/uL. A rapid HIV test was reactive. The complete chemistry panel was within normal limits. Chest radiography showed no acute cardiopulmonary abnormalities. Brain computed tomography did not disclose any acute abnormalities. Lumbar puncture demonstrated clear cerebrospinal fluid with a white blood cell count of 73 leukocytes/mm^3 (96% lymphocytes), protein of 112 mg/dL, and glucose of 37 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial meningitis",
+      "rule_out_reason": "Considered due to fever, headache, vomiting, and meningismus, but excluded by the 2-week subacute duration, normal peripheral white blood cell count, and CSF lymphocytic predominance (96% lymphocytes).",
+      "quote": "Cerebrospinal fluid (CSF) analysis revealed high WBC count (73 leukocytes/mm3) with lymphocytic predominance (96%), high protein (112 mg/dL), and low glucose (37 mg/dL)."
+    },
+    {
+      "candidate": "Viral meningoencephalitis",
+      "rule_out_reason": "Considered given the lymphocytic pleocytosis and elevated protein, but ruled out because viral meningitis typically features normal glucose, whereas this patient had marked hypoglycorrhachia (CSF glucose 37 mg/dL).",
+      "quote": "Cerebrospinal fluid (CSF) analysis revealed high WBC count (73 leukocytes/mm3) with lymphocytic predominance (96%), high protein (112 mg/dL), and low glucose (37 mg/dL)."
+    },
+    {
+      "candidate": "Neurosyphilis and Cryptococcal meningitis (concomitant infections)",
+      "rule_out_reason": "Both were documented and treated with penicillin and amphotericin/flucytosine, but neither accounted for persistent posterior fossa leptomeningeal enhancement and progressive cerebellar signs.",
+      "quote": "A repeat MRI showed improvement of leptomeningeal enhancement supratentorially but progression of leptomeningeal enhancement and T2/FLAIR signal abnormality within the posterior fossa (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when CSF culture grew Mycobacterium tuberculosis, confirmed by PCR restriction analysis (PRA-hsp65), establishing tuberculous meningitis as the coexisting etiology of chronic basilar meningitis.",
+      "quote": "Two weeks after discharge, CSF culture from recent hospital admission grew Mycobacterium tuberculosis. Identification was confirmed by PCR restriction analysis- (PRA-) hsp65."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly halts before specific serologies, cryptococcal antigen, and mycobacterial culture. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

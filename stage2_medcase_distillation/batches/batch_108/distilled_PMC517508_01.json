@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC517508_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old immigrant presenting with acute wet purpura and severe profound thrombocytopenia (platelet count 7.6 × 10⁹/L) mimicking primary immune thrombocytopenic purpura (ITP) or acute hematologic malignancy, which masked underlying bilateral cavitary pulmonary disease.\n2. Admission Breakpoint: Admission triage ends following history, physical exam (noting oral hemorrhagic bullae, petechiae, and apical amphoric souffle), emergency CBC/coagulation tests, and initial chest radiography/CT, strictly prior to bone marrow aspiration/biopsy and sputum acid-fast bacilli staining.\n3. Differential Distinctions: Primary idiopathic ITP causes profound thrombocytopenia and mucocutaneous bleeding with normal bone marrow megakaryopoiesis, but does not explain bilateral apical cavitary pulmonary infiltrates or subacute wasting; hematologic malignancy/HLH causes severe cytopenias and fever, but bone marrow demonstrates normal trilineage maturation without hemophagocytosis or neoplastic infiltration.",
+  "case_prompt": "A 29-year-old previously healthy immigrant man from Kazakhstan presented to the emergency department with new-onset severe hemoptysis, gross macroscopic hematuria, and extensive cutaneous petechiae over his lower extremities. For the preceding 2 months, he had suffered from unexplained progressive weight loss, intermittent fevers, drenching night sweats, and cough. He reported no previous hematologic, hepatic, or renal conditions, and took no medications.\n\nOn physical examination, he appeared poorly nourished and acutely ill. Blood pressure was 100/70 mmHg, pulse rate 100 beats/min, and body temperature 37.2°C. Oral cavity examination revealed hemorrhagic bullae on the tongue and buccal mucosa. Cutaneous inspection demonstrated extensive petechiae over both lower extremities. Auscultation of the chest revealed an amphoric souffle over the right lung apex. There was no palpable peripheral lymphadenopathy or hepatosplenomegaly.\n\nInitial emergency laboratory tests revealed a white blood cell count of 25.1 × 10⁹/L (58% neutrophils, 29% bands, 9% lymphocytes, 4% monocytes), hemoglobin 11.2 g/dL, hematocrit 36%, MCV 84 fL, reticulocyte count 1%, and profound thrombocytopenia with a platelet count of 7.6 × 10⁹/L. Erythrocyte sedimentation rate (ESR) was 110 mm/h. Peripheral blood smear confirmed a severe paucity of platelets. Coagulation profile, including prothrombin time (PT), activated partial thromboplastin time (aPTT), and fibrin degradation products (FDP), was completely normal. Routine serum biochemistry panel and liver function tests were normal. Emergency chest radiography and computed tomography (CT) of the chest revealed bilateral patchy infiltrates and walled cavities within both the right and left upper pulmonary lobes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Immune Thrombocytopenic Purpura (ITP)",
+      "rule_out_reason": "Profound isolated thrombocytopenia, extensive mucosal wet purpura, and normal coagulation studies initially suggested primary autoimmune ITP; however, bone marrow showed reactive megakaryocytic hyperplasia and the patient harbored advanced bilateral cavitary pulmonary disease driving secondary immune-mediated platelet destruction.",
+      "quote": "A bone marrow aspiration demonstrated hypercellularity of all cell lines with normal maturation of myeloid and erythroid precursors. Megakaryocytes were increased in number with normal morphology."
+    },
+    {
+      "candidate": "Hematologic Malignancy / Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "Severe thrombocytopenia, leukocytosis with marked bandemia (29% bands), fever, and cachexia raised concern for an acute myeloproliferative disorder or secondary hemophagocytic lymphohistiocytosis; however, bone marrow examination showed intact trilineage maturation and explicitly ruled out malignancy, granulomas, or hemophagocytosis.",
+      "quote": "No granuloma or hemophagocytosis was detected on bone marrow biopsy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency chest imaging revealing bilateral upper lobe walled cavities, followed immediately by strongly positive sputum acid-fast bacilli smear and isolation of Mycobacterium tuberculosis complex, confirmed pulmonary tuberculosis as the driver of secondary immune thrombocytopenia.",
+      "quote": "Acid-fast bacilli were strongly positive in sputum (Figure 3). Bone marrow aspirate and urine for acid-fast bacilli were negative. Sputum culture yielded mycobacterium tuberculosis complex."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clinical presentation captures emergency triage presentation before bone marrow biopsy and sputum smear microscopy. Zero pathogen spoilers."
+}

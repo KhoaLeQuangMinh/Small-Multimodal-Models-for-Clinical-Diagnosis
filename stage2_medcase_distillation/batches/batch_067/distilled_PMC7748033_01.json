@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7748033_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A previously healthy 24-year-old male in Goiás State, Brazil, presents with a classic arboviral prodrome (fever, diffuse myalgias, severe headache, retro-orbital pain) followed on day four—as fever abates—by dramatic vascular collapse featuring pleuritic chest pain, continuous abdominal pain, peripheral purpura, lower extremity edema, worsening thrombocytopenia, and acute pericardial effusion with tamponade. The clinical tension lies in distinguishing severe viral capillary leak and reactive immune complex vasculitis from systemic autoimmune vasculitis, acute bacterial pericarditis, or severe sepsis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after emergency pericardiocentesis for cardiac tamponade, triage laboratory assessment (showing progressive thrombocytopenia, elevated transaminases, mild renal impairment), and chest CT showing pulmonary congestion, prior to send-out autoimmune serologies, viral antibody titers, and skin biopsy histopathology.\n3. Differential Distinctions: Systemic autoimmune vasculitis (SLE, ANCA-associated vasculitis) is ruled out by normal ANA, ANCA, and complement levels. Acute bacterial pericarditis/septicemia is excluded by sterile blood and pericardial fluid cultures. Common herpesviruses (EBV, CMV), viral hepatitis, and HIV are ruled out by serologic evaluations.",
+  "case_prompt": "A 24-year-old male with no previous medical comorbidities presented to an emergency hospital in Goiás State, Brazil, with high fever, severe headache, retro-orbital pain, and diffuse myalgias. He received intravenous hydration and was discharged home for supportive care.\n\nOn the fourth day of illness, despite defervescence and improvement of systemic constitutional symptoms, the patient developed acute respiratory-dependent chest pain, persistent continuous abdominal pain, lower extremity edema, and newly erupting purpuric lesions over his extremities. He denied oral ulcers, arthralgias, arthritis, or visual disturbances.\n\nInitial complete blood count demonstrated thrombocytopenia with a platelet count of 105,000/mm³. Within 48 hours of hospital admission, the patient developed progressive dyspnea and an audible pericardial friction rub was detected on physical examination. Bedside transthoracic echocardiography revealed a large pericardial effusion with signs of cardiac tamponade, prompting emergent pericardiocentesis with drainage of 200 mL of yellowish fluid.\n\nSubsequent laboratory evaluations revealed worsening thrombocytopenia with a platelet count falling to 80,000/mm³, blood urea of 43 mg/dL, serum creatinine of 1.10 mg/dL, aspartate aminotransferase (AST) of 97 U/L, and alanine aminotransferase (ALT) of 69 U/L. Urinalysis showed no abnormalities in urinary sediment. A chest computed tomography (CT) scan revealed diffuse ground-glass opacities and signs of pulmonary congestion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Autoimmune Vasculitis / Systemic Lupus Erythematosus",
+      "rule_out_reason": "The sudden emergence of lower extremity purpuric lesions, severe serositis with pericardial tamponade, and transaminitis strongly suggested acute systemic autoimmune vasculitis or SLE, but autoantibody and complement panels were entirely normal.",
+      "quote": "Furthermore, ANA, ANCA, hepatitis B, C, HIV, blood cultures and the serum complement were normal."
+    },
+    {
+      "candidate": "Acute Bacterial Pericarditis / Pyogenic Sepsis",
+      "rule_out_reason": "Exudative pericardial effusion, high neutrophil predominance in pericardial fluid, and pulmonary infiltrates prompted empiric therapy with ceftriaxone and oxacillin, but microbiological testing showed no bacterial growth.",
+      "quote": "Empirically, antibiotic therapy with ceftriaxone and oxacillin was started for a possible bacterial infection... negative BAAR test... in addition to negative bacterial cultures."
+    },
+    {
+      "candidate": "Viral Carditis (Cytomegalovirus, Epstein-Barr Virus, HIV, Hepatitis B/C)",
+      "rule_out_reason": "Cardiotropic and systemic viruses known to cause myopericarditis and reactive rashes were evaluated serologically, but active infection was excluded.",
+      "quote": "The serology for cytomegalovirus and Epstein-Barr was negative for IgM, but positive for IgG... ANA, ANCA, hepatitis B, C, HIV, blood cultures and the serum complement were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat immunochromatographic testing on day 10 demonstrated clear seroconversion with positive IgM and IgG antibodies following an acute illness characterized by retro-orbital pain, severe thrombocytopenia, capillary leakage/pericardial effusion, and biopsy-proven leukocytoclastic vasculitis.",
+      "quote": "As the polymerase chain reaction (PCR) and the detection of the virus nonstructural protein 1 (NS1) were not available, IgM and IgG tests for dengue were performed by an immunochromatographic method on the seventh day. The results were non-reactive for both, IgM and IgG antibodies. Later, on the tenth day, the test was repeated and this time the results were positive for both, IgM and IgG."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to repeat day-10 serology, autoimmune titers, and skin biopsy results. Verbatim quotes support all differential candidates and the diagnostic pivot."
+}

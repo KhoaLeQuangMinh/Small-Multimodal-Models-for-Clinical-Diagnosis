@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10892368_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old unmarried male presents with chronic unilateral scrotal swelling, purulent discharge from a cutaneous sinus tract, and low-grade fever, unresponsive to empiric doxycycline. A previous chronic wrist arthropathy had been worked up extensively with inconclusive biopsies. The tension lies in distinguishing bacterial epididymo-orchitis, testicular tumor, or sexually transmitted infection from isolated extrapulmonary urogenital tuberculosis.\n2. Admission Breakpoint: Admission triage concludes after scrotal physical examination, baseline inflammatory markers (elevated CRP 4.8 mg/dL, ESR 9 mm/hr), serologic screening, and scrotal ultrasonography (demonstrating epididymo-orchitis with sinus tract), immediately prior to microbiological culture, acid-fast staining, and molecular nucleic acid amplification of the sinus discharge.\n3. Differential Distinctions: Sexually transmitted epididymo-orchitis (Gonococcal/Chlamydial) responds to doxycycline/ceftriaxone and occurs in sexually active patients. Testicular neoplasm presents as a solid parenchymal tumor without sinus tracts. Isolated testicular tuberculosis is confirmed by cartridge-based nucleic acid amplification (CBNAAT) and line probe assay detecting MTBC.",
+  "case_prompt": "A 23-year-old unmarried male university student from Haryana, India, presented with a 1-month history of left scrotal swelling, purulent discharge from a cutaneous sinus on the posterior scrotum for 15 days, and intermittent fever for 1 week. He denied sexual activity, urethral discharge, local trauma, or prior surgeries. Empiric therapy with oral doxycycline (100 mg twice daily) for suspected sexually transmitted epididymitis had failed to produce clinical improvement. He had received routine childhood immunizations and reported no known chronic infectious contacts. One year earlier, he had experienced chronic pain and swelling of the right wrist; evaluation at that time had revealed negative rheumatoid factor, anti-CCP, and ANA, non-reactive viral serologies, and an unremarkable chest radiograph. On physical examination upon admission, there was mild swelling of the left testis with palpable induration of the left epididymis and an active draining sinus tract on the posterior scrotal wall; systemic examination was normal. Laboratory testing revealed a C-reactive protein of 4.8 mg/dL and an erythrocyte sedimentation rate of 9 mm/hour. Scrotal ultrasonography revealed heterogeneous echotexture with altered architecture of the left testis and epididymis, an enlarged left epididymal head and body (15 mm in diameter) with increased vascularity, and a cutaneous sinus tract, while the right testis was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sexually Transmitted Epididymo-Orchitis (Chlamydia / Gonorrhea)",
+      "rule_out_reason": "Common etiology of acute-to-subacute unilateral epididymitis in young males; ruled out by denial of sexual contact, absence of urethral discharge, and lack of response to empiric oral doxycycline.",
+      "quote": "The patient was unmarried and denied having a sexual partner."
+    },
+    {
+      "candidate": "Acute Pyogenic Bacterial Epididymal Abscess",
+      "rule_out_reason": "Considered due to scrotal enlargement, sinus drainage, and elevated CRP, but excluded by sinus swab Gram stain showing no organisms or pus cells and aerobic cultures yielding only skin flora.",
+      "quote": "A swab was taken from the discharging sinus and sent for microbiological investigations like Gram staining, which did not show pus cells or microorganisms. Aerobic culture grew skin contaminants after 48 hours of aerobic incubation at 37 degrees Celsius."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Extrapulmonary Genitourinary Tuberculosis (Testicular Tuberculosis)",
+      "rule_out_reason": "Molecular detection of Mycobacterium tuberculosis complex from the scrotal sinus discharge by CBNAAT (GeneXpert Ultra) and line probe assay confirmed urogenital Tuberculosis, with complete resolution on four-drug therapy.",
+      "quote": "A CBNAAT was performed using GeneXpert (Ultra), in which MTBC was detected (trace) and rifampicin resistance was indeterminate. A line probe assay was performed on the sample using Genotype MTBDRPlus, which detected the MTBC and was susceptible to rifampicin and isoniazid (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10892368_01. The admission narrative details the chronic draining sinus and ultrasound findings while withholding microbiological staining and CBNAAT results. Verbatim quotes verify all entries."
+}

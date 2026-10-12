@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8432228_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 14-month-old infant presents with fever, hepatosplenomegaly, bicytopenia, hypoxemia, extreme hyperferritinemia, and rapidly progressive liver failure with Klebsiella bacteremic sepsis. The presentation directly fulfills criteria for hemophagocytic lymphohistiocytosis (HLH), making it challenging to differentiate primary familial HLH or acute leukemia from secondary HLH driven by visceral leishmaniasis.\n2. Admission Breakpoint: Admission presentation ends after documentation of fever, hepatosplenomegaly, bicytopenia, hypoxemia, and elevated serum ferritin, immediately before bone marrow aspiration (myelogram) and microbiological/serological identification.\n3. Differential Distinctions: Primary familial HLH presents in infancy with identical hyperinflammatory features but lacks intracellular amastigotes on bone marrow exam and does not resolve with antiparasitic therapy. Secondary bacterial sepsis with Klebsiella bacteremia represented an opportunistic complication of parasite-induced bone marrow suppression and reticuloendothelial dysfunction rather than the primary disease.",
+  "case_prompt": "A 14-month-old female infant was admitted to the hospital with fever, marked hepatosplenomegaly, bicytopenia, hypoxemia, and significantly elevated serum ferritin.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary (Familial) Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "The infant met classic diagnostic criteria for HLH based on fever, hepatosplenomegaly, bicytopenia, and severe hyperferritinemia; however, bone marrow examination revealed intracellular protozoal amastigotes, proving that the hemophagocytosis was reactive and secondary to an infectious parasitic trigger rather than an inherited genetic disorder.",
+      "quote": "A 14-month-old female infant was admitted with fever, hepatosplenomegaly, bicytopenia, hypoxemia, and increased serum ferritin."
+    },
+    {
+      "candidate": "Primary Gram-negative bacterial sepsis / Septic shock",
+      "rule_out_reason": "The patient developed septic complications with skin lesions and blood cultures grew Klebsiella spp., requiring broad-spectrum coverage with cefepime and vancomycin; however, this bacteremia was a secondary opportunistic infection arising in the background of parasite-induced reticuloendothelial disease and liver failure.",
+      "quote": "She was treated with cefepime and vancomycin due to sepsis (blood cultures revealed Klebsiella spp., and she had skin lesions)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnostic breakthrough occurred on bone marrow examination (myelogram), which revealed Leishmania spp. along with hemophagocytosis, prompting initiation of liposomal amphotericin B and corticosteroids with clinical cure.",
+      "quote": "A myelogram revealed Leishmania spp. and hemophagocytosis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

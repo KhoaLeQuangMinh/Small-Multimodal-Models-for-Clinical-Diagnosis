@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10328157_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 51-year-old female presents with 4 years of non-bloody diarrhea, epigastric pain, and profound weight loss without pulmonary symptoms or fever. Initial negative tuberculin skin testing and colonoscopic findings of terminal ileal aphthous ulcers strongly mimicked Crohn's disease, leading to ineffective steroid treatment before repeat testing revealed mycobacterial etiology.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after initial physical examination, basic hematology, biochemistry, stool microscopy, abdominal ultrasound, and plain chest radiography, stopping strictly prior to endoscopic evaluation and tuberculin skin testing.\n3. Differential Distinctions: Intestinal tuberculosis can be distinguished from Crohn's disease by lack of response to corticosteroids and positive acid-fast staining or culture on mucosal biopsy; negative stool microscopy distinguishes it from chronic protozoal/parasitic enteritis; absence of mucosal erythema or response to triple therapy excludes active Helicobacter pylori disease.",
+  "case_prompt": "A 51-year-old female presents with a 4-year history of epigastric abdominal pain, loose stools, and significant weight loss despite a good appetite and adequate oral intake. The abdominal discomfort is non-radiating and unrelated to meals. She reports episodic watery, mucoid bowel movements occurring five to six times per day, without blood or foul odor. She denies fevers, chills, diaphoresis, evening temperature spikes, vomiting, jaundice, oral aphthae, or arthralgias. Past medical history is notable for generalized anxiety disorder managed with selective serotonin reuptake inhibitors, previous treatment with triple therapy for dyspeptic symptoms, and vitamin D supplementation for deficiency. She has no prior surgeries.\n\nPhysical examination reveals an afebrile woman in no acute distress without peripheral lymphadenopathy or cutaneous abnormalities. The abdomen is soft, non-tender, and non-distended, with no palpable masses or organomegaly. Digital rectal examination is non-tender with no palpable rectal masses.\n\nInitial hematology demonstrates a hemoglobin level of 13.6 g/dL, white blood cell count of 7,400/mm3 (57% neutrophils, 39% lymphocytes, 3% monocytes), and normal renal and hepatic panels. Autoimmune evaluation reveals an elevated anti-cyclic citrullinated peptide (anti-CCP) level of 22.83 U/mL and anti-nuclear antibody (ANA) titer of 81.31 AU/mL. Fecal occult blood testing is negative, and stool microscopy demonstrates no ova or parasites. Plain chest radiography shows no fibrosis or cavitary lesions, and transabdominal abdominopelvic ultrasonography is unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Crohn's disease",
+      "rule_out_reason": "Initial terminal ileal aphthous ulcerations with intervening normal mucosa suggested Crohn's disease, but the patient failed to improve on corticosteroid therapy and repeat mucosal staining demonstrated acid-fast bacilli.",
+      "quote": "CD was suspected and patient was treated with tapering dose of steroids for 3 weeks. However, patient's symptoms were not improving."
+    },
+    {
+      "candidate": "Helicobacter pylori infection",
+      "rule_out_reason": "The patient had previously received triple therapy for dyspepsia, but lower gastrointestinal symptoms persisted and follow-up non-invasive antigen testing was negative.",
+      "quote": "The stool test for occult blood was negative, and both the serum and stool tests for H. pylori were negative."
+    },
+    {
+      "candidate": "Intestinal parasitic infection",
+      "rule_out_reason": "Chronic watery diarrhea and significant weight loss raised suspicion for chronic parasitic or helminthic enteritis, but direct microscopic evaluation of stool specimens showed no ova or parasites.",
+      "quote": "no eggs or intestinal parasites were seen on stool microscopy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Failure of empiric steroid therapy prompted repeat tuberculin testing (which converted to a 27 mm induration) and a second colonoscopy with mucosal biopsy, where acid-fast bacilli staining identified Mycobacterium tuberculosis, leading to complete symptom resolution and weight gain on antitubercular therapy.",
+      "quote": "A repeat colonoscopy with biopsy was performed and specimen was sent for acid-fast bacilli (AFB) stain where M. tuberculosis was detected. The patient started on antitubercular therapy with rifampicin, isoniazid, pyrazinamide, and ethambutol according to the national guideline of Nepal.   Patient responded well to the antitubercular regimen leading to resolution of symptoms and weight gain."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to endoscopic evaluation and tuberculin skin testing. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

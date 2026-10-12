@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6488773_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presents with acute small bowel obstruction and peritonitis without any prior abdominal surgical history, co-occurring with chronic pulmonary symptoms and apical cavitary lesions. The critical challenge is recognizing that an acute mechanical catastrophe (small bowel volvulus) can be secondary to an intra-abdominal infectious granulomatous process (mesenteric tuberculous lymphadenitis).\n2. Admission Breakpoint: The breakpoint occurs following emergency stabilization, baseline laboratory evaluation, plain radiographs, and admission chest/abdominal CT scans demonstrating apical cavitary lung lesions, small bowel obstruction, and a 3-cm mesenteric mass, immediately prior to surgical exploration and targeted mycobacterial testing.\n3. Differential Distinctions: Postoperative adhesions are unlikely given the virgin abdomen. An acute incarcerated hernia or primary gastrointestinal malignancy/lymphoma is challenged by concurrent apical cavitary lung disease with high inflammatory markers in an immigrant from an endemic region.",
+  "case_prompt": "A 27-year-old patient originally from the Republic of Congo presented to the emergency department with severe cramping abdominal pain, vomiting, and diarrhea for 3 days, followed by cessation of bowel movements. The patient also reported a 1-month history of cough. Physical examination revealed dry mucous membranes, tachycardia, cough, and abnormal breath sounds in the right hemithorax. The abdomen was mildly distended without surgical scars. Palpation elicited diffuse tenderness, guarding, and rebound tenderness. The patient was afebrile.\n\nLaboratory evaluation revealed a hematocrit of 35.3%, hemoglobin of 11.5 g/dL, normal white blood cell count with 90.6% neutrophils and 4.22% lymphocytes, potassium 5.2 mEq/L, lactate dehydrogenase 305 U/L, C-reactive protein 11.2 mg/dL, and erythrocyte sedimentation rate 46 mm/hr. Chest radiography demonstrated right upper zone consolidation with cavitary changes. Upright abdominal radiography showed distended small bowel loops with multiple air-fluid levels characteristic of small bowel obstruction. A nasogastric tube was placed, and intravenous fluids and empiric antibiotics were initiated.\n\nContrast-enhanced computed tomography (CT) of the chest and abdomen confirmed small bowel obstruction with distended small bowel loops and multiple air-fluid levels. In addition, an approximately 3-cm mass of suspected lymphatic origin was identified in the mesentery. Chest CT sections revealed one large cavitary lesion and two contiguous smaller cavitary lesions in the right upper lobe accompanied by surrounding satellite consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Adhesive Small Bowel Obstruction",
+      "rule_out_reason": "Adhesions account for the vast majority of small bowel obstructions but typically occur following previous abdominal surgery. Inspection of this patient revealed a virgin abdomen without prior surgical history.",
+      "quote": "No surgical wounds were noticed."
+    },
+    {
+      "candidate": "Gastrointestinal Stromal Tumor or Mesenteric Lymphoma",
+      "rule_out_reason": "An isolated 3-cm mesenteric mass causing bowel tethering and obstruction can represent neoplasia; however, the presence of concurrent chronic cough, prominent upper-lobe cavitary pulmonary disease, and markedly elevated inflammatory markers suggests a unified systemic infectious process rather than isolated intra-abdominal malignancy.",
+      "quote": "In addition, a mass possibly of lymphatic constitution with a proximately 3 cm diameter was demonstrated on the mesentery"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Exploratory laparotomy confirmed small bowel volvulus caused by tethering to a mesenteric mass resembling caseating necrosis. Biopsy demonstrated necrotizing granulomatous lymphadenitis with Langhans giant cells, while sputum smear and culture confirmed Mycobacterium tuberculosis.",
+      "quote": "The small bowel was found dilated from the Treitz ligament until the middle of the jejunum where a small bowel loop was attached to the mesenteric mass, causing a small bowel volvulus. The loop was detached carefully with no need of enterotomy... The mass of the mesentery resembled a caseating necrosis of mesenteric lymph nodes... The result from Mantoux test suggested TB infection and antitubercular therapy with isoniazid (INH), rifampicin (RIF), pyrazinamide (PZA) and ethambutol (EMB) commenced immediately. The sputum smear microscopy was also found positive for mycobacteria infection... The culture results of the sputum came positive for M. tuberculosis after a month... The biopsy of the mass revealed granulomatous inflammation with central necrosis and infiltration with Langerhans giant cells."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for mesenteric tuberculous lymphadenitis with small bowel volvulus and pulmonary tuberculosis. Admission breakpoint strictly maintained before Mantoux test, sputum smear, and laparotomy."
+}

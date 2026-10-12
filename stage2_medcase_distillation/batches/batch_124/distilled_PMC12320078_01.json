@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12320078_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 14-year-old adolescent male presents with acute high fever, severe myalgias, oliguria, hypotension, marked thrombocytopenia (54,000/µL), leukocytosis (18,000/µL), and acute renal injury following agricultural exposure to stagnant water in a paddy field. The clinical tension lies in differentiating tropical hemorrhagic fevers (such as severe dengue) or septic shock from anicteric severe leptospirosis with incipient multiorgan failure.\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency admission, documentation of epidemiological freshwater exposure, physical examination, and initial triage laboratory testing (CBC, CRP, creatinine, liver enzymes), prior to confirmatory serological Microscopic Agglutination Testing (MAT) and later intensive care complications (pulmonary hemorrhage and PRES).\n3. Differential Distinctions: Dengue hemorrhagic fever presents with high fever, myalgias, thrombocytopenia, and plasma leakage, but typically exhibits leukopenia (not marked leukocytosis), low or moderate CRP, and absence of acute renal failure at onset. Acute bacterial sepsis from community-acquired pyogenic infection can produce leukocytosis, high CRP, and acute tubular necrosis, but blood cultures and microbiological panels were negative. The triad of direct agricultural stagnant water contact, marked neutrophilic leukocytosis, thrombocytopenia, and renal failure strongly indicates severe leptospirosis.",
+  "case_prompt": "A 14-year-old male from Sri Lanka presents to the hospital with a five-day history of high-grade fever, diffuse severe myalgia, and progressive oliguria (reduced urine output) of two days duration. His past medical and family history is unremarkable. Two weeks prior to presentation, he had reported direct environmental exposure to stagnant water while working in an agricultural paddy field.\n\nOn physical examination, the patient is febrile and hypotensive. Vital signs demonstrate an axillary temperature of 38.1°C, a heart rate of 112 beats per minute, and a blood pressure of 90/50 mmHg (corresponding to the 1st and 11th percentiles for his age and sex; height 177 cm, 87.5th percentile). Respiratory and neurological examinations are entirely normal. There is no scleral icterus, and no mucosal, conjunctival, or cutaneous petechial hemorrhages are detected.\n\nInitial triage investigations reveal marked leukocytosis with a total leukocyte count of 18 × 10³/µL (reference range: 4–11 × 10³/µL), significant thrombocytopenia with a platelet count of 54 × 10³/µL (reference range: 150–450 × 10³/µL), and normal hemoglobin. Inflammatory markers and renal function are markedly elevated, with a C-reactive protein (CRP) of 232 mg/dL (reference range: <6 mg/dL) and a serum creatinine of 2.46 mg/dL (reference range: 0.4–1.1 mg/dL). Coagulation parameters and liver function tests show no evidence of hepatic injury or coagulopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Dengue / Dengue Hemorrhagic Fever",
+      "rule_out_reason": "Although severe thrombocytopenia, high fever, and myalgias in a tropical endemic area strongly suggest dengue fever, the presence of marked neutrophilic leukocytosis (18,000/µL), highly elevated CRP (232 mg/dL), and acute renal failure at onset without hemoconcentration point away from dengue and toward a bacterial zoonosis.",
+      "quote": "The initial investigations revealed a total leucocyte count of 18 x 103/mul (reference: -4,11), a platelet count of 54 x 103/mul (150 - 450), and a normal haemoglobin. His C reactive protein (CRP) was 232 mg/dl (<6), and the serum creatinine was 2.46 mg/dl (0.4 - 1.1)."
+    },
+    {
+      "candidate": "Community-Acquired Bacterial Sepsis / Pyogenic Infection",
+      "rule_out_reason": "High fever, leukocytosis, elevated CRP, and acute tubular necrosis raised concern for severe bacterial sepsis or atypical respiratory pathogens, but blood cultures and microbiological testing were negative.",
+      "quote": "Blood cultures and microbiological evaluation for Mycoplasma, COVID-19 and influenza were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The history of exposure to stagnant paddy field water combined with a positive Microscopic Agglutination Test (MAT) titer of 1:160 confirmed acute leptospirosis, which later progressed to acute pulmonary hemorrhage and posterior reversible encephalopathy syndrome (PRES).",
+      "quote": "He reported exposure to stagnant water in a paddy field approximately two weeks before presentation... Leptospirosis was confirmed with a microscopic agglutination test (MAT) titre of 1:160."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning CPC format. The case_prompt cleanly isolates Day 1 admission triage findings before MAT serology and before late complications (pulmonary hemorrhage, PRES) develop. Zero pathogen spoilers in prompt."
+}

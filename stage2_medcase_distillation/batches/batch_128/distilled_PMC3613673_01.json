@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3613673_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: An 18-year-old male presents with continuous high-grade fever, delirium progressing to coma, right hypochondriac tenderness, profound thrombocytopenia, elevated transaminases/bilirubin, and overt disseminated intravascular coagulation (DIC). The diagnostic challenge is distinguishing acute bacterial sepsis or fulminant hepatic failure from severe cerebral malaria before targeted blood smears return.\n2. Admission Breakpoint: The admission breakpoint is established immediately after initial resuscitation, physical examination, and basic admission hematology/biochemistry (revealing severe thrombocytopenia, DIC, and conjugated hyperbilirubinemia), strictly prior to the blood film demonstration of Plasmodium falciparum ring forms and initiation of antimalarial therapy.\n3. Differential Distinctions: Acute bacterial sepsis with DIC (ruled out by sterile blood cultures and lack of leukocytosis), fulminant acute viral hepatitis (ruled out by lack of massive transaminitis and intraerythrocytic parasite detection), and thrombotic thrombocytopenic purpura (ruled out by blood smear revealing high-grade parasitemia). Demonstration of intra-erythrocytic ring forms of P. falciparum confirms cerebral malaria.",
+  "case_prompt": "An 18-year-old male presents with continuous high-grade fever without chills or rigors for one week, accompanied by vomiting, altered sensorium, delirium, and unresponsiveness of one-day duration. On physical examination, the patient is unconscious with pulse 82/min, respiratory rate 14/min, and blood pressure 110/60 mm Hg. Cardiopulmonary auscultation reveals normal S1 and S2 with clear lung fields. Abdominal examination reveals no organomegaly but marked tenderness in the right hypochondrium; plantar reflexes are downgoing. Due to deterioration in sensorium, endotracheal intubation and mechanical ventilation are initiated. Admission laboratory investigations show hemoglobin 12.9 g/dL, normal total leukocyte and differential counts, normal erythrocyte sedimentation rate, and severe thrombocytopenia. Urinalysis demonstrates trace albumin. Biochemical profile reveals total serum bilirubin 2.4 mg/dL, elevated alkaline phosphatase, elevated transaminases, and significantly raised lactate dehydrogenase. Coagulation profile demonstrates disseminated intravascular coagulation with prolonged prothrombin time, prolonged activated partial thromboplastin time, markedly reduced platelets, and fibrinogen 64 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial sepsis with Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "Severe bacterial sepsis and meningococcemia can present with high fever, delirium, shock, and DIC, but patient blood samples and transfused component cultures were completely sterile.",
+      "quote": "Blood components as well as the sample of the patient were submitted for culture, and the result was negative for both."
+    },
+    {
+      "candidate": "Fulminant acute viral hepatitis with hepatic encephalopathy",
+      "rule_out_reason": "Right upper quadrant tenderness, jaundice (bilirubin 2.4 mg/dL), coagulopathy, and coma raised concern for acute hepatic failure, but the coma was accompanied by heavy parasitic red blood cell infestation rather than primary hepatocyte necrosis.",
+      "quote": "Plasmodium falciparum ring forms: 1/1000 RBC were seen."
+    },
+    {
+      "candidate": "Thrombotic Thrombocytopenic Purpura (TTP)",
+      "rule_out_reason": "TTP can present with fever, profound thrombocytopenia, altered sensorium, and markedly elevated LDH, but the coagulopathy was marked by severe DIC with hypofibrinogenemia and blood films revealed direct parasitic invasion.",
+      "quote": "Disseminated intravascular coagulation (DIC) profile showed prolonged prothrombin time (PT), activated partial thromboplastin time (APTT), fibrinogen -64mg/dL, and markedly reduced platelets."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of peripheral blood revealing intra-erythrocytic Plasmodium falciparum ring forms (1 per 1000 RBC) in the setting of deep unarousable coma and multi-organ dysfunction, confirming severe cerebral malaria.",
+      "quote": "Plasmodium falciparum ring forms: 1/1000 RBC were seen."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint before blood film analysis and transfusion reaction workup. Zero mention of malaria, Plasmodium, or antimalarial therapy in prompt. Target disease is Malaria."
+}

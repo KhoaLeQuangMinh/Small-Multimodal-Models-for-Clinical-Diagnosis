@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10964487_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 48-year-old male from southern China presents with refractory fevers for two months, melena, severe jaundice, marked cytopenias, and newly unmasked advanced AIDS. Admission chest CT shows diffuse ground-glass infiltrates, pulmonary nodules, and lymphadenopathy, mimicking Pneumocystis jirovecii pneumonia, disseminated tuberculosis, or visceral leishmaniasis/histoplasmosis. The key challenge is identifying opportunistic thermal-dimorphic fungal dissemination (Talaromyces marneffei) endemic to Southeast Asia and southern China.\n2. Admission Breakpoint: Day 1 emergency / inpatient gastroenterology admission triage, including history of travel and residence in Guangdong Province, vital signs, physical exam showing jaundice and epigastric tenderness, baseline hematology/biochemistry demonstrating profound anemia, thrombocytopenia, liver dysfunction, coagulopathy, and HIV antibody positivity, and chest CT demonstrating ground-glass opacities and pulmonary nodules, immediately prior to send-out fungal serologies (G-test, galactomannan), blood fungal cultures, and ICU transfer.\n3. Differential Distinctions: Disseminated tuberculosis was suspected given fever, pulmonary nodules, and wasting in AIDS, but T-SPOT.TB and TB molecular gene tests were negative; Pneumocystis pneumonia accounts for bilateral ground-glass opacities but does not cause acute biliary obstruction, gastrointestinal hemorrhage, or fungal bacteremia; enteric fever (typhoid) was ruled out by negative Widal and bacterial cultures; positive fungal blood cultures and serum galactomannan/beta-glucan confirmed Talaromyces marneffei infection.",
+  "case_prompt": "A 48-year-old man who was born in Jiayu County, Hubei Province, and resided in Guangzhou (Guangdong Province) presented to the hospital with a two-month history of persistent fevers and recent melena. Beginning two months prior, he developed daily fevers reaching up to 39.5°C that failed to improve despite multiple empirical courses of antibacterial therapy at a local hospital. Following the ingestion of herbal remedies, he developed overt melena accompanied by epigastric pain, anorexia, acid regurgitation, eructation, retching, and severe fatigue, prompting admission to the gastroenterology department. His past medical history was notable for herpes zoster infection and chronic bronchitis, with a 20-year history of tobacco smoking and alcohol use.\n\nOn physical examination, the patient appeared acutely ill and fatigued. Blood pressure was 100/69 mmHg, body temperature was 36.4°C, pulse rate was 124 beats per minute, and respiratory rate was 17 breaths per minute. Systemic examination revealed marked skin and scleral jaundice and slight tenderness beneath the xiphoid process without peritoneal signs.\n\nInitial laboratory tests demonstrated severe microcytic anemia (mean red blood cell volume 63 fL, mean red blood cell hemoglobin 21 pg), profound thrombocytopenia, and hypocalcemia. Liver function tests revealed severe hepatic dysfunction and biliary obstruction with marked conjugated hyperbilirubinemia. Coagulation studies were abnormal with marked coagulopathy, and stool evaluation confirmed gastrointestinal hemorrhage. Serologic screening revealed positive HIV antigen and antibody testing with profound cellular immune dysfunction.\n\nA contrast-enhanced chest computed tomography (CT) scan showed bilateral uniform ground-glass exudation, a nodular infiltrate in the anterior segment of the left upper lobe, small scattered nodules in the right lung, mediastinal lymphadenopathy, and a pericardial effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Tuberculosis / Mycobacteriosis",
+      "rule_out_reason": "In an AIDS patient from southern China presenting with chronic wasting, high fevers, diffuse pulmonary nodules, mediastinal lymphadenopathy, and multiorgan involvement, disseminated tuberculosis was a major diagnostic consideration, but interferon-gamma release assay (T-SPOT.TB) and mycobacterial gene amplification tests were negative.",
+      "quote": "urine culture, Widal test, T-SPOT.TB, tuberculosis gene, and respiratory pathogen 9 antibodies were negative."
+    },
+    {
+      "candidate": "Pneumocystis jirovecii Pneumonia (PJP)",
+      "rule_out_reason": "Bilateral uniform ground-glass opacities on chest CT in an advanced HIV-infected patient with severe immunocompromise strongly raised suspicion for PJP; however, PJP does not explain overt gastrointestinal hemorrhage, progressive hepatic failure with biliary obstruction, or systemic fungal bacteremia.",
+      "quote": "Chest computed tomography (CT) scan showed bilateral uniform ground-glass exudation, nodules in the anterior segment of the left upper lobe, small nodules in the right lung, mediastinal lymphadenopathy, and hydropericardium ( Figure 1 )."
+    },
+    {
+      "candidate": "Enteric Fever (Typhoid / Paratyphoid Fever)",
+      "rule_out_reason": "High remittent fever, gastrointestinal bleeding, abdominal tenderness, and hepatosplenomegaly in an endemic area could indicate severe Salmonella enteric fever, but Widal serology and standard bacterial cultures were negative.",
+      "quote": "urine culture, Widal test, T-SPOT.TB, tuberculosis gene, and respiratory pathogen 9 antibodies were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive serum fungal biomarkers (elevated 1,3-beta-D-glucan of 80.10 pg/mL and positive galactomannan) combined with the growth of fungal hyphae in blood culture (subsequently confirmed as Talaromyces marneffei by blood, sputum, and bronchoalveolar lavage fluid cultures) established the diagnosis of disseminated talaromycosis in an AIDS patient residing in endemic southern China.",
+      "quote": "Laboratory tests showed that galactomannan (GM) test was positive; (1,3)-beta-D-glucan test (G test) was 80.10 pg/mL... Fungal hyphae were found in the blood culture ( Figure 2 ), and fluconazole was added (400 mg on the first day, 200 mg/day later). Subsequently confirmed to be T. marneffei."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. The case prompt is confined to Day 1 triage findings (history of residence in endemic southern China, clinical presentation, baseline labs, HIV test, and chest CT) before send-out fungal serologies (G-test, GM) and blood fungal culture results. Zero spoilers or pathogen names."
+}

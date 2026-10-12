@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4773054_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old habitual smoker presenting to a tertiary oncology center with a solitary, painful, indurated, non-healing ulcer of the lip and buccal mucosa without pulmonary complaints. This clinical picture almost invariably leads to a presumptive diagnosis of oral squamous cell carcinoma, masking an underlying chronic mycobacterial infection.\n2. Admission Breakpoint: The admission breakpoint is established at initial clinical examination and chest radiography upon referral to the cancer center, prior to mucosal biopsies, special histochemical stains, and sputum microbiology.\n3. Differential Distinctions: Oral squamous cell carcinoma (OSCC) was the primary presumptive diagnosis given smoking history and an indurated, ulcerated mucosal lesion, but excluded by biopsy showing an absence of neoplastic cells; deep fungal infection (histoplasmosis) or oral Crohn's disease was considered due to granulomatous inflammation, but excluded by positive Ziehl-Neelsen staining. The diagnosis pivots on Ziehl-Neelsen stain demonstration of acid-fast bacilli in the mucosal biopsy, supported by positive sputum AFB and chest radiographic findings.",
+  "case_prompt": "A 50-year-old male is referred to a tertiary cancer center for evaluation of a painful, non-healing ulcer on his left cheek that has persisted for one month. He has a significant history of habitual cigarette smoking. His medical history is otherwise unremarkable, and he reports no fever, weight loss, chronic cough, hemoptysis, or other respiratory symptoms.\n\nOn physical examination, head and neck palpation reveals no cervical or submandibular lymphadenopathy. Oral examination demonstrates a diffuse, ulcero-indurative lesion extending from the left labial commissure into the adjacent left buccal mucosa.\n\nA postero-anterior chest radiograph demonstrates obliteration of the right costophrenic angle consistent with pleural thickening, along with irregular fibrotic lesions and calcifications in the bilateral upper and middle pulmonary lobes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Oral squamous cell carcinoma (OSCC)",
+      "rule_out_reason": "The patient's chronic smoking history and a painful, solitary, indurated oral ulcer strongly suggested oral cancer, but histopathological examination of the buccal mucosal biopsy definitively ruled out malignancy, demonstrating granulomatous inflammation instead.",
+      "quote": "A biopsy was performed at the buccal mucosa and the findings confirmed the absence of malignancy, but it rather described granulomatous tissue admixed with multinucleated foreign body gaint cells and inflammatory cell infiltrate."
+    },
+    {
+      "candidate": "Deep fungal infection / Oral Crohn's disease",
+      "rule_out_reason": "Granulomatous mucosal ulceration with giant cells can occur in deep mycoses or inflammatory bowel disease, but special histochemical staining and sputum smears demonstrated mycobacterial organisms.",
+      "quote": "Considering the granulamatous nature, the lesion was rebiopsied and Ziehl Neelsen stain was applied; it clearly indicated a tuberculous etiology."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Application of the Ziehl-Neelsen stain to repeat mucosal biopsy tissue demonstrated acid-fast bacilli, corroborated by sputum smear positivity (grading 1+) and fibrocalcific changes on chest radiography.",
+      "quote": "Sputum was positive for Acid Fast Bacilli (10-99AFB/100 Field, grading 1+)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly describes admission triage and initial chest radiograph without histology/mycobacterial spoilers; verbatim quotes matched."
+}

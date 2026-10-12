@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6854222_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 53-year-old diabetic male from Sri Lanka presents with chronic (7-month) isolated, painless wrist and hand swelling with destructive carpal osteolytic lesions on imaging, in the complete absence of systemic fevers, respiratory symptoms, or pulmonary abnormalities on chest radiography.\n2. Admission Breakpoint: The breakpoint occurs after clinical assessment, inflammatory markers (ESR 98 mm/hr), normal chest radiography, hand plain radiographs, and wrist MRI demonstrating carpal osteolysis and fluid collections, prior to invasive synovial biopsy and confirmatory mycobacterial assays.\n3. Differential Distinctions: In a diabetic patient from South Asia, chronic indolent osteomyelitis and joint destruction strongly suspect Melioidosis (Burkholderia pseudomallei), which was explicitly assessed and ruled out serologically. Carpal neoplasms (e.g., giant cell tumor) or fungal osteomyelitis are also mimicked, but intraoperative caseation and necrotizing granulomas confirm the mycobacterial diagnosis.",
+  "case_prompt": "A 53-year-old male from Sri Lanka with a 14-year history of diabetes mellitus and hypertension presented with progressive swelling of the left non-dominant hand and wrist of 7 months' duration. The swelling had slowly enlarged and was accompanied by localized pain and restricted joint mobility. He had no symptoms in other peripheral or axial joints. He reported no fever, chills, night sweats, anorexia, weight loss, or chronic cough, and had no known prior pulmonary infections or sick contacts.\n\nPhysical examination revealed diffuse swelling over the volar and dorsal aspects of the left wrist and carpal region. The skin was not warm, and only mild tenderness was elicited on palpation. Range of motion was restricted in flexion, extension, and circumduction. Neurovascular examination of the hand and digits was normal.\n\nLaboratory studies revealed a markedly elevated erythrocyte sedimentation rate (ESR) of 98 mm/hr, with a normal complete blood count and normal renal and liver function panels. A chest radiograph was clear with no active or prior pulmonary infiltrates. Plain radiography of the left hand revealed destructive osteolytic lesions primarily affecting the carpal bones and the bases of the second through fifth metacarpals, with preservation of the radiocarpal and distal radioulnar joints. Magnetic resonance imaging (MRI) of the wrist confirmed extensive destructive bone lesions throughout the carpal bones, joint space narrowing of the intercarpal and carpometacarpal joints, and surrounding focal fluid collections, with intact flexor tendons.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Melioidosis (Burkholderia pseudomallei Osteoarticular Infection)",
+      "rule_out_reason": "In Sri Lanka, diabetic hosts are highly predisposed to subacute or chronic osteomyelitis and septic arthritis caused by Burkholderia pseudomallei. Specific serological testing was evaluated and proved negative.",
+      "quote": "Serological assessment for melioidosis was negative."
+    },
+    {
+      "candidate": "Primary Osseous Neoplasm or Metastasis",
+      "rule_out_reason": "Destructive lytic lesions confined to the carpal and metacarpal bones can mimic bone tumors or synovial sarcoma; however, the presence of multiple carpal involvement with focal fluid collections and high inflammatory markers points to an indolent infectious synovitis rather than a solitary neoplasm.",
+      "quote": "Initial digital X-ray of the hand showed destructive type lytic lesions involving mainly the carpal bones and bases of the 2nd to 5th metacarpals with sparing of the radiocarpal and distal radioulnar joints... Upon initial assessment with basic investigations and imaging, a conclusive diagnosis was not achieved."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Synovial exploration revealed gross intraoperative caseous material, histology demonstrated caseating granulomas with Langhans giant cells, and rapid molecular testing (Xpert MTB/RIF) and culture confirmed Mycobacterium tuberculosis.",
+      "quote": "A decision was made to go ahead with a synovial biopsy, and an intraoperative caseous material was noted. After the new finding, other investigations in relation to caseous necrosis were carried out. His Mantoux test was positive with 12 mm of induration... Histology sample showed multiple Langhans type of giant cell associated with caseating granulomas, and the Xpert MTB/RIF test was positive... his culture was also positive for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for isolated tuberculous arthritis and osteitis of the wrist. Admission breakpoint strictly maintained before synovial biopsy, Mantoux test, and GeneXpert assay."
+}

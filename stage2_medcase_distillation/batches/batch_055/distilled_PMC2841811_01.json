@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2841811_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old immunocompetent woman presents with subacute chest pain, low-grade fever, and a large unilateral exudative pleural effusion with elevated ESR. Although she had an elevated adenosine deaminase level and Mantoux induration, subacute exudative pleural effusions in young adults present a diagnostic dilemma between malignant lymphoma, parapneumonic effusion/empyema, and tuberculous pleuritis, further complicated later by a paradoxical immune reaction causing splenic abscesses.\n2. Admission Breakpoint: The breakpoint is set after initial clinical evaluation, chest radiography, baseline laboratory workup (CBC, ESR, metabolic panel), abdominal ultrasound, and diagnostic thoracentesis with pleural fluid analysis, prior to pleural biopsy histopathology and Bactec mycobacterial culture results.\n3. Differential Distinctions: Pleural malignancy or lymphoma was considered given the large lymphocytic exudate and marked ESR elevation (110 mm/h), but excluded by an elevated pleural ADA level (120 U/L), high tuberculin reactivity (15 mm), and pleural biopsy demonstrating caseating granulomas. Bacterial empyema was ruled out by the straw-colored fluid, predominantly lymphocytic differential (90% lymphocytes), and subacute one-month course. Confirmation was established by pleural biopsy granulomas and Bactec culture positive for Mycobacterium tuberculosis.",
+  "case_prompt": "A 21-year-old woman presented with a one-month history of left-sided chest pain and low-grade fever. She had no significant past medical history.\n\nOn physical examination, respiratory expansion was decreased on the left side with dullness to percussion and diminished breath sounds over the left lower lung fields. Routine laboratory testing, including a complete blood count, fasting blood glucose, liver function tests, renal function tests, and urinalysis, was normal, but the erythrocyte sedimentation rate (ESR) was markedly elevated at 110 mm in the first hour. A tuberculin skin test (Mantoux) revealed an induration of 15 mm. HIV serology was negative.\n\nChest radiography demonstrated a moderate left-sided pleural effusion. Abdominal ultrasonography was normal. Diagnostic thoracentesis yielded approximately one liter of straw-colored fluid. Pleural fluid analysis revealed an exudate (protein 4.0 g/dL) with lymphocytic predominance (6,800 cells/mm^3, 90% lymphocytes) and an adenosine deaminase (ADA) level of 120 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant Pleural Effusion / Lymphoma",
+      "rule_out_reason": "Considered because of a large lymphocytic exudative effusion with markedly elevated ESR (110 mm/h), but argued against by an extremely high adenosine deaminase level (120 U/L), positive tuberculin skin test, and absence of malignant cells on pleural biopsy.",
+      "quote": "The fluid was exudate (protein 4 gm %), lymphocytes predominant (cells 6800/mm3, 90% lymphocytes) with adenosine deaminase (ADA) level of 120 units."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Pleural Empyema",
+      "rule_out_reason": "Considered in a patient with fever and pleural effusion, but ruled out by the subacute one-month course, straw-colored appearance of the aspirate, and marked lymphocytic predominance (90% lymphocytes) rather than a neutrophilic exudate.",
+      "quote": "She underwent thoracocentesis and about one liters of straw colored fluid was drained. The fluid was exudate (protein 4 gm %), lymphocytes predominant (cells 6800/mm3, 90% lymphocytes)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Pleural biopsy revealed tubercular granulomas, and pleural fluid culture by the Bactec method confirmed drug-sensitive Mycobacterium tuberculosis.",
+      "quote": "Pleural biopsy revealed features of tubercular granulomas. Pleural fluid culture by Bactec method revealed mycobacterium tuberculosis sensitive to first line antituberculosis drugs."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative focused strictly on initial presentation, triage labs, and thoracentesis analysis. Biopsy histopathology, mycobacterial cultures, and downstream paradoxical splenic abscess quarantined to reasoning."
+}

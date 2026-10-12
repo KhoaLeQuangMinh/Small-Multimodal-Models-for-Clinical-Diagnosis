@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5180433_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 17-year-old male presents with headache, progressive visual loss, left relative afferent pupillary defect, and bilateral papilledema with communicating hydrocephalus on initial plain brain MRI without an identifiable parenchymal mass. The clinical tension is establishing the etiology of hydrocephalus—differentiating between idiopathic intracranial hypertension, posterior fossa neoplasms, and occult intraventricular parasitic cysts that blend isointensely with cerebrospinal fluid on standard imaging.\n2. Admission Breakpoint: Admission triage encompasses clinical history, vital signs, ophthalmic examination, fundoscopy, and initial plain magnetic resonance imaging of the brain showing communicating hydrocephalus. It excludes specialized high-resolution CISS MRI sequences, surgical CSF diversion, and subsequent endoscopic cyst retrieval.\n3. Differential Distinctions: Idiopathic intracranial hypertension (pseudotumor cerebri) presents with papilledema and normal or small ventricles, whereas this patient has ventriculomegaly/hydrocephalus. Posterior fossa ependymomas or colloid cysts are typically hyperdense or contrast-enhancing. An isolated ventricular cysticercus is isointense to CSF on conventional sequences and requires thin-slice steady-state imaging (CISS) to demonstrate the non-enhancing cyst wall and pathognomonic eccentric scolex.",
+  "case_prompt": "A 17-year-old male presents to the ophthalmology outpatient clinic with a 20-day history of progressive headache and diminution of vision. He denies fever, trauma, or altered sensorium. Physical examination reveals normal vital signs and no signs of meningeal irritation. Neuro-ophthalmologic evaluation reveals a relative afferent pupillary defect in the left eye and bilateral papilledema on dilated fundoscopic examination.\n\nInitial plain magnetic resonance imaging (MRI) of the brain reveals communicating hydrocephalus with no evidence of an intracranial space-occupying lesion or focal parenchymal abnormality.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Intracranial Hypertension (Pseudotumor Cerebri)",
+      "rule_out_reason": "Considered in a young patient presenting with headaches, papilledema, and absence of an obvious intracranial mass on routine MRI, but ruled out because neuroimaging demonstrated ventricular dilation and communicating hydrocephalus rather than slit-like ventricles.",
+      "quote": "MRI revealed communicating hydrocephalus with no evidence of any space occupying lesion. No lesion could be identified on plain MRI."
+    },
+    {
+      "candidate": "Infectious Meningitis / Meningoencephalitis",
+      "rule_out_reason": "Considered as an infectious cause of communicating hydrocephalus and elevated intracranial pressure, but excluded by the subacute afebrile course and complete lack of meningismus or systemic inflammatory signs.",
+      "quote": "There was no history of fever or trauma. There were no signs of meningeal irritation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High-resolution 3D constructive interference in steady state (CISS) MRI revealed an intraventricular non-enhancing ring lesion containing an eccentric hyperdense nodule representing the scolex in the fourth ventricle, establishing isolated intraventricular neurocysticercosis, which subsequently demonstrated intraventricular migration following shunt decompression.",
+      "quote": "A ring lesion with an eccentric scolex in the fourth ventricle with no evidence of post-contrast enhancement was seen. Thus, an imaging diagnosis of isolated fourth ventricular NCC was made."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to Stanford MedCaseReasoning criteria. Breakpoint stops immediately after plain MRI reveals hydrocephalus, before specialized CISS sequence and surgical shunting."
+}

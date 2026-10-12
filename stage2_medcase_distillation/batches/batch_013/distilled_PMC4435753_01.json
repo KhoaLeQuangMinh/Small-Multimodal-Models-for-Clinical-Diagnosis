@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4435753_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: In a heavily immunosuppressed patient 70 days post-allogeneic HSCT presenting with fever and localized cervical lymphadenopathy, the foremost clinical concern is post-transplant lymphoproliferative disorder (PTLD) or acute bacterial adenitis, whereas reactivation of an occult, extrapulmonary mycobacterial focus remains an elusive, life-threatening mimic.\n2. Admission Breakpoint: The breakpoint occurs upon completion of admission triage and staging imaging (neck and chest CT) demonstrating isolated cervical lymphadenopathy and apical scarring, immediately prior to send-out peripheral blood viral PCR and excisional lymph node biopsy.\n3. Differential Distinctions: PTLD typically features rapidly enlarging nodes associated with persistent high-titer EBV viremia and malignant lymphoid proliferation on histology. Relapse of multiple myeloma presents with monoclonal paraproteins and plasmacytic tissue infiltration. Acute pyogenic lymphadenitis presents with acute erythema and responds to conventional broad-spectrum antibiotics.",
+  "case_prompt": "A 55-year-old male with multiple myeloma presented with fever up to 38.5 °C and right cervical lymph node enlargement 70 days after undergoing an allogeneic hematopoietic stem cell transplantation from an unrelated donor (9/10 HLA match). His conditioning regimen consisted of fludarabine, melphalan, and thymoglobulin, with graft-versus-host disease prophylaxis maintained on tacrolimus and methotrexate, alongside acyclovir antimicrobial prophylaxis. He reported no known history of prior chronic pulmonary disease or infectious sick contacts. On physical examination, body temperature was 38.5 °C and discrete right laterocervical lymphadenopathy was palpated. Initial contrast-enhanced CT of the neck confirmed right laterocervical lymph node enlargement, and high-resolution CT of the chest showed old apical scar lesions in the right upper lobe without evidence of active infiltrate or consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-transplant lymphoproliferative disorder (PTLD)",
+      "rule_out_reason": "Considered due to the onset of fever and progressive lymphadenopathy during intensive post-allogeneic HSCT immunosuppression, alongside low-level peripheral EBV replication (820 copies/mL); excluded when EBV viremia cleared spontaneously without targeted therapy and histopathology demonstrated granulomatous rather than lymphoproliferative disease.",
+      "quote": "Quantitative polymerase chain reaction (qPCR) in the peripheral blood-detected epstein-barr viral (EBV) replication (820 copies/mL) and a first cervical biopsy was not diagnostic... EBV replication was no more detected during the follow-up."
+    },
+    {
+      "candidate": "Acute bacterial lymphadenitis",
+      "rule_out_reason": "Considered given fever in an immunocompromised host, but ruled out after empirical oral antibacterial therapy failed to prevent disease recurrence, leading to wound breakdown and purulent discharge on day +90.",
+      "quote": "Tacrolimus taper was started, and the patient was discharged afebrile with oral antibiotherapy. On day +90, fever was noted again, and the biopsy wound presented purulent suppuration (Figure 2), which was sent for culture."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic evaluation of a repeat cervical node biopsy demonstrated classic caseating granulomas, with nodal PCR confirming specific mycobacterial sequences and cultures confirming Mycobacterium tuberculosis complex, leading to prompt clinical cure on targeted triple-drug therapy.",
+      "quote": "Histologic exam of a second biopsy showed caseating granulomas (Figure 3). PCR analysis of the lymph node demonstrated the presence of M. tuberculosis consensus sequences, which was confirmed by microbiological cultures isolating M. tuberculosis complex."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to viral PCR and lymph node biopsy. Apical scar noted on CT without pathogen disclosure."
+}

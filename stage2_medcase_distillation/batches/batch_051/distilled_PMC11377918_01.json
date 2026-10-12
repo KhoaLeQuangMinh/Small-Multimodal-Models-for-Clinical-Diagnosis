@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11377918_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 20-year-old male presented with a 3-week prodrome of behavioral disturbance, seizures, encephalopathy, and a supple neck (absence of meningismus), accompanied by profound CSF hypoglycorrhachia (1% of serum) and massive hyperproteinorrhachia (687 mg/dL). Later, he developed episodic autonomic storms and extensor posturing triggered by noxious stimuli, creating diagnostic complexity between viral/autoimmune encephalitis, cryptococcal meningitis, and tuberculous meningitis complicated by Paroxysmal Autonomic Instability with Dystonia (PAID) syndrome.\n2. Admission Breakpoint: Following emergency department resuscitation, chest radiography showing apical reticular opacities, contrast cranial CT showing basilar meningitis/cerebritis, and lumbar puncture CSF biochemistry, immediately prior to send-out microbial latex agglutination assays, fungal cultures, and subsequent development of PAID syndrome.\n3. Differential Distinctions: Cryptococcal meningoencephalitis (frequent cause of subacute basilar meningitis with marked protein elevation and hypoglycorrhachia) and acute pyogenic/bacterial meningitis. Differentiated by negative Cryptococcal antigen and Bactigen latex agglutination tests, lymphocytic CSF pleocytosis, apical pulmonary reticular opacities, and classical basilar enhancement complicated by paroxysmal sympathetic hyperactivity.",
+  "case_prompt": "A 20-year-old Filipino male student without prior comorbidities was admitted following a 3-week history of behavioral changes accompanied by incoherent speech, waddling gait, febrile episodes, anorexia, and generalized weakness. At the emergency department, he experienced two episodes of generalized tonic seizures that were terminated with intravenous diazepam. On physical examination, he demonstrated no eye-opening to painful stimuli, non-purposeful movements of all four extremities, bilateral extensor plantar responses (Babinski signs), and a supple neck without nuchal rigidity. Chest radiography revealed reticular opacities in both upper lung fields. Cranial computed tomography with contrast demonstrated findings suggestive of basilar leptomeningeal enhancement with cerebritis. Lumbar puncture yielded clear yellow cerebrospinal fluid (CSF) under elevated opening pressure. CSF analysis revealed a pleocytosis of 8 \u00d7 10^6/L (neutrophils 20%, lymphocytes 60%), marked hyperproteinorrhachia of 687 mg/dL, and extreme hypoglycorrhachia with a CSF glucose level at 1% of serum glucose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cryptococcal meningoencephalitis",
+      "rule_out_reason": "Primary consideration for subacute basilar meningoencephalitis with high opening pressure, marked protein elevation, and severe hypoglycorrhachia; ruled out by negative cryptococcal antigen latex agglutination and negative fungal cultures.",
+      "quote": "negative Cryptococcal Antigen Latex Agglutination System, Bactigen Latex Agglutination, and fungal culture."
+    },
+    {
+      "candidate": "Acute pyogenic / bacterial meningitis",
+      "rule_out_reason": "Considered due to abrupt seizures, encephalopathy, and profound hypoglycorrhachia; however, the subacute 3-week course, lymphocytic CSF predominance, negative bacterial latex agglutination panels, and upper-lobe reticular pulmonary lesions argued against typical pyogenic meningitis.",
+      "quote": "pleocytosis of 8x10 6/L (neutrophils 20%, lymphocytes 60%), elevated protein of 687 mg/dL, hypoglycorrhachia of 1% of serum, and a negative Cryptococcal Antigen Latex Agglutination System, Bactigen Latex Agglutination"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cranial CT with contrast showing basilar meningitis and cerebritis, coupled with apical lung opacities, extreme CSF hypoglycorrhachia, and subsequent development of paroxysmal autonomic instability with dystonia syndrome, confirmed disseminated tuberculous meningitis.",
+      "quote": "A cranial computed tomography (CT) scan with contrast was suggestive of tuberculous meningitis with cerebritis (see Figure 1A-C)"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage boundary preserves the diagnostic challenge of subacute meningoencephalitis preceding autonomic instability. Verbatim quotes verified."
+}

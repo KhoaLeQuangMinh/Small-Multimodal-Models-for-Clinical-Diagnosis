@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11748431_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 5-year-old girl presents with progressive intracranial hypertension, focal motor weakness, and facial asymmetry following a subacute 3-month course initially misdiagnosed as upper respiratory infections and unconfirmed meningitis. Neuroimaging reveals a massive single intraaxial cystic mass (10 x 8 x 9 cm) with prominent mass effect and midline shift, creating a dilemma between a primary pediatric neuroepithelial/glial cystic neoplasm, intracranial abscess, arachnoid cyst, and an isolated neuroparasitic cestode cyst in the absence of visceral lesions.\n2. Admission Breakpoint: The admission breakpoint is established after neuroimaging (brain CT and brain MRI) delineates the large frontoparietal cystic lesion with midline shift and negative screening thoracic/abdominal CT scans, but strictly before surgical craniotomy, operative macroscopic visualization of the cyst membrane, and histopathological analysis.\n3. Differential Distinctions: Acute bacterial or viral meningitis presents with meningismus and fever but typically does not cause an indolent 3-month focal space-occupying cystic mass with severe midline shift. Pediatric cystic brain neoplasms (e.g., pilocytic astrocytoma, pleomorphic xanthoastrocytoma, or ependymoma) usually present with mural nodules, contrast enhancement of the cyst wall, and prominent perilesional edema, whereas primary hydatid cysts typically appear as perfectly round, thin-walled, non-enhancing intraaxial fluid-filled spheres with minimal surrounding edema.",
+  "case_prompt": "A 5-year-old girl with no significant past medical history was referred from an outpatient clinic with a three-month history of generalized weakness, low-grade fevers, and marked hypoactivity. She had previously undergone multiple outpatient evaluations and courses of treatment for presumed upper respiratory tract infections without resolution. Two months prior to referral, an outpatient clinical diagnosis of meningitis was presumed without neuroimaging or lumbar puncture; empirical intravenous antimicrobial therapy led to transient clinical improvement.\n\nTwo weeks later, her symptoms recurred with escalating severity, accompanied by new-onset morning headaches, generalized and focal limb weakness, urinary frequency, and acute mouth deviation. Physical examination revealed an alert but hypoactive child with asymmetric facial weakness (mouth deviation), motor hemiparesis, and signs of elevated intracranial pressure. Vital signs were stable.\n\nAn urgent non-contrast and contrast-enhanced brain CT scan demonstrated a well-defined, large left frontoparietal intraaxial cystic lesion measuring 10 x 8 x 9 cm causing significant local mass effect and midline shift. Brain MRI confirmed the presence of a giant, unilocular, thin-walled intraaxial cyst. Baseline screening CT scans of the chest and abdomen demonstrated no focal lesions or cysts in the lungs, liver, or spleen.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningitis / Intracranial Abscess",
+      "rule_out_reason": "Considered previously given fever, hypoactivity, and transient response to empirical intravenous antibiotics, but ruled out because the chronic 3-month timeline and neuroimaging showed a giant unilocular fluid-filled cyst with midline shift rather than diffuse leptomeningeal enhancement or thick ring-enhancing suppurative cerebritis.",
+      "quote": "Two months ago, she was clinically diagnosed with meningitis in an outpatient clinic without confirming diagnosis by imaging or CSF analysis, treated with empirical intravenous antibiotics, and showed some improvement."
+    },
+    {
+      "candidate": "Pediatric Cystic Intracranial Neoplasm (e.g., Pilocytic Astrocytoma or Cystic Ependymoma)",
+      "rule_out_reason": "Considered due to the large hemispheric mass with mass effect, morning headaches, and focal motor/cranial nerve deficits in a 5-year-old child, but definitively excluded when histopathologic examination of the en bloc excised lesion revealed parasitic cyst layers containing scolices rather than neoplastic glial architecture.",
+      "quote": "An initial brain CT scan revealed a large left frontoparietal intraaxial cystic lesion measuring 10 x 8 x 9 cm with a midline shift. An MRI confirmed the presence of a large intraaxial cyst"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was achieved via neurosurgical craniotomy and intact microsurgical cyst excision, with definitive histopathological examination confirming a hydatid cyst containing multiple protoscolices.",
+      "quote": "Craniotomy and excision of the cyst without rupture were performed (Fig. 2). The pathology report confirmed a hydatid cyst with multiple protoscolices (Fig. 3)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning. Breakpoint stops before operative findings and histopathology. Zero pathogen or disease names in case_prompt. Candidates and Diagnostic Pivot supported by verbatim quotes."
+}

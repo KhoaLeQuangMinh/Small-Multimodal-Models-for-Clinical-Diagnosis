@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6636569_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old previously healthy male presenting with a 1-month history of progressive dyspnea, fever, productive cough, and cavitation on CT, failing a 10-day outpatient antibacterial course. Initial bronchoalveolar lavage was negative by acid-fast smear and PCR, creating a diagnostic dilemma between virulent bacterial necrotizing pneumonia, fungal infection, autoimmune disease, or malignancy, with dramatic temporary improvement on corticosteroids before confirmatory repeat bronchoscopy.\n2. Admission Breakpoint: Admission triage at the tertiary center following vital signs, physical examination, arterial blood gas, CBC, CRP, LFTs, chest radiograph, and first chest CT demonstrating cavitary right lower lobe consolidation, prior to lung biopsy, empiric broad-spectrum antibiotic escalation, and repeat bronchoscopy.\n3. Differential Distinctions: Community-acquired bacterial necrotizing pneumonia causes cavitary consolidation but failed a 10-day prior antibiotic course and subsequent carbapenem/glycopeptide therapy; autoimmune vasculitis was considered due to cavitary lung lesions and elevated inflammatory markers, but antinuclear antibodies were negative and histology showed non-specific inflammation; repeat bronchoscopic sampling established Mycobacterium tuberculosis.",
+  "case_prompt": "A 44-year-old previously healthy male was admitted to a tertiary hospital with a 1-month history of progressive dyspnea, cough, and fever. His symptoms began with low-grade fever, dry cough, and night sweats. After two weeks, he developed worsening shortness of breath and purulent yellow sputum. He had been admitted to a local community hospital where an initial bronchoscopy was performed with bronchoalveolar lavage (BAL); he was treated for community-acquired pneumonia with a 10-day course of antibiotics without clinical improvement.\n\nOn admission to the referral hospital, he was alert with a temperature of 37.0°C, pulse rate of 84 beats/minute, respiratory rate of 28 breaths/minute, and blood pressure of 120/80 mmHg. He required supplemental oxygen via a bag-valve mask at 10 L/min. Arterial blood gas analysis revealed pH 7.38, PaO2 70 mmHg, PaCO2 32.7 mmHg, and HCO3- 19.4 mmol/L. Physical examination demonstrated dullness to percussion, fine crackles, and decreased breath sounds in the right lower lung field. Laboratory testing revealed a white blood cell count of 8.84 x 10^9/L (77.5% neutrophils, 13.3% lymphocytes), hematocrit of 38.2%, C-reactive protein of 78.4 mg/L, and mildly elevated serum transaminases. Rapid testing for HIV was negative. A chest radiograph demonstrated consolidation in the right lower hemithorax, and a contrast-enhanced chest computed tomography (CT) scan revealed small necrotizing cavities within this consolidated right lower lobe area.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-acquired pyogenic necrotizing pneumonia",
+      "rule_out_reason": "High-virulence bacteria causing cavitary pneumonia were suspected, but the patient failed an initial 10-day antibiotic regimen as well as four days of inpatient meropenem, ciprofloxacin, and vancomycin.",
+      "quote": "He had been diagnosed with community-acquired pneumonia but not improvement after a 10-day course of antibiotic therapy and was transferred to our tertiary hospital."
+    },
+    {
+      "candidate": "Autoimmune systemic vasculitis / collagen vascular disease",
+      "rule_out_reason": "Subacute cavitating pulmonary consolidation with night sweats and elevated CRP raised consideration of autoimmune pulmonary disease, but antinuclear antibody testing was negative.",
+      "quote": "The antinuclear antibodies test was negative and the histopathological result of transthoracic lung biopsy showed an inflammatory process."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "While initial bronchoalveolar lavage at an outside hospital was negative, persistence of cavitary necrosis, temporary steroid responsiveness, and recurrence of fevers prompted a repeat bronchoscopy that demonstrated acid-fast bacilli on smear and positive PCR for Mycobacterium tuberculosis, leading to complete recovery on antituberculous therapy.",
+      "quote": "The second bronchoscopy showed the positive BAL results for AFB smear and M. tuberculosis PCR. The treatment with a six-month antituberculosis regimen resolved his condition completely on follow-up."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission narrative stopping prior to repeat bronchoscopy and biopsy. Zero pathogen or disease name leaks. Exact quotes support all differential candidates."
+}

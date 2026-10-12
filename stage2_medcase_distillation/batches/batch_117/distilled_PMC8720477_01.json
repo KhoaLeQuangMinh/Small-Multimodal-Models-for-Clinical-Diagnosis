@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8720477_01",
+  "disease": "Neurocysticercosis",
+  "think": "<think>\n1. Core Clinical Tension: A 39-year-old female from Cape Verde presents with episodic severe positional headaches triggered by head rotation, vomiting, and gait ataxia (classic Bruns' syndrome), accompanied by an entirely unremarkable routine neurological exam and normal triage laboratories. Differentiating an intermittent mobile intraventricular parasite from an intracranial posterior fossa neoplasm is the key diagnostic challenge.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial emergency presentation, vital signs, physical examination, neurological assessment, and routine laboratory screening, prior to brain magnetic resonance imaging (MRI) and surgical intervention.\n3. Differential Distinctions: Posterior fossa neoplasms (ependymoma, medulloblastoma) cause non-communicating hydrocephalus but are fixed, solid, and invasive without postural mobility or an internal scolex; congenital intraventricular arachnoid or epidermoid cysts lack an enhancing eccentric scolex; intraventricular neurocysticercosis presents with a mobile fourth-ventricular cyst containing a visible scolex causing intermittent ball-valve CSF obstruction.\n</think>",
+  "case_prompt": "A 39-year-old woman, originally from Cape Verde, was referred to the emergency department with a protracted, progressive clinical syndrome characterized by severe headaches that were acutely triggered by movements of the head, accompanied by episodic vomiting and gait ataxia. The symptoms had followed an indolent course over several months and had progressively worsened in frequency and intensity during the preceding few weeks.\n\nOn physical examination, vital signs were normal. The patient was alert and fully oriented. General medical and comprehensive neurological examinations, including cranial nerve testing, motor power, sensation, and cerebellar testing at rest, were unremarkable. Baseline emergency laboratory evaluations, including complete blood count, serum electrolytes, renal function, and inflammatory markers, were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Fourth Ventricle Ependymoma / Posterior Fossa Neoplasm",
+      "rule_out_reason": "Considered due to the subacute presentation of obstructive hydrocephalus, episodic positional headaches (Bruns' syndrome), and gait ataxia in an adult, but excluded by neuroimaging demonstrating a mobile, non-infiltrating cystic lesion rather than a solid invasive mass.",
+      "quote": "In the second MRI, the cyst and its content showed a slightly distinct morphology and a different position in the fourth ventricle, suggesting a mobile behavior."
+    },
+    {
+      "candidate": "Intraventricular Epidermoid or Arachnoid Cyst",
+      "rule_out_reason": "Considered given a well-circumscribed intraventricular cystic lesion obstructing cerebrospinal fluid outflow, but ruled out by the demonstration of an enhancing eccentric mural nodule (scolex) and postoperative histopathological confirmation.",
+      "quote": "The brain magnetic resonance imaging (MRI) showed a fourth ventricle cyst, 2.6 x 1.8 cm (cephalocaudal x transverse axis) with an enhancing nodule compatible with a scolex and associated obstructive hydrocephalus [Figures 1 and 2]... Histological analysis confirmed NCC."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Fourth Ventricular Neurocysticercosis with Obstructive Hydrocephalus (Bruns' Syndrome)",
+      "rule_out_reason": "Identified by brain MRI revealing a 2.6 x 1.8 cm mobile cystic lesion within the fourth ventricle with an eccentric mural scolex acting as a ball-valve mechanism to obstruct the fourth ventricular outflow, successfully treated with telovelar craniotomy, en bloc cyst resection, and histopathological confirmation.",
+      "quote": "The brain magnetic resonance imaging (MRI) showed a fourth ventricle cyst, 2.6 x 1.8 cm (cephalocaudal x transverse axis) with an enhancing nodule compatible with a scolex and associated obstructive hydrocephalus [Figures 1 and 2]... The fourth ventricle was accessed through a median suboccipital craniotomy and telovelar approach [Figure 3]. The cyst was identified and dissected from the ependyma, allowing for en bloc removal without rupture. The cerebrospinal fluid (CSF) flow was restored... Histological analysis confirmed NCC."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. MRI, repeat surgical planning MRI, and histology held until diagnostic reasoning."
+}

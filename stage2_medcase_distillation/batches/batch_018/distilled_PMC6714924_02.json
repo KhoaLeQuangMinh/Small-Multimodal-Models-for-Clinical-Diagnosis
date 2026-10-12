@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6714924_02",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 53-year-old male presents with acute tropical systemic symptoms (fever, asthenia, headache, polyarthralgia) coupled with new-onset unprovoked deep vein thrombosis (left popliteal vein thrombosis) in the absence of traditional Virchow triad risk factors.\n2. Admission Breakpoint: The breakpoint occurs following clinical assessment and emergency color Doppler ultrasonography verifying acute left popliteal vein thrombosis, prior to the return of viral molecular testing.\n3. Differential Distinctions: Idiopathic or provoked deep vein thrombosis does not account for the preceding acute febrile polyarthralgia and constitutional syndrome. Chikungunya virus infection presents almost identically with severe incapacitating polyarthralgia and post-viral thrombosis, requiring specific virological testing to distinguish.",
+  "case_prompt": "A 53-year-old male presented to an emergency department in Sergipe, Brazil with a 5-day history of fever, asthenia, headache, and polyarthralgia involving the elbows, knees, and shoulders. Over the course of 5 days, his arthralgias intensified and became accompanied by new-onset pain in the left calf and swelling of both lower extremities. He had no known prior history of venous thromboembolism, recent surgery, trauma, prolonged immobilization, or other traditional thrombotic risk factors. Physical examination demonstrated bilateral ankle edema that was noticeably more severe on the left side, with left calf tenderness. Urgent color Doppler ultrasonography was performed, confirming acute thrombosis of the left popliteal vein.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Provoked Deep Vein Thrombosis",
+      "rule_out_reason": "Acute deep vein thrombosis is commonly provoked by orthopedic surgery, active malignancy, trauma, or prolonged stasis. This patient lacked any traditional predisposing mechanical or systemic risk factors, pointing toward an acute inflammatory-infectious trigger.",
+      "quote": "No additional patient risk factors for thrombosis that may have predisposed them was recorded."
+    },
+    {
+      "candidate": "Chikungunya Virus Infection",
+      "rule_out_reason": "Chikungunya is a prevalent arbovirus in northeastern Brazil known to induce severe polyarthralgias and associated venous thromboembolism during acute infection, but specific viral testing confirmed an alternate etiology.",
+      "quote": "In January 2017, a case was reported of a patient who developed thrombosis of the right popliteal vein after being admitted for treatment of severe polyarthralgia and fever caused by Chikungunya infection... He also tested positive for Zika virus."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The sudden development of popliteal vein thrombosis during an acute febrile polyarthralgia illness in an endemic region led to diagnostic confirmation via viral testing positive for Zika virus.",
+      "quote": "Color Doppler ultrasonography examination confirmed thrombosis of the left popliteal vein. The patient was treated with low-molecular weight heparin and VKA therapy and had a full recovery. He also tested positive for Zika virus."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for Zika virus complicated by popliteal vein thrombosis. Admission breakpoint strictly maintained at Doppler ultrasound confirmation of DVT prior to viral PCR results."
+}

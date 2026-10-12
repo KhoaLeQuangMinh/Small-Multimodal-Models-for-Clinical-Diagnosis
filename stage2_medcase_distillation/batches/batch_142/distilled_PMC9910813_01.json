@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9910813_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: An 86-year-old completely asymptomatic male presents for routine checkup with mild isolated eosinophilia in a non-endemic European country. The core tension lies in identifying an occult biliary helminthic infestation solely through incidental imaging without typical biliary symptoms (colic, jaundice, cholangitis) or positive stool parasitology.\n2. Admission Breakpoint: Evaluation following medical history, occupational/environmental exposure review (farming, well water, travel to India 6 decades earlier), unremarkable physical exam, baseline labs showing isolated eosinophilia (0.52 x 10³/µL) and normal liver enzymes, and negative chest X-ray, prior to abdominal ultrasonography and post-treatment stool microscopy.\n3. Differential Distinctions: Cholelithiasis and biliary sludge are common non-parasitic causes of intraluminal gallbladder pathology, but sonography demonstrates characteristic mobile tubular structures without acoustic shadowing. Intestinal helminthiasis without biliary involvement is excluded by negative stool microscopy and dynamic ultrasound localization within the gallbladder.",
+  "case_prompt": "An 86-year-old male with a history of prostate cancer in remission following radiotherapy, arterial hypertension, and chronic obstructive pulmonary disease presents for his routine annual health checkup. He reports no complaints, specifically denying fever, weight loss, nausea, vomiting, diarrhea, abdominal pain, jaundice, pruritus, passing worms in his stool, or worsening respiratory symptoms. Physical examination is entirely normal. Exposure history reveals that he previously worked as a farmer and lives in a rural area of Portugal where he consumes untreated well water; his only international travel outside Europe was a military deployment to India from 1955 to 1957. He has no prior history of parasitic infections or antiparasitic treatment. Complete blood count reveals an isolated eosinophilia of 0.52 x 10³/µL; hepatic function panels and transaminases are within normal limits. Routine chest radiography reveals no significant cardiopulmonary abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cholelithiasis / Biliary sludge",
+      "rule_out_reason": "Considered as the most common causes of intraluminal gallbladder abnormalities in an asymptomatic octogenarian, but excluded by sonography demonstrating tubular coiled structures with active writhing movements and absent acoustic shadowing.",
+      "quote": "visualization of hyperechoic structures inside it with hypoechoic center lines like a rail, creating a tubular coiled appearance, without acoustic shadowing, and with apparent writhing movements"
+    },
+    {
+      "candidate": "Intestinal helminthiasis without biliary involvement",
+      "rule_out_reason": "Considered given peripheral eosinophilia and agricultural/well-water exposures, but stool examinations performed both by direct smear and following concentration techniques were entirely negative for ova and parasites.",
+      "quote": "No adult worms or eggs were visualized, on direct microscopy and following concentration techniques."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Routine abdominal ultrasound demonstrated gallbladder wall thickening, discrete intrahepatic bile duct dilation, and hyperechoic intraluminal tubular structures with a central hypoechoic line ('rail sign') exhibiting writhing motility without acoustic shadowing, pathognomonic for biliary ascariasis, with subsequent complete resolution of eosinophilia and sonographic abnormalities following a single dose of albendazole.",
+      "quote": "There was thickening of the gallbladder wall, with visualization of hyperechoic structures inside it with hypoechoic center lines like a rail, creating a tubular coiled appearance, without acoustic shadowing, and with apparent writhing movements (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly isolates admission presentation and triage laboratory testing. Zero pathogen leaks. Verbatim quotes verified."
+}

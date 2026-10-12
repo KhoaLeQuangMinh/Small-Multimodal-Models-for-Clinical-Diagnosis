@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8461103_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: Identification of a fatal case of diffuse cutaneous infiltration and severe necrotizing cutaneous reactions (diffuse lepromatous disease complicated by Lucio's phenomenon) in a patient of Mexican origin. Acid-fast bacilli from autopsy liver specimens showed genetic divergence from classical Mycobacterium leprae, challenging the dogma that Hansen's disease is caused by a single invariant mycobacterial species.\n2. Admission Breakpoint: Stops at the clinical presentation of severe diffuse dermatological infiltrative disease and necrotizing reactional phenomena leading to fatal demise, immediately prior to PCR amplification, 16S rRNA gene sequencing, and strain comparative analysis.\n3. Differential Distinctions: Mycobacterium haemophilum infection causes cutaneous ulcerations in immunocompromised hosts and shared 97.3% 16S rRNA identity, but lacked the unique AT-rich insertion sequence and clustered closer to lepromatous mycobacteria. Classical M. leprae causes lepromatous disease, but the isolated strain FJ924 contained a distinct 19-bp AT-rich insertion (vs. 16-bp in M. leprae) and 97.9% sequence similarity, defining M. lepromatosis as a novel second agent.",
+  "case_prompt": "A patient of Mexican origin presented with severe diffuse cutaneous infiltration complicated by widespread necrotizing skin reactions (diffuse infiltrative involvement and reactional ulcerations), which ran a rapidly progressive, fatal clinical course.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Mycobacterium haemophilum infection",
+      "rule_out_reason": "M. haemophilum was considered because it can cause cutaneous ulcerating granulomatous lesions and demonstrated significant sequence homology with the isolated acid-fast bacilli; however, comparative 16S rRNA alignment demonstrated a higher match to lepromatous species (97.9% vs. 97.3%) and a distinct insertion sequence absent in M. haemophilum.",
+      "quote": "a second closest match with M. haemophilum (1465/1505, 97.3%)."
+    },
+    {
+      "candidate": "Classical Mycobacterium leprae monoinfection",
+      "rule_out_reason": "While clinically presenting with diffuse lepromatous disease, genetic analysis revealed that strain FJ924 possessed a unique 19-bp AT-rich insertion in its 16S rRNA gene distinct from the 16-bp insertion of M. leprae, proving it was a genetically divergent novel species rather than standard M. leprae.",
+      "quote": "Strain FJ924 had a 19bp AT-rich inserted sequence in its 16S rRNA gene which was not found in any other bacterial species, just as M. leprae has a unique short (16bp) AT-rich sequence inserted in its 16S rRNA gene."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the discovery and genetic characterization of Mycobacterium lepromatosis via 16S rRNA PCR sequencing of autopsy and archived biopsy specimens as a second causal agent of diffuse lepromatous leprosy and Lucio's phenomenon.",
+      "quote": "The new mycobacterium species M. lepromatosis was identified and named by in 2008 following the death of a patient of Mexican origin who had been diagnosed with DLL and LP."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

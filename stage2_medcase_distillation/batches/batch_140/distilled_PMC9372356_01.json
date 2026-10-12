@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9372356_01",
+  "disease": "Melioidosis",
+  "think": "<think>\n1. Core Clinical Tension: A 47-year-old man with a history of recurrent otitis and ear surgery in Europe presents with rapidly progressive encephalopathy, hemiparesis, CSF pleocytosis, and deep brain/brainstem inflammatory lesions. The diagnostic challenge centers on differentiating autoimmune encephalitis (initially supported by weakly positive anti-Zic4 antibodies), primary CNS lymphoma, or common viral/bacterial neuroinfections from an exceptionally rare, non-endemic neuromelioidosis presenting as a direct extension from chronic mastoid osteitis.\n2. Admission Breakpoint: The breakpoint occurs upon transfer and admission to the neurology service following initial neurologic exam, lumbar puncture revealing CSF pleocytosis with hypoglycorrhachia (glucose 19 mg/dL, protein 206 mg/dL, leukocytes 103/microL), and non-contrast CT showing partial ventricular compression, prior to advanced brain MRI, stereotactic biopsy, autoimmune serologies, and bacterial cultures.\n3. Differential Distinctions: Autoimmune encephalitis can cause subcortical/brainstem inflammation and paraneoplastic antibodies (weakly positive anti-Zic4), but fails to improve with methylprednisolone pulse therapy or plasma exchange, while hypoglycorrhachia strongly indicates an active infectious process. Primary CNS lymphoma causes deep parenchymal lesions with mass effect, but CSF cytology and brain biopsy demonstrate no neoplastic cells. Standard viral/bacterial neuroinfections (HSV, Listeria, TB, Brucella) are excluded by negative comprehensive PCR and standard cultures; targeted microbiological recovery confirms Burkholderia pseudomallei.\n</think>",
+  "case_prompt": "<case_prompt>\nA 47-year-old male who works as an international exhibition organizer presents with acute neurologic deterioration. His medical history is notable for recurrent otitis with purulent otorrhea and fevers following a tympanoplasty and radical cavity revision on the left ear 6 months earlier. In the preceding 2 years, his travel was confined to Germany and Italy. Two days after being discharged from an otolaryngology clinic for fever and malaise without a clear source, he developed severe headache, decreased level of consciousness, dysarthria, left-sided hemiparesis, and urinary incontinence. An initial non-contrast head CT was normal. One week after initial hospitalization, he is transferred to a tertiary center for urgent neurological assessment.\n\nOn physical examination, he demonstrates a depressed level of consciousness, dysarthria, left-sided hemiparesis, and urinary incontinence. Lumbar puncture reveals signs compatible with central nervous system infection: opening glucose 19 mg/dL, lactate 3.9 mmol/L, total protein 206 mg/dL, and leukocyte count 103/microL. A repeat non-contrast head CT reveals partial compression of the right lateral ventricle.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune Encephalitis",
+      "rule_out_reason": "Provisionally diagnosed due to weakly positive anti-Zic4 antibodies in the CSF; however, intensive immunosuppressive therapy with high-dose intravenous methylprednisolone pulse therapy and therapeutic plasma separation produced no clinical improvement, and cultures subsequently confirmed bacterial neuroinfection.",
+      "quote": "With a provisional diagnosis of an autoimmune/inflammatory encephalitis, intravenous methylprednisolone pulse treatment was initiated. In the further course, plasma separation was also initiated because of suspicion of an autoimmune inflammatory etiology."
+    },
+    {
+      "candidate": "Primary Central Nervous System Lymphoma",
+      "rule_out_reason": "Considered in the differential diagnosis of deep hemispheric and brainstem lesions causing progressive focal neurologic deficits and ventricular compression; ruled out by negative systemic malignancy staging and absence of neoplastic cells on CSF cytology and stereotactic brain biopsy.",
+      "quote": "Malignant differential diagnoses included CNS lymphoma. No malignant cells were identified on CSF cytology and cerebral biopsy."
+    },
+    {
+      "candidate": "Conventional Viral, Bacterial, or Zoonotic Meningoencephalitis",
+      "rule_out_reason": "Considered given the marked CSF pleocytosis and fever; ruled out because viral PCR testing for HSV 1/2, VZV, JC virus, and HHV-6 was negative, and standard cultures and serologies for Listeria, Brucella, Toxoplasma, and Tuberculosis were negative.",
+      "quote": "The group of infectious causes included central nervous system (CNS) toxoplasmosis, tuberculous encephalitis, viral meningoencephalitis, listeriosis, and brucellosis. None of these organisms were isolated."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was microbiological isolation of Burkholderia pseudomallei from left ear drainage smear culture, followed by definitive isolation from CSF and stereotactic brain biopsy samples confirmed by a specialized microbiology institute, establishing neuromelioidosis.",
+      "quote": "However, from both the CSF and brain biopsy samples, which were sent for a supplementary examination to the Bundeswehr Institute of Microbiology in Munich, B. pseudomallei was isolated. Based on the radiological and microbiological findings as well as the clinical presentation, which strongly indicated the presence of neuromelioidosis, the antibiotic treatment was escalated to meropenem."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Clean prompt without pathogen names. Verbatim quotes from source text."
+}

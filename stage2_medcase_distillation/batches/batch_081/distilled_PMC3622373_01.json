@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3622373_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A previously healthy 33-year-old manual laborer presents with sudden flaccid paraplegia, complete D4 sensory level, and acute urinary retention following a brief febrile illness. The rapid fulminant presentation with absent constitutional symptoms, normal chest radiograph, and normal ESR (4 mm/h) simulates acute viral/post-infectious transverse myelitis. When CSF shows neutrophilic pleocytosis and MRI reveals an intramedullary mass extending along the conus and cord, bacterial abscess becomes the leading concern. Identifying primary intramedullary holocord tuberculosis in the absence of pulmonary or skeletal disease is an extraordinary clinical rarity.\n2. Admission Breakpoint: Admission evaluation terminates after clinical neurological examination and baseline emergency laboratory/CXR screening, immediately prior to spinal MRI, lumbar puncture, send-out CSF viral serologies, and surgical cord exploration/biopsy.\n3. Differential Distinctions: Acute viral or para-infectious transverse myelitis presents with rapid flaccid paraplegia and sensory level, but is characterized by lymphocytic CSF without hypoglycorrhachia, whereas this patient had neutrophil-predominant pleocytosis, low glucose, and an intramedullary purulent mass. Pyogenic bacterial intramedullary abscess presents with acute neutrophilic suppuration, but aerobic/anaerobic cultures were sterile and empiric broad-spectrum IV antibiotics failed to prevent lesion progression. Fungal abscess of the spinal cord was ruled out by negative KOH mounts, fungal stains, and sterile fungal cultures.",
+  "case_prompt": "A 33-year-old previously healthy male manual laborer presents to the emergency department with a 6-day history of intermittent fever associated with chills and rigors, and a 5-day history of sudden-onset weakness in both lower limbs, complete loss of sensation below the nipples, and acute urinary retention. He denies any history of chronic cough, anorexia, or weight loss.\n\nOn physical examination, he is febrile with an oral temperature of 100°F (37.8°C). Neurological examination reveals hypotonic lower extremities with complete flaccid paralysis (muscle power 0/5 bilaterally). Deep tendon reflexes and superficial reflexes in both lower limbs are absent, and plantar responses are unelicitable bilaterally. There is complete loss of sensation to all modalities (light touch, pinprick, temperature, and vibration) below the D4 dermatomal level. Perianal sensation is absent, and the anal sphincter is lax. Examination reveals no spinal tenderness, no lymphadenopathy, and no signs of meningeal irritation (neck rigidity and Kernig sign are negative).\n\nInitial laboratory investigations demonstrate a total leukocyte count of 9,700/mm3, normal blood glucose, an erythrocyte sedimentation rate (ESR) of 4 mm/h, and a normal plain chest radiograph.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral or para-infectious transverse myelitis",
+      "rule_out_reason": "Sudden-onset flaccid paraplegia with sensory level and bladder paralysis following a brief febrile illness initially suggested acute transverse myelitis; however, CSF examination demonstrated heavy neutrophilic pleocytosis with hypoglycorrhachia and MRI revealed an expanding intramedullary purulent mass.",
+      "quote": "On the basis of sudden onset of flaccid weakness following a brief period of febrile illness, a working diagnosis of acute transverse myelitis (probably viral) was considered and was investigated further... However, CSF microscopic examination showed plenty of polymorphs, reduced sugars, and elevated proteins, which were unusual for viral etiology."
+    },
+    {
+      "candidate": "Pyogenic intramedullary spinal cord abscess",
+      "rule_out_reason": "Neutrophilic CSF pleocytosis and identification of yellowish purulent material loosely attached to the conus medullaris suggested a bacterial pyogenic abscess, but bacterial smears and aerobic/anaerobic cultures were negative and broad-spectrum IV antibiotics failed to halt disease progression.",
+      "quote": "Neutrophil preponderance in CSF and abnormal mass lesion in lumbar region prompted us for surgical exploration with a revised diagnosis of superadded bacterial infection (abscess) in an acute viral transverse myelitis... As the CSF was showing plenty of neutrophils and histopathological examination showed abundance of neutrophils, he was started on empirical IV antibiotics (Cefoperazone 2 g TID, amikacin 750 mg OD, and metronidazole 500 mg TID) with a provisional diagnosis of pyogenic abscess... Cultures (as per protocol for aerobic, anaerobic, fungal, and tubercular) failed to grow any organism."
+    },
+    {
+      "candidate": "Intramedullary fungal abscess",
+      "rule_out_reason": "Fungal infections can produce indolent or progressive intramedullary masses, but potassium hydroxide mounts, fungal stains, and fungal cultures were repeatedly negative.",
+      "quote": "KOH mount, gram stain, and smear for acid fast bacilli (AFB) and immunoflorescence staining for tubercular bacilli were negative. Bacterial (aerobic, anaerobic), and fungal cultures were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Isolation and growth of Mycobacterium tuberculosis colonies in 12 B medium of the BACTEC 460 TB system after 6 weeks of incubation from surgical neural tissue, accompanied by a strongly reactive Mantoux test (24 mm), confirmed primary intramedullary holocord tubercular abscess.",
+      "quote": "At 6 weeks, tubercular culture in 12 B medium of BACTEC, 460 TB system showed growth of colonies, having sensitivity to all the first line drugs. Spinal tuberculosis was diagnosed and he was started on anti-tubercular drugs... His Mantoux was 24 mm (strongly reactive)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero spoilers in case prompt. Admission breakpoint strictly maintained before spinal MRI, CSF analysis, and surgery. Direct quotes accurately corroborate all differential candidates and diagnostic pivot."
+}

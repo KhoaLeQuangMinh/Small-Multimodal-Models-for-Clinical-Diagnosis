@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4944368_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 22-month-old stunted toddler presents with prolonged high fever, profound hepatosplenomegaly, bicytopenia, hyperferritinemia, and elevated soluble CD25 meeting diagnostic criteria for hemophagocytic lymphohistiocytosis (HLH). The key diagnostic challenge is distinguishing between an inherited/primary familial HLH syndrome, primary viral-induced HLH (e.g., Epstein-Barr virus), and an occult visceral protozoan infection triggering secondary HLH, particularly when initial rapid serological screens are negative.\n2. Admission Breakpoint: Admission triage ends after the physical examination, bedside abdominal ultrasound, baseline complete blood count, liver biochemistries, and initial inflammatory markers (ferritin, sCD25). It excludes blood cultures, send-out viral/parasitic serologies, bone marrow aspiration, and molecular assays.\n3. Differential Distinctions: Primary familial HLH/albinism syndromes typically present with pigmentary dilution, early lethality, family consanguinity, or impaired perforin expression. EBV-induced HLH can mimic or coexist with secondary HLH, but primary visceral leishmaniasis remains the underlying protozoal driver, which requires specific targeted antimonial or amphotericin therapy rather than immunosuppressive chemotherapy alone.",
+  "case_prompt": "A 22-month-old girl presents with an 8-day history of high-grade fever up to 40°C and a mild non-productive cough. Her medical history is notable for failure to thrive, though neurological development has been age-appropriate. She is the first-born child of non-consanguineous parents. Physical examination reveals a stunted, pale toddler with normal brown hair and normal skin pigmentation; there is no family history of albinism. Abdominal examination demonstrates non-tender hepatomegaly extending 5 to 6 cm below the right costal margin and splenomegaly palpable 4 cm below the left costal margin, which is corroborated by abdominal ultrasound.\n\nInitial triage laboratory evaluation reveals a white blood cell count of 5,100/mm³ with an absolute neutrophil count of 1,200/mm³, hemoglobin of 9.1 g/dL, and a platelet count of 47,000/mm³. Liver biochemical testing demonstrates mild hypertransaminasemia and hypoalbuminemia. Serum ferritin is markedly elevated at 1,134 ng/mL, and soluble interleukin-2 receptor (sCD25) is elevated at 3,183 UI/mL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Familial Hemophagocytic Lymphohistiocytosis (including Griscelli or Chédiak-Higashi syndromes)",
+      "rule_out_reason": "Considered due to severe early-onset hemophagocytic lymphohistiocytosis in a stunted toddler, but argued against by normal hair and skin pigmentation without hypopigmentation, lack of parental consanguinity, normal perforin expression on flow cytometry, and sustained remission without full continuation of etoposide protocol.",
+      "quote": "clinical features of albinism were not present neither in our patient nor in her family"
+    },
+    {
+      "candidate": "Isolated Epstein-Barr Virus (EBV)-associated Hemophagocytic Lymphohistiocytosis",
+      "rule_out_reason": "Considered because the patient demonstrated serological reactivity to EBV with detectable low-level viral load (637 copies/mL), but EBV was an incidental co-infection or co-trigger that failed to explain the full presentation, as the child continued to deteriorate with progressive splenomegaly, petechiae, and deepening cytopenias until targeted antiparasitic therapy was instituted.",
+      "quote": "Epstein-Barr virus (EBV) serology yielded seroreactivity (positive IgM and IgG anti-VCA) with negative IgG anti-EBNA. EBV viral load was 637 copies/ml."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite initial negative immunochromatography and indirect immunofluorescence, nested polymerase chain reaction performed on peripheral blood and bone marrow aspirate definitively detected Leishmania DNA, confirming visceral leishmaniasis as the primary trigger of secondary HLH, followed by complete clinical recovery upon initiation of liposomal amphotericin B.",
+      "quote": "The following day, Leishmania Polymerase Chain Reaction was done where Leishmanial DNA was detected by nested PCR.) This was confirmed on a bone marrow aspirate as well."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation strictly adheres to Stanford MedCaseReasoning criteria. Case prompt halts prior to blood cultures, viral/parasitic serologies, bone marrow aspiration, and PCR testing."
+}

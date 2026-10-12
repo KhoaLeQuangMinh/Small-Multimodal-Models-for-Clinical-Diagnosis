@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10176193_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A patient in complete remission from sinonasal diffuse large B-cell lymphoma following 6 cycles of R-CHOP who resides in a non-endemic region presenting with abrupt high fever, drenching sweats, and life-threatening pancytopenia. In an oncology patient two months post-chemotherapy, clinicians instinctively suspect delayed marrow suppression, opportunistic sepsis, secondary hemophagocytic lymphohistiocytosis, or aggressive lymphoma relapse, masking a remote occupational tropical infection recrudescing under profound B-cell depletion.\n2. Admission Breakpoint: The admission clinical narrative halts after documenting the symptom chronology of cyclical chills, fevers, and diaphoresis alongside the baseline complete blood count revealing profound pancytopenia, immediately before rapid malarial antigen testing and peripheral blood smear examination.\n3. Differential Distinctions: Febrile neutropenia/post-chemotherapy sepsis occurs during the therapeutic nadir (1–2 weeks post-infusion), not two months after completion. Lymphoma relapse or secondary hematologic malignancy can produce B-symptoms and cytopenias but is excluded by documented complete radiographic response on recent staging CT and prompt curative response to antimalarial therapy.",
+  "case_prompt": "A 47-year-old male presented to the hospital with a 1-week history of irregular paroxysmal episodes of severe shaking chills, high fever, and profuse sweating, followed by transient defervescence. Two months prior to this presentation, he had completed six cycles of immunochemotherapy (rituximab, cyclophosphamide, doxorubicin, vincristine, and prednisone [R-CHOP]) for CD20-positive diffuse large B-cell lymphoma originating in the right maxillary sinus. Contrast-enhanced computed tomography performed one month prior to presentation demonstrated complete radiographic remission.\n\nHis occupational history was significant for prolonged deployments in the Democratic Republic of the Congo and Papua over an eight-year period, during which he had experienced five treated episodes of febrile protozoan infections; however, he had remained entirely asymptomatic for the preceding two years while living on Java Island, an established non-endemic area. He had no other underlying immunodeficiencies or chronic comorbidities.\n\nOn physical examination, the patient was acutely ill with diaphoresis and rigors. Vital signs demonstrated high fever during paroxysms. Head, neck, and sinonasal examinations were unremarkable without mucosal lesions or visible masses. Cardiovascular and respiratory examinations were normal. The abdomen was soft without palpable hepatomegaly or splenomegaly. Peripheral lymph nodes were not enlarged. Triage complete blood count demonstrated profound pancytopenia: hemoglobin 8.0 g/dL, hematocrit 27.6%, total leukocyte count 2,000 cells/μL, and platelet count 10,000 cells/μL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chemotherapy-Induced Aplasia / Opportunistic Sepsis",
+      "rule_out_reason": "Considered given the leukocyte count of 2,000 cells/μL and recent cytotoxic therapy; however, the paroxysms began two full months after chemotherapy completion (well beyond the expected marrow nadir) and exhibited an irregular cyclical pattern of rigors, fevers, and drenching sweats unresponsive to broad-spectrum supportive care.",
+      "quote": "One month after CT scan, he experienced shivering, fever, sweating, and a return to normal temperature, which repeated irregularly for roughly 1 week, suggesting malaria."
+    },
+    {
+      "candidate": "Diffuse Large B-Cell Lymphoma Relapse",
+      "rule_out_reason": "Considered because new fevers, night sweats, and severe pancytopenia in a lymphoma patient suggest marrow invasion or relapse; however, restaging computed tomography performed only four weeks earlier demonstrated complete radiographic remission, and the patient achieved rapid hematologic recovery upon antiparasitic treatment.",
+      "quote": "A repeat CT scan was performed 1 month after the completion of chemotherapy, showing a complete response (Fig. 3a-e)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Immunochromatographic testing of malarial antigen confirmed Plasmodium falciparum, establishing an immunosuppression-provoked relapse/recrudescence years after remote occupational exposure in endemic regions.",
+      "quote": "The presence of falciparum malaria was confirmed through immunochromatographic testing of malarial antigen (Plasmotec Malaria-3, Indec Diagnostics, Jakarta, Indonesia). This case was considered a relapse since our centre is not in the malaria-endemic region."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The prompt halts prior to rapid antigen testing and blood smears. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

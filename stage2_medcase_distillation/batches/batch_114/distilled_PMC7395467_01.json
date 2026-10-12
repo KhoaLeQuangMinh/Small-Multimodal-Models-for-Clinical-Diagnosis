@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7395467_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 36-year-old female who emigrated from Mexico at age 8 and has resided in the US for 28 years presents with a remote history of adult-onset seizures (quiescent for several years) and new progressive intracranial hypertension (headaches worse in morning/recumbency, nausea, vertigo). CT imaging demonstrates non-communicating hydrocephalus with obstruction at the fourth ventricle. Distinguishing an intraventricular primary neoplasm (e.g., ependymoma, subependymoma, choroid plexus papilloma, colloid cyst) or central nervous system tuberculosis from an isolated intraventricular parasitic cyst decades after exposure is the primary diagnostic dilemma.\n2. Admission Breakpoint: The admission breakpoint is placed after neurological evaluation and admission triage non-contrast head CT demonstrating ventriculomegaly, transependymal edema, and obstruction at the level of the fourth ventricle, strictly prior to high-resolution MRI identification of the intraventricular worm, surgical ventriculostomy/craniotomy, and pathological larval extraction.\n3. Differential Distinctions: Intraventricular primary tumors (ependymoma or choroid plexus tumors) typically present with solid/cystic masses with hypervascularity or calcifications rather than a thin-walled racemose parasitic cyst containing a scolex/larva. CNS tuberculosis can produce basal arachnoiditis and obstructive hydrocephalus but was excluded by negative tuberculosis testing.",
+  "case_prompt": "A 36-year-old female presented with progressively worsening bilateral headaches over the preceding year, accompanied by vertigo and intermittent nausea. The headaches were characteristically worse at night and upon awakening in the morning, gradually improving throughout the day. She had a history of adult-onset seizures beginning approximately 10 years earlier, which had been treated with anti-epileptic medications that were subsequently tapered and discontinued without recurrent seizure activity in recent years. She was born and raised in Mexico, emigrated to the United States at 8 years of age, and had never returned to Mexico. She reported no prior intracranial lesions or chronic medical conditions.\n\nOn physical examination, vital signs were normal. The patient was alert, oriented, and demonstrated no focal neurological deficits, cranial nerve abnormalities, or papilledema.\n\nA non-contrast computed tomography (CT) scan of the brain demonstrated ventriculomegaly with transependymal cerebrospinal fluid flow and evidence of non-communicating obstruction at the level of the fourth ventricle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intraventricular Brain Neoplasm (Ependymoma / Colloid Cyst / Subependymoma)",
+      "rule_out_reason": "Considered primary etiology for fourth ventricular obstruction causing non-communicating hydrocephalus in a young adult; ruled out by magnetic resonance imaging demonstrating a cystic structure containing an internal linear enhancement/parasitic larva, and operative pathology confirming non-neoplastic parasitic larval tissue.",
+      "quote": "Outpatient magnetic resonance imaging (MRI) demonstrated obstructed hydrocephalus secondary to a lobulated cystic mass within the fourth ventricle, with a streak of internal linear enhancement most consistent with racemose NCC."
+    },
+    {
+      "candidate": "Central Nervous System Tuberculosis",
+      "rule_out_reason": "Considered given the patient's immigration background and chronic hydrocephalic presentation; ruled out by negative testing for tuberculosis infection.",
+      "quote": "Our infectious disease colleagues were consulted and found no other risk factors for NCC aside from living in Mexico until the age of 8, and she was negative for tuberculosis infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Intraventricular Neurocysticercosis with Obstructive Hydrocephalus",
+      "rule_out_reason": "Neuroimaging visualized a lobulated fourth ventricular cyst containing a visible larva, and surgical suboccipital craniotomy with en bloc resection demonstrated a mature Taenia solium plerocercoid larva measuring 1.2 x 0.5 x 0.2 cm encased within a gelatinous cystic membrane; endoscopic third ventriculostomy combined with albendazole and praziquantel led to full symptomatic cure.",
+      "quote": "A worm was easily identified within the cyst on the MRI... Gross examination [Figure 2] and pathology [Figure 3] demonstrated a mature T. solium plerocercoid larvae measuring 1.2 x 0.5 x 0.2 cm encased in a tan, gelatinous, cystic membrane."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning guidelines. Zero spoilers or pathogen names in admission prompt. Breakpoint occurs right after head CT and neurological exam."
+}

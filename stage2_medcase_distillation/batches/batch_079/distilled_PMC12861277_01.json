@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12861277_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 86-year-old bedridden, immunosuppressed woman presenting with recurrent fever, persistent uterine fluid collection (pyometra), and newly emergent diffuse granular pulmonary opacities. The presentation mimics common enteric/nosocomial pyogenic pelvic infection or pelvic malignancy with metastatic pulmonary spread, whereas genital mycobacterial disease acting as the nidus for miliary hematogenous dissemination is exceptionally rare and unsuspected in an elderly patient without pulmonary disease at baseline.\n2. Admission Breakpoint: The point of transfer and admission evaluation following recurrent fever, bilateral diffuse granular lung opacities, and pyometra, prior to the reporting of mycobacterial smears, nucleic acid amplification tests (NAAT), and interferon-gamma release assays (T-SPOT).\n3. Differential Distinctions: Pyogenic bacterial pyometra and pelvic sepsis typically respond to standard beta-lactam antimicrobials and do not cause widespread symmetric granular pulmonary nodularity. Endometrial carcinoma with pulmonary metastases presents with mass lesions rather than rapid diffuse micronodular infiltrates and was cytologically negative. Miliary tuberculosis is distinguished by persistent pyometra and bilateral granular lung opacities in an immunosuppressed host confirmed by acid-fast staining, NAAT, and mycobacterial culture.",
+  "case_prompt": "An 86-year-old bedridden woman with diabetes mellitus and bullous pemphigoid was evaluated for recurrent fever. Four months earlier, she had initiated immunosuppressive therapy comprising prednisolone, cyclosporine, and intravenous immunoglobulin. Three months later, she had been hospitalized elsewhere for septic shock attributed to pyelonephritis, at which time computed tomography (CT) incidentally demonstrated pyometra without pulmonary abnormalities. Following antimicrobial therapy and cessation of cyclosporine, she initially improved; however, one month later, fever recurred. Repeat chest radiography and thoracic CT revealed diffuse, granular opacities throughout bilateral lung fields, alongside enlargement of the pyometra on abdominal imaging. She was transferred for further evaluation.\n\nHer medical history was notable for progressive supranuclear palsy; she was fully dependent in activities of daily living. Her admission medications included prednisolone (15 mg/day), trimethoprim-sulfamethoxazole (40/200 mg/day), rabeprazole, and levodopa/carbidopa. She had no history of infertility (gravida 4, para 4) and no family history of chronic pulmonary infections.\n\nOn admission examination, her Glasgow Coma Scale score was 14 (E4V4M6). Body temperature was 37.2 °C, blood pressure 102/80 mmHg, heart rate 86 beats/min, and oxygen saturation 94% while breathing ambient air. Physical examination of the chest and abdomen was unremarkable. Initial laboratory evaluation revealed an elevated white blood cell count and an elevated C-reactive protein level.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Pyometra / Bacterial Sepsis",
+      "rule_out_reason": "Although uterine fluid initially yielded general enteric flora, recurrence of fever despite antimicrobial therapy and the subsequent emergence of diffuse granular pulmonary opacities indicated that standard bacterial pelvic sepsis did not account for the systemic clinical picture.",
+      "quote": "Endometrial aspiration was performed, and Escherichia coli (E. coli) was isolated from a general bacterial culture of the uterine contents... Ampicillin/sulbactam was administered... However, one month later, her fever recurred. Chest X-ray and CT revealed diffuse, granular opacities in the bilateral lungs and an enlargement of the pyometra"
+    },
+    {
+      "candidate": "Uterine Malignancy with Pulmonary Metastases",
+      "rule_out_reason": "In an elderly postmenopausal woman with persistent pyometra and bilateral lung lesions, uterine malignancy with metastatic dissemination was an important consideration, but cytological examination of the uterine aspirate was negative for neoplastic cells.",
+      "quote": "Cytological examination of the uterine contents revealed no malignant cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The progressive enlargement of pyometra in an immunosuppressed host combined with the new development of diffuse granular bilateral lung opacities represented genital mycobacterial disease with hematogenous miliary dissemination, confirmed by positive acid-fast bacilli smears, NAAT, and mycobacterial culture from uterine contents and sputum.",
+      "quote": "The AFB smears of the sputum and uterine contents were +- and 2+, respectively, and NAATs for M. tuberculosis were positive in both specimens. AFB cultures identified M. tuberculosis in the sputum and uterine contents"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to mycobacterial smears, NAAT, and T-SPOT results. Zero pathogen names or spoilers in the case prompt."
+}

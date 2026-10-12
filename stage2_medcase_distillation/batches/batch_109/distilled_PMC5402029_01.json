@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5402029_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The discovery of an intracardiac mass in the left atrium extending across the mitral valve in a young patient presenting with chronic fever, respiratory distress, and splenic infarcts mimics a left atrial myxoma or infective endocarditis, obscuring its underlying pathogenesis as an invasive thrombosis of the pulmonary vein contiguous with cavitary lung disease.\n2. Admission Breakpoint: The admission breakpoint falls immediately following emergency multimodal cardiopulmonary imaging (chest radiograph, echocardiography, and contrast MDCT of the chest) before invasive bronchoscopic evaluation and GeneXpert BAL microbiological confirmation.\n3. Differential Distinctions: Left atrial myxoma and infective endocarditis typically originate de novo within cardiac chambers or on valve leaflets, whereas here the left atrial mass represented contiguous thrombus extending directly from the right inferior pulmonary vein adjacent to severe necrotizing cavitary parenchymal disease confirmed positive for Mycobacterium tuberculosis.",
+  "case_prompt": "A 35-year-old female presents with a 3-month history of fever and progressive breathlessness associated with chronic cough and expectoration. Her respiratory symptoms have markedly worsened over the preceding week. She reports receiving Category 2 antimicrobial therapy for a chronic lung infection for the past month, and has a past surgical history of drainage of a psoas abscess.\nOn physical examination, her pulse and blood pressure are stable. She is in moderate respiratory distress, and chest examination reveals signs of right lower lobar pneumonia.\nChest radiography demonstrates right lower lobar collapse. Transthoracic echocardiography demonstrates a mobile mass in the roof of the left atrium extending into the mitral annulus, accompanied by mild mitral regurgitation. Contrast-enhanced multidetector CT (MDCT) of the chest reveals consolidation with underlying cavitation in the right lower lobe, extensive discrete and confluent bilateral lung nodules with a tree-in-bud pattern, splenomegaly, and splenic infarcts. In addition, MDCT reveals extensive intraluminal thrombosis within the right inferior pulmonary vein that extends directly into the left atrial cavity, reaching up to the mitral valve.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Left Atrial Myxoma",
+      "rule_out_reason": "Echocardiography demonstrated a mobile mass in the left atrium protruding into the mitral annulus, initially suggesting an atrial myxoma, but contrast MDCT demonstrated that the mass was continuous with extensive thrombosis of the right inferior pulmonary vein arising from adjacent cavitary lung consolidation.",
+      "quote": "Echo showed presence of mobile mass in roof of left atrium (LA) extending into mitral annulus."
+    },
+    {
+      "candidate": "Infective Endocarditis with Systemic Embolization",
+      "rule_out_reason": "The presence of fever, a mobile intracardiac mass, mitral regurgitation, and splenic infarcts strongly suggested left-sided infective endocarditis; however, bronchoscopy excluded endobronchial lesions and GeneXpert of BAL confirmed active mycobacterial disease driving local vascular thrombosis.",
+      "quote": "Other findings included splenomegaly and splenic infarcts."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detection of Mycobacterium tuberculosis by GeneXpert in bronchoalveolar lavage fluid in the setting of severe right lower lobe cavitary consolidation, establishing active pulmonary tuberculosis complicated by contiguous pulmonary venous thrombosis extending into the left atrium.",
+      "quote": "Gene X-pert on bronchoalveolar lavage fluid was positive for myocobacterium TB and Rifampicin resistance was not detected."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly excludes pathogen and disease names ('tuberculosis', 'TB', 'ATT'). Admission breakpoint set prior to bronchoscopy and GeneXpert BAL analysis."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3501807_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 64-year-old farmer presents with approximately 42 widespread, painful, shiny cutaneous nodules and plaques alongside low-grade fever, ocular symptoms, and rhinitis. Critically, the patient has completely intact peripheral sensation and no peripheral nerve enlargement, confounding the clinical picture and masking the diagnosis of multibacillary leprosy while mimicking post-kala-azar dermal leishmaniasis, sarcoidosis, Sweet syndrome, or fibrohistiocytic tumors.\n2. Admission Breakpoint: The admission clinical presentation includes full dermatological mapping, negative neurological/sensory evaluation, normal nasal bridge examination, baseline hematology showing mild leukocytosis, and negative HIV serology, strictly concluding prior to skin biopsy, histopathologic examination, and slit skin smears.\n3. Differential Distinctions: PKDL and sarcoidosis present with similar nodular dermatoses but lack solid acid-fast bacilli; dermatofibroma/fibrohistiocytic lesions mimic the storiform spindle-cell histology on routine H&E, but modified 5% sulfuric acid Ziehl-Neelsen staining and slit skin smear demonstrate elongated acid-fast bacilli confirming histoid leprosy.",
+  "case_prompt": "A 64-year-old male farmer presents with multiple shiny, non-pruritic cutaneous nodules, papules, and plaques distributed over the trunk, lower back, buttocks, arms, legs, face, chest wall, elbows, and knees, numbering approximately 42 lesions in total. The eruption began two months prior as discrete papules over the anterior abdominal wall and lower back. The lesions are flat-topped, non-scaly, flesh-colored to erythematous, soft-to-firm, and measure from 0.3 x 0.3 cm to 10.0 x 5.5 cm in size; they became tender and painful over the past 15 days. Concurrently, he reports low-grade fever for two weeks, accompanied by bilateral eye redness, pain, lacrimation, and nasal congestion. The scalp, ears, oral cavity, palms, soles, and genitalia are entirely spared. Physical examination reveals an intact nasal bridge, no palpable peripheral nerve thickening, and no peripheral lymphadenopathy. Complete neurological testing confirms intact light touch, pinprick pain, and thermal sensation across all dermatomes and over the cutaneous lesions. Triage laboratory evaluation reveals mild leukocytosis with otherwise normal hematology; an ELISA for HIV is negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-Kala-Azar Dermal Leishmaniasis (PKDL) / Granulomatous Infectious Dermatosis",
+      "rule_out_reason": "Considered because of the widespread papulonodular eruption in an agricultural worker, but excluded by the absence of Leishmania amastigotes and the discovery of acid-fast bacilli on specialized staining.",
+      "quote": "The clinical considerations included infective diseases (Kala azar/other granulomatous lesions), sarcoidosis, and acute febrile neutrophilic dermatoses."
+    },
+    {
+      "candidate": "Benign Fibrohistiocytic Tumor / Dermatofibroma",
+      "rule_out_reason": "Histopathological examination initially showed a storiform and whorled proliferation of spindle-shaped histiocytic cells resembling fibroblasts, raising suspicion for a fibrohistiocytic neoplasm before special stains were applied.",
+      "quote": "The dermis revealed a large, circumscribed collection of benign spindle cells resembling fibroblasts, arranged in a whorled and storiform pattern... The possibility of benign fibrohistiocytic lesion was kept."
+    },
+    {
+      "candidate": "Diagnostic Pivot: De Novo Histoid Leprosy",
+      "rule_out_reason": "Modified Ziehl-Neelsen staining with 5% sulfuric acid demonstrated abundant, elongated, solid acid-fast bacilli intracellularly and extracellularly, corroborated by a high bacteriological index (4+ to 5+) on slit skin smear.",
+      "quote": "However, Ziehl Neelsen (ZN) staining (5% sulphuric acid) revealed abundant, mostly solid, acid fast bacilli (AFB) within the histiocytes and endothelial cells, as well as lying extracellularly... Slit skin smear revealed acid-fast bacilli with bacteriological index (BI) of 4+ to 5+ and microbiological index (MI) of 60-70%. A final diagnosis of de novo histoid leprosy was made."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt highlights the absence of sensory loss and nerve thickening to emphasize the core diagnostic dilemma, with zero spoilers of Hansen's disease or AFB staining. Audit flags verified as NONE."
+}

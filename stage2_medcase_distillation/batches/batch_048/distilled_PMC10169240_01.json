@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10169240_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 24-year-old traveler returning from Sierra Leone presents with fever, headache, right upper quadrant tenderness, marked hyperbilirubinemia (8.4 mg/dL), and profound thrombocytopenia (41,000/μL). The combination of fever, right upper quadrant abdominal pain, and jaundice strongly suggests acute biliary tract infection (acute cholecystitis/cholangitis) or acute viral hepatotropic infection, diverting focus from a life-threatening hemoparasitic infection.\n2. Admission Breakpoint: The breakpoint is set at initial ED admission and triage—incorporating the travel history to West Africa without prophylaxis, physical examination showing epigastric and right upper quadrant tenderness, baseline labs (platelets 41,000/μL, total bilirubin 8.4 mg/dL, mild transaminitis, normal creatinine), negative viral hepatitis serologies, and unrevealing abdominal CT—strictly prior to the peripheral blood smear interpretation and parasitemia reporting.\n3. Differential Distinctions: Acute viral hepatitis (HAV, HBV, yellow fever) causes marked hepatocellular necrosis with aminotransferases typically >1000 U/L, whereas this patient had predominantly indirect hyperbilirubinemia with ALT 56 U/L and negative hepatitis serology. Acute bacterial cholecystitis/cholangitis presents with biliary colic and biliary ductal dilatation on imaging, whereas initial abdominal CT was entirely normal. Severe malaria in a returning traveler characteristically produces fever, severe hemolytic jaundice, and marked thrombocytopenia, confirmed rapidly by blood smear microscopy.",
+  "case_prompt": "A previously healthy 24-year-old male presented to the emergency department with a six-day history of persistent fever, headache, generalized fatigue, and diffuse myalgias. He had returned to the United States one week prior to presentation following a three-week trip to Sierra Leone in West Africa. He had not taken chemoprophylaxis or received pre-travel vaccinations against regional endemic pathogens. He had felt well during his travel abroad and denied recalled insect bites or contacts with ill individuals. He had no history of immunodeficiency, hemoglobinopathy, or splenectomy. A review of systems was negative for cough, rhinorrhea, neck stiffness, nausea, vomiting, diarrhea, or dysuria.\n\nOn physical examination, the patient appeared acutely ill and lethargic but was oriented to person, place, and time. Abdominal examination was remarkable for tenderness to palpation in the epigastrium and right upper quadrant without peritoneal signs or palpable organomegaly. The remainder of the physical examination was unremarkable.\n\nLaboratory studies on the day of admission revealed a white blood cell count of 6,000/μL, hemoglobin of 13.4 g/dL, and a platelet count of 41,000/μL. Serum chemistries showed a serum creatinine of 1.02 mg/dL. Hepatic panel demonstrated an alanine aminotransferase of 56 U/L, aspartate aminotransferase of 103 U/L, and a total bilirubin of 8.4 mg/dL. A serologic panel for acute viral hepatitis was negative. Computed tomography of the abdomen and pelvis demonstrated no acute abnormalities of the hepatobiliary tree or other intra-abdominal organs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis (Hepatitis A, B, or Yellow Fever)",
+      "rule_out_reason": "Considered due to the lack of pretravel vaccinations prior to a 3-week stay in Sierra Leone, presenting with acute fever, right upper quadrant abdominal tenderness, and pronounced hyperbilirubinemia (8.4 mg/dL). Ruled out by a negative acute viral hepatitis panel and aminotransferase values only mildly elevated (ALT 56 U/L, AST 103 U/L), in contrast to the thousand-fold transaminase elevations typical of acute viral hepatic necrosis.",
+      "quote": "The acute hepatitis panel was negative."
+    },
+    {
+      "candidate": "Acute Calculous Cholecystitis / Ascending Cholangitis",
+      "rule_out_reason": "Considered because of fever, lethargy, right upper quadrant and epigastric tenderness, and marked hyperbilirubinemia. Ruled out as the initial primary cause by abdominal computed tomography demonstrating normal gallbladder architecture, absence of gallstones, and normal caliber of the extrahepatic and intrahepatic biliary ducts.",
+      "quote": "Imaging with a CT scan of the abdomen did not show any abnormality."
+    },
+    {
+      "candidate": "Enteric (Typhoid) Fever",
+      "rule_out_reason": "Considered in a febrile traveler returning from West Africa with lethargy, headache, abdominal tenderness, and severe thrombocytopenia. Ruled out by the lack of classic gastrointestinal manifestations (such as constipation or pea-soup diarrhea) and by the microscopic identification of intraerythrocytic protozoa.",
+      "quote": "A review of systems was negative for diarrhea, dysuria, cough, runny nose, neck rigidity, nausea, or vomiting."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred on examination of the peripheral blood smear, which demonstrated intraerythrocytic ring-shaped trophozoites consistent with Plasmodium falciparum and a baseline parasitemia of 1%, confirming falciparum malaria.",
+      "quote": "A blood smear revealed ring-shaped trophozoites consistent with Plasmodium falciparum with a blood parasitemia percentage of 1% (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed prior to peripheral blood smear review. Initial presentation and baseline triage labs provided without spoilers. Direct quotes from case text verify differential rule-outs and diagnostic pivot. Target canonical disease Malaria verified."
+}

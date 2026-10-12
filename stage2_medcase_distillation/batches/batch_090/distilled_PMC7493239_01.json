@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7493239_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 41-year-old diabetic male presenting with progressive, painless-to-tender testicular enlargement initially requiring contralateral orchiectomy for suspected testicular malignancy, who subsequently presents with an indurated mass and chronic scrotal ulceration of his solitary remaining testis. The presentation strongly mimics testicular neoplasia, chronic bacterial epididymo-orchitis, or granulomatous vasculitis, obscuring isolated genitourinary tuberculosis.\n2. Admission Breakpoint: At evaluation in the infectious disease clinic following physical exam, scrotal ultrasound demonstrating an abnormal testicular mass with heterogeneous epididymal involvement, and chest radiograph showing lingular pneumonia, prior to send-out serologies, urine mycobacterial cultures, and histopathologic re-review.\n3. Differential Distinctions: Testicular neoplasms (seminoma/non-seminomatous germ cell tumors) present as firm intratesticular masses but lack caseating/necrotizing granulomas; bacterial epididymo-orchitis typically responds to standard antibiotics (e.g., doxycycline) or yields positive bacterial/fungal cultures. Genitourinary tuberculosis is established by necrotizing granulomatous inflammation with acid-fast organisms or typical histopathology in the setting of prior latent infection and pulmonary findings, confirmed by complete response to antitubercular therapy.",
+  "case_prompt": "A 41-year-old Hispanic man with a history of type 2 diabetes mellitus and hypertension presented to the outpatient infectious disease clinic for evaluation of progressive left testicular swelling and tenderness of 6 months duration. Seven months prior, he had developed right testicular pain and swelling that failed to resolve with a course of doxycycline, culminating in the development of a 25 x 19 x 60 mm indurated solid intratesticular mass that required right inguinal orchiectomy at an outside institution.\n\nPhysical examination of the remaining left testicle revealed scrotal erythema, marked local tenderness, and a hard, indurated mass measuring 4.5 x 3 cm involving the entirety of the left testis. A chronic draining wound was present at the base of the scrotum. A recent course of oral doxycycline for presumed bacterial epididymitis had produced no clinical improvement.\n\nChest radiography revealed pulmonary infiltrates suspicious for lingular pneumonia. Scrotal ultrasonography demonstrated an abnormal solid left testicular mass with extratesticular heterogeneous epididymal involvement. Routine urinalysis was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Testicular Malignancy (Testicular Germ Cell Tumor)",
+      "rule_out_reason": "Primary concern that prompted previous right radical inguinal orchiectomy; definitively excluded by histopathologic examination of the surgical specimen which demonstrated necrotizing granulomatous inflammation with no neoplastic elements.",
+      "quote": "All slides showed granulomatous disease. No slides showed any evidence of malignant disease."
+    },
+    {
+      "candidate": "Bacterial, Sexually Transmitted, or Zoonotic Epididymo-orchitis and Granulomatous Vasculitis",
+      "rule_out_reason": "Considered due to scrotal erythema, mass, and concurrent lingular pneumonia; excluded by failure of antibiotic therapy (doxycycline) and negative serologies for brucellosis, syphilis, gonorrhea, chlamydia, as well as negative ANCA autoantibodies.",
+      "quote": "Studies were ordered for brucellosis, syphilis, gonorrhea, chlamydia, myeloperoxidase antibodies, and proteinase 3 antibodies. All were found negative. Urinalysis, urine AFB, and urine fungal cultures were also negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic verification of necrotizing granulomatous inflammation in tissue blocks, together with lingular infiltrate, prior positive tuberculin reactivity, and rapid clinical resolution following initiation of standard 4-drug antitubercular therapy, established tuberculous epididymo-orchitis.",
+      "quote": "The clinical diagnosis of tuberculous epididymo-orchitis was made based on histopathologic suggestive evidence, past medical history, geographical history of endemic area, and failed antibiotic treatment. He was treated with the standard 4-drug antitubercular therapy and vitamin B6 for 6 months. His pain resolved within weeks and the mass itself resolved within months."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to infectious disease clinic presentation breakpoint. Case narrative strictly excludes pathogen names and histopathologic spoiler details. Verbatim quotes validated."
+}

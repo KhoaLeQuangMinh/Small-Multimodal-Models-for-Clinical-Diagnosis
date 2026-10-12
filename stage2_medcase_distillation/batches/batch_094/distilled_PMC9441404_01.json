@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9441404_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old male renal transplant recipient presents with nocturnal fevers (39\u00b0C), diaphoresis, diarrhea, weight loss, and dyspnea, with imaging demonstrating an extensive bilateral nodular pattern and ground-glass opacities. In a heavily immunosuppressed patient, this presentation poses a wide differential including recurrent viral pneumonia (SARS-CoV-2, CMV), endemic fungal infection (Histoplasma), and miliary tuberculosis. The diagnostic tension centers on identifying concurrent opportunistic pathogens in a post-transplant host whose presentation represents a severe polymicrobial pulmonary infection.\n2. Admission Breakpoint: The admission breakpoint concludes after the clinical presentation, vital signs, triage repeat SARS-CoV-2 RT-PCR, and baseline chest radiography and CT, but strictly prior to bronchoscopy with bronchoalveolar lavage (BAL) and subsequent PCR, viral, or fungal culture results.\n3. Differential Distinctions: Recurrent SARS-CoV-2 or isolated viral pneumonitis was suspected due to prior infection and ground-glass opacities, but repeat SARS-CoV-2 RT-PCR was negative and plain radiography revealed an extensive nodular pattern. Disseminated fungal infection (Histoplasmosis) was an important co-pathogen, but bronchoalveolar lavage PCR rapidly established the diagnosis of Mycobacterium tuberculosis, directing immediate initiation of quadruple anti-tuberculosis therapy.",
+  "case_prompt": "A 35-year-old male renal transplant recipient presents with high fever, night sweats, diarrhea, and progressive dyspnea. Two years prior, he received a kidney transplant maintained on immunosuppressive therapy with tacrolimus and prednisone; mycophenolate had been suspended three months earlier during a mild viral illness from which he had recovered. Baseline allograft function was stable with a serum creatinine of 1.2 mg/dL.\n\nOver the preceding weeks, the patient experienced recurrent high-grade nocturnal fevers up to 39\u00b0C, accompanied by shivers, profuse diaphoresis, diarrhea, malaise, anorexia, dry cough, dyspnea, and unintentional weight loss, prompting urgent hospitalization.\n\nOn physical examination, the patient is febrile (39\u00b0C) and in respiratory distress. Triage nasopharyngeal molecular assay testing for SARS-CoV-2 is negative. Chest radiography demonstrates an extensive, diffuse nodular pattern involving both lung fields. Computed tomography (CT) of the chest reveals a predominantly central distribution of bilateral ground-glass opacities superimposed on diffuse pulmonary nodularity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent SARS-CoV-2 / Viral Pneumonitis",
+      "rule_out_reason": "Considered given his recent history of viral infection and bilateral ground-glass opacities on chest CT; however, triage repeat nasopharyngeal RT-PCR was negative and chest radiography revealed an extensive nodular/miliary pattern atypical for isolated viral pneumonia.",
+      "quote": "requiring hospitalization and initiation of the diagnostic work-up with RT-PCR for SARS-CoV-2 with negative results. A Chest X-ray (Figure 1) showed an extensive nodular pattern in both lung fields, and chest tomography (Figure 2) showed a predominantly central pattern of bilateral ground glass opacities."
+    },
+    {
+      "candidate": "Disseminated Histoplasmosis",
+      "rule_out_reason": "Considered as an opportunistic fungal cause of febrile nodular lung disease in a renal allograft recipient; while fungal cultures later revealed concurrent Histoplasma capsulatum growth, the primary immediate pathogen identified on initial bronchoalveolar lavage was Mycobacterium tuberculosis.",
+      "quote": "Seven days later, due to the lack of clinical response, empirical treatment with liposomal amphotericin B was initiated (0.14 mg/kg/d) with clinical improvements in the ventilatory parameters. The final report provided 10 days after the initiation of therapy with amphotericin B showed the growth of Histoplasma capsulatum in the cultivation medium of the bronchoalveolar lavage"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic bronchoscopy with bronchoalveolar lavage yielded positive PCR testing for Mycobacterium tuberculosis (alongside CMV and RSV), establishing pulmonary tuberculosis as the leading cause of the extensive nodular infiltrates and prompting immediate quadruple anti-tuberculosis therapy.",
+      "quote": "Bronchoscopy with bronchoalveolar lavage was performed with the PCR result positive for Mycobacterium tuberculosis (MTb), RSV, and CMV. Management with antituberculosis medications was initiated (rifampin 600 mg, isoniazid 300 mg, pyrazinamide 1600 mg, and ethambutol 1200 mg every 24 hours"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly per Stanford MedCaseReasoning methodology. Admission prompt stops cleanly at admission triage imaging and initial negative viral PCR, withholding all bronchoalveolar lavage and microbiological results."
+}

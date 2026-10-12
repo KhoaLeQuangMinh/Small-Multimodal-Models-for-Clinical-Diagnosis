@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6792362_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 65-year-old agricultural worker presenting with a chronic 3-year destructive infiltrative palatal lesion, ulcerative facial/nasal skin lesions, and bilateral cavitary pulmonary nodules, acquired in a previously unrecognized, non-endemic semi-arid mountain zone in Northeastern Brazil without history of travel. The clinical presentation mimics mucocutaneous leishmaniasis, squamous cell carcinoma, histoplasmosis, or tuberculosis.\n2. Admission Breakpoint: Outpatient consultation triage following physical examination, chest radiograph, and facial CT scan, prior to lesional imprint cytology, histopathological staining, and fungal PCR.\n3. Differential Distinctions: Mucocutaneous leishmaniasis (espundia) is highly prevalent in rural Brazil causing destructive naso-oropharyngeal ulcers, but was excluded by direct cytologic evaluation showing no amastigote structures; squamous cell carcinoma was strongly suspected due to chronic ulceration in a heavy smoker, but biopsy demonstrated granulomatous inflammation with yeast forms rather than malignancy; pulmonary tuberculosis presents with cavitary nodules, but fungal staining and panfungal PCR confirmed Paracoccidioides brasiliensis.",
+  "case_prompt": "A 65-year-old male farmer presented to an infectious diseases outpatient clinic in Ceará State, Northeastern Brazil, complaining of a chronic, painful oral lesion that had been progressing over the preceding three years. He lived in a rural area of the Uruburetama mountains and worked with corn and bean crops, as well as raising dairy cattle. He denied ever traveling outside Ceará State or living in other regions, and reported no contact with armadillos. He reported a 40 pack-year cigarette smoking history, having stopped smoking one year prior. He reported no fever or respiratory symptoms.\n\nOn physical examination, an infiltrative ulcerated lesion was present on the hard palate, along with an ulcerative lesion involving the facial skin and right nasal mucosa. Cardiovascular examination revealed hypophonetic heart sounds, and pulmonary auscultation demonstrated reduced vesicular breath sounds bilaterally. Abdominal examination was unremarkable, and there was no cervical lymphadenopathy. A plain chest radiograph showed bilateral, predominantly centrally distributed pulmonary nodules, several demonstrating internal cavitation, accompanied by bilateral perihilar reticular infiltrates. A computed tomography (CT) scan of the face revealed maxillo-ethmoidal sinusopathy, a left-deviated nasal septum, palatine bulging to the right, and cortical bone irregularity of the hard palate on the left side.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Mucocutaneous leishmaniasis (espundia)",
+      "rule_out_reason": "A leading cause of chronic destructive mucosal ulceration in rural South America, but ruled out by direct cytological examination of palatal imprints which showed yeast structures and no Leishmania amastigotes.",
+      "quote": "An imprint of the palatal lesion showed a moderate presence of intra- and extracellular yeast structures with considerably variable sizes (small and oval, medium, large and rounded) by Giemsa staining; Leishmania was not found in the analyzed material."
+    },
+    {
+      "candidate": "Oral squamous cell carcinoma",
+      "rule_out_reason": "A chronic destructive, infiltrative hard palate mass in an elderly male with a 40 pack-year smoking history strongly suggested malignant neoplasm, but biopsy revealed granulomatous inflammation and fungal yeasts rather than neoplastic epithelial dysplasia.",
+      "quote": "A previous biopsy of the hard palate lesion revealed a squamous pattern of mucosal fragments presenting granulation tissue associated with chronic lymphohistiocytic infiltrates and multinucleated cells, with cytoplasmic inclusions compatible with a fungal infection, evidenced by PAS and Grocott stains, suggestive of Paracoccidioides spp. yeast forms."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cytological and histopathological evaluation of the hard palate lesion demonstrated multi-sized yeast forms, and panfungal PCR (ITS1/ITS4) with sequencing confirmed 98.8% homology to Paracoccidioides brasiliensis, accompanied by positive double radial immunodiffusion, confirming autochthonous paracoccidioidomycosis in an emerging geographic zone.",
+      "quote": "P. brasiliensis was identified by the polymerase chain reaction (PCR) after fungi growth in culture."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission narrative stopping prior to lesion biopsy and microbiological staining. Zero pathogen or disease leaks. Exact quotes support all differential candidates."
+}

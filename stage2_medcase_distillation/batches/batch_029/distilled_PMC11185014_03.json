@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11185014_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old female presented with chronic abdominal pain, obstructive jaundice, and a locally aggressive pancreatic head mass encasing the common hepatic artery and portal vein with elevated CA 19-9, mimicking locally advanced unresectable pancreatic adenocarcinoma, but representing disseminated tuberculosis with pancreatic and ileocolic involvement.\n2. Admission Breakpoint: Stops after presentation with recurrent weakness and edema following PTBD, physical examination, coagulopathy and cholestatic liver chemistries, and repeat abdominal CT showing interval enlargement of the pancreatic head mass along with ileocecal thickening, mesenteric lymphadenopathy, and micronodular pulmonary opacities, before colonoscopy, ileal biopsies, or acid-fast bacillus staining.\n3. Differential Distinctions: Advanced pancreatic adenocarcinoma occurs predominantly in older patients and lacks prominent ileocecal ulcers or micronodular pulmonary spread that resolves on medical therapy. Crohn's disease causes ileocecal ulcers and mesenteric adenopathy but does not cause large pancreatic head masses with vascular encasement or acid-fast bacilli on histological staining. Abdominal tuberculosis is a great imitator capable of producing pseudo-tumoral pancreatic masses with concomitant gastrointestinal involvement that regresses under multi-drug anti-tuberculosis therapy.",
+  "case_prompt": "A 29-year-old female with a history of a treated childhood pulmonary infection presented with a 1-year history of intermittent, non-radiating epigastric pain associated with recurrent fever episodes, progressive weight loss, clinical jaundice, tea-colored urine, and pruritus. Initial evaluation at a local hospital identified pancreatic and liver lesions on cross-sectional imaging. An initial abdominal computed tomography (CT) scan at our center revealed an ill-marginated, lobulated, hypoenhancing pancreatic head mass measuring 3.5 x 5.4 x 2.6 cm that involved the pancreatic body and encased the common hepatic artery and portal vein, with an abrupt cutoff at the distal common bile duct and upstream biliary tree dilatation. Percutaneous transhepatic biliary drainage (PTBD) was performed, providing initial symptomatic relief of jaundice and pruritus. However, she subsequently developed progressive generalized weakness and bilateral lower extremity edema, prompting hospital readmission. On physical examination, she was coherent but appeared weak, with anicteric sclerae, no palpable cervical or inguinal lymphadenopathy, pitting bipedal edema, and a soft, non-distended abdomen with an intact PTBD tube draining turbid greenish output. Laboratory evaluation demonstrated a prothrombin time INR of 2.19, alkaline phosphatase (ALP) 638 U/L, AST 20 U/L, ALT 17 U/L, total bilirubin 1.4 mg/dL, direct bilirubin 1.1 mg/dL, and CA 19-9 of 138.05 U/mL. Viral hepatitis serologies were non-reactive. A repeat abdominal CT scan demonstrated interval enlargement of the pancreatic mass with regression of biliary ectasia, accompanied by mural thickening of the terminal ileum and cecum, ileocecal mesenteric lymphadenopathy, and micronodular pulmonary opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Locally advanced pancreatic adenocarcinoma with vascular encasement",
+      "rule_out_reason": "Considered due to an invasive hypoenhancing pancreatic head/body mass encasing major mesenteric vasculature (hepatic artery and portal vein) and elevated CA 19-9. Ruled out by young patient age, concurrent ileocecal mucosal disease, demonstration of acid-fast bacilli on intestinal biopsy, and complete radiographic resolution on antimicrobial therapy alone.",
+      "quote": "abdominal CT scan (Figure 4) showing an ill-marginated, lobulated, hypoenhancing pancreatic head mass sized 3.5 x 5.4 x 2.6 cm, involving the pancreatic body as well as encasing the common hepatic artery and portal vein."
+    },
+    {
+      "candidate": "Crohn's disease / Inflammatory bowel disease",
+      "rule_out_reason": "Considered given the combination of terminal ileal and cecal thickening with ulcerations and mesenteric lymphadenopathy. Ruled out by detection of acid-fast bacilli on mucosal ulcer staining and complete endoscopic and clinical resolution after anti-tuberculosis therapy.",
+      "quote": "Histopathology of the ileocolic ulcers showed chronic active inflammation, granulation tissue formation, and foci suspicious for granuloma, and acid-fast bacilli were detected on tissue staining via fluorescence method."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Colonoscopic biopsy of irregular terminal ileum and cecal ulcers showing chronic active granulomatous inflammation positive for acid-fast bacilli on fluorescence microscopy, establishing disseminated tuberculosis, with complete resolution of the unresectable pancreatic mass on anti-tuberculosis treatment.",
+      "quote": "The patient was then eventually started on anti-tuberculosis medications (WHO Category I treatment), with subsequent clinical improvement manifested as good weight gain, good appetite, and resolved abdominal pain. The PTBD tube was later removed, with no recurrence of jaundice. Repeat EUS already showed unremarkable findings without any note of pancreatic masses (Figure 4)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Breakpoint set prior to colonoscopy and mucosal biopsy. All disease names and pathogen identifiers omitted from the admission prompt. Direct verbatim quotes used for candidates and the diagnostic pivot."
+}

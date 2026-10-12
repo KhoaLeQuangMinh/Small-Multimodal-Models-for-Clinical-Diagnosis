@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4674577_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A pregnant Ghanaian woman presenting at term with chronic productive cough and severe vision loss characterized by contralateral optic atrophy and ipsilateral panuveitis/papillitis/choroiditis, whose pulmonary evaluation was deferred due to radiation concerns, masquerading as idiopathic autoimmune uveitis or gestational bronchitis.\n2. Admission Breakpoint: Initial labor and delivery triage and antepartum consultation workup, including comprehensive ophthalmic examination, prior to delivery of the infant, postpartum chest radiography, and mycobacteriologic smear/culture confirmation.\n3. Differential Distinctions: Idiopathic autoimmune uveitis / Vogt-Koyanagi-Harada syndrome / Sarcoidosis causes panuveitis, choroiditis, and optic nerve involvement, prompting initial prescription of topical steroids and cycloplegics, but fails to explain a chronic productive cough and an apical pulmonary nodule; gestational bronchitis / viral pneumonia explains cough but not severe ocular inflammatory disease and optic atrophy; disseminated tuberculosis uniquely connects chronic cough, remote latent infection (positive tuberculin skin test), an apical nodular infiltrate, and granulomatous panuveitis with optic nerve atrophy, confirmed by acid-fast bacilli smear and culture.",
+  "case_prompt": "A 26-year-old multiparous woman from Ghana, at 38 weeks of gestation, presents to labor and delivery with suprapubic pain, pressure, vomiting, and suspected leakage of amniotic fluid. She also reports a three-to-four-month history of a frequent productive cough and progressive visual deterioration in both eyes that commenced early in pregnancy. Her medical history includes gestational diabetes and a documented positive purified protein derivative (PPD) skin test with a normal chest radiograph in 2009, for which she was lost to follow-up and received no preventive treatment. On physical examination, she is coughing productively. Bedside visual acuity is markedly impaired, worse than 20/200 in both eyes. Urgent ophthalmologic evaluation reveals optic atrophy of the left eye (OS) alongside active papillitis, choroiditis, and panuveitis with secondary glaucoma in the right eye (OD). Pulmonology is consulted for her chronic cough, but diagnostic thoracic imaging is deferred upon admission due to patient refusal based on fetal radiation concerns.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Autoimmune Panuveitis / Sarcoidosis",
+      "rule_out_reason": "Active uveitis, papillitis, and choroiditis in a young adult initially suggested an autoimmune ocular inflammatory etiology or sarcoidosis, leading to the prescription of topical corticosteroids and cycloplegics; however, this non-infectious mechanism failed to account for her chronic constitutional symptoms, subacute productive cough, and subsequent apical lung lesion.",
+      "quote": "Ophthalmology diagnosed her with optic atrophy OS (left eye) and papillitis, choroiditis, and uveitis OD (right eye). She was prescribed ophthalmic prednisolone and cyclopentolate for the uveitis and timolol for secondary glaucoma due to the uveitis."
+    },
+    {
+      "candidate": "Gestational Bronchitis / Bacterial Pneumonia",
+      "rule_out_reason": "The patient's persistent productive cough was initially considered as routine pregnancy-associated respiratory tract infection or common bacterial bronchitis, which contributed to delay in diagnostic radiographic evaluation.",
+      "quote": "The patient was also evaluated by pulmonology for chronic cough. Initial imaging was delayed due to patient refusal. The mother believed that imaging would be harmful to the fetus and would not consent to the procedure."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Following delivery, maternal chest radiography revealed a 1.6 × 1.0 cm right apical nodular opacity, and sputum microbiological analysis confirmed Mycobacterium tuberculosis by positive acid-fast bacilli (AFB) smear and culture, unifying her chronic cough and ocular dissemination.",
+      "quote": "After the patient delivered, a chest X-ray (CXR) showed right nodular opacity in the apex of the lung field measuring 1.6 x 1.0 cm (Figure 1(a)). Mycobacterium tuberculosis was confirmed by positive AFB smear and culture leading to the diagnosis of active TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case constructed strictly in accordance with Stanford MedCaseReasoning guidelines. The prompt ends on Day 1 labor-and-delivery presentation with ocular exam findings, keeping the postpartum chest X-ray and AFB results for the diagnostic pivot. Look-alikes capture autoimmune uveitis and uncomplicated bronchitis, with verbatim textual quotes."
+}

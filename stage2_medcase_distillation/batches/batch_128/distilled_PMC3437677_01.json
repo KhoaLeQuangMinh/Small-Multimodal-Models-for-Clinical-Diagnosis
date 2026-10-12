@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3437677_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 53-year-old woman presents with a 3-month history of an expanding, hard, fluctuant, painful supraclavicular neck mass with inflammatory skin changes and elevated ESR. The diagnostic dilemma is differentiating a primary soft-tissue parasitic cyst from common neck masses such as pyogenic abscesses, tuberculous lymphadenitis (cold abscess/scrofuloderma), branchial cleft cysts, or soft-tissue neoplasms.\n2. Admission Breakpoint: The admission breakpoint is situated immediately following admission physical examination, routine hemogram (ESR 40 mm/h), and normal chest radiography, strictly before computed tomography of the neck, surgical excision, and histopathologic examination.\n3. Differential Distinctions: Pyogenic bacterial abscess (ruled out by lack of purulence and indolent 3-month course), tuberculous cold abscess (ruled out by absence of caseating granulomas or AFB), and congenital cystic lesions such as cystic hygroma/branchial cyst. Confirmation occurs via CT demonstrating a multilocular cyst with daughter cysts and surgical visualization of Echinococcus cyst membranes and scoleces.",
+  "case_prompt": "A 53-year-old woman presents to the hospital with a 3-month history of an enlarging, painful mass on the left lateral side of her neck. She reports no fever or weight loss. On physical examination, a hard, painful, and fluctuant mass measuring 10 x 7 cm is palpable in the supraclavicular region of the lateral neck. The overlying skin demonstrates inflammatory changes. There is no palpable regional lymphadenopathy. Blood cell count is normal with the exception of an elevated erythrocyte sedimentation rate of 40 mm/h. Plain chest radiography demonstrates no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic soft tissue abscess",
+      "rule_out_reason": "Considered because of the painful, fluctuant mass with erythematous, inflammatory overlying skin and elevated ESR, but ruled out because the lesion was an organized multicystic structure rather than a suppurative bacterial collection.",
+      "quote": "From this clinical and radiographic signs, the patient was diagnosed as having pyogenic abscess or tuberculosis, and its excision or drainage was planned."
+    },
+    {
+      "candidate": "Tuberculous lymphadenitis (Scrofuloderma / Cold abscess)",
+      "rule_out_reason": "Considered given the chronic 3-month progressive course of a fluctuant supraclavicular mass with elevated ESR, but excluded as the lesion was not originating from lymph nodes and surgical pathology lacked caseating granulomas.",
+      "quote": "From this clinical and radiographic signs, the patient was diagnosed as having pyogenic abscess or tuberculosis, and its excision or drainage was planned."
+    },
+    {
+      "candidate": "Cystic hygroma or Branchial cleft cyst",
+      "rule_out_reason": "Congenital cystic lateral neck masses typically manifest earlier in life and present as painless, non-inflammatory fluid collections without multiple internal daughter cysts.",
+      "quote": "CT scan demonstrated a binocular mass on the left supraclavicular region with cystic aspect. Its dimensions are 14 x 10 cm, and it contains numerous cystic formations with thin outlines (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Perioperative visualization of the hydatid cyst wall and multiple daughter cysts containing scoleces following excision, confirmed on histopathological examination.",
+      "quote": "The diagnosis of Echinococcus granulosus infection was confirmed perioperatively after visualization of the cyst wall and daughter cysts (Figures 2 and 3)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict zero-leakage maintained: zero mention of Echinococcus, hydatid, scoleces, or albendazole in the prompt. Breakpoint stops before CT scan. Quotes match text exactly. Target disease is Echinococcosis."
+}

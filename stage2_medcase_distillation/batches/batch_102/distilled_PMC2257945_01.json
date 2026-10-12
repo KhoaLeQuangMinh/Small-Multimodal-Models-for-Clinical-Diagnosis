@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2257945_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 56-year-old woman with newly diagnosed invasive ductal carcinoma of the breast and locoregional lymphadenopathy presented with multiple bilateral pulmonary masses, strongly mimicking stage IV metastatic breast cancer, which would have converted curative-intent therapy to palliative care.\n2. Admission Breakpoint: Initial clinical assessment following breast biopsy confirming breast cancer and staging chest radiography and CT demonstrating bilateral lung masses, prior to FDG-PET metabolic imaging and echinococcal serological assays.\n3. Differential Distinctions: Pulmonary metastases from breast cancer were ruled out by lack of FDG avidity on PET imaging in the lung nodules despite marked uptake in the breast and axillary nodes; pulmonary tuberculosis was ruled out by absence of metabolic activity and positive indirect hemagglutination test confirming benign hydatid cysts.",
+  "case_prompt": "A 56-year-old woman presented with a palpable right breast lump, chronic nonproductive cough, and dull chest pain. She had no significant past medical or family history. She was a native of the eastern region of the country. On physical examination, a firm, non-tender palpable mass was detected in the medial outer quadrant of the right breast, accompanied by ipsilateral palpable axillary and supraclavicular lymphadenopathy. Diagnostic mammography and breast ultrasound demonstrated a 2-cm nodule with irregular margins and microcalcifications in the right breast, which on fine-needle tissue aspiration was confirmed to be invasive ductal carcinoma. Staging evaluation included plain chest radiography and contrast-enhanced chest computed tomography, which revealed multiple well-circumscribed nodules and masses distributed throughout both lungs, radiographically concerning for diffuse hematogenous metastatic disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic breast carcinoma (Stage IV metastatic disease)",
+      "rule_out_reason": "Multiple bilateral pulmonary nodules and masses in a patient with biopsy-proven invasive ductal carcinoma and regional lymphadenopathy were initially suspected to represent hematogenous metastatic dissemination; however, 18F-FDG PET imaging revealed intense FDG uptake in the primary breast lesion and lymph nodes but complete photopenia/absence of uptake in the lung masses, indicating a benign non-malignant process.",
+      "quote": "Positron Emission Tomography (PET) scans showed increased Fluoro-deoxy-glucose (FDG) uptake in the breast cancer and axillar, supraclavicular lymph nodes as it's expected but there is no FDG uptake in pulmonary lesions suggesting a benign origin (Figure 2)."
+    },
+    {
+      "candidate": "Pulmonary tuberculosis or fungal granulomatous disease",
+      "rule_out_reason": "Granulomatous infections can present with bilateral pulmonary nodular opacities, but usually exhibit variable metabolic activity on FDG-PET; in this patient, complete absence of FDG uptake alongside positive echinococcal serology in an endemic resident favored parasitic cyst formation.",
+      "quote": "She was coming from the east part of the country where hydatid disease is endemic. Positive indirect hemaglutination test supported the diagnosis of pulmonary echinococcosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Geographic origin from the eastern region of the country where hydatid disease is endemic, non-avid lung lesions on FDG-PET scan, and a positive indirect hemagglutination serological test confirmed pulmonary echinococcosis coexisting with non-metastatic stage IIIC breast cancer.",
+      "quote": "She was coming from the east part of the country where hydatid disease is endemic. Positive indirect hemaglutination test supported the diagnosis of pulmonary echinococcosis."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pulmonary hydatid cysts mimicking extensive lung metastases in a patient with locally advanced breast cancer, resolved by FDG-PET photopenia and positive serology."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9870253_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A previously healthy 22-year-old traveler collapsed while hiking in French Guiana with high fever, vomiting, diarrhea, profound thrombocytopenia (19 G/L), hyperbilirubinemia, and rapidly escalating acute renal failure after returning from Central Africa. The prominent gastrointestinal presentation and shock-like collapse mimic severe bacterial enteritis, sepsis, or leptospirosis, while his reliance on Artemisia tea obscured the severity of his imported infection.\n2. Admission Breakpoint: The admission breakpoint is established upon transfer and initial emergency evaluation in the hospital when vital signs, physical exam, and baseline triage blood tests (CBC showing profound thrombocytopenia, elevated CRP, elevated bilirubin, and acute azotemia) are reported, strictly prior to disclosing blood smear microscopy, rapid diagnostic antigen confirmation, and parasite quantification.\n3. Differential Distinctions: Acute bacterial gastroenteritis or dysentery presents with fever and diarrhea but does not typically cause profound isolated thrombocytopenia, significant hyperbilirubinemia, and severe acute renal failure in the absence of septic shock. Sepsis and leptospirosis share fever, jaundice, thrombocytopenia, and renal impairment, but lack intra-erythrocytic ring trophozoites. In a febrile traveler returning from Cameroon, profound thrombocytopenia with acute renal injury represents severe falciparum malaria.",
+  "case_prompt": "A 22-year-old previously healthy male student from France was brought by emergency rescue services to the health center and subsequently transferred to the regional hospital after collapsing while hiking in a remote rainforest area in French Guiana. Eleven days prior to the acute collapse, he had completed a 4-month stay in Cameroon. During his stay in Africa, he had not taken standard chemoprophylaxis, instead consuming daily Artemisia annua herbal tea decoctions. Symptoms began five days prior to presentation during an international travel layover, characterized by progressive high fever, nausea, persistent vomiting, and profuse watery diarrhea. Three days into his rainforest hike, he became severely prostrated, febrile, and unable to ambulate.\n\nOn physical examination at admission, the patient was in poor general condition and markedly asthenic. Vital signs demonstrated high fever, while he remained hemodynamically stable without respiratory distress or hypoglycemia. Examination revealed no active bleeding diathesis or cutaneous petechiae. The neurological examination was intact with no focal deficits, altered sensorium, or meningismus. Abdominal examination revealed diffuse tenderness without peritonitis.\n\nInitial emergency laboratory studies revealed a normal hemoglobin level of 12.7 g/dL, a normal white blood cell count of 8.0 × 10^9/L, but profound thrombocytopenia with a platelet count of 19 × 10^9/L. Serum inflammatory markers were markedly elevated, with a C-reactive protein (CRP) of 205.4 mg/L. Liver chemistry showed total bilirubin elevated at 45.8 µmol/L (reference < 21 µmol/L). Renal function demonstrated acute azotemia with a serum urea of 16.4 mmol/L (reference 2.8–8.1 mmol/L) and serum creatinine of 135 µmol/L (reference 59–104 µmol/L), with an alkaline reserve of 20.8 mmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Infectious bacterial gastroenteritis / Enteric infection",
+      "rule_out_reason": "Considered due to the prominent presenting symptoms of fever, vomiting, and watery diarrhea, but ruled out as the primary etiology by negative stool cultures and parasitological examinations, as well as multisystem hematologic and renal derangements.",
+      "quote": "He had watery diarrhea but no more vomiting... Stool cultures as well as stool parasitology were screened and no pathogens were found."
+    },
+    {
+      "candidate": "Bacterial septic shock",
+      "rule_out_reason": "Considered given the patient's collapse, prostration, marked thrombocytopenia, and acute kidney injury, but physical examination showed no signs of septic shock or circulatory collapse.",
+      "quote": "There, the physical examination showed no sign of sepsis, bleeding, hypoglycemia or dyspnea."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic discovery occurred with blood smear microscopy and rapid antigen testing, which revealed intraerythrocytic protozoal parasitemia and severe acute renal failure confirming severe imported infection.",
+      "quote": "Thick and thin blood smears were positive for P. falciparum with a parasitemia of 1.62% of erythrocytes... There were no other signs of severe malaria apart from the acute renal failure, established by the severely reduced glomerular filtration rate."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation captures the clinical collapse, African travel history, gastrointestinal symptoms, profound thrombocytopenia, and renal failure, strictly withholding rapid test results, blood smears, and anti-malarial therapies."
+}

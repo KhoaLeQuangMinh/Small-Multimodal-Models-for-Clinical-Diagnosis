@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10422032_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: An elderly woman presents with a massive, bleeding ulceroproliferative foot lesion with rolled edges that mimics an aggressive cutaneous malignancy (such as Marjolin's ulcer or squamous cell carcinoma), yet is entirely painless and accompanied by autoamputated digits. The primary tension lies in recognizing that an ulceroproliferative mass with everted edges in an anesthetic extremity represents a neglected neurotrophic ulcer secondary to peripheral neuropathy rather than primary neoplasia.\n2. Admission Breakpoint: The breakpoint occurs at initial clinical presentation during the village health camp following physical and neurological examination of the foot (noting the painless ulceroproliferative lesion, absent sensation, and history of autoamputated toes) before reviewing her remote treatment records and confirming Hansen's neuropathic etiology.\n3. Differential Distinctions: Squamous cell carcinoma / Marjolin ulcer typically manifests with exuberant granulation and bleeding from chronic wounds but is usually tender and not accompanied by diffuse peripheral nerve anesthesia and spontaneous phalangeal resorption. Diabetic trophic ulcer causes painless neuropathic ulceration, but rarely leads to massive ulceroproliferative vegetative overgrowths with rolled borders spanning half the foot without diabetic history.",
+  "case_prompt": "A 65-year-old woman residing in a rural village presented for evaluation during a community health outreach camp with an extensive, non-healing ulcer on her right foot. Six months prior to presentation, she noticed a small skin breach on the plantar aspect of her foot, for which she sought treatment solely from a local non-medical traditional healer and applied herbal preparations. She had a history of prior spontaneous, painless autoamputation of two toes on the same foot. She lived in isolation and had walked without protective footwear. On physical examination, the right foot demonstrated an 8 cm × 5 cm × 2 cm ulceroproliferative lesion situated over the lateral and plantar aspect of the foot. The ulcer exhibited irregular margins, raised rolled-over edges, central slough, and prominent surrounding induration. The lesion bled readily upon gentle manipulation. Neurological examination revealed profound distal sensory loss with complete absence of pain and tactile sensation across the affected foot, and the ulcer was entirely non-tender to deep palpation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Squamous Cell Carcinoma / Marjolin's Ulcer",
+      "rule_out_reason": "An ulceroproliferative mass with raised rolled edges, slough, induration, and friability bleeding on touch strongly suggests malignant transformation (Marjolin ulcer) in a chronic wound, but the lesion was completely painless and set against extensive sensory loss and digital autoamputation.",
+      "quote": "Upon examination, the wound was determined to be an 8cm x 5cm x 2cm ulceroproliferative lesion on the lateral aspect of the foot, with irregular margins, raised rolled-over edges, with slough and surrounding induration. It bled on touch (B) but was not associated with pain or tenderness."
+    },
+    {
+      "candidate": "Diabetic Neurotrophic Foot Ulcer",
+      "rule_out_reason": "Painless plantar ulceration and peripheral sensory loss frequently indicate diabetic peripheral neuropathy; however, the massive ulceroproliferative architecture and prior loss of multiple digits in an impoverished rural setting pointed to chronic mycobacterial nerve destruction.",
+      "quote": "Loss of sensation and pain due to Hansen's, forgoing appropriate footwear due to lack of awareness, stigma towards leprosy patients and long distance to leprosy center (> 20km) caused a simple wound to progress to more than half her foot, thus debilitating her."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of severe peripheral anesthesia, prior phalangeal autoamputation, and a neglected trophic ulcer occurring in a patient with diagnosed multibacillary Hansen's disease confirms a trophic neuropathic ulcer complicating leprosy.",
+      "quote": "The image shows the right foot of a 65-year-old lady, with a case of multibacillary leprosy on multidrug therapy (MDT) for 1 year. She first noticed a wound on the plantar aspect of her foot (two toes autoamputated) six months back (A) for which she only took some herbal concoction from a local non-medical healer."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Zero-leakage admission breakpoint excludes all pathogen and disease names (no mention of Hansen's disease, leprosy, or multidrug therapy). Verbatim quotes support all differential rule-outs and diagnostic pivot."
+}

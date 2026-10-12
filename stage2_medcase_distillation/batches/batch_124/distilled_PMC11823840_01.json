@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11823840_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 34-year-old male laborer presents with a 2-month history of an indolent, dull-aching chest wall mass, evening low-grade pyrexia, weight loss, and marked ESR elevation (90 mm/h). MRI reveals a focal lytic destruction of the right ninth rib surrounded by a peripherally enhancing cystic fluid collection ('cold abscess') without pulmonary parenchymal involvement. The tension lies in distinguishing primary bone tumors or pyogenic osteomyelitis from isolated skeletal tuberculosis of the rib.\n2. Admission Breakpoint: The breakpoint is reached once admission clinical history, localized physical exam, baseline blood work, plain chest radiography, and thoracic MRI are completed, immediately before USG-guided aspiration, microscopy, and GeneXpert testing.\n3. Differential Distinctions: Primary rib neoplasms (such as chondrosarcoma, Langerhans cell histiocytosis, or myeloma/plasmacytoma) present as solitary lytic bone lesions, but do not present with a peripherally enhancing cold abscess, evening fevers, weight loss, marked ESR response, or response to antimycobacterial therapy. Acute pyogenic bacterial osteomyelitis (e.g., S. aureus) presents with rapid-onset erythema, warmth, severe exquisite tenderness, high fever, and peripheral neutrophilic leukocytosis, in contrast to the painless, non-erythematous 'cold' abscess and normal leukogram observed here. A family history of treated chronic pulmonary infection and a cold abscess overlying a lytic rib lesion strongly suggest skeletal tuberculosis.",
+  "case_prompt": "A 34-year-old male manual laborer from a lower socioeconomic background presents with a 2-month history of dull-aching pain over the right lower chest wall associated with localized swelling, low-grade evening pyrexia, and unintentional weight loss. He denies preceding chest wall trauma, respiratory symptoms, or joint pain elsewhere. His past medical history is unremarkable, though his father had been treated for a chronic pulmonary infection 20 years prior.\n\nOn physical examination, the patient is afebrile at presentation with low-grade pyrexia documented during evening hours. There is no peripheral lymphadenopathy, and examination of the spine and peripheral joints is normal. Local examination of the chest wall demonstrates a 5 × 3 cm tender mass over the lateral aspect of the right lower chest wall overlying the ninth rib. The swelling is soft, non-compressible, lacks warmth or erythema, and does not exhibit an expansile cough impulse.\n\nInitial laboratory evaluation reveals a complete blood count within normal reference ranges, normal hepatic and renal function panels, and negative HIV serology. Inflammatory markers are elevated, with an erythrocyte sedimentation rate (ESR) of 90 mm/h and a reactive C-reactive protein. Plain chest radiography is unremarkable, showing clear lung fields without parenchymal infiltrates or pleural effusions. Magnetic resonance imaging (MRI) of the chest wall demonstrates a well-circumscribed osteolytic lesion involving the right ninth rib accompanied by a superficial, thin-walled, peripherally enhancing fluid collection consistent with a cold abscess. The thoracic spine, lung parenchyma, and pleura are entirely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Rib Neoplasm / Bone Malignancy (e.g., Chondrosarcoma, Plasmacytoma)",
+      "rule_out_reason": "While an osteolytic rib lesion in a young adult can suggest primary osseous neoplasm or metastasis, the presence of constitutional B-symptoms (evening pyrexia, weight loss), high ESR (90 mm/h), and a peripherally enhancing cystic cold abscess indicates an indolent infectious process rather than a solid bone tumor.",
+      "quote": "A magnetic resonance imaging (MRI) was ordered given soft-tissue swelling, which showed a lytic lesion in the right 9th rib with a superficial cold abscess that was peripherally enhancing with thin walls. The spine, lung, and pleura were normal (Fig. 2a-f)."
+    },
+    {
+      "candidate": "Acute Pyogenic Osteomyelitis of the Rib",
+      "rule_out_reason": "Acute pyogenic bacterial osteomyelitis typically presents with acute localized warmth, erythema, severe tenderness, and peripheral neutrophilic leukocytosis, which were absent in this patient who had an indolent 2-month presentation, a normal complete blood count, and a classic cold abscess.",
+      "quote": "His complete blood count was within normal limits, but the erythrocyte sedimentation rate (ESR) was 90 mm/h, and C-reactive protein was reactive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided percutaneous needle aspiration of the chest wall cold abscess followed by GeneXpert testing confirmed the presence of rifampicin-sensitive Mycobacterium tuberculosis, establishing the diagnosis of primary isolated tuberculosis of the rib.",
+      "quote": "An ultrasound (USG)-guided aspiration was done and was sent for routine microscopy, culture sensitivity, and geneXpert. The results showed positivity for Mycobacterium tuberculosis, which was rifampicin sensitive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning CPC format. The case_prompt cleanly isolates Day 1 triage findings before needle aspiration and GeneXpert confirmation. Strictly zero mentions of tuberculosis or mycobacteria in prompt."
+}

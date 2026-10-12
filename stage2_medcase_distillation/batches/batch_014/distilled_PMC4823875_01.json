@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4823875_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 30-year-old female laboratory researcher in South Korea presents with acute fever, chills, myalgias, nausea, vomiting, leukopenia, and a bilateral knee rash during mid-winter in a non-endemic region without mosquito vectors or recent travel. The diagnostic dilemma hinges on recognizing an occupational percutaneous inoculation accident as the transmission route for an acute arboviral infection.\n2. Admission Breakpoint: Community hospital admission assessment (vitals, knee rash, lack of ascites/edema, initial CBC showing WBC 3,390/mm3, platelets 300,000/mm3, baseline LFTs), prior to reference laboratory serology (KNIH) and subsequent hospital-course hepatitis.\n3. Differential Distinctions: Vector-borne community-acquired arbovirus infection is excluded by winter climate and absence of mosquito vectors; acute viral hepatitis or HIV seroconversion following needlestick typically features prolonged incubation and characteristic seroconversions; whereas laboratory-acquired dengue virus infection manifests approximately 9-10 days following percutaneous exposure with leukopenia, rash, transaminitis, and confirmatory IgM ELISA positivity.",
+  "case_prompt": "A 30-year-old female laboratory researcher presented to a community hospital with a 4-day history of systemic illness. Her symptoms began with generalized muscle pain, followed by vomiting, chills, and a febrile sensation. Two days after symptom onset, an erythematous rash developed around both knees. She had no significant past medical history, and no family members or coworkers had experienced similar illnesses. She resided in a non-tropical temperate region during the winter season and reported no recent mosquito bites. Her only travel history was a brief trip to Hong Kong one year earlier. Ten days prior to symptom onset, while working in a biosafety level 2 research facility transferring cultured fluid with a syringe and needle, she sustained an accidental needlestick injury to her hand; she immediately washed the wound under running water for 10 minutes and had it disinfected at a local clinic.\n\nOn admission examination, her blood pressure, heart rate, and respiratory rate were within normal limits. Her axillary temperature was 37.3°C, indicating a low-grade fever. Physical examination showed a macular rash distributed around both knees; there was no peripheral edema or abdominal ascites.\n\nInitial laboratory evaluation demonstrated a white blood cell count of 3,390/mm³ with mild leukopenia, hemoglobin 13.3 g/dL, hematocrit 41.0%, and a platelet count of 300,000/mm³. Serum chemistry showed aspartate aminotransferase (AST) 33 IU/L, alanine aminotransferase (ALT) 26 IU/L, total protein 7.7 g/dL, and albumin 4.3 g/dL, all within reference ranges. Urinalysis was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-Acquired Vector-Borne Infection",
+      "rule_out_reason": "Natural mosquito-borne arboviral transmission was considered, but ruled out because the patient lived in an area without reported cases, presented during winter without mosquito exposure, and had no recent travel history.",
+      "quote": "In the region where she lives, there was no report of any dengue fever case. She had not been recently bitten by any mosquito because it was winter at the time."
+    },
+    {
+      "candidate": "Acute Bloodborne Viral Hepatitis / Retroviral Seroconversion",
+      "rule_out_reason": "A needlestick injury in a healthcare/laboratory setting commonly prompts concern for HBV, HCV, or HIV seroconversion presenting with fever, rash, and transaminitis, but the incubation period, transient course, and rapid resolution without residual abnormalities excluded chronic bloodborne pathogens.",
+      "quote": "She had neither residual symptoms nor blood parameter abnormalities when she underwent follow-up two weeks later."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Documented occupational percutaneous inoculation during cell culture processing, rapid NS1 antigen detection, and confirmatory double-positive IgM capture ELISA established laboratory-acquired dengue virus infection.",
+      "quote": "When she was injured by the syringe needle, she was in charge of infecting cultured mosquito cells with dengue virus type 2 (DENV-2)... Ten days after she was wounded, a positive test result was confirmed (Fig. 3)... Immunoglobulin M (IgM) was measured twice using the DENV Detect  IgM Capture enzyme-linked immunosorbent assay (ELISA) (InBios International, Inc., Seattle, WA, USA) and Panbio  Dengue IgM Capture ELISA (Panbio Diagnostics, Brisbane, Queensland, Australia) once each. Both tests were positive."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt carefully includes the occupational needlestick mechanism without revealing the pathogen identity, NS1 self-test results, or KNIH serologies. Quotes verbatim from text."
+}

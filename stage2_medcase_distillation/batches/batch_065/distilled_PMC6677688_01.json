@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6677688_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 56-year-old male presents with massive, disabling, hyperkeratotic plaque formation of both hands that progressed over 3 years following misdiagnosis and immunosuppressive corticosteroid therapy for presumed psoriasis, rendering his hands completely useless.\n2. Admission Breakpoint: Initial clinical evaluation of the extensive hyperkeratotic hand deformity following years of failed steroid therapy, prior to surgical debulking and parasitologic identification.\n3. Differential Distinctions: Psoriasis presents with erythematous plaques with silvery scales that typically improve or stabilize with topical steroids; crusted (Norwegian) scabies explosively escalates under corticosteroid therapy due to unchecked mite proliferation forming monstrous hyperkeratotic crusts.",
+  "case_prompt": "A 56-year-old male with no significant prior medical comorbidities presented for evaluation of chronic, progressive, and severe cutaneous lesions affecting both hands. For nearly three years, the patient had been managed under a presumptive diagnosis of severe psoriasis and had received ongoing topical and systemic corticosteroid treatments.\n\nDespite prolonged immunosuppressive therapy, the cutaneous lesions exhibited dramatic worsening rather than improvement. On clinical examination, there was extreme hyperkeratotic plaque formation and massive crusting across bilateral hands. The hyperkeratotic involvement had become so structurally advanced that the hands were rendered completely nonfunctional and useless.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Plaque / Rupioid Psoriasis",
+      "rule_out_reason": "Psoriasis was the initial working diagnosis for nearly three years; however, prolonged corticosteroid administration failed to control the condition and instead permitted catastrophic progression, indicating a non-autoimmune etiology.",
+      "quote": "whose Norwegian Scabies diagnosis was likely misdiagnosed as psoriasis for nearly three years and treated with steroids."
+    },
+    {
+      "candidate": "Cutaneous Verrucous Carcinoma or Squamous Cell Carcinoma",
+      "rule_out_reason": "The massive, debilitating hyperkeratotic growth causing complete loss of hand function raised suspicion for malignant proliferative neoplasia; ruled out by parasitologic confirmation of mite infestation rather than invasive malignancy.",
+      "quote": "The extent of his disease became so advanced that his hands became useless"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Extensive surgical debulking and microscopic examination revealed teeming Sarcoptes scabiei mites, identifying Norwegian (crusted) scabies that had been severely exacerbated by corticosteroid misuse and was successfully eradicated with debulking and antiparasitic therapy.",
+      "quote": "he ultimately required extensive surgical debulking in addition to medical therapy in order to eradicate his infestation."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pathogen and disease names completely excluded from admission prompt. Source quotes verified against article text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6850740_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 74-year-old woman in Tunisia presents with weeks of high fever (38–39°C), chills, sweats, splenomegaly, pancytopenia, marked hypergammaglobulinemia with a monoclonal pattern, and an indolent, non-healing ulcerated skin plaque on her arm evolving over 2 to 3 years. The key tension is whether her systemic illness represents a hematologic malignancy (such as multiple myeloma or lymphoma), chronic zoonotic or enteric infection (brucellosis or typhoid fever), or visceral leishmaniasis with cutaneous dissemination versus a concurrent skin neoplasm.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following completion of baseline clinical history, physical examination, routine laboratory studies (CBC, ESR, CRP, SPEP, organ function panels), chest imaging, and abdominal ultrasound/CT imaging confirming hepatosplenomegaly, prior to receiving blood/stool/urine cultures, send-out bacterial and viral serologies, rK39 testing, bone marrow aspiration, or cutaneous molecular assays.\n3. Differential Distinctions: Brucellosis and typhoid fever present with undulant fevers and splenomegaly but are excluded by sterile microbiological cultures and negative specific serologies. Hematological malignancies like multiple myeloma or lymphoma, prompted by monoclonal hypergammaglobulinemia and cytopenias, are ruled out by bone marrow cytology showing Leishmania amastigotes rather than clonal lymphoplasmacytic proliferation. Definite diagnosis of visceral leishmaniasis is secured by positive rK39, bone marrow amastigotes, and positive IFAT and qPCR, with subsequent dermatohistopathology revealing a basal cell carcinoma colonized by Leishmania infantum.",
+  "case_prompt": "A 74-year-old woman residing in Tunis, Tunisia, is admitted for evaluation of fevers evolving over several weeks, accompanied by profuse sweating and chills. Documented oral temperatures have ranged from 38°C to 39°C. She also reports progressive fatigue, diarrhea, ill-defined abdominal discomfort, and an occasional non-productive cough. Her medical history is notable only for well-controlled essential hypertension. She has no chronic diseases, no history of blood transfusions or immunosuppressive therapy, and no risk factors for human immunodeficiency virus infection.\n\nOn physical examination, she appears fatigued but in no acute distress. Abdominal examination reveals a palpable spleen just below the left costal margin on deep inspiration. Dermatologic examination reveals a well-circumscribed, erythematous plaque with a thin rolled border and superficial erosions and crusts, measuring 3 x 3 cm, located on her right upper arm near the axilla; the lesion is ulcerated with erythematous edging and serous oozing. The patient reports that this arm lesion is painless and has persisted without healing for 2 to 3 years. The remainder of the physical examination is unremarkable.\n\nBaseline laboratory investigations demonstrate pancytopenia: hemoglobin 8.7 g/dL (normocytic, normochromic), leukocyte count 2,900/µL, and platelet count 113,000/µL. Inflammatory markers are elevated with an erythrocyte sedimentation rate of 115 mm/1st hour and C-reactive protein of 215 mg/L, while procalcitonin is <0.5 ng/mL. Serum protein electrophoresis reveals hypoalbuminemia (31.1 g/L) and monoclonal hypergammaglobulinemia (38.4 g/L). Renal, hepatic, and coagulation profiles are within normal limits. Chest radiography and transthoracic echocardiography are normal. Abdominopelvic ultrasonography and CT imaging reveal homogeneous hepatosplenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Brucellosis",
+      "rule_out_reason": "Brucellosis is endemic in the Mediterranean basin and commonly causes persistent fever, chills, night sweats, splenomegaly, and cytopenias, but multiple blood cultures and specific Brucella serologic testing were completely negative.",
+      "quote": "Hepatitis B Virus, Salmonella and Brucella antibody tests were also unrevealing."
+    },
+    {
+      "candidate": "Typhoid Fever",
+      "rule_out_reason": "Typhoid fever presents with prolonged fever, constitutional symptoms, abdominal discomfort, diarrhea, and leukopenia, but bacteriological cultures of blood, stool, and urine and Salmonella antibody assays showed no growth or reactivity.",
+      "quote": "Bacteriological cultures of blood (3 series), stool and urine revealed all negative."
+    },
+    {
+      "candidate": "Hematological Malignancy",
+      "rule_out_reason": "Pancytopenia, splenomegaly, and a monoclonal spike on serum protein electrophoresis raised strong suspicion for a plasma cell dyscrasia or lymphoproliferative neoplasm, but bone marrow examination revealed intracellular protozoal amastigotes rather than malignant lymphoid or plasma cell clones.",
+      "quote": "Serum Protein Electrophoresis displayed an abnormal pattern with a hypoalbuminemia at 31.1 g/l and a monoclonal hypergammaglobulinemia at 38.4 g/l."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive rK39 immunochromatographic assay, positive immunofluorescence antibody titers (1:400), and identification of Leishmania amastigotes on bone marrow aspiration established visceral leishmaniasis, with identical parasite DNA demonstrated in both the bloodstream and the co-occurring cutaneous basal cell carcinoma.",
+      "quote": "However, Leishmania rk39 immuno-chromatography test was positive, consistent with a VL diagnosis. A bone marrow aspiration was performed. Its parasitological examination revealed the presence of Leishmania amastigote forms."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission cultures, serology results, bone marrow cytology, and skin PCR findings."
+}

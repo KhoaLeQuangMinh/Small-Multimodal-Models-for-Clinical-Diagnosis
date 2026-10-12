@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5899771_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 71-year-old postmenopausal woman presents with vaginal bleeding and endometrial thickening on gynecological examination, in the absence of known infectious contacts or systemic symptoms. In geriatric gynecology, this presentation is overwhelmingly concerning for endometrial carcinoma. Genital tuberculosis in postmenopausal women is exceedingly rare and mimics malignant uterine pathology.\n2. Admission Breakpoint: The admission clinical presentation concludes following the initial clinical history, absence of infectious contacts, and gynecological examination revealing endometrial thickening, immediately prior to endometrial biopsy histopathology, acid-fast staining, and mycobacterial cultures.\n3. Differential Distinctions: Endometrial adenocarcinoma was the primary clinical concern given age and postmenopausal bleeding with thickening, but histology demonstrated granulomatous endometritis and benign polyps without malignancy. Idiopathic or sarcoid granulomatous disease was considered, but liquid mycobacterial culture (MGIT) and PCR-RFLP conclusively isolated Mycobacterium tuberculosis complex.",
+  "case_prompt": "A 71-year-old woman presented to the gynecology clinic for evaluation of postmenopausal vaginal bleeding. She had no documented history of contact with individuals diagnosed with chronic pulmonary infections or unexplained chronic cough, and reported no constitutional symptoms.\n\nOn physical examination, the patient was hemodynamically stable. Gynecological examination demonstrated an enlarged uterus with marked endometrial thickening on pelvic evaluation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Endometrial adenocarcinoma",
+      "rule_out_reason": "The cardinal initial clinical suspicion in an elderly woman presenting with postmenopausal uterine bleeding and endometrial thickening, but histopathological evaluation of the endometrial biopsy specimen revealed no evidence of malignant neoplasia.",
+      "quote": "Histopathological examination of the endometrial biopsy specimen revealed granulomatous endometritis and endometrial polyps."
+    },
+    {
+      "candidate": "Benign endometrial polyps or hyperplasia alone",
+      "rule_out_reason": "Although benign endometrial polyps were identified histologically, the coexisting granulomatous endometritis indicated an infectious granulomatous process rather than simple benign proliferation.",
+      "quote": "Histopathological examination of the endometrial biopsy specimen revealed granulomatous endometritis and endometrial polyps."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Liquid mycobacterial culture of the endometrial biopsy specimen using MGIT medium was positive for Mycobacterium tuberculosis complex, confirmed by conventional biochemical tests and PCR-RFLP.",
+      "quote": "M. tuberculosis culture was performed with LJ medium and MGIT. Only MGIT liquid medium was positive. According to the identification with conventional biochemical methods and PCR-RFLP, the strain was identified as MTC."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC5899771_01. The case prompt stops before invasive biopsy, histopathology, smears, or cultures. Zero pathogen disclosure in the prompt. Differential candidates and the diagnostic pivot cite verbatim text from the case report."
+}

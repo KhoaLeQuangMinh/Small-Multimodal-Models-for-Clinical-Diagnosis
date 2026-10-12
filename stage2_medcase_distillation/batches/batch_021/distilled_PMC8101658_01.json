@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8101658_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old woman presents with progressive chronic headache, bitemporal visual deficits, and an enhancing sellar lesion compressing the optic chiasm, associated with hypopituitarism and mild hyperprolactinemia. The tension lies in distinguishing the most common sellar tumor—a nonfunctioning or prolactin-secreting pituitary macroadenoma—from an extremely rare primary pituitary tuberculoma in a patient with no prior tuberculosis contact or systemic signs.\n2. Admission Breakpoint: The breakpoint occurs at initial neurosurgical workup and pituitary MRI showing an enhancing sellar lesion, before transsphenoidal surgical resection and histological/microbiological tissue processing.\n3. Differential Distinctions: Pituitary macroadenoma is ruled out by reticulin staining demonstrating preserved reticulin architecture surrounding intact pituitary cell nests, coupled with epithelioid granulomatous inflammation. Granulomatous hypophysitis or sarcoidosis is ruled out by the demonstration of acid-fast bacilli on Ziehl-Neelsen stain. Complete symptomatic and endocrinologic resolution following standard four-drug antitubercular therapy confirms the diagnosis of primary pituitary tuberculoma.",
+  "case_prompt": "A 50-year-old woman presented to the neurosurgery outpatient department reporting a 1-year history of progressively worsening headaches and bilateral diminished vision. Her medical history was notable only for essential hypertension treated with oral antihypertensive medication. She denied fevers, chills, night sweats, cough, weight loss, or known contact with individuals having chronic pulmonary infections.\n\nOn physical examination, she was conscious, alert, and oriented with a Glasgow Coma Scale score of 15. Vital signs were stable. There was no pallor, jaundice, peripheral edema, or peripheral lymphadenopathy. Cardiopulmonary auscultation revealed clear lung fields bilaterally. Abdominal examination was unremarkable.\n\nLaboratory evaluation revealed mild normocytic anemia with hemoglobin of 10.6 g/dL (reference range 14–16), total leukocyte count 8,300/mm3 (4,000–11,000), and platelet count 220,000/mm3 (150,000–450,000). The erythrocyte sedimentation rate (ESR) was elevated at 40 mm/hr. Endocrine evaluation demonstrated an elevated serum prolactin of 58.00 ng/mL (2.1–17.7), accompanied by central hypopituitarism: luteinizing hormone (LH) <0.216 mIU/mL (1.5–9.3), follicle-stimulating hormone (FSH) 3.07 mIU/mL (1.4–18.1), morning cortisol 2.27 mcg/dL (4.30–22.0), thyroid-stimulating hormone (TSH) 0.20 microIU/mL (0.35–5.5), total T3 0.96 ng/dL (0.6–1.65), and total T4 4.30 mcg/dL (4.4–11.0). Serum electrolytes were normal. A plain chest radiograph demonstrated normal lung parenchyma without infiltrates, cavitations, or hilar lymphadenopathy.\n\nContrast-enhanced brain magnetic resonance imaging (MRI) revealed an intensely enhancing sellar mass measuring 1.7 x 1.4 cm that extended suprasellarly, producing mass effect and compression of the optic chiasm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pituitary Macroadenoma",
+      "rule_out_reason": "Considered the primary preoperative radiological diagnosis given the 1.7 x 1.4 cm enhancing sellar mass compressing the optic chiasm, accompanied by hypopituitarism and stalk-effect hyperprolactinemia; ruled out when histopathology showed granulomatous inflammation with preserved reticulin architecture surrounding viable pituitary nests rather than adenomatous reticulin breakdown.",
+      "quote": "A radiological diagnosis of pituitary macroadenoma was given, and the patient was submitted to a transsphenoidal endonasal tumor excision."
+    },
+    {
+      "candidate": "Idiopathic Granulomatous Hypophysitis / Sellar Sarcoidosis",
+      "rule_out_reason": "Considered following the histological discovery of epithelioid cell granulomas and Langhans giant cells in the pituitary parenchyma; ruled out as non-infectious pathology by the demonstration of acid-fast bacilli on Ziehl-Neelsen staining.",
+      "quote": "The histopathology showed numerous epithelioid cell granulomas with Langhans giant cells with a mixed and variable proportion of pituitary parenchymal cells arranged in a nested and alveolar pattern (Figure 222C). Reticulin stain demonstrated reticulin fibers around the nest of viable pituitary parenchymal cells (Figure 2D). Ziehl Neelsen staining demonstrated acid-fast bacilli (Figure 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological demonstration of Langhans giant cell granulomas with positive Ziehl-Neelsen acid-fast staining of the sellar lesion, followed by complete clinical recovery and endocrine normalization under standard four-drug antitubercular chemotherapy.",
+      "quote": "Based on the above histomorphology, a diagnosis of Pituitary tuberculoma was given. Suspicion of pituitary adenoma was ruled out by the reticulin stain, and the demonstration of acid-fast bacilli by Ziehl Nelson stain. Treatment for tuberculosis was initiated with a 2-month combination of isoniazid, rifampin, pyrazinamide, and ethambutol, followed by 7 months of isoniazid and rifampicin. Her headache rapidly resolved and restored normal vision."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Transsphenoidal histopathology and Ziehl-Neelsen staining excluded from prompt. Zero pathogen spoilers."
+}

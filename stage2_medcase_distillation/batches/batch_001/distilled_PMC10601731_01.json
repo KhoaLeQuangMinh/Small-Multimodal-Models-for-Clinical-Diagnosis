@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10601731_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 66-year-old post-alemtuzumab haploidentical stem cell transplant recipient presenting with prolonged post-engraftment fever and miliary pulmonary micronodules, in whom profound T-cell depletion yielded entirely false-negative cultures and PCR assays across eight anatomical sites, requiring clinical-epidemiological diagnosis.\n2. Admission Breakpoint: Day 35 post-transplant following cross-sectional chest CT demonstrating bilateral micronodular shadows, prior to bronchoalveolar lavage, fungal biomarkers, and invasive tissue biopsies.\n3. Differential Distinctions: Invasive pulmonary fungal infection (ruled out by negative galactomannan, beta-D-glucan, and fungal cultures) and acute pulmonary GVHD / viral pneumonitis (ruled out by negative viral genomics and clinical course).",
+  "case_prompt": "A 66-year-old Japanese male with a history of chronic obstructive pulmonary disease and T-cell prolymphocytic leukemia—previously treated with alemtuzumab induction and consolidation haploidentical allogeneic stem cell transplantation with post-transplant cyclophosphamide, tacrolimus, and mycophenolate mofetil—is evaluated for persistent fever. Neutrophil engraftment was successfully documented on day 18 post-transplant, and bone marrow evaluation on day 29 confirmed complete donor chimerism without residual malignant cells. However, he develops prolonged unremitting fever after engraftment. On day 35, physical examination demonstrates persistent pyrexia without focal signs of organ dysfunction. Chest CT reveals the sudden appearance of multiple small nodular lung shadows distributed throughout both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive fungal infection (Aspergillosis / Candidiasis)",
+      "rule_out_reason": "In a profoundly immunosuppressed allogeneic transplant recipient with new nodular pulmonary lesions and persistent fever, invasive fungal infection was the primary differential; however, serum beta-D-glucan, Aspergillus galactomannan, and fungal cultures of blood and bronchoalveolar lavage (BAL) fluid were all negative.",
+      "quote": "The results of serological analysis, including beta-D glucan and Aspergillus galactomannan analysis, and bacterial and fungal cultures of blood and bronchoalveolar lavage (BAL) fluid were negative."
+    },
+    {
+      "candidate": "Viral pneumonitis (CMV) / Pulmonary Graft-versus-Host Disease (GVHD)",
+      "rule_out_reason": "Viral pneumonitis or pulmonary GVHD were considered given the haploidentical transplant setting; however, CMV antigenemia assays, comprehensive multiplex viral genetic testing, and BAL viral analyses were completely negative, and clinical findings did not match GVHD.",
+      "quote": "Furthermore, analysis results for viral infection, including CMV antigen and comprehensive genetic testing, were negative. From these findings, bacterial, fungal, and viral infections were ruled out. Drug-induced pneumonia and GVHD were inconsistent with the clinical course and physical findings."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Given endemicity in elderly Japanese hosts and classic miliary CT morphology, miliary tuberculosis was clinically diagnosed; therapeutic initiation of a rifampicin-sparing antitubercular regimen resulted in complete defervescence and total disappearance of the pulmonary nodules, overcoming false-negative microbiological assays caused by severe cellular immunodeficiency.",
+      "quote": "Considering that, tuberculosis (TB) is not rare among elderly individuals in Japan and that the lung shadow was suggestive of TB, we strongly suspected miliary TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Clinical narrative stops at day-35 CT imaging. Zero-spoiler adherence verified."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3469178_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 60-year-old man presents with chronic lower urinary tract symptoms (frequency, dysuria, and hematuria) and is found to have a polypoid bladder mass on ultrasound. While painless gross hematuria with a bladder mass in a 60-year-old classically suggests primary transitional cell carcinoma or prostatic disease, the critical tension lies in recognizing the long-delayed chronic infectious sequelae of remote travel/residence 20 years earlier in an endemic region (Khuzestan Province), which induces chronic inflammatory neoplasia.\n2. Admission Breakpoint: Admission evaluation concludes after physical examination, digital rectal examination, baseline hematology, renal function tests, serum PSA, and transabdominal/suprapubic bladder ultrasound, immediately prior to diagnostic cystoscopy and histopathological biopsy examination.\n3. Differential Distinctions: De novo solitary urothelial/transitional cell carcinoma occurs without parasitic infestation and typically without synchronous squamous cell carcinoma. Benign prostatic hyperplasia or prostate adenocarcinoma causes lower urinary tract symptoms, but PSA was normal (2.2 ng/mL), the prostate was smooth without nodules, and symptoms stemmed from a bladder mass. Sexually transmitted urethritis or non-parasitic bacterial cystitis produces dysuria and frequency, but patient had no STI history and ultrasound clearly identified a polypoid bladder tumor.",
+  "case_prompt": "A 60-year-old man presents to the urology outpatient clinic with a 3-month history of urinary frequency, dysuria, and hematuria. He reports no history of diabetes mellitus, sexually transmitted infections, or trauma. Epidemiological history reveals a brief period of residence approximately 20 years earlier in Khuzestan Province in southwestern Iran, an area historically known for endemic waterborne parasitic infections.\n\nOn physical examination, vital signs are normal. Digital rectal examination reveals a mildly enlarged prostate with a smooth, regular surface. Serum prostate-specific antigen (PSA) is 2.2 ng/mL. Preliminary hematological and renal function tests are within normal limits.\n\nSuprapubic ultrasonography of the urinary bladder demonstrates a polypoid tumor located on the floor of the bladder.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary transitional cell carcinoma of the bladder (non-parasitic)",
+      "rule_out_reason": "Gross hematuria and a solitary polypoid bladder tumor strongly suggested primary bladder urothelial carcinoma; however, histopathology revealed characteristic parasitic eggs embedded in the bladder mass alongside synchronous squamous and transitional cell carcinomas.",
+      "quote": "in suprapubic sonography that was done from his bladder, it showed a polypoid tumor on the floor of his bladder (Fig. 1), after cystoscopy and obtaining three specimens from bladder mass the histopathology study showed simultaneous squamous cell, transitional cell carcinoma (superficial type), and S. haematobium"
+    },
+    {
+      "candidate": "Prostate adenocarcinoma / Benign prostatic hyperplasia",
+      "rule_out_reason": "Lower urinary tract symptoms and palpable prostatic enlargement suggested a primary prostatic etiology, but the prostate was smooth, serum PSA was normal for age (2.2 ng/mL), and ultrasonography localized the pathology to a polypoid bladder mass.",
+      "quote": "direct rectal examination showed a mild enlarged prostate with smooth surface and his serum prostatic specific antigen (PSA) was 2.2 ng/mL, which is normal for age/assumed prostatic volume."
+    },
+    {
+      "candidate": "Sexually transmitted infection / Non-parasitic bacterial cystitis",
+      "rule_out_reason": "Infectious dysuria and hematuria can result from sexually transmitted or bacterial cystitis, but the patient had no STI history and ultrasound revealed a discrete proliferative polypoid bladder tumor.",
+      "quote": "There was no history of diabetes, sexually transmitted infection or trauma... in suprapubic sonography that was done from his bladder, it showed a polypoid tumor on the floor of his bladder"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cystoscopic biopsy of the polypoid bladder tumor demonstrating the presence of Schistosoma haematobium ova embedded in the bladder wall alongside simultaneous squamous cell and superficial transitional cell carcinomas established urinary schistosomiasis with malignant transformation.",
+      "quote": "after cystoscopy and obtaining three specimens from bladder mass the histopathology study showed simultaneous squamous cell, transitional cell carcinoma (superficial type), and S. haematobium (Fig. 2 and 3), and then patient treated classically for bladder cancer (TUR-T, locally chemotherapy) and schistosomiasis (Praziquantel)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero pathogen spoilers in case prompt. Admission breakpoint set prior to cystoscopy and biopsy. Candidate diseases and diagnostic pivot verified with direct quotes."
+}

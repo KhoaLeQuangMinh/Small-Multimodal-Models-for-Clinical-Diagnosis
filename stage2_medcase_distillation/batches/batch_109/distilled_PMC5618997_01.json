@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5618997_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A patient presenting with the classic clinical triad of normal pressure hydrocephalus (Hakim-Adams triad: gait apraxia, progressive dementia, and urinary incontinence) overlaid on a decades-long history of recurrent episodic intracranial hypertension, obscuring an aggressive, racemose parasitic subarachnoid presentation.\n2. Admission Breakpoint: The breakpoint is positioned at the outpatient neurology clinical evaluation prior to diagnostic lumbar puncture CSF analysis, neuroimaging demonstrating subarachnoid racemose cysts, and ventriculoperitoneal shunt placement.\n3. Differential Distinctions: Idiopathic normal pressure hydrocephalus and common neurodegenerative dementias present with gait ataxia and urinary incontinence, but lack the history of inflammatory meningism, CSF lymphocytic-eosinophilic pleocytosis with positive parasitic Ag-ELISA, and multicystic racemose lesions in the Sylvian fissure.",
+  "case_prompt": "A 63-year-old female presents to an outpatient neurology clinic with a progressive gait disorder, cognitive decline, and urinary incontinence. Her history began 19 years earlier with acute headache and fever treated with antimicrobial and corticosteroid therapy with symptomatic resolution. Three years later, she experienced recurrent severe headaches with nausea and vomiting responsive to corticosteroids. Over the subsequent 16 years, she experienced recurrent bouts of severe headaches and vomiting every 2 to 3 years, necessitating multiple hospital admissions, periodic therapeutic lumbar punctures, and near-continuous oral corticosteroid therapy (deflazacort 6 mg to 30 mg daily) for the past 5 years. Three years prior to evaluation, she developed progressive gait disturbance and memory impairment, and over the past 2 years, developed urinary incontinence and severe functional disability preventing her from performing household tasks. Past medical history includes resection of benign thyroid cysts on replacement thyroxine.\nNeurologic examination reveals an unsteady broad-based gait, inability to perform tandem walking, body imbalance with retropulsion, and bilateral regressing papilledema on fundoscopy. Cognitive screening demonstrates a Mini-Mental State Examination (MMSE) score of 24, with marked impairment in verbal fluency (7 animal names in 1 minute, and 7 words beginning with the letter \"p\" in 1 minute). The remainder of the neurological examination is unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Normal Pressure Hydrocephalus (NPH)",
+      "rule_out_reason": "The progressive development of gait disturbance, memory impairment, and urinary incontinence in an elderly female strongly suggested idiopathic NPH; however, CSF analysis demonstrated chronic active neuroinflammation with lymphocytic-eosinophilic pleocytosis, elevated proteins, and marked hypergammaglobulinemia, rather than normal CSF cellularity.",
+      "quote": "A CSF analysis done in July 2008 disclosed 35 leukocytes (predominantly lymphomononuclear cells with 5% eosinophils), 77 mg/dL of proteins, with high concentration of gammaglobulin (27%; normal 7-14%), normal glucose and a positive test for neurocysticercosis on antibody-enzyme linked immunosorbent assay (Ag-ELISA)."
+    },
+    {
+      "candidate": "Opportunistic / Chronic Neuroinfections (Toxoplasmosis, CMV, EBV, HIV)",
+      "rule_out_reason": "Recurrent chronic meningeal inflammation and steroid dependency raised suspicion for chronic opportunistic viral or protozoal central nervous system infections, but specific serologies were non-reactive.",
+      "quote": "Serological tests for toxoplasmosis, cytomegalovirus and Epstein-Barr virus (both IgG and IgM), and HIV were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive CSF antibody-enzyme-linked immunosorbent assay (Ag-ELISA) alongside neuroimaging demonstrating communicating hydrocephalus and characteristic racemose multicystic lesions resembling a bunch of grapes lacking a scolex within the right Sylvian fissure.",
+      "quote": "There were multiple cysts in the right Sylvian fissure, without scolex, and peripheral enhancement, whose appearance resembled a \"bunch of grapes\" (Figure 2, A, B and C)."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly excludes pathogen and disease names ('neurocysticercosis') and stops before invasive CSF analysis and advanced neuroimaging."
+}

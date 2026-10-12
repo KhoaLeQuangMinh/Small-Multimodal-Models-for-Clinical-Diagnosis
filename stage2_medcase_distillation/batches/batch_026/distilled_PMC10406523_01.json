@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10406523_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 57-year-old male with inflammatory colonic disease recently initiated on anti-TNF therapy (infliximab) presents with evening fevers, right upper quadrant pain, and large liver abscesses. The clinical and imaging presentation was initially interpreted as pyogenic bacterial abscesses secondary to immunosuppression, obscuring a protozoan etiology from remote travel.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following emergency department triage, baseline hematology, biochemistry, urinalysis, chest radiography, and abdominal CT imaging, stopping strictly before CT-guided percutaneous drainage, aspirate Gram staining/cultures, and send-out antigen immunoassays.\n3. Differential Distinctions: Amebic liver abscess is distinguished from pyogenic bacterial abscess by sterile purulent aspirate culture and positive Entamoeba histolytica enzyme immunoassay; from Echinococcus hydatid cyst by lack of daughter cyst architecture on CT and negative Echinococcus serology; and from an acute flare of inflammatory bowel disease by focal space-occupying hepatic lesions and response to metronidazole and paromomycin.",
+  "case_prompt": "A 57-year-old male with a history of inflammatory colonic disease diagnosed in 2017 presents to the emergency department with a 10-day history of cyclic high-grade fevers (101\u00b0F to 104\u00b0F) and right upper quadrant abdominal discomfort. Recent medical history is notable for active colitis with a shallow rectal ulcer and right colonic ulcerations identified during endoscopic surveillance one month prior, for which he was started on infliximab, having completed two induction doses. Over the past 10 days, he has experienced daily evening spikes of fever, night sweats, severe headaches, and shaking chills, with resolution of symptoms during daytime hours. He denies sick contacts or recent international travel, though he reports remote travel to the Middle East, North Africa, and Southern Europe in the early 2000s.\n\nOn physical examination, the patient is febrile up to 101.8\u00b0F and mildly tachycardic at 94 beats per minute, with normal oxygen saturation on ambient air. Abdominal examination demonstrates mild tenderness on palpation over the right upper quadrant without peritoneal guarding or rebound tenderness.\n\nLaboratory evaluation reveals leukocytosis with a white blood cell count of 12.8 x 103/muL and a neutrophil count of 9.2 x 103/muL. Coagulation profile demonstrates a prolonged prothrombin time of 18.2 seconds, international normalized ratio (INR) of 1.75, and activated partial thromboplastin time of 33.4 seconds. Liver chemistries show aspartate aminotransferase of 50 IU/L, alanine aminotransferase 49 IU/L, alkaline phosphatase 71 IU/L, and total bilirubin 0.5 mg/dL. Urinalysis and plain chest radiography are unremarkable. Computed tomography (CT) of the abdomen and pelvis demonstrates two hypoenhancing lesions in the liver measuring 9.2 cm and 3.5 cm in greatest dimension.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial liver abscess",
+      "rule_out_reason": "Considered the primary diagnosis on initial CT imaging and treated empirically with broad-spectrum piperacillin/tazobactam, but ruled out when percutaneous aspirate Gram staining and bacterial cultures yielded no growth.",
+      "quote": "Gram staining and culture of the liver abscess aspirate were negative."
+    },
+    {
+      "candidate": "Echinococcosis (Hydatid cyst disease)",
+      "rule_out_reason": "Considered given space-occupying cystic liver lesions in a patient with a remote history of travel to endemic Mediterranean and Middle Eastern regions, but excluded by specific serological evaluation.",
+      "quote": "Echinococcus and Entamoeba histolytica antigen tests were performed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Entamoeba histolytica enzyme immunoassay of serum returned positive on day 7, confirming an amebic liver abscess that was successfully eradicated with a two-week course of metronidazole followed by luminal paromomycin.",
+      "quote": "On day seven of hospitalization, the Entamoeba histolytica enzyme immunoassay returned positive results. The patient was then treated with metronidazole for two weeks followed by one week of paromomycin therapy to eliminate any remaining intraluminal cysts."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to percutaneous abscess drainage and send-out antigen immunoassays. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

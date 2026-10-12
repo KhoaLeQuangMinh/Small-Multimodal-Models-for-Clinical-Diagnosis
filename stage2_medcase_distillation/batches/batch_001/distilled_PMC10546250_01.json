@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10546250_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An immunosuppressed 12-year-old girl on treatment for autoimmune hemolytic anemia presenting with subacute fever, non-productive cough, severe respiratory distress, and bilateral airspace opacities with cystic lucencies that mimic Pneumocystis jirovecii pneumonia or necrotizing bacterial pneumonia.\n2. Admission Breakpoint: At initial emergency evaluation following triage vital signs and admission chest radiography, prior to sputum microbiological/molecular assays.\n3. Differential Distinctions: Pneumocystis jirovecii pneumonia (ruled out by positive sputum GeneXpert and systemic splenic granulomas) and staphylococcal necrotizing pneumonia (ruled out by an indolent one-month progression and molecular detection of Mycobacterium tuberculosis).",
+  "case_prompt": "A 12-year-old girl undergoing medical treatment for autoimmune hemolytic anemia presents with a 1-month history of intermittent fever, a 3-week history of non-productive cough, and worsening shortness of breath over the preceding 7 days. On physical examination, she is febrile and in acute respiratory distress, with marked tachycardia (heart rate 156 beats/min) and severe tachypnea (respiratory rate 64 breaths/min). Initial triage chest radiography demonstrates ill-defined bilateral airspace opacities accompanied by cystic lucencies in the right perihilar region.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pneumocystis jirovecii pneumonia (PJP)",
+      "rule_out_reason": "In an immunosuppressed pediatric patient receiving therapy for autoimmune hemolytic anemia who presents with subacute non-productive cough, severe hypoxemic tachypnea, and perihilar cystic lucencies with bilateral infiltrates, PJP was a foremost differential diagnosis; however, sputum molecular testing identified Mycobacterium tuberculosis.",
+      "quote": "A 12-year-old girl, on treatment for autoimmune haemolytic anaemia, presented with a history of intermittent fever for 1-month, non-productive cough for 3 weeks and shortness of breath over the preceding 7 days."
+    },
+    {
+      "candidate": "Bacterial necrotizing pneumonia with pneumatoceles",
+      "rule_out_reason": "Pyogenic bacterial pneumonia (such as Staphylococcus aureus) complicated by necrosis and pneumatoceles was considered given cystic lucencies on chest radiograph; however, the indolent one-month prodrome was inconsistent with acute pyogenic pneumonia, and sputum testing confirmed mycobacterial etiology.",
+      "quote": "Chest radiography demonstrated ill-defined, bilateral air space opacities, with a few cystic lucencies in the right perihilar region (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum GeneXpert assay rapidly detected Mycobacterium tuberculosis, confirming acute cystic pulmonary tuberculosis with subsequent cross-sectional CT demonstrating disseminated mediastinal adenopathy and splenic granulomas.",
+      "quote": "GeneXpert (sputum) detected mycobacterium tuberculosis (MTB) and the patient was started on antitubercular therapy (ATT)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Admission narrative capped strictly at initial chest radiograph. Zero-spoiler adherence verified."
+}

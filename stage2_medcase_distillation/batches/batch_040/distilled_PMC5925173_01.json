@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5925173_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 67-year-old woman presented with acute abdominal distention, pain, dyspnea, weight loss, an elevated CA-125 level (434 U/mL), and cross-sectional imaging demonstrating an adnexal/pelvic mass, ascites, peritoneal nodularity, extensive omental caking, and multi-station mediastinal and retroperitoneal lymphadenopathy. This clinical and radiographic picture was clinically indistinguishable from advanced Stage III/IV epithelial ovarian carcinoma or primary peritoneal carcinomatosis.\n2. Admission Breakpoint: The admission breakpoint occurs following emergency department presentation, triage physical examination, serum tumor marker evaluation (CA-125 markedly elevated, CEA/CA 19-9 normal), and staging cross-sectional imaging (CT chest/abdomen/pelvis and pelvic MRI demonstrating pelvic/ovarian mass, ascites, omental cake, pleural effusion, and extensive lymphadenopathy), immediately prior to paracentesis cytology, omental biopsy, diagnostic laparoscopy, and mycobacterial cultures.\n3. Differential Distinctions: Advanced ovarian cancer classically presents in postmenopausal women with elevated CA-125, complex adnexal masses, ascites, and peritoneal/omental implants, but cytology/histology reveals malignant epithelial adenocarcinoma rather than granulomatous inflammation. Pancreatic cancer with carcinomatosis is excluded by normal CA 19-9 and CEA markers and absence of malignant cytology.",
+  "case_prompt": "A 67-year-old African-American female (para 2) presented to her primary care provider and was subsequently transferred to the emergency department complaining of progressive abdominal pain and distention for two weeks, accompanied by shortness of breath and an unintentional 10-pound weight loss. Her past medical history was notable for well-controlled hypertension. Her surgical history included an abdominal myomectomy and two cesarean deliveries.\n\nOn physical examination, she had abdominal distention with shifting dullness consistent with moderate-to-large volume ascites, along with diffuse mild abdominal tenderness without peritoneal signs. Breath sounds were decreased at the right lung base.\n\nSerum tumor marker evaluation revealed a normal carcinoembryonic antigen (CEA < 0.5 ng/mL) and normal carbohydrate antigen 19-9 (CA 19-9: 19 U/mL), but cancer antigen 125 (CA-125) was markedly elevated at 434 U/mL. An outpatient abdominal sonogram had noted a 1.3 × 1.8 × 2 cm hypoechoic pancreatic head mass with several additional hypoechoic pancreatic lesions, the largest measuring 3.2 cm.\n\nSubsequent contrast-enhanced computed tomography (CT) of the abdomen and pelvis demonstrated an 8 × 8 × 7 cm pelvic mass, moderate ascites, diffuse peritoneal nodularity, and abdominal lymphadenopathy. CT of the chest showed left cervical, superior mediastinal, left paratracheal, epicardial, and perihepatic lymphadenopathy with a moderate right-sided pleural effusion. Pelvic magnetic resonance imaging (MRI) revealed an enlarged uterus (12 × 7.5 × 7.8 cm), a 2.4 × 2.3 cm right ovarian mass, extensive peritoneal nodules, dense omental cake extending into the anterior pelvis, and retroperitoneal para-aortic and paracaval adenopathy spanning from the renal hilum to the aortic bifurcation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Advanced-stage epithelial ovarian cancer / Peritoneal carcinomatosis",
+      "rule_out_reason": "Although markedly elevated CA-125 with pelvic/ovarian masses, ascites, and dense omental cake was initially presumed to be ovarian cancer, ascitic fluid cytology and surgical biopsies showed noncaseating granulomas without any malignant neoplastic cells.",
+      "quote": "This patient was referred to the institution's division of gynecologic oncology where an omental mass biopsy was ultimately performed demonstrating noncaseating granulomas with no tumor identified. The ascitic fluid was negative for malignancy."
+    },
+    {
+      "candidate": "Pancreatic adenocarcinoma / Metastatic gastrointestinal malignancy",
+      "rule_out_reason": "Pancreatic head and parenchymal hypoechoic lesions were noted on initial ultrasound, but normal serum CA 19-9 and CEA alongside tissue biopsies negative for malignant adenocarcinoma excluded primary pancreatic malignancy.",
+      "quote": "Tumor markers were sent and resulted in CEA < 0.5 ng/mL, CA 19-9: 19 U/mL, CA-125: 434 U/mL."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Operative diagnostic laparoscopy revealed diffuse peritoneal nodularity whose biopsies demonstrated granulomatous inflammation without malignancy, with definitive confirmation provided by positive mycobacterial tissue culture growing Mycobacterium tuberculosis.",
+      "quote": "Subsequent biopsies and frozen section revealed noncaseating granulomas with no evidence of malignancy. Preliminary acid fast bacilli (AFB) stains were negative (Figure 2). Four (4) weeks later, preliminary results from AFB tissue culture were positive for Mycobacterium tuberculosis with final confirmation six (6) months after."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in accordance with Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission prompt; exact article quotes substantiate differentials and diagnostic pivot."
+}

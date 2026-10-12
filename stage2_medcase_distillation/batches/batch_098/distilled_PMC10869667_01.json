@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10869667_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 21-year-old male with poorly controlled type II diabetes presented with acute severe hypoxemic respiratory failure, high fever, and diffuse bilateral cavitating pulmonary nodules. The imaging appearance strongly resembled cavitary tuberculosis or diffuse metastatic malignancy ('cannonball' metastases), disguising an acute presentation of an endemic, life-threatening environmental gram-negative bacterial infection.\n2. Admission Breakpoint: The breakpoint occurs following initial emergency triage, oxygenation assessment, vital signs, physical exam, baseline hematology and electrolyte panels, plain chest radiography, and thoracic HRCT, immediately prior to invasive bronchoalveolar lavage, oncologic PET-CT imaging, and send-out blood cultures.\n3. Differential Distinctions: Cavitary pulmonary tuberculosis was the primary infectious suspect given endemicity in India and nodular cavitations in a diabetic, but BAL acid-fast smear and GeneXpert MTB assays were negative. Hematogenous pulmonary metastasis was considered due to diffuse variable-sized cavitary nodules, but excluded by PET-CT. Thoracic melioidosis was definitively diagnosed when blood cultures yielded Burkholderia pseudomallei, prompting swift initiation of targeted ceftazidime/meropenem therapy.",
+  "case_prompt": "A 21-year-old male residing in Bidar, Karnataka, India, presented to the emergency department with a 3-day history of nonproductive cough and progressive grade III-IV dyspnea, preceded by fever and sore throat for 5 days. The patient had a known history of type 2 diabetes mellitus managed with oral medications. He reported no nausea, vomiting, abdominal pain, bowel disturbances, or chest pain.\n\nOn physical examination, the patient was alert, oriented, and in marked respiratory distress. Vital signs revealed a blood pressure of 110/60 mmHg, pulse rate of 100 beats per minute, tachypnea with a respiratory rate of 30 breaths per minute, and a pulse oximetry saturation of 85% on room air. Chest examination demonstrated bilateral breath sounds without focal adventitious sounds; there was no palpable peripheral lymphadenopathy.\n\nInitial triage laboratory investigations revealed anemia and thrombocytopenia, with a hemoglobin of 8.7 g/dL, red blood cell count of 3.29 million/cu.mm, mean corpuscular hemoglobin of 26.4 pg, MCHC of 30.9 g/dL, red cell distribution width of 14.1%, and platelet count of 135,000/cu.mm. Serum electrolytes revealed hypokalemia with a potassium of 2.8 mEq/L and hypomagnesemia with a magnesium level of 1.6 mg/dL. An emergency chest radiograph demonstrated ill-defined homogenous opacities across bilateral lung fields. High-resolution computed tomography (HRCT) of the chest revealed multiple variable-sized nodules with central cavitations diffusely scattered throughout bilateral lung parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cavitary Pulmonary Tuberculosis",
+      "rule_out_reason": "In a diabetic patient from India presenting with fever, cough, and diffuse bilateral nodular cavitary pulmonary lesions, tuberculosis was the prime infectious differential; ruled out by negative bronchoalveolar lavage acid-fast bacilli staining and negative GeneXpert MTB testing.",
+      "quote": "HRCT chest revealed multiple variable-sized nodules with central cavitations diffusely scattered in bilateral lungs (Figures 1A-1D). Based on these chest imaging findings, the initial differential diagnosis of pulmonary tuberculosis, pulmonary metastasis, and other infective etiologies was given. Diagnostic workups for pulmonary tuberculosis (bronchoalveolar lavage for AFB and GeneXpert MTB) and pulmonary metastasis (PET-CT) were negative."
+    },
+    {
+      "candidate": "Pulmonary Metastases / Hematogenous Malignancy",
+      "rule_out_reason": "Multiple diffuse bilateral pulmonary nodules with central cavitation strongly mimicked hematogenous pulmonary metastases or cavitating neoplasia; ruled out by non-malignant findings on PET-CT evaluation.",
+      "quote": "Based on these chest imaging findings, the initial differential diagnosis of pulmonary tuberculosis, pulmonary metastasis, and other infective etiologies was given. Diagnostic workups for pulmonary tuberculosis (bronchoalveolar lavage for AFB and GeneXpert MTB) and pulmonary metastasis (PET-CT) were negative."
+    },
+    {
+      "candidate": "Atypical or Common Bacterial Pneumonia",
+      "rule_out_reason": "Acute respiratory decompensation and hypoxemia prompted empiric initiation of doxycycline and metronidazole; however, empiric therapy was inadequate for severe nodular necrotizing sepsis, requiring identification of an intrinsically resistant environmental pathogen.",
+      "quote": "initial empirical antibiotic therapy with intravenous (IV) Doxycycline 100 mg, Metronidazole 500mg, and other supportive medications."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Blood cultures drawn on admission yielded Burkholderia pseudomallei within three days, confirming acute bacteremic thoracic melioidosis in a diabetic host; prompt transition to high-dose intravenous ceftazidime and meropenem followed by eradication therapy with co-trimoxazole and doxycycline led to full recovery.",
+      "quote": "Samples were sent for blood culture and sensitivity, which revealed isolates of Burkholderia pseudomallei within three days, which established the diagnosis of thoracic melioidosis. Based on blood culture and sensitivity reports, the patient was started on specific intravenous antibiotics (Ceftazidime 2gm, Avibactem 0.5gm, Meropenem, and Sulbactum 1.5gm) and was continued for two weeks."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation successfully executed according to Stanford MedCaseReasoning principles. Admission prompt includes diabetes status, vitals, hypoxemia, CBC, electrolytes, and HRCT findings of cavitary nodules while strictly excluding blood culture identification and pathogen names. Reasoning includes direct quotes from the report."
+}

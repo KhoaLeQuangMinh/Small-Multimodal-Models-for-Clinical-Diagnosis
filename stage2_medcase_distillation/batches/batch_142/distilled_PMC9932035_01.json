@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9932035_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 31-year-old male renal transplant recipient in an endemic region (Hainan, China) on triple immunosuppression presents with subacute low back pain, chronic diarrhea, cytopenias, graft dysfunction, and severe systemic inflammation. The critical tension is diagnosing disseminated fungal infection in the absence of pathognomonic umbilicated skin lesions, negative HIV status, and a negative initial serum (1,3)-beta-D-glucan assay.\n2. Admission Breakpoint: Clinical evaluation on admission including history, physical exam verifying clear skin without cutaneous lesions, baseline laboratory tests (WBC 0.71 x 10⁹/L, Hb 88 g/L, serum creatinine 435 µmol/L, PCT 17.49 ng/mL, CRP 463.2 mg/L, ALT 37 U/L, AST 124 U/L), and lumbar spine MRI showing Schmorl's nodes and retroperitoneal adenopathy, before empirical antibiotic escalation, bone marrow aspiration, mNGS metagenomics, and blood cultures.\n3. Differential Distinctions: Glucocorticoid-induced peptic ulcer bleeding is considered when gastrointestinal hemorrhage develops, but colonoscopy proves ulcerations with fungal invasion. Beta-glucan-detectable invasive fungal infections (e.g., Candidiasis, Aspergillosis) are considered but beta-glucan is negative. Donor-derived graft infection is ruled out by time-zero kidney biopsy. Dual mNGS and blood culture confirm Talaromyces marneffei.",
+  "case_prompt": "A 31-year-old male residing in Hainan, China presents with low back pain and intermittent diarrhea of more than one month's duration. Six months earlier, he underwent renal transplantation for uremia and has since been maintained on immunosuppressive triple therapy comprising tacrolimus, mycophenolate enteric-coated tablets, and methylprednisolone. Baseline serum creatinine was 300 µmol/L. On admission physical examination, no cutaneous lesions or rashes are observed. Baseline laboratory investigations reveal severe leukopenia with a white blood cell count of 0.71 x 10⁹/L, hemoglobin of 88 g/L, serum creatinine elevated to 435 µmol/L, alanine aminotransferase (ALT) of 37 U/L, aspartate aminotransferase (AST) of 124 U/L, procalcitonin (PCT) of 17.49 ng/mL, and C-reactive protein (CRP) of 463.2 mg/L. Lumbar spine magnetic resonance imaging (MRI) reveals Schmorl's node formation at the superior endplates of L3-L5 vertebral bodies and identifies multiple enlarged retroperitoneal lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Glucocorticoid-induced gastrointestinal ulceration / bleeding",
+      "rule_out_reason": "Considered when the patient developed severe hemorrhagic lower gastrointestinal bleeding while maintained on corticosteroid therapy, but excluded when colonoscopy revealed multiple colonic ulcers with active bleeding at the ileocecal junction directly related to invasive fungal infection.",
+      "quote": "Therefore, we excluded gastrointestinal bleeding caused by glucocorticoids, and the bleeding was considered associated with T. marneffei infection."
+    },
+    {
+      "candidate": "Invasive 1,3-beta-D-glucan-positive fungal disease (e.g., Candidiasis, Aspergillosis)",
+      "rule_out_reason": "Considered due to high fever, deep immunosuppression (CD4+ count 48/µL), and multiorgan involvement, but initial fungal biomarker screening with 1,3-beta-D-glucan was negative.",
+      "quote": "The 1,3-beta-glucan test revealed negative results (55.51 pg/ml)."
+    },
+    {
+      "candidate": "Donor-derived allograft transmission",
+      "rule_out_reason": "Considered given the development of severe opportunistic systemic infection within 6 months of transplantation, but excluded by baseline donor graft biopsy at time of surgery.",
+      "quote": "time-zero biopsy of the transplanted kidney revealed no infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Dual metagenomic next-generation sequencing (mNGS) performed on peripheral blood and bronchoalveolar lavage fluid detected 15,499 and 4,373 unique sequences of Talaromyces marneffei, respectively, which was subsequently confirmed by positive blood cultures, establishing disseminated talaromycosis requiring targeted amphotericin B cholesteryl sulfate complex.",
+      "quote": "T. marneffei was detected in both blood and BALF samples, and the number of unique sequences of T. marneffei in blood and BALF was 15,499 and 4373, respectively. The coverage of T. marneffei in blood and BALF detected by mNGS was 3.63% and 1.07%, respectively. The pathogen was subsequently confirmed by blood culture on 28 March 2022"
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly adheres to admission breakpoint before invasive procedures, mNGS, or blood culture returns. All quotes verified verbatim against article text."
+}

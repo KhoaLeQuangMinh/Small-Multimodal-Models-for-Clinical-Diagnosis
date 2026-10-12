@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9556964_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 22-year-old postpartum woman presented with marked behavioral disturbance, depressed affect, irritability, and auditory hallucinations initially diagnosed as peripartum depression/psychosis. The key diagnostic tension was distinguishing a functional psychiatric disorder from an organic intracranial infection disguised by peripartum onset, which manifested with subacute intermittent headaches, persistent fevers, and subsequent focal neurological deficits.\n2. Admission Breakpoint: The admission breakpoint occurs following emergency cesarean delivery and initial triage evaluation, when fever and baseline postpartum laboratory testing (anemia, normal metabolic panel and leukocytes) were noted, prior to subsequent loss of consciousness, neurological consultation, and neuroimaging.\n3. Differential Distinctions: Primary peripartum depressive disorder or psychosis lacks persistent fevers, meningeal irritation, and focal cranial neuropathies. Acute metabolic or electrolyte encephalopathy was excluded by normal serum chemistries. Thromboembolic cerebral infarction and PRES were differentiated on neuroimaging by basal cistern and sulcal leptomeningeal enhancement characteristic of tuberculous meningitis alongside concomitant pulmonary and abdominal lymphadenopathy.",
+  "case_prompt": "A 22-year-old Asian woman presented at 33 to 34 weeks of gestation with premature rupture of membranes and underwent an emergency cesarean section, delivering a preterm infant. Three months prior to presentation, following interpersonal stress, she became socially withdrawn, remained secluded in her room for two months, ate poorly, and had unintentional weight loss. Over the preceding three weeks, she developed progressive fatigue, lethargy, frequent unprovoked crying spells, and irritability. During this same three-week interval, she experienced frequent intermittent headaches accompanied by mild fevers, for which outpatient evaluation noted anemia and low blood pressure treated with analgesics and vitamins. She had no history of personal or familial psychiatric illness and no history of head trauma.\n\nFollowing delivery, she exhibited marked behavioral and personality alterations, becoming irritable, confused, and unresponsive to questions from family and clinicians. She was unable to sleep despite profound somnolence, exhibited meaningless babbling, and reported auditory hallucinations of voices. On physical examination at the time of admission post-cesarean delivery, she was febrile with a body temperature of 38.7 °C (101.7 °F); the remainder of the initial physical examination showed no focal abnormalities. Initial laboratory evaluation demonstrated a hemoglobin level of 8.2 g/dL, a white-cell count of 11,000 per cubic millimeter, and a platelet count of 308,000 per cubic millimeter. Serum electrolytes, calcium, glucose, blood urea nitrogen, and creatinine concentrations were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Depressive disorder with peripartum onset / postpartum psychosis",
+      "rule_out_reason": "Initially suspected given her prominent withdrawal, depressed mood, tearfulness, weight loss, irritability, and auditory hallucinations following childbirth; however, psychiatric illness alone could not account for three weeks of intermittent fevers and headaches, subsequent focal cranial nerve deficits, positive meningeal signs, and hydrocephalus on neuroimaging.",
+      "quote": "According to her complaint, she was diagnosed with depressive disorder with peripartum onset. Depressive disorder was diagnosed because the patient had depressed mood most of the day; diminished interest or pleasure in all, or almost all, activities most of the day; significant weight loss; fatigue or loss of energy; feelings of worthlessness in the last 3 months."
+    },
+    {
+      "candidate": "Electrolyte or metabolic encephalopathy",
+      "rule_out_reason": "Considered when the patient suffered an acute deterioration in consciousness two days post-admission; excluded by entirely normal electrolyte and metabolic evaluations.",
+      "quote": "Two days after admission, patient experienced loss of consciousness which was suspected due to electrolyte imbalance by physician in Emergency Department at the time of admission. Thus, she was followed up by internist. However, there was no abnormality in either electrolyte or metabolic process."
+    },
+    {
+      "candidate": "Cerebral infarction from embolization / Posterior reversible encephalopathy syndrome (PRES)",
+      "rule_out_reason": "Raised after non-enhanced brain CT demonstrated hypodense subcortical lesions in the occipital lobe, parietooccipital lobe, and cerebellum with hydrocephalus; ruled out when contrast administration revealed intense basilar and leptomeningeal enhancement rather than ischemic or vasogenic edematous patterns.",
+      "quote": "Those lesions could be an infarct due to embolization with differential diagnosis of posterior reversible encephalopathy syndrome (PRES) and tuberculoma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neurological examination revealing meningeal signs, facial paresthesia, and tetraparesthesia with pathological reflexes, combined with contrast-enhanced CT showing prominent enhancement of basal cisterns and sulci with communicating hydrocephalus, alongside chest radiography and abdominal ultrasound confirming disseminated pulmonary and lymph node involvement, established tuberculous meningitis with intracranial tuberculoma.",
+      "quote": "In an enhanced CT, we found an overlie meningeal enhancement at sulci cortical right occipital lobe, bilateral sulcus cortical temporal lobes, tentorium cerebelli, ambient cisternae, basalis cisternae, bilateral Sylvia fissures, anterior and posterior interhemispheric fissure with hydrocephalus communicans, which suggested an additional diagnosis of meningitis... An abdominal ultrasound scan revealed hepatosplenomegaly and multiple paraaortic lymphadenopathies, which added additional suspected diagnosis of tuberculous peritonitis. A chest X-ray was performed and suggested active pulmonary tuberculosis..."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint: contains clinical HPI, post-cesarean admission vitals, baseline CBC and metabolic panel. All subsequent focal neurologic exams, psychiatric medications, CT findings, chest radiography, and clinical deterioration belong strictly to the reasoning section. Zero pathogen or disease name spoilers."
+}

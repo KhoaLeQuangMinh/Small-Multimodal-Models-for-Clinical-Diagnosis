@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4192926_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 71-year-old kidney transplant recipient on chronic immunosuppression presented acutely with 1 day of headache, nausea, and vomiting without focal neurological signs. Neuroimaging demonstrated a solitary ring-enhancing cystic mass in the left cerebellum with restricted diffusion and mass effect, mimicking a pyogenic abscess, high-grade cystic glioma, or intracranial metastasis, with a background of a stable non-diagnostic pulmonary cavitary lesion and negative prior intradermal screening.\n\n2. Admission Breakpoint: Admission triage concludes after baseline hematology, serum chemistries, urinalysis, chest radiography, and neuroimaging (non-contrast head CT and contrast-enhanced brain MRI). Confirmatory evaluation begins with neurosurgical posterior fossa craniotomy, aspiration/drainage of the purulent cavity, and microbiological stain/culture.\n\n3. Differential Distinctions: Pyogenic bacterial/fungal brain abscess and cystic intracranial neoplasm were primary considerations given the acute presentation and ring enhancement in an immunosuppressed patient. Operative drainage revealed frank purulence without malignant architecture, and microbiological evaluation yielded acid-fast bacilli and cultures positive for Mycobacterium tuberculosis, confirming a rare cerebellar tuberculous abscess.",
+  "case_prompt": "A 71-year-old man presented to the emergency department with a 1-day history of acute headache, nausea, and vomiting. His medical history was notable for end-stage renal disease status post kidney transplantation maintained on chronic immunosuppressive therapy, type 2 diabetes mellitus, and essential hypertension. Prior purified protein derivative (PPD) screening and human immunodeficiency virus (HIV) antibody testing had been negative.\n\nOn physical examination, the patient was alert and oriented. Blood pressure was normal. Neurological examination revealed no cranial nerve abnormalities, cerebellar dysmetria, ataxia, motor weakness, or sensory deficits. Routine admission laboratory investigations, including complete blood count, basic metabolic panel, liver function tests, and coagulation profile, were all within normal limits. Urinalysis was unremarkable, and blood cultures showed no growth.\n\nChest radiography demonstrated a stable right upper lobe cavitary lesion that had been biopsied twice previously with nondiagnostic results. Non-contrast computed tomography (CT) of the head revealed a cystic mass in the left cerebellum with marked perilesional edema. Follow-up contrast-enhanced magnetic resonance imaging (MRI) of the brain demonstrated a well-circumscribed ring-enhancing lesion in the left cerebellar hemisphere on T1-weighted sequences, associated with restricted diffusion, local mass effect, and surrounding vasogenic edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic (Bacterial or Fungal) Brain Abscess",
+      "rule_out_reason": "Given immunosuppression from a kidney transplant and an acute ring-enhancing cerebellar lesion with restricted diffusion, acute bacterial or fungal brain abscess was a leading consideration; however, routine blood cultures and subsequent cerebrospinal fluid cultures showed no growth, and staining revealed acid-fast bacilli rather than bacteria or fungi.",
+      "quote": "Cerebrospinal fluid (CSF) cultures were also obtained, which were negative."
+    },
+    {
+      "candidate": "Cystic Glioma or Intracranial Metastasis",
+      "rule_out_reason": "A ring-enhancing posterior fossa mass with prominent vasogenic edema and mass effect in a 71-year-old with an indeterminate pulmonary cavitary lesion raised suspicion for a primary neuroglial malignancy or metastatic neoplasm; however, neurosurgical evacuation demonstrated an encapsulated cavity filled with frank pus rather than tumor tissue.",
+      "quote": "The lesion was well encapsulated with a frankly purulent center."
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Cystic lesions with ring enhancement can represent central nervous system parasitic disease, but the purulent gross appearance and rapid microbiological identification excluded parasitic encystment.",
+      "quote": "Differential diagnosis included pyogenic abscess (bacterial or fungal), neurocysticercosis, cystic glioma, or other cystic malignant/metastatic process."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The patient underwent emergent left posterior fossa biopsy and drainage, revealing an encapsulated lesion with frankly purulent contents; direct acid-fast staining revealed numerous acid-fast bacilli and cultures grew pan-sensitive Mycobacterium tuberculosis, securing the diagnosis of a cerebellar tuberculous abscess.",
+      "quote": "Numerous acid fast bacilli were seen on acid fast stain, and cultures returned positive for mycobacterium tuberculosis [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning methodology. Admission breakpoint stops after contrast-enhanced brain MRI; invasive posterior fossa drainage, acid-fast stains, and mycobacterial cultures are withheld from the prompt."
+}

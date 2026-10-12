@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3588403_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 36-year-old man develops hemorrhagic foot blisters within 24 hours of barefoot freshwater fishing, which rapidly progress into intensely pruritic, linear and serpiginous urticarial lesions ascending the leg to the thigh and trunk. The initial presentation with hemorrhagic and purpuric blisters prompted consideration of a primary cutaneous vasculitis; however, the rapid migration of the urticarial tracks ('larva currens') paired with peripheral blood eosinophilia pointed toward an invasive nematode rather than an autoimmune vascular disorder.\n2. Admission Breakpoint: The admission narrative incorporates the patient's exposure history (barefoot freshwater fishing in Porto Alegre, Brazil), evolution from hemorrhagic blisters on the foot to rapidly ascending linear-to-serpiginous urticarial tracks on the leg, thigh, and trunk, absence of systemic symptoms or medication use, and baseline laboratory evaluation demonstrating peripheral blood eosinophilia with normal routine blood, stool, and urine screening. Empirical anthelmintic therapy with ivermectin, symptomatic resolution, and skin biopsy histopathology revealing intraepidermal larvae are strictly withheld for the diagnostic reasoning phase.\n3. Differential Distinctions: Cutaneous vasculitis (Henoch-Schönlein purpura / leukocytoclastic vasculitis) was initially suspected due to hemorrhagic and purpuric lesions on the lower extremity, but was ruled out by the rapid linear-to-serpiginous progression over days and prominent peripheral eosinophilia without palpable purpura or systemic vasculitic features. Cutaneous larva migrans (zoonotic Ancylostoma hookworms) causes serpiginous creeping eruptions after soil contact, but advances slowly (millimeters to centimeters per day) and remains localized to the feet or buttocks, unlike the rapid urticarial progression ('larva currens') extending onto the trunk characteristic of Strongyloides stercoralis.",
+  "case_prompt": "A 36-year-old previously healthy man residing in Porto Alegre, Brazil, presents with a progressive, intensely pruritic cutaneous eruption. Four days prior to presentation, he had been fishing barefoot in muddy ground adjacent to a freshwater pond. Within 24 hours following this exposure, he developed cutaneous hemorrhagic blisters on his left foot. Over the subsequent 3 days, the eruption evolved into pruritic, linear to serpiginous, erythematous urticarial lesions ascending along the left lower extremity and reaching his left thigh. In addition, new linear urticarial lesions have progressively appeared across his trunk. He denies any systemic symptoms and reports no medication use.\n\nOn physical examination, he appears comfortable and vital signs are normal. Dermatologic inspection reveals hemorrhagic blisters on the left foot, accompanied by prominent erythematous, linear-to-serpiginous urticarial plaques extending along the left lower extremity to the left thigh, as well as multiple linear urticarial tracks over the trunk. The remainder of the physical examination is unremarkable. Initial baseline laboratory testing demonstrates peripheral blood eosinophilia; complete blood count, routine stool analysis, and partial urine testing show no other abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Vasculitis",
+      "rule_out_reason": "Considered initially because the hemorrhagic blisters mimicked a purpuric vasculitic disorder, but excluded by the rapid linear-to-serpiginous propagation of urticarial tracks to the thigh and trunk and the presence of peripheral blood eosinophilia.",
+      "quote": "The initial diagnosis was vasculitis due to the purpuric lesions; however, with the emergence of some lesions in the trunk, there was the chance that it could be larva currens."
+    },
+    {
+      "candidate": "Cutaneous Larva Migrans (Zoonotic Hookworm)",
+      "rule_out_reason": "Zoonotic hookworm larva migrans produces slow-moving (millimeters per day) serpiginous burrows usually restricted to the feet or buttocks, whereas this patient experienced rapid migration of urticarial tracks extending up the leg and across the trunk over several days.",
+      "quote": "In 3 days, such condition evolved into pruritic, linear to serpiginous, erythematous urticarial lesions in the left lower limb and reached his left thigh (Figures 2 and 3). Progressively, some new urticarial, linear lesions appeared in his trunk."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when the rapid advancement of serpiginous urticarial lesions from the foot to the trunk (larva currens) following freshwater mud exposure, combined with peripheral eosinophilia, prompted empirical ivermectin administration with rapid clinical regression, followed by definitive histopathologic confirmation of nematode larvae within the epidermis.",
+      "quote": "Later, the pathology showed the larvae in the epidermis (Figures 4, 5, and 6)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following the Stanford MedCaseReasoning methodology. Case prompt terminates cleanly at admission triage before antiparasitic treatment and biopsy. Zero pathogen or disease names leaked. Quotes verified against source text."
+}

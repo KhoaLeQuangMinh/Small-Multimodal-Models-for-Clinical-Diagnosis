@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3982349_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 54-year-old female presents with acute severe abdominal pain, high fever, and peritonism leading to an emergent exploratory laparotomy and cholecystectomy that yielded no surgical pathology. Rapid progression postoperatively to multiorgan dysfunction syndrome (MODS) with severe hypoxia, leukocytosis, acute renal impairment, and hypoalbuminemia creates severe diagnostic confusion between surgical complication/septic shock and severe zoonotic rickettsial infection.\n2. Admission Breakpoint: The admission breakpoint falls immediately upon referral and triage at the tertiary medical center following the negative laparotomy, based on clinical exam (fever, SIRS, tachypnea/hypoxia, and identification of an abdominal eschar) and baseline laboratory testing (CBC, basic metabolic and liver profile), strictly prior to empiric antirickettsial therapy and send-out confirmatory IgM ELISA testing.\n3. Differential Distinctions: Acute surgical peritonitis/cholecystitis is excluded by negative laparotomy findings; secondary hospital-acquired bacterial sepsis/ARDS is ruled out by the pathognomonic cutaneous eschar and dramatic rapid clinical defervescence and extubation within 48-72 hours of oral doxycycline and intravenous azithromycin, confirmed by IgM ELISA.",
+  "case_prompt": "A 54-year-old female is transferred to our tertiary intensive care unit with progressive breathlessness, fever, and severe abdominal pain of five days' total duration. Prior to transfer, she presented to an outside hospital with acute, excruciating abdominal pain and high fever concerning for an acute surgical abdomen, where she underwent an urgent exploratory laparotomy and cholecystectomy. Surgical exploration revealed no demonstrable intra-abdominal perforation, purulence, or visceral necrosis to account for her presentation. Following surgery, her abdominal pain persisted and she developed rapidly progressive respiratory distress.\n\nOn physical examination upon admission, she is critically ill and meets criteria for systemic inflammatory response syndrome (SIRS) with marked tachypnea, tachycardia, and significant hypoxia requiring immediate high-flow oxygenation. Detailed cutaneous examination reveals a focal necrotic cutaneous lesion with an erythematous halo (an eschar) located on the abdominal wall.\n\nInitial laboratory workup demonstrates a hemoglobin of 9.8 g/dL, marked leukocytosis with a white blood cell count of 21,500/mm³ (62% neutrophils), and a platelet count of 142,000/mm³. Serum chemistry and hepatic panels reveal a serum creatinine of 1.5 mg/dL, total bilirubin of 1.5 mg/dL (direct bilirubin 0.2 mg/dL), total protein of 5.4 g/dL, serum albumin of 1.7 g/dL, aspartate aminotransferase (SGOT) of 108 U/L, alanine aminotransferase (SGPT) of 27 U/L, and alkaline phosphatase of 211 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Surgical Abdomen / Complicated Cholecystitis / Visceral Perforation",
+      "rule_out_reason": "Severe fever and abdominal pain initially raised strong suspicion for an intra-abdominal surgical emergency, prompting urgent laparotomy and cholecystectomy at the referring hospital; however, operative inspection revealed no acute surgical pathology or etiology for her abdominal pain.",
+      "quote": "She underwent a laparotomy and cholecystectomy in another hospital for suspected acute abdomen. She was referred to this hospital since the laparotomy did not reveal any surgical cause for the abdominal pain"
+    },
+    {
+      "candidate": "Hospital-Acquired Pyogenic Sepsis and Acute Respiratory Distress Syndrome (ARDS)",
+      "rule_out_reason": "The combination of marked neutrophilic leukocytosis (WBC 21,500), multiorgan dysfunction, severe hypoxia requiring mechanical ventilation, and acute renal insufficiency raised concern for post-surgical pyogenic sepsis; however, standard bacterial sepsis failed to account for the focal cutaneous eschar, and she experienced rapid resolution without broad-spectrum gram-negative coverage.",
+      "quote": "Clinical examination revealed an eschar over the abdomen and had features of Systemic Inflammatory Response Syndrome (SIRS) with significant hypoxia."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Scrub Typhus Presenting as Acute Abdomen",
+      "rule_out_reason": "The pivotal diagnostic breakthrough was the clinical recognition of a characteristic abdominal eschar, connecting her acute abdominal syndrome, capillary leak (albumin 1.7 g/dL), and multiorgan failure to systemic vasculitis caused by scrub typhus. Administration of doxycycline and azithromycin resulted in dramatic defervescence within 48 hours and extubation in 3 days, with definitive confirmation by positive IgM ELISA.",
+      "quote": "Based on the presence of an eschar and evidence of multi-organ failure requiring invasive ventilation, she was diagnosed to have scrub typhus and started on oral doxycycline and intravenous azithromycin with which she showed significant improvement. She became afebrile in 48 h and weaned off the ventilator in 3 days. The diagnosis of Scrub typhus was confirmed by a positive IgM Enzyme Linked Immunosorbent Assay (ELISA)."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Breakpoint established upon triage at the receiving hospital with baseline labs and physical discovery of the eschar, prior to targeted antimicrobial response and ELISA confirmation. Zero pathogen or disease names mentioned in the prompt."
+}

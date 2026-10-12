@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9356588_01",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: A 40-year-old male presents with profound cachexia, chronic non-productive cough, cervical and submental lymphadenopathy, and hepatosplenomegaly in an endemic region. Standard sputum diagnostic tests for mycobacteria are completely negative due to lack of sputum production and profound immunosuppression (CD4 14 cells/uL). Distinguishing disseminated infection from lymphoma, visceral leishmaniasis, or other opportunistic diseases is the central challenge.\n2. Admission Breakpoint: The breakpoint is positioned after clinical presentation, vital signs, physical examination (cachexia, peripheral lymphadenopathy, hepatosplenomegaly), and triage abdominal ultrasonography (micronodules and necrotic lymph nodes), but strictly before fine needle aspiration cytology (FNAC), retroviral serology, CD4 enumeration, and urine lipoarabinomannan (LAM) testing.\n3. Differential Distinctions: Systemic lymphoma produces diffuse lymphadenopathy and organomegaly with B-symptoms, but ultrasound shows centrally necrotic lymphadenopathy and FNAC reveals tuberculous abscess; visceral leishmaniasis (kala-azar) presents with wasting, splenomegaly, and lymphadenopathy in East Africa but lacks caseating necrotic abscesses on cytology; smear-negative tuberculosis is definitively confirmed by lateral flow urine LAM in advanced retroviral coinfection.\n</think>",
+  "case_prompt": "A 40-year-old male presented to the outpatient medical center in Hawassa, Ethiopia, with a one-month history of a persistent non-productive cough and a three-month history of profound, unquantified weight loss and anorexia.\n\nOn physical examination, the patient appeared chronically ill, cachectic, and markedly wasted. Vital signs were within normal limits. His weight was 52 kg and height was 1.74 m, corresponding to a body mass index (BMI) of 17.2 kg/m^2. Examination of the lymphoglandular system revealed multiple bilateral cervical masses measuring 3 x 4 cm that were mobile, tender, and lacked overlying erythema, along with submental masses measuring 2 x 3 cm that were soft, mobile, non-tender, and without overlying skin changes. Abdominal examination revealed tender hepatomegaly palpable 5 cm below the right costal margin, and a soft palpable mass along the splenic axis consistent with splenomegaly.\n\nInitial bedside abdominal ultrasonography demonstrated multiple calcified and hypoechoic micronodules throughout the liver and spleen parenchyma, as well as multiple enlarged intra-abdominal lymph nodes with central necrosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Lymphoma / Hematologic Malignancy",
+      "rule_out_reason": "Considered due to profound cachexia, diffuse peripheral lymphadenopathy (cervical and submental), and marked hepatosplenomegaly, but ruled out by ultrasound showing centrally necrotic intra-abdominal lymphadenopathy and fine needle aspiration demonstrating tuberculous abscess.",
+      "quote": "Abdominal ultrasonography revealed calcified and hypoechoic micronodules in the liver and spleen, as well as numerous enlarged centrally necrotic intra-abdominal lymphadenopathies, indicating disseminated tuberculosis (likely resolving). A FNAC biopsy revealed bilateral cervical and submental lymphadenopathies, with a tuberculous abscess as the most likely diagnosis."
+    },
+    {
+      "candidate": "Visceral Leishmaniasis (Kala-Azar)",
+      "rule_out_reason": "Considered in an East African adult presenting with chronic wasting, marked hepatosplenomegaly, and generalized lymphadenopathy, but excluded by lymph node aspiration revealing tuberculous necrotizing inflammation rather than Leishmania donovani amastigotes.",
+      "quote": "A FNAC biopsy revealed bilateral cervical and submental lymphadenopathies, with a tuberculous abscess as the most likely diagnosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Tuberculosis in Advanced HIV Infection (Urine LAM Positive)",
+      "rule_out_reason": "Although all standard sputum diagnostic tests were negative due to non-productive cough and severe immunosuppression (confirmed HIV coinfection with CD4 count of 14 cells/mm^3), the diagnosis of disseminated tuberculosis was definitively confirmed by a positive lateral-flow urine lipoarabinomannan (LAM) assay and lymph node FNAC, leading to full clinical recovery and weight gain following anti-tuberculosis therapy and antiretroviral therapy.",
+      "quote": "He was then probed for a possible TB diagnosis, despite the fact that all of the standard TB diagnostic tests were negative... A FNAC biopsy revealed bilateral cervical and submental lymphadenopathies, with a tuberculous abscess as the most likely diagnosis. He was then tested for retrovirus infection and was found to be positive. The CD4 cell count was 14 cells per millimeter squared. He was offered urine LAM for tuberculosis diagnosis, and the result was positive for TB LAM."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. FNAC biopsy, HIV testing, CD4 count, and urine LAM held until diagnostic reasoning."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC13073497_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: Pediatric patients with known sickle cell disease presenting with high fever, severe abdominal pain, jaundice, and vomiting in a tropical coastal environment. In hemoglobinopathies, acute abdominal pain, jaundice, and hepatomegaly strongly suggest an acute sickle crisis (vaso-occlusive, sequestration, or hepatic crisis) or encapsulated bacterial sepsis, easily overshadowing or delaying recognition of an underlying arboviral infection presenting with warning signs.\n2. Admission Breakpoint: Emergency department presentation with fever (mean 4.5 days), abdominal pain, vomiting, hepatomegaly, jaundice, tachycardia, and warning signs, prior to arboviral serological and molecular testing.\n3. Differential Distinctions: Sickle cell vaso-occlusive/hepatic crisis typically causes acute bone/abdominal pain and hemolysis without the hallmark features of an acute arboviral exanthem, retro-ocular pain, or mucosal bleeding. Invasive bacterial sepsis lacks classic arboviral warning signs and is confirmed by blood cultures. Dengue is definitively confirmed through detection of NS1 antigen, IgM/IgG antibodies, and RT-PCR.",
+  "case_prompt": "A cohort of pediatric male patients (mean age 9.7 ± 4.8 years) with previously confirmed sickle cell disease (documented by hematological evaluation and hemoglobin electrophoresis) presented to a pediatric emergency department in Cartagena, Colombia, with acute febrile illness. Caregivers reported febrile episodes lasting several days prior to admission (mean duration: 4.5 ± 1.1 days).\n\nUpon arrival at the emergency department, four of the six children exhibited fever (> 38 °C). The predominant presenting symptoms included abdominal pain (6/6) and vomiting (5/6). Less frequent manifestations included retro-ocular pain (2/6), myalgia (2/6), diarrhea (2/6), epistaxis (1/6), and rash (1/6).\n\nPhysical examination revealed tachycardia in three cases and tachypnea in two. Abdominal examination demonstrated hepatomegaly in three children and splenomegaly in one. Jaundice was documented in two patients. The clinical presentations fulfilled criteria for acute febrile illness with clinical warning signs, with several patients demonstrating early hemodynamic instability.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sickle Cell Vaso-occlusive / Acute Abdominal Crisis",
+      "rule_out_reason": "Children with sickle cell anemia frequently experience acute abdominal pain and jaundice during vaso-occlusive or hepatic crises; however, the presence of an acute febrile prodrome, retro-ocular pain, myalgia, rash, and mucosal bleeding indicated an acute systemic infectious trigger rather than an isolated vaso-occlusive event.",
+      "quote": "The most common clinical symptom was abdominal pain (6/6), followed by vomiting (5/6), hepatomegaly (3/6), and jaundice (2/6)... All patients presented with dengue with warning signs according to the WHO criteria; three patients (patients 1, 2, and 3) progressed to severe dengue."
+    },
+    {
+      "candidate": "Acute Invasive Bacterial Sepsis",
+      "rule_out_reason": "Functional asplenia in sickle cell disease predisposes to rapid fulminant bacteremia by encapsulated bacteria presenting with fever, tachycardia, and tachypnea, but the combination of rash, epistaxis, retro-ocular pain, and characteristic virological markers pointed to an epidemic arboviral infection.",
+      "quote": "Less frequent manifestations included retro-ocular pain (2/6), myalgia (2/6), diarrhea (2/6), epistaxis (1/6), splenomegaly (1/6), and rash (1/6)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical progression of fever with warning signs to severe disease in pediatric patients with sickle cell disease was definitively confirmed as dengue through positive antigen detection, serology, and RT-PCR.",
+      "quote": "The diagnosis of dengue was confirmed through positive serological and virological assessments, including detection of NS1 antigen, IgM, and IgG antibodies, and RT-PCR, in accordance with current national guidelines."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to NS1, serological, and RT-PCR confirmation. Zero pathogen names or spoilers in the case prompt."
+}

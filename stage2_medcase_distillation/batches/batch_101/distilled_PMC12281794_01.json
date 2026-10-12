@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12281794_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 64-year-old diabetic male presents with a subacute 3-month syndrome of persistent cough, severe back pain, prolonged fever, significant weight loss, perianal fistula, left elbow arthritis, and multifocal osteolytic lesions (costovertebral and coccygeal). The central clinical challenge is distinguishing disseminated multifocal tuberculosis from disseminated pyogenic bacterial infection, Crohn's disease with enterocutaneous fistulae, or metastatic pelvic malignancy with necrotic bone involvement.\n2. Admission Breakpoint: Admission triage concludes following initial clinical evaluation, baseline hematology and inflammatory markers (elevated CRP, normal CBC, HbA1c 7%, negative HIV serology), and baseline cross-sectional imaging (CT chest/abdomen/pelvis, CT left elbow, and MRI lumbosacral spine), immediately prior to invasive microbiological sampling (AFB stains and GeneXpert assays).\n3. Differential Distinctions: The 3-month indolent duration, absence of marked leukocytosis, and characteristic imaging findings of cavitary pulmonary consolidation coupled with peripherally enhancing cold abscesses in the retro-rectal and sacrococcygeal spaces strongly favor a chronic granulomatous mycobacterial infection over acute bacterial sepsis or primary pelvic neoplasms.",
+  "case_prompt": "A 64-year-old male with a medical history of type 2 diabetes presented with a 3-month history of persistent cough and severe back pain. The presentation was accompanied by prolonged fever and significant unintentional weight loss. He reported no personal history of chronic pulmonary illness or known exposure to chronic respiratory infections.\n\nPhysical examination revealed a perianal fistula exuding purulent discharge. Osteoarticular examination demonstrated active arthritis of the left elbow. Neurological assessment of the lower extremities showed intact motor and sensory function, with preserved bowel and bladder continence. The remainder of the physical examination was unremarkable.\n\nLaboratory evaluation revealed a markedly elevated C-reactive protein level with normal complete blood cell counts. Glycated hemoglobin (HbA1c) was 7.0%. Serological testing for HIV was negative.\n\nComputed tomography (CT) of the thorax, abdomen, and pelvis revealed cavitary consolidation in the lung, osteolysis involving the D3-K3 costovertebral joint, and coccygeal arthritis. Magnetic resonance imaging (MRI) of the lumbosacral spine showed a complex peripherally rim-enhancing lesion centered in the left median and paramedian retro-rectal space extending into the pericoccygeal region, with adjacent soft tissue involvement. CT imaging of the left elbow revealed a joint effusion accompanied by marked osteopenia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Sepsis and Disseminated Abscess",
+      "rule_out_reason": "Acute staphylococcal or enteric bacteremia causing septic arthritis and perianal abscesses typically presents with toxic signs and marked peripheral leukocytosis; the patient exhibited a prolonged 3-month course with completely normal white blood cell counts.",
+      "quote": "Blood tests showed elevation in C reactive protein level with normal blood cells."
+    },
+    {
+      "candidate": "Pelvic Malignancy / Chordoma with Bone Metastases",
+      "rule_out_reason": "Although a destructive retrorectal and coccygeal mass in an older adult raises suspicion for chordoma or necrotic pelvic malignancy, the peripheral ring enhancement on MRI, concomitant apical pulmonary cavitation, and elbow synovitis pointed to a multifocal granulomatous infectious process.",
+      "quote": "The lesion is enhanced in its periphery after gadolinium administration, and there is soft tissue involvement as well"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when purulent fistula discharge, sputum, and left elbow joint aspirate demonstrated acid-fast bacilli and yielded positive molecular GeneXpert confirmation for Mycobacterium tuberculosis.",
+      "quote": "The acid-fast bacilli (AFB) test performed on sputum and fistula discharge was positive. Additionally, the GeneXpert MTB/RIF assay conducted on sputum, fistula discharge and elbow joint fluid showed positive for M. tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation cleanly ends prior to smear microscopy and molecular assays. No pathogen names or disease spoilers leaked."
+}

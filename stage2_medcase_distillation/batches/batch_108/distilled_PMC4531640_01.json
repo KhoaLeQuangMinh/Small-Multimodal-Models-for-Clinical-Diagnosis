@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4531640_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 71-year-old female agricultural worker presenting with profound quadriparetic weakness and non-traumatic rhabdomyolysis causing acute pigment nephropathy and distributive shock, where infectious etiology must be differentiated from autoimmune inflammatory myopathies or common bacterial sepsis.\n2. Admission Breakpoint: Admission triage ends following physical examination (noting hypotension, fever, and right flank cutaneous eschar), baseline laboratory tests (CPK, aldolase, renal panel, LFTs, urinalysis, CBC), and emergency imaging (CXR, ECG, abdominal radiograph), strictly prior to indirect fluoroimmunoassay serologic antibody titers.\n3. Differential Distinctions: Autoimmune polymyositis causes severe proximal weakness and elevated CPK, but typically has a subacute/chronic presentation without distributive shock or inoculation eschars; septic shock from bacterial pyelonephritis or bacteremia causes hypotension and renal failure, but fails to account for marked rhabdomyolysis without focal suppuration.",
+  "case_prompt": "A 71-year-old female farmer with a medical history of diabetes mellitus presented with a 4-day history of diffuse myalgias, severe muscle weakness, and high fever. The generalized muscle aches and weakness were so debilitating that she was completely unable to walk, and she appeared clinically dehydrated.\n\nOn physical examination, she was febrile, tachycardic, and hypotensive. Body temperature was 38.5°C, blood pressure 80/50 mmHg, pulse rate 100 beats/min, and respiratory rate 20 breaths/min. Cutaneous examination revealed an eschar on her right flank area.\n\nInitial emergency laboratory evaluation revealed marked muscle injury, with a serum creatine phosphokinase (CPK) of 3,250 U/L (reference <200 U/L) and serum aldolase of 22.4 IU/mL (reference <8 IU/mL). Renal function tests showed severe acute kidney injury, with blood urea nitrogen 95 mg/dL (reference <22 mg/dL) and serum creatinine 4.6 mg/dL (reference <1.4 mg/dL). Electrolytes and biochemical tests showed serum potassium 5.1 mEq/L, sodium 129 mEq/L, uric acid 12.4 mg/dL (reference <7 mg/dL), and albumin 2.1 g/dL. Liver enzymes were elevated, with AST 173 U/L and ALT 89.5 U/L. Urinalysis revealed grossly red urine with 4+ blood on dipstick, but microscopic sediment showed only 0–1 red blood cells per high-power field and 5–9 white blood cells per high-power field. Urine myoglobin was elevated at 23.5 ng/mL (reference <7 ng/mL). Complete blood count demonstrated a white blood cell count of 6.4 × 10⁹/L, hemoglobin 14.9 g/dL, and thrombocytopenia with a platelet count of 92 × 10⁹/L. Chest radiograph, abdominal plain film, and electrocardiogram were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Idiopathic Polymyositis / Inflammatory Myopathy",
+      "rule_out_reason": "Profound generalized weakness rendering the patient non-ambulatory, combined with marked elevation of creatine kinase (3,250 U/L) and aldolase, initially mimicked acute polymyositis; however, the acute 4-day febrile onset, distributive shock, thrombocytopenia, and presence of an inoculation eschar ruled out a primary idiopathic autoimmune myopathy.",
+      "quote": "She was dehydrated, and general myalgias and weakness were so severe that she was unable to walk."
+    },
+    {
+      "candidate": "Bacterial Sepsis with Ischemic Acute Tubular Necrosis",
+      "rule_out_reason": "Marked hypotension (80/50 mmHg), dehydration, and renal failure suggested bacterial septic shock complicated by ischemic acute tubular necrosis; however, the dipstick-positive red urine devoid of intact erythrocytes along with elevated urine myoglobin (23.5 ng/mL) confirmed acute rhabdomyolytic pigment nephropathy.",
+      "quote": "The patient's urine was red, and analysis revealed a large amount of blood (4+, 0-1 red blood cells/high power field, 5-9 white blood cells/high power field). Urine myoglobin was 23.5 ng/mL (normal less than 7 ng/mL)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of a characteristic necrotic eschar on the right flank in an agricultural worker, confirmed by a markedly elevated indirect fluoroimmunoassay antibody titer of 1:40960, established tsutsugamushi infection (Scrub Typhus) complicated by severe rhabdomyolysis and acute renal failure.",
+      "quote": "In particular, an eschar, which is characteristic of tsutsugamushi disease, was found on her right flank area. Her Tsutsugamushi antibody titer, which was measured by serologic indirect fluoroimmunoassay, was 1:40960."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Cutaneous eschar documented objectively without revealing pathogen name; serologic titers reserved for diagnostic reasoning."
+}

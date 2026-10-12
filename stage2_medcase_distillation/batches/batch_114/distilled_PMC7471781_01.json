@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7471781_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A young male healthcare worker in an urban, low-endemicity developed setting (Singapore) presents with an annular, ring-like plaque on the back present for years that failed topical antifungals, followed by a recent eruption of disseminated monomorphic papules across the extremities, trunk, and face. The clinical absence of focal sensory loss, nerve enlargement, or constitutional symptoms leads clinicians to strongly favor common dermatological conditions such as tinea corporis, granuloma annulare, cutaneous sarcoidosis, or secondary syphilis, delaying the recognition of Hansen's disease.\n2. Admission Breakpoint: The breakpoint is positioned after the clinic intake history, travel history (migrated from Philippines, periodic visits home), review of systems (no fever, night sweats, numbness, or weakness), and dermatological physical examination (10 x 7.5 cm non-scaly annular plaque on right upper back and disseminated 0.5-1 cm monomorphic papules), immediately prior to punch biopsy, Fite acid-fast staining, and molecular line-probe assays.\n3. Differential Distinctions: Tinea corporis produces expanding annular lesions but typically features active peripheral epidermal scaling and responds to topical antifungals. Granuloma annulare or sarcoidosis causes non-scaly annular plaques and papules, but displays well-formed sarcoidal or necrobiotic palisading granulomas without acid-fast bacilli on Fite stain. Secondary syphilis can present with generalized non-pruritic papules but was ruled out by negative exposure history and biopsy features.",
+  "case_prompt": "A Filipino male in his 30s presented to an outpatient dermatology clinic in Singapore with a persistent, non-tender, non-pruritic erythematous plaque over his right upper back that had been present for several years. The lesion originally began as faint erythema and gradually enlarged into an annular, ring-like plaque that had shown no response to topical antifungal therapy. Over the preceding 2 months, he experienced disease progression characterized by the eruption of multiple new erythematous papules over his face, trunk, and upper limbs.\n\nHe had moved to Singapore 7 years earlier to work as nursing personnel and traveled back to the Philippines once to twice a year to visit family. He denied systemic symptoms including fevers, night sweats, or weight loss. He reported no numbness, paresthesias, or focal muscle weakness, had no other medical conditions, and was taking no medications. There was no history of skin trauma or contact with topical irritants, and his household and family contacts had no skin complaints.\n\nOn physical examination, vital signs were normal. Dermatological examination revealed a large, well-demarcated, erythematous, infiltrated annular plaque measuring 10 by 7.5 cm over the right upper back extending into the axilla, without epidermal scale. In addition, there were multiple disseminated, firm, monomorphic papules measuring 0.5 to 1 cm in diameter distributed over the upper limbs, face, proximal lower limbs, and gluteal region. Sensation over the lesions was preserved, and no peripheral nerve enlargement was appreciated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tinea Corporis / Refractory Dermatophytosis",
+      "rule_out_reason": "Considered due to the annular, ring-like configuration of the long-standing plaque on the trunk; ruled out by failure to respond to topical antifungal therapy and physical examination demonstrating an infiltrated plaque completely devoid of epidermal scale.",
+      "quote": "It was non-pruritic in nature and the plaque did not respond to topical antifungal treatment... It was erythematous, infiltrated and not scaly."
+    },
+    {
+      "candidate": "Granuloma Annulare / Cutaneous Sarcoidosis",
+      "rule_out_reason": "Considered due to the annular infiltrated non-scaly appearance and generalized monomorphic papules without systemic signs; ruled out by histopathological evaluation demonstrating diffuse superficial dermal histiocytic infiltration without well-formed sarcoidal granulomas or Langhans giant cells.",
+      "quote": "Microscopic examination of the skin biopsies revealed a diffuse superficial dermal infiltrate of epithelioid histiocytes without well-formed granulomas surrounded by lymphocytes or any multinucleate Langhans giant cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Borderline Lepromatous Leprosy (Hansen's Disease)",
+      "rule_out_reason": "Punch biopsy of the skin lesions revealed Fite-positive acid-fast bacilli within dermal histiocytic infiltrates, and line-probe molecular assay (GenoType LepraeDR) confirmed Mycobacterium leprae DNA without resistance mutations in rpoB, gyrA, or folP1, establishing leprosy in a non-endemic clinical practice setting.",
+      "quote": "Fite-positive bacilli were identified within the inflammatory infiltrate (Fig. 2c)... The result was positive for M. leprae with no mutation detected at rpoB (rifampicin), gyrA (ofloxacin) and folP1 (dapsone) gene targets by the assay."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly scrubbed of leprosy or mycobacterial references. Breakpoint occurs right after physical exam before punch biopsies."
+}

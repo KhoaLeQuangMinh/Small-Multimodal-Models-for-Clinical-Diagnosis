@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11681884_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 62-year-old woman presents with persistent whitish discharge and indurated, raised sinus tracts from all port sites three months after laparoscopic cholecystectomy, complicated by high fever (39.9 °C). Repeated courses of unspecified outpatient antibiotics failed to resolve the lesions, and acute bacterial cultures showed no growth, demonstrating the diagnostic challenge of atypical mycobacterial port-site infection mimicking refractory staphylococcal or enteric surgical wound abscesses.\n2. Admission Breakpoint: The narrative concludes following outpatient presentation, vital signs (noting fever to 39.9 °C), physical examination of the port sinuses, baseline laboratory investigations (CBC, ESR, normal organ function tests, negative HIV), and ultrasound showing multi-site collections, immediately prior to surgical incision and drainage, wound drainage cultures, and fine needle aspiration cytology (FNAC).\n3. Differential Distinctions: Pyogenic bacterial abscess (e.g., Staphylococcus aureus or gram-negative bacilli) is the primary cause of acute fever and purulent wound drainage, but fails to yield organisms on standard culture and is refractory to standard antibiotics. Non-tuberculous mycobacterial (NTM) or tuberculous surgical site infections arise from contaminated reusable laparoscopic instruments or unrecognized peritoneal disease, producing chronic indurated sinus tracts with granulomatous necrosis.",
+  "case_prompt": "A 62-year-old female with a history of hypertension managed with lifestyle modifications presents to the outpatient clinic with a three-month history of non-healing surgical incisions following an uncomplicated laparoscopic cholecystectomy performed for symptomatic cholelithiasis. She complains of persistent whitish drainage from all laparoscopic port sites. Over the preceding three months, she sought care at multiple medical facilities and received several courses of unspecified oral antibiotics and daily wound dressing changes, with no resolution of the drainage. She denies cough, chest pain, dyspnea, weight loss, night sweats, or chills.\n\nOn physical examination, the patient appears acutely ill and in mild discomfort. Vital signs are notable for an axillary temperature of 39.9 °C, with a normal blood pressure, pulse rate, and respiratory rate. Abdominal examination demonstrates multiple chronic sinus tracts with active whitish discharge located at the previous laparoscopic trocar sites. The margins of the wounds are firm, indurated, raised, and measure approximately 1 cm in diameter. The abdomen is otherwise soft without focal peritonitis, and the remainder of the physical examination is unremarkable.\n\nLaboratory investigations show a white blood cell count of 5,200/uL (54.6% granulocytes and 39.6% lymphocytes), hemoglobin of 14.8 g/dL, platelet count of 213,000/uL, and an erythrocyte sedimentation rate (ESR) of 39 mm/h. Renal function tests, liver function tests, and serum electrolytes are within normal limits. An abdominal ultrasound examination demonstrates multiple fluid collections beneath the port sites, with the largest measuring 2.3 cm x 1.8 cm in cross-section.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Port-Site Infection / Abscess",
+      "rule_out_reason": "High fever (39.9 °C) and purulent fluid collections at surgical incision sites strongly suggested acute bacterial wound infection; however, operative drainage yielded sterile pus on conventional culture and the condition had proved refractory to multiple prior empirical antibiotic courses.",
+      "quote": "Incision and drainage were performed under local anaesthesia at all three port sites. Frank pus was drained and sent for culture and sensitivity testing, which showed no growth."
+    },
+    {
+      "candidate": "Foreign Body Reaction / Suture Sinus with Secondary Cellulitis",
+      "rule_out_reason": "Chronic sinus tracts with indurated raised edges at surgical ports can occur around non-absorbable sutures, but marked high-grade pyrexia (39.9 °C) and multiple deep multi-port collections indicate an active infectious granulomatous etiology rather than an inert stitch sinus.",
+      "quote": "Abdominal examination revealed multiple sinus tracts with whitish discharge at the previous port sites. The edges of the wounds were firm, raised, and measured approximately 1 cm in diameter, as shown in Fig. 2."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine needle aspiration cytology (FNAC) of the indurated abdominal wall port site demonstrated classic granulomatous inflammation with central caseous necrosis, confirming laparoscopic port-site tuberculosis.",
+      "quote": "This revealed granulomatous inflammation with central necrosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to incision/drainage, wound cultures, and FNAC. Zero disease spoilers. Verbatim quotes match text."
+}

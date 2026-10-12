@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10270697_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 65-year-old man presents with chronic cough, thoracic back pain, radicular chest wall paresthesias, and a fluctuant posterior chest wall mass. Imaging reveals a massive (T4–T10) fluid-attenuation posterior mediastinal mass causing extensive expansile lytic destruction of the T7–T8 vertebrae, transverse processes, and the eighth rib. The profound bone destruction and neural foraminal expansion strongly suggest an aggressive malignant neoplasm (e.g., neurogenic sarcoma, chordoma, or metastasis) rather than a parasitic zoonosis.\n2. Admission Breakpoint: The breakpoint occurs following initial clinical presentation, physical exam, baseline labs (mild leukocytosis 14,200/microL, ESR 40 mm/hr), chest radiograph, and contrast CT scan, immediately before CT-guided core biopsy histopathology is obtained.\n3. Differential Distinctions: Aggressive posterior mediastinal neoplasms (malignant peripheral nerve sheath tumor, neuroblastoma, or spinal metastasis) and spinal tuberculosis (Pott's disease with cold abscess) were the foremost considerations due to vertebral lysis and chest wall extension. The fluid-density attenuation on CT, peripheral wall calcification without parenchymal lung disease, and absence of psoas involvement favored a cystic zoonotic process, confirmed as hydatid disease on biopsy.",
+  "case_prompt": "A 65-year-old man presents to the outpatient clinic with a 1-year history of non-productive cough, a 2-month history of worsening mid-thoracic back pain, and left-sided chest heaviness. He has received multiple courses of oral antibiotics and antitussives without symptomatic relief. Over the preceding weeks, he developed burning and tingling paresthesias radiating across his left lateral chest wall.\n\nOn physical examination, the patient appears chronically ill but is in no acute distress; vital signs are within normal limits. Inspection of the thorax reveals chest wall asymmetry, with a slightly tender, fluctuant mass palpated along the left lateral and posterior thoracic wall. Neurological examination reveals left thoracic dermatomal paresthesias matching his neuropathic complaints.\n\nBaseline laboratory investigations reveal a mild leukocytosis of 14,200/mm^3 and an elevated erythrocyte sedimentation rate (ESR) of 40 mm/hr. An abdominal ultrasound examination is normal. A plain chest radiograph demonstrates a rounded, homogeneous opacity in the left hilar region with a positive 'hilar overlay sign' and obscuration of the descending aortic contour. A subsequent contrast-enhanced chest CT demonstrates a large, well-defined cystic lesion (fluid attenuation) in the left posterior mediastinum extending from T4 to T10, displacing the descending aorta and compressing the left lower lobe. The cyst wall displays minimal contrast enhancement with focal mural calcifications along its lateral and inferior margins. Associated findings include expansile lytic destruction of the T7 and T8 vertebral bodies, the pedicles and transverse processes of eight thoracic vertebrae, and the left eighth rib, alongside widening of the left T6-T7 and T8-T9 neural foramina.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant Posterior Mediastinal Neoplasm / Neurogenic Sarcoma",
+      "rule_out_reason": "Marked osseous destruction of multiple vertebrae and ribs with foraminal widening was initially concerning for an aggressive invasive malignancy; however, CT showed a predominantly fluid-density cystic mass with minimal wall enhancement and no solid invasive tumor components.",
+      "quote": "Considering some aggressive lesions of posterior Mediastinal space lesion with chest wall extension, a CT-guided biopsy was performed."
+    },
+    {
+      "candidate": "Spinal Tuberculosis (Pott's Disease with Cold Abscess)",
+      "rule_out_reason": "Thoracic back pain, vertebral bone destruction, elevated ESR, and a paraspinal/chest wall fluctuant mass strongly mimic a tuberculous cold abscess; however, the lung parenchyma was entirely clear, and histopathology lacked caseating granulomas or acid-fast bacilli.",
+      "quote": "No lung parenchymal lesion was seen and the abdominal ultrasound was normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CT-guided biopsy revealed characteristic acellular laminated cuticular membranes accompanied by foreign body giant cell granulomatous reaction and necrotic debris diagnostic of hydatid cyst disease.",
+      "quote": "Histopathologic findings revealed multiple fragments of a cellular laminated fibrous tissue with intense foreign body-type giant cell granuloma, accompanied by a few small mature lymphocytes. These were predominantly mixed chronic mononuclear inflammatory cells on a satellite granular necrosis debris background, which are consistent with a hydatid cyst (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation stops at triage imaging before CT-guided biopsy histopathology. Zero pathogen spoilers in prompt."
+}

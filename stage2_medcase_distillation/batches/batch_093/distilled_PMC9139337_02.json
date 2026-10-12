@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9139337_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 61-year-old female presents with subacute, rapidly worsening unbearable lumbar back pain found to have a large 51 × 28 mm lower abdominal aortic pseudoaneurysm with contiguous periaortic lymphadenopathy, accompanied by diffuse bilateral pulmonary miliary nodules. The clinical tension is recognizing an infectious tuberculous pseudoaneurysm masquerading as degenerative vascular disease or pyogenic aortitis in a patient with irregular prior anti-tuberculous treatment.\n2. Admission Breakpoint: The breakpoint occurs following emergency triage, baseline hematologic and inflammatory tests, and urgent CTA of the thoracic and abdominal aorta, prior to confirmatory sputum GeneXpert assay and digital subtraction angiography with emergency stent grafting.\n3. Differential Distinctions: Degenerative or atherosclerotic abdominal aortic aneurysms typically lack surrounding soft-tissue inflammatory infiltration, retroperitoneal necrotic lymphadenopathy, and synchronous diffuse pulmonary miliary lesions. Acute pyogenic mycotic aneurysm (e.g., Salmonella, Staphylococcus) causes rapid arterial wall destruction with high leukocytosis and septic shock, whereas tuberculous pseudoaneurysms develop indolently via contiguous lymph node erosion with normal WBC counts and moderate CRP elevation.",
+  "case_prompt": "A 61-year-old woman presents with intermittent low back pain that persisted for one month, worsening acutely over the preceding week until becoming unbearable. Three months previously, she was evaluated at a local hospital for a productive cough, where chest computed tomography showed suspicious pulmonary lesions and an interferon-gamma release assay was positive; an empirical multi-agent regimen was initiated, but she had taken the medication irregularly due to gastrointestinal reactions.\nOn physical examination, systemic examination reveals no abnormalities.\nAdmission laboratory evaluation reveals: white blood cell count 7.22 × 10^9/L, hemoglobin 122 g/L, platelet count 216 × 10^9/L, C-reactive protein (CRP) 32.97 mg/dL, and procalcitonin 0.213 ng/mL.\nThoracic and abdominal aortic computed tomography angiography (CTA) demonstrates a 51 × 28 mm pseudoaneurysm arising from the lower abdominal aorta, surrounded by patchy soft tissue and regional lymphadenopathy, as well as multiple inflammatory foci and diffuse miliary nodules in both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Degenerative / Atherosclerotic abdominal aortic aneurysm",
+      "rule_out_reason": "Uncomplicated degenerative aneurysms occur without surrounding periaortic inflammatory mantles, regional lymphadenopathy, or synchronous diffuse miliary pulmonary nodularity; here, imaging and past exposure strongly implicated an infectious lymph-node erosive process.",
+      "quote": "Thoracic and abdominal aortic CTA examination showed a 51x28 mm2 pseudoaneurysm arising from the lower abdominal aorta, surrounded by a patchy shadow and lymphadenopathy (Figure 5)."
+    },
+    {
+      "candidate": "Pyogenic bacterial mycotic aneurysm (e.g., Salmonella or Staphylococcus)",
+      "rule_out_reason": "Pyogenic aortitis typically presents with severe acute bacteremia, marked leukocytosis, and high procalcitonin levels; in contrast, this patient demonstrated a normal white blood cell count (7.22 × 10^9/L) and low procalcitonin (0.213 ng/mL), with GeneXpert testing confirming mycobacterial disease.",
+      "quote": "Laboratory results were white blood cells, 7.22x109/L; hemoglobin, 122 g/L; platelets, 216 x109/L; CRP, 32.97 mg/dl; and procalcitonin, 0.213ng/mL."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum GeneXpert assay positive for rifampicin-sensitive Mycobacterium tuberculosis, establishing active miliary tuberculosis as the etiology of the contiguous retroperitoneal lymphadenopathy and eroding abdominal aortic pseudoaneurysm.",
+      "quote": "The sputum GeneXpert test result was positive and sensitive to rifampicin. Multiple infections and diffuse miliary nodules in both lungs suggested tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Dramatic presentation of tuberculous abdominal aortic pseudoaneurysm secondary to adjacent lymph node erosion. Zero pathogen spoilers in presentation; stops cleanly before GeneXpert and endovascular surgery."
+}

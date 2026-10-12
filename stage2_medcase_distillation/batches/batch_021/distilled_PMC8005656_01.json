@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8005656_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: An 8-month-old infant presents with high spiking fevers, acute respiratory failure, multiple cavitary pulmonary nodules, marked hepatosplenomegaly, and severe liver injury that rapidly deteriorate despite maximal broad-spectrum antibacterial coverage and IVIG. The tension is differentiating fulminant bacterial sepsis from an opportunistic disseminated dimorphic fungal infection in an infant with an occult primary immunodeficiency.\n2. Admission Breakpoint: The breakpoint is set at admission/transfer triage following initial failure of antibacterial therapy, when vital signs, respiratory distress, physical exam (hepatosplenomegaly), initial laboratory tests (CBC, elevated CRP/PCT, marked transaminitis), and chest CT (bilateral cavitary nodules and small thymus) are obtained, prior to initiation of systemic antifungal therapy and pathogen identification.\n3. Differential Distinctions: Pyogenic bacterial sepsis and necrotizing bacterial pneumonia are ruled out by rapid clinical progression despite broad-spectrum treatment with meropenem and linezolid. Pulmonary and disseminated tuberculosis is ruled out by persistent deterioration and subsequent full clinical recovery following amphotericin B and voriconazole. Disseminated talaromycosis is established by failure of antibacterials, distinctive cavitary lung lesions, hepatosplenomegaly in an immunocompromised host, and complete curative response to targeted antifungal therapy.",
+  "case_prompt": "An 8-month-old female infant presented to the hospital with intermittent high fever, paroxysmal cough, and progressive respiratory distress. The fevers began without an obvious antecedent trigger, recurring every 6 to 7 hours with peak temperatures of 40.7°C. The cough was accompanied by sputum in the throat, without stridor, audible wheezing, or initial cyanosis. Over the subsequent four days, her condition progressively worsened, prompting treatment at an outside facility with high-flow oxygen, broad-spectrum antimicrobial therapy comprising intravenous meropenem and linezolid, and human immunoglobulin (7.5 g). Despite these interventions, she continued to deteriorate into acute respiratory insufficiency and was transferred in critical condition.\n\nOn physical examination upon transfer, she appeared listless and in poor spirits. No cutaneous rash was observed, and the external auditory canals were clear. Respiratory rate was 50 breaths per minute with shallow, rapid breathing and pronounced suprasternal, intercostal, and subcostal retractions (three concave signs positive). Pulse oxygen saturation was maintained at 95% or higher on high-flow oxygen inhalation. Lung auscultation revealed no crackles or wheezes. Abdominal examination revealed marked hepatosplenomegaly, with the liver palpable 6 cm below the right costal margin and the spleen palpable 5 cm below the left costal margin.\n\nLaboratory evaluation revealed a significant normocytic anemia with hemoglobin of 75 g/L (reference range 113–151). White blood cell count was 8.74 x 10^9/L (3.69–9.16). Inflammatory markers were profoundly elevated: C-reactive protein (CRP) was 124.8 mg/L (0–6) and procalcitonin (PCT) was 5.26 ng/mL (0–0.5). Hepatic panel showed marked hepatocellular and cholestatic injury: alanine aminotransferase (ALT) 158 U/L (7–40), aspartate aminotransferase (AST) 560 U/L (13–35), gamma-glutamyl transferase (GGT) 661 U/L (7–45), and alkaline phosphatase (ALP) 316 U/L (35–100). Non-contrast chest computed tomography (CT) demonstrated diffusely decreased lung parenchymal transmittance, bilateral well-circumscribed high-density nodular lesions with internal cavitation, and an abnormally small thymic shadow suggestive of underlying cellular immunodeficiency.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Fulminant Bacterial Pneumonia and Septic Shock",
+      "rule_out_reason": "Considered due to high spiking fevers, rapid respiratory failure, marked elevation of CRP (124.8 mg/L) and procalcitonin (5.26 ng/mL), and cavitary lung nodules; ruled out by continuous clinical deterioration despite broad-spectrum antibacterial coverage with meropenem and linezolid.",
+      "quote": "After treatment for 2 days, she developed shortness of breath and irritability, so she received high-flow oxygen inhalation, anti-infection treatment with meropenem and linezolid, and immune support with human immunoglobulin (7.5 g). However, instead of improving, her situation continued to deteriorate."
+    },
+    {
+      "candidate": "Disseminated Tuberculosis",
+      "rule_out_reason": "Considered given cavitary pulmonary nodules, hepatosplenomegaly, profound systemic inflammation, and primary immunodeficiency; ruled out by rapid stabilization and long-term resolution achieved solely with targeted systemic antifungal therapy.",
+      "quote": "Two weeks later, the reexamination showed that there was no T. marneffei infection recurrence."
+    },
+    {
+      "candidate": "Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "Considered given high fevers, massive hepatosplenomegaly, anemia, and hepatic dysfunction in an infant; ruled out as primary etiology in favor of an opportunistic systemic infectious disease that resolved upon antifungal eradication.",
+      "quote": "Combined with the symptoms and related examination results, the infant was diagnosed with severe pneumonia, respiratory insufficiency, sepsis, moderate anemia, and liver function damage."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Failure of broad-spectrum carbapenem and oxazolidinone therapy in an infant with cavitary lung nodules, marked hepatosplenomegaly, and hypoplastic thymus, pivoting to opportunistic systemic fungal infection with prompt cure following systemic antifungal administration.",
+      "quote": "The anti-infective drugs administered were as follows: amphotericin B, voriconazole, vancomycin, and cefoperazone sulbactam."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Systemic antifungals and organism identification excluded from case_prompt. Zero pathogen spoilers."
+}

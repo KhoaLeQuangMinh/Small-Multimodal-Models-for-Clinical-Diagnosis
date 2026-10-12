@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3992755_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young agricultural laborer presents with a subacute 1-year history of seizures, severe behavioral/cognitive symptoms, and an acute febrile deterioration with dural venous sinus thrombosis and right hemiparesis. The differential includes endemic intracranial parasitic infections (neurocysticercosis, toxoplasmosis) versus central nervous system mycobacterial infection.\n2. Admission Breakpoint: Admission triage ends following initial clinical assessment (GCS 6, papilledema, hemiparesis), elevated inflammatory markers (leukocytosis, ESR 65 mm/1h), lumbar puncture results (170 cells, 80% PMNs, protein 117 mg/dL, low glucose 11 mg/dL), and neuroimaging showing multiple enhancing lesions, dural venous/cortical vein thrombosis, and hemorrhagic infarction.\n3. Differential Distinctions: Cerebral toxoplasmosis and neurocysticercosis are the prime differentials in an endemic rural agricultural setting given multiple ring-enhancing lesions, but are definitively excluded by negative postmortem serology and CSF testing, while smears from basal exudate identify acid-fast bacilli and positive mycobacterial immune complexes.",
+  "case_prompt": "A 30-year-old male agricultural laborer presents with a 7-day history of fever and headache, preceded by a 1-year history of three generalized tonic-clonic seizures, progressive irritability, explosive angry outbursts, and inability to recognize family members. Three days after the fever began, he developed altered sensorium and urinary incontinence, followed by acute right-sided hemiparesis on the day of hospital admission.\n\nOn examination, the patient is febrile, while other vital signs are normal. Neurological evaluation reveals a Glasgow Coma Scale (GCS) of 6/15 (E1V2M3) and right hemiparesis. The patient does not open his eyes to deep painful stimuli, extraocular movements are restricted, and bilateral papilledema is present. Both pupils are dilated and non-reactive to light. Deep tendon reflexes are brisk bilaterally, with an extensor plantar response on the right and a flexor response on the left.\n\nLaboratory tests reveal a total leukocyte count of 15,200/mcL and an erythrocyte sedimentation rate (ESR) of 65 mm/1h. Routine biochemical testing shows mildly elevated liver enzymes. Serologic tests for HIV and hepatitis B surface antigen are negative. Cerebrospinal fluid (CSF) analysis demonstrates a white cell count of 170/mcL (80% polymorphonuclear cells), protein of 117 mg/dL, and glucose of 11 mg/dL.\n\nCranial CT demonstrates multiple disc-enhancing lesions throughout the cerebral cortex, subcortical white matter, and brainstem, associated with perilesional edema and hydrocephalus. Brain MRI reveals multiple subcortical hyperintensities on T2/FLAIR images in bilateral frontal, parietal, and temporal white matter and brainstem, with circumscribed T2-hypointense lesions in the bilateral frontal regions. Heterogeneous lesions with gradient blooming indicating hemorrhagic infarction are noted in the left thalamus and caudate nucleus. FLAIR imaging demonstrates multiple hypointense serpiginous curvilinear structures in the high parietal cortex corresponding to thrombosed cortical veins.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral toxoplasmosis",
+      "rule_out_reason": "Multiple ring- and disc-enhancing parenchymal lesions in an endemic region raised strong suspicion for cerebral toxoplasmosis; however, postmortem CSF and serologic testing were negative for Toxoplasma gondii, and basal exudate smears demonstrated acid-fast bacilli.",
+      "quote": "Possibility of cerebral toxoplasmosis and cysticercosis were also considered in view of ring enhancing lesions and the endemicity."
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "A 1-year history of seizures and multiple enhancing brain lesions in a rural agricultural worker strongly suggested neurocysticercosis; however, CSF and serum testing for cysticercosis were negative, while mycobacterial immune complexes and antibodies were confirmed.",
+      "quote": "Post mortem serum and CSF were positive for mycobacterial antibody and IgG and IgM type mycobacterial immune complex and negative for cysticercosis and toxoplasmosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of the thick basal subarachnoid exudate revealed numerous acid-fast organisms on Ziehl-Neelsen stain, establishing mycobacterial infection as the cause of extensive dural venous and cortical vein thrombophlebitis.",
+      "quote": "Smear from the basal exudate revealed numerous acid fast organisms on Zeihl-Neelson stain."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of extensive cerebral tubercular thrombophlebitis and superior sagittal sinus thrombosis. Admission narrative omits all postmortem microbiologic findings and specific pathogen tags."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11800540_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old male presented with persistent low-grade fever and cough for over 20 days refractory to empiric antibiotics, with CT evidence of progressive right hilar lymphadenopathy and interlobular septal thickening. Standard diagnostic evaluations\u2014including routine bronchoalveolar lavage, smear, bacterial/fungal culture, and GeneXpert MTB/RIF\u2014were repeatedly negative, creating a challenging diagnostic puzzle between occult tuberculosis, lymphoma, and sarcoidosis.\n2. Admission Breakpoint: The admission breakpoint occurs upon completion of baseline triage laboratory workup (WBC 9.0 x 10^9/L, CRP 41.9 mg/L, ESR 35 mm/h, negative tumor markers) and chest CT showing progressive right hilar lymphadenopathy, prior to invasive bronchoscopy, EBUS-TBNA, and next-generation sequencing.\n3. Differential Distinctions: Unresolved bacterial or atypical pneumonia was ruled out by lack of clinical response to anti-infective treatment and progressive lymph node enlargement; lymphoma or thoracic malignancy was considered due to enlarging hilar lymphadenopathy, but excluded by negative tumor markers and biopsy demonstrating necrotizing granulomas without neoplastic cells; sarcoidosis was considered due to mediastinal/hilar adenopathy and granulomatous inflammation, but disproven when high-sensitivity hybrid capture targeted sequencing identified Mycobacterium tuberculosis.",
+  "case_prompt": "A 29-year-old male with no significant past medical history presented with a 20-day history of persistent fever and cough without an obvious precipitating cause. His body temperature fluctuated around 37.8 C. He denied any history of hypertension, diabetes, chronic infectious diseases, prior surgeries, or trauma. Prior to presentation, he had been evaluated at an outside hospital where he received empiric anti-infective and symptomatic therapy; however, his cough and fevers persisted without improvement. Serial chest computed tomography scans obtained during that period demonstrated progressive enlargement of the right hilar lymph nodes and newly developed thickening of the interlobular septa in the right upper lobe.\n\nOn physical examination upon arrival, the patient was comfortable with smooth, unlabored breathing. Auscultation revealed clear lung sounds bilaterally without wheezing, rales, or rhonchi. The remainder of the physical examination was unremarkable. Baseline laboratory investigations revealed a white blood cell count of 9.0 x 109/L, a C-reactive protein level of 41.9 mg/L, an erythrocyte sedimentation rate of 35 mm/h, and negative serum tumor markers. Contrast-enhanced chest computed tomography confirmed slight further enlargement of the right hilar lymphadenopathy alongside interlobular septal thickening.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory Bacterial / Atypical Community-Acquired Pneumonia",
+      "rule_out_reason": "Considered due to the subacute presentation of fever and cough, but ruled out because the patient showed no clinical improvement despite prolonged empiric anti-infective treatment, with paradoxically progressive lymphadenopathy.",
+      "quote": "He sought treatment at another hospital, where he received anti-infective and symptomatic treatment; however, his clinical symptoms showed no significant improvement."
+    },
+    {
+      "candidate": "Thoracic Malignancy / Lymphoma",
+      "rule_out_reason": "Considered given the subacute progression of isolated unilateral hilar lymphadenopathy and interlobular septal thickening in a young male, but ruled out by negative serum tumor markers and lymph node histology demonstrating necrotizing granulomatous inflammation rather than malignant cells.",
+      "quote": "Laboratory tests revealed a white blood cell count of 9.0 x 109/L, a C-reactive protein level of 41.9 mg/L , an erythrocyte sedimentation rate of 35 mm/h , negative tumor markers... EBUS-TBNA) was performed to obtain lymph node tissue, and the pathology results indicated necrotizing granuloma"
+    },
+    {
+      "candidate": "Non-Tuberculous Granulomatous Disease / Sarcoidosis",
+      "rule_out_reason": "Considered when EBUS-TBNA demonstrated necrotizing granulomas while standard smear, culture, and Xpert MTB/RIF all returned negative, initially leading clinicians to discount tuberculosis, but subsequently refuted by advanced molecular capture testing.",
+      "quote": "Subsequently, Endobronchial ultrasound-guided transbronchial needle aspiration (EBUS-TBNA) was performed to obtain lymph node tissue, and the pathology results indicated necrotizing granuloma (Fig. 3). This series of results excluded the possibility of pulmonary tuberculosis, which was inconsistent with clinical expectations."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Hybrid capture-based targeted next-generation sequencing (hc-tNGS) of bronchoalveolar lavage fluid detected Mycobacterium tuberculosis, and subsequent acid-fast staining of the lymph node biopsy confirmed the definitive diagnosis of pulmonary and mediastinal lymph node tuberculosis.",
+      "quote": "Ultimately, the patient's bronchoalveolar lavage fluid underwent hc-tNGS testing, and the lymph node pathology was subjected to acid-fast staining. The hc-tNGS results indicated a positive presence of Mycobacterium tuberculosis, and subsequent special staining of the lymph node pathology confirmed the diagnosis of tuberculosis infection."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint placed after admission baseline labs and repeat chest CT, strictly prior to bronchoscopy and EBUS-TBNA. T-SPOT and sequencing results sequestered. Verbatim quotes validated."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11342428_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 34-year-old female with no past medical history presents with two months of fever and back pain. Chest radiography reveals a right lower lobe pulmonary opacity initially treated empirically as aspergillosis with antifungals, without clinical improvement. CT demonstrates a round cystic lesion with an air-fluid level. The core clinical challenge is recognizing a ruptured or infected hydatid cyst masquerading as a fungal cavity or bacterial lung abscess in a young previously healthy individual.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the secondary CT imaging showing the right lower lobe round cystic lesion with air-fluid level, prior to the order and return of echinococcal serological/immunological testing and thoracic surgery.\n3. Differential Distinctions: Pulmonary aspergillosis was the primary clinical misdiagnosis but was ruled out by complete non-responsiveness to antifungal therapy and absence of fungal elements on pathology. Bacterial lung abscess presents with acute purulent sputum and toxemia; here, serology was positive for echinococcosis, and thoracotomy confirmed parasitic scoleces and hooks.",
+  "case_prompt": "A 34-year-old female with no prior medical history presents with a 2-month history of persistent back pain and fever.\n\nOn initial clinical evaluation, physical examination findings are ambiguous and non-focal.\n\nInitial chest radiography reveals a solitary lesion in the right lower lobe of the lung. Because the lesion was initially suspected to represent a fungal infection, empirical antifungal therapy was administered, but the patient experienced no clinical response. Subsequent computed tomography (CT) demonstrates a round cystic lesion with an air-fluid level in the lower lobe of the right lung, corresponding to the abnormality observed on the initial chest radiograph.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Aspergillosis",
+      "rule_out_reason": "Pulmonary aspergillosis was initially suspected based on the appearance of a cavitary/cystic pulmonary lesion with internal contents, but the patient failed empirical antifungal therapy completely, and subsequent serological and histopathological examinations identified parasitic cestode structures rather than fungal organisms.",
+      "quote": "She was treated with antifungals thinking the lesion was compatible with aspergillosis, with no response at all."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Lung Abscess",
+      "rule_out_reason": "A pulmonary mass or cavitary lesion displaying an air-fluid level in the lower lobe accompanied by fever and back pain strongly mimics a pyogenic lung abscess. However, the indolent two-month progression without response to antimicrobial management and subsequent positive immunological testing ruled out simple bacterial infection.",
+      "quote": "a CT scan that revealed a round cystic lesion with an air-fluid level in the lower lobe of the right lung compatible with the lesion seen on the chest X-ray"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when the CT revealed the characteristic round cystic lesion with air-fluid level, leading to positive echinococcal immunological testing and definitive surgical thoracotomy pathology demonstrating echinococcal scolex and hooks.",
+      "quote": "Suspecting echinococcosis immunological test were done and these were positive for echinococcosis. Due to the symptoms of the patient and the characteristics of the lesion surgery was indicated... Pathological studies reported the presence of hooks in the right lung lesion, with the presence of echinococcal scolex (Figure 8)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation stops after CT confirms the cystic lesion with air-fluid level, prior to send-out serology and surgery. Redacted pathogen name (aspergillosis) from the case prompt as required by zero-spoilers rule."
+}

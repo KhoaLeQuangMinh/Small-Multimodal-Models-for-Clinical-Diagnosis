@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10634481_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old woman with diabetic nephropathy and multiple vascular co-morbidities presents with acute encephalopathy, hyperpyrexia, septic shock, and intracranial hemorrhage on CT, found on subsequent MRI to have multiple ring-enhancing cerebral lesions. Her acute presentation mimics septic cerebral embolization or infective endocarditis, while initial CSF GeneXpert and respiratory testing are negative, obscuring the diagnosis of central nervous system tuberculomas until navigational brain biopsy.\n2. Admission Breakpoint: The breakpoint occurs on Day 1 upon admission to the intensive care unit following emergency stabilization, initial laboratories (leukocyte count 10,800/mm^3, procalcitonin 1.9, pyuria), non-contrast head CT (intracranial hemorrhage), and brain MRI (multiple ring-enhancing cerebral lesions), strictly before targeted urine/blood cultures, transesophageal echocardiography, lumbar puncture, or stereotactic brain biopsy.\n3. Differential Distinctions: Septic cerebral emboli secondary to occult endocarditis or uroseptic bacteremia are strongly suspected given high fever, hemodynamic instability, pyuria, and ring enhancement, but echocardiography is unremarkable and bacterial blood/brain cultures are sterile. Cerebral vasculitis or multifocal hemorrhagic metastases present with sudden neurologic decline and ring lesions, but autoantibody panels and biopsy histopathology lack vasculitic or neoplastic changes.",
+  "case_prompt": "A 52-year-old woman with a medical history of type 2 diabetes mellitus, systemic hypertension, dyslipidemia, hypothyroidism, and chronic kidney disease presented to the emergency department with acute disorientation and incoherent speech. On initial assessment in the emergency department, a non-contrast computed tomography (CT) scan of the brain demonstrated an acute intracranial hemorrhage. She was admitted to the medical intensive care unit, where she was drowsy with a Glasgow Coma Scale (GCS) score of 7 (E2 V1 M4) without focal neurological deficits. Vital signs revealed severe hyperpyrexia with a temperature of 104.0°F (40.0°C), sinus tachycardia, and hypotension requiring noradrenaline vasopressor infusion. She was endotracheally intubated for airway protection. Emergent brain magnetic resonance imaging (MRI) performed to evaluate the hemorrhagic focus revealed multiple ring-enhancing lesions scattered throughout the cerebral parenchyma. Baseline laboratory investigations showed a leukocyte count of 10,800/mm^3, serum procalcitonin of 1.9 ng/mL, and routine urinalysis demonstrating numerous pus cells.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Septic Cerebral Emboli / Bacterial Brain Abscesses",
+      "rule_out_reason": "In a diabetic patient presenting with hyperpyrexia, septic shock, pyuria, and multiple ring-enhancing lesions on neuroimaging, multiple septic emboli from endocarditis or bacterial bacteremia were strongly suspected; however, transesophageal echocardiogram showed no vegetations and brain biopsy cultures were negative for pyogenic bacteria.",
+      "quote": "A differential diagnosis of septic emboli/cerebral vessel vasculitis/tuberculous encephalitis was considered and planned for trans oesophageal echocardiography (TEE), peripheral blood smear, autoantibody screen, CSF study, India ink staining, Gram staining and HIV screening. Due to persistent fever, a repeat blood culture was sent. All the aforesaid investigations were insignificant except for CSF study..."
+    },
+    {
+      "candidate": "Cerebral Vasculitis / Hemorrhagic Neoplastic Metastases",
+      "rule_out_reason": "Acute intracranial hemorrhage associated with multifocal ring-enhancing intra-axial lesions raised concern for central nervous system vasculitis or hemorrhagic metastases; however, systemic autoantibody panels were negative and brain biopsy revealed no malignancy or necrotizing vasculitis.",
+      "quote": "All the aforesaid investigations were insignificant except for CSF study, which showed a total count of 128 cells, polymorphs - 12, lymphocytes 88 and protein 119 g dl-1, glucose 90 mg dl-1. GeneXpert was done on the CSF sample and was found negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Following negative initial CSF GeneXpert testing and progressive obstructive hydrocephalus, navigational stereotactic brain biopsy yielded specimens that confirmed Mycobacterium tuberculosis complex on mycobacterial culture, corroborated by positive Ziehl-Neelsen staining and MPT64 antigen detection.",
+      "quote": "After considering the radiological imaging, deteriorating condition, and no confirmatory diagnosis being made, the patient underwent a navigation brain biopsy and samples were sent for bacterial, fungal and mycobacterial culture by MICRO MGIT... the mycobacterial culture of the brain biopsy grew Mycobacterium tuberculosis complex. (Time of positivity, 12 days.) This was confirmed by ZN smear (Fig. 1) and MPT 64 Antigen Kit (BD Diagnostics) (Fig. 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Admission presentation halts cleanly after initial ICU resuscitation and baseline neuroimaging (CT and MRI), excluding targeted culture results, CSF analysis, and subsequent brain biopsy. All differential rule-outs and diagnostic pivot are anchored in verbatim quotes."
+}

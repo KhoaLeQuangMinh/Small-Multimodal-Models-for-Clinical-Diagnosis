@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5610859_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old previously healthy man presents with acute-onset postprandial epigastric pain, nausea, anorexia, and rapid weight loss, subsequently found to have a large pancreatic head lesion with major vascular encasement (hepatic artery and portal vein) and biliary dilation. The clinical presentation powerfully mimics unresectable pancreatic adenocarcinoma in a young adult, with normal tumor markers and an unremarkable chest radiograph obscuring an isolated extrapulmonary mycobacterial granulomatous process.\n2. Admission Breakpoint: Admission triage terminates after clinical evaluation, physical examination, baseline routine blood tests (CBC, renal and liver function panels, viral/syphilis serologies, CEA, CA19-9), and plain chest radiograph, strictly prior to upper endoscopy/EUS, abdominal contrast CT, MRI, and surgical resection.\n3. Differential Distinctions: Pancreatic head adenocarcinoma was the primary presumed diagnosis due to invasive vascular encasement and biliary tree compression, but excluded by surgical pathology demonstrating caseating granulomas without malignancy. Duodenal neoplasia was considered due to an ulcerated mucosal protrusion in the duodenal bulb, but excluded by biopsy showing low-grade hyperplasia. Primary pulmonary tuberculosis was ruled out by normal chest radiography.",
+  "case_prompt": "A 23-year-old previously healthy young man presents with a 2-week history of vague postprandial epigastric pain and nausea, accompanied by marked anorexia. Over this 2-week period, he has experienced an unintentional weight loss of 6 pounds. He denies fever, drenching night sweats, acid reflux, vomiting, hematemesis, or melena. He has no prior personal medical history, including any previous diagnosis of chronic respiratory or granulomatous disease.\n\nOn physical examination, he appears well-nourished. Vital signs are normal. Abdominal examination reveals mild tenderness localized to the upper epigastrium without palpable masses, muscular rigidity, or guarding. Examination of the chest and cardiovascular system is unremarkable.\n\nBaseline laboratory investigations demonstrate normal complete blood count, normal liver biochemistries, and normal renal function tests. Serologic testing for hepatitis B surface antigen, hepatitis C antibody, HIV, and syphilis are all non-reactive. Serum tumor markers are within normal limits, with normal carcinoembryonic antigen (CEA) and normal cancer antigen 19-9 (CA19-9). Plain chest radiography reveals clear lung fields without infiltrates, cavitary lesions, or lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic adenocarcinoma (Pancreatic head carcinoma)",
+      "rule_out_reason": "Strongly suspected on cross-sectional imaging due to an irregular low-density mass in the pancreatic head/neck with vascular encasement of the hepatic artery and portal vein and bile duct dilation; ruled out when resected specimens demonstrated necrotizing granulomatous inflammation rather than adenocarcinoma.",
+      "quote": "CT images also revealed that the arteria hepatica was enveloped which mimicked a pancreatic head carcinoma (Figure 2)... The contrast enhanced MRI had heterogeneous density, with the vascular involvement; therefore, the neoplastic changes should be strongly considered (Figure 3)."
+    },
+    {
+      "candidate": "Duodenal malignancy / Primary duodenal ulcer",
+      "rule_out_reason": "Considered when endoscopy demonstrated a mucosal protrusion with a central fur-coated ulcer in the duodenal bulb with disrupted glandular architecture; ruled out when endoscopic biopsy revealed chronic mucosal inflammation with low-grade atypical hyperplasia without malignancy.",
+      "quote": "Electronic gastroscope showed that there was a mucosal protrusion at duodenal bulb with an ulcerated surface in the center, coated with whitish fur... The gastroscope biopsy displayed an inflammation in duodenal mucosa and low-grade atypical hyperplasia in some glands (data not shown)."
+    },
+    {
+      "candidate": "Primary pulmonary tuberculosis",
+      "rule_out_reason": "Evaluated as the customary primary site of mycobacterial disease; ruled out by an entirely normal chest radiograph without parenchymal consolidation or hilar adenopathy.",
+      "quote": "Besides these, we also give the patient the chest X-ray to approve or eliminate the possibility of primary tuberculosis. The result showed that there was no abnormality found in chest X-ray (data not shown)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Exploratory laparotomy and pancreatoduodenectomy (Whipple procedure) revealed hard peripancreatic and mesenteric lymph nodes, with histopathology definitively demonstrating multiple caseating granulomas containing epithelioid cells and multinucleated polykaryocytes diagnostic of pancreatic tuberculosis.",
+      "quote": "Histopathologic specimens returned as follows: (1) the granuloma, which was comprised of lymphocyte, epithelioid cell, and polykaryocyte, could be seen in the multiple nodules and fibrous adipose tissues between the junctions of the pancreatic head and duodenum. The caseous necrosis appeared frequently in the center of several granulomas. These features are diagnostic criteria for tubercular nodules."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5610859_01. Preserves the dramatic clinical picture of pancreatic tuberculosis mimicking locally aggressive pancreatic adenocarcinoma with major vascular encasement in a young male, stopping at initial triage labs and chest X-ray."
+}

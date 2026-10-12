@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12638150_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 55-year-old agricultural worker presents with rapid-onset febrile gastrointestinal and pulmonary symptoms following rice paddy field exposure, swiftly developing refractory distributive shock, acute renal shutdown, and severe pulmonary hemorrhagic syndrome. The clinical tension centers on distinguishing hyperacute zoonotic pulmonary-renal syndrome from septic shock secondary to acute infectious gastroenteritis or a fulminant systemic vasculitis.\n2. Admission Breakpoint: The admission breakpoint occurs following emergency department triage, baseline vital signs showing profound hypotension and tachycardia, physical exam showing bibasal crepitations and oliguria, admission hematology demonstrating leukopenia and severe thrombocytopenia, and initial chest radiography showing pulmonary hemorrhage, prior to intensive care unit invasive hemodynamics, plasma exchange, microscopic agglutination serology, and subsequent exploratory laparotomy.\n3. Differential Distinctions: Acute bacterial gastroenteritis causes profound diarrhea and hypovolemia but does not typically induce acute pulmonary hemorrhage, severe thrombocytopenia, and bibasal crepitations after agricultural mud immersion; systemic necrotizing vasculitis (e.g., GPA or microscopic polyangiitis) can cause pulmonary-renal syndrome but lacks acute seasonal paddy field exposure and positive spirochetal serology, and shows vasculitis on peritoneal tissue histology; whereas severe leptospirosis classically produces hemorrhagic pneumonitis, acute tubular necrosis, thrombocytopenia, and microvascular ischemic bowel complications.",
+  "case_prompt": "A 55-year-old previously healthy man presented with fever, diarrhea, nausea, vomiting, myalgia, and dyspnea for three days after working in paddy fields.\n\nOn admission, he was conscious, with low blood pressure (94/63 mmHg) and tachycardia (pulse rate 145 beats/min). Physical examination revealed bibasal lung crepitations, and urine output was only 10 mL over 4 hours.\n\nAdmission blood tests indicated leucopenia and severe thrombocytopenia. Arterial blood gas and renal panel confirmed acute oliguric renal failure and metabolic acidosis. A chest radiograph indicated severe pulmonary hemorrhagic syndrome. An echocardiogram showed hypokinetic anterior wall motion and moderate mitral and tricuspid regurgitation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Gastroenteritis with Septic Shock",
+      "rule_out_reason": "Considered initially given the prominent onset of nausea, vomiting, profuse watery diarrhea, and rapid progression to distributive shock. Ruled out as the primary etiology because enteric gastroenteritis fails to account for concurrent severe pulmonary hemorrhagic syndrome, bibasilar crepitations, profound thrombocytopenia, and anuria following agricultural mud immersion.",
+      "quote": "A 55-year-old previously healthy man presented with fever, diarrhea, nausea, vomiting, myalgia, and dyspnea for three days after working in paddy fields."
+    },
+    {
+      "candidate": "Systemic Necrotizing Vasculitis (ANCA-Associated Vasculitis / Polyarteritis Nodosa)",
+      "rule_out_reason": "Considered during the patient's catastrophic course due to simultaneous alveolar hemorrhage, rapidly progressive renal failure, severe thrombocytopenia, and subsequent transmural bowel ischemia. Ruled out by histopathological evaluation of the resected bowel and peritoneal viscera, which demonstrated ischemic necrosis without evidence of underlying systemic vasculitis.",
+      "quote": "Histopathology of affected areas confirmed these changes (Figure 2). There was no evidence of vasculitis in the rest of the peritoneal viscera."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established on hospital Day 8 when the Leptospira microscopic agglutination test (MAT) turned strongly positive at a high titer, confirming severe leptospirosis as the underlying driver of multiorgan capillary vasculopathy, pulmonary hemorrhage, and ischemic bowel necrosis.",
+      "quote": "By Day 8, the patient was stable and afebrile, allowing for gradual withdrawal of inotropes. Leptospira microscopic agglutination test (MAT) became positive with a high titer."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Prompt stops strictly before ICU send-out MAT testing, endoscopy, and laparotomy. Zero pathogen spoilers in prompt. Exact verbatim quotes validated."
+}

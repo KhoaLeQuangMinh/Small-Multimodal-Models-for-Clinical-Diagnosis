@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10629319_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 24-year-old agricultural worker in Bhutan presents with severe acute hypoxic respiratory failure (SpO2 77%), bilateral basal pneumonitis, jaundice, and thrombocytopenia that failed outpatient beta-lactam therapy. The primary challenge lies in identifying mite-borne rickettsiosis via a subtle cutaneous eschar, particularly in the face of an initial false-negative rapid diagnostic test (RDT).\n2. Admission Breakpoint: The breakpoint occurs on Day 1 upon completion of initial triage assessment at the referral hospital, including vital signs (hypoxia, tachypnea, tachycardia), physical examination (jaundice, chest wall eschar), chest radiography (bilateral basal pneumonitis), and initial hematology/chemistry (leukocytosis, anemia, thrombocytopenia, elevated aminotransferases), strictly before RDT serological reporting and doxycycline initiation.\n3. Differential Distinctions: Severe community-acquired bacterial pneumonia or sepsis is suspected given fever, consolidation, and respiratory distress, but fails beta-lactams and displays multi-organ involvement (hepatocellular injury and thrombocytopenia). Leptospirosis presents with identical agricultural exposure, pulmonary hemorrhage/infiltrates, jaundice, and renal/liver dysfunction, but lacks the pathognomonic necrotic chigger inoculation eschar.",
+  "case_prompt": "A 24-year-old woman was referred from a local primary healthcare centre to a regional district hospital in Chhukha, Bhutan, with a 10-day history of persistent high fever, progressive shortness of breath, cough, and generalized body aches. She had no history of travel outside her rural village but reported intensive field work in her family's cardamom fields 15 days prior to symptom onset. Five days before referral, she had been prescribed a 5-day course of oral amoxicillin (500 mg every 8 hours) alongside analgesics, with no clinical improvement. On arrival at the hospital, her temperature was 100.6°F (38.1°C), blood pressure 103/73 mmHg, pulse 105 beats/min, respiratory rate 28 breaths/min, and peripheral oxygen saturation (SpO2) 77% while breathing ambient air. Physical examination revealed conjunctival pallor and overt scleral icterus. Dermatological inspection revealed a discrete, painless black crusted eschar with an erythematous halo located on the left chest wall along the posterior axillary line at the level of the seventh rib. Plain chest radiography demonstrated bilateral basal pneumonitis. Initial laboratory testing revealed leukocytosis, anemia, thrombocytopenia, and elevated serum transaminases.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Community-Acquired Bacterial Pneumonia",
+      "rule_out_reason": "Acute fever, cough, hypoxemia, bilateral pulmonary consolidations, and leukocytosis frequently reflect typical bacterial pneumonia; however, the patient experienced progressive deterioration despite a completed 5-day course of oral amoxicillin and presented with extrapulmonary signs including jaundice and thrombocytopenia.",
+      "quote": "She was prescribed capsule Amoxicillin 500 mg 8 hourly for five days, tablet paracetamol 500 mg 8 hourly for 3 days, tablet vitamin C 250 mg 12 hourly for 5 days and injection diclofenac sodium 75 mg intramuscular one dose. The patient had visited the same PHC again on 18 October, 2022, was seen by the same health worker and then referred to Gedu Hospital."
+    },
+    {
+      "candidate": "Leptospirosis (Weil Disease)",
+      "rule_out_reason": "Agricultural exposure in South Asia presenting with acute febrile pneumonitis, jaundice, thrombocytopenia, and transaminitis strongly mimics severe leptospirosis; however, the presence of a characteristic necrotic cigarette-burn eschar pointed specifically to a chigger bite.",
+      "quote": "Eschar was present on the left chest wall along the posterior axillary line at the level of seventh rib (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of a pathognomonic cutaneous inoculation eschar in an endemic agricultural setting prompted empiric therapy with doxycycline, producing dramatic clinical and biochemical defervescence within 48 hours despite a false-negative initial rapid diagnostic test.",
+      "quote": "Eschar was present on the left chest wall along the posterior axillary line at the level of seventh rib (Figure 1)... The RDT report for Scrub typhus was negative. The patient was started on capsule doxycycline 200 mg first dose and then 100 mg12 hourly... The patient had improved clinically from the second day of initiation of treatment and subsequent two blood investigations showed improved parameters."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Case narrative stops after triage exam and initial chest radiograph/labs, omitting rapid test results, doxycycline administration, and clinical resolution. Verbatim quotes support all differential rule-outs and diagnostic pivot."
+}

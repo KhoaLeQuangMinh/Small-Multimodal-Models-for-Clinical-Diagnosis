@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11380833_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 18-month-old immunocompetent toddler presents with subacute meningoencephalitis, fluctuating encephalopathy, and basal leptomeningeal enhancement. CSF multiplex PCR detected human herpesvirus-6 (HHV-6), raising diagnostic uncertainty regarding whether the viral detection was an incidental bystander versus the primary pathogen, while epidemiologic risk (travel to Mexico), hypoglycorrhachia, and cisternal exudates pointed toward tuberculous meningitis complicated by communicating hydrocephalus and ependymal tubercles.\n2. Admission Breakpoint: The admission clinical narrative halts after initial emergency triage neurological assessment, routine CSF cell counts and biochemistry (hypoglycorrhachia, elevated protein, mononuclear pleocytosis), EEG, and baseline contrast brain MRI demonstrating basal cisternal enhancement, immediately prior to disclosing the multiplex viral PCR result, initiation of antimycobacterial therapy, or neurosurgical drain placement.\n3. Differential Distinctions: Enteroviral/herpetic acute meningoencephalitis presents acutely with normal glucose and lack of basal cisternal enhancement. Acute pyogenic bacterial meningitis displays profound neutrophilic pleocytosis and rapid fulminance rather than a subacute prodrome with mononuclear predominance and basilar predilection. Fungal meningitis (e.g., Cryptococcus or Coccidioides) can present similarly with basal enhancement, but epidemiologic context (Mexico travel), age, and culture confirmation identify Mycobacterium tuberculosis.",
+  "case_prompt": "An 18-month-old female born at term by uncomplicated spontaneous vaginal delivery with no significant past medical history is transferred to the pediatric intensive care unit of an academic medical center for the evaluation and management of suspected meningitis. She presents with a depressed level of consciousness (Glasgow Coma Scale score of 12) and mild bradycardia. According to the caregivers, her illness began 9 days prior to transfer with nasal congestion, marked fatigue, and recurrent episodes of emesis. The family reports a pertinent history of travel to Mexico.\n\nOn physical examination, the child is lethargic and encephalopathic with fluctuating interactivity. Vital signs are notable for mild bradycardia, but she is otherwise hemodynamically stable. Cranial nerve and systemic examinations reveal no focal neurological deficits or cutaneous rashes.\n\nInitial diagnostic evaluation reveals cerebrospinal fluid (CSF) characterized by marked hypoglycorrhachia, elevated protein, and an elevated nucleated cell count with a pronounced mononuclear predominance. An electroencephalogram (EEG) demonstrates moderate generalized background slowing without epileptiform discharges or electrographic seizures. Brain magnetic resonance imaging (MRI) with and without intravenous contrast demonstrates prominent leptomeningeal enhancement localized primarily within the basal cisterns, along with early ventricular enlargement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Human Herpesvirus-6 (HHV-6) Meningoencephalitis",
+      "rule_out_reason": "Although multiplex molecular testing detected viral nucleic acid, viral meningoencephalitis in an immunocompetent child typically causes self-limited encephalitis without severe hypoglycorrhachia, prominent basilar exudates, or communicating hydrocephalus; viral detection was initially considered clinically incidental.",
+      "quote": "Anti-viral therapy was initially not felt to be necessary as the HHV-6 was interpreted as incidental and not a cause of symptomatic meningitis in our immunocompetent host."
+    },
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Pyogenic bacterial meningitis typically features acute onset, severe neutrophilic pleocytosis, and convexital leptomeningeal enhancement rather than a 9-day subacute prodrome, mononuclear pleocytosis, and basilar cisternal predilection.",
+      "quote": "Outside hospital cerebrospinal fluid (CSF) studies were notable for hypoglycorrhachia, elevated protein, elevated nucleated cells with a mononuclear predominance"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neurosurgical exploration during endoscopic third ventriculostomy (ETV) revealed characteristic ependymal nodules along the ventricular walls and prepontine arachnoid thickening, and definitive diagnostic confirmation was achieved when cerebrospinal fluid cultures grew Mycobacterium tuberculosis complex.",
+      "quote": "Three days after discharge from rehab, CSF cultures drawn initially from the first EVD returned positive for Mycobacterium tuberculosis (MTB) complex, nearly 2 months after these cultures had initially been drawn."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation strictly preserves the Day 1 triage boundary. All specific viral PCR panels, empiric regimens, and surgical findings are excluded from the case prompt. Quotes are verified verbatim from the source case text."
+}

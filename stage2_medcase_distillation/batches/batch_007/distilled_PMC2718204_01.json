@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2718204_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 42-year-old woman who previously underwent surgical drainage of a psoas abscess presents with relapse of symptoms, abdominal pain, and a palpable right lower quadrant mass. Cross-sectional imaging reveals a 6 x 5 x 3 cm saccular pseudoaneurysm of the suprarenal abdominal aorta surrounded by a chronic psoas and pararenal abscess with vertebral erosion. The core tension is recognizing an infected (mycotic) aortic pseudoaneurysm arising as a contiguous complication of chronic tuberculous spondylitis/psoas abscess, as opposed to pyogenic staphylococcal aortitis or secondary pulmonary dissemination.\n2. Admission Breakpoint: The admission breakpoint concludes after clinical presentation, abdominal palpation, normal plain chest radiography, and abdominal CT demonstrating the saccular suprarenal aortic aneurysm surrounded by the pararenal psoas abscess and vertebral destruction. Angiography, endovascular stent grafting, and confirmatory microbiological cultures represent post-admission intervention and confirmation.\n3. Differential Distinctions: Pyogenic (Staphylococcal or Salmonella) mycotic aneurysm typically produces acute sepsis, high fever, and rapid aneurysmal expansion, whereas this presentation arose contiguously from a chronic granulomatous psoas collection with vertebral destruction. Pulmonary tuberculosis was ruled out by normal chest radiography, confirming isolated extrapulmonary musculoskeletal/vascular disease.",
+  "case_prompt": "A 42-year-old woman who underwent surgical drainage of a retroperitoneal psoas abscess two months earlier presents with a relapse of symptoms. Over recent weeks, she has developed worsening abdominal pain and a newly noticeable palpable mass in the right lower quadrant, despite recent antimicrobial therapy.\n\nOn physical examination, her vital signs are stable. Abdominal examination reveals localized tenderness and a firm, palpable mass in the right lower quadrant.\n\nPlain chest radiography is normal, demonstrating clear lung fields without infiltrates, nodules, or cavitation.\n\nContrast-enhanced computed tomography (CT) of the abdomen reveals a saccular aneurysm of the suprarenal abdominal aorta, measuring approximately 6 x 5 x 3 cm, surrounded by a large low-attenuation inflammatory abscess collection involving the right psoas muscle and posterior pararenal space. There is prominent contiguous cortical erosion and osseous destruction of the adjacent lumbar vertebrae.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic (bacterial) mycotic aneurysm of the aorta",
+      "rule_out_reason": "Considered due to the saccular morphology of the aneurysm abutting a psoas abscess; however, the chronic indolent course with contiguous vertebral destruction (Pott's disease) and positive mycobacterial cultures from the psoas collection confirmed tuberculous aortitis rather than acute staphylococcal or salmonella infection.",
+      "quote": "Cultures of the abscess had been positive for Mycobacterium tuberculosis"
+    },
+    {
+      "candidate": "Active pulmonary tuberculosis with hematogenous arterial seeding",
+      "rule_out_reason": "Considered as the primary source for arterial seeding; ruled out by normal chest radiography, indicating that aortic involvement occurred via direct contiguous erosion from adjacent tuberculous spondylitis and cold psoas abscess.",
+      "quote": "chest radiographic finding were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal CT revealed a saccular aneurysm arising from the suprarenal aorta directly enveloped by a retroperitoneal psoas abscess with destructive spondylitis, with microbiological cultures of the psoas collection confirming Mycobacterium tuberculosis.",
+      "quote": "CT revealed that in the suprarenal abdominal aorta, a saccular aneurysm about 6x5x3 cm in size was surrounded by a large abscess involving the right psoas muscle and posterior pararenal space. There was associated destruction of adjacent vertebrae (Fig. 1A)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly stops at the admission CT scan findings. History of anti-tuberculous drugs and prior positive mycobacterial cultures sanitized to prevent spoiling. Verbatim quotes from the report anchor the diagnostic reasoning."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10788140_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old woman receiving biologic immunosuppression with adalimumab for severe hidradenitis suppurativa and having a history of trigeminal shingles presents with recurrent facial neuropathic pain, fever, and headache. Brain MRI demonstrates a non-enhancing cerebellar lesion and CSF reveals mononuclear pleocytosis. The initial presentation mimics post-herpetic neuralgia or viral encephalitis, but occurs in a patient on a TNF-alpha inhibitor at high risk for opportunistic granulomatous central nervous system infection.\n2. Admission Breakpoint: The admission triage phase ends after the baseline evaluation including triage laboratory panels, initial brain MRI, and baseline lumbar puncture (showing clear fluid with mononuclear pleocytosis, elevated protein, and normal glucose), before viral/mycobacterial PCRs, specialized stains, fungal antigen tests, repeat neuroimaging, or IGRA.\n3. Differential Distinctions: Post-herpetic neuralgia or recurrent VZV neuropathy does not account for persistent high systemic inflammatory markers, a cerebellar vermis parenchymal lesion, or worsening while on high-dose acyclovir. Cryptococcal meningitis is excluded by negative India ink and cryptococcal antigen. Bacterial meningitis is excluded by mononuclear pleocytosis and normal glucose. Central nervous system tuberculosis is confirmed by repeat MRI showing progressive dural granulomatous thickening with sinus involvement, positive IGRA, and rapid clinical/radiological recovery on antituberculous therapy.",
+  "case_prompt": "A 23-year-old woman presents with persistent headache, nausea, and daily fevers. She has a 10-year history of severe hidradenitis suppurativa with extensive fistulous tracts involving the medial thighs, inguinal region, pubic mound, and axillae, for which she has been treated with adalimumab for the past two and a half years. One year prior, she developed facial neuropathic pain diagnosed as herpes zoster affecting the trigeminal nerve, which resolved after treatment with valacyclovir and corticosteroids. She received routine childhood vaccinations.\n\nShe now presents with a recurrence of neuropathic pain in the distribution of the ophthalmic (V1) and maxillary (V2) branches of the right trigeminal nerve, accompanied by low-grade fever, malaise, nausea, and tensional occipital pain. On evaluation, she reports an intense occipital tension headache rated 7 out of 10 on the pain scale, constant nausea, and daily persistent fevers. On physical examination, she is alert and oriented without focal neurological deficits, and there are no signs of meningeal irritation.\n\nInitial laboratory evaluation reveals mild normocytic, normochromic anemia, leukocytosis with neutrophilia, elevated lactate dehydrogenase, a C-reactive protein of 81.4 mg/L, and an erythrocyte sedimentation rate of 89 mm/h. Cerebral magnetic resonance imaging (MRI) reveals an ill-defined lesion in the superior vermis of the cerebellum involving the cuneus, hyperintense on T2-weighted images and hypointense on T1-weighted images, with minimal mass effect and no contrast enhancement. A lumbar puncture is performed; cerebrospinal fluid (CSF) is clear with mononuclear pleocytosis, elevated protein, and normal glucose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-herpetic neuralgia / VZV reactivation",
+      "rule_out_reason": "Although initially diagnosed as post-herpetic neuritis given her previous trigeminal zoster episode, the presence of daily fevers, elevated inflammatory markers, a cerebellar vermis lesion on MRI, and clinical deterioration despite intravenous acyclovir ruled out an uncomplicated post-viral neuralgia.",
+      "quote": "Her primary care physician initially diagnosed the condition as post-herpetic neuritis... In the following days, as cultural results were pending, the patient's headaches and nausea worsened despite receiving antiviral empiric therapy with intravenous acyclovir."
+    },
+    {
+      "candidate": "Cryptococcal meningitis / Fungal CNS infection",
+      "rule_out_reason": "Opportunistic fungal meningoencephalitis was a critical diagnostic possibility in this patient on TNF-alpha antagonist therapy presenting with subacute headache and mononuclear CSF pleocytosis, but was ruled out by negative fungal smears and negative cryptococcal antigen testing.",
+      "quote": "CSF samples were examined using Ziehl-Neelsen (ZN) stain for acid-fast bacilli, Gram stain for bacteria, India ink preparations for fungi, and an antigen test for Cryptococcus neoformans. All results were negative."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial meningitis",
+      "rule_out_reason": "While leukocytosis, elevated CRP (81.4 mg/L), and high ESR reflected marked systemic inflammation, the CSF demonstrated mononuclear predominance rather than polymorphonuclear pleocytosis, normal glucose levels, and a negative Gram stain.",
+      "quote": "A lumbar puncture showed clear cerebrospinal fluid (CSF) with mononuclear cells, normal glucose, elevated protein... Gram stain for bacteria... All results were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Clinical progression on acyclovir, repeat neuroimaging demonstrating progressive pachymeningeal granulomatous infiltration involving the venous sinuses, and a positive interferon-gamma release assay prompted empiric antituberculous therapy, resulting in rapid symptom improvement and complete radiological regression.",
+      "quote": "A cerebral MRI, conducted two weeks later, indicated worsening infiltrative changes in the dura mater, primarily in the torcular region, vermis, and right occipito-polar region. It suggested an inflammatory process, possibly granulomatous, with the involvement of the cerebral venous sinuses (Figure 2). The IGRA test returned positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set precisely after baseline CSF analysis. Verbatim article quotes verified."
+}

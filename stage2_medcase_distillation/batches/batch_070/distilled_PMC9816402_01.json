@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9816402_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 68-year-old man from a rural mountainous area presents with prolonged high-grade fever of unknown origin, cachexia, severe pancytopenia, splenomegaly, hyperferritinemia, and lower extremity weakness, unresponsive to 11 days of empirical antibiotics. The clinical tension is differentiating an occult systemic autoimmune disease or hematologic malignancy/myelodysplasia with secondary hemophagocytic lymphohistiocytosis (HLH) from an endemic intracellular protozoan infection.\n2. Admission Breakpoint: Clinical history of 6 months of wasting, persistent fever >39°C, physical exam showing cachexia, bilateral grade 3 leg weakness, pretibial edema; initial laboratory tests showing pancytopenia, accelerated ESR, elevated CRP, hyperferritinemia, transaminitis, and imaging demonstrating splenomegaly and pericardial effusion. Excludes mNGS and bone marrow biopsy demonstrating amastigotes.\n3. Differential Distinctions: Systemic autoimmune disease was considered (leading to rheumatology admission), but the patient had no rash, arthritis, or mucosal ulcers. Hematologic malignancy/myelodysplasia was considered given weight loss, splenomegaly, and cytopenias, but initial aspirate showed maturation disorder without blasts, and definitive testing identified intracellular parasitic forms.",
+  "case_prompt": "A 68-year-old man from a mountainous region in Hebei Province, China, presents with persistent high-grade fevers (>39°C), profuse chills, drenching sweats, progressive fatigue, and an unintentional weight loss of approximately 10 kg over the preceding 6 months. Prior to transfer, he completed an 11-day course of broad-spectrum antibiotics and symptomatic treatment without clinical response. He reports no cough, sputum, abdominal pain, diarrhea, urinary symptoms, oral ulcers, joint swelling, or rashes. On physical examination, his temperature is 38.2°C, and he appears cachectic with poor nutritional status, unable to ambulate. Neurological examination reveals symmetrical grade 3 muscle strength in both lower extremities, and bilateral pitting edema is present over the anterior tibias and dorsa of the feet. Abdominal ultrasound and CT demonstrate marked splenomegaly, slightly enlarged mediastinal lymph nodes, mild chronic bilateral pulmonary inflammatory changes, a pericardial effusion, and subcapsular liver calcification. Triage laboratory evaluation reveals severe pancytopenia, markedly accelerated erythrocyte sedimentation rate, elevated C-reactive protein, profound hyperferritinemia, hyponatremia, hypokalemia, hypoproteinemia, and elevated serum transaminases.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Autoimmune / Rheumatic Disease",
+      "rule_out_reason": "Considered given admission to the rheumatology service for fever of unknown origin, pancytopenia, hyperferritinemia, elevated ESR/CRP, and serositis (pericardial effusion); ruled out by the complete absence of arthralgias, synovitis, cutaneous rashes, or mucosal ulcers, and failure of empirical anti-inflammatory response.",
+      "quote": "The patient had had no history of oral ulcers, rashes, joint swelling, or pain."
+    },
+    {
+      "candidate": "Hematologic Malignancy / Myelodysplastic Syndrome",
+      "rule_out_reason": "Considered due to the subacute wasting syndrome with 10-kg weight loss, massive splenomegaly, and progressive trilineage cytopenias; initial bone marrow evaluation showed dysplastic changes without malignant clonality, and subsequent staining revealed an infective etiology.",
+      "quote": "Bone marrow aspiration smear showed granulocytopenia with megakaryocyte maturation disorder."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by metagenomic next-generation sequencing demonstrating 5,946 reads of Leishmania donovani in peripheral blood combined with bone marrow aspirate cytology revealing hemophagocytes containing intracellular amastigotes.",
+      "quote": "mNGS of blood samples showed a total of 6,120 reads identified as microbial genome sequences, of which 5,946 (97.16%) reads belonged to Leishmania donovani ( Figure 1 ). Bone marrow smear revealed an increase in the number of hemophagocytes, and amastigotes could been observed ( Figures 2A-E )."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint enforced before bone marrow cytology and blood mNGS results. Zero pathogen names in case_prompt. Direct verbatim quotes verified against text. Canonical disease target verified."
+}

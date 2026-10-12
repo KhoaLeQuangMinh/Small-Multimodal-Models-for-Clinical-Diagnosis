@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7814283_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: Sudden cardiac death in a previously healthy 26-year-old farmer who experienced brief premonitory chest pain and syncope days earlier. In a young adult presenting with sudden death and cardiomegaly with an intracardiac mass, the primary challenge is distinguishing acute ischemic, toxicological, or thrombotic events from an unrecognized parasitic cyst involving the cardiac conduction system.\n2. Admission Breakpoint: The post-mortem presentation and gross examination identifying cardiomegaly and a right ventricular outflow tract cystic mass before histologic sectioning and toxicological screening.\n3. Differential Distinctions: Absence of trauma, normal coronary arteries and myocardium excluding ischemic sudden death, negative toxicology ruling out poisoning, absence of pulmonary emboli ruling out mechanical vascular obstruction, and pathognomonic trilaminar cystic histology (pericyst, ectocyst, endocyst) establishing cardiac hydatid disease.",
+  "case_prompt": "A previously healthy 26-year-old male farmer with no significant past medical or family history was found dead at home and referred by authorities for forensic evaluation. Family members reported that he had owned and actively managed a large agricultural farm for the preceding 5 years. Several days prior to his death, he experienced an episode of mild chest pain accompanied by syncope, but he did not seek medical evaluation.\n\nExternal examination revealed a young adult male of medium build, 183 cm in height, with no external evidence of violence or trauma and no cutaneous rash. Gross internal examination demonstrated multi-visceral congestion without internal hemorrhage. The heart was enlarged, weighing 530 g (reference range: 260–350 g), with prominent external bulging over the right ventricular outflow tract. Sectioning of the heart revealed a 5 × 4 cm fluid-filled cystic cavity occupying approximately half of the right ventricular cavity and extending into the interventricular septum, encased by a thick fibrous capsule. The left ventricular myocardial wall measured 12 mm without hypertrophy. Gross examination of the liver, lungs, and other visceral organs was unremarkable, with no focal lesions or cysts.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Poisoning / Toxic Ingestion",
+      "rule_out_reason": "Considered in unwitnessed sudden death in a young individual, but excluded by comprehensive postmortem toxicological analysis.",
+      "quote": "Toxicological screening was negative."
+    },
+    {
+      "candidate": "Atherosclerotic Coronary Artery Disease / Myocardial Infarction",
+      "rule_out_reason": "Considered due to the prodromal history of chest pain and syncope, but ruled out by pristine coronary vasculature and normal left ventricular myocardium.",
+      "quote": "Histological findings of the left ventricle and coronary arteries were unremarkable."
+    },
+    {
+      "candidate": "Massive Pulmonary Embolism",
+      "rule_out_reason": "Considered given the right ventricular intracavitary cystic lesion with potential for outflow tract obstruction or embolization, but refuted by patent pulmonary arteries without luminal occlusion.",
+      "quote": "The pulmonary arteries also did not display morphological changes, notably there were no fragments of membranes or vesicles obstructing the vessels."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the cardiac cystic wall demonstrated the definitive three-layered architecture of a hydatid cyst—fibrous pericyst, laminated acellular ectocyst, and germinative endocyst—confirming cardiac echinococcosis as the cause of fatal arrhythmia.",
+      "quote": "Microscopic examination using haematoxylin and eosin staining of paraffin sections of the cyst revealed classic layers of a hydatid cyst; pericyst (fibrous outer layer), ectocyst (laminated, hyaline and acellular middle layer) and endocyst (inner germinative layer) ( Figure 3). This ascertained the diagnosis of hydatid disease."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled cleanly following Stanford MedCaseReasoning methodology with strict omission of histopathologic and pathogen spoilers from the case presentation."
+}

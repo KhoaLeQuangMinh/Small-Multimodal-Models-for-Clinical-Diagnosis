@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7778187_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 45-year-old man presents with a solitary 4-cm retroperitoneal para-aortic mass located between the celiac axis and superior mesenteric artery, initially suspected to be a neuroendocrine neoplasm (paraganglioma). The core tension is distinguishing a retroperitoneal neoplastic lesion from an unsuspected parasitic pseudotumoral mass in an otherwise healthy host with global travel history and negative functional endocrine markers.\n2. Admission Breakpoint: The breakpoint occurs after the initial outpatient endocrinology evaluation, cross-sectional imaging (CT and functional scintigraphies), and standard baseline laboratory workup, prior to invasive CT-guided retroperitoneal biopsy and specialized infectious serologies.\n3. Differential Distinctions: Paraganglioma is excluded by normal 24-hour urinary metanephrines/catecholamines, normal 5-HIAA, and absence of uptake on MIBG and octreotide SPECT/CT. Retroperitoneal malignancy is ruled out by core biopsy revealing fibrosis and microorganism-like structures without cellular atypia. Definitive diagnosis of schistosomiasis is established by positive IgM and IgG serology and clinical/radiological resolution following praziquantel.",
+  "case_prompt": "A 45-year-old Caucasian man was referred to the outpatient endocrinology clinic following the incidental detection of an abdominal mass during an evaluation for abdominal pain. His past medical history was notable for gastroesophageal reflux disease, Barrett esophagus, hiatus hernia managed with omeprazole, a sleeve gastrectomy performed five years prior, a cholecystectomy three years prior, and tobacco use. A focused travel history elicited extensive business travel to Africa, Central America, South America, and the Caribbean. He reported no fever, chills, night sweats, involuntary weight loss, diarrhea, or cutaneous lesions. Physical examination was unremarkable, with stable vital signs and no abdominal tenderness or palpable masses.\n\nAn abdominal computed tomography (CT) scan revealed a 4-cm nonspecific retroperitoneal, para-aortic mass situated between the celiac trunk and the superior mesenteric artery, raising suspicion for a neuroendocrine neoplasm. Initial laboratory testing demonstrated: glucose 79 mg/dL (reference range 74–106), serum creatinine 0.69 mg/dL (0.70–1.30), alanine aminotransferase 22 IU/L (10–49), serum ferritin 73 ng/mL (22–322), neuron-specific enolase 19 ng/mL (<16), carcinoembryonic antigen 2.6 ng/mL (<5.0), CA 19-9 12 IU/mL (<37), and chromogranin A 3.3 nmol/L (0.4–10.0). Complete blood count showed hemoglobin 15.4 g/dL (13.5–17.5), neutrophils 51.7% (40.0–70.0), lymphocytes 33.4% (22.0–44.0), and eosinophils 5.3% (<8.0). Total and fractional catecholamines, total metanephrines, and 24-hour urinary 5-hydroxyindoleacetic acid excretion were all within normal limits. Whole-body 123I-metaiodobenzylguanidine (MIBG) scintigraphy demonstrated no pathological uptake, and whole-body 99mTc-octreotide SPECT/CT confirmed the para-aortic mass without evidence of somatostatin receptor-avid tumor uptake.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Paraganglioma / Neuroendocrine Tumor",
+      "rule_out_reason": "Considered the primary diagnosis based on CT imaging showing a para-aortic retroperitoneal lesion between the celiac trunk and superior mesenteric artery; ruled out by normal 24-hour urine metanephrines, catecholamines, 5-HIAA, and absence of avidity on MIBG and octreotide SPECT/CT.",
+      "quote": "total and fractional catecholamines, total metanephrines and excretion of 5-OH-indolacetic in the 24-hour urine analysis were normal. Next, radioisotope imaging was ordered. The whole-body scintigraphy with metaiodobenzylguanidine didn t reveal any clear signs suggesting the existence of catecholamine-producing tumor. The whole-body (99m) Tc-octreotide scintigraphy with SPECT/CT showed a paraaortic abdominal mass, but without evidence of pathological tumor uptake"
+    },
+    {
+      "candidate": "Retroperitoneal Soft-Tissue Malignancy",
+      "rule_out_reason": "Considered given the solitary 4-cm enlarging retroperitoneal mass; ruled out by histopathology showing dense collagenous fibrosis without cytologic atypia.",
+      "quote": "Microscopic study of the sample demonstrated no atypia but a tissue with fibrosis, collagenization and presence of spongy-looking structures, suggestive of microorganisms"
+    },
+    {
+      "candidate": "Tuberculosis and Alternative Tropical Parasitoses",
+      "rule_out_reason": "Considered given tropical travel history and microorganism-like morphology in retroperitoneal tissue; ruled out by a negative Mantoux skin test and non-reactive serologies for Leishmania, Echinococcus, Taenia solium, Strongyloides, and Trypanosoma cruzi.",
+      "quote": "A Mantoux test was performed which was negative. The following serological studies were carried out: hepatitis A virus; Epstein-Barr virus; Trypanosoma cruzi; cytomegalovirus; Ac HBs; Ag HBs; Ac HBc T; HIV 1 + 2; Toxoplasma gondii; Entamoeba histolytica; Echinococcus granulosus; Taenia solium (IgG); Leishmania spp.; strongyloides and schistosoma. All results were negative and do not showed acute infection, except schistosoma with IgM and IgG positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive serologic testing demonstrating acute and past infection, corroborated by resolution of abdominal pain and CT regression of the retroperitoneal lesion following praziquantel therapy.",
+      "quote": "All results were negative and do not showed acute infection, except schistosoma with IgM and IgG positive."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to Day 1 endocrinology workup before biopsy and serologies. Prompt is free of pathogen and disease spoilers."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8590589_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 9-year-old boy in rural Morocco presenting with an indolent 3-month history of painless limp and an iliac fossa mass without fever. The challenge is distinguishing primary retroperitoneal echinococcal hydatid cyst in an atypical muscular site from pyogenic psoas abscess, cold tuberculous abscess, or soft-tissue sarcoma in a child with negative hydatid serology.\n2. Admission Breakpoint: Pediatric emergency admission, physical examination of the left iliac fossa and hip, baseline inflammatory markers, and routine bedside ultrasound, before advanced multiplanar MRI characterization, send-out serology, and surgical exploration.\n3. Differential Distinctions: Afebrile presentation and indolent 3-month course ruling out acute bacterial psoas abscess, normal hepatic parenchyma on imaging ruling out metastatic spread from primary hepatic disease, and pathognomonic MRI demonstration of a Gharbi type II cyst with a central floating membrane ('water-lily sign') and intraoperative extraction of a germinative membrane confirming muscular echinococcosis.",
+  "case_prompt": "A 9-year-old boy presented to the pediatric emergency department with a 3-month history of a painless limp in the left lower extremity without fever or trauma. He had no significant past medical history, but epidemiological history revealed regular contact with domestic dogs and sheep in his rural village (Douar) in the Kalaa Sraghna region of Morocco.\n\nOn physical examination, the child was afebrile and appeared generally healthy. Abdominal and pelvic examination demonstrated a painless, palpable mass/fullness in the left iliac fossa. Examination of the left hip joint demonstrated completely preserved, unrestricted, and painless active and passive range of motion without local signs of inflammation.\n\nInitial laboratory evaluation revealed mild systemic inflammation with a C-reactive protein of 75 mg/L and an erythrocyte sedimentation rate of 44 mm in the first hour. Complete blood count showed mild eosinophilia comprising 1.6% of the leukocyte differential. Initial abdominal and pelvic ultrasound demonstrated a large, well-defined cystic mass of the left psoas muscle measuring 11.8 × 5.85 cm, with completely normal hepatic architecture and no focal cystic or solid lesions in the liver parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial / Pyogenic Psoas Abscess",
+      "rule_out_reason": "Considered in a child with a large psoas cystic collection and elevated inflammatory markers, but ruled out by the indolent 3-month clinical course, absence of fever or constitutional symptoms, completely painless hip mobility, and lack of systemic sepsis.",
+      "quote": "admitted to the pediatric emergency unit for painless limp without fever since 3 months. The physical examination noted a painless wheelbase of the left iliac fossa and a perfectly free and painless left hip joint."
+    },
+    {
+      "candidate": "Secondary Muscular Seeding from Hepatic Hydatid Cyst",
+      "rule_out_reason": "Muscular hydatid cysts typically arise secondary to rupture or hematogenous dissemination from primary liver cysts, but ultrasound confirmed isolated psoas involvement with completely normal liver parenchyma.",
+      "quote": "The abdominopelvic ultrasound revealed a cyst of the left psoas muscle looking like a hydatid cyst measuring 11.8 cm x 5.85 cm without other lesions particularly in the liver."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Pelvic MRI revealed a Gharbi type II cystic lesion with hypointense T1/T2 signal containing a pathognomonic central floating membrane (water-lily sign), and surgical excision confirmed the diagnosis through extraction of the germinative proliferous membrane during pericystectomy.",
+      "quote": "On MRI, it was a type II psoas hydatid cyst according to GHARBI classification, which appeared in hyposignal in T1 and T2 containing a central floating membrane... extraction of the proliferous membrane with realization of a pericystectomy and abundant washing of the residual cavity with physiological saline."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative stops cleanly before MRI Gharbi classification, negative serology, and surgical exploration, ensuring no admission leaks."
+}

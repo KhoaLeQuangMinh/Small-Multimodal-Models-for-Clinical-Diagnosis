@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5095978_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 36-year-old diabetic male presenting with a 3-month indolent wasting illness, multifocal pyomyositis/intramuscular abscesses, and pulmonary nodules mimicking autoimmune vasculitis (granulomatosis with polyangiitis) or connective tissue disease, exacerbated by empirical corticosteroid therapy.\n2. Admission Breakpoint: Admission triage ends following history, physical examination of the deep muscle nodules and joint contractures, review of negative baseline autoimmune serologies (ANCA, ANA, RF) and sterile routine blood cultures, and baseline imaging (chest CT, musculoskeletal ultrasound), strictly prior to surgical abscess aspiration/drainage and selective microbiological media culture for Burkholderia pseudomallei.\n3. Differential Distinctions: Granulomatosis with polyangiitis presents with lung nodules, proteinuria, and systemic inflammation, but ANCA is negative and steroids worsen the condition; idiopathic polymyositis causes muscle swelling and weakness, but ultrasound and aspiration demonstrate purulent collections rather than sterile autoimmune myositis.",
+  "case_prompt": "A 36-year-old man with diabetes mellitus from rural India presented with a 3-month history of high-grade fever, multiple painful swellings around major joints and muscle groups, and an unintentional weight loss of 10 kg. He reported no cough, dyspnea, or abdominal pain. During this illness, he had suffered an episode of septic shock from which he had recovered, but his persistent fever and swellings had failed to respond to multiple antibacterial regimens, including cefoperazone/sulbactam, amikacin, and levofloxacin. An empirical trial of systemic corticosteroids resulted in marked worsening of constitutional symptoms and rapid enlargement of the swellings. He had no history of chronic pulmonary or granulomatous infections, recurrent childhood infections, alcohol abuse, or intravenous drug use, and reported no occupational exposure to dust, bird droppings, animals, or agricultural field work. A targeted exposure history revealed that he had consumed untreated freshwater from a waterfall 1 month prior to becoming ill.\n\nOn physical examination, he was cachectic, non-ambulatory, and arrived on a stretcher with bilateral knee flexion contractures. Examination of the musculoskeletal system revealed diffuse, tender, firm nodules deep within the muscle planes above the left elbow (5 × 5 cm), right wrist (3 × 2 cm), right forearm (7 × 2 cm), right knee (10 × 10 cm), and bilateral ankles.\n\nLaboratory evaluation showed significant proteinuria and severe hyperglycemia requiring high-dose insulin (86 IU/day). Autoimmune serologies including anti-neutrophil cytoplasmic antibodies (anti-PR3 and anti-MPO), rheumatoid factor, and anti-nuclear antibodies were negative; HIV testing was negative. Routine blood cultures were sterile. Initial computed tomography (CT) of the chest revealed mild hepatosplenomegaly and multiple bilateral non-cavitary lung nodules. Musculoskeletal ultrasound demonstrated multiple discrete intramuscular densities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Granulomatosis with Polyangiitis (GPA)",
+      "rule_out_reason": "Subacute fever, weight loss, multiple lung nodules, and prominent proteinuria strongly suggested systemic ANCA-associated vasculitis; however, anti-neutrophil cytoplasmic antibodies (anti-PR3 and anti-MPO) were negative, and empiric corticosteroids triggered paradoxical disease worsening.",
+      "quote": "Granulomatosis with polyangiitis was considered as a differential diagnosis, but anti- neutrophil cytoplasmic antibody, anti-proteinase 3 and anti-myeloperoxidase turned out to be negative."
+    },
+    {
+      "candidate": "Polymyositis / Autoimmune Connective Tissue Disease",
+      "rule_out_reason": "Multifocal muscle swellings, contractures, and systemic wasting mimicked autoimmune myositis or undifferentiated arthritis; however, antinuclear antibodies were negative, and musculoskeletal imaging and subsequent drainage revealed purulent muscular abscesses rather than sterile myopathy.",
+      "quote": "On the basis of above investigations, polymyositis, undifferentiated arthritis, aseptic systemic abscess or other connective tissue disease appeared unlikely."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Given the combination of diabetes, lung nodules, and multifocal pyomyositis following untreated freshwater ingestion, incubation of blood cultures on specialized selective media isolated Burkholderia pseudomallei, confirming chronic melioidosis.",
+      "quote": "Blood culture incubated in special media isolated Burkholderia pseudomallei."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation excludes surgical drainage volumes, microbiological stains, and special selective culture results. Zero pathogen spoilers."
+}

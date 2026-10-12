@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_05",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 19-year-old male with T-cell acute lymphoblastic leukemia on day +103 post-allogeneic transplant (with documented full donor chimerism and negative MRD status at day +100) presents with fever, throat pain, flu-like symptoms, and mild thrombocytopenia. In an allogeneic transplant recipient, acute fever and thrombocytopenia raise concerns for early leukemic relapse, transplant graft dysfunction, or common respiratory viral infections versus an endemic arboviral illness.\n2. Admission Breakpoint: The admission breakpoint occurs immediately upon outpatient presentation with acute upper respiratory/flu-like symptoms and triage CBC showing mild thrombocytopenia, prior to the order and return of the dengue NS1 antigen test.\n3. Differential Distinctions: Leukemic relapse or graft failure is ruled out by recent day +100 documentation of 100% donor chimerism and negative measurable residual disease (MRD), alongside the transient nature of the cytopenia. Common respiratory viral infections (influenza, adenoviral pharyngitis) were clinically considered due to sore throat and flu-like complaints, but arboviral antigen testing demonstrated positive NS1 antigenemia.",
+  "case_prompt": "A 19-year-old male with a history of T-cell acute lymphoblastic leukemia presents on day +103 following a matched-sibling donor hematopoietic stem cell transplant with acute onset of fever, throat pain, and flu-like symptoms.\n\nHis previous post-transplant course had been uneventful, with documentation of full donor chimerism and negative measurable residual disease (MRD) status at day +100 post-transplant.\n\nInitial complete blood count reveals mild thrombocytopenia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Respiratory Viral Pharyngitis (e.g., Influenza, Adenovirus)",
+      "rule_out_reason": "Fever, sore throat, and flu-like symptoms in an adolescent frequently indicate acute upper respiratory tract viral infection; however, the presence of concurrent thrombocytopenia in an endemic region prompted arboviral testing, which confirmed acute arboviral infection.",
+      "quote": "presented on day +103 of matched-sibling donor transplant with fever, throat pain, and flu-like symptoms. His dengue NS1 antigen was positive, with mild thrombocytopenia."
+    },
+    {
+      "candidate": "Leukemic Relapse / Post-Transplant Bone Marrow Dysfunction",
+      "rule_out_reason": "New fever and thrombocytopenia in a leukemia recipient shortly after transplant raises immediate suspicion of early leukemic relapse or marrow failure; however, surveillance on day +100 confirmed complete remission with negative MRD and full donor chimerism, and the mild cytopenia did not progress.",
+      "quote": "His posttransplant course remained uneventful with full donor chimerism and negative Measurable residual disease (MRD) status at day +100 posttransplant. No admission was required as he was managed with supportive care and serial monitoring of blood counts in outpatient department."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the rapid detection of positive Dengue NS1 antigen, identifying dengue virus infection as the cause of the acute febrile flu-like illness and mild thrombocytopenia, allowing successful outpatient supportive management.",
+      "quote": "His dengue NS1 antigen was positive, with mild thrombocytopenia. His posttransplant course remained uneventful with full donor chimerism and negative Measurable residual disease (MRD) status at day +100 posttransplant."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Outpatient triage presentation stops prior to NS1 antigen testing. Strictly zero disease or pathogen names in case_prompt. Differential evaluations address leukemic relapse and respiratory viruses with exact article quotes."
+}

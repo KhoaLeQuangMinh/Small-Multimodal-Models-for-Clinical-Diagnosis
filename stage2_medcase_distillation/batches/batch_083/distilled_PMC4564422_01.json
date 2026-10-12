@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4564422_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 30-year-old man presents with chronic intermittent fevers, significant weight loss, right lower quadrant abdominal pain persistent after appendectomy, and widespread generalized lymphadenopathy. The diagnostic tension involves differentiating lymphoma/malignant lymphadenopathy or persistent mesenteric adenitis from disseminated peripheral lymph node tuberculosis in an individual with prior exposure to chronic pulmonary disease.\n2. Admission Breakpoint: Clinical presentation ends following physical examination (fever 38\u00b0C, asthenia, generalized non-tender cervical/axillary lymphadenopathy up to 4 cm, chest crackles, RLQ tenderness), initial lab tests (microcytic hypochromic anemia, lymphocytosis), chest radiograph showing parahilar lymphadenopathy, and normal abdominal ultrasound, before excisional lymph node biopsy.\n3. Differential Distinctions: Lymphoma is strongly suspected given chronic B-symptoms and massive generalized adenopathy, while mesenteric adenitis is considered due to right lower quadrant pain. Both are distinguished by normal abdominal ultrasound and definitive excisional lymph node histopathology revealing caseating granulomatous lymphadenitis with Langhans giant cells.",
+  "case_prompt": "A 30-year-old man presents with an 18-month history of intermittent high-grade fevers and non-radiating right lower quadrant abdominal pain, for which he had sought care at five different healthcare facilities without symptomatic improvement. Review of systems reveals a chronic non-productive cough, intermittent night sweats, anorexia, and nausea, without vomiting or altered bowel habits. His surgical history is notable for an appendectomy performed 10 months earlier for similar abdominal complaints. He reports a history of contact with a relative diagnosed with a chronic pulmonary infectious illness 2 years ago.\n\nOn physical examination, the patient is febrile (temperature 38.0\u00b0C) with a blood pressure of 110/70 mmHg. He is ill-looking and asthenic, with moderately pink conjunctivae, anicteric sclerae, and documented loss of 10% of his body weight over the preceding 6 months. Head and neck examination reveals palpable, mobile, non-tender lymph nodes involving the submental, bilateral anterior superficial cervical, and bilateral posterior superficial cervical chains, with the largest left cervical node measuring 4 cm in diameter. Bilateral mobile, non-tender axillary lymphadenopathy is also present. Chest examination demonstrates fine inspiratory crackles. Abdominal examination reveals a healed right lower quadrant gridiron incision scar with mild localized tenderness in the right lower abdominal quadrant.\n\nA full blood count demonstrates a microcytic hypochromic anemia with hemoglobin of 11.0 g/dL and relative lymphocytosis. A chest radiograph demonstrates parahilar lymphadenopathy. Abdominal ultrasonography is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant lymphoma (Hodgkin or Non-Hodgkin lymphoma)",
+      "rule_out_reason": "Prominent systemic constitutional symptoms (fever, night sweats, 10% weight loss) combined with widespread generalized painless lymphadenopathy and parahilar nodes strongly mimicked a lymphoproliferative disorder; however, lymph node biopsy revealed necrotizing granulomas rather than malignant lymphoid architecture.",
+      "quote": "lymph node biopsy and histopathology (showed granulomas with langham giant cells and central caseation)."
+    },
+    {
+      "candidate": "Persistent mesenteric adenitis / post-appendectomy abdominal pathology",
+      "rule_out_reason": "Chronic right lower quadrant pain that had led to prior appendectomy suggested localized mesenteric adenitis; however, abdominal ultrasonography was normal, and widespread superficial and mediastinal lymphadenopathy demonstrated systemic granulomatous dissemination.",
+      "quote": "A working diagnosis of Mesenteric adenitis + Lymph node Tuberculosis was made."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of an excised cervical lymph node demonstrated classic necrotizing granulomas containing Langhans giant cells and central caseation necrosis, confirming tuberculous lymphadenitis in the setting of parahilar adenopathy.",
+      "quote": "Chest X-Ray (showed parahila nodes), normal abdominal ultrasound, lymph node biopsy and histopathology (showed granulomas with langham giant cells and central caseation)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of peripheral and parahilar lymph node tuberculosis presenting with constitutional symptoms and right lower quadrant pain. Admission narrative excludes lymph node biopsy findings and anti-TB therapy."
+}

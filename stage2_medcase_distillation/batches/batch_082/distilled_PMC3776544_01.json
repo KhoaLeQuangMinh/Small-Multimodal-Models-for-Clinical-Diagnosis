@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3776544_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 31-year-old immunocompetent male with 6 months of epigastric pain, vomiting, and significant weight loss who presents with gastric outlet obstruction and an irregular, ulcerated mass lesion in the gastric antrum and pylorus on endoscopy and CT. The clinical dilemma is distinguishing primary hypertrophic gastric tuberculosis from gastric adenocarcinoma or lymphoma in the absence of pulmonary disease or constitutional fever.\n2. Admission Breakpoint: The admission narrative stops after initial physical examination, baseline laboratory tests, normal chest radiography, abdominal CT demonstrating antral thickening with gastric dilation, and initial upper GI endoscopy showing the obstructive antral mass lesion, strictly before endoscopic biopsy histopathology, repeat deep biopsies, and mycobacterial PCR.\n3. Differential Distinctions: Gastric adenocarcinoma is the overwhelming suspect for an obstructive antral mass causing significant weight loss, but endoscopic biopsies demonstrate epithelioid caseating granulomas rather than malignant epithelial cells. Peptic ulcer disease with cicatricial pyloric stenosis causes luminal obstruction but presents with benign ulcer craters rather than a hypertrophic pseudo-tumoral mass lesion. Primary gastric tuberculosis is confirmed by characteristic Langhans giant cells with caseous necrosis and positive mycobacterial PCR.",
+  "case_prompt": "A 31-year-old male is referred to a gastroenterology department with a 6-month history of recurrent epigastric pain, nausea, and occasional vomiting, accompanied by significant weight loss over the preceding 2 months. The epigastric pain is described as intermittent, mild, and gnawing in character. He reports no fever and has no past medical or family history of chronic granulomatous infections. The patient is nondiabetic. Physical examination reveals localized epigastric tenderness without palpable masses or peripheral lymphadenopathy. Complete blood count, liver and renal function tests, and chest radiography are normal; erythrocyte sedimentation rate (ESR) is 22 mm/hr, and HIV screening is negative. Abdominal computed tomography reveals a thickened gastric antrum with a dilated stomach, without regional lymphadenopathy or ascites. Upper gastrointestinal endoscopy demonstrates an irregular mass lesion involving the antrum and pyloric region causing luminal narrowing, through which the endoscope is passed with difficulty.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gastric adenocarcinoma / Antral malignancy",
+      "rule_out_reason": "Considered the primary diagnosis given the patient's substantial weight loss, obstructive symptoms, and an irregular infiltrative antral mass on endoscopy and CT. Excluded by histopathological evaluation of multiple biopsies showing caseating granulomas without dysplastic or malignant cells.",
+      "quote": "The impression then was gastric outlet obstruction with enlarged antrum with a possibility of antral malignancy."
+    },
+    {
+      "candidate": "Peptic ulcer disease with cicatricial stenosis",
+      "rule_out_reason": "Considered due to chronic gnawing epigastric pain and gastric outlet obstruction. Excluded because endoscopic and cross-sectional imaging revealed a prominent hypertrophic, irregular mass lesion rather than benign chronic peptic ulcer scarring.",
+      "quote": "Upper GI endoscopy showed an irregular mass lesion at the antrum and pylorus region with narrowing of the lumen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Targeted endoscopic mucosal biopsies revealed multiple epithelioid cell granulomas with Langhans-type giant cells and caseation necrosis, with definitive confirmation provided by positive tissue PCR for Mycobacterium tuberculosis.",
+      "quote": "On histopathological examination, multiple epithelioid cell granulomas with Langhans-type giant cells and small foci of caseation necrosis were noted"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint strictly placed prior to endoscopic biopsy histology and PCR confirmation."
+}

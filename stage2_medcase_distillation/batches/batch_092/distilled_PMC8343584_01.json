@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8343584_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 39-year-old woman with HIV and moderate CD4 lymphopenia (CD4 count 280 cells/mm3) presents with widespread, chronic, non-ulcerated papulonodular skin lesions spreading across her face, trunk, and limbs. In immunocompromised patients, this presentation mimics opportunistic fungal infections (e.g., histoplasmosis, cryptococcosis), Kaposi sarcoma, bacillary angiomatosis, or lepromatous leprosy.\n2. Admission Breakpoint: Admission presentation ends after documentation of the progressive dermatologic eruption and baseline laboratory evaluation (leukopenia and CD4 count), strictly before skin biopsy histopathology.\n3. Differential Distinctions: Cutaneous opportunistic neoplasms and fungal infections were ruled out by the dermal infiltration pattern rich in histiocytes and plasma cells without malignant vascular proliferations or fungal yeasts; high-power microscopy demonstrated dense intracellular Leishman bodies within macrophages, confirming diffuse cutaneous leishmaniasis in the context of HIV immunosuppression.",
+  "case_prompt": "A 39-year-old woman with human immunodeficiency virus (HIV) infection diagnosed one year prior presented to the hospital with a 6-month history of progressively spreading skin lesions. The eruption initially manifested on her face and subsequently extended to involve her chest, abdomen, and extremities.\n\nOn physical examination, cutaneous examination revealed numerous papules and nodules of varying sizes distributed across the face, trunk, and limbs.\n\nInitial laboratory evaluation revealed leukopenia with a white blood cell count of 1700 cells/mm³. The CD4+ T-cell count was 280 cells/mm³. The remainder of the baseline routine laboratory studies were unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Kaposi sarcoma or Bacillary angiomatosis",
+      "rule_out_reason": "Considered because disseminated vascular papules and nodules are classic opportunistic manifestations in advanced HIV, but histopathological evaluation showed dense inflammatory histiocytic infiltration rather than vascular or spindle cell proliferation.",
+      "quote": "Skin lesion biopsy was performed, and histopathological studies showed a busy dermis with infiltration of many inflammatory cells, including histiocytes-macrophages, lymphocytes, and plasma cells (Figure-2)."
+    },
+    {
+      "candidate": "Localized cutaneous leishmaniasis",
+      "rule_out_reason": "While standard cutaneous infection presents with solitary or localized self-limiting ulcerated lesions, the widespread anatomic dissemination across the face, trunk, and extremities indicated diffuse disease favored by cellular immunodeficiency.",
+      "quote": "Regarding patient's immune deficiency and the extent of skin lesions, the diagnosis of diffuse CL was made."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Diffuse cutaneous leishmaniasis)",
+      "rule_out_reason": "High-power microscopic examination of the skin biopsy revealed macrophages laden with classic intracellular amastigotes, definitively confirming the diagnosis.",
+      "quote": "High power field images revealed aggregates of macrophages filled with numerous leishman bodies (Figure-2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint positioned prior to skin biopsy. Zero pathogen spoilers in case prompt. Quotes verified verbatim from text."
+}

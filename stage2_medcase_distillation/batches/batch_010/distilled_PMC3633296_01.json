@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3633296_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 50-year-old man presents with a 3-week history of fever with chills and rigors accompanied by subacute symmetrical dry gangrene of all bilateral toes extending to the malleoli, in the setting of palpable distal pulses and mild hepatosplenomegaly. Symmetrical peripheral gangrene (SPG) typically stems from bacterial septic shock, severe DIC, atheroembolism, or ergotism; recognizing that prolonged untreated Plasmodium falciparum infection can precipitate microvascular erythrocyte cytoadherence, rosetting, and localized thrombosis without large-vessel occlusion is the key diagnostic challenge.\n2. Admission Breakpoint: The narrative captures the clinical triage on Day 1: a 3-week history of fever with chills and rigors, 1-week progressive bilateral toe gangrene extending to the malleoli, denial of ergot alkaloids, tobacco, alcohol, or trauma, and admission physical exam showing hypotension (BP 90/70 mmHg), tachycardia (HR 120 bpm), tachypnea (RR 24/min), pallor, dehydration, palpable peripheral pulses, mild hepatosplenomegaly, and symmetrical digital gangrene. Confirmatory blood smear parasitology, serial bacterial blood cultures, color Doppler ultrasonography, and antimalarial response are strictly excluded from the prompt.\n3. Differential Distinctions: Bacterial septic shock / Meningococcemia / Disseminated Intravascular Coagulation was strongly considered given symmetrical peripheral gangrene and hypotension, but multiple blood cultures remained sterile and coagulation abnormalities were modest. Ergotism or drug-induced vasoconstriction was considered given the progressive digital necrosis, but excluded by the absence of ergot alkaloid ingestion or heavy smoking. Atherosclerotic / thromboembolic peripheral arterial disease was excluded by the presence of palpable pedal pulses and Doppler ultrasound demonstrating patent femoral and popliteal flow without large-vessel occlusion. The diagnostic pivot occurred upon microscopic examination of the peripheral blood smear, revealing ring forms and gametocytes of Plasmodium falciparum.",
+  "case_prompt": "A 50-year-old man presents to the emergency department with a 3-week history of continuous fever accompanied by chills and rigors, along with progressive blackish discoloration of the toes on both feet over the preceding week. He had received an unspecified course of oral medications from a local practitioner without improvement. He has no history of trauma, smoking, alcohol use, or ingestion of ergot derivatives.\n\nOn physical examination, the patient appears ill, dehydrated, and markedly pale. He is febrile with a pulse rate of 120 beats per minute, respiratory rate of 24 breaths per minute, and blood pressure of 90/70 mmHg. There is no icterus, cyanosis, peripheral edema, or lymphadenopathy. Systemic examination reveals mild hepatosplenomegaly; cardiovascular and respiratory examinations are otherwise unremarkable. Local examination demonstrates dry, symmetrical blackish discoloration and necrosis involving all toes of both feet, extending proximally up to the malleoli. Notably, all peripheral pulses, including the femoral, popliteal, posterior tibial, and dorsalis pedis pulses, remain palpable bilaterally.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Sepsis / Purpura Fulminans",
+      "rule_out_reason": "Considered due to fever, tachycardia, hypotension, and symmetrical peripheral gangrene typically associated with bacterial septicemia and DIC, but excluded because three consecutive blood cultures showed no bacterial growth.",
+      "quote": "Three consecutive blood cultures for bacteria were negative."
+    },
+    {
+      "candidate": "Ergotism / Drug-Induced Vasospasm",
+      "rule_out_reason": "Considered because bilateral symmetrical distal gangrene can be triggered by ergot alkaloids or heavy tobacco vasoconstriction, but the patient had no drug exposures, no smoking history, and maintained palpable peripheral pulses.",
+      "quote": "There was no history of trauma, significant drug ingestion particularly ergot, alcohol consumption or smoking."
+    },
+    {
+      "candidate": "Macrovascular Arterial Thromboembolism",
+      "rule_out_reason": "Considered as a primary vascular cause of bilateral lower extremity digital necrosis, but excluded clinically by palpable pedal pulses and duplex imaging confirming normal large-vessel flow.",
+      "quote": "All peripheral pulses were palpable... Color Doppler study of the lower limbs revealed normal flow in both the femorals and the popliteal, with slightly reduced flow in tibial and dorsalis pedis artery with hypoechogenic shadow in its lumen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic discovery was the identification on peripheral blood smear of intraerythrocytic ring forms with occasional gametocytes characteristic of Plasmodium falciparum, establishing symmetrical peripheral gangrene secondary to microvascular parasitized red blood cell sequestration.",
+      "quote": "Peripheral blood smear showed ring forms of P. falciparum with occasional gametocytes."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt terminates strictly at emergency resuscitation prior to peripheral smear results. Zero mention of malaria, Plasmodium, or antiparasitics. Diagnostic reasoning details differentials for symmetrical peripheral gangrene with exact textual quotes."
+}

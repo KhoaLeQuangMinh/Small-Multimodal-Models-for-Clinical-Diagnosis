@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6462326_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 63-year-old Chinese female presents with 6 months of chronic postprandial abdominal pain, weight loss, severe jejunal wall thickening with stenosis, and splenomegaly, closely mimicking Crohn's disease or small bowel adenocarcinoma.\n2. Admission Breakpoint: Following initial abdominal physical examination, baseline laboratory tests, and contrast-enhanced abdominal CT, immediately prior to double-balloon enteroscopy and biopsy histopathology.\n3. Differential Distinctions: Crohn's disease presents with skip lesions and transmural granulomas without periportal fibrosis; small bowel adenocarcinoma causes malignant mucosal invasion; schistosomiasis causes pipe-stem periportal fibrosis with lobar atrophy/hypertrophy and mucosal deposition of Schistosoma ova.",
+  "case_prompt": "A 63-year-old Chinese woman from Wuhan was admitted with a 6-month history of left quadrant abdominal pain and weight loss. The pain worsened after meals and was accompanied by abdominal distension, belching, and decreased flatus. She had tried traditional herbal preparations that yielded only transient symptomatic relief. Her past medical history was notable for poorly controlled hypertension. A previous outpatient colonoscopy was verbally reported as normal.\n\nOn physical examination, positive findings included mesogastric tenderness and palpable splenomegaly. Laboratory evaluation revealed mild hypokalemia; complete urinalysis and routine stool examinations were unremarkable.\n\nContrast-enhanced abdominal computed tomography (CT) demonstrated splenomegaly, edematous thickening of the jejunal wall with luminal narrowing, mesenteric edema, and regional lymphadenopathy. Evaluation of the liver revealed a widened liver cleft, marked atrophy of the right hepatic lobe, hypertrophy of the left and caudate lobes, intrahepatic calcifications, and pronounced periportal fibrosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Crohn's Disease",
+      "rule_out_reason": "Crohn's disease can cause small-bowel ulceration, stricture, and mesenteric inflammation, but it does not account for the characteristic pattern of hepatic periportal fibrosis and lobar remodeling, and was excluded by histopathologic identification of parasite ova.",
+      "quote": "The enhanced computerized tomography showed splenomegaly, the jejunal wall with edema and a narrowed lumen, enlarged lymph nodes, mesenteric edema"
+    },
+    {
+      "candidate": "Primary Jejunal Adenocarcinoma or Intestinal Lymphoma",
+      "rule_out_reason": "An obstructive jejunal mass with weight loss in an elderly patient raises strong suspicion for malignant neoplasm; ruled out by enteroscopy and biopsy showing chronic granulomatous inflammation without atypical malignant cells.",
+      "quote": "The upper enteroscopy showed at 150 cm distal to the Treitz ligament a 3.0 x 2.0 cm size ulcer with bottom white coating, peripheral mucosal hyperemia, and edema occupying 2/3 of the lumen so that the endoscope could not pass through."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of jejunal mucosal biopsies demonstrated chronic ulcerative inflammation with deposition of classic Schistosoma japonicum eggs, confirming intestinal and hepatic schistosomiasis.",
+      "quote": "The histopathological examination reported chronic jejunal inflammation with ulcerative changes and old S. japonicum eggs deposition"
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "CT findings in admission prompt stripped of 'compatible with hepatic schistosomiasis' phrase. Biopsy findings isolated to diagnostic reasoning."
+}

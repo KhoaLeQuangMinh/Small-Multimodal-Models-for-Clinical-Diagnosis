@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4766808_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 39-year-old male immigrant from Mexico presents with subacute progressive headache, papilledema, visual decline, and hydrocephalus caused by massive, non-enhancing, multilobulated cystic lesions filling the basal cisterns and sylvian fissures, extending down the spinal cord. The absence of characteristic intralesional scolex calcifications seen in classic parenchymal disease makes differentiation from other basilar meningeal processes\u2014such as fungal meningitis (cryptococcosis), tuberculous meningitis, or intracranial arachnoid cysts\u2014challenging.\n2. Admission Breakpoint: The breakpoint is reached after neuroimaging (head CT, brain and spine MRI) demonstrates communicating hydrocephalus and innumerable nonenhancing cystic lesions in the subarachnoid basal cisterns and ventricles, and lumbar puncture demonstrates elevated opening pressure with mild lymphocytic pleocytosis and elevated protein, immediately prior to CSF cysticercus antibody ELISA immunoassay.\n3. Differential Distinctions: Chronic basilar tuberculous meningitis (causes communicating hydrocephalus, basilar exudates, and cranial neuropathies, but typically presents with marked fever, prominent leptomeningeal enhancement, and CSF marked hypoglycorrhachia rather than grape-like nonenhancing cysts); cryptococcal meningitis / gelatinous pseudocysts (frequent cause of basilar pseudocysts and elevated ICP, but typically seen in immunocompromised hosts and positive for cryptococcal antigen/India ink); congenital arachnoid cysts (solitary, stable, non-inflammatory cysts, lacking pleocytosis or spinal drop lesions); racemose neurocysticercosis (aberrant proliferation of larval cystic membranes lacking a visible scolex in basal cisterns, confirmed by CSF cysticercus antibody ELISA).",
+  "case_prompt": "A 39-year-old male presents to the emergency room with worsening headaches and visual decline. He had emigrated from Mexico 13 months prior to presentation and reports no other significant medical history. He describes diffuse headaches that have progressed over a 1-month period, accompanied by new-onset bilateral visual impairment and nausea over the past week. On presentation, he is afebrile with no signs of meningeal irritation. Physical examination reveals a nonfocal general neurologic examination, but ophthalmologic evaluation discloses bilateral papilledema and diminished visual acuity. Initial laboratory findings show a normal white blood cell count of 7,400/mm\u00b3 (73% polymorphonuclear leukocytes, 21% lymphocytes, and 1% eosinophils). Non-contrast head computed tomography (CT) reveals hydrocephalus with transependymal flow and a multilobulated hypodense mass in the basal cisterns. Brain magnetic resonance imaging (MRI) demonstrates too numerous to count nonenhancing, T2-hyperintense cystic lesions in the lateral ventricles and subarachnoid spaces, including the bilateral sylvian fissures, cerebellopontine angles, suprasellar, interpeduncular, and prepontine cisterns, with the largest cyst measuring 21 mm in diameter and exerting mild mass effect upon the brainstem. Magnetic resonance angiography (MRA) demonstrates no large vessel stenosis or occlusion. Screening MRI of the spine reveals a small subarachnoid cystic lesion at the conus level and multiple septations at S1\u2013S2. Lumbar puncture demonstrates an elevated opening pressure; cerebrospinal fluid (CSF) analysis reveals 60 white blood cells/mm\u00b3 (96% lymphocytes, 4% eosinophils), a protein level of 106 mg/dL, and a glucose level of 54 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous meningitis (basilar meningitis)",
+      "rule_out_reason": "Considered given the patient's immigration from an endemic region, basilar cistern involvement, elevated opening pressure, and lymphocytic pleocytosis with elevated CSF protein. However, tuberculous meningitis typically presents with constitutional symptoms (fever, weight loss), profound CSF hypoglycorrhachia, and thick basilar pachymeningeal/leptomeningeal enhancement rather than numerous grape-like non-enhancing cysts.",
+      "quote": "Minor sylvian fissure enhancement was noted bilaterally, however, magnetic resonance angiography (MRA) showed no large vessel stenosis or occlusion."
+    },
+    {
+      "candidate": "Cryptococcal meningitis / gelatinous pseudocysts",
+      "rule_out_reason": "Considered because cryptococcal infection can cause communicating hydrocephalus, gelatinous pseudocysts (soap-bubble lesions) in basal cisterns and Virchow-Robin spaces, and elevated intracranial pressure. However, the patient was immunocompetent with a normal peripheral white count and was subsequently confirmed to have parasitic cysticercal antibodies.",
+      "quote": "Initial laboratory findings indicated a normal white blood cell count of 7400/mm3 with 73% polymorphonuclear leukocytes, 21% lymphocytes, and 1% eosinophils."
+    },
+    {
+      "candidate": "Congenital arachnoid cysts",
+      "rule_out_reason": "Considered due to the presence of non-enhancing CSF-isointense cystic lesions in the subarachnoid space and sylvian fissures. However, arachnoid cysts are congenital, typically solitary and non-progressive, and do not cause progressive hydrocephalus, papilledema, CSF pleocytosis, elevated protein, or spinal dissemination.",
+      "quote": "Subsequent magnetic resonance imaging (MRI) was performed which demonstrated the presence of too numerous to count nonenhancing, T2-hyperintense cystic lesions in the lateral ventricles and subarachnoid spaces"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis of racemose neurocysticercosis was established by positive CSF cysticercus antibody ELISA testing in conjunction with the characteristic cisternal multi-cystic architecture on neuroimaging and recent immigration from Mexico.",
+      "quote": "CSF cysticercus antibody ELISA testing was positive, and a diagnosis of racemose NCC was made based on the immunoassay results, neuroimaging findings, and a history of recent emigration from Mexico."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4766808_01 following Stanford MedCaseReasoning guidelines. The case prompt preserves the clinical tension between basilar meningitis, cryptococcosis, and racemose cysticercosis, stopping immediately before CSF ELISA results."
+}

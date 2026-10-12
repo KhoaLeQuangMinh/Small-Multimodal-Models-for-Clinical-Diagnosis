@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10464891_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 30-year-old agricultural worker in tropical Sanya presents with subacute weight loss, position-dependent flank and abdominal pain, fever of unknown origin, and new-onset severe hyperglycemia, found to have concurrent splenic and psoas major abscesses. In tropical Asia, combined splenic and retroperitoneal/psoas suppurative lesions in an undiagnosed diabetic patient strongly suggest either tuberculous cold abscess or pyogenic infection, requiring differentiation from the 'great mimicker' Burkholderia pseudomallei.\n2. Admission Breakpoint: The breakpoint occurs on Day 2 following the plain abdominal CT scan confirming splenic enlargement, low-density splenic lesions, and a left psoas major abscess with inflammatory exudate, prior to send-out serological testing (anti-Hcp1 antibodies) and ultrasound-guided percutaneous aspiration.\n3. Differential Distinctions: Tuberculous psoas abscess and splenic tuberculosis frequently present with indolent systemic decline, weight loss, and hypodense retroperitoneal/splenic collections, but mycobacterial cultures and acid-fast stains are negative. Classic pyogenic psoas abscess (typically Staphylococcus aureus) usually presents more acutely with positive blood cultures, whereas melioidosis presents with culture-negative bacteremia and wrinkled colonies of safety-pin Gram-negative bacilli.",
+  "case_prompt": "A 30-year-old male farmer residing in Sanya, Hainan, presented with a 1-month history of progressive emaciation with an unintentional 3-kg weight loss, alongside worsening left lower abdominal and flank pain that was positional and aggravated by turning. He had sought care at a local clinic without improvement. On hospital admission (Day 1), he was febrile with a maximum temperature of 38.0°C. Initial clinical laboratory workup revealed severe hypoproteinemia, electrolyte derangements, and marked hyperglycemia with impending ketoacidosis. He had no prior documented personal history of diabetes mellitus, chronic pulmonary disease, viral hepatitis, hypertension, or malignant disease. On Day 2 of hospitalization, a plain computed tomography (CT) scan of the abdomen demonstrated splenomegaly with low-density collections in both the splenic parenchyma and the left psoas major muscle, consistent with multi-compartment abscess formation and surrounding inflammatory exudate.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Extrapulmonary Tuberculosis (Tuberculous Psoas and Splenic Abscess)",
+      "rule_out_reason": "Subacute weight loss, prolonged fever, and combined psoas and splenic hypodense lesions in a young agricultural worker strongly suggested a cold abscess due to Mycobacterium tuberculosis; however, acid-fast staining of aspirated pus was negative and mycobacterial culture showed no growth.",
+      "quote": "No growth was observed on other culture media including anaerobic, mycobacterial, and fungal cultures. The selected single colony stained was showed as Gram--negative bacilli and acid-fast staining was negative."
+    },
+    {
+      "candidate": "Pyogenic Psoas and Splenic Abscess (Staphylococcus aureus / Enterobacteriaceae)",
+      "rule_out_reason": "Bacterial sepsis accompanied by psoas and splenic abscesses is frequently caused by S. aureus or enteric rods; however, pre-antibiotic aerobic and anaerobic blood cultures remained sterile, and pus isolates exhibited wrinkled morphology and antibiotic resistance incompatible with standard enteric organisms.",
+      "quote": "The patient's blood was collected and inoculated into both aerobic and anaerobic blood culture bottles and placed in BACT/ALERT 3D (BioMerieux, France), which showed no growth after 5 days."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous ultrasound-guided aspiration of the psoas abscess yielded thick purulent fluid growing dry, wrinkled 'daisy-like' colonies identified biochemically and via 16S rDNA sequencing as Burkholderia pseudomallei, corroborated by markedly elevated serum anti-Hcp1 IgG titers.",
+      "quote": "The diagnosis of splenic and psoas major abscess due to melioidosis was finally confirmed on 20th July (Day 14) by pus culture as shown in Figure 3 (blood cultures taken prior to antibiotics were negative), and anti-infective therapy was continued."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt terminates at Day 2 plain abdominal CT scan, omitting serology (anti-Hcp1), puncture aspiration, and pathogen identification. Verbatim quotes from the text support alternative candidate exclusions and the diagnostic pivot."
+}

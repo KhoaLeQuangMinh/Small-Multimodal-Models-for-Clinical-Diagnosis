@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7251268_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An acute clinical abdomen indistinguishable from acute suppurative appendicitis masking an underlying chronic mycobacterial granulomatous process of the gastrointestinal tract in a young female with no pulmonary symptoms.\n2. Admission Breakpoint: The breakpoint occurs following abdominal examination, baseline laboratory investigations, and ultrasound confirming acute appendicitis, immediately prior to surgical appendectomy and histopathologic specimen analysis.\n3. Differential Distinctions: Acute pyogenic appendicitis is the primary clinical working diagnosis supported by leukocytosis and ultrasound findings, but histopathology reveals caseating epithelioid granulomas; appendiceal Crohn's disease causes transmural granulomas but lacks caseation necrosis; pelvic inflammatory disease or mesenteric lymphadenitis do not account for focal blind loop appendiceal thickening.",
+  "case_prompt": "An 18-year-old female presents to an outpatient department in rural India complaining of the acute onset of severe right lower quadrant abdominal pain. She has no significant past medical history and denies chronic fever, cough, night sweats, or weight loss.\nOn physical examination, her vital signs are entirely within normal limits. Abdominal examination reveals focal tenderness on palpation in the right iliac fossa with localized peritoneal guarding, but no generalized peritonitis or palpable masses.\nComplete hemogram is normal with the exception of a neutrophilic leukocytosis. Routine serum biochemical investigations and a plain chest radiograph are within normal limits.\nTriage abdominal ultrasonography demonstrates an inflamed, oedematous blind loop in the right iliac fossa consistent with acute appendiceal inflammation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Suppurative Pyogenic Appendicitis",
+      "rule_out_reason": "While acute appendicitis was the initial pre-operative clinical diagnosis, histological examination of the resected appendix revealed caseating epithelioid granulomas rather than pyogenic phlegmonous inflammation.",
+      "quote": "Appendicitis was the clinical diagnosis; hence, appendectomy was planned."
+    },
+    {
+      "candidate": "Appendiceal Crohn's Disease",
+      "rule_out_reason": "Granulomas in Crohn's disease are non-caseating, whereas microscopic examination revealed caseous necrosis that achieved curative remission on antitubercular therapy.",
+      "quote": "consisting of poorly formed epithelioid cells granulomas and caseous necrosis (Fig. 2b)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Appendectomy followed by histopathological examination revealing poorly formed epithelioid cell granulomas with caseous necrosis in the serosa confirmed tubercular appendicitis, which responded well to a 9-month antitubercular regimen.",
+      "quote": "On microscopic examination, Hematoxylin and Eosin (H&E) stained sections revealed the mucosa, submucosa and serosa along with tubercular granulomas in the vicinity of serosa (Fig. 2a) consisting of poorly formed epithelioid cells granulomas and caseous necrosis (Fig. 2b)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC7251268_01. Case prompt precisely simulates acute surgical presentation before appendectomy and histology."
+}

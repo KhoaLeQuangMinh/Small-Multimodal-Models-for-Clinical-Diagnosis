@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9519849_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A young man presents with focal neurological deficits (diplopia, right abducens palsy, hemiparesis) and an intra-axial brainstem mass lesion with surrounding edema on MRI, leading to an initial working diagnosis of a low-grade glioma or slowly expanding brainstem malignancy. The challenge is recognizing an ectopic parasitic granuloma causing an intracranial pseudotumor.\n\n2. Admission Breakpoint: The breakpoint occurs after the emergency clinical evaluation, cranial nerve and motor examination, baseline CBC demonstrating peripheral eosinophilia, and preliminary non-contrast brainstem MRI, prior to parasitic ELISA panels, contrast MRI series, CSF antibody analysis, or rectal mucosal biopsy.\n\n3. Differential Distinctions: Low-grade brainstem glioma causes insidious focal deficits and expansile T2 hyperintensity but lacks peripheral eosinophilia and responds only to oncologic therapy. Other neurotropic parasitic zoonoses (cysticercosis, sparganosis, echinococcosis) cause similar mass lesions but are ruled out by specific negative ELISA antibodies and positive rectal mucosal egg identification.",
+  "case_prompt": "A 25-year-old man presents to the emergency department with a 2-month history of intermittent headaches, diplopia, and left lower limb weakness.\n\nNon-contrast cerebral magnetic resonance imaging (MRI) performed prior to presentation demonstrates a hypointense mass lesion in the right brainstem on T1-weighted images. On T2-weighted sequences, the lesion displays an intermediate signal with irregular and poorly defined borders, surrounded by the hyperintense signal of edema.\n\nOn physical and neurological examination, the patient is alert. Neurological examination reveals limitation of right eye abduction and hypoesthesia of the left lower limb. Motor strength in the left lower extremity is decreased to 4/5. The remaining physical and neurological examination results are unremarkable.\n\nBaseline blood analysis demonstrates a normal total leukocyte count of 6.52 × 10^9/L with an elevated eosinophil count. High-sensitivity C-reactive protein is elevated at 8.0 mg/L (reference value: <3 mg/L).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Low-Grade Brainstem Glioma / Primary Brainstem Neoplasm",
+      "rule_out_reason": "Initial MRI characteristics of an expansile brainstem mass with perilesional edema raised suspicion for a low-grade glioma; however, stereotactic biopsy was deferred, peripheral eosinophilia prompted parasitic testing, and the mass resolved completely following anthelmintic and corticosteroid therapy without surgical resection.",
+      "quote": "These findings were suggestive of a slowly expanding malignancy, with a differential diagnosis of low-grade glioma. Therefore, the patient was transferred to a tertiary medical center."
+    },
+    {
+      "candidate": "Alternative Parasitic Zoonoses (Cysticercosis, Sparganosis, Echinococcosis, Fascioliasis, Toxocariasis, Trichinellosis)",
+      "rule_out_reason": "Given the peripheral eosinophilia and intracranial space-occupying lesion, major parasitic CNS and tissue infections were evaluated, but specific serum IgG antibody ELISA tests were negative.",
+      "quote": "A blood sample enzyme-linked immunosorbent assay for parasite antibody IgG was positive for S. japonicum and negative for fascioliasis, toxocariasis, trichinellosis, cysticercosis, echinococcosis, and sparganosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serum and CSF IgG ELISA assays were positive for S. japonicum, and subsequent electronic colonoscopy with mucosal biopsy demonstrated S. japonicum eggs in the lamina propria of the rectum, confirming ectopic encephalic schistosomiasis with complete lesion resolution after praziquantel and prednisolone.",
+      "quote": "The following mucosal biopsy confirmed the presence of S. japonicum eggs in the lamina propria of the rectum (Figure 2B)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero send-out parasite ELISA or rectal biopsy in case prompt. Quotes exactly matched text."
+}

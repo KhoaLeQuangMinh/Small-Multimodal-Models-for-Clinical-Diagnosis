@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11757176_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 46-year-old female healthcare worker presents with chronic constipation, rectal bleeding, and marked distal rectal wall thickening with suspected lymphovascular invasion on cross-sectional CT and MRI, strongly mimicking locally advanced rectal adenocarcinoma. The core clinical challenge is recognizing an infectious pseudotumoral inflammatory mass in the rectum in a patient completely lacking classic dysenteric features such as acute watery diarrhea, abdominal colic, or fever.\n2. Admission Breakpoint: Outpatient evaluation concludes after cross-sectional contrast-enhanced abdominal CT and pelvic MRI delineate the distal rectal wall thickening and perirectal changes, immediately prior to rectoscopy and tissue biopsy.\n3. Differential Distinctions: Rectal adenocarcinoma presents with irregular exophytic or ulcerative lesions displaying neoplastic epithelial atypia and invasiveness on histology. Crohn's disease characteristically produces transmural segmental inflammation with noncaseating granulomas. Intestinal tuberculosis presents with circumferential ulceration, mural thickening, and caseating granulomas. Amebiasis presenting as an ameboma forms an inflammatory granulation mass harboring characteristic protozoan trophozoites.",
+  "case_prompt": "A 46-year-old female presented for outpatient evaluation with a chronic history of progressive constipation and intermittent rectal bleeding. She was employed as a healthcare worker in a tertiary medical center, with routine exposure to communal toilet facilities. She had no prior personal history of gastrointestinal illness and took no chronic medications. Review of systems was notable for the absence of systemic fever, unintended weight loss, fatigue, or acute abdominal pain.\n\nOn physical examination, her vital signs were within normal limits. The abdomen was soft, non-tender, and non-distended, with no palpable masses or organomegaly. Digital rectal and systemic examination revealed no acute distress. Initial routine hematologic and biochemical laboratory evaluations showed no significant abnormalities. A fecal occult blood test was positive.\n\nA contrast-enhanced abdominal computed tomography (CT) scan revealed massive wall thickening in the distal rectum, starting from the anorectal junction and reaching a maximal thickness of approximately 10 mm on the left posterolateral wall. Marked mesenteric hyperemia was observed in the perirectal area, concerning for possible lymphovascular invasion, along with thickening of the mesorectal fascia. A subsequent pelvic magnetic resonance imaging (MRI) examination confirmed findings similar to the CT scan, demonstrating persistent focal wall thickening of the distal rectum with surrounding perirectal inflammatory stranding.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colorectal carcinoma (rectal cancer)",
+      "rule_out_reason": "Considered the primary provisional diagnosis due to chronic constipation, hematochezia, positive fecal occult blood, and cross-sectional imaging demonstrating a 10 mm distal rectal wall thickening with mesorectal fascia thickening and suspected lymphovascular invasion; however, multiple rectoscopic biopsies demonstrated no malignant cells or neoplastic dysplasia.",
+      "quote": "Nevertheless, the histopathological assessment of several biopsies obtained during the procedure did not reveal any abnormal cells suggestive of malignant conditions; instead, protozoa consistent with amoeba were observed."
+    },
+    {
+      "candidate": "Crohn's disease",
+      "rule_out_reason": "Considered in the differential diagnosis of inflammatory intestinal wall thickening and lower gastrointestinal bleeding in a young adult, but excluded on histopathology, which lacked the noncaseating granulomas and transmural lymphoid aggregates characteristic of Crohn's disease.",
+      "quote": "On the other hand, CD is characterized by segmental intestinal wall thickening and noncaseating granulomas."
+    },
+    {
+      "candidate": "Intestinal tuberculosis",
+      "rule_out_reason": "Considered as a known infectious cause of bowel wall thickening, ulceration, and inflammatory masses, but ruled out because intestinal tuberculosis displays caseating granulomas on histopathological examination.",
+      "quote": "In tuberculosis, intestinal wall thickening with caseating granulomas is observed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endoscopic biopsy served as the pivotal turning point, definitively ruling out adenocarcinoma and revealing protozoan trophozoites, with follow-up cross-sectional imaging demonstrating substantial regression of the rectal mass following luminal and tissue antiparasitic therapy.",
+      "quote": "The histopathological evaluation of the colonoscopy biopsy ruled out malignancy and confirmed the diagnosis of intestinal amoebiasis, prompting the initiation of specific treatment."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to rectoscopy and tissue biopsy. Case prompt contains zero pathogen names, zero histological spoilers, and objective clinical presentation only. Verbatim quotes verified against source text."
+}

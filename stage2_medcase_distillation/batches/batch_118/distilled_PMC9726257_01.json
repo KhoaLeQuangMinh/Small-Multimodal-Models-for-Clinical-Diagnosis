@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9726257_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 46-year-old man presents with chronic pulmonary symptoms, constitutional decline, bilateral hilar and mediastinal lymphadenopathy, and erythema nodosum, closely mimicking acute sarcoidosis (Löfgren syndrome) or autoimmune disease. The clinical tension is heightened when he develops recurrent spontaneous hemarthrosis and severe soft-tissue bleeding due to acquired hemophilia A with factor VIII inhibitor (>1000 BU) triggered by occult cavitary infection.\n2. Admission Breakpoint: The admission breakpoint occurs following admission evaluation with constitutional symptoms, joint swelling, baseline labs (anemia, elevated ESR/CRP, isolated prolonged APTT of 139 seconds), initial chest radiography, and thoracic CT, prior to confirmatory repeat sputum acid-fast smear positivity and factor inhibitor quantification.\n3. Differential Distinctions: Sarcoidosis was considered due to symmetric hilar adenopathy and erythema nodosum, but thoracic imaging showed cavitary destruction inconsistent with uncomplicated sarcoidosis. Primary systemic autoimmune disease (SLE/antiphospholipid syndrome) was suggested by severe APTT prolongation and positive APL antibodies, but ANA was weak and anti-dsDNA was negative, with active infection serving as the autoimmune driver.",
+  "case_prompt": "A 46-year-old man presents with a 7-month history of episodic left knee joint pain and swelling, nocturnal fevers, productive cough, anorexia, and recurrent painful erythematous nodules over his limbs. His medical history is notable for untreated type 2 diabetes mellitus, cigarette smoking, and heavy alcohol intake. He is on no long-term medications.\n\nOn physical examination, he is averagely built. The left knee joint is swollen, warm, and tender with marked restriction of movement. Tender erythematous subcutaneous nodules are palpable over the left arm and right thigh, compatible with erythema nodosum. He has digital clubbing and palpable bilateral cervical and axillary lymphadenopathy. There is no hepatomegaly or splenomegaly.\n\nInitial laboratory evaluation demonstrates normochromic normocytic anemia with a hemoglobin of 84 g/L and moderate rouleaux formation; platelet and white blood cell counts are normal with neutrophil predominance. Inflammatory markers are elevated, with a C-reactive protein of 42 mg/L and an erythrocyte sedimentation rate (ESR) of 138 mm/hr. Serum albumin is reduced with a reversed albumin-to-globulin ratio, and lactate dehydrogenase is elevated at 398.4 U/L; renal and hepatic profiles are otherwise normal. Coagulation studies reveal an isolated, profound prolongation of activated partial thromboplastin time (APTT) of 139 seconds, with normal prothrombin time, thrombin time, and fibrinogen. Joint aspiration of the left knee yields frankly bloody synovial fluid consistent with hemarthrosis.\n\nChest radiography demonstrates prominent bilateral hilar lymphadenopathy. Contrast-enhanced computed tomography (CECT) of the chest and abdomen shows multiple discrete enlarged lymph nodes throughout the bilateral axillae, cervical chains, hilar, paratracheal, subcarinal, and para-aortic stations. High-resolution chest CT shows paraseptal emphysema, parenchymal fibrosis, a thick-walled apical cavity in the right upper lobe surrounded by ground-glass attenuation, and patchy consolidation in the lingular segment.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sarcoidosis (Löfgren Syndrome)",
+      "rule_out_reason": "Bilateral hilar lymphadenopathy combined with erythema nodosum, peripheral arthritis, and elevated inflammatory markers strongly resembled sarcoidosis; however, high-resolution CT demonstrated cavitary destructive changes and subsequent microbiological analysis confirmed an infectious etiology.",
+      "quote": "Findings were more suggestive of an infective pathology than sarcoidosis."
+    },
+    {
+      "candidate": "Primary Autoimmune Disease / Systemic Lupus Erythematosus (SLE) with Antiphospholipid Syndrome",
+      "rule_out_reason": "Erythema nodosum, multi-station adenopathy, inflammatory arthritis, and isolated APTT prolongation with positive antiphospholipid antibodies suggested primary autoimmune disease; however, anti-dsDNA and rheumatoid factor were negative, and pulmonary cavitary disease progressed as active infection.",
+      "quote": "An autoimmune screen revealed weakly positive antinuclear antibodies, but double-stranded DNA and rheumatoid factor were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat chest computed tomography demonstrating a cavity with a classic tree-in-bud appearance and right hilar adenopathy, accompanied by positive acid-fast bacilli on serial sputum examination (fourth and fifth specimens), confirming active cavitary pulmonary infection underlying secondary acquired factor VIII inhibitor autoantibodies.",
+      "quote": "With a strong suspicion of active tuberculosis, the CECT chest and abdomen were repeated which revealed a cavity with a tree in bud appearance in the right upper lobe with a progressive right hilar lymphadenopathy suggestive of active pulmonary tuberculosis with bronchogenic spread. His fourth and fifth sputum samples were positive for acid-fast bacilli which confirmed pulmonary tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9726257_01. AFB positivity, factor VIII Bethesda inhibitor assay, and specific ATD initiation withheld from case_prompt. Direct quotes match article text."
+}

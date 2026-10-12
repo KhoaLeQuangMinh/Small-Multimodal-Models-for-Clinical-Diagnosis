@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7269532_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 43-year-old immunocompetent man presents with a subacute 15-day headache followed by acute high-grade meningism, somnolence, vomiting, severe CSF hypoglycorrhachia (CSF glucose 32 mg/dL with serum glucose 128 mg/dL), and markedly elevated CSF protein (138 mg/dL). Despite initial antimicrobial therapy, symptoms persist and neuroimaging demonstrates a focal cerebellar microlesion. The key diagnostic challenge is distinguishing tuberculous meningitis with tuberculoma from acute pyogenic bacterial meningitis, viral meningoencephalitis, or fungal central nervous system infection.\n2. Admission Breakpoint: The admission breakpoint is reached following lumbar puncture analysis and initial brain MRI demonstrating the cerebellar lesion on day 7 of hospitalization, immediately prior to the return of CSF mycobacterial PCR, Quantiferon testing, and subsequent mycobacterial cultures.\n3. Differential Distinctions: Acute pyogenic bacterial meningitis typically features acute onset, marked polymorphonuclear pleocytosis, and rapid response to conventional antibacterial agents; viral meningoencephalitis usually exhibits normal CSF glucose; cryptococcal or fungal meningitis requires confirmation with cryptococcal antigen or fungal staining; central nervous system tuberculosis is confirmed by positive CSF Mycobacterium tuberculosis PCR, interferon-gamma release assay, and culture.",
+  "case_prompt": "A 43-year-old man presented to the clinic with a continuous headache that had persisted for the preceding 15 days, complicated by the acute onset of fever, vomiting, and progressive alteration of consciousness over the last two days. He had no known past medical history.\n\nOn physical examination, the patient was somnolent. Vital signs were notable for fever. Neurologic examination revealed marked signs of meningeal irritation, including neck stiffness and positive Kernig and Brudzinski signs. No focal cranial nerve palsies were noted initially.\n\nAn emergency lumbar puncture was performed. Cerebrospinal fluid (CSF) analysis demonstrated marked hypoglycorrhachia with a CSF glucose of 32 mg/dL against a simultaneous blood glucose of 128 mg/dL (CSF-to-serum glucose ratio 0.25). CSF microprotein was elevated at 138 mg/dL, and CSF chloride was 120 mmol/L. Empiric broad-spectrum antimicrobial therapy was initiated; however, severe headache and somnolence persisted through day 7 of therapy. Magnetic resonance imaging (MRI) of the brain was obtained, which demonstrated a millimeter-scale focal cerebellar lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Considered due to acute fever, altered mentation, positive meningeal signs, elevated CSF protein, and marked hypoglycorrhachia. Ruled out by a subacute two-week prodrome, failure of standard empiric antimicrobial therapy, presence of a parenchymal cerebellar lesion, and microbiological confirmation of mycobacterial infection.",
+      "quote": "The headache persisted on the seventh day of anti-microbial therapy. Magnetic resonance imaging (MRI) revealed a millimeter-scale cerebellar lesion (Figure 1)."
+    },
+    {
+      "candidate": "Viral Meningoencephalitis or Fungal Meningitis (Cryptococcosis)",
+      "rule_out_reason": "Considered because of subacute headache, depressed consciousness, and focal intracranial pathology. Ruled out by marked CSF hypoglycorrhachia and definitive molecular detection of mycobacterial DNA.",
+      "quote": "PCR for Mycobacterium tuberculosis and Quantiferon tests of CSF were positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when CSF PCR and Quantiferon tests yielded positive results for Mycobacterium tuberculosis, later confirmed by positive culture yielding drug-susceptible organisms.",
+      "quote": "PCR for Mycobacterium tuberculosis and Quantiferon tests of CSF were positive. The patient was commenced on isoniazid, 300 mg/day, rifampicin 600 mg/day, ethambutol 2 g/day and pyrazinamide 2 g/day. CSF culture testing over the first month of treatment was reported as M. tuberculosis, susceptible to anti-tuberculous drugs."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7269532. Admission breakpoint maintained before CSF PCR/Quantiferon and culture. Zero pathogen names leaked in case prompt."
+}

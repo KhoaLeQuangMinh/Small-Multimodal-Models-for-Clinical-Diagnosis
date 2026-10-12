@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11748035_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 30-year-old male construction worker presented with widespread psoriasiform scaling plaques, painful dactylitis of both hands and feet, and eyelid edema, misdiagnosed by previous clinicians as severe psoriasis vulgaris with psoriatic arthritis or allergic reaction, but distinguished by thermal insensitivity, hypoesthesia within plaques, and non-tender peripheral nerve enlargement, confirming mid-borderline leprosy with a severe Type 1 reversal reaction.\n2. Admission Breakpoint: Stops after dermatologic referral, physical examination showing eyelid/digital edema, painful interphalangeal joints, anesthetic annular scaling plaques, negative Auspitz sign, and bilateral great auricular and peroneal nerve enlargement, before slit-skin smear or punch biopsy.\n3. Differential Distinctions: Psoriasis vulgaris with psoriatic arthritis produces erythematous scaly plaques and inflammatory dactylitis, but lesions exhibit Auspitz sign, intact or heightened sensation, characteristic nail changes, and no peripheral nerve trunk enlargement. Severe allergic dermatitis / angioedema causes transient eyelid and acral edema but lacks hypesthesia, non-tender nerve thickening, or chronic 2-year evolution with painless burns. Mid-borderline leprosy with Type 1 reversal reaction manifests with acute inflammatory flares of preexisting anesthetic plaques and neuritis, characterized by slit-skin smear AFB positivity and epithelioid granulomas on histopathology.",
+  "case_prompt": "A 30-year-old male from West Java, Indonesia, presented to the dermatology clinic on referral from a rheumatologist with erythematous plaques covered with thick scales on the face, neck, trunk, back, arms, and lower limbs that were neither itchy nor painful for the past month. The complaint was accompanied by swollen eyelids and painfully swollen fingers on both hands and feet. Approximately two years prior, he noted a palm-sized erythematous macule on the left lower leg with decreased sensation; the lesions subsequently multiplied and spread to the face, elbows, back, and epigastric region. Six months prior to presentation, there was increased erythema and thickening with dense scales; an initial medical evaluation diagnosed an allergic reaction and prescribed antiallergy medications, after which the lesions temporarily reverted into hyperpigmented macules before recurring during physical fatigue. He works as a water heater construction worker and had occasionally sustained unintentional burns from hot materials and water without experiencing pain. A rheumatologist had subsequently diagnosed psoriasis vulgaris and psoriatic arthritis, referring him for further dermatologic evaluation. Physical examination demonstrated edema of the eyelids and fingers on both hands and feet, accompanied by painful interphalangeal joints of both hands and feet, without madarosis, earlobe infiltration, or nail changes. Dermatologic inspection revealed annular erythematous macules and annular erythematous plaques with clear inner and outer borders covered by psoriasiform scales across almost the entire body; cutaneous sensory testing demonstrated decreased sensitivity over the lesions, and the Auspitz sign was negative. Palpation of peripheral nerves revealed non-tender enlargements with a rubbery consistency of the right great auricular nerve and bilateral common peroneal nerves.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Psoriasis vulgaris with psoriatic arthritis",
+      "rule_out_reason": "Initial clinical impression due to widespread psoriasiform scaly plaques and inflammatory dactylitis with painful interphalangeal joints. Ruled out by marked cutaneous hypesthesia within the plaques, absence of nail dystrophy, negative Auspitz sign, and bilateral peripheral nerve enlargement.",
+      "quote": "There was decreased sensitivity of annular erythematous macules and annular erythematous plaques with clear inner and outer borders that were covered by psoriasiform scales (Figure 2) on almost the entire part of the body (Figure 1D-F). Auspitz sign was negative."
+    },
+    {
+      "candidate": "Allergic reaction / Urticaria / Angioedema",
+      "rule_out_reason": "Considered due to recurring episodes of eyelid and facial edema responsive to antiallergy medications. Ruled out by the chronic 2-year disease course, progressive cutaneous insensitivity leading to painless thermal burns, and peripheral nerve trunk thickening.",
+      "quote": "He visited a general practitioner and was diagnosed with an allergic reaction, then received antiallergy medicines."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Slit-skin smear examination from anesthetic psoriasiform plaques demonstrating acid-fast bacilli with a bacterial index of 3+, combined with skin biopsy showing epithelioid and Langhans giant cell granulomas, establishing mid-borderline leprosy with a severe Type 1 reversal reaction.",
+      "quote": "Slit-skin smear examinations from anesthetic psoriasiform plaques on the left arm revealed the presence of acid-fast bacilli (AFB) with an average bacterial index (BI) of 3+ and a morphological index (MI) of 34.8%."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at physical examination and nerve palpation before slit-skin smear or biopsy. Zero disease names or pathogen identifiers in the prompt. Quotes verified verbatim against source text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4395956_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: An infant presenting with prolonged fever (10 days), repeated seizure activity, and a diffuse petechial rash immediately raises suspicion for acute bacterial meningitis, meningococcemia, or viral encephalitis, masking an arboviral systemic infection manifesting with atypical neurotropic complications.\n2. Admission Breakpoint: The breakpoint occurs upon initial presentation with acute seizures, petechiae, and triage CBC demonstrating thrombocytopenia, immediately prior to arboviral serological and antigen testing.\n3. Differential Distinctions: Meningococcal meningitis/septicemia typically manifests with rapidly progressive purpura fulminans, septic shock, and elevated inflammatory markers. Viral meningoencephalitis presents with seizures and altered consciousness but rarely causes profound thrombocytopenia and generalized petechiae without consumptive coagulopathy.",
+  "case_prompt": "A 5-month-old female infant presented with a 10-day history of persistent fever and multiple episodes of seizures. Physical examination revealed generalized petechial spots distributed over her trunk and both upper and lower extremities. Baseline triage laboratory evaluation demonstrated marked thrombocytopenia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial meningitis / Meningococcemia",
+      "rule_out_reason": "Considered due to the infant presentation with high fever, seizures, and petechial eruption, but ruled out as an acute pyogenic CNS infection in favor of an arboviral encephalitis/encephalopathy with thrombocytopenia responding to protocolized fluid management.",
+      "quote": "Case one was a 5-month-old female who presented with fever of 10 days with multiple episodes of seizures and petechial spots over trunk and both limbs."
+    },
+    {
+      "candidate": "Viral meningoencephalitis",
+      "rule_out_reason": "Considered because of fever and recurrent seizures in an infant, but classical neurotropic viruses do not typically cause primary thrombocytopenia and petechial rash without systemic coagulopathy.",
+      "quote": "Her platelet count was low and dengue IgM was positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive dengue IgM serology in the context of thrombocytopenia, hemorrhagic petechiae, and prolonged febrile seizures confirmed dengue infection with acute neurological manifestations, which resolved fully with WHO-guided intravenous fluid resuscitation.",
+      "quote": "Her platelet count was low and dengue IgM was positive... All five cases were given intravenous fluids as per WHO guidelines. All five were discharged successfully without having any residual morbidity."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to dengue IgM serology. Pediatric neurological presentation isolated with zero spoilers."
+}

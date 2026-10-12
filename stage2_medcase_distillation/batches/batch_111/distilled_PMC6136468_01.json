@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6136468_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 5-year-old child presenting with a pancreatic head cystic mass, ductal dilation, massive ascites, lymphadenopathy, and markedly elevated CA-125 closely mimics a malignant pancreatic neoplasm or necrotizing pancreatitis, especially given negative PPD, IGRA, and serum antibodies.\n2. Admission Breakpoint: Admission triage concludes following initial physical examination, admission blood work (CBC, lipase, amylase, CA-125), and contrast-enhanced CT of the abdomen and chest, prior to paracentesis and laparoscopic exploration.\n3. Differential Distinctions: Pancreatoblastoma / peritoneal carcinomatosis is ruled out by absence of tumor cells in ascites and surgical pathology; bacterial peritonitis is excluded by negative routine ascites cultures; definitive diagnosis of pancreatic tuberculosis is established by tissue PCR.",
+  "case_prompt": "A 5-year-old girl with no prior medical history presented with a right groin mass present for two months and progressive abdominal distension for 15 days, accompanied by occasional periumbilical pain, vomiting, and diarrhea. On physical examination, she appeared malnourished with acute facies. The abdomen was noticeably distended with diffuse tenderness; Grey Turner and Cullen signs were absent. A firm mass measuring approximately 4 x 3 x 2 cm was palpated in the right inguinal region. Routine blood tests showed white blood cell count 2.97 x 10^9/L (neutrophils 47.2%), red blood cell count 4.88 x 10^12/L, platelet count 714 x 10^9/L, and C-reactive protein 2.06 mg/L. Serum lipase was markedly elevated at 3167 U/L and serum amylase was 720 U/L. Serum cancer antigen 125 (CA-125) was elevated at 484.5 U/mL. Contrast-enhanced abdominal CT revealed significant pancreatic duct dilatation with surrounding pancreatic head space obliteration, a cystic low-density lesion in the head of the pancreas, massive ascites, mesenteric lymphadenopathy, and upper abdominal bowel wall thickening. Chest CT showed increased lung markings without focal consolidations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic / Peritoneal Malignancy (e.g., Pancreatoblastoma or Peritoneal Carcinomatosis)",
+      "rule_out_reason": "Raised as the foremost concern due to the combination of a pancreatic mass lesion, ductal dilatation, massive ascites, cachexia, and a markedly elevated CA-125 level (484.5 U/mL); excluded by diagnostic paracentesis and surgical exploration which demonstrated inflammatory exudate without malignant cells.",
+      "quote": "No tumor cells were identified in the ascites, and there was no bacterial growth in the ascites for 48 hours."
+    },
+    {
+      "candidate": "Acute Pyogenic Bacterial Peritonitis",
+      "rule_out_reason": "Massive peritoneal fluid collection accompanied by bowel wall thickening and elevated inflammatory markers suggested secondary bacterial peritonitis complicating pancreatitis; excluded by sterile ascites cultures.",
+      "quote": "there was no bacterial growth in the ascites for 48 hours. Seven days after admission, the patient underwent laparoscopic exploration... No bacteria or tubercle bacilli were found in the ascites cultures."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative non-invasive immunological testing (serum anti-TB antibody, tuberculin skin test, and interferon-gamma release assay), laparoscopic biopsy of the abdominal mass yielded tissue that was positive for Mycobacterium tuberculosis DNA by polymerase chain reaction.",
+      "quote": "The anti-TB antibody in serum was negative. The purified protein derivative of the tuberculin test and interferon-gamma release assay were negative... Using polymerase chain reaction (PCR), Mycobacterium tuberculosis DNA was identified in the resected abdominal mass. Therefore, the diagnosis of pancreatic TB was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation strictly halts before paracentesis, laparoscopy, and PCR confirmatory findings. Zero spoilers in case prompt."
+}

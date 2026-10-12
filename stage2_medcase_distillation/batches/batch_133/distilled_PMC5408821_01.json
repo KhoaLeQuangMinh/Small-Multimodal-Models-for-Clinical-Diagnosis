@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5408821_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 17-year-old female with a remote, resolved history of childhood seizures presents with acute-onset, refractory generalized tonic-clonic status epilepticus immediately following a school trip in Morelos, Mexico. The critical diagnostic challenge lies in distinguishing between a recurrence of primary epilepsy/breakthrough seizures and an acute fulminant infectious neurotropic process causing rapid cerebral edema and loss of brainstem reflexes.\n2. Admission Breakpoint: The admission evaluation concludes with emergency orotracheal intubation, deep unresponsiveness with absent corneal and cough reflexes, and non-contrast cranial computed tomography demonstrating severe cerebral edema with ventricular collapse, prior to the return of viral serology or CSF PCR panels.\n3. Differential Distinctions: Acute viral meningoencephalitis (such as enterovirus) is common in pediatric populations and school clusters but ruled out by molecular CSF testing; breakthrough status epilepticus from prior epilepsy does not typically cause hyperacute catastrophic cerebral edema leading to brain death without prolonged unwitnessed anoxia; whereas neurotropic dengue virus infection in an endemic region can trigger profound endothelial disruption, encephalopathy, cerebral edema, and refractory status epilepticus.",
+  "case_prompt": "A 17-year-old female was admitted to the emergency department at 2:50 AM with refractory generalized tonic-clonic seizures. She had a remote past medical history of childhood seizures diagnosed at eight years of age, for which she received diphenylhydantoin for two years; the anticonvulsant was successfully discontinued at age ten with no subsequent seizure activity.\n\nHer current illness began acutely at the conclusion of a school field trip in Morelos, Mexico. Her instructors witnessed the sudden onset of generalized tonic-clonic movements with sustained increased muscle tone of indeterminate duration. She was initially transported to a regional community hospital, where intravenous diphenylhydantoin was administered without cessation of seizure activity. Given progressive neurological compromise and persistent epileptic activity, emergency orotracheal intubation was performed to secure the airway, and she was transferred to a tertiary pediatric referral center.\n\nOn arrival, the patient was intubated and mechanically ventilated. Physical examination revealed absent spontaneous respiratory effort, absent bilateral corneal reflexes, and absent cough and gag reflexes. Initial cranial computed tomography (CT) demonstrated diffuse, severe cerebral edema with marked ventricular collapse. Routine triage laboratory evaluations were obtained.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Enteroviral meningoencephalitis",
+      "rule_out_reason": "Enteroviruses are frequent pathogens responsible for acute outbreaks of pediatric meningoencephalitis presenting with status epilepticus; however, molecular testing in the cerebrospinal fluid was negative.",
+      "quote": "PCR to detect enterovirus in the cerebrospinal fluid (CSF) was negative."
+    },
+    {
+      "candidate": "Breakthrough status epilepticus secondary to remote childhood epilepsy",
+      "rule_out_reason": "The patient had a remote history of seizures treated in childhood, but simple seizure recurrence does not account for the rapid onset of devastating cerebral edema and severe ventricular collapse leading directly to brain death.",
+      "quote": "Epileptic status was suspected, and the decision was made to protect the airways with orotracheal intubation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The demonstration of positive dengue nonstructural protein 1 (NS1) antigen by enzyme-linked immunoassay confirmed acute dengue infection presenting as fatal neurotropic dengue encephalopathy with status epilepticus.",
+      "quote": "Reported serology for dengue NS1 via enzyme-linked immunoassay (ELISA) was positive;"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to admission breakpoint before serologic/PCR return. Zero pathogen names in case prompt."
+}

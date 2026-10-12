@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC1310521_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 46-year-old man with advanced HIV/AIDS (CD4 count 115 cells/µL, non-adherent to antiretroviral therapy) and history of frequent international travel between West Africa and the US presents with isolated subacute pain, erythema, and swelling of the left fifth digit proximal interphalangeal joint, with an occasional dry cough but no fever or weight loss. Radiographs show cystic lucencies in the proximal phalanx, while chest radiography reveals right hilar lymphadenopathy and scattered nodules. The presentation mimics common bacterial dactylitis, fungal osteomyelitis, or gout, obscuring an underlying disseminated mycobacterial infection.\n2. Admission Breakpoint: The admission breakpoint is placed at Day 1 triage following hand radiography and initial chest imaging showing scattered nodules, prior to surgical incision, drainage, bone biopsy, and molecular rRNA transcription-mediated amplification.\n3. Differential Distinctions: Acute pyogenic bacterial felon or osteomyelitis (ruled out by absence of acute fever, normal leukocyte count of 5,000/mm³, and intraoperative findings of soft, mottled, yellow bone rather than acute suppuration), endemic fungal osteomyelitis (histoplasmosis/coccidioidomycosis, ruled out by negative fungal cultures), and gouty dactylitis. Demonstration of acid-fast bacilli on synovial biopsy and Gen-PROBE transcription-mediated amplification confirming M. tuberculosis complex rRNA establishes disseminated tuberculous osteomyelitis.",
+  "case_prompt": "A 46-year-old male with human immunodeficiency virus infection and acquired immunodeficiency syndrome (HIV/AIDS, CD4+ T-cell count 115 cells/µL) presented with a two-week history of worsening pain and swelling of the left fifth digit. He denied antecedent hand trauma, fever, chills, night sweats, weight loss, or other constitutional symptoms, though he noted an occasional non-productive dry cough. He had traveled repeatedly between his native Ivory Coast in West Africa and the United States. He was not receiving antiretroviral therapy at the time of presentation.\n\nOn physical examination, the left fifth digit was swollen, warm, and erythematous with localized tenderness centered over the proximal interphalangeal joint. The remainder of the physical examination, including cardiopulmonary and abdominal exams, was unremarkable.\n\nInitial laboratory investigations revealed a white blood cell count of 5,000/mm³, hemoglobin 11.6 g/dL, hematocrit 33.9%, platelet count 280,000/mm³, eosinophils 9.0%, and an elevated erythrocyte sedimentation rate (ESR) of 60 mm/h.\n\nRadiography of the left hand revealed soft-tissue swelling over the fifth digit, proximal interphalangeal joint space narrowing, and cortical lucencies with cystic degenerative changes in the proximal phalanx. Admission chest radiography showed right hilar lymph node enlargement, multiple scattered pulmonary nodules, and a resolving right lower lobe infiltrate. Computed tomography of the chest confirmed multiple pulmonary nodules, necrotic mediastinal/hilar lymph nodes, and splenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic bacterial osteomyelitis / septic arthritis",
+      "rule_out_reason": "Acute pyogenic dactylitis (such as Staphylococcus aureus) typically presents with intense acute inflammation, leukocytosis, and fever; in contrast, this patient had a normal leukocyte count of 5,000/mm³, an indolent 2-week course without fever, and soft mottled yellow bone rather than acute purulent phlegmon.",
+      "quote": "He denied any history of recent trauma to the hand, fever, weight loss, or other systemic symptoms... His laboratory values on admission were as follows: white blood cell count 5000 cells/mm3... Operative findings were significant for purulent, mottled, soft, yellow bone."
+    },
+    {
+      "candidate": "Endemic fungal osteomyelitis (e.g., Histoplasmosis, Cryptococcosis)",
+      "rule_out_reason": "In a patient with severe CD4 lymphopenia and disseminated pulmonary nodules, opportunistic fungal osteomyelitis was a leading differential, but specific mycobacterial molecular assays and fungal smears were negative for fungal pathogens.",
+      "quote": "We used the Gen-PROBE Amplified Mycobacterium tuberculosis Direct Test which employs a transcription-mediated amplification and hybridization protection assay to qualitatively detect Mycobacterium tuberculosis complex ribosomal RNA (rRNA)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Incision, drainage, and biopsy of the left fifth phalanx revealed acid-fast bacilli on direct microscopy, qualitative Gen-PROBE testing confirmed Mycobacterium tuberculosis complex ribosomal RNA, and both bone tissue and induced sputum cultures confirmed Mycobacterium tuberculosis.",
+      "quote": "Rare acid-fast bacilli were demonstrated on biopsy of the both phalanx and synovial fluid samples [figure 4]. We used the Gen-PROBE Amplified Mycobacterium tuberculosis Direct Test which employs a transcription-mediated amplification and hybridization protection assay to qualitatively detect Mycobacterium tuberculosis complex ribosomal RNA (rRNA). Several weeks later cultures of all surgical material grew Mycobacterium tuberculosis [figure 5]."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case accurately targets Tuberculosis (disseminated tuberculosis with tuberculous osteomyelitis/dactylitis). Breakpoint set prior to surgical biopsy and Gen-PROBE testing. Zero pathogen names in case prompt."
+}

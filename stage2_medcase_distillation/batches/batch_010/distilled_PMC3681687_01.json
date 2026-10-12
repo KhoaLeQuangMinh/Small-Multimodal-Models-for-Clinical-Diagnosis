@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3681687_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 25-year-old traveler returns from Senegal having bathed in freshwater waterfalls and develops fever, myalgias, dry cough, and marked eosinophilia 5 weeks later. Acute febrile respiratory symptoms with eosinophilia in a returned tropical traveler generate a broad differential including acute pulmonary schistosomiasis (Katayama syndrome), Löffler's syndrome / migrating geohelminths, acute toxocariasis, and tropical pulmonary eosinophilia. A critical clinical nuance is that treatment with praziquantel can paradoxically exacerbate pulmonary symptoms and eosinophilia due to massive antigen release from dying schistosomula.\n2. Admission Breakpoint: The admission clinical narrative incorporates the patient's demographic information, travel exposure (freshwater swimming near Dindefelo falls in Senegal 5 weeks earlier), onset of fever, myalgias, and dry cough, physical presentation, and baseline complete blood count (hemoglobin 157 g/L, platelets 123,000/microL, leukocytes 8,670/microL with 9% eosinophils). Confirmatory serology (indirect hemagglutination test for Schistosoma mansoni), negative malaria smears, blood cultures, praziquantel treatment response, and follow-up imaging (chest X-ray patchy infiltrates and CT pseudonodular halo lesions) are strictly sequestered for diagnostic reasoning.\n3. Differential Distinctions: Malaria was considered given acute fever, myalgias, and thrombocytopenia in a traveler returning from West Africa, but excluded by a negative malaria smear. Acute bacterial or viral pneumonia / typhoid fever was considered for fever and dry cough, but ruled out by peripheral blood eosinophilia, sterile blood cultures, and negative viral/bacterial serologies. Löffler's syndrome (Ascaris, hookworm, or Strongyloides larval pulmonary migration) produces cough and pulmonary eosinophilia, but usually occurs within 1 to 2 weeks of soil exposure rather than 5 weeks after freshwater swimming. Acute schistosomiasis (Katayama fever) was confirmed by freshwater exposure in Senegal, positive indirect hemagglutination titers (1:80), and post-praziquantel pulmonary pseudonodular infiltrates.",
+  "case_prompt": "A 25-year-old previously healthy Spanish man presents with a 1-week history of fever, diffuse myalgia, and a non-productive dry cough. Five weeks prior to symptom onset, he had traveled to Senegal, where his activities included swimming in freshwater pools near the Dindefelo falls. He reports no preceding medical illnesses and takes no regular medications.\n\nOn physical examination, he is febrile and mildly fatigued. Vital signs are otherwise stable. Pulmonary auscultation reveals clear breath sounds bilaterally without wheezing, crackles, or rhonchi. Abdominal examination is unremarkable with no hepatomegaly or splenomegaly. No skin rashes, petechiae, or peripheral lymphadenopathy are identified.\n\nInitial triage complete blood count reveals a hemoglobin concentration of 157 g/L, a platelet count of 123,000 platelets/microL, and a total leukocyte count of 8,670 cells/microL with 9% eosinophils (absolute eosinophil count approximately 780 cells/microL).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered because fever, myalgias, and mild thrombocytopenia in a traveler returning from Senegal strongly suggest acute malaria, but definitively excluded by a negative peripheral blood smear.",
+      "quote": "Malaria smear, blood cultures, and serologies for common viral and bacterial infections were negative."
+    },
+    {
+      "candidate": "Common Acute Bacterial or Viral Respiratory Infections / Typhoid Fever",
+      "rule_out_reason": "Considered due to acute febrile illness with cough and systemic myalgia, but ruled out by sterile blood cultures, negative serologies, and prominent peripheral eosinophilia (9%), which is atypical for acute bacterial or viral infections.",
+      "quote": "Malaria smear, blood cultures, and serologies for common viral and bacterial infections were negative."
+    },
+    {
+      "candidate": "Migrating Geohelminthiasis / Löffler's Syndrome",
+      "rule_out_reason": "Considered as an etiology for pulmonary symptoms with peripheral eosinophilia, but geohelminth larval migration typically manifests within 1-2 weeks of exposure, whereas Katayama syndrome characteristically arises 4-8 weeks after freshwater cercarial penetration.",
+      "quote": "Five weeks later, he presented with fever, myalgia, and dry cough. His complete blood count showed a hemoglobin level of 157 g/L, platelet count of 123.000 platelets/microL, and a leukocyte count of 8.670 cells/microL, with 9% eosinophils."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis of acute schistosomiasis (Katayama fever) with pulmonary involvement was established by freshwater exposure history in Senegal, positive specific indirect hemagglutination serology (1:80), and post-praziquantel worsening of eosinophilia and bilateral pseudonodular ground-glass halo lesions on chest CT.",
+      "quote": "Titers of an indirect hemagglutination test for Schistosoma mansoni were 1:80... After treatment, the dry cough increased and he developed moderate dyspnea, with increasing malaise and myalgia. A second blood sample revealed eosinophilia of 1.200 cells/microL. A chest X-ray showed patchy infiltrates in both lungs (Figure 1), and a CT scan showed multiple peripheral bilateral pseudonodular lesions with surrounding ground-glass-opacity halo (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt stops at admission triage CBC showing 9% eosinophilia following freshwater exposure in Senegal. Excludes all serologic titles, chest imaging, and treatment response. Exact quotes document rule-outs."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10874467_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 61-year-old immigrant with uncontrolled diabetes mellitus presents in the United States with fever, jaundice, and a massive 14-cm hepatic cystic cavity without diarrhea and without international travel in over two years. Because of the patient's uncontrolled diabetes and prolonged US residence, a bacterial pyogenic liver abscess was the primary initial diagnosis, masking a late reactivation/presentation of an amebic liver abscess.\n2. Admission Breakpoint: Emergency department presentation following physical examination, baseline laboratory panels (transaminases, bilirubin, hemoglobin), and initial abdominal ultrasound and CT imaging characterizing the large hepatic abscess, immediately prior to interventional catheter drainage, blood/aspirate cultures, and send-out serological testing.\n3. Differential Distinctions: Pyogenic bacterial liver abscess is the dominant cause of large abscesses in diabetic patients lacking recent travel, justifying initial cefepime/vancomycin; cystic hepatic neoplasm or hydatid cyst can present as large cystic liver masses but lack acute suppurative toxicity; amebiasis is confirmed by high-titer Entamoeba histolytica serology and rapid clinical/radiologic response to metronidazole and paromomycin.",
+  "case_prompt": "A 61-year-old male originally from Nigeria with a medical history of hypertension and uncontrolled diabetes mellitus presented to the emergency department in the United States. He complained of persistent right upper quadrant abdominal pain that radiated to his back, accompanied by darkening of his urine. He had experienced no nausea, vomiting, or diarrhea, and had not traveled outside the United States within the past two years.\n\nUpon examination, he was febrile with a body temperature of 100.8°F (38.2°C) and tachycardic with a pulse rate of 117 beats per minute. Scleral and conjunctival icterus was present. Abdominal examination revealed marked tenderness localized to the right upper quadrant without rebound tenderness or guarding.\n\nLaboratory tests demonstrated a normocytic anemia with a hemoglobin of 10.9 g/dL. Liver biochemistries showed marked elevation of transaminases (alanine aminotransferase [ALT] 245 U/L, aspartate aminotransferase [AST] 202 U/L), alkaline phosphatase elevated at 587 U/L, and elevated total bilirubin (1.4 mg/dL) with conjugated direct hyperbilirubinemia. Random blood glucose levels remained substantially elevated, in the 250 to 300 mg/dL range.\n\nUrgent abdominal ultrasound revealed a large complex cystic lesion in the right lobe of the liver measuring 14.39 cm x 6.55 cm. A computed tomography (CT) scan of the abdomen and pelvis further characterized this lesion as a well-circumscribed, thick-walled cavity measuring 13.93 cm x 9.17 cm, consistent with a massive hepatic abscess.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Liver Abscess",
+      "rule_out_reason": "Bacterial abscess (e.g., Klebsiella pneumoniae or Enterobacteriaceae) was the leading consideration given the patient's uncontrolled diabetes mellitus, systemic signs of infection, lack of recent international travel (>2 years), and absence of preceding dysentery, which prompted initial broad-spectrum coverage with cefepime and vancomycin.",
+      "quote": "Initially, the patient was treated with cefepime (2 g IV every 12 hours) and vancomycin (1 g IV every 12 hours) for three days. After reviewing the CT scan results, the treatment regimen was switched to ceftriaxone (2 g IV every 24 hours) and metronidazole (500 mg IV every eight hours)."
+    },
+    {
+      "candidate": "Cystic Hepatic Neoplasm / Biliary Cystadenoma",
+      "rule_out_reason": "A massive complex cystic mass in the right hepatic lobe exceeding 14 cm can mimic a cystic hepatobiliary neoplasm or necrotic metastasis, but acute fever, jaundice, elevated liver enzymes, and suppurative liquefaction on CT favored an infectious abscess.",
+      "quote": "Diagnostic imaging included an abdominal ultrasound revealing a large complex cystic lesion in the right lobe of the liver, measuring 14.39 cm x 6.55 cm (Figure 1). A computed tomography (CT) of the abdomen and pelvis further characterized this lesion as measuring 13.93 cm x 9.17 cm, suggestive of a significant liver abscess (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Interventional CT-guided percutaneous catheter drainage coupled with definitive positive serological testing for Entamoeba histolytica established the diagnosis of an amebic liver abscess, leading to targeted treatment with metronidazole and the luminal agent paromomycin with near-complete radiologic resolution.",
+      "quote": "The abscess was later identified as amebic in origin after the serological testing came back positive for E. histolytica, leading to the addition of paromomycin (1,000 mg every eight hours) for seven days to the treatment regimen. A CT scan three months after treatment showed a near-complete resolution of the hepatic abscess (Figure 4)."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Compliant with Stanford MedCaseReasoning guidelines. The case prompt ends at the admission imaging and triage laboratory evaluation before percutaneous catheter drainage and serologic results. Zero spoilers or pathogen names."
+}

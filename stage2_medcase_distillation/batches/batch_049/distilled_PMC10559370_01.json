@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10559370_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An immunocompetent 11-year-old child presents with progressive headache, ataxic hemiparesis, and a 'thalamic hand' dystonia due to a solitary, deeply seated, intra-axial heterogeneous thalamic mass. Without systemic symptoms (fever, night sweats, weight loss) or chest involvement, the presentation closely mimics a pediatric high-grade central nervous system malignancy (such as a primitive neuroectodermal tumor or high-grade glioma), requiring tissue biopsy to reveal a tuberculoma.\n2. Admission Breakpoint: The breakpoint is reached on Day 2 following baseline laboratory workup (showing mildly elevated ESR of 25 mm/h) and brain MRI revealing an ill-defined, heterogeneous lobulated intra-axial thalamic mass with vasogenic edema, strictly prior to frame-based stereotactic biopsy, histopathological review, and IGRA testing.\n3. Differential Distinctions: High-grade glioma or supratentorial primitive neuroectodermal tumor (PNET) share identical imaging characteristics of intra-axial heterogeneous mass lesions with prominent edema, but biopsy confirms necrotizing caseating granulomas without neoplastic atypia. Fungal granulomas (cryptococcosis, aspergillosis) present identically in the deep gray matter but yield positive Grocott methenamine silver stains.",
+  "case_prompt": "An 11-year-old female presented to the outpatient clinic with a 2- to 3-month history of progressively worsening headache and right-sided bodily weakness. Her medical, pharmacological, and family histories were unremarkable. On physical examination, neurological assessment demonstrated right-sided hemiparesis with motor power graded at 4/5 (Medical Research Council scale) in both the right upper and lower extremities, accompanied by an ipsilateral extensor (upgoing) plantar response. She exhibited an ataxic gait and focal dystonia affecting the right upper extremity, characteristic of a 'thalamic hand'. Baseline blood investigations, including standard serum biochemistry, revealed a mildly elevated erythrocyte sedimentation rate (ESR) of 25 mm/h. Initial non-contrast computed tomography (CT) of the head revealed a hypodense mass in the thalamic region. Subsequent magnetic resonance imaging (MRI) of the brain demonstrated an ill-defined, intra-axial, heterogeneous lobulated lesion with crenated margins involving the thalamus and the posterior limb of the adjacent internal capsule, with surrounding vasogenic edema exerting local mass effect.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Supratentorial Primitive Neuroectodermal Tumor (PNET) / High-Grade Glioma",
+      "rule_out_reason": "In a child presenting with subacute hemiparesis and a deep-seated heterogeneous thalamic mass with extensive vasogenic edema, pediatric CNS malignancies (high-grade glioma or PNET) were the primary working differential; however, stereotactic biopsy revealed caseating granulomatous inflammation devoid of malignant cells.",
+      "quote": "Considering the patient's clinical history and young age, the radiologist reported the differentials as a supratentorial primitive neuroectodermal tumor, extraventricular neurocytoma, or any other high-grade glioma."
+    },
+    {
+      "candidate": "Extraventricular Neurocytoma / Fungal Granuloma",
+      "rule_out_reason": "A deep intra-axial mass could represent a rare neurocytoma or a fungal granuloma in the basal ganglia/thalamus; however, histopathology showed non-neoplastic necrotizing granulomas and Grocott methenamine silver stains were negative for fungal structures.",
+      "quote": "Immunohistochemical staining was positive for CD3 (indicating reactivated T-cells), CD20 (indicating reactivated B cells), negative for Grocott methenamine silver stain (fungus), and negative for Ziehl-Neelsen stain."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Stereotactic biopsy microspecimens established necrotizing granulomatous inflammation with caseous necrosis, confirmed by positive interferon-gamma release assay and complete clinical and radiological resolution following anti-tubercular therapy.",
+      "quote": "Biopsy microspecimens revealed caseous necrosis and necrotizing granulomatous inflammation. Histologically, scattered granulomas comprised epithelioid histiocytes with admixed lymphocytes, plasma cells, and giant cells were observed."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Zero-leakage admission breakpoint stops after brain MRI and triage ESR, omitting stereotactic biopsy, histopathology, IGRA, and antitubercular drug regimens. Differential candidates and pivot are corroborated by verbatim source quotes."
+}

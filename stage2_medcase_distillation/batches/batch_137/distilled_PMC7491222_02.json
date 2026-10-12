@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7491222_02",
+  "disease": "Echinococcosis",
+  "think": "<think>\n1. Core Clinical Tension: A patient with multiple sclerosis receiving lymphocyte-depleting alemtuzumab therapy presents with dyspepsia, hypochromic anemia, lymphopenia, extreme hyper-IgE (>=1000 kU/L), and cystic mass lesions causing inferior vena cava compression. The core challenge is differentiating post-alemtuzumab secondary autoimmune diseases or retroperitoneal neoplasms from opportunistic parasitic cestode cyst development with life-threatening vascular obstruction.\n2. Admission Breakpoint: The breakpoint stops after initial abdominal ultrasound, CT-phlebography demonstrating IVC compression by cystic lesions, and baseline laboratory panels (CBC showing hypochromic anemia and lymphopenia, total IgE >=1000 kU/L). Specific Echinococcus serology and albendazole therapy are confirmatory and post-breakpoint.\n3. Differential Distinctions: Secondary autoimmune disease (such as the patient's prior drug-induced iridocyclitis) or lymphoproliferative neoplasm does not produce fluid-filled cystic lesions or severe hyper-IgE. Non-parasitic simple cysts do not provoke severe IgE elevation or invasive vascular compression. Positive anti-Echinococcus multilocularis antibodies confirm echinococcosis.\n</think>",
+  "case_prompt": "<case_prompt>\nA female patient with multiple sclerosis, previously treated with alemtuzumab complicated by recurrent bilateral acute iridocyclitis, presents two weeks following her second cycle of alemtuzumab with a dyspeptic syndrome persisting for several days. Abdominal ultrasound examination and CT-phlebography demonstrate cystic lesions causing extrinsic compression of the inferior vena cava (IVC). Laboratory investigations show hypochromic anemia with a hemoglobin level of 90 g/L, marked lymphopenia of 0.65 x 10^9/L, and an elevated total serum IgE level >=1000 kU/L (reference range: 0-100 kU/L).\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Secondary Autoimmune Disease / Lymphoproliferative Disorder",
+      "rule_out_reason": "Alemtuzumab therapy frequently induces secondary autoimmune complications (such as the patient's earlier iridocyclitis); however, imaging demonstrated discrete fluid-filled cystic lesions compressing the IVC rather than solid lymphadenopathy or autoimmune infiltration.",
+      "quote": "Recurrent acute iridocyclitis was judged as a secondary autoimmune disease associated with ALEM treatment"
+    },
+    {
+      "candidate": "Simple / Non-parasitic Hepatic or Retroperitoneal Cysts",
+      "rule_out_reason": "Congenital or simple solitary cysts are benign epithelial structures that do not trigger profound systemic immune activation or extreme IgE elevation (>=1000 kU/L).",
+      "quote": "Laboratory tests showed IgE elevated to >=1000 kU/L (0-100), hypochromic anaemia (HGB 90 g/L) and lymphopaenia (0.65 x 109/L)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serological demonstration of elevated antibodies against Echinococcus multilocularis in combination with cystic inferior vena cava compression and profound hyper-IgE, leading to initiation of albendazole antiparasitic therapy.",
+      "quote": "Additional laboratory testing revealed an elevation of serum antibodies against Echinococcus multilocularis, so the patient started antiparasitic treatment with 400 mg of albendazole daily."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission triage prompt stopping prior to Echinococcus serology and albendazole. Complete differential with direct source quotes. Audit flags NONE."
+}

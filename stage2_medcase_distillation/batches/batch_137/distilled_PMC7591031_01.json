@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7591031_01",
+  "disease": "Talaromycosis",
+  "think": "<think>\n1. Core Clinical Tension: A 49-year-old male farmer from Guangxi with systemic lupus erythematosus on maintenance oral prednisone presents with persistent fever, cough, and fatigue unresponsive to 3 weeks of meropenem. The clinical tension lies in distinguishing an active severe lupus flare (manifested by eyelid erythema, oral ulcers, proteinuria, and hypocomplementemia) or resistant nosocomial bacterial sepsis from disseminated opportunistic dimorphic fungal infection (Talaromyces marneffei) facilitated by severe CD4 lymphopenia (95 cells/microL).\n2. Admission Breakpoint: The breakpoint stops after initial admission physical examination (eyelid erythema, mouth ulcers, forearm ecchymoses) and baseline laboratory evaluations (CBC showing leukopenia 3.65 x 10^9/L, anemia 85.8 g/L, thrombocytosis 649.2 x 10^9/L, elevated ESR >140 mm/hr and CRP 38.99 mg/L, proteinuria 2655 mg/24h, ANA+, anti-SS-A+, low C3/C4, negative HIV serology, ALT 144 U/L, AST 677 U/L, abnormal coagulation, CD4 count 95 cells/microL), prior to sputum smear hyphae, chest CT findings, and definitive fungal cultures.\n3. Differential Distinctions: Severe active SLE flare with lupus pneumonitis was initially diagnosed and treated with pulse methylprednisolone, but the pulmonary disease worsened with progressive infiltrates and hemoptysis. Multidrug-resistant bacterial septicemia was excluded by lack of response to 3 weeks of meropenem. Definitive diagnosis of talaromycosis was established by isolation of Talaromyces marneffei from sputum and bone marrow cultures.\n</think>",
+  "case_prompt": "<case_prompt>\nA 49-year-old male farmer living in Guangxi, with a two-month history of systemic lupus erythematosus (SLE) treated with oral prednisone (30 mg/day), is referred for further evaluation due to recurrent fever, cough, and fatigue refractory to a three-week course of intravenous meropenem. On physical examination, he presents with annular erythema of the inner canthus and eyelids, an oral mucosal ulcer, and extensive ecchymosis over both forearms. Routine blood examination shows a white blood cell count of 3.65 x 10^9/L (81.4% neutrophils), hemoglobin of 85.80 g/L, and platelet count of 649.20 x 10^9/L. Inflammatory markers are elevated with a C-reactive protein of 38.99 mg/L and erythrocyte sedimentation rate >140 mm/hour. A 24-hour urine collection reveals proteinuria of 2655.0 mg. Immunological tests demonstrate positive anti-nuclear antibody and anti-SS-A, normal anti-dsDNA titers, and decreased complement levels (C3: 0.519 g/L; C4: 0.125 g/L). Anti-HIV serology is negative. Liver function tests show transaminase elevation with alanine aminotransferase of 144 U/L and aspartate aminotransferase of 677 U/L. Coagulation parameters are deranged with a thrombin time >120 seconds and fibrinogen of 0.69 g/L. The CD4+ T-lymphocyte count is severely reduced at 95 cells/microL.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Active Systemic Lupus Erythematosus (Lupus Pneumonitis / Lupus Nephritis Flare)",
+      "rule_out_reason": "The constellation of eyelid erythema, oral ulceration, high-grade proteinuria, hypocomplementemia, and high ESR suggested active lupus with pulmonary involvement; however, immunosuppression with intravenous methylprednisolone failed to resolve pulmonary disease and nine days later chest CT demonstrated progressive infiltration and pleural effusion with subsequent hemoptysis.",
+      "quote": "A diagnosis of active SLE with lupus nephritis, pneumonia, and septicemia was established.\nHe received intravenous methylprednisolone (80 mg/day), empirical intravenous antibacterial (meropenem 1gq8h), and antifungal (fluconazole 200 mg/day). His temperature subsequently returned to normal. However, his platelet count progressively declined to 42.4 x 109/L and he developed hemoptysis. Nine days post-admission, chest CT showed increased infiltration and pleural effusion."
+    },
+    {
+      "candidate": "Refractory Bacterial Sepsis / Severe Nosocomial Pneumonia",
+      "rule_out_reason": "Prior isolation of Gram-negative bacteria from blood cultures raised concern for persistent bacterial septicemia; ruled out by complete lack of response to an extensive three-week course of intravenous meropenem.",
+      "quote": "During hospitalization, Gram-negative bacteria were isolated from his blood culture and antibiotic (meropenem) for septicemia administered during a period of 3 weeks without improvement."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microbiological isolation of thermal dimorphic fungus Talaromyces marneffei from sputum and bone marrow cultures in a severely immunosuppressed HIV-negative farmer from an endemic region, leading to definitive treatment with amphotericin B and voriconazole.",
+      "quote": "Finally, the sputum and bone marrow cultures were positive for T. marneffei."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly maintained. Zero pathogen names, zero fungal smear or culture findings in case_prompt. Direct verbatim quotes from source text in diagnostic_reasoning. Audit flags NONE."
+}

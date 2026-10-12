@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7436343_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 26-year-old male 7 days following major restorative pelvic surgery (proctectomy and ileal pouch-anal anastomosis) develops acute respiratory failure, surgical drain site hemorrhage, extreme hemoconcentration (hematocrit 67.8%), profound thrombocytopenia (platelets 9 x 10^9/L), and massive third-space plasma leakage (pleural effusions and ascites). In the surgical setting, severe acute bleeding, hypoxemia, and fluid collections are almost universally ascribed to surgical catastrophe (postoperative hemorrhage, intra-abdominal sepsis, anastomotic dehiscence) or pulmonary embolism, masking severe tropical arboviral plasma leakage.\n2. Admission Breakpoint: The breakpoint occurs on postoperative day 7 when the patient develops hypoxia, drain-site oozing, and bedside ultrasound demonstrates bilateral effusions and ascites alongside extreme hemoconcentration and severe thrombocytopenia, immediately prior to send-out dengue serological testing (IgM and IgG).\n3. Differential Distinctions: Pulmonary embolism vs. Postoperative intra-abdominal sepsis / anastomotic leak / surgical hemorrhage vs. Severe dengue (dengue hemorrhagic fever). Normal lower limb CT pulmonary angiogram, non-tender abdomen with functioning pouch, and extreme hemoconcentration with marked thrombocytopenia pointed toward viral capillary leak syndrome rather than simple surgical bleeding or sepsis.",
+  "case_prompt": "A 26-year-old male who underwent rectal stump excision and ileal pouch-anal anastomosis 6 days previously presents with acute deterioration on postoperative day 7. His immediate postoperative course was complicated on day 2 by transient fever, tachycardia, and hypoxemia, which resolved with supportive care after CT pulmonary angiography was negative for pulmonary embolism (showing bilateral basal atelectasis/consolidation). The surgical drain was removed on postoperative day 4. On postoperative day 6, bleeding was noted from the drain site. On postoperative day 7, he develops acute respiratory distress with oxygen saturation falling to 88% on ambient air, accompanied by persistent oozing from the drain site. He is afebrile with stable hemodynamics and preserved urine output. Abdominal examination reveals a soft, non-tender abdomen with a normally functioning ileostomy. Laboratory evaluation demonstrates extreme hemoconcentration and profound thrombocytopenia: white blood cell count 4.4 x 10^9/L, hemoglobin 24.2 g/dL, hematocrit 67.8%, and platelet count 9 x 10^9/L. C-reactive protein is 290 mg/L, liver enzymes are mildly elevated, and renal function is normal. Bedside ultrasound examination reveals bilateral moderate-to-massive pleural effusions and moderate ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Embolism (PE)",
+      "rule_out_reason": "Postoperative respiratory distress, tachycardia, and hypoxia raised high suspicion for pulmonary thromboembolism; however, CT pulmonary angiography excluded vascular occlusion.",
+      "quote": "A computed tomography (CT) pulmonary angiogram was performed suspecting a pulmonary embolism which was negative. However, there was bilateral basal consolidation."
+    },
+    {
+      "candidate": "Postoperative Intra-abdominal Sepsis or Anastomotic Leak",
+      "rule_out_reason": "Acute drain-site hemorrhage, respiratory failure, and free peritoneal fluid mimicked an anastomotic dehiscence or surgical hematoma; however, the abdomen was soft and non-tender, the ileostomy functioned normally, and extreme hemoconcentration (hematocrit 67.8%) indicated systemic vascular hyperpermeability rather than localized surgical sepsis.",
+      "quote": "His abdomen was nontender, and ileostomy was functioning normally. Ultrasound scan showed bilateral moderate-to-massive pleural effusion and moderate ascites."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The constellation of profound plasma leakage (massive pleural effusions and ascites with hematocrit 67.8%), critical defervescence, severe thrombocytopenia (platelets 9 x 10^9/L), and positive dengue IgM and IgG serology confirmed dengue hemorrhagic fever.",
+      "quote": "The dengue IgM and IgG were positive. He was managed for dengue haemorrhagic fever and bilateral lower zone pneumonia with intravenous antibiotics, targeted fluid therapy, supportive care, and monitoring."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to postoperative day 7 acute deterioration with hemoconcentration, thrombocytopenia, ascites/pleural effusions. Dengue serology, chest tube, and ICU course excluded from prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5161784_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 51-year-old Senegalese woman presents with 9 months of vague, non-specific abdominal discomfort, intermittent watery diarrhea, and unexplained marked peripheral eosinophilia (18%). Her symptoms are mild and indolent, mimicking functional bowel disease or chronic inflammatory/infectious enteritis.\n2. Admission Breakpoint: The admission triage narrative stops after initial outpatient gastroenterology clinical evaluation, physical exam, baseline comprehensive metabolic panel, complete blood count with differential, and bedside abdominal ultrasound, prior to diagnostic colonoscopy, mucosal biopsy, stool parasite analysis, and specific serological titers.\n3. Differential Distinctions: Intestinal tuberculosis and fungal enteritis (such as histoplasmosis) can present with chronic abdominal pain, diarrhea, and granulomatous mucosal lesions in patients from endemic or tropical regions. However, acid-fast bacilli (AFB) and fungal silver (GMS) stains are negative in schistosomiasis, which uniquely demonstrates characteristic trematode eggs with a prominent lateral spine surrounded by non-necrotizing granulomas in the colonic submucosa.",
+  "case_prompt": "A 51-year-old woman with a past medical history of essential hypertension and dyslipidemia was referred to the gastroenterology clinic for evaluation of chronic, non-specific abdominal pain and mild intermittent watery diarrhea of 9 months duration. She had immigrated to her current country of residence from Senegal in West Africa, where she was born and had lived for more than 30 years.\n\nOn physical examination, her vital signs were within normal limits. Her abdomen was soft, non-distended, and non-tender to deep palpation, with normal active bowel sounds. There was no palpable hepatomegaly, splenomegaly, or abdominal mass. The remainder of the physical examination was completely normal.\n\nBaseline laboratory investigations revealed a normal comprehensive metabolic panel. Complete blood count showed a hemoglobin of 13.6 g/dL, hematocrit 41%, mean corpuscular volume (MCV) of 90 fL, and a total white blood cell count of 9.5 x 10^9/L with prominent peripheral eosinophilia of 18.0% (reference range 0–8%), neutrophils 44.6%, lymphocytes 30.5%, monocytes 6.2%, and basophils 0.5%. Transabdominal ultrasound of the abdomen was normal, showing no hepatic parenchymal lesions, splenomegaly, or biliary abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intestinal Tuberculosis",
+      "rule_out_reason": "Considered because of chronic abdominal symptoms, immigrant status from West Africa, and granuloma formation in the colonic mucosa, but ruled out by negative acid-fast bacilli (AFB) stains.",
+      "quote": "Acid-fast bacilli (AFB) stain and Grocott-Gomori's methenamine silver stain (GMS) were negative."
+    },
+    {
+      "candidate": "Deep Fungal Colitis / Histoplasmosis",
+      "rule_out_reason": "Considered as an infectious cause of chronic diarrhea, marked peripheral eosinophilia, and colonic mucosal granulomatous inflammation, but Grocott-Gomori's methenamine silver stain was negative.",
+      "quote": "Acid-fast bacilli (AFB) stain and Grocott-Gomori's methenamine silver stain (GMS) were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Colonoscopy identified a sessile sigmoid polyp whose histological examination revealed submucosal granulomas containing trematode eggs with a characteristic prominent lateral spine, corroborated by positive microsomal antigen serology.",
+      "quote": "Hematoxylin and eosin section of the biopsy specimen showed non-neoplastic colonic mucosa and a hyperplastic polyp with multiple focal granuloma formation surrounding S. mansoni eggs, which were characterized by prominent lateral spine in the lamina propria and submucosa of the colonic wall with surrounding fibrosis (Fig. 2a-c)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following strict Stanford MedCaseReasoning guidelines. Zero spoilers or pathogen names in prompt. Exact quotes verified against source text."
+}

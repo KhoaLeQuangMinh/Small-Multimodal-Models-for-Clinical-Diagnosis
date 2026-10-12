@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6394360_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 84-year-old woman with myelodysplastic syndrome receiving cyclosporine presents with fever, dyspnea, and pyuria. The presentation strongly mimics a routine urinary tract infection or disease progression of hematologic malignancy, obscuring occult disseminated mycobacterial disease.\n2. Admission Breakpoint: The breakpoint is set at admission evaluation with fever (38.5°C), dyspnea, and initial urinalysis showing leukocyturia, before failure of a 7-day course of intravenous cefmetazole, thoracic CT, hepatic imaging, and sputum PCR testing.\n3. Differential Distinctions: Uncomplicated bacterial urinary tract infection fails to respond to broad-spectrum cephalosporins; progression of myelodysplastic syndrome cannot explain necrotizing mediastinal lymphadenopathy and pleural effusions; thoracic CT showing mediastinal lymphadenopathy and sputum PCR positive for Mycobacterium tuberculosis establish the diagnosis.",
+  "case_prompt": "An 84-year-old Japanese woman presented to the hospital with a history of fever and progressive dyspnea. Her past medical history was notable for diabetes mellitus, myelodysplastic syndrome (refractory anemia with excess blasts in transformation) diagnosed five months prior treated with cyclosporine (100 mg/day) and packed red blood cell transfusions, and humeral and pelvic fractures sustained five and four months prior, respectively.\n\nOn admission physical examination, her axillary temperature was 38.5°C with signs of respiratory distress. Urinalysis was performed on presentation and demonstrated significant leukocyturia, leading to an initial working diagnosis of urinary tract infection.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Urinary Tract Infection / Urosepsis",
+      "rule_out_reason": "Initial presentation of fever, dyspnea, and prominent leukocyturia led to a working diagnosis of urinary tract infection, but the patient had persistent high fevers despite completing seven days of intravenous cefmetazole (2 g/day).",
+      "quote": "As the patient presented leukocyturia, a urinary tract infection was the working diagnosis... Despite the intravenous treatment with cefmetazole (2 g/day) for 7 days, the fever did not subside."
+    },
+    {
+      "candidate": "Leukemic Progression / Malignant Infiltration of MDS",
+      "rule_out_reason": "In a patient with known RAEB-t receiving immunosuppressive therapy, new pulmonary symptoms and multiple hepatic nodules up to 15 mm raised suspicion for disease progression or secondary malignancy, but thoracic CT and microbiological evaluation identified an infectious granulomatous process.",
+      "quote": "Her past medical history included the diagnosis of diabetes mellitus, and myelodysplastic syndrome (MDS), refractory anemia with excess of blasts in transformation (RAEB-t)... She was found to have some hepatic nodules, up to 15 mm. On the thoracic computed tomography, bilateral pleural effusion and mediastinal lymphadenopathy were detected."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Thoracic computed tomography demonstrated bilateral pleural effusions and mediastinal lymphadenopathy, and sputum polymerase chain reaction (PCR) returned positive for Mycobacterium tuberculosis, confirming disseminated/miliary tuberculosis in an immunosuppressed host.",
+      "quote": "On the thoracic computed tomography, bilateral pleural effusion and mediastinal lymphadenopathy were detected. Also, the polymerase chain reaction (PCR) of her sputum was positive for Mycobacterium tuberculosis, and the diagnosis of tuberculosis (TB) was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly terminates after admission vitals and initial urinalysis showing leukocyturia, withholding CT imaging and PCR results. Zero pathogen or disease names in prompt. Verbatim quotes support all differential candidates."
+}

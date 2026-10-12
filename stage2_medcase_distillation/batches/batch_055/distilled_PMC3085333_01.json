@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3085333_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 50-year-old traveler returning from Cameroon presents with fever, jaundice, diarrhea, severe thrombocytopenia (17 x 10^9/L), and renal impairment with low-voltage QRS complexes on ECG, followed by sudden cardiovascular collapse and fatal cardiogenic shock. While severe tropical fevers with jaundice and renal dysfunction strongly evoke leptospirosis or viral hepatitis/myocarditis, Plasmodium falciparum causing fatal histologically proven acute lymphocytic myocarditis is exceptionally rare and diagnostically deceptive.\n2. Admission Breakpoint: The breakpoint is set at admission evaluation, vital signs, physical exam, and initial triage laboratory/imaging results (severe thrombocytopenia, jaundice, transaminitis, renal impairment, normal cardiac enzymes, and low-voltage ECG), immediately prior to thick/thin blood smear examination, infectious serological panels, and post-mortem histopathology.\n3. Differential Distinctions: Leptospirosis (Weil's disease) was a primary clinical look-alike given acute fever, conjunctival/systemic jaundice, renal dysfunction, and severe thrombocytopenia following tropical travel, but slide macro-agglutination testing for leptospirosis was negative. Acute viral myocarditis or zoonotic typhus/Q-fever was ruled out by negative serologies for CMV, EBV, respiratory viruses, and Coxiella burnetii. Severe falciparum malaria was established by blood film showing 20% parasitemia, with post-mortem identification of acute lymphocytic myocarditis and parasitized red blood cells in myocardial capillaries.",
+  "case_prompt": "A 50-year-old man presented with a severe febrile illness accompanied by profound malaise, headache, diaphoresis, and worsening jaundice of five days duration. Two weeks prior to illness onset, he had returned from a business trip to Cameroon; he had not taken travel chemoprophylaxis. He was obese and had a history of heavy alcohol consumption, with no prior history of hypertension or cardiovascular disease. Upon admission, he additionally reported nausea, vomiting, and diarrhea.\n\nOn physical examination, he was fully conscious and normotensive (blood pressure 120/80 mmHg), but had tachycardia and severe jaundice. Oxygen saturation was 95% on room air, and neurological examination was normal.\n\nInitial laboratory tests revealed profound thrombocytopenia (platelet count 17 x 10^9/L), hemoglobin of 14.6 g/dL, and white blood cell count of 10 x 10^9/L. Liver function tests showed hyperbilirubinemia and moderate transaminase elevations. Blood urea and creatinine indicated moderate renal impairment, and blood glucose was elevated. Coagulation screening showed no evidence of disseminated intravascular coagulation, and cardiac enzymes were normal.\n\nChest radiography was normal. An electrocardiogram (ECG) demonstrated low-amplitude QRS complexes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis (Weil's Disease)",
+      "rule_out_reason": "Heavily considered in a returning traveler with high fevers, severe jaundice, acute renal impairment, and marked thrombocytopenia, but ruled out by negative slide macro-agglutination testing.",
+      "quote": "the slide macro-agglutination test for leptospirosis were negative."
+    },
+    {
+      "candidate": "Acute Viral / Atypical Myocarditis or Zoonotic Infection",
+      "rule_out_reason": "Considered because of fever, tachycardia, and low-voltage QRS complexes on ECG, but extensive serologic screening for cardiotropic viruses, Coxiella burnetii, Chlamydia, Mycoplasma, and enteric pathogens was negative.",
+      "quote": "Serological testing for Cytomegalovirus, Epstein-Barr virus, seasonal influenza viruses A and B, adenoviruses, Chlamydia psittaci, Coxiella burnetii, Mycoplasma pneumoniae, respiratory syncytial virus, the Widal-Wright reaction and the slide macro-agglutination test for leptospirosis were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood film examination demonstrated a heavy 20% parasitemia of Plasmodium falciparum, and post-mortem evaluation identified severe acute lymphocytic myocarditis with myocardiolysis and parasitized erythrocytes within the myocardial microvasculature.",
+      "quote": "A blood film revealed a heavy P. falciparum parasitaemia of 20%."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative stopped prior to blood smear review. Cardiac histopathology, serologic panel results, and autopsy data quarantined to diagnostic reasoning."
+}

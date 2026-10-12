@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213628_02",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 25-year-old pregnant woman presenting with abdominal and back pain and sore throat. In pregnancy, abdominal and back discomfort are frequently dismissed as benign musculoskeletal strain, gestational reflux, or early labor, creating risk of missing an active parasitic infection acquired through dietary aquatic plant consumption.\n2. Admission Breakpoint: Initial clinical evaluation and dietary history of raw aquatic plant consumption, prior to diagnostic serology, stool microscopy, and PCR.\n3. Differential Distinctions: Pregnancy-related musculoskeletal pain or pyelonephritis commonly present with back and abdominal discomfort in pregnancy, but do not explain sore throat and are unrelated to aquatic plant ingestion. Acute viral upper respiratory infection accounts for pharyngitis but not chronic abdominal pain. Fascioliasis acquired via watercress consumption causes juvenile fluke migration with abdominal pain and pharyngeal irritation (halzoun syndrome).",
+  "case_prompt": "A 25-year-old pregnant woman from Darbid Village in Delfan County, Lorestan Province, western Iran, presents with a 1-month history of abdominal and back pain accompanied by a sore throat. She has not experienced significant weight loss and has no cutaneous manifestations.\n\nEpidemiological history is notable for the consumption of raw aquatic plants, particularly \"Balmak\" (watercress), over the preceding month.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pregnancy-related musculoskeletal pain / Pyelonephritis",
+      "rule_out_reason": "Abdominal and back pain are common obstetric complaints, but the concurrent sore throat and known dietary ingestion of raw watercress prompted investigation for a foodborne parasitic infection.",
+      "quote": "She was pregnant and had a history of abdominal and back pain, sore throat and consumptions of aquatic plants especially \"Balmak\" in a recent month."
+    },
+    {
+      "candidate": "Acute viral pharyngitis / Peptic disease of pregnancy",
+      "rule_out_reason": "Sore throat and mild epigastric/abdominal discomfort could mimic a viral illness or gestational dyspepsia, but the lack of systemic viral features and chronic 1-month duration pointed toward fluke infestation.",
+      "quote": "She had no significant weight loss and cutaneous manifestation. All diagnostic measures were conducted similar to previous case."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic evaluation demonstrated positive ELISA and stool microscopy identifying Fasciola eggs, confirmed by PCR amplification and sequencing matching Fasciola spp. (GenBank accession MF187502).",
+      "quote": "All diagnostic measures were conducted similar to previous case. The patient's related sequence with accession number MF187502 was recorded at the GenBank."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed after history and exposure. Zero spoilers or lab tests in case_prompt. Direct quotes verified verbatim from case text."
+}

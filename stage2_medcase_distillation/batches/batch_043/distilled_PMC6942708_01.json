@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6942708_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 47-year-old immigrant from the Philippines presents with chronic diarrhea, profound weight loss, and segmental skip-lesion colitis, initially diagnosed as Crohn's disease based on mucosal biopsies lacking granulomas. Escalation to anti-TNF therapy with infliximab triggers life-threatening septic shock, biliary obstruction, serositis, and intestinal perforation, exposing the catastrophic danger of confusing intestinal mycobacterial infection with inflammatory bowel disease.\n2. Admission Breakpoint: Presentation to the emergency department one month after starting infliximab in septic shock (blood pressure 73/51 mmHg, lactic acid 5.3 mmol/L, bandemia) with CT revealing ascites, pleural effusions, hepatic lesions, and ileocecal thickening, immediately prior to paracentesis/thoracentesis, liver biopsy, and emergency laparotomy.\n3. Differential Distinctions: Crohn's disease was the working diagnosis given skip lesions, deep ulcerations, and non-granulomatous inflammation on mucosal biopsies, but anti-TNF blockade triggered fulminant systemic collapse rather than remission. Disseminated cholangiocarcinoma / metastatic gastrointestinal malignancy was considered due to massive 60 lb weight loss, hepatic hypodensities, and a biliary confluence mass, but cytology/biopsies lacked malignant cells. Intestinal and disseminated tuberculosis was unmasked by TNF inhibition, manifesting with necrotizing caseous granulomas and positive acid-fast staining across multiple tissue and fluid compartments.",
+  "case_prompt": "A 47-year-old male born in the Philippines who immigrated to the United States two years prior presented to the emergency department in shock. Over the preceding seven months, he had suffered from chronic abdominal pain, an unintentional 60-pound weight loss, severe fatigue, and non-bloody diarrhea. An outpatient colonoscopy performed months earlier had demonstrated segmental areas of deep ulceration, mucosal edema, and loss of vascularity at the hepatic flexure and ascending colon, with biopsies showing lymphoplasmacytic infiltration without granulomas. He had been diagnosed with inflammatory bowel disease and treated with corticosteroids and mesalamine without improvement, leading to treatment escalation with a biologic tumor necrosis factor (TNF)-alpha inhibitor, infliximab, one month prior to this encounter. On presentation, the patient was obtunded and in septic shock with a blood pressure of 73/51 mmHg and high fevers. Laboratory results demonstrated a white blood cell count of 8.7 x 10⁹/L with pronounced bandemia, serum albumin of 1.5 g/dL, lactic acid of 5.3 mmol/L, and a cholestatic pattern of liver injury. Emergency computed tomography (CT) of the chest, abdomen, and pelvis revealed marked ascites, large bilateral pleural effusions, multiple hypodense hepatic lesions associated with an obstructing mass at the confluence of the bile ducts, and diffuse transmural thickening of the small and large bowel with marked involvement of the terminal ileum and cecum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Crohn's disease with secondary septic complications",
+      "rule_out_reason": "Considered because segmental inflammatory ulcerations, skip lesions, and non-granulomatous inflammation on initial colonoscopy mimic inflammatory bowel disease; however, anti-TNF therapy with infliximab triggered catastrophic clinical deterioration, multiorgan dissemination, and intestinal perforation containing necrotizing granulomas positive for acid-fast bacilli.",
+      "quote": "The patient was diagnosed with Crohn's disease and was treated with prednisone and mesalamine... claiming that his symptoms had significantly worsened since starting the infliximab."
+    },
+    {
+      "candidate": "Metastatic cholangiocarcinoma / disseminated malignancy",
+      "rule_out_reason": "Considered given severe constitutional cachexia (60-pound weight loss), multiple hypodense liver lesions, and an obstructing mass at the biliary confluence; however, diagnostic paracentesis, thoracentesis, and liver core biopsy were negative for neoplastic cells.",
+      "quote": "multiple hypodense lesions within the liver with an obstructing mass at the confluence of the bile ducts... These studies were negative for malignant cells"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The fulminant reactivation and dissemination following anti-TNF inhibition in an immigrant from an endemic region, with diagnostic thoracentesis, paracentesis, and exploratory laparotomy revealing extensive caseating granulomatous disease teeming with acid-fast bacilli in the ileocecal region.",
+      "quote": "Surgery revealed extensive adhesions associated with dense granulomatous disease and perforation of the small bowel and right colon... pathology of the terminal ileum and right colon showed extensive caseating and noncaseating granulomatous inflammation that stained positive for AFBs in a skip lesion pattern consistent with intestinal tuberculosis (ITB)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at emergency admission for septic shock and multi-system CT imaging prior to invasive fluid analysis and laparotomy. Zero spoilers in case prompt. Verbatim quotes match article."
+}

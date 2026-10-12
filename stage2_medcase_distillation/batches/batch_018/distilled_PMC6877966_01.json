@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6877966_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 19-year-old male with underlying sickle cell anemia presents with high fever, acute drop in hemoglobin, and profound hyperbilirubinemia, creating diagnostic overlap between an acute sickle cell hemolytic/hepatic crisis and a hyperparasitemic mosquito-borne infection in an endemic region.\n2. Admission Breakpoint: The breakpoint occurs following initial resuscitation, triage laboratory testing (showing severe hemolytic anemia, marked hyperbilirubinemia, and thrombocytopenia), baseline 12-lead ECG, and chest radiography, immediately prior to peripheral blood smear examination.\n3. Differential Distinctions: An acute sickle cell vaso-occlusive or hepatic crisis explains anemia and indirect hyperbilirubinemia but does not typically cause severe thrombocytopenia (platelets 62 x 10^3/μL) and persistent high-grade fevers in an endemic area. Acute fulminant viral hepatitis would manifest with transaminases in the thousands rather than mild transaminitis (AST 89 U/L, ALT 78 U/L).",
+  "case_prompt": "A 19-year-old male with a known history of sickle cell anemia maintained on daily folic acid presented to the emergency department in Jizan, Saudi Arabia, complaining of fever, nausea, headache, and yellowish discoloration of the sclera. He looked unwell but remained conscious and alert.\n\nOn physical examination, his body temperature was 38.5°C; heart rate, blood pressure, and respiratory rate were within normal limits. Scleral icterus was noted. Cardiopulmonary examination revealed normal first and second heart sounds with no murmurs, rubs, or gallops, and clear lung fields bilaterally. Fundoscopic examination was normal, and no focal neurologic deficits were present.\n\nInitial laboratory evaluation revealed a white blood cell count of 12.0 x 10^9/L, hemoglobin of 7.3 g/dL, mean corpuscular volume of 72 fL, platelet count of 62 x 10^3/μL, and reticulocyte count of 2.6%. Liver function tests revealed total bilirubin of 600 μmol/L, direct bilirubin of 200 μmol/L, aspartate aminotransferase 89 U/L, alanine aminotransferase 78 U/L, and alkaline phosphatase 120 IU/L. Serum chemistry demonstrated sodium 149 mmol/L, potassium 4.9 mmol/L, magnesium 0.9 mmol/L, calcium 2.3 mmol/L, phosphate 1.4 mmol/L, urea 3.7 mmol/L, creatinine 78 μmol/L, and random blood glucose 7.2 mmol/L. A baseline 12-lead electrocardiogram demonstrated normal sinus rhythm with normal intervals, and a plain chest radiograph was clear.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Sickle Cell Hemolytic or Hepatic Crisis",
+      "rule_out_reason": "While patients with sickle cell disease frequently experience hemolytic crises with jaundice and acute anemia, an uncomplicated sickle crisis does not explain the concurrent severe thrombocytopenia and sustained high fevers in a malaria-endemic locality.",
+      "quote": "A 19-year-old male with sickle cell anemia, being treated with folic acid, presented to the emergency department of Samtah General Hospital, Jizan, Saudi Arabia, with fever, nausea, headache, and yellowish discoloration of sclera... platelet count 62 x 103/muL"
+    },
+    {
+      "candidate": "Acute Viral Hepatitis / Fulminant Hepatic Failure",
+      "rule_out_reason": "Profound jaundice with mixed hyperbilirubinemia (total bilirubin 600 μmol/L) can indicate acute viral hepatitis; however, serum aminotransferases were only mildly elevated (AST 89 U/L, ALT 78 U/L), which is inconsistent with acute viral hepatic necrosis.",
+      "quote": "aspartate transaminase 89 U/L (normal range: 10 to 40 U/L); alanine transaminase 78 U/L (normal range: 7 to 56 U/L); total bilirubin 600 mumol/L (normal range: 1.71 to 20.5 mumol/L); direct bilirubin 200 mumol/L"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct peripheral blood film microscopy demonstrated abundant ring-form trophozoites with a 10% parasitemia index, establishing the diagnosis of severe falciparum malaria.",
+      "quote": "Peripheral blood smear revealed P. falciparum (ring form) with parasitemia index 10%... Patient was diagnosed with severe P. falciparum malaria based on clinical presentation and laboratory investigations and started on intravenous artesunate"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for severe falciparum malaria in a sickle cell patient. The admission breakpoint cleanly stops before peripheral blood smear parasitological identification and artesunate therapy."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3118057_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: The patient presented with an 18-month history of an indolent, progressive, nodular, and discharging tumefaction of the right foot with draining sinuses that had previously been misdiagnosed and treated unsuccessfully as tuberculosis. The clinical presentation exhibits the classic morphological features of mycetoma, but initial macroscopic examination revealed purulent discharge without apparent granules, raising questions regarding bacterial vs fungal etiology vs tuberculous or pyogenic osteomyelitis.\n2. Admission Breakpoint: The triage presentation concludes with the physical examination, routine triage laboratory testing (CBC, ESR, HIV, organ function tests), and plain radiographs of the right foot. It stops immediately prior to invasive sample processing, microbiological staining (Gram stain, modified Ziehl-Neelsen stain), culture, and histopathological analysis of the biopsy specimen.\n3. Differential Distinctions: Tuberculous gumma/scrofuloderma was considered but ruled out by lack of response to anti-tubercular therapy and absence of bone destruction. Pyogenic osteomyelitis was excluded by radiographic sparing of bony cortex and periosteum. Eumycetoma vs actinomycetoma is distinguished by smear microscopy demonstrating thin, branching, weakly acid-fast filamentous bacilli characteristic of aerobic actinomycetes rather than broad fungal hyphae.",
+  "case_prompt": "A 50-year-old farmer presented to the clinic with fever and a draining swelling over the dorsum of his right foot. The swelling initially began 18 months prior as a small, painless nodule approximately 1 to 2 cm in diameter without discharge. Over the subsequent 18 months, the lesion gradually enlarged to encompass the entire dorsum of the right foot. He had no significant past medical history, no recalled history of trauma or injury to the foot, and was non-diabetic and non-hypertensive. Three months prior to presentation, he had been evaluated at a local hospital and treated empirically with a two-month course of anti-tubercular medications for a suspected chronic mycobacterial process; however, therapy was discontinued due to a complete lack of clinical improvement.\n\nOn physical examination, the patient had a mild fever but was otherwise systemically stable. Examination of the right lower extremity revealed gross deformity and tumefaction across the entire dorsum of the right foot with intense overlying erythema. Numerous elevated, well-demarcated nodular lesions of varying sizes were noted alongside multiple draining sinus openings. The sinus openings were inflamed and largely obstructed by dried purulent crusts. The foot was tender to palpation. Dilated superficial veins were visible on the right leg, and pitting edema extended proximally to the level of the knee. The discharge was described as yellowish, purulent, and foul-smelling, without grossly apparent grains or granules.\n\nTriage laboratory evaluation revealed a hemoglobin level of 10 g/dL, total leukocyte count of 11,900/mm³ with 80% polymorphonuclear leukocytes, and an erythrocyte sedimentation rate (ESR) of 40 mm/h. Testing for HIV was seronegative. Liver function tests, renal function tests, and serum electrolytes were all within normal limits.\n\nPlain radiographs (anteroposterior and lateral views) of the right foot demonstrated soft-tissue density occupying the interphalangeal and metatarsal joint spaces, with widening of the second and third interphalangeal joint spaces. There was no evidence of cortical erosion, periosteal reaction, or bone involvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous / Osseous Tuberculosis",
+      "rule_out_reason": "Considered due to the chronic indolent course with draining sinus tracts in an endemic region; ruled out by failure of two months of empirical anti-tubercular therapy, normal bone architecture on radiographs, and identification of branching filaments rather than typical mycobacteria.",
+      "quote": "But 3 months back at the local hospital the patient was diagnosed as having tuberculosis and treated with anti-tubercular drugs. However, there was no improvement even after 2 months of treatment, hence discontinued the treatment."
+    },
+    {
+      "candidate": "Pyogenic Osteomyelitis",
+      "rule_out_reason": "Considered given the foul-smelling purulent drainage, local erythema, and soft-tissue deformity, but ruled out by plain radiographs showing complete absence of bone involvement.",
+      "quote": "The radiological examination of antero-posterior and lateral view of right foot showed soft tissue density occupying the inter-pharyngeal and metatarsal joint space causing spreading of 2nd and 3rd inter-pharyngeal joint space and there was no bone involvement."
+    },
+    {
+      "candidate": "Eumycetoma",
+      "rule_out_reason": "Considered given the classic pedal tumefaction and sinus tract architecture; ruled out because no fungal granules were observed, and microscopy subsequently showed fine bacterial filaments rather than fungal hyphae.",
+      "quote": "Discharge was yellowish, purulent and foul smelling without any apparent granules [Figure 1]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Aspiration smear demonstrated thin, long, branching, Gram-positive filamentous bacilli that were weakly acid-fast on modified Ziehl-Neelsen stain, with culture confirming Nocardia asteroides, establishing the diagnosis of actinomycetoma.",
+      "quote": "In the laboratory, a smear was prepared from the sample and stained with Gram's stain, which revealed thin, long, branching, Gram-positive filamentous bacilli [Figure 2]. On modified Ziehl-Neilson stain (1% H2SO4 decolorizer) the filaments were weakly acid fast."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt stops prior to microbiological staining, cultures, and biopsy. Spoilers, pathogen species, and treatment response excluded from prompt."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10197005_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 26-year-old Nepalese female presents with occipital headache and an isolated left oculomotor nerve palsy (ptosis, pupillary dilation, adduction paresis). While a pupil-involving third nerve palsy immediately raises emergency suspicion for a posterior communicating artery aneurysm, neuroimaging identifies parenchymal ring-enhancing lesions with central calcification in the midbrain and frontal lobe. Differentiating between neurocysticercosis, CNS tuberculoma, and intracranial neoplasm in an endemic traveler is critical.\n2. Admission Breakpoint: The breakpoint is set after physical and neurological examination, normal routine blood and inflammatory markers (CBC, CMP, CRP, ESR), and brain CT/MRI showing calcified, ring-enhancing midbrain and frontal lesions, immediately prior to send-out EITB serology and initiation of corticosteroid/antiparasitic therapy.\n3. Differential Distinctions: Compressive posterior communicating artery aneurysm causes acute painful pupil-involving third nerve palsy but is ruled out by brainstem parenchymal localization. Intracranial tuberculomas share endemic geography and ring-enhancing nodular appearance with edema, but typically present with constitutional symptoms (fever, night sweats, weight loss) and elevated inflammatory markers. High-grade brainstem gliomas lack multiple punctate central calcifications and do not present with multicentric quiescent calcified lesions in the frontal cortex.",
+  "case_prompt": "A 26-year-old previously healthy Nepalese female presented with a one-week history of intermittent occipital headaches and left-sided monocular blurred vision. The headache was described as dull, without identifiable alleviating or aggravating factors. She reported no fever, nausea, vomiting, or photophobia. A comprehensive review of systems was negative for night sweats, anorexia, weight loss, respiratory symptoms, or bowel changes. Her personal history was notable for international travel to Nepal four months prior to presentation. She worked in a catering department and reported no direct handling of pork.\n\nOn physical examination, vital signs were entirely normal. Neurological examination was notable for left-sided ptosis, a dilated left pupil with sluggish light reactivity, and mild impairment in adduction of the left eye; other extraocular movements and visual fields were intact. There were no motor, sensory, or cerebellar deficits, and meningeal signs were absent. The remainder of the physical examination was normal.\n\nBaseline laboratory workup demonstrated a normal complete blood count, normal serum electrolytes, and normal renal and liver function panels. Inflammatory markers, including erythrocyte sedimentation rate and C-reactive protein, were normal.\n\nNon-contrast computed tomography of the brain revealed a 6-mm hyperdense calcified lesion in the midbrain and a 5-mm calcified lesion in the left frontal lobe without midline shift or hydrocephalus, interpreted as calcified granulomas. Contrast-enhanced magnetic resonance imaging of the brain demonstrated a midbrain ring-enhancing lesion with central nodular calcification and surrounding perilesional vasogenic edema, as well as an additional ring-enhancing nodular calcified lesion without edema in the left parasagittal frontal lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Compressive Posterior Communicating Artery (PCoA) Aneurysm",
+      "rule_out_reason": "Considered urgently because an acute pupil-involving third cranial nerve palsy with ptosis and impaired adduction represents classic mechanical compression of the oculomotor nerve by an enlarging PCoA aneurysm. Ruled out as neuroimaging localized the structural lesion to the midbrain parenchyma itself rather than the subarachnoid cisternal course of the nerve.",
+      "quote": "cranial nerve examination revealed left-sided ptosis and dilated left pupil with sluggish reaction to light. There was mild impairment in adduction, however other extraocular movements were preserved."
+    },
+    {
+      "candidate": "Central Nervous System Tuberculoma",
+      "rule_out_reason": "Considered given the patient's demographic origin and travel to an endemic area (Nepal) presenting with multiple ring-enhancing intracerebral granulomatous lesions with edema. Ruled out by the absence of constitutional B-symptoms (fever, night sweats, weight loss), entirely normal baseline inflammatory markers (ESR, CRP), and absence of basal meningeal enhancement or pulmonary focus.",
+      "quote": "She denied any sick contacts, animal exposure, history of recent infections, night sweats, weight loss, loss of appetite or change in bowel habits... Her inflammatory markers including C-reactive protein and ESR were also normal."
+    },
+    {
+      "candidate": "Brainstem Neoplasm / Glioma",
+      "rule_out_reason": "Considered because an intrinsic midbrain ring-enhancing mass with extensive perilesional edema can represent a primary malignant brainstem neoplasm. Ruled out by the presence of dense central nodular calcifications within discrete small lesions across distinct lobes (midbrain and frontal) without midline shift or infiltrative progression.",
+      "quote": "Computed tomography (CT) scan of the brain showed a focal hyperdense calcified lesion measuring 6 mm in the midbrain and a calcified focal lesion measuring 5 mm in the left frontal lobe. There was no midline shift or hydrocephalus, and the lesions were interpreted as calcified granulomas"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when brain MRI demonstrated multi-stage calcified and ring-enhancing nodular parenchymal lesions, and confirmatory enzyme-linked immunoelectrotransfer blot (EITB) for anticysticercal antibodies returned positive, confirming neurocysticercosis.",
+      "quote": "Another ring-enhancing nodular calcified lesion without edema was reported in the left parasagittal frontal lobe giving an overall impression of granulomatous disease consistent with NCC (Fig. 2). Due to these findings, enzyme-linked immunoelectrotransfer blot (EITB) for anticysticercal antibodies was sent and was reportedly positive."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed following brain MRI and baseline labs prior to EITB serology. Zero pathogen spoilers in case_prompt. Direct quotes from case text verify differential rule-outs and diagnostic pivot. Target canonical disease Neurocysticercosis verified."
+}

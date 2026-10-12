@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10589006_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old immigrant female presents with acute headache, neck pain, vomiting, and photophobia of only 3 days duration. She is afebrile and lacks classical signs of meningismus (negative Kernig and Brudzinski signs). Initial CSF reveals a mixed lymphocytic-neutrophilic pleocytosis (48% lymphocytes, 47% neutrophils) with marked hypoglycorrhachia (glucose 26 mg/dL) and elevated protein (147 mg/dL). Neuroimaging reveals over 40 submillimeter enhancing parenchymal brain foci and dural enhancement matching submillimeter pulmonary nodules. The acute symptom onset mimics viral or pyogenic bacterial meningoencephalitis, and the initial serum interferon-gamma release assay (IGRA) was falsely negative, creating acute clinical tension against mycobacterial infection.\n\n2. Admission Breakpoint: Evaluation pauses after the initial admission triage, baseline blood labs (normal CBC and chemistry panel), initial non-contrast head CT, chest CT (bilateral submillimeter nodules with calcifications), admission lumbar puncture (CSF cell count, differential, protein, and glucose), and contrast-enhanced brain MRI, strictly prior to multiplex viral/bacterial PCR panels, serum IGRA, sputum/CSF acid-fast bacilli smears and cultures, and histopathological cytological review.\n\n3. Differential Distinctions: Acute viral and pyogenic bacterial meningitis are ruled out by negative multiplex meningeal PCR and lack of response to empirical cephalosporins, vancomycin, ampicillin, and acyclovir. Fungal meningoencephalitis (e.g., cryptococcal or endemic dimorphic fungi) is excluded by negative fungal cultures. A false-negative serum IGRA does not exclude central nervous system tuberculosis, which was ultimately confirmed by CSF culture.",
+  "case_prompt": "A 52-year-old female born in Guatemala presented to the emergency department complaining of severe diffuse headache, right-sided neck pain, nausea, vomiting, and photophobia that had started 3 days prior to arrival. She denied recent international travel or preceding respiratory illness, but noted an epidemiologic risk factor in that her spouse had a history of multiple incarcerations.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. She had tenderness over the paravertebral and upper thoracic spine; however, Kernig and Brudzinski signs were negative, and there were no focal neurologic deficits.\n\nInitial laboratory workup revealed a normal complete blood count with no leukocytosis or anemia, and serum electrolytes, renal function, and liver chemistries were all within normal limits. An unenhanced computed tomography (CT) scan of the head showed no evidence of acute intracranial hemorrhage, mass effect, hydrocephalus, or midline shift. A chest CT scan demonstrated numerous submillimeter-sized bilateral pulmonary nodules accompanied by scattered calcified granulomas.\n\nA lumbar puncture was performed in the emergency setting and yielded clear, colorless cerebrospinal fluid (CSF). CSF analysis revealed a white blood cell count of 278/mm³, a red blood cell count of 35/mm³, a significantly depressed glucose concentration of 26 mg/dL (reference 40–70 mg/dL), and an elevated total protein concentration of 147 mg/dL (reference 15–45 mg/dL). Manual differential of the CSF pleocytosis demonstrated 48% lymphocytes, 47% neutrophils, and 3% mononuclear cells. Magnetic resonance imaging (MRI) of the brain with intravenous contrast demonstrated more than 40 submillimeter enhancing nodules scattered throughout the supratentorial and infratentorial brain parenchyma and brainstem, with prominent diffuse dural enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial or Viral Meningoencephalitis",
+      "rule_out_reason": "Because of the rapid 3-day onset and mixed neutrophilic/lymphocytic pleocytosis, broad empirical antimicrobial therapy (vancomycin, ceftriaxone, ampicillin, acyclovir) was started, but was discontinued when multiplex CSF PCR for common bacterial and viral pathogens returned negative.",
+      "quote": "The patient was initially started on vancomycin, ceftriaxone, ampicillin and acyclovir although these were discontinued as PCR for typical viral and bacterial meningeal infectious etiologies was negative."
+    },
+    {
+      "candidate": "Fungal Meningoencephalitis (e.g., Cryptococcal or Dimorphic Mycoses)",
+      "rule_out_reason": "Disseminated fungal infections can present with miliary parenchymal brain granulomas and basilar/dural enhancement, but cerebrospinal fluid fungal cultures remained negative.",
+      "quote": "CSF fungal cultures resulted negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite an initial negative serum IGRA and negative initial AFB smears, CSF cytopathology revealed granulomatous inflammation, and the initial CSF culture on hospital day 19 grew Mycobacterium tuberculosis complex, confirming miliary tuberculous meningoencephalitis.",
+      "quote": "The next day, pathology from the initial CSF sample revealed findings suggestive of granulomatous inflammation potentially consistent with TB. On hospital day 19 initial CSF AFB culture returned positive and was sent for confirmatory testing which revealed Mycobacterium tuberculosis complex."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to Stanford MedCaseReasoning methodology. Admission prompt strictly ends before send-out PCR panels, negative IGRA, CSF cytology, and mycobacterial cultures. Verbatim quotes support all differential reasoning."
+}

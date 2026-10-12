@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5458688_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 40-year-old male presents with a painless, firm 7.5 × 8 cm plantar foot mass without draining sinuses, skin ulcerations, grains, trauma history, or barefoot walking. Normal laboratory markers and an MRI suggesting a fibrous or muscular soft-tissue tumor strongly biased the clinical team toward a soft-tissue sarcoma, concealing a deep subcutaneous chronic grain infection.\n2. Admission Breakpoint: Admission clinical evaluation terminates after physical examination, baseline routine blood investigations (CBC, ESR, alkaline phosphatase), and foot MRI, immediately prior to excisional biopsy and histopathology.\n3. Differential Distinctions: Soft-tissue malignancy was the leading working diagnosis given the painless, expanding deep muscular/fibrous mass on imaging in the absence of infectious signs, but disproved by biopsy. Benign fibroma or muscular tumor was considered based on MRI appearance. Classic discharging fungal/actinomycotic infection was deemed clinically atypical due to total lack of sinus tracts, grains, or known inoculation history.",
+  "case_prompt": "A 40-year-old male presents with a 4-month history of a gradually enlarging swelling on the plantar aspect of his left foot. He reports no local pain, fever, or cutaneous drainage. There is no history of antecedent trauma, penetrating puncture, foreign body exposure, or walking barefoot.\n\nOn physical examination, a firm, non-tender mass measuring 7.5 × 8 cm is palpated on the left plantar surface. The overlying skin is intact, with no nodules, ulcerations, or discharging sinuses. Regional lymph nodes are not palpable.\n\nRoutine laboratory investigations, including complete blood count, differential counts, erythrocyte sedimentation rate (ESR), and serum alkaline phosphatase, are within normal reference limits. Magnetic resonance imaging (MRI) of the left foot demonstrates a mass of fibrous or muscular origin, leading to a working clinical diagnosis of a soft-tissue malignancy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Soft-tissue malignancy (Sarcoma)",
+      "rule_out_reason": "Formulated as the primary working diagnosis due to a progressively expanding, firm, non-tender deep plantar mass appearing of muscular or fibrous origin on MRI; disproved when histopathology of the excised specimen revealed infectious grain architecture without malignant neoplasia.",
+      "quote": "MRI showed a fibrous or muscular origin mass (Fig. 2 and 3). Working diagnosis of a soft-tissue malignancy was made. The patient was taken up for an excision biopsy, and tissue was sent for histopathological examination (Fig. 4)."
+    },
+    {
+      "candidate": "Benign fibrous or muscular neoplasm",
+      "rule_out_reason": "Considered based on MRI demonstration of a well-defined lesion of fibrous or muscular origin without inflammatory changes, but refuted by microscopic confirmation of specific grain pathology.",
+      "quote": "MRI was also suggestive of a fibrous or muscular mass. The diagnosis was made only after a histopathological examination."
+    },
+    {
+      "candidate": "Classic discharging grain infection",
+      "rule_out_reason": "Considered atypical and initially overlooked because the patient lacked characteristic external nodules, ulcerations, and draining sinuses, as well as classic inoculation risk factors such as barefoot walking or trauma.",
+      "quote": "This is a unique case as it did not present like a mycetoma which is characterized by ulceration, nodules, and discharging sinuses. There were no predisposing factors such as barefoot walking, malnutrition, or history of trauma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excisional biopsy and subsequent histopathological examination surprisingly revealed characteristic grain structures confirming mycetoma of the left foot.",
+      "quote": "Histopathological report surprisingly revealed a mycetoma of the left foot (Fig. 5)."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5458688_01. Preserves the classic trap of an intact, sinus-free plantar mycetoma masquerading as a soft-tissue sarcoma, ending before excisional biopsy."
+}

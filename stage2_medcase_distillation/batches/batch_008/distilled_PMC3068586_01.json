@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3068586_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 19-year-old female presenting with life-threatening autoimmune hemolytic anemia (hemoglobin 3.5 g/dL, positive Coombs test) and mild splenomegaly in the setting of chronic, painless cervical lymphadenopathy without B-symptoms (fever or night sweats). The clinical scenario heavily mimics systemic lupus erythematosus, primary Evans syndrome, hematologic malignancies (lymphoma), or cold agglutinin disease, masking tuberculous lymphadenitis as the underlying immunologic trigger.\n2. Admission Breakpoint: The admission clinical examination, emergency CBC, reticulocyte count, hemolysis panel (Coombs test, bilirubin, LDH, haptoglobin), chest radiograph, and abdominal ultrasound, prior to lymph node excisional biopsy, bone marrow examination, Mantoux skin testing, and autoantibody/viral serologies.\n3. Differential Distinctions: Systemic lupus erythematosus (SLE) commonly manifests in young females with autoimmune hemolytic anemia, splenomegaly, and lymphadenopathy, but was excluded by negative antinuclear antibody (ANA) serology; Hodgkin or non-Hodgkin lymphoma causes matted cervical adenopathy, splenomegaly, and secondary autoimmune cytopenias, but lymph node biopsy revealed caseating granulomas without malignant cells; cold agglutinin disease or secondary hemolysis from Mycoplasma pneumoniae, HIV, or hepatitis was excluded by negative serologies.",
+  "case_prompt": "A 19-year-old female presents with a 1-year history of painless swelling on the left side of her neck, accompanied by progressive fatigue and headache. She reports no fever, chills, or night sweats.\n\nOn physical examination, she demonstrates marked pallor and scleral icterus. Examination of the neck reveals multiple enlarged left cervical lymph nodes that are firm, non-tender, matted, and mobile. Abdominal examination reveals mild splenomegaly.\n\nInitial laboratory evaluation reveals severe anemia with a hemoglobin level of 3.5 g/dL, a total white blood cell count of 4,800/mm³ (52% neutrophils, 48% lymphocytes), a platelet count of 225,000/mm³, MCV 97 fL, MCH 30.5 pg, and a reticulocyte count of 12%. The peripheral blood smear shows anisopoikilocytosis with macrocytosis and spherocytes. Biochemical testing demonstrates a total bilirubin of 3.7 mg/dL (direct 2.0 mg/dL, indirect 1.7 mg/dL), lactate dehydrogenase (LDH) of 720 U/L, and haptoglobin of 20 mg/dL. A direct Coombs' test performed prior to transfusion is positive. Renal function and glucose-6-phosphate dehydrogenase (G6PD) activity are normal. A plain chest radiograph is normal, and an abdominal ultrasound confirms splenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Lupus Erythematosus (SLE) / Autoimmune Connective Tissue Disease",
+      "rule_out_reason": "Considered as a primary autoimmune etiology for severe Coombs-positive hemolytic anemia, splenomegaly, and lymphadenopathy in a teenage female, but ruled out by negative antinuclear antibody (ANA) testing.",
+      "quote": "Serologic tests for antinuclear antibodies, human immunodeficiency virus, mycoplasma, hepatitis B and C virus were negative."
+    },
+    {
+      "candidate": "Hodgkin or Non-Hodgkin Lymphoma",
+      "rule_out_reason": "Considered due to chronic painless matted cervical lymphadenopathy, splenomegaly, and secondary autoimmune hemolysis, but excluded by lymph node histopathology demonstrating caseating granulomatous inflammation without atypical lymphoid proliferations.",
+      "quote": "Left cervical lymph node biopsy showed caseating granulomatous lymphadenitis [Figure 1]"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excisional biopsy of the left cervical lymph node demonstrating caseating granulomatous lymphadenitis, corroborated by a strongly positive Mantoux test (18 mm induration), established tuberculous lymphadenitis as the underlying cause of the secondary immune hemolytic anemia.",
+      "quote": "Left cervical lymph node biopsy showed caseating granulomatous lymphadenitis [Figure 1] Mantoux test was positive (18 mm induration)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission triage and baseline hemolysis workup before lymph node biopsy and Mantoux reading. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

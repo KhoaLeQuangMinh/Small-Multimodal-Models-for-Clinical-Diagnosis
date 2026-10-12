@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9391179_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A traveler arriving from an endemic tropical region presents with an acute febrile illness, profound diffuse body aches, and marked rhabdomyolysis/elevated CK along with precipitous thrombocytopenia falling to 10–11 K/μL. The primary challenge is differentiating arboviral fever from life-threatening travel-associated diseases like falciparum malaria or local endemic tick-borne infections.\n2. Admission Breakpoint: The admission breakpoint is established at initial emergency presentation following triage vitals, history of travel and vector exposure, physical examination, and baseline labs (platelet count of 41 K/μL, elevated transaminases, CK, LDH, D-dimer), prior to send-out serologies and subsequent hospital-course platelet nadir.\n3. Differential Distinctions: Malaria presents identically with acute post-travel fever, myalgias, and severe thrombocytopenia but is ruled out by negative blood smear. Lyme disease or tick-borne rickettsial infection causes acute febrile myalgias in the Midwestern US but lacks household clustering from India and is excluded by negative serology.",
+  "case_prompt": "A 47-year-old Asian Indian man with no significant past medical history presents to an emergency department in the Midwestern United States with fever and diffuse body aches. He arrived from India 4 days prior to presentation. He is fully vaccinated against COVID-19. He notes potential vector exposure with frequent mosquito bites while in India, as well as an air conditioning unit in his home that had been turned off for the prior 2 months, serving as a potential stagnant water reservoir. A close household contact (his mother) was recently diagnosed with an acute mosquito-borne febrile viral illness in India. He denies epistaxis, petechiae, hematuria, hematemesis, melena, or other overt bleeding manifestations.\n\nOn physical examination, he is febrile with diffuse musculoskeletal tenderness. There are no petechiae, purpura, or active hemorrhagic lesions noted on the skin or mucosal surfaces. The remainder of the systemic examination is unremarkable.\n\nInitial laboratory evaluation demonstrates a platelet count of 41,000/μL (41 K/μL), creatine kinase of 999 U/L, lactate dehydrogenase of 663 U/L, D-dimer of 2,664 ng/mL, and aspartate aminotransferase (AST) of 141 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria (Plasmodium infection)",
+      "rule_out_reason": "High fever, severe musculoskeletal pain, elevated transaminases, high LDH, and marked thrombocytopenia in a traveler returning from India strongly suggested acute malaria; however, microscopic examination of the peripheral blood smear was negative for intraerythrocytic parasites.",
+      "quote": "Peripheral smear was negative for malaria"
+    },
+    {
+      "candidate": "Lyme Disease (Borrelia burgdorferi infection)",
+      "rule_out_reason": "Fever, diffuse myalgias, and presentation to a Midwestern hospital raised concern for tick-borne illness; however, specific serological testing was negative and the short incubation post-travel favored an imported tropical arbovirus.",
+      "quote": "and Lyme serology was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of acute travel from India, a familial contact with confirmed arboviral infection, precipitous drop of platelets to a nadir of 10 K/μL with delayed development of lower extremity petechiae, followed by spontaneous recovery and confirmatory convalescent serology.",
+      "quote": "Two weeks later, his dengue fever antibody IgG resulted positive with a titer of 7.07 ISR."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9391179_01. Mother's diagnosis generalized in case_prompt to avoid pathogen spoiler. Smear and Lyme serologies withheld from prompt. Direct quotes match article text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10302124_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 62-year-old male presents with four months of progressive, throbbing, movement-exacerbated thoracic spinal pain. Neuroimaging demonstrates multi-level vertebral corporeal osteolysis, posterior wall cortical disruption from T6 to T12, paraspinal soft tissue mass, and bronchopleural extension. This aggressive multi-segmental lytic spinal destruction closely mimics metastatic carcinoma, multiple myeloma, or tuberculous spondylodiscitis (Pott's disease), masking recurrent osseous hydatid disease.\n2. Admission Breakpoint: The breakpoint is set after admission triage, physical examination demonstrating loss of normal thoracic kyphosis, and spinal CT showing multi-level corporeal osteolysis with paraspinal cystic extension communicating with the left mediobasal bronchus, immediately prior to send-out parasitic serology and antihelminthic therapy.\n3. Differential Distinctions: Spinal tuberculosis (Pott's disease) characteristically causes disc space narrowing followed by vertebral collapse and paraspinal cold abscesses, but rarely causes multi-level multi-stage expansile cystic osteolysis communicating with the bronchus. Spinal metastasis/myeloma causes progressive osteolytic lesions and pathological fractures but lacks well-defined cystic paraspinal extension across decades. Osseous echinococcosis infiltrates bone trabeculae like a slow-growing tumor without an adventitial layer, leading to extensive multivertebral osteolysis.",
+  "case_prompt": "A 62-year-old male, a retired baker and former cigarette smoker, presented with a four-month history of progressive, throbbing thoracic back pain that persisted throughout the day and worsened significantly with movement. He reported raising a dog during his adolescence. His past surgical history was notable for resection of a benign lung cyst in 1978 without recognized complication, followed nearly three decades later by surgical evaluation of a chronic cough in 2007 that revealed a benign cystic lesion of the thoracic spine, for which he underwent a T6–T9 spinolaminectomy. Following the second resection, he had remained entirely asymptomatic for 13 years until the onset of his current pain.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Inspection of the spine revealed loss of normal thoracic kyphosis with abnormal flattening/straightness of the dorsal rachis. Palpation elicited tenderness over the mid-to-lower thoracic spinous processes without palpable fluctuance. Neurological examination showed intact motor strength and sensation in the bilateral lower extremities, and deep tendon reflexes were symmetric.\n\nComputed tomography of the thoracic spine demonstrated double-convex thoracic scoliosis, surgical changes from prior stepped laminectomies, and multi-segmental vertebral corporeal osteolysis with a T8–T10 vertebral block extending into adjacent paraspinal soft tissues. Multifocal disruption of the posterior vertebral wall was evident from T6 to T12. In addition, there were imaging stigmata of a cystic paraspinal soft tissue lesion communicating opposite the T8–T9 level into the left medio-basal sub-segmental bronchus, accompanied by a mild right pleural reaction. No focal lesions were noted in the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous Spondylodiscitis (Pott's Disease)",
+      "rule_out_reason": "Considered given the indolent presentation of chronic thoracic spine pain, extensive multilevel vertebral osteolysis, vertebral collapse/block vertebra, and paraspinal soft tissue mass with pleural reaction. Ruled out by the absence of primary intervertebral disc necrosis, lack of constitutional symptoms, and the cystic nature of the lesions with bronchopleural communication in a patient with a remote history of resected thoracic cysts.",
+      "quote": "Multiple thoracic vertebral corporeal osteolysis and T8-T10 vertebral block in relation to diffuse vertebral hydatidosis involving thoracic vertebrae with extension to adjacent soft tissues."
+    },
+    {
+      "candidate": "Spinal Metastatic Neoplasm / Multiple Myeloma",
+      "rule_out_reason": "Considered in a 62-year-old former smoker presenting with persistent, worsening thoracic pain, multi-level corporeal osteolysis, and extensive cortical destruction of the posterior vertebral wall from T6 to T12. Ruled out by the multi-decade indolent history spanning over 40 years, cystic morphology of the paraspinal lesions without blastic reaction, and subsequent positive parasitic serology.",
+      "quote": "There was a multifocal interruption of the posterior wall from T6 to T12."
+    },
+    {
+      "candidate": "Pyogenic Spondylodiscitis / Epidural Abscess",
+      "rule_out_reason": "Considered due to the severe throbbing back pain, paraspinal soft tissue mass, and bony destruction. Ruled out by the afebrile presentation, 4-month indolent subacute evolution without systemic toxicity, and indolent communication with the bronchial tree without acute suppurative sepsis.",
+      "quote": "He described a throbbing pain, which has been developing for four months, which is worsened by movement."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when thoracic CT revealed recurrent cystic osteolytic lesions of the spine communicating with the left bronchial tree in a patient with childhood canine exposure and prior resected thoracic cysts, confirmed by a positive hydatid serological assay.",
+      "quote": "There were stigmata of a soft tissue cyst opening opposite T8-T9 in the left medio-basal sub-segmental bronchus and a mild right pleural reaction. There was no hepatic involvement. Hydatic serology was positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed following CT evaluation of the spine prior to serological confirmation. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes from text verify differential rule-outs and diagnostic pivot. Target canonical disease Echinococcosis verified."
+}

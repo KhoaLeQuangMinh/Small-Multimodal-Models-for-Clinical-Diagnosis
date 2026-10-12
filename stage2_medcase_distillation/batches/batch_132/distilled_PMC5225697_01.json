@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5225697_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 11-year-old child presents acutely with bilateral symmetrical ptosis without ophthalmoplegia or pupillary involvement, combined with right-sided cerebellar ataxia, elevated ESR, but a negative tuberculin skin test and normal chest radiograph. This raises diagnostic suspicion for neuromuscular transmission failure (myasthenia gravis) versus an acute space-occupying brainstem lesion such as a brainstem glioma or CNS granuloma.\n2. Admission Breakpoint: Admission triage concludes with neurological examination, baseline hematologic workup (normal blood counts, raised ESR), negative intradermal skin test, and normal plain chest radiograph. It strictly stops immediately before neuroimaging with contrast-enhanced brain MRI and magnetic resonance spectroscopy (MRS).\n3. Differential Distinctions: Ocular myasthenia gravis presents with fluctuating bilateral ptosis without pupillary involvement, but cannot account for acute headache, unilateral dysdiadochokinesia, gait ataxia, and an elevated ESR. Primary brainstem glioma presents with ring-enhancing brainstem lesions, but magnetic resonance spectroscopy typically reveals high choline and low NAA without prominent lipid peaks. In contrast, a midbrain tuberculoma exhibits a central caseous necrotic core that produces a pathognomonic prominent lipid peak on MRS.",
+  "case_prompt": "An 11-year-old boy presented with a 5-day history of drooping of both eyelids, accompanied by headache and unsteady walking for the past 2 days. He had no history of fever, seizures, or visual loss. There was a known history of contact with an individual suffering from a chronic respiratory infection in his neighborhood.\n\nOn physical examination, the child was alert and oriented. Neurological examination revealed bilateral, symmetrical ptosis. Extraocular movements were fully intact in all directions, and pupillary size and light reflexes were normal bilaterally. Examination of the other cranial nerves was unremarkable. Cerebellar testing demonstrated right-sided dysdiadochokinesia and appendicular ataxia. Motor examination showed normal muscle power in all four extremities. Deep tendon reflexes were symmetrically normal, and plantar responses were flexor bilaterally.\n\nBaseline laboratory evaluation showed normal complete blood counts and an elevated erythrocyte sedimentation rate. Routine intradermal skin testing was non-reactive, and a plain chest radiograph showed clear lung fields without infiltrates or hilar adenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ocular myasthenia gravis / neuromuscular junction disorder",
+      "rule_out_reason": "Considered because of subacute bilateral symmetrical ptosis in a pediatric patient with normal pupillary reactions. Excluded by the rapid development of headache, ipsilateral cerebellar signs (dysdiadochokinesia and ataxia), and brain imaging demonstrating an intracranial focal mass.",
+      "quote": "Clinical examination revealed bilateral symmetrical ptosis [Figure 1], but the movement of both the eyeballs was normal in all the directions with normal pupillary size and reaction bilaterally. Other cranial nerves were essentially normal. Dysdiadochokinesia and ataxia were noted on the right side."
+    },
+    {
+      "candidate": "Brainstem glioma / high-grade neuroepithelial tumor",
+      "rule_out_reason": "Considered given the solitary ring-enhancing dorsal midbrain lesion with extensive surrounding edema causing cerebellar and brainstem signs in a child. Excluded by proton magnetic resonance spectroscopy demonstrating a massive lipid peak characteristic of central caseous necrosis rather than high malignant choline proliferation, together with complete resolution on medical antitubercular therapy.",
+      "quote": "Magnetic resonance imaging (MRI) of the brain revealed single ring-like enhancing lesion in the dorsal part of the midbrain with significant perifocal edema in adjacent parts of the brainstem, right cerebellar peduncle, adjacent thalamocortical tract, and periventricular region [Figure 2]. MRS at the site of the lesion showed increased lipid peak, decreased N-acetylaspartate (NAA) peak with increased choline/creatinine ratio, suggestive of tuberculoma [Figure 3]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Brain MRI revealing a dorsal midbrain ring-enhancing lesion with extensive vasogenic edema, coupled with MR spectroscopy demonstrating an elevated lipid resonance and decreased NAA characteristic of a CNS tuberculoma, in a child with known epidemiologic exposure who achieved full clinical recovery with 4-drug ATT and corticosteroids.",
+      "quote": "Magnetic resonance imaging (MRI) of the brain revealed single ring-like enhancing lesion in the dorsal part of the midbrain with significant perifocal edema in adjacent parts of the brainstem, right cerebellar peduncle, adjacent thalamocortical tract, and periventricular region [Figure 2]. MRS at the site of the lesion showed increased lipid peak, decreased N-acetylaspartate (NAA) peak with increased choline/creatinine ratio, suggestive of tuberculoma [Figure 3]."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission triage breakpoint: no mention of tuberculosis or neuroimaging findings in the case prompt. Differentials address myasthenia gravis and brainstem neoplasm with exact verbatim quotes."
+}

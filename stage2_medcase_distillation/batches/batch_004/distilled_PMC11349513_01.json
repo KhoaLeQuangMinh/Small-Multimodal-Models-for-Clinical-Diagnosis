@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11349513_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 51-year-old man presenting with obstructive urinary symptoms, severe constitutional B-symptoms (fever, night sweats, 10 kg weight loss), a discrete prostate lesion, pelvic lymphadenopathy, iliopsoas mass, and destructive osteolytic iliac lesions strongly mimics metastatic prostate cancer; however, the paradoxically normal total and free PSA levels alongside slightly high neuron-specific enolase challenge this malignancy hypothesis and point toward disseminated granulomatous infection.\n2. Admission Breakpoint: The admission triage evaluation ends after pelvic MRI and initial serum biomarker/inflammatory testing (PSA, NSE, ESR), immediately prior to transperineal prostate core biopsy and T-cell spot (T-SPOT.TB) testing.\n3. Differential Distinctions: Metastatic prostate adenocarcinoma typically produces marked total PSA elevation, loss of basal cell markers (p63, CK34betaE12), and P504S positivity on immunohistochemistry; neuroendocrine prostate tumor shows malignant architecture without necrotizing granulomas; disseminated tuberculosis exhibits caseating granulomatous necrosis with multinucleated Langhans giant cells, psoas cold abscesses, and positive interferon-gamma release assays.",
+  "case_prompt": "A 51-year-old male presented to the hospital with a 6-month history of night sweats, anorexia, and an unintentional 10 kg weight loss, along with progressive dysuria and difficulty urinating persisting for more than 3 months. Physical examination was notable for a thin, chronically ill-appearing man with normal vital signs. Abdominal examination revealed no focal tenderness, and digital rectal examination revealed an enlarged, firm prostate without gross fluctuance. Laboratory investigations showed a marked elevation in erythrocyte sedimentation rate (ESR) of 77 mm/h (reference range: 0-15 mm/h), a normal free prostate-specific antigen (f-PSA) of 0.151 ng/mL, a normal total prostate-specific antigen (t-PSA) of 1.900 ng/mL, and a slightly elevated neuron-specific enolase (NSE) of 20.19 ng/mL (reference range: <16.3 ng/mL). Pelvic magnetic resonance imaging (MRI) demonstrated prostate lesions with isointensity on T1-weighted imaging, heterogeneous intensity on T2-weighted imaging, heterogeneous hyperintensity on diffusion-weighted imaging (DWI), and corresponding hypointensity on the apparent diffusion coefficient (ADC) map. In addition, MRI revealed a T2-hyperintense fluid collection/lesion around the right iliopsoas muscle, bilateral iliac osteolytic bone destruction, and multiple enlarged lymph nodes adjacent to the right iliac vessels. Admission triage concluded with high concern for advanced pelvic malignancy versus an aggressive systemic inflammatory process.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Prostate Adenocarcinoma",
+      "rule_out_reason": "Prostatic mass with iliac bone destruction, pelvic lymphadenopathy, and lower urinary tract symptoms strongly suggested advanced prostate cancer with skeletal metastases; however, total PSA was completely normal (1.900 ng/mL) and subsequent biopsy immunohistochemistry demonstrated intact basal cells (CK34betaE12+, P63+) and negative P504S, ruling out adenocarcinoma.",
+      "quote": "The possibility of prostate cancer with bone metastasis was considered."
+    },
+    {
+      "candidate": "Neuroendocrine Carcinoma of the Prostate",
+      "rule_out_reason": "Slightly elevated neuron-specific enolase (20.19 ng/mL) combined with aggressive osteolytic bone lesions in the setting of normal PSA raised suspicion for small cell neuroendocrine carcinoma; however, histopathology demonstrated extensive necrosis and multinucleated giant cells rather than malignant neuroendocrine neoplasia.",
+      "quote": "normal free prostate-specific antigen (f-PSA) of 0.151 ng/mL and total prostate-specific antigen (t-PSA) of 1.900 ng/mL, and slightly high neuron-specific enolase (NSE) of 20.19 ng/mL (normal range, <16.3 ng/mL)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Transperineal ultrasound-guided prostate biopsy demonstrating multifocal caseous necrosis with granulomatous lesions and multinucleated giant cells, together with a positive T-cell spot test, established the definitive diagnosis of systemic tuberculosis.",
+      "quote": "In addition, based on the positive result of tuberculosis infection of the T cell spot test, systemic tuberculosis was diagnosed."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt terminates at initial pelvic MRI and baseline serum PSA/ESR labs. Biopsy histochemistry, PET/CT, T-SPOT, and anti-TB therapy excluded from prompt. Verbatim quotes provided."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC13102560_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 73-year-old diabetic female presents with a 2-year history of recurrent thoracolumbar back pain, fever, and dyspnea after systemic steroid exposure, found to have T7-T8 vertebral destruction with paravertebral abscess and bilateral lung lesions. Initial bronchoalveolar lavage mNGS detected a high sequence abundance of Pneumocystis jirovecii (21.95%) alongside Mycobacterium tuberculosis complex (1.92%). The critical clinical tension is avoiding the misattribution of primary disease to Pneumocystis colonization in a non-HIV host, ensuring recognition of underlying disseminated tuberculosis as the true driving pathogen.\n2. Admission Breakpoint: The admission breakpoint is placed at transfer/admission triage prior to fluoroscopic-guided vertebral aspiration and invasive tissue biopsy metagenomic sequencing.\n3. Differential Distinctions: Active Pneumocystis jirovecii pneumonia (ruled out by negative serum (1,3)-beta-D-glucan [<37.5 pg/mL], negative HIV, and lack of characteristic bilateral diffuse interstitial infiltrates), pyogenic bacterial spondylodiscitis (Staphylococcus/Enterobacteriaceae, ruled out by negative fungal/bacterial workup and progressive chronic vertebral destruction), and invasive aspergillosis (ruled out by negative galactomannan). C-arm guided biopsy and tissue sequencing proving massive Mycobacterium tuberculosis complex predominance establish spinal and pulmonary tuberculosis.",
+  "case_prompt": "A 73-year-old female was admitted with a 2-year history of recurrent thoracolumbar back pain and fevers. Two years earlier, she had been diagnosed with a thoracic vertebral infection and achieved temporary symptom resolution following intravenous antibiotic therapy. Six months prior to admission, symptoms recurred; thoracic MRI demonstrated pathological compression fractures at T7-T8 vertebrae, bone marrow edema at T6, and degenerative thoracolumbar changes, while chest CT revealed bilateral pulmonary inflammatory lesions, right pleural effusion, mediastinal lymphadenopathy, and minor pericardial effusion. She improved transiently following vancomycin therapy.\n\nThree months prior to admission, following a viral respiratory illness, she experienced worsening dyspnea and was treated with a 15-day course of systemic corticosteroids (oral dexamethasone and methylprednisolone) and broad-spectrum antibiotics, despite which respiratory symptoms progressed and she developed acute renal failure requiring hemodialysis. Her medical history was also notable for hypertension and insulin-dependent type 2 diabetes mellitus.\n\nOn admission, she was tachypneic and chronically ill-appearing. Neurological examination showed intact cranial nerves but severe tenderness over the mid-thoracic spine. Laboratory evaluation showed severe absolute lymphocytopenia (0.38 x 10⁹/L). Screening for human immunodeficiency virus (HIV) antibodies was negative. Fungal biomarker testing revealed a negative serum (1,3)-beta-D-glucan level (<37.5 pg/mL; reference negative: <70 pg/mL) and a negative serum Aspergillus galactomannan antigen of 0.11 (reference negative: <0.5). Thoracic spine MRI demonstrated progressive T7-T8 vertebral osseous destruction accompanied by paravertebral abscess formation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pneumocystis jirovecii pneumonia (PJP)",
+      "rule_out_reason": "Although prior BAL fluid metagenomic sequencing reported a high sequence abundance of Pneumocystis jirovecii following corticosteroid therapy, the patient was HIV-negative and serum (1,3)-beta-D-glucan was completely negative (<37.5 pg/mL), confirming that Pneumocystis represented asymptomatic respiratory colonization rather than invasive pneumonia.",
+      "quote": "Pre-admission evaluations (December 30, 2023) showed: negative serum HIV antibody, serum (1, 3)-beta-D-glucan <37.5 pg./mL (negative: <70 pg./mL), Aspergillus galactomannan antigen 0.11 (negative: <0.5)"
+    },
+    {
+      "candidate": "Recurrent pyogenic bacterial spondylodiscitis (e.g., Staphylococcus aureus)",
+      "rule_out_reason": "While her symptoms had shown transient temporary improvement with vancomycin months earlier, the 2-year indolent clinical course, cold abscess formation, and lack of persistent bacterial isolation on targeted debridement ruled out an uncomplicated pyogenic bacterial infection.",
+      "quote": "Two years prior, she was diagnosed with a thoracic vertebral infection at a local hospital and achieved symptom resolution after treatment with ceftoperazone/sulbactam... A thoracic MRI (December 28, 2023, Hangzhou Hospital of TCM) revealed T7-T8 vertebral destruction with abscess"
+    },
+    {
+      "candidate": "Invasive aspergillosis",
+      "rule_out_reason": "Invasive pulmonary fungal disease was suspected due to steroid therapy, lymphopenia, and bilateral pulmonary lesions, but was excluded by a negative serum galactomannan antigen level.",
+      "quote": "Aspergillus galactomannan antigen 0.11 (negative: <0.5)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "C-arm-guided biopsy of the thoracic vertebral abscess yielded purulent fluid confirming Mycobacterium tuberculosis complex (MTBC) DNA/RNA, and lung tissue metagenomic sequencing demonstrated overwhelming MTBC dominance (72,040 sequences, 85.68% abundance).",
+      "quote": "On January 24, 2024, a C-arm-guided biopsy of the vertebral lesion (Figure 3A) yielded pus and hemorrhagic fluid; subsequent testing confirmed Mycobacterium tuberculosis complex (MTBC)-positive, rifampicin-sensitive, and positive MTB DNA/RNA. A lung lesion biopsy (January 30, 2024; Figures 3A,B) and tissue NGS (Hangzhou ADICON Lab) detected overwhelming Mycobacterium dominance (73,211 sequences, 87.07% abundance; MTBC: 72,040, 85.68%)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Breakpoint set prior to vertebral needle biopsy and confirmatory tissue metagenomics. Zero pathogen leaks in case prompt."
+}

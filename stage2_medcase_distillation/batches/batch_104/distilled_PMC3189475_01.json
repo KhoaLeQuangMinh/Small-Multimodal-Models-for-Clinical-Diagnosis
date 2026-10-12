@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3189475_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: The patient presented with an acute febrile icteric illness and prominent hepatorenal derangement following flood and paddy-water exposure, complicated by an unexpected and life-threatening neurovascular manifestation: multifocal intraparenchymal intracranial hemorrhage.\n2. Admission Breakpoint: The clinical presentation concludes after the completion of the physical exam, initial imaging (normal chest radiograph, bedside abdominal ultrasound revealing fluid in Morison's pouch), triage hepatitis B serologies, and emergency brain CT demonstrating temporal and parietal hemorrhages. It halts before the order and return of specific send-out serological testing (IgM-ELISA).\n3. Differential Distinctions: Acute viral hepatitis was considered given jaundice and sonographic hepatitis-like liver changes, but refuted by negative hepatitis B serology and the presence of bilateral cutaneous purpura and cerebral hemorrhages. Primary hemorrhagic stroke or hypertensive hemorrhage was excluded by normal blood pressure and multi-organ systemic features with occupational freshwater exposure. The combination of biphasic fever, conjunctival congestion, petechiae, deranged hepatorenal function, and recent flood exposure is pathognomonic for severe leptospirosis.",
+  "case_prompt": "A 51-year-old male fishery officer who also works in rice paddies presented with a 5-day history of continuous fever, chills, diffuse myalgias, generalized weakness, and frontal headache. Three days prior to admission, he noticed scleral icterus and dark-colored urine, accompanied by anorexia and frequent vomiting occurring 4 to 5 times per day. He resided in an area that had experienced recent flooding. His past medical history was notable only for gastroesophageal reflux managed with omeprazole; he reported no current drug abuse or relevant family history.\n\nOn physical examination, he was febrile with a body temperature of 38.0°C, blood pressure of 120/80 mmHg, pulse of 80 beats per minute, and respiratory rate of 18 breaths per minute. Scleral icterus and prominent bilateral conjunctival congestion were observed. There was no neck stiffness or meningismus. Dermatologic examination revealed multiple petechiae and purpura distributed across both upper extremities, without gross ecchymosis. Cardiac examination was normal, and abdominal palpation revealed no hepatosplenomegaly. Lower extremity examination showed normal appearance and motor function.\n\nTriage chest radiography was normal. Routine hepatitis testing was negative for hepatitis B surface antigen (HBsAg) and antibody (anti-HBs). Bedside abdominal ultrasonography identified 70 mL of free fluid in Morison's pouch and parenchymal changes consistent with acute hepatitis. Because of the frontal headache and purpuric lesions, an emergency non-contrast head CT scan was performed, which revealed multiple acute hemorrhagic lesions in the temporal and parietal lobes, predominantly involving the left cerebral hemisphere.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis",
+      "rule_out_reason": "Considered given acute jaundice, vomiting, dark urine, and sonographic changes of hepatitis; ruled out by negative hepatitis B serological markers and prominent multifocal intracranial hemorrhages with purpura uncommon in uncomplicated viral hepatitis.",
+      "quote": "The patient's chest X-ray was normal, and he tested negative for HBs Ag and HBs AB."
+    },
+    {
+      "candidate": "Primary Hypertensive / Vascular Intracranial Hemorrhage",
+      "rule_out_reason": "Considered due to acute frontal headache and multiple lobar hemorrhages on brain CT; ruled out by normotension (120/80 mmHg), systemic febrile illness, conjunctival congestion, and hepatorenal dysfunction following freshwater exposure.",
+      "quote": "After a brain CT scan the radiologist reported \"multiple hemorrhagic lesions in the temporal and parietal lobes, especially in the left side\" (see Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Deranged hepatorenal function, conjunctival congestion, and hemorrhagic diathesis following occupational floodwater and paddy exposure raised high clinical suspicion for severe leptospirosis, confirmed by positive serum IgM-ELISA, with complete clinical recovery following ceftriaxone, corticosteroids, and platelet transfusions.",
+      "quote": "His diagnosis was reviewed, and in view of the deranged hepatorenal functions and seasonal prevalence (recent floods in the area where the patient resided), leptospirosis was clinically suspected, which was further confirmed by the positive serum IgM-ELISA (IgG value of 100 and an IgM value of 20)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Prompt excludes specific serological testing (IgM-ELISA) and mentions zero pathogen or disease names."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10118874_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 22-year-old male presents with a 3-year history of left pleuritic chest pain and a posterior thoracic paravertebral multicystic mass with neural foraminal extension and rib erosion. Given its anatomical location, neural foraminal involvement, and bone remodeling, the lesion initially mimics a benign or malignant neurogenic neoplasm (such as a schwannoma or neurofibroma), whereas the true etiology is an atypical primary extrahepatic, extrapulmonary hydatid cyst linked to childhood livestock exposure.\n2. Admission Breakpoint: The admission breakpoint lies after initial clinical evaluation, baseline CBC and LFTs, and chest CT demonstrating the 4 x 6 x 6 cm paravertebral multicystic lesion with bone erosion, prior to advanced contrast MRI demonstrating diagnostic daughter cysts and operative excision with histopathology.\n3. Differential Distinctions: Posterior mediastinal nerve sheath tumors (schwannomas/neurofibromas) commonly extend into neural foramina and remodel adjacent ribs, but typically present as solid or heterogeneously cystic masses without internal daughter cysts or double-layered pericyst capsules. Hydatid disease in this location is exceptionally rare without liver or lung involvement, but the combination of childhood contact with livestock (goats and camels), lack of FDG uptake, and characteristic multivesicular architecture establishes echinococcosis.",
+  "case_prompt": "A 22-year-old man presents with a 3-year history of chronic left-sided pleuritic chest pain without other associated symptoms. He reports no dyspnea, cough, hemoptysis, fever, chills, night sweats, or unintended weight loss. Past medical history and family history are unremarkable. As a child, he had regular contact with livestock, specifically goats and camels.\n\nOn physical examination, the patient is well-appearing. Vital signs are within normal limits. Examination of the chest, lungs, and spine reveals no palpable masses, local tenderness, or focal neurological deficits. Baseline complete blood count and liver function tests are within normal limits.\n\nA contrast-enhanced computed tomography (CT) scan of the chest demonstrates a 4 x 6 x 6 cm well-defined cystic mass in the left thoracic paravertebral region extending from the T3 to T5 vertebral bodies. The lesion exhibits peripheral and intrinsic calcifications, internal compartments of varying sizes, remodeling and cortical erosion of adjacent ribs, and extension into the left T3-T4 and T4-T5 neural foramina. An 18F-FDG PET/CT scan demonstrates no significant fluorodeoxyglucose uptake within the lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Nerve Sheath Tumor (Schwannoma / Neurofibroma)",
+      "rule_out_reason": "Considered the primary initial diagnosis given the posterior paravertebral location, rib remodeling, and neural foraminal extension; however, MRI revealed multilocular daughter cysts within a mother cyst matrix and no solid enhancing nodules or malignant features.",
+      "quote": "The primary differential diagnosis was a nerve sheath tumor, and a magnetic resonance imaging (MRI) with IV contrast was recommended for further characterization."
+    },
+    {
+      "candidate": "Malignant Thoracic Neoplasm / Metastasis",
+      "rule_out_reason": "Aggressive osseous erosion could indicate malignancy, but the absence of metabolic activity on PET/CT and cystic morphology argued against high-grade neoplasia.",
+      "quote": "Fluorine-18 fluorodeoxyglucose positron emission tomography/computed tomography (F 18-FDG PET/CT) showed no significant FDG uptake in the lesion (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast MRI demonstrated characteristic multivesicular architecture with low-T1 and high-T2 daughter cysts inside a mother cyst matrix, and surgical histopathology confirmed acellular laminated membranes characteristic of echinococcal hydatid disease.",
+      "quote": "The histologic examination showed a thick fibrous capsule with a mixed inflammatory infiltrate and granulation tissue and acellular laminated membranous structures with cellular debris and calcifications in the cyst wall. The histologic findings are consistent with hydatid disease, and there was no evidence of viable protoscolices (Figure 5)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation enforces admission breakpoint prior to MRI daughter cyst identification and surgery. Zero pathogen spoilers in prompt."
+}

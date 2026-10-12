@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5977048_02",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 65-year-old farmer presenting with a 10-year history of facial lichenoid and hypopigmented papular lesions with localized numbness, who recently developed chest pain, productive cough, right bronchial rales, apical reticulonodular infiltrates, and hilar adenopathy. The clinical challenge is recognizing dual concurrent mycobacterial disease—lepromatous leprosy with concomitant pulmonary tuberculosis—in a resource-limited setting where sputum acid-fast stains and skin smears were negative.\n2. Admission Breakpoint: Admission clinical evaluation concludes following the 10-year history of skin lesions, subacute respiratory symptoms, physical examination (facial hypopigmented lichenoid plaques with sensory loss, right bronchial rales, normal vision), triage laboratories (anemia with hemoglobin 9 g/dL, normal glucose, renal, and liver panels, negative HIV serology), and chest radiograph showing right apical reticulonodular infiltrates and bilateral hilar lymphadenopathy. It stops immediately before negative AFB smears, diagnostic synthesis, and dual therapy initiation.\n3. Differential Distinctions: Cutaneous and pulmonary sarcoidosis can present with facial plaques resembling lupus pernio and hilar lymphadenopathy with pulmonary infiltrates, but sarcoid plaques do not exhibit thermal/sensory anesthesia. Isolated disseminated/cutaneous tuberculosis (lupus vulgaris) causes chronic facial plaques and apical pulmonary disease, but lupus vulgaris does not cause localized sensory loss. Lepromatous leprosy was confirmed clinically by chronic anesthetic facial lichenoid lesions, accompanied by concomitant pulmonary tuberculosis diagnosed by clinical and radiological findings.",
+  "case_prompt": "A 65-year-old male farmer residing in southern Mauritania presented with maculopapular and nodular skin lesions, accompanied by chest pain and a chronic productive cough. His cutaneous lesions had evolved over the past ten years, initially consisting of lichenoid lesions and multiple hypopigmented papules. A few months prior to presentation, he developed a productive cough and progressive decline in his general condition. He had no prior history of chronic pulmonary disease. Previous treatments with analgesics, antibiotics, topical therapies, and traditional medicines had produced no clinical improvement.\n\nPhysical examination revealed diffuse, hypopigmented lichenoid lesions measuring 2 to 5 cm in diameter at the base of the nose with demonstrable sensory loss. Visual examination was normal. Pulmonary auscultation revealed rales over the right bronchus.\n\nLaboratory evaluations showed a hemoglobin of 9.0 g/dL, normal blood glucose, and normal renal and hepatic functions. HIV serology was negative. Chest radiography demonstrated reticulonodular infiltrates at the right lung apex and bilateral hilar lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous and pulmonary sarcoidosis",
+      "rule_out_reason": "Considered due to facial lichenoid plaques mimicking lupus pernio in combination with bilateral hilar lymphadenopathy and pulmonary reticulonodular infiltrates, but ruled out by the pathognomonic finding of localized sensory loss within the cutaneous plaques.",
+      "quote": "diffuse hypopigmented lichenoid lesions varying from 2 to 5 cm in diameter at the base of the nose with sensory loss."
+    },
+    {
+      "candidate": "Isolated cutaneous and pulmonary tuberculosis (lupus vulgaris)",
+      "rule_out_reason": "Considered because chronic productive cough, right bronchial rales, apical infiltrates, and chronic facial granulomatous lesions could represent single-organism disseminated tuberculosis, but excluded as the sole diagnosis because tuberculous lupus vulgaris does not produce localized cutaneous anesthesia.",
+      "quote": "The chest X-ray showed reticulonodular infiltrates at the right lung apex and bilateral hilar lymphadenopathy (Figure 4)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when the patient was diagnosed with lepromatous leprosy based on the 10-year evolution of facial hypopigmented lesions with sensory loss, alongside concomitant active pulmonary tuberculosis manifested by productive cough, apical reticulonodular infiltrates, and hilar adenopathy.",
+      "quote": "The diagnosis of lepromatous leprosy with concomitant disseminated tuberculosis was made. Antileprosy and antituberculosis treatment (rifampicin 600 mg/day, dapsone 100 mg/day, and clofazimine 100 mg/day) was initiated"
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly maintained prior to smear analysis and dual antimicrobial therapy. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

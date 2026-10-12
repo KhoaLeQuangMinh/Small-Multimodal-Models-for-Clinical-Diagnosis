@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3461288_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 72-year-old Caucasian male presenting with acute severe abdominal symptoms: fever (38.5°C), sinus tachycardia (110 bpm), marked distension, diffuse tenderness, leukocytosis (WBC 14,700/mm³), and strikingly elevated CRP (148 mg/L). In an elderly emergency department patient, this constellation strongly mimics an acute surgical abdomen, such as secondary peritonitis from hollow viscus perforation, acute mesenteric ischemia, or severe intra-abdominal sepsis.\n2. Admission Breakpoint: The admission clinical triage covers demographics (72-year-old male), 10-day symptom onset (diffuse abdominal pain, nausea, progressive distension), lack of antecedent trauma, vital signs (fever 38.5°C, pulse 110 bpm, normal blood pressure), physical examination (grossly distended, diffusely tender abdomen, active bowel sounds, empty rectum), emergency labs (leukocytosis 14,700/mm³, hemoglobin 10.5 g/dL, CRP 148 mg/L, normal creatinine, electrolytes, LFTs, and urinalysis), and a normal plain abdominal radiograph. The breakpoint is established immediately before urgent abdominal CT and emergency laparotomy.\n3. Differential Distinctions: Acute bacterial peritonitis / perforated viscus is suggested by systemic toxicity, high fever, elevated CRP, and peritoneal signs, but plain radiography demonstrates no pneumoperitoneum or obstruction, and bowel sounds remain present. Pyogenic liver/splenic abscess can produce fever and right upper quadrant/diffuse tenderness, but CT confirms well-encapsulated cysts with pathognomonic daughter cysts without gas or purulent phlegmon.",
+  "case_prompt": "A 72-year-old man presents to the emergency department with a ten-day history of diffuse abdominal pain, nausea, and progressively worsening abdominal distension. He has no significant past medical history and reports no recent trauma.\n\nOn physical examination, he is febrile with a body temperature of 38.5°C, tachycardic with a heart rate of 110 beats per minute, and normotensive. The abdomen is grossly distended and diffusely tender to palpation. Auscultation reveals active bowel sounds. Digital rectal examination demonstrates an empty rectal vault.\n\nEmergency laboratory testing reveals a white blood cell count of 14,700/mm³, a hemoglobin level of 10.5 g/dL, and a markedly elevated C-reactive protein of 148 mg/L. Serum creatinine, electrolytes, and liver function tests are within normal limits. Urinalysis is normal. A plain abdominal radiograph demonstrates no signs of pneumoperitoneum or bowel obstruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Secondary Bacterial Peritonitis / Perforated Viscus",
+      "rule_out_reason": "Considered due to the toxic clinical presentation with pyrexia (38.5°C), tachycardia (110 bpm), marked leukocytosis, CRP elevation (148 mg/L), and acute diffuse abdominal tenderness; however, plain abdominal radiography showed no free intraperitoneal air, bowel sounds were active, and imaging excluded hollow viscus disruption.",
+      "quote": "Upon physical examination, a grossly distended and diffusely tender abdomen was revealed. On auscultation abdominal sounds were present... The abdominal plan X-ray was normal"
+    },
+    {
+      "candidate": "Pyogenic Hepatic or Splenic Abscess",
+      "rule_out_reason": "Considered in an elderly patient with high fever, systemic inflammatory reaction, and acute abdominal distension, but cross-sectional imaging revealed multiple sharply defined cysts with internal daughter vesicles typical of tapeworm hydatidosis rather than liquefactive pyogenic abscesses.",
+      "quote": "The CT revealed a huge hepatic hydatid cyst (measuring 14.5 cm) with daughter cysts in the left lobe of the liver and multiple splenic hydatidosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Abdominal and Splenic Echinococcosis (Hydatidosis)",
+      "rule_out_reason": "Emergency abdominal CT demonstrated a massive 14.5 cm hepatic hydatid cyst with internal daughter cysts in the left liver lobe, multiple splenic hydatid cysts, and additional cysts in the gastrohepatic space, transverse mesocolon, and pelvis, confirmed during urgent exploratory laparotomy.",
+      "quote": "The CT revealed a huge hepatic hydatid cyst (measuring 14.5 cm) with daughter cysts in the left lobe of the liver and multiple splenic hydatidosis. Additionally, a large echinococcal cyst was revealed at the left hypochondrium attached to the anterior wall of the stomach causing a huge pressure (Figures 1(a) and 1(b))."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for disseminated abdominal and splenic echinococcosis presenting as an acute abdomen. Admission breakpoint set prior to urgent CT imaging and laparotomy."
+}

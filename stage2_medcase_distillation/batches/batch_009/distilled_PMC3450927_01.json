@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3450927_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old pregnant woman at 23 weeks gestation presenting with rapidly accumulating ascites, worsening abdominal pain, night sweats, anorexia, and weight loss. The sudden emergence of exudative ascites and thickened peritoneum during pregnancy strongly raises alarm for advanced ovarian carcinoma / peritoneal carcinomatosis, decompensated maternal liver disease, or peritoneal tuberculosis. Absence of respiratory symptoms, clear chest radiography, and lack of fever further complicate the clinical picture.\n2. Admission Breakpoint: The admission clinical presentation comprises demographics (37 years old, multiparous, low socioeconomic status), gestational age (23 weeks), 1-month chronology of progressive abdominal distension, night sweats, anorexia, weight loss, abdominal pain, vital signs (afebrile, weight 52 kg, height 1.60 m, BMI 20.3), abdominal exam (distended, diffuse dullness to percussion, no palpable masses), baseline laboratory testing (normochromic normocytic anemia with hemoglobin 10.6 g/dL, no leukocytosis), abdominal ultrasound (intra-abdominal free fluid predominantly in the lower abdomen, thickened peritoneum, no ovarian masses), and a normal chest radiograph. The breakpoint stops before tuberculin skin testing, sputum AFB analysis, and diagnostic laparoscopy/peritoneal biopsy.\n3. Differential Distinctions: Advanced ovarian carcinoma / peritoneal carcinomatosis is a critical consideration in rapid ascites with peritoneal thickening and B-symptoms, but ultrasound showed normal ovaries without adnexal masses and biopsy demonstrated granulomatous necrosis. Pulmonary tuberculosis with secondary peritoneal seeding is excluded by normal chest radiography and negative sputum AFB stains. Cirrhotic ascites or portal hypertension typically features stigmata of chronic liver disease without peritoneal thickening or extensive necrotic nodularity.",
+  "case_prompt": "A 37-year-old multiparous woman of low socioeconomic status is referred for urgent evaluation at 23 weeks of gestation due to rapidly progressive ascites. She reports a one-month history of progressive abdominal swelling accompanied by night sweats, anorexia, weight loss, and worsening diffuse abdominal pain.\n\nOn physical examination, she is afebrile. Her weight is 52 kg, height is 1.60 m, and body mass index (BMI) is 20.3 kg/m². Abdominal examination reveals marked distension with diffuse dullness on percussion, without palpable organomegaly or distinct masses.\n\nLaboratory evaluation demonstrates a mild normochromic, normocytic anemia with a hemoglobin level of 10.6 g/dL, without leukocytosis.\n\nAbdominal ultrasonography reveals significant intra-abdominal free fluid accumulating predominantly in the lower abdomen, along with diffuse peritoneal thickening. No ovarian or adnexal mass is identified. A plain chest radiograph demonstrates no active pulmonary infiltrates, cavities, or prior lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian Malignancy / Peritoneal Carcinomatosis",
+      "rule_out_reason": "Considered as a primary concern due to subacute progressive ascites, peritoneal thickening, and constitutional B-symptoms (anorexia, weight loss, night sweats), but pelvic ultrasound showed normal adnexa and diagnostic laparoscopy with biopsy demonstrated granulomatous inflammation rather than malignant cells.",
+      "quote": "Abdominal ultrasound (Figure 1, Figure 2) showed intra-abdominal fluid, mainly in the lowest abdomen, and a thickened peritoneum. No ovarian mass was indentified on ultrasound."
+    },
+    {
+      "candidate": "Primary Pulmonary Tuberculosis with Disseminated Serositis",
+      "rule_out_reason": "Considered given classic constitutional features and positive tuberculin reactivity, but ruled out as an active primary lung source by normal chest radiography and negative sputum acid-fast bacilli smears.",
+      "quote": "A chest X -ray showed no active lesion or old lesion compatible with pulmonary tuberculosis. A tuberculin skin test was positive. Acid-fast bacilli in sputum were not seen on sputum microscopy (Ziehl Nielson stain)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Peritoneal Tuberculosis",
+      "rule_out_reason": "Diagnostic laparoscopy revealed 2.5 liters of straw-colored ascites with extensive necrotic peritoneal nodules and intestinal miliary deposits, with histological analysis establishing chronic caseating granulomas with multinucleated giant cells diagnostic of peritoneal tuberculosis.",
+      "quote": "The final histologic report confirmed chronic granulomas with caseous necrosis and multinucleated giant cells. The patient received antituberculous chemotherapy regimen with rifampicin (R), isoniazid (H), pyrazinamide (Z) for two months and 4 months of RH."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for peritoneal tuberculosis occurring during pregnancy. Breakpoint set after initial ultrasound and chest radiograph, prior to tuberculin skin testing, sputum AFB, and laparoscopy."
+}

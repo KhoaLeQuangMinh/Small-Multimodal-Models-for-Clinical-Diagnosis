@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6066802_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 24-year-old woman presents with persistent postprandial vomiting (1\u20132 hours after meals), low-grade fever, anorexia, significant weight loss, and microcytic anemia, indicating gastric outlet obstruction. The clinical tension lies in distinguishing peptic ulcer disease with duodenal stenosis, Crohn's disease with gastrointestinal fistulae, and duodenal malignancy from gastroduodenal tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial clinical evaluation and baseline laboratory investigations showing microcytic hypochromic anemia, prior to upper GI endoscopy, contrast-enhanced abdominal CT, colonoscopy, biopsy, and mycobacterial culture.\n3. Differential Distinctions: Peptic ulcer disease with duodenal stricture is considered given postprandial vomiting and anemia, but cross-sectional CT shows necrotic retroperitoneal and perigastric lymphadenopathy as well as a colo-jejunal fistula. Crohn's disease is considered because endoscopy and colonoscopy demonstrated duodenal nodularity, transverse colon ulceronodular disease, bowel clumping, and noncaseating granulomas on mucosal biopsy; however, necrotic lymphadenopathy and positive MGIT culture confirmed tuberculosis. Definitive diagnosis of gastroduodenal and colonic tuberculosis is established by Mycobacterium tuberculosis growth on MGIT culture from duodenal biopsy.",
+  "case_prompt": "A 24-year-old woman presents with a one-month history of recurrent nonbilious, nonprojectile vomiting occurring 1 to 2 hours after meals, accompanied by persistent low-grade fever. She reports marked loss of appetite and significant unintentional weight loss over this duration.\n\nOn physical examination, she is febrile and visibly pale. Abdominal examination is soft and non-distended without palpable organomegaly or focal abdominal tenderness. The remainder of the systemic examination is unremarkable.\n\nBaseline triage laboratory investigations demonstrate microcytic hypochromic anemia on complete blood count. Routine blood biochemical investigations are otherwise within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peptic Ulcer Disease with Gastric Outlet Obstruction",
+      "rule_out_reason": "Postprandial vomiting and microcytic anemia suggested peptic ulcer disease with pyloric/duodenal stenosis, but imaging revealed extensive necrotic retroperitoneal lymphadenopathy and complex entero-colonic fistulization inconsistent with uncomplicated peptic ulceration.",
+      "quote": "Upper GI endoscopy revealed nodularity with ulceration at the junction of the first and second parts of duodenum with a suspicious fistulous opening"
+    },
+    {
+      "candidate": "Crohn's Disease",
+      "rule_out_reason": "The presence of ulceronodular lesions in both the duodenum and colon, colo-jejunal fistula, bowel clumping, and noncaseating granulomas on initial biopsy mimicked Crohn's disease; however, necrotic lymphadenopathy on CT and positive mycobacterial culture confirmed tuberculosis.",
+      "quote": "Biopsy from the duodenal and colonic lesions showed lymphoid aggregate with multiple noncaseating granuloma (Figure 2B)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Gastroduodenal and Colonic Tuberculosis",
+      "rule_out_reason": "Automated mycobacterial liquid culture (TB MGIT) of the duodenal biopsy specimen grew Mycobacterium tuberculosis, establishing the diagnosis of gastroduodenal tuberculosis complicated by duodenal ulceration and fistulae.",
+      "quote": "The TB MGIT culture from duodenal biopsy showed growth of Mycobacterium tuberculosis. Patient was given antitubercular drugs for 9 months."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt captures the clinical presentation of gastric outlet obstruction, fever, weight loss, and microcytic anemia while strictly excluding endoscopy, cross-sectional imaging, histology, and pathogen names. Diagnostic reasoning highlights the mimicry of Crohn's disease and peptic stricture."
+}

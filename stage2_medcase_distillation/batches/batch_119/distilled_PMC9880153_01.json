@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9880153_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 52-year-old woman presented with persistent high spiking fevers, an extensive rash across the face, chest, and groin, severe pancytopenia, and marked hepatosplenomegaly that failed to respond to multiple broad-spectrum antibiotics and corticosteroids. The clinical triad of fever, cytopenias, and splenomegaly strongly mimics a primary hematologic malignancy (such as myelodysplastic syndrome or acute leukemia), hemophagocytic lymphohistiocytosis, or systemic auto-inflammatory disease.\n2. Admission Breakpoint: The breakpoint occurs at the time of admission to the tertiary medical center, with documentation of persistent fevers, rash, pancytopenia, high serum ferritin, and ultrasonographic confirmation of hepatosplenomegaly, immediately preceding bone marrow karyotyping, myeloid mutation sequencing, and metagenomic next-generation sequencing.\n3. Differential Distinctions: Hematologic malignancies and myelodysplastic syndrome (MDS) present with cytopenias, dyserythropoiesis, and organomegaly, but feature clonal cytogenetic or molecular mutations and lack intracellular amastigotes. Severe bacterial or viral sepsis often produces cytopenias but responds to broad-spectrum antimicrobials or exhibits identifiable viral titers. Visceral leishmaniasis uniquely presents in endemic mountainous regions with chronic undulating fever, hepatosplenomegaly, hyperferritinemia, and progressive pancytopenia secondary to reticuloendothelial protozoal sequestration.",
+  "case_prompt": "A 52-year-old woman residing in Jiuzhaigou, Sichuan Province, China, was admitted to a tertiary hospital for evaluation of prolonged fever of unknown origin and worsening pancytopenia. Six days prior to transfer, she developed acute-onset high fever peaking at 39.6°C, accompanied by chills, shivering, cough, sputum production, fatigue, and dyspnea. She also noted an extensive rash involving her face, chest, and groin. At an outside hospital, initial chest computed tomography, urinary ultrasound, and brain magnetic resonance imaging showed no acute abnormalities. Treatment with intravenous ceftriaxone, clindamycin, and methylprednisolone resulted in resolution of her respiratory symptoms, but high spiking fevers persisted unabated.\n\nHer past medical history was notable for hypertension, type 2 diabetes mellitus, and chronic mild anemia; her daughter had a history of thalassemia.\n\nOn physical examination upon admission, the patient was febrile and appeared moderately ill. A maculopapular rash was visible over the face, anterior chest, and inguinal regions. Abdominal examination revealed non-tender hepatosplenomegaly, which was confirmed on abdominal color Doppler ultrasound and repeat chest/abdominal CT.\n\nLaboratory studies demonstrated marked pancytopenia with decreased white blood cells, red blood cells, hemoglobin, and platelets. Serum ferritin was markedly elevated, while concentrations of serum folic acid and vitamin B12 were within normal parameters. An initial bone marrow aspiration revealed a low proliferation rate of nucleated cells, a decreased myeloid-to-erythroid ratio, abnormal erythroblast morphology, decreased marrow iron stores, and impaired megakaryocyte platelet production.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Myeloid blood neoplasm / Myelodysplastic syndrome (MDS)",
+      "rule_out_reason": "Considered due to progressive pancytopenia, hepatosplenomegaly, and dysplastic erythroid morphology (>10%) on marrow aspirate, but excluded by normal bone marrow chromosome karyotyping and negative myeloid gene mutation panels.",
+      "quote": "the bone marrow aspiration smear showed active bone marrow hyperplasia and some dysplastic changes (>10%) in erythroid cells... no significant abnormality was seen in the bone marrow chromosome karyotyping and gene mutation analysis in myeloid blood diseases."
+    },
+    {
+      "candidate": "Bacterial sepsis / Pneumonia",
+      "rule_out_reason": "Considered initially given high fever, chills, cough, and sputum production, but excluded by lack of pulmonary infiltrates on chest CT and failure of fevers to remit on empiric ceftriaxone, clindamycin, piperacillin/tazobactam, and moxifloxacin.",
+      "quote": "antibiotics ceftriaxone sodium and clindamycin were used for anti-infection... However, the fever was not on the mend... the patient was administered piperacillin sodium/tazobactam sodium and moxifloxacin for anti-infection... The patient's fever had not been remitted."
+    },
+    {
+      "candidate": "Influenza / Acute viral infection",
+      "rule_out_reason": "Considered during admission and empirically treated with oseltamivir, but fever persisted without improvement.",
+      "quote": "oseltamivir for anti-influenza... The patient's fever had not been remitted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing of cell-free DNA and RNA detected thousands of genus-specific reads, which was subsequently corroborated by a positive rK39 serological dipstick and direct identification of protozoa on repeat bone marrow smear review.",
+      "quote": "peripheral blood mNGS was performed, and 11,552 reads of Leishmania genus-specific sequence were detected in microbial cell-free deoxyribonucleic acid (mcfDNA), and 7,509 reads were detected in microbial cell-free ribonucleic acid (mcfRNA)... the RK39 antibody test showed a positive result. After repeated examinations on the bone marrow aspiration smears, Leishmania was found"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to day of transfer, stopping prior to bone marrow karyotyping, mNGS, and rK39 serological confirmation."
+}

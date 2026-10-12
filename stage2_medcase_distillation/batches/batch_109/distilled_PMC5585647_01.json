@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5585647_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A pregnant female presenting in the third trimester with extreme cachexia, acute right lower quadrant peritonitis, and an inflammatory fluid collection, strongly mimicking perforated appendicitis or an obstructing colonic adenocarcinoma, masking primary extrapulmonary intestinal tuberculosis.\n2. Admission Breakpoint: Admission clinical evaluation and emergency obstetric/abdominal ultrasonography, strictly prior to emergency exploratory laparotomy, right hemicolectomy, and histopathologic examination of the resected bowel.\n3. Differential Distinctions: Acute perforated appendicitis and colonic malignancy cause localized right-sided peritonitis and mesenteric adenopathy, but laparotomy demonstrated a normal appendix, and histopathologic analysis showed caseating granulomatous caecal tuberculosis without neoplastic changes.",
+  "case_prompt": "A 31-year-old female at 29 weeks and 6 days of gestation presents with acute, severe right-sided abdominal pain radiating to the right lumbar region, accompanied by dyspnea, near-syncope, and reduced exercise tolerance over the preceding week. She had registered for antenatal care at 15 weeks gestation with severe malnutrition (booking weight 36 kg, BMI 15.53 kg/m²), reporting a 3-month history of intermittent dull right abdominal pain, diarrhea, and marked unintentional weight loss of 20 kg. She had been treated twice for presumptive acute gastroenteritis at a primary clinic without relief. She has been compliant with prenatal oral hematinics and denies dysuria, hematuria, hematemesis, or hematochezia.\nOn examination, she appears pale, febrile, and acutely ill. Uterine fundal height corresponds to 30 weeks gestation, and fetal heart sounds are normal without signs of preterm contractions. Abdominal examination reveals marked tenderness and voluntary guarding localized to the right lumbar region; renal angle tenderness (punch) is negative.\nLaboratory investigations reveal severe anemia and leukocytosis: hemoglobin 7.4 g/dL and total white blood cell count 15.87 x 109. Recent peripheral blood film demonstrated normochromic, normocytic anemia with normal serum ferritin. Bedside obstetric ultrasound confirms a single viable intrauterine fetus appropriate for gestational age. Urgent abdominal ultrasonography reveals a heterogeneous collection in the subhepatic region and multiple enlarged mesenteric lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Perforated Appendicitis",
+      "rule_out_reason": "Acute right lower quadrant peritonitis, fever, leukocytosis, and a subhepatic inflammatory collection strongly suggested perforated appendicitis in pregnancy; however, surgical exploration revealed a completely normal appendix.",
+      "quote": "A diagnosis of likely perforated appendicitis was made and she underwent an emergency laparotomy."
+    },
+    {
+      "candidate": "Perforated Cecal Malignancy / Colonic Carcinoma",
+      "rule_out_reason": "Intraoperative identification of a firm, hard cecal mass with irregular contours in the setting of 20 kg unintentional weight loss raised suspicion for advanced colon cancer; however, histopathology demonstrated caseating mycobacterial infection rather than malignant cells.",
+      "quote": "The intraoperative finding was that of a perforated caecal tumour. The tumour was firm and hard with irregular margins and surface."
+    },
+    {
+      "candidate": "Chronic Infectious Gastroenteritis",
+      "rule_out_reason": "Intermittent abdominal pain and diarrhea were repeatedly treated as routine acute enteritis, but failed to explain severe weight loss, transmural bowel necrosis, and mesenteric lymphadenopathy.",
+      "quote": "Her primary healthcare provider at the district maternal and child health clinic subsequently treated her for acute gastroenteritis twice in the following weeks, but she experienced no improvement in her symptoms."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency exploratory laparotomy, right hemicolectomy, and definitive histopathological examination demonstrating primary caecal tuberculosis, in the setting of negative chest radiography, negative sputum AFB, and non-reactive Mantoux testing.",
+      "quote": "The histopathological examination showed caecal tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly stops prior to exploratory laparotomy and histopathology. Zero mentions of tuberculosis or mycobacteria."
+}

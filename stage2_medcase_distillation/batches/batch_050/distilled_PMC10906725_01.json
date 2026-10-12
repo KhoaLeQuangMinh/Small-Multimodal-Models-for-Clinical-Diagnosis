@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10906725_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 64-year-old male farmer presents with high fever, throbbing headache, cough with sputum, and progressive somnolence, failing outpatient cephalosporins. Despite clinical signs of pneumonia, persistent high fever and neurological decline (drowsiness, disorientation) emerge without typical eschar, negative standard serologies, and negative Weil-Felix test. The tension lies in distinguishing sepsis-associated encephalopathy or acute viral/bacterial encephalitis from occult vector-borne rickettsial encephalitis (Scrub Typhus).\n2. Admission Breakpoint: Admission triage ends following respiratory department admission, baseline lab panels (WBC 10.94 x 10^9/L, elevated CRP, PCT, transaminitis, hyponatremia 125 mmol/L, coagulopathy), chest imaging indicating pneumonia, and initial brain MRI, immediately before lumbar puncture CSF testing, extended viral PCRs, and CSF mNGS.\n3. Differential Distinctions: Bacterial pneumonia with sepsis-associated encephalopathy fails to account for persistent 39\u00b0C fever and progressive CNS decline unresponsive to carbapenems. Viral encephalitis shows negative viral PCRs and fails acyclovir. Occult Scrub Typhus encephalitis in farmers is unmasked by metagenomic next-generation sequencing detecting Orientia tsutsugamushi.",
+  "case_prompt": "A 64-year-old male farmer who regularly worked in agricultural fields presented with acute cough productive of yellow sputum, throbbing headaches, high fever reaching approximately 39\u00b0C, chills, generalized fatigue, abdominal bloating, and anorexia. He had initially sought care at a local clinic where acute bronchitis was diagnosed; treatment with oral cephalosporins and ambroxol had resulted in no clinical improvement. Outpatient physical examination revealed slight erythematous punctate lesions on his lower extremities resembling insect bite marks, without generalized rash. On admission physical examination, coarse breath sounds were audible bilaterally without rales, and systemic exam was otherwise unremarkable. Initial laboratory evaluation demonstrated a leukocyte count of 10.94 x 10^9/L (82.4% neutrophils, 14.2% lymphocytes), elevated C-reactive protein of 52.69 mg/L, procalcitonin of 0.998 ng/mL, alanine aminotransferase of 74 U/L, aspartate aminotransferase of 50 U/L, serum albumin of 28.7 g/L, serum sodium of 125.0 mmol/L, prothrombin time of 15.1 seconds, activated partial thromboplastin time of 54.2 seconds, fibrinogen degradation products of 17.14 ug/mL, and D-dimer of 4490 ng/mL. Chest imaging demonstrated pneumonia without focal masses. Brain magnetic resonance imaging revealed multiple ischemic lesions, bilateral mastoiditis, and slight bleeding in the left frontal lobe, without diffusion restriction on diffusion-weighted imaging.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Pneumonia with Sepsis-Associated Encephalopathy",
+      "rule_out_reason": "Primary initial admission diagnosis given productive cough, infiltrates on chest imaging, elevated procalcitonin, and high inflammatory markers; ruled out when persistent high fever (38-39\u00b0C), worsening lethargy, and drowsiness progressed despite escalation to meropenem and levofloxacin.",
+      "quote": "Based on the above findings, we believed that the patient was suffering from inflammation and infection, electrolyte imbalance, and the main diagnosis upon admission was: 1. Pneumonia, 2. Hypokalemia."
+    },
+    {
+      "candidate": "Acute Viral Encephalitis (Herpes Simplex / Enterovirus)",
+      "rule_out_reason": "Considered due to progressive somnolence, fever, headache, and cloudy sensorium; ruled out by negative CSF viral PCR panel for HSV-1, HSV-2, VZV, EBV, CMV, HHV-6, and HHV-7, and lack of response to intravenous acyclovir.",
+      "quote": "negative findings from cerebrospinal fluid PCR testing for HSV-1, HSV-2, VZV, EBV, CMV, HHV-6, HHV-7, Orientia tsutsugamushi, no pathogens were cultivated during the process. the possibility of intracranial infection could not be ruled out. Considering the patient's medical history and laboratory results, and observing the clinical response to antibacterial and antiviral treatment, the possibility of common bacterial, viral, fungal, and tuberculosis infections was eliminated."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Orientia tsutsugamushi Encephalitis (Scrub Typhus)",
+      "rule_out_reason": "Detection of specific sequence reads for Orientia tsutsugamushi in cerebrospinal fluid by metagenomic next-generation sequencing (mNGS), followed by prompt defervescence and full neurological recovery within 48 hours of starting doxycycline, confirmed Scrub Typhus encephalitis.",
+      "quote": "With the consent of the patient and family, the cerebrospinal fluid sample was sent for mNGS testing, which detected 2 reads of specific sequences of Orientia tsutsugamushi (Figure 3), which resulted in a diagnosis of Orientia tsutsugamushi encephalitis."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10906725_01. The admission narrative stops after the respiratory department admission workup, triage labs, and initial brain MRI, strictly concealing CSF studies, mNGS results, and antibiotic escalation. Direct quotes verified verbatim."
+}

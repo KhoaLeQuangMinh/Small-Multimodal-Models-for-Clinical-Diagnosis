@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10831199_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old woman from an endemic area (Nepal) presented with subacute meningitis, cranial nerve VI palsy, and elevated intracranial pressure, yet initial chest CT showed no pulmonary lesions, CSF adenosine deaminase was normal, and initial CSF nucleic acid amplification was negative. This presentation raised tension between bacterial, viral, and tuberculous meningoencephalitis, where false-negative rapid testing risked catastrophic treatment delays.\n2. Admission Breakpoint: The breakpoint occurs following emergency department triage, baseline metabolic and serologic tests, initial head and chest CT imaging, and initial lumbar puncture revealing turbid CSF with lymphocytic pleocytosis and hypoglycorrhachia, immediately prior to send-out molecular NAAT, viral PCR, microbiological cultures, and repeat imaging.\n3. Differential Distinctions: Acute pyogenic bacterial meningitis was ruled out by marked lymphocytic predominance (81%) and clinical failure on high-dose vancomycin and ceftriaxone. Viral meningoencephalitis was considered given lymphocytic pleocytosis but was refuted by severe hypoglycorrhachia, intracranial hypertension (opening pressure 36 cm H2O), lack of response to acyclovir, and basilar leptomeningeal enhancement on MRI. Neurosyphilis was excluded by non-reactive VDRL. Tuberculous meningitis was confirmed by clinical turnaround on HRZE and eventual isolation of Mycobacterium tuberculosis complex in CSF culture.",
+  "case_prompt": "A 27-year-old woman originally from Nepal with no significant past medical history presented to the emergency department with a 2-week history of worsening fatigue, altered sensorium, dizziness, recurrent vomiting, fever, generalized holocranial headache, and photophobia.\n\nOn physical examination, the patient was febrile (temperature 38.4 °C) and hypertensive with a blood pressure of 164/95 mmHg. She was prostrate but responsive to verbal stimuli with purposeful movements in all four extremities, corresponding to a Glasgow Coma Scale score of 13. Ophthalmic and neurological examination demonstrated bilateral exophthalmos and an isolated palsy of the left sixth cranial nerve. Significant meningismus was present, evidenced by marked neck stiffness and positive Kernig and Brudzinski signs.\n\nInitial triage laboratory evaluation revealed no marked elevation in peripheral inflammatory markers, but demonstrated mild hyponatremia accompanied by elevated urinary sodium excretion. Serologic testing for common viral pathogens and the Venereal Disease Research Laboratory (VDRL) test were negative. Contrast-enhanced computed tomography of the brain was normal. Chest CT demonstrated no pleuroparenchymal infiltrates or cavitary changes. An urgent lumbar puncture was performed yielding turbid cerebrospinal fluid (CSF); initial cytochemical analysis demonstrated pleocytosis with 81% lymphocytic predominance, markedly low glucose concentration, elevated protein, and a normal adenosine deaminase level.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Considered due to acute-to-subacute febrile presentation with severe meningism, cranial neuropathy, and turbid CSF; however, CSF cytochemistry showed marked lymphocytic predominance (81%) rather than neutrophilia, and the patient failed to improve on empiric meningeal doses of vancomycin and ceftriaxone.",
+      "quote": "The patient was hospitalized with meningeal doses of vancomycin, ceftriaxone, and acyclovir. Despite therapy initiated on the fourth day of admission, she continued to have a fever, neurological deterioration, and signs of increased intracranial pressure... bacteriological, and mycobacteriological cultures."
+    },
+    {
+      "candidate": "Viral Meningoencephalitis",
+      "rule_out_reason": "Lymphocytic CSF pleocytosis, altered consciousness, and normal initial head CT strongly suggested viral meningoencephalitis; however, marked hypoglycorrhachia, severe intracranial hypertension (opening pressure 36 cm H2O), progression despite acyclovir, and basilar leptomeningeal enhancement on MRI were incompatible.",
+      "quote": "Considering viral meningoencephalitis or TBM as the most likely diagnosis, anti-tuberculosis drugs (conventional empiric treatment with HRZE) and dexamethasone were initiated at this point while continuing acyclovir. A cranial MRI scan at this time revealed T2 hyperintensity in some sulci, leptomeningeal enhancement, and ventricular enlargement"
+    },
+    {
+      "candidate": "Neurosyphilis",
+      "rule_out_reason": "Subacute basal meningitis presenting with cranial nerve palsy, intracranial hypertension, and lymphocytic pleocytosis can be caused by neurosyphilis; excluded by negative VDRL serology.",
+      "quote": "Viral serologies and venereal disease research laboratory (VDRL) tests were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite initial negative CSF NAAT and normal chest CT, worsening intracranial hypertension (opening pressure 36 cm H2O), persistent lymphocytic hypoglycorrhachia, and cranial MRI demonstrating leptomeningeal enhancement with ventricular enlargement prompted empiric anti-tuberculosis therapy (HRZE) and dexamethasone, leading to dramatic clinical recovery, followed by definitive isolation of Mycobacterium tuberculosis complex from CSF culture on day 25.",
+      "quote": "Repeat LP: worsened lymphocytosis and opening pressure of 36 cm of water... A cranial MRI scan at this time revealed T2 hyperintensity in some sulci, leptomeningeal enhancement, and ventricular enlargement (Figure 2A, 2B). From the tenth day (after 5 days of anti-tuberculosis drugs) with improvement in general condition, regression of signs of increased intracranial pressure, and sustained afebrile state. Only on the twenty-fifth day, the Mycobacterium tuberculosis complex was isolated in CSF culture, confirming TBM and secondary hyponatremia."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation completed following Stanford MedCaseReasoning principles. The admission prompt includes epidemiological context, vital signs, physical signs of intracranial hypertension, and baseline CSF cytochemistry, while strictly excluding send-out NAAT results and pathogen names. Exact text quotes support all differential candidates and the pivot."
+}

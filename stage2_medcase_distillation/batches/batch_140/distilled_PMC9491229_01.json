@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9491229_01",
+  "disease": "Echinococcosis",
+  "think": "<think>\n1. Core Clinical Tension: A 3-year-old child presents with growth retardation and is found to have discrete radiopaque lesions simultaneously occupying both the lungs and the liver. The diagnostic tension lies in distinguishing congenital cystic abnormalities or pediatric malignant masses with metastatic spread from disseminated multi-organ hydatid cyst disease in an early toddler.\n2. Admission Breakpoint: The breakpoint occurs upon initial clinical presentation and triage diagnostic imaging (radiography demonstrating well-defined radiopacities in both the pulmonary and hepatic beds), immediately prior to surgical intervention and definitive histopathologic/parasitologic examination.\n3. Differential Distinctions: Congenital thoracic or abdominal cysts (such as bronchogenic cysts, pulmonary sequestration, or simple hepatic cysts) typically present as isolated single-organ lesions rather than concurrent bi-cavitary multi-organ disease. Malignant pediatric neoplasms with metastasis (such as hepatoblastoma with pulmonary metastases or neuroblastoma) typically cause constitutional wasting and irregular, invasive solid masses rather than well-demarcated cystic radiopacities. Surgical excision and pathognomonic radiological appearance confirm hydatid cysts.\n</think>",
+  "case_prompt": "<case_prompt>\nA 3-year-old girl presents for medical evaluation due to growth retardation. On physical examination, her vital signs are stable, and she demonstrates poor physical growth parameters for age without other focal physical abnormalities. Initial diagnostic imaging reveals discrete radiopacities involving both the pulmonary parenchyma and the liver.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pediatric Neoplasm with Metastatic Disease (e.g., Hepatoblastoma / Neuroblastoma)",
+      "rule_out_reason": "Considered because a toddler presenting with growth failure and concurrent multi-organ (thoracic and abdominal) space-occupying lesions raises concern for primary pediatric malignancy with metastases; ruled out by smooth, encapsulated cystic radiopacities lacking invasive solid features.",
+      "quote": "A 3-year-old girl presented with growth retardation."
+    },
+    {
+      "candidate": "Congenital Bronchogenic and Hepatic Epithelial Cysts",
+      "rule_out_reason": "Considered as benign non-parasitic cysts of early childhood; however, congenital cystic malformations are usually solitary and isolated to a single organ, whereas simultaneous multi-organ pulmonary and hepatic involvement is classic for larval cestode cysts.",
+      "quote": "Radiologically, a radiopacity consistent with a hydatid cyst was noted in both the lungs and the liver (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was the radiographic demonstration of characteristic multi-organ cystic radiopacities in both the lungs and the liver, confirmed definitively by successful surgical excision.",
+      "quote": "Radiologically, a radiopacity consistent with a hydatid cyst was noted in both the lungs and the liver (Figure 1). The patient underwent surgical treatment to remove the cyst from the lungs and liver."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Clean prompt without pathogen names. Verbatim quotes from source text."
+}

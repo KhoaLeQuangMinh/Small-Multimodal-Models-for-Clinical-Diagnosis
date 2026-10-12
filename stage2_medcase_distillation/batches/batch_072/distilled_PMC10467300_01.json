@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10467300_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: An 18-year-old man presents with persistent, intensely pruritic discrete brown nodules on his genitalia, scrotum, and thighs that have resisted systemic antihistamines, potent topical corticosteroids, topical tacrolimus, and intralesional corticosteroid injections for three months. Because active burrows and papulovesicles have resolved following prior scabicidal therapy, the persistent nodules mimic nodular prurigo (prurigo nodularis), histiocytosis, or cutaneous lymphoma, challenging the clinician to recognize post-scabetic hypersensitivity nodular disease.\n2. Admission Breakpoint: The breakpoint occurs at the referral consultation after documenting the clinical chronology, family/contact history, and physical examination demonstrating discrete genital and scrotal nodules unresponsive to high-potency topical and intralesional corticosteroids, before initiation of systemic targeted immunosuppressive therapy (tofacitinib) and longitudinal clinical follow-up.\n3. Differential Distinctions: Prurigo nodularis, lymphoma (such as lymphomatoid papulosis), or histiocytosis present with refractory pruritic nodules, but typically do not exhibit predilection for the scrotum and penis or follow an antecedent epidemic of nocturnal finger-web papulovesicles among close contacts. Recalcitrant nodular scabies represents a severe delayed-type hypersensitivity reaction to retained mite antigens rather than ongoing active infestation, explaining resistance to conventional anti-inflammatory and scabicidial treatments.",
+  "case_prompt": "An 18-year-old man is referred to a dermatology clinic for evaluation of chronic, severely pruritic nodules that have persisted for 3 months. Three months prior, he developed intensely pruritic erythematous papules, papulovesicles, and small nodules involving the finger web spaces, abdomen, thighs, and external genitalia, characterized by pronounced nocturnal exacerbation of itching. Several close household contacts experienced similar pruritic eruptions concurrently.\n\nHe was treated with topical 10% sulfur ointment applied twice daily for 3 days, repeated after one week for two complete cycles. While the generalized papules and diffuse itching resolved promptly, the nodules on his lower body showed only slight regression and remained intensely pruritic. Over the subsequent two months, the pruritus and nodules proved completely refractory to systemic oral antihistamines, topical tacrolimus ointment, high-potency topical corticosteroids, and multiple intralesional corticosteroid injections with prednisolone.\n\nOn physical examination, vital signs are normal. Cutaneous examination demonstrates multiple discrete, firm, smooth, hyperpigmented brown nodules distributed over the thighs, scrotum, and penis. The finger webs, wrists, and abdomen show complete clearance of earlier papules and burrows, with no secondary impetiginization.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Prurigo Nodularis / Hypertrophic Lichen Planus",
+      "rule_out_reason": "While presenting with intensely pruritic hyperkeratotic or smooth nodules resistant to topical steroids, prurigo nodularis typically spares male genitalia and does not follow a household cluster of nocturnal finger-web papulovesicles.",
+      "quote": "Three months ago, he had intensely pruritic papules, papulovesicles, and nodules over the finger webs, abdomen, thighs, and genitalia, associated with nocturnal exacerbation of itching. Some of his close contacts had similar lesions."
+    },
+    {
+      "candidate": "Active Refractory Mite Infestation",
+      "rule_out_reason": "Active mite infection was initially present and treated, but persistent lesions represented post-infectious immunogenic granulomatous hypersensitivity rather than ongoing replication, evidenced by clearance of burrows and response of the initial rash to sulfur ointment.",
+      "quote": "However, the nodules improved mildly with refractory pruritis that also had poor response to systemic antihistamines, topical tacrolimus, and steroids, as well as intra-nodular injection with prednisolone hereafter."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pathognomonic distribution of treatment-resistant pruritic nodules on the penis and scrotum following resolved scabies, coupled with rapid remission upon targeting JAK-STAT inflammatory pathways with tofacitinib, confirmed recalcitrant nodular scabies.",
+      "quote": "Cutaneous examination revealed multiple discrete brown smooth nodules distributed over the thighs, scrotum, and penis [Figure 1(a)]. He then administered tofacitinib 5 mg, twice daily alone, resulting in evident improvement for the pruritis and nodules on day 3."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation captures post-scabetic nodular hypersensitivity. Zero disease spoilers in prompt."
+}

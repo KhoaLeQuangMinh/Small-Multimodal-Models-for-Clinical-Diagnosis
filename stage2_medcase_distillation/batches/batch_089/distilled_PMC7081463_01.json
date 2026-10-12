@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7081463_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 7-year-old girl in West Bengal presents with a 15-day history of intermittent high fever, headache, projectile vomiting, acute cerebellar ataxia, and diplopia from an isolated right abducens nerve palsy due to raised intracranial pressure. Full-body examination reveals neither rash nor eschar. The central tension is distinguishing acute viral meningoencephalitis / post-infectious acute cerebellitis, intracranial space-occupying lesions, pyogenic/tuberculous meningitis, and enteric encephalopathy from atypical neuro-rickettsial infection (scrub typhus).\n2. Admission Breakpoint: The admission breakpoint occurs following completion of emergency clinical assessment, neurological examination, baseline complete blood counts, metabolic/electrolyte panels, and baseline urinalysis, prior to performing lumbar puncture CSF analyses, cranial MRI, and send-out serological panels for arboviruses, enteric organisms, and rickettsiae.\n3. Differential Distinctions: Acute viral encephalitis (Japanese encephalitis, herpes simplex virus, dengue) is ruled out by negative specific serologic and viral testing and normal neuroimaging. Pyogenic meningitis or enteric fever is excluded by sterile blood, urine, and CSF cultures with absence of neutrophilic CSF pleocytosis. Acute cerebellitis or intracranial mass lesion is excluded by normal brain MRI. The diagnostic pivot is marked serum and CSF Scrub typhus IgM/IgG positivity with dramatic neurological resolution upon switching to doxycycline.",
+  "case_prompt": "A 7-year-old girl from Hooghly district in West Bengal, India, presents with a 15-day history of high-grade fever, difficulty walking for 4 days, and sudden visual disturbance with diplopia for 1 day. The fever has been intermittent, reaching up to 102.4°F (39.1°C), partially responsive to antipyretics, and accompanied by headache and projectile vomiting. Over the 4 days preceding admission, she developed progressive gait unsteadiness with a tendency to fall, culminating in complete inability to walk. She has no prior history of seizures, altered sensorium, trauma, back pain, limb weakness, tinnitus, vertigo, or ear discharge. Her immunizations are up to date, with no recent vaccinations, developmental delay, or similar illnesses in the family.\n\nOn physical examination, the child is febrile, irritable, and acutely ill. Vital signs reveal a body temperature of 102.4°F, pulse rate of 120 beats per minute, blood pressure of 117/80 mmHg (above the 95th percentile for age, sex, and height), and respiratory rate of 24 breaths per minute. A thorough full-body dermatologic examination, including flexural folds, scalp, and external genitalia, reveals no rash, petechiae, neurocutaneous markers, or necrotic skin lesions.\n\nOn neurological examination, she is alert and oriented to time, place, and person with intact higher cognitive functions. Motor examination reveals normal muscle bulk, tone, and power throughout, with normal deep tendon and superficial reflexes. Sensory testing is intact across all modalities. Cranial nerve examination reveals an isolated right sixth cranial nerve palsy with a latent convergent squint on right lateral gaze; fundoscopy reveals no papilledema. Cerebellar examination demonstrates marked truncal and appendicular ataxia, with an unsteady gait, inability to perform tandem walking, dysdiadochokinesia, and past-pointing on finger-to-nose testing. Nuchal rigidity is present, though Kernig's and Brudzinski's signs are negative. Abdominal, cardiovascular, and respiratory examinations are normal, with no hepatosplenomegaly.\n\nInitial laboratory evaluation demonstrates moderate microcytic hypochromic anemia with hemoglobin of 7.2 g/dL, leukocytosis with a total leukocyte count of 15,010/µL (62% neutrophils, 32% lymphocytes, 4% monocytes, 2% eosinophils), and a normal platelet count. Serum electrolytes, renal function tests, and liver function panels are within normal limits for age. Urinalysis is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Encephalitis (Japanese Encephalitis / HSV / Dengue)",
+      "rule_out_reason": "High fever, headache, meningismus, raised intracranial tension, and acute cerebellar signs in an endemic region suggested an arboviral or herpesvirus central nervous system infection, but specific testing for Japanese encephalitis, Herpes simplex, and dengue was negative.",
+      "quote": "Tests for dengue and typhoid, Japanese encephalitis, Herpes simplex, and human immunodeficiency virus were performed as per routine investigations for fever, all of which were negative."
+    },
+    {
+      "candidate": "Acute Pyogenic Meningitis / Enteric Fever",
+      "rule_out_reason": "Marked leukocytosis, neck stiffness, and high fevers raised concern for bacterial meningitis or complicated typhoid fever, but blood, urine, and CSF cultures yielded no bacterial growth.",
+      "quote": "Blood culture revealed no growth. Urinalysis was normal and urine culture revealed no growth."
+    },
+    {
+      "candidate": "Acute Post-Infectious Cerebellitis / Posterior Fossa Mass",
+      "rule_out_reason": "Rapid-onset ataxia and sixth cranial nerve palsy suggested isolated cerebellar inflammation or a posterior fossa space-occupying lesion, but magnetic resonance imaging of the brain was completely normal.",
+      "quote": "Magnetic resonance imaging brain showed no abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detection of positive scrub typhus IgM in peripheral blood together with positive scrub typhus IgM and IgG in the cerebrospinal fluid established the diagnosis of neuro-scrub typhus with acute cerebellar ataxia and intracranial hypertension.",
+      "quote": "Blood for Scrub typhus was IgM-Positive."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission CSF examination, neuroimaging, send-out serologies, and pathogen labels."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11614787_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 68-year-old female smoker with breast cancer in remission presenting with 3 months of thoracic back pain, elevated inflammatory markers, hypercalcemia, and incidental sclerotic bone lesions involving the sternum and thoracic vertebrae on routine lung cancer screening CT. The clinical tension lies in differentiating bone metastasis or myeloma from pyogenic osteomyelitis and atypical mycobacterial spondylodiscitis with sternal involvement, especially when open bone biopsies and tissue stains for acid-fast bacilli are completely negative.\n2. Admission Breakpoint: The presentation ends after initial history, physical exam, baseline laboratory results (anemia, elevated creatinine, hypercalcemia, high ESR/CRP, negative initial blood cultures), and screening CT findings, immediately prior to spine MRI, bone biopsies, and interferon-gamma release assays.\n3. Differential Distinctions: Differentiating atypical tuberculous spondylodiscitis from metastatic breast cancer or multiple myeloma (considered due to cancer history, hypercalcemia, and sclerotic endplate lesions), acute pyogenic spondylodiscitis (ruled out by disc sparing, chronic duration, and negative bacterial cultures), and Brucella spondylitis (ruled out by serology).",
+  "case_prompt": "A 68-year-old woman with a history of breast cancer in remission and a 50 pack-year smoking history presented for her annual low-dose chest CT lung cancer screening. She reported a 3-month history of progressively worsening mid-thoracic back pain, while denying fevers, chills, cough, dyspnea, weight loss, or neurological symptoms. Physical examination revealed normal vital signs and focal midline tenderness to palpation over the thoracic spine and sternomanubrial junction, with no overlying erythema, induration, or fluctuance. Laboratory evaluation revealed a normal white blood cell count, normocytic anemia with hemoglobin of 10.2 g/dL and hematocrit of 31.6%, elevated serum creatinine at 1.4 mg/dL, elevated serum calcium at 10.9 mg/dL, and marked elevation of inflammatory markers with an erythrocyte sedimentation rate of 85 mm/h and C-reactive protein of 11.34 mg/dL. Initial blood cultures showed no growth. Low-dose chest CT showed unremarkable lung parenchyma without consolidations or nodules, but revealed incidental erosive changes and multilevel sclerotic vertebral and sternomanubrial lesions suspicious for spondylodiscitis and osteomyelitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Breast Cancer / Multiple Myeloma",
+      "rule_out_reason": "Considered given cancer history, hypercalcemia, and destructive bone lesions, but spine MRI demonstrated characteristic inflammatory bone marrow edema and phlegmon involving endplates rather than neoplastic infiltration.",
+      "quote": "The intrathoracic CT findings were unremarkable without airspace consolidations, nodules, or adenopathy. However, incidental findings of erosive changes and multilevel sclerotic vertebral and sternomanubrial lesions were noted to be suspicious for spondylodiscitis and osteomyelitis"
+    },
+    {
+      "candidate": "Pyogenic Bacterial Spondylodiscitis / Brucellosis",
+      "rule_out_reason": "Considered as primary infectious etiologies, but blood cultures, Karius microbial cell-free DNA, Brucella serologies, and bone biopsy cultures/stains were negative.",
+      "quote": "Bacterial gram stain and culture as well as examination for acid fast bacilli of both biopsy specimens returned negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Strongly positive QuantiFERON-TB Gold Plus assay, disclosure of occupational exposure in correctional settings, disc-sparing vertebral endplate MRI findings, and prompt clinical/biochemical response to empiric antitubercular therapy confirmed the diagnosis.",
+      "quote": "Only pertinent positive finding was a strong QUANTIFERON TB Gold+ results with 2 antigen concentrations of 2.07 IU/mL and 1.75 IU/mL respectively (reference range of < 0.35 IU/mL)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for presumed tuberculous spondylitis with sternomanubrial osteomyelitis. Breakpoint strictly set before spine MRI and biopsy. Exact quotes validated."
+}

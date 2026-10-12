@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4217363_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 24-year-old woman presented with an indolent 2-month painful swelling of the right sternoclavicular joint accompanied by neck stiffness, low-grade fevers, night cries, cough, and weight loss refractory to multiple outpatient antibiotic regimens. Neuroimaging and skeletal imaging revealed multi-level noncontiguous osseous and spinal destruction (atlantoaxial junction, D7-D8 discitis, and D5-D8 prevertebral collection) along with apical pulmonary infiltrates, mimicking pyogenic multifocal osteomyelitis or metastatic bone neoplasia.\n\n2. Admission Breakpoint: Admission triage concludes with physical examination, admission blood counts, inflammatory markers, HIV serology, plain clavicular/chest radiography, and cervical/thoracic spinal MRI. Confirmatory testing begins with early morning sputum Ziehl-Neelsen staining and fine-needle aspiration cytology/microbiology of the sternoclavicular mass.\n\n3. Differential Distinctions: Pyogenic bacterial osteomyelitis and septic arthritis were ruled out by lack of response to prior antibiotic therapy, absence of pyogenic bacterial growth, and characteristic caseating granulomatous pathology. Disseminated osseous malignancy was excluded by FNA histology revealing chronic granulomatous inflammation with caseation and acid-fast bacilli, confirming disseminated multicentric skeletal and pulmonary mycobacterial disease.",
+  "case_prompt": "A 24-year-old woman presented to an outpatient medical center with a 2-month history of progressive painful swelling overlying the right sternoclavicular joint without discharging sinus tracts. The swelling had enlarged gradually, accompanied by a dull, continuous localized ache. She also noted persistent neck stiffness and pain provoked by cervical motion. Over the preceding four months, she endorsed a chronic cough, low-grade fever, substantial weight loss, and recurrent awakenings from severe nocturnal pain ('night cries'). There was no history of trauma, no prior chronic pulmonary illness, and no known sick contacts. She had completed several outpatient courses of empiric antibacterial agents and analgesics without clinical improvement.\n\nOn physical examination, a 2 x 3 cm firm, tender mass was palpable over the right sternoclavicular joint with overlying erythema and local hyperthermia. Marked cervical spine stiffness with limitation of motion was evident. Systemic examination was otherwise unremarkable.\n\nLaboratory tests revealed a hemoglobin level of 10.4 g/dL, a total leukocyte count of 10,300/mm³, and an erythrocyte sedimentation rate (ESR) of 34 mm in the first hour. An ELISA test for human immunodeficiency virus (HIV) was negative.\n\nPlain radiography demonstrated bony destruction and reactive sclerosis involving the medial head of the right clavicle, alongside diffuse pulmonary infiltrates. Magnetic resonance imaging (MRI) revealed bilateral upper-lobe pulmonary infiltrates, inflammatory arthritis of the right sternoclavicular joint with an associated periarticular fluid collection, destructive changes at the atlantoaxial junction, and D7-D8 intervertebral disc collapse with a prominent prevertebral and paravertebral fluid collection extending from D5 to D8.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Osteomyelitis and Septic Arthritis",
+      "rule_out_reason": "Bony destruction of the sternoclavicular joint and multiple spinal levels accompanied by local erythema, warmth, and systemic inflammation suggested acute-to-subacute bacterial osteomyelitis; however, the patient failed to respond to multiple empiric antibiotic courses, and joint aspiration demonstrated granulomatous caseation rather than pyogenic bacterial suppuration.",
+      "quote": "She had been prescribed several antibiotics and analgesics at another centre but had no symptomatic improvement."
+    },
+    {
+      "candidate": "Disseminated Skeletal Malignancy / Lymphoma / Ewing Sarcoma",
+      "rule_out_reason": "Multifocal noncontiguous osseous destruction involving the clavicle and multiple spinal levels with constitutional 'B-symptoms' (fever, weight loss) strongly mimicked metastatic neoplasia or primary bone malignancy; however, cytological evaluation of the clavicular aspirate showed caseating granulomas with acid-fast bacilli and no neoplastic cells.",
+      "quote": "The histologic picture was that of chronic inflammation with a caseating granuloma compatible with tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic confirmation was achieved when an early morning sputum specimen demonstrated acid-fast bacilli on Ziehl-Neelsen staining, and fine-needle aspiration of the sternoclavicular lesion demonstrated classic caseating granulomas with identifiable acid-fast bacilli, establishing multicentric spinal and sternoclavicular tuberculosis with concomitant active pulmonary disease.",
+      "quote": "An early morning sputum sample was sent for Ziehl-Neelsen (ZN) staining and it came out positive suggesting the diagnosis of pulmonary tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning methodology. Admission breakpoint cleanly separates clinical history, exam, labs, and MRI findings from sputum smear microscopy, fine needle aspiration cytology, and acid-fast staining."
+}

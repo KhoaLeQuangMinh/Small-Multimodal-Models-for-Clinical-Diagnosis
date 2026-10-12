@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9629952_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 20-year-old postpartum woman presents 1 week after a cesarean section with high fever, marked ascites, peritoneal/omental thickening, mesenteric lymphadenopathy, and elevated CA-125, strongly mimicking advanced peritoneal carcinomatosis or postpartum pyogenic peritonitis/sepsis. The core tension lies in recognizing disseminated extrapulmonary mycobacterial disease presenting in the puerperium masquerading as pelvic/peritoneal malignancy.\n\n2. Admission Breakpoint: The breakpoint occurs following emergency room presentation, physical examination, initial laboratory workup, chest radiograph, and CT scans of the chest and abdomen/pelvis, prior to diagnostic paracentesis fluid analysis, tumor marker assays, send-out serologies, mycobacterial PCR, or diagnostic laparoscopy.\n\n3. Differential Distinctions: Peritoneal carcinomatosis produces omental cake, ascites, and elevated CA-125, but displays malignant cells on cytology and lacks apical tree-in-bud lung nodules. Bacterial postpartum peritonitis causes acute fever and elevated procalcitonin, but yields bacterial growth and responds to broad-spectrum antimicrobials. Extrapulmonary tuberculosis presents with lymphocytic exudative ascites, elevated ascitic ADA, and caseating granulomas on peritoneal biopsy.",
+  "case_prompt": "A 20-year-old postpartum Hispanic woman residing in Laredo, Texas, on the Mexican border, presents to the emergency room with recurrent fevers, chills, abdominal distension, bilateral lower extremity swelling, nausea, nonbloody emesis, and watery diarrhea.\n\nShe was discharged 1 week prior following an uncomplicated primary low transverse cesarean section at 37.6 weeks of gestation. She reports no prior medical conditions, no use of alcohol or illicit drugs, no known sick contacts, no recent travel to Mexico, and no family history of malignancy.\n\nOn physical examination, the patient is febrile with a temperature of 102.0 °F, tachycardic with a heart rate of 129 beats per minute, and has a blood pressure of 104/56 mm Hg. Physical examination reveals generalized lymphadenopathy and bilateral pulmonary rales and rhonchi. The abdomen is distended and tender, with shifting dullness and a positive fluid wave sign. The liver and spleen are not palpable. There is 3+ bilateral peripheral pitting edema. Stigmata of chronic liver disease (jaundice, palmar erythema, spider angiomatosis) are absent.\n\nInitial laboratory evaluation reveals a microcytic, hypochromic anemia (hemoglobin 9.5 g/dL, hematocrit 30.8%) with anisopoikilocytosis. Platelet count is 305 × 10^3/µL and white blood cell count is 7.92 × 10^3/µL (80% neutrophils, 9.3% lymphocytes). Inflammatory markers are elevated: procalcitonin 10.68 ng/mL (normal range 0–0.5 ng/mL), C-reactive protein 13.39 mg/dL (normal range 0.2–0.9 mg/dL), and erythrocyte sedimentation rate (ESR) 29 mm/h. Total plasma protein and albumin are low at 4.5 g/dL and 2.33 g/dL, respectively. A 24-hour urine protein collection yields 0.4 g/24 h. Renal function, liver function, and electrolytes are within normal limits.\n\nChest radiography demonstrates diffuse alveolar and interstitial opacities in both lungs, prominent in the upper lobes and right perihilar region. Chest CT reveals extensive bilateral infiltrates with a tree-in-bud configuration. Abdominal/pelvic CT demonstrates marked ascites, colonic wall thickening, omental thickening, peritoneal thickening, and mesenteric lymphadenopathy, without hepatosplenomegaly or cirrhosis. Transthoracic echocardiogram shows a left ventricular ejection fraction of 65% with mild valvular regurgitation and no pericardial effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal Carcinomatosis / Ovarian Malignancy",
+      "rule_out_reason": "Initial radiological appearance of marked ascites, omental thickening, peritoneal thickening, and mesenteric lymphadenopathy initially suggested carcinomatosis, especially in the context of an elevated CA-125 level (199.5 U/mL); however, ascitic fluid cytology was negative for malignant cells and peritoneal biopsy revealed granulomatous inflammation.",
+      "quote": "A CT scan of the abdomen/pelvis demonstrated ascites, colonic wall thickening, omental thickening, peritoneal thickening, and mesenteric lymphadenopathy, initially read by radiology as suggestive of carcinomatosis and consistent with the elevated CA-125 level (Figures 3 and 4)."
+    },
+    {
+      "candidate": "Postpartum Bacterial Sepsis / Pyogenic Peritonitis",
+      "rule_out_reason": "Suspected due to recent cesarean section, high fever, abdominal tenderness, and high procalcitonin (10.68 ng/mL); however, blood, urine, and vaginal cultures yielded no bacterial growth, and empiric broad-spectrum antibiotic therapy failed to control fevers.",
+      "quote": "The patient was admitted with a presumed diagnosis of sepsis secondary to bilateral pneumonia and ascites of undetermined etiology. The patient was started on treatment empirically with broad spectrum intravenous antibiotics, vancomycin, and piperacillin-tazobactam."
+    },
+    {
+      "candidate": "Endemic Zoonoses and Tick-Borne Infections (Rickettsia typhi, RMSF, Q Fever, Syphilis, Viral Hepatitis)",
+      "rule_out_reason": "Given the patient's residence along the border and systemic febrile presentation, regional zoonoses and atypical infections were evaluated and excluded by negative serologies.",
+      "quote": "Blood tests for syphilis, Rickettsia typhi, Rocky Mountain spotted fever, Q fever, CMV, EBV, HIV, and hepatitis were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic paracentesis revealed lymphocytic ascites with elevated adenosine deaminase (ADA 34.9 U/L) and positive Mycobacteria PCR, followed by positive sputum AFB culture and laparoscopic peritoneal biopsy demonstrating caseating granulomas with positive AFB stain.",
+      "quote": "To confirm the diagnosis of peritoneal TB, the patient underwent a diagnostic laparoscopy with a peritoneal biopsy, which demonstrated an inflammatory response with caseating granulomas and a positive AFB stain, confirming the diagnosis of peritoneal tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero send-out PCR or laparoscopy biopsy in case prompt. Quotes exactly matched text."
+}

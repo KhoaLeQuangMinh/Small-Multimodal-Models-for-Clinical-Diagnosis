@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4279826_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 32-year-old multigravida woman presented with acute severe lower abdominal pain, vaginal bleeding, and hemodynamic distress following 8 weeks of amenorrhea. While initially diagnosed as a typical unilateral ruptured tubal ectopic pregnancy, surgical exploration and histopathology demonstrated bilateral simultaneous ectopic gestations arising on the background of severe parasite-induced granulomatous salpingitis.\n\n2. Admission Breakpoint: Admission triage concludes after emergency clinical resuscitation, bedside pelvic examination, urine pregnancy testing, admission hematocrit/packed cell volume, and urgent abdominopelvic ultrasound. Confirmatory surgical findings at exploratory laparotomy and fallopian tube histopathology represent post-triage interventions.\n\n3. Differential Distinctions: Isolated unilateral ruptured ectopic pregnancy and pelvic inflammatory disease with hemoperitoneum were considered; surgical evaluation revealed bilateral tubal pathology, and histopathological sectioning showed multiple granulomas surrounding calcified ova with terminal spines, definitively establishing chronic urogenital trematode infection (schistosomiasis) as the underlying cause of bilateral tubal distortion.",
+  "case_prompt": "A 32-year-old woman (gravida 4, para 3) presented to the gynecological emergency service with a 4-day history of worsening lower abdominal pain and 2 days of vaginal bleeding following 8 weeks of amenorrhea. Her obstetric history was notable for three uncomplicated prior deliveries.\n\nOn physical examination, she appeared markedly pale, dehydrated, and in moderate distress. Blood pressure was 134/74 mmHg, heart rate 104 beats per minute, and respiratory rate 28 breaths per minute. Abdominal examination revealed generalized lower abdominal tenderness with guarding and rebound tenderness. On bimanual pelvic examination, the cervical os was closed, marked tenderness was elicited in both adnexal fornices, and the pouch of Douglas felt fullness. Precise uterine size could not be assessed due to exquisite guarding.\n\nUrgent bedside urine pregnancy testing was positive. The admission packed cell volume was markedly reduced at 18%. Urgent abdominopelvic ultrasonography demonstrated a bulky uterus measuring 11.37 x 4.83 cm with normal myometrial architecture and an endometrial decidual reaction. A large mixed-echogenicity mass with irregular, ill-defined margins was identified in the right adnexa, accompanied by gross free fluid throughout the dependent peritoneal spaces and cul-de-sac compatible with significant hemoperitoneum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Unilateral Ruptured Ectopic Gestation (Non-infectious)",
+      "rule_out_reason": "The acute presentation of amenorrhea, positive pregnancy test, severe anemia, and ultrasound evidence of a right adnexal mass with hemoperitoneum strongly supported routine isolated right tubal rupture; however, laparotomy identified bilateral fallopian tube pathology, and histopathology demonstrated parasitic egg-induced granulomatous distortion.",
+      "quote": "A large mixed echogenic structure with irregular and ill-defined margins was seen in the right adnexum suggestive of ruptured ectopic gestation with surrounding hematoma."
+    },
+    {
+      "candidate": "Acute Pelvic Inflammatory Disease / Tubo-ovarian Abscess with Hemorrhage",
+      "rule_out_reason": "Bilateral adnexal tenderness, cervical motion tenderness, and cul-de-sac fullness can mimic acute pyogenic salpingo-oophoritis, but the positive pregnancy test, profound hemoperitoneum (2.7 liters), and chorionic villi confirmed bilateral ectopic pregnancy rather than primary bacterial pelvic inflammatory disease.",
+      "quote": "A clinical impression of suspected ruptured tubal gestation was made; urine pregnancy test was positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Exploratory laparotomy revealed a ruptured right tubal gestation and an unsuspected contralateral left fimbrial mass requiring bilateral salpingectomy; histopathologic evaluation confirmed bilateral chorionic villi alongside multiple submucosal granulomas containing calcified terminal-spined ova of Schistosoma haematobium, proving schistosomiasis-induced salpingitis as the mechanical cause of bilateral ectopic implantation.",
+      "quote": "Also seen are multiple granulomas with calcified ova of S. haematobium with their characteristic terminal spines, features consistent with bilateral ectopic gestation with Schistosoma induced salpingitis."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning methodology. Admission presentation strictly captures triage clinical evaluation, packed cell volume, and pelvic ultrasound findings while reserving exploratory laparotomy and histopathological parasite identification for diagnostic reasoning."
+}

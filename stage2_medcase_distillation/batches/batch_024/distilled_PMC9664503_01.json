@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9664503_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 7-year-old child presents with chronic painless swelling and blackish ulcerations across all fingers with loss of nail beds persisting for 6 years since early infancy (8 months of age), accompanied by peripheral nerve thickening and household exposure. The clinical tension lies in distinguishing pediatric neurotrophic ulceration caused by mycobacterial neuropathy from rare genetic self-mutilation syndromes (Lesch-Nyhan), connective tissue diseases (systemic sclerosis), and overgrowth disorders (Proteus syndrome).\n\n2. Admission Breakpoint: The breakpoint occurs during outpatient clinical consultation following physical and neurological examination of the digits and elbow, prior to formal diagnostic assignment and initiation of WHO multi-drug therapy (MDT).\n\n3. Differential Distinctions: Lesch-Nyhan syndrome presents with self-inflicted digital tissue loss but features compulsive biting behavior, spasticity, choreoathetosis, and hyperuricemia, lacking peripheral nerve hypertrophy. Systemic sclerosis features sclerodactyly and digital ulcers but causes severe pain and lacks segmental nerve enlargement. Leprosy is uniquely characterized by the cardinal triad of cutaneous trophic ulcers, anesthesia, and peripheral nerve thickening in an endemic contact setting.",
+  "case_prompt": "A 7-year-old male child is brought to the outpatient department by his parents for evaluation of persistent swelling of all fingers, associated with multiple blackish-colored ulcers on the digits and nails, and complete loss of the distal nail beds.\n\nThese symptoms have been continuously present for 6 years, having first appeared when the child was 8 months old. The child has never complained of pain or tenderness in the fingers or in the cuboidal elbow region. Family history reveals a positive contact history, as his paternal uncle suffered from identical clinical complaints.\n\nOn physical examination, the child is comfortable and afebrile. Neurological and dermatological examination of the upper extremities demonstrates a complete absence of pain sensation in all fingers, palpable enlargement and thickness of the peripheral nerve at the cuboidal site, and multiple recurrent painless ulcerative lesions on the fingers with loss of the fingernails.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lesch-Nyhan Syndrome",
+      "rule_out_reason": "Considered in a young child with chronic loss of terminal digits and painless ulcerations; however, the patient exhibited peripheral nerve hypertrophy, lacked compulsive self-injurious biting behaviors or choreoathetosis, and had a positive household contact history.",
+      "quote": "The final diagnosis was leprosy, while the differentials included Leash Nyhan syndrome, Proteus syndrome and Systemic sclerosis."
+    },
+    {
+      "candidate": "Systemic Sclerosis (Scleroderma)",
+      "rule_out_reason": "Considered due to diffuse swelling of the fingers, digital ulcerations, and loss of nail beds; ruled out by profound sensory loss (cutaneous anesthesia) and palpable thickening of peripheral nerve trunks.",
+      "quote": "The final diagnosis was leprosy, while the differentials included Leash Nyhan syndrome, Proteus syndrome and Systemic sclerosis."
+    },
+    {
+      "candidate": "Proteus Syndrome",
+      "rule_out_reason": "Entertained due to chronic disfiguring digital abnormalities presenting in early infancy; ruled out by classic neurotrophic anesthetic ulcers, peripheral nerve enlargement, and absence of asymmetric mosaic tissue overgrowth.",
+      "quote": "The final diagnosis was leprosy, while the differentials included Leash Nyhan syndrome, Proteus syndrome and Systemic sclerosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The cardinal clinical combination of painless cutaneous anesthesia in the fingers, palpable thickening of the peripheral nerve at the cuboidal site, recurrent trophic finger ulcers, and documented household contact history confirmed the diagnosis of childhood leprosy.",
+      "quote": "Based on the typical symptoms such as no pain sensation in the fingers, thickness of the nerve at the cuboidal site, multiple ulcerative lesions on and off on the fingers, and positive family history of contact, patient is clinically diagnosed with leprosy."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero treatment details in case prompt. Quotes exactly matched text."
+}

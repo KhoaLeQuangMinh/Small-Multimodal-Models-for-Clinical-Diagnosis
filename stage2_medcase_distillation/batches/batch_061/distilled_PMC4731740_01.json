@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4731740_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 4-year-old child presenting with a 1.5-year history of worsening seizures and a massive frontal lobe ring-enhancing mass crossing the corpus callosum with vasogenic edema strongly mimics a high-grade pediatric glial neoplasm (such as glioblastoma or butterfly glioma) or a bacterial brain abscess. The absence of systemic signs, normal baseline labs, normal chest radiograph, and negative Mantoux test make an infectious etiology challenging to suspect.\n2. Admission Breakpoint: Admission triage ends following emergency neurological examination, baseline laboratory tests, chest radiography, and preliminary anatomical brain CT/MRI, before advanced MR spectroscopy, lumbar puncture with molecular testing, or neurosurgical biopsy consultation are conducted.\n3. Differential Distinctions: Intracranial neoplasm (high-grade glioma) was strongly considered due to transcallosal extension but excluded by lack of elevated choline on MRS and presence of infratentorial satellite lesions; pyogenic bacterial abscess was excluded by lack of acute fever, normal inflammatory markers, and normal CSF. The diagnosis pivots on MR spectroscopy displaying a prominent lactate peak with diffuse metabolite suppression, characteristic conglomerate ring-enhancing morphology, and favorable response to anti-tuberculosis therapy.",
+  "case_prompt": "A 4-year-old girl is brought to the hospital with a history of recurrent seizures over the past 18 months. The seizure semiology initially presented as multifocal events with secondary generalization, which gradually evolved into tonic seizures. Over this period, the frequency of episodes increased from once every six months to once every two weeks. There is no accompanying history of fever, vomiting, or headache.\n\nOn physical examination, the child weighs 13 kg (<15th percentile). Vital signs include a blood pressure of 110/70 mmHg. Fundoscopic examination reveals bilateral papilledema, and deep tendon reflexes are brisk symmetrically. There are no focal cranial nerve deficits or motor weakness, and other systemic examinations are unremarkable.\n\nInitial investigations reveal a normal complete hemogram and a normal chest radiograph. Computed tomography (CT) of the brain demonstrates a large conglomerate ring-enhancing focal lesion in the parafalcine frontal cortices, predominantly on the left side, with extensive surrounding white matter hypodensity in both frontal lobes, along with smaller enhancing lesions in the left occipital lobe, left lateral inferior cerebellum, tegmentum of the pons, and right temporal lobe. Magnetic resonance imaging (MRI) of the brain reveals a 5.7 x 3.9 x 4.8 cm heterogeneously hyperintense, peripherally enhancing conglomerate mass in the left frontal parafalcine region extending across the midline into the right frontal lobe and genu of the corpus callosum with patchy restricted diffusion and extensive perilesional vasogenic edema, accompanied by multiple ring- and disc-enhancing lesions throughout the bilateral cerebral and cerebellar parenchyma and right hemipons.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "High-grade glioma / Glioblastoma multiforme",
+      "rule_out_reason": "The large size, butterfly distribution crossing the corpus callosum, mass effect, and extensive vasogenic edema raised strong concern for high-grade glial neoplasm; however, neurosurgical biopsy was deferred due to classic multifocal inflammatory imaging, and the lesion regressed on medical therapy.",
+      "quote": "A neurosurgical opinion for biopsy of lesion was taken, but in view of classical MRI findings, it was deferred."
+    },
+    {
+      "candidate": "Pyogenic brain abscess / Bacterial neuroinfection",
+      "rule_out_reason": "Ring-enhancing cerebral lesions can represent pyogenic abscesses, but the afebrile 18-month chronic course, normal hemogram, normal CSF indices, and lack of acute inflammatory markers argued against bacterial infection.",
+      "quote": "Cerebrospinal fluid (CSF) examination was normal. CSF Gene Xpert revealed no Mycobacterium tuberculosis complex, and TB MGIT was negative for Acid Fast Bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Magnetic resonance spectroscopy demonstrated a distinct lactate double peak with diffuse suppression of all normal metabolite peaks, characteristic of caseating granulomatous lesions, leading to deferred biopsy and subsequent clinical and radiological resolution on antitubercular treatment.",
+      "quote": "Magnetic resonance spectroscopy revealed lactate double peak and diffuse reduction in all the metabolite peaks suggestive of tuberculoma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint preserved before lumbar puncture/MRS/biopsy discussion; all pathogen and tuberculoma mentions omitted from prompt; verbatim quotes matched."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9053555_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 38-year-old woman originating from Sierra Leone presenting with pleuritic chest pain, fever, cough, and marked peripheral eosinophilia 10 years after leaving an endemic area, exhibiting spontaneously migrating nodular consolidations on chest CT that mimic fungal infection, tuberculosis, or eosinophilic pneumonia.\n2. Admission Breakpoint: The presentation ends after initial history, unremarkable physical examination, and admission laboratory findings showing leukocytosis with eosinophilia and elevated CRP, prior to invasive bronchoalveolar lavage, send-out serological panels, and serial imaging documenting lesion migration.\n3. Differential Distinctions: Tuberculosis is excluded by absence of cavitary lesions or calcified adenopathy on chest imaging; viral, bacterial, and atypical zoonotic infections (e.g., Q fever, syphilis) are excluded by negative bronchoalveolar lavage and serology; the migratory pulmonary nodules and eosinophilia in an immigrant from West Africa strongly point toward chronic pulmonary schistosomiasis, confirmed by specific serology and elevated IgE.",
+  "case_prompt": "A 38-year-old woman with a background from Sierra Leone presented to the hospital complaining of pleuritic chest pain, fever, and cough. Her medical history was notable for human immunodeficiency virus infection successfully managed with antiretroviral therapy and a recent subclinical viral respiratory illness. She had emigrated from Sierra Leone 10 years earlier and reported no recent international travel or known sick contacts. Physical examination was unremarkable, with normal vital signs, clear breath sounds, and no lymphadenopathy or cutaneous lesions. Baseline laboratory investigations revealed leukocytosis with peripheral eosinophilia (0.8 x 10^9/L) and an elevated C-reactive protein of 33.7 mg/L. High-resolution computed tomography (HRCT) of the chest obtained shortly after presentation demonstrated multiple nodular zones of consolidation with surrounding ground-glass opacity in the left lower lobe, without cavitary lesions or calcified mediastinal lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculosis",
+      "rule_out_reason": "Considered due to the patient's West African origin and history of treated retroviral infection, but the imaging lacked typical apical cavitary lesions or calcified nodes.",
+      "quote": "No TBC-associated lesions or calcified nodes were observed."
+    },
+    {
+      "candidate": "Atypical and Zoonotic Pulmonary Infections (Q-fever, Syphilis, Viral/Bacterial pneumonias)",
+      "rule_out_reason": "Considered in the differential for febrile nodular pulmonary consolidations, but invasive lavage and comprehensive serologic assays were negative.",
+      "quote": "Further investigation done with a urinary sample, broncho-alveolar lavage, and serological tests (syphilis, hepatitis, Q-fever) concluded negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serial imaging showed migratory nodular pulmonary lesions in the setting of marked eosinophilia in an immigrant from an endemic region, leading to serological confirmation of schistosomiasis and clinical resolution with praziquantel.",
+      "quote": "The serology was eventually positive for schistosomiasis (IgE 556) and treatment was started (Praziquantel) with an interval of two weeks in between doses."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Excellent fidelity to the admission breakpoint principle. The presentation captures the essential clinical clues (West African origin, pleuritic pain, eosinophilia, nodular ground-glass consolidations) while completely omitting confirmatory serology and therapeutic response."
+}

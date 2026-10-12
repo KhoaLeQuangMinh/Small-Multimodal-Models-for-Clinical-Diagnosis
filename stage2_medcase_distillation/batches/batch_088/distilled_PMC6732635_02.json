@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6732635_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 35-year-old woman presents with severe encephalopathy (GCS 10), hyperpyrexia (39.6°C), deep jaundice, severe anemia (Hb 5 g/dL), acute renal failure, and port wine-colored urine after receiving two days of home quinine injections for febrile illness. The negative initial thick blood smear could mislead clinicians toward primary urosepsis or glomerulonephritis rather than severe post-quinine malarial hemolysis (blackwater fever).\n2. Admission Breakpoint: The admission clinical presentation halts after clinical examination, urinary catheterization revealing port wine-colored urine, urine dipstick analysis, and baseline blood chemistries (hemoglobin, glucose, creatinine, urea), immediately prior to parasite-specific rapid diagnostic testing, thick smear evaluation, and hemodialysis/artemether treatment.\n3. Differential Distinctions: Acute post-infectious or rapidly progressive glomerulonephritis is considered given port wine urine and severe azotemia (creatinine 450 µmol/L), but urinalysis demonstrated hemoglobinuria in the complete absence of intact red blood cells or casts. Sepsis with multi-organ failure is considered given high fever and encephalopathy, but the profound acute hemoglobin collapse to 5 g/dL and hemoglobinuria following quinine administration pinpoint intravascular hemolysis.",
+  "case_prompt": "A 35-year-old woman with no prior medical history was admitted to the hospital with acute headache, high fever, scleral jaundice, and progressive alteration of consciousness. Two days prior to admission, she had developed a febrile illness and received intramuscular quinine injections administered at her home.\n\nOn admission examination, she was obtunded with a Glasgow Coma Scale score of 10. Her body temperature was 39.6°C, body weight was 60 kg, and respiratory rate was 31 breaths/min. Sclerae and mucous membranes revealed deep jaundice and marked pallor.\n\nPlacement of an indwelling urinary catheter yielded dark, port wine-colored urine. Urinalysis test strip demonstrated 2+ hemoglobinuria, 3+ bilirubinuria, and 2+ proteinuria, with an absence of urobilinogen, intact red blood cells, and leukocytes. Baseline laboratory evaluation revealed a severe anemia with a hemoglobin concentration of 5.0 g/dL, blood glucose of 3.9 mmol/L, serum creatinine of 450 µmol/L, and blood urea of 31.39 mmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Glomerulonephritis / Urological Hematuria",
+      "rule_out_reason": "The sudden occurrence of port wine-colored urine in the setting of acute renal failure (creatinemia 450 µmol/L) can mimic acute nephritic syndrome, but dipstick testing revealed hemoglobinuria with a total absence of red blood cells or cellular casts.",
+      "quote": "absence of urobilinogens, red blood cells, and leukocytes"
+    },
+    {
+      "candidate": "Severe Bacterial Sepsis with Multi-Organ Dysfunction Syndrome (MODS)",
+      "rule_out_reason": "High fever, tachypnea, encephalopathy, and acute kidney injury can suggest severe bacterial sepsis, but the sudden collapse in hemoglobin to 5 g/dL and massive hemoglobinuria immediately following quinine injections pointed specifically to massive intravascular hemolysis.",
+      "quote": "The hemoglobin concentration was 5 g/dl"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Urinary catheterization demonstrating port wine-colored urine from severe hemoglobinuria and acute uremic syndrome after quinine administration, confirmed by a positive rapid diagnostic test for Plasmodium falciparum despite a negative thick peripheral smear, established blackwater fever.",
+      "quote": "Urinary catheter insertion revealed port wine-colored urine, which prompted the BWF diagnosis"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation cleanly truncated before malaria RDT and blood smear results. All exact quotes matched to text."
+}

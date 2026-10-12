@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8039304_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 79-year-old immunocompetent male with diabetes mellitus presenting with a 1-month history of fever, persistent cough, and progressive bilateral pulmonary infiltrates with mediastinal lymphadenopathy refractory to multiple courses of broad-spectrum antibacterial and empiric antitubercular therapies. The radiographic appearance and lack of overt immunodeficiency mimic pulmonary malignancy, refractory bacterial pneumonia, or pulmonary tuberculosis, obscuring endemic dimorphic fungal infection.\n2. Admission Breakpoint: At admission to the infectious disease ward following outpatient triage labs (WBC 13.1 x 10\u2079/L, CRP 183.51 mg/L), repeat chest CT demonstrating bilateral infectious infiltrates and mediastinal lymphadenopathy, and non-diagnostic bronchoscopic lymph node biopsy, immediately prior to broad-spectrum carbapenem/glycylcycline escalation, fungal serology, and BALF metagenomic testing.\n3. Differential Distinctions: Bronchogenic carcinoma is ruled out by negative biopsy and tumor biomarkers; bacterial pneumonia is excluded by lack of response to multiple broad-spectrum antibiotics; tuberculosis is ruled out by negative T-SPOT.TB and negative acid-fast testing. Talaromycosis (Penicillium marneffei) is established by positive serum galactomannan, BALF metagenomic next-generation sequencing, and positive fungal culture.",
+  "case_prompt": "A 79-year-old man presented to the infectious disease department of a hospital in Ningbo, China, with a 1-month history of cough and fever. Over the preceding month, he had visited two other local hospitals multiple times where investigations were undertaken. An initial chest CT scan had shown ground-glass nodules in the upper lobe of the right lung with multiple enlarged mediastinal lymph nodes suspected of tumors; subsequent bronchoscopic needle aspiration of lymph nodes under bronchoscopy revealed no evidence of tumors. Presumed to have a pulmonary infection, he was treated successively with piperacillin-tazobactam, moxifloxacin, and empiric antimicrobial therapy; although his body temperature temporarily normalized, his cough persisted and worsened over the subsequent week.\n\nHis medical history was notable for hypertension for over 10 years treated with amlodipine and bisoprolol, type 2 diabetes mellitus for 3 years treated with insulin with suboptimal glycemic control, and eczema for 10 years without ongoing therapy. He had undergone permanent cardiac pacemaker implantation 3 years prior. He was a retired factory worker who had assembled metallic parts for over 20 years. He was a former cigarette smoker (having quit for more than 20 years), denied recent exposure to wilderness or wild animals, and had no family history of malignancy or infectious disease.\n\nOn physical examination, he was comfortable. Large eczema-like scars were noted on both legs, with no other abnormal physical findings.\n\nOutpatient laboratory evaluation upon admission revealed a white blood cell count (WBC) of 13.1 x 109/L and a C-reactive protein (CRP) level of 183.51 mg/L. Re-examination of chest CT demonstrated infectious lesions in both lungs, an increased left hilar shadow, and slightly enlarged mediastinal lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchogenic Carcinoma / Pulmonary Malignancy with Mediastinal Lymphadenopathy",
+      "rule_out_reason": "Primary initial suspicion due to elderly smoking history, ground-glass nodules, and mediastinal lymphadenopathy; ruled out by negative bronchoscopic needle biopsy of mediastinal nodes and normal serum tumor markers (CEA, CA 19-9, AFP, CA 125).",
+      "quote": "His chest computerized tomography (CT) scan revealed ground-glass nodules in the upper lobe of the right lung with multiple enlarged lymph nodes in the mediastinum which were suspected of tumors (Figure 1A). In order to clarify the nature of the lesion he further took a needle biopsy of lymph nodes under bronchoscope while pathological results showed no evidence of tumors."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Pneumonia",
+      "rule_out_reason": "Initial working diagnosis upon hospital admission given leukocytosis and elevated CRP; ruled out by clinical and radiographic deterioration with progressive infiltrates and pleural effusion despite broad-spectrum antimicrobial therapy including piperacillin-tazobactam, moxifloxacin, meropenem, and tigecycline.",
+      "quote": "For further treatment, he was admitted to the Department of Infectious Diseases of Ningbo First hospital. His initial diagnosis was bacterial pneumonia."
+    },
+    {
+      "candidate": "Pulmonary Tuberculosis",
+      "rule_out_reason": "Considered given the subacute 1-month duration of fever, cough, and mediastinal lymphadenopathy in an endemic country; ruled out by negative T-SPOT.TB interferon-gamma release assay and lack of response to empiric antitubercular therapy.",
+      "quote": "Presumed to be pulmonary infection, he was then given piperacillin-tazobactam, moxifloxacin, and empirical anti-tuberculosis treatment successively."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive serum galactomannan antigen prompted fiberoptic bronchoscopy with bronchoalveolar lavage, where metagenomic next-generation sequencing (mNGS) identified Penicillium marneffei (Talaromyces marneffei), subsequently confirmed by extended fungal culture, with rapid clinical cure following voriconazole.",
+      "quote": "Four days later, we changed antibiotics to intravenous voriconazole and piperacillin-tazobactam since mNGS suggested Penicillium marneffei infection (Table 4). Moreover, we prolonged sputum culture time to one week and the fungus was further validated by culture (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint in the infectious diseases department. All pathogen references excluded from prompt. Exact quotes verified."
+}

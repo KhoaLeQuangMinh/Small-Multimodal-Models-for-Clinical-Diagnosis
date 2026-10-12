@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7521098_01",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: A 16-month-old infant presents in life-threatening hypercalcemic crisis (serum calcium 18.3 mg/dL) with failure to thrive and pulmonary crackles. The core tension is distinguishing endocrine disorders (primary hyperparathyroidism, vitamin D intoxication) and pediatric malignancy from granulomatous calcitriol-mediated hypercalcemia secondary to infantile tuberculosis.\n2. Admission Breakpoint: The admission breakpoint stops after initial admission physical examination, baseline laboratory panels (calcium 18.3 mg/dL, ionized calcium 4.57 mmol/L, phosphate 4.4 mg/dL, ALP 131 U/L, suppressed PTH 1.2 pg/mL, 25-OH vitamin D 133 ng/mL, 1,25-(OH)2 vitamin D3 345 pg/mL, urinary calcium/creatinine ratio 1.25), and renal ultrasound showing nephrocalcinosis, immediately before chest CT imaging, contact re-tracing, and PCR detection.\n3. Differential Distinctions: Primary hyperparathyroidism is excluded by suppressed PTH (1.2 pg/mL). Exogenous hypervitaminosis D or thiazide ingestion is ruled out by negative intake history. Malignancy is distinguished by chest CT showing pulmonary consolidations, calcified lymph nodes, and cavitary lesions, alongside a maternal history of incomplete gestational anti-tuberculosis therapy. Confirmation is provided by M. tuberculosis complex PCR.\n</think>",
+  "case_prompt": "<case_prompt>\nA 16-month-old female infant is admitted to the hospital with a 3-day history of fever, fatigue, and poor appetite. On physical examination, she is cachectic and lethargic. Anthropometric measurements show a height of 63.5 cm (<3rd percentile), weight of 6,150 g (<3rd percentile), and head circumference of 45 cm (3rd-10th percentile). Chest auscultation reveals bilateral coarse crackles throughout both lung fields, and abdominal examination reveals hepatosplenomegaly. Initial laboratory testing reveals severe hypercalcemia with total serum calcium of 18.3 mg/dL (reference range: 9-11 mg/dL) and ionized calcium of 4.57 mmol/L (reference range: 1.12-1.32 mmol/L). Serum phosphate is 4.4 mg/dL (reference range: 3.4-6.0 mg/dL), and alkaline phosphatase is 131 U/L (reference range: 5-281 U/L). Serum parathyroid hormone (PTH) is markedly decreased at 1.2 pg/mL (reference range: 15-65 pg/mL), 25-hydroxyvitamin D is 133 ng/mL (reference range: 30-70 ng/mL), and 1,25-dihydroxyvitamin D3 is elevated at 345 pg/mL (reference range: 21-156 pg/mL). The random urinary calcium-to-creatinine ratio is elevated at 1.25 (reference: <0.5). Renal ultrasonography reveals medullary nephrocalcinosis, and a plain chest radiograph demonstrates bilateral pulmonary opacities and interstitial infiltrates.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Hyperparathyroidism",
+      "rule_out_reason": "Considered due to severe life-threatening hypercalcemia with hypercalciuria and nephrocalcinosis; ruled out by profound parathyroid hormone suppression.",
+      "quote": "and parathyroid hormone level was decreased 1.2 pg/mL (N: 15-65)."
+    },
+    {
+      "candidate": "Exogenous Vitamin D Intoxication / Thiazide Consumption",
+      "rule_out_reason": "High serum 25-hydroxyvitamin D and calcitriol levels suggested exogenous toxic vitamin D ingestion; ruled out by the absence of excessive dietary calcium, vitamin D supplements, or thiazide diuretics.",
+      "quote": "There was neither a reported history of excessive calcium or vitamin D intake nor consumption of thiazides."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Chest CT revealing widespread pulmonary consolidations, calcified lymphadenopathy, and cavitary mass lesions, in an infant not immunized with BCG whose mother failed to complete gestational anti-tuberculosis therapy, definitively confirmed by detection of Mycobacterium tuberculosis complex DNA by PCR in serum.",
+      "quote": "This revealed widespread pulmonary opacities and consolidation, multiple calcified lymph nodes and parenchymal mass with cavitary lesions (Fig. 1). The patient was again questioned for contact with anyone with tuberculosis. It was learned that anti-tuberculosis therapy was initiated to the mother at the gestation, but she did not complete the treatment. In addition, the patient was not immunised for bacilli Calmette-Guerin. In view of the severe symptomatology and radiological findings, a diagnosis of a hypercalcemic crisis secondary to tuberculosis was defined."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict source fidelity maintained. Excluded mentions of tuberculosis, BCG status, maternal contact history, chest CT details, and PCR from case_prompt. Direct verbatim quotes in diagnostic_reasoning. Audit flags NONE."
+}

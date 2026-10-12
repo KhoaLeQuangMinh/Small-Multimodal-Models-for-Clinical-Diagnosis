@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12148331_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 49-year-old male construction worker presents with acute peritonitis, arterial hypotension, jaundice, and CT evidence of localized pneumoperitoneum near the biliary tree following floodwater immersion, mimicking a perforated peptic ulcer or acute surgical abdomen rather than tropical zoonotic sepsis.\n2. Admission Breakpoint: The admission clinical presentation concludes after the initial emergency assessment, vital signs, physical exam, and urgent abdominal CT demonstrating peri-cholecystic pneumoperitoneum prior to exploratory laparotomy. Operative exploration, subsequent ICU multisystem organ failure, serologic assays (ELISA and MAT), and secondary fungal enteropathy occur post-breakpoint.\n3. Differential Distinctions: Perforated gastroduodenal peptic ulcer or gangrenous cholecystitis is initially diagnosed based on localized extraluminal air but ruled out upon exploratory laparotomy showing no mucosal breach; ascending cholangitis or primary intra-abdominal bacterial sepsis is superseded by severe zoonotic spirochetal infection (Weil's syndrome) with pulmonary hemorrhage and acute tubular necrosis confirmed by microscopic agglutination testing.",
+  "case_prompt": "A 49-year-old male construction worker (marble and tile setter) residing in São Paulo, Brazil, presented to the emergency department with acute, severe diffuse abdominal pain, systemic hypotension, and jaundice. He reported direct exposure to urban floodwaters and accidental ingestion of contaminated water 10 days prior to the onset of symptoms. Past medical history was otherwise unremarkable.\n\nOn physical examination, the patient was acutely ill, jaundiced, and hypotensive. Abdominal examination revealed generalized tenderness, guarding, and signs of peritoneal irritation that were most prominent in the right upper quadrant.\n\nImmediate emergency abdominal computed tomography (CT) scan revealed localized pneumoperitoneum in the vicinity of the gallbladder and extrahepatic bile ducts, prompting an immediate surgical consult for an acute surgical abdomen.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Perforated gastroduodenal peptic ulcer or acute perforated cholecystitis",
+      "rule_out_reason": "The sudden onset of severe abdominal pain with hypotension, jaundice, and CT evidence of pneumoperitoneum adjacent to the biliary tree strongly indicated a perforated hollow viscus, but emergency laparotomy demonstrated no gastroduodenal perforation.",
+      "quote": "On admission, an abdominal computed tomography (CT) scan revealed pneumoperitoneum near the gallbladder and bile ducts. An exploratory laparotomy with cholecystectomy was performed, but no gastroduodenal perforation was observed."
+    },
+    {
+      "candidate": "Acute ascending cholangitis / intra-abdominal pyogenic sepsis",
+      "rule_out_reason": "Jaundice and septic shock in the setting of right upper quadrant pathology suggested severe cholangitis; however, the subsequent rapid progression to diffuse alveolar hemorrhage and anuric renal failure following floodwater ingestion signaled a systemic zoonotic vasculitis rather than localized biliary sepsis.",
+      "quote": "The patient remained in the intensive care unit (ICU), where he developed jaundice, acute renal failure requiring hemodialysis, and alveolar hemorrhage necessitating orotracheal intubation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Severe icteric leptospirosis (Weil's syndrome) complicated by pulmonary hemorrhage and renal failure was definitively confirmed by two serial serologic evaluations demonstrating positive ELISA-IgM and a microscopic agglutination test (MAT) titer of 1/800 against serovar Cynopteri.",
+      "quote": "Laboratory investigation confirmed leptospirosis by two consecutive serological tests: ELISA-IgM and a microscopic agglutination test for the serovar Cynopteri, with a titer of 1/800. He was treated with ceftriaxone for 14 days, leading to clinical and laboratory improvement."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation successfully executed. Admission breakpoint isolates the initial presentation of acute abdomen and shock after flood exposure before exploratory laparotomy. MAT titers and secondary mucormycosis are properly categorized in post-breakpoint reasoning."
+}

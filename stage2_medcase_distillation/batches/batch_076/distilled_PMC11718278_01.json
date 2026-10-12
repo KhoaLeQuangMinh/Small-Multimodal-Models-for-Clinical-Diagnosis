@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11718278_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 4-year-old child from an endemic region presenting with high fever, vomiting, prostration, and anemia, initially diagnosed with severe parasitic infection, who suddenly develops acute generalized peritonitis due to giant duodenal perforation 16 hours after admission. The clinical tension centers on recognizing duodenal perforation as a catastrophic complication of severe falciparum infection (secondary to microvascular cytoadherence, splanchnic ischemia, and stress ulceration) versus primary peptic ulcer disease or typhoid bowel perforation.\n2. Admission Breakpoint: The presentation ends at the initial emergency admission triage evaluation (fever, chills, vomiting, prostration, vital signs, initial CBC, blood group, random glucose, urinalysis, stool exam, and baseline renal/liver panels), strictly before blood film examination, antimalarial therapy, and subsequent peritonitis/laparotomy.\n3. Differential Distinctions: Differentiating severe protozoal disease from typhoid / enteric fever (ruled out by lack of enteric leukopenia and unrevealing stool exam), Helicobacter pylori-associated duodenal ulcer perforation (ruled out by negative postoperative H. pylori testing), and acute viral gastroenteritis.",
+  "case_prompt": "A 4-year-old male child from Metema, Gondar, Ethiopia, residing in an endemic tropical region, presented with a 4-day history of high-grade intermittent fever accompanied by chills and rigors. He also experienced loss of appetite, three episodes of non-projectile vomiting of ingested matter, and profound prostration. There was no history of abdominal pain or diarrhea. On physical examination, he appeared acutely ill but was not in cardiorespiratory distress. Vital signs showed a pulse rate of 132 beats per minute (full volume), a respiratory rate of 24 breaths per minute, and an axillary temperature of 39.6 \u00b0C. Physical examination, including abdominal palpation, was otherwise unremarkable. Initial laboratory tests showed a white blood cell count of 10,000 cells/\u03bcL with 70% granulocytes, hemoglobin of 7.9 g/dL, platelet count of 160,000 cells/\u03bcL, blood group O, and a random blood glucose of 156 mg/dL. Urinalysis and microscopic stool examination were unrevealing. Renal function tests, liver function tests, and serum electrolytes were all within normal reference ranges.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Enteric (Typhoid) Fever / Severe Bacterial Sepsis",
+      "rule_out_reason": "Considered due to high fever, prostration, and subsequent bowel perforation, but initial labs showed normal WBC differential, and stool examination and urinalysis showed no signs of enteric infection.",
+      "quote": "Stool examination and urinalysis were unrevealing. Renal function, liver function tests, and serum electrolytes were all within normal limits."
+    },
+    {
+      "candidate": "Helicobacter pylori Peptic Ulcer Disease",
+      "rule_out_reason": "Considered after emergent laparotomy identified a 2 x 2 cm anterior duodenal perforation, but postoperative testing for H. pylori was negative.",
+      "quote": "He was in good health with no complications and negative for Helicobacter pylori test."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of the peripheral blood film demonstrating intra-erythrocytic ring forms established severe Plasmodium falciparum infection responsible for microvascular sequestration and ischemic ulcer perforation.",
+      "quote": "A blood film revealed trophozoites of Plasmodium falciparum."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for severe Malaria complicated by giant duodenal perforation. Breakpoint set prior to blood smear results and emergency laparotomy. All quotes exact."
+}

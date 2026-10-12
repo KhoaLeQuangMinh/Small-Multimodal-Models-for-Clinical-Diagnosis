@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3152968_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 34-year-old male from rural Junin, Peru, presenting with a 1-year history of bloody diarrhea, massive weight loss (12 kg), and progressive mucocutaneous ulcerations (palate, mouth, nose, right foot). Despite a past history of recurrent parasitic diarrhea, current stool parasitological studies are negative and he is HIV-negative (though HTLV-1 positive). The core tension is distinguishing chronic endemic dimorphic fungal mucosal infection from severe inflammatory bowel disease (Crohn's disease), intestinal tuberculosis, mucosal leishmaniasis, and disseminated parasitic hyperinfection.\n2. Admission Breakpoint: The triage evaluation concludes after physical exam (wasted, pale skin, ulcers of palate, nose, mouth, right foot) and initial triage investigations (hemoglobin 11 g/L, albumin 16 g/L, stool with >100 WBCs and 30 RBCs/HPF, negative stool parasites, normal CXR, HIV ELISA negative, HTLV-1 positive). The breakpoint occurs immediately prior to colonoscopy, direct microscopic smear examination of ulcer scrapings, and tissue histopathology.\n3. Differential Distinctions: Crohn's disease or ulcerative colitis can explain bloody diarrhea with oral ulcers and wasting, but cannot account for destructive nasal and foot ulcers in an endemic South American setting. Mucocutaneous leishmaniasis causes destructive naso-oral ulcers but does not produce pancolitis. Strongyloidiasis hyperinfection causes chronic diarrhea and wasting in HTLV-1 patients, but negative parasitological exams and the distinct mucocutaneous ulcers favor a systemic dimorphic mycosis.",
+  "case_prompt": "A 34-year-old man from the state of Chanchamayo, Junin, Peru, presents with a one-year history of daily mucoid bloody diarrhea, odynophagia, a painful upper palate ulcer, and an unintentional 12-kilogram weight loss. He has a medical history of a chronic right foot ulcer and intermittent intestinal parasitic infections. Over the past three months, his diarrhea episodes have escalated in frequency, and he has developed a new ulcer on his nose. He denies chronic corticosteroid use, high-risk sexual behavior, or treatment with immunosuppressive medications.\n\nOn physical examination, the patient appears markedly wasted and pale. Mucocutaneous examination reveals distinct ulcerations involving the upper palate, oral cavity, nose, and the right foot.\n\nInitial laboratory evaluation reveals a hemoglobin of 11 g/L and severe hypoalbuminemia with a serum albumin of 16 g/L. Stool examination demonstrates greater than 100 leukocytes and 30 red blood cells per high-power field, while routine stool parasitological examinations are negative. The remainder of routine blood tests are unremarkable. A chest radiograph is normal. Blood HIV ELISA is negative, whereas qualitative serologic assessment for HTLV-1 is positive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intestinal Parasitosis / Helminthic Hyperinfection",
+      "rule_out_reason": "Considered given the patient's prior medical history of intermittent parasitic enteritis, HTLV-1 positive serostatus, and chronic wasting diarrhea, but serial stool parasitological evaluations were negative and helminthic infection fails to account for destructive mucosal and cutaneous ulcers.",
+      "quote": "Parasitological studies were negatives."
+    },
+    {
+      "candidate": "Inflammatory Bowel Disease (Crohn's Disease / Pancolitis)",
+      "rule_out_reason": "Considered because of a 1-year history of bloody mucoid diarrhea, severe hypoalbuminemia, weight loss, and oral ulcerations, but idiopathic IBD does not explain the extrapulmonary nose and foot ulcers, and endoscopic microscopic examination demonstrated an infectious fungal etiology.",
+      "quote": "Colonoscopy revealed multiple deep and large patchy exudative ulcers from rectum to cecum alternating with areas of normal mucosa"
+    },
+    {
+      "candidate": "HIV-Associated Opportunistic Enteropathy",
+      "rule_out_reason": "Considered due to profound wasting, cachexia, chronic diarrhea, and widespread mucosal ulcerations in a young adult, but blood ELISA for HIV was negative.",
+      "quote": "blood Elisa-HIV was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Paracoccidioides brasiliensis",
+      "rule_out_reason": "Direct microscopic examination of lesion scrapings and colonoscopy demonstrated fungal elements with diagnostic thick double walls and multiple peripheral gemmulation (mariner's wheel appearance), establishing paracoccidioidomycosis alongside Histoplasma coinfection.",
+      "quote": "Direct microscopic examination revealed several double wall fungi with multiple gemmulation compatible with paracoccidioidomycosis (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set prior to colonoscopy and fungal microscopic examination. Pathogen and specific disease names excluded from the case prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213628_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 58-year-old rural woman presenting with a confusing multi-system symptom complex spanning the abdomen, musculoskeletal system, skin, and respiratory tract (cough, sore throat, and bloody sputum). The hemoptysis and constitutional symptoms raise concern for pulmonary tuberculosis or lung flukes, while the abdominal pain suggests cholecystitis or peptic ulcer disease.\n2. Admission Breakpoint: Clinical history, review of systems, physical findings, and dietary exposure interview upon presentation, before serological testing (ELISA), stool parasitological examination, and molecular PCR testing.\n3. Differential Distinctions: Pulmonary tuberculosis causes cough, fever, chills, and hemoptysis, but is typically associated with marked weight loss and lack of prominent dietary watercress exposure. Calculous cholecystitis produces right upper quadrant and back pain but does not cause cutaneous lesions or hemoptysis. Foodborne trematodiases, particularly fascioliasis acquired from raw watercress ingestion, cause juvenile fluke tissue migration producing both hepatic/biliary pain, allergic cutaneous manifestations, and respiratory symptoms (pharyngeal irritation, cough, hemoptysis).",
+  "case_prompt": "A 58-year-old woman residing in Pirabad, a village in the central part of Lorestan Province in western Iran, presents for clinical evaluation with a 1-month history of abdominal and back pain. She also reports intermittent, unexplained fever and chills. Additional symptoms include a sore throat, cough productive of bloody sputum, and cutaneous manifestations. She reports no significant weight loss.\n\nEpidemiological history reveals regular consumption of raw wild aquatic plants harvested locally, specifically watercress (known locally as \"Balmak\", Nasturtium officinale), which is common in her area.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary tuberculosis / Lower respiratory tract infection",
+      "rule_out_reason": "Cough, hemoptysis (bloody sputum), and intermittent fevers raised suspicion for tuberculosis, but the lack of significant weight loss and the co-occurrence of abdominal pain, rash, and raw aquatic plant consumption pointed to a systemic parasitic fluke infection.",
+      "quote": "Other symptoms included coughing and sore throat with bloody sputum and cutaneous manifestation. She did not have any significant weight loss."
+    },
+    {
+      "candidate": "Calculous cholecystitis / Peptic ulcer disease",
+      "rule_out_reason": "Abdominal and back pain with fevers suggested an acute or chronic hepatobiliary condition, but could not account for the concurrent respiratory and dermatologic manifestations.",
+      "quote": "She had a history of abdominal and back pain during an interview in a recent month. She also stated that occasionally had fever and chills without any specific cause."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serum ELISA testing was positive, and microscopic stool examination revealed characteristic operculated Fasciola hepatica eggs, corroborated by a 700 bp PCR product sequencing with 99%-100% homology to F. hepatica.",
+      "quote": "ELISA test was positive in this patient. Stool examinations showed F. hepatica eggs (Fig. 1. A)."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed after history and exposure interview. Zero mentions of Fasciola, flukes, ELISA, or stool microscopy in case_prompt. Direct quotes verified verbatim from case text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2732535_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A 25-year-old previously healthy farmer in rural western Kenya presents with an acute febrile syndrome, severe myalgias, bloody diarrhea, hypotension (90/40 mm Hg), and neck stiffness. In East Africa, this constellation initially mimics severe bacterial dysentery, acute bacterial meningitis, cerebral malaria, or enteric (typhoid) fever, delaying recognition of a life-threatening viral hemorrhagic fever with nosocomial transmission risk.\n2. Admission Breakpoint: The admission breakpoint concludes on Day 1 following clinical evaluation, vital signs (BP 90/40 mm Hg, HR 60/min), physical examination (neck stiffness), and negative initial point-of-care/triage diagnostic investigations (negative malaria blood smear, negative Widal test, normal CSF analysis, normal urinalysis). Subsequent hematemesis/rectal bleeding, isolation, death, and reference laboratory send-out serology/RT-PCR represent confirmatory testing.\n3. Differential Distinctions: Acute bacterial meningitis was initially suspected due to fever, severe headache, and nuchal rigidity, but cerebrospinal fluid was normal. Malaria and typhoid fever (enteric fever) were ruled out by negative peripheral blood films and a negative Widal serologic test. Other viral hemorrhagic fevers endemic to East Africa (yellow fever, Rift Valley fever, dengue, West Nile) were excluded by negative IgM ELISA panels and negative flavivirus/alphavirus/bunyavirus RT-PCR.",
+  "case_prompt": "A previously healthy 25-year-old male farmer is admitted to a rural hospital in western Kenya with an acute febrile and gastrointestinal illness. Four days prior to admission, he developed sudden onset of high fever, severe headache, nausea, vomiting, severe diffuse muscle pains, and profuse diarrhea that rapidly became visibly bloody.\n\nOn physical examination, he is acutely ill and lethargic. His temperature is 36.4 \u00b0C, pulse rate is 60 beats per minute, respiratory rate is 20 breaths per minute, and blood pressure is 90/40 mm Hg. The abdomen is tender diffusely without localized peritonitis. Examination of the central nervous system reveals marked neck stiffness, without focal neurologic deficits.\n\nInitial triage investigations demonstrate a peripheral blood smear negative for intraerythrocytic parasitosis parasites. A Widal serologic test for typhoid fever is negative. Diagnostic lumbar puncture yields clear cerebrospinal fluid with normal opening pressure, protein, glucose, and cell counts. Urinalysis is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial meningitis",
+      "rule_out_reason": "Considered as an admission differential diagnosis due to acute febrile onset, headache, and prominent neck stiffness; ruled out by normal cerebrospinal fluid cellularity and biochemistry.",
+      "quote": "The differential diagnoses included bacterial dysentery and meningitis. Results of a blood smear for malaria parasites and Widal test for typhoid were negative, and cerebrospinal fluid and urine examinations were normal."
+    },
+    {
+      "candidate": "Other endemic viral hemorrhagic fevers (Yellow fever, Rift Valley fever, Dengue)",
+      "rule_out_reason": "Considered when hemorrhagic manifestations escalated, but IgM-capture ELISA and RT-PCR screening for yellow fever, dengue, West Nile, Chikungunya, and Rift Valley fever were negative.",
+      "quote": "Serologic tests in Nairobi were negative for yellow fever, dengue, West Nile, Chikungunya, and Rift Valley fever (immunoglobulin [Ig] M-capture enzyme-linked immunosorbent assay) and reverse transcriptase-polymerase chain reaction (RT-PCR) tests for flaviviruses, alphaviruses, and Bunyamwera serogroup bunyaviruses were also negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Clinical progression to widespread mucosal hemorrhage followed by reverse transcriptase-polymerase chain reaction (RT-PCR) testing and amplicon sequencing confirmed Crimean-Congo hemorrhagic fever virus (C-CHFV).",
+      "quote": "RT-PCR for Crimean-Congo hemorrhagic fever virus (C-CHFV) was positive."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation stops at triage labs (negative malaria smear, Widal, normal CSF, normal urinalysis). Day 2 gastrointestinal hemorrhage, barrier nursing, fatal outcome, and send-out RT-PCR properly placed in reasoning."
+}

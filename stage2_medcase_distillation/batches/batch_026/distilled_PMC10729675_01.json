@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10729675_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 60-year-old barefoot farmer presents with profound, life-threatening iron deficiency anemia (hemoglobin 3.4 g/dL) and positive fecal occult blood. Multiple direct stool microscopy wet mounts were negative for ova or parasites and the patient lacked peripheral eosinophilia or remembered dermatitis, leading clinicians to suspect occult gastrointestinal malignancy before endoscopy revealed mucosal hookworms.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after referral triage evaluation, physical examination demonstrating severe pallor and low BMI, repeat stool microscopy showing occult blood without parasites, and normal abdominal ultrasonography, stopping strictly prior to colonoscopy and esophagogastroduodenoscopy.\n3. Differential Distinctions: Hookworm disease causing severe anemia is distinguished from colorectal carcinoma or upper GI peptic ulcers by direct endoscopic visualization of blood-feeding nematodes attached to duodenal mucosa; from celiac/malabsorptive enteropathies by normal mucosal architecture outside parasite attachment sites; and from other parasitic infections by characteristic morphology and curative response to single-dose albendazole.",
+  "case_prompt": "A 60-year-old Ethiopian male farmer presents for evaluation of chronic severe exhaustion, exertional shortness of breath, marked anorexia, tinnitus, and lightheadedness persisting over the past year. Over the preceding 12 months, he experienced progressive weight loss and intermittent, non-bloody diarrhea occurring every 2 to 3 months, lasting approximately one week per episode and resolving spontaneously. Over the past 3 months, profound fatigue rendered him largely bedbound. He denies fever, night sweats, cough, orthopnea, dependent edema, abdominal pain, vomiting, dyspepsia, hematemesis, melena, or hematochezia. He performs agricultural field labor barefoot but recalls no history of dermatitis or pruriginous rash.\n\nTwo months prior, evaluation at a local hospital identified severe iron deficiency anemia with hemoglobin 3.4 g/dL, hematocrit 10.1%, mean corpuscular volume 69.4 fL, hypochromic microcytic red blood cells with marked anisopoikilocytosis, and an erythrocyte sedimentation rate of 140 mm/hr, with no peripheral eosinophilia; renal and liver panels were normal, and direct wet-mount stool microscopy was negative for ova and parasites. Following blood transfusions and 2 months of daily oral ferrous sulfate tablets, his hemoglobin improved to 10.1 g/dL with partial symptom relief, and he was referred for endoscopic evaluation for presumed occult gastrointestinal blood loss.\n\nOn physical examination, the patient is cachectic with a body mass index of 16.98 kg/m2 and exhibits severe conjunctival and palmar pallor. Vital signs and abdominal examination are unremarkable. Repeat stool testing confirms positive fecal occult blood but is negative for ova and parasites on direct microscopy. Bedside transabdominal ultrasonography demonstrates no structural pathology or organomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colorectal malignancy / lower gastrointestinal bleeding",
+      "rule_out_reason": "Suspected as the source of occult gastrointestinal blood loss causing profound microcytic hypochromic anemia in an elderly male, but colonoscopic examination was entirely normal.",
+      "quote": "Lower gastrointestinal endoscopy (colonoscopy) was normal."
+    },
+    {
+      "candidate": "Chronic malabsorptive enteropathy / occult intra-abdominal pathology",
+      "rule_out_reason": "Considered given significant involuntary weight loss, low BMI, and episodic diarrhea, but transabdominal ultrasound was unremarkable without lymphadenopathy or organic visceral lesions.",
+      "quote": "Abdominal ultrasound examination was unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Esophagogastroduodenoscopy directly revealed multiple small translucent, blood-engorged hookworms anchored to the mucosa of the first portion of the duodenum, definitively identifying hookworm infection as the etiology of severe iron-deficiency anemia despite multiple false-negative direct stool examinations.",
+      "quote": "Esophagogastroduodenoscopy revealed multiple small translucent, blood-filled hookworms in the first part of the duodenum (as shown in Figure 1). The patient was treated with oral albendazole 400 mg once, provided with oral iron supplementation, and returned to the referring hospital for follow-up."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to endoscopic visualization. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3937496_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old male presents with recurrent crops of crusted, centrally necrotic papules, nodules, and a large necrotic buttock ulcer alongside productive cough and hemoptysis. The clinical dilemma centers on differentiating a primary dermatologic necrotizing vasculitis, deep pyogenic infection/ecthyma, or atypical mycobacterial infection from an immunologic tuberculid reaction driven by active pulmonary tuberculosis.\n2. Admission Breakpoint: Admission triage concludes after gathering the clinical history, cutaneous physical examination, baseline blood work (CBC, ESR, LFTs, RFTs), and initial plain chest radiograph. Confirmatory testing begins with tuberculin skin testing (Mantoux), sputum smear for acid-fast bacilli (AFB), and histopathological skin biopsy.\n3. Differential Distinctions: Cutaneous leukocytoclastic vasculitis and PLEVA present with necrotic papules but lack pulmonary cavitation/infiltrates and positive AFB. Bacterial ecthyma/furunculosis can cause necrotic ulcers but fails to explain extensor papulonecrotic eruptions with bilateral pulmonary involvement.",
+  "case_prompt": "A 55-year-old male presents with recurrent crops of crusted papular lesions on the extensor surfaces of his upper limbs and back for one month, along with painful boils over his buttocks for 20 days. He also reports a 15-day history of productive cough, occasionally coughing out blood-tinged sputum.\n\nOn physical examination, multiple papules with crusting and central necrosis are present on the bilateral extensor surfaces of the upper limbs, with marked clustering around the elbows and on the back. A few nodules with central necrosis are noted over the buttocks and scalp. In addition, a 4 x 4 cm ulcer with a necrotic base and surrounding erythema is present on the left buttock.\n\nInitial laboratory workup reveals an elevated erythrocyte sedimentation rate (ESR) of 55 mm/h (Westergren). Complete blood count, liver function tests, and renal function tests are within normal limits. Plain chest radiography demonstrates abnormal infiltrative findings in bilateral lung fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary cutaneous leukocytoclastic vasculitis / Pityriasis lichenoides et varioliformis acuta (PLEVA)",
+      "rule_out_reason": "While skin histopathology demonstrated a focus of leukocytoclastic vasculitis in the mid-dermis, the presence of bilateral pulmonary infiltrates, hemoptysis, and marked hypersensitivity to mycobacterial antigens pointed away from an isolated idiopathic vasculitis or PLEVA.",
+      "quote": "Biopsy from the lesion on the right elbow revealed a single focus of leucocytoclastic vasculitis affecting a small- to medium-sized vessel in mid-dermis. Surrounding this focus was dense neutrophilic inflammation."
+    },
+    {
+      "candidate": "Bacterial furunculosis and ecthyma gangrenosum / Pyoderma",
+      "rule_out_reason": "Although the patient presented with boils and a 4x4 cm ulcer with a necrotic base on the buttock, the symmetric distribution of centrally necrotic papules on extensor surfaces and concomitant respiratory symptoms indicated a systemic hypersensitivity process rather than simple pyogenic infection.",
+      "quote": "boils over buttocks for 20 days... One ulcer of size 4x4cm with necrotic base and surrounding erythema were seen on left buttock"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when sputum testing confirmed acid-fast bacilli and the tuberculin skin test showed high-grade reactivity, linking the necrotic papules to papulonecrotic tuberculid (PNT) secondary to pulmonary tuberculosis, with rapid resolution upon initiating multidrug antitubercular therapy.",
+      "quote": "His Mantoux was strongly positive with induration of 20 mm. Sputum for AFB was positive... These features were consistent with PNT... On starting therapy, many lesions on back disappeared within 2weeks."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC3937496_01. Admission breakpoint strictly maintained before Mantoux, sputum AFB, and skin biopsy results. Zero pathogen or disease spoilers present in the prompt."
+}

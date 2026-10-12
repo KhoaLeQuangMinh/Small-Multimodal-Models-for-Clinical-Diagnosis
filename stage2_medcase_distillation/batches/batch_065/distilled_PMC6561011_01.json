@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6561011_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 51-year-old woman from rural Tunisia presents with 2 months of episodic biliary colic and an ultrasound showing a solitary 10 mm gallbladder stone, completely mimicking routine metabolic cholelithiasis without constitutional, GI, or urinary signs.\n2. Admission Breakpoint: Following outpatient physical exam, standard baseline laboratory tests, and transabdominal ultrasound, prior to laparoscopic cholecystectomy and gallbladder histopathology.\n3. Differential Distinctions: Uncomplicated metabolic gallstone disease causes simple mechanical ductal obstruction without intramural parasitic ova; gallbladder carcinoma or acalculous cholecystitis show abnormal wall thickening or elevated inflammatory markers; schistosomiasis of the gallbladder wall is an elusive chronic manifestation marked by calcified eggs in the fibrotic chorion.",
+  "case_prompt": "A 51-year-old woman residing in a rural village in Beja, northwestern Tunisia, presented with recurrent episodes of right upper quadrant biliary colic over a 2-month period. She had a history of dyslipidemia with no prior surgical interventions. She reported no history of foreign travel to infectious endemic regions. Review of systems was negative for nausea, vomiting, chronic diarrhea, hematochezia, hematuria, or dysuria.\n\nOn physical examination, she appeared well and afebrile. The abdomen was soft, nontender, and nondistended, without Murphy's sign, peritoneal signs, or organomegaly. No scleral icterus or jaundice was noted.\n\nRoutine laboratory evaluation revealed normal complete blood count with absent systemic inflammatory markers; liver function tests, including serum aminotransferases, alkaline phosphatase, and bilirubin, were entirely within normal limits. Transabdominal ultrasonography demonstrated a thin-walled gallbladder containing a single 10 mm calculus, without biliary ductal dilatation or other abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uncomplicated Metabolic Cholelithiasis",
+      "rule_out_reason": "The clinical presentation, benign exam, and ultrasound showing a single 10 mm stone are identical to typical cholesterol/pigment cholelithiasis; however, routine cholelithiasis does not explain the chronic intramural granulomatous parasitic infestation detected on resection.",
+      "quote": "The abdominal Ultrasound showed a thin walled gallbladder with a 10mm stone and no other abnormalities"
+    },
+    {
+      "candidate": "Gallbladder Malignancy or Chronic Acalculous Cholecystitis",
+      "rule_out_reason": "Ruled out by normal inflammatory markers, normal hepatic biochemistry, completely thin gallbladder wall on ultrasound, and absence of neoplastic proliferation on pathology.",
+      "quote": "The physical examination showed a general good health, no jaundice, no fever, a flexible and painless abdomen and no visceromegaly. Laboratory tests showed no inflammatory signs and normal liver function tests."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the resected gallbladder revealed chronic mucosal inflammation, fibrosis, lymphocytic infiltration of the chorion, and calcified schistosomal ova staining positively with periodic acid-Schiff, establishing gallbladder schistosomiasis.",
+      "quote": "Histologically there was inflammation and fibrosis in the mucosa, lymphocytic infiltrate in the chorion and calcified schistosomal ova were seen in the wall of the gallbladder which stained positively with periodic acid-Schiff"
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pathogen and disease names removed from prompt. Histopathology strictly segregated to diagnostic pivot. Quotes verified verbatim."
+}

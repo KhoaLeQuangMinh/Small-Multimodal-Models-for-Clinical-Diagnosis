@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6886628_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An asymptomatic 55-year-old female smoker develops a rapidly expanding 36 mm lung mass displaying a reversed halo sign (RHS) on surveillance chest CT, strongly pointing toward cryptogenic organizing pneumonia (OP) or bronchogenic carcinoma, where empiric corticosteroid therapy could trigger fatal mycobacterial dissemination.\n2. Admission Breakpoint: Following chest CT surveillance, baseline blood work, tumor markers, autoimmune serologies, and pulmonary function tests, immediately before invasive bronchofibroscopy and CT-guided lung biopsy.\n3. Differential Distinctions: Cryptogenic organizing pneumonia typically presents with RHS but lacks microbiological pathogens and responds to steroids; lung carcinoma shows malignant cytology; pulmonary tuberculosis can present with RHS due to central caseous necrosis encircled by granulomatous inflammation.",
+  "case_prompt": "A 55-year-old Caucasian female with an active 25 pack-year smoking history was followed in the pulmonary clinic for chronic intermittent rhinitis and surveillance of a stable 6 mm nodule in the right upper lobe. On a surveillance chest computed tomography (CT) scan performed 12 months after baseline, the right upper lobe nodule was unchanged, but a new, heterogeneous, and irregular 36 mm mass with a central hypodense area—forming a reversed halo sign—was identified in the apico-posterior segment of the left upper lobe.\n\nThe patient had no respiratory symptoms (no cough, dyspnea, or hemoptysis), no fever, night sweats, or weight loss, and no symptoms suggestive of connective tissue disease. Her spouse had been treated 6 months earlier for a chronic pulmonary infection, but her initial contact screening evaluation at that time was negative. Her only regular medications were budesonide nasal spray and levocetirizine for rhinitis.\n\nPhysical examination was unremarkable except for pale nasal mucosa; vital signs and pulmonary auscultation were normal. Complete blood count showed a hemoglobin of 16.2 g/dL (reference range 12–15 g/dL), attributed to smoking; leukocyte count, platelets, and systemic inflammatory markers were normal. A panel of serum tumor markers (CEA, CA 19-9, CA 15-3, CA 125, CYFRA-21, NSE, and SCC) was entirely normal. Viral serologies for hepatitis B, hepatitis C, and HIV were negative. Autoimmune serologies (ANA, ANCA, anti-CCP) were within normal limits. Pulmonary function tests showed mild small-airway obstruction with normal diffusing capacity for carbon monoxide.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cryptogenic Organizing Pneumonia (COP / OP)",
+      "rule_out_reason": "Organizing pneumonia is the classical and most frequent etiology of the reversed halo sign, and empiric corticosteroids were initially planned; however, invasive sampling identified active mycobacterial infection, excluding COP.",
+      "quote": "Given the lack of symptoms, the appearance of a relatively large mass over a short period of time (which made the diagnosis of cancer less likely) and the presence of the RHS on the chest CT scan, OP was considered the most likely diagnosis and initiation of corticotherapy was suggested."
+    },
+    {
+      "candidate": "Primary Bronchogenic Carcinoma",
+      "rule_out_reason": "A new, rapidly expanding 36 mm pulmonary mass in an active heavy smoker was highly concerning for malignancy; ruled out by normal tumor markers, cytology, and biopsy revealing necrotic tissue without neoplastic cells.",
+      "quote": "Due to her smoking history, a panel of tumour markers was requested (CEA, CA 19.9, CA 15.3, CA 125, CYFRA-21, NSE and SCC) which were also normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchial secretions collected during bronchofibroscopy demonstrated Mycobacterium tuberculosis susceptible to all first-line drugs, confirming active pulmonary tuberculosis as the etiology of the mass presenting with the reversed halo sign.",
+      "quote": "However, bronchial secretions collected during the bronchofibroscopy showed Mycobacterium tuberculosis (MT), susceptible to all first-line drugs (isoniazid, rifampin, pyrazinamide and ethambutol)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Contact history sanitized to avoid spoiling the diagnosis. Biopsy and bronchial secretion cultures isolated to diagnostic reasoning."
+}

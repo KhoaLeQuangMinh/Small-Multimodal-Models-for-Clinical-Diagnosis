@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9946370_01",
+  "disease": "Cholera",
+  "think": "1. Core Clinical Tension: A 20-year-old traveler returning from Bangladesh presents with hyperacute, profuse watery diarrhea complicated by severe hypovolemic shock, extreme hemoconcentration, severe metabolic acidosis, rhabdomyolysis, and anuric acute renal failure. The tension centers on differentiating invasive bacterial dysentery or post-infectious hemolytic uremic syndrome from massive secretagogue-mediated fluid loss due to cholera.\n2. Admission Breakpoint: The presentation ends after initial triage assessment, hemodynamic stabilization attempts, emergency biochemistry, urinalysis, and renal ultrasonography, immediately prior to stool microbiological culture and initiation of hemodialysis.\n3. Differential Distinctions: Invasive bacterial dysentery causes fever and bloody mucoid stools with tenesmus, whereas this patient experienced copious non-bloody watery diarrhea with severe hypokalemic volume loss. Hemolytic uremic syndrome causes microangiopathic hemolytic anemia with thrombocytopenia and renal failure; here, the patient displayed profound hemoconcentration (hemoglobin 18.8 g/dL, hematocrit 54.3%) and preserved platelets, confirming prerenal/ischemic acute tubular necrosis from massive secretory volume depletion.",
+  "case_prompt": "A 20-year-old Asian male presents to the emergency department with a 24-hour history of severe abdominal cramps, nausea, recurrent vomiting, and continuous, copious watery diarrhea. He denies hematochezia, melena, recent medications, or prior antibiotic therapy. He reports recent return from travel to Bangladesh. On physical examination, the patient is alert and oriented but appears profoundly dehydrated. Vital signs demonstrate hypotension with a blood pressure of 85/56 mmHg, sinus tachycardia, respiratory rate of 17 breaths/min, and oxygen saturation of 98% on room air. The abdomen is soft, mildly distended, and non-tender with normal bowel sounds. Initial laboratory testing reveals dramatic neutrophilic leukocytosis (neutrophil count 40 x 10\u00b3/mcL), severe hemoconcentration (hemoglobin 18.8 g/dL, hematocrit 54.3%), severe uncompensated metabolic acidosis (arterial pH 7.1, serum bicarbonate 8.9 mmol/L), hyponatremia (sodium 124 mmol/L), hypokalemia (potassium 2.9 mmol/L), marked azotemia (serum creatinine 438 \u00b5mol/L, urea 16.2 mmol/L, estimated GFR 15.6 mL/min), and marked rhabdomyolysis (creatine kinase 6,094 IU/L, AST 153 IU/L, ALT 83 IU/L). Inflammatory biomarkers are substantially elevated (C-reactive protein 174.5 mg/L, procalcitonin 20.5 \u00b5g/L). Urinalysis shows 4+ proteinuria, 3+ hemoglobin, and 8\u201310 red blood cells per high-power field. Plain chest radiography is clear. Bedside abdominal ultrasonography reveals normal renal morphology without calculi or pelvicalyceal dilatation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive bacterial dysentery (e.g., Shigella, Salmonella, Campylobacter)",
+      "rule_out_reason": "Extreme inflammatory markers (procalcitonin 20.5 \u00b5g/L, CRP 174.5 mg/L, 40,000 neutrophils/\u00b5L) suggested invasive bacterial enteritis, but the diarrhea was voluminous, non-bloody, and purely watery without mucosal ulceration or tenesmus.",
+      "quote": "The patient had nausea and multiple episodes of vomiting and denied blood in stools or any drug or antibiotic intake."
+    },
+    {
+      "candidate": "Hemolytic Uremic Syndrome (HUS) / Thrombotic Microangiopathy",
+      "rule_out_reason": "Acute diarrheal illness progressing to severe anuric acute kidney injury with proteinuria and hematuria mimicked HUS; however, the patient exhibited marked hemoconcentration (hemoglobin 18.8 g/dL, hematocrit 54.3%) and preserved platelets rather than microangiopathic Coombs-negative hemolytic anemia and thrombocytopenia.",
+      "quote": "Ultrasound revealed that both left and right kidneys were of normal shapes and sizes with no calculi or back-pressure changes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Stool culture confirmed the isolation of Vibrio cholerae, establishing acute cholera with catastrophic enterotoxin-mediated secretory purging leading to hypovolemic shock, rhabdomyolysis, and dialysis-requiring acute tubular necrosis in a traveler returning from an endemic region.",
+      "quote": "In the meantime, stool culture was positive for Vibrio cholerae on 28th March 2022. On 9th April 2022, after 17 days of hospitalization, the patient's symptoms were entirely resolved, and he was discharged."
+    }
+  ],
+  "final_diagnosis": "Cholera",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to stool culture isolation and dialysis initiation. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

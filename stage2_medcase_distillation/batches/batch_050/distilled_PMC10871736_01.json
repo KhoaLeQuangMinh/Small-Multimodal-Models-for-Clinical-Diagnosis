@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10871736_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 3-month-old infant presents with a generalized papulonodular skin eruption that failed topical steroids, with an outside punch biopsy demonstrating a dense lymphohistiocytic infiltrate with abundant eosinophils staining positive for CD1a and Langerin, prompting a preliminary diagnosis of Langerhans Cell Histiocytosis (LCH). The clinical tension centers on avoiding aggressive pediatric chemotherapy by differentiating true LCH from a pseudo-histiocytosis reaction caused by crusted/nodular infestation.\n2. Admission Breakpoint: Admission triage ends following presentation to the tertiary center with widespread papulonodular lesions, unremarkable systemic staging (normal CBC, BMP, skeletal survey, and abdominal ultrasound), immediately prior to pathology slide re-review of deeper tissue sections.\n3. Differential Distinctions: LCH typically features clonal histiocytes with BRAF mutations and visceral/osseous lesions. Infantile scabies manifests with diffuse papules, nodules in web spaces/folds, familial nocturnal pruritus, and intraepidermal burrows containing mites or fecal scybala.",
+  "case_prompt": "A 3-month-old infant girl (Fitzpatrick skin type V) was referred to a tertiary medical center for further evaluation of an outside diagnosis of Langerhans cell histiocytosis. Her mother reported that erythematous, crusted papules and nodules first appeared on the right upper extremity 1 month prior to evaluation, subsequently disseminating to involve the scalp, face, trunk, upper and lower extremities, inguinal folds, and toe web-spaces. The lesions failed to improve despite treatment with bland emollients and topical hydrocortisone acetate 0.1% cream. An outside 3-mm punch tissue sampling of an upper arm lesion had demonstrated a dense lymphohistiocytic infiltrate with abundant eosinophils, with immunohistochemical staining positive for CD1a, CD68, CD20, CD3, and Langerin (CD207). On presentation to the tertiary facility, physical examination confirmed diffuse erythematous, crusted papules and firm nodules across the body, including the interdigital spaces. Initial staging investigations\u2014including a complete blood count, basic metabolic panel, complete skeletal radiographic survey, and abdominal ultrasonography\u2014were all unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Langerhans Cell Histiocytosis (LCH)",
+      "rule_out_reason": "The initial working diagnosis based on outside biopsy showing CD1a and Langerin positivity; ruled out when tertiary institutional re-review of deeper histopathologic levels demonstrated an intraepidermal burrow with mite elements and negative systemic staging.",
+      "quote": "However, in deeper sections, a burrow containing the edge of a mite was noted in the stratum corneum, suggesting scabies rather than LCH (Fig. 2b)."
+    },
+    {
+      "candidate": "Infantile Eczema / Atopic Dermatitis with Secondary Impetiginization",
+      "rule_out_reason": "Considered due to diffuse pruritic crusted lesions in early infancy, but ruled out by lack of response to topical corticosteroids/emollients and discovery of characteristic stratum corneum parasitic burrows.",
+      "quote": "There was no improvement with emollients or topical hydrocortisone acetate 0.1% cream."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Infantile Scabies Masquerading as Histiocytosis",
+      "rule_out_reason": "Identification of a burrow containing mite fragments in the stratum corneum on deeper sectioning, combined with familial nocturnal pruritus and complete clearing with permethrin, established the diagnosis of Scabies.",
+      "quote": "Further inquiry revealed that the patient's family members experienced nocturnal pruritus, which they attributed to moving to a new home."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10871736_01. The admission narrative presents the initial referral scenario with the outside biopsy report of LCH and negative staging, withholding the deeper-level slide review and family nocturnal pruritus history until the diagnostic reasoning. Quotes are verified verbatim."
+}

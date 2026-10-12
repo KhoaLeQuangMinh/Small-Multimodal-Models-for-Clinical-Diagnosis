@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12280337_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 22-year-old man presents with chronic constitutional symptoms, nocturnal fever, substantial weight loss, and recurrent borderline hypotension with profound hypocortisolemia, accompanied by dyspnea and abnormal chest radiography. The central challenge lies in unraveling the etiology of secondary adrenal insufficiency in a young adult with high-risk exposures whose initial HIV screening paradoxically returns negative, and identifying the primary opportunistic infection driving his pulmonary and endocrine failure.\n2. Admission Breakpoint: The admission breakpoint is reached following initial clinical assessment, hemodynamic measurement showing persistent hypotension, baseline laboratory investigations (mild anemia, elevated CRP, marked hypocortisolemia with low ACTH), renal ultrasound showing normal adrenal morphology, and initial chest radiography, prior to sputum GeneXpert molecular testing, subsequent HIV re-evaluation, and central nervous system imaging.\n3. Differential Distinctions: Primary adrenal insufficiency (Addison disease) features high ACTH and enlarged or calcified adrenal glands on imaging; non-infectious hypopituitarism lacks constitutional fevers, night sweats, and pulmonary consolidation; whereas disseminated tuberculosis can cause pituitary/hypothalamic or secondary adrenal suppression alongside classic pulmonary disease, confirmed by sputum nucleic acid amplification testing.",
+  "case_prompt": "A 22-year-old Indonesian man presented with progressive fatigue and intermittent shortness of breath of two months' duration that was unrelated to physical exertion. He also reported intermittent nocturnal fevers over the preceding three months and an unintentional weight loss of 5 kg over the past month, which was attributed to poor appetite and inadequate nutritional intake. His social history was notable for unprotected sexual intercourse with a casual partner over the past two years. His medical history had multiple hospitalizations caused by intermittently lower blood pressure near the boundaries of hypotension for three weeks. He denied corticosteroid use and had no prior history of diabetes mellitus, hypertension, asthma, malignancy, or allergic disease.\n\nOn admission, the patient appeared pale and weak. Vital signs revealed a blood pressure of 92/60 mmHg. Physical examination was otherwise notable for generalized weakness without focal neurological signs.\n\nInitial laboratory evaluation revealed a hemoglobin level of 9.9 mg/dL and a C-reactive protein (CRP) of 1.7 mg/dL. Endocrine testing demonstrated a markedly depressed basal serum cortisol level of 28.46 nmol/L and an adrenocorticotropic hormone (ACTH) level of 5.6 pg/mL. A renal ultrasound revealed no enlargement of the adrenal glands. A plain chest radiograph demonstrated abnormal pulmonary opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Adrenal Insufficiency (Addison's Disease / Adrenalitis)",
+      "rule_out_reason": "Considered due to chronic fatigue, profound asthenia, recurrent borderline hypotension, marked hypocortisolemia (cortisol 28.46 nmol/L), and constitutional symptoms. Ruled out as primary adrenal failure because ACTH was low rather than markedly elevated, and renal ultrasound demonstrated normal, unenlarged adrenal glands, establishing secondary adrenal insufficiency.",
+      "quote": "ACTH) levels of 5.6 pg/mL. Renal ultrasound revealed no enlargement of adrenal glands (Fig. 1)."
+    },
+    {
+      "candidate": "Acute Retroviral Sero-conversion / Window Period Failure",
+      "rule_out_reason": "Considered as an underlying driver of opportunistic infection and secondary adrenal insufficiency given his high-risk sexual history. However, initial multi-platform screening was negative, reflecting a temporary false-negative state that delayed immediate immunodeficiency confirmation.",
+      "quote": "HIV examination revealed negative results with 3 methods, including an enzyme-linked immunosorbent assay, polymerase chain reaction, and HIV antigen. He has a recommendation for the HIV re-examination again in 3 weeks due to a possible false-negative."
+    },
+    {
+      "candidate": "Cerebral Toxoplasmosis / Intracranial Mass Lesion",
+      "rule_out_reason": "Considered when the patient acutely developed severe headaches, vomiting, and generalized tonic-clonic seizures following discharge. Ruled out as the primary etiology of the initial pulmonary presentation, but confirmed as a concurrent opportunistic intracranial infection once repeat HIV testing demonstrated profound CD4 depletion.",
+      "quote": "Meanwhile, he also detected toxoplasmosis positivity by serology testing, including immunoglobulin G (IgG) and immunoglobulin M (IgM), and brain computer tomography (CT) scan revealed ring-enhancement lesions in several areas of the cerebellum (Fig. 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point for the pulmonary disease and underlying systemic infection was the identification of Mycobacterium tuberculosis DNA by sputum GeneXpert MTB/RIF in conjunction with suspicious infiltrates on chest radiography.",
+      "quote": "Chest x-ray suggested pulmonary tuberculosis (Fig. 2), and Mycobacterium tuberculosis (MTB) was confirmed positive with sputum GeneXpert MTB/RIF detected."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Admission prompt stops cleanly before sputum GeneXpert, HIV re-testing, and brain CT. Zero pathogen spoilers in prompt. Verbatim quotes verified against source text."
+}

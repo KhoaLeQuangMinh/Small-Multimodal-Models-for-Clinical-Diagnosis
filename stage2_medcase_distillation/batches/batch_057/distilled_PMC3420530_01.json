@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3420530_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 54-year-old woman presents with acute hypoxemic respiratory failure, interstitial opacities, multiorgan dysfunction (jaundice, renal insufficiency), and disseminated intravascular coagulation (DIC). Initial investigations pointed toward autoimmune granulomatous disease/sarcoidosis, but corticosteroid pulse immunosuppression precipitated explosive miliary mycobacterial dissemination, creating diagnostic confusion between steroid-refractory interstitial pneumonia and opportunistic infection.\n2. Admission Breakpoint: The admission clinical presentation includes symptom history, surgical background (silicone mammoplasty), physical findings (tachypnea, rales, jaundice), baseline laboratory derangements (DIC parameters, elevated transaminases/bilirubin, elevated CRP, hypoxemia on ABG), negative bacterial blood cultures, and initial chest CT opacities, ending prior to corticosteroid pulse administration and subsequent invasive biopsies.\n3. Differential Distinctions: Bacterial sepsis is excluded by negative blood cultures and failure of antimicrobial therapy; sarcoidosis accounts for the initial noncaseating hepatic granulomas and elevated ACE/lysozyme, but the subsequent emergence of bilateral discrete micronodules with positive acid-fast staining and PCR confirms miliary tuberculosis.",
+  "case_prompt": "A 54-year-old woman is admitted with a 7-day history of fever, general malaise, and progressive dyspnea. Five years prior to presentation, she underwent bilateral silicone breast augmentation, with a right-sided revision procedure performed 7 months ago following implant rupture. She was initially treated by a primary care physician with oral antibiotics for presumed community-acquired pneumonia without improvement. On examination, she appears thin (height 158 cm, weight 46 kg) and tachypneic. Vital signs show blood pressure of 100/50 mmHg, heart rate of 74 beats/min, body temperature of 37.0°C, and respiratory rate of 30 breaths/min. Auscultation reveals inspiratory crackles at both lung bases. Scleral icterus is present. Admission blood tests demonstrate severe thrombocytopenia, prolonged prothrombin time, significantly elevated fibrinogen degradation products (FDP), severe hepatic dysfunction with hyperbilirubinemia, mild renal insufficiency, and elevated C-reactive protein. Arterial blood gas on ambient air confirms hypoxemia with hypocapnia. Autoantibody panels are negative, and peripheral blood cultures show no bacterial growth. Ophthalmologic examination reveals no uveitis. Computed tomography of the chest reveals nodular and macular opacities in the right upper and middle lobes and left inferior lobe, accompanied by ground-glass opacities in both inferior lobes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Bacterial Community-Acquired Pneumonia / Sepsis",
+      "rule_out_reason": "Bacterial infection was initially suspected given respiratory distress and multiorgan involvement, but empiric antimicrobial therapy had no clinical impact and peripheral blood cultures were negative.",
+      "quote": "She visited her family doctor and was diagnosed with pneumonia, but treatment with antibiotic therapy had no noticeable effect... Blood culture was negative for bacteria."
+    },
+    {
+      "candidate": "Systemic Sarcoidosis",
+      "rule_out_reason": "Sarcoidosis was supported by elevated serum ACE and lysozyme levels, BALF CD4/CD8 ratio elevation, and noncaseating granulomas on liver biopsy, but corticosteroid treatment triggered miliary progression rather than disease control.",
+      "quote": "We considered the possibility of sarcoidosis based on elevated levels of angiotensin-converting enzyme (ACE) (63.0 IU/L) and lysozyme (11.8 mg/mL). On day 23, Liver biopsy confirmed Langhans' giant cell and noncaseating granuloma"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Miliary Tuberculosis secondary to Corticosteroid Immunosuppression",
+      "rule_out_reason": "Follow-up chest CT revealed classic bilateral miliary nodules, and Mycobacterium tuberculosis was definitively identified by acid-fast staining of gastric fluid, sputum, and liver specimens alongside positive PCR testing.",
+      "quote": "On day 34, CT was performed to followup the interstitial pneumonia and fever, revealing miliary nodules in both lung fields, typical of miliary tuberculosis... antituberculosis therapy... was applied for miliary tuberculosis after acid-fast bacilli were detected in gastric fluid and sputum, and polymerase chain reaction testing for Mycobacterium tuberculosis yielded positive results."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission presentation captures the complex initial pulmonary-DIC presentation without revealing the subsequent sarcoidosis or tuberculosis diagnoses. Diagnostic reasoning traces the full clinical evolution. Audit flags verified as NONE."
+}

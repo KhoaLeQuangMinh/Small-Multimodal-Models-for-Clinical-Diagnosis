@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3431058_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 60-year-old woman presenting with a massive 15 x 10 cm right paraumbilical cystic swelling evolving over one year. The presence of a positive cough impulse and dilated overlying superficial veins strongly suggested a primary surgical diagnosis of a paraumbilical hernia. However, ultrasound and CT imaging revealed a well-defined subcutaneous/intramuscular fluid collection with internal undulating membranes/septae without peritoneal rupture or visceral organ involvement. The tension centers on differentiating an atypical hernia or soft-tissue mesenchymal neoplasm from an isolated musculo-aponeurotic parasitic hydatid cyst.\n2. Admission Breakpoint: The admission clinical presentation incorporates the 1-year history of a painless paraumbilical swelling, physical findings (15 x 10 cm cystic mass, positive cough impulse, dilated overlying veins), normal baseline labs (CBC, urinalysis, serum biochemistry, CXR), ultrasound (subcutaneous/muscular cystic lesion with internal echoes), and contrast-enhanced abdominal CT (subcutaneous/intramuscular cystic mass with internal undulating septae without peritoneal disruption or intra-abdominal cysts). The breakpoint is set prior to initiation of anthelmintic chemotherapy (albendazole), surgical exploration, and histopathological confirmation.\n3. Differential Distinctions: Paraumbilical hernia is the primary clinical mimic due to anatomical location and positive impulse on coughing, but CT conclusively shows an intact peritoneal boundary with no herniation of abdominal viscera or bowel. Soft tissue tumors (cystic schwannoma, cystic lymphangioma, liposarcoma) can present as painless abdominal wall masses with prominent veins, but characteristic internal undulating membranes/daughter cysts are pathognomonic for hydatid disease.",
+  "case_prompt": "A 60-year-old woman presents with a swelling in the right paraumbilical region that has been progressively enlarging over the past year. She reports no associated abdominal pain, fever, or gastrointestinal symptoms.\n\nOn physical examination, there is a large, painless, fluctuant cystic swelling measuring 15 x 10 cm located in the right paraumbilical area. The cough impulse is positive, and dilated superficial veins are visible across the overlying skin.\n\nPreoperative laboratory investigations, including a complete blood count, urinalysis, and serum biochemistry panel, are normal. A chest radiograph is unremarkable.\n\nAbdominal ultrasonography reveals a well-defined cystic lesion in the subcutaneous and muscular planes with internal echogenic content. Contrast-enhanced computed tomography (CT) of the abdomen demonstrates a predominantly subcutaneous cystic mass with intramuscular extension and internal undulating septations, without breach or interruption of the peritoneal membrane. No intra-abdominal cystic lesions are identified within the liver, spleen, or other visceral organs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Paraumbilical Hernia",
+      "rule_out_reason": "Considered as the primary provisional clinical diagnosis due to paraumbilical location and a positive cough impulse; however, cross-sectional CT and ultrasound demonstrated an intact peritoneum with a localized intramuscular cystic mass rather than a herniation defect or protruding bowel/omentum.",
+      "quote": "A provisional diagnosis of paraumbilical hernia was made abdominal ultrasound showed a cystic lesion in subcutaneous and muscular plane with echogenic content within. Abdominal contrast enhanced computer tomography showed a predominantly subcutaneous cystic swelling with intra muscular extension without breach of peritoneum (Figure 2)."
+    },
+    {
+      "candidate": "Soft Tissue Mesenchymal Neoplasm (Cystic Sarcoma / Lymphangioma)",
+      "rule_out_reason": "Considered given the large, chronic, expanding abdominal wall mass with dilated overlying collateral veins, but imaging showed thin-walled cystic fluid and characteristic internal undulating membranes rather than a solid or hypervascular soft-tissue tumor.",
+      "quote": "The cyst showed internal undulating septae (Figure 3). No other intraabdominal cystic lesions were found."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcal Hydatid Cyst",
+      "rule_out_reason": "CT identification of internal undulating septations (water-lily sign) localized to the abdominal wall musculature and subsequent surgical exploration revealing a thick-walled fibrous capsule containing numerous daughter cysts confirmed echinococcosis.",
+      "quote": "The gross specimen on opening showed multiple daughter cysts and confirmed histopathologically as hydatid cyst (Figure 6)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for isolated abdominal wall hydatid cyst (Echinococcosis) mimicking a paraumbilical hernia. Admission breakpoint set prior to albendazole therapy and surgical exploration."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4769046_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A pediatric renal transplant recipient on triple immunosuppression presents with fever, asthenia, and a cavitary pulmonary consolidation with mediastinal adenopathy, creating an urgent differential between bacterial pneumonia, invasive aspergillosis, and mycobacterial disease in the setting of a negative tuberculin test.\n2. Admission Breakpoint: The admission phase ends following physical exam, baseline hematology/biochemistry, chest radiography, and thoracic CT. Gastric aspirates, tuberculin testing, and bronchoscopy with BAL constitute confirmatory diagnostic investigations.\n3. Differential Distinctions: Bacterial pneumonia typically responds rapidly to beta-lactams; pulmonary aspergillosis demonstrates angioinvasive fungal hyphae; tuberculin skin tests may be falsely negative due to immunosuppressive therapy. Tuberculosis is confirmed by mycobacterial isolation on bronchoalveolar lavage.",
+  "case_prompt": "A 13-year-old male was admitted with a one-week history of fever and asthenia. He had end-stage renal failure attributed to vesicoureteral reflux and had undergone a second deceased-donor renal transplantation three months previously. His maintenance immunosuppressive regimen comprised prednisone 10 mg/day, mycophenolate mofetil 1500 mg/day, and cyclosporine 75 mg twice daily, with adequate allograft function. On admission, the patient was asthenic with a temperature of 38.5°C, blood pressure of 110/70 mmHg, pulse rate of 90 beats/min, and inspiratory rhonchi with decreased breath sounds over both lung bases. There was no peripheral lymphadenopathy or hepatosplenomegaly. Initial laboratory testing showed hematocrit 38%, white blood cell count 8,300/mm³, platelet count 220,000/mm³, blood urea nitrogen 6.8 mmol/L, serum creatinine 75 µmol/L, C-reactive protein 88.5 mg/L, and erythrocyte sedimentation rate 51 mm/h. Serum protein electrophoresis showed total protein 65 g/L (albumin 33.9 g/L, alpha-1 5.8 g/L, alpha-2 9.6 g/L, beta-1 3.9 g/L, beta-2 3.4 g/L, gamma-globulin 8.3 g/L). Chest radiography revealed opacity in the right middle zone and superior mediastinal enlargement, and thoracic CT confirmed cavitary pneumonia of the right lower lobe with anterior mediastinal lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial pneumonia",
+      "rule_out_reason": "Acute febrile respiratory illness with pulmonary consolidation and elevated inflammatory markers in an immunosuppressed host suggested typical or atypical bacterial pneumonia, but cavitary progression and persistent fevers prompted invasive evaluation.",
+      "quote": "three diagnoses were suspected: pneumonia, pulmonary tuberculosis and pulmonary aspergillosis."
+    },
+    {
+      "candidate": "Pulmonary aspergillosis",
+      "rule_out_reason": "Invasive fungal infection is a leading cause of cavitary lung lesions in solid organ transplant recipients on immunosuppressive therapy, but bronchoscopic microbiological workup revealed mycobacteria rather than fungal pathogens.",
+      "quote": "three diagnoses were suspected: pneumonia, pulmonary tuberculosis and pulmonary aspergillosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite a negative tuberculin skin test (secondary to immunosuppressive anergy) and negative gastric aspirates, bronchoalveolar lavage fluid demonstrated Mycobacterium tuberculosis, fully susceptible to first-line agents.",
+      "quote": "the diagnosis was made by the study of sputum specimens aspirated during bronchoalveolar lavage that revealed the presence of mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

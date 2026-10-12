@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3628230_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 43-year-old diabetic man in Bengaluru presents with acute febrile illness, headache, myalgias, and severe abdominal pain with distension, accompanied by thrombocytopenia, borderline hepatosplenomegaly, and ascites with bilateral pleural effusions. While acute febrile illness with polyserositis and thrombocytopenia in an endemic region frequently raises concern for severe tropical infections or spontaneous bacterial peritonitis, this patient experienced sudden hemorrhagic peritoneal bleeding (hemoperitoneum) despite a preserved coagulation profile, masquerading as an acute surgical abdomen.\n2. Admission Breakpoint: The admission narrative captures the patient's presentation in Bengaluru with a 4-day history of high fever, headache, myalgia, and a 2-day history of abdominal pain and distension, lack of trauma history, absence of jaundice or rash, baseline CBC showing normal leukocyte count (6,100/mm3), mild thrombocytopenia (96,000/mm3), PCV of 30%, and abdominal ultrasound revealing gross ascites, bilateral minimal pleural effusions, and borderline hepatosplenomegaly. Confirmatory viral serology (dengue IgM/IgG), blood cultures, serial hemoglobin drop, paracentesis demonstrating frank hemoperitoneum, and diagnostic laparoscopy are strictly reserved for diagnostic reasoning.\n3. Differential Distinctions: Malaria was considered given acute high fever, headache, myalgias, hepatosplenomegaly, and thrombocytopenia, but ruled out by negative peripheral smear. Spontaneous bacterial peritonitis / decompensated chronic liver disease was entertained because of gross ascites, occasional alcohol use, and abdominal distension, but sterile blood cultures, intact coagulation profile, and absence of stigmata of chronic liver disease excluded decompensated cirrhosis. The subsequent paracentesis yielding 500 mL of hemorrhagic fluid and laparoscopy demonstrating 1.5 L of hemoperitoneum in the setting of rising dengue IgM/IgG titers confirmed severe dengue with plasma leakage and capillary bleeding.",
+  "case_prompt": "A 43-year-old man residing in Bengaluru, India, presents to the emergency department in July with a 4-day history of high-grade fever accompanied by headache, diffuse myalgia, and progressive abdominal pain with abdominal distension over the past 2 days. He has a medical history of type 2 diabetes mellitus well-controlled on oral hypoglycemic agents and reports occasional social alcohol consumption. He denies any history of abdominal trauma.\n\nOn physical examination, he is febrile, alert, and anicteric. No cutaneous rash, petechiae, or peripheral lymphadenopathy are detected. The abdomen is distended with diffuse tenderness to palpation, and shifting dullness is present. Initial triage laboratory evaluation reveals a total leukocyte count of 6,100 cells/mm3 (50% neutrophils, 45% lymphocytes), a platelet count of 96,000 cells/mm3, hemoglobin of 9.6 g/dL, and a packed cell volume (hematocrit) of 30%. Baseline coagulation testing demonstrates a prothrombin time of 15.9 seconds, an activated partial thromboplastin time of 29 seconds, and an INR of 1.48. Bedside abdominal ultrasound reveals gross ascites, bilateral minimal pleural effusions, and borderline hepatosplenomegaly without focal hepatic or splenic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered because of acute high fever, headache, severe myalgias, hepatosplenomegaly, and thrombocytopenia in an endemic region, but definitively excluded by a negative peripheral blood smear.",
+      "quote": "peripheral smear for malaria was negative."
+    },
+    {
+      "candidate": "Bacterial Sepsis / Spontaneous Bacterial Peritonitis",
+      "rule_out_reason": "Considered in view of acute abdominal pain, distension, gross ascites, and fever in a diabetic patient, but excluded by sterile blood cultures and lack of intra-abdominal purulence or organ perforation on exploration.",
+      "quote": "The blood culture was sterile and ultrasound abdomen reported gross ascites, bilateral minimal pleural efflusion and borderline hepatosplenomegaly."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis of severe dengue complicated by spontaneous hemoperitoneum was established by positive serology with rising IgM-to-IgG antibody titers, coupled with paracentesis and laparoscopy revealing 1.5 L of hemorrhagic peritoneal fluid with blood clots and diffuse peritoneal hyperemia despite a normal coagulation profile.",
+      "quote": "The dengue serology was positive for both IgM and IgG antibodies (immunochromatography) serological test... With rising titers new dengue illness was diagnosed."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly terminates after triage labs and initial ultrasound. All serologic test names, malaria smear results, paracentesis details, and laparoscopy findings are withheld until diagnostic reasoning. Exact quotes substantiate every candidate differential."
+}

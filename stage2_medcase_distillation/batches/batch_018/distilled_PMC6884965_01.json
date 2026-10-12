@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6884965_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old non-smoker responding clinically and radiologically to antimicrobial therapy for an upper-lobe pulmonary process suddenly develops a new, rapidly enlarging 3.4-cm lower-lobe pulmonary mass on routine surveillance CT, creating an acute diagnostic dilemma between secondary bronchogenic carcinoma, opportunistic fungal superinfection, and an immune-mediated paradoxical response.\n2. Admission Breakpoint: The breakpoint occurs following the discovery of the new mass on surveillance CT, verification of clinical stability, and negative non-invasive laboratory evaluations (normal ESR, CRP, tumor markers, fungal biomarkers), immediately prior to CT-guided percutaneous transthoracic lung biopsy.\n3. Differential Distinctions: Primary lung cancer is the most concerning mimic of a new 3.4-cm solitary pulmonary mass but is less likely in a non-smoker with normal tumor markers and discordant regression of the initial superior lobe lesion. Opportunistic invasive fungal disease (such as Aspergillosis) is excluded by negative serum galactomannan and beta-D-glucan assays. Histopathology demonstrating caseating granulomas confirms a paradoxical reaction.",
+  "case_prompt": "A 52-year-old female was referred for evaluation after a routine follow-up chest computed tomography (CT) scan revealed a new pulmonary mass. Six months earlier, she had presented with right-sided chest pain of one year's duration, at which time chest CT demonstrated a 1.7 x 1.4 cm nodule in the right upper lobe, while the right lower lobe was clear. She had no history of tobacco use, malignancy, diabetes mellitus, or chronic illness. She had been started on a multi-drug antimicrobial regimen for a chronic granulomatous pulmonary infection, resulting in gradual symptom resolution.\n\nOne week prior to admission, a scheduled surveillance chest CT demonstrated marked interval regression of the primary right upper lobe nodule, but revealed a new, distinct 3.4 x 2.3 cm mass-occupying lesion in the right lower lobe. The patient remained completely asymptomatic, specifically denying fevers, chills, cough, hemoptysis, dyspnea, recurrent chest pain, or weight loss. Physical examination was unremarkable.\n\nLaboratory evaluation revealed a white blood cell count of 4.28 x 10^9/L with 17.8% lymphocytes. Serum erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), serum tumor markers, galactomannan assay (GM-test), (1,3)-beta-D-glucan assay (G-test), and connective tissue disease autoantibodies were all within normal limits. HIV serology was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Bronchogenic Carcinoma",
+      "rule_out_reason": "A new, rapidly expanding 3.4-cm pulmonary mass in a 52-year-old raises major suspicion for primary lung cancer. However, the patient was a lifelong non-smoker, serum tumor markers were negative, and the lesion developed in the setting of successful radiographic regression of her primary nodule.",
+      "quote": "She denied history of smoking, malignancy, diabetes and other serious illness... tumor markers... were within the normal ranges... CT scans revealed a new occupying lesion (3.4cm x 2.3cm) in the right-inferior lobe (Figure 2C and D), whereas the original nodule located in the superior lobe demonstrated improvement"
+    },
+    {
+      "candidate": "Opportunistic Invasive Fungal Superinfection (Aspergillosis / Cryptococcosis)",
+      "rule_out_reason": "Immunocompromised or treated lung cavities can develop secondary fungal masses or mycomas. However, the patient remained afebrile without systemic inflammation, and specific fungal surveillance biomarkers were completely normal.",
+      "quote": "galactomannan test (GM-test), (1, 3)-beta-D glucan test (G-test), autoantibodies related to connective tissue disease were within the normal ranges."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous CT-guided lung biopsy of the new lower lobe mass revealed necrotizing caseating granulomatous inflammation without malignancy, confirming a paradoxical upgrading reaction during anti-tuberculosis therapy, with subsequent spontaneous mass regression on continued treatment.",
+      "quote": "CT-guided percutaneous lung biopsy demonstrated caseating granulomas (Figure 3). The patient was diagnosed as paradoxical reaction and was continued on anti-tuberculosis therapy. The size of new pulmonary mass was reduced to 1.5cm x 1.3cm one month later (Figure 2E and F) and was further reduced to 0.9cm x 1.1cm (Figure 2G and H) three months later."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for tuberculosis presenting as a paradoxical reaction (new pulmonary tuberculoma/mass during anti-tuberculosis therapy). Admission breakpoint strictly set prior to percutaneous CT-guided lung biopsy."
+}

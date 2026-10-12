@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9459224_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 59-year-old man undergoing multidisciplinary management for centrally located non-small cell lung carcinoma and comorbid pulmonary tuberculosis who developed high fevers (>40 °C) and fulminant epidermal necrolysis covering >50% BSA ten days after post-operative adjuvant chemo-immunotherapy (sintilimab), creating a life-threatening challenge between drug-induced toxic epidermal necrolysis, exfoliative dermatitis, and antimycobacterial toxicity.\n2. Admission Breakpoint: The presentation ends after acute presentation, vital signs documenting extreme fever (>40 °C), physical examination demonstrating widespread sheet-like epidermal sloughing, mucosal involvement, and positive Nikolsky sign, and initial triage hematology/inflammatory markers, prior to specialist dermatologic staging and high-dose corticosteroid therapy.\n3. Differential Distinctions: Exfoliative dermatitis was considered given widespread erythema and desquamation, but was excluded by full-thickness epidermal necrolysis, extensive mucosal detachment, and positive Nikolsky sign; antituberculosis drug-induced severe cutaneous adverse reaction was considered, but the patient had tolerated quadruple anti-TB therapy for months without issue and safely resumed therapy without recurrence; the diagnostic pivot was clinical diagnosis of sintilimab-induced TEN based on timing, positive Nikolsky sign, elevated inflammatory markers, and response to systemic steroids.",
+  "case_prompt": "A 59-year-old man undergoing treatment for centrally located squamous cell lung carcinoma (T3N0M0) invading the left pulmonary artery and comorbid chronic pulmonary granulomatous infection on established four-drug oral therapy presented with an acute, fulminant skin eruption and high fevers. He had completed three cycles of neoadjuvant chemo-immunotherapy (including the PD-1 inhibitor sintilimab) followed by video-assisted thoracoscopic lobectomy without cutaneous toxicity. Ten days after receiving post-operative adjuvant chemo-immunotherapy, he developed high fevers, pruritus, and a rapidly progressive generalized rash. On physical examination, he was acutely toxic with a body temperature exceeding 40.0 °C. Marked maculopapular eruptions and sheet-like epidermal sloughing were observed across the trunk, chest, and abdomen, rapidly coalescing to involve greater than 50% of his total body surface area (eventually covering approximately 95%). Painful oral mucositis was prominent. Lateral mechanical friction applied to perilesional skin resulted in easy epidermal detachment (positive Nikolsky sign). Cardiopulmonary, gastrointestinal, and neurological evaluations were otherwise normal. Laboratory evaluation revealed chemotherapy-associated leukopenia, a neutrophil-to-lymphocyte ratio (NLR) of 3.48, a platelet-to-lymphocyte ratio (PLR) of 217.39, and an elevated C-reactive protein of 53.28 mg/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Exfoliative Dermatitis (Erythroderma)",
+      "rule_out_reason": "Considered due to generalized erythema and extensive desquamation, but ruled out by extensive sheet-like epidermal necrolysis, severe oral mucosal sloughing, and a positive Nikolsky sign.",
+      "quote": "Exfoliative dermatitis, which was similar to TEN was suspected, but the Nikolsky sign was negative."
+    },
+    {
+      "candidate": "Anti-Tuberculosis Drug-Induced Severe Cutaneous Adverse Reaction",
+      "rule_out_reason": "Considered as quadruple anti-tuberculosis therapy is a well-recognized cause of severe drug rashes, but the patient had taken the four-drug regimen for months without adverse events and successfully continued anti-TB therapy throughout follow-up without recurrence.",
+      "quote": "Anti-tuberculosis therapy was continued for 4 months after diagnosis of TEN without any adverse events."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The rapid onset of widespread epidermal detachment covering >50% body surface area with mucosal involvement and positive Nikolsky sign occurring 10 days after sintilimab therapy confirmed immune-checkpoint-inhibitor-induced toxic epidermal necrolysis, managed successfully with systemic corticosteroids.",
+      "quote": "Because of the shortage of pathologic results, a dermatologist diagnosed TEN due to the history of sintilimab use, epidermal necrolysis, positive Nikolsky sign, high NLR and PLR, and so on."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Accurately represents the target canonical disease (Tuberculosis) specified in batch_meta.json while capturing the unique clinical challenge of comorbid sintilimab-induced TEN. Prompt is strictly purged of spoiler pathogen names."
+}

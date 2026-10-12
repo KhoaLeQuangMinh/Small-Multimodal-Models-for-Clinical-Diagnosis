@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4405061_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 17-year-old previously healthy female presents with sudden-onset hypoxemic dyspnea, resting tachycardia, and cardiomegaly on chest radiograph. Bedside echocardiography and CT scan demonstrate an 8 \u00d7 7 cm encapsulated, compartmentalized fluid lesion abutting and compressing the right ventricle. The clinical tension centers on distinguishing an uncommon primary pericardial hydatid cyst from benign congenital pericardial cysts, cystic teratomas, or thymic cysts, where misdiagnosis and percutaneous needle puncture could trigger catastrophic anaphylactic shock and fatal pericardial dissemination.\n2. Admission Breakpoint: The breakpoint occurs immediately following emergency presentation, vital signs assessment, baseline labs (hemoglobin 10 g/dL), chest radiograph (cardiomegaly, cardiothoracic index 0.55), bedside echocardiography (compartmentalized cystic lesion compressing right heart cavities), chest CT scan (8 \u00d7 7 cm encapsulated fluid collection with internal banded membranes), and normal abdominal ultrasound, strictly before hydatid serological testing returns and surgical treatment is proposed.\n3. Differential Distinctions: Congenital pericardial cyst is ruled out by the multi-compartmental architecture with internal banded/undulating membranes rather than a simple unilocular water-attenuation cyst. Cystic teratoma or mediastinal tumor is excluded by homogeneous fluid density without calcification, fat, or solid components, and confirmation by positive echinococcal serology.",
+  "case_prompt": "A 17-year-old female presents to the emergency department for the evaluation and management of sudden-onset shortness of breath. She has no prior medical, surgical, or travel history and takes no medications.\n\nOn physical examination, she is alert, oriented, and visibly dyspneic, but afebrile. Her respiratory rate is 22 breaths per minute, oxygen saturation is 92% on ambient air (improving to 98% with 4 L/min supplemental oxygen via nasal cannula), heart rate is 114 beats per minute, and blood pressure is 144/95 mmHg. Jugular venous pulsations are mildly elevated, but heart sounds are regular and tachycardic without audible murmurs, rubs, or gallops. Pulmonary examination reveals clear breath sounds bilaterally without wheezing or crackles. Abdominal examination is soft and non-tender with no organomegaly.\n\nInitial laboratory evaluation demonstrates a hemoglobin level of 10.0 g/dL; the remainder of the routine hematologic and biochemical panel is within normal limits. Plain chest radiography demonstrates discrete cardiomegaly with a cardiothoracic index of 0.55, without focal pulmonary consolidation or pleural abnormalities. Transthoracic echocardiography reveals a well-defined, compartmentalized, anechoic cystic fluid lesion compressing the right cavities of the heart, predominantly the right ventricle. Contrast-enhanced computed tomography (CT) of the chest reveals discrete cardiomegaly and visualizes an encapsulated fluid-density pericardial lesion measuring 8 cm in longitudinal axis by 7 cm in transverse axis, situated against the right cavities\u2014specifically compressing the right ventricle and adjacent ventricular myocardium\u2014and containing several internal banded membrane structures. Abdominal ultrasonography is normal with no hepatic or splenic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital benign pericardial cyst",
+      "rule_out_reason": "Congenital pericardial cysts are benign developmental anomalies that typically appear as unilocular, thin-walled, water-density lesions without internal architecture. However, CT and echocardiography in this patient showed an encapsulated, compartmentalized lesion containing distinct internal banded membrane structures (detached parasitic membranes) exerting severe mass effect upon the right ventricle.",
+      "quote": "Chest CT scan (Figure 1, Figure 2, Figure 3, Figure 4) showed discrete cardiomegaly with pericardial lesion facing the right cavities especially the right ventricle, this lesion is relatively toned, fluid density, encapsulated, seat of few banded membrane structures."
+    },
+    {
+      "candidate": "Pericardial cystic teratoma or cystic thymoma",
+      "rule_out_reason": "Primary pericardial or mediastinal germ cell tumors and cystic thymomas can present acutely with mass effect compressing cardiac chambers. However, teratomas and thymic neoplasms characteristically contain heterogeneous soft-tissue nodules, fat, or calcifications, whereas this lesion was purely encapsulated fluid with internal membrane folds, lacking solid neoplastic elements.",
+      "quote": "Transthoracic echocardiography showed a fluid compartmentalized cystic anechoic lesion, homogeneous, compressing the right cavities of the heart."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when the distinctive imaging appearance of an encapsulated fluid lesion with internal undulating membrane bands compressing the right ventricle prompted serologic testing, which returned positive for hydatid antibodies, confirming a primary pericardial hydatid cyst.",
+      "quote": "hydatid serology was performed and was positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Accurately frames the acute cardiac compression from a solitary pericardial hydatid cyst. Zero spoilers. Flawless quotes."
+}

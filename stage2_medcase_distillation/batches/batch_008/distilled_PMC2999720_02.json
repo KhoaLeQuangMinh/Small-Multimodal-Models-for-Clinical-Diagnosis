@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2999720_02",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A rural male presenting with acute urinary retention requiring emergency suprapubic cystostomy, unilateral painful testicular enlargement, and ipsilateral inguinal lymphadenopathy, but with a completely normal-feeling prostate and normal serum PSA. This presentation strongly mimics genitourinary tuberculosis, primary testicular/prostate carcinoma, or bacterial epididymo-prostatitis.\n2. Admission Breakpoint: The emergency admission evaluation with suprapubic cystostomy, digital rectal examination, PSA testing, urinalysis, urine culture, sputum AFB, and tuberculin skin testing, prior to ultrasound-guided prostate needle biopsy.\n3. Differential Distinctions: Genitourinary tuberculosis is the chief infectious look-alike producing chronic granulomatous prostatitis, sterile leukocyturia, epididymo-orchitis, and bladder outflow tract obstruction, but was excluded by negative PPD testing, negative urine cultures, and negative sputum acid-fast bacilli; prostate adenocarcinoma or testicular neoplasm typically presents with elevated PSA, hard irregular prostate nodules, or distinct testicular masses, whereas this patient had normal PSA (2.47 ng/mL) and smooth benign prostate texture; acute/chronic bacterial prostatitis typically yields positive bacterial cultures and marked fever.",
+  "case_prompt": "A 59-year-old male residing in a rural area presents with a 3-year history of progressive obstructive and irritative lower urinary tract symptoms, culminating in acute urinary retention that required emergency suprapubic cystostomy. His medical history is notable for arterial hypertension and a treated pulmonary infection two years earlier managed with a course of trimethoprim-sulfamethoxazole.\n\nOn physical examination, the left testis is enlarged and tender, accompanied by ipsilateral, painless inguinal lymphadenopathy. Digital rectal examination reveals a grade 1, smooth, elastic, and non-tender prostate.\n\nLaboratory evaluation shows normal renal function and a serum prostate-specific antigen (PSA) level of 2.47 ng/mL. Urinalysis demonstrates proteinuria and leukocyturia, with a negative urine bacterial culture. Sputum smears for special-stain micro-organisms and a tuberculin skin test (PPD) are both negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Genitourinary Tuberculosis",
+      "rule_out_reason": "Considered as the primary granulomatous infectious cause of chronic lower urinary tract obstruction, sterile leukocyturia, and unilateral epididymo-orchitis, but ruled out by negative PPD skin testing, negative bacterial and mycobacterial urine cultures, and negative sputum acid-fast bacilli.",
+      "quote": "Laboratory tests showed normal renal function, a PSA concentration of 2.47 ng/mL, proteinuria, leukocyturia, a negative urine culture, a negative PPD, and negative acid-fast bacilli in the sputum."
+    },
+    {
+      "candidate": "Prostate Adenocarcinoma or Testicular Neoplasm",
+      "rule_out_reason": "Considered due to the chronic severe bladder outlet obstruction and unilateral testicular enlargement in a 59-year-old male, but argued against by a normal PSA of 2.47 ng/mL and smooth elastic prostate on exam, and ruled out by histological demonstration of fungal granulomatous inflammation rather than malignant neoplasia.",
+      "quote": "A prostate exam revealed a grade 1 smooth, elastic, and painless prostate."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided prostate biopsy established the definitive diagnosis by demonstrating granulomatous chronic prostatitis containing typical fungal structures consistent with Paracoccidioides.",
+      "quote": "With the suspicion of genitourinary PCM, a US-guided prostate biopsy was performed, which revealed granulomatous chronic prostatitis with fungal structures consistent with PCM (Figures 5 and 6)."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency suprapubic drainage and baseline negative laboratory/PPD screening before US-guided prostate biopsy. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

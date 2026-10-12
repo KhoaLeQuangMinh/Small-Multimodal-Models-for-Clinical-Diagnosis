@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3703740_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 42-year-old male farmer from Sri Lanka returns home following travel through West Africa (Mali and Benin), where he lived in unsanitary shelters with intense mosquito exposure and witnessed regular febrile illness and a fatal fever. Upon arrival at the international airport in Colombo, point-of-entry screening with a rapid diagnostic test (CareStart Malaria HRP2/PLDH) was falsely negative, leading to his release home. Three days later, he developed acute high fever, rigors, headache, and progressive thrombocytopenia. Because Sri Lanka was approaching malaria elimination and experiencing dengue epidemics, clinicians strongly presumed dengue fever and managed him under strict dengue clinical pathways. The central clinical challenge was overcoming a false-negative airport screening test and diagnostic anchoring on dengue fever in a febrile, thrombocytopenic traveler.\n\n2. Admission Breakpoint: The admission breakpoint occurs upon hospital transfer and initial admission on day 4 with high fever, headache, rigors, and initial laboratory verification of marked thrombocytopenia managed presumptively as dengue fever, strictly prior to dengue serological testing, repeat in-hospital malaria RDT, and thick/thin blood smear parasite microscopy.\n\n3. Differential Distinctions:\n- Dengue Fever / Dengue Hemorrhagic Fever: The leading presumptive diagnosis due to acute high fever, severe headache, rigors, and profound thrombocytopenia in an endemic Sri Lankan setting; ruled out by negative dengue antibody serology, subsequent rebound in platelets, and direct identification of intraerythrocytic protozoa on blood films.\n- West African Viral Hemorrhagic Fever: Considered given severe febrile illness and a reported death from 'fever-like illness' among the cohort in Benin shelters; ruled out by absence of hemorrhagic diathesis and microscopic detection of Plasmodium falciparum.\n- Plasmodium vivax Malaria: Historically the dominant malaria species in Sri Lanka; ruled out by CareStart RDT reactivity for P. falciparum-specific HRP2 and thin film identification of double chromatin ring stages and applique forms.",
+  "case_prompt": "A 42-year-old male farmer from the Eastern Province of Sri Lanka presents to a hospital on Day 4 of an acute febrile illness with high fever, severe frontal headache, rigors, and drenching cold sweats. His recent travel history is notable for return from West Africa three days prior to symptom onset, having resided for several weeks in Mali and Benin in rudimentary shelters with heavy mosquito exposure and inadequate netting, where multiple cohort members suffered acute febrile illnesses and one died of an unexplained fever. Routine screening performed at point of entry upon airport arrival was non-reactive.\n\nOn physical examination, he appears acutely toxic, febrile, and diaphoretic with chills. He has no cutaneous purpura or overt mucosal bleeding. Baseline laboratory evaluation demonstrates profound thrombocytopenia with low platelet counts on consecutive daily measurements, leading to inpatient admission under strict protocols for an acute viral vector-borne hemorrhagic syndrome.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue Fever / Dengue Hemorrhagic Fever",
+      "rule_out_reason": "Considered as the leading presumptive diagnosis due to acute high fever, chills, rigors, severe headache, and marked thrombocytopenia in an area with high dengue endemicity. Excluded by negative dengue antibody testing and recovery of platelet counts alongside direct demonstration of blood parasites.",
+      "quote": "He was referred on day 4 to a Government Peripheral Hospital with suspicion for dengue fever. In view of clinical suspicion for rapid dengue progression, the attending doctor transferred the patient to Batticaloa Teaching Hospital in line with current policy of dengue management in Sri Lanka."
+    },
+    {
+      "candidate": "Acute Viral Hemorrhagic Fever of West African Origin",
+      "rule_out_reason": "Considered because the patient lived in crude shelters in West Africa where several peers fell acutely ill and one cohort member died of an unidentified febrile illness. Excluded by absence of hemorrhagic manifestations and confirmation of protozoal parasitemia.",
+      "quote": "During his time in Benin, the farmer recalled a heavy presence of mosquitoes and regular episodes of fever among the smuggled cohort. Smugglers had refused medical assistance in fear of alerting authorities. One death of a person due to \"fever-like illness\" was also reported although no medical details were available."
+    },
+    {
+      "candidate": "Plasmodium vivax Malaria",
+      "rule_out_reason": "Considered because P. vivax was historically the predominant species in Sri Lanka. Excluded when repeat RDT was positive for P. falciparum-specific HRP2 and blood smear showed characteristic high-density ring forms.",
+      "quote": "For Plasmodium vivax infections, treatment consists of chloroquine for 3 days and primaquine for 14 days."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred when repeat CareStart RDT and Giemsa-stained thick and thin blood smear microscopy demonstrated heavy infection with Plasmodium falciparum (0.7% parasitemia with 36,180 asexual parasites/µL, featuring double chromatin rings and applique trophozoite forms), resolving completely with artemether-lumefantrine and primaquine.",
+      "quote": "By the end of day 7, venous blood was submitted to the hospital laboratory for RDT testing (CareStart) and microscopic examination. The slides were later sent to reference laboratory at AMC in Colombo for confirmation. Giemsa-stained thick and thin blood films were examined for the detection of malarial parasites. The RDT was positive for P. falciparum and was confirmed by the microscopy (double chromatin ring stage and \"applique\" form of trophozoites), and the parasite density was calculated as 36,180 asexual parasites/microL, which equals 0.7% of red blood cell infected."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt provides clinical features, travel history, and thrombocytopenia managed presumptively as dengue without revealing repeat RDT, blood smear microscopy, or species. Verbatim quotes support all differential candidates."
+}

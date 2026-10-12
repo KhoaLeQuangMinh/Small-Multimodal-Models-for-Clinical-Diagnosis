@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5578524_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old previously healthy man presents with a one-month history of fever, abdominal pain, marked ascites, and jaundice, associated with an extreme leukemoid reaction (WBC 41,100/mm³), severe reactive thrombocytosis (platelets 890,000/µL), and anemia. The central diagnostic tension involves differentiating peritoneal carcinomatosis/gastrointestinal malignancy, visceral leishmaniasis, or decompensated hepatic disease from tuberculous peritonitis with an atypical leukemoid response and anergic tuberculin testing.\n2. Admission Breakpoint: The admission clinical triage concludes with the documentation of fever, ascites, jaundice, initial laboratory panel (profound leukocytosis, thrombocytosis, hyperbilirubinemia), normal viral hepatitis markers, and ultrasound/CT revealing hepatosplenomegaly with moderate ascites and clear chest radiograph, prior to diagnostic paracentesis with specialized ascitic ADA/cytology studies and bone marrow biopsy.\n3. Differential Distinctions: Decompensated cirrhosis with spontaneous bacterial peritonitis is excluded by absence of chronic liver disease stigmata, normal coagulation, and high-protein exudative ascites rather than a transudate; peritoneal carcinomatosis / occult GI malignancy is ruled out by normal upper and lower endoscopy, normal CEA (1.97 ng/mL), and negative ascitic cytology; visceral leishmaniasis (Kala-azar) causes prolonged fever, hepatosplenomegaly, and cytopenias rather than hyperleukocytosis, and rK39 serology was negative; whereas abdominal tuberculosis (tuberculous peritonitis) can trigger profound inflammatory leukemoid reactions and causes high-protein, lymphocyte-predominant ascites with elevated adenosine deaminase.",
+  "case_prompt": "A 25-year-old man from a middle-class socioeconomic background was admitted to a tertiary care hospital with a one-month history of persistent fever, vague abdominal pain, and progressive abdominal distention. He reported no history of hematemesis, melena, cough, breathlessness, chest pain, joint pain, or changes in bowel habits, and had no prior personal or familial history of liver disease.\n\nOn physical examination, the patient appeared chronically ill, visibly pale, and icteric, but remained well-oriented and cooperative. Vital signs were stable, and he was normotensive. Abdominal examination revealed symmetrical abdominal distention with shifting dullness indicative of moderate ascites, and sluggish bowel sounds; liver dullness was preserved. There was no peripheral lymphadenopathy, no bony tenderness, no peripheral lower extremity edema, no asterixis, and no cutaneous stigmata of chronic liver disease.\n\nInitial laboratory investigations revealed a hemoglobin level of 8.6 g/dL, an erythrocyte sedimentation rate (ESR) of 40 mm in the first hour, a platelet count of 890,000/µL, and a total white blood cell count of 41,100/mm³. Peripheral blood film examination confirmed microcytic hypochromic anemia and marked neutrophilic leukocytosis with prominent thrombocytosis. Comprehensive metabolic testing revealed a total serum bilirubin of 5.8 mg/dL, ALT 24 U/L, AST 44 U/L, alkaline phosphatase 75 IU/L, LDH 259 U/L, and serum albumin 3.3 g/dL. Prothrombin time, D-dimer, serum creatinine (0.8 mg/dL), and blood glucose (5.6 mmol/L) were within normal limits.\n\nViral hepatitis serologies (HBsAg, anti-HCV, anti-HEV IgM, and anti-HAV IgM) were non-reactive. Carcinoembryonic antigen (CEA) was 1.97 ng/mL, and autoimmune markers (ANA, ASMA) were negative. Tests for malarial parasites and rK39 antigen were negative. A plain chest radiograph was normal. Abdominal ultrasonography and computed tomography (CT) demonstrated hepatosplenomegaly with moderate free peritoneal ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal carcinomatosis / occult abdominal malignancy",
+      "rule_out_reason": "Considered due to the prominent constitutional symptoms, profound leukocytosis, extreme thrombocytosis, and exudative ascites; however, upper gastrointestinal endoscopy, colonoscopy, and CEA level (1.97 ng/mL) were normal, and ascitic cytology was negative for malignant cells.",
+      "quote": "Endoscopy, colonoscopy and chest X-ray revealed normal findings... Ascitic fluid showed lymphocytes 95%, negative for AFB, gram stain and malignant cell."
+    },
+    {
+      "candidate": "Cirrhosis with spontaneous bacterial peritonitis",
+      "rule_out_reason": "Cirrhosis was considered in the setting of ascites and jaundice; however, the patient lacked clinical stigmata of chronic liver disease, prothrombin time was normal, and ascitic fluid revealed an exudate with 95% lymphocytes and sterile cultures.",
+      "quote": "He had no edema, flapping tremor and stigmata of chronic liver disease... His ascitic fluid protein 38 gm/l, sugar 6 mmol/l"
+    },
+    {
+      "candidate": "Visceral leishmaniasis (Kala-azar)",
+      "rule_out_reason": "Prolonged fever, hepatosplenomegaly, and hyperbilirubinemia in an endemic area suggested visceral leishmaniasis, but the rK39 rapid antigen test was negative, and the peripheral blood showed marked leukocytosis rather than pancytopenia.",
+      "quote": "He also tested negative for ANA, ASMA, RK39 and malarial parasite."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative tuberculin skin testing and negative sputum smears, analysis of ascitic fluid demonstrating a lymphocytic-predominant (95%) exudate (protein 38 g/L) with elevated adenosine deaminase (ADA 22.6 U/L) in a patient with a leukemoid reaction prompted empiric antituberculous therapy, resulting in complete resolution of fever and ascites.",
+      "quote": "Ascitic fluid showed lymphocytes 95%, negative for AFB, gram stain and malignant cell. His ascitic fluid protein 38 gm/l, sugar 6 mmol/l and ADA 22.6 U/l... He was identified as a tuberculosis (TB) suspect and was started on treatment with anti-TB drug (CAT-1) and patient gradually felt better... His fever improved over the initial weeks of therapy, ascites resolved"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to admission breakpoint. Diagnostic paracentesis ADA, cytology, bone marrow biopsy, and anti-TB treatment response excluded from case prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9482776_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 67-year-old non-smoking male presents with dry cough, dyspnea, and massive polyserositis (massive bilateral pleural effusions, pericardial effusion, and moderate ascites). In an elderly male, this clinical picture strongly raises suspicion for disseminated malignant serositis (e.g., metastatic adenocarcinoma, malignant mesothelioma, lymphoma) or advanced congestive heart failure. Discerning tuberculous polyserositis with evolving constrictive pericarditis is essential, as failure to identify it risks fatal cardiac tamponade.\n2. Admission Breakpoint: Admission triage terminates after physical examination and initial multimodality imaging (chest CT, abdominal ultrasound, echocardiogram) demonstrating polyserositis, immediately before pleural fluid T-SPOT.TB interferon-gamma release assay, invasive pericardiectomy, and histopathologic/FISH evaluation.\n3. Differential Distinctions: Malignant polyserositis (ruled out by positive pleural fluid T-SPOT.TB, absence of neoplastic cells on histopathology, and presence of caseating granulomas), congestive heart failure or cirrhotic transudative serositis (ruled out by chronic inflammatory calcification, cheese-like caseous lesions, and positive TB FISH), and bacterial/pyogenic pericarditis (ruled out by chronic fibrous collagenization, caseous necrosis, and molecular confirmation of tuberculosis).",
+  "case_prompt": "A 67-year-old male was admitted with dry cough and shortness of breath. He had no history of tobacco use and reported good oral hygiene.\n\nDiagnostic imaging upon admission revealed extensive polyserositis: chest computed tomography (CT) demonstrated massive bilateral pleural effusions, while abdominal ultrasound and echocardiography demonstrated moderate ascites and a significant pericardial effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant polyserositis (metastatic adenocarcinoma or mesothelioma)",
+      "rule_out_reason": "Massive bilateral pleural effusions accompanied by pericardial fluid and ascites in an elderly patient raised high clinical suspicion for disseminated malignancy, but pleural fluid interferon-gamma release assay was positive and surgical pathology demonstrated inflammatory caseous necrosis without malignancy.",
+      "quote": "Pleural fluid T-SPOT.TB result was positive."
+    },
+    {
+      "candidate": "Congestive heart failure or cirrhosis with transudative serositis",
+      "rule_out_reason": "Simultaneous pleural effusions, ascites, and pericardial effusion can occur in severe organ failure, but intraoperative findings revealed chronic thickened pericardial adhesions with calcification and cheese-like caseating lesions progressing to tamponade.",
+      "quote": "Thickened pericardium adhesions were seen during the operation, some of which were obviously calcified and narrowed, and some were cheese-like lesions."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency pericardiectomy histopathology demonstrating fibrous tissue hyperplasia, collagenization with exudative inflammatory necrosis, and positive TB fluorescence in situ hybridization (FISH), confirming tuberculous constrictive pericarditis with polyserositis.",
+      "quote": "Histopathology of the pericardium showed fibrous tissue hyperplasia, collagenization with exudation of inflammatory necrosis, and a positive TB FISH result. A diagnosis of tuberculous constrictive pericarditis was confirmed after surgery."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Tuberculous polyserositis presenting with massive pleural effusions, ascites, and pericardial tamponade requiring pericardiectomy. Prompt stops immediately after baseline imaging."
+}

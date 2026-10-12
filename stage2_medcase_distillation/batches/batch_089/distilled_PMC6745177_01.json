@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6745177_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 37-year-old female farmer with chronic dog exposure presents with a 1-year history of abdominal distension and simultaneous palpable masses in both the right hypochondrium and left iliac fossa. The primary clinical challenge is distinguishing between synchronous benign or malignant ovarian/pelvic neoplasms with hepatic metastases, primary peritoneal multicystic mesothelioma, amoebic/pyogenic hepatic and pelvic abscesses, versus multi-organ hydatid cyst disease.\n2. Admission Breakpoint: The admission breakpoint occurs after the completion of clinical history, physical exam, routine blood counts demonstrating marked peripheral eosinophilia, and baseline abdominal ultrasonography and CT imaging demonstrating multiloculated septated cystic lesions in the liver and left iliac fossa, prior to receiving send-out Echinococcus IgG ELISA serology and surgical exploration.\n3. Differential Distinctions: Ovarian cystadenoma or pelvic neoplasm is made less likely by normal menstrual history, preserved pelvic architecture on exam, and the co-occurrence of an identical multiloculated hepatic lesion with marked peripheral eosinophilia. Pyogenic or amoebic abscesses are excluded by the indolent 12-month afebrile course and sharply marginated septated cystic architecture. The definitive diagnosis of echinococcosis is established by high-titer Echinococcus IgG serology and intraoperative demonstration of multilocular hydatid cysts with daughter cysts.",
+  "case_prompt": "A 37-year-old female farmer residing in a rural community in Nepal presents with a 12-month history of intermittent abdominal pain localized to the right upper quadrant and the left iliac fossa, associated with progressive abdominal distension. She reports no nausea, vomiting, fever, or changes in bowel habits. Her past medical and surgical histories are unremarkable. She has a normal obstetric history, and her menstrual cycles are regular, with her last menstrual period occurring one week prior to presentation. She reports living in overcrowded conditions with poor sanitation and has kept a domestic dog in her household for the past five years.\n\nOn physical examination, her vital signs are within normal limits. Abdominal examination reveals tenderness over the right hypochondrium with a distinct palpable mass. Examination of the lower abdomen reveals a non-tender, smooth, palpable mass in the left iliac fossa that does not move with respiration. Examination of the cardiovascular, respiratory, and neurological systems is unremarkable.\n\nBaseline complete blood count is normal except for marked peripheral eosinophilia of 15%. Abdominal ultrasonography reveals a well-defined hypoechoic heterogeneous lesion involving the right lobe of the liver and a complex multiloculated anechoic lesion involving the left iliac fossa with internal echoes. Abdominal computed tomography (CT) demonstrates a well-defined, large, complex heterogeneous lesion measuring 10 x 8 cm with internal septations located in the eighth hepatic segment, alongside a well-defined lobulated lesion with internal septations measuring 7 x 6 cm in the left iliac fossa.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian Neoplasm / Cystadenoma",
+      "rule_out_reason": "A complex multiseptated mass in the left iliac fossa in a young female could represent an ovarian cystadenoma or cystic teratoma, but her menstrual cycles were regular, pelvic architecture was non-tender, and the synchronous presence of an identical multilocular hepatic lesion with peripheral eosinophilia pointed toward a disseminated parasitic process.",
+      "quote": "There was no significant medical, surgical history with normal obstetric history. Her menstrual cycles were normal with last menstrual period one week back."
+    },
+    {
+      "candidate": "Pyogenic or Amoebic Liver Abscess",
+      "rule_out_reason": "Hepatic abscesses typically manifest with acute or subacute fever, leukocytosis, and right upper quadrant tenderness, which is inconsistent with this patient's 12-month indolent afebrile course, normal leukocyte count, and distinct internal daughter septations on cross-sectional imaging.",
+      "quote": "A 37-year-old woman presented with twelve-month history of intermittent pain over the right upper quadrant of the abdomen and left iliac fossa."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Markedly elevated Echinococcus-specific IgG antibody titers (19.5 U/mL) and laparotomy confirming multi-organ loculated hydatid cysts with daughter cysts in the liver and left iliac fossa established the definitive diagnosis.",
+      "quote": "Serological IgG antibody test ELISA for Echinococcus was raised (19.5 U/ml)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission serology results, surgical exploration, and parasite nomenclature."
+}

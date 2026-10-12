@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9487995_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old immunocompetent woman suffers from relentless, destructive cavitary pulmonary disease that fails nearly a decade of aggressive multi-drug antimicrobial therapy, including novel reserve agents. The clinical tension lies in elucidating why an apparently compliant patient without underlying humoral or retroviral immunodeficiency develops progressive lobar destruction and vacillating drug susceptibility profiles.\n2. Admission Breakpoint: The admission breakpoint is established at the time of specialized referral evaluation with baseline clinical history, routine laboratory and immunodeficiency testing (normal immunoglobulins, negative HIV/HTLV, negative hepatitis/diabetes), and chest CT demonstrating extensive cavitary fusion, prior to longitudinal whole-genome sequencing and retrospective molecular strain reconciliation.\n3. Differential Distinctions: Underlying primary or secondary immunodeficiency (such as HIV or hypogammaglobulinemia) was considered given recalcitrant disease, but was ruled out by normal immunoglobulins and negative retroviral serology. Monoclonal acquired drug resistance was suspected but could not account for alternating phenotype reversals, which instead reflected polyclonal co-infection.",
+  "case_prompt": "A 29-year-old woman is evaluated for a long-standing, refractory cavitary pulmonary infection that has progressed despite years of multiple empirical and guided antimicrobial regimens. She has no personal history of chronic hepatitis, diabetes mellitus, or pre-existing chronic structural lung disease.\n\nOn physical examination, she appears chronically ill with respiratory symptoms. Vital signs are stable. Examination of the chest reveals decreased breath sounds and post-tussive signs over the right upper hemithorax. The remainder of the systemic examination is unremarkable.\n\nEvaluation for underlying immunodeficiency reveals normal serum immunoglobulin levels, and serological testing for human immunodeficiency virus (HIV) and human T-lymphotropic virus is negative. Screening tests show no evidence of viral hepatitis or metabolic abnormalities. Computed tomography (CT) of the chest reveals two previously distinct, thick-walled cavitary lesions in the right upper lobe that have now extensively fused, forming an aggressive infiltrative lesion that is destroying the parenchyma of the entire right upper lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary or Acquired Immunodeficiency Syndrome (HIV / Common Variable Immunodeficiency)",
+      "rule_out_reason": "Refractory cavitary pulmonary destruction persisting across years of therapy in a young adult raised high suspicion for underlying host immunosuppression; workup demonstrated intact immune parameters.",
+      "quote": "The immunodeficiency workup on the patient, a 29-year-old female, revealed normal immunoglobulin levels and a negative result for the anti-HIV human T-lymphotropic virus. In addition, further relevant analysis showed no evidence of other comorbidities including hepatitis, diabetes, and other respiratory diseases."
+    },
+    {
+      "candidate": "Monoclonal Single-Strain Acquired Drug Resistance",
+      "rule_out_reason": "Sequential therapeutic failure was initially presumed to represent progressive acquisition of resistance within a single bacterial clone; however, serial phenotypical tests demonstrated paradoxical reversals from resistance back to sensitivity, incompatible with a single evolving isolate.",
+      "quote": "Interestingly, the DSTs results on June 13, 2019, and August 24, 2020, showed that LFX, protionamide (PTO) and isoniazid aminosalicylate (PA) changed from drug resistance to sensitivity. However, the subsequent five phenotypical DSTs results from October 30, 2020, to July 23, 2021, were similar to those in 2017."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Whole-genome sequencing of longitudinal sputum isolates revealed mixed polyclonal infection by two distinct genomic clusters of lineage 2.3 Mycobacterium tuberculosis differing by up to 196 SNPs, whose simultaneous presence and divergent resistance mutations explained the prolonged treatment failure and structural lung destruction.",
+      "quote": "Based on the continuously reversed results of phenotypical DSTs results and CT images in different stages, we speculate that the patient was infected with two different strains of Mycobacterium tuberculosis (Mtb)... All five strains belonged to lineage 2.3, differing by up to 196 SNPs, of which the strain in 2019 is a separate isolate (cluster 1), and the remaining four strains are from the same cluster (cluster 2). In view of the diversity of strains in vivo hardly exceeds 12 SNPs, we speculate that this patient has mixed infection."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9487995_01. Specific pathogen names and genomic SNP analysis withheld from case_prompt. Verbatim quotes match source text."
+}

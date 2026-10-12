@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5179082_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 63-year-old male presenting with acute febrile prodrome, headache, intense myalgias, and severe abdominal pain followed by acute diarrhea, marked hemoconcentration, and profound thrombocytopenia, mimicking bacterial septic shock or acute surgical abdomen.\n2. Admission Breakpoint: Admission triage ends following presentation of acute gastrointestinal symptoms and emergency laboratory findings (hematocrit 59% and platelet count 79,000/mm³), strictly prior to the onset of terminal refractory shock, pulmonary congestion, and fatal outcome.\n3. Differential Distinctions: Bacterial septic shock from an acute intra-abdominal infection causes severe abdominal pain and shock, but typically lacks marked hemoconcentration with severe thrombocytopenia as an isolated capillary leak phenomenon; acute gastroenteritis causes diarrhea and dehydration, but does not induce severe thrombocytopenia and massive plasma extravasation.",
+  "case_prompt": "A 63-year-old male presented with a sudden onset of acute headache, generalized myalgias, anorexia, and severe abdominal pain. A few days following the initial onset of symptoms, he developed acute diarrhea and progressive clinical worsening.\n\nOn clinical evaluation in the acute care setting, initial emergency laboratory investigations revealed marked hemoconcentration with a hematocrit of 59% and significant thrombocytopenia with a platelet count of 79,000/mm³.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Sepsis / Septic Shock",
+      "rule_out_reason": "Sudden onset of severe abdominal pain, anorexia, diarrhea, and subsequent circulatory collapse raised suspicion for bacterial peritonitis or septic shock; however, the presence of dramatic capillary hyperpermeability manifested by extreme hemoconcentration (hematocrit 59%) together with thrombocytopenia pointed to an acute viral hemorrhagic diathesis.",
+      "quote": "A few days later the patient presented diarrhea, thrombocytopenia (platelet 79.000/mm3) and hemoconcentration (hematocrit 59%)."
+    },
+    {
+      "candidate": "Acute Infectious Gastroenteritis with Dehydration",
+      "rule_out_reason": "Watery diarrhea, anorexia, and abdominal pain suggested acute bacterial or viral gastroenteritis with severe dehydration; however, the acute prodromal triad of severe headache, myalgias, and marked thrombocytopenia indicated a systemic arboviral infection.",
+      "quote": "A 63-year-old male patient that developed a sudden onset of headache, myalgia, anorexia and abdominal pain."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The classic progression from a sudden febrile algic prodrome to critical plasma leakage with severe hemoconcentration (hematocrit 59%), thrombocytopenia (79,000/mm³), and cardiovascular shock established the clinical diagnosis of dengue hemorrhagic fever.",
+      "quote": "The case eventually evolved to shock with severe pulmonary congestion followed by death with a clinical diagnosis of dengue hemorrhagic fever."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation extracted with strict source fidelity; truncated before terminal shock and post-mortem findings. Zero pathogen spoilers."
+}

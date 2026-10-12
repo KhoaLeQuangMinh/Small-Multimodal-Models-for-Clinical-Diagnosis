@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5027129_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 16-year-old girl presents with concurrent multi-focal pathology—a persistent cervical lymph node unresponsive to antibiotics, inflammatory back and hip pain with gait impairment mimicking juvenile spondyloarthropathy, and profound systemic inflammatory markers (ESR 74, CRP 104, platelets 704k)—in the absence of classic pulmonary symptoms like cough or night sweats. This requires differentiating autoimmune spondyloarthropathy, zoonotic infections like brucellosis, and disseminated extrapulmonary tuberculosis.\n2. Admission Breakpoint: The admission triage evaluation concludes following physical examination, baseline laboratory investigations (anemia, reactive thrombocytosis, elevated ESR/CRP, negative Brucella agglutination), cervical ultrasonography showing hypoechoic adenopathy, and initial chest radiography showing hilar lymphadenopathy. It strictly stops before cross-sectional thoracic CT (Ghon complex), spine MRI (Pott's abscess), pelvic MRI (tuberculous hip arthritis), and PPD tuberculin skin testing.\n3. Differential Distinctions: Spondyloarthropathy typically presents with axial back pain and peripheral lower limb arthritis with elevated acute-phase reactants in adolescents, but lacks associated cold abscesses, hilar adenopathy, and Ghon complexes. Brucellosis causes concurrent sacroiliitis, spondylodiscitis, and peripheral arthritis in endemic regions, but is ruled out by negative Brucella agglutination serology. Nonspecific bacterial lymphadenitis was excluded by complete lack of response to prior empiric oral antibiotics.",
+  "case_prompt": "A 16-year-old girl presented to a pediatric clinic for evaluation of persistent neck swelling, low back pain, and progressive hip pain. She lived with a crowded family in Turkey in a low socioeconomic setting. Her family history was notable for a pulmonary infectious disease in her father a decade earlier.\n\nHer symptoms began with painless swelling on the right side of her neck, which failed to regress following a course of nonspecific antibiotics prescribed by an otolaryngology clinic. Concurrently, she developed insidious low back pain and right hip pain that resulted in an antalgic gait, which had been managed symptomatically in a physical medicine and rehabilitation clinic without improvement. She denied cough, night sweats, or weight loss over the preceding two months.\n\nOn physical examination, the patient was pale, with a temperature of 37.8°C, blood pressure of 120/80 mmHg, and weight of 45 kg (3rd–10th percentile). Chest and cardiovascular auscultation were normal, and there was no hepatosplenomegaly. Neck examination revealed a 2 x 2 cm solid, non-tender lymph node in the right cervical chain. Musculoskeletal examination demonstrated right hip tenderness, significantly limited range of motion, and an abnormal gait.\n\nInitial laboratory evaluation revealed a hemoglobin of 10 g/dL, white blood cell count of 5,800/mm3, platelet count of 704,000/mm3, C-reactive protein of 104 mg/L, and erythrocyte sedimentation rate of 74 mm/h. Uric acid was 5.2 mg/dL and lactate dehydrogenase was 192 U/L; peripheral blood smear was unremarkable. Serological testing for regional zoonotic agglutinins was negative. Cervical ultrasonography showed hypoechoic lymphadenopathy, and a plain chest radiograph revealed hilar lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Juvenile spondyloarthropathy / inflammatory arthritis",
+      "rule_out_reason": "Considered due to the insidious onset of hip and low back pain, marked gait disorder, elevated ESR/CRP, and reactive thrombocytosis in an adolescent. Ruled out by thoracic and pelvic advanced cross-sectional imaging revealing a pulmonary Ghon complex, T8-T10 Pott's disease with paraspinal abscess, and tuberculous hip arthritis with intramuscular cystic cold abscesses.",
+      "quote": "She also presented to the physical medicine and rehabilitation clinic with complaints of hip and low back pain that mimicked spondyloarthropathy... Thoracic magnetic resonance imaging (MRI) confirmed a Pott's abscess involving the T8, T9, and T10 vertebrae (Figure 2), and pelvic MRI showed medullary trabecular edema in the right femoral head and neck combined with lobular cystic lesions in the peripheral muscle groups."
+    },
+    {
+      "candidate": "Brucellosis",
+      "rule_out_reason": "Considered because of Turkey's endemicity and the combination of musculoskeletal spinal and hip involvement with constitutional symptoms and high inflammatory markers. Excluded by a negative Brucella agglutination test.",
+      "quote": "The Brucella agglutination test was negative and the peripheral smear revealed no pathology."
+    },
+    {
+      "candidate": "Bacterial cervical lymphadenitis",
+      "rule_out_reason": "Considered initially as a simple localized adenitis, but ruled out because the enlarged cervical lymph node showed no response or reduction in size following a course of broad-spectrum antibiotics.",
+      "quote": "She had been treated with nonspecific antibiotics for cervical lymph nodes, but the size of the lymph nodes did not change with this treatment."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cross-sectional thoracic and pelvic imaging demonstrating coexistent classic pulmonary Ghon complex on CT, T8-T10 Pott's abscess on spine MRI, and tuberculous hip arthritis on pelvic MRI, in conjunction with a 16-mm PPD induration and household contact history.",
+      "quote": "We performed thoracic computed tomography (CT), which revealed a Ghon complex in the right lung and was suspicious for a Pott's abscess. Thoracic magnetic resonance imaging (MRI) confirmed a Pott's abscess involving the T8, T9, and T10 vertebrae (Figure 2), and pelvic MRI showed medullary trabecular edema in the right femoral head and neck combined with lobular cystic lesions in the peripheral muscle groups. With these MRI findings, we diagnosed the patient with tuberculous arthritis. Her purified protein derivative (PPD) skin test was 16 mm in diameter."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "The admission narrative contains zero disease or pathogen names, stopping cleanly at admission triage before CT/MRI and PPD testing. Differential diagnoses cover spondyloarthropathy, brucellosis, and bacterial adenitis with exact supporting quotes."
+}

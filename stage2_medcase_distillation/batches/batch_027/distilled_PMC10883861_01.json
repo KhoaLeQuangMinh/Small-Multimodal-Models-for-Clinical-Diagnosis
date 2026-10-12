@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10883861_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 52-year-old male shepherd presents with chronic right hypochondriac pain, cough, dyspnea, intermittent fever, weight loss, and jaundice, found to have extensive multiorgan multiloculated cystic lesions simultaneously in the right lung, liver, and spleen. The clinical picture mimics metastatic cystic malignancy or disseminated pyogenic abscesses, but represents extensive multiorgan hydatid disease secondary to zoonotic canine exposure.\n2. Admission Breakpoint: Initial hospital admission triage following physical examination, vital signs, pulmonary auscultation, abdominal palpation demonstrating hepatosplenomegaly, and chest/abdominal CT scans delineating cystic masses in lung, liver, and spleen, immediately prior to preoperative transfusions, anthelmintic therapy, and surgical resections.\n3. Differential Distinctions: Advanced carcinoma or lymphoma with necrotic cystic metastases can involve lung, liver, and spleen with constitutional symptoms, but the presence of thin internal septations, peripheral wall calcifications, and daughter cysts without solid infiltrative soft tissue components points to hydatidosis; pyogenic or amebic multiorgan abscesses present with acute toxic sepsis rather than indolent chronic organomegaly.",
+  "case_prompt": "A 52-year-old male presented with dull, aching pain in the right hypochondriac region that radiated toward the left hypochondrium for four months. He also experienced breathlessness, cough, and intermittent fever associated with nausea, vomiting, and significant weight loss. The patient was a shepherd by occupation with regular contact with livestock and dogs. He reported having received medical treatment for jaundice over the preceding five months, but no prior medical documentation was available.\n\nOn physical examination, the patient had a poorly built physique and was moderately nourished. He exhibited pallor and mild scleral icterus, with no signs of cyanosis, clubbing, or peripheral lymphadenopathy. Admission vital signs demonstrated a pulse rate of 122 beats per minute, blood pressure of 100/70 mmHg, and oxygen saturation of 90% on room air. Abdominal examination revealed a soft but tender right hypochondrium without guarding or rigidity. Marked hepatosplenomegaly was noted on palpation. Pulmonary auscultation revealed decreased air entry over the right hemithorax with normal air entry on the left.\n\nComputed tomography (CT) of the chest revealed large, well-defined multiloculated cystic lesions occupying the right lung. Abdominal CT indicated large multiloculated lesions within multiple liver segments, displaying internal septations and tiny foci of calcification that produced mass effect with compression of intrahepatic biliary radicals (liver measuring 19.2 cm). The spleen was enlarged to 14 cm, displaying a similarly large, well-defined cystic lesion in the splenic parenchyma with multiple internal foci and daughter cysts.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Cystic Malignancy / Disseminated Neoplasm",
+      "rule_out_reason": "In a 52-year-old man presenting with profound weight loss, fever, tachypnea, hepatosplenomegaly, and simultaneous pulmonary, hepatic, and splenic mass lesions, advanced metastatic carcinoma or lymphoma was a prime diagnostic consideration; however, imaging demonstrated well-circumscribed fluid-attenuating lesions with internal septations, peripheral calcifications, and daughter cysts without invasive solid soft-tissue components.",
+      "quote": "The abdominal CT indicated the presence of large, well-defined multi-loculated cystic lesions in the right lung, along with multi-loculated lesions in the segments of the liver. These liver lesions showed septations and tiny foci of calcifications"
+    },
+    {
+      "candidate": "Multifocal Pyogenic or Amebic Abscesses",
+      "rule_out_reason": "Concurrent hepatic and splenic fluid collections with fever, jaundice, and leukocytosis can represent multifocal pyogenic or amebic abscesses, but the indolent four- to five-month clinical course, well-encapsulated multilocular cysts, presence of splenic daughter vesicles, and lack of septic shock argued against acute bacterial or amebic suppuration.",
+      "quote": "displaying a similarly large, well-defined cystic lesion in the splenic parenchyma with multiple foci and the presence of daughter cysts."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The occupational history of shepherding with close dog contact, combined with characteristic multiorgan multiloculated cystic lesions demonstrating internal septations, peripheral calcifications, and pathognomonic daughter cysts in the lung, liver, and spleen, established the diagnosis of multiorgan hydatid disease, confirmed intraoperatively and on histopathology.",
+      "quote": "The patient was a shepherd by occupation and had regular contact with livestock and dogs... These findings lead to the conclusion that the reports suggest hydatid cysts of the spleen. Based on these findings, hydatid cysts of the liver, lung, and spleen were confirmed."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict concordance with Stanford MedCaseReasoning methodology. The case prompt ends at initial CT scan imaging and clinical examination before albendazole initiation and surgical cyst resections. Zero spoilers, zero pathogen names."
+}

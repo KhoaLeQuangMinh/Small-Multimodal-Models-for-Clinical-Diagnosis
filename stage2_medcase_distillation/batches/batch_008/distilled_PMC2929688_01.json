@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2929688_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An elderly man presenting with signs of subacute bowel obstruction and a large pelvic mass closely adherent to the sigmoid colon, in the setting of a remote hepatic surgery 16 years prior in North Africa. The key clinical dilemma is distinguishing late-recurring peritoneal parasitic hydatid disease from colorectal adenocarcinoma, gastrointestinal stromal tumor (GIST), or benign peritoneal cysts.\n2. Admission Breakpoint: The admission clinical presentation and initial cross-sectional imaging (ultrasound and computed tomography) demonstrating a 6.5-cm pelvic cystic mass, prior to preoperative anatomical pelvic MRI, surgical laparotomy, and histopathological analysis.\n3. Differential Distinctions: Colorectal adenocarcinoma or gastrointestinal stromal tumor (GIST) presents with bowel subocclusion and adherent pelvic masses, but cross-sectional imaging demonstrates solid, infiltrative, vascular soft tissue rather than well-defined cystic lesions; benign mesenteric or peritoneal inclusion cysts present with cystic abdominal collections but lack the typical multilayered parasitic cyst wall and histopathology; secondary peritoneal echinococcosis occurs years after primary hepatic cyst surgery via spillage or micro-rupture, presenting with mechanical bowel compression.",
+  "case_prompt": "A 65-year-old Tunisian male in good general condition presents with moderate lower abdominal pain and symptoms of bowel subocclusion. His past surgical history is notable for an operation for a benign hepatic cystic lesion performed 16 years earlier (in 1994) in North Africa, though detailed operative records from that procedure are unavailable.\n\nOn physical examination, the abdomen is moderately distended with localized lower abdominal tenderness corresponding to the subocclusive state, but without signs of acute generalized peritonitis.\n\nAdmission abdominal ultrasound and computed tomography demonstrate a well-defined pelvic cystic lesion measuring 6.5 cm in diameter located deep in the pelvic cavity adjacent to the bowel.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sigmoid Colon Carcinoma / Colorectal Malignancy",
+      "rule_out_reason": "Considered due to advanced age, lower abdominal pain, signs of bowel subocclusion, and a mass intimately adherent to the sigmoid colon, but excluded by the purely cystic nature on cross-sectional imaging and absence of malignancy on en bloc surgical histopathology.",
+      "quote": "At laparotomy, the cyst was resected out \"en bloc\" with the sigmoid colon (Figures 2(a), 2(b), and 2(c))."
+    },
+    {
+      "candidate": "Benign Mesenteric or Peritoneal Inclusion Cyst",
+      "rule_out_reason": "Considered given the isolated pelvic cystic lesion in a patient with previous abdominal surgery, but ruled out by typical hydatid features originating from remote peritoneal seeding and definitive histological confirmation.",
+      "quote": "On the ultrasound examination and computed tomography, a diagnosis of pelvic hydatid cyst of 6.5 cm in diameter was made."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histological examination of the resected pelvic mass and a secondary retrovesical cyst confirmed the diagnosis of peritoneal and pelvic hydatid disease secondary to remote peritoneal larval seeding.",
+      "quote": "The histological examination confirmed the diagnosis (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission triage and baseline US/CT imaging before preoperative pelvic MRI and exploratory laparotomy. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4046007_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 55-year-old man with no prior cardiac history presents with a 5-day history of high fever, arthralgia, and an irregular pulse found to be ventricular trigeminy. The diagnostic challenge is distinguishing acute ischemic heart disease or classic enteroviral myocarditis from an arboviral infection causing transient myocarditis in the setting of hemoconcentration, leukopenia, and thrombocytopenia.\n2. Admission Breakpoint: Admission triage concludes with physical examination, 12-lead electrocardiography (documenting ventricular trigeminy), and initial emergency blood work (revealing hemoconcentration, leukopenia, thrombocytopenia, transaminitis, and normal troponin). Confirmatory testing begins with formal transthoracic echocardiography and specific arboviral serology.\n3. Differential Distinctions: Acute coronary syndrome presents with ventricular ectopy and wall motion abnormalities but typically demonstrates anginal chest pain, significant troponin elevation, and absence of cytopenias. Common viral myocarditis (e.g., enterovirus) does not cause significant plasma leakage/hemoconcentration or profound acute thrombocytopenia.",
+  "case_prompt": "A previously healthy 55-year-old man with no prior known cardiovascular disease presents to the emergency department with high fever and generalized arthralgias of five days' duration.\n\nOn physical examination, his temperature is 39.0°C, blood pressure is 130/80 mmHg, and his pulse is distinctly irregular with a heart rate of 78 beats/min. The remainder of the physical examination is unremarkable. A 12-lead electrocardiogram demonstrates ventricular trigeminy.\n\nInitial emergency laboratory investigations reveal hemoconcentration and cytopenias: hemoglobin is 16.5 g/dL, hematocrit is 48.1%, white blood cell count is 3,100/mm³, and platelet count is 95,000/mm³. Serum chemistry demonstrates sodium 135 mmol/L, potassium 4.6 mmol/L, magnesium 1.5 mg/dL, calcium 9.6 mg/dL, urea 33 mg/dL, and creatinine 1.2 mg/dL. Cardiac and inflammatory biomarkers reveal creatine kinase (CK) 451 U/L, CPK-MB fraction 20 U/L, cardiac troponin <0.5 ng/mL, myoglobin 34.7 ng/mL, C-reactive protein (CRP) 0.64 mg/dL, and erythrocyte sedimentation time 38 seconds. Hepatic enzymes show AST elevated at 187 U/L and ALT at 88.2 U/L. Urinalysis is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute coronary syndrome (ACS) / Ischemic ventricular arrhythmia",
+      "rule_out_reason": "Ventricular trigeminy and elevated total creatine kinase in a 55-year-old male raised concern for acute myocardial ischemia or infarction; however, cardiac troponin was negative (<0.5 ng/mL), CPK-MB was normal (20 U/L), and the patient presented with fever, leukopenia, and thrombocytopenia rather than ischemic chest discomfort.",
+      "quote": "creatine kinase 451U/L, CPK-MB fraction 20U/L, troponin <0.5 ng/mL, myoglobin 34.7 ng/mL... A 12-lead electrocardiogram showed ventricular trigeminy (Figure  1A)."
+    },
+    {
+      "candidate": "Primary viral myocarditis (Enterovirus / Parvovirus B19 / Influenza)",
+      "rule_out_reason": "Acute viral myocarditis frequently manifests with ventricular arrhythmias, apical hypokinesia, and reduced ejection fraction; however, the prominent hematocrit elevation (48.1%), leukopenia (3,100/mm³), and precipitous drop in platelets (to 55,000/mm³) pointed specifically toward an acute arboviral capillary leak syndrome.",
+      "quote": "haemoglobin of 16.5 g/dL, a hematocrit of 48.1% and a white blood cell count of 3,100/mm3. The platelet count was 95,000/mm3, reduced to 70,000/mm3 on the following day and 55,000/mm on the 5th day."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred with positive serum IgM for dengue, coupled with echocardiographic confirmation of apical hypokinesia (ejection fraction 50%) that fully normalized alongside spontaneous resolution of ventricular trigeminy within 24–48 hours as the platelet count recovered.",
+      "quote": "The transthoracic echo revealed a hypokinetic apex with an ejection fraction of 50% and evidence of dengue myocarditis. The serum IgM was positive for dengue and the serum IgG was negative.The following day, the pulse became regular and ECG showed sinus rhythm with no tachycardia"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC4046007_01. Admission breakpoint strictly maintained before dengue serology and echocardiographic interpretation. Zero pathogen spoilers in prompt."
+}

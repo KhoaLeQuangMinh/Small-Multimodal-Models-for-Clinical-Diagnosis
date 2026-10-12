@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2642856_02",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: Evaluating a subacute febrile illness in an endemic tropical environment where the patient presents normothermic (36.9 °C) but has profound sudden-onset bilateral sensorineural deafness, hypotension, conjunctival hemorrhage, and proteinuria, raising questions of drug ototoxicity, acute meningoencephalitis, or a late manifestation of viral hemorrhagic fever.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the clinical otologic examination, audiometric confirmation of sensorineural hearing loss, routine complete blood count, and urinalysis, prior to send-out confirmatory viral reverse transcriptase polymerase chain reaction (RT-PCR).\n3. Differential Distinctions: Ototoxic medication exposure was excluded by a negative drug history; Acute bacterial meningitis was excluded by the complete absence of meningeal signs; Conductive hearing loss from canal impaction or middle ear disease was ruled out by intact tympanic membranes and audiometric documentation of bilateral sensorineural loss.",
+  "case_prompt": "A 48-year-old female trader presents with a 2-week history of fever and a 6-day history of bilateral hearing loss. She has no preceding history of exposure to ototoxic medications.\n\nOn physical examination, she appears ill but remains conscious and alert. Her body temperature is 36.9 °C, radial pulse is 110 beats per minute with regular rhythm and small volume, supine blood pressure is 90/50 mmHg, and respiratory rate is 20 breaths per minute. Bilateral conjunctival hemorrhages are noted. Otoscopic inspection reveals normal pinnae; the external auditory meatus contains scanty dry cerumen that is evacuated manually, revealing intact, shiny tympanic membranes bilaterally. Audiologic evaluation demonstrates bilateral severe sensorineural hearing loss (hearing thresholds of 68 dB in the left ear and 70 dB in the right ear), necessitating communication via sign language. There are no signs of meningeal irritation. Examination of the heart, lungs, and abdomen is unremarkable.\n\nInitial laboratory evaluation reveals a packed cell volume (PCV) of 34%, a total white blood cell count of 7,300/mm³ with 82% neutrophils and 13% lymphocytes, and a platelet count of 195,000/mm³. Urinalysis demonstrates 2+ proteinuria.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ototoxic Drug Exposure",
+      "rule_out_reason": "Sudden onset of severe bilateral sensorineural hearing loss during an acute systemic illness can result from exposure to aminoglycosides, loop diuretics, or other ototoxic pharmaceuticals, but was excluded by a negative drug history.",
+      "quote": "There was no history of use of ototoxic drugs."
+    },
+    {
+      "candidate": "Acute Bacterial or Viral Meningitis",
+      "rule_out_reason": "Severe cranial neuropathy, especially vestibulocochlear injury with bilateral sensorineural deafness, can complicate bacterial meningitis, but was made unlikely by the complete absence of nuchal rigidity or meningismus.",
+      "quote": "There was no sign of meningeal irritation."
+    },
+    {
+      "candidate": "Conductive Hearing Loss (Cerumen Impaction / Middle Ear Disease)",
+      "rule_out_reason": "External auditory canal obstruction or otitis media was considered, but manual evacuation of scanty wax and otoscopy revealed normal, intact tympanic membranes, while audiometry demonstrated definitive sensorineural deficits.",
+      "quote": "The pinnae appeared normal, whereas the external auditory meatus contained scanty dry wax which was evacuated manually. The tympanic membranes were also intact and shiny. She was audiologically confirmed to have bilateral severe SNHL (68 and 70 dB hearing levels for left and right ear, respectively)"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Viral Hemorrhagic Fever (Lassa Fever with Bilateral Sensorineural Hearing Loss)",
+      "rule_out_reason": "The diagnostic turning point was the constellation of a subacute febrile illness in an endemic setting, bilateral conjunctival hemorrhage, systemic hypotension, proteinuria, and sudden severe sensorineural deafness, confirmed by positive Lassa virus reverse transcriptase polymerase chain reaction (RT-PCR).",
+      "quote": "Lassa fever virus-specific RT-PCR was positive for Lassa fever, thus confirming the clinical diagnosis (although retrospectively)."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Lassa virus infection frequently produces sensorineural hearing loss (SNHL) in both mild and severe presentations. SNHL often develops late in the disease course or early convalescence, even after defervescence. Bilateral conjunctival suffusion/hemorrhage and proteinuria are common accompanying features. Intravenous ribavirin is the mainstay of therapy, though hearing deficits frequently persist long-term."
+}

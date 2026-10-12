@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12463585_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 23-year-old urban homemaker without known animal exposure presents with chronic left upper quadrant pain radiating to the back, low-grade fevers, marked splenomegaly, and peripheral eosinophilia (10.9%). Primary splenic localization without antecedent or concurrent hepatic or pulmonary cystic involvement is exceedingly uncommon (representing under 2-3% of cases), creating clinical overlap with non-parasitic congenital cysts, epidermoid cysts, splenic abscess, hematologic neoplasms, or wandering spleen.\n2. Admission Breakpoint: The admission breakpoint is established immediately after initial baseline laboratory workup, negative stool microscopy, plain chest radiography, and abdominal ultrasonography/CT confirming an isolated 9.8 x 7.8 cm unilocular splenic cyst with splenomegaly, prior to WHO-IWGE echinococcal staging, Echinococcus-specific enzyme immunoassay serologies, and post-splenectomy histopathological examination.\n3. Differential Distinctions: Splenic abscess (ruled out by afebrile state on presentation, normal WBC count, and lack of systemic sepsis), non-parasitic epidermoid/epithelial splenic cysts (lack peripheral eosinophilia), intestinal helminthiases (ruled out by normal stool examination), and secondary disseminated hydatidosis (ruled out by normal liver parenchyma and clear chest radiograph). Definitive identification relies on specific serology and pathognomonic acellular laminated membranes on histopathology.",
+  "case_prompt": "A 23-year-old female homemaker presented with a 2-month history of severe, gradually worsening abdominal pain localized to the left upper quadrant, radiating to her back. The pain was sharp in character and accompanied by nausea, vomiting, and loss of appetite. She also reported persistent low-grade fever (99°F to 100°F) responsive to over-the-counter antipyretics, without chills, rigors, or rash. She experienced transient loose stools at the onset of pain that resolved within approximately two weeks. There was no history of jaundice, constipation, dysuria, hematochezia, or other systemic complaints. Her past medical and surgical history was unremarkable, with no known comorbidities or family history of genetic disorders. She consumed a non-vegetarian diet, had resided in an urban area for several years, and denied exposure to domestic animals or recent travel. Menstrual history was regular, and she was nulliparous.\n\nOn physical examination, the patient was alert and oriented. Vital signs revealed a pulse rate of 86 beats/min, blood pressure 122/82 mmHg, body temperature 98°F, respiratory rate 16 breaths/min, and oxygen saturation 99% on ambient air. Abdominal examination revealed marked splenomegaly without signs of peritoneal irritation.\n\nInitial laboratory investigations revealed a normal complete blood count except for peripheral eosinophilia at 10.9% (reference range: 1–6%). Comprehensive metabolic panel, including liver and kidney function tests, random blood glucose, and viral hepatitis (hepatitis B and C) and HIV screening, were unremarkable. Electrocardiogram was normal. Stool microscopic examination for ova and parasites was negative.\n\nChest radiography demonstrated clear lung fields without infiltrates or mass lesions. Abdominal ultrasonography revealed an enlarged spleen measuring 13 cm along the long axis containing an anechoic cyst measuring 9.7 x 8.7 x 7.9 cm with a wall thickness of 0.4 cm and an estimated volume of 352 cm³, with normal liver architecture and no extra-splenic abdominal cysts. Contrast-enhanced computed tomography of the abdomen confirmed a well-circumscribed, solitary splenic cyst measuring 9.8 x 7.8 cm without internal calcification or soft-tissue components, accompanied by splenomegaly (14.7 cm in length).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intestinal parasitic helminthiases",
+      "rule_out_reason": "Although the patient exhibited loose stools at disease onset and had marked peripheral eosinophilia (10.9%), microscopic examination of the stool showed no ova or parasites.",
+      "quote": "Stool examination was normal, effectively ruling out other parasitic infections."
+    },
+    {
+      "candidate": "Disseminated or hepatic hydatid cyst disease",
+      "rule_out_reason": "Primary hydatid cysts most commonly involve the liver (50-70%) followed by the lungs (20-30%); however, imaging demonstrated strictly isolated splenic involvement without hepatic or thoracic cystic lesions.",
+      "quote": "No additional cystic lesions were identified in the liver or elsewhere in the abdomen. A chest X-ray showed no evidence of pulmonary involvement."
+    },
+    {
+      "candidate": "Splenic abscess or neoplastic/solid splenic lesion",
+      "rule_out_reason": "CT imaging showed a smooth, thin-walled, anechoic cyst without internal debris, calcifications, wall nodularity, or enhancing soft tissue components, arguing against acute bacterial abscess or neoplastic cystic degeneration.",
+      "quote": "Computed tomography (CT) of the abdomen confirmed a large splenic cyst (9.8 x 7.8 cm) without calcification or soft tissue components, along with splenomegaly (14.7 cm in length)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Specific enzyme immunoassay serology confirmed elevated Echinococcus IgG and markedly elevated IgE, followed by post-splenectomy histopathological identification of an acellular laminated membrane and germinal layer staining positive with periodic acid-Schiff stain.",
+      "quote": "Further evaluation with Echinococcus serology using enzyme immunoassay revealed an elevated immunoglobulin G (IgG) level of 1.07 (normal: <0.9) and a markedly raised immunoglobulin E (IgE) level of 593.4 IU/mL (normal: <100 IU/mL)... Microscopic analysis demonstrated that the cyst wall consisted of an outer acellular laminated membrane, adjacent to a dense fibrotic pseudocapsule layer... The cyst wall tested positive for periodic acid-Schiff (PAS) stain."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Admission breakpoint strictly placed prior to WHO-IWGE cyst classification and Echinococcus-specific serology. Case prompt is entirely free of pathogen or disease names."
+}

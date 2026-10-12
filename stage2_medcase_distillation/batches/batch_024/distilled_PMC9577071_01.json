@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9577071_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young woman presents with a persistent neck lump and an irregular nasopharyngeal mass obliterating the fossa of Rosenmüller with bilateral cervical lymphadenopathy, strongly mimicking nasopharyngeal carcinoma (NPC) with regional metastases. The challenge lies in distinguishing an endophytic mycobacterial granuloma from metastatic carcinoma in a patient lacking typical constitutional symptoms.\n\n2. Admission Breakpoint: The breakpoint occurs following initial ENT outpatient evaluation, flexible nasopharyngoscopy, bilateral neck ultrasonography, and contrast CT of the nasopharynx/neck and lung apices, prior to fine needle aspiration cytology, deep surgical biopsy, and sputum smear microscopy.\n\n3. Differential Distinctions: Nasopharyngeal carcinoma typically originates in the fossa of Rosenmüller with cervical nodal metastasis; initial FNAC showed atypical cells, but histological biopsy demonstrated caseating granulomas rather than malignant cells. Bacterial lymphadenitis fails to respond to amoxicillin, and fungal granulomas are ruled out by negative GMS silver staining.",
+  "case_prompt": "A 32-year-old woman presents to the Ear, Nose and Throat clinic with a 2-week history of a tender lump on the right side of her upper neck. She had an initial mild fever, but reports no loss of appetite, weight loss, night sweats, cough, chest pain, nasal obstruction, or otologic symptoms. She has no known contact history with sick individuals. She previously received a course of amoxicillin for presumptive cervical lymphadenitis from a general practitioner, but the neck lump persisted.\n\nOn physical examination, a firm, mildly tender mass measuring 1.5 × 1 cm is palpable in the right upper neck. Nasal endoscopy reveals an irregular nasopharyngeal mass with overlying yellowish secretions, almost obliterating the fossa of Rosenmüller bilaterally. The remainder of the ear, nose, and throat examination is unremarkable.\n\nUltrasound of the neck demonstrates multiple enlarged hypoechoic cervical nodes bilaterally with distortion of the fatty hilum. Computed tomography (CT) of the nasopharynx and neck shows a heterogeneously enhancing soft tissue mass measuring 2.0 × 1.4 × 3.9 cm in the nasopharynx that obliterates the bilateral fossa of Rosenmüller and extends inferiorly to the upper oropharynx, accompanied by multiple homogeneously enhancing cervical nodes on both sides. Visualized lung apices show minimal consolidation and centrilobular nodules with a tree-in-bud appearance.\n\nBaseline laboratory evaluation shows a white blood cell count of 6.99 × 10^9/L (neutrophils 70.4%, lymphocytes 19%), hemoglobin 12.2 g/dL, and erythrocyte sedimentation rate (ESR) 60 mm/h. Anti-HIV and hepatitis B surface antigen tests are negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Nasopharyngeal Carcinoma (NPC) with Regional Cervical Metastasis",
+      "rule_out_reason": "Location in the fossa of Rosenmüller, bilateral cervical adenopathy, and FNAC displaying atypical hyperchromatic cells strongly pointed to metastatic NPC; however, sequential biopsies demonstrated necrotizing granulomatous inflammation with acid-fast bacilli and no malignant cells.",
+      "quote": "Our working diagnosis was NPC with neck metastasis."
+    },
+    {
+      "candidate": "Acute Bacterial Cervical Lymphadenitis",
+      "rule_out_reason": "Presumed initially by her general practitioner, but the mass persisted despite oral amoxicillin therapy and endoscopy revealed a primary nasopharyngeal granulomatous mass.",
+      "quote": "She was treated for cervical lymphadenitis with amoxicillin by a general practitioner before coming to us. However, her neck lump persisted."
+    },
+    {
+      "candidate": "Deep Fungal Granuloma of the Nasopharynx",
+      "rule_out_reason": "Considered due to the presence of chronic necrotizing granulomatous inflammation in the upper airway; however, Grocott methenamine silver (GMS) staining was repeatedly negative for fungal hyphae.",
+      "quote": "Stains for AFB and Grocott methenamine silver (GMS) stain for fungal hyphae were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat biopsy of the nasopharyngeal mass revealed caseating granulomas with acid-fast bacilli on Ziehl-Neelsen stain, and sputum smears confirmed acid-fast bacilli, establishing nasopharyngeal tuberculosis secondary to pulmonary tuberculosis.",
+      "quote": "The repeat biopsy showed caseating granuloma with dense chronic inflammatory cells forming lymphoid follicles and the ZN stain demonstrated a few AFB (Figure 3(a)-(c))."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero mention of Mycobacterium or tuberculosis in case prompt. Quotes exactly matched text."
+}

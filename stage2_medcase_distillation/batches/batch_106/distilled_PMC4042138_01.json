@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4042138_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 15-year-old girl presented with indolent, painless lateral orbital fullness, ptosis, and abducens nerve restriction. Orbital CT demonstrated a lytic destruction of the lateral orbital wall with a central bone sequestrum and subperiosteal abscess, closely mimicking bacterial osteomyelitis, fungal infection, or Langerhans cell histiocytosis/bone neoplasm, in a patient with a prior history of abruptly discontinued antimicrobial therapy.\n2. Admission Breakpoint: The admission clinical triage concludes following ophthalmologic examination, triage laboratory tests (ESR 60 mm/h, clear chest radiograph), and orbital CT scan, immediately prior to surgical drainage of the subperiosteal abscess cavity and tissue biopsy.\n3. Differential Distinctions: Pyogenic bacterial osteomyelitis (e.g., Staphylococcal) was considered due to lytic bone destruction and sequestrum formation, but was atypical given the indolent 2-month painless presentation, clear chest imaging, and negative bacterial cultures. Fungal osteomyelitis was excluded by negative Gomori methenamine silver (GMS) staining. Definitive diagnosis of orbital tuberculosis with osteomyelitis was confirmed by caseating granulomatous inflammation on biopsy and identification of Mycobacterium tuberculosis by PCR despite negative smears and cultures.",
+  "case_prompt": "A 15-year-old girl presented with a 2-month history of painless, progressive swelling on the left side of her face. Her past medical history was notable for prior incision and drainage of subcutaneous abscesses involving the neck and arm, following which she had been placed on an empiric multidrug antimicrobial regimen for 3 months that she discontinued prematurely.\n\nOn examination, fullness along the left lateral orbital rim was noted, accompanied by ipsilateral ptosis (prominent laterally) and mechanical limitation of abduction in the left eye. Best-corrected visual acuity was 6/6 in both eyes. Slit lamp biomicroscopy, fundus examination, and intraocular pressure measurements were normal in both eyes. General physical examination revealed healed surgical scars in the supraclavicular region and arm.\n\nInitial laboratory evaluation revealed an elevated erythrocyte sedimentation rate (ESR) of 60 mm/h. Plain chest radiography demonstrated clear lung fields without infiltrates or lymphadenopathy. Computed tomography (CT) of the orbits revealed a well-defined lytic lesion along the left lateral orbital wall with a central bony sequestrum, associated with a peripherally enhancing subperiosteal abscess and minimal periosteal reaction, suggestive of osteomyelitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial osteomyelitis",
+      "rule_out_reason": "Considered due to the lytic bony destruction of the lateral orbital wall, central sequestrum, and subperiosteal abscess; argued against by the indolent, painless progression over 2 months without acute warmth/erythema, and ruled out by histopathology demonstrating caseating granulomatous inflammation rather than acute suppurative necrosis.",
+      "quote": "Computed tomography (CT) of the orbits revealed a well-defined lytic lesion along the lateral orbital wall with central sequestrum and associated peripherally enhancing abscess with minimal periosteal reaction suggestive of osteomyelitis (Figure 1C)... Chronic granulomatous inflammation with caseation necrosis was seen on histopathology (Figure 1D)."
+    },
+    {
+      "candidate": "Fungal orbital osteomyelitis",
+      "rule_out_reason": "Considered in the differential diagnosis of indolent granulomatous bony destruction and cold abscess formation in the orbit; ruled out by negative Gomori methenamine silver (GMS) fungal staining of the abscess wall.",
+      "quote": "Although the Gomori methenamine silver (GMS) staining, acid fast bacilli (AFB) staining and culture for Mycobacterium tuberculosis (MTb) were negative, PCR was positive for MTb."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Orbital Tuberculosis with osteomyelitis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "Histopathological examination of the drained abscess cavity demonstrated chronic granulomatous inflammation with caseation necrosis, and molecular testing was positive for Mycobacterium tuberculosis by PCR despite negative AFB smears and cultures, with full clinical resolution achieved on tailored second-line antitubercular therapy.",
+      "quote": "Chronic granulomatous inflammation with caseation necrosis was seen on histopathology (Figure 1D). Although the Gomori methenamine silver (GMS) staining, acid fast bacilli (AFB) staining and culture for Mycobacterium tuberculosis (MTb) were negative, PCR was positive for MTb."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Orbital tuberculosis is rare, accounting for approximately 1% of extra-pulmonary cases. Skeletal involvement of the lateral orbital wall with sequestrum formation mimics pyogenic osteomyelitis and primary bone neoplasms, requiring PCR for definitive diagnosis when AFB smears and cultures are paucibacillary."
+}

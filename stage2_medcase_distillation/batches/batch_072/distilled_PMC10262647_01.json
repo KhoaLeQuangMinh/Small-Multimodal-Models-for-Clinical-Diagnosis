@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10262647_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 45-year-old male farmer presents with acute chest pain, myalgias, profound jaundice, hypotension (86/58 mmHg), an S3 gallop, and cardiomegaly following exposure to floodwaters one week earlier. The biphasic illness (initial febrile 'flu-like' illness that abated, followed by cardiopulmonary collapse and severe icterus) creates a diagnostic dilemma between acute viral myocarditis, acute coronary syndrome/cardiogenic shock, and severe zoonotic spirochetal multiorgan infection (Weil's disease with myocarditis).\n2. Admission Breakpoint: The breakpoint is at admission to the emergency department/ICU following initial physical exam (severe jaundice, S3 gallop, crackles, peripheral edema), chest x-ray showing cardiomegaly/interstitial edema, and baseline ECG showing sinus rhythm without acute ischemic changes, immediately prior to send-out serology and subsequent echocardiography.\n3. Differential Distinctions: Acute viral infection / COVID-19 myocarditis was evaluated given the flu-like prodrome and cardiopulmonary compromise, but viral antigen testing was negative. Acute coronary syndrome was considered due to chest pain and hypotension, but ECG lacked dynamic ischemic changes and the combination of profound jaundice with floodwater exposure pointed strongly toward a spirochetal etiology with secondary toxic/inflammatory myocarditis.",
+  "case_prompt": "A 45-year-old South Asian male farmer with no significant past medical history presents to the emergency department with acute chest pain, generalized myalgias, and progressive fatigue. One week prior to admission, he had direct occupational exposure to floodwaters. He experienced high fevers and flu-like symptoms that subsided approximately two days prior to presentation. He is a lifetime non-smoker and denies alcohol or illicit substance use. He has no history of international travel or domestic pets.\n\nOn initial evaluation, he is hypotensive and tachycardic: blood pressure is 86/58 mm Hg, heart rate 102 beats per minute, respiratory rate unrecorded, temperature 36.4°C, and oxygen saturation 94% on room air. Random capillary blood glucose is 184 mg/dL. Physical examination reveals marked scleral and cutaneous icterus. Cardiac auscultation reveals an S3 gallop with tachycardia and no murmurs. Pulmonary examination shows decreased breath sounds at the bases with bilateral scattered crackles. The abdomen is mildly distended but non-tender without guarding. Neurologic examination is intact. Mild bilateral pitting edema is present up to the tibial tuberosity.\n\nAdmission 12-lead electrocardiogram demonstrates sinus rhythm at 94 beats per minute without acute ST-segment or dynamic ischemic changes. A chest radiograph demonstrates borderline cardiomegaly with mild interstitial pulmonary edema. Rapid antigen testing for SARS-CoV-2 is negative. Intravenous fluid resuscitation and electrolyte repletion are initiated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Coronavirus Disease (COVID-19) / Viral Myocarditis",
+      "rule_out_reason": "A viral prodrome leading to acute myocarditis was considered, but rapid coronavirus testing was negative and the marked icterus after floodwater exposure pointed away from typical respiratory viral infections.",
+      "quote": "His coronavirus rapid antigen test returned a negative result."
+    },
+    {
+      "candidate": "Acute Coronary Syndrome / Ischemic Cardiomyopathy",
+      "rule_out_reason": "Chest pain, hypotension, and an S3 gallop raised concern for acute myocardial infarction, but the admission ECG showed normal sinus rhythm without ischemic changes, and systemic icterus indicated multiorgan disease rather than primary coronary occlusion.",
+      "quote": "initial admission 12-lead electrocardiogram indicated sinus rhythm at 94 beats per minute with no acute dynamic changes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "History of immersion in floodwaters followed by severe icterohemorrhagic illness, acute myocarditis with biventricular failure (ejection fraction 30-35%), and confirmatory reactive spirochetal serology established the diagnosis.",
+      "quote": "Eventually, his serologies returned positive for leptospirosis infection (Table 1)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation stops at triage presentation before echocardiogram and serological confirmation. Zero pathogen spoilers in prompt."
+}

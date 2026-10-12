@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4608167_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 73-year-old woman with a newly identified periampullary mass and biopsy-proven duodenal adenocarcinoma is found on staging CT to have bilateral 1.5 cm pulmonary nodules. While presumed to represent metastatic Stage IV disease precluding curative surgical resection, gastrointestinal adenocarcinoma usually metastasizes through mesenteric lymphatics and portal circulation to the liver before hematogenous dissemination to the lungs. The clinical challenge is confirming whether the pulmonary lesions represent distant metastases or an incidental, curable infectious granuloma.\n2. Admission Breakpoint: The breakpoint occurs following initial endoscopic biopsy of the duodenal papilla and subsequent staging CT scans demonstrating bilateral 1.5 cm pulmonary nodules, immediately prior to percutaneous lung biopsy and microbiological staining.\n3. Differential Distinctions: Metastatic duodenal adenocarcinoma (suggested by the primary gastrointestinal malignancy and bilateral lung nodules, but ruled out by lung biopsy demonstrating granulomas and absence of adenocarcinoma cells); primary lung carcinoma (possible synchronous double primary, excluded by histopathology); pulmonary tuberculosis (infectious granulomatous lung lesions mimicking metastases, confirmed by chronic granulomatous reaction with caseous necrosis and positive Ziehl-Neelsen stain for acid-fast bacilli).",
+  "case_prompt": "A 73-year-old woman with a medical history of diabetes mellitus and hypertension presents with jaundice and abdominal pain. An abdominal computed tomography (CT) scan reveals a 4.7 cm periampullary mass at its longest axis. Upper endoscopy confirms a necrotic lesion in the duodenal papilla, and endoscopic histological tissue examination establishes adenocarcinoma of duodenal origin. Staging CT scans of the chest are performed to evaluate for distant dissemination, which demonstrate bilateral pulmonary nodules measuring 1.5 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic duodenal adenocarcinoma (pulmonary metastases)",
+      "rule_out_reason": "Considered the primary provisional diagnosis given the presence of bilateral 1.5 cm pulmonary nodules on staging imaging in a patient with biopsy-proven duodenal adenocarcinoma, raising suspicion of stage IV metastatic disease. However, lung nodule biopsy demonstrated granulomatous inflammation rather than malignant cells.",
+      "quote": "Staging CTs revealed bilateral pulmonary nodules (1,5cm), raising the suspicion of metastatic disease (Figure 3)."
+    },
+    {
+      "candidate": "Primary synchronous bronchogenic carcinoma",
+      "rule_out_reason": "Considered as a potential synchronous secondary neoplasm given bilateral discrete pulmonary nodules in an elderly patient. Excluded by histopathology of the lung lesions showing inflammatory granulomatous tissue without neoplastic features.",
+      "quote": "Lung biopsies (2 nodules) were performed, revealing chronic inflammatory granulomatous reaction with caseous necrosis (Figure 4)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous biopsies of the pulmonary nodules demonstrated chronic inflammatory granulomatous reaction with caseous necrosis, and Ziehl-Neelsen staining demonstrated acid-fast bacilli, confirming pulmonary tuberculosis and enabling curative surgical resection of the localized T4 N0 M0 duodenal adenocarcinoma.",
+      "quote": "Ziehl-Neelsen staining was positive for acid fast bacilli, consistent with pulmonary tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4608167_02 following Stanford MedCaseReasoning guidelines. The case prompt stops cleanly before lung biopsy results, presenting the clinical dilemma of presumed oligometastatic duodenal adenocarcinoma."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9837630_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 61-year-old female homemaker living in an urban area undergoing environmental disruption presents with subacute jaundice, abdominal pain, ascites, hepatosplenomegaly, constitutional wasting, and violaceous desquamative papules, with CT showing intrahepatic bile duct ectasia, pancreatic heterogeneity, and abdominal lymphadenopathy. The tension lies in distinguishing a disseminated systemic endemic mycosis from hepatobiliary malignancy or primary biliary cholangitis associated with lichen planus.\n2. Admission Breakpoint: Clinical history of 5 months of jaundice, abdominal pain, ascites, weight loss, and papular eruption; physical exam showing jaundice, hepatosplenomegaly, and violaceous papules; admission laboratory tests showing cholestasis (ALP 2,563 U/L, total bilirubin 12.76 mg/dL), anemia, thrombocytosis, and CT scan showing biliary ectasia, pancreatic heterogeneity, and abdominal lymphadenopathy. Excludes immunodiffusion serology, skin biopsy, liver biopsy, lymph node biopsy, and Grocott staining.\n3. Differential Distinctions: Hepatobiliary neoplasia (cholangiocarcinoma/hepatocellular carcinoma) was considered given progressive painless jaundice, marked cholestasis, biliary dilatation, and cachexia, but ruled out by histopathology showing granulomatous inflammation with fungi. Primary biliary cholangitis with lichen planus was considered due to cholestatic jaundice and lichenoid violaceous papules, but ruled out by characteristic fungal yeast morphology.",
+  "case_prompt": "A 61-year-old female homemaker residing in the urban metropolitan area of Rio de Janeiro, Brazil, presents with a 5-month history of progressive jaundice, dull abdominal pain, ascites, unintentional weight loss, and an eruptive skin rash. She reports no recent travel, tobacco use, or alcohol consumption. Physical examination reveals deep jaundice, abdominal distension, and marked hepatosplenomegaly (the right hepatic lobe palpable 3 cm below the costal margin and the spleen palpable between the costal margin and the umbilicus), with no palpable superficial lymphadenopathy. Dermatological examination demonstrates multiple erythematous to violaceous papules with slight desquamation distributed over the face, neck, trunk, and extremities. Triage laboratory evaluation reveals severe anemia with hemoglobin 7.8 g/dL and hematocrit 23%, leukocytosis of 11,900/μL with 83% neutrophils, marked thrombocytosis of 700,000/μL, profound cholestasis with alkaline phosphatase 2,563 U/L, gamma-glutamyl transferase 233 U/L, total bilirubin 12.76 mg/dL (direct bilirubin 9.22 mg/dL), AST 90 U/L, ALT 52 U/L, serum albumin 2.5 g/dL, prothrombin index 49%, and aPTT 44.2 seconds. Serological tests for hepatitis B, hepatitis C, syphilis, and HIV are negative. Computed tomography of the chest and abdomen reveals ectasia of the intrahepatic bile ducts, heterogeneous pancreatic parenchyma, bilateral pleural effusions, hepatosplenomegaly, and multiple enlarged intra-abdominal lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hepatobiliary Neoplasia / Hepatocellular Carcinoma",
+      "rule_out_reason": "Considered due to the 5-month presentation of progressive obstructive jaundice, extreme alkaline phosphatase elevation, intrahepatic ductal ectasia, heterogeneous pancreatic enlargement, intra-abdominal lymphadenopathy, and cachexia; ruled out by tissue histopathology demonstrating granulomatous infection rather than epithelial malignancy.",
+      "quote": "Regarding the diagnostic hypotheses, it should be emphasized that, initially, the possibility of hepatocarcinoma was investigated, but liver, skin and lymph node biopsies showed the presence of paracoccidioidomycosis, correlating with the skin lesions and the clinical picture."
+    },
+    {
+      "candidate": "Primary Biliary Cholangitis with Lichen Planus",
+      "rule_out_reason": "Considered because the violaceous, slightly desquamative papules had a distinctive lichenoid clinical appearance and the patient presented with chronic cholestatic liver disease; ruled out when skin biopsy revealed suppurative granulomatous dermatitis with fungal structures rather than lichenoid interface dermatitis.",
+      "quote": "However, before that primary biliary cirrhosis associated with lichen planus was included among the hypotheses, due to the lichenoid aspect of the lesions and the reports of the association of liver disease with this dermatosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by histopathological examination of skin, liver, and lymph node biopsies with Grocott silver staining demonstrating pathognomonic spherical budding yeast cells resembling a 'marine pilot's wheel' and 'Mickey Mouse ears'.",
+      "quote": "The Grocott staining showed spherical structures stained in brown, with multiple budding cells with a \"marine pilot's wheel\" and \"Mickey Mouse ears\" appearance (Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint stops before invasive tissue biopsies and fungal serologies. Case_prompt contains zero pathogen mentions. Verbatim quotes verified from case text. Canonical target disease verified."
+}

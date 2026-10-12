@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10498687_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young woman presenting with isolated vague dyspepsia and an exophytic cystic pancreatic head mass without constitutional signs, fever, weight loss, or inflammatory elevation, closely mimicking a primary pancreatic cystic neoplasm.\n2. Admission Breakpoint: Following cross-sectional MRI imaging and normal tumor marker evaluation, prior to surgical exploration (laparotomy) and specimen pathology.\n3. Differential Distinctions: Primary pancreatic cystic neoplasm (ruled out by histopathology showing lymph node caseating granulomas instead of epithelial neoplasia) and pancreatic malignancy (ruled out by normal CA 19-9 and absence of neoplastic architecture).",
+  "case_prompt": "A 33-year-old female presents with a 2-month history of vague upper abdominal discomfort and dyspeptic symptoms refractory to empiric proton pump inhibitor therapy. She reports no fever, chills, night sweats, anorexia, or weight loss. Her past medical and surgical histories are unremarkable. On physical examination, the abdomen is soft and non-tender without palpable masses or organomegaly. Laboratory evaluation reveals normal basic biochemistry, normal liver function tests, an erythrocyte sedimentation rate (ESR) of 13 mm/hr, normal blood glucose, and normal CA 19-9 levels. Upper gastrointestinal endoscopy is unremarkable. Abdominal ultrasonography identifies a well-defined rounded lesion measuring 2.5 x 2.4 cm in the pancreatic head containing low echogenic areas. Contrast-enhanced MRI demonstrates a well-demarcated exophytic lesion measuring 23 x 20 x 28 mm in the anterosuperior aspect of the pancreatic head, exhibiting multiple high T2 signal intensities and internal microcystic compartments without main pancreatic duct dilation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic cystic neoplasm (mucinous cystadenoma / serous cystadenoma / SPN)",
+      "rule_out_reason": "A primary pancreatic cystic neoplasm was the consensus preoperative diagnosis based on cross-sectional MRI findings of a well-circumscribed exophytic multilocular cystic pancreatic head mass in an otherwise healthy young woman; however, surgical excision revealed no neoplastic epithelial tissue.",
+      "quote": "Following a multidisciplinary team discussion, a decision was made to perform a laparotomy followed by enucleation of the lesion, or Whipple procedure. The diagnosis was a pancreatic cystic neoplasm."
+    },
+    {
+      "candidate": "Pancreatic adenocarcinoma",
+      "rule_out_reason": "Malignant pancreatic adenocarcinoma was considered given the solid-cystic head mass; however, CA 19-9 levels were completely normal, constitutional cachexia was absent, and histology demonstrated necrotizing granulomas rather than an invasive carcinoma.",
+      "quote": "The CA 19-9 was within normal limits."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the excised pancreatic stalk mass revealed caseating granulomatous lymphadenitis, and PCR testing of the lesion aspirate confirmed Mycobacterium tuberculosis.",
+      "quote": "The histology revealed granulomatous inflammation of a lymph node with caseation which was pathognomonic of tuberculosis (Figure 2). Unfortunately, specimen for TB culture was not sent as the diagnosis of TB was not suspected during surgery. Even though Zeihl-Neelsen staining was not performed on the specimen, TB PCR was performed in aspirated fluid of the surgical specimen, and it was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Clinical vignette capped at pre-operative MRI and tumor markers. Zero-spoiler adherence verified."
+}

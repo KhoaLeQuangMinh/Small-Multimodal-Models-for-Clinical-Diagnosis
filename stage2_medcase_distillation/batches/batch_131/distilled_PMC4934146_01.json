@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4934146_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A young male presents with chronic, disseminated, non-ulcerative nodular skin lesions and earlobe involvement closely resembling lepromatous leprosy, leading to prior empiric multidrug antileprosy therapy.\n2. Admission Breakpoint: Admission presentation ends after history and cutaneous physical exam detailing lesion distribution and intact neural sensation. Slit-skin smears, Montenegro skin testing, skin biopsy, and PCR constitute confirmatory testing.\n3. Differential Distinctions: Lepromatous leprosy features peripheral nerve enlargement, sensory loss, and acid-fast bacilli on Ziehl-Neelsen stain; diffuse cutaneous leishmaniasis features normal sensation, negative acid-fast smears, negative Montenegro test (due to specific parasite anergy), and macrophages packed with Leishmania amastigotes.",
+  "case_prompt": "A 24-year-old male from a rural coastal village in Esmeraldas province, Ecuador, presented for evaluation of chronic, widespread skin eruptions. At age 16, papules had first appeared on his left knee and right cheek, which progressively increased in size and number over eight years. He had previously received various medications without confirmed diagnosis, including empiric multidrug therapy with dapsone, rifampicin, and clofazimine for one month. Physical examination revealed pea- to rice-grain-sized reddish papules on both earlobes and auricles, and miliary to pea-sized reddish papules on the face. The shoulders, back, and upper and lower extremities exhibited numerous miliary to hen-egg-sized papules, nodules, infiltrated erythematous plaques, and brownish freckles, with scaly or crusted surfaces on some nodules. The hands, feet, scalp, and flexural areas were spared. Cutaneous sensation was intact across all lesions, and there was no hypertrophy of peripheral nerves.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lepromatous leprosy (Hansen's disease)",
+      "rule_out_reason": "Widespread infiltrated papules and nodules involving the face and earlobes closely mimicked lepromatous leprosy—leading to prior empiric multidrug therapy—but absence of peripheral nerve hypertrophy, preserved cutaneous sensation, and absence of acid-fast bacilli excluded it.",
+      "quote": "Then, he was diagnosed clinically with leprosy and received the specific medication (multidrug treatment: dapsone, rifampicin, and clofazimine) for 1 month."
+    },
+    {
+      "candidate": "Disseminated cutaneous leishmaniasis (DCL) vs. localized cutaneous leishmaniasis",
+      "rule_out_reason": "The extensive non-ulcerating cutaneous dissemination was distinguished from localized or disseminated disease by the presence of specific cellular anergy against parasite antigen with intact response to other skin antigens.",
+      "quote": "Montenegro (Leishmanin) skin test was negative, but tuberculin, candidine, and trichophytin skin tests revealed positive reactions, demonstrating the existence of specific anergy against Leishmania antigen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Slit-skin smears and histopathology demonstrating foamy histiocytes packed with innumerable Leishmania amastigotes without acid-fast bacilli, confirmed as Leishmania mexicana by PCR analysis.",
+      "quote": "Numerous Leishmania amastigotes were observed in the stained smears from the skin lesion, though no acid-fast bacilli were observed in the slit-skin smear materials with Ziehl-Neelsen staining. The parasite was identified as L. (L.) mexicana by PCR analysis (Fig. 3)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

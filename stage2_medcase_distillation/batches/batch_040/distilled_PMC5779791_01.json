@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5779791_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 33-year-old man presented with progressive, debilitating back pain, constitutional B-symptoms (fever, night sweats, anorexia, weight loss), and significantly elevated inflammatory markers (ESR, CRP), while initial plain spine radiographs, chest radiography, and abdominal ultrasonography appeared completely normal. Cross-sectional spine imaging subsequently demonstrated extensive, non-contiguous ('skipped') osteolytic vertebral and posterior arch destruction with disk-sparing across the cervical, thoracic, lumbar, and sacral spine, mimicking disseminated metastatic malignancy, lymphoma, or multiple myeloma.\n2. Admission Breakpoint: The admission breakpoint falls immediately following the initial clinical examination, baseline laboratory investigations (normal CBC with markedly elevated ESR of 48 mm/h and CRP of 66.9 mg/L), and unremarkable plain radiographs (normal chest X-ray, unremarkable thoracolumbar X-ray, normal abdominal ultrasound), before whole-spine CT/MRI, immunologic/mycobacterial assays (T-SPOT, PPD), bone marrow biopsy, SPEP, and open spinal biopsy.\n3. Differential Distinctions: Multiple myeloma and metastatic adenocarcinoma produce widespread lytic lesions with disc preservation but are distinguished by monoclonal gammopathy, positive bone marrow aspirates, or malignant histology. Spinal tuberculosis classically involves contiguous vertebral bodies and adjacent disks, but skipped multifocal disease can spare disks and mimic metastatic malignancy, requiring histologic confirmation of caseous granulomas.",
+  "case_prompt": "A 33-year-old man presented with a 6-month history of insidious, intermittent low back pain that had severely worsened over the preceding 20 days, resulting in substantial difficulty with ambulation and sleep. The pain was exacerbated by movement. He also endorsed progressive low-grade fevers, drenching night sweats, decreased appetite, and unintentional weight loss. He had no history of previous systemic illness or trauma, and had no known sick contacts or history of infectious exposures. His social history was notable for cigarette smoking and alcohol consumption without illicit drug use.\n\nOn physical examination, he was afebrile at triage but appeared uncomfortable. There was no visible or palpable spinal deformity. Definite tenderness was elicited upon palpation and percussion over the spinous processes of the lower thoracic spine. Neurological examination of the lower extremities was normal, with intact light touch sensation, symmetrical 5/5 motor strength, normal muscle tone, intact patellar and Achilles deep tendon reflexes bilaterally, and negative bilateral straight leg raise testing.\n\nInitial laboratory investigations revealed a normal complete blood count, with normal red blood cell count, hemoglobin, and white blood cell count. However, inflammatory markers were markedly elevated, with an erythrocyte sedimentation rate (ESR) of 48 mm/h and a C-reactive protein (CRP) of 66.9 mg/L. Basic metabolic panel and liver function tests were within reference ranges.\n\nRoutine admission imaging, including a plain chest radiograph and an abdominal ultrasound, was completely normal. A plain radiograph of the thoracolumbar spine was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Multiple myeloma",
+      "rule_out_reason": "Considered due to diffuse osteolytic skeletal destruction and elevated inflammatory markers, but excluded by normal serum protein electrophoresis and a negative bone marrow examination.",
+      "quote": "Besides, the result of bone marrow puncture and serum protein electrophoresis (SPE) were all negative."
+    },
+    {
+      "candidate": "Lymphoma / Metastatic spinal disease",
+      "rule_out_reason": "Widespread multi-level worm-eaten osteolytic lesions sparing the intervertebral disks raised high suspicion for metastatic malignancy or lymphoma; however, open surgical biopsy revealed granulomatous inflammation without neoplastic cells.",
+      "quote": "Eventually, differential diagnoses such as lymphoma, multiple myeloma, and metastatic disease were suspected."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Open biopsy of the T11 transverse process lesion demonstrated necrotic cheese-like material and histology confirmed chronic granulomatous inflammation with caseous necrosis, leading to complete clinical and radiological remission with antitubercular therapy.",
+      "quote": "Pathological examination indicated a chronic granulomatous inflammation with abundant caseous necrosis, considering tuberculous inflammation (Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Zero spoilers in case prompt, exact quotes from original case text for differentials, confirmed canonical diagnosis."
+}

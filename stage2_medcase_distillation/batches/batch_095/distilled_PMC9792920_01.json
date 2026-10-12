@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9792920_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 51-year-old woman in rural Colombia presented with acute hemorrhagic fever, distributive shock requiring vasopressors, severe plasma leakage (ascites and pleural effusion), critical thrombocytopenia (7,000/mm³), and massive transaminitis, complicated by acute non-cirrhotic portal vein thrombosis. The core tension is distinguishing an overwhelming bacterial septic shock, thrombotic microangiopathy, or primary autoimmune thrombophilia from severe viral hemorrhagic fever (severe dengue) paradoxically presenting with macrovascular venous thrombosis alongside life-threatening hemorrhagic diathesis.\n2. Admission Breakpoint: The admission breakpoint is established at emergency intensive triage following resuscitation, identification of distributive shock, baseline laboratories (pancytopenia, platelet count 7,000/mm³, 50-fold transaminitis), and emergent imaging (ultrasound showing plasma leakage and Doppler CT demonstrating complete portal vein thrombosis), before send-out viral serologies, autoimmune panels, and thrombophilia assays.\n3. Differential Distinctions: Septic shock from occult bacterial infection was excluded by sterile blood, urine, and stool cultures. Thrombotic microangiopathy (TTP) and antiphospholipid syndrome were ruled out by absence of schistocytes, normal ADAMTS13 activity, and negative lupus anticoagulant/anticardiolipin panels. Other tropical infections (leptospirosis, malaria) were ruled out by negative smears and serologies. Positive anti-DENV-1 IgM ELISA confirmed severe dengue.",
+  "case_prompt": "A 51-year-old woman from a rural area of Santander, Colombia, presented to the emergency unit with a 5-day history of high fever, chills, severe epigastric pain, intractable nausea, vomiting, non-bloody diarrhea, and a recent episode of hematemesis. Her past medical history was notable for hypertension and dyslipidemia, for which she took enalapril, hydrochlorothiazide, atorvastatin, and low-dose aspirin.\n\nOn physical examination, she was in profound hemodynamic distress. She was tachycardic and hypotensive, requiring immediate norepinephrine vasopressor infusion. Her extremities were cool with delayed capillary refill and marked dehydration. Examination of the integument revealed petechial lesions across the upper and lower extremities. Cardiopulmonary auscultation revealed bilateral basilar crackles. Abdominal examination demonstrated tender hepatomegaly extending 4 cm below the right costal margin without peritoneal signs.\n\nInitial laboratory evaluation revealed pancytopenia with a critical platelet count of 7,000 per cubic millimeter. Liver biochemistries showed marked hepatocellular injury with serum transaminases elevated 50 times the upper limit of normal, lactate dehydrogenase (LDH) exceeding 1,000 U/L, with normal total bilirubin and alkaline phosphatase levels. Coagulation profile demonstrated a prolonged partial thromboplastin time (PTT) with a normal prothrombin time (PT). Plain chest radiography and bedside abdominal ultrasonography demonstrated evidence of diffuse plasma leakage, including bilateral pleural effusions, free peritoneal fluid (ascites), and hepatomegaly. Echocardiography showed transient microbubbles within the right cardiac chambers without an intracardiac shunt. Subsequent abdominal Doppler ultrasonography and portal venous-phase CT revealed an acute, complete, non-cirrhotic thrombosis of the proximal portal vein.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Septic shock secondary to bacterial gastrointestinal or intra-abdominal infection",
+      "rule_out_reason": "Considered due to high fever, diarrhea, acute abdomen, and refractory distributive shock requiring vasopressors; excluded by sterile blood, stool, and urine cultures, and the absence of localized bacterial collections on cross-sectional imaging.",
+      "quote": "Cultures of the blood, urine, and stool yielded normal results."
+    },
+    {
+      "candidate": "Thrombotic microangiopathy (TTP / HUS) or Antiphospholipid antibody syndrome (APS)",
+      "rule_out_reason": "Raised due to the paradoxical combination of severe consumptive thrombocytopenia and acute macrovascular portal vein thrombosis; excluded by the absence of microangiopathic hemolytic anemia, absence of schistocytes on blood smear, normal ADAMTS13 activity, and negative antiphospholipid/thrombophilia panels.",
+      "quote": "Screening for TMAs and inherited thrombophilia did not reveal any abnormality. She was screened for antiphospholipid syndrome, protein C and S deficiency, factor V Leiden, hyperhomocysteinemia, and ATIII deficiency. There was no evidence of hemolytic anemia, blood smear did not show abnormal cells, and ADAMTS 13 levels were normal."
+    },
+    {
+      "candidate": "Severe Leptospirosis, Malaria, or acute Viral Hepatitis",
+      "rule_out_reason": "Important considerations for acute tropical hemorrhagic fever presenting with profound transaminitis and multi-organ failure in Colombia; ruled out by negative blood smear examinations for parasites and negative serologic assays for Leptospira, hepatitis viruses (A, B, C), CMV, and HIV.",
+      "quote": "Malaria and Chagas tests in blood smear were negative. Hepatitis A, B, and C virus infections were ruled out serologically as well as CMV, HIV, and Leptospira infections."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of positive anti-DENV-1 IgM by ELISA in the setting of hemorrhagic diathesis (petechiae, hematemesis), extreme plasma leakage (ascites, pleural effusions), profound thrombocytopenia (7,000/mm³), and ischemic hepatitis, accompanied by acute portal vein thrombosis, confirmed the diagnosis of severe dengue with thrombotic and coagulopathic complications.",
+      "quote": "The chest X-ray and abdominal ultrasound showed evidence of leakage with free fluid in the abdomen and pleural effusion, and hepatomegaly was also noted... She was serologically confirmed positive for anti-DENV-1 IgM by ELISA... A presumptive diagnosis of severe dengue with secondary coagulopathy and thrombotic complications was made."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed strictly at resuscitation, initial laboratories, and bedside ultrasound/Doppler CT. Confirmatory DENV-1 IgM ELISA, viral/bacterial send-outs, and ICU course are strictly withheld from the case prompt and presented in the diagnostic reasoning."
+}

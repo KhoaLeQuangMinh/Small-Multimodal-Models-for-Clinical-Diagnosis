@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7666691_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 30-year-old previously healthy adult presenting with isolated, asymptomatic jugular-carotid lymphadenopathy without constitutional symptoms or fever, creating a diagnostic dilemma between Hodgkin/non-Hodgkin lymphoma, metastatic head and neck carcinoma, and tuberculous lymphadenitis.\n2. Admission Breakpoint: The breakpoint occurs during the initial outpatient referral for asymptomatic right jugular-carotid lymphadenopathy, prior to the ENT excisional lymph node biopsy.\n3. Differential Distinctions: Lymphoma and metastatic squamous cell carcinoma are leading causes of isolated painless cervical lymphadenopathy in young adults without systemic signs; however, surgical excision and histopathologic examination demonstrated necrotizing granulomatous lymphadenitis confirming tuberculosis, while ruling out other organ involvement.",
+  "case_prompt": "A 30-year-old previously healthy adult is referred to the head and neck clinic for evaluation of a right-sided cervical neck mass. The mass was noticed incidentally and has been slowly enlarging without pain. The patient has had no fever, night sweats, chills, anorexia, weight loss, or deterioration in general health. There is no history of cough, dyspnea, or known contact with individuals with chronic infections.\n\nOn physical examination, the patient is afebrile and in good physical condition. Head and neck examination reveals an isolated, firm, non-tender right-sided jugular-carotid lymphadenopathy. There is no overlying skin erythema, warmth, or fluctuance. Examination of the oral cavity, oropharynx, and contralateral neck is completely unremarkable. No axillary, supraclavicular, or inguinal lymphadenopathy is present. Systemic physical examination is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lymphoma (Hodgkin or Non-Hodgkin Lymphoma)",
+      "rule_out_reason": "Isolated, rubbery, painless jugular-carotid lymphadenopathy in a young adult with preserved constitutional health strongly mimics a lymphoproliferative disorder, but histologic architecture showed granulomatous mycobacterial infection rather than malignant lymphocytes.",
+      "quote": "without fever or deterioration in general condition."
+    },
+    {
+      "candidate": "Metastatic Head and Neck Carcinoma / Reactive Pyogenic Adenitis",
+      "rule_out_reason": "Cervical node enlargement can herald occult mucosal head and neck cancer or bacterial adenitis, but detailed ENT evaluation was clear, and isolated nodal involvement was confirmed without other systemic sites.",
+      "quote": "There were no other locations of tuberculosis"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous Cervical Lymphadenitis (Scrofula)",
+      "rule_out_reason": "The diagnosis was definitively established by an excisional cervical lymph node biopsy in the ENT unit, which histologically confirmed lymph node tuberculosis and prompted successful anti-tubercular therapy.",
+      "quote": "A biopsy was performed in ENT unit confirming the diagnosis of lymph node tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative cleanly ends before lymph node biopsy. Core tension explores isolated asymptomatic cervical scrofula masquerading as lymphoma."
+}

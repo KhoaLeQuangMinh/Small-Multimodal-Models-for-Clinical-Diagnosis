@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10981262_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 40-year-old male with long-standing epilepsy on chronic anticonvulsants developed an acute febrile exanthem followed by vesiculobullous epidermal detachment and mucosal erosions consistent with Stevens-Johnson syndrome (SJS). The clinical challenge lies in distinguishing a late-onset drug reaction from severe infection-triggered SJS occurring in a tropical arboviral endemic region.\n2. Admission Breakpoint: The breakpoint is set at the clinical presentation and physical examination diagnosing Stevens-Johnson syndrome, prior to ICU admission, dexamethasone administration, and reference laboratory confirmatory virology.\n3. Differential Distinctions: While lamotrigine is a recognized trigger for SJS, hypersensitivity usually manifests within 8 weeks of initiation rather than after a decade of continuous exposure. Staphylococcal scalded skin syndrome features epidermal detachment with a positive Nikolsky sign but spares mucous membranes. Acute dengue virus infection presented with classic high fever and exanthem ('red spots') that precipitated severe immune-mediated mucocutaneous detachment.",
+  "case_prompt": "A 40-year-old man from Ica, a coastal city in Peru, presented with progressive skin detachment, fever, and respiratory difficulty. He had a 10-year history of epilepsy managed with valproic acid and lamotrigine. He reported no use of alcohol, tobacco, or illicit drugs.\n\nFive days prior to consultation, the patient developed a high fever of 39.2°C and an acute cutaneous rash described as \"red spots.\" He was advised home treatment with oral hydration and paracetamol. Over the subsequent days, he experienced worsening general discomfort, ocular itching, and the eruption of vesiculobullous lesions across his face, chest, and lower extremities, accompanied by persistent fever and respiratory difficulty. The lesions were nonpruritic and, upon gentle touch, would detach and secrete a serous fluid.\n\nOn physical examination, the patient was in fair general and nutritional condition. Vital signs revealed a blood pressure of 110/70 mmHg, heart rate 90 beats per minute, respiratory rate 16 breaths per minute, and oxygen saturation 96% on ambient air (FiO2 0.21). Dermatological examination revealed erythematous bullous lesions on the head, chest, upper limbs, and lower limbs, alongside bloody features and desquamative mucosal lesions involving the mucous membranes. The skin detachment involved approximately 10% of total body surface area. Nikolsky sign was positive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lamotrigine-induced Stevens-Johnson syndrome",
+      "rule_out_reason": "Lamotrigine is a common cause of Stevens-Johnson syndrome, but drug-induced eruptions almost invariably develop within the first 8 weeks of therapy, whereas this patient had taken stable doses of lamotrigine and valproic acid for 10 years without adverse events.",
+      "quote": "with a medical history of epilepsy, has been on treatment with valproic acid and lamotrigine for the past 10 years."
+    },
+    {
+      "candidate": "Staphylococcal scalded skin syndrome",
+      "rule_out_reason": "Staphylococcal scalded skin syndrome produces widespread superficial flaccid bullae with epidermal peeling and a positive Nikolsky sign, but characteristically spares mucous membranes, whereas this patient exhibited prominent bloody, desquamative mucosal involvement.",
+      "quote": "while mucous membranes displayed bloody features and desquamative lesions. These manifestations affected approximately 10% of the total body surface. The Nikolsky sign was positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "In an endemic coastal setting in Peru, the acute high fever and rash were confirmed as acute dengue virus infection by positive NS1 antigen testing and reference laboratory IgM serology, establishing dengue as the infectious trigger of Stevens-Johnson syndrome.",
+      "quote": "Five days before the consultation, the patient experienced \"red spots\" and had a fever of 39.2 C, leading to a diagnosis of dengue through a positive NS1 antigen test. New samples were sent to the national reference laboratory, which confirmed the case by positive IgM antibody test."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to the presentation breakpoint. Excluded NS1 antigen test, IgM serology, and pathogen name from case prompt. Quotes verified against source text."
+}

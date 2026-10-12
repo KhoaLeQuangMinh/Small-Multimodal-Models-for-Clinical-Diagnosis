@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8572612_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 41-year-old previously healthy female presents in Sri Lanka with a 2-day history of high fever (38.9 °C), severe headache, diffuse myalgia, arthralgia, and abdominal pain. Although initial admission triage exhibits no overt plasma leakage and a preserved platelet count (>100 x 10^9/L), the infection can rapidly deteriorate during the critical phase into Expanded Dengue Syndrome, manifesting as severe plasma leakage, cardiogenic shock from acute myocarditis, non-aneurysmal subarachnoid hemorrhage, secondary hemophagocytic lymphohistiocytosis (HLH), and central diabetes insipidus.\n2. Admission Breakpoint: The admission breakpoint occurs at the initial local hospital presentation on Day 1–2 of illness, with acute fever, classic constitutional symptoms, and initial complete blood count showing a platelet count >100 x 10^9/L, strictly prior to day 3 NS1 antigen confirmation and subsequent multi-system catastrophic failure.\n3. Differential Distinctions: Disseminated intravascular coagulation (DIC) and thrombotic thrombocytopenic purpura (TTP) were considered due to profound refractory thrombocytopenia, but ruled out by peripheral blood morphology. Hemorrhagic shock from internal bleeding was excluded because packed cell volume was rising rather than falling, accompanied by gallbladder wall edema. Positive NS1 antigen on day 3 followed by critical-phase plasma leakage, myocarditis, Fisher grade 3 SAH, and biopsy-proven HLH confirms expanded dengue syndrome.",
+  "case_prompt": "A 41-year-old previously healthy female presents to a local hospital in Sri Lanka with a 2-day history of high fever, severe headache, diffuse myalgia, arthralgia, and abdominal pain.\n\nOn physical examination, the patient appears acutely ill. Vital signs demonstrate a body temperature of 38.9 °C, with normal blood pressure and normal peripheral perfusion. There are no clinical signs of fluid accumulation, petechiae, or overt bleeding.\n\nInitial laboratory evaluation demonstrates a normal packed cell volume (hematocrit) and a platelet count that is trending downward but remains above 100 x 10^9/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Intravascular Coagulation (DIC) or Thrombotic Thrombocytopenic Purpura (TTP)",
+      "rule_out_reason": "Microangiopathy and consumptive coagulopathy were considered when severe refractory thrombocytopenia failed to improve with platelet transfusions, but peripheral blood morphology revealed no characteristic features of DIC or TTP.",
+      "quote": "There was no evidence in the blood picture to suggest disseminated intravascular coagulation or thrombotic thrombocytopenic purpura. Hence, she was investigated on the line of HLH."
+    },
+    {
+      "candidate": "Hemorrhagic Hypovolemic Shock",
+      "rule_out_reason": "Occult internal bleeding was evaluated as a cause of profound circulatory shock, but was ruled out by hemoconcentration with rising hematocrit and ultrasound showing no free fluid in the chest or abdomen.",
+      "quote": "Although the clinical picture was strongly suggestive of dengue haemorrhagic fever with leaking, there was no definite evidence of significant fluid collection in the lung bases or abdomen on ultrasound examination except for a mild gall bladder wall oedema. Possibility of a significant bleeding was less likely as her PCV and hemoglobin were rising."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Severe Dengue Infection / Expanded Dengue Syndrome",
+      "rule_out_reason": "The acute tropical febrile presentation was confirmed on day 3 by positive viral nonstructural protein 1 (NS1) antigen testing, with subsequent critical-phase development of hemoconcentration (PCV 50), acute myocarditis with EF 30-35%, spontaneous subarachnoid hemorrhage, and biopsy-proven secondary HLH.",
+      "quote": "She was diagnosed as DF with a positive Dengue NS 1 antigen test on day 3... The bedside 2D echocardiogram reveled a low ejection fraction of 30-35% with globally hypokinetic left ventricle... CT brain revealed an SAH of Fishers grade 3 with diffuse cerebral oedema... Bone marrow biopsy confirmed HLH."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt strictly isolates Day 1-2 triage presentation prior to Day 3 NS1 testing and critical-phase complications."
+}

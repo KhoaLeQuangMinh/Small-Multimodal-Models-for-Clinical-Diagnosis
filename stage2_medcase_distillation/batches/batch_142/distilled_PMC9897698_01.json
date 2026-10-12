@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9897698_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 37-year-old male presents with acute febrile illness, thrombocytopenia, and marked leukocytosis complicated by rapid-onset flaccid quadriparesis with a clear T4 sensory level and absent deep tendon reflexes. The central diagnostic challenge is recognizing acute compressive myelopathy from spontaneous spinal epidural hematoma as an atypical, catastrophic hemorrhagic manifestation of dengue infection rather than infectious myelitis, acute inflammatory demyelinating polyneuropathy, or septic shock.\n2. Admission Breakpoint: Triage evaluation following vital sign measurements, physical and neurological examinations establishing a sensory level at T4 with flaccid limb weakness, and baseline laboratory investigations (hematocrit 46%, WBC 19,400/mm³, platelets 101,000/µL, PT 14.1s, INR 1.2), prior to emergency spine/brain MRI neuroimaging and confirmatory viral identification.\n3. Differential Distinctions: Malaria and typhoid fever are primary considerations for acute febrile illness with cytopenias in endemic regions, but negative serologies rule them out. Acute transverse myelitis and Guillain-Barré syndrome are mimickers of acute tetraparesis, but neuroimaging identifies mechanical spinal cord compression secondary to extensive epidural hemorrhage.",
+  "case_prompt": "A 37-year-old male presents with intermittent fever (up to 102°F) for four days and generalized weakness in both the upper and lower extremities. On examination, he is alert, conscious, and oriented. Vital signs show a blood pressure of 180/100 mmHg, pulse rate of 54 beats per minute, and oxygen saturation of 95% on ambient air. Neurological examination reveals sensory loss below the T4 dermatomal level with absent deep tendon reflexes throughout. The Glasgow Coma Scale (GCS) score is 15 without signs of meningeal irritation. Pupils are equal and react normally to light. Initial laboratory evaluation reveals a hematocrit of 46%, a total leukocyte count of 19,400 cells/mm³, a platelet count of 1.01 lakhs/mm³ (101,000/µL), a prothrombin time (PT) of 14.1 seconds, and an international normalized ratio (INR) of 1.2. The remainder of routine laboratory investigations are unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered as an endemic tropical etiology for acute febrile illness accompanied by thrombocytopenia, but excluded by negative serological investigations.",
+      "quote": "Serological tests for malaria and typhoid infection were negative."
+    },
+    {
+      "candidate": "Typhoid fever",
+      "rule_out_reason": "Considered due to the sustained step-ladder fever pattern, leukocytosis, and systemic toxicity, but ruled out by negative serology.",
+      "quote": "Serological tests for malaria and typhoid infection were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Progressive neurological decline and flaccid quadriparesis prompted emergent neuroimaging; spinal MRI revealed extensive long-segment cervicodorsal epidural hemorrhage extending to D8 with cord displacement and brain MRI showed subarachnoid hemorrhage, establishing catastrophic hemorrhagic central nervous system involvement secondary to acute dengue infection with thrombocytopenia.",
+      "quote": "The patient was referred for a spine MRI, which showed long-segment spinal epidural hemorrhage in the cervical and dorsal spine (up to D8 level) causing mild to moderate lateral compression and anterior displacement of the cord at these levels"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation strictly isolated to pre-imaging baseline triage with zero pathogen or disease mentions. Quotes verified verbatim against original case report text. Comprehensive differential rule-outs provided."
+}

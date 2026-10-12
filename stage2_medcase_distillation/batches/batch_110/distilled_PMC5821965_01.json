@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5821965_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 16-year-old girl presents with acute abdominal pain, exudative ascites, peritoneal nodular implants, a complex septated ovarian cyst, and elevated CA-125, closely mimicking advanced ovarian carcinoma or peritoneal carcinomatosis. The core challenge is identifying tuberculous peritonitis in an adolescent with a completely normal chest X-ray, negative PPD skin test, negative Quantiferon, and negative ascites AFB smears.\n2. Admission Breakpoint: The breakpoint is positioned after initial admission physical examination, routine laboratory panels, plain chest radiography, and initial pelvic/abdominal ultrasound, prior to paracentesis adenosine deaminase (ADA) analysis, thoracoabdominal CT, or trucut peritoneal biopsy.\n3. Differential Distinctions: Ovarian cancer and peritoneal carcinomatosis present with septated adnexal masses, peritoneal nodularity, exudative ascites, and marked CA-125 elevation, but repeated cytologic examinations lack malignant cells and biopsy reveals non-caseating/caseating histiocytic granulomas. Pyogenic bacterial peritonitis causes abdominal tenderness and exudative fluid, but typically features high peripheral leukocytosis, neutrophilic ascites, and positive gram stains. Marked elevation of ascites ADA (>30 U/L) in a lymphocyte-predominant exudate is the key diagnostic discriminator for tuberculous peritonitis.",
+  "case_prompt": "A 16-year-old female was referred and admitted to the hospital with a 7-day history of abdominal pain and tenderness. She had no history of chronic medical conditions, no alcohol consumption, no family history of malignancy, and took no prescribed or herbal medications. Vital signs on presentation were normal: body temperature 36.3\u00b0C, blood pressure 120/70 mmHg, and heart rate 82 beats per minute. Physical examination was notable for abdominal distension with shifting dullness indicative of ascites and diffuse lower abdominal tenderness without peritoneal signs. Routine laboratory evaluations revealed a normal complete blood count with no anemia, normal leukocyte count, and normal platelet count; peripheral blood smear showed no atypical cells. Renal and hepatic functions and serum electrolytes were normal. Inflammatory markers were elevated, with a C-reactive protein of 39 mg/L (reference range 0\u20135 mg/L) and an erythrocyte sedimentation rate of 42 mm/h (reference range 0\u201320 mm/h). A plain chest radiograph was completely normal, showing no parenchymal infiltrates, cavitation, or pleural effusions. Abdominal ultrasonography demonstrated free peritoneal fluid with internal septations, multiple peritoneal surface implants in the hepatodiaphragmatic region and right paracolic gutter (largest measuring 16 mm), and a 39 \u00d7 27 mm septated cystic lesion in the left ovary.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian carcinoma / Peritoneal carcinomatosis",
+      "rule_out_reason": "Primary clinical concern given the combination of a complex septated ovarian cyst, multiple peritoneal nodular implants, exudative ascites, and elevated CA-125 (107.5 U/mL), but serial peritoneal fluid cytologies revealed only lymphocytes with no malignant cells.",
+      "quote": "Pathology reported inflammatory cells which are rich in lymphocytes. There were no malignant cells in the fluid."
+    },
+    {
+      "candidate": "Pyogenic bacterial peritonitis",
+      "rule_out_reason": "Considered due to acute abdominal tenderness and inflammatory markers, but excluded by the absence of leukocytosis, absence of systemic signs of sepsis, and lymphocytic rather than neutrophilic exudate.",
+      "quote": "Our laboratory results reported no anemia, no white blood cell elevation, and no thrombocyte abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the demonstration of an ascites adenosine deaminase (ADA) level of 62 U/L (more than double the upper limit of normal), followed by a trucut core needle biopsy of the peritoneal nodules confirming granulomatous inflammation with histiocytic cells.",
+      "quote": "Although malignancy was important for differential diagnosis, ADA (adenosine deaminase) level was 62 (normal range: 0-30 U/L). These results strongly supported tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean NEJM CPC presentation. Strict admission breakpoint excludes ADA test, CT, MRI, and biopsy results. Zero pathogen leaks. Quotes confirmed verbatim from case text."
+}

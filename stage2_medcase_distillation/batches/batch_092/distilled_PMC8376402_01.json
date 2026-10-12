@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8376402_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 6-year-old child presents with a 5-day acute febrile illness characterized by headache, myalgias, abdominal pain, epistaxis, and capillary leak (20% right pleural effusion), which rapidly evolves into prolonged, severe bicytopenia and hemodynamic compromise outlasting the typical acute critical phase, mimicking bacterial septic shock, primary hematologic malignancy, or other viral hepatitides.\n2. Admission Breakpoint: The admission clinical presentation halts after initial triage documentation of fever, warning signs (abdominal pain, epistaxis, oligoanuria, hepatosplenomegaly), initial laboratory evidence of thrombocytopenia and hepatitis, and imaging demonstrating a right pleural effusion, prior to confirmatory IgM testing, bone marrow biopsy, and Coombs testing.\n3. Differential Distinctions: Systemic pyogenic sepsis was excluded by negative blood, urine, and marrow cultures; acute viral hepatitis, EBV, and CMV were ruled out by negative serologies; marrow biopsy showed non-necrotizing granulomas excluding leukemia; positive IgM serology confirmed acute dengue infection, which triggered post-infectious Evans syndrome (positive Coombs test).",
+  "case_prompt": "A 6-year-old boy (weight 19 kg, height 113 cm, BMI 14.9 kg/m²) with no significant past medical history presented to the hospital following transfer from a primary care facility with a 5-day history of persistent fever, marked asthenia, generalized myalgias, arthralgias, multiple episodes of emesis, severe abdominal pain, and headache.\n\nOn physical examination, the child appeared acutely ill and lethargic. Spontaneous epistaxis was observed. Abdominal examination revealed marked diffuse tenderness and palpable hepatosplenomegaly. Significant oligoanuria was documented.\n\nInitial emergency laboratory and imaging evaluation demonstrated marked progressive thrombocytopenia, markedly elevated hepatic aminotransferases, and acute renal hypoperfusion. Chest imaging revealed a 20% right-sided pleural effusion indicating acute vascular permeability and third-space fluid accumulation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial sepsis / Septic shock",
+      "rule_out_reason": "Considered due to persistent fevers, third spacing, oligoanuria, and multiorgan dysfunction, but multiple serial bacteriological cultures remained entirely sterile.",
+      "quote": "polycultures (negative blood cultures 1 and 2, negative urine culture, and negative myeloid culture)"
+    },
+    {
+      "candidate": "Acute viral hepatitis / Mononucleosis syndromes (EBV, CMV, Toxoplasmosis)",
+      "rule_out_reason": "Considered because of fever, hepatosplenomegaly, and marked transaminitis, but comprehensive acute infectious serologies were negative.",
+      "quote": "negative infectious profile (IgM and IgG serologies for negative Toxoplasma gondii; negative cytomegalovirus; negative Epstein-Barr; negative hepatitis A, B, and C studies; nonreactive HIV ELISA; and nonreactive VDRL)"
+    },
+    {
+      "candidate": "Primary hematologic malignancy (Acute leukemia / Lymphoma)",
+      "rule_out_reason": "Considered because of persistent bicytopenia with hepatosplenomegaly extending beyond the usual acute infection course, but bone marrow evaluation revealed reactive nonnecrotizing granulomas without neoplastic cells.",
+      "quote": "bone marrow aspiration, and biopsy (findings: nonnecrotizing epithelioid granuloma)"
+    },
+    {
+      "candidate": "Diagnostic Pivot (Severe dengue with post-infectious Evans syndrome)",
+      "rule_out_reason": "Acute arboviral infection with capillary leak and warning signs was confirmed by IgM serology, followed by autoimmune Coombs-positive bicytopenia consistent with Evans syndrome.",
+      "quote": "In follow-up tests, positive IgM serology for dengue, hematological affection was documented due to bicytopenia (anemia and thrombopenia) without evidence of external or hidden bleeding"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set at emergency triage prior to IgM serology and bone marrow evaluation. Zero pathogen spoilers in case prompt. Quotes verified."
+}

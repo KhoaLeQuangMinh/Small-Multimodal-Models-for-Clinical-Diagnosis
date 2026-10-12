@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6351290_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 18-year-old previously healthy manual laborer presents with acute right lower extremity ischemia caused by a large arterial embolus in the external iliac artery. Bedside echocardiogram reveals a 36-40 mm anechoic left ventricular mass. In a young patient without known cardiovascular disease, embolic acute limb ischemia usually raises suspicion for an intracardiac neoplasm (cardiac myxoma), mural thrombus, or infective endocarditis with septic embolism. Distinguishing these from a ruptured cardiac hydatid cyst relies on echocardiographic cystic morphology, endemic exposure, and operative retrieval of parasitic laminated membrane.\n2. Admission Breakpoint: Admission emergency triage concludes after clinical confirmation of acute limb ischemia, color-flow duplex ultrasonography confirming iliac artery obstruction, and transthoracic echocardiography revealing the left ventricular cystic mass, immediately prior to surgical embolectomy.\n3. Differential Distinctions: Cardiac myxoma (or papillary fibroelastoma) typically originates in the left atrium (rarely ventricle), appearing as a gelatinous, mobile, non-anechoic mass with vascular pedicle on echo. Left ventricular mural thrombus occurs in the setting of severe cardiomyopathy or previous infarction and appears as an echodense intraventricular mass rather than an anechoic cyst. Infective endocarditis features valvular vegetations, fever, and bacteremia. Cardiac hydatid cyst presents as an anechoic, cystic lesion in the left ventricular myocardium whose rupture releases parasitic membranes causing peripheral arterial embolization.",
+  "case_prompt": "An 18-year-old male manual laborer presents to the emergency department with acute pain, paresthesias, and coldness of the right lower extremity. He has no prior history of cardiac disease or trauma and was previously in good health. On physical examination, the right lower extremity is cold with cyanotic toes, and both right femoral and popliteal pulses are undetectable. Urgent color-flow duplex ultrasonography reveals complete occlusion of right external iliac artery blood flow by a large intraluminal embolus. Urgent transthoracic echocardiography demonstrates an anechoic mass measuring 36 to 40 mm originating from the left ventricle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intracardiac Tumor (Left Ventricular Myxoma / Fibroma) with Embolization",
+      "rule_out_reason": "In a young patient without cardiovascular disease presenting with acute peripheral arterial embolism and an intracardiac mass, a primary cardiac tumor such as myxoma was a leading consideration; however, echocardiography showed a distinctly anechoic cystic lesion rather than a solid or gelatinous parenchymal mass.",
+      "quote": "A trans-thoracic echocardiography showed an anechoic lesion of 36-40 mm originating from the left ventricle (LV)."
+    },
+    {
+      "candidate": "Infective Endocarditis with Septic Thromboembolism",
+      "rule_out_reason": "Acute major arterial occlusion from an embolic source in a young adult can occur secondary to endocarditis; however, there were no valvular vegetations or systemic septic features, and regional endemicity raised high suspicion for an echinococcal cyst.",
+      "quote": "Since it was an endemic area of hydatid disease, a provisional diagnosis of (CHC) had been postulated."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Urgent surgical embolectomy with a Fogarty catheter retrieved an occluding cruor thrombus containing a pathognomonic white parasitic membrane, which was confirmed as hydatid tissue on histopathology, identifying embolization from a ruptured left ventricular hydatid cyst.",
+      "quote": "The catheter harvested a cruor thrombus with a white membrane from the common femoral artery, the histopathology of which was a hydatid tissue as it is shown in Fig. 1a and b."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned prior to surgical embolectomy. No disease or pathogen names in case prompt. Quotes are exact matches from the case report."
+}

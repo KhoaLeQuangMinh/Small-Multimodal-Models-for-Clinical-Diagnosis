@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8329521_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 35-year-old previously healthy female bank employee returning from Sudan presents during quarantine with a 5-day history of cyclical high-grade fevers, vomiting, somnolence, and transaminitis. While acute travel-associated tropical fever typically demands rapid evaluation for vector-borne hemoparasites, her subsequent clinical course was complicated by severe, refractory delayed hemolytic anemia developing days after initial antiparasitic clearance, posing a major diagnostic dilemma between autoimmune hemolytic anemia, systemic lupus erythematosus, and post-artesunate delayed hemolysis.\n2. Admission Breakpoint: The admission clinical narrative halts at emergency triage presentation\u2014encompassing travel history to Sudan without chemoprophylaxis, fever chronology, baseline vitals, initial complete blood count showing normal WBC and low-normal platelets (150 x 10^3/\u00b5L), transaminitis, hyperbilirubinemia, and negative nasopharyngeal COVID-19 PCR\u2014strictly prior to the reporting of malarial blood smears, parasitemia quantification, ICU admission, and post-artesunate hematologic investigations.\n3. Differential Distinctions: Acute viral respiratory infection and viral hepatitis are ruled out by negative COVID-19 testing and the finding of intraerythrocytic parasites; bacterial sepsis and enteric fever are excluded by negative blood and urine cultures; connective tissue disease / primary autoimmune hemolytic anemia is considered given positive ANA and direct antiglobulin test during hemolysis, but ruled out by prompt spontaneous stabilization following resolution of drug-induced post-artesunate hemolysis.",
+  "case_prompt": "A previously healthy 35-year-old female bank employee presented to the emergency department complaining of a five-day history of high-grade fever of a waxing-and-waning nature, associated with vomiting, generalized body aches, and progressive somnolence. The fever had begun during her mandatory hotel quarantine seven days after returning from a vacation in Sudan, during which she did not take any chemoprophylactic medication. She had not improved despite symptomatic treatment with antipyretics and antiemetics during quarantine. She reported a remote febrile illness ten years earlier while residing in an endemic region, but had no recent sick contacts among family or acquaintances.\n\nOn physical examination in the emergency department, she appeared lethargic, ill, and somnolent, with an oral temperature fluctuating up to 40.0\u00b0C. Respiratory rate, blood pressure, and oxygen saturation were monitored. A nasopharyngeal swab reverse-transcriptase polymerase chain reaction test for severe acute respiratory syndrome coronavirus 2 was negative.\n\nInitial laboratory investigations revealed a hemoglobin level of 12.1 g/dL, a normal white blood cell count, and a platelet count of 150,000/\u00b5L. Serum liver biochemistries demonstrated hepatocellular injury with an aspartate aminotransferase of 58 U/L and an alanine aminotransferase of 57 U/L. The total serum bilirubin was elevated at 26 \u00b5mol/L. Serum creatinine and basic electrolytes were within acceptable limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral respiratory illness / COVID-19",
+      "rule_out_reason": "High-grade fever, somnolence, and systemic myalgias arising in mandatory travel quarantine strongly warranted exclusion of acute pandemic viral infection, but nasopharyngeal swab PCR was negative.",
+      "quote": "COVID-19 PCR from nasopharyngeal swab was negative."
+    },
+    {
+      "candidate": "Bacterial sepsis / Enteric (Typhoid) fever",
+      "rule_out_reason": "Severe undulating fevers, lethargy, gastrointestinal upset, and transaminitis following international travel suggested acute bacterial septicemia or enteric fever, but serial blood cultures and urine cultures remained negative throughout hospitalization.",
+      "quote": "Sepsis workup including blood cultures and urine culture were negative."
+    },
+    {
+      "candidate": "Primary systemic autoimmune disease / Systemic lupus erythematosus",
+      "rule_out_reason": "Subsequent development of persistent fevers, pleural effusions, splenic infarcts, positive antinuclear antibody (ANA), and Coombs-positive hemolytic anemia suggested an underlying autoimmune connective tissue disorder; however, these findings represented an acute inflammatory post-infectious and drug-induced response (post-artesunate delayed hemolysis) that resolved without immunosuppressive therapy.",
+      "quote": "As no significant improvement was noted in her clinical condition, further workup was performed to exclude connective tissue disease, involving ANA which was positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic discovery on emergency admission was the examination of peripheral blood smears, which identified heavy intraerythrocytic trophozoite infection confirming hyperparasitemic Plasmodium falciparum infection.",
+      "quote": "Malarial smears were positive for Plasmodium falciparum with a parasitemia level of 27 %."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "The case prompt provides a pristine Day 1 emergency presentation. All explicit mentions of malaria, Plasmodium smears, parasitemia levels, artesunate administration, and subsequent delayed hemolysis workup have been excluded from the prompt."
+}

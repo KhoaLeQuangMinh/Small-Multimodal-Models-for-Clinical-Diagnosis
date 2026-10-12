@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8627139_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 16-year-old adolescent in an endemic region presents with subacute progressive dyspnea, ascites, hepatomegaly, weight loss, and hemodynamic compromise from cardiac tamponade (pulsus paradoxus, narrow pulse pressure). The presentation strongly mimics juvenile idiopathic pericarditis, decompensated congestive heart failure, or an occult lymphoproliferative malignancy with malignant polyserositis.\n2. Admission Breakpoint: Evaluation ends after clinical examination, inflammatory markers (CRP, ESR), negative HIV test, chest radiograph, and emergency echocardiogram establishing a large circumferential pericardial effusion with right ventricular collapse, immediately preceding pericardiocentesis.\n3. Differential Distinctions: Hematologic or metastatic malignancy was ruled out by absence of lymphadenopathy or organ masses; viral/idiopathic pericarditis rarely causes subacute wasting and massive hemorrhagic tamponade; in an endemic area, subacute exudative hemorrhagic pericardial tamponade accompanied by pleural effusions and elevated inflammatory markers constitutes presumptive tuberculous pericarditis.",
+  "case_prompt": "A 16-year-old male student presented to the medical unit with a two-week history of progressively worsening shortness of breath, increasing abdominal distension, a dry non-productive cough, anorexia, and unintentional weight loss. Three days prior to admission, he developed intermittent fevers. He reported no night sweats, sputum production, or prior thoracic trauma.\n\nOn physical examination, temperature was 36.7 °C, respiratory rate was 24 breaths per minute, heart rate was 98 beats per minute, and blood pressure was 87/71 mmHg with pulsus paradoxus. Cardiovascular examination was notable for marked jugular venous distension and positive hepatojugular reflux. Heart sounds were audible without muffling, and no pericardial friction rub was appreciated. Pulmonary examination demonstrated dullness and diminished breath sounds consistent with bilateral pleural effusions. Abdominal examination revealed clinical ascites and tender hepatomegaly. No peripheral lymphadenopathy or palpable abdominal masses were detected, and lower extremity edema was absent.\n\nInitial laboratory studies revealed a negative HIV screening test, an elevated C-reactive protein of 24 mg/L, and an erythrocyte sedimentation rate of 45 mm/hr. Plain chest radiography showed marked enlargement of the cardiac silhouette with bilateral pleural effusions. Transthoracic echocardiography demonstrated a large circumferential pericardial effusion with right ventricular diastolic collapse and marked respiratory inflow variation across the mitral and tricuspid valves indicative of hemodynamic cardiac tamponade.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lymphoreticular or metastatic malignancy",
+      "rule_out_reason": "Considered due to the subacute constitutional decline, anorexia, weight loss, and large pericardial effusion, but systemic examination revealed no peripheral or visceral lymphadenopathy or neoplastic masses.",
+      "quote": "There were neither lymphadenopathies nor palpable masses to suggest malignancy."
+    },
+    {
+      "candidate": "Viral or idiopathic acute pericarditis",
+      "rule_out_reason": "Considered given the patient's youth, but idiopathic viral pericarditis typically presents acutely with chest pain and rarely causes massive hemorrhagic exudative tamponade with systemic wasting.",
+      "quote": "Fluid analysis was consistent with an exudative effusion. Acid fast bacilli stain was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Tuberculous pericarditis with hemorrhagic tamponade)",
+      "rule_out_reason": "Subacute presentation with polyserositis, exudative hemorrhagic pericardial effusion, and residence in a high-burden endemic setting justified the definitive diagnosis and full resolution on targeted therapy.",
+      "quote": "A strong suspicion of tuberculosis was made and a presumptive treatment for hemorrhagic tuberculous pericarditis was started."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed prior to pericardiocentesis. Zero pathogen spoilers in case prompt. Quotes verified."
+}

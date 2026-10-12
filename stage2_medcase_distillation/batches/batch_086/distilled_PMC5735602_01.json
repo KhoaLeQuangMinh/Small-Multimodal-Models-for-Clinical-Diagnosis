@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5735602_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 59-year-old female from Mexico on triple immunosuppressive therapy (methotrexate, abatacept, increased prednisone) presents with diabetic ketoacidosis, persistent gastrointestinal symptoms, colonic thickening, and septic shock. The clinical picture is easily mistaken for simple DKA precipitated by routine bacterial colitis or infectious gastroenteritis, masking fatal helminthic hyperinfection that facilitates systemic enteric bacteremia.\n2. Admission Breakpoint: The breakpoint occurs on Day 1 following emergency resuscitation, baseline laboratory tests (electrolytes, arterial blood gas, urinalysis), and abdominal CT scanning, strictly prior to the growth of Gram-negative bacilli on blood cultures on Day 2 and larval microscopy on Day 3.\n3. Differential Distinctions: Uncomplicated bacterial colitis or C. difficile infection can cause colonic thickening and leukocytosis, but does not explain persistent recurrence despite prior fluoroquinolone/metronidazole therapy or subsequent spontaneous polymicrobial/enteric dissemination. Uncontrolled diabetic ketoacidosis accounts for the severe anion gap acidosis and lethargy, but represents a secondary metabolic decompensation triggered by invasive helminthic infection.",
+  "case_prompt": "A 59-year-old Hispanic female born in Mexico presented to the emergency department with lethargy, high fevers, and worsening abdominal distress. Her medical history was notable for insulin-dependent type 2 diabetes mellitus and rheumatoid arthritis managed with methotrexate, abatacept, and chronic prednisone; her prednisone dosage had been increased two days prior to presentation following a corneal transplant. Over the preceding month, she had made multiple emergency department visits for recurrent crampy abdominal pain, diarrhea, and vomiting, and had completed courses of oral ciprofloxacin and metronidazole one week prior without durable relief.\n\nOn physical examination, she was lethargic. Her temperature was 102.0°F (38.9°C), heart rate 121 beats per minute, and blood pressure 102/80 mmHg. Her Glasgow Coma Scale score was 15/15, and no meningeal signs or focal neurologic deficits were elicited. On abdominal examination, there was diffuse tenderness without peritoneal signs.\n\nTriage laboratory evaluations revealed a white blood cell count of 16,600/mcL. Serum sodium was 121 mmol/L, potassium 3.4 mmol/L, chloride 89 mmol/L, bicarbonate (CO2) 10 mmol/L, and blood glucose 222 mg/dL. Arterial blood gas analysis demonstrated a mixed triple acid-base disorder: pH 7.35, PaCO2 13 mmHg, and HCO3 7.1 mmol/L, reflecting a high anion gap metabolic acidosis, metabolic alkalosis, and respiratory alkalosis. Urinalysis was strongly positive for large ketones. Computed tomography (CT) of the abdomen and pelvis demonstrated marked colonic wall thickening consistent with diffuse colitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Diabetic ketoacidosis secondary to bacterial colitis",
+      "rule_out_reason": "Considered due to hyperglycemia, ketonuria, severe metabolic acidosis, and CT evidence of colonic thickening, but failed to explain the protracted multi-week gastrointestinal symptoms refractory to empirical ciprofloxacin/metronidazole and the impending translocational enteric bacteremia following steroid escalation.",
+      "quote": "CT scan of the abdomen showed possible colitis with thickening of the colon. She was started on insulin protocol after supplementing potassium. She was started on vancomycin 1.25 g every 12 hours (q12 hr) and piperacillin-tazobactam (PTZ) 3.37 g every 6 hours (q6 hr)."
+    },
+    {
+      "candidate": "Primary bacterial gastroenteritis or intra-abdominal sepsis",
+      "rule_out_reason": "Considered given fever, tachycardia, leukocytosis, and abdominal signs, but broad-spectrum antibiotics (ciprofloxacin, metronidazole) failed to eradicate the condition, which rapidly culminated in systemic bacteremia and respiratory exhaustion.",
+      "quote": "The patient was seen in the emergency department multiple times over the preceding month for abdominal pain, diarrhea, and vomiting and was treated with ciprofloxacin and metronidazole a week prior. ... She became more acidotic and tachypneic requiring intubation to prevent respiratory fatigue."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "In an immunosuppressed patient born in an endemic region who experienced accelerated gastrointestinal symptoms after corticosteroid escalation, the growth of Gram-negative enteric bacilli in blood and subsequent microscopic visualization of filariform larvae in stool and sputum established soil-transmitted helminthic hyperinfection syndrome (Strongyloides stercoralis).",
+      "quote": "On day 2 (D2), blood cultures grew Gram-negative bacilli (GNB). Suspicion of strongyloidiasis was high in the setting of Gram-negative bacteremia and a recent history of persistent GI symptoms in a patient from an endemic region. Single dose of ivermectin 200 micrograms/kg was given empirically. On D3, stool and sputum microscopy reported larvae of Strongyloides spp."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case highlights severe Strongyloides stercoralis hyperinfection syndrome in an immunocompromised host after corticosteroid escalation, presenting with fulminant colitis, DKA, and subsequent translocational enteric bacteremia and fatal meningitis."
+}

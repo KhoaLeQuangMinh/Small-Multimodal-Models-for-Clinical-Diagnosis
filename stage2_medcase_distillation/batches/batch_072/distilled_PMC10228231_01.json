@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10228231_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 77-year-old man receives high-dose dexamethasone (12 mg daily) following craniotomy for a meningioma and develops unexplained recurrent polymicrobial/Gram-negative bacteremia, septic shock, and bilateral pneumonia. He has no peripheral eosinophilia. The critical tension is recognizing that fatal Gram-negative sepsis and respiratory failure under high-dose corticosteroid therapy can be the presenting manifestation of occult intestinal nematode hyperinfection acquired decades earlier in an endemic region (Cape Verde).\n2. Admission Breakpoint: The admission breakpoint occurs upon ICU transfer when the patient exhibits fever, lethargy, septic shock, and bilateral pneumonia with recurrent Gram-negative bacteremia while on systemic steroids, right before microscopic examination of respiratory secretions/stool and parasitic PCR testing.\n3. Differential Distinctions: Hospital-acquired Gram-negative pneumonia and postoperative surgical sepsis were the leading working diagnoses; however, the persistence of recurrent enteric bacteremia despite antibiotics in an immunosuppressed patient born in Cape Verde is characteristic of nematode autoinfection carrying gut flora across mucosal barriers. HIV and HTLV-1 were considered as alternative immunodeficiencies but were non-reactive.",
+  "case_prompt": "A 77-year-old man who underwent surgical resection of an intracranial mass is transferred to the intensive care unit due to acute clinical deterioration. He was born and resided in Cape Verde until 1965, subsequently living in urban Portugal and the Netherlands while working in maritime commerce without other tropical travel. His medical history includes hypertension and dyslipidemia. Six weeks prior to ICU admission, he presented with progressive gait impairment and was diagnosed with an extra-axial right parietal mass with marked vasogenic edema, for which he was initiated on high-dose dexamethasone (12 mg daily).\n\nFollowing a craniotomy and mass excision, he initially improved. However, ten days postoperatively, multiple blood cultures yielded a Gram-negative bacillus, and targeted intravenous antimicrobial therapy was initiated. Despite treatment, he developed high fevers, worsening lethargy, severe hypoxemia, and septic shock, necessitating endotracheal intubation, mechanical ventilation, and vasopressor support.\n\nOn physical examination, the patient is intubated, sedated, febrile, and hemodynamically supported with vasopressors. Lung auscultation reveals diffuse bilateral coarse crackles. Abdominal examination is soft and non-distended. No cutaneous lesions or larva currens tracks are observed. A portable chest radiograph reveals bilateral infiltrates compatible with extensive pneumonia. Routine hematologic testing demonstrates an absence of peripheral eosinophilia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Postoperative Nosocomial Sepsis / Healthcare-Associated Pneumonia",
+      "rule_out_reason": "Conventional hospital-acquired pneumonia and primary bacteremia do not account for recurrent transmural translocation of enteric microorganisms in a patient on long-term corticosteroid therapy without an obvious primary gastrointestinal source.",
+      "quote": "His condition deteriorated with fever, lethargy, severe hypoxia, and septic shock, and he was admitted to the intensive care unit (ICU) at the beginning of November. At admission to the ICU, he presented with a chest radiography compatible with bilateral pneumonia."
+    },
+    {
+      "candidate": "HIV or HTLV-1 Associated Immunodeficiency",
+      "rule_out_reason": "Evaluated as potential causes of accelerated immunosuppression and opportunistic infection in an individual originating from Cape Verde, but serologies were unreactive.",
+      "quote": "HTLV-1/2 and HIV-1/2 serologies were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of sputum, stool, and urine revealed massive numbers of filariform and rhabditiform Strongyloides stercoralis larvae, and CSF PCR was positive, confirming corticosteroid-induced hyperinfection and larval dissemination carrying enteric bacteria.",
+      "quote": "The sputum and stool microscopic direct examination identified a high number of Strongyloides stercoralis filariform and rhabditiform larvae (Figure 1) and a parasitological urine examination was also positive for S. stercoralis larvae."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation avoids blood culture pathogen spoilers and send-out PCR in the prompt. Admission breakpoint set at ICU entry."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3655258_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: An adolescent male from an endemic region with 10–12 months of unremitting fever, severe wasting, massive splenomegaly, and pancytopenia whose initial bone marrow aspiration fails to demonstrate the causative protozoan and who has a negative repeat rapid serological test. The challenge lies in distinguishing visceral leishmaniasis from disseminated tuberculosis, chronic viral hepatosplenomegaly, and hematologic malignancies, and recognizing the indication for splenic aspiration despite negative bone marrow microscopy.\n2. Admission Breakpoint: The admission narrative stops after presentation, physical examination demonstrating massive hepatosplenomegaly, and baseline triage complete blood count revealing pancytopenia with normal liver and kidney chemistries, strictly before send-out viral/tuberculin tests, repeat rapid tests, bone marrow aspiration, aldehyde test, and splenic aspirate.\n3. Differential Distinctions: Disseminated tuberculosis causes chronic fever, wasting, and splenomegaly but lacks massive isolated splenomegaly and yields positive tuberculin/mycobacterial studies. Hematologic malignancies and bone marrow failure disorders feature pancytopenia and splenomegaly but show blast cells or aplasia on marrow examination. Visceral leishmaniasis is characterized by massive splenomegaly, profound hypergammaglobulinemia (strongly positive Napier's aldehyde test), and intracellular Leishmania donovani amastigotes visualized on splenic aspiration.",
+  "case_prompt": "A 15-year-old male, originally a resident of Bihar, presents to an outpatient department in New Delhi with a history of longstanding fever, progressive abdominal distention, significant weight loss, and generalized weakness over the preceding ten to twelve months. On physical examination, the patient is febrile and visibly undernourished, with massive splenomegaly and palpable hepatomegaly. Baseline hematological investigations demonstrate moderate pancytopenia, with a hemoglobin level of 8.3 g/dL, a total leukocyte count of 2,000/mm³, and a platelet count of 75,000/mm³. Liver and renal function tests are within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculosis (Disseminated / Abdominal)",
+      "rule_out_reason": "Considered given chronic fever, constitutional wasting, hepatosplenomegaly, and pancytopenia in an endemic area. Excluded by negative tuberculin skin testing and absence of caseating granulomas or mycobacteria.",
+      "quote": "Mantoux test was also negative."
+    },
+    {
+      "candidate": "Chronic viral infection (HIV / Hepatitis B / Hepatitis C)",
+      "rule_out_reason": "Considered as causes of chronic hepatosplenomegaly, wasting, and cytopenias. Excluded by nonreactive serological assays.",
+      "quote": "ELISA tests for HIV, HbsAg and HCV were all negative."
+    },
+    {
+      "candidate": "Hematologic malignancy / Primary bone marrow disorder",
+      "rule_out_reason": "Considered due to prolonged fever, massive splenomegaly, and pancytopenia. Bone marrow examination showed reactive plasmacytosis without leukemic blasts, lymphoma infiltration, or aplasia.",
+      "quote": "Bone marrow aspiration showed reactive plasmacytosis (10%) and no Leishmania donovani (LD) bodies were seen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative initial bone marrow microscopy, strong endemic suspicion and marked hypergammaglobulinemia demonstrated by a strongly positive aldehyde test led to diagnostic splenic aspiration, which demonstrated hallmark amastigotes.",
+      "quote": "Napier's aldehyde test was performed which was strongly positive. In view of the strong clinical suspicion of VL and the positive aldehyde test, splenic aspiration was done. Aspirates showed both intracellular as well as extracellular amastigote forms of LD bodies, thus confirming VL"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint strictly placed prior to invasive bone marrow/splenic aspirates and serologic panels."
+}

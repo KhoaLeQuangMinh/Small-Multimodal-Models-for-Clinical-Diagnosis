@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11803889_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 52-year-old woman presents with an isolated, indolent 10 × 5 cm firm left axillary mass persisting for two years without breast disease or hepatic/pulmonary lesions, mimicking axillary lymphadenopathy, soft-tissue sarcoma, or a benign mesenchymal cyst.\n2. Admission Breakpoint: The admission evaluation concludes after the clinical examination, baseline blood tests, bilateral mammography, screening chest radiography, and sonography identifying a large, thick-walled anechoic axillary cystic lesion without visceral involvement. Total surgical cystectomy, histopathologic inspection, and anthelmintic therapy follow post-breakpoint.\n3. Differential Distinctions: Breast carcinoma metastasis or malignant axillary lymphadenopathy is ruled out by normal bilateral mammography and cystic rather than solid sonographic morphology; benign subcutaneous masses (e.g., epidermoid cyst, cystic hygroma, schwannoma) are excluded by the identification of an acellular double-layered laminated membrane and germinal layer on histopathologic examination.",
+  "case_prompt": "A 52-year-old woman presented with a painless swelling in her left axilla that had been slowly enlarging over the preceding two years. She reported no associated fevers, night sweats, anorexia, weight loss, or history of breast masses. Past medical history was unremarkable.\n\nOn physical examination, a firm to hard, mobile, non-tender mass measuring 10 × 5 cm was palpable in the left axillary vault. There was no regional lymphadenopathy, and the overlying skin was normal without erythema, warmth, or ulceration. Bilateral breast examination was normal.\n\nRoutine laboratory investigations, including complete blood count, inflammatory markers, and liver function tests, were within normal limits. Bilateral mammography revealed no abnormalities. Ultrasonography of the left axilla demonstrated a 10 × 5 cm thick-walled cystic lesion that was entirely anechoic without internal debris or echoes. Screening chest radiography and transabdominal ultrasonography showed no lesions in the lungs or liver parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Axillary nodal metastasis / Occult breast carcinoma",
+      "rule_out_reason": "A chronic axillary mass in a 52-year-old female raises immediate concern for occult breast neoplasia or metastatic adenopathy, but bilateral breast examination and screening mammography were completely normal, and imaging showed a well-defined cystic lesion rather than solid metastatic lymphadenopathy.",
+      "quote": "The patient reported no history of breast masses, fever, or other symptoms and had no previous diagnosis of hydatid cysts."
+    },
+    {
+      "candidate": "Benign soft-tissue cystic neoplasm (Epidermoid cyst or Cystic lymphangioma)",
+      "rule_out_reason": "Considered given the painless, mobile, long-standing subcutaneous presentation without systemic inflammation; however, thick-walled sonographic architecture and definitive surgical pathology demonstrated parasitic membranes.",
+      "quote": "Ultrasound imaging demonstrated a (10 x 5) cm thick-walled cystic lesion. The nature of the cyst was further elucidated, noting that it appeared anechoic without internal echoes. A mammographic examination of both breasts showed no abnormalities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Total intact surgical cystectomy followed by histopathological examination revealed an acellular double-layered laminated capsule with an inner germinal monolayer surrounded by a fibrous capsule, confirming an isolated primary axillary hydatid cyst.",
+      "quote": "Microscopic examination confirmed the diagnosis of a hydatid cyst, revealing the typical laminated structure associated with the infection, characterized by an acellular double-layered laminated capsule with inner cell monolayer (germinal membrane) and the presence of congested fibrovascular wall surrounded by a reactive fibrous capsule. (Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled with strict adherence to admission breakpoint. Ultrasound and mammogram findings preserved while histopathology and anthelmintic therapy withheld from prompt. Verbatim quotes support all differential candidates."
+}

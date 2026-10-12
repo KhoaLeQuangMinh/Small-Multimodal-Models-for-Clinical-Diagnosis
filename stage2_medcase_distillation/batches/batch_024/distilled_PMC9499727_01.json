@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9499727_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 10-day-old neonate presents with high fever, jaundice, seizures, and severe mononuclear CSF pleocytosis with transaminitis (ALT >1300 U/L), mimicking conventional bacterial meningitis or severe viral/congenital TORCH infection. However, empiric beta-lactam antimicrobials fail and the infant lacks any diagnostic eschar or rash, concealing vertical congenital rickettsial transmission.\n\n2. Admission Breakpoint: The breakpoint occurs at initial emergency presentation following baseline blood counts, hepatic biochemical profile, lumbar puncture, and head CT scan, prior to extensive negative pathogen serologies, maternal re-examination on day 3, and subsequent Weil-Felix/mNGS testing.\n\n3. Differential Distinctions: Pyogenic bacterial meningitis presents with neutrophilic pleocytosis and responds to ampicillin/cefotaxime; here, fever and CSF pleocytosis persisted on beta-lactams. Congenital viral/protozoal infections (TORCH complex, herpes simplex, arboviruses) were excluded by negative specific diagnostic assays. The diagnosis hinges on identifying the maternal groin eschar and positive Weil-Felix/mNGS confirming Orientia tsutsugamushi.",
+  "case_prompt": "A 10-day-old male infant presents to the emergency department with a 6-day history of high-grade fever and jaundice, accompanied by new-onset seizures over the past 2 days.\n\nOn physical examination, the infant is febrile, irritable, and icteric. The abdomen is distended, and hepatomegaly is present on palpation. No cutaneous eschar, rash, or petechiae are noted. Vital signs reveal an axillary temperature of 39.3 °C, a pulse rate of 176 beats per minute, and a respiratory rate of 46 breaths per minute.\n\nInitial laboratory evaluation reveals a white blood cell count of 24.76 × 10^9/L (with 76.4% lymphocytes, 12.1% neutrophils, and 8.1% monocytes). Biochemical testing demonstrates marked transaminitis and hyperbilirubinemia: total bilirubin 87.4 µmol/L, aspartate aminotransferase (AST) 336.6 U/L, alanine aminotransferase (ALT) 1317.1 U/L, and lactate dehydrogenase (LDH) 1477.6 U/L.\n\nLumbar puncture reveals cerebrospinal fluid (CSF) with a white blood cell count of 283 × 10^6/L (with 95.1% mononuclear cells and 4.9% polymorphonuclear neutrophils), a protein concentration of 3.084 g/L, and a glucose concentration of 1.18 mmol/L.\n\nComputed tomography (CT) of the head shows patchy low-density areas in the bilateral frontal, temporal, and parietal lobes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neonatal Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Initial clinical presentation and CSF pleocytosis prompted an admission diagnosis of neonatal bacterial meningitis; however, the CSF showed 95.1% mononuclear predominance and fever and CSF abnormalities persisted on empiric ampicillin and cefotaxime sodium.",
+      "quote": "A diagnosis of neonatal bacterial meningitis was made, and the patient was started on cefotaxime sodium combined with ampicillin and phenobarbital to control fever and seizures. On the third day of admission, his seizures and jaundice had subsided, but the fever persisted, and the CSF still showed abnormalities."
+    },
+    {
+      "candidate": "Congenital Viral / Protozoal Infections (TORCH Complex: Toxoplasmosis, Rubella, CMV, HSV)",
+      "rule_out_reason": "Jaundice, hepatomegaly, and meningoencephalitis in the first 2 weeks of life strongly suggested congenital TORCH pathogens, but targeted diagnostic assays returned negative.",
+      "quote": "Tests for malaria, dengue, toxoplasmosis, leptospirosis, mycobacterium tuberculosis, rubella, cytomegalovirus, herpes simplex virus, and Japanese encephalitis virus were negative."
+    },
+    {
+      "candidate": "Endemic Tropical Infections (Malaria, Dengue, Leptospirosis, Japanese Encephalitis)",
+      "rule_out_reason": "Vector-borne and zoonotic tropical pathogens causing acute febrile encephalopathy, jaundice, and hepatitis in endemic zones were ruled out by negative laboratory evaluations.",
+      "quote": "Tests for malaria, dengue, toxoplasmosis, leptospirosis, mycobacterium tuberculosis, rubella, cytomegalovirus, herpes simplex virus, and Japanese encephalitis virus were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Lack of defervescence on beta-lactams prompted maternal re-evaluation, uncovering a history of peripartum fever of unknown origin and a 1.2 × 0.8 cm eschar in the mother's left groin; serologies (Weil-Felix OXK and IgM-ELISA) and mNGS confirmed Orientia tsutsugamushi in both mother and infant, establishing vertically transmitted congenital scrub typhus.",
+      "quote": "On examination, there was an 1.2x0.8 cm eschar on her left groin (Figure 1B). The Weil-Felix test was positive for OXK 1:640 and 1:160 in the mother and baby, respectively, and both had positive IgM-ELISA 1:160 to the Karp antigen. Meanwhile, Metagenomic next-generation sequencing (mNGS) was positive for Orientia tsutsugamushi in both mother and baby (Supplementary Material)."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero send-out serology or maternal eschar details in case prompt. Quotes exactly matched text."
+}

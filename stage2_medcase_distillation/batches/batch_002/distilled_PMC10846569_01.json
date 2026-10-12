@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10846569_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A pediatric patient from an endemic region with domestic canid exposure presents with persistent abdominal pain and large, well-defined septated hepatic cystic lesions, where interventional decompression carries an extreme risk of catastrophic intraoperative hypersensitivity and bronchospasm from antigenic cyst fluid spillage.\n2. Admission Breakpoint: Triage and referral evaluation for abdominal pain including patient demographics, canine exposure in Diyarbakir, absence of drug/food allergies, physical exam, baseline triage labs (normal CRP, normal procalcitonin), and baseline abdominal ultrasound defining the two fertile liver cysts, stopping strictly before serological titers (IHA), percutaneous puncture (PAIR), and intraprocedural anaphylaxis.\n3. Differential Distinctions: Simple congenital hepatic cysts are asymptomatic, thin-walled, unilocular, and lack internal germinative membranes or septae. Pyogenic or amebic hepatic abscesses present with high fever, leukocytosis, and elevated CRP/procalcitonin, whereas uncomplicated hydatid cysts have normal baseline inflammatory markers and thickened laminated cyst walls.",
+  "case_prompt": "A female child residing in Diyarbakir, Turkey, who has regular contact with a domestic pet dog, presents to the hospital for evaluation of ongoing abdominal pain. She has no known history of food allergies, medication allergies, or prior atopic reactions.\n\nOn physical examination, the abdomen demonstrates localized tenderness corresponding to the right upper quadrant and epigastrium, without peritoneal signs or acute distress. Baseline laboratory evaluation reveals a white blood cell count of 28,200/mm3, hemoglobin of 14.2 g/dL, platelet count of 413,000/mm3, baseline eosinophil proportion of 0.5% (absolute count 82/uL), C-reactive protein <0.1 mg/dL, and procalcitonin <0.1 ng/mL. Serum biochemistry and arterial blood gas analyses are within normal limits.\n\nAbdominal ultrasonography reveals two well-circumscribed cystic lesions in the liver: a 5.5-cm cyst in the posterior segment of the right hepatic lobe containing internal septations, and a 7.0-cm cyst in the medial segment of the left hepatic lobe. Both lesions display smooth borders, thickened capsule walls, and anechoic internal germinative membranes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital / Simple Hepatic Cysts",
+      "rule_out_reason": "Considered due to the well-defined fluid-filled hepatic lesions, but congenital epithelial cysts have imperceptible thin walls, lack internal septa or detachable germinative membranes, and contain inert transudative fluid rather than antigenic bioactive contents.",
+      "quote": "An abdominal ultrasonography revealed 2 fertile cysts with diameters of 5.5 cm and 7 cm at the posterior segment of the right lobe of the liver and at the medial segment of the left lobe of liver, respectively, which had smooth borders and thickened walls and contained anechoic germinative membranes."
+    },
+    {
+      "candidate": "Pyogenic or Amebic Hepatic Abscess",
+      "rule_out_reason": "Considered for expanding symptomatic space-occupying liver lesions, but the child lacked systemic toxic symptoms or fever, and inflammatory biomarkers were completely unreactive (CRP <0.1 mg/dL, procalcitonin <0.1 ng/mL).",
+      "quote": "C-reactive protein <0.1 mg dL-1, and procalcitonin<0.1 ng mL-1. A blood gas analysis and serum biochemistry were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Indirect hemagglutination (IHA) confirmed high antibody titers of 1/640 for Echinococcus granulosus, and therapeutic percutaneous puncture of the cyst triggered immediate severe bronchospasm and systemic anaphylaxis followed by a dramatic surge in peripheral eosinophils (to 10.6% / 1400/uL), conclusively establishing fertile cystic hydatid disease.",
+      "quote": "She had a IHA: 1/640 for Echinococcusgranulosus... However, the patient developed bronchospasm and anaphylactic reaction during the second procedure... Meanwhile, her eosinophil count increased from 0.5% to 10.6% and her absolute eosinophil count increased from 82 microL-1 to 1400 microL-1."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly stops at Day 1 triage and ultrasonography before serological titers, PAIR intervention, and anaphylactic collapse. Zero pathogen names in prompt."
+}

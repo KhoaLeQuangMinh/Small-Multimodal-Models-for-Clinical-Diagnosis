@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7529169_01",
+  "disease": "Scabies",
+  "think": "<think>\n1. Core Clinical Tension: An untreated HIV-positive male abusing intravenous hormones presents with acute progressive vision loss, focal neurological deficits (left basal ganglia hematoma causing right hemiparesis), an intergluteal ulcer, and widespread cutaneous lesions. The clinical challenge is distinguishing co-existing opportunistic infectious complications in a complex host, recognizing the distinct ectoparasitic nature of generalized scabies requiring permethrin alongside viral retinitis treatment.\n2. Admission Breakpoint: The admission breakpoint is placed after initial clinical triage and physical examination (visual acuity, ophthalmoscopy showing vitreous cells, dense opacification, hemorrhages; blood pressure 160/90 mmHg, right hemiparesis, generalized cutaneous eruption, and intergluteal ulcer), immediately prior to brain MRI, CD4/CD8 testing, systemic infection workup, and targeted medications.\n3. Differential Distinctions: Systemic opportunistic pathogens (such as syphilis, cryptococcosis, or systemic viral infections) causing generalized rash or retinitis are ruled out by negative systemic infection workup. Dermatologic reaction to intravenous DHEA/steroid abuse or eczema is excluded by physical identification of generalized scabies, successfully treated with permethrin.\n</think>",
+  "case_prompt": "<case_prompt>\nA young male with a history of untreated human immunodeficiency virus infection presents for clinical evaluation with a sudden onset of progressive blurring of vision in both eyes. Over the preceding year, he had been self-administering intravenous dehydroepiandrosterone (DHEA), testosterone, and vitamin C, as well as high-dose oral multivitamins and minerals. On examination, best-corrected visual acuity is 6/60 in the right eye and 6/48 in the left eye. Anterior segment examination is normal bilaterally. Ophthalmoscopy demonstrates +2 vitreous cells, large areas of dense white retinal opacification, retinal exudates, vasculitis, and scattered preretinal hemorrhages in both eyes. General physical examination reveals blood pressure of 160/90 mmHg, right-sided hemiparesis requiring assistance for ambulation, an intergluteal ulcer, and a widespread, generalized pruritic cutaneous eruption.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Other Systemic Opportunistic Infections (e.g., Syphilis, Cryptococcosis, Toxoplasmosis)",
+      "rule_out_reason": "In an untreated immunocompromised patient presenting with retinitis, focal neurologic deficits, and cutaneous lesions, systemic infections such as ocular syphilis, cryptococcal disease, or toxoplasmosis were considered; ruled out by comprehensive negative systemic diagnostic investigations.",
+      "quote": "Investigations for other systemic infections were negative."
+    },
+    {
+      "candidate": "Drug-induced Exanthem / Severe Seborrheic Dermatitis",
+      "rule_out_reason": "Cutaneous eruption in a patient injecting illicit intramuscular/intravenous steroids and high-dose vitamins could represent a hypersensitivity drug reaction or severe seborrheic dermatitis; ruled out by physical diagnostic confirmation of widespread ectoparasitic infestation.",
+      "quote": "There were generalized scabies and an intergluteal ulcer present."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Clinical examination identifying generalized scabies along with bilateral necrotizing retinitis, prompting directed topical treatment with permethrin cream alongside systemic and intravitreal ganciclovir therapy.",
+      "quote": "There were generalized scabies and an intergluteal ulcer present. He also had right-sided hemiparesis, requiring him to seek assistance for ambulation."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict source fidelity maintained. Disease name 'scabies' strictly excluded from case_prompt and described clinically. Direct quotes from source text included in diagnostic_reasoning. Audit flags NONE."
+}

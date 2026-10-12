@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7137875_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: Evaluating severe hypoxemic respiratory disease with bilateral perihilar infiltrates accompanied by destructive oral mucosal ulcerations in a rural agricultural worker, distinguishing between pulmonary tuberculosis, oropharyngeal carcinoma with metastases, and deep dimorphic endemic mycoses.\n2. Admission Breakpoint: The breakpoint occurs after physical examination of the oral cavity and respiratory system, triage CXR, and sputum acid-fast smears, prior to contrast CT scans and histopathologic examination of the hard palate biopsy.\n3. Differential Distinctions: Pulmonary and oral tuberculosis is excluded by repeatedly negative sputum acid-fast smears; oropharyngeal squamous cell carcinoma with lung metastases is excluded by benign granulomatous fungal morphology on biopsy; other endemic mycoses (e.g., histoplasmosis) lack the classic moriform mulberry stomatitis and large yeast cells with multiple budding.",
+  "case_prompt": "A 48-year-old male with a 35-year history of heavy tobacco and alcohol use presents to the emergency department complaining of dry cough and progressive dyspnea. He has worked for most of his life in rural agricultural activities in Brazil and regularly chewed on raw vegetation while working in the fields. Three months prior to admission, he developed an insidious nonproductive cough accompanied by oropharyngeal pain and intermittent hoarseness, which did not improve after outpatient treatment with amoxicillin and ibuprofen. Over the ensuing weeks, he experienced an unintentional 6-kg weight loss, odynophagia, coughing paroxysms, and severe dyspnea provoked even by minor exertion.\nOn physical examination, the patient is afebrile with a respiratory rate of 16 breaths per minute and resting hypoxemia (oxygen saturation 60% on ambient air). Head and neck examination reveals two non-bleeding ulcerated lesions with a moriform appearance and poorly defined borders on the hard palate; no cervical, submandibular, or supraclavicular lymphadenopathy is present. Pulmonary auscultation reveals bilaterally decreased breath sounds with inspiratory crackles. Digital clubbing and cyanosis of the extremities are noted without edema.\nTriage chest radiography shows bilateral, symmetrical perihilar pulmonary infiltrates. Initial complete blood count reveals a marked leukocytosis of 23,630/mm\u00b3 with 15% band forms and toxic neutrophil granulations, red blood cell count of 4.79 x 10\u2076/mm\u00b3, hemoglobin of 12.7 g/dL, and hematocrit of 40.6%. Sputum evaluation for special microbiological stains is negative on three consecutive specimens.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary and Oropharyngeal Tuberculosis",
+      "rule_out_reason": "Microscopic examination for acid-fast bacilli was negative across three consecutive sputum specimens.",
+      "quote": "The investigation for acid-fast bacilli was negative in three sputum samples."
+    },
+    {
+      "candidate": "Oropharyngeal Squamous Cell Carcinoma with Pulmonary Metastases",
+      "rule_out_reason": "Hard palate mucosal biopsy demonstrated granulomatous infectious inflammation rather than malignant epithelial cells.",
+      "quote": "Two lesions were observed without bleeding on the hard palate with moriform appearance and poorly defined borders, which were submitted to biopsy (Fig. 1 A)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical presence of moriform palatal lesions in a rural laborer coupled with characteristic perihilar pulmonary infiltrates and histopathologic confirmation of typical yeast forms established paracoccidioidomycosis.",
+      "quote": "Considering the presence of moriform lesions in the oral cavity, the cervical tomography was performed for investigation and a vegetative lesion, with irregular borders was detected in the right nasopharynx and oropharynx regions (Fig. 3 B)."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC7137875_01. Moriform stomatitis and bat-wing infiltrates provided at admission; pathogen confirmed by histology in diagnostic reasoning."
+}

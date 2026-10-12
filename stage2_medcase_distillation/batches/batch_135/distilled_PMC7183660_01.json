@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7183660_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 20-year-old male trout farm worker presents with acute multiorgan failure characterized by high fever, vomiting, jaundice, severe thrombocytopenia (25,000/μL), acute oliguric renal failure (creatinine 392 μmol/L), and fulminant pulmonary hemorrhage causing catastrophic refractory hypoxemic respiratory failure requiring VV-ECMO. This classic pulmonary-renal syndrome with diffuse ground-glass infiltrates acutely mimics systemic autoimmune vasculitis (e.g., ANCA-associated vasculitis or Goodpasture disease), atypical pneumonia, or viral hemorrhagic fever.\n2. Admission Breakpoint: The presentation concludes following emergency ICU admission, endotracheal intubation, post-intubation chest radiography showing four-quadrant ground-glass opacification, and initial triage laboratory screening (Hb 99 g/L, platelets 25,000/μL, creatinine 392 μmol/L, total bilirubin 117 μmol/L, negative initial HIV, autoimmune, vasculitis, and atypical screens), immediately before empiric pulse steroids, ECMO cannulation, and reference diagnostic assays.\n3. Differential Distinctions: Systemic autoimmune vasculitis (ANCA-associated vasculitis or anti-GBM disease) presents identically with diffuse alveolar hemorrhage, acute glomerulonephritis, and severe systemic inflammation, prompting initiation of pulse methylprednisolone; however, the autoimmune/vasculitic panel returned negative. Atypical bacterial or fungal pneumonias (e.g., Legionella, Mycoplasma, Pneumocystis) can cause respiratory failure with sepsis, but bronchoalveolar lavage microscopy, fungal biomarkers, and viral PCRs were completely negative. The patient's occupation as a freshwater trout farm worker provided the key epidemiological clue.",
+  "case_prompt": "A 20-year-old male trout farm worker presents to the emergency department with a 3-day history of malaise, fevers, diarrhea, vomiting, and jaundice, acutely complicated by hemoptysis, severe headache, neck stiffness, and photophobia. He reports no rashes, peripheral edema, or melena, has no significant past medical history, and takes no prescription medications, with a social history of occasional alcohol and tobacco use. On physical examination, he appears critically ill and rapidly deteriorates with severe hypoxemia refractory to high-flow supplemental oxygen, requiring urgent endotracheal intubation and mechanical ventilation. A post-intubation plain chest radiograph demonstrates four-quadrant airspace 'ground glass' opacification. Initial triage laboratory testing shows a hemoglobin level of 99 g/L, severe thrombocytopenia with a platelet count of 25,000/μL, white blood cell count of 10,400/μL, and C-reactive protein of 195 mg/dL. Renal and hepatic panels reveal acute kidney injury and conjugated hyperbilirubinemia, with serum creatinine of 392 μmol/L, urea of 17 mmol/L, and total bilirubin of 117 μmol/L. Initial rapid blood and urine screening tests for HIV, autoimmune antibodies, systemic vasculitis, and atypical pneumonia are negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic autoimmune vasculitis / Pulmonary-renal syndrome (ANCA vasculitis or anti-GBM disease)",
+      "rule_out_reason": "Concomitant diffuse pulmonary hemorrhage, severe acute kidney injury, and extreme systemic inflammation strongly suggested a vasculitic pulmonary-renal syndrome, prompting empiric intravenous methylprednisolone; however, comprehensive vasculitis and autoimmune serologies were completely negative.",
+      "quote": "Intravenous doses of 1 g methylprednisolone daily for two days were initiated to treat the possibility of vasculitis associated pulmonary haemorrhage, pending results... HIV, autoimmune, vasculitis and atypical pneumonia blood and/or urine screens were negative."
+    },
+    {
+      "candidate": "Severe atypical or fungal pneumonia with multiorgan failure",
+      "rule_out_reason": "Four-quadrant airspace consolidation and acute respiratory failure raised suspicion for opportunistic fungal infection or atypical pathogens, but blood beta-D-glucan, galactomannan, BAL viral screens, mycoplasma PCR, and cultures were all negative.",
+      "quote": "Further tests including blood beta-d-glucan and galactomannan, as well as cultures, mycoplasma, viral PCR screen and acid-fast bacilli (AFB) from broncho-alveolar lavage (BAL) were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Reference laboratory testing confirmed positive serum Leptospira Panbio IgM ELISA and dual-target real-time 16SrRNA/Lipl32 PCR, establishing severe leptospirosis (Weil disease with pulmonary hemorrhage syndrome) successfully supported with venovenous extracorporeal membrane oxygenation (VV-ECMO).",
+      "quote": "On day 1 of his time on ECMO, positive serum Leptospira Panbio IgM ELISA and dual-target real-time 16SrRNA/Lipl32 polymerase chain reaction (PCR) results became available, confirmed by the reference laboratory, to which Public Health England was alerted."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Severe leptospirosis (Weil disease) presenting with severe pulmonary hemorrhage syndrome (SPHS) carries a mortality rate exceeding 50% due to toxin-mediated endothelial capillary damage rather than immune-complex deposition. Freshwater occupational exposure (trout farming) is a prime risk factor, and venovenous ECMO can serve as a life-saving bridge to recovery during acute respiratory failure while targeted antimicrobials take effect."
+}

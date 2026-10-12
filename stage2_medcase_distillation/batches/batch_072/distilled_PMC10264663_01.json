@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10264663_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 55-year-old man with active chronic hepatitis B presents with prolonged intermittent high fevers, hepatosplenomegaly, bicytopenia, and multinodular splenic lesions showing intense FDG uptake on PET/CT. His symptoms were initially attributed to splenic hemangioma, hemophagocytic lymphohistiocytosis (HLH), or splenic lymphoma complicating chronic HBV infection, obscuring a history of farm work in endemic Xinjiang Province where he contracted protozoal reticuloendothelial infection.\n2. Admission Breakpoint: The breakpoint is situated following initial admission workup, including baseline CBC (WBC 3.12 x 10^9/L, platelets 100 x 10^9/L), liver function tests, viral load, and contrast CT showing multinodular splenomegaly, prior to bone marrow biopsies, HLH chemotherapy, and splenectomy histopathology.\n3. Differential Distinctions: Splenic hemangioma was considered due to persistent enhancing nodular lesions on CT, but ruled out by fever, diffuse FDG uptake on PET, and worsening cytopenias. Splenic lymphoma or secondary hemophagocytic lymphohistiocytosis (HLH) was suspected due to hemophagocytosis on initial bone marrow examinations, but remissions were fleeting. The true etiology is visceral intracellular parasitism by flagellate protozoa targeting macrophages in the spleen and bone marrow.",
+  "case_prompt": "A 55-year-old man living in Hubei Province presents to the hematology unit with a 1-month history of intermittent high fevers with daily temperature spikes up to 40°C. One month prior to the onset of fever, he had worked on an agricultural farm in Xinjiang Province. His medical history is significant for chronic hepatitis B virus (HBV) infection.\n\nOn physical examination, he is febrile. Abdominal examination demonstrates palpable hepatosplenomegaly extending below the costal margins without rebound tenderness or guarding. Peripheral lymphadenopathy is absent.\n\nBaseline laboratory evaluation demonstrates bicytopenia: white blood cell count is 3.12 x 10^9/L, and platelet count is 100 x 10^9/L. Liver function tests show significant hepatic inflammation: alanine aminotransferase (ALT) 490 U/L (reference, 0–40 U/L), aspartate aminotransferase (AST) 558 U/L (reference, 0–40 U/L), total bilirubin 23.23 μmol/L (reference, 5.1–28.0 μmol/L), direct bilirubin 14.37 μmol/L (reference, 0–10 μmol/L), total protein 51.54 g/L (reference, 65–85 g/L), and serum albumin 26.83 g/L (reference, 40–55 g/L). Serum HBV-DNA is elevated at 3.19 x 10^4 IU/mL (reference, <1.0 x 10^2 IU/mL). Contrast-enhanced abdominal CT demonstrates marked splenomegaly with multiple nodules showing sustained enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Splenic Hemangioma / Angioma",
+      "rule_out_reason": "Initial contrast-enhanced CT suggested splenic angioma due to sustained nodular enhancement, but persistent high fevers, progressive pancytopenia, and diffuse reticuloendothelial FDG avidity on PET/CT ruled out a benign vascular lesion.",
+      "quote": "An enhanced CT scan was performed, which showed an enlarged spleen with sustained strengthening multinodular ( Figures 1B-D ), and angioma was suspected."
+    },
+    {
+      "candidate": "Splenic Lymphoma / Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "Splenic lymphoma and secondary HLH were strongly suspected based on marked splenomegaly, diffuse FDG uptake, and hemophagocytosis on two consecutive marrow aspirates; however, chemotherapy provided only temporary remission before fever and pancytopenia relapsed.",
+      "quote": "Regarding these clinical and imaging findings, splenic lymphoma was highly suspected. After the chemotherapy for hemophagocytic lymphohistiocytosis (HLH), the patient was discharged from the hospital in remission. Nevertheless, he was readmitted to the hospital again for persistent fever and pancytopenia 2 months later."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Post-splenectomy histopathology and a third bone marrow biopsy demonstrated diffuse intracellular and extracellular amastigotes within reticuloendothelial macrophages, with rapid cure following liposomal amphotericin B.",
+      "quote": "Subsequently, the postoperative histopathological analysis indicated diffuse proliferation of extracellular and intra-macrophage amastigotes in the spleen. At this stage, the third bone marrow biopsy was performed again, and Leishmania amastigotes were found."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation stops strictly before bone marrow biopsies, HLH chemotherapy, and splenectomy. Zero pathogen spoilers in prompt."
+}

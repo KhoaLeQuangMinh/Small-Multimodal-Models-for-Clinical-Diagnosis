@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3568885_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 25-year-old man presents with dark red urine, severe transaminitis (AST 1,841 U/L), thrombocytopenia (49,000/μL), and extreme creatine phosphokinase elevation (CPK 325,600 U/L) following a brief febrile illness and severe myalgias. In the tropics, this constellation immediately raises suspicion for severe leptospirosis (Weil disease), acute viral hepatitis, or malaria with blackwater fever, while dengue is an exceptionally rare recognized trigger of massive rhabdomyolysis.\n2. Admission Breakpoint: The admission clinical presentation includes symptom chronology (biphasic course with resolving fever followed by myalgias and pigmented urine), negative rodent exposure, physical examination, negative tourniquet test, baseline hematology and liver/muscle enzymes (platelets 49,000/μL, CPK 325,600 U/L), and urinalysis demonstrating myoglobinuria without hematuria, stopping strictly before send-out viral antigen/antibody panels return.\n3. Differential Distinctions: Leptospirosis is ruled out by negative serology and lack of rodent exposure; viral hepatitides are excluded by non-reactive HBV/HCV serologies; primary glomerulonephritis is excluded by absence of urinary RBCs/casts; and positive dengue NS1 antigen followed by IgM seroconversion confirms acute dengue infection as the inciting cause of rhabdomyolysis.",
+  "case_prompt": "A 25-year-old man presents to a tertiary hospital in Jamaica with red-colored urine and severe muscle aches. Eight days prior to presentation, he developed sudden fever and back pain that resolved within 48 hours following acetaminophen use. He subsequently developed intense arthralgia, myalgia, and generalized muscle weakness. On day 3 of illness, evaluation at a local facility noted thrombocytopenia with a platelet count of 44,000/μL; he was observed and discharged without bleeding signs. Two days later, he observed dark red-colored urine, prompting re-evaluation. He reports no mucosal hemorrhage, petechiae, melena, retro-orbital pain, neck stiffness, photophobia, rodent exposure, or recent travel, although an epidemiological contact in his neighborhood was recently diagnosed with an acute febrile viral syndrome. On examination, he is afebrile with normal vital signs. Physical examination of the heart, lungs, abdomen, and musculoskeletal system is unremarkable. Skin inspection shows no petechiae or ecchymoses, oral mucosal membranes are clear, and a tourniquet test is negative. Urinalysis reveals a pH of 7.5 and tests positive for occult blood on dipstick, but microscopic examination demonstrates zero red blood cells and no casts. Initial laboratory studies show a platelet count of 49,000/μL, normal serum creatinine (63 μmol/L), elevated AST of 1,841 U/L, LDH of 5,740 U/L, positive urinary myoglobin, and a serum creatine phosphokinase (CPK) level of 325,600 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis (Weil Disease)",
+      "rule_out_reason": "In tropical settings, fever and intense myalgia followed by thrombocytopenia, transaminitis, and pigmented red urine strongly suggest leptospirosis, but the patient had no rodent exposure and specific leptospiral serologies were negative.",
+      "quote": "Of note, he gave no history of exposure to rats and he had not travelled recently... Tests for HIV, hepatitis B and C, and leptospirosis were all negative."
+    },
+    {
+      "candidate": "Acute Viral Hepatitis / Glomerulonephritis",
+      "rule_out_reason": "Severe transaminase elevation suggested acute viral hepatitis, and red urine with a positive blood dipstick raised concern for acute glomerulonephritis; however, hepatitis serologies were negative, and urine microscopy lacked erythrocytes or casts, confirming isolated myoglobinuria.",
+      "quote": "Tests for HIV, hepatitis B and C, and leptospirosis were all negative... Urine microscopy was negative for red blood cells, casts, or other abnormal urinary sediments, but urinary myoglobin was positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Acute Dengue Fever Complicated by Massive Rhabdomyolysis",
+      "rule_out_reason": "Acute dengue infection was definitively proven by detection of the dengue virus non-structural protein 1 (NS1) antigen on day 4 of illness, followed by documented IgM seroconversion on days 8 and 14.",
+      "quote": "Laboratory tests for the dengue virus on day four of his illness revealed a positive test for the dengue virus antigen, non-structural protein 1 (NS1), and negative immunoglobulin M (IgM). Dengue IgM became positive on day eight and remained positive on day 14."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt highlights the admission breakpoint with profound CPK elevation and myoglobinuria while excluding pathogen spoilers and send-out viral serology. Audit flags verified as NONE."
+}

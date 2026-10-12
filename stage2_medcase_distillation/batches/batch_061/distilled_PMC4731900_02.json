@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4731900_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 39-year-old female presenting with a 3-year history of cough and wheeze previously misdiagnosed as bronchial asthma who develops acute chest tightness and dyspnea. The diagnostic challenge is recognizing that chronic, treatment-refractory 'asthma' accompanied by central wheezing can represent severe cicatricial and necrotizing tracheobronchial stenosis caused by endobronchial infection.\n2. Admission Breakpoint: Admission triage terminates following physical examination and initial chest CT scan revealing multi-level airway stenosis and lung parenchymal opacities, prior to sputum acid-fast smear results, therapeutic intubation, and bronchoscopy.\n3. Differential Distinctions: Bronchial asthma was considered and initially diagnosed due to cough, sputum, and diffuse wheezing, but ruled out when anti-inflammatory agents failed to relieve symptoms and CT revealed structural airway narrowing; tracheobronchial malignancy was considered due to right main bronchus occlusion, but excluded by bronchoscopic discovery of caseous necrosis and negative cytology. The diagnosis pivots on sputum smear positivity for acid-fast bacilli and bronchoscopy confirming caseous tracheobronchial stenosis.",
+  "case_prompt": "A 39-year-old woman is admitted to the hospital with a 3-year history of cough and expectoration, and approximately 1 month of worsening chest tightness and shortness of breath. Three years prior, she had been admitted to a local facility with cough and expectoration of white phlegm without fever, night sweats, fatigue, or chest pain, where she had been treated with empiric anti-inflammatory medications without clinical improvement.\n\nOn physical examination, the patient is alert with a respiratory rate of 26 breaths per minute, pulse of 100 beats per minute, and blood pressure of 132/80 mmHg. Auscultation of the chest reveals audible tracheal wheezing, along with rough breath sounds and bilateral inspiratory and expiratory wheezes throughout both lungs. Abdominal and general physical examinations are normal.\n\nChest computed tomography (CT) reveals bilateral pulmonary parenchymal infiltrates, predominantly affecting the middle and lower lobes, accompanied by narrowing of the lower trachea, right main bronchus stenosis, and right-sided pleural thickening.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchial asthma",
+      "rule_out_reason": "Chronic productive cough and diffuse wheezing initially led to a diagnosis of bronchial asthma, but the failure of anti-inflammatory therapies and presence of structural central airway narrowing on CT refuted this diagnosis.",
+      "quote": "The local hospital diagnosis was bronchial asthma. She was given anti-inflammatory drugs, but her symptoms persisted."
+    },
+    {
+      "candidate": "Bronchogenic carcinoma / Malignant central airway obstruction",
+      "rule_out_reason": "Subacute severe right main bronchus stenosis with lobar consolidation raised suspicion for primary endobronchial malignancy, but bronchoscopic examination demonstrated caseous necrotizing material rather than a neoplastic mass.",
+      "quote": "However, the right main bronchial stenosis was observed with caseous necrotic material attached to the bronchial orifice and could not permit the passage of the bronchoscopy (BF BC-260, Olympus Corporation, Tokyo, Japan)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microbiological examination of sputum demonstrating positive acid-fast bacilli, alongside bronchoscopic findings of lower tracheal stenosis and right main bronchial occlusion with adherent caseous necrotic material, confirmed active tracheobronchial and pulmonary tuberculosis.",
+      "quote": "Sputum smear for acid-fast bacilli was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt describes presentation and admission CT without revealing TB/AFB spoilers; differential cites direct verbatim quotes; audit passed."
+}

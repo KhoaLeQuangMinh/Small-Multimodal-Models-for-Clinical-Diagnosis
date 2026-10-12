@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6151194_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old healthcare worker from an endemic country presents with acute peritonitis, high fevers, and a massive 22 x 13 cm multiseptated abdominopelvic cystic mass with elevated tumor markers (CA-125, CA-19.9). The presentation closely mimics advanced ovarian malignancy or complicated acute omental infarction rather than an infectious granulomatous peritonitis.\n2. Admission Breakpoint: Concludes after initial presentation, resuscitation, triage laboratory testing, and the first contrast-enhanced CT of the abdomen/pelvis revealing the multiseptated ovarian mass and omental hazing, strictly before readmission rupture, surgical exploration, histopathology, and mycobacterial cultures.\n3. Differential Distinctions: Advanced ovarian carcinoma / peritoneal carcinomatosis is suggested by age, large multiseptated pelvic mass, and elevated CA-125, but refuted by benign histology of the mucinous cystadenoma and presence of caseating granulomas. Acute omental infarction is suggested by localized omental fat stranding, but intraoperative findings demonstrate diffuse tuberculous inflammatory deposits rather than ischemic necrosis. Intraperitoneal tuberculosis is confirmed by caseous necrosis across peritoneal viscera and isolation of Mycobacterium tuberculosis from peritoneal fluid.",
+  "case_prompt": "A 52-year-old postmenopausal female of Filipino origin presents to the emergency department with a 3-day history of progressive abdominal bloating, vomiting, and high fevers. She denies dysuria, hematuria, or altered bowel habits. She has no significant past medical or family history and is a non-smoker. She relocated from the Philippines to Australia three years prior and works as a registered nurse in healthcare settings in both nations.\n\nOn physical examination, she appears acutely ill. Vital signs reveal a body temperature of 39.9°C, heart rate of 127 beats per minute, respiratory rate of 35 breaths per minute, and blood pressure within normal limits. Her abdomen is markedly distended. Palpation demonstrates a large, tender mass in the right lower quadrant, accompanied by involuntary guarding and rebound tenderness.\n\nInitial laboratory investigations reveal mildly deranged liver enzymes, a significantly elevated C-reactive protein (CRP), and mild elevations in serum CA-125 and CA-19.9. Computed tomography (CT) scan of the abdomen and pelvis demonstrates a 22 x 13 cm multiseptated cystic mass originating from the ovary, along with adjacent omental fat hazing and stranding.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian cystadenocarcinoma / Peritoneal carcinomatosis",
+      "rule_out_reason": "Although the combination of postmenopausal status, elevated serum CA-125, ascites, and a complex multiseptated 22 x 13 cm cystic ovarian mass was suspicious for ovarian malignancy, surgical resection confirmed a benign neoplasm without malignant epithelial proliferation.",
+      "quote": "Histology of the cyst showed a benign mucinous cystadenoma."
+    },
+    {
+      "candidate": "Primary acute omental infarction",
+      "rule_out_reason": "Although initial CT suggested localized omental necrosis due to prominent focal fat stranding, laparotomy demonstrated diffuse pelvic inflammatory deposits and caseating granulomatous peritonitis rather than isolated vascular thrombosis or ischemic tissue necrosis.",
+      "quote": "CT scan showed a 22 x 13 cm multiseptated cystic lesion almost certainly of ovarian aetiology, as well as omental fat hazing, raising the possibility of an acute omental infarction... Inflammatory changes on the surface of the pelvis, and multiple inflammatory deposits overlying small bowel mesentery were noted."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Intraperitoneal Tuberculosis",
+      "rule_out_reason": "Histopathologic evaluation of the resected pelvic and peritoneal tissues revealed extensive necrotizing granulomatous inflammation, and microbiological culture of the peritoneal fluid yielded Mycobacterium tuberculosis, confirming peritoneal tuberculosis in a patient with a coexisting benign cystadenoma.",
+      "quote": "The uterus, ovarian cyst, omentum, and appendix contained florid granulomatous inflammation and caseous necrosis. Peritoneal fluid cultured Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-yield teaching case illustrating peritoneal tuberculosis masquerading as advanced ovarian malignancy and acute omental infarction in an immigrant healthcare worker. The prompt rigorously cuts off before surgical exploration and microbiological confirmation."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9904801_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presents with subacute cerebellar ataxia (wide-based gait, tandem abnormality, bilateral dysmetria, and slow diadochokinesia) and positive anti-thyroid peroxidase antibodies, initially pointing toward autoimmune encephalopathies (e.g., Hashimoto's encephalopathy) or paraneoplastic cerebellar degeneration. Normal brain MRI and negative CSF cultures initially obscure central nervous system involvement by occult pulmonary tuberculosis.\n2. Admission Breakpoint: Clinical evaluation following physical examination, vital signs, initial hematologic testing (WBC 4,600/µL, Hb 12.6 g/dL, platelets 238,000/µL, ESR 6.0 mm/hr, normal B-vitamins/folate, negative syphilis antibodies), and baseline chest radiograph showing scattered left lower lung calcifications, prior to paraneoplastic/autoantibody serologies, lumbar puncture, CT/PET imaging, and bronchoscopy.\n3. Differential Distinctions: Hashimoto's encephalopathy is considered due to elevated anti-TPO antibodies (125 IU/mL), but ruled out by negative anti-NAE antibodies and normal thyroid function. Paraneoplastic cerebellar syndrome is excluded by negative onconeural antibodies (EUROLINE 12 Ag) and absence of malignancy on multi-modality screening. Occult pulmonary tuberculosis with secondary CNS ataxia is confirmed via bronchoscopic lavage culture.",
+  "case_prompt": "A patient presents for neurological evaluation with progressive unsteadiness and gait difficulty. On admission, the Glasgow Coma Scale score is 15 (E4V5M6). Vital signs reveal a blood pressure of 102/56 mmHg, heart rate of 66 beats per minute, respiratory rate of 12 breaths per minute, body temperature of 37.2°C, and oxygen saturation of 98% on ambient air. Body mass index is 19.2. Cardiopulmonary examination is normal with clear lungs, normal heart sounds, and no murmurs or gallops. The abdomen is soft and non-tender without organomegaly. Neurological examination of the cranial nerves and motor system is normal. Sensory examination reveals intact pinprick, temperature, proprioception, and vibration across all extremities; Babinski and Romberg tests are negative. However, gait examination reveals a wide-based gait with tandem gait abnormality, bilateral dysmetria on finger-nose-finger testing, and bilateral slowness of diadochokinesis. Initial laboratory testing shows a white blood cell count of 4,600/µL with 2,760/µL neutrophils, hemoglobin of 12.6 g/dL, platelet count of 238,000/µL, and erythrocyte sedimentation rate (ESR) of 6.0 mm/hr. Serum levels of vitamins B1, B12, E, and folic acid are normal. Syphilis antibody screening is negative. Routine chest radiography shows scattered calcified lesions in the left lower lung without active consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hashimoto's encephalopathy",
+      "rule_out_reason": "Considered due to the combination of subacute cerebellar ataxia and positive serum anti-thyroid peroxidase antibodies (125 IU/mL), but excluded by normal thyroid function tests and a negative serum anti-NAE antibody test.",
+      "quote": "We considered Hashimoto's encephalopathy as a differential diagnosis, but the serum anti-NH2 terminal of alpha-enolase (i.e., NAE) antibody test was negative."
+    },
+    {
+      "candidate": "Paraneoplastic cerebellar degeneration / Paraneoplastic neurological syndromes",
+      "rule_out_reason": "Considered because of subacute progressive cerebellar ataxia and low BMI, but ruled out by negative serum paraneoplastic neuronal antibodies (EUROLINE 12 Ag) and exhaustive endoscopic and cross-sectional imaging demonstrating no occult malignancy.",
+      "quote": "tests performed with serum using the EUROLINE Paraneoplastic Neurological Syndromes 12 Ag (Euroimmun, Lubeck, Germany) for tumor-associated syndromes were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite normal head CT and brain MRI scans, contrast-enhanced CT showed dilated bronchioles with apical lesions, FDG-PET demonstrated intense uptake in hilar lymph nodes and the left lung, and subsequent bronchoscopy with bronchoalveolar lavage fluid testing confirmed Mycobacterium tuberculosis by smear and culture, establishing central nervous system tuberculosis manifested as cerebellar ataxia.",
+      "quote": "A subsequent bronchoscopy exam led to a pulmonary TB diagnosis with Mycobacterium tuberculosis by smear and culture testing of bronchoalveolar lavage fluid."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at admission triage before specialized autoantibody panels, CSF analysis, and bronchoscopy. Zero pathogen or disease leaks. Direct verbatim quotes validated."
+}

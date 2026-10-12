@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5113911_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old woman presents with acute-to-subacute unilateral visual loss, ocular pain, and an amelanotic choroidal mass with serous retinal detachment without systemic signs or pulmonary symptoms. The diagnostic tension lies in differentiating an isolated granulomatous infection (choroidal tuberculoma) from choroidal neoplasia (amelanotic melanoma or metastasis) or non-caseating inflammatory conditions (sarcoidosis, toxoplasmosis) in an otherwise healthy young adult with a normal chest radiograph.\n2. Admission Breakpoint: Clinical triage ends after initial ophthalmologic evaluation (visual acuity, funduscopy), ocular optical coherence tomography (OCT), and admission chest radiography, strictly prior to send-out serologies, ACE levels, and mycobacterial immunodiagnostic testing (QuantiFERON-TB and PPD).\n3. Differential Distinctions: Choroidal neoplasia is less likely given young age and presence of ocular pain, but cannot be ruled out without confirming an infectious etiology; sarcoidosis is excluded by a normal ACE titer and absence of systemic disease; ocular toxoplasmosis and HIV retinopathy are ruled out by negative serologies; isolated choroidal tuberculoma is confirmed by positive QuantiFERON-TB, 13 mm PPD induration, and therapeutic response to antituberculosis therapy.",
+  "case_prompt": "A 27-year-old woman presented to the eye emergency department with a 10-day history of decreased vision and pain in her right eye. She had no significant past medical history and denied fever, weight loss, night sweats, cough, or other systemic complaints.\n\nOn physical examination, vital signs were normal. Ophthalmologic evaluation revealed a Snellen visual acuity of 20/100 in the right eye and 20/20 in the left eye. Dilated fundus examination of the right eye demonstrated an elevated nonpigmented mass measuring approximately 2.5 \u00d7 2.5 disc diameters located superior and temporal to the optic disc, associated with a flat retinal detachment in the macular area. Optical coherence tomography (OCT) of the right eye revealed an elevated choroidal mass (892 \u00b5m diameter) associated with a serous retinal detachment. Examination of the left eye was normal. Initial plain chest radiography showed no infiltrates, cavitary lesions, or lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choroidal neoplasia (amelanotic melanoma or metastasis)",
+      "rule_out_reason": "Considered because of the elevated choroidal mass and serous retinal detachment; less likely given the patient's young age and the presence of ocular pain, but could not be ruled out until an infectious etiology was proven.",
+      "quote": "Malignancy was less likely considering the age of the patient and the presence of ocular pain, however could not be ruled out in the absence of another confirmed etiology."
+    },
+    {
+      "candidate": "Ocular sarcoidosis",
+      "rule_out_reason": "Considered among non-infectious inflammatory granulomatous causes of choroidal masses; ruled out by a negative angiotensin-converting enzyme titer and normal systemic assessment.",
+      "quote": "Blood workup showed a negative angiotensin-converting enzyme titer and negative toxoplasma and HIV serologies."
+    },
+    {
+      "candidate": "Ocular toxoplasmosis or HIV-associated ocular disease",
+      "rule_out_reason": "Considered among infectious etiologies for posterior segment granulomatous masses; excluded by negative serologic titers.",
+      "quote": "Blood workup showed a negative angiotensin-converting enzyme titer and negative toxoplasma and HIV serologies."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Isolated choroidal tuberculoma",
+      "rule_out_reason": "Epidemiologic assessment prompted targeted mycobacterial testing, revealing a positive QuantiFERON-TB assay and a 13 mm induration on tuberculin skin testing with a normal chest radiograph and no systemic involvement, confirming isolated choroidal tuberculoma that responded to antituberculosis therapy.",
+      "quote": "The patient was considered to be at a high risk of contracting tuberculosis (TB) and had an unclear history of bacilli Calmette-Guerin vaccination (BCG) vaccination; therefore, she underwent both a QuantiFERON-TB test and a purified protein derivative skin testing. The former was positive and the latter revealed an induration of 13 mm. However, chest X-ray (CXR) was normal."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint strictly excludes send-out serology and QuantiFERON/PPD. Quotes verified verbatim against source."
+}

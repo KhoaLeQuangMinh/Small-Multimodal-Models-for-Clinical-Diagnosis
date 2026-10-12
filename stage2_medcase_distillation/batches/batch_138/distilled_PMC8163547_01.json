@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8163547_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 62-year-old postmenopausal woman presents with chronic pelvic pain and two distinct pelvic masses: a 10-cm cystic adnexal mass and a 4-cm fundal uterine lesion. Both pelvic ultrasonography and pelvic MRI characterize the fundal mass as a pedunculated subserous uterine leiomyoma (FIGO 7) and the ovarian lesion as a cystadenoma, leading to a preoperative presumption of benign gynecologic neoplasia or malignancy, while concealing an exceptionally rare primary uterine hydatid cyst.\n2. Admission Breakpoint: The breakpoint is set at the completion of non-invasive triage and pelvic imaging (vaginal exam, pelvic ultrasound, and pelvic MRI), immediately prior to exploratory laparotomy, total hysterectomy with bilateral salpingo-oophorectomy, and anatomopathological examination.\n3. Differential Distinctions: Pedunculated subserous uterine leiomyoma was strongly favored based on T2 hypointensity and fundal uterine origin; gynecologic malignancy was suspected intraoperatively given patient age and bilateral pelvic masses; surgical exploration and pathology established benign ovarian serous cystadenomas coexisting with a calcified subserous uterine hydatid cyst.",
+  "case_prompt": "A 62-year-old woman, postmenopausal for 12 years and multiparous (G7P5A2) with hypertension and no prior history of abdominal surgery, presents with chronic pelvic pain persisting for 8 months.\n\nOn physical examination, the abdomen is soft and non-tender without palpable masses. Vaginal speculum examination reveals a macroscopically healthy cervix with a 1-cm cervical polyp. Bimanual vaginal examination demonstrates a small uterus and a palpable, renitent left latero-uterine mass separated from the uterus by a distinct groove.\n\nPelvic ultrasonography reveals a 4-cm uterine-fundal hypoechoic mass suggestive of a uterine fibroid, and a 10-cm left ovarian cystic lesion with purely anechoic content. Subsequent pelvic magnetic resonance imaging (MRI) demonstrates a 9-cm purely cystic mass of the left ovary (classified as O-RADS 2, evocative of a serous cystadenoma) and a pedunculated subserous mass arising from the anterior wall of the uterine fundus measuring 30 × 27 × 40 mm (FIGO type 7, demonstrating frank T2 hyposignal without diffusion restriction).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Subserous uterine leiomyoma (FIGO type 7 fibroid)",
+      "rule_out_reason": "Both pelvic ultrasound and MRI initially diagnosed the 4-cm fundal uterine mass as a typical subserous leiomyoma due to its well-demarcated appearance and frank T2 hyposignal, but surgical exploration revealed a cystic lesion and histology confirmed parasitic hydatid membranes.",
+      "quote": "A pelvic ultrasound revealed a 4 cm uterine-fundal hypoechoic mass evoking a uterine fibroid."
+    },
+    {
+      "candidate": "Ovarian or uterine gynecologic malignancy",
+      "rule_out_reason": "Given the patient's postmenopausal age, chronic pelvic pain, and large concurrent pelvic masses, malignant pelvic neoplasia was strongly suspected intraoperatively, but pathology confirmed benign ovarian serous cystadenomas and a calcified uterine parasitic cyst without malignant cellular proliferation.",
+      "quote": "Given the patient's age, the diagnosis of a malignant lesion has been evocated, so a total hysterectomy with bilateral adnexectomy was performed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the resected surgical specimen confirmed a primary subserous calcified hydatid cyst of the uterine fundus occurring in association with ovarian serous cystadenomas, with postoperative chest radiography and abdominal ultrasound confirming absence of other hydatid localizations.",
+      "quote": "Anatomopathological examination concluded two ovarian serous cystadenomas measuring 12 cm on the left and 1.7 cm on the right and a subserous calcified hydatid cyst of the uterine fundus with a benign polyp of the endocervix"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative terminates cleanly before surgery and pathology. Quotes verified verbatim."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12715675_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 45-year-old previously healthy woman presents with sudden, painless unilateral visual blurring, foveal disruption, and macular edema one week after an acute febrile episode with severe arthralgias and myalgias. The clinical challenge lies in distinguishing post-viral/arboviral maculopathy from primary infectious uveitides (herpetic, syphilitic, retroviral) or systemic autoimmune retinal vasculitis, particularly given profound thrombocytopenia (54,000/uL).\n2. Admission Breakpoint: The return of confirmatory arboviral serology (NS1 antigen) and standard uveitis panel results, followed by close observational management without steroids.\n3. Differential Distinctions:\n- Infectious Uveitis / Chorioretinitis (HSV, VZV, EBV, HIV, Syphilis): Herpetic and treponemal retinitis cause focal chorioretinal lesions, exudates, and visual loss, but a complete send-out infectious uveitis workup was entirely unrevealing.\n- Systemic Autoimmune Retinal Vasculitis (SLE, Behcet disease): Autoimmune vasculitides can cause perivasculitis, soft exudates, and macular edema in young-to-middle-aged women, but rheumatological serologies were negative, and lesions spontaneously resolved within days without immunosuppression.\n- Primary Idiopathic Central Serous Chorioretinopathy (CSCR): CSCR produces subretinal fluid and visual distortion, but does not present with foveal outer retinal disruption, deep capillary flow deficit, retinal hemorrhages, soft exudates, or marked thrombocytopenia following a high febrile illness.",
+  "case_prompt": "A 45-year-old previously healthy woman presented to the emergency department reporting sudden, painless blurring of vision in her right eye noted immediately upon awakening that morning. She denied eye pain, redness, photophobia, or ocular discharge. Review of systems revealed that 8 days prior to presentation, she developed severe diffuse joint and muscle pains, followed the next day by high fever and vomiting.\n\nAt ophthalmological evaluation, best-corrected visual acuity was 20/40 in the right eye (OD) and 20/20 in the left eye (OS). Slit-lamp biomicroscopy demonstrated quiet anterior chambers bilaterally with no evidence of inflammatory cells or flare; intraocular pressure was normal in both eyes. Dilated fundoscopic examination of the right eye revealed a discrete, well-circumscribed, round yellow-orange lesion localized in the foveal region, accompanied by macular edema, retinal hemorrhages, soft cotton-wool exudates, and adjacent perivasculitis. Fundoscopy of the left eye revealed discrete dot-blot retinal hemorrhages.\n\nFundus autofluorescence (FAF) demonstrated focal hypoautofluorescence corresponding to areas of retinal hemorrhage, while fluorescein angiography was unremarkable. Optical coherence tomography (OCT) of the right eye demonstrated disruption and elevation of the foveal outer photoreceptors and retinal pigment epithelium, intraretinal cystic spaces, and subretinal fluid accumulation, with a central macular thickness of 414 micrometers; the left eye OCT was unremarkable. Optical coherence tomography angiography (OCT-A) of the right macula demonstrated a deep capillary flow deficit. Complete blood count revealed a hemoglobin level of 13 g/dL, hematocrit of 41%, and severe thrombocytopenia with a platelet count of 54,000 /microL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral or Treponemal Infectious Uveitis / Retinitis (HSV, VZV, EBV, HIV, Syphilis)",
+      "rule_out_reason": "Considered due to acute unilateral focal foveal lesion, outer retinal disruption, perivasculitis, and subretinal fluid following a systemic febrile illness, but excluded by negative comprehensive serological panels.",
+      "quote": "A complete uveitis panel was also requested, as the institution protocol demands - which includes herpes simplex, varicella zoster, and Epstein-Barr virus, HIV, VDRL, FTA-ABS, COVID-19 and rheumatological tests - with normal results."
+    },
+    {
+      "candidate": "Autoimmune / Rheumatologic Retinal Vasculitis",
+      "rule_out_reason": "Considered given retinal perivasculitis, soft exudates, and severe systemic arthralgias and myalgias, but ruled out by negative rheumatologic screening and spontaneous rapid resolution without immunosuppressive treatment.",
+      "quote": "and rheumatological tests - with normal results. At this moment, no treatment was prescribed, and we have decided only to follow the patient closely."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The temporal sequence of acute high fever, vomiting, and severe myalgias/arthralgias followed 8 days later by thrombocytopenia (54,000 platelets/microL) and characteristic foveal neuroretinopathy, confirmed by positive NS1 antigen serology.",
+      "quote": "At this time, she was evaluated, and the diagnosis of dengue fever (DF) was done and confirmed by serology (NS1 antigen)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded outpatient serologic confirmation from presentation. Zero spoilers, full quote fidelity."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5748105_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A 47-year-old surgeon in northern Togo presents with acute febrile illness and a positive malaria smear, failing artemisinin combination therapy and rapidly developing acute abdomen, profound cytopenias, and fatal hemorrhagic diathesis. The tension centers on differentiating refractory severe malaria or an acute surgical abdomen from viral hemorrhagic fever (Lassa fever), where unnecessary surgical intervention accelerates severe bleeding and nosocomial transmission.\n2. Admission Breakpoint: The breakpoint occurs on day 6 of illness when the patient is hospitalized with high fever, sore throat, hearing loss, and acute abdominal pain with severe bicytopenia, immediately before exploratory laparotomy, aeromedical evacuation, or postmortem PCR testing.\n3. Differential Distinctions: Severe falciparum malaria presents with fever, cytopenias, and abdominal pain in endemic West Africa, but fails to respond to oral artemether/lumefantrine and typically does not feature exudative pharyngitis, acute sensorineural hearing loss, and diffuse capillary leak. Acute surgical abdomen (e.g., perforated viscus or appendicitis) can cause severe epigastric pain and shock, but exploratory laparotomy in VHF reveals no surgical pathology and precipitates life-threatening operative wound hemorrhage.",
+  "case_prompt": "A 47-year-old male surgeon working at a hospital in northern Togo presented with fever. He had documented prior vaccination against yellow fever. An initial peripheral thick blood smear was reported positive for intraerythrocytic blood parasites, for which he was treated with a standard six-day course of artemether/lumefantrine without clinical improvement. Because of persistent high-grade fever and progressive generalized weakness, he was hospitalized for inpatient management. By day 6 after his initial consultation, he complained of persistent fever, rigors, malaise, severe headache, pharyngitis, acute hypoacusis, and diffuse abdominal pain that progressively localized and worsened in the epigastric region. Initial hospital laboratory evaluation revealed marked leukopenia with a white blood cell count of 1,100/mm\u00b3 and thrombocytopenia with a platelet count of 65,000/mm\u00b3.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe falciparum malaria",
+      "rule_out_reason": "Initially considered due to high endemicity and an initial positive blood smear, but the patient experienced progressive clinical deterioration without any therapeutic response to a full course of artemether/lumefantrine.",
+      "quote": "The thick smear performed was positive for malaria and received artemether/lumefantrine without any favorable clinical course after six days."
+    },
+    {
+      "candidate": "Acute surgical abdomen (perforated peptic ulcer or acute peritonitis)",
+      "rule_out_reason": "Considered due to intractable, severe epigastric and diffuse abdominal pain in the setting of febrile systemic illness, prompting an emergency laparotomy which revealed no surgical perforation and caused catastrophic operative wound bleeding.",
+      "quote": "Based on syndromic abdominal pain with febrile illness, an exploratory laparotomy was conducted, which was followed by a bleeding on the operative wound."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the confluence of acute sensorineural hearing impairment (hypoacusis), severe pharyngitis, profound leukopenia and thrombocytopenia, and lethal coagulopathy in a healthcare worker in rural West Africa, confirmed by molecular testing.",
+      "quote": "A postmortem diagnosis of Lassa fever was confirmed by polymerase chain reaction (PCR) in Germany."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Rigorous distillation following NEJM CPC format. Breakpoint strictly excludes surgical intervention, wound hemorrhage, evacuation, and PCR confirmation. Zero pathogen leaks. Quotes confirmed verbatim from source text."
+}

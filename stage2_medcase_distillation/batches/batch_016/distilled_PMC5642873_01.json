@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5642873_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 56-year-old Syrian immigrant presenting with two months of right upper quadrant abdominal pain and fever, who developed acute dyspnea and right lower lung consolidation, leading to an initial misdiagnosis of community-acquired bacterial pneumonia. The diagnostic challenge is recognizing that the acute respiratory failure was caused by transdiaphragmatic rupture of a massive hepatic cyst into the pleural space rather than primary pulmonary disease.\n2. Admission Breakpoint: Admission clinical presentation concludes after evaluation for fever, dyspnea, RUQ abdominal pain, initial labs (WBC 13,000/mm3, CRP 232 mg/dL), abdominal imaging (large cystic lesion in liver segments 6-7), and follow-up presentation with acute dyspnea and right basal consolidation on chest radiograph with vitals (O2 saturation 97%, BP 105/65 mmHg, HR 80 bpm, no crackles/rhonchi). It stops immediately before exploratory laparotomy, thoracotomy, and histopathological demonstration of laminar/cuticular membranes.\n3. Differential Distinctions: Community-acquired bacterial pneumonia was the working diagnosis based on acute dyspnea and basal consolidation, but failed to improve on antibiotics and deteriorated due to diaphragmatic breach. Pyogenic liver abscess was considered due to prolonged RUQ pain and high inflammatory markers, but excluded by non-purulent cystic architecture with detached laminar membranes. Echinococcosis (hydatid cyst) was confirmed intraoperatively and pathologically by necrotic cuticular membranes and secondary daughter cysts extending transdiaphragmatically.",
+  "case_prompt": "A 56-year-old Syrian male immigrant presented with a two-month history of fever, shortness of breath, and right upper quadrant abdominal pain. His medical history was unremarkable for chronic medical conditions.\n\nOn physical examination, the abdomen was soft without muscular guarding or rebound tenderness. Initial laboratory studies revealed a white blood cell count of 13,000/mm^3 and a C-reactive protein of 232 mg/dL. Abdominal computed tomography demonstrated a large cystic lesion measuring 102 mm x 92 mm in liver segments 6 and 7. Abdominal ultrasonography confirmed a complex cystic lesion measuring 106 mm x 70 mm in the right hepatic lobe.\n\nThe patient returned to the emergency department the following day with worsening shortness of breath. Vital signs demonstrated an oxygen saturation of 97% on ambient air, blood pressure of 105/65 mmHg, and heart rate of 80 beats per minute. Pulmonary auscultation revealed no crackles or rhonchi. A posteroanterior chest radiograph revealed dense consolidation in the right basal segment of the lung.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-acquired bacterial pneumonia",
+      "rule_out_reason": "Considered because of acute shortness of breath, elevated inflammatory markers, and a right basal pulmonary consolidation on chest radiography, but ruled out when clinical deterioration continued despite intravenous antibiotic therapy and was traced to transdiaphragmatic rupture of a subcapsular hepatic cyst.",
+      "quote": "However, the patient who admitted to the emergency service the next day with shortness of breath was hospitalized with a diagnosis of pneumonia. In the posteroanterior X-ray examination, a consolidation was observed in the right basal segment of the lung (Figure 3)."
+    },
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "Considered due to the prolonged course of right upper quadrant abdominal pain, fever, and leukocytosis, but excluded by the presence of a well-defined cystic structure with laminar membrane detachment and daughter cysts rather than a liquefactive pyogenic abscess.",
+      "quote": "considering the risk of abscess due to long-term abdominal pain and fever, with metronidazole."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred during surgical exploration, which revealed transdiaphragmatic rupture of a hepatic hydatid cyst with secondary cysts and laminar membrane detachment into the thoracic cavity, confirmed pathologically by necrotic cuticular membranes.",
+      "quote": "A grade 3 hydatid cyst with a solid content and secondary cysts was determined. It was extending to the thoracic cavity through the detachment of the laminar membrane."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly maintained before surgical exploration and histopathology. Zero pathogen names in case_prompt. Direct quotes verified from text."
+}

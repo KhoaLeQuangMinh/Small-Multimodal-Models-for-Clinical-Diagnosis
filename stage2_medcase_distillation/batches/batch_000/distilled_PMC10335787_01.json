@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10335787_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 54-year-old female immunosuppressed liver transplant recipient presents with severe constitutional wasting, anorexia, hematochezia, and an expansive pancreatic head mass with ductal dilatation, almost indistinguishable from unresectable pancreatic adenocarcinoma or periampullary carcinoma. The finding of coexistent peritoneal parasitic eggs adds diagnostic distraction to a presentation caused by atypical isolated extrapulmonary mycobacterial granulomatous inflammation.\n2. Admission Breakpoint: Admission triage ends following initial abdominal imaging and MRCP demonstrating the pancreatic duct dilatation and expansive pancreatic mass, immediately prior to upper endoscopy, exploratory laparotomy, and histopathological/molecular tissue testing.\n3. Differential Distinctions: Pancreatic adenocarcinoma is ruled out by absence of malignant histology in pancreatic core specimens; incidental peritoneal schistosomiasis does not account for the invasive pancreatic head pseudotumor; definitive diagnosis is confirmed by pancreatic tissue GeneXpert molecular testing for Mycobacterium tuberculosis.",
+  "case_prompt": "A 54-year-old female presented to the hospital with progressive abdominal pain, anorexia, postprandial fullness, hematochezia, and an unintentional 20-kg weight loss over the preceding three months. Four years prior to presentation, she had undergone orthotopic liver transplantation and had since been maintained on chronic immunosuppression with tacrolimus and mycophenolate mofetil without graft rejection episodes. She originated from an endemic region for chronic granulomatous infections but recalled no overt exposure history, and had not undergone pre-transplant latent infection screening or targeted chemoprophylaxis.\n\nOn physical examination, the patient appeared chronically ill with notable cachexia. Vital signs were stable. Abdominal examination revealed epigastric fullness and discomfort without peritoneal signs. Triage abdominal computed tomography and subsequent magnetic resonance cholangiopancreatography demonstrated significant dilation of the main pancreatic duct associated with an expansive mass lesion in the head of the pancreas.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic Adenocarcinoma / Periampullary Neoplasm",
+      "rule_out_reason": "Considered the primary provisional diagnosis given the severe 20-kg cachexia, obstructive ductal dilatation, and a 6-cm infiltrative pancreatic mass extending toward the duodenal papilla; however, surgical histopathology demonstrated chronic pancreatitis without malignant cytologic features.",
+      "quote": "Histopathological analysis of the biopsied material revealed mild chronic liver disease with a biliary pattern in the liver injury, chronic atrophic pancreatitis without signs of malignancy in the pancreas lesions"
+    },
+    {
+      "candidate": "Isolated Peritoneal Schistosomiasis",
+      "rule_out_reason": "Identified when incidental viable trematode ova were discovered in peritoneal and jejunal biopsies during laparotomy; however, this coinfection did not explain the bulky necrotizing pancreatic head mass.",
+      "quote": "Due to the finding of the schistosoma, the hospital's infectious disease department was consulted. A joint follow-up was started, and peritoneal schistosomiasis was treated with two doses of praziquantel 20 mg/kg."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat endoscopic biopsy of the persistent pancreatic mass subjected to GeneXpert molecular nucleic acid amplification definitively confirmed rifampicin-susceptible Mycobacterium tuberculosis infection.",
+      "quote": "This sample was sent to GeneXpert testing for Mycobacterium tuberculosis. The exam yielded a positive result and characterized the bacteria as being sensitive to rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict concordance with Stanford MedCaseReasoning methodology. Pancreatic biopsy and molecular assays are excluded from case_prompt. Direct verbatim quotes ground all differential candidates."
+}

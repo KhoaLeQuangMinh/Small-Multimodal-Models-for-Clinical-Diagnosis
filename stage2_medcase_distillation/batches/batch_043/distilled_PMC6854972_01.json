@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6854972_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A pregnant woman recently arriving from West Africa is initially treated for routine urinary and pharyngeal bacterial infections, but rapidly decompensates into distributive shock, marked bicytopenia, and pulmonary edema. The non-specific presentation in pregnancy risks anchoring on obstetric complications (e.g., severe preeclampsia/HELLP syndrome) or pulmonary embolism rather than life-threatening imported tropical parasitosis.\n2. Admission Breakpoint: Re-presentation to the emergency department in shock (hypotensive, tachycardic, tachypneic) with acute drop in hemoglobin to 8.9 g/dL, thrombocytopenia to 39,000/mm³, and elevated D-dimer/LDH, immediately prior to microscopic review of the peripheral blood smear and rapid antigen testing.\n3. Differential Distinctions: Bacterial cystitis and streptococcal pharyngitis with sepsis were initially diagnosed, but cephalexin therapy failed and the patient rapidly deteriorated into hemodynamic shock with rapid hemolysis. Pulmonary embolism was suspected due to acute dyspnea and marked D-dimer elevation (10.04 ug/mL) in pregnancy, but computed tomography angiography (CTA) of the chest was negative. The combination of recent West African residence, acute hemolytic anemia, profound thrombocytopenia, and hyperparasitemia on thick/thin smears distinguishes severe falciparum infection.",
+  "case_prompt": "A 28-year-old pregnant woman at 20 weeks of gestation, who had traveled from Nigeria to the United States nine days prior, presented to the emergency department with a five-day history of fever, diffuse arthralgias, drenching night sweats, vomiting, and severe malaise. Three days earlier, she had been evaluated at an outpatient clinic, diagnosed with cystitis and pharyngitis, and discharged on oral cephalexin; however, her clinical condition progressively deteriorated. On physical examination upon re-presentation, she was afebrile, tachycardic, tachypneic, and hypotensive. Initial laboratory evaluation revealed acute worsening of bicytopenia, with a hemoglobin of 8.9 g/dL (declined from 11.0 g/dL three days prior), a reticulocyte count of 0.5%, and a platelet count of 39,000/mm³ (declined from 101,000/mm³ three days prior). Additional laboratory testing showed a serum lactate dehydrogenase (LDH) of 341 U/L, total bilirubin of 1.2 mg/dL, and a D-dimer of 10.04 µg/mL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial cystitis and streptococcal pharyngitis with septic shock",
+      "rule_out_reason": "Considered initially due to presumed localized urinary and throat symptoms; however, standard antibacterial therapy with cephalexin produced no improvement, and the patient progressed to multi-organ failure and hemodynamic instability.",
+      "quote": "She was initially diagnosed with cystitis and Streptococcus pyogenes throat infection and discharged with cephalexin for treatment. Her symptoms worsened, and she returned three days later to the ED for evaluation."
+    },
+    {
+      "candidate": "Pulmonary embolism",
+      "rule_out_reason": "Considered due to pregnancy status, acute dyspnea, and markedly elevated D-dimer (10.04 µg/mL); however, chest computed tomographic angiography (CTA) was completely negative for thromboembolism.",
+      "quote": "severe dyspnea was thought to be due to pulmonary edema requiring intravenous furosemide diuresis. CTA was negative for pulmonary embolism."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recent travel from West Africa in a pregnant host who stopped chemoprophylaxis, presenting with shock, acute Coombs-negative hemolysis, and profound thrombocytopenia, confirmed by blood smear demonstrating intraerythrocytic ring forms with 9.8% parasitemia and positive rapid antigen testing for Plasmodium falciparum.",
+      "quote": "A thick blood smear was prepared and showed evidence of malaria parasites, and her BiNax NOW  test was positive for P. falciparum. Her thin blood smears (Figure 2) demonstrated a parasitemia calculated at 9.8%"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at ED triage re-evaluation and initial CBC/chemistries prior to smear review. No pathogen or disease names in case prompt. Verbatim quotes match article text."
+}

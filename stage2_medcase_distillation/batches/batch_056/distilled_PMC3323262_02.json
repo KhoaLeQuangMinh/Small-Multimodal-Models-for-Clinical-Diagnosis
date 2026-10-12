@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3323262_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: Acute febrile illness and systemic malaise in a pregnant woman at 28 weeks' gestation returning from an endemic country in East Africa, presenting an immediate clinical imperative to distinguish between pregnancy-related complications (chorioamnionitis, pyelonephritis, HELLP syndrome) and severe gestational parasitemia.\n2. Admission Breakpoint: Obstetric triage evaluation terminates following clinical evaluation and initial emergency venous blood sampling; preparation and microscopic reading of peripheral thin and thick blood smears constitute confirmatory testing.\n3. Differential Distinctions: Intrauterine infection (chorioamnionitis) or maternal pyelonephritis causes acute fever in pregnancy accompanied by uterine tenderness, purulent discharge, or costovertebral angle pain; acute viral syndromes cause self-limiting fever without hemoparasites; Plasmodium falciparum in pregnancy preferentially sequesters in placental vasculature, causing fever, malaise, and parasitemia detectable on blood smears.",
+  "case_prompt": "A 30-year-old woman, 28 weeks pregnant, of Kenyan origin residing in France, presented to the gynecology-obstetrics emergency room at a Parisian area hospital with acute fever and systemic malaise.\n\nShe reported having traveled to Kenya and returning to France 20 days prior to presentation. Routine antenatal screening and emergency laboratory testing verified negative antibody testing for human immunodeficiency virus (HIV) and hepatitis C virus (HCV).\n\nUpon admission, venous blood samples were collected for initial triage and diagnostic evaluation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intrauterine Infection / Chorioamnionitis",
+      "rule_out_reason": "Acute febrile presentation during the late second / early third trimester raises concern for chorioamnionitis or obstetric sepsis, but localized pelvic or uterine signs were absent, and examination of blood smears revealed a specific bloodborne protozoal etiology.",
+      "quote": "The source patient was a 28-weeks' pregnant, 30-year-old woman of Kenyan origin who resided in France; she had visited Kenya and returned to France on June 1, 2001. On June 21, she was admitted to the gynecology-obstetrics emergency room at a greater Paris area hospital with fever and malaise."
+    },
+    {
+      "candidate": "Acute Retroviral Syndrome or Bloodborne Viral Infection",
+      "rule_out_reason": "Maternal systemic viral infections were considered given international travel and fever, but specific serological screening was negative for acute HIV and HCV infection.",
+      "quote": "The physician who interviewed the nurse after the needlestick injury verified that the source patient was HIV- and HCV-antibody negative"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of thin and thick blood smears revealed intraerythrocytic protozoa, confirming Plasmodium falciparum malaria with a parasitemia of 0.05 per 100 erythrocytes, which resolved with oral and intravenous quinine.",
+      "quote": "Blood sampling and thin and thick blood smears were performed by the nurse. The source patient's level of parasitemia was estimated at 0.05 per 100 erythrocytes, and oral quinine was initiated... she was transferred to another tertiary care center where IV quinine was administered for nausea and vomiting... She recovered fully and was discharged on June 27."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation restricted to obstetric emergency presentation and travel history prior to blood film microscopy. Zero leakage of pathogen or antiparasitic therapy in presentation."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8052143_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 54-year-old previously healthy rice farmer from Sri Lanka presenting with fever, rigors, right lower leg laceration, and cellulitis sustained in a muddy paddy field, failing oral and intravenous beta-lactams (cefotaxime and flucloxacillin) and local incision and drainage. The clinical picture mimics acute staphylococcal wound sepsis, osteomyelitis, or tropical leptospirosis, but portends hyperacute progression to multiorgan failure and refractory septic shock characteristic of severe melioidosis.\n2. Admission Breakpoint: At Day 1 tertiary hospital admission following clinical examination, baseline blood tests (WBC 14,000/mm\u00b3, CRP 173 mg/L), and abdominal ultrasound showing right inguinal lymphadenopathy without abscess, immediately prior to secondary clinical deterioration, ICU transfer, and pathogen identification.\n3. Differential Distinctions: Leptospirosis presents with similar wet soil exposure, fever, renal failure, and jaundice, but is excluded by negative serologies (IgM/IgG); MRSA cellulitis/osteomyelitis is excluded by normal plain radiographs and negative MRSA cultures. Melioidosis is established by isolation of Burkholderia pseudomallei from wound and blood cultures.",
+  "case_prompt": "A 54-year-old previously healthy male farmer from the Kurunegala district of Sri Lanka presented to the hospital with a 10-day history of fever with chills and rigors, and a painful right leg wound with associated painful swelling. Twelve days earlier, he had sustained a cut injury from a cutting machine while walking in a paddy field. The wound was painful with purulent discharge, accompanied by a painful right inguinal lymph node, anorexia, and malaise. He was initially treated with oral antibiotics by a general practitioner, followed by a 5-day admission at a local hospital where he received intravenous cefotaxime and intravenous flucloxacillin along with incision and drainage of the wound, but his symptoms progressively worsened.\n\nOn the day of admission to the referral hospital, he was febrile. Physical examination revealed a superficial wound with pus on the anterior aspect of the right leg, 5 cm proximal to the ankle joint, associated with surrounding right-leg cellulitis. A tender right inguinal lymph node was palpated. Cardiovascular, respiratory, and abdominal examination findings were normal.\n\nLaboratory investigations on admission showed a raised white cell count of 14,000 cells/mm\u00b3 (88% neutrophils). The hemoglobin level was 12.4 g/dL, and platelet count was 204,000/mm\u00b3. Peripheral blood picture showed neutrophil leukocytosis with left shift and toxic changes in neutrophils. C-reactive protein (CRP) was 173 mg/L, and the erythrocyte sedimentation rate (ESR) was 18 mm/hour. Serum creatinine and liver function tests were within normal limits. An ultrasound scan of the abdomen showed a large right inguinal lymph node without formation of an abscess.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis",
+      "rule_out_reason": "Primary differential diagnosis considered due to occupational exposure to wet paddy field soil and water with subsequent febrile illness progressing to acute kidney injury and thrombocytopenia; excluded by negative leptospirosis IgM and IgG serological titers.",
+      "quote": "Leptospirosis was one of the differential diagnoses. It is a zoonotic infection in Sri Lanka caused by a spirochetes of the genus Leptospira. Usually, the organism is acquired by direct inoculation on to a past skin abrasion or mucosa from the wet muddy soil such as from the soil in a paddy field. This is characterized by febrile illness, which is complicated with low platelet count, acute kidney injury, pulmonary haemorrhages, and sometimes, acute liver failure. However, our patient's leptospirosis IgM and IgG antibodies levels measured on the 2nd week of the illness were negative."
+    },
+    {
+      "candidate": "Methicillin-Resistant Staphylococcus aureus (MRSA) Wound Sepsis and Osteomyelitis",
+      "rule_out_reason": "Considered as a typical cause of penetrating traumatic wound infection with purulent discharge, refractory cellulitis, and regional lymphadenitis; ruled out by normal radiographs of the right tibia and fibula and lack of MRSA isolation on blood and wound cultures.",
+      "quote": "We also thought of osteomyelitis of the right tibia with associated wound sepsis due to methicillin-resistant Staphylococcus aureus (MRSA). However, blood culture did not show MRSA and X-rays of the right tibia and fibula were normal."
+    },
+    {
+      "candidate": "Dengue Fever",
+      "rule_out_reason": "Considered given high endemicity in Sri Lanka, acute febrile onset, and subsequent rapid decline in platelet count; ruled out by negative dengue antibody testing.",
+      "quote": "His dengue antibodies were negative. Dengue is an endemic mosquito-born viral disease in Sri Lanka."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Wound swab and repeat blood cultures isolated Burkholderia pseudomallei demonstrating characteristic resistance to first-line cephalosporins, penicillins, and aminoglycosides with sensitivity to meropenem and co-trimoxazole, establishing acute severe melioidosis septicemia.",
+      "quote": "On the 2nd day of ICU stay, the positive blood and wound swab culture reports for Burkholderia pseudomallei were available. Then, the diagnosis of melioidosis with evidence of severe sepsis and multiorgan failure was made. Its sensitivity pattern showed resistance to ceftazidime, tigecycline, colistin, and piperacillin/tazobactam. However, it was sensitive to meropenem and trimethoprim/sulfamethoxazole."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to Day 1 tertiary hospital admission triage breakpoint. Strictly excludes the pathogen name and ICU deterioration from the admission presentation. Quotes verified."
+}

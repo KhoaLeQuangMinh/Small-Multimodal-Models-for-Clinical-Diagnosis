@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10962352_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 50-year-old female farmer from rural Brazil presents with chronic facial plaques previously misdiagnosed as granulomatous rosacea, accompanied by fever, weight loss, sialorrhea, ulcerated oral lesions, generalized lymphadenopathy, and confusion. The initial non-specific granuloma on biopsy and sarcoid-like facial distribution delayed recognition of severe multifocal systemic fungal infection involving the central nervous system, adrenals, and gastrointestinal tract.\n2. Admission Breakpoint: The breakpoint occurs following clinical physical examination and baseline clear chest radiography, prior to repeat cutaneous biopsy with specialized fungal stains, double immunodiffusion serology, and systemic contrast CT/brain MRI.\n3. Differential Distinctions: Granulomatous rosacea is confined to the facial skin and does not cause mucosal hemorrhagic ulcers, lymphadenopathy, or constitutional decline. Sarcoidosis presents with sarcoid-like plaques and systemic granulomas, but lacks suppurative microabscesses, fungal yeast structures on silver stain, and characteristic moriform oral ulcers. Syphilis produces mucocutaneous lesions and adenopathy but was ruled out by negative VDRL. Chronic multifocal paracoccidioidomycosis was confirmed by Grocott-Gomori staining of thick-walled fungi in giant cells and positive double immunodiffusion (1:16).",
+  "case_prompt": "A 50-year-old female agricultural worker from a rural area in Esp\u00edrito Santo State, Brazil, presents with progressive cutaneous facial lesions, oral ulcerations, marked weight loss, and altered mental status. Two years earlier, she developed erythematous lesions on her face; a previous skin histological sampling showed a histological granulomatous pattern without identifiable microorganisms, leading to an empirical diagnosis of granulomatous rosacea that was unsuccessfully treated, with sporadic use of prednisone (20 mg/day). Over recent months, she developed daily fevers, an involuntary 8 kg weight loss, profound anorexia, excessive salivation (sialorrhea), oral ulcerations, persistent headaches, and progressive mental confusion. She denies tobacco or alcohol use.\n\nOn physical examination, she appears chronically ill and confused. Dermatological examination reveals sarcoid-like infiltrative erythematous plaques with telangiectasias involving the right malar region, nose, forehead, and right upper eyelid. Oral examination reveals an ulcerated gingival lesion studded with fine hemorrhagic dots. Palpation of lymph node chains demonstrates prominent, non-tender enlargement of cervical, anterior, submandibular, and axillary lymph nodes. There are no signs or symptoms of adrenal insufficiency.\n\nA baseline chest radiograph reveals a normal cardiomediastinal silhouette and normal pulmonary vasculature, with clear lung parenchyma free of focal airspace disease or pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Granulomatous rosacea",
+      "rule_out_reason": "Facial erythematous plaques with telangiectasias and an initial biopsy showing granulomas without microorganisms led to prolonged unsuccessful therapy for rosacea; however, rosacea does not cause mucosal ulceration, generalized lymphadenopathy, or systemic constitutional wasting.",
+      "quote": "The patient was unsuccessfully treated for granulomatous rosacea, and reported sporadic use of prednisone 20 mg/day."
+    },
+    {
+      "candidate": "Cutaneous and systemic sarcoidosis",
+      "rule_out_reason": "Sarcoid-like infiltrative plaques, generalized lymphadenopathy, and granulomatous histology raised suspicion for sarcoidosis, but clear chest radiography, moriform hemorrhagic gingival ulceration, and identification of fungal structures on special stains excluded sarcoidosis.",
+      "quote": "Physical examination revealed sarcoid-like infiltrative erythematous plaques with telangiectasias in the right malar region, nose, forehead, and right upper eyelid, as well as an ulcerated gingival lesion with hemorrhagic dots (Figure 1)."
+    },
+    {
+      "candidate": "Syphilis (secondary / tertiary)",
+      "rule_out_reason": "Disseminated mucocutaneous ulcerations, generalized lymphadenopathy, and neurological impairment were consistent with treponemal disease, but nontreponemal serological testing was negative.",
+      "quote": "The results for Venereal disease research laboratory (VDRL), anti-human immunodeficiency virus (HIV), and anti-human T-cell leukemia virus (HTLV) tests were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A repeat skin biopsy demonstrating suppurative granulomatous dermatitis with Grocott-Gomori silver-positive thick-walled fungi surrounded by Langhans giant cells, together with a reactive double immunodiffusion titer of 1:16 and widespread systemic organ involvement on CT/MRI, established chronic multifocal paracoccidioidomycosis.",
+      "quote": "A new skin biopsy revealed granulomatous and suppurative dermatitis and non-sporulating fungi with thick walls, which were stained black by Grocott-Gomori, and were surrounded by Langhans giant cells (Figure 2)... A double immunodiffusion test using an antigenic preparation for paracoccidioidomycosis showed reactivity up to 1:16."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set after clear chest x-ray. Verbatim quotes verified."
+}

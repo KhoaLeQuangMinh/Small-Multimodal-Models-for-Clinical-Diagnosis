@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10461118_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 5-year-old child presenting with chronic foul-smelling otorrhea, ossicular destruction, and postauricular fistula mimicking typical chronic suppurative otitis media with cholesteatoma, absent pulmonary symptoms or fever.\n2. Admission Breakpoint: Immediately following head CT scan and baseline evaluations establishing the presumptive diagnosis of chronic suppurative otitis media with mastoiditis, prior to mastoidectomy and histopathological examination.\n3. Differential Distinctions: Uncomplicated chronic suppurative otitis media and bacterial mastoiditis (excluded by surgical histopathology revealing caseous necrosis with Langhans giant cells, and extreme induration on tuberculin skin testing).",
+  "case_prompt": "A 5-year-old girl (weight 17 kg, height 104 cm) presents to the otolaryngology clinic with a 3-year history of recurrent yellow-greenish, foul-smelling discharge from her right ear and a 6-month history of painless right postauricular swelling with drainage. Her parents report poor weight gain and an unprovoked 1-kg weight loss over the past 2 months. She has no fever, night sweats, or chronic cough. There is an exposure history to close relatives (father and uncle) treated for chronic infectious respiratory disease, with her uncle having succumbed to illness 6 months prior. Over the preceding 3 years, topical eardrops produced only transient symptom relief lasting approximately one month, with recurrences every 3 to 4 months. Physical examination reveals an afebrile child with a 2 x 3 cm painless, mobile right postauricular mass, hyperemic posterior auricle, mucopurulent otorrhea, and tympanic membrane perforation without facial palsy. Routine blood tests and chest radiography are unremarkable. Audiometry demonstrates moderate right conductive hearing loss (33.75 dB). Contrast-enhanced head CT shows right osteomastoiditis with cholesteatoma destroying the mastoid antrum and auricular bone, alongside a right posterior auricular abscess.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic suppurative otitis media (CSOM) with bacterial cholesteatoma",
+      "rule_out_reason": "CSOM with cholesteatoma was the presumptive clinical diagnosis based on chronic otorrhea, tympanic membrane perforation, and bone erosion on CT; however, repeated courses of standard eardrops yielded only temporary relief and intraoperative biopsy disclosed granulomatous caseous necrosis.",
+      "quote": "The patient was initially diagnosed with chronic otitis media suppurative right auricle with right mastoiditis and right posterior auricle fistulae."
+    },
+    {
+      "candidate": "Pyogenic bacterial mastoiditis and subperiosteal abscess",
+      "rule_out_reason": "Pyogenic mastoiditis typically causes acute otalgia, fever, and leukocytosis; here, the postauricular swelling was indolent, painless, and recurrent over several months despite standard topical antimicrobial treatments.",
+      "quote": "There was also a nonpainful post aural swelling with discharge for the past 6 months. The parents also complained that the patient's weight was decreased about 1 kg in the past 2 months."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of tissue resected during mastoidectomy demonstrated caseous necrosis and Langhans giant cells, corroborated by a strongly positive Mantoux test with 25 mm induration.",
+      "quote": "Histopathology examination was done on the samples obtained from the ear canal. Upon examination, caseous necrosis and datia langhans cells were found. Due to the histopathological findings, the patient was referred to the pediatric pulmonology division. Mantoux test was done, resulting in 25 mm induration"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Presentation cleanly stops at pre-surgical head CT. Contact history anonymized of pathogen spoilers. Zero-spoiler adherence verified."
+}

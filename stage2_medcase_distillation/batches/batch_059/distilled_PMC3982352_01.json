@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3982352_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 48-year-old rural woman presents with intermittent high fever, severe abdominal pain, jaundice, acute kidney injury, thrombocytopenia, and marked elevation of pancreatic enzymes (amylase 2662 U/L, lipase 3822 U/L) in the absence of a characteristic cutaneous rash or eschar. The primary clinical challenge is distinguishing common tropical hepatorenal infections (severe malaria, leptospirosis) or primary pyogenic/biliary pancreatitis from rickettsial vasculitis affecting the pancreas.\n2. Admission Breakpoint: Admission triage concludes after documenting history, vital signs, physical exam, baseline hematology, serum chemistries, urinalysis, and pancreatic enzymes. Confirmatory testing begins with malarial smears, blood cultures, and targeted infectious serologies (Leptospira IgM, Weil-Felix, and Orientia tsutsugamushi IgM).\n3. Differential Distinctions: Severe malaria and leptospirosis mimic the hepatorenal dysfunction, anemia, and thrombocytopenia, but lack severe acute pancreatitis and yield negative peripheral blood parasite exams and non-reactive leptospiral serologies.",
+  "case_prompt": "A 48-year-old female homemaker residing in a rural area presents with intermittent high fever, severe abdominal pain, recurrent vomiting, and markedly reduced urine output.\n\nOn physical examination, her pulse rate is 110 beats/min and blood pressure is 130/80 mmHg; she is afebrile at the time of evaluation. Examination reveals pale conjunctivae and icteric sclerae. No cutaneous rash or focal skin lesions are observed. The abdomen is diffusely tender on palpation, with palpable hepatomegaly.\n\nEmergency laboratory investigations reveal anemia and thrombocytopenia: hemoglobin 8.0 g/dL, platelet count 64,000/μL, and leukocyte count 10,300/μL (78% neutrophils, 18% lymphocytes). The erythrocyte sedimentation rate (ESR) is 88 mm/h. Liver chemistry demonstrates total bilirubin 3.5 mg/dL (direct bilirubin 2.3 mg/dL), AST 47 IU/L, ALT 64 IU/L, and alkaline phosphatase 125 IU/L. Total serum protein is 6.4 g/dL with albumin 3.1 g/dL and globulin 3.3 g/dL. Renal function is severely impaired, with serum urea 174 mg/dL and serum creatinine 4.5 mg/dL. Urinalysis demonstrates 2–4 white blood cells/hpf, 15–20 red blood cells/hpf, and no cellular casts. Serum amylase is elevated at 2,662 U/L and serum lipase is markedly elevated at 3,822 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Malaria",
+      "rule_out_reason": "High intermittent fever, hemolytic anemia, thrombocytopenia, jaundice, and acute kidney injury in a rural patient strongly suggest severe Plasmodium falciparum malaria; however, peripheral parasite testing was negative.",
+      "quote": "The test for malarial parasite by quantitative buffy coat was negative."
+    },
+    {
+      "candidate": "Leptospirosis (Weil's disease)",
+      "rule_out_reason": "The constellation of fever, conjunctival findings, conjugated hyperbilirubinemia, severe acute renal failure, and microscopic hematuria closely mimics leptospirosis, but specific serology was non-reactive.",
+      "quote": "immunoglobulin M (IgM) antibodies to leptospira by enzyme linked immunosorbent assay (ELISA) were negative."
+    },
+    {
+      "candidate": "Bacterial sepsis / Gallstone pancreatitis with sepsis",
+      "rule_out_reason": "Severe abdominal pain with dramatic pancreatic enzyme elevation (amylase 2662 U/L, lipase 3822 U/L) and multiorgan failure suggested acute necrotizing pancreatitis with systemic bacterial sepsis, but prolonged blood cultures yielded no bacterial growth.",
+      "quote": "Blood culture remained sterile after 7 days of incubation"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was achieved with specific serological testing demonstrating high Weil-Felix agglutination titers against OX-K (1:320) and positive IgM antibodies to Orientia tsutsugamushi, establishing scrub typhus presenting with the rare complication of acute pancreatitis and subsequent pseudocyst.",
+      "quote": "Weil-Felix test showed significant titers of OX K - 1:320, OX 19 - 1:80, OX 2 - 1:40 and IgM antibodies to Orientia tsutsugamushi by ELISA were positive."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC3982352_01. Admission breakpoint strictly maintained before malaria QBC, blood cultures, serology, and subsequent ultrasounds. Zero pathogen spoilers in case prompt."
+}

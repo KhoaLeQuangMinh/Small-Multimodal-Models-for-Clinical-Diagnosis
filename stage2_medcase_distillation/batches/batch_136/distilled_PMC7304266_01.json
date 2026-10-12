@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7304266_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: The patient presents in Mexico—an endemic region for New World cutaneous leishmaniasis—with chronic ulcerative cutaneous lesions that flared following cryotherapy. However, his extensive preceding travel across the Middle East (Israel, Turkey) and the Balkans expands the differential to Old World cutaneous pathogens as well as endemic New World leishmaniasis, deep fungal infections (e.g., sporotrichosis), and atypical mycobacterial infections. Establishing the precise geographic origin and etiology is crucial for selecting appropriate antimonial therapy and determining risk for mucosal dissemination.\n2. Admission Breakpoint: The presentation ends at the initial evaluation at the Tropical Medicine Center when the patient presents with persistent ulcerative lesions following cryotherapy failure, immediately prior to microscopic examination of lesion smears, culture, serology, or molecular assays.\n3. Differential Distinctions: Cutaneous leishmaniasis presents as painless or indolent crusted papules that ulcerate with raised, active indurated borders. It must be differentiated from New World Leishmania species (which carry mucosal risks), bacterial pyoderma/ecthyma (acute, painful, purulent), deep fungal infections (sporotrichoid lymphatic spread), and cutaneous tuberculosis/mycobacterioses (verrucous or lupus vulgaris plaques).",
+  "case_prompt": "A 35-year-old male originally from Russia presented to a specialized dermatology service in Mexico City evaluation of two persistent ulcerative skin lesions with active borders.\n\nThe patient reported extensive travel between May and June to several countries in the Middle East (Israel, Turkey), the Balkan region (Armenia, Georgia), and Russia. In August, he noted the onset of red, indurated papules on his face and arm. He sought medical attention in late August in San Cristóbal de las Casas, Chiapas, Mexico, where liquid nitrogen cryotherapy was applied to the lesions. This treatment resulted in only temporary diminution in size, followed shortly by a renewed flare-up and expansion of the lesion edges, prompting referral to a tropical medicine center.\n\nOn physical examination, the patient was afebrile and systemically well. Dermatologic examination revealed two ulcerative cutaneous lesions with a semi-dry appearance and raised, active borders. One lesion was located in the lower left pre-auricular region, and the second was situated on the dorsal aspect of the left forearm. No other systemic abnormalities or lymphadenopathy were noted.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "New World Cutaneous Leishmaniasis (Leishmania mexicana / Leishmania braziliensis)",
+      "rule_out_reason": "Although the patient sought initial medical care in Chiapas, Mexico, an endemic focus of L. mexicana, species-specific molecular amplification and phylogenetic analysis established Old World L. tropica acquired during travel in the Middle East or Balkans rather than local New World transmission.",
+      "quote": "Using the BLAST analysis, these consensus sequences were 99% (538/544 bp), 100% (323/323 bp), and 100% (277/277 bp) identical to the corresponding sequences of the ALAT (MH455379), hsp70 (LN907846), and ITS1 (FN677341), genes respectively, of L. tropica from Israel and Russia."
+    },
+    {
+      "candidate": "Benign Cutaneous Lesion / Non-specific Inflammatory Dermatosis",
+      "rule_out_reason": "The initial assumption of a benign or non-infectious inflammatory process treated empirically with cryotherapy was disproven by the rapid recurrence with active, indurated ulcerative borders.",
+      "quote": "Cryotherapy with liquid nitrogen was applied to the lesions, leading to their temporary reduction in size. After a renewed flare-up of the lesion edges, the patient was attended at the Tropical Medicine Center"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct visualization of intracellular amastigotes within macrophages on Giemsa-stained smears coupled with multilocus PCR and sequencing confirmed Leishmania tropica, which resolved completely following intralesional meglumine antimoniate (glucantime).",
+      "quote": "The Giemsa-stained smears of the lesion showed abundant amastigotes within macrophages... The Maximum Likelihood analysis confirmed that the parasite recovered from the patient corresponded to L. tropica... The patient was treated with intralesional applications of 1 mL of glucantime per lesion at 5-day intervals with outpatient monitoring for 4 weeks. The case resolved favorably"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops before diagnostic smears, cultures, serologies, or PCR are performed. Zero pathogen or disease names mentioned in the prompt. Accurate extraction of candidate differentials and direct verbatim quotes."
+}

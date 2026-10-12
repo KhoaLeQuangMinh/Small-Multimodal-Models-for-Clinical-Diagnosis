@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4407934_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: The patient presents with acute-on-chronic right hypochondrial pain, high-grade fever, jaundice, and severe cholestatic liver function impairment, closely mimicking acute ascending cholangitis secondary to choledocholithiasis or an infected pyogenic liver abscess.\n2. Admission Breakpoint: The admission evaluation stops following initial physical examination and baseline liver function tests demonstrating extreme hyperbilirubinemia (258.4 mg/dL) and transaminitis. Subsequent hydatid serology and CT biliary reconstruction represent confirmatory diagnostic procedures.\n3. Differential Distinctions: Choledocholithiasis causes biliary colic without an associated primary hepatic cystic lesion; pyogenic liver abscess lacks an undulating internal membrane. Echinococcosis with cystobiliary fistulization features internal hydatid membranes obstructing the ductal confluence.",
+  "case_prompt": "A 50-year-old male with no significant past medical or social history presented with high-grade fever and right hypochondrial pain of two weeks' duration. On physical examination, the patient was febrile, visibly jaundiced, and had tender hepatomegaly palpable just below the right costal margin. Laboratory investigations revealed marked liver function derangements: total bilirubin 258.40 mg/dL, aspartate aminotransferase (AST) 420 U/L, alanine aminotransferase (ALT) 415 U/L, gamma-glutamyl transferase (GGT) 328 UI/L, and elevated serum alkaline phosphatase 1181 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choledocholithiasis with acute ascending cholangitis",
+      "rule_out_reason": "The clinical triad of fever, jaundice, and right hypochondrial pain with severe cholestatic jaundice suggested choledocholithiasis complicated by ascending cholangitis, but biliary ductal obstruction was caused by laminated parasitic membranes and cystic debris rather than gallstones.",
+      "quote": "CBD was dilated with internal debris seen inside and Gallbladder was distended showing irregular linear intensities inside."
+    },
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "High-grade fever, tender hepatomegaly, and right upper quadrant pain raised concern for a pyogenic bacterial liver abscess, but imaging and serology demonstrated a defined intraparenchymal cyst communicating directly with the biliary tree rather than a suppurative bacterial cavity.",
+      "quote": "CT scan revealed intraparenchymic hydatid cyst type IV(4th and 5th segments) that opened totally into common bile duct"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serologic testing was positive and abdominal CT demonstrated an intraparenchymal hepatic cyst opening into the common bile duct with intraluminal hydatid membranes, confirmed by surgical evacuation.",
+      "quote": "CT scan revealed intraparenchymic hydatid cyst type IV(4th and 5th segments) that opened totally into common bile duct (Figure 1, Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

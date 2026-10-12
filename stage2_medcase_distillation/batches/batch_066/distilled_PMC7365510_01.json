@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7365510_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 22-year-old male with chronic fever, brownish-red productive cough, tender massive hepatomegaly, and subacute encephalopathy with meningeal signs. Finding a massive ruptured hepatic abscess concurrent with intracranial ring-enhancing lesions creates diagnostic conflict between metastatic pyogenic abscess, disseminated tuberculosis, intracranial malignancy, and extraintestinal amebiasis.\n2. Admission Breakpoint: The admission breakpoint occurs following initial emergency triage, initial laboratory workup, and initial abdominal ultrasound/CT imaging showing the large right hepatic lobe abscess extending into the subdiaphragmatic space, prior to catheter drainage, neuroimaging/neurosurgery, pus cultures, and Entamoeba histolytica serology.\n3. Differential Distinctions: Pyogenic bacterial liver and brain abscess vs. Disseminated tuberculosis vs. Primary intracranial neoplasm or metastatic cancer vs. Extraintestinal amebiasis. Sterile cultures, negative tuberculosis GeneXpert, drainage of anchovy sauce pus, and positive E. histolytica IgG ELISA pinpointed the protozoan etiology.",
+  "case_prompt": "A 22-year-old male presents to the emergency department with high-grade fever and chills of 3 months' duration, accompanied by cough productive of occasional brownish-red sputum for the past month, and worsening headache with progressive drowsiness over the last 2 days. He reports no vomiting, seizures, illicit drug use, or high-risk sexual behavior. On examination, he is disoriented with a Glasgow Coma Scale score of 12/15, febrile to 102°F, tachycardic with normal blood pressure, and has mild pallor. Chest examination reveals decreased breath sounds in the right infrascapular region. Abdominal examination demonstrates marked, tender hepatomegaly extending 15 cm below the right costal margin. Nuchal rigidity and signs of meningeal irritation are present without focal neurological deficits. Initial investigations reveal severe anemia with hemoglobin 6.2 g/dL, marked leukocytosis of 20,900/mm3 (80% neutrophils), serum albumin 2.0 g/dL, and alkaline phosphatase 435 IU/L. Chest radiography shows an elevated right hemidiaphragm with a mild right pleural effusion. Abdominal ultrasound and initial thoracoabdominal CT scan reveal a solitary large abscess of approximately 750 cc volume in the right lobe of the liver with evidence of rupture into the right subdiaphragmatic space.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Abscess (Hepatic and Metastatic Intracranial)",
+      "rule_out_reason": "Bacterial sepsis with metastatic cerebritis was the primary initial consideration given severe leukocytosis and ruptured liver abscess; however, blood and urine cultures were sterile, and drained purulent fluid was negative on Gram stain and bacterial cultures.",
+      "quote": "Microscopy of the pus from the liver and brain did not reveal any amebic trophozoite, Gram stain was negative, and bacterial cultures were sterile."
+    },
+    {
+      "candidate": "Disseminated Tuberculosis",
+      "rule_out_reason": "Prolonged 3-month constitutional symptoms, pulmonary consolidation, and organ space collections raised strong suspicion for tuberculosis, but molecular testing of abscess fluid was negative.",
+      "quote": "negative for amebic trophozoite and malignant cells on microscopic examination as well as negative for Mycobacterium tuberculosis-Gene-Xpert."
+    },
+    {
+      "candidate": "Primary Brain Tumor or Metastatic Malignancy",
+      "rule_out_reason": "Rapidly deteriorating sensorium and ring-enhancing brain lesions raised concern for malignancy, but cytologic examination of liver aspirate showed no malignant cells and neurosurgical exploration revealed organized purulent collections.",
+      "quote": "Keeping the possibility of primary brain tumor versus metastatic abscess, neurosurgical consultation was sought, and the patient was considered for drainage of abscess."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Aspiration yielded classic anchovy sauce-like purulent fluid, and serum ELISA testing for Entamoeba histolytica IgG returned strongly positive, confirming invasive extraintestinal amebiasis with metastatic cerebral lesions.",
+      "quote": "His enzyme-linked immunosorbent assay test for Entamoeba histolytica immunoglobulin G was done with RIDASCREEN kit from r-Biopharm (Darmstadt, Germany), which was reported positive, suggesting amebic etiology of liver and brain abscesses."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission ED presentation with fever, encephalopathy, and large liver abscess on CT. Drainage characteristics, brain MRI, cultures, and ELISA excluded from prompt."
+}

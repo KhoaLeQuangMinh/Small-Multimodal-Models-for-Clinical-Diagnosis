@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6415467_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 38-year-old lactating woman in Bangkok, Thailand presents with acute low-grade fever, pruritic morbilliform exanthem, bilateral non-purulent conjunctivitis, retro-orbital pain, and polyarthralgia shortly after her husband contracted an acute mosquito-borne illness. In this hyperendemic Southeast Asian setting, the presentation overlaps extensively with other prevalent arboviral infections, primarily Dengue and Chikungunya. Furthermore, the risk of perinatal transmission through continuous breastfeeding creates urgent clinical and diagnostic stakes.\n2. Admission Breakpoint: Concludes upon arrival and physical examination at the hospital triage desk on Day 4 of illness, strictly prior to real-time reverse transcription PCR (RT-PCR) testing of serum/urine/breast milk and arboviral ELISA antibody panels.\n3. Differential Distinctions: Dengue virus infection is considered given retro-orbital pain, fever, and rash, but is less likely due to prominent non-purulent conjunctivitis, low-grade rather than high unremitting fever, and absence of hemoconcentration or hemorrhagic diathesis. Chikungunya virus presents with severe, crippling peripheral polyarthralgias, whereas conjunctivitis and mild transient joint pains favor Zika. Zika virus infection is confirmed by real-time RT-PCR detecting viral RNA in maternal serum, urine, and expressed breast milk.",
+  "case_prompt": "A 38-year-old postpartum woman presents to a hospital in Bangkok, Thailand, with a 4-day history of acute febrile illness, diffuse rash, and eye redness. Ten months prior, she delivered a healthy infant via uncomplicated spontaneous vaginal delivery and has been exclusively breastfeeding. Four days prior to presentation, she developed sudden low-grade fever and generalized fatigue. Over the following 24 hours, she noted a pruritic red rash spreading over her trunk and extremities, prominent bilateral retro-orbital pain, and tender neck swelling. Bilateral ocular redness and mild symmetric polyarthralgia involving the small joints of the hands and wrists subsequently developed. Epidemiologically, she resides in an urban area with known mosquito activity; her husband was diagnosed with an acute arboviral infection exactly one week before the onset of her symptoms.\n\nOn physical examination, she is alert and non-toxic. Vital signs reveal a low-grade temperature of 38.1°C, blood pressure of 115/75 mmHg, heart rate of 82 beats/min, and respiratory rate of 18 breaths/min. Cutaneous examination reveals a widespread, diffuse morbilliform erythematous maculopapular rash involving the face, trunk, and upper extremities. Head and neck examination reveals marked bilateral non-purulent conjunctival injection without exudate, along with tender, palpable submandibular lymphadenopathy. Musculoskeletal examination demonstrates mild joint line tenderness in the bilateral wrists and metacarpophalangeal joints without joint effusion or significant limitation in range of motion. Neurological and cardiopulmonary examinations are normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue virus infection",
+      "rule_out_reason": "Although co-circulating in Southeast Asia and causing acute fever, retro-orbital pain, and rash, classic dengue typically presents with high unremitting fever, severe myalgias ('breakbone fever'), and prominent thrombocytopenia or plasma leakage, whereas this patient exhibited low-grade fever, benign self-limited clinical course, and prominent non-purulent conjunctivitis.",
+      "quote": "Initially, she suffered a low-grade fever and fatigue, followed by morbilliform itchy red rash, bilateral orbital pain, and submandibular lymphadenopathy on the following day. Bilateral conjunctivitis and polyarthralgia were evident"
+    },
+    {
+      "candidate": "Chikungunya virus infection",
+      "rule_out_reason": "While chikungunya causes acute febrile exanthems with polyarthralgia, it typically manifests with incapacitating, severe peripheral arthritis, whereas conjunctival hyperemia and mild arthralgia in the setting of spousal exposure favored an alternative flaviviral pathogen.",
+      "quote": "All symptoms were resolved by December 20 (12 days)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Zika Virus Infection",
+      "rule_out_reason": "The diagnosis was definitively confirmed by molecular detection of viral RNA via real-time reverse transcription polymerase chain reaction (RT-PCR) across multiple maternal body fluids including expressed breast milk, serum, and urine.",
+      "quote": "Both urine and serum samples were examined for ZIKV RNA using real-time polymerase chain reaction (RT-PCR)... ZIKV RNA was detected in the breast milk as early as 3 days before her symptoms started (December 5) and remained detectable in the breast milk for 11 days (December 15)... ZIKV RNA was still detected in the mother's urine until December 26"
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission vignette capturing acute Zika virus infection in a breastfeeding mother with household transmission in Bangkok. Zero spoilers in prompt."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9127846_01",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: A 31-year-old immigrant from Afghanistan presents with subacute, progressively destructive monarthritis and a fluctuant volar wrist mass following minor lifting trauma, previously misdiagnosed twice as a ligamentous sprain and primary osteoarthritis. The core challenge is differentiating indolent mycobacterial infection from traumatic injury, degenerative arthropathy, neuropathic joint disease, or aggressive bacterial/fungal septic arthritis in an immunocompetent young patient with normal chest imaging.\n2. Admission Breakpoint: The breakpoint occurs in the emergency department following initial physical examination, triage vital signs, and plain radiography of the right wrist showing carpal osteopenia and bone destruction, immediately prior to contrast MRI, synovial aspiration, cervical spine imaging, interferon-gamma testing, and operative debridement.\n3. Differential Distinctions: Ligamentous sprain is common following lifting trauma but does not produce progressive osteolysis, carpal destruction, or purulent soft-tissue fluctuance. Primary osteoarthritis causes joint pain and degenerative changes but is exceptionally rare in a 31-year-old and does not explain rapid, destructive carpal erosion with cystic changes. Neuropathic (Charcot) arthropathy can cause extensive articular destruction in hyperreflexic patients, but cervical spine MRI rules out a syrinx. Acid-fast bacilli culture and caseating granulomas definitively confirm indolent mycobacterial septic arthritis.\n</think>",
+  "case_prompt": "<case_prompt>\nA 31-year-old right-hand-dominant male originally from Afghanistan who moved to the United States 7 years prior presents to the emergency department with persistent, worsening right wrist pain of greater than 3 months' duration and new-onset fluctuance at the volar wrist. His symptoms initially developed acutely after lifting a heavy box. He was evaluated at an outside emergency department, diagnosed with a right wrist ligamentous sprain, and discharged on anti-inflammatories. One month later, while in Canada, he re-presented to an emergency department for persistent pain, was diagnosed with primary osteoarthritis, and was instructed to continue anti-inflammatory medications. His pain continued to progress, accompanied by the appearance of a soft-tissue swelling.\n\nOn physical examination, an area of fluctuance is appreciated on the volar aspect of the right wrist, which is erythematous with overlying skin desquamation. He holds the wrist guarded and has marked pain with small arcs of motion. He is hyperreflexic in his upper extremities, but otherwise neurovascularly intact throughout the right upper extremity with no other upper motor neuron signs. Plain radiographs of the right wrist reveal diffuse destruction and osteopenia of both proximal and distal carpal rows, accompanied by scattered cystic changes of the distal radius, ulna, and carpal bones.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Wrist Ligamentous Sprain",
+      "rule_out_reason": "Diagnosed initially after acute pain following lifting trauma; ruled out by failure of conservative management, progressive joint pain lasting over three months, soft-tissue fluctuance, and radiographic evidence of severe osseous destruction.",
+      "quote": "The patient was diagnosed with a right wrist ligamentous sprain and discharged from the emergency department with anti-inflammatories per patient report."
+    },
+    {
+      "candidate": "Primary Osteoarthritis",
+      "rule_out_reason": "Diagnosed at a subsequent emergency visit; ruled out because degenerative osteoarthritis is atypical in a young 31-year-old man and cannot account for rapidly destructive carpal osteopenia, cystic erosions, or purulent volar fluctuance.",
+      "quote": "At that visit, he was diagnosed with primary osteoarthritis, instructed to continue anti-inflammatories, follow up as an outpatient with his family provider, and was again discharged from the emergency department."
+    },
+    {
+      "candidate": "Neuropathic (Charcot) Joint secondary to Cervical Syrinx",
+      "rule_out_reason": "Considered because the patient demonstrated marked upper extremity hyperreflexia in the setting of severe articular degeneration; ruled out by cervical spine MRI which demonstrated no syrinx.",
+      "quote": "Supplemental imaging obtained included a chest radiograph for concern of possible pulmonary M. tuberculosis and MRI of the cervical spine to rule out a syrinx which could have caused a neuropathic joint and accounted for his hyperreflexia. The chest radiograph was negative for any acute or indolent pulmonary disease and the MRI of the cervical spine did not show a syrinx."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was surgical debridement revealing purulent synovitis and severe bone erosion, positive interferon-gamma release assay, histologic identification of caseating granulomas, and synovial aspirate cultures growing Mycobacterium tuberculosis.",
+      "quote": "Following the first I&D, the whole blood QuantiFERON TB gold test returned as positive and preliminary pathology showed for caseating granulomas (Figure 5)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Zero spoilers in case_prompt. Verbatim quotes from source text."
+}

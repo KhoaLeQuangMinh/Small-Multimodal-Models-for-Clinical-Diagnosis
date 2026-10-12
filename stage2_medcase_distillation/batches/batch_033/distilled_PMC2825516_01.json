@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2825516_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An elderly, malnourished, bedridden post-stroke patient with a massive grade IV sacral pressure ulcer presents with acute fever and elevated inflammatory markers. While systemic sepsis originating from the infected decubitus ulcer or aspiration pneumonia are the most immediate clinical suspicions, the concurrent presence of apical pulmonary nodular opacities creates diagnostic tension between common acute hospital-acquired infections and reactivated pulmonary tuberculosis in a debilitated host.\n2. Admission Breakpoint: Admission triage concludes following initial physical examination of the sacral decubitus ulcer, baseline inflammatory and nutritional blood tests, and chest radiography/computed tomography, immediately prior to sputum acid-fast smear microscopy and wound culture identification.\n3. Differential Distinctions: Decubitus ulcer-associated bacteremia is ruled out as the primary etiology by the apical pulmonary findings; aspiration pneumonia typically involves dependent lower lung segments rather than apical nodular opacities; active pulmonary tuberculosis is confirmed by sputum acid-fast smear positivity.",
+  "case_prompt": "A 67-year-old Japanese man was admitted to the hospital with a 3-day history of fever. His medical history was significant for a cerebral hemorrhage 18 months prior, complicated by persistent right hemiplegia, dysphagia, and aphasia. For the preceding 6 months, he had been maintained on 600 kcal/day of enteral liquid nutrition administered via a nasogastric tube.\n\nOn physical examination upon admission, his body temperature was 38.0\u00b0C. He was bedridden and severely malnourished. Examination of the sacrum revealed a 16.5 cm x 15.5 cm, grade IV pressure ulcer with tissue breakdown.\n\nInitial laboratory evaluation demonstrated a serum albumin of 2.2 g/dL, hemoglobin of 11.1 g/dL, and C-reactive protein of 12.0 mg/dL. Chest radiography and computed tomography demonstrated parenchymal opacities accompanied by scattered fine nodules in the right apical lung region.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Complicated Sacral Decubitus Ulcer Sepsis",
+      "rule_out_reason": "The patient presented with a severe 16.5 cm x 15.5 cm grade IV sacral decubitus ulcer, high fever, and elevated C-reactive protein, which initially suggested soft tissue infection as the source of sepsis; however, localized decubitus infection fails to account for the focal right apical nodular infiltrates on thoracic imaging.",
+      "quote": "On admission to our hospital, he had a 16.5 cm x 15.5 cm, grade IV pressure ulcer in the sacral region, from which Escherichia coli and methicillin-resistant Staphylococcus were detected"
+    },
+    {
+      "candidate": "Bacterial Aspiration Pneumonia",
+      "rule_out_reason": "Neurological dysphagia following remote cerebral hemorrhage and chronic nasogastric tube feeding placed the patient at high risk for aspiration pneumonia; however, aspiration pneumonia classically involves dependent lung segments rather than the right apex, and microbiological examination of sputum demonstrated acid-fast bacilli.",
+      "quote": "He had developed a cerebral hemorrhage 18 months before this hospitalization, and he had right hemiplegia, dysphagia, and aphasia as sequelae."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum smear microscopy demonstrating acid-fast bacilli in combination with chest radiography and computed tomography revealing right apical parenchymal opacities with scattered fine nodules confirmed active pulmonary tuberculosis.",
+      "quote": "Acid-fast bacilli was found to be smear-positive in his sputum, and a chest radiograph and computed tomography examinations showed parenchymal opacities with scattered fine nodules in his right apical region."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

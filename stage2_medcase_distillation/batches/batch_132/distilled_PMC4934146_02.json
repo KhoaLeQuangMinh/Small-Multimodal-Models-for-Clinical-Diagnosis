@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC4934146_02",
+  "disease": "Leishmaniasis, Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: The patient presents with an explosive cutaneous eruption totaling over 300 disseminated lesions that originated in the lumbar region. This presentation creates severe diagnostic confusion with widespread viral exanthems (such as smallpox or disseminated herpes zoster), generalized fungal infections (paracoccidioidomycosis), and disseminated pyogenic bacterial infections (staphylococcal ecthyma). The presence of co-existing polyparasitism (soil-transmitted helminths) further underlines chronic environmental exposure in an endemic tropical setting.\n2. Admission Breakpoint: The admission triage phase ends after documenting the clinical chronology, the physical examination describing the morphology of the 308 lesions, baseline routine laboratory testing, and prior prolonged hospitalization without resolution. It concludes immediately before ulcer smear microscopy, parasitic monoclonal antibody identification, and stool microscopic parasite identification are revealed.\n3. Differential Distinctions: Smallpox presents with synchronous, deep-seated, centrifugal vesiculopustular lesions accompanied by prostrating systemic toxic illness, whereas these lesions were chronic, polymorphous, and indolent over weeks. Herpes zoster is characterized by dermatomal neuralgia and grouped vesicles, but fails to account for diffuse non-dermatomal hematogenous dissemination of >300 lesions. Paracoccidioidomycosis produces granulomatous, ulcerative mucocutaneous lesions, but ulcer examination fails to show characteristic fungal yeast forms. Disseminated cutaneous leishmaniasis uniquely presents with dozens to hundreds of pleomorphic papules, crusts, and ulcers arising after an initial primary inoculative bite, compounded in this rural patient by asymptomatic intestinal soil-transmitted helminthiases.",
+  "case_prompt": "A 40-year-old woman from Balao Chico, Guayas province, Ecuador—a rural mountainous area located at an altitude of 200 meters above sea level—was transferred to a specialized hospital for evaluation of a generalized, non-healing skin eruption.\n\nHer illness began with a primary lesion on the lumbar region accompanied by marked right lumbar pain. Over the subsequent weeks, additional papular lesions erupted in the right lumbar area, developed into pustular vesicles, and subsequently disseminated across her entire body surface, with a total of 308 discrete lesions counted. She was initially hospitalized at a private facility for 16 days without improvement, and was subsequently admitted to a national hospital in Guayaquil for 15 days without clinical resolution or a definitive diagnosis.\n\nOn physical examination, the patient had widespread cutaneous involvement. Lesions varied in size from 0.5 to 20 mm in diameter and displayed pleomorphic stages: some lesions were erythematous and papular, others formed confluent plaques on the lumbodorsal region, and many were covered with thick, prominent, adherent crusts that bled easily upon separation. When crusts were lifted, excavated ulcers oozing purulent exudate were revealed. Routine triage examinations and baseline workup were initiated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Smallpox",
+      "rule_out_reason": "Considered due to the rapid eruptive appearance of hundreds of generalized vesiculopustular, crusting cutaneous lesions. However, the patient's lesions followed an indolent, weeks-long chronic trajectory without typical systemic toxicity or spontaneous crisis, and showed zero clinical improvement across two separate hospitalizations.",
+      "quote": "She was admitted to the hospital under the suspected diagnosis of smallpox, being registered No. 03739 in August 1979, without a precise diagnosis. As there was no improvement of her lesions on the 15th day of admission, she was taken to receive differential diagnosis at the National Institute of Tropical Medicine and Hygiene, Guayaquil city, Ecuador."
+    },
+    {
+      "candidate": "Paracoccidioidomycosis",
+      "rule_out_reason": "Considered initially as a presumptive diagnosis of generalized cutaneous fungal granulomatosis endemic to South America, but direct microscopic examination of ulcer material showed no characteristic yeast forms.",
+      "quote": "Firstly, the case was considered as paracoccidioidomycosis suggesting a generalized cutaneous form of the disease. But either Paracoccidioides braziliensis or Staphylococcus aureus were not observed in the examination of ulcer materials."
+    },
+    {
+      "candidate": "Staphylococcal skin infection (Ecthyma / Pyoderma)",
+      "rule_out_reason": "Considered because the excavated ulcers were covered with thick crusts and draining purulent fluid; however, microscopic evaluation and culture of ulcer exudate failed to detect Staphylococcus aureus, revealing secondary beta-hemolytic streptococcus instead.",
+      "quote": "The presumptive clinical diagnoses were paracoccidioidomycosis, cutaneous leishmaniasis, or staphylococcal infections... But either Paracoccidioides braziliensis or Staphylococcus aureus were not observed in the examination of ulcer materials. Laboratory examinations revealed positive for betahemolytic streptococcus and sensitive for erythromycin, cephalexin, amikacin, and ampicillin"
+    },
+    {
+      "candidate": "Herpes zoster",
+      "rule_out_reason": "Suspected early in the clinical course because of intense right lumbar pain and localized vesicular eruption; ruled out by widespread non-dermatomal dissemination into 308 ulcerative lesions spanning the entire body.",
+      "quote": "The patient revealed a marked right lumbar pain, and some of the lesions in the body surface suspecting herpes zoster were observed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of multiple skin lesion smear samples confirmed scanty intracellular amastigotes, subsequently identified by species-specific monoclonal antibody serodeme analysis as Leishmania (Viannia) panamensis, alongside stool microscopy demonstrating concurrent triple intestinal infection with Trichuris trichiura, Ascaris lumbricoides, and Ancylostoma duodenale.",
+      "quote": "Several smear samples from diverse regions of the body surface were taken at random. The samples were positive for the Leishmania amastigote, though the number was scanty in smear specimens. The parasite isolated was identified as L. (V.) panamensis (designated as MHOM/EC/95/NA-03) by ELISA species-specific monoclonal antibodies (serodeme) analysis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis, Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to pre-diagnostic findings. Zero pathogen or disease names mentioned in the case prompt. Numbered differential evaluations supported by exact article quotes. The diagnostic pivot reflects the confirmed protozoal amastigote smear and monoclonal antibody identification together with concurrent triple soil-transmitted helminth detection."
+}

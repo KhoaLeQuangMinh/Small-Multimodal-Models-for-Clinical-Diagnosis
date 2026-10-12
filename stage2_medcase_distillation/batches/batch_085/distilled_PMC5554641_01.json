@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5554641_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 31-year-old HIV-infected woman (CD4 155 cells/\u03bcL) presents with 2 months of indolent, painless massive ascites, night sweats, fatigue, jaundice, and elevated transaminases. The clinical tension lies in distinguishing hepatic dysfunction/viral hepatitis from an occult extrapulmonary mycobacterial peritonitis in the setting of normal chest imaging, negative sputum acid-fast smears, and subsequent catastrophic acute peritonitis mimicking spontaneous bacterial peritonitis.\n2. Admission Breakpoint: Admission triage terminates after initial physical exam, baseline blood investigations (CBC, CD4 count, transaminases, creatinine, negative viral hepatitis serologies), chest radiography, and abdominal ultrasonography, strictly prior to diagnostic paracentesis with fluid analysis, PPD skin testing, and surgical laparotomy.\n3. Differential Distinctions: Viral hepatitis or toxic hepatopathy is initially suspected given jaundice, elevated AST/ALT, and right hypochondriac tenderness, but excluded by negative hepatitis serologies and normal liver ultrasound. Spontaneous bacterial peritonitis is suspected when acute peritonism and septic shock develop, but laparotomy reveals transmural jejunal perforations with caseous nodes. Pulmonary disease is ruled out by clear chest radiography and negative sputum smears.",
+  "case_prompt": "A 31-year-old Sub-Saharan African woman with known HIV infection diagnosed 3 years ago, compliant with combination antiretroviral therapy and trimethoprim-sulfamethoxazole prophylaxis, presents to the emergency unit with a 2-month history of slowly progressive abdominal distention, drenching night sweats, and generalized fatigue. She denies fever, abdominal pain, diarrhea, constipation, or weight loss. She attended two prior clinic visits for the same complaints without clinical resolution.\n\nOn physical examination, her body temperature is 37.4\u00b0C, blood pressure is 100/62 mmHg, heart rate is 93 beats/min, and respiratory rate is 19 breaths/min. Mild scleral icterus is present. Cardiovascular and chest examinations are normal. Abdominal examination reveals marked distention with positive fluid thrill and shifting dullness, as well as mild tenderness in the right hypochondrium without muscular guarding or rebound tenderness.\n\nLaboratory tests reveal a normal leukocyte count of 8,900/mm\u00b3, hemoglobin of 10.0 g/dL, and an absolute CD4+ T-lymphocyte count of 155 cells/\u03bcL. Liver biochemistries show an AST of 97 IU/L and ALT of 83 IU/L. Hepatitis B surface antigen (HBsAg) and anti-hepatitis C virus (anti-HCV) tests are negative. Serum creatinine is 1.2 mg/dL. Plain chest radiography demonstrates clear lung fields without infiltrates, and sputum analysis with special microbiological stains is negative. Abdominal ultrasonography reveals massive ascites with normal liver architecture.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral or toxic hepatitis",
+      "rule_out_reason": "Considered due to scleral icterus, elevated transaminases (AST 97 IU/L, ALT 83 IU/L), and right upper quadrant tenderness; ruled out by negative hepatitis B and C serologies and sonographically normal liver architecture.",
+      "quote": "A presumptive diagnosis of peritoneal TB based on a history of HIV infection, night sweats, generalised fatigue and ascites was made with a differential diagnosis of hepatitis based on elevated liver transaminases, jaundice and right hypochondriac tenderness."
+    },
+    {
+      "candidate": "Spontaneous bacterial peritonitis (SBP)",
+      "rule_out_reason": "Considered upon acute readmission with fever, rebound tenderness, and septic shock; refuted at emergency laparotomy which revealed multiple necrotic jejunal perforations and caseous nodal inflammation rather than primary spontaneous bacterial infection.",
+      "quote": "Two days after discharge, she was readmitted in the hospital for generalized abdominal pain with rebound tenderness... A presumptive diagnosis of spontaneous bacterial peritonitis was made."
+    },
+    {
+      "candidate": "Primary pulmonary tuberculosis",
+      "rule_out_reason": "Evaluated during initial diagnostic screening for constitutional symptoms; ruled out by clear lung fields on chest radiography and negative sputum smears.",
+      "quote": "Chest X-ray film did not show any lung field changes and sputum analysis for acid fast bacilli were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ascitic fluid showed lymphocytic exudate with a 14 mm PPD induration, and subsequent emergency laparotomy demonstrated caseous necrosis of the omentum, multiple jejunal perforations, and abundant acid-fast bacilli on Ziehl-Neelsen staining of peritoneal exudate.",
+      "quote": "Emergency laparotomy via a midline incision revealed about 4 liters of purulent peritoneal fluid, multiple enlarged peritoneal nodes measuring about 0.5 to 2mm thick, caseous necrosis of the omentum, and small bowel wall with three distinct sites of jejunal perforations (Figure 1)... A sample of the purulent material was sent for laboratory analysis which showed a high load of acid fast bacilli on Ziehl-Neelsen staining."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5554641_01. Captures advanced peritoneal and intestinal tuberculosis in an HIV-positive woman presenting with massive ascites and later perforated jejunum, cut off at admission triage."
+}

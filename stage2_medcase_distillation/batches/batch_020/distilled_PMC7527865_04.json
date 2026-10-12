@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7527865_04",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: An 8-year-old child presenting with an indolent, hyperemic, and pruritic upper lip lesion of six months' duration that failed empiric topical antiviral and oral antibiotic regimens, challenging clinicians to differentiate an atypical presentation of tegumentary leishmaniasis from common pediatric dermatoses like recurrent herpes simplex or bacterial impetigo/ecthyma.\n2. Admission Breakpoint: The breakpoint occurs when the child presented with worsening of the upper lip lesion after completing unsuccessful courses of acyclovir and cefadroxil, just prior to performing the Montenegro intradermal examination.\n3. Differential Distinctions: Herpes labialis and impetigo are common childhood lip lesions but typically resolve rapidly or respond promptly to acyclovir and beta-lactam antibiotics; persistence for six months with progressive worsening despite appropriate antimicrobials excludes these benign etiologies and points toward endemic protozoal disease.",
+  "case_prompt": "An 8-year-old Caucasian boy from Salvador, Bahia, Brazil, presents for medical evaluation of a persistent, pruritic lesion on his upper lip that has been present for six months. The lesion initially began as a small erythematous patch and has gradually enlarged. Prior to presentation, he was treated empirically with topical acyclovir cream 5% (applied five times daily) for suspected herpes simplex virus infection and oral cefadroxil (50 mg/kg/day) for suspected bacterial soft tissue infection for seven days. Despite strict adherence to both medications, the lesion showed no clinical response and has progressively worsened.\n\nOn physical examination, the child is afebrile and in good general health. Examination of the face reveals a localized, hyperemic, and pruritic lesion on the cutaneous and mucosal aspect of the upper lip without active purulent drainage. General pediatric examination is otherwise unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Herpes simplex virus (HSV) cheilitis / Herpes labialis",
+      "rule_out_reason": "HSV is the most frequent cause of localized recurrent lip lesions in children, but it was ruled out by complete lack of response to dedicated topical antiviral therapy and an atypically chronic 6-month duration.",
+      "quote": "Patient was treated with acyclovir cream, 5%, 5 times/day and cefadroxil (50 mg/kg/day) for seven days, with no response."
+    },
+    {
+      "candidate": "Bacterial pyoderma / Impetigo / Streptococcal-staphylococcal ecthyma",
+      "rule_out_reason": "Secondary bacterial pyoderma or chronic impetigo can cause crusted or hyperemic perioral lesions, but the lesion worsened despite first-line cephalosporin coverage.",
+      "quote": "He presented worsening of the lesion"
+    },
+    {
+      "candidate": "Diagnostic Pivot: American Tegumentary Leishmaniasis",
+      "rule_out_reason": "The diagnosis was confirmed by a positive Montenegro skin test, demonstrating endemic cutaneous leishmaniasis of the upper lip that achieved clinical remission after liposomal amphotericin B following antimonial toxicity.",
+      "quote": "Montenegro intradermal examination was performed ( Figure 2a). The patient was positive for American Tegumentary Leishmaniasis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative cleanly ends before Montenegro test. Distillation highlights failure of empiric antivirals and antibiotics for chronic perioral lesions."
+}

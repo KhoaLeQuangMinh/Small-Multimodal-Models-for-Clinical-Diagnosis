@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12379971_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 30-year-old male with advanced HIV infection (CD4 43 cells/uL, viral load 1.25x10^5 copies/mL) presents with acute severe abdominal pain, fever, periumbilical and right abdominal rebound tenderness, markedly elevated inflammatory markers, and CT evidence of peritonitis. The diagnostic tension lies in distinguishing acute opportunistic fungal peritonitis from acute bacterial peritonitis, perforated viscus, acute pancreatitis, or tuberculous peritonitis.\n2. Admission Breakpoint: Admission workup ends after clinical examination, triage laboratory panels (CBC, CD4 count, viral load, CRP 217.8 mg/L, IL-6 105.3 pg/mL, procalcitonin, normal pancreatic enzymes, negative IGRA), fungal biomarkers (elevated 1,3-beta-D-glucan and galactomannan), and abdominal CT scan showing peritonitis, immediately before pathogen-specific antigen confirmation.\n3. Differential Distinctions: Acute pancreatitis is ruled out by normal serum amylase and lipase. Tuberculous peritonitis is made less likely by a negative interferon-gamma release assay. Markedly elevated fungal biomarkers (beta-D-glucan and galactomannan) in an immunocompromised patient point to an invasive fungal etiology.",
+  "case_prompt": "A 30-year-old male with known HIV infection presented to the hospital with a one-day history of acute abdominal pain and fever, accompanied by nausea and vomiting. He had been prescribed antiretroviral therapy with elvitegravir but had not attended regular follow-up and had previously discontinued an antifungal regimen after one month. He reported a history of unprotected sexual intercourse and had no other underlying chronic medical conditions.\n\nOn physical examination, the patient was febrile and in acute distress. Abdominal examination revealed marked tenderness and rebound tenderness localized around the umbilicus and throughout the right abdomen.\n\nLaboratory workup demonstrated marked systemic inflammation: C-reactive protein was 217.8 mg/L, interleukin-6 was 105.3 pg/mL, serum amyloid A was 332.9 mg/L, and procalcitonin was 0.455 mug/L. Serum amylase and lipase levels were within normal limits. An interferon-gamma release assay was negative. Serological fungal cell-wall biomarkers were markedly elevated, with a 1,3-beta-D-glucan level of 120.984 pg/mL and a galactomannan index of 8.112 S/CO. Immunological studies revealed advanced immunosuppression, with a CD4+ T cell count of 43 x 10^6/L, a CD4+/CD8+ ratio of 0.25, and an HIV RNA viral load of 1.25 x 10^5 copies/mL.\n\nAn urgent abdominal computed tomography (CT) scan demonstrated diffuse intraperitoneal inflammatory changes indicative of active peritonitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pancreatitis / Acute Surgical Abdomen",
+      "rule_out_reason": "Acute peritonitis with severe epigastric/periumbilical pain frequently raises concern for necrotizing pancreatitis or hollow viscus perforation; this was excluded by normal serum amylase and lipase levels and absence of focal pancreatic necrosis on CT.",
+      "quote": "Serum amylase and lipase levels did not increase."
+    },
+    {
+      "candidate": "Tuberculous Peritonitis",
+      "rule_out_reason": "Disseminated mycobacterial peritonitis is a major cause of subacute peritonitis and ascites in advanced HIV, but the interferon-gamma release assay was negative and serological markers strongly pointed toward an invasive fungal etiology.",
+      "quote": "Interferon-gamma release assay result was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when pathogen-specific Talaromyces marneffei antigen testing returned positive in the setting of markedly elevated serum 1,3-beta-D-glucan and galactomannan, confirming recurrent opportunistic peritonitis due to talaromycosis.",
+      "quote": "The T. marneffei antigen was positive. HIV genotypic resistance testing revealed INSTIs resistance. Abdominal computed tomography scan demonstrated inflammatory alterations that were indicative of peritonitis."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly excludes the specific fungal antigen test result, genotypic resistance, and treatment response. No pathogen name leaks."
+}

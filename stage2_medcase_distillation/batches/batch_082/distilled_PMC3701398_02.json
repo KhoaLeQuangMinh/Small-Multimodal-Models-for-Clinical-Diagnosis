@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3701398_02",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 58-year-old diabetic male presenting with a protracted course of undulating fevers lasting over a year who develops acute respiratory failure with bilateral nodular infiltrates and acute inflammatory monoarthritis of the knee. The diagnostic challenge is distinguishing indolent chronic melioidosis presenting with acute exacerbation from pulmonary tuberculosis, disseminated fungal infection, and common bacterial septic arthritis.\n2. Admission Breakpoint: The admission narrative halts following triage vital signs, physical exam, emergency ventilatory support for hypoxemia, knee radiography, chest radiography demonstrating fluffy nodular opacities, and initial triage hematological/biochemical labs, strictly prior to send-out sputum AFB culture, malaria antigen, Widal tests, and blood culture organism growth.\n3. Differential Distinctions: Pulmonary tuberculosis commonly presents with chronic low-grade fever, weight loss, and nodular or cavitary infiltrates in diabetic individuals, but sputum smear and mycobacterial cultures were negative. Enteric fever and malaria were ruled out by negative serology and antigen testing. Chronic melioidosis ('the great mimicker') can persist for months to years before flaring into fulminant bacteremic pneumonia and septic monoarthritis, confirmed by blood culture isolation.",
+  "case_prompt": "A 58-year-old male with a history of diabetes mellitus presents with intermittent fever occurring on and off over the preceding 1 to 1.5 years, along with cough, pain, and swelling of the left knee for the past 2 weeks. He had sought care from multiple local practitioners without symptomatic resolution. On physical examination, body temperature is 100°F, pulse rate 90 beats per minute, blood pressure 94/50 mmHg, and respiratory rate 38 breaths per minute. Bilateral scattered crepitations are heard on chest auscultation. The left knee is warm, erythematous, and tender, though plain radiography of the joint is normal. Arterial oxygen saturation is 80% on room air, necessitating non-invasive ventilatory support. Chest radiography reveals fluffy nodular opacities throughout both lung fields. Initial laboratory investigations demonstrate a total leukocyte count of 10,900/mm³, AST 117 IU/L, ALT 175 IU/L, alkaline phosphatase 69 IU/L, GGT 81 IU/L, LDH 289 IU/L, high-sensitivity C-reactive protein 166.7 mg/dL, procalcitonin 0.9 ng/mL, and HbA1c 10.0%.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary tuberculosis",
+      "rule_out_reason": "Considered as the primary explanation for protracted undulating fever over 1–1.5 years accompanied by cough, bilateral fluffy nodular lung opacities, and monoarthritis in a diabetic patient. Excluded by negative sputum acid-fast stain and mycobacterial culture.",
+      "quote": "Sputum for AFB (stain and culture), Malaria antigen test and Widal test were all negative."
+    },
+    {
+      "candidate": "Malaria / Enteric fever",
+      "rule_out_reason": "Considered as alternative causes of persistent or recurrent febrile illness in an endemic region. Excluded by nonreactive malaria antigen and Widal serological testing.",
+      "quote": "Malaria antigen test and Widal test were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recurrent fevers with sudden respiratory failure and septic arthritis in a diabetic host culminated in microbiological confirmation when peripheral blood cultures drawn at admission and during fever spikes isolated Burkholderia pseudomallei.",
+      "quote": "Burkholderia pseudomallei was isolated from all these blood samples."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint strictly placed prior to blood culture results."
+}

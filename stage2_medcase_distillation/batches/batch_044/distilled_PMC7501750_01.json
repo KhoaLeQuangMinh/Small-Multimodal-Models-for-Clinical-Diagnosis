@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7501750_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 42-year-old patient presents with a 9-month history of bilateral cervicobrachialgia and unintentional weight loss without sensorimotor deficit, found to have C4 osteolysis, pathological compression deformity, epiduritis/epidural abscess, and paravertebral soft tissue infiltration. Cervical spine involvement is an uncommon presentation of Pott's disease (<5%), where chronic osteolysis and weight loss frequently trigger suspicion for spinal metastatic neoplasm or myeloma rather than an indolent granulomatous infection.\n2. Admission Breakpoint: Clinical evaluation demonstrating cervical mobilization pain without focal neurological deficit, plain cervical radiography showing C4 osteolysis and compression, and cervical MRI showing C4 collapse with epiduritis and paravertebral phlegmon, immediately prior to percutaneous vertebral biopsy.\n3. Differential Distinctions: Spinal metastatic malignancy or myeloma (frequent cause of osteolytic compression and constitutional symptoms, but soft tissue inflammation/epiduritis favored infection and biopsy was negative for tumor), pyogenic bacterial spondylodiscitis (characterized by acute toxicity, fever, and rapid neurologic compromise rather than an indolent 9-month course), and severe degenerative cervical spondylosis (cannot account for vertebral osteolysis, epidural collection, or constitutional symptoms).",
+  "case_prompt": "A 42-year-old individual presented for evaluation of bilateral cervicobrachial pain persisting for nine months. The symptoms had developed insidiously alongside unquantified unintentional weight loss. The patient had no significant past medical or surgical history and reported no numbness, paresthesias, limb weakness, or bowel or bladder disturbance.\n\nOn physical examination, the patient experienced marked cervical pain elicited upon active and passive mobilization of the neck. Neurological examination revealed intact sensation across all dermatomes, normal motor strength (5/5) in all muscle groups of the upper and lower extremities, and intact symmetrical deep tendon reflexes with no pathological reflexes.\n\nPlain radiographs of the cervical spine demonstrated localized osteolysis with pathological compression collapse of the C4 vertebral body. Magnetic resonance imaging (MRI) of the cervical spine confirmed compression deformity of the C4 vertebral body associated with epiduritis, a spinal epidural abscess, and extensive inflammatory infiltration extending into the adjacent paravertebral soft tissues.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic spinal malignancy or multiple myeloma",
+      "rule_out_reason": "Vertebral osteolytic collapse accompanied by constitutional weight loss in a 42-year-old strongly suggests primary or metastatic osseous neoplasia; however, MRI features of epiduritis and paravertebral phlegmon indicated an infectious process, and subsequent biopsy excluded malignancy.",
+      "quote": "Standard radiography showed osteolysis with compression of the body of C4 (Figure 1). Magnetic resonance imaging confirmed the CT scan data and revealed a compression of the C4 vertebral body with epiduritis, or spinal epidural abscess and infiltration of the paravertebral soft tissues, suggesting primarily an infectious origin (Figure 2)."
+    },
+    {
+      "candidate": "Acute pyogenic cervical spondylodiscitis",
+      "rule_out_reason": "Pyogenic bacterial spinal infections typically run an aggressive, febrile, destructive course with rapid development of severe neurological deficits, distinct from this patient's 9-month indolent history without sensorimotor dysfunction.",
+      "quote": "Patient K.R., 42 years old, without any particular pathological antecedents, who has had bilateral cervicobrachialgia for the past 9 months without any sensorimotor deficit, evolving in an unquantified weight loss context."
+    },
+    {
+      "candidate": "Cervical degenerative disc disease / spondylosis",
+      "rule_out_reason": "Degenerative cervical disc herniation frequently causes cervicobrachialgia, but cannot explain frank osteolytic bone destruction of the C4 vertebral body, epidural abscess formation, or constitutional weight loss.",
+      "quote": "On clinical examination, there was noticeable pain on the mobilization of the cervical spine. Standard radiography showed osteolysis with compression of the body of C4 (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon histological biopsy of the C4 lesion, which confirmed active tuberculosis, prompting definitive surgical management with anterior cervical arthrodesis and a 12-month course of quadruple antituberculous chemotherapy leading to full neurological recovery.",
+      "quote": "The biopsy confirmed the diagnosis of active tuberculosis. The patient was treated with an anterior arthrodesis (Figure 3) and quadruple tuberculosis chemotherapy for 12 months."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case prompt ends after plain radiography and cervical MRI showing C4 compression and epidural abscess, prior to spinal biopsy and arthrodesis. All pathogen names excluded from prompt."
+}

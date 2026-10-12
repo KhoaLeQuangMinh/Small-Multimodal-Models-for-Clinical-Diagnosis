@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9573961_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 45-year-old male with newly diagnosed advanced HIV infection (CD4 count 6/μL) presents with high-spiking fevers, diffuse erythematous rash, bilateral lung infiltrates with a focal upper lobe mass-like consolidation, splenomegaly, and rapid development of pancytopenia with hyperferritinemia and hypofibrinogenemia meeting diagnostic criteria for hemophagocytic lymphohistiocytosis (HLH). The presentation mimics primary hematologic malignancy, severe bacterial septic shock, or viral-induced (EBV/CMV) secondary HLH.\n2. Admission Breakpoint: Admission presentation to the tertiary center with high fevers (38.5–40°C), diffuse rash, severe pancytopenia, hypofibrinogenemia, hypertriglyceridemia, markedly elevated ferritin and inflammatory markers, transaminitis, splenomegaly, and chest CT findings, prior to bone marrow aspiration showing hemophagocytosis and Day 4 blood cultures.\n3. Differential Distinctions: Viral-induced secondary HLH (EBV/CMV) was considered given detectable EBV and CMV viral loads in severe AIDS, but disseminated fungal infection was proven to be the primary driving etiology by blood cultures. Pulmonary malignancy with marrow infiltration was suspected based on the upper lung occupancy and cytopenias, but the lung lesion regressed on targeted antifungal/anti-inflammatory treatment. Bacterial sepsis was treated with broad-spectrum antibiotics without improvement.",
+  "case_prompt": "A 45-year-old male presents with recurrent high fevers and cough of two weeks' duration, accompanied by progressive weakness, anorexia, and an involuntary 10-kg weight loss. He has no prior medical, surgical, or family history of hematologic or histiocytic disorders. On admission, he appears severely debilitated with daily high-spiking temperatures between 38.5°C and 40.0°C and a diffuse erythematous cutaneous rash. Initial laboratory testing reveals positive HIV antibodies with severe CD4+ T-cell depletion (6 cells/μL). Complete blood count demonstrates progressive pancytopenia, with absolute neutrophil count declining to 0.54 × 10^9/L, hemoglobin falling to 54 g/L, and platelet count dropping to 9 × 10^9/L. Coagulation and metabolic testing show hypofibrinogenemia (0.97 g/L), hypertriglyceridemia (4.14 mmol/L), D-dimer >88,000 μg/L, serum ferritin of 400 μg/L, severe hypoalbuminemia (18.9 g/L), mild hyperbilirubinemia, and elevated hepatic transaminases. Renal function is normal. Inflammatory markers are markedly elevated, with procalcitonin of 11.4 ng/mL and C-reactive protein of 145.47 mg/L. Abdominal ultrasonography demonstrates splenomegaly with a splenic thickness of 4.5 cm. Chest computed tomography (CT) reveals dispersed bilateral pulmonary inflammation, a left upper lobe mass-like occupancy, and obstructive pneumonitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral-Induced Secondary HLH (EBV or HCMV)",
+      "rule_out_reason": "Both Epstein-Barr virus and cytomegalovirus viremias were present in this host with advanced AIDS, which can precipitate secondary HLH; however, blood culture isolation confirmed that disseminated fungal infection was the primary underlying trigger.",
+      "quote": "His CD4+ cell count was 6/microl and Epstein-Barr virus(EBV) and human cytomegalovirus (HCMV)-DNA loads were 35300 and 3400 copies/ml, respectively."
+    },
+    {
+      "candidate": "Bronchogenic Malignancy with Marrow Infiltration",
+      "rule_out_reason": "The left upper lung occupancy and profound pancytopenia raised concern for primary lung carcinoma with bone marrow involvement, but the mass regressed with medical therapy and lacked malignant features on repeat imaging.",
+      "quote": "A second chest enlargement CT revealed a decreased left upper lung lesion; furthermore, there was not enough evidence for it to be considered cancerous."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "On hospital day 4, blood cultures grew Talaromyces marneffei, confirming disseminated fungal sepsis driving secondary hemophagocytic lymphohistiocytosis.",
+      "quote": "On hospital day 4, blood cultures were found to be positive for Talaromyces marneffei. The patient developed distributive shock and convulsive seizures. Taken together, the patient fulfilled at least six criteria of the HLH 2004 protocol and was diagnosed with HLH and septic shock due to disseminated Talaromyces marneffei infection."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC9573961. Day 1 presentation excludes bone marrow aspiration, send-out viral loads, and blood culture results."
+}

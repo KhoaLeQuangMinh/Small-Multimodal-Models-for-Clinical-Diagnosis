@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5204087_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 37-year-old traveler returning from Cambodia presents with an acute febrile, myalgic illness accompanied by profound thrombocytopenia who develops acute painless visual clouding and scotomas at the nadir of his platelet count. The central clinical tension is differentiating between retrobulbar optic neuritis, systemic autoimmune uveitis, and a viral-induced microvascular chorioretinopathy / acute macular neuroretinopathy complex directly triggered by an arboviral infection.\n2. Admission Breakpoint: Admission triage encompasses demographics, travel history to Southeast Asia, symptom chronology, visual acuity, Amsler grid and Humphrey perimetry, slit-lamp biomicroscopy, dilated fundoscopy, and initial hematology showing severe thrombocytopenia. It strictly excludes optical coherence tomography (OCT) interpretation, confirmatory viral serology/antigen titers, and therapeutic outcomes.\n3. Differential Distinctions: Retrobulbar optic neuritis presents with painful ocular movements, abnormal pupillary responses (RAPD), and dyschromatopsia with a normal fundus, whereas this patient has painless loss, intact pupillary reflexes, normal color vision, and prominent retinal/macular hemorrhages with cotton wool spots. Autoimmune panuveitis is argued against by the negative systemic review and sudden onset precisely coinciding with the viral thrombocytopenic nadir.",
+  "case_prompt": "A 37-year-old previously healthy Australian male presents with sudden onset of painless, patchy visual clouding (worse in the right eye) and floaters in the left eye. His ocular symptoms began on day 3 of an acute febrile illness contracted while traveling in Cambodia, characterized by high fever, severe headache, myalgias, and arthralgias. The onset of visual disturbance coincided with a marked nadir in his platelet count at 44 x 10^9/L (reference > 150 x 10^9/L).\n\nFour days later, he undergoes comprehensive ophthalmic examination in Australia. Past ocular history and review of systems for rheumatologic or autoimmune conditions are unremarkable. Best-corrected visual acuity is 6/6-1 in the right eye (using eccentric fixation) and 6/4 in the left eye. Amsler grid testing demonstrates central and paracentral scotomas, worse in the right eye, confirmed on automated Humphrey perimetry. Pupils are equally round and reactive to light with no relative afferent pupillary defect. Intraocular pressures are normal. Slit-lamp examination of the left eye reveals mild ciliary congestion, occasional anterior chamber inflammatory cells with minimal flare, and mild vitritis with inferior vitreous condensations. Dilated fundoscopic examination demonstrates unswollen optic discs with surrounding peripapillary hyperemia, tortuous beaded retinal veins, and bilateral multiple perimacular and intraretinal hemorrhages accompanied by occasional cotton wool spots.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Retrobulbar Optic Neuritis",
+      "rule_out_reason": "Initially suspected due to post-febrile visual loss, but excluded by the complete absence of a relative afferent pupillary defect, preserved color vision and brightness saturation, unswollen optic discs, and fundoscopic evidence of widespread perimacular intraretinal hemorrhages and microangiopathy.",
+      "quote": "A paucity of other symptoms and signs led to an initial diagnosis of dengue fever-associated retrobulbar optic neuritis, which has been described."
+    },
+    {
+      "candidate": "Primary Autoimmune Panuveitis / Systemic Vasculitis",
+      "rule_out_reason": "Considered given anterior chamber reaction, vitritis, and retinal cotton wool spots, but excluded by the lack of antecedent autoimmune symptoms, noncontributory uveitis blood screens, and the acute temporal correlation with an imported viral thrombocytopenia.",
+      "quote": "An ocular history and systems review for other autoimmune conditions proved noncontributory."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Optical coherence tomography demonstrated hyperreflective lesions in the outer nuclear layer and photoreceptor segments encroaching on the retinal pigment epithelium (acute macular neuroretinopathy), confirming dengue fever-associated maculopathy and panuveitis which resolved concurrently with platelet count recovery.",
+      "quote": "Optical coherence tomography (OCT) was performed which confirmed the fundoscopic findings of intraretinal haemorrhage (Figure 3(a)) and demonstrated hyperreflective lesions involving the outer nuclear layer (Figures 3(a) and 3(b)) and photoreceptor outer segments, encroaching onto the retinal pigment epithelial layer indicating an acute macular neuroretinopathy (AMN) picture as part of a clinical panuveitis complex"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation strictly complies with Stanford MedCaseReasoning criteria. Case prompt excludes disease name, confirmatory pathogen serology, OCT synthesis, and clinical resolution."
+}

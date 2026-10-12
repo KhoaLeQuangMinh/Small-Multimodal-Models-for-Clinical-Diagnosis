@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11799367_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 52-year-old male undergoing treatment for an underlying chronic granulomatous dermatoneurological condition developed acute systemic inflammation with tender erythematous nodules managed with high-dose corticosteroids, subsequent to which he presented with hypertensive crisis (blood pressure 220/110 mmHg) and acute myocardial necrosis (NSTEMI). The primary clinical challenge is deciphering whether the ischemic cardiac event was driven by atherothrombotic coronary occlusion, infectious myocarditis, or stress-induced cardiomyopathy versus corticosteroid-precipitated hypertensive crisis causing myocardial infarction with non-obstructive coronary arteries (MINOCA) in the setting of severe erythema nodosum leprosum.\n2. Admission Breakpoint: The breakpoint occurs prior to advanced echocardiographic assessment, invasive coronary catheterization, and endocrine suppression testing ('On echocardiogram, a concomitant regional motion abnormality with mild left ventricular dysfunction...').\n3. Differential Distinctions: Obstructive atherosclerotic coronary artery disease (ruled out by angiographically normal coronary vessels), acute infectious/autoimmune myocarditis (ruled out by absence of global ventricular dysfunction and lack of viral prodrome), and Takotsubo cardiomyopathy (ruled out by absence of apical ballooning on echocardiography).",
+  "case_prompt": "A 52-year-old male presented to the emergency department with a 15-day history of subacute, progressive, diffuse chest pain radiating to his mid-back and left upper extremity. Over the preceding month, he noted gradual onset of painless, non-pruritic facial puffiness, progressive exertional breathlessness (NYHA functional class II), and new-onset violaceous abdominal striae. He had a 4-year history of essential hypertension managed irregularly with medications, with no personal history of diabetes, asthma, or thyroid disease. His mother had been successfully treated for a chronic dermatologic and peripheral neurological condition ten years earlier, with no family history of premature coronary artery disease.\n\nFour months prior to presentation, the patient had been evaluated for hypopigmented anesthetic skin patches and was initiated on a standard multidrug antimycobacterial regimen (rifampicin, clofazimine, and dapsone). Three months into treatment, he developed acute high fevers, arthralgias, and extensive eruptive crops of painful, tender erythematous subcutaneous nodules, accompanied by a blood pressure of 150/90 mmHg and elevated inflammatory markers (leukocytosis, ESR, and CRP), for which oral prednisolone at 60 mg daily was initiated.\n\nOn physical examination, the patient was alert and in moderate distress. Blood pressure was 220/110 mmHg, pulse was 100 beats per minute, and respiratory rate was 20 breaths per minute. Jugular venous pressure was elevated. Bilateral crepitant rales were audible over the lung bases. Cardiovascular exam revealed normal S1 and S2 heart sounds, a normal apical impulse, and a distinct S4 gallop at the apex, without murmurs or pericardial friction rubs. Abdominal examination showed prominent wide abdominal striae. Dermatologic and neurological exams revealed quiescent skin lesions without new focal motor deficits.\n\nAn electrocardiogram (ECG) demonstrated sinus tachycardia with T-wave inversions in leads I, aVL, and V4 through V6. Cardiac biomarkers were significantly elevated, with CK-MB at 49 ng/mL and high-sensitivity cardiac troponin I at 68 ng/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Atherothrombotic Acute Coronary Syndrome (Obstructive NSTEMI)",
+      "rule_out_reason": "Considered the primary initial working diagnosis based on typical radiating ischemic chest pain, lateral T-wave inversions, and elevated cardiac troponin and CK-MB; however, emergency invasive coronary angiography revealed completely normal, non-obstructed epicardial coronary arteries, establishing a diagnosis of MINOCA.",
+      "quote": "Coronary angiography was performed, suggestive of normal epicardial coronaries"
+    },
+    {
+      "candidate": "Acute Infectious / Autoimmune Myocarditis",
+      "rule_out_reason": "Considered given the patient's systemic inflammatory background, cardiac biomarker elevation, and chest pain, but the absence of preceding viral illness, absence of fever, and lack of diffuse global ventricular dysfunction on echocardiography excluded this diagnosis.",
+      "quote": "The lack of diffuse global dysfunction on echocardiography also argued against this diagnosis."
+    },
+    {
+      "candidate": "Takotsubo (Stress-Induced) Cardiomyopathy",
+      "rule_out_reason": "Considered as a potential etiology for MINOCA with ischemic ECG changes and troponin release, but ruled out due to the absence of severe acute emotional or physical trigger events and lack of classic apical ballooning on echocardiography.",
+      "quote": "echocardiographic findings did not reveal the classic pattern of apical ballooning, thereby ruling out Takotsubo syndrome."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic demonstration of acid-fast bacilli on skin slit smears confirmed multibacillary leprosy complicated by erythema nodosum leprosum (ENL / Type 2 lepra reaction), wherein prolonged high-dose corticosteroid therapy precipitated severe exogenous cushingoid features, extreme hypertensive crisis, and myocardial infarction with non-obstructive coronary arteries.",
+      "quote": "Skin smears of the lesions were sent which came out positive for acid-fast bacilli, supporting the diagnosis of erythema nodosum leprosum (ENL)."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of multibacillary leprosy complicated by erythema nodosum leprosum, high-dose corticosteroid therapy, and severe hypertensive crisis manifesting as MINOCA. Clean admission breakpoint with complete redaction of pathogen names, ENL terminology, and coronary angiography."
+}

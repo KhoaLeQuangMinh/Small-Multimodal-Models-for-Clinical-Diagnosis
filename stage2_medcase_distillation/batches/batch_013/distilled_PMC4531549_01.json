@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4531549_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Bilateral massive adrenal enlargement presenting with supraclavicular adenopathy, profound hyperferritinemia, cytopenias, and hepatosplenomegaly overwhelmingly mimics metastatic malignancy, lymphoma, or viral-induced HLH, obscuring an underlying disseminated mycobacterial infection causing secondary hemophagocytic syndrome and primary adrenal crisis.\n2. Admission Breakpoint: The breakpoint occurs after admission triage labs (revealing leukopenia, anemia, elevated ferritin >2000, high ACTH, hyponatremia) and abdominal CT (bilateral large adrenal masses, hepatosplenomegaly), strictly before invasive CT-guided adrenal biopsy and bone marrow examination.\n3. Differential Distinctions: Lymphoma/adrenal carcinoma typically presents with malignant tissue architecture without caseous necrosis on biopsy. Primary viral HLH (EBV/CMV) presents with acute hypercytokinemia but lacks massive destructive bilateral caseating adrenal masses. Autoimmune Addison's disease causes adrenal atrophy rather than large mass-like enlargement.",
+  "case_prompt": "A 50-year-old man presented with a 15-day history of persistent fever, loss of taste, anorexia, and weight loss. On examination, body temperature was 37.7 °C, heart rate 80 beats/min, respiratory rate 20 breaths/min, and blood pressure 120/80 mmHg. He appeared ill and prostrated. Physical findings included a palpable liver edge 1 finger-breadth below the costal margin in the epigastrium and a 1.5 × 1.0 cm firm, non-tender right supraclavicular lymph node. Laboratory evaluation showed a white blood cell count of 1,700/µL (65% neutrophils), hemoglobin 10.6 g/dL, platelet count 142,000/µL, serum sodium 129 mmol/L, potassium 4.0 mmol/L, AST 52 IU/L, ALT 29 IU/L, alkaline phosphatase 183 IU/L, lactate dehydrogenase (LDH) 1,415 IU/L, and serum ferritin >2,000 ng/mL. Morning and evening cortisol levels were 17.8 µg/dL and 20 µg/dL, accompanied by elevated adrenocorticotropic hormone (ACTH) levels of 726 pg/dL and 265 pg/dL (normal range: 10–56.7 pg/dL). A chest radiograph was unremarkable. Abdominal computed tomography demonstrated hepatosplenomegaly and bilateral adrenal masses measuring 6 × 1.7 cm on the right and 8 × 3 cm on the left.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lymphoma or metastatic adrenal malignancy",
+      "rule_out_reason": "Considered due to large bilateral adrenal tumors, supraclavicular lymphadenopathy, hepatosplenomegaly, cytopenias, and marked LDH/ferritin elevation; ruled out by histological analysis of both the adrenal gland, bone marrow, and lymph node showing necrosis without malignant cells.",
+      "quote": "On subsequent bone marrow aspiration and biopsy, hemophagocytic histiocytes had increased in proportion (4.6%) without accompanying evidence of malignancy (Figure 3)... Biopsy of the supraclavicular lymph node revealed necrosis, but no evidence of malignancy."
+    },
+    {
+      "candidate": "Viral-induced hemophagocytic syndrome (EBV/CMV)",
+      "rule_out_reason": "Considered due to the combination of cytopenia, severe hyperferritinemia (>2000 ng/mL), elevated LDH, and hepatosplenomegaly; ruled out by negative viral serologies.",
+      "quote": "Serologic test for Epstein-Barr virus and cytomegalovirus were normal."
+    },
+    {
+      "candidate": "Primary adrenal malignancy (Adrenocortical carcinoma)",
+      "rule_out_reason": "Considered given large bilateral adrenal masses with disproportionately elevated ACTH; excluded by CT-guided biopsy revealing epithelioid granulomas and caseous necrosis.",
+      "quote": "CT-guided adrenal gland biopsy was done and showed numerous epithelioid cells and caseous necrosis consistent with tuberculosis (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CT-guided biopsy of the adrenal mass demonstrated epithelioid cell granulomas with caseous necrosis, and bone marrow biopsy confirmed active hemophagocytosis (4.6% hemophagocytic histiocytes) without neoplasia, establishing secondary hemophagocytic syndrome induced by bilateral adrenal tuberculosis.",
+      "quote": "CT-guided adrenal gland biopsy was done and showed numerous epithelioid cells and caseous necrosis consistent with tuberculosis (Figure 2)... On subsequent bone marrow aspiration and biopsy, hemophagocytic histiocytes had increased in proportion (4.6%) without accompanying evidence of malignancy (Figure 3), hence HPS associated with adrenal gland tuberculosis was diagnosed."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to invasive adrenal and marrow biopsies. Zero spoilers, full admission vitals and laboratory profile captured."
+}

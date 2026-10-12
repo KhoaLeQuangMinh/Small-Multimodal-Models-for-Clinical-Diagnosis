@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3914124_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: An untreated AIDS patient presenting with subacute abdominal pain, vomiting, diarrhea, acute peritoneal signs, right hydronephrosis, and a large hypovascular abdominal mass with lymphadenopathy mimics an opportunistic intra-abdominal malignancy (e.g., lymphoma, Kaposi sarcoma) or complicated bacterial appendiceal abscess, masking necrotizing protozoal enterocolitis with impending visceral perforation.\n2. Admission Breakpoint: History, vital signs, physical examination documenting diffuse peritonitis, and emergent abdominal CT scan findings, stopping prior to empiric antimicrobial administration, surgical laparotomy, and pathological examination of the resected bowel.\n3. Differential Distinctions: Pyogenic bacterial intra-abdominal abscess or perforation was the initial admitting impression, but broad-spectrum antibiotics (flomoxef) produced no clinical response. Lymphoma/sarcoma was considered given the solid-appearing hypovascular tumor and adenopathy in AIDS, but exploratory laparotomy and pathology revealed necrotizing amebic enterocolitis with transmural gangrene, which subsequently caused adjacent retroperitoneal ureteral erosion.",
+  "case_prompt": "A 32-year-old man with a 2-year history of acquired immunodeficiency syndrome (AIDS), who had not received medical follow-up or antiretroviral therapy, presented to the emergency department with persistent abdominal pain for 3 weeks, accompanied by diarrhea, poor appetite, and vomiting. The pain had initially been intermittent and periumbilical, but had progressively worsened to become constant and severe.\n\nOn physical examination in the emergency department, he was in acute distress. Abdominal examination revealed diffuse tenderness with prominent rebound tenderness and involuntary abdominal wall rigidity.\n\nAn emergent abdominal computed tomography (CT) scan demonstrated a large hypovascular mass in the lower abdomen, right hydronephrosis, and multiple enlarged para-aortic lymph nodes. He was admitted with an initial impression of acute abdomen secondary to an intra-abdominal abscess or neoplasm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial intra-abdominal abscess / perforated appendicitis",
+      "rule_out_reason": "Initially suspected and treated empirically with intravenous antibiotics, but ruled out by complete lack of clinical improvement and persistent fevers.",
+      "quote": "Under the impression of acute abdomen with intra-abdominal abscess, he was admitted for further treatment.\nHe was treated by IV antibiotics with Flomoxef first and reverse transcriptase inhibitors. However, the clinical conditions did not improve after empiric antibiotics treatment."
+    },
+    {
+      "candidate": "Intra-abdominal neoplasm (e.g., AIDS-related lymphoma)",
+      "rule_out_reason": "Considered due to the large hypovascular lower abdominal mass and extensive para-aortic lymphadenopathy in an untreated AIDS patient, but histopathology of the resected surgical specimen revealed infectious colitis without malignant neoplasia.",
+      "quote": "An emergent abdominal CT showed a big hypovascular tumor located in the lower abdomen, right hydronephrosis, and multiple enlarged para-aortic LNs"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency laparotomy and bowel resection revealed invasive protozoan enterocolitis with transmural gangrenous necrosis and perforation directly involving adjacent retroperitoneal structures.",
+      "quote": "The pathology revealed amebic enterocolitis with segmental gangrenous change and perforation."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

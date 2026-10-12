@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6019590_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 54-year-old man from Southwest Iran presents with a 3-week history of severe continuous throbbing headache, fever, chills, weight loss, marked splenomegaly, and profound pancytopenia with hyperferritinemia. The primary clinical tension lies in differentiating an aggressive hematologic malignancy or secondary hemophagocytic lymphohistiocytosis (HLH) from endemic chronic zoonotic/protozoal infections (brucellosis vs. visceral leishmaniasis), compounded by unusual central neurological involvement (headache with later pontine parenchymal lesions).\n2. Admission Breakpoint: The admission clinical presentation concludes after the initial emergency assessment, physical examination, comprehensive laboratory evaluation (demonstrating severe pancytopenia, elevated transaminases/alkaline phosphatase, hyperferritinemia, negative viral/Brucella serology), non-contrast head CT, and abdominal ultrasound showing hepatosplenomegaly with portal vein dilation, immediately prior to brain MRI and bone marrow aspiration/biopsy.\n3. Differential Distinctions: Brucellosis was a major consideration given endemicity, fever, cytopenias, and hepatosplenomegaly, but standard and 2-mercaptoethanol agglutination tests (Wright and 2ME) were negative. Chronic viral hepatitis and HIV were excluded by negative serologies. Hematologic neoplasm was suspected due to severe bicytopenia/pancytopenia and hyperferritinemia, but bone marrow examination confirmed intracellular protozoal amastigotes within macrophages.",
+  "case_prompt": "A 54-year-old man from Southwest Iran presented to the emergency department with a 3-week history of continuous, generalized throbbing headaches, persistent fever, chills, progressive weakness, anorexia, and involuntary weight loss. His past medical history was notable for benign prostatic hyperplasia, gastroesophageal reflux disease, and hemorrhoids, managed with tamsulosin, propranolol, and rabeprazole. There was no family history of hereditary or chronic infectious diseases.\n\nOn physical examination at admission, the body temperature was 38.0°C (100.4°F) and blood pressure was 130/82 mmHg. Abdominal examination revealed mild tenderness in the right upper quadrant and moderate splenomegaly. Neurological and cardiopulmonary examinations were otherwise normal.\n\nInitial laboratory evaluation revealed profound pancytopenia: hemoglobin 8.1 g/dL, white blood cell count 1.9 × 10^9/L, platelet count 20 × 10^9/L, and reticulocyte count 0.5%. The erythrocyte sedimentation rate (ESR) was elevated at 56 mm/h. Liver biochemistries showed alanine aminotransferase (ALT) 84 IU/L, aspartate aminotransferase (AST) 67 IU/L, alkaline phosphatase 401 IU/L, serum albumin 3.4 g/dL, and conjugated bilirubin 0.6 mg/dL. Iron studies demonstrated marked hyperferritinemia with a serum ferritin of 658.6 mcg/dL, serum iron 23 mcg/dL, and total iron-binding capacity (TIBC) 116 mcg/dL. Serum creatinine, electrolytes, coagulation profile, urinalysis, and stool examination were normal. Serologic assays for hepatitis B, hepatitis C, and HIV were negative, and Brucella agglutination tests (Wright test and 2-mercaptoethanol test) were negative.\n\nAbdominal ultrasonography confirmed mild hepatomegaly, moderate splenomegaly, and dilated portal (15 mm) and superior mesenteric (15 mm) veins. A non-contrast computed tomography (CT) scan of the brain revealed no acute intracranial abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Brucellosis",
+      "rule_out_reason": "Considered given fever, headache, hepatosplenomegaly, cytopenias, and endemic geographic exposure in Iran, but Wright agglutination and 2-mercaptoethanol (2ME) tests were negative.",
+      "quote": "Other laboratory tests such as creatinine, blood sugar, partial thromboplastin time, prothrombin time, urinalysis, stool exam, sputum exam, wright test, 2ME, calcium, phosphorus, magnesium, and prostate-specific antigen were normal."
+    },
+    {
+      "candidate": "Viral hepatitis or HIV-associated portal hypertension",
+      "rule_out_reason": "Considered due to hepatosplenomegaly, dilated splanchnic/portal veins, and cytopenias, but specific viral serologies were entirely non-reactive.",
+      "quote": "Serologic tests for HBV, HCV, and HIV were negative."
+    },
+    {
+      "candidate": "Hematologic malignancy or hemophagocytic lymphohistiocytosis (HLH)",
+      "rule_out_reason": "Considered due to profound pancytopenia, marked hyperferritinemia, transaminitis, and splenomegaly, but bone marrow evaluation demonstrated infectious amastigotes rather than malignant neoplastic infiltration.",
+      "quote": "Bone marrow aspiration and biopsy revealed macrophages with numerous Leishmania amastigotes (Fig. 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bone marrow aspiration and biopsy definitively identified numerous intracellular Leishmania amastigotes within macrophages, confirming visceral leishmaniasis with atypical central nervous system parenchymal (pontine) involvement seen on subsequent FLAIR MRI.",
+      "quote": "Axial fluid-attenuated inversion recovery MRI image (FLAIR) revealed an increase in signal intensity of central part of right side of pons (Fig. 1). Bone marrow aspiration and biopsy revealed macrophages with numerous Leishmania amastigotes (Fig. 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC6019590_01. The case prompt ends strictly prior to brain MRI and bone marrow biopsy. Zero mention of Leishmania or antiparasitic therapy in the prompt. Candidate differential rule-outs and diagnostic pivot cite verbatim text from the case report."
+}

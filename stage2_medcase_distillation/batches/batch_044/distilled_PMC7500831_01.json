@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7500831_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 49-year-old woman treated with combination immunosuppression (methotrexate, prednisolone, and rituximab) for seronegative rheumatoid arthritis develops chronic, progressive left wrist monoarthritis with negative autoantibodies. Escalation of immunosuppression precipitated worsening synovitis and spontaneous cutaneous fistulization on the radial wrist, creating tension between a refractory atypical autoimmune flare and an opportunistic infectious granulomatous monoarthritis.\n2. Admission Breakpoint: Hospital admission following the development of cutaneous fistulization, low-grade fevers, rising ESR (62 mm/h) and CRP (53 mg/L), clear chest radiograph, and negative routine aerobic blood and urine cultures, immediately prior to surgical debridement and microbiological stain/PCR.\n3. Differential Distinctions: Rheumatoid arthritis flare (isolated persistent monoarthritis, negative RF and anti-CCP, absence of typical rheumatoid erosions, and worsening with cutaneous sinus tract formation upon steroid intensification make RA unlikely), pyogenic bacterial septic arthritis (typically hyperacute with toxic systemic signs and positive routine bacterial cultures), and reactive arthritis (typically self-limiting oligoarthritis without chronic draining fistulae).",
+  "case_prompt": "A 49-year-old female homemaker presented for evaluation of persistent, worsening pain and swelling in her left wrist that had progressed over four months. Two months earlier, she had sought medical care for left wrist swelling while undergoing treatment for presumed seronegative rheumatoid arthritis with methotrexate, low-dose prednisolone, and rituximab (four total cycles, the last administered five months prior). At that time, workup demonstrated normal complete blood count, normal liver transaminases and renal function, negative rheumatoid factor, negative anti-cyclic citrullinated peptide (anti-CCP), negative antinuclear antibodies (ANA), an erythrocyte sedimentation rate (ESR) of 46 mm/h, C-reactive protein (CRP) of 18 mg/L, and normal radiographs of the chest and sacroiliac joints. Following an empirical increase in methotrexate and prednisolone, her wrist complaints worsened, and she noted anorexia, intermittent low-grade fever, and the development of localized erythema and cutaneous fistulization on the radial aspect of the left wrist.\n\nOn physical examination upon admission, body temperature was 37.0°C (98.6°F), blood pressure was 135/80 mmHg, and heart rate was 72 beats per minute. Musculoskeletal examination revealed marked swelling, localized warmth, erythema, and a draining cutaneous fistula along the radial aspect of the left wrist joint. No active synovitis, effusion, or tenderness was present in any other joints. Cardiopulmonary and abdominal examinations were normal, and there was no cervical or axillary lymphadenopathy.\n\nLaboratory evaluation revealed an elevated ESR of 62 mm/h and CRP of 53 mg/L. Complete blood count, serum chemistries, and urinalysis remained normal. Repeat plain chest radiography demonstrated clear lung parenchyma without infiltrates, cavitary lesions, or pleural effusion. Blood and urine cultures showed no bacterial growth.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory flare of seronegative rheumatoid arthritis",
+      "rule_out_reason": "Monoarticular exacerbation in a patient treated for seronegative rheumatoid arthritis was initially treated as an autoimmune flare; however, increasing doses of methotrexate and corticosteroids resulted in worsening inflammation and the formation of a cutaneous draining fistula, an atypical feature for pure RA.",
+      "quote": "Thereupon, the dose of methotrexate was increased to 15 mg/week and the dose of prednisolone to 10 mg/day. At the control two months later, there was no decrease in the patient's complaints. Moreover, redness and cutaneous fistulization developed on the radial side of the left wrist"
+    },
+    {
+      "candidate": "Acute pyogenic bacterial septic arthritis",
+      "rule_out_reason": "Acute pyogenic joint infections classically produce severe localized pain, high fevers, marked toxic systemic features, and positive bacterial blood cultures, whereas this patient experienced an indolent multi-month course with negative routine blood and urine cultures.",
+      "quote": "The patient was hospitalized. Blood and urine cultures were found negative."
+    },
+    {
+      "candidate": "Reactive or post-viral arthritis",
+      "rule_out_reason": "Reactive and viral arthritides are usually migratory or oligoarticular and resolve spontaneously over weeks to months without chronic granulomatous destruction or draining sinus tract development.",
+      "quote": "The absence of joint complaints despite not receiving immunosuppressive therapy for over a year, negative serological tests for RF, anti-CCP and ANA, and the absence of typical erosions for RA in the joints suggest that the initial diagnosis of RA may not be correct. The patient may have had viral arthritis or reactive arthritis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon surgical debridement of the left wrist fistula, which revealed acid-fast bacilli on histopathology and positive polymerase chain reaction and culture confirming Mycobacterium tuberculosis, leading to complete clinical cure with quadruple antituberculous therapy.",
+      "quote": "The lesion on the left wrist was debritted. Histopathologic evaluation revealed the presence of acid-fast bacilli. Polymerase chain reaction test and culture confirmed mycobacterium tuberculosis. Quadruple anti-TB treatment (ethambutol, rifampicin, pyrazinamide and isoniazid) was started."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case prompt clearly delineates the admission presentation of immunosuppressed wrist monoarthritis with fistulization before surgical debridement and acid-fast staining. Zero pathogen names in prompt."
+}

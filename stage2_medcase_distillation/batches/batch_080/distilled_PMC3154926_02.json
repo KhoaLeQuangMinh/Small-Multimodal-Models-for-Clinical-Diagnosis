@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3154926_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A long-term European resident originally from an endemic region presents with acute fever and constitutional symptoms after returning from Mozambique without chemoprophylaxis. Despite having a remote history of malaria prior to emigration, semi-immunity wanes significantly after several years in non-endemic countries, rendering returning travelers (VFRs) highly vulnerable to acute, severe infection.\n2. Admission Breakpoint: Demographics, travel history to Mozambique without chemoprophylaxis, and clinical triage presentation define the admission breakpoint before diagnostic thick/thin peripheral blood smear microscopy and parasitaemia quantitation.\n3. Differential Distinctions: Enteric/Typhoid fever (common in travelers to sub-Saharan Africa presenting with step-ladder fever and abdominal complaints, ruled out by blood film), Dengue/arboviral fever (characterized by retro-orbital pain, rash, and cytopenias, but ruled out by peripheral blood demonstration of intraerythrocytic protozoa), and Plasmodium falciparum malaria.",
+  "case_prompt": "A 26-year-old Zimbabwean-born Caucasian patient who had resided in the United Kingdom for four years presented for medical evaluation following a three-week trip to Mozambique (Maputo/Tete). The patient had not taken any antimalarial chemoprophylaxis or preventative medications during the travel. The patient reported a past remote medical history of three episodes of febrile tropical infections prior to emigrating to the UK four years earlier.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Typhoid fever (Enteric fever / Salmonella enterica serovar Typhi)",
+      "rule_out_reason": "Enteric fever is a leading cause of systemic febrile illness in travelers returning from sub-Saharan Africa without prophylaxis; however, the acute clinical syndrome was rapidly explained by the identification of high circulating intraerythrocytic protozoa rather than enteric bacteremia.",
+      "quote": "The patient presented with circulating P. falciparum trophozoites and schizonts at a parasitaemia of 1.3%"
+    },
+    {
+      "candidate": "Acute arboviral infection (Dengue fever / Chikungunya)",
+      "rule_out_reason": "Arboviral infections are prominent differentials for travelers presenting acutely after travel to Mozambique; however, microscopic examination of the peripheral blood demonstrated diagnostic intraerythrocytic stages rather than viral etiology.",
+      "quote": "following a visit to Mozambique (Mapute/Tete) for a period of three weeks, during which no chemoprophylaxis or treatment was taken."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Plasmodium falciparum Malaria)",
+      "rule_out_reason": "Examination of a pre-treatment peripheral blood smear directly revealed circulating intraerythrocytic asexual trophozoites and mature schizonts at a parasitaemia of 1.3%, confirming acute Plasmodium falciparum infection acquired during unprotected travel to Mozambique.",
+      "quote": "The patient presented with circulating P. falciparum trophozoites and schizonts at a parasitaemia of 1.3% following a visit to Mozambique (Mapute/Tete) for a period of three weeks, during which no chemoprophylaxis or treatment was taken."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Concise clinical case from a genomic study. Admission presentation establishes travel exposure and waning semi-immunity in a VFR traveler, stopping strictly before blood film microscopy and parasitaemia measurement."
+}

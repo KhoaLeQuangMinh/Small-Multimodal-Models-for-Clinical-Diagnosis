@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6169087_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A young adult male with a remote history of immune thrombocytopenic purpura presents with acute fever, myalgias, arthralgias, severe thrombocytopenia, and anemia during an arboviral epidemic. The initial assumption of relapsed autoimmune thrombocytopenia delays recognition of a life-threatening thrombotic microangiopathy (TTP) triggered by arboviral infection.\n2. Admission Breakpoint: The breakpoint occurs at initial hospital admission with constitutional symptoms, severe thrombocytopenia (12,000/mm^3), and anemia (8.0 g/dL), prior to day 3 acute focal neurological deficits, peripheral blood smear review, brain MRI, and arboviral serological panels.\n3. Differential Distinctions: Relapsed ITP explains profound thrombocytopenia but fails to account for acute neurologic collapse and microangiopathic hemolysis; stroke/intracranial hemorrhage is ruled out by normal brain MRI; negative ANA excludes SLE-associated TTP; peripheral blood schizocytes and positive dengue/chikungunya serologies establish dengue-induced TTP.",
+  "case_prompt": "A 28-year-old male presented to the hospital during a seasonal epidemic period with acute onset of fever, asthenia, generalized myalgia, and arthralgia. He had a past medical history of immune thrombocytopenic purpura diagnosed six years prior, for which he had discontinued therapy approximately five years ago.\n\nOn admission physical examination, he was febrile with generalized musculoskeletal discomfort. There were no focal neurological deficits or overt signs of bleeding on initial examination.\n\nInitial complete blood count revealed severe thrombocytopenia with a platelet count of 12,000/mm^3 and anemia with a hemoglobin level of 8.0 g/dL. Oral corticosteroid therapy with prednisone at 1 mg/kg/day was initiated for presumed autoimmune thrombocytopenia flare.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Relapsed Immune Thrombocytopenic Purpura (ITP)",
+      "rule_out_reason": "In a patient with a known history of ITP, severe isolated-appearing thrombocytopenia was initially managed as an ITP relapse; however, the subsequent sudden emergence of fever, hemolytic anemia, and acute focal neurologic deficits indicated a systemic microangiopathic process rather than isolated platelet destruction.",
+      "quote": "A 28-year-old male patient with a previous history of immune thrombocytopenic purpura (ITP)... On admission, thrombocytopenia (12,000/mm3) and anemia (8.0 g/dL) were observed... Oral corticosteroid therapy was started with prednisone 1 mg/kg/day."
+    },
+    {
+      "candidate": "Acute Ischemic or Hemorrhagic Stroke",
+      "rule_out_reason": "The sudden development of severe headache, vomiting, mental confusion, motor aphasia, and right hemiplegia raised high suspicion for an acute intracranial hemorrhage or cerebral infarction in the setting of severe thrombocytopenia, but emergency brain MRI was completely normal.",
+      "quote": "Nuclear magnetic resonance imaging of the brain was performed to rule out acute ischemic or hemorrhagic events. The neuroimaging examination showed no alterations."
+    },
+    {
+      "candidate": "Systemic Lupus Erythematosus (Autoimmune TMA)",
+      "rule_out_reason": "Secondary thrombotic microangiopathy in a young patient can be precipitated by an underlying autoimmune connective tissue disease, but antinuclear antibody (ANA) testing was negative.",
+      "quote": "The patient also had negative results for antinuclear antibody (ANA)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood smear examination demonstrated innumerable schistocytes confirming thrombotic microangiopathy / TTP, and serologic testing returned positive IgM antibodies for dengue virus (with chikungunya virus coinfection), establishing dengue-associated thrombotic thrombocytopenic purpura.",
+      "quote": "Analysis of the peripheral smear showed innumerable schizocytes, confirming the presence of TMA... Serological results were IgM positive for chikungunya and dengue viruses"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly set at initial hospital presentation prior to neurological deterioration and peripheral smear findings. Zero pathogen or disease names in case_prompt. Differential clearly differentiates relapsed ITP, stroke, and lupus from dengue-induced TTP."
+}

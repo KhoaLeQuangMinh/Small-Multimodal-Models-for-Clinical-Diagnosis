@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10438431_02",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A hospitalized patient presents with an unknown pulmonary infectious etiology manifesting as persistent cough, sputum expectoration, recurrent fevers, and bilateral pulmonary patchy infiltration on chest CT. Standard serum fungal biomarkers (1,3-beta-D-glucan and galactomannan) remained completely negative and blood cultures were sterile, obscuring the fungal etiology and creating diagnostic tension with atypical or refractory bacterial pneumonia.\n2. Admission Breakpoint: The early stage of hospitalization when the patient was receiving empirical anti-infective therapy for fever and respiratory symptoms with bilateral lung patchy infiltration on CT, immediately prior to obtaining definitive fungal etiological identification.\n3. Differential Distinctions: Typical invasive fungal diseases (such as candidiasis or aspergillosis) often show positive circulating beta-D-glucan or galactomannan markers; refractory bacterial pneumonias respond to targeted beta-lactams and tazobactam; localized pulmonary talaromycosis can present with completely negative circulating biomarkers and sterile blood cultures, resolving upon voriconazole therapy.",
+  "case_prompt": "A patient was admitted to the hospital with a subacute respiratory infection of undetermined etiology, presenting with persistent cough, sputum expectoration, and recurrent fevers.\n\nChest computed tomography (CT) performed during early admission demonstrated prominent pulmonary lesions characterized by patchy infiltration across bilateral lung fields.\n\nBecause the precise etiology was unknown at the time of admission, empirical broad-spectrum anti-infective therapy was initiated; however, the patient continued to experience recurrent febrile episodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Invasive Mycosis (Invasive Aspergillosis / Candidiasis / Fungemia)",
+      "rule_out_reason": "Considered due to persistent pulmonary infiltrates and lack of improvement on routine therapy; however, serum levels of 1,3-beta-D-glucan and galactomannan remained consistently within normal limits, and blood cultures showed no pathogen growth, ruling out typical disseminated mold infections and fungemia.",
+      "quote": "In addition, the serum levels of 1-3-beta-D glucan and galactomannan were kept at normal levels during hospitalization, and no pathogen were detected in blood culture. This suggested that the patient had not developed further disseminated infection."
+    },
+    {
+      "candidate": "Refractory Bacterial Pneumonia",
+      "rule_out_reason": "Treated empirically with broad-spectrum antibacterials in the early stage of hospitalization, but the patient continued to have recurrent fevers until targeted antifungal therapy was instituted following definitive microbial identification.",
+      "quote": "In the early stage of hospitalization, the cause of infection was unknown, and empirical anti-infection treatment was given."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Talaromycosis (Talaromyces marneffei)",
+      "rule_out_reason": "The diagnosis of Talaromyces marneffei was established by definitive etiological testing, prompting targeted voriconazole therapy which led to prominent radiological clearance of bilateral lung infiltrates and complete symptom recovery at 3 months.",
+      "quote": "When a clear etiological evidence of T. marneffei infection was obtained, the patient was given voriconazole combined with piperacillin sodium and tazobactam sodium targeted anti-infection therapy and methylprednisolone anti-inflammatory therapy (Figure 3B)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean case prompt stopping at early hospital admission before pathogen isolation. Excluded all antifungal therapies and serologic markers from prompt. Verbatim quotes validated."
+}

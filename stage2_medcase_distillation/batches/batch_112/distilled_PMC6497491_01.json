@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6497491_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 28-year-old woman presenting with widespread painful necrotizing cutaneous nodules, high remittent fevers, arthralgias, and atrophic scarring over one year, accompanied by positive anticardiolipin antibodies, leading to frequent misdiagnoses of lupus erythematosus panniculitis or nodular panniculitis. Identifying diffuse multibacillary leprosy complicated by Lucio's phenomenon requires recognizing subtle cutaneous anesthesia, eyebrow madarosis, and high bacterial loads in cutaneous smears/biopsies.\n2. Admission Breakpoint: Clinical presentation after physical examination, dermatologic examination, neurologic exam, and initial triage laboratory studies (ESR, CRP, normal CBC/bone marrow, positive ACA antibodies, negative viral serologies), prior to slit-skin smear examination and cutaneous biopsy.\n3. Differential Distinctions: Lupus erythematosus panniculitis (LEP) presents with painful subcutaneous nodules on face/arms leaving atrophic scars and can have antiphospholipid antibodies, but lacks sensory neuropathy, eyebrow madarosis, and cutaneous acid-fast bacilli; nodular panniculitis causes tender inflammatory nodules but lacks sensory deficits, madarosis, or necrotizing occlusive vasculopathy loaded with acid-fast bacilli; primary antiphospholipid syndrome is excluded because thrombosis and ulceration were mediated by endothelial mycobacterial invasion rather than primary thrombophilia.",
+  "case_prompt": "A 28-year-old female worker from south-central China presented with a 1-year history of recurrent cutaneous nodules distributed over almost her entire body. The illness began as a single dark-red nodule on the left shoulder that progressed to painful ulceration and weeping, followed by widespread erythema, nodules, erosions, recurrent fevers with temperatures reaching 41°C, and polyarthralgia. Over the preceding year, older lesions resolved into extensive atrophic scars, predominantly over the face, lower back, and extremities. She had been treated at multiple hospitals with prednisone and hydroxychloroquine under presumptive diagnoses of nodular panniculitis or lupus erythematosus panniculitis, experiencing temporary clearing followed by frequent relapses.\n\nOn examination, she exhibited dark-red macules and nodules ranging from soybean to peanut size across her face and lower extremities, along with large areas of atrophic scarring. Dermatologic examination revealed alopecia of the lateral eyebrows. Neurological examination demonstrated mild hypesthesia over the extensor aspect of the lower legs, ankles, and lateral plantar regions; no peripheral nerves were tangibly thickened. Baseline investigations revealed a normal bone marrow examination, slightly elevated erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP), and a positive anticardiolipin antibody titer (40 RU/mL; normal <12 RU/mL). Other routine laboratory tests were normal. Serologic assays for human immunodeficiency virus (HIV), syphilis, and hepatitis B and C were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lupus erythematosus panniculitis (LEP)",
+      "rule_out_reason": "Considered due to painful ulcerating subcutaneous nodules, atrophic scarring, fevers, arthralgias, and positive anticardiolipin antibodies, but ruled out by hypesthesia on the lower extremities, lateral eyebrow alopecia, and heavily bacillary slit-skin smears.",
+      "quote": "The patient had been misdiagnosed as nodular panniculitis or lupus erythematosus panniculitis (LEP) in many hospitals previously and was treated with prednisone (the exact dosage is unknown), hydroxychloroquine irregularly, during the period, as nodules, ulceration and necrosis faded away, leaving atrophic scars, yet lesions relapsed frequently."
+    },
+    {
+      "candidate": "Idiopathic nodular panniculitis",
+      "rule_out_reason": "Thought to explain the tender, relapsing lobular-appearing inflammatory skin nodules, but does not account for peripheral sensory deficits, madarosis, or occlusive vasculopathy secondary to mycobacterial invasion.",
+      "quote": "The patient had been misdiagnosed as nodular panniculitis or lupus erythematosus panniculitis (LEP) in many hospitals previously and was treated with prednisone (the exact dosage is unknown), hydroxychloroquine irregularly, during the period, as nodules, ulceration and necrosis faded away, leaving atrophic scars, yet lesions relapsed frequently."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The demonstration of a 4+ bacteriological index on slit-skin smears, and biopsy showing necrotizing thrombotic vasculopathy with intracellular acid-fast bacilli exhibiting 100% 16S rRNA gene sequence homology to Mycobacterium leprae established diffuse multibacillary leprosy with Lucio's phenomenon.",
+      "quote": "Slit-skin smear examination of the ears and elbows revealed a bacteriological index of 4+ (indicating at least 10 bacilli per field)."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops strictly before slit-skin smears and biopsy. Zero pathogen or disease name leaks. Verbatim quotes from the article corroborate all differentials and the diagnostic pivot."
+}

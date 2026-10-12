@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7305372_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 28-year-old male presents with a right groin mass and dull mechanical back pain lasting 4 months without antecedent pulmonary history. The central diagnostic challenge is recognizing that a superficial groin lump in a young patient can represent an indolent retroperitoneal 'cold abscess' dissecting along the iliopsoas sheath from underlying lumbosacral spinal infection rather than an inguinal hernia, soft tissue neoplasm, or local lymphadenopathy.\n2. Admission Breakpoint: Surgical and orthopedic clinic presentation with normal abdominal exam and palpable groin mass with mechanical back pain, immediately before referral for specialist spine evaluation and confirmation of tuberculous spondylitis.\n3. Differential Distinctions: Inguinal/femoral hernia or primary digestive wall lesion (ruled out by absence of abdominal abnormality or reducible bowel contents), pyogenic psoas abscess / bacterial spondylodiscitis (characterized by acute fever, severe leukocytosis, and systemic toxemia rather than an indolent 4-month course), and degenerative disk disease (explains back pain relieved by rest, but cannot account for a palpable groin mass).",
+  "case_prompt": "A 28-year-old man presented for surgical evaluation complaining of a lump in the right groin region accompanied by lower back pain (visual analogue scale score 5) that had been present for four months. The back pain did not radiate into the legs and was alleviated when lying down in a supine position. He reported no lower extremity numbness or paresthesias, and had no bowel or bladder dysfunction. He had no known personal history of pulmonary disease or previous infections.\n\nOn physical examination, the abdomen was normal, non-distended, and non-tender with no organomegaly or abdominal masses. A distinct mass was palpable in the right groin area. Neurological examination showed intact sensation and motor function in the lower extremities without sphincter disturbance. The patient's baseline functional status demonstrated moderate disability on the Oswestry Disability Index, with a normal functional score on the Japanese Orthopaedic Association assessment.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Inguinal hernia or primary gastrointestinal defect",
+      "rule_out_reason": "A groin mass in a young man commonly prompts evaluation for an inguinal hernia or gastrointestinal wall defect, but clinical examination revealed no abdominal abnormality or reducible visceral defect, prompting orthopedic referral.",
+      "quote": "A 28-year-old male was seen by the digestive surgery for a lump on the right groin area with a back pain (VAS 5) for the past four months. Because there was no abnormality in abdomen area, the patient was consulted to Orthopaedic Department."
+    },
+    {
+      "candidate": "Acute pyogenic spondylodiscitis / pyogenic psoas abscess",
+      "rule_out_reason": "Acute pyogenic spine infections typically present with high spiking fevers, acute systemic toxicity, and rapid progression; here the patient exhibited an indolent 4-month history without radicular deficits or acute inflammatory collapse.",
+      "quote": "The pain did not radiate and was relieved when the patient lies down on his back. There was no numbness or tingling sensation. He had no trouble with micturition and defecation."
+    },
+    {
+      "candidate": "Mechanical lumbar disc herniation / degenerative spine disease",
+      "rule_out_reason": "Mechanical back pain relieved by recumbency is typical of lumbar disc pathology, but degenerative disease alone cannot account for a concomitant palpable mass in the right groin.",
+      "quote": "The pain did not radiate and was relieved when the patient lies down on his back."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Specialist referral to the pulmonary and orthopedic divisions established that the groin mass represented a descending cold abscess arising from lumbosacral tuberculous spondylitis (Pott's disease), prompting anti-tuberculous chemotherapy and arthroscopic abscess decompression.",
+      "quote": "However, the patient was sent to the pulmonary division before our department and was diagnosed with tuberculous spondylitis and was given anti-tuberculous drugs since then."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set at initial clinical consultation prior to pulmonary workup and confirmation of tuberculous spondylitis. Zero spoilers in case prompt."
+}

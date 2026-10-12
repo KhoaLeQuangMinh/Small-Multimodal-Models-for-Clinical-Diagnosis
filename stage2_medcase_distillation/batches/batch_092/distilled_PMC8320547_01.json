@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8320547_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 15-year-old female presents with a 6-month indolent history of nocturnal fevers, significant weight loss, generalized lymphadenopathy, massive hepatosplenomegaly (Hackett grade V), and pancytopenia. The presentation intensely mimics a hematologic malignancy (such as lymphoma or leukemia) as well as disseminated fungal infections or chronic disseminated tuberculosis.\n2. Admission Breakpoint: The admission triage presentation concludes following physical exam, admission laboratory testing documenting pancytopenia, and abdominal ultrasound/CT confirming hepatosplenomegaly, immediately prior to invasive bone marrow aspirate/biopsy and send-out serological assays.\n3. Differential Distinctions: Lymphoproliferative/myeloproliferative malignancies and secondary myelodysplastic syndromes were considered but excluded by immunophenotyping demonstrating only 1% blasts without malignant monoclonal proliferation; disseminated tuberculosis was ruled out by negative tuberculin skin testing; bone marrow histopathology revealed macrophage intracellular parasitism and positive rK39 ELISA confirmed visceral leishmaniasis.",
+  "case_prompt": "A 15-year-old female residing in a rural community in the Macanao municipality on Margarita Island, Venezuela, presented to the health center with a 6-month history of intermittent nocturnal fevers, progressive malaise, a 6-kg weight loss, arthralgias, anorexia, dizziness, and secondary amenorrhea. She lived in a house constructed with brick walls, cement floors, and a metal roof without municipal running water, in proximity to a landfill. Her household kept pet turtles and a dog. She had no history of travel outside the country.\n\nOn physical examination, she appeared pale and chronically ill. Temperature was 39.0 °C, with elevated heart and respiratory rates. Weight was 49 kg (36th percentile) and height was 1.57 m (22nd percentile), with an abdominal circumference of 76 cm. Generalized cervical, axillary, and inguinal lymphadenopathy was palpated. Cardiovascular and pulmonary examinations were unremarkable. The abdomen was distended with marked right upper quadrant tenderness; the liver was palpable 9.5 cm below the right costal margin at the midclavicular line, and massive splenomegaly was noted (Hackett grade V).\n\nInitial triage blood work revealed pancytopenia. Abdominal ultrasound and computed tomography confirmed marked hepatosplenomegaly without discrete focal mass lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hematologic malignancy (Lymphoproliferative or myeloproliferative disorder)",
+      "rule_out_reason": "Considered due to the prominent B symptoms, generalized lymphadenopathy, marked hepatosplenomegaly, and peripheral pancytopenia, but bone marrow flow cytometry showed non-neoplastic maturation arrest with only 1% blasts.",
+      "quote": "Immuno-phenotyping of bone marrow cells demonstrated a heterogeneous population of leukocytes with arrest and anomalies in the myeloid line's antigenic maturation, and 1% of blasts compatible with a secondary myelodysplastic syndrome."
+    },
+    {
+      "candidate": "Tuberculosis (Disseminated / Extrapulmonary)",
+      "rule_out_reason": "Considered as a leading infectious etiology for prolonged fever of unknown origin with hepatosplenomegaly and generalized adenopathy, but tuberculin skin testing was negative.",
+      "quote": "Tuberculin skin testing and serologies for human immunodeficiency virus (HIV), syphilis, cytomegalovirus, and Epstein-Barr virus were all negative."
+    },
+    {
+      "candidate": "Systemic mycosis (Histoplasmosis)",
+      "rule_out_reason": "Considered because endemic fungal infections can cause prolonged fever, hepatosplenomegaly, and cytopenias, but fungal cultures remained negative.",
+      "quote": "Cultures were negative, but the K-39 ELISA Leishmania titers were positive at 1:100."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Visceral leishmaniasis)",
+      "rule_out_reason": "Direct microscopic examination of bone marrow trephine biopsy demonstrated high-density intracellular parasitism within marrow macrophages along with positive rK39 serology.",
+      "quote": "Bone marrow biopsy showed hypocellularity, discrete collagen fibrosis, and increased macrophages with severe intracellular colonization of Leishmania donovani (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned before bone marrow aspiration and send-out serology. No disease or pathogen spoilers in case prompt. Verbatim quotes matched."
+}

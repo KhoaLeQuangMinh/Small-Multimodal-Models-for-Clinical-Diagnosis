@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8281055_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 51-year-old woman with dermatomyositis on high-dose immunosuppression presents with acute left knee monoarthritis, septic shock, multi-organ failure, and septic cardiomyopathy. The clinical tension lies in deciphering that the culture-negative septic arthritis and fatal septic shock are not caused by standard pyogenic bacteria or a severe rheumatologic flare, but by fulminant disseminated Mycobacterium tuberculosis infection.\n2. Admission Breakpoint: The breakpoint is positioned at ICU admission triage and initial resuscitation, when hemodynamic shock, high fevers, monoarticular knee effusion, pleural exudate, acute liver/kidney injury, thrombocytopenia, and emergent coronary angiography (demonstrating non-obstructive coronary arteries and EF 30%) are documented, before joint fluid acid-fast microscopy and blood/synovial fluid next-generation sequencing (NGS).\n3. Differential Distinctions: Acute pyogenic bacterial septic arthritis (e.g. S. aureus) is ruled out by negative standard bacterial cultures and lack of improvement on vancomycin, imipenem/cilastatin, and linezolid. Acute coronary syndrome / cardiogenic shock is ruled out by emergent coronary angiography demonstrating absence of coronary occlusion and a depressed EF of 30% consistent with septic cardiomyopathy. Dermatomyositis flare is ruled out by profound procalcitonin elevation, purulent joint fluid, and molecular identification of M. tuberculosis on NGS.",
+  "case_prompt": "A 51-year-old woman with a two-year history of dermatomyositis managed with oral prednisone (25 mg daily) and cyclosporine (75 mg twice daily) was transferred to the intensive care unit (ICU) due to persistent high fever, sudden hypotension, and multi-organ failure. One month prior to transfer, she developed erythema and painful swelling of her left knee joint; arthrocentesis and blood cultures performed at an outside facility yielded no bacterial growth. Concurrently, she experienced intermittent productive cough, night sweats, and recurrent fevers reaching up to 40.0°C. Four days prior to ICU transfer, she was admitted to the rheumatology service, where an exudative right pleural effusion was identified (bacterial culture showed no growth), and empirical intravenous vancomycin and methylprednisolone (20 mg twice daily) were initiated.\n\nUpon transfer to the ICU, she was in profound distributive shock and required immediate hemodynamic resuscitation. Physical examination revealed high fever (39.5°C), marked tachycardia, and severe hypotension. The left knee was overtly swollen, erythematous, warm, and demonstrated a positive patellar ballottement test. An erythematous macular rash was noted across the V-neck distribution of her face and upper thorax. Breath sounds were decreased at the right lung base.\n\nLaboratory testing demonstrated marked elevation of procalcitonin, acute thrombocytopenia, acute kidney injury, and acute hepatic injury. An electrocardiogram (ECG) demonstrated ischemic-pattern ST-segment elevations accompanied by elevated serum myocardial enzymes. Emergent coronary angiography was performed to evaluate for acute myocardial infarction, which demonstrated angiographically normal coronary arteries without occlusion; transthoracic echocardiography showed a left ventricular ejection fraction of 30%, consistent with septic cardiomyopathy. Despite broad-spectrum antimicrobial coverage with intravenous imipenem/cilastatin and linezolid, the patient remained in refractory shock.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Septic Arthritis with Septic Shock",
+      "rule_out_reason": "Considered primary diagnosis given acute purulent monoarthritis, extreme procalcitonin elevation, septic cardiomyopathy, and multi-organ failure; ruled out by repeatedly negative conventional blood and synovial fluid bacterial cultures and non-response to broad-spectrum vancomycin, imipenem/cilastatin, and linezolid.",
+      "quote": "Broad-spectrum anti-infective therapy (imipenem/cilastatin + linezolid) was initiated within the first hour of highly suspected septic shock."
+    },
+    {
+      "candidate": "Acute Coronary Syndrome / Cardiogenic Shock",
+      "rule_out_reason": "Considered due to abrupt hypotension, elevated myocardial enzymes, and ST-segment elevations on ECG; ruled out by emergent coronary angiography demonstrating absence of coronary arterial occlusion, indicating sepsis-induced cardiomyopathy.",
+      "quote": "ECG suggested cardiac infarction and high myocardial enzyme index. In order to rule out the occurrence of acute cardiovascular event, no infarction was detected immediately after coronary angiography. Given the EF value of 30% for the patient, septic heart disease was suspected."
+    },
+    {
+      "candidate": "Severe Dermatomyositis Flare with Systemic Autoimmune Vasculitis",
+      "rule_out_reason": "Considered due to the 2-year dermatomyositis history, V-sign cutaneous rash, and monoarthritis; ruled out by purulent synovial effusion, marked procalcitonin elevation, and definitive microbiological demonstration of mycobacterial infection.",
+      "quote": "Physical examination revealed that the left knee was red and swollen with positive floating patellar test, along with red rash in the V area of face and neck."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing (mNGS) of synovial pus and peripheral blood identifying Mycobacterium tuberculosis, confirmed by direct microscopic identification of acid-fast bacilli in the joint fluid, revealing disseminated mycobacterial septic shock in an immunosuppressed patient.",
+      "quote": "Subsequently, NGS results indicated that the pathogen was \"M. tuberculosis,\" with acid-fast bacilli unexpectedly visible in articular cavity effusion. After an inquiry made about her medical history, it was known that the patient had a history of contact with pulmonary tuberculosis, and such symptoms as night sweating, coughing and expectoration were manifested since around the last month. Thus, the septic shock associated with M. tuberculosis was suspected."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Joint fluid AFB microscopy, mNGS, and T-SPOT excluded from prompt. Zero disease spoilers."
+}

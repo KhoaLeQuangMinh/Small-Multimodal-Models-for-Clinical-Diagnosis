@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10186039_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 55-year-old woman presents non-specifically with abdominal pain, normal vitals, and normal baseline lab values, found on imaging to have multiple hepatic cystic lesions. The true challenge lies in recognizing that silent, life-threatening multiorgan involvement—specifically an interventricular cardiac cyst threatening conduction and coronary perfusion—can coexist with hepatic lesions, demanding strict operative scolicidal precautions.\n2. Admission Breakpoint: Admission triage ends following initial emergency abdominal examination, routine complete blood count, and initial abdominal cross-sectional imaging demonstrating hepatic cysts, immediately prior to preoperative echocardiography and thoracic CT.\n3. Differential Distinctions: Benign simple hepatic cysts or polycystic disease are ruled out by synchronous interventricular septal cystic mass; primary cardiac tumors (such as myxoma) are ruled out by echocardiographic confirmation of a well-defined cystic mass coexisting with hepatic hydatid disease.",
+  "case_prompt": "A 55-year-old woman presented to the emergency department complaining of abdominal pain. On physical examination, her blood pressure and vital signs were normal. She had no peripheral edema, pallor, or jaundice. Abdominal examination was unremarkable, with no localized tenderness, rebound, guarding, or palpable mass lesions.\n\nInitial laboratory workup revealed a normal complete blood count with a white blood cell count of 5,600/µL (differential: 65.0% granulocytes, 30.4% lymphocytes, and 4.8% monocytes). All other baseline laboratory parameters were within normal limits. Cross-sectional computed tomography of the abdomen performed for the evaluation of abdominal pain demonstrated multiple discrete cystic lesions within the liver parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Benign Polycystic Liver Disease / Simple Hepatic Cysts",
+      "rule_out_reason": "Multiple asymptomatic liver cysts often represent benign non-parasitic cysts; however, the surgical candidate evaluation and subsequent cardiac imaging revealed synchronous, structurally distinct cystic involvement of the myocardium requiring scolicidal sterilization.",
+      "quote": "On CT of the abdomen, multiple hydatid cysts of the liver were reported [Figure 1a], as a result of which the patient was considered as a candidate for surgery."
+    },
+    {
+      "candidate": "Primary Intracardiac Neoplasm (e.g., Myxoma)",
+      "rule_out_reason": "Considered when an abnormal septal lesion is detected during pre-operative cardiac clearance in an adult with reduced left ventricular ejection fraction (45%); however, echocardiography demonstrated a classic cystic architecture rather than a solid or gelatinous vascularized cardiac mass.",
+      "quote": "On two-dimensional echocardiography, a 3.8 cm x 3.9 cm cystic lesion was observed in the upper part of the interventricular septum in the heart [Figure 1c], which definitely confirmed the cardiac hydatid cyst."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Two-dimensional echocardiography and subsequent thoracic CT confirmed a 3.8 × 3.9 cm intraventricular septal cystic lesion concurrent with hepatic cyst disease, confirming multiorgan Echinococcus hydatid cyst disease and prompting combined cyst excision with scolicidal hypertonic saline precautions.",
+      "quote": "Subsequent evaluations with a CT scan of the chest reported a 3-cm intraventricular cardiac hydatid cyst [Figure 1b]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning principles. Case prompt is strictly free of pathogen and disease names. Direct verbatim quotes ground all diagnostic reasoning entries."
+}

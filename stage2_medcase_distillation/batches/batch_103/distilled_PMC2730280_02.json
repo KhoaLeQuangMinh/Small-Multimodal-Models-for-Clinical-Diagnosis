@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2730280_02",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: Evaluating an acute febrile illness with an enlarging submandibular nodule, vomiting, diarrhea, lymphopenia, and elevated inflammatory markers in a returning safari tourist, where distinguishing an insect-transmitted protozoan infection from rickettsial eschar disease or bacterial soft-tissue infection is critical to initiating urgently needed antiparasitic therapy.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the physical examination of the submandibular cutaneous lesion and baseline laboratory testing (CRP, CBC showing lymphopenia and thrombocytopenia, routine electrolytes), prior to direct microscopic identification of bloodborne trypomastigotes and lumbar puncture staging.\n3. Differential Distinctions: Bacterial submandibular lymphadenitis/cellulitis was considered due to the acute enlarging neck mass, but ruled out by the absence of local fluctuance/purulence and marked systemic inflammatory and hematologic changes; African tick bite fever produces a cutaneous inoculation eschar, but does not present with extracellular blood parasites; Falciparum malaria causes fever and rigors after travel to Tanzania, but is distinguished by the unique chancre and identification of extracellular trypanosomes rather than intraerythrocytic Plasmodium.",
+  "case_prompt": "A 30-year-old male traveler presents with a 2-day history of an enlarging skin lesion on his neck, accompanied by intermittent fever, a discrete rigor, and two brief episodes of diarrhea and vomiting. He recently returned from a 14-day safari vacation across game parks in Kenya and Tanzania, noting multiple fly and insect bites sustained in the savannah 7 days prior to symptom onset.\n\nOn physical examination, the patient appears ill and febrile. Dermatologic examination of the submandibular region reveals an enlarging, painless, non-pruritic, indurated erythematous lesion. There is no fluctuance, purulent drainage, or surrounding crepitus. Examination of the heart, lungs, and abdomen is unremarkable.\n\nInitial laboratory evaluation demonstrates a marked systemic inflammatory response with a C-reactive protein (CRP) level of 185 mg/L (reference range: <5 mg/L). Complete blood count reveals lymphopenia with an absolute lymphocyte count nadir of 0.42 × 10⁹/L (reference range: 1.5–4.0 × 10⁹/L) and thrombocytopenia with a platelet nadir of 119 × 10⁹/L (reference range: 150–400 × 10⁹/L). Serum biochemistry reveals mild hyponatremia with a sodium level of 131 mmol/L (reference range: 136–145 mmol/L). Routine coagulation studies show no notable coagulopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Submandibular Lymphadenitis / Soft Tissue Infection",
+      "rule_out_reason": "An acute enlarging submandibular lesion accompanied by fever can mimic acute bacterial adenitis or cellulitis, but the painless indurated nodule was non-purulent and represented an inoculation chancre associated with high parasitemia rather than localized bacterial pyoderma.",
+      "quote": "He reported a 2-day history of an enlarging, painless, nonpruritic skin lesion on his neck, intermittent fever, a single rigor, and two brief episodes of diarrhea and vomiting. A characteristic trypanosomal chancre was present on the skin of the submandibular region"
+    },
+    {
+      "candidate": "African Tick Bite Fever (Rickettsia africae)",
+      "rule_out_reason": "Rickettsial spotted fevers acquired on African safaris feature inoculation eschars (taches noires) and fever, but rickettsial infection does not produce marked hemoparasitemia on light microscopy.",
+      "quote": "This 30-year-old male patient visited the Ngorongoro Crater, Serengeti National Park, and Lake Manyara (Figure 2), but noted tsetse bites only while in the Serengeti, 7 days before symptom onset."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Human African Trypanosomiasis (Trypanosoma brucei rhodesiense)",
+      "rule_out_reason": "The diagnostic turning point was the recognition of a pathognomonic trypanosomal chancre in a traveler exposed to tsetse fly vectors in an East African game park, combined with rapid microscopic identification of extracellular flagellated trypanosomes in peripheral blood.",
+      "quote": "diagnosis in the two cases described was straightforward because, as is often the case with early presentations of T. b. rhodesiense, the patients had classic chancres and parasites were easily identified in the blood."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "East African trypanosomiasis characteristically produces an inoculation chancre (a localized furuncle-like or indurated lesion) within days of an infected Glossina bite. In contrast to T. b. gambiense, T. b. rhodesiense typically features high levels of circulating parasitemia detectable by routine light microscopy, along with striking systemic inflammation, thrombocytopenia, and lymphopenia. Early recognition and staging by CSF examination are essential to guide therapy between suramin (stage 1) and melarsoprol (stage 2)."
+}

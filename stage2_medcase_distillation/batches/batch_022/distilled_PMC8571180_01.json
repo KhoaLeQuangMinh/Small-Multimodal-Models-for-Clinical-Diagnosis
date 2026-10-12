@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8571180_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 5-year-old boy presents with 3 months of progressive symptoms of intracranial hypertension (headache, vomiting, irritability) and 3 days of acute altered sensorium (GCS 13). Brain MRI identifies a large intraventricular cyst causing severe foramen of Monro obstruction and gross hydrocephalus. In pediatric patients, intraventricular cysts are most frequently congenital (arachnoid, ependymal, or neuroepithelial cysts) or cystic neoplasms; recognizing the pathognomonic radiological appearance of a collapsed, floating endocyst membrane (Camalote or water-lily sign) is crucial to suspecting a larval cestode infection and preventing life-threatening anaphylaxis during surgical excision.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial triage examination (confirming GCS 13) and admission brain MRI revealing the intraventricular cystic lesion with Camalote sign and obstructive hydrocephalus, strictly prior to craniotomy, intraoperative cyst aspiration, extracranial systemic screening, and histopathology.\n3. Differential Distinctions: Congenital neuroepithelial cysts (arachnoid cyst, ependymal cyst, colloid cyst) are ruled out by the pathognomonic presence of free-floating internal detached membranes. Primary visceral echinococcosis (hepatic or pulmonary hydatid cysts) is ruled out by normal abdominal ultrasound and chest radiograph, establishing an isolated cerebral presentation. Operative retrieval of a free-floating cyst wall and histopathology confirm echinococcosis.",
+  "case_prompt": "A 5-year-old male child is brought to the hospital with a 3-month history of holocranial headache, irritability, and occasional vomiting, followed by a 3-day history of acute mental status decline.\n\nOn physical examination, the child is in an altered sensorium with a Glasgow Coma Scale (GCS) score of 13 (eye opening 3, verbal response 4, motor response 6). Vital signs are stable.\n\nMagnetic resonance imaging (MRI) of the brain reveals a large ruptured cystic lesion within the right frontal horn of the lateral ventricle, featuring an irregular floating internal cyst wall giving a classic Camalote sign (water-lily sign) appearance. The mass causes obstruction of the foramen of Monro, gross obstructive hydrocephalus, ballooning of the frontal horn of the right lateral ventricle, and thinning of the overlying cortex.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital Intracranial Neuroepithelial or Arachnoid Cyst",
+      "rule_out_reason": "Non-parasitic congenital cysts were considered in the differential diagnosis of pediatric intraventricular fluid lesions, but such benign cysts lack the detached, free-floating undulating internal membrane characteristic of the Camalote sign.",
+      "quote": "Magnetic resonanace imaging (MRI) brain were suggestive of a large ruptured intraventricular cyst with irregular floating cyst wall in the right frontal horn giving a typical Camalote sign appearance [Figure 1]."
+    },
+    {
+      "candidate": "Primary Visceral Echinococcosis (Hepatic or Pulmonary Hydatid Disease)",
+      "rule_out_reason": "Extracranial visceral primary hydatid foci were evaluated to determine whether the intracranial lesion represented metastatic dissemination, but systemic imaging was entirely normal.",
+      "quote": "Ultrasonogram of the abdomen and X-ray of the chest were done to evaluate for any other primary lesion, but these didn't reveal any pathology."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cerebral Echinococcosis (Intraventricular Hydatid Cyst)",
+      "rule_out_reason": "The radiological demonstration of a collapsed intraventricular cyst with floating membrane causing foramen of Monro obstruction was confirmed by transcortical operative finding of a free-floating cyst wall in clear CSF and definitive histopathological examination.",
+      "quote": "On the basis of MRI findings working diagnosis of ruptured hydatid cyst was made... Patient underwent right frontal craniotomy and ventricle was opened up through transcortical approach to access the cyst, taking special care to prevent spillage of cyst contents. The cyst wall was free-floating in clear CSF... Histopathology also confirmed the diagnosis [Figure 3]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning framework. Presentation includes admission neurological triage and initial brain MRI, excluding intraoperative findings, histopathology, and albendazole therapy."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9733989_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 35-year-old woman in southern Ethiopia presents with acute-onset right upper quadrant colicky pain, scleral icterus, and conjugated hyperbilirubinemia, mimicking acute choledocholithiasis or acute bacterial cholangitis. The diagnostic challenge is recognizing parasitic extraintestinal biliary migration as the cause of mechanical biliary obstruction in an endemic region.\n2. Admission Breakpoint: Day 1 clinical presentation of colicky RUQ abdominal pain, absence of fever/vomiting, physical exam demonstrating scleral icterus and right hypochondriac tenderness, and baseline laboratory results showing leukocytosis, conjugated hyperbilirubinemia, and elevated ALT. Excludes stool microscopy identifying ova and ultrasound imaging demonstrating intrabiliary helminths.\n3. Differential Distinctions: Choledocholithiasis is the most common cause of acute extrahepatic biliary obstruction with jaundice and colicky pain, but ultrasound reveals tubular motile organisms rather than acoustic shadowing calculi. Acute bacterial cholangitis presents with Charcot's triad, but the patient lacks fever, hypotension, or septic shock.",
+  "case_prompt": "A 35-year-old woman residing in southern Ethiopia presents with a 1-day history of acute right upper quadrant abdominal pain. The pain is described as intermittent, colicky, and nonradiating, without aggravating or relieving factors, and is accompanied by anorexia and nausea. She denies any history of fever or vomiting. On physical examination, vital signs are within normal limits. Scleral icterus is noted, and abdominal palpation reveals tenderness localized to the right hypochondriac region. Initial laboratory investigations demonstrate neutrophilic leucocytosis, conjugated hyperbilirubinemia, and elevated alanine transaminase.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choledocholithiasis",
+      "rule_out_reason": "Considered given the acute colicky right upper quadrant pain, scleral icterus, conjugated hyperbilirubinemia, and elevated alanine transaminase; ruled out by abdominal ultrasonography demonstrating tubular mobile worms obstructing the common bile duct rather than acoustic-shadowing biliary calculi.",
+      "quote": "Her abdominal examination revealed tenderness in the right hypochondriac region. Her laboratory investigations (Table 1) revealed neutrophilic leucocytosis, conjugated hyperbilirubinemia, and elevated alanine transaminase."
+    },
+    {
+      "candidate": "Acute Bacterial Cholangitis",
+      "rule_out_reason": "Considered due to neutrophilic leukocytosis and extrahepatic cholestasis; however, the classic triad of cholangitis was incomplete as the patient remained strictly afebrile with normal vital signs and without evidence of sepsis.",
+      "quote": "She denied any history of fever or vomiting. On physical examination, her vitals were normal, and icteric sclera was noted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by microscopic visualization of characteristic ova on stool examination combined with abdominal ultrasound revealing live worms in the distal common bile duct causing biliary ductal dilation.",
+      "quote": "On stool examination, ova of Ascaris lumbricoides were seen. Furthermore, ultrasonography (USG) of the abdomen revealed worms in the distal common bile duct with partial obstruction, a dilated gallbladder, and dilated right and left hepatic ducts (Figures 1 and 2)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint stops before stool microscopy and ultrasound imaging of worms. Case_prompt contains zero pathogen mentions. Verbatim quotes and canonical target disease verified."
+}

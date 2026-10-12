@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6139003_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 75-year-old woman with a history of bilateral total knee arthroplasty presents with chronic left upper leg pain and a draining sinus tract adjacent to an osteolytic tibial cystic lesion, growing Pseudomonas aeruginosa. The clinical challenge is distinguishing primary bacterial periprosthetic joint infection/osteomyelitis, skeletal tuberculosis, and bone neoplasms from osseous echinococcosis (hydatid cyst of the tibia) complicated by superinfection and subsequent periprosthetic pathologic fracture.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial physical examination and plain radiographic imaging of the lower limb showing a well-demarcated cystic structure in the proximal tibia below the knee prosthesis, prior to sinus wound cultures, incisional biopsy, and histopathologic examination.\n3. Differential Distinctions: Bacterial periprosthetic infection and chronic osteomyelitis were considered due to localized purulent discharge, sinus formation, and culture yielding Pseudomonas aeruginosa; however, intraoperative exploration and histology revealed typical parasitic cuticular membranes, indicating that bacterial growth represented secondary colonization of a ruptured hydatid cyst. Skeletal tuberculosis and bone tumors were considered due to the lytic tibial lesion and indolent course, but excluded by absence of malignancy or mycobacteria on biopsy. The definitive diagnosis of tibial echinococcosis is established by surgical excision showing aggregated membranous whitish tissues and microscopy demonstrating bone tissue with hyaline and germinative membranes characteristic of hydatid cyst.",
+  "case_prompt": "A 75-year-old woman presents to an orthopedic clinic with a two-year history of left upper leg pain and the recent emergence of a discharging sinus over her proximal left leg. Five years previously, she underwent elective bilateral total knee arthroplasty for bilateral gonarthrosis, with an uneventful postoperative recovery. She reports no history of fever, antecedent trauma, chronic granulomatous infections, or bone tumors.\n\nOn physical examination, she is afebrile and in no acute distress. Local examination of the left lower extremity reveals slight swelling and localized tenderness with a mild seropurulent discharge from a sinus tract on the anterolateral aspect of the proximal leg. The remainder of the physical examination is unrevealing.\n\nPlain radiographs of the left lower limb demonstrate a well-demarcated cystic lesion within the left proximal tibia, located 4 cm distal to the tibial component of the knee arthroplasty.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Periprosthetic Joint Infection / Chronic Osteomyelitis",
+      "rule_out_reason": "Considered due to the discharging sinus and isolation of Pseudomonas aeruginosa from the purulent discharge; however, surgical exploration and histopathology demonstrated parasitic membranes within a preexisting bone cyst, confirming that the bacterial infection was secondary colonization of a ruptured hydatid cyst.",
+      "quote": "A purulent sample was collected and sent for microbiological study, after which, to better investigate the nature of the cyst, an incisional biopsy of the lesion was performed, and the sample subjected to histopathologic examination. The laboratory study isolated Pseudomonas aeruginosa, and appropriate antibiotics where then administered according to the susceptibility test carried out."
+    },
+    {
+      "candidate": "Primary or Metastatic Bone Neoplasm",
+      "rule_out_reason": "A well-demarcated osteolytic lesion near a prosthetic joint in an elderly patient raised concern for bone tumors, but incisional biopsy showed no malignant or atypical cells.",
+      "quote": "There was no history of fever, trauma, previous tuberculosis or bone tumors."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Osseous Echinococcosis (Tibial Hydatid Cyst)",
+      "rule_out_reason": "Pathology of the tibial lesion and surgical exploration revealed a diaphyseal cyst containing whitish aggregated membranes; microscopic examination confirmed osseous tissue with characteristic hyaline and germinative membranes diagnostic of hydatid cyst.",
+      "quote": "Microscopy confirmed the diagnosis and revealed osseous tissue with hyaline and germinative membranes, lymphocytes, and monocytes."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt captures Day 1 clinical evaluation and plain radiographs showing the tibial cystic lesion below the knee prosthesis while strictly excluding wound cultures, biopsy histology, and parasite names. Diagnostic reasoning elucidates secondary bacterial superinfection versus primary hydatid cyst."
+}

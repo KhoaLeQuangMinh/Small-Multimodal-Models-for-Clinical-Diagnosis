@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2835670_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: Acute febrile syndrome with intense frontal headache, retro-ocular pain, arthralgia, and myalgias in Brazil. The presentation clinically mimics other tropical arboviral infections (such as Chikungunya or Zika), acute leptospirosis, and influenza, necessitating rapid molecular or serological confirmation.\n2. Admission Breakpoint: The clinical presentation on day 2 of fever before the collection of serum, urine, and saliva for quantitative real-time RT-PCR, viral isolation, and specific serological testing.\n3. Differential Distinctions: Chikungunya is classically distinguished by pronounced symmetric polyarthritis and prolonged rheumatologic sequelae; Leptospirosis features conjunctival suffusion, marked neutrophilic leukocytosis, and acute hepatorenal dysfunction; whereas dengue presents with retro-ocular pain, prominent myalgias, and acute viremia detectable across body fluids.",
+  "case_prompt": "A 30-year-old female presents to the emergency department in Ribeirão Preto, São Paulo, with an acute febrile illness of two days' duration. She reports high fever, severe frontal headache, prominent retro-ocular pain, diffuse arthralgias, and generalized myalgias. She is visibly uncomfortable from body aches and headache, but is hemodynamically stable without evidence of spontaneous hemorrhage or shock.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chikungunya Virus Infection",
+      "rule_out_reason": "Considered due to the sudden onset of fever, frontal headache, arthralgias, and myalgias in South America, but ruled out because the clinical presentation was characteristic of dengue and viral real-time RT-PCR specifically amplified dengue viral RNA.",
+      "quote": "presented symptoms suggestive of DF with high fever, frontal headache, arthralgia, myalgia and retro-ocular pain."
+    },
+    {
+      "candidate": "Leptospirosis / Severe Hemorrhagic Fever",
+      "rule_out_reason": "Considered in the regional differential of acute febrile illness with headache and severe myalgia, but excluded by the mild self-limited clinical course requiring only simple supportive therapy without hemorrhagic complications, renal impairment, or jaundice.",
+      "quote": "The patients received supportive treatment including bedrest, antipyretics, analgesics and oral fluid replacement, and had a good outcome without any complication."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Quantitative real-time RT-PCR detected dengue viral RNA in serum, urine, and saliva samples obtained two days after symptom onset, viral isolation in C6/36 cells confirmed viable virus in serum, and serologic testing demonstrated specific IgM/IgG seroconversion.",
+      "quote": "Dengue RNA was detected in all clinical samples collected two days after the onset of symptoms from both febrile patients (Table 1)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to day-2 triage presentation before viral sampling. Strictly zero pathogen names or spoiler laboratory results in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

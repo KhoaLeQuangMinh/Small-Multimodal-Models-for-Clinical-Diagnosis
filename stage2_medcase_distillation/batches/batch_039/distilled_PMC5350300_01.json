@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5350300_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old female presents with a 2-year history of a slowly expanding warty plaque on the forehead that began following a roadside fall. The clinical tension involves distinguishing post-traumatic cutaneous tuberculosis (tuberculosis verrucosa cutis vs. lupus vulgaris), leprosy, deep fungal infection, or verrucous carcinoma at an atypical anatomical site.\n2. Admission Breakpoint: Clinical triage ends after history of post-traumatic inoculation, dermatologic examination (erythematous warty plaque, sensation testing, nerve palpation), routine laboratory investigations, and normal chest radiography, before tuberculin skin testing and punch biopsy histopathology with acid-fast staining.\n3. Differential Distinctions: Leprosy is ruled out by the absence of hypopigmented anesthetic macules, preserved cutaneous sensation, absent nerve enlargement, and negative epidemiologic exposures; lupus vulgaris is distinguished histopathologically by the prominent pseudoepitheliomatous hyperplasia, marked hyperkeratosis, and presence of acid-fast bacilli characteristic of tuberculosis verrucosa cutis.",
+  "case_prompt": "A 35-year-old female presented with a hyperkeratotic plaque on the left side of her forehead. The lesion started as a small papule 3 months after a roadside fall sustained 2 years earlier, gradually increased in size, and spread in an annular fashion to form a plaque with a warty surface, which had started showing ulceration over the preceding 3 months.\n\nShe reported no history of visit to or residence in known endemic areas for leprosy, no family history of leprosy, and no hypesthesia, anesthesia, tingling, numbness of the hands or feet, reduced sweating, loss of hair, dryness of the eyes, or epistaxis.\n\nOn physical examination, an erythematous annular hyperkeratotic plaque with a warty surface measuring 4 cm \u00d7 5 cm was present on the left side of the forehead, displaying some crusting and a small scar at the periphery. There was no lymphadenopathy. Detailed cutaneous and neurological examination revealed no hypopigmented lesions on the body, no loss of sensation, and no peripheral nerve enlargement. Systemic examination revealed no abnormalities. Routine laboratory investigations and a plain chest radiograph were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leprosy (Hansen's disease)",
+      "rule_out_reason": "Considered as a chronic granulomatous cutaneous disease endemic to the region; ruled out clinically by the lack of sensory loss, absence of hypopigmented anesthetic macules, normal peripheral nerves, and negative epidemiologic history.",
+      "quote": "A detailed history and clinical examination were not in favour of leprosy. She had no history of visit to/residence in known endemic areas for leprosy, no family history of leprosy, no hypo/anaesthesia, tingling, or numbness of hands or feet, and no reduced sweating, loss of hair, dryness of eyes, or epistaxis."
+    },
+    {
+      "candidate": "Lupus vulgaris",
+      "rule_out_reason": "Considered as another clinical variant of cutaneous tuberculosis occurring on the face; ruled out on histopathology which revealed marked pseudoepitheliomatous hyperplasia and hyperkeratosis characteristic of tuberculosis verrucosa cutis rather than typical lupus vulgaris architecture.",
+      "quote": "Also the histopathology was more in favour of TBVC than lupus vulgaris."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculosis verrucosa cutis (TBVC)",
+      "rule_out_reason": "A strongly positive tuberculin skin test (20 mm induration) combined with punch biopsy demonstrating pseudoepitheliomatous hyperplasia, hyperkeratosis, acanthosis, and dermal granulomatous inflammation with acid-fast bacilli on Ziehl-Neelsen stain established tuberculosis verrucosa cutis.",
+      "quote": "Tuberculin skin test was positive with an induration of 20 mm... A punch biopsy from the lesion showed pseudoepitheliomatous hyperplasia with hyperkeratosis, acanthosis... and dense inflammatory infiltrates with epithelioid cells and giant cells in the dermis with few acid fast bacilli (AFB)... A diagnosis of tuberculosis verrucosa cutis was made"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage stopped before PPD/biopsy. Zero spoilers. Quotes verified from article text."
+}

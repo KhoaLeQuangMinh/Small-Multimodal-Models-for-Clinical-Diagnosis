@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5369278_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A patient residing in a non-endemic, high-altitude river valley presents with prolonged high-grade fever, massive splenomegaly, and severe pancytopenia, mimicking an acute hematologic malignancy, aplastic anemia, or primary hemophagocytic lymphohistiocytosis.\n2. Admission Breakpoint: Emergency admission triage and routine diagnostic evaluation (CBC, peripheral blood smear, coagulation panel, viral serologies, chest radiograph, and abdominal ultrasound), prior to invasive bone marrow aspiration/biopsy, ferritin/triglyceride HLH panel, and antileishmanial therapy.\n3. Differential Distinctions: Malaria was excluded by negative peripheral blood microscopy; hematologic malignancy and aplastic anemia were ruled out by a normocellular marrow with preserved trilineage maturation rather than blasts or marrow hypoplasia; visceral leishmaniasis was confirmed by bone marrow demonstration of Leishmania donovani amastigotes alongside histiocytic hemophagocytosis.",
+  "case_prompt": "A 40-year-old male agriculturist from the Ravi river valley region of Himachal Pradesh, India presents with a 1-month history of high-grade fever reaching up to 105°F, accompanied by chills without rigors. Over the preceding 3 weeks, he has noted worsening malaise and easy fatigability. He received an outpatient course of empiric oral antibiotics without improvement. He denies travel to known endemic regions for tropical parasitic illnesses. Review of systems is otherwise unremarkable, and he has no significant past medical history.\nOn examination, he is febrile and appears pale. There is no icterus or peripheral lymphadenopathy. BMI is 21 kg/m². Abdominal examination reveals massive splenomegaly palpable 8 cm below the left costal margin and hepatomegaly with a liver span of 16 cm. The remainder of the physical examination is normal.\nLaboratory investigations reveal severe pancytopenia: hemoglobin 6.7 g/dL, total leukocyte count 600/mm³ (neutrophils 41%, lymphocytes 42%, monocytes 14%), platelet count 36,000/mm³, and corrected reticulocyte count 1.2%. Erythrocyte sedimentation rate (ESR) is markedly elevated at 102 mm/h. Peripheral blood smear demonstrates a macrocytic normochromic picture without intracellular parasites. Prothrombin time is 16 seconds (INR 1.34) with a normal activated partial thromboplastin time. Blood glucose and renal function tests are normal. Viral serologies for hepatitis B surface antigen, hepatitis C virus antibody, and human immunodeficiency virus (HIV) are negative. Chest radiography is normal. Abdominal ultrasonography confirms marked hepatosplenomegaly and a dilated portal vein measuring 15.3 mm. Upper gastrointestinal endoscopy is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "High-grade fevers with chills, marked anemia, and splenomegaly in India frequently indicate Plasmodium infection; however, examination of the peripheral blood smear revealed no intra-erythrocytic parasites.",
+      "quote": "Peripheral smear showed macrocytic normochromic picture and was negative for malaria parasite."
+    },
+    {
+      "candidate": "Primary Hematologic Malignancy / Aplastic Anemia",
+      "rule_out_reason": "Profound pancytopenia with massive splenomegaly raised serious suspicion for acute leukemia, lymphoma, or aplastic anemia; however, bone marrow biopsy demonstrated normocellularity with normal trilineage maturation rather than neoplastic infiltration or hypoplasia.",
+      "quote": "Bone marrow morphology was normocellular with normoblastic erythropoiesis. M:E ratio was 1.5:1. Myeloid and megakaryocytic series were normal in maturation and morphology."
+    },
+    {
+      "candidate": "Chronic Viral Hepatitis / HIV Infection",
+      "rule_out_reason": "Chronic retroviral infection and viral hepatitis can cause secondary cytopenias and hepatosplenomegaly; however, comprehensive serological testing was negative.",
+      "quote": "Hepatitis B surface antigen, anti-hepatitis C virus, and human immunodeficiency virus serology were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bone marrow aspiration and biopsy demonstrating marked histiocytic hemophagocytosis with direct visualization of intracellular and extracellular Leishmania donovani amastigotes, combined with severe hyperferritinemia and hypertriglyceridemia confirming secondary hemophagocytic lymphohistiocytosis.",
+      "quote": "There was a marked increase in histiocytes with a prominent hemophagocytosis. Amastigote forms of Leishmania donovani were seen both intracellularly and extracellularly [Figure 1]."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly adheres to admission breakpoint before bone marrow aspiration and ferritin testing. Zero mention of Leishmania or VL in prompt."
+}

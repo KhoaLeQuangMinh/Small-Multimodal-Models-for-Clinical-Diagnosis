@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6317256_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A newborn presenting with isolated severe microcephaly (0th percentile head circumference) born to an asymptomatic mother who never left a non-endemic region (Massachusetts), whose pregnancy was conceived by in vitro fertilization from an embryo banked years prior to the epidemic, unmasking congenital infection secondary to sexual transmission from an asymptomatic traveling partner.\n2. Admission Breakpoint: Admission triage terminates with the immediate postnatal assessment of the newborn (Apgar scores, anthropometrics, initial physical and hearing exam), before send-out placental PCR, neonatal serologies, and neonatal neuroimaging.\n3. Differential Distinctions: Congenital CMV, rubella, and other TORCH pathogens are excluded by maternal immunity and non-reactive neonatal testing; primary genetic/chromosomal microcephaly is less likely given normal fetal biometry through 33 weeks and absence of dysmorphic features; confirmation rests on placental viral RNA detection.",
+  "case_prompt": "A 32-year-old gravida 3 para 1 woman with a medical history of cervical insufficiency, polycystic ovarian syndrome, antiphospholipid antibody syndrome, and type 2 diabetes mellitus conceived via frozen embryo transfer in Massachusetts. During the pregnancy, her husband traveled frequently for business to an endemic Caribbean region (Haiti). The patient herself had not traveled outside Massachusetts in over ten years. Neither partner experienced fevers, rashes, arthralgias, or other symptoms of systemic illness during the gestation. Antenatal fetal anatomical ultrasound at 18 weeks and interval biometry at 29 and 33 weeks demonstrated normal intracranial anatomy and normal fetal parameters without intracranial calcifications or ventriculomegaly. At 37 weeks of gestation, she delivered a male infant via scheduled cesarean section. Apgar scores were 8 at 1 minute and 9 at 5 minutes. The infant's birth weight was 2775 g (30th percentile) and length was 49.5 cm (65th percentile). However, occipitofrontal head circumference was disproportionately reduced at 29.2 cm (0th percentile). Initial newborn hearing screening was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital Cytomegalovirus (CMV) / Classic TORCH Complex",
+      "rule_out_reason": "Cytomegalovirus and other TORCH pathogens represent the most common infectious etiologies of congenital microcephaly and intracranial vasculopathy; excluded by documented maternal rubella immunity, negative TORCH maternal panels, and negative neonatal CMV testing.",
+      "quote": "His workup for microcephaly included serum and urine Zika RT-PCR and IgM, both of which were ultimately negative; CMV, head ultrasound and MRI were also negative... The mother was rubella immune and had negative testing for other relevant TORCH infections."
+    },
+    {
+      "candidate": "In Vitro Fertilization / Cryopreserved Embryo Viral Contamination",
+      "rule_out_reason": "Considered as a potential vector for transmission during assisted reproduction; however, epidemiologic investigation confirmed that the embryo had been cryopreserved in 2013, two years prior to the regional epidemic outbreak.",
+      "quote": "The embryo was originally frozen in 2013, 2 years before the first identification of a Zika case in Haiti... The timing of the IVF cycle relative to the Zika epidemic in Haiti was discussed with the Massachusetts Department of Public Health and CDC at length and the frozen embryo was determined not to be the source of infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative neonatal serum and urine RT-PCR and IgM testing, the diagnosis of congenital Zika syndrome was definitively confirmed when reference testing at the Centers for Disease Control and Prevention detected viral RNA across all submitted placental specimens, pointing to sexual transmission from the traveling spouse.",
+      "quote": "Approximately 3 months after delivery, confirmation was received from the CDC that all placental samples were positive for Zika RNA, thus supporting the diagnosis of congenital Zika syndrome."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at immediate post-delivery newborn assessment, withholding placental CDC testing and neonatal serologies. Zero mention of Zika virus in the prompt."
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC5958587_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 53-year-old diabetic farmer presents with a one-year history of intermittent high-grade fevers and left subcostal pain associated with multiple calcified splenic granulomas, having failed a six-month course of empiric antitubercular therapy. The clinical dilemma is distinguishing chronic indolent melioidosis (the 'great mimicker') from splenic tuberculosis, sarcoidosis, fungal granulomas, and lymphoma in an agricultural worker from an endemic region.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial clinical evaluation, baseline inflammatory markers (elevated CRP and ESR), and abdominal ultrasound/CT imaging confirming multiple calcified hypoechoic splenic lesions, prior to invasive splenic fine-needle aspiration, lymph node biopsy, and microbiologic cultures.\n3. Differential Distinctions: Extrapulmonary tuberculosis is ruled out by persistent fevers despite six months of full antitubercular therapy and negative X-pert TB PCR on splenic aspirate. Sarcoidosis is excluded by normal serum ACE and clear chest radiography. Infective endocarditis is excluded by normal echocardiography and negative serial blood cultures. Splenic lymphoma and other hematologic malignancies are excluded by normal bone marrow examination and absence of malignant cells on splenic cytology and lymph node biopsy. Definitive diagnosis of splenic melioidosis is established by growth of Burkholderia pseudomallei from splenic aspirate culture.",
+  "case_prompt": "A 53-year-old male farmer with a history of well-controlled diabetes mellitus presents with intermittent episodes of high-grade fever lasting for more than one year, accompanied by occasional dull aching pain in the left subcostal region. He reports no reduction in weight or appetite, and does not consume alcohol. Earlier in his illness, he received a six-month empiric course of antimicrobial therapy directed at suspected splenic granulomatous disease, despite which his fevers and abdominal symptoms persisted.\n\nOn physical examination, his vital signs are within normal limits. Mild axillary lymphadenopathy is noted, deemed clinically insignificant. Abdominal examination demonstrates mild hepatosplenomegaly and dullness to percussion over Traube's space; the remainder of the systemic examination is unremarkable.\n\nInitial triage laboratory testing demonstrates normal routine complete blood counts and chemistries, with an elevated C-reactive protein (CRP) of 9.8 mg/L (reference range: <6 mg/L), an erythrocyte sedimentation rate (ESR) of 60 mm/h (reference range: 3\u201310 mm/h), and a glycated hemoglobin of 6.7%. A plain chest radiograph is normal. Transabdominal ultrasound reveals multiple hypoechoic lesions throughout the spleen with peripheral calcification suggestive of multiple granulomas, findings subsequently confirmed on computed tomography of the abdomen.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Extrapulmonary Tuberculosis",
+      "rule_out_reason": "The patient completed a prior 6-month course of antitubercular therapy without symptomatic relief, and subsequent fine-needle aspiration of the splenic lesion tested negative on GeneXpert PCR.",
+      "quote": "In the beginning, he received a course of antitubercular drugs for 6 months duration for a diagnosis of extrapulmonary TB in spleen, despite which his symptoms persisted."
+    },
+    {
+      "candidate": "Sarcoidosis",
+      "rule_out_reason": "Serum angiotensin-converting enzyme levels and chest radiography were completely normal, and lymph node biopsy showed no evidence of noncaseating granulomas.",
+      "quote": "Blood-borne virus screen, angiotensin-converting enzyme levels, chest X-ray, echocardiography, and bone marrow examination were normal."
+    },
+    {
+      "candidate": "Infective Endocarditis",
+      "rule_out_reason": "Transthoracic echocardiography showed no valvular vegetations or regurgitation, and serial blood cultures showed no microbial growth.",
+      "quote": "Serial blood cultures showed no growth."
+    },
+    {
+      "candidate": "Splenic Marginal Zone Lymphoma / Hematological Malignancy",
+      "rule_out_reason": "Bone marrow examination was normal, and neither splenic fine-needle aspiration cytology nor axillary lymph node biopsy revealed atypical lymphoid or malignant cells.",
+      "quote": "Ultrasound-guided fine-needle aspiration cytology of the splenic lesion was negative for X-pert TB polymerase chain reaction and for malignant cells. Axillary lymph node biopsy did not yield any positive results."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Melioidosis",
+      "rule_out_reason": "The definitive turning point occurred when bacterial culture of the splenic aspirate grew Burkholderia pseudomallei, confirming splenic melioidosis in a diabetic farmer with chronic splenic granulomas.",
+      "quote": "Diagnostic splenectomy was being considered when bacterial culture from the splenic aspirate grew B. pseudomellei and he was initiated on intravenous ceftazidime."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt strictly stops at baseline triage labs and abdominal ultrasound/CT showing multiple calcified splenic granulomas, with zero pathogen or disease names. Invasive splenic aspiration, confirmatory cultures, and hospital course (including ceftazidime-induced immune thrombocytopenia) are restricted to diagnostic reasoning."
+}

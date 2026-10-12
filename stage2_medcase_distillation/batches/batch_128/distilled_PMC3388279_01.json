@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3388279_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 4-month-old infant in rural Iran presents with non-specific gastrointestinal symptoms\u2014feeding refusal, retching, vomiting, mild abdominal distension, and loose stools\u2014alongside maternal diarrhea. The key clinical challenge is distinguishing common infantile viral gastroenteritis or infant colic from an invasive protozoan infection which is exceptionally rare in exclusively or predominantly breastfed infants.\n2. Admission Breakpoint: The admission breakpoint falls right after emergency triage evaluation, physical examination, and basic hematologic/biochemical testing (CBC showing 7% eosinophilia, mild hyponatremia), before stool microscopy reveals cysts and trophozoites and prior to metronidazole administration.\n3. Differential Distinctions: Viral gastroenteritis (rotavirus/norovirus) typically causes watery diarrhea and vomiting without eosinophilia or occult blood/leukocytes in stool; bacterial enterocolitis (Shigella, Salmonella) presents with high fever, toxic appearance, and neutrophilic leukocytosis. Confirmation is achieved via fresh fecal wet mount showing Entamoeba histolytica cysts and hematophagous trophozoites.",
+  "case_prompt": "A 4-month-old male infant residing in a rural district in southwest Iran is brought to the emergency department due to refusal of feeds, vomiting, episodes of retching, and altered stool consistency. His mother reports having concurrent abdominal pain and a recent history of diarrhea. Physical examination demonstrates hyperactive bowel sounds and mild abdominal distension without peritoneal signs. Complete blood count reveals a leukocyte count of 7,800/\u03bcL with 7% eosinophilia. Serum biochemistry demonstrates sodium 130.0 mEq/L, calcium 10.4 mg/dL, and total protein 4.6 g/dL. Urinalysis and urine culture are normal and negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral gastroenteritis (e.g., Rotavirus, Norovirus)",
+      "rule_out_reason": "Viral gastroenteritis is the leading cause of vomiting and loose stools in young infants, but it typically presents with watery non-bloody stools and does not feature peripheral eosinophilia or protozoan forms on fecal examination.",
+      "quote": "The complete blood count showed a leukocyte count of 7800 muL with eosinophilia of 7%."
+    },
+    {
+      "candidate": "Invasive bacterial enterocolitis (e.g., Shigella, Salmonella, Campylobacter)",
+      "rule_out_reason": "Bacterial enterocolitis usually causes marked pyrexia, toxicity, and neutrophilic leukocytosis, rather than a normal leukocyte count of 7,800/\u03bcL with eosinophilia.",
+      "quote": "The complete blood count showed a leukocyte count of 7800 muL with eosinophilia of 7%."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of fresh stool using Lugol's iodine and concentration technique demonstrating Entamoeba histolytica cysts and trophozoites with ingested erythrocytes and leukocytes, resolving completely with oral metronidazole.",
+      "quote": "Direct examination of fresh fecal samples using Lugol's iodine solution and the concentration technique showed E. histolytica cysts and trophozoites with red blood cells (occult blood) and many leukocytes (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed strictly prior to stool microscopy and antiprotozoal therapy. Zero mentions of Entamoeba, amebiasis, or metronidazole in the prompt. Quotes verified."
+}

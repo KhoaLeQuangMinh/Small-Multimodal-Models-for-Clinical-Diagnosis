@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3634208_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 60-year-old immunocompetent male presents with subacute abdominal distension, vomiting, weight loss, and low-grade fever, with examination revealing gross ascites but no peripheral lymphadenopathy or hepatosplenomegaly. Initial imaging reveals splenic hypoechoic lesions. The key tension is distinguishing peritoneal carcinomatosis/lymphoma or pyogenic splenic abscesses from isolated splenic and peritoneal tuberculosis in an otherwise healthy patient without pulmonary disease.\n2. Admission Breakpoint: The breakpoint occurs following clinical history, physical examination revealing shifting dullness and fluid thrill, initial blood counts showing hemoglobin 9 g/dL, blood sugar 98 mg/dL, ESR 90 mm/1st hr, normal liver/renal function, normal chest radiograph, and abdominal ultrasound showing ascites and multiple ill-defined splenic hypoechoic lesions, immediately prior to tuberculin testing, HIV serology, contrast-enhanced CT, and splenic/peritoneal fluid sampling.\n3. Differential Distinctions: Peritoneal carcinomatosis and splenic metastasis/lymphoma are ruled out by negative ascitic fluid cytology and biopsy showing granulomatous rather than malignant cytopathology; pyogenic splenic abscess is ruled out by the lack of septic features and absence of neutrophilic purulence; tuberculosis is confirmed by a positive tuberculin skin test (18 mm), lymphocytic exudative ascites (SAAG 0.8), and CT-guided splenic fine-needle aspiration demonstrating caseating granulomas with Langhans giant cells.",
+  "case_prompt": "A 60-year-old male presented with vomiting, abdominal pain, and abdominal distension persisting for one month, associated with weight loss, anorexia, and low-grade fevers. He was a non-smoker and non-drinker, with no history of contact with chronic cough illnesses or known immunocompromising conditions. On physical examination, he was afebrile with a pulse rate of 84 beats per minute and blood pressure of 120/70 mm Hg. He was anicteric with no peripheral lymphadenopathy. Abdominal examination demonstrated shifting dullness and a positive fluid thrill indicative of free peritoneal fluid; the spleen was not palpable. Initial laboratory investigations showed a hemoglobin level of 9 g/dL, fasting blood glucose of 98 mg/dL, and an erythrocyte sedimentation rate (ESR) of 90 mm in the first hour. Liver and kidney function tests were within normal limits. Plain chest radiography revealed no abnormalities. Abdominal ultrasonography demonstrated ascites and multiple ill-defined hypoechoic lesions within the spleen.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal carcinomatosis / metastatic malignant ascites",
+      "rule_out_reason": "Considered highly likely given subacute weight loss, high-protein exudative ascites, and multiple splenic lesions in an older adult, but cytologic evaluation of peritoneal fluid revealed no malignant cells.",
+      "quote": "Microscopy was requested for malignant cells and mycobacterium which was negative."
+    },
+    {
+      "candidate": "Pyogenic splenic abscess / bacterial peritonitis",
+      "rule_out_reason": "Considered based on multiple peripherally enhancing splenic hypodense lesions and perisplenic fluid, but excluded by the chronic indolent clinical course, lack of acute abdominal signs, and cytological demonstration of caseation rather than pyogenic suppuration.",
+      "quote": "The axial contrast enhanced Computerised Tomography showed irregular hypo dense peripherally enhancing lesions in spleen, and fluid in anterior perihepatic space suggestive of splenic abscess [Figure 1]."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Splenic and Peritoneal Tuberculosis",
+      "rule_out_reason": "Confirmed by a strongly positive tuberculin skin test (18 mm) and CT-guided fine-needle aspiration of the splenic lesions demonstrating caseating granulomas surrounded by Langhans giant cells and epithelioid cells in the setting of high-protein lymphocytic exudative ascites.",
+      "quote": "The cytomorphology showed granulomas with area of caseation in the centre surrounded by variable number of langhans giant cells and epitheloid cells favouring diagnosis of tuberculosis [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative stops strictly at triage labs, chest X-ray, and abdominal ultrasound findings. Tuberculin test, CT-guided fine-needle aspirate cytology, and ascitic biochemistry are correctly kept in the reasoning phase."
+}

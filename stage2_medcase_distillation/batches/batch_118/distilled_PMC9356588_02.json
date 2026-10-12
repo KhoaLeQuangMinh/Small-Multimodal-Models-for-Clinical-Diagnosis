@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9356588_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient is completely asymptomatic with an entirely normal physical examination, presenting only for baseline evaluation following an HIV diagnosis. The clinical challenge lies in recognizing that in the setting of advanced immunosuppression (CD4 count <100 cells/mm³), life-threatening opportunistic infections—specifically tuberculosis—frequently manifest subclinically and with false-negative conventional sputum diagnostics.\n2. Admission Breakpoint: The admission breakpoint occurs after the completion of routine clinical triage, baseline physical examination, and initial laboratory investigations showing a CD4 count of 77 cells/mm³, prior to the execution of targeted mycobacterial molecular testing and urine lipoarabinomannan (LAM) antigen screening.\n3. Differential Distinctions: Key distinctions involve differentiating uncomplicated asymptomatic HIV infection from occult disseminated opportunistic infection, and recognizing that absence of cough or negative sputum testing does not exclude active tuberculosis in severely immunocompromised individuals.",
+  "case_prompt": "A 27-year-old man presents to the clinic for baseline clinical evaluation. He was diagnosed with human immunodeficiency virus (HIV) infection 3 months ago during voluntary serostatus screening after his wife tested positive at a nearby clinic. He reports feeling entirely well, with no fever, chills, night sweats, unintentional weight loss, cough, dyspnea, fatigue, gastrointestinal disturbances, or other complaints.\n\nOn physical examination, vital signs are within normal limits. General appearance is healthy, and the systemic physical examination is entirely unremarkable, with no lymphadenopathy, oral lesions, cutaneous findings, or abnormal pulmonary sounds on auscultation.\n\nBaseline laboratory evaluation reveals a CD4 T-lymphocyte count of 77 cells/mm³. Routine baseline clinical examinations and standard triage laboratory tests are otherwise unrevealing.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Asymptomatic HIV Infection without Opportunistic Infection",
+      "rule_out_reason": "Given the complete lack of constitutional or localized symptoms and normal physical exam, uncomplicated HIV was initial impression; however, profound CD4 depletion (<100 cells/mm³) mandates active screening for subclinical disseminated opportunistic disease.",
+      "quote": "He has no complaints about anything else. All of the physical evidences were unremarkable. Except for the CD4 count, which was determined to be 77cells/mm3, all baseline examinations"
+    },
+    {
+      "candidate": "Pulmonary Tuberculosis with Sputum Excretion",
+      "rule_out_reason": "Active pulmonary tuberculosis was an immediate consideration given high endemicity and severe immunosuppression, but the patient produced no sputum spontaneously and initial conventional molecular sputum testing was unrevealing.",
+      "quote": "all baseline examinations, including tuberculosis investigations using a sputum gene expert, were non-revealing"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "In severely immunocompromised HIV patients with CD4 <100 cells/mm³, subclinical disseminated tuberculosis frequently escapes pulmonary detection; lateral flow urine lipoarabinomannan (LAM) antigen assay provided the decisive rapid point-of-care confirmation of active infection.",
+      "quote": "he subsequently tested for TB LAM, which yielded a positive result. He was subsequently started on anti-TB as recommended"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9356588_02. Sputum GeneXpert and TB LAM were strictly withheld from case_prompt to prevent diagnostic spoilers. Verbatim quotes match article text."
+}

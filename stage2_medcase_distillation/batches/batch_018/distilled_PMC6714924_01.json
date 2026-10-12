@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6714924_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A middle-aged woman presents with an acute arboviral febrile exanthem syndrome (high fever, rash, arthralgias) that is abruptly complicated days later by unprovoked upper extremity deep vein thrombosis (right brachial vein thrombosis) in the absence of indwelling catheters, trauma, or conventional thromboembolic risk factors.\n2. Admission Breakpoint: The breakpoint occurs upon representation with acute painful arm swelling and confirmation of right brachial vein thrombosis on venous duplex ultrasound, strictly before send-out molecular virological assays (PCR) return.\n3. Differential Distinctions: Upper extremity deep vein thrombosis is typically secondary to indwelling central lines, PICC lines, or thoracic outlet syndrome, which were absent here. Other co-circulating arboviruses like Chikungunya and Dengue present with identical acute febrile exanthems, but Dengue primarily induces hemorrhagic diatheses, and specific molecular testing identifies the etiologic flavivirus.",
+  "case_prompt": "A 46-year-old previously healthy female presented to an emergency department in Sergipe, Brazil in January 2016 reporting a 3-day history of high fever (>39°C), generalized joint pain, arthralgia, and an erythematous cutaneous rash. She was managed with supportive hydration and antipyretics and discharged home. \n\nFour days later, she returned to the emergency department with new-onset painful edema of the right upper extremity. She reported no prior history of deep vein thrombosis, local trauma, or prior peripherally inserted central catheter placement, and had received no recent intravenous infusions in the affected right arm. Physical examination revealed painful swelling and edema localized to the right upper extremity. An urgent upper limb venous duplex scan was performed and demonstrated acute right brachial vein thrombosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Catheter-Associated Upper Extremity Deep Vein Thrombosis",
+      "rule_out_reason": "Upper extremity venous thrombosis is overwhelmingly provoked by mechanical vascular endothelial disruption from indwelling lines or recent cannulation. The patient had no instrumentation or infusions in the involved limb.",
+      "quote": "with no prior peripherally inserted central catheter or intravenous infusions in the arm that had brachial thrombosis"
+    },
+    {
+      "candidate": "Chikungunya Virus Infection",
+      "rule_out_reason": "Chikungunya is a common co-circulating arbovirus presenting with high fevers, incapacitating arthralgia, and rash, and can incite inflammatory vascular responses. However, specific viral reverse-transcription polymerase chain reaction excluded Chikungunya and demonstrated Zika infection.",
+      "quote": "Polymerase chain reaction (PCR) test confirmed Zika infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Development of unprovoked right brachial vein thrombosis immediately following an acute febrile exanthematous illness prompted viral molecular diagnostic evaluation, which established the diagnosis by PCR.",
+      "quote": "An upper limb venous duplex scan revealed right brachial vein thrombosis. She was treated with unfractionated heparin followed by vitamin K antagonists (VKAs). Polymerase chain reaction (PCR) test confirmed Zika infection."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case for Zika virus complicated by right brachial vein thrombosis. Strict breakpoint at duplex confirmation of thrombosis before PCR result."
+}

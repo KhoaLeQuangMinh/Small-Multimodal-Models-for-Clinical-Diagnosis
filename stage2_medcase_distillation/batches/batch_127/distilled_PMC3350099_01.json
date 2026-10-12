@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3350099_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old male presents with a 1-month history of increased intracranial pressure symptoms (headache, nausea, vomiting) and acute painless unilateral visual loss, found to have a raised yellowish choroidal mass with vitritis, optic disc swelling, and multiple rim-enhancing intracranial mass lesions. The clinical tension lies in distinguishing primary ocular/central nervous system neoplasia (such as amelanotic choroidal melanoma or brain metastases) from granulomatous infectious diseases (toxoplasmosis, syphilis, or mycobacterial disease) in an immunocompetent patient with an unremarkable chest radiograph.\n2. Admission Breakpoint: The admission triage assessment ends after ophthalmologic examination, initial ocular B-scan ultrasonography, baseline blood count, ESR (14 mm/h), and plain chest radiograph showing clear lung fields. Tuberculin skin testing (Mantoux), send-out infectious serologies, and cranial/orbital contrast-enhanced CT scanning constitute the confirmatory diagnostic workup.\n3. Differential Distinctions: Amelanotic choroidal melanoma presents as a solitary raised pale choroidal mass, but ocular ultrasonography rules out melanoma by demonstrating absence of acoustic hollowing or uveal excavation. Ocular toxoplasmosis and syphilitic neuroretinitis can present with chorioretinal lesions, vitritis, and cerebral ring-enhancing lesions, but are excluded by nonreactive serology for toxoplasmosis and syphilis.",
+  "case_prompt": "A 23-year-old male factory worker presented with a 1-month history of generalized headache associated with nausea and vomiting. Two weeks after the onset of headaches, he developed painless, progressive blurring of vision in the right eye, described as an inferior visual field defect. He also reported anorexia and significant unintentional weight loss, but denied night sweats, cough, or hemoptysis. He had no history of chronic medical illness, known exposure to chronic respiratory infections, intravenous drug use, or high-risk behaviors. On physical examination, systemic examination was normal, with no palpable cervical, axillary, or inguinal lymphadenopathy, and unremarkable cardiovascular, respiratory, and neurological examinations. Ophthalmic examination revealed visual acuity in the right eye of 6/45, which improved to 6/15 with a pinhole; visual acuity in the left eye was normal. There was no relative afferent pupillary defect. Slit-lamp biomicroscopy of the right eye demonstrated mild vitritis without anterior chamber reaction. Funduscopic examination of the right eye revealed a raised choroidal lesion, yellowish at the center with fluffy pinkish edges, measuring 1.5 disc diameters in size and situated 1 disc diameter superior to the optic disc. Retinal arcade vessels appeared tortuous and dilated with perivascular sheathing along the superotemporal and nasal arcades; the optic disc was swollen and hyperemic with gliosis at the inferonasal margin. The left fundus was normal. Ocular ultrasonography of the right eye showed no evidence of retinal detachment, acoustic hollowing, or uveal excavation. Complete blood count was unremarkable, and the erythrocyte sedimentation rate was 14 mm/h. Plain chest radiography revealed no focal parenchymal lesions or consolidations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choroidal Melanoma",
+      "rule_out_reason": "A raised yellowish choroidal lesion accompanied by visual field impairment in a young adult raises concern for an amelanotic choroidal melanoma; however, ocular B-scan ultrasonography showed no evidence of acoustic hollowing, uveal excavation, or retinal detachment, and the patient had prominent ocular vitritis and perivascular sheathing.",
+      "quote": "The ultrasonography of the right eye showed no evidence of retinal detachment, acoustic hollowing, or uveal excavation to suggest choroidal melanoma."
+    },
+    {
+      "candidate": "Ocular Toxoplasmosis or Syphilitic Neuroretinitis",
+      "rule_out_reason": "Posterior uveitis with a focal necrotizing chorioretinal lesion, vitritis, and optic disc hyperemia can be caused by Toxoplasma gondii or Treponema pallidum; however, specific serum serological testing for toxoplasmosis, syphilis, and retrovirus was nonreactive.",
+      "quote": "Serum toxoplasmosis of IgM and IgG was negative. The syphilis and retroviral serology were nonreactive, and connective tissue results also inconclusive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Markedly positive tuberculin skin test (Mantoux 22 mm) alongside brain CT showing multiple peripherally enhancing cerebral abscesses in the frontal and temporal lobes and a characteristic solitary choroidal tuberculoma, with complete visual recovery and lesion resolution following antituberculosis therapy.",
+      "quote": "Mantoux test showed reading of 22 mm... The computerized tomography (CT) scan of the brain and orbit revealed multiple ill-defined peripherally enhancing iso to hypodense lesions with perilesional edema at right frontal and left temporal lobe consistent with cerebral abscesses (Figure 2)... A clinical diagnosis of right choroidal tuberculoma with multiple cerebral abscesses suggestive of tuberculosis infection was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Disseminated tuberculosis presenting as solitary choroidal tuberculoma and multiple ring-enhancing cerebral tubercular abscesses in an immunocompetent young man."
+}

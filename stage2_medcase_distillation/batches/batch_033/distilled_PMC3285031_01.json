@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3285031_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 14-year-old girl with advanced HIV on recent antiretroviral therapy presents with high fever, widespread umbilicated papules, painful oral ulcers, polyarthritis, and osteolytic bone defects. The clinical syndrome strongly mimics disseminated cryptococcosis or disseminated tuberculosis occurring in the setting of immune reconstitution inflammatory syndrome (IRIS); the central tension lies in distinguishing these common opportunistic pathogens from disseminated Talaromyces (Penicillium) marneffei unmasking IRIS.\n2. Admission Breakpoint: Admission triage concludes following clinical examination, immunological staging (CD4/HIV RNA), chest radiography, and peripheral skeletal radiographs of the wrists and ankles, immediately prior to skin biopsy histopathology, bone marrow aspiration, send-out fungal/mycobacterial cultures, and serum cryptococcal antigen testing.\n3. Differential Distinctions: Disseminated cryptococcosis is excluded by negative serum cryptococcal antigen and histopathology showing yeast division by central fission rather than narrow-based budding; disseminated mycobacteriosis is ruled out by negative mycobacterial blood cultures; talaromycosis is established by skin biopsy displaying intracellular and extracellular yeast cells with pathognomonic central septation.",
+  "case_prompt": "A 14-year-old Thai girl presented with a 4-week history of high fever, oral ulcerations, generalized cutaneous eruptions, and severe polyarticular joint pain. Twelve weeks prior to presentation, she had been diagnosed with perinatal human immunodeficiency virus (HIV) infection following episodes of disseminated herpes zoster and opportunistic pneumonia, with an initial CD4+ T-cell count of 39 cells/mm3 (7.2%). She was subsequently initiated on combination antiretroviral therapy (stavudine, lamivudine, nevirapine) and antimicrobial prophylaxis. Eight weeks into antiretroviral therapy, she developed recurrent fever, multiple oral mucosal ulcers, disseminated skin lesions, and joint pain that failed to improve despite multiple empirical courses of oral antibiotics.\n\nOn physical examination upon admission, she had high-grade fever. The lip and oral mucosa exhibited multiple painful ulcerated lesions. Dermatologic examination revealed generalized, non-pruritic erythematous papules and nodules with central umbilication distributed across her face, trunk, and extremities. Musculoskeletal examination demonstrated marked swelling, warmth, and tenderness affecting multiple peripheral joints, including the right shoulder, wrists, metacarpophalangeal joints, knees, and ankles. There was no peripheral lymphadenopathy or hepatosplenomegaly.\n\nInitial laboratory evaluation demonstrated an increased CD4+ T-cell count of 51 cells/mm3 (11%) and an undetectable plasma HIV-RNA level of < 50 copies/mL. Plain chest radiography was normal without infiltrates or mediastinal adenopathy. Plain radiographs of both wrists and ankles revealed multiple round radiolucent osteolytic defects within the bones.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Cryptococcosis",
+      "rule_out_reason": "Disseminated cryptococcal infection is a classic cause of umbilicated molluscum-like cutaneous papules, osteolytic bone lesions, and unmasking IRIS in advanced HIV; however, serum cryptococcal antigen was negative and biopsy showed yeasts dividing by fission rather than budding.",
+      "quote": "Serum cryptococcal antigen was negative."
+    },
+    {
+      "candidate": "Disseminated Mycobacteriosis (TB / MAC)",
+      "rule_out_reason": "Fever, osteolytic skeletal lesions, and necrotizing granulomas occurring during immune reconstitution frequently represent unmasking disseminated tuberculosis or Mycobacterium avium complex; however, blood mycobacterial cultures were negative.",
+      "quote": "Blood was also sent for mycobacterial culture with negative results."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Skin biopsy histology stained with PAS and Grocott methenamine silver (GMS) demonstrated numerous intracellular and extracellular, thin-walled yeast cells with pathognomonic central septation (binary fission), confirming disseminated Talaromyces (Penicillium) marneffei infection in the setting of unmasking IRIS.",
+      "quote": "Tissue sections from skin biopsy stained with hematoxylin and eosin (H&E), periodic acid-Schiff (PAS), and Grocott methenamine silver (GMS) stain revealed numerous intracellular and extracellular, round to oval, elongated, thin-walled yeast cells with central septation (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

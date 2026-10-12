@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2834956_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An acute, severe pelvic presentation mimicking pyogenic bacterial pelvic inflammatory disease or tubo-ovarian abscess with high fever (38.8 °C), severe left lower quadrant pain, elevated inflammatory markers, and a 5 × 6 cm cystic adnexal mass in a severely immunosuppressed woman with HIV (CD4 count 159 cells/µL) off antiretroviral therapy. The acute onset and lack of pulmonary symptoms disguise an extrapulmonary genital mycobacterial infection as a common pyogenic or sexually transmitted bacterial collection.\n2. Admission Breakpoint: Initial hospital admission, triage presentation of acute left lower quadrant pain and fever, baseline inflammatory markers, and pelvic ultrasound showing the 5 × 6 cm left adnexal cystic mass, prior to surgical exploration, intraoperative microbial cultures, and tissue histopathology/PCR.\n3. Differential Distinctions: Acute pyogenic pelvic inflammatory disease / bacterial tubo-ovarian abscess (aerobic, anaerobic, or sexually transmitted pathogens) is the leading initial diagnosis in an immunosuppressed woman with acute pelvic pain and pus, but routine bacterial cultures are negative. Complicated ovarian cyst or neoplasia is suspected given past ovarian cyst surgery, but ruled out pathologically. Genital tuberculosis is established by caseating granulomatous salpingitis and positive PCR testing.",
+  "case_prompt": "A 35-year-old woman of African descent with chronic alcohol and nicotine abuse was admitted to the hospital with a two-day history of left-sided lower abdominal pain and high fever. Her past medical history included human immunodeficiency virus (HIV) infection diagnosed six years prior, for which antiretroviral therapy had been discontinued one year earlier due to medication intolerance. Baseline immunological assessment revealed a CD4 count of 159 cells/µL (13%) and a viral load of 59,000 copies/mL. She had undergone a longitudinal laparotomy six years previously for an ovarian cyst. Secondary testing identified chronic hepatitis B infection, while hepatitis C was negative. She denied any prior history of chronic pulmonary disease.\n\nOn physical examination, her body temperature was 38.8 °C. Abdominal examination demonstrated marked tenderness in the left lower quadrant. \n\nInitial triage laboratory investigations revealed significantly elevated systemic inflammatory parameters. Pelvic ultrasonography demonstrated a 5 × 6 cm cystic mass lesion in the anatomical area of the left adnexa.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Pelvic Inflammatory Disease / Bacterial Tubo-ovarian Abscess",
+      "rule_out_reason": "Acute severe left lower quadrant pain, high fever, and a purulent adnexal fluid collection in an immunosuppressed patient typically represent acute polymicrobial or sexually transmitted bacterial pelvic infection, but extensive aerobic, anaerobic, and chlamydial cultures were negative.",
+      "quote": "In spite of this, cultures for aerobic and anaerobic microbes, cultures of Mycobacterium tuberculosis, as well as Chlamydia trachomatis and Chlamydia pneumoniae were negative."
+    },
+    {
+      "candidate": "Complicated Ovarian Cyst / Ovarian Neoplasm",
+      "rule_out_reason": "A history of prior laparotomy for an ovarian cyst and ultrasound demonstration of a 5 × 6 cm cystic adnexal lesion suggested recurrence of a cystic neoplasm or complicated ovarian cyst, but histological evaluation confirmed an infectious granulomatous inflammatory process.",
+      "quote": "On ultrasound examination a 5 x 6 cm cystic mass lesion in the area of the left adnexa could be displayed (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the excised fallopian tube revealed necrotizing granulomatous salpingitis, and molecular testing identified Mycobacterium tuberculosis complex-specific DNA.",
+      "quote": "Histopathological studies showed a granulomatous salpingitis with central necrosis of the left fallopian tube (Figure 2) and subsequent PCR demonstrated evidence for M. Tb-complex specific PCR products."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to surgical intervention and histopathological/PCR examination. Zero pathogen names or spoilers in the case prompt."
+}

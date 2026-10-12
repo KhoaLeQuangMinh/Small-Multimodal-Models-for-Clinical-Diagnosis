@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11833163_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 4-month-old infant presents with a chronic, one-month-long polymorphic cutaneous eruption characterized by pustular and vesicular-appearing lesions on the palms and soles, accompanied by marked irritability, persistent insomnia, and severe pruritus. In an infant, the acral pustular distribution mimics infantile acropustulosis, dyshidrotic eczema, or bacterial pyoderma (e.g., bullous impetigo), while the family's report of household bedbug exposure introduces an environmental distractor. The clinical tension requires synthesizing the infant's atypical palmoplantar pustular morphology with maternal nocturnal pruritus and interdigital scaling to identify an infectious ectoparasitic infestation.\n2. Admission Breakpoint: The admission breakpoint occurs upon completion of the initial clinical examination of the infant and mother and collection of household exposure history, stopping strictly prior to dermatoscope visualization of burrows and microscopic light examination of skin scale scrapings.\n3. Differential Distinctions: Bedbug bites (cimicosis) cause intensely pruritic erythematous papules and wheals that typically occur in linear or clustered distributions ('breakfast, lunch, dinner') on exposed trunk and extremities, but they do not produce pustular or scaly lesions on the palms, soles, and interdigital web spaces. Infantile acropustulosis produces recurrent sterile pruritic vesicopustules localized strictly to the hands and feet of infants, but it is a non-contagious dermatosis that does not affect family contacts, in stark contrast to the simultaneous presentation of severe nocturnal pruritus and interdigital papules in the infant's co-sleeping mother.",
+  "case_prompt": "A 4-month-old infant boy was brought to a regional hospital clinic by his mother because of an intensely pruritic, progressive cutaneous eruption that had persisted for one month. The infant was the only child in the household and resided with his parents in a rural village outside Kinshasa, Democratic Republic of the Congo. The family reported sleeping together on a single sponge mattress placed on the floor. Daily hygiene included twice-daily bathing and wearing socks. The parents reported a history of itching within the home and suspected a domestic bedbug infestation.\n\nOn physical examination, the infant was afebrile and in good general somatic condition. He exhibited marked irritability and signs of severe sleep disruption (insomnia). Dermatological examination revealed prominent pustule-like papulovesicular eruptions distributed symmetrically over the soles of both feet and the palms of both hands, alongside multiple scaly papular lesions involving the flexor surfaces of the wrists and the interdigital web spaces bilaterally.\n\nA concurrent physical examination of the infant's mother demonstrated generalized erythemato-papular eruptions distributed over the trunk and extremities, with prominent scaly lesions located in the wrist creases and interdigital spaces; she reported severe nocturnal worsening of generalized itching. The infant's father exhibited no cutaneous lesions or pruritus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bedbug Bite Dermatitis (Cimicosis)",
+      "rule_out_reason": "Considered because of the family's suspicion of household bedbug presence, but ruled out because bedbug bites present as clustered or linear urticarial papules on exposed body parts rather than chronic pustular and scaly eruptions preferentially located in the palms, soles, and interdigital creases.",
+      "quote": "Additionally, there was a notion of itching and bedbug infestation at home."
+    },
+    {
+      "candidate": "Infantile Acropustulosis / Dyshidrotic Eczematous Dermatitis",
+      "rule_out_reason": "Considered given the prominent pustule-like lesions and marked irritability localized predominantly to the palms and soles of a 4-month-old infant, but excluded because acropustulosis is a non-infectious condition that does not explain the concurrent, contagious, nocturnal interdigital pruritic eruption present in the co-sleeping mother.",
+      "quote": "pustule-like skin rashes on the soles of the feet and palms of the hands, associated with multiple scaly lesions on the wrist and interdigital spaces that had been exhibited for a month"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive turning point occurred during parasitological investigation, when dermatoscope examination revealed diagnostic burrows on the palm, and microscopic examination of skin scale scrapings at 100x magnification definitively identified female Sarcoptes scabiei mites and their eggs in both the infant and his mother.",
+      "quote": "Parasitological examination using a dermatoscope revealed the scabies burrows on the palm of the right hand. The female S. scabiei mites and eggs were isolated from the infant and his mother after microscopic examination under 100x magnification of scale scraping"
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning. Breakpoint stops following initial clinical exam of infant and mother prior to dermatoscope and skin scrapings. Zero spoilers in case_prompt. Candidates and Diagnostic Pivot supported by verbatim quotes."
+}

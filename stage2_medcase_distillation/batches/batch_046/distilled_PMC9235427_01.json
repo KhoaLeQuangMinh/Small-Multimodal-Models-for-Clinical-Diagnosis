@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9235427_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 19-month-old infant presents with progressive dyspnea, chronic cough, intermittent fevers, slowly enlarging conglomerate cervical masses, and 4 months of limb weakness (paraparesis and right upper extremity weakness). Initial neuroimaging reveals multi-focal mass lesions in the pons, basal ganglia, and thalamus with vasogenic edema and suture diastasis, while chest radiography shows a large lung mass. In an infant with complete vaccinations and no known infectious contacts, the simultaneous presence of pulmonary, nodal, and multiple intracranial masses strongly mimics pediatric disseminated malignancy (lymphoma, neuroblastoma, or multicentric glioma) rather than disseminated multi-organ tuberculosis.\n2. Admission Breakpoint: The admission narrative halts following initial triage examination, vitals, chronic symptom chronology, basic blood work (Hb 6.4 g/dL, WBC 22.3 x 10^3/\u00b5L, albumin 2.7 g/dL, sodium 127 mmol/L), prior head CT findings, and initial anteroposterior chest radiograph showing left lung field mass density, strictly before non-enhanced chest CT, cervical ultrasound, contrast brain MRI, Mantoux testing, gastric aspirate AFB microscopy, and excisional cervical lymph node biopsy.\n3. Differential Distinctions: Pediatric metastatic malignancy (lymphoma, metastatic neuroblastoma) is considered due to large conglomerate cervical lymphadenopathy, pulmonary mass, and multi-focal brain masses, but lymph node biopsy reveals chronic granulomatous lymphadenitis rather than tumor cells; primary multicentric brain neoplasm is excluded by the discovery of concurrent leptomeningitis and pulmonary calcified lesions; acute bacterial pneumonia with septic embolization is ruled out by demonstration of acid-fast bacilli on gastric aspiration.",
+  "case_prompt": "A 1-year-7-month-old male infant was admitted to the hospital with a one-week history of worsening shortness of breath. His illness began with intermittent fevers over the preceding six months and a chronic cough for the past month. His parents also noted noticeable lumps in his neck that had slowly enlarged over the past eight months from the size of a marble to a 5 x 3 cm conglomerated, well-bordered cervical mass. Over the past four months, he developed progressive motor weakness affecting both legs and his right arm. He had no history of seizures, projectile vomiting, known sick contacts, or family history of malignancy. He was born via full-term uncomplicated vaginal delivery assisted by a midwife, with normal birth weight, and had received all recommended childhood immunizations. Prior to admission, a non-contrast computed tomography scan of the head obtained at an outside hospital had revealed multiple mass lesions in the pons, right basal ganglia, and left thalamus, with bilateral temporoparietooccipital vasogenic edema and coronal suture diastasis indicative of raised intracranial pressure.\n\nOn physical examination, the infant appeared chronically ill and tachypneic. Palpation of the neck revealed a firm, well-bordered, conglomerated mass measuring 5 x 3 cm in the cervical region. Neurological examination confirmed weakness in both lower extremities and the right upper extremity. Respiratory examination demonstrated tachypnea and decreased breath sounds over the left hemithorax.\n\nLaboratory investigations on admission showed marked anemia with a hemoglobin level of 6.4 g/dL, leukocytosis with a white blood cell count of 22,300/\u00b5L, hypoalbuminemia with a serum albumin of 2.7 g/dL, and hyponatremia with a serum sodium of 127 mmol/L. Other complete blood cell parameters and routine biochemical indexes were within normal limits. An anteroposterior plain chest radiograph revealed a prominent mass density in the left lung field.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated pediatric malignancy / Lymphoma / Metastatic neuroblastoma",
+      "rule_out_reason": "Concomitant multi-focal mass lesions involving the brain, lung, and cervical lymphatic system in an infant strongly raised concern for lymphoma or metastatic neuroblastoma; however, excisional cervical lymph node biopsy demonstrated chronic granulomatous inflammation without neoplastic cells.",
+      "quote": "Histopathological review of the lumps concluded a chronic granulomatous lymphadenitis and supported a TB infection"
+    },
+    {
+      "candidate": "Acute necrotizing bacterial pneumonia with septic intracranial embolization",
+      "rule_out_reason": "Acute respiratory distress, high leukocytosis (22,300/\u00b5L), and fever could indicate severe pyogenic bacterial pneumonia with metastatic cerebral abscesses, but the chronic multi-month calcified lymphadenopathy and isolation of acid-fast bacilli pointed toward chronic granulomatous infection.",
+      "quote": "According to these manifestations, the authors suspected the mass was giant tuberculoma accompanied by mediastinal lymphadenopathies and bacterial pneumonia"
+    },
+    {
+      "candidate": "Primary central nervous system neoplasm (multicentric glioma / embryonal tumor)",
+      "rule_out_reason": "Progressive focal neurological deficits with multiple intra-axial parenchymal brain masses, severe vasogenic edema, and suture diastasis suggested primary brain tumors, but the concurrent leptomeningeal enhancement and systemic pulmonary mass favored disseminated granulomatous disease.",
+      "quote": "a nonenhanced head CT from a previous hospital revealed multiple masses in the pons, right basal ganglia and left thalamus; bilateral temporoparietooccipital vasogenic edema with bilateral coronary suture diastasis"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when microscopic examination of gastric aspirate demonstrated acid-fast bacilli (AFB) on smear, corroborating multi-organ tuberculomas (giant pulmonary tuberculoma, intracranial tuberculomas, and tuberculous lymphadenitis) in an infant.",
+      "quote": "microscopic test from gastric aspiration showed a positive acid-fast bacillus (AFB) smear proving an active pulmonary TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to Day 1 admission presentation. All advanced CT/MRI chest/brain findings, Mantoux results, gastric aspirate AFB stains, and lymph node histopathology are reserved for the differential reasoning section."
+}

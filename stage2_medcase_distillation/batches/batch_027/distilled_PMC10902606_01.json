@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10902606_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 79-year-old male with recurrent maxillary squamous cell carcinoma undergoing combined immuno-chemotherapy (pembrolizumab, cisplatin, and 5-fluorouracil) develops high fevers (>38\u00b0C) and new bilateral pulmonary nodular infiltrates following two treatment cycles. The central diagnostic dilemma is distinguishing immune checkpoint inhibitor (ICI)-related pneumonitis, viral/opportunistic respiratory infections, or lung metastases from immunotherapy-induced reactivation of latent tuberculosis.\n2. Admission Breakpoint: Day 1 clinical triage following acute febrile presentation after two cycles of immuno-chemotherapy, negative COVID-19 RT-PCR and influenza testing, and chest radiograph/CT demonstrating nodular pneumonia, immediately prior to diagnostic flexible bronchoscopy, mycobacterial smears, and nucleic acid amplification testing.\n3. Differential Distinctions: Immune-related adverse event (irAE) pneumonitis is a frequent complication of pembrolizumab presenting with new pulmonary infiltrates but lacks microbiological evidence and deteriorates without steroids; viral pneumonia was excluded by negative COVID-19 and influenza PCR; metastatic carcinoma was ruled out by the rapid febrile onset and confirmation of acid-fast bacilli on bronchoscopic aspirates (Gaffky 1) and sputum nucleic acid amplification.",
+  "case_prompt": "A 79-year-old man had previously undergone three partial maxillectomies, a modified radical neck dissection, and concurrent chemoradiotherapy (cumulative cisplatin dose exceeding 200 mg/m2) for left-sided maxillary squamous cell carcinoma. He subsequently presented for consideration of another partial maxillectomy for recurrent maxillary squamous cell carcinoma. The patient had no past medical history of chronic granulomatous pulmonary infection, and reported no history of smoking, diabetes, obesity, or chronic immunosuppression. Histopathological analysis of the excised tissue unveiled a positive surgical margin, and immunohistochemical staining revealed strong PD-L1 expression with a combined positive score (CPS) of 20.\n\nFor management of the recurrent, recalcitrant craniofacial carcinoma, systemic immuno-chemotherapy consisting of intravenous pembrolizumab (200 mg/body), cisplatin (80 mg/m2), and 5-fluorouracil (800 mg/m2 per day for four consecutive days) was administered at three-week intervals. No latent mycobacterial screening had been performed prior to drug administration.\n\nFollowing two cycles of this immuno-chemotherapeutic regimen, the patient developed acute pyrexia exceeding 38.0\u00b0C. Respiratory virus diagnostic testing, including COVID-19 molecular reverse transcription assay and rapid influenza tests, yielded negative results.\n\nPhysical examination revealed a febrile elderly male in moderate respiratory distress with diminished breath sounds over the right lung apex. Routine laboratory tests were drawn. Subsequent chest radiography and computed tomography (CT) scans disclosed nodular radiographic manifestations suggestive of pneumonia within the upper right and lower left pulmonary fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Immune Checkpoint Inhibitor-Related Pneumonitis (irAE Pneumonitis)",
+      "rule_out_reason": "In a cancer patient treated with pembrolizumab presenting with new pulmonary nodular infiltrates and fever, immune checkpoint inhibitor pneumonitis was a chief clinical suspect; however, irAE pneumonitis is an abacterial inflammatory reaction that cannot account for positive acid-fast bacilli on respiratory smears.",
+      "quote": "Subsequent chest radiography and computed tomography (CT) scans disclosed nodular radiographic manifestations suggestive of pneumonia within the upper right and lower left pulmonary fields (Figure 1)."
+    },
+    {
+      "candidate": "Acute Viral Pneumonia (COVID-19 / Influenza)",
+      "rule_out_reason": "Acute respiratory decompensation with high fever during cytotoxic chemotherapy raised concern for viral community-acquired pneumonia, but targeted molecular viral assays were completely negative.",
+      "quote": "the patient developed pyrexia exceeding 38 degrees Celsius despite obtaining negative results on COVID-19 reverse transcription polymerase chain reaction (RT-PCR) and rapid influenza tests."
+    },
+    {
+      "candidate": "Pulmonary Metastases from Squamous Cell Carcinoma",
+      "rule_out_reason": "Bilateral nodular opacities on chest CT in a patient with recurrent aggressive head and neck squamous cell carcinoma could suggest hematogenous lung metastasis, but acute high fevers and the identification of acid-fast bacilli on bronchoscopy confirmed an infectious process.",
+      "quote": "Subsequent chest radiography and computed tomography (CT) scans disclosed nodular radiographic manifestations suggestive of pneumonia within the upper right and lower left pulmonary fields (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic bronchoscopy with right apical sampling and sputum evaluation demonstrating positive acid-fast dry smear microscopy (Gaffky 1), positive mycobacterial cultures, and positive nucleic acid amplification testing confirmed immunotherapy-induced reactivation of pulmonary tuberculosis.",
+      "quote": "Specimens procured from the apical region of the right lung exhibited positive outcomes in dry smear microscopy (Gaffky 1). Sputum samples underwent mycobacterial smear microscopy, culture, and nucleic acid amplification. All diagnostic tests yielded affirmative results, ultimately culminating in the diagnosis of pulmonary TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Compliant with Stanford MedCaseReasoning methodology. Breakpoint is set cleanly prior to bronchoscopy and sputum mycobacterial testing. Case prompt describes presentation and chest CT with zero spoilers, disease names, or microbiological results."
+}

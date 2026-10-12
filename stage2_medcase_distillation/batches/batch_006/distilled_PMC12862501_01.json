@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12862501_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: An 11-year-old girl residing in a non-endemic metropolitan country (UAE) presents with 6 months of recurrent painless gross hematuria and sterile pyuria. The absence of systemic signs, normal peripheral eosinophil count, and subtle remote travel history (brief visits to Kenya every 1–2 years) creates tension between common pediatric urologic disorders (e.g., recurrent UTI, glomerulopathy) or rare bladder neoplasms and chronic trematode infestation.\n2. Admission Breakpoint: The breakpoint occurs after initial urologic clinic presentation, physical examination, complete blood count, renal panel, urinalysis with urine culture, and bedside KUB ultrasound showing intraluminal echoes, prior to send-out urine cytology, CT urography, and cystoscopy with cold-cup bladder biopsies.\n3. Differential Distinctions: Bacterial urinary tract infection was considered due to pyuria, frequency, and dysuria/urgency, but urine cultures demonstrated zero bacterial growth (sterile pyuria). Bladder neoplasm / urothelial malignancy was considered due to persistent painless gross hematuria, but urine cytology and bladder biopsies showed no malignancy or dysplasia. Schistosomiasis was confirmed by visualization of Schistosoma haematobium eggs on urine cytology and submucosal calcifications/sandy patches with granulomatous giant-cell reaction on cystoscopy and biopsy.",
+  "case_prompt": "An 11-year-old female presented to the urology clinic with a 6-month history of recurrent painless gross hematuria without blood clots, accompanied by lower urinary tract storage symptoms including urinary frequency and occasional urgency. She had no significant past medical or surgical history and was otherwise in good health. Although born and currently residing in the United Arab Emirates, her family reported occasional brief visits to Kenya (approximately once every 1 to 2 years).\n\nPhysical examination:\n- Hemodynamically stable and afebrile.\n- Abdomen: soft, non-tender, with no palpable masses or organomegaly.\n\nInitial laboratory evaluation:\n- Complete blood count, renal function tests, and serum electrolytes were all within normal reference ranges, with no anemia or peripheral eosinophilia.\n- Urinalysis demonstrated numerous red blood cells and elevated white blood cells.\n- Urine culture yielded no bacterial growth, demonstrating sterile pyuria.\n\nInitial imaging:\n- Ultrasound of the kidneys, ureters, and bladder (KUB) revealed floating intraluminal echoes within the urinary bladder without hydronephrosis or renal parenchymal abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial urinary tract infection / Cystitis",
+      "rule_out_reason": "Suggested by hematuria, pyuria, frequency, and urgency, but repeatedly ruled out by the absence of bacterial growth on urine culture, confirming sterile pyuria.",
+      "quote": "Urinalysis demonstrated numerous red blood cells and elevated white blood cells, while urine culture demonstrated no bacterial growth, indicating sterile pyuria (Table 1)."
+    },
+    {
+      "candidate": "Urothelial / Bladder malignancy",
+      "rule_out_reason": "Considered because persistent painless gross hematuria in children warrants evaluation for occult lower urinary tract masses, but cytology and histopathology showed preserved morphology with no dysplastic or neoplastic changes.",
+      "quote": "Urine cytology was performed early due to persistent painless hematuria despite negative cultures, to evaluate for rare etiologies such as parasitic ova or malignant cells... with no malignant features"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Early urine cytology revealed Schistosoma haematobium eggs in a hemorrhagic background, CT urography demonstrated submucosal calcifications, and cystoscopy revealed mucosal sandy patches with biopsy confirming ova surrounded by a giant-cell reaction.",
+      "quote": "Cytology revealed Schistosoma haematobium eggs in a hemorrhagic and suppurative background with no malignant features... CT urography demonstrated thin, patchy calcifications along the inner bladder wall consistent with submucosal calcifications... Cystourethroscopy was performed under general anesthesia and revealed extensive sandy patches covering the bladder mucosa. Cold-cup biopsies were obtained from both lateral bladder walls, the posterior bladder wall, and the trigone... Histopathology demonstrated preserved urothelial morphology with Schistosoma haematobium ova associated with a giant-cell reaction"
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Zero spoilers in case prompt, exact quotes verified."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4085831_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 29-year-old lifelong urban resident of Rio de Janeiro presented with a 5-month wasting febrile illness, severe pancytopenia, marked hepatomegaly, massive splenomegaly (25 cm), coagulopathy, and cholestatic jaundice. In an urban non-endemic zone without travel history, the presentation strongly mimicked disseminated tuberculosis, hematologic malignancy, or prolonged septicemic salmonellosis, before bone marrow cytology revealed autochthonous urban visceral leishmaniasis.\n2. Admission Breakpoint: The admission clinical encounter concludes following emergency clinical assessment, initial laboratory workup (severe pancytopenia, prolonged PT, cholestasis, hypergammaglobulinemia, negative HIV), and total abdominal ultrasound (20 cm liver, 25 cm spleen, ascites), immediately preceding bone marrow aspiration/biopsy and send-out tropical serologies.\n3. Differential Distinctions: Disseminated tuberculosis was considered due to prolonged nocturnal fever, 10-kg weight loss, and cytopenias, but lacked granulomas on bone marrow. Hematologic malignancies (lymphoma/leukemia) were considered for massive splenomegaly and pancytopenia, but excluded by absence of atypical blasts. Other tropical fevers (malaria, brucellosis, dengue, yellow fever, Chagas) were excluded by negative smears, cultures, and serologies. Autochthonous visceral leishmaniasis was confirmed by visualization of Leishmania amastigotes on bone marrow aspirate.",
+  "case_prompt": "A 29-year-old woman residing in the Caju neighborhood of Rio de Janeiro, Brazil, employed as a cemetery cleaner, was admitted for evaluation of prolonged illness. She reported no history of travel outside the municipal limits of Rio de Janeiro. Five months prior to admission, she developed intermittent nocturnal fevers up to 39\u00b0C that failed to respond to antipyretics, accompanied by anorexia, early satiety, nausea, and vomiting. Over the preceding 3 months, she developed progressive yellow discoloration of the sclera and skin, dark urine, an unintentional weight loss of approximately 10 kg, progressive abdominal distension, and bilateral cold edema of the lower extremities extending to the knees. Multiple previous emergency outpatient evaluations resulted only in symptomatic treatment. She had no prior history of liver disease or alcohol use.\n\nOn physical examination, she was in poor general health, undernourished, dehydrated (+1/+4), with marked pallor (+3/+4), deep jaundice (+2/+4), cyanosis, fever, tachycardia, and eupnea. Abdominal examination revealed moderate ascites, gross hepatomegaly extending 7 cm below the right costal margin, and massive splenomegaly palpable 2 cm below the umbilicus. Bilateral soft pitting edema was present up to the knees.\n\nLaboratory investigations demonstrated severe pancytopenia, prolonged prothrombin time, significant elevations of aminotransferases, hypoalbuminemia, marked hypergammaglobulinemia, and severe cholestatic hyperbilirubinemia. Rapid HIV screening was negative. Total abdominal ultrasound confirmed moderate free peritoneal fluid, gross hepatomegaly measuring 20 cm, massive splenomegaly measuring 25 cm, and cholelithiasis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Tuberculosis",
+      "rule_out_reason": "Considered high in the differential due to the 5-month duration of nocturnal fevers, 10-kg wasting, hepatosplenomegaly, and severe pancytopenia; ruled out by bone marrow examination which showed no acid-fast bacilli or caseating granulomas and instead revealed intracellular protozoan amastigotes.",
+      "quote": "The diagnostic hypotheses contemplated disseminated tuberculosis and visceral leishmaniasis... A diagnosis of AIDS was refuted by HIV testing."
+    },
+    {
+      "candidate": "Lymphoproliferative malignancy (Lymphoma / Leukemia)",
+      "rule_out_reason": "Considered due to massive splenomegaly (25 cm), hepatomegaly, B-symptoms (fever, profound weight loss), severe pancytopenia, and ascites; ruled out by bone marrow aspiration and biopsy showing no neoplastic blast infiltrate.",
+      "quote": "Other hypotheses covered dengue, yellow fever, prolonged septicemic salmonellosis, brucellosis, malaria, Chagas disease and lymphoproliferative malignancies."
+    },
+    {
+      "candidate": "Acute/Subacute endemic tropical infections (Malaria, Septicemic Salmonellosis, Brucellosis, Arboviruses, Chagas)",
+      "rule_out_reason": "Considered given the geographic context, fevers, cholestatic jaundice, and coagulopathy; ruled out by negative thick and thin blood films, sterile blood cultures, negative stool studies, and negative targeted serologies.",
+      "quote": "An evaluation by thick and thin blood smear, blood culture, stool tests, bone marrow biopsy and aspiration and serology for dengue, yellow fever, brucellosis and Chagas disease were requested."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Visceral Leishmaniasis (Kala-azar)",
+      "rule_out_reason": "Bone marrow aspirate demonstrated intracellular Leishmania amastigotes, proving an autochthonous urban transmission case of visceral leishmaniasis in Rio de Janeiro, with subsequent clinical and hematological cure following a course of amphotericin B.",
+      "quote": "The bone marrow aspirate confirmed the presence of Leishmania amastigotes (Fig. 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case describes the first reported autochthonous case of visceral leishmaniasis in the urban center of Rio de Janeiro. Epidemiological surveillance identified domestic reservoirs (infected dogs) in the cemetery workplace. Bone marrow aspiration remains the diagnostic gold standard."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3987999_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 63-year-old diabetic man on low-dose aspirin presents with acute gastrointestinal symptoms, abdominal pain, hemoptysis, profound hemoconcentration (hematocrit 59%), and severe thrombocytopenia. The clinical presentation mimics an acute surgical abdomen, acute pancreatitis, or septic shock from a perforated peptic ulcer, obscuring severe viral plasma leakage and hemorrhagic fever.\n2. Admission Breakpoint: Admission evaluation concludes after physical examination (BP 140/80 mmHg, dehydration, cutaneous rash, petechiae) and initial triage investigations (CBC showing hematocrit 59% and platelets 79,000/mm³, BMP/LFTs showing creatinine 5.0 mg/dL and AST 75 IU/L, acute abdominal series showing no pneumoperitoneum, and abdominal ultrasound/CT showing peri-hepatic and peri-pancreatic fluid and left pleural reaction). Confirmatory progression involves rapid deterioration into refractory shock, multiorgan failure, and post-mortem histopathology.\n3. Differential Distinctions: Acute perforated peptic ulcer / acute peritonitis causes acute abdominal pain and shock, but abdominal plain films showed no free subdiaphragmatic air, and acute perforation could not explain the high hematocrit (59%) with severe leukopenia, rash, and petechiae characteristic of arboviral plasma leakage. Acute necrotizing pancreatitis was suspected due to abdominal pain and peri-pancreatic fluid, but serum lipase was normal (41 IU/L).",
+  "case_prompt": "A 63-year-old man with a history of type 2 diabetes mellitus managed with glibenclamide (Daonil) and taking low-dose acetylsalicylic acid (100 mg daily) presents with a 4-day history of sudden-onset severe headache, myalgia, anorexia, and abdominal pain, followed by the development of diarrhea and hemoptysis.\n\nOn physical examination at admission, he is dehydrated with a blood pressure of 140/80 mmHg. Inspection of the skin reveals a diffuse maculopapular rash and widespread petechiae. Abdominal examination reveals diffuse tenderness without rebound tenderness or rigidity.\n\nInitial laboratory workup demonstrates severe hemoconcentration with a hematocrit of 59%, leukopenia, and thrombocytopenia with a platelet count of 79,000/mm³. Serum biochemistry reveals: aspartate aminotransferase 75 IU/L, alanine aminotransferase 21 IU/L, creatine phosphokinase 126 IU/L, blood urea nitrogen/urea 57 mg/dL, serum creatinine 5.0 mg/dL, and lipase 41 IU/L. An acute abdominal radiographic series reveals no free intra-abdominal air or abnormal gaseous distention. Abdominal ultrasonography and computed tomography demonstrate peri-hepatic and peri-pancreatic fluid collections, a distended gallbladder, cardiomegaly, and discrete opacities in the left lower lung with a marginal pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pancreatitis",
+      "rule_out_reason": "Considered because of severe abdominal pain and the presence of peri-pancreatic and peri-hepatic fluid collections on imaging, but ruled out as the primary etiology by a normal serum lipase level (41 IU/L), with the fluid collections reflecting systemic capillary leak rather than primary pancreatic necrosis.",
+      "quote": "Biochemical parameters evaluated in the serum: aspartate aminotransferase 75 IU/L; alanine aminotransferase 21 IU/L; creatine phosphokinase 126 IU/L; creatinine 5.0 mg/dL; urea 57 mg/dL; lipase 41 IU/L. Ultrasonography revealed peri-hepatic and peri-pancreatic collections confirmed by computed tomography of the abdomen"
+    },
+    {
+      "candidate": "Perforated Viscus / Acute Surgical Abdomen",
+      "rule_out_reason": "Considered due to acute abdominal pain, hemodynamic decline, and gastrointestinal symptoms in a patient taking daily aspirin, but acute abdominal radiography showed no pneumoperitoneum or abnormal gaseous distention at admission, and the profound hemoconcentration with petechial rash pointed to a systemic capillary leak syndrome.",
+      "quote": "Furthermore, he was submitted to routine of acute abdomen that revealed no gaseous distention."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The constellation of sudden fever, headache, myalgias, petechial rash, hemoptysis, profound hemoconcentration (hematocrit 59%), thrombocytopenia (79,000/mm³), polyserositis (pleural effusion and perihepatic/peripancreatic collections), progressing to refractory vasodilatory shock and multi-organ involvement characteristic of severe dengue hemorrhagic fever with plasma leakage.",
+      "quote": "The patient presented a progressive worsening of the clinical, evolving to shock with severe pulmonary congestion, orotracheal intubation and respiratory orthesis, with the use of dopamine and dobutamine. In the next day, it was observed a hemodynamic instability and oliguria, with consequently administration of norepinephrine in increasing doses, culminating in refractory shock and death. The patient died with a clinical diagnosis of dengue hemorrhagic fever"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC3987999_02. All clinical details and admission labs (Hct 59%, plt 79k, AST, Cr, imaging) preserved without spoiling viral etiology. Zero pathogen names in prompt."
+}

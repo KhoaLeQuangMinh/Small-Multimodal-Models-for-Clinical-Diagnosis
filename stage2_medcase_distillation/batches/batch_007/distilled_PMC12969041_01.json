@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12969041_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 73-year-old woman with poorly controlled diabetes presents with subacute unilateral proptosis, diplopia, chemosis, and orbital CT/MRI revealing superior ophthalmic vein (SOV) engorgement. This presentation mimics neurovascular emergencies (carotid-cavernous fistula, cavernous sinus thrombosis) and invasive fungal sino-orbital infections (rhino-orbital mucormycosis or aspergillosis), masking extrapulmonary sinonasal/orbital tuberculosis.\n2. Admission Breakpoint: The admission breakpoint concludes after initial ophthalmologic evaluation, inflammatory labs, negative autoimmune/vasculitis panel, and negative non-invasive neurovascular investigations (cerebral angiography excluding CCF, MRI/MRV excluding CST). Diagnostic nasal endoscopy revealing septal necrosis, tissue biopsy, acid-fast staining, Lowenstein-Jensen culture, and PCR constitute confirmatory testing.\n3. Differential Distinctions: Carotid-cavernous fistula (CCF) causes SOV dilation and proptosis but was ruled out by cerebral angiography. Cavernous sinus thrombosis (CST) causes proptosis and oculomotor paresis but was ruled out by normal MR venography. Sino-orbital mucormycosis was a major concern given uncontrolled diabetes (HbA1c 8.8%) and nasal septal necrosis, but fungal smears/cultures were negative. Wegener's granulomatosis (GPA) was ruled out by negative ANCA and absence of glomerulonephritis.",
+  "case_prompt": "A 73-year-old woman presents with progressive left-sided proptosis, periocular swelling, and binocular diplopia developing five days after an upper respiratory prodrome. She notes vague left retrobulbar pain with eye movement but denies decreased vision. She previously received outpatient ceftriaxone and hydrocortisone, which produced partial reduction in swelling but no improvement in diplopia. Her past medical history is significant for poorly controlled diabetes mellitus and systemic hypertension, with no history of ocular trauma, insect stings, or systemic autoimmune disease.\n\nOn physical examination, best-corrected visual acuity is 6/10 in the right eye and 5/10 in the left eye. Pupillary examination reveals no relative afferent pupillary defect. External examination of the left eye reveals mild periorbital edema, marked (3+) limitation of extraocular motility in all directions of gaze, and non-pulsatile axial proptosis measuring approximately 2 mm by Hertel exophthalmometry, without ptosis, erythema, warmth, or trigeminal sensory deficits. Slit-lamp biomicroscopy demonstrates unilateral 4+ chemosis without episcleral arterialization (corkscrew vessels). Intraocular pressures and funduscopic examination of the optic nerve head and retina are normal bilaterally. Oral examination reveals intact mucosa without ulcers or dental lesions.\n\nOrbital computed tomography and magnetic resonance imaging (MRI) demonstrate left superior ophthalmic vein engorgement with retrobulbar fat stranding and enhancement, but no discrete orbital mass. Cerebral catheter angiography reveals no evidence of a carotid-cavernous fistula, and magnetic resonance venography (MRV) shows normal cavernous sinuses without thrombosis.\n\nLaboratory evaluation demonstrates a white blood cell count of 13,500/microL (86% neutrophils), erythrocyte sedimentation rate (ESR) of 99 mm/h, C-reactive protein (CRP) > 200 mg/L, and HbA1c of 8.8%. Renal function and urinalysis are normal. Rheumatologic serologies (p-ANCA, c-ANCA, anti-dsDNA, anti-Ro/SSA, anti-La/SSB, ANA, rheumatoid factor, and ACE) are negative, and thyroid function tests are normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Carotid-cavernous fistula (CCF) or Cavernous sinus thrombosis (CST)",
+      "rule_out_reason": "Considered because of unilateral proptosis, chemosis, and marked superior ophthalmic vein engorgement; ruled out by cerebral catheter angiography and dedicated magnetic resonance venography.",
+      "quote": "Cerebral angiography showed no evidence of CCF, and Magnetic Resonance Imaging (MRI) and Magnetic Resonance Venography (MRV) ruled out CST."
+    },
+    {
+      "candidate": "Sino-orbital mucormycosis or invasive fungal sinusitis",
+      "rule_out_reason": "Considered strongly in the setting of poorly controlled diabetes and subsequent endoscopically visualized septal necrosis, but fungal smears and mycologic cultures from nasal secretions and tissue biopsy yielded no fungal growth.",
+      "quote": "The biopsy obtained by nasal endoscopy showed evidence of infectious necrosis, and microbiology and mycology tests, including smear and lavage culture of secretions, were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Nasal endoscopy identified necrotic tissue in the nasal septum; biopsy demonstrated necrotizing granulomatous inflammation with 1+ acid-fast bacilli on Ziehl-Neelsen stain, positive growth on Lowenstein-Jensen medium, and positive PCR for Mycobacterium tuberculosis DNA, supported by a 16-mm tuberculin skin test.",
+      "quote": "However, the BK culture was positive for acid-AFB on Lowenstein-Jensen medium. The BK smear was 1 + for AFB with Ziehl-Neelsen stain, and PCR detected M. tuberculosis DNA."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to ENT endoscopy and biopsy. Negative neurovascular workup and baseline inflammatory/rheumatologic labs are included in admission triage. Confirmatory histology, acid-fast smear, culture, and PCR detail the diagnostic pivot."
+}

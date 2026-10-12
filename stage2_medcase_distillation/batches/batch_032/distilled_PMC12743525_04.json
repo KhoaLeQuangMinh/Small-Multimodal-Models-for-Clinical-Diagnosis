@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12743525_04",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 73-year-old man presenting with acute-on-subacute progressive hemiparesis and a right parietal hypodensity on head CT was initially misdiagnosed with and thrombolysed for acute ischemic stroke. However, preceding systemic symptoms (fever, headache, and vomiting for one week) and an atypical lesion appearance on repeat neuroimaging challenged the vascular diagnosis, pointing instead toward an intracranial infectious or inflammatory process.\n2. Admission Breakpoint: The admission clinical presentation concludes upon evaluation at the referral tertiary hospital, following emergency repeat non-contrast head CT demonstrating an atypical right parieto-occipital hypodensity, prompting the initiation of anti-edema therapy (mannitol, dexamethasone) and the decision to perform an urgent lumbar puncture. All post-puncture CSF analyses (pleocytosis, ADA, glucose, CBNAAT), brain MRI findings, HIV testing, and antitubercular treatment response occur post-breakpoint.\n3. Differential Distinctions: Acute ischemic stroke classically presents with sudden-onset focal neurological deficits conforming to a vascular territory without preceding febrile prodrome, whereas CNS tuberculoma with tuberculous meningitis presents with subacute constitutional symptoms and atypical CT findings. Pyogenic brain abscess typically manifests with acute toxic delirium and marked polymorphonuclear pleocytosis, whereas tuberculous CNS infection characteristically presents with lymphocytic pleocytosis, significantly elevated adenosine deaminase (ADA), and marked hypoglycorrhachia.",
+  "case_prompt": "A 73-year-old man with a history of chronic cigarette smoking and alcohol consumption presented as an urgent transfer from an outside community hospital after receiving intravenous thrombolytic therapy for presumed acute ischemic stroke. According to his family, the patient developed low-grade fever, persistent headache, and vomiting one week prior to admission. Over the subsequent three days, he noted progressive left-sided weakness that worsened to profound hemiparesis on the day of presentation. An unenhanced computed tomography (CT) scan of the brain performed at the outside hospital had shown a right parietal hypodensity interpreted as an evolving cerebral infarction, prompting thrombolytic administration. Upon arrival at the referral medical center, the patient was drowsy with dense left-sided hemiparesis. Repeat non-contrast CT of the brain revealed a right parieto-occipital hypodense lesion with features atypical for an acute ischemic vascular territorial infarction. Given his preceding systemic constitutional symptoms, an underlying infectious intracranial etiology was suspected. Intravenous dexamethasone and mannitol were initiated, and an urgent lumbar puncture was arranged.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Ischemic Stroke",
+      "rule_out_reason": "Considered at the initial facility due to acute profound left-sided hemiparesis and right parietal hypodensity on non-contrast CT, which prompted thrombolytic therapy. Ruled out by the 1-week preceding prodrome of fever, headache, and vomiting, and repeat neuroimaging demonstrating a parieto-occipital hypodensity atypical for an arterial territory infarction.",
+      "quote": "The private hospital CT reportedly showed a right parietal hypodensity interpreted as an evolving infarct, leading to thrombolysis. CT brain at our centre revealed a right parieto-occipital hypodense lesion, atypical for ischemic stroke."
+    },
+    {
+      "candidate": "Pyogenic Brain Abscess / Acute Bacterial Meningitis",
+      "rule_out_reason": "Considered because of fever, headache, vomiting, and focal neurodeficits with cerebral edema. Ruled out by CSF analysis demonstrating lymphocytic pleocytosis rather than neutrophilic predominance, elevated adenosine deaminase (ADA 22 U/L), marked hypoglycorrhachia, and molecular detection of mycobacterial DNA.",
+      "quote": "Given systemic symptoms, an infective cause was suspected."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic discovery occurred on Day 3 when CSF analysis revealed lymphocytic pleocytosis, elevated ADA (22 U/L), and low glucose (42 mg/dL), with CBNAAT positive for Mycobacterium tuberculosis, and brain MRI confirming a ring-enhancing lesion in the right paracentral lobule with surrounding vasogenic edema.",
+      "quote": "CSF analysis on Day 3 showed lymphocytic pleocytosis, elevated ADA (22 U/L), and low glucose (42 mg/dL). CBNAAT was positive for Mycobacterium tuberculosis. MRI revealed a ring-enhancing lesion in the right paracentral lobule with surrounding edema, consistent with a tuberculoma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt terminates at admission repeat CT and initiation of triage supportive management prior to CSF examination, brain MRI, and pathogen detection. Zero pathogen spoilers present. Quotes are verbatim from source text."
+}

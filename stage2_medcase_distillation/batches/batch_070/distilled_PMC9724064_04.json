@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9724064_04",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 55-year-old male presents with acute focal neurological deficits, headache, giddiness, and convulsions, following a 5-day febrile prodrome, with MRI revealing an acute subdural hematoma. The clinical tension is establishing the etiology of an intracranial hemorrhage in a normotensive patient with no history of trauma, linking it to infection-induced coagulopathy/thrombocytopenia.\n2. Admission Breakpoint: History of acute focal deficits and seizures preceded by a 5-day febrile illness, physical examination showing normotension and absence of trauma, and initial triage platelet count of 75,000/μL. Confirmatory testing begins with formal viral diagnosis and brain MRI.\n3. Differential Distinctions: Acute ischemic stroke is ruled out by neuroimaging showing an extra-axial hematoma. Traumatic subdural hematoma is ruled out by the absence of trauma. Aneurysmal subarachnoid hemorrhage typically presents with sudden thunderclap headache without subdural crescentic collection. The combination of recent high-grade fever, thrombocytopenia, and spontaneous extra-axial bleeding points to dengue-associated bleeding.",
+  "case_prompt": "A 55-year-old male presents with a 1-day history of acute neurological symptoms including left hand and right leg weakness, slurred speech, occipital headache, and giddiness, accompanied by a single convulsive episode. He reports an antecedent illness of intermittent high-grade fever with chills starting five days prior to presentation. Physical examination confirms he is normotensive, with no evidence of recent head trauma or external bleeding from any site. Initial emergency triage laboratory evaluation demonstrates thrombocytopenia with a platelet count of 75,000/μL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Ischemic Stroke",
+      "rule_out_reason": "Considered given the acute onset of unilateral hand and leg weakness, dysarthria, and headache in a middle-aged patient; however, neuroimaging demonstrated an extra-axial collection with blood-breakdown products rather than acute arterial territorial ischemia.",
+      "quote": "A 55-year-old male presented with a 1-day history of left hand and right leg weakness, slurred speech, occipital headache and giddiness. He also had a single episode of convulsions."
+    },
+    {
+      "candidate": "Traumatic Subdural Hematoma",
+      "rule_out_reason": "Considered given the classic crescent-shaped extra-axial collection overlying the cerebral convexity; ruled out by clinical history confirming normotension and complete absence of trauma or external bleeding diathesis.",
+      "quote": "The patient was normotensive with no recent trauma or bleeding from any site."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by confirming acute febrile infection complicated by significant thrombocytopenia and spontaneous intracranial hemorrhage on GRE MRI sequence.",
+      "quote": "He reported intermittent high-grade fever with chills five days prior to presentation and was subsequently diagnosed with dengue fever with a platelet count of 75 000/microl."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly captures presentation and baseline platelet count before viral confirmation. Zero leaks in case_prompt. Verbatim quotes verified against source text."
+}

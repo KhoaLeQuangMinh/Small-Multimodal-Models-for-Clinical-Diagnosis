@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2892705_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 45-year-old smoker presents with acute pleuritic chest pain and pneumothorax on a background of 6 months of profound weight loss, fever, and progressive dyspnea. The acute mechanical presentation (pneumothorax) threatens to overshadow a chronic bilateral infiltrative lung disease, creating diagnostic conflict between cavitary tuberculosis, bronchogenic carcinoma with secondary rupture, and endemic systemic mycoses such as paracoccidioidomycosis.\n2. Admission Breakpoint: Admission triage concludes following initial hemodynamic stabilization, vital signs, physical examination, emergency chest radiography, and thoracic high-resolution computed tomography, immediately prior to bronchoscopy, bronchoalveolar lavage microbiological analysis, and lung biopsy.\n3. Differential Distinctions: Pulmonary tuberculosis is excluded by negative mycobacterial stains and cultures in bronchoalveolar lavage; bronchogenic carcinoma is ruled out by the absence of malignant cells on cytology and lung biopsy; pulmonary paracoccidioidomycosis is confirmed by histopathologic identification of characteristic yeast forms on open lung biopsy.",
+  "case_prompt": "A 45-year-old man presented to the emergency department with a 4-hour history of sudden, intense right-sided chest pain accompanied by marked acute dyspnea. Review of systems revealed a 6-month history of progressive exertional dyspnea, dry cough, and an unprovoked 22-kg weight loss over the same period. He also reported daily unmeasured febrile episodes over the preceding 2 months. He had a 15 pack-year tobacco smoking history.\n\nOn physical examination, the patient was thin, acyanotic, and visibly tachypneic. Vital signs showed blood pressure 120/90 mmHg, heart rate 112 beats/min, and respiratory rate 32 breaths/min. Pulmonary auscultation revealed diminished breath sounds over the right hemithorax and bilateral inspiratory crackles distributed over the upper two-thirds of both lung fields. The remainder of the physical examination was unremarkable.\n\nInitial laboratory testing showed a normal complete blood count, serum glucose, blood urea nitrogen, serum creatinine, and liver function tests. Serologic testing for human immunodeficiency virus was negative.\n\nChest radiography revealed a small right-sided pneumothorax, bilateral nonhomogeneous opacities predominantly localized to the middle third of both lungs with posterior predominance, and emphysematous changes at the lung bases. High-resolution computed tomography (HRCT) confirmed the right pneumothorax and demonstrated bilateral consolidations with architectural distortion, irregular nodules, interlobular septal thickening, and basal emphysematous changes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Tuberculosis",
+      "rule_out_reason": "A subacute-to-chronic wasting illness with fever, dry cough, and bilateral mid- and upper-zone nodular consolidations strongly mimics pulmonary tuberculosis; however, direct microscopy and cultures of bronchoalveolar lavage fluid were negative for mycobacteria.",
+      "quote": "Direct examination and cultures for mycobacteria and fungi in the bronchoalveolar lavage were negative, and neoplastic cells were absent."
+    },
+    {
+      "candidate": "Bronchogenic Carcinoma",
+      "rule_out_reason": "Substantial 22-kg weight loss, smoking history, progressive dyspnea, and irregular pulmonary nodules with architectural distortion raised high concern for malignant neoplasm; however, cytology and transbronchial biopsy demonstrated no malignant cells.",
+      "quote": "Transbronchial biopsy showed no granulomas or malignant cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Open lung biopsy demonstrated a chronic granulomatous inflammatory process, with direct examination of fresh tissue specimens revealing yeast cells characteristic of Paracoccidioides brasiliensis.",
+      "quote": "Open lung biopsy was performed and showed a chronic granulomatous inflammatory process. The examination of fresh samples revealed yeast consistent with Paracoccidioides brasiliensis."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

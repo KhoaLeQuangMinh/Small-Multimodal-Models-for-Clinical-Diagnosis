@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10219828_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An infant recovering from corrective cardiovascular surgery (patent ductus arteriosus ligation) who develops recurrent unresolving respiratory symptoms, progressive weight loss, and secondary heart failure signs. The presentation closely mimics recurrent bacterial bronchopneumonia, post-surgical atelectasis/airway compression, or residual shunt-driven congestive heart failure, obscuring the primary chronic infection.\n2. Admission Breakpoint: The admission narrative halts upon the patient's acute readmission for unresolving pulmonary symptoms and failure to thrive, following physical examination and chest radiography demonstrating bilateral perihilar mottled opacities, immediately before sputum GeneXpert testing and empiric initiation of anti-tubercular chemotherapy.\n3. Differential Distinctions: Recurrent bacterial pneumonia fails to produce prolonged multi-month progressive wasting, and typically clears following standard outpatient antibacterial courses. Congestive heart failure secondary to residual cardiovascular shunt was excluded by post-operative echocardiography showing complete ductal closure without residual flow.",
+  "case_prompt": "A female infant who previously presented at 9 months of age with severe failure to thrive, congenital heart disease, and bronchopneumonia underwent successful surgical ligation of a 0.4 cm patent ductus arteriosus at 15 months of age, with post-operative echocardiography confirming complete closure and zero residual shunt flow.\n\nOne month following surgery, despite initial post-operative weight gain, she developed a persistent cough with localized rhonchi in the left upper lung zone. Over the subsequent three months, she was evaluated and treated three separate times on an outpatient basis with courses of oral antibiotics and chest physiotherapy for presumed uncomplicated post-surgical bacterial pneumonia. Nevertheless, her cough progressively worsened, she developed high-grade fevers, and she suffered marked loss of her previously regained body weight.\n\nOn readmission, she was in marked respiratory distress with tachypnea and coarse bilateral crepitations throughout all lung fields. Cardiovascular examination revealed resting tachycardia with an S3 gallop rhythm. Abdominal examination demonstrated tender hepatomegaly with the liver palpable 4 cm below the right costal margin. Triage chest radiography revealed persistent bilateral perihilar mottled and fluffy opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent Community-Acquired Bacterial Bronchopneumonia",
+      "rule_out_reason": "Considered due to recurrent fevers, cough, coarse crackles, and perihilar opacities; however, the infant failed three separate outpatient courses of broad-spectrum antibacterial therapy and chest physiotherapy, with progressive clinical decline and severe wasting over three months.",
+      "quote": "she was placed on antibiotics, and chest physiotherapy. She was managed for uncomplicated pneumonia two more times on an outpatient basis. The cough however progressively worsened over 3 months and she also developed a fever and started losing the previously gained weight."
+    },
+    {
+      "candidate": "Residual Congestive Heart Failure / Surgical Complication",
+      "rule_out_reason": "Suspected given the S3 gallop rhythm, tachypnea, hepatomegaly, and cardiomegaly; however, post-operative echocardiography confirmed complete ligation of the ductus arteriosus without residual left-to-right shunt flow, indicating that cardiorespiratory distress was secondary to chronic severe pulmonary infection.",
+      "quote": "The operation was successful as there was good PDA ligation with no residual flow on the echocardiogram (Figure 2 A,B)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite a negative molecular GeneXpert assay (frequent in paucibacillary pediatric disease), the constellation of chronic unresolving pneumonia, failure to thrive with weight loss, and characteristic bilateral perihilar opacities led to empiric anti-tubercular therapy, producing rapid symptomatic resolution and robust weight gain.",
+      "quote": "Chest X-ray (Figure 3) showed bilateral perihilar mottled opacity. GeneXpert test showed mycobacteria tuberculosis was not detected. A diagnosis of PTB was made and she was commenced on anti-tuberculosis drugs with a good response."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The prompt focuses on the readmission presentation and halts prior to GeneXpert testing and anti-tubercular therapy. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

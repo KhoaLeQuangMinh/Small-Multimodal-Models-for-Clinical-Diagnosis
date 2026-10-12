@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4827388_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 58-year-old man presents with subacute fever, vomiting, and confusion for 15 days, followed by profound hypotonic hyponatremia (nadir 116 mEq/L) and high-volume polyuria. While severe hyponatremia in CNS infections is frequently misattributed to the syndrome of inappropriate antidiuretic hormone secretion (SIADH), fluid restriction worsens this patient's state due to cerebral salt wasting syndrome (CSWS), occurring secondary to tuberculous meningitis despite negative initial CSF AFB PCR and fungal smears.\n2. Admission Breakpoint: Initial emergency triage presentation and baseline laboratory workup (fever, vomiting, confusion, serum sodium 130 mEq/L, serum osmolality 240 mOsm/kg, urine osmolality 496 mOsm/kg, FENa 1.2%, uric acid 1.4 mg/dL, unremarkable CXR, abdominal ultrasound, and echocardiogram), prior to subsequent inpatient decline, CT brain, lumbar puncture, and fluid challenge trials.\n3. Differential Distinctions: SIADH is characterized by euvolemic hyponatremia that responds to fluid restriction; whereas cerebral salt wasting syndrome (CSWS) involves hypovolemic natriuresis with high urine output (>4 L/day) that deteriorates on fluid restriction and requires volume and hypertonic sodium repletion; tuberculous meningitis is distinguished by severe lymphocytic pleocytosis with very high protein (>300 mg/dL) and high LDH, responding dramatically to anti-tuberculous therapy.",
+  "case_prompt": "A 58-year-old man presented to the emergency department with a 15-day history of fever, nausea, and vomiting, accompanied by progressive irritability and behavioral confusion for the preceding 5 days.\n\nOn initial admission, the patient was vitally stable. Initial laboratory workup revealed a serum sodium level of 130 mEq/L (reference range, 135–145 mEq/L), serum uric acid of 1.4 mg/dL (reference range, 3.4–7.0 mg/dL), and negative viral serological markers, with the remainder of serum electrolytes within normal limits. Calculated serum osmolality was 240 mOsm/kg (reference range, 285–295 mOsm/kg), urine osmolality was 496 mOsm/kg (reference range, 50–1,200 mOsm/kg), and the fractional excretion of sodium was 1.2%. A plain chest radiograph, abdominal ultrasound, and echocardiography were all unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Syndrome of Inappropriate Antidiuretic Hormone Secretion (SIADH)",
+      "rule_out_reason": "Hyponatremia with concentrated urine and low serum osmolality in the setting of central nervous system infection initially suggested SIADH, but the patient failed a therapeutic trial of fluid restriction and exhibited massive natriuresis with polyuria up to 4 L/24 hours, characteristic of cerebral salt wasting syndrome.",
+      "quote": "Fluid restriction was tried to rule out SIADH secretion but the patient did not improve on it. Keeping in view the above laboratory findings, a final working diagnosis of tuberculosis meningitis and cerebral salt wasting syndrome was made."
+    },
+    {
+      "candidate": "Fungal Meningitis (e.g. Cryptococcus) / Viral Encephalitis",
+      "rule_out_reason": "Subacute febrile encephalopathy with lymphocytic pleocytosis raised suspicion for fungal or viral meningoencephalitis, but fungal smears were negative, viral markers were negative, and CSF culture showed no growth.",
+      "quote": "viral markers were negative... CSF culture revealed no growth while the fungal smear and the acid fast bacilli (AFB) PCR turned out to be negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Marked lymphocytic CSF pleocytosis with profoundly elevated protein (314 mg/dL) and LDH (63 U/mL) in conjunction with severe cerebral salt wasting syndrome responded completely to 3% hypertonic saline, mineralocorticoids, and anti-tuberculous therapy, confirming tuberculous meningitis.",
+      "quote": "cerebrospinal fluid (CSF) analysis showed a protein of 314 mg/dl (normal: <45 mg/dl), lactate dehydrogenase (LDH) of 63 U/ml (reference range: 2-7 U/ml), a total leukocyte count of 490 (reference range: 0-5) with 95% of lymphocytes... The patient was treated with 3% hypertonic saline, mineralocorticoids and anti-tuberculous therapy (ATT), which not only increased his serum sodium to a normal level within 15 days but also improved his condition drastically and he was later discharged."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly kept at day 1 emergency laboratory evaluation. Case prompt omits subsequent lumbar puncture, ATT therapy, and diagnostic labels. Direct quotes support all points."
+}

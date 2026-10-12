@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5366795_01",
+  "disease": "Dengue, Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 50-year-old rural forest worker presents with acute-on-subacute tropical febrile illness featuring hepatosplenomegaly, severe thrombocytopenia, capillary leakage (pleural effusion, pitting edema), jaundice, coagulopathy, and dual cutaneous eschars. The key clinical challenge is recognizing that two distinct vector-borne tropical pathogens—an arboviral infection causing severe thrombocytopenia and vascular leak, and a mite-borne rickettsial infection producing pathognomonic eschars—can simultaneously coinfect a patient with overlapping ecological exposures.\n2. Admission Breakpoint: Admission triage concludes after the physical examination (identifying dual necrotic eschars, jaundice, and hepatosplenomegaly), baseline laboratories (leukocytosis, thrombocytopenia, transaminitis, hyperbilirubinemia, coagulopathy, negative malarial smear), and imaging demonstrating right-sided pleural effusion and hepatomegaly. It strictly stops before send-out serological panels for Leptospira, Salmonella, Dengue, and Orientia tsutsugamushi return.\n3. Differential Distinctions: Leptospirosis presents with the classic triad of fever, jaundice, and acute renal/hematologic dysfunction with hemorrhagic diathesis in agricultural workers, but lacks the pathognomonic cigarette-burn necrotic eschars. Enteric fever causes sustained high fevers, hepatosplenomegaly, and gastrointestinal symptoms, but lacks eschars, pleural effusions, and profound acute thrombocytopenia. Malaria causes cyclical paroxysms of fever with chills, jaundice, and splenomegaly, but is ruled out by negative peripheral blood smears.",
+  "case_prompt": "A 50-year-old woman from Chitwan District, Nepal, presented to a tertiary hospital with a 9-day history of persistent high-grade fever. She reported frequent visits to the jungle to gather firewood and graze cattle.\n\nHer illness began with intermittent fevers reaching up to 104°F, accompanied by chills, rigors, profuse sweating, generalized body aches, profound weakness, headache, nausea, and vomiting. A few days after fever onset, she noted yellowish discoloration of her eyes and observed a small skin lesion over her right shoulder that progressively transformed into a dark crusted lesion. She was initially admitted to a local hospital where significant thrombocytopenia was detected, requiring a transfusion of two units of platelet-rich plasma along with empiric broad-spectrum antimicrobial therapy, but was transferred due to ongoing fever and cytopenias.\n\nOn physical examination, the patient was alert and oriented. Her blood pressure was 100/60 mmHg, heart rate was 98 beats per minute, temperature was 100°F, and respiratory rate was 22 breaths per minute. She had scleral icterus, bilateral palpable axillary lymphadenopathy, and peripheral pitting edema. Dermatological examination revealed a characteristic eschar on the right deltoid featuring a dark necrotic central scab surrounded by an erythematous border, as well as a second similar eschar located on the right waist. Abdominal examination showed hepatomegaly with a liver span of 16 cm and palpable splenomegaly extending 2 cm below the left costal margin. Auscultation of the chest revealed occasional crackles in the right infra-axillary and inframammary regions.\n\nInitial laboratory evaluation demonstrated leukocytosis and thrombocytopenia. Liver function tests were significantly deranged with elevated total and direct bilirubin, aspartate aminotransferase, alanine aminotransferase, alkaline phosphatase, and lactate dehydrogenase. Prothrombin time was prolonged, and serum sodium and potassium were decreased. A peripheral blood smear was negative for intraerythrocytic parasites, and viral hepatitis serologies were nonreactive. An electrocardiogram was normal. Plain chest radiography and abdominal ultrasonography demonstrated hepatomegaly and a right-sided pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis (Weil's syndrome)",
+      "rule_out_reason": "Considered due to the acute onset of high fever, jaundice, hepatosplenomegaly, acute thrombocytopenia, coagulopathy, and occupational jungle exposure in Nepal. Excluded by negative serological antibody testing for Leptospira IgM and IgG.",
+      "quote": "Further reports showed that IgM/IgG antibody for Leptospira was negative, IgM/IgG antibody for dengue was positive (method: immunochromatography), and Widal agglutination test for Salmonella typhi and S. paratyphi was negative."
+    },
+    {
+      "candidate": "Enteric fever (Typhoid / Paratyphoid fever)",
+      "rule_out_reason": "Considered because of prolonged high-grade remittent fever, hepatosplenomegaly, vomiting, and headache in an endemic tropical region. Ruled out by a negative Widal agglutination test and the clinical identification of dual necrotic cigarette-burn cutaneous eschars.",
+      "quote": "Widal agglutination test for Salmonella typhi and S. paratyphi was negative."
+    },
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered due to high intermittent fever accompanied by chills, rigors, sweating, jaundice, and splenomegaly. Ruled out by repeated negative peripheral blood smear examinations for plasmodial parasites.",
+      "quote": "The peripheral blood smear did not show malarial parasite."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Physical examination identification of dual necrotic cigarette-burn cutaneous eschars on the right deltoid and waist in an exposed forest worker with pleural effusion, confirmed by positive rapid immunochromatography for Dengue IgM/IgG and positive ELISA serology for Scrub Typhus, verifying dual acute coinfection.",
+      "quote": "Eschar was visible on right deltoid with necrotic centre forming scab and erythematous periphery (Figure 1). Also similar eschar was found on Rt waist (Figure 2)... Further reports showed that IgM/IgG antibody for Leptospira was negative, IgM/IgG antibody for dengue was positive (method: immunochromatography)... Scrub typhus was positive (method: ELISA)."
+    }
+  ],
+  "final_diagnosis": "Dengue, Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops before serological send-out results are revealed. Zero mention of Dengue, Scrub Typhus, Leptospira, or Salmonella in the case prompt narrative. The differential addresses classic endemic causes of febrile jaundice and hepatosplenomegaly with exact verbatim quotations."
+}

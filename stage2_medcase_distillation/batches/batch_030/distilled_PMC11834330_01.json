@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11834330_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: An 82-year-old male with chronic anxiety and depressive disorders presents with worsening panic attacks and new transient neurological deficits (episodic dysarthria and upper extremity hypoesthesia), initially attributed to severe psychogenic anxiety regarding the COVID-19 pandemic. The clinical tension lies in differentiating a functional psychiatric exacerbation or transient ischemic attack (TIA) from late-reactivating neuroparasitic disease presenting decades after remote military exposure in Angola.\n2. Admission Breakpoint: Emergency department evaluation concludes following initial neurological examination, triage inflammatory markers, and non-contrast cranial CT imaging, immediately prior to inpatient brain MRI, electroencephalography, and Taenia solium serology.\n3. Differential Distinctions: Panic disorder and severe anxiety can cause hyperventilation, paresthesias, and agitation, but do not explain focal unifocal hypoesthesia, transient dysarthria, elevated CRP, and perilesional brain edema on imaging. Transient ischemic attack causes sudden-onset focal deficits but resolves without perilesional vasogenic edema or parenchymal calcifications. Brain neoplasm with calcification (e.g. oligodendroglioma or meningioma) typically displays progressive mass effect, whereas neurocysticercosis demonstrates single or multiple calcified granulomas that can undergo episodic perilesional edema and inflammatory host reaction, confirmed on MRI and serology.",
+  "case_prompt": "An 82-year-old man was admitted to the emergency department following several episodes of transient dysarthria and left arm hypoesthesia, each lasting a few minutes, accompanied by new-onset behavioral changes characterized by aggressive behavior. He had a past medical history notable for severe anxiety and depressive disorders lasting several years, including a previous psychiatric ward hospitalization following his return from a military mission in Angola. Over recent months, there had been an escalation of anxiety symptoms, including descriptions of panic attacks during consultations with his attending physician, who had diagnosed him with anxiety disorder related to a fear of infection during the pandemic. He had no other significant medical history and took no chronic medications.\n\nUpon examination in the emergency room, he exhibited mild dysarthria with no other focal neurological deficits. Cranial nerves, motor power, and sensory examination were otherwise unremarkable.\n\nInitial triage laboratory tests showed elevated inflammatory markers, with a C-reactive protein (CRP) of 18 mg/dL. A non-contrast cranial computed tomography (CT) scan revealed a calcified lesion in the left frontal region with surrounding hypodensity, suggestive of perilesional edema, along with other cortical calcifications without signs of acute activity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary psychiatric illness (Panic disorder / Severe anxiety disorder)",
+      "rule_out_reason": "Considered the working outpatient diagnosis given his long-standing psychiatric history and recent surge in panic attacks attributed to environmental anxiety; however, purely psychiatric disorders cannot account for focal neurological signs (transient dysarthria and left arm hypoesthesia), elevated systemic inflammatory markers, or focal perilesional vasogenic edema on neuroimaging.",
+      "quote": "In recent months, there has been a worsening of anxiety symptoms, including descriptions of panic attacks during consultations with his attending physician, who diagnosed him with anxiety disorder related to a \"fear of COVID.\""
+    },
+    {
+      "candidate": "Transient ischemic attack (TIA) or Acute cerebrovascular event",
+      "rule_out_reason": "Considered in an 82-year-old presenting with episodic, stereotypic focal neurological deficits (dysarthria and arm numbness) lasting minutes; however, non-contrast head CT demonstrated a calcified left frontal parenchymal lesion with surrounding hypodense vasogenic edema rather than a vascular territory infarction.",
+      "quote": "He was admitted to the emergency department following several episodes of transient dysarthria and left arm hypoesthesia, each lasting a few minutes, along with some behavioural changes characterized by aggressive behaviour."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cranial magnetic resonance imaging (MRI) revealed active-phase cystic lesions with perilesional inflammation alongside quiescent calcifications, and confirmatory Taenia solium serology established the diagnosis of active neurocysticercosis, leading to successful treatment with albendazole and corticosteroids.",
+      "quote": "After consultation with the infectious diseases department, T. solium serologies were obtained, and the diagnosis of NCC was established."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to brain MRI and T. solium serologies. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

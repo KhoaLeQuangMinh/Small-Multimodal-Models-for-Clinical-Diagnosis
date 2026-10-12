@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12858201_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 17-year-old female presents with recurrent unilateral episcleritis initially thought to be an isolated autoimmune disorder and treated with immunosuppression (prednisolone and methotrexate), which inadvertently unmasks subclinical cavitary pulmonary disease. The tension lies in recognizing that recurrent ocular surface inflammation may represent a hypersensitivity reaction to an occult systemic mycobacterial infection.\n2. Admission Breakpoint: The breakpoint occurs when the patient re-presents several weeks into immunosuppressive therapy with new systemic symptoms (fever, dry cough) and repeat chest imaging demonstrates left lung consolidation and cavitary lesions, immediately prior to diagnostic bronchoscopy and microbiological testing of lavage fluid.\n3. Differential Distinctions: Idiopathic or autoimmune episcleritis was the primary working diagnosis that led to methotrexate therapy, but was refuted when autoantibodies (ANA, RF) remained negative and immunosuppression triggered cavitary pulmonary disease. Scleritis was excluded on initial ophthalmologic exam by positive phenylephrine blanching and lack of deep scleral pain or anterior chamber involvement. Bronchoalveolar lavage fluid confirmed Mycobacterium tuberculosis, establishing the ocular inflammation as a tuberculous hypersensitivity phenomenon.",
+  "case_prompt": "A 17-year-old female presented for evaluation of repeated episodes of redness and discomfort in her left eye over the preceding 9 months. She had no other underlying health issues and reported no initial constitutional symptoms.\n\nOphthalmologic examination:\n- Best-corrected visual acuity was 20/20 in both eyes (OU).\n- Intraocular pressure was 15 mmHg in the right eye and 16 mmHg in the left eye.\n- Focal left episcleral vascular engorgement blanched completely within 5 minutes following instillation of 2.5% phenylephrine eye drops, confirming superficial vascular involvement without deep scleral tenderness or anterior chamber inflammation.\n\nInitial systemic evaluation:\n- Complete blood count, C-reactive protein (CRP), serum urate, antinuclear antibodies (ANA), and rheumatoid factor (RF) were unremarkable.\n- Erythrocyte sedimentation rate (ESR) was elevated at 40/60 mm/h.\n- Initial chest radiograph was normal.\n\nThe patient was diagnosed with presumed immune-mediated episcleritis and started on topical prednisolone acetate 1% and low-dose oral methotrexate (5 mg/week with folic acid). Several weeks into immunosuppressive therapy, she developed a new persistent fever and dry cough.\n\nSubsequent evaluation:\n- Repeat chest radiograph revealed new left upper-to-mid-zone air-space opacities.\n- Chest CT confirmed the presence of cavitary pulmonary lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune / Immune-mediated episcleritis",
+      "rule_out_reason": "Considered the primary explanation for recurrent ocular episodes and elevated ESR, prompting initiation of methotrexate and topical corticosteroid therapy, but contradicted by negative autoantibody screening and unmasking of cavitary pulmonary disease under immunosuppression.",
+      "quote": "referred to a rheumatologist, thinking it was autoimmune. Pre-immunosuppression investigations (ESR/CRP, CBC, ANA, RF, urate) were unremarkable except for an elevated ESR (40/60 mm/h)... treatment was started with topical prednisolone acetate 1% QID (topical) and low-dose methotrexate 5 mg/week orally with folic acid 5 mg/week for presumed immune-mediated episcleritis."
+    },
+    {
+      "candidate": "Anterior scleritis",
+      "rule_out_reason": "Considered in the initial differential diagnosis of deep inflammatory eye disease, but ruled out clinically by rapid blanching with topical phenylephrine and lack of anterior chamber reaction or deep scleral pain.",
+      "quote": "Focal episcleral inflammation blanched following instillation of one drop of 2.5% phenylephrine, with blanching observed after approximately 5 min of contact time, confirming the superficial vascular involvement consistent with episcleritis, without deep scleral tenderness or anterior chamber reaction, supporting episcleritis rather than scleritis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergence of fever and cough prompting repeat imaging revealed cavitary lung lesions, with bronchoalveolar lavage fluid testing positive for Mycobacterium tuberculosis, identifying the episcleritis as an ocular manifestation of pulmonary tuberculosis.",
+      "quote": "A repeated CXR revealed left upper-to-mid-zone air-space opacities (Fig. 1), and computed tomography confirmed cavitary lesions (Fig. 2). A bronchoscopy was performed, and the lavage fluid tested positive for M. tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Bronchoscopy findings withheld until diagnostic reasoning. Exact quotes verified."
+}

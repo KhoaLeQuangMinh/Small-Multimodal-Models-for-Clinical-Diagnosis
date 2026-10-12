@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11165665_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 18-year-old patient presented with acute diarrhea, vomiting, fever, leukocytosis, and acute abdominal distension from partitioned (loculated) ascites, simulating acute bacterial peritonitis, spontaneous peritonitis, or peritoneal carcinomatosis. Paracentesis revealing high-protein lymphocytic fluid and GeneXpert detection of M. tuberculosis complex unmasked peritoneal tuberculosis.\n2. Admission Breakpoint: The breakpoint stops after emergency triage examination, baseline hematologic/biochemical labs, abdominal CT scan, and initial diagnostic paracentesis analysis (macroscopic appearance, protein, cell count), strictly prior to routine bacteriological culture incubation results, GeneXpert MTB/RIF, and mycobacterial cultures.\n3. Differential Distinctions: Acute bacterial peritonitis presents with acute diarrhea, fever, and leukocytosis, but routine bacteriological cultures were sterile and ascites was lymphocytic (73%). Peritoneal carcinomatosis causes partitioned exudative ascites and peritoneal thickening, but the patient was an 18-year-old with no neoplastic cells. GeneXpert MTB/RIF and mycobacterial culture confirmed Mycobacterium tuberculosis.",
+  "case_prompt": "An 18-year-old patient with no significant prior medical history was admitted to the emergency department with acute diarrhea and abdominal distension. The illness began 10 days before admission with a progressive increase in abdominal volume associated with vomiting, diarrhea, asthenia, and unquantified fever. The patient had no personal or family history of chronic pulmonary or granulomatous disease.\n\nOn physical examination at admission, the patient was conscious, in moderately maintained general condition, hemodynamically stable, with pallor of the skin and mucous membranes. Abdominal examination revealed diffuse abdominal tenderness on palpation with gross distension.\n\nInitial triage laboratory tests showed microcytic hypochromic anemia with hemoglobin 11.2 g/dL, leukocytosis of 12,600 cells/µL with neutrophil predominance, platelet count 493,000 cells/µL, C-reactive protein markedly elevated at 222.5 mg/L, and a prothrombin level of 48%. Liver function tests were normal. An abdominal computed tomography (CT) scan showed abundant partitioned ascites associated with peritoneal thickening and diffuse mesenteric infiltration. Exploratory puncture of the ascitic fluid revealed cloudy/turbid, yellow fluid with total protein of 64 g/L, a leukocyte count of 350 cells/mm³ predominantly composed of lymphocytes (73%), and a red cell count of 1,700 cells/mm³.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial peritonitis / Secondary pyogenic peritonitis",
+      "rule_out_reason": "Acute diarrhea, vomiting, diffuse tenderness, neutrophilic leukocytosis, and high CRP strongly suggested acute bacterial peritonitis; however, routine aerobic cultures on sheep blood, chocolate agar, and BHI broth remained sterile, and the fluid showed lymphocytic predominance (73%).",
+      "quote": "After 2 days of incubation, all cultures and subcultures returned as sterile."
+    },
+    {
+      "candidate": "Peritoneal carcinomatosis",
+      "rule_out_reason": "Abundant partitioned loculated ascites, diffuse peritoneal thickening, mesenteric infiltration, anemia, and marked CRP elevation raised suspicion for peritoneal malignancy, but the patient was an 18-year-old with sterile lymphocytic fluid and confirmed mycobacterial etiology.",
+      "quote": "An abdominal computed tomography (CT) scan showed abundant partitioned ascites associated with peritoneal thickening and diffuse mesenteric infiltration (Fig. 1)."
+    },
+    {
+      "candidate": "Decompensated cirrhosis / Portal hypertension",
+      "rule_out_reason": "Gross ascites and reduced prothrombin ratio (48%) raised consideration of cirrhotic ascites; however, liver function tests were normal, and fluid analysis revealed a high-protein exudate (64 g/L) rather than a transudate.",
+      "quote": "However, liver function tests were normal (Table 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Because of sterile bacterial cultures and high exudative protein, real-time PCR Xpert MTB/RIF was performed on the ascitic fluid, detecting Mycobacterium tuberculosis complex without rifampicin resistance, subsequently confirmed by positive mycobacterial culture.",
+      "quote": "Due to the sterility of the cultures and the exudative nature of the ascites fluid, a real-time PCR Xpert MTB/RIF assay was conducted and detected the Mycobacterium tuberculosis complex at very low level with no detection of rifampicin resistance."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission triage and paracentesis fluid analysis. Excluded bacteriological culture incubation, Xpert MTB/RIF result, mycobacterial culture, and pathogen names from case prompt. Quotes verified against source text."
+}

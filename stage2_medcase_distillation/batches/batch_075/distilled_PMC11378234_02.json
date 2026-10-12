@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 16-year-old boy with severe aplastic anemia on post-transplant day +88 presents with acute high-grade fever with shivering, right hypochondriac pain, watery diarrhea, transaminitis, rising hematocrit, rapidly plunging platelets, and polyserositis (pleural effusion and ascites). In an early post-transplant recipient, this clinical constellation creates sharp tension between acute gastrointestinal/hepatic graft-versus-host disease (GVHD), acute abdominal sepsis/typhoid, and severe arboviral capillary leak syndrome.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after initial triage, emergency lab results, and bedside ultrasound, prior to microbiological pan-cultures and dengue NS1 antigen results.\n3. Differential Distinctions: Acute GI/hepatic GVHD can cause watery diarrhea and elevated liver transaminases around day +88, but does not present with sudden shivering high fever, rapid hemoconcentration, and third-spacing effusions without cutaneous involvement. Bacterial abdominal sepsis is ruled out by sterile pan-cultures and rapid confirmation of acute dengue NS1 antigenemia.",
+  "case_prompt": "A 16-year-old boy with a history of severe aplastic anemia presents to the transplant emergency department on day +88 post-transplant with a 2-day history of high-grade fever associated with shivering, pain in the right hypochondrium, and loose watery stools.\n\nLaboratory evaluation demonstrates a rapid decline in platelet count accompanied by a rising hematocrit level. Serum biochemistry reveals slightly deranged renal function and elevated liver enzymes at twice the upper limit of normal, with a normal coagulation profile.\n\nBedside abdominal ultrasound demonstrates mild pleural effusion and moderate ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Gastrointestinal and Hepatic Graft-versus-Host Disease (GVHD)",
+      "rule_out_reason": "Watery diarrhea, right upper quadrant pain, and transaminitis on day +88 post-transplant strongly suggest acute gut and liver GVHD; however, the hyperacute onset of high fever with rigors, rapid hematocrit increase, and capillary plasma leakage (ascites, pleural effusion) indicated an infectious vascular leak syndrome rather than GVHD.",
+      "quote": "His platelet count declined rapidly with rising hematocrit level... Mild pleural effusion and moderate ascites were also observed on ultrasound."
+    },
+    {
+      "candidate": "Intra-abdominal Bacterial Sepsis / Enteric Fever",
+      "rule_out_reason": "High-grade fever with rigors, abdominal pain, diarrhea, and hepatitis in an allogeneic transplant recipient frequently points to enteropathogenic or typhoidal bacteremia; however, comprehensive microbiological workup and pan-cultures remained sterile.",
+      "quote": "Pan cultures and other infective workup were negative while Dengue NS1 antigen was detected."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was achieved by the positive detection of Dengue NS1 antigen in conjunction with the classical signs of plasma leakage (hemoconcentration, ascites, pleural effusion, and rapid platelet decline).",
+      "quote": "Pan cultures and other infective workup were negative while Dengue NS1 antigen was detected. His platelet count declined rapidly with rising hematocrit level... Mild pleural effusion and moderate ascites were also observed on ultrasound."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage presentation stops before pan-cultures and NS1 antigen testing. Strictly zero disease or pathogen names in case_prompt. Differentials compare GVHD and bacterial sepsis with exact verbatim textual citations."
+}

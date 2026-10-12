@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10064163_02",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 64-year-old woman with a 10-year diagnosis of ulcerative colitis maintained on 5-ASA presents with minimal abdominal discomfort and persistent moderate peripheral eosinophilia (1.18 x 10^9/L), without diarrhea or hematochezia. Given her birth country of Nigeria and extensive Caribbean travel, the core clinical tension is determining whether her indolent abdominal symptoms and eosinophilia represent atypical inflammatory bowel disease, drug-induced reaction, or chronic occult intestinal helminthic parasitism mimicking IBD.\n2. Admission Breakpoint: The admission breakpoint occurs following the outpatient clinical encounter, travel history review, and baseline complete blood count establishing peripheral eosinophilia, immediately prior to microscopic stool examination, specialized serologies, and re-evaluation of archived colonic biopsy specimens.\n3. Differential Distinctions: Idiopathic ulcerative colitis typically demonstrates continuous diffuse inflammation beginning in the rectum with crypt architectural distortion, goblet cell depletion, and absence of prominent tissue or blood eosinophilia. In contrast, chronic nematode colitis spares the distal rectosigmoid, preserves crypt architecture and goblet cell mucin, exhibits intense eosinophilic lamina propria infiltration, and resolves completely following targeted antiparasitic eradication.",
+  "case_prompt": "A 64-year-old woman is evaluated in clinic for ongoing management of chronic gastrointestinal symptoms. She was born in Nigeria and has a history of extensive travel throughout the Caribbean over the preceding decades, including trips to Antigua, Barbados, Curaçao, the Dominican Republic, Jamaica, Haiti, and Puerto Rico. She reports minimal abdominal discomfort but is otherwise clinically well. She has regular bowel movements without diarrhea, hematochezia, or melena, and denies skin eruptions, pruritus, cough, dyspnea, or other systemic complaints.\n\nHer past medical history is notable for a diagnosis of ulcerative colitis established 10 years earlier based on colonic mucosal biopsies, for which surveillance colonoscopies every 3 to 5 years were recommended. Her only chronic medication is oral 5-aminosalicylic acid (5-ASA), which she has taken for several years.\n\nPhysical examination is unremarkable; vital signs are within normal limits, and abdominal examination demonstrates a soft, non-tender abdomen without organomegaly or peritoneal signs. Baseline laboratory evaluation is notable for a complete blood count showing moderate peripheral eosinophilia of 1.18 x 10^9/L (reference range, <0.4 x 10^9/L).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ulcerative Colitis (Idiopathic Inflammatory Bowel Disease)",
+      "rule_out_reason": "Although diagnosed 10 years earlier, idiopathic UC typically causes continuous colonic mucosal inflammation with crypt architectural distortion and rectal involvement, and does not account for peripheral eosinophilia or complete symptom resolution after antiparasitic therapy; re-examination of the histopathology showed rectosigmoid sparing and preserved crypts.",
+      "quote": "Re-examination of colonic tissue demonstrated features consistent with Strongyloides colitis including distal attenuation of disease with sparing of the sigmoid colon and rectum, preservation of crypt architecture and goblet cell mucin, and eosinophilic infiltrates of the lamina propria."
+    },
+    {
+      "candidate": "Human T-Cell Lymphotropic Virus Type 1/2 (HTLV-1/2) Infection",
+      "rule_out_reason": "Given the patient's origin in Nigeria and Caribbean travel, HTLV-1/2 coinfection was evaluated as a potential driver of severe or refractory helminthic disease, but screening returned negative.",
+      "quote": "HTLV-1/2 testing was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of rhabditiform larvae on stool microscopy, highly elevated specific serology (OD 2.39), and biopsy re-examination revealing eosinophilic lamina propria infiltrates with preserved crypt architecture established chronic strongyloidiasis mimicking IBD.",
+      "quote": "Pre-treatment Strongyloides spp. serology was reactive with an optical density (OD) of 2.39 (non-reactive < 0.2), and eosinophilia persisted at 1.8 x 109/L."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation strictly preserves source fidelity and enforces admission breakpoint before stool O&P and serology results. Zero pathogen spoilers in prompt."
+}

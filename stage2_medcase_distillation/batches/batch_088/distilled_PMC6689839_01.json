@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6689839_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 4-year-old girl in West Africa presents in septic shock with acute peritonitis, gross mixed-attenuation ascites, severe leukopenia, and acute mental status changes, representing an extraordinarily rare and lethal co-occurrence of acute typhoid jejunal perforation superimposed upon underlying miliary peritoneal tuberculosis.\n2. Admission Breakpoint: The admission clinical presentation halts following emergency triage assessment, vital signs, physical examination, emergency bedside abdominal ultrasound demonstrating massive mixed ascites, and baseline laboratory evaluation, immediately before surgical laparotomy and peritoneal fluid/nodule microbiological analysis.\n3. Differential Distinctions: Isolated acute bacterial peritonitis / appendiceal perforation is ruled out by the profound leukopenia (1,300/mm3) rather than leukocytosis, and by intraoperative finding of multiple caseous peritoneal nodules and acid-fast bacilli. Isolated typhoid intestinal perforation explains jejunal ulceration and leukopenia, but cannot account for the diffuse miliary caseous peritoneal nodules and massive retroperitoneal lymphadenopathy harboring acid-fast bacilli.",
+  "case_prompt": "A 4-year-old girl was brought by her parents to the emergency unit of a regional hospital in northern Benin with a 48-hour history of acute abdominal pain, diffuse abdominal tenderness, high fever, recurrent vomiting, and anorexia, which had been treated at home with local herbal infusions.\n\nOn physical examination, she was agitated, confused, and critically ill, with a Glasgow Coma Scale score of 12 (E3, V4, M5). Vital signs showed a blood pressure of 75/50 mm Hg, heart rate of 135 beats/min, body temperature of 38.9°C, and respiratory rate of 22 breaths/min. Abdominal examination revealed marked symmetrical distention, bulging flanks, and a positive fluid thrill. Palpation elicited severe pain and guarding throughout all quadrants, causing her to cry upon any attempt at examination. Percussion was dull across all abdominal quadrants, and bowel sounds were completely absent. Thoracic examination was unremarkable.\n\nEmergency bedside abdominal ultrasound revealed diffuse, massive ascites with mixed liquid and solid echogenic content. Initial laboratory evaluation demonstrated a white blood cell count of 1,300/mm³ (reference 5,000–10,000/mm³), hemoglobin of 7.7 g/dL (reference 12–15 g/dL), serum sodium of 136 mEq/L (reference 135–145 mEq/L), serum potassium of 5.6 mEq/L (reference 3.5–5.1 mEq/L), and an erythrocyte sedimentation rate (ESR) of 44 mm/h (reference 3–13 mm/h).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Typhoid Intestinal Perforation",
+      "rule_out_reason": "Although enteric fever readily explains acute small bowel perforation and severe leukopenia, isolated typhoid infection could not account for the extensive miliary caseous nodules studding the visceral and parietal peritoneum, massive retroperitoneal lymphadenomegaly, and dense acid-fast bacilli on nodule microscopy.",
+      "quote": "multiple caseous nodes diffuse on the peritoneum and the bowel, measuring about 0.5 to 4 mm of diameter, and some bigger nodules (up to 1.5 cm) covered by caseous mucus with the suspect aspect of miliary peritoneal tuberculosis"
+    },
+    {
+      "candidate": "Acute Ruptured Appendicitis / Pyogenic Bacterial Peritonitis",
+      "rule_out_reason": "Classic pyogenic intra-abdominal sepsis typically presents with brisk neutrophilic leukocytosis rather than severe leukopenia (WBC 1,300/mm³), and would produce fibrinopurulent exudate without widespread caseating granulomatous miliary tubercles.",
+      "quote": "white blood cells 1300 cells/mm3 (normal value 5000-10000 cells/mm3)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency explorative laparotomy revealed diffuse caseous tubercles across the bowel and peritoneum with retroperitoneal lymphomegaly alongside jejunal perforations, and Ziehl-Neelsen staining of peritoneal nodules demonstrated a heavy burden of acid-fast bacilli, confirming miliary peritoneal tuberculosis occurring simultaneously with typhoid intestinal perforation.",
+      "quote": "The samples sent for laboratory analysis showed a high load of acid fast bacilli on Ziehl-Neelsen staining and positive serology for Salmonella tiphy bacillus."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation isolated cleanly prior to laparotomy incision and tissue staining. Zero pathogen names leaked in prompt."
+}

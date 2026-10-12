@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3961931_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old female presents with a chronic, painful breast lump and a history of a contralateral discharging sinus, closely mimicking pyogenic breast abscess or breast carcinoma, in the complete absence of systemic B-symptoms (no fever, cough, or weight loss) and with a normal chest radiograph.\n2. Admission Breakpoint: Admission triage terminates after initial baseline evaluations—complete hemogram, routine biochemical investigations, and chest radiography, which were all within normal limits. Confirmatory testing begins with fine-needle aspiration yielding purulent material, cytology, and acid-fast bacilli staining/culture.\n3. Differential Distinctions: Pyogenic breast abscess typically presents acutely with erythema, warmth, fever, and leukocytosis, and resolves after standard antibiotic therapy, whereas tubercular mastitis is indolent, forms recurrent cold abscesses/sinuses, and fails standard antibiotic courses. Breast carcinoma typically presents as a painless, firm or hard solitary mass with possible skin tethering or lymphadenopathy, but cytology reveals malignant epithelial cells rather than caseating granulomas or purulent discharge with acid-fast bacilli.",
+  "case_prompt": "A 35-year-old woman, an agriculturist and mother of two children, presents to the outpatient clinic with a painful lump in her right breast that has been present for 3 months. She reports no fever, cough, night sweats, or weight loss. Five months prior, she experienced a similar painful lump in her left breast that spontaneously ruptured with a discharging sinus and resolved following a course of oral antibiotics. Her family history is notable for household contacts (her in-laws) undergoing treatment for active pulmonary infection.\n\nOn physical examination, she is afebrile and hemodynamically stable. Breast examination reveals a diffuse, firm lump palpable in the right upper quadrant measuring 4 cm x 3 cm. The left breast demonstrates a healed ulcer in the upper outer quadrant. No axillary lymphadenopathy is palpable bilaterally. Examination of the chest and cardiovascular system is normal.\n\nBaseline laboratory investigations, including a complete blood count and biochemical panel, are within normal limits. A plain chest radiograph is normal, with clear lung fields and no parenchymal consolidation, cavitation, or hilar enlargement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Breast Abscess",
+      "rule_out_reason": "Considered due to the painful breast mass and prior history of a spontaneously rupturing lump with sinus formation, but the indolent 3-month course, lack of systemic inflammatory signs or leukocytosis, normal baseline labs, and persistence despite prior antibiotics point away from acute bacterial mastitis.",
+      "quote": "A clinical differential diagnosis of breast abscess and malignancy was made."
+    },
+    {
+      "candidate": "Breast Carcinoma",
+      "rule_out_reason": "A solitary firm breast mass in a 35-year-old woman raised immediate suspicion for malignancy, but the presence of purulent aspirate, cytologic features of granulomatous inflammation rather than malignant epithelium, and acid-fast bacilli excluded neoplasia.",
+      "quote": "A clinical differential diagnosis of breast abscess and malignancy was made."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine-needle aspiration yielded 8 mL of purulent material with cytologic features of granulomatous mastitis and a positive Ziehl-Neelsen stain for acid-fast bacilli, with subsequent growth of Mycobacterium tuberculosis on rapid slide culture and Lowenstein-Jensen medium confirmed by niacin testing.",
+      "quote": "Eight milliliter of purulent material was obtained and on fine needle aspiration, smears showed features of granulomatous mastitis. Ziehl Neelsen stain for acid fast bacilli was positive [Figure 1]. Rapid slide culture for Mycobacterium tuberculosis showed growth after 1 week."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC3961931. Spoilers regarding tuberculosis and AFB in family history and pathology were strictly excluded from the admission prompt. Caseating granulomatous mastitis confirmed by ZN stain and LJ culture."
+}

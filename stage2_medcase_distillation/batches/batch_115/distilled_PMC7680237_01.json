@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7680237_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 54-year-old rural farmer with insulin-dependent type 2 diabetes presents with a 3-year progressive destructive left foot lesion with discharging sinus tracts, having suffered years of misdiagnosis and ineffective treatments for contact eczema and bacterial diabetic foot osteomyelitis before true fungal eumycetoma was considered.\n2. Admission Breakpoint: Admission presentation concludes at specialist evaluation for the atypical dorsal foot lesion with sinus tracts and poor glycemic control, strictly before foot radiography demonstrating extensive bone destruction and deep tissue surgical biopsy.\n3. Differential Distinctions: Contact eczema was ruled out after failure of topical corticosteroids and subsequent progression to discharging sinuses; bacterial diabetic foot ulcer/osteomyelitis was ruled out after failure of tailored antibiotics and glycemic optimization; deep biopsy histopathology showing Madurella mycetomi grains established eumycetoma (Madura foot).",
+  "case_prompt": "A 54-year-old male farmer living in a rural area presents for specialist evaluation of a chronic, progressive lesion on his left foot of 3 years' duration. He has a known history of type 2 diabetes mellitus treated with insulin. The condition initially began as an inflammatory vesicular lesion on the dorsal aspect of the left foot. Three months following onset, he was evaluated by a general practitioner and treated with topical dermocorticoids without improvement.\n\nOver the subsequent years, the disease progressed with the emergence of multiple fistulous tracts across the dorsal surface of the foot. Subsequent medical evaluation attributed the lesion to diabetes-related foot complications amidst disturbed glycemic control, and he was prescribed insulin regimens for glycemic optimization alongside courses of systemic antibacterial therapy and specialized local wound care, all of which failed to halt progression. Physical examination reveals an atypical inflammatory deformity of the left foot characterized by multiple chronic discharging fistulas on the dorsal aspect. Triage laboratory evaluation confirms disturbed glycemic assessment.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Contact Eczema",
+      "rule_out_reason": "Initially considered due to the vesicular presentation, but excluded after failure of topical corticosteroids and progressive evolution into deep chronic fistulas.",
+      "quote": "The patient consulted a general practitioner 3 months after the onset of the first symptoms, who concluded with contact eczema and put the patient on dermocorticoids. The evolution of the pathology was made by the appearance of fistulas on the dorsal side of the foot."
+    },
+    {
+      "candidate": "Diabetic Foot Ulcer / Bacterial Osteomyelitis",
+      "rule_out_reason": "Considered due to the patient's underlying insulin-dependent diabetes and disturbed glycemic assessments, but ruled out after complete failure of systemic antibiotic therapy and local wound care.",
+      "quote": "The patient again consulted with a general practitioner who after a disturbed glycemic assessment concluded with a diabetic foot, prescribed a diagram of glycemic balance and antibiotic treatment and care for the foot of the patient. After further treatment failure the treatment was referred to an endocrinologist for diabetic foot."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Due to the atypical appearance of the chronic fistulizing lesion, dermatological referral was made and deep biopsy histopathology confirmed the presence of Madurella mycetomi grains with severe underlying bony destruction.",
+      "quote": "The pathology study revealed the presence of Madurella mycetomi. Given the severity of the bone damage, the patient was referred to the orthopedic surgery team for treatment."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7680237. The admission breakpoint cleanly stops at specialist referral for atypical fistulae and glycemic assessment, prior to radiography and biopsy. Spoilers and pathogen names are eliminated from case_prompt. Textual quotes rigorously track the diagnostic pitfalls."
+}

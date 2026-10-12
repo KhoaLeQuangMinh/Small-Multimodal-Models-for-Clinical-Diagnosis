@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4899662_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A young male presents with acute-onset progressive paraplegia, T10 sensory level, and extensive T6–T9 cord edema on MRI, initially diagnosed and treated as autoimmune transverse myelitis, obscuring a parasitic etiology.\n2. Admission Breakpoint: Admission triage concludes after neurologic physical examination, spinal MRI, and initial CSF routine cytochemistry (elevated protein, normal glucose and cells). Viral, paraneoplastic, serologic panels, and spinal biopsy represent confirmatory diagnostics.\n3. Differential Distinctions: Idiopathic transverse myelitis and viral myelitis show transient steroid responsiveness but negative parasite serology and no granulomatous histology. Spinal cord schistosomiasis is marked by high specific antibody titers and granulomatous intramedullary lesions on spinal cord biopsy.",
+  "case_prompt": "A 24-year-old previously healthy male from southern Saudi Arabia presented with a 3-month history of acute-onset, progressive severe lower back pain, followed by progressive bilateral lower extremity weakness, urinary incontinence, and loss of sensation below the umbilicus, leaving him wheelchair-bound. He gave a history of swimming in freshwater wells approximately 8 months before symptom onset. He had initially presented to another facility where he was treated with pulse steroid therapy for presumed transverse myelitis, experiencing initial improvement for 2 weeks followed by worsening. He had no fever, visual disturbances, seizures, trauma, or contact with sick individuals. On physical examination, he was alert and vitally stable, with normal cranial nerves and upper limb function. Lower limb examination showed normal muscle bulk without atrophy, increased tone, 0/5 bilateral motor power, hyperreflexia, sustained clonus, and extensor plantar responses, with a sensory level at T10. Spinal MRI revealed an extensive intramedullary lesion extending from T6 through T9 with edema. Cerebrospinal fluid (CSF) analysis showed a protein level of 1.08 g/dL with normal cell count and normal glucose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic autoimmune transverse myelitis",
+      "rule_out_reason": "Progressive myelopathy with longitudinally extensive cord edema initially responded transiently to pulse corticosteroids, mimicking autoimmune myelitis, but the patient suffered prompt clinical relapse and autoimmune workup was negative.",
+      "quote": "He had initially gone to another hospital where he was diagnosed with transverse myelitis and was given pulse steroid therapy. He improved initially for 2 weeks but then worsened."
+    },
+    {
+      "candidate": "Viral myelitis / Intramedullary neoplasm",
+      "rule_out_reason": "An extensive T6–T9 mass-like lesion raised suspicion for viral myelopathy (HIV, CMV, EBV) or paraneoplastic/neoplastic disease, but CSF cytology and viral serologies were negative.",
+      "quote": "Autoimmune, paraneoplastic, and serological testing of HIV, cytomegalovirus, and Epstein-Barr virus were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A high Schistosoma antibody titer (1:64) combined with definitive spinal cord biopsy confirmed schistosomal granulomatous myelopathy.",
+      "quote": "His Schistosoma titer was high at a ratio of 1:64. A spinal cord biopsy was completed and confirmed the diagnosis of spinal cord schistosomiasis."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

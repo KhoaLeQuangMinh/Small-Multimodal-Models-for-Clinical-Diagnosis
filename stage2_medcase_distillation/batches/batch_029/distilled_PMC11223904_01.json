@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11223904_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: An immunocompetent 70-year-old Middle Eastern male with multiple comorbidities presented with chronic severe diarrhea, 17 kg weight loss, a palpable abdominal mass, and CT findings of pancolitis with large bowel obstruction and a distal descending colon stricture without peripheral eosinophilia, mimicking inflammatory bowel disease or colonic malignancy, but caused by fulminant Strongyloides stercoralis colitis complicated by translocation bacteremia.\n2. Admission Breakpoint: Stops after presentation to the emergency department in Australia, normal vitals, abdominal distention/mass, baseline triage labs (leukocytosis, CRP 99 mg/L, hypokalemia, hypoalbuminemia), normal chest X-ray, and abdominal CT showing pancolitis with diverticulosis and large bowel obstruction with descending colon stricture, before stool microscopy/PCR, blood cultures, or colonoscopy.\n3. Differential Distinctions: Inflammatory bowel disease (Crohn's or ulcerative colitis) causes chronic diarrhea, strictures, and pancolitis in older adults but demonstrates non-caseating granulomas or diffuse mucosal architectural distortion on biopsy, and fails to explain enteric bacterial translocation or nematode larvae. Clostridioides difficile colitis presents with severe leukocytosis and pseudomembranous colitis following hospitalization but has positive toxin assays. Strongyloidiasis can cause fatal chronic pancolitis with strictures and secondary Gram-negative bacteremia even in immunocompetent individuals without peripheral eosinophilia.",
+  "case_prompt": "A 70-year-old Middle Eastern male presented to the emergency department with a 3-month history of watery diarrhea, vomiting, progressive abdominal distention, and generalized abdominal discomfort, associated with an unintentional 17-kilogram weight loss. Several months earlier while residing in Lebanon, he had suffered an iatrogenic sigmoid colon perforation during a diagnostic colonoscopy for rectal bleeding, requiring an emergency laparotomy and segmental colectomy with a temporary covering ileostomy that was reversed 3 months later. Five months post-reversal, his gastrointestinal symptoms recurred, during which hospitalization he suffered an acute myocardial infarction treated with percutaneous coronary intervention and drug-eluting stent placement. Medical history included atrial fibrillation, hypertension, dyslipidemia, and gastroesophageal reflux disease; regular medications were aspirin, clopidogrel, and apixaban. He had never received corticosteroids or other immunosuppressive medications and had no personal or family history of colorectal neoplasia or inflammatory bowel disease. He was a current smoker with a 20 pack-year history and had flown directly from Lebanon to Australia due to perceived clinical deterioration. On arrival, vital signs were normal. Physical examination revealed a distended, soft abdomen with mild generalized tenderness without peritonism; a palpable mass was appreciated in the left mid-abdomen. Digital rectal examination was unremarkable, and no cutaneous rashes were present. Plain chest radiography revealed clear lung fields without infiltrates. Initial laboratory evaluation demonstrated a white blood cell count of 15.2 x 10^9/L, C-reactive protein (CRP) 99 mg/L, serum creatinine 101 umol/L, serum potassium 2.6 mmol/L, and serum albumin 23 g/L. Contrast-enhanced CT scan of the abdomen and pelvis demonstrated diffuse pancolitis, extensive colonic diverticulosis, and radiological features of large bowel obstruction secondary to a potential stricture in the distal descending colon.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Inflammatory bowel disease (Crohn's disease / Ulcerative colitis)",
+      "rule_out_reason": "Considered due to chronic inflammatory diarrhea, severe weight loss, pancolitis, and an inflammatory colonic stricture. Ruled out by endoscopic mucosal biopsies showing only mild lamina propria eosinophilia without granulomas or architectural features of IBD.",
+      "quote": "Biopsies of the colonic stricture demonstrated mild eosinophilia within the lamina propria, without granulomas to suggest IBD (Figure 3)."
+    },
+    {
+      "candidate": "Clostridioides difficile colitis",
+      "rule_out_reason": "Suspected due to previous hospital admissions, severe colitis with marked leukocytosis, and acute gastrointestinal symptoms. Ruled out by negative stool testing.",
+      "quote": "There was no evidence of Clostridioides difficile in the stool."
+    },
+    {
+      "candidate": "Cytomegalovirus (CMV) colitis",
+      "rule_out_reason": "Considered as a secondary viral cause of intractable fulminant colitis and colonic ulceration. Ruled out by negative immunohistochemical staining on mucosal biopsies.",
+      "quote": "Biopsies for cytomegalovirus (CMV) were negative on immunohistochemistry."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of motile rhabditiform larvae on stool agar plate culture microscopy and confirmation by polymerase chain reaction, establishing Strongyloides stercoralis infection causing chronic fulminant colitis complicated by enteric bacterial translocation.",
+      "quote": "Stool agar plate culture was positive with a moderate level of larvae present and Strongyloides stercoralis were identified on microscopy."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt is strictly confined to emergency triage presentation before stool microscopy, blood cultures, or colonoscopy. Zero pathogen names or spoilers in the prompt. Direct verbatim quotes validated against article text."
+}

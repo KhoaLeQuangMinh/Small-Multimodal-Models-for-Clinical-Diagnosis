@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8440108_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 79-year-old severely cachectic woman with rheumatoid arthritis on triple immunosuppression (tocilizumab, methotrexate, methylprednisolone) presents in septic shock (BP 70/53 mmHg, HR 136 bpm) and acute respiratory distress syndrome with bilateral ground-glass opacities and consolidations. Due to IL-6 receptor inhibition by tocilizumab, serum C-reactive protein is paradoxically suppressed (CRP 0.59 mg/L), blunting traditional inflammatory signals and obscuring an overwhelming disseminated mycobacterial infection.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following emergency resuscitation, arterial blood gas analysis confirming ARDS, admission laboratory evaluation (revealing marked lymphopenia and normal CRP), and chest CT showing bilateral ground-glass opacities and consolidations, strictly prior to the return of send-out mycobacterial, fungal, and viral diagnostic panels.\n3. Differential Distinctions: Typical bacterial pneumonia (S. pneumoniae, Legionella) and acute viral pneumonitis (SARS-CoV-2, CMV) are ruled out by negative urinary antigens and viral assays. Invasive molds and yeasts (Aspergillus, Candida, Cryptococcus) are excluded by negative fungal antigen tests. Despite co-infection with Pneumocystis and secondary bacteremia, positive sputum mycobacterial diagnostics and autopsy confirmation of acid-fast bacilli with multiorgan caseating granulomas establish disseminated tuberculosis as the primary fatal entity.",
+  "case_prompt": "A 79-year-old woman with severe, refractory rheumatoid arthritis maintained on weekly tocilizumab (162 mg/week), methotrexate (12 mg/week), methylprednisolone (8 mg/day), and inhaled pentamidine prophylaxis presents with the sudden onset of high fever and a 2-week history of worsening cough and generalized fatigue. She has had no known contact with individuals with active infections.\n\nOn physical examination, she appears acutely ill and severely cachectic (height 149 cm, weight 33.4 kg, body mass index 15.0 kg/m^2). The Glasgow Coma Scale score is 14. Vital signs demonstrate a body temperature of 39.1 °C, blood pressure of 70/53 mmHg, heart rate of 136 beats per minute, and respiratory rate of 28 breaths per minute. Arterial oxygen saturation is 96% while receiving 10 L/min of oxygen via a nonrebreather mask with reservoir bag. Auscultation of the chest reveals bilateral diffuse coarse and fine crackles throughout both lung fields.\n\nInitial arterial blood gas analysis on 10 L/min oxygen (estimated FiO2 0.76) demonstrates a pH of 7.504, partial pressure of arterial oxygen (PaO2) of 159.0 mmHg (PaO2/FiO2 ratio 209 mmHg), PaCO2 of 33.4 mmHg, base excess of 3.2 mEq/L, and bicarbonate of 26.3 mEq/L. Complete blood count reveals profound leukopenia with a white blood cell count of 1,600/uL (neutrophils 1,208/uL, lymphocytes 221/uL), hemoglobin of 10.7 g/dL, and platelet count of 154,000/uL. Serum C-reactive protein is 0.59 mg/L; total bilirubin is 1.5 mg/dL; lactate dehydrogenase is 509 U/L; serum creatinine is 0.29 mg/dL; D-dimer is 2.4 ug/mL; and Krebs von den Lungen-6 (KL-6) is 423.3 U/mL. An urgent chest computed tomography (CT) scan reveals diffuse ground-glass opacities in all fields with confluent consolidations in both lungs and mildly swollen kidneys without hydronephrosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-Acquired Bacterial or Viral Pneumonia (S. pneumoniae, Legionella, SARS-CoV-2, CMV)",
+      "rule_out_reason": "Acute bacterial and viral pathogens were considered due to fulminant septic shock and ARDS, but rapid urinary antigen tests and viral assays were negative.",
+      "quote": "Cytomegalovirus pp65 antigenemia was negative... The antigen test for coronavirus disease 2019 was negative. Streptococcus pneumoniae and Legionella pneumoniae urinary antigen tests were negative."
+    },
+    {
+      "candidate": "Invasive Fungal Infection (Aspergillus, Candida, Cryptococcus neoformans)",
+      "rule_out_reason": "Invasive fungal pneumonia was evaluated in this profoundly immunosuppressed host with diffuse ground-glass infiltrates, but fungal antigen assays were negative.",
+      "quote": "Antigen tests for the presence of species of Aspergillus, Candida, and Cryptococcus neoformans were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Tuberculosis",
+      "rule_out_reason": "The severe presentation of necrotizing bilateral pneumonia and multiorgan failure was confirmed by positive sputum mycobacterial testing and post-mortem histopathology demonstrating acid-fast bacilli on Ziehl-Neelsen staining with widespread extrapulmonary caseating granulomas.",
+      "quote": "Since the result of the sputum test for TB was positive on day 6, daily administration of antitubercular agents including, 200 mg of isoniazid, 500 mg of levofloxacin, and 500 mg of streptomycin was initiated... Bilateral lungs showed gross necrotic and cystic lesions of a maximum size of 30 mm... Ziehl-Neelsen staining aided the detection of acid-fast bacilli (Figure 4(a)-4(c)). These lesions seemed to be of primary TB... Numerous granulomas were present as extrapulmonary lesions in the liver, spleen, kidneys, pancreas, and adrenal glands (Figures 4(e)-4(i))."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning criteria. Day 1 presentation focuses on acute septic shock, ARDS, and imaging, with zero spoilers of subsequent mycobacterial and opportunistic pathogen identifications."
+}

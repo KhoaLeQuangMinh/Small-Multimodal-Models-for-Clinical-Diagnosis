@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2958626_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 30-year-old female illicit drug user presented with acute hyperpyrexia (40.5 \u00b0C), hemoptysis, jaundice (bilirubin 15 mg/dL), thrombocytopenia (97,000/\u00b5L), and catastrophic hypoxemic respiratory failure (PaO2/FiO2 = 52) due to diffuse alveolar hemorrhage and ARDS. While Weil's disease typically features the classic triad of fever, jaundice, and acute renal failure, renal function in this patient was entirely normal (creatinine 61 \u00b5mol/L, normal urine output). This absence of renal impairment, coupled with active cannabis/ecstasy abuse, led initial evaluation toward toxic inhalation, typical severe community-acquired pneumonia, or autoimmune pulmonary-renal syndrome.\n2. Admission Breakpoint: Admission triage terminates after documenting acute presentation of hemoptysis, severe respiratory distress, fever 40.5 \u00b0C, crackles, initial lab panel (thrombocytopenia, elevated bilirubin 15 mg/dL, direct 5 mg/dL, elevated CRP, normal renal function), ABG (PaO2/FiO2 ratio 52), and admission chest radiograph showing diffuse bilateral infiltrates, immediately prior to mechanical intubation, bronchoscopy, open-lung biopsy, and send-out serology.\n3. Differential Distinctions: Severe bacterial or viral pneumonia causing ARDS was initially suspected and treated empirically with ceftriaxone and levofloxacin, but BAL bacterial, viral, mycobacterial, and fungal cultures were negative. Drug-induced diffuse alveolar hemorrhage / ecstasy pneumonitis was considered given active substance abuse, but ruled out when zoonotic rodent exposure was uncovered and convalescent microscopic agglutination testing became positive.",
+  "case_prompt": "A 30-year-old woman with a history of current cannabis and ecstasy use presented to the emergency department with hemoptysis and acute respiratory distress. She reported a 5-day history of high fever, nausea, vomiting, diffuse myalgias, and severe headache. Her past medical history was notable only for an episode of acute pancreatitis secondary to alcohol abuse.\n\nOn physical examination, she was critically ill and febrile with a body temperature of 40.5 \u00b0C. Blood pressure was normal, and urine output was preserved. Auscultation of the lungs revealed coarse crackles throughout the lower lobes bilaterally.\n\nTriage laboratory investigations revealed: white blood cell count 7,400/\u00b5L, platelets 97,000/\u00b5L, hematocrit 27%, and C-reactive protein 231 mg/L. Blood urea nitrogen was 3.4 mmol/L and serum creatinine was 61 \u00b5mol/L. Liver function tests showed AST 43 U/L, ALT 37 U/L, alkaline phosphatase 112 U/L, and a total bilirubin of 15 mg/dL with a direct component of 5 mg/dL. Arterial blood gas analysis on a non-rebreather mask with 15 L/min oxygen reservoir bag demonstrated: pH 7.48, PaCO2 30 mmHg, PaO2/FiO2 ratio of 52, and base excess -1.5 mmol/L. Plain chest radiography on admission demonstrated diffuse bilateral alveolar infiltrates.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-acquired bacterial or viral pneumonia with secondary ARDS",
+      "rule_out_reason": "Considered primary etiology for acute hyperpyrexic respiratory failure; broad-spectrum empiric antibiotics (ceftriaxone, levofloxacin) failed to prevent progression, and comprehensive BAL cultures were negative for pathogens.",
+      "quote": "Bacterial, mycobacterial, viral and fungal culture findings of the fluid were negative."
+    },
+    {
+      "candidate": "Drug-induced alveolar hemorrhage / Organizing pneumonia",
+      "rule_out_reason": "Entertained due to active ecstasy and cannabis use and persistent pulmonary hemorrhage; open lung biopsy showed organizing fibroblastic polyps without vasculitis, but an epidemiologic contact with a domestic wild rat revealed the true infectious trigger.",
+      "quote": "Pathological analysis pointed out typical lesions of bronchiolitis obliterans with organizing fibroblastic polyps in bronchioles, alveolar ducts and alveoli but without inflammatory cells (Figure 4)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Discovery of exposure to a domesticated wild rat (which also infected the patient's niece), followed by convalescent microscopic agglutination testing (MAT) demonstrating high-titer seroconversion at 1:3200 for Leptospira icterohaemorrhagiae.",
+      "quote": "The initial serology for leptospirosis was negative, the second determination three weeks after was clearly positive (MAT positive at 1 : 3200 for Leptospiro icterohaemorrhagiae)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "A life-threatening presentation of leptospirosis presenting as severe ARDS and diffuse alveolar hemorrhage without acute renal failure in a young substance user, confirmed by high convalescent MAT titers following epidemiologic exposure to a pet wild rat."
+}

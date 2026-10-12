@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3079871_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 13-year-old girl presenting with a 1-month history of fever, headache, vomiting, tachycardia (120 bpm), extreme hypertension (180/130 mmHg), meningismus, and cerebral sulcal effacement on neuroimaging, concurrent with an incidental epigastric mass. The hypertensive crisis and mass strongly suggest isolated extra-adrenal paraganglioma with hypertensive encephalopathy or intracranial hypertension, obscuring the presence of coexisting subacute central nervous system infection.\n2. Admission Breakpoint: Initial hospital presentation, triage vitals showing severe hypertension and tachycardia, signs of meningeal irritation, baseline blood tests, normal chest radiograph and ECG, cranial CT showing sulcal effacement, and abdominal ultrasound showing the epigastric hypodense area, prior to CSF analysis, 24-hour urinary metanephrines, and contrast abdominal CT.\n3. Differential Distinctions: Isolated catecholaminergic crisis from extra-adrenal paraganglioma explains paroxysmal hypertension, vomiting, and cerebral edema, but does not explain persistent 1-month fever and subacute meningismus. Acute pyogenic bacterial meningitis is unlikely given the 1-month chronicity. Tuberculous meningitis is confirmed by the subacute course and lymphocytic pleocytosis with elevated protein in the CSF.",
+  "case_prompt": "A 13-year-old girl presented with a 1-month history of fever, headache, and vomiting. She had no significant past medical history other than occasional mild headaches relieved by analgesics. Her blood pressure had never been previously measured. Family history was non-contributory.\n\nOn physical examination, she appeared chronically ill. Vital signs showed a pulse of 120 beats/min and marked hypertension with a blood pressure of 180/130 mmHg supine and 140/110 mmHg upright. Neurologic examination revealed clear signs of meningeal irritation without focal deficits.\n\nInitial blood investigations demonstrated a hemoglobin level of 14.2 g/dL, total leukocyte count of 12,900/mm³ (85% polymorphonuclear cells, 13% lymphocytes), and packed cell volume of 45%. Blood glucose, renal function tests, liver function tests, and serum electrolytes were normal. Electrocardiogram and plain chest radiograph were normal. Non-contrast cranial computed tomography showed evidence of sulcal effacement. Abdominal ultrasonography demonstrated a well-defined hypodense lesion in the epigastric region.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Extra-Adrenal Paraganglioma with Hypertensive Encephalopathy",
+      "rule_out_reason": "Severe hypertension, tachycardia, and sulcal effacement supported a catecholamine-secreting tumor causing hypertensive crisis; however, elevated catecholamines alone failed to explain the protracted 1-month fever, meningeal signs, and CSF pleocytosis.",
+      "quote": "Twenty-four hour urinary Vanilmandelic acid (VMA) and urinary metanephrines levels were elevated... The possibility of aortosympathetic paraganglioma was entertained."
+    },
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Meningismus, headache, vomiting, and fever suggested acute bacterial meningitis, but the protracted 1-month timeline and subsequent lymphocytic CSF pleocytosis ruled out typical acute pyogenic infection.",
+      "quote": "She had lymphocytic pleocytosis in the cerebrospinal fluid with protein content of 139 mg% and sugar of 92 mg% (corresponding blood sugar 85 mg%)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical presence of subacute meningeal signs with cerebral sulcal effacement and lymphocytic pleocytosis with high protein in the cerebrospinal fluid established tuberculous meningitis coexisting with an extra-adrenal paraganglioma.",
+      "quote": "With the clinical and investigation results a diagnosis of tuberculous meningitis with EAP was made. She was started on antituberculous drugs, alpha- and beta-blockers, and calcium channel blockers."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to lumbar puncture analysis, urinary metanephrines, and abdominal CT. Zero pathogen names or spoilers in the case prompt."
+}

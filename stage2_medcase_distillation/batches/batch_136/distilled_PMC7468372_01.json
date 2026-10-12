@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7468372_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 44-year-old male presented with profound bilateral vision loss, retinal vasculitis, and right macular arteriolar infarction following an acute febrile illness with transient severe thrombocytopenia. Distinguishing a post-viral immune-mediated microvascular endotheliopathy from systemic autoimmune vasculitis (e.g., Beh\u00e7et's or SLE) or embolic vascular occlusion is paramount for management.\n2. Admission Breakpoint: The admission presentation concludes following the neuro-ophthalmologic examination, retinal angiography, echocardiography, carotid Doppler, and baseline systemic/autoimmune workup, immediately prior to send-out arboviral serologies and NS1 antigen confirmation.\n3. Differential Distinctions: Systemic autoimmune vasculitides feature multi-organ involvement and autoantibodies; thromboembolic disease exhibits identifiable carotid plaques or intracardiac sources on imaging; severe post-arboviral retinopathy occurs 1\u20132 weeks following defervescence with characteristic microvascular leakage, capillary non-perfusion, and foveal infarction.",
+  "case_prompt": "A 44-year-old previously healthy man presented to an ophthalmology clinic with sudden-onset, painless, profound diminution of vision in both eyes that had persisted for 10 days. One week prior to the development of visual impairment, he experienced an acute febrile syndrome characterized by high fevers, severe generalized myalgias, and marked prostration. He had no history of diabetes mellitus, arterial hypertension, coagulopathy, or autoimmune disorders, and no pertinent family history.\n\nDuring his preceding febrile illness, his platelet count reached a nadir of 49 \u00d7 10\u00b3/\u00b5L before recovering to 176 \u00d7 10\u00b3/\u00b5L after 1 week of supportive management. Diagnostic screening for common febrile infections including common endemic infections and treponemal serologies, as well as tests for collagen vascular diseases and bleeding diatheses, were negative. Echocardiography and carotid Doppler ultrasonography demonstrated normal cardiac anatomy, preserved ventricular function, and widely patent carotid arteries without embolic sources.\n\nOn ophthalmic examination, best-corrected visual acuity was severely diminished to 1/60 in the right eye (OD) and 6/18 in the left eye (OS). Anterior segments were unremarkable in both eyes. Dilated fundus examination revealed mild vitritis, prominent perivascular exudates, scattered intraretinal hemorrhages, macular edema, peripapillary retinal whitening, and cotton wool spots bilaterally, with dense confluent retinal whitening involving the right macula. Fundus fluorescein angiography demonstrated optic disc and perivascular dye leakage confined to the posterior pole with patchy blocked fluorescence, along with extensive capillary nonperfusion secondary to occlusion of small arterioles supplying the right macula. Optical coherence tomography confirmed bilateral macular edema and subretinal fluid.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Autoimmune Retinal Vasculitis (e.g., Lupus, Beh\u00e7et's Disease)",
+      "rule_out_reason": "Bilateral occlusive retinal vasculitis and cotton wool spots can represent manifestations of collagen vascular disease; however, targeted autoimmune panels were negative, and the ocular findings were preceded by an acute tropical febrile illness with transient thrombocytopenia.",
+      "quote": "During clinical evaluation and laboratory investigation for fever; typhoid, malaria, tuberculosis, syphilis, collagen vascular disease and bleeding disorders were absent."
+    },
+    {
+      "candidate": "Cardioembolic or Carotid Thromboembolic Occlusion",
+      "rule_out_reason": "Acute macular arteriole occlusion and retinal ischemia can arise from embolic stroke or carotid plaques, but vascular and cardiac Doppler evaluations showed completely normal anatomy without embolic origins.",
+      "quote": "Echocardiography and carotid Doppler studies revealed normal cardiac and carotid artery status."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation of acute arboviral infection via positive NS1 antigen and IgM serology established the diagnosis of post-febrile immune-mediated bilateral retinal vasculitis with macular infarction.",
+      "quote": "He was diagnosed to have dengue fever as NS1 antigen and IgM antibody were positive... A diagnosis of bilateral retinal vasculitis with right eye macular infarction was made."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation cleanly separated at breakpoint prior to NS1 antigen and IgM arboviral serologies. Zero mentions of dengue or arbovirus in case prompt. Quotes and differential rationale directly matched to report."
+}

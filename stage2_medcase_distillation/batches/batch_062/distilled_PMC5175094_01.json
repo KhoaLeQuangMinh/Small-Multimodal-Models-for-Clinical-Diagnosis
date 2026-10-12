@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5175094_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 60-year-old Turkish woman presents with a 6-month history of an enlarging, tender, fluctuant, and hyperemic subcutaneous mass in the left periumbilical abdominal wall. The inflammatory signs and fluctuance closely mimic a subcutaneous abscess or infected epidermal cyst, with negative initial serology and no visceral (hepatic/pulmonary) lesions.\n2. Admission Breakpoint: The admission narrative terminates after physical examination and initial superficial soft-tissue ultrasonography of the abdominal wall, before send-out hydatid serology, systemic cross-sectional staging (abdominal and thoracic CT/MRI), and intraoperative exploration with surgical excision.\n3. Differential Distinctions: A pyogenic subcutaneous abscess or infected epidermal inclusion cyst presents with local erythema, pain, and fluctuance, but ultrasonography typically shows irregular margins, internal debris, and peripheral vascularity on Doppler. A primary subcutaneous hydatid cyst exhibits a distinct, smooth, avascular wall containing clear fluid; the absence of liver or lung cysts does not exclude primary subcutaneous infection, which can be seronegative.",
+  "case_prompt": "A 60-year-old woman presented to the hospital with a progressively growing subcutaneous mass located in the left periumbilical region of the abdominal wall, present for approximately six months. Over recent weeks, the mass had become increasingly painful.\n\nOn physical examination, inspection of the abdominal wall revealed a distinct periumbilical mass with hyperemic overlying skin. Palpation demonstrated a 3-cm lesion that was distinctly fluctuant, mobile, and tender to light touch. There was no evidence of abdominal wall hernia, abdominal guarding, or organomegaly. She had no prior surgical history.\n\nBedside superficial soft-tissue ultrasonography of the anterior abdominal wall identified a 3 x 2 cm cystic mass situated entirely within the subcutaneous tissue of the left periumbilical region. The cystic lesion was characterized by a smooth contour and a well-delineated, completely avascular cyst wall.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Subcutaneous Pyogenic Abscess / Infected Epidermal Cyst",
+      "rule_out_reason": "Considered because of a painful, fluctuant, mobile subcutaneous mass with hyperemic overlying skin, but ultrasound showed a well-defined lesion with a smooth contour and avascular wall, and operative exploration confirmed an intact parasitic cyst rather than purulent suppuration.",
+      "quote": "The mass was fluctuant, mobile and painful. The overlying skin was hyperemic. In the superficial tissue ultrasonography (US) a 3x2 cm cystic mass was detected in the subcutaneous tissue of left periumblical region of the abdominal wall. The lesion had a smooth contour and an avascular wall."
+    },
+    {
+      "candidate": "Benign Subcutaneous Soft-Tissue Neoplasm (Lipoma / Neurofibroma)",
+      "rule_out_reason": "Considered given the indolent 6-month progression of a mobile subcutaneous mass, but imaging showed a strictly fluid-filled avascular cyst and surgery demonstrated an intact cystic membrane.",
+      "quote": "The lesion had a smooth contour and an avascular wall. It was doubtful for hydatid cyst."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical exploration of the subcutaneous tissue demonstrated an intact cystic lesion possessing a characteristic germinative membrane, and histopathology confirmed a primary subcutaneous hydatid cyst without concurrent hepatic or pulmonary involvement.",
+      "quote": "Macroscopic exploration suggested a hydatid cyst with its germinative membrane (Figure 2). Histopathological examination of the specimen was reported as a hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly stops after physical examination and initial ultrasound. Zero spoilers or pathogen names in prompt. Exact quotes verified against source text."
+}

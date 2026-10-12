@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2948944_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 19-year-old male presents with persistent high fevers, cachexia, bilateral pleural effusions, hepatosplenomegaly, epistaxis, and profound thrombocytopenia (platelets 29,000/cu.mm) with florid petechiae, mimicking tropical vector-borne infections (such as dengue hemorrhagic fever), hematologic malignancy, or sepsis. The co-occurrence of widespread miliary organ involvement and immune-mediated megakaryocytic thrombocytopenia represents a severe, atypical presentation of disseminated mycobacterial disease.\n2. Admission Breakpoint: The breakpoint occurs at tertiary referral triage following physical examination, initial laboratory evaluations (revealing severe thrombocytopenia, anemia, markedly elevated alkaline phosphatase, and normal coagulation), and contrast CT chest/abdomen, prior to bone marrow aspiration/biopsy and high-dose corticosteroid therapy.\n3. Differential Distinctions: Dengue hemorrhagic fever or severe acute vector-borne disease was considered due to high fever, petechiae, hepatosplenomegaly, and severe thrombocytopenia, but ruled out by negative dengue serologies and blood smears. Typhoid fever / enteric fever or bacterial endocarditis was excluded by sterile blood/urine cultures, negative Widal and ASO titers, and normal echocardiography. Disseminated tuberculosis was established by miliary pulmonary and multisystem visceral granulomatous lesions on CT and confirmed by necrotizing epithelioid granulomas on bone marrow biopsy.",
+  "case_prompt": "A 19-year-old male with no known chronic comorbidities was referred to the hospital with persistent moderate- to high-grade fever, cough with scant expectoration, worsening bilateral pleural effusions, and new-onset epistaxis.\n\nOn physical examination, he was febrile, tachycardic, and cachectic, with a florid petechial rash distributed across the chest and anterior abdominal wall. Respiratory examination demonstrated decreased chest expansion bilaterally with decreased air entry bilaterally on auscultation. Abdominal examination revealed marked hepatosplenomegaly.\n\nInitial laboratory evaluation revealed a hemoglobin of 7.6 g/dL, a platelet count of 29,000/cu.mm, AST 87 U/L, ALT 68 U/L, and a markedly elevated alkaline phosphatase level of 1,743 U/L. Prothrombin time and activated partial thromboplastin time were normal. Urinalysis was unremarkable.\n\nContrast-enhanced computed tomography (CECT) of the chest and abdomen demonstrated diffuse miliary nodules throughout both lungs, bilateral pleural effusions, enlarged necrotic subcarinal and right hilar lymph nodes, multiple well-defined hypodense lesions in the liver, spleen, and right kidney, and a large wedge-shaped splenic infarction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tropical Vector-Borne Infection (Dengue Fever / Malaria)",
+      "rule_out_reason": "Considered due to the abrupt onset of high fever, petechial rash, hepatosplenomegaly, and severe thrombocytopenia with mucosal bleeding, but excluded by negative peripheral blood smears and nonreactive dengue serologies.",
+      "quote": "no malaria parasite on peripheral smear, negative dengue serologies, a negative Widal agglutination test"
+    },
+    {
+      "candidate": "Enteric Fever (Typhoid) / Bacterial Sepsis / Infective Endocarditis",
+      "rule_out_reason": "Considered given prolonged fever, cachexia, hepatosplenomegaly, and multiorgan involvement, but disproven by negative blood and urine cultures, negative Widal titers, negative ASO titers, and a normal echocardiogram.",
+      "quote": "negative blood, and urine cultures, no malaria parasite on peripheral smear, negative dengue serologies, a negative Widal agglutination test, negative antistreptolysin O (ASO) titers, and a normal 2-dimensional echocardiogram."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CECT revealed classic diffuse miliary pulmonary nodules with necrotic lymphadenopathy and systemic visceral granulomatous lesions, while bone marrow biopsy confirmed necrotizing epithelioid cell granulomas and megakaryocytic hyperplasia consistent with secondary immune thrombocytopenia.",
+      "quote": "Bone biopsy revealed multiple necrotizing epithelioid cell granulomas with areas of diffuse necrosis consistent with disseminated tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to referral admission presentation, triage labs, and initial contrast CT. Bone marrow biopsy and immunosuppressive steroid trial reserved for diagnostic reasoning."
+}

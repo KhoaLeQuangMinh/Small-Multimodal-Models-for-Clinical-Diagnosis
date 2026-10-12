@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4499233_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Acute encephalitis in a young, immunocompetent adult presenting with fever, altered mental status, and a temporal ring-enhancing abscess on CT, which initially mimics acute pyogenic brain abscess or herpes simplex encephalitis. However, CSF reveals lymphocytic pleocytosis with elevated protein and normal glucose, and subsequent imaging demonstrates multi-focal lesions (vermian and temporal abscesses) with hydrocephalus characteristic of tuberculous CNS involvement.\n2. Admission Breakpoint: Day 1 emergency triage and intensive care admission following initial head CT (demonstrating a temporal abscess) and lumbar puncture (revealing lymphocytic pleocytosis with elevated protein), prior to second-day MRI, initiation of antituberculous therapy, or clinical deterioration.\n3. Differential Distinctions: Pyogenic bacterial brain abscess typically causes marked neutrophilic pleocytosis and rapid suppurative necrosis; viral (herpes simplex) encephalitis causes necrotizing temporal encephalitis without discrete encapsulated abscess cavities and fails to explain vermian abscesses or hydrocephalus; tuberculous encephalitis/abscess uniquely combines subacute presentation, lymphocytic CSF pleocytosis, high CSF protein, and multilocular infratentorial and supratentorial abscesses with hydrocephalus.",
+  "case_prompt": "A 38-year-old woman with no prior medical history presents to the emergency department with mental confusion and fever that developed over the preceding ten days. She is a resident of Tunisia. On physical examination, she is agitated and exhibits pronounced neck stiffness. Her initial Glasgow Coma Scale (GCS) score is 13. A non-contrast computed tomography (CT) scan of the head reveals a temporal brain abscess. Lumbar puncture is performed; cerebrospinal fluid (CSF) analysis demonstrates a white blood cell count of 340/mm³ with 76% lymphocytes, an elevated protein level of 172 mg/dL, and normal glucose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic / Bacterial Brain Abscess",
+      "rule_out_reason": "Acute bacterial brain abscesses typically produce marked peripheral leukocytosis and a neutrophilic CSF profile if meningeal inflammation is present, and would be expected to respond to standard broad-spectrum cephalosporins (empiric cefotaxime), whereas this patient demonstrated marked lymphocytic pleocytosis (76% of 340 WBC/mm³) and subsequent multifocal infratentorial and supratentorial lesions.",
+      "quote": "She was admitted in the intensive care unit and treatment by cefotaxim and acyclovir was initiated."
+    },
+    {
+      "candidate": "Herpes Simplex Encephalitis",
+      "rule_out_reason": "HSV encephalitis frequently presents with fever, acute confusion, neck stiffness, temporal lobe localization, and lymphocytic pleocytosis, prompting immediate empiric acyclovir therapy; however, the presence of discrete ring-enhancing abscesses on CT and MRI and development of hydrocephalus and vermian lesions exclude uncomplicated viral encephalitis.",
+      "quote": "The identification of the cause of acute encephalitis is difficult in spite of many developed diagnosis strategies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical presentation of subacute meningoencephalitis in an endemic region (Tunisia) accompanied by lymphocytic pleocytosis (76%), markedly elevated proteinorrachia (172 mg/dL), and neuroimaging showing hydrocephalus along with multilocular vermian and temporal brain abscesses established the clinical and radiological diagnosis of tuberculous encephalitis.",
+      "quote": "The Magnetic resonance imaging (MRI) of the head performed in the second day revealed images of hydrocephalus (B). It showed also two images of brain vermian (C) and temporal abscesses (D). The diagnosis of tuberculous encephalitis was made by computing clinical, laboratory and imaging findings."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case strictly adheres to Stanford MedCaseReasoning guidelines. Admission breakpoint captures initial triage presentation, head CT, and CSF analysis while omitting day-2 MRI, antimicrobial responses, and fatal outcome. Differential covers pyogenic abscess and herpes encephalitis with verbatim textual quotes."
+}

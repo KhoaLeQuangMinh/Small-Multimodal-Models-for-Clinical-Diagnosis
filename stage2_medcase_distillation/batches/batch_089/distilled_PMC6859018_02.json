@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6859018_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 70-year-old man presents with mild right upper quadrant discomfort, abdominal fullness, and hepatomegaly with a palpable mass. Abdominal cross-sectional imaging reveals a massive 21 x 14 cm multivesicular cystic mass occupying virtually the entire right hepatic lobe. The diagnostic dilemma lies in distinguishing a benign simple congenital cyst or polycystic liver disease, a biliary mucinous cystic neoplasm (cystadenoma/cystadenocarcinoma), an amoebic or pyogenic liver abscess, from a giant hydatid cyst (echinococcosis).\n2. Admission Breakpoint: The admission breakpoint occurs following outpatient surgical triage, physical exam, plain abdominal radiography, and initial abdominal ultrasound and CT revealing the 21 x 14 cm multicystic intrahepatic lesion with internal daughter cysts, prior to receiving send-out Echinococcus serology (IgG/IgM) and intraoperative intervention.\n3. Differential Distinctions: Simple hepatic cysts lack internal architecture, septations, or daughter cysts. Hepatic biliary cystadenomas have irregular thick enhancing septa and mural nodularity without daughter cysts. Hepatic abscesses present acutely with fever and toxemia, absent here. The diagnostic pivot is established by multivesicular cyst architecture containing numerous internal daughter cysts on ultrasound and CT, verified by positive Echinococcus IgG and IgM serology.",
+  "case_prompt": "A 70-year-old man presents to the surgical outpatient department of a tertiary public hospital in Greece with a 1-month history of mild right upper quadrant abdominal pain and a sensation of abdominal fullness. He reports no fever, chills, jaundice, anorexia, or weight loss. His past medical history is unremarkable, with no history of previous abdominal surgeries or chronic liver disease.\n\nOn physical examination, he appears well and in no distress. Abdominal examination reveals an enlarged liver with a palpable, discrete mass in the right upper quadrant. The abdomen is non-tender, without rebound, guarding, or ascites. Examination of other organ systems is unremarkable.\n\nPlain abdominal radiography is normal. Abdominal ultrasonography demonstrates a large solitary cyst in the right lobe of the liver containing multiple internal cysts within the primary cyst cavity. Abdominal computed tomography (CT) scan confirms a giant, sharply marginated 21 x 14 cm cystic lesion occupying the entire right lobe of the liver, containing multiple internal daughter cysts within the primary cyst, without demonstrable communication with major intrahepatic vascular or biliary structures.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple Hepatic Cyst",
+      "rule_out_reason": "Simple hepatic cysts are unilocular, homogenous fluid collections with thin, imperceptible walls that lack internal daughter vesicles or complex septations, contrasting sharply with the multivesicular architecture seen in this patient.",
+      "quote": "the abdominal ultrasonography (US) revealed a large solitary cyst at the right lobe of the liver with multiple cysts inside the primary cyst."
+    },
+    {
+      "candidate": "Biliary Cystadenoma",
+      "rule_out_reason": "Biliary cystic neoplasms (mucinous cystadenoma/cystadenocarcinoma) typically demonstrate irregular thick septations, papillary projections, and solid mural nodules, whereas this lesion demonstrated well-marginated internal daughter cysts without solid neoplastic nodularity.",
+      "quote": "An abdominal computed tomography (CT) scan showed a giant, 21*14 cm2, marginated hydatid cyst, occupying the entire right lobe of the liver with multiple daughter cysts inside the primary cyst"
+    },
+    {
+      "candidate": "Pyogenic or Amoebic Liver Abscess",
+      "rule_out_reason": "Hepatic abscesses present acutely with high fever, chills, leukocytosis, and right upper quadrant peritoneal signs, whereas this patient had an indolent 1-month history without fever or systemic symptoms.",
+      "quote": "A 70-year-old man was referred to the surgical outpatient department because of mild right upper quadrant pain and a sensation of abdominal fullness for about a month. His medical history was unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The classic imaging features of a giant multivesicular cyst containing internal daughter cysts together with positive Echinococcus-specific IgG and IgM antibodies confirmed Echinococcosis (hydatid cyst).",
+      "quote": "The diagnosis was confirmed with serological tests, where positive IgG and IgM antibodies were found."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission serology, operative pathology, and pathogen labels."
+}

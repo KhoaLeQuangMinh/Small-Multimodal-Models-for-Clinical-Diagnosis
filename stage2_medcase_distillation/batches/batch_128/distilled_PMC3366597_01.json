@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3366597_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 18-year-old male presents with vague chest discomfort, normal physical examination, normal chest radiograph, but focal apico-infero-posterior ischemic changes on ECG and a large, well-defined intramyocardial fluid-filled cyst on echocardiography. The tension lies in differentiating an unusual parasitic cyst from primary cardiac neoplasms, pericardial cysts, or structural ventricular pseudoaneurysms in an otherwise healthy adolescent.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial emergency evaluation, ECG, chest radiography, and preliminary transthoracic echocardiography identifying the intramyocardial fluid-filled cyst, prior to advanced CT imaging revealing hepatic cysts and surgical intervention.\n3. Differential Distinctions: Cardiac myxoma/fibroma (typically solid, intraluminal, or pedunculated, unlike this fluid-filled intramyocardial mass), pericardial cyst (typically extracardiac and nestled in the right cardiophrenic angle), and ventricular pseudoaneurysm (typically follows myocardial infarction or trauma with turbulent flow). Confirmatory thoracic/abdominal CT demonstrating coexisting multivesicular hepatic cyst and intraoperative cystectomy establish echinococcosis.",
+  "case_prompt": "An 18-year-old male is referred to the clinic presenting with chest discomfort. Physical examination is entirely normal. Chest radiography reveals normal cardiothoracic contours and clear lung fields. A 12-lead electrocardiogram demonstrates sinus rhythm with ischemic changes localized to the apico-infero-posterior myocardium. Initial two-dimensional transthoracic echocardiography reveals a single, large, well-defined oval fluid-filled intramyocardial cyst measuring 39 x 56 x 38 mm in the infero-postero-apical segment, which protrudes slightly into the pericardium but predominantly bulges into the left ventricular cavity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cardiac myxoma or primary intracardiac tumor",
+      "rule_out_reason": "Primary intracardiac tumors like myxomas are generally intraluminal, pedunculated, or solid masses rather than a well-circumscribed, pure fluid-filled intramyocardial cyst.",
+      "quote": "Two-dimensional-TTE (2DTTE) (Supplementary data online, Movie S1) showed a single, large oval cyst (39 x 56 x 38 mm). The edge was well defined (Panel A), it was intramyocardial and fluid-filled."
+    },
+    {
+      "candidate": "Left ventricular pseudoaneurysm or true aneurysm",
+      "rule_out_reason": "Pseudoaneurysms result from myocardial rupture contained by pericardium following infarction or trauma with a visible neck and turbulent flow, whereas this was an ellipsoid, well-defined intramyocardial fluid collection in an otherwise healthy young patient.",
+      "quote": "showing an apico-infero-posterior intramyocardial ellipsoid cystic mass with liquid content and well-defined edges."
+    },
+    {
+      "candidate": "Pericardial cyst",
+      "rule_out_reason": "Pericardial cysts are benign congenital cysts typically situated extracardiac in the cardiophrenic angles (most commonly right), whereas this cyst was predominantly intramyocardial and projected into the left ventricular lumen.",
+      "quote": "it was intramyocardial and fluid-filled. It was located in the infero-postero-apical segment, protruding into the pericardium but mainly bulging into the left ventricular cavity"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Chest computed tomography demonstrating a concurrent multivesicular hepatic cyst alongside the intramyocardial cyst, followed by surgical resection and aspiration of cystic material from the left ventricular myocardium, establishing hydatid disease.",
+      "quote": "Chest computed tomography (CT) (Panel C) confirmed the presence of a left ventricular intramyocardial cyst and also a multivesicular hepatic cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the admission breakpoint before advanced thoracoabdominal CT and surgery. Zero leakage of Echinococcus, hydatid, or hepatic cysts in the prompt. Quotes verified against source text."
+}

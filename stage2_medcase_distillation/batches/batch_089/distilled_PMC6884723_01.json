@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6884723_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 32-year-old agricultural researcher in Nigeria presents with acute high-grade fever, chills, headache, severe myalgia, abdominal pain, and vomiting failing outpatient antimalarials and ciprofloxacin. He rapidly demonstrates profound coagulopathy (prolonged PT/APTT, D-dimer >200 µg/mL), thrombocytopenia, microscopic hematuria, transaminitis, and progressive respiratory failure with pulmonary infiltrates. The clinical challenge is distinguishing between severe falciparum malaria, overwhelming bacterial sepsis / enteric fever, leptospirosis, and viral hemorrhagic fevers like dengue hemorrhagic fever.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following emergency department triage, baseline physical examination, initial complete blood count, coagulation profile, D-dimer, renal and liver function panels, and baseline urinalysis, prior to escalating parenteral antimicrobial regimens, ICU transfer, repeat malaria smears, and send-out viral hemorrhagic fever PCR testing.\n3. Differential Distinctions: Severe malaria is the leading cause of acute febrile coagulopathy in West Africa, but the patient failed oral antimalarials prior to arrival and had repeatedly negative blood films. Sepsis and enteric fever are excluded by non-response to broad-spectrum antibiotics (ciprofloxacin, ceftriaxone, metronidazole, azithromycin) and lack of bacteremia. The diagnostic pivot is marked severe thrombocytopenia, coagulopathy, hemoconcentration/plasma leakage, and confirmatory positive dengue virus real-time RT-PCR.",
+  "case_prompt": "A 32-year-old man with no antecedent comorbidities presents to the emergency department of a tertiary hospital in South Western Nigeria with an acute-onset high-grade intermittent fever accompanied by chills, rigors, headache, severe myalgias, diffuse abdominal pain, and intractable vomiting. He denies diarrhea, dark urine, or scleral icterus. Prior to presentation, he was empirically treated with oral antimalarials, oral ciprofloxacin, and antipyretics without clinical improvement. He works as an agricultural research fellow and routinely spends extended periods working outdoors in agricultural fields and farmlands.\n\nOn physical examination, he appears acutely ill, toxic, and febrile with a body temperature of 38.9°C. Vital signs include a blood pressure of 120/70 mmHg, a pulse of 92 beats per minute, and a respiratory rate of 24 breaths per minute. Sclerae are anicteric, and there is no rash, petechiae, or peripheral lymphadenopathy. Cardiac auscultation is normal, lungs are clear to auscultation bilaterally, and the abdomen is soft and non-distended without palpable organomegaly.\n\nInitial laboratory evaluation reveals a leukocyte count of 7,090/µL with 84.7% neutrophils, hemoglobin of 14.5 g/dL, and a platelet count of 89,000/µL. Coagulation studies show an activated partial thromboplastin time (aPTT) prolonged by 15.2 seconds, a prothrombin time prolonged by 5.3 seconds, and an INR of 1.35. D-dimer is markedly elevated at 224.6 µg/mL (reference: 0–0.5 µg/mL). Renal biochemistry demonstrates a serum creatinine of 1.5 mg/dL. Hepatic panel reveals marked transaminitis with an AST of 223 IU/L and ALT of 70 IU/L, with normal alkaline phosphatase and total bilirubin. Urinalysis reveals microscopic hematuria.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Falciparum Malaria",
+      "rule_out_reason": "Severe malaria is hyperendemic in Nigeria and causes acute fever, myalgia, severe thrombocytopenia, coagulopathy, and acute kidney injury, but the patient failed pre-admission antimalarial therapy and had repeatedly negative blood films for malaria parasites.",
+      "quote": "Blood film for malaria parasite detection was repeatedly negative."
+    },
+    {
+      "candidate": "Bacterial Sepsis / Severe Enteric Fever",
+      "rule_out_reason": "Neutrophilic leukocytosis, high-grade fevers, and abdominal pain prompted broad-spectrum coverage, but the patient experienced persistent fevers and clinical deterioration despite aggressive antibiotic therapy.",
+      "quote": "The following day, the temperature was noticed to be 40.5 C despite regular antibiotics."
+    },
+    {
+      "candidate": "Severe Community-Acquired Pneumonia",
+      "rule_out_reason": "The subsequent development of hypoxemia, crackles, and perihilar opacities prompted treatment for atypical pneumonia, but these findings reflected progressive systemic microvascular plasma leakage and non-cardiogenic pulmonary edema characteristic of severe viral hemorrhagic fever rather than primary bacterial pneumonia.",
+      "quote": "Chest X-ray showed perihilar patchy opacities worse on the right with few patchy opacities on the right upper and lower zones. With concern for a sub-optimally treated community-acquired pneumonia, azithromycin was added for atypical pathogens."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of positive dengue virus RNA on a real-time polymerase chain reaction panel in the setting of severe thrombocytopenia, coagulopathy, and plasma leakage confirmed dengue hemorrhagic fever.",
+      "quote": "On the 10th day of admission, a positive result for viral hemorrhagic fever screening using real-time RNA polymerase chain reaction panel detecting the dengue virus was obtained."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission PCR panels, repeat malaria smears, and clinical course beyond emergency triage."
+}

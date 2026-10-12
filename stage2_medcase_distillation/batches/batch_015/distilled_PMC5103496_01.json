@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5103496_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A previously healthy 12-year-old boy in tropical China presents with acute suppurative parotitis and markedly elevated inflammatory markers after freshwater lake exposure. The diagnostic tension involves differentiating this presentation from epidemic viral parotitis (mumps) and conventional Gram-positive pyogenic parotitis (Staphylococcus aureus), recognizing suppurative parotitis as a hallmark pediatric manifestation of Burkholderia pseudomallei in endemic tropical regions.\n2. Admission Breakpoint: Admission triage encompasses demographics, freshwater exposure history, vital signs, physical exam of the parotid region, initial hemogram, glucose, and baseline inflammatory markers (CRP, ESR). It strictly excludes operative incision and drainage, tissue histopathology, pus bacterial culture, automated bacterial identification panels, and 16S rRNA gene sequencing.\n3. Differential Distinctions: Viral parotitis (mumps) presents with non-suppurative, bilateral or diffuse swelling without fluctuance or extreme ESR elevation. Acute suppurative parotitis from Staphylococcus aureus usually occurs in dehydrated or debilitated patients with ascending ductal pus, whereas pediatric parotid abscess following tropical freshwater contact strongly suggests Burkholderia pseudomallei, an organism inherently resistant to many standard beta-lactams.",
+  "case_prompt": "A 12-year-old boy residing in Dongfang county, Hainan province—a tropical region of southern China—presents with severe left parotid pain and facial swelling. He has never traveled outside the region. His history reveals that he occasionally swims in a local freshwater lake, with his most recent swim approximately one month prior to symptom onset. He denies fever, cough, sputum production, or weight loss. He has no medical history of diabetes mellitus, chronic pulmonary disease, or renal disease.\n\nOn physical examination, he is afebrile with normal vital signs. Examination of the head and neck reveals a 4.0 x 3.5 cm soft, fluctuant swelling over the left parotid region associated with marked tenderness, local warmth, and erythema. No primary focus of infection or mucosal lesion is identified in the adjacent draining head and neck territory.\n\nLaboratory testing reveals a white blood cell count of 8.1 x 10^9/L with 69% neutrophils, red blood cell count of 3.94 x 10^12/L, hemoglobin of 106 g/L, hematocrit of 34%, and platelet count of 231 x 10^9/L. Serum glucose is 6.01 mmol/L. C-reactive protein is 6.3 mg/L, and the erythrocyte sedimentation rate is markedly elevated at 92 mm/1st hour.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Parotitis (Mumps)",
+      "rule_out_reason": "Considered as a frequent cause of pediatric parotid enlargement, but ruled out by the unilateral, fluctuant, suppurative abscess formation with marked elevation of the erythrocyte sedimentation rate (92 mm/1st hour).",
+      "quote": "The swelling was soft and fluctuant and it was associated with tenderness, warmth and redness."
+    },
+    {
+      "candidate": "Staphylococcal / Streptococcal Ascending Bacterial Parotitis",
+      "rule_out_reason": "Considered as the classical cause of acute bacterial parotid abscess, but argued against by the lack of antecedent dehydration, absence of intraoral ductal purulence or contiguous draining source, and lack of systemic fever.",
+      "quote": "There was no primary focus of infection found in the adjacent draining area. He had no related symptoms of fever, cough, expectoration or weight loss."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical drainage yielded pus that grew non-fermenting Gram-negative bacilli on blood agar, identified with >99% confidence by VITEK-2 and confirmed by 16S rRNA sequencing as Burkholderia pseudomallei, establishing pediatric parotid melioidosis linked to endemic freshwater exposure.",
+      "quote": "VITEK-2 suggested that the isolate was Burkholderia pseudomallei, with an excellent level of identification (>99 %), which was confirmed by 16S rRNA gene sequencing."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres to Stanford MedCaseReasoning criteria. Breakpoint halts prior to parotid aspiration/drainage, microbiology culture, VITEK-2 analysis, and 16S rRNA sequencing."
+}

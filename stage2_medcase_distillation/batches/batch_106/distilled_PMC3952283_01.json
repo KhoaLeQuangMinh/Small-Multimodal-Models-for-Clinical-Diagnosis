@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3952283_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 48-year-old immunocompetent, non-diabetic homemaker presented with a 2-month history of localized right groin swelling and low-grade fever that failed empirical outpatient antibacterial therapy. Histopathological examination of the excised lymph node revealed epithelioid granulomas with Langhans giant cells and caseation, strongly mimicking tuberculous lymphadenitis ('tuberculous granulation tissue') and masking an atypical presentation of melioidosis as isolated subcutaneous lymphadenitis.\n2. Admission Breakpoint: The admission clinical encounter concludes following baseline laboratory evaluation (mild ESR elevation, normal leukocyte count, normal renal/liver function) and unrevealing chest and abdominal imaging, immediately before surgical excision biopsy of the inguinal mass.\n3. Differential Distinctions: Tuberculous lymphadenitis was the leading clinical and histologic mimic due to Langhans giant cell granulomas, but was excluded by negative acid-fast staining and negative 3-month mycobacterial cultures. Pyogenic lymphadenitis failed prior oral antibacterial therapy. Melioidosis was definitively diagnosed when pus Gram stain revealed characteristic bipolar-staining 'safety pin' Gram-negative bacilli and aerobic culture grew wrinkled colonies biochemically identified as Burkholderia pseudomallei.",
+  "case_prompt": "A 48-year-old homemaker, not a known diabetic, presented with swelling in the right groin and fever of 2 months' duration. The fever was mild and intermittent, without chills or rigors. There was no history of trauma to the lower extremities or the right inguinal lymphatic drainage basin. She had received a 2-week course of empirical antibacterial medications prescribed by her family physician without regression of the swelling, prompting referral for further management.\n\nOn physical examination, she was well-built, well-nourished, and afebrile. Her pulse was 72 beats per minute and regular, and blood pressure was 120/80 mmHg. Right groin examination revealed a 2 x 1.5 cm swelling in the inguinal region below the inguinal ligament. The swelling was soft, non-fluctuant, tender, with local warmth. No cough impulse or bruit was present. There was no cutaneous ulceration in the draining territory. Distal lower-extremity pulses were palpable bilaterally without varicose veins or focal neurologic deficits. Systemic examination was otherwise normal.\n\nInitial laboratory evaluation revealed hemoglobin 12.27 g/dL, total leukocyte count 8,300/mm\u00b3 (neutrophils 68%, lymphocytes 25%, eosinophils 5%, monocytes 1%), and erythrocyte sedimentation rate (ESR) 25 mm/1st h. Random blood glucose was 86 mg/dL, blood urea 20 mg/dL, and serum creatinine 0.7 mg/dL. Serologic tests for HIV and hepatitis B surface antigen were non-reactive. Chest radiography and transabdominal ultrasound demonstrated no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous lymphadenitis",
+      "rule_out_reason": "Considered due to the chronic 2-month history of groin swelling and fever, and biopsy findings of epithelioid granulomas with Langhans giant cells and minimal caseation; ruled out by negative acid-fast staining and negative 3-month mycobacterial culture.",
+      "quote": "Histopathology of the biopsy sample revealed numerous epithelioid granulomas with Langhans giant cells with minimal caseation in fibrous granulation tissue. There were foreign body granulomas and dense lymphoplasmacytic infiltrate with proliferating blood vessels, suggesting tuberculous granulation tissue... The acid-fast staining did not reveal any acid-fast bacilli (AFB)... The AFB culture was found to be negative after 3 months of incubation."
+    },
+    {
+      "candidate": "Pyogenic bacterial lymphadenitis",
+      "rule_out_reason": "Considered due to subacute groin mass with purulence and local inflammatory warmth; ruled out by lack of response to empirical outpatient antibacterial therapy and subsequent isolation of an environmental Gram-negative bacillus.",
+      "quote": "The patient was on antibacterial drugs for 2 weeks as prescribed by the family physician. But the swelling did not subside and she was referred to our hospital for further management."
+    },
+    {
+      "candidate": "Inguinal hernia or vascular anomaly",
+      "rule_out_reason": "Considered given the anatomical location below the inguinal ligament; excluded by absence of expansile cough impulse, absence of bruit, and normal peripheral pulses.",
+      "quote": "No cough impulse or bruit was present. There was no ulcer in the draining area. The right lower limb pulses were well felt and there was no evidence of varicose veins or any neurological deficit."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Melioidosis (Burkholderia pseudomallei)",
+      "rule_out_reason": "Excision of the groin lesion demonstrated an abscess; preliminary Gram stain of pus revealed bipolar stained ('safety pin') Gram-negative bacilli, and aerobic culture on MacConkey agar grew wrinkled colonies confirmed biochemically as Burkholderia pseudomallei.",
+      "quote": "The preliminary microbiological testing of the pus by Gram's staining showed numerous pus cells with bipolar stained (safety pin) Gram-negative bacilli. Hence, B. pseudomallei was suspected... The aerobic culture revealed wrinkled, lactose-fermenting colonies on MacConkey's agar [Figure 1]. The isolate was confirmed as B. pseudomallei by characteristic biochemical tests."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Isolated inguinal lymphadenitis is a rare, deceptive presentation of melioidosis in an immunocompetent non-diabetic host. The histopathological mimicry of tuberculosis with Langhans giant cells emphasizes the necessity of Gram staining and culturing all surgical pus specimens in endemic areas."
+}

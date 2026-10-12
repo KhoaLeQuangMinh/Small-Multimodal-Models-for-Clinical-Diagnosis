@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4731900_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 20-year-old woman presenting with chronic cough, progressive dyspnea, and severe obstructive ventilatory defect mimicking severe asthma or primary tracheal neoplasm. The clinical dilemma centers on differentiating primary airway hyperreactivity or tumor from cicatricial tracheal stenosis secondary to endobronchial infection.\n2. Admission Breakpoint: The admission breakpoint falls right after triage physical examination, pulmonary function testing, and initial chest computed tomography, prior to interventional electronic bronchoscopy, tissue biopsy, or mycobacterial staining.\n3. Differential Distinctions: Bronchial asthma was considered given prominent wheezing and profound reduction in FEV1 (35.2%), but ruled out by central stridor and localized upper tracheal narrowing on CT; tracheal neoplasm or granulomatosis with polyangiitis was considered due to focal luminal narrowing but ruled out by biopsy revealing chronic fibrous proliferation without neoplastic transformation or vasculitis. The diagnosis pivots on sputum acid-fast bacilli positivity and bronchoscopic biopsy revealing caseating necrotizing granulomas of the tracheal mucosa.",
+  "case_prompt": "A 20-year-old woman presents to the hospital with a history of persistent cough, expectoration, and worsening shortness of breath over several months. Her respiratory symptoms have become progressively more severe despite previous symptomatic medical therapy.\n\nOn physical examination, the patient is alert and in moderate respiratory distress. Her respiratory rate is 25 breaths per minute, pulse is 93 beats per minute, and blood pressure is 126/78 mmHg. Chest auscultation reveals rough breath sounds with bilateral inspiratory and expiratory wheezing and central stridor. The abdominal and general examinations are unremarkable.\n\nPulmonary function testing (PFT) reveals severe obstructive impairment with a vital capacity (VC) of 3.29 L (91.9% of predicted), forced expiratory volume in 1 second (FEV1) of 1.11 L (35.2% of predicted), and an FEV1/forced vital capacity (FVC) ratio of 33.65%. A chest computed tomography (CT) scan shows focal tracheal stenosis at the thoracic inlet, alongside patchy, nodular, and streaking parenchymal lesions with uneven density in bilateral lung lobes, with normal mediastinal and hilar lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchial asthma",
+      "rule_out_reason": "Bilateral wheezing, cough, and severe obstructive ventilatory defect (FEV1 35.2% predicted) suggested severe asthma; however, failure of symptom resolution and chest CT demonstrated fixed structural tracheal narrowing rather than reversible bronchospasm.",
+      "quote": "A chest computed tomography (CT; Fig. 1) revealed tracheal stenosis at the thoracic inlet, patchy, nodule-like and streaking lesions with uneven density in both lobes of the lung, and normal lymph node sat mediastinum and lung hilus."
+    },
+    {
+      "candidate": "Tracheal neoplasm / Idiopathic laryngotracheal stenosis",
+      "rule_out_reason": "Focal stenosis of the upper trachea at the thoracic inlet raised concern for primary endotracheal neoplasm or idiopathic subglottic stenosis; however, histopathology showed chronic inflammatory mucosal changes with fibrous proliferation rather than malignancy.",
+      "quote": "The biopsy showed chronic inflammation of the upper tracheal mucosa with fibrous tissue proliferation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of positive acid-fast bacilli in sputum combined with bronchoscopic visualization of mucosal granulomatous lesions with caseous necrosis confirmed endobronchial tuberculosis complicated by cicatricial tracheal stenosis.",
+      "quote": "She was diagnosed as tracheal tuberculosis according to the positive acid-fast bacilli in her sputum and granuloma-like lesions on the tracheal wall with caseous necrosis by bronchoscopy with biopsy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly terminates before bronchoscopy and biopsy; zero pathogen or TB spoilers; quotes verified verbatim against article."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11370764_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 65-year-old male from Hebei Province presents with a 5-month history of fever, anorexia, severe pancytopenia (WBC 0.7 × 10^9/L, Hb 72 g/L, platelets 46 × 10^9/L), marked splenomegaly, elevated 1,3-beta-D-glucan (814 pg/mL), and bone marrow hypoplasia with megakaryocyte dysplasia. The critical tension is distinguishing visceral leishmaniasis (kala-azar) from an invasive systemic fungal infection (driven by the false-positive beta-glucan assay) or a primary hematologic malignancy (such as myelodysplastic syndrome or aplastic anemia).\n2. Admission Breakpoint: The admission breakpoint is located immediately after initial admission lab results, broad-spectrum antibiotic failure, and abdominal CT imaging, prior to the diagnostic bone marrow aspiration detecting Leishmania amastigotes and blood mNGS testing.\n3. Differential Distinctions: Invasive fungal infection was strongly suspected due to elevated (1,3)-beta-D-glucan, but empiric amphotericin B/fluconazole did not improve the patient, and marrow/BALF sequencing identified protozoan parasites rather than fungi. Myelodysplastic syndrome/aplastic anemia was ruled out by the absence of clonal cytogenetic abnormalities or blast excess, and demonstration of characteristic Leishmania amastigotes on marrow cytology.",
+  "case_prompt": "A 65-year-old male from Zanhuang County, Hebei Province presents with a 5-month history of intermittent fever, poor appetite, nausea, and vomiting. Five days prior to admission, his fever recurred with peak temperature of 39.5°C, accompanied by chills, chest tightness, and shortness of breath, without cough, expectoration, abdominal pain, diarrhea, or urinary symptoms. He previously received repeated courses of broad-spectrum antibiotics and empirical antifungal therapies without clinical improvement.\n\nOn physical examination, the patient is febrile and in respiratory distress. Epigastric and abdominal evaluation demonstrates splenomegaly.\n\nInitial laboratory evaluation reveals severe pancytopenia: white blood cell count 0.7 × 10^9/L (neutrophils 0.3 × 10^9/L), red blood cell count 3.0 × 10^12/L, hemoglobin 72 g/L, and platelet count 46 × 10^9/L. Serum albumin is 23.2 g/L, sodium is 128 mmol/L, erythrocyte sedimentation rate (ESR) is 101 mm/h, and procalcitonin is 1.1 ng/mL. Serum (1,3)-beta-D-glucan is elevated at 814 pg/mL. Autoantibody screening (ENA polypeptide spectrum) is negative, and Epstein-Barr virus nucleic acid testing is negative.\n\nAbdominal CT demonstrates splenomegaly, multiple cysts, and suspected gallstones. Empirical antibacterial therapy with piperacillin-tazobactam produces no symptom relief.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive Fungal Infection / Disseminated Mycosis",
+      "rule_out_reason": "Marked elevation of serum (1,3)-beta-D-glucan (814 pg/mL) combined with persistent fever and pancytopenia raised high suspicion for invasive fungal infection; however, empirical antifungal therapy with amphotericin B and fluconazole failed to produce improvement, and subsequent bone marrow and metagenomic testing confirmed parasitic infection rather than fungal pathogens.",
+      "quote": "The possibility of fungal infection cannot be excluded due to the patient's long-term fever and repeated use of broad-spectrum antibiotics. So amphotericin B and fluconazole were added for antifungal treatment in local hospital... However, the patient's condition had not improved yet."
+    },
+    {
+      "candidate": "Myelodysplastic Syndrome (MDS) / Aplastic Anemia",
+      "rule_out_reason": "Profound pancytopenia and splenomegaly in an elderly patient, with marrow imaging showing megakaryocyte dysplasia and reduced cellular proliferation, strongly simulated primary marrow failure or myelodysplastic syndrome; however, marrow examination showed no increase in juvenile blast cells and instead revealed intracellular protozoal organisms.",
+      "quote": "Dysplasia of megakaryocytes with visible plasma cells and extremely reduced proliferation were observed in bone marrow imaging. But the diagnosis was still unclear... there was no increase in juvenile cells and lymphocytes."
+    },
+    {
+      "candidate": "Systemic Autoimmune Disease (e.g., Systemic Lupus Erythematosus)",
+      "rule_out_reason": "Prolonged intermittent fever, polyserositis symptoms, pancytopenia, splenomegaly, and an elevated ESR (101 mm/h) suggested a systemic autoimmune disorder, but autoantibody serologies were unrevealing.",
+      "quote": "No obvious abnormality was found in the ENA polypeptide antibody spectrum or Epstein-Barr virus (EB virus) nucleic acid test."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when bone marrow aspiration identified intracellular Leishmania amastigotes, further confirmed by blood metagenomic next-generation sequencing (mNGS) yielding tens of thousands of sequence reads for Leishmania infantum, Leishmania donovani, and Leishmania chagasi.",
+      "quote": "Leishmania amastigotes were detected by BMA (Figure 1A)... mNGS blood tests were performed. 40904 Leishmania infantum, 17878 Leishmania donovani, and 13978 Leishmania chagasi sequence readings were detected. Combined with clinical symptoms, the diagnosis of \"visceral leishmaniasis\" was made."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation halts strictly before diagnostic bone marrow aspiration and mNGS sequencing. Redacted all pathogen and disease names from the clinical case prompt. Differential diagnoses address invasive fungal disease, hematologic malignancies, and autoimmune disease with verbatim article quotes."
+}

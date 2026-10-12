@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7467892_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old chronic smoker presenting with new, severe inflammatory dorsolumbar pain and a contiguous psoas abscess while actively adhering to a four-drug regimen (isoniazid, rifampicin, pyrazinamide, and ethambutol) for granulomatous pleurisy. The clinical deterioration under standard therapy mimics pyogenic bacterial superinfection or treatment failure, masking high-level drug resistance.\n2. Admission Breakpoint: At initial admission following physical examination, baseline laboratory investigations (elevated ESR 80 mm/1st hr, CRP 27 mg/L, negative sputum microscopy), and plain lumbar and chest radiography showing L1-L2 endplate osteocondensation and residual pleural effusion, before invasive CT-guided aspiration and second-line drug susceptibility testing.\n3. Differential Distinctions: Pyogenic bacterial spondylodiscitis presents acutely with polymorphonuclear leukocytosis and positive Gram stain/bacterial cultures; drug-susceptible Pott's disease responds to first-line antimicrobial therapy. Pre-extensively drug-resistant tuberculous spondylodiscitis is confirmed when molecular testing (GeneXpert and line probe assays) detects Mycobacterium tuberculosis harboring resistance to rifampicin, high-level isoniazid, and fluoroquinolones.",
+  "case_prompt": "A 44-year-old man, a chronic cigarette smoker, was admitted to the hospital with acute inflammatory lumbar pain that had developed 3 months after starting an empiric four-drug antimicrobial regimen (isoniazid, rifampicin, pyrazinamide, and ethambutol) for an exudative left pleural effusion associated with unexplained weight loss, night sweats, and dyspnea.\n\nOn physical examination, he was afebrile, thin, with a body weight of 46 kg and a body mass index of 17.6 kg/m\u00b2. Significant spinal tenderness was elicited over the dorsolumbar spine, accompanied by marked restriction of spinal motion. Respiratory examination was clear without abnormal breath sounds, and the neurological examination was entirely normal.\n\nLaboratory testing revealed a hemoglobin level of 12.4 g/dL and a total leukocyte count of 6,400/mm\u00b3 (72% polymorphonuclear cells and 20% lymphocytes). The erythrocyte sedimentation rate (ESR) was markedly elevated at 80 mm in the first hour, and C-reactive protein (CRP) was 27 mg/L. Sputum direct smear examination and cultures were negative. Testing for human immunodeficiency virus (HIV) was negative. Plain radiographs of the lumbar spine demonstrated osteocondensation involving the inferior endplate of L1 and superior endplate of L2. A plain chest radiograph showed a small residual left-sided pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Spondylodiscitis / Psoas Abscess",
+      "rule_out_reason": "Considered as an acute bacterial superinfection causing progressive vertebral destruction and psoas abscess formation; ruled out by negative Gram stain, negative Ziehl-Neelsen stain, and absence of bacterial growth on abscess fluid cultures.",
+      "quote": "Computerized tomography (CT) - guided evacuation of a psoas abscess was performed, which revealed purulent material staining negative on Gram stain and Ziehl-Neelsen stain. The cultures of the abscess material showed no growth."
+    },
+    {
+      "candidate": "Drug-Susceptible Mycobacterium tuberculosis Infection (Standard Pott's Disease)",
+      "rule_out_reason": "Standard first-line regimen was initially maintained on presumptive clinical grounds, but the patient experienced treatment failure with symptom worsening and extensive cold abscess progression into the gluteal and trochanteric soft tissues due to high-level multi-drug resistance.",
+      "quote": "Despite good adherence to treatment, low back pain worsened. 6 months after the diagnosis of tuberculosis spondylitis, the patient developed purulent collections in the soft tissues in the gluteal and left trochanteric region."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CT-guided vertebral biopsy aspiration subjected to GeneXpert MTB/RIF and line probe assay confirmed Mycobacterium tuberculosis with multi-drug resistance (rifampicin and high-level isoniazid) and second-line fluoroquinolone (ofloxacin) resistance, establishing pre-extensively drug-resistant tuberculous spondylodiscitis.",
+      "quote": "GeneXpert  MTB/RIF of the vertebral biopsy aspiration product CT-guided revealed a polymerase chain reaction (PCR) for mycobacterium tuberculosis positive, with resistance to Rifampicin. Hain  test of first-line anti-tubercular treatment (ATT) showed resistance to Rifampicin and high-level resistance to Isoniazid. Moreover, Hain  test of second-line ATT (FQ and SLI) showed a high-level resistance to Ofloxacin and sensibility to Kanamycin and Amikacin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Adheres strictly to admission triage breakpoint. De-identified prior treatment avoids pathogen naming spoilers. Verified quotes match source text exactly."
+}

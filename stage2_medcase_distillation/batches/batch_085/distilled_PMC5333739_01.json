@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5333739_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: An 11-year-old boy returning from Nigeria presents with acute fever, vomiting, and abdominal pain initially diagnosed as acute appendicitis, later found to have gallbladder thickening and splenic lesions mimicking cholecystitis and splenic abscesses. The core tension is distinguishing an acute surgical abdomen or intra-abdominal bacterial infection from acute falciparum infection triggering microvascular splenic infarction in a child with unrecognized sickle cell trait.\n2. Admission Breakpoint: Admission triage terminates following initial ER physical examination and emergency blood work (leukopenia, thrombocytopenia, hyperbilirubinemia, elevated transaminases, elevated LDH, elevated CRP), strictly prior to confirmatory blood smear microscopy/parasitology and initiation of antimalarial therapy.\n3. Differential Distinctions: Acute appendicitis was the initial surgical suspicion due to acute fever, vomiting, and abdominal pain, but excluded by parasitic confirmation and absence of appendiceal inflammation. Acute cholecystitis was suspected due to right upper quadrant pain and gallbladder wall thickening on ultrasound, but managed conservatively as reactive acalculous inflammation. Splenic abscesses were suspected on repeat ultrasound, but MRI demonstrated classic peripheral wedge-shaped infarctions associated with sickle cell trait.",
+  "case_prompt": "An 11-year-old boy of Nigerian descent living in Italy presents to the emergency room with a 3-day history of fever, accompanied by vomiting and generalized abdominal pain that began two days after returning from a 1-month visit to Nigeria. On physical examination, his body temperature is 38.0°C; all other vital signs are normal. Abdominal examination demonstrates abdominal tenderness that prompts an initial clinical suspicion of acute appendicitis.\n\nInitial emergency laboratory investigations demonstrate leukopenia with a white blood cell count of 4,060/mm³ and thrombocytopenia with a platelet count of 59,000/mm³. Hemoglobin is 13.0 g/dL. Comprehensive metabolic panel reveals hyperbilirubinemia with a total bilirubin of 2.93 mg/dL, aspartate aminotransferase (AST) 136 U/L, alanine aminotransferase (ALT) 122 U/L, serum creatinine 1.06 mg/dL, and elevated lactate dehydrogenase (LDH) of 657 U/L. Serum C-reactive protein is elevated at 85.6 mg/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute appendicitis",
+      "rule_out_reason": "Initially suspected upon arrival in the emergency department because of acute fever, vomiting, and abdominal pain in a pediatric patient; ruled out as symptoms were driven by tropical parasitic infection with splenomegaly.",
+      "quote": "Here, after an initial suspect of appendicitis, a diagnosis of Plasmodium falciparum malaria was made, and the patient was admitted to the Infectious Diseases ward."
+    },
+    {
+      "candidate": "Acute cholecystitis",
+      "rule_out_reason": "Considered when the patient exhibited persistent right upper quadrant pain and ultrasound revealed thickened gallbladder walls; managed non-operatively as reactive acalculous cholecystitis.",
+      "quote": "The exam showed a starred sky appearance of the liver associated with a slightly enlarged gallbladder, with transonic content and thickened walls, suggestive of cholecystitis. The pediatric surgeon confirmed a non-surgical approach for cholecystitis and antibiotic therapy with piperacilline/tazobactam 4.5 g tid (body weight of 42 Kg) was undertaken."
+    },
+    {
+      "candidate": "Splenic abscesses",
+      "rule_out_reason": "Considered on repeat ultrasound showing multiple focal splenic lesions in the context of persistent fever; disproved by abdominal MRI showing classic subcapsular pyramidal wedge-shaped infarctions and negative infectious serologies.",
+      "quote": "The morphology of the formations, especially of the most voluminous, was a pyramidal wedge with the apex pointing towards the hilum, and the base of the splenic capsule, while profiles looked finely irregular (Figure 2 and 3). The radiographic appearance then made it less likely the possibility of splenic abscesses, in favour of a diagnosis of recent post-infarction outcomes or hematomas in a subacute phase."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency evaluation identified blood parasitemia confirming acute infection, with subsequent hemoglobin electrophoresis revealing HbS 40.6% confirming sickle cell trait as the mechanism for microvascular splenic infarction.",
+      "quote": "Here, after an initial suspect of appendicitis, a diagnosis of Plasmodium falciparum malaria was made, and the patient was admitted to the Infectious Diseases ward."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5333739_01. Depicts tropical fever presenting as acute surgical abdomen and splenic infarction in sickle cell trait, stopping cleanly before blood film parasitology."
+}

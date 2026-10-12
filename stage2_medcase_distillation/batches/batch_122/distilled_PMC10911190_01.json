@@ -1,0 +1,23 @@
+{
+  "case_id": "PMC10911190_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 78-year-old traveler presents with high fever, chills, cytopenias, transaminitis, and gallstones on ultrasound after returning from Sub-Saharan Africa. The key clinical dilemma is distinguishing acute surgical cholecystitis from breakthrough malaria in an experienced missionary traveler who adhered strictly to mefloquine chemoprophylaxis.\n2. Admission Breakpoint: The breakpoint occurs when the patient is evaluated in the emergency department, undergoes bedside abdominal ultrasound revealing non-obstructing cholelithiasis, and receives baseline complete blood count and liver chemistries, immediately before thick/thin blood smears and malaria antigen/PCR tests are obtained.\n3. Differential Distinctions: Acute calculous cholecystitis is supported by gallstones and right upper quadrant signs, but excluded by the absence of a sonographic Murphy's sign and the presence of prominent leukopenia and anemia, which are unusual for uncomplicated biliary sepsis. Prophylaxis failure due to Plasmodium malariae (which has longer incubation periods or breakthrough potential) is confirmed by blood smear and PCR.",
+  "case_prompt": "A 78-year-old female presented to the emergency department with a 10-day history of high fevers and chills, approximately one month after returning to the United States from missionary work in Sub-Saharan Africa. She reported numerous previous trips to the African continent over the preceding 25 years with no prior history of symptomatic tropical infections, and endorsed full compliance with prescribed mefloquine chemoprophylaxis for her recent travel.\n\nUpon presentation, her temperature was 103.7°F (39.8°C). Initial laboratory testing was notable for leukopenia, anemia, and mildly elevated liver function enzymes. An abdominal ultrasound was performed, which demonstrated non-obstructing gallstones without evidence of a sonographic Murphy's sign. Given the constellation of fever, right upper quadrant imaging findings, and transaminitis, she was initially admitted with a working diagnosis of suspected acute cholecystitis and planned for surgical evaluation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Cholecystitis",
+      "rule_out_reason": "Considered the primary working diagnosis on admission due to fever, elevated transaminases, and ultrasound documentation of gallstones, leading to planned surgical intervention; however, the absence of a sonographic Murphy sign and presence of leukopenia and anemia pointed toward a systemic infection.",
+      "quote": "Laboratory data were relevant for leukopenia, anemia, mildly elevated liver function tests, and an ultrasound with nonobstructing gallstones without murphy sign. She was admitted with a working diagnosis of possible cholecystitis and was expected to undergo surgery."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Evaluation of blood films demonstrated intraerythrocytic inclusions with positive specific parasite protein antigen, and species-specific polymerase chain reaction (PCR) confirmed Plasmodium malariae infection, establishing chemoprophylaxis failure.",
+      "quote": "Malaria was suspected due to her relevant travel history and appropriate labs were requested. Peripheral blood smear for parasites showed intraerythrocytic inclusion body suggestive of malaria, identified as malaria with specific Malaria Protein Antigen [Figure 1]. Species was confirmed as P. malariae by Plasmodium species polymerase chain reaction (PCR) methodology."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to blood smear and PCR. Zero pathogen leaks."
+}

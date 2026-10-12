@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10777759_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 24-year-old previously healthy female presents with an acute high-grade febrile illness accompanied by rigors, severe arthralgias, and thrombocytopenia, who acutely develops severe postprandial epigastric pain. The diagnostic tension involves recognizing acute pancreatitis as a systemic complication of acute arboviral infection (dengue) rather than primary gallstone disease, alcohol-induced pancreatitis, or acute surgical abdomen.\n2. Admission Breakpoint: Admission triage concludes following initial physical examination and emergency laboratory blood tests (demonstrating thrombocytopenia of 85,000/mm3, leukocytosis of 16,070/mm3, and mild transaminitis), prior to serum amylase/lipase measurement, abdominal CECT scan, and arboviral serologies.\n3. Differential Distinctions: Gallstone pancreatitis is excluded by normal biliary duct caliber and absence of cholelithiasis. Peptic ulcer perforation is ruled out by lack of pneumoperitoneum or peritoneal signs. Dengue with acute pancreatitis is confirmed by concurrent thrombocytopenia, elevated pancreatic enzymes, pancreatic enlargement on CT, and positive dengue IgM.",
+  "case_prompt": "A 24-year-old previously healthy female presented with a 4-day history of high fever, reaching a maximum recorded temperature of 103\u00b0F, accompanied by chills, rigors, severe myalgia, and generalized arthralgia. On the third day of illness, she acutely developed severe epigastric pain that was non-radiating, exacerbated by oral intake, and associated with multiple episodes of non-bilious vomiting. She had no previous history of similar abdominal pain and denied alcohol consumption. On admission physical examination, vital signs were stable, and there were no signs of pallor, jaundice, or overt dehydration. Abdominal examination revealed localized tenderness across the epigastrium without involuntary guarding, rebound tenderness, or organomegaly. Cardiovascular and respiratory examinations were within normal limits. Initial laboratory investigations showed a leukocyte count of 16,070/mm3 (58.5% neutrophils, 33.9% lymphocytes), hemoglobin of 9.3 g/dL, and thrombocytopenia with a platelet count of 85,000/mm3. Total bilirubin was 30 umol/L, direct bilirubin was 19 umol/L, aspartate aminotransferase was 51 U/L, alanine aminotransferase was 62 U/L, alkaline phosphatase was 150 U/L, total serum protein was 63 g/L, and albumin was 24 g/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Biliary Pancreatitis / Choledocholithiasis",
+      "rule_out_reason": "Considered due to acute epigastric pain, vomiting, and elevated liver enzymes in a young female; ruled out by abdominal ultrasound and CECT showing a normal common bile duct and absence of gallstones.",
+      "quote": "The common bile duct was also normal in course and caliber, without any evidence of stones."
+    },
+    {
+      "candidate": "Peptic Ulcer Disease / Acute Gastritis",
+      "rule_out_reason": "Considered given food-aggravated epigastric pain and repeated vomiting, but ruled out by marked elevation of serum amylase and lipase (>3 times upper limit of normal) and pancreatic enlargement on contrast CT.",
+      "quote": "Her amylase and lipase were found elevated to more than 3 times of the reference upper limit, with amylase of 350 U/l (reference range: 28-100 U/l) and lipase of 833 U/l (reference range: <60 U/l)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Acute Pancreatitis Complicating Dengue Infection",
+      "rule_out_reason": "The combination of acute febrile illness with thrombocytopenia (85,000/mm3), >3-fold pancreatic enzyme elevation, diffuse pancreatic enlargement on CT, and positive IgM serology confirmed acute pancreatitis secondary to Dengue.",
+      "quote": "On serological investigations, she was found positive for dengue IgM; however, dengue IgG was negative. These findings pointed us toward acute pancreatitis in the background of dengue fever."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10777759_01. Admission prompt excludes amylase/lipase, CT scan findings, and dengue IgM, focusing on the acute presentation of febrile epigastric pain with thrombocytopenia. Verbatim quotes checked."
+}

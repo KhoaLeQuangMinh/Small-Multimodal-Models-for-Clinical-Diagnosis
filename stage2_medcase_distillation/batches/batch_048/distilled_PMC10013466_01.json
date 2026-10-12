@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC10013466_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A 27-year-old immunocompetent male presents with a 5-month history of an enlarging, suppurative, erythematous mandibular mass with draining fistulous tracts, refractory to multiple courses of oral and topical antibiotics. The location and morphology mimic chronic bacterial and fungal infections typical of the cervicofacial region (e.g., cervicofacial actinomycosis, scrofuloderma/cutaneous tuberculosis, or deep fungal infection). The underlying etiology—cutaneous trypanosomiasis (chagoma)—is exceedingly rare in this presentation and chronicity, presenting as a masquerading chronic dermatosis.\n2. Admission Breakpoint: The breakpoint occurs after the clinical evaluation, travel exposure history to Veracruz, dermatologic physical examination, and baseline triage laboratory tests (CBC showing neutrophilia and eosinophilia, normal blood chemistry, normal chest radiography, electrocardiogram, and echocardiogram) are completed, prior to skin biopsy, histopathology, tissue cultures, and pathogen-specific PCR/serology.\n3. Differential Distinctions: Cervicofacial actinomycosis presents with indurated mandibular swelling and sinus tracts exuding sulfur granules. Cutaneous tuberculosis (scrofuloderma/lupus vulgaris) causes chronic ulcerated or fistulizing plaques. Deep fungal infections (sporotrichosis, blastomycosis) present with granulomatous suppurative lesions. Cutaneous leishmaniasis causes chronic painless ulcers. Trypanosoma cruzi inoculation typically causes an acute chagoma or Romaña sign, but can rarely cause an indolent chronic inflammatory granulomatous plaque with secondary bacterial infection, definitively identified only when intracellular amastigotes/trypomastigotes and parasite satellite DNA are detected.",
+  "case_prompt": "A 27-year-old previously healthy male presented to a dermatology clinic with a persistent cutaneous lesion over his right mandible that had been gradually enlarging over five months. The lesion was characterized by localized swelling, erythema, and draining fistulous tracts exuding slightly seropurulent discharge, measuring approximately 3 cm by 4 cm. He had completed multiple courses of oral and topical empiric antibiotic regimens without symptomatic or clinical improvement.\n\nHe resided permanently in Mexico City but reported frequent business travel to the state of Veracruz over the preceding year, typically staying for one to two weeks at a time. He denied systemic symptoms such as fever, weight loss, or palpitations.\n\nOn physical examination, vital signs were normal. Examination of the head and neck revealed an indurated, erythematous 3x4 cm plaque on the right mandibular region with draining fistulae producing seropurulent material. The remainder of the physical examination, including cardiopulmonary and neurological examinations, was unremarkable.\n\nInitial triage laboratory investigations revealed neutrophilia and eosinophilia on the complete blood count. Blood chemistry panel, including renal and liver function parameters, was within normal reference ranges. A baseline cardiac assessment, including plain chest radiography, 12-lead electrocardiogram, and transthoracic echocardiogram, demonstrated normal cardiac anatomy, chamber dimensions, and systolic function without conduction abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Actinomycosis",
+      "rule_out_reason": "Considered due to the characteristic mandibular localization, chronic course, induration, and draining fistulous tracts discharging seropurulent secretion. Ruled out by the absence of characteristic sulfur granules or filamentous Gram-positive branching bacteria on tissue Gram stain and lack of bacterial growth on specific media.",
+      "quote": "The suspected clinical diagnoses were actinomycosis, cutaneous tuberculosis, or sporotrichosis."
+    },
+    {
+      "candidate": "Cutaneous Tuberculosis",
+      "rule_out_reason": "Considered because chronic, non-healing ulceronodular and fistulizing cervicofacial lesions (such as scrofuloderma) can develop in endemic areas and fail empiric antibiotics. Ruled out by negative Ziehl-Neelsen staining for acid-fast bacilli on tissue sections and absence of mycobacterial growth.",
+      "quote": "No fungal structure or mycobacteria was observed in special stains such as Gram, Ziehl-Neelsen, PAS [periodic acid-Schiff stain], and Giemsa."
+    },
+    {
+      "candidate": "Sporotrichosis",
+      "rule_out_reason": "Considered given the chronic granulomatous and fistulizing cutaneous lesion following travel to a subtropical region (Veracruz). Ruled out by absence of fungal elements on PAS and Giemsa stains and lack of fungal growth on Sabouraud dextrose, potato dextrose, and brain heart infusion agar over 5 weeks.",
+      "quote": "Moreover, culture media for fungi were evaluated weekly and did not present any growth during five weeks."
+    },
+    {
+      "candidate": "Cutaneous Leishmaniasis",
+      "rule_out_reason": "Considered as a leading protozoan differential for chronic ulcerative and nodular skin lesions in travelers returning from endemic areas of Mexico. Ruled out by negative Leishmania species-specific PCR testing performed on tissue biopsy and peripheral blood DNA.",
+      "quote": "PCR analysis was done to identify Leishmania sp. and specific Leishmania species with DNA isolated from the tissue biopsies and blood; these tests showed negative results."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when histopathological examination of the mandibular biopsy revealed amastigotes and trypomastigotes within the dermis and subcutaneous tissue, and satellite DNA PCR confirmed Trypanosoma cruzi (99% identity with clone ClBE07, DTU II). Delayed serological seroconversion (positive ELISA and Western blot at 4 months) further corroborated the diagnosis.",
+      "quote": "Surprisingly, parasites (amastigotes and trypomastigotes), as well as intracellular bacteria, were presented in the tissue samples (Figures 1D, 1E, and 1F)... However, a PCR established with the DNA satellite showed the presence of Trypanosoma cruzi DNA."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed prior to biopsy and histopathological/microbiological evaluation. Baseline triage labs and cardiac workup included without spoilers. Direct verbatim quotes verified from case text. Target canonical diagnosis Trypanosomiasis verified."
+}

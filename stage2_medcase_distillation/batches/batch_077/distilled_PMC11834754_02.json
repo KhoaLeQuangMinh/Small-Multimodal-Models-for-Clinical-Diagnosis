@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11834754_02",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 50-year-old farmer presented with 10 days of high fever, chills, body aches, thrombocytopenia, and bilateral pulmonary crackles, and subsequently developed acute chest tightness with new-onset atrial fibrillation. The clinical challenge is recognizing that new-onset supraventricular arrhythmia and bilateral pneumonitis are manifestations of scrub typhus myocarditis/vasculitis, heralded by a subtle eschar on the nape of the neck.\n2. Admission Breakpoint: The admission breakpoint occurs following admission evaluation with baseline laboratory tests (leukocytosis, thrombocytopenia) and initial normal sinus rhythm ECG, immediately before the onset of palpitations/chest tightness, repeat ECG confirming atrial fibrillation, and scrub typhus IgM serology.\n3. Differential Distinctions: Severe community-acquired bacterial pneumonia or sepsis with secondary atrial fibrillation was considered due to leukocytosis, bilateral pulmonary crepitations, and bilateral airspace opacities, but ruled out by negative blood and urine cultures and rapid response to antirickettsial monotherapy; severe dengue or leptospirosis was considered due to fever, myalgias, and thrombocytopenia, but ruled out by negative serologies; primary cardiac arrhythmia / coronary ischemia was excluded by normal echocardiography, normal Holter monitoring, and non-recurrence following antimicrobial treatment; scrub typhus was confirmed by a cervical eschar and positive IgM ELISA.",
+  "case_prompt": "A 50-year-old male farmer with a medical history of well-controlled diabetes mellitus presented to the hospital with a 10-day history of high-grade, intermittent fever accompanied by chills, rigors, and generalized body aches. He had no history of alcohol consumption or tobacco use.\n\nOn physical examination, the patient was febrile with a body temperature of 101 F. Blood pressure was 120/70 mmHg in the left upper extremity, pulse rate was 110 beats per minute, respiratory rate was 22 breaths per minute, and oxygen saturation was 95% while breathing ambient air. Jugular venous pressure was normal, and there was no pallor, cyanosis, or pedal edema. Careful inspection of the skin revealed an eschar measuring 2 x 1.5 cm on the nape of his left neck. Auscultation of the chest revealed bilateral infrascapular crepitations, while cardiac examination revealed regular tachycardia without murmurs.\n\nBaseline laboratory investigations demonstrated a hemoglobin level of 9.5 g/dL, a total leukocyte count of 13.1 x 109/L (69.2% neutrophils, 23.0% lymphocytes), and a platelet count of 116 x 109/L. Renal function tests, serum electrolytes, liver function tests, and thyroid function tests were all within normal limits. An initial electrocardiogram obtained at admission demonstrated normal sinus rhythm without ST-T wave abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Sepsis / Severe Community-Acquired Pneumonia with Secondary Arrhythmia",
+      "rule_out_reason": "Considered due to fever, leukocytosis (13.1 x 109/L), tachypnea, bilateral infrascapular crackles, and bilateral airspace opacities on chest radiograph, but ruled out by negative blood and urine cultures and prompt clinical resolution with doxycycline monotherapy.",
+      "quote": "Other workup done including leptospirosis IgM antibody, peripheral smear for malarial parasite, dengue serology, and blood and urine cultures were negative."
+    },
+    {
+      "candidate": "Primary Arrhythmogenic / Ischemic Heart Disease",
+      "rule_out_reason": "Considered when the patient developed acute chest tightness and an irregularly irregular pulse, but ruled out by normal admission ECG, normal echocardiography, normal 24-hour Holter monitoring, and absence of arrhythmia recurrence following resolution of the acute infection.",
+      "quote": "On the next day, in view of the patient's complaint of chest tightness and an irregularly irregular pulse clinically, repeat ECG was performed, which showed atrial fibrillation (Figure 5)... Echocardiography and 24-hour Holter monitoring were performed, which were normal after the episode of atrial fibrillation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The detection of a 2 x 1.5 cm necrotic eschar on the nape of the left neck alongside a positive scrub typhus IgM ELISA established the diagnosis of scrub typhus complicated by bilateral pneumonitis and transient atrial fibrillation, which completely resolved with oral doxycycline.",
+      "quote": "On careful and detailed examination, the patient was found to have an eschar of size 2x1.5 cm in the nape of his left neck (Figure 3)... Scrub typhus Ig M ELISA was positive... The patient was started on tablet doxycycline 100 mg twice daily, and treatment was continued based on confirmation by the serology reports for seven days."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint set after admission exam and baseline sinus ECG, strictly prior to subsequent day's atrial fibrillation episode and IgM ELISA report. Zero pathogen spoilers in prompt. Exact verbatim quotes confirmed."
+}

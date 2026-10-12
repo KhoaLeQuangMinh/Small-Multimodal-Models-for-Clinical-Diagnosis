@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9550306_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A previously healthy 20-year-old female presents with a first-onset sleep-deprived generalized seizure, elevated C-reactive protein, and multiple ring-enhancing brain lesions on MRI without initial pulmonary symptoms or systemic signs. This presentation was clinically and radiologically mistaken for neurocysticercosis, leading to empirical antiparasitic treatment before subsequent fever and cervical lymphadenopathy prompted re-evaluation.\n2. Admission Breakpoint: Initial clinic and hospital evaluation following a sleep-deprived generalized tonic-clonic seizure, normal physical examination, elevated CRP (45.8 mg/L), normal chest and hip/lumbar X-rays, epileptiform EEG, and brain MRI showing multiple ring-enhancing lesions, prior to empirical albendazole therapy, QuantiFERON testing, and lymph node biopsy.\n3. Differential Distinctions: Neurocysticercosis (NCC) was the primary initial diagnosis given ring-enhancing lesions causing seizures in a young patient, but was ruled out by lack of response to four weeks of albendazole, repeat MRI showing no change, and cervical lymph node biopsy demonstrating necrotizing Langhans-type giant cells. Pyogenic brain abscesses were excluded by the subacute course, lack of leukocytosis, and characteristic granulomatous histopathology.",
+  "case_prompt": "A previously healthy 20-year-old female presents for outpatient evaluation after experiencing a generalized tonic-clonic seizure while sleep-deprived. She reports localized hip pain, but denies recent fever, chills, cough, loss of appetite, weight loss, night sweats, or symptoms of upper respiratory, gastrointestinal, or urinary tract infection. On physical examination, her vital signs are normal and neurological examination is entirely unremarkable without signs of meningeal irritation or increased intracranial pressure. Laboratory testing is within normal limits except for an elevated C-reactive protein of 45.8 mg/L (normal range: 0–6 mg/L). Plain radiographs of the thorax, hip, and lumbar region are normal. Electroencephalography (EEG) demonstrates generalized epileptiform activity. Magnetic resonance imaging (MRI) of the brain reveals multiple ring-enhancing lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neurocysticercosis (NCC)",
+      "rule_out_reason": "Multiple ring-enhancing intracranial lesions presenting with seizures in a young adult led to an initial diagnosis of neurocysticercosis and empirical antiparasitic therapy; however, the patient developed new fevers, repeat neuroimaging after 4 weeks showed no interval improvement, and subsequent lymph node histology confirmed mycobacterial disease.",
+      "quote": "Due to the present symptoms and radiological findings compatible with NCC, urgent treatment was started."
+    },
+    {
+      "candidate": "Pyogenic Intracranial Abscesses",
+      "rule_out_reason": "Bacterial brain abscesses typically produce ring enhancement and mass effect, but the patient presented afebrily with normal initial hematology, lacked an extracranial suppurative nidus, and subsequent biopsy demonstrated necrotizing granulomatous lymphadenitis rather than acute bacterial suppuration.",
+      "quote": "Her neurologic examination and vital signs were normal. Laboratory tests were within normal limits except C-reactive protein which was elevated at 45.8 (normal range: 0-6) mg/L. She reported no recent fever, signs of upper respiratory, urinary or gastrointestinal infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Development of a new anterior cervical lymph node prompted excisional biopsy, which revealed necrotizing granulomatous lymphadenitis with Langhans-type giant cells alongside a positive QuantiFERON-TB Gold test, confirming tuberculosis with subsequent resolution on anti-tuberculosis therapy.",
+      "quote": "Biopsy of the lymph node showed granulomatous lymphadenitis including necrotizing Langhans-type giant cells, which was compatible with a diagnosis of TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC9550306. Presentation ends at initial outpatient MRI and labs before empirical albendazole or biopsy."
+}

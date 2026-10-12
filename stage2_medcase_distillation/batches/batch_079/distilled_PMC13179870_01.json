@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC13179870_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old heavy smoker with a history of incarceration presenting with several months of fever, drenching night sweats, exertional dyspnea, and bilateral pulmonary infiltrates with nodules. The presentation mimics advanced bronchogenic carcinoma, chronic fungal pneumonitis, or autoimmune systemic vasculitis, in a high-risk epidemiological context for chronic mycobacterial disease.\n2. Admission Breakpoint: Initial hospital presentation in the pulmonology unit with subacute constitutional and respiratory symptoms, baseline plain radiography showing bilateral nodular infiltrates, and routine laboratory tests, prior to sputum mycobacterial confirmation.\n3. Differential Distinctions: Bronchogenic carcinoma is suspected given extensive 50-pack-year smoking history and pulmonary nodules, but bilateral centrilobular tree-in-bud micronodules and positive sputum microbiology point away from malignancy. Systemic pulmonary-renal vasculitides are ruled out by negative ANCA, ANA, and anti-GBM antibodies. Pulmonary tuberculosis is confirmed by sputum testing and characteristic thoracic imaging findings.",
+  "case_prompt": "A 45-year-old man was admitted to the pulmonology service with a several-month history of progressive asthenia, fever, night sweats, and exertional dyspnea. His social history was significant for a 50-pack-year tobacco smoking history and prior periods of incarceration in 1998 and 2005. Upon epidemiological questioning, he reported prolonged exposure to a neighbor suffering from chronic respiratory illness.\n\nOn admission examination, he appeared fatigued. Vital signs were notable for elevated body temperature. Physical examination of the respiratory system revealed diminished breath sounds over the upper lung fields.\n\nInitial pre-therapeutic laboratory evaluation demonstrated a normochromic normocytic regenerative anemia with a hemoglobin level of 11.0 g/dL. Baseline serum creatinine, blood urea nitrogen, and liver function tests were within normal limits. Chest radiography revealed bilateral infiltrates and multiple pulmonary nodules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchogenic Carcinoma / Pulmonary Metastases",
+      "rule_out_reason": "A 50-pack-year smoking history and multiple pulmonary nodules strongly raised suspicion for lung cancer, but thoracic imaging demonstrating centrilobular tree-in-bud micronodules and subsequent microbiological confirmation proved an infectious mycobacterial etiology.",
+      "quote": "Thoracic computed tomography (CT) showed consolidation with centrilobular branching micronodules, consistent with a tree-in-bud pattern, predominantly affecting the right upper lobe, associated with peribronchovascular thickening (Figure 2)."
+    },
+    {
+      "candidate": "ANCA-Associated Vasculitis / Autoimmune Pulmonary-Renal Syndrome",
+      "rule_out_reason": "Considered when pulmonary infiltrates presented with systemic inflammation, but autoimmune serological screening was negative.",
+      "quote": "In case of acute nephritic syndrome, we performed autoimmune serologies (ANCA, ANA, anti-GBM antibodies, and complement), which were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical picture of chronic constitutional symptoms, incarceration exposure history, and bilateral nodular infiltrates was confirmed as pulmonary tuberculosis by sputum testing.",
+      "quote": "given the respiratory symptoms, a chest X-ray was performed, revealing bilateral infiltrates and pulmonary nodules. Sputum testing for Mycobacterium tuberculosis confirmed the diagnosis of pulmonary tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to sputum mycobacterial confirmation. Zero pathogen names or spoilers in the case prompt."
+}

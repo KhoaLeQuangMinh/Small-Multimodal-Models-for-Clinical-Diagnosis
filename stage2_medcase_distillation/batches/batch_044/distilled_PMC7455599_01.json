@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7455599_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 63-year-old immunosuppressed renal transplant recipient and rice farmer in central Thailand presents with a 3-month history of fever, weight loss, and a large left upper lobe pulmonary mass that proved completely refractory to 14 days of intravenous meropenem. The central diagnostic challenge is discerning whether this mass represents isolated thoracic malignancy (primary lung cancer) or a lethal opportunistic tropical endemic infection (Burkholderia pseudomallei), which here coexisted within the same cavitating necrotic pulmonary lesion.\n2. Admission Breakpoint: Tertiary hospital triage and evaluation, documented fever (38°C), profound neutrophilic leukocytosis (22 x 10³/µL, 91% neutrophils), and contrast-enhanced chest CT revealing a large left upper lobe mass, immediately prior to transthoracic core-needle biopsy, tissue microbiological stains, and culture.\n3. Differential Distinctions: Uncomplicated bacterial pneumonia (ruled out by failure to respond to a full 14-day course of intravenous meropenem), invasive opportunistic fungal infection such as cryptococcosis (ruled out by negative serum cryptococcal antigen and absent fungal morphology), and isolated non-small cell lung cancer / tumor fever (malignancy was indeed present, but special histological staining revealed gram-negative bipolar safety-pin rods with culture positivity).",
+  "case_prompt": "A 63-year-old male farmer residing in central Thailand was transferred to a tertiary medical center with a three-month history of prolonged fever, non-productive cough, left-sided chest tightness, and an unintentional 4 kg weight loss. He had been hospitalized at a local facility where he was treated for presumed bacterial pneumonia with a 14-day course of intravenous meropenem, but his fevers persisted. He was a former smoker with a 25 pack-year tobacco history who had quit two years prior. Past medical history was significant for end-stage renal disease managed with a deceased donor kidney transplantation four years earlier, maintained on chronic immunosuppression with mycophenolate mofetil and cyclosporine, as well as prophylactic acyclovir.\n\nOn physical examination, the patient was asthenic with anicteric sclerae. Vital signs demonstrated a body temperature of 38.0°C (100.4°F), blood pressure 100/60 mmHg, heart rate 90 beats per minute, respiratory rate 17 breaths per minute, and oxygen saturation 95% breathing ambient room air. Chest examination revealed decreased breath sounds over the left upper lung zone without crackles, wheezing, or egophony. The remainder of the physical examination was unremarkable.\n\nLaboratory studies demonstrated mild anemia with a hemoglobin level of 10.1 g/dL, marked leukocytosis with a white blood cell count of 22,000/µL (91% neutrophils), and normal serum chemistry values. Plain chest radiography and contrast-enhanced chest computed tomography demonstrated a large mass occupying the left upper pulmonary lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Standard pyogenic bacterial pneumonia",
+      "rule_out_reason": "Typical community- or hospital-acquired bacterial pneumonias were ruled out by the subacute 3-month duration and the complete lack of clinical or febrile response to a 14-day course of intravenous meropenem.",
+      "quote": "He was admitted to the local hospital and diagnosed with bacterial pneumonia at that time. However, his fever did not subside following 14 days of intravenous meropenem."
+    },
+    {
+      "candidate": "Pulmonary cryptococcosis / opportunistic fungal infection",
+      "rule_out_reason": "In a post-transplant patient on chronic mycophenolate and cyclosporine, fungal opportunistic pneumonia is a major consideration, but serum cryptococcal antigen was negative and biopsy stains lacked fungal elements.",
+      "quote": "His blood culture for aerobes and serum cryptococcal antigen were negative."
+    },
+    {
+      "candidate": "Isolated non-small cell lung carcinoma with tumor necrosis",
+      "rule_out_reason": "While core needle biopsy confirmed non-small cell lung adenocarcinoma, neoplastic tumor fever alone could not account for the marked neutrophilia and persistent septic profile, which harbored concomitant active necrotizing bacterial infection.",
+      "quote": "The histopathology revealed non-small cell carcinoma admixed with necrotic tissues... The patient was finally diagnosed with stage IIIA non-small cell lung cancer (T4N0M0) co-existing with localized pulmonary melioidosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon evaluation of the transthoracic core-needle biopsy of the left upper lobe mass, where Brown-Hopp tissue staining revealed clusters of gram-negative bipolar rods with characteristic safety-pin morphology that yielded Burkholderia pseudomallei in tissue culture, confirmed by a serum antibody titer of 1:1280 and defervescence with ceftazidime.",
+      "quote": "The Brown-Hopp stain revealed a single cluster of gram-negative bipolar rods with safety pin appearance characteristics of B. pseudomallei. (Figure 2A-D). B. pseudomallei subsequently grew on tissue culture. His serum antibody titer against B. pseudomallei was positive with a titer of 1:1280."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case prompt ends strictly prior to core needle biopsy, Brown-Hopp staining, and microbiological culture. All pathogen and malignancy names excluded from prompt."
+}

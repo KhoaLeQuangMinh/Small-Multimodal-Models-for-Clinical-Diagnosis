@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5137637_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 53-year-old man presents with chronic dyspeptic symptoms typical of peptic ulcer disease that fail standard Helicobacter pylori triple eradication, progressing to pneumobilia, peripancreatic lymphadenopathy, and a spontaneous choledochoduodenal fistula. The clinical tension is recognizing that a refractory peptic ulcer and biliary fistula can represent an occult presentation of intestinal tuberculosis rather than standard acid-peptic disease or gallstone erosion.\n2. Admission Breakpoint: Admission workup ends after endoscopic demonstration of the duodenal ulcer and fistula, plain abdominal radiography and ultrasound showing pneumobilia, peripancreatic lymphadenopathy, and gallbladder sludge, before exploratory laparotomy, intraoperative discovery of peritoneal deposits, and histopathological analysis.\n3. Differential Distinctions: Uncomplicated acid-peptic disease with H. pylori is excluded by complete lack of symptom response to triple therapy; benign gallstone-induced or peptic choledochoduodenal fistula is ruled out intraoperatively by multiple peritoneal deposits and histopathologic confirmation of caseating epithelioid granulomas characteristic of Mycobacterium tuberculosis.",
+  "case_prompt": "A 53-year-old man presented with a 3-year history of recurrent upper abdominal pain. The pain was moderate in intensity, occurred primarily on an empty stomach, and was characteristically relieved by food intake. He reported no associated nausea or vomiting and had no history of chronic medical co-morbidities.\n\nOn physical examination, the abdomen was soft with mild epigastric tenderness on deep palpation, without guarding or rebound tenderness. Initial esophagogastroduodenoscopy revealed an ulcer in the first part of the duodenum. A 2-week course of Helicobacter pylori eradication therapy with omeprazole, clarithromycin, and amoxicillin failed to provide symptomatic improvement.\n\nSubsequent abdominal ultrasonography revealed pneumobilia, a 2.2 cm \u00d7 1.9 cm well-defined hypoechoic lesion adjacent to the proximal body of the pancreas suggestive of a peripancreatic lymph node, and a 1 cm \u00d7 0.9 cm non-shadowing echogenic focus in the gallbladder suggestive of sludge. Plain radiography of the abdomen also demonstrated pneumobilia. An upper gastrointestinal contrast study and repeat esophagogastroduodenoscopy demonstrated a choledochoduodenal fistula.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uncomplicated Helicobacter pylori-associated acid peptic disease",
+      "rule_out_reason": "Initially diagnosed based on typical meal-relieved dyspepsia and endoscopic visualization of a duodenal bulb ulcer; ruled out when symptoms failed to improve after complete triple eradication therapy, prompting imaging that revealed pneumobilia and peripancreatic adenopathy.",
+      "quote": "Since the symptoms were suggestive of APD, an oesophagogastroduodenoscopy was performed, which found an ulcer in the first part of the duodenum (Fig 1). A diagnosis of a duodenal ulcer was made and he was given two-week course of Helicobacter pylori eradication therapy with omeprazole, clarithromycin and amoxicillin. \nAs there was no improvement in symptoms following treatment, ultrasonography of the abdomen was performed to look for other causes."
+    },
+    {
+      "candidate": "Chronic peptic ulcer with gallstone-associated choledochoduodenal fistula",
+      "rule_out_reason": "Suspected preoperatively based on chronic ulceration, gallbladder sludge, and fistulous communication; ruled out as primary etiology during surgical exploration which uncovered nodular peritoneal seeding rather than simple benign peptic perforation.",
+      "quote": "Based on these findings, a provisional diagnosis of chronic duodenal ulcer with CDF with chronic cholecystitis was considered and the patient underwent open cholecystectomy and truncal vagotomy with gastrojejunostomy."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous duodenal ulceration with choledochoduodenal fistula",
+      "rule_out_reason": "Intraoperative identification of a duodenal nodule with fistulous opening and multiple peritoneal deposits, followed by histopathology showing caseation with epithelioid granulomas, confirmed gastrointestinal tuberculosis as the cause of the fistula.",
+      "quote": "Intraoperatively, a nodule with a 1cm x 1.5cm fistulous opening was found in the duodenum, with multiple peritoneal deposits. The possibility of TB was considered. On histopathology, the gallbladder showed chronic cholecystitis with intestinal metaplasia and the peritoneal nodules revealed caseation with epitheloid granulomas suggestive of TB (Fig 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Preoperative admission evaluation cleanly separated from intraoperative biopsy findings. Verbatim quotes matched to text. Zero leaks of TB in case prompt."
+}

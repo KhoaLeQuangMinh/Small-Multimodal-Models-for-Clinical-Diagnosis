@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC1334206_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 27-year-old male with a history of recent allopurinol and phenytoin exposure presents with high fever, sore throat, myalgias, toxic facies, generalized maculopapular rash, bilateral hard cervical and inguinal lymphadenopathy, parotid swelling, hepatosplenomegaly, and sudden vascular shock with acute renal failure. The tension involves distinguishing phenytoin-induced hypersensitivity syndrome (DRESS), malignant lymphoma, and severe bacterial/EBV shock from severe arboviral infection with microvascular thrombosis and spontaneous lymph node infarction secondary to DIC.\n2. Admission Breakpoint: Initial clinical presentation, ultrasonography, and baseline hemogram, stopping immediately before confirmatory send-out serology panels (arbovirus IgM, EBV IgM, D-dimer, blood cultures) and excisional lymph node histopathology.\n3. Differential Distinctions:\n- Malignant Lymphoma / Metastatic Melanoma: Spontaneous total lymph node infarction is classically an ominous indicator of aggressive lymphoma or metastatic necrosis; however, lymph node biopsy showed preservation of underlying lymphoid architecture, absence of atypia, and polyclonal B and T cell populations on immunohistochemistry.\n- Phenytoin-Induced Hypersensitivity Syndrome (DRESS): The combination of recent phenytoin ingestion, generalized rash, lymphadenopathy, facial/parotid swelling, and multi-organ failure strongly suggested drug hypersensitivity; however, histopathology of non-infarcted lymph nodes lacked the characteristic interfollicular immunoblastic proliferation, vascular hyperplasia, and tissue eosinophilia.\n- Epstein-Barr Virus (Infectious Mononucleosis) or Streptococcal Toxic Shock: Severe pharyngitis, cervical lymphadenopathy, hepatosplenomegaly, and circulatory collapse mirrored severe mononucleosis or streptococcal sepsis, but EBV IgM, Paul-Bunnell test, and blood/throat cultures were negative.",
+  "case_prompt": "A 27-year-old male presented with a 10-day history of high fever accompanied by rigors, shaking chills, and sore throat. The illness was associated with severe myalgia, recurrent vomiting, and the emergence of a diffuse maculopapular rash covering his entire body while sparing mucous membranes and periorbital tissues. His past medical history included gout, for which he had taken allopurinol for 20 days, and a recent episode of sudden loss of consciousness for which he was initiated on phenytoin at an outside facility. He had no history of chronic cardiopulmonary, renal, or endocrine disorders.\n\nOn physical examination upon admission, he appeared acutely ill with toxic facies and marked conjunctival congestion. Significant bilateral hard, indurated cervical lymphadenopathy and bilateral inguinal lymphadenopathy were palpable, accompanied by prominent bilateral parotid and submandibular gland enlargement. Abdominal ultrasonography demonstrated hepatosplenomegaly without focal hepatic lesions. Serial hemograms revealed a normal hemoglobin level, normal erythrocyte morphology, normal erythrocyte sedimentation rate, and normal platelet counts, with transient neutrophilic leukocytosis. During inpatient admission, he experienced abrupt circulatory collapse with profound shock, cyanosis, and acute oliguric renal failure requiring urgent inotropic support.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant Lymphoma or Metastatic Melanoma",
+      "rule_out_reason": "Considered because spontaneous lymph node infarction is strongly associated with underlying lymphoid malignancy, but serial deeper histopathologic sections revealed viable subcapsular lymphoid tissue without atypical cells, granulomas, or monocytoid histiocytes, with polyclonal B and T cells on immunohistochemistry.",
+      "quote": "Multiple deeper sections revealed perinodal granulation tissue with viable subcapsular lymphoid tissue but no atypical cells, histiocytes or granulomas were seen."
+    },
+    {
+      "candidate": "Phenytoin-Induced Hypersensitivity Syndrome (DRESS)",
+      "rule_out_reason": "Considered given recent phenytoin exposure, diffuse maculopapular rash, widespread lymphadenopathy, parotid enlargement, and multi-organ dysfunction, but non-infarcted lymph nodes lacked interfollicular expansion, immunoblasts, eosinophils, and vascular proliferation characteristic of drug hypersensitivity.",
+      "quote": "Drug induced hypersensitivity reactions in a lymph node especially due to phenytoin are known in the form of inter follicular expansion by a mixed infiltrate of immunoblasts, plasma cells and eosinophils with varying degrees of vascular proliferation."
+    },
+    {
+      "candidate": "Epstein-Barr Virus Infection (Infectious Mononucleosis) or Bacterial Sepsis",
+      "rule_out_reason": "Considered due to exudative pharyngitis, hepatosplenomegaly, cervical adenopathy, and septic shock, but excluded by negative EBV IgM serology, negative Paul-Bunnell test, and sterile throat and blood cultures.",
+      "quote": "Anti EBV IgG antibody test was positive but EBV IgM antibody test was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive dengue virus IgM antibody ELISA in conjunction with elevated D-dimer (>200 ng/mL) and lymph node biopsy revealing massive parenchymal coagulative necrosis with perinodal microvascular fibrin thrombi, proving disseminated intravascular coagulation induced by dengue virus shock syndrome.",
+      "quote": "The Dengue virus IgM antibody Elisa was positive and serum D-dimer levels were positive (>200 ng/ml)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded serologies and lymph node histology from presentation. Zero spoilers, full quote fidelity."
+}

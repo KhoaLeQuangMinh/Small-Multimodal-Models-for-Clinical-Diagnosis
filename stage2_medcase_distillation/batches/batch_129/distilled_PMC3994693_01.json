@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3994693_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An elderly diabetic patient presents with subacute, progressive bilateral visual deterioration and optic atrophy. Brain and orbital MRI demonstrates a homogenously enhancing mass encircling the optic nerve and extending through the optic canal onto the planum sphenoidale, clinically and radiologically mimicking an orbital meningioma.\n2. Admission Breakpoint: Clinical history, ophthalmologic examination, diabetic laboratory values, viral serologies, chest radiograph, tuberculin skin test (Mantoux), and contrast MRI of the orbits and brain, stopping before surgical craniotomy, intraoperative frozen section, and microbiological culture results.\n3. Differential Distinctions: Orbital meningioma was the pre-operative working diagnosis based on dural enhancement along the sphenoid plane. Fungal infection was recognized after surgical excision by the presence of septate hyphae (Aspergillus flavus). However, delayed automated culture (BACTEC) revealed coexistent Mycobacterium tuberculosis, establishing a rare dual fungal-mycobacterial granulomatous orbital mass masquerading as an optic canal neoplasm.",
+  "case_prompt": "A 65-year-old man with poorly controlled diabetes mellitus presented with a 4-month history of painless, progressive visual loss in both eyes, with the right eye affected more severely than the left.\n\nOn ophthalmologic examination, visual acuity in the right eye was limited to light perception only, and the left eye had vision limited to counting fingers at 2 feet. Funduscopic examination demonstrated bilateral optic atrophy. Neurological examination was otherwise unremarkable, and there were no signs of meningeal irritation.\n\nLaboratory evaluation revealed fasting blood sugar 176 mg/dL, postprandial blood sugar 231 mg/dL, and HbA1c 8.2%. Routine presurgical serologies for HIV, HBsAg, and HCV were negative by ELISA. Plain chest radiography was unremarkable, and a Mantoux skin test was negative.\n\nMagnetic resonance imaging (MRI) of the brain and orbits revealed a mass encircling the left optic nerve and extending through the optic foramen into the cranial cavity. The lesion was heterogeneously hypointense on T1-weighted images and hyperintense on T2-weighted images. Following gadolinium administration, the lesion demonstrated brilliant enhancement extending onto the planum sphenoidale. Mild enhancement was also noted in the right orbit. The paranasal sinuses were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Orbital / sphenoid ridge meningioma",
+      "rule_out_reason": "Considered the primary working diagnosis preoperatively due to brilliant contrast enhancement and extension onto the planum sphenoidale, but ruled out when intraoperative biopsy demonstrated granulomatous inflammation rather than a dural neoplasm.",
+      "quote": "A working diagnosis of orbital meningioma was made."
+    },
+    {
+      "candidate": "Primary pulmonary / disseminated tuberculosis",
+      "rule_out_reason": "Considered as a potential granulomatous cause, but initial non-invasive screening with chest radiography and Mantoux skin testing was negative.",
+      "quote": "His chest X-ray was unremarkable. Mantoux was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Following resection of the mass, automated radiometric culture of the orbital tissue confirmed Mycobacterium tuberculosis coexisting with invasive Aspergillus fungal elements.",
+      "quote": "On day 28, all three cultures tubes for tuberculosis [BACTEC 460 Tb system (Becton Dickinson, USA) using the 12 B vials] were positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

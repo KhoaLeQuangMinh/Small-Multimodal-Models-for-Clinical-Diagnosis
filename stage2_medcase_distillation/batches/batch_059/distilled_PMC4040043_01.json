@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4040043_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 9-year-old girl presents with right-sided partial motor seizures, bilateral visual decline, headache, vomiting, low-grade fever, and acute right hemiparesis. Brain imaging reveals a massive 9 x 7 x 6 cm solitary cystic lesion in the parietal lobe causing midline shift. Because isolated primary cerebral hydatid disease without liver or lung involvement is exceedingly rare, distinguishing this from a pyogenic brain abscess, cystic glioma, congenital arachnoid cyst, or neurocysticercosis is the central clinical challenge.\n2. Admission Breakpoint: Admission triage concludes with physical and neurological examination, unremarkable screening plain chest radiograph and abdominal ultrasonography, and urgent neuroimaging demonstrating the giant solitary parietal cyst. Confirmatory testing begins with Echinococcus ELISA serology and surgical excision with histopathologic examination.\n3. Differential Distinctions: Pyogenic brain abscess presents with fever and mass effect but typically demonstrates intense surrounding vasogenic edema and ring enhancement. Cystic neoplasms (such as pilocytic astrocytoma) feature mural nodules and contrast enhancement. Neurocysticercosis characteristically presents with small, multiple parenchymal vesicles rather than a giant 9-cm solitary spherical cyst.",
+  "case_prompt": "A 9-year-old female presents with right-sided partial motor seizures, progressive bilateral decrease in vision, headache, vomiting, and fever for 15 days, followed by the development of right-sided hemiparesis over the last 2 days.\n\nOn physical examination, the child is conscious, oriented, and hemodynamically stable. Higher mental functions are intact. Neurological examination reveals bilateral horizontal nystagmus with the fast component beating to the left. Funduscopic examination demonstrates bilateral optic atrophy. A right-sided upper motor neuron facial nerve palsy is present, accompanied by right-sided hemiparesis. There are no signs of meningeal irritation or cerebellar dysfunction. The remainder of the systemic physical examination is normal.\n\nInitial screening examinations, including plain chest radiography and abdominal ultrasonography, are normal without focal lesions. Emergency brain neuroimaging reveals a giant solitary cyst in the left parietal lobe measuring 9 x 7 x 6 cm in diameter, occupying almost the entire parietal lobe and producing marked midline shift with compression of the contralateral lateral ventricle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic brain abscess / Intracranial tuberculoma",
+      "rule_out_reason": "A two-week history of fever, headache, vomiting, seizures, and focal neurological deficit associated with a large mass lesion raises high suspicion for an intracranial infectious abscess; however, the lesion was a giant, thin-walled solitary cyst without surrounding purulent necrosis, and systemic inflammatory signs were minimal.",
+      "quote": "fever for 15 days and right sided hemiparesis for last 2 days... Neuroimaging revealed a giant solitary cyst in the left parietal lobe measuring 9 x 7 x 6 cm in size, involving almost whole of the parietal lobe, causing midline shift and compression of the contralateral ventricle"
+    },
+    {
+      "candidate": "Cystic intracranial neoplasm (Pilocytic astrocytoma / Arachnoid cyst)",
+      "rule_out_reason": "Massive solitary cystic mass causing long-standing elevated intracranial pressure (bilateral optic atrophy) and hemiparesis in a 9-year-old is frequently a low-grade cystic astrocytoma or congenital cyst; however, non-parasitic congenital cysts do not typically present with acute seizures and fever, and neoplasms usually feature enhancing mural nodules.",
+      "quote": "Fundus examination revealed bilateral optic atrophy... Neuroimaging revealed a giant solitary cyst in the left parietal lobe measuring 9 x 7 x 6 cm in size, involving almost whole of the parietal lobe"
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Neurocysticercosis is the most common parasitic brain lesion causing pediatric seizures in endemic zones, but it characteristically produces small (1–2 cm) multiple parenchymal cysts rather than an isolated giant 9-cm cyst, and specific serological testing confirmed echinococcal etiology.",
+      "quote": "Neuroimaging revealed a giant solitary cyst in the left parietal lobe measuring 9 x 7 x 6 cm in size... Serum Echinococcus ELISA was done which was 0.96 D (positive >=0.3 D)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was established by strongly reactive serum Echinococcus ELISA (0.96 D) and definitive histopathological identification of dead scolices of Echinococcus granulosus within the surgically excised unilocular cyst wall.",
+      "quote": "Serum Echinococcus ELISA was done which was 0.96 D (positive >=0.3 D). Total excision of the cyst was done and post-operative recovery was uneventful. The histopathology of the excised cyst revealed dead scolices of E. granulosus which further confirmed the diagnosis."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC4040043_01. Admission breakpoint strictly maintained before Echinococcus ELISA and surgical histopathology. Zero pathogen spoilers in prompt."
+}

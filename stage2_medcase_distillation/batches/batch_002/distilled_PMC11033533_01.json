@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11033533_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 4-year-old child presents with progressive unilateral motor weakness and vomiting found to have a giant 13-cm intracranial cystic mass with vasogenic edema, where normal peripheral eosinophils and negative echinococcal serology (IHA) mimic a cystic pediatric brain neoplasm.\n2. Admission Breakpoint: Emergency room presentation with gait instability, right hemiparesis, fever, and vomiting, animal exposure in a rural village, physical examination findings, baseline laboratory testing (normal peripheral eosinophil count), and cranial MRI demonstrating a 13-cm parietooccipital cystic lesion with vasogenic edema, stopping strictly before surgical enucleation, histopathology, echinococcal IHA serology, and antihelmintic therapy.\n3. Differential Distinctions: Pediatric cystic neoplasms (e.g., pilocytic astrocytoma, cystic ependymoma, or neuroepithelial cysts) present as large intracranial space-occupying lesions causing focal motor deficits, but contain enhancing mural nodules, solid components, or irregular thick margins. Intracranial pyogenic abscesses present with fever and perilesional vasogenic edema, but typically exhibit marked peripheral leukocytosis and thick ring-enhancing borders rather than a thin, unilocular non-enhancing parasitic cyst.",
+  "case_prompt": "A 4-year-old male child presents to the emergency department in Istanbul, Turkey, with progressive walking instability and limb weakness of three months' duration, acutely accompanied by fever and vomiting. Prior plain skeletal radiographs of the lower extremities showed no bony abnormalities. He lives in a rural village with frequent contact history with cattle and dogs.\n\nOn physical examination, the child is irritable with low-grade fever. Neurologic examination reveals prominent right-sided hemiparesis, with objective muscle weakness affecting both the right upper and right lower extremities. Cranial nerve and sensory examinations are otherwise non-focal. Initial complete blood count demonstrates a normal total leukocyte count and a normal eosinophil level of 0.19 x 10^3/uL (reference range: 0.0–0.7 x 10^3/uL).\n\nMagnetic resonance imaging (MRI) of the brain reveals a giant, well-demarcated cystic lesion measuring 13 cm in maximum diameter in the left parietooccipital region, surrounded by prominent vasogenic edema. The cystic mass is strictly unilocular and devoid of internal solid components or enhancing mural nodules. An abdominal ultrasound performed during admission evaluation identifies an incidental 10-mm anechoic cystic lesion in the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pediatric Cystic Intracranial Neoplasm (e.g., Pilocytic Astrocytoma or Cystic Ependymoma)",
+      "rule_out_reason": "Considered due to the massive space-occupying intracranial cystic mass causing progressive unilateral motor deficits in a 4-year-old child, but ruled out neuro-radiologically by the completely thin-walled, homogeneous, purely cystic architecture lacking solid soft-tissue components or enhancing mural nodules.",
+      "quote": "The cystic lesion was consistent with a 'hydatid cyst' because of the absence of a solid component."
+    },
+    {
+      "candidate": "Pyogenic or Fungal Brain Abscess",
+      "rule_out_reason": "Considered due to acute fever, vomiting, and prominent perilesional vasogenic edema, but the child exhibited an indolent 3-month motor progression, a normal peripheral eosinophil and leukocyte profile, and imaging lacked thick irregular ring enhancement.",
+      "quote": "eosinophil level [(0.19 X 103/muL) (0.0-0.7 X 103/muL)] in complete blood count was found to be in a normal range... no cysts were detected in echocardiography, bone, and chest radiographs, and thorax computed tomography (CT)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical enucleation of the 13-cm intact cyst without rupture and concurrent detection of a 10-mm hepatic cyst provided gross and histopathological confirmation of a cerebral hydatid cyst (Echinococcus granulosus), notwithstanding a false-negative echinococcal indirect hemagglutination (IHA) serologic test.",
+      "quote": "A 13-cm cyst was enucleated successfully with no rupture... The echinococcal indirect hemagglutination (IHA) test was negative. Ultrasonography detected an anechoic cystic lesion (10 mm) in the liver... Histopathological examination was reported as compatible with a hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly terminates after ER admission, neurological exam, brain MRI, and baseline ultrasound, strictly withholding surgical enucleation, histopathology, IHA serology, and albendazole therapy. Zero pathogen disclosure in prompt."
+}

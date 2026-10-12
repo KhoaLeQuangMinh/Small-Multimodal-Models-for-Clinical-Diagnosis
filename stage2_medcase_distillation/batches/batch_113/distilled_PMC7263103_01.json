@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7263103_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: Disentangling an apparent acute cerebrovascular event and pyogenic bacterial sepsis from an underlying amoebic liver abscess that has suffered secondary enteric bacterial superinfection in an elderly immigrant from an endemic area.\n2. Admission Breakpoint: The breakpoint is reached following non-contrast head CT and abdominal CT identifying the cystic hepatic collection, prior to blood culture speciation, percutaneous drainage fluid analysis, and serum protozoal serology.\n3. Differential Distinctions: Acute recurrent ischemic stroke is ruled out by negative emergency head CT; primary pyogenic liver abscess was initially considered based on bacterial isolation, but serum anti-amoebic antibodies established a primary amoebic cavity superinfected by Klebsiella; hepatic echinococcal cyst superinfection is unlikely given the unilocular cystic appearance and positive amoebic ELISA.",
+  "case_prompt": "A 78-year-old male, originally from China and residing in the United States for several years without recent international travel, presents with acute confusion, urinary incontinence, poor oral intake, and profound weakness. His medical history includes hypertension, type 2 diabetes mellitus, paroxysmal atrial fibrillation, and a prior stroke with residual baseline left-sided motor weakness and waxing and waning cognition. On the day of admission, family members noted marked accentuation of his left-sided weakness compared to baseline, prompting emergency evaluation under a stroke alert protocol.\nOn physical examination, the patient is encephalopathic and tachypneic with a respiratory rate of 31 breaths per minute and a heart rate of 94 beats per minute. Neurological examination reveals fluctuating attention and asymmetric left hemiparesis without acute focal cranial nerve signs. Abdominal examination shows mild tenderness and fullness in the epigastrium and right upper quadrant without rebound.\nNon-contrast computed tomography of the head demonstrates chronic encephalomalacia from prior infarction, ruling out acute intracranial hemorrhage or new territorial stroke. Contrast-enhanced computed tomography of the abdomen and pelvis discloses a large cystic lesion containing an internal air-fluid level located in the left hepatic lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Recurrent Ischemic Stroke",
+      "rule_out_reason": "Emergency non-contrast head CT excluded acute cerebral infarction or hemorrhage, confirming that the neurological decline represented recrudescence of prior deficits induced by systemic sepsis.",
+      "quote": "computed tomography (CT) scan of the head ruled out acute stroke."
+    },
+    {
+      "candidate": "Primary Isolated Pyogenic Liver Abscess",
+      "rule_out_reason": "Although Klebsiella pneumoniae was isolated from blood and abscess fluid, serum serological testing demonstrated positive antibodies confirming an underlying amoebic cavity with superimposed bacterial infection.",
+      "quote": "While a stool ova and parasite examination on the patient was negative, further workup revealed that the patient was positive for Entamoeba histolytica antibody in the serum, detected via enzyme-linked immunosorbent assay and indicative of either current or prior infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detection of serum Entamoeba histolytica antibodies via ELISA in a patient with a cystic liver lesion complicated by secondary bacterial bacteremia established bacterial superinfection of an amoebic liver abscess, successfully treated with dual therapy.",
+      "quote": "he was started on metronidazole and paromomycin for extraluminal amoebic infection after completing the course of ceftriaxone to treat what appeared to have been a superimposed bacterial infection of a previously subclinical amoebic liver abscess (ALA)."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC7263103_01. Prompt conceals blood culture results and amoebic serology, focusing on septic stroke-mimic presentation with hepatic cyst."
+}

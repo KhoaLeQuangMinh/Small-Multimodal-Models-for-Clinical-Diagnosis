@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6180361_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 16-year history of recurrent, tender, non-ulcerating lower extremity subcutaneous nodules in an older immigrant from an endemic region who had previously failed 9 months of isoniazid monotherapy, leading to a long-standing presumptive misdiagnosis of idiopathic erythema induratum.\n2. Admission Breakpoint: Admission triage terminates after physical examination of the lower extremities, routine blood counts, ESR, and chest radiography, prior to clinic punch biopsy and interferon-gamma release assay.\n3. Differential Distinctions: Idiopathic nodular panniculitis is refuted by demonstrated cell-mediated immunological reactivity to specific mycobacterial antigens; stasis dermatitis/panniculitis is ruled out by historical lobular granulomatous inflammation and dramatic curative response to multidrug anti-tubercular therapy.",
+  "case_prompt": "A 73-year-old male born in Tanzania, who immigrated to Canada in the 1970s without prior BCG vaccination and had traveled extensively, presented for evaluation of chronic lower extremity skin lesions. For 16 years, he had experienced recurrent crops of tender erythematous nodules over the posterior calves bilaterally and, to a lesser extent, the anterior shins. Individual nodules resolved spontaneously without ulceration, leaving areas of residual post-inflammatory hyperpigmentation. A prior 9-month empiric trial of single-agent isoniazid had yielded no clinical improvement. Past medical history included hypertension, dyslipidemia, benign prostatic hyperplasia, hypothyroidism, and essential tremor. On physical examination, he was afebrile with normal vital signs and no constitutional symptoms. Tender, non-ulcerated erythematous subcutaneous nodules and patches of hyperpigmentation were present on the posterior calves and shins. There was no peripheral lymphadenopathy. Laboratory testing showed hemoglobin of 118 g/L and an elevated erythrocyte sedimentation rate of 41 mm/h; other routine chemistries were normal. Plain chest radiography demonstrated clear lung fields without infiltrate or adenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Erythema Induratum / Non-tuberculous Panniculitis",
+      "rule_out_reason": "Considered the working diagnosis given 16 years of negative exhaustive evaluations and apparent therapeutic failure following a 9-month course of single-agent isoniazid; however, single-agent monotherapy is inadequate for erythema induratum, and robust immunological reactivity to specific mycobacterial antigens was later demonstrated.",
+      "quote": "He was worked up extensively for alternative aetiologies, with no significant findings and thus, he arrived at our clinic with a diagnosis of idiopathic EI."
+    },
+    {
+      "candidate": "Stasis Dermatitis / Stasis Panniculitis",
+      "rule_out_reason": "Considered because chronic lower extremity edema and nodularity in an older individual can represent stasis microangiopathy, supported by an initial superficial punch biopsy; however, prior deeper histological examination demonstrated true subcutaneous granulomatous lobular panniculitis.",
+      "quote": "We performed a punch biopsy that was consistent with stasis changes. A biopsy from 2007 showed a dense inflammatory infiltrate of lymphocytes with focal collections of histocytes and granuloma formations in the subcutaneous tissue and increased fibrosis of the fibrous septa."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnostic pivot occurred when interferon-gamma release assay (QuantiFERON-TB Gold) returned strongly positive (>10 IU/mL), establishing Mycobacterium tuberculosis sensitization and leading to curative quadruple anti-tubercular therapy.",
+      "quote": "Therefore, the patient underwent an IGRA QuantiFERON-TB Gold test (Cellestis Ltd, Carnegie, Victoria, Australia), which was positive for TB infection at >10 IU/ml (values of >0.34 IU/ml are considered positive)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt stops at clinical presentation and baseline labs/radiography, strictly omitting IGRA results and multidrug treatment outcomes."
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC12872319_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 56-year-old renal transplant recipient on dual immunosuppression presented with febrile encephalopathy, rigidity, and myoclonus. An early NS1 antigen test on day 5 was negative and initial triage labs were unremarkable, creating diagnostic dilemma between opportunistic meningoencephalitis (such as HSV or Listeria), immunosuppressant neurotoxicity, acute disseminated encephalomyelitis (ADEM), and atypical arboviral neuroinvasion.\n2. Admission Breakpoint: The breakpoint occurs at initial emergency triage following baseline blood work (CBC, metabolic panel) showing no gross abnormalities, immediately prior to lumbar puncture, brain MRI, and send-out viral/serological assays.\n3. Differential Distinctions: HSV encephalitis was ruled out by negative CSF PCR and absence of temporal lobe lesions on cranial MRI; bacterial meningitis was excluded by sterile CSF Gram stain/culture; toxic-metabolic encephalopathy was ruled out by normal electrolytes and organ function; ADEM was excluded by lack of demyelinating white matter lesions on MRI; definitive diagnosis of dengue encephalitis was established by seroconversion with positive serum IgM on day 7, as NS1 sensitivity drops markedly after day 5.",
+  "case_prompt": "A 56-year-old man with a history of two renal transplantations (in 2006 and 2013) maintained on chronic immunosuppressive therapy with mycophenolate mofetil and tacrolimus presented to the hospital with a 5-day history of fever, asthenia, and myalgias. On presentation, he was confused and somnolent. Neurological examination revealed generalized muscle rigidity and myoclonus, without focal motor deficits, meningismus, or cranial nerve palsies. The remainder of the physical examination was unremarkable. Baseline triage laboratory investigations, including a complete blood count and comprehensive metabolic panel, demonstrated no important abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Herpes simplex virus (HSV) encephalitis",
+      "rule_out_reason": "Initially considered as the primary viral diagnostic hypothesis due to acute fever, altered mentation, and motor signs; however, CSF PCR for herpesviruses was negative, brain MRI lacked characteristic temporal lobe lesions, and CSF Gram stain and cultures showed no bacterial growth.",
+      "quote": "Herpes simplex virus (HSV) encephalitis was initially considered as the main diagnostic hypothesis, given the presence of fever, altered mental status, and abnormal motor signs. However, HSV PCR was negative in the CSF, there were no suggestive findings on the cranial resonance, and Gram stains and cultures were also negative, which excluded classical viral encephalitis."
+    },
+    {
+      "candidate": "Bacterial encephalitis and atypical meningitis",
+      "rule_out_reason": "Ruled out based on absence of systemic signs of infection or sepsis, normal baseline laboratory investigations, absence of septic foci, and sterile CSF cultures.",
+      "quote": "Based on lack of systemic signs of infection, negative laboratory results, and lack of septic foci, bacterial encephalitis and atypical meningitis were also excluded."
+    },
+    {
+      "candidate": "Metabolic or toxic encephalopathy",
+      "rule_out_reason": "Deemed improbable following extensive laboratory work demonstrating normal electrolytes, intact liver function, and no evidence of exogenous or immunosuppressant-related toxic agents.",
+      "quote": "Metabolic or toxic encephalopathy (often encountered in immunosuppressed persons) was deemed improbable, given that an extensive laboratory work demonstrated no disturbances of electrolytes, altered liver function or presence of toxic agents."
+    },
+    {
+      "candidate": "Acute disseminated encephalomyelitis (ADEM)",
+      "rule_out_reason": "Considered due to progressive rigidity, myoclonus, and focal seizures as an immune-mediated postinfectious process; however, it is predominantly a pediatric entity, brain MRI showed no white matter demyelination, and the patient improved spontaneously without immunomodulatory therapy.",
+      "quote": "In view of clinical progression with rigidity, myoclonus and focal seizures, an immune-mediated postinfectious process such ADEM was considered. However, the latter is predominantly seen in pediatric populations, and the lack of white matter lesions on MRI, combined with spontaneous clinical improvement in the absence of immunomodulatory therapy, rendered this diagnosis less plausible."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Because the NS1 antigen test loses diagnostic sensitivity after day 5 of illness, persistent neuro-inflammatory findings prompted serum IgM serology on symptom day 7 (2 days after negative NS1 testing), which returned positive and was confirmed 2 days later, establishing acute neuroinvasive arboviral disease in an endemic context.",
+      "quote": "Given the ongoing suspicion of a viral etiology and the known reduced sensitivity of the NS1 antigen test beyond day 5 of symptoms, dengue immunoglobulin M (IgM) serology was ordered on day 7 of symptom onset:2 days after the initial NS1 testing. The result was positive and was subsequently confirmed with a repeat serology 2 days later."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Patient presented with acute febrile encephalopathy in an endemic zone; initial NS1 test was negative due to presentation on day 5 of symptoms, but diagnosis was confirmed by serum IgM seroconversion on day 7."
+}

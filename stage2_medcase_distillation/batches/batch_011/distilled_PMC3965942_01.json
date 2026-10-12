@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3965942_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 65-year-old female immigrant from West Africa living in the United States for over a decade presents with recurrent cyclical fevers and rigors three years after her last endemic visit and two years after treatment for a presumed Plasmodium falciparum infection. Because Plasmodium falciparum does not form hypnozoites and rarely recrudesces years later, a late febrile recurrence without interval travel poses a diagnostic enigma, challenging clinicians between new occult bacteremia, impossible late falciparum recrudescence, or indolent Quartan malaria.\n2. Admission Breakpoint: The admission breakpoint falls immediately upon readmission with recurrent fevers and chills in September 2012, based on clinical history and vital signs, prior to the reporting of peripheral blood smear parasitology.\n3. Differential Distinctions: Severe pyogenic sepsis is ruled out by the identification of intraerythrocytic protozoa and absence of bacterial focus; late relapse of Plasmodium falciparum is biologically improbable after two years without re-exposure. Review by an expert pathologist confirmed that the initial diagnosis of falciparum was a laboratory error and the patient actually had chronic, indolent Plasmodium malariae recrudescence, which cleared with chloroquine.",
+  "case_prompt": "A 65-year-old female migrant from Sierra Leone who has been residing in the United States for over ten years is admitted for evaluation of recurrent fevers and chills. She experienced multiple febrile episodes during childhood while living in West Africa, but had remained free of illness for many years after relocating to the United States. Her most recent trip to Sierra Leone was three years prior (in 2009), during which and immediately following which she remained entirely asymptomatic. Two years prior (in August 2010), she developed an acute febrile syndrome and received a course of oral antimicrobial therapy with resolution of symptoms. She now presents in September 2012 with recurrent cyclical fevers, rigors, and chills. She has had no interval foreign travel or exposure to endemic regions since 2009.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Late Recrudescence or Relapse of Plasmodium falciparum",
+      "rule_out_reason": "An episode of fever two years prior had been reported as Plasmodium falciparum trophozoites with very low parasite titer. However, P. falciparum lacks dormant liver hypnozoite stages and cannot cause true relapse years later; long-term recrudescence two years post-quinine without travel re-exposure was deemed biologically extraordinary and prompted formal slide re-examination which proved the initial speciation was erroneous.",
+      "quote": "Her blood smears examined for parasites were reported as positive for Plasmodium falciparum trophozoites with very low parasite titer... The final pathology report stated that the malaria parasite seen on both occasions was that of Plasmodium malariae and the initial reports of the parasite being Plasmodium falciparum were flawed."
+    },
+    {
+      "candidate": "Occult Pyogenic Bacteremia / Sepsis",
+      "rule_out_reason": "Recurrent high-grade fevers and chills in an elderly immigrant without recent travel raised suspicion for occult bacterial infection, urinary sepsis, or endocarditis; ruled out by identification of intraerythrocytic trophozoites on blood smears and swift cure following targeted antimalarial therapy.",
+      "quote": "The patient was readmitted in September of 2012 with complaint of recurrent fever and chills. She had no interval history of travel to any malaria endemic region. Blood smears obtained on the second hospitalization were reported showing Plasmodium malariae trophozoites."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Recrudescence of Plasmodium malariae",
+      "rule_out_reason": "The diagnostic breakthrough occurred when the hospital's chief pathologist conducted a side-by-side microscopic review of the 2010 and 2012 blood films, definitively identifying characteristic Plasmodium malariae trophozoites on both occasions, demonstrating persistent, low-grade subpatent erythrocytic recrudescence over a multi-year latency period that successfully resolved with chloroquine.",
+      "quote": "The patient's peripheral blood smears from the current and prior hospitalization were reviewed by the hospital's chief pathologist to answer why two different malariae species were identified on the two occasions without any evidence of reexposure. The final pathology report stated that the malaria parasite seen on both occasions was that of Plasmodium malariae... After this report the patient was treated with full course of chloroquine with resolution of fever and parasitemia."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Breakpoint established strictly upon readmission before smear identification. Strictly avoided mention of malaria, quinine, or parasite names in the admission prompt."
+}

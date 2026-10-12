@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7332495_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 55-year-old male waste recycler with severe dental decay presents with a single focal seizure followed by progressive right hemiparesis and hypoesthesia. Neuroimaging reveals a solitary intra-axial mass in the left parietal lobe with surrounding edema and midline shift. In the complete absence of systemic pulmonary, mucosal, or cutaneous findings, the lesion heavily masquerades as an odontogenic pyogenic brain abscess or high-grade primary brain tumor, completely obscuring an endemic chronic systemic fungal granuloma.\n2. Admission Breakpoint: The breakpoint is established immediately after initial neurological consultation, physical exam (demonstrating proximal and distal right hemiparesis, tactile hypoesthesia, and poor oral hygiene), and admission head CT and brain MRI showing the left parietal intra-axial mass with vasogenic edema and subfalcine herniation, strictly prior to empiric antibiotics, dexamethasone, surgical biopsy, or pathological staining.\n3. Differential Distinctions: Pyogenic odontogenic brain abscess is favored initially by poor dentition, but fails to improve on broad-spectrum antibiotics (ceftazidime + metronidazole + vancomycin) and shows granulomas rather than acute purulent necrosis. High-grade glioma / glioblastoma would present similarly as an expansive mass with mass effect, but histopathology reveals granulomatous inflammation with multinucleated giant cells and pathognomonic fungal morphology.",
+  "case_prompt": "A 55-year-old male, who worked as a recycler and had a history of heavy smoking and alcohol consumption without known medical comorbidities, was referred to the neurosurgery division following a single epileptic seizure 1 week prior to admission, followed by progressive right-sided weakness.\n\nOn physical examination, he was alert with notable neurological deficits: muscle strength was graded as 3/5 proximally and 4/5 distally in the right upper extremity, and 4/5 in the right lower extremity. Sensory examination revealed tactile hypoesthesia over the right hemibody. Oral cavity examination revealed poor dentition and hygiene, with most teeth absent and the remainder in severe decay. The general physical and pulmonary examinations were otherwise unremarkable.\n\nAdmission head computed tomography (CT) and brain magnetic resonance imaging (MRI) revealed a solitary intra-axial expansive lesion centered in the left parietal lobe, surrounded by extensive vasogenic edema producing regional mass effect and mild subfalcine herniation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Brain Abscess (Odontogenic Origin)",
+      "rule_out_reason": "Considered the primary provisional diagnosis due to severe dental neglect and solitary rim-enhancing brain mass with edema; ruled out by lesion progression despite 40 days of empiric broad-spectrum antibiotic therapy (ceftazidime, metronidazole, and vancomycin) and histological absence of pyogenic bacterial suppuration.",
+      "quote": "A pyogenic abscess was the main diagnostic hypothesis and given the poor oral condition and lack of other findings, the primary infection site was presumed to be odontogenic... After a new brain MRI showed lesion growth despite the antibiotic therapy for 40 days, stereotactic surgical treatment was indicated"
+    },
+    {
+      "candidate": "Primary Intracranial Neoplasm (High-Grade Glioma / Astrocytoma)",
+      "rule_out_reason": "Considered given an aggressive, expanding solitary intra-axial hemispheric mass with mass effect and subfalcine herniation in a chronic smoker; ruled out by histopathological evaluation of the resected mass demonstrating chronic granulomatous inflammation with multinucleated giant cells and fungal organisms rather than neoplastic glial proliferation.",
+      "quote": "The anatomopathological study showed brain tissue with an inflammatory process characterized by granulomas with multinucleated giant cells next to extensive areas of necrosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Isolated Pseudotumoral Neuroparacoccidioidomycosis",
+      "rule_out_reason": "Complete micro-surgical resection of the recurrent 3-cm lesion and Grocott-Gomori methenamine silver (GMS) staining revealed characteristic yeast cells displaying peripheral budding resembling a 'ship's wheel' and 'Mickey Mouse ears', confirming Paracoccidioides brasiliensis infection in the absence of systemic lesions; the patient achieved substantial neurological recovery following discontinuation of antibiotics and initiation of oral itraconazole.",
+      "quote": "In the middle of the process and, sometimes, in the giant cells, histological examination using the Grocott-Gomori's methenamine silver nitrate stain method showed highly specific signs of cerebral PCM similar to a ship's wheel or Mickey Mouse ears"
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following strict Stanford MedCaseReasoning criteria. Breakpoint stops after neuroimaging and exam. All quotes verbatim."
+}

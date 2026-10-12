@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_06",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 12-year-old boy presents with high fever, rigors, headache, vomiting, drowsiness, and isolated meningismus without convulsions or focal deficits. In pediatric practice, acute fever with neck stiffness and positive Kernig sign is presumed to be bacterial meningitis until proven otherwise, whereas isolated viral meningitis due to dengue with a completely normal brain MRI is an unusual pediatric presentation.\n2. Admission Breakpoint: Admission clinical assessment demonstrating alert-to-drowsy sensorium (GCS E4M6V5) and isolated neck rigidity with positive Kernig sign, prior to brain MRI and diagnostic lumbar puncture.\n3. Differential Distinctions: Acute bacterial meningitis produces marked neutrophilic pleocytosis and meningeal enhancement; enteroviral or herpes simplex meningoencephalitis may show parenchymal abnormal signals or focal seizures; whereas dengue meningitis exhibits pure aseptic meningeal irritation, normal brain MRI, positive dengue MAC ELISA serology, and self-limiting resolution on supportive therapy.",
+  "case_prompt": "A 12-year-old boy presented with a 5-day history of continuous high-grade fever associated with chills and rigors, severe headache, anorexia, nausea, and vomiting for 3 days. Over the preceding 2 days, he developed neck stiffness, followed by drowsiness for 1 day. There was no history of loss of consciousness or seizures.\n\nOn admission examination, the patient was drowsy but oriented, with a Glasgow Coma Scale (GCS) score of 15 (E4M6V5). Neurological examination revealed isolated neck rigidity with a positive Kernig sign. Cranial nerve examination, motor power, reflexes, and sensation were entirely within normal limits. Examination of other organ systems showed no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningitis",
+      "rule_out_reason": "Continuous high-grade fever, vomiting, and acute meningismus in a child strongly raised concern for pyogenic bacterial meningitis, but normal neuroimaging and gradual clinical resolution with supportive fluid and antipyretic care ruled out a bacterial infection.",
+      "quote": "His clinical condition improved gradually on conservative management with IV fluids and paracetamol. Neck rigidity disappeared after 10 days."
+    },
+    {
+      "candidate": "Viral Encephalitis",
+      "rule_out_reason": "Drowsiness, severe headache, and high fever raised suspicion of parenchymal viral encephalitis, but brain MRI showed no abnormal signal intensities and the patient lacked seizure activity or focal deficits.",
+      "quote": "MRI of the brain done on the 6th day of fever showed no detectable abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation of aseptic meningitis based on positive MAC ELISA serology for dengue accompanied by a compatible CSF profile established the diagnosis of dengue meningitis.",
+      "quote": "A diagnosis of dengue meningitis was made based on the clinical presentation that is, fever and neck rigidity, MAC ELISA positivity for dengue, and the suggestive CSF profile."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt carefully distinguishes between triage presentation and confirmatory lumbar puncture/MRI. Zero pathogen leaks. Quotes extracted verbatim."
+}

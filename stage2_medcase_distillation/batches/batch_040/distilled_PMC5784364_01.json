@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5784364_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 47-year-old man presented with a 2-month history of progressive cough, dyspnea, drenching sweats, and marked constitutional weight loss (10 kg), with chest radiography demonstrating innumerable disseminated bilateral nodular opacities. The radiographic appearance of diffuse pulmonary micronodules creates a diagnostic dilemma between hematogenously disseminated infection (miliary pattern) and metastatic malignancy, compounded later by acute neurotologic complications (sudden sensorineural hearing loss).\n2. Admission Breakpoint: The admission breakpoint occurs immediately following outpatient pulmonary evaluation, lung auscultation (revealing unilateral crackles), and initial plain chest radiography (showing diffuse disseminated bilateral pulmonary nodules), before chest CT, send-out sputum mycobacterial assays, audiometry, and contrast-enhanced brain MRI.\n3. Differential Distinctions: Disseminated pulmonary carcinomatosis or fungal pneumonias (e.g., histoplasmosis) present with similar diffuse micronodular infiltrates and wasting, but lack positive mycobacterial testing. Idiopathic sudden sensorineural hearing loss typically occurs in isolation, whereas tuberculous labyrinthitis is accompanied by multi-organ hematogenous dissemination with intracranial tuberculomas on neuroimaging.",
+  "case_prompt": "A 47-year-old male presented to the outpatient pulmonology clinic with a persistent cough that had lasted for two months. Over the preceding four months, he had experienced profound progressive fatigue, exertional dyspnea, diaphoresis, and an unintentional weight loss of 10 kg. He reported no specific past medical or surgical history and was not taking any prescription medications.\n\nOn physical examination, he was thin and appeared chronically ill. Vital signs were notable for mild tachypnea. Respiratory examination revealed audible crackles in the right lung base, while the left lung fields were clear to auscultation without wheezing. Cardiovascular, abdominal, and neurological examinations were otherwise normal.\n\nBaseline chest radiography was performed, which revealed numerous bilateral disseminated small nodular opacities diffusely distributed throughout both lung fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic pulmonary malignancy / Disseminated fungal infection",
+      "rule_out_reason": "Widespread bilateral diffuse pulmonary nodules accompanied by prominent constitutional wasting and dyspnea raised high concern for metastatic malignancy or fungal disease, but sputum evaluation confirmed mycobacterial infection.",
+      "quote": "Chest computed tomography (CT) revealed a variety of small disseminated nodules in both lungs and mediastinal lymph node. Sputum was tested on suspicion of miliary TB. Test for Mycobacterium tuberculosis (M. tuberculosis) complex was positive."
+    },
+    {
+      "candidate": "Idiopathic sudden sensorineural hearing loss / Vestibular schwannoma",
+      "rule_out_reason": "Acute unilateral deafness and tinnitus were shown not to be an isolated idiopathic cochlear event or retrocochlear schwannoma, but rather direct hematogenous labyrinthine and brainstem involvement.",
+      "quote": "Pure-tone audiometry was normal in the left ear, while both bone and air conduction threshold in the right ear were unresponsive (Fig. 1A). Unilateral sensorineural hearing loss was evident."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Miliary distribution on chest imaging with positive sputum testing for Mycobacterium tuberculosis complex, followed by brain MRI demonstrating multiple small parenchymal nodules and vestibulocochlear labyrinthine enhancement.",
+      "quote": "Brain T1-weighted axial magnetic resonance imaging revealed multiple nodules 1-4 mm in size with high signal intensity randomly distributed around the cerebral subcortex, pons, and cerebellum (Fig. 2A). T1-weighted coronal images showed high signal distributed by vestibulocochlear area and some parts of semicircular canal area (Fig. 2B). According to radiologic findings, we diagnosed the patient as miliary TB with brain and labyrinth invasion."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to Stanford MedCaseReasoning CPC guidelines. Zero spoilers or pathogen names in the admission prompt, verbatim text quotes for diagnostic differential."
+}

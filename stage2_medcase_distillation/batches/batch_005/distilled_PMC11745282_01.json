@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11745282_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 47-year-old dialysis patient developed chronic, painful, purulent noduloulcerative lesions initially at a subclavian catheter insertion site, failing standard broad-spectrum antibacterial regimens. The clinical presentation mimicked conventional bacterial or mycobacterial catheter-site subcutaneous abscesses, obscuring an extraordinarily rare non-anogenital presentation of cutaneous amebiasis acquired via catheter manipulation or hematogenous seeding without active intestinal or hepatic abscesses.\n2. Admission Breakpoint: The breakpoint occurs prior to ultrasound-guided fine-needle aspiration of the posterior thoracic lesion and histological biopsy ('Fine-needle aspiration biopsy guided by dermatological ultrasound was performed on a lesion in the posterior thorax...').\n3. Differential Distinctions: Pyogenic bacterial abscesses (ruled out by failure of ciprofloxacin/cephalexin and negative aerobic/anaerobic cultures), cutaneous mycobacteriosis (ruled out by negative cultures and characteristic protozoal trophozoites), and primary gastrointestinal/hepatic amebiasis (ruled out by triple negative stool exams and normal abdominal/pelvic CT).",
+  "case_prompt": "A 47-year-old female with a history of chronic kidney disease requiring hemodialysis during an acute episode was referred to the dermatology clinic for evaluation of painful nodular skin lesions and abscesses. Four months earlier, she had a temporary hemodialysis catheter implanted into the right subclavian vein; the lesions first appeared at this insertion site and subsequently spread across the abdomen, anterior thorax, and posterior thorax. The lesions drained purulent secretion and were tender to palpation. She reported no fever, night sweats, or unintentional weight loss. Prior empirical antimicrobial therapy with oral ciprofloxacin and cephalexin produced no clinical improvement.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Dermatologic examination revealed multiple subcutaneous nodules and tumors measuring up to 6 cm in their largest dimension, distributed across the chest, abdomen, and back. The overlying skin was erythematous to violaceous with slight desquamation and central ulcerations, several of which exhibited spontaneous purulent drainage.\n\nInitial laboratory evaluation revealed normochromic normocytic anemia consistent with chronic kidney disease. Liver function tests, including serum transaminases and canalicular enzymes (alkaline phosphatase and gamma-glutamyl transferase), were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Abscess / Catheter-Associated Soft Tissue Infection",
+      "rule_out_reason": "Considered due to the onset at a central venous catheter insertion site and drainage of purulent exudate, but refractory to empirical ciprofloxacin and cephalexin, and microbiological cultures yielded no bacterial growth.",
+      "quote": "The collected material was sent to the microbiology laboratory for culture of aerobic, anaerobic and micro bacteria, which did not show growth of bacterial colonies"
+    },
+    {
+      "candidate": "Cutaneous Mycobacterial Infection",
+      "rule_out_reason": "Considered given the indolent noduloulcerative cutaneous presentation in a patient undergoing hemodialysis, but excluded by negative specialized mycobacterial cultures and demonstration of protozoan forms on aspiration.",
+      "quote": "culture of aerobic, anaerobic and micro bacteria, which did not show growth of bacterial colonies"
+    },
+    {
+      "candidate": "Primary Intestinal or Hepatic Abscess with Contiguous Extension",
+      "rule_out_reason": "Most cases of cutaneous amebiasis arise from perianal contamination or direct fistulization from an underlying intestinal or amebic liver abscess, but gastrointestinal and hepatic evaluations were entirely negative.",
+      "quote": "The parasitological stool examination was negative in three samples for helminths and protozoa, and computed tomography scans of the abdomen and pelvis did not show the presence of a liver or intestinal abscess."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided fine-needle aspiration of the dorsal lesion followed by direct parasitic examination and subsequent skin biopsy confirmed Entamoeba histolytica cysts and trophozoites within dermal abscesses, resulting in complete clinical resolution after metronidazole therapy.",
+      "quote": "to the parasitology laboratory, where direct examination showed structures compatible with cysts and trophozoites of Entamoeba histolytica"
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of cutaneous amebiasis occurring at a dialysis catheter insertion site. Clean admission breakpoint with complete removal of diagnostic histology, parasite identification, and therapeutic response."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5566360_01",
+  "disease": "Dengue, Malaria",
+  "think": "1. Core Clinical Tension: An adolescent living adjacent to an open drain in an urban slum presents with severe pancytopenia, massive splenomegaly (30 cm), and serositis (ascites and pleural effusion), creating a wide differential of life-threatening endemic tropical fevers where coinfection by dual vector-borne pathogens must be distinguished from single-agent infections.\n2. Admission Breakpoint: The admission breakpoint is established after baseline CBC, peripheral blood film morphology, routine urinalysis, liver/renal biochemistries, and emergency abdominal ultrasound, prior to infectious serological panels, rapid antigen tests, and microscopic parasite identification.\n3. Differential Distinctions: Enteric fever and visceral leishmaniasis present with prolonged fever, hepatosplenomegaly, and cytopenias, but negative Widal and rK-39 serologies ruled them out; concurrent reactive Dengue IgM and microscopic/PCR demonstration of mixed Plasmodium species (P. vivax and P. falciparum) confirmed coinfection.",
+  "case_prompt": "A 17-year-old male presents to the emergency department with a 5- to 6-day history of high fever associated with chills, abdominal pain, and vomiting. He denies any skin rash, arthralgias, cough, dyspnea, urinary symptoms, seizures, or bleeding diathesis. He has no prior medical conditions, takes no regular medications, and denied self-treatment. He resides in an urban slum community in East Delhi adjacent to an open drainage canal.\nOn examination, the patient appears ill and lethargic, in poor general condition, with marked pallor. Heart rate is 110 beats/min, respiratory rate 16 breaths/min, and blood pressure 110/70 mmHg. He is conscious and oriented. Cardiopulmonary examination is unremarkable. Abdominal examination reveals a soft, nontender abdomen with palpable hepatomegaly and massive splenomegaly.\nInitial laboratory workup demonstrates severe anemia and cytopenias: hemoglobin 5.0 g/dL, total leukocyte count 3,900/mm³, and platelet count 78,000/mm³. Peripheral blood smear morphology demonstrates microcytic hypochromic anemia with teardrop cells and thrombocytopenia. Routine urinalysis shows microscopic hematuria. Liver and renal biochemistries are within normal limits. Abdominal ultrasonography demonstrates massive splenomegaly measuring 30 cm in length, mild hepatomegaly, ascites, and bilateral pleural effusions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Enteric Fever (Typhoid Fever)",
+      "rule_out_reason": "Acute febrile illness accompanied by abdominal pain, vomiting, splenomegaly, and leukopenia in Delhi strongly suggested Salmonella enterica infection, but serological testing via the tube Widal test was negative.",
+      "quote": "Tube Widal test titers were <1:40 for TO, TH, and AH."
+    },
+    {
+      "candidate": "Visceral Leishmaniasis (Kala-azar)",
+      "rule_out_reason": "Severe anemia, leukopenia, and massive splenomegaly (30 cm) in an Indian patient raised high suspicion for visceral leishmaniasis, but the rK-39 rapid immunochromatographic test was negative.",
+      "quote": "Serum RK-39 was negative."
+    },
+    {
+      "candidate": "Chikungunya Fever",
+      "rule_out_reason": "Vector-borne acute febrile illness presenting with cytopenias and systemic symptoms was evaluated for chikungunya, but specific serology was non-reactive.",
+      "quote": "Chinkungunya immunoglobulin M enzyme-linked immunosorbent assay was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of concurrent dengue virus infection via reactive Dengue IgM ELISA alongside identification of mixed Plasmodium vivax and Plasmodium falciparum malaria on peripheral smear and confirmatory 18S rRNA PCR.",
+      "quote": "Dengue immunoglobulin M enzyme-linked immunosorbent assay (NIV, Pune, India) was reactive."
+    }
+  ],
+  "final_diagnosis": "Dengue, Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly excludes pathogen names ('Dengue', 'Malaria', 'Plasmodium') and stops before send-out serology and microscopic confirmation."
+}

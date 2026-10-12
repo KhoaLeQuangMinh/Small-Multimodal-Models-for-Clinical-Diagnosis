@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8492417_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 11-year-old girl with a prior history of craniopharyngioma excision and VP shunt placement presenting with a 3-year progressive headache and an intra-axial catheter-associated brain mass with elevated perfusion and choline on MR spectroscopy. The tension centers on distinguishing recurrent tumor seeding along the hardware tract from an occult intracranial tuberculoma presenting without constitutional symptoms or systemic TB.\n2. Admission Breakpoint: Initial neurosurgical consultation, clinical history, normal physical/neurological exam, baseline laboratory testing, chest radiography, and multimodal brain MRI/perfusion/MRS, prior to craniotomy and histopathologic tissue examination.\n3. Differential Distinctions: Normal perfusion MRS patterns expected in benign cysts, absence of meningeal signs or fever excluding acute pyogenic shunt infection, and histopathologic confirmation of necrotizing granulomas with Langhans giant cells without neoplastic cells definitively identifying tuberculoma over craniopharyngioma metastasis.",
+  "case_prompt": "An 11-year-old Indonesian girl presented with a 3-year history of persistent, progressively worsening headaches. Her surgical history was notable for gross total resection of a craniopharyngioma 8 years earlier, complicated by postoperative hydrocephalus requiring placement of a flat-bottom medium-pressure ventriculoperitoneal (VP) shunt at the right Kocher point. Following tumor resection, she had received no cranial radiotherapy due to her young age. Review of systems was negative for prolonged cough, fevers, night sweats, or unintentional weight loss. She had no known contacts with individuals with chronic respiratory disease, and no history of routine antibiotic use.\n\nOn physical examination, the patient was alert, oriented, well-nourished, and immunocompetent (Glasgow Coma Scale 15). Vital signs were normal with normothermia. Neurological examination revealed no focal motor or sensory deficits, no cranial nerve abnormalities, and no nuchal rigidity or meningeal signs. Routine laboratory investigations and plain chest radiography were completely normal.\n\nBrain magnetic resonance imaging (MRI) revealed a 4.0 × 2.3 × 2.1 cm solid mass enveloping the ventricular catheter extending from the anterior horn of the right lateral ventricle into the right frontal cortex. The mass was isointense on T1-weighted images, hypointense on T2-weighted images, and showed marked heterogeneous contrast enhancement with prominent surrounding vasogenic edema. Dynamic susceptibility contrast (DSC) perfusion MRI demonstrated elevated relative cerebral blood volume within the lesion, and MR spectroscopy (MRS) revealed elevated choline-to-creatine and choline-to-NAA ratios with an increased choline map. There was no ventricular dilatation, no residual or recurrent sellar/suprasellar craniopharyngioma, and no leptomeningeal enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Seeding Metastasis / Recurrence of Craniopharyngioma",
+      "rule_out_reason": "Primary preoperative diagnosis supported by surgical history, direct adherence to the shunt catheter tract, elevated relative cerebral blood volume on DSC perfusion MRI, and elevated choline peaks on MRS; definitively ruled out when surgical histopathology demonstrated granulomatous tissue without neoplastic epithelium.",
+      "quote": "From brain MRI examination suggested a process of seeding metastases surrounding the ventricular drain in the area of the anterior horn of the right lateral ventricle to the right frontal cortex. There was no sign of malignancy."
+    },
+    {
+      "candidate": "Pyogenic Shunt Infection / Bacterial Brain Abscess / Meningoencephalitis",
+      "rule_out_reason": "Considered due to the presence of indwelling ventriculoperitoneal hardware, but excluded by the indolent 3-year afebrile course, absence of nuchal rigidity or neurological signs, normal systemic inflammatory markers, and absence of leptomeningeal inflammation on neuroimaging.",
+      "quote": "There were no meningeal sign nor nuchal rigidity. Other neurological examinations were normal... No sign of meningoencephalitis was seen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Right frontotemporal craniotomy and resection of the calcified hardware-associated mass revealed extensive caseating granulomas with epithelioid cells, surrounding lymphocytes, central necrosis with calcification, and Langhans giant cells, establishing an intracranial tuberculoma.",
+      "quote": "Histopathology examination [Figure 4] revealed a large fibrotic area containing many granulomas, consisting of epithelial cells surrounded by lymphocytes. An area of necrosis was seen in the center of the granuloma with foci of calcification. Langhans giant cells were also seen at the periphery of the granuloma. There was no sign of malignancy. Histopathological findings were consistent with tuberculoma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled cleanly following Stanford MedCaseReasoning methodology, stopping strictly at the neuroimaging breakpoint before surgical resection and histopathology."
+}

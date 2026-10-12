@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5641579_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 44-year-old Zimbabwean immigrant presents with a chronic 12-month cough, patchy subpleural consolidation on thoracic CT, peripheral eosinophilia (8%), and a markedly elevated serum IgG4 level. The clinical tension is recognizing that a presentation mimicking IgG4-related pulmonary disease or autoimmune interstitial lung disease was actually caused by chronic pulmonary vascular trematode infection (pulmonary schistosomiasis).\n2. Admission Breakpoint: Admission workup ends after clinical history, normal physical examination, pulmonary function tests, baseline labs (CRP, CBC with differential showing 8% eosinophils), and thoracic CT imaging, before send-out IgG4 titers, bronchoscopy, surgical lung biopsy, and stool microscopy.\n3. Differential Distinctions: IgG4-related lung disease is suspected due to indolent consolidation and elevated serum IgG4, but surgical biopsy reveals intravascular adult trematodes and interstitial granulomatous eggs rather than storiform fibrosis or obliterative phlebitis; systemic vasculitis/EGPA is ruled out by negative serologies and normal inflammatory markers; pulmonary schistosomiasis is confirmed by surgical biopsy and stool microscopy detecting Schistosoma mansoni ova.",
+  "case_prompt": "A 44-year-old Zimbabwean-born male was referred with a 12-month history of cough. He was a lifelong non-smoker with no significant prior medical history, and specifically no history of pancreatitis. He was not taking any regular medications.\n\nOn physical examination, vital signs were normal and examination was unremarkable, with clear chest auscultation bilaterally and no peripheral stigmata of chronic disease. Pulmonary function testing revealed an isolated mild reduction in forced vital capacity (3.3 L, 78% predicted) with normal gas transfer.\n\nInitial laboratory evaluation showed a C-reactive protein (CRP) level of 2.7 mg/L (normal <5 mg/L). Complete blood count demonstrated an absolute blood eosinophil count of 0.47 \u00d7 10^9/L (normal <0.60 \u00d7 10^9/L), which was elevated as a proportion of total white cells at 8%. Thoracic computed tomography (CT) demonstrated areas of patchy sub-pleural consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "IgG4-related lung disease",
+      "rule_out_reason": "Initially suspected based on chronic cough, patchy sub-pleural consolidation on CT, and marked serum IgG4 elevation (4.61 g/L); ruled out when surgical biopsy revealed intravascular trematode worms and egg granulomas rather than IgG4-related storiform fibrosis and phlebitis.",
+      "quote": "A 44-year-old Zimbabwean-born male was referred with a 12-month history of cough, areas of patchy sub-pleural consolidation on thoracic Computed Tomography (CT) (Fig. 1), and a significantly elevated serum Immunoglobulin subclass 4 (IgG4) level (4.61 g/L; normal range 0.08-1.4 g/L)."
+    },
+    {
+      "candidate": "Systemic vasculitis / connective tissue disease (e.g. EGPA)",
+      "rule_out_reason": "Considered due to the pulmonary infiltrates and relative eosinophilia (8%); excluded by negative autoimmune and vasculitic serologies and normal CRP.",
+      "quote": "Connective tissue disease and vasculitic serology was negative, and C-reactive protein (CRP) was 2.7 mg/L (normal <5 mg/L)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary schistosomiasis (Schistosoma mansoni)",
+      "rule_out_reason": "Surgical lung biopsy demonstrated adult schistosome worms within pulmonary vessels and interstitial egg granulomas, confirmed by identification of Schistosoma mansoni ova in stool microscopy.",
+      "quote": "Unexpectedly, this demonstrated adult schistosome worms within the pulmonary vessels and eggs with a florid granulomatous inflammatory reaction within the interstitium (Fig. 2). Subsequent stool microscopy confirmed the presence of Schistosoma mansoni ova; microscopy of urine did not reveal any schistosome ova."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clear breakpoint before IgG4 titers, bronchoscopy, and biopsy. Verbatim quotes matched. Zero spoilers in prompt."
+}

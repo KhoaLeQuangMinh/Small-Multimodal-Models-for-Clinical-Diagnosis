@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9744786_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 66-year-old female farmer with agricultural sewage exposure presents with febrile dyspnea, rapidly progresses to septic shock, hypoxemic respiratory failure, and comatose collapse, and is subsequently found to have acute disseminated encephalomyelitis (ADEM). The clinical tension lies in recognizing severe zoonotic spirochetal infection presenting with pulmonary hemorrhage/ARDS and septic shock, followed by post-infectious central nervous system demyelination.\n2. Admission Breakpoint: Presentation history of pain, fatigue, fever, dyspnea, and field sewage exposure; initial vitals (BP 96/50 mm Hg, SpO2 90%) rapidly deteriorating within hours to shock (BP 80/52 mm Hg) and hypoxemia (SpO2 78%) with loss of consciousness; initial laboratory markers (neutrophilic leukocytosis, IL-6, procalcitonin) and admission non-contrast head CT showing only chronic lacunes. Excludes lumbar puncture, CSF analysis, metagenomic next-generation sequencing, and brain MRI.\n3. Differential Distinctions: Acute ischemic stroke was initially considered following acute collapse in a diabetic hypertensive patient, but CT showed only chronic lacunes without acute infarction. Severe bacterial pneumonia/sepsis was considered given leukocytosis and elevated procalcitonin (3.8 ng/mL), but metagenomic testing revealed spirochetal sequences as the underlying driver of multi-organ involvement and secondary ADEM.",
+  "case_prompt": "A 66-year-old female farmer with a history of occupational exposure to field sewage presents to the emergency department with a 3-day history of generalized body pain, fatigue, and anorexia, followed by progressive dyspnea and fever. Her medical history includes hypertension and poorly controlled diabetes mellitus. Upon admission, her temperature is 37.1°C, pulse rate 86/min, respiratory rate 30/min, blood pressure 96/50 mm Hg, and peripheral oxygen saturation 90% on room air. Her physical examination is unremarkable. Within one hour of admission, her blood pressure drops to 80/52 mm Hg with worsening dyspnea, and eight hours after admission, her oxygen saturation falls to 78%, accompanied by acute loss of consciousness requiring emergency transfer to the intensive care unit. Initial laboratory investigations demonstrate a white blood cell count of 11.09 × 10^9/L with 87% neutrophils, interleukin-6 of 208.6 pg/mL, procalcitonin of 3.8 ng/mL, and capillary blood glucose of 15.2 mmol/L. An emergent non-contrast head CT shows multiple chronic lacunar cerebral infarctions in the bilateral corona radiata and right basal ganglia, mild brain atrophy, and intracranial arteriosclerosis, with no acute parenchymal abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Ischemic Cerebrovascular Disease",
+      "rule_out_reason": "Considered due to the patient's sudden loss of consciousness, hypertension, diabetes mellitus, and initial head CT findings; however, head CT revealed only chronic lacunar infarctions that could not explain the rapidly developing hemodynamic shock, severe hypoxemia, or elevated inflammatory markers.",
+      "quote": "Head CT on the 2nd day after admission revealed multiple lacunar cerebral infarctions in the bilateral corona radiata and right basal ganglia, mild brain atrophy, and intracranial arteriosclerosis; no other abnormalities were detected in the brain parenchyma."
+    },
+    {
+      "candidate": "Severe Bacterial Pneumonia with Septic Shock",
+      "rule_out_reason": "Considered given the profound dyspnea, marked elevation of procalcitonin (3.8 ng/mL) and interleukin-6, leukocytosis with neutrophilic predominance, and refractory hypotension; however, standard bacterial pathogens were absent, and advanced molecular testing revealed a zoonotic spirochetal etiology.",
+      "quote": "Laboratory investigations showed a white blood cell count of 11.09 x 109/L with 87% neutrophils. Her interleukin-6 level was 208.6 pg/ml, and her procalcitonin was 3.8 ng/ml."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by metagenomic next-generation sequencing of both CSF and blood identifying Leptospira borgpetersenii reads along with positive IgG serology, followed by MRI demonstration of acute demyelinating lesions.",
+      "quote": "Organisms detected in the patient's CSF matched the Leptospira genomes in the reference database, identifying 7 sequencing reads of Leptospira borgpetersenii (Figure 1; Table 2)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly observed at emergency triage and ICU transfer prior to lumbar puncture and mNGS. Zero pathogen names in case_prompt. Verbatim quotes match source text. Target canonical disease verified."
+}

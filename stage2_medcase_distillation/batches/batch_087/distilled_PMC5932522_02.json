@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5932522_02",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: The patient is an elderly rural resident and chronic smoker presenting with an ulcerated oral lesion. In this high-risk demographic, oral malignancy (squamous cell carcinoma) is the primary differential concern. Distinguishing infectious granulomatous moriform stomatitis with fine hemorrhagic puncta from malignancy requires clinical recognition of the classic mucosal appearance followed by biopsy confirmation.\n2. Admission Breakpoint: The admission evaluation ends following history and physical examination of the oral ulcer with hemorrhagic dots, immediately prior to obtaining an incisional biopsy under local anesthesia.\n3. Differential Distinctions: Squamous cell carcinoma typically presents with indurated, non-healing ulcers or exophytic masses with rolled borders in smokers, whereas oral paracoccidioidomycosis classically presents with granular mulberry-like ulcers studded with fine hemorrhagic puncta (moriform stomatitis). Aphthous stomatitis presents as painful shallow ulcers with erythematous halos that lack persistent bleeding dots and typically resolve spontaneously.",
+  "case_prompt": "A 68-year-old male with melanoderma, who is a chronic smoker and resident of a rural region, is referred to the surgery outpatient clinic with a chief complaint of a \"mouth sore.\" On physical examination, there is an ulcerated oral mucosal lesion studded with fine hemorrhagic dots.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Oral Squamous Cell Carcinoma",
+      "rule_out_reason": "In an elderly chronic tobacco smoker presenting with a chronic non-healing oral ulcer, squamous cell carcinoma is the foremost diagnostic consideration; however, biopsy demonstrated characteristic granulomatous fungal infection rather than neoplastic tissue.",
+      "quote": "Biopsy was performed under local anesthesia, and the hypothesis was confirmed."
+    },
+    {
+      "candidate": "Aphthous Stomatitis",
+      "rule_out_reason": "A benign aphthous ulcer was suspected based on the initial chief complaint of a mouth sore, but physical examination revealed an ulcerated lesion displaying characteristic hemorrhagic dots rather than a typical self-limited aphthous ulcer.",
+      "quote": "Clinical examination verified an ulcerated lesion with hemorrhagic dots, a classic aspect of PCM (Figure 7)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of the pathognomonic mulberry-like ulceration with hemorrhagic puncta in a rural resident prompted an incisional biopsy under local anesthesia, which definitively confirmed the diagnosis and initiated targeted antifungal therapy with itraconazole.",
+      "quote": "Biopsy was performed under local anesthesia, and the hypothesis was confirmed. Itraconazole therapy was initiated by the infectious team."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly preserved prior to biopsy. Zero pathogen or disease names in case_prompt. Diagnostic reasoning includes exact verbatim quotes from the source report."
+}

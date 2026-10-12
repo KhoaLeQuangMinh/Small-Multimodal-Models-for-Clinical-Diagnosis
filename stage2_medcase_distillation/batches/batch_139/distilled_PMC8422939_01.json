@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8422939_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 3-year-old child presents with headache, multiple retino-choroidal lesions, and multiple brain parenchymal enhancing lesions on MRI. Because his dizygotic twin has bilateral retinoblastoma, there is strong cognitive bias toward bilateral familial retinoblastoma with intracranial extension. Disseminated miliary tuberculosis presenting primarily as bilateral choroidal tuberculomas masquerades as pseudo-retinoblastoma.\n2. Admission Breakpoint: Admission triage concludes following examination under anesthesia detailing the retino-choroidal lesions and brain MRI showing multiple enhancing lesions, immediately prior to pediatric and infectious disease investigations (tuberculin skin test, QuantiFERON-TB Gold).\n3. Differential Distinctions: Retinoblastoma typically arises early in life (annual screening here was normal for 2 years) and exhibits intraocular mass lesions often with calcification and vitreous seeding rather than small, discrete 0.5-mm yellowish-white choroidal lesions. Other infectious granulomatous causes of CNS lesions (e.g., neurocysticercosis, toxoplasmosis) are distinguished by immunological evidence of mycobacterial infection.",
+  "case_prompt": "A 3-year-old boy, the dizygotic twin brother of a known patient with bilateral retinoblastoma born following in-vitro fertilization, was undergoing annual surveillance screening for retinoblastoma. There was no other family history of retinoblastoma, and surveillance during his first two years of life showed no ocular pathology. He presented with complaints of headache. Visual acuity was preserved at 20/20 in both eyes. Examination under anesthesia revealed multiple yellowish-white retino-choroidal lesions: a solitary lesion of size 0.5 mm in the right eye superior to the optic disc and two similar lesions in the left eye (one superior to the fovea and the other inferior to the optic disc). Magnetic resonance imaging (MRI) of the brain demonstrated multiple enhancing lesions throughout the cerebral parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bilateral Retinoblastoma with CNS extension",
+      "rule_out_reason": "The child's twin brother had bilateral retinoblastoma, raising high clinical suspicion for familial retinoblastoma; however, initial annual screenings over the first two years were completely negative, and fundus examination showed discrete, tiny yellowish-white retino-choroidal granulomas without retinal detachment or intraocular endophytic/exophytic calcified masses.",
+      "quote": "The dizygotic twin brother of a known case of bilateral retinoblastoma, born following in-vitro fertilization was being screened annually for retinoblastoma."
+    },
+    {
+      "candidate": "Neurocysticercosis / Intracranial parasitic infection",
+      "rule_out_reason": "Multiple enhancing brain lesions in a child with headaches can represent neurocysticercosis or parasitic granulomas; however, concurrent bilateral retino-choroidal lesions and subsequent immunodiagnostic testing directed the diagnosis toward mycobacterial disease.",
+      "quote": "Magnetic resonance imaging (MRI) brain revealed multiple enhancing lesions (Figure 2A, B (Fig. 2))."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was investigation for tuberculosis prompted by the characteristic retino-choroidal and brain lesions, resulting in a strongly positive tuberculin skin test (20 mm) and positive QuantiFERON TB gold test, with complete resolution of all ocular and CNS lesions following anti-tubercular therapy.",
+      "quote": "Tuberculin skin test was 20 mm and QuantiFERON TB gold test was positive. The diagnosis of miliary tuberculosis was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

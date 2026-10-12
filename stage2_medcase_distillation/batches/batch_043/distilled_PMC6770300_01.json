@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6770300_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 64-year-old post-allogeneic HSCT recipient on prolonged immunosuppression for graft-versus-host disease presents with cerebellar symptoms and a multicystic posterior fossa mass compressing the fourth ventricle. In an immunosuppressed transplant patient, fungal abscess, toxoplasmosis, post-transplant lymphoproliferative disorder, or leukemic relapse are typically suspected, masking an opportunistic or reactivated cestode infestation without visible scolex.\n2. Admission Breakpoint: Day +320 presentation with cerebellar dysfunction, cutaneous purpura, head CT, and brain MRI showing a multicystic cerebellar mass with perilesional edema compressing the fourth ventricle, prior to surgical biopsy attempt, send-out serology, or empirical antiparasitic trials.\n3. Differential Distinctions: Cerebral toxoplasmosis was strongly suspected given pre-transplant donor/recipient seropositivity and severe cellular immunosuppression, but failed to respond to prolonged high-dose trimethoprim-sulfamethoxazole and radiologically progressed. Congenital vascular malformations (e.g. cavernoma) were excluded by the new-onset nature of the lesion compared to baseline imaging. Central nervous system tuberculosis was excluded by negative tuberculin and interferon-gamma release assays. Neurocysticercosis fulfilled diagnostic consensus via multicystic lesions, compatible rural/household exposure, and rapid resolution with cysticidal therapy.",
+  "case_prompt": "A 64-year-old female who had undergone haploidentical allogeneic hematopoietic stem cell transplantation (HSCT) for acute myeloid leukemia secondary to myelodysplastic syndrome presented on day +320 post-transplant with nausea, vomiting, nystagmus, diplopia, and severe cutaneous purpura. Her post-transplant course had been complicated by stage 1, grade 2 gastrointestinal graft-versus-host disease (GVHD) requiring prolonged high-dose corticosteroid and multi-agent immunosuppressive therapy. She had a history of living in the countryside. On physical examination, she demonstrated horizontal and rotatory nystagmus and bilateral cranial nerve involvement manifested by diplopia. Non-contrast head computed tomography (CT) and magnetic resonance imaging (MRI) of the brain revealed a newly emergent right multicystic cerebellar mass with extensive perilesional edema compressing the fourth ventricle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral toxoplasmosis",
+      "rule_out_reason": "Considered due to heavy post-transplant immunosuppression and pre-HSCT IgG seropositivity in both patient and donor; however, high-dose intravenous trimethoprim-sulfamethoxazole failed to halt disease progression, with follow-up neuroimaging demonstrating expansion of the multicystic lesions and impending herniation.",
+      "quote": "High-dose intravenous trimethoprim-sulfamethoxazole for a suspicious cerebral toxoplasmosis, due to donor and patient IgG positivity before HSCT, was given after 20 days of antibiotic therapy. After two weeks of this therapy, continued clinical symptoms and MRI of the brain showed worsening of multicystic lesions with perifocal edema and initial cerebellar herniation."
+    },
+    {
+      "candidate": "Congenital cavernous malformation",
+      "rule_out_reason": "Considered in the differential diagnosis of multilocular cystic posterior fossa lesions; however, the lesion was entirely absent on pre-transplant neuroimaging and developed de novo.",
+      "quote": "As the lesions were not previously reported, we ruled out congenital abnormalities such as cavernous malformations."
+    },
+    {
+      "candidate": "Central nervous system tuberculosis (Tuberculoma / tuberculous cyst)",
+      "rule_out_reason": "Considered as a potential cause of multicystic central nervous system infection in an immunocompromised host; however, both the tuberculin skin test and interferon-gamma release assay were negative.",
+      "quote": "Moreover, the quantiferon and TB skin test (or PPD test) were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The presence of multicystic cerebellar lesions with fourth ventricular compression in a patient with rural exposure and prior household contact, coupled with prompt clinical and radiological resolution following cysticidal treatment with albendazole, fulfilled revised consensus criteria for neurocysticercosis.",
+      "quote": "we applied the revised diagnostic criteria for Taenia solium infection and discovered that our patient presented a definitive diagnosis of NCC due to the neuroimaging presence of cystic lesions without a discernible scolex and enhancing lesion plus previous household contact with T. solium and neurological clinical manifestations of NCC."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at admission neuroimaging. Zero spoilers in case prompt. All quotes are exact verbatim matches from article text."
+}

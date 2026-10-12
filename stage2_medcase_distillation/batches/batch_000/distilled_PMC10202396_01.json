@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10202396_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 13-year-old boy presents in severe shock with high-grade fevers, profound thrombocytopenia, passing black urine, and hepatomegaly, closely mimicking dengue hemorrhagic fever/dengue shock syndrome, scrub typhus, or septic shock with hemoglobinuria. The central challenge is recognizing severe Plasmodium vivax presenting with life-threatening hemodynamic instability and blackwater fever.\n2. Admission Breakpoint: Admission triage ends following initial vital signs, emergency stabilization, and routine triage hematology/biochemistry (severe thrombocytopenia, elevated blood urea, elevated transaminases/bilirubin), immediately prior to peripheral blood smear and rapid antigen/molecular testing.\n3. Differential Distinctions: Dengue hemorrhagic fever and scrub typhus are excluded by negative NS1 antigen and serological card tests; enteric fever is excluded by negative Widal serology; diagnosis is confirmed by direct microscopic identification of pigment-bearing intraerythrocytic parasites and species-specific nested PCR.",
+  "case_prompt": "A 13-year-old boy presented with high-grade fever, projectile non-bilious non-bloody vomiting, lightheadedness, generalized profound weakness, anorexia, and the passage of dark, black-colored urine. His condition deteriorated rapidly with persistent hypotension and a transient 20-minute episode of loss of consciousness.\n\nOn physical examination, he was afebrile to febrile (temperature up to 40.0°C) with significant hemodynamic collapse: blood pressure was 88/36 mmHg (initial blood pressure 110/40 mmHg) with tachycardia at 110 beats per minute. Facial swelling was noted. Oxygen saturation was maintained on ambient air. Abdominal examination revealed tender hepatomegaly extending 2 cm below the right costal margin without splenomegaly. Marked oliguria was present, with total urine output reduced to approximately 150 mL per day. There were no petechiae or active overt hemorrhagic manifestations.\n\nEmergency laboratory testing revealed severe thrombocytopenia with a platelet count of 28,000/µL (subsequently 36,000/µL). Hemoglobin was 12.3 g/dL (subsequently falling to 11.0 g/dL), hematocrit was 35.8% (falling to 34.2%), mean corpuscular volume was 66.1 fL, and mean corpuscular hemoglobin was 22.7 pg. Serum blood urea was elevated at 62 mg/dL, and random blood glucose was 204 mg/dL. Hepatic panel demonstrated elevated direct bilirubin and elevated aminotransferases.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue Hemorrhagic Fever / Dengue Shock Syndrome",
+      "rule_out_reason": "Considered urgently due to high-grade fever, profound thrombocytopenia, plasma leakage with facial swelling, and acute decompensated hypotensive shock in an endemic pediatric setting; however, specific rapid viral testing was negative.",
+      "quote": "Other tests such as Dengue (Non-structural protein 1) NS1, scrub typhus card tests, Widal test and COVID 19 reverse transcriptase (RT)-PCR were negative."
+    },
+    {
+      "candidate": "Scrub Typhus or Enteric Fever (Typhoid)",
+      "rule_out_reason": "Considered because of fever, hepatomegaly, shock, and multi-organ impairment; however, acute scrub typhus card testing and Widal febrile agglutinin assays were entirely non-reactive.",
+      "quote": "Other tests such as Dengue (Non-structural protein 1) NS1, scrub typhus card tests, Widal test and COVID 19 reverse transcriptase (RT)-PCR were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Giemsa-stained peripheral blood smear microscopy revealed intraerythrocytic microgametocytes containing characteristic malaria pigment, and multiplex nested PCR confirmed specific Plasmodium vivax infection.",
+      "quote": "Giemsa-stained peripheral blood smears revealed normal sized erythrocytes with microgametocytes containing malarial pigments (Fig. 1)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Confirmatory smears, serologies, and PCR withheld from case_prompt. Direct verbatim quotes used for all diagnostic reasoning exclusions."
+}

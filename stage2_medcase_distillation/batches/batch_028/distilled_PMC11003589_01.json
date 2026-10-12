@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11003589_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 39-year-old woman presenting with evening fever, symmetric wrist and ankle polyarthritis with morning stiffness, progressive pedal edema, and heavy nephrotic-range proteinuria mimics rheumatologic disease or viral nephropathy. Renal biopsy showing collapsing glomerulopathy combined with lymph node GeneXpert identified tuberculosis manifesting as Poncet's disease and collapsing glomerulopathy.\n2. Admission Breakpoint: The breakpoint stops after initial admission triage laboratories and non-invasive abdominal ultrasound/CT imaging, strictly prior to renal biopsy, FDG-PET scan, cervical lymph node biopsy, and GeneXpert mycobacterial testing.\n3. Differential Distinctions: Lupus nephritis and rheumatoid arthritis present with polyarthritis and inflammatory markers, but autoantibody panels (ANA, RF, anti-CCP) were negative. Collapsing glomerulopathy is classically associated with HIV, HCV, HBV, or COVID-19, all of which were excluded serologically. Biopsy and molecular testing proved extrapulmonary Mycobacterium tuberculosis.",
+  "case_prompt": "A 39-year-old woman presented with a 3-week history of low-grade fever with evening rises, symmetrical polyarthralgia involving both wrists and ankles accompanied by morning stiffness, bilateral progressive pedal edema, and frothy urination.\n\nOn physical examination, vital signs were stable. Bilateral pitting pedal edema and swelling with tenderness of the wrist and ankle joints were present.\n\nInitial laboratory evaluation revealed normocytic, normochromic anemia, an erythrocyte sedimentation rate (ESR) of 45 mm/h, and a C-reactive protein (CRP) of 110 mg/L. Renal function tests revealed a serum creatinine of 1.26 mg/dL. Urinalysis showed 3+ proteinuria and microscopic hematuria (5–8 red blood cells per high-power field); 24-hour urinary protein excretion was nephrotic at 4.1 g. Serum albumin was 3.2 g/dL and total serum cholesterol was 284 mg/dL. Comprehensive autoimmune serologies, including antinuclear antibody (ANA), ANA profile, rheumatoid factor (RF), and anti-cyclic citrullinated peptide (anti-CCP), were negative. Serological tests for human immunodeficiency virus (HIV), hepatitis B surface antigen (HBsAg), and hepatitis C virus (HCV) antibodies, as well as an admission reverse transcription-polymerase chain reaction test for COVID-19, were negative. Abdominal ultrasound and computed tomography were unremarkable except for benign ovarian cysts.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic lupus erythematosus / Lupus nephritis",
+      "rule_out_reason": "Constitutional evening fever, inflammatory polyarthritis with morning stiffness, and nephrotic-range proteinuria with hematuria strongly simulated SLE with lupus nephritis; however, serum ANA and comprehensive ANA profiling were completely negative.",
+      "quote": "Serological testing for antinuclear antibody (ANA), ANA profile, rheumatoid factor (RF), and anti-cyclic citrullinated peptide (anti-CCP) revealed negative results."
+    },
+    {
+      "candidate": "Rheumatoid arthritis",
+      "rule_out_reason": "Symmetrical peripheral arthritis involving wrists and ankles with marked morning stiffness and high inflammatory markers raised concern for rheumatoid arthritis, but RF and anti-CCP antibodies were negative, pointing to a reactive rather than autoimmune synovitis.",
+      "quote": "multiple joint pains involving both the wrist and ankle joints associated with morning stiffness for three weeks duration."
+    },
+    {
+      "candidate": "HIV-associated nephropathy / Viral collapsing glomerulopathy",
+      "rule_out_reason": "Collapsing glomerulopathy is classically induced by viral pathogens such as HIV, hepatitis C, hepatitis B, or SARS-CoV-2; however, serological and molecular testing for all these viruses was negative.",
+      "quote": "Antibodies against HIV, hepatitis C virus (HCV), and hepatitis B surface antigen (HBsAg) were all negative. COVID reverse transcription polymerase chain reaction (RT-PCR) was negative at the time of admission."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Kidney biopsy demonstrated collapsing glomerulopathy, FDG-PET identified generalized hypermetabolic lymphadenopathy, and cervical lymph node biopsy with GeneXpert confirmed Mycobacterium tuberculosis with necrotizing granulomas, establishing tuberculosis with reactive arthritis (Poncet's disease) and collapsing glomerulopathy.",
+      "quote": "Histopathology analysis of the lymph node taken from the cervical region suggested necrotizing granulomatous inflammation, indicating tuberculosis. Gene Xpert analysis from the tissue sample was positive for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission triage findings. Excluded kidney biopsy, FDG-PET, lymph node histopathology, GeneXpert, and pathogen names from case prompt. Quotes verified against source text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2644317_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Evaluating an exudative pleural effusion with prominent eosinophilia (30%) and normal adenosine deaminase (ADA 21 UI/L) alongside a non-reactive tuberculin skin test (0 mm) in a young man using anabolic-androgenic steroids (nandrolone), which masked and delayed the classic lymphocytic presentation of tuberculous pleurisy.\n2. Admission Breakpoint: The admission breakpoint occurs following the initial emergency evaluation, baseline laboratory tests (CBC, biochemistry), chest radiography, and first thoracentesis fluid analysis (clear exudate with 30% eosinophils, normal ADA, negative initial AFB), prior to long-term follow-up at 4 months, repeat thoracentesis, tuberculin conversion, and closed pleural biopsy.\n3. Differential Distinctions: Parasitic pleurisy was considered due to pleural fluid eosinophilia (30%), but ruled out by absence of peripheral eosinophilia and negative serial stool examinations for ova and parasites; Malignant pleural effusion was suspected given an exudative effusion of unclear etiology, but ruled out on biopsy showing necrotizing granulomatous pleurisy rather than malignant cells; Classic pyogenic parapneumonic effusion was excluded by absence of parenchymal consolidation, clear effusion with normal pH (7.46), and sterile bacterial cultures.",
+  "case_prompt": "A 31-year-old man presents to the emergency department complaining of daily evening fever, night sweats, pleuritic chest pain, and shortness of breath of 2 weeks' duration. For 10 days ending two weeks prior to presentation, he had administered daily intramuscular doses of an anabolic-androgenic steroid (nandrolone decanoate, 50 mg); he takes no other medications.\n\nOn physical examination, he is in no acute distress. Vital signs are stable. Examination of the chest, heart, and abdomen is otherwise unremarkable.\n\nInitial complete blood count and routine serum biochemical investigations are within normal limits, with no peripheral blood eosinophilia. A chest radiograph demonstrates a left-sided pleural effusion occupying approximately 30% of the left hemithorax, with no focal parenchymal consolidation.\n\nDiagnostic thoracentesis yields clear pleural fluid. Analysis reveals an exudate with a total protein level of 4.8 g/dL and a lactate dehydrogenase (LDH) level of 310 IU/L, with a pleural fluid pH of 7.46. The total leukocyte count in the effusion is 2,500 cells/mm³, with a differential consisting of 30% eosinophils, 50% lymphocytes, and 20% neutrophils. The pleural fluid adenosine deaminase (ADA) level is 21 IU/L. An initial tuberculin skin test demonstrates 0 mm of induration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Parasitic Infection / Parasitic Pleural Effusion",
+      "rule_out_reason": "Pleural fluid eosinophilia (30% eosinophils) raised strong suspicion for a parasitic infestation (such as paragonimiasis or helminthic migration), but serial stool examinations demonstrated no parasites and peripheral eosinophilia was absent.",
+      "quote": "A parasitic infection was suspected but serial stool examinations were negative for parasites."
+    },
+    {
+      "candidate": "Malignant Pleural Effusion",
+      "rule_out_reason": "In the absence of an identifiable infectious etiology and with non-diagnostic initial fluid studies, malignancy was considered, but histopathology from a subsequent pleural biopsy demonstrated necrotizing granulomatous inflammation with no malignant cells.",
+      "quote": "No definitive diagnosis was made, but malignant pleural effusion was suspected."
+    },
+    {
+      "candidate": "Pyogenic Parapneumonic Effusion / Bacterial Empyema",
+      "rule_out_reason": "Acute bacterial pleurisy was considered given acute fever and pleurisy, but the fluid was clear with normal pH (7.46) and bacterial cultures were sterile.",
+      "quote": "Culture of the pleural fluid for bacteria on blood agar and for mycobacteria on Lowenstein Jensen and Stonebrink medium was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous Pleurisy (Pleural Tuberculosis)",
+      "rule_out_reason": "The diagnostic turning point occurred after the immunosuppressive effects of nandrolone waned, revealing recurrent effusion with conversion to lymphocytic dominance (90% mononuclear cells), elevated pleural ADA (51 U/L), positive tuberculin skin test (20 mm), and pleural biopsy showing caseating granulomas with Mycobacterium tuberculosis culture confirmation.",
+      "quote": "A pleural biopsy showed a chronic pleurisy with multiple granulomas with central necrosis, compatible with pleural TB and a culture of the pleural tissue was positive for M. tuberculosis after 4 weeks."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Anabolic-androgenic steroids (AAS) exert immunomodulatory actions, including suppression of cell-mediated immunity and Th1 responses. In this patient, recent nandrolone administration masked the classic lymphocytic predominance and elevated ADA typically observed in tuberculous pleurisy, producing an unusual eosinophilic exudate (30% eosinophils) and a false-negative tuberculin test. Following drug cessation, the classic immune response re-emerged with high ADA and necrotizing pleural granulomas."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10787365_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 44-year-old woman admitted for elective gynecological surgery is noted to have a very high burden of right ventricular outflow tract (RVOT) premature ventricular complexes (PVCs). TTE reveals an intracardiac mass tethered to the chordae tendineae. The diagnostic challenge is distinguishing a classic intracardiac neoplasm (myxoma, fibroelastoma) or thrombus from an extremely rare cardiac hydatid cyst in an atypical right ventricular location.\n2. Admission Breakpoint: Admission evaluation ends after initial pre-operative evaluation, electrocardiogram (19% RVOT PVC burden), and initial transthoracic echocardiogram (showing a 15 x 10 mm oscillating right ventricular mass), prior to transesophageal echocardiography, cardiac MRI, and specific parasite serology.\n3. Differential Distinctions: Atrial/ventricular myxomas are solid, highly vascular, and often show gadolinium enhancement, whereas hydatid cysts are non-enhancing and cystic. Infective endocarditis vegetations are accompanied by fever, murmurs, and positive blood cultures. Cardiac echinococcosis is confirmed by high-specificity IgG ELISA and cystic architecture.",
+  "case_prompt": "A 44-year-old woman with a diagnosis of uterine fibroids was admitted for elective vaginal hysterectomy and referred for cardiology evaluation after routine monitoring revealed frequent premature ventricular complexes (PVCs). She was completely asymptomatic, reporting no weight loss, diaphoresis, fever, cutaneous eruptions, palpitations, chest discomfort, dyspnea, or gastrointestinal complaints. A 12-lead electrocardiogram demonstrated frequent PVCs displaying a left bundle branch block morphology with an inferior QRS axis and a mid-precordial transition, consistent with an anterior right ventricular outflow tract origin. Twenty-four-hour ambulatory Holter monitoring demonstrated a PVC burden of 19%. Transthoracic echocardiography revealed a 15 mm x 10 mm mobile mass freely oscillating within the right ventricle, with preserved biventricular systolic function. Systemic physical examination and routine preoperative laboratory tests were otherwise unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Right Ventricular Myxoma / Papillary Fibroelastoma",
+      "rule_out_reason": "Primary suspected neoplastic etiology for an oscillating intracardiac mass attached to the tricuspid apparatus; ruled out by TEE and cardiac MRI revealing a well-defined cystic cavity without late gadolinium enhancement.",
+      "quote": "On transoesophageal echocardiography (TEE), the mass was cystic and attached to one of the chordae tendineae with a suspicious stalk"
+    },
+    {
+      "candidate": "Infective Endocarditis Vegetation / Intracardiac Thrombus",
+      "rule_out_reason": "Considered given a mobile mass tethered to chordae tendineae, but ruled out by complete absence of fever, negative inflammatory markers, lack of valvular regurgitation, and absence of systemic embolization or thrombotic risk factors.",
+      "quote": "She had no history of weight loss, diaphoresis, fever, rash, or any cardiac, gastrointestinal, or respiratory symptoms."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Intracardiac Echinococcosis (Cardiac Hydatid Cyst)",
+      "rule_out_reason": "A cystic non-enhancing RV mass combined with positive echinococcal IgG ELISA and complete clinical and echocardiographic resolution after 12 weeks of albendazole confirmed cardiac Echinococcosis.",
+      "quote": "With a suspicion of hydatid cyst, echinococcal IgG enzyme-linked immunosorbent assay (ELISA) was done and was positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10787365_01. The admission narrative stops after initial ECG and TTE findings, concealing TEE, cardiac MRI, and hydatid serology. Verbatim quotes confirm all candidate differentials."
+}

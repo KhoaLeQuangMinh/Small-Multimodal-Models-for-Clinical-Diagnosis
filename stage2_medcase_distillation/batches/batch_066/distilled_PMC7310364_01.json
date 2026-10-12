@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7310364_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 35-year-old male with chronic alcohol and cocaine abuse presenting with extensive destructive ulcerations of the nasal septum, palate, and larynx alongside a genital lesion. Cocaine-induced midline destructive lesions (CIMDL) strongly mimic endemic mucocutaneous infections (paracoccidioidomycosis, tuberculosis) and autoimmune vasculitis (granulomatosis with polyangiitis).\n2. Admission Breakpoint: The admission breakpoint is reached upon hospital admission and videolaryngoscopy revealing extensive granulomatous lesions of the upper airway, prior to mucosal histopathology, mycological/bacterial stains, and specific serological/molecular testing.\n3. Differential Distinctions: Paracoccidioidomycosis vs. Granulomatosis with Polyangiitis (GPA) / Cocaine-induced midline destructive lesion vs. Tuberculosis vs. Mucocutaneous Leishmaniasis. Multiple serologic tests, negative mycobacterial evaluation (BAAR), and detection of cytoplasmic amastigotes separated infectious leishmaniasis from mimics.",
+  "case_prompt": "A 35-year-old male residing in Rio de Janeiro, Brazil, with a history of alcohol and cocaine abuse presents with progressive ulcerated lesions of the upper respiratory tract and genitalia. The condition began one year prior as erythematous, painful papules that progressively enlarged. Over recent months, he developed persistent headache, nasal obstruction, asthenia, and unintended weight loss. Physical examination demonstrates ulcerated, destructive lesions involving the nasal septum, nasal cavity, hard and soft palate, and the balanopreputial sulcus. Videolaryngoscopy reveals extensive granulomatous and infiltrative mucosal lesions involving the hypopharynx, larynx, epiglottis, pyriform sinuses, and false vocal folds, along with diffuse hyperemia and vocal fold edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Paracoccidioidomycosis",
+      "rule_out_reason": "Endemic dimorphic fungal infection is a leading cause of chronic destructive mucosal granulomas in South America, but fungal serological panels, direct mycological examination, and histopathology were negative for fungal yeast forms.",
+      "quote": "The initial differential diagnoses included MCL, paracoccidioidomycosis, neoplasia, granulomatosis with polyangiitis, and tuberculosis."
+    },
+    {
+      "candidate": "Granulomatosis with Polyangiitis or Neoplasia",
+      "rule_out_reason": "Severe necrotizing palatal and septal destruction, especially in a cocaine user, closely mimics vasculitic necrosis or neoplastic infiltration; however, systemic autoimmune and malignant workup was negative, and chest tomography was normal.",
+      "quote": "Results of viral and fungal serological tests, direct mycological examination, borehole azimuthal acoustic reflection imaging (BAAR), chest tomography, and respiratory function tests were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of laryngeal and nasal mucosa demonstrated a chronic inflammatory infiltrate with macrophages containing cytoplasmic amastigote-like forms, accompanied by positive specific serology and confirmatory PCR.",
+      "quote": "The histopathologic analysis of the larynx showed extensive ulceration and inflammatory infiltrates, and a single macrophage with amastigote-like form in the cytoplasm."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission presentation. Ulcerated mucosal/genital lesions and laryngoscopy. Histopathology, serology, PCR, and treatment excluded from prompt."
+}

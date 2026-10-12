@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8548179_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 13-year-old girl in rural Cameroon presents with a 1-month illness culminating in septic shock, marked right pleuritic chest pain, respiratory distress, and right pleural effusion, accompanied by massive tender hepatomegaly and extreme leukocytosis (25,000/\u03bcL). The clinical features can easily be misattributed to complicated community-acquired pneumonia with parapneumonic empyema, pyogenic bacterial hepatic abscess, or a ruptured hydatid cyst.\n2. Admission Breakpoint: Evaluation ends after emergency resuscitation, physical examination, initial triage labs (hemoglobin 8 g/dL, WBC 25,000/\u03bcL, negative HIV/malaria tests), chest radiography demonstrating a right pleural effusion, and bedside ultrasound showing a 141-mm heterogeneous hepatic mass, strictly prior to stool parasitology identifying protozoan cysts.\n3. Differential Distinctions: Lower lobe bacterial pneumonia and empyema were ruled out as primary causes because the pulmonary signs stemmed from sympathetic transdiaphragmatic irritation above a giant hepatic lesion; echinococcal hydatid disease was less likely given acute high fever, thick irregular walls, and internal gas; stool microscopy revealing characteristic protozoan cysts along with typical ultrasound findings established an amebic liver abscess.",
+  "case_prompt": "A 13-year-old female school student living in a rural community in Cameroon presented to a local clinic with insidious-onset right hypochondriac abdominal pain and intermittent fevers progressing over one month. The pain began as a dull, constant ache in the right upper quadrant radiating to the right scapula. Over the week prior to presentation, she developed high spikes of fever, dry cough, severe right-sided pleuritic chest pain, mild dyspnea, anorexia, weight loss, generalized weakness, recurrent vomiting, and frequent nonbloody mucoid stools. Her community lacked piped water and relied on local stream water with poor sanitation. She had undergone traditional skin scarification and herbal treatments for three weeks with clinical worsening.\n\nOn physical examination, she appeared pale, acutely ill, dehydrated, and in mild respiratory distress. Blood pressure was 90/60 mmHg, heart rate was 120 beats per minute (weak and thready), respiratory rate was 32 breaths per minute, temperature was 39.0 \u00b0C, and capillary refill time was greater than 2 seconds. Sclerae were anicteric. Pulmonary examination revealed decreased chest expansion at the right lower posterior lung base with stony dull percussion, diminished breath sounds, decreased vocal fremitus, and fine inspiratory crackles. Abdominal examination showed distension with diffuse upper abdominal tenderness, massive tender firm hepatomegaly measuring 12 \u00d7 10 cm, and mild splenomegaly.\n\nInitial triage laboratories demonstrated a hemoglobin of 8.0 g/dL, a white blood cell count of 25,000/\u03bcL, a negative rapid febrile protozoan test, and a negative HIV screening test. Chest radiography demonstrated a right lower pleural effusion. Point-of-care abdominal ultrasound revealed a large heterogeneous thick-walled cavitary lesion within the right hepatic lobe measuring 141 mm with internal echogenic microbubbles.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Complicated community-acquired pneumonia / Parapneumonic empyema",
+      "rule_out_reason": "Considered because of fever, tachypnea, right basilar stony dullness, crackles, and chest radiograph revealing pleural effusion, but these pulmonary signs reflected reactive transdiaphragmatic inflammation secondary to underlying subdiaphragmatic hepatic pathology.",
+      "quote": "In addition to abdominal ultrasound examination, the chest X-ray reveals pleural effusion on the right lower left lung."
+    },
+    {
+      "candidate": "Hydatid cyst (Echinococcosis) or Hepatic adenoma",
+      "rule_out_reason": "Considered given the large cystic liver mass in an endemic rural region, but the acute septic toxicity, high-grade fevers, extreme leukocytosis, thick irregular walls, and internal gas bubbles indicated an invasive infectious abscess.",
+      "quote": "The results of the abdominal ultrasound revealed a huge heterogenous mass within the right lobe of the liver with thick walls, air bubbles, and a dimension of 141 mm suggestive of amoebic liver abscess (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Giant amoebic liver abscess)",
+      "rule_out_reason": "Direct parasitological stool microscopy identifying characteristic cysts along with Charcot-Leyden crystals confirmed invasive intestinal protozoan infection explaining the giant hepatic abscess.",
+      "quote": "Stool exam reveals the presence of Charcot Leydig crystals and E. histolytica cyst."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set prior to stool parasitology results. Zero pathogen spoilers in case prompt. Quotes verified."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12358145_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 51-year-old traveler returning from Africa presented in septic shock, coma, and seizures with profound thrombocytopenia (27 × 10⁹/L), brisk intravascular hemolysis (elevated LDH and free hemoglobin >400 mg/L), markedly elevated D-dimer, and massively increased von Willebrand factor. The combination of fever, thrombocytopenia, hemolytic anemia, and neurological collapse yielded a PLASMIC score of 7, strongly mimicking thrombotic thrombocytopenic purpura (TTP) as well as endemic tick-borne bunyavirus infection (SFTS).\n2. Admission Breakpoint: The breakpoint occurs immediately prior to viral RNA testing, ADAMTS13 enzymatic assay, and peripheral blood smear parasitic examination ('Initially, the clinician suspected severe fever with thrombocytopenia syndrome (SFTS)...').\n3. Differential Distinctions: Thrombotic thrombocytopenic purpura / TTP (ruled out by preserved ADAMTS13 activity of 95.8%), severe fever with thrombocytopenia syndrome / SFTS (ruled out by negative Dabie-Banda viral RNA), and primary bacterial septic shock with disseminated intravascular coagulation (ruled out by direct observation of intraerythrocytic protozoal parasites).",
+  "case_prompt": "A 51-year-old male of Chinese descent presented to the emergency department in critical condition with high fever, acute encephalopathy, and generalized seizures. He had returned to Hubei Province, China, from Africa five days prior before traveling onward to Guangzhou, where he developed abrupt high fevers up to 39.9°C accompanied by intense fatigue and nausea, without cough, chest tightness, or dyspnea. An initial evaluation at an outside clinic demonstrated leukocytosis and marked thrombocytopenia. During nocturnal transfer to a tertiary hospital, he suffered sudden loss of consciousness, unresponsiveness to verbal commands, recurrent generalized convulsions, and urinary incontinence.\n\nOn physical examination in the emergency intensive care unit, the patient was comatose, unresponsive, and intermittently convulsing. Blood pressure was 80/60 mmHg, heart rate was 110 beats per minute, respiratory rate was 26 breaths per minute, and oxygen saturation was 92% on ambient air. Neurological exam showed profound encephalopathy without focal lateralizing motor deficits.\n\nInitial emergency laboratory evaluation revealed leukocytosis with a white blood cell count of 11.71 × 10⁹/L, severe thrombocytopenia with a platelet count of 27 × 10⁹/L, a borderline hemoglobin level of 129 g/L, markedly elevated lactate dehydrogenase (LDH) at 453 U/L, profoundly elevated plasma D-dimer (>21 µg/mL; reference <0.5 µg/mL), increased free plasma hemoglobin exceeding 400 mg/L (reference <40 mg/L), and markedly elevated von Willebrand factor antigen (vWF:Ag) at 623.3% and activity at 462.9%. The calculated PLASMIC score was 7, indicating a high clinical probability of microangiopathic hemolytic disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Thrombotic Thrombocytopenic Purpura (TTP)",
+      "rule_out_reason": "Considered highly probable based on the classic pentad of high fever, profound thrombocytopenia, microangiopathic intravascular hemolysis with high LDH and free hemoglobin, altered mental status with convulsions, and a PLASMIC score of 7; however, ADAMTS13 activity was completely preserved at 95.8%, definitively excluding primary TTP.",
+      "quote": "The patient was determined to be free of TTP based on the results of the ADAMTS13 activity assay, which indicated a level of 95.8% (reference range: 65.0-135.0%)."
+    },
+    {
+      "candidate": "Severe Fever with Thrombocytopenia Syndrome (SFTS)",
+      "rule_out_reason": "Suspected due to acute severe febrile illness with profound thrombocytopenia following recent residence in Hubei Province during peak transmission season, but excluded by negative molecular viral testing.",
+      "quote": "However, SFTS was ruled out due to negative Dabie-Banda RNA test results."
+    },
+    {
+      "candidate": "Primary Bacterial Sepsis with Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "Severe hypotension, marked D-dimer elevation (>21 µg/mL), multiorgan dysfunction, and consumptive thrombocytopenia suggested overwhelming septic shock with DIC, but diagnostic blood examination identified an intraerythrocytic protozoan rather than a primary bacteremic etiology.",
+      "quote": "Concurrently, a significant presence of Plasmodium falciparum was detected in erythrocytes via microscopy (Figure 1), correlating with the observed thrombocytopenia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct peripheral blood smear microscopy revealed intraerythrocytic Plasmodium falciparum ring forms at a high parasitemia rate of 9.0%, confirming severe falciparum malaria with cerebral malaria and pseudo-TTP microvascular endothelial activation, followed by dramatic clearance down to 0.03% within 24 hours of intravenous artesunate.",
+      "quote": "Consequently, the patient was diagnosed with Plasmodium falciparum infection and severe cerebral malaria."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of severe imported Plasmodium falciparum malaria presenting as cerebral malaria with shock and pseudo-TTP microangiopathy. Clean admission breakpoint with zero mention of Plasmodium, blood smear results, or artesunate."
+}

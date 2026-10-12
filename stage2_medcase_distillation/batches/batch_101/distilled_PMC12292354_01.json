@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12292354_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 40-year-old male recently diagnosed with HIV presents with upper lip numbness, dizziness, headache, low-grade fevers, weight loss, and fatigue. Brain MRI reveals multiple patchy, target-like ring-enhancing lesions in the cerebrum, cerebellum, and brainstem with reduced diffusion, along with spinal intramedullary T2-hyperintensities, pulmonary nodules, and retroperitoneal adenopathy. The principal tension is distinguishing central nervous system and disseminated talaromycosis from cerebral toxoplasmosis, cryptococcal meningitis, or primary CNS lymphoma.\n2. Admission Breakpoint: Admission triage terminates following complete systemic imaging (brain and spine MRI, chest/abdomen/pelvic CT) and initial routine CSF analysis (elevated protein 1.8 g/L, lymphocytic pleocytosis 32 cells/uL) and CBC, immediately prior to send-out metagenomic sequencing.\n3. Differential Distinctions: Cerebral toxoplasmosis typically produces ring-enhancing lesions in the basal ganglia but does not typically present with concurrent spinal cord intramedullary hyperintensities, retroperitoneal lymphadenopathy, and pulmonary nodules. Metagenomic sequencing was required to confirm the dimorphic fungal pathogen.",
+  "case_prompt": "A 40-year-old male diagnosed with HIV two months prior presented with numbness of the upper lip, dizziness, and headache. Over the preceding weeks, he had also experienced intermittent low-grade fevers, generalized fatigue, significant unintentional weight loss, and mild abdominal discomfort.\n\nPhysical examination revealed localized hypoesthesia involving the upper lip without other focal cranial nerve deficits. Motor strength was intact throughout, and no peripheral lymphadenopathy or cutaneous eruptions were identified.\n\nPeripheral blood tests demonstrated a white blood cell count of 12.5 x 10^9/L with neutropenia (absolute neutrophil count 1.1 x 10^9/L). Lumbar puncture yielded cerebrospinal fluid (CSF) with an elevated protein level of 1.8 g/L and a lymphocytic pleocytosis of 32 cells/muL.\n\nMagnetic resonance imaging (MRI) of the brain revealed multiple patchy, nodular, and clustered lesions throughout the bilateral cerebral hemispheres, cerebellar hemispheres, and brainstem. On T1-weighted imaging, the lesions were mildly hypointense; on T2-weighted imaging, they were hyperintense with significant surrounding perilesional edema. Post-contrast imaging demonstrated target-like nodular and annular ring enhancement. Diffusion-weighted imaging (DWI) demonstrated ring-like and punctate hyperintensity with corresponding reduced apparent diffusion coefficient (ADC) values. Spinal MRI revealed central canal dilation accompanied by patchy intramedullary hyperintensities on T2-weighted sequences. Computed tomography (CT) scans of the chest, abdomen, and pelvis revealed new subcentimeter pulmonary nodules and enlarged retroperitoneal lymph nodes measuring greater than 1.5 cm in short-axis diameter compared with baseline imaging.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral Toxoplasmosis",
+      "rule_out_reason": "Toxoplasma gondii encephalitis is the most frequent cause of intracranial ring-enhancing target lesions in advanced HIV; however, the presence of long-segment intramedullary spinal cord hyperintensities and widespread retroperitoneal lymphadenopathy prompted broad consideration of disseminated opportunistic fungal or mycobacterial disease.",
+      "quote": "Multiple patchy, nodular, and clustered lesions were observed in the bilateral cerebral hemispheres, cerebellar hemispheres, and brainstem."
+    },
+    {
+      "candidate": "Cryptococcal Meningoencephalitis / Cryptococcoma",
+      "rule_out_reason": "Cryptococcus neoformans commonly causes subacute meningitis and intracranial mass lesions in HIV patients, but classical target-like ring-enhancing brainstem lesions with restricted diffusion and diffuse retroperitoneal lymphadenopathy are atypical.",
+      "quote": "Target-like morphology (Figure 1A and B) with nodular/annular enhancement was noted post-contrast (Figure 1C and D)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when metagenomic next-generation sequencing of the cerebrospinal fluid identified Talaromyces marneffei, confirming multisystem central nervous system talaromycosis with subsequent full clinical resolution on intravenous amphotericin B followed by oral itraconazole.",
+      "quote": "CSF metagenomic sequencing confirmed Talaromyces marneffei infection (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to CSF metagenomic next-generation sequencing. All pathogen names excluded from case prompt."
+}

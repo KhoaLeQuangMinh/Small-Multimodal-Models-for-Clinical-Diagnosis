@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2642856_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: Evaluating an acute febrile syndrome presenting with exudative pharyngitis, gastrointestinal symptoms, spontaneous mucosal hemorrhage, and sudden bilateral hearing impairment in an endemic region, where non-specific initial features mimic common severe tropical infections such as malaria or pyogenic pharyngeal sepsis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the physical examination, triage hematology (PCV, ESR, WBC count and differential), urinalysis, and peripheral blood smear examination, prior to confirmatory viral serology (IgM) and reverse transcriptase polymerase chain reaction (RT-PCR).\n3. Differential Distinctions: Severe malaria can present with high fever, vomiting, abdominal pain, diarrhea, and hematologic abnormalities, but peripheral blood smear was negative for intraerythrocytic parasites; Streptococcal pharyngitis or bacterial sepsis was considered given the exudative pharyngitis and dysphagia, but throat swab yielded only alpha-hemolytic streptococci (normal commensal flora) and bacterial infection would not account for leukopenia, multi-site bleeding, and bilateral sensorineural hearing loss.",
+  "case_prompt": "A 19-year-old female undergraduate student presents with a 9-day history of high-grade fever. She reports associated vomiting and abdominal pain of 5 days' duration, headache of 4 days' duration, and watery, non-mucous, non-bloody diarrhea accompanied by a sore throat with difficulty in swallowing for 2 days.\n\nOn physical examination, she appears acutely ill, though conscious and alert. Her body temperature is 39.4 °C, radial pulse is 110 beats per minute with regular rhythm and normal volume, supine blood pressure is 100/60 mmHg, and respiratory rate is 22 breaths per minute. Oropharyngeal examination reveals exudative pharyngitis. Petechial hemorrhages, prolonged bleeding from venipuncture sites and nostrils (epistaxis), and bilateral hearing impairment are observed. Abdominal examination demonstrates mild epigastric tenderness. Examination of the chest, abdomen, and central nervous system is otherwise unremarkable.\n\nInitial laboratory investigations reveal a packed cell volume (PCV) of 33%, an erythrocyte sedimentation rate (ESR) of 40 mm/hr, and a total white blood cell count of 2,400/mm³ with a differential of 30% neutrophils and 70% lymphocytes. Urinalysis demonstrates 2+ proteinuria. A peripheral blood smear examination is negative for intraerythrocytic parasites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Malaria",
+      "rule_out_reason": "Severe malaria frequently presents in endemic regions with acute fever, headache, gastrointestinal symptoms, and potential bleeding diathesis, but was excluded by the absence of hemoparasites on peripheral blood smear.",
+      "quote": "no malaria parasites were seen on a blood-smear examination."
+    },
+    {
+      "candidate": "Streptococcal Pharyngitis / Acute Bacterial Sepsis",
+      "rule_out_reason": "Exudative pharyngitis and dysphagia suggested acute streptococcal or bacterial pharyngitis, but throat culture isolated only commensal alpha-hemolytic streptococci, and isolated bacterial pharyngitis cannot account for marked leukopenia, petechiae, systemic bleeding, and acute bilateral sensorineural hearing impairment.",
+      "quote": "a throat-swab culture grew alpha haemolytic streptococci"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Viral Hemorrhagic Fever (Lassa Fever with Sensorineural Hearing Loss)",
+      "rule_out_reason": "The diagnostic pivot occurred with the combination of acute high fever, exudative pharyngitis, hemorrhagic manifestations (petechiae, venipuncture oozing, epistaxis), leukopenia, and sudden-onset sensorineural hearing impairment in an endemic region, confirmed by positive Lassa virus-specific IgM and RT-PCR.",
+      "quote": "The results were positive for both Lassa virus-specific IgM and Lassa virus-specific reverse transcriptase polymerase chain reaction (RT-PCR), confirming the clinical diagnosis."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Lassa fever is an acute arenavirus hemorrhagic fever endemic to West Africa. Sensorineural hearing loss occurs in up to 29% of cases, commonly developing in the convalescent or subacute phase as an immune-mediated eighth cranial nerve or cochlear insult rather than purely direct viral cytopathology. Prompt identification and early ribavirin administration remain crucial for reducing mortality."
+}

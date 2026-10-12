@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8605226_02",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: An adolescent female presents with severe cachexia, prolonged fever for one month, and acute hemoptysis, in the setting of negative household contacts. The diagnostic tension involves identifying non-familial community transmission of a drug-resistant pathogen and distinguishing it from other causes of cavitary pulmonary disease and adolescent wasting.\n2. Admission Breakpoint: The breakpoint occurs following initial presentation, vitals, physical examination, baseline electrocardiogram (normal baseline QT), routine laboratory evaluation, HIV screening, and plain chest radiography, but strictly prior to sputum GeneXpert MTB/RIF and culture/line-probe susceptibility testing.\n3. Differential Distinctions: Retroviral wasting syndrome with opportunistic mycobacterial or fungal disease is excluded by non-reactive HIV screening; intra-familial transmission is ruled out by negative parental screening (tracing transmission instead to an infected neighbor); drug-susceptible disease is ruled out by rapid molecular and phenotypic demonstration of resistance to both first-line and second-line injectable regimens.\n</think>",
+  "case_prompt": "A 14-year-old girl presented to the pediatric clinic with profound weight loss, fever for one month, and hemoptysis for two days. Family contacts, including both parents, underwent initial screening for chronic respiratory infections and were negative. However, epidemiological inquiry revealed that an immediate neighbor had recently been diagnosed with a severe, drug-resistant chronic pulmonary infection and was receiving treatment at the local referral hospital.\n\nOn physical examination, she appeared severely malnourished and chronically ill. Baseline screening for human immunodeficiency virus (HIV) was negative. A 12-lead electrocardiogram (ECG) demonstrated normal sinus rhythm with a normal baseline QT interval. Initial baseline blood counts and routine metabolic panels were within normal limits.\n\nPlain chest radiography demonstrated active pulmonary pathology with marked opacity at the right hilum, a lobulated infiltrate in the left pulmonary apex, nodular opacity at the left hilum, and bilateral perihilar lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Human Immunodeficiency Virus (HIV) Infection with Opportunistic Pulmonary Cavitary Disease",
+      "rule_out_reason": "Considered due to the adolescent presentation with severe wasting/malnutrition, prolonged fever, and apical pulmonary infiltrates with hemoptysis, but excluded by negative HIV screening.",
+      "quote": "HIV screening was negative."
+    },
+    {
+      "candidate": "Intra-Familial Primary Transmission of Infection",
+      "rule_out_reason": "Considered given household risk dynamics, but excluded by comprehensive negative screening of both parents, pinpointing casual/community contact with an infected neighbor.",
+      "quote": "Her parents showed negative for TB screening. History of tuberculosis contact is her neighbour identified MDR-TB and received treatment in our hospital."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pre-Extensively Drug-Resistant Tuberculosis (pre-XDR-TB)",
+      "rule_out_reason": "Confirmed by GeneXpert MTB/RIF showing rifampicin-resistant Mycobacterium tuberculosis, followed by positive mycobacterial culture and line-probe assays demonstrating resistance to isoniazid, rifampicin, and second-line injectables, with preserved susceptibility to fluoroquinolones. Subsequent treatment required substituting bedaquiline with linezolid after marked QTc prolongation developed.",
+      "quote": "Her X-pert MTB/RIF revealed positive Mycobacterium tuberculosis with Rifampicin resistant. Culture M. tuberculosis was positive, confirming M. tuberculosis resistant to isoniazid and rifampicin on line-probe assay as well as resistant to second-line injectable agents with second-line LPA, but susceptible to the fluoroquinolones. The chest x-ray showed active tuberculosis with opacity at the right hilar, lobulated infiltrate in the left apex, nodular at left hilar, and enlarged bilateral peri-hilar lymph nodes"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. Sputum GeneXpert, culture, and resistance testing preserved for diagnostic reasoning."
+}

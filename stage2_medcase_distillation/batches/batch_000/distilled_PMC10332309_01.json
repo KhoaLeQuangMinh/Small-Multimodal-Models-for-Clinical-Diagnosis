@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10332309_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 17-month-old infant with B-cell acute lymphoblastic leukemia in complete remission presents during consolidation chemotherapy with prolonged fever, coagulopathy, pancytopenia, and progressive hepatosplenomegaly. The presentation mimics routine chemotherapy-induced neutropenic fever, opportunistic bacterial/fungal sepsis, or leukemic relapse, obscuring an underlying vector-borne protozoan infection acquired in an endemic rural region.\n2. Admission Breakpoint: Admission triage ends following presentation with persistent fevers, ultrasound confirmation of hepatosplenomegaly, marked inflammatory markers (CRP 125.5 mg/L, PCT 3.99 mg/L), and sterile routine blood cultures, immediately prior to peripheral blood mNGS and repeat bone marrow aspirate.\n3. Differential Distinctions: Uncomplicated neutropenic bacterial/fungal sepsis is ruled out by persistent unremitting fevers despite empiric vancomycin, imipenem, and voriconazole alongside negative blood cultures; leukemic relapse is excluded by bone marrow morphology demonstrating intracellular protozoan amastigotes within histiocytes and rK39 immunochromatographic positivity.",
+  "case_prompt": "A 17-month-old boy who had been diagnosed with B-cell acute lymphoblastic leukemia seven months earlier, achieving complete remission after induction, was hospitalized during consolidation chemotherapy due to persistent high-grade fevers of 13 days' duration accompanied by coagulopathy. The infant had resided since birth in Jiuzhaigou County, Sichuan Province.\n\nOn physical examination, the child was febrile with body temperatures fluctuating between 38.4°C and 39.4°C. Palpation and abdominal color Doppler ultrasonography revealed marked hepatosplenomegaly with an enlarged liver and spleen. Skin examination demonstrated ecchymoses and pallor without focal cutaneo-mucosal lesions.\n\nBaseline admission laboratory evaluation revealed severe pancytopenia with marked bone marrow suppression, accompanied by pronounced coagulopathy. Serum inflammatory markers were markedly elevated, with a C-reactive protein of 125.5 mg/L and procalcitonin of 3.99 mg/L. Standard automated blood cultures demonstrated no microbial growth.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory Bacterial or Fungal Neutropenic Sepsis",
+      "rule_out_reason": "Initially suspected as the leading complication of intensive consolidation chemotherapy; however, persistent daily fevers failed to respond to broad-spectrum coverage with vancomycin, imipenem, and voriconazole, and repeated standard blood cultures remained sterile.",
+      "quote": "Vancomycin, imipenem, and voriconazole were used for empirical antibiotic therapy."
+    },
+    {
+      "candidate": "Acute Lymphoblastic Leukemia Relapse",
+      "rule_out_reason": "Considered given the recurrence of pancytopenia, coagulopathy, fever, and progressive hepatosplenomegaly in an oncology patient; however, review of the repeat bone marrow aspirate revealed hemophagocytosis and parasitic amastigotes rather than lymphoblast proliferation.",
+      "quote": "All bone marrow smears from confirmed leukemia were reviewed, revealing no Leishmania spp amastigote in microscopy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing of peripheral blood demonstrated abundant reads of Leishmania donovani, and confirmatory bone marrow microscopy revealed numerous intracellular amastigotes inside histiocytes with positive rK39 immunochromatographic testing.",
+      "quote": "Subsequently, microscopy of the bone marrow showed a larger number of Leishmania spp amastigotes, while phagocytic phenomena of histiocytes were found in all smears (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning framework. Zero pathogen names or confirmatory test results appear in case_prompt. Direct verbatim quotes ground all differential entries."
+}

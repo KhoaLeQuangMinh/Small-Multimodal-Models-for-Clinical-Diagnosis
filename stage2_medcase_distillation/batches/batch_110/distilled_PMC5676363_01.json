@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5676363_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 50-year-old sushi chef with no foreign travel history presents with acute febrile myalgia rapidly deteriorating into severe acute respiratory distress syndrome, shock, jaundice, and acute renal failure. The tension lies in distinguishing severe community-acquired or atypical pneumonia with multiorgan failure from icterohemorrhagic leptospirosis complicated by severe pulmonary hemorrhagic syndrome (SPHS), especially in a non-tropical developed country without overt freshwater immersion history.\n2. Admission Breakpoint: The breakpoint occurs after initial presentation and emergency stabilization on hospital day 2 when bilateral alveolar infiltrates and severe hypoxemic respiratory failure require endotracheal intubation, but before the initiation of ECMO, bronchoscopic documentation of endobronchial bleeding, or send-out urinary PCR testing.\n3. Differential Distinctions: Bacterial or atypical pneumonia (e.g., Legionella, Mycoplasma, Chlamydia) and miliary tuberculosis produce diffuse pulmonary infiltrates and septic shock, but rarely cause rapid, concurrent non-oliguric to oliguric renal failure with severe hyperbilirubinemia and profound thrombocytopenia in the absence of leukocytosis. The classic triad of jaundice, acute renal failure, and thrombocytopenia (Weil's syndrome) with diffuse alveolar hemorrhage strongly points to leptospirosis.",
+  "case_prompt": "A 50-year-old male sushi chef who had never traveled outside Japan presented to the hospital with a 2-day history of high fever and severe muscle pain. Initial triage laboratory testing revealed a white blood cell count of 7,780/\u00b5L, platelet count of 89,000/\u00b5L, C-reactive protein of 36.4 mg/dL, blood urea nitrogen of 47 mg/dL, serum creatinine of 2.41 mg/dL, and total bilirubin of 2.0 mg/dL. Within 24 hours of hospital admission, his clinical condition deteriorated markedly, with repeat laboratory data showing a white blood cell count of 6,700/\u00b5L, platelet count dropping to 50,000/\u00b5L, C-reactive protein of 32.49 mg/dL, blood urea nitrogen rising to 66 mg/dL, serum creatinine increasing to 2.81 mg/dL, and total bilirubin worsening to 5.6 mg/dL. Over the next three days, his systolic blood pressure fell to 70 mmHg refractory to fluid resuscitation, and his respiratory status deteriorated precipitously, requiring emergency endotracheal intubation. A plain chest radiograph demonstrated diffuse bilateral alveolar infiltrates. Arterial blood gas analysis on mechanical ventilation with a fraction of inspired oxygen (FiO2) of 1.0 and positive end-expiratory pressure (PEEP) of 10 cm H2O revealed a pH of 7.390, PaCO2 of 28.3 mmHg, PaO2 of 70.4 mmHg, and HCO3- of 16.8 mmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial pneumonia and atypical pneumonia (Legionella, Mycoplasma, Chlamydophila)",
+      "rule_out_reason": "Considered due to acute respiratory failure, high-grade fever, markedly elevated inflammatory markers, and diffuse bilateral alveolar infiltrates, but the patient failed broad-spectrum antimicrobial coverage and specific non-invasive pathogen testing was negative.",
+      "quote": "The tests for tuberculosis, Legionella urinary antigen, pneumococcal antigen, serum Mycoplasma antibody, and Chlamydia pneumoniae antibody all yielded negative results."
+    },
+    {
+      "candidate": "Miliary tuberculosis",
+      "rule_out_reason": "Considered due to diffuse bilateral pulmonary infiltrates accompanied by multi-organ failure and septic shock, but screening tests were negative and empiric antitubercular therapy produced no response.",
+      "quote": "even though the results of a tuberculosis screening test were negative"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was the recognition of severe pulmonary hemorrhagic syndrome (SPHS) alongside the classic icteric triad of jaundice, acute renal failure, and severe thrombocytopenia in an individual with occupational wet-work/rodent contact exposure as a sushi chef, definitively established by the detection of pathogen DNA in urine via PCR and confirmed by a fourfold rise in paired convalescent microagglutination titers.",
+      "quote": "On day 6 of ECMO therapy, polymerase chain reaction analysis of urine samples collected at the previous hospital confirmed the presence of leptospiral DNA."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation following NEJM CPC format. Strict admission breakpoint maintained at the point of mechanical ventilation for respiratory failure and shock, prior to ECMO cannulation, bronchoscopy, or confirmatory testing. Zero pathogen leakage. All quotes verified verbatim from source text."
+}

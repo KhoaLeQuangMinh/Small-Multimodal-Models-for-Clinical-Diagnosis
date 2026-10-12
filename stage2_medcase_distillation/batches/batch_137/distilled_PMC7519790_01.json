@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7519790_01",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: A 25-year-old previously healthy patient presents with a rapidly growing destructive nasopharyngeal mass, bilateral hearing loss, dysphagia, cervical adenopathy, and profound B-symptoms (fever, night sweats, 8 kg weight loss). The presentation strongly mimics advanced nasopharyngeal carcinoma (cavum tumor) or malignant lymphoma, masking an underlying granulomatous mycobacterial infection presenting as acute miliary pharyngitis (Isambert disease).\n2. Admission Breakpoint: The admission breakpoint is placed after physical examination (vitals: BP 90/60 mmHg, HR 110/min, T 39.0\u00b0C; cervical adenopathy; pharyngeal granulations and endoscopic purulent cavum lesion) and triage laboratory tests (WBC 15,700/mm3, neutrophils 11,800/mm3, CRP 190 mg/L), immediately before biopsy histopathology, thoracic CT cavitary imaging, and sputum Koch bacillus detection.\n3. Differential Distinctions: Nasopharyngeal carcinoma and lymphoma present identically with cavum mass, serous otitis/hearing loss, cervical lymphadenopathy, and B-symptoms, but biopsy reveals non-neoplastic epithelioid granulomatosis. HIV-associated opportunistic infections are excluded by negative HIV serology. Positive sputum Koch bacillus and cavitary lung lesions establish multifocal tuberculosis.\n</think>",
+  "case_prompt": "<case_prompt>\nA 25-year-old patient with no significant prior medical history presents with a two-month history of rapidly progressive dysphagia and bilateral hearing loss, accompanied by persistent fever, drenching night sweats, profound asthenia, and an unintentional 8 kg weight loss. On examination, the patient is asthenic and febrile. Blood pressure is 90/60 mmHg, heart rate is 110 beats per minute, and body temperature is 39.0\u00b0C. Examination of the neck reveals bilateral, firm, tender, and mobile cervical lymphadenopathies. Oropharyngeal examination shows multiple, diffuse, non-confluent granulations along the posterior wall of the pharynx and soft palate, with associated purulent secretions. Endoscopic pharyngolaryngeal examination demonstrates diffuse congestion of the nasal cavity mucosa with a purulent tissue process completely filling the nasopharyngeal cavum. Initial laboratory evaluation reveals a marked inflammatory syndrome with a leukocytosis of 15,700/mm^3, absolute neutrophils of 11,800/mm^3, and a C-reactive protein of 190 mg/L.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Nasopharyngeal Carcinoma (Cavum Malignancy)",
+      "rule_out_reason": "Rapidly progressive bilateral hearing loss, cavum tissue mass, cervical lymphadenopathy, and marked constitutional weight loss initially raised strong suspicion for cavum malignancy; ruled out by biopsy revealing non-neoplastic epithelioid granulomatosis.",
+      "quote": "Biopsies were performed in the cavum and oropharyngeal granulations finding an epithelioid granulomatosis suggestive of tuberculosis."
+    },
+    {
+      "candidate": "HIV Infection with Opportunistic Pharyngitis / Malignant Lymphoma",
+      "rule_out_reason": "Profound constitutional decline, severe weight loss, and diffuse purulent pharyngeal lesions suggested advanced retroviral immunosuppression or lymphoproliferative disease; ruled out by negative HIV serology and normal overall immunological assessment.",
+      "quote": "The HIV serology was negative. Biology showed an inflammatory syndrome with 15700/mm3 white blood cells, 11800/mm3 neutrophils and a 190mg/l C-reactive protein (CRP). The rest of biological assessment was normal and showed no obvious immunosuppression."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological demonstration of epithelioid granulomatosis on cavum and pharyngeal biopsies, cervico-thoracic CT showing cavitary lung lesions, and positive sputum smear for Koch bacillus, confirming multifocal acute miliary tuberculous pharyngitis (Isambert disease) and pulmonary tuberculosis.",
+      "quote": "Biopsies were performed in the cavum and oropharyngeal granulations finding an epithelioid granulomatosis suggestive of tuberculosis. The cervico-thoracic CT confirmed the cavum tissue lesion and showed excavated lesions of the two pulmonary fields (Figure 2). Search for Koch bacillus in sputum proved to be positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint enforced. No mentions of tuberculosis, Koch bacillus, biopsy findings, or chest CT cavitations in case_prompt. Verbatim quotes from source text in diagnostic_reasoning. Audit flags NONE."
+}

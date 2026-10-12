@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6243305_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 73-year-old female presents with lower urinary tract symptoms, palpable abdominal masses, and a bizarre history of intermittent passage of white balloon-like grape-sized structures in her urine (hydatiduria). In an elderly patient with multiple intra-abdominal multicystic masses, distinguishing disseminated cystic malignancy (e.g., ovarian cystadenocarcinoma or pseudomyxoma peritonei) or complicated urinary fistulae from disseminated zoonotic hydatid disease with a cystovesical fistula is challenging, particularly when standard serology is negative.\n2. Admission Breakpoint: Admission triage terminates after cross-sectional abdominal ultrasound and MRI characterize the multicystic intraperitoneal and retrovesical fistulous lesions, prior to gross and histopathological analysis of the voided cystic membrane.\n3. Differential Distinctions: Ovarian cystadenocarcinoma / Peritoneal carcinomatosis / Pseudomyxoma peritonei present with multiple complex intra-abdominal cystic lesions and ascites, but do not produce free-floating internal daughter cysts or intact laminated membrane expulsion in urine. Primary bladder diverticulum or pelvic abscess can communicate with adjacent viscera, but contains pus and inflammatory debris rather than encapsulated vesicular structures. Hydatid disease features pathognomonic laminated and germinal layers.",
+  "case_prompt": "A 73-year-old female from a rural region of northern India presents with vague abdominal pain, burning micturition, and urge incontinence. She describes a 6-month history of intermittent passage of small, white, balloon-like, grape-sized structures in her urine. Physical examination reveals a visible mass in the right epigastric region and a palpable mass in the left flank. Complete blood count and routine biochemical profiles are normal, and a plain chest radiograph is unremarkable. Abdominal ultrasonography demonstrates two adherent multicystic intraperitoneal lesions in the right hypochondrium and epigastric region, along with additional multicystic masses in the left lumbar region, right adnexa, right iliac fossa, and retrovesical space. Pelvic MRI demonstrates that the large retrovesical cystic lesion contains free-floating internal daughter cysts and forms a direct fistulous communication with the posterior wall of the urinary bladder.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal Carcinomatosis / Ovarian Cystadenocarcinoma / Pseudomyxoma Peritonei",
+      "rule_out_reason": "Multiple disseminated multicystic intraperitoneal masses involving the adnexa, iliac fossa, and retrovesical space in an elderly female strongly suggested metastatic cystic malignancy; however, cross-sectional imaging showed internal daughter cysts and non-invasive fistulization rather than malignant ascites or peritoneal implants.",
+      "quote": "On MRI, these lesions were characterized as multicystic lesions in respective locations and the retrovesical cyst showed fistulous communication with the urinary bladder (Figure 4)."
+    },
+    {
+      "candidate": "Complicated Primary Pelvic Abscess / Bladder Diverticulum",
+      "rule_out_reason": "Urinary frequency, dysuria, and a fistulous tract to the posterior bladder wall raised suspicion of a chronic pelvic abscess or complicated diverticular fistula; furthermore, negative serology could have distracted from an infectious parasitosis, but microscopic analysis of the passed membranes established the etiology.",
+      "quote": "The serology for hydatid disease was not positive in our case."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Gross examination of the voided urine revealed an intact balloon-like membrane, and histopathology demonstrated the pathognomonic outer acellular laminated layer and inner nucleated germinal layer, confirming disseminated hydatid cyst disease complicated by a cystovesical fistula.",
+      "quote": "On gross examination of urine, a single balloon-like membranous cyst was seen and histopathological examination showed an outer laminated layer with an inner germinal layer, which was consistent with a hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly kept prior to urinary histopathology. No pathogen or disease terms in case prompt. All quotes are verbatim from the text."
+}

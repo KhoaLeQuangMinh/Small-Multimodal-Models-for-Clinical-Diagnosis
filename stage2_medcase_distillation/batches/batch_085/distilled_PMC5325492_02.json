@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5325492_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 60-year-old man presents with chronic lower urinary tract symptoms, evening vesper fevers, constitutional wasting, a hard nodular prostate on rectal examination, elevated PSA (8 ng/mL), and a heterogeneous enlarged prostate on ultrasound. This triad classically mimics prostate adenocarcinoma, creating a clinical challenge in recognizing isolated extrapulmonary genitourinary mycobacterial infection in an HIV-negative host with normal chest imaging.\n2. Admission Breakpoint: Admission assessment concludes following digital rectal examination, baseline biological tests (PSA, sterile urine culture, negative HIV serology), chest radiograph, and transrectal ultrasound, strictly prior to transrectal prostate biopsy and intravenous urography.\n3. Differential Distinctions: Prostate adenocarcinoma is the leading presumptive diagnosis due to marked gland induration, nodularity, elevated PSA, and heterogeneous sonographic appearance, but is ruled out by absence of malignant cells on biopsy. Chronic bacterial prostatitis can cause obstructive dysuria and mild PSA elevation, but routine bacterial urine culture is sterile. Primary pulmonary disease is ruled out by normal chest radiography.",
+  "case_prompt": "A 60-year-old man from a lower socioeconomic background presents with a 6-month history of progressive lower urinary tract obstructive symptoms, specifically marked urinary frequency and dysuria. These symptoms have been accompanied by evening low-grade fevers, asthenia, anorexia, and an unintentional weight loss of 5 kg over six months. He was vaccinated with BCG in childhood and has no personal or family history of chronic respiratory illness.\n\nOn physical examination, digital rectal examination reveals an enlarged prostate with a hard consistency and a nodular surface. Laboratory evaluation reveals an elevated serum prostate-specific antigen (PSA) level of 8 ng/mL. Routine urine culture is sterile. HIV serology is negative. Plain chest radiography is normal. Prostate ultrasonography demonstrates an enlarged, heterogeneous prostate with an estimated weight of 35 g.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Prostate cancer (Adenocarcinoma of the prostate)",
+      "rule_out_reason": "Strongly suspected based on the hard, nodular prostate on digital rectal examination, elevated serum PSA of 8 ng/mL, and heterogeneous gland architecture on ultrasound; disproved when histopathologic examination of core biopsies showed no neoplastic tissue.",
+      "quote": "A prostate cancer was suspected, given the characteristics of clinical and ultrasound of the prostate gland and PSA elevation."
+    },
+    {
+      "candidate": "Bacterial prostatitis / Urinary tract infection",
+      "rule_out_reason": "Considered given obstructive urinary symptoms and dysuria, but routine urine microbiological culture was sterile.",
+      "quote": "The urine culture was sterile."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Transrectal needle core biopsy of the prostate disproved malignancy and demonstrated follicles with multinucleated giant cells and caseous necrosis characteristic of prostatic mycobacterial infection.",
+      "quote": "Histology disproved the existence of any neoplasic formation and there were more follicles with giant cells and caseous necrotic characteristic of prostate tuberculosis (Figure 1, Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5325492_02. Demonstrates primary prostatic tuberculosis masquerading as prostatic carcinoma, stopping precisely before transrectal prostate biopsy."
+}

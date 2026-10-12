@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5088483_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 41-year-old previously healthy woman presents with acute febrile illness, headache, hemoconcentration, thrombocytopenia, and sudden unilateral blurred vision. Fundus examination reveals unilateral central retinal vein occlusion (CRVO) with extensive retinal hemorrhages, macular edema, and cotton-wool spots. The clinical tension is recognizing that an acute systemic viral infection known primarily for hemorrhagic diathesis can paradoxically trigger severe microvascular venous thrombosis and vaso-occlusion, rather than attributing CRVO to traditional thromboembolic risk factors or inherited thrombophilia.\n2. Admission Breakpoint: The breakpoint occurs upon triage admission with acute fever, headache, hemoconcentration, thrombocytopenia, and visual blurring, immediately prior to send-out rapid Dengue NS-1 antigen testing and formal dilated ophthalmological evaluation.\n3. Differential Distinctions: Inherited or acquired systemic thrombophilia / antiphospholipid syndrome (primary consideration for pre-senile CRVO in a 41-year-old, but ruled out by normal Protein C/S, antithrombin, cardiolipin antibodies, and lupus anticoagulants); hypertensive / atherosclerotic or diabetic retinal vascular occlusion (major etiologies of CRVO in older adults, ruled out by normal blood glucose, normal lipids, and normal blood pressure); infectious thrombophlebitis / Dengue fever with atypical ophthalmic CRVO (systemic viral infection causing severe hemoconcentration, endothelial swelling, and microvascular thrombosis, confirmed by positive Dengue NS-1 antigen).",
+  "case_prompt": "A 41-year-old woman with no prior medical history is admitted to the medical ward presenting with a 3-day history of high fever, headache, progressively reducing platelet count, and increasing hematocrit. On admission, she also reports sudden, non-progressive blurring of vision in her right eye of 1-day duration. She is not taking oral contraceptive pills or any regular medications. Physical examination reveals an alert, hemodynamically stable patient. Initial complete blood count demonstrates hemoconcentration with rising hematocrit and acute thrombocytopenia. An initial non-dilated bedside fundoscopic screening in the medical ward is reported as unremarkable, and she is admitted for intravenous fluid therapy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary thrombophilia / Antiphospholipid syndrome",
+      "rule_out_reason": "Considered as the primary etiology for central retinal vein occlusion occurring in a young patient under 50 years of age without vascular risk factors. Ruled out by normal coagulopathy and thrombophilia workup, including normal protein C activity, protein S activity, antithrombin activity, anti-cardiolipin antibodies, and anti-beta-2-glycoprotein 1 antibodies.",
+      "quote": "Blood investigations were done namely fasting serum lipid, fasting blood sugar, renal profile, full blood count (post recovery), anti-cardiolipin antibodies (ACA), Anti-Beta-2-Glycoprotein 1 (2GP1), Protein C activity, Protein S activity, Antithrombin activity, Activated Protein C Pathway which were normal. Serum electrophoresis shows no paraprotein band and no immune paresis."
+    },
+    {
+      "candidate": "Atherosclerotic, hypertensive, or diabetic microvascular disease",
+      "rule_out_reason": "Considered as standard conventional risk factors for central retinal vein occlusion. Ruled out by absence of chronic medical illness, normal blood pressure, and completely normal fasting blood sugar and lipid panels.",
+      "quote": "A 41 year old Malay female with no prior medical illness, was admitted to medical ward with the complain of fever, headache and reducing platelet and increasing hematocrit for 3 days duration."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis of acute dengue virus infection was established by a reactive Dengue NS-1 antigen test in the setting of hemoconcentration and thrombocytopenia; subsequent ophthalmologic evaluation confirmed right central retinal vein occlusion with extensive intraretinal hemorrhages and macular edema directly triggered by dengue-associated endothelial inflammation and hemoconcentration.",
+      "quote": "Her Dengue NS-1 antigen was reactive which confirms dengue virus infection. She was diagnosed to have 'dengue fever with warning signs' based on WHO classification of levels of severity."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC5088483_01 following Stanford MedCaseReasoning guidelines. The case prompt presents the simultaneous acute febrile syndrome and visual blur without disclosing the NS-1 antigen or dilated retinal exam findings."
+}

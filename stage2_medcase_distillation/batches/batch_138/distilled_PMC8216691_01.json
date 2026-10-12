@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8216691_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: An 18-year-old pregnant woman in the Brazilian Amazon presents at 33–34 weeks gestation with acute high fevers, myalgias, diarrhea, peripheral edema, lymphopenia, and thrombocytopenia following consumption of unpasteurized palm wine. The clinical picture strongly resembles common tropical viral fevers (dengue, chikungunya) or malaria, but carries significant risk of acute oral parasitic transmission and congenital vertical transmission to the newborn.\n2. Admission Breakpoint: Admission triage concludes following initial clinical evaluation (gestational age, vital signs, peripheral edema) and baseline triage testing (CBC showing lymphopenia and thrombocytopenia, biochemistry, chest X-ray, and ECG), strictly prior to peripheral blood smear identification of flagellated trypomastigotes, serological titers (IF/IHAT), and quantitative PCR.\n3. Differential Distinctions: Dengue or acute arboviral fever commonly presents with fever, myalgia, edema, and thrombocytopenia in northern Brazil, but lacks persistent parasitemia and responsive antiparasitic cure; malaria is prevalent in the Amazon basin and causes fever and thrombocytopenia, but blood smear reveals motile flagellated trypomastigotes rather than intraerythrocytic Plasmodium forms; detection of Trypanosoma cruzi by smear, serology, and qPCR with subsequent vertical transmission confirms acute Chagas disease.",
+  "case_prompt": "An 18-year-old pregnant woman at approximately 33 to 34 weeks of gestation, residing in the riverside community of Marimarituba, Santarém municipality (Pará State), Brazil, is admitted to the hospital with a 1-week history of daily fevers, severe diffuse myalgias, and 2 days of acute diarrhea accompanied by new-onset peripheral edema. An epidemiological history reveals that approximately 23 days prior to admission, she ingested artisanal, unpasteurized \"bacaba palm fruit wine\" during an apparent local community febrile cluster.\n\nOn physical examination upon admission, she is febrile with bilateral lower extremity peripheral edema. Obstetric examination confirms an active singleton pregnancy with an estimated gestational age of 34 weeks.\n\nInitial triage hematologic testing reveals lymphopenia and thrombocytopenia (plaquetopenia). Serum biochemical profiles are within normal reference limits. Plain chest radiography and a 12-lead electrocardiogram (ECG) are normal without evidence of cardiomegaly, conduction abnormalities, or acute ischemic changes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue fever / Acute arboviral infection",
+      "rule_out_reason": "Acute fever, severe myalgia, diarrhea, peripheral edema, and thrombocytopenia in the Amazon basin strongly suggested dengue or another epidemic arbovirus, but the patient's symptoms were driven by a protozoan parasite with high persistent parasitemia and potential for congenital transmission.",
+      "quote": "The mother's blood exams revealed lymphopenia and plaquetopenia, while the biochemical exams, chest X-ray, and electrocardiogram were normal."
+    },
+    {
+      "candidate": "Malaria (Plasmodium vivax / falciparum)",
+      "rule_out_reason": "Malaria is highly endemic in riverside Amazonian communities and causes acute febrile paroxysms with cytopenias, but peripheral blood microscopy revealed extracellular flagellated trypomastigotes rather than intracellular Plasmodium trophozoites.",
+      "quote": "T. cruzi trypomastigotes were found in a blood smear"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of the peripheral blood smear identified motile trypomastigotes, serological testing demonstrated positive indirect immunofluorescence (IgG 1/320, IgM 1/160) and indirect hemagglutination, and qPCR revealed 53.51 parasites Eq/mL, confirming acute orally acquired Chagas disease with subsequent vertical transmission to her infant.",
+      "quote": "A burden of 53.51 parasites Eq/mL of blood was found."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced. Zero pathogen names in case prompt. Quotes verified verbatim."
+}

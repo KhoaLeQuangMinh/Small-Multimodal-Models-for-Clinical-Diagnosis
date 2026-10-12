@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10546250_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 13-year-old emaciated girl presenting with signs of acute-on-chronic intracranial hypertension, cranial nerve palsies, and a prevertebral cervical collection masquerading as pyogenic meningitis or posterior fossa malignancy, concealing systemic disseminated disease.\n2. Admission Breakpoint: Following initial triage and non-contrast head CT demonstrating communicating hydrocephalus and prevertebral fluid collection, prior to lumbar puncture CSF evaluation and respiratory molecular tests.\n3. Differential Distinctions: Acute pyogenic meningitis with deep neck abscess (ruled out by subacute one-month duration of fever, weight loss, and lymphocytic/basilar CSF profile) and pediatric intracranial neoplasm (ruled out by neuroimaging lacking focal mass lesions).",
+  "case_prompt": "A 13-year-old emaciated, underweight girl presents with a 12-day history of cough and a 4-day history of projectile vomiting, altered mental status, blurred vision, and diplopia. Her family reports a 1-month history of low-grade fever, anorexia, progressive weight loss, and night sweats. She has a documented close household contact history with her grandmother, who had chronic infectious pulmonary disease. On examination, she is cachectic and encephalopathic with cranial neuropathies manifesting as diplopia and visual blurring. Non-contrast head CT demonstrates communicating hydrocephalus and a hypodense fluid collection in the prevertebral space at the C2–C3 vertebral level, consistent with a prevertebral abscess.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic bacterial meningitis with retropharyngeal/prevertebral abscess",
+      "rule_out_reason": "Acute purulent bacterial meningitis with contiguous prevertebral extension was suspected given meningeal symptoms, vomiting, and prevertebral abscess on CT; however, the protracted 1-month prodrome of fever, cachexia, night sweats, and communicating hydrocephalus indicated a subacute basilar infection.",
+      "quote": "Non-contrast CT brain at another facility (not shown) revealed communicating hydrocephalus and a hypodense fluid collection in the prevertebral space at the C2-C3 vertebral level, suggestive of a prevertebral abscess."
+    },
+    {
+      "candidate": "Intracranial neoplasm / posterior fossa tumor",
+      "rule_out_reason": "Symptoms of elevated intracranial pressure including projectile vomiting, visual changes, diplopia, and hydrocephalus raised suspicion for a posterior fossa tumor; however, head CT demonstrated communicating hydrocephalus without focal intra-axial mass lesions.",
+      "quote": "projectile vomiting, associated with altered sensorium, blurring of vision and double vision over the preceding 4 days."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cerebrospinal fluid analysis established tuberculous meningitis, and subsequent sputum GeneXpert testing confirmed Mycobacterium tuberculosis following the development of a hydropneumothorax with necrotic granulomatous dissemination.",
+      "quote": "Clinical and cerebrospinal fluid (CSF) findings suggested the diagnosis of tuberculous meningitis and the child was started on ATT. During her hospital stay, she developed sudden respiratory distress. The CXR (Figure 5) revealed a left pneumothorax with a few infiltrates in the right mid zone. An intercostal drainage (ICD) tube was subsequently placed. Sputum GeneXpert detected MTB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Presentation stops before CSF analysis. Contact history anonymized. Zero-spoiler adherence verified."
+}

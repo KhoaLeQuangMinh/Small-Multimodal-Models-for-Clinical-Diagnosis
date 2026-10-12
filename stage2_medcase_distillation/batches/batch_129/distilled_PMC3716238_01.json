@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3716238_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A chronic, non-tender, slowly expanding fluctuant mass in the gastrocnemius muscle mimics common benign musculoskeletal pathologies (such as an atypical Baker's cyst, lipoma, cold abscess, or myxoma), concealing primary intramuscular parasitic hydatid disease in the absence of visceral lesions.\n2. Admission Breakpoint: Physical exam of the right calf mass, normal knee and chest radiographs, routine laboratory tests, and soft-tissue ultrasound/color Doppler, stopping immediately prior to surgical exploration, scolicidal irrigation, and gross cyst opening.\n3. Differential Distinctions: Baker's cyst was suspected on ultrasound, but the mass failed to reduce on knee flexion and lay within the gastrocnemius belly rather than communicating with the popliteal joint space. Vascular malformations were excluded by normal Doppler. Operative excision demonstrating 22 daughter cysts with histopathologic validation confirmed muscular echinococcal hydatidosis.",
+  "case_prompt": "A 52-year-old woman presented to the surgical outpatient department with a 6-month history of swelling in the right calf region associated with pain that was aggravated on walking. The swelling had been gradually increasing in size.\n\nOn physical examination, a cystic swelling with a radius of 10 cm was present in the right calf. No tenderness was noted, and the overlying skin was normal. Fluctuation was present, and the transillumination test was negative. The mass did not disappear or reduce in size upon flexion of the knee joint.\n\nRoutine laboratory blood tests—including hemoglobin, total and differential leukocyte counts, fasting blood glucose, serum creatinine, and blood urea nitrogen—were all within normal limits. Plain radiograph of the knee joint, plain chest radiograph (PA view), and electrocardiogram revealed no abnormalities.\n\nUltrasonography (USG) of the calf mass suggested an atypical Baker's cyst, while color Doppler examination detected no vascular flow abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Baker's (popliteal) cyst",
+      "rule_out_reason": "Suggested by ultrasound, but clinically excluded because the swelling failed to reduce on knee flexion, and intraoperative dissection revealed an intramuscular lesion rather than a popliteal synovial communication.",
+      "quote": "The cyst did not disappear or reduce on flexion of the knee joint."
+    },
+    {
+      "candidate": "Vascular neoplasm / aneurysm / arteriovenous malformation",
+      "rule_out_reason": "Considered for a fluctuant lower-extremity mass, but ruled out by completely normal vascular flow without Doppler signal abnormalities.",
+      "quote": "color Doppler test did not detect any abnormality"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical exploration of the gastrocnemius muscle cavity revealed multiple characteristic daughter cysts, confirmed as muscular hydatidosis on histopathological examination.",
+      "quote": "The cyst was excised totally which contained 22 daughter cysts. The diagnosis of muscular hydatidosis was confirmed by histopathologic examination."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

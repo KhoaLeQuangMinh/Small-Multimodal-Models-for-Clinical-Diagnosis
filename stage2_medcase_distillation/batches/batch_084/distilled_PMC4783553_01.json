@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4783553_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 24-year-old primigravida presents with severe intrauterine growth restriction and oligohydramnios. She has a history of relapsed chronic pulmonary disease that failed 6 months of standard first-line antimicrobial therapy with persistent smear positivity. The clinical tension centers on managing recurrent respiratory failure and chronic infection during pregnancy while suspecting drug resistance that necessitates toxic second-line agents.\n2. Admission Breakpoint: The breakpoint is reached when the patient presents with clinical and microbiological relapse failing 6 months of standard first-line therapy, immediately prior to send-out sputum drug susceptibility testing (DST) confirming multidrug resistance.\n3. Differential Distinctions: Drug-susceptible pulmonary infection with non-compliance or poor drug absorption (ruled out by confirmed phenotypic in vitro resistance to isoniazid and rifampicin); non-tuberculous mycobacteria (NTM) pulmonary disease (can mimic refractory cavitary disease, ruled out by isolation of M. tuberculosis and DST profile); chronic fungal infection (e.g. chronic pulmonary aspergillosis, ruled out by positive acid-fast bacilli and response to second-line anti-tuberculous therapy); multidrug-resistant tuberculosis (relapse after standard first-line therapy, confirmed by sputum testing demonstrating resistance to isoniazid and rifampicin).",
+  "case_prompt": "A 24-year-old primigravida presents for medical and obstetric management. She had a history of pulmonary disease at age 14 for which she received a 6-month antimicrobial regimen. One year prior to the current pregnancy, she suffered a clinical relapse of pulmonary symptoms. Despite receiving an additional 6 months of standard first-line quadruple antimycobacterial therapy, her respiratory symptoms progressively worsened, and repeated sputum microscopic examinations demonstrated persistent smear positivity, indicating microbiological treatment failure. Routine antenatal investigations and human immunodeficiency virus (HIV) screening are negative, and her general physical examination is unremarkable. Obstetric ultrasonography reveals severe fetal intrauterine growth restriction and oligohydramnios.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Drug-susceptible pulmonary infection with treatment non-adherence or malabsorption",
+      "rule_out_reason": "Considered because treatment failure is most commonly caused by poor compliance or pharmacokinetic subtherapeutic dosing during first-line therapy. However, formal phenotypic drug susceptibility testing documented confirmed in vitro resistance to primary agents.",
+      "quote": "She had relapse of pulmonary tuberculosis 1 year back and was suspected to have MDR-TB in view of worsening symptoms along with sputum positivity after 6 months of first line treatment."
+    },
+    {
+      "candidate": "Non-tuberculous mycobacterial (NTM) pulmonary disease",
+      "rule_out_reason": "Considered given the persistent acid-fast bacillary smear positivity and failure to respond to standard first-line antimicrobial therapy. Ruled out by specific microbiological isolation and drug resistance profiling demonstrating resistant Mycobacterium tuberculosis.",
+      "quote": "Sputum testing revealed drug resistance for isoniazid and rifampicin."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum drug susceptibility testing confirmed dual resistance to both isoniazid and rifampicin, establishing the diagnosis of multidrug-resistant tuberculosis (MDR-TB) requiring an individualized second-line antimicrobial regimen throughout pregnancy.",
+      "quote": "Sputum testing revealed drug resistance for isoniazid and rifampicin. The patient was started on second line antitubercular drugs, that is, ethionamide, cycloserine, levofloxacin, ethambutol, and pyrazinamide, along with injection of kanamycin for six months till sputum conversion."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4783553_01 following Stanford MedCaseReasoning guidelines. The case prompt presents the obstetric and pulmonary presentation without revealing drug resistance testing."
+}

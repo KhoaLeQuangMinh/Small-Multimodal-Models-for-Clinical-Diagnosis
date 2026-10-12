@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7020867_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A previously healthy 28-year-old male residing in an arboviral-endemic region of Brazil presents with a 5-day history of acute fever, adynamia, and myalgias, rapidly decompensating into cardiogenic shock with supraventricular tachycardia (230 bpm) requiring synchronized electrical cardioversion, electrocardiographic diffuse ST elevations with PR depressions suggestive of pericarditis, and acute systolic dysfunction (EF 43%) accompanied by pericardial and pleural effusions. The core clinical challenge is identifying an acute arboviral carditis amidst high suspicion for acute fulminant viral myocarditis, bacterial septic shock, or acute coronary syndrome in a young adult.\n2. Admission Breakpoint: The admission breakpoint is reached immediately following emergency stabilization, synchronized electrical cardioversion, post-cardioversion electrocardiography, and the initial bedside transthoracic echocardiogram demonstrating an ejection fraction of 43% with effusions, prior to ICU inotrope titration, paired blood cultures, or viral serological panels.\n3. Differential Distinctions: Pyogenic bacterial sepsis or infective endocarditis is distinguished by bacteremia on blood cultures and failure to recover without antimicrobial therapy; classic myocarditis caused by cardiotropic viruses (Coxsackievirus, cytomegalovirus, Epstein-Barr virus) or Chagas disease is differentiated by specific serologies; Chikungunya may cause coinfection and arthralgias, but serologic positivity for DENV IgM and IgG confirms acute dengue-associated myocarditis.",
+  "case_prompt": "A 28-year-old previously healthy male residing in Fortaleza, Ceará State, Brazil, presented to the emergency department with a 5-day history of fever, adynamia, myalgias, and progressive deterioration of his general condition. He denied retroorbital pain, bleeding phenomena, or abdominal pain. He had taken no medications in the prior year, had not traveled outside Brazil, and had no past medical history of heart disease.\n\nOn initial physical examination, his Glasgow Coma Scale score was 15 (E4V5M6). The heart rate was 120 beats per minute, and the blood pressure was markedly reduced at 70/40 mm Hg. Cardiovascular examination revealed no audible heart murmurs or pericardial friction rubs. Pulmonary examination was unremarkable, with clear breath sounds bilaterally. Dermatologic inspection revealed no exanthems, petechiae, ecchymoses, or jaundice.\n\nAn emergency 12-lead electrocardiogram demonstrated supraventricular tachycardia at 230 beats per minute that failed to convert after intravenous adenosine. Synchronized electrical cardioversion was promptly performed, successfully restoring normal sinus rhythm. A post-cardioversion electrocardiogram showed diffuse concave ST-segment elevation with PR-segment depression in leads II, III, and aVF, along with reciprocal ST-segment depressions in leads V1 and aVR. An urgent bedside transthoracic echocardiogram revealed a reduced left ventricular ejection fraction of 43%, left ventricular hypercontractility, and mild bilateral pericardial and pleural effusions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Sepsis / Infectious Endocarditis",
+      "rule_out_reason": "Considered because of acute fever, hemodynamic instability with refractory shock, and multi-serosal effusions. Ruled out by sterile blood cultures and successful clinical recovery in the absence of antibiotics.",
+      "quote": "Paired blood cultures were negative for pyogenic agents. Antibiotics were not used."
+    },
+    {
+      "candidate": "Common Viral or Parasitic Myocarditis (Coxsackievirus, Rubella, Chagas Disease, HIV, CMV, EBV, Toxoplasmosis, Hepatitis B and C)",
+      "rule_out_reason": "Considered given acute viral prodrome leading to diffuse ST elevations, depressed left ventricular ejection fraction, and pericardial effusion. Ruled out by negative comprehensive viral and protozoan serologic investigations.",
+      "quote": "Serologies for coxsackie virus, rubella, Chagas disease, human immunodeficiency virus, cytomegalovirus, Epstein-Barr virus (EBV), toxoplasmosis, hepatitis B virus and hepatitis C virus were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when serological testing of acute serum confirmed acute arboviral infection with positive anti-dengue IgM and IgG antibodies in a young patient presenting with acute myocarditis and cardiogenic shock.",
+      "quote": "The patient's serum samples were tested and found to be ELISA-IgM positive and ELISA-IgG positive for DENV and ELISA-IgM positive for CHIKV."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7020867. Admission breakpoint strictly maintained after post-cardioversion ECG and initial transthoracic echocardiogram. Zero pathogen names leaked in case prompt."
+}

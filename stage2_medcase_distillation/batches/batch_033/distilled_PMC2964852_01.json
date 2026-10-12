@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2964852_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: An immunocompetent resident of central Italy presents with indolent, refractory ulcerative facial nodules without international travel history. Because the patient had no travel to tropical regions and failed sequential empirical regimens of topical antibiotics, antifungals, and corticosteroids, the presentation mimics locally endemic non-infectious granulomatous dermatoses, pyoderma, or skin neoplasms, obscuring the diagnosis of autochthonous cutaneous leishmaniasis.\n2. Admission Breakpoint: Admission triage concludes following dermatologic inspection and baseline complete blood count, immediately prior to diagnostic lancet ulcer scrapping, smear preparation, and microscopic cytology.\n3. Differential Distinctions: Bacterial pyoderma is excluded by unresponsiveness to empirical topical antibacterial therapy; superficial cutaneous mycosis is excluded by failure of topical antifungal therapy and normal systemic counts; cutaneous leishmaniasis is definitively identified by cytological demonstration of Leishman-Donovan bodies within histiocytes.",
+  "case_prompt": "A 61-year-old immunocompetent Italian man, born and residing in the Abruzzo region of Italy, presented for evaluation of persistent, non-healing skin lesions on his face. The patient reported no history of international travel. Over several months, he had developed multiple ulcerative nodules on the skin of his right cheek, the largest measuring 2 cm in maximum diameter, partially covered by adherent scaly crusts and scabs. He had previously received multiple empirical topical regimens, including topical antibacterial agents, topical antifungals, and topical corticosteroids, none of which produced clinical improvement.\n\nOn physical examination, multiple indurated, crusted ulcerative nodules were localized exclusively to the right cheek without surrounding acute cellulitis. General physical examination was otherwise unremarkable, with no regional lymphadenopathy or systemic signs.\n\nInitial laboratory evaluation revealed a normal complete blood count with normal leukocyte differential, hemoglobin, and platelet count.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Pyoderma / Chronic Ulcerative Impetigo",
+      "rule_out_reason": "Crusted ulcerative facial nodules could suggest an indolent staphylococcal or streptococcal soft tissue infection; however, the lesions completely failed empirical topical antibacterial therapy, and the complete blood count showed no leukocytosis.",
+      "quote": "The patient referred no travels and had received several topical treatments (antibiotics, antimycotics, steroids), which had failed."
+    },
+    {
+      "candidate": "Cutaneous Fungal Infection (Tinea Faciei / Deep Mycosis)",
+      "rule_out_reason": "Scaly, nodular, ulcerating facial lesions can resemble fungal granulomas; however, repeated courses of topical antimycotic therapy failed to alter the progression of the lesions.",
+      "quote": "The patient referred no travels and had received several topical treatments (antibiotics, antimycotics, steroids), which had failed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cytologic smear examination of ulcer scrapings revealed massive histiocytic infiltration packed with intracellular amastigotes (Leishman-Donovan bodies) alongside extracellular promastigotes, confirming cutaneous leishmaniasis.",
+      "quote": "Pathological examination showed the presence of a large number of intra- and extracellular Leishmania promastigotes and a massive histiocyte infiltration, laden with amastigotes (Leishman-Donovan bodies)"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

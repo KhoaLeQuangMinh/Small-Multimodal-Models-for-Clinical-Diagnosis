@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3109399_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A 65-year-old sedentary male presenting with a 10-year history of progressive congestive heart failure that has advanced to NYHA functional class IV with reduced left ventricular ejection fraction (40%) and profound exercise intolerance. In an older sedentary patient, differentiating atherosclerotic ischemic cardiomyopathy or idiopathic dilated cardiomyopathy from chronic infectious parasitic cardiomyopathy (Chagas cardiomyopathy) requires coronary angiography and dual concordant serological testing.\n2. Admission Breakpoint: The baseline clinical and functional evaluation establishing NYHA Class IV heart failure, baseline guideline-directed medical therapy, abortive exercise testing, and echocardiographic confirmation of reduced LVEF (40%), prior to diagnostic coronary angiography and confirmatory dual serology.\n3. Differential Distinctions: Ischemic cardiomyopathy is the most frequent cause of systolic heart failure in older sedentary men, but was definitively excluded by cardiac catheterization and coronary angiography showing patent coronary arteries; idiopathic dilated cardiomyopathy produces identical biventricular remodeling, but was ruled out by positive dual specific serological testing; hypertensive or valvular heart disease produces chronic heart failure but lacks specific protozoan seropositivity.",
+  "case_prompt": "A 65-year-old sedentary male presents with a 10-year history of chronic congestive heart failure symptoms. Over recent months, his functional status has deteriorated to New York Heart Association (NYHA) functional class IV, experiencing marked dyspnea and fatigue even at rest or with minimal exertion. His outpatient medical regimen consists of carvedilol 12.5 mg daily, captopril 75 mg daily, and furosemide 40 mg daily.\n\nOn baseline functional evaluation, a formal cardiopulmonary exercise test is attempted; however, the patient cannot tolerate testing and must discontinue within the first minute due to overwhelming fatigue. Transthoracic echocardiography demonstrates significant left ventricular systolic dysfunction with a left ventricular ejection fraction (LVEF) of 40%.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ischemic Cardiomyopathy / Severe Coronary Artery Disease",
+      "rule_out_reason": "Considered as the leading cause of systolic heart failure with reduced ejection fraction (LVEF 40%) in a 65-year-old sedentary male, but ruled out by invasive cardiac catheterization and angiography demonstrating the absence of obstructive coronary artery disease.",
+      "quote": "To exclude the possibility of an ischemic heart disease, the patient underwent cardiac catheterization, followed by angiography."
+    },
+    {
+      "candidate": "Idiopathic Dilated Cardiomyopathy",
+      "rule_out_reason": "Considered in a patient with chronic non-ischemic ventricular dilation and systolic dysfunction, but excluded by the demonstration of two concordant positive specific serological assays establishing an infectious protozoan etiology.",
+      "quote": "The diagnosis of Chagas disease was defined by the positive result of two serological tests [indirect immunofluorescence and enzyme-linked immunosorbent assay (ELISA)]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Dual concordant serological testing (indirect immunofluorescence and ELISA) confirmed chronic infection with Trypanosoma cruzi, in conjunction with coronary catheterization ruling out an ischemic etiology.",
+      "quote": "The diagnosis of Chagas disease was defined by the positive result of two serological tests [indirect immunofluorescence and enzyme-linked immunosorbent assay (ELISA)]. To exclude the possibility of an ischemic heart disease, the patient underwent cardiac catheterization, followed by angiography."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to baseline clinical presentation, medication profile, and echocardiography before invasive cardiac catheterization and send-out dual serology. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

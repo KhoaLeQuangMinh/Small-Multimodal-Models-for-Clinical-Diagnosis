@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5318682_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old woman presents with classic systemic features of disseminated intra-abdominal malignancy—progressive abdominal distension, 6 kg weight loss, normocytic anemia, markedly elevated CA-125 (188.6 U/mL), and CT demonstrating peritoneal thickening, omental stranding, prominent ovaries, and multiloculated ascites. The critical clinical dilemma is differentiating advanced epithelial ovarian carcinoma with peritoneal carcinomatosis from extrapulmonary peritoneal tuberculosis.\n2. Admission Breakpoint: The admission triage phase ends after obtaining the abdominal ultrasound, abdominopelvic CT scan, routine blood work, and serum CA-125 level, which together established an initial clinical diagnosis of peritoneal carcinomatosis. It stops strictly before exploratory laparotomy, surgical resection, and peritoneal biopsy histopathology.\n3. Differential Distinctions: Advanced ovarian cancer presents with adnexal masses, peritoneal implants, ascites, and elevated CA-125, but histopathology shows epithelial malignant atypia rather than necrotizing granulomas. Peritoneal tuberculosis shares identical clinical and imaging features (including omental cake-like thickening and elevated CA-125 due to peritoneal mesothelial activation), but is characterized by central caseous necrosis, Langhans giant cells, and positive acid-fast staining.",
+  "case_prompt": "A 56-year-old woman presented with a 3-month history of progressive abdominal fullness, accompanied by poor appetite, general malaise, and an involuntary weight loss of approximately 6 kg over the same period. Two weeks prior to evaluation, she developed nausea and vomiting. She denied diarrhea, melena, or hematochezia.\n\nOn physical examination, the abdomen was distended with clinical signs of fluid accumulation. Bedside abdominal ultrasonography confirmed the presence of ascites.\n\nInitial laboratory evaluation revealed a normocytic anemia with a hemoglobin level of 10.3 g/dL (reference range, 12–16 g/dL). A serum cancer antigen 125 (CA-125) level was markedly elevated at 188.6 U/mL (reference range, <35 U/mL). An abdominopelvic computed tomography (CT) scan demonstrated multiloculated ascites in the abdomen and pelvis, smooth thickening of the peritoneum, stranding throughout the greater omentum, multiple small mesenteric nodules, and enlarged mesenteric and para-aortic lymph nodes. In addition, the ovaries appeared prominent and the fallopian tubes were bilaterally dilated, with no focal soft-tissue masses identified in the ileocecal region.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian carcinoma with peritoneal carcinomatosis",
+      "rule_out_reason": "Considered the primary provisional diagnosis based on subacute weight loss, prominent ovaries, dilated fallopian tubes, multiloculated ascites, omental stranding, and a significantly elevated CA-125 level of 188.6 U/mL. Excluded when surgical biopsies demonstrated granulomatous inflammation with caseous necrosis, Langhans giant cells, and acid-fast bacilli without malignant cells.",
+      "quote": "Under the initial diagnosis of ovarian cancer with carcinomatosis peritonei, she was admitted and exploratory laparotomy was performed... The final diagnosis from the biopsy was tuberculosis peritonitis. Microscopic sections showed granulomatous inflammation with central caseous necrosis, epithelioid histiocytes and Langhans giant cells in the ovary, fallopian tube, and peritoneum (Figure 2A(Fig. 2)). Mycobacterial bacilli were also demonstrated by acid-fast stain (Figure 2B(Fig. 2))."
+    },
+    {
+      "candidate": "Metastatic gastrointestinal adenocarcinoma / peritoneal mesothelioma",
+      "rule_out_reason": "Considered due to peritoneal thickening, mesenteric nodules, omental infiltration, and retroperitoneal adenopathy. Excluded by the absence of an ileocecal or other luminal digestive tract tumor on CT, and definitive biopsy findings demonstrating necrotizing caseating granulomatous infection.",
+      "quote": "There was no evidence of soft tissue in the ileocecal region. Under the initial diagnosis of ovarian cancer with carcinomatosis peritonei, she was admitted and exploratory laparotomy was performed... The tentative diagnosis was carcinomatosis peritonei, so left salpingo-oophorectomy, enterolysis and peritoneum biopsy was performed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic evaluation of operative biopsies obtained from the peritoneum, ovary, and fallopian tube demonstrating chronic granulomatous inflammation with central caseous necrosis, epithelioid histiocytes, Langhans multinucleated giant cells, and positive acid-fast staining for mycobacterial bacilli.",
+      "quote": "The final diagnosis from the biopsy was tuberculosis peritonitis. Microscopic sections showed granulomatous inflammation with central caseous necrosis, epithelioid histiocytes and Langhans giant cells in the ovary, fallopian tube, and peritoneum (Figure 2A(Fig. 2)). Mycobacterial bacilli were also demonstrated by acid-fast stain (Figure 2B(Fig. 2))."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "The case prompt accurately reproduces the admission clinical dilemma of pseudo-malignant peritoneal disease without mentioning tuberculosis or histology. Differential rule-outs cite verbatim quotes documenting the surgical and histopathologic findings."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10062082_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 28-year-old man presents with acute, profound unilateral visual loss (finger counting at 0.5 meters), headache, and multiform retinal pathology (focal arteriovenous constriction, branch retinal vein vasculitis, soft exudates, flame/dot-blot hemorrhages, macular edema, and neurosensory detachment). The presentation mimics non-infectious branch retinal vein occlusion (BRVO), hypertensive retinopathy, or primary autoimmune retinal vasculitis, but occurs following a systemic febrile illness with persistent thrombocytopenia.\n2. Admission Breakpoint: The point of initial ophthalmologic examination, visual acuity measurement, optical coherence tomography (OCT), and admission complete blood count, strictly before revealing the convalescent Dengue virus IgM serology.\n3. Differential Distinctions: Idiopathic branch retinal vein occlusion typically occurs in hypertensive older individuals without antecedent systemic febrile syndromes or systemic cytopenias; in contrast, dengue-related retinopathy occurs in young adults during the convalescent period of the infection, driven by immune-mediated microvascular damage, capillary leakage, and profound thrombocytopenia.",
+  "case_prompt": "A 28-year-old male presented to the ophthalmology clinic complaining of progressive blurring of vision in his left eye and persistent headache for the past 15 days. He reported having experienced an acute, self-limited systemic febrile illness approximately three weeks (22 days) prior to presentation.\n\nOn ophthalmological examination, best-corrected visual acuity (BCVA) was 6/9 in the right eye and reduced to counting fingers at 0.5 meters in the left eye. Dilated funduscopic examination of the left eye revealed focal constriction of retinal arteries and veins, multiple soft exudates, dot-blot and flame-shaped hemorrhages distributed along a branch retinal vein territory, an attempt at macular fan formation, and prominent macular edema.\n\nOptical coherence tomography (OCT) of the left eye demonstrated extensive neurosensory detachment associated with cystoid macular edema, with a central macular thickness markedly increased to 1018 micrometers.\n\nA complete blood count obtained at presentation demonstrated significant thrombocytopenia with a platelet count of 84,000/microL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Branch Retinal Vein Occlusion (BRVO)",
+      "rule_out_reason": "Considered given the segmental distribution of flame-shaped and dot-blot hemorrhages with macular edema along a branch vein; however, the patient was a young male without hypertension or hypercoagulability, and fundus examination showed concurrent arterial focal constriction, macular neurosensory detachment, and systemic thrombocytopenia following a febrile episode.",
+      "quote": "On examination, (LE) fundus revealed focal constriction of arteries and veins, soft exudates, dot-blot and flame-shaped hemorrhages in branch vein distribution, attempt at macular fan formation, and area of macular edema [Figure 1]."
+    },
+    {
+      "candidate": "Idiopathic Acute Macular Neuroretinopathy (AMN) / Non-infectious Retinal Vasculitis",
+      "rule_out_reason": "Although OCT findings demonstrated neurosensory detachment and microvascular changes characteristic of AMN, non-infectious inflammatory vasculitis was ruled out as the primary etiology by the explicit temporal linkage to a recent systemic febrile illness accompanied by persistent systemic thrombocytopenia.",
+      "quote": "The features on OCT and OCTA were suggestive of AMN."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Retinopathy",
+      "rule_out_reason": "The diagnosis of dengue-associated maculopathy and retinopathy was established by the characteristic clinical constellation of branch vein vasculitis, neurosensory detachment, and thrombocytopenia occurring in the convalescent phase of a febrile illness, confirmed by positive Dengue virus IgM enzyme-linked immunosorbent assay serology.",
+      "quote": "The DF was confirmed by positive immunoglobulin M enzyme-linked immunosorbent assay serology for the Dengue virus."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero pathogen spoilers in prompt; admission breakpoint held at initial ophthalmic exam, OCT, and triage CBC. Verbatim quotes validated."
+}

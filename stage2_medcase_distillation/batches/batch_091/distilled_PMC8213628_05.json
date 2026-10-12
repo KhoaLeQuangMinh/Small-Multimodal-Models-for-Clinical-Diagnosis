@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213628_05",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 38-year-old woman presenting solely with respiratory complaints (cough and sore throat) who explicitly denied any consumption of aquatic plants or watercress. Stool examination for parasite eggs was negative, strongly deflecting suspicion toward routine viral or bacterial pharyngitis/bronchitis rather than foodborne trematodiasis.\n2. Admission Breakpoint: Clinical presentation and symptom assessment documenting cough and sore throat with denial of aquatic plant consumption, before blood serology (ELISA), stool microscopy, and PCR.\n3. Differential Distinctions: Viral or atypical respiratory infection is the default diagnosis for isolated cough and sore throat, but fails to account for positive specific serology and fluke DNA. Patent biliary fascioliasis typically features right upper quadrant pain, eosinophilia, and egg shedding in stool; in this patient, negative stool microscopy reflected early acute migratory tissue phase, ectopic migration, or ingestion of unremembered encysted metacercariae (e.g., via contaminated wash water or produce).",
+  "case_prompt": "A 38-year-old woman living in Venaei Village in Borujerd County, Lorestan Province, western Iran, presents with persistent coughing and a sore throat. She has no fever, abdominal pain, back pain, or weight loss.\n\nUpon detailed questioning, she specifically denies any history of consuming raw aquatic plants, including watercress (\"Balmak\").",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral pharyngitis / Upper respiratory tract infection",
+      "rule_out_reason": "The patient presented exclusively with cough and sore throat without gastrointestinal symptoms, closely mimicking common respiratory infections, but diagnostic testing demonstrated a parasitic trematode infection.",
+      "quote": "She had no history of consumptions of aquatic plants and also \"Balmak\". Clinical symptoms were only coughing and sore throat."
+    },
+    {
+      "candidate": "Patent biliary fascioliasis",
+      "rule_out_reason": "Classical biliary stage fascioliasis presents with abdominal symptoms and shedding of eggs in feces, whereas this patient had negative stool examination, indicating early pre-patent hepatic migration or ectopic pharyngeal involvement.",
+      "quote": "ELISA was positive but stool examination was not positive for F. hepatica."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serum ELISA returned positive for Fasciola antibodies, and molecular PCR amplified a 700 bp band whose sequence confirmed 99%-100% homology to Fasciola hepatica (GenBank accession MF991070), leading to complete resolution of symptoms after antiparasitic therapy.",
+      "quote": "ELISA was positive but stool examination was not positive for F. hepatica. In addition, PCR product showed a band of about 700 bp corresponding to Fasciola spp. After sequencing F. hepatica was found in this positive isolate and showed 99%-100% homology as compared with the other sequences previously recorded in the GenBank."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at history and exposure denial. Zero spoilers in case_prompt. Direct quotes verified verbatim from case text."
+}

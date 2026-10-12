@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10476230_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 8-year-old boy presents with subacute high-grade fever, severe weight loss, massive hepatomegaly with hypoechoic hepatic nodules, necrotic retroperitoneal lymphadenopathy, and gross ascites. This presentation strongly mimics disseminated childhood lymphoma or metastatic abdominal malignancy rather than an infectious process.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after emergency physical examination and bedside ultrasonography revealing hepatosplenomegaly, hepatic nodules, necrotic adenopathy, and gross ascites, stopping strictly prior to mesenteric lymph node biopsy, ascitic fluid analysis, and MR lymphangiography.\n3. Differential Distinctions: Disseminated tuberculosis with chylous ascites is distinguished from lymphoma or metastatic malignancy by histopathologic demonstration of tuberculous lymphadenitis on biopsy; from pyogenic liver abscesses by lack of acute purulence and presence of retroperitoneal necrotic lymphadenopathy; and from primary congenital lymphatic malformations by subacute fever, cachexia, and extrinsic lymphatic compression by necrotic nodes.",
+  "case_prompt": "An 8-year-old male presents for clinical evaluation with a 1- to 2-month history of daily high-grade fevers, marked progressive weight loss, and severe abdominal distension.\n\nOn physical examination, the child is chronically ill-appearing, febrile, and exhibits marked abdominal distension with fluid shifting dullness and hepatomegaly on palpation.\n\nBedside ultrasonography of the abdomen demonstrates marked hepatomegaly with multiple discrete hypoechoic liver nodules, significantly enlarged necrotic intra-abdominal lymph nodes, and gross peritoneal fluid accumulation (ascites).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant lymphoma / abdominal neoplastic process",
+      "rule_out_reason": "Subacute high fever, profound weight loss, multiple hypoechoic hepatic nodules, necrotic retroperitoneal lymphadenopathy, and gross ascites in a pediatric patient strongly raised concern for lymphoma, but mesenteric lymph node histopathology revealed non-malignant granulomatous disease.",
+      "quote": "Biopsy from the mesenteric lymph nodes confirmed tuberculous lymphadenitis."
+    },
+    {
+      "candidate": "Multifocal pyogenic hepatic abscesses with peritonitis",
+      "rule_out_reason": "Multiple hypoechoic liver lesions accompanied by high-grade fever suggested pyogenic bacterial abscesses, but necrotic lymphadenopathy and histological confirmation proved a mycobacterial etiology.",
+      "quote": "Biopsy from the mesenteric lymph nodes confirmed tuberculous lymphadenitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Mesenteric lymph node biopsy definitively confirmed tuberculous lymphadenitis, while ascitic fluid analysis revealed high triglyceride content and MR lymphangiography demonstrated retroperitoneal necrotic lymph nodes compressing the cisterna chyli to produce chylous ascites.",
+      "quote": "Biopsy from the mesenteric lymph nodes confirmed tuberculous lymphadenitis. Ascitic fluid analysis revealed elevated triglyceride content suggestive of chylous ascites."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to mesenteric lymph node biopsy and invasive MR lymphangiography. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

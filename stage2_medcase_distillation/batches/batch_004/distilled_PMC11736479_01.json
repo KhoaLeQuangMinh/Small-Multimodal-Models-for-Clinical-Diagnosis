@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11736479_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 40-year-old female presenting with epigastric pain, chills, constitutional weight loss, and an invasive-appearing hepatic hilar mass in segment IV suspicious for intrahepatic cholangiocarcinoma or exophytic gastric tumor creates an ominous malignant clinical picture; however, prominent peripheral eosinophilia and normal serum tumor markers (CEA, CA 19-9) create discordance with primary biliary cancer, pointing instead to a helminth-induced inflammatory pseudotumor.\n2. Admission Breakpoint: The admission triage evaluation ends following upper endoscopy (EGD) and cross-sectional liver imaging (CT and MRI), immediately prior to percutaneous liver core needle biopsies and specialized parasitic serology panels.\n3. Differential Distinctions: Intrahepatic cholangiocarcinoma presents as an infiltrative hilar hepatic lesion, often with elevated CA 19-9 and absence of prominent tissue or peripheral eosinophilia; gastric adenocarcinoma or gastrointestinal stromal tumor invading the liver exhibits mucosal or subepithelial lesions on endoscopy; hepatic fascioliasis induces mechanical and immunologic parenchymal necrosis resulting in an eosinophilic pseudotumor confirmed by parasite-specific IgG serology.",
+  "case_prompt": "A 40-year-old female seamstress from Vietnam presented with a one-month history of dull epigastric abdominal pain unrelated to food intake, accompanied by occasional chills relieved with antipyretics, anorexia, and an unintentional 5 kg weight loss. She reported normal bowel movements without altered stool characteristics. Medical history was notable for hypertension managed with pharmacotherapy. Dietary history revealed strict consumption of well-cooked meals and boiled water with infrequent consumption of raw vegetables, and she denied direct contact with livestock, poultry, or domestic animals. There was no personal or family history of malignant neoplasms.\nOn physical examination, vital signs were normal. Abdominal examination revealed mild localized tenderness upon deep palpation in the epigastric region, without abdominal guarding, rigidity, or rebound tenderness. The rest of the physical examination was unremarkable.\nLaboratory evaluation demonstrated mild anemia and marked peripheral blood eosinophilia. Serum liver biochemistries, transaminases, and total bilirubin were completely within normal limits. Serum tumor markers, including carcinoembryonic antigen (CEA) and carbohydrate antigen 19-9 (CA 19-9), were not elevated.\nAn initial abdominal ultrasound revealed a mass in the left hepatic lobe protruding into the abdominal cavity and exerting extrinsic pressure on the lesser curvature of the stomach. Esophagogastroduodenoscopy (EGD) showed normal gastric mucosa without mucosal masses or ulceration. Subsequent multiphase contrast-enhanced CT and MRI of the liver demonstrated a mass in the hepatic hilum, predominantly involving segment IV with potential local infiltration into the gallbladder bed, raising high clinical suspicion for an invasive hepatic neoplasm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intrahepatic Cholangiocarcinoma",
+      "rule_out_reason": "Cross-sectional CT and MRI showed a suspicious mass in the hepatic hilum and segment IV with possible gallbladder invasion; however, CA 19-9 and CEA were normal, and liver core needle biopsy demonstrated heavy eosinophilic infiltration without malignant cells.",
+      "quote": "Further imaging with contrast-enhanced computed tomography (CT) and magnetic resonance imaging of the liver (Figure 1) demonstrated a mass in the hepatic hilum, particularly involving segment IV, raising suspicion for intrahepatic cholangiocarcinoma with possible invasion into the gallbladder."
+    },
+    {
+      "candidate": "Gastric Malignancy / Gastrointestinal Stromal Tumor (GIST) Invading the Liver",
+      "rule_out_reason": "Ultrasound originally showed an exophytic left lobe mass abutting the stomach, raising concern for an invasive gastric cancer; however, endoscopic evaluation demonstrated entirely normal gastric mucosa, ruling out a gastric mucosal primary tumor.",
+      "quote": "The imaging raised concerns for a potential gastric mass invading the liver. However, esophagogastroduodenoscopy showed no abnormalities in the gastric mucosa, effectively ruling out a gastric origin."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous liver core needle biopsies showing acute portal tract and lobular inflammation with dense eosinophilic infiltration without malignancy, combined with positive serum IgG antibodies against Fasciola species, established a hepatic eosinophilic pseudotumor secondary to fascioliasis.",
+      "quote": "Subsequent serological testing showed positivity for IgG antibodies for Fasciola species and ruled out other prevalent parasitic infections. A definitive diagnosis of HEPT secondary to hepatic fascioliasis was thus established."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt concludes after CT/MRI and EGD. Percutaneous core needle biopsies, parasitic IgG serology, and final diagnosis of fascioliasis excluded from prompt. Verbatim quotes provided."
+}

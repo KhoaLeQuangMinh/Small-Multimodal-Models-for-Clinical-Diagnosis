@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11025418_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 28-year-old male presented with high-grade fevers, B-symptoms, miliary pulmonary nodules, hepatosplenomegaly, and bilateral exudative chylothorax (triglycerides 1374 mg/dL). Non-traumatic chylothorax accompanied by diffuse adenopathy and organomegaly classically suggests high-grade lymphoma or disseminated fungal/tropical infection (e.g., melioidosis), with mycobacterial disease being a rare cause of bilateral thoracic duct obstruction.\n2. Admission Breakpoint: Following admission triage, chest radiography, contrast CT of the chest and abdomen, and diagnostic thoracentesis yielding milky exudative fluid with chylous biochemistry, immediately prior to send-out serologies, tuberculin skin testing, diagnostic thoracoscopy, and mycobacterial cultures.\n3. Differential Distinctions: Mediastinal lymphoma (leading cause of atraumatic chylothorax with generalized lymphadenopathy and hepatosplenomegaly), melioidosis (frequent cause of fevers, organomegaly, and sepsis in South Asia), and sarcoidosis. Differentiated by negative atypical pleural cytology, negative melioidosis serology, thoracoscopic visualization of caseous lymph node discharge, and sputum culture growth of Mycobacterium tuberculosis.",
+  "case_prompt": "A 28-year-old Sri Lankan male residing in the Middle East was admitted after returning to Sri Lanka with high-grade fever (102\u2013104 \u00b0F) accompanied by chills, night sweats, progressive dyspnea, pleuritic chest pain, malaise, anorexia, and an unintentional 11 kg weight loss over 1 month. He was previously healthy and denied tobacco smoking. His mother had a treated chronic pulmonary infection 15 years prior, at which time his contact screening had been unremarkable. On examination, he was ill-appearing, pale, febrile, and dyspneic with an oxygen saturation of 90% on ambient air. Mobile, non-matted small lymph nodes were palpable in the left anterior cervical triangle and bilateral inguinal regions. Chest examination revealed signs of bilateral pleural effusions, while abdominal examination showed hepatomegaly of 2 cm and mild splenomegaly, confirmed by bedside ultrasound. Initial laboratory tests showed hemoglobin 10.8 g/dL, white blood cell count 11.6 \u00d7 10^3/\u03bcL (neutrophils 90%, lymphocytes 10%), platelets 399 \u00d7 10^3/\u03bcL, ESR 9 mm/h, C-reactive protein 28.9 mg/L, AST 64 U/L, ALT 55 U/L, and normal serum creatinine (70.4 \u03bcmol/L). Chest radiography showed moderate right and small left pleural effusions with diffuse tiny nodules (<5 mm) affecting all zones. CT of the chest and abdomen revealed bilateral pleural effusions (right greater than left), multiple pulmonary nodules predominantly in the lower lobes, bilateral hilar and mediastinal lymphadenopathy, and hepatosplenomegaly without ascites. Therapeutic needle aspiration yielded 550 mL of milky white exudative pleural fluid with lymphocytic predominance (WBC 3,440/\u03bcL, 82% lymphocytes), protein 3.69 g/dL, glucose 151 mg/dL, LDH 432 U/L, pleural triglyceride 1,374 mg/dL (serum triglyceride 137 mg/dL), and pleural cholesterol 70 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lymphoma / Mediastinal malignancy",
+      "rule_out_reason": "Prime consideration for non-traumatic bilateral chylothorax presenting with prominent mediastinal/hilar lymphadenopathy, hepatosplenomegaly, and profound B-symptoms; ruled out by absence of atypical or malignant cells in pleural fluid and lack of neoplastic tissue on subsequent thoracoscopic biopsies.",
+      "quote": "Pleural fluid was negative for atypical cells and bacterial growth."
+    },
+    {
+      "candidate": "Melioidosis / Disseminated tropical bacterial infection",
+      "rule_out_reason": "Considered due to residence in endemic regions, high-grade fevers, and systemic dissemination involving the lungs, spleen, and liver; excluded by negative serology and sterile routine bacterial cultures.",
+      "quote": "Antibodies for melioidosis and HIV were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic thoracoscopy demonstrated densely inflamed pleurae and enlarged mediastinal lymph nodes discharging caseous material, and sputum culture confirmed Mycobacterium tuberculosis at 6 weeks of incubation.",
+      "quote": "diagnostic thoracoscopy was performed on Day 15 (Figure 2), which revealed densely inflamed parietal and visceral pleurae and enlarged hilar and mediastinal lymph nodes with caseous discharge."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage boundary preserves diagnostic challenge of chylothorax. Verbatim quotes verified from case text."
+}

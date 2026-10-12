@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11004779_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 25-year-old female presenting with acute stabbing epigastric pain, vomiting, distended abdomen, jaundice, leukopenia, and marked transaminitis (AST/ALT > 2000 U/L) mimics an acute surgical abdomen or isolated acute viral hepatitis. While acute hepatitis A serology was positive, persistent fever and leukopenia signaled concurrent infection with dengue virus.\n2. Admission Breakpoint: The breakpoint stops after physical examination and initial baseline laboratory testing (CBC, basic hepatic panel, urinalysis), strictly before hepatitis A antibody results, hospitalization course, and send-out dengue serological testing.\n3. Differential Distinctions: Acute pancreatitis or acute surgical abdomen presents with stabbing epigastric pain and tenderness, but amylase and lipase were not elevated and massive transaminitis predominated. Isolated hepatitis A explains hepatocellular jaundice, but fails to account for marked leukopenia and persistent fever, which were resolved by confirming dengue co-infection.",
+  "case_prompt": "A 25-year-old female presented to the emergency department after 3 days of progressive, stabbing epigastric pain (intensity 9/10) associated with vomiting.\n\nOn physical examination, she had dry mucous membranes, and her skin and sclera showed moderate jaundice (++ / +++). The abdomen was distended, with hyperactive bowel sounds and tenderness on palpation across the upper abdominal region.\n\nInitial triage laboratory evaluation demonstrated leukopenia with a white blood cell count of 3,500 cells/µL, hemoglobin 11.2 g/dL, hematocrit 33.6%, and platelet count 175,000 cells/µL. Complete blood count, amylase, lipase, urea, creatinine, liver profile, and urinalysis were performed. The hepatic panel showed severe hepatocellular injury with AST (GOT) 1,989 U/L, ALT (GPT) 2,540 U/L, total bilirubin 4.76 mg/dL, direct bilirubin 4.58 mg/dL, and albumin 3.4 g/dL. Urinalysis revealed bilirubin 1+ and pyuria with >100 leukocytes per field.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pancreatitis / Surgical abdomen",
+      "rule_out_reason": "Severe 9/10 stabbing epigastric pain, abdominal distension, and upper abdominal tenderness raised immediate suspicion for acute pancreatitis or a surgical abdomen; however, amylase and lipase were not elevated and marked hepatocellular transaminitis dominated the laboratory picture.",
+      "quote": "The following laboratory tests were performed: complete blood count, amylase, lipase, liver profile (albumin, globulins, total and fractionated bilirubin, glutamic oxaloacetic transaminase GOT, glutamic pyruvic transaminase GPT, alkaline phosphatase), urea, creatinine, and urine test."
+    },
+    {
+      "candidate": "Isolated acute hepatitis A",
+      "rule_out_reason": "Reactive hepatitis A antibodies accounted for acute jaundice and transaminase elevation, but failed to explain persistent high fever and marked leukopenia in an arbovirus-endemic setting.",
+      "quote": "During her hospital stay, vomiting decreased in frequency, but nausea and fever persisted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Persistent fever and leukopenia prompted serologic testing on hospital day 5, yielding reactive dengue IgM and IgG antibodies, confirming an acute co-infection of dengue virus and hepatitis A virus.",
+      "quote": "On her 5th day of hospitalization, a reactive result was obtained for IgM IgG for dengue positive and NS1 negative."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to baseline triage laboratory and clinical examination findings. Excluded viral hepatitis serology, dengue serology, and hospital course from case prompt. Quotes verified against source text."
+}

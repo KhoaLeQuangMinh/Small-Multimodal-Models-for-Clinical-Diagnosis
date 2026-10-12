@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5325492_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 60-year-old previously healthy and immunocompetent male presents with prostatic abnormalities on clinical evaluation, laboratory testing, and imaging that strongly suggest prostate cancer. Isolated prostatic mycobacterial infection is extraordinarily rare in immunocompetent individuals and clinically mimics malignant neoplasia.\n2. Admission Breakpoint: Admission evaluation concludes after clinical examination, biological laboratory testing, and pelvic imaging, immediately prior to transrectal needle biopsy of the prostate.\n3. Differential Distinctions: Prostate adenocarcinoma is the leading clinical suspicion based on exam and imaging findings in an older male, but histopathology shows granulomatous lesions. Chronic bacterial/non-specific prostatitis also enters the differential for chronic prostate enlargement or induration, but is distinguished by specific granulomatous histopathology.",
+  "case_prompt": "A 60-year-old previously healthy and immunocompetent male presents for medical evaluation of the prostate. Physical examination, routine biological investigations, and diagnostic imaging reveal prostatic abnormalities that raise a strong clinical suspicion of prostate cancer.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Prostate cancer",
+      "rule_out_reason": "Highly suspected based on clinical findings, biological investigations, and prostatic imaging; ruled out when histopathologic evaluation of needle core biopsy tissue revealed granulomatous inflammatory lesions rather than adenocarcinoma.",
+      "quote": "After clinical and biological examination, and imaging, prostate cancer was highly suspected."
+    },
+    {
+      "candidate": "Chronic non-specific prostatitis",
+      "rule_out_reason": "Considered in patients presenting with chronic prostatic lesions, but differentiated by histological identification of specific tuberculous lesions rather than ordinary chronic inflammatory changes.",
+      "quote": "Tuberculosis involving the prostate gland, apart from being rare, can also mimic cancer of the prostate as well as chronic tuberculosis and therefore requires a high index of suspicion."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Transrectal needle biopsy of the prostate was performed to evaluate the suspected malignancy, and histological examination definitively identified tuberculous lesions.",
+      "quote": "Trans-rectal needle biopsy of the prostate was performed and histological examination showed tuberculosis lesions."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5325492_01. Highlights isolated prostatic tuberculosis mimicking adenocarcinoma in an immunocompetent host, strictly terminating before transrectal biopsy."
+}

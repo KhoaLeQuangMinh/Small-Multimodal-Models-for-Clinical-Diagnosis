@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2640408_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Distinguishing an isolated pyogenic psoas abscess from tuberculous cold abscess (with or without bacterial co-infection) in an elderly woman presenting with subacute lumbar pain, limp, and marked inflammatory markers, where initial drainage grew pure Streptococcus anginosus and temporarily distracted from underlying Mycobacterium tuberculosis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial clinical evaluation, inflammatory laboratory indices (CBC, ESR, fibrinogen, ferritin, albumin), abdominal radiography, and abdominal CT showing the left psoas low-density mass, prior to percutaneous puncture/drainage, Gram/acid-fast stains, and microbiological cultures.\n3. Differential Distinctions: Isolated pyogenic psoas abscess was strongly suspected when percutaneous aspirate yielded pure S. anginosus, but persistent collection despite directed cephalosporin therapy pointed to an underlying co-pathogen; Retroperitoneal neoplasm or hematoma was considered given older age, anemia, and psoas mass, but ruled out by extraction of frank purulence and microbiological confirmation.",
+  "case_prompt": "A 70-year-old woman presents with a two-month history of progressive constitutional symptoms, pain in the lumbar region, and an antalgic limp.\n\nOn physical examination, her body temperature is 38.0 °C. Examination of the musculoskeletal and nervous systems demonstrates marked pain elicited upon active and passive flexion of the left hip (positive psoas sign). No other abnormal physical findings are identified.\n\nInitial laboratory studies show a hemoglobin level of 11.0 g/dL, a leukocyte count of 13,800/mm³ with 75% neutrophils, and a platelet count of 380,000/mm³. Acute phase reactants and serum proteins reveal an erythrocyte sedimentation rate (ESR) of 109 mm/hour, a serum fibrinogen level of 981 mg/dL, a serum ferritin level of 559 ng/mL, and a serum albumin level of 2.9 g/dL.\n\nPlain abdominal radiography reveals blurring of the left psoas muscle shadow. An abdominal computed tomography (CT) scan reveals a discrete low-attenuation mass within the left psoas muscle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Pyogenic Psoas Abscess (Streptococcus anginosus monoinfection)",
+      "rule_out_reason": "Although percutaneous drainage initially yielded Streptococcus anginosus in pure culture, targeted therapy with ceftriaxone for two weeks failed to resolve the collection on repeat CT, proving that the pyogenic isolate was masking a concomitant chronic pathogen.",
+      "quote": "Subsequently, Streptococcus anginosus was isolated in pure culture, using the API 20S system. MIC to penicillin was 0.03 microgr/ml. Treatment with ceftriaxone was initiated and the drainage maintained for 1 week. When a new CT scan conducted after two weeks of treatment showed persistence of the abscesses, surgical drainage was indicated."
+    },
+    {
+      "candidate": "Retroperitoneal Neoplasm / Psoas Muscle Hematoma",
+      "rule_out_reason": "A psoas mass in an elderly woman presenting with constitutional decline and anemia can mimic a retroperitoneal sarcoma or intramuscular hematoma, but needle drainage yielded frank purulent material rather than neoplasm or hemorrhage.",
+      "quote": "Abdominal CT scan revealed a mass of lower density in the left psoas. Percutaneous drainage was placed in the above-mentioned area, and purulent material was extracted."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous Psoas Abscess (Mycobacterium tuberculosis co-infection)",
+      "rule_out_reason": "The diagnostic pivot was the persistence of the psoas abscess despite targeted antibacterial therapy and drainage, culminating in the recovery of Mycobacterium tuberculosis on Lowenstein culture 45 days after the initial aspirate.",
+      "quote": "Forty-five days after admission, Lowenstein culture from the previous puncture yielded a positive result for Mycobacterium tuberculosis. Treatment with isoniazid, rifampicin and pyrazinamide was initiated, after which the patient's condition improved both clinically and radiologically."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case illustrates a tuberculous psoas abscess complicated by co-infection with Streptococcus anginosus. Initial identification of common pyogenic bacteria on aspirate cultures should not preclude consideration of tuberculous infection in patients with indolent courses and persistent collections unresponsive to standard antimicrobial therapy."
+}

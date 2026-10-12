@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10042474_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 67-year-old immunocompetent patient in Brazil who had previously completed standard course liposomal amphotericin B therapy presented during post-treatment surveillance with clinical recurrence of systemic symptoms at month six. Distinguishing late infectious relapse from drug failure, emergence of drug resistance, or secondary intercurrent infections is clinically critical in elderly patients following antimonial or amphotericin therapy.\n2. Admission Breakpoint: The admission breakpoint occurs during post-therapeutic surveillance at the onset of recurrent clinical symptoms, strictly prior to send-out quantitative real-time PCR (qPCR) kDNA testing and subsequent retreatment protocols.\n3. Differential Distinctions: Post-kala-azar dermal leishmaniasis (PKDL) or intercurrent opportunistic bacterial infections can arise following systemic antileishmanial therapy in endemic regions. Primary treatment failure typically manifests immediately during or at the close of therapy, whereas true clinical relapse in elderly immunocompetent hosts exhibits an asymptomatic interval followed by gradual recrudescence of systemic illness driven by latent reticuloendothelial parasite replication.",
+  "case_prompt": "A 67-year-old patient living in Brazil presented to the clinical service for scheduled post-treatment longitudinal surveillance. The patient had previously received and completed a full therapeutic course of liposomal amphotericin B for a severe systemic protozoal infection with initial clinical resolution. The patient was immunocompetent with no history of human immunodeficiency virus infection or other secondary immunodeficiencies.\n\nAt the three-month post-treatment evaluation, the patient was clinically asymptomatic. However, over the subsequent weeks leading into the sixth month of follow-up, the patient developed recrudescence of systemic symptoms, returning to the clinic with signs concerning for clinical recurrence.\n\nOn physical examination at the six-month evaluation, the patient appeared fatigued and exhibited systemic signs consistent with a recurring systemic febrile and reticuloendothelial syndrome.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Secondary intercurrent bacterial or opportunistic infection",
+      "rule_out_reason": "Considered in a post-treatment elderly patient with recurrent systemic symptoms, but ruled out as longitudinal molecular tracking demonstrated direct resurgence of the primary protozoal pathogen load rather than a secondary process.",
+      "quote": "One case of clinical relapse presented an increased parasite load before symptom onset."
+    },
+    {
+      "candidate": "Primary treatment failure / Refractory disease",
+      "rule_out_reason": "Considered when symptoms returned, but differentiated from primary failure because initial clinical remission had been achieved following liposomal amphotericin B, with relapse occurring late at month six.",
+      "quote": "a 67-year-old patient showed a 2-log increase in parasite load 3 months after treatment, and relapsed clinically at month six. Advanced age has been associated with relapse in immunocompetent patients treated with L-AmB."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Longitudinal surveillance utilizing quantitative real-time PCR (qPCR) detecting parasite kinetoplast DNA (kDNA) revealed a 2-log increase in circulating parasite load months before overt symptom onset, definitively establishing clinical relapse.",
+      "quote": "a 67-year-old patient showed a 2-log increase in parasite load 3 months after treatment, and relapsed clinically at month six... This study presents data on the detection of Leishmania kDNA using qPCR in a series of cases followed-up longitudinally after therapy."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation captures the post-treatment clinical surveillance of an elderly immunocompetent patient presenting with late symptom recurrence, strictly excluding kDNA qPCR results and pathogen nomenclature."
+}

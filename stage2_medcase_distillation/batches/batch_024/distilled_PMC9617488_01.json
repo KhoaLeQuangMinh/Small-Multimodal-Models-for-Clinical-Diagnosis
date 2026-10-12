@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9617488_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: An 8-year-old child in an endemic rural tropical region presents with prolonged high fever (>39.5 \u00b0C), sore throat, vomiting, and body aches, and is initially diagnosed with malaria and pneumonia. The diagnostic tension lies in distinguishing common endemic pediatric infections from the early stages of a rodent-borne viral hemorrhagic fever prior to fulminant orificial bleeding.\n\n2. Admission Breakpoint: The breakpoint occurs at initial presentation to the general outpatient department of the hospital, where vital signs and clinical triage screening prompt admission for malaria and pneumonia, strictly prior to the onset of mucosal bleeding from orifices on hospital day 2 and blood RT-PCR confirmation.\n\n3. Differential Distinctions: Severe malaria causes high fevers, vomiting, and myalgias and responds to antimalarials; community-acquired pneumonia explains fever, sore throat, and constitutional distress. Both fail to account for subsequent spontaneous bleeding from body orifices and lack of response to antimicrobial therapy in a child residing in a rodent-infested domicile.",
+  "case_prompt": "An 8-year-old male child presents to the general outpatient department of a district hospital after 8 days of persistent high-grade fever, generalized body aches, sore throat, and vomiting.\n\nEnvironmental assessment reveals that the child lives in an unpaved mud house in a wetland area situated near a community garbage dumping site. The household is crowded, food is poorly stored, and rodent droppings and rodent boreholes are observed within the home. Rubbish is scattered around the house. The child has no history of travel outside his village and no known contact with individuals diagnosed with acute viral epidemics.\n\nOn arrival at the hospital, the child appears acutely ill with an axillary temperature of 39.5 \u00b0C, pharyngeal erythema, and severe constitutional distress. Following clinical screening, the attending clinician admits the patient with working diagnoses of pneumonia and febrile parasitic syndrome.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Malaria",
+      "rule_out_reason": "Initial clinical triage in an endemic tropical region led to empiric treatment for malaria based on high fever, vomiting, and body aches; however, antimalarial therapy failed to stabilize the patient and acute hemorrhagic manifestations subsequently emerged.",
+      "quote": "On arrival at the hospital, the attending clinician screened the case-patient and diagnosed pneumonia and malaria, and recommended admission. The case patient was admitted to a hospital and treated for malaria and pneumonia."
+    },
+    {
+      "candidate": "Severe Bacterial Pneumonia with Sepsis",
+      "rule_out_reason": "Diagnosed alongside malaria at triage due to high fever, constitutional distress, and sore throat; however, empiric therapy was ineffective and the illness rapidly progressed to mucosal bleeding.",
+      "quote": "diagnosed pneumonia and malaria, and recommended admission. The case patient was admitted to a hospital and treated for malaria and pneumonia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "On the second hospital day, the emergence of spontaneous hemorrhage from mucosal orifices in a patient with household rodent infestation prompted suspicion of viral hemorrhagic fever, confirmed by positive blood RT-PCR for Lassa virus.",
+      "quote": "On 20th February 2019, Lassa fever was suspected when the case patient began to bleed from their orifices. A blood sample was collected and confirmed that the case patient was infected with Lassa fever."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero bleeding manifestations before breakpoint, zero RT-PCR in case prompt. Quotes exactly matched text."
+}

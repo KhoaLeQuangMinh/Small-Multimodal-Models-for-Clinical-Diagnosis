@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11794079_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old grand multiparous woman presents with severe constitutional wasting and a protruding vaginal mass, initially misdiagnosed at a primary health facility as uterovaginal prolapse. The key tension is differentiating a benign pelvic organ prolapse or rare benign/malignant vaginal wall neoplasm from isolated female genital extrapulmonary tuberculosis in an individual with no respiratory symptoms, normal chest radiograph, and no prior tubercular history.\n2. Admission Breakpoint: Evaluation concludes following admission vital signs, pelvic examination, routine laboratory studies, chest radiography, and pelvic ultrasonography, immediately prior to fine-needle aspiration of the cystic mass.\n3. Differential Distinctions: Uterovaginal prolapse presents with vaginal descent of the cervix, uterus, or bladder (cystocele), but pelvic ultrasound and pelvic examination showed normal uterine and bladder positioning. Vaginal wall cyst (Gartner's duct cyst, inclusion cyst) or mesenchymal neoplasm (leiomyoma, sarcoma) presents as an isolated wall lesion, but aspiration of the mass reveals purulent exudate with acid-fast bacilli and positive culture confirming granulomatous tuberculosis.",
+  "case_prompt": "A 35-year-old woman (para 5) presented for hospital evaluation with a 1-year history of a progressively enlarging bulging mass protruding from the vagina. She reported accompanying severe loss of appetite, an unintentional 30% loss of body weight, and severe dyspareunia with discomfort during intercourse. All five of her prior deliveries had been vaginal, with the youngest child being 4 years old, after which she had been using depot medroxyprogesterone acetate injections for contraception. She had no prior personal history of chronic pulmonary illness or known sick contacts. She had initially presented to a primary health center, where she had been told that her diagnosis was uterovaginal prolapse and referred for further evaluation.\n\nOn physical examination, her vital signs were within normal limits. However, she appeared severely emaciated, weighing 35 kg with a body mass index (BMI) of 13 kg/m².\n\nExamination of the external genitalia revealed a 5 × 4 cm pink, smooth, non-tender protruding mass extending outside the introitus, arising specifically from the mid-anterior vaginal wall and exhibiting a cystic consistency. The urethral meatus, distal and proximal anterior vaginal walls, lateral and posterior vaginal walls, vaginal fornices, and uterine cervix were entirely normal in appearance and position.\n\nLaboratory workup demonstrated an erythrocyte sedimentation rate (ESR) of 100 mm/h, and a complete blood count showed lymphocytosis. A plain chest radiograph was normal, showing clear lung fields with no consolidation or cavitary lesions. Pelvic ultrasonography demonstrated a completely normal size and outline of the urinary bladder, uterus, and adnexa.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uterovaginal prolapse (cystocele / uterine descent)",
+      "rule_out_reason": "Considered the initial referral diagnosis from the community clinic given her grand multiparity and protruding introital mass; however, detailed gynecologic examination and pelvic ultrasonography confirmed normal positioning of the uterus, cervix, and urinary bladder, identifying the lesion as an isolated mid-anterior vaginal wall mass.",
+      "quote": "For these complaints, she visited a health center and was referred for further evaluation after she was told that her diagnosis was uterovaginal prolapse."
+    },
+    {
+      "candidate": "Benign vaginal cyst or vaginal soft tissue neoplasm",
+      "rule_out_reason": "Considered given the smooth, cystic appearance of the mass arising from the anterior vaginal wall in an emaciated patient; however, fine needle aspiration yielded purulent material positive for acid-fast bacilli rather than benign cystic fluid or malignant spindle cells.",
+      "quote": "Pelvic ultrasound revealed a normal size and outline of the urinary bladder, uterus, and adnexa (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine needle aspiration of the anterior vaginal wall mass served as the decisive turning point, demonstrating acid-fast bacilli on Ziehl-Neelsen staining with confirmatory culture, resulting in complete disappearance of the lesion and weight restoration on standard anti-tuberculosis therapy.",
+      "quote": "Fine needle aspiration was done on the cystic mass (Figure 3) and using Ziehl Neelson Staining, microscopy showed Acid-Fast Bacilli (Figure 4). The sample was sent for culture, and tuberculosis was confirmed."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to fine needle aspiration. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

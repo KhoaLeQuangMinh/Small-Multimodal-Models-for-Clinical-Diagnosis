@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9577070_01",
+  "disease": "Leptospirosis, Tuberculosis",
+  "think": "1. Core Clinical Tension: A 75-year-old rural man presenting with acute respiratory distress, severe bilateral calf/thigh myalgias, watery diarrhea, thrombocytopenia, and oliguric acute renal failure, reflecting an acute life-threatening zoonotic sepsis (Weil disease) complicated by underlying subacute pulmonary tuberculosis.\n2. Admission Breakpoint: The presentation ends after admission to the infectious ICU (Day 1), following initial physical exam, baseline hematology (neutrophilic leukocytosis, thrombocytopenia), severe renal failure (creatinine 464 μmol/L), and admission chest CT showing bilateral infiltrates, prior to sputum Xpert MTB/RIF, lumbar puncture, metagenomic NGS, and CDC Leptospira serology.\n3. Differential Distinctions: Cryptococcal meningitis or CNS tuberculosis was ruled out when acute encephalopathy developed by normal CSF examination and negative fungal/mycobacterial panels; isolated pulmonary tuberculosis was ruled out as a sole etiology because it could not explain acute watery diarrhea, severe calf myalgias, acute thrombocytopenia, fulminant renal shutdown, and the Jarisch-Herxheimer reaction triggered by antibiotics; the diagnostic pivot was sputum Xpert confirming Mycobacterium tuberculosis alongside plasma, urine, and CSF mNGS and CDC ELISA IgG confirming Leptospira interrogans.",
+  "case_prompt": "A 75-year-old man from rural Zhejiang Province, China, presented to the hospital with a six-day history of fever and productive cough with yellow tenacious sputum, and a five-day history of watery diarrhea occurring four to five times daily. His gastrointestinal symptoms were accompanied by severe, debilitating muscle pain in both thighs and shanks. Prior to arrival, he had been evaluated at an outpatient clinic for high fevers up to 39.0 °C and treated empirically with intravenous piperacillin-tazobactam, levofloxacin, and fluids, but developed worsening chest tightness, progressive oliguria, and respiratory distress. On admission to the infectious intensive care unit, his body temperature was 37.2 °C, pulse rate 83 beats/min, blood pressure 100/54 mmHg, and respiratory rate 18 breaths/min. He was conscious and alert. Sclerae and skin were non-icteric without spider angiomas or rashes. The neck was supple and without jugular venous distention. Lung auscultation revealed abnormal coarse breath sounds bilaterally with occasional moist rales in the right lower lobe. Cardiac and abdominal examinations were normal, with no hepatosplenomegaly, peritoneal signs, or peripheral edema. Admission laboratory testing demonstrated a white blood cell count of 11.43 x 10^9/L with 92.4% neutrophils, hemoglobin 88 g/L, thrombocytopenia with a platelet count of 86 x 10^9/L, and C-reactive protein of 165.53 mg/L. Serum chemistry revealed acute renal failure with a serum creatinine of 464 μmol/L, total protein 52.8 g/L, albumin 26.6 g/L, and total bilirubin 22.1 μmol/L. Initial chest computed tomography (CT) demonstrated bilateral pulmonary infiltrates and consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cryptococcal Meningitis or Central Nervous System Mycobacterial Infection",
+      "rule_out_reason": "Considered when the patient developed acute agitation, restlessness, and delirium while undergoing continuous renal replacement therapy, but lumbar puncture analysis demonstrated normal CSF opening pressure, normal protein/glucose, and absence of cryptococcal or mycobacterial organisms.",
+      "quote": "On day 4, lumbar puncture was conducted with a CSF opening pressure of 50 mmH2O. CSF examination was as follows: WBC, 2 x 106 cells/L; protein, 0.30 g/L; chloride, 127 mmol/L; and glucose, 5.2 mmol/L. There was neither Cryptococcus neoformans nor MTBC (via Xpert MTB RIF) detected."
+    },
+    {
+      "candidate": "Isolated Pulmonary Tuberculosis Monoinfection",
+      "rule_out_reason": "Although active pulmonary mycobacterial infection was verified in sputum, isolated pulmonary tuberculosis failed to account for acute watery diarrhea, severe bilateral thigh and calf myalgias, thrombocytopenia, fulminant oliguric renal failure, and acute encephalopathy following broad-spectrum antibiotic administration.",
+      "quote": "In combination with the heightened inflammation in bilateral lungs shown by the chest CT screen on day 4 ( Figure 1B ) as well as mental changes of the patient developed during the administration of sulperazone and moxifloxacin, the Jarisch-Herxheimer reaction (JHR) and leptospirosis-induced encephalopathy were of high suspicion."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum molecular testing confirmed Mycobacterium tuberculosis complex, whereas plasma, urine, and CSF metagenomic next-generation sequencing along with CDC ELISA IgG confirmed Leptospira interrogans, establishing concurrent coinfection.",
+      "quote": "This was in accordance with the positive screening for Leptospira in blood samples of the patient that were collected on day 3 and detected using the Serion ELISA classic Leptospira immunoglobulin G (IgG) kit by the Wenzhou Center for Disease Control and Prevention (reported on day 4 after samples being sent for mNGS)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis, Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Superior distillation capturing a complex dual-pathogen infection. Admission presentation stops cleanly on Day 1 before molecular diagnostics, highlighting the severe triad of respiratory disease, myalgias/diarrhea, and acute renal failure."
+}

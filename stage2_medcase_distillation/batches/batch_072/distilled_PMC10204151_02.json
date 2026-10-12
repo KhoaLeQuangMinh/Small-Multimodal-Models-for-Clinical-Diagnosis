@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10204151_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 44-year-old woman in an emergency department presents with a 10-day history of high fevers, chills, hypotension, acute kidney injury, jaundice, and thrombocytopenia. Nasal swab RT-qPCR confirms SARS-CoV-2 infection with subtle pulmonary opacities, which risks anchoring the clinical diagnosis on COVID-19 alone; however, the degree of hepatosplenomegaly, severe thrombocytopenia (47,000/microL), elevated LDH, and hyperbilirubinemia disproportionately exceed what would be expected from minimal viral pulmonary involvement (<5%).\n2. Admission Breakpoint: The breakpoint occurs following ICU admission with baseline laboratory panel (CBC showing platelets 47,000/microL, chemistry showing creatinine 1.6 mg/dL, bilirubin 2.0 mg/dL, LDH 854 U/L), positive SARS-CoV-2 nasal swab RT-qPCR, and chest CT, immediately before peripheral blood rapid testing and microscopy for hemoparasites.\n3. Differential Distinctions: Isolated COVID-19 cytokine storm or severe viral pneumonia was strongly considered given confirmed positive SARS-CoV-2 RT-qPCR; however, lung involvement was minimal (<5%), while hepatosplenomegaly, hemolytic markers (LDH 854 U/L, indirect hyperbilirubinemia), and profound thrombocytopenia demanded investigation for concurrent parasitic infection. Sepsis from bacterial sources was also in the differential, but unrevealed by focal findings.",
+  "case_prompt": "A 44-year-old woman with a history of mild hypertension presents to the emergency department with a 10-day history of persistent fever, rigors, headache, diffuse myalgias, asthenia, and weight loss. Her child was recently hospitalized with severe acute febrile illness. On arrival, she is hypotensive with a blood pressure of 95/70 mm Hg, which improves following intravenous crystalloid rehydration, prompting transfer to the intensive care unit for close hemodynamic monitoring.\n\nPhysical examination reveals mild scleral icterus, hepatomegaly, and splenomegaly. Cardiac and pulmonary examinations are normal without signs of respiratory distress.\n\nAdmission laboratory studies reveal: hemoglobin 10.1 g/dL, hematocrit 27.5%, white blood cell count 4,670/mm^3 (79% segmented neutrophils), and platelet count 47,000/microL. Coagulation profile shows an INR of 1.0. Biochemical testing shows C-reactive protein 151.2 mg/L, total bilirubin 2.0 mg/dL (direct bilirubin 1.2 mg/dL), gamma-glutamyl transferase 86 U/L, aspartate aminotransferase 18 U/L, glutamic-oxaloacetic transaminase 38 U/L, blood urea nitrogen 53 mg/dL, and serum creatinine 1.6 mg/dL. Serum electrolytes show sodium 125 mEq/L and potassium 2.6 mEq/L; creatine phosphokinase is 188 U/L and lactate dehydrogenase is 854 U/L. A nasopharyngeal RT-qPCR returns positive for SARS-CoV-2. A chest CT scan demonstrates subtle ground-glass opacities involving less than 5% of lung parenchyma with a laminar pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Severe COVID-19 / SARS-CoV-2 Sepsis",
+      "rule_out_reason": "Although the patient had a positive nasopharyngeal SARS-CoV-2 RT-qPCR, chest imaging showed minimal pulmonary involvement (<5%), which was insufficient to explain the profound thrombocytopenia, jaundice, hepatosplenomegaly, and hyperferritinemic cytokine storm profile.",
+      "quote": "The SARS-CoV-2 RT-qPCR results were positive with a nasal swab. Chest computed tomography revealed small ground-glass opacities with less than 5% involvement and laminar pleural effusion."
+    },
+    {
+      "candidate": "Sepsis with Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "While hypotension, thrombocytopenia, and renal impairment were present, the patient maintained a normal INR of 1.0 without overt bleeding, pointing to acute hemolysis and splenic sequestration rather than consumptive coagulopathy.",
+      "quote": "Laboratory tests on admission revealed hemoglobin 10.1 g/dL; hematocrit 27.5%; leukocytes 4,670/mm3 (segmented 79%); platelets 47,000/microL; INR 1.0; C-reactive protein 151.2; total bilirubin 2.0 mg/dL (direct bilirubin 1.2 mg/dL)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid diagnostic testing and quantitative blood smear microscopy demonstrated heavy intraerythrocytic Plasmodium vivax parasitemia (2,078.15 parasites/microL, two crosses), confirming acute co-infection.",
+      "quote": "P. vivax was identified using a rapid malaria test and confirmed by microscopy and qPCR after genomic DNA extraction from slides (). A thin blood-smear examination identified 2078.15 parasites/microL of blood, parasitemia of two crosses."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation clearly delineates true viral coinfection vs protozoal parasitemia. Admission breakpoint set prior to blood smear and rapid antigen testing."
+}

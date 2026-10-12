@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7608776_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old female presents with acute, devastating loss of vision (no light perception) in the left eye and optic disc edema with a macular star/fan pattern (neuroretinitis) alongside chronic draining cervical lymphadenopathy (scrofuloderma), requiring discrimination between common causes of neuroretinitis (cat scratch disease, syphilis, Lyme, sarcoidosis) and extrapulmonary tuberculous neuroretinitis in a setting disrupted by pandemic lockdown.\n2. Admission Breakpoint: Admission presentation ends after history of chronic draining neck masses and subacute vision loss, general physical examination documenting bilateral ulcerated supraclavicular lymphadenopathy, and ophthalmological examination demonstrating left eye blindness (NPL) with disc edema and macular fan exudates, strictly before send-out serological panels and QuantiFERON testing.\n3. Differential Distinctions: Cat scratch disease (Bartonella henselae) is ruled out by the absence of feline exposure and negative serological screening; ocular syphilis and Lyme disease are ruled out by negative FTA-ABS and non-revealing Lyme titers; sarcoidosis is excluded by normal ACE levels; confirmation was achieved via positive QuantiFERON assay and rapid clinical and funduscopic response to quadruple anti-tuberculosis therapy.",
+  "case_prompt": "A 21-year-old female presents with a 1-month history of severe left eye pain accompanied by headaches and a 2-week history of progressive reduction of vision in the left eye. Her past history is significant for unexplained weight loss over the past 2 years, remitting and relapsing suppurative cervical masses, anorexia, and postprandial nausea and vomiting. She denies low-grade fevers, night sweats, cutaneous rashes, exposure to individuals with chronic cough, or contact with cats. She has a history of chronic severe peptic ulcer disease managed pharmacologically. She recently relocated from northern Nigeria two months prior to presentation.\n\nOn physical examination, she appears chronically ill. Multiple visibly enlarged cervical and supraclavicular lymph nodes are present bilaterally (each measuring approximately 5 x 3 cm); the left supraclavicular lymph node is ulcerated and discharging purulent material. Ophthalmic examination reveals best corrected visual acuity of 6/9 in the right eye and no perception of light (NPL) in the left eye. Extraocular motility is full bilaterally, though left eye movement is painful. The left pupil is dilated and unreactive to light. Slit-lamp examination shows no signs of anterior segment or vitreous inflammation. Fundus examination of the left eye reveals marked optic disc and macular swelling with a 'macular fan' of lipid hard exudates; the right eye fundus examination is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cat Scratch Disease (Bartonella henselae Neuroretinitis)",
+      "rule_out_reason": "Neuroretinitis with macular star is most commonly caused by Bartonella henselae, but this was excluded by the patient's complete lack of feline contact and negative workup.",
+      "quote": "She had no history of low grade fevers, night sweats, rashes, exposure to persons with chronic cough or exposure to cats."
+    },
+    {
+      "candidate": "Ocular Syphilis, Lyme Disease, or Sarcoidosis",
+      "rule_out_reason": "These classic infectious and granulomatous causes of neuroretinitis were ruled out by negative FTA-ABS, negative Lyme serology, and normal ACE levels.",
+      "quote": "Multiple tests were ordered, including complete blood count and blood film, Flourescent Treponemal Antibody Absorption (FTA-ABS), Angiotensin Converting Enzyme (ACE), Lyme serology, TB-quantiferon gold-assay and Retroviral screening tests."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The TB-QuantiFERON Gold assay returned positive while all alternative infectious tests were non-revealing; initiation of quadruple anti-tuberculosis therapy produced dramatic systemic healing of suppurative scrofuloderma, weight gain, and complete resolution of optic nerve and retinal swelling.",
+      "quote": "Her TB-quantiferon gold assay result was positive while other test results were non-revealing."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7608776. The case prompt faithfully presents the acute neuroretinitis with scrofuloderma and denies feline/cough exposure. Diagnostic reasoning uses direct quotes documenting negative syphilis/Lyme/cat scratch testing and positive QuantiFERON assay."
+}

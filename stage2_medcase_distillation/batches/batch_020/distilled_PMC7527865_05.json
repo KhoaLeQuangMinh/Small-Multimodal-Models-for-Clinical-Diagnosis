@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7527865_05",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 30-year-old HIV-negative man with a remote history of a cured solitary leg ulcer who presents six years later with disseminated papular, nodular, and mucosal ulcerations accompanied by systemic B-symptoms (fever, headache, weight loss), raising suspicion for disseminated histoplasmosis, secondary syphilis, or lymphoma in an apparently immunocompetent host.\n2. Admission Breakpoint: The breakpoint occurs in 2014 when the patient presented with a new papule on the right inferior eyelid that rapidly progressed to widespread cutaneous and oral ulcerations, prior to molecular testing and systemic antifungal/antimonial therapy.\n3. Differential Distinctions: Disseminated fungal infections and treponemal disease cause widespread papulonodular skin lesions and oral ulcerations with constitutional symptoms; however, the patient was confirmed HIV-negative without concomitant infections, and molecular PCR directly identified Leishmania braziliensis.",
+  "case_prompt": "A 30-year-old Caucasian man, currently unemployed, presents to the clinic with widespread, eruptive skin lesions and painful mouth ulcers accompanied by systemic symptoms. Six years earlier, he was treated for an isolated skin nodule on his right leg with a 20-day course of targeted antimicrobial therapy, which resulted in complete lesion resolution. He remained well until recently, when a new papule appeared on the inferior eyelid of his right eye. Over the subsequent weeks, similar lesions rapidly erupted across multiple body surfaces, including his chest, abdomen, back, and feet, associated with fever, headache, and unintended weight loss.\n\nOn physical examination, the patient is febrile and appears fatigued. Cutaneous examination reveals multiple papular and nodular lesions distributed across the chest, abdomen, back, feet, and right lower eyelid. Oral examination reveals multiple painful ulcerations involving the hard palate as well as the bilateral buccal (jugal) mucosa. Preliminary screening confirms the patient is HIV-negative with no other documented infectious history.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated opportunistic fungal infection (e.g., Histoplasmosis, Cryptococcosis) or Kaposi Sarcoma",
+      "rule_out_reason": "Widespread mucocutaneous ulcerations with fever and weight loss typically suggest severe immunodeficiency or disseminated fungal disease, but the patient was documented to be immunocompetent and free of other infections.",
+      "quote": "HIV - negative, with no other concomitant infections"
+    },
+    {
+      "candidate": "Secondary / Tertiary Syphilis or Systemic Granulomatous Vasculitis",
+      "rule_out_reason": "Multifocal papular rash with mucosal mucous patches and constitutional symptoms mimics treponemal dissemination, but progression occurred in a patient with established reactivity to endemic protozoa without secondary co-infections.",
+      "quote": "Progression of disease was associate with fever, headache and weight loss."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Mucocutaneous Leishmaniasis (Disseminated Leishmania braziliensis)",
+      "rule_out_reason": "Definitive diagnosis was established by PCR positivity for Leishmania braziliensis from the eyelid lesion, confirming mucosal and cutaneous dissemination that ultimately achieved complete remission after liposomal amphotericin B.",
+      "quote": "Patient was PCR positive for Leishmania brasiliensis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly stops before PCR results and medical management. Verbatim quotes verify HIV negativity and molecular diagnosis."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7771502_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 4-year-old boy from São Paulo presents with subacute progressive paraparesis, bowel incontinence, and urinary retention over one month. Spine MRI reveals an expansile, heterogeneously enhancing intramedullary mass in the conus medullaris with associated extensive syringomyelia. The primary clinical challenge is distinguishing an aggressive pediatric intramedullary spinal cord neoplasm (such as high-grade astrocytoma or ependymoma) from an endemic helminthic granulomatous myelopathy.\n2. Admission Breakpoint: The admission evaluation concludes after emergent neurological exam and thoracolumbar MRI defining the conus medullaris mass and T9–T12 syrinx, prior to decompressive laminectomy, intraoperative biopsy/frozen section, and histological parasite identification.\n3. Differential Distinctions: High-grade intramedullary glioma or ependymoma classically presents with progressive myelopathy, cord expansion, syringomyelia, and heterogeneous contrast enhancement, but shows malignant cellular pleomorphism and GFAP positivity on histology. Spinal tuberculosis (tuberculoma) can form intramedullary granulomas but is characterized by caseation, mycobacterial identification, and lack of trematode eggs on microscopic examination.",
+  "case_prompt": "A 4-year-old autistic boy residing in São Paulo, Brazil, presented to the emergency department with a one-month history of progressive lower extremity weakness, loss of bowel control (fecal incontinence), and acute-on-chronic urinary retention.\n\nOn physical examination, the child was alert and interactive, with intact cranial nerve function. Neurological evaluation revealed a spastic motor paraparesis with lower extremity muscle strength graded 3/5 bilaterally, accompanied by a distended bladder due to urinary retention requiring catheterization.\n\nEmergent thoracolumbar magnetic resonance imaging (MRI) was performed. T2-weighted sequences demonstrated an expansile intramedullary mass centered in the conus medullaris associated with a prominent syringomyelic cavity extending from T9 through T12. Post-contrast T1-weighted images demonstrated marked, heterogeneous nodular contrast enhancement of the conus medullaris lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramedullary spinal cord tumor / High-grade glioma or ependymoma",
+      "rule_out_reason": "Considered the primary preoperative concern because an expansile, heterogeneously enhancing conus medullaris mass with extensive syrinx formation in a preschool child typically indicates an aggressive intrinsic neuroepithelial neoplasm. However, surgical inspection and biopsy demonstrated chronic granulomatous tissue without neoplastic glial proliferation.",
+      "quote": "When the T12-L2 laminectomy was performed, the lesion appeared reddish and infiltrative, simulating a high-grade glioma."
+    },
+    {
+      "candidate": "Intramedullary spinal tuberculoma",
+      "rule_out_reason": "Considered because chronic granulomatous infectious myelopathy in an endemic South American setting often suggests tuberculous involvement of the spinal cord or conus medullaris. However, histopathology identified parasite eggs rather than acid-fast organisms or caseating tubercular granulomas.",
+      "quote": "The intraoperative frozen sections revealed a chronic granulomatous infectious process."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive histopathologic analysis of the resected conus medullaris tissue identified granulomatous inflammation centered around Schistosoma mansoni ova, establishing spinal cord schistosomiasis and prompting curative therapy with praziquantel.",
+      "quote": "when the final pathology confirmed conus medullaris schistosomiasis, the patient underwent subsequent treatment with praziquantel (20 mg/kg) [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pediatric conus medullaris intramedullary schistosomiasis with syringomyelia mimicking high-grade spinal glioma. All surgical pathology, frozen section details, pathogen names, and anti-parasitic treatment excluded from case_prompt."
+}

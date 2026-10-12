@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11669990_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young adult male undergoing therapy following a confirmed diagnosis of severe renal granulomatous disease develops progressive headaches and nausea. In a patient with known chronic visceral infection, new intracranial hypertension symptoms create diagnostic tension between a primary posterior fossa neoplasm, pyogenic brain abscess, paradoxical intracranial reaction, and hematogenous central nervous system tuberculoma.\n2. Admission Breakpoint: The admission breakpoint is established upon acute evaluation of new neurologic symptoms (headache, nausea), prior to obtaining neuroimaging (brain MRI) and identifying the intracranial cerebellar mass.\n3. Differential Distinctions: Posterior fossa neoplasms (such as cerebellar astrocytoma or hemangioblastoma) present with headache, vomiting, and ataxia, but neuroimaging and clinical context confirm an infectious granuloma. Pyogenic bacterial cerebellar abscess typically occurs in the setting of acute otitis media or bacterial endocarditis with marked fever and rapid liquefactive necrosis. The diagnostic pivot is established by brain MRI demonstrating a solitary right cerebellar tuberculoma directly linked to systemic dissemination from primary renal tuberculosis.",
+  "case_prompt": "A man in his late 20s who is undergoing clinical care following an extensive evaluation and diagnosis of severe multilesional renal granulomatous disease presents to the outpatient clinic with new-onset, progressive headaches accompanied by nausea. He denies recent head trauma, photophobia, fever, stiff neck, or seizures.\n\nOn physical examination, the patient is alert and oriented. Vital signs are within normal limits. Neurological examination reveals cranial nerves II through XII to be intact, with no gross cerebellar dysmetria, tremors, or gait ataxia on initial bedside testing. Fundoscopic examination does not show obvious papilledema, and meningeal signs are absent.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Posterior Fossa Brain Neoplasm / Metastatic Disease",
+      "rule_out_reason": "New-onset persistent headache with nausea in a young adult raises concern for an expanding intracranial neoplasm such as a cerebellar astrocytoma; however, neuroimaging confirmed a solitary inflammatory granulomatous mass rather than a neoplastic process.",
+      "quote": "A magnetic resonance imaging (MRI) scan of the brain revealed a solitary right cerebellar tuberculoma"
+    },
+    {
+      "candidate": "Pyogenic Bacterial Cerebellar Abscess",
+      "rule_out_reason": "Hematogenous seeding causing a bacterial brain abscess was considered given the patient's underlying chronic visceral disease; however, the absence of acute systemic bacteremia or suppurative ring-enhancing liquefactive abscess supported a chronic granulomatous etiology.",
+      "quote": "treated with rifater, ethambutol and pyridoxine plus dexamethasone to reduce cerebral swelling."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Central Nervous System Tuberculosis (Solitary Cerebellar Tuberculoma)",
+      "rule_out_reason": "The diagnosis was confirmed by brain magnetic resonance imaging (MRI) identifying a solitary right cerebellar tuberculoma occurring as a hematogenous central nervous system complication of renal tuberculosis, managed successfully with targeted antitubercular therapy and dexamethasone.",
+      "quote": "Following diagnosis of renal TB, the patient began to suffer from headaches with associated nausea. A magnetic resonance imaging (MRI) scan of the brain revealed a solitary right cerebellar tuberculoma and he was treated with rifater, ethambutol and pyridoxine plus dexamethasone to reduce cerebral swelling."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case follows Stanford MedCaseReasoning methodology. Case prompt terminates prior to neuroimaging revealing the cerebellar tuberculoma."
+}

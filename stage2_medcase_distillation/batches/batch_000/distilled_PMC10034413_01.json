@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10034413_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 41-year-old chronic smoker presents with a large spontaneous pneumothorax and persistent air leak, easily mistaken for common smoking-related primary spontaneous pneumothorax or underlying occult malignancy. The presence of baseline peripheral eosinophilia, chronic pulmonary symptoms, and outdoor river exposure in Missouri provides the critical clue to an unsuspected parasitic pulmonary infection.\n2. Admission Breakpoint: Admission triage ends following initial emergency thoracostomy tube placement, initial chest radiograph, and baseline CBC revealing peripheral eosinophilia (AEC 610.7 cells/microL), prior to advanced surgical intervention and histopathologic tissue examination.\n3. Differential Distinctions: Distinguished from primary spontaneous pneumothorax by failure of conservative chest tube re-expansion, persistent eosinophilia, and tissue demonstration of chronic granulomatous inflammation with operculated parasite eggs; distinguished from pulmonary malignancy by negative surgical histopathology and rapid clinical resolution following antihelminthic therapy.",
+  "case_prompt": "A 41-year-old male with no prior medical history presented to an urgent care clinic with progressive dyspnea exacerbated by exertion, occasional wheezing of three weeks' duration, and intermittent diarrhea for the preceding six months. He also reported a chronic nonproductive cough over the past five years and noted that his daughter had recently been treated for streptococcal pharyngitis. The patient had resided in Missouri for most of his life and worked as a mover. He reported an extensive outdoor recreation history, including river rafting and hunting along the Missouri River, during which wild game was consumed. He was an active cigarette smoker with a 30 pack-year history, consumed beer and marijuana occasionally, and reported a family history significant for lung cancer in his father.\n\nOn physical examination, he was mildly tachycardic with a heart rate of 109 beats per minute; other vital signs were stable. Auscultation revealed complete absence of breath sounds throughout the left hemithorax. Triage chest radiography demonstrated a large left-sided pneumothorax without tension physiology. A 20-French chest tube was urgently inserted into the left fourth intercostal space. Initial complete blood count with differential revealed a leukocyte count with elevated eosinophils at 5.9% and an absolute eosinophil count (AEC) of 610.7 cells/microL. The complete metabolic panel was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Spontaneous Pneumothorax (Bullous Disease)",
+      "rule_out_reason": "Initially considered the primary clinical diagnosis given the patient's substantial 30 pack-year smoking history and male sex; however, the presence of persistent peripheral eosinophilia, unresolving air leak requiring surgical exploration, and intraoperative tissue evaluation revealed marked granulomatous pleuritis rather than benign emphysematous apical blebs.",
+      "quote": "The primary impression was of a primary spontaneous pneumothorax with persistent air leak for the last three weeks."
+    },
+    {
+      "candidate": "Bronchogenic Malignancy",
+      "rule_out_reason": "Considered in light of heavy tobacco use, chronic five-year cough, and a positive paternal family history of lung cancer; however, tissue biopsies demonstrated non-malignant chronic granulomatous pathology with parasitic structures.",
+      "quote": "His family history was significant for lung cancer in his father."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Video-assisted thoracoscopic wedge resection and pleural biopsy revealed operculated trematode eggs embedded within granulomatous inflammation, establishing the diagnosis of endemic pulmonary trematodiasis.",
+      "quote": "LLL and LUL wedge resection and left parietal pleura histopathology revealed multiple parasite eggs (consistent with Paragonimus kellicotti), severe chronic granulomatous inflammation with fibrosis, negative for malignancy and changes consistent with pneumothorax (Fig. 3, Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Confirmatory surgical tissue pathology and organism names are withheld from case_prompt. Direct verbatim quotes ground each differential exclusion."
+}

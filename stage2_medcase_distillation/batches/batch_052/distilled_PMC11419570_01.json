@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11419570_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old male presents with a two-year history of recurrent, indolent, painless cervical subcutaneous nodules that periodically break down into draining fistulas and spontaneously scar over. Matted cervical lymphadenopathy with sinus tract formation is classic for scrofuloderma, but the indolent, recurrent course and lack of pulmonary symptoms can lead to misdiagnosis as chronic pyogenic abscess, actinomycosis, or atypical lymphoproliferative disease.\n2. Admission Breakpoint: The admission narrative concludes after physical examination of the matted cervical adenopathy and normal chest radiography, immediately prior to diagnostic needle aspiration, pus cytology, and cartridge-based molecular nucleic acid amplification.\n3. Differential Distinctions: Acute bacterial suppurative lymphadenitis presents with acute painful erythematous swelling, systemic fevers, and rapid progression. Cervical lymphoma causes painless rubbery or matted adenopathy, but lacks spontaneous skin ulceration, chronic caseous discharging fistulas, and cyclical scar formation. Cutaneous actinomycosis can present with chronic cervicofacial draining sinuses, but typically exhibits sulfur granules and indurated woody swelling following odontogenic trauma.",
+  "case_prompt": "A 26-year-old male presents to the clinic with a chronic history of recurrent, painless neck swellings over the preceding two years. Two years prior to presentation, he noted several painless subcutaneous nodules developing on the right side of his neck; approximately two months following their emergence, the nodules ulcerated through the skin, formed discharging fistulous tracts draining purulent fluid, and then spontaneously closed and scarred over four months. Six months later, similar swellings began appearing on the contralateral left side of his neck and have progressively enlarged. He reports no fever, weight loss, night sweats, or chronic cough.\n\nOn physical examination, the patient is well-appearing and afebrile. Head and neck examination reveals a distinct 4 cm x 3 cm swelling in the left cervical region associated with multiple adjacent small, matted lymph nodes with overlying cutaneous tethering. The remainder of the physical examination, including systemic lymph node basins, is unremarkable.\n\nA plain chest radiograph demonstrates clear lung parenchyma without focal consolidations, cavitary lesions, or intrathoracic lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent Pyogenic Bacterial Lymphadenitis / Chronic Cervical Abscess",
+      "rule_out_reason": "Pyogenic bacterial infections typically present acutely with marked pain, warmth, erythema, and systemic toxicity, unlike this patient's 2-year indolent progression characterized by cold ulceration, chronic fistulization, and spontaneous cicatrix formation.",
+      "quote": "A 26-year-old male presented with a history of several painless lumps on the right side of the neck that began two years ago ulcerated about two months later, formed secreting fistulas, and then spontaneously healed after four months."
+    },
+    {
+      "candidate": "Hodgkin or Non-Hodgkin Lymphoma",
+      "rule_out_reason": "Matted, painless cervical adenopathy in a young male can be a presentation of lymphoma, but lymphoproliferative malignancies do not spontaneously form secreting fistulous tracts that ulcerate and cyclically heal over years.",
+      "quote": "On examination, a 4cm x 3cm swelling was palpated in the left cervical region along with other small, matted lymph nodes"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous needle aspiration of the matted cervical mass yielded purulent exudate that tested definitively positive for Mycobacterium tuberculosis with rifampicin resistance via cartridge-based nucleic acid amplification testing (GeneXpert CB-NAAT).",
+      "quote": "The pus aspirated from the lymph node tested positive for mycobacteria tuberculosis and rifampicin resistance using the cartridge-based nucleic acid amplification test (CB-NAAT, GeneXpert)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly stops at the admission triage boundary before needle aspiration and molecular testing. Clean presentation without pathogen or disease mentions. Exact quotes verified."
+}

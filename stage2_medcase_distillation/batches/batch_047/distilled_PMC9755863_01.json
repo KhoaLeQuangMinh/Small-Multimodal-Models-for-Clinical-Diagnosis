@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9755863_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 6-year-old boy presents with prolonged fever, cervical adenopathy, petechiae, oral thrush, and severe pancytopenia satisfying full clinical and biochemical criteria for hemophagocytic lymphohistiocytosis (HLH: ferritin >87,000 ng/mL, hypofibrinogenemia, hypertriglyceridemia, splenomegaly). Initial chest imaging suggested acute miliary tuberculosis, but examination of blood and marrow smears unmasked intracellular fungal yeast forms, revealing opportunistic disseminated talaromycosis driven by an underlying inborn immunodeficiency (CD40LG and CARD9 variants).\n2. Admission Breakpoint: Admission triage terminates after admission physical exam (oral thrush, crackles, petechiae, abdominal distension), baseline labs (hsCRP 88.25 mg/L, procalcitonin 6.65 ng/mL, pancytopenia, ferritin, fibrinogen, triglycerides, negative HIV), and initial CT/endoscopy, prior to bone marrow cytology, BALF mNGS, fungal cultures, or exome sequencing.\n3. Differential Distinctions: Acute miliary pulmonary tuberculosis was initially suspected based on chest radiography, but excluded when extensive examinations failed to detect mycobacteria and broad antibiotics produced no response. Hematologic malignancy / Autoimmune disease was considered given fulminant HLH features, but excluded by normal autoantibodies, normal bone marrow biopsy, and flow cytometry. Primary HLH was excluded by normal cytotoxic granule proteins (perforin, granzyme B, SAP, XIAP), establishing secondary HLH triggered by Talaromyces marneffei.",
+  "case_prompt": "A 6-year-old boy is admitted to the hospital with a 3-week history of persistent fever and an enlarging neck mass. He was born prematurely at approximately 33 weeks of gestation and has a history of poor immune function and recurrent illness. He received empirical antibiotic treatment at a local facility without clinical response.\n\nOn physical examination, he is acutely ill. Cutaneous examination reveals scattered petechial bleeding spots on the extremities, swollen eyelids and lips, and extensive thrush in the oral cavity, without rash, joint swelling, or joint pain. Pulmonary auscultation reveals slightly coarse breath sounds with bilateral moist crackles. The abdomen is distended with palpable splenomegaly. Neurological examination is unremarkable.\n\nInitial laboratory testing demonstrates marked systemic inflammation and pancytopenia: high-sensitivity C-reactive protein (hsCRP) 88.25 mg/L and procalcitonin 6.65 ng/mL. Complete blood count shows a white blood cell count of 1.38 \u00d7 10\u2079/L, hemoglobin 86 g/L, and platelet count 86 \u00d7 10\u2079/L. Serum ferritin is markedly elevated at 87,741.30 ng/mL, plasma fibrinogen is reduced at 1.82 g/L, and serum triglycerides are elevated at 2.69 mmol/L. HIV serology is negative.\n\nComputed tomography (CT) of the chest reveals enlarged mediastinal lymph nodes. Abdominal CT demonstrates marked splenomegaly, multiple enlarged mesenteric and retroperitoneal lymph nodes, and a small pelvic effusion. Gastroenteroscopy demonstrates multiple ulcerations in the rectum and sigmoid colon.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute miliary pulmonary tuberculosis",
+      "rule_out_reason": "Initial chest radiograph suggested acute miliary tuberculosis in a child with prolonged fever and adenopathy; however, the etiology remained unresolved on further testing and failed to respond to antimicrobial regimens until fungal etiology was revealed.",
+      "quote": "He was initially seen in the local infectious diseases hospital after a chest radiography indicated potential acute milia pulmonary tuberculosis; however, the cause of the fever remained unclear after subsequent examinations."
+    },
+    {
+      "candidate": "Primary autoimmune disease / Hematologic malignancy",
+      "rule_out_reason": "Considered given fever, generalized lymphadenopathy, pancytopenia, marked hyperferritinemia, and splenomegaly meeting HLH criteria, but excluded by negative autoantibodies, bone marrow and lymph node biopsy, and flow cytometry.",
+      "quote": "There was no evidence of autoantibodies, and bone marrow and lymph node biopsies and CD40 expression excluded autoimmunity and a possible hematologic neoplasm."
+    },
+    {
+      "candidate": "Primary / Familial HLH",
+      "rule_out_reason": "Considered due to fulfilling HLH-2004 criteria in an immunocompromised child, but excluded as primary perforin deficiency because cytolytic and regulatory protein levels were intact, confirming secondary HLH driven by severe fungal sepsis.",
+      "quote": "The cellular immune function tests revealed a decrease in the number and activity of NK cells, lower CD107a expression, normal levels of hemophagocytic proteins:such as perforin, granzyme B, SAP, and XIAP"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Talaromycosis (Talaromyces marneffei)",
+      "rule_out_reason": "Peripheral blood and bone marrow cytology identified mature granulocytes engulfing fungal spores, subsequently confirmed by mNGS of bronchoalveolar lavage fluid and blood cultures identifying Talaromyces marneffei.",
+      "quote": "The initial blood cell analysis suggested the presence of abnormal cells, which were identified as mature granulocytes engulfing fungal spores ( Figure 1 ). After consulting the medical records, it was suspected that the patient had TM infection. Metagenomic next-generation sequencing (mNGS) and Sanger sequencing were used to identify infectious pathogens for further confirmation ( Figure 2 ). The subsequent mNGS of the bronchoalveolar lavage fluid and blood culture supported TM infection"
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Zero spoilers in case prompt. Secondary HLH presentation clearly detailed with fungal diagnosis established in diagnostic reasoning. Verbatim quotes verified."
+}

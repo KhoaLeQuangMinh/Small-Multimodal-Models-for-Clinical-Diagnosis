@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4904701_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A patient presenting with dyspepsia is found on upper endoscopy to have a 4–5 cm gastric bulge, mimicking a primary gastric submucosal neoplasm (such as a gastrointestinal stromal tumor).\n2. Admission Breakpoint: The admission diagnostic phase ends with outpatient presentation and initial upper endoscopy revealing the extrinsic gastric wall bulge. Endoscopic ultrasound (EUS) and histopathology represent confirmatory evaluations.\n3. Differential Distinctions: Gastric GIST/leiomyoma arises from the muscularis propria of the gastric wall; simple hepatic cyst is anechoic without internal structures. Hepatic hydatid cyst on EUS displays pathognomonic undulating detached membranes and characteristic lamellar cuticular wall on histopathology.",
+  "case_prompt": "A 69-year-old female with an unremarkable past medical history presented for evaluation of persistent dyspepsia. She denied weight loss, anorexia, asthenia, or vomiting. Physical examination was normal. Upper endoscopy was performed and revealed a smooth bulge measuring 4 to 5 cm in diameter along the lesser curvature and the posterior wall of the stomach.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gastrointestinal stromal tumor (GIST) / Gastric leiomyoma",
+      "rule_out_reason": "A smooth subepithelial bulge along the lesser curvature and posterior gastric wall initially suggested a primary gastric mesenchymal neoplasm, but endosonography demonstrated that the lesion originated from the adjacent left hepatic lobe.",
+      "quote": "Upper endoscopy revealed a bulge in the lesser curvature and the posterior wall of the stomach with 4-5 cm (Figure 1)."
+    },
+    {
+      "candidate": "Simple hepatic cyst / Biliary cystadenoma",
+      "rule_out_reason": "An anechoic left hepatic fluid collection could represent a benign simple liver cyst or mucinous cystic neoplasm, but endosonography revealed an internal undulating membrane, and pathology confirmed a laminated parasitic wall.",
+      "quote": "Endoscopic ultrasound (EUS) was performed and showed a heterogeneous lesion, mainly anechogenic one, with a floating membrane inside, and greatest diameter of 90.8 x 17.2 mm, originated in the liver left lobe"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endoscopic ultrasound demonstrating a predominantly anechoic hepatic lesion containing a characteristic floating membrane (type 3 cyst), confirmed by histopathology showing an acellular lamellar wall with vestigial protoscolex.",
+      "quote": "Endoscopic ultrasound (EUS) was performed and showed a heterogeneous lesion, mainly anechogenic one, with a floating membrane inside, and greatest diameter of 90.8 x 17.2 mm, originated in the liver left lobe (Figure 2). The diagnosis of a hydatid cyst type 3 was made."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

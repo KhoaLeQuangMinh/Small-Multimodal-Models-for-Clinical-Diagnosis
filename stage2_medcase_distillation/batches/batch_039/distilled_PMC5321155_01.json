@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5321155_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A previously healthy 7-year-old girl presents with new-onset secondary generalized focal seizures, postictal confusion, hemiparesis, and bilateral papilledema due to a large solitary parenchymal cystic brain lesion. The diagnostic tension lies in differentiating pediatric cystic neoplasms (e.g., pilocytic astrocytoma) or pyogenic brain abscesses from a zoonotic cerebral hydatid cyst, especially without concomitant liver or lung lesions.\n2. Admission Breakpoint: Admission workup ends after emergency neurological evaluation, brain MRI, and baseline screening imaging (chest radiograph and abdominal ultrasound), strictly prior to craniotomy, Dowling technique cyst removal, and histopathological analysis.\n3. Differential Distinctions: Cystic cerebral neoplasms and pyogenic abscesses are ruled out by the complete absence of contrast enhancement, absence of perilesional edema, and thin hypointense wall with internal daughter cysts; neurocysticercosis is ruled out by the lack of calcification and distinct spherical daughter-cyst architecture; echinococcosis is confirmed by characteristic neuroimaging and histopathological demonstration of hydatid cyst following intact surgical excision.",
+  "case_prompt": "A 7-year-old previously healthy girl was admitted to the emergency department following an epileptic attack, described as four episodes of partial seizures with secondary generalization. Her parents reported no preceding headache or vomiting, fever, or prior neurological symptoms.\n\nOn physical examination, she was hemodynamically stable. Neurological examination revealed postictal confusion, hemiparesis, and bilateral papilledema. Anticonvulsant therapy was administered.\n\nMagnetic resonance imaging (MRI) of the brain demonstrated a well-defined, round, spherical lesion entirely surrounded by brain parenchyma that was hypointense on T1-weighted images and hyperintense on T2-weighted images. The walls of the cyst were hypointense on both T1- and T2-weighted images and contained a few peripheral daughter cysts. No calcification, no surrounding edema, and no contrast enhancement were seen. Bedside abdominal ultrasonography and a plain chest radiograph showed no lesions in the liver or lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cystic intracranial neoplasm (e.g., cystic astrocytoma)",
+      "rule_out_reason": "Considered as a primary differential for a solitary large cerebral cystic mass causing seizures and focal deficits in a child; ruled out by the complete lack of contrast enhancement, absence of mural nodularity, and absence of perilesional vasogenic edema.",
+      "quote": "No calcification, no surrounding edema, and no contrast enhancement were seen."
+    },
+    {
+      "candidate": "Pyogenic brain abscess",
+      "rule_out_reason": "Considered given the mass effect and focal deficits; ruled out by the lack of fever, headache, or systemic signs, and the absence of typical ring contrast enhancement or surrounding vasogenic edema.",
+      "quote": "Headache and vomiting were not experienced... No calcification, no surrounding edema, and no contrast enhancement were seen."
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Considered as a parasitic cause of pediatric seizures; ruled out by the absence of calcifications, absence of scolex or inflammatory ring enhancement, and presence of internal peripheral daughter cysts.",
+      "quote": "No calcification, no surrounding edema, and no contrast enhancement were seen."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cerebral hydatid cyst (Echinococcosis)",
+      "rule_out_reason": "Preoperative neuroimaging showed pathognomonic features of cerebral hydatid disease (spherical cyst with daughter cysts, hypointense rim, and no edema or enhancement), confirmed histopathologically following unruptured surgical extirpation via the Dowling technique.",
+      "quote": "Preoperative radiological diagnosis of cerebral hydatid cyst was suggested... After craniotomy the entire cyst was removed without rupture during the dowling technique (Figure 2). Histopathological examination confirmed the diagnosis of hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "MRI features described objectively without leaking hydatid or Echinococcus. Biopsy and surgical details reserved for diagnostic reasoning. Verbatim quotes verified."
+}

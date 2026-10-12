@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5513117_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 25-year-old Middle Eastern man with livestock exposure presents with a 3-year progressive, tender 4 × 6 cm right elbow mass, acute fever (38.8°C), normal ESR, absent eosinophilia, and negative parasitic serology. Isolated musculoskeletal hydatid disease is extraordinarily rare (<1-4% of cases) and frequently misdiagnosed as a soft-tissue sarcoma or pyogenic abscess, especially in the setting of false-negative serology.\n2. Admission Breakpoint: Admission evaluation terminates after initial physical exam, day 3 fever and baseline blood work (normal WBC, eosinophil count, ESR, LFTs), plain radiography of the elbow and chest, and elbow ultrasonography, strictly prior to specific send-out hydatid serology, MRI, and surgical excision.\n3. Differential Distinctions: Soft-tissue sarcoma or synovial cyst is suspected given 3 years of painless-to-painful soft-tissue expansion in a young adult, but imaging shows multiseptated/floating membranes. Pyogenic bacterial abscess is considered due to acute fever to 38.8°C with tender mass, but inflammatory markers (WBC 5.0 × 10⁹/L, ESR 15 mm/h) are completely normal. Primary visceral disease is excluded by normal chest radiograph and normal liver tests.",
+  "case_prompt": "A 25-year-old man of Middle Eastern origin with a history of occupational exposure to livestock presents with a 3-year history of a slowly enlarging swelling on the right elbow. The mass recently became tender and painful, accompanied by localized pruritus, but without preceding rigors. He reports no prior history of trauma to the extremity and takes no medications.\n\nOn physical examination, he appears in good general condition. He is initially afebrile on admission, but on hospital day 3 develops a temperature of 38.8°C. Local musculoskeletal examination reveals a tender mass measuring 4 × 6 cm over the lateral aspect of the right elbow, causing distension of the overlying skin. There is no overlying erythema, excoriation, or cutaneous fistula.\n\nLaboratory tests reveal a normal total leukocyte count of 5.0 × 10⁹ cells/L, an absolute eosinophil count of 158 cells/L, a normal erythrocyte sedimentation rate (ESR) of 15 mm/h, and unremarkable liver function tests. Plain radiographs of the right elbow and chest demonstrate diffuse soft-tissue swelling of the elbow without periosteal reaction, cortical bone erosion, or pathological calcifications. Soft-tissue ultrasonography of the elbow reveals a well-defined cystic lesion containing multiple internal floating membranes without vascularity on color Doppler interrogation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Soft-tissue neoplasm (Sarcoma / Synovial cyst)",
+      "rule_out_reason": "Suspected due to the chronic 3-year progressive expansion of a deep intramuscular mass in a young man; disproved when ultrasound and subsequent MRI demonstrated a cystic multivesicular rosette architecture rather than a solid neoplastic lesion.",
+      "quote": "Magnetic resonance Imaging (MRI) depicted a unilocular cyst with multiple septations giving it a multivesicular or rosette appearance, confined to the soft tissues, adjacent to the medial elbow muscles without infiltrating bone nor surrounding neurovascular structures (Figs. 2 and 3)."
+    },
+    {
+      "candidate": "Pyogenic intramuscular abscess",
+      "rule_out_reason": "Considered when the patient developed acute fever to 38.8°C and localized elbow tenderness; excluded by normal total white blood cell count (5.0 × 10⁹ cells/L), normal ESR (15 mm/h), and absence of purulent fluid or cellulitis.",
+      "quote": "On day 3, patient became febrile with a temperature of 38.8  C. Lab test demonstrated a normal total WBC count of 5.0 x 109 cells/L, eosinophil level of 158 cells/L, and a normal erythrocyte sedimentation rate of 15 mm/h."
+    },
+    {
+      "candidate": "Primary hepatic or pulmonary hydatid disease",
+      "rule_out_reason": "Considered because hydatid disease predominantly affects the liver and lungs, but ruled out as the primary site by normal liver function tests and clear chest radiography.",
+      "quote": "Liver function tests were unremarkable... Plain elbow and chest radiographs were also unremarkable albeit diffuse soft tissue swelling of the elbow: there were no bone erosions nor calcifications."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative pre-operative hydatid serology, en bloc pericystectomy revealed a multivesicular cyst filled with viable daughter cysts and characteristic hydatid sand, confirming primary musculoskeletal echinococcosis.",
+      "quote": "Hydatid serology was negative and there was no modification in the appearance of the mass... En block surgical excision of the mass under general anesthesia was undertaken. Care was taken to remove the mass en block without perforating the cyst wall, through meticulous pericystectomy along surrounding muscle fibers (Fig. 4). The cyst was multivesicular containing daughter cysts and were filled with muddy substance typical of hydatid disease (Fig. 5)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5513117_01. Illustrates isolated primary musculoskeletal echinococcosis presenting with acute fever and falsely negative serology, stopping prior to serologic send-out and MRI."
+}

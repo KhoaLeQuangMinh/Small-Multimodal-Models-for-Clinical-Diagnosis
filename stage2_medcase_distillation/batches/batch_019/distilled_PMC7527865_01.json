@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7527865_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 24-year-old immunosuppressed man with known systemic lupus erythematosus (SLE) treated with mycophenolate mofetil in Bahia, Brazil, develops widespread, painless, ulcerated cutaneous lesions across his face, upper lip, scalp, neck, and all four extremities, complicated by secondary bacterial infection and fever. The major clinical challenge is distinguishing a severe autoimmune cutaneous lupus flare (such as bullous SLE or lupus vasculitis) or widespread secondary bacterial pyoderma from disseminated protozoal leishmaniasis in an immunocompromised host residing in an endemic focus.\n2. Admission Breakpoint: The admission breakpoint is established on Day 1 of hospitalization upon physical examination of the extensive ulcerated and crusted mucocutaneous lesions and initiation of supportive empiric antibiotics for secondary infection, prior to tissue biopsy of the nasal mucosa and skin, Montenegro skin testing, or PCR.\n3. Differential Distinctions: A bullous or ulcerating cutaneous lupus flare typically presents with acute inflammatory autoantibody-mediated blisters and responds to corticosteroid escalation, whereas these lesions were painless ulcers without blisters; primary pyogenic bacterial infection (e.g., ecthyma or impetigo) resolves completely with oral beta-lactams (cephalexin), whereas the chronic ulcers persisted until antileishmanial amphotericin B therapy; definitive diagnosis requires tissue biopsy and molecular/immunologic confirmation of Leishmania.",
+  "case_prompt": "A 24-year-old male residing in Tancredo Neves, State of Bahia, Brazil, presented for hospitalization with a widespread eruption of painless, ulcerated skin lesions. Two years prior, he had been diagnosed with systemic lupus erythematosus (SLE) on the basis of diffuse bullous skin lesions, polyarthritis involving the distal interphalangeal joints, and significant proteinuria (399 mg/day), for which he was receiving chronic immunosuppressive therapy with mycophenolate mofetil.\n\nOn physical examination, the patient was febrile and appeared chronically ill. Dermatologic examination revealed multiple painless, punched-out ulcerated cutaneous lesions distributed across the face, upper lip, scalp, neck, and both upper and lower extremities. Oral cavity examination demonstrated crusted lesions over the upper lip vermilion border, along with poor oral hygiene and amelogenesis imperfecta. The mucosal and cutaneous lesions had developed signs of superimposed secondary pyogenic infection with purulent exudate and surrounding erythema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Lupus Erythematosus Cutaneous Flare (Bullous SLE / Cutaneous Vasculitis)",
+      "rule_out_reason": "Considered the primary suspect given the patient's established history of SLE on maintenance mycophenolate mofetil. Ruled out because the current lesions were non-tender ulcerations rather than classic autoimmune blisters, failed to improve with immunosuppression, and tested positive on protozoal molecular assays.",
+      "quote": "Blisters and fever were absent and the recurrence of disseminated leishmaniasis was confirmed."
+    },
+    {
+      "candidate": "Primary Pyogenic Bacterial Skin Infection (Ecthyma / Impetigo)",
+      "rule_out_reason": "Considered due to the crusted, exudative morphology of the facial and lip lesions and the presence of fever. While empiric cephalexin resolved the superimposed secondary pyogenic component, the deep underlying ulcerations remained unchanged.",
+      "quote": "He developed secondary infection associated with fever, and antibiotic therapy with cephalexin was initiated (1g/day) and a maintenance dose of prednisone (5 mg/day intravenously)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred following tissue biopsies of the left nasal mucosa and right lower extremity ulcer on hospital day 3, which yielded positive PCR and a positive Montenegro intradermal test, confirming disseminated leishmaniasis.",
+      "quote": "On the third day, biopsies were performed on the left nasal mucosa and on the right lower limb lesions. The diagnosis of disseminated leishmaniasis was confirmed (positive PCR and Montenegro intradermal test). Liposomal amphotericin B was introduced on the fourth day of hospitalization at a dose of 150 mg/day up to a maximum dose of 2,400 mg."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7527865 (patient 1). Admission breakpoint maintained before tissue biopsies, Montenegro test, and PCR. Zero pathogen names leaked in case prompt."
+}

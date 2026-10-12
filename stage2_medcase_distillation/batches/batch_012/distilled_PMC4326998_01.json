@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4326998_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: An acutely febrile older adult presenting with altered sensorium, bilateral extensor plantar responses, and acute kidney injury without meningismus or focal deficits, presenting a critical diagnostic challenge between acute central nervous system infection, systemic bacterial sepsis with uremic encephalopathy, and severe cerebral vector-borne parasitosis.\n2. Admission Breakpoint: The admission clinical narrative concludes following baseline hematology, inflammatory markers, and serum chemistry (normocytic anemia, ESR 38 mm/hr, elevated urea and creatinine), immediately before thick and thin blood film microscopy and rapid antigen immunochromatographic testing return.\n3. Differential Distinctions: Acute bacterial meningitis or viral encephalitis is ruled out by the absence of meningeal signs, normal CSF opening, and subsequent identification of intraerythrocytic parasites; septic shock with prerenal azotemia is differentiated by positive malaria parasite visualization and antigenemia.",
+  "case_prompt": "A 62-year-old male was admitted with a 5-day history of high fever associated with chills and rigors. His family reported that his sensorium had become acutely altered starting the day prior to admission. He had no complaints of headache, vomiting, jaundice, seizures, or focal motor weakness. He was neither diabetic nor hypertensive, and had no history of recent preceding illnesses or vaccinations.\n\nOn physical examination, he was febrile with a body temperature of 103°F, tachycardic at 124 beats per minute, normotensive with a blood pressure of 110/70 mmHg, and tachypneic with a respiratory rate of 36 breaths per minute. Neurological examination revealed drowsiness without focal neurological deficits or meningeal signs; bilateral plantar reflexes were extensor. Clinical examinations of the cardiovascular, respiratory, and abdominal systems were unremarkable.\n\nInitial laboratory evaluation revealed a normocytic anemia with a hemoglobin of 10.4 g/dL and mean corpuscular volume (MCV) of 82 fL. The erythrocyte sedimentation rate (ESR) was 38 mm in the first hour. Serum biochemistry demonstrated impaired renal function with a serum urea of 85 mg/dL and a serum creatinine of 2.4 mg/dL. Serum electrolytes and liver function tests were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningitis / Viral Meningoencephalitis",
+      "rule_out_reason": "Considered given the acute onset of high fever, drowsiness, altered sensorium, and bilateral extensor plantar responses; ruled out by the absence of meningeal signs and the subsequent identification of blood-borne plasmodial parasites.",
+      "quote": "Neurologic examination showed drowsiness without any focal neurological deficit or meningeal signs. Plantar response was extensor bilaterally."
+    },
+    {
+      "candidate": "Severe Sepsis with Uremic Encephalopathy",
+      "rule_out_reason": "Considered given the combination of altered mental status, tachypnea, tachycardia, and significant azotemia (urea 85 mg/dL, creatinine 2.4 mg/dL); excluded as a primary non-parasitic septic syndrome upon demonstration of heavy malarial parasitemia.",
+      "quote": "Blood tests revealed impaired renal functions (serum urea - 85 mg/dl and serum creatinine - 2.4 mg/dl), whereas liver function tests (LFTs) and electrolytes were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Severe Falciparum Malaria with Cerebral and Renal Involvement",
+      "rule_out_reason": "The definitive diagnosis was confirmed when peripheral thick and thin blood smears revealed intraerythrocytic ring forms of Plasmodium falciparum and a rapid immunochromatographic test for PfHRP-2 was strongly positive, with the patient's recovery later complicated by post-infectious Guillain-Barré syndrome.",
+      "quote": "Thick and thin blood smears were prepared which showed ring forms of Plasmodium falciparum and immunochromatographic test for P. falciparum histidine-rich protein 2 (PfHRP-2)-based assay (ICT, Access Bio. Inc., NJ, USA) was strongly positive."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4326998 (Case 1). Case prompt terminates following initial biochemical and hematological labs, strictly excluding thick/thin smears and PfHRP-2 ICT results. Subsequent GBS complication detailed in diagnostic reasoning."
+}

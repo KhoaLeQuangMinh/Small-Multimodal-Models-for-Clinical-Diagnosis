@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6744808_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 58-year-old female presents with subacute progressive spastic paraplegia and a T4 sensory level, with MRI revealing multiple intradural extramedullary cystic lesions across discontinuous thoracic levels (T4-6 and T9-11), mimicking congenital arachnoid cysts or multicentric spinal neoplasms.\n2. Admission Breakpoint: Following neurological examination and thoracic spine magnetic resonance imaging (MRI), immediately prior to thoracic laminectomies and surgical exploration.\n3. Differential Distinctions: Spinal arachnoid cysts are usually solitary, smooth, non-inflammatory collections; spinal schwannomas or meningiomas with cystic degeneration are solitary solid-cystic tumors; spinal neurocysticercosis presents with multiple mobile extramedullary cysts accompanied by marked arachnoiditis.",
+  "case_prompt": "A 58-year-old female presented with a 6-month history of progressive weakness in both lower extremities, sensory disturbance, and sphincter dysfunction. Her symptoms had rapidly worsened over preceding weeks, resulting in complete inability to walk.\n\nOn physical examination, she was paraplegic with bilateral lower-extremity motor power graded 0/5. Severe spasticity was present in both legs, and sensory examination revealed a sharp sensory level to pinprick sensation at the T4 dermatome.\n\nMagnetic resonance imaging (MRI) of the thoracic spine demonstrated multiple intradural extramedullary cystic lesions located at the T4-T6 and T9-T11 vertebral levels, causing severe compression of the thoracic spinal cord.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital Spinal Arachnoid Cysts",
+      "rule_out_reason": "Spinal arachnoid cysts typically occur as solitary, isolated fluid collections without severe secondary arachnoiditis, rather than numerous distinct clustered cystic vesicles at multiple discontinuous spinal levels.",
+      "quote": "The thoracic magnetic resonance (MR) imaging revealed multiple intradural extramedullary cystic lesions at the T4-6 and T9-11 levels"
+    },
+    {
+      "candidate": "Spinal Schwannoma or Meningioma with Cystic Degeneration",
+      "rule_out_reason": "Primary intradural extramedullary neoplasms are typically solitary contrast-enhancing solid tumors with occasional cystic degeneration; multicentric purely cystic lesions at T4-6 and T9-11 are inconsistent with typical nerve sheath tumors.",
+      "quote": "At the T4-T6 levels, once the dura was opened, 12 cystic lesions of different sizes protruded through the arachnoid gap and were removed along with the arachnoid membrane"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical laminectomy revealed 12 cystic lesions protruding through the arachnoid gap at T4-T6 and severe arachnoiditis at T9-T11, with histopathological examination definitively confirming spinal neurocysticercosis.",
+      "quote": "The histopathological report confirmed spinal NCC"
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt strictly limited to clinical paraplegia and MRI finding of multiple intradural extramedullary cysts. Zero spoilers."
+}

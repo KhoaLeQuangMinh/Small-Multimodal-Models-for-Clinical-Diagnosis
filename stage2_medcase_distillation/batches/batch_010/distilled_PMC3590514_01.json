@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3590514_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 7-year-old girl with recurrent hemoptysis and a well-defined cystic left lower lobe pulmonary mass undergoes thoracoscopic resection and suffers sudden profound intraoperative hypoxemia (SpO2 56%), bradycardia, elevated peak airway pressures, and bloody endotracheal secretions during creation of the pneumothorax. Clinicians face the catastrophic dilemma of distinguishing acute systemic anaphylaxis or contralateral tension pneumothorax from mechanical blocker displacement or intraoperative endobronchial rupture of the parasitic cyst flooding the central airway with fluid and laminated membranes.\n2. Admission Breakpoint: The presentation narrative encompasses the patient's baseline presentation (recurrent hemoptysis, radiographic 4 cm left lower lobe hypodense mass) through intraoperative induction and the sudden onset of acute desaturation, bradycardia, high airway pressures, and asymmetrical breath sounds upon pneumothorax creation. The breakpoint strictly terminates before fiberoptic inspection of the airway, rigid bronchoscopy removal of hydatid membranes, and histopathologic tissue confirmation.\n3. Differential Distinctions: Anaphylaxis was considered given the acute cardiovascular and respiratory collapse upon cyst manipulation, but was excluded clinically by preserved blood pressure. Contralateral tension pneumothorax was suspected given acute desaturation during pneumothorax induction, but excluded by auscultatory presence of breath sounds on the left and absence of tension physiology. Isolated mechanical displacement of the bronchial blocker was suspected due to unilateral decreased right air entry, but rigid bronchoscopy unveiled the true etiology: endobronchial rupture of the pulmonary hydatid cyst with obstructive laminated membranes.",
+  "case_prompt": "A 7-year-old girl weighing 20 kg presents with a history of recurrent hemoptysis. Plain chest radiography demonstrates a 4-cm homogenous opacity in the lower lobe of the left lung. Contrast-enhanced computed tomography (CT) of the chest confirms a 3-to-4 cm well-defined hypodense lesion in the left lower lobe. Baseline preoperative investigations are otherwise within normal limits.\n\nShe is taken to the operating theater for thoracoscopic resection under single-lung ventilation using a Univent tube and left bronchial blocker. Following uneventful induction, intubation, and fiberoptic verification of blocker positioning, the patient is placed in the right lateral decubitus position. During creation of the artificial pneumothorax, she develops sudden acute desaturation, with peripheral oxygen saturation (SpO2) precipitously dropping from 98% to 56%, accompanied by profound bradycardia (heart rate decreasing from 110 to 46 beats per minute), elevation of airway peak pressures from 18 cm H2O to 35 cm H2O, and appearance of bloody discharges in the endotracheal tube. Systemic blood pressure remains stable. On chest auscultation, air entry is decreased on the right side, while air entry remains present on the left side.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Anaphylaxis",
+      "rule_out_reason": "Considered due to the abrupt bradycardia and severe desaturation following manipulation of the pulmonary lesion, but ruled out clinically because systemic blood pressure remained stable without cutaneous manifestations, angioedema, or generalized cardiovascular collapse.",
+      "quote": "Patient's blood pressure remained stable. Anaphylaxis and contra-lateral pneumothorax was ruled out clinically."
+    },
+    {
+      "candidate": "Contralateral Tension Pneumothorax",
+      "rule_out_reason": "Considered as a potential procedural catastrophe during the creation of artificial surgical pneumothorax, but excluded because breath sounds remained audible on the left side, right-sided breath sounds were decreased rather than absent with tension, and hemodynamics did not demonstrate obstructive shock.",
+      "quote": "Anaphylaxis and contra-lateral pneumothorax was ruled out clinically. On chest auscultation, there was decreased air entry on the right side and air entry was present on the left side."
+    },
+    {
+      "candidate": "Isolated Bronchial Blocker Displacement",
+      "rule_out_reason": "Suspected due to decreased ventilation of the right dependent lung and elevated airway pressures, but repositioning and flexible fiberscopy revealed that obstruction was caused by endobronchial spillage of fluid and membranes rather than isolated mechanical displacement.",
+      "quote": "Anticipating a displaced bronchial blocker patient's position was made supine and flexible fiberscopy was done which showed fluid with membranes along with a displaced bronchial blocker in the trachea."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot and life-saving airway clearance occurred when rigid bronchoscopy retrieved 20-25 mL of cyst fluid with laminated membrane flakes from the tracheobronchial tree, confirming intraoperative endobronchial rupture of the pulmonary hydatid cyst, subsequently verified by histopathology.",
+      "quote": "About 20-25 ml of fluid with flakes of membrane was removed by forceps, bronchoalveolar lavage, and suction [Figures 1 and 2]. After bronchoscopy, trachea was reintubated with a 6 mm ID uncuffed endotracheal tube."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in accordance with the Stanford MedCaseReasoning methodology. Case prompt details the dramatic intraoperative acute desaturation up to auscultation, stopping strictly before fiberoptic and rigid bronchoscopy reveal the membranes. Zero diagnostic spoilers or pathogen names."
+}

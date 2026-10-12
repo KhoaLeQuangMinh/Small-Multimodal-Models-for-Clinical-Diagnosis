@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8371194_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 17-month-old girl born to consanguineous parents with an unexplained prior sibling death presents with a 3-month history of chaotic high fever, severe pancytopenia, bleeding diathesis, hair depigmentation, hepatosplenomegaly, hyperferritinemia, and hypofibrinogenemia. The initial presentation strongly mimics primary/familial hemophagocytic lymphohistiocytosis (HLH / macrophage activation syndrome), diverting clinical suspicion away from an endemic vector-borne intracellular protozoal infection.\n2. Admission Breakpoint: Clinical exam and baseline laboratory workup demonstrating high fever, hepatosplenomegaly, profound pancytopenia, severe hypoalbuminemia, hypertriglyceridemia, hypofibrinogenemia, elevated ferritin, and positive direct Coombs test, stopping immediately prior to bone marrow aspiration and myelogram examination.\n3. Differential Distinctions: Primary/familial Macrophage Activation Syndrome (MAS/HLH) was the leading working diagnosis given that the clinical and laboratory features satisfied diagnostic criteria in the setting of parental consanguinity and early sibling death; however, it was proven to be secondary to an infectious trigger upon marrow evaluation. Autoimmune hemolytic anemia was considered due to a positive direct Coombs test and profound anemia, but Coombs positivity was secondary to intense reticuloendothelial immune activation. Hematologic malignancy (acute leukemia) was considered given pancytopenia, hepatosplenomegaly, and bleeding, but peripheral smear showed no blasts. Visceral leishmaniasis was established on myelogram examination by the identification of intracellular amastigotes (Leishman-Donovan bodies) inside macrophages with concurrent hemophagocytosis, responding completely to liposomal amphotericin B.",
+  "case_prompt": "A 17-month-old female infant from Berkane, Morocco, presented with a 3-month history of erratic, irregular fever associated with profound pallor, epistaxis, and growth/stature retardation. She was born to consanguineous parents; a female sibling had died at age 6 of an unknown etiology. There was no other significant medical history.\n\nOn physical examination, the infant's temperature was 39.0 \u00b0C. She appeared pale with hypopigmented (bleached) hair and bilateral lower extremity edema. Cutaneous and mucosal pallor was prominent, accompanied by gingival petechiae. Abdominal examination revealed marked hepatosplenomegaly. The remainder of the physical examination was unremarkable.\n\nInitial laboratory evaluation revealed severe pancytopenia: hemoglobin was 3.0 g/dL with normochromic normocytic indices and a reticulocyte count of 76,700/mm^3, leukocyte count was 4,860/mm^3 with an absolute neutrophil count of 680/mm^3, and platelet count was 12,000/mm^3. Peripheral blood smear showed no morphological abnormalities or blast cells. Serum albumin was 13 g/L, serum triglycerides were 4.57 g/L, ferritin was 626 ug/L, and lactate dehydrogenase (LDH) was 337 IU/L. Coagulation profile demonstrated a prothrombin time (PT) of 56% and fibrinogen level of 1.0 g/L. The direct Coombs test was positive. Renal function tests and hepatic panel were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary / Familial Macrophage Activation Syndrome (MAS / HLH)",
+      "rule_out_reason": "Evoked as the primary clinical diagnosis because the patient fulfilled diagnostic criteria for MAS (fever, splenomegaly, pancytopenia, hyperferritinemia, hypertriglyceridemia, hypofibrinogenemia) alongside a family history of parental consanguinity and unexplained sibling death; however, it was determined to be secondary to an intracellular infection rather than a primary genetic immune defect.",
+      "quote": "in front of these clinical and biological features, the clinicians taking charge of the patient evoked the diagnosis of MAS. Thus, a cytological study of the bone marrow in search of the features of hemophagocytosis was necessary to confirm the diagnosis."
+    },
+    {
+      "candidate": "Autoimmune Hemolytic Anemia",
+      "rule_out_reason": "Considered due to severe pallor, profound anemia (3 g/dL), and a positive direct Coombs test, but ruled out because the Coombs positivity was an epiphenomenon of marked reticuloendothelial hyperactivity, and the aregenerative pancytopenia reflected central bone marrow suppression.",
+      "quote": "The direct Coombs test was also positive. The hepatic assessment and the renal function are without abnormality."
+    },
+    {
+      "candidate": "Acute Leukemia / Hematologic Malignancy",
+      "rule_out_reason": "Considered given the prolonged fevers, failure to thrive, hepatosplenomegaly, bleeding diathesis, and severe trilineage cytopenia, but ruled out by a normal peripheral blood smear without circulating blasts and absence of leukemia on marrow analysis.",
+      "quote": "The blood smear showed no abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Visceral Leishmaniasis",
+      "rule_out_reason": "Cytological examination of the bone marrow aspirate (myelogram) demonstrated characteristic intracellular Leishmania amastigote bodies alongside prominent hemophagocytic figures, establishing visceral leishmaniasis complicated by secondary macrophage activation syndrome.",
+      "quote": "Careful examination of the myelogram revealed the presence of leishmania bodies with figures of hemophagocytosis (Fig. 1, Fig. 2). The diagnosis of visceral leishmaniasis associated with a MAS was retained."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission presentation cleanly ends before bone marrow aspiration and myelogram. Zero spoilers present."
+}

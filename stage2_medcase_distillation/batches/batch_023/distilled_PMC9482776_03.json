@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9482776_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old male presents with 1 month of low-grade fever, persistent headache, night sweats, multiple pulmonary nodules on chest CT, and multiple brain abscesses with perilesional edema on MRI. In a young adult, the combination of pulmonary nodules and multiple rim-enhancing intracranial ring lesions creates an urgent differential diagnosis between cerebral toxoplasmosis, neurocysticercosis, pyogenic/cryptococcal brain abscesses, and metastatic malignancy. Establishing central nervous system and pulmonary tuberculosis requires prompt diagnostic correlation to prevent irreversible neurological injury.\n2. Admission Breakpoint: Admission triage concludes after clinical history, physical examination, chest CT showing multiple pulmonary nodules, and brain MRI showing multiple low-density lesions and small abscesses with edema, immediately prior to lumbar puncture and sputum GeneXpert MTB/RIF testing and mycobacterial cultures.\n3. Differential Distinctions: Pyogenic bacterial brain abscesses / septic emboli (ruled out by the subacute 1-month course, concurrent pulmonary nodules, and positive mycobacterial testing), neurocysticercosis or central nervous system toxoplasmosis (ruled out by positive sputum and CSF GeneXpert MTB/RIF assays and mycobacterial culture), and intracranial metastatic malignancy (ruled out by rapid clinical/radiological response to antitubercular therapy and microbiological confirmation).",
+  "case_prompt": "A 37-year-old male presented with a 1-month history of low-grade fever, persistent headache, and night sweats. He had no smoking history and maintained good oral hygiene.\n\nOn admission, chest computed tomography (CT) demonstrated multiple pulmonary nodules. Magnetic resonance imaging (MRI) of the brain revealed multiple low-density lesions and small abscesses with surrounding vasogenic edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial brain abscesses secondary to septic emboli",
+      "rule_out_reason": "Multiple intracranial ring/abscess lesions can result from bacteremic seeding, but the indolent 1-month course with low-grade fevers and night sweats, along with concomitant pulmonary nodules, favored a chronic granulomatous infection.",
+      "quote": "Magnetic resonance imaging (MRI) of the brain showed multiple low-density lesions and small abscesses with surrounding edema."
+    },
+    {
+      "candidate": "Cerebral toxoplasmosis or neurocysticercosis",
+      "rule_out_reason": "Multiple ring-enhancing intracranial lesions with surrounding edema in a young patient strongly suggest parasitic cerebral disease, but sputum and CSF molecular testing confirmed Mycobacterium tuberculosis.",
+      "quote": "The sputum and cerebrospinal fluid GeneXpert MTB/RIF assay indicated positive and further culture proved TB infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum and cerebrospinal fluid GeneXpert MTB/RIF assays both testing positive, followed by confirmatory culture isolating Mycobacterium tuberculosis, establishing the diagnosis of disseminated pulmonary tuberculosis with tuberculous meningitis and cerebral tuberculomas/abscesses.",
+      "quote": "The sputum and cerebrospinal fluid GeneXpert MTB/RIF assay indicated positive and further culture proved TB infection. The patient was diagnosed with pulmonary tuberculosis with tuberculous meningitis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Disseminated tuberculosis presenting as pulmonary nodules and tuberculous brain abscesses/meningitis. Prompt stops after initial chest CT and brain MRI, prior to lumbar puncture and GeneXpert assays."
+}

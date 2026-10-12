@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8640386_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 57-year-old Welsh carpenter with no foreign travel outside the UK (other than a brief visit to France 15 years prior) presents with progressive pancytopenia, neutropenic sepsis, and acute kidney injury 4 months after liver transplantation. The clinical scenario strongly pointed toward standard post-transplant complications\u2014specifically mycophenolate (MMF) drug myelotoxicity or opportunistic viral/bacterial sepsis\u2014distracting from donor-derived transmission of an exotic protozoan infection.\n2. Admission Breakpoint: Admission to the tertiary liver transplant center with persistent fevers, rigors, worsening neutropenia, pancytopenia, and acute kidney injury under empiric broad-spectrum antimicrobial coverage, immediately prior to diagnostic bone marrow aspiration, Leishmania PCR, and serology.\n3. Differential Distinctions: Drug-induced bone marrow suppression from mycophenolate mofetil (MMF) was initially suspected when cytopenias emerged at 4 months, prompting a dose reduction from 1 g BID to 500 mg BID; however, cytopenias worsened and progressed to febrile neutropenic sepsis. Bacterial or fungal neutropenic sepsis was suspected on admission and treated empirically with meropenem, vancomycin, and fluconazole, but yielded no response or organism on conventional cultures. Cytomegalovirus (CMV) was considered as a major cause of post-transplant cytopenias and fever, but both donor and recipient were CMV IgG negative pre-transplant. Visceral leishmaniasis was proven on bone marrow biopsy showing amastigotes, positive PCR for Leishmania donovani complex, and high-titer serology (>= 1:102,400), with donor trace-back revealing donor travel to India.",
+  "case_prompt": "A 57-year-old male carpenter from Wales was transferred to a liver transplant center with neutropenic sepsis and acute kidney injury four months after undergoing orthotopic liver transplantation. His transplant had been performed for alcohol-related liver disease and portal hypertension following two years of documented abstinence. His only lifetime travel outside the United Kingdom was a transient visit to Calais, France, 15 years prior; he had no occupational or vector exposures in transit hubs or coastal ports. Pre-transplant CMV IgG serology had been negative in both donor and recipient, and CMV prophylaxis had not been administered.\n\nPost-transplant maintenance immunosuppression comprised prednisolone, tacrolimus, and mycophenolate mofetil (MMF) alongside cotrimoxazole prophylaxis. One month post-transplant, he developed histologically-proven moderate acute cellular rejection, successfully treated with a 3-day course of pulsed intravenous corticosteroids. Graft function subsequently normalized; however, four months post-transplantation, routine laboratory testing revealed new-onset pancytopenia. In response, his MMF dosage was halved from 1 g twice daily to 500 mg twice daily.\n\nDespite dose reduction, he developed progressive neutropenia and persistent pancytopenia, accompanied by high fevers and rigors. He was admitted to his local hospital with neutropenic sepsis and acute kidney injury, where empiric treatment with intravenous meropenem, vancomycin, and fluconazole was initiated before transfer. On arrival, he remained febrile with rigors. Physical examination revealed stable hemodynamics and no focal localized signs of infection.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Mycophenolate Mofetil (MMF) Induced Myelosuppression",
+      "rule_out_reason": "Initially suspected when cytopenias coincided with normal liver graft function at 4 months, prompting a 50% reduction in MMF dosing; however, neutropenia worsened and culminated in severe febrile neutropenic sepsis rather than recovering.",
+      "quote": "His graft function gradually improved, with normalisation of alanine aminotransferase (ALT) coinciding with the development of pancytopenia 4 months post-transplantation. His MMF was reduced from 1 g two times a day to 500 mg two times a day in response to this."
+    },
+    {
+      "candidate": "Opportunistic Bacterial or Fungal Neutropenic Sepsis",
+      "rule_out_reason": "Considered on emergency admission due to acute kidney injury, fevers, and profound neutropenia in an immunosuppressed allograft recipient, but empirical broad-spectrum therapy with meropenem, vancomycin, and fluconazole yielded no clinical improvement or pathogen isolation on standard cultures.",
+      "quote": "He then was admitted to his local hospital with neutropenic sepsis and an acute kidney injury... He was treated empirically with meropenem, vancomycin and fluconazole."
+    },
+    {
+      "candidate": "Cytomegalovirus (CMV) Infection / Disease",
+      "rule_out_reason": "A frequent cause of post-transplant fever and bone marrow suppression, but considered highly improbable because pre-transplant donor and recipient IgG serologies were both negative.",
+      "quote": "Both the donor and recipient were CMV IgG negative, therefore, CMV prophylaxis was not required as per hospital policy."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Donor-Acquired Visceral Leishmaniasis",
+      "rule_out_reason": "Diagnostic bone marrow biopsy revealed intracellular Leishmania amastigotes and secondary hemophagocytosis; molecular PCR detected Leishmania donovani complex DNA, and serology was strongly positive (titre >= 1:102,400). Subsequent investigation confirmed the organ donor had traveled to India in the year preceding death and harbored positive anti-Leishmania serology.",
+      "quote": "A bone marrow biopsy was performed in view his pancytopenia and it showed amastigotes (see figure 1). The Leishmania PCR test detected DNA from the Leishmania donovani complex. Furthermore, the patient's Leishmania serology was strongly positive at a titre equal to or greater than 1 in 102 400"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission breakpoint isolates the presentation before bone marrow biopsy, PCR, and donor tracing. Zero spoilers present."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2999720_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A middle-aged man presenting with obstructive lower urinary tract symptoms culminating in massive acute urinary retention (1,500 cc drained), accompanied by concurrent ulcerative lesions of the lower lip and glans penis and diffuse nodular pulmonary infiltrates. The presentation closely mimics urogenital and pulmonary tuberculosis, penile/lip squamous cell carcinoma, or primary syphilis, masking chronic disseminated systemic endemic mycosis.\n2. Admission Breakpoint: The emergency admission triage evaluation concluding with Foley catheter decompression of acute urinary retention, baseline laboratory tests, PPD testing, sputum AFB smears, and chest radiography, prior to dorsal foreskin incision biopsy and histopathological analysis.\n3. Differential Distinctions: Genitourinary and pulmonary tuberculosis presents with chronic lower urinary tract obstruction, sterile pyuria, mucosal ulcers, and nodular lung infiltrates, but was ruled out by negative tuberculin skin testing (PPD), negative urine cultures, and negative sputum acid-fast bacilli; squamous cell carcinoma of the penis and lip presents with chronic ulcerative mucosal lesions in a smoker with phimosis, but was ruled out by absence of malignant neoplasia and demonstration of characteristic multi-budding yeasts; sexually transmitted ulcerative infections (syphilis, chancroid) lack systemic nodular pulmonary disease and produce different micro-morphology.",
+  "case_prompt": "A 56-year-old male presents with a 3-month history of progressive lower urinary tract symptoms, including hesitancy, weak urinary stream, intermittency, nocturia, incomplete bladder emptying, terminal dribbling, dysuria, and lower abdominal pain, accompanied by painful penile lesions and a non-healing lesion on his lower lip. His past medical history is significant for cigarette smoking, arterial hypertension, and cerebrovascular disease. He worked in agriculture for 12 years in South America before moving to an urban area 24 years ago.\n\nOn physical examination, the patient appears malnourished with poor hygiene and has generalized excoriated papules suggestive of scabies. A 1.5-cm ulcerated lesion is present on the lower lip. Pulmonary auscultation reveals diffusely decreased breath sounds bilaterally. Genital examination demonstrates an ulcerated lesion partially exposed on the glans penis associated with severe phimosis and poor foreskin retractability; the scrotum and digital rectal examination of the prostate are normal.\n\nBaseline laboratory evaluation reveals normal renal function, a negative HIV ELISA, a negative bacterial urine culture, a negative tuberculin skin test (PPD), and negative sputum smears for special-stain micro-organisms. A chest radiograph demonstrates diffuse nodular pulmonary infiltrates. A dorsal incision of the foreskin and emergency Foley catheterization successfully drain 1,500 cc of concentrated urine, relieving acute bladder retention.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Genitourinary and Pulmonary Tuberculosis",
+      "rule_out_reason": "Considered because of concurrent chronic urinary tract obstruction, sterile pyuria, mucocutaneous ulcerations, and nodular lung infiltrates, but ruled out by a negative PPD test, negative urine cultures, and negative sputum acid-fast bacilli smears.",
+      "quote": "Laboratory tests revealed normal renal function, a negative HIV ELISA-test, a negative urine culture, a negative PPD, and negative acid-fast bacilli in the sputum."
+    },
+    {
+      "candidate": "Squamous Cell Carcinoma of the Penis and Lip",
+      "rule_out_reason": "Considered in a long-term smoker presenting with chronic ulcerated lesions of the lip and glans penis associated with unretractable foreskin, but excluded by histopathology showing granulomatous fungal inflammation rather than invasive squamous neoplasia.",
+      "quote": "A genital exam demonstrated an ulcerated lesion partially exposed on the glans penis caused by poor retractability of the foreskin (Figures 1 and 2)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the penile biopsy demonstrated characteristic multi-budding yeast cells consistent with Paracoccidioides, confirming disseminated paracoccidioidomycosis causing genitourinary outflow obstruction.",
+      "quote": "A penile biopsy was positive for PCM (Figures 3 and 4)."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency triage decompression and initial negative screening tests before penile biopsy histopathology. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

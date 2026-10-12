@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11775982_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 68-year-old female with superior vena cava syndrome and a malignant pleural effusion treated with an indwelling PleurX catheter presented three weeks later with localized exit-site erythema and pruritus progressing to severe pain. The presentation clinically mimicked routine catheter-site cellulitis or dressing contact dermatitis, but was actually caused by an extremely rare ectopic migration of an adult intestinal nematode through the pleural drainage system.\n2. Admission Breakpoint: The admission breakpoint occurs after local cleansing and dressing replacement failed to relieve her worsening insertion-site pain, immediately before the connection tubing was opened and the emerging parasite was directly visualized.\n3. Differential Distinctions: Catheter exit-site bacterial infection was suspected due to local erythema and escalating pain, but lacked purulent drainage or fluctuance; contact dermatitis from adhesive dressing was considered due to intense pruritus under the old dressing, but pain persisted and escalated after dressing change; the definitive diagnosis was established by direct macroscopic identification of the motile helminth emerging from the chest wall tract.",
+  "case_prompt": "A 68-year-old female with a medical history of hypertension, chronic obstructive pulmonary disease, and recently diagnosed small cell neuroendocrine carcinoma presented to the emergency department with gradually progressive shortness of breath and swelling of her face and bilateral upper extremities. Her dyspnea worsened with physical exertion and improved with rest.\n\nOn physical examination, her vital signs were within normal limits. General inspection revealed facial plethora and a positive Pemberton sign. A computed tomography scan of the chest demonstrated severe stenosis along the entire course of the superior vena cava, accompanied by distal thrombosis and a left-sided pleural effusion.\n\nTo manage the symptomatic pleural effusion, a tunneled pleural drainage catheter was inserted, and the patient was urgently referred for radiotherapy to treat the superior vena cava obstruction. Three weeks following catheter insertion, while undergoing radiotherapy, the patient reported itching around the catheter insertion site. Physical examination of the insertion site showed an old dressing covering the area, with erythema of the underlying skin but no discharge or fluid collection. The site was cleansed with normal saline, and a fresh sterile dressing was applied. Despite these measures, her symptoms failed to improve, and local pain at the catheter insertion site increased in severity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Catheter Exit-Site Bacterial Infection / Cellulitis",
+      "rule_out_reason": "Considered due to progressive erythema and worsening pain at the indwelling pleural catheter insertion site in an immunocompromised cancer patient, but excluded due to the absence of purulent discharge, fluctuance, or fluid collection, and by the absence of bacterial suppuration.",
+      "quote": "Examination of insertion site revealed an old dressing covering the site, with erythema of the underlying skin but no discharge or fluid collection."
+    },
+    {
+      "candidate": "Contact Dermatitis / Dressing Adhesive Irritation",
+      "rule_out_reason": "Considered because of localized pruritus and erythema underneath an old catheter dressing without systemic symptoms, but ruled out when symptoms failed to resolve after cleansing and applying a fresh dressing, instead evolving into severe pain.",
+      "quote": "Despite this management, the patient's symptoms did not improve, and her pain at the insertion site increased in severity."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct visual inspection of the opened connection tubing demonstrated a viable, motile 17-cm grayish-white helminth migrating out of the chest wall tract, morphologically identified as female Ascaris lumbricoides, confirming aberrant thoracic soil-transmitted helminthiasis.",
+      "quote": "Upon inspection, the connection tube was opened, revealing a long, grayish-white worm emerging from the chest wall in a zigzag and coiling movement. Based on its appearance, size (approximately 17 cm), and tapered ends, the worm was identified as a female Ascaris lumbricoides"
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint established at the point of persistent and worsening catheter-site pain despite dressing change, prior to tube disconnection and direct visualization of the helminth. Zero pathogen spoilers in prompt. Exact quotes verified."
+}

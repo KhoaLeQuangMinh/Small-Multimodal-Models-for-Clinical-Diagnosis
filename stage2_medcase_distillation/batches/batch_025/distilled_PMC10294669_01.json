@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10294669_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient newly diagnosed with acute myeloid leukemia (hyperleukocytosis, profound anemia, monoblastic marrow infiltration) who is found on pre-chemotherapy staging imaging to have cavitary pulmonary lesions. The clinical challenge is distinguishing between leukemic pulmonary infiltration, opportunistic fungal infection (e.g., angioinvasive aspergillosis), and reactivation of dormant mycobacterial infection triggered by hematologic malignancy.\n2. Admission Breakpoint: The admission narrative halts following emergency hematology evaluation, bone marrow confirmation of acute myeloid leukemia, and staging chest CT revealing upper lobe cavitary lesions, immediately prior to sputum acid-fast bacilli staining and initiation of anti-mycobacterial therapy.\n3. Differential Distinctions: Leukemic pulmonary infiltrates usually cause diffuse ground-glass or alveolar infiltrates rather than discrete thick-walled apical cavities. Invasive pulmonary aspergillosis is common in acute leukemia but typically presents with halo or air-crescent signs in severely neutropenic patients, whereas sputum acid-fast smear confirmed high-burden mycobacterial reactivation.",
+  "case_prompt": "A 58-year-old male presented to the hospital with a 1-week history of persistent nausea and vomiting, accompanied by progressive fatigue and pallor. He denied productive cough, fever, chills, chest pain, or hemoptysis. His remote medical history was notable for an episode of exudative pleurisy 30 years earlier, for which he had taken a 2-month course of antimicrobials before self-discontinuing therapy.\n\nOn physical examination, the patient was pale and fatigued but in no acute cardiopulmonary distress. Vital signs were within normal limits. Cardiopulmonary auscultation revealed clear breath sounds bilaterally without wheezing, rales, or rhonchi. Abdominal examination was unremarkable without hepatomegaly or splenomegaly. There was no peripheral lymphadenopathy or cutaneous petechiae.\n\nInitial emergency laboratory testing revealed marked leukocytosis with a white blood cell count of 25.3 \u00d7 10^9/L, severe normocytic anemia with a hemoglobin of 65 g/L, and a platelet count of 190 \u00d7 10^9/L. Bone marrow aspiration and histological evaluation demonstrated hypercellularity with prominent monocyte-lineage expansion, showing 51% monoblasts and promonocytes. Flow cytometry confirmed a prominent myeloid blast population (20.46% of non-erythroid cells) expressing CD117, CD34, CD33, CD13, HLA-DR, CD38, CD123, and CD56, diagnostic of acute monoblastic leukemia. Baseline pre-treatment staging chest computed tomography (CT) revealed two discrete pulmonary parenchymal lesions, including a prominent cavitary lesion within the right upper lung zone.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leukemic Pulmonary Infiltration (Pulmonary Leukemia)",
+      "rule_out_reason": "Considered because high-count acute myeloid leukemia can infiltrate lung parenchyma; however, leukemic infiltration characteristically produces diffuse interstitial or alveolar opacities rather than localized apical cavitary lesions, and sputum smear confirmed high-density acid-fast bacilli.",
+      "quote": "Two pulmonary TB lesions were visible on a chest CT, and the right upper lung cavity had formed (Figures 1A1, A2)."
+    },
+    {
+      "candidate": "Invasive Fungal Infection (e.g., Angioinvasive Aspergillosis)",
+      "rule_out_reason": "Cavitary lung lesions in acute leukemia patients frequently indicate opportunistic mold infections; however, sputum examination revealed heavy acid-fast bacilli (AFB 3+) without fungal elements, and lesions progressively regressed upon antimycobacterial therapy.",
+      "quote": "In the sputum, acid-fast bacillus (AFB) 3+ was found. The patient received 2 months of TB pleurisy treatment 30 years ago and then stopped taking tuberculous drugs."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Pre-chemotherapy chest computed tomography demonstrated a right upper lung cavitary lesion, and sputum smears showed acid-fast bacilli 3+, confirming active pulmonary tuberculosis reactivation complicating newly diagnosed acute myeloid leukemia.",
+      "quote": "chest computed tomography (CT) revealed two pulmonary tuberculosis (TB). In the sputum, acid-fast bacillus (AFB) 3+ was found... right upper lung cavity had formed (Figures 1A1, A2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The prompt halts prior to sputum acid-fast staining and antimycobacterial therapy. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

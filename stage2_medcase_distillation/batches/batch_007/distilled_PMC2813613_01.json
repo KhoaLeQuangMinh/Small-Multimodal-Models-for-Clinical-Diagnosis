@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2813613_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 50-year-old diabetic male with a treated history of pulmonary tuberculosis 13 years earlier presents with chronic fever, sweating, and hemoptysis. Chest CT reveals a large apical right lower lobe cavity with internal echoes. The patient was referred for suspected aspergilloma colonizing an old tuberculous cavity. The core tension is recognizing that the underlying host lesion is actually an intact pulmonary hydatid cyst secondarily superinfected with invasive Aspergillus, rather than a simple post-tuberculous fungal ball.\n2. Admission Breakpoint: The admission breakpoint concludes after clinical history, respiratory examination (low-grade fever, bronchial breath sounds, coarse crepitations), baseline sputum acid-fast smear (negative), plain chest radiography (thick-walled cavity adjacent to right hilum), HRCT chest (large apical right lower lobe cavity with extensive lamellar internal echoes), and abdominal ultrasound (simple hepatic cyst). Bronchoscopy, bronchoscopic fungal culture, surgical wedge resection, and histopathology represent confirmatory testing.\n3. Differential Distinctions: Reactivation pulmonary tuberculosis was a primary differential given prior TB and cavitary hemoptysis, but sputum smear for acid-fast bacilli was negative. Isolated post-tuberculous aspergilloma was the presumptive referral diagnosis, but gross pathology and histopathology revealed a laminated parasitic membrane with hooklets within which fungal hyphae had invaded.",
+  "case_prompt": "A 50-year-old diabetic male presents with a six-month history of low-grade fever and night sweats, accompanied by recurrent hemoptysis for the past three months. Thirteen years earlier, he was diagnosed with and treated for chronic cavitary granulomatous pulmonary infection.\n\nOn physical examination, he has a low-grade fever. Respiratory examination reveals bronchial breath sounds with coarse crepitations over the right infrascapular region. The remainder of the physical examination is unremarkable.\n\nInitial sputum examination is negative on microscopic smear for special-stain micro-organisms. Plain chest radiography demonstrates a thick-walled cavitary lesion in the upper and mid lung zones adjacent to the right hilum. High-resolution computed tomography (HRCT) of the chest reveals a large cavity in the apical segment of the right lower lobe containing extensive lamellar internal echoes. Abdominal ultrasonography demonstrates a simple hepatic cyst with no internal echoes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Reactivation pulmonary tuberculosis",
+      "rule_out_reason": "Considered because of the remote history of pulmonary tuberculosis, subacute fever, sweats, hemoptysis, and a thick-walled perihilar cavitary lesion; ruled out by negative sputum smears for acid-fast bacilli and absence of granulomatous mycobacterial disease on pathology.",
+      "quote": "A sputum smear was negative for acid-fast bacilli and grew Aspergillus."
+    },
+    {
+      "candidate": "Isolated simple post-tuberculous aspergilloma",
+      "rule_out_reason": "Primary referral suspicion for fungus colonizing an inactive tuberculous cavity; however, surgical exploration revealed an underlying parasitic cyst wall with laminated membranes rather than an epithelialized fibrotic tuberculous cavity.",
+      "quote": "Wedge resection of the apical segment of the right lower lobe was performed due to persistent hemoptysis and growth of Aspergillus species in a possible post tuberculous cavity."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the resected cavitary wall demonstrated a definitive hydatid cyst containing Echinococcus hooklets, with secondary invasive Aspergillus hyphae infiltrating the cyst wall.",
+      "quote": "Histopathological examination confirmed the presence of hydatid cyst along with echinoccocus hooklets with invasive Aspergillus within the cyst wall (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to bronchoscopic cultures and surgical resection. History of treated pulmonary tuberculosis preserved as essential clinical context. Quotes verified verbatim against the text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9935826_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 68-year-old severely cachectic woman (BMI 14.98 kg/m\u00b2) presents with subacute tetraparesis, bowel/bladder incontinence, burning radicular back pain, and new-onset jaundice. Cervical spine MRI demonstrates destructive collapse of C5-C6 with extensive prevertebral and longus colli abscesses. The prominent cachexia and destructive vertebral collapse mimic an aggressive osseous metastatic malignancy or pyogenic discitis, while new jaundice mimics primary hepatobiliary disease.\n2. Admission Breakpoint: Admission triage terminates after clinical and neurological examination demonstrating ASIA grade C spinal cord injury at C5, nutritional assessment (BMI 14.98 kg/m\u00b2), and cervical spine MRI demonstrating C5-C6 vertebral destruction with paravertebral and longus colli muscle abscesses, prior to surgical debridement and anterior cervical stabilization.\n3. Differential Distinctions: Pyogenic bacterial spondylodiscitis causes rapid disc and vertebral destruction, but typically features high fever, acute toxicity, and bacteremia rather than indolent destruction with cold abscesses. Metastatic spinal neoplasm causes destructive vertebral collapse in elderly cachectic patients, but characteristically spares intervertebral discs and does not form large contiguous longus colli muscle abscesses. Obstructive jaundice was ruled out by lack of biliary dilatation or hepatosplenomegaly, reflecting drug-induced liver injury.",
+  "case_prompt": "A 68-year-old woman presents with progressive weakness and numbness in all four extremities, leaving her unable to walk, stand, or sit unsupported. Over the preceding two weeks, she experienced sharp, burning mid-back pain radiating into both legs (numerical rating scale score 7/10). She cannot perceive the urge to urinate or defecate and has developed urinary and fecal incontinence. Over the past week, she has noted malaise, epigastric discomfort, nausea, episodic vomiting, anorexia, and progressive yellowish discoloration of her eyes and skin.\n\nOn physical examination, she is chronically ill, bedridden, and severely underweight with a body mass index (BMI) of 14.98 kg/m\u00b2. Both the skin and sclerae are icteric. Abdominal examination demonstrates epigastric tenderness without palpable enlargement of the liver or spleen. Inspection reveals a 2 \u00d7 1 cm grade II sacral decubitus ulcer. Range of motion of the neck is limited and painful. Neurological examination reveals tetraparesis with an American Spinal Injury Association (ASIA) Impairment Scale grade C motor and sensory deficit at the C5 level: she can slide her legs sideways but cannot lift them against gravity, has severe bilateral hand weakness with inability to clench or grip, and exhibits decreased sensation below C5.\n\nMagnetic resonance imaging (MRI) of the cervical spine reveals destructive erosion of the vertebral bodies at the level of the C5 and C6 cervical area, with associated paravertebral and longus colli muscle abscesses causing severe spinal cord compression.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial spondylodiscitis",
+      "rule_out_reason": "Bacterial discitis and vertebral osteomyelitis commonly produce vertebral body collapse and epidural inflammation, but characteristically present with acute high fevers, leukocytosis, and rapid destruction rather than subacute progression with large cold abscesses.",
+      "quote": "Magnetic resonance imaging (MRI) revealed destruction of the vertebral bodies at the level of the 5th and 6th cervical area, with paravertebral and longus colli muscle abscesses (Figure 1)."
+    },
+    {
+      "candidate": "Metastatic spinal neoplasm / multiple myeloma",
+      "rule_out_reason": "Severe cachexia, chronic radicular pain, and destructive cervical vertebral collapse causing spinal cord injury in an elderly patient raised high clinical suspicion for spinal metastases; however, contiguous multi-level involvement with extensive longus colli muscle abscess formation strongly pointed to a chronic granulomatous infection.",
+      "quote": "destruction of the vertebral bodies at the level of the 5th and 6th cervical area, with paravertebral and longus colli muscle abscesses"
+    },
+    {
+      "candidate": "Obstructive jaundice / Primary hepatobiliary disease",
+      "rule_out_reason": "New-onset scleral icterus, nausea, vomiting, and epigastric discomfort in an elderly patient raised suspicion for hepatobiliary pathology or acute hepatitis, but physical exam confirmed absence of hepatosplenomegaly, indicating medication-related liver injury in the setting of severe sarcopenia and malnutrition.",
+      "quote": "Both the sclera and skin were icteric. No palpable enlargement of the liver or spleen was observed."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cervical spinal tuberculosis (Pott's disease) with spinal cord injury",
+      "rule_out_reason": "Cervical spine MRI confirmed C5-C6 spondylodiscitis with large paravertebral and longus colli cold abscesses causing spinal cord injury (ASIA C C5), leading to emergent surgical anterior cervical corpectomy decompression and fusion (ACDF) confirming tuberculous spondylitis.",
+      "quote": "The presumptive diagnosis was spondylitis tuberculosis. She had consumed anti-tuberculosis drugs for two months. Magnetic resonance imaging (MRI) revealed destruction of the vertebral bodies at the level of the 5th and 6th cervical area, with paravertebral and longus colli muscle abscesses (Figure 1). Subsequently, she underwent debridement and spinal stabilization surgery."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Zero spoilers in case prompt. Surgical intervention and disease confirmation captured in diagnostic reasoning. Verbatim quotes verified."
+}

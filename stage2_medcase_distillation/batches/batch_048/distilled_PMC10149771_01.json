@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10149771_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 46-year-old previously healthy, non-smoking male presents with fever, pleuritic chest pain, peripheral upper-lobe consolidation, and massive peripheral hypereosinophilia (53%, 7017/\u03bcL). The clinical and radiographic findings closely simulate chronic eosinophilic pneumonia (CEP), leading to initial empiric corticosteroid therapy. However, the subsequent emergence of recurrent pneumothorax signals pleural migration by a foodborne parasite rather than an idiopathic eosinophilic lung disease.\n2. Admission Breakpoint: The breakpoint is set at the conclusion of the initial outpatient/inpatient diagnostic workup\u2014encompassing the 3-week symptom history, normal ECG and echocardiogram, chest CT findings of peripheral left upper lobe consolidation, marked peripheral eosinophilia, and bronchoalveolar lavage results\u2014prior to steroid initiation, subsequent pneumothorax development, second-round dietary revelation of raw crab ingestion, and parasitic serology.\n3. Differential Distinctions: Chronic eosinophilic pneumonia presents with peripheral airspace consolidations ('photonegative of pulmonary edema') and responsive hypereosinophilia, but does not cause recurrent pneumothorax. Allergic bronchopulmonary aspergillosis and EGPA present with marked eosinophilia but typically have preceding asthma or systemic vasculitis. Foodborne lung fluke trematodiasis (Paragonimus) penetrates the diaphragm and pleura to reach the lungs, characteristically producing pleuritis, pleural effusion, and pneumothorax in the setting of crustacean ingestion.",
+  "case_prompt": "A 46-year-old Japanese male who was previously healthy and a lifelong non-smoker presented with a three-week history of fever and left-sided chest pain. He had no prior history of bronchial asthma, atopy, or chronic respiratory disease, and he was taking no medications.\n\nOn physical examination, he was in no acute distress and there was no evidence of respiratory failure. Oxygen saturation on ambient air was normal. Cardiac examination was unremarkable, and breath sounds were preserved without wheezes or crackles. An electrocardiogram was within normal limits, and a transthoracic echocardiogram demonstrated normal cardiac chamber size, wall motion, and valvular function without pericardial effusion.\n\nChest computed tomography demonstrated airspace consolidation located in the peripheral region of the left upper lobe, with no other parenchymal or pleural abnormalities identified in either lung. Laboratory evaluation revealed marked leukocytosis with profound peripheral blood eosinophilia, reaching a peak eosinophil count of 7,017/\u03bcL (53% of total leukocytes; reference range <7%). Fractional exhaled nitric oxide (FeNO) was measured at 54 ppb, indicating active eosinophilic airway inflammation. Bronchoscopy with bronchoalveolar lavage of the involved segment yielded fluid containing 73% lymphocytes and 14% eosinophils; no bacterial, fungal, or special-stain micro-organisms were identified on initial microscopy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Eosinophilic Pneumonia (CEP)",
+      "rule_out_reason": "Considered the primary diagnosis on admission due to subacute pulmonary symptoms (>2 weeks), peripheral upper-lobe airspace consolidation on CT, profound peripheral eosinophilia (53%), and elevated FeNO. Ruled out when the patient developed recurrent right pneumothorax and rebound eosinophilia despite systemic corticosteroid therapy, a complication characteristic of pleural mechanical migration rather than idiopathic eosinophilic pneumonia.",
+      "quote": "Eventually, the patient was diagnosed with CEP and oral corticosteroids were initiated. However, right pneumothorax was detected 3 months after starting steroid therapy."
+    },
+    {
+      "candidate": "Eosinophilic Granulomatosis with Polyangiitis (EGPA) / Allergic Bronchopulmonary Aspergillosis",
+      "rule_out_reason": "Considered given profound peripheral blood hypereosinophilia (>7000/\u03bcL) accompanied by pulmonary infiltrates and elevated FeNO. Ruled out by the absence of a history of bronchial asthma, lack of extrapulmonary organ involvement (e.g., neuropathy, cutaneous lesions, renal disease), and absence of fungal pathogens in bronchoalveolar lavage fluid.",
+      "quote": "The clinical symptom was present for at least 2 weeks and was confined to the lungs. No medications were administrated, and the imaging studies were consistent to CEP."
+    },
+    {
+      "candidate": "Intestinal / Migratory Helminthiasis (Strongyloidiasis, Ascariasis)",
+      "rule_out_reason": "Considered because migrating parasites frequently induce marked systemic eosinophilia and transient pulmonary consolidations (L\u00f6ffler syndrome). Ruled out by repeated negative microscopic examinations of sputum and stool for helminth ova, larvae, or parasites.",
+      "quote": "No parasite eggs were detected in sputum and feces samples."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when the development of pneumothorax prompted a second detailed dietary history, revealing consumption of undercooked freshwater crab ('Shanghai crab') three weeks prior to presentation. Subsequent microplate ELISA serological testing demonstrated elevated antibodies to Paragonimus westermani, confirming pulmonary trematode infection.",
+      "quote": "A second round of detailed history taking revealed that the patient had consumed undercooked \"Shanghai crab\" 3 weeks before the first visit... The value of the serological test for P. westermani was increased according to microplate enzyme-linked immunosorbent assays as reported previously"
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed prior to corticosteroid therapy, secondary pneumothorax, dietary re-interrogation, and serology. Zero pathogen spoilers. Verbatim quotes from source text verify differential rule-outs and diagnostic pivot. Target canonical disease Foodborne Trematodes verified."
+}

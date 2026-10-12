@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5540382_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 24-year-old Indian male migrant worker presents in Singapore with high fever, chills, rigors, profound thrombocytopenia (24 \u00d7 10^9/L), and lymphopenia. The tension lies in differentiating acute urban arboviral infection (dengue fever) from imported relapsing malaria (Plasmodium vivax), while harboring an unheralded co-infection with lymphatic filariasis (Wuchereria bancrofti).\n2. Admission Breakpoint: Admission triage ends following history, physical exam, and initial complete blood count showing profound thrombocytopenia and lymphopenia, before diagnostic dengue serology/NS1 antigen tests and peripheral blood smear malaria microscopy.\n3. Differential Distinctions: Dengue fever is ruled out by negative dengue NS1 antigen and IgM/IgG serologies; malaria is confirmed by positive blood smear demonstrating Plasmodium vivax (0.4% parasitemia), with prompt clinical and parasitological response to chloroquine; subsequent surveillance identified occult co-infection with Wuchereria bancrofti microfilariae.",
+  "case_prompt": "A 24-year-old Indian male who arrived in Singapore from Mumbai, India, 7 months earlier for employment presented to the emergency department with a 4-day history of high-grade fever associated with chills and rigors. He reported no cough, dyspnea, rash, abdominal pain, diarrhea, or urinary complaints.\n\nOn physical examination, he was febrile with high body temperature, but hemodynamically stable. Physical examination was unremarkable except for the presence of fever, with no jaundice, rash, petechiae, lymphadenopathy, or hepatosplenomegaly.\n\nInitial complete blood count revealed severe thrombocytopenia at 24 \u00d7 10^9/L (reference range: 132\u2013372 \u00d7 10^9/L) and lymphopenia at 0.33 \u00d7 10^9/L (reference range: 0.94\u20133.08 \u00d7 10^9/L), but was otherwise normal. Baseline G6PD screening was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue fever",
+      "rule_out_reason": "Considered the leading viral differential in Singapore for acute fever, rigors, and severe thrombocytopenia with lymphopenia; ruled out by negative NS1 antigen and negative IgM/IgG serologies.",
+      "quote": "The history and clinical examination suggested possible malaria infection with dengue fever as a differential diagnosis and specific laboratory tests were requested... G6PD was normal and Dengue IgM/IgG/NS1 were negative."
+    },
+    {
+      "candidate": "Enteric fever (Typhoid fever)",
+      "rule_out_reason": "Considered in a young migrant from India presenting with acute fever, chills, and cytopenias; ruled out by positive blood microscopy demonstrating intraerythrocytic protozoan parasites and rapid response to antimalarial therapy.",
+      "quote": "Full blood count revealed thrombocytopenia at 24 x 109/L (references: 132-372 x 109/L) and lymphopenia at 0.33 x 109 (references: 0.94-3.08 x 109/L) but was otherwise normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Plasmodium vivax malaria (with co-incidental Wuchereria bancrofti microfilaremia)",
+      "rule_out_reason": "Malaria microscopy was positive, confirming Plasmodium vivax with 0.4% parasitemia; subsequent blood surveillance revealed concurrent asymptomatic Wuchereria bancrofti microfilariae.",
+      "quote": "Malaria microscopy was positive. The test results thus confirmed the initial suspicion of Plasmodium infection and identified the parasites as Plasmodium vivax with a parasitemia of 0.4%."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission prompt stopping at CBC and G6PD. Smear microscopy and dengue serologies reserved for reasoning. Verbatim quotes matched."
+}

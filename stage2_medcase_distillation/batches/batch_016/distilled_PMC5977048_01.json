@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5977048_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 17-year-old farmer presenting with a 7-year history of progressive chronic hand arthralgias, severe hand and foot deformities, distal phalangeal/metatarsal osteolysis, and perforating plantar ulcers. Because he had been treated repeatedly for 7 years by dermatologists and traditional healers with analgesics and antibiotics, the diagnosis was delayed, masquerading as juvenile inflammatory arthritis, hereditary/diabetic sensory neuropathy, or chronic osteomyelitis.\n2. Admission Breakpoint: Admission clinical evaluation terminates after recording the 7-year chronology of hypopigmented macules and paresthesias, lack of response to prior therapies, physical examination showing hand and foot deformities with anesthetic phalangeal atrophy, hypochromic anesthetic macules, plantar ulcers, palpable hypertrophied ulnar and popliteal nerves, normal visual exam, negative HIV serology, normal routine labs, and radiographs showing osteoporosis and bone resorption. It stops immediately before WHO clinical diagnostic criteria classification and institution of multidrug therapy.\n3. Differential Distinctions: Rheumatoid arthritis / chronic inflammatory arthropathy explains hand deformities and arthralgias, but lacks cutaneous anesthesia, trophic ulcers, and hypertrophied nerve trunks. Diabetic or hereditary neuropathy causes neuropathic ulcers and osteolysis, but does not cause hypochromic anesthetic macules or palpable enlarged nerve trunks. Lepromatous leprosy was clinically confirmed based on WHO criteria: hypochromic anesthetic macular lesions and palpably hypertrophied peripheral nerve trunks.",
+  "case_prompt": "A 17-year-old male farmer residing in southern Mauritania presented to the regional hospital with severe chronic arthralgia affecting the joints of the hands, associated with bilateral perforating plantar ulcers. His symptoms had evolved over seven years, initially presenting with hypopigmented maculopapular lesions and paresthesias at the interphalangeal extremities and on the plantar surfaces of the feet. Over the preceding seven years, he had consulted several practitioners and received analgesics, antibiotics, and topical therapies without improvement.\n\nPhysical examination revealed severe deformity of the hands with anesthetic distal phalangeal atrophy, hypochromic anesthetic macular lesions, and severe deformity of the feet with atrophy of the metatarsals and phalanges and bilateral plantar perforations. Palpation of peripheral nerve trunks revealed hypertrophied ulnar and popliteal nerves. Visual examination was normal.\n\nHuman immunodeficiency virus (HIV) serology was negative. Routine pretherapeutic hematologic and biochemical laboratory examinations were normal. Radiographs of the hands and feet showed osteoporosis with phalangeal and metatarsal bone resorption.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic inflammatory polyarthritis / Rheumatoid arthritis",
+      "rule_out_reason": "Considered because of long-standing hand arthralgias and severe joint deformities, but ruled out by the prominent cutaneous anesthesia, hypochromic macules, trophic perforating plantar ulcers, and hypertrophied nerve trunks.",
+      "quote": "for severe chronic arthralgia affecting joints of the hands associated with bilateral perforating plantar ulcer."
+    },
+    {
+      "candidate": "Hereditary or diabetic peripheral sensory neuropathy",
+      "rule_out_reason": "Considered due to chronic sensory loss, painless trophic plantar perforations, and distal phalangeal bone resorption, but excluded by the presence of hypopigmented cutaneous macules and bilateral palpable hypertrophy of major nerve trunks.",
+      "quote": "initially presented with hypopigmented maculopapular lesions and paresthesia at the interphalangeal extremities and on the plantar surfaces of the feet."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when clinical evaluation established two of the three cardinal World Health Organization criteria for leprosy: hypochromic anesthetic skin lesions and palpably hypertrophied peripheral nerve trunks.",
+      "quote": "Clinical diagnosis of lepromatous leprosy was established on the basis of 2 of 3 criteria set by the World Health Organization (WHO): hypochromic anesthetic skin lesions and palpable peripheral nerves."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly maintained before WHO criteria diagnostic conclusion and multidrug therapy. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

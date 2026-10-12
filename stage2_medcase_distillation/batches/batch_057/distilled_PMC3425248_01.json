@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3425248_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 28-year-old factory worker presents with florid acute mania (grandiose delusions, pressured speech, hyperactivity, YMRS score of 29) developing immediately after a high-grade febrile illness accompanied by severe headache, transient encephalopathy, severe thrombocytopenia (26,000/μL), and transaminitis. The critical challenge is differentiating primary affective psychosis from an acute neurotropic infectious insult ('neuro-dengue') in an endemic environment.\n2. Admission Breakpoint: The admission assessment encompasses the psychiatric evaluation, physical examination, cognitive and head CT imaging, routine hematology showing marked thrombocytopenia, liver chemistries showing transaminitis, and negative malarial smears, ending strictly prior to the results of specific viral serologies (IgM ELISA).\n3. Differential Distinctions: Primary bipolar affective disorder is argued against by the hyperacute post-febrile onset, absence of past psychiatric history, and spontaneous resolution; cerebral malaria is excluded by a negative peripheral blood smear; intracranial mass or hemorrhage is excluded by normal neuroimaging; and specific positive IgM ELISA confirms acute dengue virus infection.",
+  "case_prompt": "A 28-year-old male factory worker is evaluated in the emergency department for acute behavioral changes. Over the preceding 5 days, he developed pressured speech, euphoric mood, marked motor agitation, increased self-confidence, decreased need for sleep and food, severe irritability, and outbursts of aggression with grandiose claims. Three days prior to these behavioral manifestations, he experienced high fever peaking at 40.6°C, intense headache, transient spells of altered consciousness, diffuse body aches, anorexia, and vomiting. He denies seizures, photophobia, neck stiffness, or overt bleeding manifestations. On physical examination, blood pressure is 114/76 mmHg and pulse rate is 110–120 beats/min. Systemic examination is unremarkable with no meningismus. Mental status examination reveals an agitated, uncooperative man with continuous pressured speech and unshakable grandiose delusions regarding supernatural abilities (Young Mania Rating Scale score 29); however, cognitive screening (MMSE score 28/30) and non-contrast head CT are normal. Triage laboratory evaluation reveals severe thrombocytopenia with a platelet count of 26,000/μL, a total leukocyte count of 5,400/μL with 46% lymphocytes, and a prolonged bleeding time of 9 minutes. Liver function testing demonstrates elevated transaminases with AST of 258 IU/mL and ALT of 366 IU/mL, while serum electrolytes, renal panel, and blood smear for malarial parasites are unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Bipolar Affective Disorder (Manic Episode)",
+      "rule_out_reason": "While DSM criteria for mania were met with severe grandiosity and hyperactivity, primary psychiatric illness was inconsistent with the acute febrile prodrome, profound thrombocytopenia, and absence of psychiatric history.",
+      "quote": "His past, personal, and family history was noncontributory... he was followed up in the outpatient department of psychiatry for 3 months and did not develop the symptoms of mania."
+    },
+    {
+      "candidate": "Cerebral Malaria",
+      "rule_out_reason": "Given endemic exposure, high-grade fever, transient encephalopathy, and marked thrombocytopenia, severe malaria was considered but excluded by microscopic examination.",
+      "quote": "The blood smear was found to be negative for malarial parasite."
+    },
+    {
+      "candidate": "Acute Bacterial/Viral Encephalitis or Intracranial Hemorrhage",
+      "rule_out_reason": "Acute central nervous system infection or hemorrhage was considered in light of altered consciousness and severe thrombocytopenia, but signs of meningeal irritation were absent and neuroimaging was completely normal.",
+      "quote": "There was no history of neck rigidity, photophobia, seizure, and covert or overt bleeding... Computed tomography scan of the head was found to be normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Infection with Acute Mania (Neuro-dengue)",
+      "rule_out_reason": "Serological confirmation was established by a positive IgM ELISA in conjunction with marked thrombocytopenia and systemic transaminitis.",
+      "quote": "His IgM ELISA for dengue was positive; other investigations revealed a platelet count of 26,000/mul... He was diagnosed as a case of dengue fever with thrombocytopenia."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt retains full clinical tension of post-febrile mania and profound thrombocytopenia while eliminating disease and serological spoilers. Audit flags verified as NONE."
+}

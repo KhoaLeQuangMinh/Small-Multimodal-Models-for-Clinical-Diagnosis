@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5848136_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 36-year-old female immigrant presented with extreme cachexia (70 lb weight loss, BMI 14), chronic diarrhea, severe hypoalbuminemia (1.8 g/dL), and diffuse colonic ulceration with mural thickening mimicking severe inflammatory bowel disease (Crohn's disease) or gastrointestinal lymphoma. The presence of concurrent right pulmonary nodules, mesenteric lymphadenopathy, and a left pleural effusion points toward a unified disseminated systemic infectious etiology.\n2. Admission Breakpoint: The admission breakpoint is reached following emergency department triage, physical exam, baseline laboratory testing (anemia, hypoalbuminemia, elevated CRP, negative autoimmune serologies and HIV), and cross-sectional computed tomography of the chest and abdomen, prior to endoscopy with mucosal biopsies, induced sputum molecular testing, and surgical resection.\n3. Differential Distinctions: Crohn's disease causes transmural skip lesions, aphthous/linear ulcers, and strictures, but is not accompanied by active necrotizing granulomatous pulmonary disease with positive sputum/stool mycobacterial microbiology. Colonic adenocarcinoma or lymphoma presents with focal mass effect and mesenteric lymphadenopathy but demonstrates malignant cytoarchitecture on histopathology rather than caseating granulomas.",
+  "case_prompt": "A 36-year-old woman who emigrated from Ecuador 14 years prior presented to the emergency department with a 1-year history of progressive, intermittent abdominal pain, persistent diarrhea, and profound weight loss totaling 70 pounds. She reported no other previous medical conditions, had no known sick contacts, and denied recent international travel outside the United States.\n\nOn physical examination, she appeared severely cachectic with diffuse temporal, clavicular, and extremity muscle wasting. Her body mass index (BMI) was 14. Vital signs were stable. Abdominal examination revealed diffuse mild tenderness without peritoneal signs, rebound, or palpable discrete organomegaly.\n\nInitial triage laboratory studies revealed a white blood cell count of 4.5 × 10^3/μL, hemoglobin of 8.8 g/dL, serum iron of 17 μg/dL, total iron-binding capacity of 47 μg/dL, serum ferritin of 123 μg/L, C-reactive protein (CRP) markedly elevated at 9.4 mg/dL, and severe hypoalbuminemia with a serum albumin of 1.8 g/dL. Human immunodeficiency virus (HIV) screening was negative. Serologic autoimmune screening was negative, including negative antinuclear antibody (ANA), negative anti-myeloperoxidase antibody (anti-MPO), and negative anti-proteinase 3 antibody (anti-PR3).\n\nComputed tomography (CT) of the chest and abdomen demonstrated several nodular opacities in the right lung, a large left-sided pleural effusion, and diffuse wall thickening involving both the small and large bowel accompanied by prominent, enlarged mesenteric lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Inflammatory bowel disease (Crohn's disease) / Systemic vasculitis",
+      "rule_out_reason": "While transmural intestinal inflammation, diarrhea, strictures, and profound weight loss strongly suggested severe Crohn's disease or autoimmune vasculitis, autoimmune serologies were negative and the pulmonary involvement reflected active mycobacterial disease.",
+      "quote": "Initial labs were notable for a white blood cell count 4.5 k/mm3, hemoglobin 8.8 g/dL, iron 17 mcg/dL, TIBC 47 mcg/dL, ferritin 123  mug/L, C-reactive protein 9.4 mg/dL, HIV negative, anti-nuclear antibody screen negative, anti-myeloperoxidase antibody negative, anti-perinuclear-3-antibody negative, and albumin 1.8 g/dL."
+    },
+    {
+      "candidate": "Gastrointestinal lymphoma / Colorectal carcinoma",
+      "rule_out_reason": "Considered because of severe cachexia, mesenteric lymphadenopathy, and circumferential friable colonic ulceration; however, endoscopic biopsies showed necrosis without malignancy, and surgical pathology demonstrated granulomatous inflammation.",
+      "quote": "Biopsies showed necrotic tissue that was negative for acid-fast bacilli (AFB)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of positive Mycobacterium tuberculosis polymerase chain reaction from induced sputum and acid-fast bacilli in stool culture, followed by colonic resection histology confirming confluent necrotizing granulomas.",
+      "quote": "Mycobacterium tuberculosis (MTB) polymerase chain reaction from an induced sputum sample was positive. Stool culture was positive for acid-fast bacilli."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict accordance with the Stanford MedCaseReasoning framework. Zero spoilers or pathogen names in the admission prompt; verified canonical diagnosis."
+}

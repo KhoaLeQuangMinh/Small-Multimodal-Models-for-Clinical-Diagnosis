@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2640405_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 17-year-old previously healthy adolescent presented with an acute 5-day history of cough, fever, weight loss, and sudden massive hemoptysis, with a 5x6 cm round apical lesion on chest X-ray and cystic/solid lung lesions on CT. The presentation closely simulated cavitary pulmonary tuberculosis, bacterial lung abscess, or bronchogenic malignancy.\n2. Admission Breakpoint: The admission clinical narrative halts after emergency department triage, physical exam (tachypnea, tachycardia, crackles in right hemithorax), baseline laboratory evaluation (elevated CRP, anemia with Hb 9.7 g/dL, normal coagulopathy panel), chest X-ray, and admission chest CT scan. Subsequent acute clinical deterioration with persistent massive hemoptysis, blood transfusion, emergency thoracotomy, surgical lobectomy, and pathological examination occur post-breakpoint.\n3. Differential Distinctions: Cavitary pulmonary tuberculosis presents with apical disease and hemoptysis but features thick-walled irregular cavities with tree-in-bud nodularity and positive acid-fast bacilli on sputum. Bacterial lung abscess manifests with air-fluid levels and prominent consolidation. Pulmonary hydatid disease can present acutely with cyst rupture into adjacent bronchial branches, causing catastrophic massive hemoptysis, complete bronchial obstruction, and characteristic laminated cyst membranes identified upon thoracotomy.",
+  "case_prompt": "A 17-year-old previously healthy male presented to the emergency department following an episode of frank hemoptysis that began the day prior to admission, accompanied by a 5-day history of productive cough, fever, and weight loss. On arrival, he was conscious but markedly pale and in respiratory distress. Vital signs revealed a blood pressure of 100/60 mmHg, heart rate of 110 beats per minute, respiratory rate of 26 breaths per minute, and body temperature of 37.8\u00b0C. Physical examination of the respiratory system revealed roughened breath sounds and coarse inspiratory crackles over the right hemithorax; the remainder of the examination was unremarkable. Initial laboratory studies demonstrated a C-reactive protein (CRP) level of 1.99 mg/dL, alanine transaminase (ALT) of 26 U/L, aspartate transaminase (AST) of 14 U/L, hemoglobin of 9.7 g/dL, hematocrit of 29.2%, mean corpuscular volume (MCV) of 86 fL, prothrombin time of 29.7 seconds, activated partial thromboplastin time of 13.8 seconds, and international normalized ratio (INR) of 1.09. A plain chest radiograph revealed a 5 x 6 cm circular, well-defined lesion located in the apex of the right lung. An urgent computed tomography (CT) scan of the chest demonstrated a well-circumscribed cystic lesion measuring 4 cm in diameter in the posterior segment of the right upper lobe, surrounded by multiple neighboring cystic and solid satellite lesions up to 2 cm in diameter, as well as an additional 2 cm lesion located in the superior segment of the right lower lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Tuberculosis",
+      "rule_out_reason": "Considered given the patient's subacute cough, fever, constitutional weight loss, massive hemoptysis, and an apical 5 x 6 cm circular lesion on chest radiograph. Ruled out by chest CT demonstrating well-marginated round cystic lesions with multiple satellite cysts rather than classic tuberculous fibrocaseous cavitation, and definitive surgical identification of parasitic hydatid cyst disease.",
+      "quote": "A 5 x 6 cm circular lesion was located in the apex of the right lung at X-ray (Figure 1)."
+    },
+    {
+      "candidate": "Bacterial Lung Abscess / Necrotizing Pneumonia",
+      "rule_out_reason": "Considered due to the acute febrile onset, cough, elevated C-reactive protein (1.99 mg/dL), and hemoptysis with an apical cavitary pulmonary mass. Ruled out by chest CT showing thin-walled fluid-filled cystic structures without surrounding dense consolidation or air-fluid levels, and failure of medical stabilization.",
+      "quote": "A computed tomography (CT) scan revealed a cystic lesion 4 cm in diameter in the posterior segment of the upper lobe of the right lung and multiple lesions neighboring the former, some of which were cystic and the others solid (the largest was 2 cm in diameter)."
+    },
+    {
+      "candidate": "Bronchogenic Carcinoma / Malignant Cavitary Mass",
+      "rule_out_reason": "Considered due to hemoptysis, progressive weight loss, and mixed solid-cystic pulmonary lesions on chest CT. Ruled out by adolescent patient age and intraoperative findings demonstrating benign hydatid parasitic cyst membranes.",
+      "quote": "The material obtained revealed hydatid cyst disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was reached during emergency surgical intervention indicated for refractory massive hemoptysis and hemodynamic compromise, where right upper lobectomy revealed complete obliteration of the upper lobe bronchus by ruptured hydatid cysts and histological examination confirmed pulmonary hydatid cyst disease.",
+      "quote": "During surgery, lobectomy of the upper lobe of the right lung and cystectomy with capitonnage of the lower lobe cysts was performed. Capitonnage is obliteration of the pericystic cavity. The material obtained revealed hydatid cyst disease."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to admission breakpoint methodology. The case prompt terminates at emergency chest CT and baseline laboratory testing prior to persistent hemorrhage, transfusion, and emergency thoracotomy. Zero spoilers present in presentation. Verbatim quotes support all differential options."
+}

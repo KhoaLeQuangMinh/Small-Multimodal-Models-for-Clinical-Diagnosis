@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9653542_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-day-old neonate born in a remote rural setting presents with fever, severe tachypnea, subcostal retractions, bilateral crackles, hepatomegaly, and decompensated septic shock, with B-lines on bedside lung ultrasound. The presentation is indistinguishable from fulminant pyogenic neonatal pneumonia and sepsis, masking perinatal mycobacterial transmission resulting from unmonitored maternal disease.\n\n2. Admission Breakpoint: The breakpoint occurs following emergency room presentation, clinical assessment of septic shock, initial baseline laboratory studies, and bedside lung ultrasound, prior to secondary clinical deterioration on hospital day 16, endotracheal intubation, endotracheal aspirate rapid molecular testing, and maternal screening.\n\n3. Differential Distinctions: Conventional pyogenic neonatal pneumonia/septic shock (e.g., GBS, Gram-negative enterics) responds to empiric broad-spectrum beta-lactams; viral pneumonitis (including SARS-CoV-2) causes hypoxemia but is ruled out by negative antigen testing. Perinatal tuberculosis causes initial transient stabilization followed by rapid secondary respiratory failure with acid-fast bacilli and positive rapid molecular testing.",
+  "case_prompt": "A 26-day-old neonate weighing 2,500 grams is referred from a public health center to the emergency department of a regional hospital with a 5-day history of fever, cough, tachypnea, and poor feeding since 21 days of life.\n\nThe maternal obstetric history is notable for absent antenatal care throughout pregnancy, and the delivery took place at home unattended by medical staff.\n\nOn physical examination, the neonate is lethargic with a body temperature of 37.8 °C, heart rate of 180 beats per minute, respiratory rate of 64 breaths per minute, and oxygen saturation of 85% while breathing ambient air. Examination reveals marked subcostal retractions, bilateral pulmonary crackles, hepatomegaly, and overt signs of circulatory shock, including cool extremities, prolonged capillary refill time, and weak peripheral pulses.\n\nInitial laboratory evaluation reveals a hemoglobin level of 13.4 g/dL, leukocyte count of 21,260/mm^3, platelet count of 280,000/mm^3, blood glucose of 111 mg/dL, serum sodium of 136 mmol/L, and serum potassium of 2.5 mmol/L. Urinalysis is normal, and a rapid SARS-CoV-2 antigen swab is negative.\n\nBedside lung ultrasound demonstrates diffuse B-lines indicative of pulmonary interstitial infiltration. The neonate is admitted with a working diagnosis of neonatal pneumonia and septic shock.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Neonatal Pneumonia and Septic Shock (e.g., GBS, Gram-Negative Bacilli)",
+      "rule_out_reason": "Initial clinical presentation, leukocytosis, and hemodynamic collapse led to a working diagnosis of conventional pyogenic neonatal pneumonia and septic shock, treated with broad-spectrum intravenous antibiotics; however, after only transient temporary stabilization, the patient suffered severe clinical deterioration on day 16.",
+      "quote": "The patient was hospitalized with diagnosis of septic shock and neonatal pneumonia. The patient was given broad-spectrum intravenous antibiotics, as well as other supportive medical care."
+    },
+    {
+      "candidate": "Neonatal Viral Pneumonitis (SARS-CoV-2 / Respiratory Viruses)",
+      "rule_out_reason": "Suspected due to acute respiratory distress and diffuse interstitial B-line patterns on lung ultrasound; however, specific rapid antigen testing for SARS-CoV-2 was negative, and the illness progressed beyond self-limiting viral pneumonitis.",
+      "quote": "negative severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) antigen swab."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Worsening respiratory failure on day 16 necessitated endotracheal intubation, where aspirate analysis demonstrated positive acid-fast bacteria and a positive rifampicin-sensitive rapid molecular test, corroborated by positive tuberculosis screening in the mother, establishing perinatal tuberculosis.",
+      "quote": "An acid-fast bacteria (AFB) stain and a rapid molecular test were performed on the endotracheal aspirate. A positive result of AFB stain, which was sensitive to rifampicin, was discovered. Based on these findings, the patient was diagnosed as having perinatal TB. Tuberculosis screening was conducted on the patient s mother with a positive result."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero endotracheal aspirate PCR/AFB in case prompt. Quotes exactly matched text."
+}

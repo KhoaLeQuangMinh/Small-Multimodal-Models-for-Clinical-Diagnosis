@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4288833_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 13-year-old girl presents with a large, palpable 10 \u00d7 10 cm right lumbar mass and continuous flank pain of 3 months' duration, without hematuria or urinary complaints. Routine laboratory tests and urinalysis are normal without eosinophilia. Cross-sectional imaging reveals a massive multiloculated cyst occupying the upper pole of the right kidney in an anomalous incomplete duplex collecting system. The central clinical challenge is distinguishing this parasitic lesion from pediatric cystic renal tumors (multilocular cystic nephroma, cystic partially differentiated nephroblastoma, or cystic renal cell carcinoma) or congenital polycystic diseases, avoiding inadvertent biopsy that could cause anaphylaxis.\n2. Admission Breakpoint: The breakpoint is positioned after outpatient examination, normal routine blood/urine tests, normal chest radiography, abdominal ultrasound, and contrast-enhanced CT (demonstrating a 15.5 cm multiloculated cyst with 'cysts within cyst' appearance arising from the right upper renal moiety), immediately before echinococcal serological antibody testing (ELISA) is performed and prior to albendazole therapy and surgical exploration.\n3. Differential Distinctions: Multilocular cystic nephroma or cystic Wilms tumor is ruled out by the pathognomonic 'cysts within cyst' appearance representing daughter cysts and serologic antibody positivity. Polycystic kidney disease or complicated renal abscess is ruled out by unilateral involvement, afebrile presentation, normal urine sediment, and preserved renal function.",
+  "case_prompt": "A 13-year-old female presents with a 3-month history of continuous, dull aching pain localized to the right flank region. She reports no urinary symptoms, such as hematuria, dysuria, urgency, or frequency, and denies fever, chills, nausea, vomiting, abdominal distension, or weight loss. Her past medical and surgical histories are unremarkable.\n\nOn physical examination, she appears well and general physical examination is unremarkable. Abdominal examination reveals a large, firm, non-tender, bimanually palpable mass measuring 10 \u00d7 10 cm in the right lumbar region. The mass moves slightly with respiration. The abdomen is otherwise soft and non-tender, with no palpable hepatosplenomegaly or ascites.\n\nRoutine blood investigations demonstrate normal hemoglobin, leukocyte count, and platelet count, with no peripheral eosinophilia. Renal function tests (blood urea nitrogen and serum creatinine) are normal, and urinalysis is clear without proteinuria or hematuria. Plain chest radiography is normal. Abdominal ultrasonography reveals a large heterogeneous cystic mass measuring 13 \u00d7 10 cm with multiple internal septations and daughter cysts in the right upper quadrant, with non-visualization of the right kidney. Subsequent contrast-enhanced computed tomography (CECT) of the abdomen demonstrates a large, well-defined, multiloculated cystic lesion measuring 11.5 \u00d7 10.5 \u00d7 15.5 cm with internal septations arising from the upper pole of the right kidney, displaying a classic 'cysts within cyst' architecture and thinned peripheral renal parenchyma; the liver is displaced superiorly and medially but is otherwise structurally normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Multilocular cystic nephroma or cystic Wilms tumor (nephroblastoma)",
+      "rule_out_reason": "In a 13-year-old child, a large, well-circumscribed, multiloculated cystic renal mass with internal septations arising from the upper pole of the kidney strongly suggests pediatric cystic neoplasms such as multilocular cystic nephroma or cystic nephroblastoma. However, cross-sectional imaging showed internal daughter vesicles giving a characteristic 'cysts within cyst' appearance, and subsequent serologic testing confirmed a parasitic etiology rather than a neoplastic process.",
+      "quote": "Contrast Enhanced Computed Tomography (CECT) showed a large multiloculated cyst of size 11.5cms x 10.5cms x 15.5cms with internal septations arising from the upper pole of right kidney, with typical cysts within cyst appearance and thinned out peripheral parenchyma."
+    },
+    {
+      "candidate": "Polycystic kidney disease or complicated pyelogenic renal cyst",
+      "rule_out_reason": "Congenital polycystic renal disease or an infected pyelogenic cyst can present as a palpable lumbar mass. However, the cyst was strictly solitary and confined to the upper pole of the right kidney, the contralateral kidney and lower renal parenchyma were structurally intact, and the patient had no fever, pyuria, hematuria, hypertension, or renal functional impairment.",
+      "quote": "Her routine blood and urine investigations were normal with no eosinophilia, and had normal renal function tests."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when the characteristic 'cysts within cyst' appearance on abdominal CT prompted serologic testing, which demonstrated positive echinococcal antibodies by ELISA, confirming an isolated hydatid cyst in the upper moiety of an incomplete duplex kidney.",
+      "quote": "ELISA test for echinococcus antibodies was positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Flawless distillation of pediatric renal hydatid cyst in an anomalous duplex moiety. Zero leakage of serology or histopathology into the prompt."
+}

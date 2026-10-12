@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6180980_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A returning traveler from West Africa presents with acute gastrointestinal symptoms (nausea, diarrhea), recurrent high fevers, and syncope. The prominent diarrheal presentation points toward travel-related bacterial or viral gastroenteritis, while masking life-threatening tropical parasitemia complicated by co-occurring invasive bacteremia.\n2. Admission Breakpoint: The breakpoint stops immediately upon emergency department triage and physical examination (vitals, negative urine hemoglobin, clear chest/abdominal exam) prior to peripheral blood smear review, rapid diagnostic testing, blood cultures, and stool gastrointestinal PCR panels.\n3. Differential Distinctions: Viral/bacterial enteritis and typhoid fever are considered due to diarrhea, fever, and syncope, but extensive stool multiplex PCR is negative, and blood smear examination revealing 3.5% Plasmodium falciparum ring forms and gametocytes confirms malaria with secondary nontyphoidal Salmonella bacteremia.",
+  "case_prompt": "A 50-year-old female retail manager presented to an emergency department in South Carolina for evaluation of syncope. Thirteen days earlier, she had returned from a 10-day trip to Lagos, Nigeria, where she visited family. Six days after returning, she developed nausea and watery diarrhea. Three days later, she developed recurrent daily fevers accompanied by profuse drenching sweats. Twelve days after return, she had two episodes of syncope that prompted her to seek emergency care. She reported staying in an urban home with closed windows, using DEET repellent, and drinking only bottled water, without remembered insect bites or sick contacts. She reported taking unverified prescription antimalarial prophylaxis and had received vaccines for typhoid, yellow fever, hepatitis A, tetanus, influenza, and meningococcal disease within the preceding year. She had no significant past medical history and took no regular medications.\n\nOn examination, her temperature was 100.8°F (38.2°C), pulse was 117 beats/minute and regular, blood pressure was 127/78 mmHg, respiratory rate was 18 breaths/minute, and oxygen saturation was 99% on ambient air. She appeared well-nourished and in no distress. Sclerae were anicteric and there was no cervical or axillary lymphadenopathy. Lungs were clear to auscultation. Heart examination was notable for tachycardia without murmurs. The abdomen was soft, nontender, and nondistended without hepatosplenomegaly. Neurological examination was unremarkable. Urinalysis showed no detectable hemoglobin.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Infectious Gastroenteritis",
+      "rule_out_reason": "Prominent nausea, diarrhea, fever, and dehydration leading to syncope strongly suggested acute travel-associated infectious gastroenteritis, but a comprehensive multiplex stool molecular panel was negative for all viral, bacterial, and protozoan gastrointestinal pathogens.",
+      "quote": "Nucleic acid amplification-based testing of a stool specimen was negative for adenovirus, Campylobacter, Cyclospora cayetanensis, Clostridium difficile, enteroaggregative Escherichia coli, enteropathogenic E. coli, enterotoxigenic E. coli, Shiga-like toxin producing E. coli, Shigella, enteroinvasive E. coli, Entamoeba histolytica, Giardia lamblia, human astrovirus, norovirus GI/GII, Plesiomonas shigelloides, rotavirus A, Salmonella, sapovirus, Vibrio, Vibrio cholera, and Yersinia enterocolitica"
+    },
+    {
+      "candidate": "Typhoid / Enteric Fever",
+      "rule_out_reason": "High daily fevers with headache, gastrointestinal symptoms, and relative bradycardia or syncope after travel to West Africa raised concern for enteric fever, but the patient had received the oral typhoid vaccine and blood culture identification subsequently established nontyphoidal Salmonella bacteremia rather than Salmonella Typhi.",
+      "quote": "She had received oral typhoid, yellow fever, hepatitis A, TDaP, influenza, and meningococcal vaccines within the preceding year... blood cultures obtained at presentation grew gram-negative rods identified as a Salmonella species by MALDI-TOF mass spectrometry. A triple sugar iron agar slant showed a nontyphoidal Salmonella phenotype."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Giemsa-stained thick and thin blood smears demonstrated microcytic normochromic anemia, numerous intraerythrocytic trophozoite rings, and classic crescentic gametocytes confirming Plasmodium falciparum malaria (3.5% parasitemia), corroborated by positive rapid antigen testing, which predisposed the host to concurrent nontyphoidal Salmonella bacteremia.",
+      "quote": "Microscopic examination showed a microcytic normochromic anemia, numerous erythrocytes with trophozoite rings, and rare banana gametocytes characteristic of P. falciparum malaria. Parasitemia was 3.5%. Rapid malaria diagnostic testing using the BinaxNOW Malaria test (Alere Inc., Waltham Massachusetts) was positive for P. falciparum."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly maintained at emergency room triage before blood smear microscopy and send-out cultures/PCR panels. Zero pathogen names in case_prompt. Full travel exposure and vaccination history included."
+}

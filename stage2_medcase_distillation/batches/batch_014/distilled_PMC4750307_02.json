@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 26-year-old woman presents with acute febrile encephalopathy, severe meningismus (positive Kernig sign), and generalized tonic-clonic seizures in an endemic tropical region. While the acute presentation strongly suggests classical neurotropic pathogens such as pyogenic bacterial meningitis, herpes simplex virus (HSV-1), or Japanese encephalitis, the underlying etiology is an atypical central nervous system invasion by an arbovirus classically associated with hemorrhagic fever rather than primary meningoencephalitis.\n2. Admission Breakpoint: The admission clinical and neurological examination (GCS E4M5V3, neck rigidity, positive Kernig sign, bilateral extensor plantar responses) establishes the clinical threshold. Brain MRI and confirmatory microbiological/serological studies represent the post-breakpoint diagnostic phase.\n3. Differential Distinctions: Herpes simplex encephalitis typically features asymmetric temporal lobe necrosis and focal epileptiform activity with prominent enhancement; acute bacterial meningitis presents with rapid toxic decline and neutrophilic CSF pleocytosis requiring targeted bactericidal therapy; whereas arboviral meningoencephalitis demonstrates non-enhancing thalamic and medial temporal signal changes on MRI with benign recovery on supportive care alone.",
+  "case_prompt": "A 26-year-old woman presented to the hospital with a 5-day history of high-grade continuous fever accompanied by chills and rigors. For the preceding 4 days, she experienced severe headache, anorexia, nausea, and multiple episodes of vomiting. Two days prior to presentation, she developed progressive disorientation, and 1 day prior to admission, she suffered an episode of generalized tonic-clonic seizure. She had no history of any similar illness in the past.\n\nOn physical and neurological examination at admission, she was disoriented with a Glasgow Coma Scale (GCS) score of 12 (E4M5V3). Meningeal signs were positive, demonstrating marked neck rigidity and a positive Kernig sign. Cranial nerve examination revealed no abnormalities. Motor strength, sensory modalities, deep tendon reflexes, cerebellar function, and autonomic functions were all within normal limits. Plantar responses were extensor bilaterally.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Herpes Simplex Virus (HSV) Encephalitis",
+      "rule_out_reason": "HSV encephalitis was considered due to acute fever, disorientation, seizures, and temporal lobe involvement, but it typically exhibits asymmetric necrotizing lesions with contrast enhancement rather than nonenhancing thalamic alterations, and the patient made a complete recovery without antiviral therapy.",
+      "quote": "MRI scan of brain (plain and contrast) done on 6th day of fever, showed mild diffusion restricted nonenhancing altered signal intensity (hypointense in T1, hyperintense in T2 and FLAIR) in both thalamic and left medial temporal lobe suggestive of encephalitis"
+    },
+    {
+      "candidate": "Acute Bacterial / Pyogenic Meningoencephalitis",
+      "rule_out_reason": "High-grade fever with rigors, severe headache, vomiting, and marked nuchal rigidity with Kernig sign raised strong concern for bacterial meningitis, but the absence of suppurative meningeal exudate and gradual resolution on supportive care alone excluded an acute bacterial etiology.",
+      "quote": "Patient was treated only with IV fluid and paracetamol as antipyretic. Patient improved gradually with normal sensorium gained on the 10th day of hospital stay with no neck rigidity."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neuroimaging demonstrated nonenhancing bithalamic and medial temporal encephalitis consistent with arboviral central nervous system involvement, establishing the confirmed diagnosis of dengue meningoencephalitis.",
+      "quote": "MRI scan of brain (plain and contrast) done on 6th day of fever, showed mild diffusion restricted nonenhancing altered signal intensity (hypointense in T1, hyperintense in T2 and FLAIR) in both thalamic and left medial temporal lobe suggestive of encephalitis [Figure 4]. The patient was diagnosed as dengue meningoencephalitis."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Source fidelity verified. Case prompt strictly restricted to admission triage and exam findings without mention of dengue, MRI results, or post-admission treatment course. Verbatim quotes from the published case report corroborate all reasoning steps."
+}

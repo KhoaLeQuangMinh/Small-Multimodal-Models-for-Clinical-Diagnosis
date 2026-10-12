@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213119_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: An 11-year-old child presenting with prolonged fever of 15 days duration complicated by acute multi-site hemorrhage (epistaxis, red urine, and melena). The clinical picture suggests severe coagulopathy, acute leukemia, or primary hemophagocytic lymphohistiocytosis, disguising an underlying systemic parasitic infection.\n2. Admission Breakpoint: Emergency presentation and triage history of prolonged fever and acute mucocutaneous and visceral bleeding, prior to laboratory hemophagocytosis workup and peripheral blood smear examination.\n3. Differential Distinctions: Primary hemophagocytic lymphohistiocytosis (HLH) and acute leukemia present with fever, pancytopenia, and hemorrhagic diathesis, but resolve rapidly following specific antiparasitic therapy rather than aggressive cytotoxic immunosuppression. Severe falciparum malaria can induce massive cytokine storm leading to secondary HLH (sHLH), profound thrombocytopenia, and overt multisite bleeding.",
+  "case_prompt": "An 11-year-old male child is admitted to the pediatric emergency department with a 15-day history of persistent fever. Over the preceding 3 days, he developed acute bleeding manifestations, including spontaneous nasal bleeding, red-colored urine, and black tarry stools.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary hemophagocytic lymphohistiocytosis / Hematologic malignancy",
+      "rule_out_reason": "The clinical picture of prolonged fever and severe hematological parameters was consistent with HLH; however, the disorder was reactive (secondary HLH) rather than primary, resolving rapidly with antiparasitic treatment alone without cytotoxic therapy.",
+      "quote": "In both cases, sHLH is the cause of pancytopenia. After anti-malarial therapy, both children responded very well and hematological parameters starting to improve within a week of therapy"
+    },
+    {
+      "candidate": "Primary coagulopathy / Acute gastrointestinal hemorrhage of surgical etiology",
+      "rule_out_reason": "Multisite bleeding involving the nasopharynx, urinary tract, and gastrointestinal tract was driven by secondary bone marrow suppression and severe thrombocytopenia rather than an isolated anatomical bleeding source or congenital coagulopathy.",
+      "quote": "complaint of fever (15 days), red color urine, black terry color stool, and nasal bleeding past 3 days for whom peripheral smear for Pf malaria came out to be positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A peripheral blood smear returned positive for Plasmodium falciparum, establishing falciparum malaria complicated by reactive secondary hemophagocytic lymphohistiocytosis as the cause of pancytopenia and bleeding.",
+      "quote": "for whom peripheral smear for Pf malaria came out to be positive. Hematological as well other laboratory parameters were suggestive as HLH and child respond to anti-malarial therapy."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint enforced strictly at triage. Zero spoilers or lab results in prompt. Direct quotes verified verbatim from case text."
+}

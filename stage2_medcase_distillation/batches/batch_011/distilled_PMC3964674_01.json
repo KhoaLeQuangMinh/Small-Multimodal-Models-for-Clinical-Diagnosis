@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3964674_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old woman of Bangladeshi origin presents with chronic prepatellar fluctuance and sinus drainage following minor trauma, unresponsive to beta-lactam therapy. While initially diagnosed and drained as common pyogenic (Staphylococcus aureus) prepatellar bursitis, the lesion's indolence and marked disuse atrophy (quadriceps wasting) masked primary patellar tuberculous osteomyelitis with cold abscess formation.\n2. Admission Breakpoint: The admission breakpoint falls immediately after physical examination of the knee and initial baseline emergency investigations (WBC, CRP, ESR, and plain radiography of the knee showing soft tissue swelling without gross bony destruction), prior to operating room incision, drainage, and surgical microbiology.\n3. Differential Distinctions: Pyogenic prepatellar bursitis typically responds rapidly to drainage and oral/intravenous antistaphylococcal therapy without chronic sinus tract formation; septic arthritis is ruled out by preserved range of motion (0–110 degrees) and lack of joint effusion/intra-articular extension. Patellar tuberculosis is confirmed by repeat radiography and MRI demonstrating a central patellar sequestrum, followed by surgical debridement and isolation of acid-fast bacilli (Mycobacterium tuberculosis).",
+  "case_prompt": "A 25-year-old woman of Bangladeshi origin presents with an insidious onset of swelling over her right knee. The swelling has been present for three months, initially developing after a mechanical fall. She was previously treated with a course of oral flucloxacillin in primary care with no resolution or relief of symptoms, and walking has become increasingly difficult. She denies any respiratory complaints, fever, night sweats, or other systemic symptoms. She reports no known contacts with infectious diseases, recent travel abroad, or family history of illness.\n\nOn physical examination, she exhibits a large, fluctuant prepatellar swelling on the right knee with extensive surrounding erythema. There is a central punctum draining a small amount of purulent material. Passive and active range of motion is maintained from 0 to 110 degrees, but marked ipsilateral quadriceps muscle wasting is noted. Respiratory and systemic examinations are unremarkable with clear breath sounds and no palpable lymphadenopathy.\n\nInitial laboratory tests show a normal peripheral white blood cell count, a C-reactive protein of 11 mg/L, and an erythrocyte sedimentation rate of 30 mm/hr. Plain radiography of the right knee demonstrates prominent prepatellar soft tissue swelling without obvious underlying bony pathology.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Prepatellar Bursitis (Staphylococcal Bursitis)",
+      "rule_out_reason": "Suspected as the initial primary diagnosis due to acute-on-chronic fluctuant swelling, surrounding erythema, and purulent discharge following minor trauma, with initial pus aspirate yielding Staphylococcus aureus; however, simple pyogenic bursitis was refuted by failure of standard intravenous antibiotic therapy and emergence of a persistent discharging sinus tract originating from deep osseous pathology.",
+      "quote": "The patient was diagnosed with an infected prepatellar bursitis, and taken to theatre for incision and drainage. At the time of surgery, 10ml of pus was drained and sent for microbiology, growing Staphylococcus aureus... A month later, the patient was admitted with a persistently painful discharging knee sinus."
+    },
+    {
+      "candidate": "Septic Arthritis of the Knee",
+      "rule_out_reason": "An infected, swollen anterior knee accompanied by difficulty walking and quadriceps atrophy raised consideration for intra-articular infection; ruled out by preserved arc of motion (0-110 degrees) and intraoperative confirmation that the lesion had no communication with the synovial knee joint cavity.",
+      "quote": "Range of movement was 0-110  but there was marked quadriceps wasting... There was no communication with the knee joint itself."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculosis of the Patella (Patellar Tuberculous Osteomyelitis)",
+      "rule_out_reason": "The persistent discharging sinus prompted repeat knee radiography and MRI, uncovering a central osteolytic nidus with necrotic bone sequestrum in the patella. Surgical sinus excision and sequestrectomy revealed perilesional granulomatous tissue, and sequestered bone microbiology grew acid-fast bacilli confirmed as Mycobacterium tuberculosis.",
+      "quote": "Further knee radiography showed a central nidus of necrotic bone in the patella (Fig 2). Magnetic resonance imaging (MRI) confirmed osteomyelitis (Fig 3). She was taken to theatre where a necrotic area of bone was found in the patella with granulomatous material surrounding it... Microbiology of the sequestered bone grew acid-fast bacilli, later confirmed as Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint applied prior to surgical incision and drainage. Differential details initial staphylococcal coinfection/misdiagnosis and excludes all spoiler pathogen names from the prompt."
+}

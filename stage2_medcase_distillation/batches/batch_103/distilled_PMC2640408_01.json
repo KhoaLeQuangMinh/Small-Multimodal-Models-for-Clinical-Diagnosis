@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2640408_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Evaluating a fever of unknown origin in a patient with pre-existing Addison's disease who presents with an enlarged calcified adrenal gland and a concurrent hypodense hepatic mass, where the isolation of a pyogenic bacterium (Streptococcus constellatus) initially masked underlying tuberculous granulomatous disease.\n2. Admission Breakpoint: The admission breakpoint occurs after baseline laboratory testing (CBC, routine biochemistry, coagulation, ESR), echocardiography, plain radiographs, and abdominal CT imaging showing the right hepatic mass and calcified adrenal gland, prior to tuberculin skin testing, fine-needle aspiration, bone marrow studies, laparotomy, and mycobacterial cultures.\n3. Differential Distinctions: Brucellosis can present with FUO, hepatosplenic abscesses, and adrenal granulomas, but serology and bone marrow cultures were negative; Adrenal carcinoma or metastatic hepatic disease was suspected given concurrent adrenal and liver masses, but excluded by negative cytology; Isolated pyogenic abscess was suggested by pure culture growth of S. constellatus, but tissue granulomas and adrenal calcifications revealed co-existent mycobacterial infection.",
+  "case_prompt": "A 40-year-old man with a history of primary adrenal insufficiency (Addison's disease) diagnosed two years previously presents with a one-month history of intermittent fever. He reports no other associated systemic or localized symptoms.\n\nOn physical examination, the patient appears well and vital signs are stable. The physical examination, including abdominal and cardiovascular evaluations, reveals no identifiable abnormalities.\n\nInitial laboratory studies demonstrate a normal complete blood count, normal routine serum biochemical profile, and normal coagulation studies. The erythrocyte sedimentation rate (ESR) is markedly elevated at 70 mm/hour. Plain radiographs of the chest and abdomen, as well as a transthoracic echocardiogram, show no abnormal findings.\n\nAn abdominal computed tomography (CT) scan demonstrates a hypodense mass in the right lobe of the liver and an enlarged right adrenal gland containing calcifications.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Brucellosis",
+      "rule_out_reason": "Brucella infection frequently manifests as prolonged fever of unknown origin with hepatosplenic abscesses and adrenal granulomas in endemic areas, but was excluded by negative serologic assays, blood cultures, and bone-marrow cultures.",
+      "quote": "Brucella spp serology and blood cultures were negative... as was a bone-marrow culture for Mycobacteria and Brucella."
+    },
+    {
+      "candidate": "Adrenal Neoplasm / Metastatic Hepatic Malignancy",
+      "rule_out_reason": "The co-occurrence of an enlarged adrenal gland with calcifications in an Addisonian patient alongside a focal hepatic hypodense lesion raised concern for adrenal carcinoma or metastatic malignancy, but hepatic cytology was negative for neoplastic cells.",
+      "quote": "Fine-needle aspiration of the liver was negative for malignant cells."
+    },
+    {
+      "candidate": "Isolated Pyogenic Abscess (Streptococcus constellatus)",
+      "rule_out_reason": "Although purulent material obtained during laparotomy grew Streptococcus constellatus in pure culture, the presence of chronic adrenal calcifications and tissue granulomas pointed to an underlying chronic granulomatous etiology rather than simple monomicrobial pyogenic infection.",
+      "quote": "Gram and Ziehl-Neelsen stains of the pus were negative, but Streptococcus constellatus was isolated in pure culture, using the API 20S system. The minimum inhibitory concentration (MIC) for penicillin was 0.03 microgr/ml. Microscopic examination revealed granulomas in the liver and adrenal tissue."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculosis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "The definitive turning point was the demonstration of chronic granulomatous inflammation in adrenal and hepatic tissues combined with recovery of Mycobacterium tuberculosis from Lowenstein culture of the abscess material in a patient with a 12-mm Mantoux reaction.",
+      "quote": "Microscopic examination revealed granulomas in the liver and adrenal tissue... Lowenstein culture of the abscess material yielded positive result for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Adrenal tuberculosis is a classic etiology of Addison's disease, frequently leaving dystrophic calcifications. In this patient, a co-infection involving Streptococcus constellatus and Mycobacterium tuberculosis produced a hepatic and adrenal abscess. A single positive pyogenic culture should not deter clinicians from searching for mycobacterial infection when clinical, radiographic (calcifications), or histological (granulomas) evidence indicates chronic granulomatous disease."
+}

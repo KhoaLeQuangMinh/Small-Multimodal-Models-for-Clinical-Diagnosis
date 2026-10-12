@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12669145_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 47-day-old infant presents with a ten-day history of paroxysmal coughing, fever, acute respiratory failure, hyperleukocytosis (WBC 30.53 x 10^9/L), and dense bilateral pulmonary consolidation on chest CT. The diagnostic challenge is recognizing a life-threatening co-infection of pulmonary tuberculosis and pertussis in an infant who appears clinically to have conventional bacterial pneumonia or isolated whooping cough, and subsequent navigation of severe drug-induced liver injury.\n2. Admission Breakpoint: The admission breakpoint occurs following pediatric emergency admission, vital signs demonstrating hypoxia, tachypnea, and retractions, physical examination of respiratory distress, admission complete blood count and CRP, baseline normal liver enzymes, and admission chest CT demonstrating bilateral consolidation, prior to send-out pertussis PCR on day 2, bronchoalveolar lavage TB PCR on day 3, maternal contact tracing, and serial liver monitoring.\n3. Differential Distinctions: Common bacterial community-acquired pneumonia typically responds to beta-lactam antibiotics and lacks paroxysmal coughing or household maternal contacts with chronic cough; viral bronchiolitis (RSV, influenza) produces wheezing and hyperinflation rather than massive leukocytosis and dense lobar consolidation; isolated pertussis accounts for whooping cough and leukocytosis but fails to clear on macrolides when complicated by co-existing primary tuberculosis; whereas pulmonary tuberculosis presents with non-resolving consolidation, household transmission, and positive mycobacterial nucleic acid amplification testing.",
+  "case_prompt": "A 47-day-old full-term male infant, delivered vaginally, who had received routine neonatal vaccination at birth according to the national immunization schedule, was admitted with a ten-day history of coughing and a three-day history of fever. His mother had received childhood vaccinations according to the national immunization program. Initially presenting with a mild cough, his symptoms progressively worsened, evolving into paroxysmal coughing. Three days prior to admission, he developed a fever with a peak temperature of 38.4 C.\n\nOn admission, he exhibited tachypnea (respiratory rate 60 breaths/min), tachycardia (heart rate 160 bpm), significant hypoxia, and positive signs of chest retractions. Lung auscultation demonstrated bilateral crackles and compromised ventilation.\n\nChest CT performed on the day of admission revealed bilateral pneumonia with pulmonary consolidation. Laboratory tests showed marked leukocytosis with a WBC count of 30.53 x 109/L, neutrophil count of 20.22 x 109/L, and elevated C-reactive protein (CRP) at 131.39 mg/L. Baseline liver function was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Community-Acquired Pneumonia",
+      "rule_out_reason": "Considered as the leading presumptive diagnosis on admission due to acute respiratory failure, marked leukocytosis (WBC 30.53 x 10^9/L), high CRP (131.39 mg/L), and dense bilateral consolidations on chest CT. Ruled out as the sole etiology because empiric therapy with meropenem and ampicillin produced no clinical improvement, prompting specialized molecular pathogen testing.",
+      "quote": "A bacterial pulmonary infection was suspected, and empiric antibiotic therapy with meropenem and ampicillin was initiated (Figure 1A)."
+    },
+    {
+      "candidate": "Viral Bronchiolitis / Atypical Respiratory Infection",
+      "rule_out_reason": "Considered given the infant's age, acute hypoxic respiratory distress, and bilateral pulmonary involvement. Ruled out by a comprehensive multiplex respiratory pathogen screen which was completely negative for respiratory syncytial virus, influenza, parainfluenza, adenovirus, rhinovirus, and Mycoplasma pneumoniae.",
+      "quote": "In addition, a comprehensive pathogen screening was performed, encompassing respiratory syncytial virus, influenza virus, parainfluenza virus, adenovirus, rhinovirus, and Mycoplasma pneumoniae. Except for B. pertussis and M. tuberculosis, all other pathogen assays yielded negative results."
+    },
+    {
+      "candidate": "Isolated Pertussis (Whooping Cough)",
+      "rule_out_reason": "Considered and initially diagnosed when nasopharyngeal PCR on hospital day 2 returned positive for Bordetella pertussis, explaining the paroxysmal coughing and hyperleukocytosis. Ruled out as the sole pathogen when the infant failed to improve on macrolide (erythromycin) therapy, leading to invasive sampling that uncovered a concurrent opportunistic mycobacterial infection.",
+      "quote": "On hospital day 2, a PCR test for B. pertussis DNA returned positive, leading to the substitution of ampicillin with erythromycin for targeted treatment... Despite combined therapy with meropenem and erythromycin, the infant's condition did not improve."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred on hospital day 3 when bronchoalveolar lavage fluid PCR and GeneXpert returned positive for Mycobacterium tuberculosis DNA, which coincided with epidemiological investigation uncovering active maternal pulmonary tuberculosis.",
+      "quote": "On day 3, the patient underwent bronchoalveolar lavage, and PCR testing of the lavage fluid was positive for M. tuberculosis DNA, confirming a diagnosis of pulmonary tuberculosis co-infected with B. pertussis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Prompt cleanly ends at admission triage, CBC, CRP, liver baseline, and CT, prior to pertussis PCR (day 2) and BAL TB PCR (day 3). Verbatim quotes verified."
+}

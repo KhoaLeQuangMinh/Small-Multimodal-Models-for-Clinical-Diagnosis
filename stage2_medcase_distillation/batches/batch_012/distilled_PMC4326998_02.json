@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4326998_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A previously healthy young male presenting with a rapidly fatal neuro-infectious syndrome characterized by fever, convulsions, decerebrate posturing, coma, and mild neck rigidity accompanied by bicytopenia (anemia and thrombocytopenia), raising high suspicion for acute pyogenic meningoencephalitis or spontaneous intracranial hemorrhage.\n2. Admission Breakpoint: The admission clinical narrative concludes following baseline hematology, platelet counts (75,000/cu.mm), ESR, standard biochemical panels (LFTs, renal function, electrolytes, urinalysis), and nonreactive HIV serology, immediately before peripheral blood smear examination and malaria rapid antigen testing return.\n3. Differential Distinctions: Acute bacterial meningitis is ruled out by the absence of marked meningismus, negative blood cultures, and demonstration of P. falciparum parasitemia; primary aneurysmal or arteriovenous malformation rupture is excluded by normal magnetic resonance angiography, normal coagulation parameters, and negative ANA/sickle cell testing, confirming that the subarachnoid hemorrhage arose as a rare complication of cerebral malaria.",
+  "case_prompt": "A 25-year-old male presented with a 6-day history of high fever accompanied by chills and rigors, severe headache, repeated vomiting, generalized convulsions, and progressive deterioration of sensorium. He had no history of recreational drug use, diabetes mellitus, hypertension, pre-existing renal disease, or systemic vasculitis.\n\nOn physical examination, the patient was comatose and febrile with a temperature of 102°F, tachycardic with a pulse rate of 130 beats per minute, and a blood pressure of 140/70 mmHg. Neurological examination revealed bilateral constricted, sluggishly reactive pupils, decerebrate posturing, mild neck rigidity, and bilaterally extensor plantar reflexes without other focal cranial nerve deficits. Cardiovascular examination demonstrated normal peripheral pulses without bruits or cardiomegaly; respiratory and abdominal examinations were normal.\n\nInitial laboratory evaluation revealed a normocytic, normochromic anemia with a hemoglobin of 9.7 g/dL and an MCV of 90 fL, an ESR of 28 mm/hr, and significant thrombocytopenia with a platelet count of 75,000/mm³. Serum biochemical testing—including liver function tests, renal function panels, and serum electrolytes—was within normal limits. Urinalysis showed no proteinuria, hematuria, pyuria, or casts. An enzyme-linked immunosorbent assay (ELISA) for HIV was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningitis / Viral Meningoencephalitis",
+      "rule_out_reason": "Considered given the profound acute presentation with fever, severe headache, vomiting, seizures, coma, and mild nuchal rigidity; excluded as the primary entity by the confirmation of intraerythrocytic plasmodial infection on blood smear microscopy.",
+      "quote": "There was decerebrate posturing and neck rigidity was mild."
+    },
+    {
+      "candidate": "Primary Ruptured Intracranial Aneurysm / Arteriovenous Malformation",
+      "rule_out_reason": "Considered when persistent coma prompted neuroimaging that revealed subarachnoid hemorrhage; ruled out as the primary etiology by magnetic resonance angiography demonstrating normal intracranial vasculature, normal coagulation profile, and negative autoimmune and hemoglobinopathy workup.",
+      "quote": "A magnetic resonance angiography was carried out, which revealed no arterio-venous malformation or aneurysm. Anti-nuclear antibody titers were found to be negative by standard method. There was no family history of sickle cell anemia, and a sickling test on peripheral blood smear using sodium metabisulfite was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cerebral Malaria Complicated by Subarachnoid Hemorrhage",
+      "rule_out_reason": "The diagnosis of severe cerebral malaria was established by the demonstration of Plasmodium falciparum ring forms and gametocytes on peripheral blood smears alongside a strongly positive PfHRP-2 antigen assay, with non-contrast brain CT subsequently identifying secondary subarachnoid hemorrhage.",
+      "quote": "Thick and thin blood smears were prepared and it revealed ring forms and gametocytes of P. falciparum and immunochromatographic test for PfHRP-2 based assay (ICT, Access Bio. Inc., NJ, USA) was strongly positive."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4326998 (Case 2). Case prompt stops prior to thick/thin blood smears and PfHRP-2 antigen testing. Secondary subarachnoid hemorrhage complication and neuroimaging workup addressed in diagnostic reasoning. Zero pathogen leaks."
+}

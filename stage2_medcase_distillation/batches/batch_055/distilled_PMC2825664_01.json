@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2825664_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 35-year-old man presents with a chronic cutaneous chest wall fistula and a palpable mass overlying the 6th rib, five years after a traumatic rib fracture sustained during a parachute jump. The five-year indolent course with localized bony cortical disruption and normal inflammatory markers strongly mimics chronic post-traumatic osteomyelitis or a primary chest wall bone tumor rather than parasitic bone echinococcosis.\n2. Admission Breakpoint: The breakpoint occurs following initial outpatient admission evaluation, physical examination, baseline routine blood tests and inflammatory markers, and chest radiograph/CT scan, immediately prior to thoracotomy and surgical excision.\n3. Differential Distinctions: Chronic post-traumatic osteomyelitis with draining sinus was the leading pre-test suspicion given the preceding fracture and drainage, but normal inflammatory markers were unusual. Primary rib neoplasm (e.g., chondrosarcoma or osteosarcoma) was considered given the cortical break and palpable mass, but CT showed no soft-tissue invasion or mediastinal/parenchymal involvement. Thoracotomy demonstrating parasitic vesicles and bone sequestra with histologic confirmation established rib echinococcosis.",
+  "case_prompt": "A 35-year-old man presented with a chronic draining cutaneous fistula on the left chest wall. He was a moderate tobacco smoker with no history of substance abuse. Five years earlier, following a parachute jump, he had suffered chest trauma resulting in left chest wall swelling and a fractured rib. The swelling had been drained in an emergency room at that time, leaving a persistent cutaneous fistula without a definitive diagnosis.\n\nOn physical examination, a palpable mass was present along the left sixth rib; the remainder of the physical examination was unremarkable.\n\nBaseline laboratory investigations, including a complete blood count and inflammatory markers, were within normal limits; targeted serological screening was negative.\n\nChest radiography revealed an opacity involving the left sixth rib. Computed tomography (CT) of the chest confirmed the opacity on the left sixth rib with a cortical break, without invasion of adjacent thoracic structures. The lung parenchyma and mediastinum were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Post-Traumatic Osteomyelitis / Cutaneous Fistula",
+      "rule_out_reason": "Considered because the fistula developed five years earlier following a traumatic rib fracture and emergency incision/drainage, but baseline inflammatory markers and routine hematology were entirely normal, and surgical exploration demonstrated parasitic vesicles rather than bacterial osteomyelitis.",
+      "quote": "Five years ago, after a parachute jump, he had suffered from chest pain with swelling of the left chest wall and a broken rib. The swelling was drained in emergency room, but left a cutaneous fistula without accurate diagnosis."
+    },
+    {
+      "candidate": "Primary Rib Neoplasm / Bone Sarcoma",
+      "rule_out_reason": "Considered due to the palpable mass and cortical bone destruction on the 6th rib, but excluded by CT showing absence of invasive soft-tissue extension and confirmed non-neoplastic on surgical pathology.",
+      "quote": "A computed tomography confirmed the opacity on the 6th left rib with a cortical break without any invasion of the adjacent structures (Figure 2). The lung parenchyma and mediastinum were free."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Thoracotomy and resection of the lateral arch of the 6th rib revealed parasitic vesicles and bone sequesters, with pathological examination confirming hydatid cyst of the rib.",
+      "quote": "Pathological analysis revealed a hydatid cyst of the rib."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled to admission clinical presentation and imaging. Surgical exploration and pathology findings restricted to diagnostic reasoning."
+}

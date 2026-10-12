@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7467607_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A 25-year-old previously healthy man residing in Conakry, Guinea, in close shared quarters with a roommate, presents with an acute febrile syndrome characterized by severe headache, arthralgias, dyspnea, and profound physical asthenia that completely fails to respond to outpatient antimalarial and antibacterial therapy. Shortly thereafter, his cohabiting roommate develops fever, headache, abdominal pain, and diarrhea. The core clinical challenge is recognizing a life-threatening epidemic filoviral hemorrhagic fever presenting in an ambiguous early prodromal stage that mimics conventional tropical infections such as malaria and typhoid fever.\n2. Admission Breakpoint: The admission breakpoint occurs upon presentation to the regional specialized hospital triage and transit unit following failed outpatient empiric antimalarial and antibiotic treatment, prior to the collection and reporting of diagnostic viral RT-PCR panels.\n3. Differential Distinctions: Malaria is excluded by lack of clinical improvement despite full-course oral antimalarial therapy; common pyogenic or enteric bacterial infections (e.g., typhoid fever) are excluded by the failure of empiric antibacterial therapy and household transmission of acute gastroenteritis and prostration; definitive confirmation of viral hemorrhagic fever relies on reverse transcription-polymerase chain reaction (RT-PCR) identifying Ebola Zaire virus RNA.",
+  "case_prompt": "A 25-year-old male residing in Conakry, Guinea, who shared a single bedroom with a 33-year-old male friend, presented with a 5-day history of acute fever, intense headache, dyspnea, joint pain, and profound physical asthenia. Five days after symptom onset, he had been evaluated as an outpatient at a university hospital clinic and was empirically prescribed oral antimalarials, broad-spectrum antibiotics, and non-steroidal anti-inflammatory agents.\n\nDespite completing this regimen, his fever and severe constitutional symptoms persisted, prompting him to seek care from a local traditional healer without improvement. Concurrently, eight days after the onset of the patient's illness, his cohabiting roommate developed high fever, severe headache, arthralgias, progressive abdominal pain, and profuse diarrhea. Both patients presented to the regional referral infectious disease hospital center for emergency isolation and comprehensive evaluation.\n\nOn physical examination at triage, both patients appeared severely fatigued, febrile, and dehydrated. Examination was notable for diffuse myalgias, arthralgias, and abdominal discomfort without localized peritonitis. Neither patient had evidence of overt external mucosal hemorrhage or skin petechiae on initial physical evaluation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered the primary suspect due to high regional endemicity, acute fever, headache, and severe arthralgias. Ruled out by lack of response to standard outpatient antimalarial chemotherapy.",
+      "quote": "He received as an outpatient antimalarial treatment, antibiotics and anti-inflammatory. Given the persistence of signs, he has been seen by a traditional healer without success."
+    },
+    {
+      "candidate": "Community-Acquired Bacterial Infection / Enteric Fever (Typhoid)",
+      "rule_out_reason": "Considered due to persistent high fever, prostration, and household cluster of gastrointestinal illness with diarrhea and abdominal pain. Ruled out by lack of improvement on empiric broad-spectrum antibiotics and confirmatory molecular detection of a filovirus.",
+      "quote": "He received as an outpatient antimalarial treatment, antibiotics and anti-inflammatory."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon performing RT-PCR testing at the specialized treatment center, which confirmed acute filoviral infection with Ebola Zaire virus in both individuals.",
+      "quote": "In Donka ETC, he has been tested positive for ebola Zaire by RT-PCR took care there and released after 2 negative consecutive RT-PCR. His friend ZM presented April 3, 2015 a fever, headache and joint pain. He has been admitted to Donka ETC with abdominal pain and diarrhea. Tested positive for ebola virus by RT-PCR."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7467607. Admission breakpoint maintained before filovirus RT-PCR testing. Zero pathogen names leaked in case prompt."
+}

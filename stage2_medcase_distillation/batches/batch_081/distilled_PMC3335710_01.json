@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3335710_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The diagnostic dilemma centers on an elderly male farmer presenting with an aggressive, painless ulcer on the left alveolar ridge with friable margins that bleed on touch, extending into the gingivolabial sulcus and soft palate. Given his age and the lesion appearance, the immediate clinical suspicion was an alveolar malignancy (oral cavity squamous cell carcinoma). Primary oral tuberculosis without systemic or pulmonary manifestations is exceptionally rare and frequently misdiagnosed as an invasive oral neoplasm.\n2. Admission Breakpoint: The triage evaluation concludes after physical examination, routine hematologic and biochemical laboratory tests, chest radiography, and jaw bone radiography are obtained, immediately prior to obtaining an incisional tissue biopsy and send-out syphilis/HIV serologies.\n3. Differential Distinctions: Alveolar squamous cell carcinoma exhibits neoplastic epithelial atypia and invasiveness without caseating granulomas. Syphilis (oral chancre or gumma) produces positive treponemal serology and detectable spirochetes on silver stain. Deep fungal infections (such as histoplasmosis or blastomycosis) cause chronic granulomatous oral ulcerations but reveal fungal structures on silver staining.",
+  "case_prompt": "A 63-year-old male farmer from a suburban area presents to the otorhinolaryngology outpatient clinic complaining of a painless ulcer in his oral cavity for the past 10 days, accompanied by pain in both ears and throat for 3 days.\n\nOn physical examination, the throat is congested. Examination of the oral cavity reveals a painless ulcer measuring 1.8 cm in greatest diameter with irregular, friable margins that bleed upon touch, located over the left alveolar mucosa. The ulcer involves the premolar and molar regions, extending laterally into the gingivolabial sulcus and medially into the soft palate. Only the incisors, canine, and first premolar teeth remain intact on the affected side.\n\nRoutine hematological and biochemical laboratory investigations are normal. Plain chest radiography reveals no abnormality. Plain radiographs show no evidence of involvement of the underlying bone.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Oral alveolar carcinoma (squamous cell carcinoma)",
+      "rule_out_reason": "The clinical presentation of an irregular, friable, bleeding alveolar ulcer in an elderly man strongly simulated oral carcinoma; however, serial histopathologic sections showed necrotizing granulomas rather than malignant cells.",
+      "quote": "A clinical diagnosis of cancer of the left alveolus in the oral cavity was made; an incisional biopsy was taken from the margin of the ulcer and sent for histopathological examination... Malignancy was not seen in serial section examined."
+    },
+    {
+      "candidate": "Syphilis",
+      "rule_out_reason": "Primary chancre or tertiary gummatous ulcer of the oral mucosa was ruled out by non-reactive serology and absence of spirochetes on silver staining.",
+      "quote": "Serological tests done for syphilis and HIV were found negative... Silver stain done on the section did not show spirochetes or fungi."
+    },
+    {
+      "candidate": "Deep fungal infection",
+      "rule_out_reason": "Granulomatous oral ulcers caused by endemic or opportunistic mycoses were excluded by negative silver stain of the tissue section.",
+      "quote": "Silver stain done on the section did not show spirochetes or fungi."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological evaluation of the ulcer margin revealing necrotizing epithelioid granulomas with Langhans giant cells and positive Ziehl-Neelsen staining demonstrating acid-fast bacilli confirmed primary oral tuberculosis.",
+      "quote": "Microscopic examination showed stratified squamous epithelium and subepithelium revealing crushing artifacts with presence of multiple necrotizing epithelioid cell granuloma and Langhans' type of giant cell (Figure 2). Ziehl-Neelsen stain of the tissue showed many acid fast bacilli (Figure 3)... On the basis of above findings, a diagnosis of tuberculosis of left upper alveolus was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission breakpoint established prior to incisional tissue biopsy. All malignant and infectious look-alikes addressed with exact article quotes. Verified ground-truth canonical disease is Tuberculosis."
+}

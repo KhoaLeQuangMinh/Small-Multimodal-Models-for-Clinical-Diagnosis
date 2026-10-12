@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9876700_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 29-year-old woman presenting with a 6-year history of left upper quadrant pain is found to have a massive (18 cm) unilocular splenic cyst and palpable splenomegaly. Preliminary community screening reported positive Strongyloides IgG, creating diagnostic confusion between strongyloidiasis versus congenital or post-traumatic non-parasitic splenic cysts, until epidemiologic exposure to dogs and sheep in Iraq led to confirmatory hydatid serology.\n2. Admission Breakpoint: Admission triage terminates after surgical outpatient examination documenting palpable splenomegaly and left upper quadrant tenderness, abdominal ultrasound showing cystic changes, and portal venous phase CT defining the 150 \u00d7 180 \u00d7 100 mm well-defined splenic cyst, prior to confirmatory hydatid serology or albendazole medical therapy.\n3. Differential Distinctions: Strongyloidiasis was considered due to a reactive preliminary IgG assay, but Strongyloides does not cause large intra-splenic fluid cysts. Congenital non-parasitic epidermoid cyst or post-traumatic pseudocyst presents with large unilocular fluid collections, but the patient had no history of abdominal trauma or surgery and had classic livestock exposures in an endemic region. Splenic hydatid disease was confirmed by positive hydatid serology and response to albendazole/laparoscopic splenectomy.",
+  "case_prompt": "A 29-year-old woman is evaluated in a surgical outpatient clinic for persistent left upper quadrant abdominal pain that has been present for six years without other associated symptoms. She emigrated from Iraq, where she had frequent, direct contact with sheep and domestic dogs. She has no chronic medical conditions, no prior history of abdominal trauma, and no previous abdominal surgical procedures.\n\nOn physical examination, she appears well. Abdominal palpation reveals a palpable spleen with localized tenderness in the left upper quadrant and left flank.\n\nAbdominal ultrasound reveals non-specific cystic changes in the left upper quadrant.\n\nComputed tomography (CT) of the abdomen and pelvis in the portal venous phase reveals a large, well-defined cyst within the spleen measuring 150 \u00d7 180 \u00d7 100 mm with homogeneous fluid density.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Strongyloidiasis (Strongyloides stercoralis infection)",
+      "rule_out_reason": "Considered because preliminary community laboratory screening identified positive Strongyloides IgG, but this parasite cannot account for a massive isolated unilocular splenic fluid-filled cyst.",
+      "quote": "Preliminary investigation in the community included positive Strongyloides immunoglobulin G, and as such, arrangements were made for further investigation"
+    },
+    {
+      "candidate": "Post-traumatic splenic pseudocyst / Congenital non-parasitic splenic cyst",
+      "rule_out_reason": "Considered in the differential diagnosis of a large solitary splenic fluid collection in a young patient, but ruled out given the absence of any preceding blunt abdominal trauma, surgical history, or non-parasitic etiology in a patient with high-risk pastoral exposures.",
+      "quote": "She was otherwise well, with no comorbidities and no history of trauma or previous abdominal surgery."
+    },
+    {
+      "candidate": "Pyogenic splenic abscess / Cystic splenic neoplasm",
+      "rule_out_reason": "Considered due to the massive size of the splenic mass, but the indolent 6-year history without fever, chills, leukocytosis, or solid neoplastic components made an abscess or cystic malignancy unlikely.",
+      "quote": "abdominal ultrasound (non-specific, left, upper quadrant cystic changes) and CT portal venous of the abdomen and pelvis, which showed a 150x180x100 mm well-defined cyst with homogenous fluid density"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Isolated Splenic Hydatid Disease (Echinococcosis)",
+      "rule_out_reason": "Positive hydatid serology, combined with characteristic cross-sectional CT findings and pastoral livestock exposure, definitively established isolated splenic echinococcosis, leading to medical sterilization with albendazole and successful laparoscopic-assisted splenectomy.",
+      "quote": "including hydatid serology (positive), abdominal ultrasound (non-specific, left, upper quadrant cystic changes) and CT portal venous of the abdomen and pelvis, which showed a 150x180x100 mm well-defined cyst with homogenous fluid density (Figure 1). The patient was accordingly referred to the facility's infectious diseases clinic for sterilisation of the cyst and thence commenced on albendazole."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Admission prompt terminates cleanly before confirmatory hydatid serology and albendazole therapy. All quotes are verbatim."
+}

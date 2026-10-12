@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3354387_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 19-year-old woman at 27 weeks gestation presented with a 2-month history of severe intractable pruritus and an erythematous papular rash on her abdomen, breasts, and face, closely mimicking pregnancy dermatoses such as polymorphic eruption of pregnancy (PUPPP) or autoimmune pemphigoid gestationis.\n2. Admission Breakpoint: The presentation concludes following clinical history, physical exam describing lesion morphology/distribution, and normal baseline prenatal laboratory testing. It halts before skin punch biopsy, histopathology (H&E), and direct immunofluorescence (DIF).\n3. Differential Distinctions: Pemphigoid gestationis was considered given the severe pruritus and abdominal involvement in late pregnancy, but excluded by the complete absence of tense vesicles or bullae and subsequent negative direct immunofluorescence. PUPPP was considered based on gestational timing and abdominal papules, but facial involvement is exceedingly unusual for PUPPP, and histopathology demonstrated ectoparasitic mites in the stratum corneum.",
+  "case_prompt": "A 19-year-old Caucasian primigravid female at 27 weeks of gestation presented for evaluation of an intensely pruritic rash that had been present for two months. The itching was severe and intractable, predominantly affecting her breasts, face, and abdomen. She reported no fever, malaise, chills, or other systemic complaints. Her medical and obstetric history had otherwise been uneventful.\n\nOn physical examination, vital signs were normal. Dermatological examination revealed widespread erythematous papules distributed across the anterior abdomen, breasts, and face. There were no discrete urticarial plaques, targetoid lesions, vesicles, or bullae noted. The remainder of the physical examination and routine prenatal screening laboratory evaluations were entirely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pemphigoid Gestationis (Herpes Gestationis)",
+      "rule_out_reason": "Considered due to severe gestational pruritus involving the abdomen; ruled out clinically by the complete absence of vesicles or bullae and absence of linear basement membrane complement/IgG deposition on direct immunofluorescence.",
+      "quote": "No vesicles or bullae were seen. Skin biopsies were obtained for hematoxylin and eosin (H & E) histologic examination, as well as for direct immunofluorescence (DIF)."
+    },
+    {
+      "candidate": "Pruritic Urticarial Papules and Plaques of Pregnancy (PUPPP)",
+      "rule_out_reason": "Considered because of third-trimester onset of intensely itchy abdominal papules; ruled out by atypical extension to the face and histologic identification of ectoparasitic mites beneath the stratum corneum.",
+      "quote": "The physical examination demonstrated an erythematous, papular rash in these areas. No vesicles or bullae were seen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Routine hematoxylin and eosin staining of the skin biopsy demonstrated Sarcoptes scabiei mites situated immediately beneath the stratum corneum of the epidermis along with epidermal spongiosis and a dermal eosinophil-rich infiltrate, confirming scabietic infestation.",
+      "quote": "Note H&E sections of Sarcoptes scabei mites, located immediately beneath the stratum corneum of the epidermis (Fig. 1a and b, black arrows) Spongiosis was observed within the epidermal stratum spinosum."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt stops prior to skin biopsy and immunofluorescence. Zero pathogen spoilers in prompt."
+}

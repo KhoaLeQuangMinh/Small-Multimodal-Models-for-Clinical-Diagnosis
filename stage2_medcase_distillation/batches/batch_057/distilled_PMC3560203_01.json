@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3560203_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 15-year-old boy presents with high fever, acute hyperamylasemic pancreatitis, and myocarditis with hypotension, which subsequently cascades into catastrophic diffuse alveolar pulmonary hemorrhage and oliguric acute renal failure. Pancreatitis and myocarditis are exceptionally unusual initial presentations of spirochetal infection, creating diagnostic dilemmas with arboviral infections (severe dengue) and systemic autoimmune vasculitis.\n2. Admission Breakpoint: The admission clinical evaluation encompasses the 5-day febrile prodrome, initial vitals (fever 38.8\u00b0C, tachycardia 150 bpm, transient hypotension), ECG demonstrating ST depressions with positive cardiac troponin I, normal echocardiogram, admission amylase (4,200 IU/L), baseline renal chemistries, and non-contrast CT showing pancreatic edema and hepatomegaly, stopping strictly before day 3 pulmonary hemorrhage, hemodialysis, and confirmatory leptospiral MAT serology.\n3. Differential Distinctions: Severe dengue is excluded by negative NS1 antigen and dengue serology; systemic vasculitides (GPA/MPA) are ruled out by negative ANCA and normal complement; and confirmatory microscopic agglutination testing (MAT titer 1:3200) with positive IgM establishes severe leptospirosis.",
+  "case_prompt": "A 15-year-old previously healthy boy residing in a crowded urban area in Sri Lanka presents with a 5-day history of high-grade intermittent fever, epigastric discomfort, and backache. He has had no severe myalgias, overt bleeding manifestations, or respiratory symptoms. He has not traveled to tropical parasitic- or typhus-endemic areas and has consumed no medications or alcohol. On admission, he is well-hydrated and anicteric. Temperature is 38.8\u00b0C, pulse rate is 150 beats/min, and initial blood pressure is 110/70 mmHg, which decreases to 80/60 mmHg eight hours later. Tachypnea is present, but precordial and chest auscultation are normal. Abdominal examination demonstrates mild epigastric tenderness without palpable organomegaly, guarding, or rigidity. An electrocardiogram shows sinus tachycardia with ST-segment depressions, and cardiac troponin I is positive; transthoracic echocardiography reveals an ejection fraction of 60% with normal chamber dimensions. Baseline blood testing shows hemoglobin 13 g/dL, platelet count 125,000/\u03bcL, and leukocyte count 7,000/\u03bcL with 70% neutrophils showing toxic granulation. Biochemical evaluation discloses a markedly elevated serum amylase of 4,200 IU/L (reference range 70\u2013340), ionized calcium of 0.9 mmol/L (reference range 1.1\u20131.4), and normal baseline renal function. Non-contrast abdominal computed tomography reveals an edematous, prominent pancreas consistent with acute pancreatitis, along with hepatomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Dengue Infection / Dengue Shock Syndrome",
+      "rule_out_reason": "Prevalent in urban Sri Lanka and recognized to trigger shock, myocarditis, and severe thrombocytopenia, but ruled out by negative viral antigen and antibody testing.",
+      "quote": "Negative hepatitis serology, dengue NS1 antigen and antibodies, serology for mycoplasma pneumonia excluded the other possible infective pathologies."
+    },
+    {
+      "candidate": "Systemic Autoimmune Vasculitis (Pulmonary-Renal Syndrome)",
+      "rule_out_reason": "Rapid onset of pulmonary hemorrhage and progressive acute renal failure strongly mimicked ANCA-associated vasculitis or anti-GBM disease, but autoimmune serologies and complement levels were normal.",
+      "quote": "Anti-nuclear antibodies, anti-neutrophil cytoplasmic antibodies (MPO and PR3) were negative and complement levels were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Severe Leptospirosis (Weil Disease with Pancreatitis and Pulmonary Hemorrhage)",
+      "rule_out_reason": "The diagnostic dilemma of multisystem collapse was resolved by microscopic agglutination testing confirming a markedly elevated Leptospira titer alongside positive IgM antibodies.",
+      "quote": "Later, along with the renal and hepatic involvement, the detection of positive leptospira IgM, negative IgG and a titer of 3200 in microscopic agglutination test (MAT) for leptospirosis enlightened the clinical picture."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt ends at admission triage, baseline labs, ECG, and abdominal CT before hospital day 3 pulmonary hemorrhage, intubation, dialysis, and MAT titers. Zero spoilers in case prompt. Audit flags verified as NONE."
+}

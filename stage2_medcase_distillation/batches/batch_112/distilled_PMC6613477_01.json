@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6613477_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 52-year-old diabetic woman presenting with high fevers, rigors, right flank fullness and tenderness, vomiting, and urinary incontinence, initially mimicking severe urosepsis / acute pyelonephritis with diabetic ketoacidosis. The subsequent development of bilateral sensorineural hearing loss and persistent fever despite broad-spectrum beta-lactams and carbapenems points toward an unrecognized vector-borne rickettsial illness.\n2. Admission Breakpoint: Emergency department triage following physical examination, initial laboratory evaluations (hyperglycemia 435 mg/dL, ketonuria, absence of pyuria, normal renal function, sterile peripheral smear, ECG, and echocardiogram), prior to empiric escalation of broad-spectrum antimicrobials, abdominal CT, and specific serological testing.\n3. Differential Distinctions: Acute pyelonephritis / urosepsis was initially suspected due to flank pain and urinary symptoms in an uncontrolled diabetic, but urine and blood cultures remained sterile, urinalysis showed no pyuria, and fever persisted on carbapenems; severe malaria was ruled out by repeated negative blood smears; diabetic ketoacidosis explained acidosis and hyperglycemia, but persistent fever, transaminitis, and sensorineural hearing loss pointed to systemic vasculotropic rickettsial infection.",
+  "case_prompt": "A 52-year-old woman with a history of diabetes mellitus, who had been non-compliant with insulin therapy for six months, presented to the emergency department with a 1-week history of fever with rigors, vomiting, headache, bilateral leg pain, and myalgias, as well as urinary incontinence for the preceding three days. She was unemployed, denied alcohol consumption, and reported no known exposure to rodents or insect bites. Aside from over-the-counter antipyretics, she had not received medical care or antibiotics.\n\nOn examination, she was conscious, oriented, drowsy, dehydrated, and appeared clinically toxic, with slurred speech. Body mass index was 20.2 kg/m². Vital signs were notable for fever, tachycardia, and orthostatic hypotension. Auditory examination revealed diminished hearing bilaterally. Abdominal examination demonstrated right renal angle fullness and tenderness. Initial laboratory evaluations revealed a random blood glucose of 435 mg/dL, normal renal function tests, ketonuria and glycosuria without pyuria, and an arterial blood gas showing respiratory alkalosis with metabolic acidosis. Electrocardiogram showed sinus tachycardia, and echocardiography was normal. A peripheral blood smear showed no intraerythrocytic parasites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial pyelonephritis / urosepsis",
+      "rule_out_reason": "Considered due to right costovertebral angle fullness and tenderness, fever, vomiting, and urinary incontinence in an uncontrolled diabetic, but urine microscopy showed no pyuria, blood and urine cultures were sterile, and fevers failed to respond to broad-spectrum beta-lactams or carbapenems.",
+      "quote": "ketonuria and glycosuria without pyuria"
+    },
+    {
+      "candidate": "Severe malaria",
+      "rule_out_reason": "Acute fever with rigors, prostration, and myalgias in a tropical region suggested malaria, but peripheral blood smears were repeatedly negative.",
+      "quote": "There were no malarial parasites on the peripheral smear."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical constellation of persistent high fever, bilateral sensorineural hearing loss, and elevated transaminases prompted suspicion of rickettsial infection; initiation of doxycycline produced prompt defervescence, and serology returned strongly positive on Scrub Typhus Detect IgM (OD 1.732, cut-off <0.500).",
+      "quote": "Liver function tests showed elevated transaminases; hence probable rickettsioses was suspected and empirical doxycycline 100mg twice a day was initiated on day 6. The next day, Scrub Typhus Detect IgM (InBios International) done at a private laboratory returned positive with an OD of 1.732 (Cut-off: <0.500)."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly excludes pathogen and disease names while preserving the complex renal angle presentation. Verbatim quotes support all differential candidates."
+}

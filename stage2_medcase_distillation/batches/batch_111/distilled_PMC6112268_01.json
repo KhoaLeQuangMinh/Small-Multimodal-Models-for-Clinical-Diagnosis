@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6112268_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 13-year-old Marshallese immigrant presenting with severe upper gastrointestinal obstruction, gastric dilation, pulmonary crackles, and diffuse small cutaneous nodules creates strong diagnostic tension between acute abdominal surgical pathology, disseminated tuberculosis, and multibacillary Hansen disease.\n2. Admission Breakpoint: Admission triage terminates when the patient is readmitted with severe dehydration, crackles, and cutaneous nodules, and placed on isolation for presumed tuberculosis, prior to upper endoscopy, gastropexy, and skin biopsy pathology.\n3. Differential Distinctions: Viral gastroparesis is ruled out by persistent vomiting and demonstration of mesenteroaxial gastric volvulus; disseminated tuberculosis is ruled out by negative M. tuberculosis PCR from skin and sputum despite initial acid-fast staining, while lepromatous leprosy is confirmed by histopathology and M. leprae PCR.",
+  "case_prompt": "A 13-year-old female of Marshallese origin who emigrated to the United States five years prior and resided in crowded living conditions presented to the emergency department with nausea, persistent nonbloody nonbilious vomiting, and abdominal pain. Additional history revealed left ear drainage, chronic weight loss, and productive cough with posttussive emesis. Physical examination revealed an acutely ill adolescent with marked dehydration, acute otitis media with a ruptured left tympanic membrane, scattered crackles on chest auscultation, and diffuse small nodular cutaneous lesions prominent on her face, hands, feet, and lower extremities. Triage laboratory evaluation showed leukocytosis (white blood cell count 21.4 x 10^9/L), prerenal azotemia (serum creatinine 2.45 mg/dL), mild elevations in transaminases, and mildly elevated serum lipase. Computed tomography (CT) of the chest and abdomen demonstrated scattered focal pulmonary infiltrates, splenomegaly, and marked gastric distension without an obvious site of mechanical obstruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral Gastroparesis / Mild Acute Pancreatitis",
+      "rule_out_reason": "Initially presumed to be post-viral gastroparesis with mild pancreatitis; ruled out by rapid recurrence of severe vomiting, worsening renal failure, and subsequent surgical demonstration of mesenteroaxial gastric volvulus.",
+      "quote": "She was admitted with a presumptive diagnosis of gastroparesis secondary to a nonspecific viral infection and possible mild pancreatitis."
+    },
+    {
+      "candidate": "Disseminated Tuberculosis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "Strongly suspected due to chronic cough, weight loss, pulmonary infiltrates, and acid-fast bacilli observed in sputum and initial culture; ruled out when species-specific PCR testing of sputum and skin was negative for M. tuberculosis.",
+      "quote": "In coordination with the health department and the infectious disease service, the patient was initiated on treatment for presumed disseminated MTB, noting that this would also provide coverage for M. leprae. However, polymerase chain reaction (PCR) testing from the sputum samples and skin samples failed to demonstrate MTB"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when skin biopsies demonstrated abundant acid-fast bacilli within histiocytes consistent with lepromatous leprosy, confirmed definitively by positive M. leprae PCR at the National Hansen's Disease Center.",
+      "quote": "Biopsies of the skin lesions confirmed the presence of many AFB with changes consistent with lepromatous leprosy due to M. leprae (Figure 4)... while PCR testing performed at the Hansen's Disease Center of skin samples was positive for M. leprae."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation strictly halts before endoscopy, surgery, and skin biopsy pathology. Zero pathogen spoilers in presentation."
+}

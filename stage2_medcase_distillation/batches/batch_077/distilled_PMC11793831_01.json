@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11793831_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 41-year-old gemstone mine worker with prior treated pulmonary infection presented with recurrent high fever, severe hypoxemia (oxygen saturation 75%), bilateral crackles, wheezing, and hemoptysis. The clinical dilemma was distinguishing recurrent/relapsing active mycobacterial infection from community-acquired bacterial pneumonia, acute occupational pneumoconiosis, or progressive massive fibrosis.\n2. Admission Breakpoint: The admission breakpoint is reached upon completion of initial vital sign assessment and physical examination (demonstrating profound hypoxemia, fever, and bilateral wheezing/crackles), prior to the receipt of sputum GeneXpert MTB/RIF and acid-fast bacilli smear results.\n3. Differential Distinctions: Bacterial community-acquired pneumonia was initially entertained due to high fever and acute respiratory failure but ruled out after antibiotic therapy showed no benefit; silicosis-induced interstitial lung disease was considered given his 7-year history of gemstone mining with high silica dust exposure, but could not account alone for active microbial disease; silicotuberculosis was established by molecular identification of Mycobacterium tuberculosis in sputum.",
+  "case_prompt": "A 41-year-old East African man presented to the hospital with hemoptysis, dyspnea, night sweats, and generalized fatigue lasting for two months. Four months prior to this presentation, he had been evaluated for similar but more severe symptoms of hemoptysis, dyspnea, night sweats, and fatigue, and was started on a multi-drug antimycobacterial regimen consisting of rifampin, isoniazid, pyrazinamide, and ethambutol. He reported taking his medications as prescribed, although continuity in his medical records was limited. At the time of this hospitalization, he remained on dual-agent maintenance therapy with rifampin and isoniazid. His occupational history was notable for working for seven years in a local gemstone mine, where occupational exposure to silica dust was prevalent during gem mining.\n\nOn presentation, the patient was ill-appearing and in respiratory distress. Initial vital signs demonstrated an oxygen saturation of 75% on ambient air, a body temperature of 38.9 C, and a blood pressure of 136/68 mmHg. Physical examination of the respiratory system revealed labored breathing, poor air movement, and coarse crackles with expiratory wheezing throughout bilateral lung fields. The patient was euvolemic. Cardiovascular examination was unremarkable, with normal heart sounds and no jugular venous distension. Abdominal and dermatologic examinations were normal. A chest radiograph could not be obtained due to resource scarcity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-Acquired Bacterial Pneumonia",
+      "rule_out_reason": "Considered due to the acute-on-chronic presentation with high fever (38.9 C), profound hypoxemia, bilateral crackles, and wheezing, but ruled out when empiric antibacterial therapy failed to provide clinical improvement and was subsequently discontinued.",
+      "quote": "A community-acquired pneumonia diagnosis was entertained, but antibiotics for such were later discontinued."
+    },
+    {
+      "candidate": "Silicosis-Associated Interstitial Lung Disease",
+      "rule_out_reason": "Considered given his 7-year occupational history of silica dust exposure in gemstone mines and bilateral auscultatory abnormalities, prompting adjunctive corticosteroid therapy, but ruled out as an isolated non-infectious pathology because active mycobacterial infection was concurrently present.",
+      "quote": "Prednisolone was added to treat possible interstitial lung disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Molecular cartridge-based testing of sputum was positive for Mycobacterium tuberculosis, confirming active silicotuberculosis in a patient with severe occupational silica exposure who suffered recurrent or persistent disease despite maintenance dual-agent antimycobacterial therapy.",
+      "quote": "The initial TB testing performed using the Xpert Mycobacterium tuberculosis/rifampin diagnostic test (GeneXpert MTB/RIF, Cepheid Inc., Sunnyvale, California) was positive, which was expected given his prior TB infection... The patient was ultimately diagnosed with assumed ST, given his history of working in the gemstone mine with silica exposure (with an initial TB diagnosis prior to admission)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint set after initial vitals (SpO2 75%) and pulmonary examination, strictly before GeneXpert and smear confirmation. Zero disease names in prompt. Exact verbatim quotes confirmed."
+}

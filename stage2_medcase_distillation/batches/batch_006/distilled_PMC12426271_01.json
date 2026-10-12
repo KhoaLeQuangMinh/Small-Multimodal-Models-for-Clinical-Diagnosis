@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12426271_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 81-year-old male with nephrotic syndrome (C1q nephropathy) treated with B-cell depletion therapy (rituximab) develops persistent high fever and a solitary heterogeneous hepatic mass. The clinical and imaging findings mimic a pyogenic liver abscess, but lack of response to broad-spectrum carbapenem therapy and rapid worsening highlight the tension between routine bacterial infection and opportunistic or atypical granulomatous disease unmasked by immunosuppression.\n2. Admission Breakpoint: The breakpoint occurs after admission triage, initial laboratory workup, chest CT, and abdominal ultrasound/contrast-enhanced CT identifying the left hepatic lobe lesion, immediately prior to empiric antibiotic escalation, serologic/tuberculin testing, and diagnostic liver biopsy.\n3. Differential Distinctions: Pyogenic liver abscess typically responds to targeted intravenous antibiotics and manifests with marked neutrophilia; failure of meropenem combined with worsening inflammation strongly suggests non-bacterial etiology. Amebic liver abscess is characterized by positive serology/stool testing and typical liquid necrosis, excluded by negative serology and blood cultures. Hepatic tuberculosis is established through positive T-SPOT and histologic demonstration of caseating/granulomatous inflammation with coagulative necrosis.",
+  "case_prompt": "An 81-year-old male from a low-risk setting presented to the hospital with a seven-day history of persistent fever. He had a 6-year history of hypertension, an 8-year history of type 2 diabetes, and a medical history of nephrotic syndrome diagnosed nine months earlier as C1q nephropathy with minimal change disease, for which he received targeted B-cell depletion therapy with rituximab (most recently an additional infusion two months prior due to CD20+ B-cell repopulation, with remitted proteinuria).\n\nUpon presentation, physical examination revealed a body temperature of 38.9°C; other vital signs were within normal limits. Cardiopulmonary examination was unremarkable.\n\nInitial laboratory evaluation demonstrated:\n- White blood cell count: 15.2 × 10^9/L (neutrophils 75.9%, lymphocytes 15.2%)\n- C-reactive protein (CRP): 25 mg/L\n- Serum albumin: 33.5 g/L\n- Urinalysis: protein 1+, 24-hour urinary protein 0.56 g\n- Serum creatinine, hemoglobin, and procalcitonin levels were within normal reference ranges.\n\nImaging studies:\n- Chest CT showed no pulmonary abnormalities or infiltrates.\n- Abdominal color Doppler ultrasound identified a non-uniform hypoechoic mass measuring 37 × 30 × 32 mm in the medial segment of the left liver lobe.\n- Abdominal contrast-enhanced CT confirmed an irregularly shaped lesion with heterogeneous enhancement in the left lobe of the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "Initially suspected based on fever, leukocytosis, elevated CRP, and a solitary heterogeneous liver lesion, but broad-spectrum antibiotic therapy with piperacillin-tazobactam followed by meropenem was ineffective, and the patient continued to deteriorate clinically with worsening fever and abdominal pain.",
+      "quote": "We suspected it to be liver abscess and upgraded the treatment from 3-day course of piperacillin-tazobactam (4.5 g IV q8d) to meropenem (1 g IV q8d). However, within the following 5 days, the patient's condition gradually deteriorated, presenting with persistent high fever and abdominal pain, indicating that the simple anti-infective treatment was ineffective."
+    },
+    {
+      "candidate": "Amebic liver abscess",
+      "rule_out_reason": "Considered in the differential for an isolated hepatic abscess unresponsive to antibacterials, but specific amebic serology and blood cultures were negative.",
+      "quote": "whereas serological tests and blood cultures for amoebic infection remained negative, raising the suspicion of tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A positive tuberculin-specific T-cell spot (T-SPOT) assay prompted an ultrasound-guided liver biopsy, which revealed characteristic granulomatous inflammation with patchy coagulative necrosis, confirming hepatic tuberculosis, with subsequent complete radiological and clinical resolution on anti-tuberculosis therapy.",
+      "quote": "Concurrently, the tuberculin-specific T-cell spot (T-SPOT) test for tuberculosis infection returned positive, whereas serological tests and blood cultures for amoebic infection remained negative, raising the suspicion of tuberculosis. To clarify the diagnosis, a liver biopsy was performed on the ninth day following admission, which demonstrated the presence of characteristic granulomatous inflammatory morphology along with patchy coagulative necrosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Admission prompt contains zero pathogen names, zero send-out PCR, zero cultures, and zero biopsy results. All quotes verbatim verified."
+}

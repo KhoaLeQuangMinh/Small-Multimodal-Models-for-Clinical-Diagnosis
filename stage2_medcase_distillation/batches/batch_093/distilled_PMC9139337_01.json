@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9139337_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 78-year-old hypertensive male presents with prolonged constitutional symptoms, high spiking fevers, acute-phase reactant elevation, diffuse bilateral pulmonary nodularity, and thoracic aortic wall thickening with intramural hematoma. The clinical tension is establishing whether the aortic pathology represents acute non-infectious atheromatous ulceration/dissection or infectious aortitis / mycotic pseudoaneurysm secondary to disseminated miliary tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs after admission workup, baseline inflammatory blood tests (CRP, ESR, procalcitonin), initial chest CT, transthoracic echocardiography, and thoracic aortic CTA, immediately prior to interval repeat lung CT, T-SPOT testing, and sputum GeneXpert/culture diagnostics.\n3. Differential Distinctions: Infective endocarditis with mycotic aneurysms typically presents with bacteremia, audible new regurgitant murmurs, valvular vegetations, and markedly elevated procalcitonin. Atherosclerotic penetrating aortic ulcer / non-infectious intramural hematoma occurs in elderly hypertensive patients but does not explain progressive miliary lung nodules, remittent fevers, and profound systemic inflammatory markers.",
+  "case_prompt": "A 78-year-old man with a medical history of hypertension and remote cerebral infarction presents with recurrent fevers, fatigue, and a 5-kg weight loss over the preceding year. Two weeks prior to admission, his fatigue abruptly intensified, and fever spiked up to 39.5°C.\nOn examination, he is febrile at 38.0°C. Admission laboratory investigations demonstrate elevated inflammatory markers: C-reactive protein (CRP) 62.49 mg/dL, procalcitonin 0.213 ng/mL, and erythrocyte sedimentation rate (ESR) 84 mm/h.\nComputed tomography (CT) of the chest reveals diffusely distributed nodules in both lungs, bilateral bronchiolitis, and a thickened aortic arch with inward displacement of local calcified plaque. Transthoracic echocardiography reveals no vegetation in the mitral or aortic valve areas. Aortic computed tomography angiography (CTA) demonstrates multiple atherosclerotic plaques, ulcerations, and an intramural hematoma in the aortic arch and thoracic aorta.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial infective endocarditis / Pyogenic mycotic aortitis",
+      "rule_out_reason": "Pyogenic arterial infection typically exhibits frank bacteremia, high procalcitonin levels, and valvular vegetation; in this patient, echocardiography showed normal valves without vegetation, procalcitonin was only mildly elevated (0.213 ng/mL), and mycobacterial testing subsequently confirmed tuberculosis.",
+      "quote": "Echocardiography revealed no vegetation in the mitral and aortic valve areas."
+    },
+    {
+      "candidate": "Penetrating atherosclerotic aortic ulcer / Non-infectious intramural hematoma",
+      "rule_out_reason": "Although age and hypertension predisposed to aortic atheroma, isolated atherosclerotic disease cannot account for recurrent high-grade fevers, progressive weight loss, or interval rapid expansion of diffuse pulmonary lesions into miliary nodules with pleural effusion.",
+      "quote": "Re-examination of lung CT revealed bronchiole lesions and multiple miliary foci in both lungs, which were larger than one week prior, with pleural effusion, and slightly thickened pleura, suggestive of miliary tuberculosis (Figure 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Interval imaging demonstrating rapid expansion of diffuse pulmonary micronodules into florid miliary tuberculosis with pleural effusion, accompanied by positive interferon-gamma T-SPOT, positive sputum culture, and positive sputum GeneXpert assay for Mycobacterium tuberculosis.",
+      "quote": "The T cell spot test, sputum culture, and sputum GeneXpert test were positive for Mycobacterium tuberculosis and GeneXpert indicated sensitivity to rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Diagnostic challenge of tuberculous aortitis in an elderly patient presenting with miliary pulmonary disease. Breakpoint preserves tension before interval miliary progression, T-SPOT, and GeneXpert PCR."
+}

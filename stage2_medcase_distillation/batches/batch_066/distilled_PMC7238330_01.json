@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7238330_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An incidental 4 mm splenic cyst detected in a 14-month-old infant with Down syndrome and repaired tetralogy of Fallot during evaluation for refractory pneumonia. In early infancy, isolated splenic lesions are exceedingly uncommon and predominantly suggest congenital epidermoid cysts, pseudocysts, or septic emboli rather than alveolar echinococcosis, which rarely presents in this organ or age cohort.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after abdominal imaging reveals the incidental 4 mm splenic cyst during investigation of unresponsive pneumonia, prior to the collection of parasitic serologies or Western blot testing.\n3. Differential Distinctions: Benign congenital splenic cyst vs. Splenic abscess/septic embolus vs. Cystic echinococcosis (Echinococcus granulosus) vs. Alveolar echinococcosis (Echinococcus multilocularis). Initial dual seropositivity required Western blot confirmation to differentiate cross-reactive larval cestode infection from true alveolar disease.",
+  "case_prompt": "A 14-month-old boy with a history of Down syndrome, surgically corrected tetralogy of Fallot, generalized epilepsy, and failure to thrive presents for medical evaluation due to unsuccessful treatment of pneumonia. On physical examination, his height is 78 cm and weight is 8 kg. During further diagnostic investigation into the unresponsive respiratory infection, abdominal ultrasound imaging is obtained, which unexpectedly reveals an isolated 4 mm cyst in the spleen. Hepatic enzymes and baseline laboratory parameters are within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cystic Echinococcosis (Echinococcus granulosus)",
+      "rule_out_reason": "Although initial screening showed cross-reactive IgG antibodies against both larval cestode species, repeat serologic testing demonstrated negative E. granulosus antibodies, excluding hydatid disease.",
+      "quote": "To verify the diagnosis in a few days the tests were repeated and E. granulosus IgG was found to be negative while Western blot confirmed positive IgG against E. multilocularis."
+    },
+    {
+      "candidate": "Splenic Abscess or Septic Embolization",
+      "rule_out_reason": "Given the patient's congenital heart disease and unresponsive pneumonia, a septic splenic focus was considered, but the lesion was an incidental, small stable cyst with normal hepatic enzymes rather than an acute infectious collection.",
+      "quote": "accidentally diagnosed with a 4 mm sized cyst in the spleen during further investigation because of unsuccessful treatment of pneumonia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmatory Western blot specifically demonstrated positive IgG antibodies against Echinococcus multilocularis, establishing the definitive diagnosis of primary alveolar echinococcosis.",
+      "quote": "Western blot confirmed positive IgG against E. multilocularis. The diagnosis of AE was confirmed and treatment with albendazole (ABZ) powder 10 mg/kg/day divided in two doses was prescribed."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission presentation. Incidental 4 mm splenic cyst prior to serological confirmation. All serologic titers and pathogen details excluded from prompt."
+}

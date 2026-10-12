@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10684684_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 40-year-old female presents with a chronic, indolent, painless soft tissue mass in the right forearm persisting for two years without systemic symptoms, constitutional signs, or pulmonary manifestations. The tension centers on distinguishing a common benign soft-tissue neoplasm (lipoma) or low-grade soft-tissue sarcoma from an atypical, paucisymptomatic extrapulmonary granulomatous infection.\n2. Admission Breakpoint: Admission triage concludes after clinical evaluation, superficial forearm ultrasound (demonstrating an irregular mass of 56.7 x 16.4 mm), normal chest CT, and baseline laboratory panels, right before surgical resection and operative histopathologic evaluation.\n3. Differential Distinctions: Lipomas are typically homogeneous, adipose-density masses with distinct boundaries, whereas this lesion exhibited irregular margins and cystic-solid architecture. Soft-tissue sarcomas exhibit cellular atypia without granulomas. Extrapulmonary soft-tissue tuberculosis is confirmed by granulomatous inflammation, positive acid-fast staining, and IS6110 molecular amplification.",
+  "case_prompt": "A 40-year-old female presented with a 2-year history of progressive, painless enlargement of her right forearm. She reported no cough, sputum production, hypothermia, night sweats, dyspnea, chest tightness, or fatigue. On physical examination, a 6 cm x 3 cm mass was noted on the right forearm, soft in consistency, non-tender, with normal overlying skin temperature, preserved mobility, and intact wrist joint range of motion. She denied any history of local trauma, chronic systemic infections, immune disorders, or malignancies. Superficial ultrasonography of the forearm demonstrated an irregular mass measuring approximately 56.7 mm x 16.4 mm with unclear borders. A computed tomography scan of the chest showed no pulmonary abnormalities. Initial laboratory testing revealed a hemoglobin level of 131 g/L, a leukocyte count of 5.13 x 10^9/L (with 70.6% neutrophils, 19.4% lymphocytes, and 4.68% eosinophils), and an erythrocyte sedimentation rate/hematocrit of 20 mm/h. Renal and liver function tests were within normal reference ranges.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Forearm Lipoma",
+      "rule_out_reason": "Initially suspected on clinical grounds due to the soft, mobile, non-tender, indolent nature of the subcutaneous mass; ruled out during surgical excision by cystic-solid morphology containing grayish-white particulate fluid rather than encapsulated mature adipose tissue.",
+      "quote": "The lipoma diagnosis was established according to the examination results, and the mass was resected on August 12, 2022. The mass was observed intraoperatively as a cystic-solid mass with an incomplete covering, and the mass incision revealed grayish-white fluid with small grayish-white particles like fish eggs."
+    },
+    {
+      "candidate": "Soft Tissue Sarcoma / Malignancy",
+      "rule_out_reason": "Considered given the progressive growth over two years and ultrasonography demonstrating an irregular lesion with ill-defined margins, but ruled out by histopathology demonstrating granulomatous inflammation and multinucleated giant cells without malignant neoplastic features.",
+      "quote": "Superficial ultrasonography of the forearm revealed an irregular mass measuring approximately 56.7 mm x 16.4 mm with unclear borders"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Extrapulmonary Soft Tissue Tuberculosis",
+      "rule_out_reason": "Postoperative histopathology revealing chronic granuloma formation with multinucleated giant cells, positive acid-fast bacilli staining, and positive IS6110 real-time PCR confirmed primary soft tissue Tuberculosis.",
+      "quote": "Soft tissue tuberculosis of the right forearm was identified by postoperative pathology, which showed fibrocystic tissue with granulation tissue and granuloma formation, inflammatory cell infiltration (Figure 3A), and multinucleated giant cells in some areas (Figure 3B). Staining for acid fast bacilli were positive (Figure 3C) and the IS6110 gene was detected by quantitative real-time PCR (qPCR) using the Mycobacterium tuberculosis Complex kit"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10684684_01. The admission narrative accurately captures the pre-operative workup without disclosing tuberculosis or operative findings. All differential diagnoses and the diagnostic pivot cite verbatim text from the case report."
+}

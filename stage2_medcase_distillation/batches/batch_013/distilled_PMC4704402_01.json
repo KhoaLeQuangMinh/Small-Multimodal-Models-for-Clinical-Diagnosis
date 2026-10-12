@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4704402_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A returning traveler from West Africa presenting with high fever, rigors, marked sinus tachycardia, elevated CRP, and thrombocytopenia strongly mimics hyperendemic dengue fever or severe falciparum infection, but represents an imported non-falciparum relapsing protozoan infection with a dimorphic variant.\n2. Admission Breakpoint: The breakpoint occurs at emergency triage upon documentation of acute hyperpyrexia, thrombocytopenia, and elevated CRP following travel, strictly before rapid antigen strip testing, peripheral blood smear microscopy, and molecular nested PCR.\n3. Differential Distinctions: Dengue fever commonly causes acute febrile thrombocytopenia in Southeast Asia but is distinguished by positive NS1 antigen or IgM serology. Plasmodium falciparum produces high-density parasitemia and positive histidine-rich protein 2 (HRP-2/T1 band). Leptospirosis features conjunctival suffusion, renal dysfunction, and positive specific serology.",
+  "case_prompt": "A 19-year-old male college student presented with a 4-day history of high-grade fever associated with chills, rigors, and generalized body aches. He had returned to Malaysia 5 days prior to symptom onset after spending 10 days in Nigeria. Upon arrival, he was febrile with a body temperature of 39.8 °C, heart rate of 126 beats/min, and blood pressure of 128/87 mmHg. Physical examination was otherwise unremarkable with no rash or focal findings. Laboratory investigations revealed thrombocytopenia with a platelet count of 71,000/µL and an elevated C-reactive protein of 97 mg/L (reference: <5 mg/L). White blood cell count, hemoglobin, and albumin were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue fever",
+      "rule_out_reason": "Considered given acute febrile illness with severe body aches, marked thrombocytopenia, and geographic presentation in Malaysia; ruled out by negative NS1 antigen and negative IgM/IgG serology.",
+      "quote": "Dengue NS-1Ag, dengue IgM and IgG, Leptospira IgM, Mycoplasma antibody test and Widal-Weil-Felix test were all negative."
+    },
+    {
+      "candidate": "Leptospirosis or Enteric fever",
+      "rule_out_reason": "Considered in the differential diagnosis of tropical acute febrile illness with elevated inflammatory markers and thrombocytopenia; excluded by negative serology and unrevealing diagnostic agglutination tests.",
+      "quote": "Dengue NS-1Ag, dengue IgM and IgG, Leptospira IgM, Mycoplasma antibody test and Widal-Weil-Felix test were all negative. Blood cultures did not yield any result."
+    },
+    {
+      "candidate": "Plasmodium falciparum malaria",
+      "rule_out_reason": "Considered the primary life-threatening possibility for high fever and thrombocytopenia returning from West Africa, but excluded by the absence of the falciparum-specific T1 band on rapid antigen testing and characteristic morphological features on microscopy.",
+      "quote": "After three attempts using BinaxNOW  Malaria Test (USA), a T2 Line appeared, while no T1 Line (specific for P. falciparum infection) was observed, suggesting vivax, malariae or ovale malaria or a mix of these."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "BinaxNOW malaria testing yielded a pan-malarial T2 band, and thick and thin blood films demonstrated parasites at 0.27% parasitemia, while nested genus PCR and 18S rRNA gene sequencing definitively identified the non-falciparum variant Plasmodium ovale wallikeri, which responded promptly to artemether/lumefantrine and primaquine.",
+      "quote": "Microscopy on thick and thin blood films detected the presence of malaria parasites suggesting P. ovale or P. vivax (Fig. 1), with 0.27 % parasitaemia... Sequence analyses confirmed that the infecting Plasmodium species was P. ovale wallikeri."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to rapid antigen test and blood film. Travel history and baseline CBC/CRP preserved with zero pathogen spoilers."
+}

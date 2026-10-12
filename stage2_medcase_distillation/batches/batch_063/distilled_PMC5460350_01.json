@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5460350_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 38-year-old military airman deployed in an endemic overseas territory presents with non-specific gastrointestinal symptoms (nausea and vomiting for two days) in the setting of discontinued chemoprophylaxis and outdoor mosquito exposure. The major clinical hazard is misdiagnosing early parasitemia as uncomplicated gastroenteritis, leading to rapid catastrophic progression to severe disease, profound hemolytic anemia, arrhythmia, and cardiac arrest.\n2. Admission Breakpoint: The presentation ends at the initial evaluation in the field clinic after documenting 2 days of nausea and vomiting in the context of unprophylaxed outdoor mosquito exposure, immediately prior to point-of-care rapid diagnostic testing (RDT) and blood smear microscopy.\n3. Differential Distinctions: Acute viral or bacterial gastroenteritis is common among deployed troops but does not produce rapid life-threatening hemolysis or arrhythmia; rapid diagnostic antigen testing and blood film microscopy definitively identify the intraerythrocytic protozoan.",
+  "case_prompt": "A 38-year-old military airman deployed on an overseas mission presented to an on-site primary care field clinic with a 2-day history of nausea and vomiting. He had been stationed in temporary shelters during base construction, had engaged in outdoor operational duties with exposure to mosquito bites, and had discontinued prescribed chemoprophylaxis due to gastrointestinal side effects. On initial evaluation, he was ill-appearing with persistent nausea and emesis, but exhibited no focal neurological deficits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral or Bacterial Gastroenteritis",
+      "rule_out_reason": "Common presumptive diagnosis for acute nausea and vomiting in military deployment camps; ruled out by the rapid clinical deterioration over the subsequent 24 to 48 hours, development of severe anemia, and positive parasite antigen testing.",
+      "quote": "He presented with nausea and vomiting for two days and was diagnosed with falciparum malaria based on the rapid diagnostic test."
+    },
+    {
+      "candidate": "Enteric (Typhoid) Fever / Leptospirosis",
+      "rule_out_reason": "Considered endemic tropical febrile illnesses with prominent gastrointestinal symptoms in deployed personnel; ruled out by rapid onset of profound acute hemolytic anemia requiring emergency blood transfusion and rapid diagnostic confirmation.",
+      "quote": "The attending doctors recommended an urgent blood transfusion (no record of the hemoglobin level at this point), but no facilities were available for transfusions in that hospital."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was immediate point-of-care rapid diagnostic testing (RDT) identifying Plasmodium falciparum in an unprophylaxed serviceman exposed to outdoor mosquito bites, which progressed within 24 to 48 hours to severe disease requiring transfusion and antiarrhythmic management.",
+      "quote": "Treatment was commenced for uncomplicated falciparum malaria with oral quinine and doxycycline, but his condition worsened within the next 24 h."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to field clinic presentation. Early gastrointestinal symptoms masking severe falciparum parasitemia in an unprophylaxed deployed serviceman; rapid deterioration highlighted the critical need for point-of-care RDT."
+}

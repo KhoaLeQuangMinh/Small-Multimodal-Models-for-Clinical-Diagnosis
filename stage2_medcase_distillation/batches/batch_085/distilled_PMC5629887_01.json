@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5629887_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 24-year-old male presents with persistent thigh pain, swelling, and inability to bear weight 6 months after intramedullary nailing for a trivial-trauma subtrochanteric femur fracture, with radiographs showing peri-implant lysis, bone resorption, and complete nonunion without callus. The lack of fever or systemic symptoms led directly to a presumption of indolent chronic pyogenic implant osteomyelitis, concealing primary osseous hydatid disease which accounts for less than 1% of echinococcal infections.\n2. Admission Breakpoint: Admission clinical evaluation concludes following physical examination and plain radiographs of the right femur showing periprosthetic osteolysis and nonunion, strictly prior to surgical debridement, tissue macroscopic inspection, and histopathologic examination.\n3. Differential Distinctions: Chronic pyogenic implant infection/osteomyelitis was the presumptive indication for surgical debridement, but disproved by absence of pus and identification of parasitic membranes. Primary bone neoplasm (pathologic fracture) was considered at initial fracture presentation, but baseline radiographs lacked osteolytic/osteoblastic neoplastic lesions. Visceral echinococcosis was excluded by normal subsequent abdominal and chest imaging.",
+  "case_prompt": "A 24-year-old male office worker presents to the outpatient orthopedic clinic with persistent pain, swelling, and an inability to bear weight on his right lower extremity 6 months following surgical fracture fixation. Six months earlier, he sustained trivial, low-energy trauma resulting in an inability to ambulate; pelvic and hip radiographs at that time demonstrated a displaced subtrochanteric fracture of the right femur without evidence of osteoporosis or osteolytic/osteoblastic lesions suggestive of a bone tumor. He subsequently underwent open reduction and internal fixation with an intramedullary nail. He reports no fever, chills, weight loss, or constitutional symptoms.\n\nOn physical examination, there is localized tenderness and swelling over the proximal right thigh and hip. He is unable to bear weight on the right lower extremity. There are no draining sinus tracts, erythema, or fluctuant fluid collections.\n\nPlain radiographs of the right hip and femur demonstrate radiolucent osteolysis around the intramedullary nail, resorption of the subtrochanteric fracture ends, and an absence of callus formation, prompting clinical suspicion of persistent low-grade chronic infection and fracture nonunion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic pyogenic osteomyelitis / Implant-associated infection",
+      "rule_out_reason": "Formulated as the primary clinical suspicion due to persistent pain, implant loosening, peri-implant osteolysis, and failure of callus formation; disproved during surgical exploration which revealed indurated soft tissues and pearly white structures rather than purulent exudate, confirmed as parasitic membranes on histology.",
+      "quote": "Suspecting persistent low-grade chronic pyogenic infection, he was planned for surgical debridement with external fixation."
+    },
+    {
+      "candidate": "Primary bone neoplasm / Pathological fracture",
+      "rule_out_reason": "Considered at the initial low-energy fracture presentation in a young adult, but ruled out because initial radiographs showed normal bone architecture without pre-existing lytic or blastic tumor lesions.",
+      "quote": "There was no evidence of osteoporosis, lytic/blastic lesion suggestive of bone tumor."
+    },
+    {
+      "candidate": "Visceral hydatid disease",
+      "rule_out_reason": "Considered as potential primary source since skeletal involvement typically represents secondary haematogenous spread from liver or lung lesions, but excluded by negative post-operative abdominal and chest imaging.",
+      "quote": "Ensuing ultrasound abdomen and chest did not reveal liver or lung involvement."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical debridement revealed pearly white flattened structures, and histopathological microscopy demonstrated thick eosinophilic acellular lamellated exocyst membranes and characteristic refractile dagger-shaped hooklets diagnostic of femoral hydatid disease.",
+      "quote": "The excised specimen consisted of multiple fragments including pearly white-flattened structure measuring 2.8 cm x 2 cm x 1 cm. Microscopy revealed fragments of thick eosinophilic acellular lamellated membrane corresponding to parasite exocyst [Figure 3]. Degenerating bits of thin endocyst/inner nucleated germinal layer were seen occasionally. High magnification showed characteristic refractile dagger-shaped hooklets [Figure 4]. Hence, diagnosis of hydatid disease of the right femur was rendered."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5629887_01. Depicts primary bone echinococcosis of the femur presenting as hardware loosening and nonunion masquerading as chronic pyogenic osteomyelitis, stopping cleanly before surgical debridement."
+}

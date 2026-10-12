@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4173378_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 45-year-old woman presents with vague abdominal pain of 3 months' duration and subacute breathlessness, harboring simultaneous cystic lesions in both the liver and the left lower lung base. The principal clinical challenge is distinguishing multi-organ parasitic hydatid disease from pyogenic or amebic hepatic abscesses with transdiaphragmatic extension, or dual congenital/malignant cysts, prior to invasive intervention that carries a fatal risk of intraoperative anaphylaxis or cyst rupture.\n2. Admission Breakpoint: The breakpoint is positioned after outpatient triage, vital signs, physical examination (decreased left lower lung air entry, left hypochondriac tenderness), routine labs (mild transaminitis), baseline ECG (infrequent premature ventricular complexes), chest radiography (cystic lesion with air-fluid level), and contrast-enhanced abdominal CT (6.1 cm well-defined hepatic cyst), immediately prior to echinococcal immunohemagglutination serology, albendazole administration, or surgery.\n3. Differential Distinctions: Amebic/pyogenic liver abscess with secondary pleuropulmonary spread is excluded by indolent afebrile course, lack of jaundice, normal inflammatory markers, and well-circumscribed cyst morphology. Congenital cysts (bronchogenic and hepatic) or cystic neoplasms are excluded by the air-fluid level indicating bronchial communication and positive echinococcal serology.",
+  "case_prompt": "A 45-year-old woman from a semiurban area presents to the surgical outpatient department with a 3-month history of intermittent abdominal pain, a 1-week history of anorexia, and 3 days of sudden-onset mild breathlessness. She reports no fever, chills, jaundice, hematemesis, melena, nausea, vomiting, or chest pain, and has no prior chronic systemic medical conditions. Her past surgical history is notable for open reduction and internal fixation of a humerus fracture under general anesthesia, which was reported by the patient to involve delayed emergence from anesthesia.\n\nOn physical examination, her heart rate is 86 beats per minute with occasional missed beats, blood pressure is 118/72 mmHg, and chest auscultation reveals decreased air entry over the left lower lung zones. Airway assessment demonstrates a Mallampati class II score. Cardiac examination is unremarkable except for an electrocardiogram showing infrequent abnormal ventricular premature complexes (<5\u20136 per minute); bedside echocardiography is normal. Abdominal palpation reveals tenderness over the left hypochondrium and epigastric region without hepatosplenomegaly or palpable masses.\n\nRoutine laboratory investigations\u2014including complete blood count, renal function tests, blood glucose, viral markers, and urinalysis\u2014are within normal limits, with the exception of a mild increase in serum glutamic oxaloacetic transaminase (SGOT) and serum glutamic-pyruvic transaminase (SGPT). Plain posteroanterior chest radiography demonstrates a cystic lesion with an air-fluid level in the left lower lung zone. Contrast-enhanced computed tomography (CECT) of the abdomen reveals a 6.1 \u00d7 5.4 \u00d7 5.0 cm well-defined cystic lesion involving segments III, VI, and Va of the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Amebic or pyogenic liver abscess with transdiaphragmatic pulmonary extension",
+      "rule_out_reason": "Hepatic abscesses extending across the diaphragm to involve the pleura or lung typically present acutely with high fevers, rigors, right upper quadrant pain, leukocytosis, and thick irregular inflammatory margins. The patient presented indolently without fever, jaundice, or leukocytosis, and abdominal CT showed a cleanly encapsulated, well-defined cyst rather than a suppurative collection.",
+      "quote": "There was no history of jaundice, hematemesis, malena, nausea and vomiting, chest pain, or any systemic medical disease."
+    },
+    {
+      "candidate": "Congenital bronchogenic cyst with coexisting simple hepatic cyst or cystic metastasis",
+      "rule_out_reason": "Coexisting developmental cysts or cystic metastases could theoretically present as concurrent pulmonary and hepatic fluid collections in an adult. However, the presence of an air-fluid level in the pulmonary cyst indicated bronchial communication/rupture, and simultaneous discrete large organ cysts in an endemic region strongly suggest zoonotic cestode infection rather than dual developmental malformations.",
+      "quote": "Chest X-ray (postero-anterior view) revealed a cystic lesion with air and fluid level at left lower zones [Figure 1]. Contrast-enhanced computed tomography showed a 6.1x5.4x5.0 cm well-defined cystic lesion in segment III, VI, and Va of hepatic tissue"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when an immunohemagglutination test for Echinococcus returned positive, confirming simultaneous pulmonary and hepatic hydatid cysts and prompting preoperative albendazole and combined thoracoscopic/laparoscopic excision.",
+      "quote": "Immunohemagglutination test for echinococcosis was found to be positive. The patient was diagnosed as a case of hydatid cyst of liver and lower lobe of left lung and the cyst was in close proximity to the heart"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete clinical fidelity preserved. Admission breakpoint correctly set prior to echinococcal serology and surgical intervention. Zero spoilers in case prompt."
+}

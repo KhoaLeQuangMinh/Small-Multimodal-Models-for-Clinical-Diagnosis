@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11000838_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 17-year-old adolescent of Indian origin presented with 1 month of neck pain, neck stiffness, constitutional symptoms, and isolated unilateral lower motor neuron hypoglossal nerve palsy (right tongue deviation, fasciculations, muscle wasting). Normal plain radiographs of the chest and cervical spine made localized osteomyelitis or pulmonary disease obscure, initially pointing toward skull base tumors, craniovertebral junction anomalies, or autoimmune vasculitis/sarcoidosis.\n2. Admission Breakpoint: Triage physical and neurological examination, baseline laboratory investigations (anemia, lymphocytosis, elevated ESR/LDH, negative HIV testing), and normal plain radiographs of the chest and cervical spine, immediately prior to targeted mycobacterial testing, gadolinium cervical spine MRI, and lymph node fine-needle aspiration.\n3. Differential Distinctions: Structural skull base / craniocervical junction malformations (Chiari malformation, arachnoid cyst), autoimmune vasculitis or sarcoidosis, and viral encephalomyelitis (EBV). Differentiated by prevertebral C2 contrast-enhancing mass abutting the hypoglossal canal on MRI, sputum acid-fast bacilli positivity, and caseating granulomatous lymphadenitis on lymph node FNA.",
+  "case_prompt": "A 17-year-old adolescent male of Indian origin presented with a gradual onset of neck pain over the course of one month accompanied by neck stiffness, aggravated by neck movements. Additionally, he reported anorexia and unintentional weight loss. There was no history of febrile illness, neck trauma, or recent travel. Physical examination revealed significant posterior cervical lymphadenopathy. Neurological examination demonstrated rightward deviation of the tongue accompanied by muscle wasting and fasciculations, indicative of right peripheral hypoglossal nerve involvement. Laboratory investigations revealed anemia with lymphocytosis, normal routine biochemistry and glucose levels, an elevated erythrocyte sedimentation rate (ESR) of 45 mm/h, and an elevated lactate dehydrogenase (LDH) level of 325 U/L. Serological testing for HIV-1/2 antigen and antibody was negative. Plain radiographs of the chest and cervical spine were completely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune disease / Systemic vasculitis or sarcoidosis",
+      "rule_out_reason": "Considered due to the combination of chronic cervical lymphadenopathy, constitutional symptoms, elevated inflammatory markers, and cranial neuropathy; excluded by negative autoimmune serology and low serum angiotensin-converting enzyme levels.",
+      "quote": "autoimmune diseases such as vasculitis and sarcoidosis (negative ANA, ANCA, Anti PR3, Anti MPO, and low serum ACE levels)."
+    },
+    {
+      "candidate": "Structural craniocervical junction lesion or intracranial neoplasm",
+      "rule_out_reason": "Considered because of progressive unilateral lower motor neuron twelfth cranial nerve palsy with neck pain and stiffness; excluded by neuroimaging demonstrating an inflammatory soft-tissue collection abutting the hypoglossal canal rather than a malformation or tumor.",
+      "quote": "We ruled out other possible differentials, such as infections like EBV and encephalomyelitis, structural abnormalities like chiari malformation and arachnoid cyst, tumors"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cervical spine MRI demonstrated a prevertebral and paraspinal soft-tissue mass at C2 compressing the right hypoglossal canal, while sputum and lymph node fine-needle aspiration confirmed caseating granulomatous disease with acid-fast bacilli.",
+      "quote": "As part of the workup, acid-fast bacilli were identified in the sputum, indicating active pulmonary TB"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case accurately stops at admission triage prior to MRI, sputum AFB, and lymph node FNA. Verbatim quotes verified."
+}

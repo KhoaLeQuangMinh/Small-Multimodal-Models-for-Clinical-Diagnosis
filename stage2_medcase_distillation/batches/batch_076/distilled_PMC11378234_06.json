@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_06",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: An immunocompromised host (post-autologous stem cell transplantation for multiple myeloma) presenting with persistent fever and cough, who develops acute, severe thrombocytopenia (platelet count dropping from 123 to 30 x 10^9/L), rising serum creatinine, and gross hematuria. The core diagnostic challenge is establishing a diagnosis of dengue fever when initial NS1 antigen and serology are both negative, requiring clinical recognition of the characteristic laboratory trajectory and bleeding diathesis in an endemic setting.\n2. Admission Breakpoint: The presentation ends after initial triage labs and imaging show persistent fever, cough, normal chest radiograph, baseline to acute platelet decline (123 to 30 x 10^9/L), acute renal impairment, and gross hematuria, immediately prior to send-out arboviral testing and inpatient nephrology intervention.\n3. Differential Distinctions: Distinguishing arboviral infection from lower respiratory tract infection (ruled out by clear chest radiography), transplant-associated thrombotic microangiopathy or severe bacterial sepsis (ruled out by spontaneous stabilization and recovery with conservative hydration and supportive care without antimicrobial escalation), and primary renal or urological hemorrhage.",
+  "case_prompt": "A 64-year-old man who had previously undergone autologous stem cell transplantation for multiple myeloma presented to the emergency department with persistent fever and cough. On initial evaluation, a plain chest radiograph was normal, showing no pulmonary infiltrates or consolidation. Baseline laboratory investigations revealed a precipitous drop in his platelet count from 123 \u00d7 10^9/L at baseline to 30 \u00d7 10^9/L. Concurrently, serum creatinine was elevated above baseline, and urinalysis demonstrated gross hematuria.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lower Respiratory Tract Infection / Bacterial Pneumonia",
+      "rule_out_reason": "Considered given fever, cough, and post-transplant immunosuppression, but ruled out by unremarkable pulmonary imaging.",
+      "quote": "Chest X-ray was normal."
+    },
+    {
+      "candidate": "Transplant-Associated Thrombotic Microangiopathy or Severe Bacterial Sepsis",
+      "rule_out_reason": "Considered given acute renal dysfunction, gross hematuria, and severe thrombocytopenia, but ruled out by spontaneous stabilization and recovery with hydration and supportive care alone.",
+      "quote": "patient was managed conservatively with hydration, continuous bladder irrigation, and platelet transfusion support."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The characteristic trajectory of acute thrombocytopenia falling from baseline, bleeding manifestation (gross hematuria), and self-limiting course in a dengue-endemic region confirmed the clinical diagnosis despite negative initial viral antigen and serology.",
+      "quote": "Though dengue NS1 antigen and serology were negative, clinical and laboratory parameters favored the diagnosis of dengue fever."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for Dengue fever in a stem cell transplant recipient. Admission breakpoint enforced prior to viral serology/NS1 and management. Zero spoilers or pathogen names in case_prompt. Direct quotes verified."
+}

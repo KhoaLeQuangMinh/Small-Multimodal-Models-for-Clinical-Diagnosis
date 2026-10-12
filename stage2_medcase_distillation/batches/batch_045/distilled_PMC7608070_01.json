@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7608070_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 4-year-old malnourished female presents with prolonged fever (20 days), constitutional wasting, non-bloody diarrhea, cough, marked neutrophilic leukocytosis, and a miliary pattern on chest radiography despite a history of neonatal BCG vaccination and no known sick contacts. The clinical challenge lies in distinguishing acute-on-chronic systemic bacterial infection (such as enteric fever or severe sepsis) or disseminated endemic fungal infection from disseminated miliary and gastrointestinal tuberculosis.\n2. Admission Breakpoint: The admission evaluation concludes after initial physical examination, triage hematology/biochemistry, and chest radiography revealing a diffuse miliary infiltrate, prior to gastric aspirate molecular testing, endoscopic intervention, or duodenal tissue biopsy.\n3. Differential Distinctions: Severe pyogenic pneumonia or enteric bacteremia (e.g., Salmonella) causes prolonged fever, diarrhea, and leukocytosis, but chest radiographs demonstrate lobar/patchy bronchopneumonia rather than uniform diffuse miliary micronodules. Disseminated fungal infections (such as histoplasmosis) can produce a miliary chest pattern in malnourished children but are distinguished by fungal isolation/staining and absence of acid-fast bacilli on molecular and histological testing.",
+  "case_prompt": "A 4-year-old girl presented to a pediatric hospital in São Paulo, Brazil, with a 20-day history of intermittent fevers, non-bloody diarrhea, night sweats, progressive weight loss, and dry cough. She had received routine neonatal BCG vaccination and had no known prior medical conditions or known sick contacts with chronic cough or respiratory illness.\n\nOn physical examination, she appeared severely malnourished, with a weight of 11 kg (less than the 3rd percentile for age). Vital signs demonstrated fever and tachypnea. Lung auscultation revealed bilateral diffuse crackles, and abdominal examination showed mild diffuse abdominal tenderness without peritoneal signs.\n\nInitial triage laboratory investigations revealed microcytic anemia with a hemoglobin level of 8.8 g/dL, leukocytosis of 21,600/mm³ (differential: 1% band forms, 79% segmented neutrophils, 15% lymphocytes, and 10% monocytes), and a platelet count of 269,000/mm³. Coagulation profile demonstrated an INR of 1.25. Serum biochemistry showed urea of 18 mg/dL, creatinine of 0.2 mg/dL, alanine aminotransferase (ALT) of 22 U/L, and aspartate aminotransferase (AST) of 29 U/L.\n\nA plain chest radiograph was performed and demonstrated a diffuse, symmetric miliary reticulonodular pattern throughout both lung fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Enteric fever (Salmonella enterica) or severe pyogenic sepsis",
+      "rule_out_reason": "Considered due to the 3-week course of remittent fever, gastrointestinal symptoms (diarrhea), wasting, and marked neutrophilic leukocytosis. However, typical bacterial sepsis does not cause a diffuse miliary micronodular pattern on chest radiography and failed to improve on empiric ceftriaxone monotherapy.",
+      "quote": "Ceftriaxone and first-line oral anti-tuberculosis agents (RHZ: rifampicin, isoniazid and pyrazinamide) were introduced after the diagnosis of disseminated tuberculosis confirmed by gastric washing that identified a rifampicin-sensitive Mycobacterium tuberculosis (X-pert MTB/RIF assay)."
+    },
+    {
+      "candidate": "Disseminated endemic fungal infection (e.g., Histoplasmosis)",
+      "rule_out_reason": "Considered because malnourished pediatric patients with cell-mediated vulnerability can present with prolonged fever, weight loss, diarrhea, and diffuse miliary pulmonary nodules. However, diagnostic evaluation isolated acid-fast mycobacterial organisms rather than fungal yeast forms.",
+      "quote": "A duodenal biopsy showed chronic duodenitis and a positive acid-fast bacilli test ( Figure 2 ), confirming the diagnosis of disseminated tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when gastric washing aspirate testing identified rifampicin-sensitive Mycobacterium tuberculosis via rapid molecular assay, subsequently reaffirmed by duodenal biopsy demonstrating acid-fast bacilli within mucosal granulomatous inflammation.",
+      "quote": "diagnosis of disseminated tuberculosis confirmed by gastric washing that identified a rifampicin-sensitive Mycobacterium tuberculosis (X-pert MTB/RIF assay)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pediatric disseminated miliary and gastrointestinal tuberculosis presenting with diarrhea and miliary chest radiograph, later complicated by severe GI hemorrhage. All confirmatory gastric wash PCR, endoscopic biopsy findings, and pathogen names excluded from case_prompt."
+}

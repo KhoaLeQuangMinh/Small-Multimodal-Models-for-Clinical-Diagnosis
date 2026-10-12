@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2248239_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old female presented with a persistent discharging sinus from the left labia majora extending to the inguinal crease following an incision and drainage 6 months earlier, without constitutional symptoms (no cough, fever, weight loss) or chest radiographic abnormalities. The absence of pulmonary disease and the atypical gynecologic location closely simulated a recurrent Bartholin gland abscess, hidradenitis suppurativa, or sexually transmitted lymphadenopathy.\n2. Admission Breakpoint: The admission clinical triage concludes after history, physical examination, screening serologies (HIV and VDRL negative), chest/abdominal radiographs, pelvic ultrasound, and basic complete blood count (leukopenia, ESR 55 mm/hr). Surgical excision of the sinus tract and subsequent histopathologic evaluation occur post-breakpoint.\n3. Differential Distinctions: Recurrent pyogenic abscess / hidradenitis suppurativa produces acute neutrophilic suppurative inflammation with bacterial flora. Syphilitic gumma and lymphogranuloma venereum present with genital ulcers or buboes but have positive serology and sexually active risk. Tubercular sinus of the vulva presents as an indolent draining tract lined by caseating or epithelioid granulomas with Langhans giant cells, resolving completely on antituberculosis chemotherapy.",
+  "case_prompt": "A 50-year-old woman who was not sexually active presented to the surgical service with a swelling in the left inguinal region and a chronically discharging sinus tract extending from the left labia majora to the left inguinal crease. Six months prior to presentation, she had undergone incision and drainage for an apparent abscess of the left labia majora, but the site failed to heal and developed persistent drainage. She reported no cough, fever, night sweats, weight loss, or abdominal pain. She had no history of close contact with individuals suffering from chronic pulmonary diseases in the preceding year. Serological tests for human immunodeficiency virus (HIV) and venereal disease research laboratory (VDRL) were non-reactive. Routine plain radiographs of the chest and abdomen were normal without parenchymal infiltrates or lymphadenopathy. Pelvic ultrasonography demonstrated a bulky uterus with a non-visualized endometrial line; bilateral adnexal structures were unremarkable without evidence of mass lesions or cysts. A complete blood count revealed leukopenia, and the erythrocyte sedimentation rate (ESR) was elevated at 55 mm/hr at 2 hours.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent Pyogenic Bartholin Abscess / Hidradenitis Suppurativa",
+      "rule_out_reason": "Considered because of the chronic discharging sinus in the vulvar/labial region following incision and drainage of a localized abscess 6 months earlier. Ruled out by failure of spontaneous healing, absence of acute bacterial suppuration, and histological identification of granulomatous tissue with Langhans giant cells.",
+      "quote": "She had history of incision and drainage for an abscess at left labia majora 6 months back."
+    },
+    {
+      "candidate": "Syphilis (Gumma / Chancre with Inguinal Sinus)",
+      "rule_out_reason": "Considered given the chronic ulcerative and fistulous tract involving the external genitalia and inguinal region. Ruled out by a non-reactive VDRL serological test and patient history of sexual inactivity.",
+      "quote": "Antibody tests for HIV and VDRL infection were negative."
+    },
+    {
+      "candidate": "Lymphogranuloma Venereum / Donovanosis",
+      "rule_out_reason": "Considered as causes of chronic suppurative or fistulizing inguinal and perineal lesions. Ruled out by lack of sexual activity, normal pelvic imaging, and classic histopathology demonstrating epithelioid granulomas rather than Chlamydia/Klebsiella inclusions.",
+      "quote": "A 50-year-old female patient without active sexual life admitted to Department to Surgery with a swelling over the left inguinal area with discharging sinus from labia majora to left inguinal crease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was established following surgical excision of the sinus tract and a retropubic mass via a suprapubic approach, with microscopic histopathology demonstrating sinus tract lining composed of chronic inflammatory cells, epithelioid cells, and pathognomonic Langhans giant cells consistent with tuberculous sinus, followed by complete healing on quadruple antituberculosis therapy.",
+      "quote": "Histopathology report showed sinus tract lined by chronic inflammatory cells, epitheloid cells, and Langhan's giant cells on microscopic examination suggestive of tuberculous sinus (Figure 3). Antitubreculous quadruple therapy was initiated. Complete healing of the wound, with rapid relief of symptoms, followed 4-week antituberculosis chemotherapy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint rule. Case prompt terminates prior to surgical sinus tract excision and microscopic histology. All mentions of tuberculosis and histopathology findings excluded from prompt. Quotes taken directly from text."
+}

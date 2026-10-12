@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3140149_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 45-year-old HIV-positive male (CD4 210/\u00b5L) presented with multiple nodular and plaque lesions across his face, extremities, and back, alongside cervical lymphadenopathy, low-grade fevers, and weight loss. In an immunosuppressed individual, disseminated papulonodular skin lesions closely mimic lepromatous leprosy (Hansen's disease), cutaneous sarcoidosis, Kaposi sarcoma, or systemic opportunistic fungal infections (e.g., histoplasmosis). Post-kala-azar dermal leishmaniasis (PKDL) typically appears years after treated visceral disease, but in HIV coinfection, it can develop prematurely and with systemic signs.\n2. Admission Breakpoint: Admission triage terminates after recording history of travel/work in Bihar with fever 6 months prior, intermittent fevers, weight loss, physical exam showing nodular plaques on the nose, wrist, finger, back, and cervical lymphadenopathy, baseline blood/urine investigations (normal), and HIV-positive status with CD4 count 210/\u00b5L, immediately prior to slit skin smear and skin biopsy.\n3. Differential Distinctions: Lepromatous leprosy (Hansen's disease) was a primary clinical differential given nodular facial and extremity plaques in a patient from an endemic region; excluded by slit skin smear showing amastigotes without acid-fast bacilli. Systemic opportunistic infection or visceral leishmaniasis relapse was considered given fevers, weight loss, and cervical adenopathy; excluded as routine hematology and urinalysis were normal.",
+  "case_prompt": "A 45-year-old HIV-positive male presented to an outpatient dermatology clinic with multiple cutaneous nodules and plaques distributed over his nasal area, the dorsum of his left wrist, his right index finger, and his back, accompanied by enlarged cervical lymph nodes. Six months earlier, while working in the state of Bihar, he had experienced an episode of prolonged fever. Over the preceding several weeks, he complained of recurrent mild pyrexia off and on, along with progressive weight loss.\n\nOn physical examination, the patient had multiple firm, non-tender nodules and infiltrated plaques located over the nose, dorsum of the left wrist, right index finger, and upper back. Palpable cervical lymphadenopathy was present. The remainder of the systemic examination was unremarkable.\n\nRoutine triage blood and urine examinations did not reveal any abnormalities. Confirmatory enzyme-linked immunosorbent assay (ELISA) test for HIV was positive, and his absolute CD4 T-cell count was 210/\u00b5L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic opportunistic infection / Visceral leishmaniasis relapse",
+      "rule_out_reason": "Considered due to constitutional symptoms (fever, weight loss) and cervical lymphadenopathy in an advanced HIV patient following remote febrile illness in Bihar; ruled out by preserved baseline organ function and absence of visceral cytopenias.",
+      "quote": "Routine blood and urine examination did not reveal any abnormalities."
+    },
+    {
+      "candidate": "Lepromatous leprosy (Hansen's disease)",
+      "rule_out_reason": "A leading differential for disseminated nodular and plaque lesions on the face and extremities in an endemic area; excluded when giemsa-stained smear revealed intracellular amastigotes rather than acid-fast Mycobacterium leprae bacilli.",
+      "quote": "Slit skin smear with giemsa stain revealed abundant intra- and extracellular leishman donovan bodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Dermal slit skin smear and histopathological examination of the back lesion biopsy demonstrated a lymphohistiocytic infiltrate packed with abundant intracellular and extracellular Leishman-Donovan (LD) bodies.",
+      "quote": "Skin biopsy was taken from lesions on back, which shows dermal infiltrate composed of lymphocytes and histiocytes with numerous intracytoplasmic leishman donovan bodies."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "A case of post-kala-azar dermal leishmaniasis (PKDL) presenting with disseminated nodular lesions, cervical lymphadenopathy, and constitutional symptoms in an HIV-coinfected patient with a CD4 count of 210/\u00b5L."
+}

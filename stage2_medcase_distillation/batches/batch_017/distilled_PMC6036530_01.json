@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6036530_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A previously healthy 30-year-old female experiences sudden, unexpected death. External postmortem examination shows no external trauma, cyanosis, or mechanical asphyxia. Gross internal dissection reveals massive intraluminal cysts embolizing to the right heart and pulmonary trunk causing fatal saddle embolization, along with extensive multiorgan abdominal cysts. The central diagnostic dilemma is differentiating thromboembolic saddle pulmonary embolism, acute toxic overdose, or acute coronary syndrome from mechanical vascular occlusion caused by an unrecognized parasitic zoonosis.\n2. Admission Breakpoint: Concludes immediately after external postmortem triage examination and gross macroscopic postmortem dissection of the cardiovascular, pulmonary, and abdominal structures, strictly prior to toxicology panel results and definitive histopathological analysis of the cyst walls.\n3. Differential Distinctions: Coronary thrombosis and acute myocardial infarction are excluded by patent coronaries and absence of cardiac ischemia or hypertrophy. Acute poisoning or drug overdose is excluded by negative toxicology screens in multiple fluids and tissues. Massive thromboembolic pulmonary embolism is excluded by the absence of deep vein thrombosis and the gross identification of intact fluid-filled spheres rather than fibrinous thrombi. Echinococcosis is confirmed by histopathology demonstrating characteristic laminated membranes with hooklets and scolices.",
+  "case_prompt": "A 30-year-old, well-nourished, well-developed female is brought to the medical examiner's facility for forensic evaluation following sudden, unexpected death. Past surgical history is notable for a remote right nephrectomy secondary to a motor vehicle accident. On external postmortem examination, there is normal hypostasis in dependent posterior regions and complete rigor mortis. There is no peripheral edema, cyanosis, congestion, abrasion, or contusion. The scalp, skull, spine, trachea, and larynx show no fractures, mechanical trauma, or hemorrhage.\n\nInternal gross examination reveals a 300-gram heart with patent coronary arteries, intact valves, and absence of myocardial fibrosis, hyperemia, hypertrophy, or intracardiac rupture. A dilated vein is observed on the pleural surface of the left lung. Upon opening the great vessels, multiple well-defined, bubble-shaped, round cystic structures measuring 3 cm in diameter covered by shiny white membranes rapidly emerge from the inferior vena cava and right cardiac chambers. Several identical cysts are found lodged within the main pulmonary arteries, forming saddle emboli. The lungs weigh 300 grams with congested parenchyma and mild-to-moderate alveolar edema. The liver weighs 900 grams with a coarse capsule, dense perihepatic adhesions, parenchymal congestion with a nutmeg appearance, and multiple cysts throughout the liver that communicate with the inferior vena cava. Multiple similar cysts are noted in the peritoneal cavity, gallbladder bed, and spleen. The left kidney contains two small 1-cm simple cysts containing clear yellow fluid, with normal renal cortex and medulla. The stomach and intestines contain ingested food with intact mucosa. Brain parenchyma is grossly unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute myocardial infarction / Coronary artery thrombosis",
+      "rule_out_reason": "Gross examination of the heart demonstrated patent coronary arteries without atheroma or thrombus, intact valves, and no histological or gross signs of myocardial hyperemia, ischemia, fibrosis, or hypertrophy.",
+      "quote": "The heart was 300 grams in weight, appeared normal without any ruptured cyst in the chambers. Fibrosis, hyperemia, or any sign of infarction or hypertrophy weren't detected. Valves appeared intact. Coronary arteries were patent."
+    },
+    {
+      "candidate": "Acute poisoning / Toxic ingestion / Narcotic overdose",
+      "rule_out_reason": "Multi-matrix postmortem toxicology screens for alcohol, narcotics, and other therapeutic or illicit substances across vitreous humor, gastric contents, urine, liver, and bile were entirely negative.",
+      "quote": "Toxicological samples from vitreous, gastric content, urine, liver, and bile were obtained, analyzed, and reported negative for Alcohol (by GC-MS on vitreous), narcotic and other drugs (by TLC on gastric content, urine, liver, and bile)."
+    },
+    {
+      "candidate": "Thromboembolic saddle pulmonary embolism",
+      "rule_out_reason": "The obstructive intravascular masses causing saddle obstruction in the pulmonary arteries and right heart were not composed of fibrinous blood thrombi, but rather multiple intact, fluid-filled membranous cysts originating from the inferior vena cava.",
+      "quote": "While cutting large arteries and large veins of the heart, multiple cysts (well defined, bubble shaped, round objects covered by shiny white membrane) 3 cm in diameter started to emerge rapidly and were extracted from inferior Vena Cava vein and right chambers of the heart... There were also several cysts in the pulmonary artery, which formed saddle emboli."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Hydatid cyst embolization)",
+      "rule_out_reason": "Histopathological examination of the excised cystic emboli and hepatic cyst walls definitively identified the characteristic acellular laminated membrane containing viable protoscolices and hooklets, establishing hepatic hydatid disease with vascular rupture into the inferior vena cava and catastrophic pulmonary saddle embolization as the cause of sudden cardiac arrest.",
+      "quote": "Histopathology study of liver and lung cyst samples revealed the cyst had a white thin fibrous membrane, which contained a clear fluid and some grain like particles laminated membrane of hydatid cyst with scolices and hooklets."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of an atypical fatal presentation of Echinococcus granulosus presenting as acute saddle pulmonary embolization and cardiac arrest. Case prompt strictly stops prior to toxicology and histopathology, maintaining complete source fidelity without pathogen spoilers."
+}

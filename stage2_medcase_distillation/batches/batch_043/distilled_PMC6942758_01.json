@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6942758_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 40-year-old female presents with vague chronic flank pain and acute fever, found to have multi-organ cystic involvement spanning the liver, lungs, and kidney. The primary challenge involves distinguishing disseminated parasitic cystic disease from congenital polycystic organ disease or pyogenic visceral abscesses, alongside recognizing acute secondary bacterial superinfection of a solitary giant renal cyst.\n2. Admission Breakpoint: Admission to the hospital with acute fever, fatigue, lumbar tenderness, AST elevation, and contrast CT demonstrating three left lung cysts, eight liver cysts, and a solitary 6.6 cm left renal cyst, prior to indirect hemagglutination serological titer confirmation and surgical laparoscopy.\n3. Differential Distinctions: Polycystic kidney and liver disease (such as autosomal dominant polycystic kidney disease) typically presents with innumerable bilateral renal and hepatic cysts without pulmonary involvement, whereas this patient had isolated unilateral solitary renal cyst with distinct round cysts across three separate visceral compartments. Pyogenic liver and renal abscesses present with acute fever, marked leukocytosis, and irregular thick-walled fluid collections, whereas these lesions were well-defined, thin-walled, chronic cysts, one of which had undergone secondary infection. High-titer indirect hemagglutination and intraoperative demonstration of parasitic germinal layers establish echinococcosis.",
+  "case_prompt": "A 40-year-old Caucasian female presented to the hospital with a one-year history of vague discomfort in the right upper quadrant and left flank, complicated by acute fatigue and fever over the past ten days. Her medical history was notable for multiple visceral cystic lesions in the liver and lungs alongside a solitary renal cyst identified three months earlier, for which medical management had been initiated. On physical examination, she was febrile; abdominal examination revealed hepatomegaly and marked left lumbar tenderness to palpation. Routine laboratory tests were within normal limits except for an elevated aspartate aminotransferase (AST) of 92 U/L. Computed tomography (CT) of the chest, abdomen, and pelvis revealed three distinct well-circumscribed cystic lesions in the left lung (measuring 3.0 cm, 1.3 cm, and 1.0 cm in diameter), eight discrete cysts of variable sizes distributed throughout the hepatic parenchyma (the largest measuring 4.0 cm, with one centrally located), and a large solitary cyst in the left kidney measuring 6.6 cm in diameter.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Polycystic kidney and liver disease (Autosomal dominant polycystic disease)",
+      "rule_out_reason": "Considered because simultaneous hepatic and renal cystic lesions can represent adult polycystic disease; however, congenital polycystic disease involves innumerable diffuse bilateral renal parenchymal cysts rather than an isolated unilateral renal cyst, and does not cause coexisting discrete pulmonary cysts.",
+      "quote": "Her computed tomography (CT) scan revealed (see Figure 1) three cysts with variable diameters (3 cm, 1.3 cm, and 1 cm) in the left lung and eight cysts of variable sizes in the liver... in addition to a solitary cyst in the left kidney measuring 6.6 cm in diameter."
+    },
+    {
+      "candidate": "Pyogenic bacterial abscesses of the liver and kidney",
+      "rule_out_reason": "Considered given acute fever, left flank tenderness, and AST elevation; however, the multi-organ cystic architecture was longstanding (one-year history), well-circumscribed, and systemic blood counts remained normal outside of localized cyst superinfection.",
+      "quote": "one-year history of vague abdominal pain in her right upper quadrant and left flank. Her chief complaint was fatigue and fever for the past ten days... Other blood tests were within normal limits except for elevated AST (92 U/L)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The multi-organ distribution across pulmonary, hepatic, and renal parenchyma, corroborated by an extremely high indirect hemagglutination titer (1:16,384) and confirmed intraoperatively during laparoscopic decompression by the presence of a purulent superinfected cyst and excision of the characteristic germinal membranes.",
+      "quote": "The serologic test for hydatid cysts (indirect hemagglutination test) was positive with a titer of 1 : 16384... A large infected hydatid cyst was found in the left kidney (see Figure 2); it was punctured, and the purulent content was aspirated. The remaining cavity was well irrigated, and the entire germinal layer was removed."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at admission imaging before hemagglutination titers and laparoscopic intervention. Case prompt free of pathogen names. Verbatim quotes match article."
+}

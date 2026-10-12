@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3523429_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: The patient is a 52-year-old renal transplant recipient maintained on chronic double immunosuppressive therapy (mycophenolate mofetil and cyclosporine) who presents with a slowly expanding, indurated nasal ulcer with elevated borders of 14 months' duration. The central clinical complexity is distinguishing between an opportunistic/endemic protozoal skin infection and a cutaneous malignancy (such as basal cell carcinoma), or recognizing their co-occurrence. All five members of her household had contracted the endemic infection, and her lesion originally started as a proven cutaneous leishmaniasis plaque; however, after 20 sessions of intralesional meglumine antimoniate (Glucantime) without resolution, surgical excision demonstrated a basal cell carcinoma arising directly within the chronic leishmanial ulcer bed.\n\n2. Admission Breakpoint: The admission breakpoint occurs upon clinical dermatologic evaluation of the 3x3 cm indurated nasal ulcer in the clinic, noting her renal transplant history, immunosuppressive medications, and household exposure, strictly prior to repeating confirmatory smear examinations, the 20-week course of intralesional therapy, or surgical excision histopathology.\n\n3. Differential Distinctions:\n- De Novo Basal Cell Carcinoma without antecedent infection: Typical presentation for an immunosuppressed transplant recipient with a chronic pearly/indurated ulcer on the nose; ruled out as an isolated primary entity because the initial lesion arose from a proven protozoal infection with family clustering, which subsequently acted as a nidus for malignant transformation.\n- Actinic Keratosis with Malignant Transformation: Common post-transplant solar neoplasia; ruled out clinically by skin phototype IV and complete absence of actinic keratoses on examination.\n- Non-leishmanial Deep Fungal / Mycobacterial Ulceration: Considered in an immunosuppressed solid-organ transplant patient; excluded by direct microscopy demonstrating characteristic leishmania amastigotes.",
+  "case_prompt": "A 52-year-old woman residing in Isfahan, Iran, presents to a specialized outpatient clinic with a chronic, solitary ulcer on the tip of her nose that has been slowly enlarging over a 14-month period. The lesion originally began as a small, discrete papule before progressively expanding into an indurated plaque. Notably, all five other members of her household have a documented history of contracting similar endemic ulcerating cutaneous lesions.\n\nHer medical history is significant for end-stage renal failure diagnosed 11 years prior, leading to a renal allograft transplantation 7 years ago. She has comorbid hypertension and hyperlipidemia. Her chronic immunosuppressive regimen consists of daily oral mycophenolate mofetil (2 g daily) and cyclosporine (100 mg daily).\n\nOn physical examination, her skin phototype is determined as type IV, and no actinic keratoses are identified on sun-exposed areas. Dermatologic inspection of the face reveals a 3 x 3 cm indurated ulcer with elevated, rolled borders localized to the tip of her nose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary De Novo Basal Cell Carcinoma",
+      "rule_out_reason": "Considered due to the elevated, indurated borders on the nose in an immunosuppressed organ transplant recipient. While BCC was ultimately found on surgical pathology following failed intralesional antimony injections, the underlying primary chronic lesion originated from a confirmed endemic protozoal ulceration with high familial clustering.",
+      "quote": "The diagnosis of leishmaniasis was confirmed with a positive smear of the lesion showing leishmania bodies about 1 year before. All five members of her family had had a history of proven leishmaniasis."
+    },
+    {
+      "candidate": "Actinic Keratosis with Malignant Degeneration",
+      "rule_out_reason": "Considered because chronic immunosuppression after renal transplantation dramatically increases the risk of cutaneous solar keratoses transforming into skin malignancies. Excluded clinically by the complete absence of precursor actinic keratoses and Fitzpatrick skin type IV.",
+      "quote": "Her skin type was determined as IV in the skin examination. No actinic keratosis was present."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The established parasitic diagnosis was confirmed by a positive lesion smear demonstrating Leishmania bodies in a patient whose entire family had proven infection, culminating in superimposition of a basal cell carcinoma within the chronic refractory scar tissue.",
+      "quote": "The diagnosis of leishmaniasis was confirmed with a positive smear of the lesion showing leishmania bodies about 1 year before. All five members of her family had had a history of proven leishmaniasis. In the past medical history, the patient was a renal failure case since 11 years before and received a renal transplant 4 years after the diagnosis of renal failure."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Presentation captures chronic nasal ulcer, immunosuppression, and family endemic exposure prior to confirmatory smear / surgical excision. Direct verbatim quotes substantiate differentials and pivot."
+}

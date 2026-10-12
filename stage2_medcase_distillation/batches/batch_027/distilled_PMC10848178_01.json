@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10848178_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 49-year-old man from rural India presents with acute-on-chronic small bowel obstruction caused by multiple jejunal and ileal strictures. The principal diagnostic challenge lies in distinguishing fibrostenosing Crohn's disease from intestinal tuberculosis, both of which cause segmental strictures, skip lesions, and bowel obstruction in this demographic.\n2. Admission Breakpoint: Emergency presentation and diagnostic imaging triage, consisting of clinical examination, erect abdominal radiograph demonstrating small bowel obstruction, and contrast-enhanced abdominal CT showing jejunoileal strictures and necrotic lymphadenopathy, immediately prior to surgical exploratory laparotomy and histopathologic examination.\n3. Differential Distinctions: Crohn's disease typically presents with skip lesions and transmural inflammation but rarely exhibits necrotic mesenteric lymph nodes; the presence of mesenteric and retroperitoneal lymphadenopathy with central caseous necrosis strongly favors intestinal tuberculosis, confirmed by caseating transmural granulomas with acid-fast bacilli.",
+  "case_prompt": "A 49-year-old man was admitted to a tertiary care hospital serving a rural population in central India. He presented with persistent abdominal pain and progressive abdominal distension of one and a half months' duration. He additionally reported obstinate constipation persisting over the preceding two months. He had no prior history of abdominal surgeries.\n\nOn physical examination, the patient appeared distressed. The abdomen was rigid, distended, and diffusely tender to palpation, with involuntary abdominal guarding present. Bowel sounds were abnormal.\n\nAn erect plain abdominal radiograph revealed dilated loops of the small intestine with multiple air-fluid levels consistent with mechanical small bowel obstruction. A contrast-enhanced computed tomography (CT) scan of the abdomen was performed, demonstrating multiple luminal strictures involving the distal jejunum and ileum that caused proximal small intestine obstruction. In addition, the scan revealed prominent mesenteric and retroperitoneal lymphadenopathy with low-attenuation central necrosis, accompanied by mild to moderate peritoneal ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Crohn's Disease",
+      "rule_out_reason": "Crohn's disease classically manifests with segmental transmural inflammation, skip lesions, and fibrostenosing strictures of the small bowel, but the presence of centrally necrotic retroperitoneal and mesenteric lymph nodes and caseating granulomas on histopathology favored an infectious mycobacterial etiology.",
+      "quote": "The radiological findings favored an infectious or inflammatory etiology with a more likely possibility of intestinal TB than Crohn's disease."
+    },
+    {
+      "candidate": "Gastrointestinal Malignancy / Small Bowel Adenocarcinoma or Lymphoma",
+      "rule_out_reason": "Small intestine obstruction associated with multifocal strictures and extensive retroperitoneal adenopathy in a middle-aged adult raises strong concern for gastrointestinal malignancy or lymphoma, but central nodal necrosis, multiple serosal tubercles, and lack of neoplastic cellular atypia ruled out carcinoma.",
+      "quote": "Mesenteric and retroperitoneal lymphadenopathy with central necrosis was observed along with mild to moderate ascites (Figures 2, 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast CT demonstration of jejunoileal strictures with necrotic mesenteric and retroperitoneal adenopathy followed by resection revealing mucosal ulceration, transmural caseating granulomas extending to the serosa, and acid-fast bacilli on Ziehl-Neelsen staining established the diagnosis of intestinal tuberculosis.",
+      "quote": "Multiple caseating granulomas were identified spread across the mucosa, submucosa extending to serosa along with extensive fibrosis. The Ziehl-Neelsen (ZN) staining highlighted acid-fast bacilli (AFB)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strictly compliant with Stanford MedCaseReasoning methodology. Case prompt ends cleanly at the radiological triage breakpoint (CT scan showing strictures and necrotic nodes) before surgical resection. Verbatim quotes match article text."
+}

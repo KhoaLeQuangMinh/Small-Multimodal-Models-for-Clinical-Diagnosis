@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9880153_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 55-year-old man presented with a one-month history of debilitating high-grade fevers reaching 41°C, pancytopenia, hepatosplenomegaly, elevated pancreatic enzymes, and an isolated positive Epstein-Barr virus result refractory to broad-spectrum beta-lactam antibiotics. The constellation of hyperpyrexia, cytopenias, organomegaly, and viral seropositivity creates strong clinical confusion with acute EBV-induced hemophagocytic lymphohistiocytosis (HLH) or recurrent severe pancreatitis.\n2. Admission Breakpoint: The admission breakpoint is established on Day 1 of admission, incorporating the presenting fever, hepatosplenomegaly on ultrasound, baseline pancytopenia, pancreatic enzyme elevations, and initial viral screening, strictly prior to bone marrow aspiration for hemophagocytosis, metagenomic next-generation sequencing, and rK39 testing.\n3. Differential Distinctions: Acute viral syndrome or primary EBV infection presents with fever, organomegaly, and cytopenias, but rarely produces chronic unremitting hyperpyrexia up to 41°C across a month without self-resolution or alternative secondary triggers. Primary or recurrent pancreatitis explains epigastric enzyme elevation but does not account for profound progressive trilineage pancytopenia or persistent fevers. Visceral leishmaniasis is a classic secondary trigger of hemophagocytosis and profound reticuloendothelial inflammation in endemic zones.",
+  "case_prompt": "A 55-year-old man presented to the hospital with a one-month history of recurrent, debilitating high-grade fevers associated with rigors and shaking chills. The fevers were refractory to outpatient management, with temperatures spiking up to 41.0°C. Prior to transfer, he had received an extended course of intravenous piperacillin-tazobactam at another hospital without clinical improvement or defervescence. His medical history was notable for prior episodes of pancreatitis and septicemia; he had no significant family history.\n\nOn physical examination at admission, the patient appeared acutely ill with severe febrile symptoms. His body temperature was 39.6°C. Abdominal examination revealed palpable fullness in the upper quadrants with mild epigastric tenderness; there were no peritoneal signs or jaundice.\n\nBaseline laboratory testing revealed marked trilineage pancytopenia, with concurrent reductions in white blood cell count, red blood cell count, hemoglobin, and platelet count. Serum amylase and lipase levels were notably elevated. Initial infectious screening revealed a positive Epstein-Barr virus (EBV) antibody test, while comprehensive testing for other common blood and respiratory pathogens was negative. An abdominal color Doppler ultrasound confirmed marked hepatosplenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial sepsis / Recurrent pancreatitis",
+      "rule_out_reason": "Considered given the patient's prior medical history and elevated amylase and lipase levels, but ruled out as the primary etiology by complete lack of response to broad-spectrum intravenous piperacillin-tazobactam and the absence of bacterial isolates on routine cultures.",
+      "quote": "Before admission, he had been treated with piperacillin sodium/tazobactam in the other hospital, but without any improvement. Upon entry, he told a history of pancreatitis and septicemia... Increased amylase and lipase levels were noticed"
+    },
+    {
+      "candidate": "Epstein-Barr virus (EBV)-driven lymphoproliferative disorder / Primary EBV infection",
+      "rule_out_reason": "Considered due to the positive EBV finding alongside fever, cytopenias, and hepatosplenomegaly, but an initial bone marrow evaluation showed no pathogenic microorganisms or atypical lymphoproliferation, and the underlying protozoal trigger was subsequently uncovered.",
+      "quote": "A positive result was noted in the Epstein-Barr virus (EBV), but no other blood or respiratory tract pathogen was detected... active bone marrow hyperplasia and hemophagocytosis were seen in bone marrow aspiration smears, but no pathogenic microorganism was found."
+    },
+    {
+      "candidate": "Genetic / Primary Hemophagocytic Lymphohistiocytosis",
+      "rule_out_reason": "Considered when active hemophagocytosis was identified on marrow aspiration, but excluded by molecular genetic testing showing no pathogenic mutations associated with familial hemophagocytic syndromes.",
+      "quote": "active bone marrow hyperplasia and hemophagocytosis were seen in bone marrow aspiration smears... the results of the analysis on gene mutation in hemophagocytic syndrome manifested no disease-causing mutation"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing of plasma cell-free DNA detected specific sequences of Leishmania donovani, prompting targeted review of the bone marrow aspirate which revealed protozoal amastigotes, confirmed by positive rK39 serology.",
+      "quote": "peripheral blood mNGS was performed, and 606 reads of Leishmania genus-specific sequence and 15 reads of L. donovani-specific sequence were detected in mcfDNA... the bone marrow aspiration smear was re-examined, and ten suspected Leishmania were seen... a positive outcome of the rK39 test confirmed Leishmania's existence."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation restricted to Day 1 findings (febrile state, pancytopenia, hepatosplenomegaly, pancreatitis markers, EBV), strictly excluding bone marrow hemophagocytosis, mNGS, and rK39 results."
+}

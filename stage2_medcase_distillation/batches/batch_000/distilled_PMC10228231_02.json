@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10228231_02",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 47-year-old neurosurgical patient born in Guinea-Bissau presents in acute septic shock with bilateral pulmonary infiltrates and seizures shortly after craniectomy while on prolonged high-dose dexamethasone (12 mg daily). The clinical picture mimics conventional hospital-acquired bacterial pneumonia and polymicrobial sepsis, especially with absent eosinophilia, masking an underlying catastrophic helminthic hyperinfection syndrome.\n2. Admission Breakpoint: Admission triage to the ICU ends following initial clinical decompensation with fever, hypotension, hypoxemic respiratory failure, and bilateral infiltrates on chest radiography, immediately prior to sputum/urine microscopic examinations and blood culture results.\n3. Differential Distinctions: Conventional hospital-acquired pneumonia is distinguished by the fact that bacterial bacteremia and pneumonitis reflect enteric translocation driven by massive nematode migration; CNS infection is ruled out by normal CSF parameters; definitive diagnosis is made by demonstrating rhabditiform/filariform larvae in respiratory secretions and urine.",
+  "case_prompt": "A 47-year-old man was admitted to the intensive care unit in acute septic shock and worsening respiratory failure. He had presented approximately seven weeks earlier with severe headaches secondary to a right temporal space-occupying lesion with prominent vasogenic edema, for which he was placed on high-dose dexamethasone (12 mg daily). He subsequently underwent elective craniectomy with partial tumor resection. Four days post-operatively, he experienced sudden generalized tonic-clonic seizures with an unremarkable repeat non-contrast head CT. Six days later (post-operative day 10), he developed acute fevers, dyspnea, and profound hypotension.\n\nThe patient was born in Guinea-Bissau and had resided for extended periods in both Guinea-Bissau and Portugal, working in private security. His past medical history was notable for resected colon adenocarcinoma in remission following hemicolectomy and adjuvant chemotherapy, chronic kidney disease following prior traumatic nephrectomy, and resolved hepatitis B infection.\n\nOn physical examination at deterioration, the patient was febrile, hypotensive, and in marked respiratory distress with diffuse rales bilaterally. He required immediate endotracheal intubation, mechanical ventilation, and aggressive vasopressor support. Cutaneous examination showed no rash or petechiae. Initial chest radiography demonstrated diffuse bilateral pulmonary infiltrates. Renal function deteriorated rapidly with oligoanuria, prompting initiation of continuous renal replacement therapy. Peripheral blood testing demonstrated leukocytosis without peripheral eosinophilia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Hospital-Acquired Bacterial Pneumonia and Septic Shock",
+      "rule_out_reason": "Initially suspected given the post-operative timing, bilateral lung infiltrates, and identification of enteric bacteria in the bloodstream; however, gram-negative enteric bacteremia was merely secondary to helminthic larval migration compromising the gastrointestinal mucosa under corticosteroid immunosuppression.",
+      "quote": "The urine pneumococcal antigen test was positive and Klebsiella pneumoniae was isolated in blood cultures."
+    },
+    {
+      "candidate": "Post-operative Bacterial Meningitis / CNS Infection",
+      "rule_out_reason": "Considered because of recent intracranial tumor resection, sudden post-operative seizures, and subsequent systemic septic collapse; however, cerebrospinal fluid evaluation was entirely normal without pleocytosis or micro-organisms.",
+      "quote": "Lumbar puncture was performed and revealed a normal CSF analysis (<1 cells/muL, protein 36 mg/dL, glucose CSF/serum ratio >50%), and no microorganisms were identified using indirect visualization and culture."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of sputum and urine identified nematode larvae, confirming disseminated strongyloidiasis and hyperinfection syndrome triggered by prolonged corticosteroid therapy in a host with prior endemic exposure.",
+      "quote": "The microscopic direct examination of the sputum (and latter urine) revealed S. stercoralis larvae (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Confirmatory larval microscopy and specific pathogens are withheld from case_prompt. Direct verbatim quotes ground all differential candidates."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4901839_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 4-year-old boy from a rural area with a history of recurrent pulmonary infections since infancy, a family history of an older brother dying of disseminated granulomatous disease, and empiric anti-tuberculous treatment presents with progressive headache, vomiting, emaciation, left hemiparesis, and multiple ring-enhancing brain lesions. The diagnostic challenge is unmasking a dual opportunistic co-infection\u2014invasive cerebral aspergillosis causing focal neurological deficits alongside pulmonary tuberculosis\u2014and identifying the underlying primary immunodeficiency (chronic granulomatous disease).\n2. Admission Breakpoint: The breakpoint is reached after head CT demonstrates multiple ring-enhancing lesions in the left parietooccipital region with mass effect, and initial triage laboratory studies show leukocytosis and elevated ESR, immediately prior to neurosurgical craniotomy/abscess excision and tracheal aspirate PCR.\n3. Differential Distinctions: Isolated central nervous system tuberculomas / tuberculous brain abscess (initially suspected due to pulmonary symptoms, family history, and ring-enhancing lesions, but surgical excision of the brain abscesses revealed invasive fungal hyphae culture-proven as Aspergillus); pyogenic bacterial brain abscess (common cause of ring-enhancing lesions, but excluded by histopathology showing fungal granulomas); cerebral aspergillosis and pulmonary tuberculosis co-infection in chronic granulomatous disease (co-occurrence confirmed by fungal hyphae in brain abscess and positive Mycobacterium tuberculosis PCR in tracheal aspirates, alongside negative nitroblue tetrazolium test).",
+  "case_prompt": "A 4-year-old boy from a rural area is brought to the emergency department with fever, headache, and weight loss of 4 months duration, which acutely worsened over the past week. His family reports that the child has been sickly since infancy, experiencing repeated severe respiratory infections requiring multiple hospitalizations. Over the past month, he developed persistent diffuse headaches, nausea, vomiting, and anorexia, alongside intermittent low-grade fevers. He had been treated with multiple courses of antibiotics for chest infections and was empirically started on multidrug antimycobacterial therapy 2 months prior after an external magnetic resonance imaging (MRI) scan suggested meningeal enhancement and small ring-enhancing lesions. An older brother had died at age 8 from a fatal disseminated infectious illness. Physical examination reveals an emaciated, listless, and markedly irritable child with left-sided hemiparesis involving both the upper and lower extremities. Urgent non-contrast and contrast-enhanced head computed tomography (CT) reveals multiple ring-enhancing lesions in the left parietooccipital region with significant surrounding vasogenic edema and mass effect. Laboratory studies show a white blood cell count of 17,900/\u00b5L (77.4% neutrophils, 15.7% lymphocytes), hemoglobin of 10.9 g/dL, and an erythrocyte sedimentation rate (ESR) of 88 mm/h.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated central nervous system tuberculomas / tuberculous meningitis",
+      "rule_out_reason": "Considered the initial presumptive diagnosis given chronic fever, recurrent chest infections, brother's fatal disseminated disease, and ring-enhancing intracranial lesions, prompting empiric therapy. However, craniotomy and histopathological examination of the excised brain abscesses revealed fungal hyphae rather than tuberculous abscesses.",
+      "quote": "Physicians in his locality who had treated him with antibiotic courses for chest infections started him on antituberculosis (ATT) drugs 2 months back after an MRI, which suggested meningeal enhancement and small ring enhancing lesions."
+    },
+    {
+      "candidate": "Pyogenic bacterial brain abscess",
+      "rule_out_reason": "Considered due to the marked leukocytosis (17,900/\u00b5L), elevated ESR, purulent brain collection, and acute neurological decline with focal weakness. Ruled out by histopathology and microbiological cultures of the excised abscess wall, which identified fungal hyphae and grew Aspergillus without pyogenic bacteria.",
+      "quote": "neuronavigation-guided craniotomy for the excision of these abscesses along with the walls, which contained thick purulent material. Microscopic examination revealed granulomas with fugal hyphae [Figure 2a and b]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neurosurgical excision of the brain abscesses confirmed Aspergillus hyphae, while tracheal aspirate testing proved positive for Mycobacterium tuberculosis by PCR assay; subsequent negative nitroblue-tetrazolium (NBT) testing diagnosed underlying chronic granulomatous disease (CGD) facilitating dual opportunistic fungal and mycobacterial infection.",
+      "quote": "Considering his chronic cough and repeated chest infections, we obtained a tracheal aspirate for examination, which was positive for Mycobacterium tuberculosis polymerase chain reaction assay. Considering the history, we screened the child for immune deficiency disorders. Nitroblue-tetrazolium (NBT) was found to be negative, which established the diagnosis of CGD."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4901839_01 following Stanford MedCaseReasoning guidelines. The case prompt preserves the complex diagnostic question of pediatric ring-enhancing intracranial lesions and recurrent pulmonary infections without revealing histology or PCR results."
+}

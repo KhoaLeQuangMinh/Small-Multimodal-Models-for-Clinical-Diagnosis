@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6748207_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 87-year-old Chinese immigrant presenting with productive cough, dyspnea, and multifocal infiltrates on chest imaging, who tests positive for Streptococcus pneumoniae urinary antigen and is initially managed as bacterial community-acquired pneumonia. Rapid respiratory deterioration despite appropriate beta-lactam and glycopeptide coverage reveals lethal occult coinfection with active pulmonary tuberculosis.\n2. Admission Breakpoint: Emergency triage following physical examination, baseline laboratory evaluation (WBC 10.5 x 10^3/µL, procalcitonin 0.54 ng/mL, positive pneumococcal urine antigen, negative viral panel/Legionella), chest radiograph, and non-contrast chest CT showing apical/multilobar opacities and a calcified granuloma, prior to subsequent clinical deterioration, diuresis, and ICU bronchoscopy.\n3. Differential Distinctions: Isolated pneumococcal community-acquired pneumonia was confirmed by urine antigen, but failure to improve on ceftriaxone and progressive multilobar opacities indicated secondary infection; acute decompensated heart failure was considered due to ischemic cardiomyopathy and bilateral crackles, but aggressive diuresis did not halt respiratory decline; active pulmonary tuberculosis explained apical consolidation and calcified granuloma in an immigrant from an endemic area, definitively diagnosed by post-intubation BAL.",
+  "case_prompt": "An 87-year-old man of Chinese descent with a past medical history of diabetes mellitus and ischemic cardiomyopathy presented with a 1-week history of productive cough with green sputum and dyspnea. He denied fevers, chills, night sweats, or weight loss. He had no recent travel or known sick contacts, with his last international travel occurring 40 years prior.\n\nOn presentation, he was afebrile and hemodynamically stable, with a blood pressure of 123/74 mmHg, heart rate of 71 beats/minute, and oxygen saturation of 97% on ambient air. Physical examination was notable for non-labored breathing at rest with scattered bilateral crackles throughout both lung fields. Initial laboratory testing revealed a white blood cell count of 10.5 x 10^3/µL, a procalcitonin level of 0.54 ng/mL, and a positive urine antigen for Streptococcus pneumoniae. Respiratory viral panel, Legionella urinary antigen, and blood cultures were negative. An admission chest radiograph showed multifocal pneumonia. A non-contrast computed tomography (CT) scan of the chest confirmed multilobar opacities, including consolidations with bronchiectasis in the left apex and upper lobe, a right upper lobe consolidation with ground-glass opacities, and a small calcified granuloma in the right lower lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Streptococcus pneumoniae community-acquired pneumonia",
+      "rule_out_reason": "Initially diagnosed based on positive pneumococcal urinary antigen, but the patient progressively deteriorated with somnolence and hypoxemia despite escalating ceftriaxone and adding vancomycin.",
+      "quote": "The patient was started on ceftriaxone 1 gram every 24 hours for empiric coverage of Streptococcus pneumoniae. On hospital day 4, he became increasingly somnolent and hypoxic, requiring intermittent nasal canula despite four doses of ceftriaxone."
+    },
+    {
+      "candidate": "Acute decompensated heart failure / cardiogenic pulmonary edema",
+      "rule_out_reason": "Given his history of ischemic cardiomyopathy and worsening bilateral pulmonary opacities, cardiogenic pulmonary edema was considered, but aggressive diuresis did not improve his oxygenation or clinical trajectory.",
+      "quote": "At this point, heart failure with volume overload and acute respiratory distress syndrome were considered. Aggressive diuresis was started, and antibiotics were escalated to piperacillin-tazobactam, azithromycin, and vancomycin."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Apical consolidations and a calcified granuloma in an immigrant from an endemic region represented unrecognized active tuberculosis coinfection; following acute decompensation, bronchoalveolar lavage demonstrated acid-fast bacilli that speciated as Mycobacterium tuberculosis.",
+      "quote": "Subsequently, BAL studies returned positive for acid-fast bacilli which speciated as Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops prior to hospital day 4 deterioration and BAL analysis. Zero target disease or pathogen leaks. Verbatim quotes corroborate differentials."
+}

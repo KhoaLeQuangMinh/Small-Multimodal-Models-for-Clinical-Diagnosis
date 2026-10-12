@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12162303_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 69-year-old male farmer presents with acute fever and rapidly progresses to catastrophic diffuse alveolar hemorrhage, refractory hypoxemia (P/F ratio 85), severe thrombocytopenia, and multiorgan failure requiring venovenous ECMO. The central tension is recognizing severe pulmonary leptospirosis (SPHL) mimicking typical bacterial community-acquired pneumonia with secondary ARDS, or an autoimmune pulmonary-renal syndrome, following exposure to poultry manure.\n2. Admission Breakpoint: Evaluation concludes upon transfer arrival and initial stabilization in the emergency intensive care unit (EICU), with ventilator parameters, hemodynamics, arterial blood gases, and admission biochemistry, immediately prior to ECMO cannulation, bronchoalveolar lavage, and metagenomic next-generation sequencing (mNGS).\n3. Differential Distinctions: Severe bacterial community-acquired pneumonia can cause acute respiratory failure and ARDS, but rarely causes catastrophic, rapidly fatal diffuse alveolar hemorrhage with profound thrombocytopenia and massive rhabdomyolysis in an agricultural host without identification of typical pyogenic bacteria on standard cultures. Autoimmune pulmonary-renal vasculitis (e.g. microscopic polyangiitis or anti-GBM disease) causes alveolar hemorrhage and nephritis, but does not explain procalcitonin >100 ng/mL, marked rhabdomyolysis (myoglobin >2000 ng/mL), or direct spirochetal detection. Severe pulmonary leptospirosis causes immune-mediated endothelial damage leading to extensive pulmonary capillary bleeding and multiorgan failure.",
+  "case_prompt": "A 69-year-old male farmer with no prior medical history was transferred to the emergency intensive care unit (EICU) due to rapidly progressive respiratory failure. Five days prior, he had developed high fever following occupational exposure to poultry manure while working on his farm. One day prior to transfer, he experienced acute dyspnea and hemoptysis, prompting admission to a community hospital where a chest computed tomography (CT) scan revealed pulmonary infection and interstitial changes. He was intubated and mechanically ventilated for acute respiratory failure, but his oxygenation deteriorated and bloody sputum was continuously aspirated from his airway, prompting emergent transfer 20 hours after intubation.\n\nUpon arrival at the EICU, the patient was in a sedated and analgesic state. His body temperature was 36.8°C, heart rate 138 beats per minute, respiratory rate 17 breaths per minute, and blood pressure 137/90 mmHg while receiving continuous norepinephrine infusion at 0.5 µg/kg/min. Oxygen saturation was 88% on volume-controlled mechanical ventilation (tidal volume 350 mL, FiO2 100%, PEEP 15 cmH2O). Physical examination revealed large amounts of fresh red bloody sputum aspirated from the airway and extensive moist rales throughout both lungs.\n\nArterial blood gas analysis revealed a PaO2/FiO2 ratio of 85 mmHg. Initial EICU laboratory results showed: platelet count 43 × 10^9/L, C-reactive protein (CRP) 213.74 mg/L, procalcitonin (PCT) >100 ng/mL, activated partial thromboplastin time (APTT) 36.8 s, serum myoglobin >2,000 ng/mL, creatinine 240 mg/dL, alanine aminotransferase (ALT) 111 U/L, and total bilirubin 70 µmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe bacterial community-acquired pneumonia with secondary ARDS",
+      "rule_out_reason": "Considered the primary working diagnosis at the referring facility; however, typical pyogenic pneumonia does not account for the rapid onset of massive, life-threatening diffuse alveolar hemorrhage with profound thrombocytopenia (43 × 10^9/L) and extreme rhabdomyolysis following agricultural exposure.",
+      "quote": "The primary diagnosis was severe pneumonia and acute respiratory failure, and the patient was placed on mechanical ventilation via endotracheal intubation."
+    },
+    {
+      "candidate": "Non-leptospiral septic shock with multiorgan failure",
+      "rule_out_reason": "Considered given extreme procalcitonin elevation (>100 ng/mL), vasopressor requirement, and hepatic and renal dysfunction; however, conventional blood and sputum bacterial cultures failed to identify common bacterial pathogens, and targeted sequencing revealed spirochetes.",
+      "quote": "The primary diagnosis included severe pneumonia, DAH, severe ARDS, septic shock, and hepatic and renal dysfunction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred when metagenomic next-generation sequencing (mNGS) of blood and bronchoalveolar lavage fluid confirmed Leptospira interrogans infection (coverage 1%, relative abundance 16.45%), establishing the diagnosis of severe pulmonary leptospirosis with diffuse alveolar hemorrhage.",
+      "quote": "Bronchoscopic alveolar lavage was performed, and both blood and lavage fluid were sent for mNGS testing. Unfractionated heparin (UFH) anticoagulation was initiated at the 5th hour of VV-ECMO operation. On day 3, mNGS confirmed Leptospira interrogans infection, with a coverage rate of 1% and a relative abundance of 16.45% (Figure 1D)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to ECMO cannulation, bronchoalveolar lavage, and mNGS. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

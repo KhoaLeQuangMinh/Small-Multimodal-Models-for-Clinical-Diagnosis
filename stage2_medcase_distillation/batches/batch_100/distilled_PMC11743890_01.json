@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11743890_01",
+  "disease": "Dengue, Malaria",
+  "think": "1. Core Clinical Tension: The patient presents with acute high-grade fever, chills, diaphoresis, and severe epigastric pain that escalates to diffuse abdominal pain with persistent vomiting. In a tropical setting, this acute febrile illness with predominant upper gastrointestinal complaints mimics acute gastroenteritis, peptic ulcer perforation, acute pancreatitis, or another acute surgical abdomen, while the unremarkable initial physical exam and normal baseline labs obscure a life-threatening co-infection by two distinct vector-borne pathogens.\n2. Admission Breakpoint: The breakpoint occurs at initial outpatient triage and subsequent readmission evaluation upon return to the regional hospital, incorporating the symptom chronology, high-grade fevers, and normal baseline laboratory investigations, but stopping strictly prior to the results of pathogen-specific rapid diagnostic testing, blood film microscopy, or serological assays.\n3. Differential Distinctions: Acute gastritis and peptic ulcer disease cause epigastric pain and vomiting but do not typically manifest with extreme cyclical pyrexia reaching 40 °C, rigors, and profuse diaphoresis. An acute surgical abdomen (such as appendicitis or acute pancreatitis) presents with worsening abdominal pain but usually shows localized peritoneal signs and leukocytosis or elevated pancreatic enzymes, whereas tropical co-infection produces profound constitutional symptoms with initially normal baseline laboratory tests before systemic microvascular or splenic complications ensue.",
+  "case_prompt": "A 28-year-old male presented to the outpatient clinic with a two-day history of fever, epigastric pain, nausea, vomiting, body aches, and profuse diaphoresis. On physical examination, he was noted to have high-grade fever, but the remainder of the examination was unremarkable with no localized abdominal peritonitis. Initial basic laboratory investigations were within normal reference ranges.\n\nFollowing initial evaluation, his gastrointestinal symptoms intensified with intractable vomiting, and his epigastric pain worsened, accompanied by chills and shaking rigors. Three days later, he presented to a regional referral hospital with marked disease progression. The reported symptom chronology included:\n- Day 1: Low-grade fever, mild epigastric pain, nausea, and vomiting.\n- Day 2: Persistent fever reaching 39 °C, severe epigastric pain, increased vomiting, and chills.\n- Day 3: Severe abdominal pain, complete anorexia, and high-grade fever of 40 °C.\n- Day 4: Diffuse severe abdominal pain and persistent pyrexia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Gastroenteritis / Peptic Ulcer Disease",
+      "rule_out_reason": "Considered given prominent epigastric discomfort, nausea, vomiting, and unremarkable initial physical exam, but excluded by the severity of the temperature spikes (up to 40 °C), profound rigors, diffuse myalgias, and progressive deterioration unresponsive to simple supportive measures.",
+      "quote": "A 28-year-old male patient presented to the outpatient clinic with a two-day history of fever, epigastric pain, nausea, vomiting, body aches, and sweating. Physical examination, despite high grade fever, was unremarkable."
+    },
+    {
+      "candidate": "Acute Surgical Abdomen (e.g., Perforated Peptic Ulcer or Acute Pancreatitis)",
+      "rule_out_reason": "Considered due to the rapid progression from focal epigastric pain to severe diffuse abdominal pain with complete anorexia and persistent vomiting, but initial baseline laboratory workup was within normal limits without localized signs on initial presentation.",
+      "quote": "Day 3: Severe abdominal pain, loss of appetite, and a fever of 40  C. Day 4: he presented with diffuse abdominal pain."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when specific diagnostic testing for tropical vector-borne pathogens returned simultaneously positive for both plasmodial infection and arboviral fever, confirming a severe concurrent co-infection responsible for the systemic hyperpyrexia, gastrointestinal crisis, and subsequent visceral risk.",
+      "quote": "Basic laboratory investigations were within the normal range except malaria and dengue fever testing returned positive and oral anti-malarial medication was started."
+    }
+  ],
+  "final_diagnosis": "Dengue, Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning. Admission breakpoint strictly maintained before disclosure of pathogen-specific diagnostic tests. Zero mentions of pathogens or disease names in case_prompt. Differential diagnoses and Diagnostic Pivot supported by verbatim quotes."
+}

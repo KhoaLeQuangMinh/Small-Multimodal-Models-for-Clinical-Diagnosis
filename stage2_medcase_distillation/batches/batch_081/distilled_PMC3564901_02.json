@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3564901_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 50-year-old man undergoing surveillance following prior treated parasitic disease is found to have a newly expanding 45 mm solitary mass in the right pulmonary apex on thoracic CT. The central diagnostic challenge is distinguishing an aggressive parasitic recurrence (alveolar echinococcosis) from a primary bronchogenic carcinoma (e.g., Pancoast or apical lung cancer) or metastatic malignancy, as well as clarifying subsequent musculoskeletal abnormalities during elective hip surgery.\n2. Admission Breakpoint: Admission evaluation concludes after follow-up physical examination, review of symptoms, and thoracic computed tomography detecting the right apical pulmonary mass, immediately prior to send-out serological assays (Em2, EmC ELISA, Western blot), bone histopathology from hip arthroplasty, and PET-CT imaging.\n3. Differential Distinctions: Bronchogenic carcinoma presents as a solitary expanding apical pulmonary lesion in older adults, but responded to long-term benzimidazole therapy with marked lesion regression and positive Echinococcus multilocularis serologies. Inflammatory osteoarthritis of the hip was suspected during arthroplasty when abnormal bone architecture was noticed, but bone histopathology lacked a typical parasitic germinal layer. Cystic echinococcosis (E. granulosus) produces well-defined cystic lesions rather than infiltrative solid pseudotumoral masses and has distinct serological Western blot banding patterns.",
+  "case_prompt": "A 50-year-old man undergoes surveillance thoracic imaging during clinical follow-up for previously treated hepatic disease. He reports feeling in relatively good health without acute cardiopulmonary symptoms.\n\nPhysical examination reveals a well-developed man with normal vital signs. Cardiopulmonary examination is unremarkable, with clear breath sounds bilaterally and no peripheral lymphadenopathy.\n\nThoracic computed tomography (CT) reveals a solitary 45 mm diameter mass located in the right pulmonary apex. Complete clinical and radiological staging examinations disclose no other lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary bronchogenic carcinoma / Solitary pulmonary metastasis",
+      "rule_out_reason": "A 45 mm solid-appearing apical pulmonary lesion in a middle-aged adult raised serious concern for primary lung malignancy, but the lesion demonstrated dramatic regression under antiparasitic therapy and correlated with specific parasitic serologies.",
+      "quote": "thoracic CT-scan showed AE recurrence, as a 45 mm in diameter-lesion in the right pulmonary apex (Figure 2)... In 1999, the size of the pulmonary lesion had markedly decreased (to 21 mm in diameter) and in 2000 serology (Em2 and EmC ELISA) was completely negative."
+    },
+    {
+      "candidate": "Inflammatory degenerative arthropathy / Non-parasitic bone pathology",
+      "rule_out_reason": "Abnormal bone structure discovered during elective hip arthroplasty raised concern for metastatic osseous parasitic involvement, but histological analysis did not confirm parasitic disease and favored inflammatory arthritis.",
+      "quote": "Because of an abnormal structure of the bone disclosed by the surgeon, a pathological examination was performed in Besancon University Hospital on bone sections. Despite abnormalities compatible with parasitic vesicles, formal AE diagnosis could not be ascertained since no typical germinal layer was observed; the inflammatory infiltrate could also be due to associated arthritis"
+    },
+    {
+      "candidate": "Cystic echinococcosis (Echinococcus granulosus)",
+      "rule_out_reason": "Cystic echinococcosis was distinguished from alveolar echinococcosis by Western blot serology displaying specific 7 kDa and 26–28 kDa diagnostic bands and positive Em2/EmC ELISA specific for Echinococcus multilocularis.",
+      "quote": "serology was also assessed by E. multilocularis western-blot (LD Bio, Lyon, France) in parallel on two sera: a sample frozen in 1987, and a freshly collected sample. With the serum sampled in 1987, two bands at 7 kDa and 26-28 kDa were observed"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Thoracic CT identification of a 45 mm apical mass, corroborated by serial Western blot serology demonstrating 7 kDa and 26–28 kDa Echinococcus multilocularis antigen binding and complete metabolic and radiologic resolution on PET-CT under albendazole therapy, confirmed recurrent alveolar echinococcosis.",
+      "quote": "thoracic CT-scan showed AE recurrence, as a 45 mm in diameter-lesion in the right pulmonary apex... serology was also assessed by E. multilocularis western-blot (LD Bio, Lyon, France) in parallel on two sera: a sample frozen in 1987, and a freshly collected sample. With the serum sampled in 1987, two bands at 7 kDa and 26-28 kDa were observed... Disappearance of the 7 kDa band thus confirmed imaging and ELISA serology results."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero spoilers in case presentation. Admission breakpoint set prior to send-out serology and surgical pathology. Candidate rule-outs supported with exact quotes."
+}

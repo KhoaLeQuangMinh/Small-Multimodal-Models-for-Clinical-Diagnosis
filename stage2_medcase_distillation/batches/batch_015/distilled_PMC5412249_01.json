@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5412249_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 48-year-old woman with a known asymptomatic hepatic cystic mass presents with acute right upper quadrant pain, jaundice, and severe transaminitis (ALT >1300 U/L, AST >1000 U/L). The diagnostic tension is determining whether the acute presentation is due to cystobiliary rupture of the hepatic hydatid cyst (hydatid cholangitis/jaundice) requiring urgent surgical intervention, versus a concurrent acute cryptogenic or viral hepatitis in a patient with an incidental, intact hydatid cyst.\n2. Admission Breakpoint: Admission triage encompasses clinical history, vital signs, physical examination, emergency laboratory panels (CBC, bilirubin, transaminases, cholestatic enzymes), and initial emergency abdominal ultrasonography. It strictly concludes prior to magnetic resonance cholangiopancreatography (MRCP), viral hepatitis serology panels, ERCP, and exploratory surgery.\n3. Differential Distinctions: Acute cystobiliary fistula/rupture causes severe biliary obstruction, dilation of intra- and extrahepatic bile ducts, and visible daughter cysts or hydatid sand in the common bile duct, which were ruled out on imaging and ERCP. Acute toxic or viral hepatitis was ruled out by negative serologies and history. The diagnostic dilemma was resolved when transaminases rapidly improved spontaneously and surgical exploration demonstrated an intact, unruptured hydatid cyst.",
+  "case_prompt": "A 48-year-old woman presents to the emergency department with a 1-week history of persistent right upper quadrant abdominal pain, nausea, and vomiting. Her past medical history is notable for an appendectomy and a previously known, untreated asymptomatic cystic lesion in the liver. On physical examination, she is visibly jaundiced with marked tenderness to palpation in the epigastrium and right upper quadrant. Rectal examination demonstrates normal stool color.\n\nLaboratory testing reveals hypochromic microcytic anemia with a hemoglobin level of 11.6 g/dL. Total bilirubin is 4.4 mg/dL with a direct bilirubin of 3.2 mg/dL. Alanine aminotransferase (ALT) is markedly elevated at 1,386 U/L, aspartate aminotransferase (AST) is 1,071 U/L, alkaline phosphatase (ALP) is 307 U/L, and gamma-glutamyl transpeptidase (GGT) is 156 U/L.\n\nEmergency abdominal ultrasonography demonstrates a 68-mm exophytic, multivesicular cystic mass located within segments II and III of the liver. The gallbladder, extrahepatic biliary tract, and pancreas appear sonographically normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hydatid Cyst Rupture into the Biliary Tract (Cystobiliary Fistula)",
+      "rule_out_reason": "Considered as the primary suspected emergency diagnosis due to acute jaundice and RUQ pain in a patient with a known liver cyst, but definitively excluded when ERCP and abdominal MRI demonstrated normal bile ducts without ductal dilation, communicating fistulae, or intrabiliary hydatid debris.",
+      "quote": "The initial diagnosis of the patient was hydatid liver cyst ruptured into the biliary tract, hence an endoscopic retrograde cholangiopancreatography (ERCP) was performed with normal findings."
+    },
+    {
+      "candidate": "Acute Viral or Toxic Hepatitis",
+      "rule_out_reason": "Considered to account for the profound transaminase elevation exceeding 1,000 U/L, but ruled out by negative viral hepatitis serologies, negative tumor markers, and absence of any hepatotoxic medications or toxin exposures.",
+      "quote": "Viral hepatitis and tumor markers were negative. She denied using any drugs or toxic products."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Spontaneous decline of bilirubin and transaminases supported a concurrent self-limited cryptogenic hepatitis, while subsequent exploratory surgery and histopathologic examination confirmed an intact, unruptured hepatic hydatid cyst without cystobiliary communication.",
+      "quote": "The patient underwent an exploratory surgery which found no cyto-biliary rupture. A liver biopsy was performed and the patient was discharged on postoperative day 5. At this time, the ALT and AST values were 175 U/L and 58 U/L, respectively. Histopathology of the hydatid cyst was confirmed."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres to Stanford MedCaseReasoning criteria. Breakpoint stops prior to MRCP, viral hepatitis panels, ERCP, and surgical exploration."
+}

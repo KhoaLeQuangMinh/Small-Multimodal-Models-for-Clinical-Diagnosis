@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3299142_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 42-year-old expatriate returning from West Africa presents two weeks after treatment and clinical resolution of an acute tropical febrile illness with sudden left flank pain and severe anemia (hemoglobin 7.7 g/dL) but stable vital signs and no frank peritonitis. The diagnostic challenge is identifying atraumatic splenic rupture and hemoperitoneum complicating recent protozoan infection rather than acute pyelonephritis, renal infarction, or bacterial splenic abscess.\n2. Admission Breakpoint: The emergency admission triage concludes with the physical examination and initial laboratory investigations (severe anemia, leukocytosis, elevated CRP, D-dimer, LDH, CK, and normal coagulation panel). Cross-sectional abdominal CT imaging, rapid antigen testing, and urgent laparotomy constitute the confirmatory diagnostic and therapeutic stages.\n3. Differential Distinctions: Splenic abscess or acute infarction can produce left upper quadrant/flank tenderness and elevated acute phase reactants following tropical infections, but cross-sectional imaging and laparotomy show massive parenchymal hematoma and free intraperitoneal blood. Occult hematologic malignancies causing atraumatic splenic rupture are ruled out by histopathology demonstrating hypertrophic red pulp and parenchymal hemorrhage without abnormal follicular structures or malignancy.",
+  "case_prompt": "A 42-year-old Italian male expatriate who had lived and worked in Nigeria for the preceding 2 years presented to the emergency department with the sudden onset of acute left flank pain. Two weeks earlier, he had experienced an acute tropical febrile illness that was managed with antimicrobial therapy, resulting in rapid resolution of fever; he remained afebrile thereafter until the acute pain episode. On arrival at the emergency department, his vital signs were stable. Physical examination revealed localized tenderness over the left hemiabdomen without signs of guarding, rigidity, or frank peritonism. Initial laboratory evaluation demonstrated severe anemia with a hemoglobin level of 7.7 g/dL and moderate leukocytosis. Inflammatory and biochemical markers were markedly abnormal, including a C-reactive protein of 232 mg/L, plasma D-dimer of 2,188 µg/L, lactate dehydrogenase of 654 IU/L, and creatine kinase of 1,255 IU/L. Platelet count and routine coagulation parameters were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Splenic Abscess / Septic Splenic Embolism",
+      "rule_out_reason": "Acute left upper quadrant and flank pain accompanied by leukocytosis and markedly elevated CRP after a severe tropical infection could suggest a splenic abscess; however, blood cultures were negative for bacteria, and cross-sectional imaging and surgery showed subcapsular hematoma with hemoperitoneum rather than a purulent collection.",
+      "quote": "Rapid blood assay tested positive for P. falciparum antigen, with negative blood cultures for bacteria and parasites."
+    },
+    {
+      "candidate": "Spontaneous Rupture Secondary to Hematologic Malignancy",
+      "rule_out_reason": "Spontaneous atraumatic rupture of an enlarged spleen can be the initial manifestation of an undiagnosed lymphoma or leukemia; however, histopathological evaluation of the resected spleen revealed only hypertrophic red pulp and parenchymal hemorrhage without neoplastic infiltration.",
+      "quote": "Histologically, diffuse parenchymal hemorrhage and markedly hypertrophic red pulp were observed, without follicular structure abnormalities nor signs of malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation of recent Plasmodium falciparum parasitemia via rapid blood antigen assay, combined with multi-detector CT and emergency laparotomy confirming an 850-g ruptured spleen with large capsular interruption and extensive hemoperitoneum, established pathologic splenic rupture complicating acute falciparum malaria.",
+      "quote": "Rapid blood assay tested positive for P. falciparum antigen, with negative blood cultures for bacteria and parasites... Splenomegaly with multiple blood clots was resected. Pathology specimen reported 850-g enlarged spleen measuring 17x14x8 cm after fixation, with large capsular interruption and underlying hematoma."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pathological splenic rupture and hemoperitoneum presenting as acute left flank pain 14 days after successful clearance of Plasmodium falciparum malaria in an expatriate."
+}

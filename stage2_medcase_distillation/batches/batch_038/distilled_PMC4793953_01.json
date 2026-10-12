@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4793953_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 66-year-old renal transplant recipient on immunosuppressive therapy with frequent soil management exposure presenting with subacute cough, fever, constitutional wasting, and bilateral nodular pulmonary infiltrates alongside characteristic mulberry-like mucosal ulcerations (Aguiar-Pupo stomatitis) and umbilicated cutaneous papules, which is initially mistaken for pulmonary tuberculosis and bacterial pneumonia.\n2. Admission Breakpoint: Initial clinical presentation, immunosuppressive and occupational history, mucocutaneous physical examination, and initial chest radiography demonstrating bilateral nodular infiltrates, prior to bronchoalveolar lavage, direct mycological examination, tissue biopsy, and fungal culture.\n3. Differential Distinctions: Pulmonary tuberculosis closely mimics the presentation with chronic cough, fever, weight loss, and nodular chest infiltrates, prompting empiric anti-TB therapy, but was excluded by negative acid-fast bacilli on bronchial lavage; bacterial community-acquired/nosocomial pneumonia explains acute febrile worsening in an immunosuppressed host but fails to account for chronic indolent course or pathognomonic oral lesions; paracoccidioidomycosis typically exhibits moriform ulcerative stomatitis (Aguiar-Pupo stomatitis), cutaneous lesions, and characteristic multiple budding yeast cells on direct examination and culture.",
+  "case_prompt": "A 66-year-old male renal transplant recipient residing in Miracema, Rio de Janeiro, presents with a three-month history of cough, a 6-kg weight loss over the preceding month, and recurrent febrile episodes for the past ten days. He underwent kidney transplantation 19 months prior and is maintained on immunosuppression with tacrolimus (8 mg/day) and prednisone (5 mg/day), alongside mesalazine for comorbid medical conditions. Epidemiological history is notable for regular visits to a rural farm with frequent direct soil management. On physical examination, he appears in good general condition without peripheral lymphadenopathy. Dermatologic examination reveals shallow 8-mm ulcerations surrounded by erythema on the hard palate, accompanied by multiple mulberry-like eroded erythematous papules creating a cobblestone mucosal appearance. Additionally, there is a 3-mm erythematous papule with central umbilication on the left nasal ala and a 1-cm infiltrated erythematous plaque with irregular borders on the left flank. A plain chest radiograph demonstrates bilateral nodular infiltrates.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculosis",
+      "rule_out_reason": "Tuberculosis was a primary diagnostic consideration given the subacute pulmonary syndrome of chronic cough, fevers, weight loss, and bilateral nodular infiltrates in an immunosuppressed transplant recipient, prompting immediate empiric therapy; however, acid-fast bacilli staining of bronchoalveolar lavage was negative.",
+      "quote": "Chest x-rays showed bilateral nodular infiltrate, so it was started empirical treatment for tuberculosis and bacterial pneumonia. AFB bronchial lavage was negative however, the direct mycological examination found fungal structures compatible with paracoccidioidomycosis."
+    },
+    {
+      "candidate": "Bacterial Pneumonia",
+      "rule_out_reason": "Acute-on-chronic bacterial pneumonia was empirically covered due to high risk of opportunistic pulmonary infections under tacrolimus and steroid immunosuppression; however, the indolent three-month tempo, failure to respond to antibacterials, and prominent mucocutaneous lesions pointed toward a systemic mycosis.",
+      "quote": "Chest x-rays showed bilateral nodular infiltrate, so it was started empirical treatment for tuberculosis and bacterial pneumonia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct mycological examination of bronchial lavage fluid revealed characteristic fungal elements, and biopsies of the oral and cutaneous lesions corroborated the fungal morphology, with definitive identification secured by culture growth of Paracoccidioides brasiliensis.",
+      "quote": "AFB bronchial lavage was negative however, the direct mycological examination found fungal structures compatible with paracoccidioidomycosis. Biopsies in the described mucocutaneous lesions were performed, including oral ulcers, which were consistent with this diagnosis (Fig. 3). All materials were subjected to culture and there was growth of P. brasiliensis."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint cleanly isolates triage exam and initial chest radiograph from invasive bronchoalveolar lavage, mycological staining, and cultures. Candidates accurately reflect empiric treatments instituted in the article (tuberculosis, bacterial pneumonia) supported by direct quotations."
+}

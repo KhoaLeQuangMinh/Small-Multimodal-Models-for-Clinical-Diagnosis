@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3825978_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 13-year-old male presenting with migrating right iliac fossa abdominal pain, vomiting, fever, and localized peritoneal signs mimicking acute appendicitis, accompanied by unexplained bicytopenia (marked leukopenia and thrombocytopenia). The dilemma is recognizing that an acute arboviral infection can simulate a surgical abdomen through mesenteric adenitis or visceral plasma leakage, avoiding unnecessary appendectomy in the presence of severe thrombocytopenia.\n2. Admission Breakpoint: The admission narrative halts after presentation, physical examination demonstrating right iliac fossa tenderness and guarding, baseline complete blood count revealing leukopenia and thrombocytopenia, and initial abdominal ultrasound showing a small right iliac fossa fluid collection without appendiceal visualization, strictly before the 24-hour surgical exploration, appendiceal histology, and confirmatory dengue serology.\n3. Differential Distinctions: Acute appendicitis presents with classical migratory right lower quadrant pain, guarding, and localized fluid, but typically features leukocytosis rather than prominent leukopenia and thrombocytopenia; exploration confirmed a grossly and histologically normal appendix. Bacterial mesenteric lymphadenitis causes right iliac fossa pain and lymphadenopathy but does not explain rapid profound thrombocytopenia and resolving bicytopenia. Dengue fever frequently causes acute abdominal pain and mesenteric lymphadenopathy during the acute febrile and plasma-leakage phases, confirmed by IgM and IgG serology.",
+  "case_prompt": "A 13-year-old male with no previous medical history presents to a surgical unit with a 3-day history of abdominal pain that began in the epigastrium and subsequent localization to the right iliac fossa, associated with multiple bouts of vomiting. He reports no diarrhea, joint pain, or petechial rash. On physical examination, body temperature is 38°C, pulse rate is 109 beats per minute, and blood pressure is normal. Abdominal examination demonstrates marked tenderness in the right iliac fossa with mild guarding. Complete blood count reveals leukopenia with a white blood cell count of 2.1 x 10³/mm³ and thrombocytopenia with a platelet count of 119 x 10³/mm³, with normal hemoglobin and hematocrit. Abdominal ultrasound demonstrates a small fluid collection in the right iliac fossa; the appendix is not visualized, and surrounding bowel loops exhibit normal peristalsis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute appendicitis",
+      "rule_out_reason": "Considered the presumptive working diagnosis due to migratory right lower quadrant pain, vomiting, fever, localized guarding, and pericecal fluid collection. Excluded intraoperatively by the finding of a normal appendix and histopathology demonstrating no gross or microscopic appendiceal inflammation.",
+      "quote": "Examination at that time revealed marked right iliac fossa tenderness in keeping with a diagnosis of acute appendicitis."
+    },
+    {
+      "candidate": "Bacterial mesenteric lymphadenitis",
+      "rule_out_reason": "Considered given the intraoperative finding of multiple enlarged mesenteric lymph nodes in a pediatric patient with lower abdominal pain. Excluded as a primary bacterial etiology given progressive bicytopenia, absence of leukocytosis, and self-limited viral course.",
+      "quote": "an appendicectomy performed via a Lanz incision, at which time a normal appendix was found with multiple enlarged mesenteric lymph nodes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of severe right lower quadrant pain with marked leukopenia and thrombocytopenia in an endemic Caribbean setting, followed by negative appendiceal histology, prompted viral testing that confirmed acute infection via positive dengue IgM and IgG ELISA.",
+      "quote": "Dengue fever was suspected and was confirmed with a positive IgG and IgM enzyme-linked immmunoabsorbent assay."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint placed prior to surgical appendectomy and serologic confirmation."
+}

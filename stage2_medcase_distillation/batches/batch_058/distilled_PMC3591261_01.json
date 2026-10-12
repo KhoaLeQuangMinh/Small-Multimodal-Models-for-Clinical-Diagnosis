@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC3591261_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An immunocompromised host with HIV and HCV co-infection presents with subacute constitutional symptoms, weight loss, and hepatomegaly, with a chest radiograph showing diffuse micronodular shadowing. Although neurologically intact at initial presentation, she subsequently suffered an acute middle cerebral artery ischemic stroke. The core diagnostic tension is distinguishing between typical atherosclerotic or hypercoagulable thromboembolic stroke versus cerebral vasculitis secondary to subclinical basilar meningitis caused by disseminated tuberculosis, as well as excluding other opportunistic infections like cryptococcosis, toxoplasmosis, or viral meningoencephalitis.\n2. Admission Breakpoint: The admission triage breakpoint is established right after the initial physical exam, baseline triage laboratories (ESR, CBC, hepatic and renal panels), and the admission plain chest radiograph showing micronodular shadowing. All subsequent interventions—bronchoalveolar lavage, lumbar puncture CSF analysis, and acute stroke neuroimaging—constitute diagnostic and hospital course findings.\n3. Differential Distinctions: Cryptococcal meningoencephalitis is ruled out by negative serum and CSF cryptococcal antigen tests. Pyogenic and fungal meningitis are ruled out by sterile CSF cultures. Viral and parasitic meningoencephalitides are excluded by negative comprehensive CSF PCR testing. Primary vasculitides, cardioembolism, and prothrombotic disorders are ruled out by normal carotid Doppler, echocardiogram, negative autoantibodies, and normal thrombophilia panel. The diagnosis of tuberculous meningitis complicated by stroke is confirmed by BAL culture isolating Mycobacterium tuberculosis and neuroimaging demonstrating middle cerebral artery occlusion with Sylvian fissure leptomeningeal enhancement.",
+  "case_prompt": "A 45-year-old Caucasian female with known human immunodeficiency virus (HIV) infection (CDC stage A3) and hepatitis C virus (HCV, genotype 1b) co-infection (Child-Pugh score 5) presented to the hospital with a one-week history of fever and a productive cough of two days' duration. Her medical history was notable for an inactive intravenous drug habit, daily methadone maintenance therapy (35 mg/day), heavy tobacco use (20 cigarettes/day), and severe nutritional impairment with an unintentional weight loss exceeding 10 kg over recent months. Her antiretroviral regimen consisted of tenofovir/emtricitabine and lopinavir/ritonavir; she had also received levofloxacin 500 mg daily over the preceding week. Laboratory values obtained three months earlier documented an HIV-RNA viral load of 71 copies/mL, a CD4+ T-cell count of 144/mm³, and an HCV-RNA viral load of 780,000 copies/mL.\n\nOn presentation, she was alert and had no headache, neck stiffness, focal neurological deficits, or altered mental status. Physical examination revealed hepatomegaly with the liver edge palpable 5 cm below the right costal margin. Initial laboratory studies revealed an erythrocyte sedimentation rate (ESR) of 78 mm/1 hr, hemoglobin of 10.8 g/dL, and a white blood cell count of 4,400/mm³ with 79.6% neutrophils. Serum electrolytes, renal function tests, liver biochemistries, and coagulation profiles were normal. A plain chest radiograph demonstrated diffuse micronodular shadowing throughout both lung fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cryptococcal Meningoencephalitis",
+      "rule_out_reason": "In a patient with advanced HIV infection (CD4 144/mm³) presenting with subacute infection and subsequent CNS involvement, Cryptococcus is a primary consideration, but latex agglutination testing in blood and CSF as well as fungal cultures were negative.",
+      "quote": "Latex agglutination test for Cryptococcus resulted negative both on CSF and blood."
+    },
+    {
+      "candidate": "Acute Bacterial or Fungal Meningitis",
+      "rule_out_reason": "Pyogenic bacterial and fungal central nervous system infections were excluded by negative CSF Gram stains, smears, and sterile routine cultures.",
+      "quote": "CSF cultures for bacteria and fungi were also negative."
+    },
+    {
+      "candidate": "Viral and Parasitic Encephalitis (Toxoplasma, CMV, HSV, VZV, JC Virus)",
+      "rule_out_reason": "Common opportunistic CNS infections in immunocompromised individuals were ruled out by negative multiplex CSF real-time PCR panels and negative CMV pp65 antigenemia.",
+      "quote": "Real time polymerase reaction (PCR) for Toxoplasma gondii, Human poliomavirus JC-V, Herpes simplex virus type I and type II, Herpes virus type 8, Varicella Zoster virus, Cytomegalovirus resulted negative on CSF."
+    },
+    {
+      "candidate": "Primary Autoimmune Vasculitis or Hypercoagulable Stroke",
+      "rule_out_reason": "Following the development of hemiplegia and aphasia, non-infectious causes of ischemic stroke such as thrombophilia, cardioembolism, and systemic vasculitis were excluded by normal vascular imaging, echocardiography, and negative autoimmune serologies.",
+      "quote": "Ultrasound of carotid arteries, EKG, trans-thoracic heart ultrasound, antinuclear antibodies, anti neutrophil cytoplasm antibodies, lupus anticoagulant factor and factor V Leiden were negative. Protein S, protein C, anti-thrombin III, homocysteine values were in the normal ranges."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic confirmation was established by bronchoalveolar lavage culture isolating multi-susceptible Mycobacterium tuberculosis, in conjunction with CSF showing marked lymphocytic pleocytosis with hypoglycorrhachia, and neuroimaging demonstrating middle cerebral artery occlusion with Sylvian fissure leptomeningeal enhancement indicative of tuberculous vasculitis.",
+      "quote": "Culture subsequently identified multi-susceptible Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical prompt strictly redacted of all pathogen names, TB references, and post-admission stroke complications. Breakpoint placed before BAL cultures, lumbar puncture, and neuroimaging."
+}

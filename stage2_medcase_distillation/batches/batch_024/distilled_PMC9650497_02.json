@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9650497_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: An adolescent male presents with prolonged high fever peaking at 41 °C, massive splenomegaly, bicytopenia, hyperferritinemia (>2000 ng/mL), hypertriglyceridemia, transaminitis, and multiple positive autoantibodies (Coombs' test, ANA, anti-Jo-1, RF). This presentation closely mimics secondary hemophagocytic lymphohistiocytosis (HLH), lymphoma/leukemia, or systemic autoimmune disease. The tension lies in identifying that visceral leishmaniasis can drive intense polyclonal B-cell autoantibody production and reactive macrophage activation.\n\n2. Admission Breakpoint: The breakpoint occurs following transfer to the emergency fever clinic, physical exam, baseline CBC, biochemical panels, ferritin, autoimmune serology screening, and abdominal ultrasonography, prior to blood mNGS testing and CDC rK39 antibody assay.\n\n3. Differential Distinctions: Hemophagocytic lymphohistiocytosis (HLH) is supported by cytopenias, splenomegaly, hyperferritinemia, and hypertriglyceridemia, but represents a secondary phenomenon driven by intracellular protozoal infection. Leukemia/lymphoma is excluded by normal flow cytometry immunophenotyping and non-clonal bone marrow hyperplasia. Systemic autoimmune diseases are excluded as autoantibodies represent polyclonal immune activation that fails corticosteroid therapy.",
+  "case_prompt": "A 15-year-old male middle-school student residing in Chongqing presents to an emergency fever clinic with a history of persistent fever and cough for more than 10 days.\n\nThe illness began after an apparent upper respiratory infection, with body temperature initially fluctuating between 37 °C and 38 °C, accompanied by cough, fatigue, chills, and pharyngeal discomfort. Over-the-counter cold remedies were ineffective. The symptoms worsened with temperature spikes reaching 41.0 °C that only partially subsided with ibuprofen. Treatment at a local hospital with intravenous cefoperazone-sulbactam provided no relief.\n\nPrior testing at the local hospital revealed cytopenias (white blood cell count 3.3 × 10^9/L, hemoglobin 85 g/L, platelet count 87 × 10^9/L), serum ferritin >2,000 ng/mL, procalcitonin 4.14 ng/mL, and hepatosplenomegaly. Bone marrow aspirate revealed active hyperplasia without clonal leukemic blasts, and leukemia immunophenotyping and respiratory viral panels were negative.\n\nOn presentation to the tertiary center, vital signs are: temperature 37.1 °C, pulse rate 110 beats per minute, respiratory rate 19 breaths per minute, and blood pressure 110/72 mm Hg. Physical examination confirms massive splenomegaly.\n\nLaboratory evaluation reveals: white blood cell count 4.68 × 10^9/L, hemoglobin 100 g/L, red blood cell count 3.65 × 10^12/L; ALT 204 IU/L, AST 176 IU/L, GGT 153 IU/L, LDH 889 IU/L, triglycerides 2.29 mmol/L, serum ferritin >2,000 ng/mL, procalcitonin 2.11 ng/mL, CRP 53.5 mg/L, and IL-6 31.58 pg/mL. Direct antiglobulin (Coombs') test is positive (++), ANA is positive at 1:100, anti-Jo-1 is positive, and rheumatoid factor is elevated at 207 IU/mL. Blood cultures show no bacterial growth, and chest CT is unremarkable. Abdominal ultrasound confirms substantial splenomegaly with an intercostal spleen thickness of approximately 6.6 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hemophagocytic Lymphohistiocytosis (HLH / Hemophilic Cell Syndrome)",
+      "rule_out_reason": "Extreme fever, marked splenomegaly, cytopenias, hyperferritinemia (>2,000 ng/mL), hypertriglyceridemia, and elevated LDH fulfilled clinical criteria for HLH; however, the syndrome was triggered secondarily by intracellular protozoal infection rather than primary genetic HLH.",
+      "quote": "The diagnosis was considered to be: (1) FUO:sepsis with hematological disease? Do not exclude the possibility of parasitic diseases? Hemophilic cell syndrome? Lymphoma? Autoimmune disease?"
+    },
+    {
+      "candidate": "Hematologic Malignancy / Lymphoma or Acute Leukemia",
+      "rule_out_reason": "Entertained due to B-symptoms, cytopenias, splenomegaly, and high ferritin in an adolescent; ruled out by normal leukemia immunophenotyping and repeat bone marrow examinations showing reactive trilineage hyperplasia without malignant infiltration.",
+      "quote": "The respiratory tract had 13 types of virus and complete immunophenotyping of leukemia; echocardiography showed no evident abnormalities."
+    },
+    {
+      "candidate": "Systemic Autoimmune / Connective Tissue Disease",
+      "rule_out_reason": "Considered due to the presence of multiple circulating autoantibodies (positive direct Coombs' test, ANA 1:100, anti-Jo-1, and rheumatoid factor); ruled out because these antibodies reflected non-specific polyclonal B-cell stimulation from chronic infection, and empirical dexamethasone failed to control the fever.",
+      "quote": "Coombs' test (direct anti-human globulin test): positive, ++. Autoimmune antibody: ANA + 1:100; Anti-jo-1 antibody +; RF 207 IU/ml; HIV, and syphilis tests were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing (mNGS) detected DNA reads of Leishmania infantum, and rapid rK39 antibody testing performed by the CDC confirmed the clinical diagnosis of visceral leishmaniasis, leading to complete fever defervescence and spleen regression on sodium stibogluconate.",
+      "quote": "On the fourth day, the mNGS test results of the patient showed Leishmania infantum (Figure 4). CDC was contacted for rK39 antibody test, and the antibody was detected to be positive on the seventh day"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero send-out PCR or rK39 in case prompt. Quotes exactly matched text."
+}

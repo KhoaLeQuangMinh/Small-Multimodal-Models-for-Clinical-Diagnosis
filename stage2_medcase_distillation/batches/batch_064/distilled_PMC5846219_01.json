@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5846219_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 70-year-old man presents acutely with fever, a tender right iliac fossa mass, and partial bowel obstruction. Abdominal CT demonstrates a massive, irregular mural thickening of the cecum and ascending colon spanning 12–13 cm with mesocolonic fat stranding and regional lymphadenopathy, findings highly concerning for colonic adenocarcinoma. The primary clinical challenge is recognizing that invasive parasitic colitis can form an inflammatory pseudotumoral mass (ameboma) capable of mimicking malignant neoplasia.\n2. Admission Breakpoint: The admission workup concludes following the initial medical assessment, physical examination, CBC revealing neutrophilic leukocytosis, and contrast-enhanced CT scan demonstrating the irregular ileocecal and ascending colon mass, immediately prior to colonoscopic scheduling, bowel preparation perforation, and emergent surgical laparotomy.\n3. Differential Distinctions: Colonic adenocarcinoma was the primary initial radiological suspicion given the large obstructing circumferential mass, but microscopic examination revealed no neoplastic changes and benign reactive lymphadenopathy. Appendiceal phlegmon or abscess typically produces localized periappendiceal inflammatory changes rather than a 13 cm extensive mural colonic thickening. Resection histology revealed classic flask-shaped mucosal ulcers containing PAS-positive protozoan trophozoites.",
+  "case_prompt": "A 70-year-old man presented to the hospital with a 2-day history of right lower quadrant abdominal pain, progressive abdominal distension, and obstipation. He also reported moderate-to-high-grade fevers associated with chills and rigors. His past medical and surgical history was unremarkable.\n\nOn physical examination, the patient was febrile. Abdominal examination revealed an ill-defined, tender mass palpated in the right iliac fossa. Digital rectal examination was normal without palpable masses or bleeding.\n\nLaboratory testing demonstrated marked leukocytosis with neutrophilia. Abdominal ultrasonography showed dilated bowel loops without free intraperitoneal fluid collections, and normal appearance of the solid organs. Contrast-enhanced computed tomography (CT) of the abdomen demonstrated marked, irregular mural thickening of the cecum and ascending colon extending to the hepatic flexure, involving a segment approximately 12 to 13 cm in length with a maximal wall thickness of 2.7 to 2.8 cm. Marked adjacent mesocolonic fat stranding and regional subcentimetric lymph nodes were present. Distal ileal loops were dilated (2.7 to 2.8 cm in caliber) with an associated small bowel feces sign, indicating high-grade luminal narrowing.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colonic adenocarcinoma",
+      "rule_out_reason": "Strongly suspected based on the prominent 12-13 cm circumferential mural thickening with fat stranding and luminal obstruction on CT, but histopathologic examination of the resected specimen and 13 isolated regional lymph nodes demonstrated absence of malignancy.",
+      "quote": "Distal ileal loops appeared prominent (2.7-2.8 cm in diameter) with \"small bowel fecal sign\" [Figure 1]. These features were suggestive of neoplastic etiology of the cecum and ascending colon... Thirteen lymph nodes isolated from mesentery showed reactive hyperplasia. No evidence of malignancy was noted."
+    },
+    {
+      "candidate": "Appendiceal abscess or phlegmon",
+      "rule_out_reason": "Considered due to acute fever, leukocytosis, and a tender right lower quadrant mass, but CT revealed extensive colonic involvement up to the hepatic flexure rather than an isolated periappendiceal collection.",
+      "quote": "Contrast-enhanced computerized tomography scanning of the abdomen showed irregular mural thickening of the cecum and ascending colon till hepatic flexure [Figure 1]. The approximate length of involvement of the colon was 12-13 cm and maximum thickness was 2.7-2.8 cm."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency right hemicolectomy specimen histopathology revealed transmural flask-shaped ulcerations in the cecal mucosa packed with periodic acid-Schiff (PAS)-positive Entamoeba histolytica trophozoites.",
+      "quote": "Microscopic examination revealed numerous flask-shaped ulcers in cecal mucosa reaching up to the submucosa... In necrotic debris, numerous trophozoites of E. histolytica were seen which were periodic acid-Schiff (PAS) stain positive [Figures 2 and 3]... A final diagnosis of ameboma was made."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC5846219_01. The case prompt stops cleanly before bowel preparation, bowel perforation, laparotomy, and surgical pathology. Zero mention of amebiasis or Entamoeba. All candidates and the diagnostic pivot cite verbatim text from the case report."
+}

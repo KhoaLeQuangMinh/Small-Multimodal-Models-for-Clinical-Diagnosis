@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3140148_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 36-year-old male farmer presents with an 8-year history of chronic discharging perineal and genital sinuses with a 'watering can' appearance. This presentation closely mimics late-stage lymphogranuloma venereum (LGV) or chronic anorectal fistula-in-ano/hidradenitis suppurativa; however, the non-venereal history, agricultural background, and expression of pigmented grains generate diagnostic tension between venereal pathology, actinomycosis, and fungal eumycetoma.\n2. Admission Breakpoint: Admission triage concludes following physical examination of the perineal sinuses, local soft-tissue radiographs, and baseline systemic/serological testing (CXR, Mantoux, HIV, VDRL), immediately prior to KOH microscopic examination of granules, punch biopsy, and fungal culture.\n3. Differential Distinctions: Lymphogranuloma venereum is ruled out by negative venereal serologies and the presence of fungal granules; perineal tuberculosis is ruled out by a negative Mantoux test and absence of acid-fast bacilli; perineal eumycetoma is confirmed by demonstrating branched fungal hyphae in black grains and culture isolation of Madurella mycetomatis.",
+  "case_prompt": "A 36-year-old male farmer presented with an 8-year history of chronic, non-healing nodular and draining lesions involving his right upper thigh and external genitalia. The illness initially began as a single painless cutaneous nodule on the thigh, followed over the subsequent year by the development of multiple surrounding brownish papules and nodules that gradually coalesced and formed draining tracts. He reported no history of antecedent trauma, surgical interventions, or other chronic medical conditions.\n\nOn physical examination, multiple indurated nodules and discharging sinuses were observed across the perineal region, upper thigh, and genitalia, creating a classic 'water can' appearance draining purulent exudate. Gentle manual pressure applied to the lesions resulted in the expression of dark melanotic granules from the sinus ostia.\n\nInitial diagnostic evaluation included a plain chest radiograph, which was normal. Tuberculin skin testing (Mantoux test) was negative. Serologic testing for HIV and venereal disease research laboratory (VDRL) testing were both non-reactive. Plain radiography of the local thigh and pelvic area was performed to assess soft-tissue extent and exclude underlying osseous destruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lymphogranuloma Venereum (LGV)",
+      "rule_out_reason": "The chronic purulent draining perineal sinuses closely mimicked the 'water can' appearance characteristic of late-stage lymphogranuloma venereum; however, the expression of dark melanotic granules and non-reactive venereal serologies excluded chlamydial infection.",
+      "quote": "On examination, there were many discharging sinuses simulating \"water can\" appearance of Lymphogranuloma venereum (LGV) discharging pus."
+    },
+    {
+      "candidate": "Cutaneous / Perineal Tuberculosis",
+      "rule_out_reason": "Chronic discharging sinus tracts in the perineal region can occur in tuberculous gummas or scrofuloderma; however, the Mantoux test was negative and stains of the tissue exudate showed no acid-fast bacilli.",
+      "quote": "MT was negative. S. HIV and S.VDRL were normal. Tentative diagnosis of deep granuloma was made."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of the expressed dark granules using potassium hydroxide (KOH) mount revealed long-branched fungal hyphae, and fungal culture on Sabouraud's dextrose agar grew Madurella mycetomatis, confirming eumycetoma.",
+      "quote": "The KOH mount of the granule revealed thin long-branched hyphae with well-defined walls."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

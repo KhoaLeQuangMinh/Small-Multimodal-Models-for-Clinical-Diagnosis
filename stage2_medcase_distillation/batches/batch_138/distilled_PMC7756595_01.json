@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7756595_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 43-year-old woman from rural South Africa with a remote history of treated pulmonary cystic lesions presents with recurrent respiratory complaints and an incidental, hypodense mass in the interventricular septum effacing the right ventricular lumen. The complete absence of cardiac symptoms, murmurs, or conduction abnormalities leads to initial clinical suspicion of a ventricular thrombus or primary cardiac neoplasm rather than multi-organ parasitic disease.\n2. Admission Breakpoint: Admission triage ends following history, normal physical examination, baseline routine laboratories (cardiac enzymes, LFTs, renal function), normal 12-lead ECG, and preliminary plain chest radiography, immediately prior to send-out Echinococcus indirect haemagglutination serology, contrast-enhanced cardiac CT, and 3D transesophageal echocardiography.\n3. Differential Distinctions: Ventricular mural thrombus was the provisional diagnosis for the septal mass, but the patient lacked underlying ventricular dysfunction, myocardial infarction, or hypercoagulability, and imaging revealed a cystic calcified internal structure. Primary or metastatic cardiac tumor was considered, but transesophageal echocardiography demonstrated an infiltrating multi-cystic lesion with calcified components. High-titer indirect haemagglutination serology and simultaneous pulmonary lesions establish hydatid disease.",
+  "case_prompt": "A 43-year-old woman with no underlying medical comorbidities presents to an academic hospital with recurrent respiratory symptoms. She previously resided in a rural area of South Africa. Ten years earlier, she had presented with respiratory symptoms and was medically managed with antiparasitic therapy for one year with symptomatic resolution, following which she was lost to follow-up. Two years prior to current presentation, she developed an acute recurrence of respiratory symptoms; imaging at that time showed persistent bilateral pulmonary cystic lesions and an incidental hypodense mass located in the interventricular septum effacing the right ventricle, but she was again lost to follow-up.\n\nUpon the current evaluation, the patient reports persistent respiratory complaints but denies chest pain, palpitations, dyspnea on exertion, orthopnea, syncope, or lower extremity edema. General cardiovascular and respiratory examinations are normal, with regular rhythm, normal heart sounds, and no murmurs, gallops, or signs of congestive heart failure.\n\nInitial triage laboratory investigations reveal normal cardiac enzymes, normal liver and renal function, and no evidence of systemic sepsis. A 12-lead electrocardiogram (ECG) is normal. Plain chest radiography demonstrates persistent bilateral pulmonary cystic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ventricular thrombus",
+      "rule_out_reason": "An interventricular septal mass effacing the right ventricle was provisionally interpreted as a ventricular thrombus, but the patient had normal ECG, normal cardiac biomarkers, no regional wall motion abnormality, and advanced imaging demonstrated an infiltrating multi-cystic mass with calcified components rather than an organized clot.",
+      "quote": "A provisional diagnosis of ventricular thrombus and further investigation with echocardiography was recommended."
+    },
+    {
+      "candidate": "Primary cardiac neoplasm (e.g., cardiac myxoma, fibroma, or sarcoma)",
+      "rule_out_reason": "Solid intracardiac tumors can arise in the interventricular septum and cause chamber effacement, but 3D transesophageal echocardiography demonstrated an infiltrating cystic lesion with calcifications and fluid content communicating across cardiac structures rather than a solid vascular neoplasm.",
+      "quote": "Further imaging with 3D TOE confirmed an infiltrating cystic lesion involving the IVS, resulting in expansion of the IVS towards the right ventricle with partial effacement of the right ventricle into a slit-like cavity and protrusion of the cystic lesion into the right atrium without tricuspid valve dysfunction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serological testing demonstrated an Echinococcus indirect haemagglutination titer of 1:500, and thoracic CT/3D TOE confirmed extensive bilateral pulmonary hydatid cysts with an interventricular septal hydatid cyst protruding into the right atrium.",
+      "quote": "The Echinococcus indirect haemagglutination test was positive (titre of 1:500)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Prompt stops before confirmatory echinococcal serology and 3D transesophageal echocardiography. Zero pathogen or disease names in prompt. Quotes verified."
+}

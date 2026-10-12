@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10913494_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old woman presents with a 3-year history of a painless, slow-growing, mobile parotid mass. Clinical presentation and imaging (ultrasound and MRI) are pathognomonic for a benign pleomorphic adenoma. Active tuberculosis of the salivary gland was entirely clinically occult, without constitutional symptoms, pulmonary findings, or lymphadenopathy, and was discovered solely on postoperative histological examination.\n2. Admission Breakpoint: The breakpoint occurs after outpatient physical examination, normal routine blood counts, clear chest radiography, and multimodality salivary imaging (ultrasound and MRI) confirming a discrete parotid tumor, prior to total parotidectomy and pathology.\n3. Differential Distinctions: Isolated pleomorphic adenoma was the primary preoperative working diagnosis supported by clinical exam and frozen section, but final pathology revealed active caseating tuberculosis lesions coexisting with the adenoma. Malignant salivary gland neoplasm was considered due to tumor extension into both lobes and intraoperative mass effect on the facial nerve, but excluded by frozen and permanent histopathology showing benign adenoma and granulomatous necrosis rather than malignant cells. Parotid tuberculosis was an incidental pathological finding.",
+  "case_prompt": "A 50-year-old non-smoking woman presents with a right infra-auricular swelling that has been slowly and progressively enlarging over the past three years. She has a prior surgical history of surgically treated normal pressure hydrocephalus. She reports no local pain, facial numbness, weakness, fevers, chills, night sweats, unintentional weight loss, or chronic cough, and reports no prior history of chronic respiratory illness.\n\nOn physical examination, she is afebrile with normal vital signs. Examination of the head and neck reveals a 4 cm, firm, mobile, painless mass in the right parotid gland with no overlying skin erythema, warmth, or inflammatory changes. No cervical or accessory lymphadenopathy is palpable. There are no facial asymmetries or signs of facial nerve paresis. Examination of the oral cavity and oropharynx is unremarkable.\n\nComplete blood counts and basic metabolic profiles are within normal reference ranges. A plain chest radiograph shows clear lung fields without parenchymal consolidations, cavitary lesions, or lymphadenopathy. Parotid ultrasonography reveals an oval, hypoechoic, heterogeneous mass measuring 31 mm × 27 mm × 31 mm. Magnetic resonance imaging (MRI) of the head and neck demonstrates a well-delineated mass involving both the superficial and deep lobes of the right parotid gland, displaying intermediate signal intensity on T1-weighted sequences, heterogeneous high signal intensity on T2-weighted sequences, heterogeneous contrast uptake, and hypersignal on diffusion-weighted imaging.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated pleomorphic adenoma of the parotid gland",
+      "rule_out_reason": "A 3-year history of a painless, mobile parotid tumor with characteristic biphasic MRI and ultrasound signals strongly suggested an isolated benign mixed tumor, but permanent surgical pathology demonstrated active necrotizing granulomatous lesions coexisting within the adenoma.",
+      "quote": "Ultrasound showed an oval hypoechoic heterogeneous mass of 31 x 27 x 31 mm suggesting a pleomorphic adenoma (Figure 1)... The extemporaneous examination was in favor of a pleomorphic adenoma while the final pathology showed the coexistence of active tuberculosis lesions (Figure 4)."
+    },
+    {
+      "candidate": "Malignant parotid neoplasm (e.g., mucoepidermoid or adenoid cystic carcinoma)",
+      "rule_out_reason": "Involvement of both superficial and deep parotid lobes with intraoperative compression and lamination of the cervical branch of the facial nerve raised concern for malignancy, but histopathologic examination showed no cellular atypia or malignant invasion.",
+      "quote": "The intraoperative findings showed a tumor involving both the superficial and deep lobes with mass effect on the cervical branch of the facial nerve, which was laminated and congestive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Because parotid tuberculosis was clinically unsuspected in the absence of constitutional or pulmonary symptoms, the diagnosis was definitively established by permanent histopathology following conservative total parotidectomy demonstrating the coexistence of active tuberculosis lesions.",
+      "quote": "Because tuberculosis was not initially suspected and was an accidental discovery, diagnosis was confirmed solely by pathology... final pathology showed the coexistence of active tuberculosis lesions (Figure 4)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set after diagnostic imaging. Verbatim quotes verified."
+}

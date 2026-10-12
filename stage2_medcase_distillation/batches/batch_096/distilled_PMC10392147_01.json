@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10392147_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 38-year-old male with a lifelong history of freshwater swimming in Rwanda presents with 3 years of vague hypogastric pain, bloating, and intermittent constipation mimicking functional bowel disorders (irritable bowel syndrome) or common luminal parasitoses. Diagnostic difficulty arose because multiple direct stool microscopic exams and a repeat Kato-Katz test failed to detect parasite eggs, and previous empiric therapy with mebendazole and tinidazole had failed.\n2. Admission Breakpoint: The point of presentation to the tertiary center and abdominal CT scan (documenting chronic lower abdominal discomfort, childhood freshwater river exposure, normal physical exam, normal baseline CBC and LFTs, and CT demonstrating multiple enlarged pericecal and mesenteric lymph nodes), immediately prior to colonoscopy with mucosal biopsy, repeat Kato-Katz testing, and abdominal ultrasound.\n3. Differential Distinctions: Irritable bowel syndrome does not cause regional pericecal mesenteric lymphadenopathy or mucosal nodularity; luminal protozoa/nematodes are typically eradicated by tinidazole or mebendazole and seen on direct stool wet mounts; chronic intestinal schistosomiasis often yields negative stool egg smears due to low or entrapped egg excretion, requiring mucosal biopsy and revealing submucosal granulomas and Symmers periportal fibrosis.",
+  "case_prompt": "A 38-year-old male presented to a tertiary teaching hospital in the Southern Province of Rwanda complaining of a 3-year history of persistent hypogastric abdominal pain, excessive flatulence, and intermittent constipation. He was born and resided in the Nyagatare district in the Eastern Province, and attested to having swum regularly in local freshwater rivers since childhood. He denied diarrhea, fevers, weight loss, anorexia, or other medical comorbidities. Prior to referral, he had received empirical courses of proton pump inhibitors, mebendazole, and tinidazole without symptomatic improvement.\n\nOn physical examination, the abdomen was soft and non-tender, with no palpable hepatomegaly, splenomegaly, ascites, or visible collateral abdominal venomegaly.\n\nInitial laboratory investigations revealed a normal complete blood count, normal liver transaminases, and multiple negative direct stool examinations for protozoa, worms, and ova. Prior esophagogastroduodenoscopy was normal.\n\nContrast-enhanced computed tomography (CT) of the abdomen performed at presentation revealed multiple enlarged pericecal and mesenteric lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Common Luminal Parasitic Infection (Giardiasis / Intestinal Helminthiasis)",
+      "rule_out_reason": "Considered due to gastrointestinal symptoms in an endemic region; however, symptoms failed to respond to mebendazole and tinidazole, and multiple microscopic stool examinations showed no evidence of protozoa, worms, or ova.",
+      "quote": "Prior to presentation, basic investigations including negative multiple direct stool exams for protozoa (worms or eggs), normal liver transaminases and complete blood count. Due to vague abdominal pain, he underwent esophagogastroduodenoscopy which was normal, and the pain had not previously responded to proton pump inhibitors, mebendazole or tinidazole during the course of his symptoms."
+    },
+    {
+      "candidate": "Functional Gastrointestinal Disorder (Irritable Bowel Syndrome)",
+      "rule_out_reason": "Suggested by the 3-year duration of intermittent constipation, bloating, and normal routine blood tests and endoscopy; ruled out by abdominal CT revealing enlarged pericecal and mesenteric lymphadenopathy and endoscopic detection of mucosal nodules.",
+      "quote": "In our center he underwent abdominal CT scan which revealed multiple enlarged pericecal and mesenteric lymph nodes (Figure 1(a))."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Intestinal Schistosomiasis (Schistosoma mansoni)",
+      "rule_out_reason": "Established by colonoscopy demonstrating multiple nodular mucosal lesions in the ascending colon and cecum, with biopsy revealing intramucosal Schistosoma mansoni eggs surrounded by chronic inflammatory cells and eosinophils, and ultrasound demonstrating characteristic periportal fibrosis, followed by complete symptom resolution within 24 hours of praziquantel administration.",
+      "quote": "Repeat colonoscopy revealed multiple nodular lesions in the ascending colon and cecum (Figure 1(b)), and the biopsy revealed intramucosal Schistosoma mansoni eggs surrounded by chronic inflammatory cells, including eosinophils."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission narrative stopping at abdominal CT; zero mention of Schistosoma or biopsy in case prompt. Quotes verified verbatim."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12638133_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old woman with systemic sclerosis-associated interstitial lung disease (SSc-ILD) receiving dual immunosuppression (azathioprine and methylprednisolone) presents with subacute constitutional decline, fever, and new unilateral reticulogranular pulmonary infiltrates. The critical diagnostic tension is differentiating an acute autoimmune exacerbation or fibrotic flare of pre-existing collagen vascular interstitial pneumonia from an opportunistic bacterial or mycobacterial superinfection in an immunosuppressed host.\n2. Admission Breakpoint: The admission breakpoint is established immediately following admission physical examination, baseline laboratory investigations (showing anemia, leukocytosis, marked thrombocytosis, positive ANA, normal complements), and initial plain chest radiograph showing left paracardial infiltrates, but prior to sputum acid-fast bacilli staining, GeneXpert MTB/RIF assay, and high-resolution computed tomography (HRCT).\n3. Differential Distinctions: Acute flare/progression of SSc-ILD (NSIP pattern) presents with dyspnea, basilar velcro crackles, and interstitial opacities, but does not explain acute high thrombocytosis (894,000/uL), leukocytosis, or focal consolidation responsive to antimicrobial management. Typical acute community-acquired pneumonia typically lacks a prolonged subacute 2-month wasting history with prominent tree-in-bud nodular architecture.",
+  "case_prompt": "A 45-year-old woman presented to the hospital with a 1-week history of generalized weakness, intermittent fever, nausea, and vomiting, and an unintentional weight loss of 5 kg over the prior 2 months. She also reported a 1-month history of reduced appetite and productive cough. There was no history of night sweats, hemoptysis, or known contact with individuals having chronic cough. She reported no smoking or alcohol use.\n\nEight months prior, she had been diagnosed with a connective tissue disease based on joint pain and stiffness in both wrists and knees, amenorrhea, and progressive skin thickening. She had since been maintained on immunosuppressive therapy with azathioprine (50 mg twice daily) and methylprednisolone (4 mg twice daily), along with lansoprazole, calcium lactate, and folic acid.\n\nOn physical examination, vital signs were stable. Examination revealed generalized weakness, sclerodactyly, and skin thickening on both hands extending proximally. Chest auscultation revealed velcro crackles in the left lung field. Cardiovascular and abdominal examinations were unremarkable.\n\nInitial laboratory studies demonstrated a normocytic normochromic anemia with hemoglobin of 7.4 g/dL, leukocytosis with a white blood cell count of 14,400/microL, marked thrombocytosis with a platelet count of 894,000/microL, hypoalbuminemia with serum albumin of 2.87 g/dL, and serum sodium of 132 mmol/L. Complement levels were normal (C3 106.3 mg/dL, C4 38.05 mg/dL), and antinuclear antibody (ANA) titer was elevated at greater than 1:400.\n\nA plain thoracic radiograph revealed left paracardial reticulogranular infiltrates, indicating an active pneumonia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune exacerbation of systemic sclerosis-associated interstitial lung disease (SSc-ILD)",
+      "rule_out_reason": "Considered due to the patient's underlying rheumatologic diagnosis, progressive skin changes, and bibasilar/unilateral crackles; however, acute constitutional decline, fever, marked reactive thrombocytosis, and focal consolidation indicated a superimposed infective process rather than isolated progression of autoimmune fibrotic lung disease.",
+      "quote": "The immunosuppressive regimen was initiated to control autoimmune inflammation and prevent further fibrotic progression related to SSc-ILD... Thoracic radiograph revealed left paracardial reticulogranular infiltrates, indicating pneumonia"
+    },
+    {
+      "candidate": "Typical community-acquired bacterial pneumonia",
+      "rule_out_reason": "Considered given the acute-on-chronic productive cough, fever, leukocytosis, and radiographic infiltrate, but excluded by the protracted 2-month wasting timeline and demonstration of acid-fast mycobacterial bacilli rather than standard pyogenic bacterial pathogens.",
+      "quote": "Thoracic radiograph revealed left paracardial reticulogranular infiltrates, indicating pneumonia (Figure 2). Sputum examination revealed a positive result for acid-fast bacilli (AFB) (3+)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum examination yielding strongly positive acid-fast bacilli (3+) and GeneXpert MTB/RIF confirming rifampicin-sensitive Mycobacterium tuberculosis, complemented by HRCT identifying classical tree-in-bud branching opacities and infectious pulmonary nodules superimposed on underlying NSIP.",
+      "quote": "Sputum examination revealed a positive result for acid-fast bacilli (AFB) (3+), and GeneXpert MTB/RIF test confirmed Mycobacterium tuberculosis with rifampicin sensitivity... Additionally, the presence of tree-in-bud opacities and pulmonary nodules suggested concomitant pulmonary TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning protocol. Case prompt stops at admission chest radiograph and initial triage labs. Excluded sputum AFB smear, GeneXpert, and HRCT findings."
+}

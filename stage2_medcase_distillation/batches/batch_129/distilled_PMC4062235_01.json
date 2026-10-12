@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4062235_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An immigrant from Southeast Asia presents with chronic right upper quadrant pain, low-grade fevers, elevated ESR, and a 5.1 cm multiloculated mass in the pancreatic head with peripancreatic lymphadenopathy on CT. This presentation closely mimics a primary pancreatic adenocarcinoma or cystic neoplasm.\n2. Admission Breakpoint: Clinical history, geographic origin, vital signs, physical exam, baseline laboratory testing (CBC, ESR, chemistries, LFTs, tumor markers CA 19-9 and CEA), normal chest X-ray, and abdominal CT findings, stopping prior to endoscopic ultrasound (EUS) fine-needle aspiration cytopathology and mycobacterial culture.\n3. Differential Distinctions: Pancreatic adenocarcinoma was the main initial concern, though normal CA 19-9 and CEA lowered suspicion without excluding malignancy. Pyogenic pancreatic abscess was unlikely given the indolent multi-year course and negative blood cultures. EUS-FNA cytology showing necrotizing granulomatous inflammation without malignant cells and subsequent positive AFB culture established pancreatic tuberculosis.",
+  "case_prompt": "A 41-year-old woman presented to her primary care physician with a history of right upper quadrant abdominal pain that had been present intermittently for several years but had worsened considerably over the preceding year. She reported low-grade fevers and chills, but denied weight loss. She was born in Thailand and had immigrated to the United States 6 years prior. Her past medical history was unremarkable.\n\nOn physical examination, she was afebrile and vital signs were normal. Physical examination of the heart, lungs, and abdomen revealed no abnormal findings.\n\nLaboratory studies showed: white blood cell count 7,400/mm^3 with normal differential, hemoglobin 11.8 g/dL, and an elevated erythrocyte sedimentation rate (ESR) of 45 mm/h. Serum chemistries, liver function tests, and blood cultures were normal. Serum gastrointestinal tumor markers carbohydrate antigen 19-9 (CA 19-9) and carcinoembryonic antigen (CEA) were both within normal limits.\n\nA plain chest radiograph was normal. Contrast-enhanced computed tomography (CT) of the abdomen demonstrated a 5.1 cm × 2.8 cm multiloculated solid lesion in the head of the pancreas concerning for primary malignancy, accompanied by several enlarged peripancreatic lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary pancreatic adenocarcinoma / cystic neoplasm",
+      "rule_out_reason": "Raised as the primary concern on abdominal CT due to the large multiloculated pancreatic head mass and peripancreatic adenopathy, but ruled out when tumor markers were normal and EUS-FNA cytology showed granulomatous inflammation without malignant cells.",
+      "quote": "On abdominal computed tomography (CT) scan demonstrated a 5.1 cm x 2.8 cm multi-loculated solid lesion in the head of the pancreas concerning for a primary malignancy along with several enlarged lymph nodes in the peripancreatic region."
+    },
+    {
+      "candidate": "Pyogenic bacterial intra-abdominal abscess / bacterial infection",
+      "rule_out_reason": "Inconsistent with the prolonged, multi-year course, absence of leukocytosis, and sterile blood cultures.",
+      "quote": "Other studies including serum chemistries, liver function tests, and blood cultures were non-revealing."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "EUS-guided fine needle aspiration revealed necrotizing granulomatous inflammation with negative malignancy, and subsequent AFB culture from the cell block grew Mycobacterium tuberculosis complex.",
+      "quote": "Subsequently, the AFB culture was found to be positive for Mycobacterium tuberculosis complex from the pancreatic mass cell block and found to susceptible to ethambutol, isoniazid, pyrazinamide and rifampin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

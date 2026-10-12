@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4958465_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 3-year-old child presenting with acute high fever, retroorbital headache, and spontaneous gum bleeding who subsequently exhibits an acute parkinsonian movement disorder (resting tremors, cogwheel rigidity, mask-like facies, staccato speech) and mutism with bilateral basal ganglia and thalamic lesions on neuroimaging, mimicking viral encephalitis or an acute primary movement/coagulation disorder.\n2. Admission Breakpoint: Day 3 hospitalization triage including initial complaints, physical exam, baseline day 2-3 labs (WBC 8.15k, platelets 120k, AST 69.7, ALT 16, CRP 6 mg/dL, baseline PCV 32), prior to the onset of Parkinsonian tremors and rigidity on Day 5, nadir cytopenias, neuroimaging, and serology.\n3. Differential Distinctions: Primary hematologic bleeding disorder / coagulopathy is ruled out by normal coagulation parameters (INR 1.1, APTT 35) and acute transient self-limited course; Japanese encephalitis / enteroviral encephalomyelitis typically produces CSF pleocytosis, whereas CSF in this child showed only 2 lymphocytes with normal protein; dengue infection uniquely combines systemic capillary/platelet dynamics (spontaneous mucosal bleeding, thrombocytopenia, transaminitis) with acellular CSF, basal ganglia/thalamic hypodensity on CT, and positive anti-dengue IgM antibodies.",
+  "case_prompt": "A previously healthy 3-year-old girl is admitted with a three-day history of continuous high fever, intermittent abdominal pain, vomiting, and retro-orbital headache. Her parents report an isolated episode of spontaneous gum bleeding on the first day of illness. On initial evaluation, she is febrile and irritable but neurologically intact. Vital signs, urinary output, and serial hematocrit readings are stable, with a baseline packed cell volume (PCV) of 32. Laboratory testing obtained on illness day two to three reveals a white blood cell count of 8.15 × 10³/mm³ with 85% neutrophils, a platelet count of 120,000/mm³, a normal C-reactive protein of 6 mg/dL, an alanine transaminase (ALT) of 16 U/L, and an aspartate transaminase (AST) of 69.7 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Japanese Encephalitis / Pediatric Viral Meningoencephalitis",
+      "rule_out_reason": "Acute onset of high fever followed on day 5 by tremors, cogwheel rigidity, masked facies, and bilateral thalamic/basal ganglia lesions in a young child strongly suggested acute viral encephalitis (such as Japanese encephalitis); however, CSF evaluation showed an absence of significant pleocytosis (only 2 lymphocytes) with normal protein, which argues against classical direct viral neuroinvasion.",
+      "quote": "Cerebrospinal fluid examination showed 2 lymphocytes without any polymorphs and normal proteins. She recovered dramatically and showed complete recovery within 3 weeks after onset of illness."
+    },
+    {
+      "candidate": "Primary Coagulation Disorder / Severe Sepsis with DIC",
+      "rule_out_reason": "Recurrent spontaneous mucosal bleeding (gum bleeding) in the setting of acute infection raised concern for an acute primary coagulopathy or disseminated intravascular coagulation; however, clotting parameters remained completely normal despite worsening thrombocytopenia.",
+      "quote": "However, there was a second episode of gum bleeding on day 5 with normal clotting profile (INR: 1.1 and APTT: 35)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by serological testing showing positive IgM and negative IgG antibodies specific for dengue virus, together with the evolution of leukopenia (2.27 × 10³/mm³), thrombocytopenia (67,000/mm³), hepatic tenderness with transaminitis, and brain CT demonstrating diffuse bilateral basal ganglia and thalamic hypodensity.",
+      "quote": "She was positive for IgM and negative for IgG antibodies for dengue virus... CT scan of brain revealed diffuse hypodense areas in bilateral basal ganglia and thalamus with predominant involvement of right side (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case strictly respects the admission breakpoint on Day 3 before parkinsonian features emerged on Day 5. The prompt includes initial gum bleeding and baseline laboratories while keeping neuroimaging and serology for the diagnostic reasoning section. Quotes are verbatim."
+}

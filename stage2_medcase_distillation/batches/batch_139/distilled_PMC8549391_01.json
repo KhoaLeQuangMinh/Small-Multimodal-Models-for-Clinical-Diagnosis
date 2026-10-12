@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8549391_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 52-year-old painter with uncontrolled diabetes mellitus, chronic alcohol consumption, and smoking from rural Bihar presents with prolonged fever, polyarthralgia, limb swelling, and an ultrasound-detected saphenofemoral vein thrombosis. Initial clinical presentation strongly mimics necrotizing fasciitis with deep vein thrombosis or septic polyarthritis. The underlying condition is disseminated septicaemic melioidosis with multiorgan occult abscesses (lungs, spleen, prostate, muscle).\n2. Admission Breakpoint: Clinical evaluation ends after admission history, exam (tender joints, pitting edema, lack of erythema), baseline labs (WBC 17,000/uL, platelets 38,000/uL, blood sugar 250 mg/dL, HbA1c 13.53%, CRP 97.32 mg/L), and lower limb ultrasound showing a 5.6-mm saphenofemoral thrombus, strictly prior to blood culture positivity and pathogen identification.\n3. Differential Distinctions: Lower limb necrotizing fasciitis with DVT was the primary admission differential; however, inspection revealed no cutaneous discoloration or erythema, empiric treatment with piperacillin/tazobactam, clindamycin, and vancomycin failed to prevent septic shock, and blood cultures revealed characteristic bipolar bacilli. Isolated septic arthritis was excluded when subsequent CT imaging demonstrated multiple occult abscesses throughout the lungs, spleen, prostate, and musculature.",
+  "case_prompt": "A 52-year-old male painter presented to the outpatient department of a tertiary care hospital with recurrent episodes of fever with chills throughout the past month. He also complained of dull, aching, continuous, non-migratory pain in bilateral feet, the right knee, the right shoulder joint, and the neck for the preceding 20 days, accompanied by swelling of bilateral upper and lower extremities. He had a 4-year history of progressive weight loss, an 8-year history of uncontrolled diabetes mellitus, chronic heavy alcohol consumption (>5 drinks/day), and chronic cigarette smoking. He resided in a rural district of Bihar, living in a kutcha house close to paddy fields. He reported no history of trauma, respiratory complaints, or prior surgeries. On presentation, temperature was 37 \u00b0C, pulse 78 beats/min, and blood pressure 98/72 mmHg. Physical examination revealed pallor and pitting edema of the upper and lower limbs, with no erythema or discoloration of the overlying skin. Palpation of the right knee and shoulder joints was acutely tender, and he was unable to walk or abduct the right arm because of pain. Admission random blood sugar was 250 mg/dL. Initial hematological investigations revealed a total leukocyte count of 17,000/\u03bcL with 90.6% neutrophils, a platelet count of 38,000/\u03bcL, C-reactive protein of 97.32 mg/L, and HbA1c of 13.53%. Serum urea was 53.5 mg/dL and creatinine was 0.98 mg/dL. Viral serologies for HIV, hepatitis B, and hepatitis C were non-reactive. Bedside ultrasound of the right lower extremity revealed a 5.6-mm thrombus in the right saphenofemoral vein.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lower limb necrotizing fasciitis with deep vein thrombosis",
+      "rule_out_reason": "Working diagnosis on admission based on extreme limb pain, swelling, profound leukocytosis with thrombocytopenia, and saphenofemoral vein thrombosis; however, skin inspection lacked erythema or necrosis, standard empiric regimens (piperacillin/tazobactam, vancomycin, clindamycin) failed, and blood cultures identified the true environmental pathogen.",
+      "quote": "An ultrasound of the right lower limb revealed a 5.6 mm thrombus in the right saphenofemoral vein. A differential diagnosis of lower limb necrotizing fasciitis with deep vein thrombosis was made."
+    },
+    {
+      "candidate": "Isolated pyogenic septic arthritis / Polyarthritis",
+      "rule_out_reason": "Acute severe tenderness of the right knee and shoulder joints with marked immobility raised strong suspicion for septic arthritis; however, comprehensive CT imaging revealed disseminated multiorgan infection with deep abscesses in the lungs, spleen, prostate, and shoulder musculature.",
+      "quote": "Palpation of the knee and shoulder joint was acutely tender. The patient was unable to walk or abduct the right arm because of pain."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when blood cultures flagged positive within 48 hours for bipolarly stained Gram-negative bacilli exhibiting characteristic colonial morphology and intrinsic aminoglycoside/polymyxin resistance, confirmed as Burkholderia pseudomallei by VITEK-II, alongside CT imaging revealing occult visceral abscesses.",
+      "quote": "The organism was presumptively identified as   Burkholderia pseudomallei   by routine biochemical reactions and resistance to colistin, polymyxin B (300 units) and aminoglycosides, along with a sensitive zone size for amoxicillin/clavulanate."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11384573_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 39-year-old male presenting with acute high fever (up to 40.6 C), severe headache, elevated inflammatory markers, and an extensive eruptive symmetric cutaneous eruption with diffuse infiltration following exposure to rain, masquerading as acute bacterial sepsis, systemic vasculitis, or rheumatologic disease, but representing a Type II leprosy reaction (erythema nodosum leprosum) superimposed on undiagnosed multibacillary leprosy with chronic peroneal neuropathy.\n2. Admission Breakpoint: Stops after presentation with fever and rash, physical examination detailing diffuse cutaneous infiltration and symmetric brown patches, and initial laboratory evaluation showing leukocytosis, neutrophil predominance, and elevated inflammatory markers, before send-out autoimmune serologies, lumbar puncture, plantar skin biopsy, or mNGS.\n3. Differential Distinctions: Systemic vasculitis or adult-onset Still's disease produces high spiking fevers, leukocytosis, elevated ferritin, and widespread rash, but has characteristic autoimmune serology or multiorgan involvement and lacks Virchow cell infiltration on biopsy. Acute bacterial sepsis or zoonotic fever (typhoid, brucellosis, rickettsiosis) presents with acute fevers and systemic toxicity following outdoor exposures, but features positive cultures or serologies and responds to broad-spectrum antibiotics. Multibacillary leprosy with Type II reaction produces immune-complex mediated erythema nodosum leprosum flares with intense neutrophilic inflammation, resolving promptly with corticosteroids and multi-drug therapy.",
+  "case_prompt": "A 39-year-old male from Hunan Province, China, was admitted to the hospital with a 5-day history of recurrent fevers and a 4-day history of an extensive cutaneous rash. Immediately preceding the onset of illness, he had been caught in heavy rain, subsequently developing high fevers reaching 40.6 C accompanied by headache and weakness. Within one day of fever onset, rashes appeared on his trunk and upper limbs, gradually spreading downwards to involve both lower limbs. Past surgical history was notable for a right common peroneal nerve release performed several years earlier that yielded no significant postoperative improvement, the etiology of which had remained undetermined. Physical examination revealed an acutely febrile patient with diffuse cutaneous infiltration throughout the body, particularly prominent on the limbs, along with symmetrically distributed brown patches on both buttocks, lower limbs, and palms. Initial laboratory evaluation demonstrated a white blood cell count of 11.21 x 10^9/L with an absolute neutrophil count of 9.38 x 10^9/L, and elevated systemic inflammatory markers including C-reactive protein, erythrocyte sedimentation rate (ESR), ferritin, and procalcitonin. Initial head MRI and non-contrast CT scans of the chest and abdomen showed no focal abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic vasculitis / Autoimmune connective tissue disease / Adult-onset Still's disease",
+      "rule_out_reason": "Considered due to high spiking fevers, widespread cutaneous eruption with symmetric brown plaques, and profound elevations in ferritin and ESR. Ruled out by comprehensively negative autoimmune and rheumatologic screening panels.",
+      "quote": "No abnormalities were detected in blood culture, viral testing, rheumatism screening, lupus evaluation, idiopathic inflammatory myopathy spectrum investigation, vasculitis assessment, brucella antibody examination, Widal test, Weil-Felix test and T-spot test."
+    },
+    {
+      "candidate": "Acute bacterial sepsis / Zoonotic infectious fever (Brucellosis, Typhoid, Rickettsiosis)",
+      "rule_out_reason": "Considered given sudden onset of high fever (40.6 C) after outdoor rain exposure with elevated procalcitonin and neutrophilia. Ruled out by negative blood cultures, negative Widal and Weil-Felix tests, and fever recrudescence despite empiric broad-spectrum antibiotics.",
+      "quote": "Although the exact pathogen could not be identified, the patient was diagnosed with infectious fever and treated with a broad-spectrum antibiotic regimen consisting of piperacillin tazobactam and moxifloxacin for five days. While his body temperature temporarily returned to normal during treatment period it subsequently increased again."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of skin lesions demonstrating perivascular Virchow cell infiltration in the dermis packed with acid-fast bacilli (bacteriological index 5.7), establishing multibacillary leprosy presenting with an acute Type II lepra reaction.",
+      "quote": "The epidermis exhibited slight hypertrophy, and a virchow cells infiltration surrounded the vessels in the superficial dermis. Additionally, lymphocytes were observed in the dermis, while acid-fast staining revealed a significant presence of bacilli ( Figures 1D-F ). The mean Bacteriological Index obtained from SSS analysis was 5.7."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Prompt strictly ends at admission clinical evaluation and initial labs, avoiding any mention of leprosy, M. leprae, ENL, or biopsy results. Exact verbatim quotes used throughout diagnostic reasoning."
+}

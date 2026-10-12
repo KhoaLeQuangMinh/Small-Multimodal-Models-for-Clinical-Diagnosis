@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5437806_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 6-year-old child presents with neck stiffness and a well-defined cervical intramedullary cystic lesion at C4-C6 with cord edema in the setting of a known household contact with tuberculosis, but without neurological deficits. The clinical tension lies in differentiating an intramedullary tuberculoma or spinal cord neoplasm (astrocytoma/ependymoma) from solitary intramedullary cysticercosis, an extraordinarily rare manifestation (<1% of neurocysticercosis cases).\n2. Admission Breakpoint: Admission triage encompasses clinical history, orthopedic examination, neurologic assessment, routine blood tests, chest CT, abdominal ultrasound, and noncontrast MRI of the cervical spine showing a cystic intramedullary lesion. It strictly concludes prior to detailed scolex identification, serum Ag-ELISA, and medical therapy.\n3. Differential Distinctions: Intramedullary tuberculoma was strongly considered given family tuberculosis exposure, but ruled out by absence of systemic B-symptoms, normal chest CT, and cystic rather than solid/caseating ring-enhancing morphology. Intramedullary cord neoplasms typically cause progressive neurological deficits. The pathognomonic identification of a T2-hypointense eccentric mural scolex ('target' sign) fulfills Del Brutto's absolute neuroimaging criteria for neurocysticercosis.",
+  "case_prompt": "A 6-year-old female child from a low socioeconomic background is referred to an orthopedic clinic with a 1-week history of insidious-onset neck stiffness and minimal cervical pain. Her parents report a history of contact with an individual being treated for chronic pulmonary illness, but report no history of trauma, evening fevers, night sweats, anorexia, or weight loss.\n\nOn physical examination, she is comfortable with normal vital signs. Neurological examination reveals intact cranial nerves, normal motor strength and sensory modalities in all four extremities, and preserved deep tendon reflexes without focal neurological deficits. Routine laboratory testing is normal aside from mild peripheral eosinophilia. Fundoscopic examination shows no evidence of increased intracranial pressure. Screening abdominal sonography and chest computed tomography (CT) are unremarkable.\n\nNoncontrast magnetic resonance imaging (MRI) of the neck demonstrates a well-defined intramedullary cystic lesion spanning the C4 to C6 vertebral levels with surrounding spinal cord edema, exhibiting hypointensity on T1-weighted and hyperintensity on T2-weighted sequences.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramedullary Tuberculoma / Spinal Tuberculosis",
+      "rule_out_reason": "Considered as a primary diagnosis given a clear history of tuberculosis contact in a patient of low socioeconomic status, but argued against by the lack of fever, night sweats, or weight loss, a normal chest CT scan, and purely cystic imaging features rather than solid caseating granulomatous lesions.",
+      "quote": "Patient's parent gave a history of tuberculosis contact, but had no history of trauma, evening increase of temperature, decrease appetite, and significant weight loss."
+    },
+    {
+      "candidate": "Pediatric Intramedullary Spinal Neoplasm (Astrocytoma / Ependymoma)",
+      "rule_out_reason": "Considered as the most common pediatric intramedullary mass lesions, but ruled out by the complete absence of progressive motor or sensory deficits and the presence of a well-circumscribed cystic lesion rather than an infiltrative or solid enhancing neoplasm.",
+      "quote": "Examination showed no motor or sensory deficit with all reflexes intact."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cervical spine MRI demonstrated an eccentric intracystic T2-hypointense 'target'-like mural nodule representing the pathognomonic scolex, fulfilling absolute diagnostic criteria for solitary intramedullary neurocysticercosis, which was further corroborated by positive serum Ag-ELISA and symptom resolution on albendazole and steroids.",
+      "quote": "Noncontrast MRI of the neck showed a well-defined intramedullary cystic lesion at C4-C6 vertebral levels, which was hypointense on T1 weighted and hyperintense on T2 weighted images with peripheral, spinal cord edema having an intracystic hypointense on T2 weighted \"target\" like lesion suggestive of scolex."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres to Stanford MedCaseReasoning criteria. Breakpoint stops prior to scolex characterization, Ag-ELISA testing, and antiparasitic therapy."
+}

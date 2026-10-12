@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12313717_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 5-year-old child presents with an asymptomatic large abdominal mass and multi-organ (hepatic and renal) non-enhancing cystic masses from an endemic pastoral region. The primary clinical challenge is distinguishing multi-organ parasitic hydatid cysts from benign renal/hepatic cysts or hydronephrosis without risking cystic rupture, spillage, or anaphylaxis.\n2. Admission Breakpoint: The admission breakpoint is established immediately after initial physical examination, baseline laboratory investigations (CBC and liver enzymes), and abdominal computed tomography demonstrating hypodense, non-enhancing hepatic and renal lesions, but before specific serological antibody testing (ELISA), surgical intervention, and histopathological analysis.\n3. Differential Distinctions: Simple renal cyst and congenital hydronephrosis can present as asymptomatic retroperitoneal/renal cystic masses, but cannot account for concurrent multifocal non-enhancing hypodense hepatic lesions or the patient's pastoral livestock exposure history.",
+  "case_prompt": "A 5-year-old boy from a rural region of Tibet, China, where yak herding constitutes the predominant economic activity, was admitted to the hospital following the identification of a palpable abdominal mass one month prior.\n\nThe patient was asymptomatic, with no history of abdominal pain, nausea, vomiting, fever, or other gastrointestinal complaints. Past medical history and family history were unremarkable.\n\nOn physical examination, the patient was non-jaundiced and had no superficial lymphadenopathy. Abdominal examination revealed a palpable mass situated in the right lower quadrant of the abdomen, measuring approximately 5 cm in diameter and exhibiting a slightly firm consistency. The remainder of the physical examination was unremarkable.\n\nLaboratory investigations revealed a normal complete blood count and normal liver function tests.\n\nComputed tomography demonstrated multiple hypodense lesions distributed throughout the liver, with the largest lesion in the posterior segment of the right lobe measuring approximately 72 x 55 mm, which did not exhibit enhancement on contrast imaging. The inferior vena cava exhibited compression and narrowing, accompanied by partial occlusion and a cystic lesion of the right kidney.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple renal cyst",
+      "rule_out_reason": "Considered preoperatively in the differential diagnosis of the right renal cystic lesion, but the co-existence of extensive non-enhancing hepatic parenchymal masses and intraoperative visualization of encapsulated translucent membranes involving both organs excluded an isolated benign renal cyst.",
+      "quote": "The differential diagnoses considered included a simple cyst, hydronephrosis, and renal echinococcosis. In the event that a simple renal cyst was identified intraoperatively, the planned intervention involved cyst puncture and drainage."
+    },
+    {
+      "candidate": "Hydronephrosis",
+      "rule_out_reason": "Considered due to the anatomical distortion and partial occlusion of the right kidney, but excluded because the lesion was an encapsulated intra-parenchymal cystic mass without primary pelvicalyceal collecting system dilatation or urinary tract obstruction.",
+      "quote": "The differential diagnoses considered included a simple cyst, hydronephrosis, and renal echinococcosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive serum IgG antibody testing, combined with surgical exploration revealing multiple firm translucent masses with intact cyst membranes and powdery skin-like cuticular contents communicating with the biliary tract, alongside a right renal cyst, and histopathological demonstration confirming Echinococcus granulosus infection.",
+      "quote": "Computed tomography (Figure 1) demonstrated multiple hypodense lesions distributed throughout the liver... Intraoperative exploration revealed multiple firm, translucent masses located in segments II, III, IV, and VII of the liver, each encapsulated by intact cyst membranes... Histopathological examination confirmed infection with Echinococcus granulosus"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning protocol. Case prompt stops at admission triage and CT imaging. Excluded ELISA serology, histopathology, and pathogen names. Exact quotes verified from article text."
+}

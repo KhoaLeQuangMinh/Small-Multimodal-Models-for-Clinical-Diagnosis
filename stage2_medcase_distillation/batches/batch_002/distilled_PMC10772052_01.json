@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10772052_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A renal transplant recipient on immunosuppression presents with non-specific gastrointestinal symptoms and progressive bilateral lung infiltrates rapidly culminating in fatal massive airway hemorrhage, where immunosuppression blunted the expected peripheral eosinophilia and masked a disseminated helminthic hyperinfection syndrome.\n2. Admission Breakpoint: Day 1 admission evaluation including gastrointestinal complaints, transplant history and immunosuppressive medications, travel history to Guangdong, vital signs, physical examination (coarse lung sounds, mild abdominal tenderness), admission labs (CBC showing suppressed eosinophils, elevated creatinine, low procalcitonin), and initial chest CT opacities, stopping strictly before bronchoscopic findings, sputum mNGS, and microscopic identification of parasitic larvae.\n3. Differential Distinctions: Pneumocystis jirovecii pneumonia (PJP) is a prime consideration in non-prophylaxed transplant patients with bilateral diffuse CT infiltrates, but does not cause acute massive pulmonary alveolar hemorrhage or intestinal gas distension. Severe bacterial pneumonia (e.g. enteric bacilli) may cause pulmonary infiltrates, but low procalcitonin and normal leukocyte counts argue against primary pyogenic pneumonia, pointing instead to larval helminthic dissemination carrying intestinal flora across the alveolar-capillary barrier.",
+  "case_prompt": "A 47-year-old male with end-stage renal disease secondary to uremia for 13 years, who underwent renal transplantation two months prior, is admitted to the hospital with nausea, vomiting, and abdominal bloating persisting for 3 days. Post-transplant maintenance immunosuppressive medications include oral prednisone (20 mg daily), tacrolimus (3 mg every 12 hours), and mycophenolate mofetil (0.5 g every 12 hours); he was not prescribed antimicrobial prophylaxis for opportunistic pneumonia. Two years prior, he traveled to Guangdong Province in southern China without immediate discomfort; however, two months after returning, routine testing revealed a transient peripheral eosinophilia of 2.53 x 10^9/L, which resolved spontaneously over six months without treatment.\n\nOn admission physical examination, vital signs are stable. Bilateral lungs exhibit distinct coarse breath sounds. Abdominal examination reveals mild tenderness in the upper left quadrant and 7–8 bowel sounds per minute, without peritoneal signs. The remainder of the physical examination is normal.\n\nBaseline laboratory evaluation reveals a white blood cell count of 5.34 x 10^9/L, hemoglobin of 91 g/L, lymphocyte count of 0.18 x 10^9/L, and eosinophil count of 0.29 x 10^9/L. Procalcitonin is 0.63 ng/mL. Serum creatinine is elevated at 283.4 umol/L; liver function tests are within normal limits. An abdominal plain radiograph shows partial intestinal gas accumulation with no obstruction. Admission computed tomography of the chest reveals widespread nodular opacities and patchy areas of increased density in both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pneumocystis jirovecii Pneumonia (PJP)",
+      "rule_out_reason": "Considered due to heavy post-transplant immunosuppression without trimethoprim-sulfamethoxazole prophylaxis, subacute hypoxemia, and bilateral patchy opacities on chest CT, but empiric therapy failed to halt rapid deterioration and microscopy lacked fungal forms while demonstrating parasitic larvae.",
+      "quote": "Combining the patient's chest CT and medical history, it was considered that the patient could be suffering from PJP, thus sulfamethoxazole-trimethoprim (1.92g intravenously every 6 hours) for PJP was added to the treatment."
+    },
+    {
+      "candidate": "Primary Gram-Negative Bacterial Pneumonia",
+      "rule_out_reason": "Considered because metagenomic sequencing recovered enteric organisms (Escherichia coli, Klebsiella pneumoniae), but normal leukocyte counts and low procalcitonin levels indicated that these represented secondary bacterial translocation rather than primary pyogenic lung infection.",
+      "quote": "Considering the patient's chest CT more with Strongyloides stercoralis infection than with typical bacterial infection, and noting that neither white blood cell count nor procalcitonin levels showed significant elevation, it is believed that the primary concern is a Strongyloides stercoralis infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum metagenomic next-generation sequencing identified over 271,000 sequence reads of Strongyloides stercoralis, and direct sputum smear microscopy confirmed filariform larvae, establishing disseminated strongyloidiasis hyperinfection syndrome with fatal massive alveolar hemorrhage triggered by corticosteroid-driven autoinfection.",
+      "quote": "On August 7, sputum metagenomics next-generation sequencing (mNGS) revealed Escherichia coli with 40,668 sequence reads, Klebsiella pneumoniae with 3373 sequence reads, and Strongyloides stercoralis with 271,732 sequence reads (Figure 2). Simultaneously, Strongyloides stercoralis was seen in the sputum smear"
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt isolates Day 1 triage without disclosing mNGS or Strongyloides findings. Zero pathogen names in case prompt. Verbatim citations and differential rule-outs verified."
+}

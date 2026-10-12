@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8282370_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 2-day-old neonate born to an asymptomatic mother who attended regular antenatal care and took chemoprophylaxis, presenting with acute high fever, irritability, poor feeding, and jaundice at 36 hours of life. The clinical features strongly suggested early-onset neonatal bacterial sepsis or alloimmune hemolytic disease (Rh/ABO incompatibility), overshadowing congenital malaria.\n2. Admission Breakpoint: Clinical evaluation and baseline laboratory triage (vitals, exam, CBC, blood typing, serum bilirubin) upon admission to the referral hospital, before rapid diagnostic testing (mRDT), thin blood smear microscopy, and maternal blood parasite testing.\n3. Differential Distinctions: Early-onset neonatal bacterial sepsis is the paramount differential in a febrile, irritable, jaundiced 2-day-old infant, but was excluded when C-reactive protein at 48 hours was nonreactive and clinical improvement occurred with antimalarials. Rh or ABO hemolytic disease of the newborn presents with early neonatal jaundice, but both mother and neonate were blood group A Rh-negative, hemoglobin was normal (15.2 g/dL), and hemolysis was parasite-mediated. Congenital malaria occurs via transplacental transmission even when maternal peripheral smear is negative.",
+  "case_prompt": "A 2-day-old neonate is admitted to a regional referral hospital with high-grade fever, irritability, poor breastfeeding, and jaundice that developed approximately 36 hours after delivery. The infant was born to a 29-year-old G2P1 mother who attended antenatal care six times starting in the first trimester. Antenatal maternal screening for HIV, syphilis, and hepatitis B was negative, and the pregnancy was reportedly uneventful.\n\nOn physical examination, the neonate is conscious with an axillary temperature of 38.0\u00b0C and visible jaundice (Kramer stage 2). There is no respiratory distress, pallor, dehydration, or dysmorphic features, and systemic examination is unremarkable.\n\nBaseline investigations reveal a complete blood count with a hemoglobin of 15.2 g/dL, white blood cell count of 11.79 \u00d7 10^3/\u03bcL, and platelet count of 244 \u00d7 10^3/\u03bcL. Blood group is A Rhesus D negative. Total serum bilirubin is 200.33 \u03bcmol/L with a direct bilirubin of 7.48 \u03bcmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Early-onset neonatal bacterial sepsis",
+      "rule_out_reason": "High-grade fever, irritability, poor feeding, and jaundice within 36 hours of birth prompted empiric coverage for presumed neonatal sepsis; however, C-reactive protein at 48 hours was nonreactive and antibiotics were stopped as parasitemia cleared on antimalarials.",
+      "quote": "Intravenous empiric antibiotics (cloxacillin and cefotaxime) for presumed neonatal sepsis were also administered. After 48 hours of antibiotics, C-reactive protein (CRP) was done and it was nonreactive, and the antibiotics were stopped."
+    },
+    {
+      "candidate": "Rh or ABO isoimmunization / Hemolytic disease of the newborn",
+      "rule_out_reason": "Early-onset neonatal jaundice in an infant born to an Rh-negative mother raised suspicion of isoimmune hemolysis; however, both the mother and infant were blood group A Rh-negative, hemoglobin was normal (15.2 g/dL), and platelet count was preserved.",
+      "quote": "Complete blood count was normal with Hb of 15.2 g/dl, white blood cells 11.79*103/ul, and platelet count 244*103/ul."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A malaria rapid diagnostic test (MRDT) was positive for P. falciparum, and a thin blood smear demonstrated intraerythrocytic P. falciparum trophozoites (1.846 \u00d7 10^3 infected red blood cells), confirming congenital malaria.",
+      "quote": "Malaria rapid diagnostic test (MRDT) for P. falciparum was positive; thin blood smear showed P. falciparum malaria species with 1.846*103 malaria-infected red blood cells."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at initial triage labs (CBC, blood type, bilirubin). Zero mention of malaria, falciparum, mRDT, or blood smear in case_prompt. Direct quotes verified verbatim from case text."
+}

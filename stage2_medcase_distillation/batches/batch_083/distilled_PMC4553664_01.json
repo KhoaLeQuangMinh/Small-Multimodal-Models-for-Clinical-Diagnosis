@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4553664_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A young woman from a rural background presents with chronic headache, gait instability, and bilateral papilledema due to a large non-enhancing intraventricular cystic mass in the left lateral ventricle. The clinical tension lies in differentiating benign intraventricular neuroepithelial cysts (e.g., colloid cyst, ependymal cyst) or cystic neuroepithelial neoplasms from an isolated cerebral intraventricular hydatid cyst without systemic or visceral involvement.\n2. Admission Breakpoint: The admission narrative concludes after physical and funduscopic examination, baseline hematologic labs, normal systemic imaging (chest X-ray, echocardiogram, abdominopelvic ultrasound), and neuroimaging (CT/MRI/MRS) establishing a non-enhancing 4 x 3 x 3 cm left lateral ventricular multilocular cyst with internal daughter cysts and an acetate peak, prior to craniotomy.\n3. Differential Distinctions: Simple neuroepithelial cysts (colloid, epidermoid, ependymal) and cystic intraventricular neoplasms (central neurocytoma, astrocytoma) are ruled out by the absence of contrast enhancement, presence of internal daughter cysts, specific acetate peak on magnetic resonance spectroscopy, and histopathological confirmation of a laminated hydatid cyst.",
+  "case_prompt": "A 21-year-old woman with a rural background presents to the outpatient clinic with a 3-year history of headache and a 6-month history of difficulty walking.\n\nOn physical examination, general physical findings are unremarkable. Neurological examination reveals bilateral papilledema without focal cranial nerve or motor deficits.\n\nHematological and biochemical investigations are within normal limits. Chest radiography, transthoracic echocardiography, and ultrasonography of the abdomen and pelvis demonstrate no abnormalities.\n\nCranial computed tomography (CT) reveals mild asymmetrical dilatation of the left lateral ventricle without periventricular edema, suggestive of outlet obstruction. Brain magnetic resonance imaging (MRI) reveals an altered signal intensity complex cystic lesion measuring approximately 4 cm x 3 cm x 3 cm located in the left lateral ventricle near the foramen of Monro, causing expansion of the left lateral ventricle and mild midline shift toward the right. Multiple small daughter cysts are visualized within the main cystic cavity. Following contrast administration, no significant enhancement is noted within the lesion. Magnetic resonance spectroscopy (MRS) demonstrates a distinct acetate peak. No additional lesions are identified in the ventricles or brain parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intraventricular neuroepithelial cyst (colloid cyst / ependymal cyst)",
+      "rule_out_reason": "A non-enhancing cystic mass near the foramen of Monro causing unilateral ventricular obstruction commonly represents a colloid or ependymal cyst; however, these benign cysts are unilocular and do not display internal daughter cysts or an acetate peak on spectroscopy.",
+      "quote": "Magnetic resonance imaging (MRI) of the brain showed evidence of altered signal intensity complex cystic lesion measuring, approximately 4 cm x 3 cm x 3 cm, noted in left lateral ventricle near foramen of Munro leading to widening of left lateral ventricle with mild midline shift toward right side. Few small daughter cysts noted within the cyst."
+    },
+    {
+      "candidate": "Intraventricular cystic neoplasm (e.g., central neurocytoma, choroid plexus papilloma)",
+      "rule_out_reason": "Cystic intraventricular neoplasms typically exhibit solid contrast-enhancing mural components and elevated choline peaks on MRS; in contrast, this lesion demonstrated complete lack of contrast enhancement and a prominent acetate resonance.",
+      "quote": "No significant postcontrast enhancement noted within the lesion [Figure 1b]. Magnetic resonance spectroscopy (MRS) showed acetate peak."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microsurgical left frontal craniotomy with saline hydrodissection of the cleavage plane allowed intact removal of the cystic mass, with histopathologic examination establishing the definitive diagnosis of a hydatid cyst.",
+      "quote": "The histopathologic findings were consistent with hydatid cyst [Figure 3a and b]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of primary solitary intraventricular cerebral hydatid cyst. Admission prompt stops before surgical intervention, intraoperative hypertonic saline irrigation, and histopathology."
+}

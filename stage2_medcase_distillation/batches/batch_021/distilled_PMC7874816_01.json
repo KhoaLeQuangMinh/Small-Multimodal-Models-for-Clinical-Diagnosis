@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7874816_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 27-year-old pastoral resident presents with recurrent right upper quadrant pain found to have synchronous, anatomically distinct liver and kidney lesions: a 6-cm calcified cystic hepatic mass and a 2-cm hyperenhancing solid renal neoplasm. The core tension lies in deciphering whether the liver lesion represents metastatic clear cell renal carcinoma or a distinct benign/parasitic zoonotic cyst.\n2. Admission Breakpoint: The breakpoint is positioned after clinical presentation, history of canine/livestock exposure, physical examination, routine laboratory panels, baseline tumor markers, and initial abdominal ultrasound and CT imaging, right before specialized serological testing (dot immunogold filtration assay) and surgical resection/pathology.\n3. Differential Distinctions: Hepatic metastasis from renal cell carcinoma is excluded by normal serum tumor markers, peripheral wall calcification on CT, cystic architecture on ultrasound, and definitive identification of hydatid cyst architecture. Alveolar echinococcosis is ruled out by positive EgCF/EgP/EgB antibodies and negative Em2 antibody. Simple hepatic cyst is excluded by internal heterogeneous density and wall calcifications.",
+  "case_prompt": "A 27-year-old woman presented to the hospital with recurrent right upper quadrant abdominal pain. She resided in a pastoral agricultural region and reported regular contact with dogs and sheep. She reported no fever, nausea, vomiting, jaundice, or involuntary weight loss. On physical examination, vital signs were stable. Abdominal examination revealed mild tenderness to palpation in the right upper quadrant without rebound tenderness, guarding, or palpable organomegaly.\n\nLaboratory workup demonstrated normal liver function tests, normal renal function parameters, and normal coagulation profiles. Serum tumor markers were within normal limits, including CA 125, alpha-fetoprotein (AFP), carcinoembryonic antigen (CEA), and CA 19-9. Transabdominal ultrasound revealed a well-defined cystic mass measuring approximately 6 cm in diameter within the liver, alongside an incidental solid mass measuring approximately 2 cm in diameter in the right kidney. Subsequent contrast-enhanced abdominal computed tomography (CT) confirmed a 6 x 6 cm lesion in the right hepatic lobe exhibiting irregular margins, unclear boundaries, peripheral wall calcifications, and heterogeneous internal density. CT also demonstrated a 2 x 2 cm solid mass protruding from the right kidney that displayed intense enhancement following contrast administration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Renal Cell Carcinoma to the Liver",
+      "rule_out_reason": "Considered because of the synchronous solid, contrast-enhancing renal mass; ruled out because the hepatic lesion demonstrated cystic architecture with mural calcification rather than solid vascular metastasis, and intraoperative opening revealed a classic hydatid cyst.",
+      "quote": "The typical hydatid cyst was observed when the liver lesion was opened (Fig. 2A)."
+    },
+    {
+      "candidate": "Primary Hepatic Malignancy (Hepatocellular Carcinoma / Cholangiocarcinoma)",
+      "rule_out_reason": "Considered due to the 6-cm hepatic mass with irregular margins and heterogeneous density; ruled out by normal serum AFP and CA 19-9 levels, normal liver biochemistry, and characteristic parasitic cyst morphology.",
+      "quote": "The results of liver function, kidney function and coagulation function were normal. The levels of tumor markers, including CA 125, alpha fetoprotein, carcinoembryonic antigen and CA19-9 were within the normal ranges."
+    },
+    {
+      "candidate": "Alveolar Echinococcosis (Echinococcus multilocularis)",
+      "rule_out_reason": "Considered due to pastoral residence, irregular margins, and heterogeneous density mimicking alveolar echinococcosis; ruled out by negative Em2 serology alongside positive EgCF, EgP, and EgB antibodies specific for cystic echinococcosis.",
+      "quote": "The dot immunogold filtration assay showed that the antibodies of EgCF, EgP, EgB were positive and the Em2 antibody was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serological confirmation via dot immunogold filtration assay demonstrating positivity for cystic echinococcal antigens (EgCF, EgP, EgB) with negative Em2, establishing cystic echinococcosis coexisting with renal carcinoma.",
+      "quote": "Finally, she was diagnosed with liver Echinococcal cyst accompanied with clear cell renal carcinoma (Fig. 1D)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Immunogold serology and surgical pathology excluded from case_prompt. Zero pathogen spoilers."
+}

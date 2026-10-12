@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6796742_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 31-year-old Tanzanian male presents with an apparent routine, indolent right inguinal hernia of two years' duration. The benign presentation completely conceals an atypical sliding Amyand hernia containing an inflamed appendix with a hard apical pseudotumor induced by chronic helminthic granulomatosis.\n2. Admission Breakpoint: Outpatient surgical clinic presentation with an incompletely reducible right groin swelling exhibiting an expansile cough impulse, booked for elective Lichtenstein mesh hernioplasty, prior to operative dissection of the hernia sac and histopathologic examination of the appendix.\n3. Differential Distinctions: Uncomplicated inguinal hernia containing omentum or small bowel loop was the primary pre-operative impression, but operative exploration revealed an abnormal thickened hernia sac with an indurated appendiceal mass. Appendiceal neoplasm (such as neuroendocrine carcinoid or adenocarcinoma) was strongly considered when the hard tip mass was palpated intraoperatively, but histopathology showed necrotizing granulomas surrounding calcified trematode ova rather than neoplastic proliferation.",
+  "case_prompt": "A 31-year-old Tanzanian man presented to the outpatient surgery clinic with a two-year history of a right groin swelling that became progressively more prominent with standing and physical exertion. He described episodic dull discomfort in the right groin without severe pain, and denied any fevers, altered bowel habits, weight loss, or urological complaints. He had no significant past medical history. On physical examination, his vital signs were normal. Abdominal examination revealed a visible and palpable right groin swelling that did not extend into the scrotum. The overlying skin was normal without discoloration or erythema. The mass demonstrated an expansile cough impulse, was non-tender to palpation, and was only incompletely reducible. The remainder of the abdominal and genitourinary examinations was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uncomplicated inguinal hernia",
+      "rule_out_reason": "Considered clinically given the chronic reducible groin bulge with cough impulse in a young healthy male; however, surgical exploration revealed an atypical sliding Amyand hernia containing the cecum and appendix with an unexpected indurated apical mass.",
+      "quote": "These findings were clinically in favor of inguinal hernia... Palpation revealed a texture of hard mass inside. The sac was opened distally, revealed the appendix with a hard mass on its tip"
+    },
+    {
+      "candidate": "Appendiceal neoplasm (Carcinoid tumor / adenocarcinoma)",
+      "rule_out_reason": "Considered intraoperatively upon discovering an indurated, firm mass at the distal tip of the vermiform appendix; however, histopathological evaluation revealed granulomatous inflammatory tissue surrounding calcified ova without evidence of cellular atypia or malignancy.",
+      "quote": "revealed the appendix with a hard mass on its tip... histopathology showed periappendiceal necrotizing granulomatous inflammation with calcified parasitic ova"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Travel/origin from an endemic area (Tanzania) and surgical resection of the incarcerated appendix revealed periappendiceal necrotizing granulomatous inflammation enclosing calcified parasitic ova, confirming appendiceal schistosomiasis.",
+      "quote": "histopathology showed periappendiceal necrotizing granulomatous inflammation with calcified parasitic ova, consistent with schistosomiasis (Fig. 3, Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set prior to elective surgical exploration. No pathogen or disease names in prompt. Exact quotes verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3664866_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 66-year-old postmenopausal woman presenting with a large, solitary, lobulated, dense breast mass without lymphadenopathy or systemic symptoms. The core challenge is differentiating an extremely rare primary breast presentation of parasitic hydatid disease from conventional breast neoplasms such as phyllodes tumor, pseudoangiomatous stromal hyperplasia, or well-circumscribed breast carcinoma.\n2. Admission Breakpoint: The admission clinical presentation halts after physical examination, routine triage laboratories, chest radiograph, mammography (BI-RADS 4A), and target breast ultrasound revealing peripheral anechoic cysts without Doppler vascularity, strictly before core needle biopsy, thoracic/abdominal CT, and histopathological analysis.\n3. Differential Distinctions: Phyllodes tumor presents as a large, rapidly enlarging circumscribed breast mass but exhibits prominent internal vascularity and stromal hypercellularity. Breast carcinoma and PASH typically show internal vascular flow or solid tissue characteristics. Breast echinococcosis (hydatid disease) reveals peripheral daughter cysts, absent Doppler vascularity, and pathognomonic laminated eosinophilic acellular membranes on pathology.",
+  "case_prompt": "A 66-year-old female patient with a history of hypertension and diabetes mellitus presents with a palpable mass in the left breast associated with pain of long duration. She reports no nipple discharge and no fever. There is no history of breast trauma, hormone replacement therapy, or family history of breast cancer. On physical examination, a large palpable mass with regular borders is identified within the left breast. The nipple, areola, and overlying skin are unremarkable. There are no palpable axillary lymph nodes in the left axilla, and the contralateral breast and axilla are normal. Systemic examination is unremarkable. Initial laboratory tests show a normal complete blood count, normal liver function tests, and chemistry normal apart from an elevated serum glucose level. Chest radiography is grossly unremarkable. Mammography demonstrates a large, dense, oval mass measuring 9.2 x 7.5 cm in the upper outer quadrant of the left breast that is multilobulated and well-circumscribed in contour without microcalcifications, categorized as BI-RADS 4A. Target ultrasound shows a large heterogeneous, lobulated mass corresponding to the mammographic lesion with a few peripheral internal anechoic cysts and no internal vascularity on Doppler interrogation; no enlarged axillary lymph nodes are present.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Phyllodes tumor",
+      "rule_out_reason": "Considered due to the patient's age and a large, dense, rapidly expanding or long-standing lobulated, circumscribed breast mass. Excluded as the lesion lacked internal vascularity on Doppler interrogation and histology showed acellular parasitic membranes rather than fibroepithelial neoplasia.",
+      "quote": "The differential diagnosis would include phyllodes tumor, PASH (Pseudoangiomatous stromal hyperplasia), and well circumscribed carcinoma."
+    },
+    {
+      "candidate": "Breast carcinoma / Pseudoangiomatous stromal hyperplasia (PASH)",
+      "rule_out_reason": "Considered given the large dense mass coded as BI-RADS 4A in an older female. Excluded by absent Doppler flow, lack of internal enhancement on cross-sectional imaging, and absence of malignant epithelial or stromal proliferation on core biopsy.",
+      "quote": "Our impression based on the mammograms is unusual large dense mass of the left breast coded as BIRAD 4A taking into consideration the patient age for further evaluation by target ultrasound. The differential diagnosis would include phyllodes tumor, PASH (Pseudoangiomatous stromal hyperplasia), and well circumscribed carcinoma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasonographic demonstration of peripheral anechoic daughter cysts with absent internal vascularity, followed by core needle biopsy revealing fragmented acellular laminated eosinophilic membranes, definitively established primary breast hydatid disease.",
+      "quote": "The pathology report revealed scanty material formed of fragmented eosinophilic membranes with laminated appearance in keeping with hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint placed prior to core needle biopsy and staging CT."
+}

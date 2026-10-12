@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3634206_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old unmarried woman presents with a painless, mobile right breast mass and a satellite inframammary nodule associated with low-grade fever and an elevated erythrocyte sedimentation rate (ESR 60 mm/hr) in the absence of pulmonary symptoms or axillary lymphadenopathy. A mobile breast lump in a young woman most commonly represents a fibroadenoma or breast malignancy; recognizing an isolated extrapulmonary granulomatous infection of the mammary tissue is challenging when systemic symptoms and chest radiography are completely normal.\n2. Admission Breakpoint: The admission narrative details the patient's 1-month history of a painless right breast mass, 2 weeks of low-grade intermittent fevers, physical examination demonstrating a 3 x 4 cm non-tender, mobile lower-quadrant mass and a 1 x 1.5 cm inframammary nodule without axillary adenopathy, and initial baseline triage investigations showing mild leukocytosis (12,000/mm3), markedly elevated ESR (60 mm/hr), negative HIV serology, normal metabolic panel, and normal chest radiography. Fine-needle aspiration cytology (FNAC) and Ziehl-Neelsen (ZN) stain results are strictly withheld for diagnostic reasoning.\n3. Differential Distinctions: Fibroadenoma of the breast was a primary diagnostic consideration given her age and the painless, firm, freely mobile character of the breast lump, but does not explain the concurrent low-grade fever, satellite inframammary nodule, or marked ESR elevation (60 mm/hr). Carcinoma of the breast or phylloides tumor must be considered for any discrete breast mass, but the satellite lesion and inflammatory markers pointed toward an infective or granulomatous process. Pyogenic breast abscess / idiopathic granulomatous mastitis presents with breast masses, but typically features local calor, erythema, and acute pain. The diagnosis was established when FNAC revealed epithelioid cell granulomas with caseous necrosis and positive acid-fast bacilli on ZN staining.",
+  "case_prompt": "A 25-year-old previously healthy woman presents with a 1-month history of a painless lump in her right breast. Over the preceding 2 weeks, she has also experienced intermittent, low-grade fevers. She denies cough, night sweats, anorexia, or involuntary weight loss. She has no personal or family history of breast disorders or chronic infections.\n\nOn physical examination, she is comfortable with low-grade pyrexia. Breast examination reveals a non-tender, freely mobile mass measuring approximately 3 x 4 cm in the lower quadrant of the right breast. No overlying skin retraction, erythema, or peau d'orange changes are observed. A second, distinct 1 x 1.5 cm firm nodule is palpable in the right inframammary area, situated immediately below and medial to the primary breast mass. Axillary lymphadenopathy is absent bilaterally. Examination of the left breast and systemic examination are entirely normal.\n\nBaseline triage laboratory investigations reveal a total leukocyte count of 12,000 cells/mm3 and an erythrocyte sedimentation rate (ESR) of 60 mm at the end of 1 hour. Fasting blood glucose, blood urea nitrogen, and routine biochemical parameters are normal. Rapid HIV antibody testing is negative. A plain chest radiograph shows clear lung fields without infiltrates, cavitary lesions, or hilar adenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Fibroadenoma of the Breast",
+      "rule_out_reason": "Considered because of the patient's young age and the presence of a well-circumscribed, painless, freely mobile breast mass, but fails to account for the satellite inframammary nodule, intermittent low-grade fever, and markedly elevated ESR (60 mm/hr).",
+      "quote": "On local examination, a non-tender lump of size 3 x 4 cm was felt in lower quadrant of the breast... It was freely mobile and no axillary nodes were present. Another 1 x 1.5 cm swelling was present in infra-mammary area"
+    },
+    {
+      "candidate": "Breast Carcinoma / Malignant Neoplasm",
+      "rule_out_reason": "Must be considered in any discrete breast lesion with adjacent nodularity, but was clinically less likely given youth, lack of axillary lymphadenopathy, normal chest radiography, and subsequent cytology showing granulomatous inflammation rather than malignant epithelial cells.",
+      "quote": "It was freely mobile and no axillary nodes were present... Chest X-ray was normal."
+    },
+    {
+      "candidate": "Pyogenic Breast Abscess / Idiopathic Granulomatous Mastitis",
+      "rule_out_reason": "Pyogenic abscess presents with marked local erythema, warmth, and acute throbbing tenderness, which were conspicuously absent in this cold, painless, indolent lesion.",
+      "quote": "A 25-year-old female presented with a painless lump in her right breast for 1 month duration... a non-tender lump of size 3 x 4 cm was felt"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis of primary breast tuberculosis was established when fine-needle aspiration cytology (FNAC) from both the breast and inframammary lesions demonstrated epithelioid cell granulomas on a necrotic background, with positive Ziehl-Neelsen staining confirming acid-fast bacilli.",
+      "quote": "Fine needle aspiration cytology (FNAC) of the breast and infra-mammary lump showed granulomas, epitheloid cells, and mixed inflammatory cells [Figure 2]. Background consisted of necrotic material and ZN stain for acid fast bacilli (AFB) was positive in the FNAC of both lumps."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt concludes right after routine laboratory evaluation and chest radiography. FNAC findings and ZN staining are reserved exclusively for the diagnostic pivot. No disease or pathogen names leaked."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12682060_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 55-year-old female living in an endemic district in western Nepal presents with a 2-year history of painless, progressively enlarging nodular lesions exclusively localized to the dorsal and lateral surfaces of her tongue, causing mild dysphagia, without constitutional symptoms, prior visceral illness, or skin/visceral lesions elsewhere. This unusual nondestructive lingual variant mimics oral amyloidosis, sarcoidosis, tuberculosis, mucosal neuromas, or lingual lymphoma.\n2. Admission Breakpoint: Admission clinical evaluation terminates with oral examination and comprehensive systemic physical examination, immediately prior to incisional tongue biopsy, special stains, and send-out rK-39/PCR molecular testing.\n3. Differential Distinctions: Lingual tuberculosis and leprosy are excluded by negative acid-fast bacillary smears and special stains on biopsy. Amyloidosis is excluded by negative Congo red staining. Leishmaniasis is confirmed despite the absence of classic Donovan amastigotes on routine microscopy by positive rK-39 serology and Leishmania donovani DNA PCR.",
+  "case_prompt": "A 55-year-old female residing in the Mugu district of western Nepal presented to the outpatient department with a 2-year history of multiple, progressively enlarging, painless nodular lesions localized exclusively to her tongue. She noted mild difficulty swallowing (dysphagia) related to the physical bulk of the lesions. She denied constitutional symptoms including prolonged fever, nocturnal diaphoresis, chills, or unintentional weight loss, and reported no history of chronic febrile illnesses or prior systemic infectious syndromes.\n\nOn physical examination, inspection of the oral cavity revealed multiple well-circumscribed, erythematous, round-to-oval nodules measuring 1 to 2 cm in diameter distributed across both the dorsal and lateral surfaces of the tongue. The nodules exhibited a smooth surface architecture without ulceration, induration, bleeding, or purulent exudate. Comprehensive systemic examination showed no hepatosplenomegaly, peripheral lymphadenopathy, or cutaneous lesions elsewhere on the body.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hansen's Disease / Lingual Tuberculosis",
+      "rule_out_reason": "Chronic granulomatous tongue nodules in an endemic setting strongly suggest mycobacterial diseases such as tuberculosis or leprosy; however, slit-skin smears and special tissue stains were completely negative for acid-fast bacilli.",
+      "quote": "Slit-skin smear and special stains were negative for acid-fast bacilli and Congo red."
+    },
+    {
+      "candidate": "Lingual Amyloidosis / Mucosal Neuromas / Sarcoidosis / Mycosis Fungoides",
+      "rule_out_reason": "Multiple smooth lingual nodules can mimic nodular amyloidosis, neuromas, or lymphoproliferative disorders, but Congo red staining was negative and histopathology showed chronic granulomatous inflammation without clonal lymphoid atypia.",
+      "quote": "Given the rarity of exclusive mucosal involvement, the initial differential diagnosis was broad and included infectious diseases such as Hansen's disease and tuberculosis, along with mucosal neuromas, sarcoidosis, amyloidosis, and mycosis fungoides."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when molecular testing by PCR targeting Leishmania donovani DNA was positive, alongside a positive rK-39 serological assay, establishing isolated lingual mucosal leishmaniasis (mucosal post-kala-azar dermal leishmaniasis variant).",
+      "quote": "Polymerase chain reaction (PCR) targeting L donovani DNA was performed and returned positive, establishing the diagnosis of isolated lingual PKDL."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to incisional biopsy, rK-39, and PCR testing. No pathogen or disease names mentioned in presentation."
+}

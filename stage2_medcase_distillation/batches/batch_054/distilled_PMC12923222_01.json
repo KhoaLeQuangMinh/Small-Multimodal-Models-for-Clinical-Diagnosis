@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12923222_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 32-year-old male manual laborer presents with acute high-grade fever, chills, rigors, myalgias, loose stools, and profound thrombocytopenia (32,000/µL), who abruptly develops acute mania (grandiosity, hyperverbosity, decreased need for sleep, hyperactivity) on Day 2 of hospitalization. The intersection of an acute febrile thrombocytopenic syndrome with acute behavioral decompensation forces clinicians to differentiate primary neuropsychiatric disorders, intracranial hemorrhage or septic encephalitis, and secondary organic mood syndrome driven by arboviral infection.\n2. Admission Breakpoint: The admission breakpoint is positioned on Day 1 upon admission to the general medical ward with baseline CBC showing marked thrombocytopenia (32,000/µL), leukopenia/lymphocytosis (52%), and before arboviral enzyme-linked immunosorbent serology and brain MRI results.\n3. Differential Distinctions: Primary psychiatric manic episode (ruled out by acute onset temporally linked to febrile illness, absence of prior psychiatric history, and rapid resolution following viral recovery), intracranial hemorrhage or structural encephalopathy (ruled out by normal brain MRI despite severe thrombocytopenia), and other tropical infections such as malaria or typhoid (ruled out by negative smears, profound isolated thrombocytopenia, and positive IgM ELISA). Confirmation relies on arbovirus IgM positivity.",
+  "case_prompt": "A 32-year-old male daily wage laborer was admitted to the general medicine ward with a 3-day history of acute high-grade fever accompanied by chills, rigors, severe anorexia, and complete insomnia. From the day of admission, he also experienced loose stools and severe generalized body aches and myalgias. He had no known past medical history and no personal or family history of psychiatric disorders.\n\nOn physical examination, the patient was febrile, toxic-appearing, and diaphoretic. Vital signs confirmed high-grade fever. Abdominal and systemic examinations showed no localized focal signs of infection. Mental status examination on initial triage noted extreme exhaustion and irritability.\n\nInitial laboratory investigations revealed profound thrombocytopenia with a platelet count of 32,000/µL and a total leukocyte count of 6,300/mm³ with 52% lymphocytes. Basic metabolic panel and routine triage blood tests were otherwise unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary bipolar affective disorder / idiopathic mania",
+      "rule_out_reason": "Although the patient exhibited pressured speech, motor hyperactivity, and ideas of grandiosity, he had no prior personal or family history of psychiatric illness, and the behavioral changes appeared in direct temporal relationship with acute febrile thrombocytopenia.",
+      "quote": "The patient did not have a history of psychiatric illness, nor did he have any family history of psychiatric illness... The patient was diagnosed with Secondary mood syndrome with manic symptoms according to ICD 11 considering no prior predisposition to psychiatric illness and direct temporal relation of onset of his psychiatric symptoms to dengue fever."
+    },
+    {
+      "candidate": "Intracranial hemorrhage or focal encephalitis",
+      "rule_out_reason": "In the setting of severe thrombocytopenia (platelet count 32,000/µL) and acute neuropsychiatric decompensation, acute intracranial bleeding or focal structural encephalitis was a major concern, but magnetic resonance imaging of the brain demonstrated no abnormalities.",
+      "quote": "MRI of the brain was normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Specific enzyme-linked immunosorbent assay (ELISA) testing confirmed positive dengue IgM antibodies in the setting of acute fever, myalgias, and severe thrombocytopenia, establishing dengue fever with secondary neuropsychiatric manifestation.",
+      "quote": "The test results showed a positive IgM ELISA for dengue. Further tests indicated a platelet count of 32000/mul; total leukocyte count of 6300/cm with lymphocytes at 52%. The patient was diagnosed with dengue fever accompanied by thrombocytopenia."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case accurately focuses on Dengue presenting with secondary manic neuropsychiatric manifestations. Breakpoint set prior to dengue IgM serology and brain MRI. Zero pathogen disclosures."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2628938_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 20-year-old man presented with a single, large, hypopigmented, anesthetic cutaneous plaque on his left thigh without enlarged peripheral nerves, clinically appearing as solitary-lesion paucibacillary (tuberculoid) disease. However, slit-skin smear from the lesion demonstrated an unexpected high bacterial load (Bacterial Index 4+), indicating single-lesion multibacillary disease that subsequently triggered a severe Type 1 reversal reaction upon starting multidrug therapy.\n2. Admission Breakpoint: The admission clinical triage ends after history (2-year duration, endemic region of Nepal, no known contact), physical examination of the skin plaque (15 cm solitary dry hypopigmented anesthetic lesion with raised edge, no nerve enlargement), and initial baseline tests (normal blood count, normal baseline VMT/ST nerve measurements). Serological anti-PGL-I lateral flow, slit skin smears, histopathology biopsy, and MDT initiation occur post-breakpoint.\n3. Differential Distinctions: Paucibacillary tuberculoid leprosy (TT) presents with a solitary anesthetic plaque but has negative slit skin smears (BI 0). Cutaneous dermatophytosis (tinea incognito) or annular granuloma produces raised active borders but preserves cutaneous sensation. Multibacillary leprosy typically presents with widespread symmetric lesions, but rare solitary multibacillary plaques occur and carry a high risk of reversal reactions, confirmed by a high bacterial index (4+) on slit skin smear and nerve involvement on biopsy.",
+  "case_prompt": "A 20-year-old man residing in the Terai region of Nepal presented for evaluation of a chronic skin lesion that had been present for two years. He had no recollection of contact with individuals suffering from chronic skin disorders. On clinical examination, a solitary hypopigmented plaque was noted on his left thigh, extending distally toward the knee. The lesion measured approximately 15 cm in maximum dimension, featuring a dry surface and well-demarcated raised erythematous edges. Testing of cutaneous sensation within the plaque demonstrated complete loss of thermal and tactile sensation (anesthesia). Detailed whole-body cutaneous inspection revealed no other macules, plaques, or papules. Palpation of the major peripheral nerve trunks (ulnar, median, radial cutaneous, common peroneal, and posterior tibial nerves) showed no focal enlargement, nodularity, or tenderness. Complete blood count was within normal reference ranges. Baseline standard nerve function measurements utilizing voluntary muscle testing and sensory testing (VMT/ST) of both hands and feet were entirely normal without motor weakness or distal sensory loss.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Paucibacillary / Tuberculoid Leprosy (TT)",
+      "rule_out_reason": "Considered based on clinical criteria of a solitary, well-defined hypopigmented anesthetic plaque with raised margins and absence of peripheral nerve thickening, which prompted initial paucibacillary multidrug therapy. Ruled out when slit skin smear from the lesion demonstrated a high Bacterial Index (BI) of 4+ and biopsy confirmed borderline tuberculoid histology.",
+      "quote": "His clinical presentation was consistent with tuberculoid leprosy (TT) and paucibacillary (PB) multidrug treatment (MDT) was initiated immediately"
+    },
+    {
+      "candidate": "Tinea Incognito / Annular Dermatophytosis",
+      "rule_out_reason": "Considered due to the large 15 cm annular configuration with raised active borders and dry surface on the lower extremity. Ruled out by the pathognomonic loss of sensation (anesthesia) within the lesion, absence of fungal hyphae, and demonstration of acid-fast bacilli on slit skin smear.",
+      "quote": "On clinical examination, a solitary hypopigmented, anaesthetic lesion was present on his left thigh extending to his knee. The surface of the lesion was dry and it had a length of approximately 15 cm with raised edge as shown in Figure 1."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when slit skin smear examination from the active lesion border demonstrated a Bacterial Index (BI) of 4+ acid-fast bacilli, supported by positive anti-PGL-I antibody testing and skin biopsy showing borderline tuberculoid granulomas with acid-fast bacilli in dermal nerves, reclassifying the patient as single-lesion multibacillary leprosy requiring a 24-month multibacillary MDT regimen.",
+      "quote": "Slit skin smear examination for M. leprae from the lesion revealed a Bacterial Index (BI) of 4+ (10-100 acid fast bacilli per oil immersion microscopic field on Ridley's logarithmic scale) as shown in Figure 2 while it was negative from the routine sites of the ear lobes, thigh and arm."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint principle. The prompt excludes the anti-PGL-I test, slit skin smears, histopathology, and therapy. Differential diagnoses quote directly from the source text. Target disease canonically verified."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3644770_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 40-year-old immunocompetent male presents with subacute, painful visual loss in the right eye culminating in complete blindness over 6 weeks that was refractory to oral corticosteroids. He denies systemic symptoms such as fever, weight loss, or pulmonary complaints. Magnetic resonance imaging (MRI) of the brain and orbits shows a diffusely thickened, homogenously enhancing right optic nerve with asymptomatic nodular enhancing lesions in the right frontal and parietal lobes. In the setting of an unremarkable chest radiograph, normal CSF analysis, negative HIV serology, and absent systemic lymphadenopathy, differentiating an infiltrative granulomatous infection (such as CNS tuberculosis or neurocysticercosis) from neurosarcoidosis or intracranial malignancy (optic glioma, lymphomatosis) is extremely challenging. Furthermore, initiating treatment subsequently resulted in severe paradoxical intracranial expansion.\n\n2. Admission Breakpoint: The admission breakpoint is established immediately after baseline clinical evaluation, negative HIV serology, noncontributory CSF, normal chest radiography, and the initial MRI of the brain and orbits, strictly prior to the patient's in-hospital development of left hand dexterity impairment, repeat urgent MRI, brain biopsy, acid-fast bacillus staining, and mycobacterial cultures.\n\n3. Differential Distinctions:\n- Neurosarcoidosis / Inflammatory Optic Neuropathy: Non-caseating granulomatous inflammation causing optic nerve thickening and brain nodules; ruled out by failure to respond to prior systemic steroid therapy and surgical biopsy demonstration of necrotizing granulomas with acid-fast bacilli.\n- Intracranial Malignancy (Optic Glioma / CNS Lymphomatosis): Neoplastic infiltration causing thickened optic nerve and intracranial lesions; ruled out by brain biopsy showing necrotizing granulomatous inflammation with positive mycobacterial culture.\n- Neurocysticercosis: Common endemic cause of cystic and nodular ring-enhancing lesions; ruled out by infiltrative optic nerve pathology and identification of acid-fast bacilli.",
+  "case_prompt": "A 40-year-old male presents for evaluation due to profound, progressive visual loss in his right eye over the preceding four months. The visual deficit began with localized right ocular pain and progressed inexorably to total blindness in that eye within six weeks. An empiric short course of oral corticosteroids administered prior to presentation produced no clinical benefit. He denies fever, night sweats, appetite changes, weight loss, seizures, or extremity weakness.\n\nOn physical examination, visual acuity in the right eye is reduced to no light perception, with an ipsilateral relative afferent pupillary defect and marked optic disc pallor. Examination of the left eye is normal. No peripheral lymphadenopathy or neurological focal deficits are present.\n\nScreening investigations—including an HIV ELISA, lumbar puncture with CSF analysis and routine cultures, plain chest radiography, and abdominal ultrasonography—are all noncontributory. Magnetic resonance imaging (MRI) of the brain and orbits demonstrates a diffusely thickened, homogenously enhancing right optic nerve, accompanied by multiple nodular enhancing lesions within the right parietal and frontal lobes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neurosarcoidosis / Inflammatory Optic Neuropathy",
+      "rule_out_reason": "Considered because infiltrative optic neuropathy with enhancing intracranial nodules often represents a systemic or primary CNS inflammatory granulomatous process. Excluded by lack of response to prior corticosteroid therapy and histopathological demonstration of necrotizing granulomas with acid-fast bacilli.",
+      "quote": "As there was still significant enhancement of the optic nerve, possibility of an infiltrative optic neuropathy due to an infectious (tuberculosis, cysticercosis) or inflammatory condition (sarcoidosis) was considered most likely."
+    },
+    {
+      "candidate": "Intracranial Neoplasm (Gliomatosis / Lymphomatosis)",
+      "rule_out_reason": "Considered due to the diffusely thickened optic nerve accompanied by hemispheric intracranial enhancing masses in an afebrile patient without systemic symptoms. Excluded by biopsy demonstrating granulomatous inflammation and positive mycobacterial culture rather than malignant infiltration.",
+      "quote": "Infiltrations from lymphomatosis, gliomatosis, and other compressive optic neuropathies were considered less likely especially considering the brain lesions."
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Considered as a potential infectious etiology for nodular and ring-enhancing brain lesions in an endemic region. Excluded because diffuse optic nerve expansion and necrotizing granulomas with acid-fast bacilli are incompatible with larval cestode disease.",
+      "quote": "possibility of an infiltrative optic neuropathy due to an infectious (tuberculosis, cysticercosis) or inflammatory condition (sarcoidosis) was considered most likely."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis was definitively established by an open biopsy of the right parietal brain lesion, which revealed necrotizing granulomatous inflammation with abundant acid-fast bacilli and positive culture for pan-sensitive Mycobacterium tuberculosis.",
+      "quote": "Biopsy from the right parietal lesion revealed necrotizing granulomatous inflammation with numerous acid fast bacilli. Pansensitive mycobacterium tuberculosis was grown on culture."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt provides clinical and neuroimaging presentation prior to biopsy, acid-fast stain, or culture. Differential candidates and diagnostic pivot are anchored to verbatim quotes."
+}

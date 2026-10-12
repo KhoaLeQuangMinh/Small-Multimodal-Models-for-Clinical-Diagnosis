@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9934940_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 23-year-old immigrant from Micronesia presents with acute painful erythematous leg nodules, fevers, and night sweats mimicking bacterial cellulitis or idiopathic erythema nodosum, against a backdrop of chronic hypopigmented macules and stocking-glove sensory loss. The tension lies in distinguishing acute bacterial or reactive panniculitis from a Type 2 immune reaction (erythema nodosum leprosum) superimposed on chronic lepromatous disease.\n2. Admission Breakpoint: The presentation ends after clinical evaluation and baseline laboratory testing (complete blood count revealing leukocytosis and anemia), immediately prior to QuantiFERON-TB Gold testing, punch skin biopsy, Fite acid-fast staining, and multidrug antimicrobial therapy.\n3. Differential Distinctions: Bacterial cellulitis typically manifests unilaterally, lacks diffuse anesthetic hypopigmented macules, and responds to cephalexin. Tuberculous erythema nodosum was ruled out by a negative interferon-gamma release assay and histopathology showing noncaseating sheets of foamy histiocytes packed with Fite-positive acid-fast bacilli rather than caseating granulomas.",
+  "case_prompt": "A 23-year-old female who recently immigrated from Micronesia presents with a one-week history of painful nodules on both lower legs, accompanied by intermittent fevers and night sweats. She also reports progressive areas of diminished cutaneous sensation across her upper and lower extremities. Her past medical history is notable for empiric treatment with an unspecified medication for nine months, initiated two years ago at a specialized clinic in Micronesia; she discontinued all medications upon relocating to the United States. She was recently evaluated by an infectious disease specialist for presumed bilateral lower-extremity cellulitis and prescribed oral cephalexin without symptom improvement. Physical examination reveals bilateral lower extremity edema and erythema with multiple tender, firm subcutaneous nodules of varying sizes. In addition, widespread hypopigmented macules are identified across her upper arms, trunk, and legs. Laboratory evaluation is notable for leukocytosis and anemia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial cellulitis / Pyogenic soft tissue infection",
+      "rule_out_reason": "Bilateral erythema, edema, and tender nodules with fevers initially prompted treatment for bacterial cellulitis; however, cephalexin failed to provide relief, and pyogenic cellulitis does not account for peripheral sensory deficits or widespread hypopigmented macules.",
+      "quote": "Previous treatment consisted of cephalexin for possible cellulitis, which was prescribed by her infectious disease physician"
+    },
+    {
+      "candidate": "Cutaneous / Systemic tuberculosis (Tuberculous erythema nodosum)",
+      "rule_out_reason": "Tender pretibial subcutaneous nodules accompanied by constitutional symptoms (fevers, night sweats) and anemia raised high suspicion for erythema nodosum secondary to tuberculosis, but this was excluded by a negative interferon-gamma release assay.",
+      "quote": "Quantiferon-TB Gold was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Full-thickness punch biopsy of the lateral lower leg revealed noncaseating granulomatous inflammation with numerous acid-fast bacilli demonstrated on Fite staining, establishing lepromatous leprosy complicated by a type 2 erythema nodosum leprosum (ENL) reaction.",
+      "quote": "An 8 mm punch biopsy was performed along the lateral aspect of her left leg, which revealed noncaseating granulomatous inflammation with numerous bacilli highlighted by the Fite stain (Figure 2). The acid-fast bacilli smear was positive. Given the patient's clinical, laboratory, and histological findings, a diagnosis of lepromatous leprosy with a type 2 erythema nodosum leprosum reaction was established."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to QuantiFERON and punch biopsy. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

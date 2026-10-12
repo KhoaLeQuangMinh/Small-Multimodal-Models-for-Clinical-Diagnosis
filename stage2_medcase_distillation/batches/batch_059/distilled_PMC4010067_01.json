@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4010067_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 56-year-old woman returning from a 6-week visit to Cote d'Ivoire presents with fever, recurrent vomiting, acute renal failure, and severe hyperglycemia (glucose 794 mg/dL) alongside right middle lobe consolidation. Because severe malaria typically causes hypoglycemia, this presentation with extreme hyperglycemia creates high risk for diagnostic anchoring on diabetic ketoacidosis or septic shock from bacterial pneumonia.\n2. Admission Breakpoint: Admission triage concludes after documenting travel history, vital signs, physical examination, emergency chemistry/hematology panels (revealing extreme hyperglycemia, lactic acidosis, severe anemia, profound thrombocytopenia, and renal failure), and the initial chest radiograph. Confirmatory testing begins with microscopic thick and thin blood smear examinations and viral/enteric fever workup.\n3. Differential Distinctions: Hyperosmolar hyperglycemic state or diabetic ketoacidosis secondary to bacterial pneumonia accounts for severe hyperglycemia and lobar infiltrates, but does not explain profound thrombocytopenia (6 x 10^9/L) and high-density intraerythrocytic parasite loads. Enteric fever also causes febrile illness after tropical travel but lacks extreme parasitemia.",
+  "case_prompt": "A 56-year-old woman presents to the emergency department with fever, recurrent vomiting episodes, and severe dehydration, developing 17 days after returning from a 6-week trip to Cote d'Ivoire, during which she stayed in both rural and urban areas without taking chemoprophylaxis. Three days prior, she had consulted a family practitioner for fever and vomiting and was prescribed oral antibiotics without improvement.\n\nOn physical examination, the patient appears ill and dehydrated. Her temperature is 37.8°C. Blood pressure is maintained, but she appears markedly fatigued.\n\nEmergency laboratory investigations reveal severe metabolic and hematologic disturbances: serum glucose is 794 mg/dL (reference range 70–110), blood urea is 192 mg/dL (reference range 18–48), serum creatinine is 2.42 mg/dL (reference range 0.50–1.10), lactic acid is 3.1 mmol/L (reference range 0.60–1.80), serum sodium is 129 mmol/L, and serum calcium is 6.56 mg/dL. Complete blood count demonstrates severe anemia with hemoglobin 7.9 g/dL and profound thrombocytopenia with a platelet count of 6 x 10^9/L. C-reactive protein (CRP) is significantly elevated at 13.4 mg/dL (reference range 0.0–0.5). Other routine blood tests are within normal limits. A plain chest radiograph demonstrates right middle lobe pneumonia and moderate bilateral pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Diabetic ketoacidosis (DKA) / Hyperosmolar hyperglycemic state (HHS) with bacterial pneumonia",
+      "rule_out_reason": "Extreme hyperglycemia (glucose 794 mg/dL), dehydration, lactic acidosis, and right middle lobe pneumonia strongly suggested a hyperosmolar diabetic crisis triggered by community-acquired bacterial pneumonia; however, the profound thrombocytopenia (6 x 10^9/L) and acute drop in hemoglobin pointed toward a severe hemolytic parasitic infection rather than an isolated metabolic event.",
+      "quote": "Initial laboratory studies showed high creatinine level (2.42 mg/dL... hyperglycaemia (glucose 794 mg/dL... lactic acidosis (lactic acid 3.1 mmoli/L... anaemia (haemoglobin 7.9 g/dL... thrombocytopenia (platelet count 6 x 109/L... A chest X-ray performed showed right middle lobe pneumonia and moderate bilateral pleural effusion."
+    },
+    {
+      "candidate": "Enteric fever (Typhoid fever) / Severe bacterial sepsis",
+      "rule_out_reason": "Recent travel to West Africa presenting with fever, vomiting, abdominal symptoms, multiorgan involvement, and lobar pneumonia raised high clinical suspicion for Salmonella bacteremia or invasive bacterial sepsis, but blood testing specifically demonstrated hemoparasites.",
+      "quote": "The patient was screened for Human immunodeficiency virus, Parvovirus B19, Hepatitis B virus, Hepatitis C virus, Coxsackie B 1-6, Cytomegalovirus; Herpes Simplex Virus 1 and 2, Epstein-Barr virus, and enteric fever."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when peripheral blood smear microscopy revealed high-grade Plasmodium falciparum hyperparasitemia with 40% parasitized red blood cells, confirming life-threatening falciparum malaria presenting with the unusual complication of extreme hyperglycemia.",
+      "quote": "A blood smear detected a P. falciparum, with a density of 40% of parasitized red blood cells (RBCs)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC4010067_01. Admission breakpoint strictly maintained before blood smear results and ICU management. Zero pathogen spoilers in prompt."
+}
