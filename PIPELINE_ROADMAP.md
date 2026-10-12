@@ -59,11 +59,11 @@ It implements the **Clinician's Dual-Brain Architecture** (grounded in cognitive
 - [x] **2.5** Unit test "Patient Twin" lookup to verify relevant real-world case matching in < 5ms.
 
 ### Stage 3: Graph Evaluation & Generic Term Weight Discounting
-- [ ] **3.1** Export and analyze node degree distribution from the canonical LightRAG graph.
-- [ ] **3.2** Catalog non-discriminative generic symptom terms (e.g., `Fever`, `Headache`, `Vomiting`, `Pain`).
-- [ ] **3.3** Implement the weighting discount function:
+- [x] **3.1** Export and analyze node degree distribution from the canonical LightRAG graph.
+- [x] **3.2** Catalog non-discriminative generic symptom terms (e.g., `Fever`, `Headache`, `Vomiting`, `Pain`).
+- [x] **3.3** Implement the weighting discount function:
   $$\text{Score}(u, v) = \text{Relevance}(u, v) \times \frac{1}{\log(1 + \text{Degree}(v))}$$
-- [ ] **3.4** Integrate the weight discount into triple ranking so pathognomonic evidence is prioritized without deleting nodes.
+- [x] **3.4** Integrate the weight discount into triple ranking so pathognomonic evidence is prioritized without deleting nodes.
 
 ### Stage 4: Constrained Diagnostic CoT for Small Language Model
 - [ ] **4.1** Implement the Structured Chain-of-Thought (CoT) diagnostic prompt (`differentials` $\to$ `rule_out` $\to$ `rule_in` $\to$ `final_diagnosis`).

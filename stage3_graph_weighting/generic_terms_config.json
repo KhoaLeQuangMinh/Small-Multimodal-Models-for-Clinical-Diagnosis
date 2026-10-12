@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "description": "Stage 3 Generic Term Discounting & Pathognomonic Priority Configuration for Canonical LightRAG KG",
+  "canonical_diseases": [
+    "Amebiasis", "Cholera", "Dengue", "Echinococcosis", "Foodborne Trematodes",
+    "Leishmaniasis", "Leprosy", "Leptospirosis", "Malaria", "Melioidosis",
+    "Mycetoma", "Neurocysticercosis", "Paracoccidioidomycosis", "Scabies",
+    "Schistosomiasis", "Scrub Typhus", "Soil-Transmitted Helminths",
+    "Talaromycosis", "Trypanosomiasis", "Tuberculosis", "Viral Hemorrhagic Fevers",
+    "Zika Virus"
+  ],
+  "patterns": {
+    "generic_symptoms_regex": "\\b(fever|high[- ]grade fever|low[- ]grade fever|pyrexia|febrile|chills|rigors|sweating|night sweats|fatigue|malaise|weakness|lethargy|body aches|myalgia|arthralgia|nausea|vomiting|emesis|abdominal pain|belly pain|diarrhea|loose stools|cough|dyspnea|shortness of breath|chest pain|headache|cephalea)\\b",
+    "administrative_terms_regex": "\\b(patient|admission|hospital|treatment|therapy|medication|infection|disease|illness|syndrome|history|examination|antibiotics|acute|chronic)\\b",
+    "pathognomonic_terms_regex": "\\b(eschar|tache noire|suffusion|subconjunctival hemorrhage|anesthetic|nerve thickening|tourniquet test|petechial rash|retro[- ]orbital pain|rice[- ]water|burrow|nocturnal pruritus|interdigital|sinus tract|sulfur grain|fungal grain|umbilicated|chagoma|roma[ñn]a|winterbottom|mulberry|volcanic ulcer|oriental sore|leishman[- ]donovan|ld bod(?:y|ies)|anchovy|daughter cyst|hydatid|water lily|scolex|parenchymal calcification|apical cavit(?:y|ation)|ghon complex|pott|pipestem|symmers|inner tube|spaghetti|thrombocytopenia|hemoconcentration|hypereosinophilia|marked eosinophilia|hemolytic anemia|malarial paroxysm|weil|chigger|mite bite|sandfly|tsetse|kissing bug|triatomine|freshwater snail|floodwater|wading|paddy field|rodent urine|raw (?:crayfish|crab|fish|aquatic plant|watercress)|cyprinid|doxycycline|praziquantel|triclabendazole|albendazole|artemisinin)\\b"
+  },
+  "weights": {
+    "generic_discount_penalty": 0.20,
+    "administrative_discount_penalty": 0.10,
+    "disease_anchor_multiplier": 1.50,
+    "patient_match_multiplier": 2.00,
+    "pathognomonic_bonus_multiplier": 2.50,
+    "default_top_k": 15
+  }
+}
