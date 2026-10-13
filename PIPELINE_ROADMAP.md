@@ -66,9 +66,9 @@ It implements the **Clinician's Dual-Brain Architecture** (grounded in cognitive
 - [x] **3.4** Integrate the weight discount into triple ranking so pathognomonic evidence is prioritized without deleting nodes.
 
 ### Stage 4: Constrained Diagnostic CoT for Small Language Model
-- [ ] **4.1** Implement the Structured Chain-of-Thought (CoT) diagnostic prompt (`differentials` $\to$ `rule_out` $\to$ `rule_in` $\to$ `final_diagnosis`).
-- [ ] **4.2** Synthesize prompt inputs: Patient Presentation + Top 2 Patient Twins (Stage 2) + Top 15 Graph Triples (Stages 1 & 3).
-- [ ] **4.3** Build the automated evaluation script (`benchmark_stage4_cot.py`) with per-case auto-saving and resume capability.
+- [x] **4.1** Implement the Structured Chain-of-Thought (CoT) diagnostic prompt (`differentials` $\to$ `rule_out` $\to$ `rule_in` $\to$ `final_diagnosis`).
+- [x] **4.2** Synthesize prompt inputs: Patient Presentation + Top 2 Patient Twins (Stage 2) + Top 15 Graph Triples (Stages 1 & 3).
+- [x] **4.3** Build the automated evaluation script (`benchmark_stage4_cot.py`) with per-case auto-saving and resume capability.
 - [ ] **4.4** Run benchmark across all 365 masked admission test cases (`test_masked_cases.jsonl`) on local Ollama (`qwen2.5:3b`).
 - [ ] **4.5** Compute primary metrics: Top-1 Diagnostic Accuracy, Top-3 Differential Coverage, and Melioidosis Bias Rate.
 - [ ] **4.6** Update master ablation tables in `RESULT.md`.

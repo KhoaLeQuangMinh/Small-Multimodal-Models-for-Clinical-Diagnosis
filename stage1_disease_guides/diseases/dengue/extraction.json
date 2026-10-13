@@ -4,295 +4,1879 @@
     {
       "name": "Dengue",
       "type": "Disease",
-      "description": "Acute mosquito-borne arboviral infection caused by the dengue virus, characterized by sudden high fever, retro-orbital pain, severe break-bone arthralgias/myalgias, and potential progression during defervescence to plasma leakage, thrombocytopenia, and hypovolemic shock."
+      "description": "Acute mosquito-borne flaviviral infection caused by DENV-1 through 4, characterized by sudden high fever, retro-orbital pain, severe musculoskeletal aches, and potential progression during defervescence to systemic capillary leakage, thrombocytopenia, and hypovolemic shock."
     },
     {
-      "name": "Aedes aegypti Mosquito Vector",
-      "type": "Vector_Exposure",
-      "description": "Primary diurnal anthropophilic mosquito vector that rests indoors, bites during daylight hours, and breeds in domestic artificial water containers in tropical and subtropical urban environments."
+      "name": "Abrupt High Fever",
+      "type": "Clinical_Manifestation",
+      "description": "Sudden onset of high temperature (39-40°C) marking the first phase of dengue illness."
     },
     {
-      "name": "Aedes albopictus Mosquito Vector",
-      "type": "Vector_Exposure",
-      "description": "Secondary mosquito vector of dengue adapted to peri-domestic and rural vegetated environments with higher cold tolerance."
+      "name": "Biphasic Saddleback Fever",
+      "type": "Clinical_Manifestation",
+      "description": "Biphasic fever curve with temporary defervescence followed by secondary pyrexia spike."
     },
     {
-      "name": "Rapid Unplanned Tropical Urbanization and Artificial Water Storage",
-      "type": "Vector_Exposure",
-      "description": "Dense urban tropical settings with inadequate piped water infrastructure requiring domestic water storage (cisterns, drums, clay jars) and discarded non-biodegradable containers (tires, plastic)."
+      "name": "Severe Frontal Cephalalgia",
+      "type": "Clinical_Manifestation",
+      "description": "Intense debilitating frontal and retro-orbital headache accompanying acute viremia."
     },
     {
-      "name": "Secondary Heterologous Dengue Infection",
-      "type": "Vector_Exposure",
-      "description": "Prior infection with a different dengue virus serotype predisposing the host to antibody-dependent enhancement (ADE), drastically elevating the risk of severe dengue and plasma leakage syndrome."
+      "name": "Breakbone Myalgia",
+      "type": "Clinical_Manifestation",
+      "description": "Violent generalized muscle aches and lumbar discomfort characteristic of dengue fever."
     },
     {
-      "name": "Dengue Virus (DENV-1, DENV-2, DENV-3, DENV-4)",
-      "type": "Pathogen",
-      "description": "Enveloped, positive-sense single-stranded RNA arbovirus of the genus Flavivirus (family Flaviviridae) comprising four antigenically distinct serotypes."
+      "name": "Severe Debilitating Arthralgia",
+      "type": "Clinical_Manifestation",
+      "description": "Severe generalized non-deforming joint aches accompanying acute dengue viremia."
     },
     {
-      "name": "Retro-Orbital Headache Exacerbated by Eye Movements",
+      "name": "Generalized Lumbar Backpain",
+      "type": "Clinical_Manifestation",
+      "description": "Incapacitating axial lumbar pain commonly reported during the acute febrile period."
+    },
+    {
+      "name": "Transient Facial Flushing",
+      "type": "Clinical_Manifestation",
+      "description": "Erythematous facial and neck flushing observed during the first 1-2 days of illness."
+    },
+    {
+      "name": "Diffuse Erythematous Blanching",
+      "type": "Clinical_Manifestation",
+      "description": "Early diffuse blanching macular cutaneous erythema resolving prior to critical phase."
+    },
+    {
+      "name": "Anorexia and Dysgeusia",
+      "type": "Clinical_Manifestation",
+      "description": "Profound loss of appetite accompanied by altered or metallic taste perception."
+    },
+    {
+      "name": "Nausea and Vomiting",
+      "type": "Clinical_Manifestation",
+      "description": "Gastrointestinal symptoms of nausea and emesis during early dengue phase."
+    },
+    {
+      "name": "Asthenia and Malaise",
+      "type": "Clinical_Manifestation",
+      "description": "Profound generalized physical weakness, fatigue, and constitutional prostration."
+    },
+    {
+      "name": "Tender Cervical Lymphadenopathy",
+      "type": "Clinical_Manifestation",
+      "description": "Mild tender reactive lymphadenopathy commonly palpable in cervical nodal stations."
+    },
+    {
+      "name": "Critical Capillary Leakage",
+      "type": "Clinical_Manifestation",
+      "description": "Transient systemic endothelial hyperpermeability causing plasma leakage into serosal cavities."
+    },
+    {
+      "name": "Severe Abdominal Pain",
+      "type": "Clinical_Manifestation",
+      "description": "Severe persistent abdominal tenderness signaling acute plasma extravasation."
+    },
+    {
+      "name": "Persistent Incessant Vomiting",
+      "type": "Clinical_Manifestation",
+      "description": "Incessant vomiting preventing oral intake and indicating decompensation risk."
+    },
+    {
+      "name": "Subclinical Plasma Leakage",
+      "type": "Clinical_Manifestation",
+      "description": "Early covert transudation of fluid into serous cavities prior to overt clinical shock."
+    },
+    {
+      "name": "Clinically Evident Ascites",
+      "type": "Clinical_Manifestation",
+      "description": "Accumulation of transudative plasma fluid within the peritoneal cavity."
+    },
+    {
+      "name": "Right Pleural Effusion",
+      "type": "Clinical_Manifestation",
+      "description": "Transudative fluid collection in pleural space with marked right-sided predominance."
+    },
+    {
+      "name": "Mucosal Epistaxis",
+      "type": "Clinical_Manifestation",
+      "description": "Spontaneous nasal bleeding provoked by thrombocytopenia and endothelial dysfunction."
+    },
+    {
+      "name": "Severe Gingival Hemorrhage",
+      "type": "Clinical_Manifestation",
+      "description": "Spontaneous oral mucosal hemorrhage along gingival margins."
+    },
+    {
+      "name": "Menorrhagia and Metrorrhagia",
+      "type": "Clinical_Manifestation",
+      "description": "Abnormally prolonged or heavy uterine bleeding during acute dengue thrombocytopenia."
+    },
+    {
+      "name": "Gastrointestinal Melena",
+      "type": "Clinical_Manifestation",
+      "description": "Black tarry stool evacuation resulting from upper gastrointestinal bleeding."
+    },
+    {
+      "name": "Frank Hematemesis",
+      "type": "Clinical_Manifestation",
+      "description": "Vomiting of blood or coffee-ground material reflecting acute gastrointestinal hemorrhage."
+    },
+    {
+      "name": "Macroscopic Hematuria",
+      "type": "Clinical_Manifestation",
+      "description": "Grossly visible blood in urine caused by urinary tract microvascular hemorrhage."
+    },
+    {
+      "name": "Tender Hepatomegaly",
+      "type": "Clinical_Manifestation",
+      "description": "Smooth painful enlargement of the liver extending > 2 cm beneath the costal margin."
+    },
+    {
+      "name": "Lethargy and Agitation",
+      "type": "Clinical_Manifestation",
+      "description": "Significant changes in mental alertness presenting as deep lethargy or agitation."
+    },
+    {
+      "name": "Dengue Shock Syndrome",
+      "type": "Clinical_Manifestation",
+      "description": "Life-threatening hypovolemic circulatory collapse resulting from severe capillary leak."
+    },
+    {
+      "name": "Profound Hypovolemic Shock",
+      "type": "Clinical_Manifestation",
+      "description": "Extreme depletion of effective circulating volume causing end-organ ischemia."
+    },
+    {
+      "name": "Massive Systemic Hemorrhage",
+      "type": "Clinical_Manifestation",
+      "description": "Catastrophic bleeding across multiple anatomic compartments in severe dengue."
+    },
+    {
+      "name": "Acute Severe Hepatitis",
+      "type": "Clinical_Manifestation",
+      "description": "Direct viral cytopathic liver injury with transaminases elevated > 1000 U/L."
+    },
+    {
+      "name": "Acute Liver Failure",
+      "type": "Clinical_Manifestation",
+      "description": "Rapid loss of liver synthetic and clearance function with encephalopathy."
+    },
+    {
+      "name": "Dengue Myocarditis",
+      "type": "Clinical_Manifestation",
+      "description": "Inflammatory myocardial damage causing contractile dysfunction and conduction blocks."
+    },
+    {
+      "name": "Acute Encephalopathy",
+      "type": "Clinical_Manifestation",
+      "description": "Global cerebral dysfunction induced by metabolic insults and cerebral edema."
+    },
+    {
+      "name": "Dengue Acute Encephalitis",
+      "type": "Clinical_Manifestation",
+      "description": "Direct flavivirus central nervous system invasion causing parenchymal brain inflammation."
+    },
+    {
+      "name": "Acute Kidney Injury",
+      "type": "Clinical_Manifestation",
+      "description": "Abrupt decline in renal excretory function due to hypovolemia and rhabdomyolysis."
+    },
+    {
+      "name": "Acute Respiratory Distress",
+      "type": "Clinical_Manifestation",
+      "description": "Severe respiratory insufficiency due to inflammatory alveolar capillary hyperpermeability."
+    },
+    {
+      "name": "Convalescent Fluid Overload",
+      "type": "Clinical_Manifestation",
+      "description": "Iatrogenic circulatory fluid overload during the spontaneous extravasate reabsorption phase."
+    },
+    {
+      "name": "Convalescent Hypervolemic Diuresis",
+      "type": "Clinical_Manifestation",
+      "description": "Spontaneous brisk urine output heralding the recovery phase of dengue."
+    },
+    {
+      "name": "Severe Post-Viral Asthenia",
+      "type": "Clinical_Manifestation",
+      "description": "Protracted physical and mental exhaustion persisting weeks after viral clearance."
+    },
+    {
+      "name": "Convalescent Bradycardia",
+      "type": "Clinical_Manifestation",
+      "description": "Physiological benign sinus slowing occurring characteristically during late recovery."
+    },
+    {
+      "name": "Retro-Orbital Headache",
       "type": "Cardinal_Sign",
-      "description": "Severe frontal cephalalgia coupled with intense retrobulbar ache aggravated by ocular motion, highly characteristic of early dengue infection."
+      "description": "Intense pain localized behind eyeballs exacerbated by voluntary eye movements."
     },
     {
-      "name": "Saddleback Biphasic Fever Pattern",
+      "name": "Positive Tourniquet Test",
       "type": "Cardinal_Sign",
-      "description": "Abrupt high-grade fever (39-40°C) lasting 3 to 4 days that temporarily remits before recurring in a second spike around days 5 to 6."
+      "description": "Development of petechiae under maintained blood pressure cuff inflation indicating fragility."
     },
     {
-      "name": "Positive Tourniquet Test with Petechial Capillary Fragility",
+      "name": "Herman Convalescent Rash",
       "type": "Cardinal_Sign",
-      "description": "Bedside demonstration of >= 10 petechiae per square inch after maintaining blood pressure cuff midway between systolic and diastolic pressure for 5 minutes."
+      "description": "Confluent erythematous eruption punctuated by sharply demarcated round pale islands."
     },
     {
-      "name": "Critical Phase Plasma Leakage with Narrowed Pulse Pressure",
+      "name": "Intense Palmar Pruritus",
       "type": "Cardinal_Sign",
-      "description": "Systemic vascular hyperpermeability occurring at or near defervescence (days 3-7) resulting in narrowing pulse pressure (<= 20 mmHg), cold clammy extremities, and dengue shock syndrome."
+      "description": "Severe localized itch affecting the palmar aspects during the recovery stage."
     },
     {
-      "name": "Islands of White in a Sea of Red Convalescent Rash",
+      "name": "Intense Plantar Pruritus",
       "type": "Cardinal_Sign",
-      "description": "Confluent maculopapular petechial rash with sharply demarcated round pale islands of normal skin, accompanied by intense palmar and plantar pruritus during recovery (days 7-10)."
+      "description": "Severe distressing itching over the soles of the feet accompanying late convalescent exanthem resolution."
     },
     {
-      "name": "Early Leukopenia Nadir with Atypical Plasmacytoid Lymphocytosis",
+      "name": "Transient Macular Erythema",
+      "type": "Cardinal_Sign",
+      "description": "Early blanching macular flush across upper body in the first 48 hours."
+    },
+    {
+      "name": "Confluent Petechial Exanthem",
+      "type": "Cardinal_Sign",
+      "description": "Clustered non-blanching microvascular petechial spots coalescing on distal limbs."
+    },
+    {
+      "name": "Narrow Pulse Pressure",
+      "type": "Cardinal_Sign",
+      "description": "Arterial pulse pressure narrowing to <= 20 mmHg signaling compensated shock."
+    },
+    {
+      "name": "Cold Clammy Extremities",
+      "type": "Cardinal_Sign",
+      "description": "Cool, diaphoretic, and pale peripheral extremities resulting from intense vasoconstriction."
+    },
+    {
+      "name": "Delayed Capillary Refill",
+      "type": "Cardinal_Sign",
+      "description": "Capillary reperfusion prolonged beyond 2 seconds reflecting peripheral hypoperfusion."
+    },
+    {
+      "name": "Rapid Thready Pulse",
+      "type": "Cardinal_Sign",
+      "description": "Tachycardic, low-volume peripheral pulse indicating critically reduced stroke volume."
+    },
+    {
+      "name": "Impalpable Peripheral Pulses",
+      "type": "Cardinal_Sign",
+      "description": "Inability to palpate distal peripheral pulses during decompensated circulatory collapse."
+    },
+    {
+      "name": "Profound Postural Hypotension",
+      "type": "Cardinal_Sign",
+      "description": "Orthostatic arterial pressure drop identifying covert early volume contraction."
+    },
+    {
+      "name": "Right Upper Quadrant Tenderness",
+      "type": "Cardinal_Sign",
+      "description": "Localized physical pain elicited by palpation of the right upper abdominal quadrant."
+    },
+    {
+      "name": "Palpable Tender Hepatomegaly",
+      "type": "Cardinal_Sign",
+      "description": "Palpable liver edge extending beyond 2 cm below right costal margin with tenderness."
+    },
+    {
+      "name": "Abdominal Shifting Dullness",
+      "type": "Cardinal_Sign",
+      "description": "Physical percussion maneuver demonstrating free intraperitoneal fluid transudation."
+    },
+    {
+      "name": "Decreased Breath Sounds",
+      "type": "Cardinal_Sign",
+      "description": "Auscultatory reduction of vesicular lung sounds over dependent pleural effusion."
+    },
+    {
+      "name": "Dullness to Percussion",
+      "type": "Cardinal_Sign",
+      "description": "Stony dull percussion note elicited over hemithorax with pleural fluid accumulation."
+    },
+    {
+      "name": "Relative Bradycardia",
+      "type": "Cardinal_Sign",
+      "description": "Inappropriate heart rate depression relative to core body temperature."
+    },
+    {
+      "name": "Spontaneous Cutaneous Petechiae",
+      "type": "Cardinal_Sign",
+      "description": "Spontaneous tiny pinpoint dermal hemorrhages indicating capillary rupture."
+    },
+    {
+      "name": "Confluent Purpuric Ecchymoses",
+      "type": "Cardinal_Sign",
+      "description": "Confluent cutaneous bruising and large purpuric lesions on skin."
+    },
+    {
+      "name": "Spontaneous Gingival Oozing",
+      "type": "Cardinal_Sign",
+      "description": "Observable continuous blood weeping along gingival margins."
+    },
+    {
+      "name": "Profuse Anterior Epistaxis",
+      "type": "Cardinal_Sign",
+      "description": "Active anterior nasal mucosal bleeding visualized during clinical inspection."
+    },
+    {
+      "name": "Subconjunctival Hemorrhage",
+      "type": "Cardinal_Sign",
+      "description": "Bright red focal hemorrhage beneath bulbar conjunctiva without ocular injury."
+    },
+    {
+      "name": "Fluctuating Mental Status",
+      "type": "Cardinal_Sign",
+      "description": "Alternating lethargy and confusion detectable on neurological physical examination."
+    },
+    {
+      "name": "Marked Restlessness Agitation",
+      "type": "Cardinal_Sign",
+      "description": "Observable motor agitation and restless irritability reflecting cerebral hypoperfusion."
+    },
+    {
+      "name": "Severe Axial Spinal Tenderness",
+      "type": "Cardinal_Sign",
+      "description": "Exquisite physical tenderness over lumbar spinal and paraspinal structures."
+    },
+    {
+      "name": "Severe Progressive Leukopenia",
       "type": "Admission_Lab_Imaging",
-      "description": "Admission complete blood count revealing profound leukopenia (< 4,000/µL, often < 2,500/µL) driven by neutropenia, accompanied by reactive plasmacytoid lymphocytes prior to the critical phase."
+      "description": "Precipitous reduction in total white blood cell count < 4000/uL on admission."
     },
     {
-      "name": "Severe Thrombocytopenia with Concurrent Hemoconcentration",
+      "name": "Marked Neutropenia",
       "type": "Admission_Lab_Imaging",
-      "description": "Rapid progressive platelet count decline (< 100,000/µL) concurrent with hematocrit elevation >= 20% above baseline (or HCT > 45% in adult males, > 40% in females), confirming vascular plasma leakage."
+      "description": "Severe depression of circulating mature neutrophils during acute viremia."
     },
     {
-      "name": "Preferential AST Elevation over ALT Transaminitis",
+      "name": "Atypical Plasmacytoid Lymphocytosis",
       "type": "Admission_Lab_Imaging",
-      "description": "Hepatic transaminitis displaying an AST:ALT ratio > 1 reflecting combined hepatocellular and skeletal muscle injury, accompanied by normal to minimally elevated total bilirubin."
+      "description": "Circulating activated plasmacytoid lymphocytes appearing near the critical phase."
     },
     {
-      "name": "Gallbladder Wall Thickening with Pericholecystic Fluid and Right Pleural Effusion",
+      "name": "Progressive Thrombocytopenia",
       "type": "Admission_Lab_Imaging",
-      "description": "Point-of-care ultrasound demonstrating edematous, striated gallbladder wall thickening (>= 3 mm without gallstones), subcapsular hepatic fluid, and right-sided pleural effusion on chest imaging."
+      "description": "Rapid decline in peripheral blood platelet count falling below 100,000/uL."
     },
     {
-      "name": "Fever Duration Exceeding 10 Days",
+      "name": "Critical Thrombocytopenia Nadir",
+      "type": "Admission_Lab_Imaging",
+      "description": "Severe nadir in platelet count dropping below 20,000/uL in high-risk patients."
+    },
+    {
+      "name": "Hemoconcentration Elevation",
+      "type": "Admission_Lab_Imaging",
+      "description": "Elevation in hematocrit >= 20% signifying critical intravascular fluid leakage."
+    },
+    {
+      "name": "Elevated Baseline Hematocrit",
+      "type": "Admission_Lab_Imaging",
+      "description": "Absolute hematocrit exceeding normal sex thresholds upon initial hospital triage."
+    },
+    {
+      "name": "Prolonged Activated PTT",
+      "type": "Admission_Lab_Imaging",
+      "description": "Prolongation of activated partial thromboplastin time reflecting coagulopathy."
+    },
+    {
+      "name": "Mild Prothrombin Prolongation",
+      "type": "Admission_Lab_Imaging",
+      "description": "Elevation in prothrombin time and INR reflecting hepatic synthetic compromise."
+    },
+    {
+      "name": "Reduced Plasma Fibrinogen",
+      "type": "Admission_Lab_Imaging",
+      "description": "Depletion of circulating plasma fibrinogen reflecting consumptive processes."
+    },
+    {
+      "name": "Elevated D-Dimer Levels",
+      "type": "Admission_Lab_Imaging",
+      "description": "Increased serum D-dimer concentration reflecting ongoing microvascular fibrinolysis."
+    },
+    {
+      "name": "Elevated Aspartate Aminotransferase",
+      "type": "Admission_Lab_Imaging",
+      "description": "Marked increase in circulating aspartate aminotransferase levels."
+    },
+    {
+      "name": "Elevated Alanine Aminotransferase",
+      "type": "Admission_Lab_Imaging",
+      "description": "Elevation in alanine aminotransferase indicating hepatocellular inflammatory stress."
+    },
+    {
+      "name": "Elevated AST ALT Ratio",
+      "type": "Admission_Lab_Imaging",
+      "description": "Inversion of transaminases where AST exceeds ALT due to concomitant muscle injury."
+    },
+    {
+      "name": "Marked Hypoalbuminemia",
+      "type": "Admission_Lab_Imaging",
+      "description": "Decline in serum albumin concentration tracking the severity of capillary leak."
+    },
+    {
+      "name": "Normal Serum Bilirubin",
+      "type": "Admission_Lab_Imaging",
+      "description": "Serum bilirubin remains normal in uncomplicated dengue despite elevated transaminases."
+    },
+    {
+      "name": "Normal Procalcitonin Level",
+      "type": "Admission_Lab_Imaging",
+      "description": "Serum procalcitonin remains suppressed (< 0.5 ng/mL) distinguishing viral etiology."
+    },
+    {
+      "name": "Mildly Elevated CRP",
+      "type": "Admission_Lab_Imaging",
+      "description": "Modest elevation of C-reactive protein consistent with acute viral illness."
+    },
+    {
+      "name": "Normal Erythrocyte Sedimentation",
+      "type": "Admission_Lab_Imaging",
+      "description": "Erythrocyte sedimentation rate remains near normal in acute uncomplicated disease."
+    },
+    {
+      "name": "Elevated Serum Ferritin",
+      "type": "Admission_Lab_Imaging",
+      "description": "Profound elevation in serum ferritin reflecting intense immune activation."
+    },
+    {
+      "name": "Serum Lactate Elevation",
+      "type": "Admission_Lab_Imaging",
+      "description": "Elevated circulating lactate concentration indicating tissue hypoperfusion."
+    },
+    {
+      "name": "Elevated Creatine Kinase",
+      "type": "Admission_Lab_Imaging",
+      "description": "Elevation in serum creatine kinase reflecting skeletal muscle inflammation."
+    },
+    {
+      "name": "Transient Prerenal Azotemia",
+      "type": "Admission_Lab_Imaging",
+      "description": "Elevation of BUN and creatinine due to reduced effective intravascular volume."
+    },
+    {
+      "name": "Hyponatremia Electrolyte Disturbance",
+      "type": "Admission_Lab_Imaging",
+      "description": "Depression of serum sodium concentration predisposing to neurological irritability."
+    },
+    {
+      "name": "Hypocalcemia Electrolyte Derangement",
+      "type": "Admission_Lab_Imaging",
+      "description": "Reduction in ionized serum calcium concentration in severe dengue shock."
+    },
+    {
+      "name": "Gallbladder Wall Thickening",
+      "type": "Admission_Lab_Imaging",
+      "description": "Sonographic gallbladder wall edema >= 3 mm identifying early plasma leakage."
+    },
+    {
+      "name": "Dual-Rim Gallbladder Sign",
+      "type": "Admission_Lab_Imaging",
+      "description": "Double-contoured sonographic gallbladder wall sign created by subserosal fluid."
+    },
+    {
+      "name": "Right-Sided Pleural Effusion",
+      "type": "Admission_Lab_Imaging",
+      "description": "Right-sided pleural fluid accumulation detected by ultrasonography or radiography."
+    },
+    {
+      "name": "Bilateral Pleural Effusions",
+      "type": "Admission_Lab_Imaging",
+      "description": "Bilateral serosal fluid transudation into both pleural hemithoraces."
+    },
+    {
+      "name": "Pericholecystic Fluid Accumulation",
+      "type": "Admission_Lab_Imaging",
+      "description": "Anechoic fluid layer encircling the gallbladder wall on ultrasound."
+    },
+    {
+      "name": "Subcapsular Hepatic Fluid",
+      "type": "Admission_Lab_Imaging",
+      "description": "Anechoic fluid collection beneath Glisson's hepatic capsule on sonography."
+    },
+    {
+      "name": "Pelvic Free Fluid",
+      "type": "Admission_Lab_Imaging",
+      "description": "Anechoic free peritoneal fluid visualized in the dependent pelvic cul-de-sac."
+    },
+    {
+      "name": "Hepatosplenomegaly on Ultrasound",
+      "type": "Admission_Lab_Imaging",
+      "description": "Sonographically verified enlargement of the liver and reactive spleen."
+    },
+    {
+      "name": "Increased Peritoneal Echogenicity",
+      "type": "Admission_Lab_Imaging",
+      "description": "Ultrasound evidence of diffuse peritoneal and omental inflammatory edema."
+    },
+    {
+      "name": "Pericardial Fluid Collection",
+      "type": "Admission_Lab_Imaging",
+      "description": "Small to moderate anechoic pericardial fluid accumulation detected on echocardiography."
+    },
+    {
+      "name": "Blunted Costophrenic Angle",
+      "type": "Admission_Lab_Imaging",
+      "description": "Radiographic blunting of the costophrenic recesses by pleural transudate."
+    },
+    {
+      "name": "Dengue NS1 Antigen Positivity",
+      "type": "Admission_Lab_Imaging",
+      "description": "Positive serum non-structural protein 1 antigen during days 1-7 of illness."
+    },
+    {
+      "name": "Positive DENV RT-PCR",
+      "type": "Admission_Lab_Imaging",
+      "description": "Definitive molecular detection and serotyping of viral RNA by RT-PCR."
+    },
+    {
+      "name": "Dengue IgM Seroconversion",
+      "type": "Admission_Lab_Imaging",
+      "description": "Detection of serum anti-dengue IgM antibodies developing after day 5."
+    },
+    {
+      "name": "Secondary Infection IgG Titers",
+      "type": "Admission_Lab_Imaging",
+      "description": "Rapid robust rise in anti-dengue IgG titers indicating secondary infection."
+    },
+    {
+      "name": "Aedes Aegypti Vector",
+      "type": "Vector_Exposure",
+      "description": "Primary diurnal anthropophilic mosquito vector breeding in domestic containers."
+    },
+    {
+      "name": "Aedes Albopictus Vector",
+      "type": "Vector_Exposure",
+      "description": "Secondary vector mosquito flourishing in peri-domestic vegetated habitats."
+    },
+    {
+      "name": "Diurnal Mosquito Bites",
+      "type": "Vector_Exposure",
+      "description": "Exposure to daytime-feeding mosquito bites characteristic of Aedes species."
+    },
+    {
+      "name": "Indoor Resting Vectors",
+      "type": "Vector_Exposure",
+      "description": "Habitation of adult mosquitoes sequestered inside shaded domestic living spaces."
+    },
+    {
+      "name": "Domestic Water Storage Containers",
+      "type": "Vector_Exposure",
+      "description": "Uncovered household water reservoirs providing oviposition breeding sites."
+    },
+    {
+      "name": "Discarded Vehicle Tires",
+      "type": "Vector_Exposure",
+      "description": "Discarded automotive tires collecting rainwater and serving as vector nurseries."
+    },
+    {
+      "name": "Non-Biodegradable Plastic Containers",
+      "type": "Vector_Exposure",
+      "description": "Accumulated urban plastic waste functioning as rainwater-trapping larval habitats."
+    },
+    {
+      "name": "Unplanned Urban Shanty Settlements",
+      "type": "Vector_Exposure",
+      "description": "High-density unplanned settlements lacking piped water and vector control."
+    },
+    {
+      "name": "Tropical Monsoon Rainfall Season",
+      "type": "Vector_Exposure",
+      "description": "Tropical seasonal rainfall peaks multiplying mosquito breeding reservoirs."
+    },
+    {
+      "name": "Tropical Endemic Travel Exposure",
+      "type": "Vector_Exposure",
+      "description": "Travel within the previous 14 days to dengue-hyperendemic tropical regions."
+    },
+    {
+      "name": "Maternal Vertical Transmission",
+      "type": "Vector_Exposure",
+      "description": "Transplacental maternal transmission of dengue virus during late pregnancy."
+    },
+    {
+      "name": "Blood Transfusion Transmission",
+      "type": "Vector_Exposure",
+      "description": "Iatrogenic transmission via transfusion of asymptomatic viremic blood products."
+    },
+    {
+      "name": "Percutaneous Laboratory Inoculation",
+      "type": "Vector_Exposure",
+      "description": "Accidental occupational sharps injury with contaminated viremic blood."
+    },
+    {
+      "name": "Intrinsic Human Incubation Period",
+      "type": "Vector_Exposure",
+      "description": "Human intrinsic incubation period ranging strictly from 4 to 10 days."
+    },
+    {
+      "name": "Extrinsic Mosquito Incubation Period",
+      "type": "Vector_Exposure",
+      "description": "Extrinsic mosquito viral dissemination phase lasting 8 to 12 days."
+    },
+    {
+      "name": "Pre-Symptomatic Human Viremia",
+      "type": "Vector_Exposure",
+      "description": "Infectious viremic state occurring 24-48 hours before fever onset."
+    },
+    {
+      "name": "Symptomatic High Viremia Phase",
+      "type": "Vector_Exposure",
+      "description": "High circulating viral titer during days 1-5 of clinical symptoms."
+    },
+    {
+      "name": "Prolonged Atypical Viremia",
+      "type": "Vector_Exposure",
+      "description": "Protracted presence of infectious virus in blood lasting up to 12 days."
+    },
+    {
+      "name": "Secondary Heterotypic Serotype Infection",
+      "type": "Vector_Exposure",
+      "description": "Patient experiencing secondary infection with an alternate DENV serotype."
+    },
+    {
+      "name": "Antibody-Dependent Enhancement",
+      "type": "Vector_Exposure",
+      "description": "Pre-existing cross-reactive antibodies that enhance monocyte viral entry."
+    },
+    {
+      "name": "Pediatric Host Vulnerability",
+      "type": "Vector_Exposure",
+      "description": "Young pediatric patients with high susceptibility to rapid hypovolemic collapse."
+    },
+    {
+      "name": "Elderly Comorbid Host",
+      "type": "Vector_Exposure",
+      "description": "Aged individuals with chronic comorbidities and impaired physiological reserve."
+    },
+    {
+      "name": "Underlying Hemoglobinopathy Trait",
+      "type": "Vector_Exposure",
+      "description": "Underlying hemoglobin disorder predisposing to hemolytic and vascular crises."
+    },
+    {
+      "name": "Marked Neutrophilic Leukocytosis",
       "type": "Exclusion_Criterion",
-      "description": "Fever persisting continuously or intermittently beyond 10 days, exceeding the acute 2-7 day febrile envelope of dengue."
+      "description": "Elevated WBC > 15,000/uL with neutrophilia pointing to bacterial infection."
     },
     {
-      "name": "Marked Neutrophilic Leukocytosis Exceeding 15,000/uL",
+      "name": "Normal Platelet Count Nadir",
       "type": "Exclusion_Criterion",
-      "description": "Peripheral white blood cell count exceeding 15,000/µL with neutrophilia and toxic left shift in the absence of secondary bacterial superinfection."
+      "description": "Platelet counts remaining strictly normal throughout days 4 to 7."
     },
     {
-      "name": "Normal Platelet Count Above 150,000/uL on Days 4 to 7",
+      "name": "Prolonged Fever Beyond Day-10",
       "type": "Exclusion_Criterion",
-      "description": "Complete preservation of normal platelet counts (> 150,000/µL) throughout days 4 through 7 of illness, making severe dengue and plasma leak syndrome exceedingly unlikely."
+      "description": "Fever persisting past 10 days contradicting self-limited dengue timeline."
     },
     {
-      "name": "Early Marked Direct Hyperbilirubinemia and Acute Renal Failure",
+      "name": "Cutaneous Inoculation Eschar",
       "type": "Exclusion_Criterion",
-      "description": "Early-onset deep clinical jaundice with direct hyperbilirubinemia and oliguric acute renal failure within the first 3 to 5 days of illness."
+      "description": "Necrotic black crusty eschar identifying chigger-borne scrub typhus."
     },
     {
-      "name": "Chikungunya",
-      "type": "Disease",
-      "description": "Alphaviral infection transmitted by Aedes mosquitoes presenting with severe, symmetric polyarthritis/synovitis but lacking vascular hyperpermeability."
+      "name": "Purulent Conjunctival Exudate",
+      "type": "Exclusion_Criterion",
+      "description": "Frank purulent ocular discharge identifying acute bacterial ocular infection."
     },
     {
-      "name": "Zika Virus Infection",
-      "type": "Disease",
-      "description": "Arboviral flavivirus infection characterized by low-grade fever, bilateral non-purulent conjunctivitis, and early descending maculopapular rash without plasma leakage."
+      "name": "Prominent Exudative Pharyngitis",
+      "type": "Exclusion_Criterion",
+      "description": "Confluent white-yellow tonsillar exudates indicating bacterial or EBV pharyngitis."
     },
     {
-      "name": "Leptospirosis",
-      "type": "Disease",
-      "description": "Zoonotic spirochetal infection causing fever, conjunctival suffusion, severe calf tenderness, marked neutrophilic leukocytosis, and hepato-renal failure (Weil disease)."
+      "name": "Markedly Elevated Bilirubin Early",
+      "type": "Exclusion_Criterion",
+      "description": "Early clinical jaundice and high conjugated bilirubin excluding early dengue."
     },
     {
-      "name": "Malaria",
-      "type": "Disease",
-      "description": "Intraerythrocytic parasitic infection caused by Plasmodium species presenting with periodic paroxysmal rigors, splenomegaly, and intravascular hemolytic anemia."
+      "name": "Elevated Procalcitonin Level",
+      "type": "Exclusion_Criterion",
+      "description": "Elevated serum procalcitonin level confirming invasive bacterial infection."
     },
     {
-      "name": "Titrated Isotonic Crystalloid Fluid Resuscitation",
-      "type": "Drug_Response",
-      "description": "Judiciously administered isotonic crystalloids (normal saline, Ringer's lactate) restoring hemodynamic stability, normalizing pulse pressure, reducing hemoconcentration, and maintaining urine output (> 0.5-1 mL/kg/h)."
+      "name": "Substantial ESR Elevation",
+      "type": "Exclusion_Criterion",
+      "description": "Very high erythrocyte sedimentation rate contradicting typical dengue kinetics."
     },
     {
-      "name": "Empirical Broad-Spectrum Antibacterial Therapy",
-      "type": "Drug_Response",
-      "description": "Empirical broad-spectrum beta-lactams, macrolides, and fluoroquinolones that fail to alter fever defervescence, platelet trajectory, or hemoconcentration in acute dengue."
+      "name": "Absence of Capillary Leak",
+      "type": "Exclusion_Criterion",
+      "description": "Total absence of vascular leakage markers excluding severe dengue/DHF."
     },
     {
-      "name": "NSAIDs and Aspirin Induced Bleeding Toxicity",
-      "type": "Drug_Response",
-      "description": "Non-steroidal anti-inflammatory agents (ibuprofen, naproxen) and aspirin, which exacerbate hemorrhagic diathesis, provoke gastric ulceration, and impair platelet function."
+      "name": "Crystalloid Refractory Shock",
+      "type": "Exclusion_Criterion",
+      "description": "Circulatory collapse completely unresponsive to isotonic volume expansion."
     },
     {
-      "name": "Paracetamol Antipyresis",
-      "type": "Drug_Response",
-      "description": "Acetaminophen (paracetamol) providing safe fever control and mild analgesic symptom relief without increasing the risk of mucosal or gastrointestinal hemorrhage."
+      "name": "Dense Lobar Consolidation",
+      "type": "Exclusion_Criterion",
+      "description": "Radiographic dense lobar alveolar consolidation indicating bacterial pneumonia."
+    },
+    {
+      "name": "Meningismus with CSF Pleocytosis",
+      "type": "Exclusion_Criterion",
+      "description": "Neutrophilic cerebrospinal fluid pleocytosis establishing bacterial meningitis."
+    },
+    {
+      "name": "Destructive Erosive Polyarthritis",
+      "type": "Exclusion_Criterion",
+      "description": "Destructive or erosive articular lesions contradicting non-erosive dengue."
+    },
+    {
+      "name": "Descending Day-One Pruritic Rash",
+      "type": "Exclusion_Criterion",
+      "description": "Day 1 descending itchy cephalocaudal eruption typical of Zika infection."
+    },
+    {
+      "name": "Cyclical Shaking Rigors",
+      "type": "Exclusion_Criterion",
+      "description": "Strictly paroxysmal 48- or 72-hour shaking rigors pathognomonic of malaria."
+    },
+    {
+      "name": "Early Palpable Splenomegaly",
+      "type": "Exclusion_Criterion",
+      "description": "Early substantial spleen enlargement distinguishing non-dengue tropical fevers."
+    },
+    {
+      "name": "Absence of Secondary Defervescence",
+      "type": "Exclusion_Criterion",
+      "description": "Absence of temperature defervescence between days 3 and 7 of illness."
+    },
+    {
+      "name": "Early Scleral Icterus Presentation",
+      "type": "Exclusion_Criterion",
+      "description": "Scleral icterus at symptom inception excluding early dengue presentation."
+    },
+    {
+      "name": "Generalized Bullous Epidermal Desquamation",
+      "type": "Exclusion_Criterion",
+      "description": "Bullous skin detachment and positive Nikolsky sign excluding dengue."
+    },
+    {
+      "name": "Persistent Leukocytosis Day Five",
+      "type": "Exclusion_Criterion",
+      "description": "Sustained high leukocyte count on days 4-6 contradicting dengue leukopenia."
+    },
+    {
+      "name": "Intraerythrocytic Parasitemia on Smear",
+      "type": "Exclusion_Criterion",
+      "description": "Direct microscopic visualization of intraerythrocytic malaria parasites."
+    },
+    {
+      "name": "Chikungunya Polyarthritis Severity",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Chikungunya based on severe symmetric joint inflammation."
+    },
+    {
+      "name": "Chikungunya Absent Plasma Leak",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Chikungunya which lacks capillary leakage syndrome."
+    },
+    {
+      "name": "Chikungunya Normal Platelet Count",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Chikungunya where thrombocytopenia is typically mild or absent."
+    },
+    {
+      "name": "Zika Low-Grade Febrile Profile",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Zika based on pyrexia magnitude and fever profile."
+    },
+    {
+      "name": "Zika Non-Purulent Conjunctivitis",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Zika which prominently manifests bilateral conjunctivitis."
+    },
+    {
+      "name": "Zika Day-One Descending Rash",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Zika based on timing and descending trajectory of rash."
+    },
+    {
+      "name": "Zika Absence of Shock",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Zika which lacks life-threatening plasma leakage."
+    },
+    {
+      "name": "Leptospirosis Neutrophilic Leukocytosis",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Leptospirosis where neutrophilia contrasts with leukopenia."
+    },
+    {
+      "name": "Leptospirosis Conjunctival Suffusion",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Leptospirosis based on marked ciliary conjunctival suffusion."
+    },
+    {
+      "name": "Leptospirosis Early Hepatorenal Failure",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Leptospirosis based on early combined jaundice and renal failure."
+    },
+    {
+      "name": "Leptospirosis Marked Calf Tenderness",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Leptospirosis which features exquisite gastrocnemius tenderness."
+    },
+    {
+      "name": "Malaria Cyclical Shaking Chills",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Malaria based on periodic 48- or 72-hour febrile paroxysms."
+    },
+    {
+      "name": "Malaria Intraerythrocytic Parasitemia",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Malaria based on intraerythrocytic parasites on blood smear."
+    },
+    {
+      "name": "Malaria Prominent Hemolytic Anemia",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Malaria based on hemolytic anemia versus hemoconcentration."
+    },
+    {
+      "name": "Malaria Early Splenomegaly Presentation",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Malaria based on prominent early splenic enlargement."
+    },
+    {
+      "name": "Scrub Typhus Inoculation Eschar",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Scrub Typhus based on presence of diagnostic necrotic eschar."
+    },
+    {
+      "name": "Scrub Typhus Prominent Lymphadenopathy",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Scrub Typhus which exhibits marked generalized adenopathy."
+    },
+    {
+      "name": "Enteric Typhoid Stepladder Fever",
+      "type": "Differential_Diagnosis",
+      "description": "Distinction from Typhoid fever based on insidious stepladder fever curve."
     }
   ],
   "relationships": [
     {
       "source": "Dengue",
-      "target": "Aedes aegypti Mosquito Vector",
-      "keywords": "TRANSMITTED_BY, primary vector, Aedes aegypti, diurnal mosquito, domestic breeder",
-      "description": "[TRANSMITTED_BY] Transmitted primarily by the bites of infected female Aedes aegypti mosquitoes, which are highly anthropophilic, bite during daylight hours, and breed in domestic and peridomestic artificial water containers."
+      "target": "Abrupt High Fever",
+      "keywords": "MANIFESTS_AS, abrupt high fever, febrile phase, sudden pyrexia",
+      "description": "[MANIFESTS_AS] Sudden explosive onset of continuous high-grade pyrexia (often 39°C to 40°C) with rigors heralding the acute febrile phase of dengue."
     },
     {
       "source": "Dengue",
-      "target": "Aedes albopictus Mosquito Vector",
-      "keywords": "TRANSMITTED_BY, secondary vector, Aedes albopictus, peri-domestic vector",
-      "description": "[TRANSMITTED_BY] Transmitted secondarily by Aedes albopictus mosquitoes, which thrive in peri-domestic vegetated habitats and tolerate cooler climates, expanding transmission into suburban and rural regions."
+      "target": "Biphasic Saddleback Fever",
+      "keywords": "MANIFESTS_AS, saddleback fever pattern, biphasic temperature, defervescence remission",
+      "description": "[MANIFESTS_AS] Characteristic biphasic or saddleback thermal trajectory with initial pyrexia for 3-4 days, temporary remission, and a secondary febrile spike around days 5-6."
     },
     {
       "source": "Dengue",
-      "target": "Rapid Unplanned Tropical Urbanization and Artificial Water Storage",
-      "keywords": "EXPOSURE_TO, urban transmission, domestic water storage, artificial larval containers",
-      "description": "[EXPOSURE_TO] Driven by rapid unplanned urbanization with high population density, intermittent municipal water forcing domestic water storage in cisterns/drums/jars, and accumulation of discarded tires and plastic containers."
+      "target": "Severe Frontal Cephalalgia",
+      "keywords": "MANIFESTS_AS, frontal headache, severe cephalalgia, early febrile sign",
+      "description": "[MANIFESTS_AS] Intractable throbbing frontal and retro-orbital headache presenting in the earliest hours of viremia."
     },
     {
       "source": "Dengue",
-      "target": "Secondary Heterologous Dengue Infection",
-      "keywords": "EXPOSURE_TO, antibody dependent enhancement, heterologous serotype, severe dengue risk",
-      "description": "[EXPOSURE_TO] Previous infection with a heterologous DENV serotype predisposes the patient to antibody-dependent enhancement (ADE), leading to massive viral replication, intense cytokine release, and high risk of severe plasma leakage."
+      "target": "Breakbone Myalgia",
+      "keywords": "MANIFESTS_AS, breakbone myalgia, muscle pain, backache",
+      "description": "[MANIFESTS_AS] Excruciating musculoskeletal body aches and severe myalgias earning dengue historical moniker breakbone fever."
     },
     {
       "source": "Dengue",
-      "target": "Dengue Virus (DENV-1, DENV-2, DENV-3, DENV-4)",
-      "keywords": "HAS_PATHOGEN, causative agent, Flavivirus, arbovirus, positive-sense RNA",
-      "description": "[HAS_PATHOGEN] Caused by the dengue virus (DENV), a positive-sense single-stranded RNA Flavivirus existing as four distinct antigenic serotypes (DENV-1, DENV-2, DENV-3, and DENV-4)."
+      "target": "Severe Debilitating Arthralgia",
+      "keywords": "MANIFESTS_AS, severe arthralgia, joint pains, polyarthralgia",
+      "description": "[MANIFESTS_AS] Intense polyarthralgias affecting large and small peripheral joints without frank inflammatory joint effusion."
     },
     {
       "source": "Dengue",
-      "target": "Retro-Orbital Headache Exacerbated by Eye Movements",
-      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, retro-orbital pain, ocular movement headache, early febrile sign",
-      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Severe frontal headache paired with intense retro-orbital pain exacerbated by eye movements during the early febrile phase is a cardinal clinical hallmark of dengue fever."
+      "target": "Generalized Lumbar Backpain",
+      "keywords": "MANIFESTS_AS, lumbar backpain, spinal ache, axial bone pain",
+      "description": "[MANIFESTS_AS] Incapacitating low back and spinal aches contributing to characteristic prostration during the febrile phase."
     },
     {
       "source": "Dengue",
-      "target": "Saddleback Biphasic Fever Pattern",
-      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, saddleback fever, biphasic temperature curve, clinical timeline",
-      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Abrupt onset high-grade fever (39-40°C) with a saddleback biphasic profile—temporary defervescence around day 3-4 followed by a secondary febrile spike—is highly suggestive of dengue."
+      "target": "Transient Facial Flushing",
+      "keywords": "MANIFESTS_AS, facial flushing, cutaneous erythema, early vascular dilation",
+      "description": "[MANIFESTS_AS] Conspicuous cutaneous vascular engorgement producing diffuse facial, neck, and chest flushing in the first 24 to 48 hours."
     },
     {
       "source": "Dengue",
-      "target": "Positive Tourniquet Test with Petechial Capillary Fragility",
-      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, tourniquet test, petechiae, capillary fragility, triage hallmark",
-      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Detection of >= 10 petechiae per square inch under 5-minute mid-blood pressure cuff inflation provides an immediate, low-cost bedside physical hallmark of vascular capillary fragility in dengue."
+      "target": "Diffuse Erythematous Blanching",
+      "keywords": "MANIFESTS_AS, diffuse blanching erythema, macular rash, early febrile exanthem",
+      "description": "[MANIFESTS_AS] Early transient macular or maculopapular blanching eruption appearing during initial pyrexia."
     },
     {
       "source": "Dengue",
-      "target": "Critical Phase Plasma Leakage with Narrowed Pulse Pressure",
-      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, plasma leakage, critical phase, narrowing pulse pressure, dengue shock",
-      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Acute systemic capillary hyperpermeability developing at defervescence (days 3-7), manifesting as narrowing pulse pressure (<= 20 mmHg), cold clammy extremities, and fluid accumulation, defines the critical phase of severe dengue."
+      "target": "Anorexia and Dysgeusia",
+      "keywords": "MANIFESTS_AS, anorexia, dysgeusia, altered taste, metallic taste",
+      "description": "[MANIFESTS_AS] Complete loss of appetite accompanied by unpleasant metallic or altered taste sensation (dysgeusia)."
     },
     {
       "source": "Dengue",
-      "target": "Islands of White in a Sea of Red Convalescent Rash",
-      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, convalescent rash, islands of white, pruritic rash, pathognomonic sign",
-      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Confluent erythematous maculopapular petechial eruption sparing small rounded areas of pale normal skin ('islands of white in a sea of red'), accompanied by intense palmar and plantar itching, is pathognomonic during recovery (days 7-10)."
+      "target": "Nausea and Vomiting",
+      "keywords": "MANIFESTS_AS, nausea, vomiting, gastrointestinal distress, emesis",
+      "description": "[MANIFESTS_AS] Recurrent nausea and early emesis due to systemic viremia and acute gastrointestinal irritation."
     },
     {
       "source": "Dengue",
-      "target": "Early Leukopenia Nadir with Atypical Plasmacytoid Lymphocytosis",
-      "keywords": "EXHIBITS_LAB_PATTERN, leukopenia, neutropenia, atypical lymphocytes, admission CBC",
-      "description": "[EXHIBITS_LAB_PATTERN] Early admission leukopenia (WBC nadir < 4,000/µL, frequently < 2,500/µL) driven by neutropenia and early lymphopenia, followed by the appearance of reactive plasmacytoid lymphocytes, heralds the critical phase."
+      "target": "Asthenia and Malaise",
+      "keywords": "MANIFESTS_AS, asthenia, malaise, profound fatigue, prostration",
+      "description": "[MANIFESTS_AS] Severe constitutional prostration, overwhelming physical weakness, and bed-bound lethargy."
     },
     {
       "source": "Dengue",
-      "target": "Severe Thrombocytopenia with Concurrent Hemoconcentration",
-      "keywords": "EXHIBITS_LAB_PATTERN, thrombocytopenia, hemoconcentration, hematocrit rise, plasma leakage",
-      "description": "[EXHIBITS_LAB_PATTERN] Rapidly declining platelet count (< 100,000/µL, dropping < 20,000/µL in severe cases) combined with a >= 20% elevation in hematocrit above baseline serves as the definitive laboratory pattern of vascular plasma extravasation."
+      "target": "Tender Cervical Lymphadenopathy",
+      "keywords": "MANIFESTS_AS, cervical lymphadenopathy, reactive lymphadenitis, nodal enlargement",
+      "description": "[MANIFESTS_AS] Mild-to-moderate tender enlargement of posterior cervical and submandibular lymph chains."
     },
     {
       "source": "Dengue",
-      "target": "Preferential AST Elevation over ALT Transaminitis",
-      "keywords": "EXHIBITS_LAB_PATTERN, AST higher than ALT, hepatic transaminitis, normal bilirubin, triage LFTs",
-      "description": "[EXHIBITS_LAB_PATTERN] Serum aminotransferases show elevated AST and ALT with AST characteristically higher than ALT (AST:ALT ratio > 1) due to virus-mediated skeletal muscle and hepatocyte necrosis, alongside normal total bilirubin."
+      "target": "Critical Capillary Leakage",
+      "keywords": "MANIFESTS_AS, critical plasma leakage, vascular hyperpermeability, defervescence leakage",
+      "description": "[MANIFESTS_AS] Sudden systemic endothelial barrier dysfunction leading to massive extravasation of intravascular fluid during defervescence (days 3-7)."
     },
     {
       "source": "Dengue",
-      "target": "Gallbladder Wall Thickening with Pericholecystic Fluid and Right Pleural Effusion",
-      "keywords": "EXHIBITS_LAB_PATTERN, POCUS ultrasound, gallbladder wall edema, right pleural effusion, bedside imaging",
-      "description": "[EXHIBITS_LAB_PATTERN] Point-of-care ultrasound demonstrating thickened striated gallbladder wall (>= 3 mm without lithiasis), subcapsular hepatic fluid, and right-sided pleural effusion on chest imaging serves as an early triage imaging marker of capillary leak."
+      "target": "Severe Abdominal Pain",
+      "keywords": "MANIFESTS_AS, severe abdominal pain, WHO warning sign, subserosal edema pain",
+      "description": "[MANIFESTS_AS] Intense persistent epigastric or right upper quadrant abdominal pain representing a cardinal WHO warning sign of impending plasma leakage."
     },
     {
       "source": "Dengue",
-      "target": "Fever Duration Exceeding 10 Days",
-      "keywords": "RULED_OUT_BY, exclusion criterion, negative boundary, fever duration cutoff",
-      "description": "[RULED_OUT_BY] A febrile illness lasting continuously or intermittently longer than 10 days rules out acute dengue, which strictly adheres to a 2 to 7 day (maximum 10 day) febrile timeframe."
+      "target": "Persistent Incessant Vomiting",
+      "keywords": "MANIFESTS_AS, persistent vomiting, warning sign, frequent emesis",
+      "description": "[MANIFESTS_AS] Inability to tolerate oral fluids due to persistent vomiting (>= 3 episodes within 24 hours), heralding plasma leakage."
     },
     {
       "source": "Dengue",
-      "target": "Marked Neutrophilic Leukocytosis Exceeding 15,000/uL",
-      "keywords": "RULED_OUT_BY, exclusion criterion, negative boundary, leukocytosis cutoff",
-      "description": "[RULED_OUT_BY] Marked neutrophilic leukocytosis (WBC > 15,000/µL) with toxic bandemia in the absence of secondary bacterial superinfection rules out uncomplicated dengue, which is consistently characterized by leukopenia."
+      "target": "Subclinical Plasma Leakage",
+      "keywords": "MANIFESTS_AS, subclinical plasma leakage, covert extravasation, early serosal fluid",
+      "description": "[MANIFESTS_AS] Extravascular plasma filtration into serosal spaces initially detectable only via sonographic gallbladder wall thickening or pleural fluid."
     },
     {
       "source": "Dengue",
-      "target": "Normal Platelet Count Above 150,000/uL on Days 4 to 7",
-      "keywords": "RULED_OUT_BY, exclusion criterion, negative boundary, normal platelets, critical window",
-      "description": "[RULED_OUT_BY] A normal platelet count (> 150,000/µL) maintained during days 4 through 7 of illness makes severe dengue and dengue hemorrhagic fever virtually impossible."
+      "target": "Clinically Evident Ascites",
+      "keywords": "MANIFESTS_AS, ascites, peritoneal fluid accumulation, plasma leakage",
+      "description": "[MANIFESTS_AS] Progressive peritoneal fluid accumulation causing abdominal distension, discomfort, and shifting dullness in severe dengue."
     },
     {
       "source": "Dengue",
-      "target": "Early Marked Direct Hyperbilirubinemia and Acute Renal Failure",
-      "keywords": "RULED_OUT_BY, exclusion criterion, negative boundary, early jaundice, acute renal failure",
-      "description": "[RULED_OUT_BY] Early gross clinical jaundice with direct hyperbilirubinemia and oliguric acute renal failure at initial admission rules out uncomplicated dengue, strongly indicating leptospirosis (Weil disease) or severe malaria."
+      "target": "Right Pleural Effusion",
+      "keywords": "MANIFESTS_AS, pleural effusion, right-sided effusion, thoracic fluid leak",
+      "description": "[MANIFESTS_AS] Predominantly right-sided or bilateral transudative pleural effusion developing during the critical phase of vascular leakage."
     },
     {
       "source": "Dengue",
-      "target": "Chikungunya",
-      "keywords": "DIFFERENTIATED_FROM, look-alike, differential diagnosis, symmetric polyarthritis, joint disability",
-      "description": "[DIFFERENTIATED_FROM] Chikungunya causes excruciating, symmetric polyarthritis and tenosynovitis (wrists, fingers, ankles) with preserved platelet counts (> 100,000/µL) and absence of capillary leak; Dengue causes dominant retro-orbital pain, severe neutropenia, thrombocytopenia, and plasma leak."
+      "target": "Mucosal Epistaxis",
+      "keywords": "MANIFESTS_AS, epistaxis, mucosal bleeding, nasal hemorrhage",
+      "description": "[MANIFESTS_AS] Spontaneous nasal mucosal hemorrhage resulting from microvascular fragility and acute severe thrombocytopenia."
     },
     {
       "source": "Dengue",
-      "target": "Zika Virus Infection",
-      "keywords": "DIFFERENTIATED_FROM, look-alike, differential diagnosis, non-purulent conjunctivitis, low-grade fever",
-      "description": "[DIFFERENTIATED_FROM] Zika virus infection is characterized by low-grade fever (< 38.5°C), prominent bilateral non-purulent conjunctivitis, and early descending pruritic maculopapular rash without plasma leakage; Dengue causes high fever (> 39°C), severe thrombocytopenia (< 50,000/µL), and hemoconcentration."
+      "target": "Severe Gingival Hemorrhage",
+      "keywords": "MANIFESTS_AS, gingival bleeding, gum hemorrhage, mucosal diathesis",
+      "description": "[MANIFESTS_AS] Spontaneous bleeding from oral mucosal margins and gingival sulci during teeth brushing or rest."
     },
     {
       "source": "Dengue",
-      "target": "Leptospirosis",
-      "keywords": "DIFFERENTIATED_FROM, look-alike, differential diagnosis, conjunctival suffusion, calf myalgia, Weil disease",
-      "description": "[DIFFERENTIATED_FROM] Leptospirosis presents with marked bilateral conjunctival suffusion, intense calf pain, neutrophilic leukocytosis (WBC > 12,000/µL), high ESR/CRP, and early direct hyperbilirubinemia with azotemia; Dengue exhibits leukopenia, AST > ALT, normal bilirubin, and hemoconcentration."
+      "target": "Menorrhagia and Metrorrhagia",
+      "keywords": "MANIFESTS_AS, menorrhagia, abnormal uterine bleeding, vaginal hemorrhage",
+      "description": "[MANIFESTS_AS] Profuse unseasonal uterine or menstrual hemorrhage during the critical leakage phase."
     },
     {
       "source": "Dengue",
-      "target": "Malaria",
-      "keywords": "DIFFERENTIATED_FROM, look-alike, differential diagnosis, cyclical rigors, splenomegaly, hemolytic anemia",
-      "description": "[DIFFERENTIATED_FROM] Malaria exhibits periodic paroxysms of severe rigors, prominent early splenomegaly, and hemolytic anemia (elevated indirect bilirubin, high LDH) without hemoconcentration or plasma extravasation; Dengue exhibits retro-orbital pain, hemoconcentration, and vascular leak syndrome."
+      "target": "Gastrointestinal Melena",
+      "keywords": "MANIFESTS_AS, gastrointestinal melena, upper GI bleeding, tarry stools",
+      "description": "[MANIFESTS_AS] Passage of black tarry stools indicating significant upper gastrointestinal hemorrhage exacerbated by mucosal microvascular stress."
     },
     {
       "source": "Dengue",
-      "target": "Titrated Isotonic Crystalloid Fluid Resuscitation",
-      "keywords": "RESPONDS_TO, fluid resuscitation, isotonic crystalloids, pulse pressure stabilization",
-      "description": "[RESPONDS_TO] Meticulously titrated intravenous isotonic crystalloids (normal saline or Ringer's lactate) achieve prompt widening of narrowed pulse pressure, reduction of elevated hematocrit, and maintenance of urine output (> 0.5-1 mL/kg/h) during dengue shock."
+      "target": "Frank Hematemesis",
+      "keywords": "MANIFESTS_AS, hematemesis, coffee ground emesis, acute GI hemorrhage",
+      "description": "[MANIFESTS_AS] Vomiting of fresh red blood or altered coffee-ground material indicating overt gastrointestinal mucosal erosion."
     },
     {
       "source": "Dengue",
-      "target": "Empirical Broad-Spectrum Antibacterial Therapy",
-      "keywords": "INTRINSICALLY_RESISTANT_TO, antibiotic refractoriness, therapeutic unresponsiveness, viral etiology",
-      "description": "[INTRINSICALLY_RESISTANT_TO] Empirical broad-spectrum beta-lactams, macrolides, or fluoroquinolones completely fail to produce defervescence or alter the platelet and hematocrit trajectories in acute dengue."
+      "target": "Macroscopic Hematuria",
+      "keywords": "MANIFESTS_AS, hematuria, macroscopic urinary bleeding, renal tract hemorrhage",
+      "description": "[MANIFESTS_AS] Frank gross red urine output secondary to microvascular renal tubular or bladder mucosal capillary leakage."
     },
     {
       "source": "Dengue",
-      "target": "NSAIDs and Aspirin Induced Bleeding Toxicity",
-      "keywords": "INTRINSICALLY_RESISTANT_TO, contraindication, hemorrhagic risk, gastritis, platelet inhibition",
-      "description": "[INTRINSICALLY_RESISTANT_TO] Non-steroidal anti-inflammatory drugs (NSAIDs) and aspirin are strictly contraindicated due to their provocation of severe mucosal hemorrhage, gastrointestinal ulceration, and exacerbation of platelet dysfunction."
+      "target": "Tender Hepatomegaly",
+      "keywords": "MANIFESTS_AS, tender hepatomegaly, liver enlargement, warning sign",
+      "description": "[MANIFESTS_AS] Painful liver enlargement exceeding 2 cm below the right costal margin, a critical WHO prognostic warning sign."
     },
     {
       "source": "Dengue",
-      "target": "Paracetamol Antipyresis",
-      "keywords": "RESPONDS_TO, safe antipyresis, symptomatic pain relief, paracetamol, acetaminophen",
-      "description": "[RESPONDS_TO] Paracetamol (acetaminophen) provides safe antipyresis and relief of break-bone musculoskeletal aches at weight-appropriate dosages without compromising hemostasis or precipitating hemorrhage."
+      "target": "Lethargy and Agitation",
+      "keywords": "MANIFESTS_AS, lethargy, agitation, cerebral hypoperfusion, restlessness",
+      "description": "[MANIFESTS_AS] Altered level of consciousness manifesting as extreme drowsiness, apathy, or paradoxical motor agitation due to cerebral hypoperfusion."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dengue Shock Syndrome",
+      "keywords": "MANIFESTS_AS, dengue shock syndrome, DSS, compensated shock, decompensated shock",
+      "description": "[MANIFESTS_AS] Life-threatening hemodynamic collapse characterized by narrowing pulse pressure (<= 20 mmHg) or unrecordable blood pressure from massive capillary permeability."
+    },
+    {
+      "source": "Dengue",
+      "target": "Profound Hypovolemic Shock",
+      "keywords": "MANIFESTS_AS, profound hypovolemic shock, circulatory failure, vascular collapse",
+      "description": "[MANIFESTS_AS] Critical intravascular volume depletion precipitating end-organ ischemic damage, lactic acidosis, and multiple organ dysfunction."
+    },
+    {
+      "source": "Dengue",
+      "target": "Massive Systemic Hemorrhage",
+      "keywords": "MANIFESTS_AS, massive systemic hemorrhage, catastrophic bleeding, disseminated coagulopathy",
+      "description": "[MANIFESTS_AS] Catastrophic multi-site hemorrhage driven by severe consumptive coagulopathy, marked thrombocytopenia, and prolonged shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Acute Severe Hepatitis",
+      "keywords": "MANIFESTS_AS, acute severe hepatitis, transaminitis, hepatocellular necrosis",
+      "description": "[MANIFESTS_AS] Extensive hepatocellular necrosis manifesting with marked serum transaminase elevations exceeding 1,000 U/L."
+    },
+    {
+      "source": "Dengue",
+      "target": "Acute Liver Failure",
+      "keywords": "MANIFESTS_AS, acute liver failure, hepatic encephalopathy, fulminant hepatitis",
+      "description": "[MANIFESTS_AS] Fulminant hepatic dysfunction with prolonged prothrombin time, jaundice, and hepatic encephalopathy in expanded dengue syndrome."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dengue Myocarditis",
+      "keywords": "MANIFESTS_AS, dengue myocarditis, myocardial depression, arrhythmias",
+      "description": "[MANIFESTS_AS] Direct arboviral myocardial injury causing conduction disturbances, ventricular hypokinesia, and reduced ejection fraction."
+    },
+    {
+      "source": "Dengue",
+      "target": "Acute Encephalopathy",
+      "keywords": "MANIFESTS_AS, acute encephalopathy, metabolic encephalopathy, coma",
+      "description": "[MANIFESTS_AS] Neurological depression driven by hepatic injury, cerebral edema, severe hyponatremia, and tissue hypoperfusion."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dengue Acute Encephalitis",
+      "keywords": "MANIFESTS_AS, acute encephalitis, viral neuroinvasion, seizures",
+      "description": "[MANIFESTS_AS] Direct neuroinvasive flaviviral infection of neural parenchyma presenting with seizures, focal neurological deficits, and coma."
+    },
+    {
+      "source": "Dengue",
+      "target": "Acute Kidney Injury",
+      "keywords": "MANIFESTS_AS, acute kidney injury, renal failure, acute tubular necrosis",
+      "description": "[MANIFESTS_AS] Prerenal hypoperfusion evolving into ischemic acute tubular necrosis and sudden oliguria during prolonged dengue shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Acute Respiratory Distress",
+      "keywords": "MANIFESTS_AS, acute respiratory distress, ARDS, non-cardiogenic pulmonary edema",
+      "description": "[MANIFESTS_AS] Non-cardiogenic alveolar pulmonary edema and tachypnea triggered by systemic inflammatory cytokine surge and microvascular leak."
+    },
+    {
+      "source": "Dengue",
+      "target": "Convalescent Fluid Overload",
+      "keywords": "MANIFESTS_AS, convalescent fluid overload, pulmonary edema, hypervolemia",
+      "description": "[MANIFESTS_AS] Iatrogenic pulmonary edema and respiratory distress precipitated by excessive intravenous crystalloid administration during plasma reabsorption (days 7-10)."
+    },
+    {
+      "source": "Dengue",
+      "target": "Convalescent Hypervolemic Diuresis",
+      "keywords": "MANIFESTS_AS, convalescent diuresis, recovery diuresis, physiological fluid resorption",
+      "description": "[MANIFESTS_AS] Profuse spontaneous urinary diuresis marking the resolution of capillary hyperpermeability and systemic recovery."
+    },
+    {
+      "source": "Dengue",
+      "target": "Severe Post-Viral Asthenia",
+      "keywords": "MANIFESTS_AS, post-viral asthenia, chronic fatigue, convalescent exhaustion",
+      "description": "[MANIFESTS_AS] Prolonged debilitating fatigue, depressive mood, and exercise intolerance lasting several weeks to months following acute recovery."
+    },
+    {
+      "source": "Dengue",
+      "target": "Convalescent Bradycardia",
+      "keywords": "MANIFESTS_AS, convalescent bradycardia, relative sinus bradycardia, recovery sign",
+      "description": "[MANIFESTS_AS] Transient benign sinus bradycardia (heart rate 40-50 bpm) observed during physiological convalescence."
+    },
+    {
+      "source": "Dengue",
+      "target": "Retro-Orbital Headache",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, retro-orbital pain, ocular motion headache, cardinal symptom",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Severe retrobulbar ache acutely aggravated by ocular motion or pressure, representing a classical pathognomonic hallmark of dengue fever."
+    },
+    {
+      "source": "Dengue",
+      "target": "Positive Tourniquet Test",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, tourniquet test, petechial fragility, Rumpel Leede sign",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Bedside demonstration of >= 10 petechiae per square inch under mid-blood pressure cuff inflation for 5 minutes, confirming microvascular capillary fragility."
+    },
+    {
+      "source": "Dengue",
+      "target": "Herman Convalescent Rash",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, Herman rash, islands of white, sea of red, pathognomonic exanthem",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Confluent maculopapular petechial exanthem with round pale uninvolved skin patches ('islands of white in a sea of red') appearing on days 6 to 8."
+    },
+    {
+      "source": "Dengue",
+      "target": "Intense Palmar Pruritus",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, palmar pruritus, recovery itch, convalescent hallmark",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Severe, agonizing pruritus localized specifically to palmar surfaces coinciding with the appearance of the convalescent Herman rash."
+    },
+    {
+      "source": "Dengue",
+      "target": "Intense Plantar Pruritus",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, plantar pruritus, sole itching, recovery rash symptom",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Severe distressing itching over the soles of the feet accompanying late convalescent exanthem resolution."
+    },
+    {
+      "source": "Dengue",
+      "target": "Transient Macular Erythema",
+      "keywords": "PHYSICAL_EXAM_SIGN, transient macular erythema, facial flush, early exanthem",
+      "description": "[PHYSICAL_EXAM_SIGN] Diffuse, transient, blanching erythematous flush over face, neck, and thorax occurring during the initial 24 to 48 hours of pyrexia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Confluent Petechial Exanthem",
+      "keywords": "PHYSICAL_EXAM_SIGN, confluent petechial rash, purpura, dependent exanthem",
+      "description": "[PHYSICAL_EXAM_SIGN] Extensive non-blanching petechial shower coalescing over the lower extremities and pressure points during the late critical and convalescent phases."
+    },
+    {
+      "source": "Dengue",
+      "target": "Narrow Pulse Pressure",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, narrow pulse pressure, compensated shock, systolic diastolic gap",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Narrowing difference between systolic and diastolic arterial pressures to <= 20 mmHg, defining compensated dengue shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Cold Clammy Extremities",
+      "keywords": "PHYSICAL_EXAM_SIGN, cold clammy extremities, peripheral vasoconstriction, hypoperfusion sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Marked peripheral vasoconstriction producing cool, moist, and pale distal extremities during progressive plasma leakage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Delayed Capillary Refill",
+      "keywords": "PHYSICAL_EXAM_SIGN, delayed capillary refill, perfusion assessment, triage sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Prolongation of nail bed capillary reperfusion time exceeding 2 seconds, reflecting severe systemic hypoperfusion."
+    },
+    {
+      "source": "Dengue",
+      "target": "Rapid Thready Pulse",
+      "keywords": "PHYSICAL_EXAM_SIGN, rapid thready pulse, tachycardia, weak peripheral pulse",
+      "description": "[PHYSICAL_EXAM_SIGN] Weak, high-frequency, low-amplitude radial arterial pulse indicative of diminished stroke volume."
+    },
+    {
+      "source": "Dengue",
+      "target": "Impalpable Peripheral Pulses",
+      "keywords": "PHYSICAL_EXAM_SIGN, impalpable peripheral pulses, unrecordable blood pressure, decompensated shock",
+      "description": "[PHYSICAL_EXAM_SIGN] Total absence of palpable radial or dorsalis pedis pulsations marking decompensated hypovolemic dengue shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Profound Postural Hypotension",
+      "keywords": "PHYSICAL_EXAM_SIGN, postural hypotension, orthostatic drop, early hypovolemia",
+      "description": "[PHYSICAL_EXAM_SIGN] Orthostatic drop in systolic blood pressure > 20 mmHg upon standing, detecting early intravascular volume depletion."
+    },
+    {
+      "source": "Dengue",
+      "target": "Right Upper Quadrant Tenderness",
+      "keywords": "PHYSICAL_EXAM_SIGN, right upper quadrant tenderness, RUQ pain, hepatic palpation",
+      "description": "[PHYSICAL_EXAM_SIGN] Exquisite tenderness upon palpation of the right hypochondrium over the congested liver and edematous gallbladder bed."
+    },
+    {
+      "source": "Dengue",
+      "target": "Palpable Tender Hepatomegaly",
+      "keywords": "PHYSICAL_EXAM_SIGN, palpable tender hepatomegaly, liver enlargement, warning sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Physical palpation of a tender, smooth liver edge descending > 2 cm beneath the right costal margin."
+    },
+    {
+      "source": "Dengue",
+      "target": "Abdominal Shifting Dullness",
+      "keywords": "PHYSICAL_EXAM_SIGN, abdominal shifting dullness, ascites percussion, fluid wave",
+      "description": "[PHYSICAL_EXAM_SIGN] Bedside physical percussion demonstrating positional shift of abdominal flank dullness confirming moderate peritoneal ascites."
+    },
+    {
+      "source": "Dengue",
+      "target": "Decreased Breath Sounds",
+      "keywords": "PHYSICAL_EXAM_SIGN, decreased breath sounds, lung bases, pleural effusion sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Auscultatory attenuation or absence of vesicular breath sounds over the right lung base from accumulating pleural fluid."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dullness to Percussion",
+      "keywords": "PHYSICAL_EXAM_SIGN, dullness to percussion, chest exam, pleural fluid",
+      "description": "[PHYSICAL_EXAM_SIGN] Stony percussion dullness over the right hemithorax indicating significant plasma extravasation into the pleural cavity."
+    },
+    {
+      "source": "Dengue",
+      "target": "Relative Bradycardia",
+      "keywords": "HAS_PATHOGNOMONIC_HALLMARK, relative bradycardia, Faget sign, pulse temperature dissociation",
+      "description": "[HAS_PATHOGNOMONIC_HALLMARK] Inappropriate slowing of heart rate relative to high body temperature (Faget sign) seen during late febrile and recovery stages."
+    },
+    {
+      "source": "Dengue",
+      "target": "Spontaneous Cutaneous Petechiae",
+      "keywords": "PHYSICAL_EXAM_SIGN, spontaneous petechiae, pinpoint hemorrhages, microvascular fragility",
+      "description": "[PHYSICAL_EXAM_SIGN] Pinpoint non-blanching dermal hemorrhages appearing spontaneously over limbs and trunk without external trauma."
+    },
+    {
+      "source": "Dengue",
+      "target": "Confluent Purpuric Ecchymoses",
+      "keywords": "PHYSICAL_EXAM_SIGN, purpuric ecchymoses, skin bruising, hemorrhagic diathesis",
+      "description": "[PHYSICAL_EXAM_SIGN] Large confluent subcutaneous ecchymoses and extensive purpuric patches at venipuncture and pressure sites."
+    },
+    {
+      "source": "Dengue",
+      "target": "Spontaneous Gingival Oozing",
+      "keywords": "PHYSICAL_EXAM_SIGN, spontaneous gingival oozing, gum bleeding, mucosal sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Continuous oozing of blood from the dental gingiva observable on physical inspection of the oral cavity."
+    },
+    {
+      "source": "Dengue",
+      "target": "Profuse Anterior Epistaxis",
+      "keywords": "PHYSICAL_EXAM_SIGN, profuse anterior epistaxis, nasal bleeding, clinical sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Active bilateral or unilateral hemorrhage from Kiesselbach's plexus requiring anterior nasal packing."
+    },
+    {
+      "source": "Dengue",
+      "target": "Subconjunctival Hemorrhage",
+      "keywords": "PHYSICAL_EXAM_SIGN, subconjunctival hemorrhage, scleral bleeding, ocular sign",
+      "description": "[PHYSICAL_EXAM_SIGN] Spontaneous bright red extravasation of blood beneath the bulbar conjunctiva in the absence of ocular trauma."
+    },
+    {
+      "source": "Dengue",
+      "target": "Fluctuating Mental Status",
+      "keywords": "PHYSICAL_EXAM_SIGN, fluctuating mental status, encephalopathy exam, consciousness",
+      "description": "[PHYSICAL_EXAM_SIGN] Waxing and waning orientation and responsiveness on bedside Glasgow Coma Scale evaluation in severe dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Marked Restlessness Agitation",
+      "keywords": "PHYSICAL_EXAM_SIGN, restlessness agitation, impending shock, delirium",
+      "description": "[PHYSICAL_EXAM_SIGN] Psychomotor irritability and acute distress signaling cerebral hypoxia from decompensating microcirculation."
+    },
+    {
+      "source": "Dengue",
+      "target": "Severe Axial Spinal Tenderness",
+      "keywords": "PHYSICAL_EXAM_SIGN, axial spinal tenderness, paraspinal myalgia, spine exam",
+      "description": "[PHYSICAL_EXAM_SIGN] Pain elicited by gentle percussion or palpation along the lumbar spine and paraspinal musculature during acute illness."
+    },
+    {
+      "source": "Dengue",
+      "target": "Severe Progressive Leukopenia",
+      "keywords": "EXHIBITS_LAB_PATTERN, severe progressive leukopenia, low WBC, early triage lab",
+      "description": "[EXHIBITS_LAB_PATTERN] Early precipitous drop in total leukocyte count (< 4,000/uL, frequently < 2,500/uL) heralding the onset of dengue viremia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Marked Neutropenia",
+      "keywords": "EXHIBITS_LAB_PATTERN, marked neutropenia, absolute neutrophil count, early nadir",
+      "description": "[EXHIBITS_LAB_PATTERN] Severe suppression of absolute neutrophil count driven by marrow megakaryocyte and myeloid precursor suppression."
+    },
+    {
+      "source": "Dengue",
+      "target": "Atypical Plasmacytoid Lymphocytosis",
+      "keywords": "EXHIBITS_LAB_PATTERN, atypical lymphocytes, plasmacytoid lymphocytes, blood smear",
+      "description": "[EXHIBITS_LAB_PATTERN] Emergence of Downey-type reactive atypical lymphocytes and plasmacytoid mononuclear cells on peripheral blood film at defervescence."
+    },
+    {
+      "source": "Dengue",
+      "target": "Progressive Thrombocytopenia",
+      "keywords": "EXHIBITS_LAB_PATTERN, progressive thrombocytopenia, platelet drop, triage marker",
+      "description": "[EXHIBITS_LAB_PATTERN] Rapid day-by-day decline in platelet count dropping below 100,000/uL between days 3 and 6 of illness."
+    },
+    {
+      "source": "Dengue",
+      "target": "Critical Thrombocytopenia Nadir",
+      "keywords": "EXHIBITS_LAB_PATTERN, critical thrombocytopenia nadir, profound platelet loss, severe dengue",
+      "description": "[EXHIBITS_LAB_PATTERN] Extreme drop in platelets to < 20,000/uL reflecting immune destruction and transient marrow megakaryocytic hypoplasia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Hemoconcentration Elevation",
+      "keywords": "EXHIBITS_LAB_PATTERN, hemoconcentration elevation, hematocrit rise, plasma leak marker",
+      "description": "[EXHIBITS_LAB_PATTERN] Acute rise in hematocrit >= 20% above age- and sex-adjusted population baseline, providing quantitative objective proof of plasma leakage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated Baseline Hematocrit",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated baseline hematocrit, high hematocrit, triage threshold",
+      "description": "[EXHIBITS_LAB_PATTERN] Absolute hematocrit exceeding 45% in adult males or 40% in females at admission triage, indicating advanced plasma leakage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Prolonged Activated PTT",
+      "keywords": "EXHIBITS_LAB_PATTERN, prolonged aPTT, intrinsic coagulation, clotting prolongation",
+      "description": "[EXHIBITS_LAB_PATTERN] Significant lengthening of activated partial thromboplastin time secondary to impaired hepatic synthesis and endothelial activation."
+    },
+    {
+      "source": "Dengue",
+      "target": "Mild Prothrombin Prolongation",
+      "keywords": "EXHIBITS_LAB_PATTERN, prolonged prothrombin time, elevated INR, extrinsic pathway",
+      "description": "[EXHIBITS_LAB_PATTERN] Mild elevation in prothrombin time and international normalized ratio (INR), worsening markedly in fulminant hepatic failure."
+    },
+    {
+      "source": "Dengue",
+      "target": "Reduced Plasma Fibrinogen",
+      "keywords": "EXHIBITS_LAB_PATTERN, reduced fibrinogen, hypofibrinogenemia, consumptive coagulopathy",
+      "description": "[EXHIBITS_LAB_PATTERN] Decreased circulating fibrinogen levels due to microvascular consumption and subclinical disseminated intravascular activation."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated D-Dimer Levels",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated d-dimer, fibrin degradation, microthrombosis",
+      "description": "[EXHIBITS_LAB_PATTERN] Significant elevation in fibrin degradation products and D-dimer reflecting extensive microvascular endothelial fibrin turnover."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated Aspartate Aminotransferase",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated AST, serum transaminase, liver injury",
+      "description": "[EXHIBITS_LAB_PATTERN] Prominent rise in serum aspartate aminotransferase (AST), often 2- to 10-fold normal, reflecting both hepatic and myocyte damage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated Alanine Aminotransferase",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated ALT, transaminitis, hepatocellular necrosis",
+      "description": "[EXHIBITS_LAB_PATTERN] Moderate rise in serum alanine aminotransferase (ALT) signifying viral-mediated hepatocellular inflammation."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated AST ALT Ratio",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated AST ALT ratio, AST greater than ALT, transaminase inversion",
+      "description": "[EXHIBITS_LAB_PATTERN] Characteristic laboratory pattern where AST is significantly higher than ALT (ratio > 1.0), typical of dengue and rare in viral hepatitis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Marked Hypoalbuminemia",
+      "keywords": "EXHIBITS_LAB_PATTERN, hypoalbuminemia, low serum albumin, plasma leakage surrogate",
+      "description": "[EXHIBITS_LAB_PATTERN] Progressive decrease in serum albumin parallel to the magnitude of systemic endothelial hyperpermeability and serosal transudation."
+    },
+    {
+      "source": "Dengue",
+      "target": "Normal Serum Bilirubin",
+      "keywords": "EXHIBITS_LAB_PATTERN, normal serum bilirubin, absence of jaundice, liver chemistry",
+      "description": "[EXHIBITS_LAB_PATTERN] Preservation of normal or only borderline elevated total and direct serum bilirubin despite significant transaminase elevation."
+    },
+    {
+      "source": "Dengue",
+      "target": "Normal Procalcitonin Level",
+      "keywords": "EXHIBITS_LAB_PATTERN, normal procalcitonin, low PCT, bacterial sepsis discriminator",
+      "description": "[EXHIBITS_LAB_PATTERN] Serum procalcitonin remaining < 0.5 ng/mL, discriminating uncomplicated dengue from acute pyogenic bacterial septicemia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Mildly Elevated CRP",
+      "keywords": "EXHIBITS_LAB_PATTERN, mildly elevated CRP, C-reactive protein, viral pattern",
+      "description": "[EXHIBITS_LAB_PATTERN] Moderate or low C-reactive protein elevation (< 30-50 mg/L) contrasting sharply with high values seen in bacterial sepsis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Normal Erythrocyte Sedimentation",
+      "keywords": "EXHIBITS_LAB_PATTERN, normal ESR, low sedimentation rate, inflammatory marker",
+      "description": "[EXHIBITS_LAB_PATTERN] Preservation of normal or only mildly elevated erythrocyte sedimentation rate in uncomplicated acute dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated Serum Ferritin",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated serum ferritin, hyperferritinemia, macrophage activation",
+      "description": "[EXHIBITS_LAB_PATTERN] Marked hyperferritinemia (> 1,200 to > 10,000 ng/mL) correlating with severe immune activation and vascular leakage risk."
+    },
+    {
+      "source": "Dengue",
+      "target": "Serum Lactate Elevation",
+      "keywords": "EXHIBITS_LAB_PATTERN, serum lactate elevation, lactic acidosis, tissue hypoperfusion",
+      "description": "[EXHIBITS_LAB_PATTERN] Elevated arterial and venous blood lactate (> 2.0-4.0 mmol/L) reflecting covert systemic anaerobic tissue hypoperfusion in dengue shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated Creatine Kinase",
+      "keywords": "EXHIBITS_LAB_PATTERN, elevated creatine kinase, high CK, viral myositis",
+      "description": "[EXHIBITS_LAB_PATTERN] Serum creatine kinase (CK) elevation secondary to extensive viral-mediated skeletal myocyte breakdown."
+    },
+    {
+      "source": "Dengue",
+      "target": "Transient Prerenal Azotemia",
+      "keywords": "EXHIBITS_LAB_PATTERN, prerenal azotemia, elevated BUN creatinine, volume contraction",
+      "description": "[EXHIBITS_LAB_PATTERN] Acute elevations in blood urea nitrogen and serum creatinine responsive to prompt intravenous isotonic crystalloid expansion."
+    },
+    {
+      "source": "Dengue",
+      "target": "Hyponatremia Electrolyte Disturbance",
+      "keywords": "EXHIBITS_LAB_PATTERN, hyponatremia, low serum sodium, electrolyte disturbance",
+      "description": "[EXHIBITS_LAB_PATTERN] Common acute serum sodium reduction (< 130 mEq/L) predisposing vulnerable pediatric patients to encephalopathic seizures."
+    },
+    {
+      "source": "Dengue",
+      "target": "Hypocalcemia Electrolyte Derangement",
+      "keywords": "EXHIBITS_LAB_PATTERN, hypocalcemia, low ionized calcium, cardiac contractility",
+      "description": "[EXHIBITS_LAB_PATTERN] Decreased serum total and ionized calcium concentrations correlating with the severity of plasma leakage and cardiac depression."
+    },
+    {
+      "source": "Dengue",
+      "target": "Gallbladder Wall Thickening",
+      "keywords": "IMAGING_FINDING, gallbladder wall thickening, subserosal edema, ultrasound triage",
+      "description": "[IMAGING_FINDING] Point-of-care ultrasound demonstration of thickened gallbladder wall (>= 3.0 mm) without gallstones, an early sensitive index of plasma leakage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dual-Rim Gallbladder Sign",
+      "keywords": "IMAGING_FINDING, dual-rim gallbladder sign, striated gallbladder, subserosal hypoechoic rim",
+      "description": "[IMAGING_FINDING] Striated subserosal hypoechoic fluid halo producing a double-contoured gallbladder wall on bedside sonography."
+    },
+    {
+      "source": "Dengue",
+      "target": "Right-Sided Pleural Effusion",
+      "keywords": "IMAGING_FINDING, right pleural effusion, thoracic ultrasound, fluid accumulation",
+      "description": "[IMAGING_FINDING] Sonographic or radiographic demonstration of fluid in the right pleural cavity, the single most sensitive serosal site of leakage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Bilateral Pleural Effusions",
+      "keywords": "IMAGING_FINDING, bilateral pleural effusions, chest radiography, severe leak",
+      "description": "[IMAGING_FINDING] Radiographic and sonographic blunting of both costophrenic sulci signaling extensive, high-grade microvascular fluid filtration."
+    },
+    {
+      "source": "Dengue",
+      "target": "Pericholecystic Fluid Accumulation",
+      "keywords": "IMAGING_FINDING, pericholecystic fluid, gallbladder ultrasound, serosal leak",
+      "description": "[IMAGING_FINDING] Anechoic fluid cuff surrounding the gallbladder fundus and body on abdominal bedside sonography."
+    },
+    {
+      "source": "Dengue",
+      "target": "Subcapsular Hepatic Fluid",
+      "keywords": "IMAGING_FINDING, subcapsular hepatic fluid, liver ultrasound, plasma leak",
+      "description": "[IMAGING_FINDING] Thin anechoic subcapsular fluid rim along the anterior and inferior hepatic margins on targeted POCUS exam."
+    },
+    {
+      "source": "Dengue",
+      "target": "Pelvic Free Fluid",
+      "keywords": "IMAGING_FINDING, pelvic free fluid, pouch of Douglas, ultrasound ascites",
+      "description": "[IMAGING_FINDING] Bedside identification of dependent free peritoneal fluid in the pouch of Douglas or rectovesical pouch."
+    },
+    {
+      "source": "Dengue",
+      "target": "Hepatosplenomegaly on Ultrasound",
+      "keywords": "IMAGING_FINDING, hepatosplenomegaly ultrasound, visceral enlargement, sonography",
+      "description": "[IMAGING_FINDING] Objective sonographic measurement demonstrating craniocaudal hepatic enlargement and reactive splenic engorgement."
+    },
+    {
+      "source": "Dengue",
+      "target": "Increased Peritoneal Echogenicity",
+      "keywords": "IMAGING_FINDING, peritoneal echogenicity, mesenteric thickening, edematous omentum",
+      "description": "[IMAGING_FINDING] Diffuse hyperechogenicity of the peritoneal lining and thickened edematous omentum accompanying transudative ascites."
+    },
+    {
+      "source": "Dengue",
+      "target": "Pericardial Fluid Collection",
+      "keywords": "IMAGING_FINDING, pericardial fluid collection, pericardial effusion, echocardiography",
+      "description": "[IMAGING_FINDING] Echocardiographic detection of anechoic fluid separation of pericardial layers in severe capillary leakage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Blunted Costophrenic Angle",
+      "keywords": "IMAGING_FINDING, blunted costophrenic angle, chest xray, upright radiograph",
+      "description": "[IMAGING_FINDING] Upright posterior-anterior chest radiograph showing obliteration of the right or bilateral costophrenic recesses by transudative fluid."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dengue NS1 Antigen Positivity",
+      "keywords": "EXHIBITS_LAB_PATTERN, dengue NS1 antigen, NS1 ELISA, early diagnostic marker",
+      "description": "[EXHIBITS_LAB_PATTERN] Detection of circulating non-structural protein 1 (NS1) by rapid test or ELISA during days 1 to 7 of acute febrile illness."
+    },
+    {
+      "source": "Dengue",
+      "target": "Positive DENV RT-PCR",
+      "keywords": "EXHIBITS_LAB_PATTERN, positive DENV RT-PCR, molecular detection, viral RNA",
+      "description": "[EXHIBITS_LAB_PATTERN] Amplification of dengue viral RNA by reverse-transcriptase polymerase chain reaction, providing definitive serotype identification during early viremia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dengue IgM Seroconversion",
+      "keywords": "EXHIBITS_LAB_PATTERN, dengue IgM seroconversion, MAC-ELISA, primary antibody response",
+      "description": "[EXHIBITS_LAB_PATTERN] Emergence of dengue-specific IgM antibodies by capture ELISA from day 5 onward, confirming acute or recent infection."
+    },
+    {
+      "source": "Dengue",
+      "target": "Secondary Infection IgG Titers",
+      "keywords": "EXHIBITS_LAB_PATTERN, high IgG titers, secondary infection serology, early IgG rise",
+      "description": "[EXHIBITS_LAB_PATTERN] Hyper-elevated dengue-specific IgG titers appearing within the first 3 to 5 days, pathognomonic of secondary heterotypic infection."
+    },
+    {
+      "source": "Dengue",
+      "target": "Aedes Aegypti Vector",
+      "keywords": "EXPOSURE_TO, Aedes aegypti, primary vector, urban mosquito, domestic breeder",
+      "description": "[EXPOSURE_TO] Inoculation by infected female Aedes aegypti mosquitoes, the primary anthropophilic urban vector thriving in domestic environments."
+    },
+    {
+      "source": "Dengue",
+      "target": "Aedes Albopictus Vector",
+      "keywords": "EXPOSURE_TO, Aedes albopictus, Asian tiger mosquito, peri-domestic vector",
+      "description": "[EXPOSURE_TO] Transmission by Aedes albopictus mosquitoes, competent peri-domestic vectors exhibiting broader cold tolerance into temperate zones."
+    },
+    {
+      "source": "Dengue",
+      "target": "Diurnal Mosquito Bites",
+      "keywords": "EXPOSURE_TO, diurnal mosquito bites, daytime biting, peak dawn dusk biting",
+      "description": "[EXPOSURE_TO] Daylight mosquito feeding activity with bimodal peaks during the early morning hours and late afternoon before dusk."
+    },
+    {
+      "source": "Dengue",
+      "target": "Indoor Resting Vectors",
+      "keywords": "EXPOSURE_TO, indoor resting vectors, endophilic mosquitoes, domestic seclusion",
+      "description": "[EXPOSURE_TO] Endophilic behavior of Aedes aegypti resting quietly in dark indoor areas under furniture, beds, and hanging clothing."
+    },
+    {
+      "source": "Dengue",
+      "target": "Domestic Water Storage Containers",
+      "keywords": "EXPOSURE_TO, water storage containers, cisterns, clay jars, domestic breeding",
+      "description": "[EXPOSURE_TO] Exposure to artificial water reservoirs (cisterns, drums, clay jars, buckets) maintained in homes due to deficient piped water infrastructure."
+    },
+    {
+      "source": "Dengue",
+      "target": "Discarded Vehicle Tires",
+      "keywords": "EXPOSURE_TO, discarded vehicle tires, tire breeding sites, artificial habitats",
+      "description": "[EXPOSURE_TO] Environmental exposure to discarded automotive tires collecting stagnant rainwater, providing optimal mosquito larval microhabitats."
+    },
+    {
+      "source": "Dengue",
+      "target": "Non-Biodegradable Plastic Containers",
+      "keywords": "EXPOSURE_TO, plastic containers, solid waste, larval habitat",
+      "description": "[EXPOSURE_TO] Dense accumulation of discarded plastic waste, cups, and food packaging that hold stagnant rainwater in urban settlements."
+    },
+    {
+      "source": "Dengue",
+      "target": "Unplanned Urban Shanty Settlements",
+      "keywords": "EXPOSURE_TO, unplanned urban settlements, slum crowding, inadequate infrastructure",
+      "description": "[EXPOSURE_TO] Residence in crowded tropical shantytowns characterized by high human density, lack of sanitation, and open drainage."
+    },
+    {
+      "source": "Dengue",
+      "target": "Tropical Monsoon Rainfall Season",
+      "keywords": "EXPOSURE_TO, monsoon rainfall season, rainy season, seasonal peak transmission",
+      "description": "[EXPOSURE_TO] Seasonal travel or residence during and immediately following high-rainfall tropical monsoon seasons when vector density peaks."
+    },
+    {
+      "source": "Dengue",
+      "target": "Tropical Endemic Travel Exposure",
+      "keywords": "EXPOSURE_TO, tropical endemic travel, travel history, hyperendemic countries",
+      "description": "[EXPOSURE_TO] Recent residence or travel within the preceding 14 days to hyperendemic tropical regions across Asia, Latin America, or Africa."
+    },
+    {
+      "source": "Dengue",
+      "target": "Maternal Vertical Transmission",
+      "keywords": "EXPOSURE_TO, maternal vertical transmission, perinatal dengue, transplacental infection",
+      "description": "[EXPOSURE_TO] Peripartum transplacental transmission from an acutely viremic mother to the fetus, risking preterm birth and neonatal dengue shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Blood Transfusion Transmission",
+      "keywords": "EXPOSURE_TO, blood transfusion transmission, iatrogenic viremia, blood products",
+      "description": "[EXPOSURE_TO] Rare iatrogenic transmission through transfusion of contaminated whole blood, platelets, or fresh frozen plasma from viremic donors."
+    },
+    {
+      "source": "Dengue",
+      "target": "Percutaneous Laboratory Inoculation",
+      "keywords": "EXPOSURE_TO, percutaneous laboratory inoculation, needlestick transmission, biohazard",
+      "description": "[EXPOSURE_TO] Accidental needle-stick or mucocutaneous exposure to high-titer dengue viral cultures or clinical specimens in health care workers."
+    },
+    {
+      "source": "Dengue",
+      "target": "Intrinsic Human Incubation Period",
+      "keywords": "INCUBATION_PERIOD, intrinsic incubation period, 4 to 10 days, symptom onset delay",
+      "description": "[INCUBATION_PERIOD] Silent biological viral replication in human dendritic cells and reticuloendothelial tissues lasting 4 to 10 days (typically 5 to 7 days) prior to fever."
+    },
+    {
+      "source": "Dengue",
+      "target": "Extrinsic Mosquito Incubation Period",
+      "keywords": "INCUBATION_PERIOD, extrinsic incubation period, mosquito viral dissemination, 8 to 12 days",
+      "description": "[INCUBATION_PERIOD] Temperature-dependent viral replication in the mosquito midgut and dissemination to salivary glands lasting 8 to 12 days at 25-28°C."
+    },
+    {
+      "source": "Dengue",
+      "target": "Pre-Symptomatic Human Viremia",
+      "keywords": "EXPOSURE_TO, pre-symptomatic viremia, early infectious window, silent transmission",
+      "description": "[EXPOSURE_TO] High human viremia capable of transmitting infection to biting Aedes vectors 1 to 2 days prior to the clinical onset of fever."
+    },
+    {
+      "source": "Dengue",
+      "target": "Symptomatic High Viremia Phase",
+      "keywords": "EXPOSURE_TO, symptomatic high viremia, early febrile transmission, vector infectiousness",
+      "description": "[EXPOSURE_TO] High-grade circulating viral loads during the first 4 to 5 days of illness maximizing vector infectivity."
+    },
+    {
+      "source": "Dengue",
+      "target": "Prolonged Atypical Viremia",
+      "keywords": "EXPOSURE_TO, prolonged atypical viremia, protracted viral shedding, extended transmission",
+      "description": "[EXPOSURE_TO] Extended circulating viremia documented to persist up to 12 days in exceptional severe cases or immunocompromised hosts."
+    },
+    {
+      "source": "Dengue",
+      "target": "Secondary Heterotypic Serotype Infection",
+      "keywords": "HIGH_RISK_HOST, secondary heterotypic infection, heterologous serotype, severe dengue risk",
+      "description": "[HIGH_RISK_HOST] Host infected with a second heterologous DENV serotype distinct from primary infection, dramatically multiplying severe dengue risk."
+    },
+    {
+      "source": "Dengue",
+      "target": "Antibody-Dependent Enhancement",
+      "keywords": "HIGH_RISK_HOST, antibody-dependent enhancement, ADE, sub-neutralizing antibodies",
+      "description": "[HIGH_RISK_HOST] Pathophysiological mechanism where pre-existing non-neutralizing antibodies facilitate viral entry into Fc-receptor-bearing monocytes."
+    },
+    {
+      "source": "Dengue",
+      "target": "Pediatric Host Vulnerability",
+      "keywords": "HIGH_RISK_HOST, pediatric host vulnerability, infants, children severe shock",
+      "description": "[HIGH_RISK_HOST] Infants with waning maternal antibodies and young children with narrower baseline pulse pressures, carrying disproportionate DSS mortality."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elderly Comorbid Host",
+      "keywords": "HIGH_RISK_HOST, elderly comorbid host, geriatric dengue, chronic comorbidities",
+      "description": "[HIGH_RISK_HOST] Older adults with underlying cardiovascular disease, diabetes, or renal insufficiency, prone to atypical presentations and fluid overload."
+    },
+    {
+      "source": "Dengue",
+      "target": "Underlying Hemoglobinopathy Trait",
+      "keywords": "HIGH_RISK_HOST, hemoglobinopathy trait, sickle cell disease, thalassemia, severe hemolysis",
+      "description": "[HIGH_RISK_HOST] Patients with sickle cell hemoglobinopathy or thalassemia, predisposing to profound hemolytic crises and severe hepatic injury during dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Marked Neutrophilic Leukocytosis",
+      "keywords": "RULED_OUT_BY, neutrophilic leukocytosis, high WBC, bacterial sepsis, bandemia",
+      "description": "[RULED_OUT_BY] Presence of significant leukocytosis (WBC > 15,000/uL) with marked left shift rules out uncomplicated acute dengue, indicating acute bacterial infection."
+    },
+    {
+      "source": "Dengue",
+      "target": "Normal Platelet Count Nadir",
+      "keywords": "RULED_OUT_BY, normal platelet count, platelets > 150000, rules out severe dengue",
+      "description": "[RULED_OUT_BY] Complete maintenance of normal platelet counts (> 150,000/uL) between days 4 and 7 rules out severe dengue and dengue hemorrhagic fever."
+    },
+    {
+      "source": "Dengue",
+      "target": "Prolonged Fever Beyond Day-10",
+      "keywords": "RULED_OUT_BY, fever beyond 10 days, prolonged pyrexia, excludes acute dengue",
+      "description": "[RULED_OUT_BY] Pyrexia persisting continuously for more than 10 to 14 days rules out acute uncomplicated dengue, indicating typhoid, tuberculosis, or abscess."
+    },
+    {
+      "source": "Dengue",
+      "target": "Cutaneous Inoculation Eschar",
+      "keywords": "RULED_OUT_BY, cutaneous eschar, tache noire, scrub typhus hallmark",
+      "description": "[RULED_OUT_BY] Detection of a black necrotic crusty cutaneous eschar rules out dengue, establishing diagnosis of Orientia tsutsugamushi (scrub typhus)."
+    },
+    {
+      "source": "Dengue",
+      "target": "Purulent Conjunctival Exudate",
+      "keywords": "RULED_OUT_BY, purulent conjunctival exudate, bacterial conjunctivitis, discharge",
+      "description": "[RULED_OUT_BY] Copious purulent or mucopurulent conjunctival discharge rules out uncomplicated dengue arboviral infection, indicating bacterial conjunctivitis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Prominent Exudative Pharyngitis",
+      "keywords": "RULED_OUT_BY, exudative pharyngitis, tonsillar exudates, streptococcal pharyngitis",
+      "description": "[RULED_OUT_BY] Confluent tonsillar or pharyngeal follicular exudates rules out dengue, pointing to Group A Streptococcus, Epstein-Barr virus, or adenovirus."
+    },
+    {
+      "source": "Dengue",
+      "target": "Markedly Elevated Bilirubin Early",
+      "keywords": "RULED_OUT_BY, early high bilirubin, direct hyperbilirubinemia, jaundice day 1-3",
+      "description": "[RULED_OUT_BY] Marked hyperbilirubinemia and clinical jaundice during days 1 to 3 of fever rules out dengue, pointing to leptospirosis, malaria, or biliary sepsis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Elevated Procalcitonin Level",
+      "keywords": "RULED_OUT_BY, elevated procalcitonin, high PCT, bacterial sepsis marker",
+      "description": "[RULED_OUT_BY] Serum procalcitonin > 1.0 to 2.0 ng/mL on admission rules out uncomplicated dengue, strongly indicating acute invasive bacterial septicemia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Substantial ESR Elevation",
+      "keywords": "RULED_OUT_BY, marked ESR elevation, high erythrocyte sedimentation, chronic inflammation",
+      "description": "[RULED_OUT_BY] Marked erythrocyte sedimentation rate elevation (> 60-80 mm/hr) rules out acute uncomplicated dengue, which maintains normal or low ESR."
+    },
+    {
+      "source": "Dengue",
+      "target": "Absence of Capillary Leak",
+      "keywords": "RULED_OUT_BY, absence of capillary leak, no hemoconcentration, rules out DHF",
+      "description": "[RULED_OUT_BY] Absolute lack of hemoconcentration, pleural effusions, ascites, or hypoalbuminemia during defervescence rules out dengue hemorrhagic fever and DSS."
+    },
+    {
+      "source": "Dengue",
+      "target": "Crystalloid Refractory Shock",
+      "keywords": "RULED_OUT_BY, crystalloid refractory shock, non-responsive shock, septic shock",
+      "description": "[RULED_OUT_BY] Complete failure of arterial blood pressure to respond to adequate titrated crystalloid resuscitation rules out uncomplicated dengue shock, indicating septic or cardiogenic shock."
+    },
+    {
+      "source": "Dengue",
+      "target": "Dense Lobar Consolidation",
+      "keywords": "RULED_OUT_BY, dense lobar consolidation, alveolar infiltrate, bacterial pneumonia",
+      "description": "[RULED_OUT_BY] Radiographic confirmation of dense alveolar lobar consolidation with air bronchograms rules out dengue, establishing community-acquired pneumonia."
+    },
+    {
+      "source": "Dengue",
+      "target": "Meningismus with CSF Pleocytosis",
+      "keywords": "RULED_OUT_BY, CSF pleocytosis, purulent meningitis, cloudy CSF",
+      "description": "[RULED_OUT_BY] Marked neck stiffness paired with lumbar puncture revealing purulent neutrophilic CSF pleocytosis rules out dengue, confirming bacterial meningitis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Destructive Erosive Polyarthritis",
+      "keywords": "RULED_OUT_BY, destructive polyarthritis, joint erosions, chronic synovitis",
+      "description": "[RULED_OUT_BY] Chronic joint deformities, synovial hypertrophy, or radiographic marginal bone erosions rules out dengue, indicating Chikungunya or rheumatoid arthritis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Descending Day-One Pruritic Rash",
+      "keywords": "RULED_OUT_BY, descending day-one rash, early maculopapular exanthem, Zika hallmark",
+      "description": "[RULED_OUT_BY] Prominent itchy maculopapular rash appearing on day 1 on the face and descending rapidly with mild fever rules out dengue, indicating Zika virus."
+    },
+    {
+      "source": "Dengue",
+      "target": "Cyclical Shaking Rigors",
+      "keywords": "RULED_OUT_BY, cyclical rigors, shaking chills, 48-hour paroxysms, malaria",
+      "description": "[RULED_OUT_BY] Stereotyped cyclical paroxysms of violent teeth-chattering rigors occurring every 48 or 72 hours rules out dengue, establishing malaria."
+    },
+    {
+      "source": "Dengue",
+      "target": "Early Palpable Splenomegaly",
+      "keywords": "RULED_OUT_BY, early palpable splenomegaly, massive splenomegaly, malaria typhoid",
+      "description": "[RULED_OUT_BY] Prominent splenomegaly palpable in the first 48 hours of illness rules out dengue, pointing decisively to malaria, visceral leishmaniasis, or typhoid."
+    },
+    {
+      "source": "Dengue",
+      "target": "Absence of Secondary Defervescence",
+      "keywords": "RULED_OUT_BY, absence of secondary defervescence, persistent unremitting pyrexia",
+      "description": "[RULED_OUT_BY] Unremitting rigid plateau fever failing to defervesce by day 7 without critical phase plasma leakage rules out typical dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Early Scleral Icterus Presentation",
+      "keywords": "RULED_OUT_BY, early scleral icterus, jaundice day 1-2, leptospirosis Weil",
+      "description": "[RULED_OUT_BY] Deep yellow scleral icterus present at initial onset of symptoms rules out dengue, pointing toward severe leptospirosis (Weil disease) or yellow fever."
+    },
+    {
+      "source": "Dengue",
+      "target": "Generalized Bullous Epidermal Desquamation",
+      "keywords": "RULED_OUT_BY, bullous epidermal desquamation, skin sloughing, SJS TEN",
+      "description": "[RULED_OUT_BY] Flaccid bullae, epidermal detachment, or positive Nikolsky sign rules out dengue exanthem, establishing Stevens-Johnson syndrome or toxic epidermal necrolysis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Persistent Leukocytosis Day Five",
+      "keywords": "RULED_OUT_BY, persistent leukocytosis, WBC > 12000 day 5, bacterial etiology",
+      "description": "[RULED_OUT_BY] Leukocyte count remaining > 12,000/uL through days 4 to 6 of fever contradicts dengue's universal leukopenia, ruling out uncomplicated infection."
+    },
+    {
+      "source": "Dengue",
+      "target": "Intraerythrocytic Parasitemia on Smear",
+      "keywords": "RULED_OUT_BY, intraerythrocytic parasitemia, positive blood smear, Plasmodium",
+      "description": "[RULED_OUT_BY] Direct visualization of Plasmodium trophozoites or schizonts in peripheral blood smear rules out pure dengue fever as the cause of febrile illness."
+    },
+    {
+      "source": "Dengue",
+      "target": "Chikungunya Polyarthritis Severity",
+      "keywords": "DIFFERENTIATED_FROM, Chikungunya, crippling polyarthritis, joint swelling, tenosynovitis",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Chikungunya virus: Chikungunya causes crippling, symmetric, excruciating polyarthritis and tenosynovitis lasting months, whereas dengue presents with diffuse myalgias and backache without chronic destructive arthritis."
+    },
+    {
+      "source": "Dengue",
+      "target": "Chikungunya Absent Plasma Leak",
+      "keywords": "DIFFERENTIATED_FROM, Chikungunya, absence of plasma leakage, no shock, hemoconcentration",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Chikungunya virus: Chikungunya virtually never causes systemic endothelial capillary leakage, hemoconcentration, ascites, or pleural effusions, which are central hallmarks of severe dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Chikungunya Normal Platelet Count",
+      "keywords": "DIFFERENTIATED_FROM, Chikungunya, normal platelets, absence of thrombocytopenia",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Chikungunya virus: Chikungunya rarely produces severe thrombocytopenia (< 100,000/uL), whereas progressive profound platelet decline is characteristic of dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Zika Low-Grade Febrile Profile",
+      "keywords": "DIFFERENTIATED_FROM, Zika virus, low-grade fever, temperature contrast",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Zika virus: Zika typically features low-grade pyrexia (< 38.5°C) or absence of fever, whereas dengue presents with explosive high-grade continuous or saddleback fever (39-40°C)."
+    },
+    {
+      "source": "Dengue",
+      "target": "Zika Non-Purulent Conjunctivitis",
+      "keywords": "DIFFERENTIATED_FROM, Zika virus, non-purulent conjunctivitis, conjunctival injection",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Zika virus: Zika characteristically features prominent bilateral non-purulent conjunctival hyperemia, which is uncommon and subtle in dengue compared to severe retro-orbital pain."
+    },
+    {
+      "source": "Dengue",
+      "target": "Zika Day-One Descending Rash",
+      "keywords": "DIFFERENTIATED_FROM, Zika virus, early descending rash, maculopapular rash",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Zika virus: Zika presents with an early pruritic descending maculopapular rash on days 1 to 2, whereas dengue's characteristic Herman rash appears late during defervescence (days 6-8)."
+    },
+    {
+      "source": "Dengue",
+      "target": "Zika Absence of Shock",
+      "keywords": "DIFFERENTIATED_FROM, Zika virus, absence of plasma leakage, no vascular collapse",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Zika virus: Zika infection pursues a mild, self-limiting course without vascular hyperpermeability, hemoconcentration, or dengue shock syndrome."
+    },
+    {
+      "source": "Dengue",
+      "target": "Leptospirosis Neutrophilic Leukocytosis",
+      "keywords": "DIFFERENTIATED_FROM, Leptospirosis, neutrophilic leukocytosis, high WBC left shift",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Leptospirosis: Leptospirosis demonstrates marked neutrophilic leukocytosis (WBC > 12,000-15,000/uL) and high CRP/ESR, whereas dengue characteristically exhibits profound leukopenia (< 4,000/uL)."
+    },
+    {
+      "source": "Dengue",
+      "target": "Leptospirosis Conjunctival Suffusion",
+      "keywords": "DIFFERENTIATED_FROM, Leptospirosis, conjunctival suffusion, ciliary injection",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Leptospirosis: Leptospirosis presents with pathognomonic bilateral ciliary conjunctival suffusion without purulence, contrasting with dengue's dominant retro-orbital pain."
+    },
+    {
+      "source": "Dengue",
+      "target": "Leptospirosis Early Hepatorenal Failure",
+      "keywords": "DIFFERENTIATED_FROM, Leptospirosis, Weil disease, jaundice renal failure, azotemia",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Leptospirosis: Severe leptospirosis (Weil disease) causes early combined direct hyperbilirubinemia and acute oliguric renal failure, whereas dengue features AST > ALT, normal bilirubin, and preserved early renal function."
+    },
+    {
+      "source": "Dengue",
+      "target": "Leptospirosis Marked Calf Tenderness",
+      "keywords": "DIFFERENTIATED_FROM, Leptospirosis, gastrocnemius tenderness, calf pain",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Leptospirosis: Leptospirosis produces exquisite, incapacitating gastrocnemius calf tenderness, while dengue produces generalized lumbar backache and diffuse muscle pain."
+    },
+    {
+      "source": "Dengue",
+      "target": "Malaria Cyclical Shaking Chills",
+      "keywords": "DIFFERENTIATED_FROM, Malaria, Plasmodium falciparum, cyclical paroxysms, shaking rigors",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Malaria: Malaria presents with stereotypical cyclical paroxysms of severe shaking rigors, fever spikes, and diaphoresis, contrasting with dengue's continuous high fever and saddleback pattern."
+    },
+    {
+      "source": "Dengue",
+      "target": "Malaria Intraerythrocytic Parasitemia",
+      "keywords": "DIFFERENTIATED_FROM, Malaria, intraerythrocytic parasites, Giemsa smear, rapid diagnostic test",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Malaria: Malaria is confirmed by microscopic Giemsa-stained intraerythrocytic trophozoites and positive malaria RDT, whereas dengue is confirmed by viral NS1 antigen and RT-PCR."
+    },
+    {
+      "source": "Dengue",
+      "target": "Malaria Prominent Hemolytic Anemia",
+      "keywords": "DIFFERENTIATED_FROM, Malaria, hemolytic anemia, unconjugated hyperbilirubinemia, hemoconcentration",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Malaria: Severe malaria induces progressive intravascular hemolysis with falling hematocrit, elevated LDH, and indirect bilirubin, whereas severe dengue produces hemoconcentration with rising hematocrit."
+    },
+    {
+      "source": "Dengue",
+      "target": "Malaria Early Splenomegaly Presentation",
+      "keywords": "DIFFERENTIATED_FROM, Malaria, palpable splenomegaly, splenic enlargement",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Malaria: Acute malaria frequently produces rapid, tender splenomegaly on initial examination, whereas dengue predominantly causes hepatomegaly with splenomegaly being rare."
+    },
+    {
+      "source": "Dengue",
+      "target": "Scrub Typhus Inoculation Eschar",
+      "keywords": "DIFFERENTIATED_FROM, Scrub Typhus, Orientia tsutsugamushi, black eschar, mite bite",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Scrub Typhus: Scrub typhus features a pathognomonic black crusty inoculation eschar (tache noire) at the chigger bite site, a physical hallmark completely absent in dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Scrub Typhus Prominent Lymphadenopathy",
+      "keywords": "DIFFERENTIATED_FROM, Scrub Typhus, generalized lymphadenopathy, bubonic enlargement",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Scrub Typhus: Scrub typhus characteristically presents with striking regional or generalized lymphadenopathy, which is minimal or subtle in dengue."
+    },
+    {
+      "source": "Dengue",
+      "target": "Enteric Typhoid Stepladder Fever",
+      "keywords": "DIFFERENTIATED_FROM, Enteric fever, Salmonella Typhi, stepladder pyrexia, relative bradycardia",
+      "description": "[DIFFERENTIATED_FROM] Differentiated from Enteric Typhoid: Typhoid fever presents with an insidious, gradual stepladder fever rise over weeks, rose spots, and bacteremia, contrasting with dengue's hyperacute abrupt onset fever."
     }
   ]
 }

@@ -33,6 +33,7 @@ class ClinicalTripleRanker:
         self.patient_match_mult = weights.get("patient_match_multiplier", 2.00)
         self.patho_bonus_mult = weights.get("pathognomonic_bonus_multiplier", 2.50)
         self.default_top_k = weights.get("default_top_k", 15)
+        self.min_score_threshold = float(weights.get("min_score_threshold", 2.0))
 
     def _entity_specificity_weight(self, entity_text: str) -> float:
         """Computes specificity multiplier W(entity) using regex penalties."""
@@ -139,15 +140,20 @@ class ClinicalTripleRanker:
         self,
         candidate_triples: List[Union[Dict[str, Any], Tuple[str, str, str]]],
         patient_text: str = "",
-        top_k: int = None
+        top_k: int = None,
+        min_score: float = None
     ) -> List[Dict[str, Any]]:
         """
         Scores and ranks candidate triples in descending order of clinical utility.
+        Filters out low-scoring distractor triples below min_score.
         """
         k = top_k or self.default_top_k
+        thresh = min_score if min_score is not None else self.min_score_threshold
         scored = []
         for t in candidate_triples:
             s, meta = self.score_triple(t, patient_text=patient_text)
+            if thresh is not None and s < thresh:
+                continue
             scored.append((s, meta))
 
         # Sort descending by score
@@ -159,15 +165,16 @@ class ClinicalTripleRanker:
         self,
         candidate_triples: List[Union[Dict[str, Any], Tuple[str, str, str]]],
         patient_text: str = "",
-        top_k: int = None
+        top_k: int = None,
+        min_score: float = None
     ) -> str:
         """
         Ranks candidate triples and formats them into clean markdown lines
         ready for prompt injection into {stage1_graph_context}.
         """
-        ranked = self.rank_triples(candidate_triples, patient_text=patient_text, top_k=top_k)
+        ranked = self.rank_triples(candidate_triples, patient_text=patient_text, top_k=top_k, min_score=min_score)
         if not ranked:
-            return "No specific medical graph triples retrieved."
+            return "No specific pathognomonic graph triples matched this patient's admission presentation."
 
         lines = []
         for i, item in enumerate(ranked, 1):

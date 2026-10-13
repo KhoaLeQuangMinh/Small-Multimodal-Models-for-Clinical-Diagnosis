@@ -124,7 +124,7 @@ def load_data():
 # =====================================================================
 # BLOCK 3: ENTITY NORMALIZATION & CROSS-DISEASE BRIDGING
 # =====================================================================
-def normalise_entity_name(name: str) -> str:
+def normalise_disease_name(name: str) -> str:
     cleaned = " ".join(name.strip().split())
     cleaned_lower = cleaned.lower()
     
@@ -142,9 +142,22 @@ def normalise_extraction(extraction: dict) -> dict:
     normalised_entities = []
     seen_entity_names = set()
 
+    # Identify which entities are purely disease look-alikes vs clinical manifestations
+    disease_lookalike_targets = set()
+    for rel in extraction.get("relationships", []):
+        pred = rel.get("predicate", "")
+        if not pred and rel.get("description", "").startswith("["):
+            pred = rel["description"].split("]")[0].strip("[")
+        if pred == "DIFFERENTIATED_FROM":
+            disease_lookalike_targets.add(rel["target"])
+
     for entity in extraction.get("entities", []):
         original = entity["name"]
-        normalised = normalise_entity_name(original)
+        # Only normalize if it is a disease hub or a differential look-alike target
+        if entity.get("type") in ("Disease", "Differential_Diagnosis") or original in disease_lookalike_targets:
+            normalised = normalise_disease_name(original)
+        else:
+            normalised = " ".join(original.strip().split())
         name_map[original] = normalised
         if normalised not in seen_entity_names:
             seen_entity_names.add(normalised)
@@ -153,8 +166,18 @@ def normalise_extraction(extraction: dict) -> dict:
     normalised_relationships = []
     seen_rel_keys = set()
     for rel in extraction.get("relationships", []):
-        src_norm = name_map.get(rel["source"], normalise_entity_name(rel["source"]))
-        tgt_norm = name_map.get(rel["target"], normalise_entity_name(rel["target"]))
+        pred = rel.get("predicate", "")
+        if not pred and rel.get("description", "").startswith("["):
+            pred = rel["description"].split("]")[0].strip("[")
+
+        src_orig = rel["source"]
+        tgt_orig = rel["target"]
+        
+        src_norm = normalise_disease_name(src_orig)
+        if pred == "DIFFERENTIATED_FROM" or tgt_orig in disease_lookalike_targets:
+            tgt_norm = normalise_disease_name(tgt_orig)
+        else:
+            tgt_norm = name_map.get(tgt_orig, " ".join(tgt_orig.strip().split()))
         
         # Prevent self-loops
         if src_norm == tgt_norm:
@@ -167,6 +190,7 @@ def normalise_extraction(extraction: dict) -> dict:
                 **rel,
                 "source": src_norm,
                 "target": tgt_norm,
+                "predicate": pred,
             })
 
     return {"entities": normalised_entities, "relationships": normalised_relationships}
