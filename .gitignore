@@ -40,9 +40,13 @@ Official_MultiCaRe/whole_multicare_dataset/
 Custom_Tropical_Project/2_Clinical_Verification/*
 !Custom_Tropical_Project/2_Clinical_Verification/todo.md
 !Custom_Tropical_Project/2_Clinical_Verification/README.md
+!Custom_Tropical_Project/2_Clinical_Verification/disease_ontology_doid.txt
 *.parquet
 *.jsonl
+# Explicit JSONL whitelists for critical project artifacts
 !stage2_medcase_distillation/train_medcase_profiles.jsonl
+!data_pipeline/llm/label_additions.jsonl
+!test_masked_cases.jsonl
 *.zip
 *.tar
 *.tar.gz
