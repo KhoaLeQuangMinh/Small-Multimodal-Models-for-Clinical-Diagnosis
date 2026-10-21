@@ -24,7 +24,12 @@ import pyarrow.parquet as pq
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DATA = os.path.join(ROOT, "Archive-001")
+DEFAULT_DATA = os.path.join(ROOT, "Archive-001")
+if not os.path.exists(DEFAULT_DATA):
+    multicare = os.path.join(os.path.dirname(ROOT), "Official_MultiCaRe", "whole_multicare_dataset")
+    if os.path.exists(multicare):
+        DEFAULT_DATA = multicare
+DATA = os.environ.get("MULTICARE_DATA", DEFAULT_DATA)
 OUT  = os.path.join(HERE, "cohort_partA.jsonl")
 
 # rule -> "both" | "s1" | "s3"
@@ -128,22 +133,25 @@ def hits(text, terms):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--data", default=DATA,
+                    help="path to dataset directory containing MultiCaRe parquet files")
     ap.add_argument("--stats", action="store_true",
                     help="print the per-disease breakdown and exit without writing")
     ap.add_argument("--out", default=OUT)
     a = ap.parse_args()
+    data_dir = a.data
 
     # pre-normalise every term once
     pats = {d: (rule, [(t, norm(t)) for t in ts])
             for d, (rule, ts) in TAXONOMY.items()}
 
-    print(f"loading {DATA} ...", file=sys.stderr)
+    print(f"loading {data_dir} ...", file=sys.stderr)
     md = {r["article_id"]: (r["article_metadata"] or {})
-          for r in pq.read_table(f"{DATA}/metadata.parquet").to_pylist()}
+          for r in pq.read_table(f"{data_dir}/metadata.parquet").to_pylist()}
 
     n_img = collections.Counter()
     caps  = collections.defaultdict(list)
-    for r in pq.read_table(f"{DATA}/case_images.parquet").to_pylist():
+    for r in pq.read_table(f"{data_dir}/case_images.parquet").to_pylist():
         for entry in (r["case_images"] or []):
             cid = entry.get("case_id")
             for im in (entry.get("case_image_list") or []):
@@ -156,7 +164,7 @@ def main():
     arts = set()
     fh = None if a.stats else open(a.out, "w")
 
-    for row in pq.read_table(f"{DATA}/cases.parquet").to_pylist():
+    for row in pq.read_table(f"{data_dir}/cases.parquet").to_pylist():
         aid = row["article_id"]
         m = md.get(aid, {}) or {}
         title    = str(m.get("title") or "")

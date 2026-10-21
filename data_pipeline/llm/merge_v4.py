@@ -24,7 +24,12 @@ sys.path.insert(0, HERE)
 from prompt_v4 import valid_response, candidates, PROMPT_VERSION  # noqa: E402
 
 COHORT = os.path.join(HERE, "partA_present.jsonl")
-ARCHIVE = os.path.join(ROOT, "Archive-001")
+DEFAULT_ARCHIVE = os.path.join(ROOT, "Archive-001")
+if not os.path.exists(DEFAULT_ARCHIVE):
+    multicare = os.path.join(os.path.dirname(ROOT), "Official_MultiCaRe", "whole_multicare_dataset")
+    if os.path.exists(multicare):
+        DEFAULT_ARCHIVE = multicare
+ARCHIVE = os.environ.get("MULTICARE_ARCHIVE", DEFAULT_ARCHIVE)
 OUT = os.path.join(HERE, "partA_final.jsonl")
 
 # Package 1c uses the re-run; its first run wrote 5 extra files under
