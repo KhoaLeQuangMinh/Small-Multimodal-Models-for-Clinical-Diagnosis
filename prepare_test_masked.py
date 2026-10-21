@@ -76,8 +76,6 @@ else:
     except ImportError:
         def mask_terms(t): return t
 
-    import pyarrow.parquet as pq
-
     csv_candidates = [
         os.path.join(PROJECT_DIR, "rag_tier1_graph_only_results.csv"),
         os.path.join(PROJECT_DIR, "rag_tier2_hybrid_results.csv"),
@@ -108,12 +106,16 @@ else:
     if missing_cids:
         parquet_path = os.path.join(PROJECT_DIR, "Official_MultiCaRe", "whole_multicare_dataset", "cases.parquet")
         if os.path.exists(parquet_path):
-            table = pq.read_table(parquet_path, columns=["article_id", "cases"])
-            for row in table.to_pylist():
-                for c in (row.get("cases") or []):
-                    cid = c.get("case_id")
-                    if cid in missing_cids:
-                        parquet_lookup[cid] = c.get("case_text", "")
+            try:
+                import pyarrow.parquet as pq
+                table = pq.read_table(parquet_path, columns=["article_id", "cases"])
+                for row in table.to_pylist():
+                    for c in (row.get("cases") or []):
+                        cid = c.get("case_id")
+                        if cid in missing_cids:
+                            parquet_lookup[cid] = c.get("case_text", "")
+            except ImportError:
+                print("Warning: pyarrow is not installed (run with .venv/bin/python or pip install pyarrow); skipping parquet fallback lookup.", file=sys.stderr)
 
     for cid, ground_truth in test_meta.items():
         raw_text = gold_lookup.get(cid) or parquet_lookup.get(cid, "")
