@@ -1,7 +1,7 @@
 import os
 import json
 
-BATCH_DIR = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis/stage2_medcase_distillation/batches/batch_102"
+BATCH_DIR = os.path.dirname(os.path.abspath(__file__))
 
 cases_data = [
     {

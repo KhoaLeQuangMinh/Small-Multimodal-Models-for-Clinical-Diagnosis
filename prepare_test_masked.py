@@ -4,7 +4,7 @@ import os
 # =====================================================================
 # PATHS
 # =====================================================================
-PROJECT_DIR = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis"
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 PART_A_MASKED_FILE = os.path.join(PROJECT_DIR, "partA_masked.jsonl")
 TEST_CASES_FILE = os.path.join(PROJECT_DIR, "test_cases.jsonl")
 OUTPUT_FILE = os.path.join(PROJECT_DIR, "test_masked_cases.jsonl")

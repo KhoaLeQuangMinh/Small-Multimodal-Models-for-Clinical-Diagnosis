@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-BATCH_DIR = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis/stage2_medcase_distillation/batches/batch_054"
+BATCH_DIR = os.path.dirname(os.path.abspath(__file__))
 
 with open(os.path.join(BATCH_DIR, "batch_meta.json"), "r", encoding="utf-8") as f:
     meta = json.load(f)

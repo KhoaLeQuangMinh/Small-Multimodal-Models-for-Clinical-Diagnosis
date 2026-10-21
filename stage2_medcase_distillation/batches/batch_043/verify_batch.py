@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-folder = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis/stage2_medcase_distillation/batches/batch_043"
+folder = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(folder, "batch_meta.json")) as f:
     meta = json.load(f)
 

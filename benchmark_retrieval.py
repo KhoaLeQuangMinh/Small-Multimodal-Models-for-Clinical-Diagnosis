@@ -18,7 +18,7 @@ from lightrag.utils import EmbeddingFunc
 # =====================================================================
 # BLOCK 1: PATHS & CONFIGURATION
 # =====================================================================
-PROJECT_DIR = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis"
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 WORKING_DIR = os.path.join(PROJECT_DIR, "test_kg_output")
 TEST_FILE = os.path.join(PROJECT_DIR, "test_masked_cases.jsonl")
 # Keyword extraction mode:

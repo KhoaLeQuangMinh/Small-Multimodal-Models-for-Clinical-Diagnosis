@@ -7,7 +7,7 @@ import asyncio
 # =====================================================================
 # BLOCK 1: PATHS & CONFIGURATION
 # =====================================================================
-PROJECT_DIR = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis"
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 TEST_FILE = os.path.join(PROJECT_DIR, "test_masked_cases.jsonl")
 OUTPUT_CSV = os.getenv("OUTPUT_CSV", os.path.join(PROJECT_DIR, "baseline_results.csv"))
 

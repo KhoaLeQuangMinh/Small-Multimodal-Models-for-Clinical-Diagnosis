@@ -16,7 +16,7 @@ from lightrag.utils import EmbeddingFunc
 # =====================================================================
 # BLOCK 1: PATH CONFIGURATION
 # =====================================================================
-PROJECT_DIR = "/Users/khoale/Downloads/Project - SLM for Disease Diagnosis"
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 EXTRACTED_TRIPLES_FILE = os.path.join(PROJECT_DIR, "test-batch", "extracted_triples.jsonl")
 TRAIN_CASES_FILE = os.path.join(PROJECT_DIR, "train_kg_cases.jsonl")
 WORKING_DIR = os.path.join(PROJECT_DIR, "test_kg_output")

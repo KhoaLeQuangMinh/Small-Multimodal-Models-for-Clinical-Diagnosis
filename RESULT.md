@@ -195,6 +195,6 @@ Stage 2 retrieves real confirmed clinical twins from historical memory. Preceden
 ---
 
 ## 8. Pipeline Artifacts
-- **Benchmark Runner:** [`stage4_constrained_inference/benchmark_stage4_cot.py`](file:///Users/khoale/Downloads/Project%20-%20SLM%20for%20Disease%20Diagnosis/stage4_constrained_inference/benchmark_stage4_cot.py)
-- **Full Results CSV:** [`stage4_constrained_inference/stage4_results.csv`](file:///Users/khoale/Downloads/Project%20-%20SLM%20for%20Disease%20Diagnosis/stage4_constrained_inference/stage4_results.csv)
-- **Prompt Specification:** [`stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md`](file:///Users/khoale/Downloads/Project%20-%20SLM%20for%20Disease%20Diagnosis/stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md)
+- **Benchmark Runner:** [`stage4_constrained_inference/benchmark_stage4_cot.py`](stage4_constrained_inference/benchmark_stage4_cot.py)
+- **Full Results CSV:** [`stage4_constrained_inference/stage4_results.csv`](stage4_constrained_inference/stage4_results.csv)
+- **Prompt Specification:** [`stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md`](stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md)
