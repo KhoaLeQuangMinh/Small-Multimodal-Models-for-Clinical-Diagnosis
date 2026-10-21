@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8411640_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old male immigrant from Mexico presents with progressive bilateral paraparesis, sensory loss below the T4\u2013T5 dermatome, and acute urinary/stool retention over one to two weeks, with imaging demonstrating multi-level thoracic vertebral destruction and an epidural mass. The acute surgical emergency mimics pyogenic bacterial epidural abscess or metastatic spinal malignancy, while intraoperative cultures grew Streptococcus anginosus, creating diagnostic confusion until histopathology and delayed mycobacterial cultures proved Pott's disease with bacterial superinfection.\n2. Admission Breakpoint: The admission narrative halts immediately after emergency neurologic examination, baseline hematologic labs (WBC 12.6 x 10^3/\u00b5L, platelets 494 x 10^3/\u00b5L, CRP 2.6 mg/dL, ESR 20 mm/h), and thoracic spine MRI showing T3\u2013T5 osteomyelitis and cord compression, strictly before QuantiFERON IGRA, blood cultures, HIV testing, surgical decompression, intraoperative histopathology, bacterial cultures, and mycobacterial cultures.\n3. Differential Distinctions: Isolated pyogenic bacterial spondylodiscitis is supported by the isolation of Streptococcus anginosus from surgical specimens, but the chronic intraoperative fibrotic appearance and caseating granulomas reveal an underlying granulomatous driver; epidural metastatic neoplasm is ruled out by surgical histology demonstrating caseating and non-caseating granulomas; infective endocarditis is ruled out by normal echocardiography; diagnosis is confirmed by delayed mycobacterial culture yielding Mycobacterium tuberculosis.",
+  "case_prompt": "A 45-year-old male immigrant from Mexico presented to the emergency department complaining of progressive bilateral lower extremity weakness of one month's duration, resulting in worsening difficulty ambulating. Over the preceding two weeks, he noted a loss of sensation below the nipple level, and during the past week, he developed urinary and stool retention. He denied cough, shortness of breath, chills, or documented fevers, but endorsed drenching night sweats over the past month.\n\nOn physical examination, the patient was alert and afebrile. Neurological examination revealed profound, diffuse bilateral lower extremity weakness with 2/5 motor strength in all muscle groups. Sensation to light touch and pinprick was markedly diminished below the T4\u2013T5 dermatomal level. No peripheral lymphadenopathy was appreciated on general examination.\n\nInitial emergency laboratory testing revealed a white blood cell count of 12,600/\u00b5L, a platelet count of 494,000/\u00b5L, an erythrocyte sedimentation rate of 20 mm/h, and a C-reactive protein level of 2.6 mg/dL. Gadolinium-enhanced magnetic resonance imaging of the thoracic spine demonstrated findings of osteomyelitis involving the T3, T4, and T5 vertebral levels with an associated epidural mass/abscess and extensive bony destruction of the T4 and T5 vertebral bodies, resulting in severe spinal canal stenosis and thoracic spinal cord compression.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated pyogenic spondylodiscitis (Streptococcus anginosus epidural abscess)",
+      "rule_out_reason": "Rapid neurological decline and the intraoperative isolation of Streptococcus anginosus from epidural purulence initially pointed toward acute pyogenic bacterial spondylodiscitis; however, the operative findings of a chronic fibrotic mass and histologic discovery of caseating granulomas indicated that the bacterial infection was an opportunistic co-infection complicating a chronic granulomatous nidus.",
+      "quote": "The epidural abscess cultures were positive for pan susceptible Streptococcus anginosus at 48 h on multiple tissue samples."
+    },
+    {
+      "candidate": "Spinal neoplasm / Metastatic epidural cord compression",
+      "rule_out_reason": "Vertebral osteolysis involving contiguous thoracic vertebrae with severe spinal cord compression and constitutional night sweats in a middle-aged adult raised serious concern for metastatic malignancy or primary lymphoma, but surgical biopsy demonstrated inflammatory granulomas rather than malignant cells.",
+      "quote": "Epidural tissue biopsies showed caseating and non-caseating granulomas"
+    },
+    {
+      "candidate": "Infective endocarditis with hematogenous septic seeding",
+      "rule_out_reason": "Spinal infection caused by Streptococcus anginosus group organisms frequently originates from hematogenous seeding associated with occult infective endocarditis, but echocardiographic imaging showed no evidence of valvular vegetations.",
+      "quote": "A transthoracic echocardiogram did not show evidence of endocarditis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when intraoperative biopsy specimens revealed caseating granulomas and, after six weeks of incubation, surgical mycobacterial cultures definitively isolated pan-susceptible Mycobacterium tuberculosis, confirming tuberculous spondylodiscitis (Pott's disease) complicated by bacterial superinfection.",
+      "quote": "Approximately 6 weeks after the tissue biopsies were obtained, mycobacterial cultures grew pan susceptible M. tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to the Day 1 emergency presentation. QuantiFERON IGRA, HIV immunoassay, blood cultures, surgical histopathology, bacterial isolates, and mycobacterial cultures are appropriately withheld from the case prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12623096_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 26-year-old pregnant woman in Shiraz, Iran, presents with a painless, non-ulcerated, 4 x 2.5-cm erythematous tumoral mass on her nose that has enlarged slowly over 2 years. The painless, non-ulcerated, tumor-like morphology mimics cutaneous neoplasms (squamous cell carcinoma, cutaneous B-cell lymphoma) or chronic granulomatous inflammatory diseases (lupus vulgaris, sarcoidosis), rather than typical ulcerated 'oriental sore' cutaneous leishmaniasis.\n2. Admission Breakpoint: Admission clinical evaluation stops with the physical exam and baseline routine lab work, immediately prior to punch biopsy of the nasal mass.\n3. Differential Distinctions: Squamous cell carcinoma and cutaneous lymphoma are ruled out by absence of malignant cytological features on histopathology. Cutaneous tuberculosis (lupus vulgaris) and sarcoidosis are excluded by the demonstration of dense dermal histiocytic infiltration packed with uniform intracellular amastigotes rather than classical non-caseating or caseating tuberculous granulomas.",
+  "case_prompt": "A 26-year-old pregnant woman was referred to an outpatient dermatology clinic in Shiraz, Iran, with a 2-year history of a slowly growing, painless lesion on her nose. She reported no trauma, prior local injections, or constitutional symptoms such as fever, weight loss, or night sweats.\n\nPhysical examination revealed a painless, well-demarcated erythematous tumoral plaque and mass measuring 4 x 2.5 cm located on the nasal dorsum. The lesion was nonmobile, nonpulsatile, and non-tender on palpation. There was no overlying crusting, weeping, or ulceration on or surrounding the lesion. Comprehensive systemic physical examination was normal, and palpation of the cervical, preauricular, and axillary chains revealed no regional lymphadenopathy.\n\nBaseline triage laboratory studies, including complete blood count and routine serum chemistry panels, were entirely within normal reference limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Squamous Cell Carcinoma (SCC) / Cutaneous B-cell Lymphoma",
+      "rule_out_reason": "A painless, chronic, expanding tumoral plaque on the face of an adult raised high suspicion for cutaneous malignancy or lymphoma; however, biopsy did not show neoplastic keratinocytes or clonal lymphoid proliferation.",
+      "quote": "Our initial list of differential diagnosis included CL, cutaneous tuberculosis (lupus vulgaris), sarcoidosis, cutaneous B-cell lymphoma, Kaposi sarcoma (KS), and squamous cell carcinoma (SCC)."
+    },
+    {
+      "candidate": "Cutaneous Tuberculosis (Lupus Vulgaris) / Sarcoidosis",
+      "rule_out_reason": "Chronic granulomatous diseases such as lupus vulgaris or sarcoidosis can cause infiltrative nasal plaques; however, histopathology revealed heavy dermal histiocytic infiltration containing intracellular protozoan organisms rather than tuberculoid or sarcoidal granulomas.",
+      "quote": "Histopathological investigation indicated histiocyte infiltration of the dermis, along with plasma cells and lymphocytes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon microscopic examination of a nasal punch biopsy, which demonstrated abundant intracellular Leishmania amastigotes within dermal histiocytes, establishing the diagnosis of chronic tumoral cutaneous leishmaniasis.",
+      "quote": "Many histiocytes contained tiny, uniform, spherical creatures, which a pathologist determined to be Leishmania amastigotes (Figures 2(a), 2(b))."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to punch biopsy and histopathology. No pathogen names or disease indicators present."
+}

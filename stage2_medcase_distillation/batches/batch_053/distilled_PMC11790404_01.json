@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11790404_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 25-year-old male presents with profound abdominal distension, severe tachypnea, and an abdominal mass measuring 20 × 30 cm, having undergone bimonthly paracentesis for 13 years under the misdiagnosis of ascites due to chronic liver disease.\n2. Admission Breakpoint: The admission evaluation ends following vital signs, physical examination, baseline laboratory investigations (markedly elevated alkaline phosphatase with preserved hepatic synthesis), abdominal ultrasonography, and cross-sectional computed tomography delineating massive calcified intra-abdominal and hepatic cystic masses. Exploratory laparotomy, observation of hydatid sand, surgical excision, and albendazole therapy represent the subsequent confirmatory and therapeutic phases.\n3. Differential Distinctions: Cirrhotic ascites is excluded by imaging revealing giant encapsulated loculated cysts with peripheral calcification rather than free transudative fluid; benign or malignant mesenteric cystic neoplasms are distinguished by pathognomonic calcified walls, communication between the hepatic dome and peritoneal cavity, and presence of internal parasitic sand upon surgical unroofing.",
+  "case_prompt": "A 25-year-old male was referred to a tertiary hospital with worsening abdominal distension and shortness of breath over the preceding 2 weeks, superimposed on a chronic condition originating in childhood. He noted intermittent abdominal cramps, early satiety, and inability to lie flat. Beginning at age 12, he had undergone repeated hospital admissions and paracentesis twice monthly for presumed refractory ascites attributed to chronic liver disease.\n\nOn physical examination, the patient appeared chronically ill and was markedly tachypneic with a respiratory rate of 48 breaths per minute; other vital signs were within normal limits. Chest auscultation revealed diminished breath sounds over the lower posterior third of the right hemithorax. The abdomen was grossly distended with a prominent, firm, non-tender mass measuring approximately 20 × 30 cm.\n\nInitial blood investigations showed a serum alkaline phosphatase level elevated to five times the upper limit of normal; other routine hematologic and biochemical parameters were unremarkable. Abdominal ultrasound revealed a large multicystic intra-abdominal mass with peripheral wall calcification displacing the liver superiorly and bowel loops anterolaterally, as well as a separate 2 × 1.5 cm hypoechoic lesion with peripheral enhancement in liver segment VI.\n\nAbdominal CT confirmed a massive non-enhancing cystic mass measuring 21 × 28 cm with a thick rim of peripheral calcification and internal peripheral cysts pushing the gallbladder anteriorly. A second thin-walled peritoneal cystic mass measuring 13 × 24 × 28 cm with fluid attenuation was closely apposed to the hepatic mass through an anteroposterior wall defect, displacing the retroperitoneal vasculature and right kidney posteroinferiorly, accompanied by right hydronephrosis and a 2.3-cm right pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ascites secondary to chronic liver disease / cirrhosis",
+      "rule_out_reason": "The patient had been managed for over a decade with repeated paracentesis under the presumption of cirrhotic ascites; however, cross-sectional imaging proved the abdominal fluid was completely contained within encapsulated, calcified cystic structures rather than free peritoneal fluid.",
+      "quote": "Since the age of 12, he had experienced repeated admissions to a primary hospital and had undergone peritoneal tapping twice per month, attributed to suspected ascites secondary to chronic liver disease."
+    },
+    {
+      "candidate": "Intra-abdominal cystic neoplasm (Mesenteric cyst or retroperitoneal cystic tumor)",
+      "rule_out_reason": "Considered given the gigantic chronicity and mass effect, but the typical thick peripheral calcification, intimate origin in the liver, and contiguous rupture into the peritoneal cavity pointed directly to a parasitic hydatid etiology.",
+      "quote": "An abdominal CT scan demonstrated a massive non-enhancing cystic mass with a thick rim of peripheral calcification, measuring 21 x 28 cm, containing peripherally located daughter cysts and pushing the gallbladder anteriorly."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Laparotomy revealed a ruptured 25 × 25 cm calcified hepatic cyst communicating with a 20-liter peritoneal collection containing classic hydatid sand, confirming peritoneal hydatidosis secondary to ruptured hepatic echinococcal cyst.",
+      "quote": "This mass communicated with another peritoneal cystic mass measuring 20 x 20 cm, containing 20 liters of fluid and hydatid sand, and displacing the entire bowel to the left (Figs 3 and 4)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled preserving clinical tension of chronic misdiagnosis as decompensated liver disease. Admission breakpoint terminates at diagnostic CT scan. Operative findings, hydatid sand, and scolicidal therapy withheld from case prompt."
+}

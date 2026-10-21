@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10467300_05",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 25-year-old man presented with an acute outbreak of pruritic papules and nodules involving classic web spaces of fingers, abdomen, and genitalia that cleared with two cycles of topical sulfur ointment except for severely pruritic nodules on the scrotum and foreskin of the penis. These genital nodules failed to respond to a four-week trial of systemic antihistamines and topical corticosteroids. The tension lies in distinguishing post-scabetic hypersensitivity nodular scabies from look-alikes such as secondary syphilis (papular syphilids / condyloma lata), lymphomatoid papulosis, or localized genital prurigo nodularis.\n2. Admission Breakpoint: The admission clinical presentation concludes when the patient is admitted with persistent, refractory itching nodules on the scrotum and foreskin that failed four weeks of systemic antihistamines and topical steroids after sulfur ointment therapy, prior to initiation of rescue targeted immunomodulatory therapy.\n3. Differential Distinctions: Secondary syphilis can present with papular or nodular lesions on the genitalia, but lesions are typically non-pruritic, accompanied by generalized lymphadenopathy, and do not resolve on interdigital finger webs with sulfur ointment. Lymphomatoid papulosis presents with recurring, self-healing papulonecrotic or nodular lesions containing atypical cells, but does not present following an acute interdigital web space eruption responsive to topical sulfur. Recalcitrant nodular scabies manifests as persistent, treatment-resistant intensely itchy nodules localized to male genitalia representing a chronic delayed-type hypersensitivity reaction to retained mite antigens.",
+  "case_prompt": "A 25-year-old man is admitted for evaluation of severe, persistent itching nodules on his scrotum and the foreskin of his penis. Six weeks earlier, he had presented with an acute eruption of pruritic papules and nodules involving the web spaces of his fingers, abdomen, and genital regions (scrotum and foreskin). He was treated with two cycles of topical 10% sulfur ointment, which produced rapid clearance of the papular lesions on his finger webs and abdomen. However, intensely pruritic nodules on his scrotum and foreskin persisted. He subsequently received systemic antihistamines and topical corticosteroids for four weeks, with minimal clinical response. Physical examination reveals discrete, firm, indurated erythematous nodules on the scrotum and penile foreskin with excoriations, while the hands and abdomen show complete resolution of previous lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Secondary syphilis (Papular syphilids / Condyloma lata)",
+      "rule_out_reason": "Genital lesions of secondary syphilis are classically painless, non-pruritic, often associated with systemic features and lymphadenopathy, and do not explain an initial intensely itchy interdigital and abdominal eruption that responded rapidly to sulfur ointment.",
+      "quote": "Six weeks ago, he was referred because of pruritic papules and nodules on the webs of fingers, abdomen, and genital regions including scrotum and foreskin"
+    },
+    {
+      "candidate": "Lymphomatoid papulosis / Cutaneous pseudolymphoma",
+      "rule_out_reason": "Lymphomatoid papulosis and lymphoid hyperplasia present with recurrent, chronic papulonodular lesions, but do not present synchronously with characteristic interdigital web papules that clear rapidly following sulfur treatment.",
+      "quote": "The treatment resulted in a rapid clearance for the papules except for the pruritic nodules on the scrotum and foreskin."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Recalcitrant nodular scabies",
+      "rule_out_reason": "The diagnostic turning point is the classic predilection for finger web spaces, abdomen, and genitalia, prompt clearance of peripheral lesions with sulfur ointment, and persistent residual genital nodules refractory to four weeks of systemic antihistamines and topical corticosteroids.",
+      "quote": "Then he administered systemic antihistamines and topical steroids for 4 weeks, showing poor response yet."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Verbatim quotes from the published report support each differential diagnosis and diagnostic pivot."
+}

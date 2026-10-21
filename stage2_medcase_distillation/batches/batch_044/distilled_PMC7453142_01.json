@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7453142_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 86-year-old urban man with coronary disease on daily aspirin presents with a 2-month painless enlarging mass within the right quadriceps muscle without animal exposure, rural residence, or endemic travel. In an elderly patient on antiplatelet therapy, an enlarging soft tissue mass strongly mimics spontaneous intramuscular hematoma, pyogenic abscess, or a soft-tissue neoplasm (e.g., myxoma, cystic lymphangioma, sarcoma), making recognition of solitary primary musculoskeletal cystic echinococcosis challenging.\n2. Admission Breakpoint: Surgical clinic evaluation, physical examination of the thigh, routine laboratory tests showing ESR 65 mm/h, soft tissue ultrasonography demonstrating an encapsulated multicystic mass (9 x 8 x 6.5 cm) with mural calcification, and negative CT scans of the chest and abdomen, immediately prior to preoperative albendazole and en bloc surgical excision.\n3. Differential Distinctions: Intramuscular hematoma (common in elderly patients on aspirin, typically painful with hemorrhagic evolution on ultrasound), intramuscular abscess (presents with local inflammatory signs, erythema, tenderness, and leukocytosis), and soft-tissue benign or malignant tumors (intramuscular myxoma, cystic lymphangioma, sarcoma, which lack laminated cuticular membranes and protoscoleces).",
+  "case_prompt": "An 86-year-old man presented to a surgical clinic with a two-month history of a progressively enlarging mass in the anterior aspect of his right thigh. He reported no local pain, trauma, fevers, chills, or weight loss. His past medical history was notable for ischemic heart disease and hypertension, managed with daily aspirin (80 mg), nitroglycerin, and methyldopa. He had no history of previous surgery and no family history of cystic diseases. He was a retired grocer who lived in an urban, non-endemic municipality, had no history of contact with dogs, sheep, or livestock, and had no history of travel to rural or pastoral areas.\n\nOn physical examination, the patient appeared well and in no acute distress. Vital signs were normal. Examination of the right lower extremity revealed a soft, non-tender, mobile mass deep within the anterior compartment of the quadriceps femoris muscle. The overlying skin showed no erythema, warmth, or color change, and there was no inguinal lymphadenopathy. Neurological and vascular examinations of the extremity were normal.\n\nRoutine hematology, serum biochemistry, and baseline serologic panels were normal, except for an erythrocyte sedimentation rate (ESR) of 65 mm/h. Soft tissue ultrasonography of the anterior thigh revealed a well-encapsulated, hypoechoic, multicystic lesion measuring 9 x 8 x 6.5 cm within the anterior quadriceps femoris muscle, with smooth calcification observed within the cyst wall. Staging computed tomography scans of the chest and abdomen demonstrated normal lung parenchyma and abdominal viscera without cystic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramuscular hematoma",
+      "rule_out_reason": "In an elderly patient receiving antiplatelet therapy (aspirin), spontaneous deep intramuscular hemorrhage is a primary consideration; however, ultrasonography revealed a structured, encapsulated multicystic lesion with wall calcifications rather than an organizing hematoma.",
+      "quote": "The differential diagnoses were abscess, hematoma and benign tumors (such as myxoma, cystic lymphangioma, and giant epidermoid cyst)."
+    },
+    {
+      "candidate": "Intramuscular pyogenic abscess",
+      "rule_out_reason": "Deep muscle abscesses typically present with localized pain, tenderness, overlying warmth, erythema, and leukocytosis, none of which were observed in this non-tender, mobile mass with normal blood counts.",
+      "quote": "In appearance, he was not ill and denied any weight loss in the previous six months. The patient's physical examination revealed a soft, non-tender and mobile mass inside the quadriceps femoris muscle. There were no skin changes or inguinal lymphadenopathy in right thigh."
+    },
+    {
+      "candidate": "Soft-tissue neoplasm (myxoma, cystic lymphangioma, epidermoid cyst, sarcoma)",
+      "rule_out_reason": "Primary musculoskeletal benign or malignant neoplasms are common etiologies of extremity masses in the elderly; however, histological evaluation confirmed non-neoplastic parasitic cystic membranes rather than cellular stromal proliferation.",
+      "quote": "The differential diagnoses were abscess, hematoma and benign tumors (such as myxoma, cystic lymphangioma, and giant epidermoid cyst)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon complete en bloc surgical excision of the intact thigh cyst, with histopathological review of the cyst wall revealing an acellular laminated layer surrounded by a fibrous capsule and containing characteristic protoscoleces admixed with necrotic debris, confirming isolated intramuscular Echinococcus granulosus infection.",
+      "quote": "The cystic lesion was completely removed without damaging the cyst (Figure 2 (Fig. 2)). A review of the slides from resected cystic wall from exterior to interior showed skeletal muscular bundles, a collagen capsule containing a fragmented acellular laminated layer, and protoscoleces admixed with necrotic material (Figure 3 (Fig. 3), Figure 4 (Fig. 4), and Figure 5 (Fig. 5))."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case prompt strictly presents triage examination, lab data, ultrasound, and staging CT before albendazole and operative excision. Zero pathogen or hydatid terminology in presentation."
+}

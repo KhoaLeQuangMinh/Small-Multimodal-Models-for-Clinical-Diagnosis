@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7470351_01",
+  "disease": "Cholera",
+  "think": "1. Core Clinical Tension: A 30-year-old female presents with hyperacute severe painless watery diarrhea (10 episodes in 1 day), repeated vomiting, clinical dehydration, and marked prerenal acute kidney injury (creatinine 4.2 mg/dL) after eating fried seafood. While the clinical syndrome is classic for massive cholera toxin secretory diarrhea, the microbiological isolate displayed an unusual, confounding phenotype: vigorous gas production during glucose fermentation and triple sugar iron agar testing, a feature not typically associated with classic Vibrio cholerae and strongly mimicking aerogenic halophilic vibrios such as Vibrio furnissii.\n2. Admission Breakpoint: The breakpoint is set after emergency department admission history, physical exam (dehydration signs, soft non-tender abdomen), baseline blood and renal labs (WBC 15,400 cells/mm3 with 80% neutrophils, urea 64 mg/dL, creatinine 4.2 mg/dL), and macroscopic inspection of the stool (watery, non-purulent), strictly prior to stool hanging drop microscopy, culture on TCBS agar, biochemical testing, and 16S rRNA / species-specific PCR sequencing.\n3. Differential Distinctions: Vibrio furnissii gastroenteritis matches the seafood ingestion, severe diarrhea, yellow colonies on TCBS, and gas production in carbohydrates, but was ruled out by specific PCR and 16S sequencing showing 99% homology to V. cholerae. Invasive bacterial enteritis (e.g., Shigella, Salmonella, Campylobacter) typically presents with fever, inflammatory dysenteric stools (fecal leukocytes/blood), and severe abdominal pain, all of which were absent here.",
+  "case_prompt": "A 30-year-old female presented to the emergency department with approximately ten episodes of profuse watery diarrhea and four episodes of vomiting over the preceding 24 hours. She had consumed fried seafood one day before the onset of symptoms. She denied abdominal pain, fever, or prior gastrointestinal complaints.\n\nOn physical examination, her vital signs were stable with a pulse rate of 76 beats per minute, blood pressure of 110/70 mmHg, and respiratory rate of 18 breaths per minute. Clinical signs of moderate dehydration were evident, including dry mucous membranes. The cardiovascular, respiratory, and neurological examinations were normal. Abdominal examination revealed a soft, non-tender abdomen without guarding, rebound tenderness, organomegaly, or ascites.\n\nInitial laboratory investigations revealed a leukocytosis with a total white blood cell count of 15,400 cells/mm3 and 80% neutrophils. Serum electrolytes were within normal limits. Renal function testing demonstrated acute kidney injury with a blood urea of 64 mg/dL (reference range 15–40 mg/dL) and a serum creatinine of 4.2 mg/dL (reference range 0.5–1.4 mg/dL). Macroscopic examination of the stool specimen demonstrated a watery, non-purulent liquid consistency without visible blood or mucus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Vibrio furnissii Gastroenteritis",
+      "rule_out_reason": "Suspected due to seafood consumption, yellow sucrose-fermenting colonies on TCBS agar, and marked gas production in carbohydrate fermentation and triple sugar iron agar; definitively ruled out by species-specific PCR which was negative for V. furnissii and 16S rRNA gene sequencing demonstrating 99% sequence identity to V. cholerae.",
+      "quote": "Based on growth on selective medium TCBS and strong gas production evidence in carbohydrate fermentation and triple sugar iron agar, the clinical isolate (VF4E2) was suspected as V. furnissii... was found to be negative for V. furnissii and positive for V. cholerae"
+    },
+    {
+      "candidate": "Invasive Enteric Bacterial Infection (Shigellosis / Salmonellosis / Campylobacteriosis)",
+      "rule_out_reason": "Considered given marked leukocytosis (WBC 15,400 cells/cumm) and rapid dehydration with prerenal azotemia; ruled out by absence of abdominal cramps, absence of fever, non-purulent macroscopic stool characteristics, and negative blood cultures.",
+      "quote": "There was no history of abdominal pain... On macroscopic examination the stool sample was found to be watery and non purulent... The blood and urine cultures were found to be negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Novel Gas-Producing Vibrio cholerae Gastroenteritis with Acute Kidney Injury",
+      "rule_out_reason": "Microscopic examination by hanging drop demonstrated darting motility, and although carbohydrate fermentation showed atypical gas production, 16S rRNA sequencing, species-specific PCR, and slide agglutination confirmed Vibrio cholerae serogroup O1, biovar El Tor, serotype Ogawa; rehydration and ciprofloxacin led to full clinical recovery and normalization of renal function within 3 days.",
+      "quote": "On microscopic examination by hanging drop actively motile (darting motility) bacteria were observed... The specific PCR for V. furnissii and V. cholerae was performed according to the method of Schirmeister et al. and Neogi et al., respectively [Table 1], and was found to be negative for V. furnissii and positive for V. cholerae... clinical isolate (VF4E2) was identified as gas-producing V. cholerae serogroup O1, biovar El Tor, serotype Ogawa strain."
+    }
+  ],
+  "final_diagnosis": "Cholera",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt contains zero mentions of Vibrio, Cholera, or microscopic hanging drop darting motility. Triage stops at macroscopic stool exam and triage labs."
+}

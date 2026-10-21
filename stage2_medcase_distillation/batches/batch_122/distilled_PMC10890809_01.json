@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10890809_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: The patient presents with severe acral cutaneous necrosis, bizarre black-crusted ecchymotic plaques on the extremities and ears, and stocking-glove anesthesia. The clinical challenge is distinguishing Lucio phenomenon\u2014a rare, severe necrotizing reaction pattern of multibacillary leprosy\u2014from necrotizing autoimmune vasculitis, antiphospholipid syndrome, and other thrombotic/coagulopathic microangiopathies.\n2. Admission Breakpoint: The breakpoint is set at the completion of initial dermatology physical examination, baseline hematologic/coagulation profiles, and autoimmune serological labs (ANA, RF), immediately prior to slit-skin smear examination and punch biopsy histopathology.\n3. Differential Distinctions: Systemic autoimmune necrotizing vasculitis and connective tissue disorders are ruled out by a negative antinuclear antibody (ANA) panel and normal systemic organ biochemistry despite an isolated weakly positive rheumatoid factor. Systemic coagulopathies are excluded by normal PT/INR and aPTT. Physical signs including madarosis, bilateral earlobe infiltration, and bilateral ulnar and common peroneal nerve thickening point strongly away from pure vasculitis toward lepromatous disease, which is confirmed by slit-skin smear and dermal biopsy showing endarteritis obliterans.",
+  "case_prompt": "A 53-year-old male farmer presented to the outpatient dermatology clinic with a 2-year history of recurrent blisters, skin necrosis, and non-healing ulcers on both hands and feet, and a 3-week history of newly erupting, irregularly shaped, black-colored lesions over both arms, forearms, hands, and the ear pinnae. He additionally noted bilateral swelling and reduced acral sensation in the hands and feet. He denied fevers, paresthesias, joint pains, epistaxis, lacrimation, or recent drug exposures.\n\nOn physical examination, cutaneous findings included multiple irregularly shaped ecchymotic and necrotic plaques surrounded by a dusky erythematous halo with adherent black crusts on the upper extremities, hands, and bilateral ear pinnae. General examination revealed diffuse infiltration of both earlobes, madarosis of the ciliary and superciliary regions, and pitting edema of both hands and feet accompanied by necrotic ulcerations exuding serous fluid. Neurological evaluation revealed palpable thickening of the bilateral ulnar and common peroneal nerves associated with tenderness (neuritis) and a glove-and-stocking distribution of sensory anesthesia. There were no distinct hypopigmented patches or discrete cutaneous nodules, and cranial nerve and motor examinations were intact.\n\nBaseline laboratory evaluation showed a hemoglobin of 9.6 g/dL, an erythrocyte sedimentation rate (ESR) of 36 mm/hr, and a rheumatoid factor of 26 IU/mL. White blood cell count and differential were normal. Renal function, liver biochemistry, random blood glucose, and urinalysis were unremarkable. Screening serologies for hepatitis B, hepatitis C, and retroviruses were negative. Coagulation studies, including prothrombin time, international normalized ratio (INR), and activated partial thromboplastin time (aPTT), were within reference limits. Connective tissue disease evaluation, including antinuclear antibodies (ANA), was negative. Chest radiography, tuberculin skin testing, and routine sputum smears showed no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Connective Tissue Disease / Systemic Vasculitis",
+      "rule_out_reason": "Considered due to elevated ESR, weakly positive rheumatoid factor, and widespread necrotizing vasculitic-appearing cutaneous plaques, but excluded by negative antinuclear antibodies (ANA) and normal renal and hepatic function.",
+      "quote": "Laboratory workup for connective tissue disease, including antinuclear antibody (ANA) were negative."
+    },
+    {
+      "candidate": "Primary Coagulopathy / Thrombotic Microangiopathy",
+      "rule_out_reason": "Extensive cutaneous infarction and acral purpura prompted consideration of an underlying coagulopathy, but normal prothrombin time/INR and aPTT ruled this out.",
+      "quote": "Coagulation profiles including prothrombin time/international normalized ratio, and activated partial thromboplastin time were within normal limit ruling out the possibility of underlying coagulopathy."
+    },
+    {
+      "candidate": "Tuberculosis / Cutaneous Mycobacteriosis",
+      "rule_out_reason": "Chronic granulomatous ulcerations were evaluated for tuberculosis, but Mantoux testing, sputum acid-fast smears, and chest radiography were completely negative.",
+      "quote": "His chest radiograph, Mantoux test, and sputum for acid-fast bacilli did not show any evidence of tubercular infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of bilateral peripheral nerve thickening, earlobe infiltration, madarosis, a slit-skin smear demonstrating a 4+ bacteriological index, and histopathology revealing foamy histiocytes with ischemic necrotizing endarteritis obliterans confirmed Lucio phenomenon in multibacillary leprosy.",
+      "quote": "Slit-skin smear examination obtained from the forehead and ear helices showed 4+ (10-100 bacilli in the average oil field) bacteriological index (Fig. 3)... Histopathological examination of the central and peripheral lesions showed foamy macrophages and the dermal vasculature showed changes suggestive of epidermal necrosis, ischemic necrotizing endarteritis obliterans, resulting in microvascular occlusion of dermal vasculature (Fig. 4). Based on clinical and histopathological examination, diagnosis of the Lucio phenomenon was made."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled cleanly per Stanford MedCaseReasoning criteria. Breakpoint strictly excludes slit-skin smears and histopathology. Zero pathogen leakage."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3623783_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 62-year-old man undergoing antimicrobial treatment for a recently diagnosed pulmonary infection develops a generalized maculopapular rash that promptly resolves on drug withdrawal, only to be followed by the emergence of annular, non-blanchable purpuric macules and papules accompanied by severe cholestatic liver injury. The core challenge is differentiating drug-induced leukocytoclastic vasculitis (LCV) from systemic autoimmune vasculitides (such as ANCA-associated vasculitis or SLE) and viral hepatitis-induced cryoglobulinemia, in the setting of first-line anti-tuberculosis pharmacotherapy.\n2. Admission Breakpoint: Admission evaluation concludes after physical examination, routine hematologic and biochemical laboratory tests, urinalysis, and abdominal ultrasonography, immediately prior to send-out autoimmune serologies (ANA, ANCA), viral hepatitis/HIV serologies, and diagnostic skin punch biopsy with direct immunofluorescence.\n3. Differential Distinctions: Systemic autoimmune vasculitis (ANCA-associated vasculitis or SLE) causes palpable purpura, anemia, and leukocytosis, but was excluded by negative ANA and ANCA serologies and absence of proteinuria or hematuria. Viral hepatitis-related cryoglobulinemic vasculitis causes purpuric skin lesions and severe cholestasis, but viral serologies were negative and abdominal ultrasound was normal. Simple morbilliform drug eruption produces a transient maculopapular rash, but the subsequent development of non-blanchable annular purpuric lesions reflects true small vessel leukocytoclastic vasculitis.",
+  "case_prompt": "A 62-year-old man presents to the hospital with a generalized erythematous maculopapular rash distributed across his trunk and extremities. His past medical history includes long-standing hypertension and diabetes mellitus treated with amlodipine 5 mg, metformin 500 mg, and glipizide 5 mg daily. Two weeks prior to presentation, he was diagnosed with an active pulmonary infectious disease and initiated on a triple antimicrobial regimen consisting of isoniazid 300 mg, rifampicin 450 mg, and ethambutol 800 mg daily. After two weeks of therapy, the generalized exanthematous eruption appeared, and the antimicrobial agents were discontinued on admission.\n\nThe initial exanthematous rash resolves within three days, leaving post-inflammatory hyperpigmentation; however, one day later, multiple well-defined, non-blanchable, erythematous-to-purplish macules and papules, several displaying an annular arrangement, develop on his lower extremities. Review of systems is otherwise unremarkable, and he reports no prior drug allergies.\n\nLaboratory investigations show a leukocyte count of 12.8 x 103/mm3 (86% neutrophils, 9% lymphocytes, 2% monocytes, 2% eosinophils, 1% basophils), hemoglobin 7.9 g/dL, and platelet count 215 x 103/mm3. Renal function shows creatinine 1.2 mg/dL. Liver biochemistries reveal marked cholestasis: AST 31 U/L, ALT 34 U/L, alkaline phosphatase 582 U/L, gamma-glutamyl transferase 393 U/L, total bilirubin 9.6 mg/dL, and direct bilirubin 8.4 mg/dL. Urinalysis demonstrates no proteinuria or hematuria. Transabdominal ultrasound reveals no biliary obstruction or hepatic parenchymal abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic autoimmune vasculitis (ANCA-associated vasculitis or SLE)",
+      "rule_out_reason": "Palpable purpura, anemia, and leukocytosis mimicked systemic autoimmune small vessel vasculitis, but ANA and ANCA serologic tests were negative, and urinalysis showed no evidence of renal glomerulonephritis.",
+      "quote": "Anti-nuclear antibody and anti-neutrophil cytoplasmic antibody test results were also negative. Urine analysis results showed no evidence of proteinuria or hematuria."
+    },
+    {
+      "candidate": "Viral hepatitis-associated cryoglobulinemic vasculitis",
+      "rule_out_reason": "Severe cholestatic jaundice and purpuric eruptions raised suspicion for hepatitis B or C virus-induced immune complex vasculitis, but viral serologies were negative and abdominal ultrasound was unremarkable.",
+      "quote": "hepatitis B surface antigen, anti-hepatitis C virus and anti-human immunodeficiency virus (HIV) test results were all negative... The findings from an abdominal ultrasound were unremarkable."
+    },
+    {
+      "candidate": "Simple drug exanthem (morbilliform eruption)",
+      "rule_out_reason": "Although the initial generalized exanthem resolved upon drug withdrawal, the subsequent emergence of fixed, non-blanchable annular purpuric lesions indicated true necrotizing leukocytoclastic vasculitis rather than a simple benign exanthematous eruption.",
+      "quote": "The exanthematous rash resolved within three days of admission, leaving post-inflammatory hyperpigmentation. One day later, multiple well-defined, non-blanchable, erythematous-to-purplish macules and papules, some of which showed an annular arrangement, were noticed... A skin biopsy from a purpuric annular lesion on his leg showed peri-vascular and interstitial infiltration of neutrophils with extravasation of erythrocytes and fibrin deposition (Figure 3), characteristic of LCV."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of a purpuric annular skin biopsy showing perivascular and interstitial neutrophil infiltration with erythrocyte extravasation and fibrin deposition, coupled with direct immunofluorescence demonstrating IgA, IgM, and C3 deposition along superficial dermal blood vessels, confirmed drug-induced leukocytoclastic vasculitis and cholestasis.",
+      "quote": "A skin biopsy from a purpuric annular lesion on his leg showed peri-vascular and interstitial infiltration of neutrophils with extravasation of erythrocytes and fibrin deposition (Figure 3), characteristic of LCV. A direct immunofluorescence (DIF) study was positive for IgA, IgM and C3 along superficial dermal blood vessels, consistent with cutaneous small vessel vasculitis (Figure 4). These findings were diagnostic for annular LCV associated with anti-tuberculosis drugs and drug-induced cholestasis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero pathogen spoilers in case prompt. Admission breakpoint set prior to autoimmune/viral serologies and skin biopsy. All candidates and diagnostic pivot confirmed with exact article quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2738533_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old French Foreign Legion military nurse returning from a 2-year assignment at Djibouti Hospital is found on routine repatriation screening to have right upper lobe cavitary consolidation and peripheral hypereosinophilia. He is completely asymptomatic at presentation, having recovered from transient constitutional symptoms 6 months prior. The tension lies in distinguishing tropical helminthic pulmonary eosinophilia (schistosomiasis, paragonimiasis, toxocariasis) from cavitary tuberculosis caused by an endemic variant with smooth colonial morphology.\n2. Admission Breakpoint: Repatriation screening chest radiograph, baseline clinical exam, and initial blood work revealing hypereosinophilia, stopping before extensive parasitic serologies, bronchial aspirate acid-fast smears, and mycobacterial cultures.\n3. Differential Distinctions:\n- Tropical Pulmonary Eosinophilia / Invasive Helminthiasis (Schistosomiasis, Hydatid Disease, Distomiasis, Toxocariasis): Marked hypereosinophilia and pulmonary consolidations in a patient returning from East Africa strongly suggest parasitic migration or encystment; however, comprehensive serologic panels for trematodes, cestodes, and nematodes as well as multiple stool examinations were negative.\n- Endemic Pulmonary Mycosis (e.g., Histoplasmosis, Coccidioidomycosis): Cavitary pulmonary infiltrates with eosinophilia can reflect fungal infection, but fungal testing was negative and bronchial aspirate smear directly revealed acid-fast bacilli.\n- Bronchogenic Carcinoma: Cavitary upper-lobe consolidation in a 55-year-old smoker or veteran can signify cavitary neoplasm, but absence of malignancy and positive acid-fast staining confirmed mycobacterial infection.",
+  "case_prompt": "A 55-year-old male nurse serving in the French Foreign Legion presented for hospital admission in France following routine repatriation screening. For the preceding 2 years, he had been stationed in Djibouti, where he was occasionally in charge of nursing care at the local hospital. His past medical history was unremarkable. Approximately 8 months prior to returning to France, he experienced an episode of fatigue, anorexia, and an unintentional 3-kg weight loss that resolved spontaneously after 2 months. Since that time, he had been completely asymptomatic, explicitly denying cough, sputum production, hemoptysis, dyspnea, fever, night sweats, or chest pain.\n\nPhysical examination upon admission was entirely normal. He was afebrile, hemodynamically stable, and in no respiratory distress. Pulmonary examination demonstrated clear, symmetric vesicular breath sounds without crackles or wheezes. Abdominal examination was soft and non-tender without hepatomegaly or splenomegaly. Peripheral lymphadenopathy was absent.\n\nRoutine hematologic and biochemical screening was unremarkable except for significant peripheral hypereosinophilia. Screening thoracic radiographs performed upon his arrival in France demonstrated parenchymal consolidation of the right upper lobe accompanied by small internal cavitary lucencies. He was unable to produce sputum spontaneously.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tropical Helminthic Infection / Parasitic Pulmonary Infiltrate",
+      "rule_out_reason": "Considered because the patient presented with marked hypereosinophilia and pulmonary consolidation following long-term deployment in East Africa, but systematically excluded by negative serologies and negative stool parasitology.",
+      "quote": "Serologic tests for schistosomiasis, hydatidosis, distomiasis, amebiasis, toxocariasis, and trichinosis were negative, and parasites were not found in stool samples."
+    },
+    {
+      "candidate": "Pulmonary Mycosis or Pyogenic Lung Abscess",
+      "rule_out_reason": "Considered due to indolent right upper lobe cavitary consolidation in an asymptomatic patient, but ruled out by bronchial aspiration smear demonstrating acid-fast bacilli and subsequent mycobacterial growth.",
+      "quote": "A gastric aspirate smear was negative for acid-fast bacilli, and a bronchial aspiration smear was positive for acid-fast bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Occupational hospital exposure in Djibouti presenting with right upper lobe cavitary consolidation on screening chest radiograph and hypereosinophilia, definitively confirmed by acid-fast bacilli on bronchial aspiration smear, positive MGIT/Lowenstein-Jensen cultures, Gen-Probe DNA hybridization, and spoligotyping identifying Mycobacterium tuberculosis subsp. canetti.",
+      "quote": "An M. tuberculosis subsp. canetti isolate was identified, which was susceptible to all primary antituberculous drugs."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded parasitic serologies, bronchial AFB smears, and typing cultures from presentation. Zero spoilers, full quote fidelity."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2248592_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 60-year-old male presents with dull upper abdominal pain, pallor, pedal edema, and a massive 22-cm hepatomegaly with an 8 x 8 cm cystic subfascial epigastric protrusion stretching the anterior abdominal wall aponeurosis. An enormous 19 x 12 x 13 cm multilocular cystic hepatic mass occupying segments V–VIII with compression of major retroperitoneal and hepatobiliary vasculature mimics a biliary cystadenoma/cystadenocarcinoma, complex hepatic abscess, or mesenchymal abdominal wall tumor.\n2. Admission Breakpoint: The admission breakpoint is placed at Day 1 triage following physical examination, baseline laboratory investigations showing peripheral eosinophilia (900/µL), chest radiograph showing diaphragmatic elevation, and initial abdominal ultrasound/CT imaging, prior to Echinococcus-specific ELISA serology, surgical cystotomy, and histopathological analysis.\n3. Differential Distinctions: Biliary cystadenoma / cystadenocarcinoma (lack daughter cysts and peripheral eosinophilia), amebic or pyogenic liver abscess (ruled out by afebrile state, normal WBC count of 7,500/µL, sterile cultures, and absence of systemic toxic features), and primary anterior abdominal wall sarcoma (ruled out by CT showing hepatic parenchymal origin with secondary subfascial herniation). Specific ELISA serology and surgical drainage yielding hydatid sand with hooklets, laminated membrane, and protoscolices establish echinococcosis.",
+  "case_prompt": "A 60-year-old male presented with a 4-month history of continuous, dull aching upper abdominal pain and a progressively enlarging visible lump in the upper abdomen over the preceding two months. He had no history of acute fever, rigors, or jaundice.\n\nOn physical examination, the patient was afebrile and non-icteric, with mild conjunctival pallor and bilateral pedal edema. Abdominal examination revealed marked lobulated hepatomegaly with a liver span of 22 cm occupying both hypochondria, the right lumbar, epigastric, and umbilical regions. In addition, there was a localized cystic, tense subfascial protrusion measuring 8 x 8 cm in the epigastrium directly stretching the overlying musculature.\n\nInitial laboratory investigations showed a hemoglobin level of 10 g/dL, white blood cell count of 7,500/µL with an absolute eosinophil count of 900/µL. Liver function tests, including serum transaminases and bilirubin, were within normal reference ranges.\n\nPlain chest radiography revealed elevation of the right hemidiaphragm with a soft-tissue mass shadow in the right upper abdomen. Abdominal ultrasonography demonstrated a massive 19 x 12 x 13 cm cystic lesion located in the right lobe of the liver containing multiple internal anechoic cysts. Contrast-enhanced spiral CT of the liver confirmed a large right hepatic lobe cystic mass (involving segments V, VI, VII, and VIII) with internal daughter cysts causing mass effect and compression of the portal vein, inferior vena cava, hepatic veins, gallbladder, biliary tree, and right kidney, with an anterior cystic projection extending through the midline fascial aponeurotic layer.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Biliary cystadenoma or cystic hepatic neoplasm",
+      "rule_out_reason": "Although cystic neoplasms of the biliary tree can present as large multilocular intrahepatic masses, they typically lack multiple independent internal daughter cysts, are not associated with marked peripheral eosinophilia (900/µL), and do not demonstrate positive echinococcal serology.",
+      "quote": "Ultrasonography (USG) of the abdomen revealed a 19 x 12 x 13 cm cystic lesion in the right lobe of the liver with multiple anechoic cysts within it. Spiral CT scan of the liver (Figure-2A &2B) confirmed a hydatid cyst in the right lobe (segments - V, VI, VII, VIII), with multiple daughter cysts within"
+    },
+    {
+      "candidate": "Pyogenic or amebic hepatic abscess",
+      "rule_out_reason": "Bacterial or amebic abscesses typically cause high fever, right upper quadrant tenderness, leukocytosis, and deranged liver function tests; this patient was afebrile, non-icteric, had a normal leukocyte count of 7,500/µL, normal liver function tests, and sterile evacuated cyst contents.",
+      "quote": "Clinical examination revealed an afebrile non-icteric man with mild pallor and pedal edema... Liver function tests were within normal range... The cyst contents, which were sterile on culture"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Specific enzyme-linked immunosorbent assay (ELISA) serology was positive for echinococcus, and surgical exploration with evacuation of three liters of cyst fluid demonstrated diagnostic daughter cysts, hooklets, laminated membranes, and protoscolices.",
+      "quote": "Serological test with an enzyme-linked immunosorbent assay (ELISA) for echinococcus was positive... The cyst contents, which were sterile on culture, showed protoscolices, fragments of laminated membrane and hooklets."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Breakpoint set prior to ELISA serology and surgical cystotomy. Zero pathogen or disease mentions in case prompt."
+}

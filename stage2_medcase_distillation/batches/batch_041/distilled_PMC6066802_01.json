@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6066802_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old young man presents with subacute upper abdominal pain, postprandial vomiting, melena, 7 kg weight loss, pallor, and a palpable mobile epigastric mass. The presentation heavily mimics advanced gastric adenocarcinoma, gastrointestinal stromal tumor (GIST), or Crohn's disease, but represents rare gastroduodenal and colonic tuberculosis with gastro-enteric fistulization.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial clinical evaluation and baseline laboratory testing showing microcytic hypochromic anemia, prior to upper endoscopy, abdominal CT, colonoscopy, biopsy histopathology, and mycobacterial cultures.\n3. Differential Distinctions: Gastric adenocarcinoma or malignant GIST is considered given the palpable epigastric mass, profound weight loss, melena, and microcytic anemia, but is ruled out by endoscopy and histology demonstrating caseating granulomas and Langhans giant cells without malignant epithelial cells. Crohn's disease is considered due to multifocal GI involvement (esophagus, stomach, and transverse colon with fistulous tract), but excluded by necrotic perigastric/periportal lymphadenopathy on CT and positive mycobacterial culture. Definitive diagnosis of gastroduodenal and colonic tuberculosis is confirmed by histology demonstrating caseating granulomas with Langhans giant cells and positive MGIT culture for Mycobacterium tuberculosis.",
+  "case_prompt": "A 21-year-old man presents with a three-month history of worsening upper abdominal pain accompanied by intermittent vomiting, melena, and an unintentional 7 kg weight loss.\n\nOn physical examination, he appears pale. Abdominal examination reveals a distinct, non-tender lump in the epigastric region measuring approximately 2.0 cm \u00d7 1.5 cm. The mass is mobile with respiration, and the overlying skin and local temperature are normal. The remainder of the physical examination is unremarkable.\n\nBaseline triage laboratory investigations demonstrate microcytic hypochromic anemia on complete blood count. Routine biochemical panels are otherwise within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gastric Adenocarcinoma / Upper GI Malignancy",
+      "rule_out_reason": "A palpable epigastric mass, profound weight loss, upper GI bleeding (melena), and deep excavated ulceration strongly suggested advanced malignancy, but biopsies demonstrated inflammatory caseating granulomas with Langhans giant cells rather than malignant neoplastic tissue.",
+      "quote": "Upper GI endoscopy revealed a large deep excavated ulcer in the esophagus at about 25 cm from the incisors and associated ulcer of size 2 cmx1.5 cm with a suspicious fistulous opening seen in the antropyloric region."
+    },
+    {
+      "candidate": "Crohn's Disease",
+      "rule_out_reason": "Multifocal gastrointestinal involvement with ulceration in the esophagus, stomach, and transverse colon and fistulous formation raised suspicion for Crohn's disease; however, abdominal CT revealed necrotic perigastric and periportal lymphadenopathy, and culture isolated mycobacteria.",
+      "quote": "Computed tomography (CT) of abdomen revealed diffuse circumferential thickening involving the antrum and pylorus together with thickening involving the proximal transverse colon for a length 7 cm, with multiple necrotic perigastric and periportal lymph nodes."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Gastroduodenal and Colonic Tuberculosis",
+      "rule_out_reason": "Histopathologic examination of esophageal, antral, and colonic ulcer biopsies demonstrated caseating granulomas with Langhans giant cells, and mycobacterial culture via Mycobacteria Growth Indicator Tube (MGIT) was positive for Mycobacterium tuberculosis.",
+      "quote": "Histopathology from esophageal, antral, and transverse colon ulcer biopsies showed prominent lymphoid aggregate with occasional caseating granuloma and Langerhans giant cell (Figure 2A). Tuberculosis culture using Mycobacteria Growth Indicator Tube (MGIT) was positive from the antral and transverse colon biopsy specimens."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt stops right after physical examination revealing the epigastric lump and baseline CBC showing microcytic anemia, strictly excluding endoscopy, CT, biopsy, and pathogen names. Diagnostic reasoning articulates the key distinctions from gastric cancer and Crohn's disease."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12925462_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 36-year-old woman presents with progressive exertional dyspnea and an echocardiographically identified large (74 x 51 mm) cystic mass compressing the apical left ventricle. The core tension is distinguishing an unusual myocardial parasitic cyst from non-parasitic congenital cysts (pericardial, bronchogenic), primary cardiac cystic tumors (myxoma, teratoma), or a pyogenic myocardial abscess, particularly when routine blood tests and eosinophil counts are completely normal.\n2. Admission Breakpoint: The admission breakpoint ends after initial clinical history, physical examination, normal laboratory workup including eosinophil counts, and cross-sectional imaging (transthoracic echocardiography showing the 74 x 51 mm apical left ventricular cystic lesion and thoracic/abdominal CT confirming the 67 mm compressive mass and absence of abdominal recurrence). Median sternotomy, intraoperative aspiration of cyst contents, and microscopic histopathology represent confirmatory interventions.\n3. Differential Distinctions: Congenital cysts (pericardial or bronchogenic) typically exhibit thin walls with simple, homogeneous, unilocular fluid density without internal debris or daughter vesicles. Pyogenic myocardial abscess presents with acute fever, leukocytosis, and bacteremia, whereas this patient had normal inflammatory markers and sterile aspirate. Cardiac neoplasms typically possess solid enhancing vascular components rather than fluid-filled cystic structures. The remote history of hepatic cyst resection strongly suggests echinococcosis despite absent peripheral eosinophilia.",
+  "case_prompt": "A 36-year-old woman presents with progressive exertional dyspnea over the past several weeks. Her surgical history is notable for resection of a benign hepatic cyst one year prior.\n\nOn physical examination, her vital signs are stable. Cardiac auscultation reveals normal heart sounds without murmurs, rubs, or gallops. There is no peripheral edema, jugular venous distension, or pulmonary rales.\n\nLaboratory evaluation is unremarkable, with a normal complete blood count and an eosinophil count within the normal reference range.\n\nTransthoracic echocardiography demonstrates a large, well-defined cystic mass adherent to the anterolateral wall of the left ventricle, measuring approximately 74 x 51 mm. The mass is heterogeneous with internal echolucent areas, causing extrinsic compression of the left ventricular chamber. Thoracic computed tomography confirms a 67-mm cystic lesion adjacent to the apex of the left ventricle, exerting an external compressive mass effect. Abdominal computed tomography demonstrates postoperative changes consistent with previous partial hepatectomy without evidence of local recurrence.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic myocardial abscess",
+      "rule_out_reason": "Considered due to the intramyocardial cystic collection, but ruled out by the chronic exertional presentation, normal leukocyte and eosinophil counts, absence of systemic inflammatory signs, and absence of bacterial growth upon culture.",
+      "quote": "Bacteriological analysis of the cystic fluid showed no bacterial growth."
+    },
+    {
+      "candidate": "Congenital pericardial cyst or cardiac cystic neoplasm",
+      "rule_out_reason": "Considered given the solitary cystic appearance adjacent to the ventricular wall; however, the lesion demonstrated internal heterogeneity and echolucent compartments, and surgical histopathology identified characteristic parasitic cuticles and vesicles rather than mesothelial or neoplastic lining.",
+      "quote": "The lesion was heterogeneous with internal echolucent areas, suggestive of a hydatid cyst."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical median sternotomy revealed an apical left ventricular cyst containing turbid fluid, and microscopic histopathology demonstrated definitive laminated cuticles and vesicles of Echinococcus granulosus.",
+      "quote": "Histopathological examination confirmed the presence of vesicles typical of Echinococcus granulosus (Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly stops before sternotomy and cyst drainage. Past surgical history sanitized from hepatic hydatid cyst to benign hepatic cyst to prevent pathogen and diagnostic spoiling. Direct quotes verified against article text."
+}

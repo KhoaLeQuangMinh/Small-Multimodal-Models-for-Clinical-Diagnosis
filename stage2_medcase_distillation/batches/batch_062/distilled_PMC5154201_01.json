@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5154201_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 13-year-old boy presents with progressive intracranial hypertension, visual field defects, and cerebellar signs due to a large (5 cm) solitary cystic parieto-occipital intra-axial brain mass. Solitary cerebral cystic lesions in children present a difficult dilemma between pyogenic brain abscess, cystic neoplasm (e.g., pilocytic astrocytoma), and parasitic cysts.\n2. Admission Breakpoint: The admission breakpoint is established immediately after physical examination, visual field perimetry, baseline laboratory panels, and preliminary neuroimaging (brain CT and brain MRI including DWI), prior to send-out Echinococcus serology, whole-body staging scans, and craniotomy with surgical cyst excision.\n3. Differential Distinctions: A pyogenic brain abscess displays pronounced peripheral ring enhancement, dense vasogenic edema, and marked restricted diffusion on DWI (hyperintense on DWI, hypointense on ADC). In contrast, a primary cerebral hydatid cyst exhibits minimal surrounding vasogenic edema, minimal linear rim enhancement, and entirely unrestricted diffusion (free fluid signal) on DWI, lacking systemic eosinophilia.",
+  "case_prompt": "A 13-year-old previously healthy, right-handed boy presented with a 1-month history of progressive headache of mild-to-moderate intensity. The headache was initially localized to the right side of the head before becoming holocranial and bilateral, and was associated with nausea, blurred vision, and photophobia.\n\nOn physical examination, the patient was afebrile and alert. Neurological examination revealed an ataxic gait, left-sided pronator drift, left-sided dysdiadochokinesia, and decreased sensation across the distribution of the left mandibular branch of the trigeminal nerve. Fundoscopic examination demonstrated mild bilateral optic disk swelling (papilledema). Formal visual field testing revealed multiple absolute visual field defects in the peripheral temporal area in a ring-like distribution, as well as scattered absolute scotomas in the nasal field.\n\nRoutine laboratory testing demonstrated a normal electrolyte panel and normal liver function tests. Complete blood count showed a white blood cell differential with 68% neutrophils and 0.45% eosinophils (no eosinophilia). Plain chest radiography was normal.\n\nAxial non-contrast computed tomography (CT) of the brain demonstrated a single, well-demarcated intracranial cystic lesion located in the right parieto-occipital region, measuring 45 x 48 mm, causing mass effect on surrounding cerebral structures. Axial brain magnetic resonance imaging (MRI) revealed a large, well-defined, oval-shaped intra-axial cystic lesion in the right parieto-occipital region measuring 45 x 50 mm, with a thin, linear enhancing component along its medial aspect and minimal surrounding vasogenic edema, producing a 4 mm midline shift and mild compression of the ipsilateral occipital horn. Diffusion-weighted imaging (DWI) demonstrated unrestricted water diffusion within the cystic core.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Brain Abscess",
+      "rule_out_reason": "Considered because of a large solitary intra-axial mass causing focal neurological deficits and midline shift, but definitively excluded by diffusion-weighted MRI which showed completely unrestricted diffusion within the cyst cavity, ruling out purulent material.",
+      "quote": "Diffused-weighted image (DWI), however, showed an intra-axial parieto-occipital lesion with no evidence of restricted diffusion [Figure 3b]. These findings ruled out the possibility that it might be an abscess."
+    },
+    {
+      "candidate": "Cystic Brain Neoplasm / Malignant Glioma",
+      "rule_out_reason": "Considered due to progressive intracranial mass effect and papilledema in a child, but microscopic examination of the completely excised intact cyst specimen revealed no morphologic features of malignancy.",
+      "quote": "There was no morphologic support of malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical en bloc delivery using the Dowling-Orlando technique yielded an intact unruptured 5x5 cm cyst containing clear fluid, and histopathology demonstrated a laminated acellular outer layer and inner germinal layer with attached brood capsules containing scolices, establishing primary cerebral echinococcosis.",
+      "quote": "Microscopically, sections show a cyst wall composed of a laminated outer layer and an inner germinal cell layer with attached cysts containing scolices [Figure 7]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following strict Stanford MedCaseReasoning guidelines. Zero spoilers or pathogen names in prompt. Exact quotes verified against source text."
+}

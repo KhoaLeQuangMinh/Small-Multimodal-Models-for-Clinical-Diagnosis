@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7273542_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient from an endemic region with end-stage renal disease on hemodialysis presents with a loculated exudative pleural effusion, intrathoracic lymphadenopathy, and hypercalcemia accompanied by markedly elevated parathyroid hormone-related protein (PTHrP). The elevation of PTHrP mimics paraneoplastic humoral hypercalcemia of malignancy (such as lymphoma or occult carcinoma), obscuring an extrapulmonary granulomatous mycobacterial infection.\n2. Admission Breakpoint: The breakpoint is set at the secondary hospital admission after chest CT angiography (demonstrating loculated right pleural effusion and hilar/subcarinal adenopathy), diagnostic thoracentesis (revealing exudative effusion with elevated ADA 57.6 U/L and negative routine stains), and laboratory evaluation showing hypercalcemia and elevated PTHrP, immediately prior to bronchoscopic/mediastinal nodal biopsies and mycobacterial cultures.\n3. Differential Distinctions: Lymphoma or solid tumor paraneoplastic syndrome typically explains high PTHrP and intrathoracic adenopathy, but is ruled out by benign flow cytometry, absence of malignant cytology in pleural fluid, and non-malignant necrotizing granulomas on histology. Heart failure or volume overload from ESRD causes transudative rather than exudative loculated effusions with elevated ADA.",
+  "case_prompt": "A 42-year-old female originally from Ethiopia presented to the emergency department with progressive dyspnea on exertion and right-sided chest pain over the preceding several weeks. Her medical history was significant for unexplained end-stage renal disease diagnosed several months earlier, managed with maintenance hemodialysis in Ethiopia, India, and subsequently the United States. She had presented two-and-a-half months earlier with volume overload, at which time chest radiography was largely unremarkable and chest CT angiography was negative for pulmonary embolism but noted small non-specific lymphadenopathy and a small right pleural effusion.\n\nOn physical examination, she appeared fatigued. Vital signs were stable. Pulmonary examination revealed decreased breath sounds over the right lower lung field with dullness to percussion. Cardiac examination was unremarkable, and abdominal examination was benign without organomegaly.\n\nInitial laboratory investigations revealed persistent hypercalcemia with serum calcium levels ranging between 11.7 and 12.8 mg/dL, elevated 1,25-dihydroxyvitamin D at 131 pg/mL, a normal intact parathyroid hormone level of 53.8 pg/mL, and an elevated parathyroid hormone-related protein (PTHrP) of 52 pg/mL. A repeat CT angiography of the chest was negative for acute pulmonary embolism but demonstrated a loculated right pleural effusion along with subcarinal and right hilar lymphadenopathy. Diagnostic thoracentesis was performed, yielding an exudative effusion (pH 7.8, white blood cell count 1,083 cells/mm3 with 24% lymphocytes and <25% polymorphonuclear cells, glucose 84 mg/dL, and lactate dehydrogenase 270 U/L) with an elevated adenosine deaminase (ADA) level of 57.6 U/L. Gram stain and fungal culture of the pleural fluid were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant Lymphoma / Paraneoplastic Humoral Hypercalcemia of Malignancy",
+      "rule_out_reason": "Strongly considered due to subcarinal and hilar lymphadenopathy, exudative pleural effusion, and markedly elevated serum PTHrP; ruled out by absence of malignant cells on pleural fluid cytology, normal peripheral blood flow cytometry, and negative serum leukemia/lymphoma panel.",
+      "quote": "At this point, there was concern for malignancy such as lymphoma, but the pleural fluid did not show any malignant cells and peripheral flow cytometry did not show any abnormal T or B cells."
+    },
+    {
+      "candidate": "Acute Pulmonary Embolism",
+      "rule_out_reason": "Considered in an ESRD patient presenting with acute-on-chronic dyspnea and pleuritic chest pain; definitively excluded by repeated negative chest CT angiography.",
+      "quote": "She underwent another CT angiography of her chest which showed no pulmonary embolism, but now showed loculated right pleural effusion"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Extrapulmonary Tuberculosis with Hypercalcemia and Elevated PTHrP",
+      "rule_out_reason": "Mediastinoscopy with excisional lymph node biopsy demonstrated necrotizing granulomas, and pleural biopsy culture yielded Mycobacterium tuberculosis; initiating weight-based anti-tubercular therapy normalized PTHrP to 35 pg/mL, resolved serum hypercalcemia, and achieved clinical recovery.",
+      "quote": "The biopsy of the lymph node showed necrotizing granulomas... Eventually, the acid fast stain of the pleural biopsy sample resulted and showed growth of mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled adhering strictly to Stanford MedCaseReasoning criteria. No pathogen names, TB mention, or biopsy findings in the prompt. Triage stops after thoracentesis baseline labs and hypercalcemia panel."
+}

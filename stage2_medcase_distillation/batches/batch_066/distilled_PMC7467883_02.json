@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7467883_02",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: An infant evaluated for worsening acute lower extremity digital ischemia and cyanosis associated with an inflammatory syndrome and profound thrombocytosis (platelets 760,000/mm3). The presentation strongly mimics systemic autoimmune vasculitis, inherited/acquired prothrombotic disorders, or cryoglobulinemia, rather than a cutaneous parasitic infection driving reactive microvascular thrombosis.\n2. Admission Breakpoint: The admission breakpoint is established upon hospital admission and completion of baseline inflammatory/hematologic labs and CT-angiography showing normal vascular architecture, prior to specialized thrombophilia profiling, comprehensive autoantibody panels, and observation of therapeutic response to antiscabetic treatment.\n3. Differential Distinctions: Inherited/acquired thrombophilia or DVT vs. Systemic autoimmune disease / Antiphospholipid syndrome / Cryoglobulinemia vs. Cutaneous ectoparasitic infestation (scabies) with reactive acral ischemia. Unremarkable vascular imaging, negative autoimmune serologies (anti-dsDNA, anti-Sm, ANCA, antiphospholipid antibodies), normal thrombophilia screen, and rapid dermatologic and inflammatory resolution upon antiscabetic treatment confirmed scabies as the underlying driver.",
+  "case_prompt": "An infant is evaluated for acute acral ischemia and evolving cyanosis involving the lower extremity digits in the setting of concurrent skin lesions. Contrast CT-angiography of the abdomen and lower extremities is performed and demonstrates normal patent vasculature without evidence of arterial thrombosis or occlusion. Nailfold capillaroscopy of the right foot demonstrates no microcirculatory abnormalities. Laboratory evaluation reveals an inflammatory syndrome with C-reactive protein of 50.86 mg/L, erythrocyte sedimentation rate of 34 mm/hr, serum ferritin 109 ng/mL, absolute neutrophil count of 13,230/mm3, and marked thrombocytosis with a platelet count of 760,000/mm3. Baseline coagulation studies show prothrombin time of 100%, activated partial thromboplastin time of 32 seconds, fibrinogen 1.92 g/L, and D-dimer 0.66 ng/mL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Inherited or Acquired Thrombophilia / Deep Vein Thrombosis",
+      "rule_out_reason": "Severe acute digital ischemia and thrombocytosis raised high suspicion for hypercoagulability or venous/arterial thromboembolism; however, CT-angiography was normal and functional coagulation inhibitor levels were completely within normal limits.",
+      "quote": "Laboratory workup to look for thrombophilia and deep vein thrombosis was normal (PT = 100%, PTT = 32sec, Fibrinogen = 1.92g/l, D-Dimer = 0.66ng/ml, C protein = 72%, S protein = 70%, antithrombin III = 81%)."
+    },
+    {
+      "candidate": "Systemic Autoimmune Vasculitis or Antiphospholipid Syndrome",
+      "rule_out_reason": "High inflammatory markers with digital necrosis and weakly positive speckled ANA raised concern for systemic lupus, ANCA-associated vasculitis, or antiphospholipid syndrome; however, specific antibodies (anti-dsDNA, anti-Sm, anti-Ro/La, anti-RNP, p-ANCA, c-ANCA, anti-cardiolipin, anti-beta-2-glycoprotein 1, lupus anticoagulant) and cryoglobulins were negative.",
+      "quote": "Anti-ds DNA antibodies, anti-Sm antibodies, anti-Ro/La antibodies, anti-RNP antibodies, anti-P-ANCA/C-ANCA antibodies, anti-cardiolipin and anti-beta-2 glycoprotein 1 antibodies were negative. No lupus anticoagulant was found."
+    },
+    {
+      "candidate": "Cryoglobulinemia",
+      "rule_out_reason": "Acral purpura, gangrene, and cold-sensitive cyanosis are classic for mixed or monoclonal cryoglobulinemia; however, serum testing for cryoglobulins was negative.",
+      "quote": "Also, cryoglobulinemia blood essay was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Following targeted antiscabetic therapy, the cutaneous lesions completely healed within two weeks with concurrent resolution of inflammatory biomarkers (CRP dropping to 17.1 mg/L), confirming that the reactive microvascular ischemia was secondary to scabies.",
+      "quote": "Meanwhile, scabies lesions have healed by the second week and CRP decreased to 17.1mg/l. After what, the boy was discharged home."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to hospital evaluation of acral ischemia with normal CT-angiography, capillaroscopy, and baseline inflammatory labs. Comprehensive autoantibody/thrombophilia panel results and clinical recovery excluded from prompt."
+}

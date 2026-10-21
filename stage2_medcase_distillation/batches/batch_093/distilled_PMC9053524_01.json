@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9053524_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 29-year-old woman originating from an endemic region presents with acute, intractable unilateral headaches, nausea, and vomiting secondary to sudden triventricular hydrocephalus. The diagnostic tension is differentiating primary non-communicating hydrocephalus due to an intraventricular neoplasm (e.g., ependymoma, colloid cyst) from an obstructive intraventricular larval parasitic cyst (vesicular stage cysticercoma) with remote calcified parenchymal disease.\n2. Admission Breakpoint: The breakpoint occurs following emergency neuroimaging (unenhanced brain CT and contrast-enhanced brain MRI), immediately prior to neuroendoscopic surgical fenestration (ventriculostomy and septostomy) and CSF/serum ELISA serologies.\n3. Differential Distinctions: Intraventricular neoplasms typically show intense contrast enhancement, fixed parenchymal adhesion, and lack diffusion-restricting scoleces. Third ventricular colloid cysts typically sit at the foramen of Monro with hyperdense CT appearance. In contrast, intraventricular neurocysticercosis is characteristically isointense to CSF, non-enhancing, mobile (free-floating on positional changes), and contains a diffusion-restricting mural nodule representing the scolex, often accompanied by remote parenchymal brain calcifications.",
+  "case_prompt": "A 29-year-old Nepalese woman living in Western Europe presents to the emergency department with worsening unilateral headaches of 10 days' duration, accompanied by nausea and vomiting, refractory to simple analgesics.\nOn physical examination, the neurological examination is unremarkable, with no focal neurological deficits and no evidence of papilledema on funduscopy.\nUnenhanced computed tomography (CT) of the brain reveals dilatation of the supratentorial ventricles with signs of transependymal edema and a discrete parenchymal calcification in the left occipital region.\nBrain magnetic resonance imaging (MRI) confirms acute triventricular hydrocephalus with aqueductal stenosis due to an intraluminal web, along with a lobulated cystic lesion in the occipital horn of the right lateral ventricle containing a small solid eccentric nodule demonstrating restricted diffusion, without abnormal gadolinium enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intraventricular neoplasm (e.g., ependymoma, central neurocytoma)",
+      "rule_out_reason": "Primary intraventricular neoplasms usually exhibit solid tissue architecture, vascularity, and prominent gadolinium enhancement on MRI; this lesion was completely non-enhancing, isointense to CSF, and contained an eccentric non-vascular nodule.",
+      "quote": "There was no evidence of Gadolinium enhancement."
+    },
+    {
+      "candidate": "Colloid cyst or non-parasitic ependymal cyst",
+      "rule_out_reason": "Colloid cysts characteristically obstruct the foramen of Monro in the anterior third ventricle rather than the occipital horn of the lateral ventricle, and simple ependymal cysts do not contain diffusion-restricting internal scoleces or coexist with remote cerebral calcifications.",
+      "quote": "A lobulated cystic lesion was seen in the occipital horn of the right lateral ventricle containing a small solid eccentric nodule with diffusion restriction (Figure 2a-c)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neuroimaging identification of a non-enhancing intraventricular cystic mass with an eccentric diffusion-restricting scolex that proved free-floating following endoscopic ventriculostomy, corroborated by positive ELISA detection of Taenia solium antigen and antibodies in both serum and cerebrospinal fluid.",
+      "quote": "Meanwhile the diagnosis of NC was confirmed by serological tests detecting Taenia solium antigen and antibodies (ELISA) in the CSF and serum."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Exceptional CPC illustration of intraventricular neurocysticercosis causing acute obstructive hydrocephalus. Admission prompt strictly excludes parasite genus/species, endoscopic interventions, and serological ELISA results."
+}

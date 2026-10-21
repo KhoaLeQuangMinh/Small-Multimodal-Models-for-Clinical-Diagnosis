@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10629335_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 17-year-old male presents with 1 month of progressive headaches, visual field impairment with right temporal hemianopia, decreased visual acuity, and low-grade fever. Brain MRI reveals a sellar-suprasellar mass with heterogeneous gadolinium enhancement and satellite lesions in the posterior fossa and hypothalamus. The primary diagnostic tension lies in distinguishing this sellar mass from typical pediatric/adolescent pituitary tumors (such as non-functioning pituitary macroadenoma or craniopharyngioma) and granulomatous CNS infections without prematurely unmasking cerebrospinal fluid analysis.\n2. Admission Breakpoint: Day 1 admission triage concludes after physical and neurological examination (right temporal hemianopia, visual acuity decline), baseline chest radiograph (normal), pituitary hormonal panel (normal), HIV serology (negative), and brain MRI. Confirmatory testing begins with lumbar puncture and CSF analysis (pleocytosis, high protein, low glucose, and M. tuberculosis PCR) and immunodiagnostic testing (Mantoux test, IGRA).\n3. Differential Distinctions: Pituitary macroadenoma / Craniopharyngioma causes identical chiasmatic compressive symptoms but presents without satellite lesions in the posterior fossa/hypothalamus or CSF lymphocytic pleocytosis/hypoglycorrhachia, and pituitary hormonal axes were preserved. Neurosarcoidosis or fungal granuloma is excluded by positive CSF PCR for Mycobacterium tuberculosis and positive IGRA and Mantoux tests.",
+  "case_prompt": "A 17-year-old male with no significant prior medical history presents with a 1-month history of progressive headaches, decreased visual acuity, and visual field disturbance.\n\nOn physical examination, he is alert and oriented, but mildly feverish. Blood pressure is 120/76 mm Hg, and pulse rate is 78 beats/min. Pulmonary examination reveals clear breath sounds bilaterally, and chest radiography is normal. Neuro-ophthalmologic examination confirms decreased visual acuity and a visual field defect consistent with right temporal hemianopia. Endocrine laboratory evaluation shows normal baseline pituitary hormone levels. Serologic testing for human immunodeficiency virus (HIV) is negative.\n\nMagnetic resonance imaging (MRI) of the brain reveals a sellar-suprasellar lesion that is isointense to hypointense on T1-weighted images, isointense to hyperintense on T2-weighted images, and exhibits heterogeneous contrast enhancement following gadolinium administration, with additional small satellite lesions observed in the posterior cerebral fossa and hypothalamus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pituitary macroadenoma / Craniopharyngioma",
+      "rule_out_reason": "The most common consideration for a sellar-suprasellar mass causing chiasmatic compression with temporal hemianopia in an adolescent, but argued against by normal endocrine hormonal panels, low-grade fevers, and the presence of satellite lesions in the posterior fossa and hypothalamus.",
+      "quote": "Evaluation of pituitary function, on the other hand, revealed normal hormonal levels."
+    },
+    {
+      "candidate": "Neurosarcoidosis / CNS fungal granuloma",
+      "rule_out_reason": "Considered due to the basilar and hypothalamic-sellar granulomatous distribution in a young immunocompetent patient, but serological screens and HIV testing were negative, while specific mycobacterial assays were positive.",
+      "quote": "All other serological tests, including the HIV test, yielded negative results."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Central Nervous System Tuberculosis (Sellar-Suprasellar Tuberculoma and Tuberculous Meningitis)",
+      "rule_out_reason": "Established by lumbar puncture revealing lymphocytic pleocytosis, hypoglycorrhachia, and elevated protein, with positive CSF PCR for Mycobacterium tuberculosis, and confirmed by positive Mantoux and Interferon-Gamma Release Assays.",
+      "quote": "On investigation, cerebrospinal fluid (CSF) fluid analysis revealed lymphocytic pleocytosis, low glucose, and a high protein level. Polymerase chain reaction (PCR) for M. tuberculosis was positive in the CSF, and the results of the Interferon-Gamma Release Assays and Mantoux test were positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly halts before lumbar puncture and immune assays. Zero leak of tuberculosis, PCR, or anti-tubercular therapy in prompt. Quotes match text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3469179_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 40-year-old splenectomized patient presented with recurrent hemolytic anemia, jaundice, high fever, coagulopathy, and thrombocytopenia. Because the spleen had previously been removed for hemolytic anemia, clinicians were primed to suspect relapsed autoimmune hemolysis, visceral leishmaniasis, or overwhelming post-splenectomy bacterial sepsis, especially after early admission blood films were reported negative for parasites.\n2. Admission Breakpoint: The presentation concludes following admission vitals, exam, baseline labs (CBC, coagulation markers, bilirubin, Coombs testing, CSF exam), baseline infectious serologies/cultures (HIV, hepatitis serologies, bacterial cultures, visceral leishmaniasis DAT), and imaging (chest X-ray, abdominal CT). It stops prior to the two-week empirical antibiotic trial, subsequent reference parasitology smears, and PCR sequencing.\n3. Differential Distinctions: Overwhelming bacterial infection was considered due to post-splenectomy vulnerability and fever, but refuted by sterile blood/urine cultures and failure of broad-spectrum antibiotics. Recurrent autoimmune hemolytic anemia was ruled out by negative direct and indirect antiglobulin (Coombs) tests. Visceral leishmaniasis was excluded by negative direct agglutination testing. Blood smear re-examination by reference microscopists demonstrated asexual forms of Plasmodium vivax.",
+  "case_prompt": "A 40-year-old man from Sistan-Baluchistan Province presented to a tertiary hospital with fever, jaundice, progressive weakness, fatigue, and malaise. Four months earlier, he had undergone an elective splenectomy for severe hemolytic anemia, which had led to transient symptom resolution until the current acute deterioration. He had no other known chronic medical disorders.\n\nOn physical examination, the patient was febrile and ill-appearing, with a body temperature of 39.0°C, blood pressure of 100/60 mmHg, pulse rate of 100 beats per minute, and respiratory rate of 20 breaths per minute. He exhibited marked pallor and scleral icterus. Abdominal palpation demonstrated a well-healed surgical scar, absence of the spleen, and palpable hepatomegaly without tenderness or ascites. Peripheral lymphadenopathy was absent. Cardiopulmonary and neurological examinations were otherwise normal.\n\nTriage laboratory evaluation showed a hemoglobin of 8.0 g/dL, platelet count of 43,000/µL, erythrocyte sedimentation rate (ESR) of 35 mm/hr, and total serum bilirubin of 3.7 mg/dL. Coagulation profile demonstrated a prothrombin time (PT) of 16 seconds (control 12 seconds) and partial thromboplastin time (PTT) of 42 seconds (reference 24–36 seconds). Serum liver enzymes were elevated above the normal reference range. Direct and indirect antiglobulin tests (Coombs tests) were negative. C-reactive protein (CRP), rheumatoid factor, and VDRL were non-reactive, and a tuberculin purified protein derivative (PPD) skin test was negative. Serological assays for HIV, hepatitis B surface antigen, and hepatitis C antibodies were all negative. A direct agglutination test (DAT) for visceral leishmaniasis was negative. Blood and urine cultures for bacteria showed no growth. Lumbar puncture revealed normal cerebrospinal fluid indices. Chest radiography was unremarkable, and abdominal computed tomography confirmed isolated hepatomegaly without intra-abdominal lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Overwhelming Post-Splenectomy Bacterial Sepsis",
+      "rule_out_reason": "Considered the primary concern given fever, tachycardia, thrombocytopenia, and anatomic asplenia; ruled out by repeatedly sterile blood and urine cultures and total lack of response to two weeks of broad-spectrum empirical antibiotics (ceftriaxone, vancomycin, imipenem).",
+      "quote": "In addition, direct agglutination test (DAT) for detection of visceral leishmaniasis (kala-azar), blood and urine culture for bacterial growth were negative... From the first day of admission, suspicion of bacterial infection lead to treatment with antibiotics such as; ceftriaxone, vancomycin and imipenem in the recommended doses for two weeks"
+    },
+    {
+      "candidate": "Recurrent Autoimmune Hemolytic Anemia",
+      "rule_out_reason": "Considered given the prior history of splenectomy performed specifically for hemolytic anemia; ruled out by negative direct and indirect antiglobulin (Coombs) tests.",
+      "quote": "The direct /indirect antiglobulin tests (DAGT/IAGT) were negative but the liver function tests were more than normal limits."
+    },
+    {
+      "candidate": "Visceral Leishmaniasis (Kala-Azar)",
+      "rule_out_reason": "Considered due to residence in an endemic Iranian province, hepatomegaly, fever, anemia, and thrombocytopenia; ruled out by a negative direct agglutination test and absence of lymphadenopathy.",
+      "quote": "In addition, direct agglutination test (DAT) for detection of visceral leishmaniasis (kala-azar), blood and urine culture for bacterial growth were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Although initial day-3 blood smears were reported negative, expert re-examination of peripheral blood films at a specialized academic parasitology department on day 17 identified asexual forms of Plasmodium vivax, which was confirmed by semi-nested multiplex PCR and ssrRNA gene sequencing.",
+      "quote": "On day 17 the patient's peripheral blood smear (PBS) was sent to the Department of Medical Parasitology and Mycology, at the School of Medicine, Kerman University of Medical Sciences. Examination of blood films showed asexual forms of P. vivax, however neither sexual forms nor P. falciparum stages were observed."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt stops at initial hospital workup. Zero parasite names or blood smear results in case prompt."
+}

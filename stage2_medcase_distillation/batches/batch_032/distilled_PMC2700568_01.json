@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2700568_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 54-year-old man presenting with acute peritonitis (severe rebound tenderness, leukocytosis 23,000/\u00b5L) two days after blunt abdominal trauma was found on ultrasound to have multiple intrahepatic cysts and free peritoneal fluid, but also a newly described extrahepatic cyst. The presentation closely mimicked acute visceral laceration, hollow viscus perforation, traumatic intraperitoneal cyst rupture with anaphylaxis, or acute cholecystitis with bile peritonitis.\n2. Admission Breakpoint: The admission clinical triage ends following initial emergency evaluation, vital signs, physical examination (acute peritonitis), plain chest and abdominal radiographs, admission abdominal ultrasonography (revealing 3 intrahepatic and 1 extrahepatic 10-cm cysts with free fluid), and triage blood tests (marked leukocytosis 23,000/\u00b5L, eosinophilia). Emergency surgical exploration and operative findings occur post-breakpoint.\n3. Differential Distinctions: Traumatic solid visceral rupture or hollow viscus perforation causes hemoperitoneum or pneumoperitoneum on imaging. Traumatic rupture of an intrahepatic hydatid cyst typically results in catastrophic spillage of cystic fluid, daughter cysts, and severe anaphylaxis. Spontaneous extrusion ('fallen cyst') is an exceedingly rare phenomenon where blunt trauma causes total enucleation of an intact 10-cm cyst from the liver into the peritoneal cavity without membrane rupture, resulting in isolated biliary peritonitis from the denuded hepatic cyst bed.",
+  "case_prompt": "A 54-year-old man presented to the emergency unit with severe, progressively worsening abdominal pain two days after sustaining blunt abdominal trauma from a fall onto his abdomen at home. The patient had a known history of multiple hepatic cystic lesions diagnosed one month earlier, for which he was receiving medical therapy. He had never experienced abdominal pain prior to this domestic accident; the pain began several hours following the fall and increased relentlessly in intensity over the subsequent 48 hours. On physical examination, he was in acute distress. Vital signs showed an arterial blood pressure of 140/90 mmHg, heart rate of 96 beats per minute, and an axillary body temperature of 37.5\u00b0C. Abdominal examination revealed diffuse severe tenderness across all quadrants with marked epigastric predominance and positive rebound tenderness throughout the abdomen. Erect chest and acute abdominal radiograph series were unremarkable, showing no subdiaphragmatic free air or bowel obstruction. Urgent abdominal ultrasonography demonstrated three large intrahepatic cystic lesions and one extrahepatic cystic mass, each measuring approximately 10 cm in diameter; the intrahepatic cysts were located in hepatic segments II, V, and VII, whereas the extrahepatic cyst was situated in the left upper quadrant. A considerable volume of free peritoneal fluid was also visualized. Laboratory testing revealed marked leukocytosis with a white blood cell count of 23,000/mm\u00b3 and an absolute eosinophil count of 0.43 x 10\u00b3/\u00b5L. In view of the clinical and imaging evidence of peritonitis and an acute abdomen, the patient was immediately prepared for emergency surgical intervention.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hollow Viscus Perforation / Traumatic Solid Organ Laceration",
+      "rule_out_reason": "Considered because the patient presented with acute diffuse rebound peritonitis and free intraperitoneal fluid following blunt abdominal trauma. Ruled out by normal acute abdominal X-ray series showing no free subdiaphragmatic air, and ultrasound/surgical exploration demonstrating intact cystic masses and bile peritonitis without bowel or parenchymal rupture.",
+      "quote": "Chest X-ray and acute abdominal X-ray series were normal."
+    },
+    {
+      "candidate": "Intraperitoneal Cyst Rupture with Anaphylactic Peritonitis",
+      "rule_out_reason": "Considered due to the presence of multiple large hepatic cysts, blunt abdominal trauma, high leukocytosis (23,000/mm\u00b3), eosinophilia, and free fluid. Ruled out upon surgical exploration, which revealed that the extruded 10-cm hydatid cyst remained completely intact with an intact germinative membrane, without spillage of anaphylactogenic hydatid fluid.",
+      "quote": "Further exploration was interesting as we found an unruptured hydatid cyst of 10 cm in diameter with an intact germinative membrane, which was enucleated spontaneously out from the fifth hepatic segment."
+    },
+    {
+      "candidate": "Acute Cholecystitis / Traumatic Gallbladder Perforation",
+      "rule_out_reason": "Considered due to severe right upper quadrant/epigastric peritonitis and extensive intra-abdominal bile leakage following trauma. Ruled out when laparotomy demonstrated bile leaking directly from the denuded parenchymal wall of the empty fifth hepatic segment cystic bed rather than primary gallbladder perforation.",
+      "quote": "Bile leakage from the wall of this cavity was clearly seen [Figure 2]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred during emergency laparotomy, which revealed biliary peritonitis caused by the spontaneous traumatic extrusion ('fallen cyst') of an unruptured 10-cm hydatid cyst with an intact germinative membrane completely out of its hepatic bed in segment V into the peritoneal cavity, with active bile leakage from the denuded liver cavity wall.",
+      "quote": "Abdominal exploration revealed considerable amount of serous free fluid with bile leakage in the abdomen."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to admission breakpoint principles. The case prompt ends at surgical consultation, and neutral clinical descriptions were substituted for spoiler terms (hydatid, albendazole) in the medical history. Direct quotes substantiate candidate rule-outs."
+}

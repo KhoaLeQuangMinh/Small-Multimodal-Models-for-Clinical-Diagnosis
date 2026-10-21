@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11774432_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 31-year-old diabetic male presents with subacute continuous high-grade fever, cough, jaundice, and altered consciousness, with prior outside abdominal CT interpreted as 'multiple splenic infarcts'. The core diagnostic tension is unraveling whether the multifocal splenic/hepatic lesions represent embolic infarcts from subacute infective endocarditis, severe cerebral malaria, or a disseminated tropical bacterial infection characterized by microabscesses in an uncontrolled diabetic host.\n2. Admission Breakpoint: Emergency department triage stabilization concludes after initial vital signs, bedside physical exam, point-of-care cardiac ultrasound, arterial blood gas, and basic metabolic panels are completed, immediately prior to formal contrast CT of the chest/abdomen and blood culture isolation.\n3. Differential Distinctions: Infective endocarditis classically produces embolic splenic infarcts, persistent bacteremia, and fever, but bedside echocardiography revealed no valvular vegetations. Severe malaria presents with fever, jaundice, splenomegaly, and altered sensorium in endemic regions, but was ruled out by diagnostic workup and characteristic multiorgan abscess formation. Disseminated melioidosis presents typically in poorly controlled diabetics with pneumonia, bacteremia, and characteristic multiorgan microabscesses in the spleen and liver ('Swiss-cheese' spleen).",
+  "case_prompt": "A 31-year-old man presented to the emergency department with a 10-day history of continuous high-grade fever accompanied by chills and rigors, 5 days of progressive jaundice, and 3 days of worsening altered sensorium manifested by diminished responsiveness and incoherent speech. He also reported an insidious cough producing whitish, non-blood-stained mucoid sputum. He had a recent diagnosis of diabetes mellitus but had not been taking his prescribed medications. He had been hospitalized at another healthcare facility for the preceding week, where initial diagnostic testing for multiple endemic tropical pathogens was unrevealing. An abdominal computed tomography scan performed at that facility had reported multiple splenic infarcts, and he was transferred for further evaluation of acute undifferentiated febrile illness.\n\nOn physical examination in the emergency department, his respiratory rate was 28 breaths per minute, oxygen saturation 86% on ambient air (improving to 98% with 4 L/min oxygen via nasal prongs), pulse rate 138 beats per minute, and blood pressure 110/70 mmHg. He was visibly dehydrated, markedly icteric, and had tender splenomegaly on abdominal palpation. Neurological evaluation revealed disorientation and mild nuchal rigidity without focal motor or sensory deficits.\n\nInitial laboratory workup demonstrated a random blood glucose of 385 mg/dL with negative urine ketones. Arterial blood gas analysis revealed metabolic acidosis with compensated respiratory alkalosis and type 1 respiratory failure (PaO2/FiO2 ratio 217). Basic blood tests showed a total leukocyte count of 4,290/µL, hyperkalemia, acute renal impairment, elevated serum lipase, and marked elevations in liver enzymes and total bilirubin. A bedside cardiac point-of-care ultrasound was performed and revealed no valvular vegetations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Infective endocarditis",
+      "rule_out_reason": "Considered prominently because of prolonged continuous fevers, altered mental status, and outside imaging showing splenic hypodensities concerning for septic embolic infarcts; however, bedside echocardiography demonstrated normal valvular anatomy without vegetations.",
+      "quote": "Blood cultures were taken while considering infective endocarditis or malaria as potential diagnoses. The patient was started on broad-spectrum antibiotics and antimalarials. A cardiac point-of-care ultrasound did not show any vegetation."
+    },
+    {
+      "candidate": "Severe malaria and acute tropical viral/bacterial infections",
+      "rule_out_reason": "Considered due to the combination of high-grade fever, chills, rigors, progressive jaundice, splenomegaly, and altered sensorium in a tropical setting; however, empiric antimalarials produced no clinical improvement, outside evaluations were negative, and cross-sectional imaging showed microabscesses.",
+      "quote": "He had been hospitalized at another facility for a week, where tests for dengue, leptospirosis, scrub typhus, and typhoid were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast-enhanced cross-sectional imaging established the presence of multiple nonenhancing abscesses throughout the liver and spleen rather than bland infarcts, alongside pulmonary consolidation, with definitive identification of Burkholderia pseudomallei in blood cultures.",
+      "quote": "The scan revealed an enlarged spleen and multiple hypodense nonenhancing lesions in the liver and spleen, consistent with abscesses [Figures 1 and 2]. It also identified consolidation in the left posterior basal lung segment and small benign nodules in both lungs [Figure 3]. A separate brain CT scan showed no abnormalities. Based on the findings, meropenem was initiated for suspected melioidosis, and later blood cultures confirmed the presence of Burkholderia pseudomallei [Table 1]."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to contrast CT thorax/abdomen/pelvis and blood culture pathogen confirmation. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9664932_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 44-year-old male with an established autoimmune disorder (antisynthetase syndrome on chronic cyclosporine A) residing in Shanxi Province presents with recurring fever, progressive motor weakness, pancytopenia, and hyperferritinemia meeting diagnostic criteria for hemophagocytic lymphohistiocytosis (HLH). Because of his underlying autoimmune disease, the HLH was initially treated as rheumatologic/primary HLH with high-dose steroids and etoposide, but rapidly relapsed upon steroid taper, obscuring an underlying protozoal infection.\n2. Admission Breakpoint: Re-admission presentation in June 2020 with high fever (39.5°C), severe lower extremity weakness (inability to stand), pancytopenia, hyperferritinemia, and splenomegaly during prednisone tapering, prior to repeat bone marrow aspirate demonstrating Leishman-Donovan bodies and parasite-specific PCR.\n3. Differential Distinctions: Autoimmune / rheumatologic HLH (Macrophage Activation Syndrome): Primary initial suspicion due to a 5-year history of antisynthetase syndrome, but relapse upon corticosteroid weaning prompted geographic review and bone marrow cytology identifying protozoal amastigotes. Viral-induced HLH (EBV/CMV/HIV): Excluded by negative viral PCRs and HIV serology. Hematologic malignancy-associated HLH: Excluded by absence of neoplastic lymphoproliferation on bone marrow evaluation.",
+  "case_prompt": "A 44-year-old male residing in Shanxi Province, China, with a five-year history of antisynthetase antibody syndrome managed with cyclosporine A, presents for acute evaluation due to relapse of high fevers and profound functional decline. Several months earlier, he had experienced persistent fevers unresponsive to broad-spectrum antimicrobials, accompanied by cytopenias (WBC 1.3 × 10^9/L, hemoglobin 96 g/L, platelets 113 × 10^9/L), hypofibrinogenemia (1.36 g/L), serum ferritin exceeding 1,500 μg/L, elevated soluble CD25 (12,947 pg/mL), and reduced NK-cell activity (14.96%), for which he had been treated with methylprednisolone and etoposide with transient defervescence. As his oral prednisone dose is being tapered, he develops a sudden high fever peaking at 39.5°C without chills. He is now severely debilitated and unable to stand up independently. On physical examination, he appears acutely ill and febrile; abdominal examination reveals palpable splenomegaly. Laboratory evaluation demonstrates severe pancytopenia, profound hyperferritinemia (>1,500 μg/L), hypofibrinogenemia, low natural killer cell activity, and markedly elevated soluble interleukin-2 receptor (sCD25). Serum hepatic transaminases and creatine kinase levels are normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Rheumatologic HLH / Macrophage Activation Syndrome",
+      "rule_out_reason": "Given the patient's underlying antisynthetase syndrome on immunosuppressive therapy, an autoimmune flare driving secondary HLH was the primary suspicion and initially treated with chemo-immunotherapy; however, rapid relapse during steroid taper indicated an unresolved underlying infectious trigger.",
+      "quote": "Except for primary HLH, malignancy HLH, rheumatological HLH and other types of infection all induced HLH. Eventually, the diagnosis of Leishmaniasis-related HLH was made."
+    },
+    {
+      "candidate": "Viral-Induced Hemophagocytic Lymphohistiocytosis (EBV / CMV / HIV)",
+      "rule_out_reason": "Common viral triggers of HLH in immunosuppressed patients were considered, but molecular viral loads and serologies returned negative.",
+      "quote": "EBVDNA, CMVDNA, HIV serology and blood cultures were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recognition of the patient's residence in an endemic area of Shanxi Province led to bone marrow aspiration showing Leishman-Donovan bodies and positive Leishmania infantum DNA, confirming visceral leishmaniasis as the underlying etiology.",
+      "quote": "When analyzing the cause of HLH, we found out that he came from the endemic area. Bone marrow aspirate showed Leishman-Donovan bodies (Figure 2), and Leishmania infantum Noicolle DNA was detected in bone marrow."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC9664932. Presentation captures the diagnostic tension between autoimmune macrophage activation syndrome and infectious HLH without revealing bone marrow amastigotes or PCR results."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4085823_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A young adult in Brazil presents with a 20-day history of fever, myalgias, transaminitis, and severe oliguric acute kidney injury requiring hemodialysis, with massive creatine phosphokinase elevation (4,063 IU/L) indicating rhabdomyolysis. The absence of thrombocytopenia, hemorrhagic manifestations, or plasma leakage masks an underlying arboviral etiology.\n2. Admission Breakpoint: History, vital signs, physical exam, baseline hematology, profound azotemia, transaminases, urinalysis, serum CPK and metabolic profile, autoimmune serologies, and renal ultrasound, stopping prior to infectious serological panels (leptospirosis, viral hepatitis, dengue IgM) and percutaneous renal biopsy.\n3. Differential Distinctions: Leptospirosis was the leading differential due to concurrent renal failure, marked myalgia, and transaminitis in Brazil, but serologies were negative. Autoimmune glomerulonephritis/vasculitis was ruled out by normal complement levels and negative ANA/ANCA. Positive dengue IgM serology and biopsy showing acute tubular necrosis with intratubular myoglobin deposition confirmed acute kidney injury due to dengue-induced rhabdomyolysis.",
+  "case_prompt": "A 28-year-old male painter from São Paulo, Brazil, with no significant past medical history, presented with a 20-day history of fever, myalgia, muscle weakness, cough, nausea, vomiting, diarrhea, epigastric pain, and lower limb edema. He had no history of nephrotoxic drug ingestion or specific animal exposures.\n\nUpon hospital admission following initial medical evaluation, he was pale and oliguric (urine output 150 mL/24 h). Blood pressure was 140/90 mmHg. He demonstrated no petechiae, ecchymoses, or other signs of systemic bleeding. Physical examination was otherwise unremarkable.\n\nInitial laboratory testing revealed severe acute kidney injury: serum creatinine 14.8 mg/dL, blood urea 323 mg/dL, sodium 124 mEq/L, potassium 6.6 mEq/L, and bicarbonate 15.6 mEq/L. Complete blood count showed hemoglobin 11.8 g/dL, leukocytes 9,400/mm^3, and platelets 469,000/mm^3. Liver enzyme testing showed SGOT (AST) 1,206 IU/L and SGPT (ALT) 853 IU/L. Serum creatine phosphokinase (CPK) was markedly elevated at 4,063 IU/L, lactic dehydrogenase 657 IU/L, uric acid 13.4 mg/dL, phosphorus 9.2 mg/dL, and C-reactive protein 2.5 mg/dL. Urinalysis revealed protein > 1 g/L, red blood cells > 100/high-power field, and leukocytes 20/high-power field without casts; 24-hour proteinuria was 0.83 g.\n\nAntinuclear factor, antineutrophil cytoplasmic antibodies (ANCA), rheumatoid factor, anticardiolipin antibodies, and complement C3 and C4 fractions were all normal. Renal ultrasonography demonstrated kidneys of normal size and echogenicity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis (Weil disease)",
+      "rule_out_reason": "Considered the primary suspect due to severe acute kidney injury, profound myalgia, and elevated transaminases in Brazil, but ruled out by negative serological testing.",
+      "quote": "Serology for HIV, leptospirosis, hepatitis C, hepatitis B and syphilis were negative."
+    },
+    {
+      "candidate": "Systemic vasculitis / Autoimmune glomerulonephritis",
+      "rule_out_reason": "Considered because of oliguric renal failure, proteinuria, and active urinary sediment, but excluded by normal complement levels and negative autoantibodies.",
+      "quote": "Anti-nuclear factor, antineutrophil cytoplasmic antibodies, C3 and C4 complement fractions, rheumatoid factor and anticardiolipin antibody levels were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A positive dengue virus IgM ELISA confirmed acute infection, and percutaneous renal biopsy confirmed acute tubular necrosis with intratubular myoglobin deposition secondary to rhabdomyolysis.",
+      "quote": "Five days after admission, a positive test for dengue was obtained (IgM, ELISA assay)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

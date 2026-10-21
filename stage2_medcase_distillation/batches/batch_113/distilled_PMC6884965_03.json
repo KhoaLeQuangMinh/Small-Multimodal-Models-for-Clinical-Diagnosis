@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6884965_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The appearance of a new solitary pulmonary nodule in an entirely asymptomatic adolescent whose initial pulmonary disease has resolved on therapy raises clinical suspicion for solitary pulmonary malignancy, secondary fungal granuloma, or a localized paradoxical reaction.\n2. Admission Breakpoint: The breakpoint occurs following surveillance chest CT identifying the new nodule and baseline screening labs (ESR, CRP, LFTs), prior to send-out tumor markers, fungal serologies, immune release assays, and percutaneous lung biopsy.\n3. Differential Distinctions: Solitary nodule malignancy (e.g., carcinoid or lymphoma) is excluded by normal tumor markers and benign granulomatous histology on biopsy; invasive fungal granuloma is excluded by negative galactomannan and beta-D-glucan assays; treatment failure is ruled out by the absence of systemic symptoms and regression under continued original therapy.",
+  "case_prompt": "A 17-year-old female presents for scheduled pulmonary follow-up. Six months earlier, during a routine physical examination at a local hospital, asymptomatic pulmonary infiltrates were discovered, and she was started on a standard four-drug oral antimicrobial regimen. She has taken the medications compliantly. On clinical review, she remains completely asymptomatic, denying fever, cough, chest pain, dyspnea, or weight loss.\nOn physical examination, the patient appears well and in no acute distress. Vital signs are normal. Pulmonary auscultation reveals clear, vesicular breath sounds bilaterally without wheezing or crackles. The remainder of the physical examination is unremarkable.\nSurveillance computed tomography of the chest reveals that her initial pulmonary parenchymal lesions have been gradually and completely absorbed; however, a new 1.4 cm x 0.8 cm solitary nodule has appeared in the left superior pulmonary lobe. Baseline laboratory tests, including erythrocyte sedimentation rate, C-reactive protein, and hepatic function panel, are normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Pulmonary Neoplasm / Solitary Nodule Malignancy",
+      "rule_out_reason": "Serum tumor markers were normal and histopathologic examination of the biopsied nodule demonstrated granulomatous inflammation without malignancy.",
+      "quote": "Laboratory results of ESR, CRP, liver function, tumor markers, GM-test, G-test and autoantibodies related to connective tissue disease were normal."
+    },
+    {
+      "candidate": "Invasive Pulmonary Fungal Infection",
+      "rule_out_reason": "Fungal antigen assays, including galactomannan (GM-test) and (1,3)-beta-D-glucan (G-test), were negative.",
+      "quote": "Laboratory results of ESR, CRP, liver function, tumor markers, GM-test, G-test and autoantibodies related to connective tissue disease were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive cell-mediated immune assays and CT-guided lung core biopsy demonstrating a tuberculous granuloma confirmed a paradoxical reaction, which regressed under continued anti-tuberculosis therapy.",
+      "quote": "CT-guided percutaneous lung biopsy showed tuberculous granuloma. The patient was diagnosed as PR and was continued on the original anti-tuberculosis therapy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC6884965_03. Zero spoilers in case prompt; paradoxical reaction and granuloma confirmed in diagnostic reasoning."
+}

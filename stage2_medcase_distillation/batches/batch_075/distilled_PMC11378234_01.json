@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 17-year-old male recipient of an allogeneic matched-sibling stem cell transplant for myelodysplastic syndrome presents on post-transplant day +317 with acute fever, body ache, hemoconcentration (hematocrit 48%), and thrombocytopenia (platelet 90 × 10^9/L). In an immunosuppressed transplant patient residing in an endemic region, acute fever and cytopenia create an urgent tension between life-threatening neutropenic/transplant bacterial sepsis, opportunistic viral/fungal infection, disease relapse/graft failure, and acute arboviral illness.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following admission triage, physical examination, and initial CBC, prior to blood culture results and dengue NS1 antigen testing.\n3. Differential Distinctions: Bacterial sepsis / bloodstream infection is ruled out by negative blood cultures and spontaneous resolution without targeted antimicrobials. Disease relapse or graft failure is ruled out by preserved donor chimerism (>90% at day +180) and transient self-resolving thrombocytopenia following conservative hydration.",
+  "case_prompt": "A 17-year-old male recipient of a matched-sibling donor hematopoietic stem cell transplant for myelodysplastic syndrome, maintained on an immunosuppressive agent, presents on day +317 post-transplant with acute onset of fever and body ache. Donor chimerism assessed at day +180 was >90%.\n\nPhysical examination reveals harsh vesicular breath sounds on lung auscultation.\n\nInitial complete blood count demonstrates hemoglobin 16.5 g/dL, hematocrit 48%, and a platelet count of 90 × 10^9/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Bloodstream Infection / Sepsis",
+      "rule_out_reason": "Acute febrile illness accompanied by body ache and harsh breath sounds in an immunosuppressed stem cell transplant recipient necessitates ruling out bacterial bacteremia; however, blood cultures were negative and the patient recovered completely with supportive hydration and antipyretics alone.",
+      "quote": "Blood cultures were negative. He was managed conservatively for 1 week as inpatient with intravenous hydration, analgesics, and antipyretics."
+    },
+    {
+      "candidate": "Transplant Graft Rejection or Disease Relapse",
+      "rule_out_reason": "The development of acute thrombocytopenia post-transplant raises concern for marrow graft failure or relapse of myelodysplastic syndrome; however, the patient maintained >90% donor chimerism, and the thrombocytopenia resolved spontaneously following a transient nadir.",
+      "quote": "Donor chimerism at day +180 was >90%... Platelet count dropped to 24 x 109/L followed by recovery without need for transfusion."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was established by the rapid detection of viral NS1 antigen in the setting of acute fever, body ache, hemoconcentration (hematocrit 48%), and acute thrombocytopenia in an endemic setting.",
+      "quote": "At presentation, CBC showed Hb = 16.5 g/dL, hematocrit (HCT) = 48%, platelet = 90 x 109/L. Physical examination revealed harsh vesicular breathing. Dengue NS1 antigen was detected."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation terminates before NS1 antigen and blood culture results. Strictly zero pathogen or disease names in case_prompt. Differential evaluations are supported by direct textual quotes."
+}

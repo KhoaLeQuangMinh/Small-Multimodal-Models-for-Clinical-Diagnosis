@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11225520_02",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 54-year-old male with an indwelling ventriculoperitoneal shunt (placed in 2017) presented with acute encephalopathy (GCS 12), high fever (38.5 \u00b0C), tachycardia (124 bpm), and nuchal rigidity, accompanied by a 1-year history of headaches. The presentation strongly simulated acute pyogenic ventriculitis or shunt infection, but neuroimaging demonstrated multiple CSF-isointense cysts obstructing the bilateral foramina of Monro with acute obstructive hydrocephalus.\n2. Admission Breakpoint: Following admission physical and neurological examination and brain MRI delineating thin-walled intraventricular cysts obstructing the interventricular foramina with acute hydrocephalus, immediately prior to urgent neurosurgical transcallosal craniotomy and histopathological examination.\n3. Differential Distinctions: Pyogenic ventriculitis / infected ventriculoperitoneal shunt (suggested by high fever, tachycardia, meningismus, and prior shunt) and intraventricular neoplasms / colloid cyst (producing acute foramen of Monro obstruction). Differentiated by discrete thin-walled multilocular cysts on MRI and operative identification of vesicular cyst walls containing Taenia solium larvae.",
+  "case_prompt": "A 54-year-old male presented to the emergency department due to an acute decline in consciousness occurring 12 hours prior to admission, becoming drowsy and speaking incoherently. The preceding day, he had experienced a high fever that subsided after over-the-counter antipyretic medication. He had a 1-year history of chronic headaches that had intensified over the past week, without limb weakness, sensory complaints, nausea, vomiting, or seizures. Dietary history was notable for almost daily consumption of pork meat. His medical history was notable for hydrocephalus treated in 2017 with insertion of a ventriculoperitoneal shunt at the right Kocher point. On physical examination, he was tachycardic with a heart rate of approximately 124 beats per minute and febrile with a body temperature of around 38.5 \u00b0C. Glasgow Coma Scale score was 12 (eye 3, verbal 4, motor 5). A positive meningeal sign was elicited, with no other focal neurological abnormalities. Brain MRI revealed multiple masses concentrated around both sides of the lateral ventricles. On T2-weighted sequences, the masses were hyperintense, exhibiting the same intensity as cerebrospinal fluid, with thin-layered walls resembling cysts. The masses obstructed both sides of the interventricular foramen, resulting in marked dilation of both lateral ventricles with periventricular transependymal edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic ventriculitis / Shunt-associated bacterial meningitis",
+      "rule_out_reason": "High initial concern due to acute encephalopathy, fever of 38.5 \u00b0C, sinus tachycardia of 124 bpm, positive meningeal signs, and a prior ventriculoperitoneal shunt; however, neuroimaging showed multiple discrete thin-walled cysts rather than diffuse purulent ependymal enhancement or shunt abscess.",
+      "quote": "During the physical examination, tachycardia was observed, with a heart rate of approximately 124 beats per minute, alongside an elevated body temperature of around 38.5 C."
+    },
+    {
+      "candidate": "Colloid cyst or primary intraventricular neoplasm",
+      "rule_out_reason": "Considered due to acute biventricular hydrocephalus and obstruction of both foramina of Monro; ruled out by neuroimaging features showing multiple bilateral thin-walled cysts isointense to CSF on T2 sequences rather than a hyperdense mucinous colloid cyst or solid intraventricular mass.",
+      "quote": "On the T2 sequence, the masses exhibited a hyperintense feature, consistent with the intensity of CSF. These masses displayed a thin layered wall and characteristic features resembling a cyst. In addition, the masses were observed to obstruct both sides of the interventricular foramen, resulting in dilation of both lateral ventricles with periventricular edema suggestive of hydrocephalus."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Urgent transcallosal interhemispheric resection of the ventricular masses confirmed a thin, rubbery vesicular cyst wall containing Taenia solium larvae on histopathological examination.",
+      "quote": "Of significant note, both specimens contained larvae and some mummified dead larvae, consistent with the hallmark features of neurocysticercosis."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage boundary preserves the diagnostic suspense of obstructive hydrocephalus vs shunt infection. Verbatim quotes verified."
+}

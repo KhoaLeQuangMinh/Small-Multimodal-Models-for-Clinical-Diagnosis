@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3892021_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 64-year-old previously healthy male presenting with acute severe headache, disorientation, unsteady gait, and urinary incontinence developing over only two days, with brain CT showing marked ventriculomegaly without an intracranial mass. The core diagnostic tension is unraveling the cause of acute hydrocephalus paired with hypotonic lower extremity paresis and a repeated 'dry tap' on lumbar puncture, which masks an extensive primary intraspinal subarachnoid parasitic cyst burden blocking CSF resorption from C7 to S1.\n2. Admission Breakpoint: Admission triage ends following history, physical exam (disorientation, lower extremity hypotonic paresis Grade 4/5), triage hemogram (WBC 8,700/mm³ with 3% eosinophils, Hb 12.8 g/dL), and initial emergency non-contrast brain CT showing marked ventricular enlargement without intraparenchymal or intraventricular mass. Confirmatory testing begins with repeated lumbar punctures ('dry tap'), whole-spine MRI, and surgical resection with histopathological evaluation.\n3. Differential Distinctions: Intracranial obstructive neoplasm (such as a colloid cyst of the third ventricle or pineal region tumor) was the primary suspect for acute hydrocephalus, but was ruled out by cranial CT demonstrating patent aqueductal pathways and absence of intraventricular masses. Primary spinal cord neoplasm or meningeal carcinomatosis (e.g., ependymoma, drop metastasis) was considered given the paraparesis and spinal block, but excluded by histopathology showing chronic inflammatory fibrosis and calcification typical of cysticercosis cyst walls. Intraspinal neurocysticercosis is confirmed by spinal MRI revealing diffuse multilevel intradural cystic lesions from C7 to S1 and histopathology of resected cyst walls.",
+  "case_prompt": "A 64-year-old previously healthy man presented with a two-day history of acute, severe headache, unsteady gait, and new-onset urinary incontinence. He denied any previous history of dietary consumption of raw or undercooked pork meat. On physical examination, he was afebrile and hemodynamically stable. Neurological examination revealed that he was alert but disoriented to time and place. Funduscopic examination revealed no papilledema, and cranial nerve testing was normal. No subcutaneous nodules were detected on body inspection. Motor examination showed normal strength (5/5) in both upper extremities, but bilateral hypotonia and proximal muscle weakness (Grade 4/5 on the Medical Research Council scale) in the lower extremities. Deep tendon reflexes were depressed in the legs, and pathological reflexes were absent.\n\nInitial laboratory evaluation revealed a total leukocyte count of 8,700/mm³ with 3% eosinophils and a hemoglobin of 12.8 g/dL; other routine hematologic and biochemical values were unremarkable. Emergency non-contrast computed tomography (CT) of the head demonstrated marked dilatation of the lateral and third ventricles without intracranial mass effect, midline shift, intraparenchymal lesions, or visible intraventricular masses.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intracranial Obstructive Neoplasm / Colloid Cyst",
+      "rule_out_reason": "Acute ventriculomegaly presenting with headache, disorientation, and gait disturbance initially suggested an intracranial mass obstructing ventricular outflow; however, cranial CT definitively excluded parenchymal or intraventricular lesions.",
+      "quote": "A computed tomographic (CT) scan of the brain showed marked ventricular dilatation but no intraparenchymal lesions or intraventricular cysticercal lesions (Figure 1)."
+    },
+    {
+      "candidate": "Spinal Cord Neoplasm / Leptomeningeal Carcinomatosis",
+      "rule_out_reason": "The combination of lower-extremity hypotonic paresis, urinary incontinence, and failed lumbar puncture ('dry tap') suggested a diffuse intradural compressive tumor or meningeal carcinomatosis, but surgical biopsy revealed parasitic cyst membranes rather than neoplastic cells.",
+      "quote": "Under a diagnosis of acute hydrocephalus, lumbar tapping was attempted repeatedly, but cerebrospinal fluid (CSF) was not obtained despite adequate lumbar puncture."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal turning point occurred when thoracolumbar spine MRI revealed extensive intradural contrast-enhancing cystic lesions extending from C7 through S1, and subsequent microsurgical laminectomy with biopsy confirmed chronic inflammation, calcification, and fibrosis pathognomonic of cysticercosis cyst walls.",
+      "quote": "Magnetic resonance imaging (MRI) of the thoraco-lumbar spine revealed multiple cystic contrast-enhancing intraspinal lesions extending from C7 to S1 (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly redacted of pathogen names and parasite descriptions. Breakpoint placed before lumbar puncture and spinal MRI."
+}

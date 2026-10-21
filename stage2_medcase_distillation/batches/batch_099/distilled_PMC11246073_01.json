@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11246073_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 28-year-old migrant laborer from India presents in Poland with severe right pleuritic chest pain, dyspnea, fever, cough, hepatomegaly, and a large right pleural effusion overlying a 12 cm liver mass. Laboratory parameters show marked systemic sepsis (CRP 323 mg/L, procalcitonin 18 ng/mL, lactate 7.94 mmol/L) and coagulopathy (INR 2.38). In non-endemic European settings, this constellation strongly mimics a pyogenic bacterial liver abscess, bacterial empyema, or pulmonary tuberculosis. The diagnostic difficulty is exacerbated by the absence of active dysentery and negative routine stool antigen tests.\n2. Admission Breakpoint: The admission breakpoint is established at the time of initial emergency evaluation and admission to the infectious disease ward, including baseline laboratory evaluation and emergency bedside thoracic/abdominal ultrasonography demonstrating 1200 mL of right pleural fluid and a 12 cm hepatic mass, prior to send-out serologies, viral panels, chest CT on day 3, and pleural thoracentesis.\n3. Differential Distinctions: Pyogenic liver abscess and bacterial empyema were the leading clinical suspects given the severe sepsis profile, but multiple blood and urine cultures remained sterile, and broad-spectrum antibacterials failed to halt clinical progression. Tuberculosis was ruled out by negative sputum acid-fast bacilli smear and negative IGRA. The true etiology of amebic liver abscess with transdiaphragmatic rupture was confirmed by aspirating 3000 mL of brown purulent material positive for Entamoeba histolytica antigen and positive serum amebic IgG serology.",
+  "case_prompt": "A 28-year-old male of Indian origin is admitted to the emergency department in Szczecin, Poland, with progressive dyspnea, dry cough, fever, and severe right-sided chest and right subcostal pain that has worsened acutely over the past several days. His symptoms initially began approximately one month prior to admission as dull right upper quadrant abdominal discomfort. For fever and pain, he had been self-medicating with over-the-counter paracetamol with minimal relief.\n\nEpidemiological history reveals that the patient relocated from India to Poland five months ago, where he works as a physical laborer. In India, he resided in an urban area but obtained drinking water from local unmonitored wells and bathed in stagnant water pools. He recalled an episode of non-bloody watery diarrhea shortly before departing India, with no subsequent bowel irregularities.\n\nOn physical examination, the patient is fully conscious but appears acutely distressed, with severe pain localized to the right upper quadrant. Vital signs demonstrate low-grade pyrexia and tachypnea. Pulmonary auscultation reveals diminished chest excursion, dullness to percussion, and markedly muffled breath sounds over the middle and lower fields of the right lung, with bilateral crackles. The abdomen is mildly distended and diffusely tender, with pronounced guarding and tenderness over the right hypochondrium; the liver edge is palpated 3 to 4 cm below the right costal margin. Peripheral edema is absent.\n\nEmergency laboratory testing reveals a neutrophilic leukocytosis with a neutrophil count of 19.2 x 10^9/L, mild microcytic anemia with hemoglobin of 12.1 g/dL, and signs of hepatic dysfunction including an elevated INR of 2.38, hypoalbuminemia of 3.0 g/dL, serum cholinesterase of 1987 U/L, alkaline phosphatase of 336 U/L, and gamma-glutamyl transferase of 114 U/L. Marked systemic inflammatory and sepsis markers are present: C-reactive protein of 323.57 mg/L, procalcitonin of 18.00 ng/mL, venous lactate of 7.94 mmol/L, and D-dimers of 3343 FEU ug/L.\n\nEmergency bedside ultrasound reveals a large right pleural effusion estimated at 1200 mL, and abdominal ultrasonography demonstrates a 12 cm mass in the right hepatic lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Liver Abscess and Empyema",
+      "rule_out_reason": "Initially suspected due to profound inflammatory and sepsis parameters (procalcitonin 18 ng/mL, CRP 323.57 mg/L, lactate 7.94 mmol/L) and empirical ceftriaxone/metronidazole coverage was started, but all blood and urine cultures remained negative for bacterial pathogens.",
+      "quote": "The implemented antibiotic therapy was chosen due to the suspicion of 'classic' etiology of liver abscesses... Blood and urine cultures were found without bacterial growth."
+    },
+    {
+      "candidate": "Pulmonary and Pleural Tuberculosis",
+      "rule_out_reason": "Considered given the patient's immigration from an endemic area and subacute pulmonary-pleural presentation with fever and weight loss, but ruled out by negative sputum acid-fast bacilli staining and negative interferon-gamma release assay.",
+      "quote": "For tuberculosis IGRA test was performed and acid-fast bacilli test was performed from sputum."
+    },
+    {
+      "candidate": "Intestinal Amebiasis with Active Colitis",
+      "rule_out_reason": "Considered because of remote diarrheal episodes in India, but stool antigen assay was negative, indicating that the patient had isolated invasive extraintestinal disease without concurrent shedding in feces.",
+      "quote": "Entamoeba histolytica antigen test in feces was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency pleural decompression evacuated 3000 mL of brown 'anchovy-sauce' purulent fluid positive for Entamoeba histolytica antigen, accompanied by strongly positive serum amebic IgG antibodies (43.7 NTU), confirming transdiaphragmatic rupture of an amebic liver abscess.",
+      "quote": "During this procedure, 3000 mL of brown purulent content (Figure 2) was obtained... The content obtained from the drainage was tested for the Entamoeba histolytica antigen - positive result. In addition, the diagnostics was performed with the serology of amoebiasis (Immunoglobulin G antibody positive with the 43.7 NTU [<9] activity)."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at emergency presentation and bedside ultrasonography before send-out serology, pleural aspiration, and CT. No spoilers or pathogen names."
+}

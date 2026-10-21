@@ -1,0 +1,23 @@
+{
+  "case_id": "PMC4334046_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: An untreated HIV-infected patient with severe immunodeficiency (CD4+ T-cell count <200 cells/mm3) presenting with fever, new-onset generalized seizures, progressive encephalopathy, and multiple ring-enhancing space-occupying intracranial lesions in the frontal cortex and basal ganglia. The core diagnostic dilemma is distinguishing the most common opportunistic etiology—cerebral toxoplasmosis—from primary central nervous system lymphoma, fungal abscess, tuberculoma, and reactivation of endemic American trypanosomiasis (Chagas disease) forming a cerebral chagoma or necrotizing meningoencephalitis.\n2. Admission Breakpoint: Admission triage ends following the emergency assessment of acute neuroinfection, documentation of fever (38–39°C), generalized seizures, CD4 lymphopenia (<200 cells/mm3), and non-contrast/contrast head CT revealing two ring-shaped space-occupying lesions in the frontal region and basal nuclei, immediately prior to empirical anti-toxoplasmosis drug therapy and diagnostic lumbar puncture CSF analysis.\n3. Differential Distinctions: Cerebral toxoplasmosis characteristically causes ring-enhancing lesions in the basal ganglia of AIDS patients and typically responds rapidly to pyrimethamine and sulfadiazine. In patients from endemic areas of Latin America who fail empirical anti-toxoplasmosis therapy, lumbar puncture cytology is essential, where direct identification of motile flagellated trypomastigotes establishes reactivation Trypanosoma cruzi meningoencephalitis.",
+  "case_prompt": "A 38-year-old male, born in a rural area of Trujillo state, Venezuela, and residing in La Guaira city, presents to the emergency department with high fever, new-onset generalized seizures, and progressive neurological impairment that developed one week prior to admission. The patient has a known diagnosis of human immunodeficiency virus (HIV) infection but is not currently receiving antiretroviral therapy.\n\nOn physical examination, he is febrile with a body temperature of 38–39°C and displays marked encephalopathy. Laboratory evaluation confirms severe immunodeficiency with a CD4+ T-lymphocyte count of <200 cells/mm3 (<14%), consistent with CDC stage C3 disease. Non-contrast and contrast-enhanced computed tomography (CT) of the head reveals two rounded, ring-shaped space-occupying lesions located in the frontal region and the basal nuclei.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Central Nervous System Toxoplasmosis",
+      "rule_out_reason": "Considered the primary presumptive diagnosis given the presence of ring-enhancing mass lesions in the basal ganglia in a severely immunosuppressed HIV patient, but excluded by failure to demonstrate clinical improvement following empirical therapy with pyrimethamine and sulfadiazine.",
+      "quote": "As a consequence of neuroimaging results, a presumptive diagnosis of toxoplasmosis was given to the patient, for which he received an empirical treatment with 200 mg of pyrimethamine in the first day and 75 mg/day since the second day, in combination with 100 mg/kg of body weight/day (4-6 g/day) of sulphadiazine (day 1). Since patient did not show improvement of his health condition, a lumbar puncture was done to obtain samples of cerebrospinal fluid (CSF)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cytological evaluation of cerebrospinal fluid obtained via lumbar puncture revealed parasitic flagellates morphologically compatible with trypomastigotes, which along with the patient's geographic origin in an endemic state confirmed central nervous system trypanosomiasis.",
+      "quote": "Because results from CSF cytology showed few parasitic flagellate protozoans morphologically compatible with trypomastigotes of Trypanosoma sp., the treating physicians consulted the departments of immunology and tropical medicine in order to confirm the diagnosis and to modify the treatment."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial Day 1 presentation (fever, seizures, neurological decline, HIV/CD4 status, and head CT showing ring-shaped lesions) strictly before empirical anti-toxoplasmosis therapy and CSF cytology. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for differential candidate and diagnostic pivot."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4225156_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A distal lower extremity mass with initial plain radiographic features suggestive of a benign osseous exostosis, contrasting sharply with systemic constitutional symptoms (fever, weight loss, anorexia), markedly elevated inflammatory parameters (ESR, CRP), and CT findings of an aggressive-appearing pseudo-tumor with calcifications.\n2. Admission Breakpoint: The admission clinical presentation concludes following the acquisition of initial imaging (plain radiograph and CT scan) and baseline inflammatory markers (ESR and CRP), immediately prior to bacteriological testing and histopathologic examination of the lesion.\n3. Differential Distinctions: An osteochondroma/exostosis is ruled out by elevated inflammatory markers, lack of benign cortex-medulla continuity, and systemic symptoms; malignant bone sarcoma is excluded by the demonstration of caseating granulomas and positive bacteriological culture for Mycobacterium tuberculosis.",
+  "case_prompt": "A 32-year-old male presented with pain and swelling involving the distal third of the left thigh. He initially noticed a small swelling that had progressively increased in size, accompanied by a low-grade fever without diurnal variation, weight loss, and loss of appetite. He denied any preceding trauma to the site or other acute symptoms. He had no prior medical history of chronic illnesses or prior antimicrobial therapy, and there was no family history of chronic granulomatous infections.\n\nOn physical examination, an 80 × 40 mm, painful, firm mass was palpated in the left lower extremity that had gradually worsened. Motor and sensory examinations of the lower extremity were normal, and no lymphadenopathy was appreciated in the inguinal regions.\n\nPlain radiography of the left thigh revealed a bony overgrowth with well-defined margins. A computed tomography (CT) scan demonstrated a 30 × 48 × 77 mm pseudo-tumor with irregular margins associated with calcifications. Laboratory evaluation showed an erythrocyte sedimentation rate (ESR) of 33 mm/hr and a C-reactive protein (CRP) of 80 mg/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Exostosis (Osteochondroma)",
+      "rule_out_reason": "Considered based on the initial plain radiograph of the left thigh demonstrating a bony overgrowth with well-defined margins; however, it was excluded by the presence of constitutional symptoms, elevated inflammatory markers, and CT findings of an irregular pseudo-tumor with calcifications.",
+      "quote": "The radiography of the left thigh was objectified a bony overgrowth with well-defined margins making evoke an exostosis (B)"
+    },
+    {
+      "candidate": "Malignant Bone Neoplasm / Soft-Tissue Pseudotumor",
+      "rule_out_reason": "Considered due to the progressive, painful, firm lower extremity mass and CT scan demonstrating an invasive-appearing 30 x 48 x 77 mm pseudo-tumor with irregular margins and calcifications; ruled out by elevated infectious markers and definitive microbiological and histopathological examination demonstrating granulomatous inflammation rather than malignant cells.",
+      "quote": "CT scan showed a 30 mm x 48 mm x77 mm pseudo tumor with irregular margin associated with calcifications (C)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Bone Tuberculosis",
+      "rule_out_reason": "The diagnostic breakthrough occurred when bacteriological examination demonstrated acid-fast bacilli positive for Mycobacterium tuberculosis and histological analysis identified epithelioid giant cell granulomas with pathognomonic caseous necrosis, leading to complete clinical improvement on antitubercular therapy.",
+      "quote": "The bacteriological examination was positive for Mycobacterium tuberculosis. Histological examination showed the presence of an epitheloid giant cell granuloma with caseous necrosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4225156. Case prompt terminates at admission breakpoint following triage inflammatory markers (ESR, CRP) and initial imaging (X-ray, CT), completely omitting bacteriological and histopathological results. Target disease and pathogen names strictly sanitized from presentation."
+}

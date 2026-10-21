@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11652940_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 8-year-old boy presents with an insidious 2.5-year history of lower extremity weakness and back pain progressing to inability to walk, accompanied by severe 81-degree angular kyphosis (gibbus deformity) and spastic paraparesis. The prolonged indolent course, absence of pulmonary symptoms or fevers, and multi-level contiguous cervicothoracic bony collapse mimic congenital deformity, pyogenic spondylodiscitis, or spine neoplasms.\n2. Admission Breakpoint: The narrative concludes following physical and neurological examination and initial spine radiographs and whole-spine contrast MRI demonstrating severe kyphotic deformity (81 degrees), bony destruction from Th1-Th6, and spinal canal stenosis, immediately prior to applying diagnostic designations, skeletal traction with Gardner-Wells tongs, or operative debridement.\n3. Differential Distinctions: Pyogenic bacterial spondylodiscitis is usually acute, febrile, and begins in the intervertebral disc with early disc space collapse; tuberculous spondylitis (Pott disease) is characteristically indolent, destroys anterior vertebral bodies while initially sparing disc space, causes extensive cold paravertebral abscesses, and produces severe angular gibbus deformity. Primary or metastatic spinal neoplasms destroy bone but typically do not produce multi-level contiguous cold abscesses across multiple vertebrae with endplate preservation.",
+  "case_prompt": "An 8-year-old boy presents to the hospital with long-standing bilateral lower extremity weakness and back pain that has been worsening over a 2.5-year period. A few days after the initial onset of leg weakness 2.5 years ago, he developed localized upper back pain. The weakness progressively intensified over several months until he ultimately lost the ability to stand and ambulate independently. The child's parents report an unintentional weight loss of 4.5 kg over the past three months. They deny any history of fever, chronic cough, respiratory symptoms, or bowel or bladder incontinence.\n\nOn physical examination, inspection of the back reveals a pronounced asymmetrical prominence with a visible sharp angular gibbus deformity over the upper thoracic region, without overlying cutaneous sinuses, erythema, or open wounds. Palpation of the thoracic spine elicits localized tenderness (visual analog scale score 1–2). Spinal mobility is markedly restricted due to pain elicited by movement. On neurological examination, motor strength is severely compromised in both lower extremities. Deep tendon reflexes are hyperactive bilaterally at the patellar and Achilles tendons, with sustained bilateral ankle clonus and positive Babinski reflexes bilaterally; Hoffman, Trommer, and Lhermitte signs are absent. Sensory mapping reveals pain and hyperesthesia at the right T3, bilateral T4, and left T5 dermatomes.\n\nA plain radiograph of the thoracic spine demonstrates a severe kyphotic deformity measuring approximately 81 degrees without spondylolisthesis, extensive bony destruction spanning Th1 through Th6, endplate cartilage destruction, and absence of intervertebral joint space narrowing. Cervical spine radiography shows vertebral destruction at the C4–C7 level with cervicothoracic kyphosis. Contrast-enhanced magnetic resonance imaging (MRI) of the whole spine confirms a severe angular kyphotic curve peaking at C7–Th1, vertebral compression and marrow edema at C7 and Th1, prominent surrounding soft tissue edema, and moderate spinal canal stenosis with spinal cord compression.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Spondylodiscitis / Vertebral Osteomyelitis",
+      "rule_out_reason": "Pyogenic bacterial infections of the spine typically present with an acute, rapidly progressive febrile illness and primary narrowing of the intervertebral disc spaces, whereas this patient displayed an indolent 2.5-year progression, preservation of joint spaces, and multilevel contiguous destruction culminating in severe gibbus deformity.",
+      "quote": "Radiographic result of thoracal X-ray showed kyphotic deformity around 81  with no listhesis, destructed bone from Th1-Th6, end plate cartilage destruction, and no joint space narrowing"
+    },
+    {
+      "candidate": "Primary Osseous Neoplasm or Metastatic Spinal Malignancy",
+      "rule_out_reason": "Extensive destructive vertebral lesions causing pathologic collapse and paraparesis in children can represent round cell tumors (e.g., Ewing sarcoma, lymphoma); however, multi-segment contiguous involvement, endplate erosion, cold soft tissue fluid collections, and systemic wasting favored a chronic granulomatous infection.",
+      "quote": "MRI with contrast on the whole spine highlighted kyphotic curve with peak at C7-Th1, compression and edema at C7, Th1 with soft tissue edema, moderate canal stenosis due to suspected tuberculous spondylitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical constellation of spastic paraplegia (Frankel grade B) with severe 81-degree cervicothoracic kyphotic gibbus deformity, Th1-Th6 destruction, and compressive paravertebral abscess established the diagnosis of tuberculous spondylitis (Pott disease).",
+      "quote": "From these workups, patient was diagnosed with paraplegia due to tuberculous spondylitis of C7-Th2 Frankel B with paravertebral abscess and kyphotic deformity (Fig. 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt halts prior to operative intervention, traction, or diagnostic naming. No pathogen leaks. Exact quotes verified against text."
+}

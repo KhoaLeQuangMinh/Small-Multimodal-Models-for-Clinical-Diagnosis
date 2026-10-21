@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11830955_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An elderly 74-year-old cachectic male presents with acute high-grade mechanical small bowel obstruction and severe weight loss (12 kg over 6 months) without respiratory symptoms or pulmonary infiltrates, clinically mimicking advanced gastrointestinal malignancy or Crohn's disease.\n2. Admission Breakpoint: The admission triage evaluation ends after physical examination, baseline laboratory investigations (mild anemia, elevated ESR of 103 mm/hr, hyponatremia, renal impairment), plain radiographs showing air-fluid levels, and abdominal CT demonstrating dilated jejunoileal loops with small-bowel feces sign, transition point, and mesenteric lymphadenopathy. Emergency laparotomy, resected specimen histology, QuantiFERON testing, and tuberculostatic therapy represent post-breakpoint steps.\n3. Differential Distinctions: Gastrointestinal adenocarcinoma/lymphoma is the primary initial suspicion in an elderly cachectic patient with bowel obstruction, ruled out by non-elevated CEA and surgical pathology demonstrating necrotizing granulomas rather than neoplasia; Crohn's disease is excluded by true caseating necrosis and prominent necrotizing mesenteric lymphadenitis.",
+  "case_prompt": "A 74-year-old male with a history of hypertension and prior transurethral resection of the prostate presented to the emergency clinic complaining of severe diffuse abdominal pain and obstipation for 2 days, accompanied by 3 to 5 episodes of bilious emesis containing food particles over the preceding 24 hours. Over the preceding 6 months, he had lost 12 kg of body weight unintentionally. He denied fevers, chills, night sweats, cough, hemoptysis, chest pain, or changes in micturition. There was no history of alcohol or tobacco use.\n\nOn physical examination, the patient appeared cachectic and visibly pale. Vital signs were stable. A vaccination scar was observed on the left upper arm. Abdominal examination revealed significant abdominal distension, diffuse abdominal tenderness, and sluggish bowel sounds without guarding or rigidity. Hernial orifices were intact, and digital rectal examination showed normal sphincter tone, soft stool in the vault, and no palpable rectal masses. Cardiopulmonary examination was normal.\n\nInitial laboratory evaluation revealed mild anemia, an erythrocyte sedimentation rate (ESR) of 103 mm/h, C-reactive protein of 0.5 mg/dL, hyponatremia, acute renal impairment with elevated serum creatinine, and albumin-globulin ratio reversal with normal transaminases. Chest radiography was normal. An upright abdominal radiograph revealed dilated small bowel loops with multiple air-fluid levels. Computed tomography of the abdomen demonstrated marked dilatation of the entire jejunum and proximal ileum with a small bowel feces sign and mesenteric fat stranding, collapsed distal ileum and colon, and multiple enlarged mesenteric lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gastrointestinal adenocarcinoma / small bowel malignancy",
+      "rule_out_reason": "Advanced age, 12 kg unintentional weight loss, cachexia, anemia, and an obstructing bowel mass strongly suggested intestinal malignancy, but serum CEA was negative and surgical histology showed no neoplastic dysplastic cellular features.",
+      "quote": "Carcinoembryonic antigen (CEA) was negative despite the suspicion of malignancy."
+    },
+    {
+      "candidate": "Crohn's disease with stricturing complication",
+      "rule_out_reason": "Crohn's disease causes transmural small bowel inflammation and inflammatory stricturing, but extensive caseating necrosis and necrotizing granulomatous lymphadenitis in an elderly patient with positive mycobacterial immune assays confirm an infectious etiology.",
+      "quote": "Out of nine lymph nodes, seven showed granulomatous lymphadenitis. Special stains for fungi and acid-fast bacilli were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency resection of the 20-cm jejunal growth revealed necrotizing epithelioid granulomas with Langhans giant cells in the bowel wall and regional lymph nodes, accompanied by positive Mantoux and QuantiFERON Gold testing, establishing jejunal tuberculosis.",
+      "quote": "A Mantoux test and a Quantiferon Gold assay were both positive. CT scans of the whole abdomen plain showed the whole jejunum and proximal ileum were dilated, and the mid-ileum displayed the small bowel feces sign, wall edema, mesenteric fat stranding, and surrounding fluid."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission with small bowel obstruction and imaging before surgical exploration. All mycobacterial names, ATT therapy, QuantiFERON assays, and histopathologic findings excluded from the case prompt."
+}

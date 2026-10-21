@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10467300_04",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 14-year-old adolescent boy presents with a two-month history of persistent pruritic nodules on his scrotum and hips following an epidemic outbreak of itchy papules and nodules involving web spaces of fingers, abdomen, genitals, and hips shared with classmates. The eruption resolved after two cycles of sulfur ointment except for scrotal nodules that rapidly recurred despite repeated intralesional triamcinolone acetonide injections and topical corticosteroids. The tension lies in recognizing pediatric nodular scabies resulting from an epidemiological school exposure versus non-contagious conditions such as molluscum contagiosum, juvenile xanthogranuloma, cutaneous mastocytoma, or prurigo nodularis.\n2. Admission Breakpoint: The admission clinical presentation concludes with the patient's referral for persistent, recurrent scrotal nodules following sulfur ointment cycles and repeated courses of topical and intralesional triamcinolone acetonide, prior to initiation of rescue targeted immunomodulatory therapy.\n3. Differential Distinctions: Molluscum contagiosum causes contagious umbilicated pearly papules in school-aged children, but typically lacks intense interdigital web involvement and does not respond to topical sulfur. Juvenile xanthogranuloma or cutaneous mastocytoma are benign non-contagious histiocytic or mast cell lesions that do not occur in an epidemic cluster among school peers and do not present with preceding interdigital web lesions. Nodular scabies typically presents with persistent hypersensitivity nodules at predilection sites (scrotum, hips) following an epidemic cluster of interdigital and trunk lesions.",
+  "case_prompt": "A 14-year-old boy is referred for evaluation of persistent, itchy nodules on his scrotum and hips of two months' duration. Two months prior, he had developed an acute, pruritic eruption consisting of papules and nodules localized to the interdigital web spaces of his fingers, abdomen, genital regions, and hips; multiple close classmates at his school had developed similar itchy skin lesions during the same period. He was treated with two cycles of topical 10% sulfur ointment (applied twice daily for three days, administered one week apart), which resulted in marked improvement of the lesions across his finger webs, abdomen, and hips. However, intensely pruritic nodules on his scrotum persisted. He subsequently received topical corticosteroid ointment and repeated intralesional triamcinolone acetonide injections for the scrotal nodules, which produced only transient, mild improvement followed by rapid recurrence. On physical examination, well-circumscribed, firm, erythematous-to-hyperpigmented nodules with signs of excoriation are present on the scrotum; no active interdigital burrows are noted.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Molluscum contagiosum",
+      "rule_out_reason": "Molluscum contagiosum can spread among school-aged peers and cause genital papules, but classically features smooth dome-shaped lesions with central umbilication, lacks characteristic interdigital web involvement, and does not clear with sulfur ointment.",
+      "quote": "Two months ago, the patient presented with itching papules and nodules on the webs of fingers, abdomen, genital regions, and hips, and some of his close classmates had similar lesions."
+    },
+    {
+      "candidate": "Juvenile xanthogranuloma / Cutaneous mastocytoma",
+      "rule_out_reason": "Benign proliferations such as mastocytomas or xanthogranulomas are non-communicable, do not present synchronously among school classmates, and do not follow an acute generalized eruption involving web spaces and trunk that clears with sulfur ointment.",
+      "quote": "and some of his close classmates had similar lesions."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Recalcitrant nodular scabies",
+      "rule_out_reason": "The diagnostic turning point is the classic epidemiological exposure among classmates, pathognomonic initial distribution (finger webs, abdomen, genitals), clearance of peripheral lesions after topical sulfur, and persistent scrotal nodules refractory to repeated intralesional triamcinolone acetonide and topical corticosteroids.",
+      "quote": "which led to excellent response except for some of the pruritic nodules on the scrotum [Figure 3(a)]. Then topical steroid ointment and repeatedly intralesional injection of triamcinolone acetonide were sequentially applied for the nodules, showing mild improvement and rapid recurrence."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Verbatim quotes from the published report support each differential diagnosis and diagnostic pivot."
+}

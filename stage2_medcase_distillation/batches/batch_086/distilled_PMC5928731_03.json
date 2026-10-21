@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5928731_03",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 27-year-old male presents with acute fever, headache, retro-orbital pain, tender calves, frank jaundice, scleral icterus, thrombocytopenia, and elevated creatine phosphokinase (CPK 1,572 U/L). This severe presentation easily mimics fulminant viral hepatitis, septic shock with multiorgan failure, or primary hematologic-toxic syndromes, while admission IgM serology is negative due to early sampling.\n2. Admission Breakpoint: The breakpoint occurs upon completion of emergency triage, physical examination, and baseline labs (CBC, bilirubin, CPK, urinalysis), strictly prior to send-out hepatitis serologies, blood cultures, and molecular pathogen testing.\n3. Differential Distinctions: Acute viral hepatitis presents with profound jaundice, bilirubinuria, and transaminitis, but does not cause acute rhabdomyolysis with calf tenderness or severe thrombocytopenia. Bacterial sepsis can induce multiorgan dysfunction and elevated CPK, but typically yields positive blood cultures and lacks conjunctival suffusion/eye pain.",
+  "case_prompt": "A 27-year-old male presented to the emergency department in March with a 5-day history of acute fevers, chills, severe back pain, diffuse arthralgias, headache, and eye pain.\n\nOn physical examination, he was febrile and appeared ill. Mucous membranes were dry. Striking jaundice and scleral icterus were present on eye examination. Cardiac and pulmonary examinations were within normal limits. Abdominal examination revealed no focal tenderness or peritoneal signs. Palpation of the lower extremities elicited marked bilateral calf muscle tenderness.\n\nInitial triage laboratory investigations revealed thrombocytopenia, elevated total bilirubin, and marked elevation of serum creatine phosphokinase (CPK; 1,572 U/L). Urinalysis demonstrated hematuria and bilirubinemia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral hepatitis (Hepatitis A, B, or C)",
+      "rule_out_reason": "Considered primary etiology given the acute onset of fever, scleral icterus, jaundice, elevated bilirubin, and bilirubinuria, but ruled out by completely non-reactive viral serologies.",
+      "quote": "Tests for Hepatitis A, B, and C and blood cultures drawn on admission were negative."
+    },
+    {
+      "candidate": "Severe bacterial sepsis with secondary multiorgan dysfunction",
+      "rule_out_reason": "Considered due to acute prostration, chills, thrombocytopenia, and marked rhabdomyolysis, but blood cultures drawn on admission remained sterile.",
+      "quote": "Tests for Hepatitis A, B, and C and blood cultures drawn on admission were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Real-time PCR detected Leptospira interrogans DNA in serum collected on illness day 3, and convalescent serology upon discharge demonstrated seroconversion with a reciprocal MAT titer of 1,600 against serogroup Bataviae (serovar Bataviae), establishing severe leptospirosis complicated by rhabdomyolysis despite an initial negative commercial IgM.",
+      "quote": "A leptospirosis IgM antibody test by a commercial reference laboratory with serum collected on the day of admission was negative. ... Leptospira interrogans DNA was detected by PCR in a serum specimen collected on day 3 of illness, which was negative by MAT. Serum collected upon patient discharge had a reciprocal MAT titer of 1,600 against serogroup Bataviae (serovar Bataviae)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case highlights severe icteric leptospirosis (Weil disease spectrum) presenting with prominent rhabdomyolysis and calf tenderness, diagnosed by early serum PCR when admission IgM and initial MAT were false-negative."
+}

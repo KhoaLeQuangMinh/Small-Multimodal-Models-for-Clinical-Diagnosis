@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3521409_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A female patient presents with severe mucocutaneous sloughing, hemorrhagic cheilitis, stomatitis, conjunctivitis, and genital erosions concerning for toxic epidermal necrolysis, alongside pulmonary crepitations and right lower lobe opacities. The clinical complexity lies in recognizing that an underlying disseminated mycobacterial infection with mesenteric and peripheral lymphadenopathy is driving the systemic disease, despite a negative sputum smear and secondary staphylococcal superinfection of cutaneous lesions.\n2. Admission Breakpoint: The breakpoint occurs following physical examination of mucocutaneous and respiratory findings, baseline hemogram (Hb 9 g/dL, WBC 9700/uL with PMN 75%, ESR 72 mm/hr), normal metabolic and electrolyte panel, alkaline phosphatase (313 U/L), urinalysis, and chest radiograph showing nonhomogeneous right lower lobe opacities, immediately prior to send-out HIV testing, sputum smear, and lymph node needle aspiration.\n3. Differential Distinctions: Secondary pyogenic bacterial pneumonia is considered due to post-admission cough, but does not explain systemic lymphadenopathy; primary staphylococcal scalded skin syndrome or severe cutaneous bacterial infection is ruled out as Staph aureus was a secondary colonizer; disseminated tuberculosis is confirmed by identification of acid-fast bacilli on Ziehl-Neelsen staining of axillary and cervical lymph node needle aspirates.",
+  "case_prompt": "A female patient presented with severe mucocutaneous involvement characterized by hemorrhagic cheilitis, stomatitis with increased salivation, conjunctival congestion, photophobia, increased lacrimation, and areas of erosions over the labia majora and mucous membranes. On respiratory examination, crepitations were auscultated over the right lung. There was no palpable abdominal organomegaly. Laboratory evaluation revealed a hemoglobin level of 9 g/dL, a total leukocyte count of 9,700/cu mm with 75% polymorphonuclear cells, 18% lymphocytes, 6% eosinophils, and 1% basophils, and an erythrocyte sedimentation rate (ESR) of 72 mm in the first hour. She was euglycemic with normal renal function, normal serum electrolytes, an alkaline phosphatase of 313 U/L, and normal urinalysis. Plain chest radiography demonstrated nonhomogeneous opacities in the right lung lower lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Associated pyogenic bacterial pneumonia",
+      "rule_out_reason": "Considered because the patient developed a productive cough with expectoration alongside right lower lobe consolidation, but her underlying systemic disease represented disseminated granulomatous infection rather than isolated community-acquired pneumonia.",
+      "quote": "Possibility of associated bacterial pneumonia was considered as she developed cough with expectoration after hospitalization and almost a week after initiation of anti-tubercular therapy."
+    },
+    {
+      "candidate": "Primary staphylococcal skin and soft tissue disease",
+      "rule_out_reason": "Staphylococcus aureus was isolated from cutaneous erosion cultures, but was recognized as a secondary microbial colonization of extensive drug-induced toxic epidermal necrolysis.",
+      "quote": "There was growth of Staphylococcus aureus from culture of her skin lesions sensitive to Vancomycin, Levofloxacin, and Linezolid."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Tuberculosis",
+      "rule_out_reason": "Although sputum microscopy was negative for bacilli, fine-needle aspiration of axillary and cervical lymphadenopathy definitively revealed acid-fast bacilli on Ziehl-Neelsen staining in the setting of mesenteric lymphadenopathy and severe immunosuppression.",
+      "quote": "Needle aspiration from axillary and cervical glands showed acid fast bacilli on ZN stain."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation strictly isolated to admission dermatologic exam, pulmonary signs, baseline CBC/chemistries, and chest X-ray. HIV status, skin swab cultures, sputum AFB, and lymph node FNA results are properly isolated to diagnostic reasoning."
+}

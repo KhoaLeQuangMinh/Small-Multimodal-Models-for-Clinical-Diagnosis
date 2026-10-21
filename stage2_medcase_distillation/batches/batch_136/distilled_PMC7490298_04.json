@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7490298_04",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 26-year-old woman presented in the second trimester of pregnancy with rash (exanthema) and arthralgia in the absence of documented high-grade fever. In tropical areas, mild exanthematous disease without classic prostration is frequently underdiagnosed or mistaken for non-infectious gestational dermatoses, yet carries substantial danger of transplacental vertical transmission.\n2. Admission Breakpoint: The admission clinical presentation concludes following the initial clinical assessment of second-trimester exanthema and arthralgia, strictly prior to send-out molecular RT-PCR testing and neutralizing antibody titers.\n3. Differential Distinctions: Chikungunya is distinguished by acute high fever and debilitating symmetrical polyarthritis; dengue presents with high fever, severe retro-orbital headache, and cytopenias; pregnancy dermatoses lack arthralgia; Zika virus typically causes low-grade or afebrile maculopapular rash with transient arthralgia and is verified by specific serum qPCR and neutralization testing.",
+  "case_prompt": "A 26-year-old pregnant female presented to an antenatal clinic during the second trimester of gestation reporting the acute onset of a generalized cutaneous exanthema accompanied by generalized arthralgias. She had no previous medical conditions or complications during her current pregnancy. Physical examination revealed a prominent erythematous maculopapular cutaneous eruption involving the trunk and extremities, with mild periarticular tenderness but without joint effusion or systemic instability. Obstetric examination confirmed a normal active intrauterine singleton pregnancy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chikungunya Virus Infection",
+      "rule_out_reason": "Chikungunya frequently co-circulates and presents with acute exanthema and arthralgia, but it typically produces severe, immobilizing polyarthritis, and specific molecular evaluation confirmed flaviviral rather than alphaviral etiology.",
+      "quote": "A 26 year old patient that reported exanthema and arthralgia in the second trimester of gestation. The qPCR was positive for Zika in serum (690 copies/ml)"
+    },
+    {
+      "candidate": "Dengue Virus Infection",
+      "rule_out_reason": "Dengue virus is a prominent differential diagnosis for acute rash in endemic tropical regions, but it typically features biphasic high fevers, retro-orbital pain, and hemorrhagic diathesis, which were absent here.",
+      "quote": "The qPCR was positive for Zika in serum (690 copies/ml) and the PRNT90% was positive for neutralizing antibodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation of acute maternal infection was established by positive quantitative RT-PCR in serum (690 copies/mL) alongside positive 90% plaque reduction neutralization test (PRNT90%) neutralizing antibodies.",
+      "quote": "The qPCR was positive for Zika in serum (690 copies/ml) and the PRNT90% was positive for neutralizing antibodies."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops before molecular testing and neutralization titers. Zero pathogen or disease names in prompt. Differential includes verbatim quotes from the report."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11342428_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 30-year-old female with systemic lupus erythematosus previously treated with corticosteroids, hydroxychloroquine, and rituximab presents with chronic cough and hemoptysis of 8 months' duration. Thoracic CT demonstrates bilateral round cystic lung lesions and a hepatic cyst. In an immunocompromised host, multiple lung lesions with hemoptysis strongly evoke opportunistic fungal cavity formation (aspergilloma), cavitating tuberculosis, or metastatic disease, but the internal floating membrane appearance provides a key morphological clue toward a zoonotic parasitic etiology.\n2. Admission Breakpoint: The admission breakpoint is located immediately following the initial CT scan and physical evaluation, prior to the initiation of empirical antiparasitic medical therapy (albendazole) and subsequent surgical thoracotomy/laparoscopy.\n3. Differential Distinctions: Cavitary pulmonary mycosis (aspergilloma) or abscess presents with thick-walled cavities often harboring a fungal ball, but lacks the distinctive detached endocyst membrane ('water lily sign') and characteristic dual-organ (pulmonary-hepatic) cystic architecture. Malignancy/metastatic disease typically features solid or necrotic masses rather than discrete benign multiorgan cysts containing parasitic scoleces and hooks on surgical pathology.",
+  "case_prompt": "A 30-year-old female presents with an 8-month history of chronic cough and hemoptysis. Her medical history is notable for systemic lupus erythematosus, for which she received treatment with corticosteroids, hydroxychloroquine, and rituximab 5 years ago. She has a history of prior travel to Spain and no family history of other pathologies.\n\nOn clinical evaluation, physical examination findings are unremarkable.\n\nInitial radiological investigations demonstrate two lesions involving both lungs. Computed tomography (CT) reveals the presence of round cystic lesions with well-defined contours located in the lower pulmonary lobes, along with a cystic lesion in the liver. One of the cystic lesions in the right lung demonstrates the water lily sign (floating membrane appearance).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Aspergilloma / Cavitary Fungal Infection",
+      "rule_out_reason": "Given her prior immunosuppression with rituximab and glucocorticoids, opportunistic fungal cavitary disease with hemoptysis was a critical diagnostic consideration. However, the presence of well-demarcated cystic lesions in both the lungs and liver, coupled with the water lily sign and histopathological confirmation of parasitic protoscolices rather than fungal hyphae, excluded aspergillosis.",
+      "quote": "A computed tomography (CT) showed the presence of round cystic lesions, with defined contours in the lower pulmonary lobes and a cystic image in the liver; one image in the right lung was compatible with \"the water lily sign\""
+    },
+    {
+      "candidate": "Metastatic Pulmonary and Hepatic Malignancy",
+      "rule_out_reason": "Bilateral pulmonary nodules associated with a concomitant focal hepatic lesion in a young adult can suggest metastatic malignancy. However, the lesions had well-defined cystic borders rather than solid, invasive neoplastic architecture, and surgical resection confirmed a benign parasitic cyst without malignant cells.",
+      "quote": "wedge resection of both lesions with safe margins was made and sent to pathology. Drains were placed and the procedure was completed without complications."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was established by the CT finding of round cystic lesions in the lower pulmonary lobes and liver featuring 'the water lily sign' in the right lung, followed by definitive surgical histopathology demonstrating cystic echinococcosis with protoscolices and refractile hooks.",
+      "quote": "Pathology studies revealed the presence of cystic echinococcosis in both lungs and liver, with evidence of protoscolices and refractory hooks of echinococcal scolex, highlighted by the Grocott technique; Ziehl-Neelsen and periodic acid-Schiff (PAS) were found (Figure 4(a) and (b)). Pulmonary and liver nodules were completely resected with free margins."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission presentation halts before initiation of albendazole and surgical pathology. Excludes all pathogen and disease names from case_prompt. Differential entries are strictly evidenced by verbatim textual quotes."
+}

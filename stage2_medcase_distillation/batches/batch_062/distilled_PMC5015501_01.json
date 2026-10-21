@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5015501_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A young male priest presents with a 2-year history of non-tender, firm erythematous nodules and plaques distributed over the pinnae and bony prominences without subjective sensory loss, fever, or joint pain. The lesions ruptured previously with blood-stained purulent drainage and a prior biopsy was misdiagnosed as a fungal infection, leading to ineffective empiric antifungals and antibiotics.\n2. Admission Breakpoint: The admission triage phase ends after clinical physical examination and routine baseline blood hematology, prior to performing slit skin smears, modified Ziehl-Neelsen staining, deep skin biopsy, fungal/bacterial cultures, and electrodiagnostic nerve stimulation studies.\n3. Differential Distinctions: Subcutaneous mycoses and chronic pyogenic skin infections produce localized nodular or ulcerating lesions on extremities but lack symmetric infiltration of ear pinnae and diffuse peripheral nerve involvement. Multibacillary lepromatous leprosy presents with generalized asymptomatic nodules and plaques that may initially lack overt sensory loss, but show diffuse foamy histiocytic infiltrates laden with acid-fast bacilli on modified ZN/Fite staining and underlying hypertrophic sensorimotor neuropathy.",
+  "case_prompt": "A 21-year-old male priest presented with a 2-year history of progressive, generalized raised cutaneous nodular lesions. The illness began insidiously two years prior as small, reddish raised papules over the right knee that gradually enlarged and eventually ruptured, discharging blood-stained purulent material. The lesions were completely painless, non-pruritic, and free of burning sensation, with no perceived loss of sensation. Over subsequent months, similar lesions progressively erupted over the left knee, bilateral elbows, and both ears. He reported no fever, joint pain, or joint swelling. A prior community skin histological sampling was reported as suggestive of a fungal infection, for which he received empiric courses of itraconazole and amoxicillin-clavulanic acid without clinical improvement.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Dermatologic examination revealed multiple erythematous nodules and infiltrated plaques ranging from 3 mm to 3 cm in diameter, symmetrically distributed across bilateral ear pinnae and over bony prominences of the extremities, including the elbows, knees, malleoli, and dorsal aspects of both feet. Several lesions were capped with hemorrhagic crusts. The lesions were non-tender and firm to hard on palpation, with no active purulent discharge, sinus tracts, or open ulcers. He denied known contact with chronically ill individuals.\n\nBaseline laboratory evaluation showed complete blood count and routine serum chemistry panels within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Subcutaneous Mycosis / Deep Fungal Infection",
+      "rule_out_reason": "Considered due to the chronic nodular presentation over extremities and an external biopsy suggesting fungal etiology, but ruled out because fungal microscopy and fungal cultures of multiple lesion specimens were completely negative, and prior itraconazole therapy was ineffective.",
+      "quote": "Slit skin smears and biopsy from multiple lesions were collected and processed for bacterial and fungal culture since a provisional diagnosis of subcutaneous mycoses was considered. Microscopy as well as culture for both was negative."
+    },
+    {
+      "candidate": "Chronic Pyogenic Bacterial Infection",
+      "rule_out_reason": "Considered because the nodules had previously ruptured with purulent discharge, but bacterial cultures from multiple lesions were negative and prior treatment with amoxicillin-clavulanic acid yielded no clinical response.",
+      "quote": "This biopsy report was suggestive of fungal infection; hence, the patient was treated with itraconazole and amoxicillin-clavulanic acid but without any relief. No acid-fast Bacilli (AFB) staining was done."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Slit skin smears stained by modified Ziehl-Neelsen (5% sulfuric acid) revealed characteristic acid-fast bacilli with a bacterial index of 4+, skin biopsy demonstrated foamy histiocytes positive on Fite-Faraco staining, and nerve conduction studies demonstrated thickened peripheral nerves with sensory neuropathy, confirming multibacillary lepromatous disease.",
+      "quote": "Examination of stained smear revealed characteristic AFB in large numbers [Figure 2]. A bacterial index of 4+ (10 AFB per oil immersion field) was recorded."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation completely sanitized of pathogen names and diagnostic tests. Strict breakpoint enforced prior to slit skin smear, biopsy, and nerve conduction studies. Zero spoilers."
+}

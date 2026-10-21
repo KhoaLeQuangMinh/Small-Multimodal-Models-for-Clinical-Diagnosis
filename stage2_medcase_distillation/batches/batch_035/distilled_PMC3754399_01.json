@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3754399_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 8-year-old girl presents with chronic chest pain, dyspnea, and productive cough, found to have a massive cavitary/cystic pulmonary mass in the right lower lobe. The presentation creates clinical tension between a primary infected congenital pulmonary airway malformation (CCAM), a complicated lung abscess, and an endemic parasitic pulmonary hydatid cyst. Unusually, the hydatid cyst developed within a pre-existing congenital cystic adenomatoid malformation.\n2. Admission Breakpoint: Admission presentation encompasses history of indolent thoracic symptoms, physical examination (decreased breath sounds at the right base), initial chest radiograph (10x10 cm lower zone cyst), contrast-enhanced thoracic CT (air-filled cavitary lesion with detached dependent wavy membrane, adjacent parenchymal collapse/consolidation, and pleural changes), and abdominal ultrasound. Thoracotomy, pericystectomy, and histopathology represent the post-breakpoint period.\n3. Differential Distinctions: Uncomplicated Congenital Cystic Adenomatoid Malformation (CCAM) or bronchogenic cyst is considered as the congenital anatomical defect, but the detached dependent internal membrane (water-lily sign) indicates parasitic endocyst detachment. Pyogenic lung abscess or necrotizing pneumonia is considered given productive cough and cavitary consolidation, but ruled out by lack of acute sepsis and presence of typical parasitic membrane architecture. Pulmonary tuberculosis is considered given chronic symptoms and pleural calcification, but excluded by pathognomonic radiological and histological hydatid cyst findings.",
+  "case_prompt": "An 8-year-old girl presented with chest pain and progressive dyspnea of 7 months duration, accompanied by a productive cough for the preceding 3 months. She had no history of hemoptysis, recurrent wheezing, or fever.\n\nOn physical examination, she was in mild respiratory distress. Examination of the chest revealed decreased breath sounds over the right infra-axillary and infrascapular regions, with dullness to percussion over the right base.\n\nA plain chest radiograph revealed a well-defined 10 x 10 cm cystic lesion occupying the right lower lung zone. Contrast-enhanced computed tomography (CT) of the thorax demonstrated an 8.5 x 7.5 x 6.5 cm air-filled cavitary lesion featuring a detached dependent wavy internal membrane located in the lower lobe of the right lung, with associated collapse and consolidation of the adjacent lung parenchyma. Additionally, there was evidence of focal pleural calcification, pleural thickening, and a minimal right-sided pleural effusion. An abdominal ultrasound was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Congenital Cystic Adenomatoid Malformation (CCAM)",
+      "rule_out_reason": "Considered as a primary congenital cystic parenchymal malformation in a young child, but the internal appearance of a collapsed, detached wavy membrane (water-lily sign) pointed to parasitic cyst rupture rather than an uncomplicated developmental cyst alone.",
+      "quote": "Contrast enhanced CT scan thorax revealed an 8.5x7.5x6.5 cm air-filled cavitary lesion with detached dependent wavy membrane in the lower lobe of right lung with collapse / consolidation of the adjacent lung parenchyma (Fig. 2)."
+    },
+    {
+      "candidate": "Pyogenic Lung Abscess / Cavitary Pneumonia",
+      "rule_out_reason": "Considered given chronic productive cough, air-filled cavitary lung lesion, adjacent parenchymal consolidation, and pleural effusion, but ruled out by the indolent 7-month course without acute toxemia and the pathognomonic detached laminar membrane.",
+      "quote": "There was evidence of focal pleural calcification, pleural thickening and minimal pleural effusion on the right side."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Thoracotomy and histopathological examination demonstrated the characteristic laminated cuticular and germinal layers confirming a hydatid cyst, with underlying features of CCAM type 2 in the adjacent lung tissue.",
+      "quote": "Histopathological examination of the specimen was consistent with hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Surgical intervention and histopathology excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

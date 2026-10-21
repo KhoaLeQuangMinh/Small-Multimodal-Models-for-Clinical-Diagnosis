@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11045152_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 48-year-old woman with Sjögren's syndrome presented with an expanding, painful sternoclavicular swelling, dysphagia, cortical bone erosion, and regional lymphadenopathy without pulmonary symptoms or systemic fever. The clinical tension lies in distinguishing acute pyogenic bacterial osteomyelitis or bone neoplasm from extrapulmonary tuberculous cold abscess and osteomyelitis.\n2. Admission Breakpoint: The breakpoint stops after initial clinical exam, inflammatory markers, plain chest radiography, and CT imaging, strictly prior to fine-needle aspiration of the lesion, ZN staining, CBNAAT, and AFB culture.\n3. Differential Distinctions: Acute pyogenic bacterial osteomyelitis presents with erythema, warmth, and acute fever, whereas this mass was a painless 'cold abscess' for 45 days. Bone neoplasms/metastases feature cortical osteolysis and lymphadenopathy, but cytology demonstrated caseous necrosis with acid-fast bacilli and positive CBNAAT for Mycobacterium tuberculosis.",
+  "case_prompt": "A 48-year-old woman presented to the surgical outpatient clinic with a 45-day history of swelling on the left anterior chest wall below the medial end of the clavicle. Over the preceding 15 days, the swelling had increased in size, become painful, and caused difficulty in swallowing. She had a known medical history of Sjögren's syndrome and primary hypothyroidism. She had no history of fever, cough, night sweats, or loss of appetite, no history of trauma, and no significant family history.\n\nOn physical examination, a 3 cm × 3 cm swelling was present below the medial end of the left clavicle; the overlying skin and local skin temperature were normal. A clinical diagnosis of a cold abscess was suspected.\n\nInitial laboratory evaluation revealed mild anemia with hemoglobin of 9.8 g/dL, an elevated erythrocyte sedimentation rate (ESR) of 80 mm/h, and a C-reactive protein (CRP) of 37 mg/L. Human immunodeficiency virus (HIV) serology was negative. Chest radiography revealed focal cortical destruction in the left side of the sternum with no obvious opacities in either lung. Ultrasonography showed a well-defined heterogeneous hypoechoic subcutaneous lesion measuring 2.7 cm × 2.8 cm below the medial end of the left clavicle with cortical bone destruction of the anterior clavicle and surrounding hyperechoic inflamed fat. High-resolution computed tomography (HRCT) of the thorax revealed focal bone destruction and erosion of the anterior cortex of the left manubrium sterni and medial clavicle, a well-defined hypodense collection with peripheral rim enhancement extending into the left sternoclavicular joint, and heterogeneously enhancing non-necrotic left axillary and anterior chest wall lymph nodes, with clear lungs and pleura.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic sternoclavicular osteomyelitis / bacterial abscess",
+      "rule_out_reason": "Bony destruction and rim-enhancing abscess collection suggested acute bacterial osteomyelitis (e.g., S. aureus), but normal overlying skin temperature, absent systemic fever, and indolent 45-day course supported a cold abscess rather than acute bacterial infection.",
+      "quote": "the swelling was 3 cm x 3 cm, and the overlying skin and temperature were normal [Figure 1a arrow]. She had no history of trauma. A clinical diagnosis of a cold abscess was suspected."
+    },
+    {
+      "candidate": "Bone neoplasm / Chest wall malignancy",
+      "rule_out_reason": "Focal cortical bone erosion of the clavicle and sternum with regional axillary lymphadenopathy raised concern for primary or metastatic bone tumor, but aspirate showed inflammatory caseous necrosis and acid-fast bacilli without malignant cells.",
+      "quote": "High resolution computed tomography (HRCT) thorax and abdomen scans showed focal bone destruction with the erosion of the anterior cortex on the left side of the manubrium sternum and the anterior cortex of the medial end of left clavicle."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided aspiration yielded caseous necrotic material containing acid-fast bacilli on Ziehl-Neelsen stain, confirmed by Cartridge-based nucleic acid amplification test (CBNAAT) and AFB culture as Mycobacterium tuberculosis.",
+      "quote": "H and E stained smears showed amorphous to granular eosinophilic material (caseous necrosis) with many viable polymorphs, red blood cells, and lymphocytes [Figure 2a arrow]. ZN stain showed many acid-fast bacilli [Figure 2b arrow]. A diagnosis of tubercular abscess was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission triage findings. Excluded aspiration smear cytology, ZN stain, CBNAAT, and AFB culture results from case prompt. Quotes verified against source text."
+}

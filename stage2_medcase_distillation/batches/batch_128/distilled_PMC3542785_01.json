@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3542785_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 18-year-old previously healthy female presents with intractable hiccups and progressive dyspnea over 3 months, with complete left hemithorax dullness and absent breath sounds, alongside sheep and dog exposure. The clinical tension lies in differentiating an atypical giant pulmonary parasitic cyst causing diaphragmatic irritation from massive pleural effusion, empyema, diaphragmatic hernia, or intrathoracic neoplasms.\n2. Admission Breakpoint: The admission breakpoint is established after clinical examination, baseline laboratory investigations (Hb 10 g/dL, WBC 5,700/\u03bcL, CRP 62 mg/L), and plain chest radiograph showing massive opacification of the left hemithorax, prior to thoracic ultrasound/CT detailing internal daughter cysts and surgical excision.\n3. Differential Distinctions: Massive pleural effusion or fibrothorax (causes dullness and opacity, but thoracentesis/cross-sectional imaging identifies an intraparenchymal fluid collection), congenital lung cysts or bronchogenic cysts (rarely attain 29 cm and do not contain daughter vesicles), and pleural neoplasms (solid, invasive, lacking fluid daughter cysts). Thoracic CT and intraoperative findings of a 29 x 17 cm cystic mass containing daughter cysts confirm echinococcosis despite negative Echinococcus serology.",
+  "case_prompt": "An 18-year-old woman presents with a 3-month history of persistent hiccups and progressive dyspnea. The patient was otherwise healthy, but reports regular domestic exposure to dogs and sheep. Pulmonary examination reveals complete abolition of breath sounds on auscultation of the left hemithorax, which is dull to percussion. Abdominal examination is unremarkable. Postero-anterior chest radiography demonstrates a very large, dense, homogeneous opacity occupying nearly the entire left lung. Laboratory investigations reveal hemoglobin 10.0 g/dL, white blood cells 5,700/\u03bcL, and C-reactive protein 62 mg/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Massive pleural effusion or empyema",
+      "rule_out_reason": "Considered due to complete unilateral hemithoracic opacification, dullness to percussion, and absent breath sounds, but thoracic imaging revealed a giant encapsulated intrapulmonary cystic fluid lesion rather than free pleural fluid collection.",
+      "quote": "The computed tomography of thorax revealed a giant cystic lesion (29 cm x 17cm) occupying a large proportion of the left lung and pushing the heart to the right side (Figure 2)."
+    },
+    {
+      "candidate": "Congenital pulmonary airway malformation or Bronchogenic cyst",
+      "rule_out_reason": "Congenital bronchopulmonary foregut cysts can be cystic and large, but they rarely present de novo as a 29 cm mass in an 18-year-old with internal daughter vesicles and close contact with dogs and sheep.",
+      "quote": "Sonographic evaluation of the chest revealed a voluminous fluid collection occupying nearly the entire left hemithorax. The greatest collection contains daughter cysts."
+    },
+    {
+      "candidate": "Intrathoracic malignancy (e.g., Pleuropulmonary blastoma, synovial sarcoma)",
+      "rule_out_reason": "Primary thoracic malignancies can produce massive unilateral thoracic opacification with mediastinal shift, but imaging and intraoperative examination demonstrated a non-invasive fluid cyst with viable daughter cysts.",
+      "quote": "The computed tomography of thorax revealed a giant cystic lesion (29 cm x 17cm) occupying a large proportion of the left lung and pushing the heart to the right side (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Computed tomography demonstrating a giant 29 x 17 cm cystic lesion occupying the left lung and pushing the mediastinum, followed by intraoperative confirmation and conservative excision of the giant viable hydatid cyst.",
+      "quote": "The diagnosis of giant hydatid cyst was made intraoperatively and cyst was removed conservatively."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed strictly before ultrasound and CT identification of daughter cysts and surgery. Zero mention of hydatid, Echinococcus, or daughter cysts in the prompt. Quotes match source text."
+}

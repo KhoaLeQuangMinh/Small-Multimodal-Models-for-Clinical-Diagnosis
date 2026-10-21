@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7528117_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 52-year-old female rural agricultural worker presenting with a 3-month history of hoarseness and an extensive granulomatous palatopharyngeal lesion accompanied by long-standing nasal crusting, epistaxis, and nasal septal perforation. The extensive mucosal ulcerations and pseudoepitheliomatous hyperplasia closely mimic oral squamous cell carcinoma, deep systemic mycoses (paracoccidioidomycosis), or denture-related oral candidiasis.\n2. Admission Breakpoint: Following initial physical examination, intraoral and extrabuccal inspection, baseline hemogram (microcytic hypochromic red cell indices), and plain radiographs of the chest and nasal bones, prior to topical antifungal trial, send-out mycological examination, and Montenegro intradermal testing.\n3. Differential Distinctions: Squamous cell carcinoma demonstrates invasive dysplastic keratinocytes on biopsy; paracoccidioidomycosis presents with 'mulberry-like' ulcerations and pathognomonic 'mariner's wheel' budding yeasts on direct mycological exam; mucosal leishmaniasis is distinguished by granulomatous infiltration with positive Montenegro skin test and complete resolution with pentavalent antimonials.",
+  "case_prompt": "A 52-year-old female agricultural worker residing in a rural community presented to an oral medicine service for evaluation of an extensive palatal lesion and progressive hoarseness that had persisted for 3 months following an acute upper respiratory illness. She had worked in sugarcane fields for many years and reported a 4-year history of recurrent nasal crusting and epistaxis. She reported a 6-month smoking history, denied chronic prescription medications or systemic disorders, and had worn full maxillary and mandibular dentures continuously. Prior laryngoscopy at an outside clinic had revealed an extensive laryngeal/pharyngeal mucosal lesion with histopathologic tissue sampling showing pseudoepitheliomatous hyperplasia and chronic active inflammation.\n\nPhysical examination revealed nasal congestion, hyponasal speech, and mouth breathing. Extrabuccal examination demonstrated depression of the right nasal ala and perforation of the cartilaginous nasal septum. Intraoral examination revealed an extensive, erythematous, granulomatous lesion involving the entire hard and soft palate and uvula, extending bilaterally to the pharyngeal walls, with scattered white plaques that could be removed by scraping.\n\nA hemogram revealed microcytosis, moderate hypochromia, basophilic stippling, and mild polychromatophilia. A plain chest radiograph showed prominent bronchovascular markings. Plain radiography of the nasal bones demonstrated preservation and structural integrity of the bony nasal septum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Paracoccidioidomycosis",
+      "rule_out_reason": "Considered as a leading differential diagnosis given rural agricultural sugarcane exposure, chronic destructive naso-oropharyngeal mucosal lesions, and pseudoepitheliomatous hyperplasia; excluded by negative direct mycological examination.",
+      "quote": "Direct mycological was negative. On clinical examination, no changes were noticed in the appearance of lesions after use of antifungal mouthwashes."
+    },
+    {
+      "candidate": "Oral Candidiasis (Candidosis)",
+      "rule_out_reason": "Considered due to continuous denture wear and removable white plaques overlying erythematous mucosa; excluded when an empiric course of nystatin oral suspension produced no clinical improvement or change in the granulomatous lesions.",
+      "quote": "Diagnostic hypotheses of mucosal leishmaniasis and paracoccidioidomycosis associated with candidosis were formulated. Mouth rinse using nystatin oral solution, hand hygiene instructions, and night removal of the prosthesis were prescribed. In posterior return, the hemogram and chest X-ray previously requested by the doctor were evaluated."
+    },
+    {
+      "candidate": "Squamous Cell Carcinoma / Head and Neck Malignancy",
+      "rule_out_reason": "Considered given smoking history, destructive mucosal ulceration, and pseudoepitheliomatous hyperplasia on referral biopsy; excluded by absence of cytological malignancy on deep incisional biopsy.",
+      "quote": "According to the doctor's report, the patient presented extensive oral lesion, having undergone a laryngoscopy and biopsy, with a histopathological result of pseudoepitheliomatous hyperplasia and an active chronic inflammatory process, suggesting a fungus investigation, the reason why the doctor referred her to our service."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive diagnosis of mucosal leishmaniasis was confirmed by an intensely reactive Montenegro intradermal test demonstrating an exacerbated bullous reaction, along with biopsy findings compatible with chronic granulomatous infiltration, followed by complete clinical mucosal healing upon treatment with meglumine antimoniate (Glucantime).",
+      "quote": "The MIT test was positive with an exacerbated reaction (bubble formation) (Figure 6)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled to admission breakpoint at the Oral Medicine Service. Prompt completely avoids pathogen spoilers while capturing occupational sugarcane exposure and nasal-septal destruction. Quotes verified."
+}

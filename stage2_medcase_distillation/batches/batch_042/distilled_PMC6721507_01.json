@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6721507_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 34-year-old previously healthy male presenting after 5 days of high-grade fever with right hypochondrial pain, tea-colored urine, profound jaundice, and tender hepatomegaly. Initial labs demonstrate massive transaminitis (AST 5,162 U/L, ALT 3,964 U/L) and direct hyperbilirubinemia alongside marked leukopenia (3,000/μL) and thrombocytopenia (116,000/μL). The clinical tension is determining whether this extreme hepatocellular injury is an isolated enteric viral hepatitis (hepatitis A), acute severe arboviral hepatitis (dengue with severe hepatic impairment), acute cholangitis/leptospirosis, or a rare true coinfection of dengue virus and hepatitis A virus.\n2. Admission Breakpoint: Initial emergency triage assessment following history, physical examination, and baseline laboratory panels (CBC, coagulation profile, basic metabolic profile, and liver biochemistries). Specific send-out serological assays (dengue IgM immunoassay and hepatitis A IgM ELISA) begin after this breakpoint.\n3. Differential Distinctions: Isolated acute hepatitis A monoinfection was considered given profound transaminitis (>3,000-5,000 U/L) and deep jaundice; however, hepatitis A alone does not cause marked leukopenia (3,000/μL) and thrombocytopenia (116,000/μL) during defervescence, which indicated concurrent arboviral infection confirmed by serology. Severe dengue with acute liver failure was considered, but ruled out by preserved hepatic synthetic function (normal PT/INR throughout) and absence of plasma leakage or shock. Leptospirosis was excluded by leukopenia rather than neutrophilia and hepatocellular rather than cholestatic/renal injury.",
+  "case_prompt": "A 34-year-old previously healthy male presented with a 5-day history of high-grade fever accompanied by constitutional symptoms. Two days prior to admission, he developed right hypochondrial pain, dark tea-colored urine, and yellowish discoloration of the eyes. He reported severe loss of appetite for food and water, but his bowel habits remained normal throughout the illness.\nOn physical examination at admission, the patient was afebrile with normal vital signs. He was deeply icteric. Abdominal examination revealed a tender, mild hepatomegaly without palpable splenomegaly or ascites. Cardiovascular, respiratory, and neurological examinations were entirely normal.\nLaboratory investigations revealed a white blood cell count of 3,000/μL and a platelet count of 116,000/μL. Liver biochemistries demonstrated severe transaminitis, with an aspartate aminotransferase (AST) of 5,162 U/L and an alanine aminotransferase (ALT) of 3,964 U/L. Initial total bilirubin was elevated at 61.7 μmol/L with an increased direct conjugated fraction. Serum total protein and prothrombin time/international normalized ratio (PT/INR) were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated acute viral hepatitis A (monoinfection)",
+      "rule_out_reason": "Considered due to deep jaundice, tender hepatomegaly, marked conjugated hyperbilirubinemia, and extreme transaminase elevation (>3,000-5,000 U/L). However, acute hepatitis A monoinfection does not typically cause simultaneous marked leukopenia (3,000/μL) and thrombocytopenia (116,000/μL), which indicated concurrent arboviral disease confirmed on serology.",
+      "quote": "His full blood count revealed a white cell count of 3 x 103 muL with a platelet count of 116 x 103 muL."
+    },
+    {
+      "candidate": "Severe dengue with acute liver failure / Dengue hemorrhagic fever (DHF)",
+      "rule_out_reason": "Considered because of acute febrile illness with subsequent defervescence, leukopenia, thrombocytopenia, and extreme transaminitis. However, the patient preserved hepatic synthetic function throughout admission with normal PT/INR, had no encephalopathy, and did not develop plasma leakage, hemoconcentration, or hemorrhagic manifestations.",
+      "quote": "His prothrombin time/international normalized ratio (PT/INR) and serum protein were normal throughout the illness."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal confirmatory turning point was serological evaluation demonstrating positive dengue IgM antibodies via chromatographic immunoassay co-existing with positive hepatitis A IgM antibodies via ELISA, confirming a rare acute coinfection of dengue virus and hepatitis A virus.",
+      "quote": "His dengue IgM antibody done by chromatographic immunoassay was positive on the 6th day of the illness. Hepatitis A IgM antibody done by the ELISA technique was positive on day 6 of the illness, while hepatitis A IgG antibody was negative."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified admission breakpoint strictly excludes dengue and hepatitis A serological testing and subsequent hospital clinical monitoring."
+}

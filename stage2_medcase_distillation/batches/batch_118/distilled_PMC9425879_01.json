@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9425879_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 38-year-old woman with treated retroviral disease and prior pulmonary infection presents with bilateral panuveitis, retinal vasculitis, and severe progressive visual loss. In an HIV-positive patient from sub-Saharan Africa, ocular symptoms are almost universally presumed to represent CMV retinitis, ocular toxoplasmosis, syphilis, or tuberculosis; intraocular cestode cystic disease is an extraordinarily rare masquerader.\n2. Admission Breakpoint: The admission breakpoint is reached following admission to the district hospital, completion of initial ophthalmologic exam, brain CT, chest radiograph, baseline CBC with eosinophil count, inflammatory markers, and liver ultrasonography, prior to the results of send-out parasitic and infectious serologies.\n3. Differential Distinctions: Ocular cysticercosis presents similarly with intraocular cysts and retinal detachment in rural farm dwellers, but is differentiated by negative specific cysticercosis ELISA. Viral (CMV, HSV) or parasitic (Toxoplasma) retinitis causes severe necrotizing retinal vasculitis in HIV patients, but lack the distinctive 'double-walled' cystic structure and show negative serologies.",
+  "case_prompt": "A 38-year-old South African woman is admitted to a district hospital with progressive, painless bilateral vision loss and mild intermittent headaches responsive to simple analgesics. She has a history of HIV infection diagnosed in 2006, previously complicated by treatment default and virological failure (CD4 nadir 39 cells/μL), currently stabilized on second-line antiretroviral therapy with an HIV viral load of 136 copies/mL and CD4 count of 132 cells/μL. She previously received treatment for pulmonary infection and was treated 11 months earlier for bilateral panuveitis and macular edema with local corticosteroid and bevacizumab injections. She previously worked as a domestic worker, has resided on a farm, consumed cooked meat, and reports a history of swimming in rivers. She denies eye trauma.\n\nOn physical examination, she is an obese woman with normal vital signs. Snellen visual acuity is 6/60 in the right eye and 1/60 in the left eye, with no improvement on pinhole testing. Anterior segment examination reveals bilateral corneal pigmented keratic precipitates, inflammatory cells in the anterior chamber and anterior vitreous humour, and lenticular opacities. Dilated fundus examination demonstrates bilateral optic disc pallor with macular striae and exudates, along with retinal vasculitis and extensive non-perfused retinal vessels.\n\nLaboratory evaluation reveals a white blood cell count of 7.26 × 10⁹/L with peripheral eosinophilia of 5.70% (absolute eosinophils 0.41 × 10⁹/L), C-reactive protein of 47 mg/L, and erythrocyte sedimentation rate of 93 mm/hr. Serum angiotensin-converting enzyme is mildly elevated at 101 U/L, and rheumatoid factor is weakly positive at 13.0 IU/mL; antinuclear antibodies are negative. Serum vitamin B12 and folate levels are normal. Chest radiography is normal. Abdominal ultrasonography reveals no focal cystic lesions in the liver parenchyma. Brain computed tomography (CT) reveals a small focus of nodular irregular thickening along the right retina adjacent to the optic nerve insertion without calcifications, intracranial infarcts, or parenchymal enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ocular Cysticercosis (Taenia solium)",
+      "rule_out_reason": "Rural farm residence, exposure to meat, intraocular mass effect with retinal traction, and peripheral eosinophilia raised suspicion for cysticercosis; however, specific cysticercosis enzyme-linked immunosorbent assay (ELISA) was negative.",
+      "quote": "Parasitic serology revealed a cysticercosis ELISA IgG negative value of 0.2, while the Echinococcus ELISA IgG was positive with a value of 1.3."
+    },
+    {
+      "candidate": "Opportunistic Retinal Infections (CMV Retinitis, Ocular Toxoplasmosis, Syphilitic Uveitis)",
+      "rule_out_reason": "Profound prior CD4 nadir in an HIV patient presenting with panuveitis, retinal vasculitis, and visual loss typically points to opportunistic viral, treponemal, or protozoal retinitis; all corresponding serological assays were negative.",
+      "quote": "Syphilis serology tests were negative (Treponema pallidum haemagglutinin assay, fluorescent treponemal antibody absorption test). Herpes simplex virus (HSV) IgM result was negative. Both cytomegalovirus IgM result and Toxoplasma gondii IgM ELISA result were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Advanced retinal imaging demonstrating tractional bands and a characteristic 'double-walled sign' representing an echinococcal cystic cavity in the posterior segment, corroborated by positive specific Echinococcus ELISA serology.",
+      "quote": "Figure 5 depicts the left eye with tractional bands and shows a 'double-walled sign' suggestive of echinococcal cystic cavity, causing traction on the retina... while the Echinococcus ELISA IgG was positive with a value of 1.3."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9425879_01. Specific serology and double-walled cystic imaging sign withheld from case_prompt. Verbatim quotes match source text."
+}

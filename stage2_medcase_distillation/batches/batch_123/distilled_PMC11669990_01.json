@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11669990_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A man in his late 20s with prior extended residence in an endemic country (Bangladesh) presents with chronic, treatment-refractory dysuria, diminished renal function (eGFR 61 mL/min/1.75 m²), and grade 2 unilateral hydronephrosis with renal polar lesions and regional lymphadenopathy. This presentation closely mimics recurrent bacterial lower urinary tract infection or urothelial/renal malignancy, obscuring extrapulmonary genitourinary tuberculosis.\n2. Admission Breakpoint: The admission breakpoint falls after initial urological evaluation, baseline laboratory renal function assessment, ultrasound, and cross-sectional CT imaging of the urinary tract demonstrating hydronephrosis and renal polar lesions, but strictly prior to invasive diagnostic cystoscopy, bladder mucosal biopsy, and urine mycobacterial culture.\n3. Differential Distinctions: Recurrent bacterial cystitis/pyelonephritis typically responds promptly to empiric antibiotics and does not induce chronic nodular renal polar masses or ureteric strictures causing hydronephrosis. Urothelial or renal cell carcinoma can present with renal masses, hydronephrosis, and adenopathy, but histopathology shows inflammatory epithelioid macrophages without atypia. The diagnostic pivot is established by bladder biopsy demonstrating epithelioid macrophage aggregates and positive urine AFB culture yielding Mycobacterium tuberculosis.",
+  "case_prompt": "A man in his late 20s is referred to the urology clinic by his general practitioner for evaluation of chronic, recurrent dysuria and grade 2 left hydronephrosis previously identified on an outpatient ultrasound of the kidneys, ureters, and bladder. Although born in the United Kingdom, he had spent several months living in Bangladesh during multiple visits across his life. He has no known history of sick contacts or personal history of chronic disease.\n\nOn physical examination, he appears well-nourished and in no acute distress. Vital signs are within normal limits. Abdominal and genitourinary examinations are unremarkable, with no palpable flank masses or costovertebral angle tenderness.\n\nInitial laboratory evaluation demonstrates an estimated glomerular filtration rate (eGFR) of 61 mL/min/1.75 m². A non-contrast and contrast-enhanced computed tomography (CT) scan of the kidneys demonstrates a focal lesion in the lower pole of the left kidney, left-sided hydronephrosis, and diffuse urothelial thickening. A subsequent CT-urogram confirms both upper and lower pole lesions in the left kidney, accompanied by architectural changes of the left ureter and regional retroperitoneal lymphadenopathy, interpreted as consistent with a chronic inflammatory or atypical infectious process.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent Bacterial Cystitis / Chronic Pyelonephritis",
+      "rule_out_reason": "Chronic dysuria and hydronephrosis in a young patient are often initially managed as refractory bacterial urinary tract infections; however, persistent symptoms, progressive unilateral renal impairment, and multipolar parenchymal lesions with ureteric changes pointed toward an atypical, granulomatous disease process.",
+      "quote": "A man in this late 20s was referred to urology by his general practitioner with recurrent dysuria and grade 2 hydronephrosis found on ultrasound scan of the kidney, ureters, and bladder."
+    },
+    {
+      "candidate": "Urothelial Carcinoma / Renal Cell Carcinoma",
+      "rule_out_reason": "The presence of bilateral polar renal masses, severe urothelial thickening, and regional lymphadenopathy raised concern for aggressive genitourinary malignancy; however, endoscopic examination and histology revealed ulcerated mucosa with epithelioid macrophage infiltrates rather than neoplasia.",
+      "quote": "CT-urogram confirmed upper and lower pole lesions of the left kidney with ureteric changes and lymphadenopathy consistent with chronic atypical infection... Histological analysis of three bladder biopsies taken during the procedure showed intensely inflamed and ulcerated mucosa."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Genitourinary Tuberculosis",
+      "rule_out_reason": "The diagnosis was confirmed by cystoscopy demonstrating severe inflammatory distortion of the bladder mucosa, histopathology revealing aggregates of epithelioid macrophages, and urine AFB culture confirming Mycobacterium tuberculosis sensitive to standard first-line antitubercular therapy.",
+      "quote": "Histological analysis of three bladder biopsies taken during the procedure showed intensely inflamed and ulcerated mucosa. The underlying stroma contained sheets and ill-defined aggregates of macrophages, some of which were epithelioid in appearance. Following this, a urine AFB culture was requested and found to be positive for M. tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Presentation narrative halts prior to cystoscopy, tissue biopsy, and urine mycobacterial culture."
+}

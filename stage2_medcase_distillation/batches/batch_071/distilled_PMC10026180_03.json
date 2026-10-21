@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10026180_03",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 3.2-year-old immunodeficient boy with severe recalcitrant dermatitis managed with long-term topical corticosteroids presents with progressive, thick hyperkeratotic crusted plaques covering his body, palms, and soles. The core tension is distinguishing refractory eczematous or psoriasiform dermatitis associated with primary immunodeficiency from crusted Norwegian scabies exacerbated by immunosuppression.\n2. Admission Breakpoint: The presentation ends after clinical dermatologic examination, review of immunodeficiency history, and baseline hematologic investigations, immediately prior to diagnostic skin biopsy, skin scrapings for ectoparasites, and specialized acaricidal trials.\n3. Differential Distinctions: Severe atopic or psoriasiform dermatitis explains chronic erythema and scaling in an immunodeficient child but does not account for contagion to household caregivers or widespread hyperkeratotic palmar-plantar crusting. Seborrheic dermatitis predominantly affects the scalp and flexures and lacks intense pruritus and household transmission.",
+  "case_prompt": "A 3.2-year-old boy born to consanguineous parents presents with a chronic, progressive, intensely pruritic erythematous papular and crusted cutaneous eruption involving his scalp, face, trunk, palms, and soles. His medical history is significant for primary immunodeficiency (mucosa-associated lymphoid tissue lymphoma translocation protein 1 [MALT1] deficiency) characterized by failure to thrive, recurrent sinopulmonary infections, chronic colitis, and autoimmune vitiligo, managed with monthly intravenous immunoglobulin, systemic corticosteroids, and prophylactic antimicrobials. He also carries a history of severe dermatitis that was managed with chronic topical high-potency corticosteroid therapy (betamethasone), which resulted in secondary hypothalamic-pituitary-adrenal axis suppression and hirsutism. Close family members and caregivers also report pruritus. Physical examination reveals diffuse erythematous crusted papules and thick hyperkeratotic plaques involving the face, scalp, trunk, extremities, palms, and soles. Baseline laboratory evaluation demonstrates leukocytosis (white blood cell count 26.7 x 10³/mcL) with lymphocytosis (16.5 x 10³/mcL).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Psoriasiform dermatitis / Severe primary immunodeficiency-associated eczema",
+      "rule_out_reason": "Refractory dermatitis since infancy and initial histopathologic findings of psoriasiform dermatitis suggested an endogenous inflammatory dermatosis; however, transmission of pruritus to close caregivers and rapid progression to thick hyperkeratotic crusted plaques pointed to an infectious ectoparasitic cause.",
+      "quote": "Skin biopsy from a crusted papule on the left lower back showed psoriasiform dermatitis. No parasites were seen, but due to a high clinical suspicion, scabies infection was suspected."
+    },
+    {
+      "candidate": "Infantile seborrheic dermatitis / Cutaneous Langerhans cell histiocytosis",
+      "rule_out_reason": "Infantile crusted scalp and facial eruptions in a child with failure to thrive suggested severe seborrheic dermatitis or histiocytosis; however, severe pruritus, involvement of the palms and soles, and contagion to household contacts ruled out this possibility.",
+      "quote": "At 11 months, he presented with seborrheic dermatitis and diffuse depigmented macules on the face, trunk, and extremities, diagnosed as vitiligo, which progressed to a widespread distribution including his face, trunk, and extremities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of skin scrapings from the hyperkeratotic crusted plaques revealed abundant Sarcoptes scabiei mites, confirming Norwegian (crusted) scabies facilitated by underlying cellular immunodeficiency and prolonged topical corticosteroid therapy.",
+      "quote": "Rash recurred and progressed to thick hyperkeratotic plaques on the extremities, palms, and soles (Figure 3A,B). Scraping from the keratotic skin lesions was positive for Sarcoptes scabies, and Norwegian scabies was diagnosed."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to skin scrapings and acaricide therapy. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10182374_02",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 17-year-old female with known bronchial asthma presents with a one-week history of persistent post-prandial epigastric pain, vomiting, diarrhea, and low-grade fever. The predominance of gastrointestinal symptoms and localized epigastric tenderness masks a life-threatening protozoal infection, which manifests with hemolytic jaundice, pallor, anemia, and profound thrombocytopenia, and rapidly decompensates into hyperparasitemic multi-organ distress.\n2. Admission Breakpoint: The breakpoint is set immediately after initial emergency triage—including history of asthma, one week of gastrointestinal and febrile symptoms, physical examination demonstrating lethargy, pallor, mild jaundice, and epigastric tenderness, vitals (tachycardia 109 bpm, temp 37.8°C), and baseline blood tests (low hemoglobin, low platelet count, normal renal function)—prior to blood film parasite quantification, artesunate therapy, subsequent respiratory decompensation, and COVID-19 RT-PCR.\n3. Differential Distinctions: Acute gastroenteritis or peptic ulcer disease causes fever, postprandial epigastric pain, and emesis, but does not cause acute hemolytic pallor, jaundice, and thrombocytopenia. Acute asthma exacerbation causes respiratory distress in known asthmatics but does not explain fever, jaundice, or hematologic cytopenias. Severe malaria commonly presents with 'algid' or 'gastrointestinal' malaria syndromes in adolescents, characterized by abdominal pain, vomiting, jaundice, and marked thrombocytopenia.",
+  "case_prompt": "A 17-year-old female with a medical history of bronchial asthma presented to the emergency department with a one-week history of persistent fever and severe post-prandial epigastric pain associated with recurrent vomiting and watery diarrhea. She had previously sought care at an outpatient peripheral clinic, where empiric oral analgesics were prescribed without symptomatic relief.\n\nOn physical examination at admission, the patient appeared lethargic, pale, and mildly jaundiced. Abdominal examination revealed localized tenderness on palpation in the epigastrium; there was no guarding, rigidity, or palpable hepatosplenomegaly. Initial vital signs revealed a body temperature of 37.8°C and a pulse rate of 109 beats per minute. Blood pressure and oxygen saturation on ambient room air were within normal limits.\n\nBaseline triage laboratory investigations revealed a reduced hemoglobin concentration consistent with anemia and a markedly low platelet count (thrombocytopenia). Renal function testing, including serum urea and creatinine, was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Gastroenteritis / Peptic Ulcer Disease",
+      "rule_out_reason": "Considered primary on initial presentation given one week of persistent post-prandial epigastric pain, recurrent vomiting, diarrhea, and localized epigastric tenderness. Ruled out as the primary etiology because uncomplicated gastrointestinal mucosal inflammation cannot account for systemic lethargy, jaundice, pallor, and pronounced bicytopenia (anemia and thrombocytopenia).",
+      "quote": "presented to the emergency room with a week s history of persistent post-prandial epigastric pain associated with vomiting, diarrhea, and fever. She had reported to a peripheral clinic where she was given analgesics without relief."
+    },
+    {
+      "candidate": "Acute Severe Asthma Exacerbation",
+      "rule_out_reason": "Considered in light of the patient's known background of asthma and subsequent risk for sudden bronchospastic respiratory decompensation. Ruled out as the primary cause of the initial syndrome because the baseline presentation lacked wheezing or hypoxemia and featured systemic fever, jaundice, and hematologic cytopenias that cannot be explained by asthma.",
+      "quote": "The impression made was severe acute respiratory distress syndrome (ARDS) with a differential diagnosis of septic shock, and acute exacerbation of asthma, to rule out COVID-19."
+    },
+    {
+      "candidate": "Bacterial Sepsis with Disseminated Intravascular Coagulation",
+      "rule_out_reason": "Considered given fever, lethargy, abdominal symptoms, anemia, and acute thrombocytopenia. Ruled out as the primary etiology by normal initial renal function and blood pressure, followed by rapid microscopic visualization of heavy intracellular hemoparasitemia.",
+      "quote": "at presentation, the patient was lethargic, had a tinge of jaundice, pallor, and had a mild tenderness in the epigastrium, with no palpable abdominal organ."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when peripheral blood film microscopy demonstrated severe hyperparasitemia with 600,000 parasites/μL, establishing the diagnosis of severe malaria with concurrent profound thrombocytopenia and anemia.",
+      "quote": "Laboratory results showed malaria parasites of 600,000/mul, reduced haemoglobin level and low platelets, and normal renal function test (Table 2)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at emergency presentation prior to microscopic parasite counting. Zero disease spoilers in case_prompt. Verbatim quotes from case text verify differential rule-outs and diagnostic pivot. Target canonical disease Malaria verified."
+}

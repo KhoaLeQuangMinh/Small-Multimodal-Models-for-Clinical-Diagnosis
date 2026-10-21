@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10791562_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A middle-aged woman presents with chronic right upper quadrant pain, altered bowel habits, positive fecal occult blood, weight loss, and multiple solid hypodense bilobar hepatic lesions with rectal thickening, perfectly masquerading as primary colorectal adenocarcinoma metastatic to the liver.\n2. Admission Breakpoint: Emergency department and hospital admission evaluation including clinical history, physical examination (mild RUQ tenderness, low-grade fever), admission labs (anemia, leukocytosis, elevated CRP/ALP/LDH, stool occult blood), and initial abdominal ultrasound / CT findings of liver lesions and rectal wall thickening, stopping strictly before tumor markers, colonoscopy, and liver biopsy histopathology.\n3. Differential Distinctions: Colorectal adenocarcinoma with hepatic metastases presents identically with constitutional symptoms, occult GI bleeding, rectal wall thickening, and multifocal liver nodules, but is distinguished by positive endoscopic mucosal lesions, elevated tumor markers (CEA/CA 19-9), and neoplastic histology. Visceral mycobacterial pseudotumors produce necrotizing caseating granulomas in hepatic parenchyma without primary mucosal malignancy.",
+  "case_prompt": "A 55-year-old female presents to the emergency department with a one-year history of dull, non-radiating right upper quadrant abdominal pain occurring at irregular intervals, associated with altered bowel habits, progressive weight loss, and low-grade fevers accompanied by shivering and chills. She has no known pre-existing medical conditions, no family history of chronic illness, and no known sick contacts.\n\nOn physical examination, the pulse rate is 84 beats per minute, temperature is 99.0°F (37.2°C), and blood pressure is 125/85 mmHg. The abdomen is soft, non-distended, and exhibits mild tenderness on palpation in the right upper quadrant without peritoneal signs or palpable masses.\n\nInitial laboratory studies show a hemoglobin level of 9.7 g/dL, hematocrit of 29.8%, and a white blood cell count of 18.83 x 10^3/uL. Serum C-reactive protein is elevated at 131.41 mg/dL, alkaline phosphatase is 337 U/L, and lactate dehydrogenase is 441 U/L. Stool evaluation for occult blood is positive. Other baseline biochemical and metabolic parameters are within normal limits. Abdominopelvic ultrasonography reveals multiple solid iso-hypoechoic lesions in both the right and left lobes of the liver, ranging from several millimeters to 3 cm in diameter. Contrast-enhanced computed tomography of the abdomen and pelvis confirms extensive non-enhancing hypodense hepatic nodules measuring 1 to 3 cm bilaterally, accompanied by thickened rectal wall, subcapsular and parenchymal deposits, and para-aortic lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colorectal (Rectal) Adenocarcinoma with Hepatic Metastases",
+      "rule_out_reason": "Considered the primary provisional diagnosis due to rectal wall thickening on CT, positive stool occult blood, severe microcytic anemia, weight loss, and multiple bilobar solid liver lesions, but ruled out when total colonoscopy demonstrated completely normal colorectal mucosa without tumors, polyps, or ulcerations, and serum CEA/CA 19-9 levels were normal.",
+      "quote": "Due to the concerning findings and presentation of the patient, there was a suspicion of rectal carcinoma... The entire course of the large intestine, up to the cecum, was thoroughly investigated during the colonoscopy, however, no obvious signs of strictures, polyps, aberrant growths, or ulcerations were seen (Fig. 3). Therefore, rectal cancer as a probable cause for the patient's condition was screened out."
+    },
+    {
+      "candidate": "Primary Hepatic Malignancy (Hepatocellular Carcinoma / Cholangiocarcinoma)",
+      "rule_out_reason": "Considered due to diffuse multifocal hepatic nodules and markedly elevated alkaline phosphatase and LDH, but liver parenchyma lacked cirrhotic background, serum alpha-fetoprotein (AFP) was negative, and nodules showed non-enhancing, non-hypervascular features.",
+      "quote": "To investigate this possibility further, various tumor markers were assessed, including alpha-fetoprotein (AFP), carcinoembryonic antigen (CEA), and carbohydrate antigen 19-9 (CA 19-9). All of these tumor marker assessments, however, revealed negative outcomes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided percutaneous and subsequent laparoscopic biopsies of the hepatic nodules revealed necrotizing granulomatous inflammation with characteristic caseous necrosis (negative for fungal forms on GMS), confirming diffuse pseudotumoral hepatic tuberculosis.",
+      "quote": "An ultrasound-guided liver biopsy from the right hepatic area was taken whose results were surprising since they showed a pattern of necrotizing granulomatous inflammation with caseous necrosis... During laparoscopy, two tiny biopsies were taken from the liver nodules whose confirmed the results of the initial biopsy, which had previously demonstrated the existence of a necrotizing granulomatous inflammation with an accompanying caseous necrosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation isolates the clinical mimic of metastatic colorectal cancer before endoscopic, serologic tumor marker, or biopsy results. Strict fidelity to source text maintained."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7238330_03",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 5-year-old girl presenting with acute abdominal pain, fever, vomiting, multiple cystic hepatic lesions in segments 7/8 and 4, and mesenteric lymphadenopathy. The presentation mimics pyogenic/amoebic liver abscesses or acute mesenteric adenitis, while initial borderline serology for alveolar echinococcosis confounded the differentiation from cystic echinococcosis.\n2. Admission Breakpoint: The admission breakpoint is established in the emergency room after initial clinical presentation and abdominal ultrasound reveal the multiple hepatic cysts containing transparent fluid and mesenteric lymphadenopathy, prior to send-out parasitic serologies and elevated IgE levels.\n3. Differential Distinctions: Pyogenic/amoebic liver abscess vs. Alveolar echinococcosis (Echinococcus multilocularis) vs. Cystic echinococcosis (Echinococcus granulosus). While ultrasound suggested cystic echinococcosis, ambiguous serologies required follow-up MRI demonstrating characteristic cyst architecture and repeated confirmatory serology.",
+  "case_prompt": "A 5-year-old girl (height 120 cm, weight 21 kg) presents to the emergency room with acute abdominal pain, vomiting, and a fever of 38°C. On initial emergency assessment, an abdominal ultrasound is performed, which demonstrates two well-defined cystic lesions measuring 2.3 cm and 1.8 cm containing transparent fluid in hepatic segments 7/8, and a single 1.0 cm cyst in segment 4. In addition, multiple enlarged mesenteric lymph nodes measuring between 0.6 cm and 1.4 cm are noted. Serum hepatic transaminases and liver enzymes are within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic or Amoebic Liver Abscess with Mesenteric Lymphadenitis",
+      "rule_out_reason": "Acute fever, abdominal pain, vomiting, and mesenteric lymphadenopathy strongly raised concern for acute bacterial or amoebic suppuration, but ultrasound demonstrated well-circumscribed cysts containing clear, transparent fluid rather than thick inflammatory pus, and hepatic enzymes remained normal.",
+      "quote": "presented with abdominal pain, fever (38 C), and vomiting to emergency room where abdominal US demonstrated two cysts of 2.3 and 1.8 cm size with transparent fluid in the S7/8 and 1 cyst of 1 cm in S4. In addition, multiple mesenteric lymph nodes from 0.6 to 1.4 cm were detected."
+    },
+    {
+      "candidate": "Alveolar Echinococcosis (Echinococcus multilocularis)",
+      "rule_out_reason": "Borderline seropositivity for E. multilocularis initially impeded definitive categorization, but the cyst morphology lacked infiltrative necrotic features and repeat serology was non-confirmatory for alveolar disease.",
+      "quote": "Despite the fact that cysts were similar to CE, definitive diagnosis could not be made because of positive serological tests for AE."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Hepatic magnetic resonance imaging demonstrated multiple distinct cystic lesions with typical septa across liver segments, and repeat serology confirmed high-titer Echinococcus granulosus IgG antibodies, establishing the diagnosis of cystic echinococcosis.",
+      "quote": "Lesions on MRI posed higher suspicion of CE and the diagnosis was confirmed by repeated serological tests (E. granulosus IgG 0.674 OD (cut-off 0.21))."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to ER presentation. Cysts with transparent fluid and lymphadenopathy on US. Serologies, IgE, albendazole, and MRI progression excluded from prompt."
+}

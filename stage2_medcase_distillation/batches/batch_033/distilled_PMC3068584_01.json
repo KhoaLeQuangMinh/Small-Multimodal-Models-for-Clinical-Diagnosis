@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3068584_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old male presents with a persistent, enlarging, hard submandibular mass and necrotic deep cervical lymphadenopathy that worsened after dental extraction and antibiotics. The absence of constitutional pulmonary symptoms and the firm, fixed nature of the mass create high suspicion for a salivary gland malignancy or metastasizing head-and-neck carcinoma versus an indolent primary mycobacterial sialadenitis.\n2. Admission Breakpoint: Admission triage concludes following physical examination, baseline routine blood tests, chest/mandibular radiographs, and head and neck CT, immediately prior to fine-needle aspiration cytology, incisional biopsy, and mycobacterial PCR testing.\n3. Differential Distinctions: Bacterial odontogenic abscess is ruled out by progressive enlargement despite molar extraction and antibiotics, without purulent ductal discharge; salivary gland malignancy is ruled out by benign cytology and biopsy showing granulomatous inflammation; primary tuberculous sialadenitis is confirmed by incisional biopsy exhibiting Langhans giant cells and positive PCR for Mycobacterium tuberculosis.",
+  "case_prompt": "A 45-year-old immunocompetent male presented with a 1-month history of subacute swelling and discomfort in the right submandibular region, localized just inferior to the angle and body of the mandible. He reported no fever, cough, night sweats, unprovoked weight loss, or other constitutional symptoms, and had no family history of chronic pulmonary illness. He had previously consulted a dentist who suspected an odontogenic source and performed an extraction of the lower right second molar alongside a course of oral antibiotics; however, over the subsequent 2 weeks, the swelling progressively increased in size.\n\nOn physical examination, vital signs were normal. Local examination revealed a diffuse, non-tender, hard, bi-digitally palpable mass measuring 6 cm x 5 cm in the right submandibular area, indistinguishable from the underlying mandible. The overlying skin appeared normal. Examination of the oral cavity revealed a normal Wharton's duct orifice without purulent discharge, and the remainder of the oropharynx was unremarkable. Palpation of the neck demonstrated enlarged, hard, fixed right deep cervical lymph nodes (level 2), the largest measuring 3 cm x 2 cm.\n\nInitial laboratory evaluation demonstrated a normal complete blood count with an elevated erythrocyte sedimentation rate (ESR) of 45 mm/hr. Liver function tests and serum proteins were within normal limits. Serologic testing for HIV antibodies and hepatitis B surface antigen was non-reactive.\n\nPlain chest radiography revealed clear lung fields without pulmonary parenchymal lesions. Mandibular radiography demonstrated no bony cortical destruction or dental root abnormalities. Computed tomography (CT) of the head and neck showed an enlarged right submandibular salivary gland with diffuse surrounding fat stranding, an inflammatory hypodense soft-tissue mass surrounding the gland with thickening of the overlying skin, an enlarged right submandibular lymph node, and a 1.2-cm necrotic right deep cervical lymph node at level 2 with loss of mylohyoid muscle fat planes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Odontogenic Abscess / Bacterial Sialadenitis",
+      "rule_out_reason": "Submandibular pain and swelling following dental issues suggested a bacterial abscess; however, the mass enlarged despite tooth extraction and antibiotic therapy, and Wharton's duct showed clear, non-purulent saliva.",
+      "quote": "The patient consulted a dentist, who diagnosed it as lower jaw tooth abscess. He was treated with antibiotics and lower 2nd molar tooth extraction was done. Even after 2 weeks of treatment the swelling increased in size"
+    },
+    {
+      "candidate": "Salivary Gland Neoplasm / Metastatic Cervical Lymphadenopathy",
+      "rule_out_reason": "A 6 cm x 5 cm hard mass fixed to the mandible with associated fixed, necrotic level 2 deep cervical lymphadenopathy strongly mimicked a malignant salivary neoplasm; however, histopathology revealed chronic granulomatous inflammation without atypical epithelial cells.",
+      "quote": "Incisional biopsy from the swelling showed chronic inflammatory process with a few vague granulomas comprising epithelioid cells, Langhan's giant cells, and lymphocytes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Incisional biopsy of the submandibular mass showing epithelioid cell granulomas with Langhans giant cells, combined with positive PCR for Mycobacterium tuberculosis, definitively confirmed tuberculous sialadenitis.",
+      "quote": "Polymerase chain reaction (PCR) for mycobacterium tuberculosis was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

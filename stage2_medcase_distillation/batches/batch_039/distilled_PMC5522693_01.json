@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5522693_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 43-year-old man presents with Budd-Chiari syndrome manifest as progressive abdominal distention, tension ascites, lower extremity edema, and acute severe dyspnea due to hepatic venous outflow obstruction and right atrial thrombosis. The tension lies in distinguishing primary hypercoagulable vascular thrombosis or invasive malignant hepatoma from extrinsic venous compression by a large hepatic hydatid cyst.\n2. Admission Breakpoint: Admission emergency triage ends after initial physical examination, emergency ultrasound/Doppler, echocardiography (TTE), and diagnostic paracentesis showing exudative ascites, before surgical median sternotomy/embolectomy and definitive hydatid cyst identification.\n3. Differential Distinctions: Primary Budd-Chiari syndrome (thrombophilic IVC/hepatic vein thrombosis) is ruled out by the discovery of an 8-cm compressive hepatic cystic mass obstructing the suprahepatic IVC; spontaneous bacterial peritonitis is ruled out by sterile ascites and negative Gram stain/culture; secondary Budd-Chiari syndrome due to hepatic echinococcosis is confirmed by characteristic imaging of the hydatid cyst compressing the suprahepatic IVC and subsequent surgical management.",
+  "case_prompt": "A 43-year-old man presented to the emergency department with abdominal distention, bilateral lower extremity edema, and severe dyspnea.\n\nOn physical examination, he was in respiratory distress. Abdominal examination revealed marked distention with tension ascites, but no visible collateral veins were noted on the abdomen. Auscultation revealed normal vesicular respiratory sounds at the bases of both lungs.\n\nAbdominal ultrasound demonstrated venous outflow obstruction caused by a cystic mass measuring 8 cm on average occupying the suprahepatic veins and inferior vena cava (IVC) segment of the hepatic dome, with no flow viewed in the left hepatic vein and IVC on abdominal portal Doppler ultrasound. The portal vein was dilated to 20 mm, the splenic vein was dilated to 18 mm, and hepatofugal flow was noted. Transthoracic echocardiography (TTE) revealed a large mobile thrombosis in the right atrium originating from the IVC orifice, with no clot detected in the main pulmonary artery or its major branches. Paracentesis yielded non-clear exudative intraperitoneal fluid with a total protein of 5.6 g/dL, albumin of 0.6 g/dL, and a total leukocyte count showing 90% lympho-monocytes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Budd-Chiari syndrome (thrombophilia / primary endoluminal thrombosis)",
+      "rule_out_reason": "Considered as the primary cause of acute hepatic venous outflow tract obstruction and tension ascites; ruled out by imaging demonstrating that obstruction was secondary to extrinsic compression by an 8-cm hepatic cystic mass at the hepatic dome.",
+      "quote": "The abdominal ultra-sound revealed venous outflow obstruction caused by HC occupying supra hepatic veins of an IVC segment of the hepatic dome and measuring 8 cm on average (Fig. 1)."
+    },
+    {
+      "candidate": "Spontaneous bacterial peritonitis",
+      "rule_out_reason": "Considered due to cloudy ascitic fluid and prominent tension ascites; excluded by sterile paracentesis fluid, absence of polymorphonuclear predominance (90% lympho-monocytes), and negative Gram stain and culture.",
+      "quote": "There was no other pathology found in the Gram staining and culture of the intra peritoneal fluid."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Secondary Budd-Chiari syndrome and right atrial thrombosis induced by hepatic hydatid cyst (Echinococcosis)",
+      "rule_out_reason": "Emergency ultrasound and Doppler identified an 8-cm hepatic hydatid cyst compressing the IVC and left hepatic vein, with extension of a mobile thrombus into the right atrium, establishing secondary Budd-Chiari syndrome due to Echinococcosis.",
+      "quote": "According to these findings, the patient was diagnosed with secondary (BCS) developmental due to HC."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Hydatid cyst masked in admission prompt as cystic mass at hepatic dome. Zero spoilers. Quotes verified from source text."
+}

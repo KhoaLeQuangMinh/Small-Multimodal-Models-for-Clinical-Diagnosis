@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3621224_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 67-year-old diabetic and hypertensive male undergoing routine evaluation for chronic stable angina is found to have an incidental calcified intrapericardial mass attached to the posterior left ventricle. The diagnostic dilemma centers on distinguishing a calcified ventricular aneurysm, cardiac benign/malignant neoplasm (such as calcified myxoma, fibroma, or teratoma), or calcified pericardial hematoma from a dormant, calcified parasitic cyst.\n2. Admission Breakpoint: The breakpoint occurs following clinical history and initial invasive angiographic/fluoroscopic examination revealing a pedunculated calcified mass attached to the posterior left ventricle at the atrioventricular groove, immediately prior to multidetector computed tomography evaluating internal cyst architecture.\n3. Differential Distinctions: Calcified cardiac neoplasm or ventricular pseudoaneurysm/aneurysm is ruled out because the lesion was intrapericardial and lacked connection to the ventricular cavity or solid tumor vascularity; simple pericardial cyst is ruled out by dense circumferential shell calcification and internal multiloculation; calcified echinococcosis is established by 64-slice MDCT demonstrating multiple characteristic internal cystic locules.",
+  "case_prompt": "A 67-year-old male with a medical history of diabetes mellitus, hypertension, and chronic stable angina was admitted for invasive cardiac evaluation. Physical examination and baseline vital signs were consistent with stable cardiovascular disease. Fluoroscopy, coronary angiography, and left ventricular angiography demonstrated an incidental calcified mass attached to the posterior aspect of the left ventricle at the atrioventricular groove through a peduncle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Calcified cardiac neoplasm or ventricular aneurysm",
+      "rule_out_reason": "Considered during initial angiography due to the peduncular attachment to the posterior left ventricular myocardium at the atrioventricular groove, but cross-sectional evaluation revealed a multiloculated cystic internal structure rather than a myocardial outpouching or solid neoplastic matrix.",
+      "quote": "On performing left ventricular (LV) angiography, a mass was found attached to the posterior aspect of left ventricle at the atrioventricular groove through a peduncle [Figure 2, Video 2]."
+    },
+    {
+      "candidate": "Congenital pericardial cyst / chronic pericardial hematoma",
+      "rule_out_reason": "Considered because of the anatomical intrapericardial position near the crux of the heart, but congenital pericardial cysts are unilocular and uncalcified, failing to explain internal daughter locules and dense calcification.",
+      "quote": "The cyst was intrapericardial in location with attachment to the atrioventricular groove near the crux."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Intrapericardial calcified hydatid cyst)",
+      "rule_out_reason": "High-resolution 64-slice multidetector computed tomography definitively identified multiple internal daughter cystic locules within the calcified capsule, pathognomonic for hydatid cyst.",
+      "quote": "Later, 64-slice multidetector computed tomography showed a calcified cyst with multiple cystic locules within it, confirming the diagnosis of calcified hydatid cyst [Figures 3 and 4]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative presents the clinical context of stable angina and incidental angiographic mass detection without revealing the multilocular CT findings or parasitic identity. Exact quotes confirm the differential alternatives."
+}

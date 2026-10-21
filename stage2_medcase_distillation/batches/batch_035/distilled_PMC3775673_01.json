@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3775673_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old female with advanced retroviral disease (CD4 155 cells/uL, high viral load) who defaulted ART presents with a 3-week prodrome of headache and acute encephalopathy. CSF demonstrates lymphocytic pleocytosis, high protein, and hypoglycorrhachia. The central dilemma in this immunocompromised patient is distinguishing tuberculous meningitis from cryptococcal meningitis or bacterial meningitis, compounded by pulmonary infiltrates, pleural effusion, and sudden upper airway obstruction (stridor) due to extrinsic airway compression from massive tuberculous mediastinal lymphadenopathy.\n2. Admission Breakpoint: Admission triage encompasses demographics, HIV history, 3-week headache and confusion, vitals (pyrexia, tachycardia 107, tachypnea 22), physical examination (pale, confused, bilateral pulmonary crackles, nuchal rigidity), baseline hematology/chemistry (normocytic anemia, hyponatremia, mild ALT elevation, CD4 155), admission chest radiograph (bilateral nodular infiltrates, hilar/mediastinal lymphadenopathy, lingular consolidation, veiling left pleural effusion), and initial CSF cell count/chemistries (lymphocytic pleocytosis, elevated protein, low glucose). Breakpoint strictly excludes send-out cryptococcal antigen/India ink, mycobacterial smears/cultures, and downstream clinical deterioration.\n3. Differential Distinctions: Cryptococcal meningitis is the leading rival for subacute lymphocytic meningitis with low glucose in advanced HIV, but ruled out by negative CSF India ink staining and negative cryptococcal latex antigen testing. Acute pyogenic/bacterial meningitis is ruled out by the subacute 3-week onset and lymphocytic predominance. Pneumocystis jirovecii pneumonia or typical bacterial pneumonia is considered for bilateral pulmonary infiltrates and hypoxia in low CD4 count, but cannot account for the concomitant nodular pattern, mediastinal lymphadenopathy, pleural effusion, and meningitis.",
+  "case_prompt": "A 37-year-old woman with known human immunodeficiency virus (HIV) infection was brought to the casualty department by caregivers due to acute confusion. The confusion had been preceded by 3 weeks of progressively severe headache. There was no history of vomiting or neck stiffness prior to arrival. She had initiated combination antiretroviral therapy 2 months earlier but had subsequently defaulted.\n\nOn initial clinical examination, the patient was confused and disoriented to time, place, and person. She was pyrexial and noticeably pale. Vital signs revealed a blood pressure of 108/80 mmHg, heart rate of 107 beats per minute, and respiratory rate of 22 breaths per minute. Cardiac examination was normal. Chest auscultation revealed bilateral inspiratory crackles throughout both lung fields. Neurologic examination demonstrated neck stiffness without focal localizing neurological deficits.\n\nInitial blood tests revealed a normocytic normochromic anemia, hyponatremia, and a mildly elevated alanine aminotransferase. Her CD4 count was 155 cells/uL, and HIV viral load was 678,233 copies/mL. An emergency lumbar puncture demonstrated clear to cloudy cerebrospinal fluid with a lymphocytic pleocytosis, elevated total protein level, and markedly decreased glucose concentration.\n\nAn admission supine anteroposterior chest radiograph demonstrated bilateral nodular infiltrates with questionable hilar and mediastinal lymphadenopathy, a veiling pleural effusion on the left hemithorax, and confluent opacification in the lingular segment of the left upper lobe obscuring the left cardiac border.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cryptococcal Meningitis",
+      "rule_out_reason": "High-probability opportunistic fungal meningitis in a severely immunocompromised patient with subacute headache, confusion, and lymphocytic hypoglycorrhachic CSF, but ruled out by negative CSF fungal staining and negative antigen testing.",
+      "quote": "India ink staining and a Cryptococcus latex antigen test were both negative (Table 4)."
+    },
+    {
+      "candidate": "Acute Bacterial / Pyogenic Meningitis",
+      "rule_out_reason": "Considered given fever, altered sensorium, and nuchal rigidity, but excluded by the indolent 3-week prodrome and marked CSF lymphocytic predominance rather than neutrophilic pleocytosis.",
+      "quote": "Cerebrospinal fluid analysis showed an increase in lymphocytes, a raised protein level, and decreased glucose (Table 4)."
+    },
+    {
+      "candidate": "Pneumocystis jirovecii Pneumonia (PJP)",
+      "rule_out_reason": "Considered given low CD4 count (<200/uL), bilateral pulmonary infiltrates, and respiratory compromise, but contradicted by presence of nodular infiltrates, unilateral pleural effusion, intrathoracic lymphadenopathy, and concomitant lymphocytic meningitis.",
+      "quote": "The anterior-posterior supine chest film with the patient rotated to the right (Figure 1) showed bilateral nodular infiltrates with hilar and mediastinal lymphadenopathy not excluded. A veiling pleural effusion was noted on the left"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical constellation of subacute lymphocytic meningitis with marked hypoglycorrhachia, bilateral nodular infiltrates with hilar/mediastinal lymphadenopathy and pleural effusion, and subsequent extrinsic central airway compression (stridor) in advanced HIV established the diagnosis of disseminated tuberculosis with CNS involvement.",
+      "quote": "The patient was initially assessed as having disseminated tuberculosis with central nervous system involvement, specifically meningitis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Confirmatory fungal/mycobacterial microbiology and subsequent stridor course excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

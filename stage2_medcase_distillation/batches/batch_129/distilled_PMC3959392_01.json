@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3959392_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: In a patient presenting with obstructive jaundice and biopsy-proven ampullary adenocarcinoma, PET-CT demonstrates intense FDG uptake in enlarged subcarinal mediastinal lymph nodes (SUV max 14.7). This strongly suggests distant M1 metastatic malignancy, which would wrongly disqualify the patient from curative pancreaticoduodenectomy.\n2. Admission Breakpoint: Clinical history, physical examination, liver biochemistry, transabdominal ultrasound, abdominal CT, side-viewing duodenoscopy with ampullary biopsy (confirming adenocarcinoma), and whole-body staging PET-CT scan, stopping immediately before endoscopic ultrasound (EUS) fine-needle aspiration cytopathology and PCR analysis.\n3. Differential Distinctions: Distant mediastinal metastasis was the primary pre-procedure diagnosis based on intense FDG avidity (SUV max 14.7). However, the conspicuous absence of intermediate regional abdominal nodal uptake raised suspicion for an unrelated second pathology. EUS-guided FNA of the subcarinal node revealed granulomatous inflammation and positive mycobacterial PCR, confirming concurrent mediastinal tuberculosis and allowing successful curative cancer resection.",
+  "case_prompt": "A 65-year-old woman presented with a 2-month history of progressive painless jaundice, pruritus, acholic (clay-colored) stools, anorexia, and weight loss. On physical examination, she had marked icterus and a palpable, non-tender, cystic gallbladder (Courvoisier sign). Her examination was otherwise unremarkable.\n\nHematological parameters and coagulation studies were normal. Serum biochemistry showed total bilirubin 16.9 mg/dL (conjugated fraction 13.3 mg/dL), alkaline phosphatase 678 IU/mL, AST 76 IU/mL, and ALT 57 IU/mL.\n\nTransabdominal ultrasonography revealed a markedly distended gallbladder and dilation of the common bile duct down to its distal end, along with intrahepatic biliary radicle dilatation. Contrast-enhanced computed tomography (CECT) of the abdomen confirmed biliary and pancreatic duct dilation without a discrete obstructive mass.\n\nSide-viewing duodenoscopy identified a bulky, ulcerated papilla; endoscopic biopsies from the papilla confirmed adenocarcinoma of the ampulla. A staging 18F-FDG PET-CT scan demonstrated increased tracer uptake in the periampullary region (SUV max 4.1) along with intensely hypermetabolic enlarged subcarinal mediastinal lymph nodes (SUV max 14.7). There were no hypermetabolic loco-regional abdominal lymph nodes identified on the scan.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic ampullary adenocarcinoma (distant M1 mediastinal metastasis)",
+      "rule_out_reason": "Strongly suspected based on the high standardized uptake value (SUV max 14.7) in enlarged subcarinal nodes, but ruled out when EUS-guided nodal aspirate showed non-neoplastic granulomatous inflammation.",
+      "quote": "PET-CT scan was done to look for metastatic disease before surgery. It showed increased [18F]-Fluoro-Deoxy-Glucose (FDG) tracer uptake in the periampullary region (SUV max 4.1) (Fig. 1) as well as in the enlarged subcarinal nodes (SUV max 14.7)"
+    },
+    {
+      "candidate": "Loco-regional contiguous tumor lymphadenopathy",
+      "rule_out_reason": "Inconsistent with the PET-CT imaging pattern, which revealed isolated subcarinal mediastinal nodal enlargement without any positive peripancreatic or retroperitoneal lymph nodes.",
+      "quote": "There were no positive loco-regional lymph nodes on PET-CT scan."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endoscopic ultrasound-guided fine needle aspiration (EUS-FNA) of the subcarinal node demonstrated granulomatous inflammation and positive polymerase chain reaction for Mycobacterium tuberculosis.",
+      "quote": "Cytological examination of the aspirate showed granulomatous inflammation consistent with tuberculosis. Stain for AFB was negative but PCR (polymerase chain reaction) was positive for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

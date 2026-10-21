@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3323269_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: Acute febrile illness accompanied by diffuse maculopapular rash, conjunctivitis, cervical lymphadenopathy, and leukopenia in a Central European resident without any tropical travel history, developing 7 days following an accidental needlestick injury while drawing blood from a febrile returned traveler.\n2. Admission Breakpoint: Clinical evaluation stops following triage physical examination and baseline laboratory testing demonstrating leukopenia with normal inflammatory markers, platelets, and liver enzymes; paired serological ELISA antibody testing and viral reverse transcription-polymerase chain reaction (RT-PCR) constitute confirmatory diagnostics.\n3. Differential Distinctions: Common viral exanthems (such as rubella, measles, or acute Epstein-Barr virus mononucleosis) cause fever, rash, and lymphadenopathy, but lack a clear 7-day incubation period following percutaneous blood inoculation from a tropical febrile patient; nosocomial dengue virus transmission produces classical febrile exanthem and leukopenia, confirmed by specific flavivirus RT-PCR and IgM/IgG seroconversion.",
+  "case_prompt": "A female physician residing in Hungary presented with an acute illness characterized by fever, headache, diffuse maculopapular rash, myalgia, cervical lymphadenopathy, and general malaise. She had never traveled to any tropical or vector-borne disease-endemic region.\n\nHer exposure history was notable for an accidental percutaneous needlestick injury to her finger seven days earlier while collecting a blood sample from her brother (also a physician), who was acutely febrile after returning from a trip to Thailand where he had sustained mosquito bites.\n\nOn physical examination, the patient was acutely febrile with a diffuse maculopapular cutaneous rash, bilateral non-purulent conjunctivitis, and painfully enlarged cervical lymph nodes.\n\nInitial triage laboratory investigations revealed leukopenia with normal platelet counts, normal C-reactive protein (CRP), normal erythrocyte sedimentation rate (ESR), and normal liver function tests.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Mononucleosis / Exanthem (EBV, Parvovirus B19, Rubella)",
+      "rule_out_reason": "Acute non-tropical viral exanthems frequently present with fever, rash, and tender lymphadenopathy, but the strict 7-day incubation following accidental percutaneous inoculation with viremic blood from a tropical traveler strongly pointed toward a bloodborne arboviral transmission rather than respiratory viral infection.",
+      "quote": "while collecting a blood sample from the patient, the patient's sister, also a physician, accidentally stuck her finger with the needle, which was contaminated with the patient's blood. Seven days later she became ill, with fever, headache, diffuse maculopapular rash, myalgia, cervical lymphadenopathy, and malaise."
+    },
+    {
+      "candidate": "Severe Hemorrhagic Fever / Shock Syndrome",
+      "rule_out_reason": "Initial presentation of an acute arboviral illness raised vigilance for complicated hemorrhagic progression, but the patient exhibited completely normal platelet counts, stable hematocrit without hemoconcentration, and uneventful clinical recovery.",
+      "quote": "Her laboratory tests showed leukopenia with a normal thrombocyte level, C-reactive protein level, liver function tests, and erythrocyte sedimentation rate... No complications were observed and the disease resolved within 10 days after onset in both patients."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Reverse transcription-polymerase chain reaction (RT-PCR) using universal flavivirus primers identified viral RNA demonstrating 98% nucleotide sequence identity with dengue virus type 2 (strain ThNH76/93), and sequential serological ELISA demonstrated appearance of anti-dengue IgM antibodies on day 12 followed by IgG seroconversion at 3 weeks, confirming nosocomial transmission of dengue virus via needlestick injury.",
+      "quote": "In the serum sample obtained from the female patient 12 days after onset, IgM, but not IgG, antibodies to dengue viruses were found. Both IgM and IgG antibodies were found in serum samples from this patient 3 weeks after onset of her illness. Diagnosis was also confirmed by reverse transcription-polymerase chain reaction assays of early serum samples of both patients by using universal flavivirus primers... Highest similarity was with dengue virus type 2 strain ThNH76/93"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation focuses on the recipient physician following occupational needlestick, stopping before serology and RT-PCR results. Zero leakage of pathogen or virus names in presentation."
+}

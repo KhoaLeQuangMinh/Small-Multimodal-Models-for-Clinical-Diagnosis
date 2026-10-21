@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2732520_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 39-year-old long-haul truck driver presenting with hyperpyrexia (40 °C), encephalopathy, prominent meningeal irritation (cervical rigidity, Brudzinski sign, photophobia), calf myalgia, conjunctivitis, hepatic tenderness, coagulopathy, and thrombocytopenia. The syndrome closely mimics acute bacterial meningitis, intracranial hemorrhage, or severe malaria, while the absence of apparent freshwater or rodent exposure obscures the zoonotic spirochetal etiology.\n2. Admission Breakpoint: Initial emergency triage presentation, day 1 laboratory profile (thrombocytopenia, elevated transaminases/CRP/LDH, coagulopathy, negative blood smears), normal head CT, and day 1 CSF analysis (showing elevated protein and erythrocyte contamination without pleocytosis), prior to day 2 CSF repeat and dark-field microscopy identifying spirochetes.\n3. Differential Distinctions: Acute bacterial meningitis presents with identical meningismus and high fever but is distinguished by the absence of marked day 1 CSF neutrophilic pleocytosis and presence of multi-organ features (conjunctivitis, myalgias, transaminitis). Severe malaria is ruled out by negative peripheral blood smears. Leptospirosis is confirmed by the syndrome of conjunctival suffusion, severe calf myalgia, hepatic-coagulation derangements, and dark-field microscopic visualization of spirochetes.",
+  "case_prompt": "A 39-year-old male truck driver was hospitalized in Marseilles, France, with acute fever and disorientation. He resided in Portugal and had been driving across Spain for two weeks before arriving in France three days prior to presentation. On the day of admission, co-workers found him confused and febrile after he had been sleeping in his truck. He had no previous relevant medical history.\n\nOn admission examination, his body temperature was 40.0 °C, heart rate was tachycardic, and blood pressure was 120/80 mmHg. The patient was drowsy and disoriented, complaining of bilateral headache and provoked myalgia of the legs. Physical examination demonstrated bilateral conjunctivitis and right upper quadrant abdominal tenderness (hepatalgia). Neurologic examination revealed marked signs of meningeal irritation, including cervical rigidity, Brudzinski's sign, hyperesthesia, and photophobia. There was no rash, and the remainder of the physical examination was unremarkable.\n\nInitial laboratory evaluation revealed a leukocyte count of 11,000/mm³ with 69% polymorphonuclear forms and thrombocytopenia with a platelet count of 110 × 10⁹/L. Biochemical investigation showed alanine aminotransferase of 61 IU/L, aspartate aminotransferase of 78 IU/L, lactate dehydrogenase of 781 IU/L, fibrinogen of 6.44 g/L, and C-reactive protein of 273 mg/L, along with hypoglycemia (2.9 mmol/L), hypoalbuminemia (26 g/L), hypoproteinemia (54 g/L), and hypocholesterolemia (2.3 mmol/L). Coagulation testing showed a kaolin cephalin time of 58 seconds (control: 34 seconds) and a prothrombin rate of 42%. Peripheral blood smears showed no parasites. Non-contrast cranial computed tomography was normal. Day 1 cerebrospinal fluid (CSF) analysis demonstrated 4 leukocytes/mm³, 50,000 erythrocytes/mm³, and elevated protein of 1.48 g/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "High fever, altered sensorium, and overt meningeal signs (cervical rigidity, Brudzinski's sign, photophobia) strongly suggested acute bacterial meningitis; however, initial CSF evaluation on day 1 revealed only 4 leukocytes/mm³ without purulent pleocytosis.",
+      "quote": "Analysis of the CSF on day 1 showed 4 leukocytes/mm3, 50,000 erythrocytes/mm3, and elevated protein levels (1.48 g/L)."
+    },
+    {
+      "candidate": "Severe Malaria",
+      "rule_out_reason": "Considered in a traveler presenting with hyperpyrexia, encephalopathy, thrombocytopenia, hepatalgia, and coagulopathy, but excluded by negative peripheral blood smears.",
+      "quote": "Blood smears showed no parasites."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The constellation of high fever, prominent leg myalgias, conjunctivitis, hepatic dysfunction, and coagulopathy culminated in the microscopic observation of spirochetes on dark-field microscopy of cerebrospinal fluid.",
+      "quote": "Direct examination by dark-field microscopy of the CSF from day 2 was performed and controlled by two experimental investigators, who observed many spirochetes."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to repeat lumbar puncture and dark-field spirochetal visualization. Zero pathogen names or spoilers in the case prompt."
+}

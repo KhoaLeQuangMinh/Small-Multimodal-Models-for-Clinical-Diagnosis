@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10246597_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 71-year-old man presents with chronic, recurrent perianal fistulous discharge and a non-healing ulcerative lesion at the anal verge, with pelvic MRI revealing a complex fistula traversing multiple pelvic spaces. The diagnostic dilemma lies in distinguishing recurrent benign cryptoglandular fistulizing disease or Crohn's perianal fistula from perianal malignancy or chronic granulomatous infection (anal tuberculosis), and recognizing the rare synchronous presence of both without premature histological unblinding.\n2. Admission Breakpoint: Day 1 admission triage concludes after surgical history, physical and digital rectal examination demonstrating a 1x2 cm medio-superior ulcerative growth and scarred fistulous tract, and pelvic MRI delineating the extent of the complex perianal fistula and abscess. Confirmatory testing begins with deep surgical tissue biopsy of the ulcerative growth and systemic workup.\n3. Differential Distinctions: Benign cryptoglandular fistula / complex fistulizing Crohn's disease is ruled out by tissue histopathology revealing epithelioid caseating granulomas coexisting with invasive mucinous adenocarcinoma. Isolated anal canal carcinoma is ruled out by the definitive presence of caseating granulomas confirming concurrent anal tuberculosis.",
+  "case_prompt": "A 71-year-old man presents with persistent foul-smelling perianal discharge. He has no significant chronic medical illnesses and reports no use of tobacco, alcohol, or illicit substances. His past surgical history is notable for an undocumented surgical drainage of an anal fistula over 20 years ago, after which he remained asymptomatic until two months prior, when he underwent surgical treatment twice for recurrent anal abscess-fistula disease within a one-month span. He now presents 25 days following the last procedure with non-healing perianal drainage. He denies hematochezia, rectal bleeding, or anal pain.\n\nOn physical examination in the supine position, an ulcerative growth measuring 1x2 cm is observed in the medio-superior quadrant, situated 2 cm from the anal verge. A healed surgical scar from a prior fistulous tract is present in the left inferior quadrant. Digital rectal examination demonstrates a lax anal sphincter without palpable luminal anorectal masses; there is no inguinal or generalized lymphadenopathy.\n\nPelvic magnetic resonance imaging (MRI) reveals a left perianal abscess with a complex anal fistula extending into the scrotum, ischiorectal fossa, and levator ani muscle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent cryptoglandular anal fistula / Complex fistulizing perianal Crohn's disease",
+      "rule_out_reason": "Considered given the multi-decade history of anal fistula surgery, recurrent suppuration across multiple pelviperineal compartments, and persistent foul-smelling discharge, but ruled out when histological assessment revealed invasive adenocarcinoma and caseating granulomas rather than non-specific or non-caseating inflammation.",
+      "quote": "Twenty-five days later the patient was admitted to our department for non-healing anal fistula. The patient reported upon admission persistent foul-smelling anal discharge with no hematochezia, no blood spotting, and no pain."
+    },
+    {
+      "candidate": "Primary anal canal squamous cell carcinoma / Metastatic pelvic neoplasm",
+      "rule_out_reason": "Considered due to the 1x2 cm ulcerative growth and complex tissue infiltration, but systemic imaging showed no metastases, and histopathology confirmed mucinous adenocarcinoma synchronously accompanied by necrotizing epithelioid granulomas.",
+      "quote": "Thoraco-abdominal-pelvic CT scan did not demonstrate distal metastasis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Synchronous Anal Tuberculosis and Anal Mucinous Adenocarcinoma",
+      "rule_out_reason": "Confirmed by biopsy examination of the ulcerative lesion demonstrating an anal mucinous adenocarcinoma coexisting with epithelioid granulomas and caseous necrosis diagnostic of anal tuberculosis.",
+      "quote": "Biopsy examination confirmed diagnosis of anal mucinous adenocarcinoma with coexisting epithelioid granuloma with caseous necrosis consistent with anal tuberculosis. Pulmonary active tuberculosis was ruled out through TB-biological tests."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean presentation stopping strictly at pelvic MRI. Zero histological or pathological spoilers in prompt. Exact verbatim quotes verified from case text."
+}

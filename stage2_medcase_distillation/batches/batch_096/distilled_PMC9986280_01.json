@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9986280_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 14-month-old infant presents with severe, progressive respiratory distress, wheezing, and hoarseness with necrotic mediastinal lymphadenopathy and pulmonary consolidation refractory to outpatient antibiotics and systemic steroids. Initial identification of common pediatric respiratory pathogens (bacterial and viral) masked a lethal opportunistic dimorphic fungal infection occurring on the background of an unsuspected inborn error of immunity (STAT1 mutation).\n2. Admission Breakpoint: The point of hospital readmission for acute respiratory deterioration (shortness of breath, aggravated trachyphonia, fever, and chest CT demonstrating necrotic hilar/mediastinal lymphadenopathy and dense basal consolidation), immediately prior to the day-32 repeat bronchoscopy and metagenomic next-generation sequencing.\n3. Differential Distinctions: Common bacterial bronchopneumonia and viral croup respond promptly to beta-lactams, macrolides, or short-course corticosteroids, whereas invasive talaromycosis causes unrelenting progression with necrotic lymphadenopathy and requires dimorphic fungal culture or molecular sequencing alongside evaluation for primary immunodeficiency.",
+  "case_prompt": "A 14-month-old boy was brought for emergency evaluation due to persistent cough, wheezing, and hoarseness (trachyphonia) over several weeks, acutely complicated by progressive shortness of breath and high fever. The child had previously received sequential outpatient courses of oral and intravenous beta-lactams and macrolides, followed by systemic corticosteroids for presumptive acute laryngitis, with only fleeting symptom attenuation followed by rapid clinical relapse. His medical history was notable for the absence of wild animal exposures, specifically no contact with wild bamboo rats.\n\nOn physical examination, the child was in respiratory distress with tachypnea, dyspnea, marked wheezing, and audible moist rales across bilateral lung fields.\n\nInitial laboratory evaluation revealed a leukocytosis with a white blood cell count of 17.89 x 10^9/L and a markedly elevated C-reactive protein level of 50.84 mg/L. Screening for human immunodeficiency virus (HIV) was negative. Humoral immune profiling demonstrated normal levels of IgG, IgA, IgM, IgE, C3, and C4. Chest computed tomography (CT) demonstrated inflammatory lesions, pulmonary nodules, multiple enlarged necrotic lymph nodes in the hilum and mediastinum, and a high-density round consolidation in the basal segment of the right inferior pulmonary lobe. Despite initiation of broad-spectrum parenteral antibacterial therapy, the child exhibited no clinical improvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Bronchopneumonia with Necrotizing Lymphadenitis",
+      "rule_out_reason": "Initially treated with empirical amoxicillin-sulbactam, azithromycin, and subsequently intravenous ceftriaxone, but the child continued to deteriorate clinically with progressive necrotic lymphadenopathy.",
+      "quote": "He was given ceftriaxone (on days 25-32) as an antibacterial treatment. But the symptoms did not improve."
+    },
+    {
+      "candidate": "Viral Laryngotracheobronchitis (Croup)",
+      "rule_out_reason": "Considered due to prominent trachyphonia, wheezing, and cough, and initially managed with systemic corticosteroids; however, fever recurred, respiratory distress worsened, and imaging demonstrated necrotizing mediastinal lymphadenopathy and dense consolidation incompatible with uncomplicated viral croup.",
+      "quote": "Anti-infective therapy was switched to methylprednisolone (on day 15), followed by prednisone (on days 16-20) ( Figure 2 ). He was discharged home on day 18 with intermittent coughing.\nOne week later, he returned because of shortness of breath, aggravated trachyphonia, and fever."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Talaromycosis (Talaromyces marneffei with Pneumocystis jirovecii Coinfection)",
+      "rule_out_reason": "The diagnostic turning point occurred during repeat bronchoscopy revealing copious tracheal mucus, where BALF smear, fungal culture, and metagenomic next-generation sequencing identified Talaromyces marneffei alongside Pneumocystis jirovecii, which prompted targeted therapy with itraconazole and trimethoprim-sulfamethoxazole and genetic uncovering of a de novo pathogenic STAT1 mutation.",
+      "quote": "The BALF smear and culture revealed T. marneffei ( Figure 1F ). By the same BALF token, PCR tests for targeted pathogen detection and metagenome next-generation sequencing (mNGS) for unbiased pathogen detection were performed. The PCR results revealed P. jirovecii. BALF mNGS identified 1515121 microbial sequence reads, of which 18517 reads and 907 reads mapped to T. marneffei ( Figure 1G ) and P. jirovecii ( Figure 1H ), respectively."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint preserved prior to day-32 repeat bronchoscopy. Excluded all fungal and opportunistic pathogen names from case presentation. Verbatim quotes match article text."
+}

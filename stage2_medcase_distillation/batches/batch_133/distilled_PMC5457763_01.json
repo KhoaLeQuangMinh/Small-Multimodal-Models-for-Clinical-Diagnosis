@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5457763_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 53-year-old female presents with acute inflammatory asymmetric oligoarthritis (right knee synovitis and transient ankle swelling) and right-sided sacroiliitis, superimposed on a six-month history of right upper quadrant abdominal discomfort and a known liver lesion. The diagnostic tension lies in resolving whether this represents a primary autoimmune spondyloarthropathy (e.g., HLA-B27 spondyloarthritis), chronic bacterial/tuberculous/brucellar joint infection, or reactive arthritis provoked by an asymptomatic, slow-growing parasitic hepatic and pelvic cystic disease.\n2. Admission Breakpoint: The admission clinical triage concludes with the physical findings of acute knee arthritis and right sacroiliac joint tenderness, initial elevated inflammatory markers (ESR 38 mm/h, CRP 23 mg/L), sacroiliac MRI showing right iliac bone marrow edema with pelvic cysts, and abdominal CT demonstrating a 55 x 48 mm hypodense hepatic mass with superior calcification ('water-lily sign'), prior to arthrocentesis analysis, autoimmune panel serologies, and specific hydatid serological titers.\n3. Differential Distinctions: Primary axial spondyloarthropathy / ankylosing spondylitis typically presents in younger individuals with HLA-B27 positivity and lacks characteristic hepatic and pelvic multiloculated cystic masses; septic arthritis, tuberculous arthritis, or brucellosis cause localized monoarthritis but joint fluid and specific agglutination tests/PCR are negative; whereas secondary reactive arthritis due to Echinococcus granulosus (hydatid cyst disease) is an established rare immunological response driven by chronic parasitic antigen release from hepatic and pelvic cysts.",
+  "case_prompt": "A 53-year-old female presented for rheumatologic evaluation due to severe pain radiating from the right inguinal region and right hip down to the right knee. She had a long-standing history of intermittent low back pain, but over the preceding week, she developed constant right hip and groin pain radiating to the knee that worsened with rest. In addition, ten days prior to presentation, she experienced self-limited pain and mild swelling of her right ankle lasting three days. For the past six months, she had also noted intermittent dull right upper quadrant abdominal pain, for which an outpatient abdominal ultrasound had revealed a solitary liver mass.\n\nThe patient had no prior history of arthritis, psoriasis, inflammatory bowel disease, gastroenteritis, urinary tract infections, or surgical interventions, and no family history of rheumatic diseases or malignancy.\n\nOn physical examination, there was loss of normal lumbar lordosis with moderately restricted lumbar motion in all directions. The right sacroiliac compression test and the right FABERE (Patrick's) test were positive. The right knee was warm, swollen, and tender with a noticeable effusion. There were no cutaneous rashes, nail changes, or enthesopathic lesions. Abdominal examination revealed localized tenderness on palpation over the right upper quadrant without peritoneal signs.\n\nInitial laboratory testing showed an erythrocyte sedimentation rate (ESR) of 38 mm/h and a C-reactive protein (CRP) level of 23 mg/L, with a normal white blood cell count (7,310/µL) and normal platelet count. Sacroiliac MRI revealed focal bone marrow edema within the right ilium adjacent to the sacroiliac joint, along with two small cystic lesions located anterior to the right hip joint. Abdominal computed tomography (CT) demonstrated a well-defined 55 x 48 mm hypodense mass with superior arcuate calcification ('water-lily sign') within segment 3 of the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary ankylosing spondylitis / HLA-B27 spondyloarthropathy",
+      "rule_out_reason": "Considered due to inflammatory back pain, asymmetric peripheral arthritis, and sacroiliac bone marrow edema on MRI, but the patient was 53 years of age, lacked a family history, and tested negative for HLA-B27.",
+      "quote": "HLA-B27 genetic assay was negative for spondyloarthropathy."
+    },
+    {
+      "candidate": "Tuberculous arthritis or bacterial septic arthritis",
+      "rule_out_reason": "Considered because of unilateral knee synovitis with significant joint effusion; however, arthrocentesis yielded non-purulent fluid with 8,000 leukocytes/µL, negative Gram stain, and negative mycobacterial PCR and cultures.",
+      "quote": "At the examination of knee joint fluid Tbc DNA, tbc real time PCR, mycobacterial culture were detected as negative and there was no reproduction in cell culture"
+    },
+    {
+      "candidate": "Brucellosis (Brucella arthritis / sacroiliitis)",
+      "rule_out_reason": "Brucellosis is a prominent endemic cause of peripheral arthritis accompanied by sacroiliitis, but specific serological tests were completely negative.",
+      "quote": "In addition, Brucella Wright and Coombs agglutination tests were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal CT demonstrating the classic 'water-lily sign' combined with a strongly positive indirect hemagglutination titer (1/320) confirmed hydatid cyst disease (echinococcosis) as the underlying antigenic driver of reactive arthritis and sacroiliitis.",
+      "quote": "Abdomen tomography of our patient, which was requested by general surgery department, showed a well-defined 55 x 48 mm hypodense lesion with a superior calcification (lily symptom) in segment 3 (Figure 2). Hydatid cyst hemagglutination titer test was 1/320 and the patient was diagnosed as hydatid cyst disease."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following strict admission breakpoint rules. Hydatid serology and synovial parasitology excluded from case prompt."
+}

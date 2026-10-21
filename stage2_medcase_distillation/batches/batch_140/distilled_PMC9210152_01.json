@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9210152_01",
+  "disease": "Echinococcosis",
+  "think": "<think>\n1. Core Clinical Tension: A 41-year-old pregnant woman at 35 weeks gestation with virologically suppressed HIV presents with progressively worsening left upper quadrant fullness, left shoulder pain, and massive splenomegaly. The clinical tension involves differentiating non-parasitic congenital splenic cysts, mycobacterial abscesses, or hematologic pathology from massive multivesicular larval cestode infection, while navigating high risks of intrapartum cyst rupture and anaphylaxis.\n2. Admission Breakpoint: The breakpoint occurs during tertiary clinic evaluation upon completion of physical examination and formal abdominal/obstetric ultrasonography (confirming a 21 cm spleen with multicystic lesions involving >90% of splenic tissue and a single viable 35-week intrauterine pregnancy), immediately prior to serologic confirmation via indirect hemagglutination assay.\n3. Differential Distinctions: Congenital or post-traumatic splenic cysts (such as epidermoid cysts or pseudocysts) can present with painless splenomegaly, but are typically unilocular and solitary, unlike the extensive multivesicular cystic replacement observed here in a patient with rural pastoral exposure. Splenic tuberculosis or opportunistic fungal microabscesses can occur in HIV, but the patient had virologic suppression (CD4 500 cells/uL) and cystic ultrasound architecture rather than solid granulomatous lesions. A strongly positive indirect hemagglutination assay confirms echinococcosis.\n</think>",
+  "case_prompt": "<case_prompt>\nA 41-year-old pregnant woman at 35 weeks gestation by early dates presents to an infectious disease clinic with a 7-month history of progressively worsening left flank fullness, left shoulder pain, and marked abdominal distention. She grew up in a rural village in the Eastern Cape and currently resides in Gauteng. Her past medical history is significant for HIV diagnosed 8 years prior, which is virologically suppressed on first-line antiretroviral therapy (tenofovir, emtricitabine, efavirenz) with a CD4 cell count of 500 cells/uL. She was also successfully treated for tuberculous arthritis 8 years ago. Her obstetric history includes four full-term deliveries and one first-trimester miscarriage.\n\nOn physical examination, the abdomen is notable for a gravid uterus and massive, palpable splenomegaly extending deep into the left flank. Bedside and formal ultrasonography confirms a single viable intrauterine pregnancy at 35 weeks without fetal growth restriction. The liver appears sonographically normal. The spleen is notably enlarged, measuring 21 cm, and contains multiple cystic lesions of varying sizes (the largest measuring 4.8 x 4 cm), which collectively replace more than 90% of normal splenic tissue.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Non-Parasitic Splenic Cysts (Congenital Epidermoid / Splenic Pseudocyst)",
+      "rule_out_reason": "Considered for benign cystic splenomegaly in an adult; however, non-parasitic cysts are typically solitary and unilocular, whereas ultrasound demonstrated extensive multicystic involvement replacing more than 90% of splenic tissue in a patient with rural pastoral environmental risk.",
+      "quote": "A formal ultrasound confirmed a notably enlarged spleen measuring 21 cm and multiple splenic cystic lesions of varying size, with the largest measuring 4.8 cm x 4 cm (Figures 1a and 1c). The cysts involved more than 90% of the normal splenic tissue (Figure 1b)."
+    },
+    {
+      "candidate": "Splenic Tuberculosis",
+      "rule_out_reason": "Considered in an HIV-positive patient with a past history of tuberculous arthritis; ruled out by sustained virologic suppression with a CD4 count of 500 cells/uL, absence of constitutional B-symptoms, and cystic imaging morphology rather than solid necrotic microabscesses.",
+      "quote": "She had been successfully treated for tuberculous arthritis eight years ago and, according to the patient, has been adherent to antiretroviral therapy since diagnosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was characteristic multivesicular cystic appearance on ultrasound replacing the splenic parenchyma combined with a strongly positive indirect hemagglutination assay (IHA) titer of 1:1024, confirming hydatid disease.",
+      "quote": "These ultrasound findings were suggestive of splenic hydatid disease. An indirect haemagglutinin assay (IHA) for echinococcosis was strongly positive with a titre of 1 in 1024."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Clean prompt without pathogen names. Verbatim quotes from source text."
+}

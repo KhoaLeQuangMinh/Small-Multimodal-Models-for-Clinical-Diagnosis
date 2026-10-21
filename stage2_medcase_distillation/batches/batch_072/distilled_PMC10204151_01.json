@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10204151_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 7-year-old boy in a non-endemic peri-urban region of Bahia, Brazil presents during the June 2021 COVID-19 pandemic with acute febrile illness, severe hemolytic anemia, thrombocytopenia, hepatosplenomegaly, and a positive SARS-CoV-2 IgM rapid test. The tension lies in distinguishing acute COVID-19 with multisystem inflammatory features from an unexpected outbreak of vector-borne protozoal infection occurring in a neighboring rural community.\n2. Admission Breakpoint: The breakpoint is reached upon admission to the reference infectious diseases hospital following physical examination and initial hematology (severe anemia with Hb 6.2 g/dL, thrombocytopenia of 50,000/microL) and the discordant SARS-CoV-2 serology/PCR, before parasitic rapid diagnostic testing and blood smear microscopy.\n3. Differential Distinctions: SARS-CoV-2 infection was considered due to the ongoing pandemic and positive IgM test, but nasal RT-qPCR was negative and severe isolated anemia with prominent splenomegaly strongly pointed toward intravascular hemolysis. Other tropical febrile illnesses with thrombocytopenia (such as dengue or visceral leishmaniasis) were superseded by the epidemiological link to a local outbreak and subsequent blood smear parasitism.",
+  "case_prompt": "In June 2021, a 7-year-old boy with no significant past medical history from a peri-urban community in southern Bahia, northeastern Brazil, presents with acute fever, chills, severe fatigue, headache, myalgias, dyspnea, marked pallor, apathy, and hyporexia. Other members of his household have developed similar febrile symptoms. He is transferred to a regional reference infectious disease hospital for further evaluation.\n\nOn physical examination, the child is lethargic and markedly pale, with tachycardia and tachypnea, but without retractions or signs of respiratory distress. Abdominal examination reveals painless hepatomegaly and splenomegaly.\n\nInitial laboratory evaluation reveals severe anemia and thrombocytopenia: hemoglobin is 6.2 g/dL, hematocrit 17.4%, white blood cell count 5,820/mm^3, and platelet count 50,000/microL. A rapid serologic test for SARS-CoV-2 IgM returns positive, but a nasopharyngeal SARS-CoV-2 molecular diagnostic assay is negative. Epidemiologic investigation reveals that a localized febrile outbreak was recently confirmed in an adjacent rural settlement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "COVID-19 / SARS-CoV-2 Infection",
+      "rule_out_reason": "Although the patient had a positive SARS-CoV-2 IgM rapid test in June 2021, confirmatory nasal RT-qPCR was negative, and severe normocytic anemia with hepatosplenomegaly was inconsistent with isolated coronavirus disease.",
+      "quote": "The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) IgM rapid test result was positive, although the nasal swab SARS-CoV-2 reverse transcription-quantitative PCR (RT-qPCR) result was negative."
+    },
+    {
+      "candidate": "Other Tropical Hemoparasitic/Arboviral Infections",
+      "rule_out_reason": "Arboviral infections like dengue cause fever and thrombocytopenia, but the marked splenomegaly, profound anemia, and transmission clustering near an active transmission focus pointed specifically toward protozoal parasitemia.",
+      "quote": "Although a non-malaria-endemic region, a recent malaria outbreak was confirmed in a rural settlement neighboring the region where the patient and his family resided."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid antigen testing and Giemsa-stained thin blood-smear examination demonstrated Plasmodium vivax trophozoites with a parasitemia of 378.3 parasites/microL, confirmed by slide qPCR.",
+      "quote": "A rapid test for malaria was positive for P. vivax, confirmed by microscopy and quantitative PCR (qPCR) after genomic DNA extraction from slides (). A thin blood-smear examination identified 378.3 parasites/microL of blood, parasitemia of half a cross."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation captures clinical tension of false-positive COVID-19 IgM in an endemic outbreak. Admission breakpoint strictly maintained before blood smear."
+}

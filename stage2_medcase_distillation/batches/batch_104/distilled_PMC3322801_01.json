@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3322801_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A previously healthy immigrant teenager from an endemic region presented with progressively severe headaches that were misattributed to benign tension headaches over multiple outpatient encounters without neuroimaging, culminating in sudden fatal ventricular outlet obstruction and brain herniation.\n2. Admission Breakpoint: The clinical narrative concludes after the third ambulatory office evaluation where symptomatic therapy was prescribed without neuroimaging, immediately prior to her sudden collapse and postmortem pathological examination.\n3. Differential Distinctions: Tension-type headache was diagnosed clinically due to the absence of documented focal deficits, but failed to account for unrelenting progressive worsening and subsequent acute obstructive hydrocephalus. Fatal toxic ingestion or traumatic brain injury were evaluated postmortem but ruled out by negative toxicology and lack of traumatic injury. Neuropathology revealed fourth-ventricle outlet obstruction by an intact larval cestode cyst.",
+  "case_prompt": "A previously healthy teenage girl who had emigrated from Mexico to the United States as an infant sought outpatient medical evaluation for progressively severe headaches of several months' duration. She had no prior history of chronic illness or neurological complaints. Over the course of three clinical visits, her worsening headache symptoms were evaluated; no neuroimaging studies were ordered, and a clinical diagnosis of tension headaches was made, for which symptomatic medical therapy was prescribed.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Tension-Type Headache",
+      "rule_out_reason": "Diagnosed clinically based on subacute to chronic presentation without obvious focal neurological signs; ruled out by subsequent fatal rapid decompensation with acute obstructive hydrocephalus and uncal herniation.",
+      "quote": "After three office visits, \"tension headaches\" were diagnosed, and symptomatic therapy was prescribed. Neuroimaging was not performed."
+    },
+    {
+      "candidate": "Acute Toxic Ingestion / Drug Overdose",
+      "rule_out_reason": "Considered in the differential diagnosis of sudden, unexpected death at home in a teenager; ruled out by comprehensive postmortem toxicology screening.",
+      "quote": "Autopsy showed no evidence of trauma, and results of a toxicology screening were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neuropathological examination demonstrated severe acute obstructive hydrocephalus, flattened cerebral gyri, bilateral uncal herniation, and an intact cysticercus mechanically compressing and obstructing the inferior fourth ventricle, establishing intraventricular neurocysticercosis.",
+      "quote": "Examination of the brain showed obstructive hydrocephalus, bilateral uncal herniation, flattening of the cerebral gyri, and an intact cysticercus compressing the inferior 4th ventricle (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Outpatient presentation stops prior to sudden death and postmortem examination. Zero pathogen spoilers in prompt."
+}

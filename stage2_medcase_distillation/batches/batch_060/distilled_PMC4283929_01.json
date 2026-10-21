@@ -1,0 +1,48 @@
+{
+  "case_id": "PMC4283929_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A patient presenting with prolonged fever, multiorgan dysfunction syndrome (ARDS requiring mechanical ventilation, acute kidney injury, jaundice, transaminitis, and coagulopathy), and clinical features meeting criteria for hemophagocytic lymphohistiocytosis (HLH). The key clinical challenge is distinguishing between pyogenic sepsis, common tropical viral infections (such as dengue or viral hepatitis), zoonotic infections (such as leptospirosis, brucellosis, or malaria), primary/viral HLH (e.g., EBV), and rickettsial infection, where recognition of subtle pathognomonic physical findings such as a cutaneous eschar directs specific targeted therapy.\n2. Admission Breakpoint: Admission triage ends following initial intensive care resuscitation, physical examination (identifying coarse pulmonary crepitations, pallor, hepatosplenomegaly, peripheral lymphadenopathy, and a left groin eschar), and baseline laboratory evaluation (documenting cytopenias, renal failure, hepatic dysfunction, coagulopathy, and marked hyperferritinemia), immediately prior to invasive bone marrow aspiration cytology and send-out serological investigations.\n3. Differential Distinctions: Tropical pathogens such as Plasmodium, Leptospira, and Dengue virus frequently cause acute febrile illness with cytopenias, jaundice, and shock, while EBV is the most frequent infectious trigger of secondary HLH. Bacterial sepsis accounts for most presentations of ARDS with DIC. Scrub typhus is distinguished by the pathognomonic cutaneous eschar at the chigger inoculation site and confirmed by specific Orientia tsutsugamushi IgM serology.",
+  "case_prompt": "A 45-year-old man presents to the emergency department and requires admission to the intensive care unit due to prolonged fever lasting several weeks associated with generalized symptoms of systemic inflammatory response syndrome and severe sepsis. On physical examination, he is tachypneic and hypoxemic with bilateral coarse pulmonary crepitations, requiring intubation and mechanical ventilation for acute respiratory distress syndrome. Further examination reveals conjunctival pallor, jaundice, hepatosplenomegaly, cervical and axillary lymphadenopathy, and a cutaneous eschar over the left groin.\n\nBaseline laboratory investigations demonstrate persistent bi/pancytopenia, acute kidney injury, and hepatic dysfunction with elevated serum transaminases. Coagulation studies are deranged, showing prolonged prothrombin time (PT) and activated partial thromboplastin time (APTT). Additional testing reveals severe hyperferritinemia (>1,000 ng/mL), elevated lactate dehydrogenase (>500 IU/L), hypertriglyceridemia (>265 mg/dL), hypoalbuminemia (<2.5 g/dL), and hyponatremia (<=125 mEq/L).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered due to prolonged fever, hepatosplenomegaly, jaundice, and severe cytopenias, but excluded by negative microbiological and serological evaluation.",
+      "quote": "Microbiological and serological work-up was negative for HIV, hepatitis B and C viruses, dengue, malaria, leptospira, brucella, and Epstein-Barr virus."
+    },
+    {
+      "candidate": "Dengue",
+      "rule_out_reason": "Considered in the differential diagnosis of acute febrile illness with cytopenias, hepatitis, and coagulopathy, but excluded by negative serology.",
+      "quote": "Microbiological and serological work-up was negative for HIV, hepatitis B and C viruses, dengue, malaria, leptospira, brucella, and Epstein-Barr virus."
+    },
+    {
+      "candidate": "Leptospirosis",
+      "rule_out_reason": "Considered given the constellation of prolonged fever, jaundice, acute kidney injury, and pulmonary involvement, but ruled out by negative serological tests.",
+      "quote": "Microbiological and serological work-up was negative for HIV, hepatitis B and C viruses, dengue, malaria, leptospira, brucella, and Epstein-Barr virus."
+    },
+    {
+      "candidate": "Brucellosis",
+      "rule_out_reason": "Considered due to persistent fever, constitutional symptoms, and hepatosplenomegaly, but ruled out by negative serology and sterile cultures.",
+      "quote": "Microbiological and serological work-up was negative for HIV, hepatitis B and C viruses, dengue, malaria, leptospira, brucella, and Epstein-Barr virus. Microbial cultures of blood, urine, sputum, bronchoalveolar lavage fluid, and bone marrow aspirate were sterile."
+    },
+    {
+      "candidate": "Epstein-Barr Virus (EBV) Infection",
+      "rule_out_reason": "Considered as a classic viral driver of secondary hemophagocytic lymphohistiocytosis in a patient fulfilling HLH diagnostic criteria, but ruled out by negative serology.",
+      "quote": "Microbiological and serological work-up was negative for HIV, hepatitis B and C viruses, dengue, malaria, leptospira, brucella, and Epstein-Barr virus."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Sepsis",
+      "rule_out_reason": "Initial working diagnosis given SIRS, ARDS, multiorgan dysfunction, and coagulopathy, but excluded by sterile microbial cultures across multiple anatomical sites.",
+      "quote": "Microbial cultures of blood, urine, sputum, bronchoalveolar lavage fluid, and bone marrow aspirate were sterile."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of severe multiorgan failure, secondary HLH, and a classic cutaneous eschar prompted confirmatory serologic testing, which definitively established the diagnosis.",
+      "quote": "A diagnosis of scrub typhus was confirmed by presence of IgM antibody against Orientia tsutsugamushi (O. tsutsugamushi) by ELISA."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette strictly restricted to Day 1 ICU presentation, exam findings (including eschar), and baseline organ failure labs before bone marrow aspirate cytology or send-out serology results. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

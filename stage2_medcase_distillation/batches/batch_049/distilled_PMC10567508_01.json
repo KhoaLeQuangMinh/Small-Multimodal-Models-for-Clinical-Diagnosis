@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10567508_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 31-year-old previously healthy Ethiopian man suffers sudden cardiac death in his home washroom without any reported antecedent constitutional or cardiac symptoms. Autopsy reveals a massive (5.8 cm) right atrial mass obstructing vena caval inflow alongside disseminated micronodular visceral lesions. The diagnostic challenge centers on distinguishing an obstructive cardiac neoplasm (such as atrial myxoma or cardiac sarcoma) from an unsuspected cardiac tuberculoma.\n2. Admission Breakpoint: The breakpoint occurs at initial medicolegal postmortem evaluation following external examination (confirming a well-nourished individual without signs of trauma) and initial gross organ inspection (revealing cardiomegaly with a 5.8 cm right atrial mass and visceral micronodules), strictly before microscopic histopathology and acid-fast staining.\n3. Differential Distinctions: Atrial myxoma is the most frequent intracavitary cardiac tumor and can cause mechanical inflow obstruction and sudden death, but histologically consists of stellate cells in a myxoid matrix rather than necrotizing granulomas. Primary malignant cardiac tumors (angiosarcoma, undifferentiated pleomorphic sarcoma) predominantly affect the right heart but display severe cellular atypia and invasive growth rather than caseating granulomatous inflammation.",
+  "case_prompt": "A 31-year-old Ethiopian man was brought for medicolegal postmortem evaluation after being discovered deceased inside a washroom at home. His spouse reported that he had been in excellent baseline health, with no known chronic medical conditions, recent illness, fever, cough, chest discomfort, or syncope. There was no personal or family history of structural heart disease, arrhythmias, or premature sudden cardiac death. On external examination, the deceased was well nourished with no evidence of traumatic injury or violent physical trauma. Gross internal examination revealed cardiomegaly with a heart weight of 570 g and increased epicardial fat. The right atrium was dilated and nearly completely obliterated by a large, firm, globular whitish-to-yellow mass measuring 5.8 cm × 4.9 cm arising from the posterior wall and interatrial septum, positioned 0.4 cm above the tricuspid valve. Supervening thrombus projected from the mass toward the orifices of the superior and inferior vena cavae, producing mechanical inflow obstruction. Both lungs exhibited bilateral pleural thickening, dense chest wall adhesions, and widespread micronodular deposits throughout the pulmonary parenchyma, with similar discrete micronodules identified in the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Atrial Myxoma with Inflow Obstruction",
+      "rule_out_reason": "A large, smooth, globular intracavitary right atrial mass causing inflow obstruction and sudden death strongly resembles a benign cardiac myxoma; however, histologic sectioning revealed confluent necrotizing granulomas and caseous necrosis rather than bland mesenchymal stellate cells in an acid mucopolysaccharide stroma.",
+      "quote": "The right atrium was dilated, and there was a globular mass measuring 5.8 cm x 4.9 cm arising from the posterior wall and interatrial septum of the right atrium 0.4 cm above the tricuspid valve, which had almost obliterated the right atrial cavity. It was whitish to yellow in color, firm in consistency, regular borders with a smooth surface, and yellowish brown on the cut section (Figure 1)."
+    },
+    {
+      "candidate": "Primary Malignant Cardiac Tumor (Angiosarcoma / Lymphoma)",
+      "rule_out_reason": "Rapidly growing right atrial masses in young adults frequently represent aggressive sarcomas or lymphomatous infiltration; however, microscopic evaluation revealed well-formed epithelioid granulomas and Langhans giant cells devoid of mitotic atypia or neoplastic architecture.",
+      "quote": "Histological examination of the heart showed extensive areas of caseous necrosis with numerous well-formed granulomas and Langerhans-type giant cells (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological demonstration of extensive caseous necrosis and Langhans giant cells forming a solitary right atrial mass, corroborated by microscopic identification of acid-fast bacilli in concurrent parenchymal lung granulomas, confirmed disseminated miliary tuberculosis with a fatal cardiac tuberculoma.",
+      "quote": "Histological examination of the heart showed extensive areas of caseous necrosis with numerous well-formed granulomas and Langerhans-type giant cells (Figure 2). Despite the typical histological appearance of a tuberculoma, the Ziehl-Neelsen (ZN) staining of the cardiac mass was negative. Acid-fast bacilli were discovered from the lung sample."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Zero-leakage case narrative describes the postmortem clinical history and gross anatomical findings while strictly excluding terms like 'tubercles', 'tuberculoma', acid-fast stains, and mycobacterial identities. Differential diagnoses and pivot are supported by exact verbatim quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3271629_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 35-year-old previously healthy man presents with acute brainstem findings: wall-eyed monocular internuclear ophthalmoplegia (WEMINO) and contraversive ocular tilt reaction (OTR). In an adult presenting with acute internuclear ophthalmoplegia and brainstem signs, ischemic pontine stroke or multiple sclerosis is almost universally suspected. Neurocysticercosis presenting as an isolated solitary intra-axial pontine lesion causing a complex ocular motility syndrome is an exceptional presentation.\n2. Admission Breakpoint: History, acute onset of headache/nausea/giddiness, and detailed neuro-ophthalmological examination establishing the WEMINO syndrome and contraversive OTR mark the admission breakpoint prior to brain MRI demonstrating the pontine cystic lesion with an intracavitary scolex.\n3. Differential Distinctions: Pontine ischemic infarction (primary cause of sudden INO in adults, ruled out by MRI demonstrating a cyst with a scolex), Multiple sclerosis / demyelinating plaque (common etiology of INO in young adults, ruled out by neuroimaging), and solitary pontine Neurocysticercosis.",
+  "case_prompt": "A 35-year-old man presented with sudden onset of headache, nausea, and giddiness of two days duration. He did not have any significant past medical history. On examination, vital signs were normal. Neurological examination revealed exotropia of the right eye with hypotropia of the left eye in primary gaze. The patient had a head tilt to the left, resulting in his left eye being on a lower horizontal plane than the right. On attempted leftward gaze, there was complete loss of adduction in the right eye accompanied by mild dissociated nystagmus in the abducting left eye. On attempted rightward gaze, ocular movements were entirely normal. Pupils were equal in size and reacted normally to light. Convergence was impaired in the right eye. Optokinetic testing demonstrated an adduction lag in the right eye. Vertical saccades were normal, and the patient reported no diplopia. The remainder of his neurological examination, including fundoscopy, other cranial nerves, motor, sensory, and cerebellar testing, was completely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pontine ischemic stroke (Infarction of the medial longitudinal fasciculus)",
+      "rule_out_reason": "Acute sudden onset of internuclear ophthalmoplegia with skew deviation in an adult most commonly represents brainstem ischemia; however, neuroimaging demonstrated a discrete cystic lesion rather than microvascular or thromboembolic ischemic infarction.",
+      "quote": "The presence of unilateral INO with ipsilesional exotropia in primary gaze is characteristic of WEMINO syndrome."
+    },
+    {
+      "candidate": "Brainstem demyelinating disease / Multiple Sclerosis",
+      "rule_out_reason": "Isolated internuclear ophthalmoplegia in a young adult is a classic hallmark of demyelinating plaques in the dorsal pons; however, neuroimaging showed an isolated cystic lesion with an intracavitary scolex rather than multiple sclerosis plaques.",
+      "quote": "Rest of his neurological examinations including fundus and other cranial nerves were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Pontine Neurocysticercosis)",
+      "rule_out_reason": "Brain MRI demonstrated a characteristic well-defined cystic lesion containing an intracavitary scolex on the right side of the mid-pons, fulfilling absolute diagnostic criteria for neurocysticercosis; the patient experienced complete recovery following albendazole and corticosteroid therapy.",
+      "quote": "MRI brain of the patient showed a typical well-defined cystic lesion with intracavitary scolex on the right side of mid pons [Figure 3]. The evidence of a typical scolex on a CT or MRI is considered the absolute criteria for diagnosis of neurocysticercosis."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fascinating neuro-ophthalmologic presentation of mid-pontine neurocysticercosis mimicking brainstem stroke. Breakpoint cleanly ends after the physical examination, preserving the MRI findings for the diagnostic reasoning."
+}

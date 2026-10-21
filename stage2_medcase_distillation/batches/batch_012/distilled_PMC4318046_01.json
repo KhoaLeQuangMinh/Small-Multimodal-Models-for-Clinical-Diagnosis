@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4318046_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: An acute febrile systemic eruption with painful tender papules, arthralgias, and ankle edema developing 4 weeks after initiating antiretroviral therapy in an HIV-infected patient, mimicking drug hypersensitivity, opportunistic bacteremia, or secondary syphilis, but occurring against a backdrop of chronic diffuse earlobe infiltration, peripheral nerve hypertrophy, and stocking sensory loss.\n2. Admission Breakpoint: The admission evaluation ends after triage blood counts, inflammatory markers, serologies (VDRL, HBsAg), routine metabolic panels, chest radiograph, abdominal ultrasound, and CD4 reconstitution monitoring, immediately prior to slit-skin smear examination and cutaneous punch biopsy.\n3. Differential Distinctions: Secondary syphilis is ruled out by non-reactive VDRL serology; antiretroviral drug reaction/hypersensitivity is excluded by prominent peripheral nerve thickening, glove-and-stocking sensory loss, and histopathologic/smear evidence of acid-fast mycobacteria with classic Grenz zone and lepromatous infiltrates.",
+  "case_prompt": "A 38-year-old male with human immunodeficiency virus (HIV) infection presented with a 2-day history of an acute eruptive rash consisting of multiple painful, erythematous skin lesions distributed over his face, abdomen, and extremities. This was accompanied by an evening rise in temperature associated with chills, malaise, generalized body aches, arthralgias, and bilateral ankle edema. He also reported a history of nasal stuffiness and recurrent epistaxis. He had been initiated on antiretroviral therapy (zidovudine, lamivudine, and nevirapine) 4 weeks prior to the onset of the cutaneous eruption. He had a history of multiple heterosexual partners, and denied any history of diabetes mellitus, hypertension, or chronic pulmonary infections.\n\nOn physical examination, the patient was febrile, pale, thin, and ill-nourished. There was no generalized lymphadenopathy. Cutaneous examination revealed diffuse infiltration of both earlobes along with multiple erythematous, tender papules and nodules distributed over the face, trunk, and extremities. Neurological examination demonstrated reduced pain and light touch sensation over both feet, and the ulnar, radial cutaneous, lateral popliteal, and posterior tibial nerves were palpably thickened and tender bilaterally. Hair, nails, and mucous membranes were normal, and systemic examination was unremarkable.\n\nLaboratory investigations revealed a hemoglobin of 10 g/dL with microcytic hypochromic indices, a total leukocyte count of 12,800/mm³ with neutrophilic leukocytosis (75% neutrophils, 20% lymphocytes, 3% monocytes, 2% eosinophils), and an erythrocyte sedimentation rate (ESR) of 68 mm in the first hour. A Venereal Disease Research Laboratory (VDRL) test was non-reactive, and hepatitis B surface antigen (HBsAg) was negative. Urinalysis, fasting blood glucose, renal function tests, and liver function tests were all within normal limits. Chest radiography and abdominal ultrasonography revealed no abnormalities. Prior to starting antiretroviral therapy, his CD4 cell count was 94 cells/mm³ with an HIV-1 viral load of 107,400 copies/mL; at presentation (one month post-ART initiation), his CD4 cell count had risen to 151 cells/mm³.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Secondary Syphilis / Treponemal Infection",
+      "rule_out_reason": "Considered due to the polymorphic papulonodular cutaneous eruption and history of multiple sexual exposures; ruled out by a non-reactive VDRL serological test.",
+      "quote": "VDRL was non-reactive, and HBsAg was negative."
+    },
+    {
+      "candidate": "Antiretroviral Drug Hypersensitivity Reaction",
+      "rule_out_reason": "Considered given the temporal onset of rash and fever four weeks after initiating nevirapine-based ART; ruled out by the characteristic earlobe infiltration, multiple thickened tender peripheral nerves, and peripheral sensory loss.",
+      "quote": "He was on ART zidovudine, lamivudine, nevirapine (ZLN) for 4 weeks prior to the onset of skin lesions."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Lepromatous Leprosy with Erythema Nodosum Leprosum (ENL) as IRIS",
+      "rule_out_reason": "The diagnosis was confirmed by slit skin smear demonstrating acid-fast bacilli with a bacteriological index of 4 and morphological index of 20%, alongside a skin biopsy showing Grenz zone, dermal edema, macrophage aggregates, and acute-on-chronic perivascular inflammation indicative of ENL unmasked during immune reconstitution.",
+      "quote": "Slit skin smear examination for M. leprae revealed bacteriological index of 4 along with a morphological index of 20%. Biopsy taken from the nodule on the left hand [Figure 3] demonstrated mild hyperkeratosis in epidermis, grenz zone. Dermis shows edema with collection of macrophages [Figure 4]. Vessels showed acute and chronic perivascular inflammatory infiltrate [Figure 5] consistent with ENL."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4318046. The prompt strictly ends before slit skin smear and skin biopsy results. Mention of 'leprosy' or 'ENL' in the medical history completely sanitized. Zero diagnostic leaks."
+}

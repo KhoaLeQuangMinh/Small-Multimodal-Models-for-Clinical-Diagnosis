@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9894724_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 37-year-old female migrant worker from the Philippines presented with subacute upper abdominal pain, nausea, vomiting, significant unintentional weight loss (5 kg), and epigastric tenderness mimicking peptic ulcer disease, acute pancreatitis, or choledocholithiasis. Abdominal ultrasound revealed a dilated common bile duct containing a distinctive linear tubular echogenic structure alongside similar intraductal and luminal structures in adjacent bowel loops.\n2. Admission Breakpoint: The admission breakpoint falls immediately following the initial emergency evaluation and transabdominal ultrasonography documenting biliary ductal dilation and linear intraductal echogenic structures, strictly prior to gastroenterology endoscopic retrograde cholangiopancreatography (ERCP) and direct parasitological worm extraction.\n3. Differential Distinctions: Choledocholithiasis typically presents with biliary colic and ultrasound demonstrating acoustic shadowing gallstones or intraductal calculi rather than elongated, non-shadowing tubular structures. Peptic ulcer disease or gastritis can cause epigastric pain and anorexia but does not cause biliary ductal dilation or intraductal tubular fillings. Acute cholangitis often features Charcot's triad (fever, jaundice, pain). In a patient from an endemic region in Southeast Asia, linear non-shadowing tubular structures migrating into the biliary tree indicate hepatobiliary helminthic infection.",
+  "case_prompt": "A 37-year-old woman with no prior chronic medical history presented to the emergency department with a two-week history of episodic upper abdominal pain. The pain was described as dull, non-radiating, exacerbated by movements and positional changes, and refractory to oral antacids and analgesics. The pain began insidiously but had progressively intensified, reaching 10/10 in severity during acute exacerbations. She also reported a one-month history of anorexia, a five-kilogram unintentional weight loss over the preceding month, and three days of persistent nausea and vomiting. She had recently immigrated from the Philippines and worked as a domestic housemaid. She denied any fevers, diarrhea, constipation, hematemesis, or melena.\n\nOn physical examination, her vital signs were within normal limits. She was alert and oriented. Abdominal examination revealed a soft and lax abdomen with severe focal epigastric tenderness to palpation. There was no rebound tenderness, involuntary guarding, palpable abdominal mass, or hepatosplenomegaly.\n\nEmergency transabdominal ultrasonography demonstrated a dilated common bile duct (CBD) measuring 9 mm in diameter. Within the lumen of the CBD, a distinct linear tubular echogenic structure was visualized. Additional linear echogenic structures were noted within adjacent bowel loops in the epigastric region and right lumbar area. The liver, gallbladder, pancreas, and other visualized abdominal organs were otherwise unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peptic ulcer disease / Gastritis",
+      "rule_out_reason": "Considered due to subacute epigastric pain, anorexia, and nausea, but ruled out given complete lack of relief with antacids and analgesics, along with ultrasound showing significant common bile duct dilation and intraductal tubular filling defects.",
+      "quote": "The pain was dull in nature, non-radiating, and worsening with movements and change in position, which did not get relieved with antacid or analgesics... severe epigastric tenderness... Ultrasound abdomen was done which showed dilated common bile duct (CBD), measuring 9 mm."
+    },
+    {
+      "candidate": "Choledocholithiasis / Biliary colic",
+      "rule_out_reason": "Considered given dilated common bile duct and biliary colic symptoms, but ruled out by ultrasound and cholangiography which demonstrated linear tubular structures rather than acoustic shadowing biliary calculi.",
+      "quote": "Ultrasound abdomen was done which showed dilated common bile duct (CBD), measuring 9 mm. There was a linear tubular echogenic structure noted in the common bile duct."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Urgent endoscopic retrograde cholangiopancreatography (ERCP) revealed adult macroscopic roundworms within the stomach, duodenum, and biliary tree, with extraction from the left hepatic duct confirming biliary infestation by soil-transmitted nematodes.",
+      "quote": "On ERCP, the stomach showed a large adult worm, which was stuck to the suction channel and removed out. The first and second parts of the duodenum showed multiple big adult worms of ascariasis. Cholangiogram showed one big adult worm in the left hepatic duct and proximal CBD. The guide wire was passed selectively to the left hepatic duct and the adult worm was removed with balloon weep"
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation stops at transabdominal ultrasonography revealing common bile duct dilation and linear tubular structures, excluding ERCP findings and worm identification."
+}

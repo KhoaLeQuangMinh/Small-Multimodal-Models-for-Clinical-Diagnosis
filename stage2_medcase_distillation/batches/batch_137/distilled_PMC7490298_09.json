@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7490298_09",
+  "disease": "Zika Virus",
+  "think": "<think>\n1. Core Clinical Tension: A 25-year-old pregnant woman in the third trimester presents with mild dermatologic symptoms (acute exanthema and pruritus). The key challenge is distinguishing common, benign gestational dermatoses or non-teratogenic viral rashes from a teratogenic arboviral infection capable of inducing catastrophic fetal neurologic damage (microcephaly) despite a mild maternal presentation.\n2. Admission Breakpoint: The admission breakpoint stops immediately after triage presentation with third-trimester rash and pruritus. Serologic arboviral testing (IgM and PRNT90%) and delivery outcome (microcephaly at 37 weeks) are confirmatory and post-breakpoint.\n3. Differential Distinctions: Dengue virus typically presents with high fevers, severe retro-orbital pain, myalgias, and thrombocytopenia, and is excluded by neutralizing antibody specificity. Pruritic dermatoses of pregnancy (such as PUPPP) do not involve viral seroconversion or congenital microcephaly. Specific neutralizing antibodies on PRNT90% establish Zika virus infection.\n</think>",
+  "case_prompt": "<case_prompt>\nA 25-year-old pregnant woman presents during the third trimester of gestation for clinical evaluation reporting the acute onset of an exanthematous skin rash accompanied by generalized pruritus. Routine prenatal monitoring is underway to assess maternal health and monitor fetal growth.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue Virus",
+      "rule_out_reason": "In arbovirus-endemic regions, gestational fever, rash, and pruritus frequently raise suspicion for dengue; however, dengue does not cause congenital microcephaly and cross-reactive flavivirus antibodies are distinguished by plaque reduction neutralization testing demonstrating specific neutralizing antibodies.",
+      "quote": "PRNT90% was positive for neutralizing antibodies."
+    },
+    {
+      "candidate": "Benign Gestational Dermatoses (e.g., PUPPP)",
+      "rule_out_reason": "Pruritic urticarial papules and plaques of pregnancy frequently occur in the third trimester, but represent a non-infectious, self-limiting disorder without viral seroconversion or fetal developmental abnormalities.",
+      "quote": "Her IgM serology was positive for Zika and the PRNT90% was positive for neutralizing antibodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Acute positive IgM serology confirmed by high-specificity plaque reduction neutralization testing (PRNT90%) confirming neutralizing antibodies, resulting in congenital fetal microcephaly (head circumference of 27 cm at 37 weeks gestation).",
+      "quote": "Her IgM serology was positive for Zika and the PRNT90% was positive for neutralizing antibodies. At 37 weeks of gestation, her baby girl was born by cesarean with a cephalic circumference of 27 cm. The placenta weighed 565 g."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict source fidelity maintained. Clean admission prompt stopping prior to serology and delivery outcome. Verbatim quotes from source text. Audit flags NONE."
+}

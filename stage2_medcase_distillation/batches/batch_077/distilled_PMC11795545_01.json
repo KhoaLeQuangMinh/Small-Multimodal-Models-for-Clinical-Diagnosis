@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11795545_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 32-year-old male developed rapid-onset, ascending flaccid quadriparesis, areflexia, and stocking-glove sensory loss 10 days after the onset of an acute febrile illness characterized by thrombocytopenia, leukopenia, and elevated transaminases. The clinical challenge is recognizing a rare post-infectious neuroimmunological complication (acute inflammatory demyelinating polyneuropathy / Guillain-Barr\u00e9 syndrome) triggered by acute dengue infection.\n2. Admission Breakpoint: The admission breakpoint occurs upon presentation to the emergency department on Day 10 with progressive symmetrical limb weakness and areflexia, prior to cerebrospinal fluid analysis, electromyography, and nerve conduction studies.\n3. Differential Distinctions: Acute transverse myelitis was considered given acute post-infectious quadriparesis, but ruled out by flaccid areflexia across all limbs without a distinct sensory level or sphincter disturbance; viral myositis was considered given severe antecedent myalgias, but ruled out by peripheral nerve demyelination and areflexia rather than muscle enzyme elevation; Guillain-Barr\u00e9 syndrome secondary to dengue was confirmed by electrodiagnostic demyelination, albuminocytologic dissociation, and positive dengue serology.",
+  "case_prompt": "A 32-year-old previously healthy male presented to the emergency department with a 5-day history of persistent high-grade fever exceeding 39 C, chills, rigors, generalized fatigue, and severe muscle aches localized predominantly in his lower back and legs that significantly limited his mobility. On initial triage, heart rate was 110 beats per minute, blood pressure was 100/60 mmHg, and temperature was 38.5 C. Physical examination demonstrated mild hepatomegaly without rash, lymphadenopathy, jaundice, or neurological deficits. Baseline laboratory investigations revealed a platelet count of 85,000/mm3, white blood cell count of 4,000/mm3, hematocrit of 44%, aspartate aminotransferase of 75 U/L, and alanine aminotransferase of 85 U/L. The patient was managed conservatively with intravenous fluids and acetaminophen. His fever resolved after three days, and he was discharged on day 8 with improving symptoms.\n\nOn day 10 after initial symptom onset, the patient returned acutely to the emergency department reporting the sudden onset of progressive weakness that began distally in his feet and ascended rapidly over 24 hours to involve his legs and arms, leaving him unable to walk or lift his arms above shoulder level. He also noted tingling and 'pins and needles' sensations in both hands and feet. Neurological examination revealed bilateral, symmetric flaccid paralysis of all four limbs with inability to perform movements against gravity, complete absence of deep tendon reflexes, no muscle atrophy, and diminished sensation to light touch and pinprick in a glove-and-stocking distribution. Cranial nerves were intact and respiratory function was preserved.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Transverse Myelitis",
+      "rule_out_reason": "Considered due to the rapid post-febrile onset of paraparesis progressing to quadriparesis and sensory paresthesias, but ruled out by generalized flaccid areflexia in all four extremities, absence of a discrete spinal sensory level, absence of bowel/bladder dysfunction, and neurophysiologic confirmation of peripheral demyelinating polyneuropathy.",
+      "quote": "During the neurological examination, the following findings were noted: bilateral, symmetric flaccid paralysis of all four limbs, with the patient being unable to perform movements against gravity. Deep tendon reflexes were absent, with no signs of muscle atrophy. Sensory examination revealed a diminished response to light touch and pinprick sensations in a glove-and-stocking distribution."
+    },
+    {
+      "candidate": "Post-Infectious / Viral Myositis",
+      "rule_out_reason": "Considered given the profound antecedent back and leg myalgias following acute arboviral illness, but ruled out because the profound motor deficit was driven by peripheral nerve demyelination with prolonged latencies and loss of deep tendon reflexes, rather than primary muscle fiber pathology.",
+      "quote": "An urgent electromyography (EMG) and nerve conduction study were performed, which revealed significant demyelination characterized by prolonged distal motor latencies and reduced conduction velocities, confirming the diagnosis of acute inflammatory demyelinating polyneuropathy (AIDP)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cerebrospinal fluid analysis demonstrated albuminocytologic dissociation with elevated protein (110 mg/dL) and normal leukocytes, nerve conduction studies confirmed AIDP, and serological testing confirmed acute dengue infection with positive IgM and IgG antibodies, confirming Guillain-Barr\u00e9 syndrome secondary to dengue fever.",
+      "quote": "Serological testing for dengue fever was conducted, resulting in positive IgM and IgG antibodies, confirming a diagnosis of dengue fever... The CSF analysis revealed an elevated protein level of 110 mg/dL (normal range: 15-45 mg/dL) with a normal white blood cell count, consistent with albuminocytologic dissociation:a hallmark of GBS."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint set on Day 10 upon evaluation of acute ascending flaccid quadriparesis, strictly before EMG/NCS and CSF analysis. Dengue serology held for diagnostic reasoning. Verbatim text quotes confirmed."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3295726_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A subacute febrile wasting illness with cervical and generalized lymphadenopathy and paratracheal/mediastinal widening in a diabetic host, closely masquerading as thoracic lymphoma/malignancy or tuberculous scrofula.\n2. Admission Breakpoint: Admission clinical evaluation stops following physical examination, baseline hematologic tests/ESR, and initial plain chest radiography; thoracic computed tomography (CT), lymph node excision biopsy, bone marrow aspiration, and blood cultures constitute confirmatory testing.\n3. Differential Distinctions: Mediastinal lymphoma presents with lymphadenopathy and B-symptoms but biopsy displays neoplastic monoclonal architectural destruction without bacterial growth; tuberculosis typically exhibits caseating granulomas with acid-fast bacilli and positive tuberculin skin testing; melioidosis in diabetic patients manifests with acute-on-chronic suppurative or granulomatous adenopathy, confirmed by isolation of Burkholderia pseudomallei.",
+  "case_prompt": "A 43-year-old Asian man with diabetes mellitus, employed as an office clerk, presented with a one-month history of daily fevers and a five-day history of painful swelling below the left submandibular region. He also reported progressive involuntary weight loss and anorexia over the preceding month.\n\nOn physical examination, the patient was febrile. Lymph node examination revealed multiple enlarged nodes: a tender, firm left submandibular lymph node measuring 2 x 1 cm, and palpable bilateral axillary lymph nodes, the largest measuring 0.5 x 0.5 cm. Vital signs were otherwise stable, and the remainder of the systemic physical examination was unremarkable.\n\nInitial laboratory investigations demonstrated neutrophilic leukocytosis, an elevated erythrocyte sedimentation rate (ESR), and marked hyperglycemia reflecting uncontrolled diabetes mellitus. A plain chest radiograph showed widening of the right paratracheal silhouette suggestive of mediastinal lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Mediastinal Malignancy / Lymphoma",
+      "rule_out_reason": "Thoracic CT scan suggested an anterior mediastinal malignant mass, but submandibular lymph node excision biopsy demonstrated granulomatous inflammation composed of lymphocytes and plasma cells without neoplastic lymphoid proliferation, and blood/marrow cultures subsequently isolated an infectious pathogen.",
+      "quote": "A computed tomography (CT) scan of his thorax showed an anterior mediastinal mass measuring 4.2 x 3.7 x 3 cm in the right paratracheal region suggestive of a malignant mass with a few upper lobe densities (Figure 2). An excision biopsy of the submandibular swelling showed a non-caseating granuloma composed of lymphocytes and plasma cells suggestive of tuberculosis."
+    },
+    {
+      "candidate": "Tuberculous Lymphadenitis (Scrofula)",
+      "rule_out_reason": "Although histopathology from the submandibular node biopsy showed non-caseating granulomas suggestive of tuberculosis, the tuberculin skin test was negative, bone marrow showed no acid-fast bacilli or granulomas, and blood and bone marrow cultures isolated a non-mycobacterial pathogen.",
+      "quote": "A tuberculin skin test was negative. His bone marrow did not show acid fast bacilli or granuloma. Anti-tuberculosis treatment was not administered."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Blood and bone marrow cultures grew Burkholderia pseudomallei susceptible to ceftazidime and co-trimoxazole, establishing the diagnosis of disseminated melioidosis presenting as mediastinal and cervical lymphadenitis, with clinical resolution achieved on targeted antibiotic therapy.",
+      "quote": "Blood culture and bone marrow culture grew B. pseudomallei sensitive to amoxicillin-clavulanic acid, ceftazidime, piperacillin, cefaperazone-sulbactum, co-trimoxazole, doxycycline, tetracycline, meropenem and imipenem. He was treated for two weeks with ceftazidime (2 gm every six hours intravenously)."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt stops at admission triage with chest x-ray widening prior to CT, biopsy, and cultures. Zero leakage of pathogen in presentation."
+}

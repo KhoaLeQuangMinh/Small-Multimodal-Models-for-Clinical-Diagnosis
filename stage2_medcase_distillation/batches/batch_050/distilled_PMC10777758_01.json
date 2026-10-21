@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10777758_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 58-year-old woman presents during a seasonal arboviral outbreak with acute fever, vomiting, weakness, and transaminitis, but without chest pain or cardiac symptoms. The clinical tension lies in recognizing an acute ST-elevation myocardial infarction (STEMI) triggered as a severe atypical complication of acute viral infection (dengue), contrasting against acute viral myocarditis or primary acute coronary syndrome.\n2. Admission Breakpoint: Admission triage ends after obtaining vital signs, clinical examination, and initial laboratory investigations (showing leukocytosis, transaminitis, hyponatremia, and positive CRP), immediately before routine electrocardiography, cardiac troponin assays, coronary angiography, and confirmatory NS1 antigen testing.\n3. Differential Distinctions: Viral myocarditis presents with diffuse ST changes and non-obstructive coronary vessels, whereas acute viral infection-triggered STEMI exhibits localized transmural ischemic changes and coronary thrombosis. Dengue is distinguished from other tropical fevers by positive NS1 antigen and profound transaminitis.",
+  "case_prompt": "A 58-year-old post-menopausal female from Western Nepal presented during an acute seasonal vector-borne febrile illness outbreak with a 4-day history of fever, myalgia, and arthralgia. The fever was intermittent, reaching a documented peak of 102\u00b0F, accompanied by chills and temporarily responsive to oral paracetamol. She experienced multiple episodes of non-bilious, non-projectile vomiting, throat discomfort without dysphagia, marked anorexia, fatigue, and orthostatic light-headedness. She denied headache, altered consciousness, involuntary movements, cutaneous rashes, respiratory symptoms, cough, chest pain, abdominal pain, or dysuria. She had no significant comorbidities, no history of substance use, and no previous tobacco or alcohol consumption. On admission, blood pressure was 100/70 mmHg, pulse was 90 beats per minute, respiratory rate was 19 breaths per minute, oxygen saturation was 95% on ambient air, and temperature was 97\u00b0F. Physical examination of the cardiovascular, respiratory, and abdominal systems was unremarkable. Initial laboratory tests revealed a leukocyte count of 10,600/mm3 (85% neutrophils, 12% lymphocytes), marked transaminitis with aspartate aminotransferase of 251 U/L and alanine aminotransferase of 300 U/L, serum sodium of 127 mmol/L, and a positive C-reactive protein.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Myocarditis",
+      "rule_out_reason": "Considered given systemic viral illness with ST-segment elevation and anterior wall hypokinesia; ruled out by emergency coronary angiography demonstrating localized severe luminal thrombosis in the left anterior descending artery.",
+      "quote": "PCI was done immediately, and 80%-90% stenosis with clot was present in proximal left anterior descending artery (LAD)."
+    },
+    {
+      "candidate": "Enteric Fever / Scrub Typhus",
+      "rule_out_reason": "Considered due to acute fever, gastrointestinal symptoms, headache/myalgia, transaminitis, and hyponatremia during regional tropical infection season, but ruled out by absence of bacteremia/eschar and confirmation of arboviral etiology.",
+      "quote": "She was found positive for dengue NS1 antigen."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Infection Complicated by Acute Coronary Thrombosis (STEMI)",
+      "rule_out_reason": "Confirmation of acute Dengue by positive NS1 antigen testing alongside electrocardiographic ST-elevation, positive troponin I, and angiographic visualization of an acute thrombotic occlusion in the LAD confirmed Dengue complicated by acute myocardial infarction.",
+      "quote": "The ECG presented ST-segment elevation in leads V3, V4, V5, V6, II, aVF; T-wave inversion in leads I, aVL, V4, V5, V6; and abnormal Q waves in leads I, aVL, V1 to V6. Troponin I also came back positive."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10777758_01. The admission narrative strictly conceals Dengue NS1 serology and coronary angiogram results, presenting the case as an acute febrile illness with transaminitis and orthostasis. Verbatim quotes support all differential candidates and the pivot."
+}

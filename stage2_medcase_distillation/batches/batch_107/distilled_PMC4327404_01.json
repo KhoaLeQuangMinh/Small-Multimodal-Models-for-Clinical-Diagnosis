@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4327404_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 54-year-old woman presented with acute visual loss (20/150) and metamorphopsia due to unilateral subretinal macular hemorrhage and choroidal neovascularization (CNV) occurring two weeks after an acute febrile syndrome with retro-orbital pain, rash, and thrombocytopenia. Distinguishing a post-viral immunogenic retinal pigment epitheliopathy from primary idiopathic choroidal neovascularization or other arboviral maculopathies requires linking the systemic biphasic timeline to the ophthalmic pathology.\n\n2. Admission Breakpoint: Admission triage terminates after the evaluation of visual acuity, anterior and posterior segment examination, triage complete blood count showing thrombocytopenia, fluorescein angiography, and spectral-domain optical coherence tomography (SD-OCT). Confirmatory viral real-time PCR testing constitutes the post-triage diagnostic milestone.\n\n3. Differential Distinctions: Idiopathic or age-related choroidal neovascularization was ruled out by the close temporal association with a classic acute arboviral illness and laboratory thrombocytopenia. Other tropical arboviral syndromes (such as Chikungunya or Zika) were excluded by positive pathogen-specific real-time PCR identifying dengue virus type 2.",
+  "case_prompt": "A 54-year-old woman was referred to an ophthalmology service with a complaint of acute blurred vision and metamorphopsia in her left eye. Two weeks prior to the onset of visual symptoms, she had developed an acute systemic febrile illness characterized by a papular rash distributed across her upper extremities and hands, high fever, severe frontal headache, intense retro-orbital pain, and generalized myalgias. She reported two previous discrete episodes of a similar acute febrile illness in 2009 and 2011.\n\nOn physical and ophthalmic examination, best-corrected visual acuity was 20/20 in the right eye and markedly decreased to 20/150 in the left eye. Slit-lamp examination of the anterior segment was completely normal bilaterally. Dilated funduscopy of the left eye revealed subretinal fluid accumulation and a focal subretinal hemorrhage centered in the foveal and macular area, without signs of vitritis; fundus examination of the right eye was unremarkable.\n\nAdmission triage laboratory investigations demonstrated acute thrombocytopenia. Fluorescein angiography of the left eye demonstrated a well-delineated hyperfluorescent lesion exhibiting progressive dye leakage, consistent with classic choroidal neovascularization (CNV). Spectral-domain optical coherence tomography (SD-OCT) of the left macula revealed subretinal fluid, focal hyperreflective material within the subretinal space, and discrete shallow detachments of the retinal pigment epithelium (RPE).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic / Age-Related Choroidal Neovascularization (AMD)",
+      "rule_out_reason": "While macular subretinal fluid, hemorrhage, and classic CNV on fluorescein angiography in a 54-year-old can suggest idiopathic CNV or early neovascular AMD, this fails to account for the preceding acute biphasic febrile illness, characteristic retro-orbital cephalalgia, and hematologic thrombocytopenia.",
+      "quote": "A fluorescein angiography (FA) showed a hyperfluorescent lesion with well-defined borders and active leakage consistent with classic CNV (fig. 1b)."
+    },
+    {
+      "candidate": "Chikungunya or Zika Arboviral Maculopathy",
+      "rule_out_reason": "Other tropical arboviruses can induce post-infectious uveitis or chorioretinal lesions following acute fever, rash, and retro-orbital pain; however, real-time molecular diagnostics specifically confirmed acute flaviviral dengue infection rather than alphaviral or related pathogens.",
+      "quote": "She presented all classic systemic symptoms of DF with a papular rash over her arms and hands followed by fever, headache, retro-orbital pain and myalgia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The temporal sequence of a classic acute febrile illness with rash, retro-orbital ache, and thrombocytopenia culminating in secondary retinal pigment epithelial disruption and CNV was definitively tied to dengue when serum real-time PCR returned positive for dengue virus type 2.",
+      "quote": "A systemic workup revealed a thrombocytopenia, and a real-time PCR for the dengue virus type 2 was positive, confirming the diagnosis of DF."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning methodology. Admission breakpoint stops after ophthalmic imaging and baseline CBC with thrombocytopenia, withholding confirmatory real-time viral PCR and therapeutic intravitreal anti-VEGF injections."
+}

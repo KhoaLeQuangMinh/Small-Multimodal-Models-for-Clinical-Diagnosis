@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7534398_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 9-year-old boy presents with prolonged fever, ascites, hepatomegaly, a lytic frontal bone lesion with extracranial soft-tissue extension, and left foot/ankle synovitis without pulmonary parenchymal involvement and with negative special stains on bone biopsy, raising a broad differential including Langerhans cell histiocytosis, primary/metastatic bone neoplasm, deep mycoses, and multifocal mycobacterial disease.\n2. Admission Breakpoint: Admission presentation concludes at initial inpatient evaluation for prolonged fever, abdominal distention, and left foot swelling, with initial abdominal ultrasonography showing moderate ascites and hepatomegaly and a normal plain chest radiograph, before advanced cross-sectional CT imaging, tuberculin testing, skull biopsy, and synovial molecular testing.\n3. Differential Distinctions: Deep fungal osteomyelitis and calvarial bone malignancies are ruled out by skull biopsy showing non-malignant granulomatous inflammation and negative fungal stains (PAS and Grocott); primary pulmonary disease is ruled out by normal lung parenchyma on radiograph; the diagnosis hinges on synovial biopsy molecular PCR confirming Mycobacterium tuberculosis complex.",
+  "case_prompt": "A 9-year-old boy is admitted to the hospital for investigation of progressive abdominal distension associated with non-specific abdominal pain and fever of 2 months' duration that has evolved without clinical improvement. At presentation, he also has swelling of the left foot. There is no known contact or epidemiological history of exposure to individuals with chronic respiratory disease.\n\nOn physical examination, the child is febrile. Abdominal examination demonstrates increased abdominal volume with clinical signs of fluid accumulation and an enlarged liver. Swelling of the left foot is present. Cervical lymph node enlargement and signs of acute local inflammation are absent.\n\nInitial chest radiography is normal without visible parenchymal lesions. Abdominal ultrasonography reveals moderate ascites, an enlarged liver with regular contours and homogeneous density, small lymph nodes along the right common iliac vessels, and a 1.9 x 1.2 cm nodular lesion adjacent to the left diaphragmatic dome.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Deep Fungal Osteomyelitis / Mycosis",
+      "rule_out_reason": "Considered given the multifocal lytic bone lesion and chronic granulomatous inflammation, but ruled out by negative specialized fungal histochemical stains.",
+      "quote": "Ziehl Neelsen, Groccot and PAS staining did not show microorganisms."
+    },
+    {
+      "candidate": "Primary Calvarial Malignancy / Langerhans Cell Histiocytosis",
+      "rule_out_reason": "Considered due to the midline frontal lytic lesion with cortical breakthrough and soft tissue component, but skull biopsy demonstrated chronic granulomatous inflammation with multinucleated giant cells rather than neoplastic infiltration.",
+      "quote": "The skull biopsy showed a chronic inflammatory process with granuloma and multinucleated giant cells; Ziehl Neelsen, Groccot and PAS staining did not show microorganisms."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative special stains on the calvarial biopsy, left ankle synovium biopsy was performed and molecular testing by Xpert MTB/RIF definitively detected the Mycobacterium tuberculosis complex.",
+      "quote": "The Xpert MTB/RIF test on synovium material for Micobacterium tuberculosis complex was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled from PMC7534398. The admission breakpoint isolates the presentation to the 2-month fever, ascites, foot swelling, and initial bedside ultrasound and normal chest radiograph. Skull CT, biopsies, PPD, and GeneXpert are correctly reserved for diagnostic reasoning. Verbatim quotes match article text."
+}

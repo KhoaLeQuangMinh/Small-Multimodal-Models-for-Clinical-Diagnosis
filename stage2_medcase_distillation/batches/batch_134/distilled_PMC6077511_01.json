@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6077511_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young, previously healthy, immunocompetent male in a non-endemic country presents with a new-onset seizure and constitutional weight loss. Neuroimaging shows multiple ring-enhancing brain lesions, and abdominal CT reveals extensive mesenteric infiltration and lymphadenopathy, creating a striking clinical mimic of metastatic carcinomatosis or pyogenic brain abscesses.\n2. Admission Breakpoint: The breakpoint is positioned immediately after emergency department admission, baseline physical examination, brain MRI, and staging abdominal/chest CT scans, prior to invasive mesenteric biopsy, histopathology, or mycobacterial PCR testing.\n3. Differential Distinctions: Metastatic carcinomatosis and infectious pyogenic abscesses are the prime imaging look-alikes; however, absence of a primary carcinoma, negative cultures, and histopathologic demonstration of noncaseating perivascular granulomas positive for Mycobacterium tuberculosis PCR confirm disseminated tuberculosis.",
+  "case_prompt": "A 35-year-old previously healthy male presented to the emergency department following a first-time generalized tonic-clonic seizure. Over the preceding six months, he had noted anorexia and an unintentional weight loss of 8 kg, without fever, night sweats, or other constitutional symptoms. He had no significant past medical or surgical history and resided in a non-endemic country.\n\nOn physical examination, he was afebrile and in no acute distress. Vital signs were within normal limits. Neurological examination was normal, with no focal motor or sensory deficits, cranial nerve palsies, or meningeal signs. The remainder of the physical examination was unremarkable.\n\nBrain MRI demonstrated three ring-enhancing, T1- and T2-hypointense cortical lesions—two located in the right frontal lobe and one in the left occipital lobe—surrounded by vasogenic edema, with absent leptomeningeal enhancement. Subsequent computed tomography of the abdomen revealed massive mesenteric infiltration and numerous enlarged lymph nodes. A chest CT and additional radiological surveys showed clear lung parenchyma with no other organ involvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Malignancy / Peritoneal Carcinomatosis",
+      "rule_out_reason": "Multiple ring-enhancing intracranial lesions accompanied by massive mesenteric infiltration, lymphadenopathy, and progressive 8 kg weight loss strongly suggested disseminated metastatic disease, but extensive radiographic and subsequent histological evaluation found no neoplastic primary.",
+      "quote": "In subsequent diagnostic workup, abdominal CT revealed massive mesenteric infiltration and innumerous lymphadenopathies; therefore neoplastic peritoneal carcinomatosis was first considered."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Brain Abscesses",
+      "rule_out_reason": "Multiple ring-enhancing intracerebral lesions with prominent vasogenic edema favored pyogenic abscesses on neuroimaging, but the patient had no fever, focal neurological signs, or elevated inflammatory focus, and all blood and CSF cultures were negative.",
+      "quote": "His physical examination was unremarkable, with no fever or focal neurological signs... Based on the imagiological findings, infectious abscesses and metastatic deposits were considered the most probable etiologies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histological examination of the mesenteric lesions revealed multiple noncaseating perivascular granulomas, and tissue PCR was positive for Mycobacterium tuberculosis, confirming disseminated central nervous system and peritoneal tuberculosis in an immunocompetent patient.",
+      "quote": "Histological examination of the mesenteric lesions revealed multiple noncaseating perivascular granulomas... The polymerase chain reaction (PCR) performed in the tissue specimen was positive for Mycobacterium tuberculosis, thus confirming the diagnosis of disseminated tuberculosis of CNS and peritoneum."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly precedes mesenteric biopsy and PCR testing. Zero pathogen names in case_prompt. Neuroimaging and CT findings provided up to the diagnostic uncertainty stage."
+}

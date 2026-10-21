@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_08",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A pediatric patient hospitalized in a bone marrow transplant unit developing fever on day +26 post-haploidentical transplant with elevated inflammatory markers and intercurrent bacterial bacteriuria. The key tension is identifying a secondary viral infection presenting with biphasic fever and plasma leak syndrome when initial viral testing was completely negative.\n2. Admission Breakpoint: The presentation ends at the initial fever spike on post-transplant day +26 with elevated C-reactive protein and procalcitonin, immediately prior to send-out cultures, viral/fungal panels, second fever spike, and serologic testing.\n3. Differential Distinctions: Distinguishing acute arboviral plasma leak syndrome from persistent bacterial sepsis/pyelonephritis (E. coli isolated in urine), invasive mold infection/galactomannan positivity, CMV reactivation, and BKV-associated hemorrhagic cystitis.",
+  "case_prompt": "An 8-year-old child admitted to the transplant unit for a haploidentical stem cell transplant for beta-thalassemia major developed a sudden fever spike on day +26 post-transplant. Baseline triage laboratory investigations revealed markedly elevated inflammatory markers, including high C-reactive protein and procalcitonin.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Complicated Bacterial Sepsis / Pyelonephritis",
+      "rule_out_reason": "Although Escherichia coli was cultured from urine and targeted antibiotics were administered, the patient suffered a subsequent fever spike and vascular leakage inconsistent with treated bacterial infection alone.",
+      "quote": "He grew Escherichia coli in urine culture with raised C-reactive protein and procalcitonin."
+    },
+    {
+      "candidate": "Opportunistic Viral (CMV, BKV) or Fungal (Aspergillosis) Infection / Malaria",
+      "rule_out_reason": "Considered due to post-transplant immunosuppression, but extensive microbiological testing for opportunistic pathogens returned negative.",
+      "quote": "Laboratory workup was negative for dengue NS1, malarial parasite, galactomanan, BKV, and Cytomegalovirus (CMV)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergence of positive serology at a recurrent fever spike accompanied by objective third-space fluid accumulation (plasma leak syndrome) on thoracic and abdominal imaging confirmed severe dengue.",
+      "quote": "Second fever spike occurred 4 days later and that time dengue serology turned out to be positive. He also developed features of plasma leak syndrome confirmed on ultrasound of whole abdomen and chest X-ray."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for Dengue virus infection with plasma leak syndrome. Zero spoilers, culture results, or second fever spike in case_prompt. Exact quotes matched."
+}

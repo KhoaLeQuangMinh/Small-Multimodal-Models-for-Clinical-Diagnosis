@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4302362_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A patient presents with a large, destructive oral cavity ulcerative mass and an ipsilateral 3-cm submandibular lymph node, clinically classified as locally advanced floor-of-mouth squamous cell carcinoma. The tension centers on distinguishing regional metastatic lymphadenopathy from an unexpected synchronous granulomatous deep fungal infection.\n2. Admission Breakpoint: The presentation ends after initial clinical and physical examination defining the 5-cm floor-of-mouth mass with tongue and mandibular invasion and 3-cm submandibular lymph node (staged T4aN1M0), prior to radical surgical resection and lymph node histopathology.\n3. Differential Distinctions: Metastatic oral squamous cell carcinoma is the assumed diagnosis for the enlarged regional lymph node, while reactive bacterial lymphadenitis is considered secondarily. Both are overturned when comprehensive histologic evaluation of 97 resected cervical lymph nodes reveals no metastatic carcinoma, but instead identifies endemic fungal granulomatous lymphadenitis.",
+  "case_prompt": "A 54-year-old male presents with a 5-cm wide non-healing ulcerative lesion in the anterior floor of the mouth that has persisted for 7 months.\n\nOn physical examination, the lesion demonstrates aggressive local invasion into the ventral aspect of the tongue and the mandibular alveolar ridge. Palpation of the neck reveals a firm, 3-cm enlarged lymph node in the right submandibular triangle. The clinical presentation is evaluated and staged as a T4aN1M0 oral mucosal malignancy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic regional lymphadenopathy from oral squamous cell carcinoma",
+      "rule_out_reason": "In the setting of a biopsy-proven invasive T4a oral floor carcinoma, the prominent 3-cm submandibular lymph node was clinically presumed to represent regional metastasis; unexpectedly, exhaustive pathologic evaluation of 97 resected cervical nodes demonstrated complete absence of metastatic carcinoma.",
+      "quote": "Physical examination revealed invasion of the ventral portion of the tongue and alveolar ridge and a 3 cm node in the right submandibular triangle; the node was staged as T4aN1M0 squamous cell carcinoma (SCC)."
+    },
+    {
+      "candidate": "Reactive or secondary bacterial submandibular lymphadenitis",
+      "rule_out_reason": "Non-neoplastic cervical adenopathy secondary to an infected oral ulceration typically reflects non-specific reactive follicular hyperplasia or acute bacterial lymphadenitis; however, histopathology revealed chronic granulomatous infection caused by an endemic dimorphic fungus.",
+      "quote": "no metastasis in 97 nodes examined, and one node with paracoccidioidomycosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of the bilateral neck dissection specimen unexpectedly demonstrated paracoccidioidomycosis within a solitary submandibular lymph node, revealing a synchronous granulomatous mycosis mimicking nodal metastasis.",
+      "quote": "The pathologist's report indicated a grade II SCC, a microscopic positive surgical margin, no metastasis in 97 nodes examined, and one node with paracoccidioidomycosis."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of isolated cervical nodal paracoccidioidomycosis coexisting with primary oral cavity carcinoma. Admission prompt preserves clinical ambiguity and contains zero pathogen spoilers."
+}

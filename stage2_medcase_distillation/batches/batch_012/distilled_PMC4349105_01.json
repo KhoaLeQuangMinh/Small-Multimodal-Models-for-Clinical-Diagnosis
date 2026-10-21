@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4349105_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A middle-aged rural woman presenting with persistent cough, peripheral eosinophilia, and a borderline elevated D-dimer who is found to have extensive intraluminal filling defects in the left pulmonary arterial tree, mimicking acute pulmonary thromboembolism or pulmonary artery sarcoma, but failing to respond to anticoagulation.\n2. Admission Breakpoint: The admission clinical narrative concludes following thoracic CT angiography, bedside echocardiography, and lower-extremity venous ultrasound (which confirm smooth intraluminal filling defects in continuity with an 18 × 16 mm nodular opacity in the absence of deep vein thrombosis), immediately before invasive endobronchial ultrasound, thoracic MRI, and hydatid serological testing.\n3. Differential Distinctions: Acute pulmonary thromboembolism is ruled out by the smooth, well-circumscribed appearance of the defects continuous with a cystic nodule and absence of DVT or intracardiac thrombus; pulmonary artery sarcoma is excluded by ultrasound and MRI demonstrating an avascular, proteinaceous cystic lesion; echinococcal hydatid cyst is confirmed by positive indirect hemagglutination and specific IgE serology.",
+  "case_prompt": "A 48-year-old woman presented with a 1-month history of persistent cough and a suspected episode of hemoptysis. She had no sputum production, chest pain, or dyspnea. She was a lifetime non-smoker, reported living in a rural area, and had owned a dog during her childhood. An initial two-week trial of inhaled fluticasone dry powder and oral montelukast for suspected allergic asthma yielded no symptomatic improvement.\n\nOn physical examination, vital signs and systemic examinations were entirely normal. A plain chest radiograph and pulmonary function tests showed no abnormalities. Routine laboratory tests were within normal limits except for peripheral eosinophilia and a minimally elevated D-dimer level of 600 ng/mL (reference range: 0–500 ng/mL).\n\nA thoracic computed tomography (CT) angiogram was performed to evaluate the cough and elevated D-dimer, demonstrating well-circumscribed, smooth intraluminal filling defects within the left main pulmonary artery, the upper segmental branch of the lingular artery, and the segmental and subsegmental branches of the left lower lobe artery. These filling defects exhibited direct continuity with an 18 × 16 mm nodular opacity. The right pulmonary arterial tree was entirely clear. Transthoracic echocardiography showed normal left and right ventricular parameters with a systolic pulmonary artery pressure of 25 mmHg and no intracardiac thrombi. Compression ultrasonography of the lower extremities showed no deep venous thrombosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pulmonary Thromboembolism",
+      "rule_out_reason": "Initially suspected based on elevated D-dimer (600 ng/mL) and pulmonary artery filling defects leading to empirical low-molecular-weight heparin; ruled out because the filling defects were smooth, well-circumscribed, contiguous with a cystic nodule, and lacked lower extremity deep vein thrombosis or intracardiac thrombi.",
+      "quote": "Subcutaneous low-molecular-weight heparin anticoagulant therapy was administered on the basis of the suspicious diagnosis of pulmonary thromboembolism."
+    },
+    {
+      "candidate": "Pulmonary Artery Sarcoma",
+      "rule_out_reason": "Considered as a primary neoplastic etiology for intraluminal pulmonary arterial filling defects on CT; excluded when further imaging demonstrated an avascular fluid-filled cystic lesion rather than an invasive vascular malignancy.",
+      "quote": "Because pulmonary artery filling defects appeared more well-circumscribed and smooth, and they showed continuity with an 18x16 mm nodular cystic opacity different from usual features of emboli, the other reasons such as pulmonary artery sarcoma and hydatid cyst causing filling defects in the pulmonary artery on CT were investigated."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Artery Hydatid Cyst (Echinococcosis)",
+      "rule_out_reason": "The definitive diagnosis was established by endobronchial Doppler ultrasound and thoracic MRI demonstrating protein-rich intraluminal cystic lesions, corroborated by positive indirect hemagglutination and specific IgE serological tests for hydatid disease.",
+      "quote": "Doppler ultrasonography revealed a cystic formation that made the vascular filling defect inside the left pulmonary artery. Thoracic magnetic resonance angiography was performed to investigate the cyst in more detail and it revealed cystic formations in the left pulmonary artery (Figure 3 A-D)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4349105. Case prompt includes initial CT angiogram, echocardiography, and DVT ultrasound while withholding invasive EBUS, thoracic MRI, and hydatid serology. Zero pathogen mentions in prompt."
+}

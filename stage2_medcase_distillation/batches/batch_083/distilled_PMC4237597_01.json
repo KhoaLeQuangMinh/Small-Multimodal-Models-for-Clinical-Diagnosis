@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4237597_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An adolescent presents with chronic recurrent abdominal pain, fever, elevated inflammatory markers, and diffuse palpable abdominal masses throughout the peritoneal cavity. Distinguishing disseminated peritoneal carcinomatosis/sarcomatosis or tuberculous peritonitis from disseminated peritoneal hydatidosis is the key challenge.\n2. Admission Breakpoint: The admission clinical presentation concludes following physical examination documenting multiple 3-5 cm abdominal masses, baseline labs (elevated CRP without hypereosinophilia), and abdominal ultrasonography/CT identifying multi-organ and peritoneal cystic collections (including Gharbi type 1 unilocular cysts, multivesicular cysts, and a calcified cyst), prior to median exploratory laparotomy.\n3. Differential Distinctions: Peritoneal carcinomatosis and intra-abdominal tuberculous abscesses are ruled out by imaging demonstration of typical multivesicular cystic structures, calcified cyst walls, absence of malignant cytology, and operative extraction of characteristic germinal membranes from 39 intra-abdominal cysts.",
+  "case_prompt": "A 15-year-old adolescent presents with a history of recurrent abdominal pain and fever. The illness began 1 year earlier with acute abdominal pain originating in the right hypochondrium that resolved with non-specific symptomatic treatment without initial diagnostic imaging. The clinical course subsequently worsened with increasingly intense, recurrent abdominal pain and fever.\n\nOn physical examination, multiple firm abdominal masses measuring between 3 and 5 cm in diameter are palpable throughout the entire abdomen.\n\nLaboratory testing reveals a normal complete blood count without hypereosinophilia, while C-reactive protein (CRP) is significantly elevated.\n\nAbdominal ultrasonography reveals extensive multi-compartmental peritoneal cystic lesions involving the liver, spleen, pouch of Douglas, and inter-loop spaces; multiple cysts are unilocular, and one multivesicular cyst is identified. An abdominal CT scan confirms these widespread intra-abdominal and visceral cysts, precisely mapping their locations and demonstrating the presence of a calcified cyst within the abdominal cavity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal carcinomatosis / disseminated intra-abdominal malignancy",
+      "rule_out_reason": "The presence of numerous palpable masses spread throughout the peritoneal cavity in an adolescent raised concern for malignant peritoneal dissemination; however, imaging showed purely cystic architecture with internal vesicles, and surgical exploration revealed encapsulated benign cysts without malignant infiltration.",
+      "quote": "Clinical examination revealed several abdominal masses spread to the whole abdomen measuring between 3 and 5 cm."
+    },
+    {
+      "candidate": "Tuberculous peritonitis / intra-abdominal bacterial abscesses",
+      "rule_out_reason": "Recurrent fevers, severe abdominal pain, high CRP, and multi-organ fluid collections could represent tuberculous peritonitis or pyogenic abscesses; however, cross-sectional imaging identified non-inflammatory cyst walls with a type 5 calcified cyst and multivesicular daughter cyst architecture.",
+      "quote": "the abdominal CT scan confirmed the same observation, indicated the location of cysts and the presence of a type 5 \"calcified cyst\" (B)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Median laparotomy enabled direct surgical removal of all 39 intraperitoneal and visceral cysts, with successful extraction and identification of diagnostic germinal membranes from the hepatic and splenic lesions.",
+      "quote": "Sterilizing the content of three hepatic cysts, extracting the germinal membrane; This same technique was realized for both splenic cysts; we have removed all 39 abdominal cavity cysts (D)"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of extensive secondary peritoneal hydatidosis in an adolescent. Admission presentation avoids mentioning hydatid disease, germinal membranes, or albendazole treatment."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7273538_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: The patient presents with constitutional symptoms (subjective fever, 30-lb weight loss), painful tender subcutaneous papules and nodules, and peripheral stocking-glove neuropathy against a background of chronic treated infiltrative dermatosis. The central diagnostic challenge is distinguishing between persistent or relapsed viable mycobacterial infection and an immune complex-mediated Type 2 lepra reaction (erythema nodosum leprosum) following prolonged multidrug antimicrobial therapy.\n2. Admission Breakpoint: The admission breakpoint falls immediately following the admission clinical evaluation, physical exam (demonstrating tender subcutaneous nodules, madarosis, hypotrichosis, and glove-stocking sensory deficit), and baseline laboratory triage (WBC 10.3 x 10^3 cells/µL with neutrophil predominance, hemoglobin 10.8 g/dL, normal chemistries). It stops strictly prior to the 4-mm punch biopsy, Fite acid-fast staining, and molecular testing.\n3. Differential Distinctions: Active relapsed mycobacterial infection would demonstrate viable proliferating acid-fast bacilli without degenerative morphology. Idiopathic erythema nodosum or systemic vasculitis can present with tender subcutaneous nodules and systemic inflammation, but typically lacks madarosis, hypotrichosis, and peripheral nerve trunk involvement with dense stocking-glove sensory loss.",
+  "case_prompt": "A 51-year-old Vietnamese female, who migrated to the United States at age 25, presented to the clinic with new indurated, tender skin lesions, worsening extremity pain, and bilateral lower extremity edema. She also reported subjective fever and an unintentional 30-pound weight loss over the preceding 4 months. She had a remote history of chronic infiltrative dermatosis involving the face, chin, nose, and chest, accompanied by hand and foot numbness, weakness, and edema, which had been treated years earlier with multi-agent antimicrobials (including rifampin, clarithromycin, and levofloxacin) and immunomodulatory therapy (prednisone and methotrexate); however, she had subsequently been lost to follow-up for 19 months.\n\nOn physical examination, she had extensive erythematous subcutaneous papules and nodules against a background of gray hyperpigmentation on her arms and legs, along with a few scattered, tender, superficial erythematous nodules on her face and abdomen. Examination of the hair and face revealed madarosis (loss of eyebrows/eyelashes) and hypotrichosis of the arms and legs. Neurological evaluation demonstrated decreased light touch sensation (0.2 g monofilament) in the left arm and loss of protective pain sensation (10 g monofilament) in both feet in a symmetric glove-stocking distribution. The remainder of the examination was unremarkable.\n\nInitial laboratory evaluation revealed a white blood cell count of 10.3 x 10^3 cells/µL with neutrophil predominance and a hemoglobin of 10.8 g/dL. Routine serum chemistries were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Persistent or Relapsing Active Mycobacterial Infection",
+      "rule_out_reason": "Considered due to the eruption of new indurated tender skin lesions, fever, and 30-lb weight loss after defaulting from follow-up; ruled out by histopathologic comparison with her prior biopsy, which demonstrated diminished inflammatory infiltrates and degenerating bacilli indicative of response to therapy rather than active mycobacterial multiplication.",
+      "quote": "Compared with a biopsy from 2015, the inflammatory infiltrates were diminished and the bacilli had a degenerating appearance. These findings were consistent with appropriate response to antimycobacterial therapy."
+    },
+    {
+      "candidate": "Secondary Bacterial or Fungal Panniculitis / Soft-Tissue Superinfection",
+      "rule_out_reason": "Considered given the tender erythematous subcutaneous nodules, fever, and neutrophilic leukocytosis in a patient previously on immunosuppressive therapy; excluded by sterile fungal and bacterial tissue cultures.",
+      "quote": "Tissue culture was negative for bacteria and fungi."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Type 2 Reaction (Erythema Nodosum Leprosum) in Lepromatous Leprosy",
+      "rule_out_reason": "A 4-mm punch biopsy revealed dermal foamy macrophages with an intense neutrophilic infiltrate extending into subcutaneous fat, perivascular mixed inflammation with fibrinoid necrosis, and degenerating beaded acid-fast bacilli in histiocytes and cutaneous nerve twigs, confirming a Type 2 immunological reaction (erythema nodosum leprosum), which responded promptly to thalidomide.",
+      "quote": "A 4-mm punch biopsy taken from the right forearm revealed foamy macrophages in the dermis with an intense neutrophilic infiltrate extending into the subcutaneous fat... Treatment with thalidomide 100 mg daily was initiated with improvement in the appearance of the skin lesions"
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case successfully distilled adhering to the Stanford MedCaseReasoning CPC format. Zero spoilers or pathogen names present in the admission prompt. Triage breakpoint strictly set prior to punch biopsy and histopathology."
+}

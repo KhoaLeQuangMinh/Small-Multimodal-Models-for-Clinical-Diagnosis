@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2631541_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: Differentiating an asymptomatic or incidentally found hepatic cystic lesion from a parasitic cystic infection in the presence of peripheral leukocytosis and eosinophilia, while avoiding premature assumptions based solely on variable radiographic features and serologic testing that carries known false-negative rates.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after the completion of initial hematologic analyses, hepatic biochemical testing, and baseline abdominal imaging, prior to the collection and reporting of confirmatory echinococcal serologies (ELISA and IHA).\n3. Differential Distinctions: Simple congenital hepatic cysts lack peripheral eosinophilia, leukocytosis, and significant liver enzyme elevation; pyogenic and amebic liver abscesses typically present with acute septic shock, thick irregular wall enhancement, and marked neutrophilia; cystic hepatic neoplasms typically show enhancing internal septa or nodular solid components rather than a well-circumscribed, hypodense non-enhancing lesion.",
+  "case_prompt": "A patient presents for clinical evaluation and diagnostic workup of hepatobiliary disease.\n\nOn physical examination, the patient is clinically stable without acute peritonitis.\n\nInitial laboratory investigations reveal leukocytosis on complete blood count and peripheral eosinophilia. The red blood cell count and hemoglobin concentration are within normal limits. Serum biochemical analysis reveals an elevated total bilirubin, an increased aspartate aminotransferase (AST) level, and an abnormal elevation of alkaline phosphatase (ALKP). Alanine aminotransferase (ALT) is not significantly raised.\n\nAbdominal imaging reveals a liver of average dimensions containing a solitary, well-defined, hypodense, non-enhancing cystic lesion involving segments V and VI. The cystic mass exerts extrinsic mass effect, compressing the gallbladder and displacing the patent, non-dilated portal vein. There are no other focal hepatic lesions, and no dilatation of either the intrahepatic or extrahepatic bile ducts is identified. Further cross-sectional imaging reveals no coexistent cystic lesions in other visceral organs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple Hepatic Cyst / Congenital Biliary Cyst",
+      "rule_out_reason": "Simple hepatic cysts are benign developmental fluid collections that are typically non-parasitic and do not cause systemic inflammatory responses, eosinophilia, or elevated liver enzymes (AST, alkaline phosphatase, bilirubin).",
+      "quote": "Haematological studies revealed leucocytosis in all cases and eosinophilia in three cases."
+    },
+    {
+      "candidate": "Pyogenic or Amebic Liver Abscess",
+      "rule_out_reason": "Infectious abscesses usually manifest with severe systemic toxicity, high fever, and peripheral neutrophilic leukocytosis, and on imaging they demonstrate thick peripheral rim enhancement rather than a well-defined non-enhancing hypodense cyst.",
+      "quote": "Liver in case two (Fig. 1B) showed average size with a well defined hypodense non-enhancing hydatid cystic lesion and is seen affecting segment V and VI."
+    },
+    {
+      "candidate": "Cystic Hepatic Neoplasm (Biliary Cystadenoma / Cystadenocarcinoma)",
+      "rule_out_reason": "Biliary cystadenomas and cystic carcinomas generally feature thick fibrous capsules, enhancing internal septations, or mural nodules, rather than an unilocular, well-demarcated non-enhancing hypodense cystic lesion with eosinophilia.",
+      "quote": "Liver in case two (Fig. 1B) showed average size with a well defined hypodense non-enhancing hydatid cystic lesion and is seen affecting segment V and VI. It also compressed the gall bladder, displaced the patent non-dilated portal vein (PV)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Hepatic Hydatid Disease)",
+      "rule_out_reason": "The diagnostic turning point is the constellation of peripheral eosinophilia, a well-defined non-enhancing hypodense hepatic cyst exerting local vascular and gallbladder mass effect, and positive confirmatory echinococcal serological evaluation (ELISA and IHA).",
+      "quote": "Serologic echinococcal tests are valuable when they are positive, but one of the four hepatic hydatidosis cases gives a false negative. Although serology tests like ELISA and IHA can help make the diagnosis, complete reliance on them is not recommended."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Hepatic hydatid disease caused by Echinococcus granulosus presents with variable clinical and radiologic manifestations. While ultrasound and CT classically show well-defined cystic lesions, peripheral eosinophilia is present in only a subset of patients, and serological assays (ELISA and indirect hemagglutination) carry false-negative rates, making careful clinicoradiological correlation critical."
+}

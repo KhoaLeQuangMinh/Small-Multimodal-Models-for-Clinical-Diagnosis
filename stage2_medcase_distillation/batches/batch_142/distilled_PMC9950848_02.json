@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9950848_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young postpartum female presents with a chronic breast mass, draining fistula, scrofulous skin appearance, marked inflammatory markers, and systemic involvement (fever, night sweats, splenomegaly, hepatic lesions). The primary tension is differentiating primary breast tuberculosis—an uncommon extrapulmonary site—from a pyogenic breast abscess or malignancy, compounded by initial false-negative Ziehl-Neelsen smears, negative aspirate PCR, and biopsy histopathology devoid of granulomas.\n2. Admission Breakpoint: Evaluation following physical examination documenting breast enlargement, draining fistula, and scrofulous skin changes, and baseline blood work showing anemia and elevated inflammatory markers (ESR, CRP), prior to needle aspiration, core biopsy, and mycobacterial cultures.\n3. Differential Distinctions: Bacterial breast abscess is initially suspected and treated with broad-spectrum beta-lactams, but clinical failure and chronicity rule it out. Pulmonary tuberculosis is excluded by negative sputum, bronchial secretions, and BAL mycobacterial studies. The diagnosis of breast tuberculosis is confirmed by mycobacterial growth from core biopsy tissue.",
+  "case_prompt": "A female patient presents with a subacute-to-chronic breast mass with overlying scrofulous skin changes, an active draining cutaneous fistula, and severe keloid scarring. She reports persistent fevers and night sweats, alongside worsening enlargement of the affected breast. Her obstetric history notes breastfeeding her child for one year. Initial laboratory and imaging evaluation reveals anemia, marked elevations in erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP), necrotic axillary lymphadenopathy, hepatosplenomegaly, and focal hepatic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial breast abscess",
+      "rule_out_reason": "Initially suspected based on the breast mass and localized inflammation, prompting empirical intravenous piperacillin-tazobactam; however, the atypical scrofulous cutaneous appearance, persistent drainage, and lack of acute pyogenic response ruled against an ordinary pyogenic process.",
+      "quote": "The patient was started on piperacillin-tazobactam, assuming bacterial abscess."
+    },
+    {
+      "candidate": "Pulmonary tuberculosis",
+      "rule_out_reason": "Considered as the primary infectious source of hematogenous spread or potential transmission risk to her breastfed child, but ruled out after bronchial aspirates and bronchoalveolar lavage fluid were negative by Lowenstein-Jensen culture, MGIT, and PCR.",
+      "quote": "Lung TB was ruled out, with bronchial secretions and bronchoalveolar lavage being negative for Mt in Lowenstein-Jensen, BACTECTM MGITTM, and PCR."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative acid-fast staining and negative cartridge-based PCR on fluid aspirate, and core biopsy histology showing only necrotic fibroadipose tissue without typical granulomas, automated and solid core biopsy cultures grew Mycobacterium tuberculosis, confirming primary breast tuberculosis with full drug susceptibility.",
+      "quote": "The biopsy's culture was positive for Mt in both Lowenstein-Jensen medium and BACTECTM MGITTM, showing no drug resistance in Middlebrook 7H10, thereby indicating a diagnosis of BTB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at admission before invasive aspirate/biopsy. Direct verbatim quotes validated against case report text."
+}

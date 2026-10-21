@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4338053_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 48-year-old immunocompetent woman with no prior personal or contact history of tuberculosis presents with 20 days of right upper quadrant pain, dyspepsia, and a well-defined subcapsular cystic hepatic lesion. A provisional diagnosis of pyogenic or amebic liver abscess is made, but broad-spectrum antibiotics fail and routine pus cultures are sterile. The core tension is recognizing isolated hepatic tuberculosis in an immunocompetent patient without pulmonary disease.\n2. Admission Breakpoint: Admission triage terminates following clinical examination, baseline blood tests, negative stool ova/parasite exam, negative amebic serology, normal chest radiograph, and abdominal ultrasound/CT showing the subcapsular cystic lesion. Ultrasound-guided percutaneous pus aspiration marks the beginning of invasive confirmatory workup.\n3. Differential Distinctions: Pyogenic liver abscess was ruled out by negative bacterial/fungal cultures of aspirated fluid and lack of clinical response to metronidazole and ciprofloxacin. Amebic liver abscess was excluded by negative stool examinations, negative amebic serology, and failure to improve on metronidazole.",
+  "case_prompt": "A 48-year-old woman presented with a 20-day history of non-radiating right upper quadrant and epigastric pain associated with nausea and dyspeptic bloating. She had no previous history of chronic respiratory illness or contact with chronically ill individuals. On physical examination, tenderness was noted in the right upper quadrant, with no other abnormal physical findings. Baseline laboratory evaluation revealed hemoglobin 11 g/dL, white blood cell count 10,000/mm³ (78% neutrophils), platelet count 270,000/mm³, erythrocyte sedimentation rate (ESR) 35 mm/hr, blood urea 25 mg/dL, creatinine 0.9 mg/dL, total bilirubin 1.0 mg/dL (direct fraction 0.4 mg/dL), AST 24 U/L, and ALT 32 U/L. Stool examination for ova and parasites was negative, amebic serology was non-reactive, and HIV antibody testing was negative. A plain chest radiograph was normal. Abdominal ultrasound revealed a hypoechoic lesion measuring 43 x 35 mm in the anterior and subcapsular right lobe of the liver, and abdominal CT confirmed well-defined subcapsular cystic lesions in the right hepatic lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "A subcapsular cystic liver mass in an adult typically indicates bacterial pyogenic abscess, but aspiration fluid cultures showed no bacterial or fungal growth and the lesion persisted despite 14 days of parenteral metronidazole and ciprofloxacin.",
+      "quote": "Routine bacteriological cultures of the aspiration fluid were negative for bacterial infection and fungus. The patient was started on parenteral metronidazole 750 mg/tds and ciprofloxacin 400 mg/bid for 14 days with provisional diagnosis of amoebic or pyogenic liver abscess. Due to poor response to initial treatment, US was repeated and showed persistence of the liver abscess in the anterior and sub capsular right lobe."
+    },
+    {
+      "candidate": "Amebic liver abscess (Entamoeba histolytica)",
+      "rule_out_reason": "Amebic abscess is a prominent cause of solitary subcapsular hepatic collections, but stool microscopy showed no cysts or ova, amebic serology was negative, and the lesion failed to regress on metronidazole therapy.",
+      "quote": "Routine and microscopic examinations of stool revealed no cyst or ova; blood for amoebic serology was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat CT-guided aspiration yielded cloudy cream-colored pus that was positive for Mycobacterium tuberculosis by PCR, and subsequent laparoscopic peritoneal biopsy demonstrated granulomatous peritonitis with caseating necrosis.",
+      "quote": "Repeated aspiration under CT guidance was performed and 10 ml of the cloudy cream-colored pus was sent for Ziehl-Neelsen staining, acid fast bacilli [AFB] culture, polymerase chain reaction (PCR) for TB and other routine microbiological investigations and cytology; which were all negative but the sample was positive on PCR for Mycobacterium tuberculosis and diagnosis of TLA was made. Then, laparoscopy was performed and peritoneal biopsy showed granulomatous peritonitis with caseating necrosis most compatible with TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly maintained prior to percutaneous pus aspiration and send-out PCR testing. Zero pathogen spoilers. Direct verbatim quotes validated."
+}

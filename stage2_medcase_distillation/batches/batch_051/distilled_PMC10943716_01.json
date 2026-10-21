@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10943716_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 66-year-old male with multiple cardiovascular and renal comorbidities on hemodialysis presented with several months of painless rectal bleeding and mucus discharge without diarrhea, fever, or weight loss. Digital rectal examination noted grade 2 hemorrhoids, but endoscopic evaluation revealed discrete quadrantic rectal ulcers with normal intervening mucosa, challenging differentiation between bleeding internal hemorrhoids, colorectal neoplasia, and atypical infectious proctitis.\n2. Admission Breakpoint: Following outpatient clinical examination, routine laboratory testing, abdominopelvic CT, and flexible sigmoidoscopy revealing discrete 3-5 mm rectal ulcers, immediately prior to mucosal biopsy histopathology and specialized periodic acid-Schiff (PAS) staining.\n3. Differential Distinctions: Bleeding internal hemorrhoids (suggested by painless rectal bleeding and non-bleeding hemorrhoids on proctoscopy), colorectal adenocarcinoma (suspected due to patient age, bleeding, and mucus), and inflammatory bowel disease. Differentiated by discrete punch-out mucosal ulcers on endoscopy and pathognomonic PAS-positive trophozoites with ingested erythrocytes on mucosal histology.",
+  "case_prompt": "A 66-year-old male, non-smoker with multiple comorbidities including morbid obesity, end-stage renal disease requiring hemodialysis, ischemic heart disease status-post percutaneous coronary intervention, type 2 diabetes mellitus, hypertension, and a recent dry cough treated with a short course of oral corticosteroids, presented to the colorectal clinic with a history of fresh bleeding and mucus discharge per rectum for a couple of months that had worsened over the past few days. He reported no change in bowel habits, abdominal pain, or weight loss. Abdominal examination was unremarkable. Digital rectal examination and proctoscopy revealed grade 2 hemorrhoids that were not actively bleeding. Routine full blood count showed stable hemoglobin levels. Stool examination was not performed given the absence of altered bowel habits. Contrast-enhanced CT of the abdomen and pelvis demonstrated diffuse proctocolitis and chronic cholelithiasis. Flexible sigmoidoscopy revealed multiple 3 to 5 mm ulcers in the rectum distributed in a quadrantic fashion with stigmata of bleeding; the rectal mucosa between these ulcers appeared normal, and colonic mucosa from the distal sigmoid proximally was also normal. Multiple biopsies were obtained.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bleeding internal hemorrhoids",
+      "rule_out_reason": "Considered as the initial mechanical source of painless lower gastrointestinal bleeding given visible hemorrhoids on proctoscopy; however, hemorrhoids failed to explain the rectal mucus discharge, diffuse proctocolitis on CT, and discrete 3-5 mm rectal ulcerations seen on endoscopy.",
+      "quote": "PR/proctoscopy revealed grade 2 haemorrhoids not actively bleeding."
+    },
+    {
+      "candidate": "Colorectal adenocarcinoma / Sinister neoplastic pathology",
+      "rule_out_reason": "Considered because of the patient's age, persistent rectal bleeding, and mucus discharge; ruled out by endoscopic visualization of discrete superficial ulcers with intervening normal mucosa rather than a fungating mass, and absence of dysplastic or malignant tissue on biopsy.",
+      "quote": "With his presentation and considering his age to rule out any sinister pathology he was offered a CT abdomen and pelvis that showed diffuse proctocolitis and chronic cholelithiasis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of rectal biopsy specimens stained with periodic acid-Schiff revealed erosive mucosal inflammation and pathognomonic trophozoites containing ingested red blood cells.",
+      "quote": "Associated with the fibrin on the surface of the mucosa there were occasional amoebic trophozoites, some with ingested red blood cells within their cytoplasm (Figure 2). The trophozoites were PAS positive and negative for CD68 on immunohistochemical analysis."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to histological analysis. Zero pathogen spoilers in prompt. Confirmatory quotes match source text verbatim."
+}

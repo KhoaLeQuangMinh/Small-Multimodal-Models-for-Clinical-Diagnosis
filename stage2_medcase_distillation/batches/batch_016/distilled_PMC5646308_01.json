@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5646308_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 51-year-old renal transplant recipient presenting with abdominal pain, profound weight loss, peritoneal enhancement, retroperitoneal adenopathy, an adrenal mass mimicking metastasis, and an ulcerated bleeding colonic polypoid mass. The presentation was radiologically and endoscopically thought to be metastatic colorectal carcinoma with peritoneal carcinomatosis. The diagnostic tension is avoiding premature oncologic closure in an immunosuppressed patient and identifying an extrapulmonary mycobacterial infection that lacked pulmonary involvement or typical granuloma formation.\n2. Admission Breakpoint: Admission clinical evaluation terminates after presentation with abdominal pain, weight loss, CT scan findings (peritoneal nodules, intraperitoneal masses, adrenal lesion, retroperitoneal lymphadenopathy, normal lungs), and initial endoscopic inspection of the bleeding ulcerated colonic lesion at the hepatic flexure. It stops immediately before endoscopic biopsy histopathology, Ziehl-Neelsen staining, and PCR/culture return.\n3. Differential Distinctions: Colorectal adenocarcinoma with peritoneal carcinomatosis was the leading initial diagnosis but was excluded by repeated absence of dysplasia or malignancy on biopsy. Primary peritoneal mesothelioma and lymphoma were excluded by histopathology. Disseminated tuberculosis was established by demonstrating acid-fast bacilli on repeat biopsy, positive GeneXpert MTB/RIF PCR, and positive mycobacterial culture.",
+  "case_prompt": "A 51-year-old kidney transplant recipient presented with progressive abdominal pain and significant involuntary weight loss of several weeks' duration.\n\nContrast-enhanced computed tomography of the abdomen demonstrated multiple contrast-enhancing peritoneal nodules, large intraperitoneal soft-tissue masses, a hypodense lesion within the right adrenal gland, and prominent retroperitoneal lymphadenopathy. Chest computed tomography showed normal lung parenchyma without infiltrates or cavities. The patient was referred for endoscopic evaluation; colonoscopy with virtual chromoendoscopy revealed a polypoid mucosal lesion at the hepatic flexure with irregular mucosa, surface hemorrhages, contact bleeding, and central ulceration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colorectal cancer with peritoneal carcinomatosis",
+      "rule_out_reason": "Considered the primary diagnosis because of an ulcerated colonic mass, peritoneal nodules, large intraperitoneal masses, and a suspected adrenal metastasis, but ruled out when serial endoscopic biopsies showed no dysplasia or malignant cells.",
+      "quote": "CT scan showed multiple contrast-enhancing peritoneal nodules and large intraperitoneal soft-tissue masses radiologically impressing as severe peritoneal carcinomatosis (Figure 1), a hypodense lesion within the right adrenal gland radiologically appearing as a metastasis"
+    },
+    {
+      "candidate": "Gastrointestinal lymphoma",
+      "rule_out_reason": "Considered given the immunosuppressed post-transplant status, bulky retroperitoneal lymphadenopathy, and ulcerated colonic lesion, but excluded by histopathology lacking lymphoid or neoplastic infiltration.",
+      "quote": "On histopathology, no dysplasia or cancer was found. Importantly, histopathology was also negative for the presence of granulomas."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when Ziehl-Neelsen staining of targeted colonic biopsies revealed acid-fast bacteria, and Xpert MTB/RIF assay detected rifampicin-sensitive Mycobacterium tuberculosis complex DNA, confirmed by rapid liquid culture.",
+      "quote": "however, subsequently performed Ziehl-Neelsen stain revealed acid-fast bacteria. In a third colonoscopy, biopsies for microbiological analysis and resistance testing were obtained and DNA of rifampicin-sensitive M. tuberculosis complex was detected using the Xpert MTB/RIF assay on the GeneXpert Dx System"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly set before histopathologic and microbiological analysis of biopsies. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

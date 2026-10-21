@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7557907_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old immunocompetent woman presents with subacute right upper quadrant pain, constitutional symptoms (weight loss, low-grade fever, anorexia), transaminitis, and enhancing nodular liver masses on cross-sectional imaging in the absence of pulmonary findings. The primary diagnostic tension is distinguishing primary or metastatic hepatic malignancy or parasitic hepatic infection from isolated hepatic tuberculosis.\n2. Admission Breakpoint: The admission triage evaluation concludes following initial abdominal ultrasonography, CT, and MRI characterizing the hepatic masses, prior to invasive ultrasound-guided core needle biopsy and diagnostic hepatectomy.\n3. Differential Distinctions: Hepatocellular carcinoma and hepatic metastases present as contrast-enhancing liver masses with constitutional decline but lack caseating granulomas and are characterized by malignant cytology/histology. Parasitic hepatic disease or inflammatory pseudotumor can recruit eosinophils and mimic nodular liver lesions, but fails to exhibit classic tuberculous caseating necrosis and interferon-gamma release.",
+  "case_prompt": "A 50-year-old female presented to the hospital with a more than 1-month history of mild, persistent abdominal pain localized to the epigastrium and right upper quadrant. She also reported anorexia, a low-grade fever, and an intentional weight loss of 4 kg over the preceding month. She denied night sweats, cough, vomiting, or dysuria. Her medical history was notable for hypertension, type 2 diabetes mellitus, dyslipidemia, and a seizure disorder managed with medications.\n\nOn physical examination, her blood pressure was 147/93 mmHg, pulse 78 beats/min, temperature 37.4°C, and respiratory rate 17 breaths/min. She appeared pale. Abdominal examination revealed moderate tenderness in the right upper quadrant and palpable hepatomegaly extending three finger-breadths below the costal margin; there was no splenomegaly, jaundice, or ascites. Thoracic examination was unremarkable, and peripheral lymphadenopathy was absent.\n\nInitial laboratory evaluation revealed mild normocytic anemia with a hemoglobin level of 11.0 g/dL and an erythrocyte sedimentation rate (ESR) of 45 mm/h. Serum liver biochemistries were markedly abnormal, showing alanine aminotransferase (ALT) of 355 IU/L, aspartate aminotransferase (AST) of 339 IU/L, and alkaline phosphatase of 302 IU/L. Renal function and electrolyte panels were within normal limits.\n\nAbdominal ultrasonography demonstrated a mass of mixed echogenicity in the right hepatic lobe. Subsequent contrast-enhanced abdominal CT confirmed a hypodense mass in the right lobe of the liver, along with an incidental 1.8-cm non-enhancing, well-circumscribed right adrenal nodule consistent with a benign lesion. Chest radiography and chest CT were entirely normal. Abdominal magnetic resonance imaging (MRI) revealed multiple nodular lesions measuring up to 2 cm in the right hepatic lobe with irregular margins, which were hypointense on T1-weighted images, hyperintense on T2-weighted images, and exhibited contrast enhancement after intravenous gadolinium administration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary hepatocellular carcinoma or metastatic liver disease",
+      "rule_out_reason": "Considered the primary provisional diagnosis because the patient presented with weight loss, hepatomegaly, transaminitis, and multiple contrast-enhancing liver masses on cross-sectional imaging. However, liver biopsy and subsequent histopathological examination showed no evidence of neoplastic cells.",
+      "quote": "The initial differential diagnosis of these radiological findings included primary hepatocellular carcinoma or metastasic liver lesions."
+    },
+    {
+      "candidate": "Parasitic hepatic infection or inflammatory pseudotumor",
+      "rule_out_reason": "Considered after initial needle biopsy demonstrated prominent eosinophilic infiltration, lymphocytes, and epithelioid necrosis, which raised suspicion for a parasitic liver process or inflammatory pseudotumor. However, definite parasite elements were absent, and definitive resection revealed classic caseating necrotizing granulomas.",
+      "quote": "No fungus or acid-fast bacilli were found in the specimen, and a parasite infection was suspected due to eosinophils presence, but it was unable to exclude malignancy or liver pseudotumor."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Partial hepatectomy of segment VI of the right hepatic lobe demonstrated multiple necrotizing granulomas with central caseating necrosis pathognomonic for tuberculous infection, further corroborated by a positive QuantiFERON-TB assay.",
+      "quote": "A hepatectomy, including the VI segment of the right lobe of the liver, was performed, and the histopathological examination revealed multiple granulomas with central caseating necrosis. These findings are consistent with tuberculosis even though there were no acid-fast bacilli in Ziehl-Neelsen staining (Figure 3). A QuantiFERON-Tb test was conducted and turned out positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Isolated hepatic tuberculosis presenting as macronodular liver lesions mimicking hepatocellular carcinoma or metastases. All histopathological findings, staining, and IGRA testing excluded from case_prompt."
+}

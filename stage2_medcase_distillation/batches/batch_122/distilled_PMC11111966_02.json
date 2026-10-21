@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11111966_02",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 10-year-old child presents with high fever, acute right lower quadrant abdominal pain with appendiceal enlargement, rapid progression to septic shock, acute kidney injury, bilateral pneumonia, and hyperferritinemic HLH. The central clinical dilemma is mistaking eschar-negative scrub typhus presenting as an acute abdomen/appendiceal syndrome for perforated acute appendicitis with polymicrobial septic shock.\n2. Admission Breakpoint: The breakpoint is set upon ICU transfer after initial resuscitation, physical examination, baseline routine labs (severe thrombocytopenia, coagulopathy, elevated creatinine, hyperferritinemia), and CT imaging of the abdomen and chest, before bone marrow aspiration, conventional blood cultures, and mNGS are finalized.\n3. Differential Distinctions: Acute bacterial appendicitis with septic shock is suspected due to right lower quadrant pain and an enlarged appendix on abdominal CT, but ruled out by negative blood cultures and lack of response to meropenem and linezolid. Viral-associated HLH (EBV, TORCH) is excluded by negative serologies. Metagenomic sequencing detecting Orientia tsutsugamushi reveals the true rickettsial etiology.",
+  "case_prompt": "A 10-year-old girl residing in Xichang, southwestern China, was transferred to the pediatric intensive care unit (PICU) with a 1-week history of repeated high fevers (37.5–39.8°C) and acute right lower quadrant abdominal pain. Prior to referral, she received empirical therapy with cephalosporins and ibuprofen at a regional hospital, but experienced rapid clinical deterioration with acute respiratory failure and multiorgan dysfunction.\n\nOn physical examination in the intensive care unit, she was critically ill, dyspneic, and hemodynamically unstable. Vital signs demonstrated a temperature of 39.9°C, a heart rate of 154 beats/min, a respiratory rate of 42 breaths/min, and profound hypotension with a blood pressure of 79/31 mmHg. Complete skin examination revealed no identifiable eschars, cutaneous ulcers, or petechial rash. Initial laboratory investigations showed profound thrombocytopenia with a platelet count of 25 × 10⁹/L (reference range: 100–450 × 10⁹/L). Fibrinolytic markers were markedly abnormal, with fibrin degradation products of 51.79 µg/mL (reference range: 0–5.0 µg/mL) and a D-dimer of 18.87 mg/L FEU (reference range: 0–0.5 mg/L). C-reactive protein (CRP) was elevated at 61.2 mg/L (reference range: 0–8 mg/L), serum ferritin was 3,163 ng/mL (reference range: 10–291 ng/mL), and serum creatinine was elevated at 101.79 µmol/L (reference range: 17.3–54.6 µmol/L). Computed tomography (CT) of the chest revealed bilateral pneumonia, while abdominal CT demonstrated hepatosplenomegaly and an enlarged appendix.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Appendicitis with Septic Shock",
+      "rule_out_reason": "Considered due to right lower quadrant abdominal pain, hepatosplenomegaly, and an enlarged appendix on abdominal CT leading to septic shock, but ruled out by negative conventional blood cultures and failure to defervesce despite combined therapy with meropenem and linezolid.",
+      "quote": "Abdominal computerized tomography revealed hepatosplenomegaly and an enlarged appendix... Conventional peripheral blood culture also yielded negative results."
+    },
+    {
+      "candidate": "Viral Infection-Induced HLH (EBV / TORCH)",
+      "rule_out_reason": "Considered in the setting of severe thrombocytopenia, hyperferritinemia, and multiorgan failure, but ruled out by negative serological panels for EBV and TORCH pathogens.",
+      "quote": "The serological examinations yielded negative results for common pathogens, including EBV (Epstein-Barr virus) and TORCH (toxoplasmosis, other, rubella, cytomegalovirus, and herpes)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Plasma metagenomic next-generation sequencing (mNGS) identified 11,387 sequence reads of Orientia tsutsugamushi (relative abundance 99.12%), confirmed by qPCR, establishing severe scrub typhus-associated HLH masquerading as an acute surgical abdomen.",
+      "quote": "After 24 h, on 5 September 2023, the analysis revealed a total of 11,387 sequences of Ot, with a genome coverage and relative abundance of 25.12 and 99.12%, respectively (Figures 3B,D). Consequently, Scrub typhus-associated HLH was diagnosed"
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning criteria. Breakpoint strictly excludes mNGS, bone marrow biopsy, and antibiotic response. Zero pathogen leaks."
+}

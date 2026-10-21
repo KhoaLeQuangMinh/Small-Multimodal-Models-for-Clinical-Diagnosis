@@ -1,0 +1,43 @@
+{
+  "case_id": "PMC12743525_05",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old previously healthy woman presented with six months of isolated, progressive anterograde amnesia without fever, headache, seizures, or focal motor/sensory deficits, mimicking early-onset degenerative dementia, primary psychiatric pseudodementia, or autoimmune encephalitis. The absence of systemic signs obscured an infectious intracranial mass lesion.\n2. Admission Breakpoint: The admission clinical evaluation concludes on Day 1 following physical and neurological examinations, initial non-contributory head CT, normal fundus examination, and psychiatric evaluation ruling out functional/affective pseudodementia. Lumbar puncture on Day 2 (lymphocytic pleocytosis, elevated ADA), brain MRI on Day 4, and antitubercular therapy initiation occur post-breakpoint.\n3. Differential Distinctions: Early-onset degenerative dementia and psychiatric disorders lack acute CSF inflammatory markers and ring-enhancing focal thalamic lesions. Thalamic infarction has an abrupt, apoplectic onset rather than insidious 6-month progression. Thalamic tuberculoma in young adults presents with subacute or chronic amnestic deficits due to disruption of mamillothalamic tracts, confirmed by CSF pleocytosis with elevated ADA and characteristic ring-enhancing MRI lesions.",
+  "case_prompt": "A 29-year-old woman with no significant past medical history presented with a 6-month history of insidious, progressive memory loss. Her family reported marked forgetfulness, inability to recall recent conversations, frequent misplacement of household objects, and deteriorating ability to manage independent daily functioning. She reported no preceding fever, headache, visual disturbances, seizures, or motor weakness. Past medical history was negative for psychiatric illness, substance abuse, head trauma, systemic metabolic disorders, or a family history of dementia. On admission, she was alert and cooperative, but was disoriented to time. Cognitive testing revealed significant impairment of short-term memory and delayed recall, whereas language fluency, comprehension, and remote long-term memory were preserved. Cranial nerves, motor strength, sensory modalities, reflexes, and cerebellar coordination were entirely normal. Funduscopic examination revealed sharp optic disc margins without papilledema. An unenhanced computed tomography (CT) scan of the brain performed on Day 1 was non-contributory. Formal psychiatric consultation was obtained, which confirmed a normal psychiatric examination that did not account for her cognitive symptoms.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Early-Onset Degenerative Dementia",
+      "rule_out_reason": "Considered due to the insidious 6-month progressive memory impairment and decline in daily functioning in a young adult. Ruled out by the absence of a family history, non-contributory Day 1 head CT, subsequent inflammatory CSF profile, and demonstration of a focal ring-enhancing lesion on MRI.",
+      "quote": "Early-onset degenerative dementia"
+    },
+    {
+      "candidate": "Primary Psychiatric Disorders (Depression / Pseudodementia)",
+      "rule_out_reason": "Considered given isolated cognitive complaints in a young individual without focal motor signs or fever. Ruled out by a normal psychiatric evaluation that failed to account for her objective memory impairment.",
+      "quote": "Psychiatric evaluation was normal and did not account for her cognitive symptoms."
+    },
+    {
+      "candidate": "Thalamic Stroke",
+      "rule_out_reason": "Considered because isolated memory loss can result from focal ischemic injury to thalamic nuclei. Ruled out by the gradual 6-month progression rather than sudden vascular onset, non-contributory Day 1 CT scan, and inflammatory CSF profile.",
+      "quote": "Thalamic stroke"
+    },
+    {
+      "candidate": "Autoimmune / Paraneoplastic Encephalitis",
+      "rule_out_reason": "Considered due to subacute progressive limbic/amnestic syndrome in a young woman without fever. Ruled out by the absence of seizures or psychiatric symptoms, normal baseline CT, and neuroimaging revealing a solitary ring-enhancing mass with elevated CSF ADA.",
+      "quote": "Autoimmune/paraneoplastic encephalitis"
+    },
+    {
+      "candidate": "Nutritional / Metabolic Deficiency (Vitamin B12, Thiamine)",
+      "rule_out_reason": "Considered as reversible metabolic/nutritional causes of progressive cognitive decline and amnesia. Ruled out by absence of nutritional risk factors, alcohol abuse, or systemic metabolic illness, and demonstration of a focal structural infective lesion.",
+      "quote": "Nutritional deficiency (B12, thiamine)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred on Day 2 when CSF analysis revealed lymphocytic pleocytosis, elevated ADA (22 U/L), and low glucose (48 mg/dL), followed on Day 4 by brain MRI demonstrating a ring-enhancing lesion in the right thalamus with surrounding edema, with subsequent rapid neurological recovery on empiric anti-tubercular therapy.",
+      "quote": "CSF analysis on Day 2 revealed lymphocytic pleocytosis, elevated ADA (22 U/L), and low glucose (48 mg/dL); CBNAAT and culture were negative. MRI on Day 4 revealed a ring-enhancing lesion in the right thalamus with surrounding edema (Fig. 3a-d)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to Stanford MedCaseReasoning principles. The case prompt ends at Day 1 triage prior to lumbar puncture and MRI. All pathogen and disease names omitted from prompt. Verbatim quotes from the text substantiate candidate rule-outs."
+}

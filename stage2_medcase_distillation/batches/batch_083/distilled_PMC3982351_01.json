@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3982351_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: An elderly immunosuppressed patient presents with refractory nausea, vomiting, significant weight loss, and profound hyponatremia. The clinical challenge lies in distinguishing hypovolemic hyponatremia due to gastrointestinal losses from syndrome of inappropriate antidiuretic hormone secretion (SIADH) triggered by occult parasitic hyperinfection without marked eosinophilia.\n2. Admission Breakpoint: Triage concludes after initial presentation, physical exam, baseline laboratory workup (showing hyponatremia 122 mEq/L, hypoalbuminemia, and normal eosinophil count of 1%), negative HIV/HTLV screening, and negative brain CT/MRI, prior to isotonic saline trial, osmolality measurements, and upper endoscopy.\n3. Differential Distinctions: Hypovolemic hyponatremia is ruled out by persistent hyponatremia despite isotonic saline and characteristic hyperosmolar urine with plasma hypo-osmolality (SIADH). Central nervous system etiology of SIADH is excluded by normal brain MRI/CT. Definitive diagnosis is established by endoscopic biopsy and stool microscopy identifying parasitic larvae.",
+  "case_prompt": "A 76-year-old Hispanic male presents with a 2-month history of progressive fatigue, nausea, intractable vomiting, and an unintentional 30-pound weight loss. His past medical history is significant for idiopathic thrombocytopenic purpura diagnosed 4 months ago, for which he received a 3-week course of systemic corticosteroids. He immigrated to the United States from Colombia 17 years ago and had traveled to Venezuela 1 month prior to presentation. He has a 40 pack-year smoking history.\n\nOn physical examination, nonpalpable purpura is noted. Abdominal examination reveals a soft, nondistended abdomen with mild epigastric tenderness, without guarding, rigidity, rebound tenderness, or organomegaly.\n\nLaboratory evaluation demonstrates a white blood cell count of 11,400/mcL with a normal eosinophil count of 1%. Serum biochemistry reveals severe hyponatremia with a sodium of 122 mEq/L, total protein of 4.5 g/dL, and albumin of 1.7 g/dL. Other routine laboratory parameters are unremarkable. Computed tomography (CT) and magnetic resonance imaging (MRI) of the brain are unremarkable. Serologic tests for HIV and human T-lymphotropic virus (HTLV) are negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hypovolemic hyponatremia secondary to gastrointestinal losses",
+      "rule_out_reason": "Severe hyponatremia in the context of intractable vomiting initially suggested volume depletion; however, volume expansion with isotonic saline failed to correct sodium levels, while high urine osmolality with plasma hypo-osmolality confirmed SIADH.",
+      "quote": "The patient was initially treated with 0.9 normal saline infusions suspecting hypovolemic hyponatremia due to persistent vomiting, but showed only minimal improvement in serum sodium levels. A diagnosis of SIADH was then made based on his high urine osmolality, 564 mOsm/kg and low plasma osmolality 261 mOsm/kg."
+    },
+    {
+      "candidate": "Central nervous system lesion / intracranial mass causing SIADH",
+      "rule_out_reason": "Given his age and 40 pack-year smoking history, an occult central nervous system neoplasm or intracranial pathology causing SIADH was considered, but structural neuroimaging was entirely normal.",
+      "quote": "Computed tomography (CT) and magnetic resonance imaging (MRI) of the brain were unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Upper endoscopy performed to evaluate intractable vomiting revealed gastroduodenal inflammation, and histopathology of duodenal mucosal biopsies combined with stool microscopy demonstrated characteristic parasitic larvae confirming hyperinfection.",
+      "quote": "Histopathology showed acute and chronic duodenitis, with marked blunting of villi and reactive cellular changes, active gastritis, and presence of parasites consistent with S. stercoralis [Figures 1 and 2]. Stool examination showed many S. stercoralis larvae."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of Strongyloides stercoralis hyperinfection associated with SIADH in a corticosteroid-treated patient. Admission prompt contains zero pathogen names or diagnostic spoilers."
+}

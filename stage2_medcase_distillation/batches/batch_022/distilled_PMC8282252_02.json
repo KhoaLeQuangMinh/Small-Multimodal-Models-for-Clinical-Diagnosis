@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8282252_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 24-year-old woman with homozygous sickle cell anemia (genotype SS) presents with hyperacute fever, vomiting, retro-orbital headache, diffuse myalgia, and arthralgia. In patients with sickle cell disease, acute febrile pain episodes are typically managed as uncomplicated vaso-occlusive pain crises, creating a high risk of overlooking an acute arboviral infection that can rapidly provoke acute intrahepatic sickling and life-threatening sickle cell intrahepatic cholestasis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the initial emergency department triage evaluation and physical examination (confirming pallor, icterus, and tachycardia with a non-enlarged liver and spleen), prior to the receipt of the NS1 antigen assay and subsequent clinical deterioration.\n3. Differential Distinctions: Acute viral hepatitis (A, B, C) is ruled out by negative viral serologies. Acute calculous cholecystitis or biliary obstruction is ruled out by abdominal ultrasound showing an incidental asymptomatic gallstone without ductal dilatation or inflammatory gallbladder changes. Cardinal manifestations including sudden retro-orbital pain, severe myalgia/arthralgia, and high fever in an endemic setting define the presentation of classic dengue triggering a sickle crisis.",
+  "case_prompt": "A 24-year-old woman with homozygous sickle cell anemia (genotype SS, with irregular outpatient follow-up and no history of hydroxyurea use; baseline outpatient values: hemoglobin 8 g/dL, leukocyte count 20.5 x 10^9/L, platelet count 612 x 10^9/L) is admitted with a 1-day history of diffuse myalgia, arthralgia, retro-orbital headache, vomiting, and fever.\n\nOn physical examination, the patient appears pale and icteric. Vital signs demonstrate a heart rate of 108 beats per minute, normal blood pressure, and an arterial oxygen saturation of 98% breathing ambient air. On abdominal examination, neither the liver nor the spleen is palpable, and there is no abdominal tenderness.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis (A, B, and C)",
+      "rule_out_reason": "Acute viral hepatitis was evaluated as a cause of acute jaundice and gastrointestinal upset, but serological testing for hepatitis A, B, and C was completely negative.",
+      "quote": "Serology for viral hepatitis (A, B, and C) was negative."
+    },
+    {
+      "candidate": "Acute Calculous Cholecystitis / Choledocholithiasis",
+      "rule_out_reason": "Symptomatic gallstone disease was considered given the high prevalence of cholelithiasis in sickle cell disease, but abdominal ultrasound confirmed the lack of inflammatory signs or biliary ductal dilatation.",
+      "quote": "Abdominal ultrasonography revealed hepatomegaly, suprahepatic vein ectasia, single calculus (1.8 cm) in the gallbladder with no inflammatory signs, and no dilatation of intrahepatic and extrahepatic bile ducts."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Fever triggering Sickle Cell Crisis / Intrahepatic Cholestasis",
+      "rule_out_reason": "The acute presentation with retro-orbital headache, intense arthralgias and myalgias, vomiting, and high fever was definitively confirmed by early viral antigen detection.",
+      "quote": "Suspected classic dengue fever was confirmed by detection of the nonstructural protein 1 (NS1) antigen test (risk group C), and the diagnosis of sickle cell crisis associated with dengue fever was considered."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning specifications. Case prompt strictly isolates Day 1 triage findings prior to confirmatory NS1 antigen testing."
+}

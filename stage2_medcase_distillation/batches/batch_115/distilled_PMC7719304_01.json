@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7719304_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 38-year-old woman presents with persistent deep abdominal pain, nausea, vomiting, and a 2.8 cm hypermetabolic retroperitoneal/peripancreatic mass on imaging, initially presumed to be pancreatic carcinoma or metastatic lymphadenopathy, but with normal tumor markers, lack of vascular encasement, and strong tuberculin reactivity revealing isolated celiac lymph node tuberculosis.\n2. Admission Breakpoint: Admission presentation ends after physical examination, baseline routine blood tests, biochemical profiles, duodenoscopy, and an extensive panel of negative serum tumor markers, strictly before 18F-FDG PET-CT imaging, tuberculin testing, and antituberculosis treatment.\n3. Differential Distinctions: Pancreatic carcinoma / periampullary neoplasm is ruled out by normal duodenoscopy, non-elevated CA19-9/CEA, and lack of vascular encasement on contrast CT; lymphoma / metastatic malignant lymphadenopathy is ruled out by absence of systemic adenopathy, punctate calcifications, and positive tuberculin skin test followed by objective mass regression on anti-tubercular therapy.",
+  "case_prompt": "A 38-year-old woman presents with deep abdominal pain and epigastric discomfort of nearly 1 month's duration, accompanied by nausea and vomiting. She previously completed an empiric course of anti-infective therapy without resolution of symptoms.\n\nOn physical examination, clinical signs and abdominal palpation are completely normal. Routine laboratory examinations, including complete blood count and biochemical profiles, are within normal limits. Upper gastrointestinal duodenoscopy demonstrates normal mucosal findings without ampullary or duodenal pathology. An extensive serum tumor marker panel—including AFP, CEA, CYFRA21-1, SCC, NSE, HE4, CA125, CA19-9, CA15-3, CA50, CA242, and CA72-4—shows no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic Space-Occupying Neoplasm / Carcinoma",
+      "rule_out_reason": "Initially suspected based on cross-sectional CT and MRI showing a peripancreatic mass anterior to the inferior vena cava, but ruled out by completely normal duodenoscopy, negative CA19-9 and other tumor markers, and absence of vascular invasion.",
+      "quote": "The patient's clinical signs, blood routine, biochemical examinations, and duodenoscopy were all normal, and no abnormalities were observed in serum tumor markers AFP, CEA, CYFRA21-1, SCC, NSE, HE4, CA125, CA19-9, CA15-3, CA50, CA242, or CA72-4."
+    },
+    {
+      "candidate": "Malignant Retroperitoneal Lymphadenopathy / Lymphoma",
+      "rule_out_reason": "High FDG avidity (SUVmax 9.4 increasing to 12.0) raised suspicion for malignant adenopathy, but the mass showed internal punctate high-density calcific shadows and lacked vascular encasement.",
+      "quote": "Enhanced CT (Figure 2) revealed no vascular envelopment in the mass."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The benign vascular profile and punctate calcifications on PET-CT combined with a strongly positive tuberculin test established tuberculosis of celiac lymph nodes, which achieved marked shrinkage and symptom resolution following antituberculosis therapy.",
+      "quote": "Based on these results, the patient was diagnosed with tuberculosis of celiac lymph nodes. This diagnosis was confirmed by the strong positive result from the tuberculin test."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7719304. Admission breakpoint maintains complete secrecy regarding the retroperitoneal/celiac tuberculosis by halting at duodenoscopy and normal tumor marker results. Advanced PET-CT findings and tuberculin testing are placed in diagnostic reasoning with exact quotes."
+}

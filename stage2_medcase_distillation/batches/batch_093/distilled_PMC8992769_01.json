@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8992769_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old female presents with subacute fever, chills, night sweats, weight loss, persistent headache, and lumbar spine pain without chronic lung disease or sick contacts. Whole-body PET/CT demonstrates multifocal hypermetabolic skeletal and multisystemic lesions. The central diagnostic tension lies in distinguishing disseminated metastatic malignancy or lymphoproliferative disorder from multifocal osseous and systemic tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs after full non-invasive imaging evaluation (cranial and lumbar MRI, thoracic and lumbar CT, and whole-body 18F-FDG PET/CT), immediately prior to open surgical biopsy of the L2 lamina and vertebral body.\n3. Differential Distinctions: Disseminated skeletal metastases or lymphoma typically present in young adults with multifocal lytic or sclerotic PET-positive bone lesions and B-symptoms, but histopathology reveals malignant neoplastic cells. Chronic pyogenic osteomyelitis/spondylodiscitis presents with rapid suppurative destruction with neutrophilic infiltrates rather than caseating granulomatous sequestration with Langhans multinucleated giant cells.",
+  "case_prompt": "A 27-year-old female presents to the university hospital with a one-month history of recurrent fevers, involuntary weight loss, and intermittent lumbar back pain. She also reports persistent headache, chills, and drenching night sweats. She has no documented history of sick contacts or chronic pulmonary disease.\nAdmission diagnostic imaging is performed to evaluate her systemic symptoms and spinal complaints, including cranial and lumbar magnetic resonance imaging (MRI), thoracic and lumbar computed tomography (CT), and whole-body 18F-FDG PET/CT, revealing multifocal skeletal lesions and multisystemic hypermetabolic involvement suspicious for either disseminated metastatic malignancy or an infectious process.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic skeletal malignancy / Disseminated neoplasm",
+      "rule_out_reason": "Widespread FDG-avid skeletal lesions, constitutional B-symptoms (fever, chills, night sweats, weight loss), and lack of pulmonary disease initially suggested advanced skeletal metastasis or lymphoma; however, surgical bone biopsy revealed necrotizing granulomatous sequestrum without malignant tumor cells.",
+      "quote": "Based on the symptoms and the examinations, meta-static disease or bone tuberculosis was suspected."
+    },
+    {
+      "candidate": "Pyogenic bacterial osteomyelitis / spondylodiscitis",
+      "rule_out_reason": "Pyogenic bone infections typically cause acute local suppurative inflammation and neutrophilic infiltration; here, the indolent multifocal skeletal presentation and absence of an acute bacterial source prompted an open vertebral biopsy that demonstrated characteristic granulomatous changes.",
+      "quote": "Subsequently, to make the definitive diagnosis, open biopsy was performed under the L2 lamina and L2 vertebral bodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Open surgical biopsy of the L2 lamina and vertebral bodies showing local sequestrum formation, multinucleated Langhans giant cells, and necrotic bone, establishing the definitive diagnosis of multifocal skeletal tuberculosis.",
+      "quote": "Histopathological examination showed local sequestrum formation. Langerhans cells were detected with giant cells and dead bones, which are the characteristic features of TB disease."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Diagnostic dilemma between disseminated bone metastasis and multifocal skeletal tuberculosis. Strict admission breakpoint stops before open L2 spinal biopsy."
+}

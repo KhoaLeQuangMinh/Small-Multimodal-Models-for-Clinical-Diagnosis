@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8650847_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 28-year-old female with type 1 diabetes mellitus presents with subacute progressive backache and lower extremity weakness, with imaging showing destructive L3-L4 spondylodiscitis and bilateral iliopsoas collections. The clinical tension lies in distinguishing tuberculous spondylodiscitis (Pott disease) from acute pyogenic spinal infection or malignancy, and recognizing that therapeutic non-response can result from drug resistance (rifampicin-resistant MDR-TB) as well as secondary opportunistic anaerobic superinfection.\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency triage evaluation and contrast-enhanced lumbosacral MRI demonstrating L3-L4 disc space loss with bilateral iliopsoas fluid collections, prior to percutaneous aspiration, molecular mycobacterial testing (Xpert MTB/RIF), or liquid and automated microbial cultures.\n3. Differential Distinctions: Pyogenic bacterial spondylodiscitis (e.g., S. aureus) presents acutely with high spiking fevers, rapid disc destruction, and leukocytosis. In contrast, tuberculous spondylodiscitis typically follows an insidious course characterized by prominent cold paraspinal and iliopsoas abscesses with initial disc preservation. Opportunistic anaerobic superinfection must be considered when an instrumented or chronic tubercular abscess acutely deteriorates.",
+  "case_prompt": "A 28-year-old female with a medical history of type 1 diabetes mellitus presents to the emergency department complaining of backache and progressive lower limb weakness. On admission, contrast-enhanced magnetic resonance imaging (MRI) of the lumbosacral region demonstrates loss of intervertebral disc space with a paraspinal collection at the L3-L4 level extending into the bilateral iliopsoas muscles with associated neural compression.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial spondylodiscitis (e.g., Staphylococcus aureus)",
+      "rule_out_reason": "Acute pyogenic spondylodiscitis classically produces bacteremic fever and acute neutrophilia; in this patient, initial standard treatment failed, and repeated percutaneous aspirates sent for standard aerobic microbiology yielded no bacterial growth, while liquid culture demonstrated acid-fast mycobacteria.",
+      "quote": "Aerobic culture of the sample did not show growth of any bacteria and anaerobic culture showed growth of bacteria sensitive to metronidazole."
+    },
+    {
+      "candidate": "Spinal epidural neoplasm / Metastatic spinal malignancy",
+      "rule_out_reason": "Vertebral metastases typically involve the vertebral bodies or posterior elements with sparing of the intervertebral disc; in contrast, imaging demonstrated prominent disc-space collapse and contiguous bilateral psoas fluid collections typical of an infectious discitis.",
+      "quote": "Contrast MRI of the lumbosacral region demonstrated loss of disc space with paraspinal collection at L3-4 extending into bilateral iliopsoas muscle suggesting tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Needle aspiration of the paraspinal collection with rapid molecular testing (Xpert MTB/RIF) and automated liquid culture (MGIT) that confirmed Mycobacterium tuberculosis with rifampicin resistance, followed by secondary anaerobic culture isolation of Peptoniphilus asaccharolyticus via MALDI-TOF MS upon acute relapse.",
+      "quote": "The needle aspiration of pus along with Xpert MTB/RIF and liquid culture (MGIT) both showed the presence of MTB resistant to rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-yield CPC teaching case of Pott disease complicated by primary rifampicin-resistant MDR-TB and secondary opportunistic anaerobic superinfection. Strictly respects the admission breakpoint prior to percutaneous aspiration, PCR, and cultures."
+}

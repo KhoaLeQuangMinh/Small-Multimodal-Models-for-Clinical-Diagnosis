@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8320545_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old previously healthy Sri Lankan male presents with a six-month history of progressive monoarticular swelling and functional restriction of the left ankle joint without warmth, erythema, tenderness, systemic fever, or respiratory symptoms. The completely indolent, afebrile 'cold' presentation mimics chronic mechanical derangement, osteoarthritis, or seronegative monoarthritis, diverting diagnostic suspicion away from extrapulmonary articular tuberculosis.\n2. Admission Breakpoint: The presentation ends following the physical exam demonstrating afebrile monoarticular swelling, normal baseline blood counts, mildly elevated ESR (35 mm/h), normal fasting glucose, negative retroviral screen, and normal chest radiography, stopping strictly before rheumatologic serologies (RF, anti-CCP, ANA), Mantoux testing, ankle plain radiographs/MRI, synovial biopsy, GeneXpert, and mycobacterial culture.\n3. Differential Distinctions: Inflammatory autoimmune arthropathy is ruled out by negative RF, anti-CCP, and ANA serologies; acute pyogenic septic arthritis is ruled out by the lack of local heat, erythema, tenderness, or marked leukocytosis; post-traumatic osteoarthritis is ruled out by the absence of trauma history and MRI findings of extensive subarticular osteitis; diagnosis is confirmed by synovial histopathology and mycobacterial culture growing Mycobacterium tuberculosis.",
+  "case_prompt": "A 44-year-old otherwise healthy Sri Lankan male presented to an outpatient clinic with a six-month history of swelling in his left ankle joint. He noted progressive swelling associated with stiffness, restricted range of movement, and discomfort during weight-bearing. He denied cough, dyspnea, fever, night sweats, or constitutional weight loss. There was no history of previous joint trauma, accidental injury, or surgical intervention.\n\nOn physical examination, the left ankle joint was visibly swollen, but there was no overlying warmth, erythema, or localized tenderness. There was global restriction of active and passive movements at the ankle joint. The systemic physical examination was otherwise unremarkable.\n\nBasic hematological indices, including complete blood count, were normal, though the erythrocyte sedimentation rate was mildly elevated at 35 mm in the first hour. Fasting blood glucose was within normal limits, and a screening test for human immunodeficiency virus was negative. A plain chest radiograph showed clear lung fields without infiltrates, consolidation, or cavitary lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Rheumatoid arthritis / Autoimmune monoarthritis",
+      "rule_out_reason": "Chronic insidious joint swelling with restricted mobility and elevated inflammatory markers suggested an inflammatory arthropathy, but comprehensive serological testing including rheumatoid factor, anti-cyclic citrullinated peptide antibody, and antinuclear antibody was entirely negative.",
+      "quote": "Arthritis workup with rheumatoid factor (RF), anti-cyclic citrullinated peptide antibody (anti-CCP), and antinuclear antibody (ANA) was negative."
+    },
+    {
+      "candidate": "Pyogenic bacterial septic arthritis",
+      "rule_out_reason": "Progressive joint destruction and disability could suggest a indolent pyogenic joint infection, but the classical signs of bacterial sepsis\u2014including local erythema, warmth, severe joint tenderness, systemic pyrexia, and peripheral leukocytosis\u2014were distinctly absent.",
+      "quote": "On examination, his left ankle joint was swollen without tenderness or warmth"
+    },
+    {
+      "candidate": "Traumatic or degenerative arthropathy",
+      "rule_out_reason": "Chronic weight-bearing pain and limited range of motion in an ankle joint could represent post-traumatic or degenerative osteoarthrosis, but there was no preceding history of mechanical injury or surgery, and advanced imaging demonstrated subarticular osteitis and inflammatory marrow edema.",
+      "quote": "Patient did not have a history of previous trauma or surgery."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough was achieved when an open synovial biopsy revealed granulomatous inflammation, and definitive automated culture of the synovial tissue grew Mycobacterium tuberculosis, confirming primary tuberculous arthritis of the ankle.",
+      "quote": "culture for mycobacteria was positive for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission triage facts. Mantoux test, synovial biopsy, GeneXpert, and mycobacterial cultures are correctly reserved for the differential reasoning section."
+}

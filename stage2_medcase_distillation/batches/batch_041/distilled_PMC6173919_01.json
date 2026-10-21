@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6173919_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A previously healthy 13-year-old boy presents with acute lower back pain, rapid lower extremity paraparesis (grade 3/5 power), sensory loss, anemia, and peripheral eosinophilia following travel to southern Saudi Arabia. The clinical tension is recognizing acute neuroschistosomiasis (spinal cord schistosomiasis presenting as acute transverse myelitis) versus idiopathic/autoimmune transverse myelitis, bacterial/viral epidural abscess or myelitis, and spinal cord tumors, especially given negative stool and urine examinations for parasite ova.\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency department presentation, baseline laboratory investigations (revealing anemia, mild leukocytosis, and peripheral eosinophilia), and unremarkable plain lumbar spine radiography, prior to urgent spinal MRI, brain MRI, lumbar puncture, stool/urine ova analysis, and send-out Schistosoma serology.\n3. Differential Distinctions: Idiopathic transverse myelitis and acute disseminated encephalomyelitis (ADEM) were considered when spinal MRI showed cord edema and T2 hyperintensity in the thoracolumbar region, but marked peripheral eosinophilia and travel history pointed to a parasitic etiology. Bacterial and viral spinal infections were ruled out by negative CSF Gram stain and culture. Classic intestinal or urinary schistosomiasis was not apparent as direct microscopy for ova in urine and stool was negative. The diagnosis of neuroschistosomiasis is established by a markedly elevated Schistosoma serology titer in conjunction with spinal cord myelitis on MRI and complete clinical/radiological cure following antiparasitic therapy.",
+  "case_prompt": "A previously healthy 13-year-old male adolescent presents to the emergency department complaining of severe, continuous lower back pain and marked fatigability lasting for three days. He recently traveled to the southern region of Saudi Arabia. He reports no bowel or bladder incontinence or urinary retention.\n\nOn physical examination, he is afebrile and hemodynamically stable. Palpation of the lumbar spine reveals marked local tenderness. Neurological examination of the lower extremities demonstrates bilateral motor weakness, with muscle strength reduced to grade 3/5 in both knees and hips during flexion and extension. Sensory examination reveals loss of pinprick sensation bilaterally across both lower extremities; the remainder of the neurological examination is intact.\n\nInitial emergency laboratory evaluations reveal anemia accompanied by mild leukocytosis and marked peripheral eosinophilia; other routine biochemical parameters are within normal limits. Plain radiographs of the lumbar spine demonstrate no gross bony or disc space abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic / Post-infectious Acute Transverse Myelitis",
+      "rule_out_reason": "Spinal MRI demonstrated cord edema and abnormal signal intensity consistent with acute transverse myelitis, but the presence of prominent peripheral eosinophilia and travel to an endemic area strongly favored an infectious parasitic etiology, confirmed by elevated specific serology without requirement for immunosuppressive pulse steroids.",
+      "quote": "Emergent magnetic resonance imaging (MRI) revealed cord edema with an abnormal signal intensity in the thoracic and lumbar regions (Figs. 1a, 2a). The clinical and laboratory findings of the radiological features indicated acute transverse myelitis secondary to infectious or inflammatory changes."
+    },
+    {
+      "candidate": "Bacterial / Viral Meningomyelitis or Epidural Abscess",
+      "rule_out_reason": "Considered in the differential of acute spinal cord compression and myelopathy, but cerebrospinal fluid Gram stain and bacterial cultures were completely negative, and brain MRI was unremarkable.",
+      "quote": "A lumbar puncture was performed using standard procedures. Gram staining and culture of the cerebrospinal fluid yielded negative results."
+    },
+    {
+      "candidate": "Intestinal or Urogenital Helminthic Infection (Ova-positive Schistosomiasis)",
+      "rule_out_reason": "Direct parasitological examination was pursued given eosinophilia and travel, but microscopy revealed no parasite eggs in urine or stool specimens.",
+      "quote": "No isolated parasitic eggs were present in the urine or stool specimens."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Neuroschistosomiasis (Spinal Cord Schistosomiasis)",
+      "rule_out_reason": "The diagnostic breakthrough was achieved with a markedly elevated Schistosoma serology titer in the setting of acute cord edema on MRI, leading to complete clinical recovery upon administration of specific antiparasitic therapy.",
+      "quote": "However, the Schistosoma serology titer showed a marked elevation."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt stops right after initial emergency labs (showing eosinophilia) and plain spinal radiographs, strictly omitting advanced MRI, lumbar puncture, and pathogen names. Diagnostic reasoning clearly outlines the differential between autoimmune myelitis, pyogenic infection, and neuroschistosomiasis."
+}

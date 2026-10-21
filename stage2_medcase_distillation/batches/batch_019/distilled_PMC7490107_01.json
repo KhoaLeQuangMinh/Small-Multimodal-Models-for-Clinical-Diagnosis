@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7490107_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 74-year-old diabetic and hypertensive gentleman residing in an endemic region presents with 4 days of intermittent fever, rigors, nausea, borderline hypotension (96/60 mm Hg), acute disorientation, thrombocytopenia (46,000/μL), and acute renal dysfunction (creatinine 117 μmol/L, BUN 10.5 mmol/L) without localized abdominal signs. The primary diagnostic tension is distinguishing severe cerebral malaria and severe sepsis from acute bacterial meningoencephalitis or septic shock in an elderly diabetic host, preceding a catastrophic late complication of spontaneous splenic rupture.\n2. Admission Breakpoint: The admission breakpoint is reached immediately following emergency triage examination, baseline hematologic/metabolic laboratory panels, and normal chest radiography, before peripheral blood smear examination reveals intraerythrocytic protozoa and prompts ICU admission.\n3. Differential Distinctions: Acute bacterial sepsis or pyogenic meningoencephalitis presents similarly with fever, disorientation, and thrombocytopenia, but is excluded by normal chest imaging, absent focal pyogenic source, and microbiological demonstration of dense parasitemia; traumatic splenic rupture or occult abdominal catastrophe is excluded by negative trauma history and benign initial abdominal exam, confirming malaria as the sole driver of splenic pathology.",
+  "case_prompt": "A 74-year-old gentleman with a medical history of hypertension and diabetes mellitus presented to the emergency department with a 4-day history of intermittent fevers with rigors, generalized headache, progressive disorientation, malaise, nausea, and vomiting. He reported no history of abdominal pain, changes in bowel habits, hematuria, loss of consciousness, falls, or antecedent trauma. He resided in a tropical endemic area and reported prior treated uncomplicated febrile episodes.\n\nOn physical examination, he was febrile with a body temperature of 38.7 °C, heart rate of 103 beats per minute in regular sinus rhythm, respiratory rate of 23 breaths per minute, blood pressure of 96/60 mm Hg, and oxygen saturation of 98% on ambient air. Neurologic evaluation revealed disorientation to time and place without focal motor deficits or meningismus. Scleral icterus and cyanosis were absent. Examination of the chest demonstrated normal vesicular breath sounds bilaterally. Abdominal examination was completely unremarkable, with soft, non-tender quadrants, absent organomegaly, and normal active bowel sounds.\n\nInitial emergency laboratory studies demonstrated a normal white blood cell count of 8,200/μL, hemoglobin of 11.5 g/dL, and marked thrombocytopenia with a platelet count of 46,000/μL. Renal function tests showed mild acute impairment with a serum creatinine of 117 μmol/L, blood urea nitrogen of 10.5 mmol/L, and a serum sodium of 131 mmol/L. Liver chemistries, serum electrolytes, and coagulation parameters were within normal limits. A plain chest radiograph was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Sepsis / Pyogenic Meningoencephalitis",
+      "rule_out_reason": "Considered due to high fever, altered mentation, rigors, borderline hypotension, and thrombocytopenia in an elderly diabetic patient. Ruled out by normal chest imaging, absent bacteremia, and rapid identification of severe intraerythrocytic protozoal parasitemia.",
+      "quote": "Peripheral blood smear for malaria demonstrated P. falciparum with high parasitemia with more than 1000 trophozoites/200 WBC, HPF (high power field). He was subsequently admitted to the intensive care unit (ICU) as a case of severe malaria evident by high parasitemia and altered mentation."
+    },
+    {
+      "candidate": "Traumatic or Non-Infectious Abdominal Catastrophe",
+      "rule_out_reason": "Considered in light of his subsequent acute abdomen with subcapsular and intrasplenic hematoma. Ruled out as an external traumatic event by history, confirming spontaneous pathology secondary to severe infection.",
+      "quote": "The patient denied history of recent trauma or falls, and the rest of the systemic review was unremarkable. The patient resided in a malaria-endemic region and reported to have previous uncomplicated malarial infections that were successfully treated with oral anti-malarials."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon microscopic examination of the peripheral blood smear, which revealed heavy Plasmodium falciparum parasitemia (>1000 trophozoites/200 WBC), establishing the diagnosis of severe falciparum malaria with cerebral involvement.",
+      "quote": "Peripheral blood smear for malaria demonstrated P. falciparum with high parasitemia with more than 1000 trophozoites/200 WBC, HPF (high power field). He was subsequently admitted to the intensive care unit (ICU) as a case of severe malaria evident by high parasitemia and altered mentation."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7490107. Admission breakpoint maintained before peripheral blood smear reading and ICU transfer. Zero pathogen names leaked in case prompt."
+}

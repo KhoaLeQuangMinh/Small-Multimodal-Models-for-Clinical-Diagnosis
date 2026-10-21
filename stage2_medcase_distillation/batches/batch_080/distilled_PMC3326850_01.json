@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3326850_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient with advanced AIDS treated for tuberculous lymphadenitis develops explosive, painful re-enlargement of bilateral massive cervical lymph nodes (up to 12 cm) eight weeks after starting antitubercular therapy and ART. When lymph nodes enlarge during TB treatment in HIV, clinicians face a critical dilemma: is this treatment failure due to drug-resistant Mycobacterium tuberculosis, an unmasked non-tuberculous mycobacterial infection (MOTT/MAC), or Immune Reconstitution Inflammatory Syndrome (IRIS/IRD)?\n2. Admission Breakpoint: History of HIV on ATT and ART, chronology of acute cervical lymphadenopathy growth, physical examination (multiple bilateral nodes 2 to 12 cm), neck ultrasound, normal chest radiograph, negative sputum AFB, and CD4 rise from 48 to 100 cells/mm\u00b3 define the admission breakpoint before steroid challenge, pus aspiration, and mycobacterial culture.\n3. Differential Distinctions: Multidrug-resistant tuberculosis (MDR-TB) treatment failure (primary suspicion when lesions enlarge on therapy, ruled out by culture sensitivity and response to anti-inflammatory steroids), Lymphoma / AIDS-related non-Hodgkin lymphoma (presents with rapidly enlarging firm nodes in advanced HIV, ruled out by purulent aspirate and mycobacterial culture), and Tuberculosis Immune Reconstitution Disease (IRD/IRIS) unmasking/co-infected with MAC.",
+  "case_prompt": "A 35-year-old male presented with an acute increase in bilateral neck swellings over the past 5 to 6 days, associated with neck pain, fever, and weight loss. Two months earlier, he had been admitted with altered sensorium; he tested positive for HIV with a CD4 count of 48 cells/mm\u00b3 and brain MRI was normal. Fine-needle aspiration cytology of his cervical swellings at that time was suggestive of mycobacterial disease. He was initiated on a four-drug anti-mycobacterial regimen (isoniazid, rifampicin, pyrazinamide, ethambutol) and combination antiretroviral therapy (lamivudine, stavudine, efavirenz), along with co-trimoxazole and fluconazole prophylaxis. His systemic symptoms initially improved, but after approximately two months of treatment he developed rapid, painful swelling of his neck. On physical examination, there were multiple, discrete, firm, mobile, tender, non-warm, non-reducible, non-pulsatile swellings on both sides of the neck involving all cervical lymph node groups, ranging in size from 2 to 12 cm in maximum dimension, with no lymphadenopathy elsewhere. Ultrasonography of the neck revealed multiple bilateral enlarged conglomerated nodes in levels II, III, IV, and V. Plain chest radiograph was normal. Sputum microscopy of two morning samples was negative for special microbiological stains. Repeat CD4 count rose to 100 cells/mm\u00b3.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Drug-resistant tuberculosis treatment failure (MDR-TB)",
+      "rule_out_reason": "Paradoxical worsening and massive enlargement of lymph nodes during first-line anti-tubercular therapy raises immediate concern for drug-resistant Mycobacterium tuberculosis; however, mycobacterial sensitivity testing demonstrated complete susceptibility to first-line agents.",
+      "quote": "At this stage considering the fact that in spite of treatment with ATT+ART, the patient had presented with increase in size of neck swelling, we were considering a differential diagnosis of infection with drug-resistant bacilli, infection by MOTT, and IRD."
+    },
+    {
+      "candidate": "AIDS-related lymphoma / Non-Hodgkin lymphoma",
+      "rule_out_reason": "Rapid emergence of massive conglomerate cervical lymphadenopathy (up to 12 cm) in a patient with severe HIV-related immunosuppression strongly raises suspicion for an aggressive lymphoid malignancy; however, therapeutic aspiration yielded purulent fluid rather than neoplastic tissue.",
+      "quote": "On examination of the neck swellings, there were multiple, discrete, firm, mobile, tender, nonwarm, nonreducible, nonpulsatile swellings on both sides of the neck involving all lymph node groups [Figure 1, 2]."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Tuberculosis Immune Reconstitution Disease with MAC Lymphadenitis)",
+      "rule_out_reason": "The temporal surge in CD4 count following antiretroviral therapy accompanied by inflammatory flare of preexisting mycobacterial infection established Immune Reconstitution Disease (IRD), with nodal aspirate culture yielding Mycobacterium avium complex sensitive to first-line agents, responding favorably to adjunctive corticosteroids and targeted antimicrobials.",
+      "quote": "AFB culture report (BACTEC/L-J) was suggestive of M. avium complex (MAC) on the basis of NAP (rho-nitro-alpha-acetyl amino-beta-hydroxy-propiophenone) and morphology. AFB culture and sensitivity report showed sensitive to all first line drugs. The patient had a diagnosis of AIDS, he was on antiretroviral therapy with increase in CD4 count and worsening of preexisting disease; hence, the diagnosis was IRD."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Classic presentation of mycobacterial paradoxical Immune Reconstitution Disease (IRD) in an AIDS patient with CD4 recovery. Admission prompt stops right after ultrasound, chest X-ray, sputum AFB, and repeat CD4 count, prior to lymph node aspiration and culture."
+}

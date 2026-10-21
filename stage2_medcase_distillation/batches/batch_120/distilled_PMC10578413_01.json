@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10578413_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 50-year-old Asian Indian man presenting with 1 week of severe postural giddiness, persistent vomiting, hypotension, and a 1-year history of chronic unprescribed dexamethasone overuse is found to have profound hypocortisolemia (0.8 mcg/dL). While fluid resuscitation and stress-dose corticosteroids correct his blood pressure, his vomiting inexplicably persists, culminating in rapid multiorgan failure and death within 24 hours. The clinical tension lies in looking beyond isolated secondary adrenal crisis to detect a lethal opportunistic hyperinfection syndrome triggered by prolonged corticosteroid therapy.\n2. Admission Breakpoint: Day 1 admission triage concludes after initial fluid resuscitation, baseline hematologic/renal/liver testing (all normal), and baseline endocrine workup confirming suppressed serum cortisol (22.06 nmol/L / 0.8 mcg/dL). Confirmatory investigations begin when symptoms fail to improve with stress hydrocortisone, prompting upper gastrointestinal endoscopy, mucosal biopsies, and sepsis workup.\n3. Differential Distinctions: Isolated secondary adrenal crisis explains hypotension and vomiting initially, but fails to account for persistent refractory vomiting despite adequate intravenous hydrocortisone and catastrophic multiorgan failure. Septic shock from pyogenic bacterial enteritis or bacteremia is ruled out by negative blood cultures. Soil-transmitted helminthic hyperinfection (Strongyloides stercoralis) is confirmed by endoscopic biopsy showing larval and adult worms.",
+  "case_prompt": "A 50-year-old Asian Indian gentleman is admitted to the hospital with a 1-week history of severe postural giddiness and persistent vomiting. He has a history of prolonged self-administration of oral corticosteroids (dexamethasone 0.5 to 1 mg daily) for nearly one year to treat a chronic rash in his inguinal area.\n\nOn physical examination at admission, he is markedly hypotensive and appears dehydrated. Cardiopulmonary and abdominal examinations are otherwise unremarkable.\n\nHe is initiated on intravenous fluid resuscitation. Baseline laboratory investigations, including complete blood count, renal function tests, and liver function panels, are all within normal reference limits. Serum cortisol measured at presentation is 22.06 nmol/L (0.8 mcg/dL), consistent with severe hypothalamo-pituitary-adrenal (HPA) axis suppression.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated secondary adrenal crisis (Addisonian crisis)",
+      "rule_out_reason": "The initial presumed diagnosis supported by chronic dexamethasone overuse, hypotension, vomiting, and suppressed morning cortisol, but although blood pressure responded to intravenous stress hydrocortisone, intractable vomiting persisted after 48 hours and the patient suffered rapid multiorgan failure, pointing to an underlying infectious process.",
+      "quote": "Serum cortisol was 22.06 nmol/L (0.8 mcg/dL), suggesting hypothalamo-pituitary-adrenal axis suppression. He was promptly placed on a stress dose of steroids (intravenous hydrocortisone 50 mg thrice daily). His blood pressure showed improvement. However, vomiting persisted even after 48 hours."
+    },
+    {
+      "candidate": "Septic shock from occult pyogenic bacteremia / Bacterial sepsis",
+      "rule_out_reason": "Considered due to the patient's acute decompensation into fatal multiorgan failure in an immunosuppressed state, but extensive sepsis workup including blood cultures was negative.",
+      "quote": "Workup for sepsis, including blood cultures, was negative. He succumbed to multiorgan dysfunction within 24 hours of intensive care treatment."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Strongyloidiasis (Soil-Transmitted Helminths)",
+      "rule_out_reason": "Confirmed when upper gastrointestinal endoscopy performed for refractory vomiting revealed yellowish-white pseudomembranous lesions throughout the esophagus, stomach, and duodenum, with histopathologic section of gastric biopsy demonstrating larval and adult forms of Strongyloides stercoralis.",
+      "quote": "The image shows the histopathological section from the gastric biopsy specimen, revealing larval and adult forms of Strongyloides stercoralis. Disseminated strongyloidiasis is a rare infectious complication seen in immunocompromised patients uniquely on chronic steroid therapy."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt strictly confined to admission vitals, chronic dexamethasone history, baseline labs, and cortisol level. Zero mention of Strongyloides, larvae, endoscopy, or biopsy. Quotes match article verbatim."
+}

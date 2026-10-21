@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5958277_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: An older adult from an urban area presenting with an isolated, indolent erythematous facial plaque developing one month after an Amazonian fishing expedition mimics diverse endemic fungal, mycobacterial, or neoplastic dermatoses; the diagnostic challenge is heightened by negative leishmanin skin testing and failure of antimonial therapy, indicative of anergic diffuse cutaneous leishmaniasis.\n2. Admission Breakpoint: Admission triage terminates immediately following the history and physical examination of the nasal plaque, prior to lesion aspiration, culture, and diagnostic skin biopsies.\n3. Differential Distinctions: Retroviral-associated opportunistic dermatoses and deep endemic fungal infections (paracoccidioidomycosis, sporotrichosis) share Amazonian exposures and plaque morphology, but are excluded by non-reactive HIV serology and demonstration of intracellular amastigotes rather than fungal budding yeasts.",
+  "case_prompt": "A 65-year-old male resident of Brasília, Federal District, Brazil, presented to the clinic with an erythematous plaque on his nose. The lesion had developed approximately one month prior, following a recreational fishing trip in the state of Amazonas, Brazil. On physical examination, an isolated, well-demarcated erythematous plaque was noted over the nasal dorsum. The patient reported no other systemic symptoms, fevers, or mucosal lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "HIV-Associated Opportunistic Cutaneous Infection / Kaposi Sarcoma",
+      "rule_out_reason": "Considered due to the atypical, non-healing facial plaque and concern for underlying cellular immunodeficiency leading to anergic cutaneous presentations; ruled out by non-reactive serologic testing.",
+      "quote": "HIV serology was negative."
+    },
+    {
+      "candidate": "Deep Fungal Granulomatous Infection (e.g., Paracoccidioidomycosis or Sporotrichosis)",
+      "rule_out_reason": "Endemic Amazonian exposure and chronic facial plaques strongly mimic deep fungal granulomas; excluded by microscopic biopsy demonstrating vacuolated histiocytes filled with characteristic protozoan amastigotes rather than fungal spores or yeasts.",
+      "quote": "Microscopic analysis of biopsy showed vacuolated macrophages filled with amastigote forms."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by positive skin biopsy smears, culture isolation on McNeal, Novy & Nicolle medium, and molecular ITS1 PCR-RFLP identifying Leishmania amazonensis.",
+      "quote": "smears from the skin biopsies were positive for Leishmania. Total DNA from isolated parasites in the culture was purified for molecular analysis using the ITS1 PCR amplification and restriction fragment length polymorphism (RFLP) procedures with the HaeIII restriction enzyme, which identified the species as L. (L.) amazonensis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission presentation stopping prior to aspirate and biopsy. Strict exclusion of pathogen names and treatment outcomes from case prompt."
+}

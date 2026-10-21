@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3137830_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Sellar and suprasellar mass with ring enhancement in an elderly male presenting with progressive headache and bitemporal/temporal visual field defect, closely mimicking a non-functioning pituitary macroadenoma, craniopharyngioma, or fungal abscess, in the complete absence of systemic febrile signs or pulmonary symptoms.\n2. Admission Breakpoint: Admission clinical evaluation stops following baseline pituitary hormone assays and contrast-enhanced brain MRI; right subfrontal osteoplastic craniotomy, intraoperative curettage of caseous material, histopathology, and PCR testing represent confirmatory investigation.\n3. Differential Distinctions: Pituitary macroadenoma typically demonstrates endocrine hypersecretion or panhypopituitarism and homogeneous enhancement rather than central hypointensity; pyogenic or fungal pituitary abscesses occur in immunocompromised hosts or present with systemic toxicity; pituitary tuberculoma demonstrates necrotizing granulomatous inflammation with Langhans giant cells and positive Mycobacterium tuberculosis PCR.",
+  "case_prompt": "A 68-year-old male presented with a holocranial headache of four months' duration, primarily located in the frontal region, accompanied by gradual diminution of vision in the left eye over the preceding two months.\n\nOn physical examination, the patient was conscious, oriented, and afebrile with normal vital signs. Neurological examination revealed left temporal hemianopia with visual acuity of 6/6. Cranial nerves were otherwise intact, and there were no motor or sensory deficits.\n\nInitial laboratory evaluation revealed normal biochemical and hematological profiles. Plain chest radiography showed prominent bronchovascular markings. An endocrine evaluation demonstrated a prolactin level of 8.6 ng/mL (reference range: 1–25), growth hormone (GH) of 1.8 ng/mL (reference range: 0–3), serum thyroxine (T4) of 7.6 mg/dL (reference range: 5–12), triiodothyronine (T3) of 2.5 nmol/L (reference range: 1.2–3.1), and thyroid-stimulating hormone (TSH) of 3.8 mIU/mL (reference range: 2–5).\n\nContrast-enhanced T1-weighted magnetic resonance imaging (MRI) of the brain revealed a ring-enhancing mass in the sella with central hypointensity and suprasellar extension. T2-weighted MRI showed a homogeneously hyperintense lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pituitary Macroadenoma",
+      "rule_out_reason": "Pituitary adenoma is the most common sellar/suprasellar mass in this age group but typically presents with endocrine dysfunction or solid contrast enhancement, whereas this patient had completely preserved pituitary hormone profiles and a cystic/ring-enhancing lesion with central hypointensity.",
+      "quote": "Endocrinal study revealed prolactin 8.6 ng / ml (normal range 1-25) and GH 1.8 ng / ml (normal range 0-3), T4 7.6mg/dl (range 5-12), T3 2.5 nmol/ L (1.2-3.1), TSH - 3.8 mI U/ml (2-5)."
+    },
+    {
+      "candidate": "Fungal Sellar Abscess / Granuloma",
+      "rule_out_reason": "Central nervous system fungal infection can produce thick-walled ring-enhancing sellar lesions, but fungal culture and staining of the curetted material isolated no fungal organisms.",
+      "quote": "No fungus was isolated."
+    },
+    {
+      "candidate": "Pyogenic Pituitary Abscess",
+      "rule_out_reason": "Bacterial abscess typically presents with acute febrile illness, elevated systemic inflammatory markers, and leukocytosis, none of which were present in this afebrile patient with normal hematology.",
+      "quote": "On examination, patient was conscious, oriented, afebrile, vitals were normal with left temporal hemianopia with visual acuity 6/6. Cranial nerves were normal with no motor or sensory deficits. Biochemical, hematological profile was normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Right subfrontal craniotomy revealed a thick-walled avascular suprasellar lesion containing caseous material; histopathology revealed lymphocytic infiltration with destruction of pituitary tissue, epithelioid cells, and Langhans giant cells, and PCR was positive for Mycobacterium tuberculosis.",
+      "quote": "The suprasellar lesion had thick wall, with caseous material inside; sella evacuated by ring curette. The lesion was avascular and postoperative period was uneventful... Histopathological examination revealed diffuse infiltration of lymphocyte with destruction of pituitary gland and multiple foci of epitheliod and langhanse giant cells... Polymerase chain reaction (PCR) for Myobacterium tuberculosis was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation restricted to admission triage and MRI findings prior to craniotomy. Zero leakage of pathogen or histological results in case prompt."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6918496_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 57-year-old female Venezuelan immigrant to Germany presents with chronic interstitial infiltrates and an exophytic endobronchial mass; an initial peripheral lung biopsy showed non-necrotizing granulomas misattributed to sarcoidosis, and corticosteroid therapy precipitated severe respiratory failure.\n2. Admission Breakpoint: Initial clinical evaluation, chest radiography, chest CT, and flexible bronchoscopy demonstrating the endobronchial mass, prior to VATS lung biopsy re-evaluation, fungal cultures, and send-out molecular testing.\n3. Differential Distinctions: Sarcoidosis features non-caseating granulomas responsive to steroids; histoplasmosis features small 2-4 um narrow-based budding intracellular yeasts; paracoccidioidomycosis features large multi-budded yeasts resembling a pilot's wheel and responds to amphotericin B and itraconazole.",
+  "case_prompt": "A 57-year-old woman was hospitalized with progressive dyspnea and cough. She had emigrated from Venezuela to Germany one year prior to presentation. Vital signs on admission were notable for tachypnea without documented fever.\n\nChest radiography demonstrated bilateral interstitial infiltrates. High-resolution chest computed tomography (CT) showed diffuse interstitial changes. Flexible bronchoscopy was performed to investigate the airway, which revealed a black exophytic mass migrating through and protruding into the left main bronchus wall.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Sarcoidosis",
+      "rule_out_reason": "Initially diagnosed based on non-necrotizing interstitial granulomas and elevated serum IL-2 receptor; ruled out when high-dose corticosteroid therapy failed to improve imaging and instead precipitated acute respiratory failure, with re-biopsy revealing fungal yeast structures.",
+      "quote": "Histological analysis of the peripheral lung biopsy by local pathology showed large interstitial granulomas, giant cells, and no necrosis or signs of vasculitis, compatible with sarcoidosis."
+    },
+    {
+      "candidate": "Histoplasmosis",
+      "rule_out_reason": "Initial histopathologic stains showed small intracellular yeasts suggestive of Histoplasma; however, complement fixation was negative, Histoplasma-specific qPCR was negative, and deeper histological sections revealed multi-budded yeasts.",
+      "quote": "While initial stains showed small yeasts more in line with Histoplasmosis, more in depth examination of the samples showed multi-budded yeasts (Figure 1d) more closely resembling Paracoccidioides, albeit not matching the textbook description of a multipolar 'pilot's wheel' configuration."
+    },
+    {
+      "candidate": "Endobronchial Neoplasm / Carcinoid",
+      "rule_out_reason": "A black exophytic mass invading the left main bronchus raised concern for malignant or neuroendocrine airway neoplasm; ruled out by histology demonstrating granulomatous inflammatory changes with fungal elements and complete resolution on antifungal therapy.",
+      "quote": "Flexible bronchoscopy revealed a black exophytic mass migrating through the left main bronchus wall."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Broad-range fungal PCR amplicons sequenced from formalin-fixed lung tissue demonstrated 99.7% pairwise identity with Paracoccidioides brasiliensis, confirmed by specific immunodiffusion antibodies and identification of multi-budded yeasts.",
+      "quote": "Sequencing of both broad range PCR amplicons showed 99.7% pairwise identity with sequences of Paracoccidioides brasiliensis as the causative pathogen."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative stops at initial CT and bronchoscopy visualization of endobronchial mass. Re-biopsy, fungal serology, and PCR sequencing properly sequestered in diagnostic reasoning."
+}

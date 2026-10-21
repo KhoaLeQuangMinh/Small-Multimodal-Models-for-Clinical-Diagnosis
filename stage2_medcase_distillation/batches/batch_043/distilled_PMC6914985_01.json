@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6914985_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 41-year-old HIV-infected male with an ostensibly high CD4 count (>1,200 cells/µL) and undetectable viral load develops esophageal thrush and an asymptomatic thick-walled cavitary lung lesion. The clinical tension lies in recognizing localized/iatrogenic steroid-induced immunosuppression (cobicistat-boosted fluticasone interaction) precipitating reactivation of a remote latent infection treated over two decades ago.\n2. Admission Breakpoint: Outpatient evaluation and admission to the inpatient unit following chest CT demonstrating a new 19 x 14 mm thick-walled right upper lobe cavitary nodule and leukocytosis with monocytosis, prior to bronchoalveolar lavage, fungal serologies, and CT-guided lung biopsy.\n3. Differential Distinctions: Endemic and opportunistic fungal infections (Aspergillus, Blastomyces, Histoplasma, Cryptococcus) frequently produce subacute cavitary pulmonary lesions in immunocompromised hosts with oral/esophageal thrush, but fungal serologies and cultures were negative. Cytomegalovirus (CMV) pneumonitis can present with nodular/infiltrative changes during immunosuppression, but serum CMV PCR was negative. Cavitary right upper lobe disease in a host with travel to the Philippines and Mexico and remote latent infection strongly pointed to mycobacterial reactivation, verified by percutaneous biopsy culture.",
+  "case_prompt": "A 41-year-old male with human immunodeficiency virus (HIV) infection on antiretroviral therapy (elvitegravir, cobicistat, emtricitabine, and tenofovir alafenamide) presented for follow-up of dysphagia and an incidental abnormal chest radiograph. His last CD4+ T-cell count was 1,271 cells/µL with an undetectable viral load. Over the preceding two weeks, he had developed hiccups, progressive odynophagia, white pharyngeal plaques, and an unintentional 5-pound weight loss. In addition, he reported using an over-the-counter fluticasone nasal spray 2 to 3 times daily for at least two weeks. His past medical history was notable for essential hypertension, dyslipidemia, a remote history of a reactive latent mycobacterial screening test treated with monotherapy 21 years prior, and a normal chest radiograph within the past year. He had a 17 pack-year smoking history and had traveled to the Philippines and Mexico during the previous year. On physical examination, he had normal vital signs, no respiratory distress, and mild posterior pharyngeal and nasal erythema. Laboratory testing revealed a white blood cell count of 18,000/µL with monocyte predominance. Chest radiography demonstrated a new 2-cm right upper lobe infiltrate with nodular characteristics, and subsequent chest computed tomography (CT) revealed a new thick-walled right upper lobe cavitary nodule measuring 19 x 14 mm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic / endemic fungal infection (Aspergillosis, Blastomycosis, Histoplasmosis, Cryptococcosis)",
+      "rule_out_reason": "Considered given the presence of esophageal candidiasis indicating immunosuppression, travel history, and a thick-walled cavitary nodule; however, specific fungal serologies and bronchoalveolar lavage cultures were negative.",
+      "quote": "Serology for Aspergillus, Blastomyces, Histoplasma, and Cryptococcus were negative."
+    },
+    {
+      "candidate": "Cytomegalovirus (CMV) pneumonitis",
+      "rule_out_reason": "Considered due to evidence of systemic corticosteroid excess and opportunistic candidiasis; however, targeted serum polymerase chain reaction was negative.",
+      "quote": "Polymerase chain reaction in serum for cytomegalovirus was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The detection of a solitary thick-walled apical cavitary nodule in a patient with iatrogenic Cushingoid immunosuppression and travel to endemic regions, with initial bronchoalveolar lavage negative, was definitively resolved by CT-guided percutaneous core needle biopsy culture yielding Mycobacterium tuberculosis.",
+      "quote": "A CT-guided lung biopsy of the nodular lesion was performed, and the AFB culture yielded Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at chest CT and inpatient admission before invasive bronchoscopy and percutaneous biopsy. No disease or pathogen names in case prompt. Verbatim quotes match article."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3992755_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A previously healthy young adult presents with subacute meningoencephalitis, status epilepticus, and acute deep cerebral venous sinus thrombosis causing hemorrhagic thalamic infarction. The tension lies between autoimmune/thrombophilic sagittal/deep sinus thrombosis, cerebral toxoplasmosis, and infectious granulomatous thrombophlebitis.\n2. Admission Breakpoint: Admission presentation ends after neurological exam (GCS 7, papilledema, left hemiparesis), negative routine serologies (HIV, hepatitis B, ANA, RF, homocysteine), chest radiograph showing pulmonary and hilar opacities, and neuroimaging (CT/MRI/MRV) identifying deep venous sinus occlusion with multiple parenchymal ring-enhancing lesions.\n3. Differential Distinctions: Autoimmune and thrombophilic vasculopathies are excluded by normal serologies and homocysteine. Toxoplasmosis is considered based on ring-enhancing lesions but ruled out by negative serology. The diagnosis is confirmed by direct demonstration of acid-fast bacilli on basal exudate smears.",
+  "case_prompt": "A previously healthy 23-year-old man presents with a 4-day history of fever, occasional headache, and vomiting. Two days prior to hospital admission, he suffered a generalized tonic-clonic seizure followed by altered sensorium and left-sided weakness.\n\nAt admission to the neurological service, he is afebrile and does not open his eyes to painful stimuli. Neurological examination reveals a Glasgow Coma Scale (GCS) of 7/15 (E1V2M4) and left hemiparesis. Both pupils are asymmetric and unreactive to light. Extraocular movements are restricted, and funduscopy reveals blurring of optic disc margins bilaterally. Deep tendon reflexes are brisk, with an extensor plantar response on the left and a flexor response on the right.\n\nRoutine hematological and biochemical parameters are normal. Serological tests for HIV, hepatitis B surface antigen (HBsAg), homocysteine, rheumatoid factor, and antinuclear antibodies are negative. An electrocardiogram shows T-wave depression in leads V1 through V4. A chest radiograph reveals inhomogeneous opacities in the left mid and lower zones with bilateral hilar prominence.\n\nCranial computed tomography (CT) highlights a hemorrhagic lesion in the right thalamus and right medial temporal lobe along with multiple cerebral and cerebellar ring-enhancing lesions. Brain MRI reveals heterogeneous mixed signal intensity changes in the right thalamus, caudate, and medial temporal region indicative of hemorrhagic infarction with extensive perilesional edema extending into the internal and external capsules and corona radiata, blooming on gradient sequences. Multiple rounded lesions that are isointense to hyperintense on T1WI and predominantly hypointense on T2WI are identified in the right cerebral peduncle, left pons, bilateral parasagittal basifrontal regions, and left posteromedial parietal lobe. Fluid-attenuated inversion recovery (FLAIR) images show diffuse sulcal hyperintensity, and ventricular dilation indicates hydrocephalus. MR venography demonstrates non-visualization of the bilateral internal cerebral veins, the vein of Rosenthal, the vein of Galen, the straight sinus, and the left transverse sinus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral toxoplasmosis",
+      "rule_out_reason": "Multiple intracranial ring-enhancing lesions with marked vasogenic edema raised strong clinical consideration for cerebral toxoplasmosis; however, postmortem serological assays and CSF antibodies were negative for Toxoplasma gondii, and basal exudate smears demonstrated acid-fast bacilli.",
+      "quote": "Possibility of cerebral toxoplasmosis was also considered in view of multiple ring enhancing lesions."
+    },
+    {
+      "candidate": "Systemic prothrombotic vasculopathy / autoimmune venous thrombosis",
+      "rule_out_reason": "Severe deep cerebral venous thrombosis in a healthy young man warranted investigation for systemic thrombophilic or autoimmune vasculitic conditions, but extensive autoimmune and biochemical serologies were negative.",
+      "quote": "The serological tests for HIV, HBsAg, homocysteine, rheumatoid factor and antinuclear antibody were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microbiological smear of the thick basal brain exudates revealed acid-fast bacilli by Ziehl-Neelsen stain, establishing tuberculous thrombophlebitis as the underlying etiology of the deep venous infarction.",
+      "quote": "Smear from the basal exudates of the brain revealed acid fast organisms by Ziehl-Neelsen stain."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of cerebral tubercular thrombophlebitis presenting as deep venous infarction. Admission presentation strictly stops before Ziehl-Neelsen staining, antemortem/postmortem pathogen identification, and autopsy correlation."
+}

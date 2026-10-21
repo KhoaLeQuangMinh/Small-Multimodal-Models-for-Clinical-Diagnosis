@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4340331_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 38-year-old Guatemalan soldier presents with recurrent fevers and fatigue after returning from a 9-month UN deployment in Africa. While local vector programs diagnosed endemic P. vivax and a rapid dengue assay was positive, the atypical parasite morphology and recurrence after chloroquine highlighted a diagnostic dilemma: distinguishing an imported, non-indigenous Plasmodium ovale infection delayed by chemoprophylaxis from endemic arboviral and malaria species.\n2. Admission Breakpoint: Admission triage terminates after history, travel epidemiology, complete blood count showing thrombocytopenia and mild anemia, positive rapid dengue assay, and initial blood film morphology raising doubts. Confirmatory genus/species nested PCR, real-time PCR, and CDC reference sequencing represent the confirmatory stage.\n3. Differential Distinctions: Dengue fever was considered given acute febrile illness, thrombocytopenia, and a positive rapid dengue test in an endemic zone, but recurrent cyclical fevers and intraerythrocytic parasites pointed to malaria. Autochthonous P. vivax was the prevailing initial microscopic presumption, but morphology was anomalous and molecular testing refuted vivax.",
+  "case_prompt": "A 38-year-old male Guatemalan soldier presented to a military medical center with recurrent fever and fatigue. Three months earlier, he had returned from a 9-month military deployment in Africa (Democratic Republic of the Congo, Uganda, and Kenya), where he slept under an untreated bed net and took weekly mefloquine chemoprophylaxis with intermittent missed doses. Post-deployment screening upon return was reported negative. Two months after returning, he traveled to coastal and eastern regions of Guatemala, developed fever and fatigue, and received empirical chloroquine injections. Three weeks later, fever and fatigue recurred. On admission, a complete blood count revealed thrombocytopenia (platelet count 71,000/\u00b5L) and anemia (hemoglobin 12.0 g/dL). A rapid flaviviral diagnostic assay was positive for current or recent infection, while other routine laboratory investigations were within reference values. Initial thin blood film microscopy revealed intraerythrocytic parasites, but the hospital microbiologist raised concerns regarding anomalous morphological features.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue fever / acute arboviral infection",
+      "rule_out_reason": "Acute fever, thrombocytopenia, coastal travel in Guatemala, and a positive rapid dengue diagnostic assay suggested dengue, but the patient's recurrent cyclical fevers and persistent intraerythrocytic parasites confirmed a protozoan etiology.",
+      "quote": "A rapid dengue diagnostic assay showed a current or recent infection."
+    },
+    {
+      "candidate": "Autochthonous Plasmodium vivax / Plasmodium falciparum malaria",
+      "rule_out_reason": "Endemic Central American malaria species were presumed by regional microscopy, but the hospital microbiologist recognized atypical morphological features, and molecular assays ruled out vivax and falciparum.",
+      "quote": "Malaria microscopy conducted at the Jutiapa Malaria Vector Control Program erroneously diagnosed a P. vivax infection... A thin blood film identified P. vivax, although concerns about the morphology of some of the observed parasites were raised by the hospital microbiologist."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Plasmodium genus-specific nested PCR and real-time PCR performed on whole blood established a P. ovale mono-infection, and BLAST sequence analysis confirmed the classic subtype P. ovale curtisi, verified by the CDC Malaria Branch.",
+      "quote": "A P. ovale mono-infection was identified on both the blood film and whole blood of the patient using a Plasmodium genus-specific nested PCR (Figure 1) and a SYBR Green-based quantitative real-time PCR... Sequence analysis was conducted to discriminate between the classic or variant P. ovale. Basic local alignment search tool (BLAST) analysis revealed 95% similarity with P. ovale ssrRNA gene. The strain was classified as the classic type, P. ovale curtisi, based on its nucleotide polymorphisms. The Genetics and Immunology Laboratory, Malaria Branch at Centers for Disease Control (Atlanta, US) confirmed these findings."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly truncated prior to molecular testing and CDC confirmation. Zero pathogen or species spoilers in case prompt. Verbatim quotes matched."
+}

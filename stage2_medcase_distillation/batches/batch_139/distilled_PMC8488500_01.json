@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8488500_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 45-year-old woman presents with worsening left pelvic pain, inability to weight-bear, and large enlarging masses in the left iliac fossa and gluteal region. Computed tomography reveals marked osteolytic destruction of the left iliac wing and sacroiliac joint by a large multiloculated cystic lesion. Such extensive bony destruction strongly mimics primary pelvic bone malignancies (e.g., chondrosarcoma, Ewing sarcoma) or metastatic carcinoma.\n2. Admission Breakpoint: Clinical evaluation concludes after physical exam (pelvic and gluteal masses), unremarkable serum CA125, and repeat pelvic CT demonstrating extensive lytic bony destruction and multicystic muscular extension, immediately prior to surgical exploration, scolicidal debridement, and histological examination.\n3. Differential Distinctions: Primary pelvic bone malignancy (such as chondrosarcoma or osteosarcoma) presents with destructive lytic pelvic lesions, but CT imaging demonstrates multiloculated cystic architecture with internal fluid attenuations rather than a malignant osteoid matrix. Ovarian/gynecologic neoplasms are excluded by normal serum CA125 and imaging showing an extraperitoneal musculoskeletal origin involving the iliac wing and gluteus muscle.",
+  "case_prompt": "A 45-year-old woman with no underlying medical comorbidities presented with progressively worsening left-sided pelvic pain, especially when walking, which had become severe enough to impede her ability to weight-bear. She reported that an initial left pelvic mass known for several years had grown substantially, and she had newly noted a second enlarging mass over the left posterior gluteal area. Physical examination revealed a 10 x 14 cm fixed, nontender, firm mass in the left iliac fossa, along with a separate 5 x 5 cm mass in the left superior gluteal region. Laboratory workup, including serum CA125, was unremarkable. Computed tomography (CT) of the abdomen and pelvis demonstrated a large thick-walled multicystic lesion in the left lower pelvis extending posteriorly into the gluteus muscle, accompanied by significant lytic change within the left iliac bone resulting in extensive bony destruction of the left iliac wing and involvement of the sacroiliac joint.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary pelvic bone malignancy / Chondrosarcoma / Osteosarcoma",
+      "rule_out_reason": "Extensive osteolytic destruction of the iliac wing, sacroiliac joint involvement, and large firm pelvic/gluteal masses in a middle-aged adult strongly suggested a primary malignant bone neoplasm; however, CT imaging showed a multiloculated thick-walled cystic structure rather than a malignant osteoid or chondroid tumor matrix.",
+      "quote": "Imaging also revealed significant lytic change within the left iliac bone resulting in extensive bony destruction of the left iliac wing and involvement of the sacroiliac joint"
+    },
+    {
+      "candidate": "Ovarian / Gynecologic cystic neoplasm",
+      "rule_out_reason": "Given her chronic pelvic pain and referral from gynecology for a pelvic mass, an ovarian cystic tumor was considered; however, CA125 was normal and cross-sectional imaging confirmed extraperitoneal musculoskeletal and osseous origin rather than an adnexal mass.",
+      "quote": "Laboratory workup, including CA125, was unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical exploration of the extraperitoneal lesion revealed pathognomonic thick hydatid sand and multiple daughter cysts, and histopathological analysis confirmed hydatid disease of the left pelvic bone and soft tissue, managed successfully with scolicidal irrigation and albendazole.",
+      "quote": "Operative findings revealed a large extraperitoneal multicystic lesion containing thick hydatid sand and multiple daughter cysts."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

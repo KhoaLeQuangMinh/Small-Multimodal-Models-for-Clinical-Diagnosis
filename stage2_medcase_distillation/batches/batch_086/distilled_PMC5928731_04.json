@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5928731_04",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 22-year-old male presents with acute fever, myalgias, nausea, rhinorrhea, and sore throat, leading to an initial emergency diagnosis of an uncomplicated upper respiratory viral syndrome. In an endemic tropical setting, these constitutional and respiratory symptoms mask an underlying dual infection comprising both dengue virus and acute leptospirosis.\n2. Admission Breakpoint: The breakpoint occurs at initial emergency department triage following vital sign measurement and clinical examination, strictly prior to discharge under a presumptive viral diagnosis and subsequent acute/convalescent serological and PCR evaluations.\n3. Differential Distinctions: Common viral upper respiratory infections lack secondary seroconversion to spirochetal antigens and do not carry risks of severe tropical organ dysfunction. Dengue monoinfection presents with acute febrile illness, myalgias, and positive anti-dengue IgM, but does not induce high-titer microscopic agglutination against Leptospira.",
+  "case_prompt": "A 22-year-old male presented to the emergency department on March 24 with a 3-day history of acute fevers, malaise, generalized myalgias, nausea, rhinorrhea, sore throat, and persistent headache.\n\nOn physical examination, he was febrile and visibly fatigued. He was underweight, with a body mass index of 18.1 kg/m². Heart rate was elevated, demonstrating tachycardia, while blood pressure was preserved. Examination of the oropharynx revealed mild pharyngeal erythema without exudates. Pulmonary, cardiovascular, and abdominal examinations were otherwise unremarkable, with no focal tenderness, jaundice, or rash.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uncomplicated acute viral syndrome or upper respiratory infection",
+      "rule_out_reason": "Considered primary diagnosis at ED triage due to prominent rhinorrhea, sore throat, fever, and myalgia, leading to initial discharge on supportive therapy; however, convalescent serology revealed life-threatening tropical pathogens.",
+      "quote": "He was given acetaminophen and discharged from the ED with a diagnosis of viral syndrome."
+    },
+    {
+      "candidate": "Isolated dengue virus infection",
+      "rule_out_reason": "Considered given endemicity and confirmed by positive convalescent anti-dengue IgM antibodies, but this represented a true co-infection rather than an isolated viral etiology, as concurrent high-titer spirochetal seroconversion was demonstrated.",
+      "quote": "Convalescent serum collected 18 days after illness onset was positive by MAT with a reciprocal titer of 800 against serogroups Bataviae (serovar Bataviae) and Canicola (serovar Canicola) and was also positive for detection of anti-dengue virus IgM antibodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Although day 2 molecular PCR and MAT were negative, convalescent serum obtained 18 days post-onset demonstrated a reciprocal MAT titer of 800 against serogroups Bataviae (serovar Bataviae) and Canicola (serovar Canicola) along with positive anti-dengue IgM, establishing acute leptospirosis co-infection in an endemic environment.",
+      "quote": "Serum collected on day 2 of illness was negative by PCR and MAT. Convalescent serum collected 18 days after illness onset was positive by MAT with a reciprocal titer of 800 against serogroups Bataviae (serovar Bataviae) and Canicola (serovar Canicola) and was also positive for detection of anti-dengue virus IgM antibodies."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case highlights the clinical challenge of dual tropical coinfections, where acute leptospirosis presenting with mild flu-like symptoms coincided with dengue virus infection in Puerto Rico, evading initial diagnosis."
+}

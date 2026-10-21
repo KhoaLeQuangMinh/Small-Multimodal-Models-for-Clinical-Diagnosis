@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7747827_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 42-year-old man from an endemic region presenting with non-pruritic nodular cutaneo-mucosal eruptions on the face, hands, and abdomen months after treated visceral leishmaniasis, challenging clinicians to differentiate post-kala-azar dermal leishmaniasis (PKDL) from lepromatous leprosy or cutaneous sarcoidosis.\n2. Admission Breakpoint: The breakpoint occurs in the outpatient department following physical examination showing intact cutaneous sensation and absent hepatosplenomegaly, prior to rK39 strip testing, skin slit smears, and qPCR analysis.\n3. Differential Distinctions: Lepromatous leprosy (Hansen's disease) is the most critical mimicker of PKDL in Bihar, presenting with multiple facial and acral nodules, but is distinguished clinically by intact thermal and tactile sensation across lesions; systemic causes of granulomatous disease were further ruled out during uveitis workup (Mantoux, VDRL, ANA negative), while qPCR and demonstration of Leishman-Donovan bodies established PKDL.",
+  "case_prompt": "A 42-year-old man from Chhapra, Bihar, India, presents to the outpatient clinic with multiple non-pruritic nodular skin eruptions across his face, hands, and abdomen that have developed over several weeks. Eight months earlier, he was diagnosed with and treated for a prolonged systemic febrile illness accompanied by hepatosplenomegaly.\n\nOn physical examination, the patient is afebrile and non-anemic. Dermatologic examination reveals multiple firm, non-tender, non-itchy nodular eruptions distributed across the facial skin, bilateral hands, and abdominal wall. Detailed neurological testing reveals completely intact light touch and pain sensation across all skin lesions. Palpation of the abdomen reveals no hepatomegaly or splenomegaly. Peripheral nerve trunks are not palpably thickened. Triage diagnostic investigations are initiated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lepromatous Leprosy (Hansen's Disease)",
+      "rule_out_reason": "Disseminated facial and acral nodular skin lesions in Bihar classically mimic lepromatous leprosy, but sensory perception over all cutaneous lesions was completely preserved, ruling out mycobacterial neural involvement.",
+      "quote": "skin lesions with intact sensitivity."
+    },
+    {
+      "candidate": "Systemic Granulomatous / Autoimmune Diseases (Syphilis, Tuberculosis, Sarcoidosis, Systemic Lupus Erythematosus)",
+      "rule_out_reason": "Granulomatous cutaneo-ocular diseases cause nodular eruptions and anterior uveitis, but routine serological and autoimmune screening (Mantoux test, VDRL, ANA, chest radiography) were non-reactive.",
+      "quote": "Routine laboratory examinations, including total blood cell count, differential white blood cell count, erythrocyte sedimentation rate, chest radiography, Mantoux test, venereal disease research laboratory test, and antinuclear antibody test were performed to exclude other common causes of uveitis. The results were insignificant to establish any systemic association for uveitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Post-Kala-Azar Dermal Leishmaniasis (PKDL)",
+      "rule_out_reason": "Definitive diagnosis was established by demonstration of Leishman-Donovan bodies on skin smear microscopy and high parasite load on qPCR, confirming PKDL following visceral leishmaniasis.",
+      "quote": "His skin smear report was positive for Leishman-donovan bodies, and the parasite load for qPCR was 6723 parasites/microg of DNA. Hence, the patient was diagnosed with PKDL."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly stops before rK39, microscopy, and qPCR. Demonstrates clear distinction between PKDL and lepromatous leprosy using physical examination findings."
+}

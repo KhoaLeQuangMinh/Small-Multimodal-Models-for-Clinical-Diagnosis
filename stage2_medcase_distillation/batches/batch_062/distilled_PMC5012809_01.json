@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5012809_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 60-year-old male with pre-existing pulmonary fibrosis presents with new-onset generalized seizures and occipital headaches. Brain imaging (CT and MRI) reveals a calcified, hemorrhagic dural-associated frontal mass with prominent perilesional edema and mass effect, closely mimicking a central nervous system neoplasm such as a meningioma, rather than an infectious lesion.\n2. Admission Breakpoint: The admission evaluation concludes following initial neuroimaging (brain CT and MRI) and presentation of focal neurological deficits, prior to neurosurgical tumor resection, histopathological examination of the operative specimen, and thoraco-abdominal staging scans.\n3. Differential Distinctions: An intracranial meningioma or primary brain tumor typically presents as a solitary extra-axial or peripheral calcified mass with surrounding vasogenic edema in older adults. However, a cerebral tuberculoma can present identically as a calcified, pseudo-tumoral space-occupying lesion with mass effect and intralesional hemorrhage, which is definitively distinguished only by surgical histopathology revealing caseating granulomatous inflammation.",
+  "case_prompt": "A 60-year-old male with a significant past medical history of diffuse bilateral infiltrative pulmonary disease at the stage of fibrosis presented after experiencing two generalized tonic-clonic seizures accompanied by persistent occipital headaches. During clinical observation, he developed recurrent seizure episodes associated with progressive motor weakness and heaviness involving the right upper extremity.\n\nNon-contrast computed tomography (CT) of the brain revealed a calcified left frontal lesion with marked surrounding vasogenic edema, concerning for an intracranial mass. Magnetic resonance imaging (MRI) of the brain confirmed a left posterior peripheral frontal mass demonstrating intralesional hemorrhage, substantial surrounding edema, and local mass effect exerting compression on the ipsilateral lateral ventricle, radiologically concerning for an intracranial neoplasm such as a meningioma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intracranial Meningioma",
+      "rule_out_reason": "Preoperative brain MRI demonstrated a peripheral frontal mass with intralesional hemorrhage and mass effect, radiologically mimicking a meningioma, but surgical excision and histopathology revealed granulomatous inflammation with caseous necrosis rather than meningothelial neoplasia.",
+      "quote": "Brain MRI showed a left posterior peripheral frontal meningioma with intralesional bleeding and significant edema around it with mass effect on the ipsilateral lateral ventricle."
+    },
+    {
+      "candidate": "Primary Intracranial Neoplasm / Brain Tumor",
+      "rule_out_reason": "Initial cranial CT suggested a calcified frontal tumor with surrounding edema, but histopathology following surgical resection excluded malignancy, identifying an infectious pseudo-tumor.",
+      "quote": "CT scan showed a left frontal tumor, calcified lesion with edema around it."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neurosurgical resection and pathological anatomical analysis demonstrated a cerebromeningeal granuloma with caseous necrosis presenting as a pseudo-tumor (tuberculoma), establishing the definitive diagnosis.",
+      "quote": "Pathological anatomical examination of the surgical specimen found a cerebromeningeal Granuloma with caseous necrosis in its pseudo tumor presentation (tuberculoma)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following strict Stanford MedCaseReasoning CPC guidelines. The case prompt ends strictly prior to surgical exploration and histopathology. Zero mentions of pathogen or tuberculosis. Exact quotes verified against source text."
+}

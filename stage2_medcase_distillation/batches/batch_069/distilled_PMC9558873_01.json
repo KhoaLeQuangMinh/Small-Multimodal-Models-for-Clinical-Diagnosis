@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9558873_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 61-year-old diabetic woman presenting with classic acute calculous cholecystitis and septic shock following a fatty meal, universally assumed to represent an acute enteric pyogenic infection, who actually suffered from extrapulmonary tuberculous cholecystitis with gallbladder empyema.\n2. Admission Breakpoint: The presentation ends after emergency department triage, physical exam documenting septic shock and a tender RUQ mass, admission labs showing profound leukocytosis with 98% neutrophils and elevated lactate, and emergency abdominal CT showing an obstructed, thickened gallbladder, prior to emergency open cholecystectomy, operative cultures, and histopathology.\n3. Differential Distinctions: Acute pyogenic/enteric bacterial cholecystitis was the primary admission diagnosis but was ruled out when all blood, bile, and purulent fluid cultures were sterile; gallbladder carcinoma was suspected due to a firm mass and severe wall thickening but ruled out by histopathology; the diagnostic pivot was histopathology of the resected gallbladder demonstrating caseous necrosis with acid-fast bacilli and positive PCR for Mycobacterium tuberculosis.",
+  "case_prompt": "A 61-year-old female from San Luis Potosí, Mexico, with a history of type 2 diabetes mellitus, hypertension, and a 2-year history of known cholelithiasis presented to the emergency department with a 2-day history of moderate-to-severe colicky right upper quadrant (RUQ) abdominal pain. The pain began one hour after eating a large, fatty breakfast, radiated to the mid-back and right shoulder, and was associated with nausea, vomiting, and food intolerance. She had experienced similar, milder self-limited episodes in the past. On physical examination, she appeared toxic, diaphoretic, and dehydrated with unstable vital signs indicating septic shock: body temperature was 38.1 °C, heart rate 127 beats/min, blood pressure 84/52 mmHg, respiratory rate 20 breaths/min, and oxygen saturation 92% on ambient air. Abdominal examination revealed tenderness in the epigastrium and an exquisitely tender, firm, palpable mass in the right upper quadrant. Laboratory evaluation demonstrated marked leukocytosis with a white blood cell count of 15,670/μL comprising 15,400/μL (98.0%) neutrophils and 235/μL (1.5%) lymphocytes, platelets 287,000/μL, blood lactate 2.3 mmol/L, and C-reactive protein 305 mg/L. Total bilirubin was 1.09 mg/dL (conjugated 0.45 mg/dL, unconjugated 0.64 mg/dL), serum creatinine 0.89 mg/dL, and urea 53.6 mg/dL. An emergency abdominal computed tomography (CT) scan revealed a markedly enlarged gallbladder with prominent circumferential wall thickening and a gallstone obstructing the gallbladder neck.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic / Enteric Bacterial Cholecystitis",
+      "rule_out_reason": "Considered the primary clinical diagnosis given postprandial RUQ colic, profound neutrophilic leukocytosis, and septic shock, but excluded when all preoperative blood cultures and intraoperative bile and purulent fluid cultures remained sterile.",
+      "quote": "All blood and fluid cultures and Gram-stain yield negative."
+    },
+    {
+      "candidate": "Gallbladder Carcinoma",
+      "rule_out_reason": "Suspected intraoperatively and on gross pathological inspection due to an enlarged gallbladder with a firm mass, extensive wall thickening (4–10 mm), and dense duodenal-omental adhesions, but excluded by histopathology showing necrotizing granulomas rather than malignant neoplasia.",
+      "quote": "The presence of a gallstone of 5.5 x 3 x 3 cm, a wall thickness of 4-10 mm, and a nodular cheesy-looking lesion of 9 mm were noted. The reported histopathologic diagnosis was AC with areas of caseous necrosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological analysis of the resected gallbladder revealed caseous necrosis with acid-fast bacilli, confirmed definitively as Mycobacterium tuberculosis by polymerase chain reaction.",
+      "quote": "Routine staining was performed and showed intracellular acid-fast bacilli (AFB). (Figure 2) The gallbladder specimen was sent for molecular testing, where M. tuberculosis was identified by polymerase chain reaction. A diagnosis of AC complicated with gallbladder empyema due to M. tuberculosis was performed and treatment was adjusted."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Exemplary case distillation. The admission prompt conveys the urgent clinical emergency of septic shock and calculous cholecystitis while stopping right at the operating room door, reserving the surprising surgical histology and PCR findings for the diagnostic reasoning."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8723866_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 20-year-old agricultural worker in Morocco presents with a slowly expanding, ulcerated, infiltrated erythematous plaque covering the entire nasal tip and dorsum that failed antibacterial therapy. The clinical appearance closely mimics cutaneous sarcoidosis (lupus pernio) or destructive mucocutaneous fungal/mycobacterial infections, compounded by an initial inconclusive private biopsy showing non-caseating granulomatous inflammation without visible organisms.\n2. Admission Breakpoint: Presentation to the national reference institute documenting symptom chronicity, agricultural exposure in rural Taounate, physical examination of the nasal plaque, lack of response to antibiotics, nasal radiography demonstrating intact nasal bones and normal nasal mucosa, immediately prior to reference laboratory skin scraping/smear and PCR-RFLP analysis.\n3. Differential Distinctions: Bacterial cellulitis/pyoderma was initially suspected and treated with empiric oral antibiotics, but failed to elicit any improvement. Cutaneous sarcoidosis (lupus pernio) was strongly considered based on the chronic violaceous indurated nasal swelling and an initial histopathological report from a private center demonstrating mononuclear and epithelioid cell infiltration in a vaguely granulomatous pattern without necrosis; however, formal diagnostic histological criteria for sarcoidosis were not fulfilled. Mucocutaneous leishmaniasis with mucosal/cartilaginous destruction was clinically considered, but ruled out by normal nasal radiographs showing absence of bone lysis and intact mucosal linings. Cutaneous leishmaniasis was established on diagnostic skin smears revealing intracellular amastigotes within macrophages, identified by ITS1 PCR-RFLP as Leishmania tropica, followed by complete healing with meglumine antimonate.",
+  "case_prompt": "A 20-year-old male agricultural worker presented with a persistent, disfiguring cutaneous lesion on his nose. The patient had no prior significant medical history. He resided between Taounate and Meknes provinces in Morocco, and regularly engaged in agricultural fieldwork in the rural sector of Ghafsai within Taounate province.\n\nThe lesion had begun five months earlier as a small localized papule on the nose. Over the subsequent four months, it had steadily enlarged to engulf the entire nasal lobule and lower dorsum. He had received a course of oral antibiotics prescribed by a primary care physician without clinical improvement. On referral, an initial punch tissue sampling performed at a private facility had shown an inflammatory infiltrate composed of mononuclear and epithelioid cells in a vaguely granulomatous pattern without caseous necrosis, without definitive evidence of a specific granulomatous disease or visible micro-organisms.\n\nOn clinical examination, the patient had an extensive, ulcerative, infiltrated, and poorly demarcated erythematous plaque involving the entire lobule of the nose. Nasal plain radiography demonstrated preserved architecture of the nasal bones with no cortical lysis or erosion, and direct inspection confirmed that the underlying nasal respiratory mucosa was intact and undamaged.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Cellulitis / Pyoderma",
+      "rule_out_reason": "Initially managed empirically with systemic antibacterial therapy in primary care, but excluded after the extensive nasal plaque failed to improve and continued to progress over several months.",
+      "quote": "In front of all these clinical elements, the patient had received antibiotic treatment without improvement."
+    },
+    {
+      "candidate": "Cutaneous Sarcoidosis (Lupus Pernio)",
+      "rule_out_reason": "Strongly considered given the characteristic anatomical location (nasal plaque) and an initial private biopsy showing epithelioid and mononuclear cells with a vaguely granulomatous arrangement, but ruled out because histopathology lacked well-formed sarcoidal non-caseating granulomas and failed to meet diagnostic criteria.",
+      "quote": "However, these same results showed the absence of a formal argument for sarcoidosis as well as the absence of an obvious Leishmania body."
+    },
+    {
+      "candidate": "Mucocutaneous Leishmaniasis with Deep Structural Invasion",
+      "rule_out_reason": "Suspected on clinical examination due to the extensive infiltrating mid-facial lesion, but excluded by radiographic studies showing completely preserved nasal bones without osseous lysis and intact underlying mucosal surfaces.",
+      "quote": "As for the X-ray results, no lysis of the specific bones of the nose was detected and no damage to the underlying mucosa was observed (Figure 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cutaneous Leishmaniasis (Leishmania tropica)",
+      "rule_out_reason": "Diagnostic microscopic examination of skin scrapings from the ulcerated margin demonstrated intracellular Leishmania amastigotes within macrophages, definitively identified as Leishmania tropica by ITS1 PCR-RFLP and MN1-I restriction analysis, leading to complete clinical resolution after intramuscular meglumine antimonate therapy.",
+      "quote": "The microscopic diagnosis from skin samples showed the presence of Leishmania amastigotes within the macrophages. These results were confirmed by molecular diagnosis using the ITS1 PCR-RFLP technique."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission presentation stops before reference-center direct microscopy and molecular testing. Zero spoilers present."
+}

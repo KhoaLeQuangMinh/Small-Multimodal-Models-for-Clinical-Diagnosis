@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11268767_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 56-year-old farmer living in Jinghe County, Xinjiang, China—a region not recognized as classically endemic for visceral leishmaniasis, with no travel history—presents with a 15-day history of high spiking fevers (up to 40°C), right upper quadrant abdominal pain, hepatosplenomegaly, bicytopenia (leukopenia and anemia), and transaminitis. He failed empiric therapy for suspected pneumonia with levofloxacin and ribavirin. Conventional investigations including peripheral and bone marrow smear microscopy for amastigotes were completely negative, creating a serious diagnostic impasse mimicking occult sepsis, atypical viral hepatitis, or hematologic malignancy.\n2. Admission Breakpoint: The admission breakpoint is established upon presentation to the Fever Clinic, with vital signs, physical exam showing tenderness and hepatosplenomegaly, triage laboratories (WBC 3.10 x 10^9/L, Hb 99 g/L, elevated transaminases, CRP 52.3 mg/L, procalcitonin 0.21 ng/mL), and abdominal ultrasonography demonstrating hepatosplenomegaly and gallbladder wall thickening, prior to blood cultures, nested PCR, bone marrow aspirate, rK39 dipstick, and metagenomic next-generation sequencing (mNGS).\n3. Differential Distinctions: Severe community-acquired pneumonia or pyogenic bacterial sepsis was initially treated empirically with levofloxacin, but the patient failed to respond and blood cultures remained negative for bacteria and fungi. Viral hepatitides and systemic viral infections were ruled out by negative serologies for HBV, HCV, HIV, and COVID-19. Microscopic detection of amastigotes in blood and bone marrow was unrevealing. Metagenomic NGS definitively resolved the case by identifying 20 species-specific reads of Leishmania donovani, confirmed by rK39 rapid testing.",
+  "case_prompt": "A 56-year-old male farmer from Jinghe County, Xinjiang Uygur Autonomous Region, China, presents to the fever clinic with a 15-day history of persistent high-grade fevers and right upper quadrant abdominal pain. The illness began abruptly with fever spiking to 40.0°C accompanied by rigors, progressive generalized weakness, dry throat, and dizziness. He was initially evaluated at two local community hospitals where he received a presumptive diagnosis of severe pneumonia and was treated with a 15-day intravenous regimen of levofloxacin and ribavirin alongside supportive fluids and vitamins, with no clinical improvement.\n\nMedical history includes coronary heart disease for ten years and type 2 diabetes mellitus for five years. He has resided in Jinghe County for over 40 years and reports no travel outside his local district and no travel to areas classically known for tropical visceral infections.\n\nOn physical examination at the fever clinic, his temperature is 38.5°C, pulse rate is 80 beats per minute, respiratory rate is 20 breaths per minute, and blood pressure is 137/70 mmHg. Sclerae show mild icteric tinge. Abdominal examination reveals localized tenderness in the right upper quadrant without peritoneal rebound tenderness; the liver is palpably enlarged and tender below the right costal margin.\n\nTriage laboratory studies reveal leukopenia with a white blood cell count of 3.10 x 10^9/L and normocytic anemia with hemoglobin of 99.0 g/L. Serum biochemistry demonstrates hepatocellular and cholestatic injury: alanine aminotransferase is 168 U/L, aspartate aminotransferase is 281 U/L, alkaline phosphatase is 646 U/L, and gamma-glutamyl transpeptidase is 586 U/L. Renal function tests are within normal limits. Inflammatory markers are elevated, with a C-reactive protein of 52.3 mg/L and procalcitonin of 0.21 ng/mL.\n\nAbdominal ultrasonography reveals marked hepatomegaly, splenomegaly, and diffuse thickening of the gallbladder wall.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Pneumonia and Pyogenic Bacterial Sepsis",
+      "rule_out_reason": "Initially diagnosed and treated with broad-spectrum fluoroquinolones without clinical improvement, and subsequently refuted by negative bacterial and fungal blood cultures.",
+      "quote": "The patient initially sought medical attention at two local hospitals, where he was diagnosed with suspected pneumonia. Treatment included a 15-day regimen of intravenous levofloxacin (0.5 g/day), ribavirin (0.5 g/day)... However, the response to this treatment was inadequate... Blood culture results were negative for bacteria and fungi"
+    },
+    {
+      "candidate": "Acute Viral Hepatitis and Systemic Viral Infection",
+      "rule_out_reason": "Considered due to high fever, marked transaminitis, cholestasis, and gallbladder wall thickening, but serological screens for viral etiologies were all non-reactive.",
+      "quote": "serological tests for coronavirus disease 2019, hepatitis B, hepatitis C, acquired immune deficiency syndrome, and syphilis."
+    },
+    {
+      "candidate": "Smear-Detectable Microscopic Parasitemia",
+      "rule_out_reason": "Traditional parasitological evaluation via light microscopy failed to detect intracellular organisms on peripheral blood smears or bone marrow aspirates.",
+      "quote": "Unfortunately, no L. donovani amastigotes were observed in blood smears stained using the Rysh-Giemsa method (December 15, 2022, 2 days after pentavalent antimony was used) and bone marrow smears stained using the HE method (December 2, 2022, 3 days after admission)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing (mNGS) identified 20 species-specific sequence reads exclusively matching Leishmania donovani in the peripheral blood, subsequently corroborated by a positive rK39 dipstick assay and complete recovery following sodium antimony gluconate.",
+      "quote": "metagenomic next-generation sequencing (mNGS) was performed on the patient's blood sample... 20 sequences were identified as being exclusively similar to L. donovani, excluding other Leishmania species... Subsequently, a positive result was obtained using an rK39 dipstick (InBios International, Seattle, WA, USA)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned at triage evaluation and abdominal ultrasound. Zero pathogen spoilers or advanced molecular results in the clinical presentation."
+}

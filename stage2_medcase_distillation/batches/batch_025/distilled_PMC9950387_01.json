@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9950387_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 73-year-old farmer presenting with acute febrile respiratory illness, pulmonary infiltrates, acute renal failure, and marked thrombocytopenia, initially misdiagnosed as community-acquired pneumonia. The sudden development of hyperpyrexia, cardiovascular collapse, and massive diffuse alveolar hemorrhage within 90 minutes of receiving beta-lactam therapy creates diagnostic tension between septic shock, acute drug anaphylaxis, and a treatment-induced Jarisch-Herxheimer reaction unmasking spirochetal infection.\n2. Admission Breakpoint: The admission narrative concludes after initial triage assessment, physical examination (noting intense calf myalgia), baseline hematology/biochemistry, and initial chest CT, immediately before the administration of intravenous piperacillin-tazobactam.\n3. Differential Distinctions: Typical bacterial community-acquired pneumonia causes focal or multifocal pulmonary consolidation but does not produce profound gastrocnemius myalgia, marked CPK elevation, severe acute thrombocytopenia with acute kidney injury, or a rapid Jarisch-Herxheimer reaction following penicillin initiation. Legionnaires' disease presents with pneumonia and renal dysfunction but does not provoke Jarisch-Herxheimer collapse or disproportionate gastrocnemius tenderness.",
+  "case_prompt": "A 73-year-old male farmer presented to the emergency department with a 4-day history of fever (reaching 38.3 °C), fatigue, chest tightness, and generalized myalgia. On initial presentation, he was alert and oriented with a regular pulse and normal systemic blood pressure. Physical examination revealed an oral temperature of 39.0 °C and exquisite gastrocnemius muscle tenderness that significantly impaired his ability to walk.\n\nInitial laboratory workup revealed severe thrombocytopenia with a platelet count of 48 × 10^9/L. Renal function tests showed acute kidney injury with a serum creatinine of 237 μmol/L. Creatine phosphokinase (CPK) was elevated at 791 U/L (reference range 50–310 U/L), and CK-MB was mildly elevated at 26 U/L (reference range <25 U/L). The C-reactive protein level was markedly elevated at 160.44 mg/dL. Hemoglobin level, white blood cell count, and liver function panels were within normal reference limits. Initial computed tomography (CT) of the chest revealed multifocal infiltrates across both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-Acquired Bacterial Pneumonia (CAP)",
+      "rule_out_reason": "Initially suspected based on fever, respiratory symptoms, and bilateral pulmonary infiltrates on chest CT; however, typical bacterial pneumonia does not explain severe gastrocnemius tenderness, elevated CPK, marked thrombocytopenia, acute kidney injury, or sudden circulatory collapse following antibiotic initiation.",
+      "quote": "The patient was diagnosed with community-acquired pneumonia and started on intravenous piperacillin-tazobactam at 13:55."
+    },
+    {
+      "candidate": "Acute Coronary Syndrome / Acute Myocarditis",
+      "rule_out_reason": "Considered due to acute chest tightness accompanied by elevated CPK and CK-MB; however, the CPK elevation was secondary to infectious rhabdomyolysis and gastrocnemius muscle involvement rather than myocardial necrosis, and coronary ischemia cannot account for bilateral pulmonary alveolar opacities or thrombocytopenia.",
+      "quote": "fatigue, chest tightness, and myalgia... CPK was 791 U/L (normal range 50-310 U/L) and CK-MB was 26 U/L (normal range <25 U/L)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Approximately 90 minutes after initiation of piperacillin-tazobactam, the patient experienced abrupt cardiovascular collapse, hypoxemic respiratory failure, and diffuse alveolar hemorrhage indicative of a severe Jarisch-Herxheimer reaction; bronchoalveolar lavage metagenomic next-generation sequencing and exposure to raw river water confirmed Leptospira interrogans.",
+      "quote": "At 15:22, the patient developed unconsciousness, fever, rigor, increasing tachycardia with a heart rate of 190 beats/min, hypotension (82/42 mmHg), tachypnea with a respiratory rate of 36 breaths/min, and hypoxia with peripheral capillary oxygen saturation of 78%... metagenomic next-generation sequencing (mNGS) samples collected from the airways and bronchoalveolar lavage fluid revealed Leptospira interrogans."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The case prompt stops immediately prior to antibiotic administration, preventing any spoiler regarding the Jarisch-Herxheimer reaction, bronchoscopy, or mNGS results. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

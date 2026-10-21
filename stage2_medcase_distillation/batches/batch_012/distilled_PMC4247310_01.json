@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4247310_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An oncologic patient with a history of resected lung adenocarcinoma following adjuvant chemotherapy presenting with a new enlarging hypermetabolic subpleural nodule (SUVmax 6.1) on PET-CT, creating an intense diagnostic dilemma between recurrent malignant disease and a granulomatous infectious process in the setting of normal serum tumor markers.\n2. Admission Breakpoint: The presentation ends after advanced non-invasive imaging (chest CT, normal serum tumor markers, and PET-CT demonstrating intense FDG avidity) has established high suspicion for recurrent neoplasm, immediately prior to the confirmatory video-assisted thoracoscopic lung biopsy.\n3. Differential Distinctions: Recurrent/metastatic bronchogenic adenocarcinoma is strongly suggested by FDG hypermetabolism (SUVmax 6.1) but contradicted by stable serum tumor markers and definitively excluded by histopathologic biopsy demonstrating Mycobacterium tuberculosis infection.",
+  "case_prompt": "A 67-year-old male was evaluated in the surgical outpatient department for follow-up of previously resected right lung adenocarcinoma with visceral pleural invasion, for which he had undergone video-assisted thoracoscopic lobectomy and four cycles of adjuvant cisplatin and gemcitabine chemotherapy, remaining disease-free for nearly three years.\n\nSurveillance chest computed tomography (CT) performed at 32 months postoperatively revealed the appearance of multiple patchy shadows in the right lung. Over the subsequent 9 months of follow-up, serial chest radiographs showed no evident changes, and serum tumor marker tests remained within normal limits.\n\nA repeat chest CT scan obtained after the 9-month observation period revealed a newly visible 0.5 × 0.5 cm subpleural nodule along with slight enlargement of the patchy shadow in the right lung. Subsequent 18F-FDG PET-CT imaging demonstrated intense metabolic activity within the subpleural nodule with a maximum standardized uptake value (SUVmax) of 6.1, strongly suggestive of recurrent malignant disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent Bronchogenic Adenocarcinoma / Pulmonary Metastasis",
+      "rule_out_reason": "Considered the primary concern given the patient's oncologic history and intense FDG avidity (SUVmax 6.1) of the enlarging subpleural nodule on PET-CT; ruled out when invasive tissue biopsy demonstrated infectious granulomatous pathology rather than tumor recurrence, consistent with stable serum tumor markers.",
+      "quote": "PET-CT scans revealed that the FDG uptake of the nodule had a SUVmax of 6.1. A that indicated malignant disease."
+    },
+    {
+      "candidate": "Indolent Non-Malignant Post-Surgical Changes / Fibrosis",
+      "rule_out_reason": "Considered during the 9-month period of observation when radiographs and serum tumor markers showed no progression; ruled out by subsequent CT demonstrating enlargement of the patchy opacities, emergence of the subpleural nodule, and marked hypermetabolism.",
+      "quote": "The patient did not present any evident changes in the chest radiographs and serum tumor marker tests during the subsequent nine-month follow-up period."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Tuberculosis",
+      "rule_out_reason": "The diagnostic pivot was achieved via video-assisted thoracoscopic biopsy of the hypermetabolic nodule, which disproved malignancy and confirmed active tuberculosis infection.",
+      "quote": "A video-assisted thoracoscopic biopsy indicated that the patient suffered from tuberculosis (Fig. 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4247310. Presentation captures the clinical oncology presentation and false-positive PET-CT scan while strictly terminating prior to the surgical lung biopsy. Zero pathogen or diagnostic disclosure."
+}

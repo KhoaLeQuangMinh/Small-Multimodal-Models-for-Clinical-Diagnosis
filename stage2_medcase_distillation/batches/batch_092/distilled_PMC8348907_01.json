@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8348907_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 53-year-old smoker and heavy alcohol user presents for a routine visit with mild morning productive cough and exertional dyspnea without fever or systemic constitutional symptoms. His baseline normal exam and normal white blood cell count belie apical nodular infiltrates with tree-in-bud micronodularity localized within an anatomically variant azygos lobe, easily mistaken for routine community-acquired pneumonia, COPD exacerbation, or lung malignancy.\n2. Admission Breakpoint: Evaluation ends after initial triage history, vital signs, physical exam, normal CBC, chest radiograph, and baseline noncontrast chest CT revealing apical nodular opacities and tree-in-bud micronodularity, strictly before interferon-gamma release assay results, bronchoscopy, and biopsy.\n3. Differential Distinctions: Acute bacterial pneumonia was ruled out by lack of systemic toxicity, acute infiltrate resolution failure, and persistent branching nodular pattern; primary bronchogenic neoplasm in a smoker was refuted by histopathology showing necrotizing granulomas rather than malignant cells; microbiological isolation of Mycobacterium tuberculosis from bronchoalveolar lavage and transbronchial biopsy established the definitive diagnosis.",
+  "case_prompt": "A 53-year-old male with a history of alcohol abuse, anxiety, and insomnia presented to an outpatient primary care clinic for his annual physical examination. He reported a 25-year history of smoking half a pack of cigarettes daily. He currently consumed beer two to three times weekly, with heavier liquor consumption in previous years. He denied illicit substance use or high-risk sexual exposures. He was fully active and independent with activities of daily living.\n\nOn review of systems, he reported a morning cough productive of small amounts of sputum and progressive dyspnea on exertion over recent months. He reported no fever, night sweats, or unintentional weight loss.\n\nOn physical examination, the patient was afebrile. Blood pressure was 125/80 mmHg, and heart rate was 60 beats per minute. Auscultation of the lungs revealed clear breath sounds bilaterally without rhonchi, rales, or wheezes. The remainder of the physical examination was entirely normal.\n\nInitial laboratory evaluation revealed a white blood cell count of 6700/μL with 52% neutrophils and 33% lymphocytes. Plain chest radiography revealed an ill-defined medial right upper lobe infiltrate without pleural effusion or pneumothorax. A follow-up noncontrast computed tomography scan of the chest demonstrated right upper and lower lobe tree-in-bud micronodularity in a peribronchovascular distribution, with larger confluent nodular opacities measuring up to 2.0 × 1.2 cm situated at the right lung apex.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-acquired bacterial pneumonia",
+      "rule_out_reason": "Considered on initial chest radiograph given the medial upper lobe opacity, but symptoms were indolent without fever or leukocytosis, and repeat imaging demonstrated branching nodularity in an accessory lobe.",
+      "quote": "A chest x-ray was ordered and revealed a questionable ill-defined medial right upper lobe infiltrate, which could be related to pneumonia."
+    },
+    {
+      "candidate": "Chronic obstructive pulmonary disease (COPD) or smoker's chronic bronchitis",
+      "rule_out_reason": "Considered due to the 25-pack-year smoking history, productive morning cough, and exertional dyspnea with obstructive spirometry, but this failed to account for focal apical peribronchovascular nodules on computed tomography.",
+      "quote": "However, his pulmonary function showed mild chronic obstructive defect without significant bronchodilator reversibility."
+    },
+    {
+      "candidate": "Bronchogenic carcinoma / Malignant solitary pulmonary nodule",
+      "rule_out_reason": "Considered due to smoking history and an apical mass-like nodule measuring up to 2 cm, but transbronchial biopsy revealed infectious necrotizing granulomatous inflammation rather than malignant neoplasia.",
+      "quote": "Tissue specimens were also sent for histopathology showing necrotizing granulomatous inflammation."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Tuberculosis of the azygos lobe)",
+      "rule_out_reason": "Transbronchial biopsy and bronchoalveolar lavage targeted to the right lung apex and azygos lobe isolated the acid-fast pathogen on microbiological evaluation.",
+      "quote": "Microbiological studies revealed Mycobacterium tuberculosis in both the bronchoalveolar lavage and lung biopsy specimens."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set prior to QuantiFERON testing and bronchoscopy. Zero spoilers in case prompt. Quotes exactly verified."
+}

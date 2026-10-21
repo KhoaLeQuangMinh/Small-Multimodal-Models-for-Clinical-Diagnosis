@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10404078_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 47-year-old male presents with acute febrile hepatonephritis, profound thrombocytopenia, and conjugated hyperbilirubinemia following domestic renovation. On day 3 of hospitalization, he deteriorates into hypotensive shock with severe hematemesis and acute abdomen, revealing severe necrotizing acute pancreatitis\u2014an unusual, life-threatening manifestation of Weil's disease.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after initial emergency triage evaluation including history, vital signs, physical exam, admission laboratory testing (CBC, platelets, renal function, liver enzymes, coagulation profile), normal lumbar puncture, unremarkable chest radiograph, and bedside abdominopelvic ultrasonography, stopping prior to the clinical collapse on Day 3, abdominal CT angiography, and send-out serologies.\n3. Differential Distinctions: Leptospirosis with acute pancreatitis is distinguished from primary acute biliary pancreatitis by normal-caliber bile ducts and sterile blood cultures; from severe falciparum malaria by lack of endemic travel; and from acute viral hepatitis by negative viral serologies and prominent renal failure preceding acute pancreatitis.",
+  "case_prompt": "A 47-year-old male primary school director with a history of euthyroid goiter presents with a 1-week history of acute febrile illness accompanied by deep jaundice, abdominal pain, and loose stools. Symptoms began with high-grade fevers, recurrent chills, and diffuse severe myalgias. Four days later, he developed pronounced mucocutaneous jaundice, yellowish non-bloody diarrhea (>4 bowel movements daily), and abdominal discomfort predominantly localized to the right hypochondrium. He denies alcohol use or travel to tropical areas, but reports participating in extensive renovation work on his house one month prior to symptom onset.\n\nOn physical examination, the patient appears altered, dehydrated, but conscious. Vital signs demonstrate a temperature of 38.0\u00b0C, blood pressure of 90/70 mm Hg, and oxygen saturation of 98% on room air. Marked scleral and cutaneous icterus is evident. Abdominal palpation reveals right upper quadrant tenderness without peritoneal signs; the liver and spleen are normal in size.\n\nInitial laboratory evaluation reveals a white blood cell count of 29,000/mm3 with 91% neutrophils, hemoglobin of 8.7 g/dL (normocytic, normochromic), and marked thrombocytopenia with a platelet count of 30,000/mm3. Renal workup demonstrates acute kidney injury with serum creatinine of 76 mg/L and blood urea of 1.38 g/L. Hepatic panel reveals severe hyperbilirubinemia with total bilirubin of 425 mg/L (80% conjugated), alanine aminotransferase 140 IU/L, aspartate aminotransferase 180 IU/L, alkaline phosphatase 194 IU/L, and a prothrombin time level of 95%. Lumbar puncture yields clear cerebrospinal fluid with normal cytochemical parameters. Plain chest radiography is unremarkable, and abdominopelvic ultrasonography demonstrates a normal-sized liver, non-dilated bile ducts, and a low-abundance peritoneal fluid effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sepsis of acute intra-abdominal / biliary origin",
+      "rule_out_reason": "Markedly elevated leukocytosis, fever, and right upper quadrant abdominal tenderness prompted consideration of acute cholangitis or severe intra-abdominal sepsis, but ultrasonography showed non-dilated bile ducts and blood cultures isolated no pathogenic organisms.",
+      "quote": "In terms of infection, blood cultures did not isolate pathogenic germs;"
+    },
+    {
+      "candidate": "Acute viral hepatitis / systemic viral infection",
+      "rule_out_reason": "Marked conjugated hyperbilirubinemia with transaminitis raised suspicion for acute viral hepatotropic infection, but serologies for hepatitis A, B, C, HIV, and SARS-CoV-2 PCR were negative.",
+      "quote": "HBsAg, anti-HAV IgM, anti-HCV antibodies, and HIV serology were negative. The search for SARS-CoV-2 viral RNA on nasopharyngeal swabs by polymerase chain reaction (PCR) was negative."
+    },
+    {
+      "candidate": "Severe malaria",
+      "rule_out_reason": "Acute febrile jaundice accompanied by severe thrombocytopenia and acute renal failure strongly mimicked severe malaria, but the patient had no epidemiological travel history to an endemic area.",
+      "quote": "The interrogation did not reveal any notion of alcohol consumption or a journey to a malaria-endemic area; however, he participated in renovation work on his house one month before."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The constellation of acute febrile icterohemorrhagic hepatonephritis, marked thrombocytopenia, and sudden secondary necrotizing pancreatitis following domestic house renovation was confirmed by a positive microscopic agglutination test (MAT) with a 1:400 titer against Leptospira biflexa.",
+      "quote": "Martin and Pettit's (MAT) serology was performed on 10/17/2020, which was positive for Leptospira biflexa (Patoc strain) at 1/400."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to clinical shock on Day 3, abdominal CT angiography, and send-out serologies. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

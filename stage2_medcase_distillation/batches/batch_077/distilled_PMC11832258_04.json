@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11832258_04",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old female presented with acute painless bilateral vision loss, photophobia, and dramatic retinal perivascular sheathing resembling frosted tree branches ('frosted branch angiitis'), accompanied by splinter hemorrhages and vitreous haze. The primary challenge is differentiating idiopathic autoimmune retinal vasculitis (Type 1 FBA) or viral retinitis from secondary frosted branch angiitis driven by occult ocular tuberculosis (Type 2 FBA).\n2. Admission Breakpoint: The admission breakpoint is established at the completion of initial ophthalmic slit-lamp and fundoscopic examinations and baseline hematologic testing, prior to fluorescein angiography grading, tuberculin skin testing (Mantoux test), and initiation of targeted antitubercular therapy.\n3. Differential Distinctions: Viral retinitis (e.g., CMV or herpes simplex) was considered given acute severe bilateral vitreous haze and retinal hemorrhages, but excluded by absence of full-thickness retinal necrosis and negative viral serologies; primary idiopathic frosted branch angiitis (Type 1 FBA) was ruled out because immunological testing revealed latent tuberculous hypersensitivity; Type 2 FBA secondary to ocular tuberculosis was established by a reactive Mantoux test, borderline elevated ESR, and dramatic therapeutic response to antitubercular therapy and corticosteroids.",
+  "case_prompt": "A 21-year-old woman presented with sudden-onset reduced vision and photophobia in both eyes lasting for one week. She had no preceding history of ocular trauma, systemic fever, constitutional symptoms, or prior medical conditions, and her family history was unremarkable.\n\nOn initial ophthalmic examination, best-corrected visual acuity was 20/80 in the right eye and 20/30 in the left eye. Dilated fundoscopic examination revealed moderate vitreous haze bilaterally in the presence of background benign fleck retina. Widespread splinter hemorrhages were visible across the posterior pole, accompanied by prominent perivascular sheathing in both eyes. The exudates were noted to be not only intraretinal but also extending onto the posterior hyaloid face. Baseline complete blood count showed a borderline elevated erythrocyte sedimentation rate, while general physical and systemic examinations were unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral Retinitis / Acute Retinal Necrosis",
+      "rule_out_reason": "Considered due to acute bilateral vision loss, vitreous haze, and extensive retinal hemorrhages and perivascular exudation in a young adult, but ruled out by normal serological tests, absence of full-thickness necrotizing retinal lesions, and absence of systemic viral illness.",
+      "quote": "The other serological investigations and chest x-ray reports were within normal limits, and no systemic involvement of tuberculosis was recorded."
+    },
+    {
+      "candidate": "Idiopathic Frosted Branch Angiitis (Type 1 FBA)",
+      "rule_out_reason": "Considered due to the classic appearance of opaque perivenous sheathing resembling frosted tree branches with vitreous haze and hemorrhages, but reclassified as secondary Type 2 FBA due to positive immunological evidence of mycobacterial sensitization and sustained cure on antitubercular therapy.",
+      "quote": "FFA showed contiguous, granular, and opaque perivascular sheathing in the OD, compared to the OS in which sheathing was more discrete and it has a beaded appearance (Figures 5(c) and 5(d)). The case was diagnosed as Type 2 FBA in a patient with a bilaterally flecked retina."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Immunologic testing demonstrated a strongly reactive Mantoux test and borderline elevated ESR without systemic pulmonary involvement on chest radiography, confirming ocular hypersensitivity to tuberculosis (Type 2 FBA), which responded with dramatic regression of perivascular sheathing and restoration of 20/20 visual acuity following antitubercular therapy and corticosteroids.",
+      "quote": "The complete hemogram showed borderline elevated ESR, and Mantoux test turned out to be reactive. The other serological investigations and chest x-ray reports were within normal limits, and no systemic involvement of tuberculosis was recorded... Treatment was initiated with antitubercular therapy (ATT), and oral prednisolone was administered in a dose of 1 mg/kg/day."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint placed after fundoscopic examination and baseline CBC/ESR, strictly before Mantoux tuberculin test and FFA results. Zero disease spoilers in prompt. Exact verbatim quotes confirmed."
+}

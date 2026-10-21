@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6350434_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A completely asymptomatic 21-year-old male presents with incidental asymmetrical cardiomegaly on a routine chest radiograph, found on advanced cardiac imaging to have a massive (90 x 60 mm) intramyocardial cystic mass involving the anterior, posterior, and lateral left ventricular walls with normal routine laboratory findings and no extracardiac lesions.\n2. Admission Breakpoint: Following completion of baseline admission workup, transthoracic echocardiography, and cardiac CT angiography, immediately before thoracotomy and surgical exploration.\n3. Differential Distinctions: Distinguishing a primary cardiac neoplasm (myxoma, fibroma, sarcoma), congenital pericardial/bronchogenic cyst, or ventricular pseudoaneurysm from an intramyocardial parasitic hydatid cyst relying on non-enhancement, intra-myocardial fiber localization, and intraoperative identification of daughter cysts.",
+  "case_prompt": "A 21-year-old male presented for evaluation after an abnormal screening chest radiograph. He was completely asymptomatic, without dyspnea, chest discomfort, palpitations, or systemic symptoms, and had a noncontributory past medical history. On physical examination, vital signs were normal, cardiovascular examination was unremarkable with normal heart sounds and no murmurs, and no peripheral edema or stigmata of heart failure were present.\n\nA posteroanterior chest radiograph revealed asymmetrical cardiomegaly. Transthoracic echocardiography demonstrated a large intramyocardial cystic lesion involving the anterior, posterior, and free lateral walls of the left ventricle; left ventricular end-systolic and end-diastolic diameters were reduced, while all other echocardiographic variables were unremarkable. Cardiac computed tomography (CT) angiography showed a smooth-surfaced cystic mass measuring 90 mm × 60 mm within the left ventricular lateral wall, localized directly inside the myocardial fibers in close proximity to the left anterior descending artery. There was no contrast enhancement within the lesion, and left ventricular volume was decreased secondarily to mass effect. Whole-body staging revealed no cystic lesions in any other organs. Preoperative hematology and serum biochemistry panels were entirely within normal reference ranges.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Cardiac Neoplasm (e.g., Myxoma, Fibroma, or Sarcoma)",
+      "rule_out_reason": "Primary cardiac neoplasms typically present with solid tissue architecture and enhancement on contrast-enhanced imaging; the purely cystic, non-enhancing nature of this mass localized within myocardial fibers rules them out.",
+      "quote": "There was no contrast intake inside the mass; the left ventricular volume was decreased due to bulging of the mass."
+    },
+    {
+      "candidate": "Congenital Pericardial or Bronchogenic Cyst",
+      "rule_out_reason": "Congenital pericardial or bronchogenic cysts are typically located in the mediastinum or cardiophrenic angles rather than deeply embedded within the ventricular myocardium.",
+      "quote": "The mass was localized inside the myocardial fibers."
+    },
+    {
+      "candidate": "Left Ventricular Pseudoaneurysm or Diverticulum",
+      "rule_out_reason": "Pseudoaneurysms demonstrate internal contrast opacification communicating with the left ventricular cavity and usually follow myocardial infarction or trauma; this lesion was completely non-enhancing and smooth-surfaced.",
+      "quote": "A smooth-surfaced cystic mass of 90 mm x 60 mm at the left ventricular lateral wall was also seen on cardiac computed tomography (CT) angiography"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Left anterolateral thoracotomy and pericardial reflection directly exposed the intramyocardial mass containing classic pale yellow daughter cysts and scolices, which were inactivated with povidone-iodine and evacuated, definitively proving an intramyocardial hydatid cyst.",
+      "quote": "After pericardium reflection, the mass with its pale yellow daughter cysts was visible"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt strictly ends prior to surgical thoracotomy. All mentions of hydatid, scolices, and Echinococcus removed from admission triage. Differential quotes verified verbatim against source text."
+}

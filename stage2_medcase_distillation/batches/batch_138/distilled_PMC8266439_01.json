@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8266439_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 18-year-old female presents with chronic right iliac fossa pain, profound anorexia, and 10 kg weight loss accompanied by an 8-cm mobile abdominopelvic cystic mass with mural nodules abutting pelvic viscera. The absence of fever, pulmonary signs, or laboratory abnormalities points strongly toward an ovarian cystadenoma, mesenteric cyst, or gastrointestinal stromal tumor, disguising an isolated extrapulmonary tuberculous lymphadenitis.\n2. Admission Breakpoint: The admission breakpoint concludes following initial general physical examination, normal routine blood investigations, normal chest radiography, and non-invasive cross-sectional imaging (abdominal CT and pelvic MRI), strictly prior to exploratory laparotomy, monobloc surgical resection, and histopathological/PCR examination.\n3. Differential Distinctions: Ovarian cystadenoma or cystic teratoma was the leading diagnostic consideration in a young female with a large pelvic cystic lesion, but surgical exploration revealed normal adnexa and a mesenteric origin; mesenteric cyst or gastrointestinal stromal tumor (GIST) was considered, but histopathology demonstrated necrotizing granulomatous lymphadenitis rather than neoplastic cells; positive PCR for Mycobacterium tuberculosis confirmed tuberculous mesenteric lymphadenitis.",
+  "case_prompt": "An 18-year-old female patient with no notable past medical history presents with chronic pain in the right iliac fossa evolving in a context of anorexia and an unintentional weight loss of 10 kg over the past 4 months.\n\nOn general physical examination, she is alert, apyretic, hemodynamically stable, and her conjunctivae are normally colored. Abdominal examination reveals a palpable subumbilical mass that is mobile in both superficial and deep planes, possesses undefined borders, and extends into the right iliac fossa. There is no tenderness, hepatomegaly, splenomegaly, or peripheral lymphadenopathy. The remainder of the systemic examination is unremarkable.\n\nRoutine blood investigations are normal. Plain chest radiography is normal without parenchymal lesions or mediastinal widening. Abdominal computed tomography (CT) demonstrates two contiguous, well-limited rounded formations with thick fluid content and thin, regular walls, measuring 20 mm in the right iliac fossa and 72 mm in the subumbilical abdominopelvic region. Pelvic magnetic resonance imaging (MRI) reveals a median intraperitoneal pelvic mass measuring 77 × 81 × 80 mm, displaying low signal intensity on T1, high signal intensity on T2, and regular parietal enhancement with mural nodules after contrast injection, positioned supravesically in contact with the ileum, sigmoid colon, and uterus with preserved separation lines.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian cystadenoma / Pelvic cystic teratoma (Adnexal neoplasm)",
+      "rule_out_reason": "A large, well-demarcated pelvic fluid collection with mural nodules in a young female with marked weight loss strongly suggested an ovarian cystic neoplasm, but exploratory laparotomy revealed completely normal ovaries and appendix, with the mass originating within the mesentery.",
+      "quote": "the appendix and the ovaries appeared normal; a monobloc resection of the mass with the satellite lymph nodes was performed without intestinal resection"
+    },
+    {
+      "candidate": "Mesenteric cyst / Gastrointestinal stromal tumor (GIST)",
+      "rule_out_reason": "A cystic, hypervascular mesenteric lesion with thick walls and mural nodules can represent a mesenteric duplication cyst or stromal neoplasm, but histopathology revealed necrotizing granulomatous inflammation rather than a true epithelial lining or neoplastic stromal cells.",
+      "quote": "Laparotomy exploration showed a mesenteric mass close to the ileocaecal region, solid hyper vascularized with some ileocaecal lymph nodes"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the resected specimen demonstrated necrotizing granulomatous lymphadenitis, and molecular polymerase chain reaction (PCR) testing was positive for Mycobacterium tuberculosis, confirming isolated abdominopelvic tuberculous lymphadenitis.",
+      "quote": "Microscopic pathologic examination was in favor of a necrotizing granulomatous lymphadenitis which was highly indicative of tuberculosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint observed prior to surgical intervention and histopathology. Zero pathogen leaks. Quotes verified verbatim."
+}

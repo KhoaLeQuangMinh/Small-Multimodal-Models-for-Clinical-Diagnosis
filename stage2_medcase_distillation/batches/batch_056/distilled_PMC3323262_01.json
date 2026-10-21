@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3323262_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: Acute febrile jaundice with significant thrombocytopenia and transaminitis in a non-immune French healthcare worker with no tropical travel history, shifting diagnostic consideration toward acute occupational viral hepatitis or sepsis unless an unappreciated bloodborne vector-borne pathogen transmission is recognized.\n2. Admission Breakpoint: Admission clinical evaluation stops following emergency department triage physical examination, baseline laboratory panels (profound thrombocytopenia, transaminases, bilirubin), and normal abdominal ultrasound; microscopic examination of peripheral blood smears and parasitemia identification constitute confirmatory testing.\n3. Differential Distinctions: Acute bloodborne viral hepatitis (HBV, HCV) presents with hepatic injury following needlestick exposure but does not typically cause acute severe thrombocytopenia or hemolytic jaundice within two weeks; acute calculous cholecystitis/cholangitis causes jaundice and right upper quadrant tenderness but ultrasound demonstrates biliary pathology; Plasmodium falciparum malaria transmitted percutaneously causes acute hemolytic anemia, thrombocytopenia, and intraerythrocytic ring stages on peripheral smear.",
+  "case_prompt": "A 24-year-old female registered nurse presented to the emergency room in Paris, France, with fever, nausea, and general malaise. Her past medical history was notable only for spontaneously regressive Henoch-Schönlein purpura during infancy. She reported no international travel outside France, except for a trip to the United Kingdom years earlier, and had no residence near an international airport.\n\nHer occupational history was notable for an accidental deep, blood-letting needlestick injury to the anterior aspect of her left wrist 13 days prior to presentation, sustained while drawing a blood sample from an inpatient using an unsheathed 18-gauge peripheral venous catheter. Following the incident, baseline serologic tests confirmed negative antibodies for human immunodeficiency virus (HIV) and hepatitis C virus (HCV), and prior immunization against hepatitis B virus (HBV) was verified. Ten days post-exposure, she developed fatigue, malaise, and fever, which temporarily subsided with paracetamol before recurring with high fever (up to 39.0 °C), severe headache, diffuse myalgias, and generalized pain.\n\nOn physical examination, her axillary temperature was 37.6 °C (after paracetamol). Sclerae were mildly icteric. She complained of mild headache but had no nuchal rigidity. The abdomen was soft and depressible but diffuse abdominal tenderness was present.\n\nInitial triage investigations revealed normal urinalysis with no hematuria. An emergency abdominal ultrasound was normal. Laboratory studies demonstrated marked thrombocytopenia and liver dysfunction: platelet count 47.4 x 10^3/µL, aspartate aminotransferase (AST) 307 U/L (reference range: < 56), alanine aminotransferase (ALT) 239 U/L (reference range: < 56), total bilirubin 58 µmol/L (reference range: < 24), and gamma-glutamyl transpeptidase (GGT) 57 U/L (reference range: < 35).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Occupational Viral Hepatitis (HBV / HCV / HIV)",
+      "rule_out_reason": "Although percutaneous needle exposure frequently prompts concern for bloodborne viral hepatitis or acute retroviral syndrome, documented HBV immunization, negative baseline HCV/HIV serologies, and rapid development of acute severe thrombocytopenia with hemolysis point away from classical viral hepatitis.",
+      "quote": "In accordance with national postexposure management guidelines, she was tested for HIV and hepatitis C virus (HCV) antibody, and results were negative at baseline; her immunization against hepatitis B virus (HBV) was confirmed."
+    },
+    {
+      "candidate": "Acute Biliary Sepsis / Cholangitis",
+      "rule_out_reason": "Concomitant jaundice, abdominal tenderness, and transaminitis can indicate acute biliary obstruction or cholangitis, but emergency abdominal imaging was completely normal.",
+      "quote": "Her abdomen was depressible but tender... Results of an abdominal echogram were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood smear examination identified intraerythrocytic ring stages, confirming Plasmodium falciparum with a parasitemia of 0.038 per 100 erythrocytes contracted nosocomially via needlestick injury, which resolved with quinine therapy.",
+      "quote": "Result of a blood film to identify Plasmodium falciparum was positive for parasitemia at 0.038 per 100 erythrocytes. The patient was given 500 mg of oral quinine three times daily; intravenous quinine was administered 15 hours after admission"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation includes occupational needle exposure and initial triage labs/ultrasound, terminating before blood smear analysis. Zero leakage of pathogen or antimalarial therapy."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213113_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 62-year-old farmer presenting with a 12-year history of a painful, recurrent left gluteal cystic mass and severe hip joint destruction. The prolonged duration, failed previous incision and drainage procedures, and refractory course after empirical antitubercular therapy created significant diagnostic confusion between chronic soft-tissue abscess, tuberculous arthritis, and an atypical musculoskeletal cystic parasitic lesion.\n2. Admission Breakpoint: Clinical history, physical examination, baseline inflammatory markers, routine laboratory tests, and initial plain pelvic radiography in the orthopedic clinic, immediately preceding specialized hydatid serological testing (IgG ELISA) and cross-sectional pelvic CT and MRI.\n3. Differential Distinctions: Osteoarticular tuberculosis presents with chronic cold abscesses and joint destruction but failed empirical antitubercular therapy and is less associated with peripheral eosinophilia. Recurrent pyogenic abscess exhibits acute suppuration and temporary drainage relief without multi-cystic bony architecture. Echinococcosis (hydatid disease) in osseous/pelvic sites is characterized by multiloculated cystic expansion, marked osteolysis, peripheral eosinophilia, positive specific serology, and characteristic lamellated membranes on histopathology.",
+  "case_prompt": "A 62-year-old male farmer presents to the orthopedic outpatient department with a 12-year history of a painful left gluteal mass associated with progressively restricted left hip movement. Over the past decade, he had undergone incision and drainage of the gluteal swelling on two separate occasions at a local health center; in both instances, painful swelling recurred after brief initial symptomatic relief. In addition, given suspicion of a chronic granulomatous bone infection, he had previously undergone an empirical course of therapy from a local hospital without symptomatic relief.\n\nOn physical examination, a large cystic swelling associated with pain and reduced hip movement is observed over the left gluteal region.\n\nLaboratory investigations reveal an elevated erythrocyte sedimentation rate (ESR), elevated C-reactive protein (CRP), and an absolute eosinophil count of 730/\u03bcL. Renal and liver function tests are within normal limits.\n\nPlain radiograph of the pelvis demonstrates reduced joint space and a cystic lesion with destruction of the left ischial tuberosity, acetabulum, and femoral head.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Osteoarticular tuberculosis",
+      "rule_out_reason": "Considered due to the chronic destructive bone lesion and cold-abscess-like presentation, but the patient had already undergone a full course of antitubercular therapy without clinical response, making tuberculosis highly unlikely.",
+      "quote": "With the suspicion of osteoarticular tuberculosis, he had undergone antitubercular therapy without any symptomatic relief from the local hospital. Thus, osteoarticular tuberculosis was kept much lower as a differential diagnosis in this case."
+    },
+    {
+      "candidate": "Recurrent pyogenic abscess / Chronic bacterial soft-tissue infection",
+      "rule_out_reason": "Repeated incision and drainage provided only transient symptomatic relief followed by swift recurrence, and pelvic radiography showed destructive osseous involvement rather than a simple soft-tissue collection.",
+      "quote": "He had undergone incision and drainage on couple of occasions at a local health-care center. On both of those occasions after a brief period of symptomatic relief, painful swelling reoccurred."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serum IgG ELISA for Echinococcus exceeded the diagnostic cutoff, and complementary pelvic CT and MRI demonstrated a multiloculated cyst with destruction of the ischial tuberosity, acetabulum, and femoral head alongside calcified foci, subsequently confirmed by en bloc excision showing lamellated membranes and daughter cysts.",
+      "quote": "Hydatid serology using immunoglobulin G (IgG) enzyme-linked immunosorbent assay (ELISA) (RIDASCREEN Echinococcus IgG, R-Biopharm AG, Germany) was performed following the manufacturer's instruction, and surprisingly, the optical density value was above the cutoff. Hydatid serology result was further correlated with computer tomography scan (CT-scan) and magnetic resonance imaging (MRI) of the pelvis. CT-scan and MRI revealed a multiloculated cyst with destruction of left ischial tuberosity, acetabulum, and femoral head."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced at initial plain radiograph and routine lab results. Zero pathogen or disease names mentioned in case_prompt. Direct quotes verified verbatim from case text."
+}

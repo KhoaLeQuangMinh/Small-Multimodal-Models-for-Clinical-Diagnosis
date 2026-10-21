@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8476250_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 31-year-old postpartum woman presenting 6 days following intrauterine fetal demise with acute right upper quadrant pain, bloody vomiting, hiccups, and cholestatic jaundice. The primary pitfall is misdiagnosing extraintestinal amebic liver abscess as acute choledocholithiasis with ascending cholangitis or severe preeclampsia/HELLP-related postpartum liver infarction.\n2. Admission Breakpoint: Initial emergency presentation with triage vital signs, physical examination (RUQ tenderness, scleral icterus), and baseline laboratory testing (CBC, LFTs, BUN/creatinine, urinalysis, viral hepatitis markers), strictly withholding stool microscopy and hepatic ultrasound findings.\n3. Differential Distinctions: Normal biliary tree on ultrasound excluding biliary obstruction/choledocholithiasis, non-reactive viral markers excluding viral hepatitis, and identification of Entamoeba trophozoites in stool alongside ultrasound demonstration of multiple parenchymal hepatic abscesses establishing invasive extraintestinal amebiasis.",
+  "case_prompt": "A 31-year-old woman presented to the hospital on postpartum day 6 following spontaneous vaginal delivery complicated by intrauterine fetal demise (with a nuchal cord). She reported a 5-day history of severe epigastric pain, persistent hiccups, hematemesis of ingested material, right upper quadrant abdominal discomfort, and severe fatigue. For the preceding week, she had noticed yellowish discoloration of her eyes and generalized pruritus. She also reported an episode of watery diarrhea 6 days prior to presentation, which had since resolved.\n\nOn physical examination, the patient appeared acutely ill and in severe pain. Vital signs: blood pressure 150/100 mmHg, pulse 92 beats/min, respiratory rate 32 breaths/min, body temperature 36.6°C, and oxygen saturation 96% on ambient air. Head and neck evaluation revealed marked scleral icterus and pink conjunctivae. Abdominal examination demonstrated focal tenderness over the right upper quadrant without peritoneal signs. Examination of all other organ systems was unremarkable.\n\nAdmission laboratory investigations revealed a total leukocyte count of 13,000/mm³ (neutrophils 53.1%, lymphocytes 10.4%, monocytes 14.1%, basophils 19.6%, and eosinophils 2.8%), hemoglobin 12.0 g/dL, hematocrit 32%, and thrombocytopenia with a platelet count of 79,000/mm³. Liver biochemical profile revealed cholestatic jaundice: serum total bilirubin 9.4 mg/dL, direct bilirubin 3.55 mg/dL, alkaline phosphatase 213 U/L, AST 42 U/L, and ALT 40 U/L. Renal function was preserved with serum creatinine of 0.6 mg/dL and blood urea nitrogen of 16 mg/dL. Urinalysis showed 3+ occult blood with negative protein and ketones. Serological markers for viral hepatitis and stool antigen testing for Helicobacter pylori were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choledocholithiasis with Ascending Cholangitis",
+      "rule_out_reason": "Initial leading clinical diagnosis given acute right upper quadrant pain, fever history, and cholestatic jaundice; ruled out when abdominal ultrasound demonstrated a normal extrahepatic biliary system and an absence of common bile duct calculi.",
+      "quote": "A diagnosis of obstructive jaundice secondary to choledocholithiasis with ascending cholangitis and intestinal amoebiasis was made... On the second day of admission, abdominal ultrasound was done and showed a normal biliary system and no stone at the common bile duct."
+    },
+    {
+      "candidate": "Acute Viral Hepatitis",
+      "rule_out_reason": "Considered due to acute jaundice and postpartum hepatic dysfunction, but excluded by non-reactive viral hepatitis panels.",
+      "quote": "She was negative for hepatitis viral markers and Helicobacter pylori in stools."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of stool identified Entamoeba trophozoites, and subsequent abdominal ultrasound demonstrated multiple hypoechoic lesions in the right hepatic lobe consistent with amebic liver abscesses, which completely resolved following targeted metronidazole therapy.",
+      "quote": "trophozoites of E. histolotica/dispar were seen in stool microscopically. But, there were multiple lesions on the right lobe of liver parenchyma which were most likely small multiple amebic live abscesses."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled cleanly strictly excluding stool microscopic parasite detection and ultrasound findings from the admission presentation."
+}

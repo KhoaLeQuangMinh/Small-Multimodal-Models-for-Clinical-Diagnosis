@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3179881_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: Late presentation of recurrent right lower lobe respiratory symptoms, fever, and green bile-stained sputum (bilioptysis) months following extensive open surgical resection and Roux-en-Y biliary reconstruction for a giant hepatic multivesicular cystic mass, mimicking primary lung infection or lung abscess.\n2. Admission Breakpoint: Admission clinical evaluation stops upon observation of persistent bilioptysis on physical exam and plain chest radiograph showing right lower lobe opacity; hepatobiliary radionuclide cholescintigraphy (99mTc-mebrofenin) and percutaneous transhepatic cholangiography represent confirmatory imaging.\n3. Differential Distinctions: Community-acquired bacterial pneumonia or lung abscess causes purulent or foul sputum without bile and lacks diaphragmatic communications; isolated recurrent ascending cholangitis presents with abdominal pain and jaundice without bilioptysis; a biliobronchial fistula secondary to biliary anastomotic stricture and diaphragmatic erosion creates direct communication between the biliary tree and bronchial lumen, demonstrated by bile in sputum and cholescintigraphy tracer transit.",
+  "case_prompt": "A 72-year-old woman presented to the hospital with fever and productive cough. Her surgical history was notable for having undergone an open total cyst pericystectomy 9 months earlier for a massive multivesicular cystic lesion (measuring 16 x 17 x 18 cm) that had replaced the right hepatic lobe, accompanied by diaphragmatic fixation of the left lateral segment. Her postoperative course had been complicated by biliary duct ischemia and torsion, which required re-exploration and side-to-side Roux-en-Y hepaticojejunal anastomosis. Five months after the initial surgery, she had been treated successfully for an episode of ascending cholangitis. Over the subsequent months, she experienced recurrent respiratory infections managed in the outpatient setting.\n\nOn physical examination upon current presentation, the patient appeared uncomfortable and was febrile, but had no scleral icterus or jaundice. During the evaluation, she expectorated bile-stained sputum (bilioptysis) multiple times. Abdominal examination was non-tender.\n\nA plain chest radiograph revealed right lower lobe opacity consistent with right lower lobe pneumonia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uncomplicated Bacterial Pneumonia / Lung Abscess",
+      "rule_out_reason": "While the patient presented with fever, cough, and right lower lobe consolidation on chest radiography, typical bacterial pneumonia cannot account for the gross expectoration of bile-stained sputum (bilioptysis).",
+      "quote": "Chest plain film showed right lower lobe opacity consistent with right lower lobe pneumonia. Because of her persistent bilioptysis, she underwent 99mTc Mebrofenin scan"
+    },
+    {
+      "candidate": "Recurrent Ascending Cholangitis without Fistula",
+      "rule_out_reason": "Although the patient had a prior episode of cholangitis, her current presentation was dominated by pulmonary complaints and bile expectoration in the absence of hyperbilirubinemia or clinical jaundice.",
+      "quote": "Nine months after the original operation, the patient presented to the hospital with fever and productive cough. She did not have jaundice."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The direct observation of persistent bilioptysis prompted a 99mTc-mebrofenin cholescintigraphy scan, which confirmed a biliobronchial fistula (BBF) with radioisotope passage from the liver into the right lower lobe and sputum; percutaneous transhepatic cholangiography revealed stenosis of the biliojejunal anastomosis with biliothoracic fistulization, which resolved completely following stricture dilation and stenting.",
+      "quote": "Because of her persistent bilioptysis, she underwent 99mTc Mebrofenin scan (Bridatec, Amersham Health, Gipharma, Saluggia, Italy) which confirmed the diagnosis of biliobronchial fistula (BBF). A fistulous tract connected the liver and the right lower lobe; the patient's sputum contained enough radioisotopes to be detected by the gamma camera (Figure 3)... percutaneous transhepatic cholangiography which was notable for bile duct dilatation, stenosis of the biliojejunal anastomosis, and biliothoracic leak (BBF)"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt terminates at triage examination demonstrating bilioptysis and chest x-ray findings. Zero leakage of pathogen or scintigraphy results in presentation."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3505658_01",
+  "disease": "Leishmaniasis, Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 42-year-old man presents with chronic diarrhea, fever, splenomegaly, pancytopenia, and profound wasting. The diagnostic tension involves determining whether his severe gastrointestinal and hematologic presentation represents an endemic parasitic infection, an opportunistic infection (such as in HIV), or a complex co-infection. Following initial antiparasitic therapy for visceral leishmaniasis, his chronic diarrhea and wasting persisted, leading to the identification of concurrent Schistosoma mansoni infection, and ultimately revealing persistent gastrointestinal involvement by Leishmania amastigotes.\n2. Admission Breakpoint: Admission evaluation terminates after history, physical examination, and initial laboratory evaluation (pancytopenia, severe hypoalbuminemia, high ESR, electrolyte and metabolic imbalance), immediately prior to serologic testing (rK39), bone marrow aspiration, gastrointestinal endoscopies with biopsy, and parasitological stool microscopy.\n3. Differential Distinctions: Chagas disease (Trypanosoma cruzi infection) is endemic in Brazil and causes gastrointestinal dysmotility and mucosal involvement, but specific serology was negative. HIV infection produces chronic wasting diarrhea and pancytopenia, but HIV serology was negative and CD4 counts were normal. Isolated intestinal schistosomiasis causes diarrhea and liver/spleen changes, but failure to improve after praziquantel demonstrated that schistosomiasis was part of a dual co-infection with visceral leishmaniasis duodenal involvement.",
+  "case_prompt": "A 42-year-old man presents with a 6-month history of nonbloody diarrhea associated with persistent fever, abdominal fullness, upper gastrointestinal discomfort including mild dysphagia and vomiting, and profound weakness.\n\nOn physical examination, he is febrile and cachectic with marked pallor and splenomegaly. Cardiopulmonary examination is unremarkable.\n\nTriage laboratory testing demonstrates pancytopenia with a normochromic normocytic anemia, profound hypoalbuminemia (1.9 g/dL), and a significantly elevated erythrocyte sedimentation rate (ESR 120 mm/h). Serum chemistry demonstrates dehydration, metabolic acidosis, electrolyte imbalance, and low serum folic acid and iron levels.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chagas disease (Trypanosoma cruzi infection)",
+      "rule_out_reason": "Trypanosoma cruzi is endemic in Brazil and displays marked gastrointestinal tropism with motility disturbance and diarrhea, but serologic testing for anti-T. cruzi antibodies was negative.",
+      "quote": "Tests to detect anti-Trypanosoma cruzi antibodies, a protozoan also endemic in Brazil and with tropism for the gastrointestinal tract, and the anti-HIV testing were negative."
+    },
+    {
+      "candidate": "HIV infection with opportunistic enteritis",
+      "rule_out_reason": "The combination of chronic diarrhea, pancytopenia, and wasting in an endemic area strongly suggested advanced HIV disease with opportunistic enteropathy; however, anti-HIV testing was negative and CD4 T-lymphocyte counts were preserved.",
+      "quote": "Patient's lymphocyte counts were TCD4+: 539/mm3, TCD8+: 503/mm3 e TCD3+: 1,094/mm3... and the anti-HIV testing were negative."
+    },
+    {
+      "candidate": "Isolated intestinal schistosomiasis",
+      "rule_out_reason": "Identification of Schistosoma mansoni eggs in stool microscopy explained intestinal symptoms, but targeted anti-schistosomal treatment with praziquantel failed to resolve the diarrhea and wasting, demonstrating that schistosomiasis was not the sole cause.",
+      "quote": "eggs of S. mansoni were identified on stool microscopy. The patient was treated with praziquantel 60 mg/kg of body weight. After four weeks, diarrhea remained unchanged, and his condition continued to deteriorate with anorexia and weight loss."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of Leishmania amastigotes in bone marrow aspirates and duodenal biopsies (confirmed by immunohistochemistry and qPCR), combined with the detection of Schistosoma mansoni eggs on stool microscopy, established dual co-infection with visceral leishmaniasis and schistosomiasis causing persistent diarrheal syndrome.",
+      "quote": "The diagnosis of visceral leishmaniasis was firmed by the detection of amastigotes in a bone marrow aspirate smears... eggs of S. mansoni were identified on stool microscopy... Duodenal mucosa histopathology showed the persistence of amastigotes, as four months before (Figure 1). The immunohistochemical study confirmed the presence of numerous immunolabeled amastigotes forms of Leishmania"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis, Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Canonical ground truth target is Leishmaniasis, Schistosomiasis. Admission breakpoint strictly maintained before bone marrow aspirate, endoscopies, and stool microscopy. Differential rule-outs verified with exact quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4298925_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 52-year-old diabetic and alcoholic male presents with an indolent chest wall mass and rib fracture/osteomyelitis following two months of empiric daily antitubercular therapy for an encysted exudative pleural effusion and necrotic mediastinal lymphadenopathy. The clinical tension lies in differentiating a refractory tuberculous 'cold abscess' (empyema necessitans) from pleuropulmonary melioidosis\u2014the 'great mimicker'\u2014which readily forms abscesses in the lungs, bones, and visceral organs in diabetic hosts while remaining resistant to standard empirical antitubercular drugs.\n2. Admission Breakpoint: The breakpoint is established when the patient presents after two months of empirical antitubercular therapy with an infra-axillary chest wall mass, rib fracture/osteomyelitis, and splenic microabscesses on CT, immediately prior to needle aspiration of the mass for pus culture/sensitivity and initiation of intravenous carbapenem therapy.\n3. Differential Distinctions: Tuberculosis is ruled out by low pleural ADA and progressive chest wall/rib abscess development despite compliant daily antitubercular therapy. Acute pyogenic bacterial osteomyelitis/empyema (e.g., S. aureus) is ruled out by the indolent, afebrile, 'cold' presentation and concurrent multi-organ splenic microabscesses characteristic of Burkholderia.",
+  "case_prompt": "A 52-year-old male with a history of diabetes mellitus and chronic alcohol use presents with left-sided chest pain and a newly noticed swelling over the left chest wall that has progressed over the past 3 weeks. Two months earlier, he had presented with progressive exertional dyspnea of 2 months' duration. At that initial evaluation, chest radiography revealed an encysted left-sided pleural effusion, and thoracentesis demonstrated a lymphocyte-predominant exudative effusion with a low adenosine deaminase (ADA) level. Thoracic computed tomography (CT) at that time showed the encysted left pleural effusion, a small necrotic posterior mediastinal lymph node, and splenic cysts. Based on those findings, daily empiric antitubercular therapy had been started.\n\nDespite completing two full months of compliant daily antitubercular therapy, his symptoms worsened, culminating in the appearance of a focal chest wall mass and localized left thoracic pain.\n\nOn physical examination, he is afebrile and hemodynamically stable. Examination of the chest wall reveals a 3 \u00d7 3 cm swelling over the left infra-axillary area; the overlying skin appears normal with no erythema or local warmth, but the mass is soft, compressible, and tender to palpation. Auscultation reveals decreased breath sounds over the left lung base.\n\nRepeat chest radiography demonstrates volume loss, blunting of the left costophrenic angle, and a cortical fracture of the lateral aspect of the left eighth rib. Thoracic CT demonstrates multiple areas of subsegmental atelectasis in the basal segments of the left lower lobe, a minimally displaced fracture of the lateral aspect of the left eighth rib with an adjacent fluid collection indicative of osteomyelitis, and multiple enhancing hypodense lesions and cysts throughout the spleen.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous empyema necessitans and rib cold abscess (Mycobacterium tuberculosis)",
+      "rule_out_reason": "A lymphocyte-predominant exudative pleural effusion with necrotic mediastinal adenopathy and chronic chest wall fluid collection in an endemic region is typically attributed to tuberculosis. However, initial pleural fluid ADA was low, and the patient deteriorated clinically with new rib osteomyelitis and chest wall abscess despite two full months of supervised daily antitubercular therapy.",
+      "quote": "initial pleural fluid analysis showed lymphocyte predominant exudative type pleural effusion with low adenosine deaminase (ADA)."
+    },
+    {
+      "candidate": "Pyogenic bacterial osteomyelitis and empyema necessitans (e.g., Staphylococcus aureus)",
+      "rule_out_reason": "Pyogenic chest wall abscesses and bacterial rib osteomyelitis typically present with acute high fevers, rigors, and intense local inflammatory signs such as erythema and warmth. In contrast, this patient presented with an indolent course, normal overlying skin temperature, and multi-organ splenic microabscesses characteristic of disseminated tropical granulomatous infection.",
+      "quote": "skin over swelling was normal, soft, compressible with no local rise of temperature and tenderness present."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when aspiration of the chest wall swelling yielded purulent fluid that grew Burkholderia pseudomallei demonstrating characteristic cornflower colony morphology and bipolar 'safety-pin' staining on microscopy, confirming pleuropulmonary melioidosis with rib osteomyelitis that cleared on intravenous imipenem followed by trimethoprim-sulfamethoxazole.",
+      "quote": "Pus culture and sensitivity report came as B. pseudomallei with corn flower colonies [Figure 5] and bipolar staining safety pin appearance on microscopy [Figure 6]. Patient was treated with intravenous injection of imipenem for 14 days followed by oral trimethoprim-sulfamethoxazole."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Superb clinical trajectory highlighting treatment failure of empirical ATT unmasking pleuropulmonary melioidosis. Breakpoint cleanly separates pus culture and susceptibility."
+}

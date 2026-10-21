@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9974305_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 26-year-old male farmer presents with 14 days of fever, headache, and abdominal pain initially misdiagnosed and treated as dyspepsia, who then collapses with stupor (GCS 6), seizures, profound jaundice, copious hematemesis, black urine, and severe acute kidney injury (creatinine 12.8 mg/dL). The profound multiorgan collapse mimicked acute liver failure, uremic encephalopathy, or severe leptospirosis until microscopic blood smear revealed hyperparasitemic Plasmodium falciparum.\n2. Admission Breakpoint: Admission triage terminates after initial clinical presentation (stupor, GCS 6, fever 38.5 \u00b0C, deep jaundice, copious hematemesis, black urine, hepatosplenomegaly), baseline labs (creatinine 12.8 mg/dL, BUN 246.87 mg/dL, transaminases, anemia, thrombocytopenia), negative viral hepatitis/HIV serologies, and clear chest radiograph, prior to peripheral blood smear microscopy or intravenous artesunate/hemodialysis.\n3. Differential Distinctions: Uncomplicated dyspepsia / peptic ulcer disease was the initial mistaken diagnosis at primary clinics due to abdominal pain, but progressive encephalopathy, hemolysis, and multiorgan failure ruled out benign gastrointestinal disease. Acute viral hepatitis / acute liver failure was considered given profound jaundice, transaminitis, and hepatomegaly, but ruled out by negative HBsAg, anti-HCV, and anti-HIV. Leptospirosis causes fever, jaundice, renal failure, and hemorrhage in agricultural workers, but blood smear proved malaria. Severe falciparum malaria with blackwater fever was confirmed on blood smear.",
+  "case_prompt": "A 26-year-old male farmer is brought to the regional public hospital in Sikka Regency, East Nusa Tenggara, Indonesia, with acute loss of consciousness, generalized seizures, and profound jaundice. Fourteen days prior to presentation, he developed persistent fever, headache, and abdominal pain. He sought care at a primary health center and subsequently at a private clinic, where he was treated for dyspepsia without clinical improvement. Over the 24 hours preceding presentation, he experienced an episode of seizure, progressive decline in consciousness, hematemesis, and passage of black-colored urine. He has no past medical history and no history of travel outside his residential area. He works as a farmer and reports never using mosquito repellent.\n\nOn physical examination, the patient is stuporous with a Glasgow Coma Scale (GCS) score of 6. His body temperature is 38.5 \u00b0C, blood pressure 142/75 mmHg, heart rate 105 beats per minute, respiratory rate 30 breaths per minute, and oxygen saturation 96% on a nonrebreathing mask at 12 L/min. Sclerae and skin demonstrate profound jaundice. He has active copious hematemesis. Abdominal examination reveals palpable hepatomegaly and splenomegaly. Urinary catheterization drains black-colored urine.\n\nInitial laboratory testing reveals severe acute kidney injury: serum creatinine 12.8 mg/dL, urea 529 mg/dL, and blood urea nitrogen (BUN) 246.87 mg/dL. Liver enzymes are elevated: aspartate aminotransferase (AST) 214 U/L and alanine aminotransferase (ALT) 409 U/L. Complete blood count shows anemia with hemoglobin 9.8 g/dL and thrombocytopenia with platelet count 61,000/\u00b5L. Serologic screening tests for hepatitis B surface antigen (HBsAg), hepatitis C antibody (anti-HCV), and human immunodeficiency virus (HIV) are all negative. Chest radiography demonstrates normal lung fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Complicated dyspepsia / Peptic ulcer disease with upper GI bleeding",
+      "rule_out_reason": "Initially diagnosed and treated as dyspepsia at primary care facilities due to prominent abdominal pain; however, the subsequent emergence of acute renal failure, hemolysis (blackwater fever), seizures, and coma ruled out uncomplicated gastrointestinal disease.",
+      "quote": "Several days before, he was treated for dyspepsia in another primary health center, which did not get better, and he was treated for the same diagnosis in a private clinic."
+    },
+    {
+      "candidate": "Acute viral hepatitis / Acute fulminant liver failure",
+      "rule_out_reason": "Evaluated because of deep jaundice, hepatomegaly, transaminase elevation, and altered sensorium, but excluded by negative serological markers for viral hepatitides and HIV.",
+      "quote": "He tested negative for HBsAg, negative for anti-HCV, and negative for anti-HIV."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Severe Plasmodium falciparum malaria with multiorgan dysfunction",
+      "rule_out_reason": "Examination of the peripheral blood smear demonstrated intraerythrocytic ring forms of Plasmodium falciparum with high-density parasitemia of 176,000 parasites/\u00b5L (3.52%), establishing severe malaria with cerebral involvement, blackwater fever, acute kidney injury, and hematemesis.",
+      "quote": "At that moment, peripheral blood smear revealed Plasmodium falciparum and parasitemia with a density of 176,000 parasites/muL (3.52%) (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Admission prompt stops at triage presentation before peripheral blood smear identification and IV artesunate. Quotes verified verbatim."
+}

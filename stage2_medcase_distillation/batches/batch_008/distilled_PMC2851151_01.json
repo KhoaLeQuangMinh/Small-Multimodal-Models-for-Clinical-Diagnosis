@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2851151_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A long-term expatriate aquarium worker presenting with chronic progressive dyspnea and secondary left-sided hydropneumothorax, accompanied by concurrent pulmonary and hepatic cystic masses with detached membranes. The clinical challenge is distinguishing an infectious parasitic zoonosis from necrotic cavitary bronchogenic carcinoma, complicated amebic or pyogenic lung/liver abscesses, or congenital cysts.\n2. Admission Breakpoint: The admission clinical and baseline triage workup including physical examination, normal laboratory panel, chest radiography, and thoracoabdominal ultrasound, prior to diagnostic thoracoscopy, scolicidal agent instillation, and pleural biopsy.\n3. Differential Distinctions: Cavitary bronchogenic carcinoma with pleural metastasis typically demonstrates irregular thick-walled necrotic lesions and tissue invasiveness rather than multi-organ cystic masses with floating internal membranes; pyogenic or amebic lung abscess presents with acute fever, sepsis, leukocytosis, and foul-smelling sputum; congenital duplication or bronchogenic cysts are isolated unilocular thoracic anomalies without concurrent liver involvement.",
+  "case_prompt": "A 58-year-old male who has worked in an aquarium shop in Saudi Arabia for more than 15 years presents with an 8-month history of breathlessness and vague abdominal discomfort, with worsening dyspnea and cough productive of scanty mucoid expectoration over the preceding month. In his workplace, he had occupational contact with aquatic creatures and occasional exposure to imported cats. He denies tobacco, alcohol, or substance use, and has no significant past medical or surgical history.\n\nOn physical examination, he is comfortable at rest with stable vital signs. Respiratory examination reveals physical findings consistent with a left-sided hydropneumothorax. The remainder of the physical examination is within normal limits.\n\nBaseline laboratory evaluation, including complete blood count, random blood sugar, and renal and liver function tests, is normal. A chest radiograph demonstrates a well-defined mass lesion abutting the mediastinum in the right upper zone, a left-sided pneumothorax with blunting of the costophrenic angle, and large nodular lesions within the collapsed left lung field. An ultrasound examination of the thorax and abdomen reveals multiple large lobulated cysts in both the liver and lung, with two lesions demonstrating detached internal membranes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchogenic Carcinoma / Pulmonary Malignancy with Necrotic Metastases",
+      "rule_out_reason": "Considered because of the long symptom duration, bilateral lung mass lesions, and secondary pneumothorax, but excluded by the patient's normal constitutional labs, benign clinical exam, and ultrasound demonstrating well-circumscribed fluid-filled lobulated cysts with detached internal membranes rather than solid invasive neoplasms.",
+      "quote": "An ultrasound examination of the thorax and abdomen (Fig. 3) had revealed multiple large lobulated cysts in liver and lung with two of them showing detached membranes."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Empyema or Amebic Lung/Liver Abscess",
+      "rule_out_reason": "Considered given the hydropneumothorax and concomitant thoracic and hepatic involvement, but ruled out by the absence of fever, completely normal leukocyte count, normal liver enzymes, and failure to aspirate purulent bacterial exudate.",
+      "quote": "Complete blood count, random blood sugar, renal and liver function tests were all normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Thoracoscopic visualization of the visceral pleura revealed remnants of a partially ruptured cyst with an adherent glistening white parasitic membrane communicating with the pleural cavity, confirming pleuropulmonary hydatid disease.",
+      "quote": "The visceral pleural surface revealed remnants of a partially ruptured cyst and a glistening white membrane adherent to it (Fig. 5a,5b)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to triage evaluation including plain chest radiograph and ultrasound before invasive thoracoscopy. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

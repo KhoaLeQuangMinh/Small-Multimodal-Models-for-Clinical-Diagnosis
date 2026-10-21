@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7757277_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old male with cerebral palsy presents with severe cachexia, evening fevers, and a painless, non-inflammatory right supraorbital and eyelid swelling over four months. Neuroimaging demonstrates aggressive osteolytic destruction of the orbital roof extending into the frontal bone with an epidural soft-tissue component. The primary diagnostic tension is distinguishing an aggressive calvarial malignancy (such as primary sarcoma or metastasis) or acute pyogenic osteomyelitis from tuberculous osteitis with an indolent cold abscess.\n2. Admission Breakpoint: The admission evaluation concludes after clinical triage and brain CT scan characterizing the osteolytic lesion of the orbital roof and frontal bone with epidural extension, prior to neurosurgical eyebrow exploration, pus drainage, and bone biopsy histopathology.\n3. Differential Distinctions: Calvarial neoplasm (e.g., osteosarcoma, Langerhans cell histiocytosis, or skull metastasis) presents with osteolytic bone erosion and epidural mass effect in a cachectic patient, but demonstrates malignant or atypical cells without true caseating necrosis or infectious purulence. Acute pyogenic osteomyelitis and subperiosteal abscess (Pott's puffy tumor) cause bone destruction and epidural collections but are typically characterized by intense local erythema, calor, severe tenderness, and rapid evolution, contrasting with this painless, indolent, non-erythematous cold mass.",
+  "case_prompt": "A 50-year-old male with a medical history of cerebral palsy was referred to the neurosurgery department from the ophthalmology clinic with a four-month history of progressive right supraorbital swelling involving the right upper eyelid. The swelling began as a painless subcutaneous nodule in the eyelid and insidiously enlarged. He also endorsed evening fevers and progressive weight loss.\n\nOn physical examination, the patient appeared cachectic. Vital signs were notable for low-grade evening fever. Focused examination of the right eye and orbit revealed a prominent right supraorbital mass extending into the upper eyelid. The mass was notably non-inflammatory, soft, fluctuant, and non-tender to palpation, without overlying erythema, warmth, or discharge. Visual acuity and ocular motility were preserved, and no focal neurologic deficits were detected.\n\nNon-contrast and contrast-enhanced brain CT scans demonstrated an osteolytic lesion involving the right orbital roof with extension into the adjacent frontal bone, associated with a contiguous epidural soft tissue mass and subperiosteal collection.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary calvarial neoplasm or metastatic bone disease",
+      "rule_out_reason": "Considered because a chronic progressive skull mass causing osteolytic destruction of the orbital roof and frontal bone with an associated epidural mass in a cachectic patient strongly mimics osteosarcoma, myeloma, or skull metastasis. However, surgical exploration revealed purulent fluid collection, and bone histology demonstrated necrotizing granulomatous inflammation rather than malignant cells.",
+      "quote": "The brain CT scan objectified an osteolytic lesion of the orbital roof extended to frontal bone associated to an epidural lesion (Figure 2)."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial osteomyelitis and subperiosteal abscess",
+      "rule_out_reason": "Considered because bacterial infection (such as staphylococcal or streptococcal osteomyelitis) can destroy the frontal bone and extend into the epidural space. However, pyogenic abscesses produce acute inflammatory warmth, erythema, and severe local pain, whereas this lesion followed a four-month indolent course manifesting as a non-inflammatory, painless 'cold abscess'.",
+      "quote": "the physical examination found a cachectic patient, complaining with fever in the evening and presenting a right supra orbital mass (Figure 1); the mass is non inflammatory, soft and painless."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical exploration through a right eyebrow incision evacuated thick cold purulent collection beneath the eyelid, and histological analysis of the osteolytic frontal/orbital bone biopsy demonstrated characteristic caseo-follicular tuberculosis, establishing tuberculous osteitis and orbital cold abscess.",
+      "quote": "We performed a biopsy of the bone lesion and the histological examination objectified a caseo follicular tuberculosis. The immediate post operative outcome was favorable with the disappearance of the collection. The patient was exited from the hospital 2 weeks after with a reference letter to infectious diseases department for anti tuberculosis treatment."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Orbital tuberculosis presenting as an osteolytic frontal bone lesion and painless cold abscess mimicking bone malignancy. All histopathological findings, biopsy results, and pathogen names excluded from case_prompt."
+}

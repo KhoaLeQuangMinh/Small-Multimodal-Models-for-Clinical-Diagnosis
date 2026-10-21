@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8278846_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 20-month-old child presenting with acute respiratory distress and wheezing is misdiagnosed with viral bronchiolitis despite an empirical antimycobacterial regimen initiated for household exposure. The core tension is recognizing that the acute respiratory failure, persistent airway obstruction, and subsequent development of a massive chylothorax stem from lymph node erosion into the thoracic duct and airway caused by rifampicin-resistant Mycobacterium tuberculosis.\n2. Admission Breakpoint: The breakpoint is set at the initial admission evaluation when the child presents with respiratory distress, tachycardia, wheezing, and cervical/axillary lymphadenopathy, before subsequent disease progression on hospital day 5 to dullness, development of chylothorax, diagnostic pleurocentesis, bronchoscopy, and bronchoalveolar lavage GeneXpert MTB/RIF testing.\n3. Differential Distinctions: Acute viral bronchiolitis is ruled out by non-response to hypertonic saline, systemic steroids, and amoxicillin, as well as the appearance of a massive chylothorax and endobronchial caseating lymph node obstruction. Drug-susceptible tuberculosis is ruled out by clinical progression despite first-line 4-drug therapy and negative gastric aspirates, with GeneXpert on BAL establishing rifampicin resistance. The diagnosis of multidrug-resistant tuberculosis is confirmed by rapid clinical and radiological resolution following second-line MDR-TB therapy.",
+  "case_prompt": "A 20-month-old HIV-exposed uninfected boy was brought to the emergency department with a 2-day history of acute shortness of breath, cough, and noisy breathing. Over the preceding week, he had experienced intermittent fever, vomiting, and night sweats. Over the preceding eight months, his growth had faltered with significant weight loss, falling from a weight-for-height z-score of +2 down to the median. Two weeks prior to presentation, an empirical four-drug regimen (rifampicin, isoniazid, pyrazinamide, and ethambutol) had been initiated at a primary healthcare clinic following a positive Mantoux test and abnormal baseline chest radiography, in the setting of close household exposure to his father, who had been receiving treatment for a chronic pulmonary illness for four months.\n\nOn physical examination, the child was afebrile, tachycardic, and in moderate respiratory distress with marked chest wall indrawing (subcostal and intercostal retractions). Oxygen saturation was 97% on ambient air. Palpation revealed small, non-tender bilateral posterior cervical and axillary lymph nodes (<0.5 cm in diameter). Auscultation of the chest revealed clinical hyperinflation and diffuse bilateral wheezing. The remainder of the physical examination was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Bronchiolitis / Reactive Airway Disease",
+      "rule_out_reason": "Considered initial clinical diagnosis based on acute tachypnea, chest wall indrawing, hyperinflation, and bilateral wheezing; ruled out by complete lack of response to nebulized hypertonic saline, oral corticosteroids, and amoxicillin, followed by the development of unilateral percussion dullness and a chylothorax.",
+      "quote": "He was diagnosed with viral bronchiolitis, and therefore a chest X-ray was not performed. He was started on oxygen and hypertonic saline nebulisation. He responded poorly to this initial treatment and was therefore started on oral corticosteroids and amoxicillin on day 2 of hospitalisation"
+    },
+    {
+      "candidate": "Drug-Susceptible Tuberculosis on First-Line Therapy",
+      "rule_out_reason": "Considered given the prior clinic diagnosis and 2-week history of first-line therapy; ruled out as adequate therapy because the patient clinically deteriorated with progressive lymph node enlargement obstructing the main bronchi, proven on BAL to harbor rifampicin resistance.",
+      "quote": "The Xpert MTB/RIF (Cephaid, USA) test on a bronchoalveolar lavage specimen identified rifampicinresistant Mycobacterium tuberculosis."
+    },
+    {
+      "candidate": "Pyogenic Parapneumonic Empyema",
+      "rule_out_reason": "Considered when the patient developed dullness to percussion and absent breath sounds over the right hemithorax; ruled out by diagnostic thoracentesis yielding chyle rather than purulent bacterial exudate.",
+      "quote": "Diagnostic pleurocentesis confirmed a chylothorax."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Development of a massive chylothorax caused by caseating mediastinal lymph nodes eroding the thoracic duct and main bronchi, with GeneXpert MTB/RIF on bronchoalveolar lavage identifying rifampicin-resistant Mycobacterium tuberculosis, leading to clinical cure on second-line MDR-TB treatment.",
+      "quote": "Diagnostic pleurocentesis confirmed a chylothorax. It was suspected that tuberculous lymph nodes had eroded the thoracic duct causing the chylothorax, and therefore a bronchoscopy was performed, which revealed caseating lymph nodes in the right main bronchus suggestive of TB, and 90% obstruction of the left main bronchus. The Xpert MTB/RIF (Cephaid, USA) test on a bronchoalveolar lavage specimen identified rifampicinresistant Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Chylothorax development, bronchoscopy findings, and BAL GeneXpert MTB/RIF excluded from prompt. Zero disease spoilers."
+}

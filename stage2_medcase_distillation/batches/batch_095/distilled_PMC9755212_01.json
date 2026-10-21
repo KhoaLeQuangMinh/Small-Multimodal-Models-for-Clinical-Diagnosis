@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9755212_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 42-year-old man on prolonged anti-TNF (adalimumab) and methotrexate therapy for psoriasis developed multiple crusted nodules and ulcerations within his chronic psoriatic plaques. The core tension is distinguishing cutaneous pseudolymphoma induced by an opportunistic protozoan infection (Leishmania infantum) from secondary cutaneous lymphoma, drug-induced lymphoproliferative disorder, or atypical mycobacterial/spirochetal infection in a heavily immunosuppressed patient.\n2. Admission Breakpoint: The admission breakpoint is established at initial inpatient hospital evaluation, including dermatologic examination (ulcerating crusted nodules within psoriatic plaques, PASI 16.6, no lymphadenopathy) and travel history to southern Italy, before in-house repeat biopsies, tissue clonality assays, and specialized protozoan stains.\n3. Differential Distinctions: Cutaneous T-cell lymphoma was excluded by polyclonal TCR gamma and IgH rearrangements. Autoimmune connective tissue disease was ruled out by negative direct immunofluorescence, negative ANA/ENA, and normal complements. Syphilis, tuberculosis, and borreliosis were excluded by negative serologies and PCR. Identification of intracellular amastigotes with kinetoplasts on Giemsa stain and confirmatory miniexon PCR established Leishmania infantum.",
+  "case_prompt": "A 42-year-old Italian man presented with a 6-month history of multiple progressive nodules and ulcerations developing within pre-existing skin plaques. He had a 20-year history of plaque psoriasis and psoriatic arthritis. For the preceding 9 years, he had received subcutaneous methotrexate at a dose of 25 mg weekly, and for the past 7 years, he had been treated with the tumor necrosis factor-alpha (TNF-α) inhibitor adalimumab (40 mg every other week). His topical regimen in recent weeks included halometasone-triclosan cream and calcipotriol-betamethasone foam. The patient was born in and regularly visited southern Italy.\n\nOn physical examination, the patient was obese with a body mass index of 39 kg/m². Dermatologic examination revealed widespread erythemato-squamous plaques over the trunk and extremities, with a Psoriasis Area and Severity Index (PASI) of 16.6. Arising within these plaques were multiple distinct erosive and ulcerating nodules, several of which were covered with adherent brownish crusts, distributed over the right forearm, right knee, left flank, and abdomen. There was no peripheral lymphadenopathy. Systemic physical examination was otherwise normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous T-cell lymphoma / iatrogenic lymphoproliferative disorder",
+      "rule_out_reason": "High concern in a patient receiving chronic anti-TNF and methotrexate therapy presenting with ulcerating skin nodules showing dense dermal lymphoid infiltrates; ruled out by molecular gene rearrangement studies demonstrating polyclonal IgH and TCR gamma configurations without clonal malignant expansion.",
+      "quote": "The histopathology of an externally performed lesion biopsy reported dermal T-cell infiltrates without evidence repeated of malignancy... Tissue clonality analyses demonstrated polyclonal IgH and TCR gamma chain gene expression, thus excluding lymphoma."
+    },
+    {
+      "candidate": "Autoimmune connective tissue disease / cutaneous lupus erythematosus",
+      "rule_out_reason": "Considered due to the presence of interface dermatitis and dense pseudolymphomatous lymphoid infiltrate; excluded by negative direct immunofluorescence for immunoglobulins and C3, negative antinuclear and extractable nuclear antigen antibodies, and normal serum complement levels.",
+      "quote": "Direct immunofluorescence did not detect any IgG, IgM, IgA, or C3 depositions... A serum sample was negative for antibodies against (extractable) nuclear antigens. Complement factors were within normal ranges."
+    },
+    {
+      "candidate": "Secondary syphilis, cutaneous tuberculosis, or borreliosis",
+      "rule_out_reason": "Considered because histopathology showed a rich plasma cell infiltrate in an immunosuppressed individual; ruled out by negative treponemal serology, negative Borrelia testing, and negative Mycobacterium tuberculosis PCR.",
+      "quote": "Syphilis serology, carried out due to numerous plasma cells in the tissue, yielded negative results. Moreover, an HIV infection, borreliosis and tuberculosis were ruled out by negative antibody or PCR tests."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic evaluation of cutaneous biopsies with Giemsa, Feulgen, and hematoxylin-eosin staining revealing intracellular amastigotes bearing characteristic kinetoplasts within macrophages, confirmed by miniexon PCR and restriction fragment length polymorphism as Leishmania infantum, alongside positive anti-Leishmania serology (titer 1:1,600), established cutaneous pseudolymphoma secondary to Leishmania infantum infection.",
+      "quote": "In hematoxylin-eosin (Figure 1C), Giemsa (Figure 1D) and Feulgen stains, intracellular Leishmania amastigotes with kinetoplasts were seen, which were identified by culture, miniexon PCR and restriction fragment length polymorphism-analysis as L. infantum. The patient also had a positive anti-Leishmania serology (maximum titer detected by indirect immunofluorescence using viable L. major promastigotes was 1:1,600)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly confined to clinical history, biologic/immunosuppressive medication timeline, geographic origin, and baseline skin examination. All histopathologic findings, clonality studies, and parasitology assays are restricted to the diagnostic reasoning section."
+}

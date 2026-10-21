@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12884859_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 27-year-old woman with a prior incidental pancreatic cyst presents with acute 10/10 cramp-like abdominal pain and a massive 11.6 cm complex hepatic cystic mass with dependent free peritoneal fluid in the gallbladder fossa and pelvis, raising fear of an acute cyst rupture. The tension centers on differentiating an acute surgical abdomen from ruptured congenital cyst, pyogenic/amebic hepatic abscess, or biliary cystadenoma versus a complicated zoonotic cestode hydatid cyst requiring extreme caution to prevent anaphylaxis.\n2. Admission Breakpoint: Emergency abdominal CT completion and cross-sectional confirmation of the complex multilocular cyst with pelvic free fluid, followed by specific parasitic serology (Echinococcus IgG) and interventional radiology PAIR procedure.\n3. Differential Distinctions:\n- Pyogenic or Amebic Liver Abscess: Large irregular hepatic fluid collections typically represent abscesses in patients presenting with acute severe right upper quadrant pain, but this patient was completely afebrile (36.9°C), hemodynamically stable, lacked peritonitis, and routine bacterial, fungal, and mycobacterial cultures of aspirated fluid were sterile.\n- Biliary Cystadenoma / Congenital Biliary Cyst: Complex multiseptated cystic liver masses in young females often represent biliary cystic neoplasms, but a recent history of rural travel to South America with canine/livestock contact, hypereosinophilia, and positive parasite-specific IgG confirmed a zoonotic hydatid etiology.\n- Ruptured Pancreatic Pseudocyst / Simple Cyst: The patient had a known history of a pancreatic cyst, but cross-sectional imaging localized the dominant acute multiloculated pathology to the left hepatic lobe rather than the pancreas.",
+  "case_prompt": "A 27-year-old female presented to the emergency department with a 2-day history of severe, diffuse, cramp-like abdominal pain associated with postprandial nausea. She rated her pain intensity as 10 out of 10. Her medical history was notable for gastritis and an incidental pancreatic cyst diagnosed on magnetic resonance imaging 3 months earlier. She denied sick contacts but reported recent travel to South America with close contact with livestock and dogs.\n\nOn physical examination, she was afebrile with an oral temperature of 36.9°C, heart rate of 80 beats per minute, respiratory rate of 16 breaths per minute, blood pressure of 126/90 mmHg, and oxygen saturation of 99% breathing ambient air. Her abdomen was soft with mild diffuse tenderness that was most pronounced in the epigastric region, without muscular guarding, rigidity, or rebound tenderness. There was no evidence of jaundice, and the rest of her physical exam was unremarkable.\n\nInitial abdominal US demonstrated a complex cystic structure in the left hepatic lobe measuring 11.6x8x8 cm. Subsequent CT scan of the abdomen and pelvis showed an 11.8x8.8x5.2 cm irregular hypodense cystic structure in the left hepatic lobe. Additionally, it was noted that there was free fluid around the gallbladder fossa and in the right paracolic gutter, extending into the pelvis, raising concerns about a ruptured cyst.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic or Amebic Hepatic Abscess",
+      "rule_out_reason": "Considered given the large complex hepatic fluid collection, acute severe abdominal pain, and peripheral neutrophilia, but excluded by the absence of fever, lack of toxic symptoms, and sterile bacterial, fungal, and mycobacterial cultures.",
+      "quote": "The cyst fluid was sent for routine bacterial, fungal, and mycobacterial cultures, all of which were negative."
+    },
+    {
+      "candidate": "Biliary Cystadenoma or Congenital Hepatic Cyst",
+      "rule_out_reason": "Considered due to the multiseptated cystic appearance in a young woman with a history of a prior pancreatic cyst, but ruled out by peripheral hypereosinophilia, positive specific serology, and characteristic hydatid morphology after canine and livestock exposure in South America.",
+      "quote": "The discovery of liver cysts on the CT scan prompted further laboratory evaluation, which revealed hypereosinophilia, neutrophilia, and a positive Echinococcus IgG result (Table 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The visualization on CT of an 11.8 cm irregular multivesicular cystic liver lesion with free abdominal fluid following South American pastoral exposure, corroborated by marked hypereosinophilia and positive Echinococcus IgG, which led to pre-procedure albendazole and successful percutaneous PAIR (puncture, aspiration, injection of hypertonic saline, and re-aspiration).",
+      "quote": "Subsequent CT scan of the abdomen and pelvis showed an 11.8x8.8x5.2 cm irregular hypodense cystic structure in the left hepatic lobe, which resembled a hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded Echinococcus serology, PAIR procedure, and albendazole from presentation. Zero spoilers, full quote fidelity."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3884940_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A patient presenting with an eruption of polymorphous, tender cutaneous nodules that break down into vesicles, ulcers, and impetiginous crusts alongside fever and arthralgias, but without classic hypopigmented anesthetic skin patches or palpable peripheral nerve enlargement, mimics bullous impetigo, Sweet syndrome, or vasculitis.\n2. Admission Breakpoint: History, dermatological exam, peripheral nerve assessment, baseline hemogram, ESR, and purulent swab bacterial culture, stopping immediately prior to cutaneous punch biopsy histopathology and Fite staining.\n3. Differential Distinctions: Staphylococcal/streptococcal impetigo or ecthyma was excluded by sterile pus cultures. Neutrophilic dermatoses (Sweet syndrome) or systemic vasculitis were considered given painful pustular/vesicular lesions and arthralgias, but skin biopsy revealed a Grenz zone, dense foamy histiocytic sheets, and abundant acid-fast bacilli on Fite stain, confirming an atypical presentation of erythema nodosum leprosum (type 2 reaction) in lepromatous leprosy.",
+  "case_prompt": "A 36-year-old man presented with a 3-month history of progressive nodular, ulcerative, and crusted impetiginous skin lesions involving the trunk, upper extremities, and thighs. The eruption began as small, tender nodular lesions over the trunk that gradually disseminated to the upper and lower limbs. The nodules evolved into vesicles that subsequently ruptured, leaving behind crusted lesions, some of which exhibited a distinct peripheral collar, along with several frank ulcerations. He also reported concurrent episodes of fever and joint pain.\n\nHe reported no sensory loss, motor weakness, or numbness in any body region. On physical examination, there were no definite anesthetic patches. Palpation of peripheral nerve trunks revealed no enlargement or thickening. Regional lymph nodes were not palpable.\n\nBaseline complete hemogram and erythrocyte sedimentation rate (ESR) were normal. Bacterial culture obtained from pus swabs of the cutaneous lesions yielded no growth of organisms.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial skin infection (impetigo / ecthyma)",
+      "rule_out_reason": "Considered due to the presence of vesicles, pustules, and honey-colored impetiginous crusts, but excluded by negative bacterial culture from lesion exudate.",
+      "quote": "Bacterial culture of the pus revealed no growth of organism."
+    },
+    {
+      "candidate": "Sweet syndrome / cutaneous vasculitis",
+      "rule_out_reason": "Considered because of acute, tender polymorphic erythematous lesions accompanied by systemic fever and polyarthralgias, but ruled out on biopsy by histiocytic foamy infiltration rather than leukocytoclastic vasculitis or sterile neutrophilia.",
+      "quote": "Sweet syndrome like presentation has been reported by Kou and Chan"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination demonstrated a subepidermal Grenz zone with dense sheets of foamy histiocytes, and Fite acid-fast staining demonstrated numerous globi and bacilli characteristic of multibacillary lepromatous disease.",
+      "quote": "Histopathological examination revealed a narrow grenz zone separating flattened epidermis above and dense inflammatory cells in dermis comprising of sheets of foam cells admixed with polymorphs, lymphocytes, and histiocytes [Figure 2]. Fite stain showed numerous solid and fragmented acid fast bacilli discretely as well as in clusters [Figure 3]."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11763228_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A previously healthy man in his 40s presents with subacute fever, hepatosplenomegaly with multiple low-density visceral lesions, and a large solitary pulmonary mass, initially refractory to empiric antibacterials. The primary diagnostic tension lies in differentiating disseminated systemic fungal infection from metastatic malignancy, systemic lymphoma, or HIV-associated opportunistic disease in an immunocompetent-appearing patient who subsequently proves to have idiopathic CD4 lymphopenia (ICL).\n2. Admission Breakpoint: Evaluation concludes following admission vital signs, triage hematology/biochemistry, and thoracic/abdominal CT imaging, immediately prior to percutaneous lung, liver, and spleen puncture biopsies.\n3. Differential Distinctions: Disseminated fungal infection by dimorphic endemic fungi produces granulomatous pulmonary and visceral lesions. Histoplasmosis exhibits small narrow-based budding intracellular yeasts without a septum. Cryptococcosis produces pleomorphic encapsulated budding yeasts positive on mucicarmine stain. Talaromycosis classically exhibits distinctive intracellular and extracellular sausage-like oval yeast organisms that divide by fission with a prominent transverse midline septum rather than budding.",
+  "case_prompt": "A previously healthy man in his 40s was admitted to the hospital with a 15-day history of persistent fever, headache, generalized fatigue, recurrent vomiting, and poor appetite. Ten days prior to admission, he had received an outpatient course of broad-spectrum antibiotics, but his clinical symptoms failed to improve.\n\nOn physical examination upon admission, his body temperature was 38.9°C, respiratory rate 20 breaths per minute, heart rate 116 beats per minute, blood pressure 130/82 mmHg, and oxygen saturation 98% while breathing ambient air. Examination revealed mild jaundice of the sclerae and skin, along with marked hepatomegaly and splenomegaly.\n\nAdmission laboratory investigations revealed a white blood cell count of 6.87 × 10^9/L with 93% neutrophils. Liver biochemistry demonstrated a total bilirubin of 33.9 µmol/L (direct bilirubin 28.7 µmol/L), alanine aminotransferase (ALT) 132 U/L, and aspartate aminotransferase (AST) 227 U/L. Inflammatory markers showed a high-sensitivity C-reactive protein of 110.2 mg/L and an erythrocyte sedimentation rate (ESR) of 19 mm/h.\n\nA computed tomography (CT) scan revealed an irregular mass in the lateral segment of the right middle lobe of the lung measuring 3.7 × 3.0 × 3.2 cm, along with marked enlargement of the liver and spleen containing multiple low-density lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated malignancy or metastatic lymphoma",
+      "rule_out_reason": "Considered given the solitary pulmonary mass, hepatosplenomegaly with multiple discrete low-density lesions throughout the liver and spleen, jaundice, and systemic B-symptoms (fevers, anorexia, fatigue), but ruled out by fine-needle puncture biopsies that revealed characteristic yeast structures without malignant cells.",
+      "quote": "Thorough investigations showed no evidence of HIV infection, autoimmune disease, the use of immunosuppressive drugs, and malignancies."
+    },
+    {
+      "candidate": "Autoimmune disease or adult-onset immunodeficiency with anti-interferon-gamma autoantibodies",
+      "rule_out_reason": "Considered as potential etiologies for opportunistic intracellular fungal dissemination in an adult patient lacking overt immunosuppression, but comprehensive immunologic assays for autoimmune conditions and neutralizing autoantibodies were unrevealing.",
+      "quote": "Serum anti-interferon-gamma autoantibodies testing was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous lung aspiration revealed distinctive sausage-shaped yeast forms with a transverse midline division (fission), with subsequent mycological cultures from blood, bone marrow, liver, and spleen confirming the diagnosis in the context of newly identified idiopathic CD4 lymphopenia (ICL).",
+      "quote": "The lung puncture revealed sausage-like shapes yeast organisms with midline septum (Fig. 1C). Mycological cultures from blood, bone marrow, liver and spleen were positive for TM."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to percutaneous organ punctures and fungal cultures. Zero pathogen names in case prompt. Verbatim quotes validated against text."
+}

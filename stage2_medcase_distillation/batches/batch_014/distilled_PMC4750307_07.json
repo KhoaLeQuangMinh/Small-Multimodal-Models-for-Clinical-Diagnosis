@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_07",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 19-year-old man presents with high fever, headache, vomiting, stupor (GCS 7), and flaccid hypotonia, subsequently developing asymmetric quadriparesis and extensive spinal cord intramedullary lesions extending from C3 to the conus medullaris alongside periventricular/brainstem lesions. This extensive neuro-axis involvement mimics acute disseminated encephalomyelitis (ADEM), transverse myelitis, or neuromyelitis optica spectrum disorder (NMOSD), contrasting sharply with classic metabolic encephalopathy seen in severe dengue.\n2. Admission Breakpoint: Admission clinical and neurological examination (GCS E2M4V1, bilateral nonresponsive plantars, generalized hypotonia, neck rigidity with positive Kernig sign), before neuroimaging (brain/spine MRI), CSF immunoglobulin studies, and autoimmune serologies.\n3. Differential Distinctions: Idiopathic ADEM or autoimmune myelitis (e.g., NMOSD, systemic vasculitis) presents with extensive demyelination but typically features positive autoantibodies (e.g., ANA, ANCA) or oligoclonal bands; dengue encephalopathy without myelitis is purely metabolic with normal neuroimaging; whereas post-dengue meningoencephalomyelitis features longitudinally extensive cord edema and brainstem lesions responsive to high-dose intravenous corticosteroid therapy.",
+  "case_prompt": "A 19-year-old man presented with an 8-day history of continuous high-grade fever, headache, and vomiting, with worsening severe headache and persistent vomiting over the preceding 4 days. One day prior to admission, he developed acute altered sensorium. There was no history of seizures during this period.\n\nOn physical and neurological examination at admission, the patient was stuporous with a Glasgow Coma Scale (GCS) score of 7 (E2M4V1). Meningeal signs were positive, showing neck rigidity with a positive Kernig sign. Cranial nerve examination revealed no gross abnormalities. Motor examination demonstrated generalized hypotonia across all four limbs, and muscle power could not be formally tested due to impaired consciousness. Plantar responses were nonresponsive bilaterally.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune Encephalomyelitis / Systemic Vasculitis / NMOSD",
+      "rule_out_reason": "Multifocal brainstem lesions and longitudinally extensive transverse myelitis strongly suggested an autoimmune demyelinating process such as ADEM or vasculitis, but systemic autoimmune serologies were negative and CSF showed absence of oligoclonal bands.",
+      "quote": "CSF study showed immunoglobulin synthesis index 0.72, immunoglobulin synthesis rate 6.5 mg/day with no oligoclonal bands. VEP was also normal. Autoimmune markers such as ANA, pANCA, and cANCA were negative."
+    },
+    {
+      "candidate": "Metabolic Dengue Encephalopathy",
+      "rule_out_reason": "While metabolic encephalopathy secondary to hepatic dysfunction or electrolyte disturbance can cause altered sensorium in dengue, it is associated with normal brain MRI and unremarkable CSF, unlike the extensive neuro-axis structural inflammation seen here.",
+      "quote": "Both the patients had normal MRI brain and normal CSF picture. Both the patients regained their sensorium after conservative management and electrolyte correction within 7 days. So, metabolic abnormalities caused by dengue virus were considered as the cause for the CNS manifestations in both the patients and diagnosed as dengue encephalopathy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neuroimaging identifying longitudinally extensive myelitis from C3 to conus combined with brainstem lesions and intrathecal immunoglobulin synthesis led to the revised diagnosis of dengue meningoencephalomyelitis, treated successfully with high-dose intravenous methylprednisolone.",
+      "quote": "MRI of whole spine showed hyperintense intramedullary signal changes involving spinal cord extending from C3 level downward until conus suggestive of myelitis with cord edema [Figure 7]... So, a revised diagnosis of dengue meningoencephalomyelitis was made, and he was put on IV methylprednisolone 1 g once daily for 5 days."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt captures admission triage state before spinal MRI and subsequent motor quadriparesis exam. Zero leaks of dengue, steroids, or neuroimaging in prompt."
+}

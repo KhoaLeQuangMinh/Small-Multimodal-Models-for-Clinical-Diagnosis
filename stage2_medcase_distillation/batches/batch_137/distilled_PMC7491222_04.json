@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7491222_04",
+  "disease": "Echinococcosis",
+  "think": "<think>\n1. Core Clinical Tension: Evaluating a patient with chronic complete occlusion of the inferior vena cava and bilateral common iliac veins following resolution of an acute febrile syndrome. The clinical tension centers on determining whether extensive endovascular obstruction warrants aggressive surgical thrombectomy versus conservative medical therapy, given the high peri-operative risk of secondary complications and the presence of well-established collateral circulation.\n2. Admission Breakpoint: The breakpoint stops after the patient presents for surgical consultation with chronic thrombosis of the IVC and common iliac veins, prior to multidisciplinary surgical consensus and specific antihelminthic management.\n3. Differential Distinctions: Acute or progressive deep vein thrombosis requiring surgical thrombectomy or endovascular recanalization is distinguished by the chronic, well-compensated nature of the obstruction with established collaterals and the parasitic nature of the obturation, where surgical intervention carries severe peri-operative risks. Acute bacterial thrombophlebitis is excluded by clinical recovery following medical therapy.\n</think>",
+  "case_prompt": "<case_prompt>\nA patient with extensive vascular occlusion of the inferior vena cava (IVC) and common iliac veins bilaterally presents for multidisciplinary surgical consultation following the clinical resolution of an acute febrile illness. The patient is currently asymptomatic with respect to lower extremity swelling, with imaging confirming extensive venous occlusion alongside well-developed collateral circulation. Surgical resection versus medical management is evaluated.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute / Subacute Deep Venous Thrombosis Requiring Surgical Thrombectomy",
+      "rule_out_reason": "Extensive occlusion of the IVC and common iliac veins typically prompts surgical thrombectomy; however, surgical intervention was declined because well-developed collaterals made the thrombosis functionally chronic and asymptomatic, and open intervention carried prohibitive peri-operative risks.",
+      "quote": "the surgical removal of CE was not advised due to a high peri-operative risk of secondary complications. They confirmed chronic but asymptomatic thrombosis of the IVC and common iliac veins, with developed collaterals."
+    },
+    {
+      "candidate": "Refractory Bacterial Sepsis / Suppurative Thrombophlebitis",
+      "rule_out_reason": "Bacterial infection of thrombosed veins was considered during the preceding febrile episode; however, symptoms resolved rapidly upon combined therapy, indicating that the acute reaction was driven by parasitic reactivation rather than an uncontrolled bacterial process.",
+      "quote": "After the initiation of antiparasitic therapy (albendazole 400 mg/day) and intravenous antibiotic treatment, the patient improved."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recognition that the chronic caval and iliac venous occlusion was caused by reactivation and vascular dissemination of chronic cystic echinococcosis, successfully managed medically while avoiding high-risk surgical resection.",
+      "quote": "We supposed that the febrile reaction was caused by the re-activation of chronic echinococcosis with dissemination of CE to other abdominal regions, affecting the veins."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict source fidelity maintained. Excluded mentions of CE, albendazole, and echinococcosis from case_prompt. Direct verbatim quotes provided. Audit flags NONE."
+}

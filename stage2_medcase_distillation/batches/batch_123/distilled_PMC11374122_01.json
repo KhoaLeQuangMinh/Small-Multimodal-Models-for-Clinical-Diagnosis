@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11374122_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 71-year-old male from an endemic tropical region in Colombia presents with acute psychomotor agitation, confusion, renal dysfunction, severe microangiopathic hemolytic anemia (schistocytes), and profound thrombocytopenia. This clinical picture directly mirrors classic thrombotic thrombocytopenic purpura (TTP), obscuring the diagnosis of severe protozoal parasitic infection (Plasmodium vivax) which can trigger life-threatening secondary endothelial microangiopathy and acquired ultra-severe ADAMTS13 deficiency.\n2. Admission Breakpoint: The admission breakpoint is established upon ICU admission following initial triage examination, non-contrast head CT, and baseline laboratory panels (CBC, renal chemistry, peripheral smear showing schistocytes, and non-autoimmune hemolysis markers), but strictly prior to revealing the specific parasitic thick blood smear identification or send-out ADAMTS13 activity levels.\n3. Differential Distinctions: Idiopathic TTP and atypical hemolytic uremic syndrome (aHUS) share the presentation of MAHA, thrombocytopenia, and neurologic deficits, but in endemic regions must be differentiated from infection-induced secondary thrombotic microangiopathy. Sepsis-induced disseminated intravascular coagulation (DIC) was considered due to acute encephalopathy and multiorgan involvement, but coagulation abnormalities were discordant and peripheral schistocytosis dominated. Autoimmune hemolysis (Evans syndrome) is excluded by non-autoimmune hemolysis markers. The diagnostic pivot is established by detection of intraerythrocytic parasites on blood smear confirming Plasmodium vivax malaria complicated by secondary acquired TTP.",
+  "case_prompt": "A 71-year-old male from Sur de Bolívar, Colombia, with no known prior medical history, is transferred to the emergency department from an outside facility due to a 1-day history of acute psychomotor agitation and incoherent speech. He has no known prior chronic medical conditions and takes no regular medications.\n\nOn physical examination, the patient is disoriented to person, place, and time, and displays marked somnolence. Vital signs are notable for stable blood pressure and absence of overt hyperpyrexia at presentation. Neurological examination reveals no focal motor or sensory deficits, and there are no signs of meningeal irritation. Examination of the head and neck, chest, abdomen, and skin shows no other abnormalities. A non-contrast computed tomography (CT) scan of the brain reveals no acute hemorrhage, territorial ischemic infarction, or space-occupying lesion.\n\nInitial laboratory evaluation demonstrates severe normocytic anemia and marked thrombocytopenia. Biochemical testing reveals elevated blood urea nitrogen (BUN) and acute kidney injury. Markers of red cell destruction show features of non-autoimmune hemolysis, and review of the peripheral blood smear reveals prominent fragmented erythrocytes (schistocytes) and profound platelet depletion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Idiopathic Thrombotic Thrombocytopenic Purpura (TTP)",
+      "rule_out_reason": "The clinical constellation of microangiopathic hemolytic anemia with schistocytes, severe thrombocytopenia, acute renal dysfunction, and fluctuating encephalopathy met classic criteria for TTP; however, in an endemic setting, the entire syndrome was triggered as a secondary phenomenon by acute systemic protozoal infection.",
+      "quote": "persistence of laboratory findings with a microangiopathic hemolytic anemia profile (Table 2, day-3) and a PLASMIC score with a high probability of severe ADAMTS13 deficiency, probable acquired thrombotic thrombocytopenic purpura was considered"
+    },
+    {
+      "candidate": "Disseminated Intravascular Coagulation (DIC) Secondary to Bacterial Sepsis",
+      "rule_out_reason": "Acute multiorgan failure with thrombocytopenia and encephalopathy raised suspicion for bacterial septicemia and consumptive coagulopathy; however, the clinical picture lacked signs of localized bacterial infection and was characterized by profound microangiopathic hemolysis rather than primary consumptive defibrinogenation.",
+      "quote": "severe anemia with markers of non-autoimmune hemolysis, and schistocytes in the peripheral blood associated with severe thrombocytopenia."
+    },
+    {
+      "candidate": "Autoimmune Hemolytic Anemia and Thrombocytopenia (Evans Syndrome)",
+      "rule_out_reason": "Concomitant severe anemia and thrombocytopenia can indicate autoimmune destruction, but direct testing revealed non-autoimmune markers of hemolysis and prominent schistocytosis, pointing toward mechanical microvascular shearing rather than autoantibody-mediated opsonization.",
+      "quote": "Laboratory tests revealed elevated blood urea nitrogen, severe anemia with markers of non-autoimmune hemolysis, and schistocytes in the peripheral blood"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Complicated Plasmodium vivax Malaria Triggering Secondary Acquired TTP",
+      "rule_out_reason": "The underlying diagnosis was established by thick blood smear microscopic examination identifying Plasmodium vivax, with persistent refractory microangiopathy subsequently confirmed as secondary acquired TTP due to ultra-low ADAMTS13 activity (<0.1%) successfully treated with antimalarials, plasma exchange, and rituximab.",
+      "quote": "Extra-institutional laboratory tests showed moderate anemia of normal volume and severe thrombocytopenia with a thick positive smear for P. vivax. Due to the neurological involvement, they suspected complicated malaria... The diagnosis of TTP was confirmed with a report of <0.1% ADAMTS13."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case follows Stanford MedCaseReasoning guidelines. Admission prompt preserves the Day 1 diagnostic dilemma between primary TTP/HUS and complicated tropical protozoal disease by withholding peripheral blood smear parasite identification."
+}

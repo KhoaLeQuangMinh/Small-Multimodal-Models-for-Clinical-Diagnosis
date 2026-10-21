@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7494199_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 23-year-old female Spanish traveler working as an orphanage volunteer in Kathmandu, Nepal presenting with acute watery diarrhea, abdominal bloating, borborygmi, and transient fever. Acute diarrhea in returned or active travelers to Nepal is overwhelmingly presumed to be bacterial gastroenteritis (e.g. Enterotoxigenic E. coli, Campylobacter, Salmonella) or enteric protozoa (Giardia, Entamoeba) related to food and soil hygiene, whereas trematode infection (Schistosoma japonicum) is not endemic to Nepal and typically contracted via freshwater cercarial exposure in endemic East and Southeast Asia.\n2. Admission Breakpoint: The admission breakpoint occurs following outpatient clinical triage, physical examination, and initial routine hematologic and biochemical laboratory results (including negative CRP), immediately prior to formal microscopic wet mount examination of the stool.\n3. Differential Distinctions: Acute bacterial enteritis (Traveler's diarrhea / invasive bacterial gastroenteritis) vs. Intestinal protozoan infection (Giardiasis / Amebiasis) vs. Intestinal schistosomiasis. Absence of fecal leukocytes/erythrocytes, normal inflammatory markers (CRP < 5 mg/L), and direct visualization of characteristic oval trematode eggs with a lateral knob identified Schistosoma japonicum.",
+  "case_prompt": "A 23-year-old female presents to an outpatient clinic in Kathmandu, Nepal, with a 2-day history of loose, watery diarrhea occurring 4 to 5 times per day. The diarrhea is associated with abdominal bloating, prominent abdominal gurgling sounds, one transient episode of self-resolving fever the day prior to presentation, and a single episode of vomiting on the day of arrival. She denies nausea, and her appetite is normal. She has no chronic medical conditions. Social and travel history reveals that she is a traveler from Spain who arrived in Nepal one month prior to volunteer at two local orphanages, where she frequently handled soil and mud with inconsistent hand hygiene; she had not traveled outside Spain for the preceding year. She consumes a non-vegetarian diet that includes fish. On physical examination, her blood pressure is 110/60 mmHg, heart rate is 111 beats/minute, respiratory rate is 18 breaths/minute, and body temperature is 38.3°C. Abdominal exam reveals active bowel sounds without acute peritonitis. Initial blood testing reveals normal hematological parameters (normal hemoglobin and white blood cell count). Comprehensive biochemical panel, including blood glucose, BUN, creatinine, electrolytes, liver enzymes, and pancreatic enzymes, is entirely normal. C-reactive protein is negative (< 5 mg/L). Macroscopic stool examination demonstrates brown stool of soft consistency without visible blood or mucus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Enteritis (Traveler's Diarrhea)",
+      "rule_out_reason": "Acute febrile watery diarrhea in a traveler with poor hand hygiene strongly suggested acute bacterial gastroenteritis; however, macroscopic and microscopic stool examinations revealed no fecal leukocytes or erythrocytes, and systemic C-reactive protein was negative.",
+      "quote": "On microscopic examination, pus cells, mucus and red blood cells were not seen in direct wet mount of stool."
+    },
+    {
+      "candidate": "Intestinal Protozoan Infection (Giardiasis or Amebiasis)",
+      "rule_out_reason": "Watery diarrhea with abdominal bloating and borborygmi is classic for Giardia or Entamoeba infection, but wet mount and concentration microscopy did not reveal flagellates, amoebic trophozoites, or protozoal cysts.",
+      "quote": "She felt bloated and had a lot of gurgling sounds in her abdomen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct wet mount and formol-ether concentration stool microscopy identified abundant clear, pale-yellow eggs measuring 60-65 μm by 50-55 μm with a characteristic lateral knob, confirmed by the national reference laboratory as Schistosoma japonicum.",
+      "quote": "However, there were plenty of eggs of S. japonicum (Figs 1-6) observed, which was spotted by Medical Technologist of CIWEC Hospital, Lainchaur and confirmed by the Clinical Microbiologist of National Public Health Laboratory (Reference Laboratory), Government of Nepal, Teku. The egg of the parasite was clear and pale yellow colour with a knob at one end"
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to outpatient presentation with diarrhea, bloating, vitals, normal labs, and macro stool exam. Wet mount microscopy, egg morphology, and reference lab confirmation excluded from prompt."
+}

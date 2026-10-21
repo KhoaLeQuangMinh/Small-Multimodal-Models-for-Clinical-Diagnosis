@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3987999_04",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 41-year-old woman presents with acute abdominal pain, fainting/syncope, diaphoresis, and leukocytosis after only 2 days of fever. Initial imaging shows ascites and lab work reveals elevated hematocrit (48%), creating diagnostic ambiguity between an acute surgical peritonitis (e.g. ruptured ectopic pregnancy, pelvic inflammatory disease, or perforated peptic ulcer) and hyperacute severe dengue plasma leakage syndrome triggering fulminant pulmonary edema.\n2. Admission Breakpoint: Admission evaluation terminates with the initial baseline lab tests demonstrating hemoconcentration (hematocrit 48%) and leukocytosis, along with bedside abdominal ultrasonography demonstrating free peritoneal fluid. Confirmatory testing and outcome involve rapid clinical deterioration into fatal acute non-cardiogenic/capillary leak pulmonary edema and autopsy findings.\n3. Differential Distinctions: Ruptured ectopic pregnancy or acute pelvic peritonitis causes sudden lower/epigastric abdominal pain, syncope, vaginal discharge, and free peritoneal fluid, but is accompanied by acute blood loss anemia rather than hemoconcentration (hematocrit 48%). Acute bacterial peritonitis or septic shock causes leukocytosis and abdominal fluid, but does not cause acute bilateral serositis (pleural effusion and ascites) with retroperitoneal hemorrhage and rapid fatal capillary leak pulmonary edema within 48 hours without an identifiable bacterial source.",
+  "case_prompt": "A 41-year-old woman presents to the emergency facility with a 2-day history of acute high-grade fever, severe generalized weakness, episodes of fainting (syncope), profuse sweating, a yellowish vaginal discharge, and severe epigastric and diffuse abdominal pain.\n\nOn physical examination, she appears acutely ill, diaphoretic, and hypotensive. Abdominal examination demonstrates epigastric tenderness and shifting dullness concerning for free intra-abdominal fluid.\n\nEmergency triage laboratory investigations demonstrate marked hemoconcentration with a hematocrit of 48% and leukocytosis. A bedside abdominal ultrasonogram demonstrates free fluid (ascites) in the peritoneal cavity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ruptured Ectopic Pregnancy / Acute Pelvic Inflammatory Disease",
+      "rule_out_reason": "Considered because of acute abdominal pain, vaginal discharge, fainting/syncope, and free intra-abdominal fluid on ultrasound, but hemoconcentration with a hematocrit of 48% is inconsistent with hemorrhagic shock from a ruptured ectopic gestation, and fulminant multi-serosal capillary leak is not typical of uncomplicated pelvic sepsis.",
+      "quote": "A 41-year-old female patient reporting fever for 2 days, weakness, fainting, sweating, yellow discharge, epigastric and abdominal pain... Ultrasound showed fluid in the abdominal cavity."
+    },
+    {
+      "candidate": "Acute Bacterial Peritonitis / Perforated Viscus",
+      "rule_out_reason": "Considered due to severe epigastric and abdominal pain, leukocytosis, and free peritoneal fluid on ultrasonography, but the rapid escalation to bilateral pleural effusion, acute pulmonary edema, and retroperitoneal hemorrhage without bowel perforation points to a systemic capillary leak arboviral syndrome.",
+      "quote": "Laboratory workup demonstrated hematocrit of 48% and leukocytosis. Ultrasound showed fluid in the abdominal cavity."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The rapid development of intense capillary hyperpermeability manifested by high hematocrit (48%), ascites, bilateral pleural effusion, and catastrophic acute pulmonary edema in an endemic transmission zone, establishing the clinical diagnosis of fatal dengue hemorrhagic fever.",
+      "quote": "Patient died with a clinical diagnosis of dengue hemorrhagic fever causing an acute pulmonary edema (causa mortis)... The autopsy revealed a presence of tracheal hyperemia, externally reddish wall of the duodenum, esophageal mucosa with irregular dark wall, pulmonary edema, bilateral pleural effusion"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC3987999_04. Triage presentation with syncope, Hct 48%, and ascites on ultrasound presented without diagnostic leakage. Canonical disease: Dengue."
+}

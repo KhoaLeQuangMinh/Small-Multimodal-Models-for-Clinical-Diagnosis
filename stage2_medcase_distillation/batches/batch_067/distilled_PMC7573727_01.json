@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7573727_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 36-year-old female non-smoker with underlying chronic sinobronchial syndrome (diffuse panbronchiolitis) requiring 12 months of oral corticosteroid therapy presents with acute exacerbation of cough, purulent sputum, and dyspnea, accompanied by a new discrete right apical nodule on chest CT. The central clinical tension is differentiating steroid-induced reactivation tuberculosis from opportunistic Pseudomonas superinfection, invasive mycosis (Fusarium), or chronic autoimmune panbronchiolitis progression.\n2. Admission Breakpoint: The admission breakpoint is established when the patient is admitted for acute respiratory decline with a new apical nodule and undergoes initial bronchoscopic visualization of purulent airway secretions, strictly before repeat bronchoalveolar lavage acid-fast microscopy and mycobacterial DNA amplification return positive.\n3. Differential Distinctions: Pseudomonas aeruginosa colonization and bacterial superinfection are ruled out as the primary etiology of the apical nodule despite low-titer lavage growth. Opportunistic fungal infection with Fusarium is considered an incidental finding or superinfection. Systemic autoimmune connective tissue diseases and vasculitides are ruled out by unrevealing serology (RF, ANCA, connective tissue antibodies).",
+  "case_prompt": "A 36-year-old female non-smoker with a history of chronic sinusitis since age 12, purulent sputum production since age 20, and a prior thoracotomy drainage for empyema presented with progressive cough, expectoration, chest tightness, and wheezing. She had previously been diagnosed with diffuse panbronchiolitis and treated with azithromycin as well as a 12-month course of oral prednisone acetate (tapered from 30 mg to 10 mg daily). Sixteen months after her initial diagnosis, she experienced marked deterioration in respiratory symptoms, presenting with worsening cough, purulent expectoration, and dyspnea that prompted urgent hospitalization.\n\nOn physical examination, the patient was tachypneic. Pulmonary examination revealed diffuse expiratory wheezes and coarse crackles bilaterally throughout both lung fields. Cardiac and abdominal examinations were normal.\n\nPulmonary function testing demonstrated severe airflow limitation with an FEV1/FVC ratio of 43.39%. Arterial blood gas analysis on room air showed hypoxemia with an oxygen partial pressure (PaO2) of 62 mmHg and an oxygenation index of 155 mmHg. Baseline blood investigations, procalcitonin, and comprehensive autoimmune serologies (rheumatoid factors, humoral immunity, connective tissue-related antibodies, anti-neutrophil cytoplasmic antibodies) were all normal. High-resolution computed tomography (HRCT) of the chest showed diffuse bilateral centrilobular nodules with a tree-in-bud pattern, along with a newly developed small nodule at the upper tip of the right lung. Fiberoptic bronchoscopy was performed, revealing abundant purulent secretions throughout the left and right bronchial tree.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pseudomonas aeruginosa Bronchopulmonary Exacerbation",
+      "rule_out_reason": "Sputum and initial bronchoalveolar lavage cultures yielded Pseudomonas aeruginosa, a well-recognized secondary colonizer in damaged airways, but this failed to explain the new focal apical pulmonary nodule appearing after prolonged steroid therapy.",
+      "quote": "Sputum culture showed a small amount of Pseudomonas aeruginosa growth (++)... Bronchoalveolar lavage fluid culture showed that Pseudomonas aeruginosa was 300 colony-forming units per milliliter (CFU/ml)."
+    },
+    {
+      "candidate": "Opportunistic Fungal Infection (Fusarium species)",
+      "rule_out_reason": "Prolonged corticosteroid use placed the patient at high risk for opportunistic fungal infections, and lavage culture yielded low-level Fusarium growth; however, this was insufficient to explain the primary pathology without specific histological or molecular confirmation.",
+      "quote": "the culture showed a small amount of fusarium."
+    },
+    {
+      "candidate": "Autoimmune Bronchiolitis / Systemic Vasculitis",
+      "rule_out_reason": "Connective tissue diseases and ANCA-associated vasculitis can present with recurrent sinobronchial disease and pulmonary nodules, but rheumatological and immunologic serologic testing was negative.",
+      "quote": "No obvious abnormalities were found in routine blood tests, procalcitonin, sputum smear microscopy, sputum culture, tuberculosis bacili gamma interferon release test, rheumatoid factors, humoral immunity, connective tissue related antibodies, anti-neutrophil cytoplasmic antibody, etc."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat bronchoalveolar lavage fluid smear revealed acid-fast bacilli (1 root/300 visual fields) and confirmed the presence of Mycobacterium tuberculosis complex group DNA, establishing secondary pulmonary tuberculosis following long-term immunosuppressive steroid therapy.",
+      "quote": "The second bronchoscope lavage fluid smear revealed 1 root of acid-fast bacilli/300 visual field, and the culture showed a small amount of fusarium. Mycobacterium tuberculosis complex group DNA was positive. The patient was diagnosed as secondary pulmonary tuberculosis and received anti-tuberculosis treatment..."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to repeat BAL AFB smear and MTB complex DNA confirmation. Verbatim quotes support all differential candidates and the diagnostic pivot."
+}

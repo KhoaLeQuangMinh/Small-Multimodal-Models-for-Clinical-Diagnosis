@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213628_04",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 24-year-old farmer presenting with chronic abdominal and back pain, sore throat, and significant weight loss, who had been treated unsuccessfully for Helicobacter pylori infection for an entire year across multiple hospital systems. Anchoring on refractory peptic disease or suspected malignancy delayed recognition of biliary trematodiasis.\n2. Admission Breakpoint: Clinical history, including prior treatment failure for H. pylori, weight loss, and history of consuming raw aquatic plants ('Balmak'), prior to blood ELISA serology, stool microscopy, and PCR.\n3. Differential Distinctions: Refractory Helicobacter pylori peptic ulcer disease causes upper abdominal pain but fails to respond to multiple eradication regimens and does not cause trematode-related back pain or sore throat. Gastrointestinal malignancy presents with abdominal pain and marked weight loss in young adults, but is ruled out by identifying parasite eggs in stool. Fascioliasis mimics refractory dyspepsia and peptic ulcer disease until dietary exposure to watercress is elicited and stool parasitology is performed.",
+  "case_prompt": "A 24-year-old male farmer from Venaei Village in Borujerd County, Lorestan Province, western Iran, presents with a 1-month history of abdominal and back pain, sore throat, and significant weight loss.\n\nOver the preceding year, he had been diagnosed with and repeatedly treated for Helicobacter pylori infection at multiple regional and university hospitals without symptomatic resolution.\n\nDietary history reveals recent consumption of raw wild aquatic plants, particularly \"Balmak\" (watercress).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory Helicobacter pylori peptic disease",
+      "rule_out_reason": "The patient had been managed and treated for H. pylori for over a year without clinical improvement, establishing that his symptoms were not explained by simple peptic ulceration.",
+      "quote": "Over the past year, he had been treated for Helicobacter pylori in Lorestan and Tehran hospitals for a long time, but his problem was still unresolved."
+    },
+    {
+      "candidate": "Gastrointestinal malignancy",
+      "rule_out_reason": "Significant weight loss and chronic abdominal/back pain in a young patient raised concern for malignancy, but the dietary exposure and parasitological workup established an infectious fluke etiology.",
+      "quote": "He had a history of abdominal and back pain, sore throat, significant weight loss and consumptions of aquatic plants especially \"Balmak\" in a recent month."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Blood ELISA and microscopic examination of the stool were positive for Fasciola hepatica eggs, confirmed by diagnostic PCR and sequencing matching F. hepatica (GenBank accession MF991069).",
+      "quote": "ELISA on blood and stool examinations tests were positive for F. hepatica (Fig. 1. D). In addition, PCR product approved the diagnosis like others."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at clinical triage and exposure history. Zero spoilers in prompt. Direct quotes verified verbatim from case text."
+}

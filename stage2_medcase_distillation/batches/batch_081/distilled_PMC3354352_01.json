@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3354352_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: The primary challenge is evaluating extensive, multivesicular cystic liver lesions almost completely replacing the right hepatic parenchyma in an elderly patient with significant comorbidities (postischemic heart failure and diabetes). The differential includes biliary cystadenoma/cystadenocarcinoma, polycystic liver disease, complex pyogenic abscesses, and cystic echinococcosis (WHO type CE2). Distinguishing these entities non-invasively is critical to avoid catastrophic anaphylaxis or peritoneal seeding during invasive procedures.\n2. Admission Breakpoint: Admission evaluation concludes after physical examination, triage liver function tests, and baseline abdominal ultrasonography and computed tomography imaging, immediately prior to prophylactic albendazole administration, percutaneous needle drainage, and cavitography.\n3. Differential Distinctions: Simple hepatic cysts and polycystic liver disease are thin-walled, homogenous, and lack internal daughter septations. Biliary cystadenoma/cystadenocarcinoma features internal septa and mucinous fluid but typically does not produce honeycomb multivesiculation replacing entire hepatic lobes. Pyogenic or amebic abscesses present acutely with fever, systemic toxicity, and liquefactive necrosis rather than indolent honeycomb multivesiculated cysts.",
+  "case_prompt": "A 60-year-old man presents to the emergency department with a 1-month history of right flank pain and a heavy sensation. He denies any history of trauma. His past medical history includes postischemic heart failure and diabetes mellitus.\n\nTriage laboratory tests demonstrate abnormal liver function: serum albumin 2.5 g/dL, aspartate transaminase (AST) 100 UI/L, alanine transaminase (ALT) 90 UI/L, total bilirubin 1.7 mg/dL, and gamma-glutamyl transpeptidase (GGT) 70 IU/L.\n\nAbdominal ultrasonography reveals multiple well-rounded hepatic hypoechoic areas with internal septations. Computed tomography (CT) of the abdomen demonstrates multiple multivesiculated (honeycomb-like) cysts almost completely replacing the right liver parenchyma, with a maximum cyst diameter of 12 cm and a calculated remnant liver volume of 34%.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple hepatic cyst / Polycystic liver disease",
+      "rule_out_reason": "Simple and polycystic liver lesions are thin-walled without internal septations or multivesiculation, whereas ultrasound and CT in this patient demonstrated complex internal septations and honeycomb multivesicular cysts.",
+      "quote": "At USG examination of the abdomen, multiple well-rounded hepatic hypoechoic areas with some septae inside were found; the picture was suggestive of hydatid cyst formations."
+    },
+    {
+      "candidate": "Biliary cystadenoma / Cystadenocarcinoma",
+      "rule_out_reason": "Biliary cystic neoplasms present as multiloculated cystic masses with internal septa, but the classic honeycomb multivesiculated architecture extensively replacing hepatic parenchyma corresponds to hydatid cyst formation.",
+      "quote": "CT scan confirmed the presence of multiple hydatid multivesiculated (honeycomb-like) cysts (type CE2), almost totally replacing the right liver parenchyma"
+    },
+    {
+      "candidate": "Pyogenic or amebic liver abscess",
+      "rule_out_reason": "Hepatic abscesses typically cause acute febrile illness, severe right upper quadrant tenderness, and central liquefaction rather than an indolent 1-month heaviness with well-organized multivesiculated honeycomb cysts without fever.",
+      "quote": "A 60-year-old man presented to our emergency department with a history of pain and a heavy sensation in the right flank for the last month... CT scan confirmed the presence of multiple hydatid multivesiculated (honeycomb-like) cysts (type CE2)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal ultrasonography showing well-rounded hypoechoic cystic areas with internal septa, corroborated by abdominal CT showing multivesiculated honeycomb cysts (WHO type CE2) extensively occupying the right liver, established cystic echinococcosis, followed by percutaneous fluid aspiration for microscopic analysis.",
+      "quote": "At USG examination of the abdomen, multiple well-rounded hepatic hypoechoic areas with some septae inside were found; the picture was suggestive of hydatid cyst formations. CT scan confirmed the presence of multiple hydatid multivesiculated (honeycomb-like) cysts (type CE2), almost totally replacing the right liver parenchyma"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint observed before percutaneous intervention and albendazole prophylaxis. No pathogen spoilers in case prompt. All diagnostic candidates evaluated with exact article quotes."
+}

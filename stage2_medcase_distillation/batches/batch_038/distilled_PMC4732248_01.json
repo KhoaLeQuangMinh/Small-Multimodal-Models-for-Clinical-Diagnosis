@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4732248_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old woman presenting with an indolent, painless, 8 × 8 cm firm forehead calvarial mass expanding over two years, with normal inflammatory markers (ESR 15 mm/hr) and calcium, where CT shows a punched-out lytic calvarial defect with dural enhancement, strongly mimicking an intraosseous meningioma or bony neoplasm rather than an infectious granuloma.\n2. Admission Breakpoint: Completion of initial clinical evaluation, baseline hematologic/biochemical profile, and plain and contrast-enhanced head CT imaging, prior to frontotemporoparietal craniotomy, carotid dissection, en bloc resection, and histopathological analysis.\n3. Differential Distinctions: Intraosseous meningioma typically produces osteoblastic or osteolytic calvarial changes with dural tail enhancement, which led neurosurgeons to expose the carotid artery for vascular control; calvarial metastatic malignancy or primary bone tumor (osteosarcoma, myeloma) presents as lytic calvarial lesions in older adults; calvarial tuberculosis uniquely produces punched-out lytic defects with cold soft-tissue formation and dural adhesion, confirmed by caseating granulomatous inflammation with Langhans giant cells on histopathology.",
+  "case_prompt": "A 52-year-old woman with a history of hypertension presents for evaluation of a large, painless mass on the right side of her forehead that has expanded gradually over two years from an initial marble-sized nodule. She reports mild localized discomfort and occasional pruritus of the overlying skin as the mass enlarged, but denies headaches, visual changes, nausea, seizures, localized warmth, erythema, ulceration, or drainage. On physical examination, an 8 × 8 cm firm-to-hard, non-tender solitary mass is palpable over the right frontal bone. The overlying skin is intact and mildly stretched without sinuses, ulcerations, or abnormal erythema. The lesion is fixed to the underlying cranium but mobile beneath the scalp; neurological examination is completely unremarkable. Laboratory evaluation reveals a normal complete blood count, normal renal panel, normal serum calcium, and an erythrocyte sedimentation rate (ESR) of 15 mm/1st hr. Contrast-enhanced computed tomography (CT) of the head demonstrates an extra-axial lytic bone lesion with a punched-out cranial defect that extends beyond the outer table, isodense to brain parenchyma, with contrast enhancement along its inner dural margin.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intraosseous Meningioma",
+      "rule_out_reason": "An extra-axial calvarial lesion displaying bony destruction and inner dural enhancement was strongly suspected to represent a primary intraosseous meningioma, prompting preoperative surgical planning and neck dissection for proximal vascular control; however, histological evaluation lacked meningothelial proliferation and instead demonstrated caseous granulomas.",
+      "quote": "From the CT imaging, our impression was a right frontal intraosseous meningioma. We counseled the patient for surgery, with the aim for cytoreduction and histological diagnosis. We designed a question mark flap to encompass the right fronto-temporo-parietal regions, and as one of our differential diagnoses was an intraosseous meningioma, we also dissected the patient's neck in a curvilinear manner at the level of C4/C5 to expose the internal and external right carotid arteries in the event that we needed a proximal control for hemorrhage."
+    },
+    {
+      "candidate": "Primary or Metastatic Calvarial Bone Tumor",
+      "rule_out_reason": "Given the patient's age and extensive osteolytic punched-out defect with dural and pericranial erosion, a calvarial metastatic tumor or malignant bony neoplasm was considered; however, microscopic examination revealed no malignant cells.",
+      "quote": "In view of her age, we were also considering a malignant bony tumor... In view of the scalp tissue and dura involvement, we suspected a calvarial metastatic tumor."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological analysis of the en bloc resected cranial lesion revealed extensive caseous necrosis surrounded by epithelioid histiocytes, lymphocytes, and Langhans giant cells forming granulomas infiltrating bone, confirming caseating granulomatous inflammation characteristic of calvarial tuberculosis.",
+      "quote": "however, the histopathological report came back as extensive areas of caseous necrosis surrounded by a collection of epithelioid histiocytes, lymphocytes, and several Langerhans-type giant cells forming granulomas... The granuloma was also seen within the bone. The histopathological diagnosis was a caseating granulomatous inflammation, highly suggestive of tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint cleanly placed after head CT and baseline laboratory tests, leaving surgical excision and histopathology for the diagnostic reasoning section. Candidates reflect explicit surgical differentials (intraosseous meningioma, calvarial metastasis) supported by direct verbatim quotes."
+}

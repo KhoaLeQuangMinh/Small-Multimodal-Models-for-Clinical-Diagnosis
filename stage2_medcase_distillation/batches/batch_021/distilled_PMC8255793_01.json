@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8255793_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 7-month-old infant presents with prolonged recurring cough, persistent fever, widespread maculopapular and reddish-brown cutaneous papules, cervical lymphadenopathy, hepatosplenomegaly, and high inflammatory markers refractory to multiple broad-spectrum antibacterials. The clinical tension is identifying a disseminated dimorphic opportunistic fungal disease in an infant with normal standard immunoglobulin/lymphocyte subsets but carrying an occult inborn error of immunity (CARD9 mutation), especially given a sibling death from severe infantile sepsis.\n2. Admission Breakpoint: The breakpoint is set at hospital admission following referral, incorporating clinical presentation, family history of early sibling death from severe sepsis, neonatal BCG lymphadenitis, physical exam findings, baseline hematology, inflammatory markers, and triage CT/echocardiographic findings, before blood culture fungal growth, metagenomic next-generation sequencing (mNGS), and CARD9 genetic analysis.\n3. Differential Distinctions: Severe pyogenic bacterial sepsis is ruled out by complete therapeutic failure of multiple potent antibacterial regimens. Disseminated BCG disease/tuberculosis is considered given neonatal BCG-site lymphadenopathy, pulmonary infiltrates, and hepatosplenomegaly, but excluded as the acute cause of sepsis by blood culture and mNGS identification of a dimorphic fungus. Kawasaki disease/sJIA is ruled out by rapid cure upon voriconazole antifungal therapy.",
+  "case_prompt": "A 7-month-old male infant was admitted to the hospital with a two-month history of a recurring cough, persistent high fever for nine days, and an eruptive, progressive rash for two days. Prior to referral, he had received multiple courses of broad-spectrum antimicrobials at a local hospital without clinical improvement. His past medical history was notable for left axillary lymph node enlargement following BCG vaccination at birth. Family history revealed that he was the third child; his second older sister had died of recurrent high fever and severe sepsis at 9 months of age.\n\nOn physical examination, the infant was febrile and tachycardic with a heart rate of 160–170 beats per minute and normal heart sounds. Skin examination revealed widespread facial and trunk maculopapules, as well as distinct reddish-brown papules covering all four limbs. Bilateral pitting edema of the lower extremities was noted. There was palpable cervical lymphadenopathy. Chest auscultation revealed faint moist crackles over both lung fields. Abdominal examination demonstrated marked hepatosplenomegaly. Neurological examination was normal.\n\nLaboratory evaluation revealed a marked leukocytosis with a white blood cell count of 33 x 10^9/L (reference range 4–10), comprising 16.13 x 10^9/L neutrophils, 12.85 x 10^9/L lymphocytes, and 1.24 x 10^9/L monocytes. Serum inflammatory markers were markedly elevated: C-reactive protein (CRP) was 272 mg/L (<10) and procalcitonin (PCT) was 2.73 ng/mL (<0.05). Serum N-terminal pro-B-type natriuretic peptide (NT-proBNP) was elevated at 979.2 pg/mL (0–84). Serologic testing for HIV was negative. Basic lymphocyte subset analysis showed CD3+ 82.9%, CD3+CD4+ 50.8%, CD3+CD8+ 29.8%, CD19+ 12.8%, and NK cells 4%, with normal humoral immunoglobulin levels.\n\nComputed tomography (CT) of the chest revealed bilateral pulmonary infiltrates. Abdominal CT confirmed significant hepatosplenomegaly and multiple enlarged retroperitoneal and mesenteric lymph nodes. Echocardiography showed left ventricular enlargement and a small pericardial effusion without coronary artery dilatation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Pyogenic Bacterial Sepsis",
+      "rule_out_reason": "Considered due to high fever, extreme leukocytosis (33 x 10^9/L), and elevated CRP (272 mg/L) and procalcitonin (2.73 ng/mL); ruled out by complete lack of response to empirical potent broad-spectrum antibacterials.",
+      "quote": "Because the local hospital had administered potent anti-bacterial treatment with no results, we considering the likelihood of bacterial infection to be low; therefore, at first, we administered only cefuroxime as an empirical treatment."
+    },
+    {
+      "candidate": "Disseminated BCG-osis / Tuberculosis",
+      "rule_out_reason": "Considered because of a history of persistent axillary lymphadenitis following neonatal BCG vaccination, pulmonary infiltrates, and hepatosplenomegaly in an infant with suspected inborn immunodeficiency; ruled out as the cause of acute sepsis by blood culture isolation and mNGS identification of a dimorphic fungus.",
+      "quote": "A blood culture produced growth of TM."
+    },
+    {
+      "candidate": "Kawasaki Disease / Systemic Juvenile Idiopathic Arthritis (sJIA)",
+      "rule_out_reason": "Considered due to prolonged fever, polymorphic maculopapular rash, cervical lymphadenopathy, peripheral extremity edema, pericardial effusion, and high NT-proBNP; ruled out by normal coronary arteries and microbiological isolation of an opportunistic fungal pathogen.",
+      "quote": "Colour Doppler ultrasound of the heart showed enlargement of the left ventricle and a small pericardial effusion, but no significant dilation of the left and right coronary arteries."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Prompt defervescence, resolution of rash, and normalization of inflammatory parameters following targeted voriconazole antifungal therapy in a child with culturally confirmed dimorphic fungal sepsis.",
+      "quote": "We administered voriconazole antifungal therapy based on the TM culture susceptibility testing results."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Blood culture organism, mNGS, and CARD9 gene testing excluded from prompt. Zero pathogen spoilers."
+}

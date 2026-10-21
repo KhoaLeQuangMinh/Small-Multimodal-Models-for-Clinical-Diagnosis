@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3099209_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 57-year-old male hospitalized with severe community-acquired pneumonia develops acute peritonitis, tachycardia, hypotension, and pneumoperitoneum. While gastric perforation is overwhelmingly attributable to peptic ulcer disease (NSAIDs, Helicobacter pylori) or perforated gastric malignancy, gastroduodenal tuberculosis presenting with acute gastric perforation in an HIV-negative patient is an exceptionally rare surgical emergency.\n2. Admission Breakpoint: The breakpoint occurs at the development of acute peritonitis and radiographic pneumoperitoneum with shock during admission, immediately prior to emergent exploratory laparotomy, intraoperative endoscopy, and mycobacterial cultures of peritoneal fluid and tissue.\n3. Differential Distinctions: Peptic ulcer disease complicated by perforation was the primary consideration given a large gastric ulcer and pneumoperitoneum, but excluded by negative Helicobacter pylori biopsies, lack of NSAID use, and culture growth of Mycobacterium tuberculosis from the peritoneal fluid. Perforated gastric adenocarcinoma was considered given a large 3 cm penetrating ulcer near the gastroesophageal junction, but ruled out by biopsies showing reactive changes without malignant cells. Confirmation was achieved by positive peritoneal fluid and gastric tissue mycobacterial cultures, along with caseating granulomas in the resected colon.",
+  "case_prompt": "A 57-year-old HIV-negative male was admitted to the hospital with community-acquired pneumonia that progressively worsened despite initial therapy. He had a significant smoking history.\n\nDuring hospitalization, he developed acute-onset diffuse abdominal pain with peritonitis on physical examination, accompanied by tachycardia and hypotension. An upright abdominal radiograph demonstrated pneumoperitoneum with free air under the diaphragm.\n\nArrangements were made for emergent surgical exploration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peptic Ulcer Disease / Perforated Gastric Ulcer (H. pylori or NSAID-induced)",
+      "rule_out_reason": "Considered as the most common cause of acute gastric perforation and free air, but excluded by negative gastric biopsies for Helicobacter pylori, absence of NSAID exposure, and ongoing PPI therapy.",
+      "quote": "Biopsies were also negative for Helicobacter pylori. The patient did not receive nonsteroidal anti-inflammatory medications and was on Pantoprazole to prevent stress-related ulceration."
+    },
+    {
+      "candidate": "Perforating Gastric Adenocarcinoma / Neoplasm",
+      "rule_out_reason": "Considered due to an extensive 3 cm ulcerative and necrotic process in an older smoker near the gastroesophageal junction, but multiple gastric ulcer biopsies showed only reactive epithelial changes without malignancy.",
+      "quote": "Biopsies from the gastric ulcer revealed no malignancy but did demonstrate fungal elements (Candida albicans) indicative of secondary infection. Also, focal reactive changes in the surface epithelium suggested a reactive process."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergent laparotomy revealed a posterior gastric wall perforation and contiguous necrotic mass; cultures of both peritoneal fluid and gastric tissue grew Mycobacterium tuberculosis, and resected colonic tissue demonstrated classic caseating granulomas with multinucleated giant cells.",
+      "quote": "Peritoneal fluid mixed with enteric contents from the gastric perforation was sent for culture and was positive for mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled to the acute presentation of peritonitis with pneumoperitoneum. All operative, endoscopic, microbiologic, and histopathologic findings isolated to diagnostic reasoning."
+}

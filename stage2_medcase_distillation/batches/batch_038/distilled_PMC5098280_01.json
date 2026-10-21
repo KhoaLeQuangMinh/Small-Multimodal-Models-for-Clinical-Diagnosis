@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5098280_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 30-year-old man with biopsy-proven immune thrombocytopenic purpura (ITP) on oral corticosteroid therapy presents during concurrent epidemics of dengue and leptospirosis with high fever, headache, severe myalgias, and paddy-field/well-digging exposures, creating high diagnostic ambiguity and fear of catastrophic bleeding that surprisingly never materializes.\n2. Admission Breakpoint: Day 4 hospital admission triage evaluating high fever, severe constitutional symptoms, occupational freshwater/mud exposures, physical examination, and known medication/ITP history, prior to empiric antibiotic switches, skin flushing evolution, platelet nadirs, and Day-7 viral serology.\n3. Differential Distinctions: Leptospirosis was considered the chief co-differential given rural paddy field immersion and well-digging, prompting empiric intravenous penicillin/doxycycline; however, absence of jaundice, renal impairment, conjunctival suffusion at triage, or pulmonary involvement, alongside subsequent viral seroconversion, excluded leptospiral infection; Japanese encephalitis causes serologic cross-reactivity but is absent in the patient's non-endemic hilly residency and clinical picture; dengue fever accounts for the acute leukopenia, thrombocytopenia, and positive specific IgM and IgG serology.",
+  "case_prompt": "A 30-year-old Sinhalese man presents to the hospital on the fourth day of an acute illness characterized by high fever, severe headache, generalized myalgias, arthralgias, nausea, and anorexia. One week prior to the onset of fever, he had been digging a well and working in waterlogged rice paddy fields in an area endemic for freshwater-borne zoonoses during a concurrent municipal febrile outbreak. His medical history is notable for immune thrombocytopenic purpura (ITP) diagnosed six weeks earlier following a generalized purpuric rash and a confirmatory bone marrow examination, for which he is actively taking daily oral prednisolone and omeprazole. He also uses topical clobetasol for hypertrophic lichen planus on his left wrist. On physical examination, he is febrile but alert, non-icteric, and well-perfused without pallor. Pulse rate is 88 beats/min, blood pressure is 100/70 mmHg with no orthostatic change, and oxygen saturation is 97% on ambient air. No petechiae, purpura, or new rashes are observed beyond the preexisting lichen planus plaque on his wrist. Examination of the heart, lungs, and abdomen is completely unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis",
+      "rule_out_reason": "Leptospirosis was an equally suspected co-differential given the patient's high-risk exposure of digging a well and working in flooded rice paddies in an endemic region, leading to empiric antibiotic coverage with penicillin and subsequently doxycycline; however, the lack of renal dysfunction, absence of jaundice, and subsequent serological confirmation of acute viral infection led to antibiotic discontinuation.",
+      "quote": "Two most probable differential diagnoses were dengue and leptospirosis. Standard dengue fever management started, and in addition, intravenous crystalline penicillin was prescribed to cover leptospirosis. His skin sensitivity test for crystalline penicillin became positive. Hence, it was substituted with oral doxycycline... On the seventh day of the illness, both dengue IgM and IgG were positive. Doxycycline was discontinued thereafter."
+    },
+    {
+      "candidate": "Japanese Encephalitis",
+      "rule_out_reason": "Other flaviviral infections such as Japanese encephalitis (JE) can cross-react on serological assays; however, JE is extremely rare in the central hill country where the patient resided, he had no travel history or JE vaccination, and he demonstrated no encephalitic signs.",
+      "quote": "Infection with other flavoviruses can give false positives in IgM and IgG tests. Japanese encephalitis (JE) is the other flavovirus disease in Sri Lanka, and it is rare. JE is very rare in the central hill country where the patient lives and he has never traveled abroad and never got vaccinated against JE. Considering all, we can conclude this as a dengue case."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "During a localized community epidemic, the patient developed classic biphasic hematologic changes and characteristic cutaneous flushing, with serologic testing on illness day seven demonstrating positive IgM and IgG antibodies specific to dengue virus.",
+      "quote": "A dengue epidemic was going on in his locality when he presented. His symptoms and signs were compatible with dengue. His laboratory reports also favor diagnosis of dengue (leucocytopenia, invertion of neutrophils to lymphocyte ratio on the seventh day of illness and again reversing, serial changes of his platelet count, serial changes of his hematocrit). Finally, positive dengue IgM and IgG tests confirmed the diagnosis."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to Stanford MedCaseReasoning guidelines. Admission breakpoint captures Day 4 clinical evaluation, occupational freshwater exposures, and preexisting steroid-treated ITP without mentioning specific pathogens in the prompt. Differentials thoroughly evaluate leptospirosis and Japanese encephalitis cross-reactivity with exact verbatim quotes."
+}

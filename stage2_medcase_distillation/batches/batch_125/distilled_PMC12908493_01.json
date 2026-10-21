@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12908493_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 58-year-old subsistence farmer in a non-endemic European country presents with a chronic non-healing plantar ulcer, claw hand and foot deformities, progressive sensory polyneuropathy, hypopigmented plaques, and facial hypomimia with unilateral facial paresis, 35 years after completing curative treatment for a peripheral nerve and ulcer illness in his youth. The clinical tension lies in distinguishing diabetic neurotrophic ulceration, neurotoxic/metabolic neuropathy, or Parkinsonian neurodegeneration from an exceptionally delayed relapse of multibacillary mycobacterial infection after decades of apparent cure.\n2. Admission Breakpoint: Clinical evaluation and laboratory exclusion of metabolic, toxic, and Parkinsonian disorders, stopping immediately prior to diagnostic skin biopsy with molecular analysis and electromyography.\n3. Differential Distinctions:\n- Diabetic Peripheral Neuropathy with Mal Perforant: Diabetic neuropathy is the leading cause of claw digits, stocking-glove sensory loss, and chronic painless neurotrophic plantar ulcers; however, the patient had no history of diabetes, and hemoglobin A1c was entirely normal.\n- Parkinson's Disease: Facial masking (hypomimia) combined with chronic physical impairment raised consideration of parkinsonism, but physical examination revealed asymmetric lower motor neuron facial paresis with no resting tremor, rigidity, or bradykinesia.\n- Nutritional / Alcoholic / Toxic Neuropathy: Lower extremity pain and chronic sensorimotor loss can result from nutritional deficiencies or toxic exposures, but the patient had no history of alcohol abuse or neurotoxin exposure, and ulcer cultures excluded secondary bacterial/fungal superinfection.",
+  "case_prompt": "A 58-year-old male subsistence farmer residing in northern Portugal was referred for evaluation of a chronic, non-healing ulcer on his left plantar foot. The patient reported the onset of progressive lower limb pain approximately five years prior to presentation, followed by progressive bilateral sensory loss, new cutaneous lesions, and functional impairment. Because of social stigma associated with a peripheral nerve and skin disease treated in his youth (at age 23 with directly observed multidrug therapy, resulting in complete resolution of an initial plantar ulcer and documented clinical cure), he avoided seeking medical care and lived in social isolation, adapting to gradual neuropathic progression until his current plantar ulcer failed to heal despite home-based care.\n\nOn physical examination, facial hypomimia and left-sided facial paresis were observed. Cutaneous examination revealed progressive bilateral involvement with hypopigmented and erythematous skin lesions. Neurological and musculoskeletal examination demonstrated sensory loss and deformities of both hands and feet, including clawing of the fingers, bilateral plantar ulcers, and associated toe deformities. Ocular motility and extraocular muscles were fully spared.\n\nInitial diagnostic evaluation revealed no history of diabetes mellitus, and glycemic control was normal, with hemoglobin A1c within the reference range. There was no history of alcohol abuse, nutritional deficiencies, or exposure to neurotoxic agents. Clinical examination revealed no features suggestive of Parkinson's disease, such as resting tremor, rigidity, or bradykinesia, despite the presence of facial hypomimia. Microbiological evaluation of the plantar ulcer, including bacterial and fungal cultures, was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Diabetic Peripheral Neuropathy with Neurotrophic Foot Ulcer",
+      "rule_out_reason": "Considered as the most frequent etiology of distal symmetric sensorimotor polyneuropathy, clawing of the digits, and painless chronic plantar mal perforant, but ruled out by normal fasting glycemia and normal hemoglobin A1c.",
+      "quote": "The patient had no history of diabetes mellitus, and glycemic control was normal, with hemoglobin A1c within the reference range."
+    },
+    {
+      "candidate": "Parkinson's Disease",
+      "rule_out_reason": "Considered because of prominent facial hypomimia (masked facies) and functional slowing, but excluded by the absence of cardinal extrapyramidal motor signs, with the facial finding representing peripheral facial nerve paresis.",
+      "quote": "Clinical examination revealed no features suggestive of Parkinson's disease, such as resting tremor, rigidity, or bradykinesia, despite the presence of facial hypomimia."
+    },
+    {
+      "candidate": "Secondary Bacterial or Fungal Ulcer Superinfection",
+      "rule_out_reason": "Considered in a subsistence farmer presenting with a chronic open wound failing home care, but ruled out by negative bacterial and fungal cultures.",
+      "quote": "Microbiological evaluation of the plantar ulcer, including bacterial and fungal cultures, was negative, excluding secondary infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pathognomonic clinical constellation of hypopigmented anesthetic skin plaques, peripheral facial nerve paresis, severe chronic axonal sensorimotor polyneuropathy, and neurotrophic plantar ulcers occurring 35 years after initial cure, definitively confirmed by skin biopsy with molecular PCR positivity for Mycobacterium leprae.",
+      "quote": "Skin biopsy with molecular analysis was positive for M. leprae."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded past disease label and diagnostic biopsy PCR from admission presentation. Zero spoilers, full quote fidelity."
+}

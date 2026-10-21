@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2640408_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Differentiating between monomicrobial pyogenic spondylodiscitis, brucellosis, spinal metastasis, and tuberculous spondylitis (Pott's disease) in an elderly woman with subacute thoracic vertebral erosion and a paravertebral mass, where an initial aspirate yielded pure growth of Streptococcus constellatus, temporarily obscuring an underlying indolent tuberculous infection.\n2. Admission Breakpoint: The admission breakpoint occurs following the physical examination, routine laboratory evaluations (CBC, ESR, albumin), echocardiography, and spinal radiographic/CT imaging revealing the T10-T12 destruction and paravertebral mass, prior to tuberculin skin testing, Brucella serology, blood cultures, and CT-guided aspiration.\n3. Differential Distinctions: Brucellosis causes subacute spondylitis with paravertebral inflammation, but was ruled out by negative serology and blood cultures; Spinal neoplastic disease causes vertebral collapse but typically spares the intervertebral disc space and lacks purulent collections; Isolated pyogenic bacterial spondylodiscitis seemed likely when S. constellatus grew in pure culture, but clinical relapse on targeted penicillin therapy pointed to co-existent mycobacterial disease.",
+  "case_prompt": "A 68-year-old woman is admitted to the hospital with a two-month history of progressive general malaise, generalized arthralgia, myalgia, and low-grade fever. Ten days prior to admission, she developed dorsolumbar back pain radiating anteriorly to the right rib cage.\n\nOn physical examination, her body temperature is 37.5 °C. Palpation of the spinal thoracic apophyses over T11 and T12 elicits marked focal tenderness. The remainder of the physical examination is unremarkable.\n\nInitial laboratory studies show a hemoglobin level of 13.4 g/dL, a leukocyte count of 7,100/mm³, an erythrocyte sedimentation rate (ESR) of 39 mm/hour, and a serum albumin level of 3.3 g/dL. Other routine blood tests are within normal limits. Transthoracic echocardiography reveals hypertensive cardiomyopathy without valvular vegetations.\n\nPlain radiographs of the spinal column demonstrate bone destruction and crushing fractures of the thoracic vertebrae at T10 and T12, accompanied by an adjacent soft-tissue paravertebral mass. A computed tomography (CT) scan of the thoracic spine confirms destructive and erosive lesions involving these vertebral bodies and the intervening intervertebral discs, with an associated contiguous paravertebral mass.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Brucellar Spondylodiscitis",
+      "rule_out_reason": "Brucellosis is a prevalent cause of subacute spondylitis with paravertebral inflammation and vertebral destruction in endemic Mediterranean regions, but was excluded by negative Brucella serology and sterile blood cultures.",
+      "quote": "Brucella serology and blood cultures were both negative."
+    },
+    {
+      "candidate": "Metastatic Spinal Neoplasm / Multiple Myeloma",
+      "rule_out_reason": "Vertebral collapse and compression fractures in an elderly patient strongly mimic metastatic carcinoma or multiple myeloma, but involvement of the intervertebral disc spaces and extraction of purulent fluid confirmed an infectious destructive spondylodiscitis.",
+      "quote": "Spinal CT scan showed destructive and erosive lesions in those vertebrae, involving the intervetebral discs and an adjacent paravertebral mass."
+    },
+    {
+      "candidate": "Isolated Pyogenic Bacterial Spondylodiscitis (Streptococcus constellatus)",
+      "rule_out_reason": "Pure isolation of Streptococcus constellatus from the initial paravertebral aspirate led to targeted intravenous penicillin therapy, but secondary clinical and radiologic relapse after two months unmasked a missed chronic pathogen.",
+      "quote": "Subsequently, Streptococcus constellatus was isolated in pure culture, using the API 20S system. MIC for penicillin was 0,06 microgr/ml. The patient was treated with penicillin with initial clinical improvement. After 2 months of treatment, her condition suddenly worsened both clinically and radiologically."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous Spondylodiscitis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "The diagnostic turning point was the emergence of new paravertebral abscesses showing acid-fast bacilli on Ziehl-Neelsen stain, accompanied by isolation of Mycobacterium tuberculosis from the initial needle aspirate culture in a patient with a 25-mm Mantoux reaction.",
+      "quote": "On physical examination, two soft lumps were detected in the left paravertebral region near the level of thoracic vertebra 11 and pus was extracted. Gram stain revealed no microorganisms and Ziehl-Neelsen stain showed acid-fast bacilli. Concurrently, the culture from the needle aspiration performed during the first admission was received, with an isolation of Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case highlights Pott's disease of the thoracic spine complicated by a polymicrobial co-infection with Streptococcus constellatus. Initial isolation of a susceptible commensal bacteria often generates premature diagnostic closure, allowing the slower-growing Mycobacterium tuberculosis to cause progressive osseous collapse and paravertebral cold abscess formation."
+}

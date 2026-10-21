@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4922280_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 43-year-old sandblaster presenting with progressive hypoxia, constitutional symptoms, and nonresolving pulmonary consolidations with negative initial sputum smears. The clinical conflict centers on distinguishing occupational pneumoconiosis, idiopathic interstitial pneumonia, or pulmonary malignancy from sputum-negative mycobacterial superinfection.\n2. Admission Breakpoint: The admission breakpoint concludes after triage vitals, initial physical examination, emergency laboratory testing, baseline sputum examinations, and high-resolution chest CT, before CT-guided percutaneous biopsy and bronchoalveolar lavage cytology/polarizing microscopy are performed.\n3. Differential Distinctions: Bronchogenic carcinoma was considered due to persistent unilateral consolidation, emaciation, and occupational dust exposure, but excluded by core biopsy revealing interstitial pneumonia without malignant cells; nonresolving pyogenic pneumonia or idiopathic organizing pneumonia was considered due to ground-glass opacities and negative sputum smears, but excluded by bronchoalveolar lavage demonstrating acid-fast bacilli and polarizable silica crystals. The diagnosis pivots on bronchoalveolar lavage demonstrating positive acid-fast bacilli on Ziehl-Neelsen stain along with birefringent silica particles under polarizing microscopy.",
+  "case_prompt": "A 43-year-old male who has worked as an industrial sandblaster for the past 13 years presents with a 2-month history of fever, cough, breathlessness, and right-sided pleuritic chest pain that acutely worsened over the preceding 2 days. Earlier outpatient imaging 3 months prior had shown nonspecific patchy parenchymal opacities, and repeat chest imaging 1 month later demonstrated larger, progressive basal opacities consistent with nonresolving pneumonia.\n\nOn physical examination, the patient appears emaciated and is in marked respiratory distress. His pulse oximetry reveals an oxygen saturation (SpO2) of 70% on ambient room air, which increases to 90% while receiving 5 liters per minute of supplemental oxygen via a Hudson mask. Chest auscultation demonstrates bilateral end-expiratory crackles.\n\nLaboratory evaluation reveals leukocytosis and an elevated erythrocyte sedimentation rate (ESR) of 86 mm/h. Two consecutive expectorated sputum smear examinations are negative on initial microscopic evaluation. High-resolution computed tomography (HRCT) of the chest reveals bilateral middle and lower lobe ground-glass opacities accompanied by a dense consolidation in the left lower lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchogenic carcinoma",
+      "rule_out_reason": "Progressive lobar consolidation in a patient with chronic industrial dust exposure, emaciation, and nonresolving infiltrates raised strong suspicion for malignancy; however, CT-guided lung biopsy confirmed the absence of neoplastic cells, revealing interstitial pneumonia with fibrosis.",
+      "quote": "CT-guided biopsy of the left lower lobe lesion was performed [Figure 1d] to rule out the possibility of malignancy and histopathological examination showed features of interstitial pneumonia with fibrosis."
+    },
+    {
+      "candidate": "Nonresolving pyogenic pneumonia / Organizing pneumonia",
+      "rule_out_reason": "Bilateral ground-glass opacities and basal consolidations with high ESR, leukocytosis, and negative sputum acid-fast smears suggested nonresolving bacterial pneumonia or organizing pneumonia; however, repeat imaging showed progressive disease and bronchoalveolar lavage subsequently identified an infectious mycobacterial etiology.",
+      "quote": "His two sputum samples were negative for acid-fast bacilli (AFB) on Ziehl-Neelsen (ZN) stain."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchial lavage fluid was positive for acid-fast bacilli on Ziehl-Neelsen staining, while polarized microscopy demonstrated numerous birefringent silica crystals, clinching the diagnosis of active pulmonary tuberculosis complicating underlying occupational silicosis (silicotuberculosis).",
+      "quote": "The lavage fluid was positive for AFB as demonstrable by ZN stain. Detection of numerous birefringent silica particles under polarizing microscope in the bronchial lavage [Figure 2c and d], otherwise not appreciable on PAP stain, clinched the primary diagnosis of silicosis with associated tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly preserves admission breakpoint before lung biopsy and bronchoscopic lavage; zero pathogen spoilers; exact quotes utilized."
+}

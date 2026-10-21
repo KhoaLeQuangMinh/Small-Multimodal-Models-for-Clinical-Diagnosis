@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9092576_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 47-year-old traveler presents with 10 chronic ulcerative and nodular skin lesions across his extremities and trunk. The critical clinical tension arises when a rapid diagnostic antigen test for Plasmodium falciparum returns positive, creating conflicting diagnostic clues between life-threatening malaria and chronic New World protozoal cutaneous infection.\n2. Admission Breakpoint: The breakpoint is set at the clinical encounter following visual dermatologic examination, prior to tissue biopsy submission to reference centers for histopathology/immunohistochemistry and blood microscopy/RT-PCR testing.\n3. Differential Distinctions: Malaria (Plasmodium falciparum) presents as an acute febrile, systemic, hemoparasitic illness rather than chronic, indolent, multi-centimeter cutaneous ulcers; rapid antigen tests can cross-react in parasitic or inflammatory conditions. Cutaneous fungal infections (e.g., sporotrichosis, paracoccidioidomycosis) present similarly with nodular/ulcerative skin lesions but lack intracellular protozoal amastigotes.",
+  "case_prompt": "A 47-year-old male presents for clinical evaluation with multiple persistent cutaneous lesions following international travel.\nPhysical examination reveals a total of 10 discrete skin lesions distributed across the bilateral upper extremities, lower extremities, and the flank. All lesions are greater than 1 cm in diameter, with the largest measuring 5 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Falciparum malaria with cutaneous manifestations / coinfection",
+      "rule_out_reason": "Although a rapid diagnostic antigen test for Plasmodium falciparum returned positive during the fever workup, the patient had primary indolent skin ulcers rather than acute febrile hemolysis, and confirmatory blood testing including repeated thick-and-thin blood smears and qualitative RT-PCR were completely negative, demonstrating an antigen cross-reaction.",
+      "quote": "However, both a qualitative RT-PCR for P falciparum in blood (ARUP Laboratories, Salt Lake City, UT, USA) and repeated thick-and-thin smear direct microscopy were negative in both patients."
+    },
+    {
+      "candidate": "Deep fungal infection (e.g., Sporotrichosis, Blastomycosis)",
+      "rule_out_reason": "Deep fungal infections can present with widespread noduloulcerative lesions in travelers, but special fungal stains and microbiological evaluation failed to identify fungal yeast or hyphal elements, directing reference referral for dedicated parasite evaluation.",
+      "quote": "Tissue samples were sent to the Centers for Disease Control and Prevention, Atlanta, GA, USA, for confirmation of diagnosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Reference laboratory examination of skin biopsy tissue confirming Leishmania amastigotes on histopathology and positive immunohistochemical staining, proving cutaneous leishmaniasis as the true etiology of the lesions and unmasking the false-positive malaria rapid test.",
+      "quote": "Samples from our two patients were positive for Leishmaniasis by immunohistochemistry and histopathologic evidence of amastigotes in both cases."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fascinating diagnostic trap featuring a false-positive BinaxNOW malaria rapid diagnostic test in cutaneous leishmaniasis. Zero pathogen names in presentation; stops cleanly before biopsy send-out."
+}

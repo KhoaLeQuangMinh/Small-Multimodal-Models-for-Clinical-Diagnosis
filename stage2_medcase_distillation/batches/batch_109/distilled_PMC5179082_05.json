@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5179082_05",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: The patient presents with an acute febrile illness accompanied by nausea, vomiting, diarrhea, and myalgias—a clinical picture typical of self-limited acute gastroenteritis or viral syndrome—that rapidly deteriorates into fulminant capillary permeability, acute pulmonary edema, and sudden fatal cardiovascular collapse characteristic of severe dengue shock syndrome.\n2. Admission Breakpoint: Emergency admission triage upon presentation with acute fever, myalgia, vomiting, and diarrhea, strictly prior to acute cardiopulmonary decompensation, death, and postmortem histopathologic and cytokine analyses.\n3. Differential Distinctions: Acute bacterial gastroenteritis and septic shock were considered given acute GI symptoms and hemodynamic collapse, but lack the profound systemic capillary leakage and intense sterile mononuclear pro-inflammatory infiltration (elevated TNF-alpha, IFN-gamma, RANTES) characteristic of severe dengue virus infection.",
+  "case_prompt": "A 61-year-old female presents to the emergency department with an acute febrile illness accompanied by severe diffuse myalgias, persistent vomiting, and watery diarrhea. Her symptoms began acutely over the preceding days. She denies any prior chronic cardiopulmonary diseases.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Infectious Gastroenteritis",
+      "rule_out_reason": "Acute fever, vomiting, and diarrhea are hallmark signs of foodborne or viral enteritis, but uncomplicated gastroenteritis fails to explain catastrophic capillary leakage leading to fatal pulmonary edema and cardiac arrest.",
+      "quote": "manifested classical dengue symptoms (fever, myalgia, vomiting and diarrhea)"
+    },
+    {
+      "candidate": "Bacterial Sepsis and Septic Shock",
+      "rule_out_reason": "Acute collapse with multiorgan failure suggested fulminant bacterial sepsis, but histopathologic examination demonstrated sterile diffuse mononuclear and T-lymphocyte infiltrates with elevated pro-inflammatory cytokines across hepatic, pulmonary, and renal tissues rather than bacterial microabscesses.",
+      "quote": "The patient evolved to severe clinics and died from acute pulmonary edema with sudden cardiac arrest."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Progression to sudden acute pulmonary edema and cardiovascular collapse, with postmortem multi-organ histopathology and immunohistochemistry confirming fatal DENV-3 infection marked by profound microvascular damage and massive pro-inflammatory cytokine expression.",
+      "quote": "For this reason, liver samples of the four DENV-3 fatal cases were first considered for our evaluations."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly stops at admission triage of acute fever, myalgia, vomiting, and diarrhea, withholding terminal cardiopulmonary collapse and postmortem pathological data. Zero forbidden terms present."
+}

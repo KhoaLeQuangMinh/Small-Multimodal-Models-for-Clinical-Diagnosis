@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8864130_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 16-year-old adolescent female with fistulizing Crohn's disease, who previously received 12 months of isoniazid chemoprophylaxis for latent infection, develops new cough, fever, and sputum one month after infliximab dose-interval escalation (shortened to every 4 weeks for presumed pharmacologic failure). The presentation mimics a refractory Crohn's flare with pulmonary manifestations, opportunistic fungal pneumonia, or methotrexate-induced lung injury, masking severe iatrogenic miliary and occult spinal tuberculosis reactivation occurring despite prior prophylactic monotherapy.\n2. Admission Breakpoint: The admission narrative halts upon development of new respiratory symptoms during biological maintenance therapy\u2014including vital signs, physical exam, baseline inflammatory blood tests, plain chest radiography, and non-contrast chest CT revealing diffuse bilateral small nodules\u2014strictly before bronchoscopy, tracheal biopsy, bronchial washing PCR, abdominal/spinal CT/MRI, and paraspinal abscess aspiration.\n3. Differential Distinctions: Crohn's disease relapse with extraintestinal/pulmonary manifestations is considered given previous worsening of gastrointestinal symptoms and rising ESR/CRP, but diffuse miliary nodules reflect hematogenous infectious seeding rather than aseptic inflammation; opportunistic bacterial or fungal pneumonia is ruled out by negative bacterial and fungal cultures; methotrexate pulmonary toxicity is excluded by positive mycobacterial molecular and cultural confirmation.",
+  "case_prompt": "A 16-year-old female with established Crohn's disease presented for evaluation of new-onset fever, cough, and sputum production. Her past medical history was notable for diagnosis of Crohn's disease with perianal fistulas one year earlier, along with completion of neonatal BCG vaccination and a history of parental treated pulmonary infection three years prior. She had completed a 12-month course of isoniazid chemoprophylaxis following an initial positive interferon-gamma release assay. Her Crohn's disease had initially been managed with enteral nutrition, mesalazine, and azathioprine, before transitioning to methotrexate and subsequent biological therapy with the tumor necrosis factor-alpha inhibitor infliximab. One year into infliximab therapy, ileocolonoscopy showed mucosal healing, but one month later she experienced recurrent diarrhea with progressive elevations in erythrocyte sedimentation rate and C-reactive protein. Because her serum infliximab trough level was suboptimal (2.4 \u00b5g/mL) with absent anti-drug antibodies, her infliximab infusion interval was escalated from every eight weeks to every four weeks. One month after this dose intensification, she acutely developed high fever, productive cough, and sputum.\n\nOn physical examination, she appeared moderately ill with fever and tachypnea. Examination of the chest revealed bilateral coarse breath sounds. The abdomen was soft without localized tenderness, and perianal examination showed healed seton tracts without active drainage.\n\nInitial blood investigations revealed an elevated erythrocyte sedimentation rate and markedly increased C-reactive protein. A plain chest radiograph and subsequent chest computed tomography demonstrated multiple small, well-defined micronodules diffusely distributed throughout both lungs in a miliary pattern.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Crohn's disease flare / Loss of response to infliximab",
+      "rule_out_reason": "Worsening systemic symptoms, diarrhea, and rising inflammatory markers shortly after biologic therapy were initially interpreted as Crohn's disease exacerbation caused by pharmacokinetic failure, but the subsequent development of miliary pulmonary nodules signaled systemic infection rather than active inflammatory bowel disease.",
+      "quote": "Considering the suboptimal trough level and negative anti-drug antibody status of the patient, secondary loss of response due to nonimmunogenic pharmacokinetic failure was suspected."
+    },
+    {
+      "candidate": "Opportunistic fungal or pyogenic bacterial pneumonia",
+      "rule_out_reason": "Bilateral diffuse micronodular infiltrates in an immunosuppressed adolescent on anti-TNF and methotrexate raised strong concern for invasive fungal infection or pyogenic bacterial pneumonitis, but bacterial and fungal cultures from respiratory and tissue specimens showed no growth.",
+      "quote": "Bacterial and fungus culture grew no isolates."
+    },
+    {
+      "candidate": "Methotrexate-induced hypersensitivity pneumonitis",
+      "rule_out_reason": "Patients on long-term methotrexate can develop subacute pulmonary toxicity with diffuse nodular or interstitial opacities, but the imaging appearance was classic for miliary dissemination and was microbiologically proven to be infectious.",
+      "quote": "Chest x-ray and chest computed tomography (CT) showed multiple small nodules in both lungs indicating miliary TB"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when bronchoscopy with tracheal biopsy and bronchial washing fluid yielded a positive tuberculosis polymerase chain reaction test confirming miliary disease, followed later by incidental detection and positive mycobacterial culture from an asymptomatic psoas abscess and spinal spondylitis.",
+      "quote": "TB was confirmed by a positive TB PCR test of the tracheal biopsy specimen and bronchial washing fluid."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to the acute presentation of miliary symptoms during escalated biological therapy. Zero pathogen names in the prompt; bronchoscopy PCR and subsequent psoas aspiration culture are detailed in the differential reasoning."
+}

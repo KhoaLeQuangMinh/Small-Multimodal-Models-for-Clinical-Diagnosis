@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6732635_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 40-year-old male presents with high fever, encephalopathy, scleral jaundice, profound normochromic anemia (Hb 4 g/dL), acute renal failure, and 'Coca-Cola' colored urine following intermittent quinine therapy, highlighting the diagnostic complexity of differentiating drug-induced massive intravascular hemolysis (blackwater fever) from severe sepsis, acute glomerulonephritis, and autoimmune hemolytic anemia.\n2. Admission Breakpoint: The admission clinical presentation concludes following physical examination, initial urinalysis, baseline biochemical/hematological investigations, and bedside abdominal ultrasound, immediately prior to malaria rapid diagnostic testing, thick blood smear examination, and initiation of artemether/hemodialysis.\n3. Differential Distinctions: Autoimmune hemolytic anemia (AIHA) is excluded by a negative direct antiglobulin (Coombs) test. Acute glomerulonephritis is ruled out because urine microscopy revealed no red blood cells or erythrocyte casts despite prominent 2+ dipstick positivity, confirming free hemoglobinuria. Sepsis with DIC is ruled out by normal platelet counts (194,000/mm3) and normal coagulation parameters (TP 100%, INR 0.99).",
+  "case_prompt": "A 40-year-old man was transferred to a regional hospital in the Zinder Republic of Niger with acute fever, vomiting, and abrupt impairment of consciousness. Ten days earlier, he had developed high fever and vomiting for which he received an initial 3-day course of intramuscular quinine injections at 25 mg/kg/day. The injections were discontinued, but four days later his fever recurred, prompting the resumption of quinine therapy. On the third day following resumption of quinine injections, his condition acutely deteriorated with confusion, deepening jaundice, and dramatic darkening of his urine.\n\nOn arrival, clinical examination revealed a body temperature of 39.0°C, Glasgow Coma Scale score of 11, marked pallor of the mucous membranes, deep conjunctival jaundice, tachypnea with a respiratory rate of 40 breaths/min, bilateral bronchial rales, and tachycardia with a heart rate of 120 beats/min. His blood pressure was 120/80 mm Hg. The urine was strikingly dark, resembling Coca-Cola.\n\nUrinalysis test strip demonstrated 2+ hemoglobinuria, 3+ bilirubinuria, and 2+ proteinuria, with a complete absence of urobilinogen, red blood cells, and leukocytes. Initial blood tests showed a leukocyte count of 15,000/mm³, severe normochromic anemia with a hemoglobin level of 4.0 g/dL, and a platelet count of 194,000/mm³. Coagulation profile was normal (prothrombin time 100%, INR 0.99, TCA 29.5 s, TQ 12 s). Renal function tests revealed profound azotemia with a blood urea of 74.9 mmol/L, serum creatinine of 559.6 µmol/L, and 24-hour proteinuria of 0.56 g/24 h. Hepatic and inflammatory panels revealed an ASAT of 334 IU/L, ALAT of 185 IU/L, C-reactive protein of 92 mg/L, serum sodium of 128 mEq/L, potassium of 5.0 mEq/L, and marked unconjugated hyperbilirubinemia with a total bilirubin level of 200 mg/L. Direct Coombs test was negative. Bedside abdominal ultrasound showed normal-sized kidneys with discrete corticomedullary dedifferentiation and biliary sludge.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune Hemolytic Anemia (AIHA)",
+      "rule_out_reason": "Massive acute intravascular hemolysis with hemoglobin drop to 4 g/dL and jaundice can occur in AIHA, but direct antiglobulin testing was negative, pointing instead to drug-mediated oxidative or immune hemolysis.",
+      "quote": "The direct Coombs test was negative."
+    },
+    {
+      "candidate": "Acute Glomerulonephritis / Intrinsic Nephritic Syndrome",
+      "rule_out_reason": "Dark 'Coca-Cola' colored urine accompanied by acute renal failure (creatinine 559.6 µmol/L) can mimic acute glomerulonephritis, but dipstick and microscopic examination revealed free hemoglobinuria without intact red blood cells or erythrocyte casts.",
+      "quote": "Test strip urine examination revealed hemoglobinuria at 2 plus, bilirubinuria 3 plus, proteinuria 2 plus, and absence of urobilinogens, red blood cells, and leucocytes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The constellation of intermittent quinine exposure, massive intravascular hemolysis with Coca-Cola colored hemoglobinuria, and severe acute uremic syndrome alongside a positive rapid diagnostic test confirming Plasmodium falciparum antigenemia established blackwater fever.",
+      "quote": "Urine was Coca-Cola colored (Figure 2), which led to the diagnosis of BWF"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation strictly omits malaria RDT and Plasmodium name while preserving complete clinical picture of hemolysis and quinine exposure."
+}

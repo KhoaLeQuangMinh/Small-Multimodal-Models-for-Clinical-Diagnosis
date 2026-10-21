@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7490298_10",
+  "disease": "Zika Virus",
+  "think": "<think>\n1. Core Clinical Tension: A 28-year-old pregnant woman presents with acute fever in the third trimester. Maternal febrile illness in late pregnancy requires distinguishing common congenital TORCH pathogens and co-circulating arboviruses from Zika virus, which can cross the placenta to cause severe fetal neurological and musculoskeletal malformations (microcephaly, arthrogryposis) despite non-specific maternal fever.\n2. Admission Breakpoint: The breakpoint stops immediately after triage presentation with maternal fever in the third trimester. Maternal serologic panels (dengue, chikungunya, TORCH, ZIKV), delivery at 38 weeks, and placental histopathology/immunohistochemistry are confirmatory and post-breakpoint.\n3. Differential Distinctions: Dengue, chikungunya, rubella, toxoplasmosis, HIV, syphilis, and cytomegalovirus all enter the differential for maternal fever and adverse perinatal outcomes, but acute infections are excluded by non-reactive IgM serologies. Positive ZIKV IgM, together with fetal microcephaly, arthrogryposis, and placental viral antigen (E and NS1) and negative-strand RNA detection, confirm the diagnosis.\n</think>",
+  "case_prompt": "<case_prompt>\nA 28-year-old pregnant woman presents for clinical evaluation during the third trimester of pregnancy after experiencing an acute episode of fever. Gestational monitoring is initiated to evaluate maternal and fetal health.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue Virus",
+      "rule_out_reason": "Considered as a leading cause of acute fever during pregnancy in endemic areas; ruled out by non-reactive specific IgM serology.",
+      "quote": "Her IgM serology for dengue, chikungunya, rubella, toxoplasmosis, HIV, syphilis and cytomegalovirus were non-reactive"
+    },
+    {
+      "candidate": "Chikungunya Virus",
+      "rule_out_reason": "Considered as a common cause of febrile illness in pregnant women; excluded by non-reactive IgM serology.",
+      "quote": "Her IgM serology for dengue, chikungunya, rubella, toxoplasmosis, HIV, syphilis and cytomegalovirus were non-reactive"
+    },
+    {
+      "candidate": "Congenital TORCH Infections (Toxoplasmosis, Rubella, Cytomegalovirus, Syphilis, HIV)",
+      "rule_out_reason": "Considered due to the maternal fever and high risk of congenital fetal central nervous system and musculoskeletal malformations; ruled out as acute causative infections by non-reactive IgM serologies for all five agents.",
+      "quote": "Her IgM serology for dengue, chikungunya, rubella, toxoplasmosis, HIV, syphilis and cytomegalovirus were non-reactive, and positive for ZIKV. Her IgG serology was positive for cytomegalovirus and rubella."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of positive IgM serology for the target flavivirus, corroborated by delivery of an infant at 38 weeks with congenital microcephaly (head circumference 28 cm) and arthrogryposis of upper and lower limbs, and confirmed by placental tissue detection of viral NS1 protein and negative-strand viral RNA indicating active replication.",
+      "quote": "positive for ZIKV. Her IgG serology was positive for cytomegalovirus and rubella. At 38 weeks of gestation, her baby boy was born by cesarean delivery with a cephalic circumference of 28 cm. The baby also presented arthrogryposis, with lower and upper limb involvement."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint stopping at maternal fever presentation. Excluded all serology, delivery anthropometry, arthrogryposis, and placental histopathology from case_prompt. Verbatim quotes from source text. Audit flags NONE."
+}

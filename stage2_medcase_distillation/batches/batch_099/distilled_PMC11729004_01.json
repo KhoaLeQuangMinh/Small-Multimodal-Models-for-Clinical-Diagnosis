@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11729004_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 47-year-old female non-smoker with no canine exposure or systemic symptoms presents with 3 months of mild hemoptysis. Chest CT reveals a 4-cm solitary pulmonary mass with spiculated margins and central necrosis in the apical segment of the right lower lobe, and bronchial aspiration cytology reveals atypical bronchial cells with anisokaryosis and irregular chromatin suggestive of malignant cells. The central tension is distinguishing primary bronchogenic carcinoma—which was heavily suspected, prompting an urgent oncologic lobectomy—from an atypical, false-negative serology pulmonary hydatid cyst masquerading as a necrotic lung carcinoma.\n2. Admission Breakpoint: The admission breakpoint is established after clinical physical examination, normal baseline laboratory testing (CBC without eosinophilia), and initial thoracic imaging (chest radiograph and chest CT) demonstrating the solitary necrotizing pulmonary mass, immediately prior to percutaneous CT-guided biopsy, fiberoptic bronchoscopy with bronchial aspiration cytology, hydatid serology, and surgical thoracotomy.\n3. Differential Distinctions: Primary bronchogenic carcinoma was strongly favored based on the spiculated margins, central necrosis, and bronchial wash cytology suggesting malignant cells, but was refuted upon surgical histopathology showing no neoplasia. Pulmonary tuberculoma/abscess was considered given hemoptysis and central necrosis, but excluded by negative systemic symptoms, negative percutaneous biopsy, and definitive identification of classic acellular laminated cuticular membranes.",
+  "case_prompt": "A 47-year-old woman presents with a 3-month history of intermittent hemoptysis. She reports expectorating small amounts of blood, with an estimated daily volume of less than 50 mL. She has had no associated fever, dyspnea, chest pain, or wheezing. She denies constitutional symptoms, including unintended weight loss, night sweats, anorexia, or fatigue.\n\nThe patient has no prior chronic medical conditions or past surgeries. She is a lifetime non-smoker and reports no occupational dust exposure or known contact with dogs or farm animals. Family history is negative for malignancies or chronic respiratory conditions.\n\nOn physical examination, she appears well and in no respiratory distress. Vital signs are normal. Pulmonary auscultation reveals clear breath sounds bilaterally without wheezes, crackles, or rhonchi. Examination of the cardiovascular system, abdomen, and peripheral lymph nodes is completely normal.\n\nBaseline laboratory evaluation is unremarkable; complete blood count demonstrates normal leukocyte and differential counts without peripheral eosinophilia, and renal and liver function panels are within normal limits. A plain chest radiograph reveals a round opacity with irregular contours in the right lung field. Contrast-enhanced computed tomography (CT) of the chest reveals a moderately enhancing mass measuring 4.0 x 2.8 x 3.2 cm with spiculated margins and central necrosis located in the apical segment of the right lower lobe. Abdominal CT imaging demonstrates no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Bronchogenic Carcinoma",
+      "rule_out_reason": "Heavily suspected due to chronic hemoptysis, a spiculated necrotic pulmonary mass on CT, and bronchial aspiration cytology showing anisokaryotic cells suggestive of malignancy, which prompted urgent oncologic lobectomy, but refuted by surgical histopathology revealing an intact parasitic cystic architecture without neoplastic transformation.",
+      "quote": "Pathology examination of the bronchial aspiration revealed bronchial cells isolated or grouped in clusters and showing an anisokaryosis with voluminous ovoid or elongated nuclei with finely distributed non-nucleated chromatin, suggestive of malignant cells... Regarding those findings, lung carcinoma was highly suspected and the importance of hemoptysis motivated an urgent hemostasis lobectomy."
+    },
+    {
+      "candidate": "Pulmonary Tuberculoma / Necrotizing Lung Abscess",
+      "rule_out_reason": "Considered given the necrotic cavitary appearance in an apical segment of the lower lobe and hemoptysis, but excluded by absent systemic symptoms, lack of caseating necrosis on CT-guided core biopsy, and absent granulomatous disease on resected histology.",
+      "quote": "She denied systemic symptoms, including weight loss, night sweats, or fatigue... A scan guided biopsy was performed showing inflammatory pulmonary parenchyma with no signs of malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Right lower lobectomy revealed an intraparenchymal thin-walled cystic mass whose histological evaluation revealed a pathognomonic acellular laminated membrane lined by an internal proligerous germinal membrane, establishing a pulmonary hydatid cyst despite negative preoperative serology and absence of canine exposure.",
+      "quote": "Gross examination revealed a cystic formation measuring 4 cm long with a whitish, thin wall. The histological examination showed a hydatid cyst composed of a laminated membrane lined by a proligerous membrane made up of a layer of eosinophilic cells... confirming the diagnosis of pulmonary hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint preserved at the initial clinical and chest CT evaluation, prior to CT-guided biopsy, bronchoscopy, serology, and thoracotomy. Zero pathogen names or spoilers in the presentation."
+}

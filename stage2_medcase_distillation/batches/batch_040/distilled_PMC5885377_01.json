@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5885377_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 29-year-old pregnant Canadian traveler at early gestation (9 weeks) acquired an acute febrile exanthem in Trinidad accompanied by persistent retro-orbital headaches and myalgias lasting a month, with a household contact (her young child) similarly affected. In the Caribbean, differentiating between co-circulating arboviruses (dengue, chikungunya, and Zika) is clinically difficult due to overlapping constitutional, cutaneous, and musculoskeletal features, yet critical given high teratogenic and neurotropic fetal risks.\n2. Admission Breakpoint: The admission breakpoint occurs following maternal return and presentation to the Canadian clinic at 13 weeks 6 days gestation, noting residual low-grade fever (38.1°C), resolution of the exanthem, and absence of lymphadenopathy or organomegaly, immediately prior to maternal send-out molecular viral panels, PRNT serologies, and detailed second-trimester fetal neuro-ultrasonography.\n3. Differential Distinctions: Dengue virus typically produces more severe thrombocytopenia, hemoconcentration, and is not associated with early congenital brain disruption or microcephaly. Chikungunya virus causes severe polyarthralgias and arthritis rather than prolonged retro-orbital pain and fetal ventriculomegaly, and is ruled out by negative RT-PCR and serology.",
+  "case_prompt": "A 29-year-old pregnant Canadian woman (gravida 4, para 3) presented for infectious disease and obstetric evaluation at 13 weeks and 6 days of gestation. Five weeks earlier (at 9 weeks gestation), while visiting family and friends in Trinidad, she developed an acute low-grade fever and a generalized maculopapular rash 6 weeks after arriving on the island. The rash persisted for 4 days, but was subsequently accompanied by approximately one month of persistent low-grade fevers, diffuse myalgias, and retro-orbital headaches. Her 4-year-old child developed an identical febrile illness with rash around the same time. She returned to Canada for formal evaluation approximately one month after symptom onset.\n\nHer medical history was notable for mild cerebral palsy and scoliosis. Her only medication was a routine prenatal multivitamin, and she reported no tobacco, alcohol, or illicit substance use during the pregnancy.\n\nOn physical examination at 13 weeks 6 days gestation, her temperature was 38.1°C (100.6°F). Heart rate and blood pressure were within normal limits. She had no conjunctival injection, scleral icterus, lymphadenopathy, or organomegaly. Heart and lung sounds were clear, and the previous generalized rash had fully resolved.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dengue virus",
+      "rule_out_reason": "Dengue was a prominent co-circulating arboviral possibility given fever, rash, and retro-orbital headaches, but acute reverse transcription PCR was negative and serologic cross-reactivity reflected prior remote flavivirus exposure without active acute infection.",
+      "quote": "Her blood tested negative in Trinidad by real-time reverse transcription polymerase chain reaction (PCR) for dengue and chikungunya viruses, but was positive for ZIKV."
+    },
+    {
+      "candidate": "Chikungunya virus",
+      "rule_out_reason": "Chikungunya frequently co-circulates in the Caribbean causing febrile rash syndromes, but it was ruled out by negative acute molecular PCR testing and non-reactive IgM and IgG serologies.",
+      "quote": "chikungunya IgM and IgG were non-reactive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive viral RT-PCR in maternal serum at 30 days post-onset coupled with second-trimester fetal ultrasonography demonstrating early neurotropism (asymmetrical lateral cerebral ventriculomegaly and dilated jugular lymph sacs), confirmed by viral RNA detection in fetal neural tissue and placenta.",
+      "quote": "Blood was drawn, and at 30 days post-symptom onset, ZIKV PCR, performed by Public Health Ontario Laboratory (PHOL), was positive at a cycle threshold (CT) of 31.85 using a commercial assay [RealStar  Zika Virus RT-PCR Kit (Altona Diagnostics, Hamburg, Germany)."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning CPC format with strict admission breakpoint, zero spoilers in case prompt, exact article quotes in reasoning, and verified canonical diagnosis."
+}

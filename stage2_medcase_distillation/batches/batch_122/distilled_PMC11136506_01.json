@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11136506_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old male presents to the emergency department complaining only of an isolated cough, with thoracic imaging revealing a diffuse micronodular (miliary) pattern throughout both lungs. The clinical challenge is differentiating miliary tuberculosis from metastatic pulmonary carcinomatosis or diffuse fungal pneumonias, while anticipating occult disseminated extrapulmonary CNS (tuberculomas) and spinal (Pott's disease) involvement.\n2. Admission Breakpoint: The breakpoint occurs in the emergency department following the physical examination and initial thoracic computed tomography demonstrating the miliary lung pattern, immediately prior to sputum mycobacterial culture results and subsequent neuro-axis MRI scans.\n3. Differential Distinctions: Metastatic carcinomatosis and disseminated fungal infection (such as histoplasmosis) frequently cause widespread 1-2 mm hematogenous lung nodules, but are ruled out by sputum culture growing Mycobacterium tuberculosis. Subsequent MRI of the brain and spine detects intracranial tuberculomas and L3-L5 Pott's spondylodiscitis.",
+  "case_prompt": "A 37-year-old male presented to the emergency department complaining of a persistent cough. Physical examination was performed. Thoracic computed tomography (CT) was obtained, which demonstrated widespread, diffuse micronodules measuring 1 to 2 mm in diameter arranged in a miliary distribution throughout both lungs without focal lobar consolidation or cavitation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Pulmonary Carcinomatosis",
+      "rule_out_reason": "A diffuse micronodular miliary pattern on chest CT often indicates diffuse hematogenous metastasis from an occult primary malignancy (e.g., thyroid, renal cell, or melanoma), but was ruled out by positive sputum culture for Mycobacterium tuberculosis.",
+      "quote": "Thoracic computed tomography revealed the presence of widespread nodules, measuring 1-2 mm in diameter, with a miliary pattern in both lungs (Figure 1)... After a diagnosis of miliary tuberculosis (TB) was confirmed through sputum culture, antituberculosis medication was initiated."
+    },
+    {
+      "candidate": "Disseminated Fungal Infection (Histoplasmosis / Blastomycosis)",
+      "rule_out_reason": "Miliary pulmonary infiltrates can represent disseminated fungal infections, but diagnostic sputum cultures demonstrated mycobacterial growth rather than fungal pathogens.",
+      "quote": "After a diagnosis of miliary tuberculosis (TB) was confirmed through sputum culture, antituberculosis medication was initiated."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum culture confirmed Mycobacterium tuberculosis in the setting of bilateral 1-2 mm miliary nodules, leading to systemic neuro-axis MRI which identified multi-organ disseminated disease including supratentorial/infratentorial brain tuberculomas and L3-L5 Pott's spondylodiscitis.",
+      "quote": "After a diagnosis of miliary tuberculosis (TB) was confirmed through sputum culture, antituberculosis medication was initiated. During a noncontrast brain magnetic resonance imaging (MRI) scan conducted when the patient had a headache and tinnitus, several nodular lesions of different sizes were observed in the supratentorial and infratentorial white matter. These lesions, accompanied by edema, were identified as tuberculomas (Figure 2). Noncontrast lumbar MRI was performed because the patient complained of lower back pain, revealing the presence of spondylodiscitis at the L3-L5 level, which is indicative of Pott's disease"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled in strict accordance with Stanford MedCaseReasoning methodology. Zero spoilers in case_prompt. Sputum culture and MRI findings preserved strictly post-breakpoint."
+}

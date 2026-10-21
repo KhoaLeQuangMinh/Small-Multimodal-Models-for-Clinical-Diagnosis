@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10159276_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 5-year-old boy from South Sudan presents with acute flaccid paraplegia, areflexia, neurogenic bladder, and an expansile intramedullary conus medullaris lesion (T11-L1) mimicking an intramedullary spinal cord malignancy (astrocytoma, ependymoma), spinal tuberculosis, or neurosarcoidosis. The absence of systemic parasitic symptoms and persistently negative routine stool and urine microscopy for parasite eggs created significant diagnostic uncertainty, necessitating neurosurgical exploration.\n2. Admission Breakpoint: The point of hospital admission, neurological physical examination, and full-spine MRI revealing the T11-L1 conus medullaris mass, immediately prior to send-out serologies, routine microscopic egg searches, and open surgical laminoplasty biopsy.\n3. Differential Distinctions: Intramedullary glial neoplasms present as non-granulomatous infiltrative or expansile lesions requiring resection/radiation; spinal tuberculosis typically features vertebral body erosion or cold abscesses with positive acid-fast staining; conus neuroschistosomiasis is characterized by mass-like necrotizing granulomas with entrapped Schistosoma eggs that respond dramatically to praziquantel and systemic corticosteroids.",
+  "case_prompt": "A 5-year-old boy originating from a peri-urban area of South Sudan was brought to the hospital with a 1-month history of sudden-onset, progressive bilateral lower extremity weakness resulting in the complete inability to stand or walk without assistance. Prior to this illness, the child had met normal developmental motor milestones and could walk and run independently. Concurrently with the weakness, he developed urinary incontinence and had experienced sporadic episodes of fever and cough over the preceding month. His past medical history was otherwise negative for comorbid medical conditions.\n\nOn physical examination, the patient had severe flaccid paraparesis with grade 2/5 muscle strength in the lower extremities (right weaker than left). He was unable to stand or sit unassisted, though he could roll over in bed. Deep tendon reflexes in the lower limbs were completely absent, with bilateral loss of patellar, Achilles, and plantar responses. Neurological examination further demonstrated an absent cremasteric reflex, lax anal sphincter tone, and palpable bladder distension consistent with a neurogenic bladder. Upper extremity strength and reflexes were preserved.\n\nMagnetic resonance imaging (MRI) of the brain and entire spine revealed an intramedullary expansile lesion extending from the T11 to L1 vertebral levels with irregular margins within the conus medullaris, accompanied by extensive perilesional edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramedullary Spinal Cord Tumor (Astrocytoma / Ependymoma)",
+      "rule_out_reason": "Strongly considered as the primary diagnosis given the focal expansile intramedullary conus lesion with perilesional edema causing rapid myelopathy in a young child; excluded upon histopathological analysis of the resected tissue, which demonstrated chronic granulomatous inflammation without neoplastic cellular features.",
+      "quote": "Differential diagnoses of astrocytoma, ependymoma, and granulomatous conditions were suspected, and he was investigated to rule out the differentials."
+    },
+    {
+      "candidate": "Spinal Tuberculosis / Neurosarcoidosis / Neuromyelitis Optica Spectrum Disorder",
+      "rule_out_reason": "Considered due to granulomatous appearance and acute-onset myelitis; ruled out by normal serum ACE level, negative NMO and MOG autoantibodies, negative tissue acid-fast bacilli smear, negative tissue GeneXpert PCR, and sterile 48-hour tissue cultures.",
+      "quote": "Serum angiotensin converting enzyme (ACE) level was done to rule out Sarcoidosis, which was noted to be within normal limits. Serum neuromyelitis optica (NMO) and myelin oligodendrocyte glycoprotein (MOG) levels were done to rule out immune-mediated disorders, Brucella antibodies IgG/IgM to rule out brucellosis and immunoblot antinuclear antibody (ANA) profile to rule out antinuclear antibody-positive disease were reported negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Conus Intramedullary Neuroschistosomiasis",
+      "rule_out_reason": "Because non-invasive tests and stool/urine egg examinations were negative, the patient underwent laminoplasty and intramedullary conus biopsy, which definitively revealed chronic necrotizing granulomatous inflammation enclosing Schistosoma eggs, resulting in near-complete functional recovery after praziquantel and high-dose corticosteroid therapy.",
+      "quote": "Histopathological examination of the spinal cord lesion showed necrotising granulomatous chronic inflammation with Schistosoma eggs and no evidence of malignancy [Figure 3]. As per the clinical, laboratory, and imaging evidence of neuroschistosomiasis, he was treated with steroids and Praziquantel 300 mg."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint stopping at spine MRI. Excluded parasite names from geographic background and omitted biopsy from presentation. Quotes verified."
+}

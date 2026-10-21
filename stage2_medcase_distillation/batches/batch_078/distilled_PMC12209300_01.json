@@ -1,0 +1,43 @@
+{
+  "case_id": "PMC12209300_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 16-year-old adolescent from West Africa presents with isolated painless gross hematuria and extensive multifocal nodular and papillomatous vegetative bladder masses simulating invasive bladder neoplasia (such as urothelial carcinoma or rhabdomyosarcoma). The clinical challenge is distinguishing between genitourinary malignancy, genitourinary tuberculosis, eosinophilic cystitis, and parasitic infestation in an otherwise well-appearing teenager.\n2. Admission Breakpoint: The admission breakpoint occurs following emergency triage clinical evaluation, baseline blood chemistry showing peripheral eosinophilia, urinalysis revealing hematuria and pyuria, initial abdominal/urinary ultrasound identifying extensive bladder wall nodular lesions, and baseline chest radiography, prior to diagnostic cystoscopy with bladder biopsy, mycobacterial testing, and urine parasitological microscopic examination.\n3. Differential Distinctions: Bladder neoplasia is suggested by the papillary vegetative mass lesions but lacks cellular atypia on cytology and histology; genitourinary tuberculosis causes granulomatous cystitis but produces sterile pyuria with positive IGRA/mycobacterial PCR; primary eosinophilic cystitis lacks helminthic etiology; whereas urinary schistosomiasis is defined by endemic freshwater exposure history, peripheral eosinophilia, and the microscopic visualization of large terminal-spined eggs in urine sediment.",
+  "case_prompt": "A 16-year-old male from Mali was referred for medical evaluation complaining of gross hematuria over the preceding two months, without fever, chills, vomiting, diarrhea, or other systemic symptoms. His medical and family history was limited due to language barriers and lack of cooperation; he was currently residing in a family home under the care of a guardian. Physical examination at the time of admission revealed a patient in good general condition with stable vital signs, unremarkable physical findings aside from episodic gross hematuria, and a small reducible umbilical hernia.\n\nLaboratory evaluation revealed a white blood cell count of 9.74 x 103/mL with mild eosinophilia of 2.78 x 103/mL (reference range 0.0-0.45 x 103/mL), hemoglobin of 15.4 g/dL (range 12-17.5 g/dL), and a platelet count of 207 x 103/mL (range 130-400 x 103/mL). Comprehensive metabolic panel, hepatic chemistry, and inflammatory markers were within normal limits. Urinalysis showed hemoglobin, numerous erythrocytes (316 cells/mul; reference range 0-14), leukocytes (382 cells/mul; reference range 0-18), and trace leukocyte esterase, without nitrites.\n\nAn abdominal and urinary ultrasound demonstrated normal-sized kidneys with preserved margins and corticomedullary ratio, mild right renal hyperechogenicity, and no obstructive nephropathy. The urinary bladder was distended with finely and diffusely thickened walls, mobile echogenic endoluminal sediment, and at least six large nodular, vegetating hyperechoic formations adherent to the bladder wall: an 11 x 15 mm lesion in the left angular basal region, two lesions along the left lateral wall (10 x 7 mm and 15 x 10 mm), an 11 x 5 mm mass along the right lateral wall, and two large lesions on the dome (up to 26 x 19 mm) extending along the right lateral wall, with a 31 x 11 mm lesion wrapping around the distal right ureter causing mild distal ureteral ectasia. No pelvic fluid accumulation or hepatic parenchymal/cholestatic abnormalities were identified. Plain chest radiography showed mild reinforcement of bronchovascular markings in the hiloperibronchial and hilar-basal regions, with clear costophrenic angles and normal cardiac volume.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bladder Neoplasia (Papillomatous Urothelial Malignancy)",
+      "rule_out_reason": "Considered because of gross painless hematuria and multiple large nodular, vegetating papillomatous bladder lesions up to 31 mm on imaging and cystoscopy in an adolescent. Ruled out by histological sampling revealing granulomatous eosinophilic inflammation without neoplastic cellular atypia, and persistent negative urine cytologies for malignancy.",
+      "quote": "One of the initial concerns was the possibility of bladder neoplasia. The presence of papillomatous growths on imaging and cystoscopy, along with hematuria, could raise suspicion for this malignancy."
+    },
+    {
+      "candidate": "Genitourinary Tuberculosis",
+      "rule_out_reason": "Considered given the patient's origin from an endemic region, sterile pyuria, hematuria, and granulomatous bladder wall pathology mimicking chronic granulomatous infection. Ruled out by consistently negative tuberculin skin testing, negative interferon-gamma release assay, and negative urine Mycobacterium tuberculosis PCR.",
+      "quote": "However, extensive testing including Interferon Gamma Release Assay (LIAISON  QuantiFERON  TB-Gold Plus, Diasorin) with values of 0,012 IU/mL (TB1-CD4+) and 0,082 IU/mL (TB2-CD4+/CD8+), Mycobacterium tuberculosis-polymerase chain reaction of urine and Mantoux tuberculin skin test were performed and were consistently negative, making this diagnosis unlikely."
+    },
+    {
+      "candidate": "Primary / Allergic Eosinophilic Cystitis",
+      "rule_out_reason": "Considered after bladder wall histopathology demonstrated dense eosinophilic infiltration and granulomatous changes. However, this inflammatory pattern was secondary to a parasitic helminthic infection rather than an idiopathic allergic or autoimmune eosinophilic cystitis.",
+      "quote": "The hypothesis of eosinophilic cystitis also emerged early in the diagnostic workup, especially after histological analysis of bladder biopsies revealed dense eosinophilic infiltration and granulomatous inflammation."
+    },
+    {
+      "candidate": "Chronic Bacterial Cystitis / Enteric Pathogen Infection",
+      "rule_out_reason": "Considered as a common infectious cause of hematuria, pyuria, and diffuse bladder wall thickening. Ruled out by absence of nitrites on urinalysis, lack of systemic inflammatory signs, repeatedly sterile urine cultures, and negative extended stool cultures for enteropathogens.",
+      "quote": "However, repeated urine cultures did not reveal any pathogenic bacterial growth, and there was no evidence of nitrites in urinalysis or systemic signs of infection."
+    },
+    {
+      "candidate": "Strongyloidiasis",
+      "rule_out_reason": "Considered as a possible helminthic etiology given the patient's geographic origin in Mali and marked peripheral eosinophilia. Ruled out by negative serum anti-Strongyloides stercoralis ELISA.",
+      "quote": "Moreover, no anti-Strongyloides stercoralis antibodies were detected in the patient's serum using an ELISA method (The NovaLisa  Strongyloides Antibody ELISA, Novatec Immunodiagnostic GmbH) that resulted with a negative value"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred upon microscopic parasitological examination of the urine sediment, which revealed large embryonated eggs with a characteristic terminal spine, definitively establishing urinary schistosomiasis.",
+      "quote": "The microscopic observation, as shown in Figure 2, revealed the presence of eggs of approximately above 150 mum in size, embryonated, with elongated or ellipsoid shape and a sub-terminal spine that were morphologically compatible with S. haematobium eggs."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Admission clinical presentation terminates strictly before cystoscopy, histopathology, and confirmatory parasitology. Zero pathogen spoilers in prompt. Verbatim quotes validated against source case report."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8666487_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 18-year-old previously healthy female presents with an acute, rapidly progressive, painful right neck mass and fever of one-week duration. The presence of marked leukocytosis, high inflammatory markers, and a multiloculated necrotic thyroid mass with retro-/prevertebral extension normally points to acute pyogenic suppurative thyroiditis—often secondary to a congenital pyriform sinus fistula—or aggressive thyroid malignancy. Tuberculous thyroiditis is extraordinarily rare (<0.1% to 1% of thyroid disease) because the thyroid gland possesses high vascularity, high iodine concentration, and bactericidal colloid that inhibit mycobacterial proliferation, especially in the absence of active pulmonary disease or systemic constitutional symptoms.\n2. Admission Breakpoint: Admission triage terminates after the physical exam, initial inflammatory markers, baseline thyroid function test, chest radiography, neck ultrasound, contrast-enhanced CT of the neck showing the multiloculated thyroid collection with prevertebral extension, and fibreoptic laryngoscopy confirming airway patency and excluding a pyriform sinus fistula, immediately prior to bedside needle aspiration of purulent fluid and surgical intervention.\n3. Differential Distinctions: Acute bacterial suppurative thyroiditis (ruled out as sole primary pathology by persistence despite drainage and detection of mycobacterial DNA), congenital pyriform sinus fistula infection (ruled out by normal fibreoptic laryngoscopy), subacute granulomatous thyroiditis (ruled out by frank purulent suppuration and marked uncontained prevertebral abscess), and thyroid malignancy (ruled out by acute inflammatory onset and benign xanthogranulomatous pathology).",
+  "case_prompt": "An 18-year-old previously healthy female presented with a 1-week history of right-sided painful neck swelling, fever, and odynophagia. She denied preceding pharyngitis, constitutional symptoms, night sweats, or known sick contacts. She reported no symptoms of hyperthyroidism or hypothyroidism, and had no history of neck trauma.\n\nOn physical examination, her blood pressure was 118/72 mmHg, pulse rate 89 beats/min, and temperature 37.0°C. She appeared clinically euthyroid without orbitopathy or stigmata of autoimmune thyroid disease. Examination of the neck revealed a right anterolateral mass measuring 4 x 5 cm that was mildly warm and tender to palpation, without fluctuance. There was no palpable cervical lymphadenopathy.\n\nLaboratory evaluation revealed leukocytosis with a total white blood cell count of 17.6 x 10^9/L and neutrophil predominance. Erythrocyte sedimentation rate was 98 mm/hr and C-reactive protein was markedly elevated at 105.8 mg/L (reference <5.0). Screening for HIV was negative, and fasting blood glucose was 5.1 mmol/L. Baseline thyroid function tests showed a thyroid-stimulating hormone (TSH) level of 0.13 mIU/L (reference 0.56–4.90) and free thyroxine (FT4) of 21.1 pmol/L (reference 1.5–22.7).\n\nChest radiography demonstrated clear lung fields without infiltrates or adenopathy. Bedside neck ultrasound showed a heterogeneous appearance of both thyroid lobes, with a heterogeneous hypoechoic mass occupying the right lobe and extending toward the left isthmus-thyroid junction. Contrast-enhanced CT of the neck demonstrated a multiloculated hypodense rim-enhancing collection centered in the right thyroid lobe measuring 3.5 x 4.6 x 5.4 cm, with posterosuperior extracapsular extension into the prevertebral space measuring 5.5 cm craniocaudally from C2/3 to C6/7 and tracheal displacement to the left, accompanied by bilateral cervical lymphadenopathy. Fibreoptic laryngoscopy demonstrated a patent airway without evidence of a pyriform sinus fistula.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial suppurative thyroiditis secondary to pyriform sinus fistula",
+      "rule_out_reason": "While Streptococcus anginosus and Eikenella corrodens were cultured from the purulent collection, flexible laryngoscopy ruled out the classic congenital predisposing tract (pyriform sinus fistula), and the extensive prevertebral extension and persistence pointed to an underlying tuberculous abscess.",
+      "quote": "Fibreoptic laryngoscope showed patent airway and no pyriform sinus fistula."
+    },
+    {
+      "candidate": "Subacute granulomatous thyroiditis (de Quervain's thyroiditis)",
+      "rule_out_reason": "Although subacute thyroiditis causes tender thyroid enlargement and transient thyrotoxicosis, it is a self-limiting nonsuppurative granulomatous inflammation and does not form large multiloculated necrotic abscesses or yield frank purulent aspirate.",
+      "quote": "She underwent a bedside fine needle aspiration which aspirated 5 cc of frank pus and a repeat ultrasound guided aspiration which aspirated 25 cc of pus."
+    },
+    {
+      "candidate": "Thyroid carcinoma with necrosis (e.g., anaplastic or aggressive papillary thyroid carcinoma)",
+      "rule_out_reason": "A rapidly expanding necrotic neck mass with cervical lymphadenopathy raises concern for thyroid malignancy, but histopathological examination of the resected lobe showed xanthogranulomatous inflammation and microabscesses without malignant cellular atypia.",
+      "quote": "Tissue histopathological examination (HPE) demonstrated xanthogranulomatous inflammation with microabscess formation. No epithelioid histiocytes, granuloma formation nor Langhan's giant cells was seen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Polymerase chain reaction (PCR) of the aspirated thyroid pus tested positive for Mycobacterium tuberculosis DNA despite negative acid-fast smears and negative mycobacterial cultures, identifying primary tuberculous suppurative thyroiditis with secondary bacterial superinfection.",
+      "quote": "Polymerase chain reaction (PCR) of the pus was also positive for Mycobacterium tuberculosis despite the acid-fast bacilli (AFB) smear being negative."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-yield teaching case illustrating tuberculous thyroiditis mimicking an acute bacterial phlegmon/abscess in a young immunocompetent patient with clear chest radiograph. Admission breakpoint strictly placed prior to fine needle aspiration and operative drainage."
+}

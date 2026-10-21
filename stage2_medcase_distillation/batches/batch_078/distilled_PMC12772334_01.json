@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC12772334_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old renal allograft recipient on triple immunosuppression presents with acute painful erythema and induration of the penile foreskin simulating typical bacterial cellulitis, accompanied by occult constitutional B-symptoms and hunting/butchering zoonotic exposures. The central challenge is recognizing that an apparent localized genital cellulitis unresponsive to broad-spectrum antibacterial therapy represents an exceedingly rare extrapulmonary manifestation of disseminated miliary tuberculosis.\n2. Admission Breakpoint: The admission breakpoint occurs following urology admission triage, physical examination of the penile foreskin showing localized induration and erythema without inguinal adenopathy, baseline hematologic and renal investigations (normocytic anemia, mild leukocytosis, elevated CRP, baseline allograft function), prior to treatment failure with IV broad-spectrum antibiotics, systemic CT revealing miliary lung nodules, penile MRI, and punch biopsy with molecular testing.\n3. Differential Distinctions: Acute bacterial penile cellulitis rapidly responds to beta-lactam and glycopeptide antibiotics; sexually transmitted infections (primary syphilis, lymphogranuloma venereum, herpes simplex) feature painless chancres, herpetic vesicles, or inguinal buboes with positive serologic/NAAT screening; penile squamous cell carcinoma presents as an indolent neoplastic mass without diffuse pulmonary miliary lesions; whereas disseminated miliary tuberculosis produces hematogenous seeding to the genitourinary tract with non-caseating/caseating granulomas and positive acid-fast staining or mycobacterial PCR.",
+  "case_prompt": "A 56-year-old man, born and raised in rural Ireland, presented with a 1-week history of progressively worsening penile pain, swelling, and erythema, prompting admission under the urology team. His past medical history was significant for cadaveric renal transplant 15 years prior for end-stage renal disease secondary to focal segmental glomerulosclerosis, on maintenance immunosuppression comprising tacrolimus 2 mg twice daily, mycophenolate 360 mg twice daily, and prednisolone 5 mg once daily. Additional comorbidities included hypertension, hypercholesterolemia, and monoclonal gammopathy of undetermined significance.\n\nReview of systems uncovered a 3-month history of constitutional symptoms, including drenching night sweats, fevers, chills, anorexia, and unintentional weight loss (7 kg). Further history revealed he was raised on a farm, worked as a butcher handling deer and occasionally cattle, and was an avid hunter who field-dressed game. He denied infectious contacts, incarceration, or homelessness. He was in a monogamous relationship with his asymptomatic wife. Recent travel included a mountaineering trip to Bilbao, Northern Spain, 4 months prior, and similar excursions across Scotland and Spain over the past 5 years.\n\nOn admission, he was febrile (38.1 C) but hemodynamically stable. Genital examination revealed an indurated, erythematous area on the right posterolateral aspect of the penile foreskin, without scrotal edema or inguinal lymphadenopathy. The remainder of the examination was unremarkable.\n\nLaboratory investigations showed hemoglobin 11.9 g/dL (reference range: 13-18 g/dL), white cell count 12.41 x 109/L (reference range: 3.5-11 x 109/L), and C-reactive protein 62 mg/L (reference range: <7 mg/L). Renal function was at his usual baseline, with creatinine 130-150 micromol/L (reference range: 65-107 micromol/L) and estimated glomerular filtration rate of 45-55 mL/min/1.73 m2 (normal range: >=90 mL/min/1.73 m2). Liver function tests were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Penile Cellulitis",
+      "rule_out_reason": "Considered as the initial working diagnosis on admission given acute-onset erythema, swelling, tenderness, and induration of the penile foreskin in an immunosuppressed patient with fever and elevated CRP. Ruled out when the lesion failed to improve and instead progressed despite broad-spectrum intravenous piperacillin/tazobactam and vancomycin.",
+      "quote": "The patient was initially treated empirically for presumed penile cellulitis with intravenous piperacillin/tazobactam 4.5 g every 8 h and vancomycin 1.5 g every 12 h. Progressive swelling and erythema despite broad-spectrum antibiotics prompted early infectious diseases consultation."
+    },
+    {
+      "candidate": "Sexually Transmitted Infections (Syphilis, Chlamydia, Gonorrhea)",
+      "rule_out_reason": "Considered given the localization of an indurated genital lesion with ulceration in an adult male. Ruled out based on an asymptomatic monogamous partner and completely negative serologic and nucleic acid testing for Treponema pallidum, Neisseria gonorrhoeae, and Chlamydia trachomatis.",
+      "quote": "All other microbiological investigations:including blood and urine cultures (mycobacterial cultures incubated on MGIT for 8 weeks), HIV serology, STI screen (VDRL/TPPA, urine NAAT for Gonorrhea and Chlamydia), BK virus PCR, CMV PCR, and serologies for Rickettsia and Coxiella:were negative."
+    },
+    {
+      "candidate": "Penile Squamous Cell Carcinoma / Genital Neoplasia",
+      "rule_out_reason": "Considered due to the patient's long-term immunosuppressed transplant state, progressive penile induration with tissue breakdown, and non-responsiveness to antibiotics. Ruled out by penile MRI demonstrating non-specific foreskin thickening without a discrete mass and punch biopsy histology confirming granulomatous inflammation without malignancy.",
+      "quote": "MRI of the penis showed non-specific foreskin thickening without any masses or abscesses... Histology excluded other neoplastic, infectious, or inflammatory processes, confirming the diagnosis of extrapulmonary TB."
+    },
+    {
+      "candidate": "Zoonotic Infection (Coxiellosis / Rickettsiosis / Tularemia)",
+      "rule_out_reason": "Considered due to the patient's rural agricultural background, work as a butcher handling cattle and deer, and outdoor game-dressing activities. Ruled out by negative targeted serologies for Coxiella and Rickettsia and negative standard blood and tissue cultures.",
+      "quote": "Further history revealed he was raised on a farm, worked as a butcher handling deer and occasionally cattle, and was an avid hunter who field-dressed game... serologies for Rickettsia and Coxiella:were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when systemic computed tomography revealed diffuse pulmonary miliary nodules, prompting penile punch biopsy which demonstrated granulomatous inflammation with acid-fast bacilli and positive Xpert MTB/RIF Ultra detection of Mycobacterium tuberculosis complex DNA.",
+      "quote": "Given the systemic symptoms, a CT thorax/abdomen/pelvis was performed, revealing diffuse miliary nodules consistent with miliary TB (Fig. 1B)... Punch biopsy of the penile lesion revealed non-caseating granulomas with a single acid-fast bacillus on Ziehl-Neelsen staining (Fig. 1C and D). MTB complex DNA was also detected in fresh penile tissue using Xpert MTB/RIF Ultra at Great Ormond Street Hospital."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Prompt stops cleanly at urology admission triage and baseline labs, prior to antibiotic failure, CT, MRI, and biopsy. Verbatim quotes match article text."
+}

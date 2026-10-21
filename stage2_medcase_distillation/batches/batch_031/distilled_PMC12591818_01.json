@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12591818_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old immunocompetent male mechanic presents with subacute cough, 7-kg weight loss, severe leukocytosis, acute renal impairment, markedly elevated D-dimer and inflammatory markers, and a dense right upper lobe pulmonary opacity. The primary diagnostic tension is separating an acute pulmonary thromboembolism or aggressive bronchogenic malignancy from subacute infectious processes, and recognizing concurrent dual opportunistic pathogens in an apparent immunocompetent host.\n2. Admission Breakpoint: The admission breakpoint is reached immediately following emergency triage, initial laboratory testing (showing acute renal failure, leukocytosis, D-dimer of 3.91 mg/L, CRP of 305 mg/L), chest radiograph demonstrating a right upper mid-zone opacity, and an emergency V/Q scan ruling out pulmonary embolism, but prior to sputum TB PCR/culture, contrast-enhanced CT, and lung biopsy.\n3. Differential Distinctions: Acute pulmonary embolism was suspected due to marked dyspnea and extreme D-dimer elevation, but disproven by ventilation-perfusion imaging. Primary lung carcinoma was suspected due to the localized mass-like consolidation and significant cachexia, but ruled out by histopathology demonstrating viral cytopathic changes (CMV) alongside sputum microbiological confirmation of drug-susceptible Mycobacterium tuberculosis.",
+  "case_prompt": "A 45-year-old Asian man, employed as a mechanic, presented to the Emergency Department with a 3-week history of dyspnea and cough. The cough was initially dry but became productive with yellowish sputum. He reported an unintentional weight loss of 7 kg over the prior 3 months and decreased appetite. He denied fever, chills, night sweats, chest pain, palpitations, or recent sick contacts. Symptoms had persisted despite completion of an outpatient course of oral antibiotics. He had no notable past medical history, was a nonsmoker, and denied alcohol or illicit drug use.\n\nOn physical examination, blood pressure was 119/89 mmHg, heart rate was 99 beats per minute, respiratory rate was 22 breaths per minute, temperature was 37.2 C, and oxygen saturation was 95% while receiving 2 L/min of supplemental oxygen via nasal cannula. Pulmonary examination revealed decreased air entry in the right lung accompanied by coarse crackles. The remainder of the physical examination was unremarkable.\n\nInitial laboratory studies revealed a white blood cell count of 24.8 x 109/L, hemoglobin of 11.3 g/dL, mean corpuscular volume of 83 fL, and platelet count of 399 x 109/L. Eosinophils were 0.1 x 109/L. Serum creatinine was 239 mumol/L, urea was 11.5 mmol/L, sodium was 134 mmol/L, and potassium was 3.9 mmol/L. Liver function tests showed ALT of 23 IU/L, AST of 17 IU/L, and total bilirubin of 0.4 mg/dL. C-reactive protein was 305 mg/L, procalcitonin was 31.7 ng/mL, and D-dimer was markedly elevated at 3.91 mg/L.\n\nA plain chest radiograph revealed a large homogeneous opacity in the right upper mid-zone. Given the elevated creatinine level and markedly increased D-dimer, a ventilation-perfusion (V/Q) scan was performed, which ruled out pulmonary embolism.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary embolism",
+      "rule_out_reason": "Considered as an urgent differential due to acute worsening dyspnea, tachycardia, hypoxemia, and markedly elevated D-dimer (3.91 mg/L), but definitively excluded by a ventilation-perfusion scan.",
+      "quote": "Given the elevated creatinine and D-dimer levels, a ventilation-perfusion (V/Q) scan was performed, which ruled out pulmonary embolism."
+    },
+    {
+      "candidate": "Pulmonary malignancy (bronchogenic carcinoma)",
+      "rule_out_reason": "Considered due to subacute progressive weight loss, anorexia, and a persistent solitary large mass-like opacity in the right upper lobe, but ruled out when CT-guided lung biopsy histopathology demonstrated cytomegalic inclusion bodies without neoplastic cells.",
+      "quote": "chest CT scan was performed to further characterize the right upper lung lesion and confirmed a large right upper lobe mass (Figure 2). Due to the suspicious nature of the mass, a CT-guided lung biopsy was performed to rule out concurrent malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microbiological evaluation of sputum yielded positive tuberculosis PCR and subsequently grew drug-susceptible Mycobacterium tuberculosis on culture, while histopathological examination and viral PCR identified concurrent cytomegalovirus (CMV) pneumonitis.",
+      "quote": "Microbiological evaluation revealed pulmonary TB with a positive sputum TB PCR, prompting the initiation of first-line anti-tuberculous therapy... This diagnosis was later confirmed by positive sputum culture for Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning protocol. Prompt stops immediately after emergency V/Q scan rules out PE. Excluded sputum PCR/culture, biopsy histopathology, and cytomegalovirus PCR."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6193329_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 33-year-old previously healthy male presents with acute high fever (39.5°C), ascending lower extremity paresthesias, dysarthria, gait failure with a fall, severe myalgias, dyspnea, and pulmonary consolidation. In a febrile patient with acute neuromuscular deficits and speech difficulty, the differential encompasses acute infectious myelitis, acute inflammatory myopathy/rhabdomyolysis, botulism, and systemic sepsis. Differentiating acute arboviral-triggered polyradiculoneuropathy (Guillain-Barré syndrome) from acute neurotropic CNS infections or primary myopathy is critical for prompt airway and immunomodulatory management.\n2. Admission Breakpoint: The admission clinical presentation concludes following the emergency admission to the intensive care unit, physical and neurological examination, and initial laboratory evaluation (CBC, basic metabolic panel, normal CK, elevated C-reactive protein), immediately prior to second-day arboviral serological panels, lumbar puncture, and endotracheal intubation for type II respiratory failure.\n3. Differential Distinctions: Acute rhabdomyolysis or severe infectious polymyositis was excluded by a normal serum creatine kinase level (CK 138 U/L). Central neuroinfections (herpesviruses, varicella, toxoplasmosis, HIV) and bacterial/fungal septicemia were ruled out by negative serologies and sterile blood cultures. The diagnosis of Guillain-Barré syndrome secondary to Zika virus was established by positive specific Zika serology and CSF albuminocytologic dissociation.",
+  "case_prompt": "A 33-year-old previously healthy man presented to the emergency department and was admitted to the intensive care unit with acute high fever (39.5°C / 103.1°F), persistent generalized muscular pain, and ascending paresthesias originating in his feet and progressing proximally. He reported progressive difficulty walking that culminated in a mechanical fall from his own height, as well as acute difficulty speaking. He also exhibited dyspnea and clinical features of pneumonia.\n\nOn physical examination, he was febrile and dyspneic with proximal and distal muscular weakness, impaired gait, and dysarthric speech, alongside preserved consciousness.\n\nInitial laboratory evaluation revealed a hemoglobin level of 14.0 g/dL, white blood cell count of 6.78 × 10^9/L, blood urea nitrogen (BUN) of 8.4 mg/dL, serum creatinine of 0.72 mg/dL, serum sodium 143 mEq/L, and serum potassium 4.2 mEq/L. Total serum creatine kinase (CK) was normal at 138 U/L, and C-reactive protein (CRP) was elevated at 10.1 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute polymyositis or infectious rhabdomyolysis",
+      "rule_out_reason": "Considered because of high-grade fever, severe persistent muscular pain, and weakness leading to a fall, but excluded by a completely normal serum creatine kinase level.",
+      "quote": "His initial laboratory tests showed hemoglobin 14.0 g/dL, white blood count 6.780/mm3, BUN 8.4 mg/dL, creatinine 0.72 mg/dL, Na 143mEq/L, K 4.2 mEq/L, CK 138U/L, and PCR 10.1mg/dL."
+    },
+    {
+      "candidate": "Acute central nervous system infection (e.g., Herpes, Varicella, Toxoplasmosis, HIV) or bacterial sepsis",
+      "rule_out_reason": "Considered due to high fever, speech difficulty, rapid neurologic deterioration, and pulmonary infiltrates, but comprehensive serologic panels and blood cultures were negative.",
+      "quote": "Blood cultures for bacteria or fungi and serological tests for toxoplasmosis, herpes, varicella, and HIV were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Specific serology was positive for Zika virus IgG antibodies, and cerebrospinal fluid analysis demonstrated classic albuminocytological dissociation (protein 191 mg/dL with normal leukocyte count) establishing Zika-associated Guillain-Barré syndrome.",
+      "quote": "On the second day of admission, serology was positive for Zika virus (IgG antibodies)... His cerebrospinal fluid showed an increased presence of proteins (191mg/dL) with a normal cell count consistent with Guillain-Barre syndrome."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC6193329_01. The case prompt ends strictly prior to day 2 serology, lumbar puncture, and invasive mechanical ventilation. Zero mention of Zika virus or Guillain-Barré syndrome in the prompt. Candidate differential rule-outs and diagnostic pivot cite verbatim text from the case report."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5749436_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 78-year-old man in an arbovirus-endemic urban setting (San Juan, Puerto Rico) presents with rapidly ascending bilateral extremity weakness, paresthesias, and acute respiratory failure from areflexic flaccid quadriparesis. The clinical challenge lies in distinguishing acute neurovascular catastrophe (central stroke) from peripheral polyradiculoneuropathy, and subsequently determining the specific antecedent infectious agent among classical bacterial pathogens and circulating neurotropic arboviruses.\n2. Admission Breakpoint: The admission clinical presentation concludes upon return to the emergency department and ICU admission with progressive flaccid paralysis, areflexia, and respiratory distress requiring intubation, immediately prior to initiating intravenous immunoglobulin (IVIG) and collecting targeted arboviral molecular and serological diagnostics.\n3. Differential Distinctions: Acute central cerebrovascular event was excluded by non-contrast head CT lacking intracranial pathology and physical exam demonstrating symmetric lower motor neuron areflexia. Classic post-infectious triggers of Guillain-Barré syndrome (Campylobacter jejuni, Mycoplasma pneumoniae, CMV, EBV, HIV, influenza) were excluded by comprehensive negative premortem microbiological testing. The diagnosis of acute Zika virus infection was confirmed by detection of viral RNA in urine by RT-PCR along with serum IgM antibodies.",
+  "case_prompt": "In August 2016, a 78-year-old man residing in the San Juan metropolitan area presented to a hospital emergency department with a 4-day history of progressive bilateral paresthesia and weakness affecting both the upper and lower extremities. His medical history was notable for hypertension (treated with amlodipine), diabetes mellitus, asthma, and prostate cancer.\n\nAt his initial emergency presentation, a non-contrast computed tomography (CT) scan of the head demonstrated no acute intracranial pathology or other focal abnormalities. He received nebulized bronchodilators and empirical ceftriaxone, and was initially discharged home. Three days later, he returned to the emergency department with severely worsened quadriparesis and acute respiratory distress requiring urgent endotracheal intubation and transfer to the intensive care unit.\n\nPhysical examination revealed severe, symmetric bilateral extremity weakness, marked loss of deep tendon reflexes throughout all four limbs, and respiratory compromise due to neuromuscular weakness, demonstrating a rapid monophasic ascending presentation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute ischemic stroke or intracranial lesion",
+      "rule_out_reason": "Considered upon initial presentation of progressive limb weakness, but non-contrast cranial CT demonstrated no acute pathology, and subsequent examination revealed symmetric quadriparesis with generalized areflexia rather than upper motor neuron signs.",
+      "quote": "Computed tomography without contrast of the head found no acute intracranial or other abnormalities."
+    },
+    {
+      "candidate": "Classic bacterial or viral antecedents of Guillain-Barré syndrome (e.g., Campylobacter jejuni, Mycoplasma, CMV, EBV, HIV)",
+      "rule_out_reason": "Considered as conventional triggers of post-infectious demyelinating polyneuropathy, but exhaustive diagnostic screening for all classical enteric, respiratory, and viral pathogens returned negative.",
+      "quote": "Additional laboratory testing of premortem specimens was negative for Shigella, Salmonella, Yersinia, enteropathic isolates, Campylobacter jejuni, Legionella, Mycoplasma pneumoniae, HIV, influenza A and B, cytomegalovirus, and Epstein-Barr virus."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Urine reverse transcription PCR (RT-PCR) detected Zika virus RNA, and serum testing confirmed Zika virus IgM antibodies in a patient with Brighton Level 2 criteria for Guillain-Barré syndrome.",
+      "quote": "We detected Zika virus RNA by reverse transcription PCR (RT-PCR) in urine and Zika virus and dengue virus IgM antibodies in serum (both collected on day 7)."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC5749436_01. The case prompt stops cleanly at the emergency ICU readmission with acute flaccid tetraparesis and respiratory failure before IVIG initiation, nerve conduction studies, or viral testing. Zero mention of Zika virus or arboviral PCR. Differential candidates and the diagnostic pivot cite exact textual quotes."
+}

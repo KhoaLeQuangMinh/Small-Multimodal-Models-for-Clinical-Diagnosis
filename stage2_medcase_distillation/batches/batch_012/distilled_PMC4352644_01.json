@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4352644_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A young agricultural laborer presenting with new-onset generalized seizures, headaches, and visual disturbances caused by a solitary, contrast-enhancing dural-based mass with calvarial hyperostosis and punched-out lytic defects, mimicking a primary intracranial neoplasm (such as meningioma or calvarial metastasis) in the complete absence of classical external signs of mycetoma (no scalp tumefaction or draining sinuses).\n2. Admission Breakpoint: The admission clinical narrative concludes following initial physical examination and brain computed tomography revealing the enhancing dural-based mass and calvarial bone remodeling, immediately prior to urgent neurosurgical craniotomy, debulking, and histopathological tissue analysis.\n3. Differential Distinctions: An atypical dural meningioma with skull invasion or primary calvarial neoplasm is ruled out by surgical histology demonstrating suppurative granulomatous microabscesses containing fungal grains with the Splendore-Hoeppli phenomenon; classic actinomycetoma or eumycetoma of the scalp is distinguished by its completely occult, purely intracranial/dural presentation without sinus tracts.",
+  "case_prompt": "A 26-year-old male agricultural laborer presented with a 5-month history of progressive headache, blurring of vision, and 3 to 4 episodes of generalized tonic-clonic seizures. He reported no history of fevers, chills, weight loss, or other constitutional symptoms.\n\nOn physical examination, the patient was afebrile and oriented. A detailed neurological examination revealed no focal motor, sensory, or cranial nerve deficits. Examination of the head and scalp revealed no palpable soft-tissue swelling, nodules, ulcerations, or draining sinuses.\n\nA non-contrast and contrast-enhanced computed tomography (CT) scan of the brain revealed a moderately enhancing, dural-based lesion in the left parieto-occipital region producing significant mass effect. The overlying calvarial bone demonstrated prominent hyperostosis interspersed with intermittent punched-out osteolytic defects.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Dural Meningioma with Calvarial Hyperostosis",
+      "rule_out_reason": "Considered the primary preoperative diagnosis given the young patient's contrast-enhancing, dural-based lesion producing mass effect associated with overlying bony hyperostosis; ruled out by histopathology demonstrating suppurative granulomas and fungal grains rather than meningothelial neoplasia.",
+      "quote": "Computed tomography scan of the brain revealed a left parieto-occipital moderately enhancing, dural based lesion with significant mass effect. The overlying bone showed hyperostosis with intermittent punched out defects [Figure 1]."
+    },
+    {
+      "candidate": "Classic Scalp Mycetoma with Secondary Calvarial Erosion",
+      "rule_out_reason": "Considered in light of the patient's occupational exposure as a farm laborer and chronic calvarial involvement; differentiated by the complete absence of external scalp swelling, cutaneous nodules, or draining sinuses.",
+      "quote": "There were no neurological deficits on examination. Also, no scalp swelling or draining sinuses were evident."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Craniocerebral Pale-Grain Eumycetoma",
+      "rule_out_reason": "The definitive diagnosis was confirmed following surgical en bloc resection by histopathologic examination demonstrating suppurative granulomas containing 2–4 mm pale granules exhibiting the Splendore-Hoeppli phenomenon, with GMS and PAS staining revealing fungal vesicles and septate hyphae.",
+      "quote": "Histology showed dense collagen infiltrated by inflammatory infiltrate extending into bone and underlying brain parenchyma. There were multiple suppurating granulomas composed of neutrophils, lymphocytes, mononuclear cells and few multinucleated gaint cells. In the center of the abscess, there were granules measuring 2-4 mm with central pale color and Splender-Hopple phenomenon. The central pale area was composed of vesicles and septate hyphae, highlighted on Gomori methenamine silver stain and periodic acid-Schiff stain [Figure 4]."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4352644. Case prompt stops after admission head CT, strictly excluding surgical exploration and histopathology. Zero pathogen leakage in prompt."
+}

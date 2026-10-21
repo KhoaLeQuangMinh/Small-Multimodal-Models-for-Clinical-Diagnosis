@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10756233_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 49-year-old female with a three-year history of alcoholic cirrhosis presents with recurrent cough, hemoptysis, and bilateral cavitary lung disease following multiple interrupted courses of empiric therapy. She has moderate anemia (Hb 70 g/L), thrombocytopenia (PLT 87 x 10^9/L), and hypoalbuminemia (29 g/L) related to cirrhosis. The tension lies in distinguishing relapsed cavitary pulmonary tuberculosis with acquired drug resistance from chronic pulmonary aspergillosis (or aspergilloma within pre-existing cavities), non-tuberculous mycobacterial (NTM) lung disease, or cavitary bronchogenic carcinoma in a patient with chronic liver disease and alcohol use disorder.\n2. Admission Breakpoint: The admission clinical presentation concludes following the patient's admission on September 14, 2022, documenting the episodes of hemoptysis, stable vitals, baseline triage laboratory tests (WBC 5.05 x 10^9/L, neutrophils 70.5%, Hb 70 g/L, PLT 87 x 10^9/L, liver chemistry: ALT 10, AST 17, TBIL 21.8, DBIL 7.6, Albumin 29), and triage chest CT demonstrating bilateral patchy infiltrates and multiple cavitations, prior to sputum acid-fast smear, Xpert MTB DNA testing, sputum culture, and drug susceptibility or mutation testing.\n3. Differential Distinctions: Chronic pulmonary aspergillosis commonly presents with recurrent hemoptysis and cavitary lesions in patients with prior lung damage and cirrhosis, but was superseded by microbiological identification of acid-fast bacilli and M. tuberculosis complex. Non-tuberculous mycobacterial lung disease produces chronic fibrocavitary disease in cirrhotic individuals, but species identification confirmed M. tuberculosis complex. Pulmonary tuberculosis is confirmed by sputum smear (4+ AFB), Xpert MTB DNA positivity, and culture growing M. tuberculosis complex.",
+  "case_prompt": "A 49-year-old woman with a three-year history of alcoholic cirrhosis presents to the hospital with a one-week history of worsening cough productive of sputum, accompanied by acute hemoptysis. One year prior, she had presented with chronic cough, white sputum, night sweats, fatigue, and low-grade afternoon fevers, for which she received six months of multi-drug antimicrobial therapy before discontinuing treatment on her own upon feeling improved. Nine months prior, she experienced a recurrence of cough and sputum and resumed therapy, but discontinued it after one month due to severe nausea and anorexia. One week prior to admission, her respiratory symptoms recurred and progressed to frank blood in her sputum, requiring outpatient hemostatic therapy that arrested the hemoptysis. She has no family history of malignant neoplasms, psychiatric conditions, or other chronic disorders. On physical examination, she appears fatigued and pale without acute distress; vital signs are stable. Admission laboratory testing demonstrates a white blood cell count of 5.05 × 10^9/L (neutrophils 70.5%), hemoglobin of 70 g/L, and platelet count of 87 × 10^9/L. Liver chemistry reveals an alanine aminotransferase (ALT) of 10 U/L, aspartate aminotransferase (AST) of 17 U/L, total bilirubin of 21.8 μmol/L, direct bilirubin of 7.6 μmol/L, and serum albumin of 29 g/L. Chest computed tomography (CT) demonstrates bilateral pulmonary patchy consolidations with multiple cavitary lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic pulmonary aspergillosis / Aspergilloma",
+      "rule_out_reason": "Cavitary lung disease complicated by severe hemoptysis in a patient with underlying cirrhosis strongly raises suspicion for chronic cavitary pulmonary aspergillosis or mycetoma, but microbiological investigations confirmed mycobacterial rather than fungal etiology.",
+      "quote": "CT showed that both lungs have multiple patches and cavities (Figure 3A)."
+    },
+    {
+      "candidate": "Non-tuberculous mycobacterial (NTM) lung disease",
+      "rule_out_reason": "NTM infections can produce chronic fibrocavitary disease in hosts with liver disease and prior structural lung changes, but species-specific culture and molecular testing confirmed Mycobacterium tuberculosis complex.",
+      "quote": "Culture results of sputum showed M. tuberculosis complex positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Relapsed drug-resistant pulmonary tuberculosis",
+      "rule_out_reason": "The diagnostic turning point was the demonstration of heavily positive acid-fast bacilli on sputum smear (4+), positive Xpert detection of M. tuberculosis DNA, and sputum culture confirming Mycobacterium tuberculosis complex with phenotypic resistance to isoniazid and fluoroquinolones.",
+      "quote": "Smear results of sputum showed positive for acid-fast bacilli (4+). The Xpert results showed that the positive DNA content of TB bacteria was medium and there was no mutational resistance. Culture results of sputum showed M. tuberculosis complex positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Baseline labs and CT findings are preserved at triage, while AFB smear, Xpert, culture, and resistance profiling are placed in diagnostic reasoning."
+}

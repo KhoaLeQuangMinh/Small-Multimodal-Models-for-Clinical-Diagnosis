@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9386489_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presents with subacute upper airway symptoms, dysphagia, purulent nasopharyngeal exudate, and bulky cervical lymphadenopathy, strongly mimicking nasopharyngeal carcinoma, deep neck infection, or aggressive fungal pharyngitis. The diagnostic challenge is identifying an extrapulmonary manifestation of a classic granulomatous infection localized to the nasopharynx with co-occurring subtle thoracic involvement.\n2. Admission Breakpoint: The admission breakpoint occurs after initial presentation, nasopharyngoscopy, cervical ultrasonography, and head/neck/chest CT imaging, before the results of sputum acid-fast smear, T-cell interferon-gamma release assays, and endoscopic biopsy histopathology are obtained.\n3. Differential Distinctions: Nasopharyngeal carcinoma presents with cervical lymphadenopathy and mucosal mass lesions but shows neoplastic epithelium rather than necrotizing granulomas. Fungal or pyogenic nasopharyngitis presents with exudates, but bacterial cultures show no pyogenic growth and fungal smears represent superficial colonization rather than the underlying invasive granulomatous etiology.",
+  "case_prompt": "A 29-year-old man presents with a 2-month history of sore throat, nasal congestion, dysphagia, and low-grade fever with temperatures up to 37.6°C. He has no prior history of chronic organ disease, including diabetes, renal dysfunction, or liver disease, and denies immunosuppressive medication use, corticosteroid therapy, or known personal or family history of chronic respiratory infections.\n\nOn physical examination, his temperature is 37.6°C. Anterior rhinoscopy demonstrates poor bilateral nasal airflow with marked hypertrophy and mucosal swelling of the nasal cavity accompanied by thick purulent secretions. Palpation of the neck reveals multiple enlarged, non-tender cervical lymph nodes bilaterally with distinct borders, the largest measuring approximately 2 cm × 3 cm. Oropharyngeal and nasopharyngeal examination demonstrates thickened mucosa along the posterior wall of the nasopharynx covered by tenacious, yellowish purulent exudate that is resistant to removal.\n\nComputed tomography (CT) of the nasopharynx shows mucosal thickening of the posterior and lateral nasopharyngeal walls with indistinct margins, along with multiple enlarged lymph nodes in the retropharyngeal space, left palatine tonsillar region, and bilateral cervical chains. Cervical ultrasonography demonstrates multiple enlarged, solid hypoechoic lymph nodes with well-defined margins (largest 3.3 cm × 1.9 cm on the right, 2.7 cm × 1.4 cm on the left), with a subset displaying mildly increased vascularity and partial internal liquefaction. Computed tomography of the chest reveals parenchymal infiltrative changes in the upper lobe of the left lung accompanied by left-sided pleural effusion and pleural thickening.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Nasopharyngeal Carcinoma / Lymphoma",
+      "rule_out_reason": "A 2-month history of progressive cervical lymphadenopathy, dysphagia, and nasopharyngeal mucosal thickening with indistinct margins strongly suggested nasopharyngeal malignancy; however, endoscopic biopsy demonstrated chronic granulomatous inflammation with epithelioid cells and multinucleated giant cells rather than neoplastic architecture.",
+      "quote": "The above-mentioned tests suggested the possibility of nasopharyngeal tuberculosis in this patient, but a definitive diagnosis still required histopathological examination. Therefore, a nasopharynx extraction biopsy was performed using a 0  rigid nasal endoscope under local anesthesia."
+    },
+    {
+      "candidate": "Pyogenic Bacterial or Invasive Fungal Nasopharyngitis",
+      "rule_out_reason": "Thick purulent exudate in the nasopharynx suggested acute-on-chronic bacterial or fungal infection; routine bacterial culture grew no pathogenic bacteria, fungal culture grew pseudomycetes (representing non-invasive commensal colonization), and definitive histology revealed granulomas.",
+      "quote": "We took the secretion for culture and identification, which showed no pathogenic bacteria growth in bacterial culture and white pseudomycetes in fungal culture."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of acid-fast bacilli on sputum examination and positive T-cell testing, coupled with rigid endoscopic nasopharyngeal biopsy revealing epithelioid reaction and multinucleated giant cells characteristic of tuberculous granuloma, definitively confirmed the diagnosis.",
+      "quote": "Antacid bacilli can be found by taking sputum from patients for antacid bacillus smear examination. Moreover, we also performed a T-cell test for tuberculosis infection, whose result was positive... Postoperatively, the specimen was stained with hematoxylin-eosin, and epithelioid reaction (Figure 4a) was found under microscopic magnification of 100x, and multinucleated giant cells (Figure 4b) were observed under magnification of 40x, suggesting nasopharyngeal tuberculosis granuloma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9386489_01. Sputum AFB smear, T-cell testing, and endoscopic biopsy histopathology excluded from case_prompt. Direct quotes match article text exactly."
+}

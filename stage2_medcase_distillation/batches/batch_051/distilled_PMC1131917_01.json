@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC1131917_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old East Timorese male presented with an afebrile, progressive destructive monoarthritis of the right elbow, weight loss, and widespread Thallium-201 uptake across the elbow, distal radius, mediastinum, and retroperitoneum. The aggressive cortical erosions and multi-station uptake prompted urgent referral to a sarcoma service for suspected metastatic osteosarcoma or lymphoma before an infectious etiology was proven.\n2. Admission Breakpoint: Following multimodality imaging (plain radiographs, ultrasound, Tc99m bone scintigraphy, CT, MRI, and Thallium-201 scan) demonstrating destructive erosions and widespread tracer retention, leading to Sarcoma Service referral prior to synovial and CT-guided retroperitoneal lymph node biopsies.\n3. Differential Distinctions: Primary bone and soft-tissue sarcoma / metastatic malignancy (the working clinical diagnosis based on cortical erosions and avid whole-body Thallium-201 retention) and pyogenic or fungal osteomyelitis. Differentiated by synovial biopsy devoid of malignant cells, rim-enhancing necrotic retroperitoneal lymphadenopathy on CT, and positive M. tuberculosis PCR/culture on retroperitoneal nodal biopsy.",
+  "case_prompt": "A previously well 21-year-old East Timorese male presented to his local medical officer with a 2-month history of right elbow pain associated with swelling and progressive limitation of movement, alongside an unintentional 6 kg loss of weight without other constitutional symptoms. He appeared well, was afebrile, and had unremarkable chest and abdominal examinations. Examination of the right elbow revealed a firm, tender swelling approximately 2 cm in diameter over the lateral humeral epicondyle, with limitation of elbow flexion to 60 degrees. Plain radiography of the right elbow joint revealed a joint effusion. Ultrasound examination confirmed a large joint effusion. Three-phase Tc-99m bone scanning demonstrated increased blood pool activity and diffusely increased osteoblastic activity involving the right elbow joint (particularly the distal humerus and ulna) as well as the distal left radius. CT scan confirmed cortical erosions of the right lateral humeral epicondyle and ulna, increased attenuation within the proximal medullary shaft of the ulna, and diffuse soft-tissue thickening around the proximal ulna and radial head. Functional imaging with Thallium-201 chloride revealed intense early uptake and delayed 4-hour retention in the right lateral humeral epicondyle and proximal ulna, with delayed whole-body views demonstrating further abnormal tracer retention involving the mediastinum, para-aortic regions of the abdomen, left inguinal region, and distal left radius. MRI demonstrated erosive changes of the lateral epicondyle, a loculated joint effusion, and thickening and enhancement of the joint capsule and annular ligament.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary bone/soft tissue sarcoma or metastatic malignancy",
+      "rule_out_reason": "Primary working diagnosis prompting Sarcoma service referral due to cortical bone destruction, weight loss, and multi-station Thallium-201 uptake; ruled out by joint biopsy showing chronic synovitis without malignant cells.",
+      "quote": "Biopsy of the right elbow joint demonstrated chronic synovial inflammation and numerous polymorphonuclear cells in the synovial fluid, but no malignant cells (Figure 8)."
+    },
+    {
+      "candidate": "Pyogenic bacterial or opportunistic fungal osteomyelitis",
+      "rule_out_reason": "Considered given marked polymorphonuclear synovial infiltration and destructive bone erosions; excluded by negative stains and cultures for pyogenic bacteria and fungi.",
+      "quote": "Microbiological examination, including staining for acid-fast bacilli and fungi, revealed no organisms."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast CT showed centrally necrotic, rim-enhancing retroperitoneal adenopathy, and CT-guided retroperitoneal biopsy revealed necrotizing granulomatous lymphadenitis positive for M. tuberculosis by PCR and culture.",
+      "quote": "Subsequent CT guided biopsy of the retroperitoneal lymphoid tissue revealed necrotising granulomatous lymphadenitis indicative of Mycobacterium tuberculosis infection (Figure 11). While no acid fast bacilli were visible on Ziehl-Nielsen staining, polymerase chain reaction was positive for M. tuberculosis DNA."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage boundary accurately stops at multimodality imaging referral to sarcoma service prior to biopsies. Verbatim quotes verified."
+}

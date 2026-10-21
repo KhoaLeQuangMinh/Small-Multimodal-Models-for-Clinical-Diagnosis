@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3294329_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 40-year-old immunocompromised woman with systemic lupus erythematosus in Mauritius presents with acute febrile gastroenteritis and rapidly deteriorates into altered mental status and sepsis despite empirical ciprofloxacin. The diagnostic challenge is differentiating an acute autoimmune lupus flare or common enteric gram-negative bacterial sepsis from an environmental tropical zoonosis/saprophyte acquired through percutaneous mud exposure.\n2. Admission Breakpoint: The admission triage phase ends after initial clinical examination and baseline blood tests (hemoglobin 8.5 g/dL, WBC 4.9 × 10^9/L, platelets 110 × 10^9/L, ESR 88 mm/h, glucose 8.5 mmol/L, normal urea and electrolytes). Subsequent escalation of antimicrobial regimens, secondary right leg cellulitis development, and incubation of blood cultures mark the post-admission confirmatory period.\n3. Differential Distinctions: An acute flare of systemic lupus erythematosus can present with fever, cytopenias, and elevated ESR in a patient on azathioprine and prednisolone, but severe prostration with fever of 39.2°C, septic encephalopathy, and isolation of a viable bloodstream organism confirm an infectious etiology. Salmonellosis or other common enterobacteriaceae cause febrile diarrhea in lupus patients, but are excluded by intrinsic resistance to ciprofloxacin and aminoglycosides and characteristic colony morphology of the blood isolate.",
+  "case_prompt": "A 40-year-old woman residing in Cite La Cure, a suburb of Port-Louis, Mauritius, presented to the hospital with acute-onset fever, generalized weakness, diarrhea, and vomiting. She had a history of systemic lupus erythematosus managed with azathioprine (50 mg daily) and prednisolone (5 mg daily). She was a housewife who had never traveled abroad; her domestic living environment was noted to become heavily muddy following seasonal downpours, leading to frequent prolonged barefoot contact with wet mud and soil during household chores. On physical examination, her body temperature was 39.2°C; the remainder of the initial physical examination was unremarkable, with no focal signs of infection identified. Initial laboratory testing revealed moderate anemia with a hemoglobin of 8.5 g/dL, a total leukocyte count of 4.9 × 10^9/L, and mild thrombocytopenia with a platelet count of 110 × 10^9/L. The erythrocyte sedimentation rate was markedly elevated at 88 mm/h. Serum glucose was 8.5 mmol/L. Serum urea and electrolyte levels were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Lupus Erythematosus (SLE) Flare",
+      "rule_out_reason": "A known SLE patient on immunosuppressive maintenance presenting with fever, cytopenias, and an elevated ESR raised suspicion of an active lupus flare; however, the acute high fever of 39.2°C and rapid septic decompensation were driven by bacterial bloodstream invasion.",
+      "quote": "After 5 days of incubation, an oxidase-positive, gram-negative bacillus was isolated from blood cultures."
+    },
+    {
+      "candidate": "Acute Enteric Sepsis / Salmonellosis",
+      "rule_out_reason": "Acute febrile illness with vomiting and diarrhea in an immunocompromised host suggested invasive Salmonella or Enterobacteriaceae bacteremia; however, the patient failed empirical ciprofloxacin, and testing revealed a pathogen intrinsically resistant to ciprofloxacin, colistin, and aminoglycosides.",
+      "quote": "Antimicrobial susceptibility testing by disc diffusion showed the organism to be resistant to colistin, ampicillin, cephalexin, gentamicin, and ciprofloxacin"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Exposure to wet mud following heavy rains in an immunocompromised host, followed by fatal septicemia yielding an oxidase-positive, gram-negative bacillus with characteristic wrinkled/rugose colonies identified by API 20NE as Burkholderia pseudomallei, confirmed acute bacteremic melioidosis.",
+      "quote": "It produced colonies that appeared dry and rugose on the plates after 48 h and was identified as B. pseudomallei by using API 20NE (BioMerieux, Marcy l'Etoile, France) with the profile 1156577."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fatal Burkholderia pseudomallei septicemia (melioidosis) in an immunosuppressed SLE patient in Mauritius following percutaneous exposure to mud."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7666697_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 43-year-old previously healthy businessman presenting during the pandemic with acute-to-subacute fever, cough, chest pain, exertional dyspnea, and profound hypoxemia following recent commercial airline travel. Bilateral mid-zone pulmonary consolidations and severe exertional desaturation strongly mimic acute viral pneumonia (COVID-19) or community-acquired bacterial pneumonia, obscuring simultaneous presentation of active pulmonary tuberculosis.\n2. Admission Breakpoint: At outpatient triage following physical examination, pulse oximetry, triage laboratory evaluation (lymphopenia, markedly elevated CRP, ESR, and LDH), and chest radiograph demonstrating bilateral mid-zone consolidations, immediately before send-out viral RT-PCR and sputum molecular/microscopy tests.\n3. Differential Distinctions: Isolated COVID-19 presents with viral prodrome, ground-glass infiltrates, and lymphopenia without acid-fast bacilli; bacterial community-acquired pneumonia typically causes neutrophilic leukocytosis. In this patient, dual pathology was established when both Mycobacterium tuberculosis (on microscopy/CBNAAT) and SARS-CoV-2 RNA (on qualitative PCR) were concurrently confirmed.",
+  "case_prompt": "A 43-year-old non-diabetic male businessman presented to the outpatient department with a 2-week history of cough productive of sputum, pleuritic anterior chest pain, reduced appetite, intermittent fevers with chills, and drenching night sweats. Over the preceding several days, he experienced breathlessness on exertion and two distinct episodes of frank hemoptysis. He noted that the fevers had become daily and that the chest pain worsened with exertion. He denied tobacco, alcohol, or substance use, had no known sick contacts, and had no history of foreign travel, but reported taking a domestic commercial flight approximately 20 days prior.\n\nOn physical examination, the pulse rate was 108 beats per minute, blood pressure was 130/80 mmHg, respiratory rate was 30 breaths per minute, and oral temperature was 101-degree centigrade. His Sp02 fell by 70% on room air after waking. Chest auscultation revealed bilateral crepitations over the mid-lung fields, with prominent exertional dyspnea.\n\nInitial laboratory testing revealed absolute lymphopenia (lymphocyte count 1x 109/L). Inflammatory markers were elevated, including a C-reactive protein (CRP) of 57 mg/L, lactate dehydrogenase (LDH) of 580 U/L, and erythrocyte sedimentation rate (ESR) of 70 mm in the 1st hour. Other routine biochemical parameters were normal. A posteroanterior chest radiograph demonstrated bilateral consolidations on the middle lobes of lungs with ill-defined borders.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated COVID-19 Pneumonia",
+      "rule_out_reason": "Considered as the leading acute diagnosis given recent air travel, acute hypoxemic respiratory failure, lymphopenia, and elevated LDH/CRP; ruled out as the sole etiology by the subacute 2-week course, recurrent hemoptysis, and microbiological detection of acid-fast bacilli in sputum.",
+      "quote": "Considering this as a probable case of TB with COVID-19 he was advised a chest radiograph with sputum microscopy (Ziehl Neelsen (ZN) staining for acid-fast bacilli), Cartridge-based nucleic acid amplification test (CBNAAT) of the sputum and other routine investigations. To check for the COVID-19 he was advised qualitative polymerase chain reaction (PCR) test from the oropharyngeal swab."
+    },
+    {
+      "candidate": "Typical Community-Acquired Bacterial Pneumonia",
+      "rule_out_reason": "Considered given fever, productive cough, tachypnea, and bilateral consolidation; inconsistent with significant lymphopenia, prolonged night sweats, and refuted by the detection of specific mycobacterial and viral pathogens.",
+      "quote": "The other investigations revealed a low lymphocyte count (1x 109/L) and increased levels of C-reactive protein (CRP) (57 mg/L), lactate dehydrogenase (LDH) (580 U/L), and erythrocyte sedimentation rate (ESR) (70 mm in the 1st hour)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum fluorescent microscopy and cartridge-based nucleic acid amplification testing (CBNAAT) detected rifampicin-susceptible Mycobacterium tuberculosis (later confirmed by BACTEC MGIT liquid culture), while qualitative oropharyngeal RT-PCR confirmed concurrent SARS-CoV-2 RNA.",
+      "quote": "The results were surprising with Mycobacterium tuberculosis detected on sputum fluorescent microscopy and were also confirmed by the CBNAAT. However, there was no resistance to Rifampicin. The results of the PCR were positive for RNA specific to SARS-CoV-2. Besides, the chest radiograph PA-view was suggestive of bilateral consolidations on the middle lobes of lungs with ill-defined borders."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to pre-microbiology triage breakpoint. The prompt strictly omits disease and pathogen names. Exact quotes validated."
+}

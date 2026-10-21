@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10621037_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 69-year-old female presents with a one-month history of high fever, dysarthria, left ptosis, and progressive coma. CSF analysis demonstrates lymphocytic pleocytosis, marked hypoglycorrhachia (1.88 mmol/L), elevated protein (0.94 g/L), and positive Pandy's and tryptophan reactions, but negative conventional acid-fast smears and bacterial cultures. The tension lies in distinguishing tuberculous meningitis from fungal (cryptococcal) meningoencephalitis, viral meningoencephalitis, or carcinomatous meningitis when conventional microbiology is negative.\n2. Admission Breakpoint: The admission clinical presentation concludes following the clinical history, neurological exam (dysarthria, left ptosis, altered consciousness), baseline hematologic and biochemical laboratory evaluation, and initial routine CSF findings, prior to send-out CSF next-generation sequencing, real-time PCR amplification, or drug resistance melting curve testing.\n3. Differential Distinctions: Viral meningoencephalitis causes fever, focal deficits, and lymphocytic pleocytosis, but CSF glucose is typically normal or near-normal, whereas marked hypoglycorrhachia and elevated protein with positive tryptophan reaction point to tuberculous or fungal basilar meningitis. Cryptococcal meningoencephalitis presents similarly with subacute basilar meningitis, cranial neuropathies, and hypoglycorrhachia, but was excluded by molecular confirmation of M. tuberculosis DNA on NGS and real-time PCR. Tuberculous meningitis presents with basilar meningitis signs (cranial neuropathies such as CN III ptosis, altered sensorium), marked hypoglycorrhachia, high CSF protein, and positive tryptophan reaction.",
+  "case_prompt": "A 69-year-old woman (height 165 cm, weight 43 kg) presents with a one-month history of persistent fever and progressive neurological decline. Her illness began without an apparent precipitating event with high fevers peaking at 39.7°C, accompanied by slurred speech and left eyelid ptosis. Over the subsequent weeks, she experienced progressive cognitive deterioration, lethargy, and loss of consciousness. She has had marked anorexia and insomnia but denies any history of food or drug allergies and was previously healthy. On admission physical examination, she is cachectic and stuporous with left-sided ptosis, dysarthria, and impaired responsiveness. Initial triage laboratory testing demonstrates: white blood cell count 7.51 × 10^9/L, red blood cell count 3.37 × 10^12/L, hemoglobin 102 g/L, alanine aminotransferase 127.6 U/L, aspartate aminotransferase 53.6 U/L, total bilirubin 54.10 μmol/L, direct bilirubin 36.20 μmol/L, blood urea nitrogen 2.81 mmol/L, serum creatinine 57 μmol/L, and uric acid 142 μmol/L; urinalysis shows no abnormalities. Lumbar puncture yields clear, colorless cerebrospinal fluid (CSF) with an opening pressure of 130 mmH2O, chloride 118 mmol/L, adenosine deaminase (ADA) 4.2 U/L, glucose 1.88 mmol/L, protein 0.94 g/L, leukocyte count 22 × 10^6/L, positive Pandy's reaction, and positive tryptophan reaction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral meningoencephalitis (e.g., Herpes simplex virus)",
+      "rule_out_reason": "Viral meningoencephalitis can present with subacute fever, focal cranial neuropathies, and lymphocytic CSF pleocytosis, but characteristically maintains normal CSF glucose levels, whereas this patient showed marked hypoglycorrhachia and elevated CSF protein.",
+      "quote": "glucose (Glu): 1.88 mmol/L , protein (Pr): 0.94 g/L , WBC count: 22 x 106/L , Pandy's reaction (+), and tryptophan reaction (+)."
+    },
+    {
+      "candidate": "Cryptococcal meningoencephalitis / Fungal meningitis",
+      "rule_out_reason": "Fungal basilar meningitis causes subacute cranial nerve palsies, altered consciousness, and low CSF glucose, but was excluded when molecular metagenomic sequencing and PCR specifically identified Mycobacterium tuberculosis while conventional smears and cultures were negative.",
+      "quote": "The patient was initially diagnosed with TBM (treatment-negative) [CSF testing: smear (-), and culture (-)]"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous meningitis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "The diagnostic turning point was the detection of Mycobacterium tuberculosis in the cerebrospinal fluid by next-generation sequencing (NGS) and confirmation by real-time fluorescence PCR melting curve analysis.",
+      "quote": "On January 12, 2022, Mycobacterium tuberculosis was detected by next-generation sequencing (NGS) of cerebrospinal fluid (CSF); therefore, the patient was further transferred to an infectious disease hospital. The drug resistance gene of Mycobacterium tuberculosis was then detected in the CSF using the real-time fluorescence PCR melting curve method, and the real-time PCR amplification testing result for Mycobacterium tuberculosis was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Baseline CSF triage parameters are provided while send-out NGS and PCR results are strictly confined to diagnostic reasoning."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5012722_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 33-year-old woman presents with 5 years of secondary amenorrhea following transient injectable contraceptive use. The primary challenge is differentiating between central endocrine failure (hyperprolactinemia, pituitary adenoma), ovarian insufficiency, and end-organ intrauterine destruction (Asherman syndrome), where the subtle co-presence of an asymptomatic pleural effusion offers the critical systemic infectious link.\n2. Admission Breakpoint: Admission triage encompasses gynecological examination, pelvic ultrasound, chest radiography, and head CT. It strictly excludes endocrine challenge tests (progesterone and estrogen-progesterone withdrawal tests), serum gonadotropin/prolactin measurements, hysteroscopy, and endometrial curettage histopathology.\n3. Differential Distinctions: Prolactinomas or central hypothalamic disorders present with abnormal sellar anatomy or suppress gonadotropins, but head CT here shows a normal pituitary. Ovarian failure responds to estrogen/progesterone priming with withdrawal bleeding. Failure of withdrawal bleeding after estrogen-progesterone therapy points specifically to anatomical obliteration of the endometrium, caused here by chronic granulomatous tuberculous endometritis.",
+  "case_prompt": "A 33-year-old woman presents to a reproductive endocrinology and fertility clinic complaining of secondary amenorrhea persisting for 5 years, beginning at age 28. Menarche occurred at 14 years of age, followed by a regular menstrual cycle lasting 5 to 7 days requiring 2 to 3 pads daily without dysmenorrhea. Five years prior to presentation, she received monthly injectable contraception; following the initial injection, she experienced two months of menses, after which menstruation completely ceased.\n\nPhysical and clinical examinations confirm secondary amenorrhea. Initial imaging evaluation includes a thorax radiograph and ultrasonography, which demonstrate suspected right-sided pleural effusion. A non-contrast computed tomography (CT) scan of the head reveals bilateral ethmoidal sinusitis and demonstrates a pituitary gland within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pituitary Microadenoma / Central Hyperprolactinemia",
+      "rule_out_reason": "Considered given prolonged secondary amenorrhea and elevated prolactin level, but ruled out because neuroimaging demonstrated a completely normal pituitary gland without sellar or suprasellar mass lesions.",
+      "quote": "CT-Scan examination showed that bilateral ethmoidal sinusitis and pituitary gland was within normal limits."
+    },
+    {
+      "candidate": "Anovulatory / Primary Ovarian Insufficiency",
+      "rule_out_reason": "Considered as an ovarian cause of amenorrhea, but ruled out because the patient failed to bleed after a progesterone challenge and subsequently failed to experience withdrawal bleeding following a combined 21-day estrogen plus progesterone challenge, indicating an end-organ uterine outflow failure rather than hormonal deficiency.",
+      "quote": "The E+P test showed a negative result, so it was necessary to do hysteroscopy and curettage for the uterus evaluation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Hysteroscopy revealed grade 4 dense intrauterine adhesions, and endometrial curettage pathology demonstrated granulomatous endometritis characterized by epithelioid histiocytes and Langhans multinucleated giant cells, establishing tuberculous endometritis in the setting of suspected pleural tuberculosis.",
+      "quote": "Results of anatomical pathology hysteroscopy showed endometrial tissue with stromal looks granulomas with lymphocytes, histiocytes, epithelioid and Langhans multinucleated giant cells and no malignancy was found in this preparation"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres to Stanford MedCaseReasoning criteria. Breakpoint excludes hormonal withdrawal challenge tests, hysteroscopy, and biopsy histopathology."
+}

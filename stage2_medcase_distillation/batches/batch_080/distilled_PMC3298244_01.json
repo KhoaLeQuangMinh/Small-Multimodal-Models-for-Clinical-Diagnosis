@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3298244_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 31-year-old traveler returns from a Dominican Republic resort with subacute malaise, insomnia, tinnitus, and diarrhea, without objective fever or chills, while stool microscopy demonstrates pathogenic amoebae and helminths. Clinicians are prone to anchor entirely on intestinal parasites to explain the gastrointestinal complaints. However, imported malaria from the Caribbean is predominantly falciparum; the occurrence of mixed Plasmodium vivax and Plasmodium malariae without fever is exceptionally atypical and easily missed.\n2. Admission Breakpoint: History of travel to Puerto Plata, gastrointestinal/constitutional symptom presentation, normal physical exam, normal baseline blood tests, and positive stool wet mount define the admission breakpoint before diagnostic peripheral blood film examination.\n3. Differential Distinctions: Intestinal parasitosis / Amebic dysentery (stools showed Entamoeba histolytica and Trichuris trichiura, explaining diarrhea, but failing to account for night sweats, insomnia, and tinnitus), Acute arboviral infection (Dengue/Chikungunya in Caribbean travelers, ruled out by normal blood counts and lack of fever), and mixed Plasmodium vivax / Plasmodium malariae malaria.",
+  "case_prompt": "A 31-year-old man with no relevant medical history was evaluated in the internal medicine clinic reporting a 6-day history of poorly defined malaise, night sweats, sleeplessness, tinnitus, and episodic diarrhea without blood or pathologic products. He did not report fever, chills, or headache. Two weeks earlier, he had spent 10 days at a tourist resort in Puerto Plata, Dominican Republic, without traveling to any other region. He had not received any antimalarial chemoprophylaxis. Physical examination was completely normal. Laboratory values—including serum sodium, potassium, liver transaminases, creatinine, coagulation factors, complete blood counts, and plain chest radiograph—were within normal limits. Stool examination revealed Entamoeba histolytica, Trichuris trichiura, Endolimax nana, and Blastocystis hominis; routine stool bacterial cultures were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intestinal parasitic infection / Amebiasis (Entamoeba histolytica and helminths)",
+      "rule_out_reason": "Stool microscopy identified multiple intestinal parasites that could intuitively account for the patient's episodic diarrhea; however, intestinal parasitosis alone could not account for systemic symptoms including night sweats, malaise, and tinnitus.",
+      "quote": "In the present case, the syndrome could have been easily explained by the intestinal infestations detected in stool studies, and malaria would have been overlooked if the clinician had not taken into account this disease in the diagnostic workup."
+    },
+    {
+      "candidate": "Acute arboviral illness (Dengue fever / Chikungunya)",
+      "rule_out_reason": "Constitutional symptoms following a trip to the Caribbean raise concern for arboviral illness; however, the absence of fever, headache, retro-orbital pain, leukopenia, or thrombocytopenia made acute arbovirus improbable.",
+      "quote": "He reported a history of poorly defined malaise, night sweats, sleeplessness, tinnitus, and episodic diarrhea with no pathologic products during the previous 6 days. He did not report fever, chills, or headache."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Imported Mixed Plasmodium vivax and Plasmodium malariae Malaria)",
+      "rule_out_reason": "Despite an afebrile presentation and Caribbean travel history, routine peripheral blood film evaluation revealed diagnostic intraerythrocytic trophozoites of both P. vivax and P. malariae, which cleared following treatment with chloroquine and primaquine.",
+      "quote": "A blood film showed trophozoytes of P. vivax and P. malariae."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Instructive case highlighting an afebrile, atypical presentation of mixed vivax/malariae malaria masked by concurrent intestinal parasites following Caribbean resort travel. Breakpoint includes stool findings while withholding the peripheral blood film result."
+}

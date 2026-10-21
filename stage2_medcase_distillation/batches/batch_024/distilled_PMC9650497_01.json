@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9650497_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A middle-aged man presents with 4 months of recurrent afternoon fevers, profuse watery diarrhea, and severe pancytopenia with cirrhosis, marked splenomegaly, and portal hypertension, having failed empiric artemisinin. The core tension lies in distinguishing decompensated cirrhosis with hypersplenism and bacterial sepsis from chronic reticuloendothelial protozoal infection (visceral leishmaniasis).\n\n2. Admission Breakpoint: The breakpoint occurs following admission evaluation, CBC with differential, procalcitonin, abdominal ultrasound, and plain CT of the chest and abdomen, prior to blood culture organism identification, send-out parasite serologies, fungal tests, and blood mNGS.\n\n3. Differential Distinctions: Malaria recrudescence is ruled out by negative smears, negative antigen tests, and unresponsiveness to artemisinin. Hepatosplenic schistosomiasis, echinococcosis, and viral hepatitis cause portal hypertension and cirrhosis but yield negative serologies. Visceral leishmaniasis is established by detection of Leishmania DNA on blood mNGS and positive rK39 antibody testing.",
+  "case_prompt": "A 47-year-old male technical worker presents to the emergency department for evaluation of recurrent fevers spanning 4 months, which have progressively worsened and been accompanied by severe diarrhea over the past month.\n\nFour months prior to presentation, the patient developed fevers reaching 39.9 \u00b0C, typically occurring in the afternoon and resolving over several hours, associated with headache, myalgias, and nausea. He took antipyretic medications and oral artemisinin without significant reduction in body temperature. One month prior to presentation, the fever became persistent at 39 \u00b0C, and he developed profuse diarrhea consisting of yellow liquid stools occurring more than 10 times daily. He reports a remote history of travel-related febrile parasitic infection contracted in Africa 6 years ago, which was treated with oral quinine.\n\nInitial laboratory evaluation reveals marked pancytopenia: hemoglobin 83 g/L, platelet count 16 \u00d7 10^9/L, and white blood cell count 2.82 \u00d7 10^9/L (with 84.0% neutrophils and 8.0% lymphocytes). Procalcitonin is mildly elevated at 0.87 ng/mL. Nasopharyngeal swab for SARS-CoV-2 is negative.\n\nAbdominal ultrasound reveals hepatomegaly and splenomegaly. Plain computed tomography (CT) of the chest and abdomen demonstrates cirrhotic morphology, marked splenomegaly, portal hypertension with collateral circulation, and peritoneal effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria Relapse / Recrudescence",
+      "rule_out_reason": "Considered due to the patient's remote African travel history and periodic spiking fever pattern; however, oral artemisinin failed to abate the fevers, and multiple blood smear examinations and rapid Plasmodium antigen tests were negative.",
+      "quote": "The schistosoma japonicum IgG antibody, echinococcus granulosus antibody, liver fluke antibody test, plasmodium antigen test, and blood smear test were all negative."
+    },
+    {
+      "candidate": "Chronic Hepatosplenic Parasitoses (Schistosomiasis, Echinococcosis, Clonorchiasis)",
+      "rule_out_reason": "Considered as primary causes of hepatosplenomegaly, cirrhosis, portal hypertension, and ascites in an endemic area; however, specific serological antibody panels against these trematode and cestode pathogens returned negative.",
+      "quote": "The schistosoma japonicum IgG antibody, echinococcus granulosus antibody, liver fluke antibody test, plasmodium antigen test, and blood smear test were all negative."
+    },
+    {
+      "candidate": "Viral Hepatitis / Hepatocellular Carcinoma",
+      "rule_out_reason": "Considered in a patient presenting with cirrhosis and portal hypertension; however, serological markers for viral hepatitis A and B were negative, and serum tumor markers (AFP and CEA) were normal.",
+      "quote": "Other tests such as hepatitis A virus and hepatitis B virus were also negative. Autoimmune liver, alpha fetoprotein (AFP), and carcinoembryonic antigen were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing (mNGS) of peripheral blood detected Leishmania infantum and Leishmania donovani DNA, corroborated by a positive CDC rK39 antibody test, establishing visceral leishmaniasis (kala-azar).",
+      "quote": "The blood mNGS test results on the 4th day of admission detected Leishmania infantum and Leishmania donovani (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified zero spoiler compliance: zero pathogen/disease names, zero send-out PCR or rK39 in case prompt. Quotes exactly matched text."
+}

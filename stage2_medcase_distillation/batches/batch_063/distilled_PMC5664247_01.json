@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5664247_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An elderly male with decompensated cirrhosis, heart failure, and renal failure presents with fever, right flank abscess, and an actively draining cutaneous purulent fistula. Because calcified hepatic cysts are classically regarded as dead, inactive, and clinically benign, recognizing that an acute subcutaneous and abdominal wall abscess arose from bacterial superinfection and fistulization of an ancient calcified cyst presents a formidable diagnostic challenge.\n2. Admission Breakpoint: The admission triage stops after the clinical examination documenting the draining purulent right-flank fistula, admission leukocytosis with hyponatremia, and emergency bedside abdominal ultrasound showing a subcutaneous abscess, immediately prior to magnetic resonance imaging, contrast CT fistulography, and microbiological cultures.\n3. Differential Distinctions: Isolated subcutaneous soft-tissue abscess or necrotizing fasciitis appears as a localized purulent collection but does not track deeply through muscle; a primary ruptured pyogenic liver abscess can form fistulae, but imaging directly links the purulent tract into the pre-existing calcified cyst cavity.",
+  "case_prompt": "A 68-year-old male with a medical history of chronic renal failure, chronic heart failure, and alcohol-related cirrhosis was admitted to the hospital with fever, abdominal pain, and an actively draining cutaneous fistula in the right flank discharging copious purulent secretion. He had a known history of an incidentally identified calcified cyst of the liver, discovered several years earlier on a chest radiograph and confirmed on unenhanced computed tomography. On admission, laboratory tests demonstrated neutrophilic leukocytosis with a white blood cell count of 11,300/mcL (84% neutrophils) and severe hyponatremia. An emergency bedside abdominal ultrasound was immediately performed, demonstrating a subcutaneous abscess in the right flank.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Pyogenic Soft-Tissue Abscess / Cutaneous Fistula",
+      "rule_out_reason": "Considered initial clinical diagnosis based on the right-flank purulent drainage and ultrasound finding of a subcutaneous collection; ruled out by cross-sectional MRI and fistulography showing the fluid tract extending deep through the right iliac muscle into an intrahepatic cavity.",
+      "quote": "An ultrasound (US) examination of the abdomen was immediately performed, showing the presence of a subcutaneous abscess."
+    },
+    {
+      "candidate": "Primary Pyogenic Liver Abscess with Spontaneous Rupture",
+      "rule_out_reason": "Considered in a cirrhotic patient presenting with bacterial superinfection (Pseudomonas and Klebsiella) draining purulent fluid; ruled out because the origin was not a de novo pyogenic abscess but an ancient, heavily calcified parasitic cystic cavity that had become secondarily colonized.",
+      "quote": "The drainage culture test showed the presence of Pseudomonas aeruginosa and Klebsiella oxytoca, without any Echinococcus."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was CT-fistulography performed by catheterizing the cutaneous flank opening with water-soluble contrast, which demonstrated continuous opacification of the tract ascending through the iliac muscle directly into the pre-existing calcified hepatic cyst, proving bacterial superinfection of a dead hydatid lesion.",
+      "quote": "The exam showed a progressive contrast filling of the abscess and the abdominal fistula (Figure 3), ascending till the calcified hydatid cyst of the liver."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission triage. Superinfection and cutaneous fistulization of an ancient calcified hepatic hydatid cyst; confirmed by CT-fistulography demonstrating the tract into the cyst."
+}

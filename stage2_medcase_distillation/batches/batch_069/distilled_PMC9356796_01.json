@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9356796_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Acute hypoxemic respiratory failure with ground-glass opacities, new-onset diabetic ketosis, and deep vein thrombosis in a pandemic setting, which initially mimicked acute viral pneumonitis (COVID-19), but was underpinned by chronic wasting, unresolving productive cough, and family contact indicating coinfection with pulmonary tuberculosis.\n2. Admission Breakpoint: The presentation ends after admission triage vitals showing hypoxemic respiratory failure, physical exam (unilateral leg swelling, rhonchi), admission blood gas/chemistries showing diabetic ketosis, and initial chest CT scan, prior to viral RT-PCR, sputum PCR for Mycobacterium tuberculosis, and lower extremity venous Doppler.\n3. Differential Distinctions: Typical bacterial pneumonia was ruled out by lack of response to amoxicillin-clavulanate and normal procalcitonin; isolated viral pneumonitis failed to account for chronic 10-kg weight loss and bilateral nodular tree-in-bud opacities; the diagnostic pivot was sputum PCR positivity for Mycobacterium tuberculosis confirming active tuberculosis coexisting with acute viral pneumonitis and secondary pulmonary embolism.",
+  "case_prompt": "A 67-year-old Caucasian male with no prior medical history presented to the emergency department with persistent resting dyspnea, chest pain, and a cough that had started dry and became productive fifteen days prior to admission. He reported no improvement after self-medicating with amoxicillin-clavulanic acid. The respiratory symptoms occurred in the setting of fever, night sweats, fatigue, anorexia, and an unintentional 10-kg weight loss. He reported no upper respiratory viral symptoms (no anosmia, dysgeusia, sore throat, or rhinorrhea), but noted that his son had completed therapy for a chronic pulmonary mycobacterial infection one year earlier. On physical examination, he was bedridden and acutely ill: body temperature was 38.0 °C, respiratory rate 30 breaths/min, oxygen saturation 86% on ambient air, heart rate 100 beats/min, and blood pressure normal. Chest auscultation revealed bilateral rhonchi. Examination of the left lower extremity demonstrated a swollen, tender calf with a positive Homans sign. A vesicular eruption was present on the abdomen. Bedside capillary blood glucose was 4.0 g/L, and urinalysis revealed 2+ ketones and 2+ glucose, establishing inaugural diabetic ketosis. Electrocardiogram and cardiac enzymes were normal. Laboratory studies showed a white blood cell count of 10,240/μL with neutrophilic predominance, microcytic hypochromic anemia (hemoglobin 10.7 g/dL), absolute lymphopenia (710/μL), C-reactive protein of 208 mg/L, normal procalcitonin (0.26 ng/mL), lactate dehydrogenase 371 U/L, and ferritin 764 ng/mL. Serum bicarbonate was 22.75 mmol/L, with normal renal and liver function panels. Initial chest computed tomography (CT) demonstrated foci of pulmonary consolidation with diffuse ground-glass opacities and multiple bilateral nodules and micronodules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Typical Pyogenic Bacterial Pneumonia",
+      "rule_out_reason": "Considered due to acute febrile productive cough and consolidations, but the patient had failed outpatient aminopenicillin/clavulanate therapy and had a normal procalcitonin level.",
+      "quote": "showing no improvement on clavulanic acid-amoxicillin taken by the patient on self-medication, in a context of fever and night sweats, and deterioration of general status including a weight loss of 10 kg, fatigue, and anorexia."
+    },
+    {
+      "candidate": "Isolated Acute Viral Pneumonitis (COVID-19 Monoinfection)",
+      "rule_out_reason": "While acute respiratory failure and ground-glass opacities were consistent with viral pneumonitis, isolated viral infection could not explain the preceding weeks of night sweats, 10-kg weight loss, or extensive bilateral micronodular tree-in-bud lesions.",
+      "quote": "However, the patient had not shown any signs of otorhinopharyngeal viral infection (no anosmia, no taste alteration, no sore throat, and no rhinitis) and had not reported any known close contact with a COVID-19 except that his son had been treated for pulmonary TB infection a year earlier."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The presence of bilateral micronodules and consolidations superimposed on ground-glass opacities prompted molecular sputum testing, which detected Mycobacterium tuberculosis by PCR, confirming dual coinfection complicated by deep venous thrombosis.",
+      "quote": "Also, his sputum for MTB PCR was positive with no rifampicin resistance detected revealing a concomitant infection with Mycobacterium tuberculosis. A venous doppler ultrasound of his left leg revealed a total thrombosis of the superficial femoral, popliteal, and sural veins."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Exemplary handling of complex coinfection. Case presentation strictly removes spoiler names for both COVID-19 and tuberculosis while conveying the authentic clinical picture of acute-on-chronic respiratory failure with diabetic ketosis and DVT."
+}

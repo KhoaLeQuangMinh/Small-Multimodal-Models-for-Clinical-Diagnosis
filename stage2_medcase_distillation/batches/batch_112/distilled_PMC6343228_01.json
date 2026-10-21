@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6343228_01",
+  "disease": "Malaria, Tuberculosis",
+  "think": "1. Core Clinical Tension: A 32-year-old male with HIV infection and partially treated pulmonary infection presents with subacute headache and fever followed by acute confusion, meningismus, and high fevers with rigors in an endemic tropical setting. Differentiating tuberculous meningitis from cryptococcal or pyogenic bacterial meningitis is critical, but persistent hyperpyrexia despite appropriate antituberculous induction therapy reveals an unrecognized concurrent severe malaria infection initially obscured by a negative rapid diagnostic test.\n2. Admission Breakpoint: Immediate completion of emergency triage following physical examination, baseline vital signs, and standard initial biochemical testing (normal liver and renal function panels), prior to lumbar puncture analysis, cryptococcal lateral flow antigen testing, and blood smear microscopy.\n3. Differential Distinctions: Cryptococcal meningitis is the leading opportunistic meningitis in advanced HIV but is excluded by negative lateral flow antigen testing; acute bacterial meningitis typically presents hyperacutely with marked neutrophilic predominance and rapid clinical decline, and was empirically covered with ceftriaxone before exclusion; tuberculous meningitis is characterized by subacute onset, meningismus, marked CSF pleocytosis and hyperproteinorachia; concurrent severe malaria causes persistent fevers with rigors and encephalopathy, which can be misattributed entirely to meningitis or missed due to antigen-negative rapid testing.",
+  "case_prompt": "A 32-year-old male with human immunodeficiency virus (HIV) infection presented to a referral hospital in Uganda with a 2-week history of headache with fevers and a 1-day history of confusion. He had been receiving antiretroviral therapy (zidovudine, lamivudine, efavirenz) and co-trimoxazole prophylaxis for 5 years. Five months prior to presentation, he had been diagnosed with a pulmonary infection for which he completed 2 months of a four-drug induction antimicrobial regimen (rifampicin, isoniazid, ethambutol, pyrazinamide) and had been prescribed a two-drug continuation regimen (rifampicin, isoniazid); however, he endorsed poor adherence to both his antiretroviral therapy and his antimicrobial medications.\n\nOn physical examination, the patient was febrile with a temperature of 38.6°C. Blood pressure was 112/71 mmHg, pulse rate was 94 beats/minute, respiratory rate was 48 breaths/minute, and oxygen saturation was 98% on ambient air. He appeared wasted, dehydrated, and exhibited overt rigors. On neurological examination, his Glasgow Coma Scale score was 14/15 with pronounced nuchal rigidity and a positive Kernig's sign. Cranial nerve examination was intact, and motor tone and power were normal throughout all limbs. Baseline serum liver and renal function tests were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cryptococcal meningitis",
+      "rule_out_reason": "In an HIV-infected patient presenting with subacute headache, fevers, and meningismus, cryptococcal meningitis is a primary opportunistic etiology, but was definitively excluded by a negative lateral flow cryptococcal antigen assay.",
+      "quote": "A finger stick cryptococcal antigen lateral flow assay (CrAg LFA) (IMMY, Norman, Oklahoma, USA) was negative."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial meningitis",
+      "rule_out_reason": "Acute confusion, tachypnea, rigors, and meningismus prompted initial empiric coverage with high-dose ceftriaxone, but was ruled out following CSF analysis and molecular confirmation of mycobacterial infection, leading to cessation of antibacterial therapy.",
+      "quote": "Whilst awaiting further investigations, he received empiric therapy of ceftriaxone 2 g twice daily for possible bacterial meningitis."
+    },
+    {
+      "candidate": "Isolated cerebral malaria",
+      "rule_out_reason": "Rigors, fever, and confusion in an endemic area suggested cerebral malaria, but an initial antigen-based rapid diagnostic test was negative, and CSF parameters demonstrated marked pleocytosis and hyperproteinorachia indicative of intracranial inflammation rather than isolated parasitic sequestration.",
+      "quote": "A peripheral blood smear showed P. falciparum parasites (1+ trophozoites), despite a negative malaria histidine rich protein-2 (PfHPR2)-based rapid diagnostic test (Malaria Plasmodium falciparum Rapid Test Cassette, Vaxpert, Florida, USA)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The patient had dual central nervous system and systemic parasitic co-infection: lumbar puncture demonstrated elevated opening pressure (33 cm CSF), pleocytosis (590 WBC/µL), and elevated protein (419 mg/dL), with Mycobacterium tuberculosis confirmed on CSF Xpert MTB/RIF Ultra; persistent spiking fevers (39.6°C) and tachycardia prompted blood microscopy that revealed Plasmodium falciparum trophozoites, confirming severe malaria co-infection.",
+      "quote": "Mycobacterium tuberculosis in CSF was confirmed on Xpert MTB/RIF Ultra; there was no evidence of rifampicin resistance."
+    }
+  ],
+  "final_diagnosis": "Malaria, Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission presentation stopping prior to lumbar puncture and peripheral smear analysis. Zero pathogen or disease name leaks. Verbatim quotes from the case report corroborate all differential candidates and the diagnostic pivot."
+}

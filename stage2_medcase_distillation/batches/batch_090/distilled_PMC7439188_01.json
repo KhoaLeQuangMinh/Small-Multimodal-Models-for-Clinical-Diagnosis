@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7439188_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 50-year-old male with diabetes mellitus and chronic alcoholism presenting with diffuse peritonitis, septic shock, and pneumoperitoneum following a one-week prodrome of bloody, mucous-rich dysentery. The acute surgical abdomen and widespread colonic gangrene strongly mimic acute mesenteric ischemia or toxic fulminant inflammatory bowel disease (Crohn's colitis), obscuring an invasive parasitic colitis.\n2. Admission Breakpoint: Following fluid resuscitation, baseline blood analysis (revealing leukocytosis of 24,000/mm\u00b3, acute kidney injury, and anemia), and plain upright abdominal/chest radiography demonstrating subdiaphragmatic free air, immediately prior to exploratory laparotomy.\n3. Differential Distinctions: Mesenteric ischemia characteristically exhibits arterial or venous thromboembolism without flask-shaped mucosal ulcerations; Crohn's disease shows crypt architectural distortion and non-caseating granulomas. Amebiasis is definitively identified by transmural necrotizing flask-shaped mucosal ulcers containing erythrophagocytic Entamoeba histolytica trophozoites and positive amoebic serology.",
+  "case_prompt": "A 50-year-old man residing in an urban informal settlement on the outskirts of New Delhi presented to the emergency surgical service with diffuse abdominal pain of 5 days duration, obstipation for 2 days, and progressive abdominal distension for 1 day. He reported a preceding 7-day history of recurrent loose stools containing mucus and blood, associated with intermittent crampy lower abdominal pain. His medical history was notable for diabetes mellitus and chronic alcohol use.\n\nOn initial physical examination, he was severely dehydrated. The heart rate was 120 beats per minute, blood pressure was 90/60 mmHg, and oxygen saturation was 98% while breathing ambient air. The abdomen was grossly distended with diffuse tenderness, muscular rigidity, and peritoneal signs throughout. Digital rectal examination revealed a dilated rectal vault with foul-smelling mucus and blood on the examining glove.\n\nFluid resuscitation was initiated with intravenous crystalloids. Following 4 hours of resuscitation, his hemodynamic parameters improved: blood pressure rose to 100/72 mmHg, pulse rate decreased to 102 beats per minute, respiratory rate was 17 breaths per minute, and urine output reached 200 mL.\n\nArterial blood gas analysis on arrival demonstrated mild metabolic acidosis that resolved with volume repletion. Laboratory studies revealed a hemoglobin level of 8.2 g/dL and a total leukocyte count of 24,000/mm\u00b3. Renal function tests showed a blood urea level of 72 mg/dL and serum creatinine of 1.8 mg/dL. Serum electrolytes were normal (sodium 136 mEq/L, potassium 4.2 mEq/L), and the international normalized ratio (INR) was 1.2. Upright plain radiographs of the chest and abdomen demonstrated free air under the diaphragm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Mesenteric Ischemia / Mesenteric Vessel Thrombosis",
+      "rule_out_reason": "Considered as a primary cause of diffuse bowel gangrene, necrosis, and peritonitis in an elderly patient with vascular risk factors; excluded during surgical exploration which showed patent mesenteric vasculature without thrombosis.",
+      "quote": "There was no evidence of thrombosis of mesenteric vessels."
+    },
+    {
+      "candidate": "Crohn's Disease / Inflammatory Bowel Disease",
+      "rule_out_reason": "Considered given transmural colitis with segmental mucosal ulcerations and toxic colonic perforation; excluded on histopathological examination which lacked crypt architectural distortion, crypt-destructive colitis, or non-caseating granulomas.",
+      "quote": "In the colon, there was no evidence of architectural distortion or any evidence of crypt destructive colitis or granulomas to support the presence of Crohn's disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency subtotal colectomy and histopathologic examination of the resected bowel identified characteristic flask-shaped mucosal ulcers with erythrophagocytic trophozoites positive for periodic acid-Schiff staining, corroborated by markedly positive amoebic IgM serology.",
+      "quote": "The colonic mucosal ulcers were covered with neutrophilic debris within which E. histolytica were identified (Figure 5). Pathogenic Entamoebae trophozoites were recognized by the presence of phagocytosed ingested intracellular red cells. Periodic acid-Schiff staining was positive (Figure 6). Amoebic serology was positive with high IgM antibody titers (2.24) <0.04."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to pre-laparotomy admission triage breakpoint. Core tension captures fulminant necrotizing colitis presenting as an acute abdomen. Zero spoilers in case_prompt."
+}

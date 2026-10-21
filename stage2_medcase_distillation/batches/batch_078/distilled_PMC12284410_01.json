@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12284410_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old immunocompetent woman presents with a solitary, slowly expanding, hard painful pretibial mass of one year's duration without systemic B-symptoms, classic local inflammatory signs, or known exposure history. The principal diagnostic dilemma is distinguishing an indolent osteolytic/sclerotic tibial lesion from a primary osseous neoplasm, soft-tissue sarcoma, or chronic pyogenic osteomyelitis.\n2. Admission Breakpoint: The admission breakpoint occurs following emergency/trauma triage, physical examination of the left leg, routine blood tests showing an isolated elevated CRP of 24.2 mg/L, negative routine viral and autoimmune serologies, and standard plain radiographs of the tibia/fibula, prior to cross-sectional computed tomography, magnetic resonance imaging, thoracoabdominal staging CT, and invasive bone biopsy.\n3. Differential Distinctions: Primary bone tumors (e.g., osteosarcoma, chondrosarcoma) typically present with aggressive periosteal reaction, cortical disruption, and soft tissue invasion; pyogenic bacterial osteomyelitis presents with acute rubor, calor, and marked leukocytosis; whereas skeletal tuberculosis of long bones often exhibits a 'cold' indolent presentation with mixed lytic-sclerotic lesions, preserved cortical margins, and characteristic flame-like periosteal reactions confirmed by mycobacterial culture and PCR.",
+  "case_prompt": "A 52-year-old woman with no notable past medical history and no known infectious sick contacts was admitted for evaluation of a hard, painful swelling on her left lower leg that had been progressively increasing over a year, with no history of trauma. The pain was tingling in nature, more intense at night, and worsened by movement. It was initially relieved by analgesics, prompting her to consult a rheumatologist who prescribed non-steroidal anti-inflammatory drugs without clinical improvement, leading to referral to the trauma department.\n\nOn admission, the patient was in good general condition and reported no systemic symptoms such as fatigue, fever, night sweats, or weight loss. Pulmonary auscultation was normal with no crackles or wheezing, and oxygen saturation was 94% on room air without signs of respiratory distress. Cardiovascular examination showed a blood pressure of 120/50 mmHg, a heart rate of 74 beats per minute, and normal heart sounds. Neurological evaluation was unremarkable with a Glasgow Coma Scale score of 15/15. Clinical examination of the left lower extremity revealed a hard, tender mass localized over the distal third of the left tibia, estimated to be approximately 6 x 3 cm and extending to the ankle, but showing no local inflammatory signs such as erythema or warmth.\n\nRoutine blood tests were mostly within normal limits, with normal liver and kidney function, except for an elevated C-reactive protein at 24.2 mg l-1. Serologies for hepatitis B virus, hepatitis C virus, and human immunodeficiency virus were negative. Autoimmune markers, including rheumatoid factor and antinuclear antibodies, were negative. Standard radiographs of the left leg (anteroposterior and lateral views) showed a mixed lytic-sclerotic lesion in the lower diaphyseal-metaphyseal region of the tibia, associated with a 'flame-like' periosteal reaction and mild osteosclerosis of the first distal phalanx, without cortical breach.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neoplastic Pathology (Primary Bone Tumor / Osteosarcoma)",
+      "rule_out_reason": "Considered due to the patient's age and a one-year history of a solitary, progressive, hard pretibial mass with mixed lytic and sclerotic features on plain radiography. Ruled out by the absence of typical malignant radiographic features such as periosteal elevation, cortical bone destruction, or soft tissue invasion.",
+      "quote": "The differential diagnoses initially included neoplastic pathology and non-specific infections. However, the absence of typical malignant features on imaging - such as periosteal elevation, cortical bone destruction or soft tissue invasion - along with the presence of characteristic lesions (osteolytic aspect with a flame-like periosteal reaction and synovial thickening) supported the hypothesis of osteoarticular tuberculosis."
+    },
+    {
+      "candidate": "Non-Specific Pyogenic Bacterial Osteomyelitis",
+      "rule_out_reason": "Considered as a primary infectious etiology for chronic localized tibial pain and bony swelling. Ruled out by the indolent one-year clinical course, complete absence of local signs of acute inflammation (no erythema or warmth), lack of systemic fevers or leukocytosis, and absence of pyogenic bacterial growth.",
+      "quote": "The differential diagnoses initially included neoplastic pathology and non-specific infections."
+    },
+    {
+      "candidate": "Rheumatologic / Autoimmune Arthropathy",
+      "rule_out_reason": "Considered initially given the periarticular location near the ankle, nocturnal exacerbation of tingling pain, and referral to rheumatology. Ruled out by non-response to nonsteroidal anti-inflammatory therapy, negative rheumatoid factor, and negative antinuclear antibodies.",
+      "quote": "prompting her to consult a rheumatologist who prescribed non-steroidal anti-inflammatory drugs without clinical improvement... Autoimmune markers (rheumatoid factor and antinuclear antibodies) were also negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnostic pivot was achieved via tibial bone biopsy, which detected Mycobacterium tuberculosis through molecular techniques (GeneXpert MTB/RIF), culture, and histopathology.",
+      "quote": "A bone biopsy was performed by the trauma team for histological and microbiological confirmation. The biopsy confirmed the diagnosis by detecting M. tuberculosis through molecular techniques (GeneXpert MTB/RIF), culture and histopathology, guiding appropriate anti-tuberculosis therapy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Case prompt strictly stops at plain radiographs and routine serologies, prior to CT/MRI and bone biopsy. Quotes are verbatim from text."
+}

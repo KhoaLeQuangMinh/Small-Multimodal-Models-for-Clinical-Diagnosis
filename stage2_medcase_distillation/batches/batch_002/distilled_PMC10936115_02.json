@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10936115_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A young woman undergoes percutaneous aspiration and sclerotherapy for a solitary hepatic cyst, immediately triggering intractable abdominal pain, fever, and hyperacute fulminant biliary destruction with decompensated liver failure requiring emergent liver transplantation.\n2. Admission Breakpoint: Presentation and admission to the liver transplant intensive care unit following percutaneous intervention at an outside facility, presenting with fever, severe abdominal pain, profound hyperbilirubinemia, end-stage liver failure (MELD-Na 31.5, Child-Pugh Class C), and secondary sclerosing cholangitis, stopping strictly before ERCP cholangiogram confirmation, living-donor transplant surgery, and explant pathology.\n3. Differential Distinctions: Acute ascending bacterial cholangitis presents with Charcot's triad following biliary intervention, but typically responds to broad-spectrum antibiotics and biliary drainage rather than progressing irreversibly to acute sclerosing bile duct obliteration and fulminant hepatic failure. Idiopathic primary sclerosing cholangitis causes bile duct stricturing and cirrhosis over years or decades, whereas percutaneous caustic chemical sclerosis of an unsuspected cystobiliary fistula causes hyperacute ductal necrosis.",
+  "case_prompt": "A 26-year-old female is transferred and admitted to a tertiary transplant center with persistent severe abdominal pain, high fever, and progressive jaundice culminating in liver failure of 26 days' duration. The patient had previously undergone a percutaneous puncture-aspiration-injection-reaspiration interventional procedure at another medical center for the management of a 7-cm cystic lesion situated in hepatic segment 7, during which ethanol was instilled as an intracavitary chemical sclerosing agent. Immediately following the procedure, she developed intractable upper abdominal pain, high fevers, and rapidly rising serum bilirubin.\n\nUpon admission and clinical evaluation at the transplant center, the patient is in severe hepatic decompensation. Clinical assessment and laboratory testing confirm end-stage liver failure with a MELD-Na score of 31.5 and Child-Pugh Class C cirrhosis, accompanied by evidence of secondary sclerosing cholangitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Ascending Bacterial Cholangitis with Sepsis",
+      "rule_out_reason": "Considered due to acute fevers, severe right upper quadrant pain, and progressive jaundice following an invasive percutaneous biliary procedure, but broad-spectrum antibiotics failed to halt rapid clinical decline, and imaging demonstrated catastrophic diffuse chemical duct destruction rather than simple purulent bacterial infection.",
+      "quote": "Immediately after the procedure, the patient developed persistent abdominal pain, fever, and hyperbilirubinemia... referred to our institute with a secondary diagnosis of SC accompanied by liver failure."
+    },
+    {
+      "candidate": "Primary Sclerosing Cholangitis (PSC) with Cirrhotic Decompensation",
+      "rule_out_reason": "Considered given the diffuse sclerosing destruction of the biliary tree and end-stage cirrhosis (MELD-Na 31.5, Child-Pugh Class C), but the hyperacute onset within hours of an intracavitary ethanol injection ruled out chronic idiopathic autoimmune PSC.",
+      "quote": "Upon evaluation, the patient was found to have end-stage liver failure, with a MELD Na of 31.5 and Child Class C."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endoscopic retrograde cholangiopancreatography (ERCP), computerized tomography, and subsequent pathological examination of the explanted liver revealed that the segment 7 hydatid cyst had partially ruptured into the major bile ducts, allowing scolicidal ethanol to escape into the biliary tree and induce lethal caustic sclerosing cholangitis and liver failure.",
+      "quote": "Subsequent imaging with computerized tomography and ERCP (Fig. 2) confirmed the diagnosis... Pathological examination of the explanted liver revealed a segmental hydatid cyst that had partially ruptured into the major bile ducts, with mucosal ulceration observed in the extrahepatic biliary tract and increased connective tissue thickening of the duct."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly isolates the presentation of fulminant caustic sclerosing cholangitis and liver failure before ERCP and explant histopathology. Zero pathogen names in prompt. Verbatim quotes and differential rule-outs verified."
+}

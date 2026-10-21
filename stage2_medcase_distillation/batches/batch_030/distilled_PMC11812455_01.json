@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11812455_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 43-year-old Venezuelan migrant presents to an emergency department in the Midwestern United States with a large, intensely painful, crusted ulcer on her lower extremity that progressed despite oral antibiotic courses. The central tension is distinguishing an imported protozoan sandfly infection from refractory bacterial ecthyma/osteomyelitis or deep endemic/subcutaneous fungal infection, exacerbated by the geographical unfamiliarity of non-endemic emergency providers with tropical zoonoses.\n2. Admission Breakpoint: Emergency department evaluation concludes following initial wound inspection, baseline blood counts, inflammatory markers, and lower extremity plain radiography, immediately prior to punch biopsy, specialized send-out serologies, and surgical debridement.\n3. Differential Distinctions: Deep fungal infections (blastomycosis, coccidioidomycosis, histoplasmosis, chromoblastomycosis) can cause raised, crusted verrucous ulcerations, but systemic fungal serologies, galactomannan, and (1,3)-beta-D-glucan were negative. Refractory bacterial pyoderma or osteomyelitis causes focal pain and ulceration, but x-rays showed no cortical reaction/erosion and standard antibacterials failed. Cutaneous leishmaniasis manifests as an ulcer with raised, indurated borders following a sandfly bite in endemic regions, showing lymphoplasmacytic infiltrate with poorly formed granulomas and confirmed by species-specific PCR.",
+  "case_prompt": "A 43-year-old Venezuelan female presented to the emergency department in Kansas with a large, painful, ulcerated wound on her lower left shin that spanned the entire width of her ankle. She reported a history of being bitten by an unknown organism while traveling by foot through Panama during her journey from Venezuela to the United States. Since arriving in the United States two months prior, the wound had steadily worsened in appearance and depth. She had previously sought care at an outpatient clinic and completed sequential courses of oral amoxicillin followed by doxycycline, neither of which resulted in clinical improvement.\n\nIn the emergency department, she described a severe, burning, intolerable pain in the wound that impeded her ability to walk. On physical examination, the lesion was characterized by well-demarcated, ulcerated appearing tissue underneath raised, crusted tissue with surrounding induration.\n\nTriage laboratory evaluations included a complete blood count with differential, comprehensive metabolic panel, C-reactive protein (CRP), and serum lactate. Significant findings included an elevated erythrocyte sedimentation rate (ESR) of 49 mm/h, with normal CRP and normal lactate. A plain radiograph of the left lower extremity demonstrated soft-tissue edema surrounding the ankle without bony erosion or periosteal reaction to suggest osteomyelitis or a retained foreign body.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Deep fungal or subcutaneous mycotic infection",
+      "rule_out_reason": "Considered during initial physical examination because of the raised, crusted borders and indolent progression despite antibacterial therapy; however, specialized fungal serologies and biomarkers including galactomannan, Fungitell ((1,3)-beta-D-glucan), Histoplasma, Coccidioides, and Blastomyces were all negative.",
+      "quote": "On physical exam the wound was found to have well-demarcated, ulcerated appearing tissue underneath raised, crusted tissue or what was thought to possibly be areas of fungal infection (Figure 1)."
+    },
+    {
+      "candidate": "Refractory bacterial pyoderma, osteomyelitis, or bartonellosis",
+      "rule_out_reason": "Considered due to the localized inflammation, severe pain, and chronic drainage; however, lower extremity radiography showed no cortical involvement or periosteal reaction, and sequential courses of amoxicillin and doxycycline produced no clinical improvement.",
+      "quote": "A left lower extremity x-ray was obtained showing soft-tissue edema and no bony erosion or periosteal reaction to suggest osteomyelitis or retained foreign body."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A punch biopsy showing chronic lymphoplasmacytic infiltrate with poorly formed granulomas, combined with travel history through Panama and CDC polymerase chain reaction (PCR) testing of the excised ulcer, definitively established the diagnosis of complex cutaneous leishmaniasis due to Leishmania panamensis.",
+      "quote": "After the patient was discharged, the final diagnosis from the CDC PCR of the large skin lesion sample was complex cutaneous leishmaniasis from Leishmania panamensis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to skin punch biopsy and CDC PCR testing. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

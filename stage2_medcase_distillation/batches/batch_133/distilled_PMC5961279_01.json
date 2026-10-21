@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5961279_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 35-year-old woman presents with progressive subacute spastic paraparesis, a T6 sensory level, hyperreflexia, and bilateral Babinski signs over two months, with thoracic MRI revealing extensive multiloculated dorsal epidural cystic masses extending across six vertebral segments (T2 to T7). She has a surgical history of four prior operations over six years for recurrent visceral cystic disease involving the lungs and liver. The diagnostic tension lies in differentiating primary spinal neoplasms or non-parasitic cysts (such as spinal meningioma, schwannoma, or arachnoid cyst) from extensive secondary spinal epidural hydatid cyst disease in an isolated osseous/epidural location with normal visceral CT imaging.\n2. Admission Breakpoint: The admission clinical triage concludes with the documentation of the neurological deficit (spastic paraparesis, T6 sensory level), normal routine blood work, negative thoraco-abdominal CT staging scans, and thoracic spine MRI showing T1-hypointense, T2-hyperintense multiloculated epidural cysts from T2 to T7, immediately prior to surgical decompression (T7 laminectomy) and parasitologic/histopathologic examination of cyst debris.\n3. Differential Distinctions: Spinal epidural arachnoid cysts or synovial cysts present as dorsal cystic collections on MRI but rarely produce extensive multicompartmental bony invasion, extensive thick reactive granulation tissue across five levels, or whitish laminated membranes; benign spinal neoplasms (such as cystic schwannoma or neurofibroma) typically demonstrate mural contrast enhancement and do not present as multiple separated loculated cysts without enhancement; whereas spinal epidural echinococcosis (hydatid disease) produces characteristic multiloculated, non-enhancing 'grape-like' fluid collections that expand through bone and epidural space, especially in individuals with prior visceral disease.",
+  "case_prompt": "A 35-year-old female presented with progressive weakness and heaviness in both lower extremities that had steadily worsened over the preceding two months, severely impairing her ability to walk. Her past medical history was notable for having undergone four surgical procedures over the preceding six years for recurrent multi-organ visceral cystic lesions affecting the lungs and liver.\n\nOn physical examination, the patient was alert and afebrile. Neurological examination revealed spastic paraparesis with motor strength of 3/5 in all muscle groups of the bilateral lower extremities. Deep tendon reflexes in both legs were hyperactive with bilateral extensor plantar responses (positive Babinski signs). Sensory testing demonstrated a sensory level to pinprick at approximately the T6 dermatome, accompanied by loss of vibratory sense and proprioception in both lower limbs. Cranial nerves and upper extremity examinations were completely intact.\n\nRoutine triage laboratory blood studies were within normal limits. Staging thoraco-abdominal computed tomography (CT) scans showed no evidence of active pulmonary or hepatic cystic lesions.\n\nMagnetic resonance imaging (MRI) of the thoracic spine demonstrated several contiguous multiloculated cystic lesions located dorsally within the spinal canal in the epidural space, extending from T2 down to T7. The lesions were homogeneously hypointense on T1-weighted images and brightly hyperintense on T2-weighted images, exerting prominent mass effect and severe compression on the thoracic spinal cord.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Spinal epidural arachnoid cyst",
+      "rule_out_reason": "Arachnoid cysts can present as benign T2-hyperintense dorsal epidural fluid collections causing spinal cord compression; however, they typically present as single unilocular collections without bony involvement or thick inflammatory epidural reactive tissue.",
+      "quote": "The MRI of the thoracic spine revealed several multiloculated cystic lesions (hypointense on T1-WI and brightly hyperintense on T2-WI) dorsally and epidurally in the spinal canal extending from T2 to T7"
+    },
+    {
+      "candidate": "Spinal schwannoma / cystic neurofibroma",
+      "rule_out_reason": "Primary spinal cord nerve sheath tumors can undergo cystic degeneration causing progressive paraparesis, but typically demonstrate solid nodular contrast enhancement and do not span six vertebral segments as multiple daughter cysts.",
+      "quote": "At surgery, multiple bony and extradural cysts were found and the dura was covered with thick epidural reactive tissue"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical exploration via T7 laminectomy revealed multiple extradural and bony cysts with whitish laminated membranes and debris, which on parasitologic and histopathologic examination confirmed Echinococcus granulosus (hydatid disease) in a patient with a history of recurrent pulmonary and hepatic cysts.",
+      "quote": "a few small cysts with whitish membranes were aspirated utilizing the syringe... Parasitologic and histopathological examinations reconfirmed hydatid disease."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to admission breakpoint. Case prompt describes presentation and thoracic spine MRI prior to surgical intervention and histopathology."
+}

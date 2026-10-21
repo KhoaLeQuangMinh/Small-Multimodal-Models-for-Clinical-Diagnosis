@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3722979_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 36-year-old Bolivian male presenting 64 days after allogeneic stem cell transplantation with severe crampy abdominal pain, bloody diarrhea, jaundice, and dramatic hepatic dysfunction (bilirubin 131 μmol/L, ALT 802 U/L, ALP 1,085 U/L). The presentation strongly mimicked acute gastrointestinal and hepatic graft-versus-host disease (GVHD), prompting corticosteroid escalation that triggered a catastrophic hyperinfection syndrome with bacterial translocation and septic shock. Notably, peripheral eosinophils were 0/μL due to immunosuppression, removing the classic hematologic clue for helminthic infection.\n2. Admission Breakpoint: Admission triage ends following history, physical examination (diffuse abdominal tenderness without organomegaly), admission laboratory tests (pancytopenia with complete absence of eosinophils, marked hyperbilirubinemia, severe transaminitis, cholestasis, acute kidney injury), and initial imaging ruling out mechanical biliary obstruction. Confirmatory testing begins with invasive liver biopsy, microbiological cultures, and stool analysis.\n3. Differential Distinctions: Acute Hepatic and Gastrointestinal Graft-versus-Host Disease (GVHD) was the primary working diagnosis given the clinical timing post-HSCT, but was excluded by liver biopsy showing no histologic signs of GVHD. Extrahepatic biliary obstruction was ruled out by unremarkable abdominal ultrasound and CT. Primary Gram-negative enterocolitis was considered, but bacteremia was a secondary consequence of extensive larval intestinal transmural migration. Disseminated Strongyloides hyperinfection is confirmed by stool parasitological examination demonstrating numerous Strongyloides stercoralis filariform larvae.",
+  "case_prompt": "A 36-year-old male native to Bolivia was admitted to the hospital 64 days after undergoing an allogeneic hematopoietic stem cell transplantation (HSCT) from an HLA-identical sibling for underlying refractory anemia with multilineage dysplasia. His immunosuppressive regimen consisted of oral mycophenolate mofetil and oral prednisone (10 mg daily for preceding pyoderma gangrenosum); sirolimus had been discontinued four days earlier due to renal insufficiency. He presented with a four- to five-day history of worsening crampy abdominal pain, bloody diarrhea, and new-onset jaundice.\n\nOn physical examination, he was afebrile with normal vital signs. Scleral icterus was present. Abdominal examination revealed generalized tenderness to palpation without rebound, guarding, hepatomegaly, or splenomegaly. Admission laboratory evaluation revealed pancytopenia with a hemoglobin of 112 g/L, a white blood cell count of 1,290/μL (absolute neutrophil count 320/μL, lymphocytes 700/μL, and absolute eosinophil count 0/μL), and a platelet count of 32 × 10⁹/L. Serum biochemistry demonstrated severe hepatic and renal injury: total bilirubin 131 μmol/L (reference < 17), alkaline phosphatase 1,085 U/L (reference 40–130), alanine aminotransferase (ALT) 802 U/L (reference < 41), aspartate aminotransferase (AST) 441 U/L (reference < 37), gamma-glutamyl transpeptidase (GGT) 992 U/L (reference < 54), and serum creatinine 206 μmol/L (reference < 106). Emergency abdominal ultrasonography and computed tomography demonstrated patent biliary ducts without evidence of mechanical biliary obstruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Hepatic and Gastrointestinal Graft-versus-Host Disease (GVHD)",
+      "rule_out_reason": "Acute GVHD was the primary clinical suspicion given the presentation of bloody diarrhea, jaundice, and severe liver injury around day +60 post-allogeneic HSCT; however, liver biopsy showed no evidence of GVHD, and steroid intensification subsequently accelerated the underlying parasitic dissemination.",
+      "quote": "Hepatic GVHD was suspected, and prednisone (2 mg/kg) was initiated. A liver biopsy was performed (not suggestive of GVHD)."
+    },
+    {
+      "candidate": "Mechanical Extrahepatic Biliary Obstruction",
+      "rule_out_reason": "Mechanical biliary tract obstruction was considered given marked elevations in alkaline phosphatase, GGT, and conjugated bilirubin, but was definitively ruled out by cross-sectional imaging.",
+      "quote": "An abdominal ultrasonography and computed tomography were performed to exclude an obstructive biliary disease."
+    },
+    {
+      "candidate": "Primary Gram-Negative Bacterial Sepsis",
+      "rule_out_reason": "Although blood and urine cultures subsequently grew Escherichia coli, this was a secondary complication of gut barrier breakdown caused by massive larval migration rather than an isolated primary bacterial infection.",
+      "quote": "The blood and urine cultures were positive for Escherichia coli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was established by stool parasitological examination demonstrating numerous migrating filariform larvae of Strongyloides stercoralis, confirming fatal hyperinfection syndrome with secondary bacterial translocation triggered by corticosteroid therapy in an immunosuppressed patient from an endemic region.",
+      "quote": "Stool examination showed numerous Strongyloides stercoralis filariform larvae. Septic shock by E. coli and S. stercoralys hyperinfections was considered the main diagnostics."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly redacted of pathogen names and biopsy results. Breakpoint placed before liver biopsy and stool microscopy."
+}

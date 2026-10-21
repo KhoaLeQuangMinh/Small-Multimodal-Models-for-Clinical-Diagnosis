@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3738353_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 7-year-old girl presenting with low-grade fever, cough, anemia, and hepatosplenomegaly who is found on imaging to have multiple scattered hypoechoic macronodules in both the liver and spleen, accompanied by mesenteric/retroperitoneal lymphadenopathy and bowel wall thickening. The core challenge is differentiating pediatric macronodular hepatosplenic tuberculosis from disseminated lymphoma, leukemia, metastatic solid tumors, or systemic inflammatory bowel disease.\n2. Admission Breakpoint: The admission clinical narrative stops after baseline physical exam, routine laboratory tests (mild anemia, elevated ESR), chest radiograph showing fissure thickening and hilar enlargement, and abdominal ultrasound showing multiple hepatosplenic nodules and bowel thickening, strictly before tuberculin skin testing, interferon-gamma release assay, cross-sectional CT, colonoscopy, biopsy histopathology, and mycobacterial cultures.\n3. Differential Distinctions: Hepatosplenic lymphoma/leukemia or solid tumor metastasis presents with multiple hypoechoic liver and spleen lesions with lymphadenopathy, but biopsy reveals neoplastic lymphoblasts rather than caseating granulomas. Crohn's disease causes terminal ileal thickening and mesenteric lymphadenopathy but does not produce diffuse hepatosplenic macronodules or positive mycobacterial cultures. Macronodular hepatosplenic tuberculosis is confirmed by caseating granulomas on biopsy and isolation of Mycobacterium tuberculosis.",
+  "case_prompt": "A 7-year-old Chinese girl presents with a 3-week history of low-grade fever and cough. Her previous medical history is unremarkable. Physical examination reveals a soft abdomen with a tender liver edge palpable 3 cm below the right costal margin and a palpable spleen tip; chest examination is normal. Routine laboratory investigations demonstrate a hemoglobin level of 9.9 g/dL (reference range 11.5–14.5) and an erythrocyte sedimentation rate (ESR) of 79 mm/h (reference range < 38), with otherwise normal routine chemistries. Chest radiography reveals mild thickening along the right major fissure and bilateral hilar enlargement. Abdominal ultrasound demonstrates mild hepatomegaly, multiple hypoechoic nodules measuring up to 13 mm in diameter scattered throughout the liver and spleen, slight wall thickening of the terminal ileal loop and ascending colon, and multiple enlarged mesenteric lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hepatosplenic lymphoma / Pediatric malignancy",
+      "rule_out_reason": "Considered the primary concern given multiple hypoechoic macronodules throughout the liver and spleen, thoracic and abdominal lymphadenopathy, and anemia. Excluded by liver and intestinal biopsies demonstrating necrotizing caseating granulomas without neoplastic cells.",
+      "quote": "Intestinal biopsy and image-guided needle biopsy of the liver revealed granulomatous tissue with caseous necrosis."
+    },
+    {
+      "candidate": "Disseminated opportunistic fungal infection (Histoplasmosis)",
+      "rule_out_reason": "Considered as a cause of hepatosplenic granulomatous nodules and lymphadenopathy, particularly in immunosuppressed patients. Ruled out as the patient was HIV-negative and cultures specifically isolated Mycobacterium tuberculosis.",
+      "quote": "HIV test was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Strong tuberculin reactivity (20 mm) and positive QuantiFERON-TB Gold led to colonoscopic and liver biopsies showing caseating granulomas, with definitive confirmation provided by sputum and gastric lavage cultures growing Mycobacterium tuberculosis.",
+      "quote": "culture for Mycobacterium tuberculosis was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint maintained before tuberculin/interferon testing, cross-sectional CT, and endoscopic/histological confirmation."
+}

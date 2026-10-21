@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11221439_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 19-year-old male construction worker presents with 3 weeks of progressive constipation, crampy abdominal pain, and an episode of vomiting with a soft, non-tender abdomen and normal blood counts. The subacute presentation points toward mechanical bowel obstruction, which in a young patient without prior abdominal surgery rarely arises from luminal helminthic bolus impaction.\n2. Admission Breakpoint: The breakpoint occurs following initial emergency triage, vital sign measurement, physical and rectal examination, and baseline complete blood count (hemoglobin 14.0 g/dL, WBC 7,600/μL), prior to stool microscopy for ova and parasites and oral-contrast CT.\n3. Differential Distinctions: Adhesive small bowel obstruction or incarcerated hernia is common in small bowel obstruction, but the patient had an unoperated abdomen and no hernia. Chronic functional constipation / fecal impaction features a full rectal vault, whereas digital rectal exam was completely empty. Ascariasis (soil-transmitted helminthiasis) was established by spontaneous macroscopic passage of worms, microscopic stool demonstration of fertilized Ascaris eggs, and oral-contrast CT revealing worm-like longitudinal filling defects in the ileum.",
+  "case_prompt": "A 19-year-old man presents to the emergency department complaining of abdominal pain and progressive constipation of three weeks' duration. The pain has been gradual and progressive, rated 6 out of 10 in severity. Forty-eight hours prior to presentation, he developed nausea and had a single episode of non-bilious vomiting. He was previously in good health, has had no prior abdominal surgeries or medical illnesses, and takes no medications. Epidemiological history reveals that he is an immigrant from Afghanistan living in Iran for the past year, working as a construction worker in an environment with substandard sanitation and relying on an unhygienic drinking water source.\n\nOn physical examination, he has a heart rate of 87 beats per minute, blood pressure of 110/70 mm Hg, and a normal respiratory rate. The abdomen is symmetrical, non-distended, and completely free of surgical scars. Palpation reveals a soft, completely non-tender abdomen without guarding, rebound tenderness, or palpable superficial or deep masses. Digital rectal examination reveals an empty rectal vault without palpable stool or masses.\n\nBaseline laboratory evaluation shows a hemoglobin level of 14.0 g/dL (reference range, 12-15 g/dL) and a white blood cell count of 7,600 per cubic millimeter (reference range, 4,000-11,000/μL).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Adhesive mechanical small bowel obstruction",
+      "rule_out_reason": "Subacute bowel obstruction in a young adult most commonly results from postoperative adhesions or bands, but this patient had a virgin abdomen with no prior surgical history, abdominal trauma, or surgical scars.",
+      "quote": "Previously, he was in good health and had no relevant medical history like abdominal surgery... Upon examination, the abdomen was without distention and surgical scar."
+    },
+    {
+      "candidate": "Functional constipation / Distal fecal impaction",
+      "rule_out_reason": "Three weeks of progressive obstipation with crampy discomfort could suggest functional colonic constipation or fecal impaction, but digital rectal examination revealed an empty rectal vault.",
+      "quote": "The rectal exam was empty."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Eliciting a detailed history that the patient passed worms in his stool, followed by microscopic stool examination demonstrating fertilized eggs of Ascaris lumbricoides and oral contrast CT revealing pathognomonic worm-like longitudinal filling defects in the ileum, confirmed partial bowel obstruction due to ascariasis.",
+      "quote": "On detailed history, he remembered that he had passed some worms on his last defecation... A stool exam for eggs and parasites revealed fertilized eggs from roundworms of the species Ascaris lumbricoides, and a diagnosis of ascariasis was established. Abdominopelvic CT with oral contrast was performed, and it (Figs. 1 and 2) revealed worm-like masses as longitudinal filling defects in the ileum."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set after baseline labs. Verbatim quotes verified."
+}

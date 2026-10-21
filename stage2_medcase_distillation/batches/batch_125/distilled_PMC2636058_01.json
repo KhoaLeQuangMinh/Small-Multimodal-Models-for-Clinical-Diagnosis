@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2636058_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 28-year-old previously healthy woman presents with unilateral visual field blurring, retinal whitening, and branch retinal artery occlusion (BRAO) two weeks after an acute febrile episode characterized by high fever, severe retro-ocular pain, arthralgia, and myalgia. In a young adult without vascular risk factors, acute arterial occlusion raises suspicion for cardiogenic embolism, carotid dissection, systemic autoimmune vasculitis, or tropical vasculopathy.\n2. Admission Breakpoint: Initial ophthalmological examination, fundoscopy, fluorescein angiography, and visual field charting, immediately prior to send-out serological panels and targeted viral antibody titers.\n3. Differential Distinctions:\n- Thromboembolic Retinal Artery Occlusion (Carotid Atheroma or Cardiac Embolism): Retinal branch artery occlusion in young patients necessitates ruling out patent foramen ovale, valvular vegetations, or carotid dissection; however, comprehensive echocardiography and carotid Doppler ultrasound were entirely normal.\n- Systemic Collagen Vascular Disease / Autoimmune Vasculitis: Systemic lupus erythematosus, polyarteritis nodosa, or antiphospholipid syndrome can produce occlusive retinal vasculitis with cotton-wool spots, but autoimmune serological evaluations were negative, and the patient had no recurrence.\n- Endemic Tropical Infections (Leptospirosis, Typhoid, Malaria, Syphilis): Endemic pathogens can induce acute systemic vasculitis and ocular involvement during convalescence, but specific serological and parasitological evaluations ruled them out.",
+  "case_prompt": "A 28-year-old woman presented for ophthalmologic evaluation complaining of persistent blurring of the inferior visual field in her right eye, which she first noticed upon waking two weeks earlier during the convalescent recovery phase of an acute systemic illness. Her acute illness had begun 3 weeks prior with the sudden onset of high fever, retro-ocular headache and eye pain, generalized arthralgias, and severe myalgias. She had no antecedent medical history and no known cardiovascular risk factors.\n\nOn physical examination, best-corrected visual acuity was 20/20 in both eyes. Slit-lamp examination of the anterior segments was unremarkable bilaterally, with no anterior chamber cells, flare, or anterior vitreous cells. Dilated fundoscopic examination of the right eye demonstrated a patchy area of partially faded retinal whitening in the superotemporal quadrant of the macula encroaching toward the fovea, with pronounced narrowing, attenuation, and sclerosis of the macular division of the superotemporal branch retinal artery. Fundoscopy of the left eye revealed a solitary cotton-wool spot adjacent to the inferotemporal arcade.\n\nMidphase fluorescein angiography of the right eye confirmed narrowing of the superotemporal retinal arterial segment, blocked background choroidal fluorescence corresponding to the zone of retinal whitening, and delayed arteriovenous transit time in the affected vessel, with late-phase vascular wall staining and perivascular dye leakage. Kinetic central visual field charting on Bjerrum's screen revealed an inferonasal field defect corresponding topographically to the occluded arterial branch. Comprehensive cardiovascular evaluation, including transthoracic echocardiography and bilateral carotid Doppler ultrasonography, revealed no source of thromboembolism or arterial stenosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cardiogenic or Carotid Thromboembolism",
+      "rule_out_reason": "Considered as the primary cause of branch retinal artery occlusion in young adults, but thoroughly excluded by normal transthoracic echocardiography and unremarkable carotid Doppler studies.",
+      "quote": "The patient was referred for a detailed cardiac and carotid evaluation - including carotid doppler study and echocardiography - which was unremarkable."
+    },
+    {
+      "candidate": "Systemic Collagen Vascular Disease / Autoimmune Vasculitis",
+      "rule_out_reason": "Considered because of late-phase arterial staining and leakage on fluorescein angiography with systemic arthralgias and cotton-wool spots, but ruled out by negative serological screening for autoimmune connective tissue diseases.",
+      "quote": "and ruled out mimicking infections like leptospirosis, typhoid, malaria, syphilis, as well as collagen vascular diseases."
+    },
+    {
+      "candidate": "Leptospirosis, Typhoid Fever, Malaria, or Syphilis",
+      "rule_out_reason": "Considered as infectious causes of systemic febrile disease with ocular vascular complications, but excluded by negative targeted diagnostic serologies.",
+      "quote": "and ruled out mimicking infections like leptospirosis, typhoid, malaria, syphilis, as well as collagen vascular diseases."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A high-titer positive IgM antibody test establishing classic dengue fever, confirming an immune-mediated occlusive branch retinal arteritis arising during the early post-febrile convalescent phase of dengue infection.",
+      "quote": "Detailed history- taking, hematological and serological investigations established the diagnosis of classic dengue fever (a positive IgM antibody titer)"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded post-hoc serology results from presentation. Zero spoilers, full quote fidelity."
+}

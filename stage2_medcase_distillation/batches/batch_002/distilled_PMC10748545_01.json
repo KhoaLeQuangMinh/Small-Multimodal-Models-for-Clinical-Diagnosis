@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10748545_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A previously healthy young woman presents with an apparent acute primary spontaneous pneumothorax and persistent air leak refractory to tube thoracostomy, without classic constitutional symptoms such as fever or night sweats, masking an underlying necrotizing cavitary parenchymal infection with bronchopleural fistula.\n2. Admission Breakpoint: Emergency department evaluation including symptom onset, physical examination (hyperresonance, diminished breath sounds), emergent pigtail catheter thoracostomy, repeat radiograph demonstrating incomplete lung reexpansion with air bubbling, and admission chest CT revealing cavitary lesions, stopping strictly before airborne isolation, mycobacterial PCR, AFB cultures, thoracotomy, and histopathology.\n3. Differential Distinctions: Uncomplicated primary spontaneous pneumothorax occurs in young individuals due to apical subpleural bleb rupture but lacks extensive thick-walled upper lobe cavitary lesions and does not cause refractory massive bronchopleural fistula. Acute bacterial necrotizing pneumonia causes cavitation but presents with marked fever, leukocytosis, and purulent sputum, whereas mycobacterial cavitary erosion causes insidious destruction with preserved vital stability until pleuroparenchymal rupture.",
+  "case_prompt": "A 29-year-old female with no prior medical history presents to the emergency department with a two-week history of dry cough unresponsive to over-the-counter antitussives, followed by two days of intermittent, reproducible left-sided chest pain and exertional dyspnea. The chest pain is non-radiating and worse on the left side, without diaphoresis, palpitations, nausea, or vomiting. She denies antecedent falls, thoracic trauma, thoracic surgical history, headaches, fever, chills, heartburn, hemoptysis, night sweats, weight loss, diarrhea, or known infectious contacts.\n\nOn physical examination, the patient appears fatigued but is in no acute distress. She is afebrile with an oxygen saturation of 96% on ambient air. Heart rate is 126 beats per minute, with normal blood pressure and respiratory rate. Examination of the chest reveals hyperresonance to percussion and decreased breath sounds throughout the left hemithorax, with no accessory muscle use, wheezes, or stridor. The remainder of the physical examination is unremarkable.\n\nInitial chest radiography demonstrates a large left pneumothorax. A left pigtail catheter is emergently placed. A post-placement chest radiograph confirms appropriate catheter positioning but shows incomplete re-expansion of the left lung. Continuous bubbling is observed in the chest drainage unit on suction, raising concern for an active air leak. Subsequent chest computed tomography confirms a persistent left pneumothorax with multiple cavitary lesions in the left upper lobe and an apparent bronchopleural fistula.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Spontaneous Pneumothorax (Ruptured Subpleural Bleb)",
+      "rule_out_reason": "Considered due to the sudden onset of pneumothorax in a young, previously healthy patient without chronic lung disease, but ruled out by the discovery of multiple thick-walled cavitary lesions in the upper lobe and a persistent, high-volume bronchopleural air leak.",
+      "quote": "Imaging revealed the presence of a significant pneumothorax on the left side with multiple apparent cavitary lesions in the left upper lobe and a possible BPF"
+    },
+    {
+      "candidate": "Acute Bacterial Cavitary Pneumonia with Secondary Bronchopleural Fistula",
+      "rule_out_reason": "Considered given the necrotic cavitary lung architecture and bronchopleural communication, but the patient remained afebrile without leukocytosis, and exhaustive bacterial and viral panels returned entirely negative.",
+      "quote": "Blood cultures, TB QuantiFERON, bacterial pneumonia panel, respiratory viral panel including Covid-19 virus, urine Legionella antigen, urine Streptococcus pneumoniae antigen, Methicillin-Resistant Staphylococcus aureus nasal screening, HIV, fungal culture, and Fungitell-BD glucan were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Polymerase chain reaction (PCR) returned positive for Mycobacterium tuberculosis on hospital day two, and subsequent surgical resection of the cavitary left upper lobe demonstrated chronic pleuritis and extensive necrotizing caseating granulomas with positive acid-fast bacilli smear and culture.",
+      "quote": "Mycobacterium tuberculosis (MTB) PCR was positive on day two of admission... The pathology of the lung specimens was significant for acute fibrinous and chronic pleuritis and lung parenchyma with multiple caseating granulomas consistent with active tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at Day 1 ED evaluation and CT findings of pneumothorax with cavitary lesions. Airborne precautions, PCR, AFB smears, thoracotomy, and caseating histology are restricted to diagnostic reasoning. Zero pathogen spoilers."
+}

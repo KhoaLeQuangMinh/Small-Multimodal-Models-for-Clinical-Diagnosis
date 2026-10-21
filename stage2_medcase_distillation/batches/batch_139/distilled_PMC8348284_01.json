@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8348284_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 82-year-old female presents with a massive, indolent, 5-year swelling of the posterolateral thigh and gluteal region measuring up to 30 x 35 cm without fever or systemic signs. In an elderly patient, a giant painless or slowly painful intramuscular mass primarily suggests a soft-tissue sarcoma or benign lipomatous lesion. Primary musculoskeletal hydatid disease without liver or lung involvement is exceedingly rare (1-4% of echinococcosis cases) and frequently misdiagnosed preoperatively as a neoplasm.\n2. Admission Breakpoint: Clinical evaluation ends after physical examination, normal pelvic radiograph, ultrasound, and MRI defining multiloculated cystic formations in the thigh and gluteal musculature, immediately prior to Echinococcus serology, surgical excision, and histopathology.\n3. Differential Distinctions: Soft tissue sarcoma (e.g., liposarcoma, synovial sarcoma) typically shows solid enhancing soft-tissue components with necrosis rather than well-defined thin-walled T2-hypointense multiloculated fluid collections. Intramuscular bacterial abscess or pyomyositis is excluded by the 5-year indolent course, absence of fever, and lack of cutaneous inflammatory signs.",
+  "case_prompt": "An 82-year-old female presented with a painful and progressive swelling over her right thigh region that had been evolving for 5 years. She had no prior medical history, fever, or history of trauma. Clinical examination revealed multiple palpable masses in the posterolateral aspect of the right thigh with a firm consistency, the largest of which was located in the gluteal region and measured approximately 30 x 35 cm. No visible overlying skin disorder or erythema was noticed. There was no other notable or palpable swelling in the rest of the body. Hip range of motion was normal with no obvious distal neurovascular deficit. Routine blood tests were normal except for a C-reactive protein level of 82 mg/L. A pelvic radiograph was normal. Ultrasonography revealed multiple cysts located in the subcutaneous and muscular tissue. Magnetic resonance imaging demonstrated multiple cystic formations on the posterolateral and anterior aspects of the right thigh root and gluteal region, occupying mainly subcutaneous fat, the gluteus maximus muscle, and subaponeurotic fat of the hamstring compartment. The lesions had thin walls in T2 hyposignal enhanced after injection of gadolinium and fluid content of variable signal, several of which were multiloculated and septated, with the largest measuring 15.5 x 17.6 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Soft tissue sarcoma / Malignant cystic mesenchymal neoplasm",
+      "rule_out_reason": "A giant, 5-year progressive, firm thigh and gluteal mass in an elderly patient strongly raises concern for a soft tissue sarcoma; however, MRI demonstrated characteristic cystic morphology with thin T2-hypointense enhancing walls and multiloculated, septated fluid content without invasive solid nodular or osteolytic components.",
+      "quote": "Magnetic resonance imaging depicted multiple cystic formations on the posterolateral and anterior aspects of the right thigh root and gluteal region, occupying mainly subcutaneous fat, gluteus maximus muscle and subaponeurotic fat of the hamstring compartment. They had a thin wall in T2 hyposignal enhanced after injection of gadolinium and fluid content of a variable signal, some of which were multiloculated and septated"
+    },
+    {
+      "candidate": "Chronic intramuscular bacterial abscess / Pyomyositis",
+      "rule_out_reason": "Elevated CRP (82 mg/L) and deep muscular involvement can suggest a chronic bacterial abscess; however, the absence of fever, trauma, or local skin inflammation, preserved joint mobility, and indolent 5-year evolution make acute or subacute pyogenic infection unlikely.",
+      "quote": "She had no medical history, fever, or trauma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive diagnosis of primary musculoskeletal hydatid disease was established by positive serology, absence of lesions on thoraco-abdomino-pelvic and cerebral CT scans, and confirmed by operative resection with hypertonic saline irrigation and histopathological examination.",
+      "quote": "E. granulosus serology was positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

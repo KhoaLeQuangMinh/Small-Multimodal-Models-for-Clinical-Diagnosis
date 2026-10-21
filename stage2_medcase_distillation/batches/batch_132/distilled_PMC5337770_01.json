@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5337770_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 9-year-old boy presents with chronic, 6-month isolated monoarticular swelling and pain in the medial midfoot resulting in inability to bear weight, without fever, constitutional signs, or leukocytosis. The core diagnostic dilemma lies in differentiating non-infectious inflammatory juvenile arthritis from pyogenic septic osteomyelitis and cold paucibacillary osteoarticular tuberculosis in a rare anatomic site (the talonavicular joint).\n2. Admission Breakpoint: Admission triage ends following the physical exam, baseline blood work (mildly elevated ESR of 30 mm/hr and positive CRP with normal blood counts), and plain foot radiographs showing talonavicular joint narrowing, marginal erosions, and medial soft-tissue fullness. It stops strictly before fluoroscopy-guided needle aspiration, histopathological examination, and mycobacterial cultures.\n3. Differential Distinctions: Oligoarticular juvenile idiopathic arthritis causes chronic monoarticular joint effusion and limp in children without fever, but typically spares isolated midtarsal joints and does not cause aggressive marginal bony erosions so early without polyarticular or systemic features. Pyogenic bacterial arthritis causes acute, severely destructive joint changes, but presents with acute fever, leukocytosis, and rapid progression within days rather than an indolent 6-month course. In contrast, skeletal tuberculosis in endemic areas characteristically produces a 'cold' indolent monoarthritis with insidious osteolytic erosions.",
+  "case_prompt": "A 9-year-old boy presented with a 6-month history of persistent pain and progressive swelling over the medial aspect of his left foot of unclear etiology. The pain had progressively worsened to the point where he was unable to bear weight on the affected limb. His parents reported no history of fever, chills, anorexia, weight loss, or other systemic constitutional symptoms.\n\nOn physical examination, the child was afebrile and systemically well. Examination of the left foot revealed mild localized swelling and tenderness over the medial midfoot, centered at the talonavicular articulation. The range of motion of the left foot and ankle was painfully restricted, with significant discomfort elicited upon passive inversion and eversion. There were no overlying skin sinus tracts or erythema.\n\nInitial hematological investigations were within normal limits except for a mildly elevated erythrocyte sedimentation rate (ESR) of 30 mm/hr and a positive C-reactive protein (CRP) of 10 mg/L. Plain anteroposterior and oblique radiographs of the left foot demonstrated diffuse regional osteopenia, marginal erosions along the articular surfaces of the talus and navicular bones, narrowing of the talonavicular joint space, and prominent soft-tissue swelling medial to the talonavicular joint.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Juvenile idiopathic arthritis / chronic inflammatory monoarthritis",
+      "rule_out_reason": "Considered because of the chronic 6-month course of joint pain, swelling, and antalgic gait in a child lacking systemic fever. Ruled out by plain radiographs demonstrating focal marginal erosions of the talonavicular joint and histological confirmation of caseating necrotic granulomas with subsequent culture growth of Mycobacterium tuberculosis.",
+      "quote": "The plain radiographs of foot AP and oblique views showed diffuse osteopenia with marginal erosion of the articular surface of talus and navicular and narrowing of the talonavicular joint with prominent soft tissue medial to the talonavicular joint (figure 1)... On histopathological examination, epitheloid granulomas with caseating necrosis were seen which was suggestive of tuberculosis (figure 2)."
+    },
+    {
+      "candidate": "Pyogenic bacterial septic arthritis / acute osteomyelitis",
+      "rule_out_reason": "Considered due to the erosive destructive changes of the midtarsal bones and inability to bear weight. Ruled out by the indolent 6-month chronicity, absence of fever or constitutional toxicity, normal white blood cell count, and synovial aspirate yielding caseating granulomas rather than acute neutrophilic suppurative infection.",
+      "quote": "There was no history of fever, loss of appetite and other constitutional symptoms... Hematological investigations were within normal limits except for the raised erythrocyte sedimentation rate (ESR) (30 mm 1st hour) and positive C-reactive protein (CRP-10)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Image intensifier-guided needle biopsy of the talonavicular joint yielding thick grayish-white purulent fluid that revealed epithelioid granulomas with caseating necrosis on histopathology and grew Koch's bacillus (Mycobacterium tuberculosis) on mycobacterial culture.",
+      "quote": "We performed needle biopsy from the talonavicular joint under image intensifier and aspirated thick grayish-white material, which was sent for histopathology, culture, and acid-fast bacillus (AFB) staining... On histopathological examination, epitheloid granulomas with caseating necrosis were seen which was suggestive of tuberculosis (figure 2)... The growth of Koch's bacillus on culture further confirmed our diagnosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt adheres to strict triage principles: presentation stops before invasive needle biopsy, histopathology, or cultures are revealed. Zero mention of pathogen names. Numbered differential rule-outs include exact article quotations."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11185014_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old smoker presenting with chronic epigastric pain radiating to the back, profound weight loss, bitemporal wasting, markedly elevated alkaline phosphatase (1,032 U/L), and an irregular hypoenhancing pancreatic head mass causing pancreatic and biliary duct dilation ('double duct sign') was clinically presumed to have pancreatic head adenocarcinoma. Systematic evaluation of constitutional wasting revealed active pulmonary tuberculosis, and the pancreatic pseudotumor completely resolved with anti-TB therapy alone.\n2. Admission Breakpoint: The breakpoint stops after initial institutional physical exam, baseline triage laboratories (CBC, LFTs, lipase, CA 19-9), and triple-contrast abdominal CT imaging, strictly prior to sputum PCR testing, antitubercular treatment initiation, and follow-up endoscopic ultrasound.\n3. Differential Distinctions: Pancreatic ductal adenocarcinoma is the primary suspect in an older smoker with back pain, obstructive ductal dilation, and wasting, but CA 19-9 was normal and the mass completely vanished after anti-TB therapy. Chronic or autoimmune pancreatitis causes ductal dilation and pain, but sputum PCR confirmed Mycobacterium tuberculosis and Category I anti-TB therapy resolved the lesions without surgery.",
+  "case_prompt": "A 55-year-old man, a known hypertensive and 10 pack-year cigarette smoker, presented for evaluation of worsening epigastric pain and significant weight loss. He had a 3-year history of occasional mild epigastric pain unrelated to food intake, accompanied by intermittent episodes of jaundice. Subsequent intensification of epigastric pain with radiation to the back, associated with progressive weight loss and decreased appetite, prompted consultations at outside clinics where abdominal imaging reportedly demonstrated pancreatic masses.\n\nOn physical examination, the patient was anicteric but exhibited bitemporal wasting. The abdomen was soft, flat, and nondistended, with direct tenderness on palpation from the right upper quadrant to the epigastrium; no palpable masses were detected.\n\nInitial laboratory evaluation revealed microcytic anemia with hemoglobin 85 g/L, prothrombin time international normalized ratio (PT-INR) 1.33, marked elevation of alkaline phosphatase (ALP) at 1,032 U/L, AST 32 U/L, ALT 26 U/L, total bilirubin 0.7 mg/dL, albumin 38 g/L, serum lipase mildly elevated at 191 U/L, and a normal serum CA 19-9 level of 19.43 U/mL. Triple-contrast abdominal computed tomography (CT) showed an irregular, complex, heterogeneous focus with central non-enhancing components centered in the pancreatic head, appearing hypoenhancing relative to adjacent pancreatic parenchyma. There was upstream dilatation of the main pancreatic duct and the rest of the hepatobiliary tree. The gallbladder was markedly distended with intraluminal sludge; the liver and spleen were unremarkable, and no enlarged abdominal lymph nodes were identified.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic ductal adenocarcinoma",
+      "rule_out_reason": "A smoking history, chronic back pain, profound weight loss, marked ALP elevation, and a hypoenhancing pancreatic head mass with biliary and pancreatic ductal dilatation ('double duct sign') strongly suggested pancreatic cancer; however, CA 19-9 was normal (19.43 U/mL) and the lesion completely resolved on follow-up imaging following medical therapy for tuberculosis.",
+      "quote": "Abdominal computed tomography (CT) scan with triple contrast enhancement (Figure 1) showed an irregular, complex, heterogeneous focus with central non-enhancing components centered in the pancreatic head, appearing to be hypoenhancing relative to the rest of the pancreatic parenchyma. There was also upstream dilatation of the pancreatic duct and the rest of the hepatobiliary tree."
+    },
+    {
+      "candidate": "Chronic pancreatitis / Autoimmune pancreatitis",
+      "rule_out_reason": "Longstanding epigastric discomfort, mild lipase elevation (191 U/L), main pancreatic duct dilatation, and parenchymal changes raised suspicion for chronic pancreatitis; however, the focal pancreatic head mass resolved completely without surgical intervention upon anti-TB therapy.",
+      "quote": "Pertinent laboratory results showed microcytic anemia with hemoglobin (Hgb) 85 g/L, prothrombin time with international normalized ratio (PT-INR) 1.33, alkaline phosphatase (ALP) 1032 U/L, aspartate aminotransferase (AST) 32 U/L, alanine aminotransferase (ALT) 26 U/L, total bilirubin (TB) 0.7 mg/dL, albumin (Alb) 38 g/L, and lipase 191 U/L."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic workup for systemic wasting identified bacteriologically confirmed pulmonary tuberculosis via positive sputum PCR; Category I anti-tuberculosis therapy led to complete symptom resolution, weight gain, and total disappearance of the pancreatic head mass on repeat endoscopic ultrasound.",
+      "quote": "As part of the workup for the weight loss, he was found to have bacteriologically confirmed pulmonary tuberculosis with a positive polymerase chain reaction (PCR) on sputum testing and was thus started on anti-tuberculosis treatment with World Health Organization (WHO) Category I treatment."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to baseline clinical presentation, triage laboratory tests, and contrast CT imaging. Excluded sputum PCR, treatment response, follow-up EUS, and pathogen names from case prompt. Quotes verified against source text."
+}

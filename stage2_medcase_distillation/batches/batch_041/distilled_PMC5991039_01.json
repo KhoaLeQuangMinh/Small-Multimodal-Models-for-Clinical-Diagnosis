@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5991039_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 38-year-old HIV-positive male presents with subacute B-symptoms (fever, weight loss, anorexia), mild anemia, elevated ESR, and prominent hepatosplenomegaly accompanied by discrete peripheral lymphadenopathy (epitrochlear and cervical). The clinical challenge is differentiating visceral leishmaniasis with atypical leishmanial lymphadenitis from tuberculous lymphadenitis, disseminated histoplasmosis, lymphoma, or reactive lymphadenopathy in an immunocompromised host.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial physical examination and baseline triage laboratory investigations (CBC showing mild anemia, elevated ESR, mildly elevated transaminases/LDH, and HIV-1 seropositivity), prior to fine-needle aspiration cytology (FNAC) of the lymph nodes and bone marrow biopsy.\n3. Differential Distinctions: Tuberculous lymphadenitis is ruled out by negative Ziehl-Neelsen staining of lymph node smears. Reactive lymphoid hyperplasia and lymphoma are ruled out by cytological examination showing reactive polymorphous background with absence of clonal neoplastic cells and presence of intracellular protozoa. The definitive diagnosis of visceral leishmaniasis is established by identification of abundant Leishmania amastigotes (Leishman-Donovan bodies) within macrophages on lymph node FNAC and a high parasite load (5+) on bone marrow aspirate.",
+  "case_prompt": "A 38-year-old man presents with a six-week history of persistent low-grade fever, anorexia, and significant unintentional weight loss.\n\nOn physical examination, he appears mildly pale. Abdominal examination reveals splenomegaly and mild hepatomegaly. Lymph node examination demonstrates discrete, enlarged, non-tender lymph nodes in the right epitrochlear area and the right cervical region.\n\nBaseline laboratory evaluation reveals a hemoglobin level of 10.2 g/dL with an elevated erythrocyte sedimentation rate (ESR) of 68 mm/h. Liver function tests show mild transaminase elevations with a serum alanine aminotransferase (SGPT) of 60 IU/L, serum aspartate aminotransferase (SGOT) of 53 IU/L, and lactate dehydrogenase (LDH) of 370 IU/L. Routine renal function tests and other serum biochemical parameters are within normal limits. Admission serologic screening is reactive for human immunodeficiency virus type 1 (HIV-1).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous Lymphadenitis",
+      "rule_out_reason": "Smears prepared from the enlarged cervical and epitrochlear lymph nodes were stained with Ziehl-Neelsen stain and demonstrated no acid-fast bacilli.",
+      "quote": "The smears were stained with Leishman-Giemsa stain and Ziehl-Neelsen stain."
+    },
+    {
+      "candidate": "Reactive Lymphadenopathy / Lymphoma",
+      "rule_out_reason": "Cytologic evaluation showed a polymorphous cell population with reactive lymphoid cells, histiocytes, and tingible body macrophages containing intracellular amastigotes rather than a clonal malignant lymphoproliferative process.",
+      "quote": "The smears showed polymorphous cell population, comprised of reactive lymphoid cells, histiocytes, isolated epithelioid cells, many tangible body macrophages, and macrophages filled with leishmania amastigote form"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Visceral Leishmaniasis with Leishmanial Lymphadenitis",
+      "rule_out_reason": "Identification of Leishmania amastigotes inside macrophages on lymph node FNAC, coupled with bone marrow smears demonstrating a heavy parasite load (5+), confirmed visceral leishmaniasis complicating HIV infection.",
+      "quote": "Subsequently, he had undergone bone marrow examination and the smears revealed high parasitic load of amastigote form of leishmania in the bone marrow smears (parasite load - [5+]). The diagnosis was established as visceral leishmaniasis with leishmanial lymphadenitis with HIV-reactive status."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt strictly encompasses presentation through baseline triage labs (including HIV screening) while excluding invasive lymph node FNAC, bone marrow cytology, and pathogen mentions. Diagnostic reasoning systematically evaluates tuberculous lymphadenitis and lymphoma before confirming visceral leishmaniasis."
+}

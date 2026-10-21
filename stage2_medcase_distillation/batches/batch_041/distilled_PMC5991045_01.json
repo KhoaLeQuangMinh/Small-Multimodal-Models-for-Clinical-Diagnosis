@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5991045_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 14-year-old child presents with progressive headache, projectile vomiting, drowsiness, and bradycardia with bilateral papilledema indicating critically elevated intracranial pressure, found to have an intraventricular cystic mass causing transtentorial herniation. The clinical challenge is distinguishing primary cerebral echinococcosis (hydatid disease) from meningoencephalitis, neuroepithelial cysts, or intraventricular neoplasms in the absence of pet animal exposure, visceral hydatid cysts, or positive serology.\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency room resuscitation, initial baseline laboratory tests, abdominal ultrasonography (normal), and emergency CT of the brain showing a cystic lesion in the left lateral ventricle with 12 mm midline shift, prior to advanced brain MRI, decompressive craniotomy, intraoperative cyst fluid analysis, and histopathology.\n3. Differential Distinctions: Meningoencephalitis is ruled out by absence of fever, absent meningeal signs, and cross-sectional neuroimaging demonstrating an obstructive intraventricular mass rather than leptomeningeal inflammation. Neoplastic intraventricular lesions (such as choroid plexus papilloma or ependymoma) are ruled out by nonenhancing cystic imaging and surgical excision of thirty thin-walled cysts with clear fluid. The diagnosis of cerebral echinococcosis is established by histopathology of excised cyst walls and microscopic demonstration of brood capsules and protoscolices in cyst fluid, despite negative serum Echinococcus IgG serology.",
+  "case_prompt": "A 14-year-old female child presents with a 10-day history of worsening headache, multiple episodes of nonbilious projectile vomiting, and altered sensorium on the day of presentation. Her parents report no history of contact with household pets or farm animals. Her birth, developmental, and immunization histories are unremarkable.\n\nOn physical examination, she is afebrile but drowsy, with a Glasgow Coma Scale score of 13 (E3 V5 M5). Her pulse rate is 55 beats per minute (bradycardia), respiratory rate is 18 breaths per minute on room air, and blood pressure is 110/80 mmHg. Fundoscopic examination reveals bilateral papilledema. Pupils are equal and sluggishly reactive to light; cranial nerve examination is otherwise intact. Motor examination demonstrates normal muscle tone with motor strength of 4/5 throughout all four extremities; deep tendon reflexes are brisk with bilateral upgoing plantar responses. There are no signs of meningeal irritation.\n\nBaseline laboratory investigations reveal a hemoglobin level of 10.0 g/dL with a normocytic normochromic appearance on blood smear. Serum electrolytes, renal function tests, and liver function tests are within normal limits. Bedside abdominal ultrasonography reveals no abnormalities. An emergent non-contrast computed tomography (CT) scan of the brain demonstrates a well-circumscribed cystic lesion in the left lateral ventricle associated with descending transtentorial herniation and 12 mm of midline shift.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Meningoencephalitis",
+      "rule_out_reason": "The patient was completely afebrile without neck stiffness or other meningeal signs, and urgent brain neuroimaging demonstrated a large discrete intraventricular cystic mass with herniation rather than diffuse parenchymal or meningeal inflammation.",
+      "quote": "Child was admitted in Pediatric Intensive Care Unit with working diagnosis of meningoencephalitis or space-occupying lesion (SOL)."
+    },
+    {
+      "candidate": "Intraventricular Neoplasm / Non-parasitic Neuroepithelial Cyst",
+      "rule_out_reason": "Brain MRI showed non-enhancing multicystic lesions without solid tumor components, and surgical craniotomy demonstrated thin-walled cysts containing crystal-clear fluid devoid of neoplastic tissue.",
+      "quote": "Magnetic resonance imaging (MRI) brain showed multicystic intraventricular nonenhancing lesions with trapped lateral ventricles suggesting intraventricular space occupying lesion."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cerebral Echinococcosis (Intraventricular Hydatid Cysts)",
+      "rule_out_reason": "Emergency craniotomy and cyst removal yielded 30 thin-walled cysts; histopathological examination confirmed hydatid cyst architecture, and wet mount of cyst fluid showed abundant brood capsules and protoscolices, confirming Echinococcosis despite negative serum IgG antibodies.",
+      "quote": "Histopathology report of cyst confirmed the diagnosis of hydatid cyst [Figure 1] Cyst fluid wet mount showed plenty of brood capsules and protoscolices [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt captures Day 1 emergency presentation (Cushing triad bradycardia, papilledema, drowsiness, and lateral ventricle cystic lesion causing herniation on CT) with zero pathogen or disease names. Surgical findings, parasitic wet mount, and serology are appropriately restricted to diagnostic reasoning."
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC9794504_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 71-year-old rural resident presented with a 5-month history of non-tender, non-warm erythematous and crusted periorbital and forehead lesions refractory to topical antibiotics and appearing radiologically as preseptal cellulitis. The indolent, non-inflammatory course sharply departs from acute bacterial preseptal cellulitis or impetigo, masquerading as a chronic infectious dermatosis.\n2. Admission Breakpoint: The breakpoint occurs after the completion of the baseline ophthalmic examination and initial orbital computed tomography confirming preseptal soft tissue infiltration, immediately prior to dermatology and infectious disease consultations and systemic antimicrobial trials.\n3. Differential Distinctions: Acute bacterial preseptal cellulitis presents with warmth, marked tenderness, and rapid response to beta-lactamase inhibitors; impetigo features superficial honey-colored crusts typically clearing with topical agents; and herpetic infections present with painful grouped vesicles in a dermatomal distribution. In contrast, cutaneous leishmaniasis produces chronic, painless, crusted plaques that fail conventional antibacterial and antifungal therapy.",
+  "case_prompt": "A 71-year-old man residing in a rural countryside region presented for evaluation of chronic facial lesions. Five months prior to presentation, he developed progressive erythema and swelling over the right forehead that failed to improve after multiple courses of topical antibiotic ointments. Over the preceding weeks, the lesions progressively extended into the right periorbital area. He reported no history of facial trauma, chronic systemic illness, or known immunodeficiency.\n\nOn physical examination, visual acuity was 20/20 in both eyes. Inspection of the right ocular region revealed marked edema and hyperemia involving both the upper and lower eyelids, with maximal involvement of the upper eyelid. Adherent crusted plaques were noted over the lateral aspect of the right eyebrow, extending superiorly onto the forehead. Notably, palpation of the swollen eyelids elicited no warmth and no tenderness. Anterior segment biomicroscopy and dilated funduscopic examinations were normal bilaterally, and extraocular muscle movements were intact with full range of motion.\n\nComputed tomography (CT) of the orbits demonstrated soft tissue thickening and inflammatory changes anterior to the orbital septum on the right side, without retrobulbar involvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial preseptal cellulitis",
+      "rule_out_reason": "Considered as the initial presumptive diagnosis given periorbital edema and hyperemia, but ruled out due to the lack of heat or tenderness, five-month indolent duration, and failure to respond to intravenous ampicillin-sulbactam and piperacillin-tazobactam.",
+      "quote": "he was referred to our clinic with a preliminary diagnosis of preseptal cellulitis... There was no heat or tenderness on the eyelids... On the 5th day of the treatment, there was no response to the treatment."
+    },
+    {
+      "candidate": "Herpetic infection",
+      "rule_out_reason": "Considered in the differential diagnosis of periorbital crusted erythematous lesions, but excluded due to the chronic five-month course and absence of characteristic painful grouped vesicles.",
+      "quote": "The patient was consulted by the dermatology department to rule out herpetic infection and impetigo."
+    },
+    {
+      "candidate": "Impetigo",
+      "rule_out_reason": "Considered due to the crusted facial plaques, but ruled out by refractoriness to multiple courses of topical antibiotics and systemic beta-lactams.",
+      "quote": "The patient was consulted by the dermatology department to rule out herpetic infection and impetigo."
+    },
+    {
+      "candidate": "Fungal infection",
+      "rule_out_reason": "Considered empirically by infectious diseases after antibacterial failure, but ruled out due to persistent lack of clinical regression during intravenous amphotericin-B therapy.",
+      "quote": "Infectious diseases started intravenous (iv) amphotericin-B 3 mg/kg for possible fungal infection... No regression was observed in clinical findings on the 12th day of treatment."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred following failure of broad-spectrum antibacterial and antifungal therapy when a full-thickness skin biopsy was obtained, demonstrating diagnostic histopathological findings of cutaneous protozoan infection.",
+      "quote": "Histopathological evaluation of the biopsy was reported as cutaneous leishmaniasis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly up to orbital CT, omitting subsequent specialist antimicrobial trials, skin biopsy, and treatment response."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10546250_04",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 7-year-old child presenting with prolonged fever and accelerating respiratory distress requiring PICU admission, where cystic pulmonary destruction and subsequent pneumothorax masquerade as acute necrotizing bacterial pneumonia.\n2. Admission Breakpoint: At initial admission triage following assessment of subacute fever, tachypnea, and respiratory distress, prior to sputum GeneXpert testing.\n3. Differential Distinctions: Acute necrotizing bacterial pneumonia (ruled out by protracted 3-week febrile course and absence of acute purulent sputum) vs disseminated pulmonary tuberculosis (confirmed by sputum molecular detection and multiorgan granulomas).",
+  "case_prompt": "A 7-year-old girl is admitted to the hospital with a 3-week history of persistent fever and a 4-day history of worsening cough and tachypnea. On physical examination, she is febrile and in significant respiratory distress with elevated respiratory rate and increased work of breathing, requiring escalation of respiratory care.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute community-acquired pneumonia / viral bronchiolitis",
+      "rule_out_reason": "Acute pneumonia or viral respiratory infection was considered given recent tachypnea and cough; however, the unremitting 3-week febrile prodrome indicated an indolent, subacute systemic disease rather than a typical acute pediatric viral or bacterial respiratory infection.",
+      "quote": "A 7-year-old girl was admitted with complaints of fever over 3 weeks, tachypnoea and cough for 4 days."
+    },
+    {
+      "candidate": "Acute necrotizing bacterial pneumonia with pneumatocele",
+      "rule_out_reason": "Rapid escalation to critical respiratory distress complicated by spontaneous pneumothorax often suggests acute necrotizing pneumonia (e.g., Staphylococcus aureus); however, the prolonged subacute presentation and lack of acute pyogenic toxemia pointed toward mycobacterial cavitation and parenchymal destruction.",
+      "quote": "In view of the respiratory distress, the child was transferred to the paediatric intensive care unit on day 5 post-admission."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum GeneXpert assay definitively detected Mycobacterium tuberculosis, while contrast-enhanced chest CT revealed extensive confluent nodular opacities, cystic lesions, mediastinal adenopathy, and hepatosplenic granulomas with splenic infarcts.",
+      "quote": "Mycobacterium tuberculosis was detected on sputum GeneXpert evaluation, and ATT was initiated. On day 11, the child experienced a sudden exacerbation of her respiratory distress. The CXR (not shown) revealed a left pneumothorax, for which an ICD was inserted. Subsequent CECT chest (Figure 6) revealed extensive GGOs and confluent nodular opacities in both lungs with patchy consolidation in both lower lobes, along with small cysts"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Presentation stops before ICU molecular testing. Zero-spoiler adherence verified."
+}

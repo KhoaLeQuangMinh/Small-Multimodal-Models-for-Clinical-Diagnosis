@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6329029_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 10-year-old child presents with signs of subacute meningitis and intracranial calcifications. The cerebral fluid analysis demonstrates marked lymphocytic pleocytosis, significantly elevated protein, and marked hypoglycorrhachia, mimicking viral or partially treated bacterial meningitis, neurocysticercosis, or fungal meningitis.\n2. Admission Breakpoint: The breakpoint is positioned at admission triage after initial non-contrast head CT and diagnostic lumbar puncture CSF analysis, prior to anti-tubercular drug initiation, subsequent contrast-enhanced neuroimaging, and longitudinal treatment response.\n3. Differential Distinctions: Acute pyogenic bacterial meningitis displays neutrophilic rather than lymphocytic predominance; viral meningitis does not produce profound hypoglycorrhachia or parenchymal calcific lesions; neurocysticercosis presents with calcifications but lacks persistent basal meningeal enhancement and active lymphocytic hypoglycorrhachic meningitis; marked CSF protein elevation, hypoglycorrhachia, and evolving tuberculomas confirm tuberculous meningitis.",
+  "case_prompt": "A 10-year-old boy presented to the medical center for evaluation of fever and suspected central nervous system infection.\n\nOn initial presentation, non-contrast computed tomography (CT) of the brain was obtained, demonstrating calcific densities within the parietal lobe of the cerebral cortex. A diagnostic lumbar puncture was performed for cerebrospinal fluid (CSF) analysis. The CSF examination revealed a total protein concentration of 248 mg/dL, a glucose level of 36.8 mg/dL, 100 white blood cells per high-power field with 91% lymphocytes, and 10 red blood cells per high-power field.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "A child presenting with fever, marked CSF protein elevation (248 mg/dL), and low CSF glucose (36.8 mg/dL) raises immediate concern for pyogenic bacterial meningitis; however, bacterial meningitis typically produces severe neutrophilic pleocytosis, whereas the patient's CSF showed a predominantly lymphocytic response (91% lymphocytes) in a subacute presentation.",
+      "quote": "Cerebrospinal fluid (CSF) examination showed proteins of 248 mg/dL, sugar of 36.8 mg/dL, 100 white blood cells (WBCs) with 91% lymphocytes and 10 red blood cells (RBCs) per high-power field (hpf)."
+    },
+    {
+      "candidate": "Viral (Aseptic) Meningoencephalitis",
+      "rule_out_reason": "Aseptic viral meningitis frequently manifests with lymphocytic pleocytosis, but CSF glucose typically remains normal rather than depressed to 36.8 mg/dL, CSF protein is only modestly elevated, and viral infection does not account for intracerebral calcific lesions or persistent meningeal enhancement.",
+      "quote": "CT brain showed calcific densities in the parietal lobe of the cerebrum. Cerebrospinal fluid (CSF) examination showed proteins of 248 mg/dL, sugar of 36.8 mg/dL"
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Intracranial calcific densities in the parietal lobe of a pediatric patient could represent calcified granulomas of parenchymal neurocysticercosis, but inactive calcified cysts do not explain high CSF protein (248 mg/dL), severe hypoglycorrhachia, or persistent meningeal enhancement.",
+      "quote": "CT brain showed calcific densities in the parietal lobe of the cerebrum... CT brain in October 2012 showed multiple tuberculomas with persistent meningeal enhancement"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The constellation of marked CSF lymphocytic pleocytosis (91%), profound hypoglycorrhachia, strikingly elevated protein (248 mg/dL), and progressive neuroimaging revealing multiple ring-enhancing tuberculomas with persistent meningeal enhancement established tuberculous meningitis with intracranial tuberculomas.",
+      "quote": "CT brain in October 2012 showed multiple tuberculomas with persistent meningeal enhancement, following which Eth and Ofx were included in the ATT, and steroids were gradually tapered."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly set after initial CT and LP results, before anti-tubercular therapy initiation. All mentions of tuberculous meningitis and anti-tubercular drugs completely excised from case_prompt. Zero pathogen or disease names in prompt."
+}

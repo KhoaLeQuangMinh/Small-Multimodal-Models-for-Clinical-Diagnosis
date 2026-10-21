@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9482776_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 74-year-old male with recently treated stage IIIB lung adenocarcinoma presents with persistent fever, severe cough, and purulent sputum for one month. In a cancer patient who recently underwent platinum-based chemotherapy, the presentation mimics malignant progression, post-obstructive pneumonia, or opportunistic bacterial/fungal superinfection. Identifying reactivation of pulmonary tuberculosis in an elderly cancer survivor is critical to initiate appropriate multi-drug therapy.\n2. Admission Breakpoint: Admission triage terminates after clinical evaluation, smoking and oral hygiene history, and chest CT demonstrating bilateral lung lesions, lymphadenopathy, and lower lobe consolidation, immediately prior to sputum acid-fast smear, GeneXpert molecular assay, and mycobacterial cultures.\n3. Differential Distinctions: Progression/metastasis of lung adenocarcinoma (ruled out by repeated positive acid-fast smears and positive GeneXpert MTB assay), post-chemotherapy bacterial pneumonia (ruled out as sole cause because symptoms were chronic for a month and molecular testing identified Mycobacterium tuberculosis), and non-tuberculous mycobacterial (NTM) infection (ruled out by GeneXpert confirming Mycobacterium tuberculosis sensitive to rifampicin).",
+  "case_prompt": "A 74-year-old male was admitted with fever, severe cough, and yellow sputum production of 1 month's duration. Three months prior to admission, he had been diagnosed with lung adenocarcinoma (cT4N2M0, stage IIIB) and had received 2 cycles of pemetrexed and cisplatin adjuvant chemotherapy. He had a past medical history of treated chronic pulmonary infection and a 10-year history of smoking (having quit 4 years previously). He maintained good oral hygiene.\n\nOn admission, chest computed tomography (CT) demonstrated: (1) multiple lesions in bilateral lung lobes; (2) enlarged hilar and mediastinal lymphadenopathy; and (3) infectious consolidative lesions in the lower lobe of the left lung.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Progression / metastatic recurrence of lung adenocarcinoma",
+      "rule_out_reason": "In a patient with stage IIIB lung adenocarcinoma recently treated with pemetrexed-cisplatin, new bilateral lesions and mediastinal lymphadenopathy raised concern for disease progression, but microbiological and molecular evaluation demonstrated active mycobacterial infection.",
+      "quote": "Chest Computed tomography (CT) scan showed: (1) multiple lesions in bilateral lobe of the lung; (2) enlarged hilar and mediastinal lymphadenopathy; (3) infection lesions in the lower lobe of the left lung."
+    },
+    {
+      "candidate": "Post-chemotherapy community-acquired or opportunistic bacterial pneumonia",
+      "rule_out_reason": "A 1-month history of fever and productive cough following cytotoxic chemotherapy could represent pyogenic bacterial lower respiratory infection, but repeated sputum microscopy and rapid molecular testing revealed acid-fast bacilli and mycobacterial DNA.",
+      "quote": "Repeated sputum acid-fast bacteria (AFB) smear staining was positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive sputum acid-fast bacilli smear and sputum GeneXpert MTB/RIF assay confirming rifampicin-sensitive Mycobacterium tuberculosis, establishing the diagnosis of pulmonary tuberculosis retreatment.",
+      "quote": "Sputum GeneXpert MTB/RIF assay (Cepheid, Sunnyvale, CA) and culture were positive and sensitive to rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Reactivation of pulmonary tuberculosis in an elderly patient with stage IIIB lung adenocarcinoma after pemetrexed-cisplatin chemotherapy. Prompt stops cleanly after chest CT."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7471824_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 70-year-old previously healthy woman presenting with progressive non-traumatic paraplegia and sensory deficit due to osteolytic destruction of the T6-7 vertebrae, with an entirely normal white blood cell count and normal CRP. In an afebrile elderly patient with uninflamed biomarkers and concurrent incidental thyroid papillary adenocarcinoma on aspiration cytology, the presentation convincingly mimics skeletal metastasis from occult cancer, concealing spinal tuberculosis (Pott's disease).\n2. Admission Breakpoint: The admission breakpoint occurs upon initial emergency evaluation with imaging showing T6-7 cord compression and baseline labs showing normal inflammatory markers (WBC 5,450/μL, CRP 0.23 mg/dL), prior to emergent decompression surgery, surgical pathology, thyroid PET/cytology, and subsequent delayed mycobacterial tissue cultures.\n3. Differential Distinctions: Spinal bone metastasis (e.g. from thyroid carcinoma) vs. Pyogenic bacterial spondylodiscitis vs. Spinal tuberculosis. Absence of malignant tumor cells on spinal lamina biopsy, absence of acute leukocytosis or high fever typical of pyogenic discitis, and eventual isolation of Mycobacterium tuberculosis from vertebral tissue culture established the true tuberculous etiology.",
+  "case_prompt": "A 70-year-old previously healthy woman presents with progressive paraplegia and lower extremity numbness evolving over the past 2 months without antecedent trauma. Neurological examination reveals bilateral lower extremity motor weakness (American Spinal Injury Impairment Scale grade C) and severe hypalgesia and paresthesias at the T6-T7 dermatomal level. She is afebrile with normal vital signs. Laboratory investigations demonstrate a white blood cell count of 5,450/μL and a C-reactive protein of 0.23 mg/dL. Emergency spinal imaging with computed tomography and magnetic resonance imaging reveals severe osteolytic destruction of the T6 and T7 vertebral bodies resulting in high-grade compression of the thoracic spinal cord.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Spinal Metastasis (Thyroid Carcinoma)",
+      "rule_out_reason": "Progressive osteolytic vertebral collapse without systemic inflammatory signs in an elderly patient strongly suggested spinal metastasis; PET-CT and aspiration cytology demonstrated papillary adenocarcinoma of the thyroid, initially prompting a misdiagnosis of spinal metastasis, but spinal surgical pathology showed inflammatory infiltrates without malignant cells.",
+      "quote": "Although the pathology from the extirpated pedicle and lamina revealed inflammatory cell infiltrate without malignant tumor cells, the positron emission tomography-computed tomography (PET-CT) showed upregulation of the thyroid gland and aspiration cytology showed papillary adenocarcinoma of the thyroid. Thus, she was diagnosed with spinal metastases from a thyroid carcinoma."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Spondylodiscitis",
+      "rule_out_reason": "Acute pyogenic bacterial osteomyelitis/discitis typically presents with fever, leukocytosis, and markedly elevated inflammatory markers, whereas this patient was afebrile with normal leukocytes and normal CRP.",
+      "quote": "There were no fevers, and the laboratory data showed no elevation in the white blood cell count (WBC; 5450/mul) or CRP (0.23 mg/dl)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Upon recurrence 9 months later with progressive osteolysis and a right pulmonary coin lesion, CT-guided needle biopsy and tissue culture definitively isolated Mycobacterium tuberculosis, confirming spinal tuberculosis.",
+      "quote": "Although a polymerase chain reaction was negative, Mycobacterium tuberculosis was detected from tissue culture. As a result, spinal tuberculosis was diagnosed."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to initial admission presentation with progressive paraplegia and T6-7 osteolysis with normal inflammatory markers. Thyroid cytology, surgery, PET-CT, and mycobacterial cultures excluded from prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3714027_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 33-year-old urban trash collector and rat trapper presents with sudden high fever, rigors, conjunctival suffusion, severe calf and arm myalgias, profound direct hyperbilirubinemia, and acute anuric renal failure requiring hemodialysis, accompanied by an eschar on the shin. The critical tension is differentiating life-threatening Weil disease from spotted fever rickettsiosis (rickettsialpox), thrombotic microangiopathy, acute autoimmune hepatitis, or severe bacterial sepsis, especially given that early acute-phase serologies and blood cultures are negative.\n2. Admission Breakpoint: The breakpoint occurs after initial presentation in the emergency department with history, occupational rat/trash exposure, physical examination (jaundice, conjunctival suffusion, marked calf tenderness, shin eschar), and admission triage laboratories (leukocytosis with left shift, thrombocytopenia, severe renal failure, conjugated hyperbilirubinemia, elevated CPK and lipase, negative peripheral smear schistocytes and autoimmune hepatitis panel), immediately prior to empiric antibiotics, blood/urine cultures, and send-out serological panels.\n3. Differential Distinctions: Rickettsialpox is considered due to the cutaneous eschar and rodent exposure, but ruled out by negative early serology and the presence of severe acute hepatorenal failure and rhabdomyolysis; thrombotic thrombocytopenic purpura is ruled out by the absence of schistocytes on blood smear; autoimmune hepatitis is ruled out by negative autoantibody panel; leptospirosis (Weil disease) is confirmed by the classic clinical triad and a convalescent indirect hemagglutination titer of 1:400.",
+  "case_prompt": "A 33-year-old African American male presented to an emergency department in late November with a 4-day history of progressive generalized muscle pain, high fever, and shaking chills, accompanied by abdominal pain, diarrhea, tea-colored urine, jaundice, decreased urine output, headache, and drowsiness. He had no recent travel, sick contacts, pet exposures, or substance abuse, but worked occupationally as a municipal trash collector and rat trapper in urban streets and alleys. On physical examination, temperature was 39.3 deg C, blood pressure was 102/67 mm Hg, and pulse rate was 125 beats per minute. He appeared ill with active rigors and was drowsy but arousable. Sclera were markedly icteric, and bilateral conjunctival suffusion was present. There was no nuchal rigidity. Abdominal examination revealed mild right upper quadrant tenderness without organomegaly. Both arm and calf muscles were exquisitely tender to touch, pressure, and pinch. A small necrotic eschar was noted on his left shin; there was no generalized rash. Initial laboratory studies revealed a white blood cell count of 10,300/muL (85.8% polymorphonuclear cells and 13% band forms), hemoglobin of 12.1 g/dL, and platelet count of 90,000/muL. Serum blood urea nitrogen was 49 mg/dL and serum creatinine was 4.23 mg/dL. Liver biochemistries showed alkaline phosphatase of 134 U/L, AST of 207 U/L, ALT of 81 U/L, total bilirubin of 10.1 mg/dL, and direct bilirubin of 9.6 mg/dL. Creatine phosphokinase was 4,290 U/L, serum amylase was 210 U/L, and serum lipase was 2,323 U/L. Peripheral blood smear showed no schistocytes, and an autoimmune hepatitis panel was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Rickettsialpox or spotted fever rickettsiosis",
+      "rule_out_reason": "Considered because of urban rodent exposure and a focal cutaneous necrotic eschar on the lower extremity, but initial specific rickettsial serology was negative and rickettsialpox does not cause severe combined hepatic dysfunction, rhabdomyolysis, and anuric renal failure.",
+      "quote": "All cultures and serology tests came back negative but serum creatinine, liver function tests, bilirubin, and lipase remained elevated despite the patient's clinical improvement (Fig. 2)."
+    },
+    {
+      "candidate": "Thrombotic microangiopathy (TTP-HUS) or acute autoimmune hepatitis",
+      "rule_out_reason": "Considered due to the combination of acute renal failure, jaundice, thrombocytopenia, and hepatic injury, but peripheral smear demonstrated no microangiopathic hemolytic schistocytes and autoantibodies were nonreactive.",
+      "quote": "No schistocytes were seen in the peripheral blood smear. Autoimmune hepatitis panel was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Leptospirosis (Weil disease)",
+      "rule_out_reason": "The clinical presentation of severe conjunctival suffusion, calf myonecrosis, marked conjugated hyperbilirubinemia, and acute tubular necrosis following urban rat exposure was conclusively confirmed by convalescent indirect hemagglutination serology.",
+      "quote": "Due to high clinical suspicion for leptospirosis, serology testing by indirect hemagglutination was repeated 10 days after the first sample. This was positive at 1:400 titer, confirmatory for the diagnosis."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt presents the complete triage toxemic toxidrome with conjunctival suffusion, extreme muscle tenderness, hepatorenal failure, and shin eschar. Microscopic serologies, cultures, renal biopsy, and convalescent titers are strictly excluded from the prompt."
+}

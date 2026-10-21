@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6744749_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 47-year-old diabetic male responds well to antimicrobial treatment for chronic spondylitis and a psoas abscess, but abruptly develops new cerebellar symptoms (headache, nausea, ataxia) two months into therapy. Neuroimaging reveals a new nodular enhancing cerebellar mass with obstructive ventriculomegaly, creating clinical tension between treatment failure, intracranial malignancy (e.g., high-grade glioma), pyogenic abscess, and an immune-mediated paradoxical reaction.\n2. Admission Breakpoint: The breakpoint occurs after admission cerebellar imaging (MRI revealing a right cerebellar nodular enhancing lesion extending to the vermis with perifocal edema, noncommunicating hydrocephalus, and DWI hypointensity) and triage labs showing no systemic inflammatory reaction, immediately prior to suboccipital craniotomy and lesionectomy.\n3. Differential Distinctions: Malignant glioma presents as an expanding, enhancing intra-axial mass with edema in an adult, but typically demonstrates infiltrative margins and restricted diffusion or heterogeneous necrosis, whereas this mass was well-circumscribed and hypointense on DWI. Pyogenic brain abscess typically presents with fever, meningismus, peripheral leukocytosis, elevated inflammatory markers, and central diffusion restriction on DWI, all absent here. The paradox of clinical spinal improvement alongside intracranial lesion appearance signifies a paradoxical response to mycobacterial therapy.",
+  "case_prompt": "A 47-year-old male with diabetes mellitus and negative human immunodeficiency virus (HIV) serology presented with progressive headache, nausea, and staggering gait. Two months earlier, he had been evaluated for lower back pain associated with spondylitis and an iliopsoas abscess, for which he had been maintained on a targeted antimicrobial regimen with resolution of his back pain. On physical examination, he was afebrile and exhibited no signs of meningismus or nuchal rigidity. Neurological examination revealed a prominent right-sided coordination deficit with ataxia; cranial nerve examination was intact and no other focal neurological deficits were present. Laboratory evaluation demonstrated no systemic inflammatory reaction. Chest computed tomography (CT) revealed no cavitary pulmonary lesions. Magnetic resonance imaging (MRI) of the brain demonstrated a nodular enhancing mass in the right cerebellar hemisphere extending into the vermis, accompanied by perifocal edema and bilateral ventriculomegaly consistent with noncommunicating hydrocephalus. On diffusion-attenuated weighted imaging (DWI), the lesion exhibited hypointensity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant glioma",
+      "rule_out_reason": "Considered because an adult presenting with an aggressive solitary nodular enhancing posterior fossa mass and noncommunicating hydrocephalus raises high suspicion for primary neuroepithelial neoplasm; however, the lesion demonstrated hypointensity on DWI without typical high-grade infiltrative features, and surgical pathology showed necrotizing granulomatous inflammation without neoplastic cells.",
+      "quote": "malignant glioma could not be ruled out completely."
+    },
+    {
+      "candidate": "Pyogenic bacterial brain abscess",
+      "rule_out_reason": "Considered due to the patient's prior spinal and psoas abscess infections, but excluded by the absence of fever, lack of meningismus, normal inflammatory markers, and the lack of characteristic central diffusion restriction on diffusion-weighted MRI.",
+      "quote": "He was diagnosed with bacterial spondylitis and iliopsoas abscess... Laboratory findings did not show inflammatory reaction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The emergence of a de novo enhancing cerebellar mass with obstructive hydrocephalus during successful antimicrobial therapy for musculoskeletal disease represented a central nervous system paradoxical reaction (PR), confirmed on surgical lesionectomy by histopathology showing caseous granulomatosis with lymphocytic and macrophage infiltration.",
+      "quote": "Pathology revealed a caseous granulomatosis at low-power magnification and invasion of lymphocytes and macrophages at high-power magnification... These findings lead to a definitive diagnosis of tuberculoma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint established at admission brain MRI prior to posterior fossa craniotomy and histopathology. Zero pathogen or disease names in case prompt. Quotes verified against source text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: An adult presenting with high fever, meningism, acute encephalopathy, and a focal upper motor neuron facial nerve palsy primarily suggests acute bacterial meningitis, herpes simplex encephalitis, or an acute stroke with infectious fever, concealing an uncommon neuroinvasive arboviral meningoencephalitis.\n2. Admission Breakpoint: The breakpoint occurs at emergency neurological triage upon documenting high fever, meningeal signs, GCS 12, and unilateral UMN facial palsy, immediately before brain magnetic resonance imaging and confirmatory arboviral laboratory panels.\n3. Differential Distinctions: Acute pyogenic meningitis typically causes purulent CSF and intense meningeal contrast enhancement. Acute thromboembolic stroke presents with focal hemispheric deficits confined to a specific vascular territory without meningism. Herpes simplex encephalitis characteristically causes focal temporal and inferior frontal lobe T2 hyperintensities and periodic discharges.",
+  "case_prompt": "A 45-year-old female presented with a 5-day history of continuous high-grade fever, accompanied by headache and vomiting for 3 days. Over the preceding 24 hours, she developed progressive disorientation and acute facial asymmetry with facial deviation toward the left. On examination, she had an admission Glasgow Coma Scale score of 12 (E3M5V4). Neurological evaluation demonstrated neck rigidity with a positive Kernig sign and a right-sided upper motor neuron (UMN) facial nerve palsy. Motor strength, sensory modalities, deep tendon reflexes, cerebellar testing, and autonomic function were intact. Plantar reflexes were bilaterally equivocal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial meningitis",
+      "rule_out_reason": "Considered because of the acute high-grade fever, severe headache, neck rigidity with positive Kernig sign, and altered sensorium, but excluded by non-enhancing neuroimaging findings and full clinical resolution on supportive fluid therapy alone without antibacterial therapy.",
+      "quote": "On neurological examination, she had neck rigidity with positive Kernig sign. GCS Score was E3M5V4... The patient was treated with intravenous (IV) fluid and antipyretics, and at the end of the 2nd week patient became completely afebrile with no neck rigidity..."
+    },
+    {
+      "candidate": "Acute ischemic stroke with concurrent febrile illness",
+      "rule_out_reason": "Considered given the acute onset of disorientation and focal right-sided upper motor neuron facial palsy, but ruled out by prominent meningismus and neuroimaging demonstrating bilateral multifocal punctate lesions across the basal ganglia and centrum semiovale rather than a territorial vascular occlusion.",
+      "quote": "Right-sided upper motor neuron (UMN) type facial nerve palsy was noted [Figure 3, Right panel]... MRI scan of brain (plain and contrast) done on 6th day of fever, showed multiple tiny nonenhancing hypo on T1 and hyperintense lesions on T2, T2 fluid attenuation inversion recovery (FLAIR) sequence suggestive of ischemic demyelination in lentiform nucleus, peri- and para-ventricular white matter and centrum semiovale on both sides..."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Brain MRI revealed bilateral non-enhancing T1-hypointense and T2/FLAIR-hyperintense lesions in the lentiform nuclei and centrum semiovale consistent with microvascular ischemic demyelination, which in conjunction with meningismus in an endemic setting confirmed dengue meningoencephalitis with complete neurological recovery following supportive care.",
+      "quote": "MRI scan of brain (plain and contrast) done on 6th day of fever, showed multiple tiny nonenhancing hypo on T1 and hyperintense lesions on T2, T2 fluid attenuation inversion recovery (FLAIR) sequence suggestive of ischemic demyelination in lentiform nucleus, peri- and para-ventricular white matter and centrum semiovale on both sides [Figure 3, Left panel]. So, a diagnosis of dengue meningoencephalitis with right sided UMN type facial palsy was made."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to brain MRI. Focal UMN facial palsy and meningism presented with zero spoilers."
+}

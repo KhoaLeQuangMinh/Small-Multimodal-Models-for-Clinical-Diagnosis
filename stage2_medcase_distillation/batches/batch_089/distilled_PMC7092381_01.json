@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7092381_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 34-year-old Sri Lankan male with a history of alcohol use presents with a classic 3-day history of acute high-grade fever, severe myalgia, arthralgia, retro-orbital pain, and vomiting, but initial laboratory evaluation reveals staggering aminotransferase elevations (AST 9,352 U/L, ALT 3,760 U/L) and coagulopathy without overt hemodynamic shock, plasma leakage, or acetaminophen overdose. The primary challenge is distinguishing acute primary viral hepatitis (hepatitis A, B, or C), severe alcoholic hepatitis, drug/toxin-induced liver injury, and atypical severe arboviral infection (expanded dengue syndrome with acute liver failure).\n2. Admission Breakpoint: The admission breakpoint occurs upon completion of emergency triage assessment, vital signs, physical exam, initial complete blood count, baseline hepatic panel, coagulation profile, and bedside ultrasonography, prior to receiving dengue NS1 antigen results, subsequent viral hepatitis serologies, and clinical evolution toward grade III hepatic encephalopathy on Day 5.\n3. Differential Distinctions: Acute viral hepatitis (HAV, HBV, HCV) is ruled out by negative serological panels. Severe alcoholic hepatitis is excluded by the degree of transaminitis (AST >9,000 U/L, rising to >28,000 U/L), which vastly exceeds typical levels seen in alcoholic liver injury. Drug-induced liver injury (such as paracetamol toxicity) is ruled out by strict absence of supra-therapeutic ingestion or herbal toxins. The definitive diagnosis is secured by positive serum dengue NS1 antigen on admission, followed by positive dengue IgM/IgG serology, establishing expanded dengue syndrome with acute liver failure.",
+  "case_prompt": "A 34-year-old Sri Lankan male presents to a tertiary care hospital in the Northern Province of Sri Lanka with a 3-day history of high-grade fever associated with severe diffuse myalgia, arthralgia, retro-orbital pain, anorexia, and recurrent vomiting. He denies abdominal pain, abdominal distension, respiratory symptoms, or dysuria. He reports no spontaneous mucocutaneous bleeding, hematuria, or dark stools. His past medical history is unremarkable. He reports chronic alcohol consumption of approximately 16 units per week for the past 10 years and endorses a brief episode of heavy binge drinking during the first two days of this illness in an attempt to alleviate bodily pain, but denies ingestion of paracetamol or traditional herbal preparations.\n\nOn arrival, he is conscious, alert, and oriented. Vital signs reveal a body temperature of 38.6°C, pulse rate of 84 beats per minute, blood pressure of 120/80 mmHg without postural changes, and capillary refill time of less than 2 seconds. He is neither pale nor icteric. There are no peripheral lymphadenopathy, petechiae, purpura, spider angiomas, palmar erythema, or other stigmata of chronic liver disease. Cardiopulmonary examination is normal without evidence of pleural effusion. Abdominal examination reveals a soft, completely non-tender abdomen without hepatomegaly, splenomegaly, or ascites. Neurological examination is unremarkable, with no asterixis, focal deficits, or signs of meningeal irritation; fundoscopy is normal.\n\nInitial complete blood count reveals a total white blood cell count of 3.91 x 10⁹/L (neutrophils 3.22 x 10⁹/L, lymphocytes 0.37 x 10⁹/L), hemoglobin of 16.1 g/dL, hematocrit of 46.1%, and platelet count of 142 x 10⁹/L. Baseline liver biochemistry demonstrates profound acute transaminitis: aspartate aminotransferase (AST) 9,352 U/L, alanine aminotransferase (ALT) 3,760 U/L, and prolonged prothrombin time of 16.3 seconds (reference: 10–13 seconds). Renal parameters and urinalysis are normal. Bedside ultrasound scan demonstrates no ascites, gall bladder wall edema, or pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis (Hepatitis A, B, or C)",
+      "rule_out_reason": "Extreme transaminase elevations into the thousands with coagulopathy strongly mimic hyperacute hepatotropic viral infection, but serologic screening for hepatitis A, B, and C was negative.",
+      "quote": "Since the clinical scenario and the serological evidence confirmed a dengue infection, we did not explore for an alternate cause of hepatic injury other than the work up for co-infections with primary hepatitis virus A, B and C which all became negative."
+    },
+    {
+      "candidate": "Severe Alcoholic Hepatitis",
+      "rule_out_reason": "Recent binge drinking on a background of chronic alcohol consumption raised concern for acute alcoholic hepatitis, but transaminases in alcoholic liver disease rarely exceed 300 to 500 U/L and cannot account for transaminases approaching 10,000 to nearly 30,000 U/L.",
+      "quote": "Even though co-existence of alcoholic hepatitis was considered, however, it does not explain the degree of elevation of transaminases in this patient."
+    },
+    {
+      "candidate": "Acetaminophen / Toxin-Induced Acute Liver Failure",
+      "rule_out_reason": "Hyperacute centrilobular hepatic necrosis with transaminases in the thousands is classically triggered by toxic paracetamol ingestion or herbal toxins, but rigorous drug history confirmed zero exposure to supra-therapeutic analgesics or hepatotoxic remedies.",
+      "quote": "He was never given supra-therapeutic dose of paracetamol, any other medicines, herbals or traditional medicines that could cause liver injury."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid serum positivity for dengue non-structural protein 1 (NS1) antigen on admission followed by convalescent IgM and IgG seropositivity confirmed expanded dengue syndrome with acute hepatic necrosis and liver failure.",
+      "quote": "The dengue non-structural protein 1 (NS1) antigen in serum became positive on day 3 of illness (day of admission)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission NS1 antigen result, viral serologies, hepatic encephalopathy progression, and therapy."
+}

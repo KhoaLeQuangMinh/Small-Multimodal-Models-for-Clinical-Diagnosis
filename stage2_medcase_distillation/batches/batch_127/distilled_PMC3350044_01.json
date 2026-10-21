@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3350044_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 23-year-old previously healthy woman presents with a 7-day history of high fever, cough, and sore throat, exhibiting severe thrombocytopenia (20,000/mm^3) that abruptly progresses to hypotensive shock, non-cardiogenic pulmonary edema (ARDS), and cardiac dysfunction. The clinical tension is distinguishing primary bacterial septic shock from a severe arboviral hemorrhagic shock syndrome complicated by extensive capillary leakage, myocarditis, and critical neutropenia.\n2. Admission Breakpoint: The triage evaluation concludes upon admission when profound thrombocytopenia (20,000/mm^3) and hemodynamic collapse (blood pressure 82/42 mmHg) are identified, along with acute hypoxemia and bilateral pulmonary infiltrates on triage chest radiograph. Subsequent ICU management, diagnostic viral serology panels, echocardiography, cardiac enzyme assays, and mechanical ventilation delineate the confirmatory and advanced care phases.\n3. Differential Distinctions: Severe community-acquired bacterial pneumonia with septic shock presents with fever, cough, respiratory failure, and hypotension, but early isolated severe thrombocytopenia, sterile cultures from multiple sites, and lack of response to broad-spectrum antimicrobials argue against bacterial sepsis. Primary viral myocarditis can cause cardiogenic shock and pulmonary edema, but extreme thrombocytopenia and systemic capillary leakage point toward a systemic hemorrhagic fever with myocardial involvement.",
+  "case_prompt": "A 23-year-old previously healthy woman presented with a 7-day history of high-grade fever (101°F to 103°F), cough, and sore throat, without associated chills or rigors. She had no history of chronic medical conditions. Initial triage hematology revealed profound thrombocytopenia with a platelet count of 20,000/mm^3. Within 6 hours of presentation, she developed acute hemodynamic collapse, with her blood pressure dropping to 82/42 mmHg, requiring fluid resuscitation and initiation of a dopamine infusion. Her respiratory status deteriorated rapidly, with a respiratory rate of 35 breaths per minute and an oxygen saturation of 88% on supplemental oxygen via face mask. Arterial blood gas analysis demonstrated severe hypoxemia with a PaO2 of 55 mmHg. Plain chest radiography revealed bilateral pulmonary infiltrates consistent with acute respiratory distress syndrome. Repeat complete blood count showed a further decrease in platelet count to 12,000/mm^3, a hemoglobin of 11.8 g/dL, and a total leukocyte count of 10,800/mm^3 (85% neutrophils and 13% lymphocytes). Serum sodium was 144 mEq/L, potassium 3.6 mEq/L, blood urea 48 mg/dL, serum creatinine 1.1 mg/dL, and total bilirubin 0.9 mg/dL. Her international normalized ratio was 1.2, and tests for D-dimer and fibrin degradation products were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Fulminant Bacterial Sepsis / Septic Shock secondary to Severe Pneumonia",
+      "rule_out_reason": "Acute fever, cough, rapid progression to ARDS, and vasopressor-refractory shock suggested fulminant bacterial pneumonia; however, the patient presented with profound isolated thrombocytopenia, failed to improve on broad-spectrum antibiotics, and all bacterial cultures from blood, urine, tracheal aspirate, and CSF were persistently sterile.",
+      "quote": "She also had persistent fever of 102 to 104 F, despite being given coverage of broad-spectrum antibiotics and persistently negative cultures report (blood, urine, tracheal aspirate, CSF)."
+    },
+    {
+      "candidate": "Acute Fulminant Myocarditis of Other Etiology (e.g., Enterovirus / Coxsackievirus)",
+      "rule_out_reason": "Left ventricular hypokinesia, reduced ejection fraction (45%), and markedly elevated CK-MB (116 IU/L) indicated viral myocarditis, but this was driven by systemic capillary leakage and hemorrhagic shock from an arboviral infection rather than isolated primary viral carditis.",
+      "quote": "Viral markers for HCV, HBV, and HIV were negative... Serum cardiac enzymes: creatine phosphokinase MB levels were 116 I.U/L (normal up to 20) and lactic acid dehydrogenase was 2489 u/L (normal up to 260)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Clinical presentation of high fever followed at defervescence by critical plasma leakage, profound thrombocytopenia (platelet count nadir 12,000/mm^3), acute respiratory distress syndrome, and shock, corroborated by positive specific dengue serology, established dengue hemorrhagic shock complicated by ARDS and myocarditis.",
+      "quote": "On investigations, she was found to have positive serology for dengue and her platelet count was 20,000/mm3... A final diagnosis of acute respiratory distress syndrome (ARDS) and dengue hemorrhagic shock was made."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Severe dengue presenting with hemorrhagic shock, ARDS, viral myocarditis, and critical neutropenia requiring rescue filgrastim therapy."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7210701_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Discerning between an acute pyogenic spondylodiscitis, spinal metastatic malignancy/myeloma, and an indolent multilevel tuberculous spondylitis causing extensive cervicothoracic osseous destruction and quadriparesis.\n2. Admission Breakpoint: The breakpoint occurs following plain radiography, spine CT, and MRI identifying the 14-level contiguous vertebral destruction and paravertebral soft tissue abscesses, prior to operative decompression, debridement, and culture.\n3. Differential Distinctions: Acute pyogenic spondylodiscitis presents with rapid systemic sepsis and focal disc destruction rather than a 7-month indolent subligamentous progression across 14 vertebral segments; spinal metastases or multiple myeloma typically target posterior elements and pedicles without contiguous subligamentous abscesses spanning C4 to T9.",
+  "case_prompt": "A 28-year-old female presents to a hospital in Jakarta, Indonesia with a seven-month history of progressive quadriparesis. Her symptoms began insidiously with mild, dull neck pain, followed by ascending paresthesias and progressive weakness affecting all four extremities. Over the preceding weeks, the motor weakness deteriorated to the point where she became completely unable to walk.\nOn physical examination, the patient is wheelchair-bound and in no acute distress. Neurological evaluation confirms spastic tetraparesis with hyperactive deep tendon reflexes, bilateral clonus, and a cervical motor/sensory deficit.\nInitial spine radiography and computed tomography demonstrate multiple anterior vertebral body destruction, facet joint dislocation, and mild retrolisthesis of the C4-C5 segments. Magnetic resonance imaging reveals abnormal pathologic contrast enhancement extending from C4 to T7 (spanning fourteen contiguous vertebral segments), with marked spinal canal stenosis from C4 to T4 and extensive bilateral anterolateral paravertebral soft tissue collections extending from C4 to T9.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Spondylodiscitis",
+      "rule_out_reason": "Pyogenic infections produce rapid acute disc destruction and septic collapse, whereas this patient showed an indolent 7-month subligamentous osteolytic process across 14 contiguous vertebral segments.",
+      "quote": "MR images of the cervical region was demonstrated pathologic contrast enhancement on C4 to T7 vertebrae, a total of fourteen contiguous segments, with spinal canal stenosis on the level of C4 to T4 and bilateral anterolateral paravertebral soft tissue abscess at the level of C4 to T9 (Fig. 3)."
+    },
+    {
+      "candidate": "Spinal Metastatic Neoplasm / Multiple Myeloma",
+      "rule_out_reason": "Radiographic and cross-sectional imaging showed anterior vertebral body destruction with massive contiguous paravertebral cold abscesses rather than isolated pedicular osteolysis or neoplastic marrow infiltration.",
+      "quote": "A series of radiographic and CT scan depicted multiple vertebral body destruction anteriorly, along with facet joint dislocation and mild retrolisthesis of C4-C5 segments (Figs. 1, 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The classic neuroimaging constellation of extensive contiguous anterior vertebral destruction with bilateral paravertebral abscesses was highly typical of spinal tuberculosis, which achieved neurological recovery and bony bridging under targeted antitubercular chemotherapy and surgical decompression.",
+      "quote": "Those findings were highly typical of spinal tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC7210701_01. Admission neuroimaging presented accurately without spoiling the diagnosis of Pott's disease."
+}

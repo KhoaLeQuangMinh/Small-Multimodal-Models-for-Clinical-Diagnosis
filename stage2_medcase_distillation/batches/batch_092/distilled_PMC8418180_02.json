@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8418180_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old previously healthy man presents with a subacute triad of gait apraxia, urinary incontinence, and episodic intracranial hypertension (headache, vomiting, syncope) resembling normal-pressure hydrocephalus or an intraventricular neoplasm. Neuroimaging reveals a multicompartmental third-ventricular cystic mass obstructing the foramina of Monro with rim enhancement and calcifications, clinically masquerading as a colloid cyst or craniopharyngioma rather than an infectious lesion.\n2. Admission Breakpoint: Evaluation concludes after completion of clinical neurological examination, baseline laboratory investigations (revealing profound hyponatremia of 117 mEq/L and mild CRP elevation), normal chest radiograph, cranial CT, and brain MRI, immediately preceding surgical intervention (craniotomy/endoscopic fenestration).\n3. Differential Distinctions: Colloid cyst and craniopharyngioma were the primary radiographic differentials given third-ventricular localization and obstructive hydrocephalus; pyogenic ventriculitis was considered upon encountering purulent intraventricular fluid; microbiological examination of aspirated pus demonstrating acid-fast bacilli and positive GeneXpert testing confirmed an intraventricular tuberculous abscess.",
+  "case_prompt": "A 56-year-old previously healthy man presented with a one-month history of progressive gait unsteadiness, urinary incontinence, and recurrent symptoms of increased intracranial pressure, including intense headaches, projectile vomiting, and brief episodes of loss of consciousness. He had no prior medical history or known constitutional complaints.\n\nOn physical examination, the patient was conscious, alert, and afebrile. Neurological examination revealed gait apraxia and a distal postural tremor. Cranial nerve assessment was entirely normal, and there were no focal motor or sensory deficits. Meningeal signs were absent.\n\nLaboratory evaluation revealed severe hyponatremia with a serum sodium level of 117 mEq/L and an elevated quantitative C-reactive protein of 15 mg/L. Routine hematology and other biochemical panels were normal. Plain chest radiography was unremarkable.\n\nCranial computed tomography demonstrated an isodense mass lesion centered within the third ventricle obstructing the foramina of Monro bilaterally, extending into the left frontal horn, demonstrating subtle peripheral rim contrast enhancement and fine punctate calcifications, accompanied by obstructive hydrocephalus. Brain magnetic resonance imaging revealed a 23-mm bilobate cystic mass in the third ventricle with fluid-fluid levels displaying heterogeneous T1 and T2 signal intensities, peripheral gadolinium enhancement, and dependent inflammatory-appearing debris settling in the occipital horns of the lateral ventricles.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colloid cyst of the third ventricle",
+      "rule_out_reason": "Considered primary diagnosis given location at the foramina of Monro with paroxysmal hydrocephalus, but operative intervention revealed a vascularized wall containing purulent fluid rather than mucinous substance.",
+      "quote": "Based on clinical and radiological grounds, a presumptive diagnosis of cystic neoplasm, as colloid cyst or craniopharyngioma, was initially considered."
+    },
+    {
+      "candidate": "Craniopharyngioma",
+      "rule_out_reason": "Considered due to the cystic, calcified appearance extending into the third ventricle, but aspiration of the lesion yielded thick frank purulent exudate.",
+      "quote": "After microsurgical cauterization and opening of the cystic wall that was highly vascularized, a yellowish pus was evacuated by puncture and aspiration."
+    },
+    {
+      "candidate": "Pyogenic bacterial ventriculitis / abscess",
+      "rule_out_reason": "Considered upon aspirating thick purulent fluid from the ventricle, but standard bacterial staining revealed acid-fast organisms rather than typical pyogenic cocci or bacilli.",
+      "quote": "On bacterial examination of the pus, ZN staining demonstrated acid-fast bacilli (AFB)."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Intraventricular tuberculous brain abscess)",
+      "rule_out_reason": "Molecular analysis of the intraventricular purulent fluid unequivocally identified the mycobacterial pathogen.",
+      "quote": "GeneXpert was positive for mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set prior to neurosurgical exploration and pus staining. Zero pathogen spoilers in case prompt. Quotes exactly verified."
+}

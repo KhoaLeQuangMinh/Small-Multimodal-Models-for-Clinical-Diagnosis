@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8312185_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 7-year-old boy presents with sudden high fever, coffee-ground vomiting, and acute encephalopathy (GCS 13, confusion, incoherent speech). While acute CNS decompensation in febrile pediatric patients typically prompts immediate concern for bacterial or viral meningoencephalitis (such as Japanese encephalitis or HSV), the lumbar puncture shows entirely acellular CSF with normal protein, accompanied by systemic leukopenia, thrombocytopenia, and transaminitis, suggesting an atypical central nervous system manifestation of an arbovirus.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial triage examination, admission laboratory workup (revealing leukopenia, thrombocytopenia, and transaminitis), and baseline cerebrospinal fluid analysis showing acellular fluid without elevated protein, prior to send-out viral RT-PCR and serologic testing.\n3. Differential Distinctions: Acute bacterial meningitis is excluded by normal CSF leukocytes (4 cells/uL), normal protein (26.9 mg/dL), and negative Gram/AFB stains. Japanese encephalitis virus and other classical neurotropic pathogens (enteroviruses, HSV, chikungunya) are ruled out by negative molecular testing and anti-JEV serology. The acute combination of gastrointestinal hemorrhage (coffee-ground emesis), leukopenia, transaminitis, and seasonal endemic exposure points to dengue encephalitis.",
+  "case_prompt": "A 7-year-old boy presents to the emergency department with a 1-day history of difficulty arousing from sleep, confusion, and incoherent speech. Two days prior to presentation, he experienced the acute onset of fever accompanied by coffee ground vomiting. There was no history of seizures or other hemorrhagic episodes.\n\nOn physical examination, the patient is drowsy with a Glasgow Coma Scale (GCS) score of 13. The body temperature is 38.3 \u00b0C; blood pressure and peripheral circulation are normal. Abdominal examination reveals no tenderness, hepatomegaly, or petechial rash. Neurological examination reveals intact pupillary responses, no facial asymmetry, no motor weakness, and no abnormal posturing or movements. Deep tendon reflexes are normal, and plantar responses are flexor. Nuchal rigidity, Kernig sign, and Brudzinski sign are absent.\n\nInitial laboratory evaluation demonstrates normal hemoglobin and hematocrit, leukopenia with a white blood cell count of 1,900/uL, and mild thrombocytopenia with a platelet count of 129,000/uL. Serum aspartate aminotransferase (AST) is 446 U/L and alanine aminotransferase (ALT) is 204 U/L. Serum sodium is 141 mmol/L, potassium is 3.9 mmol/L, and non-fasting blood glucose is 139 mg/dL. Lumbar puncture yields clear cerebrospinal fluid with a cell count of 4 cells/uL, protein of 26.9 mg/dL, glucose of 98 mg/dL, and negative Nonne and Pandy reactions. Gram stain and special-stain micro-organisms stain of the cerebrospinal fluid are negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningitis / Meningoencephalitis",
+      "rule_out_reason": "Bacterial CNS infection was considered due to acute febrile encephalopathy, but CSF evaluation demonstrated normal leukocyte count, normal protein, normal glucose, and negative Gram and acid-fast stains.",
+      "quote": "CSF showed clear fluid, negative for Nonne's and Pandy's test and protein of 26.9 mg/dL which indicated CSF protein was within normal limits, cell count of 4 cells/uL, and glucose of 98 mg/dL. CSF gram and acid-fast bacilli stains were negative."
+    },
+    {
+      "candidate": "Japanese Encephalitis Virus (JEV) and Other Classical Neurotropic Pathogens",
+      "rule_out_reason": "Common regional and classical encephalitic pathogens were systematically investigated but ruled out by specific molecular testing algorithms and serological assays.",
+      "quote": "Other classical neurotropic pathogens including Japanese encephalitis virus (JEV), chikungunya virus, human herpesviruses, enteroviruses, Streptococcus pneumonia and Haemophilus influenzae were negative using PCR testing algorithms as well as an anti-JEV IgM assay."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Encephalitis (DENV-1)",
+      "rule_out_reason": "The acute clinical picture of febrile encephalopathy, gastrointestinal bleeding, leukopenia, and acute transaminitis was definitively established by the detection of viral RNA directly within the cerebrospinal fluid and serum.",
+      "quote": "Additional laboratory examination confirmed the presence of DENV serotype 1 RNA by reverse transcription polymerase chain reaction (RT-PCR) in CSF taken on admission day and in the serum specimen taken on the second day of hospitalization (Table 1)."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Clinical prompt stops precisely after admission triage and initial CSF analysis, strictly withholding all viral PCR and serology confirmations."
+}

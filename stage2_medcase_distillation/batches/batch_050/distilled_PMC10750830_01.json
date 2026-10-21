@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10750830_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 35-year-old woman presents with episodic, non-specific lower abdominal pain and a large multiloculated left adnexal cystic mass. The diagnostic tension lies in differentiating common benign or malignant ovarian neoplasms (cystadenoma, endometrioma) or chronic pelvic inflammatory lesions from an unusual isolated pelvic presentation of hydatid disease in the absence of hepatic or pulmonary involvement.\n2. Admission Breakpoint: Admission evaluation terminates following initial physical examination, normal routine hematological and biochemical panels, and pelvic ultrasound identifying an 86 x 67 mm polycystic adnexal mass, immediately prior to unilateral salpingo-oophorectomy and histopathological evaluation.\n3. Differential Distinctions: Ovarian cystadenomas feature true epithelial linings and lack parasite cuticle or protoscolices. Tubo-ovarian abscesses present with fever, inflammatory leukocytosis, and acute pelvic pain. Primary adnexal echinococcosis is definitively identified by macroscopic pearly-white hydatid membranes and microscopic lamellar cuticular layers with acid-fast hooklets.",
+  "case_prompt": "A 35-year-old woman presented with episodic lower abdominal pain persisting over 2 months. The discomfort was poorly localized, non-radiating, and did not interfere with her activities of daily living. She reported regular menstrual cycles without dysmenorrhea, menorrhagia, hirsutism, or weight changes. Past medical and family histories were unremarkable. On physical examination, she appeared comfortable, with normal vital signs and no pallor or jaundice. Abdominal examination revealed deep tenderness localized to the suprapubic region, without organomegaly or palpable mass lesions. Respiratory and systemic examinations were unremarkable. Routine baseline blood and urine investigations, including complete blood count, urinalysis, renal function tests, and liver function panels, were all within normal limits. Transabdominal ultrasonography demonstrated a polycystic left adnexal lesion measuring 86 mm by 67 mm; no other intra-abdominal or pelvic abnormalities were identified.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ovarian Cystic Neoplasm / Mucinous or Serous Cystadenoma",
+      "rule_out_reason": "Primary initial diagnosis based on ultrasound showing an 86 x 67 mm polycystic adnexal mass in a reproductive-aged woman; ruled out intraoperatively and histopathologically by the presence of a cyst lined with lamellated cuticular membranes filled with pearly white hydatid membranes rather than neoplastic ovarian epithelium.",
+      "quote": "A diagnosis of ovarian cystic disease was suggested based on radiological findings."
+    },
+    {
+      "candidate": "Tubo-Ovarian Abscess / Chronic Pelvic Inflammatory Disease",
+      "rule_out_reason": "Considered due to adnexal mass and lower abdominal tenderness, but ruled out by completely normal baseline inflammatory and biochemical parameters, absence of fever, and normal hematological indices.",
+      "quote": "Routine hematological and biochemical investigation, including hemogram, urine examination, renal and liver function tests, revealed no abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Primary Pelvic Echinococcosis (Ovarian and Fallopian Hydatid Cyst)",
+      "rule_out_reason": "Gross pathology demonstrating pearly white membranous structures and histopathology showing lamellar parasitic membranes with hooklets positive on Ziehl-Neelsen stain established Echinococcosis of the ovary and fallopian tube.",
+      "quote": "On microscopic examination, sections show a cyst lined by a lamellar membrane containing protoscolices and hooklets. (Figure 2A-2C). Hooklets were better highlighted on the Ziehl-Neelsen staining as acid-fast structures."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10750830_01. Triage narrative rigorously maintains the pre-surgical breakpoint, withholding histopathological and macroscopic operative descriptions. Differentials and final pivot are verified verbatim."
+}

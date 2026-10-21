@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8222916_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old pregnant woman at 15 weeks gestation with Evans syndrome maintained on chronic prednisone presents with fulminant hypoxic respiratory failure, ARDS, high fevers, and cytopenias. The presentation creates immense clinical tension between an Evans syndrome autoimmune flare, severe viral/bacterial pneumonitis in pregnancy, and disseminated opportunistic infection complicated by secondary hemophagocytic lymphohistiocytosis (HLH).\n2. Admission Breakpoint: The admission breakpoint is established at MICU Day 1 triage (vital signs showing tachypnea/tachycardia, drowsy mental status, severe hypoxemia with PaO2/FiO2 87.6, CBC showing leukocytosis and thrombocytopenia, high CRP/PCT, and diffuse bilateral infiltrates on plain chest X-ray), immediately prior to sputum acid-fast bacilli smear, nested sputum PCR for M. tuberculosis, mNGS, bone marrow aspirate, and ferritin/sCD25 panels.\n3. Differential Distinctions: Viral or atypical bacterial pneumonia was initially considered due to diffuse infiltrates and ARDS, but extensive viral PCR and bacterial assays were negative; autoimmune flare of Evans syndrome was considered due to cytopenias in pregnancy, but Coombs and broad autoantibody panels were negative; positive sputum AFB smear, nested PCR, mNGS of BALF and blood, and bone marrow hemophagocytosis confirm disseminated tuberculosis with reactive HLH.",
+  "case_prompt": "A 26-year-old pregnant woman at 15 weeks of gestation is admitted to the medical intensive care unit (MICU) with an 11-day history of cough, progressive fatigue, and night sweats, complicated by 6 days of high fever up to 39.3°C and 2 days of acute dyspnea, worsening fever reaching 40.1°C, and altered sensorium. She has a 4-year history of Evans syndrome for which she has been continuously maintained on oral prednisone (20–45 mg daily), with previously stable hemoglobin and platelet counts. She denies any prior history of chronic pulmonary disease, travel, tick exposure, or contact with poultry.\n\nOn admission to the MICU, she is drowsy and critically ill. Vital signs demonstrate a body temperature of 37.0°C, pulse rate of 120 beats/min, respiratory rate of 40 breaths/min, blood pressure of 140/68 mmHg, and oxygen saturation of 95% while receiving 15 L/min of oxygen via a Venturi mask. Pulmonary auscultation reveals diminished breath sounds and diffuse wet rales bilaterally. Cardiac examination is normal without murmurs. Abdominal examination demonstrates no tenderness or palpable hepatosplenomegaly. No neck stiffness or cutaneous rashes are present.\n\nInitial arterial blood gas analysis demonstrates severe hypoxemic respiratory failure with a pH of 7.44, PaO2 of 71.0 mmHg, PaCO2 of 38 mmHg, and an oxygenation index (PaO2/FiO2) of 87.6. Laboratory testing shows a white blood cell count of 13.86 × 10^9/L with 94.0% neutrophils, hemoglobin 101 g/L, and platelet count 73 × 10^9/L. C-reactive protein is 222.0 mg/L, procalcitonin is 3.29 ng/mL, erythrocyte sedimentation rate is 47 mm/hr, serum albumin is 20.8 g/L, and lactic dehydrogenase is 568 U/L. Coagulation profile shows a prothrombin time of 13.7 seconds and fibrinogen of 5.0 g/L. Bedside plain chest radiography reveals diffuse bilateral pulmonary infiltrates.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral or atypical bacterial pneumonia with ARDS",
+      "rule_out_reason": "Rapidly progressive respiratory failure with diffuse bilateral infiltrates in an immunosuppressed pregnant patient strongly suggested severe influenza, RSV, or atypical bacterial infection, but extensive serological and multiplex microbiological assays were entirely negative.",
+      "quote": "Serology for respiratory viruses (adenovirus, influenza A virus, influenza B virus, parainfluenza, and respiratory syncytial virus) as well as bacteriological assays (Mycoplasma pneumoniae, Chlamydia pneumonia, and Legionella) were all negative."
+    },
+    {
+      "candidate": "Exacerbation / Relapse of Evans syndrome or Autoimmune disease",
+      "rule_out_reason": "Given her past history of Evans syndrome and worsening thrombocytopenia in pregnancy, an autoimmune hematologic relapse was considered, but direct Coombs testing and broad autoantibody screens (ANA, ENA, ANCA) were negative.",
+      "quote": "All the indicators were negative for routine laboratory screening (anti-nuclear antibody, anti-extractable nuclear antigen antibody, and anti-neutrophilic cytoplasmic antibody, et al) for autoimmune diseases. Coombs test was negative"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive sputum nested PCR and acid-fast bacilli staining, confirmed by metagenomic next-generation sequencing (mNGS) of BALF and blood, demonstrated disseminated Mycobacterium tuberculosis, which triggered reactive hemophagocytic lymphohistiocytosis (HLH) evidenced by bone marrow hemophagocytosis, hyperferritinemia (6649 ng/mL), and elevated soluble CD25.",
+      "quote": "nested polymerase chain reaction (PCR) for M. tuberculosis complex in sputum was positive"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation strictly stops at Day 1 triage before AFB smear, PCR, mNGS, and bone marrow biopsy. Quotes verified verbatim."
+}

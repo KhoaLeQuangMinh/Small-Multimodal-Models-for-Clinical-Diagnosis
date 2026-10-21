@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7083362_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: Reconciling widespread, non-tender, flesh-colored cutaneous nodules resembling neurofibromatosis or eruptive dermatofibromas with bilateral peripheral nerve thickening in an expatriate presenting without known infectious contacts.\n2. Admission Breakpoint: The breakpoint is set after physical and neurological examinations document cutaneous nodules and peripheral nerve involvement, prior to slit skin smears, cutaneous biopsy, and acid-fast histological staining.\n3. Differential Distinctions: Neurofibromatosis and multiple dermatofibromas can mimic histoid nodules clinically and histologically (spindle cell proliferation) but lack peripheral nerve enlargement and acid-fast organisms; cutaneous leishmaniasis causes ulcerative nodules without diffuse nerve hypertrophy; relapsed/drug-resistant infection is ruled out by the patient's de novo untreated status.",
+  "case_prompt": "A 32-year-old male expatriate who lived his entire life in Malawi and relocated to Johannesburg one year ago presents with a four-month history of progressive, non-tender nodules on his face and trunk that have caused him significant social distress. He reports no known history of chronic infectious illness, known sick contacts, or prior long-term antimicrobial therapies.\nOn physical examination, the patient has numerous discrete, flesh-colored papules and nodules distributed over the facial skin, accompanied by an enlarged and infiltrated nose and multiple nodules on both ears. Examination of the torso and extremities reveals scattered scaly plaques with occasional excoriations. Neurological examination is notable for bilateral, palpable peripheral nerve thickening with associated sensory impairment.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neurofibromatosis / Multiple Eruptive Dermatofibromas",
+      "rule_out_reason": "Physical examination demonstrated bilateral peripheral nerve thickening, and histological evaluation showed spindle cells packed with acid-fast bacilli rather than benign fibrohistiocytic proliferation.",
+      "quote": "There was bilateral peripheral nerve involvement."
+    },
+    {
+      "candidate": "Relapsed / Secondary Drug-Resistant Mycobacterial Disease",
+      "rule_out_reason": "The patient presented de novo with no prior diagnosis, personal contact with infected individuals, or prior treatment.",
+      "quote": "He had no prior history of leprosy, leprosy contact, or any treatment for leprosy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bilateral earlobe slit skin smears demonstrated a high bacterial index, and nodule biopsy revealed intertwining spindle cells teeming with acid-fast bacilli on Ziehl-Neelsen staining, confirming de novo histoid leprosy.",
+      "quote": "Skin slit smears from both the ear lobes confirmed the diagnosis as multibacillary leprosy with a high bacterial index. Biopsy taken from a nodule showed proliferation of spindle cells arranged in an intertwining pattern."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC7083362_01. Case prompt halts before slit smears or histology; clinical tension focuses on dermato-neurologic features."
+}

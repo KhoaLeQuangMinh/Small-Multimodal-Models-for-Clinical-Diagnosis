@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC12481899_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 52-year-old female agricultural worker from an endemic region presents with a 6-month history of generalized non-pitting and pitting edema, facial and earlobe puffiness, spreading hypopigmented macules, and numbness of the hands and feet. Standard cardiac, renal, and systemic autoimmune evaluations are completely unrevealing. The clinical tension lies in distinguishing systemic renal/cardiac causes of edema or autoimmune connective tissue disease from borderline lepromatous leprosy presenting atypically with diffuse edema and macules.\n2. Admission Breakpoint: The breakpoint occurs after specialized dermatologic and neurologic outpatient examination, routine baseline laboratories, ECG, abdominal/cardiac ultrasonography, and negative viral/syphilis serologies are obtained, immediately prior to slit-skin smear Bacterial Index (BI) calculation and skin biopsy histopathology.\n3. Differential Distinctions: Renal and cardiac failure cause generalized edema, but are excluded by completely normal urinalysis, renal function tests, ECG, and echocardiography. Systemic lupus erythematosus (SLE) presents with facial erythema and systemic edema, but typically features photosensitivity, oral ulcers, alopecia, cytopenias, proteinuria, and interface dermatitis on biopsy. Secondary syphilis presents with generalized maculopapular eruptions, but is ruled out by non-reactive RPR serology. Psoriasis exhibits sharply demarcated plaques with silvery scale and Auspitz sign, without peripheral numbness or facial edema. The presence of generalized edema, earlobe infiltration, distal anesthesia, and hypopigmented macules in an endemic zone strongly suggests borderline lepromatous leprosy.",
+  "case_prompt": "A 52-year-old female agricultural worker presents to the outpatient clinic with a six-month history of generalized edema and progressive erythema involving the trunk and extremities, accompanied by numbness in her hands and feet for the past three months. Six months prior to presentation, without identifiable triggers, she developed painless edema involving her face, trunk, and extremities. Three months later, erythematous macules emerged over the lumbar region with mild pruritus, subsequently spreading across the extremities, buttocks, abdomen, back, neck, and face, alongside worsening distal numbness. An evaluation at a local hospital—including complete blood count, biochemical profile, and cardiac and abdominal B-mode ultrasonography—revealed no abnormalities. She has a history of hypertension treated irregularly, and denies chronic infectious diseases, coronary disease, diabetes, or known drug allergies.\n\nOn physical examination, the patient is in good general spirits with normal vital signs. Dermatologic examination reveals scattered, variably sized, round, oval, and irregular hypopigmented macules across the face, neck, trunk, and extremities. A large infiltrated plaque is present in the lumbar area, accompanied by mild facial and earlobe swelling. The lesions demonstrate blurred margins with focal dry surface scaling, slight induration, and decreased skin elasticity. Evident pitting edema is present over the dorsal surfaces of the hands, lower legs, and ankles. Superficial peripheral nerves are not palpably thickened, and thermal and pain sensations are preserved on gross testing. Visual acuity, eyelid closure, and blink reflexes are normal. Neurologic examination shows intact cranial nerves, normal physiological reflexes, absence of muscle atrophy or ataxia, and negative pathological signs.\n\nBaseline laboratory evaluation reveals normal complete blood count, normal urinalysis, normal liver and renal panels, normal electrolytes, and normal coagulation function. Electrocardiogram is unremarkable. Screening tests for HIV, syphilis (RPR), and hepatitis B surface antigen are all negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Renal or Cardiogenic Edema",
+      "rule_out_reason": "Six months of generalized edema involving the face, trunk, and lower limbs raised suspicion for congestive heart failure or nephrotic/nephritic renal syndrome; however, urinalysis, serum creatinine, BUN, ECG, echocardiography, and abdominal ultrasound were all completely normal.",
+      "quote": "This patient showed no clinical manifestations of renal or cardiac edema. Auxiliary examinations, such as urine routine, renal function, electrocardiogram, abdominal B-ultrasound, and cardiac ultrasound, are all normal, and thus can be ruled out."
+    },
+    {
+      "candidate": "Systemic Lupus Erythematosus (SLE) / Autoimmune Connective Tissue Disease",
+      "rule_out_reason": "Widespread erythematous plaques and facial puffiness raised concern for autoimmune disease, but SLE was excluded by the absence of photosensitivity, oral ulcerations, alopecia, cytopenias, fever, or proteinuria, and the absence of interface dermatitis.",
+      "quote": "Systemic lupus erythematosus (SLE) is often accompanied by photosensitivity, oral ulcers, hair loss, anemia, fever, and proteinuria. The main pathological changes in the skin tissue are interface dermatitis changes, which can be ruled out."
+    },
+    {
+      "candidate": "Secondary Syphilis",
+      "rule_out_reason": "Diffuse maculopapular lesions across the trunk and extremities are classic for the secondary stage of treponemal infection; however, nontreponemal serological testing (RPR) was negative.",
+      "quote": "Positive syphilis serological tests (RPR and TPPA) are the basis for diagnosis. In this case, the RPR test result is negative; therefore, it can be ruled out."
+    },
+    {
+      "candidate": "Psoriasis Vulgaris",
+      "rule_out_reason": "Erythematous plaques with scaling were considered, but psoriasis typically features well-demarcated silvery scales with Auspitz sign and lacks facial edema, earlobe infiltration, or peripheral neuropathy.",
+      "quote": "The scales of psoriasis are silver-white, and film phenomenon and punctate bleeding can be observed after scraping. The boundaries of the skin lesions are clear, and there is usually no obvious edema or numbness."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "In the setting of residence in an endemic area, slit-skin smears demonstrated high Bacterial Index (BI) values across multiple sites, and trunk histopathology revealed foamy histiocyte and lymphocytic infiltrates around dermal appendages with positive acid-fast bacilli on anti-acid staining, confirming borderline lepromatous leprosy.",
+      "quote": "Bacterial Index (BI) test results: left eyebrow arch, 2+; right eyebrow arch, 2+; left earlobe, 3+; right earlobe, 3+; skin lesion, 4+. Histopathological examination of skin lesions on the left trunk: Epidermis normal, superficial dermis shows soft edema, dermal appendages are reduced, and there are clusters of tissue cells, foam cells, and lymphocytes infiltrating the blood vessels and appendages. Antiacid staining of the lesion on the left trunk showed positive acid-fast bacilli (Figures 2A-D)."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning CPC format. The case_prompt cleanly isolates outpatient triage findings before slit-skin smears and histopathology. The diagnostic reasoning directly incorporates the explicit rule-out differentials discussed in the paper with exact verbatim quotes."
+}

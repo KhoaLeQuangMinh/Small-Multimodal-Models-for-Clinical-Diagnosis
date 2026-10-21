@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5585664_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A 36-year-old bilateral lung transplant recipient on maintenance immunosuppression presents with acute decompensated heart failure, severe left ventricular systolic dysfunction (EF 30-35%), and global hypokinesia. Differentiating donor-derived protozoal myocarditis from calcineurin inhibitor cardiotoxicity, opportunistic viral infection (CMV), or allograft-related complications is difficult because endomyocardial biopsy can yield false-negative results.\n2. Admission Breakpoint: The admission clinical presentation stops after the evaluation of acute congestive heart failure symptoms, vitals, baseline renal and liver labs, and transthoracic echocardiogram documenting new-onset dilated cardiomyopathy at week 67, prior to endomyocardial biopsy, cardiac MRI, and targeted blood PCR assays.\n3. Differential Distinctions: Drug-induced cardiotoxicity causes renal dysfunction and hypertension but does not typically cause acute inflammatory cardiomyopathy with global hypokinesia in a recipient of an organ from an endemic donor; negative cardiac MRI and serial peripheral blood molecular assays confirmed donor-transmitted trypanosomal disease.",
+  "case_prompt": "A 36-year-old male recipient of a bilateral lung transplant (performed for end-stage cystic fibrosis) presented to the hospital at week 67 post-transplantation with fever, fatigue, progressive dyspnea on exertion, orthopnea, and lower extremity peripheral edema. Maintenance immunosuppression included cyclosporine, mycophenolate mofetil, and prednisone. The lung donor was a 48-year-old woman originally from El Salvador with a history of heart failure and arrhythmias who died of a stroke. On physical examination, the patient was febrile and demonstrated signs of volume overload including elevated jugular venous pressure and bilateral peripheral edema. Laboratory evaluation revealed acute kidney injury and elevated liver aminotransferases. Transthoracic echocardiography was performed, showing new-onset dilated cardiomyopathy with a left ventricular ejection fraction of 30% to 35%, grade 2 diastolic dysfunction, and global hypokinesia of the left ventricle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Calcineurin Inhibitor / Drug-Induced Toxicity",
+      "rule_out_reason": "Considered due to the patient's acute kidney injury, fluctuating immunosuppressant drug levels, and ongoing transaminitis; ruled out as the primary cause of heart failure because calcineurin toxicity does not account for acute dilated cardiomyopathy with marked global ventricular hypokinesia following donor parasite exposure.",
+      "quote": "This hospitalization was also notable for ongoing transaminitis believed to be secondary to levetiracetam and congestive hepatopathy, as well as acute kidney injury resulting from cyclosporine and aggressive diuresis."
+    },
+    {
+      "candidate": "Acute Viral Myocarditis (e.g., Cytomegalovirus) / Infiltrative Cardiomyopathy",
+      "rule_out_reason": "Considered given the patient's high CMV transmission risk profile (donor positive, recipient negative) and immunosuppressed status; ruled out by normal cardiac MRI without scarring or infiltration and positive surveillance serial PCR and hemoculture confirming protozoal parasitemia.",
+      "quote": "There was no evidence of myocardial infiltration or scarring on cardiac MRI. Myocardial biopsy was performed but pathologic review and T. cruzi PCR were both negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was identifying new-onset dilated cardiomyopathy in a lung transplant recipient receiving organs from an El Salvadorian donor with known cardiac disease, confirmed by recurrent positive peripheral blood PCR assays that prompted anti-trypanosomal therapy.",
+      "quote": "Transthoracic echo demonstrated new onset dilated cardiomyopathy with ejection fraction .30-.35, grade 2 diastolic dysfunction, and global hypokinesia of the left ventricle:findings suggestive of Chagas myocarditis."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to week 67 acute heart failure admission. Donor-derived Chagas myocarditis in a lung transplant recipient; endomyocardial biopsy was false-negative, with diagnosis confirmed by surveillance blood PCR."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9673929_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old previously healthy surgeon sustained a needlestick injury during an emergency thoracentesis for acute respiratory failure. After an initial latent period of 3 weeks, he developed an indolent thumb abscess, flexor tenosynovitis, ipsilateral axillary lymphadenopathy, and a reactive pleural effusion. The key tension is differentiating acute pyogenic hand infection and atypical environmental mycobacterial inoculation (e.g., M. marinum, Sporothrix) from primary direct cutaneous inoculation tuberculosis complicated by tenosynovitis.\n2. Admission Breakpoint: The admission breakpoint is established upon referral hospital admission, following clinical examination, baseline laboratories, chest CT showing axillary adenopathy with pleural effusion, and hand MRI confirming flexor tenosynovitis, before specific mycobacterial culture and drug susceptibility results return.\n3. Differential Distinctions: Acute pyogenic flexor tenosynovitis (Kanavel signs) typically presents within 24–72 hours of injury rather than having a 3-week incubation period. Environmental atypical mycobacteria (M. marinum) and sporotrichosis present similarly with nodular lymphangitis but were excluded by microbiologic isolation of Mycobacterium tuberculosis. Direct tuberculous pleuritis was ruled out by negative pleural fluid AFB and cultures, confirming an exudative sympathetic effusion associated with axillary lymphadenitis.",
+  "case_prompt": "A 35-year-old previously healthy male surgeon presented with a painful lesion on his right thumb, ipsilateral axillary swelling, low-grade fever, and chest tightness. Fifty days prior to presentation, he had sustained a deep accidental needlestick puncture injury to the palmar aspect of his right thumb while performing an emergency thoracentesis and pleural drainage on an acutely ill patient who presented with hemopneumothorax and respiratory failure. He had immediately washed the wound with soap and water and applied povidone-iodine. The puncture site initially healed uneventfully without acute signs of infection.\n\nThree weeks after the injury, he noted insidious onset of erythema, swelling, and a painful papule at the previous puncture site. The papule gradually enlarged into an indurated lesion with central fluctuance. Despite initial outpatient antimicrobial treatment, he developed progressive enlargement of tender lymph nodes in his right axilla, mild subjective fever, and chest tightness over the subsequent 10 days, prompting transfer to a tertiary hospital.\n\nOn physical examination, he was mildly febrile. Examination of the right hand revealed an indurated erythematous plaque over the middle aspect of the thumb with expressible seropurulent fluid and mild restriction in thumb flexion. Multiple enlarged, tender lymph nodes were palpable in the right axilla. Laboratory testing demonstrated an elevated C-reactive protein level of 21.6 mg/L and a white-cell count of 8,800 per cubic millimeter with 76.7% neutrophils. Serologic tests for HIV-1/2 and viral hepatitis panels were negative.\n\nA contrast-enhanced chest CT scan revealed multiple enlarged right axillary lymph nodes and an ipsilateral right-sided pleural effusion. Magnetic resonance imaging (MRI) of the right hand demonstrated tenosynovitis involving the entire flexor tendon sheath of the thumb.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic bacterial cellulitis and flexor tenosynovitis (e.g., Staphylococcus aureus, Streptococcus pyogenes)",
+      "rule_out_reason": "Common after penetrating needlestick injuries to the hand; ruled out by the prolonged 3-week incubation period, failure of acute suppurative evolution within the first 48 hours, and indolent development of an indurated granulomatous plaque with regional lymphadenopathy.",
+      "quote": "The injury healed normally; however, after 3 weeks, redness, edema erythematous papule, and pain in his thumb at the previously injured site occurred, and then, the papule enlarged and subsequently resulted in abscess formation"
+    },
+    {
+      "candidate": "Atypical environmental mycobacterial infection (e.g., Mycobacterium marinum) or sporotrichosis",
+      "rule_out_reason": "Considered because chronic nodular tenosynovitis and ascending lymphadenitis (sporotrichoid spread) classically follow traumatic cutaneous inoculation; excluded when culture from the aspirated fluid isolated Mycobacterium tuberculosis.",
+      "quote": "The puncture fluid from the skin lesion was cultured, and Mtb was observed thereafter."
+    },
+    {
+      "candidate": "Direct tuberculous empyema / tuberculous pleuritis",
+      "rule_out_reason": "Considered when chest CT revealed an ipsilateral pleural effusion accompanying right axillary lymphadenopathy; ruled out as direct pleural tuberculosis when diagnostic thoracentesis showed sterile exudate with negative AFB stains and negative mycobacterial cultures, representing a reactive sympathetic effusion.",
+      "quote": "The patient underwent thoracic puncture and drainage in our hospital, the pleural effusion was exudative, and the pleural fluid protein was 37.83 g/L. However, acid-fast staining of the pleural fluid was negative, and the general bacterial culture and TB culture were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of acid-fast bacilli on Ziehl-Neelsen staining of the thumb abscess aspirate followed by mycobacterial culture confirming Mycobacterium tuberculosis (with primary multidrug resistance inherited from the source patient), combined with hand MRI demonstrating flexor pollicis tenosynovitis, established primary inoculation cutaneous tuberculosis with flexor tenosynovitis.",
+      "quote": "The diagnosis of primary inoculation cutaneous TB was made based on the positive result of Ziehl-Neelsen staining and the source patient's hydrothorax culture... The puncture fluid from the skin lesion was cultured, and Mtb was observed thereafter. Susceptibility was demonstrated against isoniazid and rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation cleanly separated at the admission breakpoint. Source patient smear positivity, drug names, and Ziehl-Neelsen staining results are strictly withheld from the case prompt and detailed exclusively in the diagnostic reasoning."
+}

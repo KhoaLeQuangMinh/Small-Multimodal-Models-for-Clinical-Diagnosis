@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12743525_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 13-year-old girl from an endemic migrant background presents with a 4-month history of fever and weight loss, followed by acute intracranial hypertension, abducens nerve palsy, and multiple ring-enhancing brain lesions misdiagnosed at a referral center as neurocysticercosis. The core diagnostic tension is differentiating neurocysticercosis from disseminated CNS tuberculomas and pyogenic brain abscesses, particularly in the absence of typical miliary pulmonary lesions on chest imaging.\n2. Admission Breakpoint: The admission breakpoint is established on Day 1 immediately after admission triage, physical and cranial nerve examination, funduscopy, plain leg radiograph (ruling out intramuscular calcified cysts), and high-resolution chest CT (demonstrating apical cavitary tree-in-bud lesions), but prior to lumbar puncture fluid analysis (pleocytosis, cobweb coagulum, ADA), CBNAAT, Taenia solium serology, and brain MR spectroscopy.\n3. Differential Distinctions: Neurocysticercosis is the most common cause of multiple ring-enhancing brain lesions in rural India, but typically lacks constitutional wasting, fever, choroidal tubercles on funduscopy, apical pulmonary cavitation, and elevated lipid peaks on MR spectroscopy. Pyogenic bacterial brain abscesses present acutely but demonstrate neutrophilic pleocytosis and lack choroidal granulomas or apical fibrocavitary disease.",
+  "case_prompt": "A 13-year-old girl, the daughter of a migrant textile worker from Bihar, presented to a hospital in Tamil Nadu, India, with a 4-month history of fever and progressive weight loss, followed by 1 month of headache and diplopia.\n\nPrior to transfer, brain magnetic resonance imaging performed at an outside hospital had demonstrated ring-enhancing intracranial lesions that were interpreted as neurocysticercosis, for which she was referred for further management.\n\nOn physical examination, the patient had signs of raised intracranial pressure. Neurological examination revealed a left lateral rectus palsy (sixth cranial nerve palsy) causing horizontal diplopia. Funduscopic examination revealed bilateral choroidal tubercles. The remainder of the systemic examination was non-focal.\n\nA radiograph of the lower extremities showed no calcified intramuscular or soft-tissue cystic lesions. High-resolution computed tomography (HRCT) of the chest revealed a left apical cavitary lesion with adjacent tree-in-bud nodular opacities, without evidence of miliary pulmonary nodules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neurocysticercosis (NCC)",
+      "rule_out_reason": "Considered as the leading prior diagnosis based on external MRI showing multiple ring-enhancing brain lesions in an endemic region; however, ruled out by the presence of choroidal tubercles, apical pulmonary cavitary disease, negative extremity radiographs for calcified cysts, and subsequent negative CSF Taenia solium IgG.",
+      "quote": "An MRI performed in Bihar suggested neurocysticercosis (NCC), and she was referred for further evaluation... On admission, her presentation appeared atypical for NCC"
+    },
+    {
+      "candidate": "Pyogenic bacterial brain abscess",
+      "rule_out_reason": "Considered in the differential diagnosis of multilocular ring-enhancing lesions with surrounding vasogenic edema and mass effect, but excluded by the subacute 4-month course, lymphocytic pleocytosis with cobweb coagulum, absence of pyogenic bacterial growth on CSF culture, and elevated lipid peak on MRS reflecting caseous necrosis.",
+      "quote": "MR spectroscopy showed elevated choline and lipid peaks, lipid indicating caseation and choline reflecting inflammatory membrane turnover, supporting a tuberculous etiology. CSF culture remained negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Funduscopic detection of bilateral choroidal tubercles, CSF lymphocytic pleocytosis with markedly elevated adenosine deaminase (19.2 U/L) and a classic cobweb coagulum, left apical cavitary lung lesions, and MR spectroscopy demonstrating high lipid peaks confirming caseating granulomatous CNS tuberculomas.",
+      "quote": "Fundus examination revealed bilateral choroidal tubercles, strongly suggestive of tuberculosis... CSF analysis on Day 2 showed lymphocytic pleocytosis, glucose 37 mg/dL, elevated ADA (19.2 U/L) and a cobweb coagulum on prolonged standing (Fig. 4a)... High-Resolution CT (HRCT) chest revealed a left apical cavitary lesion with adjacent tree-in-bud nodules consistent with active pulmonary tuberculosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt stops on Day 1 with funduscopy, HRCT chest, and leg radiograph. Excluded CSF cytology/ADA, CBNAAT, Taenia serology, and subsequent clinical course from prompt."
+}

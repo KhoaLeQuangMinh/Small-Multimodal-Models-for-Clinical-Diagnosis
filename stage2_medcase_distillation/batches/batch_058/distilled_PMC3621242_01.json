@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3621242_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 40-year-old man with chronic kidney disease (CKD) presenting with an indolent, fluctuant lower sternal mass, 5 kg weight loss, and matted cervical lymphadenopathy, but with a paradoxical negative tuberculin skin test and absence of fever or night sweats. The clinical challenge is distinguishing extrapulmonary sternal osteomyelitis with cold abscess formation caused by recrudescent tuberculosis from pyogenic bacterial osteomyelitis or a lymphoproliferative malignancy, while recognizing that uremic immunosuppression causes cutaneous anergy and false-negative tuberculin skin testing.\n2. Admission Breakpoint: Admission triage ends following history, physical examination (matted cervical lymphadenopathy, 4x3 cm fluctuant painless sternal mass), triage laboratories (anemia, ESR 120 mm/hr, elevated blood urea and creatinine), and initial plain chest radiograph showing old upper-lobe fibrotic strands. Confirmatory testing begins with tuberculin skin testing, fine needle aspiration cytology, PCR, and excisional lymph node biopsy.\n3. Differential Distinctions: Pyogenic sternal osteomyelitis / acute bacterial abscess typically develops following median sternotomy or direct trauma with acute local pain, erythema, warmth, and high fever, all absent here. False-negative tuberculin skin testing initially challenged the diagnosis, but uremic patients frequently have defective delayed-type hypersensitivity. Lymphoma or metastatic carcinoma was considered due to destructive osseous changes and matted lymphadenopathy with significant weight loss, but ruled out by histopathology. Sternal tuberculosis is confirmed by sternal FNAC showing necrotic epithelioid granulomas with positive PCR for tuberculous bacilli, and lymph node biopsy revealing caseating granulomas with Langhans giant cells.",
+  "case_prompt": "A 40-year-old man with known chronic kidney disease presented with a 20-day history of a painless, slowly enlarging swelling over the lower part of his sternum. He reported no preceding history of chest trauma, sternal puncture, or thoracic surgery. His past medical history was notable for treated chronic pulmonary and lymph node infections 11 and 8 years earlier, respectively. Over the preceding two months, he had an unintentional weight loss of 5 kg, but reported no fever, chills, or night sweats.\n\nOn physical examination, he was chronically ill and malnourished. Examination of the neck revealed palpable, matted, right-sided cervical lymphadenopathy. Over the lower third of the sternum, there was a 4 cm × 3 cm fluctuant, non-tender mass with normal overlying skin, without erythema, warmth, discharge, or sinus tract formation. Initial laboratory evaluation revealed normocytic anemia with a hemoglobin of 8.8 g/dL, a normal total leukocyte count of 4,900/mm³, a markedly elevated erythrocyte sedimentation rate of 120 mm/hr, blood urea of 85 mg/dL, serum creatinine of 3.26 mg/dL, and serum albumin of 3.1 g/dL. A plain chest radiograph revealed old fibrotic parenchymal strands in the lung apices suggestive of previous pleuropulmonary disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Sternal Osteomyelitis / Acute Bacterial Abscess",
+      "rule_out_reason": "Acute pyogenic sternal osteomyelitis typically results from median sternotomy or direct trauma and presents with acute severe pain, erythema, warmth, and leukocytosis, which were completely absent in this indolent fluctuant cold abscess.",
+      "quote": "There was no history of trauma or local surgery preceding its appearance."
+    },
+    {
+      "candidate": "Cutaneous Anergy / Latent TST Non-Reactivity",
+      "rule_out_reason": "The negative tuberculin skin test initially argued against active mycobacterial infection, but this was recognized as cutaneous anergy secondary to uremia and malnutrition in chronic kidney disease.",
+      "quote": "Tuberculin skin test was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis was confirmed by fine-needle aspiration cytology of the sternal mass demonstrating necrotic material with epithelioid giant cells and positive PCR for tuberculous bacillus, alongside excisional biopsy of the matted cervical nodes revealing caseating granulomatous lymphadenitis with Langhans giant cells.",
+      "quote": "Fine needle aspiration cytology of the sternal swelling was carried out and it revealed areas of necrosis with epithelioid giant cells in clusters. Polymerase chain reaction (PCR) for tuberculous bacillus was positive. Excision biopsy of right cervical lymph nodes revealed numerous epithelioid granulomas with central caseation and surrounded by Langhans giant cells."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical prompt strictly redacted of pathogen names and prior specific TB diagnoses. Breakpoint placed before tuberculin test, FNAC, and lymph node biopsy."
+}

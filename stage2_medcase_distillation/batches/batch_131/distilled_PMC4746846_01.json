@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4746846_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient with a prior history of tongue carcinoma presents with fever and widespread multi-station FDG-avid lymphadenopathy, creating strong suspicion for metastatic cancer recurrence or lymphoma rather than infectious lymphadenitis.\n2. Admission Breakpoint: Admission triage terminates following cervical ultrasound and baseline sputum smear examination. Whole-body PET/CT, fine-needle aspiration cytology (FNAC), and tuberculin testing represent advanced diagnostic procedures.\n3. Differential Distinctions: Squamous cell carcinoma metastases typically follow regional lymphatic drainage; lymphoma demonstrates malignant lymphoid proliferation without acid-fast organisms. Extrapulmonary tuberculous lymphadenitis reveals caseating granulomas with acid-fast bacilli on Ziehl-Neelsen stain.",
+  "case_prompt": "A 53-year-old asthmatic male presented with right cervical lymphadenopathy and fever. His past medical history was notable for carcinoma of the tongue treated 10 years earlier with left hemiglossectomy and suprahyoidal neck dissection. He was normotensive and euglycemic, and denied weight loss, night sweats, or cough. Physical examination demonstrated palpable right cervical lymphadenopathy. Initial laboratory investigations showed a negative C-reactive protein. Routine sputum smear examination was negative. Ultrasonography of the neck revealed multiple bilateral cervical lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic squamous cell carcinoma",
+      "rule_out_reason": "Prior history of tongue carcinoma made locoregional metastatic recurrence the leading initial suspicion, but whole-body imaging showed diffuse multi-station nodal involvement (cervical, mediastinal, abdominal, pelvic, femoral) atypical for head and neck metastasis.",
+      "quote": "The pattern of increased FDG uptake is not typical for squamous carcinoma for head and neck metastasis and so it raised the possibility of lymphoma."
+    },
+    {
+      "candidate": "Malignant lymphoma",
+      "rule_out_reason": "Widespread supradiaphragmatic and infradiaphragmatic lymphadenopathy with intense FDG avidity raised strong suspicion of lymphoma, but fine-needle aspiration demonstrated acid-fast bacilli rather than neoplastic lymphoid proliferation.",
+      "quote": "and so it raised the possibility of lymphoma. FNAC showed the Ziehl-Neelsen staining to be strongly positive for acid-fast bacilli"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cervical lymph node fine-needle aspiration cytology demonstrating strong positivity for acid-fast bacilli on Ziehl-Neelsen staining, together with a strongly positive tuberculin skin test (15 mm induration), established extrapulmonary tuberculosis.",
+      "quote": "FNAC showed the Ziehl-Neelsen staining to be strongly positive for acid-fast bacilli [Figure 2]. Tuberculin skin test was positive (15 mm induration after 48 h)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

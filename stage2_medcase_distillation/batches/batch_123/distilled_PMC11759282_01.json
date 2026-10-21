@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11759282_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 46-year-old woman residing in Sardinia presents with chronic left flank discomfort and an 8.0 × 6.5 cm partially calcified, complex splenic cyst abutting the diaphragm. Notably, comprehensive serological testing (both routine ELISA and high-performance Western blot IgG) is completely negative. This diagnostic pitfall creates immense tension between a benign non-parasitic congenital splenic cyst, post-traumatic pseudocyst, or cystic neoplasm versus seronegative splenic cystic echinococcosis.\n2. Admission Breakpoint: The admission breakpoint falls immediately following outpatient physical exam, general biochemistry/hematology, and initial abdominal ultrasound and plain radiography identifying the calcified splenic lesion, but strictly prior to serological send-out panels, pre-operative contrast CT vascular mapping, and laparoscopic splenectomy.\n3. Differential Distinctions: Congenital non-parasitic epidermoid splenic cysts and post-traumatic pseudocysts mimic this lesion radiologically and account for true seronegativity, but histology reveals an epithelial lining or fibrous wall rather than laminated germinal layers. Cystic neoplasms (lymphangioma, hemangioma) typically show contrast-enhancing septa or vascular flow. The diagnostic pivot is established by post-splenectomy parasitological inspection demonstrating pathognomonic laminated cuticular membranes, dense fluid with cholesterol crystals, and PCR sequencing targeting cox1 and nad5 genes confirming Echinococcus granulosus sensu stricto (genotype G1).",
+  "case_prompt": "A 46-year-old woman who was born and resides in Sardinia, Italy, presents to the clinic with persistent left flank discomfort. She had noted mild left-sided abdominal discomfort four years prior, at which time an abdominal ultrasound was reportedly unrevealing. Her medical history includes seasonal pollen allergy, rhizarthrosis, and irritable bowel syndrome; she has no history of abdominal trauma or prior abdominal surgeries. Epidemiologic review reveals that she lived in a rural setting and had tended a family vegetable garden for the preceding two years as a hobby; she kept a domestic cat and had no direct contact with dogs.\n\nOn physical examination, the patient is afebrile and hemodynamically stable, with a blood pressure of 121/78 mmHg, pulse rate of 89 beats per minute, and respiratory rate of 18 breaths per minute. Abdominal examination reveals mild fullness and deep tenderness in the left upper quadrant, without rigidity, guarding, or palpable lymphadenopathy.\n\nInitial laboratory evaluation demonstrates normal complete blood count, normal renal function (serum creatinine), and normal serum transaminases. Plain radiography reveals soft-tissue enlargement and fullness in the splenic bed. Abdominal ultrasonography demonstrates an 8.0 × 6.5 cm well-circumscribed, rounded mass in the upper pole of the spleen in close contact with the diaphragm, which occupies more than two-thirds of the organ. The mass displays an expansive, irregular wall with both calcified and delicate non-calcified segments, containing dense fluid, corpuscular debris, floating internal structures, and stratified dependent echogenic material.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Non-Parasitic Splenic Cyst (Epidermoid / Epithelial Cyst)",
+      "rule_out_reason": "Epidermoid cysts are the most frequent true congenital cysts of the spleen and frequently exhibit peripheral wall calcification in asymptomatic adult females; however, microscopic examination of the resected specimen revealed classic acellular laminated chitinous layers rather than an epithelial lining.",
+      "quote": "inspection of the parasitic lesion with the naked eye was performed to identify pathognomonic signs of an echinococcal cyst. The presence of germinal laminated layers and cystic fluid was observed."
+    },
+    {
+      "candidate": "Splenic Pseudocyst / Post-Traumatic Hematoma",
+      "rule_out_reason": "Post-traumatic pseudocysts can develop internal debris and peripheral calcification, consistent with the patient's negative serological antibody tests; however, the patient had no history of blunt trauma or pancreatitis, and molecular PCR definitively proved a parasitic cestode origin.",
+      "quote": "Immunological examinations of the serum sample did not detect any specific antibodies against Echinococcus spp. ( Table 2 ), either with the routine ELISA Echinococcus IgG kit... or with the Echinococcus Western Blot IgG... The results confirmed the diagnosis of CE through the detection of E. granulosus s.s. identified as genotype G1"
+    },
+    {
+      "candidate": "Cystic Splenic Neoplasm (Lymphangioma / Hemangioma)",
+      "rule_out_reason": "Expansive cystic replacement of the splenic upper pole can represent rare benign or low-grade vascular neoplasms; however, absence of abnormal internal vascular flow, normal hematologic indices, and gross parasitological examination ruled out a neoplastic process.",
+      "quote": "All of the spleen had to be immediately removed given the characteristics of the cyst, i.e., very thin wall thickness and the significant size of the cystic formation filling more than two-thirds of the organ"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Seronegative Splenic Cystic Echinococcosis (Hydatid Cyst)",
+      "rule_out_reason": "Despite completely negative ELISA and Western blot serologies, total splenectomy demonstrated pathognomonic laminated cuticular layers and fluid containing rectangular cholesterol crystals, with PCR sequencing of mitochondrial cox1 and nad5 genes confirming Echinococcus granulosus sensu stricto genotype G1.",
+      "quote": "The echinococcal cyst was isolated from the splenic parenchyma to allow parasitological examination... The presence of germinal laminated layers and cystic fluid was observed. Moreover, the cystic fluid was characterized as dense and shiny, and its observation under a light microscope (Zeiss, Axioplan) at x400 magnification revealed the formation of rectangular crystals and aggregates attributable to cholesterol molecules... The results confirmed the diagnosis of CE through the detection of E. granulosus s.s. identified as genotype G1 ( Table 3 )."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized teaching case distilled following the Stanford MedCaseReasoning methodology. The presentation stops after initial abdominal ultrasound, preserving the clinical challenge of seronegative splenic hydatid disease."
+}

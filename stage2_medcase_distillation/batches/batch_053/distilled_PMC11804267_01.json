@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11804267_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 60-year-old female presents with subacute fever, dull left hypochondrial pain, and massive splenomegaly caused by a giant 14-cm multiloculated cystic splenic lesion, an extremely rare isolated visceral localization that mimics a splenic abscess, epidermoid cyst, or cystic neoplasm.\n2. Admission Breakpoint: The admission triage ends after recording the history of dog contact, physical examination, normal routine hematologic and biochemical laboratory studies, abdominal ultrasonography revealing an 18-cm spleen with internal microcysts, and abdominal CT demonstrating the partially calcified multiloculated cystic splenic mass. Serologic assays (immunoblot and indirect hemagglutination), albendazole therapy, and splenectomy occur post-breakpoint.\n3. Differential Distinctions: Splenic bacterial/fungal abscess is excluded by normal routine inflammatory markers, absence of acute septic symptoms, and characteristic multivesicular architecture; benign non-parasitic splenic cysts (epidermoid cyst, lymphangioma) are differentiated by partial wall calcification, internal daughter cysts, positive Echinococcus serology, and surgical histopathology.",
+  "case_prompt": "A 60-year-old female presented to the outpatient surgical department with a 1-month history of abdominal discomfort localized to the left hypochondrium. She described the discomfort as a persistent, dull, dragging sensation. She also reported intermittent low-grade feverishness over the preceding month. She kept a domestic pet dog at home. Medical and surgical histories were otherwise non-contributory.\n\nOn physical examination, vital signs were normal. Abdominal examination revealed palpable splenomegaly extending into the left upper quadrant, with dullness to percussion and mild tenderness on deep palpation without peritoneal irritation.\n\nRoutine hematologic and biochemical laboratory investigations were completely within normal limits. Transabdominal ultrasonography demonstrated an enlarged spleen measuring 18 cm containing a hypoechoic cystic mass with multiple internal tiny cysts. Contrast-enhanced abdominal CT confirmed marked splenomegaly with a giant, well-defined, multiloculated hypodense lesion measuring 14 × 7.7 × 13.2 cm featuring an internal solid component, multiple peripherally arranged internal cysts, and partial peripheral wall calcification.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Splenic abscess (Bacterial or Fungal)",
+      "rule_out_reason": "Subacute fever and left hypochondrial pain in an elderly patient raise suspicion of an infectious abscess, but routine inflammatory and hematologic markers were normal and imaging demonstrated a well-encapsulated, calcified multicystic structure rather than a liquified phlegmon.",
+      "quote": "The patient also complained of feeling feverish for one month. Routine laboratory studies were normal."
+    },
+    {
+      "candidate": "Benign non-parasitic splenic cyst (Epidermoid cyst or Cystic lymphangioma)",
+      "rule_out_reason": "Non-parasitic congenital or vascular cysts can cause chronic left upper quadrant fullness and massive splenomegaly, but typically lack complex internal daughter cysts, partial wall calcification, and zoonotic canine exposure.",
+      "quote": "An abdominal ultrasound revealed enlarged spleen measuring 18cm and a hypoechoic cystic lesion with internal tiny cysts within. Hydatid disease was first differential diagnosis, correlating with the history of pet dog at home."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CT demonstration of a giant partially calcified multicystic splenic lesion with daughter cysts, corroborated by positive Echinococcus granulosus immunoblot and indirect hemagglutination serologies, followed by confirmation on post-splenectomy histopathology.",
+      "quote": "Serologic tests for E. granulosus by immunoblot assay were positive."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation strictly adheres to admission breakpoint. Specific WHO CE classification, serologic antibody testing, and operative details are withheld from the case prompt. Exact quotes support candidates and pivot."
+}

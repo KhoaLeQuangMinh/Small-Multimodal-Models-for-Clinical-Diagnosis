@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2925211_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: Distinguishing opportunistic viral, fungal, or pyogenic meningoencephalitis and intracranial hemorrhage from disseminated nematode hyperinfection in a severely immunocompromised patient with leukemia receiving alemtuzumab, where peripheral eosinophilia was entirely absent and parasitic serologies were falsely negative due to profound T-cell depletion.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the primary hospital admission workup, including baseline hematology (CBC without eosinophilia, albumin), chest radiograph demonstrating the right upper lobe infiltrate, head CT, and initial lumbar puncture revealing bloody pleocytosis with elevated protein, prior to tertiary hospital transfer, sputum Gram stain analysis, and stool examinations.\n3. Differential Distinctions: Herpes simplex encephalitis or cryptococcal meningitis was considered given subacute encephalopathy, bloody pleocytosis, and high CSF protein in an immunosuppressed host, but excluded by negative CSF HSV PCR and cryptococcal antigen; Intracranial vascular hemorrhage was suspected due to hemorrhagic CSF, but ruled out by non-contrast head CT and normal cerebral angiography; Bacterial pneumonia and sepsis was suspected, but broad-spectrum antibiotics failed to improve either mental status or pulmonary infiltrates.",
+  "case_prompt": "A 59-year-old woman receiving alemtuzumab for chronic lymphocytic leukemia presents with progressive altered mental status of two weeks' duration. She resides in eastern Kentucky.\n\nOn physical examination, she is encephalopathic and obtunded. Vital signs are documented. Neurologic examination reveals profound cognitive impairment and altered sensorium. Examination of the chest reveals abnormal breath sounds over the right upper lung field. The abdomen is soft without focal tenderness or organomegaly.\n\nInitial laboratory evaluation reveals a white blood cell count of 5,900/mm³ with an absence of peripheral eosinophilia, a hemoglobin level of 10.4 g/dL, and a platelet count of 120,000/mm³. Serum albumin is decreased at 2.4 g/dL.\n\nA chest roentgenogram reveals a consolidation infiltrate involving the right upper lobe. Non-contrast computed tomography (CT) of the head demonstrates mucosal thickening consistent with maxillary and ethmoid sinusitis, without intracranial mass effect, acute infarction, or hemorrhage.\n\nA diagnostic, non-traumatic lumbar puncture yields grossly bloody cerebrospinal fluid (CSF) with 200,000 red blood cells/mm³, 172 white blood cells/mm³, and a markedly elevated protein concentration of 750 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Herpes Simplex Encephalitis / Cryptococcal Meningoencephalitis",
+      "rule_out_reason": "Subacute cognitive decline, CSF pleocytosis, high CSF protein, and severe immunosuppression strongly raised suspicion for opportunistic fungal or viral central nervous system infection, but CSF studies were negative for HSV and cryptococcal neoformans antigen.",
+      "quote": "CSF studies including Herpes simplex virus (HSV) polymerase chain reaction (PCR), cryptococcal neoformans antigen, and bacterial culture were negative."
+    },
+    {
+      "candidate": "Aneurysmal Subarachnoid Hemorrhage / Intracranial Vascular Catastrophe",
+      "rule_out_reason": "The presence of 200,000 red blood cells/mm³ on a non-traumatic lumbar puncture raised concern for an acute intracranial aneurysm rupture or subarachnoid hemorrhage, but cranial CT showed only sinus mucosal disease and cerebral angiography showed no evidence of aneurysm or vasospasm.",
+      "quote": "computerized tomography of the head showed only maxillary and ethmoid sinusitis... Cerebral angiography did not demonstrate aneurysm or vasospasm."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Pneumonia with Sepsis",
+      "rule_out_reason": "Right upper lobe pulmonary infiltrate and encephalopathy suggested severe community-acquired or nosocomial bacterial pneumonia with septic encephalopathy, but the patient failed to respond clinically to empiric broad-spectrum antibiotic therapy.",
+      "quote": "Despite broad-spectrum antibiotics, the patient encephalopathy and pulmonary infiltrates did not improve"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Soil-Transmitted Helminth Dissemination (Disseminated Strongyloidiasis)",
+      "rule_out_reason": "The diagnostic turning point occurred following transfer when sputum microscopic examination directly identified filariform larvae of Strongyloides stercoralis, with subsequent stool analysis demonstrating abundant rhabditiform larvae, eggs, and adult nematodes.",
+      "quote": "Sputum analysis on admission revealed 1  + white blood cells, gram-positive cocci, budding yeast ,and Strongyloides stercoralis was identified in the filariform stage by Gram's stain."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strongyloides stercoralis is an endemic soil-transmitted nematode in parts of the southeastern United States (e.g., eastern Kentucky/Appalachia). In hosts undergoing profound T-cell immunosuppression (such as anti-CD52 therapy with alemtuzumab or corticosteroids), accelerated autoinfection leads to hyperinfection syndrome and dissemination to pulmonary and central nervous system parenchyma. Crucially, eosinophilia is frequently absent in disseminated disease, and antibody tests can be falsely negative due to impaired humoral immunity. Larvae carry enteric bacteria across mucosal barriers, causing secondary polymicrobial sepsis and meningitis."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10911422_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 28-year-old individual in an endemic Brazilian region presents with unilateral lower extremity edema, asymmetric sensorimotor loss, and palpable peripheral nerve enlargement without any hypoesthetic skin patches, hypopigmented macules, or cutaneous plaques. The complete absence of dermatological findings creates a diagnostic dilemma, masking neural Hansen's disease as an idiopathic compressive or autoimmune mononeuropathy multiplex.\n2. Admission Breakpoint: The breakpoint is set after physical examination including peripheral nerve palpation and formal esthesiometer sensory mapping, before slit-skin smear bacilloscopy, rapid serological assays (ML Flow), and electroneuromyography.\n3. Differential Distinctions: Common peroneal nerve entrapment or tarsal tunnel syndrome cannot account for simultaneous enlargement and tenderness of both the common fibular and posterior tibial nerve trunks with multiple mononeuropathy. Classic tuberculoid or lepromatous leprosy features conspicuous cutaneous plaques or macules with positive slit smears. Pure neural leprosy presents with isolated peripheral nerve trunk enlargement, mononeuropathy multiplex on electroneuromyography, and serological positivity on the ML Flow test in the absence of skin lesions.",
+  "case_prompt": "A 28-year-old individual residing in Nova Mutum, Mato Grosso, Brazil, presents with progressive swelling, pain, paresthesias, and diminished thermal and tactile sensation in the right lower extremity. Epidemiological history is notable for prolonged household cohabitation with a sibling who completed a multidrug treatment regimen for a chronic mycobacterial infection ten years ago.\n\nOn physical examination, the skin of the entire body is thoroughly examined and is completely free of hypopigmented macules, erythematous infiltrative plaques, nodules, or cutaneous lesions. Examination of the right lower extremity reveals soft-tissue edema of the right foot. Palpation of peripheral nerve trunks reveals marked thickening and exquisite tenderness along the right common fibular nerve and the right posterior tibial nerve. Quantitative sensory testing using an orange Semmes-Weinstein esthesiometer demonstrates complete absence of tactile sensation along the lateral aspect of the right leg as well as the dorsal and plantar aspects of the right foot in the territorial distributions of the fibular and posterior tibial nerves. Motor testing demonstrates mild weakness and difficulty during resisted motor maneuvers of the right foot.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous / Borderline Leprosy with secondary neuritis",
+      "rule_out_reason": "Typical forms of Hansen's disease are characterized by hypopigmented or erythematous anesthetic skin macules and plaques, but this patient had completely normal skin and negative slit-skin smear bacilloscopy from both auricular lobes and elbows.",
+      "quote": "Bacilloscopy slit-skin smear microscopy was conducted on both auricular lobes and elbows, yielding negative results."
+    },
+    {
+      "candidate": "Compressive mononeuropathy / Entrapment syndrome",
+      "rule_out_reason": "Isolated entrapment (e.g., fibular head compression or tarsal tunnel syndrome) cannot account for concurrent enlargement and tenderness of multiple non-contiguous nerve trunks with sensorimotor mononeuropathy multiplex in an endemic contact.",
+      "quote": "During physical examination, edema was observed in the right foot, along with thickening and tenderness upon palpation of the right common fibular and posterior tibial nerves."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Concurrence of thickened, tender nerve trunks without cutaneous lesions, motor and sensory mononeuropathy multiplex confirmed on electroneuromyography, and a positive Bioclin fast ML Flow rapid test confirmed pure neural leprosy.",
+      "quote": "However, a rapid leprosy test (Bioclin fast ML flow leprosy, Brazil) was performed, which provided a positive result (Figure 1), further supporting the suspected diagnosis... Electroneuromyography was performed to further evaluate the nerves, revealing a pattern consistent with multiple motor and sensory mononeuropathy... Based on the clinical presentation, sensitivity tests, electroneuromyography results, and positive rapid leprosy test outcomes, the patient was diagnosed with pure neural leprosy."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set after sensory examination. Verbatim quotes verified."
+}

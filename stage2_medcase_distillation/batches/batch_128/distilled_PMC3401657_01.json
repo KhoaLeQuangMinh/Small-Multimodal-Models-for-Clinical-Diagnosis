@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3401657_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 3-year-old child in northern India presents in severe septic shock and deep coma (GCS 4) with prolonged high-grade fever, seizures, hepatosplenomegaly, and CSF lymphocytic pleocytosis. The clinical challenge is untangling whether the acute encephalitis syndrome is caused by cerebral malaria, viral encephalitis endemic to the area, pyogenic meningitis, or a severe co-infection.\n2. Admission Breakpoint: The admission breakpoint is placed after emergency resuscitation, physical exam, baseline labs (CBC, chemistries, chest radiography), and initial lumbar puncture showing lymphocytic pleocytosis, immediately before malarial rapid diagnostic testing, blood smears, and specific viral serologies/PCR return.\n3. Differential Distinctions: Acute pyogenic bacterial meningitis (characterized by neutrophilic pleocytosis, marked hypoglycorrhachia, and elevated protein, whereas CSF here had 72% lymphocytes, protein 68 mg%, normal glucose, and sterile cultures), enteric encephalopathy (excluded by negative Widal test and sterile blood cultures), and isolated viral encephalitis (which would not explain high malarial parasitemia of 6%). Demonstration of both P. vivax and P. falciparum on blood smear together with positive CSF Japanese encephalitis IgM confirms mixed malaria with concurrent Japanese encephalitis.",
+  "case_prompt": "A 3-year-old male child residing in Gorakhpur, India, is admitted with high-grade fever for 12 days, generalized tonic-clonic convulsions for 6 days, and altered sensorium for 1 day. On examination, the child is febrile with temperature of 103 \u00b0F, pulse 158/min (feeble), respiratory rate 54/min, blood pressure 56/32 mm Hg, and a Glasgow coma score of 4. Systemic examination reveals tachypnea, tachycardia, bilateral chest rhonchi, hepatosplenomegaly, extensor plantars, and diminished deep tendon reflexes. Initial investigations demonstrate hemoglobin 9.5 g/dL, normal total cell count, platelet count 180,000/mm\u00b3, ALT (SGPT) 109 U/L, blood urea 87 mg/dL, and blood glucose 50 mg/dL. Plain chest radiography reveals right-sided heterogeneous lung opacities. Lumbar puncture reveals cerebrospinal fluid with a total cell count of 68 cells/mm\u00b3 with 72% lymphocytes, protein 68 mg/dL, and normal glucose.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic bacterial meningitis",
+      "rule_out_reason": "Bacterial meningitis was suspected given septic shock and profound coma, but lumbar puncture showed only a mild lymphocytic pleocytosis (72% lymphocytes, 68 cells/mm3) with normal CSF sugar, and blood cultures were sterile.",
+      "quote": "The CSF study showed a total cell count of 68 cells/ mm3 with 72% lymphocytes and CSF protein of 68 mg% with normal sugar level."
+    },
+    {
+      "candidate": "Enteric fever with encephalopathy",
+      "rule_out_reason": "Typhoid encephalopathy was considered in the setting of prolonged remittent fever, hepatosplenomegaly, and altered sensorium, but serological and microbiological tests were negative.",
+      "quote": "The Widal test and viral markers for acute hepatitis were negative and blood cultures were sterile."
+    },
+    {
+      "candidate": "Isolated Japanese encephalitis virus infection",
+      "rule_out_reason": "While JEV is endemic in Gorakhpur and causes acute encephalitis syndrome with lymphocytic CSF pleocytosis, monoinfection did not account for the high level of hemoparasitemia that required prompt antimalarial therapy.",
+      "quote": "a rapid diagnostic test for malarial parasites was performed which was positive for both P.vivax and P.falciparum. Peripheral blood smear, both thick and thin film, was sent which showed the presence of both P.vivax and P.falciparum (parasitic count of 6%) [Figure 1]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid diagnostic test and peripheral blood thick and thin smears demonstrating dual Plasmodium vivax and Plasmodium falciparum parasitemia (6% parasitemia), together with positive CSF JE IgM antibodies confirming concurrent JEV encephalitis.",
+      "quote": "Peripheral blood smear, both thick and thin film, was sent which showed the presence of both P.vivax and P.falciparum (parasitic count of 6%) [Figure 1]."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint before blood film analysis and viral serologies. Zero leakage of Plasmodium, malaria, Japanese encephalitis, quinine, or primaquine in prompt. Target disease is Malaria."
+}

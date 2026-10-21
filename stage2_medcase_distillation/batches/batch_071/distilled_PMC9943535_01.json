@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9943535_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 27-year-old traveler returning from West Africa presents with high-grade fevers, rigors, bandemia, and obstipation with radiographic air-fluid levels reflecting paralytic ileus. The clinical challenge is navigating the differential between acute surgical bowel obstruction or occult bacterial sepsis with septic ileus versus systemic microvascular sequestration from falciparum malaria.\n2. Admission Breakpoint: The presentation ends after emergency department triage, baseline hematologic/metabolic labs, abdominal radiography, and abdominal CT imaging showing non-obstructive adynamic ileus, immediately prior to peripheral blood smear microscopy and send-out blood parasite identification.\n3. Differential Distinctions: Mechanical bowel obstruction was ruled out by CT scan demonstrating generalized non-obstructive bowel distension without a mechanical transition point. Bacterial sepsis was suspected and empirically treated with vancomycin and piperacillin-tazobactam, but the patient lacked an identifiable bacterial focus, while prominent thrombocytopenia, West African travel, and blood smear findings pinpointed protozoan infection.",
+  "case_prompt": "A 27-year-old male presents to the emergency department with a three-day history of high-grade fevers, shaking chills, generalized myalgias, and nausea with three episodes of non-bloody, non-bilious vomiting. He reports absolute constipation and absence of flatus since the onset of symptoms, accompanied by poor oral intake. Two weeks prior to symptom onset, he returned to the United States after spending one month in Guinea, West Africa, where he spent extensive time outdoors and recalled multiple mosquito bites. His past medical history includes recurrent childhood febrile tropical illnesses, with his last reported episode approximately 12 years prior. On arrival, vital signs show a temperature of 38.3\u00b0C (101.0\u00b0F), pulse rate of 122 beats/min, blood pressure of 102/65 mmHg, respiratory rate of 16 breaths/min, and oxygen saturation of 98% on ambient air. Physical examination of the abdomen is soft and non-tender without peritoneal signs. Initial laboratory studies demonstrate leukopenia (white blood cell count 3.97 x 10\u00b3/mcL) with a marked left shift (33% band forms, 9% lymphocytes), significant thrombocytopenia (platelet count 60 x 10\u00b3/mcL), mild transaminitis (AST 62 U/L, ALT 46 U/L, alkaline phosphatase 39 U/L, total bilirubin 1.40 mg/dL), procalcitonin 0.46 ng/mL, and venous lactate 1.9 mmol/L. Basic metabolic panel is normal. Multiplex respiratory viral testing is negative for SARS-CoV-2, influenza A/B, and RSV. Plain chest radiography and non-contrast head CT are normal. Plain abdominal radiography and CT of the abdomen and pelvis demonstrate multiple air-fluid levels throughout the small and large intestines consistent with adynamic ileus, without mechanical transition point or bowel obstruction. Right upper quadrant ultrasound demonstrates mild hepatomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Undifferentiated bacterial sepsis / Septic paralytic ileus",
+      "rule_out_reason": "Systemic inflammatory response criteria (fever, tachycardia, leukopenia with 33% bandemia, elevated lactate and procalcitonin) and adynamic ileus suggested bacterial sepsis, prompting broad-spectrum intravenous coverage; however, no focal bacterial infectious nidus was detected.",
+      "quote": "The patient was admitted to the hospital for systemic inflammatory response syndrome (fever, tachycardia, leucopenia) with bandemia and possible sepsis (no obvious source of infection)."
+    },
+    {
+      "candidate": "Mechanical small bowel obstruction",
+      "rule_out_reason": "Acute persistent vomiting, obstipation, and multiple intestinal air-fluid levels on radiography raised concern for acute mechanical bowel obstruction; however, cross-sectional abdominal CT demonstrated non-obstructive adynamic ileus without a transition point.",
+      "quote": "X-ray abdomen and CT abdomen/pelvis revealed air-fluid levels within the large and small intestines suggestive of ileus (Figures 1-2). There was no evidence of bowel obstruction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Examination of the peripheral blood smear revealed characteristic intraerythrocytic ring forms, and confirmatory parasite testing identified Plasmodium falciparum infection, establishing falciparum malaria presenting with microvascular sequestration and paralytic ileus.",
+      "quote": "Peripheral blood smear revealed evidence of malaria rings, and the blood parasites test confirmed Plasmodium falciparum infection."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to blood smear review and parasite identification. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

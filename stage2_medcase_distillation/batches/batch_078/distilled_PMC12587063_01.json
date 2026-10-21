@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12587063_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 19-year-old postpartum woman presents 22 days following an uncomplicated delivery with acute cardiopulmonary decompensation (hypoxia, hypotension, pleuritic chest pain) and a massive 22 cm pelvic mass mimicking puerperal sepsis with retained products of conception or uterine perforation. The critical diagnostic challenge is recognizing disseminated multiorgan parasitic hydatid disease causing acute uterine rupture and secondary pleural effusion in a pastoralist setting.\n2. Admission Breakpoint: The admission breakpoint occurs following obstetric emergency triage, vital sign stabilization, initial laboratory investigations (microcytic anemia, normal septic markers), sputum GeneXpert/COVID PCR, admission chest radiograph showing right pleural effusion, and pelvic ultrasound showing intrauterine cystic/solid lesions, prior to surgical uterine evacuation, emergency laparotomy, and histopathological tissue analysis.\n3. Differential Distinctions: Retained products of conception (RPOC) or postpartum endometritis typically cause foul lochia, uterine tenderness, elevated septic markers, and fever; gestational trophoblastic disease (choriocarcinoma/invasive mole) causes elevated beta-hCG and aggressive hypervascular myometrial invasion; pulmonary tuberculosis presents with systemic B-symptoms and positive sputum mycobacterial testing; whereas pelvic echinococcosis features multilocular daughter cysts with characteristic acellular laminated membranes.",
+  "case_prompt": "A 19-year-old woman presented to the obstetric unit 22 days after delivering her first child via spontaneous vaginal delivery at 36 weeks of gestation. Her antenatal care had been booked at 20 weeks of gestation; she had never received a growth ultrasound during her pregnancy. Routine antenatal serology had revealed HIV-negative, rhesus-positive, and syphilis-negative results. Five months prior to delivery, she had relocated from her hometown of Mthatha in the Eastern Cape to Johannesburg; her family resided in a traditional rondavel and were involved in livestock farming, particularly cattle husbandry.\n\nShe presented with a 5-day history of shortness of breath, dry cough, pleuritic chest pain, and night sweats. On clinical assessment, she was hypotensive, tachycardic, tachypnoeic, and hypoxic (blood pressure 100/68 mmHg, pulse 113 beats per minute, respiratory rate 25 breaths per min, oxygen saturation 82%, temperature 36.2 C). Cardiovascular examination was normal; respiratory examination showed decreased air entry in the right middle and lower lung zones. Abdominal palpation revealed a firm, tender pelvic mass measuring 22 cm above the pelvic brim.\n\nThe full blood count showed a microcytic, hypochromic anaemia with Hb 9.6 g/dL and mean corpuscular volume (MCV) of 94.4 fL. Septic markers were not elevated. Serum urea and electrolytes were obtained. Sputum rapid molecular assays and severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) testing were negative. Blood cultures were obtained. A chest X-ray showed a large right-sided pleural opacity, consistent with a simple effusion involving the lower and middle lobes. Pelvic ultrasound revealed multiple intrauterine cystic lesions and solid areas, suggestive of retained products of conception.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Retained Products of Conception (RPOC) / Puerperal Sepsis",
+      "rule_out_reason": "Considered as the leading diagnosis 3 weeks postpartum in a patient with a firm, tender 22 cm pelvic mass and ultrasound showing multiple intrauterine cystic lesions and solid areas. Ruled out by normal septic markers, sterile blood cultures, and intraoperative evacuation of purulent fluid with cystic membranes and daughter cysts rather than retained placental tissue.",
+      "quote": "Pelvic ultrasound revealed multiple intrauterine cystic lesions and solid areas, suggestive of retained products of conception (Figure 1)."
+    },
+    {
+      "candidate": "Pulmonary Tuberculosis / Bacterial Pneumonia / COVID-19",
+      "rule_out_reason": "Considered given the acute respiratory presentation with pleuritic chest pain, cough, night sweats, hypoxia, and a large pleural effusion. Ruled out by negative sputum GeneXpert testing, negative SARS-CoV-2 PCR, normal septic markers, and postoperative imaging demonstrating a characteristic cystic pulmonary lesion rather than parenchymal consolidation.",
+      "quote": "Gene Xpert and severe acute respiratory syndrome coronavirus 2 (SARS- CoV-2) tests were negative (Table 1)."
+    },
+    {
+      "candidate": "Gestational Trophoblastic Disease / Uterine Malignancy",
+      "rule_out_reason": "Considered due to the rapidly enlarging postpartum uterine mass with mixed cystic and solid components. Ruled out by histopathological examination demonstrating an acellular laminated cyst wall with no evidence of dysplasia or malignancy.",
+      "quote": "Histopathology showed a cyst wall composed of an acellular laminated membrane without dysplasia or malignancy. No granulomas were present."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred during exploratory laparotomy for suspected uterine rupture, revealing a distended ruptured uterus containing a large cystic mass with multiple daughter cysts, histopathologically confirmed as a hydatid cyst, with postoperative CT revealing pulmonary and hepatic hydatid disease.",
+      "quote": "Surgical findings included a pale, non-blanching, thin-walled uterus distended to 22 cm, with a posterior wall rupture. The uterine cavity contained a large ruptured cystic mass with multiple daughter cysts."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complete Stanford MedCaseReasoning distillation. Admission prompt terminates prior to surgical evacuation and laparotomy. Zero pathogen spoilers in prompt. Exact verbatim quotes validated."
+}

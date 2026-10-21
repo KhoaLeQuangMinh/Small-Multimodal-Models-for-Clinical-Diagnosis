@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5292196_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 75-year-old farmer from central Iran presents with 25 widespread nodular, ulcerative, and crusted lesions on his face, trunk, and extremities, notably including an ulcerative lesion on the upper eyelid of the right eye. The chronic multi-lesional distribution and unusual ocular involvement can mimic bacterial ecthyma, fungal sporotrichosis, or cutaneous neoplasia.\n2. Admission Breakpoint: The admission narrative stops after outpatient clinical presentation, history of nocturnal vector bites during irrigation, and physical examination of the dermatologic lesions, prior to obtaining skin scraping smears, Giemsa staining, culture on RPMI medium, and species-specific PCR testing.\n3. Differential Distinctions: Cutaneous anthrax or bacterial ecthyma presents with ulceration and necrotic crusting, but typically causes acute localized pain, edema, and systemic toxicity. Cutaneous leishmaniasis is characteristically painless, indolent, afebrile, and occurs following nocturnal phlebotomine sandfly bites; direct Giemsa-stained smear reveals characteristic intracellular amastigotes within histiocytes.",
+  "case_prompt": "A 75-year-old male farmer from Aran va Bidgol in Isfahan province, central Iran, presented to a regional health center with multiple widespread, progressive skin lesions on his face, hands, legs, and right upper eyelid. He recalled sustaining repeated insect bites while conducting night-time irrigation work on his agricultural fields during the active nocturnal vector season.\n\nOn physical examination, the patient was afebrile and in good general condition, with no systemic symptoms. Dermatologic examination revealed 25 separate nodular, ulcerative, and crusted skin lesions distributed across exposed surfaces of the body. Individual lesions ranged in size from several millimeters to several centimeters in diameter. The lesions were completely painless and non-tender, without surrounding purulent drainage or acute erythema. Eight distinct lesions were located on the face, including an ulcerative nodular plaque situated directly on the upper eyelid of the right eye. General physical examination was otherwise normal, with no palpable lymphadenopathy or hepatosplenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Anthrax / Bacterial Ecthyma",
+      "rule_out_reason": "Considered because of ulcerative and crusted lesions in an agricultural worker with animal and soil exposure, but excluded by the indolent chronic course, absence of pain, complete lack of fever or systemic signs, and absence of bacterial pathogens.",
+      "quote": "He had no particular medical history and systemic symptoms."
+    },
+    {
+      "candidate": "Deep Fungal Granuloma / Sporotrichosis",
+      "rule_out_reason": "Considered because of multiple nodular and crusted lesions on exposed extremities following farm work, but direct smears stained with Giemsa demonstrated protozoan amastigotes rather than fungal yeasts or hyphae.",
+      "quote": "Based on questioning, the patient described the appearance of 25 multiple nodular, ulcerative, and crusted lesions on his body."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic examination of vaccinostyle smears prepared from the active borders of the skin lesions and stained with Giemsa revealed characteristic intracellular amastigote forms, and molecular PCR testing confirmed Leishmania major.",
+      "quote": "Samples were stained by Giemsa 10% and examined under a light microscope and amastigote forms of Leishmania species were observed and CL was confirmed (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt adheres strictly to admission breakpoint before direct smears or PCR. Zero spoilers or pathogen names. Exact quotes verified against source text."
+}

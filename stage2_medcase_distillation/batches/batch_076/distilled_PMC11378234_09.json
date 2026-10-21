@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_09",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 4-year-old boy undergoing a second stem cell transplant for beta-thalassemia major who develops fever during the pre-engraftment neutropenic phase. The clinical diagnostic tension stems from initial negative infectious evaluations and negative viral antigen tests, followed by an afebrile interval and subsequent new fever spike revealing arboviral antigen and diffuse capillary leakage with co-incident parasite infection.\n2. Admission Breakpoint: The presentation ends at day +1 post-transplant upon the onset of fever and initiation of febrile neutropenia protocol, prior to send-out cultures, viral antigen assays, ultrasound imaging, and peripheral blood smears.\n3. Differential Distinctions: Distinguishing severe arboviral infection from neutropenic bacterial sepsis / typhlitis (ruled out by sterile cultures), isolated severe malaria (present as co-infection, but plasma leak syndrome indicated viral etiology), and engraftment syndrome.",
+  "case_prompt": "A 4-year-old boy with transfusion-dependent beta-thalassemia major admitted for a second hematopoietic stem cell transplant developed an acute fever spike on day +1 post-transplantation, prompting initiation of the institutional febrile neutropenia protocol.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Sepsis / Neutropenic Enterocolitis",
+      "rule_out_reason": "Considered immediately given early post-transplant neutropenia, but exhaustive microbiological cultures across multiple sets were consistently sterile.",
+      "quote": "All of his infective workup turned out to be negative. Multiple sets of cultures were also negative along with dengue NS1 antigen."
+    },
+    {
+      "candidate": "Isolated Plasmodium falciparum Malaria",
+      "rule_out_reason": "Although ring forms were identified on peripheral smear, the biphasic fever pattern and prominent plasma leakage were characteristic of arboviral co-infection.",
+      "quote": "His peripheral film showed rings of plasmodium falciparum, for which antimalarial therapy was immediately started"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Appearance of a new fever spike after a 72-hour afebrile window with positive viral antigen detection and multiorgan third-spacing (ascites, pleural effusion, gallbladder edema) confirmed dengue.",
+      "quote": "after a fever-free interval of 72 h, he developed a new fever spike and dengue NS1 antigen was detected at that time."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for Dengue virus infection post-HSCT. Breakpoint strictly excludes subsequent blood smears, ultrasound findings, and antigen positivity. Direct quotes verified."
+}

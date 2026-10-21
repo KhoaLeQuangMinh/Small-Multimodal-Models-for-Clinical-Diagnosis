@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9485662_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient on prolonged high-dose corticosteroid immunosuppression for membranous nephropathy presents with acute-on-chronic systemic symptoms, high fever, abdominal distension, and bilateral nodular/cavitary pulmonary lesions. The clinical challenge is untangling a severe opportunistic polymicrobial respiratory syndrome in which mycobacterial infection is masked by high fungal biomarkers (elevated beta-D-glucan) and initially mistaken for autoimmune vasculitis or invasive mold.\n2. Admission Breakpoint: The admission breakpoint occurs following admission evaluation, baseline physical exam, initial lab tests (inflammatory markers, immune subsets, beta-D-glucan, urine analysis), and plain radiographs/outside CT, before the invasive bronchoscopy, bronchoalveolar lavage molecular probes, and lung biopsy mNGS testing are conducted.\n3. Differential Distinctions: Granulomatosis with polyangiitis (Wegener's) was initially suggested by cavitary pulmonary nodules and nephropathy, but systemic signs represented opportunistic infection in an immunosuppressed host. Invasive pulmonary aspergillosis was strongly suspected due to elevated beta-D-glucan and positive fungal culture, but represented only one component of a mixed infection including mycobacteria.",
+  "case_prompt": "A 57-year-old male furniture manufacturing worker is admitted with a 5-week history of abdominal distension, anorexia, and constipation, 1 week of left-sided chest pain following a workplace contusion from a wrench, and 1 day of high fever with chills. His medical history includes chronic hepatitis B on entecavir, type 2 diabetes mellitus, and hepatitis B virus-associated membranous nephropathy treated with high-dose methylprednisolone (48 mg daily for 2 months, tapered to 44 mg daily 2 days prior to admission). He works in a dusty woodworking environment.\n\nOn physical examination, his body temperature is 39.5°C and respiratory rate is 22 breaths per minute. He is fully conscious. Palmar erythema is present without spider angiomata. Oral examination reveals curd-like white plaques on the tongue and pharyngeal mucosa. Breath sounds are decreased bilaterally, more markedly over the left lung base. Abdominal examination reveals mild periumbilical tenderness and abdominal distension. The cardiovascular, neurological, and musculoskeletal examinations are unremarkable.\n\nLaboratory tests reveal a white blood cell count of 7.33 × 10⁹/L with 87.1% neutrophils, hemoglobin of 98 g/L, C-reactive protein of 119.72 mg/L, erythrocyte sedimentation rate of 83 mm/h, serum ferritin of 1,642.3 ng/mL, and interleukin-6 of 137.2 pg/mL. Flow cytometry demonstrates T-cell lymphopenia with total T cells of 427 cells/μL (helper T cells 210 cells/μL, suppressor T cells 209 cells/μL). Albumin is 24.6 g/L, globulin is 19.3 g/L, total complement hemolytic activity is 68 IU/L, IgG is 6.29 g/L, and hemoglobin A1c is 10.7%. Serum (1,3)-beta-D-glucan is elevated at 745 ng/L. Throat swab fungal culture identifies fungal yeast colonies. Urinalysis is positive for protein and glucose. Plain chest and abdominal radiographs demonstrate enterostasis and multiple bilateral pulmonary lesions of undetermined nature. A chest CT performed at a local hospital shortly prior to admission had raised suspicion for granulomatosis with polyangiitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Granulomatosis with Polyangiitis (Wegener's Granulomatosis)",
+      "rule_out_reason": "Bilateral cavitary/nodular lung lesions in the setting of proteinuria and renal pathology prompted an initial outside diagnosis of autoimmune vasculitis; however, worsening during high-dose steroid therapy and subsequent microbial identification proved opportunistic infection rather than primary autoimmunity.",
+      "quote": "The chest CT at the local hospital revealed Wegener's granulomatosis, which did not exclude the possibility of tuberculosis, and no further diagnosis or treatment were performed."
+    },
+    {
+      "candidate": "Isolated Invasive Pulmonary Aspergillosis",
+      "rule_out_reason": "Profound immunosuppression, oral candidiasis, cavitary pulmonary lesions, and significantly elevated (1,3)-beta-D-glucan (745 ng/L) strongly suggested invasive mold infection, with Aspergillus fumigatus cultured from lavage; however, antifungal therapy failed to control disease progression due to unrecognized concurrent mycobacterial and bacterial co-infection.",
+      "quote": "A. fumigatus was cultured from the bronchoalveolar lavage fluid, and the preliminary diagnosis was pulmonary tuberculosis and pulmonary Aspergillus infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoalveolar lavage fluid testing yielded positive results for M. tuberculosis gene probes (A, B, C, and E), and subsequent metagenomic next-generation sequencing confirmed a complex polymicrobial opportunistic infection consisting of Mycobacterium tuberculosis, Nocardia nova, Aspergillus fumigatus, and cytomegalovirus.",
+      "quote": "However, the BALF specimens were positive for M. tuberculosis gene probes A, B, C, and E and negative for rifampicin resistance mutation... BALF samples were submitted for PACEseq metagenomic next-generation sequencing (mNGS)... and A. fumigatus (227 reads), N. nova (148 reads), M. tuberculosis (1 read)... were detected"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC9485662_01. BALF molecular probes, mNGS, and pathogen identifications withheld from case_prompt. Direct quotes match article text."
+}

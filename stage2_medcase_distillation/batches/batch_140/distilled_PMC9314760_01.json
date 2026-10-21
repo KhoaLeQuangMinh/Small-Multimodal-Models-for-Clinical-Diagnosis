@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9314760_01",
+  "disease": "Schistosomiasis",
+  "think": "<think>\n1. Core Clinical Tension: A 10-year-old boy presents with a 10-month history of colicky postprandial abdominal pain, vomiting, chronic constipation, weight loss, and a palpable right iliac fossa mass accompanied by extensive mesenteric, parahepatic, and pulmonary lymphadenopathy. The clinical tension centers on differentiating an obstructing pediatric bowel malignancy or lymphoma (supported by family history of lymphoma) from an exuberant parasitic granuloma secondary to waterborne helminthic infection.\n2. Admission Breakpoint: The breakpoint occurs in the surgical clinic and admission workup following completion of baseline physical examination, triage blood/stool tests, abdominal ultrasonography, and chest/abdominal CT scanning (demonstrating a 10 x 3 cm colonic mass, bowel wall thickening, and diffuse lymphadenopathy), immediately prior to exploratory laparotomy and histopathologic assessment.\n3. Differential Distinctions: Colonic adenocarcinoma presents with an obstructing intraluminal bowel mass, bowel wall thickening, and regional lymphadenopathy, but is exceptionally uncommon in a 10-year-old child; histopathology demonstrates granulomatous inflammation with parasite ova rather than malignant epithelial cells. Gastrointestinal lymphoma is strongly suspected given generalized adenopathy and positive family history in a sibling, but biopsy shows non-caseating granulomas with multinucleated giant cells surrounding trematode eggs.\n</think>",
+  "case_prompt": "<case_prompt>\nA 10-year-old male child presents to the surgical clinic with a 10-month history of frequent, colicky, postprandial abdominal pain and vomiting. The pain is generalized, aggravated by food intake, and accompanied by anorexia, chronic constipation, and significant weight loss. There is no history of hematuria, hematochezia, or diarrhea. Epidemiologic history is notable for environmental exposure to unclean freshwater in his rural village, where he resides with household dogs and sheep. His family history is significant for lymphoma in his brother.\n\nOn physical examination, the child appears ill without pallor or jaundice. Abdominal examination reveals a non-mobile, non-tender, palpable mass in the right iliac fossa. Baseline laboratory testing demonstrates: total white blood cell count 12 x 10^3/microL, hemoglobin 14.4 g/dL, blood urea nitrogen 35 mg/dL, serum creatinine 0.9 mg/dL, serum albumin 4.2 g/dL, total bilirubin 1.0 mg/dL, and negative viral hepatitis serologies. Urinalysis and stool microscopic examination are normal.\n\nAbdominal ultrasonography demonstrates segmental wall thickening of the ascending colon and a 10 x 3 cm intraluminal mass. Contrast CT scan of the chest and abdomen confirms a redundant sigmoid colon located in the right lower quadrant with diffuse circumferential wall thickening, a 10 x 3 cm intraluminal mass causing luminal narrowing, regional lymphadenopathy (largest node 1.4 x 1.0 cm), heterogenous hepatomegaly, and multiple parahepatic and pulmonary lymph node enlargements.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colonic Adenocarcinoma / Intestinal Tumor",
+      "rule_out_reason": "Considered because of the large 10 x 3 cm obstructing intraluminal mass, circumferential colonic thickening, weight loss, and regional lymphadenopathy; ruled out following surgical resection, which demonstrated granulomatous parasitic inflammation rather than malignant neoplasia.",
+      "quote": "Ultrasonography (US) of the abdomen showed a segmental wall thickening of the ascending colon and 10x3 cm intraluminal sigmoid mass suggestive of an intestinal tumor or lymphoma."
+    },
+    {
+      "candidate": "Gastrointestinal Lymphoma",
+      "rule_out_reason": "Strongly suspected given the patient's family history of lymphoma in his brother, combined with extensive abdominal, parahepatic, and pulmonary lymphadenopathy; excluded by histopathology revealing non-caseating granulomas formed around trematode ova rather than clonal lymphoid proliferation.",
+      "quote": "Based on the CT findings (extranodal lymph nodes enlargements and multiple general lymphadenopathies) and the family history of malignancy, the possibility of malignancy could not be excluded."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was surgical sigmoidectomy with histopathologic evaluation of the resected specimen demonstrating numerous non-caseating granulomas containing Schistosoma mansoni ova and multinucleated giant cells.",
+      "quote": "The histopathology reported that numerous non-caseating granulomas formed of bilharzial ova (Schistosoma mansoni) and multinucleated giant cells (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Clean prompt without pathogen names. Verbatim quotes from source text."
+}

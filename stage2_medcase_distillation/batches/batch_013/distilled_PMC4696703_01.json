@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4696703_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: An afebrile presentation on day 7 of illness with gastrointestinal symptoms, headache, and myalgias in West Africa strongly suggests uncomplicated malaria, typhoid fever, or viral gastroenteritis, masking both an acute viral hemorrhagic fever and its rare, life-threatening post-clearance sanctuary site neuroinvasion.\n2. Admission Breakpoint: The breakpoint occurs on day 7/8 of illness following initial triage evaluation and empirical supportive stabilization, immediately prior to send-out peripheral blood reverse transcription PCR testing.\n3. Differential Distinctions: Uncomplicated malaria presents with acute fever and flu-like symptoms but demonstrates blood smear or rapid diagnostic test parasitemia and resolves promptly with artemisinin therapy. Acute bacterial enteritis typically features inflammatory diarrhea responsive to antibiotics. Bacterial or fungal meningoencephalitis presents with primary pyogenic meningism rather than secondary neuroinvasion after systemic viral clearance.",
+  "case_prompt": "A 30-year-old woman presented to an acute clinical reception unit in Freetown, Sierra Leone, on day 7 of an acute illness. She reported no known exposure to ill contacts. Her symptoms had begun with fever, nausea, vomiting, watery diarrhea, headache, and severe diffuse muscle and joint pain. On physical examination, she was afebrile, visibly weak, but still ambulatory. In accordance with local triage syndromic protocols, she was started on oral rehydration therapy alongside empirical antiparasitic, antibacterial, and antiemetic medications while awaiting laboratory investigations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe or complicated malaria",
+      "rule_out_reason": "Considered the primary endemic diagnosis for acute fever, gastrointestinal symptoms, and severe myalgias; empirical artesunate was administered, but symptoms progressed independently of antimalarial therapy until viral etiology was identified.",
+      "quote": "According to local protocol, she was given oral antimalarial, antimicrobial, and antiemetic drugs and oral rehydration therapy. On day 8 of illness, after testing EBOV PCR-positive (cycle threshold [Ct] value of 23.5), she was given intravenous ceftriaxone (2 g) for 7 days, artesunate (180 mg) for 3 days..."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial sepsis or gastroenteritis",
+      "rule_out_reason": "Considered due to profuse diarrhea, vomiting, and profound weakness; treated with intravenous broad-spectrum ceftriaxone, but the course was driven by filoviral infection rather than enteric bacterial pathogens.",
+      "quote": "...she was given intravenous ceftriaxone (2 g) for 7 days, artesunate (180 mg) for 3 days, and Ringer's lactate (4-6 L) with supplemental KCl for 5 days."
+    },
+    {
+      "candidate": "Bacterial or fungal meningitis / encephalopathy",
+      "rule_out_reason": "Considered when the patient subsequently deteriorated into coma (GCS 9/15) on day 20; empiric fluconazole was given, and while CSF multiplex testing flagged MRSA and Klebsiella, these were judged contaminants given inadequate treatment dosing, spontaneous recovery, and positive CSF filoviral PCR.",
+      "quote": "FilmArray (BioFire Diagnostics, Salt Lake City, UT, USA) testing showed methicillin-resistant Staphylococcus aureus and Klebsiella pneumoniae in CSF and mixed pathogens in urine... Given inadequate antimicrobial drug doses for meningitis and clinical improvement, we believe methicillin-resistant S. aureus and K. pneumoniae were CSF sample contaminants."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Initial blood PCR on day 8 confirmed acute Ebola virus disease (Ct 23.5); following peripheral viral clearance, lumbar puncture performed during delayed neurological relapse demonstrated high opening pressure and confirmed central nervous system viral persistence by positive CSF RT-PCR (Ct 37.6).",
+      "quote": "On day 8 of illness, after testing EBOV PCR-positive (cycle threshold [Ct] value of 23.5)... Lumbar puncture was performed; opening pressure (30 cm H2O) was elevated, and cerebrospinal fluid (CSF) was EBOV PCR-positive (Ct value 37.6), as determined by using the Public Health England in-house, optimized version of the Trombley assay..."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to day 8 blood PCR. Zero spoilers; subsequent encephalitic pivot and CSF findings detailed in diagnostic reasoning."
+}

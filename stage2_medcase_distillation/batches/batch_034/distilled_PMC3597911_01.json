@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3597911_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 32-year-old woman presents with a 6-month history of dull right hypochondriac pain radiating to the epigastrium and associated with nausea, with right upper quadrant tenderness on exam. Routine laboratory tests and plain abdominal X-rays are normal, but abdominal ultrasound reveals a deformed gallbladder with localized wall thickening without gallstones. The principal clinical tension is distinguishing this localized mural lesion from gallbladder neoplasm (carcinoma) or chronic acalculous cholecystitis. Furthermore, typical hepatic hydatid disease features were completely absent—the liver parenchyma was completely normal, and serum antiechinococcal antibodies were negative—rendering primary intraluminal hydatid disease of the gallbladder an extraordinarily rare diagnostic challenge.\n\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial triage examination, routine blood tests, plain abdominal radiography, and triage abdominal ultrasound showing gallbladder wall deformity without cholelithiasis, strictly prior to abdominal CT scan, abdominal MRI, antiechinococcal serology, laparotomy, and surgical histopathology.\n\n3. Differential Distinctions:\n- Gallbladder Neoplasm / Carcinoma: Suspected due to localized, non-lithiasic thickening of the gallbladder wall; ruled out by abdominal CT scan demonstrating inflammatory mural thickening without suspicious infiltrative features, followed by MRI demonstration of internal cystic architecture.\n- Chronic Acalculous Cholecystitis / Adenomyomatosis: Suspected given chronic biliary symptoms and wall thickening without gallstones; ruled out when abdominal MRI demonstrated multiple daughter cysts within the gallbladder lumen and surgical histopathology confirmed hydatid cyst.\n- Secondary Biliary Echinococcosis from Hepatic Cyst Rupture: Standard presentation of biliary hydatid disease; ruled out because MRI, surgical exploration, and negative serology confirmed completely normal hepatic parenchyma with an isolated primary intraluminal cyst.",
+  "case_prompt": "A 32-year-old woman presents to the clinic with a 6-month history of constant, mild pain in the right hypochondrium radiating to the epigastrium, frequently accompanied by nausea. She has had no episodes of fever, chills, pruritus, or jaundice.\n\nOn physical examination, vital signs are normal. Abdominal examination demonstrates localized tenderness in the right upper quadrant without peritoneal signs or palpable masses. Routine hematological and biochemical laboratory tests are completely unremarkable. Plain abdominal radiography is normal. Transabdominal ultrasound reveals a deformed gallbladder with localized thickening of its wall, without evidence of cholelithiasis or acoustic shadowing.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gallbladder Neoplasm / Carcinoma",
+      "rule_out_reason": "Considered because localized gallbladder wall thickening in a deformed gallbladder without gallstones strongly raises suspicion for primary gallbladder carcinoma. Excluded by abdominal CT showing purely inflammatory wall thickening devoid of suspicious malignant lesions.",
+      "quote": "To eliminate gallbladder neoplasm; a CT abdominal scan was performed showing inflammatory gallbladder wall which is free of suspect lesions (Figure 2)."
+    },
+    {
+      "candidate": "Chronic Acalculous Cholecystitis",
+      "rule_out_reason": "Considered due to the chronic right upper quadrant pain and ultrasound findings of gallbladder wall thickening and deformity in the absence of gallstones. Excluded when MRI revealed multiple intraluminal daughter cysts and histopathology demonstrated a hydatid cyst.",
+      "quote": "The ultrasound examination showed that her gallbladder was deformed with a localised thickening of its wall (Figure 1). There was no image of gallstone."
+    },
+    {
+      "candidate": "Hepatic Hydatid Disease with Biliary Rupture",
+      "rule_out_reason": "Considered because hydatid disease of the hepatobiliary system predominantly originates within hepatic parenchyma. Excluded because MRI, laparotomy, and serology confirmed completely normal hepatic parenchyma with an isolated primary intraluminal gallbladder cyst.",
+      "quote": "while hepatic parenchyma proved absolutely normal (Figure 3-C) Antiechinococcal antibodies were not found in serum. The diagnosis of primary hydatid cyst of gallbladder was supported and surgery has been decided."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis of primary gallbladder echinococcosis was established by abdominal magnetic resonance imaging (MRI) revealing multiple characteristic daughter cysts within the gallbladder lumen, and confirmed by surgical pathology following intact cholecystectomy.",
+      "quote": "Against this diagnosis difficulty; it has been decided to practice a magnetic resonance abdominal imaging. This examination showed many daughter cysts in the lumen of the gallbladder (Figure 3-A, B); while hepatic parenchyma proved absolutely normal (Figure 3-C)"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt provides clinical and triage ultrasound findings without revealing CT, MRI, serology, or histopathology. Differentials and diagnostic pivot are anchored to verbatim quotes."
+}

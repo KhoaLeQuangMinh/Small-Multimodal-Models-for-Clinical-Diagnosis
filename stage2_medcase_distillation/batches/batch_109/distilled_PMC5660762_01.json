@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5660762_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A young traveler returning from Central America with an acute febrile prodrome rapidly deteriorating into fulminant hypoxemic ARDS requiring mechanical ventilation, occurring in the complete absence of jaundice, renal failure, or coagulopathy (classic Weil's syndrome triad), which obscures the diagnosis of pulmonary leptospirosis.\n2. Admission Breakpoint: The breakpoint is positioned at emergency admission and ICU transfer with severe ARDS on mechanical ventilation, arterial blood gas, and chest imaging, prior to bronchoscopy/BAL, sterile viral/bacterial culture results, and delayed targeted leptospiral serologies.\n3. Differential Distinctions: Influenza, typical/atypical bacterial pneumonia, and malaria/dengue were ruled out by negative blood/BAL cultures, repeat negative blood films, negative viral serology, and an absence of lobar consolidation, while positive IgM and microscopic agglutination testing confirmed Leptospira infection.",
+  "case_prompt": "A 25-year-old previously healthy male is brought to the emergency department with rapidly progressive tachypnea and dyspnea over the preceding 24 hours. His partner reports that he had been intermittently febrile for the past week, complaining of diffuse myalgias and headache. The patient takes no medications. The couple had just returned to Canada following a 2-week vacation in Costa Rica, where he began feeling ill one day prior to departure. Upon return, an outpatient clinician suspected influenza. His respiratory status deteriorated precipitously in the following days.\nOn arrival, vital signs: blood pressure 125/75 mmHg, heart rate 110 beats/min, respiratory rate 35 breaths/min, temperature 38.6°C, and oxygen saturation 82% on ambient air. Glasgow Coma Scale is 15/15. He is in severe respiratory distress with marked accessory muscle use. Supplemental oxygen via a nonrebreather mask (FiO2 1.0) fails to alleviate hypoxemia or work of breathing, prompting emergency endotracheal intubation and mechanical ventilation.\nEmergency arterial blood gas on FiO2 1.0 demonstrates a PaO2 of 65 mmHg (PaO2/FiO2 ratio 110, consistent with severe ARDS). Serum electrolytes, renal function tests, liver transaminases/bilirubin, and coagulation parameters are all normal. Portable chest radiograph demonstrates bilateral pulmonary opacities. Transthoracic echocardiogram demonstrates normal biventricular systolic function without valvular regurgitation or vegetations. Chest CT confirms diffuse bilateral pulmonary edema without focal lobar consolidation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe Influenza / Viral Pneumonitis",
+      "rule_out_reason": "An acute febrile illness with myalgia and headache in a returning traveler initially raised suspicion for influenza; however, progression to fulminant ARDS with negative viral panels and lack of improvement on supportive care prompted search for another etiology.",
+      "quote": "Immediately upon returning to Canada, the patient saw his primary care physician, who believed he had influenza."
+    },
+    {
+      "candidate": "Severe Community-Acquired Bacterial Pneumonia / Sepsis",
+      "rule_out_reason": "Severe pneumonia complicated by ARDS was suspected and treated with broad-spectrum antimicrobials, but blood, urine, and bronchoalveolar lavage cultures were sterile, and chest CT demonstrated diffuse edema rather than focal consolidation.",
+      "quote": "Initial blood, urine, and BAL cultures grew no pathogens."
+    },
+    {
+      "candidate": "Malaria / Dengue Fever",
+      "rule_out_reason": "Returning travel from Costa Rica with fever, headache, myalgia, and pulmonary infiltrates prompted evaluation for malaria and dengue, but multiple blood smears and serologies were completely negative.",
+      "quote": "Malaria thick and thin smears were performed several times and were negative. Dengue serology was also negative, as was human immunodeficiency virus (HIV) and hepatitis A, B, and C."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Re-evaluation of exposure history revealing freshwater swimming and ingestion in Costa Rica, prompt clinical recovery following penicillin therapy, and subsequent serological confirmation with positive Leptospira IgM and microscopic agglutination testing (MAT).",
+      "quote": "The clue was that, following further questioning, the patient's partner reported that she and the patient had spent several days swimming in freshwater, which they had also drunk."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly captures emergency admission presentation and initial ARDS stabilization, completely avoiding mention of Leptospira, delayed freshwater exposure history, and confirmatory serology."
+}

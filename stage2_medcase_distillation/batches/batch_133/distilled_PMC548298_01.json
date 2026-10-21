@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC548298_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old man with biopsy-proven polymyositis on long-term systemic immunosuppressive therapy (alternate-day corticosteroids and weekly methotrexate) presents with an isolated, indolent cutaneous cold abscess on his neck and regional cervical/axillary lymphadenopathy. The diagnostic tension lies in differentiating an atypical pyogenic bacterial infection, fungal abscess, drug-induced or malignant lymphoproliferative disorder from an extrapulmonary mycobacterial cold abscess/scrofuloderma in the absence of pulmonary findings or classical granuloma formation.\n2. Admission Breakpoint: The admission clinical presentation concludes with the identification of the solitary right cervical cold abscess and lymphadenopathy, negative HIV serology, negative routine sputum AFB smears, and a clear baseline chest radiograph, prior to needle aspiration of the abscess and axillary lymph node biopsy with specialized mycobacterial cultures and RFLP molecular analysis.\n3. Differential Distinctions: Common pyogenic bacteria (e.g., Staphylococcus aureus) cause warm, acutely erythematous, tender abscesses with pronounced peripheral leukocytosis, unlike this indolent, non-erythematous cold lesion with blunted histologic granulomatous inflammation; lymphoproliferative disorders or lymphoma secondary to prolonged methotrexate immunosuppression present with lymphadenopathy, but lack pus-filled abscesses; whereas extrapulmonary Mycobacterium tuberculosis infection under iatrogenic immunosuppression frequently presents as cutaneous cold abscesses without pulmonary disease and with atypical, pauci-granulomatous histology.",
+  "case_prompt": "A 23-year-old male with a one-year history of histologically confirmed idiopathic inflammatory myopathy (polymyositis) was admitted for evaluation of an indolent soft tissue swelling. For management of his underlying muscle disease, he had been maintained on high-dose systemic corticosteroid therapy (initially 1 mg/kg daily, subsequently tapered over ten weeks to 1 mg/kg on alternate days) and weekly oral methotrexate titrated up to 25 mg weekly, which had yielded modest clinical improvement in muscle strength.\n\nSix months after initiating immunosuppressive therapy, the patient noticed a painless, non-erythematous swelling on the right side of his neck that gradually enlarged into a discrete, fluctuant subcutaneous mass without external cutaneous sinus formation. He additionally noted non-tender lumps in his right neck and right axilla. He denied fevers, night sweats, cough, dyspnea, or hemoptysis.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Local examination revealed a solitary, fluctuant, non-tender subcutaneous mass on the right lateral cervical region without overlying erythema, warmth, or draining sinus tract. Palpable, firm, non-tender lymphadenopathy was appreciated in the right cervical and right axillary nodal basins. Examination of the chest and abdomen was unremarkable.\n\nInitial screening laboratory and diagnostic tests showed a negative HIV antibody screen. Three consecutive induced sputum examinations were negative for atypical or typical pathogens. A plain chest radiograph was normal, demonstrating clear lung fields without infiltrates, cavitary lesions, or mediastinal widening. Abdominal ultrasound showed no focal visceral lesions or abscesses in the liver, spleen, or kidneys.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic bacterial abscess (e.g., Staphylococcus aureus)",
+      "rule_out_reason": "Bacterial pyogenic abscesses are typically characterized by cardinal inflammatory signs including acute pain, erythema, and local heat; in contrast, this patient presented with an indolent 'cold' lesion, and histology showed non-specific necrosis without typical pyogenic bacterial isolates.",
+      "quote": "Histopathologically there were nonspecific necrosis with disintegrating polymorphs, very few granulomatous cells and no epithelioid cells in the biopsy specimen."
+    },
+    {
+      "candidate": "Methotrexate-associated lymphoproliferative disorder / lymphoma",
+      "rule_out_reason": "Prolonged methotrexate immunosuppression predisposes to opportunistic lymphoproliferative malignancies presenting with painless lymphadenopathy; however, lymph node biopsy and abscess aspiration demonstrated abundant mycobacterial growth rather than malignant lymphoid proliferation.",
+      "quote": "biopsy of the axillary lymph node showed plenty of M. tuberculosis as culture was confirmed by niacin and nitrate reduction tests"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Culture confirmation from aspirated abscess fluid and axillary lymph node biopsy demonstrating niacin and nitrate reduction, corroborated by devR gene RFLP and rapid bacteriophage assay, established the diagnosis of extrapulmonary tuberculosis.",
+      "quote": "However, the aspirated pus from cutaneous abscess and biopsy of the axillary lymph node showed plenty of M. tuberculosis as culture was confirmed by niacin and nitrate reduction tests, rapid bacteriophage assay (FAST Plaque Tuberculosis kit, BIOTEC Laboratories Ltd, UK) and RFLP analysis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to admission breakpoint. Case prompt stops before aspiration/biopsy cultures and RFLP analysis."
+}

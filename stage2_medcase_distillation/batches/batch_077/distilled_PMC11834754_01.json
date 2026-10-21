@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11834754_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 46-year-old agricultural worker presented with prolonged high fever, fatigue, wheezing, and acute bilateral hearing loss developing over 4\u20135 days. The clinical challenge is connecting acute bilateral sensorineural hearing impairment and bronchitis to an acute systemic zoonosis, while identifying a pathognomonic cutaneous eschar obscured in the lumbar region.\n2. Admission Breakpoint: The admission breakpoint occurs upon presentation to the hospital following initial vital sign measurement, physical examination (identifying the lumbar eschar and bilateral wheezing), and baseline hematologic/biochemical laboratory testing, prior to scrub typhus IgM ELISA serology and pure-tone audiometry.\n3. Differential Distinctions: Leptospirosis and severe malaria were considered given prolonged fever, agricultural occupational exposure, and progressive thrombocytopenia, but ruled out by negative leptospirosis IgM serology and negative malarial blood smear; idiopathic sudden sensorineural hearing loss was ruled out as an isolated otologic disorder when pure-tone audiometry and clinical course confirmed secondary auditory neuropathy from systemic rickettsial microvasculitis; scrub typhus was confirmed by the presence of a characteristic eschar and positive scrub typhus IgM ELISA.",
+  "case_prompt": "A 46-year-old male farmer with no known medical comorbidities presented to the hospital with a 10-day history of high-grade, intermittent fever without chills or rigors, and progressive generalized fatigue for five days. Detailed history taking revealed that he had noted a small raised skin lesion on the left side of his abdominal wall that had evolved into a black-crusted lesion. During the clinical interview, he was noted to have difficulty hearing; upon further questioning, he reported that he had been unable to hear clearly for the preceding four to five days, whereas his hearing had been completely normal prior to this febrile illness. He denied ear pain, otorrhea, tinnitus, cough, rhinorrhea, nasal congestion, trauma, or exposure to ototoxic medications.\n\nOn physical examination, the patient was febrile with a body temperature of 101.6 F. Blood pressure was 100/70 mmHg, pulse rate was 98 beats per minute with a regular rhythm, respiratory rate was 16 breaths per minute, and oxygen saturation was 96% while breathing ambient air. Dermatologic examination revealed a 1.5 x 1 cm eschar with a necrotic center in his left lumbar region. Chest auscultation revealed bilateral expiratory wheezes that improved following nebulization. Baseline laboratory investigations showed a hemoglobin level of 14.8 g/dL, a total leukocyte count of 8.7 x 109/L (72.1% neutrophils, 19.1% lymphocytes), and an initial platelet count of 190 x 109/L (with a repeat count of 140 x 109/L). Renal function tests, liver function tests, random blood glucose, and urinalysis were all within normal limits. An electrocardiogram demonstrated normal sinus rhythm, and a chest radiograph was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis / Severe Malaria",
+      "rule_out_reason": "Considered due to the patient's farming occupation, prolonged high fever, systemic fatigue, and developing thrombocytopenia, but ruled out by negative leptospiral IgM antibodies and negative peripheral blood smears for malarial parasites.",
+      "quote": "Other workup done including leptospirosis IgM antibody, peripheral smear for malarial parasite, dengue serology, and blood and urine cultures were negative."
+    },
+    {
+      "candidate": "Idiopathic Sudden Sensorineural Hearing Loss",
+      "rule_out_reason": "Considered because of acute bilateral hearing impairment without ear discharge or ototoxic medication exposure, but excluded as an isolated primary otologic entity when audiometry and response to doxycycline/corticosteroids confirmed secondary auditory neuropathy due to systemic vasculitis.",
+      "quote": "An otorhinolaryngology opinion was obtained, pure-tone audiometry (Figure 2) was performed, and the patient was diagnosed with bilateral sudden sensorineural hearing loss and was advised tablet prednisolone 60 mg daily for one week... During review after a month, his hearing loss had reversed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical finding of a pathognomonic 1.5 x 1 cm eschar in the left lumbar region combined with a positive scrub typhus IgM ELISA established the diagnosis of scrub typhus complicated by sudden sensorineural hearing loss and acute bronchitis, which resolved following oral doxycycline and steroids.",
+      "quote": "He had an eschar of size 1.5x1 cm in his left lumbar region (Figure 1)... In the background of an eschar and positive serological test, a diagnosis of scrub typhus infection was made. The patient was started on tablet doxycycline 100 mg twice daily."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation verified. Breakpoint set after initial exam and admission baseline labs, strictly prior to scrub typhus IgM ELISA and pure-tone audiometry. Zero pathogen spoilers in prompt. Exact verbatim quotes confirmed."
+}

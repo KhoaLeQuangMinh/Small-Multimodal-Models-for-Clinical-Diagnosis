@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5408821_03",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 6-year-old girl in Axochiapan, Morelos presents with an uncomplicated febrile illness (38 °C) that promptly resolves with antipyretics, in stark contrast to her two older sisters who presented simultaneously with catastrophic, fatal encephalopathy and status epilepticus. The primary diagnostic tension is recognizing whether this mild childhood febrile illness represents an unrelated benign viral syndrome, an abortive presentation of a household toxic ingestion, or mild/classic disease caused by the identical arbovirus responsible for her sisters' fatal outcomes.\n2. Admission Breakpoint: The triage evaluation concludes with the clinic evaluation at the community health center showing an isolated temperature of 38 °C without signs of encephalopathy, neurological deficits, or hemodynamic instability, improving after antipyretic administration, before sibling contact tracing prompts confirmatory arboviral serology.\n3. Differential Distinctions: Household toxic exposure was strongly suspected due to clustering of affected siblings, but toxicological histories were negative and this child lacked toxidromes; routine non-specific childhood viral illnesses (e.g., pharyngitis or gastroenteritis) present identically but do not cluster with life-threatening arboviral encephalitis in household contacts; whereas acute dengue infection commonly manifests along a wide clinical spectrum ranging from mild, uncomplicated classic febrile illness to severe fatal neurovascular collapse.",
+  "case_prompt": "A 6-year-old female resident of Axochiapan, Morelos, was evaluated at a local community health center for acute onset of fever. Her symptoms began on June 3, coinciding with the acute onset of severe febrile and neurological illnesses in two older siblings within the same household.\n\nOn clinical evaluation, the child was alert and interactive, with an elevated body temperature of 38 °C. She had no history of altered mental status, abnormal movements, seizures, respiratory distress, or abnormal bleeding. Physical examination revealed no focal neurological deficits, no meningismus, and no signs of circulatory compromise.\n\nThe child was treated with oral paracetamol for symptomatic fever management. The febrile symptoms improved promptly following administration, and she remained clinically stable without developing neurological or systemic complications. Routine baseline evaluations were performed while household epidemiological investigations were underway.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute household toxic poisoning",
+      "rule_out_reason": "Because multiple children in the same home presented with acute symptoms within days of one another, toxic ingestion was investigated; however, detailed maternal questioning and anti-doping screens revealed no evidence of toxic exposure, and this child exhibited no toxidromic signs.",
+      "quote": "family members responsible for both patients were asked about any background that might indicate probable toxic poisoning of the patients, but no positive indications were obtained."
+    },
+    {
+      "candidate": "Nonspecific self-limiting pediatric viral syndrome",
+      "rule_out_reason": "The patient presented with mild, isolated fever responding well to paracetamol, which resembled an ordinary childhood viral upper respiratory infection, but epidemiologic link to severe household sibling cases prompted specific arboviral testing.",
+      "quote": "paracetamol was prescribed, which improved the symptoms, and no other complications presented."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Due to the severe neurological complications observed in her siblings, serum serology for dengue NS1 antigen was performed via ELISA and returned positive, confirming mild acute dengue virus infection.",
+      "quote": "Due to the history of the complications suffered by the patients, serology for dengue NS1 in the 6-year-old child was performed by ELISA, with a positive result."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to admission breakpoint. Demonstrates the broad spectrum of dengue virus presentation from mild febrile illness to fatal encephalitis within the same family."
+}

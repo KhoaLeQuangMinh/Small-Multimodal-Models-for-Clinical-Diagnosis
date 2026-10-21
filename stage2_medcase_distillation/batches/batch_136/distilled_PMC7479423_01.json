@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7479423_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 3-year-old child with perinatally acquired, untreated advanced HIV (CD4 count 56 cells/µL) presented in decompensated septic shock with acute bowel obstruction. The presentation mimicked acute surgical mechanical obstruction (such as intussusception or volvulus) rather than an indolent mycobacterial infection, particularly given the absence of pulmonary consolidation on chest radiography and no reported sick contacts.\n2. Admission Breakpoint: The admission clinical presentation concludes following resuscitation, initial hemodynamic stabilization, admission hematology, CD4 testing, plain chest radiography, and abdominal radiography/ultrasound, immediately prior to sputum molecular assays, mycobacterial cultures, and emergency laparotomy.\n3. Differential Distinctions: Common pediatric mechanical causes of bowel obstruction (intussusception, volvulus, adhesive obstruction) present with acute vomiting and obstruction without diffuse granulomatous nodal disease; bacterial peritonitis from ruptured appendicitis produces acute purulent peritonitis without caseous necrosis; disseminated abdominal mycobacterial disease causes cicatrizing ileocecal strictures, necrotic mesenteric lymphadenitis, and spontaneous bowel perforation in severe immunosuppression.",
+  "case_prompt": "A 3-year-old boy was brought to the emergency department with a 3-day history of progressive abdominal distension, complete failure to pass stools or flatus, and intractable bilious vomiting. His birth history was notable for an un-booked pregnancy and delivery to a mother with a history of substance abuse who was diagnosed with human immunodeficiency virus (HIV) postpartum. Although infant antiretroviral prophylaxis had been prescribed, the mother had defaulted both her own antiretroviral therapy and the child's prophylaxis. The child had no documented sick contacts with chronic cough or infectious diseases.\n\nOn physical examination, the child was acutely lethargic, markedly pale, severely wasted, and in hypovolemic/septic shock. The abdomen was tense, diffusely distended, and exquisitely tender, with absent bowel sounds. Initial laboratory testing confirmed HIV infection with positive antibody tests on two separate samples and profound immunosuppression with a CD4+ lymphocyte count of 56 cells/µL (15%). Complete blood count revealed severe microcytic anemia with hemoglobin 5.0 g/dL and thrombocytopenia with a platelet count of 114 × 10⁹/L. Baseline serum creatinine was 61 µmol/L. Plain chest radiography showed clear lung fields without evidence of focal parenchymal consolidation, miliary patterning, or cavitation. Abdominal plain radiographs and bedside ultrasonography demonstrated multiple dilated small-bowel loops with air-fluid levels and complete absence of gas in the rectum, consistent with high-grade mechanical small-bowel obstruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Pediatric Mechanical Bowel Obstruction (Intussusception / Volvulus)",
+      "rule_out_reason": "Acute bilious vomiting, distension, and absent rectal gas in a toddler strongly suggest intussusception or volvulus; however, surgical exploration revealed extensive necrotic mesenteric and retroperitoneal adenopathy with multiple small bowel perforations and caseous plaques rather than an anatomical loop twist or lead-point intussusception.",
+      "quote": "At laparotomy 3 days after admission, three small-bowel perforations with faecal soiling of the abdominal cavity and 'caseous areas' of the ileum, ascending colon, mesenteric and retroperitoneal lymph nodes were identified."
+    },
+    {
+      "candidate": "Primary Pulmonary Tuberculosis with Reactive Ileus",
+      "rule_out_reason": "Severe pediatric mycobacterial dissemination typically stems from obvious pulmonary parenchymal destruction; however, chest radiography demonstrated no findings of pulmonary involvement.",
+      "quote": "The chest X-ray did not suggest pulmonary TB."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid sputum molecular testing (GeneXpert MTB/RIF Ultra) and culture confirmed rifampicin-sensitive Mycobacterium tuberculosis, while exploratory laparotomy confirmed extensive necrotizing granulomatous inflammation of mesenteric lymph nodes and caseous ileal perforation.",
+      "quote": "Sputum gene Xpert Mycobacterium tuberculosis (MTB)/RIF Ultra was positive for rifampicin-sensitive MTB. The sputum culture grew rifampicin- and isoniazid-sensitive TB... Histology of the intra-abdominal nodes showed necrotising granulomatous inflammation."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean separation at the admission breakpoint before molecular testing, cultures, or laparotomy. Zero pathogen or disease names mentioned in the prompt narrative. Ground-truth canonical diagnosis verified."
+}

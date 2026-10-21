@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5820875_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 30-year-old male presenting with subacute low back pain and asymmetric lower extremity weakness. Spinal MRI revealed an isolated 1.1 x 0.9 cm intramedullary ring-enhancing lesion at D11 with extensive thoracic cord edema from D4 to D12 without an identifiable scolex, and a completely normal brain MRI. Differentiating an isolated intramedullary spinal cystic lesion from spinal tuberculoma or intramedullary neoplasm without neurosurgical biopsy in a patient with no history of pork consumption presents significant clinical difficulty.\n2. Admission Breakpoint: Admission clinical evaluation concludes following the history (absence of pork consumption), neurological examination demonstrating right lower limb weakness (MRC III/IV), sensory deficits in L5-S1, and absent deep tendon reflexes, initial laboratory tests (peripheral neutrophilic leukocytosis, negative stool examination for ova and parasites), and spine and brain MRI demonstrating the D11 intramedullary ring-enhancing lesion with extensive cord edema and absence of brain lesions. It stops immediately before diagnostic CSF antibody testing returns.\n3. Differential Distinctions: Spinal tuberculoma is the chief competing diagnosis for a solitary ring-enhancing intramedullary lesion with extensive edema in endemic regions, but was ruled out in favor of cysticercosis by positive CSF anti-cysticercal antibody testing and clinical recovery on albendazole/steroids. Intramedullary spinal cord tumor (astrocytoma/ependymoma) was ruled out by lack of progression and complete resolution without surgical excision. Spinal neurocysticercosis was confirmed by CSF anti-cysticercal antibodies and rapid radiologic regression.",
+  "case_prompt": "A 30-year-old male presented with a one-month history of low back pain, radiating pain to the right lower limb, and progressive weakness of the right lower limb for 20 days. He reported no dietary history of pork consumption.\n\nNeurological examination revealed asymmetric lower extremity weakness, with muscle strength grade III proximally and grade IV distally (Medical Research Council scale) in the right lower extremity, and grade V in the left lower extremity. Sensation to light touch and pinprick was impaired in the right L5 and S1 dermatomes. Right patellar and Achilles deep tendon reflexes were absent, and plantar responses were mute bilaterally.\n\nRoutine laboratory testing demonstrated peripheral blood neutrophilic leukocytosis; stool examination for ova and cysts was negative. Spine MRI revealed a bulky, edematous spinal cord extending from the D4 to D12 vertebral bodies, associated with a solitary intramedullary ring-enhancing lesion measuring 1.1 cm x 0.9 cm located at the D11 level above the conus medullaris. The lesion was hypointense on T1-weighted images and hyperintense on T2-weighted images, with peripheral ring contrast enhancement; no scolex could be identified. Brain MRI was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramedullary spinal tuberculoma",
+      "rule_out_reason": "Considered the primary alternative infectious etiology for a solitary intramedullary ring-enhancing spinal lesion with severe edema, but excluded based on positive CSF anti-cysticercal antibody testing and prompt lesion regression under albendazole and corticosteroid therapy.",
+      "quote": "Differential diagnosis of spinal NCC and tuberculoma was considered."
+    },
+    {
+      "candidate": "Primary intramedullary spinal cord neoplasm",
+      "rule_out_reason": "Considered given the solitary ring-enhancing intramedullary mass causing progressive myelopathy without an identifiable scolex, but ruled out by lack of tumor progression and rapid clinical and radiologic resolution with conservative medical management alone.",
+      "quote": "Scolex could not be identified. MRI of the brain was normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when diagnostic cerebrospinal fluid analysis was positive for anti-cysticercal antibodies, establishing isolated intramedullary spinal neurocysticercosis.",
+      "quote": "Diagnostic cerebrospinal fluid analysis by nucleic acid amplification test was positive for anti-cysticercal antibodies; a final diagnosis of spinal neurocysticercosis was made."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly maintained before CSF antibody results. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

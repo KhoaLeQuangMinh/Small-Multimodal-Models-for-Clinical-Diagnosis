@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6393917_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Acute emergence of persecutory delusions, psychomotor agitation, and insomnia in a 21-year-old woman with no prior psychiatric or substance history, developing four days after initiating multidrug therapy for an exudative pleural infection. Differentiating primary psychotic illness, toxic/metabolic encephalopathy, central nervous system infection/tuberculoma, and adverse neurotoxicity from isoniazid is pivotal.\n2. Admission Breakpoint: Emergency department triage following complete clinical and mental status examination, normal basic laboratory panels (CBC, BMP, LFTs, thyroid tests, urine toxicology screen), and unenhanced head CT, prior to drug discontinuation and psychiatric inpatient admission.\n3. Differential Distinctions: Substance-induced psychosis is excluded by a negative toxicology screen and absent substance history; organic intracranial space-occupying lesions or secondary CNS infection are ruled out by a normal non-contrast head CT and unremarkable physical/neurological findings; primary psychiatric disorders (brief psychotic disorder or schizophrenia) are excluded by the abrupt onset precisely four days post-drug initiation, rapid symptom resolution within 7 days of drug cessation, and successful antipsychotic discontinuation without recurrence.",
+  "case_prompt": "A 21-year-old woman with no prior psychiatric history presented to the emergency department with an acute onset of psychotic symptoms, including paranoid delusions, psychomotor agitation, and initial insomnia. She harbored persecutory beliefs that her sister had practiced witchcraft against her and that her boyfriend was unfaithful. These symptoms emerged four days after she was started on a four-drug antimicrobial regimen consisting of isoniazid 300 mg/day, rifampicin 600 mg/day, ethambutol 1200 mg/day, and pyrazinamide 1500 mg/day, accompanied by pyridoxine 200 mg/day and thiamine 100 mg/day, for a recently diagnosed pleural infection. She had no other past medical history and no history of substance abuse.\n\nOn physical examination, vital signs were stable and systemic physical findings, including a detailed neurological examination, were unremarkable. Mental status examination revealed a poorly cooperative and suspicious patient with continuous psychomotor agitation, anxious affect, and prominent paranoid delusions; no auditory or visual hallucinations were detected, though insight into her illness was impaired. Diagnostic testing in the emergency department, including a complete blood count, serum chemistry panel, liver function tests, thyroid function tests, and a urine toxicology screen, were all normal. An unenhanced computed tomography (CT) scan of the head demonstrated no acute intracranial pathology.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Substance/toxin-induced psychosis",
+      "rule_out_reason": "Acute agitation and persecutory delusions in a young adult frequently stem from illicit drug ingestion or toxin exposure, but the patient had no drug use history and urine toxicology was completely negative.",
+      "quote": "Testing including a complete blood count, chemistry panel, liver and thyroid function tests, and a urine toxicology screen was normal."
+    },
+    {
+      "candidate": "Organic intracranial lesion or intracranial tuberculoma",
+      "rule_out_reason": "New-onset psychiatric symptoms can be heralded by space-occupying intracranial lesions, encephalitis, or secondary central nervous system complications of pleural infection, but unenhanced head CT showed no structural abnormality.",
+      "quote": "A computed tomography scan of the head was obtained and showed no abnormality."
+    },
+    {
+      "candidate": "Primary psychotic disorder (schizophreniform or brief psychotic disorder)",
+      "rule_out_reason": "A first-break psychiatric illness was considered, but the acute onset temporally linked to new antimicrobial therapy, absence of prior psychiatric history, and rapid complete remission following drug discontinuation argued against a primary psychotic disorder.",
+      "quote": "The fast remission of symptoms and the good clinical outcome further supported our diagnosis of drug-induced psychosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Drug-induced psychosis secondary to isoniazid neurotoxicity during treatment for pleural tuberculosis was confirmed by the acute onset four days after drug initiation, rapid remission within seven days of discontinuing isoniazid, and uneventful sequential re-introduction of rifampicin, pyrazinamide, and ethambutol while permanently omitting isoniazid.",
+      "quote": "Since these three antibacterial agents have efficacy in the treatment of pleural tuberculosis, it was decided not to introduce isoniazid."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly avoids naming the target disease while preserving the medication timeline essential for evaluating drug-induced psychosis. Rule-outs for toxicologic, structural, and primary psychiatric etiologies are anchored with exact text quotes."
+}

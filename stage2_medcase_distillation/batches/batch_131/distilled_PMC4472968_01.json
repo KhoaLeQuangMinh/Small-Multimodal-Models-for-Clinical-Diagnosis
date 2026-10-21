@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4472968_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: The patient presents with a septated, partitioned liver abscess and marked inflammatory syndrome in non-endemic Western Europe 22 years after his last tropical exposure, mimicking pyogenic abscess or locally endemic alveolar echinococcosis.\n2. Admission Breakpoint: The admission triage phase ends after clinical presentation, baseline inflammatory markers, and cross-sectional abdominal imaging defining the partitioned liver abscesses. Send-out serologies, parasite PCR, and aspirate microbiology constitute confirmatory diagnostics.\n3. Differential Distinctions: Pyogenic abscesses typically yield positive bacterial cultures on aspiration; alveolar echinococcosis produces positive cestode serology and infiltrative multivesicular lesions. Amebic liver abscess yields sterile bacterial cultures, positive specific serology, and positive Entamoeba PCR.",
+  "case_prompt": "A 72-year-old man residing in Eastern France presented with right upper quadrant abdominal pain and a profound inflammatory syndrome. One month previously, he had been hospitalized in the intensive care unit for acute calculous cholecystitis associated with severe sepsis, which resolved without hepatic collection at that time. His travel history was notable for remote travel to Senegal in 1985 and the West Indies in 1990. On examination, the patient was apyretic with right upper quadrant tenderness. Laboratory studies revealed a C-reactive protein of 237 mg/L and procalcitonin of 71.2 ng/mL. An abdominal CT scan demonstrated a liver abscess. Subsequent magnetic resonance cholangiopancreatography (MRCP) revealed a partitioned fluid collection measuring 6.6 cm x 4 cm in hepatic segments I and II, and an abscess measuring 5.5 cm x 5 cm in segment VII. Follow-up liver biochemistry showed ASAT 19 U/L, ALAT 13 U/L, gammaGT 47 U/L, alkaline phosphatase 154 U/L, total bilirubin 7.4 µmol/L, and conjugated bilirubin 3.6 µmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "Recent hospitalization for acute calculous cholecystitis and severe sepsis with marked procalcitonin elevation strongly favored a secondary bacterial pyogenic liver abscess, but diagnostic aspiration was sterile on bacteriological culture.",
+      "quote": "A liver puncture sample sent to the bacteriology laboratory was sterile."
+    },
+    {
+      "candidate": "Echinococcosis (Cystic or Alveolar)",
+      "rule_out_reason": "Residence in Eastern France and partitioned hepatic cystic collections raised concern for Echinococcus multilocularis or E. granulosus, but serologic screening for both larval cestodes was negative.",
+      "quote": "Hydatid disease and alveolar echinococcosis serologies (these larval cestodes being endemic in Eastern France) were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High-titer positivity on ELISA and latex agglutination serologies, followed by specific Entamoeba histolytica DNA PCR amplification from the hepatic aspirate, confirmed amebic liver abscess despite a 22-year latency period.",
+      "quote": "This in-house PCR test was positive, thus confirming the diagnosis of ALA."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Strict admission breakpoint maintained without pathogen leakage; exact quotes verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3290876_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 54-year-old man presents with acute, rapidly progressive symmetrical peripheral dry gangrene affecting all four extremities following an initial febrile illness. Symmetrical peripheral gangrene (SPG) is usually considered a complication of severe meningococcemia, purpura fulminans, or bacterial sepsis with disseminated intravascular coagulation. Its occurrence as a complication of severe Plasmodium falciparum malaria secondary to microvascular cytoadherence and parasite sequestration is exceedingly rare and carries high morbidity.\n2. Admission Breakpoint: History of an acute febrile illness, rapid onset of four-extremity ischemic necrosis, physical examination (bilateral symmetrical gangrene of digits with clear demarcation and absent dorsalis pedis pulses), baseline laboratory tests (moderate anemia, prolonged PT/INR, negative viral serologies), and echocardiogram mark the admission breakpoint prior to vascular demarcation and quad-amputation.\n3. Differential Distinctions: Thromboangiitis obliterans (Buerger disease) or atherosclerotic peripheral vascular disease (causes distal gangrene, but patient is a non-smoker with no angiopathy history, presenting acutely after febrile illness), Disseminated intravascular coagulation (DIC) / Purpura fulminans from bacterial septic shock (major cause of SPG, ruled out by absence of bacterial sepsis and negative viral/serological markers), and severe Plasmodium falciparum malaria with cytoadherence microvascular sequestration.",
+  "case_prompt": "A 54-year-old Ugandan male presented to a tertiary referral hospital in Kenya with progressive, symmetrical darkening and severe ischemic pain of all four extremities. Five days earlier, he had presented with severe headache and joint pain to a local health facility in Uganda, where an acute systemic febrile infection was identified and parenteral antimicrobial therapy initiated. Two days after treatment initiation, he developed recurrent headache, severe limb pain, numbness, coldness, and swelling of the extremities, rapidly followed by progressive darkening of the digits of his toes and hands extending proximally. The patient was a non-smoker and non-alcoholic, with no past history of diabetes mellitus, hypertension, or peripheral vascular disease, though he had a remote history of recurrent tropical febrile bouts. On physical examination, he was febrile, conscious, and oriented, but lethargic and unable to ambulate. Cardiopulmonary, abdominal, and neurological examinations were normal, and jaundice, pallor, and cyanosis were absent. Local extremity examination revealed cold, dry, wrinkled, darkened skin over the digits of both hands and feet with a sharp proximal line of demarcation; severe pain was present proximal to the discoloration and absent distally. Bilateral dorsalis pedis pulses were impalpable with absence of blood flow. Laboratory investigations showed: negative ELISA serologies for HIV, HBV, HCV, and VDRL; normal serum urea, electrolytes, and creatinine; prolonged prothrombin time of 19 seconds (prothrombin time index 74%, INR 1.36); and macrocytic normochromic anemia with hemoglobin 9.03 g/dL, hematocrit 33.2%, and total leukocyte count 4.39 x 10⁹/L (48.2% neutrophils, 39.5% lymphocytes, 7.16% monocytes, 4.4% eosinophils). An echocardiogram was normal except for type 1 left ventricular diastolic dysfunction and mild tricuspid regurgitation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Thromboangiitis obliterans (Buerger's disease) / Atherosclerotic peripheral vascular disease",
+      "rule_out_reason": "Acute distal extremity gangrene suggests severe obliterative vasculopathy or thromboembolism; however, the patient was a non-smoker without history of diabetes or cardiovascular risk factors, presenting with an acute febrile onset following infection.",
+      "quote": "He was a non-smoker and non-alcoholic, and had no history of diabetes, hypertension or any angiopathies."
+    },
+    {
+      "candidate": "Purpura fulminans / Bacterial sepsis-induced Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "Symmetrical peripheral gangrene is classically caused by severe bacterial septic shock (e.g., Neisseria meningitidis or Streptococcus pneumoniae); however, the patient had no primary bacterial septic focus and tests for viral and systemic pathogens were negative.",
+      "quote": "Investigations tested negative for HIV, HBV, HCV, and VDRL on ELISA. Urea, Electrolyte and creatinine tests were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Symmetrical Peripheral Gangrene complicating Severe Plasmodium falciparum Malaria)",
+      "rule_out_reason": "The patient's acute syndrome was triggered by severe Plasmodium falciparum infection, where intense microvascular sequestration, parasitized red blood cell rigidity, and hypercoagulability obstructed digital microcirculation, resulting in bilateral symmetrical peripheral gangrene requiring eventual transmetatarsal and ray amputations.",
+      "quote": "He had initially reported with headache and joint pain to a local health facility in Uganda and was diagnosed to have severe Plasmodium falciparum malaria infection, and thereafter treatment with intravenous quinine commenced."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Rare and dramatic presentation of severe falciparum malaria complicated by symmetrical peripheral gangrene. Case prompt preserves tension by withholding the initial malaria parasite diagnosis and quinine therapy, presenting the patient at tertiary referral."
+}

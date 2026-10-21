@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10267758_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A previously healthy adult presenting with abrupt morning headache, vomiting, and isolated unilateral ventriculomegaly (unilateral hydrocephalus). The diagnostic challenge lies in distinguishing between common benign intraventricular lesions (colloid cyst, ependymal/arachnoid cyst) and a mobile intraventricular parasitic cyst producing a ball-valve obstruction at the foramen of Monro.\n2. Admission Breakpoint: The admission narrative stops upon completion of emergency neurological examination, head CT, and urgent brain MRI documenting the cystic lesion with an eccentric mural nodule obstructing the right foramen of Monro, immediately before lumbar puncture/CSF serology and neuroendoscopic surgical extraction.\n3. Differential Distinctions: Colloid cysts characteristically arise at the anterosuperior third ventricle, appear hyperdense on non-contrast CT, and lack an internal eccentric mural nodule (scolex). Intraventricular ependymal or arachnoid cysts are thin-walled congenital lesions with CSF-like signal that lack mural nodules or inflammatory CSF pleocytosis.",
+  "case_prompt": "A 42-year-old male presented to the emergency department after waking up with an acute, severe generalized headache accompanied by profuse projectile vomiting. Over the preceding two weeks, he had noted progressively worsening holocranial headaches and episodes of blurred vision, which had provided only transient relief with over-the-counter analgesics. He had no prior history of chronic headaches, head trauma, or systemic illnesses.\n\nOn physical examination, the patient was distressed from head pain but fully alert and oriented. Neurological examination revealed intact cranial nerves, normal visual fields, preserved motor strength (5/5 throughout), intact sensation across all modalities, and normal deep tendon reflexes bilaterally with down-going plantars. However, clinical signs of acutely elevated intracranial pressure were prominent.\n\nEmergency non-contrast computed tomography (CT) of the head revealed marked asymmetrical enlargement of the right lateral ventricle without significant midline shift, consistent with isolated, right-sided non-communicating obstructive hydrocephalus; no clear parenchymal calcification or hyperdense mass was identified on unenhanced CT. Urgent brain magnetic resonance imaging (MRI) revealed a well-delineated, thin-walled, non-enhancing cystic lesion containing an eccentric mural nodule situated within the right lateral ventricle, directly obstructing cerebrospinal fluid outflow through the ipsilateral foramen of Monro.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colloid Cyst of the Third Ventricle",
+      "rule_out_reason": "Considered because colloid cysts are classic causes of acute episodic obstructive hydrocephalus and headache at the foramen of Monro; however, colloid cysts are located in the anterosuperior third ventricle, appear hyperdense on unenhanced CT, and lack an internal eccentric mural nodule (scolex).",
+      "quote": "A CT scan of the head demonstrated an expanded lateral ventricle on the right side without any significant mass effect, consistent with an isolated, right-sided non-communicating hydrocephalus. However, no identifiable cause was evident."
+    },
+    {
+      "candidate": "Intraventricular Ependymal / Arachnoid Neuroepithelial Cyst",
+      "rule_out_reason": "Considered given the non-enhancing, thin-walled cystic appearance within the lateral ventricle; however, benign congenital cysts typically lack an eccentric mural nodule and do not produce inflammatory CSF lymphocytic pleocytosis or positive helminthic serology.",
+      "quote": "MR imaging, which revealed a well-delineated, thin-walled, non-enhancing cystic lesion with an eccentric mural nodule in the right-sided lateral ventricle, causing outflow obstruction through the ipsilateral interventricular foramen of Monro"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Magnetic resonance imaging demonstrated an intraventricular cyst containing a pathognomonic eccentric mural nodule (representing the larval scolex) obstructing the foramen of Monro, confirmed by CSF ELISA positivity for parasitic antibodies and intraoperative endoscopic extraction revealing a visible larval scolex.",
+      "quote": "Analysis of blood and CSF samples revealed normal ranges, except for mild hyperproteinorrachia (109 mg/dl) and lymphocytic pleocytosis (95%). CSF bacterioscopy was negative, but ELISA testing demonstrated positivity for cysticercus antibodies... Upon opening the cyst by cutting its membrane, an elongated whitish structure, in continuity with a certain point on the inner surface of the membrane, was observed, consistent with the scolex (larval head) of the tapeworm."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The prompt halts after emergency brain MRI and prior to lumbar puncture serology or endoscopic surgery. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

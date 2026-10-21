@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6855045_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Distinguishing an eruptive cutaneous vascular proliferation appearing during antimicrobial treatment for a chronic pulmonary process from paradoxical immune reconstitution (IRIS), drug reaction with eosinophilia, or an opportunistic co-neoplasm in an elderly patient.\n2. Admission Breakpoint: The breakpoint is set after physical examination and initial baseline laboratory testing (CBC, ESR, CRP), prior to direct acid-fast smear results, viral serologies, and diagnostic cutaneous punch biopsy.\n3. Differential Distinctions: Cutaneous mycobacterial dissemination (tuberculids or papulonecrotic lesions) would typically show acid-fast bacillary positivity or caseating granulomas rather than spindle-cell vascular proliferation; HIV-associated vascular neoplasms are excluded by negative retroviral serology in this classic presentation; and drug-induced vasculitis is excluded by characteristic histopathology.",
+  "case_prompt": "A 70-year-old male presents for evaluation of painful, eruptive cutaneous lesions on his upper extremities, accompanied by fever and marked constitutional decline. One month prior to admission, he had initiated a multi-agent antimicrobial regimen for a microbiologically documented chronic lower respiratory tract infection, but he halted the therapy upon the emergence of the skin eruptions.\nOn physical examination, the patient appears ill and febrile. Dermatologic evaluation reveals tender, infiltrated, purplish papulonodular lesions distributed bilaterally over both forearms with rapid extension onto both hands, associated with prominent papillomatous palmoplantar lesions and pronounced lymphedema of the extremities. Pleuropulmonary examination is clear to auscultation bilaterally, and the cardiovascular and abdominal examinations show no abnormalities.\nInitial laboratory evaluation reveals a normochromic, normocytic anemia with a hemoglobin level of 10.5 g/dL, a total white blood cell count of 8,520/mm\u00b3 with absolute lymphocytopenia of 700/mm\u00b3, a C-reactive protein level of 94 mg/L, and an erythrocyte sedimentation rate of 45 mm in the first hour.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Mycobacterial Infection / Tuberculid",
+      "rule_out_reason": "Direct microscopic examination of the eruptive skin lesions was negative for acid-fast organisms.",
+      "quote": "The search for Koch's bacillus (Mycobacterium tuberculosis) on direct examination was negative."
+    },
+    {
+      "candidate": "HIV-Associated Opportunistic Vascular Proliferation / Epidemic Kaposi's Sarcoma",
+      "rule_out_reason": "Retroviral and viral hepatitis serologies were negative, establishing an immunocompetent classic disease presentation.",
+      "quote": "Serological assays for HBV (viral hepatitis B), HCV (viral hepatitis C), and HIV (human immunodeficiency virus) were negative as well."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cutaneous punch biopsy revealed spindle and vascular cell proliferation with extravasated erythrocytes, confirming Kaposi's sarcoma developing concomitantly with pulmonary tuberculosis, which responded favorably to resumption of antitubercular therapy.",
+      "quote": "Cutaneous biopsy revealed proliferation of fusiform and vascular cells with extravasation of blood associated with occasional siderophages (Figure 2). Immunohistochemical studies resulted in Kaposi's Sarcoma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated Stanford MedCaseReasoning distillation for PMC6855045_01. Admission prompt strictly sanitized of pathogen and disease names, focusing on eruptive violaceous plaques and lymphedema."
+}

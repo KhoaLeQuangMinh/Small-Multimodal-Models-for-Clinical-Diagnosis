@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6396591_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 40-year-old male presenting with intermittent high-grade fever for 4 days followed by acute retrosternal chest pain radiating to the neck, whose initial ECG demonstrates ST-segment elevations in leads I, II, aVL, V5, V6 prompting emergent coronary catheterization for presumed STEMI. Coronary angiography reveals entirely normal coronary vessels. Subsequent labs show thrombocytopenia, anemia, transaminitis, elevated BUN/creatinine, and raised inflammatory markers. The clinical tension is establishing whether the presentation is an acute coronary syndrome / plaque rupture, acute viral/idiopathic pericarditis, or acute infectious pericarditis complicating severe falciparum malaria.\n2. Admission Breakpoint: Initial emergency triage, ECG acquisition, emergent cardiac catheterization revealing patent coronaries, and baseline hematologic/biochemical laboratory results. Confirmatory testing (peripheral blood smear examining for hemoparasites, detailed echocardiography, and antimalarial response) begins after this point.\n3. Differential Distinctions: Acute inferolateral STEMI was ruled out by angiographically normal coronary arteries and minimally elevated cardiac troponin (0.05 ng/dL). Idiopathic or isolated viral pericarditis explained the chest pain and ECG changes but failed to account for multiorgan involvement including severe thrombocytopenia (60,000/mm³), splenomegaly, acute renal insufficiency, and transaminitis. The definitive diagnosis of falciparum malaria was established by positive peripheral blood smear.",
+  "case_prompt": "A 40-year-old male presented with a 4-day history of intermittent high-grade fever and acute diffuse chest pain of 3 hours' duration. The pain was moderate in intensity and radiated to the nape of the neck. He had no history of hypertension, diabetes mellitus, dyslipidemia, or smoking, and denied cough, dysuria, diarrhea, or vomiting.\nOn physical examination, the patient was afebrile, with a blood pressure of 130/80 mmHg and a pulse rate of 100 beats per minute. Chest auscultation was initially reported as normal. A 12-lead electrocardiogram (ECG) demonstrated ST-segment elevation in leads I, II, aVL, V5, and V6. Based on these findings, an initial diagnosis of acute inferolateral ST-elevation myocardial infarction (STEMI) was made, and the patient was taken emergently to the cardiac catheterization laboratory for primary coronary angiography within one hour of admission. Emergent coronary angiography revealed angiographically normal coronary arteries.\nBaseline blood investigations revealed a white blood cell count of 7,000/mm³, platelet count of 60,000/mm³ indicating thrombocytopenia, and hemoglobin of 10.0 g/dL. Blood glucose was 120 mg/dL. Erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) were elevated. Liver function tests revealed gamma-glutamyl transferase (GGT) of 90 IU/L, AST (SGOT) of 110 IU/L, ALT (SGPT) of 126 IU/L, and LDH of 356 IU/L. Renal function tests showed a blood urea of 56 mg/dL and a serum creatinine of 1.5 mg/dL. Cardiac troponin was 0.05 ng/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute inferolateral ST-elevation myocardial infarction (STEMI)",
+      "rule_out_reason": "Considered emergently due to acute chest pain radiating to the neck accompanied by ST-segment elevation in leads I, II, aVL, V5, and V6 on admission ECG. However, emergency coronary angiography demonstrated completely normal coronary vessels without stenosis or thrombosis, and cardiac troponin was not significantly elevated.",
+      "quote": "To our surprise, angiography came out be normal."
+    },
+    {
+      "candidate": "Idiopathic or primary viral acute pericarditis",
+      "rule_out_reason": "Considered after post-catheterization evaluation demonstrated positional chest pain relieved by leaning forward, a pericardial friction rub, PR segment depression, and mild pericardial effusion. However, isolated viral pericarditis would not account for systemic multiorgan involvement including profound thrombocytopenia (60,000/mm³), splenomegaly, transaminitis, and acute renal impairment.",
+      "quote": "Also, examination revealed faint pericardial rub and moderately enlarged spleen on abdominal examination."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was the examination of the peripheral blood smear, which was positive for Plasmodium falciparum, establishing the diagnosis of falciparum malaria presenting with acute pericarditis mimicking myocardial infarction.",
+      "quote": "Blood smear was positive for plasmodium falciparum."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified admission breakpoint strictly excludes blood smear findings, artemisinin combination therapy, and post-treatment clinical recovery."
+}

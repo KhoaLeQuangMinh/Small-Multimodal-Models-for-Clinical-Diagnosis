@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8216685_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 51-year-old male from rural Colombia presents with a progressive 6-month history of subacute headaches, lower limb weakness, cognitive decline, urinary incontinence, and ataxic gait. Lumbar puncture demonstrates chronic lymphocytic pleocytosis with hypoglycorrhachia and high protein, mimicking tuberculous or fungal basilar meningitis. The diagnostic challenge is identifying an extraparenchymal parasitic cyst causing obstructive hydrocephalus and cerebellar ataxia when empiric anti-tuberculosis therapy fails.\n2. Admission Breakpoint: The admission breakpoint occurs following admission evaluation, repeat lumbar puncture demonstrating persistent hypoglycorrhachia/pleocytosis, and brain CT/MRI demonstrating the left cerebellar cyst and severe obstructive hydrocephalus, strictly prior to ventriculoperitoneal shunt placement and diagnostic surgical biopsy.\n3. Differential Distinctions: Tuberculous meningitis is ruled out by negative MTB PCR, negative cultures, and disease progression despite three months of empiric anti-TB therapy. Chronic fungal meningitis (Cryptococcus, Histoplasma, Aspergillus) is excluded by negative latex agglutination, cultures, and serologies. Primary cystic cerebellar neoplasm is excluded by histopathologic identification of a cysticercus cyst.",
+  "case_prompt": "A 51-year-old male residing in a rural area of Colombia presented with a six-month history of progressive neurological decline. Three months prior, he had developed headaches accompanied by lower extremity weakness, gait instability requiring support to climb stairs, memory loss, and behavioral changes. An initial lumbar puncture performed at that time showed lymphocytic pleocytosis, hyperproteinorrachia, and hypoglycorrhachia; because of high regional prevalence, empiric quadruple therapy for chronic basilar meningitis had been initiated. Over the subsequent three months, his condition worsened with the emergence of urinary incontinence, progressive drowsiness, intractable emesis, and fever.\n\nOn physical examination, the patient was disoriented in time and space, with prominent short-term memory deficits and acalculia. Fundoscopic examination revealed bilateral papilledema without other retinal abnormalities. Neurological examination showed no tremors or asymmetric pronator drift. Coordination testing demonstrated intact rapid alternating movements and finger-to-nose maneuvers, but the pull test was positive and an ataxic gait was noted. Meningeal signs were absent.\n\nLaboratory testing demonstrated peripheral leukocytosis and neutrophilia without eosinophilia. A repeat lumbar puncture showed persistent lymphocytic pleocytosis, elevated protein, and low glucose. Computed tomography (CT) of the head and brain magnetic resonance imaging (MRI) revealed severe dilation of the ventricular system compatible with obstructive hydrocephalus, alongside a discrete cystic lesion in the left cerebellar hemisphere.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous Meningitis / Chronic Basilar Meningitis",
+      "rule_out_reason": "Chronic lymphocytic pleocytosis with hypoglycorrhachia in an endemic region led to empiric anti-tuberculosis therapy, but the patient suffered clinical progression and specific mycobacterial cultures and PCR were negative.",
+      "quote": "Mycobacterium tuberculosis (MT) polymerase chain reaction and MT culture were negative... Due to the lack of response to the initial treatment, the diagnosis of meningeal tuberculosis was ruled out and treatment was suspended."
+    },
+    {
+      "candidate": "Chronic Fungal Meningitis (Cryptococcosis, Histoplasmosis, Aspergillosis)",
+      "rule_out_reason": "Subacute basilar meningitis causing obstructive hydrocephalus and papilledema frequently stems from fungal pathogens, but latex agglutination, fungal cultures, and fungal serologies were negative.",
+      "quote": "However, fungal and bacterial cultures, cryptococcus latex agglutination test... were negative... Serological tests for Histoplasma, Cryptococcus and Aspergillus were negative."
+    },
+    {
+      "candidate": "Cystic Cerebellar Neoplasm (Hemangioblastoma / Pilocytic Astrocytoma)",
+      "rule_out_reason": "A focal cerebellar cystic mass producing progressive ataxia, obstructive hydrocephalus, and raised intracranial pressure raised suspicion for a primary posterior fossa tumor, but histological examination revealed parasitic tissue.",
+      "quote": "Due to the clinical deterioration of the patient and the lack of a clear diagnosis, a biopsy of the cyst was performed with evidence of a cysticercus cyst (Figure 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Open biopsy of the cerebellar cyst demonstrated the definitive histopathological architecture of a cysticercus cyst, confirming subarachnoid racemose neurocysticercosis with cerebellar involvement and secondary obstructive hydrocephalus.",
+      "quote": "Due to the clinical deterioration of the patient and the lack of a clear diagnosis, a biopsy of the cyst was performed with evidence of a cysticercus cyst (Figure 3). Racemose neurocysticercosis with cerebellar involvement was considered and 8 mg of intravenous dexamethasone every 8 h in conjunction with albendazole at the maximum dose (30 mg/kg/day/) was started..."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to VP shunt placement and cyst histopathological biopsy. Verbatim quotes support all differential candidates and the diagnostic pivot."
+}

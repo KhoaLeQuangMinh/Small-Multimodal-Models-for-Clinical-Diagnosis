@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7217305_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 32-year-old Chinese woman with a 5-year history of chronic pulmonary disease presents with progressive cough, sputum, and dyspnea. Chest CT demonstrates bilateral cavitary lesions, pleural thickening, and upper mediastinal lymphadenopathy, and sputum smear reveals acid-fast bacilli (2+). The primary clinical challenge is that despite initial automated molecular assay reporting rifampicin susceptibility, the patient experiences treatment failure on standard first-line therapy due to an occult non-rifampicin resistance-determining region (RRDR) mutation causing phenotypic multidrug-resistant tuberculosis (MDR-TB).\n2. Admission Breakpoint: The admission breakpoint occurs upon completion of admission triage, physical examination, baseline routine biochemical testing, chest CT, and initial sputum acid-fast smear microscopy, prior to receiving send-out automated molecular testing (Xpert MTB/RIF), phenotypic drug susceptibility testing (DST), and subsequent treatment responses.\n3. Differential Distinctions: Non-tuberculous mycobacterial (NTM) pulmonary infection (e.g., Mycobacterium avium complex or M. kansasii) or cavitary fungal infection mimics cavitary acid-fast disease but is distinguished by molecular confirmation of Mycobacterium tuberculosis complex. Drug-susceptible pulmonary tuberculosis is ruled out by progressive radiological deterioration on standard quadruple first-line therapy and phenotypic DST proving high-level resistance to isoniazid, rifampicin, ethambutol, streptomycin, and fluoroquinolones. The diagnostic pivot is phenotypic DST confirming multidrug resistance, explained by Sanger sequencing revealing an atypical non-RRDR rpoB mutation (Ile491Phe).",
+  "case_prompt": "A 32-year-old Chinese woman presents to a hospital in Guizhou Province, China, in February 2017 with persistent cough, expectoration of sputum, and progressive shortness of breath. She reports a five-year antecedent history of chronic pulmonary illness. She denies any history of systemic hypertension, diabetes mellitus, viral hepatitis, enteric fever, or other chronic infectious diseases.\n\nOn physical examination, she is alert and in mild respiratory discomfort. Vital signs are stable. Cardiac examination is normal with regular heart sounds and no murmurs. Pulmonary examination reveals clear breath sounds bilaterally without audible dry or wet rales, rhonchi, or wheezes. Abdominal examination is soft and non-tender, with no organomegaly. Neurologic and musculoskeletal examinations are normal.\n\nRoutine blood counts and basic metabolic and biochemical panels show no obvious abnormalities. Plain and computed tomography (CT) imaging of the chest reveals bilateral pulmonary infiltrates with prominent cavitary lesions, bilateral pleural thickening, and enlarged lymph nodes in the upper mediastinum. Admission sputum smear microscopy demonstrates the presence of positive bacillary smears, graded as 2+.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Drug-Susceptible Pulmonary Tuberculosis",
+      "rule_out_reason": "Sputum smear acid-fast bacillus positivity and an initial automated molecular assay indicated rifampicin susceptibility, but the patient experienced treatment failure with radiological progression on standard first-line anti-tuberculous therapy.",
+      "quote": "Results from the Xpert MTB/RIF assay were positive for MTBC but negative for RIF resistance, suggesting that the M. tuberculosis isolate was susceptible to RIF."
+    },
+    {
+      "candidate": "Non-Tuberculous Mycobacterial (NTM) Pulmonary Disease",
+      "rule_out_reason": "Cavitary lung disease with positive acid-fast bacillus smear microscopy can be caused by environmental mycobacteria like Mycobacterium avium complex or M. kansasii, but automated molecular testing specifically identified Mycobacterium tuberculosis complex.",
+      "quote": "Results from the Xpert MTB/RIF assay were positive for MTBC"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Phenotypic drug susceptibility testing confirmed resistance to isoniazid, rifampicin, and ethambutol, establishing multidrug-resistant tuberculosis (MDR-TB), with rpoB gene sequencing demonstrating an uncommon non-RRDR missense mutation at codon 491 (Ile491Phe) that avoided standard molecular detection.",
+      "quote": "However,results from the traditional DST showed that the clinical isolate collected from this patient three months after admission were resistant to INH, RIF, EMB, streptomycin (STR), levofloxacin (LFX), ofloxacin (OFX) and gatifloxacin (GFX)"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission Xpert results, phenotypic DST panels, sequencing, and specific disease labels."
+}

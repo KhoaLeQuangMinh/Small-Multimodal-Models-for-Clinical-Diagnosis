@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6560998_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 58-year-old man presents with right upper quadrant pain, vomiting, weight loss, elevated cholestatic enzymes, and an irregularly thickened gallbladder wall extending into liver parenchyma with porta hepatis lymphadenopathy. The clinical and imaging presentation is almost indistinguishable from advanced gallbladder carcinoma with liver invasion.\n2. Admission Breakpoint: The breakpoint is positioned after outpatient clinical presentation, baseline labs, abdominal ultrasound, abdominal CT, chest CT, and bone scan, prior to diagnostic laparoscopy and frozen section tissue histopathology.\n3. Differential Distinctions: Gallbladder carcinoma with local invasion and porta hepatis nodal metastasis is the primary radiological diagnosis; cholangiocarcinoma and hepatic metastatic disease are also considered; frozen section of laparoscopic liver biopsy revealing caseating epithelioid granulomas with Langhans giant cells establishes primary hepatobiliary tuberculosis.",
+  "case_prompt": "A 58-year-old man presented to the hepatogastroenterology clinic with a one-month history of persistent right hypochondrium pain and vomiting. The pain was dull and aching in character, mild in intensity, gradual in onset, progressive over time, non-radiating, and unrelated to food intake. He reported an unintentional weight loss of 3 kg over the same period. He had no history of jaundice, fever, chronic cough, or known chronic infectious exposure.\n\nPhysical examination was unremarkable, with no scleral icterus, palpable lymphadenopathy, or abdominal organomegaly.\n\nLaboratory investigations revealed an elevated alkaline phosphatase of 111 IU/L, gamma-glutamyl transpeptidase (GGT) of 61 IU/L, and erythrocyte sedimentation rate (ESR) of 70 mm/1st hour. Complete blood count, renal function tests, coagulation parameters, and serum CA 19-9 (18.9 U/mL, normal range 0\u201331 U/mL) were within normal limits.\n\nAbdominal ultrasonography demonstrated a distended gallbladder with irregular wall thickening. Abdominal computed tomography (CT) showed a gallbladder with irregularly thickened wall in the fundic region, an ill-defined hypodense lesion measuring 3.0 \u00d7 1.5 cm extending from the body of the gallbladder into the adjacent hepatic parenchyma, and an enlarged lymph node at the porta hepatis measuring 2.0 \u00d7 1.5 cm. Chest CT and bone scintigraphy showed no evidence of distant metastatic deposits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gallbladder Carcinoma with Direct Liver Invasion and Regional Nodal Metastasis",
+      "rule_out_reason": "Irregular thickening of the gallbladder fundus with an ill-defined hypodense mass invading directly into the adjacent liver parenchyma, porta hepatis lymphadenopathy, and progressive weight loss strongly suggested advanced gallbladder cancer, prompting surgical oncologic planning for extended cholecystectomy.",
+      "quote": "Computed tomography (CT) of the abdomen revealed GB with irregularly thickened wall in the region of the fundus. There was an illness defined hypodense area extending from the body of GB to adjacent hepatic parenchyma measuring 3.0x1.5 cm and an enlarged lymph node at porta hepatis measuring 2.0x1.5 cm. The above constellation of findings raised a radiological suspicion of malignant lesion of GB"
+    },
+    {
+      "candidate": "Cholangiocarcinoma / Metastatic Hepatic Malignancy",
+      "rule_out_reason": "Infiltrative biliary-hepatic masses with portal lymphadenopathy often represent cholangiocarcinoma or metastatic gastrointestinal malignancy, but normal serum CA 19-9 (18.9 U/mL) and negative chest CT and bone scintigraphy argued against widespread malignancy.",
+      "quote": "Bone scintigraphy and CT chest were negative for metastatic deposits... CA 19-9, 18.9u/ml (normal: 0-31u/ml) were within normal limits."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Pre-resection diagnostic laparoscopy revealed perihepatic adhesions with multiple small whitish granulomatous spots on the liver surface, and frozen section histopathological biopsy demonstrated numerous caseating epithelioid granulomas containing Langhans giant cells, establishing primary hepatobiliary tuberculosis.",
+      "quote": "Diagnostic laparoscopy was done to get tissue diagnosis prior to the definitive procedure. It revealed adhesions around liver with multiple small whitish spots on its surface. Liver lesion biopsy was taken... The histopathological evaluation of frozen section of liver tissue revealed numerous caseating epithelioid granuloma containing Langhan's giant cells, consistent with tuberculosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned prior to diagnostic laparoscopy and biopsy. Zero pathogen names in case_prompt. Mimicry of gallbladder cancer thoroughly addressed with verbatim quotes."
+}

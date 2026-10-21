@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7543151_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A young adult male native to an endemic rainforest region presents with severe violent headache, high fever refractory to paracetamol, marked cachexia, abdominal scratch excoriations, progressive encephalopathy with motor deficits, and CT findings of meningoencephalitis. The primary diagnostic challenge lies in distinguishing acute bacterial or viral meningoencephalitis from chronic tropical neuroinfections when standard infectious panels (malaria, HIV, viral hepatitis, syphilis) are negative.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following emergency triage, baseline laboratory evaluation (demonstrating severe anemia, leukocytosis, marked CRP elevation), routine infectious screening tests, and brain CT imaging, strictly prior to lymph node ganglion aspiration and lumbar puncture for parasitic microscopy.\n3. Differential Distinctions: Cerebral malaria is ruled out by negative malaria testing. Neurosyphilis and HIV-associated neuroinfections are excluded by non-reactive serologies. Acute purulent bacterial meningitis is distinguished by the patient's subacute cachexia, diffuse pruritus with scratching dermabrasions, prominent lymphadenopathy, and definitive demonstration of trypanosomes in ganglion fluid and CSF.",
+  "case_prompt": "A 28-year-old man native to Gabon and residing in the Noya region presented to the hospital with a severe and violent headache associated with a high fever of 39 \u00b0C. He had taken paracetamol for symptom relief without improvement. The patient exhibited progressive clinical deterioration, culminating in an altered state of consciousness that prompted admission to the intensive care unit.\n\nOn physical examination, the patient was cachectic and in an impaired state of consciousness with a Glasgow Coma Scale (GCS) score of 9/15. Neurological evaluation demonstrated a meningeal syndrome and a motor deficit. Dermatological inspection revealed multiple dermabrasions across the abdomen related to scratching lesions. Palpable peripheral lymph node enlargement (ganglion) was noted.\n\nInitial laboratory evaluation revealed severe anemia with a hemoglobin level of 8.7 g/dL, marked leukocytosis with a white cell count of 15,700/mm\u00b3, and an important inflammatory syndrome with a C-reactive protein (CRP) level of 243 mg/L. Initial screening investigations for hepatitis B virus (HBV), hepatitis C virus (HCV), human immunodeficiency virus (HIV), syphilis, and intraerythrocytic hemoparasites were all negative. A computed tomography (CT) scan of the brain demonstrated a meningoencephalitis pattern characterized by multiple capsulo-lenticulo-insular hypodensities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Severe cerebral malaria was a prime consideration given the acute febrile encephalopathy, high fever, severe anemia, and residency in an endemic region of Gabon, but rapid and microscopic diagnostic testing was non-reactive.",
+      "quote": "HBV, HCV, HIV, syphilis, and malaria testing were all negative."
+    },
+    {
+      "candidate": "Neurosyphilis / HIV-associated Central Nervous System Infection",
+      "rule_out_reason": "Chronic subacute meningoencephalitis with cachexia, motor deficits, and inflammatory markers raised concern for neurosyphilis or opportunistic infections secondary to retroviral disease, but serological evaluations were negative.",
+      "quote": "HBV, HCV, HIV, syphilis, and malaria testing were all negative."
+    },
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "High fever, meningeal syndrome, leukocytosis, and profound CRP elevation mimicked acute bacterial meningoencephalitis, but the presence of prominent abdominal scratching lesions, severe cachexia, and basal ganglia CT hypodensities prompted parasitic investigation rather than revealing pyogenic CSF changes.",
+      "quote": "The clinical examinations on admission revealed cachexia; multiple dermabrasion on the abdomen related to scratching lesions; impaired consciousness with a Glasgow Coma Scale of 9/15 and a meningeal syndrome, and motor deficit."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic analysis of fluid aspirated from an enlarged lymph node ganglion demonstrated extracellular trypanosomes, followed by lumbar puncture confirming stage 2 central nervous system disease with clear CSF, pleocytosis (27/mm\u00b3), and trypanosomes.",
+      "quote": "The diagnosis of HAT was done by microscopic analysis and revealed the presence of trypanosomes in aspiration fluid of the ganglion (Figure 2). Later on, the diagnosis of phase 2 HAT was confirmed based on the presence of trypanosomes in the cerebrospinal fluid (CSF)."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to ganglion aspiration and CSF microscopic identification. Direct verbatim quotes used for all differential rule-outs and diagnostic pivot."
+}

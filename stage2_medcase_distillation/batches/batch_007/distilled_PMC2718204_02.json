@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2718204_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 41-year-old man presents with acute-on-chronic diffuse abdominal pain of 5 days' duration. Abdominal CT shows an irregular 3 x 4 x 5 cm rim-enhancing mass in the left para-aortic/psoas region diagnosed as a psoas abscess, adjacent to a small aortic aneurysm. Differentiating a chronic tuberculous cold abscess with pseudoaneurysm formation from acute pyogenic psoas abscess or primary atherosclerotic aortic aneurysm is the core tension.\n2. Admission Breakpoint: The admission breakpoint concludes after clinical history, physical exam, normal chest radiography, and abdominal CT demonstrating the 3 x 4 x 5 cm rim-enhancing para-aortic/psoas mass and small aortic aneurysm. Surgical drainage, intraoperative aneurysmal rupture, emergent stent-graft deployment, and tissue PCR represent confirmatory/interventional stages.\n3. Differential Distinctions: Acute pyogenic psoas abscess (Staphylococcus aureus or enteric Gram-negative bacilli) is the commonest etiology of rim-enhancing psoas collections, but biopsy clot PCR identified Mycobacterium tuberculosis DNA. Atherosclerotic abdominal aortic aneurysm is uncommon in a 41-year-old and would not be associated with a necrotizing periaortic rim-enhancing mass eroding into the vessel wall.",
+  "case_prompt": "A 41-year-old man presents to the hospital with a five-day history of persistent diffuse abdominal pain. He has had no antecedent trauma or recognized chronic medical illnesses.\n\nOn physical examination, his vital signs are stable. Abdominal examination demonstrates diffuse tenderness on palpation, most notable in the left hemiabdomen and periumbilical area, without overt peritoneal rigidity.\n\nPlain chest radiography is normal, showing no parenchymal pulmonary consolidation, cavitation, or pleural effusion.\n\nAbdominal computed tomography (CT) reveals an irregular, low-attenuation soft-tissue mass measuring approximately 3 x 4 x 5 cm with prominent peripheral rim enhancement, situated in the left para-aortic region anterior to the left psoas muscle, consistent with a psoas abscess. In close anatomical contact with the collection, a small focal outpouching of the adjacent abdominal aorta is identified, consistent with a small aortic aneurysm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial psoas abscess",
+      "rule_out_reason": "Initial presumed clinical and radiological diagnosis based on acute abdominal pain and rim-enhancing fluid collection; however, polymerase chain reaction (PCR) performed on biopsy material confirmed mycobacterial DNA rather than pyogenic bacteria.",
+      "quote": "At that time, the radiological diagnosis indicated a psoas abscess."
+    },
+    {
+      "candidate": "Primary atherosclerotic or inflammatory abdominal aortic aneurysm",
+      "rule_out_reason": "Considered given the arterial outpouching, but the patient's young age (41 years) and intimate anatomical contact of the aneurysm with a rim-enhancing necrotizing retroperitoneal mass indicated infectious pseudoaneurysmal erosion rather than degenerative atherosclerosis.",
+      "quote": "abdominal CT showed an irregular low-attenuation mass, about 3x4x5 cm in size and with rim enhancement, in the left para-aortic region anterior to the left psoas muscle, as well as a small aortic aneurysm (Fig. 2A)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Drainage and biopsy of the rim-enhancing para-aortic collection complicated by bleeding yielded tissue consisting mainly of clots, which tested positive for tuberculosis by polymerase chain reaction (PCR).",
+      "quote": "The biopsy specimen consisted mainly of clots, and the polymerase chain reaction technique showed that this was positive for tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt stops at admission abdominal CT and normal chest radiograph. Surgical drainage, rupture, emergent stenting, and PCR assay reserved for reasoning. Text quotes are exact."
+}

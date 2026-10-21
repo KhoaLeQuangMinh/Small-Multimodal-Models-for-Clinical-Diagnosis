@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC9720115_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 9-year-old boy with alpha-thalassemia presents with fever, cervical lymphadenopathy, splenomegaly, and progressive leukopenia and neutropenia. Despite positive initial immunological tests, the lack of active pulmonary infiltrates led clinicians to suspect latent tuberculosis infection, while cervical lymph node biopsy was negative. The patient then suffered severe hyperferritinemia and bone marrow hemophagocytosis, masking an underlying disseminated bone marrow tuberculosis harbor of an InhA mutation conferring isoniazid resistance.\n2. Admission Breakpoint: Admission triage terminates following initial physical examination showing fever, cervical adenopathy, and splenomegaly, baseline complete blood counts demonstrating progressive bicytopenia/neutropenia (WBC 1.5-2.6 \u00d7 10\u2079/L, neutrophils 0.51-1.15 \u00d7 10\u2079/L, anemia), and abdominal ultrasound confirming splenomegaly and cervical adenopathy, prior to viral PCR panels, IGRA/PPD testing, lymph node biopsy, or repeated bone marrow aspirates.\n3. Differential Distinctions: Epstein-Barr virus (EBV) infectious mononucleosis was suspected given fever, cervical adenopathy, and splenomegaly in a child, but excluded by negative EBV DNA. Latent tuberculosis infection was initially entertained due to positive immune assays without lung infiltrates, but ruled out by progressive systemic disease and bone marrow involvement. Cervical tuberculous lymphadenitis was suspected but lymph node histology showed no necrosis or acid-fast bacilli. Primary/genetic HLH was ruled out by whole-genome sequencing, confirming secondary hemophagocytic syndrome triggered by isoniazid-resistant bone marrow tuberculosis.",
+  "case_prompt": "A 9-year-old boy presents with a 5-day history of intermittent fevers reaching up to 38.0 \u00b0C and nocturnal diaphoresis. His medical history is significant for alpha-thalassemia (-SEA/\u03b1\u03b1), for which he received five packed red blood cell transfusions prior to 2018. He was vaccinated with BCG at birth. He has no travel history, no other known familial diseases, and no known infectious sick contacts.\n\nOn physical examination upon admission, his body temperature is 38.0 \u00b0C. He exhibits no respiratory distress, cough, or weight loss. Abdominal and systemic examinations reveal bilateral cervical lymphadenopathy and splenomegaly.\n\nInitial complete blood count reveals a white blood cell count of 2.6 \u00d7 10\u2079/L (neutrophils 1.15 \u00d7 10\u2079/L), hemoglobin 74 g/L, and platelets 211 \u00d7 10\u2079/L. Over the subsequent 3 days, his hemoglobin falls to 64 g/L, necessitating a 2-unit red blood cell transfusion. Follow-up complete blood count demonstrates progressive leukopenia and neutropenia: white blood cell count 1.5 \u00d7 10\u2079/L, absolute neutrophil count 0.51 \u00d7 10\u2079/L, hemoglobin 90 g/L post-transfusion, and platelets 201 \u00d7 10\u2079/L.\n\nAbdominal ultrasound confirms splenomegaly and bilateral cervical lymph node enlargement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Epstein-Barr virus (EBV) infection / Infectious Mononucleosis",
+      "rule_out_reason": "Considered a likely etiology for prolonged fevers, night sweats, bilateral cervical lymphadenopathy, splenomegaly, and cytopenias in a school-aged child, but ruled out by negative EBV molecular testing.",
+      "quote": "Viral markers for Epstein-Barr virus (EB DNA) was negative."
+    },
+    {
+      "candidate": "Latent tuberculosis infection (inactive disease)",
+      "rule_out_reason": "Initially suspected after IGRA and PPD were reactive while chest CT revealed only calcified hilar and mediastinal nodes without parenchymal consolidation; ruled out as the patient experienced progressive active fever and systemic cytopenias.",
+      "quote": "Lung computed tomography (CT) showed calcification of the right hilum and mediastinal lymph nodes. In the absence of lung infiltration and tuberculous foci, latent tuberculosis infection (LTBI) was suspected."
+    },
+    {
+      "candidate": "Tuberculous lymphadenitis",
+      "rule_out_reason": "Suspected as the primary source of mycobacterial infection explaining cervical adenopathy, but ruled out when excisional biopsy of the cervical lymph node showed no granulomatous necrosis or acid-fast organisms.",
+      "quote": "Pathological findings from his cervical lymph node biopsy showed no caseous necrosis and no acid-fast mycobacteria."
+    },
+    {
+      "candidate": "Primary / Familial Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "Considered when the patient developed high fever, severe hyperferritinemia, and bone marrow hemophagocytosis, but excluded by whole-genome sequencing demonstrating no pathogenic exon variants.",
+      "quote": "Whole-genome sequencing confirmed no variants of exon. This test result rule out the known primary genetic causes of HLH."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Isoniazid-resistant bone marrow tuberculosis with secondary hemophagocytic syndrome",
+      "rule_out_reason": "A second bone marrow aspirate revealed acid-fast bacilli on direct smear; subsequent real-time PCR confirmed Mycobacterium tuberculosis with gene sequencing identifying an InhA promoter mutation (-15C > T) conferring isoniazid resistance, alongside bone marrow hemophagocytosis.",
+      "quote": "Bone marrow smear was positive for acid-fast staining (Figure 1)... Bone marrow for real-time PCR (qPCR) assay for TB was positive; moreover, gene sequencing revealed the promotor region of InhA gene mutation (-15C > T), which caused resistance to isoniazid."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Clean admission prompt with baseline labs and ultrasound. All confirmatory genetic, marrow, and mycobacterial testing kept in diagnostic reasoning. Verbatim quotes verified."
+}

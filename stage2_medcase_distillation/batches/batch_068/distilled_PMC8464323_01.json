@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8464323_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old female with primary myelofibrosis treated with the JAK1/2 inhibitor ruxolitinib presents with subacute cough, fever, dense lobar consolidation, and diffuse micronodular pulmonary opacities that fail empiric levofloxacin therapy. In an immunocompromised host on targeted biologic kinase inhibition, distinguishing opportunistic mycobacterial infection from refractory atypical/bacterial pneumonia or opportunistic fungal co-infection presents a substantial diagnostic challenge.\n2. Admission Breakpoint: Initial clinical assessment following failed outpatient fluoroquinolone therapy, documenting history of primary myelofibrosis on ruxolitinib, subacute respiratory symptoms, chest radiography and CT demonstrating left lower lobe airspace consolidation, bilateral nodular opacities, and mediastinal/supraclavicular lymphadenopathy, alongside initial negative sputum Gram and routine diagnostic stains, immediately before sputum nucleic acid amplification (PCR-MTB) results.\n3. Differential Distinctions: Bacterial lobar pneumonia was the initial working diagnosis, treated with 7 days of levofloxacin, but failed to show clinical or radiographic improvement. Opportunistic pulmonary cryptococcosis was a major differential (and eventually documented as a concomitant opportunistic infection on bronchoscopy during later disease progression with high cryptococcal antigen titer), but did not account for the initial pulmonary presentation that resolved with four-drug anti-tuberculous therapy. Pulmonary tuberculosis was established by positive sputum polymerase chain reaction for Mycobacterium tuberculosis (PCR-MTB), with initial symptom resolution on standard four-drug anti-tuberculosis therapy.",
+  "case_prompt": "A 56-year-old woman presented with a 3-week history of cough and fever. She had a 3-year history of primary myelofibrosis with massive symptomatic splenomegaly, for which she had been receiving ruxolitinib therapy for the past 10 months. She was a lifetime non-smoker, worked as a government officer, and had no known environmental exposure to pollutants or domestic pets. She had received childhood BCG vaccination. There was no history of known respiratory contacts with chronic infectious illnesses in household members.\n\nShe had presented to an outside medical facility where she was diagnosed with community-acquired lobar pneumonia and treated with oral levofloxacin for 7 days without clinical improvement. Chest radiography and computed tomography (CT) of the chest revealed extensive airspace consolidation in the left lower lobe, accompanied by numerous fine nodular opacities throughout both lungs, as well as enlarged right supraclavicular and subcarinal lymph nodes without pleural effusion. Initial sputum Gram stain and routine smear evaluations were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Lobar Pneumonia",
+      "rule_out_reason": "Initially diagnosed based on left lower lobe consolidation and acute-on-chronic respiratory symptoms, but ruled out due to complete lack of clinical and radiographic response to a 7-day course of levofloxacin.",
+      "quote": "She was diagnosed as having lobar pneumonia and received levofloxacin for seven days without any clinical improvement."
+    },
+    {
+      "candidate": "Pulmonary Cryptococcosis",
+      "rule_out_reason": "Considered as an opportunistic fungal pathogen in the setting of ruxolitinib-mediated immunosuppression (and subsequently identified as a co-infection when the patient later deteriorated with pleural effusion), but was not the primary initial infection driving the lobar consolidation that responded to four-drug antimycobacterial therapy.",
+      "quote": "However, BAL and pleural fluid cultures grew Cryptococcus neoformans, and serum cryptococcal antigen was positive with a titer of 1:1024."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Tuberculosis",
+      "rule_out_reason": "Despite initial negative sputum AFB smear microscopy and cultures, molecular nucleic acid amplification of sputum detected Mycobacterium tuberculosis, prompting initiation of quadruple anti-tuberculous therapy with prompt resolution of initial symptoms.",
+      "quote": "The sputum polymerase chain reaction for Mycobacterium tuberculosis (PCR-MTB) was detected. Therefore, pulmonary TB was diagnosed, and isoniazid (H), rifampin (R), pyrazinamide (Z), and ethambutol (E) were initiated."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission breakpoint isolates the clinical presentation before PCR-MTB and subsequent bronchoscopy results. Zero spoilers present."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10184060_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A middle-aged male maintained on biological immunosuppressive therapy presenting with subacute progressive dyspnea and dry cough without fever, hemoptysis, or weight loss. Bilateral multifocal pulmonary consolidations and mediastinal lymphadenopathy on CT create diagnostic tension between opportunistic pulmonary infection, non-infectious granulomatous lung disease (sarcoidosis), and drug-induced interstitial pneumonitis, complicated by the potential coexistence of both infectious and autoimmune granulomatous disease.\n2. Admission Breakpoint: The admission clinical narrative halts after initial physical examination, baseline hematology, inflammatory markers, and computed tomography pulmonary angiography documenting bilateral consolidations and ruling out pulmonary embolism, immediately prior to diagnostic bronchoscopy, bronchial washing GeneXpert PCR, and histopathology.\n3. Differential Distinctions: Acute pulmonary embolism is ruled out by contrast pulmonary angiography. Isolated pulmonary sarcoidosis can cause patchy consolidation and mediastinal lymphadenopathy, but in a patient on biological therapy, early diagnostic bronchoscopy demonstrating positive molecular tests for mycobacteria proves active infection preceding subsequent steroid-responsive sarcoidosis.",
+  "case_prompt": "A 57-year-old male presented with a 2-week history of sudden-onset, progressively worsening shortness of breath and dry cough. His respiratory symptoms were constant throughout the day without diurnal variation. He denied chest pain, palpitations, hemoptysis, fever, chills, or unintentional weight loss. His past medical history was notable for hypertension, hyperlipidemia, type 2 diabetes mellitus, and hidradenitis suppurativa diagnosed in 2006, for which he had been maintained on biological immunosuppressive therapy for the preceding year. He reported no known sick contacts, no recent travel, and no occupational exposure to industrial dusts, chemicals, or gases.\n\nOn physical examination, the patient was normotensive with a blood pressure of 136/80 mmHg, mildly tachypneic with a respiratory rate of 20 breaths/min, heart rate 78 beats/min, and oxygen saturation of 98% on ambient air. Chest auscultation revealed reduced air entry bilaterally with fine bibasilar crepitations. The patient was neither pale nor cyanotic, with no scleral icterus or digital clubbing. The remainder of the systemic physical examination was unremarkable.\n\nInitial laboratory evaluation revealed a hemoglobin of 12.3 g/dL, white blood cell count of 5,440 cells/μL (59.7% neutrophils, 19.1% lymphocytes, 5.0% eosinophils, and 13.8% monocytes), and a platelet count of 225,000/μL. The erythrocyte sedimentation rate (ESR) was elevated at 68 mm/h. Renal function tests were normal. Liver function tests were unremarkable with total bilirubin 5.5 μmol/L, alanine aminotransferase 18.3 IU/L, aspartate aminotransferase 16 IU/L, alkaline phosphatase 80 IU/L, total protein 72.9 g/L, albumin 37.2 g/L, and globulin 35.7 g/L.\n\nChest radiography revealed patchy bilateral infiltrates. Computed tomography pulmonary angiography demonstrated bilateral diffuse patchy consolidations without pulmonary embolism, along with a few borderline reactive mediastinal lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pulmonary Embolism",
+      "rule_out_reason": "Considered due to the sudden onset of progressive dyspnea and mild tachypnea in a patient with multiple cardiovascular risk factors; however, computed tomography pulmonary angiography showed patent pulmonary vasculature without filling defects.",
+      "quote": "A CT pulmonary angiography (Fig. 2) revealed bilateral diffuse patchy consolidation with no pulmonary embolus and few mediastinal reactive lymph nodes."
+    },
+    {
+      "candidate": "Isolated Pulmonary Sarcoidosis",
+      "rule_out_reason": "Considered because chest imaging showed persistent ground-glass opacities with lymphadenopathy and subsequent bronchial and skin biopsies showed non-caseating granulomas; however, bronchial washing molecular testing was positive for mycobacteria, establishing true coexistence rather than isolated sarcoidosis.",
+      "quote": "TB PCR Gene Expert of bronchial washing came positive for mycobacterium tuberculosis... A bronchial biopsy (Fig. 5) was done which showed a non-caseating granuloma with minimal inflammatory cell infiltrate compatible with sarcoidosis"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoscopy with GeneXpert PCR of bronchial washings was positive for Mycobacterium tuberculosis, establishing active pulmonary tuberculosis triggered in the setting of long-term biological therapy.",
+      "quote": "Bronchoscopy was done, which revealed mild bilateral inflammation mainly in the right upper lobe lingula and the right middle lobe with no endobronchial lesion or mucous secretion. TB PCR Gene Expert of bronchial washing came positive for mycobacterium tuberculosis. Hence, the patient was started on Ethambutol 1200 mg OD PO, Isoniazid 300 mg OD PO, Pyrazinamide 1500 mg OD PO and Rifampicin 600 mg OD PO."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The prompt halts prior to diagnostic bronchoscopy and GeneXpert PCR. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

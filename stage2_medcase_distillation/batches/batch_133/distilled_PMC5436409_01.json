@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5436409_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A 40-year-old traveler arriving in Lagos, Nigeria from Monrovia, Liberia collapses acutely with high fever, sore throat, and lymphadenopathy, subsequently developing severe gastrointestinal losses and microscopic hematuria unresponsive to empiric therapies for common tropical infections. The critical clinical dilemma involves distinguishing endemic regional febrile illnesses (such as severe malaria, enteric fever, or Lassa fever) from an imported, highly lethal filoviral hemorrhagic fever posing an immense nosocomial and public health hazard.\n2. Admission Breakpoint: The admission triage ends when the patient demonstrates treatment failure under empiric antimalarial and antibacterial regimens, coupled with the onset of vomiting, diarrhea, and microscopic hematuria on basic urinalysis, triggering urgent biosafety containment and send-out viral RNA diagnostics.\n3. Differential Distinctions: Severe malaria and typhoid fever are hyperendemic causes of acute febrile collapse and cytopenias in West Africa, but failure to respond to antiparasitic/antibiotic therapy along with bleeding signs pointed away from them; regional endemic hemorrhagic fevers like Lassa fever or dengue fever cause comparable febrile and hemorrhagic diatheses but yielded no amplicon signals on specific reverse-transcriptase PCR; whereas filovirus infection (Zaire ebolavirus) was confirmed by RT-PCR detection of the characteristic 300-bp L-gene amplicon from both blood and urine.",
+  "case_prompt": "A 40-year-old male traveler arriving from Monrovia, Liberia, via transit stops in Accra, Ghana, and Lomé, Togo, collapsed acutely at the international airport terminal in Lagos, Nigeria, on July 20, 2014. He was immediately transported by emergency services to a private hospital in the Obalende district of Lagos and admitted for urgent stabilization.\n\nOn admission, the patient was severely prostrated and toxic-appearing, presenting with high-grade fever, pharyngeal erythema with severe sore throat, and generalized lymphadenopathy. Empirical therapy directed against common endemic tropical febrile pathogens was promptly initiated. Over the subsequent 48 hours, the patient failed to demonstrate clinical improvement. Instead, his clinical status progressively deteriorated with the emergence of profuse watery diarrhea, intractable vomiting, and overt systemic toxicity.\n\nBaseline triage urinalysis revealed microscopic hematuria. Given the combination of progressive multiorgan symptoms, lack of response to initial empirical regimens, and an epidemiological origin from an active outbreak region in West Africa, high-level infection control precautions were instituted, and diagnostic blood and urine specimens were obtained for specialized infectious investigations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Severe falciparum malaria",
+      "rule_out_reason": "Malaria is the leading cause of acute febrile collapse in travelers arriving in West Africa, but the patient exhibited persistent high fever and multi-system clinical deterioration despite empiric antimalarial treatment.",
+      "quote": "He presented with high fever, lymphadenopathy and sore throat and was treated for malaria and typhoid fever until he later developed diarrhoea, vomiting and microscopic haematuria."
+    },
+    {
+      "candidate": "Typhoid fever (enteric fever / Salmonella enterica serovar Typhi)",
+      "rule_out_reason": "Enteric fever frequently causes sustained high fevers, sore throat, and gastrointestinal symptoms in this region, but failed to improve with antibacterial therapy and progressed to hemorrhagic manifestations.",
+      "quote": "The culmination of the clinical presentation, the patient's non-response to treatment for malaria and typhoid, as well as his epidemiological link to Liberia, raised the suspicion for EVD."
+    },
+    {
+      "candidate": "Lassa fever / Dengue fever",
+      "rule_out_reason": "Lassa virus and dengue virus are endemic causes of viral hemorrhagic fever in West Africa, but singleplex RT-PCR of blood and urine specimens yielded no amplification products.",
+      "quote": "However, no signals were observed for Lassa or Dengue fever viruses."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Reverse transcriptase PCR targeting the RNA-dependent RNA polymerase (L) gene on patient blood and urine samples successfully amplified the diagnostic 300-bp filovirus amplicon, subsequently sequenced and matched to Zaire ebolavirus.",
+      "quote": "Investigations carried out on viral RNA purified from the blood and urine specimens of the patient revealed the presence of the expected amplicon size (300 bp) for Filoviruses (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to admission breakpoint. Case prompt stops before PCR results, with zero disease or pathogen spoilers."
+}

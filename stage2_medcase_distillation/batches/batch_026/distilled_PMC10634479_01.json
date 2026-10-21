@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10634479_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A young adult male presents with painful necrotic punched-out ulcers and generalized lymphadenopathy. Five months of prior anti-tubercular therapy for inguinal swellings failed, and the lack of classic lepromatous features (such as leonine facies, earlobe infiltration, or nerve enlargement) led to misdiagnoses including pityriasis lichenoides, pyoderma gangrenosum, and tuberculous lymphadenitis before biopsy identified diffuse lepromatous leprosy with Lucio's phenomenon.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after emergency presentation, physical examination detailing ulcer characteristics and generalized lymphadenopathy, and baseline admission laboratory testing showing anemia and leukocytosis, stopping strictly prior to punch biopsy of skin ulcers, lymph node excision/biopsy, Fite-Faraco staining, and PCR testing.\n3. Differential Distinctions: Diffuse lepromatous leprosy with Lucio's phenomenon is distinguished from pyoderma gangrenosum by histopathologic demonstration of neurovascular foamy histiocytes and acid-fast bacilli on Fite-Faraco stain; from PLEVA by absence of typical apoptotic keratinocytes and presence of mycobacterial vasculitis; and from tuberculous lymphadenitis by lack of response to anti-tubercular therapy and identification of M. leprae and M. lepromatosis by PCR.",
+  "case_prompt": "A young adult male in his twenties presents to the hospital with a 2-month history of progressive painful ulcerations with necrotic slough, high-grade fevers, and generalized arthralgias, on a background of chronic bilateral inguinal lymph node swelling present for 5 months. For the inguinal swellings, he had been empirically prescribed a multi-drug regimen for presumed mycobacterial lymphadenitis without clinical response. Two months prior to admission, he developed pustular cutaneous eruptions that rapidly ulcerated, accompanied by systemic fever and joint pain.\n\nOn physical examination, the patient has multiple well-defined, punched-out cutaneous ulcers of varying sizes featuring violaceous borders and necrotic hemorrhagic slough, distributed predominantly across both upper and lower extremities. Examination of the lymphatic system reveals multiple tender, enlarged lymph nodes in the bilateral inguinal, axillary, and cervical chains, with the largest node measuring 3 x 2 cm. There is no evidence of earlobe infiltration, cutaneous sensory loss, or peripheral nerve thickening.\n\nBaseline laboratory investigations reveal anemia, leukocytosis, and significantly elevated acute-phase and chronic inflammatory markers.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pityriasis lichenoides et varioliformis acuta (PLEVA)",
+      "rule_out_reason": "Considered clinically due to the rapid appearance of necrotizing papuloulcerative lesions with hemorrhagic crusts, but excluded by histopathology showing neurovascular foamy histiocytes laden with acid-fast bacilli.",
+      "quote": "Initial clinical differentials of pityriasis lichenoides et varioliformis acuta, LP and pyoderma gangrenosum were considered."
+    },
+    {
+      "candidate": "Pyoderma gangrenosum",
+      "rule_out_reason": "Punched-out cutaneous ulcers with violaceous margins and necrotic slough strongly suggested an autoinflammatory neutrophilic dermatosis, but histopathology revealed prominent vascular invasion by acid-fast mycobacteria rather than a sterile neutrophilic infiltrate.",
+      "quote": "Initial clinical differentials of pityriasis lichenoides et varioliformis acuta, LP and pyoderma gangrenosum were considered."
+    },
+    {
+      "candidate": "Tuberculous lymphadenitis",
+      "rule_out_reason": "The initial 5-month history of bilateral inguinal lymphadenopathy was treated empirically with anti-tubercular therapy, but failed to improve, and subsequent evaluations demonstrated lepromatous disease rather than tuberculosis.",
+      "quote": "The asymptomatic inguinal swelling had been present for the last 5 months for which he was on anti-tubercular drugs."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Punch biopsy of the ulcer margin demonstrated neurovascular foamy histiocytic infiltrates with vasculitis and abundant fragmented acid-fast bacilli on Fite-Faraco staining, with PCR and sequencing confirming dual infection with Mycobacterium leprae and Mycobacterium lepromatosis establishing diffuse lepromatous leprosy with Lucio's phenomenon.",
+      "quote": "Punch biopsy of the skin from margins of ulcers demonstrated infiltrates of foamy histiocytes and lymphocytes following neurovascular bundles, admixed with neutrophils and signs of vasculitis (Fig. 2a-c). Fite-Faraco staining revealed fragmented and granular acid fast bacilli (Fig. 2d). Biopsy of inguinal lymph nodes showed infiltration of foamy histiocytes and presence of acid fast bacilli (Fig. 2e, f)."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to cutaneous and lymph node biopsy histopathology. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

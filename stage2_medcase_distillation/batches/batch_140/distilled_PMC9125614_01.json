@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9125614_01",
+  "disease": "Neurocysticercosis",
+  "think": "<think>\n1. Core Clinical Tension: A 37-year-old female immigrant from an endemic Latin American country presents acutely to the emergency department with psychiatric symptoms including paranoid persecutory delusions, auditory hallucinations, depression, and headache. The central tension is differentiating a primary psychotic disorder or delirium from an organic neurobehavioral manifestation of chronic structural parasitic CNS lesions.\n2. Admission Breakpoint: The breakpoint occurs in the emergency department and initial medical ward evaluation upon completion of the physical, neurologic, and mental status examinations (MMSE 27, intact orientation, absence of focal neurologic deficits), immediately prior to cross-sectional brain neuroimaging (CT and MRI).\n3. Differential Distinctions: Delirium presents with acute fluctuating attention and cognitive impairment, but is excluded by intact orientation and memory with an MMSE score of 27. Primary psychiatric disorders (such as schizophrenia or psychotic depression) feature auditory hallucinations and persecutory delusions, but the presence of headaches and collateral history of seizures with an incomplete antiparasitic regimen raises suspicion for organic brain disease; neuroimaging confirms structural parenchymal calcifications and encephalomalacia.\n</think>",
+  "case_prompt": "<case_prompt>\nA 37-year-old female immigrant from El Salvador presents to the emergency department with a headache, strange behavior, auditory hallucinations, and paranoid delusions. She describes feeling depressed, with decreased appetite, sleep deprivation, and forgetfulness. Collateral history reveals that the patient has a past medical history of generalized tonic-clonic seizures, for which an antiepileptic medication was initiated, along with a prescription for antiparasitic pharmacotherapy that she was unable to complete due to a lack of insurance.\n\nOn physical examination, she is afebrile with normal vital signs. The general physical examination reveals no abnormalities, and review of systems demonstrates no focal neurological deficits. On mental status examination, her appearance is unkempt, with poor eye contact and strange behavior. Her mood is described as depressed with a constricted affect. Her thought process is concrete with occasional circumstantiality; thought content is positive for paranoid delusions regarding harm to her family. Perceptual disturbances include prominent auditory hallucinations. Insight and judgment are impaired, but orientation and memory are intact, with a Mini-Mental State Examination (MMSE) score of 27. She is admitted to the medical service to rule out delirium.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Delirium",
+      "rule_out_reason": "Considered upon presentation because of acute behavioral disturbance, forgetfulness, and perceptual abnormalities; ruled out by preserved level of consciousness, intact orientation and memory, and an MMSE score of 27.",
+      "quote": "She was admitted to the medical floor to rule out delirium, and the consultation-liaison (CL) team was contacted."
+    },
+    {
+      "candidate": "Primary Psychiatric Disorder (Primary Psychosis)",
+      "rule_out_reason": "Considered given prominent persecutory delusions, auditory hallucinations, constricted affect, and lack of focal deficits on neurological exam; ruled out as a primary functional psychiatric illness once diagnostic neuroimaging revealed underlying organic structural frontoparietal lesions.",
+      "quote": "On the following day of her admission, she was cleared by the medical team and transferred to psychiatry for psychosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was cranial CT and MRI showing right frontoparietal hypodensities, encephalomalacia, and abnormal irregular calcifications corresponding to past parasitic CNS infection in a patient who never took prescribed albendazole.",
+      "quote": "The CT brain indicated hypodense regions in the right frontal and parietal lobes, as well as abnormal and irregular calcifications (Figure 1). The MRI revealed encephalomalacia in the upper right frontal and parietal lobes, as well as a rim of adjacent gliosis."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Zero disease spoilers in case_prompt. Verbatim quotes from source text."
+}

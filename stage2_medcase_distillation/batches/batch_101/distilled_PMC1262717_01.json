@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC1262717_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 50-year-old non-diabetic female presents with acute-on-chronic bilateral digital ischemia and toe gangrene with an elevated ESR (105 mm/hr), normal distal pulses, and normal arterial Doppler ultrasound. On thorough skin and nerve examination, she is found to have madarosis, hypopigmented hypoaesthetic macules, and thickened ulnar and popliteal nerves. The clinical tension is distinguishing secondary antiphospholipid antibody syndrome and neuropathic trophic digital gangrene complicating borderline tuberculoid leprosy from systemic necrotizing vasculitis, thromboangiitis obliterans, or atherosclerotic peripheral vascular disease.\n2. Admission Breakpoint: Admission triage terminates following complete vascular, dermatological, and neurological examination, arterial Doppler imaging, and baseline labs (ESR 105, normal fasting glucose and lipids, negative ANCA), immediately prior to skin biopsy, slit-skin smear, and antiphospholipid/coagulation panels.\n3. Differential Distinctions: Systemic necrotizing vasculitis is ruled out by negative ANCA and presence of peripheral nerve enlargement with hypoaesthetic macules. Macrovascular peripheral arterial disease is ruled out by intact peripheral pulses and normal arterial Doppler studies.",
+  "case_prompt": "A 50-year-old female presented with a 2-month history of progressive blackish discoloration of her toes bilaterally. She had no medical history of diabetes mellitus, systemic hypertension, or cardiovascular disease, and denied tobacco use.\n\nOn physical examination, she had frank gangrene involving the right great toe and second toe, with early gangrenous discoloration of the right third toe. All peripheral pulses in the upper and lower extremities—including the femoral, popliteal, dorsalis pedis, and posterior tibial arteries—were easily palpable and symmetrical, with no radiofemoral delay. Cardiovascular examination revealed normal heart sounds without murmurs, and there were no carotid or femoral bruits.\n\nDermatological and neurological examination revealed madarosis (loss of eyebrow and eyelash hair) and multiple hypopigmented, hypoaesthetic macular lesions distributed across her upper extremities and thighs. Palpation of the peripheral nerves demonstrated marked bilateral symmetrical thickening of the ulnar and common peroneal/popliteal nerves.\n\nLaboratory evaluation revealed a markedly elevated erythrocyte sedimentation rate (ESR) of 105 mm/hr. Fasting blood glucose, lipid profile, and renal panels were entirely normal. Antineutrophil cytoplasmic antibodies (ANCA) were negative. Duplex Doppler ultrasonography of the lower extremity arterial tree demonstrated normal triphasic flow patterns without evidence of arterial occlusion or stenosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Necrotizing Vasculitis (e.g., Polyarteritis Nodosa / ANCA-Associated Vasculitis)",
+      "rule_out_reason": "Peripheral digital gangrene accompanied by an ESR over 100 mm/hr strongly suggested a systemic necrotizing vasculitis; however, ANCA was negative and the presence of cutaneous hypoaesthetic macules with thickened peripheral nerve trunks pointed toward a primary neuro-dermatological infectious etiology.",
+      "quote": "anti neutrophil cytoplsmic antibody (ANCA) negative."
+    },
+    {
+      "candidate": "Peripheral Artery Disease / Thromboangiitis Obliterans (Buerger's Disease)",
+      "rule_out_reason": "Severe bilateral digital gangrene is commonly caused by occlusive arterial disease, but the patient lacked cardiovascular risk factors, all distal peripheral pulses were well palpated, and arterial Doppler ultrasonography showed no vascular occlusion.",
+      "quote": "All the peripheral arteries were well felt, there was no radiofemoral delay... DOPPLER of the lower limb arteries did not reveal any abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when skin biopsy of the hypoaesthetic macules revealed borderline tuberculoid leprosy, corroborated by slit skin smears demonstrating a bacteriological index of 1+, with subsequent identification of IgM anti-cardiolipin antibodies explaining the thrombotic gangrene.",
+      "quote": "A skin biopsy of the lesions revealed borderline tuberculoid leprosy. Slit skin smears revealed a bacteriological index of 1+."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt cleanly excludes biopsy findings, slit skin smear bacteriological index, anti-cardiolipin antibody titers, and treatment response."
+}

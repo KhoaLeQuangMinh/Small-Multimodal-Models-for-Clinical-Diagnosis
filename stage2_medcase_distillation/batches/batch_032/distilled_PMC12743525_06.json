@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12743525_06",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 42-year-old man with a 20-year history of longstanding epilepsy maintained on phenytoin presented with recurrent generalized tonic-clonic seizures. The initial referring hospital attributed the presentation to routine breakthrough epilepsy, but five days of fever and admission brain CT demonstrating multiple cortical/subcortical hypodensities with perilesional edema indicated an acute secondary CNS infective etiology in a patient with chronic alcoholism and diabetes.\n2. Admission Breakpoint: The admission clinical triage ends following initial stabilization, physical examination, and emergency brain CT revealing multiple hypodense lesions with perilesional edema, prompting antiepileptic optimization and mannitol administration. Day 2 CSF examination (lymphocytic pleocytosis, cobweb coagulum, ADA), Day 5 MRI, and antitubercular therapy initiation occur post-breakpoint.\n3. Differential Distinctions: Idiopathic breakthrough epilepsy is characterized by subtherapeutic anticonvulsant levels or trigger exposure without systemic fever or focal structural lesions on CT. Neurocysticercosis typically presents with seizures and cystic or calcified lesions without acute high fever or cobweb coagulum in CSF. Multiple tuberculomas with tuberculous meningitis produce subacute fever, multiple ring-enhancing cortical/subcortical lesions with edema, and a pathognomonic CSF cobweb coagulum with elevated ADA.",
+  "case_prompt": "A 42-year-old man with type 2 diabetes mellitus, chronic alcohol dependence, and heavy cigarette smoking presented to the emergency department with recurrent generalized tonic-clonic seizures over the preceding 24 hours, preceded by five days of fever. He had a 20-year history of epilepsy without an identifiable etiology, maintained on oral phenytoin 100 mg twice daily with a history of recurrent breakthrough seizures. He had no prior history of chronic pulmonary infections or infectious exposures. At the initial referring hospital, his acute deterioration was attributed solely to breakthrough epilepsy. On presentation to the referral hospital, he was febrile and drowsy but arousable to verbal commands, with no focal motor deficits, cranial nerve palsies, or neck stiffness. An urgent non-contrast computed tomography (CT) scan of the brain revealed multiple hypodense cortical and subcortical lesions, several of which exhibited ill-defined margins and prominent perilesional edema. Intravenous mannitol was initiated for cerebral edema, and antiepileptic therapy was optimized.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Breakthrough Epilepsy",
+      "rule_out_reason": "Considered by the referring hospital because the patient had longstanding epilepsy since age 22 with chronic phenytoin therapy and a history of breakthrough seizures. Ruled out by the five-day history of fever and admission brain CT demonstrating multiple cortical and subcortical hypodense lesions with perilesional edema.",
+      "quote": "At the referring hospital, his condition was attributed to breakthrough epilepsy."
+    },
+    {
+      "candidate": "Pyogenic Brain Abscesses / Acute Bacterial Meningitis",
+      "rule_out_reason": "Considered due to the combination of acute fever, altered sensorium, recurrent seizures, and multiple intracranial hypodense lesions with surrounding edema in a diabetic host. Ruled out by CSF findings on Day 2 demonstrating lymphocytic pleocytosis, elevated ADA, low glucose, and a characteristic cobweb coagulum rather than polymorphonuclear pleocytosis and purulent exudate.",
+      "quote": "CT brain showed multiple hypodense cortical and subcortical lesions, some with ill-defined margins and perilesional edema."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic discovery occurred on Day 2 with CSF analysis revealing lymphocytic pleocytosis, hypoglycorrhachia (62 mg/dL vs random blood glucose 203 mg/dL), ADA 15 U/L, and pathognomonic cobweb coagulum formation, followed on Day 5 by MRI demonstrating multiple bilateral frontal and parietal ring-enhancing tuberculomas.",
+      "quote": "CSF analysis on Day 2 revealed lymphocytic pleocytosis, low glucose (62 mg/dL), random blood sugar (RBS) at the time of lumbar puncture: 203 mg/dL, ADA 15 U/L, and a cobweb coagulum (Fig. 4b) suggestive of tuberculous meningitis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint principles. The case narrative stops prior to CSF examination and MRI. Spoilers regarding cobweb coagulum and tuberculosis excluded from case prompt. Exact quotes verify candidate rule-outs."
+}

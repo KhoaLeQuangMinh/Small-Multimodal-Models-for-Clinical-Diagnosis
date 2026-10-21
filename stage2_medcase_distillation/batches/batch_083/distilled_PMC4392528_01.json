@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4392528_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young adult garment worker presents with subacute progressive spastic paraparesis, sensory level at T5, and an intramedullary ring-enhancing thoracic spinal cord mass on MRI. The central tension lies in differentiating an intramedullary spinal neoplasm (e.g., astrocytoma or ependymoma) or idiopathic transverse myelitis from an isolated intramedullary tuberculoma in a patient with a normal chest radiograph and nonreactive Mantoux test.\n2. Admission Breakpoint: Clinical presentation concludes following physical and neurological examination (spastic paraparesis power 3/5, hyperreflexia, bilateral clonus, sensory deficit below T5), baseline blood work, nonreactive Mantoux test, normal chest radiograph, and spinal MRI showing the 16 x 10 mm D3 intramedullary ring-enhancing mass, before laminectomy and biopsy.\n3. Differential Distinctions: Intramedullary spinal cord tumor is the primary radiological diagnosis but is disproven when histology reveals epithelioid granulomas with acid-fast bacilli. Idiopathic transverse myelitis is excluded by the well-circumscribed expansile mass morphology and definitive histopathology.",
+  "case_prompt": "A 25-year-old male garment factory worker presents with a 3-month history of an abnormal band-like sensation across his upper abdomen, unaccompanied by local abdominal or spinal pain. Concurrently, he noted urinary hesitancy, a sensation of incomplete bladder emptying, and a feeling of inadequate bowel evacuation. Fifteen days after onset, he developed descending paresthesias spreading from his upper abdomen down to both feet, followed over the subsequent 2 months by progressive weakness of trunk musculature and progressive bilateral lower extremity weakness and tightness that began in the left leg and subsequently involved the right leg. Perianal sensation remained intact.\n\nOn physical examination, higher mental functions and cranial nerves are intact. Upper extremity motor power is 5/5 bilaterally with normal tone and deep tendon reflexes. Lower extremity motor power is 3/5 bilaterally with hypertonia, exaggerated deep tendon reflexes, and bilateral ill-sustained ankle clonus. Sensory examination demonstrates sensory impairment below the T5 dermatomal level, corresponding to the D3 vertebral level. General physical examination is otherwise unremarkable.\n\nBaseline laboratory investigations, including complete blood count, renal profile, and liver function tests, are normal. Serological testing for HIV and hepatitis B surface antigen is negative. Chest radiography is normal. The erythrocyte sedimentation rate (ESR) is moderately elevated, and a Mantoux skin test is nonreactive.\n\nMagnetic resonance imaging (MRI) of the entire spinal cord reveals an oval intramedullary mass measuring 16 x 10 mm at the D3 level. The lesion is isointense to hypointense on T1-weighted imaging and isointense to subtly hyperintense with a central flow void on T2-weighted imaging, associated with cord edema rostral to the mass. Contrast-enhanced MRI demonstrates a sharply defined, brilliantly enhancing peripheral rim surrounding a hypointense center.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramedullary spinal cord tumor (e.g., astrocytoma, ependymoma)",
+      "rule_out_reason": "A well-circumscribed, brilliantly ring-enhancing solitary intramedullary cord mass with perilesional edema in a patient with a normal chest X-ray and negative Mantoux test was radiologically diagnosed as an intramedullary neoplasm; however, surgical excision and histopathology revealed necrotizing granulomatous inflammation rather than neoplastic proliferation.",
+      "quote": "The diagnosis was intramedullary spinal cord tumor by MRI."
+    },
+    {
+      "candidate": "Idiopathic transverse myelitis / demyelinating disease",
+      "rule_out_reason": "Subacute descending sensory loss and bilateral spastic paraparesis can signify inflammatory myelitis, but neuroimaging revealed a discrete 16 x 10 mm expansile mass with central flow void and intense ring enhancement rather than non-expansile plaque-like signal alteration.",
+      "quote": "Contrast-enhanced MRI showed a brilliantly enhancing lesion with hypointense centre at D3 with sharp margins [Figure 2]. The oval-shaped lesion measured 16 x 10 mm."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microsurgical resection via D3-D4 laminectomy enabled total excision of the fleshy mass, and histopathologic examination revealed epithelioid granulomas with Langhans giant cells and microscopic demonstration of acid-fast bacilli typical of Mycobacterium tuberculosis.",
+      "quote": "The histopathology showed multiple granulomas [Figure 4] comprising of lymphocytes plasma cells, neutrophils, and large number of epitheloid cells [Figure 5]in clusters with demonstration of acid fast bacilli (AFB) [Figure 6] typical of Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of primary solitary intramedullary spinal cord tuberculoma mimicking a spinal neoplasm. Admission presentation excludes intraoperative findings, acid-fast stain demonstration, and antituberculous therapy."
+}

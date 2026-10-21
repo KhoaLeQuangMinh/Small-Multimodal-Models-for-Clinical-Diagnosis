@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3212973_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: Acute febrile syndrome accompanied by gastrointestinal pain and tachycardia in a returned traveler from Central Africa without prophylaxis, raising an immediate differential of arboviral fevers, enteric fever, and acute protozoal infection, which was further complicated later by delayed recrudescence 14 days post-artemisinin combination therapy.\n2. Admission Breakpoint: Admission clinical evaluation concludes following vital signs, physical exam, baseline triage electrocardiogram, and plain chest radiography; examination of thick and thin peripheral blood smears and parasitemia quantitation constitute confirmatory diagnostic testing.\n3. Differential Distinctions: Enteric fever (Salmonella enterica) presents with sustained fever and abdominal discomfort but lacks intraerythrocytic inclusions and yields positive blood cultures; viral hemorrhagic fevers or dengue cause prominent myalgias and cytopenias without blood film parasites; Plasmodium falciparum malaria is confirmed by the visualization of intraerythrocytic ring-form trophozoites on peripheral smear.",
+  "case_prompt": "A 32-year-old Caucasian male presented to the Infectious Diseases Unit two days after returning from a one-month business trip in the Democratic Republic of Congo. He reported high fevers, severe frontal headache, nausea, and epigastric abdominal pain that had begun 48 hours prior to admission. He had not taken any chemoprophylaxis during his travel.\n\nUpon admission, his vital signs were: body temperature 37.1 °C, pulse rate 112 beats per minute, blood pressure 120/60 mmHg, and oxygen saturation 99% on room air. Cardiopulmonary and abdominal examinations were notable for tachycardia and mild epigastric tenderness.\n\nA plain chest radiograph and an electrocardiogram were normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Typhoid Fever (Enteric Fever)",
+      "rule_out_reason": "Enteric fever is a leading cause of febrile illness and gastrointestinal discomfort in travelers returning from endemic zones, but blood cultures for bacterial pathogens using continuous automated monitoring were sterile.",
+      "quote": "Blood cultures were done using the BacT/ALERT system (bioMerieux , Marcy l'Etoile, France)... Blood cultures for bacteria and fungi were negative."
+    },
+    {
+      "candidate": "Acute Bacterial Sepsis",
+      "rule_out_reason": "Systemic bacterial infection was excluded by negative aerobic and anaerobic blood cultures and prompt therapeutic response to antiparasitic agents rather than broad-spectrum antibacterial therapy.",
+      "quote": "Blood cultures for bacteria and fungi were negative. A control of biochemical tests and blood smear done after 2 days showed resolution of anemia and negativity of parasitemia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of the peripheral blood smear confirmed Plasmodium falciparum with 0.2% parasitemia on initial admission; after a full course of artemether-lumefantrine, readmission 14 days later revealed recrudescent Plasmodium falciparum with 2% parasitemia (late clinical failure), which successfully cleared with oral quinine and doxycycline.",
+      "quote": "Peripheral blood smear was positive for Plasmodium falciparum with 0,2% parasitemia... After 14 days he was readmitted to the Infectious Diseases unit with high fever (39.6  C) and headache... blood smear was performed and resulted positive for Plasmodium falciparum with 2% parasitemia. The combination of oral quinine solfate 600 mg three times per day and doxycicline 100 mg twice per day was started"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation restricted to Day 1 triage prior to peripheral blood smear review. Zero leakage of pathogen or antimalarial regimen in presentation."
+}

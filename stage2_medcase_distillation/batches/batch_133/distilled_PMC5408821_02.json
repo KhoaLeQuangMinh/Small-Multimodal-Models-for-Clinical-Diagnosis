@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5408821_02",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 14-year-old female presents with acute high fever (39 °C), progressive headache, psychomotor agitation, and generalized tonic-clonic seizures developing within 12 hours of her elder sister experiencing a fatal neurological crisis. The core diagnostic tension centers on differentiating a common-source environmental toxidrome or shared neurotropic infectious outbreak (such as enteroviral meningoencephalitis) from severe atypical manifestations of endemic arboviral infection causing hyperacute cerebral edema and uncal herniation.\n2. Admission Breakpoint: The admission phase ends when emergent cranial computerized axial tomography demonstrates severe cerebral edema and uncal herniation following orotracheal intubation for rapid neurological collapse, before cerebrospinal fluid PCR or serum serological assays are obtained.\n3. Differential Distinctions: Enteroviral meningoencephalitis frequently produces clustered childhood/adolescent central nervous system infections with agitation and convulsions, but CSF molecular analysis was negative; household toxic exposure was suspected given temporally clustered siblings with neurological collapse, but high persistent fever (39 °C) and toxicological evaluations were non-revealing; whereas neuroinvasive dengue infection can lead to massive intracranial hypertension, diffuse edema, and fatal uncal herniation.",
+  "case_prompt": "A 14-year-old female presented to the emergency department at 2:20 AM with acute high-grade fever, progressive headache, and new-onset generalized seizures. Her symptoms began approximately 12 hours after her elder sibling experienced an acute, catastrophic neurological illness. Over the preceding 24 hours, the patient developed a sustained fever up to 39 °C and a worsening, severe headache, followed by marked psychomotor agitation and subsequent generalized tonic-clonic seizures.\n\nShe was transported to a local community hospital in Axochiapan, Morelos, where rapid neurological deterioration necessitated emergent orotracheal intubation for airway protection. She was immediately transferred to a regional tertiary pediatric hospital.\n\nOn physical examination upon arrival, the patient was intubated, comatose, and mechanically ventilated, exhibiting signs of severe neurological depression. Urgent cranial computerized axial tomography (CAT) revealed severe diffuse cerebral edema accompanied by acute uncal herniation. Initial triage laboratory blood tests were drawn, and the patient was admitted to the pediatric intensive care unit for emergent neurorespiratory and hemodynamic stabilization.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Enteroviral meningoencephalitis",
+      "rule_out_reason": "Enteroviruses are recognized causes of clustered viral central nervous system infections leading to agitation, status epilepticus, and severe cerebral edema in children and teenagers, but CSF PCR was negative.",
+      "quote": "PCR was performed to detect enterovirus in the CSF, with negative results."
+    },
+    {
+      "candidate": "Acute toxic ingestion / common household poisoning",
+      "rule_out_reason": "The rapid occurrence of severe seizures and encephalopathy in two siblings within a 12-hour window strongly raised suspicion for an environmental or household toxin, but high sustained fever (39 °C) and absence of toxicological findings argued for an infectious etiology.",
+      "quote": "She had a 39  C fever and headache progression for 24 h. She presented with psychomotor agitation, followed by generalized tonic-clonic seizures."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serum serology was positive for nonstructural protein 1 (NS1) antigen by ELISA, establishing severe neurotropic dengue virus infection complicated by malignant intracranial hypertension, cerebral edema, and uncal herniation.",
+      "quote": "Serology positive for dengue NS1 by ELISA was reported"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict fidelity to admission breakpoint. Zero mentions of dengue, enterovirus, or fatal outcome in case prompt."
+}

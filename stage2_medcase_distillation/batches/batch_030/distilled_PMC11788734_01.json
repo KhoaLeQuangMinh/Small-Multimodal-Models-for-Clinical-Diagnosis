@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11788734_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 6-year-old BCG-vaccinated, immunocompetent boy presents with 3 months of low-grade fever, left upper quadrant pain, marked splenomegaly, and peripheral pancytopenia. Abdominal CT demonstrates multiple hypodense splenic lesions with hilar lymphadenopathy, leading to a strong preliminary clinical suspicion of splenic lymphoma. The primary tension is recognizing isolated, primary splenic granulomatous tuberculosis in the absence of active pulmonary involvement or prominent constitutional B-symptoms.\n2. Admission Breakpoint: Evaluation concludes after admission triage blood counts, bone marrow aspiration demonstrating reactive hypersplenism, chest radiography, and abdominal CT imaging, immediately prior to diagnostic laparoscopic splenectomy.\n3. Differential Distinctions: Splenic lymphoma commonly manifests as solitary or multifocal hypodense splenic nodules with associated lymphadenopathy and cytopenias, but histology shows neoplastic lymphoproliferative architecture. Leukemia or myelodysplastic syndrome presents with pancytopenia and splenomegaly, but bone marrow aspiration showed hypercellularity with erythroid hyperplasia secondary to hypersplenism without blast infiltration. Splenic tuberculosis presents as solitary or macronodular tuberculomas with caseous necrosis, Langhans giant cells, and acid-fast bacilli on histological evaluation.",
+  "case_prompt": "A 6-year-old child presented with a 3-month history of dull aching pain in the left hypochondrium, intermittent non-bilious vomiting, and persistent low-grade fevers. He had no history of chills or night sweats. There was no known family history of chronic cough or infectious exposures. He was fully up to date with routine childhood immunizations, including the Bacillus Calmette-Gu\u00e9rin (BCG) vaccine.\n\nOn physical examination, he was pale but cooperative and in no acute distress, with a height of 118 cm and weight of 20 kg. His body temperature was 38.6\u00b0C. Abdominal examination revealed mild tenderness in the left upper quadrant and a firm, non-tender spleen palpable 4 cm below the left costal margin. No peripheral lymphadenopathy was detected.\n\nInitial laboratory workup revealed peripheral pancytopenia: hemoglobin 8.2 g/dL, white blood cell count 3,700/mm\u00b3, and platelet count 119,000/mm\u00b3. Liver and renal function tests were within normal reference ranges, and the erythrocyte sedimentation rate (ESR) was elevated at 54 mm/h. A bone marrow aspirate was performed and demonstrated increased cellularity across all hematopoietic cell lines with erythroid hyperplasia and rare megaloblasts, consistent with hypersplenism. Sputum smear and culture for special-stain micro-organisms were negative, and serological testing for human immunodeficiency virus (HIV) was negative. A tuberculin skin test showed 6 mm of induration.\n\nA plain chest radiograph was normal, showing clear lung fields with no hilar adenopathy or infiltrates. Abdominal ultrasonography demonstrated splenomegaly with multiple hypoechoic cystic formations and splenic hilar lymphadenopathy. A contrast-enhanced computed tomography (CT) scan of the abdomen demonstrated heterogeneous splenomegaly containing multiple hypodense lesions associated with a 13 mm peri-hilar lymph node.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Splenic lymphoma",
+      "rule_out_reason": "Considered the primary provisional diagnosis because of prolonged fevers, prominent splenomegaly, multiple hypodense splenic nodules on cross-sectional CT, and associated peri-hilar lymphadenopathy; however, post-splenectomy histopathological analysis revealed chronic granulomatous inflammation without clonal lymphoid proliferation.",
+      "quote": "Contrast-enhanced computed tomography of the abdomen showed heterogeneous splenomegaly containing multiple hypodense lesions associated with 13 mm peri-hilar lymphadenopathy, primarily suggesting lymphoma (Fig. 1)."
+    },
+    {
+      "candidate": "Primary hematologic malignancy or bone marrow failure",
+      "rule_out_reason": "Considered in a child presenting with fever, splenomegaly, and peripheral trilineage cytopenias (pancytopenia); however, bone marrow examination excluded leukemia, aplasia, or marrow infiltration, confirming reactive marrow hypercellularity secondary to peripheral sequestration (hypersplenism).",
+      "quote": "Hypersplenism was confirmed on bone marrow aspirate that showed increased cellularity of all cell lines with erythroid hyperplasia and a few megaloblasts."
+    },
+    {
+      "candidate": "Pulmonary or classic disseminated tuberculosis",
+      "rule_out_reason": "Initially considered less likely because the child lacked pulmonary symptoms, sputum smears and cultures were negative, the chest radiograph was completely normal, and the 6 mm tuberculin skin test was interpreted as a cross-reaction from previous neonatal BCG vaccination.",
+      "quote": "Chest X-ray showed no abnormalities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Laparoscopic splenectomy performed for persistent cytopenias provided the definitive turning point, revealing gross whitish foci of caseous necrosis, with histopathology demonstrating Langhans giant cell granulomas with central caseation and acid-fast bacilli on Ziehl-Neelsen staining.",
+      "quote": "Histopathological examination revealed a significant parenchymal enlargement characterized by a granulomatous inflammatory reaction. The granulomas varied in sizes. They were bordered by epithelioid cells and Langhan's multinucleated giant cells, with central areas of suppurative caseous necrosis compatible with tuberculosis (Fig. 3). A special preparation with Ziehl-Neelsen stain identified multiple acid-fast bacilli consistent with Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to laparoscopic splenectomy and histopathology. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

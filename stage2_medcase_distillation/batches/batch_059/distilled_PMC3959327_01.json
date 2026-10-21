@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3959327_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 87-year-old multimorbid woman presents with acute obstructive jaundice and ascending cholangitis. Given her advanced age and remote history of open cholecystectomy, the primary suspicion naturally falls on recurrent choledocholithiasis or malignant biliary obstruction (cholangiocarcinoma). The diagnostic challenge is recognizing that long-standing, seemingly quiescent hepatic cystic lesions can acutely rupture into the biliary tract and peritoneal cavity.\n2. Admission Breakpoint: Admission triage concludes with the initial emergency evaluation, liver chemistry panel showing severe conjugated hyperbilirubinemia (total bilirubin 15.8 mg/dL, direct bilirubin 12.4 mg/dL), and bedside abdominal ultrasonography confirming bile duct dilatation and pre-existing hepato-splenic calcified cysts. Confirmatory testing begins with urgent ERCP and subsequent thoracic/abdominal CT imaging.\n3. Differential Distinctions: Choledocholithiasis and biliary tract malignancies cause severe ductal dilation and acute cholangitis, but ERCP demonstrates intraluminal parasitic membranes and daughter vesicle remnants rather than calculi or neoplastic strictures, confirmed by cyst-biliary fistulization and peritoneal fluid collection.",
+  "case_prompt": "An 87-year-old woman with a medical history of senile dementia, diabetes mellitus, hypertensive diastolic heart failure, and chronic kidney disease presents to the Emergency Department with progressive jaundice and features of acute obstructing cholangitis.\n\nHer surgical history is notable for an open cholecystectomy performed in 1987 for symptomatic cholecystolithiasis. Since that operation, she had been documented to harbor three calcified, asymptomatic intra-abdominal cystic lesions: one heavily calcified cyst located in the spleen, another heavily calcified cyst in the left hepatic lobe, and a third, barely calcified cyst situated at the periphery of the right hepatic lobe measuring approximately 45 to 50 mm in diameter.\n\nInitial emergency laboratory investigations demonstrate profound hyperbilirubinemia, with a total bilirubin of 15.8 mg/dL and a direct bilirubin of 12.4 mg/dL. Emergency abdominal ultrasonography reveals significant bile duct dilatation consistent with biliary outflow obstruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choledocholithiasis / Retained common bile duct stone",
+      "rule_out_reason": "In a post-cholecystectomy elderly patient presenting with acute obstructing cholangitis, common bile duct stones represent the most frequent etiology. However, endoscopic evaluation did not identify biliary calculi; instead, soft cystic contents were visualized and retrieved.",
+      "quote": "An ERCP performed the next day visualized at least five round bile duct contents (Fig. 1), which proved to be, after sphincterotomy and debriment of the bile duct, hydatid cyst remnants."
+    },
+    {
+      "candidate": "Cholangiocarcinoma / Biliary tract malignancy",
+      "rule_out_reason": "Profound obstructive jaundice with high direct bilirubin and severe ductal dilatation in an 87-year-old patient strongly suggests malignant obstruction such as cholangiocarcinoma or ampullary carcinoma. However, ductal clearance revealed parasitic membranes communicating with a peripheral liver cyst rather than an infiltrative tumor.",
+      "quote": "Air was present inside the right hepatic lobe hydatid cyst, consistent with a biliary tree communication and the antecedent sphincterotomy (Fig. 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred during ERCP when sphincterotomy and bile duct debridement yielded multiple round laminated membranes and cyst remnants, confirming intrabiliary rupture of the right hepatic hydatid cyst, complemented by subsequent CT evidence of concomitant free intraperitoneal cyst rupture.",
+      "quote": "An ERCP performed the next day visualized at least five round bile duct contents (Fig. 1), which proved to be, after sphincterotomy and debriment of the bile duct, hydatid cyst remnants... The CT scan suggested a simultaneous free intraperitoneal cyst rupture."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC3959327_01. Zero pathogen or hydatid terminology used in case prompt. Admission breakpoint kept strictly to Day 1 triage prior to ERCP."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12681803_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 62-year-old male who underwent orthotopic cardiac transplantation two months prior presents with progressive dyspnea, hypoxia, and septic shock accompanied by diffuse alveolar hemorrhage. The presence of purpura mimicking drug reaction, adhesive trauma, or bacterial vasculitis, coupled with completely normal peripheral eosinophil counts and initially negative routine stool O&P examinations, creates an extreme diagnostic challenge that masks disseminated parasitosis in an immunocompromised host.\n2. Admission Breakpoint: The admission breakpoint is placed at initial intensive care triage and bronchoscopic evaluation showing diffuse alveolar hemorrhage and negative conventional microbiological testing, prior to send-out plasma microbial cell-free DNA (Karius), cutaneous punch biopsy, and targeted parasite microscopy.\n3. Differential Distinctions: Isolated bacterial sepsis (secondary bacteremia from enterococcal or Gram-negative bacilli due to translocation), viral/fungal opportunistic pneumonitis (ruled out by negative respiratory viral multiplex and negative BAL cultures), and leukocytoclastic vasculitis or adhesive tape dermatitis (characteristic periumbilical and 'thumbprint' purpura tracking along ECG/adhesive leads is a hallmark of cutaneous larval migration). Confirmatory detection by cell-free DNA and dermal punch biopsy demonstrating helminth larvae confirms disseminated strongyloidiasis.",
+  "case_prompt": "A 62-year-old male with a history of orthotopic cardiac transplantation performed 2 months prior presented to the emergency department with progressive dyspnea and severe hypoxia. He was in septic shock requiring hemodynamic resuscitation. Past medical history was significant for end-stage heart failure status-post heart transplantation, maintained on standard post-transplant immunosuppression. He had no reported acute environmental exposures.\n\nOn physical examination, the patient was in marked respiratory distress, hypotensive, and hypoxic. Cutaneous examination revealed faint purpuric macules and patches located across the chest, periumbilically, and on the proximal thighs; on the chest, the purpura distinctly followed the geographic outline of previously applied adhesive telemetry pads.\n\nInitial triage laboratories demonstrated a normal peripheral eosinophil count. Urgent flexible bronchoscopy was performed to investigate acute respiratory failure, which revealed diffuse alveolar hemorrhage. Routine multiplex respiratory pathogen panel was negative, routine bronchoalveolar lavage bacterial and fungal cultures yielded no growth, and initial microscopic examination of the stool for ova and parasites was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary opportunistic bacterial pneumonia and sepsis",
+      "rule_out_reason": "The patient presented in septic shock with Klebsiella pneumoniae bacteremia and bacteriuria; however, alveolar hemorrhage and characteristic purpura persisted despite empiric antimicrobial therapy, indicating that bacteremia was a secondary complication of mucosal disruption driven by larval penetration.",
+      "quote": "He was found to be in septic shock secondary to Klebsiella pneumoniae bacteremia and bacteriuria. Bronchoscopy revealed diffuse alveolar hemorrhage. Infectious workup to this point was unrevealing, including a negative respiratory panel, negative cultures from his bronchoalveolar lavage, and a negative stool ova & parasite (O&P)."
+    },
+    {
+      "candidate": "Drug-induced vasculitis or mechanical adhesive purpura",
+      "rule_out_reason": "While the purpuric patches on the chest adhered to the margins of adhesive monitoring pads, the simultaneous appearance of periumbilical and proximal thigh lesions in a transplant recipient represented the characteristic 'thumbprint purpura' of subcutaneous parasite migration rather than an allergic drug reaction or adhesive trauma.",
+      "quote": "Physical examination revealed faint purpuric macules and patches located on the chest, periumbilically (Fig 1), and on the proximal thighs (Fig 2). On the chest, the purpura was noted to follow the outline of prior adhesives."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Plasma microbial cell-free DNA (Karius) testing detected Strongyloides, followed by punch biopsy of the thigh lesion confirming helminth larvae and egg-like forms within the dermis, with subsequent rereview of bronchoalveolar lavage and repeat stool microscopy confirming disseminated Strongyloides infection.",
+      "quote": "Given clinical deterioration and concern for infection not captured by conventional microbiologic testing, plasma microbial cell-free DNA (Karius) testing was pursued, which returned positive for Strongyloides... Punch biopsy of the left upper thigh (Fig 3, A-C) revealed larvae and egg-like forms within the dermis, most suggestive of Strongyloides. Rereview of his bronchoalveolar lavage revealed a rare focus morphologically compatible with Strongyloides, and repeat stool O&P returned positive, further confirming the diagnosis."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case accurately targets Soil-Transmitted Helminths (Strongyloides stercoralis hyperinfection). Admission breakpoint stops cleanly prior to Karius cell-free DNA and skin biopsy findings. Zero pathogen disclosures in prompt."
+}

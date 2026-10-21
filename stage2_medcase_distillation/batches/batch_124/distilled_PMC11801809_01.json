@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11801809_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old male without antecedent medical history presents with acute small bowel obstruction, diffuse peritonitis, pneumoperitoneum, and abdominal wall subcutaneous emphysema. CT imaging demonstrates a rare encapsulating membrane enclosing small bowel loops ('cocoon syndrome') alongside necrotic mesenteric and retroperitoneal adenopathy. The tension lies in distinguishing primary idiopathic sclerosing encapsulating peritonitis or acute perforated peptic ulcer from extrapulmonary intestinal tuberculosis masquerading as an acute surgical abdomen.\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency resuscitation, triage blood work, plain radiography, and abdominal CT imaging identify the cocoon configuration, pneumoperitoneum, and necrotic lymph nodes, prior to exploratory laparotomy, bowel resection, and surgical histopathology.\n3. Differential Distinctions: Idiopathic abdominal cocoon (primary sclerosing encapsulating peritonitis) produces small bowel encapsulation by a fibrocollagenous membrane, typically in adolescent females or idiopathic cases, but lacks caseating necrotic mesenteric lymphadenopathy and acute spontaneous bowel perforation. Perforated gastroduodenal ulcer or diverticulitis causes pneumoperitoneum and subcutaneous emphysema, but does not present with a dense encapsulating peritoneal cocoon or necrotic intra-abdominal nodes. The presence of necrotic lymphadenopathy within the encased mesentery strongly suggests a chronic tuberculous etiology.",
+  "case_prompt": "A 35-year-old male with no significant past medical history presents to the emergency department with the sudden onset of diffuse abdominal pain, two episodes of vomiting, obstipation (complete absence of stool and gas passage), and general malaise.\n\nOn physical examination, the patient appears acutely ill. Abdominal examination demonstrates generalized abdominal tenderness with involuntary guarding and palpable subcutaneous emphysema tracking along the abdominal wall. Vital signs reflect acute physiological distress.\n\nTriage laboratory evaluation reveals a hemoglobin level of 11.8 g/dL, a platelet count of 135,000/mm³, and a white blood cell count of 6,000/mm³. C-reactive protein (CRP) is markedly elevated at 273 mg/L. Serum electrolytes and renal function are normal, with blood urea measured at 0.36 g/L and serum creatinine at 10.2 mg/L.\n\nPlain abdominal radiography reveals free subdiaphragmatic pneumoperitoneum and multiple air-fluid levels. Computed tomography (CT) of the abdomen and pelvis confirms extensive pneumoperitoneum, intra-abdominal free fluid, mesenteric fat infiltration, and a localized focal wall defect within an intestinal loop in the left lower quadrant. Marked small bowel distension is observed, with loops appearing encapsulated within a thin, contrast-enhancing fibrocollagenous peritoneal membrane resembling a cocoon. Additional CT findings include necrotic mesenteric and lumbar-aortic lymph nodes (largest measuring 14 mm in short axis) and extensive subcutaneous emphysema dissecting along the left abdominal wall into the inguinal and scrotal regions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary / Idiopathic Sclerosing Encapsulating Peritonitis (Abdominal Cocoon)",
+      "rule_out_reason": "Although CT confirmed characteristic encapsulation of small bowel loops within a fibrocollagenous membrane, primary/idiopathic cocoon is a chronic fibrosing process that does not typically cause acute transmural bowel perforation or necrotic retroperitoneal and mesenteric lymphadenopathy.",
+      "quote": "Small bowel distension was noted, with loops appearing encapsulated within a thin, contrast-enhanced peritoneal capsule, resembling a cocoon (Figure 1b, 1c). Additional findings included necrotic mesenteric and lumbar-aortic lymph nodes (the largest measuring 14 mm in the short axis)."
+    },
+    {
+      "candidate": "Perforated Peptic Ulcer / Perforated Diverticular Disease",
+      "rule_out_reason": "While massive pneumoperitoneum and subcutaneous emphysema indicated a hollow viscus perforation, CT clearly located the perforation within encapsulated jejunal loops in the left lower quadrant with necrotic lymphadenopathy, ruling out gastroduodenal or sigmoid diverticular rupture.",
+      "quote": "A CT scan showed a large pneumoperitoneum, a wall defect in an intestinal loop in the left lower quadrant, mesenteric fat infiltration, and intra-abdominal fluid."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency exploratory laparotomy revealed small bowel encapsulation with an ischemic 80-cm loop and perforation at 50 cm from the first jejunal loop. Resection and histomorphological examination demonstrated granulomatous inflammation with characteristic caseating necrosis, confirming intestinal tuberculosis as the underlying etiology of secondary abdominal cocoon syndrome.",
+      "quote": "Histomorphological examination of the resected specimen revealed intestinal tuberculosis with a granulomatous reaction and characteristic caseating necrosis (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning CPC format. The case_prompt cleanly stops at the admission imaging breakpoint before surgical laparotomy and histology. Strictly zero mentions of tuberculosis or mycobacteria in prompt."
+}

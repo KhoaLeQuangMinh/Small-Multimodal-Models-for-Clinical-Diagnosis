@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7497824_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 46-year-old previously healthy adult presents with a 2-month history of subacute, inflammatory-type low back pain and progressive constitutional decline. Cross-sectional abdominopelvic imaging reveals multilevel thoracic and lumbar spondylodiscitis (T10, T11, T12, and L1) complicated by massive bilateral psoas muscle abscesses. The core clinical dilemma is differentiating an indolent tuberculous spondylodiscitis (Pott disease) with 'cold' psoas abscesses from common pyogenic bacterial spondylodiscitis (e.g., Staphylococcus aureus, Enterobacteriaceae) or fungal spinal osteomyelitis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after physical examination, admission inflammatory markers, chest radiography, and abdominopelvic CT imaging, prior to IGRA testing, percutaneous drainage, acid-fast bacillus smear, GeneXpert PCR, or mycobacterial cultures.\n3. Differential Distinctions: Pyogenic bacterial spondylodiscitis typically presents with an acute to subacute progression, leukocytosis, and readily grows pyogenic pathogens on aerobic/anaerobic blood and chocolate agar cultures within 24 to 48 hours; fungal discitis or spinal malignancy lacks specific molecular markers; definitive identification of tuberculous discitis is confirmed by GeneXpert real-time PCR and Lowenstein-Jensen mycobacterial growth.",
+  "case_prompt": "A 46-year-old previously healthy adult presented for evaluation of progressive, inflammatory-type lumbar back pain persisting for the previous two months in the context of deterioration of general condition. The clinical interview revealed a potential close contact exposure to an individual with a chronic respiratory illness six months prior. The patient had no other past medical or surgical history.\n\nOn physical examination, the patient was conscious, alert, and in discomfort when mobilizing. Spinal examination demonstrated exquisite tenderness on palpation over the lower thoracic and upper lumbar spine, accompanied by marked spinal stiffness and restricted range of motion. There were no motor, sensory, or reflex deficits in the lower extremities, and bowel and bladder function were preserved.\n\nInitial laboratory workup demonstrated elevated systemic inflammatory markers: C-reactive protein was 58 mg/L, and erythrocyte sedimentation rate was 60 mm in the first hour. Human immunodeficiency virus (HIV) screening serology was negative. A plain chest radiograph was normal without infiltrates or apical cavitary lesions. Contrast-enhanced computed tomography (CT) of the abdomen and pelvis demonstrated destructive multilevel spondylodiscitis involving the 10th, 11th, and 12th dorsal vertebrae and the 1st lumbar vertebra, associated with prominent bilateral abscess collections within both psoas muscles.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Spondylodiscitis and Psoas Abscess (e.g., Staphylococcus aureus, Enterobacteriaceae)",
+      "rule_out_reason": "Considered the most common etiology of destructive spondylodiscitis with psoas abscesses. Ruled out by pus aspirated from the psoas collections remaining sterile after 4 days of incubation on blood and chocolate agar under aerobic and anaerobic conditions.",
+      "quote": "The patient benefited from scanned/guided drainage and the pus brought back was subjected to bacteriological study (culture on blood agar and chocolate agar incubated at 37  C in an aerobic and anaerobic atmosphere). This culture remained sterile after 4 days of incubation."
+    },
+    {
+      "candidate": "Spinal Malignancy (Metastatic Carcinoma or Multiple Myeloma)",
+      "rule_out_reason": "Considered due to subacute onset, deterioration of general condition, elevated sedimentation rate, and multilevel spinal destruction. Ruled out by classic contiguous intervertebral disc involvement with bilateral psoas fluid collections, followed by microbiological demonstration of an infectious mycobacterial etiology.",
+      "quote": "Abdominal-pelvic computed tomography (CT) showed spondylodiscitis at the level of the 10th, 11th and 12th dorsal vertebrae and the first lumbar vertebra with bilateral abscess collections at the expense of both psoas muscles (Fig. 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when percutaneous CT-guided aspirate was subjected to GeneXpert MTB/RIF real-time PCR, which was positive for Mycobacterium tuberculosis without rifampicin resistance mutations, subsequently confirmed by culture on Lowenstein-Jensen and liquid VersaTREK media.",
+      "quote": "The real-time PCR-based  Mycobacterium tuberculosis  test on the GeneXpert MTB/RIF system (which also makes it possible to detect rpoB gene mutations associated with rifampicin resistance), the system did not detect any mutations, so the strain was sensitive to rifampicin. A culture grown on solid Lowenstein-Jensen medium developed a month later (Fig. 2), while a culture grown in liquid medium (VersaTREK broth Myco Broth) and incubated in the VersaTREK automaton, whose technology is based on the detection of oxygen levels consumed by the mycobacteria, became positive after 20 days."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7497824. Admission breakpoint maintained before IGRA/Quantiferon, CT drainage, and GeneXpert PCR. Zero pathogen names leaked in case prompt."
+}

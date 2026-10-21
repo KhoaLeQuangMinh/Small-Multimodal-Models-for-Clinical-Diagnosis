@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8076683_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A pregnancy complicated by a first-trimester maternal febrile exanthem in an endemic setting results in a stillborn infant with severe congenital microcephaly, extensive arthrogryposis, craniofacial dysmorphism, and a unilateral distal limb reduction defect (radial aplasia). The tension lies in distinguishing a primary genetic/chromosomal malformation sequence or classic TORCH fetopathy from a vector-borne neurotropic viral infection causing destructive fetal disruption.\n2. Admission Breakpoint: The breakpoint is set at the post-delivery physical, dysmorphological, and imaging assessment (skull radiographs and cranial CT), prior to chromosomal karyotype analysis, maternal-infant TORCH serology panels, and CSF molecular RT-PCR testing.\n3. Differential Distinctions: A genetic/chromosomal aneuploidy (such as Trisomy 18 or Roberts syndrome) is excluded by a normal 46, XY karyotype. Conventional TORCH congenitally acquired infections (Toxoplasmosis, Rubella, CMV, HSV) are excluded by negative comprehensive serologies in mother and infant. Zika virus is confirmed by maternal febrile rash history during an outbreak, distinct cortical calcification/destruction patterns, and detection of viral RNA in fetal cerebrospinal fluid by RT-PCR.",
+  "case_prompt": "A 27-year-old pregnant woman (gravida 1) in her third trimester was referred to clinical genetics in Mérida, Mexico, following the detection of severe fetal malformations on prenatal ultrasound. A review of her prenatal history revealed that during her first trimester (before her pregnancy was recognized), she had experienced an acute illness characterized by unquantified fever, tender preauricular lymphadenopathy, generalized pruritus, and a macular rash over the thorax and shoulder girdle; no laboratory diagnostic testing was performed at that time. Fetal ultrasound performed at 16.4 weeks of gestation showed normal biometric growth, but by 23 weeks, the fetal hands could not be identified. Repeat sonography at 27.4 weeks revealed marked microcephaly (biparietal diameter 58 mm), nuchal thickening, ventriculomegaly, hypoplasia of the cerebellar vermis and cerebral hemispheres, micrognathia, right radial aplasia, and arthrogryposis.\n\nA stillborn male infant with generalized subcutaneous edema was delivered via cesarean section at 35 weeks of gestation. Physical exploration demonstrated craniofacial disproportion with severe microcephaly, irregular anterior and posterior hairline, sloping forehead, hypertelorism, retrognathia, and low-set, cupped ears with thickened helices. The shoulders were shortened in fixed internal rotation with adduction contractures. The left upper limb displayed an extended elbow with limitation of reduction, forearm pronation, wrist flexion, and a non-reducible hand showing cyanotic discoloration. The right upper limb was truncated at the proximal third of the arm with an irregular soft tissue defect, exposed humeral condyle, and absence of the distal arm, forearm, and hand. Lower extremities showed severe contractures with limitation of hip abduction, bilateral fixed knee extension, and clubfoot deformities. External genitalia revealed a 1-cm penis and an empty scrotum.\n\nSkull radiography demonstrated everted cranial sutures, partial collapse of the calvarial bones, and a hypoplastic occiput. Upper extremity radiographs confirmed a severely shortened right humerus with preservation only of the proximal and distal humeral segments. Cranial computed tomography (CT) demonstrated coarse subcortical calcifications, lissencephaly, ventriculomegaly, and diffuse cortical thinning.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chromosomal Aneuploidy / Genetic Malformation Syndrome (e.g., Trisomy 18, Radial-Ray Syndromes)",
+      "rule_out_reason": "Considered due to the presence of microcephaly, hypertelorism, retrognathia, radial aplasia, and multiple joint contractures; ruled out by a completely normal G-banded karyotype.",
+      "quote": "The karyotype was normal, 46, XY."
+    },
+    {
+      "candidate": "Classic TORCH Congenital Fetopathy (Toxoplasma, Rubella, CMV, HSV)",
+      "rule_out_reason": "Considered given intracranial ventriculomegaly, microcephaly, and cerebral calcifications; ruled out by non-reactive maternal and infant serologies for all major TORCH pathogens.",
+      "quote": "The serological test for toxoplasma, rubella, cytomegalovirus and herpes virus were negative in the mother and the patient."
+    },
+    {
+      "candidate": "Other Endemic Arboviral Infections (Dengue, Chikungunya)",
+      "rule_out_reason": "Considered due to maternal febrile rash illness in an endemic region; excluded by specific cerebrospinal fluid multiplex molecular diagnostics confirming the specific flavivirus.",
+      "quote": "The RT-PCR for ZIKV/Dengue/Chikungunya in the patient's cerebrospinal fluid detected the presence of Zika viral RNA."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "History of first-trimester febrile rash during a regional epidemic, distinctive fetal skull collapse, arthrogryposis, and neuroimaging showing subcortical calcifications with lissencephaly, confirmed definitively by detection of viral RNA in cerebrospinal fluid via RT-PCR.",
+      "quote": "The RT-PCR for ZIKV/Dengue/Chikungunya in the patient's cerebrospinal fluid detected the presence of Zika viral RNA."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. TORCH serology, karyotyping, and CSF RT-PCR excluded from prompt. Zero pathogen spoilers."
+}

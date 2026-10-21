@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC10715021_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 31-year-old immunocompromised (HIV-positive) man with dietary exposure to raw foods presented with a rapidly expanding, massive right hepatic cystic mass and large right pleural effusion shortly after surgical resection of a suspected hepatic neoplasm that lacked malignant pathology. The presentation mimicked metastatic or primary hepatic malignancy, pyogenic abscess, and tuberculosis, obscuring an extraintestinal invasive protozoan infection originating from a previous severe episode of hemorrhagic colitis.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial triage assessment, baseline laboratory testing, abdominal ultrasound showing the 19.3 x 16.5 cm right hepatic cystic mass, and chest CT demonstrating massive right pleural effusion, prior to thoracentesis, percutaneous hepatic abscess drainage, microbiologic/molecular testing (mNGS, PCR), and tissue re-examination.\n3. Differential Distinctions: Hepatic malignancy was initially suspected based on solid-cystic architecture on MRI/PET-CT, but prior resection pathology was negative for malignancy. Pyogenic and fungal hepatic abscesses typically present with bacterial sepsis, but drainage yielded sterile 'anchovy-paste' fluid and negative bacterial/fungal cultures. Pleural tuberculosis was ruled out by negative M. tuberculosis PCR. Extraintestinal amebiasis was established by characteristic jam-like drainage, mNGS detection of amoeba trophozoites in hepatic aspirate, and histologic confirmation of trophozoites in resected liver tissue.",
+  "case_prompt": "A 31-year-old male presented to the emergency department via ambulance with acute chest tightness and dyspnea. He has a history of human immunodeficiency virus (HIV) infection managed with long-term oral antiretroviral therapy. He reports a habit of regularly consuming raw foods. Eight months prior to presentation, he was hospitalized for massive lower gastrointestinal bleeding presenting as acute diarrhea starting with blood in the stool and progressing to frank rectal hemorrhage, resulting in a nadir hemoglobin of 30 g/L; diagnostic gastrointestinal endoscopy at that time demonstrated no definitive abnormalities, and he was stabilized with blood transfusions and fluid resuscitation. Two months prior to admission, he developed progressive abdominal distension; cross-sectional imaging identified hepatic solid-cystic masses with tumor-like features, for which he underwent laparoscopic resection of a cystic mass in the left lobe of the liver one month prior to admission. Following discharge, his clinical condition progressively deteriorated with worsening dyspnea.\n\nOn physical examination, the patient appeared emaciated and in respiratory distress. Vitals demonstrated low-grade fever, tachypnea, and decreased blood oxygen saturation. Pulmonary examination revealed absence of breath sounds across the right lung. Abdominal examination revealed tenderness localized to the right upper quadrant over the liver.\n\nInitial triage laboratory evaluation demonstrated an elevated white blood cell count, increased neutrophil percentage, elevated high-sensitivity C-reactive protein, decreased lymphocyte percentage, and marked anemia. Viral testing confirmed well-controlled viral suppression with an HIV-1 RNA level under 20 copies/mL; T-lymphocyte subset analysis revealed a CD4 lymphocyte percentage of 18% (normal range: 27–51%) and a CD4/CD8 ratio of 0.42 (normal range: 0.63–3.49). Chest computed tomography showed a large amount of pleural effusion on the right side. Abdominal ultrasound showed a cystic mass measuring 19.3 x 16.5 cm in the right lobe of the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary or Metastatic Hepatic Malignancy",
+      "rule_out_reason": "Pre-admission MRI and PET-CT showed large cystic-solid hepatic masses with tumor-like characteristics, prompting surgical resection; however, histopathologic examination of the resected tissue demonstrated no malignant cells.",
+      "quote": "A contrast-enhanced abdominal magnetic resonance imaging (MRI) indicated solid cystic masses with tumor-like characteristics (Figure 1C). The positron emission tomography-computed tomography (PET-CT) scan indicated liver masses, possibly malignant. On March 28, 2023, a laparoscopic resection of the cystic mass in the left lobe of the liver was performed. However, the pathological examination did not reveal evidence of malignancy."
+    },
+    {
+      "candidate": "Pleural Tuberculosis / Disseminated Tuberculosis",
+      "rule_out_reason": "In an HIV-infected patient with severe right pleural effusion, emaciation, and low-grade fevers, tuberculous pleurisy was strongly suspected; however, molecular PCR testing of the pleural fluid for Mycobacterium tuberculosis DNA was negative.",
+      "quote": "The pleural fluid was sent for different examinations, including polymerase chain reaction (PCR) for mycobacterium tuberculosis deoxyribonucleic acid (DNA) and metagenomic next-generation sequencing (mNGS), but no valuable results were found."
+    },
+    {
+      "candidate": "Pyogenic or Fungal Liver and Pleural Abscess",
+      "rule_out_reason": "Elevated inflammatory markers, neutrophil leukocytosis, and large cystic liver/pleural fluid collections were consistent with bacterial or opportunistic fungal abscesses; however, routine aerobic/anaerobic bacterial and fungal cultures were negative.",
+      "quote": "Bacterial and fungal cultures of the liver abscess fluid and pleural fluid were negative."
+    },
+    {
+      "candidate": "Hematologic Malignancy",
+      "rule_out_reason": "Profound anemia, emaciation, massive lower gastrointestinal bleeding history, and hepatomegaly raised concern for an underlying hematologic or lymphoproliferative disorder, but bone marrow evaluation was normal.",
+      "quote": "We also performed bone marrow aspiration and biopsy, and no specific blood-related diseases were found."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous drainage of the hepatic mass yielded pathognomonic jam-like/anchovy-paste fluid, and mNGS of the aspirate identified Entamoeba trophozoites; retrospective review of the previously resected hepatic surgical specimen confirmed the presence of amoeba trophozoites, leading to complete clinical recovery upon metronidazole therapy.",
+      "quote": "Percutaneous drainage was performed for the liver abscess and a jam-like turbid fluid was extracted (Figure 1B)... Later, we sent the liver abscess fluid for mNGS detection. It reported sequence reads of amoeba trophozoites (specific sequence reads: 81). Simultaneously, we actively cooperated with Beijing You An Hospital where the patient had undergone liver cystic mass resection, recommending additional testing on the liver tissue. The final pathological feedback confirmed the presence of amoeba trophozoites in the tissue (Figure 1D)."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation successfully executed according to Stanford MedCaseReasoning methodology. Admission prompt strictly excludes confirmatory microbiological findings, send-out tests, and pathogen names. Reasoning includes direct verbatim quotes from the case report."
+}

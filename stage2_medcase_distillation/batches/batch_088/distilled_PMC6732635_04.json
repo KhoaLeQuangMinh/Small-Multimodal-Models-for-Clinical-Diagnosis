@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6732635_04",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 38-year-old man presents with acute febrile encephalopathy, jaundice, oligoanuria with port wine-colored urine, and extreme azotemia (creatinine 1500 µmol/L) following a single dose of quinine, challenging the clinician to identify quinine-triggered massive intravascular hemolysis (blackwater fever) despite an initially negative peripheral thick blood smear.\n2. Admission Breakpoint: The admission clinical presentation halts after physical examination, notation of oligoanuria with port wine-colored urine, and baseline laboratory evaluation (hemoglobin 9.0 g/dL, glucose 5.6 mmol/L, creatinine 1500 µmol/L), immediately prior to malaria rapid diagnostic testing, thick blood smear examination, and hemodialysis/artemether therapy.\n3. Differential Distinctions: Acute hepatorenal syndrome / fulminant hepatic failure is ruled out because deep jaundice and encephalopathy occurred with port wine urine indicating acute hemoglobinuria and pigment nephropathy rather than primary end-stage cirrhosis. Severe bacterial sepsis with acute tubular necrosis (ATN) is ruled out by the direct temporal relationship with quinine therapy and the dark port-wine urine characteristic of massive intravascular hemolysis.",
+  "case_prompt": "A 38-year-old man with no significant past medical history was hospitalized with acute fever, jaundice, and altered mental status. On the preceding day, he had received an initial dose of quinine at 25 mg/kg/24 hours for a febrile illness.\n\nOn admission, physical examination revealed an encephalopathic man with a Glasgow Coma Scale score of 11/15. He weighed 62 kg. His body temperature was 38.5°C, heart rate was 100 beats/min, and respiratory rate was 28 breaths/min. He had pronounced scleral and cutaneous jaundice. Urinary evaluation revealed oligoanuria with dark, port wine-colored urine.\n\nBaseline laboratory investigations revealed a hemoglobin concentration of 9.0 g/dL, blood glucose of 5.6 mmol/L, and severe acute kidney injury with a serum creatinine of 1500 µmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Hepatorenal Syndrome / Fulminant Hepatic Failure",
+      "rule_out_reason": "Concomitant jaundice, encephalopathy (GCS 11), and extreme renal impairment (creatinine 1500 µmol/L) suggested fulminant hepatorenal failure, but the acute onset following quinine and port wine-colored urine pointed to massive intravascular hemolysis and pigment-induced acute tubular necrosis rather than primary end-stage liver disease.",
+      "quote": "An oligoanuria with port wine-colored urine was noted."
+    },
+    {
+      "candidate": "Severe Sepsis with Ischemic Acute Tubular Necrosis",
+      "rule_out_reason": "Severe bacterial sepsis can present with fever, tachypnea, altered mental status, and oligoanuric acute kidney injury, but it does not account for the characteristic port wine urine caused by acute intravascular hemoglobinuria following quinine ingestion.",
+      "quote": "serum creatinemia was 1500 mumol/L"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Severe oligoanuric acute renal failure and port wine-colored urine developing after quinine exposure, confirmed by a positive rapid diagnostic test for Plasmodium falciparum despite a negative thick peripheral blood smear, established blackwater fever.",
+      "quote": "the rapid diagnostic test was positive for P. falciparum"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation cleanly halts before malaria RDT and blood smear results. All direct quotes matched to text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11787820_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 75-year-old woman in a low-incidence country without known exposures presented with inaugural painless ascites, bilateral pleural effusions, and cervical lymphadenopathy in the absence of fever, cough, or night sweats. This clinical picture overwhelmingly mimicked disseminated peritoneal carcinomatosis or systemic autoimmune polyserositis (given a high-titer speckled ANA of 1:640), while negative direct smears and initial molecular assays delayed identification of disseminated extrapulmonary tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs prior to specialized mycobacteriological smears, PCR assays, cervical lymph node biopsy, and mycobacterial culture results ('Peritoneal and pleural fluid samples, as well as peripheral blood and sputum samples, were sent for mycobacteriological testing...').\n3. Differential Distinctions: Peritoneal carcinomatosis (ruled out by negative fluid cytologies, unremarkable endoscopic, mammographic, and pelvic evaluations, and absence of neoplastic cells on node biopsy), portal hypertensive ascites secondary to past hepatitis B (ruled out by low SAAG exudate and normal hepatic synthetic function), and systemic autoimmune polyserositis (ruled out by normal double-stranded DNA antibodies, intact complement, and growth of mycobacteria).",
+  "case_prompt": "A 75-year-old woman presented to the internal medicine clinic with a two-month history of progressive abdominal distension, asthenia, and anorexia. She did not note acute weight loss, although she had always been constitutionally slender. She denied fevers, chills, night sweats, cough, sputum production, dyspnea, or hemoptysis. Her medical history included dyslipidemia, serologic evidence of functionally cured hepatitis B infection, and focal epilepsy diagnosed six years earlier; she took no regular medications. She had never resided in areas of high endemicity for chronic granulomatous infections and had no history of sick contacts or prior screening.\n\nOn physical examination, she appeared emaciated (body mass index 17.9 kg/m²) and chronologically aged. Abdominal examination demonstrated abdominal distension with shifting dullness and fluid thrill consistent with gross ascites, without abdominal tenderness or hepatosplenomegaly. Chest auscultation revealed diminished breath sounds at both pulmonary bases, and room air arterial blood gas showed hypoxemic respiratory insufficiency with a PaO₂/FiO₂ ratio of 193. Palpation of the neck revealed small (less than 1 cm), slightly tender, non-adherent cervical lymph nodes.\n\nInitial chest radiography revealed bilateral asymmetrical pleural effusions. Full blood count demonstrated mild microcytic anemia (hemoglobin 10.9 g/dL) and thrombocytosis (platelets 417,000/µL). Erythrocyte sedimentation rate was 53 mm/h, and C-reactive protein was 88.9 mg/L. Renal and hepatic panels were normal, and natriuretic peptides were within normal reference ranges. Antinuclear antibody (ANA) screening was positive at a titer of 1:640 with a speckled pattern, but anti-dsDNA was normal and serum complement levels were preserved. Urine analysis showed no proteinuria.\n\nDiagnostic paracentesis yielded amber fluid demonstrating a low serum-ascites albumin (SAAG) gradient of 6.5 g/L, lymphocytic predominance, elevated adenosine deaminase (ADA) of 47 U/L, negative criteria for spontaneous bacterial peritonitis, and no malignant cells on initial cytology. Diagnostic thoracocentesis confirmed an exudative pleural effusion with lymphocytic predominance, an elevated ADA of 53 U/L, and negative cytology for malignant cells. Computed tomography (CT) of the chest, abdomen, and pelvis revealed a calcified granuloma in the right upper lobe, bilateral pleural effusions, and moderate ascites with diffuse peritoneal enhancement and thickening without focal visceral masses.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal Carcinomatosis / Advanced Gynecologic or GI Malignancy",
+      "rule_out_reason": "Considered the primary initial working diagnosis given the patient's age, emaciation, exudative lymphocytic ascites with low SAAG, and bilateral pleural effusion, but extensive endoscopic examinations, mammography, pelvic exams, body CT, and repeated fluid cytologies revealed no neoplastic disease.",
+      "quote": "Mammography, gynaecologic and dermatologic examination did not find any malignant lesions."
+    },
+    {
+      "candidate": "Decompensated Cirrhosis / Portal Hypertensive Ascites",
+      "rule_out_reason": "Considered in light of past hepatitis B exposure, but excluded by a low serum-ascites albumin gradient (6.5 g/L), absence of stigmata of chronic liver disease, normal hepatic biochemical panel, and markedly elevated fluid ADA.",
+      "quote": "laboratory analysis of the ascitic fluid showed lymphocytic ascites, with a low serum-ascites albumin (SAA) gradient (6.5 g/L)"
+    },
+    {
+      "candidate": "Systemic Lupus Erythematosus / Autoimmune Polyserositis",
+      "rule_out_reason": "Raised due to simultaneous pleural and peritoneal inflammation alongside an elevated ANA titer (1:640), but anti-dsDNA was negative, complement levels were unconsumed, and symptoms did not fit diagnostic autoimmune criteria.",
+      "quote": "high titres of antinuclear antibodies (1/640, speckled pattern), with normal anti-double-stranded DNA antibodies and no complement consumption."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cervical lymph node biopsy confirmed granulomatous lymphadenitis, an interferon-gamma release assay was positive, and prolonged automated culture of the peritoneal fluid yielded Mycobacterium tuberculosis at day 28, confirming disseminated extrapulmonary tuberculosis.",
+      "quote": "After 28 days, M. tuberculosis was identified in a culture exam of peritoneal fluid, and a diagnosis of disseminated TB was made"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of disseminated tuberculosis presenting atypically as inaugural ascites and pleural effusions with ANA positivity. Clean admission breakpoint with zero mention of PCR results or mycobacterial culture growth."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3068584_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old immunocompetent male presents with a large (8 cm x 5 cm) firm submandibular mass of 2 months' duration that failed empirical dental antibiotic therapy, without fever, pulmonary symptoms, or palpable cervical lymphadenopathy. The clinical picture mimics a benign or malignant salivary gland neoplasm (e.g., pleomorphic adenoma) versus chronic non-tuberculous sialadenitis, requiring fine-needle aspiration to uncover occult primary salivary gland tuberculosis.\n2. Admission Breakpoint: Admission triage concludes following physical examination, baseline routine blood tests, and plain radiographs of the chest and mandible, immediately prior to fine-needle aspiration cytology and mycobacterial PCR testing.\n3. Differential Distinctions: Acute bacterial sialadenitis is excluded by lack of response to antibiotics, absence of purulent Wharton's duct discharge, and chronicity; primary salivary neoplasm is ruled out by the absence of neoplastic architecture on cytology; tuberculous sialadenitis is established by finding epithelioid granulomas with caseous necrosis on FNAC and positive PCR for Mycobacterium tuberculosis.",
+  "case_prompt": "A 25-year-old immunocompetent male presented with a 2-month history of a persistent, painful swelling in the left submandibular region, situated just inferior to the angle and body of the mandible. He had no fever, cough, night sweats, unprovoked weight loss, or symptoms suggestive of pulmonary disease, and reported no personal or family history of chronic granulomatous or pulmonary disease. He had initially sought dental evaluation and received a course of oral antibiotics; however, due to persistent pain and progressive enlargement of the mass, he was referred for surgical evaluation.\n\nOn physical examination, the patient appeared healthy with normal vital signs. Local examination of the neck revealed a diffuse, non-tender, firm, bi-digitally palpable mass measuring 8 cm x 5 cm in the left submandibular region. The overlying skin was intact and normal in appearance, and the mass was non-fluctuant. Intraoral examination showed a normal Wharton's duct orifice with clear salivary flow and no purulent discharge. The oropharynx was unremarkable. Cervical lymph nodes were not palpable.\n\nInitial laboratory evaluation revealed a normal complete blood count with an elevated erythrocyte sedimentation rate (ESR) of 68 mm/hr. Liver function tests, including serum transaminases and protein electrophoresis, were within normal limits. Serologic testing for HIV antibodies and hepatitis B surface antigen was non-reactive.\n\nPlain chest radiography demonstrated clear lung fields without infiltrate, cavitary lesion, or lymphadenopathy. Radiography of the mandible demonstrated normal osseous architecture without bony erosion or periapical radiolucency.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Sialadenitis / Odontogenic Infection",
+      "rule_out_reason": "Submandibular swelling and pain initially suggested acute bacterial sialadenitis or odontogenic spread; however, the swelling enlarged despite empirical antibiotic therapy, lacked fluctuance, and showed no purulent discharge from Wharton's duct.",
+      "quote": "The patient consulted a dentist and he was treated with antibiotics. Due to continuing pain and increase in size of the swelling, the patient was referred to surgical outpatient department."
+    },
+    {
+      "candidate": "Salivary Gland Neoplasm (e.g., Pleomorphic Adenoma)",
+      "rule_out_reason": "A solitary, firm, non-tender 8 cm x 5 cm mass arising from the submandibular gland in a young patient strongly suggested a primary salivary neoplasm; however, cytology demonstrated granulomatous inflammation with caseation rather than epithelial/myoepithelial neoplasia.",
+      "quote": "The FNAC from the swelling showed a few granulomas comprising epithelioid cells, Langhan's giant cells, and lymphocytes with central caseation necrosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine-needle aspiration cytology showing epithelioid granulomas, Langhans giant cells, and central caseation necrosis, coupled with a positive PCR for Mycobacterium tuberculosis, established the definitive diagnosis of primary submandibular tuberculous sialadenitis.",
+      "quote": "PCR for mycobacterium tuberculosis was positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

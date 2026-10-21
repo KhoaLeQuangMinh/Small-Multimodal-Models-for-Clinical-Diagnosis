@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10931868_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 62-year-old man presents with chronic, progressive tumefaction, indurated nodules, and particle-containing purulent sinus drainage of the left lower extremity for two years. A previous unguided punch biopsy showed only nondiagnostic dermal fibrosis and scarring. The clinical challenge is overcoming sampling error in fibrotic lesions and distinguishing true fungal mycetoma (eumycetoma) from bacterial actinomycetoma and other chronic granulomatous dermatoses.\n2. Admission Breakpoint: Outpatient dermatologic triage and bedside clinical examination, including non-invasive dermoscopy identifying vascular and fibrotic microstructures and manual needle puncture extruding white grains, immediately prior to microbiological Gram staining, fungal special staining (PAS/GMS), Sanger sequencing, and formal histopathologic biopsy.\n3. Differential Distinctions: Eumycetoma (fungal mycetoma) is the classic cause of chronic grain-discharging tumefaction but was ruled out by negative PAS and GMS fungal stains and absence of fungal DNA on molecular sequencing; chronic non-tuberculous mycobacteriosis or cutaneous tuberculosis lacks visible grains; actinomycetoma is established by dermoscopy-guided puncture revealing white grains containing Gram-positive filamentous branching bacteria identified as Streptomyces species.",
+  "case_prompt": "A 62-year-old man presented to the dermatology clinic with progressive cutaneous lesions on his left lower limb that had erupted two years earlier and had been progressing continuously since then. He reported intermittent pus-like discharge that sometimes contained visible particulate matter from several of the lesions. He had noted no sustained improvement with previous empirical antibacterial courses.\n\nOn physical examination, the left lower limb showed remarkable swelling and soft-tissue tumefaction. Multiple hyperpigmented, indurated nodules and plaques were clustered over the left thigh and knee. An initial blind, unguided punch skin sampling obtained previously had revealed only scarring without diagnostic histopathological findings.\n\nAll lesions were systematically examined at bedside using a dermoscope to aid in identifying active microstructures. Two distinct dermoscopic patterns were identified: the first exhibited central erythema surrounded by a palisade of radial white lines indicating fibrosis, while the second revealed a central zone exhibiting an erosion and variable-sized white globules surrounded by an interrupted fringe of white scales with a peripheral palisade of radiating white lines indicative of fibrosis. Bedside diagnostic puncture of a nodule displaying white globules resulted in the extrusion of numerous macroscopic white grains dispersed within thick purulent exudate.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Eumycetoma (True Fungal Mycetoma)",
+      "rule_out_reason": "In a patient presenting with classic chronic extremity tumefaction, sinus tracts, and grain extrusion, true fungal mycetoma was a primary clinical suspicion; however, periodic acid-Schiff (PAS) and Grocott methenamine silver (GMS) special fungal stains were negative, and molecular sequencing detected no fungal DNA.",
+      "quote": "Histopathologic sections showed grains within an area of suppurative granulomatous dermatitis on H&E [Figure 2c], but no positivity to PAS or GMS. Sanger sequencing and BLAST alignment identified 100% sequence identity with streptomyces sp., but no fungal DNA was detected."
+    },
+    {
+      "candidate": "Cutaneous Tuberculosis / Non-Tuberculous Mycobacterial Infection / Chronic Pyoderma",
+      "rule_out_reason": "Chronic indurated nodular plaques with draining sinuses mimic tuberculosis verrucosa cutis, deep fungal infections (sporotrichosis, chromoblastomycosis), or chronic bacterial pyoderma; an initial blind punch biopsy showed only scarring, obscuring the diagnosis until targeted dermoscopic examination isolated the pathognomonic grains.",
+      "quote": "A dermoscopy-unguided punch skin biopsy was obtained; it revealed only scarring but no diagnostic findings."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Dermoscopy-directed puncture demonstrating white globules that yielded white grains composed of Gram-positive filamentous branching bacteria on Gram staining, with suppurative granulomatous dermatitis and 100% Sanger sequence identity with Streptomyces sp. without fungal DNA, confirmed bacterial actinomycetoma.",
+      "quote": "Lesional puncture resulted in extrusion of either serosanguinous discharge [Figure 1b] or numerous white grains dispersed in purulent exudate [Figure 2a]... Gram-stained smears demonstrated Gram-positive filamentous bacteria [Figure 2b]... Sanger sequencing and BLAST alignment identified 100% sequence identity with streptomyces sp., but no fungal DNA was detected. A diagnosis of actinomycetoma was made"
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. The case prompt stops cleanly following bedside dermoscopy and needle puncture demonstrating grain-laden exudate before Gram staining, PAS/GMS fungal stains, and DNA sequencing. Zero spoilers or pathogen names."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11329603_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old female with a 25-year history of chronic refractory pulmonary disease presents with acute clinical deterioration and moderate anemia (Hb 88 g/L), with chest CT demonstrating severe bilateral cavitary destruction and bronchiectasis. The core clinical challenge is navigating extensive multidrug resistance accumulated over decades of irregular therapy, complicated by profound life-threatening secondary marrow toxicity (Hb 56 g/L) while attempting salvage second-line regimens.\n2. Admission Breakpoint: Triage assessment ends after documentation of the chronic history, baseline blood tests demonstrating moderate anemia (Hb 88 g/L), and chest CT confirming bilateral cavities and left lung destruction, immediately prior to automated sputum culture and full second-line drug susceptibility testing.\n3. Differential Distinctions: Idiopathic bronchiectasis or chronic necrotizing aspergillosis are distinguished by sputum microbiological isolation. Chronic disease anemia is ruled out when profound reticulocytopenic anemia improves following linezolid cessation.",
+  "case_prompt": "A 44-year-old woman presented to the pulmonary clinic with a several-week history of progressively worsening cough and increased purulent sputum production. She had a 25-year medical history of chronic, relapsing drug-resistant pulmonary infection characterized by intermittent and irregular antimicrobial therapies.\n\nOn physical examination, the patient was thin and pale, with diminished respiratory excursion and hollow bronchial breath sounds over the left hemithorax accompanied by bilateral coarse crackles. \n\nTriage laboratory evaluation revealed moderate anemia with a hemoglobin level of 88 g/L. Chest computed tomography demonstrated extensive bilateral infiltrates, marked bronchiectasis, multiple thick-walled cavitary lesions, and widespread fibrodestructive changes resulting in near-total destruction of the left lung parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Anemia of Chronic Disease / Non-Drug Bone Marrow Failure",
+      "rule_out_reason": "Considered when the patient's hemoglobin abruptly plummeted to 56 g/L with reticulocytopenia during therapy. Ruled out as chronic disease anemia, confirming linezolid-induced marrow toxicity that reversed upon drug discontinuation and supportive care.",
+      "quote": "We have ruled out anemia caused by chronic diseases or other reasons. Therefore, we attribute the anemia to LZD-induced hematologic toxicity."
+    },
+    {
+      "candidate": "Chronic Necrotizing Pulmonary Aspergillosis / End-Stage Bronchiectasis Alone",
+      "rule_out_reason": "Considered given the 25-year history of cavitary destruction and extensive bronchiectasis. Ruled out as the primary etiology by positive sputum mycobacterial cultures and phenotypic susceptibility testing.",
+      "quote": "chest CT revealed bilateral TB lesions, bronchiectasis, cavities, and destruction of the left lung."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by sputum mycobacterial cultures and drug susceptibility testing demonstrating Mycobacterium tuberculosis with resistance to isoniazid, rifampicin, levofloxacin, moxifloxacin, and streptomycin, and intermediate resistance to ethambutol, confirming pre-XDR disease.",
+      "quote": "M. tuberculosis sputum cultures and DST indicated resistance to H/R/LFX/MFX/Streptomy(S) and intermediate resistance to E, suggestive of pre-XDR-TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt abstracts 25-year history and cavitary CT destruction without naming specific mycobacterial species or drug resistance profiles, leaving confirmation to the pivot."
+}

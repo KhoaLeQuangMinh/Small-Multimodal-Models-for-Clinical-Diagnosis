@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11750766_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 61-year-old deaf-mute male living alone in a rural village presents with acute-on-chronic peritonitis, board-like abdominal rigidity, severe procalcitonin elevation (4.74 ng/mL), and CT evidence of pneumoperitoneum with a peculiar 'stringy shadow' in the jejunal lumen. This acute abdomen universally mimics perforated peptic ulcer disease or an obstructing gastrointestinal malignancy, masking a catastrophic complication of massive ascariasis (gastric perforation and jejunal obstruction).\n2. Admission Breakpoint: The admission breakpoint falls immediately upon diagnosis of a hollow viscus perforation on plain abdominal CT and emergency surgical consultation, but strictly prior to laparoscopic/laparotomy exploration and surgical extraction of macroparasites.\n3. Differential Distinctions: Perforated peptic ulcer disease is ruled out intraoperatively by the lack of mucosal scarring, induration, or chronicity around the clean 7-mm antral perforation, corroborated by normal follow-up gastroscopy. Obstructing gastric adenocarcinoma is excluded by the absence of an infiltrating mass. The diagnostic pivot is established by intraoperative discovery of live macroscopic roundworms (Ascaris lumbricoides) escaping into the peritoneal cavity through the gastric antral perforation, a palpable worm bolus in the jejunum, and postoperative stool microscopy demonstrating Ascaris eggs.",
+  "case_prompt": "A 61-year-old deaf-mute male living alone in a remote rural village is brought to the emergency department with a 1-month history of dull epigastric pain, anorexia, nausea, and constipation, which suddenly intensified and became diffuse across his entire abdomen 4 hours prior to arrival. He has no known prior medical conditions, no past surgical interventions, and no documented history of peptic ulcer disease or regular medication use.\n\nOn physical examination, the patient appears in acute distress and diaphoresis. Body temperature is 37.1 °C, blood pressure is 109/63 mmHg, pulse rate is 96 beats per minute, and respiratory rate is 27 breaths per minute. Abdominal examination reveals a scaphoid abdomen with marked, diffuse board-like rigidity and severe rebound tenderness across all quadrants. Abdominal auscultation reveals completely absent bowel sounds.\n\nInitial laboratory evaluation demonstrates a marked leukocytosis with a white blood cell count of 15.07 × 10⁹/L (93.3% neutrophils, absolute neutrophil count 14.06 × 10⁹/L) and hemoglobin of 118 g/L. Serum sodium is 131 mmol/L, blood urea nitrogen is 8.2 mmol/L, serum fibrinogen is 5.85 g/L, blood glucose is 7.75 mmol/L, and serum procalcitonin is markedly elevated at 4.74 ng/mL. Non-contrast computed tomography (CT) of the chest reveals left lower lobe pneumonia. Plain CT of the abdomen demonstrates free intraperitoneal air (pneumoperitoneum), a small amount of pelvic free fluid, and an intraluminal linear, stringy soft-tissue shadow within the jejunum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Perforated Peptic Ulcer Disease (Perforated Gastric / Duodenal Ulcer)",
+      "rule_out_reason": "Sudden onset of diffuse peritonitis, board-like abdominal rigidity, and free air on CT is classic for a perforated peptic ulcer; however, intraoperative inspection revealed an acute 7-mm antral perforation completely free of chronic scarring or induration, and postoperative gastroscopy showed no peptic ulcer disease.",
+      "quote": "There was a perforation (about 7 mm in diameter) in the gastric antrum after removing the pus mosses... There was no scarring or induration around the perforation to suggest a long-standing peptic ulcer disease."
+    },
+    {
+      "candidate": "Perforated Gastrointestinal Malignancy (Gastric Adenocarcinoma / GIST)",
+      "rule_out_reason": "One month of anorexia, weight loss, and gastric perforation in an older adult raised concern for a necrotic perforated gastric tumor; however, surgical exploration and subsequent upper endoscopy revealed healthy gastric mucosa without neoplastic lesions.",
+      "quote": "There was no scarring or induration around the perforation to suggest a long-standing peptic ulcer disease... An upper gastrointestinal endoscopy performed 1 month later did not show any evidence of peptic ulcer disease."
+    },
+    {
+      "candidate": "Strangulated Small Bowel Obstruction with Secondary Ischemic Perforation",
+      "rule_out_reason": "Obstipation, sepsis with procalcitonin 4.74 ng/mL, and intraluminal jejunal fill defects could indicate ischemic bowel infarction; however, the perforation occurred primarily in the gastric antrum due to parasite migration rather than small bowel ischemia.",
+      "quote": "Plain CT of the abdomen revealed a small amount of fluid and free air in the abdominal cavity, as well as stringy shadow in the jejunum... Continuing to explore the small intestine, a bundle of ascarids could be palpated within the jejunum."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Gastric Perforation and Jejunal Bolus Obstruction by Ascaris lumbricoides",
+      "rule_out_reason": "The diagnosis was confirmed during emergency exploratory surgery by the visualization of 700 mL of pus and three viable adult ascarids on the stomach surface escaping through a 7-mm antral perforation, extraction of an obstructing bundle of roundworms from the jejunum, and confirmation of Ascaris lumbricoides eggs in stool.",
+      "quote": "In addition to 700 mL of pus in the abdominal cavity and pus mosses on the surface of the stomach, 3 viable ascarids were finding around pus mosses... There was a perforation (about 7 mm in diameter) in the gastric antrum... Continuing to explore the small intestine, a bundle of ascarids could be palpated within the jejunum. The ascarids was removed after the jejunum was cut open... Fecal samples collected from the patient on POD 3, as well as on POD 5 and POD 6, all tested positive for AL eggs."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized teaching case distilled in accordance with Stanford MedCaseReasoning methodology. Admission prompt ends before operative laparotomy, omitting the discovery of macroscopic parasites in the peritoneum."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7545976_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 12-year-old vaccinated child presenting with three weeks of febrile torticollis, marked systemic inflammatory markers (CRP 200 mg/L, WBC 16,000/mm³), and normal plain cervical radiographs, lacking pulmonary symptoms or known contact, where spinal pathology atypically localized to the posterior vertebral arch rather than the anterior vertebral bodies.\n2. Admission Breakpoint: The breakpoint occurs after initial emergency evaluation and normal plain cervical radiography, prior to MRI imaging, tuberculin skin testing, and surgical biopsy of the posterior elements.\n3. Differential Distinctions: Acute pyogenic spondylodiscitis / retropharyngeal abscess and primary pediatric bone neoplasms (e.g., osteoid osteoma, aneurysmal bone cyst, or Ewing sarcoma) were primary considerations given high inflammatory markers and posterior arch erosion; however, negative sputum/urine workup, posterior cancellous bone MRI findings, and surgical biopsy demonstrating an interspinous collection with caseating granulomas confirmed tuberculosis.",
+  "case_prompt": "A 12-year-old child presents to the hospital with painful neck stiffness and persistent fever for three weeks. There has been no alteration in general condition, anorexia, or weight loss. The child is fully vaccinated, has an unremarkable medical history, and has no known sick contacts or exposure to chronic infectious diseases.\n\nOn physical examination, the child is febrile with a body temperature fluctuating between 38.0°C and 38.5°C. Neck examination demonstrates torticollis with mild tenderness on palpation of the lower cervical spine. There is no visible swelling, erythema, or local heat over the neck. Neurological examination of the upper extremities is normal.\n\nLaboratory evaluation reveals a marked biological inflammatory syndrome: white blood cell count is 16,000/mm³, erythrocyte sedimentation rate (ESR) is 70 mm/hr, and C-reactive protein (CRP) is 200 mg/L. A plain radiograph of the cervical spine is completely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Spondylodiscitis / Deep Cervical Space Abscess",
+      "rule_out_reason": "Marked leukocytosis (16,000/mm³) and markedly elevated CRP (200 mg/L) with fever initially suggested acute pyogenic infection, but plain radiographs were normal, the clinical condition was preserved over three weeks, and non-invasive cultures were negative.",
+      "quote": "X-ray of the cervical spine was normal."
+    },
+    {
+      "candidate": "Primary Bone Neoplasm (e.g., Osteoid Osteoma, Osteoblastoma, Ewing Sarcoma)",
+      "rule_out_reason": "Posterior arch vertebral lesions with cortical erosion in children frequently represent bone neoplasms, but open exploration revealed an inflammatory collection rather than tumor.",
+      "quote": "The diagnosis was in favor of a specific infection, a radiological biopsy was not able for a technical reason, so we decided to do a surgical biopsy."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Spinal Tuberculosis (Pott's Disease of the Posterior Arch)",
+      "rule_out_reason": "Definitive diagnosis was established during surgical biopsy, which revealed an interspinous collection with histopathology confirming tuberculosis disease, successfully treated with 12 months of anti-tubercular chemotherapy.",
+      "quote": "In per operative, we found a collection in the interspinous space. The histological exam confirmed tuberculosis disease."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly stops after plain cervical radiography. Core tension explores pediatric febrile torticollis due to atypical posterior spinal tuberculosis."
+}

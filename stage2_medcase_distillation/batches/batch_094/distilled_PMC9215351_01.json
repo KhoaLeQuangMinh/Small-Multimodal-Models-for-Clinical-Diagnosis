@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9215351_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presented with an 11-year history of a massive, slowly expanding erythematous and erosive cervical plaque with verrucous nodules and cervical/mediastinal lymphadenopathy. Diascopy demonstrated characteristic 'apple jelly' nodules, highly suggestive of lupus vulgaris. However, the diagnostic challenge arose from an initial misdiagnosis of sarcoidosis that led to a decade of ineffective immunosuppression, as well as confounding negative initial tests: negative sputum smear AFB, negative serology, and critically, a negative T-SPOT.TB assay in an immunocompetent patient.\n2. Admission Breakpoint: The admission breakpoint occurs after the history, physical examination (including dermatologic inspection and diascopy), initial triage serological screens (HIV, syphilis), peripheral lymphocyte count, and CT imaging of the neck and chest showing lymphadenopathy, but strictly prior to skin biopsy histopathology, specialized leprosy serologies, T-SPOT.TB results, nested PCR assays, and mycobacterial culture.\n3. Differential Distinctions: Sarcoidosis was considered due to chronic non-caseating granulomatous inflammation seen on prior historical biopsies, but failed 10 years of steroid and azathioprine therapy while lesions progressed. Leprosy was suspected given the long-standing indurated plaque and lymphadenopathy, but ruled out by intact neurological examination, negative slit-skin microscopy for acid-fast bacilli, and negative NDO-LID/MMP-II serology. Cutaneous deep fungal infection and non-tuberculous mycobacteria were excluded by negative PAS/silver stains and specific molecular identification.",
+  "case_prompt": "A 65-year-old immunocompetent man presents with an 11-year history of a huge, expanding erythematous erosive plaque on his neck. The lesion initially began as a pigeon's egg-sized nodule 11 years prior and gradually progressed. He had previously been diagnosed with sarcoidosis based on earlier biopsies and was treated with prednisone acetate and azathioprine over 10 years; despite this immunosuppressive regimen, the cutaneous lesion continued to expand. He denies fever, dry cough, fatigue, weight loss, or known contact with individuals having chronic pulmonary infections.\n\nOn physical examination, the patient appears well without acute distress. Neurological examination is normal. Dermatologic inspection of the neck reveals an 18 x 10 cm reddish nodular plaque with superficial erosions, firm indurated texture, and well-defined margins. Verrucous proliferating nodules are present behind his left ear. Diascopy reveals classic apple jelly nodules.\n\nTriage laboratory evaluation reveals a normal peripheral blood lymphocyte count, with negative screening tests for human immunodeficiency virus and syphilis. A computed tomographic (CT) scan reveals multiple enlarged lymph nodes in the bilateral neck, submandibular space, and mediastinum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sarcoidosis",
+      "rule_out_reason": "Initially suspected and treated with prednisone acetate and azathioprine over a 10-year span, but the cutaneous plaque relentlessly expanded despite prolonged systemic immunosuppression.",
+      "quote": "Initially, sarcoidosis was diagnosed based on biopsies of skin lesions or lymph nodes and he was treated with prednisone acetate and azathioprine over 10 years. However, the skin lesions are still gradually expanding."
+    },
+    {
+      "candidate": "Leprosy (Hansen's disease)",
+      "rule_out_reason": "Considered due to the chronic verrucous and nodular plaque, but ruled out by a normal neurological examination, negative microscopic examination for acid-fast bacilli, and negative specific serological tests (IgM/IgG against NDO-LID and MMP-II) and ELISPOT.",
+      "quote": "microscopic examination of Mycobacterium leprae, IgM and IgG levels against NDO-LID as well as MMP-II for leprosy... showed negative results. The measurement of enzyme-linked immunospot assay for tuberculosis (T-SPOT.TB) and leprosy were also negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite an initial negative single PCR and negative T-SPOT.TB, histopathology revealed dermal necrotizing epithelioid-cell granulomas with Langhans giant cells. Nested PCR targeting rpoB and hsp65 genes was positive, and tissue cultures on Lowenstein-Jensen medium yielded yellow caseous colonies 100% homologous to Mycobacterium tuberculosis, with near-complete clearance following a standard 6-month 2HRZE/4HR regimen.",
+      "quote": "Histopathological examination of the lesion on the neck showed necrosis and epithelioid-cell granuloma (Figure 2A) in the dermis, which infiltrates lymphocytes, epithelioid cells and Langhans giant cells... Single polymerase chain reaction (PCR) tests for rpoB and hsp65 genes of the skin lesions did not identify Mycobacterium tuberculosis until nested PCR for the same genes were performed. Tissue cultures from the lesions grew caseous yellow colonies at 37 C in Lowenstein-Jensen medium after 40 days."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly following Stanford MedCaseReasoning principles. The admission prompt contains only initial triage history, examination, baseline serologies, and CT findings, completely devoid of confirmatory histopathology, PCR, or culture results."
+}

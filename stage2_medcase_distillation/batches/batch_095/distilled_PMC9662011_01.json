@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9662011_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 8-year-old child presented with marked intracranial hypertension (4 months of progressive global headache, projectile vomiting, and blurred vision) caused by a giant temporoparietal cystic lesion with substantial midline shift. The clinical challenge is differentiating a benign arachnoid cyst, cystic brain tumor (such as pilocytic astrocytoma), or bacterial abscess from a giant cerebral hydatid cyst (Echinococcus granulosus), particularly given the total absence of perilesional edema, wall enhancement, or systemic hydatid disease.\n2. Admission Breakpoint: The admission breakpoint is established after clinical triage, normal screening chest radiography and abdominal ultrasound, and complete pre- and post-contrast brain MRI sequences demonstrating the cyst characteristics, before surgical craniotomy and histopathological examination.\n3. Differential Distinctions: Pilocytic astrocytoma and other cystic intracranial neoplasms typically demonstrate an enhancing mural nodule or rim enhancement with surrounding parenchymal edema. Pyogenic brain abscess shows dense ring enhancement and marked vasogenic edema. Arachnoid cysts share identical CSF-like signal intensity and lack of enhancement but are predominantly extra-axial without spherical parenchymal expansion. Histopathology demonstrating an acellular laminated layer and cellular germinal membrane confirmed Echinococcosis.",
+  "case_prompt": "An 8-year-old girl from Ethiopia presented to the hospital with a 4-month history of progressive global headaches. Over the preceding month, her symptoms had escalated, accompanied by daily projectile non-bilious vomiting occurring two to three times per day and blurred vision. She had experienced no seizures, involuntary movements, weakness, sensory loss, or difficulty walking.\n\nOn physical examination, she was conscious and alert. Vital signs were stable. Neurological examination revealed intact cranial nerves, preserved visual fields, normal pupillary light reflexes, and no motor or sensory deficits. Deep tendon reflexes and gait were normal. Screening chest radiography and abdominal ultrasonography revealed no parenchymal abnormalities or organomegaly.\n\nBrain magnetic resonance imaging (MRI) demonstrated a large, well-circumscribed solitary cystic mass in the right temporal lobe producing significant local mass effect and midline shift. The intra-cystic fluid was isointense to cerebrospinal fluid (hypointense on T1-weighted images and hyperintense on T2-weighted images) and demonstrated complete signal suppression on fluid-attenuated inversion recovery (FLAIR) sequences. Notably, there was no surrounding vasogenic or perilesional edema. Following intravenous gadolinium contrast administration, there was no enhancement of the cyst wall, no surrounding ring enhancement, and no mural nodule or solid enhancing component.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intracranial arachnoid cyst",
+      "rule_out_reason": "Considered because of fluid characteristics that strictly follow CSF signal intensity (T1 hypointense, T2 hyperintense, complete FLAIR suppression) with total absence of wall enhancement or edema; however, arachnoid cysts are typically extra-axial developmental anomalies, whereas this lesion represented an expansive, intraparenchymal spherical mass producing progressive intracranial hypertension and marked midline shift in an endemic setting.",
+      "quote": "Magnetic resonance imaging (MRI) of the brain showed a cystic signal intensity similar to that of cerebrospinal fluid (CSF), without ring enhancement. The axial T1-weighted brain MRI showed a well-defined hypointense lesion in the right temporal lobe with significant mass effect and midline shift... with no sign of perilesional edema"
+    },
+    {
+      "candidate": "Cystic intracranial neoplasm (e.g., pilocytic astrocytoma or glioblastoma)",
+      "rule_out_reason": "High suspicion in a pediatric patient presenting with subacute intracranial hypertension and a massive cerebral lesion; excluded by the complete absence of any mural nodular enhancement, lack of cyst wall gadolinium enhancement, and lack of surrounding vasogenic edema.",
+      "quote": "The sagittal and axial T1-weighted MRI of the brain after gadolinium administration showed a well-defined cystic mass with no enhancement on the cyst wall, and there was no mass-like or mural nodular enhancement"
+    },
+    {
+      "candidate": "Pyogenic brain abscess or neurocysticercosis",
+      "rule_out_reason": "Considered given the infectious risk in the region; ruled out by the lack of peripheral rim enhancement, lack of capsular thickening, complete absence of perilesional vasogenic edema, and absence of an eccentric scolex.",
+      "quote": "Magnetic resonance imaging (MRI) of the brain showed a cystic signal intensity similar to that of cerebrospinal fluid (CSF), without ring enhancement... Coronal T2-weighted and axial fluid-attenuated inversion recovery (FLAIR) images of the brain showed a well-defined T2 hyperintense lesion that was totally suppressed on the FLAIR sequence, with no sign of perilesional edema"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The distinctive MRI phenotype of a huge, unilocular intraparenchymal cyst matching CSF signal with complete FLAIR suppression, no peripheral contrast enhancement, and no vasogenic edema, combined with successful intact surgical excision of a 15x13x12 cm cyst whose histopathology confirmed an acellular laminated cuticular layer and nucleated germinal layer, established giant intracranial hydatid cyst (Echinococcosis).",
+      "quote": "Based on the presentation and brain MRI findings, the diagnosis of giant intracranial hydatid cyst was made. Right temporoparietal craniotomy was carried out and a huge cyst, measuring 15x13x12 cm, was removed with an intact capsule, with maximum care taken to avoid rupture and spillage... Microscopically, the histological sections showed a laminated acellular cyst wall with a nucleated germinal layer."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation cleanly isolated at admission triage and neuroimaging. Contains clinical HPI, exam, normal CXR/US, and pathognomonic MRI findings without revealing the pathogen or surgical pathology. Zero spoilers."
+}

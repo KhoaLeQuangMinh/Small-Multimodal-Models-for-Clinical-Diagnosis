@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3982247_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 15-year-old boy presents with an indolent, large cystic liver mass causing chronic intermittent abdominal pain. The primary challenge is differentiating a parasitic hydatid cyst from benign simple congenital hepatic cysts, pyogenic or amebic liver abscesses, or cystic hepatic neoplasms in an adolescent with pastoral animal exposures.\n2. Admission Breakpoint: Admission triage concludes with the upper abdominal CT showing a large low-density cystic mass in the right hepatic lobe. Confirmatory workup begins with the Casoni intradermal hypersensitivity test, surgical adventitia resection, and histopathological analysis of the cyst wall.\n3. Differential Distinctions: Simple hepatic cysts lack a thick fibrous adventitia, have no immunological reactivity, and do not relate to animal contacts. Pyogenic or amebic hepatic abscesses typically produce acute febrile illness, right upper quadrant tenderness, leukocytosis, and systemic toxicity rather than a months-long indolent course. Cystic neoplasms (such as biliary cystadenoma) lack the characteristic hydatid multilayered wall and parasitic intradermal/serological reactivity.",
+  "case_prompt": "A 15-year-old adolescent boy presents with intermittent upper abdominal pain of several months' duration. He has lived in a rural area for many years with documented close contact with livestock and domestic animals, including dogs, cattle, and sheep. He denies acute fever, jaundice, nausea, or significant weight loss.\n\nOn physical examination, he appears well-nourished and in no acute distress. Abdominal examination reveals fullness and mild tenderness over the right upper quadrant without peritoneal signs. No scleral icterus is observed.\n\nAn initial upper abdominal computed tomography (CT) scan demonstrates a large low-density cystic lesion located in the right lobe of the liver, involving segments VII and VIII.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple Hepatic Cyst",
+      "rule_out_reason": "Considered given the large low-density cystic appearance in the liver on CT in an otherwise stable patient, but simple biliary cysts lack inflammatory adventitial encapsulation, do not provoke immunological responses, and are unassociated with pastoral canine and livestock exposure.",
+      "quote": "Upper abdominal CT indicated that the right lobe of liver had a large low-density lesion, suggesting liver hydatid cyst (Figure 1)."
+    },
+    {
+      "candidate": "Hepatic Abscess (Pyogenic or Amebic)",
+      "rule_out_reason": "Low-density hepatic lesions can represent abscesses, but the patient had an indolent course spanning several months without high fevers, rigors, sepsis, or acute abdominal signs, and the lesion demonstrated an intact well-circumscribed fibrous membrane without liquefactive suppurative necrosis.",
+      "quote": "The patient was a 15-year-old boy and presented with intermittent upper abdominal pain of a few-month duration."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A positive Casoni intradermal test combined with operative findings of a 20 x 18 x 15 cm cystic mass with a distinct fibrous adventitia in segments VII-VIII, drained of fluid and stripped along the outer membrane, followed by histopathological confirmation of parasitic cyst wall tissue.",
+      "quote": "Casoni test gave a positive reaction. Under general anesthesia, the adventitia resection of liver hydatid cyst was performed. The lesion was characterized by a 20 x 18 x 15 cm3 cystic mass in segments VII-VIII with fibrous membrane (Figure 2)... The pathology report showed liver hydatid cyst tissue."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC3982247. All spoilers regarding hydatid etiology were redacted from admission prompt. Casoni test and histopathology confirm Echinococcus granulosus hydatid disease."
+}

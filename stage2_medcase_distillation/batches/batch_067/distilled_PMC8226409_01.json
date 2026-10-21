@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8226409_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 31-year-old previously healthy female presents with isolated unilateral hearing loss and tinnitus lasting four months, refractory to multiple courses of oral antibiotics, without systemic constitutional symptoms (no fever, cough, night sweats, or weight loss). Nasoendoscopy identifies a focal yellowish slough obstructing the left Eustachian tube orifice. The diagnostic tension lies in distinguishing refractory non-specific otitis media with effusion or nasopharyngeal carcinoma from primary, isolated extrapulmonary tuberculosis of the Eustachian tube in a patient with a completely normal chest radiograph.\n2. Admission Breakpoint: The admission breakpoint occurs following otoscopy, nasoendoscopy identifying the yellowish slough obstructing the Eustachian tube orifice, pure tone audiometry, tympanometry, and normal chest radiography, strictly prior to biopsy histopathology, acid-fast bacilli staining, and sputum mycobacterial cultures.\n3. Differential Distinctions: Bacterial otitis media with effusion is ruled out by total therapeutic failure across multiple antibiotic regimens. Nasopharyngeal carcinoma is excluded by biopsy demonstrating benign nonspecific inflammation without neoplastic features. Pulmonary tuberculosis with secondary mucosal spread is ruled out by normal chest radiography and negative sputum AFB smears and cultures.",
+  "case_prompt": "A 31-year-old previously healthy woman presented to the otolaryngology clinic with a four-month history of reduced hearing and persistent tinnitus in her left ear. She reported no otalgia, otorrhea, fever, nasal obstruction, rhinorrhea, chronic cough, night sweats, or unintentional weight loss. She reported no known sick contacts or exposure to infected individuals. Prior to presentation, she had been treated for presumed otitis media with multiple courses of oral antibiotics prescribed by a primary care physician, without symptomatic improvement.\n\nOn physical examination, the patient appeared well. Otoscopic examination of the left ear showed a normal external auditory canal with a dull tympanic membrane; the right tympanic membrane was normal. Physical examination of the neck revealed no palpable cervical lymphadenopathy. Nasoendoscopic examination revealed a focal yellowish slough covering and obstructing the pharyngeal opening of the left Eustachian tube.\n\nPure tone audiometry demonstrated moderate mixed hearing loss in the left ear with normal hearing thresholds in the right ear. Tympanometry revealed a flat type B tympanogram on the left, consistent with middle ear effusion, and a type A pattern on the right. A plain chest radiograph was normal with no active pulmonary parenchymal lesions or lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory Bacterial Otitis Media with Effusion",
+      "rule_out_reason": "A dull tympanic membrane and type B tympanogram commonly indicate chronic bacterial otitis media with effusion, but the condition was completely refractory to multiple courses of oral antibiotics.",
+      "quote": "She was previously treated for otitis media with multiple courses of oral antibiotics prescribed by a general practitioner, but the symptoms persisted."
+    },
+    {
+      "candidate": "Nasopharyngeal Carcinoma / Fossa of Rosenmüller Neoplasm",
+      "rule_out_reason": "Unilateral Eustachian tube obstruction causing serous otitis media and mixed hearing loss in an adult is a classic presentation of nasopharyngeal carcinoma, but biopsy of the obstructing lesion demonstrated non-specific inflammatory tissue without malignant neoplasia.",
+      "quote": "The slough was biopsied and the specimen was sent for histopathological examination (HPE)... and the HPE of the slough was reported as nonspecific inflammation."
+    },
+    {
+      "candidate": "Pulmonary Tuberculosis with Secondary Upper Airway Involvement",
+      "rule_out_reason": "Extrapulmonary nasopharyngeal mycobacterial involvement usually represents secondary seeding from active cavitary pulmonary disease, but the chest radiograph was clear and serial sputum examinations were negative.",
+      "quote": "Chest radiograph was normal... An early-morning sputum test for AFB performed for three consecutive days and Mycobacterium tuberculosis culture were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Biopsy of the yellowish slough occluding the left Eustachian tube opening demonstrated positive acid-fast bacilli staining with nonspecific inflammatory changes on histopathology, establishing primary Eustachian tube tuberculosis.",
+      "quote": "The staining for AFB was positive and the HPE of the slough was reported as nonspecific inflammation... She was diagnosed with nasopharyngeal TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to endoscopic biopsy HPE/AFB staining and sputum cultures. Verbatim quotes support all differential candidates and the diagnostic pivot."
+}

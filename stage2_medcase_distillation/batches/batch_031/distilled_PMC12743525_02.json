@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12743525_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 22-year-old woman with chronic childhood epilepsy managed on sodium valproate presents with acute new-onset generalized tonic-clonic convulsions just days after completing the intensive 2-month phase of multi-drug antimicrobial therapy for a pulmonary granulomatous infection. The clinical tension is determining whether these new seizures represent simple antiepileptic breakthrough/failure or a paradoxical intracranial Jarisch-Herxheimer-like immune reconstitution reaction causing new CNS tuberculomas despite pulmonary cure.\n2. Admission Breakpoint: The admission breakpoint is established on Day 1 immediately following emergency neurological evaluation and initial non-contrast head CT revealing a mild right parietal hypodensity, but prior to lumbar puncture analysis on Day 2 (lymphocytic pleocytosis, hypoglycorrhachia, elevated ADA), CBNAAT, and Day 6 contrast MRI demonstrating ring-enhancing tuberculomas.\n3. Differential Distinctions: Idiopathic epileptic breakthrough seizures are expected occasionally given her long-standing epilepsy history, but do not produce focal parietal hypodensity on CT or severe lymphocytic meningitis with hypoglycorrhachia and high ADA. Paradoxical tuberculoma development occurs even during bactericidal clearance, presenting with new focal signs and ring-enhancing granulomas.",
+  "case_prompt": "A 22-year-old woman with a history of childhood-onset epilepsy since age 12, maintained on sodium valproate with infrequent breakthrough seizures every 6 to 12 months, presented to the hospital with new generalized tonic-clonic seizures.\n\nThree months earlier, she had presented with evening fevers and weight loss and was diagnosed with a granulomatous pulmonary infection, for which she initiated a standard multidrug antimicrobial regimen. At that time, she had no neurological signs or symptoms, and central nervous system involvement was not suspected. She had completed the initial 2-month intensive phase of this antimicrobial regimen just a few days prior to the current admission.\n\nOn physical examination, the patient was post-ictal but hemodynamically stable. Neurological examination showed no focal motor deficits, cranial neuropathies, or signs of meningism at triage.\n\nEmergency non-contrast computed tomography (CT) of the brain performed on Day 1 demonstrated a mild focal hypodensity in the right parietal region. Initial chest imaging performed on admission showed resolution with no active pulmonary infiltrates.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Breakthrough seizures secondary to pre-existing idiopathic epilepsy",
+      "rule_out_reason": "Considered as the most immediate etiology due to her 10-year history of epilepsy on valproate; however, ruled out because the new seizures were accompanied by a focal structural hypodensity on neuroimaging and inflammatory CSF changes rather than benign drug non-adherence or baseline seizure recurrence.",
+      "quote": "On admission, possibilities considered were breakthrough seizures due to epilepsy versus paradoxical CNS tuberculosis... CT brain on Day 1 showed a mild hypodensity in the right parietal region."
+    },
+    {
+      "candidate": "Acute ischemic cerebrovascular stroke",
+      "rule_out_reason": "Considered in view of the focal right parietal hypodensity on Day 1 non-contrast CT, but ruled out by subsequent contrast MRI demonstrating discrete multifocal ring-enhancing nodules and CSF analysis demonstrating lymphocytic pleocytosis and high ADA rather than non-inflammatory ischemic infarction.",
+      "quote": "CT brain on Day 1 showed a mild hypodensity in the right parietal region... On Day 2, CSF revealed lymphocytic pleocytosis, low glucose (46 mg/dL), and elevated ADA (16 U/L)... By Day 6, MRI revealed multiple ring-enhancing tuberculomas, predominantly in the right parietal lobe."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CSF analysis on Day 2 demonstrating lymphocytic pleocytosis with elevated ADA (16 U/L) and low glucose (46 mg/dL), followed by brain MRI on Day 6 revealing multiple ring-enhancing tuberculomas predominantly in the right parietal lobe, establishing paradoxical CNS tuberculomas occurring after completion of intensive-phase therapy.",
+      "quote": "On Day 2, CSF revealed lymphocytic pleocytosis, low glucose (46 mg/dL), and elevated ADA (16 U/L); CBNAAT was negative... By Day 6, MRI revealed multiple ring-enhancing tuberculomas, predominantly in the right parietal lobe. ATT was continued with regimen modified for CNS TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt describes prior lung infection and therapy without leaking disease or pathogen names. Prompt stops on Day 1 after brain CT. Excluded CSF ADA, CBNAAT, and MRI tuberculoma confirmation."
+}

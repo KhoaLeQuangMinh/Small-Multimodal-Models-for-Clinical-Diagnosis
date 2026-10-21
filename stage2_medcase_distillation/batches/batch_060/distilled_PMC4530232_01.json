@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4530232_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old indigenous male presenting in fulminant acute hypoxemic respiratory failure and shock-like vital signs (heart rate 140 bpm, blood pressure 90/60 mmHg, respiratory rate 35 breaths/min) on a background of a 4-month history of hemoptysis, chronic cough, and severe wasting, accompanied by extreme lymphopenia (lymphocyte count 0.2 × 10^3/µL) and extensive right apical cavitary disease with diffuse bilateral opacities on chest radiography. The central clinical dilemma is differentiating advanced destructive cavitary pulmonary tuberculosis from HIV-associated opportunistic pulmonary infections (such as Pneumocystis pneumonia or systemic endemic mycoses), pyogenic necrotizing lung abscess, and chronic fungal cavitation.\n2. Admission Breakpoint: Admission triage ends following emergency stabilization, vital sign assessment (fever of 99.5°F, tachycardia, hypotension, tachypnea), physical examination showing severe cachexia and right apical inspiratory crackles, initial arterial blood gas, baseline triage laboratories (normocytic anemia, severe lymphopenia of 0.2 × 10^3/µL, hypoalbuminemia of 2.1 g/dL, APACHE II score of 13), and initial chest radiograph demonstrating right upper lobe cavitary disease and diffuse alveolar infiltrates, immediately prior to sputum smear microscopy, PCR testing, and viral serologies.\n3. Differential Distinctions: Advanced HIV-related immunodeficiency with opportunistic pneumonias is strongly suggested by marked lymphopenia, cachexia, and diffuse pulmonary opacities, but is excluded by negative HIV serology. Pyogenic necrotizing pneumonia typically follows an acute clinical trajectory rather than a subacute 4-month wasting illness with apical predilection. Fulminant pulmonary tuberculosis causing acute respiratory failure is definitively confirmed by positive sputum acid-fast stains and specific mycobacterial DNA PCR.",
+  "case_prompt": "A 21-year-old Tarahumara male is transferred to an intensive care facility with a 4-month history of persistent cough, hemoptysis, progressive dyspnea, intermittent fever, and severe involuntary weight loss.\n\nOn physical examination, he appears severely cachectic and in acute respiratory failure. Vital signs demonstrate a blood pressure of 90/60 mmHg, heart rate of 140 beats/min, respiratory rate of 35 breaths per minute, and core body temperature of 99.5°F. He displays breathy speech, marked accessory muscle use, and fine inspiratory crackles predominantly over the right pulmonary apex.\n\nArterial blood gas analysis on supplemental mask oxygen reveals a pH of 7.37, PaO2 of 98 mmHg, PaCO2 of 36.5 mmHg, and HCO3- of 20.8 mEq/L. Baseline triage laboratory testing reveals a hemoglobin of 11.1 g/dL, white blood cell count of 11.6 × 10^3/µL, absolute neutrophil count of 10.9 × 10^3/µL, absolute lymphocyte count of 0.2 × 10^3/µL, serum sodium of 136 mmol/L, chloride of 98 mmol/L, potassium of 4.02 mmol/L, calcium of 7.6 mg/dL, serum glucose of 77 mg/dL, creatinine of 0.36 mg/dL, blood urea nitrogen of 6.1 mg/dL, uric acid of 3.7 mg/dL, total cholesterol of 91 mg/dL, triglycerides of 98 mg/dL, and serum albumin of 2.1 g/dL. His calculated APACHE II score on admission is 13.\n\nA plain chest radiograph reveals diffuse bilateral alveolar and nodular opacities, along with extensive right upper lobe cavitary disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "HIV-Associated Opportunistic Pulmonary Infection (e.g., Pneumocystis / Fungal)",
+      "rule_out_reason": "Considered due to severe cachexia, profound peripheral lymphopenia (0.2 × 10^3/µL), and diffuse bilateral alveolar pulmonary opacities, but ruled out by negative HIV serologic testing.",
+      "quote": "The HIV and hepatitis B and C tests were all negative."
+    },
+    {
+      "candidate": "Viral Hepatitis (Hepatitis B / Hepatitis C) Co-Infection",
+      "rule_out_reason": "Evaluated in the setting of severe wasting, chronic infection, and hypoalbuminemia prior to initiation of complex systemic antimicrobials, but excluded by negative serologies.",
+      "quote": "The HIV and hepatitis B and C tests were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microbiological examination of sputum smears revealed positive acid-fast bacilli, and real-time polymerase chain reaction confirmed the presence of specific mycobacterial DNA, establishing acute respiratory failure secondary to cavitary tuberculosis.",
+      "quote": "Sputum acid-fast stains were positive since his previous hospitalization and a real-time polymerase chain reaction (PCR) assay performed with another sputum sample confirmed the presence of Mycobacterium tuberculosis DNA."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial Day 1 transfer presentation (4-month cough, hemoptysis, vital signs with shock/tachypnea, cachexia, exam with right apical crackles, triage ABG, labs with severe lymphopenia and hypoalbuminemia, APACHE II score, and CXR showing right apical cavity and diffuse opacities) strictly before sputum microscopy, PCR, or viral serologies. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

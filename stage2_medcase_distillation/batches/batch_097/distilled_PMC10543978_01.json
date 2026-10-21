@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10543978_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 30-year-old male presents with a 1-year history of worsening left ankle pain, soft tissue tumefaction, and a chronically discharging sinus draining cheese-like material, accompanied by constitutional symptoms including evening temperature spikes, anorexia, and weight loss, in the absence of any prior mechanical trauma. Chronic monoarthritis involving the ankle joint presents a diagnostic challenge, as it mimics chronic pyogenic osteomyelitis, non-tuberculous fungal arthritis, inflammatory synovitis, and bone neoplasms, especially without overt pulmonary signs.\n\n2. Admission Breakpoint: The presentation terminates immediately following the outpatient orthopedic evaluation and physical examination of the left ankle (demonstrating soft tissue swelling, sinus tract, and oozing caseous debris), prior to operative intervention (emergency surgical debridement and curettage), histopathological analysis, and microbiological culture.\n\n3. Differential Distinctions: Chronic pyogenic osteomyelitis/bacterial septic arthritis typically produces purulent drainage following penetrating trauma or bacteremia, whereas this presentation was indolent and non-traumatic with caseous discharge. Non-infectious inflammatory arthropathies and musculoskeletal neoplasms do not typically form spontaneous draining fistulae exuding caseating material. Operative histopathology and microbiological cultures confirm the mycobacterial etiology.",
+  "case_prompt": "A 30-year-old male presented to the orthopedics outpatient clinic complaining of persistent pain and a draining sinus tract over his left ankle that had been present for 1 year and was progressively worsening. He reported associated constitutional symptoms, including recurrent evening elevations in body temperature, noticeable weight loss, and marked loss of appetite. He specifically denied any history of preceding mechanical trauma, joint puncture, or prior orthopedic surgery.\n\nOn physical examination, the left ankle demonstrated prominent soft tissue swelling and localized tenderness. A cutaneous sinus tract was visible over the joint with active oozing of thick, whitish, caseous-appearing necrotic debris. Active and passive range of motion of the ankle was restricted due to pain. There were no palpable lesions in other joints, and the systemic physical examination was otherwise unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Pyogenic Osteomyelitis / Bacterial Septic Arthritis",
+      "rule_out_reason": "Although chronic discharging sinus tracts often arise from pyogenic bone infections, the absence of trauma, protracted 1-year course, and drainage of caseous rather than purulent exudate were atypical for conventional bacterial pathogens.",
+      "quote": "Isolated involvement of joints encompasses a spectrum of differential diagnoses such as infectious, inflammatory or neoplastic processes"
+    },
+    {
+      "candidate": "Inflammatory Monoarthritis or Neoplastic Process",
+      "rule_out_reason": "Non-infectious inflammatory monoarthritides or synovial neoplasms can cause persistent joint swelling and pain, but they do not account for fistulization with cheesy caseous discharge or systemic evening fevers and weight loss.",
+      "quote": "Isolated involvement of joints encompasses a spectrum of differential diagnoses such as infectious, inflammatory or neoplastic processes, where a high degree of suspicion is necessary for the diagnosis of tuberculous involvement."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred when the patient underwent surgical debridement and curettage of the joint, where histopathologic analysis and culture and sensitivity testing of the caseous material confirmed Mycobacterium tuberculosis.",
+      "quote": "The patient was taken in emergency operation for debridement and curettage and caseous material was sent for histopathological examination and culture and sensitivity test which was positive for mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission prompt stops cleanly at the clinical evaluation of the ankle sinus before operative debridement, histopathology, or cultures. Differential reasoning cites verbatim text."
+}

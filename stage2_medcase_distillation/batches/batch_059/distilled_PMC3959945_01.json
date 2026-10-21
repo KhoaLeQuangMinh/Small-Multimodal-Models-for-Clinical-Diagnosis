@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3959945_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 48-year-old Portuguese woman with no history of travel outside the country in the preceding five years and completely normal initial laboratory tests (including normal blood counts without eosinophilia) and an unremarkable abdominal CT presents with intractable, opioid-refractory epigastric pain radiating to the back. Differentiating occult biliary/pancreatic disease from atypical parasitic ductal obstruction without classic epidemiological or hematologic clues is the key clinical challenge.\n2. Admission Breakpoint: Admission triage ends following initial history, physical examination, emergency laboratory investigations (negative pregnancy test, normal blood counts and chemistry), and an unremarkable emergency abdominal CT scan. Confirmatory testing begins with invasive biliopancreatic endoscopic ultrasonography (EUS) and subsequent therapeutic ERCP.\n3. Differential Distinctions: Acute pancreatitis presents with epigastric pain radiating to the back but features elevated lipase/amylase and CT abnormalities. Choledocholithiasis presents with biliary colic and biliary duct dilatation with acoustic shadowing calculi, whereas biliary helminthiasis displays a characteristic non-shadowing, triple-layered tubular intraluminal filling defect.",
+  "case_prompt": "A 48-year-old Portuguese woman presents to the emergency department with severe, refractory upper abdominal pain radiating to the back. Physical examination reveals tenderness in the epigastrium without peritoneal signs or abdominal guarding.\n\nShe reports no history of ethanol or illicit substance abuse. A urine pregnancy test is negative. She has had no foreign travel outside Portugal in the past five years.\n\nEmergency laboratory tests, including complete blood count and routine serum chemistries, are entirely within normal limits. An emergency abdominal computed tomography (CT) scan is completely normal. Initial administration of intravenous analgesics fails to relieve her pain.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pancreatitis",
+      "rule_out_reason": "Severe upper abdominal pain radiating to the back is classical for acute pancreatitis; however, the serum laboratory investigations and abdominal CT scan were entirely normal, and subsequent advanced imaging excluded pancreatic parenchymal or ductal inflammation.",
+      "quote": "Abdominal CT scan and laboratory tests were completely normal including blood counts. She was started on analgesics, but seeing no response, a diagnostic biliopancreatic endoscopic ultrasonography (EUS) was planned in order to rule out acute pancreatitis."
+    },
+    {
+      "candidate": "Choledocholithiasis / Biliary colic",
+      "rule_out_reason": "Biliary duct dilatation and severe biliary colic typically raise suspicion for common bile duct stones; however, endoscopic imaging demonstrated a long, non-shadowing, triple-layered tubular structure rather than an acoustic shadowing calculus.",
+      "quote": "Trans-duodenal study showed an 8 mm dilated common bile duct (CBD) containing a long linear triple-layer structure (Fig. 1A), hyperechoic outside and hypoechoic inside, without acoustic shadow."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was achieved when biliopancreatic endoscopic ultrasonography revealed the pathognomonic longitudinal triple-layered structure of Ascaris lumbricoides in the common bile duct, confirmed by endoscopic retrograde cholangiography and definitive extraction of a 15-cm adult worm using a Dormia basket.",
+      "quote": "Characteristics of Ascaris lumbricoides were recognized: two classical hyperechoic linear echogenic strips on either side of the longitudinal anechoic (lumen) of the ascaris. Endoscopic retrograde cholangiography showed the linear filling defect due to the worm in CBD (Fig. 1B). Sphincterotomy was performed to retrieve a 15-cm long parasite with the help of a Dormia basket (Fig. 1C)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC3959945_01. Case prompt excludes EUS findings and worm identification. Admission breakpoint strictly maintained at Day 1 triage before endoscopic interventions."
+}

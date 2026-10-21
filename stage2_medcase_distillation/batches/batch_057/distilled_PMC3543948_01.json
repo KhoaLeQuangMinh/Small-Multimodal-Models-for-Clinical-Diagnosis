@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3543948_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old previously healthy man presents with constitutional symptoms (fever, anorexia, 4-kg weight loss) and an infra-umbilical mass corresponding to an infected urachal cyst. Primary isolated extrapulmonary tuberculosis occurring in an embryological remnant without pulmonary or renal tract involvement is exceptionally rare and mimics common pyogenic urachal abscesses or urachal malignancies.\n2. Admission Breakpoint: The admission clinical presentation includes symptom chronology, physical examination of the midline infra-umbilical mass, normal baseline hematologic and biochemical labs, negative chest radiograph, sterile urinalysis, and initial abdominal CT demonstrating a supravesical cystic mass, stopping strictly prior to fine-needle aspiration and surgical excision.\n3. Differential Distinctions: Pyogenic urachal abscess is excluded by sterile preoperative cultures and absence of acute neutrophilic suppuration; urachal adenocarcinoma is ruled out by benign urothelial lining; and histopathologic identification of caseating granulomas with Lowenstein-Jensen culture growth confirms Mycobacterium tuberculosis.",
+  "case_prompt": "A 23-year-old man presents with a 3-month history of mild intermittent peri-umbilical pain, low-grade fevers, decreased appetite, and an intentional weight loss of 4 kg. His bowel and bladder habits are entirely normal, and he has no past medical or surgical history. On physical examination, vital signs are within normal limits. Abdominal palpation reveals a well-circumscribed, non-tender, firm mass measuring approximately 5 x 5 cm in the infra-umbilical midline region. Routine complete blood count, serum chemistries, renal function, and liver function panels are normal. A plain chest radiograph demonstrates clear lung parenchyma without infiltrates, cavitations, or hilar adenopathy. Urinalysis reveals occasional pus cells with negative routine bacterial cultures. Contrast-enhanced computed tomography of the abdomen shows a smooth-walled, well-defined cystic mass measuring 5 x 5 x 6 cm situated in the pre-peritoneal midline immediately superior to the urinary bladder.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Urachal Abscess",
+      "rule_out_reason": "Infected urachal remnants typically manifest as acute pyogenic abscesses caused by Staphylococcus or gram-negative bacteria, but urine culture was sterile and surgical exploration revealed cold caseous necrosis rather than acute purulent drainage.",
+      "quote": "Urinalysis revealed occasional pus cells, but the culture was sterile... With a clinical diagnosis of an urachal abscess, surgical excision was planned."
+    },
+    {
+      "candidate": "Urachal Neoplasm (Adenocarcinoma / Cystic Tumor)",
+      "rule_out_reason": "Primary neoplasms of the urachus present as supravesical cystic or solid masses in young adults, but histological analysis confirmed benign urothelium alongside granulomatous inflammation without malignancy.",
+      "quote": "Contrast-enhanced computed tomography (CT) of the abdomen was suggestive of a smooth-walled, cystic mass measuring 5 x 5 x 6 cm, located above the bladder (Fig. 1)... On histopathological examination, urothelium was found along with multiple granulomas, caseation, and epitheloid and Langhans cells"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Primary Urachal Cyst Tuberculosis",
+      "rule_out_reason": "En bloc resection revealed thick pultaceous material, and histopathology demonstrated classic caseating granulomas with Langhans giant cells, definitively confirmed by culture isolation of Mycobacterium tuberculosis on Lowenstein-Jensen media.",
+      "quote": "It was filled with white pultaceous material... On histopathological examination, urothelium was found along with multiple granulomas, caseation, and epitheloid and Langhans cells, suggestive of urachal tuberculosis (Fig. 3)... Culture of the pultaceous material on Lowenstein-Jensen media confirmed the presence of Mycobacterium tuberculosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt ends cleanly at admission abdominal CT prior to FNA and surgical intervention. Zero spoilers in case prompt. Audit flags verified as NONE."
+}

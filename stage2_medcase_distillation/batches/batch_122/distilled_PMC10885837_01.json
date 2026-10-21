@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10885837_01",
+  "disease": "Cholera",
+  "think": "1. Core Clinical Tension: The patient presents with clinical and radiographic features of acute large bowel obstruction—constipation, abdominal pain, nausea, and vomiting in the background of metastatic colorectal adenocarcinoma—and explicitly denies diarrhea. The central tension is detecting an enteric Vibrio cholerae infection in an atypical non-diarrheal, obstructive presentation where symptoms would ordinarily be attributed entirely to mechanical malignant obstruction.\n2. Admission Breakpoint: The breakpoint occurs after initial emergency evaluation, physical examination, abdominal CT imaging demonstrating large bowel obstruction and colitis, and baseline hematologic/metabolic labs, immediately prior to send-out stool microbiology and multiplex PCR testing.\n3. Differential Distinctions: Pure mechanical large bowel obstruction from metastatic colon cancer explains the luminal cutoff and constipation but cannot account for concurrent colitis or positive enteric pathogen testing. Typical invasive bacterial colitis usually presents with inflammatory dysentery, which is absent here. The diagnostic pivot hinges on multiplex gastrointestinal PCR detecting Vibrio cholerae.",
+  "case_prompt": "A 52-year-old male with a medical history of hypertension, metastatic colon adenocarcinoma at the hepatic flexure with hepatic metastases, and hepatic flexure stricture status post colonic stenting presented with a 5-day history of right-sided abdominal pain, constipation, nausea, and non-bloody, non-bilious emesis. He had completed his second cycle of FOLFOX chemotherapy one month prior. He noted his last bowel movement and flatus occurred on the day prior to presentation, describing the stool as slightly loose but without diarrhea. He denied frank diarrhea, melena, hematochezia, hematemesis, fevers, chills, rash, chest pain, or shortness of breath.\n\nOn physical examination, vital signs were unremarkable. Abdominal examination was notable for diffuse abdominal tenderness and hepatosplenomegaly without peritoneal guarding. Laboratory investigations revealed a peripheral white blood cell differential notable for lymphopenia of 11.2/mm³. Comprehensive metabolic panel demonstrated a serum calcium of 12.9 mg/dL, total bilirubin of 1.8 mg/dL, alkaline phosphatase of 631 units/L, aspartate aminotransferase (AST) of 87 units/L, alanine aminotransferase (ALT) of 87 units/L, and lipase of 4 units/L. A non-contrast computed tomography (CT) scan of the abdomen and pelvis demonstrated large bowel obstruction at the level of the transverse colon, extensive hepatic metastatic nodules measuring up to 4.8 cm, and radiographic evidence of colitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant Large Bowel Obstruction / Stent Occlusion",
+      "rule_out_reason": "Although the patient had documented transverse colon obstruction secondary to metastatic adenocarcinoma, mechanical obstruction alone did not explain the inflammatory colitis changes on CT or the presence of an infectious enteric co-pathology delaying surgical intervention.",
+      "quote": "A CT of the abdomen and pelvis without contrast showed large bowel obstruction at the level of the transverse colon with extensive hepatic metastatic disease with lesions up to 4.8 cm in size and evidence of colitis"
+    },
+    {
+      "candidate": "Standard Bacterial Enterocolitis",
+      "rule_out_reason": "Common bacterial enteropathogens were considered given radiographic colitis, but conventional stool cultures returned completely negative and the patient lacked typical diarrheal symptoms.",
+      "quote": "Stool cultures were negative; however, the BioFire gastrointestinal polymerase chain reaction (PCR) panel of the stool was positive for E. coli (EAEC and EPEC) and V. cholerae."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Multiplex gastrointestinal PCR testing identified Vibrio cholerae nucleic acid, establishing an atypical presentation of non-diarrheal cholera in the setting of severe mechanical colon obstruction.",
+      "quote": "however, the BioFire gastrointestinal polymerase chain reaction (PCR) panel of the stool was positive for E. coli (EAEC and EPEC) and V. cholerae. The patient was diagnosed with non-diarrheal cholera in the setting of significant bowel obstruction secondary to colon cancer."
+    }
+  ],
+  "final_diagnosis": "Cholera",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled according to Stanford MedCaseReasoning guidelines. Admission breakpoint strictly maintained at initial triage and non-contrast CT prior to stool PCR. Zero pathogen leaks."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3748642_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 23-year-old previously healthy male presents with acute-to-subacute cerebellar ataxia, severe gait instability, and pendular knee jerks occurring weeks after an undiagnosed febrile illness treated empirically with antibacterial agents. The absence of fever and acute delirium at presentation mimics primary cerebellar stroke, viral cerebellitis, nutritional deficiency, or post-infectious demyelination, but the underlying driver is delayed cerebellar ataxia complicating untreated Plasmodium falciparum.\n2. Admission Breakpoint: Admission triage encompasses clinical history, past antibiotic exposure, physical and detailed neurological exam (ataxia, hypotonia, exaggerated pendular reflexes, splenomegaly), normal non-contrast head CT, basic hematology (normocytic anemia, severe ESR elevation of 110 mm/h), and abdominal ultrasound confirming splenomegaly. Confirmatory peripheral blood smear parasitology, lumbar puncture, and brain MRI represent the post-breakpoint diagnostic stage.\n3. Differential Distinctions: Structural posterior fossa lesions or stroke are excluded by normal head CT and normal brain MRI. Nutritional deficiencies (Wernicke encephalopathy, vitamin B12 deficiency) are ruled out by normal serum thiamine and B12 levels. Infectious meningoencephalitis is excluded by normal cerebrospinal fluid analysis. Drug toxicity is ruled out by negative drug history.",
+  "case_prompt": "A 23-year-old previously healthy man presented to the hospital with a 1-month history of persistent giddiness and progressive loss of balance while walking, accompanied by a mild, throbbing, generalized headache. He denied nausea, vomiting, seizures, syncope, head trauma, substance abuse, or toxic exposures. Approximately 1 month prior to presentation, he had been admitted to a local facility with high fever and rigors, where he received an empirical 3-day course of intravenous ceftriaxone and amikacin without any antiparasitic treatment. Although his fever subsided, he subsequently developed severe unsteadiness requiring manual assistance to walk. A non-contrast computed tomography (CT) scan of the brain performed at the prior facility was unremarkable, and symptomatic therapies provided no relief.\n\nOn physical examination upon admission, he was afebrile, conscious, alert, and oriented to time, place, and person, though with a mildly reduced attention span. Vital signs revealed a pulse rate of 72 beats per minute, blood pressure of 100/70 mmHg, and respiratory rate of 18 breaths per minute. Conjunctival pallor was noted, without icterus, cyanosis, clubbing, peripheral edema, or neurocutaneous stigmata. Jugular venous pressure was normal. Cardiovascular and pulmonary examinations were unremarkable. Abdominal examination revealed a non-tender spleen palpable 2 cm below the left costal margin, without hepatomegaly.\n\nNeurological examination revealed intact cranial nerves and normal sensory modalities. Motor exam revealed diffuse hypotonia across all limbs. Superficial reflexes were normal, and plantar responses were flexor bilaterally. Deep tendon reflexes were normal in the upper extremities but exaggerated in the lower extremities, with bilateral pendular knee jerks. Finger-to-nose, heel-to-shin, dysdiadochokinesia, and tandem gait testing were all markedly impaired bilaterally. Nystagmus and signs of meningeal irritation were absent.\n\nInitial laboratory evaluation revealed a hemoglobin level of 9.9 g/dL, white blood cell count of 5,800/mm3 (70% polymorphonuclear cells, 26% lymphocytes, 1% monocytes, 3% eosinophils), platelet count of 180,000/mm3, and an erythrocyte sedimentation rate markedly elevated at 110 mm/1 hr. Random blood glucose was 83 mg/dL, blood urea was 22 mg/dL, serum creatinine was 1.2 mg/dL, serum sodium was 136 mEq/L, and serum potassium was 3.8 mEq/L. A chest radiograph, 12-lead electrocardiogram, and transabdominal ultrasound (showing splenomegaly of 16 cm) were obtained.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Structural Cerebellar Lesion / Stroke",
+      "rule_out_reason": "Considered given prominent bilateral appendicular ataxia and gait disturbance, but ruled out by normal emergency head CT and subsequent normal magnetic resonance imaging of the brain.",
+      "quote": "hence a CT scan of head was done, which was apparently normal."
+    },
+    {
+      "candidate": "Nutritional Ataxia (Wernicke Encephalopathy / Vitamin B12 Deficiency)",
+      "rule_out_reason": "Considered in a young patient presenting with subacute ataxia and cognitive blunting, but excluded by documented normal serum micronutrient levels.",
+      "quote": "Serum Vitamin B12 levels-Within normal limits."
+    },
+    {
+      "candidate": "Infectious Meningoencephalitis / Rhombencephalitis",
+      "rule_out_reason": "Considered due to preceding febrile illness and prominent cerebellar dysfunction, but excluded by absence of meningismus and completely normal cerebrospinal fluid analysis.",
+      "quote": "Cerebrospinal Fluid Analysis-Normal study."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood smear examination demonstrated intraerythrocytic ring forms and gametocytes confirming active Plasmodium falciparum parasitemia (parasitic index 2.8%), establishing delayed cerebellar ataxia as a post-malarial complication, which resolved completely following antimalarial therapy.",
+      "quote": "Peripheral smear showed gametes and rings of plasmodium falciparum malaria with parasitic index-2.8%."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Peripheral blood smear parasitology and CSF analysis excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

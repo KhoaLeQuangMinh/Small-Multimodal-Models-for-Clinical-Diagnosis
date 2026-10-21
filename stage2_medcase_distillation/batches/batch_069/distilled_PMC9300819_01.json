@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9300819_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 42-year-old man presenting with severe wasting syndrome, fever of unknown origin, hepatosplenomegaly, and microcytic anemia, which closely mimicked disseminated hematologic malignancy, visceral leishmaniasis, or systemic tuberculosis, obscuring an underlying peripheral neuropathy and diffuse cutaneous infiltration.\n2. Admission Breakpoint: The presentation ends after clinical history, physical exam detailing neuropathic findings and diffuse cutaneous infiltration, initial laboratory workup showing microcytic anemia and normal SPEP, and initial abdominal ultrasound showing hepatosplenomegaly, prior to CSF analysis, infectious serologic panels, electroneuromyography, and bone marrow/skin biopsies.\n3. Differential Distinctions: Disseminated tuberculosis was excluded by negative T-Spot.TB and normal chest CT; systemic viral infections (HIV, hepatitis B/C) and syphilis were excluded by negative serology; hematologic malignancy was ruled out by normal SPEP and absence of clonal infiltration on biopsy; the diagnostic pivot was bone marrow biopsy revealing acid-fast bacilli forming globi, elevated anti-PGL-I antibodies, and positive qPCR confirming lepromatous disease.",
+  "case_prompt": "A 42-year-old Brazilian man was admitted to the hospital with a severe wasting syndrome, fever of unknown origin, anorexia, asthenia, and night sweats, progressing over the preceding month to the point of becoming bedridden. He also reported bilateral lower extremity edema extending to his knees, cutaneous peeling, and marked bilateral leg weakness. One year prior to admission, he began experiencing bilateral lower limb pain exacerbated by physical activity, followed five months later by paresthesias and burning dysesthesias extending from his knees to his feet. He had no chronic medical illnesses and used no substances. His family noted that his mother and brother had been diagnosed with a chronic transmissible mycobacterial illness affecting the skin and peripheral nerves one year earlier. Physical examination revealed an emaciated man with an unintentional weight loss of approximately 25 kg over five months. Abdominal examination and bedside ultrasound demonstrated hepatosplenomegaly and lymphadenopathy. Neurological examination showed hypoesthesia to light touch and pinprick over distal extremities, bilaterally thickened peripheral nerve trunks, inability to fully flex the fingers, and dactylitis; deep tendon reflexes and cranial nerves were intact. Dermatological inspection revealed diffuse skin infiltration over the face, ears, hands, and feet, along with scattered small erythematous nodules on the posterior thighs and legs. Initial laboratory evaluation demonstrated microcytic hypochromic anemia and a normal serum protein electrophoresis (SPEP).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Tuberculosis",
+      "rule_out_reason": "Considered due to prolonged fever of unknown origin, night sweats, 25-kg weight loss, and hepatosplenomegaly, but excluded by negative interferon-gamma testing and normal thoracic imaging.",
+      "quote": "Testing for HIV, T-Spot.TB, syphilis (VDRL), and hepatitis B and C were negative. The cerebral spinal fluid (CSF) analysis was normal ( Table 2 ). The chest computed tomography (CT) was normal, and the abdomen CT revealed hepatosplenomegaly."
+    },
+    {
+      "candidate": "Syphilis, HIV, and Chronic Viral Hepatitis",
+      "rule_out_reason": "Considered as potential etiologies for subacute wasting, diffuse lymphadenopathy, and peripheral neuropathy, but all serological screenings were negative.",
+      "quote": "Testing for HIV, T-Spot.TB, syphilis (VDRL), and hepatitis B and C were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recognition of thickened peripheral nerve trunks and cutaneous infiltration prompted bone marrow and skin examinations, which revealed characteristic acid-fast bacilli forming globi, positive anti-PGL-I serology, and positive qPCR.",
+      "quote": "A bone marrow biopsy (Figures 1, 2 ) revealed the presence of M. leprae forming globi. The ELISA anti-phenolic glycolipid I (PGL-I) IgM antibodies and M. leprae DNA were positive, with index 2.38 (normal values: <1 - negative)."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strictly sanitized case_prompt: the explicit words 'leprosy' and 'lepromas' from the case text were neutralized to avoid pathogen/disease spoilers, perfectly maintaining the clinical mystery while preserving factual fidelity."
+}

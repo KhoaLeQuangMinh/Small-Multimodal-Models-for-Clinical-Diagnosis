@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11754060_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old man with a recent history of respiratory illness and cervical lymphadenopathy treated with an empiric multidrug antimicrobial regimen, presenting with oliguria (<400 mL/day), severe acute kidney injury (creatinine 800 \u03bcmol/L), marked hyperglobulinemia (54.7 g/L), and bilateral nephromegaly alongside miliary pulmonary nodules on CT. The clinical tension is recognizing the rare coexistence of acute IgG4-related tubulointerstitial nephritis and active hematogenous disseminated tuberculosis, avoiding the trap of attributing renal failure solely to antimicrobial drug toxicity or myeloma.\n2. Admission Breakpoint: The presentation ends after emergency department triage evaluation, admitting laboratories (creatinine 800 \u03bcmol/L, hyperglobulinemia, hypoproteinemia, cytopenias, metabolic acidosis), and baseline chest/abdominal CT scans, prior to send-out serologies, light chains, lymph node aspiration, and renal biopsy.\n3. Differential Distinctions: Differentiating disseminated mycobacterial infection from multiple myeloma / plasma cell dyscrasia (considered due to AKI, anemia, and hyperglobulinemia, but ruled out by negative serum/urine IFE), isolated drug-induced interstitial nephritis (ruled out by IgG4-dense plasma cell infiltration on renal biopsy), and systemic vasculitis/autoimmune disease (ruled out by negative autoantibody panel).",
+  "case_prompt": "A 56-year-old man presented to the emergency department with cough, anorexia, and oliguria with a 24-hour urine output of less than 400 mL. Two months earlier, he had experienced recurrent cough, intermittent nocturnal fevers, and bilateral palpable cervical lumps, for which he had been initiated on a multidrug antimicrobial regimen at an outside hospital. Due to gastrointestinal and suspected metabolic side effects, his regimen was modified 5 days prior to admission, after which his urine output abruptly declined. On admission, triage laboratory studies revealed severe acute kidney injury with a serum creatinine of 800 \u03bcmol/L (up from 105 \u03bcmol/L three weeks prior), hyperglobulinemia of 54.7 g/L with hypoproteinemia of 31.5 g/L, hypokalemia of 3.02 mmol/L, normocytic anemia with hemoglobin of 83 g/L, thrombocytopenia of 82 \u00d7 10^9/L, and metabolic acidosis on arterial blood gas analysis (pH 7.31, base excess -13.1). Computed tomography of the chest and abdomen demonstrated diffuse bilateral miliary pulmonary nodules, scarring in the right upper lobe, calcified mediastinal lymph nodes, and marked bilateral renal enlargement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Multiple Myeloma / Monoclonal Gammopathy",
+      "rule_out_reason": "Considered due to profound hyperglobulinemia, acute renal failure, anemia, and hypergammaglobulinemia, but excluded by negative immunofixation electrophoresis for monoclonal paraproteins.",
+      "quote": "Both serum and urine immunofixation electrophoresis (IFE) were negative for FLCs and monoclonal proteins."
+    },
+    {
+      "candidate": "Drug-Induced Acute Interstitial Nephritis / Acute Tubular Necrosis",
+      "rule_out_reason": "Considered as a medication-related etiology following antimicrobial therapy, but renal biopsy revealed severe IgG4-rich plasma cell interstitial infiltration (>40% IgG4/IgG ratio) diagnostic of IgG4-related kidney disease concurrent with systemic infection.",
+      "quote": "Finally, a renal biopsy suggested acute tubulointerstitial nephritis ( Figures 2A-C ) with a large number of infiltrated plasma cells and multifocal interstitial infiltration of CD38-, IgG-, and IgG4-positive cells, with an IgG4-positive plasma cell level >10/HP, and the ratio of IgG4/IgG plasma cells was >40%"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine-needle aspiration of the enlarged cervical lymph nodes revealing necrotizing granulomas with acid-fast bacilli and positive Xpert MTB testing confirmed acute hematogenous disseminated tuberculosis.",
+      "quote": "A cervical lymph node puncture was then performed with the results showing granulomatous lesions with necrosis: acid-fast staining (+ weak)... A Mycobacterium tuberculosis (MTB) rpoB gene and mutation test of the cervical lymph node (Xpert MTB) was positive (+)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled admission teaching case for disseminated Tuberculosis coexisting with IgG4-related kidney disease. Breakpoint strictly excludes send-out serologies, renal biopsy, and lymph node PCR. Zero pathogen spoilers. Verbatim quotes verified."
+}

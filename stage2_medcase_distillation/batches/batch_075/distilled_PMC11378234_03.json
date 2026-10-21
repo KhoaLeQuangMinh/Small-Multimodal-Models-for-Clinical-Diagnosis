@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_03",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 10-year-old boy with beta-thalassemia and prior bone marrow biopsy-proven secondary hemophagocytic lymphohistiocytosis (HLH), maintained on triple immunosuppression (tacrolimus, mycophenolate mofetil, prednisolone) and eltrombopag on post-transplant day +130, presents with acute high fever, myalgias, and severe thrombocytopenia (platelet 16 \u00d7 10^9/L). The critical clinical challenge is distinguishing recurrent HLH reactivation or hyperacute bacterial sepsis from fulminant severe arboviral infection with capillary leak and circulatory collapse.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after emergency triage, medication reconciliation, and initial blood counts/coagulation results, prior to dengue NS1 antigen testing and subsequent clinical decompensation.\n3. Differential Distinctions: Recurrent secondary HLH was a major pre-existing possibility given his history, but the rapid explosive onset of continuous high fever with myalgia and subsequent capillary leak with shock was precipitated by acute arboviral infection. Bacterial septic shock was considered due to profound immunosuppression, but viral antigenemia confirmed acute dengue.",
+  "case_prompt": "A 10-year-old boy with transfusion-dependent beta-thalassemia and a history of secondary hemophagocytic lymphohistiocytosis (confirmed on previous bone marrow tissue examination) who underwent a matched-related donor transplant presents to the emergency department on day +130 post-transplant with a 1-day history of continuous high-grade fever and myalgias.\n\nHis current medications include tacrolimus, mycophenolate mofetil, and oral prednisolone for graft-versus-host disease prophylaxis, along with eltrombopag for poor graft function and incomplete peripheral blood count recovery.\n\nInitial complete blood count reveals hemoglobin 10.5 g/dL, white blood cell count 7.0 \u00d7 10^9/L, absolute neutrophil count 4.2 \u00d7 10^9/L, and platelet count 16 \u00d7 10^9/L. Coagulation testing is slightly deranged.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent Hemophagocytic Lymphohistiocytosis (HLH) Reactivation",
+      "rule_out_reason": "Given his documented history of bone marrow biopsy-proven secondary HLH and persistent cytopenias, sudden high-grade fever and severe thrombocytopenia strongly suggested disease recurrence; however, the hyperacute presentation was triggered by viral infection with confirmed antigenemia, leading rapidly to plasma leakage and refractory circulatory failure.",
+      "quote": "A 10-year-old boy with transfusion-dependent beta-thalassemia along with secondary hemophagocytic lymphohistiocytosis (proven on bone marrow biopsy) received matched-related donor transplant... Dengue NS1 antigen was detected."
+    },
+    {
+      "candidate": "Fulminant Bacterial Sepsis / Septic Shock",
+      "rule_out_reason": "Acute high fever and severe thrombocytopenia in a patient on triple immunosuppressive agents raised immediate concern for life-threatening bacterial sepsis; however, the clinical course was dominated by capillary leak syndrome (periorbital puffiness, ascites, oliguria, tachycardia, tachypnea, hypotension) confirmed by positive viral antigen testing.",
+      "quote": "He developed vomiting, loose stools, abdominal distension and periorbital puffiness, and rising creatinine and deranged liver function test. On the fourth day of admission, he became restless, his urine output decreased with increasing abdominal distension, developed tachycardia, tachypnea, and severe hypotension."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the detection of Dengue NS1 antigen in an immunosuppressed child presenting with continuous high-grade fever, profound thrombocytopenia (platelet 16 \u00d7 10^9/L), and subsequent development of severe dengue shock syndrome.",
+      "quote": "His blood counts revealed Hb = 10.5 g/dL, white blood cell (WBC) = 7.0 x 109/L, Absolute neutrophil count (ANC) = 4.2 x 109/L, Platelet = 16 x 109/L. Dengue NS1 antigen was detected."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage narrative halts prior to NS1 antigen result and downstream clinical deterioration. Strict exclusion of pathogen names in presentation. Differential diagnoses analyze HLH and bacterial sepsis using verbatim quotes."
+}

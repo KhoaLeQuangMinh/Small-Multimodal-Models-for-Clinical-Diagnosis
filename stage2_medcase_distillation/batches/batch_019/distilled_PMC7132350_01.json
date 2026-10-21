@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7132350_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 54-year-old female receiving neoadjuvant chemotherapy for locally advanced breast cancer in eastern Thailand presents on day 10 post-chemotherapy with severe febrile neutropenia (ANC 230 cells/muL), septic shock (BP 88/51 mmHg), severe lactic acidosis, acute renal injury (Cr 4.2 mg/dL), severe hyponatremia (Na 118 mmol/L), conjugated hyperbilirubinemia, and acute diarrhea. The diagnostic dilemma lies in differentiating common enteric opportunistic bacterial sepsis or Clostridioides difficile colitis from fulminant disseminated melioidosis, a notorious tropical endemic saprophyte capable of multi-organ microabscess formation.\n2. Admission Breakpoint: The admission breakpoint is established immediately after initial emergency presentation, vital sign triage, and admission laboratory testing (pancytopenia, severe metabolic derangement, hepatic dysfunction, urinalysis showing bacteria), prior to the return of blood/urine cultures, mechanical ventilation, or delayed abdominal imaging.\n3. Differential Distinctions: Clostridioides difficile infection is ruled out by negative stool toxin testing; typical enteric Gram-negative neutropenic sepsis (e.g., Pseudomonas aeruginosa, Klebsiella pneumoniae) usually responds to piperacillin-tazobactam, whereas definitive diagnosis of melioidosis requires isolation of Burkholderia pseudomallei and identification of characteristic 'Swiss cheese' visceral microabscesses.",
+  "case_prompt": "A 54-year-old Thai female with locally advanced stage III-B breast cancer receiving neoadjuvant doxorubicin and cyclophosphamide chemotherapy, along with lamivudine for chronic hepatitis B carrier status, presented to the hospital 10 days after her third chemotherapy cycle with acute fatigue, diarrhea, and fever. She was a homemaker residing in Chonburi Province in eastern Thailand.\n\nOn physical examination, she appeared acutely ill and had marked icteric sclerae. Her body temperature was 39.5 °C, blood pressure was 88/51 mm Hg, heart rate was 124 beats per minute, respiratory rate was 32 breaths per minute, and oxygen saturation was 88% while breathing ambient air. Cardiovascular examination demonstrated regular tachycardia without murmurs. Examination of the chest and abdomen was otherwise unremarkable apart from the known locally advanced right breast mass.\n\nInitial emergency laboratory studies demonstrated severe pancytopenia: hemoglobin 6.4 g/dL, white blood cell count 450 cells/μL, absolute neutrophil count 230 cells/μL, and platelet count 26,000 cells/μL. Serum chemistries revealed marked electrolyte and renal abnormalities: sodium 118 mmol/L, potassium 2.8 mmol/L, chloride 87 mmol/L, bicarbonate 15 mmol/L, blood urea nitrogen 48 mg/dL, and creatinine 4.2 mg/dL. Liver biochemical testing showed total bilirubin 4.7 mg/dL, direct bilirubin 4.6 mg/dL, albumin 3.2 g/dL, globulin 3.7 g/dL, aspartate aminotransferase (AST) 368 U/L, alanine aminotransferase (ALT) 387 U/L, and alkaline phosphatase 154 U/L. Urinalysis showed specific gravity 1.025, 2+ protein, 2 to 3 white blood cells per high-power field, and numerous bacteria.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Clostridioides difficile Colitis",
+      "rule_out_reason": "Considered due to the acute onset of diarrhea, high fever, and leukopenia in an oncology patient with recent hospital admissions and prior broad-spectrum beta-lactam exposure. Ruled out by a negative stool toxin assay.",
+      "quote": "and stool exam for Clostridium difficile toxin revealed negative."
+    },
+    {
+      "candidate": "Standard Enteric Gram-Negative Neutropenic Sepsis (e.g., Pseudomonas aeruginosa, Enterobacteriaceae)",
+      "rule_out_reason": "Considered as the primary cause of septic shock and neutropenic enterocolitis with pyuria. Ruled out as the definitive causative pathogen by microbiological identification of a distinct endemic tropical agent.",
+      "quote": "On day 6, two blood cultures and a urine culture showed positive for Burkholderia pseudomallei susceptible to amoxicillin-clavulanate, ceftazidime, imipenem, and trimetroprim/sulfamethoxazole (TMP/SMX)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when blood and urine cultures grew Burkholderia pseudomallei, followed by cross-sectional imaging demonstrating disseminated infection with multiple splenic and hepatic microabscesses.",
+      "quote": "On day 6, two blood cultures and a urine culture showed positive for Burkholderia pseudomallei susceptible to amoxicillin-clavulanate, ceftazidime, imipenem, and trimetroprim/sulfamethoxazole (TMP/SMX), and stool exam for Clostridium difficile toxin revealed negative. Thus, the antibiotic was de-escalated to ceftazidime 2 gram IV every 8 hour, which was infused until 14 days."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7132350. Admission breakpoint maintained before microbiological cultures and mechanical ventilation. Zero pathogen names leaked in case prompt."
+}

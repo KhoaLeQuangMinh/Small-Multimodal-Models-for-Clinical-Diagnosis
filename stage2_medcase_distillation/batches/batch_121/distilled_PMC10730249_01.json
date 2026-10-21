@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10730249_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 44-year-old Filipino woman presented with focal motor seizures, headache, vomiting, upward gaze palsy, and asymmetric left hemiparesis (distal leg 1/5). Neuroimaging revealed a solitary intra-axial right frontal mass with extensive surrounding edema and an incidental contralateral temporal extradural hemorrhage from falling. The central diagnostic challenge is distinguishing an intracranial malignant neoplasm (such as high-grade astrocytoma/glioma or solitary brain metastasis) or bacterial abscess from a space-occupying helminthic granuloma in an afebrile immunocompetent immigrant.\n2. Admission Breakpoint: Emergency presentation, physical examination, and initial diagnostic neuroimaging (CT and contrast-enhanced MRI brain showing solitary intra-axial right frontal mass), immediately preceding craniotomy and frozen section/histopathologic analysis.\n3. Differential Distinctions: Glioblastoma/metastasis typically presents with a solitary intra-axial enhancing lesion and vasogenic edema without systemic signs of infection, but demonstrates neoplastic cellular atypia, microvascular proliferation, and necrosis rather than perivascular granulomatous egg clusters. Pyogenic brain abscess produces rapid edema and headache but typically features fever, systemic inflammatory signs, and central purulent liquefaction rather than chronic non-suppurative parasitic egg pseudotumors.",
+  "case_prompt": "A 44-year-old Filipino female presented to the emergency department after sustaining a fall following focal myoclonus of the left lower extremity of undetermined duration and transient loss of consciousness. She reported an acute left-sided headache and experienced two episodes of emesis upon arrival. There was no antecedent history of fever, visual disturbances, loss of sphincter control, prior falls, or preceding head trauma.\n\nOn physical examination, her vital signs were within normal limits. She was alert and oriented with a Glasgow Coma Scale score of 15/15. Pupils were 3 mm and reactive to light. Examination revealed left orbital ecchymosis, upward gaze palsy, and a left-sided upper motor neuron facial weakness without tongue deviation or dysphagia. Visual acuity and visual fields were intact. Motor examination demonstrated 5/5 strength in the right upper and lower extremities, 4/5 strength in the left upper extremity, and 4/5 strength proximally with 1/5 strength distally in the left lower extremity. Sensory examination to light touch and pinprick was preserved across all four extremities.\n\nAn emergency non-contrast computed tomography (CT) scan of the brain revealed a right frontal intraparenchymal lesion with surrounding vasogenic edema, accompanied by a small left temporal extradural hemorrhage with an underlying nondisplaced fracture. A contrast-enhanced brain magnetic resonance imaging (MRI) scan demonstrated a solitary intra-axial mass lesion within the right frontal lobe with perilesional edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "High-grade glial neoplasm / Glioblastoma multiforme",
+      "rule_out_reason": "Considered primary diagnosis given solitary intra-axial mass in the frontal lobe with surrounding edema, focal motor seizures, and progressive hemiparesis in an afebrile adult, but ruled out when histological analysis demonstrated parasitic egg deposition with perivascular gliosis rather than high-grade neoplastic glial proliferation.",
+      "quote": "A brain magnetic resonance imaging (MRI) with contrast was also done, and the findings revealed a solitary intra-axial mass within the right frontal lobe (Figure 2)."
+    },
+    {
+      "candidate": "Pyogenic brain abscess / bacterial cerebritis",
+      "rule_out_reason": "Considered because of intracranial space-occupying lesion with acute intracranial hypertension (headache, vomiting) and focal neurological deficits; ruled out by absence of fever, lack of leukocytosis or systemic inflammatory symptoms, and surgical biopsy demonstrating non-bacterial parasitic granulomas without purulent necrosis.",
+      "quote": "There is no history of fever, visual changes, loss of bowel or bladder control, fall, or trauma to the head."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of multiple surgical biopsies obtained during right frontal craniotomy revealed scattered perivascular aggregates of parasitic ova accompanied by prominent reactive gliosis, confirming central nervous system involvement by Schistosoma.",
+      "quote": "The histopathological findings reported scattered perivascular aggregates of parasitic eggs and gliosis, morphologically consistent with Schistosoma eggs (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission presentation stopping prior to craniotomy and pathology results. Zero pathogen mentions in case prompt. Verbatim quotes match article text."
+}

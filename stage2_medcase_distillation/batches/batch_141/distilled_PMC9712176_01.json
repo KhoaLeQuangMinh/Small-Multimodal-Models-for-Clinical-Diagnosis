@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9712176_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 5-month-old female infant presents with severe failure to thrive (<1st percentile), bilateral axillary lymphadenopathy following BCG vaccination at 2 months of age, and refractory pneumonia unresponsive to multiple broad-spectrum antibacterial regimens. The presentation mimics common infant viral/bacterial pneumonia, congenital cytomegalovirus, or isolated Pneumocystis pneumonia, but stems from primary T-B+NK- severe combined immunodeficiency (SCID) complicated by disseminated BCG disease (Mycobacterium tuberculosis complex).\n2. Admission Breakpoint: Initial tertiary hospital admission evaluation with recurring fevers, productive cough, palpable bilateral axillary lymphadenopathy, severe growth impairment (weight 5.2 kg), coarse lung sounds, elevated WBC/CRP, negative HIV, and chest CT demonstrating bilateral parenchymal/interstitial infiltrates, mediastinal/axillary adenopathy, and thymic hypoplasia, prior to throat viral PCR, blood mNGS, gastric/sputum acid-fast smears, lymphocyte subset flow cytometry, and JAK3 genetic analysis.\n3. Differential Distinctions: Common pyogenic or viral community-acquired pneumonia was initially suspected given the infant's presentation, but failed to respond to sequential intravenous cephalosporins, penicillins, and glycopeptides. Isolated viral respiratory illness (RSV/PIV) was present but insufficient to explain severe progressive bilateral infiltrates, thymic hypoplasia, and regional axillary adenopathy. Isolated Pneumocystis pneumonia was an opportunistic copathogen, but extensive axillary lymphadenopathy and detection of acid-fast bacilli confirmed disseminated mycobacterial infection.",
+  "case_prompt": "A 5-month-old female infant is admitted due to recurring fever and productive cough of two weeks' duration unresponsive to outpatient cephalosporin and penicillin regimens. She was born full-term with a birth weight of 2.7 kg. Bacille Calmette-Gu\u00e9rin (BCG) vaccination was administered at two months of age because of neonatal meconium aspiration pneumonia. At four months of age, she was hospitalized for seven days for generalized small cutaneous papules and pustules that gradually resolved with supportive care. There is no known contact with active chronic respiratory infections; her parents and older sibling are healthy with no family history of genetic disorders or immunodeficiencies. On physical examination, her weight is 5.2 kg (<1st percentile). Multiple enlarged axillary lymph nodes are palpable bilaterally. Oral mucosa is intact. Coarse breath sounds and bilateral rhonchi are heard on auscultation. Laboratory testing shows leukocytosis with an elevated neutrophil percentage, elevated C-reactive protein, and low-to-normal lymphocyte count. Blood HIV testing is negative, and routine cerebrospinal fluid examination and cultures are unremarkable. Chest computed tomography (CT) reveals bilateral parenchymal and interstitial infiltrations, multiple enlarged lymph nodes in the mediastinum and right axilla, and hypoplasia of the thymus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory Bacterial or Viral Community-Acquired Pneumonia",
+      "rule_out_reason": "Initial presentation of fever and productive cough was managed as common infant pneumonia, but sequential administration of broad-spectrum antibacterial agents produced no clinical improvement, prompting evaluation for opportunistic infections in the setting of thymic hypoplasia.",
+      "quote": "The patient was treated sequentially with intravenous ceftriaxone, piperacillin/tazobactam, and vancomycin, but her symptoms were not relieved."
+    },
+    {
+      "candidate": "Isolated Pneumocystis jirovecii Pneumonia (PJP)",
+      "rule_out_reason": "While P. jirovecii was detected as a coinfection on molecular sequencing, isolated PJP does not cause prominent bilateral axillary lymphadenopathy following BCG vaccination or acid-fast bacilli in gastric aspirates.",
+      "quote": "From her blood samples, the sequences of M. tuberculosis and P. jirovecii were mapped through next-generation sequencing."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Concentrated smears of sputum and gastric aspirates revealed acid-fast bacilli and blood next-generation sequencing mapped Mycobacterium tuberculosis complex sequences in an infant with axillary lymphadenopathy following BCG vaccination, establishing disseminated BCG tuberculosis disease in the setting of SCID.",
+      "quote": "Acid-fast bacilli were found in the concentrated smears of the sputum aspirate and gastric aspirate; M. tuberculosis and P. jirovecii were not isolated after culturing."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC9712176. Admission narrative excludes send-out mNGS, sputum/gastric AFB smear, immune phenotyping, and JAK3 mutation analysis."
+}

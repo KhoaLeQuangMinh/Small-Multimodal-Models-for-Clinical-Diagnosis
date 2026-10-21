@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8517634_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old woman with newly diagnosed untreated HIV infection presents in extremis with acute respiratory distress, confirmed SARS-CoV-2 infection, encephalopathy with meningismus, and an acute right MCA ischemic stroke. Behind the overwhelming acute viral respiratory failure and neurological emergency lies a 2-month subacute illness of evening fevers, weight loss, and cough, hiding disseminated opportunistic co-infections.\n2. Admission Breakpoint: Emergency presentation to the COVID-19 treatment unit documenting vital signs, encephalopathy, meningeal signs, respiratory failure, baseline CBC, peripheral blood smear, plain chest radiograph, and non-contrast head CT, immediately prior to send-out cryptococcal antigen testing, urine lipoarabinomannan (LAM), and sputum GeneXpert.\n3. Differential Distinctions: Severe COVID-19 pneumonia explained the acute anosmia, hypoxemia, ground-glass opacities, and hypercoagulable ischemic stroke (supported by positive RT-PCR and rapid antigen tests), but did not explain the 2 months of prior evening fevers, wasting, or nuchal rigidity. Cryptococcal meningitis accounted for the meningeal signs and encephalopathy (confirmed by positive serum/CSF CrAg), but failed to explain the diffuse bilateral pulmonary miliary pattern. Severe malaria was considered due to fever, encephalopathy, and anemia in an endemic area, but ruled out by a negative blood smear. Disseminated/miliary tuberculosis was established by positive urine lipoarabinomannan (LAM Grade II), miliary pattern on chest radiograph, and positive sputum GeneXpert MTB/RIF.",
+  "case_prompt": "A 37-year-old woman with a recent diagnosis of HIV infection eight days prior (not yet receiving antiretroviral therapy or cotrimoxazole prophylaxis) presented with a 3-day history of worsening cough and dyspnea. She had an antecedent 2-month history of productive cough with mucoid sputum, evening fevers, and progressive weight loss. Over the preceding five days, she had developed anosmia, high-grade intermittent fevers, severe headaches, altered mentation, an episode of loss of consciousness, and generalized myalgias. Four days prior to presentation, a nasopharyngeal swab at a general hospital had tested positive for SARS-CoV-2 by both rapid antigen test and molecular amplification assay.\n\nOn physical examination, the patient was critically ill and febrile with an axillary temperature of 38.5 \u00b0C. The pulse rate was 168 beats per minute, blood pressure 132/76 mmHg, and respiratory rate 32 breaths per minute. Oxygen saturation was 85% to 90% while receiving 5 L/min of oxygen via nasal cannula. Respiratory examination revealed nasal flaring, intercostal retractions, and diffuse, bilateral coarse crackles. She was restless with a Glasgow Coma Scale score of 8/15 (eye opening 3, verbal response 2, motor response 3). Neurological examination revealed prominent neck stiffness and a positive Kernig sign.\n\nInitial laboratory evaluation revealed a white blood cell count of 11.8 x 10^3/uL (91.6% neutrophils, 4.5% lymphocytes), hemoglobin 8.5 g/dL with a mean corpuscular volume of 67 fL, and platelet count 300 x 10^3/uL. Random blood glucose was 8.7 mmol/L. Peripheral blood smear was negative for intraerythrocytic parasites and other hemoparasites. Serum renal and liver function panels were within normal limits. Blood type was B Rh-positive, and urine pregnancy test was negative. Non-contrast head CT demonstrated a large geographic area of hypodensity (19-25 HU) involving the right frontoparietotemporal cortex in the territory of the right middle cerebral artery with a hyperdense MCA sign. Chest radiography revealed a diffuse bilateral fine miliary micronodular pattern with background ground-glass opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Severe COVID-19 Pneumonia with Ischemic Stroke",
+      "rule_out_reason": "Supported by positive SARS-CoV-2 RT-PCR, rapid antigen testing, anosmia, acute hypoxemic respiratory failure, and acute thromboembolic MCA infarction; however, isolated acute viral infection could not account for the preceding two months of evening fevers, weight loss, productive cough, or prominent meningismus.",
+      "quote": "Four days prior to referral to MNRH CTU from a general hospital, her nasopharyngeal swab for SARS-CoV-2 was positive on both reverse transcriptase-polymerase chain reaction (RT-PCR) and rapid antigen tests."
+    },
+    {
+      "candidate": "Cryptococcal Meningitis",
+      "rule_out_reason": "Confirmed by positive serum and CSF cryptococcal antigen tests, explaining the acute meningeal signs, headaches, and depressed mentation, but isolated fungal meningitis could not account for the extensive diffuse miliary micronodular pattern seen on chest radiography.",
+      "quote": "Her serum and cerebrospinal fluid cryptococcal antigen (CrAg) (Immy Inc., Norman, OK) tests were positive (Figure 1)."
+    },
+    {
+      "candidate": "Severe Malaria",
+      "rule_out_reason": "Considered on initial evaluation in an endemic setting given acute febrile encephalopathy, tachycardia, and microcytic anemia, but excluded by a negative peripheral blood smear for Plasmodium and other hemoparasites.",
+      "quote": "A blood smear was negative for Plasmodium and other haemoparasites."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated / Miliary Tuberculosis",
+      "rule_out_reason": "Demonstrated at bedside triage by a positive urine lipoarabinomannan (LAM Grade II) assay and classic miliary pattern on chest radiograph, and definitively confirmed by detection of rifampicin-susceptible Mycobacterium tuberculosis DNA via sputum GeneXpert.",
+      "quote": "The urine lipoarabinomannan (LAM) was positive (Grade II) (Figure 1). Chest radiography revealed features of miliary tuberculosis with background ground glass opacities (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission breakpoint isolates clinical presentation before urine LAM, cryptococcal antigen, CD4 count, and GeneXpert results. Zero spoilers present."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8121982_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 55-year-old diabetic male presents with acute high-grade fevers (39.9°C), paroxysmal rigors, drenching diaphoresis, dry cough, and pharyngeal erythema, without recent travel outside the country in the past year. Although initially confirmed to have an acute viral respiratory tract infection (COVID-19), he develops recrudescent fever spikes and rigors on day 4 despite resolution of respiratory symptoms. The clinical challenge is recognizing a delayed hypnozoite relapse of an intraerythrocytic parasite unmasked or triggered by acute intercurrent viral infection.\n2. Admission Breakpoint: The admission evaluation concludes after clinical triage, vital signs, physical exam, triage hematology showing neutrophilic leukocytosis, and normal plain chest radiography, prior to nasopharyngeal viral RT-PCR confirmation, subsequent inpatient monitoring, blood cultures, and peripheral blood thick and thin smears.\n3. Differential Distinctions: Acute viral respiratory infection (such as COVID-19 or influenza) causes fever, cough, and pharyngeal erythema, but does not explain delayed tertian paroxysmal rigors or intraerythrocytic inclusions. Secondary pyogenic bacteremia presents with leukocytosis and high-grade fevers in diabetic patients, but blood cultures remain sterile in parasitic relapse.",
+  "case_prompt": "A 55-year-old male with a medical history of type 2 diabetes mellitus presented to the emergency department with a 5-day history of high-grade fever, shaking chills, rigors, profuse drenching diaphoresis, lethargy, and a dry cough. He reported no chest pain, palpitations, hemoptysis, rash, nausea, vomiting, diarrhea, or altered mental status. He noted a history of a treated tropical febrile infection while living in India one year earlier, managed with antimicrobial and anti-relapse therapy. He reported no recent international travel, no recent insect or animal bites, and no history of blood transfusions.\n\nOn physical examination, he was febrile with a body temperature of 39.9°C and tachycardic with a heart rate of 136 beats/min. His blood pressure was 120/80 mmHg, respiratory rate 18 breaths/min, and oxygen saturation 97% while breathing ambient air. Oropharyngeal examination revealed tonsillar and posterior pharyngeal erythema without exudates. There was no cervical or peripheral lymphadenopathy. Cardiovascular, respiratory, abdominal, and neurological examinations were otherwise normal, with no hepatosplenomegaly or meningeal signs.\n\nInitial triage laboratory investigations revealed a prominent neutrophilic leukocytosis. A portable plain chest radiograph showed clear lung fields without consolidation, pleural effusion, or pulmonary vascular congestion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral respiratory tract infection (COVID-19) alone",
+      "rule_out_reason": "Considered because the patient presented during an endemic wave with cough, pharyngeal erythema, and confirmed positive nasopharyngeal RT-PCR. However, despite resolution of pharyngitis and cough after three days of supportive care, the patient experienced abrupt recrudescent fever spikes (39.1°C) with classic shaking rigors and diaphoresis.",
+      "quote": "A working diagnosis of mild COVID-19 upper respiratory tract infection was made. The patient was started on treatment based on the local COVID-19 management protocol at the time. After treatment for 3 days, there was resolution of cough and pharyngeal erythema, however, on the 4th day patient started to spike high-grade fever of 39.1 degree Celsius."
+    },
+    {
+      "candidate": "Secondary bacterial sepsis / Pyogenic bacteremia",
+      "rule_out_reason": "Considered because an acute high-grade fever spike to 39.1°C with neutrophilic leukocytosis and rigors in a diabetic patient raised immediate concern for hospital-acquired or secondary pyogenic bacteremia. However, comprehensive blood cultures remained completely sterile.",
+      "quote": "Sepsis screen was ordered. The blood cultures were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Persistent paroxysmal rigors and sweats prompted microscopic evaluation of thick and thin peripheral blood films, which revealed ring forms and developing trophozoites of Plasmodium vivax at 0.1% parasitemia, establishing a hypnozoite reactivation relapse triggered by intercurrent viral infection.",
+      "quote": "A blood smear was done to rule out malaria. Blood smears showed ring and trophozoites of P. vivax at 0.1% (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Plasmodium vivax malaria relapse with hypnozoite reactivation triggered by intercurrent mild COVID-19 infection. All pathogen names, send-out PCR panels, blood culture results, and peripheral smears excluded from case_prompt."
+}

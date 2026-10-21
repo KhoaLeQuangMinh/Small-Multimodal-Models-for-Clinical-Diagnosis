@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC5220437_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 22-year-old male from India presents with bilateral auricular pain and erythema sparing the lobules, inflammatory polyarthralgias with morning stiffness, extensor plaque rash, constitutional decline, and nephritic proteinuria, closely imitating relapsing polychondritis or systemic ANCA-associated vasculitis. The absence of hypoesthesia over the skin lesions and lack of peripheral nerve enlargement create significant diagnostic distraction from mycobacterial infection.\n2. Admission Breakpoint: Admission triage concludes immediately after physical examination, initial laboratory investigations (CBC showing leukocytosis, mild anemia, elevated ESR/CRP, reversed A/G ratio, microhematuria, mild proteinuria), and normal chest radiograph, directly before autoimmune serologies, HIV screening, and diagnostic skin punch biopsy.\n3. Differential Distinctions: Relapsing polychondritis is strongly suggested by bilateral external ear chondritis sparing noncartilaginous lobules accompanied by inflammatory polyarthritis, but autoimmune serology is negative and histology demonstrates mycobacterial infection. Granulomatosis with polyangiitis explains chondritis and nephropathy, but lacks upper/lower respiratory tract lesions and ANCA is negative. Bacterial chondritis is ruled out by bilateral involvement, 1-month chronicity, and non-response to two courses of broad-spectrum antibiotics.",
+  "case_prompt": "A 22-year-old male residing in India with no prior medical history presents with a 1-month history of low-grade fever, inflammatory pain and morning stiffness in the small joints of both hands, generalized weakness, and anorexia with a 3-kg weight loss. Over the same interval, he noticed a skin rash over both elbows and knees, accompanied by bilateral external ear redness and pain. He previously received two courses of broad-spectrum oral antibiotics from his primary care physician without symptomatic improvement. He denies numbness, paresthesias, or sensory loss over any cutaneous area.\n\nOn physical examination, he is afebrile with normal blood pressure and pulse rate. Mild conjunctival pallor is present. Dermatologic examination reveals a symmetrical, erythematous rash over the extensor aspects of both elbows without sensory deficit to light touch or pinprick. Examination of the ears reveals erythema, edema, and tenderness over the upper two-thirds of both external ears with complete sparing of the ear lobules. No peripheral nerve enlargement or tenderness (ulnar, greater auricular, or common peroneal) is palpable. Musculoskeletal examination shows tenderness across bilateral metacarpophalangeal and proximal interphalangeal joints with a painful hand squeeze, but without frank joint effusion or deformities.\n\nInitial laboratory evaluation reveals a hemoglobin of 10.5 g/dL, total leukocyte count of 12,700/mm³, and platelet count of 179,000/mm³. Inflammatory markers are elevated, with an ESR of 112 mm/h and a C-reactive protein of 11.27 mg/L. Serum liver and renal biochemistries are normal, except for a reversed albumin-to-globulin ratio. Routine urinalysis demonstrates 10 to 15 red blood cells per high-power field, and 24-hour urinary protein excretion is 540 mg. Plain radiography of the chest is unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Relapsing polychondritis",
+      "rule_out_reason": "Considered primary diagnosis given auricular chondritis sparing the lobules, inflammatory polyarthralgia, and high inflammatory markers; ruled out by negative autoimmune workup and cutaneous biopsy proving mycobacterial etiology.",
+      "quote": "In view of the typical chondritis of the ear with sparing of noncartilaginous portion, relapsing polychondritis was considered as the possible diagnosis."
+    },
+    {
+      "candidate": "Granulomatosis with polyangiitis (GPA)",
+      "rule_out_reason": "Considered due to the combination of chondritis, systemic inflammatory symptoms, and glomerulonephritis/proteinuria; ruled out by the absence of pulmonary/sinus involvement and negative ANCA serology.",
+      "quote": "Granulomatosis with polyangiitis was also kept as a differential but was less likely in view of the absence of sinus and pulmonary involvement and negative ANCA report."
+    },
+    {
+      "candidate": "Bacterial chondritis",
+      "rule_out_reason": "Considered for external ear inflammation, but ruled out by subacute 1-month duration and lack of response to two courses of broad-spectrum antibiotics.",
+      "quote": "Bacterial chondritis was not considered as he had previously received courses of antibiotics without any benefit and had a long history of one-month duration."
+    },
+    {
+      "candidate": "Trauma and radiation-induced chondritis",
+      "rule_out_reason": "Rare structural causes of auricular chondritis, excluded by detailed exposure history.",
+      "quote": "Trauma and radiation exposure are other rare causes of chondritis which were ruled out by appropriate questioning."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Skin punch biopsy of the extensor elbow lesions revealed perivascular/periadnexal lymphohistiocytic infiltrates with ill-formed granulomas, and positive Ziehl-Neelsen and Fite-Faraco staining confirmed acid-fast bacilli.",
+      "quote": "Skin biopsy from the lesions over elbows was done which showed unremarkable epidermis and dermis with perivascular and periadnexal lymphohistiocytic collection and ill formed granuloma. Ziehl-Neelsen stain was positive for acid fast bacilli, and positive Fite-Faraco stain further confirmed the diagnosis of leprosy."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5220437_01. Preserves the challenging diagnostic dilemma of pseudo-relapsing polychondritis in multibacillary leprosy while strictly cutting off before autoimmune panel and biopsy."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3177409_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old man with a remote history of treated pulmonary cavitary disease presents with life-threatening massive hemoptysis and active constitutional symptoms. While massive hemoptysis in old cavitary lung disease is often attributed to aspergilloma or Rasmussen aneurysm of the pulmonary artery, multidetector CT angiography reveals a rare, highly lethal complication: active reactivated mycobacterial infection causing a hypertrophied systemic bronchial artery aneurysm.\n2. Admission Breakpoint: History of subacute fever, recurrent streaky hemoptysis culminating in massive hemoptysis, baseline laboratory tests (moderate anemia, elevated ESR, normal coagulation profile), and plain chest radiograph showing fibro-cavitary changes and a nodular opacity define the admission breakpoint before contrast-enhanced multidetector CT angiography, catheter arteriography, and embolization.\n3. Differential Distinctions: Cavitary bronchogenic carcinoma (nodular cavitary lesion with hemoptysis and constitutional symptoms in an older male, but ruled out by vascular inflammatory necrotizing features and response to therapy), Rasmussen aneurysm (arises from the low-pressure pulmonary arterial tree within a cavity, whereas this arose from the high-pressure systemic bronchial artery), and reactivated pulmonary tuberculosis complicated by bronchial artery aneurysm.",
+  "case_prompt": "A 56-year-old male presented with massive hemoptysis of two days duration. For the previous five months, he had been experiencing low-grade fever and recurrent episodes of streaky hemoptysis. He was managed conservatively at a peripheral center and was referred with ongoing episodes of hemoptysis amounting to 15 to 20 mL per episode. He had been previously treated for a pulmonary cavitary infection approximately 18 years earlier. Laboratory evaluation revealed a hemoglobin of 8.2 g/dL, total leukocyte count of 7900/mm³ (70% neutrophils, 26% lymphocytes, 2% monocytes, 2% eosinophils), and erythrocyte sedimentation rate (ESR) of 65 mm in the first hour. Platelet count, coagulogram, and routine blood biochemistry were within normal limits. A plain chest radiograph showed fibrotic opacities and a few thin-walled cavities in the left upper zone, along with an ill-defined nodular opacity in the right middle zone.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cavitary bronchogenic carcinoma / Lung malignancy",
+      "rule_out_reason": "Subacute fever, constitutional decline, hemoptysis, and an ill-defined nodular opacity with apical cavities in a 56-year-old male raise strong suspicion for lung cancer; however, MDCT angiography showed inflammatory necrosis with ground glass opacities, tree-in-bud nodules, and vascular hypertrophy without a malignant tumor mass.",
+      "quote": "A chest radiograph showed fibrotic opacities and few thin-walled cavities in the left upper zone and an ill-defined nodular opacity in the right middle zone."
+    },
+    {
+      "candidate": "Rasmussen aneurysm (Pulmonary arterial pseudoaneurysm)",
+      "rule_out_reason": "Rasmussen aneurysm is the classic cause of life-threatening hemoptysis in patients with history of cavitary lung disease, typically arising from a branch of the pulmonary artery bordering a cavity; however, contrast MDCT angiography traced the aneurysm directly to the systemic bronchial artery circulation.",
+      "quote": "MDCT angiography images showed multiple hypertrophied arteries inside the lesion with a small aneurysm (3 x 5 mm) [Figure 1a]. The right bronchial artery was mildly enlarged and could be traced to the parenchymal abnormality in the right middle lobe [Figure 1b]."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Reactivated Pulmonary Tuberculosis with Bronchial Artery Aneurysm)",
+      "rule_out_reason": "MDCT angiography and selective catheterization identified active tuberculous inflammation (necrotic nodule with surrounding ground-glass nodules) feeding a 3 x 5 mm right bronchial artery aneurysm, which was successfully treated with transcatheter polyvinyl alcohol particle embolization alongside antimycobacterial therapy.",
+      "quote": "Based on clinical history and radiological findings, a diagnosis of reactivate tuberculosis with aneurysm formation was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-yield teaching case distinguishing bronchial artery aneurysm from Rasmussen aneurysm in reactivated tuberculosis. Breakpoint halts at triage CXR and laboratory tests prior to multidetector CTA and transcatheter embolization."
+}

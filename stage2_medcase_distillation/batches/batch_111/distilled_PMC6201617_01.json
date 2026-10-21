@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6201617_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A young woman presenting with a chronic 7-month painful, fistulizing tumefaction of the foot draining purulent granule-laden exudate, which clinically mimics chronic bacterial osteomyelitis or bacterial actinomycetoma.\n2. Admission Breakpoint: Admission triage concludes after documenting the chronic foot tumefaction, draining fistulous tracts, and plain radiograph showing intact osseous structures, prior to direct microscopic examination of the extruded grains.\n3. Differential Distinctions: Chronic bacterial osteomyelitis is excluded by absence of osseous lysis or cortical erosion on plain radiography; actinomycotic mycetoma (caused by filamentous bacteria) is distinguished from eumycotic mycetoma by direct microscopic visualization of fungal elements within the black grains and responsiveness to ketoconazole.",
+  "case_prompt": "A 24-year-old woman with no significant past medical history presented with a seven-month history of a painful, progressive swelling of her left foot. Physical examination revealed an indurated tumefaction involving the soft tissues of the left foot with multiple cutaneous fistulous tracts discharging purulent exudate containing macroscopic granular material. Standard plain radiography of the left foot showed no evidence of osteolytic destruction, periosteal reaction, or cortical lesions of the tarsal or metatarsal bones.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Bacterial Osteomyelitis with Cutaneous Fistulization",
+      "rule_out_reason": "Considered due to the chronic suppurative presentation with purulent drainage and fistulous tracts in the foot; ruled out by plain radiographs demonstrating completely normal bone architecture without sequestrum or cortical destruction.",
+      "quote": "Standard X-rays of his foot showed no lesion of the bone."
+    },
+    {
+      "candidate": "Actinomycetoma (Actinomycotic Mycetoma)",
+      "rule_out_reason": "Mycetoma is etiologically classified into actinomycotic (bacterial, caused by aerobic actinomycetes) and eumycotic (fungal) forms; actinomycotic infection was excluded by direct microscopy of the extruded grains, which showed thick fungal structures rather than thin bacterial branching filaments.",
+      "quote": "It is either actinomycotic or eumycotic in etiology."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnostic pivot was achieved by combining the pathognomonic clinical triad (tumefaction, sinuses, and granules) with direct microscopic demonstration of fungal hyphae within the black grains, confirming eumycetoma (Madura foot) successfully managed with surgical debridement and prolonged ketoconazole.",
+      "quote": "Direct microscopic examination of grains suggests a fungal infection. Standard X-rays of his foot showed no lesion of the bone. So with the combination of the clinical specific lesions and typical grains, a diagnosis of Madura foot was made and the patient treated with surgical debridement, followed by Ketoconazole for 12 months"
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt is clean and strictly stops before microscopic examination of the grains. Zero mention of fungus, eumycetoma, or Madura foot in presentation."
+}

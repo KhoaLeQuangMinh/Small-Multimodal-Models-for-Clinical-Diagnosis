@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11320668_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 50-year-old male manual laborer with diabetes mellitus in Sri Lanka presents with subacute left hip pain, psoas sign, extreme systemic inflammation (ESR 110 mm/h, CRP 180 mg/L), and multi-organ abscesses in the psoas muscle, spleen, and liver. The central tension is differentiating disseminated tuberculosis (Pott's disease / cold psoas abscess with visceral tuberculomas) from disseminated pyogenic infection and endemic tropical melioidosis.\n2. Admission Breakpoint: Day 1 triage ends after baseline labs (leukocytosis, marked ESR/CRP) and cross-sectional imaging (ultrasound and contrast-enhanced CT) demonstrating the psoas and visceral abscesses, immediately prior to ultrasound-guided catheter drainage, mycobacterial GeneXpert testing, and bacterial culture.\n3. Differential Distinctions: Disseminated tuberculosis is ruled out by negative nucleic acid amplification (GeneXpert) and negative standard blood/pus cultures. The discovery of Burkholderia pseudomallei establishes melioidosis as the pathogen driving the multivisceral abscesses.",
+  "case_prompt": "A 50-year-old male manual labourer from Sri Lanka with a medical history of diabetes mellitus presented with a 1-month history of worsening left hip and low back pain, accompanied by intermittent low-grade fever, generalized malaise, and loss of appetite.\n\nOn physical examination, the patient was afebrile at triage. Vital signs were otherwise stable. Abdominal and musculoskeletal examination was notable for focal tenderness over the left groin and severe pain elicited upon passive hyperextension of the left hip (positive psoas sign). No superficial fluctuance or cutaneous erythema was observed.\n\nInitial triage laboratory investigations demonstrated marked leukocytosis with a white blood cell count of 16,000/μL. Inflammatory markers were profoundly elevated, with an erythrocyte sedimentation rate (ESR) of 110 mm in the first hour and a C-reactive protein (CRP) level of 180 mg/L. \n\nTrans-abdominal ultrasonography revealed an 8.0 x 5.0 x 5.5 cm fluid collection within the left psoas muscle and multiple hypoechoic lesions in the spleen and liver. Contrast-enhanced computed tomography confirmed a multiloculated left psoas abscess extending from the T11 to L5 spinal levels (measuring 4.6 x 7.6 x 14.3 cm), along with multiple well-defined, round hypodense areas without peripheral ring enhancement scattered throughout both the hepatic and splenic parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated Tuberculosis (Tuberculous Psoas Abscess and Hepatosplenic Granulomas)",
+      "rule_out_reason": "Considered the primary differential given the high ESR (110 mm/h), subacute insidious onset, and concurrent psoas and splenic/hepatic abscesses in a South Asian setting. Ruled out by negative GeneXpert molecular testing and negative mycobacterial cultures.",
+      "quote": "The first differential diagnosis was tuberculosis due to high ESR, insidious onset of symptoms and multiple abscesses. Blood and pus cultures were negative and tuberculosis was excluded with negative nucleic acid analysis (GeneExpert)."
+    },
+    {
+      "candidate": "Pyogenic Staphylococcal / Enteric Abscess",
+      "rule_out_reason": "Considered due to the prominent leukocytosis (WBC 16,000/μL) and diabetic predisposition. Ruled out by routine culture results and subsequent isolation of a specific tropical environmental bacterium.",
+      "quote": "Blood and pus cultures were negative and tuberculosis was excluded with negative nucleic acid analysis (GeneExpert)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was achieved when ultrasound-guided aspiration of the psoas abscess yielded Burkholderia pseudomallei on culture, corroborated by elevated specific serum antibody titers.",
+      "quote": "Burkholderia pseudomallei was isolated from psoas abscess aspiration culture and serum showed a significant level of antibodies."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clinical triage captures the presentation of multi-organ abscesses in a diabetic laborer, maintaining full differential tension before psoas culture results."
+}

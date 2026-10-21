@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12908690_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 80-year-old woman without known immunosuppression or sick contacts presents acutely with confusion, severe hypoxemia (SpO2 70-85%), and diffuse reticulonodular infiltrates on a background of an 11-kg weight loss over six months and low-grade morning fevers. A positive multiplex PCR panel for Staphylococcus aureus creates a dangerous cognitive trap for typical bacterial bronchopneumonia, threatening to obscure the underlying hematogenously disseminated miliary mycobacterial infection.\n2. Admission Breakpoint: The admission breakpoint is placed at Day 1 emergency triage after physical examination, vital signs, initial hematology/inflammatory labs, and portable chest radiograph showing reticulonodular infiltrates, prior to multiplex pneumonia PCR panels, HRCT chest micronodule delineation, and bronchoalveolar lavage MTB PCR/QuantiFERON testing.\n3. Differential Distinctions: Acute Staphylococcus aureus community-acquired pneumonia (ruled out because the indolent 6-month chronology, normal procalcitonin, and lack of consolidations or purulence were discordant with acute staphylococcal pneumonia, indicating colonization), disseminated pulmonary metastasis / lymphangitic carcinomatosis (ruled out by uniform micronodular pattern on HRCT and negative cytology), and atypical fungal/pneumocystis pneumonia. Identification of MTB DNA on BAL fluid establishes miliary tuberculosis.",
+  "case_prompt": "An 80-year-old female presented to the emergency department with acute headache and confusion that began the previous evening. Family members documented an oxygen saturation of 70% on ambient air at home; she had not previously utilized supplemental oxygen. Detailed questioning elicited a history of unintentional 11 kg weight loss over the preceding 6 months, intermittent low-grade morning fevers, and progressive exertional dyspnea associated with a dry cough over recent weeks. Outpatient empiric oral antibiotics and acetaminophen had failed to produce clinical improvement.\n\nHer medical history included hypertension managed with telmisartan and lercanidipine, and a prior transient ischemic attack treated with oral anticoagulation. She had no known history of prior exposure to chronic pulmonary infections, recent travel, or immunosuppressive therapy.\n\nOn initial triage, vital signs were: blood pressure 145/87 mmHg, heart rate 76 beats/min, respiratory rate 24 breaths/min, body temperature 37.6°C, and oxygen saturation 85% on ambient air. Physical examination revealed mild psychomotor slowing and tachypnea with decreased bilateral thoracic expansion and mild intercostal retractions. Pulmonary auscultation demonstrated markedly diminished vesicular breath sounds over bilateral mid-to-lower lung fields with percussion dullness across the left hemithorax, in the absence of adventitious sounds. Cardiovascular, abdominal, and extremity examinations were unremarkable.\n\nLaboratory evaluation showed mild lymphopenia, an elevated erythrocyte sedimentation rate (ESR), mildly elevated hepatic transaminases, and a negative procalcitonin level. Plain chest radiography revealed diffuse, symmetric bilateral reticulonodular infiltrates.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute community-acquired Staphylococcus aureus pneumonia",
+      "rule_out_reason": "Although a sputum multiplex pneumonia panel identified high-copy Staphylococcus aureus, acute staphylococcal pneumonia was clinically inconsistent with the patient's indolent 6-month constitutional decline, negative procalcitonin, absence of dense lobar consolidation, and unresponsiveness to outpatient antibacterial agents, indicating incidental upper airway colonization.",
+      "quote": "The panel was positive for Staphylococcus aureus (>=107 copies/mL), with no mecA/C or MREJ resistance genes detected. However, considering the atypical presentation for community-acquired pneumonia and the patient's clinical course, a high-resolution chest computed tomography (HRCT) scan was obtained"
+    },
+    {
+      "candidate": "Metastatic malignancy / lymphangitic carcinomatosis",
+      "rule_out_reason": "Indolent weight loss and reticulonodular infiltrates raised suspicion for neoplastic dissemination; however, HRCT showed discrete, diffuse micronodules rather than primary masses or lymphadenopathy, and bronchoalveolar lavage cytology revealed only mild reactive inflammatory changes without malignant cells.",
+      "quote": "a bronchoalveolar lavage cytology was performed from the left upper lobe, reporting only mild reactive changes of the respiratory epithelium associated with chronic inflammation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High-resolution CT confirmed multiple diffusely distributed micronodules characteristic of miliary disease, and bronchoalveolar lavage fluid testing confirmed Mycobacterium tuberculosis by positive QuantiFERON-TB Plus and positive MTB polymerase chain reaction.",
+      "quote": "high-resolution chest computed tomography (HRCT) scan was obtained (Figure 2), which revealed multiple diffusely distributed micronodules throughout both lungs... QuantiFERON-TB Plus (four tubes) was requested and yielded a positive result in the same tissue. PCR testing for MTB was also positive, with no rifampicin resistance detected."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Breakpoint strictly excludes pneumonia PCR panels, BAL cytology, and HRCT. Prompt contains zero pathogen or disease references."
+}

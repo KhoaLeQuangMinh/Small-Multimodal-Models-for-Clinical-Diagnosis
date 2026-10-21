@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4763672_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 69-year-old woman presents with a 7-month history of non-pruritic erythematous papules and brown nodules localized unilaterally to the left chest, axilla, and upper arm, with a biopsy from an outside facility suggestive of cutaneous T-cell lymphoma (CTCL). The total absence of pruritus, absence of interdigital burrows, and unilateral nodular distribution create a high-stakes diagnostic masquerade where an infectious ectoparasitic infestation mimics cutaneous lymphoma.\n2. Admission Breakpoint: Outpatient dermatologic presentation and physical exam (papules and nodules on left chest, axilla, and arm, without pruritus or burrows), along with baseline lab tests (WBC 9,500/uL, sIL-2R 535 U/mL, normal eosinophils) and whole-body PET-CT showing no abnormal FDG uptake, prior to in-house punch biopsy sectioning and KOH examination.\n3. Differential Distinctions: Cutaneous T-cell lymphoma (mycosis fungoides / lymphomatoid papulosis) presents with dense CD4+ T-cell dermal infiltrates and elevated sIL-2R, but typically shows epidermotropism (Pautrier microabscesses) or abnormal PET-CT uptake; cutaneous pseudolymphoma presents as nodular lymphoid hyperplasia; whereas nodular scabies is characterized by an exuberant dermal hypersensitivity response where identification of an epidermal mite or positive KOH examination reveals the ectoparasitic etiology.",
+  "case_prompt": "A 69-year-old Japanese woman with a past medical history of subarachnoid hemorrhage was referred to the dermatology department for evaluation of skin eruptions that had been present for 7 months. She had previously undergone a skin histological sampling of her left upper arm at another medical center, where cutaneous T-cell lymphoma had been suspected based on histopathologic findings.\n\nOn physical examination at presentation, erythematous papules and small brown nodules were localized to the left side of her chest, left axilla, and left upper arm. The patient reported no subjective symptoms of itching. Thorough examination of her hands, web spaces, and fingers revealed no burrows or tunnels.\n\nBaseline laboratory investigations revealed a white blood cell count of 9,500/\u03bcL (reference range, 3,400\u20137,300/\u03bcL) and a serum soluble interleukin-2 receptor (sIL-2R) level of 535 U/mL (reference range, 145\u2013519 U/mL). Liver and renal function tests were within normal limits. Blood eosinophil percentage was normal, and no abnormal circulating peripheral blood lymphocytes were detected. Whole-body 18F-fluorodeoxyglucose positron emission tomography and computed tomography (FDG-PET/CT) demonstrated no abnormal tracer uptake.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous T-Cell Lymphoma (CTCL)",
+      "rule_out_reason": "Suspected due to a 7-month duration of non-pruritic nodules, elevated serum soluble interleukin-2 receptor, and dense CD3+/CD4+ dermal lymphoid infiltration on initial biopsy, but ruled out by lack of Pautrier microabscesses, absence of systemic FDG avidity on PET/CT, and discovery of an epidermal mite.",
+      "quote": "Histopathology specimens stained with hematoxylin and eosin (H and E) taken at the previous hospital showed features of CTCL without epidermal Pautrier microabscesses [Figure 1c and d]... Positron emission tomography and computed tomography showed no abnormal fluorine-18 2-fluoro-2-deoxy-D-glucose uptake in her whole body."
+    },
+    {
+      "candidate": "Cutaneous Pseudolymphoma",
+      "rule_out_reason": "Benign reactive lymphoid hyperplasia was considered given the dense polymorphic T-cell predominant infiltrate, but this nodular presentation was driven by an active ectoparasitic infestation that resolved completely following oral anti-parasitic therapy.",
+      "quote": "Oral administration of ivermectin (Maruho Co., Osaka, Japan) (9 mg, 2 times, 2 weeks apart) was started. After 4 weeks, all eruptions disappeared and only hyperpigmentation remained [Figure 1b]."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Incidental detection of an epidermal mite within the stratum corneum on immunohistochemical thin sections followed by microscopic confirmation via potassium hydroxide (KOH) examination established the diagnosis of nodular scabies.",
+      "quote": "In a specimen stained with CD4, a mite was detected within the stratum corneum of the epidermis [Figure 1e]. At her second visit to our department, scabies was diagnosed based on analysis of the nodules in a potassium hydroxide (KOH) test."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt describes the clinical presentation, exam, and initial staging labs/PET-CT without revealing the mite, KOH results, or scabies diagnosis. Direct quotes verify all differential points."
+}

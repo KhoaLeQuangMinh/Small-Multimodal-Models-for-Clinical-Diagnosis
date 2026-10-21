@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4129850_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 30-year-old man presents with acute peritonitis and pneumoperitoneum following a 7-day febrile prodrome. The clinical presentation is indistinguishable from common acute surgical emergencies—specifically perforated typhoid enteritis or perforated peptic ulcer—masking an underlying primary intestinal granulomatous infection without apparent pulmonary disease.\n2. Admission Breakpoint: Admission triage terminates following initial physical examination confirming acute peritonitis and upright chest radiography demonstrating pneumoperitoneum (free subdiaphragmatic air). Confirmatory workup begins with emergency exploratory laparotomy and histopathological examination of the excised ileal perforation margins.\n3. Differential Distinctions: Perforated typhoid (enteric) fever is the leading cause of non-traumatic terminal ileal perforation after a 1-week febrile illness in young adults in endemic settings, but histopathology shows non-caseating mononuclear infiltrates with erythrophagocytosis rather than caseating epithelioid granulomas with Langhans giant cells. Perforated peptic (gastroduodenal) ulcer is the most common cause of pneumoperitoneum, but laparotomy reveals a clean gastroduodenal defect without distal small bowel pathology or caseating mucosal granulomas.",
+  "case_prompt": "A 30-year-old previously healthy man presents to the emergency surgical service with generalized abdominal pain of 1 day's duration preceded by 7 days of continuous fever.\n\nOn physical examination, he is febrile, toxic-appearing, and in severe distress. Abdominal examination demonstrates generalized abdominal distension, board-like abdominal wall rigidity, marked guarding, and diffuse rebound tenderness consistent with generalized peritonitis.\n\nInitial emergency upright chest radiography demonstrates prominent crescents of free air under both domes of the diaphragm (pneumoperitoneum).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Typhoid Enteric Perforation",
+      "rule_out_reason": "Enteric fever is the most common cause of spontaneous terminal ileal perforation following a one-week febrile illness in young adults, but histopathology of the perforation margin demonstrated classic caseating epithelioid cell granulomas and Langhans giant cells rather than typhoidal macrophage hyperplasia and acute ischemic necrosis.",
+      "quote": "A 30-year-old man presented with fever for seven days and generalized abdominal pain for one day. On examination, he was febrile, and had signs of peritonitis."
+    },
+    {
+      "candidate": "Perforated Peptic Ulcer",
+      "rule_out_reason": "Perforated gastroduodenal ulcer is the most frequent cause of sudden peritonitis with bilateral subdiaphragmatic free air on plain radiograph, but exploratory laparotomy revealed an intact stomach and duodenum with the perforation localized to the antimesenteric border of the terminal ileum.",
+      "quote": "X-ray examination of the chest showed free air under both the domes of the diaphragm. He was taken up for exploratory laparotomy after adequate resuscitation... The terminal ileum had a small perforation along the anti- mesenteric border, about one foot proximal to the ileocaecal junction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Exploratory laparotomy revealing purulent pelvic peritonitis and a solitary terminal ileal perforation, with histopathological examination of the resected perforation margins definitively demonstrating caseating epithelioid cell granulomas with Langhans' giant cells.",
+      "quote": "The histopathological report of the perforation margins that were sent intra-operatively revealed caseating epithelioid cell granulomas with Langhans' giant cells and a dense mixed inflammatory cell infiltrate within the mucosa and submucosa (Figure 1). On receiving this report, the patient was started on anti-tubercular treatment and remained well on follow up."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC4129850_01. Pneumoperitoneum and acute peritonitis preserved. Histopathology of ileal margin with caseating granulomas and Langhans giant cells confirms Mycobacterium tuberculosis etiology. Canonical disease: Tuberculosis."
+}

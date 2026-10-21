@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10064163_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 36-year-old immunosuppressed man with ulcerative colitis, born in Guyana and recently traveling to Jamaica, presents with an indolent, asymptomatic serpiginous rash on his forehead that migrates every few weeks without peripheral eosinophilia. The core tension is distinguishing cutaneous larva migrans (animal hookworm) or an extra-intestinal inflammatory manifestation of ulcerative colitis from autoinfective Strongyloides stercoralis (larva currens), particularly when initial routine serology may be falsely negative under immunosuppressive therapy.\n2. Admission Breakpoint: The presentation ends after clinical evaluation at the specialized clinic, review of travel history, and baseline complete blood count with normal eosinophil count, immediately prior to send-out serologic testing, repeat reference EIA assays, and stool parasite microscopy.\n3. Differential Distinctions: Cutaneous larva migrans causes intense pruritus, typically involves the feet or lower extremities, and migrates continuously at millimeters to centimeters per day rather than episodic multi-week facial shifts. Extra-intestinal manifestations of ulcerative colitis do not present as distinct creeping serpiginous cutaneous tracts and would not resolve after anthelmintic therapy.",
+  "case_prompt": "A 36-year-old male born in Guyana and currently residing in Canada presents with an unusual facial rash. His medical history is notable for ulcerative colitis diagnosed on colonic biopsies, well-controlled on maintenance mesalamine (5-ASA) and the immunosuppressive agent azathioprine, with remote courses of oral prednisone. He recently traveled to Jamaica for one week. Five days following his return to Canada, he noticed an asymptomatic, non-pruritic, serpiginous cutaneous lesion on his forehead. He observed that every few weeks, the rash would migrate to a new location on his face. He denies other cutaneous lesions, perianal pruritus, respiratory symptoms, or gastrointestinal exacerbations. His broader travel history includes past visits to Mexico, India, and Cuba in addition to growing up in Guyana. On physical examination, the patient is afebrile with normal vital signs. Dermatologic inspection reveals a 4-cm linear, serpiginous erythematous eruption on his left forehead, which is stationary during clinic observation. The remainder of the physical examination is unremarkable. Complete blood count reveals a normal white blood cell count and a normal absolute eosinophil count of 0.2 x 10⁹/L (reference range < 0.4 x 10⁹/L).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous larva migrans (Ancylostoma braziliense / caninum)",
+      "rule_out_reason": "A creeping serpiginous cutaneous tract appearing shortly after tropical Caribbean beach exposure suggested zoonotic hookworm larvae; however, typical cutaneous larva migrans is intensely pruritic, predominantly affects the lower extremities, and migrates steadily daily rather than exhibiting episodic multi-week migratory jumps across the face.",
+      "quote": "Given the history of a migrating serpiginous rash after a trip to Jamaica, cutaneous larva migrans was high on the differential."
+    },
+    {
+      "candidate": "Cutaneous extra-intestinal manifestation of ulcerative colitis / Reactive inflammatory dermatosis",
+      "rule_out_reason": "Underlying inflammatory bowel disease on azathioprine prompted consideration of an atypical reactive cutaneous manifestation; however, a discrete wandering serpiginous line is characteristic of helminthic larval migration and responded rapidly to targeted anti-parasitic treatment.",
+      "quote": "Given the reactive Strongyloides spp. serology, patient epidemiology, and the facial rash that was near-pathognomonic for larva currens, he was treated with two doses of ivermectin at 200 mug/kg per dose, 2 weeks apart."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High epidemiologic suspicion based on endemic country of origin (Guyana) and immunosuppressive therapy prompted reference enzyme immunoassay testing at the CDC, which detected elevated antibodies at an optical density of 2.08 (reactive > 1.70), confirming autoinfective Strongyloides stercoralis infection presenting with larva currens.",
+      "quote": "Antibodies to Strongyloides spp. by the CDC enzyme immunoassay (EIA) was detected at an optical density of 2.08 (reactive > 1.70)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to send-out serologic testing and stool O&P microscopy. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2730280_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: Evaluating an acute hyperpyrexial illness with severe constitutional symptoms, profound thrombocytopenia, marked lymphopenia, and a focal cutaneous inoculation lesion in a returned traveler from sub-Saharan Africa, where rapid differentiation between falciparum malaria, rickettsial spotted fever, and acute East African sleeping sickness is urgently necessary to avoid fatal delays.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the physical evaluation of the cutaneous inoculation lesion, baseline hematologic and inflammatory investigations (CRP, lymphocyte count, platelet count, electrolytes), and initial peripheral smear examination for malaria parasites, prior to microscopic identification of extracellular trypomastigotes.\n3. Differential Distinctions: Falciparum malaria was the primary differential given acute fever, rigors, vomiting, and thrombocytopenia, but blood film was negative for malaria parasites; African tick bite fever (Rickettsia africae) was considered given the cutaneous lesion and safari travel, but rickettsial eschars generally do not produce fulminant hemoparasitemia or profound acute thrombocytopenia and lymphopenia.",
+  "case_prompt": "A 51-year-old man presents to the hospital 10 days after returning from a 14-day game-viewing vacation in the Luangwa Valley of southern Zambia. He was well while traveling but sustained numerous mosquito and tsetse fly bites. Two days after his return, he noticed an enlarging, slightly tender, erythematous lesion on his right shoulder. Two days later, he developed severe generalized myalgia, abdominal discomfort, diarrhea, vomiting, headache, fever, rigors, and profuse sweats.\n\nOn physical examination, the patient appears acutely and severely ill. On the right shoulder, there is an enlarging, slightly tender, erythematous cutaneous lesion with surrounding induration. Abdominal examination demonstrates mild diffuse tenderness without guarding. Examination of the chest and cardiovascular system is unremarkable.\n\nInitial laboratory evaluation demonstrates a marked systemic inflammatory response with a C-reactive protein (CRP) level of 235 mg/L. Complete blood count reveals marked lymphopenia (0.1 \u00d7 10\u2079/L) and profound thrombocytopenia with a platelet nadir of 30 \u00d7 10\u2079/L. Serum biochemistry reveals mild hyponatremia with a sodium level of 129 mmol/L. Coagulation studies show no notable coagulopathy. A peripheral blood film examination is negative for intraerythrocytic parasites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Falciparum Malaria",
+      "rule_out_reason": "Acute fever, rigors, headache, gastrointestinal distress, and profound thrombocytopenia in a traveler returning from sub-Saharan Africa immediately raise concern for severe malaria, but blood film examination showed no intraerythrocytic parasites.",
+      "quote": "No malaria parasites were seen on a blood film"
+    },
+    {
+      "candidate": "African Tick Bite Fever / Rickettsial Spotted Fever",
+      "rule_out_reason": "Safari travel accompanied by acute fever, severe myalgias, and an enlarging erythematous inoculation lesion mimics a rickettsial eschar (tache noire), but rickettsial infection does not feature extracellular flagellated protozoa or typically cause such rapid hematologic collapse.",
+      "quote": "Two days after his return, he noticed an enlarging, slightly tender, erythematous lesion on his right shoulder (Figure 1a)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Human African Trypanosomiasis (Trypanosoma brucei rhodesiense)",
+      "rule_out_reason": "The diagnostic turning point was the demonstration of an inoculation chancre followed by acute febrile multi-organ symptoms and the direct microscopic identification of numerous motile extracellular trypomastigotes on the peripheral blood film.",
+      "quote": "numerous trypomastigotes of Trypanosoma sp. were identified, confirming the diagnosis of African trypanosomiasis."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "East African trypanosomiasis (caused by Trypanosoma brucei rhodesiense) is a zoonosis transmitted by savannah tsetse flies (Glossina morsitans). In non-immune travelers, it produces an acute, virulent illness characterized by a tender inoculation chancre, high parasitemia, marked thrombocytopenia, lymphopenia, and high CRP. Lumbar puncture should be performed to assess CNS stage (stage 2 disease), and first-line therapy for hemolymphatic disease is intravenous suramin."
+}

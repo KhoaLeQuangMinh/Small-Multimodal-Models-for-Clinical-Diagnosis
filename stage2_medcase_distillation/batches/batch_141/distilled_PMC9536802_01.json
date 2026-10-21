@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9536802_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 68-year-old male presents with six months of progressive neurological deficits (headache, dizziness) and systemic weight loss. Neuroimaging demonstrates multiple ring-enhancing brain lesions with pronounced vasogenic edema, which alongside concurrent nodular pulmonary lesions and a heterogeneous hepatic mass strongly mimics widely disseminated metastatic malignancy with cystic cerebral metastases.\n2. Admission Breakpoint: Initial clinical presentation, neurological examination, and cross-sectional imaging (cranial MRI and thoracoabdominal CT) demonstrating ring-enhancing intracranial lesions, calcified pulmonary nodules, and heterogeneous calcified cystic hepatic lesions, prior to histopathological biopsy of the liver.\n3. Differential Distinctions: Metastatic adenocarcinoma or necrotic metastases were the leading pre-biopsy considerations given the multiorgan distribution, but were excluded by the absence of malignant cells and detection of larval cestode membranes. Cystic echinococcosis (Echinococcus granulosus) typically forms discrete unilocular cysts with defined walls, in contrast to the infiltrative, multivesicular, calcified tumor-like pattern seen in alveolar echinococcosis.",
+  "case_prompt": "A 68-year-old male with no known history of chronic medical illness or prior trauma presents with complaints of progressive headache, dizziness, and involuntary weight loss that have persisted for six months. On presentation, vital signs are normal. General physical and preliminary neurological evaluations reveal no focal motor deficits. Cranial magnetic resonance imaging (MRI) reveals multiple hyperintense lesions on T2-weighted images surrounded by a large area of edema; after administration of an intravenous contrast agent, the lesions show irregular annular enhancement. Thoracoabdominal computed tomography (CT) is performed to investigate the systemic extent of the lesions. Thoracic CT demonstrates nodular lesions in both lungs, some of which exhibit calcifications. Abdominal CT shows heterogeneous lesions with irregular contours containing calcifications and cystic components within the liver parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Malignancy (Cystic Cerebral Metastases)",
+      "rule_out_reason": "Multiple ring-enhancing intracranial lesions with surrounding edema in an older patient with chronic weight loss and concurrent lung and liver nodules strongly suggested metastatic cancer, but histopathological evaluation revealed parasitic germinative membranes without neoplastic cells.",
+      "quote": "Based on these findings, cystic metastasis was considered, and thoracoabdominal computed tomography (CT) was performed to investigate the primary malignancy."
+    },
+    {
+      "candidate": "Cystic Echinococcosis (Hydatid Disease)",
+      "rule_out_reason": "Cystic echinococcosis classically manifests as unilocular, well-defined fluid cysts with clear margins, whereas this patient presented with infiltrative, multivesicular lesions with irregular contours and calcifications mimicking a malignant tumor.",
+      "quote": "On the abdominal CT (Figure 2B), heterogeneous lesions with irregular contours containing calcifications and cystic components were observed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the biopsied liver lesions definitively established the diagnosis by identifying the characteristic germinative membranes of Echinococcus multilocularis.",
+      "quote": "The pathologic examination of the liver lesions revealed germinative membranes of Echinococcus multilocularis, and the final diagnosis was alveolar echinococcosis."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC9536802. Presentation stops at initial CT/MRI evaluation prior to liver biopsy, with zero pathogen spoilers."
+}

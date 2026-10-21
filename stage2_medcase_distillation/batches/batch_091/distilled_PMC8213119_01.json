@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213119_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 6-year-old child presenting with acute febrile shock, generalized petechial purpura, severe pallor, cervical lymphadenopathy, hepatosplenomegaly, and altered mental status. The prominent lymphadenopathy, severe cytopenias, and organomegaly strongly mirrored an acute lymphoreticular malignancy complicated by febrile neutropenia or fulminant septic shock.\n2. Admission Breakpoint: Emergency presentation, physical examination, and initial stabilization in the pediatric resuscitation bay, before bone marrow aspiration/biopsy, send-out fever serologies, and peripheral blood smear review.\n3. Differential Distinctions: Lymphoreticular malignancy (leukemia/lymphoma) presents with constitutional symptoms, generalized lymphadenopathy, organomegaly, and cytopenias, but bone marrow demonstrates hemophagocytosis without blast infiltration. Typhoid fever and rickettsial diseases share fever, rash, and multisystem involvement but lack the characteristic intraerythrocytic trophozoites seen on peripheral smear. Severe malaria can trigger secondary hemophagocytic lymphohistiocytosis (sHLH), accounting for profound cytopenias and shock.",
+  "case_prompt": "A 6-year-old female child is brought to the pediatric emergency department with a 7-day history of high-grade fever without chills or rigors, progressive pallor over the past 5 days, and diffuse bluish spots (petechiae) over her body for the past 2 days. The family reports paroxysms of generalized body pain. There is no history of vomiting, jaundice, hematuria, or prior hospitalizations.\n\nOn physical examination, the child is lethargic, febrile with a temperature of 102\u00b0F (38.9\u00b0C), severely pale, and displays clinical features of shock. Extensive petechial rashes and palpable cervical lymphadenopathy are noted. Cardiovascular examination reveals a hemic murmur with otherwise normal cardiac findings; respiratory examination is unremarkable. Abdominal examination reveals hepatosplenomegaly. Neurological examination reveals altered sensorium without signs of meningeal irritation or focal deficits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Lymphoreticular malignancy with febrile neutropenia",
+      "rule_out_reason": "Initially considered the primary diagnosis given the combination of acute pallor, petechiae, hepatosplenomegaly, cervical lymphadenopathy, and altered sensorium, but excluded when bone marrow aspiration and biopsy demonstrated hemophagocytosis without malignant cells.",
+      "quote": "Initially, we kept as lymphoreticular malignancy with febrile neutropenia and start supportive as well as symptomatic treatment and malignancy workup planed. After stabilization, bone marrow aspiration as well as biopsy was done. Bone marrow aspiration and biopsy revealed hemophagocytosis"
+    },
+    {
+      "candidate": "Typhoid fever and rickettsial infection",
+      "rule_out_reason": "Included in the differential for persistent high-grade fever accompanied by rash, organomegaly, and systemic collapse, but ruled out as targeted blood testing confirmed a parasitic etiology.",
+      "quote": "Due to persistent high-grade fever, fever workup, including rapid malarial antigen test, peripheral smear for malaria parasite, serology for typhoid and rickettsial infection, blood culture, etc., as well as a supportive workup for hemophagocytic lymphohistiocytosis (HLH) (liver transaminases, lactate dehydrogenase, triglyceride, serum ferritin, and fibrinogen) were sent"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood smear demonstrated trophozoites of Plasmodium falciparum, identifying malaria-induced secondary hemophagocytic lymphohistiocytosis (sHLH) as the unified driver of cytopenias, shock, and organomegaly, with complete defervescence on targeted therapy.",
+      "quote": "In peripheral smear, malaria parasite was seen as trophozoites for Pf malaria and revised the diagnosis as malaria-associated secondary HLH (sHLH) and the anti-malarial drug was started."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at emergency stabilization prior to bone marrow biopsy and infectious serologies. Zero mentions of malaria, parasites, or HLH in case_prompt. Direct quotes verified verbatim from case text."
+}

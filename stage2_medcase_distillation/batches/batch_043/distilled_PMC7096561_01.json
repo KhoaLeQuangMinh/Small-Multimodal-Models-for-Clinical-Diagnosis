@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7096561_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A pediatric patient with underlying biliary parasitosis develops sudden, severe right upper quadrant pain with a positive Murphy's sign and gallbladder hydrops on ultrasound. The acute presentation closely mimics acute calculous or acalculous cholecystitis requiring emergent surgical cholecystectomy, masking parasitic fluke death, biliary sludging, and transient mechanical obstruction following medical therapy.\n2. Admission Breakpoint: Emergency presentation with severe abdominal pain, positive Murphy's sign, and abdominal ultrasonography revealing a hydropic gallbladder with dilated intra- and extrahepatic bile ducts, prior to conservative hydration and serial ultrasound resolution.\n3. Differential Distinctions: Acute calculous/acalculous cholecystitis was the primary initial diagnosis given intense right upper quadrant pain, Murphy's sign, and gallbladder hydrops, but was distinguished by the absence of cholelithiasis, transient nature of the mechanical obstruction caused by trematode debris, and complete ultrasonographic normalization without surgical intervention. Allergic eosinophilic pneumonitis / Loeffler's syndrome was observed in other pediatric cohort presentations (e.g. presenting with arthralgia, severe eosinophilia, and ground-glass pulmonary halos) reflecting systemic parasite migration rather than isolated primary rheumatologic or pulmonary disease.",
+  "case_prompt": "A pediatric patient presented to the hospital with acute-onset severe right upper quadrant abdominal pain. One week prior, the patient had been evaluated for hepatobiliary symptoms, where an abdominal ultrasound had shown a distended gallbladder with very dense intraluminal content, but no hydrops and no intra- or extrahepatic bile duct dilatation, and targeted medical therapy had been initiated. On physical examination upon presentation, the patient was in distress from severe abdominal discomfort; examination of the abdomen revealed localized tenderness in the right upper quadrant with a distinct inspiratory arrest on palpation (positive Murphy's sign). Urgent abdominal ultrasonography demonstrated a tensely distended, hydropic gallbladder along with new dilatation of both the intrahepatic and extrahepatic bile ducts.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute calculous / acalculous cholecystitis requiring emergency surgery",
+      "rule_out_reason": "Considered because intense right upper quadrant pain, a positive Murphy's sign, and ultrasonographic gallbladder hydrops typically signify acute cholecystitis; however, the biliary obstruction was transient and secondary to fluke sludging/lysis, resolving completely within days under conservative intravenous hydration without operative cholecystectomy.",
+      "quote": "A physical examination revealed Murphy's sign, consistent with the diagnosis of acute cholecystitis... The patient was hospitalized and hydrated for three days. His abdominal pain gradually resolved completely."
+    },
+    {
+      "candidate": "Pediatric Loeffler's syndrome / systemic allergic eosinophilic pneumonitis",
+      "rule_out_reason": "Considered in pediatric trematodiasis presentations presenting with systemic inflammatory symptoms (such as multi-joint arthralgias, severe peripheral eosinophilia, and bilateral perihilar ground-glass infiltrates); however, this patient presented primarily with localized obstructive biliary symptoms rather than migratory pulmonary-rheumatologic disease.",
+      "quote": "He had severe eosinophilia. A chest X-ray showed perihilar and pericardial interstitial infiltration in both lungs. Thoracic computed tomography (CT) imaging showed multiple, peripherally localized nodular lesions, with surrounding ground-glass opacity or halo in the superior lobes of both lungs, indicating Loeffler's syndrome (Fig. 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Known biliary trematode infestation where post-treatment worm expulsion or lysis caused transient common bile duct and cystic duct obstruction with gallbladder hydrops, which resolved completely following conservative intravenous fluid support as documented by follow-up ultrasound.",
+      "quote": "Patient 2 was diagnosed as having biliary fascioliasis and was administered triclabendazole... Abdominal ultrasonography (US) showed a hydropic gall bladder and dilated intra- and extrahepatic bile ducts... Ten days later, a follow-up abdominal US was performed, and the findings were normal."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at acute ultrasonography. Case prompt contains no pathogen or disease names. Verbatim quotes match article."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3959303_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An elderly patient with pre-existing, longstanding hepatic cystic disease presented with acute-on-chronic fever, rigors, right upper quadrant abdominal pain, and cholestatic enzyme elevations. The critical diagnostic challenge was distinguishing acute bacterial cholangitis or superinfected pyogenic liver abscess from intrabiliary rupture and communication of a parasitic hydatid cyst.\n2. Admission Breakpoint: The admission triage phase ends after initial clinical evaluation, baseline laboratory investigations (normal leukocyte count, mild alkaline phosphatase and bilirubin elevation), and emergency abdominal CT showing cystic lesions with gas bubbles, immediately preceding advanced MRCP and ERCP.\n3. Differential Distinctions: Pyogenic liver abscess and acute choledocholithiasis were primary considerations due to the septic presentation and cholestasis, but cultures remained sterile and ERCP showed no choledocholithiasis. Confirmation of intrabiliary rupture of an echinococcal cyst was established by MRCP demonstrating a direct communicating fistulous tract between the hepatic cyst and the right biliary tree.",
+  "case_prompt": "A 74-year-old man with a known medical history of longstanding abdominal cystic disease was admitted with prolonged fever, rigors, and right upper quadrant abdominal pain.\n\nOn initial triage evaluation, complete blood count demonstrated a normal leukocyte count. Serum liver biochemical profiling revealed mild elevations in alkaline phosphatase and serum bilirubin levels. Emergency abdominal computed tomography (CT) demonstrated several large intrahepatic and extrahepatic cystic lesions, some exhibiting peripheral wall calcification. Notably, one of the intrahepatic cysts contained a few internal air bubbles.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic liver abscess with gas-forming bacteria",
+      "rule_out_reason": "Considered due to acute fevers, rigors, right upper quadrant pain, and presence of air bubbles within an intrahepatic cystic lesion; ruled out by normal leukocyte count, sterile blood and urine cultures, and demonstration of a mechanical cysto-biliary fistula rather than a primary pyogenic infection.",
+      "quote": "Leukocyte count was normal and multiple blood and urine cultures were negative... One of the cysts contained a few air bubbles [Fig 1]."
+    },
+    {
+      "candidate": "Choledocholithiasis with acute ascending cholangitis",
+      "rule_out_reason": "Considered due to Charcot-like symptoms (fever, rigors, right upper quadrant pain, elevated alkaline phosphatase and bilirubin); ruled out by ERCP demonstrating mild ductal distension without choledocholithiasis or filling defects.",
+      "quote": "ERCP demonstrated a mild distention of the extrahepatic biliary ducts with no filling defects."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Intrabiliary rupture of hepatic hydatid cyst (Echinococcosis)",
+      "rule_out_reason": "Magnetic resonance cholangiopancreatography (MRCP) demonstrated a distinct communicating tract between the calcified hepatic cyst and the right hepatic duct, confirming intrabiliary rupture of the echinococcal cyst, with subsequent prompt clinical and biochemical resolution following biliary decompression and antiparasitic therapy.",
+      "quote": "MRI with MRCP demonstrated a communicating tract between the cyst and the right hepatic duct [Fig 2]... Following the procedure, the patient's fever and abdominal pain subsided with normalization of liver transaminase and alkaline phosphatase levels."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Intrabiliary rupture is the most common serious complication of hepatic echinococcal cysts. The presence of gas within a calcified cyst on CT indicates communicating cysto-biliary rupture, which requires MRCP for anatomical demonstration and combined endoscopic and antiparasitic management."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4247868_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 78-year-old woman presented with tender pretibial nodules (erythema nodosum), low-grade fever, and bilateral hilar lymphadenopathy with ground-glass opacities on thoracic imaging. This triad classically mimics Löfgren syndrome (acute sarcoidosis) or other non-infectious autoimmune panniculitides, but in this patient represented a delayed hypersensitivity manifestation of acute pulmonary mycobacterial infection following household exposure.\n\n2. Admission Breakpoint: Admission triage terminates following clinical examination, plain chest radiography, and high-resolution computed tomography (HRCT) of the chest. Confirmatory workup begins with tuberculin skin testing (Mantoux test) and definitive sputum mycobacterial culture.\n\n3. Differential Distinctions: Löfgren syndrome was strongly considered given the classic combination of erythema nodosum and bilateral hilar adenopathy, but was excluded by an intensely reactive Mantoux skin test (22 mm induration) and microbiological recovery of Mycobacterium tuberculosis from sputum, confirming pulmonary tuberculosis.",
+  "case_prompt": "A 78-year-old woman with an unremarkable past medical history presented to the emergency department with painful, erythematous cutaneous nodules on the extensor surfaces of both lower legs. She reported low-grade fevers of 15 days' duration. On social history, she endorsed direct, close household exposure to a family member (her daughter) who was undergoing treatment for an active contagious pulmonary infection.\n\nPhysical examination revealed characteristic tender, warm, erythematous subcutaneous nodules consistent with erythema nodosum distributed over the anterior aspect of both shins. The remainder of the systemic physical examination was normal.\n\nChest radiography revealed bilateral hilar lymphadenopathy, most prominent on the right side. Subsequent high-resolution computed tomography (HRCT) of the chest confirmed the presence of mediastinal and bilateral hilar lymphadenopathy along with patchy pulmonary ground-glass opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Löfgren Syndrome (Acute Sarcoidosis)",
+      "rule_out_reason": "The combination of bilateral hilar lymphadenopathy, fever, and erythema nodosum in an adult is pathognomonic for Löfgren syndrome; however, marked tuberculin skin test hyperreactivity (22 mm) and positive sputum cultures established a mycobacterial etiology rather than non-caseating sarcoidosis.",
+      "quote": "Her chest X-Ray revealed bilateralhilar lymphadenopathy, mainly at the right side (Figure 1C)."
+    },
+    {
+      "candidate": "Post-Streptococcal Erythema Nodosum / Idiopathic Reactive Panniculitis",
+      "rule_out_reason": "Recent streptococcal pharyngeal infection is a common precipitant of reactive erythema nodosum, but it does not cause persistent hilar lymphadenopathy or pulmonary ground-glass infiltrates, which here aligned with primary granulomatous infection.",
+      "quote": "Further evaluation with High Resolution chest Computed Tomography confirmed the lymphadenopathy and demonstrated ground-glass opacities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "In the setting of household contact exposure, an intensely positive Mantoux tuberculin skin test (22 mm induration) and confirmatory growth of Mycobacterium tuberculosis on sputum cultures established primary pulmonary tuberculosis presenting with reactive erythema nodosum.",
+      "quote": "The Mantoux skin test was strongly positive (22 mm) (Figure 1B)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning methodology. Admission presentation strictly excludes tuberculin Mantoux skin test results, sputum mycobacterial cultures, and pathogen nomenclature."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10225563_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A patient presenting with acute unilateral optic disc edema and progressive vision loss without initial systemic symptoms, diagnosed with idiopathic demyelinating optic neuritis and treated with high-dose corticosteroids. The rapid eruption of high fever, painful regional lymphadenopathy, and a hidden skin lesion following steroid discontinuation creates dramatic clinical tension between steroid-refractory neuroimmunological optic neuritis and an atypical vector-borne zoonotic infection.\n2. Admission Breakpoint: The admission narrative halts upon the patient's re-presentation with high fever and groin masses, physical examination revealing the lower-extremity eschar and regional lymphadenopathy, and baseline triage blood work (neutrophilia, mild thrombocytopenia, elevated CRP), immediately prior to broad infectious serology panels, demyelinating autoantibody tests, and metagenomic next-generation sequencing.\n3. Differential Distinctions: Idiopathic or autoimmune optic neuritis (e.g., neuromyelitis optica spectrum disorder or MOG-antibody-associated disease) produces disc edema and vision loss but does not generate high fevers, painful regional lymphadenitis, or a focal eschar. Syphilis, viral retinitis, or cat scratch neuroretinitis share neuro-ophthalmic findings but present distinct serologies and clinical lesions.",
+  "case_prompt": "A 56-year-old male avid freshwater fisherman presented for evaluation of acute-onset blurred vision and an inferior visual field defect in the right eye of one day's duration. At initial onset, he reported no fevers, chills, headache, or constitutional symptoms, but recalled an insect bite-like skin induration on his lateral left leg two to three days prior to visual symptoms. Initial ophthalmologic examination revealed a visual acuity of 20/20 in the right eye with marked optic disc edema and an entirely normal left eye. He was diagnosed with acute optic neuritis and initiated on intravenous dexamethasone (10 mg daily) for seven days.\n\nDuring steroid therapy, his right eye visual acuity deteriorated from 20/20 to 20/50, prompting cessation of corticosteroids. Three days after discontinuation of dexamethasone, he abruptly developed high-grade fevers reaching 39.0 °C accompanied by painful subcutaneous swelling in the left groin. On physical examination at re-presentation, he was acutely febrile with an oral temperature of 39.0 °C. Dermatological examination revealed a localized crusty eschar on the lateral aspect of the left lower leg. Palpation of the left inguinal region revealed prominent, exquisitely tender lymphadenopathy, confirmed on bedside ultrasound.\n\nInitial triage laboratory workup revealed a white blood cell count of 10.5 × 10^9/L with 88.3% neutrophils and 6.8% lymphocytes, red blood cell count of 4.76 × 10^12/L, and platelet count of 118 × 10^9/L. Coagulation profile was normal. C-reactive protein was elevated at 12 mg/L, and erythrocyte sedimentation rate was 3 mm/h. Total serum IgM was elevated at 3.333 g/L with normal serum IgG and IgA levels.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Autoimmune Demyelinating Optic Neuritis (NMOSD / MOGAD)",
+      "rule_out_reason": "Initially suspected due to acute unilateral optic disc edema and visual field defects, and managed with intravenous corticosteroids; however, vision paradoxically worsened during steroid therapy, the patient developed high fevers with an eschar and lymphadenopathy, and cell-based autoantibody assays for AQP-4, MOG, and GFAP were completely negative.",
+      "quote": "He was diagnosed as ON in the right eye, immediately admitted to the local hospital, and treated with intravenous injection of dexamethasone 10 mg once per day for seven days... CBA revealed a triple negative test result for serum AQP-4 Ab, MOG-Ab, and GFAP-Ab."
+    },
+    {
+      "candidate": "Viral / Spirochetal Neuroretinitis (Herpesviruses / Syphilis)",
+      "rule_out_reason": "Considered given the acute optic neuritis accompanied by acute febrile illness and lymphadenopathy; however, comprehensive serological testing for Treponema pallidum, herpes simplex virus, varicella-zoster virus, and cytomegalovirus was negative.",
+      "quote": "Serum tests for pathogens including treponema pallidum, mycobacterium tuberculosis, herpes simplex virus, varicella-zoster virus, cytomegalovirus, hepatitis B virus, hepatitis C virus, HIV, Dengue virus, novel bunyavirus, and toxoplasma gondii... were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Physical examination identifying a classic inoculation eschar on the lower extremity with regional lymphadenitis following wild outdoor exposure, coupled with positive serum metagenomic next-generation sequencing for Orientia tsutsugamushi, confirmed optic neuritis secondary to scrub typhus.",
+      "quote": "physical examination revealed an eschar on the lateral skin of his left leg, and enlarged lymph nodes in the left groin which was confirmed by B-type ultrasound... Serum test for Orientia tsutsugamushi by mNGS was positive. He was then diagnosed as scrub typhus and ON"
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres strictly to the Stanford MedCaseReasoning framework. The prompt halts prior to autoimmune serologies, pathogen panels, and mNGS. Zero pathogen or disease names in prompt. Verbatim quotes verified."
+}

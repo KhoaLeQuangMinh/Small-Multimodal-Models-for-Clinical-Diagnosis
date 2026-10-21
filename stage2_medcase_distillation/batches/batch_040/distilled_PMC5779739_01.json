@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5779739_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old woman presented with an 11-month history of worsening left-sided occipital and cervicothoracic spine pain, dysphagia, severe cachexia (15 kg weight loss), and myelopathic symptoms (\"walking on cotton\" sensation and hyperreflexia). This complex presentation mimics cervical degenerative spondylosis with myelopathy or a malignant spine tumor (primary or metastatic), while systemic B symptoms (low-grade fevers, night sweats) and an elevated ESR suggest chronic granulomatous infection.\n2. Admission Breakpoint: The admission breakpoint is established after clinical history, physical examination, baseline laboratory investigations (mild anemia, elevated ESR of 67 mm/h), and initial plain cervical spine radiography demonstrating a reverse slip of the C3 vertebral body, prior to advanced cross-sectional neuroimaging (CT/MRI) and initiation of antimycobacterial chemotherapy or surgical corpectomy.\n3. Differential Distinctions: Degenerative cervical spondylotic myelopathy lacks constitutional B-symptoms, marked weight loss, elevated ESR, and paravertebral cold abscesses. Spinal malignancies typically spare the intervertebral disk space and lack large contiguous paravertebral cold abscesses that drain purulent fluid responsive to antitubercular therapy.",
+  "case_prompt": "A 45-year-old woman presented with an 11-month history of occipital, neck, and upper back pain that was worse on the left side. Over the preceding month, her pain had progressively intensified despite conservative outpatient management at a local hospital. In addition, she developed dysphagia, profound anorexia, and an unintentional 15 kg weight loss. She also endorsed low-grade fevers and recurrent night sweats. Neurologically, she reported an unsteady gait with a sensation of \"walking on cotton,\" though she denied band-like chest tightness, and trunk and limb motor movements remained intact.\n\nOn physical examination, she appeared thin and chronically ill. Examination of the neck demonstrated loss of normal cervical lordosis with a straightened cervical spine and prominent cervical paraspinal muscle strain. Neurological examination revealed hyperreflexia with slightly enhanced biceps, triceps, and brachioradialis reflexes bilaterally. Sensation and motor strength in the upper and lower extremities were otherwise intact.\n\nInitial laboratory tests showed a hemoglobin of 107 g/L (indicative of mild anemia) and an erythrocyte sedimentation rate (ESR) markedly elevated at 67 mm/h. Renal function, liver enzymes, coagulation parameters, and serum electrolytes were all within normal reference ranges. A plain radiograph of the cervical spine revealed loss of cervical curvature and a reverse slip of the C3 vertebral body.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Degenerative cervical spondylotic myelopathy",
+      "rule_out_reason": "Although myelopathic signs and neck pain were prominent, purely degenerative spondylosis cannot explain the prominent constitutional symptoms including recurrent night sweats, fevers, profound weight loss, and marked inflammatory marker elevation.",
+      "quote": "The symptoms were accompanied with low-grade fever and repeated night sweats."
+    },
+    {
+      "candidate": "Spinal neoplasm / Metastatic malignancy",
+      "rule_out_reason": "While marked cachexia, anemia, and multilevel destructive vertebral lesions raised suspicion for a malignant tumor, cross-sectional imaging and surgical exposure demonstrated contiguous multilevel spondylodiscitis with a large retropharyngeal/paravertebral cold abscess draining 25 mL of purulent material.",
+      "quote": "The fluctuation would be felt after drawing back the lower jaw using a drag hook. The drained was about 25 mL."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Advanced cross-sectional CT and MRI imaging identified characteristic osteolytic destruction of the C5, C6, and C7 vertebral bodies with paravertebral cold abscess, which responded to surgical debridement, reconstruction, and quadruple antitubercular pharmacotherapy.",
+      "quote": "Computed tomography (CT) and magnetic resonance imaging (MRI) showed destruction of C5, C6, C7 vertebral body and formation of paravertebral abscess. The following diagnosis was made; multilevel cervical TB and abscess presence; reverse slip of C3 vertebral body; bone destruction of C5, C6, and C7 vertebral body."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict accordance with the Stanford MedCaseReasoning framework. Zero disease or pathogen spoilers in the admission prompt; verbatim article quotes substantiate the diagnostic reasoning."
+}

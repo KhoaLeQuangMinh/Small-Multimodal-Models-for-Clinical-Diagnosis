@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8604635_01",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: The patient presents with a decade-long history of recurrent tender nodules, ulcerations, and prominent subcutaneous fat atrophy causing lower limb asymmetry in the absence of respiratory symptoms or known infectious contacts. The marked lipoatrophy and chronic indolent course closely mimic morphea profunda, lupus panniculitis, or non-infectious nodular vasculitis.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial physical examination, dermatological assessment, and baseline triage workup, prior to histopathological skin biopsy, mycobacterial PCR, tuberculin skin testing, and nuclear scintigraphy.\n3. Differential Distinctions: Connective tissue panniculitides (lupus panniculitis, morphea profunda) display hyalinized collagen bundles, mucin deposition, or immunoreactant deposits on direct immunofluorescence without caseous necrosis; primary nodular vasculitis displays prominent transmural vasculitis without mycobacterial DNA.\n</think>",
+  "case_prompt": "A 35-year-old overweight female presented to the outpatient dermatology clinic with slightly tender lumps and hyperpigmented depressed scars on both lower legs. Her skin lesions first developed ten years prior as erythematous macules and nodules; some of these lesions subsequently ulcerated and healed leaving firm, hyperpigmented, atrophic scars. Four months prior to presentation, a new eruption of lumps developed on both legs. She reported no prior local trauma, no known contact with chronic pulmonary infections, and no respiratory or constitutional symptoms.\n\nOn physical examination, vital signs were normal. General physical examination was unremarkable aside from obesity. Examination of the lower extremities revealed pronounced subcutaneous atrophy resulting in asymmetrical leg contour, without functional movement limitation. Dilated varicose veins were noted in the popliteal fossae. Dermatological examination revealed erythematous-to-violaceous, deep-seated nodules and macules, as well as indurated hyperpigmented plaques confined to the distal third of both lower legs. Several lesions exhibited superficial ulcerations overlying areas of deep dermal-subcutaneous atrophy, covered with crusts and fine scales.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Connective Tissue Panniculitis (Morphea Profunda / Lupus Panniculitis)",
+      "rule_out_reason": "Considered due to the 10-year chronicity, prominent subcutaneous fat atrophy causing lower limb asymmetry, and violaceous plaques, but excluded by histopathology lacking collagen sclerosis or mucin deposition and negative direct immunofluorescence.",
+      "quote": "There were no thickened collagen bundles, mucin deposition, and hyalinization. Direct immunofluorescence on skin lesion reveals no deposit of immunoglobulin or complement."
+    },
+    {
+      "candidate": "Primary Nodular Vasculitis / Non-Infectious Panniculitis",
+      "rule_out_reason": "Considered in a young female with chronic lobular panniculitis and lower extremity ulcers, but ruled out by the absence of vasculitis and the presence of caseating granulomas.",
+      "quote": "Histopathological examination showed lobular panniculitis (Figure 2A) without vasculitis and granulomatous inflammation (Figure 2B) which consisted of caseous necrosis (red circle), epithelioid cells, and multinucleated giant cells (red arrow)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Erythema Induratum of Bazin (Tuberculid Panniculitis)",
+      "rule_out_reason": "Confirmed by granulomatous lobular panniculitis with caseous necrosis, strongly positive tuberculin skin test (20 mm induration), detection of Mycobacterium tuberculosis DNA on skin biopsy by GeneXpert MTB/RIF, and positive 99mTc-ethambutol scintigraphy, with complete clinical remission following fixed-dose combination anti-tuberculosis therapy.",
+      "quote": "Tuberculin skin test (TST) was positive with a 20-mm induration after 48 hours. Polymerase chain reaction (PCR) examination using GeneXpert MTB/RIF (Cepheid, Sunnyvale, CA, USA) on specimen obtained from skin biopsy was positive for deoxyribonucleic acid (DNA) of MTB. Nuclear 99mTc-ethambutol scintigraphy was positive for tuberculosis infection in the one-third distal portion of the left lower leg (Figure 3). Based on those results, the diagnosis of EIB was established."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. Biopsy histopathology, PCR, and scintigraphy held until diagnostic reasoning."
+}

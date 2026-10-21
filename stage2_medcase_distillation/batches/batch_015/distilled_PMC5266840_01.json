@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5266840_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 59-year-old woman presents with a palpable breast mass present for over a decade that developed pain over the preceding 8 months. The diagnostic tension lies in differentiating an atypical postmenopausal breast carcinoma or complicated fibroadenoma from primary breast hydatid disease, an exceptionally rare site (<0.27% of hydatid cases) for Echinococcus granulosus infestation.\n2. Admission Breakpoint: Admission triage encompasses clinical history, physical examination of the breasts and axillae, routine blood tests, and initial standard mammography. It strictly concludes prior to targeted breast ultrasound showing the 'water lily' sign, staging thoracoabdominal CT, dynamic breast MRI, and surgical pathology.\n3. Differential Distinctions: Breast carcinoma is the leading consideration in older females with new focal breast pain and a palpable mass, but mammography and clinical exam reveal well-circumscribed lobulated borders without pleomorphic microcalcifications or axillary lymphadenopathy. Complex breast cysts or phyllodes tumors can appear circumscribed, but specialized imaging showing detached laminated membranes ('water lily' sign) and multivesicular daughter cysts establishes hydatid disease.",
+  "case_prompt": "A 59-year-old female presents with a palpable, long-standing mass in the periphery of her left breast that has been present for over 10 years and became painful over the past 8 months. She reports no history of breast trauma, exogenous hormone replacement therapy, or family history of breast malignancy.\n\nPhysical examination reveals a palpable, non-fixed mass on the anterior chest wall located in the periphery of the left breast with regular, smooth borders. The nipple, areola, and overlying skin are normal, and no axillary lymphadenopathy is palpable bilaterally. Routine laboratory investigations are within normal reference ranges.\n\nMammography in craniocaudal and mediolateral oblique projections demonstrates a dense mass situated peripherally at the 9 o'clock position in the left breast with a regular, lobulated contour and no identifiable microcalcifications or macrocalcifications.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Breast Carcinoma",
+      "rule_out_reason": "Considered as the primary concern for a growing, newly painful breast mass in a postmenopausal woman, but argued against by the lack of fixity to the chest wall, regular lobulated contour on mammography, absence of suspicious microcalcifications, and lack of regional axillary lymphadenopathy.",
+      "quote": "regular, lobulated contour in the left breast, with no identifiable micro- and macrocalcifications"
+    },
+    {
+      "candidate": "Fibroadenoma / Complicated Benign Breast Cyst",
+      "rule_out_reason": "Considered as a benign cause of a longstanding well-circumscribed breast mass, but typical cysts or fibroadenomas lack internal detached floating parasitic membranes and circumferential daughter cysts.",
+      "quote": "There was no history of breast trauma, hormone replacement therapy, or family history of malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Breast ultrasound revealed pathognomonic features of hydatid disease including an internal detached membrane ('water lily' sign) and circumferential anechoic daughter cysts creating a wheel-spoke pattern, confirmed on MRI and surgical excision displaying characteristic daughter cysts.",
+      "quote": "At sonography, lesion was compatible with a semisolid mass and had a smooth bordered, moderately thickened wall, with a dimension of 4.5 x 3.3 x 2.9 cm, containing internal detached membrane, giving an appearance of \"water lily.\" Lesions have contained circumferentially oriented anechoic millimetric loculations divided with septations, resembling daughter cysts."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres to Stanford MedCaseReasoning criteria. Breakpoint stops after standard screening mammography, before specialized diagnostic ultrasound, MRI, and surgical excision."
+}

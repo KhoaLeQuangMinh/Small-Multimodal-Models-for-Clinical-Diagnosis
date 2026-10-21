@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5574693_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: An elderly debilitated patient with multiple recent hospitalizations and polypharmacy presents with tense bullae atop urticarial plaques and histologic subepidermal blistering with linear basement membrane zone immunofluorescence, closely mimicking bullous pemphigoid and obscuring an atypical presentation of parasitic mite infestation.\n2. Admission Breakpoint: The breakpoint is set at the initial outpatient dermatologic presentation with tense bullae and urticarial plaques, before skin biopsies, immunofluorescence assays, and subsequent household outbreak investigation.\n3. Differential Distinctions: Drug-induced exanthem was excluded by lack of response to antibiotic withdrawal; autoimmune bullous pemphigoid was initially supported by immunofluorescence but ultimately refuted when household transmission occurred and direct mineral oil skin scrapings confirmed Sarcoptes scabiei mites, ova, and scybala.",
+  "case_prompt": "A 76-year-old man presents for outpatient evaluation of a severely pruritic cutaneous eruption that has persisted for 2 months. His past medical history is significant for an open abdominal aortic aneurysm repair 5 months prior, complicated by multiple vascular re-explorations, an infected retroperitoneal hematoma, and a right groin pseudoaneurysm managed with open debridements, a negative pressure wound therapy device, and long-term intravenous antimicrobials. One month prior to evaluation, he was transferred to a skilled nursing facility while receiving intravenous daptomycin, ertapenem, and linezolid. Within 1 week of arrival at the facility, he developed an intensely pruritic erythematous rash across his chest and abdomen. Suspecting an adverse drug eruption, daptomycin and linezolid were discontinued 2 weeks later, and topical hydrocortisone 1% cream was applied, but his pruritus and rash persisted unabated. He was recently discharged home to the care of his wife and son.\nOn physical examination, the patient has urticarial erythematous dermal plaques distributed over his chest, abdomen, proximal upper extremities, and thighs. In addition, two isolated tense bullae are noted on the right abdomen and left thigh. The face, oral mucosa, and conjunctivae are spared. Inspection of the interdigital web spaces of the hands and the remainder of his body reveals no burrows. Baseline laboratory evaluation demonstrates a normal peripheral blood eosinophil count.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Adverse Drug Reaction",
+      "rule_out_reason": "The eruption began while receiving multiple broad-spectrum antibiotics, suggesting a drug exanthem; however, discontinuation of daptomycin and linezolid failed to resolve the pruritus, and the lesions progressed to tense bullae.",
+      "quote": "A drug eruption, from his antibiotics, was suspected and daptomycin and linezolid were discontinued on March 20, 2017."
+    },
+    {
+      "candidate": "Bullous Pemphigoid",
+      "rule_out_reason": "Tense bullae on an urticarial base in an elderly individual, with subepidermal splitting and linear IgG/C3 basement membrane deposition on direct immunofluorescence, mimicked bullous pemphigoid; however, it was a mimicker (scabies surrepticius) as proven by secondary transmission to cohabitants and microscopic identification of mites.",
+      "quote": "The direct immunofluorescence microscopy revealed linear deposition of IgG and complement component C3 along the junction zone of the epidermis and the dermis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergence of pruritic papules in cohabiting household members (wife and son) and physical re-evaluation identifying classic interdigital finger burrows containing Sarcoptes scabiei mites, eggs, and scybala on mineral oil skin scraping.",
+      "quote": "A mineral oil preparation of a skin scraping from the web space burrows demonstrated not only mites, but also ova and scybala confirming the diagnosis of scabies infestation."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly stops at the initial clinical dermatologic evaluation, avoiding all mentions of scabies, mites, histology, or immunofluorescence."
+}

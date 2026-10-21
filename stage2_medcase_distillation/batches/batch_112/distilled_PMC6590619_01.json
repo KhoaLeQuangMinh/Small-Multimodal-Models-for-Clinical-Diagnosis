@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6590619_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: Clustered presentations of febrile illness in six pediatric and adult members of two related refugee families residing in the same apartment building in Texas, 6 to 10.5 months after emigrating from northern Afghanistan. The clinical challenge involves determining whether the cases represent locally acquired mosquito-borne transmission in Texas, common-source arboviral/vector exposure, or late relapses of dormant hypnozoites from an endemic country without previous primaquine eradication.\n2. Admission Breakpoint: Emergency department triage and clinical history of sequential febrile illness among family members emigrating from Afghanistan, prior to microscopic peripheral blood smear confirmation and speciation.\n3. Differential Distinctions: Arboviral fevers (e.g., West Nile virus, Dengue) cause acute fever and headache with local mosquito exposure, but lack periodic paroxysms and are negative on blood smear; autochthonous mosquito-borne Plasmodium falciparum transmission in Texas is exceedingly rare and inconsistent with origin from a temperate region where vivax predominates; delayed relapse of Plasmodium vivax is characterized by dormant hypnozoite activation months after travel in patients never treated with primaquine.",
+  "case_prompt": "A 7-year-old previously healthy girl presented to a pediatric hospital in Houston, Texas, in the spring of 2017 with acute febrile illness. Four days later (day 5), her twin brother presented with an identical febrile illness. Subsequently, over the next two months (days 9, 15, 41, and 55), four additional relatives residing in two adjacent apartment units on the same floor of their residential building sought medical care for similar febrile episodes. Both families had emigrated from the temperate, high-altitude Jowzjan province in northern Afghanistan 6 to 10.5 months prior to symptom onset. Both families reported recent mosquito exposure in Houston. The parents reported that the children had previously been treated in Afghanistan for febrile illnesses with presumed chloroquine, though exact dates were unavailable, and none had ever received terminal hypnozoite eradication therapy with primaquine.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Arboviral infection (e.g., West Nile virus, Dengue)",
+      "rule_out_reason": "Recent mosquito exposure in Houston, Texas, raised concern for locally acquired mosquito-borne viral infections, but symptoms followed a relapse timeline months after travel and were confirmed by intraerythrocytic parasite detection.",
+      "quote": "Both families reported exposure to mosquitoes in Houston."
+    },
+    {
+      "candidate": "Locally acquired / autochthonous Plasmodium falciparum malaria",
+      "rule_out_reason": "Emergence of febrile illnesses in multiple family members in Texas raised suspicion of local vector transmission, but origin from northern Afghanistan and delayed presentation 6 to 10.5 months post-resettlement reflected delayed relapses of dormant hypnozoites rather than local transmission.",
+      "quote": "Both families emigrated from the temperate Jowzjan province in Northern Afghanistan, a country where vivax malaria is endemic (70-95%), even at high altitudes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of peripheral blood smears confirmed intraerythrocytic parasites consistent with Plasmodium vivax malaria across all six related family members, successfully treated initially with atovaquone/proguanil followed by primaquine hypnozoite eradication.",
+      "quote": "Diagnoses were made via microscopic examination of blood smears in our institution's laboratories."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission presentation detailing the clustered presentation and travel history. Zero mention of malaria, vivax, or blood smear in prompt. Verbatim quotes corroborate reasoning."
+}

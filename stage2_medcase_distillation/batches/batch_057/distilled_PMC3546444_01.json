@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3546444_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old severely malnourished man presents with extensive bilateral perianal ulcerations, purulent discharge, generalized abdominal tenderness, and high fevers following a recurrent perianal abscess. In young patients, indolent perianal ulceration and abdominal symptoms strongly mimic refractory Crohn's disease, but here represent disseminated tuberculosis with synchronous pulmonary, peritoneal, and perianal disease.\n2. Admission Breakpoint: The admission assessment includes constitutional features (fever 38.5°C, pulse 110, severe cachexia with weight 40 kg), physical examination of large bilateral perianal ulcers, anoscopy and rectosigmoidoscopy showing normal rectal mucosa, baseline labs (anemia, leukocytosis, elevated ESR/CRP), negative HIV serology, and plain radiography revealing apical lung cavitations, ending strictly prior to abdominal/pelvic CT, diagnostic laparoscopy, and histological biopsies.\n3. Differential Distinctions: Crohn's disease is ruled out by normal rectal mucosa and caseating rather than non-caseating granulomas; ordinary cryptoglandular abscess/fistula fails to explain systemic wasting, peritoneal involvement, and cavitary pulmonary infiltrates; and biopsy showing caseating Langhans granulomas with positive swab culture confirms Mycobacterium tuberculosis.",
+  "case_prompt": "A 37-year-old man presents with a 4-month history of progressive perianal ulceration and purulent discharge. One year previously, he underwent surgical drainage of a perianal abscess that recurred two months after initial healing. On physical examination, he appears severely wasted and dehydrated, weighing 40 kg. Vital signs include body temperature of 38.5°C, blood pressure of 90/60 mmHg, and heart rate of 110 beats/min. Abdominal palpation elicits generalized tenderness without rigid guarding; peripheral lymphadenopathy is absent. Perianal inspection reveals large, bilateral ulcerated lesions discharging pus. Digital rectal examination discloses mild sphincter hypotonia without palpable masses. Anoscopy and rigid rectosigmoidoscopy demonstrate normal distal colonic and rectal mucosa without mucosal friability or fistulous openings. Triage laboratory testing reveals a hemoglobin of 9.3 g/dL, white blood cell count of 12,300/μL, erythrocyte sedimentation rate (ESR) of 50 mm/h, elevated C-reactive protein, and a negative HIV antibody screen. A plain radiograph of the chest and abdomen visualizes bilateral non-homogenous infiltrates with cavitary lesions in the right lung.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Anorectal Crohn's Disease",
+      "rule_out_reason": "Crohn's disease was a leading initial consideration for recurrent perianal ulcerations and systemic wasting, but endoscopic visualization revealed completely normal rectal and sigmoid mucosa, and subsequent histology demonstrated caseating necrosis rather than non-caseating granulomas.",
+      "quote": "Anoscopy was normal and no fistulas were noted. The rectosigmoidoscopy showed no abnormalities as well."
+    },
+    {
+      "candidate": "Recurrent Cryptoglandular Abscess / Complex Fistula-in-Ano",
+      "rule_out_reason": "Simple bacterial perianal disease was suspected based on prior abscess drainage, but cannot account for the accompanying abdominal tenderness, massive cachexia, and upper lobe pulmonary cavitary lesions.",
+      "quote": "According to his medical history, he was treated for a perianal abscess which was incised and drained one year ago, yet, despite the initial healing, it recurred two months later... The abdominal X-ray revealed bilateral nonhomogenous infiltrations and cavitary lesions in the right lung"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Perianal Tuberculosis with Pulmonary and Peritoneal Involvement",
+      "rule_out_reason": "Histological examination of peritoneal and perianal biopsies demonstrated epithelioid granulomas with Langhans giant cells and caseous necrosis, and perianal culture confirmed Mycobacterium tuberculosis.",
+      "quote": "Histological examination of all biopsies showed epithelioid granulomas and Langhans' type multinucleated giant cells, with the presence of caseous necrosis (Figure 4). Culture swabs from the perianal lesion confirmed mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt ends after baseline endoscopy and plain radiograph prior to laparoscopy, tissue biopsies, and mycobacterial cultures. Audit flags verified as NONE."
+}

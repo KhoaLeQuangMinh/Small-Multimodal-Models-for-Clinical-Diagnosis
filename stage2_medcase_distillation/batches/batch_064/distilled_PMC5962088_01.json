@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5962088_01",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 50-year-old unvaccinated woman in São Paulo, Brazil, presents acutely with fever, rash, headache, arthralgia, and prostration. In an adult lacking immunization against classic viral exanthems, this syndrome strongly mimics rubella or measles, as well as parvovirus B19 and endemic arboviruses. The clinical dilemma centers on differentiating vaccine-preventable exanthematous viral diseases from emerging arboviral infections presenting with near-identical symptoms.\n2. Admission Breakpoint: The admission clinical presentation concludes at the initial emergency room evaluation with acute fever, rash, headache, arthralgia, and documented lack of vaccination history, immediately prior to send-out serology (measles and rubella IgM/IgG), viral cell culture isolation, and molecular RT-qPCR panels.\n3. Differential Distinctions: Rubella and measles were initial primary suspects due to the patient's unvaccinated status, but serum IgM/IgG antibodies and RT-qPCR from urine and culture isolates were negative for both viruses. Parvovirus B19 and HHV-6 were considered in the workup of acute viral exanthem with arthralgias but tested negative on RT-qPCR. Reverse transcription real-time PCR of urine and cytopathic viral isolation in SIRC/Vero cells proved Zika virus infection.",
+  "case_prompt": "A 50-year-old woman residing in São Paulo, Brazil, presented to the emergency department with a 2-day history of acute fever, headache, generalized cutaneous rash, arthralgia, and marked prostration. Her past medical history was notable for an absence of prior vaccination against measles or rubella.\n\nOn physical examination at presentation, the patient was febrile with an oral temperature of 38.0°C (100.4°F). Physical examination revealed an acute exanthematous skin rash, generalized joint tenderness consistent with arthralgia, and systemic prostration without focal neurological deficits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Rubella virus infection",
+      "rule_out_reason": "Suspected due to acute fever, maculopapular rash, arthralgia, and unvaccinated status, but specific serum IgM and IgG were negative and urine RT-qPCR was negative.",
+      "quote": "As she was not vaccinated against rubella/measles virus (RV/MV), serum immunoglobulin IgM and IgG antibodies raised to these viruses and were found to be negative... The urine sample and infected culture cells were negative for MV and RV."
+    },
+    {
+      "candidate": "Measles virus infection",
+      "rule_out_reason": "Considered due to the acute rash, fever, and lack of immunization, but excluded by negative serum antibodies and negative RT-qPCR.",
+      "quote": "As she was not vaccinated against rubella/measles virus (RV/MV), serum immunoglobulin IgM and IgG antibodies raised to these viruses and were found to be negative... The urine sample and infected culture cells were negative for MV and RV."
+    },
+    {
+      "candidate": "Parvovirus B19 and Human herpesvirus 6 (HHV-6)",
+      "rule_out_reason": "Investigated as causes of acute febrile illness with rash and arthropathy, but molecular testing by RT-qPCR was negative.",
+      "quote": "After this result, parvovirus B19, herpes virus 6 and Zika virus were investigated by RT-qPCR... negative for other viruses tested."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Urine RT-qPCR was positive for Zika virus RNA, and viral isolation from urine in SIRC and Vero cell cultures demonstrated cytopathic effect and viable, replicating Zika virus.",
+      "quote": "The urine sample and the cell culture isolate were positive for Zika virus. Replication of ZIKV obtained from urine was then compared by performing kinetic measurements of virus RNA (Figure 1) by Real Time PCR for ZIKV, and negative for other viruses tested."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC5962088_01. The case prompt stops cleanly before viral serologies, cell culture, and RT-qPCR. Zero pathogen disclosure in the case prompt. Candidates and diagnostic pivot cite verbatim text from the case report."
+}

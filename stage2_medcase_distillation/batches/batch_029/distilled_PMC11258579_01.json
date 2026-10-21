@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11258579_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 15-year-old female previously treated for borderline tuberculoid disease presented with isolated neuropathic pain and a cystic-solid subcutaneous nodule along the ulnar nerve without cutaneous hypopigmented patches or fever, mimicking a benign peripheral nerve sheath tumor or tuberculous nerve abscess, but representing segmental necrotizing granulomatous neuritis due to relapsed leprosy.\n2. Admission Breakpoint: Stops after clinical history, physical examination demonstrating the non-tender ulnar nerve nodule without rash, ultrasonography showing a hypoechoic avascular lesion with debris along the ulnar nerve, and MRI revealing a rim-enhancing T2/STIR-hyperintense ulnar nerve mass, before fine-needle cytopathological examination or initiation of re-treatment.\n3. Differential Distinctions: Peripheral nerve sheath tumors (schwannomas or neurofibromas) are the most common intrinsic peripheral nerve neoplasms and show contrast enhancement on MRI, but cytopathology shows Antoni A/B regions or spindle cells rather than necrotizing granulomas. Tuberculous peripheral nerve abscesses also cause necrotizing granulomas with negative AFB, but lack response to leprosy-specific regimens or a documented history of borderline tuberculoid disease. Segmental necrotizing granulomatous neuritis is a rare neuropathic complication of pauci- or multi-bacillary leprosy that regresses with multi-drug therapy and corticosteroids.",
+  "case_prompt": "A 15-year-old female who had completed a multi-drug antimicrobial regimen 2 years previously for a chronic dermatoneurologic condition presented to the outpatient department complaining of occasional pain and tingling sensations along the inner aspect of her right arm and forearm lasting for 6 months. These symptoms were not accompanied by fever, chills, or constitutional manifestations. Physical examination revealed a soft, nodular subcutaneous swelling measuring 1 x 2 cm on the inner aspect of the distal right arm along the course of the ulnar nerve. Detailed dermatologic inspection revealed no hypopigmented macules, erythematous patches, or cutaneous lesions. Ultrasonography of the right distal upper extremity demonstrated a well-defined, irregularly shaped hypoechoic lesion containing internal debris adjacent to the ulnar nerve measuring approximately 1.0 x 1.2 x 3.1 cm, with no demonstrable internal flow on color Doppler interrogation. Magnetic resonance imaging (MRI) of the right arm demonstrated an irregular, well-circumscribed lesion within the subcutaneous plane of the medial distal arm in continuity with the ulnar nerve, measuring approximately 1.4 x 1.8 x 3.5 cm; the lesion was isointense on T1-weighted sequences, hyperintense on T2/STIR imaging, and exhibited peripheral rim enhancement following gadolinium administration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peripheral nerve sheath tumor (Schwannoma / Neurofibroma)",
+      "rule_out_reason": "Considered as the primary differential for a well-circumscribed, T2-hyperintense, rim-enhancing mass arising from the ulnar nerve with paresthesias. Ruled out by cytopathological examination demonstrating epithelioid granulomatous inflammation and necrotic debris rather than neoplastic Schwann cells.",
+      "quote": "cytopathological examination of the swelling, which showed a collection of epithelioid cells, lymphocytes, plasma cells, and cyst macrophages with a necrotic background (Figures 4A, B)."
+    },
+    {
+      "candidate": "Tuberculous peripheral neuritis / Tuberculous abscess",
+      "rule_out_reason": "Considered given the necrotic granulomatous background on aspirate in a tuberculosis-endemic region. Ruled out by negative acid-fast staining, absence of systemic or pulmonary foci, and clinical cure following leprosy re-treatment with dapsone, rifampin, and corticosteroids.",
+      "quote": "It was negative for acid-fast bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of necrotizing granulomatous neuritis involving the ulnar nerve representing relapse of leprosy, confirmed by cytopathology showing epithelioid and lymphoid collections in a necrotic background and definitive clinical response with complete subsidence of the mass following multi-drug therapy and corticosteroids.",
+      "quote": "The patient was considered relapsed from leprosy, and multi-drug therapy consisting of rifampin (600 mg/month) and dapsone (100 mg daily) for 6 months along with prednisolone 0.5 mg/kg was started. Corticosteroids were gradually tapered and discontinued after 3 months. The patient was followed up monthly for 6 months until the completion of multi-drug therapy. The swelling reduced significantly and ultimately subsided"
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero disease names in the case prompt. Breakpoint stops right after MRI before cytopathology. Direct verbatim quotes validated."
+}

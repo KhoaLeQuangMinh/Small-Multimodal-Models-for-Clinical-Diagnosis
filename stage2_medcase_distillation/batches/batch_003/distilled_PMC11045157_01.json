@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11045157_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old male presents with subacute constitutional and respiratory symptoms alongside acute limb ischemia and rapidly progressive dry gangrene of the left foot. The central diagnostic challenge is determining whether the arterial thrombosis is driven by primary vascular pathology (e.g., thromboangiitis obliterans, systemic vasculitis, or thrombophilia) versus severe systemic hypercoagulability secondary to a deep subacute infectious process presenting with hydropneumothorax.\n2. Admission Breakpoint: Triage assessment ends after admission physical exam, bedside labs demonstrating microcytic anemia with elevated D-dimer, and chest imaging confirming a right hydropneumothorax with Doppler ultrasound demonstrating left tibial arterial occlusion, immediately prior to intercostal tube drainage for pleural fluid analysis and surgical biopsy.\n3. Differential Distinctions: Systemic necrotizing vasculitis and antiphospholipid syndrome are ruled out by normal/negative autoimmune serologies (p-ANCA, c-ANCA, ANA, APLA antibodies). The hydropneumothorax points directly toward an invasive chronic pulmonary infection that triggered extensive secondary thromboinflammation.",
+  "case_prompt": "A 26-year-old male non-smoker presented to the emergency department with a 2-month history of cough productive of whitish mucoid sputum without hemoptysis, shortness of breath, right-sided pleuritic chest pain, fever, and progressive anorexia. Five days prior to admission, he developed painful swelling of the left lower extremity, followed 2 days later by blackish discoloration of the left toes. He reported a history of a chronic respiratory illness diagnosed 6 months previously, for which he received a 3-month course of antimicrobial therapy before being lost to follow-up. He had no history of limb trauma or frostbite, and no Raynaud's phenomenon, cutaneous rash, arthralgias, or photosensitivity.\n\nOn physical examination, the patient was febrile with a body temperature of 102.0°F (38.9°C), heart rate 116 beats per minute, blood pressure 94/70 mmHg, respiratory rate 26 breaths per minute, and oxygen saturation 90% while breathing ambient air. Pulmonary examination revealed significantly decreased breath sounds over the right hemithorax with a positive succussion splash. Examination of the left lower extremity demonstrated cold skin, absent dorsalis pedis and tibial pulses, and blackish necrotic discoloration involving the digits and dorsum of the foot that was actively spreading toward the mid-calf. The left ankle-brachial index was reduced at <0.8.\n\nInitial triage laboratory studies revealed a hemoglobin level of 7.6 g/dL with microcytic indices, total leukocyte count of 8,000/μL, platelet count of 200,000/μL, prothrombin time of 10 seconds (INR 0.5), and an elevated D-dimer. Plain chest radiography demonstrated a large right-sided hydropneumothorax with fluid level. Bedside arterial Doppler ultrasound of the left lower limb showed markedly diminished flow in the anterior tibial, posterior tibial, and dorsalis pedis arteries with patent proximal vessels.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "ANCA-Associated Systemic Vasculitis",
+      "rule_out_reason": "Considered due to the combination of subacute constitutional/pulmonary symptoms, microcytic anemia, and rapidly progressive peripheral digital gangrene in a young patient. Ruled out by absent cutaneous rashes or arthralgias and negative ANCA titers.",
+      "quote": "We dug further for possible etiologies in relation to arterial occlusion, which yielded a negative ANCA antibodies: PANCA 5.16 (<10), CANCA 8.22 (<10)"
+    },
+    {
+      "candidate": "Antiphospholipid Syndrome (APS) / Autoimmune Thrombophilia",
+      "rule_out_reason": "Considered due to spontaneous peripheral arterial thrombosis and elevated D-dimer. Ruled out by normal autoimmune serologies and negative antiphospholipid panel.",
+      "quote": "and APLA-related antibodies: 11 U/ml (<15 U/ml) by enzyme immunoassay. Antinuclear antibodies was found to be negative. The rheumatoid (RA) factor and anti-cyclic citrullinated peptide antibody were found to be negative."
+    },
+    {
+      "candidate": "Traumatic Gangrene / Cold Injury",
+      "rule_out_reason": "Considered in young men presenting with acute peripheral digital ischemia, but excluded by careful history taking and physical findings.",
+      "quote": "There was no history of trauma in this patient. The discolouration of the limb was not due to trauma related contusion. There was no change in discoloration on exposure to cold"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred when emergent right-sided tube thoracostomy yielded purulent fluid, which upon smear microscopy and molecular RT-PCR testing established the infectious etiology driving systemic hypercoagulability and subsequent gangrene.",
+      "quote": "An intercostal tube drainage was done on the right side. The pus so obtained and sputum was evaluated by smear microscopy, and reverse transcriptase polymerase chain reaction (RT-PCR) detected the presence of Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation captures the profound clinical tension between pulmonary hydropneumothorax and acute lower extremity dry gangrene without revealing microbiological identifiers or past TB-specific regimens."
+}

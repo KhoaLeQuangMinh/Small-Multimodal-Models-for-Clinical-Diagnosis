@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11804950_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 32-year-old woman was initially diagnosed with idiopathic chronic eosinophilic pneumonia (CEP) based on striking bronchoalveolar lavage eosinophilia (>80%) and improved on initial corticosteroids. However, during steroid tapering and subsequent dose escalation, her pulmonary infiltrates paradoxical worsened and formed multiple expanding cavities. Corticosteroids masked peripheral eosinophilia while failing to treat the underlying helminthic infection.\n2. Admission Breakpoint: The breakpoint occurs prior to repeat bronchoscopy with microscopic demonstration of trematode eggs in lavage fluid ('Although TBLB showed nonspecific findings, Paragonimus ova was found in the BAL fluid...').\n3. Differential Distinctions: Idiopathic chronic eosinophilic pneumonia (ruled out by the atypical appearance of pulmonary cavitation during corticosteroid treatment and recovery of helminthic ova), pulmonary tuberculosis (ruled out by trematode egg recovery rather than acid-fast bacilli), and opportunistic cavitary fungal pneumonia (ruled out by lack of fungal elements and curative response to praziquantel).",
+  "case_prompt": "A 32-year-old Chinese woman who had emigrated to Japan nine years earlier presented for pulmonary re-evaluation due to recurrent cough and blood-streaked sputum in the setting of cavitary lung lesions refractory to corticosteroid therapy. Twelve months prior, she developed an insidious dry cough. Eight months prior, her symptoms worsened with bloody sputum, and chest radiography demonstrated bilateral infiltrative opacities. Diagnostic bronchoscopy at an outside institution revealed marked bronchoalveolar lavage (BAL) eosinophilia exceeding 80%, leading to a presumptive diagnosis of chronic eosinophilic pneumonia. She was treated with intravenous methylprednisolone followed by an oral prednisolone taper, which produced temporary radiographic clearing.\n\nHowever, five months before presentation, while tapering oral prednisolone to 10 mg daily, her bilateral pulmonary infiltrates worsened and multiple new pulmonary cavities appeared, prompting an escalation of prednisolone to 20 mg daily. Despite ongoing immunosuppressive therapy, chest imaging one month before presentation showed enlargement and progression of the left lung cavities, accompanied by recurrent respiratory symptoms. Epidemiological history revealed that she had a habitual dietary custom of consuming freshwater crabs while living in China.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Respiratory and systemic physical examinations were unremarkable. Baseline laboratory testing revealed a normal total white blood cell count of 7,270/µL, a normal peripheral eosinophil count of 370/µL (suppressed by concurrent prednisolone therapy), and a normal C-reactive protein of 0.13 mg/dL. Chest radiography confirmed persistent bilateral infiltrative opacities with prominent cavitary lesions in the left lung. Magnetic resonance imaging (MRI) of the brain was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Chronic Eosinophilic Pneumonia (CEP)",
+      "rule_out_reason": "Initially diagnosed based on striking BAL eosinophilia (>80%) and early steroid responsiveness; however, the emergence and progression of thick-walled pulmonary cavities while on moderate-to-high dose corticosteroids is exceptionally rare in CEP and pointed to an active invasive helminthic infection.",
+      "quote": "However, 5 months before presentation, the bilateral infiltrative shadow worsened and pulmonary cavities appeared at 10 mg/day of oral prednisolone therapy"
+    },
+    {
+      "candidate": "Cavitary Pulmonary Tuberculosis",
+      "rule_out_reason": "Cough, hemoptysis, and bilateral lung cavities worsening under corticosteroid-induced immunosuppression strongly raised suspicion for reactivated mycobacterial infection, but repeat bronchoscopic sampling demonstrated trematode ova rather than acid-fast bacilli.",
+      "quote": "One month before presentation, the left lung cavities worsened at 20 mg/day of oral prednisolone therapy [Figure 1d]; thus, transbronchial lung biopsy (TBLB) and BAL were repeated."
+    },
+    {
+      "candidate": "Angioinvasive / Cavitary Pulmonary Aspergillosis",
+      "rule_out_reason": "Prolonged corticosteroid therapy predisposes to opportunistic fungal pneumonia with cavitation and hemoptysis, but transbronchial lung biopsy showed non-specific changes and microbiological lavage confirmed parasitic trematode elements.",
+      "quote": "Although TBLB showed nonspecific findings, Paragonimus ova was found in the BAL fluid"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of repeat bronchoalveolar lavage fluid identified characteristic operculated Paragonimus ova, confirming foodborne pulmonary trematodiasis acquired via ingestion of raw/undercooked freshwater crabs, with complete clinical and radiographic resolution following praziquantel therapy.",
+      "quote": "Although TBLB showed nonspecific findings, Paragonimus ova was found in the BAL fluid [Figure 3]."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of pulmonary foodborne trematodiasis (paragonimiasis) masquerading as chronic eosinophilic pneumonia and deteriorating into cavitary lung disease under corticosteroid therapy. Clean admission breakpoint with zero mention of ova, flukes, or Paragonimus."
+}

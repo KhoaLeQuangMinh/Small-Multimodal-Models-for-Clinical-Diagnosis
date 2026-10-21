@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3422279_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient is a hemodialysis-dependent diabetic immigrant presenting with episodic rigors and fevers occurring strictly during dialysis sessions, accompanied by a 4 kg weight loss. The initial clinical impression in an end-stage renal disease (ESRD) patient is overwhelmingly vascular access-related bacteremia or a pyrogenic dialysis reaction. Crucially, baseline chest radiography is completely normal (showing no parenchymal infiltrates, cavities, or calcifications) and blood cultures remain sterile. The core dilemma is distinguishing between persistent, benign latent infection, occult hemodialysis sepsis, or extrapulmonary progression to active tuberculosis in an immunosuppressed uremic host.\n\n2. Admission Breakpoint: The admission breakpoint occurs immediately following the initial triage physical examination, negative blood cultures, and unremarkable plain chest radiography during the January 2011 hemodialysis evaluation, strictly prior to specialized HBHA/ESAT-6 immunologic profiling, PET-CT imaging, and lymph node excisional biopsy.\n\n3. Differential Distinctions:\n- Hemodialysis Access-Related Bacteremia / Pyrogenic Reaction: Chills and fever occurring during hemodialysis typically signify endovascular access infection; ruled out by repeatedly sterile blood cultures and insidious weight loss.\n- Persistent Latent Infection without Disease Progression: Patient had known baseline positive latent testing from 2009; however, loss of latency antigen (HBHA) response, high effector response (rESAT-6), and hypermetabolic cervical/mediastinal adenopathy proved transition to active extrapulmonary disease.\n- Lymphoma / Occult Malignancy: Constitutional B-symptoms and avid cervical/mediastinal lymphadenopathy on PET mimic lymphoma; ruled out by caseating granulomatous histopathology and positive mycobacterial culture.",
+  "case_prompt": "A 46-year-old man originating from Morocco, with a medical history of end-stage renal disease secondary to type 2 diabetes mellitus on maintenance hemodialysis since 2007, presents for evaluation in January 2011 due to recurrent rigors and fevers occurring during his dialysis sessions. He denies any known history of prior exposure to chronic communicable respiratory illnesses.\n\nPhysical examination reveals a chronically ill-appearing man with documented involuntary weight loss of 4 kg over the preceding weeks, but is otherwise unremarkable with no focal organomegaly or peripheral stigmata of infective endocarditis. Serial blood cultures collected from the dialysis circuit demonstrate no bacterial growth. Plain chest radiography reveals clear lung fields without infiltrates, cavitary lesions, or calcifications.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hemodialysis Access-Related Bloodstream Infection",
+      "rule_out_reason": "Considered because the patient developed recurrent chills and fevers occurring specifically during hemodialysis sessions. Excluded when serial blood cultures remained sterile and the patient exhibited progressive constitutional weight loss.",
+      "quote": "During a January 2011 HD session, the patient presented with chills and fever, but no abnormalities were noted upon physical examination, except a weight loss of 4 Kg over the previous weeks. Blood cultures remained negative."
+    },
+    {
+      "candidate": "Persistent Latent Tuberculosis Infection without Active Disease",
+      "rule_out_reason": "Considered given his known history of latent positivity on prior screening assays two years earlier without respiratory symptoms and a normal chest radiograph. Excluded when the functional HBHA/rESAT-6 ratio plummeted, signaling loss of latency control, and PET scanning demonstrated active cervical and mediastinal lymphadenopathy.",
+      "quote": "These results, especially the high IFN-gamma response to the latency antigen HBHA, indicated that the patient was latently infected with Mtb."
+    },
+    {
+      "candidate": "Lymphoma / Occult Malignancy",
+      "rule_out_reason": "Considered in a chronically ill hemodialysis patient presenting with unexplained B-symptoms (fever, weight loss) and intense metabolic uptake in cervical and mediastinal lymph nodes. Excluded by histological examination demonstrating necrotizing granulomas and culture growth of Mycobacterium tuberculosis.",
+      "quote": "A jugular lymph node was surgically removed and revealed the presence of a granuloma with caseous necrosis. Anti-tuberculosis treatment was immediately initiated (Nicotibine, Rifadine, Tebrazid, Myambutol) and resulted in progressive clinical improvement. Thirty-two days later, the lymph node culture was positive for drug-sensitive Mtb."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was triggered by immunologic shift (conversion of HBHA-IGRA to negative with surging rESAT-6), prompting a PET scan that identified metabolically active cervical and mediastinal lymph nodes; surgical excision of a jugular node definitively demonstrated caseating granulomas and yielded drug-sensitive Mycobacterium tuberculosis.",
+      "quote": "A jugular lymph node was surgically removed and revealed the presence of a granuloma with caseous necrosis. Anti-tuberculosis treatment was immediately initiated (Nicotibine, Rifadine, Tebrazid, Myambutol) and resulted in progressive clinical improvement. Thirty-two days later, the lymph node culture was positive for drug-sensitive Mtb."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Presentation captures hemodialysis-associated fevers, weight loss, and clear chest radiograph prior to any specialized immunologic assays or biopsy. All candidate differentials and diagnostic pivot are supported by verbatim article quotes."
+}

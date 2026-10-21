@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5932522_05",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 38-year-old rural worker and smoker presents with gingival bleeding upon tooth brushing, a ubiquitous complaint usually attributed to routine plaque-induced marginal gingivitis. The critical diagnostic challenge lies in recognizing that persistence despite basic periodontal treatment signals a serious underlying pathology rather than common dental disease.\n2. Admission Breakpoint: Admission evaluation encompasses the initial presentation and the failure to resolve following basic periodontal therapy, concluding immediately before the incisional biopsy.\n3. Differential Distinctions: Plaque-induced gingivitis and periodontitis respond rapidly to scaling and hygiene debridement, whereas paracoccidioidomycosis causes refractory granulomatous gingivitis with fine mulberry-like bleeding puncta. Gingival squamous cell carcinoma or leukemia causes progressive gingival infiltration, but histology reveals malignant cytology rather than fungal granulomas.",
+  "case_prompt": "A 38-year-old male rural worker and smoker with no known comorbidities presents to the clinic complaining of gingival bleeding when brushing his teeth. A persistent gingival lesion is observed, which fails to resolve following basic periodontal treatment.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Plaque-Induced Chronic Marginal Gingivitis / Periodontitis",
+      "rule_out_reason": "Bleeding upon toothbrushing in a smoker initially suggested standard plaque-induced periodontal disease; however, the gingival lesion failed to resolve after basic periodontal therapy.",
+      "quote": "Biopsy was performed since the lesion did not disappear after basic periodontal treatment."
+    },
+    {
+      "candidate": "Gingival Squamous Cell Carcinoma / Hematologic Neoplasm",
+      "rule_out_reason": "Refractory bleeding gingival ulceration in a tobacco smoker raises concern for primary gingival malignancy, but pathologic examination established a fungal infectious etiology.",
+      "quote": "Pathologic examination revealed PMC; thus, antifungal therapy with Bactrim was initiated."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Lack of response to conservative periodontal treatment necessitated an incisional biopsy, which revealed characteristic fungal pathology and prompted targeted therapy with trimethoprim-sulfamethoxazole.",
+      "quote": "Biopsy was performed since the lesion did not disappear after basic periodontal treatment. Pathologic examination revealed PMC; thus, antifungal therapy with Bactrim was initiated."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage breakpoint preserves the clinical course up to refractory response to initial periodontal therapy before biopsy. Pathogen spoilers removed from case prompt. All quotes verified verbatim."
+}

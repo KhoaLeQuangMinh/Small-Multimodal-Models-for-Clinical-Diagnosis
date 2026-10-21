@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7569537_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old diabetic farmer presents with bilateral miliary pulmonary nodules, strongly positive tuberculin skin testing, and perivascular Langhans granulomas who experiences paradoxical respiratory worsening and development of uveitis while receiving anti-tubercular therapy, unmasking an extraordinary overlap of miliary tuberculosis and concurrent miliary sarcoidosis.\n2. Admission Breakpoint: Admission presentation stops after initial clinical history, occupational review, physical examination demonstrating bilateral fine crepitations, baseline laboratory panels (CBC, renal function, serum calcium, urinalysis, ACE levels), and plain chest radiography revealing miliary nodules, strictly before high-resolution chest CT, tuberculin skin testing, bronchoscopy, BAL molecular analysis, and transbronchial lung biopsy.\n3. Differential Distinctions: Hypersensitivity pneumonitis and occupational dust diseases are ruled out by absence of poultry or industrial exposures; isolated sarcoidosis is ruled out by strongly positive tuberculin skin testing (18 mm) and necrotic granulomas; clinical deterioration on ATT followed by rapid steroid responsiveness and uveitis confirmed concurrent sarcoidosis alongside miliary tuberculosis.",
+  "case_prompt": "A 55-year-old male with moderately controlled type 2 diabetes mellitus presents with exertional breathlessness, cough, right-sided shoulder pain, and unintentional weight loss of 1 month's duration. He reports no anorexia, fevers, or sputum expectoration. He is a farmer by occupation and has no history of exposure to poultry, avian antigens, or occupational dusts and industrial chemicals.\n\nOn physical examination, respiratory auscultation reveals fine bilateral crepitations across the lung bases. There is no digital clubbing or peripheral lymphadenopathy. Baseline laboratory evaluation demonstrates a normal hemogram, normal renal function tests, normal serum calcium, and normal urine microscopy. Serum angiotensin-converting enzyme (ACE) level is within normal limits. Baseline HIV antibody screening is negative. Plain chest radiography demonstrates diffuse bilateral miliary nodules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hypersensitivity Pneumonitis / Occupational Pneumoconiosis",
+      "rule_out_reason": "Ruled out by detailed occupational history revealing no exposure to avian antigens, poultry, or industrial dusts and chemicals.",
+      "quote": "He was a farmer by occupation and did not have exposure to poultry or occupational dusts and chemicals."
+    },
+    {
+      "candidate": "Isolated Pulmonary Sarcoidosis",
+      "rule_out_reason": "Considered in light of miliary nodularity and normal ACE levels, but excluded as the sole diagnosis due to strong tuberculin positivity and necrotizing granulomatous features, confirming dual pathology with tuberculosis.",
+      "quote": "Renal function tests, serum calcium, urine microscopy, ACE levels and hemogram were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Transbronchial lung biopsy showed granulomas with Langhans' giant cells and fibrinoid necrosis leading to a diagnosis of miliary tuberculosis, while subsequent paradoxical clinical worsening, development of uveitis, and complete resolution with steroids and methotrexate established concurrent miliary tuberculosis and sarcoidosis.",
+      "quote": "TBLB showed well-formed perivascular granulomas with Langhans' giant cells, occasional fibrinoid necrosis and lymphocytes rimming (Figure 6, right). A diagnosis of miliary tuberculosis was made and four-drug weight-based ATT was started."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7569537. Strict admission breakpoint enforces triage clinical picture: diabetes, breathlessness, cough, normal ACE, and miliary chest radiograph. Advanced bronchoscopy, TBLB, TST, and therapeutic trial response are appropriately placed in diagnostic reasoning."
+}

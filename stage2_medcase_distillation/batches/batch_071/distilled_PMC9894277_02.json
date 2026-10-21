@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9894277_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 34-year-old previously healthy man presents with profound, life-threatening wasting (14 kg weight loss down to 34 kg), severe pallor, and extensive unilateral upper- and mid-zone cavitary lung disease. The tension lies in distinguishing cavitary pulmonary malignancy or necrotizing bacterial lung abscess from high-burden drug-resistant tuberculosis.\n2. Admission Breakpoint: The presentation ends after initial clinical examination, basic laboratory tests (complete blood count, biochemical panel, hepatitis serology), and baseline chest radiography, immediately prior to sputum acid-fast staining, automated nucleic acid amplification, and line probe resistance assays.\n3. Differential Distinctions: Cavitary lung abscess typically stems from anaerobic aspiration or pyogenic pathogens and lacks high-level acid-fast bacillary burden. Cavitary bronchogenic malignancy is suggested by dramatic cachexia and unilateral cavitary masses, but is refuted by microbiological identification of high-burden Mycobacterium with multidrug resistance mutations.",
+  "case_prompt": "A 34-year-old man with no prior known medical co-morbidities presents to the hospital with a one-month history of progressive cough with mucoid expectoration, worsening dyspnea, and profound weight loss of 14 kilograms. On physical examination, he appears severely cachectic, weighing only 34 kilograms, with marked conjunctival pallor. Pulmonary examination reveals decreased respiratory excursion on the right hemithorax, with bronchial breath sounds audible over the right infra- and interscapular lung zones. Initial laboratory investigations demonstrate anemia with a hemoglobin level of 9 g/dL and reactive thrombocytosis; other baseline biochemical parameters are within normal limits. Serologic testing demonstrates hepatitis B surface antigen positivity. A plain chest radiograph demonstrates non-homogeneous opacification with extensive cavitary involvement throughout the right upper and mid-lung zones.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Necrotizing bacterial pneumonia / Lung abscess",
+      "rule_out_reason": "Extensive cavitary consolidation in the right upper and middle lobes accompanied by subacute cough and sputum suggested a lung abscess or necrotizing bacterial infection, but typical pyogenic features and aspiration risk factors were absent.",
+      "quote": "The chest radiograph showed non-homogenous opacity with extensive cavitary involvement of right upper and mid-zone [Figure 2a]."
+    },
+    {
+      "candidate": "Cavitary bronchogenic carcinoma / Primary pulmonary malignancy",
+      "rule_out_reason": "Extreme cachexia with a 14-kg weight loss, pallor, anemia, and large unilateral cavitary opacities raised high suspicion for cavitary lung cancer, but the patient's young age and subsequent high-titer microbiological positivity refuted neoplasm.",
+      "quote": "On examination, he was cachectic (weight: 34 kilograms) and had pallor. The chest examination showed decreased expansion on right side with bronchial breath sounds on auscultation over right infra- and interscapular areas."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum Ziehl-Neelsen staining demonstrated 2+ acid-fast bacilli, CBNAAT identified high-level rifampicin resistance, and line probe assays confirmed resistance to isoniazid, rifampicin, and fluoroquinolones with aminoglycoside sensitivity, confirming pre-extensively drug-resistant cavitary pulmonary tuberculosis.",
+      "quote": "At our centre, he underwent sputum LPA-1 which confirmed rifampicin and isoniazid resistance, and LPA-2 showed resistance to fluoroquinolone but sensitive to aminoglycoside. He was managed as case of pre-XDR tuberculosis and was started on bedaquiline-based ATT."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to sputum smear and molecular drug-resistance assays. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6560971_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old woman presents with a firm, painless parotid mass and multiple hard, fixed homolateral cervical lymph nodes evolving over five months. Neuroimaging and clinical examination closely mimic a primary malignant salivary gland neoplasm with nodal metastasis.\n2. Admission Breakpoint: The breakpoint stops following clinical examination, blood work, chest radiography, and parotid MRI, immediately before partial exofacial parotidectomy and histological tissue analysis.\n3. Differential Distinctions: Parotid carcinoma with cervical lymph node metastasis is strongly suggested by firm, fixed adenopathy and invasive MRI features; benign mixed tumor (pleomorphic adenoma) does not account for fixed cervical adenopathy; definitive histopathologic examination revealing caseating granulomatous lymphadenitis establishes primary parotid and cervical lymph node tuberculosis.",
+  "case_prompt": "A 44-year-old woman with a history of iron deficiency anemia on oral iron supplementation presented with an isolated swelling in the right parotid region that had been slowly enlarging over the preceding five months.\n\nOn physical examination, she was in good general condition and afebrile. Examination of the right parotid region revealed a firm, well-circumscribed, mobile, and painless pretragal tumefaction measuring 3 cm in its long axis. Palpation of the neck revealed multiple hard, fixed homolateral jugulodigastric lymphadenopathies. The contralateral parotid gland was normal. There was no chewing discomfort, trismus, purulent discharge from salivary ducts, or peripheral facial nerve weakness, and the upper aerodigestive tract was clear.\n\nBaseline blood tests were within normal limits. Plain chest radiography showed clear lung fields without evidence of parenchymal consolidation or hilar adenopathy. Parotid MRI demonstrated an oval 20 × 15 mm nodule straddling the superficial and deep lobes of the right parotid gland with low T1 signal intensity and high T2 signal intensity, showing enhancement following gadolinium administration, in association with multiple homolateral right jugulodigastric lymphadenopathies.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Parotid Malignancy with Regional Lymph Node Metastases",
+      "rule_out_reason": "A solitary parotid mass associated with multiple hard, fixed homolateral jugulodigastric lymph nodes and contrast enhancement on MRI strongly indicated salivary gland carcinoma with regional nodal metastases, prompting oncologic surgical planning.",
+      "quote": "At Parotid MRI (Figure 1)... Its characteristics were suspicious of malignancy... The diagnosis of parotid cancer has been strongly suspected."
+    },
+    {
+      "candidate": "Pleomorphic Adenoma / Benign Salivary Neoplasm",
+      "rule_out_reason": "A well-limited, mobile pretragal mass evolving over months is typical of a benign mixed tumor, but the presence of multiple hard, fixed cervical lymphadenopathies is inconsistent with an uncomplicated benign adenoma.",
+      "quote": "The tumefaction was pretragal and measured 3cm of long axis, firm, well limited, mobile and painless, associated with multiple, hard and fixed homolateral jugulodigastric adenopathies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Partial exofacial parotidectomy with facial nerve preservation was performed to obtain tissue, and anatomopathological examination revealed caseating granulomatous inflammation, establishing primary parotid and cervical lymph node tuberculosis in the absence of pulmonary disease.",
+      "quote": "To obtain histological evidence, we decided to perform a partial exofacial parotidectomy with dissection and preservation of the facial nerve (Figure 2). Anatomopathological examination of the resected mass (Figure 3) concluded a primary parotid and cervical lymph node tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned prior to surgical resection and histopathology. Zero pathogen names in case_prompt. Full clinical examination and MRI description provided without spoiler conclusions."
+}

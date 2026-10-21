@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4411812_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 27-year-old rural woman presents with a 12-year history of diffuse nodular swelling, indurated skin, and discharging sinuses over her left shoulder and chest wall. Granules were not detected on gross inspection of the seropurulent discharge, and initial bacterial cultures grew Staphylococcus aureus, leading to an initial misdiagnosis of staphylococcal botryomycosis. The clinical dilemma is distinguishing chronic bacterial pseudomycosis or cutaneous tuberculosis from an indolent fungal eumycetoma caused by a dematiaceous mold (Curvularia).\n2. Admission Breakpoint: The breakpoint is positioned after outpatient dermatological presentation, physical examination (diffuse nodular swelling of left chest/axilla, discharging sinuses, scarring, hyperpigmentation, no lymphadenopathy), and normal baseline laboratory/radiological investigations, strictly prior to pus microbiology, deep tissue biopsies, fungal cultures on Sabouraud dextrose agar, and antifungal therapy.\n3. Differential Distinctions: Botryomycosis or actinomycosis is ruled out by the lack of clinical improvement on antibacterial therapy and deep tissue biopsies showing fungal hyphae and conidia rather than bacterial granules. Cutaneous tuberculosis (scrofuloderma) is ruled out by normal chest imaging, absence of lymphadenopathy, and fungal cultures isolating Curvularia species.",
+  "case_prompt": "A 27-year-old woman residing in a rural village presents to the dermatology outpatient clinic with a 12-year history of progressive, multiple swellings and chronically discharging wounds involving the left shoulder region and chest wall. She has sought medical attention at multiple private hospitals over the preceding decade without symptomatic relief or an established diagnosis. She does not recall any specific antecedent penetrating trauma or thorn injury to the affected area.\n\nOn physical examination, she is afebrile and systemic examination reveals no abnormalities. Local dermatological examination demonstrates a diffuse, indurated nodular swelling extending over the left anterior chest wall, posterior chest wall, and left axilla. Multiple subcutaneous nodules and active discharging sinuses are present across the affected area. The drainage is seropurulent in nature, and no macroscopic granules are observed on gross bedside inspection. Several sinus tracts have healed with retracted scarring and fibrosis. The overlying skin exhibits marked hyperpigmentation and thickening. There is no regional axillary or cervical lymphadenopathy.\n\nRoutine laboratory investigations\u2014including complete blood count, erythrocyte sedimentation rate, liver and renal function panels, and plain radiography of the left shoulder and chest\u2014are completely within normal limits, with no underlying osteolytic bone lesions or periosteal reaction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Staphylococcal botryomycosis or actinomycosis (actinomycetoma)",
+      "rule_out_reason": "Chronic suppurative granulomatous nodules with multiple draining sinuses and fibrosis over the shoulder and chest wall commonly represent bacterial botryomycosis or actinomycetoma. Pus culture initially isolated Staphylococcus aureus in pure culture, prompting a presumptive diagnosis of botryomycosis; however, antibacterial therapy yielded no improvement, and tissue biopsy demonstrated dematiaceous fungal mycelia rather than bacterial granules.",
+      "quote": "Gram stain of the pus sample showed plenty of pus cells along with Gram-positive cocci in clusters. Bacteriological culture yielded Staphylococcus aureus in pure culture. This was considered as a probable case of botryomycosis and was started on antibiotic therapy. There was no significant improvement in discharge."
+    },
+    {
+      "candidate": "Cutaneous tuberculosis (scrofuloderma / tuberculosis verrucosa cutis)",
+      "rule_out_reason": "In endemic regions, cutaneous tuberculosis frequently causes chronic cold subcutaneous nodules that break down to form draining sinuses with extensive scarring and hyperpigmentation. However, the patient had no regional lymphadenopathy, routine systemic and radiological investigations were normal, and multiple biopsies revealed fungal colonies rather than caseating granulomas with acid-fast bacilli.",
+      "quote": "All routine investigations including hematological, biochemical, and radiological tests were within normal limits."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when multiple deep tissue biopsy fragments cultured on Sabouraud dextrose agar yielded black colonies identified microscopically by four-celled conidia with swollen subterminal cells as Curvularia species, corroborated by histopathology showing dark fungal mycelia within granulomas, establishing eumycotic mycetoma that resolved under itraconazole.",
+      "quote": "The isolate was identified as Curvularia species. Similarly, tissue biopsy showed basophilic centers and a dark periphery showing mycelia along with neutrophilic infiltrate. Patient was identified as a case of eumycotic Mycetoma considering laboratory confirmation and also the duration of the disease and nonresponsiveness to antibiotics."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Captures the classic pitfall of secondary bacterial colonization masking an underlying dematiaceous eumycetoma. Breakpoint cleanly excludes biopsy and mycology."
+}

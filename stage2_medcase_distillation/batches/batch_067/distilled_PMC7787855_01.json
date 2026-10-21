@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7787855_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An immunocompetent 42-year-old male farmer with regular livestock exposure presents with bilateral lower-lobe pulmonary cysts without constitutional symptoms, peripheral eosinophilia, or hepatic cysts. The primary tension is distinguishing between a primary parasitic hydatid cyst, a congenital cystic lung lesion (e.g., bronchogenic cyst), cavitary mycobacterial disease, or an isolated pulmonary fungal cavity/aspergilloma.\n2. Admission Breakpoint: The admission breakpoint is reached following clinical presentation, triage laboratory testing (normal hemogram without eosinophilia, normal LFTs and electrolytes, nonreactive HBsAg and HIV), abdominal ultrasonography excluding hepatic involvement, and chest CT demonstrating bilateral lower-lobe pulmonary cysts, strictly before surgical resection and histopathological tissue analysis.\n3. Differential Distinctions: Congenital cysts (bronchogenic or pericardial cysts) are ruled out by histopathological identification of the classic multilayered parasitic wall. Isolated aspergilloma is excluded by demonstration that fungal hyphae resided within a true parasitic ectocyst cavity. Hepatic hydatid disease with pulmonary seeding is ruled out by normal abdominal ultrasound.",
+  "case_prompt": "A 42-year-old male farmer and active smoker residing in a village in Fars Province, Southern Iran, presented to the pulmonary clinic for further evaluation of abnormal thoracic imaging. He had a history of regular contact with domestic animals in his village. He reported no significant past medical history and no history suggestive of immunosuppression.\n\nOn physical examination, the patient was well-appearing and in no acute distress. Vital signs showed a pulse rate of 98 beats per minute, a respiratory rate of 28 breaths per minute, an oxygen saturation of 98% on ambient air, and a blood pressure of 110/80 mmHg. Thoracic auscultation was clear bilaterally, and the remainder of the physical examination was unremarkable.\n\nLaboratory evaluation revealed a hemoglobin level of 12.8 g/dL, normal white blood cell count with an absence of peripheral eosinophilia, and normal serum electrolytes and liver function test results. Serological testing was nonreactive for hepatitis B surface antigen and human immunodeficiency virus (HIV) antigens. A computed tomography (CT) scan of the chest demonstrated restricted cystic lesions in the lower lobes bilaterally: a 27-mm cyst located in the superior and inferior segments of the right lower lobe, and a 22-mm cyst in the left lower lobe. An ultrasound examination of the abdomen revealed no cystic lesions in the liver or any other intra-abdominal organs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital Bronchogenic Cyst / Foregut Duplication Cyst",
+      "rule_out_reason": "Bilateral discrete, thin-walled pulmonary cysts in an otherwise asymptomatic adult without eosinophilia frequently mimic congenital bronchogenic cysts, but surgical resection demonstrated a multilayered parasitic wall rather than respiratory ciliated epithelium.",
+      "quote": "Radical surgery (lobectomy) was performed, and the excised cysts were sent for histopathological examination. Gross examination of the sample showed a well-defined multilayered creamy-white cyst measuring 2.5 x 2 x 2 cm."
+    },
+    {
+      "candidate": "Isolated Primary Pulmonary Aspergilloma / Mycetoma",
+      "rule_out_reason": "Although histopathologic staining identified Aspergillus hyphae, the primary architecture of the cavitary lesion was a true parasitic ectocyst, confirming secondary fungal colonization of a preexisting hydatid cyst rather than an isolated fungal mass in a preexisting non-parasitic cavity.",
+      "quote": "Surprisingly, the ectocyst in the right lung showed the presence of numerous clusters of Aspergillus septate hyphae with acute-angled branching in hematoxylin and eosin stain (H&E) (Figures 1(c) and 1(d))... Therefore, the diagnosis of dual infection by Echinococcus and Aspergillus was established."
+    },
+    {
+      "candidate": "Hepatic Hydatid Disease with Transdiaphragmatic Extension",
+      "rule_out_reason": "Hydatid disease most commonly affects the liver, with secondary pulmonary involvement occurring via the bloodstream or transdiaphragmatic rupture; however, abdominal ultrasonography showed no cysts in the liver or other organs.",
+      "quote": "Ultrasound abdomen did not show any cysts in the liver or any other organs."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Gross examination and histopathological staining of the excised surgical specimen revealed a well-defined, multilayered creamy-white cyst wall characteristic of an echinococcal ectocyst with surrounding granulomatous giant-cell reaction, confirming pulmonary hydatid cyst coinfected with Aspergillus.",
+      "quote": "Gross examination of the sample showed a well-defined multilayered creamy-white cyst measuring 2.5 x 2 x 2 cm... Therefore, the diagnosis of dual infection by Echinococcus and Aspergillus was established."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully according to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case_prompt. Breakpoint set prior to surgical lobectomy and histopathological tissue analysis. Verbatim quotes support all differential candidates and the diagnostic pivot."
+}

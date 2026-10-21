@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3701398_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 65-year-old diabetic male presenting with prolonged fever and cough initially treated unsuccessfully as typhoid, who decompensates with acute septic shock, severe hypoxia, extensive pulmonary consolidation, and acute bilateral ankle arthritis with purulent cellulitis. The diagnostic challenge is distinguishing disseminated severe melioidosis from refractory enteric fever, miliary/pulmonary tuberculosis, and common pyogenic sepsis in an endemic tropical region.\n2. Admission Breakpoint: The admission presentation stops after physical examination demonstrating toxic septic shock and cellulitis/arthritis, initial triage laboratory tests, arterial blood gas, chest radiograph showing left consolidation, and ultrasound showing effusions/ascites, strictly before blood and endotracheal culture organism identification and surgical joint drainage microbiology.\n3. Differential Distinctions: Typhoid fever presents with prolonged fever and splenomegaly but lacks severe destructive lobar consolidation and septic arthritis, and responds to empiric fluoroquinolones/third-generation cephalosporins; Widal testing was negative. Tuberculosis causes chronic respiratory illness and joint disease but takes weeks to progress and sputum AFB stains were repeatedly negative. Severe melioidosis (Burkholderia pseudomallei) classically manifests in diabetic individuals with rapid multifocal dissemination (pneumonia, abscesses, septic arthritis) and requires prolonged carbapenem or ceftazidime therapy.",
+  "case_prompt": "A 65-year-old male presents with fever, cough, and breathlessness of 2 months' duration, accompanied by swelling, redness, and pain affecting both ankles for the preceding 7 days. Two months earlier, he had received unsuccessful treatment for suspected enteric fever, at which time he was also newly diagnosed with diabetes mellitus. On physical examination, the patient appears toxic, febrile, icteric, and dehydrated. Vital signs include a body temperature of 101°F, blood pressure 90/70 mmHg, respiratory rate 50 breaths per minute, heart rate 128 beats per minute, and oxygen saturation 78% on room air. Pulmonary examination reveals bronchial breath sounds over the left hemithorax with bilateral crackles. Mild splenomegaly is present. Both ankles are erythematous and edematous, and the right foot demonstrates cellulitis with purulent discharge. Initial investigations show a total leukocyte count of 24,000/mm³ with toxic granulations and vacuolations on peripheral smear, AST 160 IU/L, ALT 82 IU/L, alkaline phosphatase 1,120 IU/L, GGT 216 IU/L, LDH 387 IU/L, high-sensitivity C-reactive protein 233.8 mg/dL, procalcitonin 0.5 ng/mL, and HbA1c 11.1%. Chest radiography demonstrates homogenous consolidation on the left side, and ultrasound reveals bilateral pleural effusions and mild ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Typhoid fever (Enteric fever)",
+      "rule_out_reason": "Considered because of prolonged fever, toxic appearance, and splenomegaly. Excluded by lack of clinical response to prior empiric therapy and negative Widal serology and urine cultures.",
+      "quote": "Two months earlier, he was treated for clinically suspected typhoid with no resolution of the fever."
+    },
+    {
+      "candidate": "Pulmonary tuberculosis",
+      "rule_out_reason": "Considered given the 2-month history of fever, cough, dyspnea, and homogenous lobar consolidation in an uncontrolled diabetic host. Excluded by negative serial acid-fast sputum examinations.",
+      "quote": "acid-fast stain (AFB) from sputum carried out for 3 days, malarial antigen, Widal test, Urine culture were all negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Severe multifocal sepsis presenting with consolidation, jaundice, and septic arthritis in a poorly controlled diabetic patient prompted blood, endotracheal, and joint aspirate cultures, which yielded nonfermenting, oxidase-positive, wrinkled colonies identified as Burkholderia pseudomallei.",
+      "quote": "Blood culture put up in the fully automated Bactec (Beckton and Dickinson) showed positivity on the third day and grew nonfermenting, oxidase-positive flat,dry, wrinkled colonies which were subsequently identified as Burkholderia pseudomallei in Microscan 96 SI (Siemens, Frimley, Camberley, UK)."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint strictly maintained before microbiological culture isolation of Burkholderia pseudomallei."
+}

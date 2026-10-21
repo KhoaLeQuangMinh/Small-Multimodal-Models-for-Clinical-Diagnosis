@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3845250_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 43-year-old Peruvian man with remote travel to Amazonian jungle regions receives a 3-week high-dose systemic corticosteroid course for Bell's palsy, precipitating fulminant Strongyloides stercoralis hyperinfection. He presents with diarrhea, weight loss, and hematochezia initially mimicking diverticulitis or inflammatory bowel disease, before developing secondary spontaneous enteric Gram-negative rod meningitis (Escherichia coli) and toxic megacolon resulting from trans-intestinal larval migration.\n2. Admission Breakpoint: Admission triage encompasses remote jungle travel history, recent 3-week course of prednisone 50 mg BID, 3-week history of diarrhea, 10 kg weight loss, intermittent fever, 3 days of hematochezia, emergency exam (pallor, tachycardia, mild abdominal tenderness, rectal bleeding), and baseline complete blood count (WBC 16,000, 2% eosinophils, Hb 8 g/dL, platelets 700,000). Breakpoint stops prior to in-hospital deterioration with meningeal signs, lumbar puncture, colonoscopy, colectomy, and post-mortem examination.\n3. Differential Distinctions: Acute diverticulitis was the initial working diagnosis due to lower GI bleeding, abdominal pain, and leukocytosis, but ruled out by lack of diverticular pathology and rapid development of multi-organ dissemination. Ulcerative colitis / inflammatory bowel disease was considered when colonoscopy showed diffuse pancolitis and toxic megacolon, but represented invasive parasitic colitis rather than idiopathic IBD. Primary pyogenic meningitis was considered when the patient developed acute meningismus and E. coli in CSF, but spontaneous enteric Gram-negative meningitis in an adult receiving steroids is pathognomonic for larval trans-mural translocation.",
+  "case_prompt": "A 43-year-old Hispanic man originally from Peru presented to the emergency department with a 3-week history of persistent diarrhea, intermittent fever, and an unintentional weight loss of 10 kg, followed by the acute onset of hematochezia for the previous 3 days. His past medical history was notable for remote travel to the jungle regions of Peru and Brazil two decades earlier. Three weeks prior to the current presentation, he had been diagnosed with Bell's palsy by a primary care physician and prescribed oral prednisone at a dosage of 50 mg twice daily, which he had continued taking continuously without medical supervision.\n\nOn physical examination in the emergency department, he was pale and tachycardic. Blood pressure was normal. Abdominal examination revealed mild, generalized abdominal tenderness upon palpation without peritoneal signs or distension. Digital rectal examination demonstrated bright red blood in the rectal vault. The remainder of the physical examination was unremarkable.\n\nInitial complete blood count revealed a marked leukocytosis with a white blood cell count of 16,000/mm3 (82% neutrophils, 7% band forms, 8% lymphocytes, 1% monocytes, and 2% eosinophils). The hemoglobin level was 8.0 g/dL, and the platelet count was elevated at 700,000/mm3.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Diverticulitis",
+      "rule_out_reason": "Initial working diagnosis based on lower abdominal tenderness, fever, leukocytosis, and lower gastrointestinal bleeding, but ruled out by absence of localized diverticular disease and subsequent development of diffuse colitis and extraintestinal dissemination.",
+      "quote": "The patient was suspected to have diverticulitis."
+    },
+    {
+      "candidate": "Idiopathic Ulcerative Colitis / Inflammatory Bowel Disease",
+      "rule_out_reason": "Considered when colonoscopy demonstrated severe pancolitis complicated by toxic megacolon, but excluded as primary idiopathic IBD when tissue examination confirmed invasive parasitic infestation following steroid therapy.",
+      "quote": "Results indicated pancolitis and suggested to rule out ulcerative colitis, parasitosis, and tuberculosis."
+    },
+    {
+      "candidate": "Isolated Primary Bacterial Meningitis",
+      "rule_out_reason": "Considered when the patient developed acute drowsiness, nuchal rigidity, and CSF Gram-negative bacilli; however, spontaneous ESBL E. coli meningitis in an adult is a recognized secondary consequence of mucosal barrier disruption and bacterial carriage by migrating filariform larvae.",
+      "quote": "The CSF culture was positive for extended spectrum beta-lactamase producing Escherichia coli; thus the treatment was changed to Meropenem and Amikacin according to the antibiogram results."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination at autopsy demonstrated massive hyperinfection with numerous Strongyloides larvae disseminated throughout the gastrointestinal tract, lungs, trachea, thyroid, kidneys, liver, and leptomeninges, provoked by high-dose corticosteroid immunosuppression.",
+      "quote": "Autopsy was performed, and microscopic examination revealed the presence of multiple Strongyloides larvae in the lungs, trachea, stomach, small and large intestines, thyroid, kidneys, and liver, as well as moderate chronic inflammation of the brain parenchyma and the meninges (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to emergency admission presentation. Lumbar puncture, secondary bacterial meningitis, colonoscopy, and autopsy findings excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

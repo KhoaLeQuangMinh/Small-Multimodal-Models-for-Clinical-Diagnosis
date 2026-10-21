@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5490479_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: The patient presents with coalescing, rough, yellowish-brown papules on the cheek that strongly mimic flat warts (verruca plana) or lupoid dermatoses (such as lupus vulgaris or sarcoidosis) rather than classic ulcerating cutaneous disease. The development of lupoid papules at a new site two years after treatment and complete healing of a primary nasal lesion creates a high risk of misdiagnosis as a non-parasitic dermatosis.\n2. Admission Breakpoint: Admission clinical evaluation concludes following the history, dermatologic examination of the cheek papules and nasal scar, and unremarkable routine laboratory tests, immediately before performing the diagnostic Giemsa-stained parasitological smear.\n3. Differential Distinctions: Verruca plana (flat warts) and lupus vulgaris present as chronic flat or yellowish-brown facial papules but are definitively distinguished by Giemsa-stained smear demonstrating characteristic intracytoplasmic amastigotes rather than viral or mycobacterial pathology.",
+  "case_prompt": "A 9-year-old male presented to the clinic with multiple papular lesions on his left cheek that had been present for three months and had gradually enlarged. Medical history was notable for a prior cutaneous lesion on the nose two years earlier, which had completely regressed following intralesional therapy. Family history was non-contributory.\n\nOn physical examination, dermatological inspection revealed multiple, coalescing, rough, slightly elevated, yellowish-brown papular lesions measuring 3 to 6 mm in diameter located on the left cheek. In addition, a large atrophic scar was present on the nose. Initial routine laboratory tests were unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Verruca plana",
+      "rule_out_reason": "Considered due to the multiple slightly elevated, rough papular lesions on the cheek in a pediatric patient, but excluded by the yellowish-brown granulomatous quality and parasitological demonstration of amastigotes.",
+      "quote": "Lupoid cutaneous leishmaniasis mimicking verruca plana"
+    },
+    {
+      "candidate": "Lupus vulgaris",
+      "rule_out_reason": "Considered because chronic yellowish-brown facial papules and atrophic scarring strongly resemble cutaneous tuberculosis, but excluded by direct smear revealing protozoan amastigotes rather than acid-fast organisms.",
+      "quote": "Nothing of interest was noted in his family history or his laboratory tests."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when Giemsa staining of a parasitological smear of the cheek lesions demonstrated abundant intracellular amastigotes, confirming lupoid cutaneous leishmaniasis.",
+      "quote": "After staining with Giemsa, a parasitological smear showed numerous leishmania parasites in their amastigote form ( Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Admission breakpoint strictly maintained prior to parasitological smear. Zero pathogen or disease spoilers in case_prompt. Direct quotes verified from text."
+}

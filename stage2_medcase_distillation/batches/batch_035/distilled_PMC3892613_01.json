@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3892613_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 24-year-old previously healthy Ethiopian immigrant presents with acute simple partial motor seizures of the left lower extremity without fever, weight loss, night sweats, or pulmonary symptoms. Neuroimaging demonstrates a solitary, well-defined enhancing right frontoparietal mass with marked vasogenic edema, highly suggestive of a primary high-grade brain tumor (glioblastoma) or solitary metastasis, but representing a solitary central nervous system tuberculoma.\n2. Admission Breakpoint: Admission triage encompasses demographics (immigrant from Ethiopia), presentation with 2 days of focal left leg shaking/fatigue, normal physical and neurological examinations, non-contrast and contrast head CT (right frontoparietal edema and enhancing mass), brain MRI (2.6 x 1.6 cm mass with edema), CT of chest/abdomen/pelvis (periceliac and periaortic lymphadenopathy, questionable pulmonary nodules), and positive skin testing. Surgical craniotomy, intraoperative excision, and histopathology represent the post-breakpoint diagnostic phase.\n3. Differential Distinctions: High-grade glioma / primary central nervous system neoplasm is the foremost suspicion for a solitary enhancing cerebral mass causing new-onset focal seizures, but ruled out intraoperatively and pathologically by a superficial plane easily peeled from parenchyma and necrotizing granulomatous histology. Cerebral metastasis is considered given retroperitoneal lymphadenopathy, but excluded by absence of malignancy on histopathology. Pyogenic brain abscess is considered for ring-enhancing mass with edema, but excluded by chronic granulomatous architecture containing acid-fast bacilli.",
+  "case_prompt": "A 24-year-old previously healthy man, who had immigrated from Ethiopia six years prior, presented to the emergency department with a 2-day history of intermittent, involuntary shaking of his left leg. He described a sensation of fatigue in the left leg and was reluctant to bear weight on it. He denied headache, fever, chills, night sweats, unintentional weight loss, cough, or prior seizure episodes.\n\nOn physical examination, he was well-appearing and afebrile. General physical examination was normal. Detailed neurological examination revealed no focal motor weakness, normal sensation, symmetric deep tendon reflexes, and intact cranial nerves and cerebellar function.\n\nA non-contrast computed tomography (CT) scan of the head demonstrated prominent vasogenic edema in the right frontoparietal region. A contrast-enhanced CT scan revealed an associated frontoparietal enhancing mass lesion. Magnetic resonance imaging (MRI) of the brain confirmed a 2.6 x 1.6 cm intra-axial mass with surrounding vasogenic edema in the right frontoparietal cortex. A systemic CT scan of the chest, abdomen, and pelvis revealed periceliac and periaortic lymphadenopathy, along with questionable but non-definitive pulmonary nodules. A purified protein derivative (PPD) skin test was positive (the patient had received childhood Bacillus Calmette-Gu\u00e9rin vaccination). Baseline blood tests, blood cultures, and HIV screening were all negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Central Nervous System Neoplasm (High-Grade Glioma)",
+      "rule_out_reason": "Leading clinical suspicion for a solitary enhancing frontoparietal brain mass with extensive vasogenic edema causing new-onset focal seizures in a young adult, but ruled out by intraoperative finding of a well-demarcated superficial mass that peeled away from parenchyma and histopathology showing granulomatous inflammation rather than glial neoplasm.",
+      "quote": "Opening the dura revealed a superficial mass with well defined margins that easily peeled away from the underlying parenchyma (Figure 2)."
+    },
+    {
+      "candidate": "Metastatic Malignancy",
+      "rule_out_reason": "Considered given a solitary brain lesion with periceliac and periaortic retroperitoneal lymphadenopathy on systemic staging CT, but excluded by histopathology showing necrotizing granulomas with acid-fast bacilli and no malignant epithelial cells.",
+      "quote": "CT of chest, abdomen, and pelvis revealed periceliac and peiraortic lymphadenopathy, and questionable but no definitive pulmonary nodules."
+    },
+    {
+      "candidate": "Pyogenic Brain Abscess",
+      "rule_out_reason": "Considered for ring-enhancing parenchymal brain mass with vasogenic edema, but excluded by lack of acute systemic toxemia, negative blood cultures, and presence of caseating granulomas with mycobacteria.",
+      "quote": "Blood cultures and HIV testing were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Right parietal craniotomy and excisional biopsy demonstrated necrotizing granulomas with peripheral palisading epithelioid histiocytes, Langhans giant cells, and acid-fast bacilli on histological staining, confirming cerebral tuberculoma.",
+      "quote": "Pathological examination demonstrated necrotizing granulomas with peripheral palisading epithelioid histiocytes, giant cells, and acid fast bacilli, consistent with cerebral tuberculoma (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Surgical craniotomy and histological staining excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

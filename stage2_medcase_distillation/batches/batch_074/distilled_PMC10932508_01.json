@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10932508_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 52-year-old woman in rural New England presents with profound fatigue, tachycardia, scleral icterus, and rapidly progressive hemolytic anemia and thrombocytopenia three weeks following self-diagnosed COVID-19. Initial clinical impression centered on regional babesiosis or post-COVID septic shock, until detailed history revealed unprophylaxed travel to West Africa and peripheral blood review revealed life-threatening hyperparasitemia.\n2. Admission Breakpoint: The breakpoint occurs following emergency triage, physical exam, and baseline laboratory panels (revealing drop in hemoglobin to 7.8 g/dL, persistent thrombocytopenia, and elevated lactate), prior to pathologist smear review, parasite quantitation, and specific antigen testing.\n3. Differential Distinctions: Babesiosis is endemic in rural New England and causes hemolytic anemia, thrombocytopenia, and intraerythrocytic ring forms, but lacks travel exposure to West Africa, does not produce massive hyperparasitemia with schizonts, and was ruled out by expert smear review. Post-COVID-19 secondary bacterial sepsis or hemophagocytic lymphohistiocytosis accounts for hyperlactatemia and cytopenias, but lacks intraerythrocytic parasitic forms. Severe falciparum malaria is confirmed by 39.3% parasitemia with ring trophozoites and schizonts, positive falciparum antigen, and malarial retinopathy.",
+  "case_prompt": "A 52-year-old female presents to the emergency department of a rural community hospital in New Hampshire complaining of severe, progressive fatigue. Three weeks prior to presentation, she self-diagnosed COVID-19 using a home antigen test; she received no prescription treatment, and while her mild respiratory symptoms resolved, her fatigue progressively worsened. She is otherwise healthy and takes no medications. Epidemiological history elicited upon presentation reveals that she recently returned from travel to Sierra Leone, where she worked in a gold mine as part of a family business; she took no chemoprophylaxis during this trip.\n\nOn presentation, she is afebrile with a heart rate of 126 beats per minute, blood pressure of 102/58 mm Hg, respiratory rate of 20 breaths per minute, and oxygen saturation of 98% while breathing room air. Physical examination reveals an alert, oriented woman in no apparent distress with prominent scleral icterus. Over the course of the initial evaluation, she begins to appear mildly confused during clinical interactions. Initial laboratory evaluation reveals normocytic anemia and thrombocytopenia. On repeat laboratory testing 5 hours later, her hemoglobin drops further to 7.8 g/dL, with persistent thrombocytopenia and an elevated serum lactate level.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Babesiosis",
+      "rule_out_reason": "In rural New England, endemic tick-borne Babesia microti was the initial working diagnosis for acute hemolytic anemia and thrombocytopenia with intraerythrocytic rings, leading to empiric atovaquone and azithromycin; however, travel to West Africa and pathologist smear review revealed falciparum trophozoites and schizonts rather than maltese crosses.",
+      "quote": "Unaware of her travel history and given the endemicity of Babesiosis in the New England region, the patient was initiated on oral atovaquone and azithromycin with plans for inpatient admission... on call pathologist was asked to review the smear, who in turn reported, numerous ring-formed parasitic trophozoites, and occasional cluster schizont forms within RBCs, consistent with malaria"
+    },
+    {
+      "candidate": "Post-COVID-19 bacterial sepsis / Septic shock",
+      "rule_out_reason": "Recent COVID-19 infection, severe fatigue, tachycardia, borderline hypotension, and elevated lactate prompted resuscitation for presumed septic shock, but blood smear review demonstrated intraerythrocytic parasitic forms driving intravascular hemolysis.",
+      "quote": "Given her elevated lactate, tachycardia and borderline hypotension, fluid resuscitation was initiated for presumed sepsis secondary to a parasitic infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Pathologist examination of the peripheral blood smear identifying numerous ring trophozoites and cluster schizonts with 39.3% parasitemia, positive Plasmodium falciparum rapid antigen testing, and dilated funduscopic confirmation of malarial retinopathy established severe falciparum malaria.",
+      "quote": "the on call pathologist was asked to review the smear, who in turn reported, numerous ring-formed parasitic trophozoites, and occasional cluster schizont forms within RBCs, consistent with malaria and a very high parasite load estimated at 39.3% as shown in Fig. 1 Concurrent microbiology testing was positive for Plasmodium falciparum antigen. In the light of these findings, the patient was diagnosed with severe malaria due to Plasmodium falciparum"
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set after initial ER lab repeat. Verbatim quotes verified."
+}

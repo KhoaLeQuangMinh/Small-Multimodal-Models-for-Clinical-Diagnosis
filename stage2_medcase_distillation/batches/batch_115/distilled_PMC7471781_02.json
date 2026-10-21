@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7471781_02",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: The patient is a healthcare worker in an operating theatre within a developed, low-prevalence setting (Singapore) presenting with an annular indurated skin plaque and bilateral ulnar nerve thickening, but denies any known contact with leprosy cases and lacks facial leonine infiltration (coarse facies).\n2. Admission Breakpoint: Admission evaluation concludes after detailed history of rural origin, operating theatre occupation, absence of known infectious contacts, and physical examination demonstrating the hypoesthetic annular indurated plaque and bilateral ulnar nerve thickening, prior to diagnostic classification, counseling, and multi-drug therapy initiation.\n3. Differential Distinctions: Borderline lepromatous disease is distinguished from polar lepromatous disease by the absence of diffuse facial infiltration (coarse facies), and distinguished from other annular dermatoses (granuloma annulare, fungal tinea, sarcoidosis) by the hallmark presence of central hypoesthesia within the indurated plaque paired with bilateral peripheral ulnar nerve thickening.",
+  "case_prompt": "A male operating theatre assistant in Singapore presents for evaluation of a persistent skin lesion. He originally migrated from a rural region with rice paddy fields to the city for employment. In Singapore, his occupational duties involve assisting the anesthetist with intubations in the operating theatre, during which he consistently wears surgical masks and gloves at all times. He has no recollection of prior contact with individuals suffering from chronic granulomatous skin infections or nerve disorders.\n\nOn physical examination, vital signs are stable. Dermatological examination reveals a large annular indurated plaque over the right upper back as well as scattered papules. Detailed sensory testing demonstrates diminished sensation localized specifically to the centre of the large annular indurated plaque. Palpation of the peripheral nerves reveals bilateral mild thickening of the ulnar nerves. Infiltration of facial skin and coarse facies are absent.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Polar Lepromatous Leprosy (Facies Leontina)",
+      "rule_out_reason": "Although the patient exhibited bilateral peripheral ulnar nerve thickening and multiple lesions characteristic of the lepromatous spectrum, classic polar lepromatous leprosy was ruled out by the absence of infiltration and coarsening of facial skin.",
+      "quote": "Coarse facies was not noted."
+    },
+    {
+      "candidate": "Known Direct Contact Transmission / Household Exposure",
+      "rule_out_reason": "Direct recent contact transmission from a recognized index case was ruled out by detailed epidemiological history, which is common given the prolonged incubation period.",
+      "quote": "He did not recall coming into contact with people suffering from leprosy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The cardinal clinical combination of an annular indurated plaque with central sensory impairment and bilateral peripheral nerve thickening established borderline lepromatous leprosy, which demonstrated marked clinical resolution following multi-drug therapy.",
+      "quote": "A detailed physical examination also revealed diminished sensation at the centre of the large annular indurated plaque over the right upper back and the ulnar nerves were mildly thickened bilaterally."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict source fidelity from PMC7471781. The admission breakpoint strictly isolates clinical presentation and physical exam (annular plaque with central hypoesthesia, thickened ulnar nerves) before diagnostic disclosure or treatment initiation. Spoilers, pathogen names, and treatment outcomes have been fully excluded from case_prompt. Differential reasoning includes exact textual quotes."
+}

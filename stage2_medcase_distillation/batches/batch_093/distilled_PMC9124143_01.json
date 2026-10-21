@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9124143_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old female receiving therapeutic warfarin for rheumatic valvular disease presents with life-threatening hematochezia, severe anemia, and segmental ileocecal and ascending colon inflammation. The diagnostic tension lies in determining whether the gastrointestinal hemorrhage is driven purely by anticoagulant coagulopathy versus underlying inflammatory bowel disease (Crohn's disease) or disseminated intestinal and pulmonary tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs following emergency resuscitation, baseline laboratory testing, urgent colonoscopy, and initial contrast CT imaging of the chest and abdomen, prior to sputum acid-fast bacilli smear, mucosal biopsy histopathology, and mycobacterial culture.\n3. Differential Distinctions: Crohn's disease shares endoscopic features of aphthous/segmental ulcerations, mucosal cobblestoning, and ileocecal involvement, but typically features non-caseating granulomas without caseation or pulmonary cavitation/consolidation. Warfarin-induced coagulopathic hemorrhage or angiodysplasia presents with bleeding without deep necrotizing mucosal ulcers, mesenteric adenopathy, or chronic respiratory wasting symptoms.",
+  "case_prompt": "A 35-year-old female presents with recurrent rectal bleeding mixed with stools and crampy lower abdominal pain of 5 days' duration. On focused review of systems, she reports a 3-month history of productive cough, drenching night sweats, and an unintentional 10-kg weight loss. Her past medical history is significant for rheumatic heart disease, atrial fibrillation, and mitral valvuloplasty performed two years earlier. Her current outpatient medications include warfarin 5 mg daily, carvedilol 25 mg twice daily, and furosemide 40 mg daily.\nOn physical examination, she appears acutely ill with marked conjunctival pallor and bipedal edema, without peripheral lymphadenopathy. Precordial examination reveals murmurs consistent with mitral stenosis and aortic regurgitation. The abdomen is soft, non-tender, and without palpable organomegaly or masses.\nInitial laboratory workup reveals: white blood cell count 9.24 × 10^9/L, hemoglobin 5.30 g/dL, platelet count 572 × 10^9/L, prolonged prothrombin time with an international normalized ratio (INR) of 2.78, and normal renal and hepatic biochemistries.\nEmergency colonoscopy performed for severe lower gastrointestinal bleeding reveals segmental inflammation of the ascending colon with ulcerations and polyps covered with yellowish exudate, a distended ileocecal junction, and an aberrant vascular pattern with mucosal edema extending to the hepatic flexure. Computed tomography (CT) of the chest and abdomen demonstrates right lung consolidation, focal subsegmental consolidations in the left lung, and subcentimeter lymph nodes within the small bowel mesentery.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Crohn's disease (inflammatory bowel disease)",
+      "rule_out_reason": "Endoscopic features of segmental ileocecal ulceration, inflammatory polyps, and mesenteric lymphadenopathy closely mimicked Crohn's disease; however, endoscopic biopsy histopathology demonstrated necrotizing (caseating) granulomas positive for acid-fast bacilli rather than non-caseating granulomas.",
+      "quote": "At endoscopy, the differential diagnoses were tuberculosis or CD."
+    },
+    {
+      "candidate": "Anticoagulation-induced coagulopathic gastrointestinal bleeding / Vascular ectasia",
+      "rule_out_reason": "While therapeutic warfarin with an INR of 2.78 contributed to the severity of acute blood loss (hemoglobin 5.30 g/dL), anticoagulation alone does not account for deep segmental colonic ulcerations, mesenteric lymphadenopathy, or chronic pulmonary consolidations.",
+      "quote": "Initial management involved withholding of warfarin and transfusion of three units of packed red cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of acid-fast bacilli on direct sputum smear and colonoscopic biopsy specimens revealing necrotizing granulomas with acid-fast bacilli positivity, later confirmed by growth of Mycobacterium tuberculosis complex on Lowenstein-Jensen medium.",
+      "quote": "Given her history of chronic cough and chest imaging findings, a sputum test was requested whose staining was acid-fast bacilli (AFB) positive. Biopsies of the samples obtained during colonoscopy revealed lymphocytic infiltration, necrotizing granulomas, and positivity for AFB (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clinical presentation of intestinal tuberculosis mimicking Crohn's disease and masked by therapeutic warfarin coagulopathy. Strictly stops before AFB staining and histological tissue evaluation."
+}

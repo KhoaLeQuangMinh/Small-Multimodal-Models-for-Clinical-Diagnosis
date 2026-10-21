@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3310126_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A 58-year-old European expatriate living in Gabon presents with 2 months of fever, weight loss, a large indurated thigh plaque following an insect bite in an urban garden, annular rashes with central clearing, and mild sensory paresthesias. Because African trypanosomiasis is conventionally regarded as a rural, forest/mangrove disease, an urban presentation with fever and cytopenias generates sharp tension between falciparum malaria, secondary syphilis, and atypical urban human African trypanosomiasis.\n2. Admission Breakpoint: Admission triage concludes following physical examination, baseline complete blood count, inflammatory markers, and serum protein electrophoresis, immediately prior to thick blood smear microscopy, send-out blood PCR, lumbar puncture, and skin biopsy.\n3. Differential Distinctions: Malaria is excluded by thick blood smear examination negative for Plasmodium; secondary syphilis / treponemal chancre is ruled out by demonstration of extracellular trypomastigotes rather than spirochetes; human African trypanosomiasis is confirmed by visualization of Trypanosoma trypomastigotes on thick smear and molecular PCR identification of T. b. gambiense.",
+  "case_prompt": "A 58-year-old previously healthy Portuguese man who had lived and worked in Gabon for 13 years was admitted to the infectious diseases ward with a 2-month history of intermittent fever, fatigue, and a 10-kg weight loss. He recalled sustaining a painful, unidentified insect bite on his right thigh 2 months earlier while working in his garden in an urban residential quarter of Libreville. In the weeks following the bite, an indurated, erythematous, and painful plaque progressively enlarged at the bite site. Over the preceding weeks, he also noted anorexia, insomnia, pruritus of the left arm, and paresthesias affecting both hands and feet.\n\nOn physical examination upon admission, his body temperature was 39.0\u00b0C. Examination of the right thigh revealed an 8-cm, indurated, erythematous, tender plaque. On the trunk, two additional large annular erythematous macules with central pallor were observed across the back. A non-tender 0.5-cm subclavicular lymph node was palpable. Abdominal examination revealed no hepatosplenomegaly.\n\nInitial laboratory evaluation revealed a hemoglobin of 11.8 g/dL, platelet count of 134,000/mm3, C-reactive protein of 30.6 mg/L, and elevated serum gammaglobulins of 23.9 g/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Falciparum Malaria",
+      "rule_out_reason": "In a resident of Gabon presenting with intermittent fevers, fatigue, anemia, thrombocytopenia, and elevated C-reactive protein, severe malaria was the primary differential diagnosis; however, thick blood smear microscopy showed no malaria parasites.",
+      "quote": "A thick-blood smear showed no malaria parasites but a few trypomastigotes of Trypanosoma spp."
+    },
+    {
+      "candidate": "Secondary Syphilis / Treponemal Inoculation",
+      "rule_out_reason": "An indurated inoculation plaque followed weeks later by generalized annular erythematous lesions with central clearing and lymphadenopathy resembled a primary syphilitic chancre followed by secondary rash; however, blood evaluation revealed motile extracellular protozoa rather than treponemes.",
+      "quote": "Two additional large annular erythematous macules, centrally pale (trypanids), were found on his back (Figure)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of a thick blood smear revealed extracellular flagellated trypomastigotes of Trypanosoma spp., with molecular PCR testing confirming Trypanosoma brucei gambiense.",
+      "quote": "A thick-blood smear showed no malaria parasites but a few trypomastigotes of Trypanosoma spp. PCR of blood identified T.b. gambiense."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

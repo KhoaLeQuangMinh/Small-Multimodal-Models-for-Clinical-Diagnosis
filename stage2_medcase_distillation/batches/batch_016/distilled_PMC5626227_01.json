@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5626227_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 63-year-old man presenting with a 10-year progressive triad of tumefaction, nodular lesions with draining sinuses, and osseous involvement (osteolysis and periostitis on radiography) following lower extremity trauma. The clinical presentation represents classic Madura foot, but the core clinical tension lies in differentiating actinomycetoma (bacterial) from eumycetoma (fungal), and recognizing the extraordinary occurrence of dual fungal etiology yielding both black grains (Madurella) and white grains (Fusarium) on opposite sides of the foot.\n2. Admission Breakpoint: Admission clinical presentation concludes with the 10-year history of progressive foot and leg swelling with draining sinuses, local pruritus/tenderness, physical examination of chronic nodular sinus tracts, and baseline plain radiographs of the feet showing osteolysis and periostitis, along with routine blood count and renal function tests. It halts strictly before the direct mycological KOH examination of grains, biopsy histopathology, and fungal cultures.\n3. Differential Distinctions: Actinomycetoma (bacterial) presents with identical clinical findings but is caused by aerobic actinomycetes producing fine filaments (<1 um), whereas eumycetoma produces thick septate fungal hyphae. Chronic bacterial osteomyelitis causes draining sinuses and periostitis but lacks extruded grains containing fungal colonies. Eumycetoma is confirmed by macroscopic grain extrusion and identification of Madurella mycetomatis and Fusarium verticillioides on mycological and histopathological studies.",
+  "case_prompt": "A 63-year-old male from rural Guerrero, Mexico presented with a 10-year history of nodular lesions, progressive swelling, and draining sinuses involving the lower extremities, predominantly distributed on the left foot and right leg. The initial lesion began as a solitary nodule on the left foot, followed over subsequent years by multiple adjacent draining nodules. Two years after onset, a nodule developed on the right ankle and extended along the right leg. The patient noted mild pruritus and pain on palpation of both lower extremities. He recalled a remote history of multiple traumatic injuries to both feet.\n\nOn physical examination, the left foot and right leg exhibited chronic soft tissue swelling, nodular lesions, crusting, and multiple discharging sinus tracts. Routine complete blood count and renal function tests were within normal limits. Plain radiographs of the feet demonstrated osteolysis and periostitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Actinomycetoma (bacterial mycetoma)",
+      "rule_out_reason": "Considered because aerobic actinomycetes are the most common cause of mycetoma in Mexico and cause identical sinus tracts with grains, but ruled out by direct microscopic examination and histopathology revealing thick fungal hyphae rather than fine bacterial filaments.",
+      "quote": "Histopathological examination of the left foot biopsy showed grains, thick hyphae, brownish pigment inside; moreover, in the right foot biopsy, plentiful granules, with a pale whitish coloration, presenting eosinophilic appearance in some areas, were reported"
+    },
+    {
+      "candidate": "Chronic bacterial osteomyelitis",
+      "rule_out_reason": "Considered given the decade-long history of draining sinuses and radiographic evidence of osteolysis and periostitis, but ruled out by the characteristic presence of discrete grains containing fungal colonies extruded through sinuses.",
+      "quote": "X-ray of the feet reported osteolysis and periostitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when direct mycological examination (KOH 10%) of the sinus discharge revealed black grains from the left foot and white grains from the opposite side, with culture and biopsy confirming eumycetomas caused by Madurella mycetomatis and Fusarium verticillioides.",
+      "quote": "Mycological studies: direct examination (KOH 10%) of the discharge revealed black grains in the left foot sample and white grains on the opposite side of the same foot. On culture, both causative agents, Madurella mycetomatis and Fusarium verticillioides (formerly F. moniliforme), were eumycetes."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly halts before mycological grain analysis and biopsy. Zero pathogen spoilers in case_prompt. Direct quotes verified from text."
+}

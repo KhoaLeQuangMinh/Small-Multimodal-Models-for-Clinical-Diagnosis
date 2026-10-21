@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10860505_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 52-year-old woman presented with a 2-month history of headache, vomiting, fever, and progressive hydrocephalus. The core tension is distinguishing subacute basilar tuberculous meningitis (the default presumption in an endemic setting) from an atypical racemose subarachnoid parasitic cyst, which lacks a detectable scolex, displays no contrast enhancement, and presents with normal routine CSF chemistry.\n2. Admission Breakpoint: Clinical presentation, baseline CSF examination (normal protein, glucose, and lactate), and initial standard T2-weighted MRI demonstrating prepontine cistern cystic expansion with midbrain displacement and hydrocephalus, strictly prior to advanced steady-state sequence (FIESTA) and send-out molecular testing (GeneXpert).\n3. Differential Distinctions: CNS tuberculosis presents with insidious headache, fever, and hydrocephalus, but typically shows prominent basilar meningeal enhancement, CSF lymphocytic pleocytosis with elevated protein and low glucose, and positive GeneXpert. Congenital arachnoid cysts or epidermoids present as non-enhancing CSF-density extra-axial collections, but lack the multiple fine propagating membranes and lobulations visualized on high-resolution FIESTA sequences in racemose cestode infestation.",
+  "case_prompt": "A 52-year-old female presented with a 2-month history of persistent headaches, low-grade fever, and recurrent episodes of vomiting.\n\nOn physical examination, she was alert and oriented with stable vital signs. Cranial nerve and sensorimotor examinations were non-focal, with no meningismus elicited on initial evaluation. Lumbar puncture was performed for basic cerebrospinal fluid (CSF) analysis, revealing normal protein, glucose, and lactate levels.\n\nInitial T2-weighted magnetic resonance imaging (MRI) of the brain demonstrated marked expansion of the left prepontine cistern with subtle fluid-signal intensity cystic lesions. The lesions extended posterior to the midbrain, exerting mass effect and displacing the midbrain toward the contralateral side. Moderate ventricular dilatation consistent with hydrocephalus was also documented.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Central nervous system tuberculosis / Tuberculous meningitis",
+      "rule_out_reason": "Initially suspected based on the endemic background and a 2-month insidious history of fever, headache, vomiting, and hydrocephalus; ruled out by normal CSF protein, glucose, and lactate levels, negative GeneXpert molecular testing, and absence of pachymeningeal enhancement.",
+      "quote": "Based on her symptoms and background, an initial diagnosis of CNS tuberculosis (TB) was suspected. Subsequently, a gene expert test for TB was negative, and CSF analysis revealed normal protein, sugar, and lactate levels."
+    },
+    {
+      "candidate": "Arachnoid cyst / Epidermoid cyst",
+      "rule_out_reason": "Considered due to fluid-signal extra-axial cystic lesion expanding the basal cistern and displacing the midbrain without surrounding parenchymal vasogenic edema; ruled out because high-resolution imaging revealed multiple internal undulating thin septations rather than a simple unilocular epithelial cyst or diffusion-restricting epidermoid.",
+      "quote": "T2-weighted MRI imaging (T2WI) of the brain showed expansion of the left prepontine cistern with the subtle presence of fluid-signal intensity cystic lesions, which extended posterior to the midbrain and displaced it towards the contralateral side (Figure 1A and B)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High-resolution Fast Imaging Employing Steady-state Acquisition (FIESTA) MRI clearly delineated multiple thin septations within the fluid-filled prepontine cistern lesion without scolex or post-contrast enhancement, establishing the diagnosis of racemose neurocysticercosis.",
+      "quote": "The lesions were better delineated on FIESTA images with thin septations as additional findings; these septations were not seen on T2 (Figure 1C and D). No scolex was identified, and there was no post-contrast enhancement. Based on imaging findings, a diagnosis of racemose NCC was made."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly adheres to the admission breakpoint by omitting GeneXpert and FIESTA findings. Zero spoilers in case prompt. Quotes are direct verbatim excerpts."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11436272_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An afebrile 9-month-old infant presenting with persistent vomiting, focal motor seizures, hemiparesis, and middle cerebral artery stenosis easily leads to an initial diagnosis of pediatric acute ischemic stroke, intracranial arteriopathy, or genetic thrombophilia; thick nodular leptomeningeal enhancement in the basal cisterns with progressive hydrocephalus indicates an underlying infective basilar meningitis.\n2. Admission Breakpoint: The admission triage evaluation ends following the initial neuroimaging battery (brain CT, MRI, MRA) and baseline hematology on Day 1, immediately prior to lumbar puncture CSF biochemical/microbiological testing, thrombophilia panels, and subsequent Mantoux PPD testing.\n3. Differential Distinctions: Idiopathic pediatric arterial ischemic stroke and prothrombotic vasculopathies present with arterial stenosis and infarction without dense nodular basilar and prepontine leptomeningeal enhancement or profound CSF hypoglycorrhachia; acute bacterial/viral meningitis typically presents with high fever, whereas tuberculous meningitis often exhibits a prolonged, indolent afebrile prodrome with thick gelatinous basilar exudates causing cranial neuropathies and endarteritis obliterans.",
+  "case_prompt": "A previously healthy 9-month-old girl was admitted to the hospital with a one-month history of persistent vomiting, right-sided hemiparesis noted over the preceding two weeks, and six episodes of focal motor seizures affecting the right limbs. She was the only child in her family, had no known previous chronic medical illnesses, and was reported to be afebrile throughout the preceding month. She was up-to-date with all childhood immunizations, and there was no known contact with chronically ill individuals.\nOn physical examination, her weight was 10 kg, length 70 cm, and head circumference 44 cm. Vital signs were normal. Neurological examination revealed right-sided hemiparesis and hyperreflexia in the right upper and lower extremities, with normal muscle tone. A BCG vaccination scar was noted on the right upper arm. The anterior fontanelle was flat, and the remainder of the physical examination was unremarkable.\nTriage laboratory investigations revealed a white blood cell count of 16,800/mm^3 (78% neutrophils, 20% lymphocytes, 1% monocytes, 1% eosinophils), hemoglobin of 10.2 g/dL, platelet count of 550 x 10^9/L, ESR of 6 mm/h, and C-reactive protein of 1 mg/L.\nA non-contrast brain CT scan revealed hydrocephalus and a hypodense lesion in the left basal ganglia. Brain MRI demonstrated intense nodular leptomeningeal enhancement in the basal, suprasellar, and prepontine cisterns and left Sylvian fissure, accompanied by moderate asymmetrical ventricular hydrocephalus with periventricular interstitial edema and encephalomalacia of the left lentiform nucleus. Magnetic resonance angiography (MRA) showed diffuse luminal narrowing of the M1 through M4 segments of the left middle cerebral artery consistent with arterial stenosis and vasculitis, while magnetic resonance venography was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Pediatric Acute Ischemic Stroke / Primary Arteriopathy",
+      "rule_out_reason": "Hemiparesis, focal motor seizures, and MCA luminal narrowing led to an initial diagnosis of acute ischemic stroke; however, thrombophilia and cardiac screening were normal, and primary thromboembolic disease cannot account for intense nodular basilar and prepontine leptomeningeal enhancement or communicating hydrocephalus.",
+      "quote": "Based on imaging findings, the patient was diagnosed with acute ischemic stroke (AIS). Therefore, aspirin and antiepileptic drugs were prescribed."
+    },
+    {
+      "candidate": "Viral Meningoencephalitis (e.g., Herpes Simplex Virus)",
+      "rule_out_reason": "Focal seizures, intracranial inflammation, and CSF pleocytosis with elevated protein prompted empiric acyclovir therapy; however, CSF HSV RT-PCR and viral smears were negative, and acyclovir was stopped.",
+      "quote": "Regarding the CSF analysis, an antibiotic and antiviral drug regimen including vancomycin, third-generation cephalosporin, and intravenous acyclovir was initiated. CSF culture, smear, cytology tests, and herpes simplex virus (HSV) reverse transcription polymerase chain reaction (RT-PCR) were negative, so acyclovir was discontinued."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recurrence of elevated intracranial pressure with hydrocephalus requiring a ventriculoperitoneal shunt, marked CSF hypoglycorrhachia (11-17 mg/dL) with elevated protein (207-314 mg/dL), and a strongly positive Mantoux tuberculin skin test (>20 mm) along with rim-enhancing basilar tuberculomas confirmed tuberculous meningitis complicated by vasculitic infarction.",
+      "quote": "Regarding the hydrocephalus, TB was suspected and a tuberculin skin test (TST) or a purified-protein derivative (PPD) skin test via the Mantoux technique was positive (>20 mm). Therefore, a standard four-drug regimen for tuberculosis treatment (isoniazid, rifampin, ethambutol, and pyrazinamide) was initiated."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt terminates at initial neuroimaging (CT/MRI/MRA) and baseline hematology. CSF analysis, PPD skin testing, VP shunt, and anti-TB therapy excluded from prompt. Direct verbatim quotes provided."
+}

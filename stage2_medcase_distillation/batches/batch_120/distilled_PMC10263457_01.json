@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10263457_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A 53-year-old male with chronic non-ischemic cardiomyopathy and dual-chamber ICD presents with recurrent sustained ventricular tachycardia (electrical storm) and worsening systolic heart failure (LVEF dropped to 20%) refractory to maximal antiarrhythmics (amiodarone, beta-blocker) and prior catheter ablations. The central clinical problem is distinguishing the underlying substrate\u2014such as ischemic scar versus chronic Chagasic myocarditis (American trypanosomiasis)\u2014and addressing drug- and catheter-refractory arrhythmic storm without prematurely naming the underlying protozoal etiology or advanced radiation therapy.\n2. Admission Breakpoint: Day 1 admission triage concludes after clinical history of recurrent ICD shocks/ATP therapies, medication review, functional assessment (NYHA class II/III), transthoracic echocardiogram demonstrating severe LV systolic dysfunction (LVEF 20%), and admission for electrical storm. Detailed electroanatomic Ripple mapping, coronary ADAS 3D scar imaging, and SBRT planning represent advanced therapeutic intervention.\n3. Differential Distinctions: Ischemic cardiomyopathy with scar-mediated re-entry is ruled out by coronary angiography integrated with 3D software showing absence of acute obstructive culprit lesions and confirming non-ischemic inferolateral basal scar. Cardiac sarcoidosis or idiopathic dilated cardiomyopathy is distinguished by the patient's long-established South American background and characteristic inferolateral-basal endo-epicardial transmural scar pattern typical of chronic Chagasic cardiomyopathy (Trypanosoma cruzi).",
+  "case_prompt": "A 53-year-old male residing in S\u00e3o Paulo, Brazil, presents with recurrent episodes of sustained ventricular tachycardia (SVT) requiring hospital admission. He has a longstanding history of chronic cardiomyopathy and underwent implantation of a dual-chamber implantable cardioverter-defibrillator (ICD) seven years earlier. His baseline left ventricular ejection fraction (LVEF) was previously 42% on transthoracic echocardiography, but has progressively worsened.\n\nDespite guideline-directed medical therapy for heart failure\u2014including enalapril 40 mg daily, spironolactone 25 mg daily, furosemide 40 mg daily, metoprolol 200 mg daily, and amiodarone 400 mg daily (including repeated amiodarone reimpregnation)\u2014he has experienced multiple admissions for recurrent SVT episodes successfully terminated by appropriate ICD therapies (anti-tachycardia pacing and shocks). He previously underwent three attempts at percutaneous catheter ablation, which were complicated by hemopericardium and hemoperitoneum requiring surgical correction.\n\nOn clinical assessment, he is in New York Heart Association (NYHA) functional class II/III. Transthoracic echocardiography demonstrates severe left ventricular systolic dysfunction with a depressed LVEF of 20%.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ischemic cardiomyopathy with post-infarction ventricular scar",
+      "rule_out_reason": "Considered due to dense inferolateral left ventricular scarring and monomorphic ventricular tachycardia in an older adult, but ruled out by coronary imaging integrated with electroanatomic data revealing non-ischemic substrate rather than coronary atherosclerotic disease.",
+      "quote": "a coronary angiography processed in a specific software (ADAS 3D , ADAS 3D Medical SL, Barcelona, Spain), which was integrated in order to facilitate the scar visualization and help demarcate SBRT targets ( Figure 1 )"
+    },
+    {
+      "candidate": "Idiopathic dilated cardiomyopathy / Cardiac sarcoidosis",
+      "rule_out_reason": "Considered in a patient with severe non-ischemic dilated cardiomyopathy and refractory ventricular tachyarrhythmias, but electroanatomic mapping demonstrated the prototypical endo-epicardial scar localized to the inferolateral-basal segment of the left ventricle pathognomonic of chronic Chagasic heart disease.",
+      "quote": "morphology of SVTs and electroanatomic mapping of previous procedures, which show the presence of endo-epicardial scar at the inferior-lateral-basal segment of the LV with a slow area of activation and conduction channels visualized on Ripple Mapping, coherent with the probable origin of the documented SVTs"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Chronic Chagas Heart Disease (American Trypanosomiasis / Trypanosoma cruzi)",
+      "rule_out_reason": "Confirmed as the foundational cause of the patient's endo-epicardial scar-mediated ventricular tachycardia storm and dilated cardiomyopathy, which had proven refractory to antiarrhythmic drugs and catheter ablations, successfully managed with stereotactic body radiation therapy (SBRT).",
+      "quote": "A 53-year-old male patient has been followed up at Instituto do Coracao (InCor) of Hospital das Clinicas da Faculdade de Medicina da Universidade de Sao Paulo (HC-FMUSP) since 2018 due to CCHD and recurrent SVT; moreover, he had a double chamber ICD implanted in 2014."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation details cardiomyopathy, ICD firings, and LVEF 20% without leaking Chagas, Trypanosoma, or SBRT. Quotes are exact matches."
+}

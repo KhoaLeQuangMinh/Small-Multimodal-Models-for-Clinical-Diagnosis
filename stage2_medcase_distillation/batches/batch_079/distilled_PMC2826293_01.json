@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2826293_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 41-year-old man presenting with classical features of Courvoisier sign—painless progressive obstructive jaundice (total bilirubin 24.4 mg/dL), weight loss, a palpable non-tender gallbladder, and a heterogeneous mass in the pancreatic head and uncinate process on CT with diffuse biliary duct dilation. In the absence of fever, pulmonary findings, or chest radiograph abnormalities, this clinical presentation is virtually indistinguishable from pancreatic ductal adenocarcinoma.\n2. Admission Breakpoint: Initial hospital admission, physical examination, baseline laboratory investigations (conjugated hyperbilirubinemia, elevated alkaline phosphatase), normal chest radiograph, and abdominal ultrasound/CT imaging showing the pancreatic head mass and biliary dilatation, prior to exploratory laparotomy, surgical resection, and histopathology.\n3. Differential Distinctions: Pancreatic ductal adenocarcinoma is the primary suspect in a patient with progressive painless obstructive jaundice, palpable gallbladder, and a discrete pancreatic head mass causing biliary tree dilation. Choledocholithiasis typically presents with acute biliary colic without a discrete parenchymal mass. Pancreatic tuberculosis is definitively established by histopathologic identification of necrotizing granulomatous inflammation with acid-fast bacilli within the pancreatic lesion.",
+  "case_prompt": "A 41-year-old Nepalese man presented with a 3-month history of gradually progressive jaundice, intermittent right upper quadrant abdominal discomfort, and a 5-kg weight loss over the preceding two months. He had no cough, fever, hemoptysis, or dyspnea. He had received BCG vaccination during childhood, but had no prior history of chronic pulmonary infections or known infectious contacts.\n\nOn physical examination, the patient was deeply icteric with diffuse scratch marks and excoriations across the skin. Abdominal examination revealed mild hepatomegaly and a palpable, non-tender gallbladder. \n\nInitial laboratory evaluation revealed a white blood cell count of 9,200/mm³ (90% neutrophils, 10% lymphocytes), hemoglobin of 12.7 g/dL, total bilirubin of 24.4 mg/dL, conjugated bilirubin of 18.0 mg/dL, alanine aminotransferase of 96 U/L (reference 5–45 U/L), aspartate aminotransferase of 161 U/L (reference 5–45 U/L), alkaline phosphatase of 593 U/L (reference 42–128 U/L), albumin of 3.5 mg/dL, and total protein of 5.7 mg/dL. Serum glucose, urea, and creatinine were normal. Plain chest radiography showed clear lung fields. Abdominal ultrasonography revealed an irregular hypoechoic lesion measuring 3.0 × 4.4 cm in the head and uncinate process of the pancreas, accompanied by dilation of the entire biliary system and a distended gallbladder with a normal main pancreatic duct. Contrast-enhanced computed tomography confirmed a heterogeneous mass in the pancreatic head and uncinate process with biliary dilatation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pancreatic Ductal Adenocarcinoma / Periampullary Malignancy",
+      "rule_out_reason": "Progressive painless obstructive jaundice, palpable gallbladder, weight loss, and a discrete heterogeneous mass in the pancreatic head causing diffuse biliary dilation is the classic presentation of pancreatic carcinoma; this led to intraoperative resection, but histopathology subsequently demonstrated necrotizing granulomas rather than neoplasia.",
+      "quote": "The patient underwent pancreatoduodencetomy with intraoperative diagnosis of pancreatic carcinoma."
+    },
+    {
+      "candidate": "Choledocholithiasis with Biliary Stricture",
+      "rule_out_reason": "Obstructive jaundice with right upper quadrant discomfort can arise from common bile duct stones, but imaging clearly demonstrated a discrete parenchymal mass in the pancreatic head and uncinate process rather than intraductal calculi.",
+      "quote": "Abdominal ultrasound examination revealed an irregular hypoechoic lesion of 3 cm x 4.4 cm in the head and uncinate process of pancreas, and with dilation of entire bile duct system, distended gall bladder with normal pancreatic duct."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the resected pancreatic head mass demonstrated necrotizing granulomatous inflammation with positive staining for acid-fast bacilli, confirming isolated pancreatic tuberculosis.",
+      "quote": "However, the histopathology from the pancreatic mass revealed necrotizing granulomatous lesion which was positive for acid fast bacilli."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to laparotomy and histopathological examination. Zero pathogen names or spoilers in the case prompt."
+}

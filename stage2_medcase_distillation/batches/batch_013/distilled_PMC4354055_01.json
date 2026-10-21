@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4354055_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Isolated pubic symphysis pain with radiographic erosion in an endemic setting typically masquerades as non-infectious osteitis pubis or athletic pubalgia, but accompanying constitutional symptoms (evening fever, significant weight loss, leukocytosis, elevated ESR) strongly suggest an indolent granulomatous infection.\n2. Admission Breakpoint: The breakpoint occurs after conservative management (rest and NSAIDs) fails and initial baseline workup (pelvic radiography, CBC, ESR, Mantoux, CXR) demonstrates pubic symphyseal erosion with systemic inflammation, immediately prior to interventional fine needle aspiration cytology (FNAC).\n3. Differential Distinctions: Osteitis pubis is excluded by prominent systemic features (fevers, 8 kg weight loss), inflammatory leukocytosis, and complete non-response to NSAIDs. Pyogenic osteomyelitis typically presents more acutely with focal soft-tissue swelling or abscess formation. Athletic pubalgia/stress injury is excluded by the lack of physical exertion or mechanical trauma.",
+  "case_prompt": "A 50-year-old female from a low socioeconomic background in New Delhi, India, presented with a 6-week history of dull, aching suprapubic pain that was persistent throughout the day and worsened significantly upon standing and walking. Over the preceding three months, she noted low-grade evening fevers and an unintended weight loss of 8 kg. She had no history of antecedent trauma, athletic exertion, infection, or pelvic surgery, and no known history of chronic infectious disease in herself or sick contacts. Physical examination revealed deep tenderness sharply localized over the pubic symphysis, without palpable swelling, erythema, or inguinal lymphadenopathy. Digital rectal examination was unremarkable. A plain radiograph of the pubic bones demonstrated focal bony erosion of the pubic symphysis. She was initially managed conservatively with rest, hot water fomentation, and non-steroidal anti-inflammatory drugs (NSAIDs) for three weeks, yet her pain persisted without relief over the ensuing six weeks. Follow-up triage investigations showed a white blood cell count of 14,300/mm³ and an erythrocyte sedimentation rate (ESR) of 54 mm/hr. A Mantoux test was non-conclusive, and a chest radiograph was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Osteitis pubis",
+      "rule_out_reason": "Considered initially due to suprapubic pain and pubic symphysis erosion on plain radiograph, but ruled out by persistent refractory symptoms despite conservative anti-inflammatory management, marked constitutional weight loss, evening fevers, and systemic inflammatory elevation.",
+      "quote": "An initial diagnosis of osteitis pubis was made and the patient was prescribed rest, hot water fomentation and non-steroidal anti-inflammatory drugs (NSAIDS) for three weeks. Patient continued to have pain even after six weeks of treatment."
+    },
+    {
+      "candidate": "Traumatic osteitis or athletic pubalgia",
+      "rule_out_reason": "Considered in patients presenting with isolated pubic symphysis tenderness, but excluded by the absence of athletic training, mechanical injury, or prior pelvic intervention.",
+      "quote": "There was no history suggestive of any trauma, athletic exertion, infection or surgical procedure in the patient."
+    },
+    {
+      "candidate": "Active pulmonary tuberculosis",
+      "rule_out_reason": "Considered given the constitutional fevers and weight loss in an endemic region, but ruled out as an active primary or secondary pulmonary focus by clear chest radiography and absence of respiratory signs.",
+      "quote": "Chest radiographs were normal... In our case, patient had no active cough and no symptoms/sign of active TB and so no smear was taken."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine needle aspiration cytology of the eroded pubic symphysis revealed epithelioid cell clusters, histiocytes, and caseous necrosis, confirming tuberculous osteitis of the pubic symphysis, followed by complete clinical resolution upon receiving standard antitubercular therapy.",
+      "quote": "Fine needle aspiration (FNA) from the pubic symphysis showed epithelioid cell clusters admixed with histiocytes in a background of caseous necrosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint maintained prior to invasive FNAC. Plain X-ray and triage labs included without disease or pathogen spoilers."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8847199_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 54-year-old female carrier of chronic hepatitis B virus presents with right upper quadrant abdominal discomfort exacerbated by fatty foods and a markedly elevated alpha-fetoprotein. The diagnostic challenge is recognizing that an atypical calcified hepatic space-occupying lesion represents not merely necrotic or dystrophic hepatocellular carcinoma, but concurrent endemic parasitic echinococcosis (hydatid cyst) coexisting within a cirrhotic, neoplastic liver.\n2. Admission Breakpoint: The breakpoint is reached following outpatient triage, baseline liver biochemistries, hepatitis serologies, serum alpha-fetoprotein quantification, and initial contrast-enhanced abdominal CT imaging, prior to the Casoni intradermal test, surgical hepatectomy, and histopathologic tissue examination.\n3. Differential Distinctions: Solitary hepatocellular carcinoma in the setting of chronic hepatitis B can develop central necrosis and dystrophic calcification, but pastoral childhood residence and circumferential calcified cystic architecture strongly point to hydatid coinfection. Hepatic pyogenic abscess typically presents with acute febrile illness and leukocytosis rather than normal/low WBC and chronic postprandial symptoms.",
+  "case_prompt": "A 54-year-old female presents with a one-month history of intermittent upper abdominal pain and discomfort that worsens following ingestion of fatty foods. She has a history of chronic hepatitis B virus (HBV) infection since childhood without prior antiviral therapy or HBV DNA monitoring, as well as a family history of HBV carriage in her mother and siblings. She lived in a pastoral area during childhood. Surgical history is notable for an appendectomy performed in 2009 with unremarkable recovery.\nAdmission laboratory evaluation reveals: white blood cell count 3.7 × 10^9/L, red blood cell count 4.32 × 10^12/L, platelet count 119 × 10^9/L, total bilirubin 11.7 µmol/L (normal range: 3.8–25.8 µmol/L), direct bilirubin 5.4 µmol/L (normal range: 0–6.8 µmol/L), alanine aminotransferase (ALT) 359 U/L (normal range: 0–50 U/L), and aspartate aminotransferase (AST) 200 U/L (normal range: 0–50 U/L). Serum alpha-fetoprotein (AFP) is markedly elevated at 1,210 ng/mL (normal range: 0–7 ng/mL). Viral serology is positive for HBsAg, HBeAg, anti-HBe, and anti-HBc, and negative for anti-HBs; serum HBV DNA is 5.32 × 10^3 IU/mL (normal < 1.0 × 10^2 IU/mL). Upper and lower endoscopies show no abnormalities.\nContrast-enhanced computed tomography (CT) of the abdomen reveals space-occupying liver lesions in the right anterior hepatic lobe, showing features of a hypervascular hepatic malignancy accompanied by a distinct well-defined lesion with prominent curvilinear calcification.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Solitary Hepatocellular Carcinoma (without parasitic coinfection)",
+      "rule_out_reason": "Although chronic active hepatitis B, cirrhosis, and extreme serum alpha-fetoprotein elevation (1,210 ng/mL) confirmed underlying HCC, the presence of dense peripheral arc-like calcifications in an endemic pastoral resident suggested an independent second pathology, which was verified by intradermal Casoni positivity and dual pathology on surgical resection.",
+      "quote": "The patient had a history of HBV infection and did not receive regular antiviral treatment, and AFP was significantly increased."
+    },
+    {
+      "candidate": "Pyogenic or amebic hepatic abscess",
+      "rule_out_reason": "An infectious bacterial or amebic abscess typically produces high fevers, acute right upper quadrant peritonism, and leukocytosis; in contrast, this patient had a normal-to-low leukocyte count (3.7 × 10^9/L) and thick circumferential calcifications inconsistent with acute purulent liquefaction.",
+      "quote": "Laboratory examination results were as follows: white blood cells (WBC) 3.7 x 10 9 per L, red blood cells (RBC) 4.32 x 1012 per L, platelet (PLT) 119 x 109 per L"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Epidemiologic history of pastoral residence, positive Casoni intradermal test, and abdominal CT demonstrating conspicuous calcification within a discrete hepatic space-occupying lesion, definitively confirmed on surgical specimen pathology as hydatid infection coexisting with moderately differentiated hepatocellular carcinoma.",
+      "quote": "Pathological results were infiltrating moderately differentiated hepatocellular carcinoma of the liver, with tumor thrombus in the vessel, accompanied by hydatid infection."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Dual-pathology case illustrating coexisting parasitic hydatid cyst and primary hepatocellular carcinoma in a pastoral resident with chronic hepatitis B. Breakpoint strictly excludes Casoni intradermal testing and surgical pathology."
+}

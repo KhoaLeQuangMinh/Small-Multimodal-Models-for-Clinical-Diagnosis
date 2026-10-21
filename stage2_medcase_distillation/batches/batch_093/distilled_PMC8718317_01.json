@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8718317_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 85-year-old man presents with acute, constant generalized abdominal pain and elevated systemic inflammatory markers. The clinical tension lies in differentiating complicated intra-abdominal infection or peritonitis (e.g., ruptured visceral abscess, perforated viscus) from acute rupture and secondary peritoneal dissemination of slow-growing parasitic hepatic hydatid disease.\n2. Admission Breakpoint: The breakpoint occurs following emergency surgical clinic evaluation, triage inflammatory blood tests (ESR, CRP), and contrast-enhanced abdominopelvic CT imaging, prior to exploratory laparotomy, intraoperative cyst aspiration, and definitive histopathological analysis.\n3. Differential Distinctions: Pyogenic or amebic liver abscess with intra-abdominal rupture typically causes severe toxic signs, high spiking fevers, acute guarding/rigidity, and marked leukocytosis, whereas cystic echinococcosis classically presents with indolent well-encapsulated multilocular cysts, undulating detached internal membranes (water lily sign), and can remain quiescent until spontaneous or traumatic intraperitoneal spillage. Non-parasitic peritoneal or mesenteric cysts lack detached endocyst membranes or signs of hepatic capsular perforation.",
+  "case_prompt": "An 85-year-old previously healthy man presents to the surgical clinic with acute, generalized, constant dull abdominal pain that began two days prior to evaluation, rated 4 out of 10 in severity with no radiation and no correlation to meals or exertion. He reports no recent fever, nausea, vomiting, or prior history of hospitalization or surgery.\nOn physical examination, vital signs are: heart rate 98 beats per minute, respiratory rate 14 breaths per minute, blood pressure 115/70 mmHg, and axial temperature 37.3°C. The abdomen is soft with mild generalized tenderness, without rebound tenderness or involuntary guarding. There is no organomegaly, abdominal scar, or hernia. The rest of the examination is normal.\nAdmission laboratory evaluation demonstrates a normal complete blood count and unremarkable blood chemistry, notable only for an elevated erythrocyte sedimentation rate (ESR) of 53 mm/hr (reference range: 0–22 mm/hr) and an elevated C-reactive protein (CRP) of 187 mg/L (reference range: <10 mg/L).\nContrast-enhanced abdominopelvic computed tomography (CT) reveals well-circumscribed cystic lesions in the right and left lobes of the liver with internal undulating detached membranes (water lily sign) exerting mass effect on the adjacent diaphragm and left hepatic lobe, accompanying free intra-abdominal fluid, and a distinct 10 × 13 cm encapsulated cystic mass abutting the bladder dome.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic or amebic liver abscess with intraperitoneal rupture",
+      "rule_out_reason": "Hepatic abscess rupture typically manifests with high fevers, leukocytosis, and acute peritonitic signs; this patient had a normal white blood cell count, mild afebrile tenderness without peritonism, and CT imaging demonstrated well-demarcated encapsulated fluid collections with floating endocyst membranes rather than purulent thick-walled abscess cavities.",
+      "quote": "Complete blood count was normal, and blood chemistry did not show any abnormal findings other than high ESR (53 mm/hr) and high CRP (187 mg/l) with the normal range of ESR (0-22 mm/hr for men) and CRP < 10 mg/l."
+    },
+    {
+      "candidate": "Benign mesenteric or simple peritoneal inclusion cyst",
+      "rule_out_reason": "Simple intra-abdominal epithelial cysts typically lack internal membranes, do not elevate inflammatory markers (CRP 187 mg/L), and are not associated with concurrent multi-organ liver lesions or intra-abdominal bloody fluid originating from hepatic perforation.",
+      "quote": "There was an intact cyst without any invasion right above the bladder with 10*13 cm size and hepatic origin."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast-enhanced CT demonstrating pathognomonic detached undulating laminar membranes (water lily sign) within hepatic cysts and a pelvic cystic mass, confirmed on laparotomy and histopathological examination of the excised cyst capsule as echinococcal hydatid disease.",
+      "quote": "On histopathological examination, hydatid cyst diagnosis was confirmed for the bladder dome cyst (Figure 4)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Classic presentation of secondary peritoneal hydatidosis following spontaneous hepatic cyst perforation. CT imaging objectively describes detached internal membrane morphology without naming the pathogen; strict breakpoint stops before surgical histopathology."
+}

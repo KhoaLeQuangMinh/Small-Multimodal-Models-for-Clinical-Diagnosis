@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4489939_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A chronic, destructive nodular and fistulizing soft tissue process affecting the upper extremity and neck in a tropical immigrant mimics cutaneous tuberculosis (scrofuloderma), advanced hidradenitis suppurativa, or fungal infection, but the hallmark is the triad of tumefaction, sinus tracts, and grain extrusion.\n2. Admission Breakpoint: The breakpoint occurs upon initial clinical presentation with 6 months of nodular swellings and axillary/cervical fistulae following environmental forest exposure, immediately before deep surgical biopsy and histological staining.\n3. Differential Distinctions: Scrofuloderma/cutaneous mycobacteriosis presents with cold abscesses and caseation without Splendore-Hoeppli grain formation. Eumycetoma produces thick fungal hyphae and fails antibacterial therapy, whereas actinomycetoma shows fine filamentous grains and responds to prolonged targeted antibiotic regimens.",
+  "case_prompt": "A 27-year-old male immigrant from Mali presented with a 6-month history of progressive, inflammatory nodular swelling over his right arm extending proximally to the neck. His medical history was notable for prolonged forest living during conflicts in his home country. Physical examination revealed diffuse nodular tumefaction of the right upper extremity and neck, with multiple draining fistulous tracts situated in the cervical and axillary regions. Baseline laboratory evaluation showed serologic evidence of active viral hepatitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous tuberculosis / Scrofuloderma",
+      "rule_out_reason": "Considered given the chronic fistulizing cervical and axillary lymphocutaneous lesions in an immigrant from West Africa, but histopathology revealed grain-centered microabscesses exhibiting the Splendore-Hoeppli phenomenon rather than typical caseating granulomatous lymphadenitis.",
+      "quote": "Microscopy on hematoxylin and eosin stained sections showed nodular abscesses organized around multilobated grains showing Splendore-Hoeppli Phenomenon (B)."
+    },
+    {
+      "candidate": "Pyogenic bacterial abscess / Hidradenitis suppurativa",
+      "rule_out_reason": "Considered due to the chronic discharging sinus tracts in the axilla and neck, but routine aerobic and anaerobic microbiological cultures were sterile.",
+      "quote": "A deep biopsy was made for infectious and histopathological examinations. Cultures were negative."
+    },
+    {
+      "candidate": "Eumycetoma",
+      "rule_out_reason": "Considered due to the characteristic tumefaction and sinus tract formation following forest exposure, but ruled out in favor of an actinomycotic etiology due to special stain positivity (Gram, Ziehl-Neelsen, Gomori Grocott) and clinical response to antibacterial regimens.",
+      "quote": "Special stains (Gram, Ziehl-Neelsen, Gomori Grocott) were positive. Thus, the histological diagnosis of actinomycetoma probably due to Nocardia was given."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Deep surgical biopsy demonstrated nodular microabscesses organized around multilobated grains displaying the Splendore-Hoeppli phenomenon with positive Gram, acid-fast, and silver staining, confirming actinomycetoma, leading to treatment with trimethoprim-sulfamethoxazole and amoxicillin-clavulanate.",
+      "quote": "Microscopy on hematoxylin and eosin stained sections showed nodular abscesses organized around multilobated grains showing Splendore-Hoeppli Phenomenon (B). Special stains (Gram, Ziehl-Neelsen, Gomori Grocott) were positive. Thus, the histological diagnosis of actinomycetoma probably due to Nocardia was given."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to deep tissue biopsy. Forest exposure retained; pathogen and histology findings kept out of case prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5410008_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 36-month-old child presents with an eight-month history of localized pain, swelling, and a chronic discharging sinus over the ulnar dorsum of the right hand that failed an extended trial of oral aminopenicillin-clavulanate. The primary diagnostic tension lies in distinguishing between pyogenic chronic osteomyelitis, primary pediatric osseous neoplasm, and isolated skeletal tuberculous dactylitis in an immunocompetent, BCG-vaccinated toddler without pulmonary symptoms or known household contacts.\n2. Admission Breakpoint: The admission clinical triage concludes after hand radiography reveals an expansile, cystic, and lytic lesion with cortical erosion involving the fifth metacarpal, along with baseline laboratory findings showing mild anemia and elevated ESR with normal WBC, CRP, and chest radiograph, before tuberculin skin testing or invasive intra-osseous biopsy.\n3. Differential Distinctions: Pyogenic chronic osteomyelitis typically involves acute bacterial flora responsive to beta-lactamase inhibitors and yields positive routine bacterial cultures, whereas this lesion was refractory and purulent aspirates were culture-negative; primary bone neoplasm (such as aneurysmal bone cyst, osteosarcoma, or Ewing sarcoma) produces expansile lytic bone lesions on radiograph but does not account for a draining chronic sinus tract or caseating granulomas; whereas isolated metacarpal tuberculosis (spina ventosa) characteristically causes painless or slowly progressive cystic cortical expansion with sinus formation and caseous necrosis surrounded by epithelioid and giant cells.",
+  "case_prompt": "A 36-month-old child of low socioeconomic status was brought to the clinic with an eight-month history of persistent pain and progressive swelling over the dorsum of the right hand, complicated by the development of a discharging sinus over the preceding two months. Prior to presentation, the child had completed a one-month course of oral amoxicillin-clavulanic acid prescribed by a community practitioner without clinical response. There was no documented family history of chronic infectious disease, no known contacts with chronic productive cough, and no prior local extremity trauma. The child had received routine neonatal vaccination with Bacillus Calmette-Guérin (BCG) at birth.\n\nOn physical examination, the child was afebrile, well-nourished, and in no acute distress, with normal vital signs and age-appropriate weight. Local examination of the right hand demonstrated a 2 x 2 cm tender, fluctuant swelling on the ulnar dorsal aspect overlying the fifth metacarpal, associated with an active, narrow draining sinus tract discharging seropurulent material. The remainder of the systemic physical examination was unremarkable.\n\nInitial plain radiography of the right hand revealed an expansile, cystic, and lytic lesion with cortical erosion involving the fifth (little finger) metacarpal. Baseline laboratory evaluations demonstrated a hemoglobin level of 10 g/dL and an accelerated erythrocyte sedimentation rate (ESR) of 35 mm/h; the white blood cell count and C-reactive protein (CRP) level were within normal reference ranges. A screening plain chest radiograph was clear, without infiltrates, cavitations, or hilar lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic pyogenic osteomyelitis",
+      "rule_out_reason": "Bacterial osteomyelitis typically responds to standard broad-spectrum antibiotic therapy and yields positive bacterial cultures, whereas this patient experienced treatment failure with amoxicillin-clavulanate and showed sterile purulent drainage.",
+      "quote": "She was treated by amoxicillin-clavulanic acide for 1 month by another doctor without success... No organisms were cultured in the purulent materiel"
+    },
+    {
+      "candidate": "Primary bone tumor / osseous neoplasm",
+      "rule_out_reason": "An expansile, cystic, and lytic bone lesion with cortical erosion on plain radiography strongly suggested a benign or malignant bone neoplasm; however, the presence of a draining sinus and histopathologic findings of caseating granulomas excluded malignancy.",
+      "quote": "The overall appearances were suggestive of chronic osteomyelitis, metacarpal tuberculosis or bony tumor."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive tuberculin skin testing followed by intra-osseous biopsy of the metacarpal lesion demonstrating classic caseous necrosis surrounded by epithelioid and Langhans giant cells established the diagnosis of isolated tuberculous dactylitis.",
+      "quote": "A tuberculin skin test was positive (13/12mm) after 48 hours of test dose... Histopathology of intra-osseous tissus removed at biopsy confirmed the diagnosis of bone tuberculosis, with typical caseous necrosis surrounded by epithelioid and giant-cell follicles."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled with strict adherence to admission breakpoint. TST and biopsy excluded from case prompt."
+}

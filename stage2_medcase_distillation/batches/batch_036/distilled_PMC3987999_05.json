@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3987999_05",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 61-year-old woman presents with acute febrile gastrointestinal and musculoskeletal illness (fever, myalgia, vomiting, diarrhea) and normal renal/metabolic panels, who experiences sudden catastrophic cardiovascular collapse and fatal pulmonary edema. The clinical tension centers on distinguishing acute viral gastroenteritis or primary cardiogenic shock/myocardial infarction from severe arboviral plasma leakage with acute viral myocarditis.\n2. Admission Breakpoint: Admission triage concludes after emergency clinical assessment and baseline laboratory evaluation (serum creatinine 1.07 mg/dL, blood urea 22.9 mg/dL, blood glucose 104 mg/dL). Confirmatory progression and autopsy findings (acute pulmonary edema, pericardial effusion, bilateral pleural effusions, myocarditis, and multiorgan histopathology) begin immediately thereafter.\n3. Differential Distinctions: Acute gastroenteritis causes fever, vomiting, and diarrhea, but does not induce polyserositis (bilateral pleural and pericardial effusions), diffuse cyanosis, or fatal non-cardiogenic pulmonary edema with acute myocarditis. Acute myocardial infarction / acute coronary syndrome in a 61-year-old can present with sudden cardiogenic pulmonary edema and arrest, but the preceding multi-day acute febrile illness with severe myalgias, gastrointestinal losses, polyvisceral congestion, and diffuse lymphoid follicle depletion reflects a systemic pantropic viral infection.",
+  "case_prompt": "A 61-year-old woman is admitted to the hospital with an acute febrile syndrome characterized by high fever, severe generalized myalgias, nausea, persistent vomiting, and watery diarrhea.\n\nOn physical examination upon admission, she is acutely ill and distressed. Vital signs indicate hemodynamic instability with peripheral cyanosis of the extremities. Chest examination reveals bilateral diminished breath sounds at the bases, and cardiovascular examination reveals tachycardia without obvious murmur.\n\nEmergency biochemical investigations on admission reveal: serum creatinine 1.07 mg/dL, blood urea nitrogen 22.9 mg/dL, and random blood glucose 104 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Infectious Gastroenteritis",
+      "rule_out_reason": "Considered due to prominent nausea, persistent vomiting, diarrhea, and fever, but uncomplicated gastroenteritis cannot account for the rapid progression to polyserositis, peripheral cyanosis, and fatal pulmonary edema.",
+      "quote": "A 61-year-old female hospitalized with suspected dengue symptoms (fever, myalgia, vomiting and diarrhea)."
+    },
+    {
+      "candidate": "Acute Myocardial Infarction / Cardiogenic Shock",
+      "rule_out_reason": "Considered in a 61-year-old presenting with acute pulmonary edema and sudden cardiac arrest, but the preceding febrile prostration with severe myalgia, gastrointestinal symptoms, bilateral pleural and pericardial effusions, and autopsy evidence of acute viral myocarditis with lymphoid follicle depletion demonstrated a systemic infectious etiology rather than isolated ischemic coronary event.",
+      "quote": "The patient died by acute pulmonary edema with sudden cardiac arrest... On the other hand, all dengue cases, except case 2, presented myocarditis with cardiac fibers degradation and the loss of striations and nucleus (Figs. 5b and 5c)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid development of multi-serosal effusion (pleural and pericardial effusions), fulminant pulmonary edema, and cardiac arrest in the setting of an endemic arboviral outbreak, confirmed on post-mortem histopathology by diffuse micro- and macrosteatosis, acute interstitial myocarditis, alveolar septal thickening, acute tubular necrosis, and lymphoid follicular depletion characteristic of severe DENV-3 infection.",
+      "quote": "The patient died by acute pulmonary edema with sudden cardiac arrest... Cyanosis of the extremities, bilateral pleural effusion, bilateral pulmonary edema, pericardial effusion... all dengue cases, except case 2, presented myocarditis with cardiac fibers degradation and the loss of striations and nucleus"
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC3987999_05. Admission prompt preserves presentation (fever, myalgia, vomiting, diarrhea, Cr 1.07, urea 22.9, glucose 104) without diagnostic spoilers. Canonical disease: Dengue."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2841383_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old male with a history of treated bilateral panuveitis presents with indolent, painless right upper eyelid swelling and a remote history of episodic unilateral facial edema. The clinical dilemma centers on differentiating local orbital pathology (such as orbital pseudotumor or thyroid eye disease) from an unusual oligosymptomatic presentation of Melkersson-Rosenthal syndrome (orofacial granulomatosis) linked to systemic mycobacterial infection.\n2. Admission Breakpoint: Admission triage concludes following ophthalmologic examination, funduscopy, basic metabolic and thyroid panels, and orbital/cranial computed tomography, immediately prior to tuberculin skin testing, vitreous fluid PCR analysis, and eyelid biopsy.\n3. Differential Distinctions: Thyroid-associated orbitopathy and renal edema are excluded by normal endocrine and renal function tests; orbital pseudotumor or neoplastic lesions are excluded by normal orbital imaging; underlying tuberculosis driving panuveitis and granulomatous blepharitis is established by strongly positive tuberculin testing, a calcified pulmonary granuloma, and ocular molecular diagnostics.",
+  "case_prompt": "A 45-year-old male presented for evaluation of intermittent right upper eyelid swelling of 4 months' duration, which was notably more prominent during daytime hours. Five years prior to presentation, he had experienced episodes of recurrent left-sided facial edema that resolved without diagnostic workup. He had also received prolonged medical therapy over the preceding year for bilateral panuveitis, with complete clinical resolution of ocular inflammation and no subsequent recurrences.\n\nOn physical examination, he exhibited no facial nerve palsy and no furrowing of the tongue. Ocular examination revealed firm, non-tender, non-pitting edema involving the entire right upper eyelid. Best-corrected visual acuity was 20/20 in both eyes. Slit-lamp examination was unremarkable. Dilated fundus examination revealed areas of healed retinal vasculitis and multifocal choroiditis without active vitritis or retinitis.\n\nInitial laboratory evaluation, including thyroid function tests and renal function tests, was entirely normal. Plain chest radiography demonstrated a solitary calcified nodule. Computed tomography of the cranium and orbits revealed normal globes, extraocular muscles, and retrobulbar orbital spaces without mass effect or inflammatory infiltration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Thyroid Eye Disease / Systemic Edema",
+      "rule_out_reason": "Intermittent, non-pitting eyelid edema can represent early dysthyroid orbitopathy or systemic fluid retention; however, thyroid function tests and renal function panels were within normal limits.",
+      "quote": "Thyroid function tests, renal function tests and computed tomography of the cranium and orbits were normal."
+    },
+    {
+      "candidate": "Idiopathic Orbital Inflammatory Pseudotumor",
+      "rule_out_reason": "Unilateral eyelid swelling with a history of uveitis could suggest an idiopathic orbital inflammatory condition; however, orbital computed tomography was unremarkable with no mass lesions, muscle enlargement, or retrobulbar stranding.",
+      "quote": "computed tomography of the cranium and orbits were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough was establishing an underlying mycobacterial etiology for the patient's panuveitis and granulomatous eyelid disease, demonstrated by a strongly reactive tuberculin skin test (25-mm induration), a calcified pulmonary nodule, and detection of Mycobacterium tuberculosis genome in vitreous humor by PCR.",
+      "quote": "ATT was given for a possible tubercular etiology on the basis of a strongly positive Mantoux test (25-mm induration), a calcified nodule on chest X-ray and demonstration of Mycobacterium tuberculosis (MTb) genome by polymerase chain reaction (PCR) on the vitreous sample."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

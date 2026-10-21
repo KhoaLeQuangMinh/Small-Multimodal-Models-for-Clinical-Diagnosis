@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8343840_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 14-year-old girl presents with an 8-year history of cyclical, purulent sinus drainage and dull pain over the lateral right thigh following multiple incisions for suspected pyomyositis and subfascial abscess. In the absence of constitutional symptoms (fever, weight loss) and with isolated positive swab cultures growing environmental bacteria (Pseudomonas stutzeri), chronic draining fistulae in the lower extremity are easily mistaken for persistent pyogenic soft tissue abscesses, obscuring an underlying indolent musculoskeletal mycobacterial infection.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following outpatient orthopedic triage, normal baseline labs, initial imaging (normal femur radiograph and ultrasound showing a 3x1 cm fluid collection), failure of ciprofloxacin therapy, and subsequent hip radiograph demonstrating a greater trochanter lytic lesion, strictly prior to surgical fistula exploration, bursectomy, and mycobacterial cultures.\n3. Differential Distinctions: Pyomyositis and simple pyogenic abscess are excluded by multi-year chronicity and failure to resolve despite surgical drainage and conventional antibiotics. Secondary Pseudomonas infection represents superficial colonization given complete non-response to oral ciprofloxacin. The presence of a chronic cutaneous fistula communicating with a lytic lesion of the greater trochanter points toward tuberculous trochanteric bursitis.",
+  "case_prompt": "A 14-year-old girl presents to a tertiary pediatric orthopedic clinic with a multi-year history of dull pain and periodic purulent wound drainage on the lateral aspect of her right thigh. Eight years prior to presentation, she underwent surgical incision and drainage at an outside hospital for right thigh fluctuance and swelling, which was treated as pyomyositis. Ten months later, recurrent swelling and purulent drainage prompted a second surgical incision for what was diagnosed as a recurrent subfascial abscess. For the subsequent seven years, the patient experienced recurring monthly purulent drainage preceded by dull thigh pain and local swelling, with no accompanying fevers or malaise.\n\nOn physical examination, there is a chronic wound on the lateral right thigh with mild purulent drainage and surrounding erythema. Palpation elicits mild tenderness; active and passive range of motion of the right hip and knee are full and painless.\n\nBaseline serum laboratory values are within normal limits. A superficial wound swab culture yields Pseudomonas stutzeri. Initial plain radiographs of the right femur are normal. A soft tissue ultrasound of the thigh demonstrates a sharply marginated hypoechoic collection measuring 3 x 1 cm between the musculature and subcutaneous adipose tissue, interpreted as a localized abscess. A 10-day course of oral ciprofloxacin fails to alter the physical findings or decrease drainage. Subsequently, the patient develops acute right hip pain; plain radiography of the right hip reveals a lytic lesion within the greater trochanter with partial surrounding reactive sclerosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyomyositis of the Vastus Lateralis / Recurrent Bacterial Subfascial Abscess",
+      "rule_out_reason": "Suspected during initial presentations due to localized fluctuance and purulent collection, but recurred repeatedly over eight years despite two formal surgical evacuations and prolonged empiric oral antibacterial regimens.",
+      "quote": "These symptoms were initially suspected to be caused by pyomyositis of the vastus lateralis... However, 10 months later, swelling, pain and purulent drainage reappeared at the place of the initial incision. The patient underwent repeated surgical incision and evacuation of what was considered to be a recurrent subfascial abscess."
+    },
+    {
+      "candidate": "Secondary Pyogenic Infection / Pseudomonas stutzeri Soft Tissue Abscess",
+      "rule_out_reason": "Considered as a potential primary pathogen after a superficial swab grew Pseudomonas stutzeri, but targeted antibacterial therapy produced no clinical or physical response.",
+      "quote": "Microbiology results became positive for Pseudomonas stutzeri, while the laboratory findings were within the normal range... Oral ciprofloxacin 1,000 mg was prescribed for 10 days; however, there was no change in her exam. Therefore, due to clinical presentation and according to previous diagnostic work-up findings, recurrent abscess was suspected."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Tuberculous Trochanteric Bursitis (Extrapulmonary Tuberculosis)",
+      "rule_out_reason": "The constellation of an indolent draining sinus communicating with an expanded trochanteric bursa and an osteolytic trochanteric defect was definitively confirmed by positive mycobacterial culture and histopathologic verification of necrotizing granulomatous inflammation.",
+      "quote": "Prior to first postoperative visit, the microbiology culture returned positive for Mycobacterium tuberculosis (M. tuberculosis)... In the retrospective analysis of the initial cytology report from eight years ago, it was clearly reported as granulomatous inflammation with necrosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning guidelines. Admission prompt eliminates all pathogen names and diagnostic spoilers prior to deep surgical bursectomy and AFB culture."
+}

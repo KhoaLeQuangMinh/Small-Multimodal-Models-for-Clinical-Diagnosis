@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7881412_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 61-year-old male with a history of hepatic cyst resection 4 years earlier presenting with postprandial abdominal pain, obstructive jaundice, severe ascites, and lower extremity edema. Imaging demonstrates a calcified hepatic cyst, common bile duct dilation with multiple filling defects, and cirrhotic architecture, mimicking cholangiocarcinoma, primary choledocholithiasis, or decompensated cryptogenic cirrhosis.\n2. Admission Breakpoint: At admission following physical exam, liver biochemical tests (cholestatic jaundice: total bilirubin 8.9 mg/dL, direct 6.1 mg/dL, ALP 5x ULN), CA19-9, ultrasound, abdominopelvic CT, and diagnostic paracentesis (high SAAG transudate with negative cytology), prior to endoscopic retrograde cholangiopancreatography (ERCP).\n3. Differential Distinctions: Cholangiocarcinoma causes progressive biliary obstruction with elevated CA19-9 or malignant cells on cytology; primary choledocholithiasis presents with gallstones without parasitic membranes. Echinococcosis (hydatid disease) complicated by cystobiliary fistula is established when parasitic hydatid membranes and secondary pigmented stones are extracted from the biliary tree during ERCP.",
+  "case_prompt": "A 61-year-old man with a 20-year history of chronic obstructive pulmonary disease and surgical resection of a hepatic cyst 4 years prior presented to the emergency department of a referral hospital in Tehran, Iran, with recurrent postprandial upper abdominal pain, progressive jaundice, abdominal distension, and bilateral lower extremity edema. He denied systemic symptoms including fevers, chills, or malaise.\n\nOn physical examination, he was afebrile and hemodynamically stable: blood pressure 120/75 mmHg, heart rate 85 beats per minute, respiratory rate 16 per minute, and oxygen saturation 95% while breathing ambient air. Marked jaundice was present, along with shifting abdominal dullness and bilateral edema of the lower extremities.\n\nLaboratory testing revealed marked cholestasis and hepatic injury: serum aminotransferases demonstrated an elevation of about 3 times the upper limit of normal, alkaline phosphatase (ALP) was increased up to 5 times the upper limit of normal, total bilirubin was 8.9 mg/dL with a direct bilirubin of 6.1 mg/dL. Serum CA19-9 level was normal. Diagnostic paracentesis revealed a high serum-ascites albumin gradient (high SAAG) and low protein fluid with negative cytology for malignancy.\n\nAbdominopelvic ultrasonography and computed tomography (CT) demonstrated a heterogeneous liver parenchymal echo pattern consistent with cirrhosis, moderate ascites, and a 5.4 x 4 cm cystic lesion in the right liver lobe adjacent to the prior surgical scar containing few calcified foci in its wall. There was generalized dilation of the common bile duct, common hepatic duct, and intrahepatic bile ducts with heterogeneous intraluminal filling defects and gallbladder sludge.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cholangiocarcinoma / Biliary Tract Malignancy",
+      "rule_out_reason": "Considered given marked obstructive jaundice, biliary ductal dilation with intraluminal filling defects, and new ascites; excluded by normal serum CA 19-9 levels, negative ascites fluid cytology, and absence of an infiltrative malignant mass on cross-sectional imaging.",
+      "quote": "Serum CA19-9 level was normal."
+    },
+    {
+      "candidate": "Primary Choledocholithiasis / Cholelithiasis",
+      "rule_out_reason": "Considered as the primary cause of biliary obstruction and jaundice; although biliary stones and sludge were present, endoscopic intervention revealed they were secondary to parasitic cyst rupture and membrane passage rather than primary biliary lithiasis alone.",
+      "quote": "We then performed dilation with balloon TTS 12-15 and more than 20 pigmented stones, sludge and pus were extracted by balloon. Finally, a 7cm, 10Fr-plastic stent was inserted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat endoscopic retrograde cholangiopancreatography (ERCP) extracted more than 30 pigmented calculi along with classic hydatid cyst laminar membranes from the common bile duct, confirming a communicating cystobiliary fistula from the calcified hepatic hydatid cyst resulting in secondary biliary cirrhosis and portal hypertension.",
+      "quote": "The procedure revealed more than 30 pigmented stones and hydatid cysts membranes in common bile duct which were extracted completely. An extracted stone has been disclosed in figure-4. Given the patient's clinical picture, laboratory results, imaging and ERCP findings in addition to negative secondary work -ups for cirrhosis, we suspected a diagnosis of hydatid cyst with cystobiliary fistula formation resulting in a portal hypertension and cirrhosis."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to pre-ERCP admission breakpoint. Prior surgery carefully de-identified to 'hepatic cyst resection' to avoid spoiling the diagnosis. Quotes verified."
+}

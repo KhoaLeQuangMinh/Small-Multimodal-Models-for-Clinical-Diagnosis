@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6275170_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A young adult with prior history in Egypt presenting with an acute abdomen mimicking mechanical bowel obstruction (obstipation, vomiting, abdominal distension, absent bowel sounds, dilated loops on CT), caused by an underlying gangrenous appendiceal perforation driven by intramural helminthic egg deposition.\n2. Admission Breakpoint: Admission triage concludes after resuscitation, physical examination, and abdominal CT imaging demonstrating dilated bowel loops, right before surgical exploratory laparotomy.\n3. Differential Distinctions: Mechanical small or large bowel obstruction (such as adhesional banding or volvulus) is ruled out intraoperatively by identifying paralytic ileus secondary to acute gangrenous appendicitis; standard suppurative fecalith appendicitis is distinguished by histopathologic identification of viable trematode ova.",
+  "case_prompt": "A 36-year-old man presented to the surgical emergency department with acute obstipation, diffuse abdominal pain, progressive abdominal distension, and vomiting. One year prior while residing in Egypt, he had received antiparasitic treatment for an endemic intestinal helminthic infection, but no confirmatory post-treatment follow-up investigations had been performed to verify cure. On physical examination, the abdomen was markedly distended with diffuse tenderness over the lower abdomen; bowel sounds were completely absent. Digital rectal examination revealed an empty, collapsed rectal vault. Abdominal computed tomography (CT) demonstrated diffusely dilated bowel loops throughout the abdomen without a discrete obstructing transition point.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Mechanical Intestinal Obstruction (e.g., Adhesive Bands, Internal Hernia, or Volvulus)",
+      "rule_out_reason": "Considered the primary admitting diagnosis given absolute constipation, persistent vomiting, severe distension, absent bowel sounds, collapsed rectum, and dilated bowel loops on CT; however, exploratory laparotomy showed adynamic paralytic ileus rather than a mechanical intraluminal or extrinsic mechanical block.",
+      "quote": "Computed tomography (CT) scan of the abdomen revealed dilated bowel loops (Fig. 1). The patient was resuscitated adequately and exploratory laparotomy was done through infra-umbilical midline incision. There was localized turbid fluid collection, dilated small and large bowel loops due to paralytic ileus and gangrenous appendix."
+    },
+    {
+      "candidate": "Acute Pyogenic Fecalith Appendicitis",
+      "rule_out_reason": "Gangrenous appendicitis with localized peritonitis was identified at surgery, but typical obstructive appendicolith was absent, and mucosal ulceration with transmural gangrene was caused by dense intramural parasite egg embolization.",
+      "quote": "The appendix specimen was sent for histopathology and the result came back as extensive necrosis of the appendix with multiple viable Schistosomal ova (Fig. 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis of appendiceal schistosomiasis causing gangrenous appendicitis was established on histopathological examination of the resected appendix, which revealed transmural necrosis containing multiple viable Schistosoma ova, despite negative postoperative stool microscopy.",
+      "quote": "The appendix specimen was sent for histopathology and the result came back as extensive necrosis of the appendix with multiple viable Schistosomal ova (Fig. 3). Subsequent stool analysis revealed no ova. Despite of that the patient received a single dose of praziquantel therapy"
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative stops before emergency laparotomy and avoids revealing Schistosoma or trematode names."
+}

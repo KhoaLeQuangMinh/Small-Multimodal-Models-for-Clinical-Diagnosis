@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5968297_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An elderly patient receiving cytotoxic chemotherapy for metastatic gastric cancer presents with high fevers, drowsiness, and an apical pulmonary infiltrate; initial absence of meningeal signs misleads toward community/hospital-acquired bacterial pneumonia, while progressive consciousness disturbance creates diagnostic confusion with leptomeningeal carcinomatosis prior to mycobacterial verification.\n2. Admission Breakpoint: Admission triage terminates following admission vital signs, neurological examination, baseline laboratory panels, and admission brain and chest CT scans, prior to empiric antibiotic response monitoring and subsequent lumbar puncture.\n3. Differential Distinctions: Bacterial pneumonia is ruled out by clinical progression despite broad-spectrum beta-lactam therapy and development of hydrocephalus; meningitis carcinomatosa is excluded by serial negative cerebrospinal fluid cytological examinations and positive mycobacterial PCR.",
+  "case_prompt": "A 78-year-old woman with advanced gastric cancer and multiple lymph node metastases, receiving second-line weekly paclitaxel monotherapy, presented with high fever and altered sensorium. Four days prior, she had presented to the outpatient department with a temperature of 38.0°C; at that time, physical examination, complete blood count, serum chemistries, urinalysis, and blood cultures showed no significant findings, and she was discharged on oral antipyretics. She now returned with recrudescent fever up to 39.8°C accompanied by drowsiness. On admission physical examination, her sensorium improved almost to full consciousness; she had no headache, neck stiffness, or signs of meningeal irritation. Triage cranial computed tomography (CT) demonstrated no significant acute intracranial abnormality. Chest CT revealed an emerging small infiltrate in the right upper lung lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Pneumonia",
+      "rule_out_reason": "Considered the primary cause of fever on admission given the new right upper lobe pulmonary infiltrate on chest CT, prompting empiric piperacillin/tazobactam therapy; however, despite transient fever reduction, progressive delirium, drowsiness, and communicative hydrocephalus supervened.",
+      "quote": "A computed tomography (CT) scan did not identify a significant abnormality in the brain but revealed an emerging small infiltration in the right upper lung lobe as a possible cause of the fever. She was empirically treated with piperacillin/tazobactam for possible bacterial pneumonia."
+    },
+    {
+      "candidate": "Meningitis Carcinomatosa (Leptomeningeal Metastases)",
+      "rule_out_reason": "In the setting of advanced metastatic gastric adenocarcinoma, leptomeningeal carcinomatosis was suspected when ventricular enlargement, periventricular edema, and mononuclear pleocytosis appeared; ruled out by serial negative cerebrospinal fluid cytologies and lack of response to dexamethasone.",
+      "quote": "Due to her accompanying advanced gastric cancer, meningitis carcinomatosis was first suspected, for which dexamethasone (6.6 mg/day) treatment was initiated while waiting for cytology results. However, her disturbance of consciousness persisted and deteriorated further, and another cerebrospinal fluid test was performed on the 19th day of hospitalization because of negative cytology results in the first investigation."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was reached when progressive hydrocephalus, mixed pleocytosis, and profound hypoglycorrhachia led to molecular confirmation of Mycobacterium tuberculosis by positive PCR in both cerebrospinal fluid and sputum.",
+      "quote": "On the 22nd day of hospitalization, positive tuberculosis-polymerase chain reaction (TB-PCR) of the cerebrospinal fluid confirmed the diagnosis of tuberculous meningitis. Her sputum tested was also positive on TB-PCR."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly stops before empiric antibiotic course, repeat lumbar punctures, and PCR results. Zero spoilers present."
+}

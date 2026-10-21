@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8097161_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A young adult presenting with acute psychotic symptoms, fever, pancytopenia, and hepatosplenomegaly after traveling to the Mediterranean, concurrently diagnosed with acute primary HIV infection. The clinical tension is differentiating acute HIV-induced hemophagocytic lymphohistiocytosis (HLH) or opportunistic infections from occult visceral leishmaniasis, which can present atypically in immunocompromised hosts and initially yield negative bone marrow aspirates.\n2. Admission Breakpoint: Initial emergency triage presentation, baseline physical exam, admission laboratory evaluation (cytopenias, CRP, CD4 count, rapid viral screening), and initial thoraco-abdominal CT imaging, before bronchoscopy, bone marrow procedures, and specialized serologic/molecular testing.\n3. Differential Distinctions: Unresponsiveness to antiretroviral therapy and high-dose IVIG for presumed isolated HIV-triggered HLH, negative bronchoscopy for Pneumocystis and TB, exclusion of other viral and protozoal pathogens, and definitive demonstration of intracellular amastigotes on bone marrow biopsy with positive Western blot serology confirming visceral leishmaniasis.",
+  "case_prompt": "A 25-year-old previously healthy man living in Paris presented to the emergency department with the sudden onset of acute psychiatric symptoms—including paranoid delusions, auditory hallucinations, and severe anxiety—accompanied by fever, dry cough, and profound asthenia. He had no psychiatric history other than baseline anxious traits, used tobacco and cannabis mildly, and took no prescribed medications. He had returned 10 days earlier from a 1-week trip to Greece. He reported engaging in unprotected sexual intercourse with a male partner 2 months prior and during his recent travel.\n\nOn physical examination, his body temperature was 38.5°C. Examination showed pharyngeal erythema, oral candidiasis, and a macular cutaneous rash. Neurological examination revealed psychomotor agitation without focal neurological deficits. Lumbar puncture, electroencephalography, and brain magnetic resonance imaging (MRI) revealed no structural or cerebrospinal fluid abnormalities.\n\nInitial laboratory studies demonstrated an elevated C-reactive protein of 18 mg/L, mild normocytic anemia (hemoglobin 10.5 g/dL with reticulocyte count 37 G/L), severe lymphopenia (absolute lymphocyte count 500/mm³), neutropenia (absolute neutrophil count 600/mm³), and thrombocytopenia (platelet count 90 G/L). Baseline viral screening confirmed reactive HIV-1 antibodies with a CD4+ T-cell count of 90/mm³ and high viremia. Thoraco-abdomino-pelvic CT revealed homogenous hepatosplenomegaly and sparse pulmonary parenchymal micronodules and interstitial reticulations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic Pulmonary Infection (Pneumocystis jirovecii / Pulmonary Tuberculosis)",
+      "rule_out_reason": "Considered due to fever, cough, pulmonary micronodules, and severe CD4 lymphopenia, but excluded by negative microbiological cultures and staining of sputum and bronchoalveolar lavage fluid.",
+      "quote": "Sputum cultures and bronchoalveolar lavage showed no Pneumocystis nor tuberculosis infection."
+    },
+    {
+      "candidate": "Isolated Acute Primary HIV-Induced Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "Considered as the primary cause of persistent fever, pancytopenia, hyperferritinemia, and macrophage activation, but refractory to high-dose intravenous immunoglobulins and antiretroviral therapy, prompting further search for an occult trigger.",
+      "quote": "We hypothesized that the patient had a hemophagocytic lymphohistiocytosis (HLH) triggered by an acute primary HIV infection."
+    },
+    {
+      "candidate": "Viral and Protozoal Co-infections (Viral Hepatitis, Toxoplasmosis, Syphilis, CMV, EBV)",
+      "rule_out_reason": "Considered as potential etiologies for hepatosplenomegaly and persistent cytopenias in an immunocompromised host, but systematically ruled out by non-reactive serologies and undetectable viral loads.",
+      "quote": "No co-infection with HAV, HBV, HCV, HEV, toxoplasmosis nor syphilis was found. EBV and CMV viral loads were undetectable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bone marrow trephine biopsy demonstrated definitive hemophagocytosis and revealed intracellular Leishmania spp. amastigotes, further confirmed by positive Leishmania infantum enzyme-linked and Western blot serologies, establishing visceral leishmaniasis as the inciting driver of secondary HLH.",
+      "quote": "Finally, a bone marrow biopsy was performed showing hemophagocytosis, confirming HLH, and moreover, revealing the presence of Leishmania spp ( Figure 1 ), with a low parasitic load. Serology was also positive for Leishmania infantum antibodies by immune-enzymatic screening technique, confirmed by Western-Blot assay."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative clearly depicts acute febrile presentation and organomegaly in an immunocompromised traveler while reserving bone marrow pathology and leishmanial serology for diagnostic reasoning."
+}

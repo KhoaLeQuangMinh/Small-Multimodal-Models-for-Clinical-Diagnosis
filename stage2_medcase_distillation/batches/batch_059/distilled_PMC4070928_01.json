@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4070928_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 43-year-old former forest ranger presents with a 12-year history of progressive swelling and discharging sinuses of the right foot that was scheduled for lower limb amputation after failing multiple empiric antibiotic courses and surgical debridements. The central clinical tension lies in differentiating recalcitrant chronic pyogenic osteomyelitis or soft-tissue malignancy from an actinomycotic or eumycotic chronic granulomatous infection characterized by grain extrusion.\n2. Admission Breakpoint: Admission triage concludes with documenting the patient's occupational outdoors history, 12-year disease progression, physical examination (grossly swollen foot with multiple fistulae draining visible white granules), and pre-operative evaluation. Confirmatory testing begins with microscopic examination and microbiological culture of the extruded granules.\n3. Differential Distinctions: Chronic bacterial osteomyelitis and tuberculous osteitis cause sinuses and bone destruction, but do not produce organized macroscopic grains/granules. True fungal mycetoma (eumycetoma) frequently discharges black/dark granules and requires surgical excision, whereas actinomycetoma produces pale/white grains responsive to medical antimicrobial therapy.",
+  "case_prompt": "A 43-year-old man, formerly employed as a forest ranger in Albania prior to migrating to Italy five years earlier, is admitted to an orthopedic surgery unit for planned lower extremity amputation of his right foot.\n\nThe patient describes a 12-year history of slowly progressive swelling and persistent fluid discharge from his right foot. Over the preceding decade, he had undergone multiple courses of unspecified oral antibiotics as well as repeated surgical debridement procedures in both Albania and Italy without definitive diagnostic identification or symptomatic relief. Over recent months, the lesion worsened significantly, with a marked increase in the number of draining fistulous tracts and active secretion.\n\nOn physical examination, the right foot is grossly swollen and deformed. Multiple active draining sinuses are visible over the right medial malleolus, extruding a purulent discharge containing macroscopic, white, grain-like granules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic pyogenic osteomyelitis / Bacterial soft-tissue fistula",
+      "rule_out_reason": "A multi-year history of foot swelling with discharging sinuses following outdoor labor is frequently misdiagnosed as chronic bacterial osteomyelitis; however, repeated surgical debridements and broad-spectrum antibiotics failed to halt disease progression, and the presence of organized macroscopic granules is not seen in typical pyogenic osteomyelitis.",
+      "quote": "During this period he had been treated both with oral (unspecified) antibiotics and with attempts to surgical debridement in his country and then in Italy, with no specific diagnosis. Despite these treatments, in recent months the number of sinuses had markedly increased"
+    },
+    {
+      "candidate": "Eumycetoma (True fungal mycetoma)",
+      "rule_out_reason": "The clinical presentation with chronic tumefaction and draining sinuses strongly suggested mycetoma; differentiating eumycotic infection (fungal) from actinomycotic infection (bacterial) was essential because fungal mycetoma typically produces dark/black granules and usually mandates surgical excision rather than medical cure.",
+      "quote": "grossly swollen right foot with sinuses on the right medial malleolus, draining white granules... At CTD, Actinomadura madurae was isolated from the granules, so a specific antibiotic treatment was prescribed"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon microbiological analysis of the extruded white grains, which yielded Actinomadura madurae, confirming actinomycetoma and enabling successful medical treatment with the Welsh antibiotic regimen, completely sparing the limb from amputation.",
+      "quote": "At CTD, Actinomadura madurae was isolated from the granules, so a specific antibiotic treatment was prescribed, according to recommendations by Welsh et al. The patient was treated for about 24 months, obtaining complete cure and no recurrence during the 16 year-follow up"
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC4070928_01. Admission breakpoint strictly maintained before granule culture and therapeutic outcome. Zero pathogen spoilers in prompt."
+}

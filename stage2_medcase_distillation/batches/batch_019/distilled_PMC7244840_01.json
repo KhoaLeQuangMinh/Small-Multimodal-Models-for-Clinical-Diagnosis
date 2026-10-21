@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7244840_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An asymptomatic 24-year-old male from a pastoral plateau region of Sichuan Province, China, presents with an incidental large infiltrative hepatic space-occupying lesion spanning segments 4, 5, and 6 abutting major branches of the hepatic artery and portal vein, accompanied by multiple intrahepatic cysts and a 2.13-cm necrotic/low-density lymph node in the hepatogastric space. The primary diagnostic dilemma is distinguishing a primary or metastatic hepatic malignancy (such as hepatocellular carcinoma, cholangiocarcinoma, or sarcoma with nodal metastasis) or benign cystic liver disease from infiltrative alveolar echinococcal disease with regional lymph node metastasis.\n2. Admission Breakpoint: The admission breakpoint is established after routine admission laboratory testing and cross-sectional imaging (abdominal CT, MRI, and brain/chest scans), immediately before surgical resection (hepatectomy and lymphadenectomy) and histopathologic tissue evaluation.\n3. Differential Distinctions: Hepatic malignancies (hepatocellular carcinoma, cholangiocarcinoma, sarcoma) typically exhibit hypervascular arterial enhancement, distinct tumor markers, or malignant cellular atypia; simple hepatic cysts, hemangiomas, or pyogenic liver abscesses lack infiltrative pseudo-malignant behavior and regional cystic lymphadenopathy; definitive identification of alveolar echinococcosis relies on the demonstration of characteristic multivesicular larval cuticles and germinal membranes on histopathology.",
+  "case_prompt": "A 24-year-old male from a pastoral community in Seda County, Sichuan Province, China, presented to the hospital for a routine physical examination. He reported no abdominal pain, nausea, weight loss, fever, or other physical discomfort.\n\nOn physical examination, the patient was well-nourished and in no acute distress. Abdominal inspection and palpation were unremarkable, with no palpable hepatosplenomegaly, abdominal mass, or localized tenderness. The remainder of the systemic examination was normal.\n\nInitial laboratory evaluation revealed a complete blood count, coagulation profile, and renal function parameters within normal reference limits. Serum liver biochemistry showed a slight increase in direct bilirubin, while remaining liver enzymes were normal. Contrast-enhanced computed tomography (CT) of the abdomen demonstrated a space-occupying lesion located across hepatic segments 4, 5, and 6, in close anatomical proximity to the branches of the right hepatic artery and portal vein. In addition, a slightly low-density, enlarged lymph node measuring 2.13 cm in diameter was identified in the hepatogastric space, alongside several small intrahepatic cysts. Staging CT scans of the chest and brain showed no focal abnormalities. Magnetic resonance imaging (MRI) of the abdomen confirmed a space-occupying infiltrative lesion of the liver with regional lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary or Secondary Hepatic Malignancy (Hepatocellular Carcinoma, Metastatic Carcinoma, Hepatic Sarcoma)",
+      "rule_out_reason": "Considered because of an infiltrative multicentric hepatic mass invading segments 4-5-6 associated with regional hepatogastric lymphadenopathy mimicking metastatic cancer. Ruled out by postoperative histopathologic examination which demonstrated parasitic larval alveolar structures without malignant cells.",
+      "quote": "It is necessary to differentiate it from benign diseases such as hepatic cyst, hemangioma, lipoma, bacterial liver abscess, and malignant diseases such as primary hepatocellular carcinoma, secondary hepatocellular carcinoma and sarcoma."
+    },
+    {
+      "candidate": "Benign Hepatic Lesions (Simple Cyst, Hemangioma, Lipoma, Pyogenic Liver Abscess)",
+      "rule_out_reason": "Considered in the differential of space-occupying hepatic mass lesions in a young patient. Ruled out by the infiltrative solid-cystic behavior, presence of regional necrotic lymphadenopathy, and absence of purulent bacterial infection.",
+      "quote": "Hepatic alveolar echinococcosis is a space-occupying disease of the liver. It is necessary to differentiate it from benign diseases such as hepatic cyst, hemangioma, lipoma, bacterial liver abscess, and malignant diseases such as primary hepatocellular carcinoma, secondary hepatocellular carcinoma and sarcoma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon surgical exploration revealing a 7.5 x 7.0 cm mass adhering to the gallbladder base and a cystic hepatogastric lymph node containing gray-yellow chylous fluid, with histological confirmation of alveolar echinococcosis.",
+      "quote": "Postoperative pathology confirmed that both primary focus and regional lymph node were alveolar echinococcosis."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7244840. Admission breakpoint maintained before surgical resection and pathology. Zero pathogen names leaked in case prompt."
+}

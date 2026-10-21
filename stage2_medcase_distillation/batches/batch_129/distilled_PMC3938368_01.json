@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3938368_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: An agricultural worker with advanced HIV/AIDS presents with post-traumatic chronic monoarthritis of the knee and extensive polymorphic papulonecrotic skin lesions. In severe immunosuppression, this mimics cutaneous leishmaniasis, secondary syphilis, or disseminated tuberculosis, obscuring an endemic dimorphic systemic mycosis.\n2. Admission Breakpoint: Epidemiological and occupational exposures, clinical history of knee trauma, dermatological exam, synovial fluid analysis, plain knee radiography, and non-invasive infectious/serological tests (VDRL, leishmaniasis screen, blood cultures), stopping before surgical debridement, synovial membrane/skin biopsy, and fungal culture.\n3. Differential Distinctions: Cutaneous leishmaniasis and syphilis were excluded by negative specific screening and non-reactive VDRL. Disseminated tuberculosis was ruled out by negative sputum molecular tests and sterile blood cultures. Direct histopathology of skin and synovial biopsies showing multiple budding yeast cells ('mariner's wheel') with fungal culture confirmation confirmed paracoccidioidomycosis.",
+  "case_prompt": "A 28-year-old male tractor driver from Pará, Brazil, with a history of rural activities, presented with a 5-month history of chronic left knee monoarthritis and polymorphic skin lesions. He had known HIV infection diagnosed two years previously without prior clinical follow-up; he had initiated zidovudine, lamivudine, and lopinavir/ritonavir 3 weeks earlier as his first antiretroviral regimen. He had never received prophylactic trimethoprim-sulfamethoxazole. He reported that left knee arthritis began following local trauma 5 months prior, and widespread skin lesions emerged 2 months later.\n\nOn physical examination, he exhibited polymorphic cutaneous lesions consisting of follicular pustules, papules with central necrosis, erythematous infiltrated plaques covered with pustules, and ulcerated plaques distributed over the face, trunk, abdomen, and limbs. Oral and genital mucous membranes were spared. Active arthritis of the left knee was present. Peripheral lymphadenopathy and hepatosplenomegaly were not observed.\n\nSynovial fluid analysis indicated infectious arthritis. Plain radiograph of the left knee demonstrated reduction of the joint space and an osteolytic patellar lesion. Blood cultures for aerobic bacteria, mycobacteria, and fungi were negative. VDRL testing was non-reactive, and a diagnostic screening examination for leishmaniasis was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leishmaniasis (tegumentary / disseminated)",
+      "rule_out_reason": "Considered given the ulcerated tegumentary lesions in an endemic region of Brazil, but ruled out by negative specific screening testing.",
+      "quote": "The Leishmaniasis screening exam was negative."
+    },
+    {
+      "candidate": "Syphilis (secondary / tertiary)",
+      "rule_out_reason": "Considered due to the polymorphic papulonecrotic skin eruption and chronic destructive osteoarticular involvement in an HIV-positive host, but excluded by non-reactive nontreponemal serology.",
+      "quote": "VDRL resulted non-reagent."
+    },
+    {
+      "candidate": "Disseminated tuberculosis / atypical mycobacteriosis",
+      "rule_out_reason": "Considered given chronic granulomatous-like monoarthritis and osteolysis in advanced immunosuppression, but blood cultures for mycobacteria and sputum molecular tests were negative.",
+      "quote": "Blood cultures for aerobes, mycobacteria, fungi and leukocyte cream were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Biopsy of both the skin and the synovial membrane revealed characteristic round, birefringent yeast cells exhibiting multiple peripheral budding, confirmed by positive tissue culture.",
+      "quote": "Both exams identified round cells, birefringent, with multiple buddings compatible with P. brasiliensis (Figure 4). Culture of synovial tissue confirmed the finding."
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

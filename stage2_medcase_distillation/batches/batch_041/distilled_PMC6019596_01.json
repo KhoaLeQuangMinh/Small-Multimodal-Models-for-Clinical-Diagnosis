@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6019596_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 78-year-old rural Iranian man presents with a 3-year history of progressive, highly mutilating ulcerative lesions involving the mid-face (upper lip, nasal fossa, eyebrows) and extremities, having already caused tendon destruction and auto-amputation of a finger. The clinical tension is differentiating an atypical disseminated mucocutaneous form of Old World cutaneous leishmaniasis (caused by Leishmania major) from pyoderma gangrenosum, cutaneous sarcoidosis, and cutaneous tuberculosis in an elderly patient with strongly positive PPD testing.\n2. Admission Breakpoint: The breakpoint occurs after initial clinical dermatological presentation, physical examination demonstrating mutilating facial and acral ulcers without systemic signs (no fever, lymphadenopathy, or hepatosplenomegaly), and baseline survey, prior to skin biopsy, smear examinations, PPD testing, and molecular PCR-RFLP.\n3. Differential Distinctions: Pyoderma gangrenosum is ruled out by prior failure of immunosuppressive therapies and histologic presence of necrotizing palisading granulomas rather than sterile neutrophilic dermatosis. Cutaneous sarcoidosis is ruled out by absence of true noncaseating 'naked' granulomas and subsequent identification of infectious organisms. Cutaneous tuberculosis was strongly suspected due to a 27 mm PPD induration and necrotizing granulomas, but antitubercular therapy failed and Leishman bodies were identified on repeat biopsy. The diagnosis of disseminated mucocutaneous leishmaniasis is established by finding intracellular Leishman bodies on tissue biopsy and ITS1 PCR-RFLP identifying Leishmania major.",
+  "case_prompt": "A 78-year-old man from a rural area in western Iran presents to an outpatient dermatology clinic for evaluation of multiple chronic ulcerative and exudative cutaneous lesions involving his mid-face, the dorsal aspects of both hands, and the posterior aspects of both heels.\n\nThe lesions began three years earlier as papules on the dorsal surfaces of his hands and gradually expanded over time to involve the area above his upper lip, the anterior portion of the nasal fossa, the supraorbital areas above the eyebrows, and both heels, subsequently ulcerating. Over the preceding three years, the destructive lesions on his right hand extended deeply into the soft tissues and tendons of the fifth digit, resulting in destruction and eventual amputation of that finger. He reports no systemic symptoms, such as fever, night sweats, or weight loss, and takes no regular medications.\n\nOn physical examination, vital signs are normal. Cutaneous examination reveals extensive, destructive, exudative ulcerations on the mid-face, hands, and posterior heels, with tissue loss on the right hand. There is no peripheral lymphadenopathy or hepatosplenomegaly. Initial routine hematologic and biochemical laboratory surveys are within normal limits, with no signs of systemic organ involvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyoderma Gangrenosum",
+      "rule_out_reason": "Considered due to chronic progressive destructive ulcerations of the extremities and face, but the patient had failed prior therapies for this condition, and initial histopathology revealed granulomatous inflammation rather than a neutrophilic dermatosis.",
+      "quote": "Multiple treatments in order to some heterogenic diagnosis such as pyoderma gangrenosum, sarcoidosis, and leishmaniasis were tried without any improvement in lesions."
+    },
+    {
+      "candidate": "Cutaneous Sarcoidosis",
+      "rule_out_reason": "Considered for the chronic facial and acral granulomatous lesions, but skin biopsy revealed necrotizing rather than typical noncaseating granulomas, and repeat sampling identified intracellular parasites.",
+      "quote": "Multiple treatments in order to some heterogenic diagnosis such as pyoderma gangrenosum, sarcoidosis, and leishmaniasis were tried without any improvement in lesions."
+    },
+    {
+      "candidate": "Cutaneous Tuberculosis",
+      "rule_out_reason": "Strongly suspected when initial smears were negative and a tuberculin skin test showed 27 mm of induration, prompting a full course of quadruple antitubercular therapy; however, the lesions did not respond, and repeat tissue analysis revealed parasitic organisms.",
+      "quote": "In order to result of PPD test with 27 mm induration, anti-tuberculosis treatment including isoniazid, rifampin, ethambutol, and pyrazinamide was started."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Mucocutaneous Leishmaniasis (Leishmania major)",
+      "rule_out_reason": "Repeat dermal biopsy revealed pseudoepitheliomatous hyperplasia, mixed inflammatory infiltrate, and intracellular Leishman bodies; PCR-RFLP confirmed Leishmania major as the etiologic pathogen.",
+      "quote": "the second biopsy revealed pseudoepitheliomatous hyperplasia and infiltration of the dermis by mixed inflammatory cells and Leishman bodies compatible with leishmaniasis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt strictly details the 3-year history of destructive facial/extremity ulcerations, digit loss, and exam findings without any pathogen mentions. Invasive biopsy results, PPD testing, and molecular PCR-RFLP are preserved for diagnostic reasoning."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12623078_01",
+  "disease": "Cholera",
+  "think": "1. Core Clinical Tension: A 47-year-old traveler returning from India presents with profound watery secretory diarrhea (>40 episodes in 24 hours), severe hypovolemia, normal-anion-gap metabolic acidosis, and acute kidney injury. Within hours of admission, he develops acute ischemic stroke (left anterior cerebral artery occlusion) and acute ST-elevation myocardial infarction. The central diagnostic challenge is determining whether this represents multi-vessel primary atherosclerotic cardiovascular collapse or a rare catastrophic thrombotic complication of extreme dehydration, hemoconcentration, and infectious hypercoagulability following travel-associated secretory diarrhea.\n2. Admission Breakpoint: The admission breakpoint is established at emergency department triage and initial ICU admission following resuscitation, baseline laboratories, and urgent neurovascular/cardiac imaging on Day 1, prior to the return of confirmatory stool microbiology cultures on Day 3.\n3. Differential Distinctions: Primary acute coronary syndrome / plaque rupture (ruled out by coronary CT angiography showing no significant coronary atherosclerosis and zero calcium score), acute viral/toxic myopericarditis (ruled out by preserved ejection fraction of 61% without wall motion abnormalities), and primary cardiogenic embolization (ruled out by normal contrast echocardiography). Confirmatory stool culture identifying Vibrio cholerae establishes massive cholera enterotoxin-mediated dehydration and hemoconcentration-induced arterial thrombosis.",
+  "case_prompt": "A 47-year-old Indian male presented to the emergency department complaining of acute, massive watery diarrhea without blood or mucus, lasting one day and exceeding forty discrete episodes. He also reported colicky, non-radiating paraumbilical abdominal pain, profuse diaphoresis, profound lethargy, and recurrent non-projectile vomiting of ingested food. He denied hematemesis, dysphagia, or melena. He had consumed food at a local restaurant in India one day prior to symptom onset and had returned from travel the day preceding presentation. He had no sick contacts, and accompanying family members remained asymptomatic. Past medical history was significant only for prior cataract surgery, with no personal or family history of inflammatory bowel disease or cardiovascular disorders. He was a non-smoker.\n\nOn arrival, he was afebrile with a normal pulse rate and supine blood pressure of 91/54 mmHg. Physical examination was notable for signs of severe dehydration. Triage laboratory evaluation revealed acute prerenal azotemia with acute kidney injury, a normal-anion-gap metabolic acidosis, and an elevated cardiac troponin. Initial electrocardiogram demonstrated normal sinus rhythm without ST-segment elevation or T-wave abnormalities. Fluid resuscitation and intravenous supportive therapy were initiated, and he was transferred to the medical intensive care unit.\n\nA few hours following admission, the patient became acutely disoriented with incoherent speech, labored breathing, and new right-sided dense hemiplegia and global aphasia (NIHSS score of 22). Urgent non-contrast CT and CT angiography of the head revealed acute occlusion of the left anterior cerebral artery branches distal to the anterior communicating artery and atheromatous plaque with significant luminal stenosis in the left common carotid artery. A repeat electrocardiogram revealed junctional tachycardia with ST-segment elevations across inferior leads (II, III, aVF) and anterolateral leads (V5, V6), accompanied by progressive rise in serial troponin concentrations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary acute coronary syndrome (STEMI from plaque rupture)",
+      "rule_out_reason": "Cardiology initially suspected primary atherothrombotic plaque rupture; however, follow-up CT coronary angiography revealed completely unobstructed coronary arteries with a coronary artery calcium score of zero, pointing instead to transient coronary embolism secondary to severe hemoconcentration and dehydration.",
+      "quote": "No evidence of significant coronary artery disease was noted in this imaging with a calcium score of zero (Figure 6). Considering these results, the cardiology team finally concluded that the most probable diagnosis in this patient was transient coronary emboli due to dehydration or infection."
+    },
+    {
+      "candidate": "Acute myopericarditis",
+      "rule_out_reason": "Myopericarditis was considered due to diffuse ST-segment changes and troponin release in a patient with acute systemic infection, but echocardiography revealed preserved left ventricular systolic function (EF 61%) without regional wall motion abnormalities or pericardial effusion.",
+      "quote": "His echocardiogram demonstrated a left ventricle ejection fraction of 61% with no evidence of regional wall motion abnormalities or diastolic dysfunction... Myocarditis could have been another differential; however, it was thought to be the least probable cause in our patient's case."
+    },
+    {
+      "candidate": "Primary cardioembolic stroke",
+      "rule_out_reason": "Cardioembolic origin of the anterior cerebral artery occlusion was ruled out by contrast-enhanced echocardiography demonstrating absence of intracardiac thrombus, while Doppler ultrasound showed resolution of common carotid thrombus without intrinsic hemodynamically significant stenosis.",
+      "quote": "The carotid Doppler ultrasound findings were unremarkable with no focal functional luminal stenosis or flow disturbances noted bilaterally... Additionally, contrast-enhanced echocardiography did not show the presence of any thrombus in the left ventricle."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred on hospital day 3 when stool cultures confirmed Vibrio cholerae, establishing an overarching unifying diagnosis of cholera complicated by extreme hypovolemia, hemoconcentration, and dual arterial thromboembolic vascular occlusions.",
+      "quote": "On the third day of admission, stool culture confirmed the presence of Vibrio cholerae. Infectious Diseases team recommended initiating azithromycin therapy for one day."
+    }
+  ],
+  "final_diagnosis": "Cholera",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint captured at Day 1 emergency / ICU presentation including the immediate hypercoagulable vascular manifestations prior to Day 3 microbiological stool culture identification. Clean presentation without pathogen disclosures."
+}

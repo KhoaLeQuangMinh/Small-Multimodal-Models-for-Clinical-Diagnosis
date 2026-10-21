@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10861274_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old woman presented with an isolated, indolent 3 × 3 cm non-tender cystic mass in the right periumbilical abdominal wall associated with an 8-kg unintentional weight loss over 3 months, but without fever, pulmonary complaints, or night sweats. The diagnostic challenge is distinguishing an extrapulmonary tuberculous cold abscess of the anterior abdominal wall from benign superficial cystic lesions (such as an infected epidermal inclusion cyst, urachal cyst remnant, or hematoma) or primary abdominal wall neoplasms (such as a desmoid tumor or soft tissue sarcoma).\n2. Admission Breakpoint: Outpatient presentation, physical examination documenting conjunctival pallor and a palpable periumbilical mass, and baseline contrast-enhanced abdominal CT showing a thick-walled cystic lesion with fat stranding, strictly prior to fine needle aspiration fluid analysis, surgical excision, and confirmatory histopathology/PCR.\n3. Differential Distinctions: Desmoid tumor or soft tissue sarcoma presents as a firm, fixed, slowly enlarging abdominal wall mass in young adults, but typically shows solid contrast enhancement on CT rather than a cystic, non-enhancing collection with rim thickening. Benign inclusion cysts or hematomas present with well-defined cystic borders, but lack organized chronic lymphoid follicle architecture, caseous necrosis, Langhans giant cells, and mycobacterial DNA.",
+  "case_prompt": "A 27-year-old Persian female presented with a 6-month history of an asymmetric, painless swelling in the right periumbilical region without cutaneous drainage or secretion. She reported an unintentional weight loss of 8 kilograms over the preceding three months despite an unchanged diet. She denied anorexia, severe fatigue, night sweats, dyspnea, or changes in bowel habits. Her social history was notable for a 10-year history of cigarette smoking; family history was unremarkable.\n\nOn physical examination, the patient was alert, oriented, and non-toxic in appearance, with normal vital signs. Conjunctivae were pale without scleral jaundice. Abdominal examination revealed a mobile, well-circumscribed, non-tender mass measuring 3 × 3 cm in diameter palpated within the right periumbilical abdominal wall. Normoactive bowel sounds were present. There was no involuntary guarding, rebound tenderness, or peritoneal signs; shifting dullness, fluid wave, and Murphy's sign were negative. Neither the liver nor the spleen was palpable, and no vascular bruits were auscultated. Cardiopulmonary and neurological examinations were entirely normal.\n\nA contrast-enhanced abdominal computed tomography (CT) scan revealed a cystic lesion in the anterior abdominal wall displaying wall thickening, internal heterogeneous density, and adjacent fat stranding, without internal post-contrast enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Abdominal wall soft-tissue neoplasm (e.g., Desmoid tumor / sarcoma)",
+      "rule_out_reason": "Considered due to an enlarging palpable abdominal wall mass accompanied by substantial constitutional weight loss (8 kg) in a young adult; ruled out by contrast CT demonstrating a non-enhancing cystic lesion with peripheral fat stranding rather than a solid enhancing invasive spindle-cell mass, and histopathology confirming caseating granulomatous inflammation.",
+      "quote": "Preoperatively, the patient was assessed with an abdominal CT scan with contrast which showed a cystic lesion with wall thickness, internal echogenicity, and fat stranding without enhancement (Figure 1)."
+    },
+    {
+      "candidate": "Benign abdominal wall cyst (e.g., epidermal inclusion cyst / hematoma / seroma)",
+      "rule_out_reason": "Considered given the mobile, well-bordered, non-tender, cystic characteristics in the anterior abdominal wall in a young afebrile patient; ruled out by histologic findings of lymphoid follicles with germinal centers, caseous necrosis, and Langhans multinucleated giant cells with confirmed positive mycobacterial PCR.",
+      "quote": "Her abdominal physical examination revealed a mobile, well-border, nontender mass 3 x 3 centimeter (cm) in diameter palpated in the right periumbilical area."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the surgically resected cyst wall demonstrated chronic fibroconnective tissue with lymphoid follicle formation, germinal centers, and caseous granulomatous inflammation rimmed by Langhans multinucleated giant cells, confirmed by positive real-time PCR for Mycobacterium tuberculosis.",
+      "quote": "The histopathological examination showed fibroconnective tissue with the presence of lymphoid cells, lymphoid follicle formation with a germinal center accompanied by caseous granulomatous formation surrounded by Langerhans multinucleated giant cells that tuberculosis was confirmed in specimen resection (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative preserves breakpoint at abdominal CT evaluation prior to cyst aspiration, resection, and PCR testing. Strictly zero spoilers in case prompt."
+}

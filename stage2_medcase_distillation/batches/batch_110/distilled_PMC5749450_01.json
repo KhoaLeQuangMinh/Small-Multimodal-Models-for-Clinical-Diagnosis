@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5749450_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 65-year-old Guyanese-born British resident presents with syncope, 14 months of constitutional night sweats and fatigue, hepatomegaly, lymphadenopathy, and bicytopenia, with no documented fever and a completely negative rK39 rapid antibody test. The core challenge is distinguishing an indolent hematologic malignancy from an atypical/novel species of visceral leishmaniasis (Leishmania siamensis) acquired outside its recognized geographic range.\n2. Admission Breakpoint: The breakpoint is established at hospital admission following syncope after physical examination and routine non-invasive laboratory/serological investigations are completed, immediately prior to diagnostic bone marrow aspiration and send-out molecular sequencing.\n3. Differential Distinctions: Hematologic malignancies (lymphoma, chronic lymphocytic leukemia, myelodysplastic syndrome) represent the predominant suspicion given chronic night sweats, weight loss, organomegaly, and cytopenias in an elderly afebrile patient. Chronic viral hepatitides (HBV, HCV) or HIV can cause hepatomegaly and cytopenias, but serologies were negative. The false-negative rK39 rapid diagnostic test further obscured the diagnosis, requiring direct bone marrow morphology and DNA sequencing to identify the atypical kinetoplastid organism.",
+  "case_prompt": "A 65-year-old woman was admitted to a hospital in London, United Kingdom, after collapsing in the street. She reported an indolent 14-month history of night sweats and steady loss of energy, but was otherwise asymptomatic and reported no fevers. She was originally from Guyana, had migrated to the United Kingdom in 1967, and had a travel history including visits to Guyana (2012 and 2013), Grenada (2012), Ghana (2005), and France (2003). On physical examination, she was afebrile and was found to have nontender hepatic enlargement and lymphadenopathy; liver function tests were normal. Initial laboratory evaluation revealed anemia with a hemoglobin level of 8.1 g/dL, a leukocyte count of 4.62 \u00d7 10\u2079/L, and mild thrombocytopenia with a platelet count of 143 \u00d7 10\u2079/L. Serologic screening for human immunodeficiency virus, hepatitis B virus, hepatitis C virus, and parasitic nematodes was negative. Her CD4 count was 790 cells/\u00b5L, rheumatoid factor was weakly positive, and immunoglobulin levels were within reference ranges.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hematologic malignancy (lymphoma, leukemia, or myelodysplastic syndrome)",
+      "rule_out_reason": "The leading clinical suspicion based on 14 months of constitutional night sweats, fatigue, lymphadenopathy, hepatomegaly, and cytopenias without fever, leading directly to bone marrow evaluation.",
+      "quote": "We investigated for hematologic malignancy by bone marrow aspiration; Leishmania amastigotes were visible."
+    },
+    {
+      "candidate": "Chronic viral hepatitis and parasitic coinfection (HBV, HCV, Strongyloides, HIV)",
+      "rule_out_reason": "Considered as plausible infectious explanations for chronic hepatomegaly and cytopenias in an international traveler, but specific serologic panels were non-reactive.",
+      "quote": "She also had negative serologic test results for HIV, hepatitis B, hepatitis C, and the parasitic nematode spp. Strongyloides."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the unexpected cytological identification of intracellular amastigotes on bone marrow aspirate, followed by internal transcribed spacer 1 (ITS1) gene amplification and sequencing confirming an atypical non-donovani visceralizing parasite, explaining the negative rK39 serologic screen.",
+      "quote": "Sequencing of the ITS1 amplicon revealed either 99% or 100% identity to ITS1 sequences from Leishmania siamensis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "NEJM CPC teaching style maintained. Strict admission breakpoint stops before bone marrow aspiration and PCR. Zero pathogen leaks. Exact verbatim quotations verified."
+}

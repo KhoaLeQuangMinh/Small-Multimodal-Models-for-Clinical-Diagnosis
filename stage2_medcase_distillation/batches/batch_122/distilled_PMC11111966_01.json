@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11111966_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 6-year-old child living in an endemic area presents with unremitting high fever (up to 40.6°C), patchy pulmonary consolidation, profound thrombocytopenia, marked hyperferritinemia, and coagulopathy, but without an eschar or rash. The clinical tension is recognizing rickettsial infection in the absence of pathognomonic cutaneous signs (eschar-negative scrub typhus), presenting as full-blown secondary hemophagocytic lymphohistiocytosis (HLH).\n2. Admission Breakpoint: The breakpoint occurs upon hospital admission following physical examination, baseline laboratory panels (CBC, coagulation profile, CRP, ferritin, iron), and initial chest CT, immediately before bone marrow aspiration, send-out viral serologies, and metagenomic next-generation sequencing (mNGS).\n3. Differential Distinctions: Common pyogenic bacterial sepsis and pneumonia are considered given persistent fever, pulmonary opacities, and high CRP, but ruled out by treatment failure with cephalosporins and meropenem. Viral-induced HLH (e.g., EBV, TORCH) is ruled out by negative comprehensive serologies and PCR. Confirmation is achieved via plasma mNGS detecting Orientia tsutsugamushi.",
+  "case_prompt": "A 6-year-old previously healthy girl residing in Panzhihua, southwestern China near the Yunnan border, was transferred to a tertiary pediatric hospital with a one-week history of unremitting high fevers reaching 40.6°C. Prior to transfer, she was treated for suspected refractory upper respiratory infection with oral cephalosporins and ibuprofen for two days without clinical improvement.\n\nOn physical examination at admission, she was febrile and ill-appearing. Detailed skin examination revealed no cutaneous eschars, maculopapular eruptions, or ulcers. Hepatosplenomegaly and peripheral lymphadenopathy were absent. Admission laboratory evaluation revealed a hemoglobin of 107 g/L (reference range: 110–146 g/L), a platelet count of 32 × 10⁹/L (reference range: 100–450 × 10⁹/L), and a C-reactive protein (CRP) of 52.8 mg/L (reference range: 0–8 mg/L). Coagulation and fibrinolytic testing demonstrated fibrin degradation products of 34.23 µg/mL (reference range: 0–5.0 µg/mL) and a D-dimer of 10.97 mg/L FEU (reference range: 0–0.5 mg/L). Iron studies showed a serum iron of 1.08 µmol/L (reference range: 7.8–32.3 µmol/L) and a serum ferritin of 2,134.6 ng/mL (reference range: 10–291 ng/mL). A non-contrast computed tomography (CT) scan of the chest demonstrated scattered, patchy infiltrative shadows throughout both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Sepsis / Bronchopneumonia",
+      "rule_out_reason": "Initially managed as severe bacterial sepsis and pulmonary infection, but ruled out by progressive deterioration and failure to respond to successive courses of cefoperazone-sulbactam and meropenem.",
+      "quote": "The medication therapy of intravenous cefoperazone and sulbactam (0.9 g intravenous per day) was initiated on the 1st day of admission. However, due to a lack of response to treatment for two consecutive days (with continuous fever exceeding 37.5 C), the antibiotic was changed to meropenem (0.5 g intravenous per day). However, its efficacy remained unsatisfactory."
+    },
+    {
+      "candidate": "Viral Infection-Induced HLH (EBV / TORCH)",
+      "rule_out_reason": "Considered due to hemophagocytosis, hyperferritinemia, and severe cytopenias, but ruled out by negative serological, viral culture, and PCR investigations.",
+      "quote": "The serological, cultural, and polymerase chain reaction (PCR) tests yielded no evidence of other common pathogens, including EBV (Epstein-Barr virus) and TORCH (toxoplasmosis, other, rubella, cytomegalovirus, and herpes)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Plasma metagenomic next-generation sequencing (mNGS) identified 318 sequences of Orientia tsutsugamushi (confirmed by qPCR), establishing scrub typhus-associated HLH despite the complete absence of a cutaneous eschar.",
+      "quote": "Subsequently, on the next day, a total of 318 sequences of Ot were detected in the plasma sample (22 August 2023), with a genome coverage and relative abundance of 1.10% and 64.5%, respectively (Figures 3A,C). Consequently, the patient was diagnosed with scrub typhus-associated HLH"
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to Stanford MedCaseReasoning methodology. Bone marrow biopsy and mNGS kept post-breakpoint. Zero pathogen leaks."
+}

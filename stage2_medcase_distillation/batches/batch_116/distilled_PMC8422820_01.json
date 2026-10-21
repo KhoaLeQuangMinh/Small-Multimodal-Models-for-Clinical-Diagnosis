@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8422820_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 43-year-old man with known chronic hepatitis B virus (HBV) infection presenting with profound jaundice, oliguric acute renal failure, and severe indirect hyperbilirubinemia. The core diagnostic pitfall is anchoring on an acute flare of chronic viral hepatitis, which initially obscured the severe intravascular hemolysis and acute tubular necrosis caused by hyperparasitemic Plasmodium falciparum malaria.\n2. Admission Breakpoint: Initial hospital presentation with triage physical examination, baseline laboratory panels (profound indirect hyperbilirubinemia, marked azotemia, thrombocytopenia, urinalysis), and abdominal ultrasound, prior to subsequent disclosure of travel history to Papua and blood smear examination.\n3. Differential Distinctions: Predominance of unconjugated (indirect) hyperbilirubinemia over direct, profound thrombocytopenia, severe metabolic acidosis, and acute renal failure exceeding typical viral hepatitis presentations, with definitive demonstration of intraerythrocytic ring forms on Giemsa smear confirming severe falciparum malaria.",
+  "case_prompt": "A 43-year-old man residing in Jakarta presented with progressive jaundice preceded by 7 days of nausea, vomiting, and epigastric discomfort. He initially developed an acute flu-like prodrome consisting of fever, chills, severe headache, myalgias, and arthralgias. Over the subsequent several days, he noted darkening of his urine to a tea color along with decreased urinary volume. His past medical history was notable for asymptomatic chronic hepatitis B virus (HBV) infection diagnosed 11 years earlier, for which he had never received antiviral therapy. He reported no history of alcohol consumption. He had been hospitalized elsewhere for 2 days and treated for presumed acute viral hepatitis exacerbation before being transferred due to clinical deterioration.\n\nOn admission physical examination, the patient was alert but exhibited profound scleral and cutaneous jaundice. Abdominal examination revealed tenderness in the right upper quadrant without palpable hepatomegaly, splenomegaly, or ascites. Neurological examination was normal.\n\nAdmission laboratory investigations revealed critical acute kidney injury with a blood urea nitrogen of 327 mg/dL, serum creatinine of 13.18 mg/dL, and estimated GFR of 4.06 mL/min/1.73 m\u00b2. Liver function testing revealed severe hyperbilirubinemia with a total bilirubin of 36.06 mg/dL and a marked indirect predominance (indirect bilirubin 29.06 mg/dL), elevated serum aminotransferases, and hypoalbuminemia. Complete blood count showed normocytic anemia and thrombocytopenia. Urinalysis demonstrated positive bilirubin and urobilinogen, but no free hemoglobin. Viral serologies confirmed positive HBsAg, positive IgM anti-HBc, and positive anti-HBe, while negative for HBeAg. Viral screening for hepatitis C, hepatitis D, and HIV was non-reactive, and molecular assay for SARS-CoV-2 was negative. Bedside abdominal ultrasound showed normal hepatic parenchymal architecture without splenomegaly or ascites, and hepatic transient elastography indicated advanced fibrosis (F3\u2013F4, stiffness 14.9 kPa).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Acute Exacerbation of Chronic Hepatitis B",
+      "rule_out_reason": "Initial working diagnosis based on known HBsAg carriage and positive IgM anti-HBc; however, the disproportionate degree of indirect hyperbilirubinemia (29.06 mg/dL indirect vs 7.0 mg/dL direct), severe thrombocytopenia, and sudden anuric renal failure were atypical for an uncomplicated viral flare alone.",
+      "quote": "The clinical scenario was initially interpreted as an acute exacerbation of chronic HBV."
+    },
+    {
+      "candidate": "Viral Hepatitis Co-Infection / COVID-19",
+      "rule_out_reason": "Considered as potential precipitants of acute hepatic decompensation and acute kidney injury, but excluded by non-reactive viral serologies and negative RT-PCR testing.",
+      "quote": "Polymerase chain reaction test was negative for Covid-19."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Subsequent collateral history revealed travel to an endemic region (Serui, Papua) 4 days prior to symptom onset; rapid diagnostic testing was positive, and peripheral blood smear demonstrated intraerythrocytic Plasmodium falciparum with 12.6% parasitemia, confirming severe falciparum malaria with acute tubular necrosis and hemolytic jaundice.",
+      "quote": "Further questioning to his wife revealed that his symptoms occurred 4 days after returning from a 1-year trip in Serui, Papua. At this time, rapid diagnostic test for malaria was ordered which showed positivity. Peripheral blood smear showed intraerythrocytic P. falciparum (63 parasites per 500 erythrocytes) with a high degree of parasitemia (12.6%) (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following NEJM CPC format. The critical clue of indirect-predominant jaundice and thrombocytopenia is preserved while withholding travel exposure and malaria smears from the admission triage prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3168381_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 46-year-old man presented with rectal bleeding, chronic intermittent mucus-laden diarrhea, and a mass-like swollen, ulcerated ileocecal valve on colonoscopy, leading clinicians to strongly suspect a colonic malignancy rather than an infectious or helminthic etiology.\n2. Admission Breakpoint: The presentation concludes with the endoscopic visualization of the swollen, ulcerated ileocecal valve and procurement of mucosal biopsies. It halts prior to histopathological analysis of the biopsy specimens.\n3. Differential Distinctions: Colonic malignancy was the working clinical diagnosis due to the solitary mass-like ulceration at the ileocecal junction, but was refuted by the absence of neoplastic dysplastic glands on biopsy. Internal hemorrhoids explained initial bright red bleeding and were banded, but could not explain the persistent diarrhea and proximal colonic ulceration. Soil-transmitted helminthiasis (specifically Trichuris trichiura) was confirmed by tissue sections showing nematode morphology with characteristic terminal-plugged ova.",
+  "case_prompt": "A 46-year-old man presented with a one-month history of two distinct episodes of bright red rectal bleeding. In addition, he reported intermittent diarrhea for the preceding two months, accompanied by visible mucus in the stool. He had no significant past medical history or chronic medical illnesses. \n\nPhysical examination was entirely unremarkable, and vital signs were normal. Proctoscopic evaluation demonstrated two internal hemorrhoids, which were treated with band ligation. Because of his history of prolonged diarrhea, a diagnostic colonoscopy was performed. Endoscopic visualization revealed a markedly swollen ileocecal valve associated with focal superficial ulceration. Endoscopic mucosal biopsies of the ileocecal valve were obtained to evaluate for suspected malignancy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colonic Malignancy",
+      "rule_out_reason": "Suspected primarily on the basis of subacute rectal bleeding, altered bowel habits, and an ulcerated, swollen ileocecal valve on colonoscopy; ruled out by histopathology showing benign inflammatory infiltrates and cross-sections of a nematode rather than neoplastic epithelial proliferation.",
+      "quote": "Biopsies were taken to rule out possible malignancy. The current diagnosis was internal haemorrhoids with possibility of colonic malignancy."
+    },
+    {
+      "candidate": "Internal Hemorrhoids (as solitary source of symptoms)",
+      "rule_out_reason": "Hemorrhoids accounted for bright red rectal bleeding and were banded, but could not explain the two-month history of mucus-rich diarrhea or the ulcerated ileocecal valve swelling.",
+      "quote": "Proctoscopic examination showed two internal hemorrhoids which were banded. Due to the history of prolonged diarrhea, colonoscopy was arranged for him."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the ileocecal valve biopsy revealed mucosal lymphocytic infiltration and cross-sections of an adult female nematode containing ova with characteristic terminal plugs, consistent with Trichuris trichiura, which resolved following oral albendazole therapy.",
+      "quote": "Histopathological examination of the biopsied tissue from the ileocecal valve showed moderate lymphocytic cell infiltrates in the mucosa together with cross sections of an adult female nematode (Figure 2)... Multiple ova were observed within the body, and these ova appeared to have terminal plugs (Figure 4)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt stops following colonoscopic visualization and biopsy acquisition, before histopathology is disclosed. No pathogen or disease spoilers in case prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4856939_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 68-year-old male presents with right hypochondrial pain, dyspepsia, and anorexia. Abdominal ultrasound shows a gallbladder mass with gallstones, and contrast CT shows a 5-mm thick gallbladder wall with loss of the fat plane and apparent infiltration into the liver parenchyma. The presentation strongly mimics advanced gallbladder carcinoma with direct hepatic invasion. Distinguishing carcinoma from isolated gallbladder tuberculosis preoperatively is nearly impossible because primary gallbladder tuberculosis is an exceedingly rare entity lacking classic pulmonary signs or systemic B symptoms.\n2. Admission Breakpoint: The breakpoint occurs following contrast-enhanced CT of the abdomen and preoperative blood tests, immediately prior to subcostal laparotomy, cholecystectomy, and frozen section/histopathological examination.\n3. Differential Distinctions: Gallbladder adenocarcinoma (primary preoperative suspicion due to gallbladder wall thickening, intraluminal mass, gallstones, and apparent liver infiltration on contrast CT; ruled out by frozen-section and histopathology showing absence of malignant cells); xanthogranulomatous cholecystitis (benign inflammatory condition causing wall thickening and hepatic infiltration, distinguished by histology showing epithelioid granulomas and Langhans giant cells); gallbladder tuberculosis (rare extrapulmonary presentation presenting as pseudotumoral cholecystitis, confirmed by histopathology showing epithelioid granulomas with Langhans giant cells and positive Mantoux test).",
+  "case_prompt": "A 68-year-old man presents with chief complaints of recurrent right hypochondrial pain, loss of appetite, and dyspepsia for the past 1 month. He reports no fever, chills, night sweats, or unintentional weight loss. He denies any history of hepatitis or chronic cough, and reports no history of jaundice. General physical and abdominal examinations are unremarkable. Routine laboratory tests are within normal limits, with an erythrocyte sedimentation rate (ESR) of 30 mm/h. Plain chest radiography reveals no abnormality. Abdominal ultrasonography reveals a gallbladder mass and a distended gallbladder containing multiple gallstones with associated cholecystitis. Contrast-enhanced computed tomography (CT) reveals a 5-mm thickened gallbladder wall with loss of a distinct interface between the liver and gallbladder, suggestive of local lesion infiltration into the adjacent hepatic parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gallbladder carcinoma with hepatic invasion",
+      "rule_out_reason": "Considered the primary preoperative provisional diagnosis given the combination of an intraluminal gallbladder mass, cholelithiasis, thickened gallbladder wall, and apparent infiltration across the liver-gallbladder interface on contrast-enhanced CT. However, frozen-section examination and definitive histopathology revealed no evidence of malignant neoplasia.",
+      "quote": "Therefore, a diagnosis of gallbladder carcinoma was considered, and the patient underwent a subcostal laparotomy."
+    },
+    {
+      "candidate": "Xanthogranulomatous cholecystitis",
+      "rule_out_reason": "Considered as an inflammatory mimic of gallbladder carcinoma that produces severe mural thickening, cholelithiasis, and local fibrous adherence/invasion into hepatic parenchyma. Ruled out by characteristic histopathological findings of tuberculous granulomatous inflammation with Langhans giant cells.",
+      "quote": "The definitive histopathological examination (HPE) of gallbladder reported gallbladder tuberculosis (Figure 2). Microscopical view shows epithelioid granuloma along with typical Langhans giant cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological evaluation of the resected gallbladder demonstrated chronic epithelioid granulomas with typical Langhans giant cells in the absence of malignancy, supported by a positive Mantoux tuberculin skin test, establishing gallbladder tuberculosis.",
+      "quote": "The definitive histopathological examination (HPE) of gallbladder reported gallbladder tuberculosis (Figure 2). Microscopical view shows epithelioid granuloma along with typical Langhans giant cells. The Mantoux tuberculin skin test was positive"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4856939_01 following Stanford MedCaseReasoning guidelines. The case prompt preserves the clinical tension between gallbladder carcinoma and cholecystitis, stopping immediately before surgical laparotomy and histology."
+}

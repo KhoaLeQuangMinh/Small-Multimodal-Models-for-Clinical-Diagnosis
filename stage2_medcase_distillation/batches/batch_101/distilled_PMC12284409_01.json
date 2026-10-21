@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12284409_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 22-year-old immunocompetent manual laborer presents with an 18-month progression of low back pain initially thought to be mechanical disc disease, which evolved into bilateral lumbar fossae pain, elevated systemic inflammatory markers (ESR, CRP 82.4 mg/L), and extensive bilateral psoas abscesses secondary to L1-L2 spondylodiscitis. The core diagnostic challenge is distinguishing tuberculous spondylodiscitis (Pott's disease) with cold psoas abscesses from pyogenic staphylococcal discitis or seronegative spondyloarthritis in a young adult.\n2. Admission Breakpoint: Admission workup concludes with the physical examination, triage inflammatory markers and metabolic labs, plain spinal radiography, and lumbosacral MRI demonstrating spondylodiscitis with bilateral psoas fluid collections, immediately prior to percutaneous CT-guided needle aspiration of the psoas abscesses.\n3. Differential Distinctions: The afebrile, prolonged 18-month duration rules against fulminant pyogenic spondylodiscitis. Absence of sacroiliitis or peripheral enthesopathy on imaging and clinical exam excludes ankylosing spondylitis and enteropathic spondyloarthropathies, confirming an indolent infectious destructive etiology.",
+  "case_prompt": "A 22-year-old previously healthy male manual laborer presented with an 18-month history of progressively worsening lower back pain and bilateral pain localized to the lumbar fossae. Eighteen months prior, he had developed mechanical low back pain without nocturnal awakenings or morning stiffness, worsened by physical labor. An initial lumbar CT scan obtained by a primary care physician had shown non-compressive disc protrusions at L1-L2, L3-L4, and L4-L5, for which he received celecoxib and subsequently self-medicated with nonsteroidal anti-inflammatory agents without symptomatic relief. He reported no significant past medical history, no tobacco use, and no immunosuppressive exposures.\n\nOn physical examination, the patient was clinically stable and afebrile. Lumbar spinal motion was stiff and restricted. There were no peripheral joint swellings, enthesitis, peripheral synovitis, or extra-articular manifestations. Neurological examination of the lower extremities was intact.\n\nLaboratory evaluation revealed a marked inflammatory syndrome, with an elevated erythrocyte sedimentation rate (ESR) and a C-reactive protein (CRP) level of 82.4 mg/L. Renal function was normal, fasting blood glucose was within normal limits, and BMI was normal. Serological screening for HIV was negative. A standard chest radiograph demonstrated clear lung fields without infiltrates.\n\nA plain radiograph of the thoracolumbar spine revealed suspicious osteolytic changes involving the L1-L2 and L2-L3 intervertebral levels. Magnetic resonance imaging (MRI) of the spine revealed an intervertebral disc abscess centered at L1-L2, with inflammatory extension into the adjacent neural foramina, paravertebral spaces, and extensively into both the right and left psoas muscles. The sacroiliac joints and pelvic architecture were completely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ankylosing Spondylitis / Spondyloarthritis",
+      "rule_out_reason": "Inflammatory back pain in a young male can suggest spondyloarthritis; however, the absence of bilateral sacroiliitis on pelvic imaging, lack of peripheral joint or enthesitic disease, and MRI demonstration of destructive discitis with bilateral psoas fluid collections excluded rheumatic inflammatory spondyloarthropathy.",
+      "quote": "ruling out rheumatic diseases such as spondyloarthritis due to the absence of sacroiliitis, specific spinal images and coxitis."
+    },
+    {
+      "candidate": "Degenerative Disc Disease / Spinal Neoplasm",
+      "rule_out_reason": "While early mechanical symptoms and initial plain imaging suggested degenerative disc protrusions or primary bony neoplasms, the persistent worsening and decisive MRI findings confirmed an infectious spondylodiscitis with large bilateral muscular abscesses.",
+      "quote": "In our case, the radiography could suggest other degenerative or neoplastic pathologies, but the MRI was decisive in identifying the infectious nature of the condition"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred following CT-guided percutaneous drainage of the psoas collections; aspirated purulent material was negative on routine aerobic/anaerobic cultures but showed acid-fast bacilli on Ziehl-Neelsen staining, followed by positive Lowenstein-Jensen culture and GeneXpert MTB/RIF confirmation.",
+      "quote": "Analysis of the aspirated fluid revealed a marked cellular reaction, with initially sterile cultures on standard media. Direct examination with the Ziehl-Neelsen and auramine staining demonstrated the presence of acid-fast bacilli (AFB), suggestive of M. tuberculosis infection."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at MRI spine and admission laboratory workup. Psoas fluid aspiration, AFB staining, and GeneXpert results are sequestered to diagnostic reasoning."
+}

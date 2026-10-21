@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7586178_02",
+  "disease": "Trypanosomiasis",
+  "think": "<think>\n1. Core Clinical Tension: An 11-month-old infant in an endemic tropical setting presents with acute fever, abdominal pain, and dyspnea, accompanied by mild anemia and transaminitis. The diagnostic challenge is distinguishing acute Chagasic carditis with rapid biventricular enlargement from severe malaria, visceral leishmaniasis, or acute pediatric viral myocarditis before irreversible heart failure ensues.\n2. Admission Breakpoint: The breakpoint stops immediately after triage presentation with fever, abdominal pain, shortness of breath, and initial blood exam findings (hemoglobin 10.9 g/dL, AST 44 U/L, ALP 134 U/L), before thick blood smear parasitology, Chagas immunofluorescent IgG serology, chest X-ray, and ECG.\n3. Differential Distinctions: Acute viral myocarditis presents with cardiomegaly and heart failure in infants but lacks circulating flagellated protozoa and positive T. cruzi serology. Malaria and visceral leishmaniasis cause febrile hepatosplenomegaly and anemia in the Amazon region but are ruled out by thick blood smear demonstrating Trypanosoma cruzi rather than Plasmodium or Leishmania parasites.\n</think>",
+  "case_prompt": "<case_prompt>\nAn 11-month-old male infant presents to a regional hospital with acute fever, upper abdominal pain, and shortness of breath. Initial laboratory testing reveals mild anemia with a hemoglobin level of 10.9 g/dL and hepatic impairment with an aspartate aminotransferase (AST) of 44 U/L and alkaline phosphatase (ALP) of 134 U/L.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Myocarditis",
+      "rule_out_reason": "Acute congestive heart failure and cardiomegaly in an infant frequently stem from viral myocarditis; ruled out by microscopic identification of circulating flagellated parasites and positive protozoal serology.",
+      "quote": "Thick blood smear microscopy showed Trypanosoma cruzi (T. cruzi) positive, and the patient was hospitalized. Furthermore, Chagas serology confirmed infection with an immunofluorescent test result of 1/160 IgG titration."
+    },
+    {
+      "candidate": "Severe Malaria / Visceral Leishmaniasis",
+      "rule_out_reason": "Endemic tropical causes of fever, hepatosplenomegaly, and anemia in infants; ruled out by thick smear microscopy demonstrating specific Trypanosoma cruzi trypomastigotes rather than Plasmodium or intracellular Leishmania donovani amastigotes.",
+      "quote": "Thick blood smear microscopy showed Trypanosoma cruzi (T. cruzi) positive, and the patient was hospitalized."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct microscopic identification of Trypanosoma cruzi on thick blood smear examination, corroborated by positive Chagas immunofluorescent IgG titers of 1/160, cardiomegaly (cardiothoracic ratio 62%) on chest radiograph, and right atrial and ventricular overload on electrocardiogram, confirming acute Chagas disease with cardiac involvement.",
+      "quote": "The patient was diagnosed with \"acute form of Chagas disease with cardiac involvement,\" and a 60-day dosage of benznidazole in suspension was initiated."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint enforced. No mentions of Chagas, Trypanosoma, benznidazole, or cardiomegaly in case_prompt. Direct verbatim quotes in diagnostic_reasoning. Audit flags NONE."
+}

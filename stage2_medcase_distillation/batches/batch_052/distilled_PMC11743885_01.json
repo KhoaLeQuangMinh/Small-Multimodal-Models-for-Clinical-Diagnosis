@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11743885_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 34-year-old woman in Ethiopia presents with a large (6 x 8 cm), painless, hard mass in the upper outer quadrant of the left breast that is clinically fixed to the skin. In the absence of trauma, infection, or prior surgeries, the presentation strongly mimics locally advanced invasive breast carcinoma, but is caused by an isolated hydatid cyst of the breast.\n2. Admission Breakpoint: The narrative concludes immediately following admission physical examination documenting the 6 x 8 cm hard breast mass fixed to the skin in the upper outer quadrant, prior to fine needle aspiration cytology (FNAC), breast ultrasound, operative excision, or histopathological examination.\n3. Differential Distinctions: Invasive breast carcinoma (e.g., invasive ductal carcinoma) is the preeminent suspicion for a hard, solitary mammary mass fixed to the skin in an adult woman, but FNAC shows acellular fluid rather than malignant epithelial cells. Fibroadenoma or simple breast cyst presents as a discrete breast lump, but is usually well-circumscribed, mobile, and not skin-fixed. Isolated breast hydatid disease (Echinococcus granulosus) is exceptionally rare (<0.27% of hydatid cases), presenting as an indolent firm-to-hard mass whose parasitic cyst architecture can mimic malignancy.",
+  "case_prompt": "A 34-year-old woman (para II) presents to a specialized referral hospital with a 9-month history of a progressive, painless swelling in her left breast, which she initially noticed during showering. She reports no nipple discharge, overlying cutaneous erythema, or ulceration. She has no personal history of breast trauma or previous breast operations, and has no family history of breast malignancy.\n\nOn physical examination, vital signs are within normal limits. Breast examination reveals a 6 cm x 8 cm non-tender, hard mass located in the upper outer quadrant of the left breast. The mass is clinically fixed to the overlying skin, but there are no overlying cutaneous discoloration, peau d'orange changes, nipple retraction, or pathological nipple discharge. Axillary lymph nodes are not palpably enlarged, and the contralateral breast and systemic examination are unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Locally Advanced Invasive Breast Carcinoma",
+      "rule_out_reason": "A large (6 x 8 cm), hard, painless mammary mass fixed to the skin in the upper outer quadrant strongly suggested invasive breast carcinoma; however, fine needle aspiration yielded cell-free fluid and surgical excision confirmed parasitic cyst structures without malignant cells.",
+      "quote": "On physical examination there is 6 by 8 cm non tender hard mass fixed to the skin but no overlying skin change or discharge on the upper outer quadrant. For this presentation she was admitted to the hospital for presumptive diagnosis of breast ca."
+    },
+    {
+      "candidate": "Benign Simple Mammary Cyst or Giant Fibroadenoma",
+      "rule_out_reason": "Benign breast cysts and fibroadenomas are typically smooth, elastomeric, and freely mobile without cutaneous fixation; furthermore, ultrasonography demonstrated characteristic double-layered cyst walls and posterior acoustic enhancement incompatible with simple fibroadenoma.",
+      "quote": "An anechoic cystic mass having a double-layered wall with posterior acoustic enhancement was appreciated."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the excised surgical specimen revealed classic eosinophilic laminated chitinous layers, an inflamed host-derived pericyst, and multiple pathognomonic protoscolices of Echinococcus.",
+      "quote": "A fragment of a hydatid cyst with eosinophilic laminated layers, chronically inflamed pericyst infiltrated with eosinophil-dominant, mixed chronic inflammatory exudates and multiple protoscolices."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at admission physical exam. Zero mention of breast cancer presumptive diagnosis, cysts, echinococcosis, or hydatid disease in case_prompt. Direct quotes verified verbatim from case text."
+}

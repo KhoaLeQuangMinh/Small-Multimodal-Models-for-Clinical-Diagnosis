@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC8200608_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient is a young woman with Crohn's disease in clinical remission following biological therapy (adalimumab) who presents with progressive high dysphagia, odynophagia, significant weight loss, night sweats, and diffuse gray-whitish granules scattered over congested palatine tonsils, pharynx, and larynx. The predominant upper aerodigestive tract symptomatology masquerades as refractory bacterial pharyngotonsillitis, fungal candidiasis, or immunosuppression-related tonsillar/laryngeal neoplasm, deflecting attention away from primary pulmonary mycobacterial infection with mucosal dissemination.\n2. Admission Breakpoint: The triage narrative concludes immediately following the initial clinical examination, cervical lymph node palpation, ENT direct visualization, and baseline laboratory workup (CBC showing microcytic hypochromic anemia, lymphopenia, and elevated ESR/CRP), strictly prior to the results of pharyngeal exudate microbiology, HIV/VDRL serologies, sputum Koch bacillus evaluation, and neck/chest computed tomography.\n3. Differential Distinctions: Pharyngeal malignancy and lymphoma are ruled out by negative tonsillar histopathology; acute bacterial pharyngotonsillitis and peritonsillar abscess are excluded by failure to respond to amoxicillin-clavulanic acid and ceftriaxone with negative bacterial exudate cultures; candidiasis and syphilis are excluded by negative pharyngeal fungal examination and nonreactive VDRL; the true diagnosis is confirmed by sputum detection of Koch bacillus alongside cavitary and micronodular bronchopulmonary dissemination on imaging.",
+  "case_prompt": "A 37-year-old woman presented to the gastroenterology service with a two-month history of progressive odynophagia and high dysphagia, accompanied by a 5-kg weight loss. Her symptoms had advanced from difficulty swallowing solids to total dysphagia for both solid and liquid foods, complicated by sialorrhea, marked physical asthenia, and night sweats. Her medical history was notable for ileocolonic inflammatory bowel disease diagnosed 13 years earlier, currently in clinical remission, with associated spondylitis and sacroiliitis. She had previously received biological therapy with a tumor necrosis factor inhibitor combined with azathioprine, which was discontinued five years prior; she was then maintained on mesalazine (3 g/day) and azathioprine (100 mg/day). Eleven months before presentation, treatment with a second tumor necrosis factor inhibitor was initiated, but this was discontinued one month prior to admission because of recurrent sore throat. Two months before presentation, she was treated for acute erythematous angina with amoxicillin-clavulanic acid without improvement, and subsequent outpatient antimicrobial therapy with ceftriaxone similarly failed to relieve her symptoms.\n\nOn physical examination, she appeared underweight with impaired general condition. Her temperature was 36.9\u00b0C, blood pressure was normal, weight was 48 kg, height was 164 cm, and body mass index was 17.85 kg/m\u00b2. Her skin and oral mucous membranes were pale and dehydrated. Examination of the musculoskeletal system revealed pain on mobilization of the pelvis and lumbar spine, with positive Eriksen and Volkman signs. Palpation of the superficial lymph node basins revealed two firm, immobile, non-tender oval structures, each measuring approximately 1 cm in greatest diameter, in the right laterocervical region. Chest auscultation was clear without added sounds. Otorhinolaryngological examination revealed bilaterally congested and hypertrophic palatine tonsils with multiple small, gray-whitish granules diffusely disseminated across the pharynx and larynx.\n\nInitial laboratory evaluation revealed moderate microcytic hypochromic anemia, lymphopenia, and mild hypoalbuminemia. The erythrocyte sedimentation rate was markedly elevated at 120 mm/h (reference: 2\u201312), C-reactive protein was 88.24 mg/L (reference: 0\u20135), prothrombin index was 61% (reference: 79\u2013146%), and the international normalized ratio was 1.38 (reference: 0.8\u20131.16). Routine serum biochemistries, renal function, and liver profiles were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tonsillar neoplasm / Lymphoma",
+      "rule_out_reason": "Severe dysphagia, profound weight loss, asymmetric-appearing tonsillar congestion, and firm immobile cervical lymphadenopathy in an immunosuppressed patient strongly suggested tonsillar carcinoma or lymphoma, but histopathological evaluation of tonsillar biopsy specimens demonstrated no evidence of malignancy.",
+      "quote": "tonsillar biopsies were performed, which ruled out malignancy."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial pharyngotonsillitis / Peritonsillar abscess",
+      "rule_out_reason": "Marked odynophagia, tonsillar hypertrophy, and elevated systemic inflammatory markers raised suspicion for acute pyogenic pharyngitis, but symptoms relentlessly progressed despite sequential broad-spectrum antibacterial courses (amoxicillin-clavulanic acid and ceftriaxone), and microbiological culture of pharyngeal exudate showed no pathogenic streptococci or staphylococci.",
+      "quote": "the diagnosis of acute erythematous angina was established, for which she subsequently received antibiotic treatment (Amoxicillin+Clavulanic Acid), with no clinical response."
+    },
+    {
+      "candidate": "Oropharyngeal candidiasis",
+      "rule_out_reason": "The direct visualization of diffuse whitish-gray mucosal granulations throughout the pharynx and larynx in a patient with pharmacologic immunosuppression raised concern for invasive oropharyngeal candidiasis, but pharyngeal exudate was negative for Candida species.",
+      "quote": "microbiological examination of pharyngeal exudate (negative for Candida spp, Staphylococcus aureus, Streptococcus pyogenes)"
+    },
+    {
+      "candidate": "Syphilitic pharyngitis / Acute retroviral syndrome",
+      "rule_out_reason": "Chronic mucosal lesions accompanied by cervical lymphadenopathy and systemic asthenia required consideration of secondary syphilis and HIV-associated acute pharyngotonsillitis, but specific serologic screens were non-reactive.",
+      "quote": "anti-HIV antibodies 1/2 (absent), venereal disease research laboratory (VDRL) (negative)"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred when microscopic examination of the patient's sputum revealed Koch bacilli, corroborated by thoracic computed tomography showing massive apical cavitation and diffuse micronodular condensations consistent with hematogenous dissemination following anti-TNF-alpha biological therapy.",
+      "quote": "we found a positive result for the Koch Bacillus in the patient's sputum."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to Day 1 admission presentation. All confirmatory microbiologic stains, send-out serologies, and thoracic CT scans are excluded from the case prompt and detailed within the differential reasoning with verbatim citations."
+}

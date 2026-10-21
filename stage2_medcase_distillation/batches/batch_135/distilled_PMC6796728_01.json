@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6796728_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old female with advanced, poorly controlled HIV infection presents in septic shock with diffuse acute peritonitis following 10 days of worsening lower abdominal pain and a 1-year history of intermittent cough, hematochezia, and weight loss. In severely immunocompromised HIV patients, acute non-traumatic bowel perforation is predominantly attributed to cytomegalovirus (CMV) colitis, gastrointestinal lymphoma, or Kaposi sarcoma, obscuring intestinal tuberculosis until histopathological examination.\n2. Admission Breakpoint: The presentation ends at initial emergency resuscitation, physical examination revealing diffuse peritonitis and shock, and admission labs demonstrating leukocytosis, neutrophilia, and metabolic acidosis with hyperlactatemia, immediately prior to exploratory laparotomy.\n3. Differential Distinctions: Cytomegalovirus (CMV) enteritis/colitis is the most frequent opportunistic cause of spontaneous hollow viscous perforation in severe HIV, producing multiple punched-out ulcers; however, histological examination failed to detect CMV viral inclusions and instead demonstrated granulomatous inflammation. Gastrointestinal Kaposi sarcoma or lymphoma causes transmural tumor infiltration, ulceration, and perforation, but histopathology demonstrated multiple mucosal ulcers with caseating epithelioid granulomas rather than malignant spindle cells or lymphoid neoplasia.",
+  "case_prompt": "A 26-year-old female with a history of HIV diagnosed at age 15 and poor adherence to combination antiretroviral therapy (intermittent tenofovir, emtricitabine, and efavirenz) presents to the emergency room with a 10-day history of intermittent lower abdominal pain, nausea, bilious vomiting, and asthenia. Approximately 24 hours prior to presentation, her abdominal pain escalated acutely. She has missed outpatient clinical appointments over the past year, with no CD4 count or viral load monitoring in more than 6 months, and describes prior intermittent episodes of cough, bloody stools, and weight loss. On physical examination, she appears acutely ill, dehydrated, hypotensive, and tachycardic. Her abdomen is diffusely tender with severe involuntary guarding exacerbated by light touch. Initial laboratory evaluation shows mild leukocytosis with neutrophilia. Arterial blood gas analysis demonstrates metabolic acidosis with hyperlactatemia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cytomegalovirus (CMV) colitis / enteritis perforation",
+      "rule_out_reason": "Given profound HIV immunosuppression, CMV was initially considered the most probable opportunistic cause of bowel ulceration and spontaneous perforation, prompting empiric ganciclovir; however, resected tissue histology demonstrated prominent chronic granulomas without cytomegalic viral inclusion bodies.",
+      "quote": "Based on the historical, clinical, and laboratory data obtained, we initially considered intestinal perforation due to cytomegalovirus (CMV) infection as the probable etiology of peritonitis"
+    },
+    {
+      "candidate": "Gastrointestinal lymphoma / Kaposi sarcoma / neoplasm",
+      "rule_out_reason": "Malignant neoplasms and Kaposi sarcoma represent recognized causes of spontaneous intestinal perforation in advanced retroviral disease, but surgical pathology confirmed chronic granulomatous inflammation and mucosal ulcerations without evidence of malignant cellular proliferation.",
+      "quote": "and the differentials included, mycobacterial infections, fungal infections, neoplastic disease or Kaposi sarcoma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the resected ileocecal specimen demonstrated chronic bowel inflammation, multiple mucosal ulcers, and characteristic epithelioid granulomas within the mucosa and mesenteric lymph nodes, confirming intestinal tuberculosis as the underlying etiology of perforation in the setting of severe immunosuppression (CD4 count 94 cells/mm³).",
+      "quote": "Two days after the patient went AMA, CD4 and HIV viral load results arrived along with the pathology report, revealing chronic inflammation of the resected bowel, and multiple ulcers affecting the mucosa of the ileum and the cecum. Also, multiple granulomas surrounded by inflammatory tissue were recognized, as well as some granulomas within the lymph nodes. Bowel perforation due to tuberculosis was confirmed as the final diagnosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Gastrointestinal tuberculosis is a life-threatening extrapulmonary complication of advanced HIV, often affecting the terminal ileum and cecum due to high lymphoid tissue density. While CMV enteritis is typically the default assumption for spontaneous bowel perforation in patients with CD4 counts <100 cells/mm³, tuberculous ulceration can cause transmural necrosis and perforation requiring emergency laparotomy and definitive histopathological identification."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8279858_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 60-year-old female presents with acute Charcot's triad (fever, jaundice, right upper quadrant pain) accompanied by clay-colored stools and pruritus, classical for gallstone obstruction and acute ascending bacterial cholangitis. However, abdominal imaging identifies a concurrent 67 × 44 mm segment IV hepatic cystic lesion communicating directly with a calculus-filled gallbladder, representing spontaneous rupture and fistulization of a hepatic hydatid cyst into the biliary system.\n2. Admission Breakpoint: The breakpoint occurs at emergency admission following physical examination (fever, RUQ tenderness), baseline triage laboratories (leukocytosis, high CRP, severe conjugated hyperbilirubinemia), and initial abdominal ultrasound demonstrating the segment IV cystic mass communicating with the gallbladder, strictly prior to abdominal CT characterization of a hydatid cyst, surgical laparotomy, and histopathological analysis.\n3. Differential Distinctions: Choledocholithiasis with secondary acute bacterial cholangitis was the provisional diagnosis based on Charcot's triad and gallbladder stones, but fails to account for a communicating hepatic cyst; pyogenic liver abscess rupturing into the biliary tree presents with sepsis and hepatic fluid collection, but surgery identified daughter cysts and parasitic membranes; CT and laparotomy confirmed rupture of a hepatic hydatid cyst into the gallbladder.",
+  "case_prompt": "A 60-year-old female with no significant past medical history presents with a 1-month history of right upper quadrant abdominal pain, progressive jaundice, clay-colored stools, and generalized itching, acutely accompanied by high fevers and shaking chills for the past 3 days.\n\nOn admission, her blood pressure is 120/80 mmHg, pulse rate is 84 beats/min, and body temperature is 38.5°C. Physical examination reveals tenderness in the epigastric region and right upper quadrant of the abdomen. There is no palpable hepatomegaly or splenomegaly, and the remainder of the clinical examination is unremarkable.\n\nLaboratory examinations on admission demonstrate a white blood cell count of 13,000/μL, C-reactive protein (CRP) of 15 mg/L, serum glutamic-oxaloacetic transaminase (SGOT) of 37 U/L, serum glutamic pyruvic transaminase (SGPT) of 37 U/L, and total bilirubin of 250 mg/L with direct bilirubin of 150 mg/L. Emergency abdominal ultrasonography reveals a cystic lesion at segment IV of the liver measuring 67 × 44 mm that communicates with the gallbladder, which contains multiple calculi, with compression leading to dilatation of the intrahepatic bile ducts.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choledocholithiasis / Primary calculous ascending cholangitis",
+      "rule_out_reason": "The clinical presentation of Charcot's triad (pain, fever, and jaundice) in the setting of multiple gallbladder stones initially led to a diagnosis of calculous cholangitis, but ultrasound and cross-sectional imaging revealed that the biliary obstruction was secondary to a communicating hepatic cystic mass fistulizing into the gallbladder.",
+      "quote": "The patient was diagnosed with cholangitis due to the presence of pain, fever, and jaundice."
+    },
+    {
+      "candidate": "Pyogenic or amoebic liver abscess with biliary communication",
+      "rule_out_reason": "A hepatic cystic mass communicating with the biliary tree in a septic patient can represent a ruptured bacterial or amoebic abscess, but surgical exploration revealed parasitic daughter cysts within the gallbladder and an intact hydatid cyst wall rather than purulent abscess cavity necrosis.",
+      "quote": "When the gallbladder was opened, macrolithiasis and daughter cysts were found"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal CT scan and surgical laparotomy confirmed a segment IV hepatic hydatid cyst that had spontaneously ruptured and fistulized into the gallbladder, discharging daughter cysts into the biliary tree and precipitating obstructive cholangitis.",
+      "quote": "Abdominal CT scan was performed for a better characterization and showed hydatid cyst at segment IV of the liver fistulized in the gallbladder which is multilithiasic with dilatation of the intrahepatic biliary tree"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly ends at triage ultrasound before CT hydatid characterization and intraoperative daughter cyst discovery. Quotes verified verbatim."
+}

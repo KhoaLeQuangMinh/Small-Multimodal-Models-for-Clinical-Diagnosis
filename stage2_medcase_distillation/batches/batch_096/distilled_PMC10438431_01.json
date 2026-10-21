@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10438431_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 50-something male smoker without known HIV infection presents with chronic hemoptysis, low-grade fever, faint thoracoabdominal rash, and a large right upper lobe mass causing bronchial occlusion and pleural effusion. This presentation strongly mimics bronchogenic carcinoma or pulmonary tuberculosis, and lung biopsy initially suggested bronchiolitis obliterans organizing pneumonia (BOOP).\n2. Admission Breakpoint: The point of hospital admission and initial physical and diagnostic evaluation (vital signs, thoracoabdominal rash, coarse lung sounds, baseline laboratory indices, negative HIV status, and chest CT demonstrating the right upper lobe solid mass with apical occlusion and pleural effusion), strictly before bronchoscopic fluid cytology, bone marrow biopsy, lung histopathology, and fungal cultures/ITS sequencing.\n3. Differential Distinctions: Bronchogenic carcinoma is characterized by malignant cytologic atypia and invasive neoplastic cells; pulmonary tuberculosis exhibits acid-fast bacilli on Ziehl-Neelsen staining; pulmonary talaromycosis displays dimorphic thermal characteristics (red pigment production at 28 C) and characteristic fungal spores confirmed via internal transcribed spacer (ITS) rDNA sequencing.",
+  "case_prompt": "A male patient in his 50s presented to a tertiary hospital with a history of persistent cough, bloody sputum expectoration (hemoptysis), low-grade fever, and faintly visible cutaneous rashes localized to the thoracoabdominal junction, following an incidental pulmonary shadow identified on routine physical examination over six months earlier. The patient had no prior history of chronic illnesses, was confirmed to be HIV-negative, and reported a 30 pack-year smoking history.\n\nOn admission physical examination, body temperature was 37.6 C, pulse rate was 105 beats/min, respiratory rate was 20 breaths/min, and blood pressure was 101/68 mmHg. Auscultation of the chest revealed coarse breath sounds bilaterally, and a faint erythematous macular eruption was observed across the lower chest and upper abdomen.\n\nAdmission chest computed tomography (CT) demonstrated a solid pulmonary mass in the right upper lobe associated with apical bronchial occlusion, patchy parenchymal infiltration, and irregular thickening of the adjacent interlobular septa. In addition, CT revealed multiple fuzzy-bordered nodules and cord-like infiltrates in the right lower lobe, fibrous foci and tiny nodules in the left lower lobe, and an ipsilateral right-sided pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Bronchogenic Carcinoma (Lung Cancer)",
+      "rule_out_reason": "Highly suspected because of the patient's age in the 50s, 30-year smoking history, hemoptysis, and an obstructing right upper lobe mass with pleural effusion; however, repeated cytologic examinations of bronchoscopic fluid, pleural fluid, pulmonary mass tissue, and bone marrow biopsy showed no malignant cells.",
+      "quote": "No cancer cells were found in fibrobronchoscopic fluid, pleural effusion or pulmonary masses and no abnormal cells were seen by bone marrow biopsy."
+    },
+    {
+      "candidate": "Pulmonary Tuberculosis (Mycobacterial Infection)",
+      "rule_out_reason": "Considered due to chronic hemoptysis, upper lobe mass lesion, and constitutional low-grade fever; ruled out by negative acid-fast staining despite an active suppurative inflammatory background.",
+      "quote": "Tuberculosis screening laboratory demonstrated negative acid-fast staining in a suppurative inflammatory background with plentiful neutrophils and macrophages, which preliminarily ruled out the infection of Mycobacterium (Figure 4B)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Talaromycosis (Talaromyces marneffei)",
+      "rule_out_reason": "The diagnosis was established when BALF fungal smear and culture demonstrated thermally dimorphic yeast colonies producing soluble red pigment at 28 C and typical penicillium-like conidiophores, confirmed by ITS rDNA PCR amplification and phylogenetic sequencing demonstrating 99.62% homology with Talaromyces marneffei.",
+      "quote": "Fungal culture of BALF revealed colonies with temperature-dependent dimorphic growth character, which showed yeast-like fungi producing soluble red pigment at 28 C and mycelia at 37 C in CANA, PDA and SDA (Figure 4F)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Zero pathogen spoilers in case prompt; admission breakpoint held prior to biopsy, cultures, and ITS sequencing. Verbatim quotes validated."
+}

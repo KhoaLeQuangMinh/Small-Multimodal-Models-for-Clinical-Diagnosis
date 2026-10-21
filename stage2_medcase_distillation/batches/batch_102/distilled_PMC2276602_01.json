@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2276602_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old pregnant immigrant presenting in preterm labor with acute hypoxemic respiratory failure was found to have a large paratracheal and hilar mass with tracheobronchial 'tumor' growths on bronchoscopy, with initial BAL yielding abundant Staphylococcus aureus, mimicking bronchogenic malignancy or necrotizing bacterial pneumonia.\n2. Admission Breakpoint: Initial labor and delivery triage and MICU admission with hypoxemia (PaO2 64 mmHg), paratracheal mass and atelectasis on chest radiograph and CT, prior to PPD reading, bronchoscopy with endobronchial biopsy, and mycobacterial DNA probing.\n3. Differential Distinctions: Endobronchial malignancy was ruled out by histology demonstrating caseating granulomatous inflammation; Staphylococcus aureus was recognized as superficial bacterial colonization over ulcerated mucosa; definitive diagnosis was established by DNA probe and culture from lung tissue isolating Mycobacterium tuberculosis.",
+  "case_prompt": "A 21-year-old Hispanic woman who immigrated to the United States two years prior presented at 32 weeks of gestation in a twin pregnancy with preterm labor contractions. Her prenatal course had been uncomplicated except for an occasional mild nonproductive cough. She was a nonsmoker with negative screening for hepatitis B and HIV. On physical examination, she was anxious and tachypneic with a respiratory rate of 30 breaths/min, blood pressure of 127/76 mmHg, and pulse oximetry of 89% while breathing ambient air. Chest auscultation revealed clear breath sounds bilaterally. Physical examination showed a uterine fundal height corresponding to a 32-week twin gestation, contractions every 1 to 3 minutes, and bilateral pedal edema. Arterial blood gas analysis on room air revealed pH 7.41, PaCO2 29 mmHg, PaO2 64 mmHg, bicarbonate 18 mmol/L, and base excess -6 mmol/L. Complete blood count showed a white blood cell count of 9.9 × 10³/mm³, hemoglobin of 10.8 g/dL, hematocrit of 32.8%, and platelet count of 432 × 10³/mm³. Plain chest radiography revealed a 4 × 4 cm right paratracheal soft-tissue opacity, slight elevation of the right hemidiaphragm, and linear atelectasis in the right lower lung field. Contrast-enhanced chest CT revealed an extensive right paratracheal mediastinal mass extending into the subcarinal and hilar regions, with associated right upper and lower lobe atelectasis and an equivocal right lower lobe alveolar infiltrate.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary bronchogenic carcinoma / Endobronchial neoplasm",
+      "rule_out_reason": "Tracheobronchial endoscopy showed irregular vegetations and a mass-like mediastinal lesion occluding the bronchial tree, raising strong concern for bronchogenic carcinoma; however, endobronchial biopsies demonstrated caseating granulomatous inflammation without atypical epithelial cells or malignancy.",
+      "quote": "She also had irregular tumor growth from the anterior wall of the proximal bronchus intermedius and the base of the proximal right upper lobe bronchus... Endobronchial biopsy of the proximal bronchus wall showed caseating granulomatous inflammation."
+    },
+    {
+      "candidate": "Acute necrotizing Staphylococcus aureus pneumonia",
+      "rule_out_reason": "Bronchoalveolar lavage culture isolated abundant Staphylococcus aureus, but transbronchial biopsy proved this to represent superficial bacterial colonization over chronically ulcerated caseating granulomas, with no clinical improvement on targeted anti-staphylococcal therapy.",
+      "quote": "There was an abundant growth of Staphylococcus aureus but no acid-fast bacilli (AFB), fungus, or hyphae from the BAL... Transbronchial biopsy of the right bronchus intermedius showed inflammatory and squamous debris with ulceration, reactive squamous epithelium, and colonizing coccal bacteria."
+    },
+    {
+      "candidate": "Fungal tracheobronchitis (e.g., Histoplasmosis, Coccidioidomycosis)",
+      "rule_out_reason": "Endobronchial fungal smears, fungal cultures, and fungal histopathological stains on bronchial biopsies were negative for yeasts or hyphae.",
+      "quote": "There was an abundant growth of Staphylococcus aureus but no acid-fast bacilli (AFB), fungus, or hyphae from the BAL."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endobronchial biopsy demonstrating classic caseating granulomatous inflammation, followed on hospital day 26 by positive DNA probe and culture isolation of Mycobacterium tuberculosis from right lung tissue specimens, confirmed active pulmonary and endobronchial tuberculosis.",
+      "quote": "Endobronchial biopsy of the proximal bronchus wall showed caseating granulomatous inflammation... It was only on Day 26 that Mycobacterium tuberculosis was isolated by DNA probe from her right lung tissue which was subsequently confirmed on culture."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Tumor-like endobronchial tuberculosis presenting in late twin pregnancy with severe hypoxemia and secondary Staphylococcal airway colonization."
+}

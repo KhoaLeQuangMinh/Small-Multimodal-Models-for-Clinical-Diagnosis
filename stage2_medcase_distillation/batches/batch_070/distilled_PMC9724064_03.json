@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9724064_03",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A young adult presents with a hyperacute febrile illness featuring constitutional symptoms, vomiting, and headache, with rapid deterioration in consciousness over 12 hours. The diagnostic challenge is distinguishing acute fulminant bacterial or viral meningoencephalitis from a reversible parainfectious encephalopathy syndrome such as RESLES.\n2. Admission Breakpoint: Day 1 clinical presentation of fever, chills, vomiting, myalgia, frontal headache, arthralgia, and rapid drop in consciousness within 12 hours of admission. Confirmatory testing begins with viral antigen and antibody detection, followed by brain MRI.\n3. Differential Distinctions: Acute bacterial or viral meningitis presents with rapid consciousness impairment, but lacks the specific isolated reversible splenial cytotoxic edema seen on MRI. Splenial ischemic infarction can show restricted diffusion, but typically occurs in older vasculopathic patients rather than a previously healthy young adult with systemic viral infection who recovers completely.",
+  "case_prompt": "A 20-year-old male presents with a 1-day history of acute high fever, chills, and severe vomiting, accompanied by generalized myalgia, frontal headache, and arthralgia. Within 12 hours after hospital admission, his neurological condition deteriorates, progressing to a significantly decreased level of consciousness.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningoencephalitis",
+      "rule_out_reason": "Considered due to the hyperacute presentation of fever, severe headache, vomiting, and rapid deterioration of consciousness within 12 hours; however, brain MRI demonstrated an isolated non-enhancing lesion confined to the splenium of the corpus callosum and the patient recovered completely with supportive therapy alone.",
+      "quote": "A 20-year-old male presented with a 1-day history of fever, chills and severe vomiting, associated with myalgia, frontal headache and arthralgia."
+    },
+    {
+      "candidate": "Corpus Callosum Ischemic Infarction",
+      "rule_out_reason": "Considered because the splenial lesion demonstrated restricted diffusion with low ADC values; however, true ischemic infarction is rare in young patients without cardiovascular risk factors, and follow-up MRI demonstrated complete resolution consistent with transient cytotoxic edema (RESLES) rather than permanent infarction.",
+      "quote": "Brain MRI revealed an oval-shaped lesion in the splenium of the corpus callosum, which was hyperintense on T2-weighted and FLAIR images and showed no post-contrast enhancement (Figures 5a-c)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by positive non-structural NS1 antigen and IgM serology confirming acute dengue infection, correlating with characteristic reversible splenial lesion syndrome (RESLES).",
+      "quote": "He tested positive for dengue NS1 antigen and was dengue IgM positive on the second day of fever."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint stops at initial deterioration within 12 hours. Zero spoilers in case_prompt. Verbatim quotes and canonical target disease verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11802171_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An elderly institutionalized woman presents with a classic fever of unknown origin (FUO) and functional decline whose initial high-resolution chest CT is completely normal, concealing disseminated miliary disease that mimics occult malignancy or antibiotic-refractory occult bacteremia.\n2. Admission Breakpoint: The admission evaluation concludes after the initial emergency assessment, physical examination, baseline laboratory investigations (normocytic anemia, severe hypoalbuminemia, hypokalemia, elevated CRP, non-pyuric urinalysis), and an initial thoracic HRCT demonstrating only emphysematous changes and dependent atelectasis without infiltrates or lymphadenopathy. Repeat CT on day 13, bone marrow biopsy, sIL-2R assay, IGRA, and mycobacterial cultures occur post-breakpoint.\n3. Differential Distinctions: Refractory bacterial urinary tract infection is excluded by absence of pyuria and sterile bacterial cultures; hematologic malignancy (lymphoma) is considered due to FUO and extreme sIL-2R elevation but excluded by bone marrow histopathology and absence of adenopathy; disseminated miliary disease is confirmed when repeat chest imaging demonstrates classic diffuse micronodules and cultures confirm Mycobacterium tuberculosis.",
+  "case_prompt": "An 82-year-old woman residing in a long-term care facility presented for the evaluation of a persistent fever lasting 12 days. She had recently received a course of oral antibiotics for a suspected urinary tract infection without clinical response. Her medical history was notable for dementia, depression, and cerebrovascular accident, with no history of immunosuppressive disease. Regular medications included antiplatelet agents and antidepressants. Her functional status had recently declined from wheelchair-bound to bedridden. She voiced no pain, respiratory complaints, or gastrointestinal symptoms.\n\nOn physical examination, her body mass index was 15.5 kg/m² (weight 36.3 kg). Blood pressure was 108/68 mmHg, body temperature was 37.8°C, heart rate was 68 beats per minute, respiratory rate was 19 breaths per minute, and oxygen saturation was 94% on ambient air. There was no nuchal rigidity, oral mucosal lesions, peripheral lymphadenopathy, or cuticular rash. Cardiopulmonary and abdominal examinations were normal.\n\nInitial laboratory evaluation revealed a hemoglobin of 9.3 mg/dL, serum albumin of 1.5 g/dL, serum potassium of 2.9 mmol/L, and C-reactive protein of 2.54 mg/dL. Urinalysis showed no pyuria. High-resolution computed tomography (HRCT) of the chest revealed no active infiltrates, displaying only baseline emphysema and dependent atelectasis, without lymphadenopathy, pleural effusion, ascites, or hepatosplenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory bacterial urinary tract infection / occult sepsis",
+      "rule_out_reason": "Initially suspected and treated empirically with oral and intravenous antibiotics, but ruled out by absence of pyuria on urinalysis, sterile urine and blood cultures, and complete lack of clinical defervescence.",
+      "quote": "Urinalysis showed no pyuria. HRCT revealed no abnormalities, excluding emphysema and passive atelectasis in the dependent areas, and there was no evidence of lymphadenopathy, hepatosplenomegaly, pleural effusion, or ascites (Figure 1A). Antibiotic treatment for presumed UTI was continued with intravenous ampicillin-sulbactam for five days but was ineffective."
+    },
+    {
+      "candidate": "Malignant lymphoma",
+      "rule_out_reason": "Suspected due to prolonged fever of unknown origin and marked elevation of soluble interleukin-2 receptor (sIL-2R: 3,940 U/mL), but ruled out by bone marrow aspiration and contrast CT showing no malignant lymphoproliferative disorder.",
+      "quote": "Elevated soluble interleukin-2 receptor (sIL-2R) levels (3940 U/mL) raised the suspicion of malignant lymphoma. Although the IGRA performed on day 7 was positive, it was initially considered a latent TB infection rather than an active disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Repeat thoracic CT on day 13 revealed the delayed appearance of diffuse, small nodular miliary opacities, while bone marrow histology showed necrotizing granulomas with Langhans giant cells and acid-fast bacilli, followed by definitive isolation of Mycobacterium tuberculosis from bronchoalveolar lavage and blood cultures.",
+      "quote": "the repeated CT demonstrated new, diffuse, small nodular opacities in the lungs (Figure 1B). Based on positive IGRA and HRCT findings, we suspected disseminated TB and performed culture tests for Mycobacterium using bronchoalveolar lavage fluid (BALF), sputum, urine, and blood samples."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to the initial FUO presentation with normal initial HRCT. Zero spoilers in case prompt. Verbatim quotes capture the lymphoma differential and subsequent miliary pivot."
+}

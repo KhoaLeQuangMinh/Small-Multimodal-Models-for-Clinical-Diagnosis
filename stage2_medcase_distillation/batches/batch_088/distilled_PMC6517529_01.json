@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6517529_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A 51-year-old man presents with chronic diarrhea and an 8 x 8 cm obstructive colonic mass in the ascending colon/hepatic flexure with ileocecal wall thickening, closely mimicking colorectal carcinoma or Crohn's disease, but actually representing an amebic pseudotumor (ameboma).\n2. Admission Breakpoint: The admission clinical presentation stops after abdominal examination, routine blood tests, tumor marker assays, stool microbiology, and abdominal CT/endoscopy demonstrating the obstructing colonic mass, prior to mucosal biopsy histopathology and empiric therapeutic trial with metronidazole.\n3. Differential Distinctions: Colorectal carcinoma is argued against by normal serum CEA/CA19-9 and CT demonstration of central low-density inflammatory features without malignant infiltration, confirmed by absence of malignancy on biopsy and total resolution with antiparasitic therapy. Crohn's disease or ileocecal tuberculosis typically exhibit transmural granulomatous ulcerations, skip lesions, or constitutional features, whereas this patient had normal distal colonoscopy and rapid resolution on metronidazole.",
+  "case_prompt": "A 51-year-old male presented with acute abdominal discomfort and postprandial abdominal distention accompanied by watery diarrhea of two months' duration. He reported no involuntary weight loss, anorexia, nausea, vomiting, melena, or hematochezia. His medical, surgical, and family histories were unremarkable.\n\nOn physical examination, he was afebrile and hemodynamically stable. Abdominal examination revealed slight tenderness in the right iliac fossa, where a large, firm mass was distinctly palpable. The remainder of the physical examination was unremarkable.\n\nInitial laboratory workup, including a complete blood count, serum electrolytes, blood urea nitrogen, serum creatinine, liver function tests, serum amylase, and lipase, was unremarkable. Serum tumor markers were within normal limits: CA 19-9 was 20 U/mL (reference <37 U/mL) and CEA (carcinoembryonic antigen) was 1 ng/mL (reference <5 ng/mL). Routine stool bacteriological cultures and microscopic parasitological examinations yielded negative results.\n\nA computed tomography (CT) scan of the abdomen demonstrated marked concentric wall thickening of the terminal ileum and cecum, along with an 8 x 8 cm ascending colon tumor causing severe luminal narrowing at the level of the hepatic flexure; the lesion exhibited central low-density attenuation suggestive of an inflammatory etiology. Colonoscopy revealed near-complete mechanical obstruction at the hepatic flexure that could not be traversed by the colonoscope, with edematous mucosa but no abnormalities distal to the lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colorectal Carcinoma / Ascending Colon Malignancy",
+      "rule_out_reason": "Although an 8 x 8 cm obstructing right-sided mass with palpable fullness and luminal narrowing strongly suggested colonic adenocarcinoma, serum tumor markers were normal and CT imaging revealed central low-density attenuation suggestive of an inflammatory process rather than neoplasm.",
+      "quote": "biochemical parameters including tumor markers (Ca19.9: 20 U/ml (nl <37 U/ml) and ACE: 1 ng/ml (<5 ng/ml)) were within the normal limits"
+    },
+    {
+      "candidate": "Crohn's Disease / Inflammatory Bowel Disease",
+      "rule_out_reason": "While terminal ileum and cecal concentric wall thickening could indicate Crohn's ileocolitis, there were no skip lesions in the distal colon, and mucosal biopsy revealed only inflammatory cell infiltration without granulomatous ulceration.",
+      "quote": "Histological examination of a biopsy specimen taken from the edematous mucosa by colonoscopy revealed inflammatory cell infiltration without ulceration."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Given the inflammatory features of the pseudotumor, initiation of oral metronidazole therapy resulted in rapid symptom resolution within three days, normal repeat colonoscopy up to the terminal ileum, and complete radiographic disappearance of the 8 x 8 cm mass after two weeks, confirming an amebic pseudotumor (ameboma).",
+      "quote": "Three days after initiation of treatment, the symptoms disappeared; repeated colonoscopy following the improvement of symptoms showed normal large bowel up to 12 cm in the ileum. The treatment was continued for 2 weeks and a repeated abdominal scan showed total disappearance of the tumor."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation isolated prior to mucosal histopathology and therapeutic response to metronidazole. Exact quotes preserved."
+}

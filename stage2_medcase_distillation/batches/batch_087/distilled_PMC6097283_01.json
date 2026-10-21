@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6097283_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A South Korean traveler presents to a clinic in Chile with an acute febrile illness, severe headache, transaminitis, thrombocytopenia, and a generalized maculopapular rash. Because scrub typhus is geographically not considered native to central Chile or routine South American travel, the illness closely mimics acute viral exanthems (e.g., EBV, CMV, parvovirus B19) or endemic tick-borne rickettsioses. Only identifying the travel chronology to a farm in South Korea and searching for a hidden necrotic eschar reveals the diagnosis.\n2. Admission Breakpoint: Admission triage concludes after gathering the travel history, vitals, skin examination identifying the rash and necrotic thigh eschar, and baseline blood/viral workup, immediately prior to send-out serology and PCR testing.\n3. Differential Distinctions: Acute viral syndromes (mononucleosis from EBV/CMV, parvovirus B19, acute respiratory infections) cause fever, rash, reactive lymphocytosis, and hepatitis, but do not produce a necrotic eschar and have negative serologies. Endemic Chilean rickettsioses (e.g., Candidatus Orientia chiloensis) occur in southern Chile (Chilo\u00e9 Island), whereas this patient acquired an Asian strain (Kawasaki type) during farm exposure south of Seoul. Doxycycline responsiveness with defervescence in <36 hours strongly supports a rickettsial etiology.",
+  "case_prompt": "A 62-year-old male tourist from South Korea presents with acute fever, rash, and severe malaise 2 days after arriving in Chile. He reports flu-like symptoms with chills, intense headache, and myalgias that began 5 days earlier. He lives in Seoul but recently visited a farm south of Seoul prior to travel. On physical examination, he appears severely unwell and has an axillary temperature of 38.8 \u00b0C and a heart rate of 108 beats per minute. He has a generalized, non-pruritic maculopapular rash, most pronounced on the trunk and sparing the palms, soles, and mucous membranes. On his left posterior thigh, there is a 6 mm painless necrotic lesion with a surrounding red halo. Initial laboratory investigations show hemoglobin of 13.0 g/dL, platelets of 91,000/\u03bcL, and a normal total leukocyte count with a left shift (20% bands), toxic granulation, and atypical reactive lymphocytes. Other lab tests reveal ESR of 32 mm/h, CRP of 3.6 mg/dL, sodium of 134 mEq/L, AST of 180 U/L, ALT of 161 U/L, GGT of 327 U/L, alkaline phosphatase of 208 U/L, and LDH of 718 U/L. A multiplex respiratory viral panel and IgM serologies for EBV, CMV, and parvovirus B19 are all negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Exanthem (EBV, CMV, Parvovirus B19, or Respiratory Viral Infection)",
+      "rule_out_reason": "Acute onset of high fever, rash, transaminitis, thrombocytopenia, and atypical reactive lymphocytes in an acutely ill traveler strongly resembled an acute viral illness; however, comprehensive viral PCR and IgM serologies were negative, and viral infections do not cause a necrotic eschar.",
+      "quote": "A molecular respiratory panel (xTAG  Respiratory Viral Panel FAST v2; Luminex, Austin, TX, USA) as well as serological assays (IgM) for EBV, CMV, and Parvovirus B19 were all negative."
+    },
+    {
+      "candidate": "Indigenous Chilean Rickettsiosis (Orientia sp. Chilo\u00e9 Island isolate)",
+      "rule_out_reason": "Because the patient presented in Chile with a rickettsial presentation, locally acquired Chilean rickettsiosis was considered; however, phylogenetic sequencing revealed that the isolate was 100% homologous to East Asian strains (Kawasaki type) contracted on a farm in Korea, unrelated to Chilean isolates.",
+      "quote": "Phylogenetic analysis also showed that the isolate clustered with Kawasaki type strains for both rrs and tsa56, but was not related with the Orientia sp. Chiloe Island isolate recently discovered from Chile (Fig. 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recognition of a classic painless eschar with a red halo in an acutely ill traveler returning from rural South Korea prompted empiric doxycycline therapy, resulting in defervescence within 36 hours and subsequent confirmatory ELISA, immunofluorescence, and PCR testing.",
+      "quote": "Oral treatment with doxycycline (100 mg bid) was initiated in response to clinical suspicion of scrub typhus."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint cleanly demarcated before send-out serology and PCR. Zero pathogen names in case prompt. Quotes are exact matches from the case text."
+}

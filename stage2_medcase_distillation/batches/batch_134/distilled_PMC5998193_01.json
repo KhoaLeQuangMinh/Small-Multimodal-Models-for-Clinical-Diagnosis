@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5998193_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: An elderly male on immunosuppressive biologic therapy (infliximab) and corticosteroids for rheumatoid arthritis presents with gastrointestinal distress, severe septic shock, and acute respiratory failure with alveolar infiltrates. The clinical picture closely mimics multi-drug resistant bacterial urosepsis, hospital-acquired bacterial pneumonia, or cardiogenic pulmonary edema, while obscuring an opportunistic helminthic hyperinfection native to rural Appalachia.\n2. Admission Breakpoint: The breakpoint is set at the patient's transfer and initial ICU triage evaluation (vitals, initial labs showing 5% eosinophilia and procalcitonin 0.75 ng/mL, baseline electrolytes, cardiac enzymes), before chest CT, invasive bronchoscopy, bronchoalveolar lavage, or mycological/parasitological identification.\n3. Differential Distinctions: Diabetic gastropathy and dehydration fail to account for refractory septic shock and respiratory failure; cardiogenic pulmonary edema is ruled out by a normal BNP and failure of aggressive diuresis; hospital-acquired bacterial pneumonia or uroseptic ARDS is challenged by persistently sterile respiratory and blood cultures, leading to the identification of Strongyloides stercoralis larvae on bronchoalveolar lavage.",
+  "case_prompt": "A 75-year-old male from rural West Virginia was transferred to the intensive care unit for progressive respiratory failure and septic shock. His medical history was notable for rheumatoid arthritis treated with infliximab and hydroxychloroquine sulfate, a recent gout flare treated with a prednisolone taper, diabetes mellitus, hypertension, atrial fibrillation, stage III chronic kidney disease, deep vein thrombosis complicated by gastrointestinal bleeding while on anticoagulation, IgM monoclonal gammopathy of undetermined significance, and recurrent bilateral pleural effusions status post decortication. He had no history of travel outside the United States.\n\nHe initially presented to an outside hospital with decreased appetite, nausea, vomiting, and abdominal pain. Initial vital signs there were normal, and an abdominal CT scan showed only fecal retention. His electrolyte abnormalities were initially managed with intravenous fluids and a nasogastric tube for presumed gastropathy, but his course was complicated by a multidrug-resistant urinary tract infection treated with ciprofloxacin. Over the subsequent days, his condition deteriorated with the onset of sepsis and hypoxemic respiratory failure requiring endotracheal intubation and transfer.\n\nOn arrival at the receiving intensive care unit, his temperature was 36.0°C, blood pressure 101/60 mmHg, regular heart rate 111 beats/minute, and respiratory rate 18 breaths/minute on mechanical ventilation. Laboratory evaluation revealed hemoglobin 9.0 g/dL, white blood cell count 11.8 × 10^9/L with 5% eosinophils, and platelet count 174 × 10^9/L. Serum creatinine was 2.8 mg/dL, sodium 122 mEq/L, and chloride 92 mEq/L, with hypoalbuminemia. Serum procalcitonin was 0.75 ng/mL, cardiac troponin was negative, and brain natriuretic peptide was 51 pg/mL. Vasopressor support and broad-spectrum intravenous antimicrobial therapy were initiated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Diabetic Gastropathy and Severe Dehydration",
+      "rule_out_reason": "Nausea, vomiting, abdominal pain, and hyponatremia were initially attributed to diabetic gastropathy and dehydration, but the patient rapidly progressed to refractory septic shock and respiratory failure unresponsive to prokinetic therapy and fluid resuscitation.",
+      "quote": "His electrolyte abnormalities were attributed to dehydration from vomiting, so a nasogastric tube was placed while fluid resuscitation was administered. A diagnosis of diabetic gastropathy was made and metoclopramide started."
+    },
+    {
+      "candidate": "Cardiogenic Pulmonary Edema",
+      "rule_out_reason": "New-onset atrial fibrillation with rapid ventricular rate alongside bilateral pulmonary infiltrates raised suspicion for acute cardiogenic pulmonary edema, but BNP was normal (51 pg/mL) and aggressive diuresis produced no clinical or radiographic improvement.",
+      "quote": "Despite aggressive diuresis at that time, the patient's hypoxia worsened with no improvement on chest radiographs"
+    },
+    {
+      "candidate": "Hospital-Acquired Bacterial Pneumonia / Sepsis",
+      "rule_out_reason": "Bilateral multifocal airspace disease in a critically ill patient suggested hospital-acquired bacterial pneumonia or secondary ARDS, but repeated blood and respiratory cultures remained sterile.",
+      "quote": "The patient's respiratory and blood cultures remained negative throughout the hospital course."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoscopy performed for refractory infiltrates demonstrated diffuse alveolar hemorrhage, and bronchoalveolar lavage fluid revealed Strongyloides stercoralis larvae, confirming Strongyloides hyperinfection syndrome triggered by anti-TNF biologic therapy and corticosteroids in an Appalachian resident.",
+      "quote": "Bronchoscopy showed diffuse alveolar haemorrhage... His bronchoalveolar lavage fluid (BAL) grew S. stercoralis"
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced at tertiary ICU arrival prior to chest CT and bronchoscopy. Zero pathogen or disease names present in case_prompt (including avoidance of ESBL E. coli and C. difficile). Direct verbatim quotes from source text substantiate all differential rule-outs and diagnostic pivot."
+}

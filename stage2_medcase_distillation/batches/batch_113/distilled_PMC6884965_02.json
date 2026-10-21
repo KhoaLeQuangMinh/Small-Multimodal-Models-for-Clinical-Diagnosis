@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6884965_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The unexpected emergence of a large solid pulmonary mass during successful treatment for an exudative pleural effusion in a non-smoker, creating clinical conflict between pulmonary malignancy, fungal superinfection, treatment failure, and a paradoxical immune reaction.\n2. Admission Breakpoint: The breakpoint occurs following repeat chest computed tomography and baseline triage laboratories (CBC, ESR, CRP, LFTs), prior to send-out tumor markers, fungal antigen assays, IGRA, and percutaneous lung biopsy.\n3. Differential Distinctions: Bronchogenic carcinoma is excluded by normal serum tumor markers and lack of malignant cellularity on core biopsy; invasive pulmonary fungal disease is excluded by negative galactomannan (GM) and (1,3)-beta-D-glucan (G) assays; treatment failure from antimicrobial resistance is excluded by negative repeat sputum AFB cultures and resolution on continued therapy.",
+  "case_prompt": "A 35-year-old non-smoking female presents with a two-week history of new-onset cough and sputum production. Four months earlier, she was admitted to a community hospital with polypnea, cough, sputum, and intermittent fevers, where chest CT demonstrated a right pleural effusion and pleural thickening. Diagnostic thoracentesis yielded an exudative fluid, prompting initiation of standard four-drug antimicrobial therapy. Her initial respiratory symptoms had gradually and completely resolved with treatment adherence. Her past medical history is notable for chronic hepatitis B virus infection.\nOn physical examination, she is afebrile with normal vital signs. Chest auscultation reveals clear breath sounds bilaterally without adventitious sounds, and the abdominal and lymph node examinations are normal.\nSurveillance computed tomography of the chest reveals complete resolution of the pleural effusion but demonstrates a newly developed 3.9 cm x 2.9 cm solid mass in the right middle and inferior pulmonary lobes. Initial laboratory workup reveals a white blood cell count of 7.03 x 10\u2079/L with 80.9% neutrophils and hemoglobin of 122 g/L. Baseline erythrocyte sedimentation rate, C-reactive protein, and hepatic function tests are within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Bronchogenic Carcinoma / Malignancy",
+      "rule_out_reason": "Serum tumor markers were normal and CT-guided percutaneous biopsy demonstrated benign inflammatory cellular infiltration rather than malignant neoplasia.",
+      "quote": "Results of examinations of ESR, CRP, liver function, tumor markers, GM-test, G-test and autoantibodies related to connective tissue disease were normal."
+    },
+    {
+      "candidate": "Invasive Pulmonary Fungal Disease",
+      "rule_out_reason": "Serum fungal biomarker assays, including galactomannan (GM-test) and (1,3)-beta-D-glucan (G-test), were negative.",
+      "quote": "Results of examinations of ESR, CRP, liver function, tumor markers, GM-test, G-test and autoantibodies related to connective tissue disease were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Initial resolution of tuberculous pleuritis coupled with positive immune reactivity assays and biopsy demonstrating epithelioid-lymphocytic infiltration established a paradoxical reaction resolving on continued antitubercular therapy.",
+      "quote": "IGRAs and tuberculin skin test were positive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC6884965_02. Presentation stops cleanly at repeat CT and basic labs without mentioning paradoxical reaction or biopsy."
+}

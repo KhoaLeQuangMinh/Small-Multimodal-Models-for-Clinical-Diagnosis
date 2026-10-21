@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11308940_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 74-year-old male presents with classic lower urinary tract obstructive symptoms, mild prostatic enlargement, and an elevated PSA (10.2 ng/mL), with completely absent systemic or pulmonary symptoms and a normal chest radiograph. The core tension is that the clinical picture mimicked ordinary benign prostatic hyperplasia or prostate adenocarcinoma, masking an extremely rare primary presentation of genitourinary granulomatous infection.\n2. Admission Breakpoint: Outpatient triage concludes following clinical history, normal routine blood work, normal chest radiography, PSA determination, and transabdominal pelvic ultrasound, immediately prior to transurethral resection of the prostate (TURP) and surgical pathology.\n3. Differential Distinctions: Benign prostatic hyperplasia and adenocarcinoma are ruled out by histopathology demonstrating caseating granulomas with Langhans giant cells. Typical pulmonary presentation is excluded by normal chest X-ray and absence of respiratory signs.",
+  "case_prompt": "A 74-year-old hypertensive male presented to the outpatient urology clinic with a 2-month history of progressively worsening lower urinary tract symptoms, including increased urinary frequency, weakened urinary stream, and nocturia. He denied constitutional symptoms such as fever, evening rise in body temperature, night sweats, or unintentional weight loss. He had no personal history of chronic pulmonary infections or known immunosuppression.\n\nOn physical examination, the abdomen was soft and non-tender, with no palpable bladder distension. Routine blood examination revealed no significant hematologic or biochemical abnormalities. Plain chest radiography was completely normal.\n\nTransabdominal ultrasonography revealed a symmetrically enlarged prostate weighing 28.9 grams with smooth, regular outlines and no intravesical projection. Serum prostate-specific antigen (PSA) was measured at 10.2 ng/mL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Benign Prostatic Hyperplasia (BPH)",
+      "rule_out_reason": "Considered the most probable diagnosis given the patient's age (74 years), progressive obstructive voiding symptoms, and ultrasound demonstrating a 28.9 g prostate with smooth contours. Ruled out by operative histological examination revealing caseous necrotizing granulomatous inflammation.",
+      "quote": "Prostatitis and benign hyperplasia were considered differentials. The patient underwent transurethral resection of the prostate (TURP) in view of the given differentials."
+    },
+    {
+      "candidate": "Prostate Adenocarcinoma",
+      "rule_out_reason": "Considered due to the elevated serum PSA level (10.2 ng/mL) in an elderly male with urinary symptoms. Ruled out by histopathological analysis of resected tissue that showed characteristic caseous necrosis rather than malignant cells.",
+      "quote": "The microscopic examination of the TURP chips revealed epitheloid granuloma. Caseous necrosis in between the prostate glands and stroma surrounded by Langhans giant cells and lymphocytes."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when microscopic examination of TURP chips demonstrated epithelioid granulomas with caseous necrosis and Langhans giant cells, confirmed by positive polymerase chain reaction (PCR) and tuberculin skin testing.",
+      "quote": "The histopathological diagnosis of tubercular prostatitis was given. Chest X-ray was normal. Polymerase chain reaction (PCR) and Mantoux test were positive pointing towards tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Carefully constructed urologic admission scenario preserving the masquerade of BPH and prostate cancer while stopping strictly prior to TURP pathology."
+}

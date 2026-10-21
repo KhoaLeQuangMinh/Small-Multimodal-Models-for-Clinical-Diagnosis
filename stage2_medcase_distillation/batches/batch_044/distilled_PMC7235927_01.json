@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7235927_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 31-year-old man presents with a 5-year indolent course of progressive right knee swelling, warmth, and osteolytic destruction following a motorcycle accident, accompanied by mild weight loss but lacking fever or respiratory symptoms. The long latency and post-traumatic onset mimic chronic pyogenic infection, post-traumatic arthritis, or bone malignancy, while incidental bilateral apical pulmonary infiltrates provide a critical clue toward systemic granulomatous disease.\n2. Admission Breakpoint: Outpatient orthopedic evaluation, baseline normal laboratory testing, knee radiography showing lytic tibia/fibula lesions, knee MRI revealing synovitis and posterior abscess, and chest radiography showing upper lobe infiltrates, immediately prior to surgical arthrotomy and total synovectomy.\n3. Differential Distinctions: Acute pyogenic septic arthritis (acute, toxic presentation with marked leukocytosis, rapidly responsive or destructive over days rather than 5 years), musculoskeletal neoplasm such as synovial sarcoma or osteosarcoma (destructive lytic bone lesion and soft tissue mass, but lacks epithelioid granulomas and pulmonary apical changes), and post-traumatic arthritis (degenerative changes following trauma without necrotizing granulomatous synovitis or pulmonary infiltration).",
+  "case_prompt": "A 31-year-old man presented to an orthopedic outpatient clinic with chronic progressive redness, warmth, and swelling of the right knee that had persisted and worsened over the preceding five years. He described intermittent pain that was exacerbated by strenuous activities. Over the prior month, he experienced anorexia and a 3 kg weight loss, but denied fevers, chills, night sweats, or respiratory complaints. Five years earlier, he suffered a motorcycle collision causing trauma to the right leg, following which knee symptoms began; he was previously treated with analgesics and oral cephalosporins without relief, subsequently pursuing herbal therapies and massage. He reported no sick contacts and had no personal or family history of malignancy.\n\nOn physical examination, the right knee was swollen, erythematous, and warm to palpation, with significant limitation of motion. Right knee flexion was limited to 110 degrees and extension lacked 30 degrees (-30 degrees). Examination of the spine, contralateral lower extremity, and other joints was normal.\n\nComplete blood count and coagulation parameters were normal. Serial plain radiographs of the right knee revealed marked joint space narrowing with cortical and subchondral bone destruction and lytic lesions involving both the proximal tibia and fibula. Magnetic resonance imaging of the right knee demonstrated an extensive well-defined iso- to hyperintense synovial mass, joint effusion, and posterior fluid collection with synovitis. Chest radiography revealed infiltrations in both upper pulmonary lobes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute pyogenic septic arthritis",
+      "rule_out_reason": "Acute bacterial joint infections typically run a fulminant course with high fevers, systemic toxicity, and elevated inflammatory markers; this patient had an indolent 5-year course with normal blood counts and lack of response to prior cephalosporin therapy.",
+      "quote": "In 2013, this patient was admitted to another hospital and had been diagnosed with acute infections with malignancy as a differential diagnosis."
+    },
+    {
+      "candidate": "Musculoskeletal malignancy",
+      "rule_out_reason": "A chronic soft-tissue mass associated with progressive osteolytic bone destruction in the proximal tibia and fibula raised concern for synovial sarcoma or primary bone malignancy; however, subsequent biopsy demonstrated granulomatous inflammation rather than malignant cells.",
+      "quote": "In 2013, this patient was admitted to another hospital and had been diagnosed with acute infections with malignancy as a differential diagnosis. The patient was suggested to undergo further diagnostic examinations."
+    },
+    {
+      "candidate": "Post-traumatic arthritis",
+      "rule_out_reason": "While symptoms initiated following a vehicular accident, simple post-traumatic arthropathy cannot account for progressive multi-bone osteolytic destruction, soft-tissue abscess formation, or bilateral upper lobe pulmonary infiltrations.",
+      "quote": "Contact history with TB patients was not found, but a traumatic injury occurred in September 2012. The patient had a motorcycle accident, injuring the same leg."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred during right knee arthrotomy and total synovectomy, which revealed an unattached synovial mass, with histopathology demonstrating epithelioid cell proliferation, caseating necrotizing granulomas, lymphocytic infiltration, and localized fibrosis consistent with Mycobacterium tuberculosis infection, accompanied by the bilateral upper lobe pulmonary lesions.",
+      "quote": "Later, histopathology revealed the epitheloid proliferation, granuloma, necrotic, lymphocyte infiltration, and localized fibrosis, suspecting a chronic specific inflammation, which included tuberculosis mass (Fig. 3b). Then, the patient was diagnosed with knee tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation strictly terminates at outpatient evaluation, radiography, and MRI before surgical synovectomy and histological identification. Zero pathogen names in case prompt."
+}

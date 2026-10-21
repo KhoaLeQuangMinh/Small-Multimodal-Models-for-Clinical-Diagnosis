@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9643805_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 66-year-old patient presents with a 3-month history of progressive neck pain, paresthesias, and upper extremity heaviness. Cross-sectional neuroimaging reveals an isolated osteolytic lesion centered on the C4 vertebral body with posterior wall recession and epidural soft-tissue compression, creating high clinical suspicion for an osteolytic spinal metastasis or primary osseous neoplasm versus atypical infection in the cervical spine.\n2. Admission Breakpoint: Admission triage terminates after neurological examination documenting intact motor/sensory function (ASIA grade E) and cervical spine CT and MRI demonstrating the C4 lytic lesion with cord compression and epiduritis, prior to surgical corpectomy and histological evaluation of the resected vertebral tissue.\n3. Differential Distinctions: Spinal metastatic disease / primary bone tumor is the most frequent cause of an isolated lytic cervical vertebral lesion with posterior cortical expansion and epidural mass effect in an older adult, but was excluded by histological analysis showing granulomatous infection. Pyogenic spondylodiscitis presents with acute destructive spinal lesions and epiduritis but typically features high fever and rapid disc collapse, unlike the indolent 3-month lytic presentation of Pott's disease.",
+  "case_prompt": "A 66-year-old patient presents with persistent neck pain for three months, accompanied by tingling sensations and heaviness in both upper extremities. The past medical history includes hypertension and a remote pulmonary infection treated in 1997 that was declared cured.\n\nOn physical examination, vital signs are within normal limits. Neurological examination demonstrates normal muscle strength throughout all muscle groups in the upper and lower extremities and no sensory deficit. The American Spinal Injury Association (ASIA) impairment score is grade E.\n\nCervical spine computed tomography (CT) reveals an osteolytic process centered on the C4 vertebral body, characterized by posterior wall recession and anterior epiduritis.\n\nSpinal cord magnetic resonance imaging (MRI) reveals a cervical lytic lesion centered on the vertebral body of C4 with spinal cord compression and epiduritis without signs of spinal cord injury.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic spinal neoplasm / primary osseous malignancy",
+      "rule_out_reason": "An isolated destructive osteolytic lesion centered on a cervical vertebral body with posterior cortical recession and epidural mass effect in a 66-year-old strongly raised clinical concern for metastatic cancer or primary tumor, but was ruled out by histological examination of the corpectomy specimen.",
+      "quote": "cervical spine computed tomography (CT) showed a lytic process centered on C4 with posterior wall recession and anterior epiduritis"
+    },
+    {
+      "candidate": "Pyogenic bacterial spondylodiscitis",
+      "rule_out_reason": "Bacterial spinal infections typically manifest with acute axial pain, systemic febrile toxicity, and marked leukocytosis; the indolent 3-month chronology with preservation of normal neurological status favored a chronic granulomatous process over pyogenic discitis.",
+      "quote": "Spinal cord magnetic resonance imaging (MRI) showed a cervical lytic lesion centered on the vertebral body of C4 with spinal cord compression and epiduritis without signs of spinal cord injury"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cervical Pott's disease (Tuberculous spondylitis)",
+      "rule_out_reason": "The patient underwent surgical decompression via C3-C4 corpectomy with iliac bone grafting and anterior cervical plate fixation; histopathological examination of the resected cervical vertebral tissue confirmed Pott's disease, prompting a curative 12-month course of anti-tuberculosis chemotherapy.",
+      "quote": "the patient underwent corpectomy of C3 and C4 with iliac graft and anterior cervical plate (Figure 3)... The anatomopathological examination revealed a Pott disease. The patient was put on antituberculosis chemotherapy treatment for 12 months"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Admission prompt is strictly spoiler-free, masking past infection name. Diagnostic pivot relies on surgical anatomopathology. All quotes are verbatim."
+}

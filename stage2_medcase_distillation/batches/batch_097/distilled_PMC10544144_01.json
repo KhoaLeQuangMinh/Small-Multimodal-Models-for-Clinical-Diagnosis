@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10544144_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 57-year-old male rural farmer with chronic kidney disease stage 5 on hemodialysis develops sudden rigors and persistent hyperpyrexia (up to 40°C) during a hemodialysis session. The immediate clinical presumption was hemodialysis catheter-related bloodstream infection; however, the fever was completely refractory to antipyretics and broad-spectrum intravenous antibiotics (cefoperazone/sulbactam and vancomycin). Furthermore, the patient lacked the classic pathognomonic eschar or regional lymphadenopathy, obscuring vector-borne zoonotic etiology in an inpatient setting.\n\n2. Admission Breakpoint: The diagnostic evaluation pauses after the patient develops acute high fever and rigors during dialysis, physical re-examination demonstrates no eschar, baseline laboratory evaluation and cultures are drawn, and the catheter is removed, strictly before receiving peripheral blood metagenomic next-generation sequencing (mNGS) results.\n\n3. Differential Distinctions: Hemodialysis catheter-associated bacterial sepsis (e.g., Staphylococcal or Gram-negative bacteremia) was the primary suspect but failed to respond to vancomycin and cefoperazone/sulbactam. Classic presentation of rickettsial illness was obscured by the complete absence of an eschar or rash. Metagenomic sequencing proved pivotal in detecting the obligate intracellular pathogen.",
+  "case_prompt": "A 57-year-old male rural farmer with a 2-year history of hypertension and gout was admitted to the nephrology department for severe renal dysfunction characterized by a serum creatinine of 1221.75 µmol/L. Over the preceding month, he had noted increased urinary frequency (4 to 5 times daily) and an unintentional weight loss of 4 kg. At initial presentation, his blood pressure was 143/83 mmHg, heart rate 90 beats per minute, and respiratory rate 18 breaths per minute. Systemic physical examination was unremarkable, with no rash, no lymphadenopathy, and no cutaneous eschar noted.\n\nBaseline admission laboratory tests showed a white blood cell count of 5.05 × 10⁹/L, hemoglobin concentration of 82 g/L, platelet count of 215 × 10⁹/L, and C-reactive protein of 38.9 mg/L. Creatine kinase was 54 U/L and CK-MB was 11.7 U/L. Urinalysis revealed 2+ protein, 2+ albumin, and a 24-hour total urinary albumin excretion of 353.1 mg/24h. Fecal occult blood testing and fecal transferrin were positive. The patient was diagnosed with stage 5 chronic kidney disease with renal anemia, chronic nephritis syndrome, gouty arthritis, and stage 3 hypertension, and hemodialysis therapy was initiated.\n\nOn the 6th day of hospitalization, during a scheduled hemodialysis session, the patient acutely developed shaking chills and fever. His temperature rose from 37.5°C during dialysis to 39.5°C upon return to the ward, eventually reaching persistent high fevers up to 40.0°C. Physical cooling measures and antipyretics failed to lower the temperature. A repeat comprehensive skin exam confirmed the absence of any visible eschar or lymphadenopathy. A hemodialysis catheter-related infection was suspected; the vascular catheter was removed, and blood cultures were drawn.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hemodialysis Catheter-Related Bloodstream Infection (Bacterial/Fungal Sepsis)",
+      "rule_out_reason": "Because the high fever and rigors developed directly during hemodialysis, catheter sepsis was suspected, but empiric therapy with high-dose intravenous cefoperazone/sulbactam and vancomycin produced no clinical or antipyretic response.",
+      "quote": "The infection related to the dialysis catheter was suspected."
+    },
+    {
+      "candidate": "Classic Eschar-Positive Scrub Typhus",
+      "rule_out_reason": "Although the patient was a rural farmer at risk for vector exposures, typical signs of scrub typhus such as a characteristic cigarette-burn eschar or regional lymphadenopathy were completely absent on multiple physical examinations.",
+      "quote": "Simultaneously, a comprehensive skin examination was performed where there was no obvious eschar or lymphadenopathy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough was achieved via peripheral blood metagenomic next-generation sequencing (mNGS), which identified Orientia tsutsugamushi; switching antibiotics to oral doxycycline and moxifloxacin led to prompt defervescence within 5 days and uneventful recovery.",
+      "quote": "Fortunately, we received an mNGS report from the laboratory, which demonstrated Orientia tsutsugamushi in peripheral blood"
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in accordance with Stanford MedCaseReasoning standards. Admission prompt stops prior to mNGS results and targeted tetracycline therapy. Quotes directly corroborate differential reasoning."
+}

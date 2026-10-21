@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8195647_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 58-year-old woman presents with severe constitutional decline, a palpable breast mass, markedly elevated gastrointestinal tumor markers (CA 19-9 and CEA), retroperitoneal/mediastinal lymphadenopathy, and omental caking. The clinical tension is recognizing that despite the simultaneous presence of primary invasive breast carcinoma, the extensive retroperitoneal adenopathy and omental thickening represent disseminated miliary tuberculosis rather than widespread stage IV metastatic carcinomatosis.\n2. Admission Breakpoint: The breakpoint is set at admission following transfer from an outside hospital, comprising clinical history, physical exam (palpable breast mass), baseline laboratory analyses (elevated tumor markers, leukocytosis, anemia of chronic disease), and initial comprehensive cross-sectional and ultrasound imaging, strictly before invasive multiorgan tissue biopsies (breast, gastric, colon, and retroperitoneal node) and send-out IGRA testing.\n3. Differential Distinctions: Metastatic breast cancer or GI peritoneal carcinomatosis is strongly suspected due to elevated tumor markers, omental caking, and retroperitoneal adenopathy. Although breast biopsy confirmed invasive carcinoma, colon and gastric biopsies were normal, and retroperitoneal node biopsy revealed necrotizing giant-cell granulomas positive for acid-fast bacilli, unmasking cryptic miliary tuberculosis masquerading as stage IV metastatic disease.",
+  "case_prompt": "A 58-year-old woman was transferred to the emergency department for further evaluation of extensive retroperitoneal lymphadenopathy and omental fat stranding concerning for metastatic malignancy. Over the preceding month, she had developed progressive fatigue, anorexia, and involuntary weight loss that had worsened considerably over the past two weeks. She endorsed increased thirst, but denied fevers, chills, sweats, cough, dyspnea, chest pain, or sick contacts. Her remote travel history was notable only for travel to Thailand more than ten years earlier.\n\nOn physical examination, she was afebrile with normal vital signs. Heart sounds were regular and lung fields were clear bilaterally. Abdominal examination was soft and non-tender without guarding or Murphy sign. Clinical breast examination revealed a distinct 2-cm firm mass located at the 4 o'clock position of the left breast.\n\nLaboratory analysis revealed a leukocytosis of 13.9 x 10^9/L, alkaline phosphatase of 310 U/L, and aspartate aminotransferase (AST) of 78 U/L. Serum tumor marker testing demonstrated an elevated cancer antigen 19-9 (CA 19-9) of 301.4 U/mL and carcinoembryonic antigen (CEA) of 9.0 ng/mL, with alpha-fetoprotein within normal limits. An iron panel showed findings of chronic inflammation: serum ferritin 2,410.3 ng/mL, total serum iron 47 mcg/dL, and total iron-binding capacity 80 mcg/dL. Blood and urine cultures demonstrated no growth.\n\nComputed tomography (CT) of the chest, abdomen, and pelvis revealed extensive retroperitoneal lymphadenopathy, nodularity and stranding throughout the omental fat, a thickened peripheral ring along the liver margin, mediastinal lymphadenopathy, multiple small nodules scattered bilaterally throughout both lungs, a small left-sided pleural effusion, and cholelithiasis. Bedside abdominal ultrasound confirmed multiple gallstones within an enlarged gallbladder measuring 10 cm, and formal upper quadrant ultrasound showed gallbladder wall thickening and a nodular hepatic contour. Diagnostic mammography demonstrated a 2.5 x 2.7 cm mass in the left breast.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Breast Carcinoma (Stage IV with Omental Carcinomatosis)",
+      "rule_out_reason": "Considered primary clinical diagnosis due to a 2.5-cm left breast mass in conjunction with widespread retroperitoneal and mediastinal lymphadenopathy, pulmonary nodules, and omental caking; ruled out as the cause of lymphadenopathy when retroperitoneal node biopsy showed necrotizing giant-cell granulomas positive for acid-fast bacilli rather than metastatic adenocarcinoma.",
+      "quote": "Throughout her hospital course, consultants from hematology/oncology, general surgery, and surgical oncology services informed the patient of the high likelihood of a cancer diagnosis upon pathologic examination of biopsied tissue."
+    },
+    {
+      "candidate": "Primary Gastrointestinal Malignancy with Peritoneal Seedings",
+      "rule_out_reason": "Considered because of markedly elevated CA 19-9 (301.4 U/mL) and CEA (9.0 ng/mL) alongside omental fat nodularity and duodenal erosions; ruled out by histologically normal endoscopic biopsies of the colon and gastric mucosa.",
+      "quote": "Her colon biopsy and gastric mucosa biopsy demonstrated no abnormalities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Retroperitoneal lymph node biopsy demonstrating necrotizing giant-cell granulomas with positive acid-fast bacilli staining, confirming cryptic abdominal and miliary tuberculosis coexisting with newly diagnosed localized breast cancer.",
+      "quote": "Her retroperitoneal node biopsy demonstrated lymphoid tissue with necrotizing giant-cell granulomas, positive for mycobacteria on acid-fast bacilli staining."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Multiorgan tissue biopsies, histology, and IGRA excluded from prompt. Zero disease spoilers."
+}

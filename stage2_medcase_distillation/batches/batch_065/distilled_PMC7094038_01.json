@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7094038_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 15-year-old child on multidrug treatment for a chronic cutaneous illness develops acute, disfiguring facial, cheek, and earlobe swelling and erythema without fever, presenting a challenge in differentiating acute angioedema/cellulitis, lupus erythematosus, and a Type-1 reversal reaction.\n2. Admission Breakpoint: Clinical examination of the acutely swollen facial lesions and baseline routine laboratory results, prior to diagnostic identification of a Type-1 reaction and corticosteroid administration.\n3. Differential Distinctions: Systemic lupus erythematosus presents with malar erythema sparing the nasolabial folds and positive autoantibodies; Type-2 reaction (erythema nodosum leprosum) presents with painful evanescent subcutaneous nodules and high fever; Type-1 reaction presents with sudden erythema and edema strictly within preexisting chronic dermatological patches without constitutional fever.",
+  "case_prompt": "A 15-year-old female child was referred for specialized consultation due to acute, progressive swelling of the face, cheeks, and ears. Her medical history was significant for a chronic dermatologic condition characterized by multiple cutaneous patches on her face and suprascapular region, for which a standardized multidrug therapeutic regimen had been initiated three months earlier at a primary healthcare facility.\n\nOn physical examination, the patient had pronounced erythematous, raised, edematous plaques involving the forehead, cheeks, and ear lobes. She was afebrile and appeared systemically well, with no constitutional symptoms or lymphadenopathy.\n\nBaseline blood investigations revealed anemia, leukocytosis, and an elevated erythrocyte sedimentation rate (ESR). Other routine hematologic and biochemical parameters were unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Lupus Erythematosus / Cutaneous Lupus",
+      "rule_out_reason": "Facial and malar erythema in an adolescent female with anemia, leukocytosis, and high ESR can mimic lupus erythematosus; ruled out by involvement of earlobes, lack of systemic constitutional signs, and acute reactivation occurring directly within preexisting chronic patches.",
+      "quote": "Constitutional symptoms (e.g., fever) were not observed. Blood laboratory investigation showed anemia, leukocytosis, and a high erythrocyte sedimentation rate; other routine investigations were normal."
+    },
+    {
+      "candidate": "Type-2 Leprosy Reaction (Erythema Nodosum Leprosum)",
+      "rule_out_reason": "Type-2 reactions typically present with crops of painful, tender subcutaneous nodules accompanied by high spiking fever and systemic toxicity; this patient had no fever and exhibited acute edema and erythema exclusively within preexisting chronic lesions.",
+      "quote": "On examination, the patient had erythematous raised lesions on the forehead, cheeks, and ear lobes. Constitutional symptoms (e.g., fever) were not observed."
+    },
+    {
+      "candidate": "Acute Facial Angioedema or Cellulitis",
+      "rule_out_reason": "Facial and ear swelling can suggest allergic angioedema or soft tissue bacterial infection; ruled out by lack of acute pruritus, lack of fever/warmth, and confinement of inflammation to preexisting chronic plaques.",
+      "quote": "due toa clinical condition characterized by the swelling of the face, cheek, and ears"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The acute onset of inflammatory erythema and swelling localized specifically within preexisting facial and suprascapular lesions following three months of multidrug antimycobacterial therapy established a Type-1 (reversal) leprosy reaction, confirmed by rapid response to prednisolone.",
+      "quote": "The diagnosis of the type-1 leprosy reaction was based solely on the presentation of previously involved and existing lesions because the patient's father refused additional investigations (e.g., biopsy). Prednisolone was administered at an anti-inflammatory dose (1 mg/kg of body weight); the patient's clinical condition improved markedly over a short period."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Pathogen and disease identifiers removed from admission prompt. Reaction subtype and corticosteroid response isolated to diagnostic reasoning."
+}

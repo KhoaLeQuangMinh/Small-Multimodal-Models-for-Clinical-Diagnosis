@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9724064_05",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 10-year-old child presents with drowsiness following a 4-day febrile illness, severe thrombocytopenia (35,000/μL), and normal-to-low blood pressure, with neuroimaging showing bilateral parieto-occipital white matter hyperintensities. The challenge is distinguishing acute viral encephalitis from posterior reversible encephalopathy syndrome (PRES) occurring in the absence of hypertension.\n2. Admission Breakpoint: Admission presentation in a drowsy state with 4 days of fever, blood pressure 96/66 mm Hg, absence of rash/bleeding, and initial platelet count of 35,000/μL. Confirmatory testing begins with viral NS1 antigen testing and neuroimaging.\n3. Differential Distinctions: Viral encephalitis was considered due to fever, drowsiness, and brain lesions, but ruled out by lack of diffusion restriction, absence of hemorrhage/contrast enhancement, and complete reversal on follow-up imaging. Classic hypertensive encephalopathy/PRES typically requires severe hypertension, whereas this child was normotensive/hypotensive, reflecting endothelial leakage driven by severe viral illness.",
+  "case_prompt": "A 10-year-old girl is brought to the emergency department in a drowsy state following a 4-day history of intermittent moderate-grade fever without chills or rigors. On admission, her blood pressure is 96/66 mm Hg. Physical examination reveals impaired sensorium but no cutaneous rashes or active bleeding manifestations. Initial triage laboratory testing demonstrates severe thrombocytopenia with a platelet count of 35,000/μL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral Encephalitis",
+      "rule_out_reason": "Considered due to acute febrile illness with altered sensorium and bilateral cerebral lesions; ruled out by neuroimaging demonstrating vasogenic edema without diffusion restriction, hemorrhage, or post-contrast enhancement, along with prompt and complete clinical and radiological resolution.",
+      "quote": "Based on the clinical and imaging findings, posterior reversible encephalopathy syndrome (PRES) and dengue encephalitis were considered as possible diagnoses."
+    },
+    {
+      "candidate": "Hypertensive Encephalopathy",
+      "rule_out_reason": "Considered given the typical posterior reversible leukoencephalopathy pattern; however, classic hypertensive encephalopathy was excluded by the persistent absence of elevated blood pressure, with the patient instead presenting normotensive to hypotensive requiring dopamine for vascular tone.",
+      "quote": "There was no recorded hypertensive episode throughout the clinical course of the patient in our hospital."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by positive non-structural NS1 antigen testing in the setting of severe thrombocytopenia and characteristic vasogenic edema on neuroimaging that completely resolved on follow-up, confirming PRES secondary to dengue fever.",
+      "quote": "She tested positive for NS1 antigen and had a platelet count of 35 000/microl."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced at presentation vitals and CBC. Zero pathogen names in case_prompt. Direct verbatim quotes match source text exactly."
+}

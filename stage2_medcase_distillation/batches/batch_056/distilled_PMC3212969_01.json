@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3212969_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Acute febrile left upper lobe consolidation with surrounding ground-glass opacity on day +17 following allogeneic stem cell transplantation in an engrafted patient receiving broad antimicrobial prophylaxis, creating urgent suspicion for angioinvasive mold infection while obscuring co-existing endemic mycobacterial infection.\n2. Admission Breakpoint: Admission clinical evaluation concludes after diagnostic thoracic computed tomography (CT) demonstrating left upper lobe consolidation with ground-glass halo; flexible bronchoscopy with bronchoalveolar lavage, invasive percutaneous/surgical lung biopsy, and specialized histochemical stains represent confirmatory testing.\n3. Differential Distinctions: Isolated invasive pulmonary aspergillosis typically features acute-angle branching septate hyphae and galactomannan positivity responding to voriconazole; nosocomial bacterial pneumonia responds to broad-spectrum beta-lactams; pulmonary tuberculosis causes upper lobe consolidations with acid-fast bacilli on smear/culture, which in high-risk endemic environments can co-occur with opportunistic zygomycosis/mucormycosis.",
+  "case_prompt": "A 26-year-old female with severe aplastic anemia underwent allogeneic peripheral blood stem cell transplantation from an HLA-matched sibling donor following a conditioning regimen of fludarabine and cyclophosphamide. Graft-versus-host disease (GVHD) prophylaxis consisted of equine anti-thymocyte globulin, methotrexate, and intravenous cyclosporine. Antimicrobial prophylaxis included oral levofloxacin, fluconazole, acyclovir, and trimethoprim-sulfamethoxazole on alternate days.\n\nDuring her post-transplant course, she experienced an early febrile episode on day +4 that resolved following empiric intravenous piperacillin-tazobactam and amikacin, with sterile blood and urine cultures and a normal chest radiograph. Successful hematologic engraftment was documented on day +10, with an absolute neutrophil count exceeding 0.5 x 10^9/L and unsupported platelet count exceeding 20 x 10^9/L.\n\nOn day +17 post-transplantation, the patient developed new-onset high fever accompanied by a dry cough and left-sided pleuritic chest pain.\n\nA computed tomography (CT) scan of the thorax demonstrated a dense consolidation in the left upper lobe with surrounding ground-glass opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Invasive Pulmonary Aspergillosis",
+      "rule_out_reason": "Invasive aspergillosis is the most common mold infection following stem cell transplantation and was initially treated with empiric voriconazole, but bronchoalveolar lavage demonstrated acid-fast bacilli and lung biopsy revealed broad, non-septate hyphae with right-angle branching diagnostic of mucormycosis rather than Aspergillus.",
+      "quote": "Bronchoalveolar lavage showed the presence of acid fast bacilli suggestive of mycobacterium tubercular infection (Figure 2)... lung biopsy was performed 3 days later, which revealed broad aseptate hyphae branching at a right angle suggestive of mucormycosis"
+    },
+    {
+      "candidate": "Acute Bacterial Pneumonia",
+      "rule_out_reason": "Bacterial etiology was considered given the acute onset in a post-transplant patient, but blood and urine cultures remained sterile, early neutropenic coverage had been completed, and the focal upper lobe consolidation failed to respond to antibacterial coverage.",
+      "quote": "She developed fever on day +4 of transplant and was started on piperacillin plus tazobactum (4.5g i.v. q 6 hours) and amikacin (750mg i.v. q 24 hours). Chest radiograph was normal, and blood and urine cultures were sterile."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoalveolar lavage analysis established the diagnosis of active pulmonary tuberculosis by identifying acid-fast bacilli, prompting initiation of quadruple anti-tubercular therapy, while subsequent lung tissue biopsy confirmed concurrent mucormycosis with characteristic broad aseptate hyphae, leading to dual therapy with liposomal amphotericin B.",
+      "quote": "Bronchoalveolar lavage showed the presence of acid fast bacilli suggestive of mycobacterium tubercular infection (Figure 2). On day +19 she was started on anti-tubercular therapy (ATT) (isoniazid 300mg, rifampicin 450mg, ethambutol 1000mg and pyrizinamide 1500mg daily). Considering high risk of fungal infection and interactions of voriconazole with anti-tubercular drugs, lung biopsy was performed 3 days later, which revealed broad aseptate hyphae branching at a right angle suggestive of mucormycosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation restricted to post-transplant Day +17 clinical status and CT imaging before bronchoscopy and biopsy. Zero leakage of pathogen names or microbiological findings in presentation."
+}

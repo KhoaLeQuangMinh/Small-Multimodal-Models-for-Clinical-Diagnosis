@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10467300_02",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: The patient had an acute, intensely pruritic papulonodular eruption involving classic predilection sites (lower abdomen, genitalia, buttocks) with nocturnal exacerbation that largely cleared following topical antiparasitic sulfur therapy, yet severely pruritic nodules persisted on the buttocks despite high-potency topical and systemic corticosteroids and antihistamines. The tension lies in recognizing recalcitrant nodular scabies—a persistent post-scabetic hypersensitivity reaction—versus look-alike dermatologic conditions such as prurigo nodularis, cutaneous lymphoid hyperplasia (pseudolymphoma), or persistent arthropod bite reactions.\n2. Admission Breakpoint: The admission clinical presentation concludes with the patient presenting for referral with refractory, severely pruritic buttock nodules that resisted topical steroids, systemic steroids, and antihistamines following initial clearance of lower abdominal and genital lesions with sulfur ointment, prior to initiating rescue targeted immunomodulatory therapy.\n3. Differential Distinctions: Prurigo nodularis typically manifests as bilateral, symmetrically distributed excoriated nodules on extensor extremities and lacks a history of an acute outbreak across the genitalia and lower abdomen with nocturnal worsening responsive to topical sulfur. Cutaneous lymphoid hyperplasia or persistent arthropod bite reactions present with solitary or localized nodules, but typically do not involve the characteristic multi-focal distribution (lower abdomen, genitals, buttocks) that responded peripherally to sulfur treatment. Recalcitrant nodular scabies is characterized by persistent, steroid-resistant pruritic nodules at predilection sites that outlast the active mite infestation due to retained antigenic hypersensitivity.",
+  "case_prompt": "A 22-year-old man is referred for evaluation of persistent, severely pruritic nodules on his buttocks. Four months prior, he had developed an acute eruption of intensely itchy papules and nodules over his lower abdomen, genitalia, and buttocks, with marked nocturnal exacerbation of the pruritus. He completed two cycles of topical 10% sulfur ointment (applied twice daily for three days, one week apart), which resulted in substantial clearance of the lesions across his lower abdomen and genitalia. However, the pruritic nodules on his buttocks failed to resolve. Subsequent treatment with systemic antihistamines, systemic corticosteroids, and topical corticosteroid preparations provided no significant symptomatic relief. On physical examination, discrete, indurated erythematous-to-hyperpigmented nodules with evidence of excoriation are localized to the buttocks; the remainder of the cutaneous examination is unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Prurigo nodularis",
+      "rule_out_reason": "Prurigo nodularis presents with chronic intensely itchy nodules on extensor surfaces driven by repetitive scratching, but does not explain an acute preceding eruption involving the lower abdomen and genitalia with nocturnal exacerbation that largely resolved after topical sulfur ointment.",
+      "quote": "Four months ago, the patient presented with intensely pruritic papules and nodules over the lower abdomen, genitalia, and buttocks, the itching had nocturnal exacerbation."
+    },
+    {
+      "candidate": "Cutaneous lymphoid hyperplasia / Arthropod bite reaction",
+      "rule_out_reason": "Persistent bite reactions or cutaneous pseudolymphoma can cause refractory pruritic nodules, but would not present with widespread synchronous involvement of the lower abdomen and genitalia that cleared with sulfur therapy while sparing only buttock nodules.",
+      "quote": "administered topical 10% sulfur ointment alone, twice daily for 3 days, 1 week apart for two cycles, which led to excellent remission for the symptoms and signs except for the nodules on the buttocks"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Recalcitrant nodular scabies",
+      "rule_out_reason": "The pivotal clinical features establishing the diagnosis are the pathognomonic distribution involving the genitalia, lower abdomen, and buttocks with nocturnal itching, complete clearance of peripheral lesions following topical sulfur, and persistent isolated buttock nodules refractory to conventional anti-inflammatory and antihistamine therapies.",
+      "quote": "The residual nodules were refractory itching and also showed poor response to systemic antihistamines and steroids as well as topical steroids."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Verbatim quotes from the published report support each differential diagnosis and diagnostic pivot."
+}

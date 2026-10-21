@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4899662_02",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A young adult male presents with conus medullaris myelopathy, urinary incontinence, and positive oligoclonal bands in the CSF, strongly simulating central nervous system demyelinating disease (multiple sclerosis).\n2. Admission Breakpoint: The admission phase concludes with history, physical exam, baseline blood counts, spine MRI showing conus medullaris signal abnormality, and routine CSF cytochemistry. Confirmatory workup begins with CSF oligoclonal bands, parasite serology, and mucosal biopsies.\n3. Differential Distinctions: Multiple sclerosis typically demonstrates dissemination in space and time on brain/spine MRI with oligoclonal bands; spinal tuberculosis or neurobrucellosis demonstrate systemic features or specific serologies. Conus schistosomiasis demonstrates markedly elevated Schistosoma titers despite absence of ova on mucosal biopsies.",
+  "case_prompt": "A 29-year-old previously healthy Saudi male presented with a 2-month history of progressive bilateral lower limb weakness and urinary incontinence, accompanied by pain in the right thigh. He denied fever, upper extremity symptoms, headache, trauma, or constitutional symptoms. His travel history was notable for travel to Egypt. On physical examination, he was afebrile and vitally stable with normal higher mental functions, cranial nerves, and upper extremities. Lower limb examination showed normal bulk and tone, 4/5 motor power bilaterally, bilateral hyperreflexia, and equivocal plantar responses; he ambulated independently but with difficulty due to pain. Baseline investigations showed a normal erythrocyte sedimentation rate, white blood cell count 4,900/µL without eosinophilia, hemoglobin 14.6 g/dL, normal liver function tests, and normal abdominal and pelvic CT scans. Whole-spine MRI demonstrated high signal intensity in the conus medullaris, while brain MRI was normal. Initial CSF analysis showed white blood cell count 157/µL (98% mononuclear, 2% polymorphonuclear), red blood cells 3/µL, protein 0.79 g/L, and glucose 3.7 mmol/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Multiple sclerosis / Demyelinating myelopathy",
+      "rule_out_reason": "Progressive paraparesis, conus hyperintensity, and positive CSF oligoclonal bands raised high suspicion for demyelinating disease, but brain MRI was normal and Schistosoma serology was massively elevated.",
+      "quote": "The oligoclonal band in the CSF was positive in this patient, and his Schistosoma antibody titer was very high on 2 occasions: 512 and 4,096 (normal <16 titers)."
+    },
+    {
+      "candidate": "Neurobrucellosis / Spinal tuberculosis",
+      "rule_out_reason": "Endemic granulomatous spinal infections in the Arabian Peninsula were considered given CSF lymphocytic pleocytosis, but serologic screening for brucellosis and other pathogens was negative.",
+      "quote": "His results for brucellosis, HIV, leishmaniasis, amebiasis, echinococcosis, and cytomegalovirus serology were all negative"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Markedly elevated Schistosoma antibody titers on two occasions (1:512 and 1:4096) in a patient with conus medullaris myelopathy and travel to Egypt confirmed spinal schistosomiasis, even with negative ova on rectal biopsy and stool/urine exams.",
+      "quote": "his Schistosoma antibody titer was very high on 2 occasions: 512 and 4,096 (normal <16 titers)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully. Zero clinical spoilers or pathogen mentions in admission prompt; quotes verified against case text."
+}

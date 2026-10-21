@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7276627_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A male farmer with uncontrolled type 2 diabetes and extensive occupational soil exposure presents with subacute multifocal joint pain, restricted joint mobility, hepatosplenomegaly, and high inflammatory markers. The major clinical difficulty is distinguishing an aggressive, disseminated tropical environmental bacillary infection from common pyogenic bacterial osteomyelitis/septic arthritis (e.g., Staphylococcus aureus) or disseminated skeletal tuberculosis. Initial isolation of S. aureus as a co-isolate or contaminant led to apparent treatment failure and relapse.\n2. Admission Breakpoint: The breakpoint is positioned after the patient's admission history, systemic and musculoskeletal physical examination, baseline laboratory investigations (WBC 8,400 cells/mm3, ESR 113 mm/h, CRP 72 mg/L), and plain radiographs of the left elbow showing cortical metaphyseal irregularity and subchondral sclerosis, immediately prior to surgical arthrotomy, pus evacuation, bacterial cultures, and whole-body scintigraphy.\n3. Differential Distinctions: Staphylococcus aureus osteomyelitis/septic arthritis typically responds to appropriate beta-lactamase inhibitor antibiotics; relapse and multifocal skeletal involvement in an endemic soil-exposed diabetic patient strongly points to Burkholderia pseudomallei. Skeletal tuberculosis (Pott's disease / tuberculous arthritis) can present subacutely but would show caseating granulomas and sterile routine pyogenic cultures. Infective endocarditis with septic embolization was ruled out by echocardiography.",
+  "case_prompt": "A 48-year-old male farmer residing in Chennai, South India, presented with severe pain in his left elbow followed by bilateral knee and right ankle pain for the past 3 months, accompanied by intermittent fevers over the preceding 10 days. His medical history was notable for type 2 diabetes mellitus with poor glycemic control. He had extensive occupational exposure to soil. Serology for HIV was negative.\n\nOn physical examination, he was febrile, tachypneic, and tachycardic. He appeared pale and mildly icteric. Abdominal examination revealed mild hepatosplenomegaly. Musculoskeletal examination demonstrated swelling, warmth, and marked tenderness over the left elbow, bilateral knees, and right ankle, with painful restriction of range of motion across all affected joints.\n\nInitial laboratory investigations revealed a normal white blood cell count of 8,400 cells/mm3 with 60% neutrophils, but markedly elevated systemic inflammatory markers, including an erythrocyte sedimentation rate (ESR) of 113 mm/h and a C-reactive protein (CRP) of 72 mg/L. Plain radiography of the left elbow demonstrated distal humeral metaphyseal cortical irregularity and thickening with subchondral sclerosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Staphylococcus aureus Septic Arthritis and Osteomyelitis",
+      "rule_out_reason": "Considered due to the purulent presentation and initial operative pus culture from the left elbow growing S. aureus; ruled out as the primary driving etiology because the patient experienced clinical failure and recurrence of multifocal symptoms despite two weeks of intravenous cefoperazone-sulbactam therapy.",
+      "quote": "Post-operative pus culture from left elbow shows Staphylococcus aureus growth and treated with intravenous cefoperazone-sulbactam antibiotic for next 2 weeks. The patient improved briefly, after 2 weeks of intravenous antibiotic patient presented again with recurrence of same symptoms."
+    },
+    {
+      "candidate": "Infective Endocarditis with Septic Embolization",
+      "rule_out_reason": "Considered due to fever, bacteremia concern, and multifocal osteoarticular seeding in a diabetic patient; ruled out by normal transthoracic and transesophageal echocardiography.",
+      "quote": "Blood culture and echo (trans-esophageal echocardiography, trans-thoracic echocardiography) were done to rule out infective endocarditis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Melioidosis Causing Multifocal Osteomyelitis",
+      "rule_out_reason": "In the setting of occupational soil exposure and uncontrolled diabetes, non-improvement prompted bilateral knee and ankle arthrotomies, where intra-articular pus collections yielded positive PCR for Burkholderia pseudomallei and serial blood cultures grew Gram-negative bacilli with characteristic bipolar staining, confirming melioidosis; high-dose intravenous ceftazidime followed by 6 months of oral co-trimoxazole achieved full clinical cure.",
+      "quote": "In view of occupation, uncontrolled diabetes mellitus and non-improvement, melioidosis was suspected following which patient underwent bilateral knee and right ankle arthrotomy and surgical debridement... Tissue sample for PCR for melioidosis was positive, and serial blood cultures grew Gram-negative bacilli, later identified as B. pseudomallei."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission prompt contains zero mentions of Burkholderia or melioidosis. Breakpoint placed before surgical debridement and intraoperative cultures."
+}

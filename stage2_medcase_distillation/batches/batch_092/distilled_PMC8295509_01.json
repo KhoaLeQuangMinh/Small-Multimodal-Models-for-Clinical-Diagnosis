@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8295509_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 74-year-old farmer presents with high fever, retro-orbital headache, arthralgia, myalgia, and rapid development of combined pulmonary and renal failure with pulmonary hemorrhage. The presentation closely mimics fulminant bacterial sepsis, dengue hemorrhagic fever, or systemic vasculitis, and subsequently evolves into secondary hemophagocytic lymphohistiocytosis (sHLH).\n2. Admission Breakpoint: Triage evaluation concludes after initial history of muddy water exposure, physical examination, bedside chest ultrasound showing pleural effusions, and chest radiography demonstrating features of pulmonary hemorrhage, immediately prior to send-out serology and ICU interventions.\n3. Differential Distinctions: Acute tropical pulmonary-renal syndromes can stem from leptospirosis, severe dengue, malaria, or hantavirus, as well as pyogenic bacteremia and infective endocarditis. Pyogenic sepsis was refuted by persistently negative routine blood cultures, endocarditis was excluded by negative echocardiography, and acute intracranial pathology was excluded by brain CT; definitive serologic agglutination (MAT titer 1:640) established Leptospira infection.",
+  "case_prompt": "A 74-year-old male farmer with a history of hypertension and diabetes mellitus presented to the emergency department with a one-week history of persistent, high-grade fever associated with retro-orbital headache, generalized arthralgia, and intense myalgia. He reported occupational exposure with muddy water. He reported no cough, shortness of breath, dysuria, or other focal respiratory or urinary complaints.\n\nOn physical examination, he was initially hemodynamically stable. He had no skin rashes or peripheral lymphadenopathy. Urine output was significantly reduced at less than 0.5 mL/kg/hr.\n\nInitial laboratory evaluation demonstrated poorly controlled hyperglycemia with a random blood glucose of 350 mg/dL requiring insulin therapy, as well as markedly elevated renal function parameters. Point-of-care ultrasound of the chest revealed bilateral moderate pleural effusions. Chest radiography demonstrated bilateral infiltrates consistent with pulmonary hemorrhage.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute cerebrovascular accident or intracranial hypertension",
+      "rule_out_reason": "Considered when the patient developed acute drowsiness and agitation, but cranial computed tomography ruled out acute vascular insults or edema.",
+      "quote": "Noncontrast CT brain excluded cerebral oedema or acute vascular events."
+    },
+    {
+      "candidate": "Infective endocarditis",
+      "rule_out_reason": "Considered due to persistent fevers and rapid multiorgan decompensation, but transthoracic echocardiography revealed normal valvular anatomy without vegetations.",
+      "quote": "No structural anomalies or vegetations were detected in the 2D echocardiogram."
+    },
+    {
+      "candidate": "Pyogenic bacterial sepsis",
+      "rule_out_reason": "Considered in light of profound septic shock, pulmonary-renal failure, and subsequent hemophagocytic lymphohistiocytosis, but standard microbiological blood cultures remained sterile.",
+      "quote": "Persistent high fever with negative routine cultures and the rapid deterioration despite optimal supportive therapy pointed towards possible sHLH."
+    },
+    {
+      "candidate": "Diagnostic Pivot (Leptospirosis with secondary HLH)",
+      "rule_out_reason": "The constellation of muddy water exposure, pulmonary hemorrhage, acute renal failure, and secondary HLH culminated in posthumous definitive serological confirmation.",
+      "quote": "A highest MAT titre of 1 : 640 confirmed the diagnosis of leptospirosis posthumously."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly enforced at initial evaluation prior to culture/MAT results and ICU deterioration. Zero pathogen names in case_prompt. Direct quotes verified against source text."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8651557_01",
+  "disease": "Foodborne Trematodes",
+  "think": "<think>\n1. Core Clinical Tension: A 43-year-old woman presents with two months of cyclical nocturnal fevers, respiratory symptoms, hypereosinophilia, and hepatic mass lesions mimicking malignancy or abscess, despite denying livestock contact or ingestion of wild plants or raw aquatic foods. The diagnostic challenge involves untangling occult zoonotic helminthiasis from disseminated tuberculosis, hepatic neoplasia, or clonorchiasis when multiple standard serologic assays and initial histopathology are unrevealing.\n2. Admission Breakpoint: The breakpoint is set at the end of Day 1 admission triage following transfer, including history, baseline physical examination, routine laboratory testing revealing leukocytosis with marked eosinophilia, and initial thoracic/abdominal computed tomography demonstrating hepatic mass lesions without pulmonary involvement.\n3. Differential Distinctions: Hepatic tuberculosis presents with constitutional symptoms, nocturnal fevers, and hypodense hepatic lesions, but is ruled out by negative chest imaging, tuberculin skin test, TB serologies, and T-Spot assay. Primary or metastatic hepatic malignancies cause space-occupying liver lesions, but tumor markers and biopsy histopathology show no malignant cells, instead demonstrating eosinophilic necrotizing inflammation. Clonorchiasis is endemic locally and causes biliary lesions, but standard serologies are negative and lesions fail to respond to praziquantel.\n</think>",
+  "case_prompt": "<case_prompt>\nA 43-year-old female (height 160 cm, weight 46 kg, BMI 18.0) is admitted to the hospital with a 2-month history of repeated fever and space-occupying lesions in the liver. Her body temperature peaks at night and returns to normal in the morning, accompanied by a dry cough, shortness of breath, and dull pain in the right upper quadrant. She resides in Chongqing and works as a furniture sales employee. Her epidemiologic history includes a 2-day business trip to Guangzhou 6 months prior; she drinks tap water daily and denies contact with livestock or the consumption of wild vegetables, raw fish, or shrimp. Empirical outpatient antimicrobial therapy with azithromycin and herbal remedies failed to relieve her symptoms, prompting transfer for further evaluation.\n\nOn physical examination, she is alert and ambulatory. There is no abdominal tenderness or percussion pain, and no superficial lymphadenopathy is palpated. Initial chest CT scan shows no infectious lesions in the lungs. Abdominal CT scan demonstrates multiple mass-like shadows in the liver. Baseline routine blood parameters reveal leukocytosis with a significantly elevated eosinophil count.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculosis",
+      "rule_out_reason": "Considered due to the 2-month history of remittent nocturnal fevers, weight loss, respiratory complaints, and hepatic space-occupying lesions; excluded by negative chest imaging, negative tuberculin skin testing, negative tuberculosis IgG/IgM serology, and a negative T-Spot interferon-gamma release assay.",
+      "quote": "The diagnosis of tuberculosis was excluded for the negative results of the chest CT scan, tuberculin skin test, tuberculosis IgG and IgM antibody screening, and T-Spot examination."
+    },
+    {
+      "candidate": "Primary and Metastatic Hepatic Malignancies",
+      "rule_out_reason": "Considered given the multiple space-occupying liver lesions on abdominal CT; ruled out by negative serum tumor markers across multiple oncologic panels and percutaneous liver biopsy demonstrating inflammatory eosinophilic necrosis without malignant cells.",
+      "quote": "Meanwhile, ovarian tumors, liver tumors, gastrointestinal tumors, and hematological tumors were also excluded temporarily as the negative results of abdominal enhanced CT and tumor marker detection such as AFP, CA-50, CEA, TAP, CA-125, CA-199, CA-242, and CA-724 and so on."
+    },
+    {
+      "candidate": "Clonorchiasis (Clonorchis sinensis)",
+      "rule_out_reason": "Suspected based on regional endemicity in Chongqing and liver lesions with hypereosinophilia; ruled out by negative ELISA serology for liver flukes and lack of clinical or radiographic resolution after praziquantel therapy.",
+      "quote": "Meanwhile, combined with Chongqing epidemiological studies of Clonorchis sinensis, parasite infection was suspected and praziquantel was used as treatment."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was metagenomic next-generation sequencing (mNGS) performed on liver biopsy tissue and peripheral blood, which conclusively identified species-specific reads of Fasciola hepatica, establishing the diagnosis of foodborne trematodiasis.",
+      "quote": "The number of species-specific reads aligning to the Fasciola hepatica genome in the liver biopsy and blood was 3 and 51, respectively (Figure 4). Finally, the disease was diagnosed with fascioliasis hepatica with triclabendazole as the first-line drug."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Clean prompt without pathogen names. Exact quotes verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3266186_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Chronic culture-negative periprosthetic infection and recurrent psoas abscess refractory to multiple broad-spectrum antibacterial regimens, complicated by progressive mucocutaneous hyperpigmentation and constitutional decline suggestive of adrenal insufficiency.\n2. Admission Breakpoint: Admission clinical evaluation stops after physical examination documenting the draining fistulous tract and diffuse hyperpigmentation, along with baseline complete blood count and acute phase reactants (ESR, CRP); adrenal hormone profiling, IGRA testing, abdominal/pelvic CT, and mycobacterial PCR constitute confirmatory testing.\n3. Differential Distinctions: Pyogenic bacterial periprosthetic joint infection (e.g., Staphylococcal or enterococcal) yields positive bacterial cultures on standard media and lacks systemic hyperpigmentation; autoimmune primary adrenal insufficiency (autoimmune Addison disease) produces anti-adrenal cortex antibodies without cold abscesses or joint fistulae; disseminated tuberculosis causes cold joint abscesses with sinus tracts and adrenal granulomatous infiltration leading to primary adrenal failure, confirmed by positive mycobacterial PCR and IGRA.",
+  "case_prompt": "A 67-year-old Caucasian woman presented for evaluation of a chronic discharging sinus and suspected prosthetic infection following a total left hip arthroplasty performed two years earlier.\n\nSixteen months after her initial joint replacement, she had developed insidious left hip pain and motion limitation. Subsequent imaging had revealed an iliopsoas abscess that was aspirated and later surgically debrided. Despite empiric courses of intravenous linezolid, teicoplanin, gentamicin, and ciprofloxacin, standard aerobic and anaerobic cultures had repeatedly remained negative. Twenty days prior to current admission, a fluctuant nodule over the superior medial left thigh along the surgical scar was drained, leaving a persistent deep cutaneous fistula approximately 5 cm in diameter discharging discrete, odorless, greenish secretions without surrounding erythema.\n\nOn physical examination, the patient was afebrile with normal vital signs, but exhibited poor general health and distinct brownish hyperpigmentation of the skin involving the hands, feet, palmar and plantar creases, nipples, linea alba, and buccal oral mucosa. The draining sinus tract on the left thigh was persistent.\n\nBaseline laboratory evaluation showed: red blood cell count 4.53 x 10^9/L, hemoglobin 12.9 g/dL, platelet count 336 x 10^9/L, white blood cell count 8.2 x 10^9/L (60.9% neutrophils, 24.2% lymphocytes), erythrocyte sedimentation rate (ESR) 89 mm/hour, and C-reactive protein (CRP) 75 mg/L (reference range: < 0.5 mg/L).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Prosthetic Joint Infection",
+      "rule_out_reason": "Conventional bacterial prosthetic joint infection was excluded by repeatedly sterile blood and aspirate cultures on aerobic and anaerobic media, failure to improve on multiple broad-spectrum antibiotics (linezolid, teicoplanin, aminoglycosides, fluoroquinolones), and the presence of non-acute granulomatous histology.",
+      "quote": "Culture of the needle aspiration and blood cultures for aerobic and anaerobic bacteria were performed... all cultures were negative... A pseudocyst containing dense material was found just near the prosthesis... Repeat cultures were negative. A histopathological examination disclosed a fibrous tissue with acute and chronic inflammation, partly with an aspecific granulomatous aspect."
+    },
+    {
+      "candidate": "Primary Autoimmune Addison Disease",
+      "rule_out_reason": "While prominent mucocutaneous hyperpigmentation and elevated ACTH with low-normal cortisol confirmed primary adrenal insufficiency, autoimmune adrenalitis was ruled out by negative anti-adrenal cortex antibodies and CT findings of enlarged calcified adrenal glands rather than idiopathic atrophy.",
+      "quote": "serum cortisol at 8 a.m. was 9.5 mug/dL (normal value is 4.3 to 22.4), adrenocorticotropic hormone (ACTH) was 2300 pg/mL (normal value is 10 to 60), and anti-cortex antibodies were negative... Anamnesis, CT scan of adrenal glands, and the absence of anti-cortex antibodies suggested exclusion diagnosis of Addison disease secondary to MTB infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of active mycobacterial infection by positive tuberculin skin test, positive QuantiFERON-TB Gold (3.08 IU/mL), positive RD1 interferon-gamma response, CT findings of a periprosthetic abscess extending to the psoas muscle and calcified adrenal enlargement, and positive PCR for Mycobacterium tuberculosis complex from the fistulous exudate established the diagnosis of periprosthetic tuberculosis with secondary adrenal destruction.",
+      "quote": "The result of a tuberculin skin test (5 IU purified protein derivative) was positive, QuantiFERON-TB Gold was 3.08 IU/mL (cutoff value is 0.35 IU/mL)... Only polymerase chain reaction (PCR) for MTB complex was positive. Hip, abdominal, and chest CT scans revealed a periprosthetic abscess with diffusion to the left psoas muscle (Figure 1), a slight bilateral adrenal enlargement with calcifications"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Presentation details the chronic sinus and hyperpigmentation with baseline triage labs prior to endocrine workup, IGRA, and PCR. Zero leakage of pathogen in presentation."
+}

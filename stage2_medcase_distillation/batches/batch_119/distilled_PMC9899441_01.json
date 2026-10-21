@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9899441_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 32-year-old woman presented with a 2-month history of fevers, an inflammatory 10-cm left breast mass, and a 3-cm necrotic axillary lymph node in the absence of respiratory symptoms or known exposures. The clinical presentation and BI-RADS IVa radiological classification strongly mimic inflammatory breast carcinoma or pyogenic bacterial breast abscess, while negative baseline mycobacterial stains and interferon-gamma release assays further obscure primary extrapulmonary tuberculous mastitis.\n2. Admission Breakpoint: The admission breakpoint occurs following the initial clinical examination, triage laboratory results (leukocytosis, elevated CRP, inflammatory anemia), and sonomammography demonstrating the multilocular collection and necrotic axillary lymphadenopathy, immediately prior to Trucut biopsy, send-out molecular testing, and systemic antimicrobial trials.\n3. Differential Distinctions: Inflammatory breast cancer or necrotic breast carcinoma features skin changes (peau d'orange, nipple retraction) and malignant cells on core needle biopsy. Pyogenic bacterial breast abscess or acute mastitis typically causes severe localized tenderness, erythema, and responds rapidly to beta-lactam antibiotics. Granulomatous mastitis or brucellosis requires histopathological and serological exclusion. In endemic settings, primary tuberculous mastitis characteristically produces painless multilocular cold abscesses with necrotic lymphadenopathy that fail broad-spectrum antibacterials.",
+  "case_prompt": "A 32-year-old female presented for evaluation of a persistent, painful mass in her left breast. She reported a history of breastfeeding that had ceased one year prior. Two months prior to admission, she experienced progressive left mastodynia and localized breast inflammation accompanied by subjective fevers. She reported no cough, dyspnea, night sweats, or other respiratory symptoms. Her medical history was negative for diabetes mellitus, immunosuppressive conditions, or personal or family history of breast malignancy, and she had no known contacts with chronic infectious illnesses.\n\nOn physical examination, she was febrile. The left breast was visibly inflamed and enlarged; however, there were no cutaneous skin changes such as peau d'orange, nipple retraction, or pathological nipple discharge. On palpation, a firm, non-tender mass measuring approximately 10 × 10 cm was identified at the junction of the inferior quadrants of the left breast. A distinct, mobile, non-tender ipsilateral axillary lymph node measuring 3 cm was also palpable.\n\nLaboratory evaluation revealed an inflammatory anemia with a hemoglobin level of 10.9 g/dL, a marked neutrophilic leukocytosis with a white blood cell count of 18,000/µL, and a C-reactive protein (CRP) elevated at 160 mg/L. Serum protein electrophoresis demonstrated polyclonal hypergammaglobulinemia consistent with a chronic systemic inflammatory state. Initial sonomammography demonstrated a multilocular fluid collection dissecting through the infiltrated fibroglandular parenchyma of the left breast, associated with a necrotic ipsilateral axillary lymph node.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Breast carcinoma / Inflammatory breast malignancy",
+      "rule_out_reason": "Considered given the large 10-cm palpable breast mass, axillary lymphadenopathy, and BI-RADS IVa MRI classification, but ruled out by core needle biopsy demonstrating benign granulomatous inflammation without malignant cells.",
+      "quote": "classified BIRADS IVa (Breast Imaging-Reporting And Data System)... A Trucut biopsy was performed, the results of which showed neutrophilic cystic granulomatous mastitis with no signs of tumor proliferation"
+    },
+    {
+      "candidate": "Pyogenic bacterial mastitis / Breast abscess",
+      "rule_out_reason": "Considered due to acute inflammatory signs, marked neutrophilic leukocytosis, and elevated CRP, but ruled out by complete lack of response to successive courses of amoxicillin-clavulanic acid, third-generation cephalosporins, and metronidazole.",
+      "quote": "the patient was put under a non-specific antibiotic treatment based on amoxicillin/clavulanic acid at first, then third-generation cephalosporins alongside metronidazole without improvement."
+    },
+    {
+      "candidate": "Brucellosis",
+      "rule_out_reason": "Considered as a potential granulomatous etiology of chronic mastitis and lymphadenitis, but excluded by negative Brucella serology.",
+      "quote": "Both QuantiFERON-TB Gold and serological brucellosis were also negative... after ruling out brucellosis, we retained the diagnostic of tuberculous mastitis"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative direct stains, cultures, and IGRA testing, clinical presentation with necrotic nodal involvement and complete therapeutic resolution upon initiation of standard anti-tuberculosis therapy definitively confirmed primary tuberculous mastitis.",
+      "quote": "This necessitated the commencement of an antituberculous regimen despite the negative report regarding tuberculosis. This time, the development was characterized by a fistula and the release of serous fluids after two weeks. A few weeks after, there was a total dewatering and disappearance of inflammatory signs... we retained the diagnostic of tuberculous mastitis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly up to initial sonomammography, omitting Trucut histopathology, QuantiFERON/PCR tests, antibiotic failure, and therapeutic trial response."
+}

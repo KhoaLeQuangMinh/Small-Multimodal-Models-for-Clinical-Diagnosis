@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9904801_04",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presents with cerebellar ataxia, gait impairment, slight camptocormia, and decreased spontaneous movements of the right arm. Distinguishing between a neurodegenerative movement disorder (such as Parkinson's disease or atypical parkinsonism) and an infectious central nervous system process requires synthesizing motor semiology with cerebrospinal fluid findings and clinical response to targeted therapy.\n2. Admission Breakpoint: Clinical presentation and motor examination documenting gait abnormality, trunk posture, and limb motility, prior to initiation of multidrug therapy, drug resistance testing, and post-treatment follow-up.\n3. Differential Distinctions: Parkinson's disease is considered due to postural asymmetry and arm hypokinesia, but ruled out by the absence of resting tremor, rigidity, akinesia, and postural instability, and by curative response to antituberculous therapy. Drug-resistant mycobacterial disease is excluded by susceptibility testing. The diagnosis of CNS tuberculosis is confirmed as a diagnosis of exclusion based on concurrent pulmonary disease, lymphocytic CSF pleocytosis, and complete neurological recovery under antituberculous therapy.",
+  "case_prompt": "A patient presents for neurological evaluation with significant gait disturbance and posture changes. Physical examination reveals an abnormal gait, slight camptocormia, and decreased spontaneous movements of the right upper limb. Rest tremors, muscle rigidity, akinesia/immobility, and postural dysreflexia are notably absent.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Parkinson's disease",
+      "rule_out_reason": "Considered in light of slight camptocormia and unilateral reduction in upper extremity spontaneous movement, but excluded by the complete lack of cardinal parkinsonian signs (tremor, rigidity, immobility, postural instability) and long-term resolution without dopaminergic therapy.",
+      "quote": "However, finding characteristics of Parkinson's disease, such as tremors, immobility, rigidity, and postural dysreflexia, were not observed."
+    },
+    {
+      "candidate": "Drug-resistant Tuberculosis",
+      "rule_out_reason": "Considered given the atypical neuro-invasive presentation, but excluded by microbiological susceptibility testing confirming sensitivity to all first-line antituberculous agents.",
+      "quote": "Drug resistance testing for Mycobacterium tuberculosis was performed; however, no resistance was identified against all drugs."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The patient achieved complete resolution of cerebellar ataxia, posture, and gait abnormalities within weeks of initiating standard quadruple antimycobacterial therapy (isoniazid, rifampin, ethambutol, pyrazinamide) with no recurrence over five years, confirming cerebellar ataxia due to central nervous system tuberculosis as a diagnosis of exclusion alongside pulmonary disease and lymphocyte-predominant spinal fluid pleocytosis.",
+      "quote": "Finally, we diagnosed cerebellar ataxia due to TB infection as a diagnosis of exclusion because all neurological abnormalities, including gait, improved with only TB treatment."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly restricted to physical examination findings in the text prior to therapy and testing. Verbatim quotes matched exactly."
+}

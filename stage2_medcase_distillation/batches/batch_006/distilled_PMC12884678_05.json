@@ -1,0 +1,23 @@
+{
+  "case_id": "PMC12884678_05",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A patient with a large hepatic abscess demonstrates clinical improvement and defervescence on off-label eravacycline monotherapy, creating clinical tension between continuing an apparently effective broad-spectrum antibacterial regimen versus confirming the specific protozoan etiology to switch to guideline-directed antiprotozoal therapy.\n2. Admission Breakpoint: The breakpoint occurs while the patient is maintained on empiric monotherapy with documented clinical response (remaining afebrile), immediately prior to receipt of confirmatory protozoan stool antigen testing and discontinuation of eravacycline.\n3. Differential Distinctions: Bacterial/pyogenic liver abscess was initially targeted by broad-spectrum antimicrobial therapy; however, eravacycline is not an approved agent for parasitic hepatic infections. Confirmatory testing for Entamoeba histolytica by stool antigen identified amebic liver abscess, necessitating cessation of antibacterial monotherapy and initiation of oral metronidazole.",
+  "case_prompt": "A patient hospitalized with a large hepatic abscess was managed with broad-spectrum antibiotic monotherapy using eravacycline, demonstrating clinical improvement and remaining afebrile. Diagnostic investigations were concurrently underway to determine the definitive etiology of the abscess and assess whether targeted standard-of-care antimicrobial therapy was indicated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic / Polymicrobial bacterial liver abscess",
+      "rule_out_reason": "Initially treated with broad-spectrum antibacterial coverage with clinical response, but eravacycline is not approved for definitive therapy of protozoan abscesses, and pathogen-specific testing identified a parasitic etiology.",
+      "quote": "Though the patient did respond to eravacycline monotherapy, this medication is not currently approved for the treatment of ALA."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of Entamoeba histolytica via positive stool antigen testing prompted discontinuation of eravacycline and initiation of oral metronidazole as the definitive guideline-directed standard of care.",
+      "quote": "Hence, when E. histolytica stool antigen testing was positive, eravacycline was discontinued, and the patient was started on metronidazole (750 mg PO every 8 h). The patient remained afebrile. This decision was made as metronidazole is the approved standard of care for ALAs."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Facts restricted strictly to provided text. Exact quotes verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3547857_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 75-year-old woman residing for decades in a nonendemic urban area presents with dyspepsia, anorexia, hypertension, and subtle bicytopenia (leukopenia and thrombocytopenia). Imaging demonstrates cirrhotic liver morphology, ascites, and portal hypertension, but viral hepatitis markers and standard parasitic serology (IHA) are negative. The diagnostic tension lies in recognizing remote exposure in a historical endemic area leading to advanced chronic hepato-intestinal fluke disease despite negative contemporary serology.\n2. Admission Breakpoint: The breakpoint occurs following initial gastrointestinal symptom evaluation, blood pressure measurement (176/102 mmHg), normal physical/neurological exam, baseline CBC (WBC 3,500/uL, platelets 83,000/uL), glucose (7.10 mmol/L), negative viral hepatitis panel (A, B, C, E), normal plain chest radiograph, and abdominal ultrasound showing diffuse liver parenchymal changes and seroperitoneum, immediately prior to specialized endoscopy and send-out antibody testing.\n3. Differential Distinctions: Viral hepatitis-induced cirrhosis is ruled out by negative viral hepatitis serologies; non-parasitic cryptogenic cirrhosis or gastric neoplasm is challenged by negative indirect hemagglutination serology, which is known to be insensitive in chronic advanced disease; schistosomiasis japonica is confirmed by endoscopic visualization of characteristic submucosal egg nodules in the colon alongside the pathognomonic ultrasound fish-scale fibrosis pattern.",
+  "case_prompt": "A 75-year-old woman presented with repeated epigastric discomfort, anorexia, and eructation persisting for approximately 20 days. She had grown up in Taizhou city (Jiangsu Province), an area historically endemic for parasitic infections, but moved in the 1960s to Hefei city, an urban nonendemic area, returning to her hometown only for occasional visits lasting under 1 week, with no other travel. On admission, blood pressure was 176/102 mm Hg; physical and neurological examinations were otherwise normal. Laboratory investigations revealed a white blood cell count of 3,500/muL (75.9% neutrophils), erythrocyte count of 4.07 x 10^6/muL, hemoglobin of 120.0 g/L, platelet count of 83,000/muL, fasting glucose of 7.10 mmol/L, and otherwise normal baseline chemistries. Serologic panels for hepatitis A, B, C, and E viruses were all negative. A routine chest radiograph was normal. Ultrasonography of the abdomen revealed diffuse pathological architectural changes of the liver and seroperitoneum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral hepatitis cirrhosis (Hepatitis A, B, C, or E)",
+      "rule_out_reason": "Considered as the primary etiology of chronic liver disease, splenomegaly, portal hypertension, and ascites in an elderly patient, but comprehensive viral serologies were entirely non-reactive.",
+      "quote": "Tests for hepatitis A, B, C, and E were negative."
+    },
+    {
+      "candidate": "Cryptogenic cirrhosis / seronegative hepatic disease",
+      "rule_out_reason": "A parasitic etiology was questioned when standard screening serology for specific antibodies returned negative at a specialized control station, reflecting the known low sensitivity of antibody tests in elderly chronic infections.",
+      "quote": "The serologic test for schistosomes was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Schistosomiasis (Advanced schistosomiasis japonica)",
+      "rule_out_reason": "The definitive diagnosis was established by lower gastrointestinal endoscopy demonstrating pathognomonic submucosal calcified egg nodules in the colon alongside the characteristic fish-scale hepatic fibrosis on ultrasound.",
+      "quote": "The results from endoscopic examination first observed egg nodes within the submucous section of colon (see Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly avoids the pathogen and disease name, describing only the exposure geography, dyspeptic symptoms, cytopenias, and nonspecific ultrasound liver changes. Submucosal egg nodes and IHA serology are reserved for diagnostic reasoning."
+}

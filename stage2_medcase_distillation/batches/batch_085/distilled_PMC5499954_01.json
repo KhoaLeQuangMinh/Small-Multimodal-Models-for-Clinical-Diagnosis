@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5499954_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 78-year-old underweight Hispanic woman returning from El Salvador presents with high fever (39.1°C), acute-on-chronic diarrhea, dehydration, and abdominal pain. An incidental chest radiograph showing possible pneumonia without pulmonary symptoms, coupled with the absence of typical cutaneous signs such as larva currens, creates diagnostic confusion between inflammatory bowel disease, atypical bacterial colitis, and occult soil-transmitted helminthic infection.\n2. Admission Breakpoint: Admission triage concludes after emergency clinical evaluation, physical examination, baseline laboratory screening (liver function tests, hepatitis panel, sepsis screen), and initial chest radiography, strictly prior to send-out stool ova and parasite examination and confirmatory serology.\n3. Differential Distinctions: Inflammatory bowel disease (ulcerative proctocolitis) is suspected due to chronic diarrhea, profound weight loss, and subsequent colonic wall thickening, but ruled out by parasitology and clinical history. Bacterial pneumonia is considered based on chest radiography, but excluded by the complete lack of cough, dyspnea, or abnormal breath sounds. Helminthic hyperinfection is considered given age and pulmonary findings, but excluded by immunocompetent status and absence of multiorgan dissemination.",
+  "case_prompt": "A 78-year-old underweight Hispanic woman with a history of hypertension and mitral stenosis presents to the emergency department with a 2-day history of cramping abdominal pain, nausea, dehydration, and watery diarrhea. She reports similar, untreated episodes of gastrointestinal distress over several years, the most recent occurring 4 years prior. She returned 4 weeks ago from travel to El Salvador, where she consumed local food and tap water; her traveling companion remained asymptomatic. She received no travel vaccinations and takes no medications. She denies hematochezia, dysuria, cough, shortness of breath, headache, fever prior to arrival, or consumption of exotic meals.\n\nOn physical examination, she appears frail and malnourished. Her body temperature is 39.1°C, blood pressure is 116/64 mmHg, pulse rate is 96 beats/min, respiratory rate is 19 breaths/min, and oxygen saturation is 93% on ambient air. Cardiac examination reveals a murmur consistent with mitral stenosis. Abdominal examination demonstrates generalized tenderness to palpation without muscular rigidity, guarding, or peritoneal signs; bowel sounds are active. Skin examination shows no petechiae, urticaria, or serpiginous creeping eruptions (larva currens).\n\nInitial laboratory workup reveals normal liver function tests, a negative hepatitis panel, and a negative sepsis screen. A plain chest radiograph demonstrates findings concerning for possible pneumonia, despite the absence of respiratory symptoms or adventitious lung sounds.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Inflammatory bowel disease / Proctocolitis",
+      "rule_out_reason": "Considered given recurrent episodic diarrhea, severe cachexia, and later CT findings showing circumferential sigmoid and rectal wall enhancement; excluded following detailed clinical history and identification of nematode larvae.",
+      "quote": "It showed mild circumferential enhancement and haziness of the wall of the sigmoid colon and the rectum. As per radiology, this finding was non-specific and usually seen in proctocolitis... After eliminating other pathologies through a detailed history ruling out ulcerative colitis and other infections, we went back to confirm our diagnosis with ELISA."
+    },
+    {
+      "candidate": "Community-acquired bacterial pneumonia",
+      "rule_out_reason": "Considered because the initial chest radiograph showed possible pneumonia in the setting of high fever; ruled out by the complete absence of cough, dyspnea, tachypnea, or physical respiratory abnormalities.",
+      "quote": "Chest X-ray showed possible pneumonia but there were no physical signs or symptoms... Based on the travel history, chest X-ray showing possible pneumonia, lack of clinically appreciable respiratory symptoms, presence of diarrhea, and absence of initial work-up for abdominal infections, a preliminary diagnosis of pneumonia or intestinal infection was considered."
+    },
+    {
+      "candidate": "Disseminated hyperinfection syndrome",
+      "rule_out_reason": "Considered due to the co-occurrence of pulmonary radiographic abnormalities, fever, and intestinal disease; excluded because the patient was not immunosuppressed and lacked multisystem dysfunction.",
+      "quote": "We ruled out hyperinfection since the patient was not immunosuppressed and there were no physical signs of involvement of other systems."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct stool microscopy identified larvae/ova of Strongyloides stercoralis, establishing the diagnosis of intestinal soil-transmitted helminthiasis, which was confirmed by enzyme-linked immunosorbent assay (ELISA).",
+      "quote": "Later, her stool examination showed ova and parasites of S. stercoralis. She was put on ivermectin 200 micrograms/kilogram once a day for 2 consecutive days while continuing her antibiotics... we went back to confirm our diagnosis with ELISA."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning case for PMC5499954_01. Details an atypical presentation of Strongyloides stercoralis masquerading as proctocolitis and occult pneumonia, strictly cutting off prior to stool microscopy."
+}

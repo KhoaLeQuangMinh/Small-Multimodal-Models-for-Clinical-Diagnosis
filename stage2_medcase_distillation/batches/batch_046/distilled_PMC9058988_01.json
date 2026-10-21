@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9058988_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 32-year-old pregnant woman at 42 weeks and 4 days gestation is referred for emergency cesarean section due to profound, asymptomatic thrombocytopenia (29,000\u201334,000/\u00b5L) accompanied by leukopenia (2,000/\u00b5L), anemia (9.8 g/dL), and a prolonged bedside clotting time (13 minutes). She has no fever, chills, rigors, headache, or jaundice. The afebrile, asymptomatic presentation in post-term pregnancy strongly mimics gestational thrombocytopenia, pre-eclampsia / HELLP syndrome, or primary bone marrow aplasia, deflecting attention from life-threatening intraerythrocytic protozoan parasitemia.\n2. Admission Breakpoint: The admission narrative halts after initial triage evaluation at the tertiary referral hospital\u2014encompassing residence in Burma Valley, lack of intermittent preventive therapy, 3\u20134 days of generalized fatigue, vital signs (afebrile at 36.5\u00b0C, pulse 119 bpm, BP 110/56 mmHg), obstetric exam, triage hematology showing pancytopenia (WBC 2.0 x 10^3/\u00b5L, Hb 9.8 g/dL, platelets 29 x 10^3/\u00b5L), normal transaminases/bilirubin, prolonged bedside clotting time (13 min), and negative urine protein\u2014strictly before the reporting of the peripheral blood slide identifying intraerythrocytic ring forms.\n3. Differential Distinctions: Gestational thrombocytopenia and primary ITP are ruled out because platelets dropped below 30,000/\u00b5L and were accompanied by leukopenia, anemia, and prolonged clotting time; pre-eclampsia / HELLP syndrome is excluded by normal blood pressure (110/56 mmHg), absence of proteinuria, and normal liver enzymes and bilirubin; aplastic anemia is excluded when peripheral blood microscopy demonstrates abundant Plasmodium falciparum ring forms.",
+  "case_prompt": "A 32-year-old woman in her fifth pregnancy (gravida 5, para 3+1) was urgently transferred to a tertiary hospital from a provincial district hospital at an estimated gestational age of 42 completed weeks and four days. She had a history of one prior cesarean section performed in 2015 for fetal distress, following two spontaneous vaginal deliveries and a first-trimester miscarriage. On pre-operative work-up for repeat cesarean section at the referring hospital, she was discovered to have severe thrombocytopenia with a platelet count of 34,000/\u00b5L; she was transferred due to the unavailability of blood products and specialized anesthesia services. On systemic review at presentation, she reported generalized body weakness over the preceding three to four days, which she had attributed to advanced pregnancy. She denied fever, chills, rigors, joint pains, or headache. The pregnancy had been booked with six regular antenatal care visits; she was taking hematinic supplements but had not received intermittent preventive treatment during pregnancy. She lived with her family in Burma Valley. She was negative for human immunodeficiency virus and had no other chronic medical illnesses.\n\nOn physical examination, she appeared unwell, pale, and dehydrated, but was without jaundice, petechiae, or lymphadenopathy. Her blood pressure was 110/56 mmHg, heart rate was 119 beats/min, respiratory rate was 14 breaths/min, and body temperature was 36.5\u00b0C. Chest, cardiovascular, and neurological examinations were unremarkable. Abdominal examination revealed a healed transverse suprapubic scar and no epigastric or right upper quadrant tenderness. The symphysis-fundal height was 38 cm, with a singleton fetus in longitudinal lie and cephalic presentation; the fetal heart rate was 132 beats/min.\n\nEmergency laboratory evaluation demonstrated pancytopenia: white blood cell count was 2,000/\u00b5L, hemoglobin was 9.8 g/dL, platelet count was 29,000/\u00b5L, and mean corpuscular volume was 81.1 fL. Serum urea, electrolytes, and liver enzymes were within normal limits, with an alanine aminotransferase of 13 IU/L and an aspartate aminotransferase of 36 IU/L. Total and direct serum bilirubin levels were completely normal. A bedside clotting time was prolonged at 13 minutes. Urinalysis was negative for protein.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gestational thrombocytopenia / Immune thrombocytopenic purpura (ITP)",
+      "rule_out_reason": "Isolated thrombocytopenia discovered near term is commonly benign gestational thrombocytopenia or immune thrombocytopenia; however, platelet counts below 50,000/\u00b5L are atypical for gestational thrombocytopenia, and neither condition explains the concurrent leukopenia, anemia, and prolonged clotting time.",
+      "quote": "On work-up for C/S at the referring hospital, she was noted to have a severe thrombocytopenia of 34x103/microL."
+    },
+    {
+      "candidate": "Pre-eclampsia / HELLP syndrome",
+      "rule_out_reason": "Severe acute consumptive thrombocytopenia in an advanced post-term pregnancy raised immediate suspicion for HELLP syndrome, but the patient was normotensive, lacked proteinuria on urinalysis, and demonstrated entirely normal liver transaminases and bilirubin.",
+      "quote": "The urea, electrolytes and liver enzymes were all normal with an alanine transaminase (ALT) of 13 iU/l and an aspartate transaminase (AST) of 36 iU/l. Both total and direct bilirubin were within normal limits."
+    },
+    {
+      "candidate": "Primary bone marrow failure / Aplastic anemia",
+      "rule_out_reason": "New-onset trilineage pancytopenia (leukopenia, anemia, and severe thrombocytopenia) without prominent fever suggested primary marrow aplasia or hypoplasia, but the abnormalities resolved rapidly following targeted antiparasitic chemotherapy.",
+      "quote": "Laboratory investigations revealed a pancytopenia, and numerous ring forms of P. falciparum."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred upon microscopic examination of the peripheral blood smear, which revealed abundant ring forms of Plasmodium falciparum, establishing asymptomatic severe malaria presenting with profound consumptive coagulopathy and pancytopenia in late pregnancy.",
+      "quote": "Laboratory investigations revealed a pancytopenia, and numerous ring forms of P. falciparum."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to Day 1 triage presentation prior to peripheral blood film microscopy. All references to malaria, Plasmodium species, ring forms, and subsequent artesunate therapy have been excluded from the prompt."
+}

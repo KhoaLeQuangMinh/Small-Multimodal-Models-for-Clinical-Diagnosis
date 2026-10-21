@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6330183_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 30-year-old malnourished male presenting with 3 months of low-grade fever, severe lower limb pain, palpable purpura over the thighs and buttocks, massive splenomegaly, hepatomegaly, pancytopenia, and polyclonal hypergammaglobulinemia. The clinical tension is determining whether this multisystem presentation represents a primary connective tissue disease / systemic autoimmune vasculitis (such as Henoch-Schönlein purpura, SLE, or cryoglobulinemic vasculitis), a hematological malignancy (lymphoma/leukemia), or an endemic protozoan infection (visceral leishmaniasis) presenting atypically with secondary immune-complex-mediated leukocytoclastic vasculitis.\n2. Admission Breakpoint: Initial clinical assessment following physical examination, baseline hematologic evaluation (CBC, pancytopenia), metabolic profile, serum protein electrophoresis, urinalysis, and baseline CT imaging of chest and abdomen confirming hepatosplenomegaly. Confirmatory testing (autoimmune serologies, viral markers, rK39 serology, bone marrow aspirate, and skin biopsy) begins after this point.\n3. Differential Distinctions: Systemic autoimmune vasculitis was ruled out by negative ANA, RF, cryoglobulins, and normal complement levels. Hematologic malignancy was ruled out by lack of discrete lymphadenopathy on CT and absence of malignant blasts on bone marrow aspirate. Visceral leishmaniasis was confirmed by positive rK39 serology and identification of intracellular Leishman-Donovan bodies in bone marrow histiocytes.",
+  "case_prompt": "A 30-year-old man presented with pain in his lower limbs and a non-itchy, erythematous rash distributed over both lower extremities. He reported a low-grade, intermittent fever of 3 months' duration.\nOn physical examination, the patient was pale and had palpable purpura over both thighs and buttocks. He appeared malnourished, with a body mass index of 18.4 kg/m². Abdominal examination revealed palpable hepatomegaly along with massive splenomegaly. Cardiovascular, respiratory, and neurological examinations were otherwise normal.\nLaboratory investigations revealed pancytopenia with a hemoglobin level of 6.8 g/dL, total leukocyte count of 2,800/mm³, and platelet count of 45,000/μL. Serum protein analysis demonstrated polyclonal hypergammaglobulinemia (4.9 g/dL) with normal liver and renal function tests. Urinalysis was unremarkable. Contrast-enhanced computed tomography (CT) of the chest and abdomen confirmed marked hepatosplenomegaly and was otherwise unremarkable, with no evidence of discrete pathological lymphadenopathy or solid organ masses.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Connective tissue disorder with systemic vasculitis (e.g., SLE, Henoch-Schönlein purpura, cryoglobulinemic vasculitis)",
+      "rule_out_reason": "Considered due to the combination of prolonged fever, lower extremity palpable purpura, and polyclonal hypergammaglobulinemia. However, anti-nuclear antibodies, rheumatoid factor, and serum cryoglobulins were negative, serum complement levels (C3 and C4) were normal, and urinalysis showed no active sediment.",
+      "quote": "Anti-nuclear antibodies, complement levels (C3 = 94 mg/dL and C4 = 20 mg/dL), and rheumatoid factor were negative. Urine examination was normal and serum cryoglobulins were not raised."
+    },
+    {
+      "candidate": "Hematological malignancy (e.g., lymphoma, leukemia)",
+      "rule_out_reason": "Considered because of prolonged fever, wasting/malnutrition, massive splenomegaly, and severe pancytopenia in a young adult. However, CT scans showed no discrete malignant lymphadenopathy, and bone marrow examination demonstrated no clonal lymphoproliferation or blasts, identifying intracellular parasites instead.",
+      "quote": "We considered hematological malignancy or a connective tissue disorder with vasculitis."
+    },
+    {
+      "candidate": "Tropical rickettsial or chronic viral infection (HIV, scrub typhus)",
+      "rule_out_reason": "Considered due to subacute febrile illness with rash and endemic environmental exposures. However, serologic evaluation for rickettsia, scrub typhus, HIV, and viral hepatitis (HBsAg, anti-HCV) was completely negative.",
+      "quote": "Viral markers (HIV, hepatitis B surface antigen, and anti-hepatitis C) were negative. Serology for rickettsia and scrub typhus were also negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal confirmatory turning point was the detection of peripheral blood antibodies against the rK39 antigen and the identification of typical Leishman-Donovan bodies (amastigotes) within bone marrow histiocytes, accompanied by skin biopsy confirming leukocytoclastic vasculitis secondary to visceral leishmaniasis.",
+      "quote": "Peripheral blood antibodies towards rK39 antigen were positive, and bone marrow examination confirmed visceral leishmaniasis with the presence of typical Leishman-Donovan bodies (amastigote form) within the bone marrow histiocytes [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified admission breakpoint strictly excludes rK39 serology, bone marrow aspirate results, skin biopsy histology, and amphotericin B therapy."
+}

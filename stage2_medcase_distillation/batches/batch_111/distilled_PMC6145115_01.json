@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6145115_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A middle-aged diabetic woman in Sri Lanka presenting with two weeks of persistent fever and rigors without localizing signs or agricultural exposure, whose initial automated blood culture was misidentified as Burkholderia cepacia before developing severe infective sacroiliitis and large iliopsoas abscesses.\n2. Admission Breakpoint: Admission triage terminates after admission vitals, diabetic control assessment, and initial systemic physical examination, strictly prior to blood culture bottle flagging on day 3.\n3. Differential Distinctions: Infective endocarditis is excluded by absence of peripheral stigmata and normal cardiac examination; tuberculosis and brucellosis are excluded by negative Mantoux testing, sterile AFB/fungal cultures, and negative serologies; automated blood culture misidentification as B. cepacia is corrected by bipolar Gram staining, aminoglycoside resistance, and definitive PCR.",
+  "case_prompt": "A 56-year-old female resident of Sri Lanka presented with persistent fever, chills, and rigors of two weeks' duration, accompanied by generalized malaise and anorexia. She had a history of type 2 diabetes mellitus managed on oral hypoglycemic agents, with good glycemic control (fasting blood glucose 112 mg/dL, HbA1c 5.7%). She was a homemaker and reported no occupational engagement in agriculture, farming, or gardening. On admission examination, she was febrile with an oral temperature of 101.4°F (38.6°C). Blood pressure, heart rate, and respirations were stable. Physical examination demonstrated no peripheral stigmata of infective endocarditis, no peripheral lymphadenopathy, oral ulcers, uveitis, cutaneous rash, or hepatosplenomegaly. Initial musculoskeletal and joint examinations were unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Infective Endocarditis",
+      "rule_out_reason": "Considered during initial evaluation given two weeks of high unremitting fevers with chills and rigors in a diabetic patient; excluded by the absence of murmurs, absence of peripheral vascular or immunologic stigmata, and lack of typical endocardial organisms.",
+      "quote": "did not have lymphadenopathy, oral ulcers, uveitis, peripheral signs of infective endocarditis, rashes or hepatosplenomegaly."
+    },
+    {
+      "candidate": "Tuberculous / Brucellar Sacroiliitis",
+      "rule_out_reason": "When deep musculoskeletal pain, sacroiliitis, and a massive iliopsoas collection developed, chronic zoonotic and mycobacterial infections endemic to the region were considered; ruled out by negative tuberculin skin testing, normal chest radiography, negative Brucella antibodies, and lack of mycobacterial growth in drained abscess fluid.",
+      "quote": "Her Mantoux test was negative, chest X ray was normal, sputum for acid fast bacilli were negative and pus drained from abscesses didn't yield any growth on bacterial cultures, AFB cultures or fungal cultures. Brucella and HIV antibodies were also negative."
+    },
+    {
+      "candidate": "Burkholderia cepacia Bacteremia (Automated Laboratory Misidentification)",
+      "rule_out_reason": "Initial automated blood culture bottle flagged positive for B. cepacia on day three, but colony morphology, bipolar Gram staining, intrinsic aminoglycoside resistance, and molecular testing overturned this initial identification.",
+      "quote": "On the third day of admission, blood culture reported positive with the growth of Burkholderia cepacia. She was started on IV ceftazidime 2 g every 6 h, with the suspicion of Burkholderia pseudomallei and melioidosis serology was ordered."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was confirmed when the bloodstream isolate demonstrated bipolar staining slender Gram-negative rods with resistance to gentamicin and susceptibility to ceftazidime/meropenem, accompanied by an IgM antibody titer of 1:640 and positive Burkholderia pseudomallei PCR.",
+      "quote": "Gram stain showed gram negative slender rods with bipolar staining, antibiotic susceptibility pattern gave clues to the microbiological diagnosis of Burkholderia pseudomallei, sensitive for ceftazidime and meropenem and resistant to gentamycin (Figs. 1 and 2). The melioidosis antibody titer Ig M was 1:640, measured by enzyme linked immunosorbent assay (ELISA). The isolate was confirmed as Burkholderia pseudomallei by PCR the following day."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation strictly halts before blood culture bottle reporting on hospital day 3. Zero mention of Burkholderia or melioidosis in case prompt."
+}

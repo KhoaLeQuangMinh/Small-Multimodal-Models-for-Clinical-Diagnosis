@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11329603_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 52-year-old female undergoing treatment for a refractory subacute pulmonary disease presents with acute-on-chronic respiratory deterioration, high fevers, and profound rapid-onset anemia with severe reticulocytopenia (Hb 56 g/L, RET 4 x 10^9/L). The diagnostic tension involves discerning whether the acute decompensation is an intercurrent secondary bacterial superinfection versus severe drug-induced bone marrow suppression (oxazolidinone toxicity) complicating underlying extensively drug-resistant infection.\n2. Admission Breakpoint: Admission presentation ends after baseline blood work (WBC 5.74 x 10^9/L, Hb 73 g/L, CRP 14.22 mg/L, normal PCT) and initial pulmonary evaluation, immediately prior to specialized automated liquid mycobacterial culture (MGIT 960) and phenotypic drug susceptibility testing (DST).\n3. Differential Distinctions: Anemia of chronic disease and sepsis-induced marrow suppression are excluded by the profound reticulocytopenic drop following oxazolidinone therapy that promptly reversed upon its discontinuation. The underlying disease is distinguished by phenotypic resistance to standard first-line and second-line antimicrobials.",
+  "case_prompt": "A 52-year-old woman presented to the hospital with a 1-week history of worsening cough, productive sputum, chest tightness, fever, and progressive fatigue. She had been managed over the preceding 6 months for a chronic pulmonary infection with a standard four-drug antimicrobial regimen, but follow-up evaluations demonstrated persistent lack of radiographic and clinical resolution.\n\nOn admission, the patient was febrile and appeared pale and fatigued. Vital signs showed mild tachypnea and tachycardia. Chest auscultation revealed bilateral coarse crackles and diminished breath sounds over the upper lung fields.\n\nInitial laboratory evaluation revealed a white blood cell count of 5.74 x 10^9/L with 77.2% neutrophils, a red blood cell count of 2.63 x 10^12/L, hemoglobin of 73 g/L, and a platelet count of 254 x 10^9/L. C-reactive protein was elevated at 14.22 mg/L, while serum procalcitonin was normal at <0.040 ng/mL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Anemia of Chronic Disease / Sepsis-Induced Anemia",
+      "rule_out_reason": "Considered due to the ongoing chronic infection, inflammatory state, and worsening acute fever. Ruled out as the cause of acute marrow shutdown, with investigations pinpointing medication-induced (linezolid) pure red cell suppression that resolved following drug withdrawal and transfusion.",
+      "quote": "We have ruled out anemia caused by chronic diseases or other reasons. Severe anemia was considered to be related to the anti-TB medication (LZD), which led to discontinuation of LZD."
+    },
+    {
+      "candidate": "Acute Bacterial Superinfection / Pneumonia Alone",
+      "rule_out_reason": "Considered when the patient spiked a high fever to 40°C with procalcitonin rising to 0.42 ng/mL and CT showing lesion deterioration. Ruled out as the primary underlying disease process by automated mycobacterial culture confirming refractory pre-XDR disease.",
+      "quote": "A chest computed tomography (CT) scan indicated worsened lesions, suggesting a possible TB-complicated bacterial infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point was established by liquid culture detection (BACTEC MGIT 960) and comprehensive drug susceptibility testing revealing resistance to isoniazid, rifampicin, ethambutol, fluoroquinolones, and aminoglycosides, establishing pre-extensively drug-resistant disease.",
+      "quote": "The M. tuberculosis sputum cultures and drug susceptibility testing (DST) revealed resistance to H/R/E/levofloxacin (LFX)/moxifloxacin (MFX)/amikacin (AM)/streptomycin (S)/kanamycin (CM), diagnosing the patient with pre-extensively drug-resistant tuberculosis (pre-XDR TB)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presents the admission presentation cleanly without drug names or phenotypic DST spoilers, isolating the pre-XDR diagnosis and linezolid toxicity for the reasoning section."
+}

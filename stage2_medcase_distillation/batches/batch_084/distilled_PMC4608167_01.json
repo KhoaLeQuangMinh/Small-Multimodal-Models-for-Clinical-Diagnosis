@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4608167_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 68-year-old woman with newly diagnosed vulvar squamous cell carcinoma is found to have two spiculated lung nodules on staging thoracic CT, suggesting Stage IV (T3 N0 M1) metastatic disease. However, distant hematogenous pulmonary metastasis in vulvar carcinoma almost never occurs without intervening regional inguinal and pelvic lymph node involvement. The clinical dilemma is distinguishing solitary/oligometastatic malignancy from an indolent granulomatous infection that dramatically alters staging from palliative to curative.\n2. Admission Breakpoint: The breakpoint is reached after completion of staging abdominopelvic and thoracic imaging demonstrating the spiculated pulmonary nodules in the absence of regional lymphadenopathy, immediately prior to percutaneous lung nodule biopsy and Ziehl-Neelsen staining.\n3. Differential Distinctions: Metastatic vulvar squamous cell carcinoma (favored by oncologic context and CT nodule morphology, but refuted by absent regional lymph node metastasis and negative tumor pathology on lung biopsy); primary bronchogenic carcinoma (suggested by spiculated nodule appearance and age, but ruled out by absence of malignant histology); pulmonary tuberculosis (granulomatous infection forming tuberculomas, confirmed by necrotizing granulomatous inflammation and positive Ziehl-Neelsen stain for mycobacteria).",
+  "case_prompt": "A 68-year-old woman presents for oncologic evaluation and staging. She had sought medical attention complaining of vaginal itching and pain, and gynecological examination revealed a vulvar mass with vaginal invasion. She has no history of tobacco smoking. Histological evaluation of the primary tumoral lesion confirmed vulvar squamous cell carcinoma. Baseline oncologic staging is performed, including pelvic magnetic resonance imaging (MRI), abdominal computed tomography (CT), and thoracic CT. Pelvic MRI and abdominal CT show no evidence of pelvic or inguinal lymphadenopathy. Thoracic CT reveals two spiculated, irregular pulmonary nodules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic vulvar squamous cell carcinoma (pulmonary metastasis)",
+      "rule_out_reason": "Considered the primary provisional diagnosis given the known invasive vulvar carcinoma with spiculated pulmonary nodules on staging CT (initially staged as T3 N0 M1, stage IV). However, isolated hematogenous pulmonary metastasis without regional pelvic or inguinal lymph node involvement is highly atypical for vulvar squamous cell carcinoma, and lung biopsy showed no evidence of neoplasia.",
+      "quote": "As the patient did not present the typical and expected pelvic and/or inguinal lymph node involvement, we decided to biopsy the lung nodules, to confirm the diagnosis of metastasis."
+    },
+    {
+      "candidate": "Primary bronchogenic carcinoma",
+      "rule_out_reason": "Considered due to the patient's age and the spiculated, irregular morphology of the pulmonary nodules on thoracic CT. Ruled out by histopathological examination of the lung nodules, which showed no malignant cells.",
+      "quote": "No evidence of neoplasia was found in the biopsied specimen."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Percutaneous biopsy of the pulmonary nodules demonstrated chronic inflammatory reaction with granulomas, and Ziehl-Neelsen staining confirmed the presence of acid-fast bacilli without evidence of malignancy, establishing pulmonary tuberculosis and allowing curative-intent resection of the localized vulvar carcinoma.",
+      "quote": "two nodules were biopsied, revealing the presence of chronic inflammatory reaction with granulomas (Figure 2A) and the Ziehl-Neelsen staining was positive for mycobacteria, consistent with the diagnosis of pulmonary tuberculosis (Figure 2B)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4608167_01 following Stanford MedCaseReasoning guidelines. The case prompt preserves clinical tension around staging pulmonary nodules without revealing biopsy histopathology or infectious etiology."
+}

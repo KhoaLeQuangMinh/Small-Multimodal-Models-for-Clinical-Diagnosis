@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3987999_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: During an explosive summer arboviral epidemic in an endemic tropical metropolis (Rio de Janeiro), patients presenting with acute fever, prostrating myalgia, and rapid development of hemorrhagic manifestations can mimic severe bacterial sepsis with disseminated intravascular coagulation, leptospirosis, or yellow fever.\n2. Admission Breakpoint: Admission triage ends with the initial clinical examination documenting acute fever, severe generalized myalgia, and early hemorrhagic manifestations during the regional epidemic. Confirmatory testing begins with arboviral serologic testing (serum IgM antibodies) and post-mortem histopathology.\n3. Differential Distinctions: Leptospirosis commonly presents with fever, calf pain, conjunctival suffusion, and bleeding, but typically features marked neutrophilic leukocytosis and renal impairment. Yellow fever produces high fever, profound jaundice, and renal dysfunction with black vomitus. Severe dengue is distinguished by characteristic hemoconcentration, marked thrombocytopenia, plasma leakage, and positive arboviral-specific IgM antibodies.",
+  "case_prompt": "During an explosive summer febrile epidemic in Rio de Janeiro, Brazil, a patient presents to the emergency department with an acute severe febrile syndrome. The patient reports high-grade fever of acute onset accompanied by intense generalized myalgia, severe malaise, and spontaneous hemorrhagic manifestations.\n\nOn physical examination, the patient is acutely ill, febrile, and demonstrates cutaneous and mucosal bleeding manifestations. Baseline triage reveals acute vascular instability and bleeding signs in the setting of widespread local urban mosquito-borne disease transmission.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leptospirosis",
+      "rule_out_reason": "Considered given the acute onset of fever, severe myalgia, and hemorrhagic manifestations in an urban tropical setting, but ruled out by the lack of prominent renal failure or conjunctival suffusion, the epidemic viral context, and specific serological confirmation.",
+      "quote": "All patients died with a clinical diagnosis of dengue hemorrhagic fever, with classical symptoms (fever, myalgia and hemorrhagic manifestations)."
+    },
+    {
+      "candidate": "Yellow Fever",
+      "rule_out_reason": "Another flaviviral hemorrhagic fever endemic in Brazil causing acute fever, myalgia, and hemorrhagic complications, but ruled out by the epidemiology of the urban outbreak and confirmation of positive specific IgM antibodies.",
+      "quote": "During the summer of 2002, Rio de Janeiro had a large epidemic of DF and DHF and 99% of cases were caused by DENV-3."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic confirmation was established by detection of positive serum IgM antibodies against the virus, along with post-mortem demonstration of extensive multi-organ hemorrhage and edema.",
+      "quote": "Necropsy revealed that cases presented extensive areas of hemorrhage and edema in all analyzed organs. The dengue diagnosis was confirmed by positive serum IgM antibodies."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted from PMC3987999_01. Pathogen names, DENV serotype, and antibody details strictly excluded from admission prompt. Verified ground-truth canonical disease: Dengue."
+}

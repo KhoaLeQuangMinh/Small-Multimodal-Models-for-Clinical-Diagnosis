@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3366760_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: The patient is a healthcare worker presenting in a region where this endemic pathogen had never previously been documented (representing the index case in New Caledonia). The presentation of hyperacute septic shock, severe pneumonia, and acute renal insufficiency is easily confounded with common nosocomial or community-acquired gram-negative sepsis (such as Pseudomonas aeruginosa) or a catastrophic relapse of his remote pulmonary tuberculosis. Furthermore, initial local automated and routine microbiological assays misclassified the oxidase-positive gram-negative bacillus as Pseudomonas sp., delaying targeted tropical antimicrobial therapy until reference laboratory molecular confirmation.\n\n2. Admission Breakpoint: The admission breakpoint is established immediately after initial emergency triage resuscitation, endotracheal intubation, and baseline laboratory detection of acute renal failure and pneumonia with septic shock, strictly before the reporting of blood culture isolates, provisional Pseudomonas identification, or Pasteur Institute send-out confirmation.\n\n3. Differential Distinctions:\n- Pseudomonas aeruginosa sepsis: Both are oxidase-positive gram-negative bacilli causing rapid septic shock and pneumonia; however, Burkholderia pseudomallei displays distinct biochemical profiles on API 20NE/32GN strips, characteristic 16S rRNA gene sequences, and causes secondary dissemination such as multiple cutaneous abscesses requiring carbapenem and co-trimoxazole therapy.\n- Reactivation Tuberculosis: Patient had confirmed treated pulmonary tuberculosis two decades earlier; however, this acute hyperdynamic presentation with rapid multiorgan decompensation reflects fulminant bacterial sepsis rather than subacute caseating mycobacterial infection.\n- Burkholderia gladioli: Another non-fermenting gram-negative rod documented in the same rural province; distinguished by multilocus sequence typing (MLST) and 16S rRNA sequencing.",
+  "case_prompt": "A 46-year-old male nurse residing and working at a health center in Ouegoa, a rural village in the Northern Province of New Caledonia, is brought to the hospital with acute respiratory distress, high fever, and hemodynamic instability. His medical history is notable for chronic cavitary granulomatous pulmonary infection treated successfully twenty years prior.\n\nOn physical examination, he appears critically ill, febrile, and in septic shock. Chest examination reveals signs of acute bilateral pneumonia, and he quickly decompensates into acute respiratory failure requiring emergent endotracheal intubation and mechanical ventilation. Baseline laboratory evaluation demonstrates acute renal insufficiency and severe metabolic stress secondary to overwhelming pulmonary sepsis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pseudomonas aeruginosa Sepsis",
+      "rule_out_reason": "Considered because the patient presented with fulminant pneumonia and septic shock, and local microbiology initially misidentified the oxidase-positive gram-negative rod as a Pseudomonas species. Excluded when reference laboratory testing confirmed Burkholderia pseudomallei.",
+      "quote": "Blood culture grew an oxidase-positive, gram-negative rod, which was initially identified as a Pseudomonas sp. by the local laboratory but later confirmed as B. pseudomallei by the Pasteur Institute when the patient was transferred to the hospital in the capital city, Noumea."
+    },
+    {
+      "candidate": "Reactivation Tuberculosis",
+      "rule_out_reason": "Considered given the patient's remote history of tuberculosis 20 years earlier presenting with severe pulmonary disease. Excluded by the hyperacute clinical course of septic shock with multiorgan failure and isolation of a gram-negative bacillus rather than mycobacteria.",
+      "quote": "He had been treated for tuberculosis 20 years earlier."
+    },
+    {
+      "candidate": "Burkholderia gladioli Septicemia",
+      "rule_out_reason": "Considered as an alternative opportunistic non-pseudomallei Burkholderia species identified in the same locality in patients with renal disease. Differentiated by API 20NE/32GN biochemical profiles and 16S rRNA gene sequencing.",
+      "quote": "He was taking the immunosuppressant medication tacrolimus when \"B. gladioli\" septicemia was diagnosed in April 2002."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred when reference testing at the Pasteur Institute corrected the blood culture identification to B. pseudomallei, supported by cultures from numerous secondary cutaneous abscesses, confirming the diagnosis of melioidosis.",
+      "quote": "later confirmed as B. pseudomallei by the Pasteur Institute when the patient was transferred to the hospital in the capital city, Noumea. Ten days after admission, when B. pseudomallei infection was confirmed, treatment was changed to the combination of imipenem and trimethoprim/sulfamethoxazole. Numerous cutaneous abscesses cultured B. pseudomallei, and he slowly recovered."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Presentation describes clinical features of septic shock, pneumonia, and acute renal failure prior to any microbiological identification. All differential candidates and diagnostic pivot are anchored to verbatim quotes."
+}

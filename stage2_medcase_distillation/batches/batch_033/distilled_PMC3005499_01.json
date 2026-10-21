@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3005499_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 22-year-old male presents with subacute intestinal obstruction, marked systemic inflammation (ESR 80 mm/hr), and imaging showing small bowel encasement by a fibrous membrane (abdominal cocoon). Because sclerosing encapsulating peritonitis is classically idiopathic in adolescent females or secondary to peritoneal dialysis, its appearance in a young male with retroperitoneal adenopathy and ascites creates tension between malignant peritoneal carcinomatosis and abdominal tuberculosis.\n2. Admission Breakpoint: Admission triage concludes following clinical examination, routine laboratory testing, abdominal radiographs, barium meal follow-through, and multidetector computed tomography of the abdomen, immediately prior to ultrasound-guided fine-needle aspiration cytology of the omentum and surgical exploration.\n3. Differential Distinctions: Idiopathic sclerosing encapsulating peritonitis is ruled out by the patient's demographic profile and the presence of retroperitoneal adenopathy with caseating granulomas; peritoneal carcinomatosis is excluded by the absence of neoplastic cells on aspiration cytology; tuberculous abdominal cocoon is confirmed by caseating granulomatous inflammation on omental cytology and surgical histopathology.",
+  "case_prompt": "A 22-year-old male presented to the hospital with a 3-month history of recurrent upper abdominal colicky pain, intermittent bilious vomiting, and progressive abdominal distension. He had no prior history of peritonitis, previous abdominal or pelvic surgeries, or long-term medication use.\n\nOn physical examination, the patient was hemodynamically stable. Abdominal examination revealed generalized mild distension without localized tenderness, guarding, rigidity, or palpable organomegaly. Bowel sounds were present. The remainder of the physical examination was unremarkable.\n\nInitial laboratory evaluation revealed a hemoglobin of 11.0 g/dL and an erythrocyte sedimentation rate (ESR) markedly elevated at 80 mm in the first hour. Total leukocyte count, platelet count, serum electrolytes, renal function tests, and liver function tests were within normal reference ranges.\n\nPlain chest and abdominal radiographs were normal without free intraperitoneal air or air-fluid levels. A barium meal follow-through (BMFT) examination demonstrated adherent small bowel loops with delayed transit time, but normal mucosal patterns and an unremarkable ileocecal junction. Multi-detector computed tomography (MDCT) of the abdomen revealed a 3-mm-thick membrane encasing the small bowel loops into a saclike structure, accompanied by omental thickening, retroperitoneal lymphadenopathy, and free fluid in the pelvis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic Sclerosing Encapsulating Peritonitis",
+      "rule_out_reason": "While MDCT revealed small bowel loops encased in a fibrous membrane typical of abdominal cocoon, primary idiopathic disease classically affects adolescent females without systemic inflammatory features; the presence of marked ESR elevation (80 mm/hr), retroperitoneal adenopathy, and omental thickening pointed toward a secondary infectious etiology.",
+      "quote": "Sclerosing encapsulating peritonitis (SEP) also known as abdominal cocoon primarily affects adolescent females."
+    },
+    {
+      "candidate": "Peritoneal Carcinomatosis / Gastrointestinal Malignancy",
+      "rule_out_reason": "Subacute bowel obstruction associated with omental thickening, free pelvic fluid, and retroperitoneal lymphadenopathy raised suspicion for peritoneal malignancy; however, cytology demonstrated caseating granulomas rather than malignant cells.",
+      "quote": "The SEP can be classified as idiopathic or secondary to long-term peritoneal dialysis, beta-blocker practolol intake, orthotopic liver transplantation, abdominal surgery, sarcoidosis, systemic lupus erythematosus, gastrointestinal malignancy, and abdominal tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided fine-needle aspiration cytology of the thickened omentum revealed caseating granulomas and Langhans giant cells, with subsequent postoperative histopathology establishing the definitive diagnosis of tuberculous abdominal cocoon.",
+      "quote": "Ultrasound-guided fine needle aspiration cytology (FNAC) of the omentum revealed caseating granuloma and giant cells. After surgery a post-operative histology confirmed diagnosis of tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case following Stanford MedCaseReasoning methodology. Presentation strictly restricted to admission breakpoint without pathogen spoilers."
+}

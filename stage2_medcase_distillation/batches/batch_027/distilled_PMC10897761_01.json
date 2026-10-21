@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10897761_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 46-year-old severely malnourished woman (BMI 16) presents with two months of intermittent fevers, significant 10-12 kg weight loss, right upper quadrant pain, and generalized peripheral lymphadenopathy, found to have a liquefied hepatic abscess alongside extensive multi-station centrally necrotic abdominal and inguinal lymphadenopathy. Differentiating isolated pyogenic or amebic liver abscess from disseminated tuberculosis or necrotic lymphoma is the pivotal clinical tension.\n2. Admission Breakpoint: Initial clinical, biochemical, and cross-sectional radiological triage, including contrast-enhanced CT of the abdomen/pelvis delineating a liquefied hepatic abscess and necrotic lymphadenopathy, immediately prior to ultrasound-guided fine-needle aspiration of hepatic pus, inguinal lymph node excision, sputum studies, and CBNAAT/serological testing.\n3. Differential Distinctions: Amebic liver abscess is common in endemic regions but excluded by negative Entamoeba histolytica IgG ELISA serology and lack of extensive multi-station necrotic adenopathy; pyogenic liver abscess is excluded by sterile pus cultures and prominent caseating lymphadenopathy; disseminated lymphoma or metastatic carcinoma is ruled out by the absence of malignant cytology and confirmation of Mycobacterium tuberculosis by cartridge-based nucleic acid amplification (CBNAAT) and histopathology showing caseating epithelioid granulomas with Langhans giant cells.",
+  "case_prompt": "A 46-year-old woman presented to the medical center with complaints of intermittent fever for two months and mild abdominal pain located in the epigastrium and right upper quadrant for one month. She also reported progressive loss of appetite and noted an involuntary weight loss of 10 to 12 kg over the preceding two months. She had no known chronic comorbidities.\n\nA general examination revealed a poor build and marked malnutrition, with a body mass index (BMI) of 16 kg/m2. She was afebrile at presentation, with a pulse rate of 98 beats per minute, blood pressure of 106/60 mmHg, respiratory rate of 24 breaths per minute, and oxygen saturation of 95% on room air. Conjunctival pallor was present. Peripheral lymph node examination revealed palpable, enlarged cervical lymph nodes (right 2 x 1 cm, left 1 x 1 cm) and inguinal lymph nodes (right 4 x 3 cm, left 2 x 1 cm). Abdominal examination demonstrated moderate tenderness localized over the right upper quadrant associated with palpable hepatomegaly.\n\nInitial blood tests revealed mild normocytic anemia, leukocytosis, an elevated erythrocyte sedimentation rate (ESR), and an elevated serum alkaline phosphatase level; renal parameters and liver transaminases were otherwise unremarkable. A plain chest radiograph was normal.\n\nContrast-enhanced computed tomography of the abdomen and pelvis (CECT-AP) demonstrated a well-defined, peripherally enhancing hypodense lesion measuring 34 x 36 x 32 mm within segments VII and VI of the right hepatic lobe, coalescing with an adjacent subcentimetric lesion, suggestive of a liquefied hepatic abscess. Additionally, the scan revealed multiple enlarged, centrally necrotic discrete and coalescing lymph nodes at the splenic hilum, porta hepatis, upper abdomen, and retroperitoneum, as well as along the bilateral iliac vessels, bilateral obturator regions, and bilateral inguinal regions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Amebic Liver Abscess",
+      "rule_out_reason": "A liquefactive liver abscess in an endemic setting with weight loss and abdominal pain commonly suggests amebiasis; however, Entamoeba histolytica IgG serology was negative and widespread necrotic multi-station lymphadenopathy is inconsistent with uncomplicated amebic abscess.",
+      "quote": "We sent an Entamoeba histolytica immunoglobulin G (IgG) enzyme-linked immunosorbent assay (ELISA) and a hepatic abscess pus aspiration for C/S to rule out other common causes of liver abscesses, such as an amoebic liver abscess or a pyogenic liver abscess. Both tests came back negative (Table 3)."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Liver Abscess",
+      "rule_out_reason": "Liquefied hepatic collections with leukocytosis typically represent pyogenic bacterial abscesses, but bacterial cultures from aspirated hepatic pus showed no growth, and extensive centrally necrotic retroperitoneal and pelvic lymphadenopathy favored a chronic granulomatous etiology.",
+      "quote": "Both tests came back negative (Table 3)... the C/S tests for both specimens did not detect any microorganisms."
+    },
+    {
+      "candidate": "Disseminated Lymphoma / Hepatic Malignancy with Necrotic Metastases",
+      "rule_out_reason": "Marked cachexia, high-volume weight loss, multi-station centrally necrotic lymphadenopathy, and a focal hepatic mass strongly mimic lymphoma or necrotic carcinoma, but CBNAAT and lymph node biopsy demonstrated caseous necrosis and acid-fast bacilli nucleic acid rather than malignant neoplasia.",
+      "quote": "We sent an inguinal lymph node biopsy specimen for histopathological examination, which revealed multiple epithelioid cell granulomata with surrounding caseating necrosis"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CECT identification of a liquefied right lobe hepatic abscess alongside extensive centrally necrotic intra-abdominal and inguinal lymphadenopathy, confirmed by positive cartridge-based nucleic acid amplification testing (CBNAAT) for Mycobacterium tuberculosis from hepatic pus and inguinal lymph node biopsy showing caseating epithelioid granulomas with Langhans giant cells, established the diagnosis of hepatic tuberculosis.",
+      "quote": "The CBNAAT of both specimens showed the presence of Mycobacterium tuberculosis (MTB), which was sensitive to rifampicin... which revealed multiple epithelioid cell granulomata with surrounding caseating necrosis under 20x magnification haematoxylin and eosin (H&E) stain (Figure 7), the central area of caseous necrosis with surrounding lymphohistiocytes and Langhans-type giant cells"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to Stanford MedCaseReasoning methodology. The case prompt stops cleanly at the CECT-AP staging and initial bloods before invasive FNAC pus aspiration, lymph node biopsy, and CBNAAT. Zero spoilers or pathogen names."
+}

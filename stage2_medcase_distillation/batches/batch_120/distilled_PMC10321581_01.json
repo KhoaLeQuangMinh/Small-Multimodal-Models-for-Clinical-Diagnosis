@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10321581_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 42-year-old Indian male presents in acute coma (GCS 9) following a motor vehicle collision, with initial non-contrast head CT demonstrating multiple well-defined cystic lesions throughout the brain parenchyma. The core challenge is differentiating multiple infectious cystic brain lesions (neurocysticercosis vs tuberculomas vs pyogenic abscesses) from metastatic brain disease or trauma-related findings, and evaluating for hidden extracranial/ocular involvement prior to antiparasitic therapy.\n2. Admission Breakpoint: Admission triage ends after initial trauma resuscitation, endotracheal intubation, GCS evaluation (E2V3M4), and noncontrast head CT showing multiple cortical/juxtacortical cysts. Confirmatory testing begins with contrast-enhanced brain MRI demonstrating cysts with enhancing protoscolices, dilated fundoscopic examination, ocular B-scan ultrasonography, and SD-OCT.\n3. Differential Distinctions: Cerebral metastases and bacterial abscesses are ruled out by MRI demonstrating pathognomonic cystic ring lesions with eccentric hyperreflective protoscolices (mural nodules) without surrounding vasogenic edema or malignant features. Multiple intracerebral tuberculomas typically present as solid or ring-enhancing caseating granulomas rather than thin-walled fluid cysts with an internal scolex. Neurocysticercosis is confirmed by meeting absolute neuroimaging criteria with concomitant ocular subretinal cysticerci.",
+  "case_prompt": "A 42-year-old Indian male presents to the emergency department following an alleged road traffic accident.\n\nOn primary survey and initial neurological examination, the patient is unresponsive, with a Glasgow Coma Scale (GCS) score of 9 (eye opening 2, verbal response 3, motor response 4). His airway is promptly secured with endotracheal intubation. The anterior segments of both eyes are unremarkable, and pupils are equal and normally reactive to light. There are no external signs of focal penetrating cranial trauma.\n\nAn emergency noncontrast computed tomography (NCCT) scan of the head is obtained, which reveals multiple well-defined cystic lesions situated throughout the cortical and juxtacortical regions of the brain.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral metastases / Multiple necrotic brain metastases",
+      "rule_out_reason": "Considered due to the presence of multiple spherical cortical and subcortical lesions in a middle-aged adult with sudden neurological collapse, but contrast-enhanced MRI demonstrated thin-walled cysts with eccentric enhancing protoscolices and no surrounding tumor edema or primary neoplasm.",
+      "quote": "Contrast-enhanced magnetic resonance imaging (MRI) of the brain showed multiple ring lesions with enhancing protoscolex which was suggestive of neurocysticercosis (NCC) [Figure 1]."
+    },
+    {
+      "candidate": "Multiple intracranial tuberculomas / Tuberculous abscesses",
+      "rule_out_reason": "A frequent differential diagnosis in endemic India for multiple ring-enhancing brain lesions, but tuberculomas are solid or rim-enhancing granulomas without an internal fluid cyst and scolex, and the lesions in this patient were in the classic non-inflamed vesicular stage.",
+      "quote": "The parasite appeared to be in the vesicular stage in both locations, and there was no surrounding inflammation."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Neurocysticercosis with concomitant subretinal ocular cysticerci",
+      "rule_out_reason": "Confirmed by pathognomonic contrast-enhanced brain MRI demonstrating multiple cysts with enhancing protoscolices meeting absolute criteria for neurocysticercosis, complemented by ophthalmologic fundoscopy, SD-OCT, and B-scan ultrasonography demonstrating concomitant subretinal cysts with hyperechoic scolices.",
+      "quote": "The classical imaging findings of multiple cysts with scolex on the MRI head are an absolute criterion for diagnosis of definitive NCC. The ocular ultrasound, OCT, and epidemiology further supported the diagnosis of NCC with multiple subretinal cysticerci; however, the patient had no ocular complaint."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission narrative stopping at trauma resuscitation and noncontrast CT head. No mention of cysticercosis, Taenia, scolex, albendazole, or retina findings in prompt. Direct verbatim quotes match article text."
+}

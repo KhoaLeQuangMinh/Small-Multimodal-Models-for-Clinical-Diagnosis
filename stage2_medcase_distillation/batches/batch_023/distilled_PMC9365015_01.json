@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9365015_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 53-year-old male from Guangxi, China, presents with profound immunosuppression (CD4 count 12 cells/µL, HIV RNA 559,000 copies/mL), esophageal candidiasis, severe anemia (hemoglobin 69 g/L), and renal impairment. In southern China, patients presenting with this level of immunosuppression frequently harbor life-threatening opportunistic infections, primarily pulmonary tuberculosis versus disseminated Talaromyces marneffei. The clinical challenge lies in identifying endemic dimorphic fungal infection when pulmonary lesions are atypical, tuberculosis is suspected, and drug-drug interactions complicate concurrent antifungal and antiretroviral therapy.\n2. Admission Breakpoint: Admission triage concludes after baseline clinical history, vital signs, CD4 count, viral load, complete blood count showing severe anemia, renal clearance assessment, and admission chest imaging showing atypical infiltrates, immediately prior to send-out sputum mycobacterial assays, microbiological confirmation of talaromycosis, and initiation of targeted antimicrobial therapy.\n3. Differential Distinctions: Pulmonary tuberculosis (ruled out by negative sputum acid-fast smear, culture, and sputum TB-DNA PCR, along with rapid radiological improvement following antifungal therapy), Pneumocystis jirovecii pneumonia or opportunistic bacterial pneumonia (ruled out as the sole explanation as pulmonary and systemic features were driven by Marneffei talaromycosis), and isolated esophageal candidiasis (ruled out as systemic symptoms, anemia, and lung lesions reflected disseminated talaromycosis).",
+  "case_prompt": "A 53-year-old male residing in Nanning, Guangxi, China, presented for admission with advanced symptomatic immunodeficiency and esophageal symptoms. He reported a history of high-risk sexual exposures over a decade prior, had never received antiretroviral therapy, and denied any history of illicit substance use. One month before presentation, he had been evaluated at another medical center with suspected pulmonary disease, but had not received specific treatment.\n\nOn admission, physical examination and triage evaluation demonstrated clinical evidence of esophageal fungal infection (fungal esophagitis) and profound cachexia.\n\nLaboratory investigations revealed profound immunosuppression with a CD4+ T-lymphocyte count of 12 cells/µL and a baseline plasma viral load of 559,000 copies/mL. Complete blood count showed severe anemia with a hemoglobin of 69 g/L. Renal function assessment demonstrated an endogenous creatinine clearance rate of 41.93 mL/min. Chest imaging revealed atypical pulmonary infiltrates.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary tuberculosis",
+      "rule_out_reason": "Tuberculosis was strongly suspected due to endemicity and atypical lung infiltrates in severe immunodeficiency, but sputum AFB smear, mycobacterial culture, and sputum TB-DNA PCR were all negative, and the lesions regressed with antifungal and antibacterial treatment.",
+      "quote": "During the hospitalization in our hospital, the chest imaging of the patient indicated that TB could not be excluded (atypical TB foci), but the sputum smear and culture were negative, and the sputum TB-DNA was also negative."
+    },
+    {
+      "candidate": "Isolated bacterial pneumonia and esophageal candidiasis",
+      "rule_out_reason": "Although bacterial pneumonia and mucosal candidiasis were present, the patient's profound immunodeficiency, geographic origin in Guangxi, severe marrow suppression, and systemic course were characteristic of disseminated endemic dimorphic fungal infection.",
+      "quote": "Besides, after anti-fungal and bacterial treatment, the patient's condition improved and the lung foci shrank, so it was still difficult to identify TB."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation of Marneffei talaromycosis in an ART-naive patient with advanced AIDS from endemic Guangxi presenting with profound CD4 lymphopenia, severe anemia, and pulmonary infiltrates.",
+      "quote": "a 53-year-old man was admitted to the hospital for treatment at the Fourth People's Hospital of Nanning (Nanning, Guangxi, China) for Acquired Immunodeficiency Syndrome (AIDS), Marneffei talaromycosis and fungal esophagitis."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complex case of advanced AIDS with Marneffei talaromycosis presenting in Guangxi. Admission prompt avoids spoilers including fungal and mycobacterial identifications, stopping at baseline triage."
+}

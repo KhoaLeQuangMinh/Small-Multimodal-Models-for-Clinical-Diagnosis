@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12728417_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: An 8-month-old male infant presents with unremitting fever, cough, pulmonary consolidation, marked lymphadenopathy, and significant humoral hypogammaglobulinemia (profoundly low IgG and IgA with normal IgM) in the context of persistent axillary lymphadenitis and prior ulceration at the neonatal BCG vaccination site. The diagnostic challenge involves differentiating pyogenic bacterial pneumonia, disseminated mycobacterial infection (BCG disease), or opportunistic dimorphic endemic mycosis in an HIV-negative infant unmasking a primary inborn error of immunity.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following emergency physical examination, baseline laboratory investigations (showing leukocytosis, elevated CRP, marked hypogammaglobulinemia, negative HIV antibody, normal beta-D-glucan), and admission chest CT demonstrating patchy opacities and left upper lobe consolidation, but prior to metagenomic next-generation sequencing (mNGS), blood fungal culture incubation, and whole-exome sequencing.\n3. Differential Distinctions: Acute bacterial lobar pneumonia is common but failed to respond to intravenous broad-spectrum carbapenem therapy. Disseminated BCG-itis was strongly suspected given the prior severe BCG injection ulcer and chronic axillary adenitis, but mycobacterial workup was unrevealing, and systemic cultures grew a thermal dimorphic fungus.",
+  "case_prompt": "An 8-month-old male infant presented with a 6-day history of persistent fever and cough that failed to respond to oral ibuprofen. The parents reported no convulsions, vomiting, diarrhea, skin rash, or joint swelling.\n\nHis medical history was notable for the development of a skin ulcer with purulent discharge at his BCG vaccination site at one month of age, accompanied by persistent left axillary lymphadenopathy documented since that time.\n\nOn physical examination, the infant was febrile. Examination of the oropharynx revealed grade I tonsillar hypertrophy. Palpable lymphadenopathy was present in the left postauricular and left axillary regions. Chest auscultation revealed increased breath sounds with bilateral rhonchi. Abdominal examination was unremarkable, and there were no active skin lesions.\n\nLaboratory testing revealed a white blood cell count of 21.5 x 109/L (reference: 5.00-12.00 x 109/L), an absolute lymphocyte count of 10.11 x 109/L (reference: 1.55-4.80 x 109/L), and a C-reactive protein level of 62.38 mg/L (reference: 0.00-5.00 mg/L). Serum immunoglobulin profiling demonstrated marked dysgammaglobulinemia with an IgG level of 0.49 g/L (reference: 2.32-14.11 g/L), IgA level of 0.07 g/L (reference: 0.00-0.83 g/L), IgM level of 0.94 g/L (reference: 0.00-1.45 g/L), serum free kappa light chain of 0.42 g/L (reference: 1.38-3.75 g/L), and serum free lambda light chain of 0.35 g/L (reference: 0.93-2.42 g/L). The (1,3)-beta-D-glucan assay was 28.90 pg/mL (reference: 0-100.5 pg/mL), and HIV antibody testing was negative.\n\nChest computed tomography demonstrated scattered patchy opacities in both lungs and consolidation in the left upper lobe, accompanied by a small right-sided pleural effusion, without mediastinal or hilar lymphadenopathy. Bone scintigraphy revealed no evidence of skeletal destruction.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute bacterial lobar pneumonia",
+      "rule_out_reason": "Considered as the initial presumed diagnosis based on fever, leukocytosis, and dense left upper lobe consolidation, but excluded by failure to respond to a full 7-day empirical course of intravenous carbapenem therapy (imipenem/cilastatin).",
+      "quote": "Upon hospitalization for pulmonary infection and fever, the infant received a seven-day empirical course of imipenem/cilastatin (120mg, q6h), which yielded a suboptimal clinical response."
+    },
+    {
+      "candidate": "Disseminated BCG disease (BCG-itis) / Tuberculosis",
+      "rule_out_reason": "Considered as a primary possibility due to the patient's history of a purulent ulcerating reaction at the neonatal BCG vaccination site and persistent regional axillary adenopathy; however, advanced diagnostic testing identified an opportunistic fungal pathogen rather than Mycobacterium bovis BCG.",
+      "quote": "Notably, the patient had developed a skin ulcer with purulent discharge at the BCG vaccination site at one month of age, with persistent axillary lymphadenopathy documented since that time."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing (mNGS) detected Talaromyces marneffei, followed by blood cultures yielding Talaromyces marneffei after 4 days of incubation, with genetic sequencing confirming underlying X-linked hyper IgM syndrome due to a CD40LG mutation.",
+      "quote": "The etiological diagnosis was initially established by metagenomic next-generation sequencing (mNGS), which detected Talaromyces marneffei. This finding was subsequently confirmed by a blood culture that yielded TM after 4 days of incubation (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning protocol. Prompt stops at initial chest CT and baseline laboratory workup. Excluded mNGS, blood fungal culture, antibiotic trial response, and CD40LG gene sequencing."
+}

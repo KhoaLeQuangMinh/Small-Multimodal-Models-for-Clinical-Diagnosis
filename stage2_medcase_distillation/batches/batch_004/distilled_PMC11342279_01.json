@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11342279_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: Chronic burning epigastric pain, intermittent fever, and substantial weight loss in a young adult with persistent Helicobacter pylori antigen positivity create strong anchoring bias toward refractory peptic ulcer disease; however, incidental hepatic parenchymal lesions accompanied by direct hyperbilirubinemia, elevated transaminases, and prolonged prothrombin time point to covert parasitic hepatobiliary disease despite normal inflammatory markers.\n2. Admission Breakpoint: The admission triage evaluation ends after baseline laboratory evaluation and initial abdominal ultrasound showing incidental liver lesions, immediately prior to send-out helminth serologies (Fasciola and Toxocara).\n3. Differential Distinctions: Uncomplicated peptic ulcer disease and gastritis do not cause focal hepatic lesions, direct hyperbilirubinemia, or coagulopathy; pyogenic liver abscess typically presents with marked leukocytosis and elevated ESR/hsCRP; hepatic trematodiasis causes subacute tortuous parenchymal and biliary lesions confirmed by parasite-specific serology.",
+  "case_prompt": "A man in his late twenties presented to the outpatient clinic with a one-year history of intermittent burning pain in the upper abdomen involving both the right and left quadrants. He also reported nausea, anorexia, fatigue, intermittent fever, and an unintentional weight loss of 7 kg. He had previously undergone multiple courses of antimicrobial therapy for Helicobacter pylori gastritis; two prior upper gastrointestinal endoscopies demonstrated an initial duodenal ulcer followed by a healed ulcer after triple therapy.\nPhysical examination revealed normal vital signs and no identifiable abdominal masses or tenderness.\nInitial triage laboratory investigations revealed normal complete blood count, serum creatinine, erythrocyte sedimentation rate (ESR), and high-sensitivity C-reactive protein (hsCRP). Urinalysis and microscopic stool examination revealed no abnormalities, and stool occult blood testing was negative. Serologic tests for HIV antibody, hepatitis B surface antigen, and hepatitis C antibody were negative. Stool antigen testing for Helicobacter pylori was positive. Liver function tests showed mildly elevated transaminases, elevated direct bilirubin, and a prolonged prothrombin time.\nAbdominal ultrasound revealed incidental hypoechoic hepatic lesions, prompting initial consideration of gastritis versus hepatic abscess and a recommendation for advanced hepatobiliary imaging.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory Peptic Ulcer Disease / Helicobacter pylori Gastritis",
+      "rule_out_reason": "A long history of burning upper abdominal pain and positive H. pylori stool antigen initially pointed toward acid-peptic disease; however, prior endoscopy documented a healed duodenal ulcer, and gastritis cannot account for hepatic focal lesions, direct hyperbilirubinemia, or prolonged prothrombin time.",
+      "quote": "He had received multiple treatments for H. pylori gastritis in a clinic in his home town and underwent two upper GI endoscopies and the first one had a duodenal ulcer while the second one after the treatment of H.pylori with triple therapy (Omeprazole, Amoxicillin and Clarithromycin) was a healed doudenal ulcer."
+    },
+    {
+      "candidate": "Pyogenic Liver Abscess",
+      "rule_out_reason": "Intermittent fevers and newly discovered liver lesions on ultrasound raised suspicion for an infectious hepatic abscess; however, the complete blood count, ESR, and hsCRP were completely normal, failing to show the systemic suppurative inflammation characteristic of a bacterial abscess.",
+      "quote": "Initial diagnosis included gastritis and consideration of a liver abscess, prompting blood work up, stool examination, and an abdominal ultrasound"
+    },
+    {
+      "candidate": "Visceral Larva Migrans (Toxocariasis)",
+      "rule_out_reason": "Parasitic hepatobiliary migration was considered in the differential diagnosis of incidental eosinophilic or granulomatous hepatic lesions; however, specific serological evaluation for Toxocara was unrevealing.",
+      "quote": "Incidental liver lesions on the abdominal ultrasound and CT scan prompted further investigation, including abdominal MRI with contrast and MRCP (Fig. 3) as well as serological tests for Fasciola hepatica and Toxocara."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Targeted parasitic serology returned positive for Fasciola hepatica, confirming foodborne liver fluke infestation in the setting of hepatic lesions, direct hyperbilirubinemia, and coagulopathy.",
+      "quote": "The serological tests confirmed the diagnosis of the Fasciola hepatica and oral triclabendazole as well as quadruple therapy (Pantoprazole, Metronidazole, Amoxicillin and Clarithromycin) for the H.pylori was prescribed."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt terminates at initial abdominal ultrasound and baseline triage labs. Confirmatory helminth serologies excluded from prompt. Full fidelity to article details with verbatim quotes."
+}

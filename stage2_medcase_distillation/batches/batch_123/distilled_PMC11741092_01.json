@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11741092_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 29-year-old Nepalese male presents with a one-year history of painless, progressive abdominal distension mimicking decompensated ascites, in the complete absence of systemic B-symptoms, eosinophilia, canine contact, or primary hepatic or pulmonary cystic lesions. The presence of multiple disseminated intraperitoneal multiseptated cystic masses without visceral organ involvement mimics pseudomyxoma peritonei, cystic mesenteric teratoma, or tuberculous peritonitis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following physical examination, baseline laboratory tests (CBC, eosinophil count, LFTs, renal panel, CRP), normal chest radiography, and initial abdominal ultrasonography revealing multi-septated cystic masses, but strictly prior to serological ELISA testing and abdominal CT revealing classic floating hydatid membranes.\n3. Differential Distinctions: Uncomplicated peritoneal ascites (cirrhotic, cardiac, or nephrotic) is ruled out by abdominal ultrasonography identifying well-defined encapsulated multilocular masses rather than free fluid. Malignant peritoneal dissemination (pseudomyxoma peritonei, cystic mesothelioma) and tuberculous peritonitis typically present with cachexia, constitutional signs, and omental caking. The diagnostic pivot is established by abdominal CT demonstrating variable-sized cysts with internal undulating floating membranes ('water-lily sign') and positive serologic ELISA for Echinococcus granulosus.",
+  "case_prompt": "A 29-year-old Nepalese male with no prior medical conditions presents with a 1-year history of progressive abdominal enlargement accompanied by dull, aching, non-radiating abdominal discomfort. He denies fever, cough, jaundice, nausea, vomiting, alteration in bowel or bladder habits, trauma, or significant weight loss. He reports no known contact with dogs and has no prior history of surgical procedures.\n\nOn physical examination, the patient is afebrile and hemodynamically stable. The physical examination is unremarkable except for visible abdominal distension and diffuse dullness on percussion, initially raising clinical suspicion for large-volume ascites. There is no peripheral edema, scleral icterus, or stigmata of chronic liver disease.\n\nInitial laboratory evaluation reveals a hemoglobin of 13.6 g/dL, a total white blood cell count of 11,500/µL with 4% eosinophils (no peripheral eosinophilia), and a normal C-reactive protein (CRP). Liver function tests and renal function panels are within normal reference ranges. A plain chest radiograph is normal. Bedside abdominal ultrasonography reveals multiple, well-defined hypoechoic masses with prominent echogenic internal septations extending widely throughout the abdominal cavity, with no evidence of cystic lesions within the hepatic parenchyma.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ascites Secondary to Portal Hypertension or Tuberculous Peritonitis",
+      "rule_out_reason": "Progressive abdominal distension and percussion dullness initially suggested free peritoneal fluid; however, ultrasonography revealed encapsulated multilocular hypoechoic masses with internal septations rather than free ascites, and liver function was normal.",
+      "quote": "The examination was normal except for a distended abdomen and dullness on percussion leading to a clinical diagnosis of ascites... Ultrasonography (USG) of the abdomen revealed multiple, well-defined hypoechoic masses with echogenic septations in the abdomen."
+    },
+    {
+      "candidate": "Pseudomyxoma Peritonei / Peritoneal Carcinomatosis / Mesenteric Cysts",
+      "rule_out_reason": "Extensive intraperitoneal multiseptated cystic masses raised concern for malignant peritoneal implants or benign mesenteric cysts; however, the indolent progression, lack of wasting, normal CRP, and absence of solid invasive tumor features favored a benign or parasitic etiology.",
+      "quote": "He had no history of fever, cough, jaundice, trauma, nausea, vomiting, altered bowel or bladder habits, or significant weight loss... C-reactive protein (CRP) within normal limits."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Primary Intraperitoneal Echinococcosis (Hydatid Disease)",
+      "rule_out_reason": "The diagnosis was confirmed by positive Echinococcus granulosus serology by ELISA, abdominal CT detailing characteristic floating membranes within multi-sized peritoneal cysts, and surgical excision of multiple intact hydatid cysts adhering to the peritoneum without visceral parenchymal origin.",
+      "quote": "ELISA for Echinococcus granulosus was positive... A computed tomography (CT) scan of the abdomen and pelvis revealed well-defined hydatid cysts of variable sizes extending throughout the abdomen, with floating membrane in some cysts (Fig. 1)... Intraoperatively, multiple hydatid cysts of various sizes ranging from 2 to 15 cm involving the whole of the peritoneal cavity, and adherent to the peritoneum were present."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Teaching case distilled strictly according to the Stanford MedCaseReasoning methodology. Admission prompt ends after initial ultrasonography, withholding CT descriptions of floating membranes and parasite-specific ELISA serology."
+}

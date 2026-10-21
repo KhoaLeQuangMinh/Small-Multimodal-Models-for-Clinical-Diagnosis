@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7103054_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A previously healthy 28-year-old man presenting solely with exertional dyspnea is discovered to have a massive cystic mass (20 x 18 x 14 cm) occupying nearly the entire right hemithorax with unremarkable triage laboratory testing and no systemic inflammatory signs. The clinical tension centers on differentiating an indolent parasitic hydatid cyst from congenital cysts (such as a bronchogenic cyst), giant bullae, loculated pleural effusions, or thoracic cystic neoplasms, where misdiagnosis or percutaneous aspiration risks catastrophic anaphylaxis and secondary pleural seeding.\n2. Admission Breakpoint: Initial thoracic imaging and computed tomography confirming a solitary 20 x 18 x 14 cm fluid-filled cystic lesion in the right hemithorax causing external compression of the right lower lobe bronchus, immediately prior to surgical exploration via thoracotomy.\n3. Differential Distinctions: Congenital bronchogenic cyst (typically subcarinal or mediastinal, lined by respiratory epithelium and non-parasitic), giant emphysematous bulla (air-filled rather than fluid-dense, typically with smoking history), loculated pleural empyema (characterized by fevers, pleuritic chest pain, and leukocytosis), and cystic teratoma (contains mixed tissue densities, fat, or calcification).",
+  "case_prompt": "A 28-year-old man with no past medical or family history presented to the clinic with dyspnea during strenuous activities. He denied cough, hemoptysis, chest pain, fever, weight loss, or constitutional symptoms, and reported no history of drug, alcohol, or substance abuse.\n\nOn physical examination, the patient was in no acute distress. Vital signs were within normal limits. Chest examination revealed decreased breath sounds throughout the right hemithorax. Cardiovascular, abdominal, and musculoskeletal examinations were normal.\n\nRoutine laboratory evaluations, including complete blood count and basic biochemistry panels, were unremarkable. Plain chest radiography and computed tomography demonstrated a massive, solitary, well-defined cystic mass measuring 20 x 18 x 14 cm occupying the right hemithorax. The cyst exerted significant mass effect with external compression narrowing the orifice of the right lower lobe bronchus. CT imaging of other thoracic and abdominal organs revealed no additional cystic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital bronchogenic cyst",
+      "rule_out_reason": "Bronchogenic cysts are congenital foregut malformations that present as solitary fluid-filled cysts; however, an intact cyst attaining massive proportions (>15-20 cm) in an otherwise healthy young adult is rare, and thoracotomy in this patient revealed parasitic laminated membranes rather than respiratory epithelium.",
+      "quote": "The radiologic finding was in favor of a large cyst (20 x 18 x 14 cm) in the right hemithorax (Figures 1(a) and 1(b))."
+    },
+    {
+      "candidate": "Giant pulmonary bulla",
+      "rule_out_reason": "Giant bullae are thin-walled intra-parenchymal airspaces usually associated with smoking, chronic obstructive pulmonary disease, or barotrauma; this patient was a non-smoker whose lesion was completely fluid-filled rather than gas-containing.",
+      "quote": "He denied any drug or substance abuse. On physical examination, there was a decreased breathing sound in the right hemithorax and laboratory data were unremarkable."
+    },
+    {
+      "candidate": "Loculated pleural empyema",
+      "rule_out_reason": "Loculated parapneumonic effusions or pleural empyemas cause unilateral decreased breath sounds and space-occupying fluid collections, but typically present with febrile illness, toxic systemic features, leukocytosis, and pleural inflammation, none of which were present in this patient.",
+      "quote": "A 28-year-old man with no past medical and family history presented with dyspnea during strenuous activities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred during right posterolateral thoracotomy, which entered a large cystic cavity in the right lower lobe and evacuated 2500 cc of crystal-clear hydatid fluid along with the classic laminated membrane of Echinococcus, followed by oral albendazole therapy resulting in resolution of the residual cavity.",
+      "quote": "The patient underwent right posterolateral thoracotomy through the 6th intercostal space, in which the cyst contents including 2500 cc clear fluid and the laminated membrane of the hydatid cyst were removed."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation strictly limited to triage history, examination, and non-invasive cross-sectional imaging before operative intervention. All parasitic names, surgical findings, and antihelminthic therapy withheld from case prompt."
+}

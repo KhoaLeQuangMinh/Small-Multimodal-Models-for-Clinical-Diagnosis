@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7527865_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 53-year-old male from rural Bahia, Brazil, presents with severe progressive nasal obstruction, odynophagia, and dysphagia, with physical examination revealing hyperemic, friable mucosal lesions in the right nasal vault, infiltrative destruction of the hard/soft palate and uvula, and multiple facial ulcers with seropurulent exudate around the periorbital and malar areas. The primary diagnostic tension is distinguishing mucocutaneous leishmaniasis from destructive head and neck malignancies (such as squamous cell carcinoma or NK/T-cell lymphoma) and endemic deep fungal mycoses (such as paracoccidioidomycosis or histoplasmosis).\n2. Admission Breakpoint: The admission breakpoint occurs upon clinical presentation to the stomatology and infectious disease clinic with detailed mapping of the mucosal and cutaneous lesions, immediately prior to mucosal tissue biopsy, HIV serologic testing, and the Montenegro intradermal skin test.\n3. Differential Distinctions: Squamous cell carcinoma and midline granulomatous lymphomas are distinguished by biopsy revealing invasive dysplastic or malignant lymphoid architecture rather than non-specific chronic inflammatory granulomas; deep fungal mycoses (paracoccidioidomycosis) feature characteristic fungal forms on silver staining; leishmaniasis is definitively identified by the Montenegro skin test reaction and therapeutic response to antimonial/amphotericin B therapy.",
+  "case_prompt": "A 53-year-old male residing in Mundo Novo, State of Bahia, Brazil, presented to the stomatology clinic of a university referral hospital with progressive localized facial pain, nasal obstruction, odynophagia, and dysphagia.\n\nOn physical examination, anterior rhinoscopy demonstrated a painful, markedly hyperemic, friable mucosal lesion in the right nasal cavity. Oropharyngeal examination revealed an extensive, infiltrative, granular mucosal lesion involving the hard palate, soft palate, and uvula. Dermatologic examination revealed multiple ulcerated facial lesions, including an ulcerated lesion over the left eyebrow, a lesion involving the right eye accompanied by seropurulent secretion, a small ulcer on the right lower eyelid, an ulcerated nodule on the lobule of the right ear, and an infiltrative plaque in the malar region. The patient was admitted to the hospital for formal diagnostic evaluation and treatment.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Head and Neck Malignancy (Squamous Cell Carcinoma or Mucosal Lymphoma)",
+      "rule_out_reason": "Considered due to the invasive, destructive, and friable presentation of the palate, uvula, and nasal mucosa in an older male. Ruled out by histopathologic examination of the palate, which demonstrated an inflammatory reaction without neoplastic or atypical cells.",
+      "quote": "A biopsy of the palate lesions revealed a non-specific erosive chronic inflammatory process."
+    },
+    {
+      "candidate": "Endemic Deep Mycosis (Paracoccidioidomycosis) or HIV-Associated Opportunistic Infection",
+      "rule_out_reason": "Considered given the concurrent mucosal and cutaneous ulcerations with regional geographic distribution in Brazil. Ruled out by a negative HIV serological screen and a strongly positive leishmanin skin test.",
+      "quote": "The patient was HIV negative and positive for Montenegro reaction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when a palate biopsy confirmed a non-specific erosive chronic inflammatory process, and the patient tested positive for the Montenegro skin reaction, confirming mucocutaneous leishmaniasis.",
+      "quote": "A biopsy of the palate lesions revealed a non-specific erosive chronic inflammatory process. The patient was HIV negative and positive for Montenegro reaction. Treatment with amphotericin B was initiated at a dose of 150 mg/d up to a maximum dose of 2,410 mg."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7527865 (patient 2). Admission breakpoint maintained before palate biopsy, HIV serology, and Montenegro test. Zero pathogen names leaked in case prompt."
+}

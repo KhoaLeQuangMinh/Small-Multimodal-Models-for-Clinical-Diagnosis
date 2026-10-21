@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11282548_04",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A patient presenting with an isolated cystic pelvic mass without constitutional symptoms or extra-pelvic involvement, presenting a diagnostic perplexity mimicking pelvic tuberculosis or retroperitoneal/pelvic neoplasms (schwannoma, chordoma), but diagnosed as primary pelvic hydatid disease.\n2. Admission Breakpoint: Stops after clinical presentation of chronic pelvic pain and pelvic mass, unremarkable routine laboratory tests, and pelvic MRI demonstrating an isolated cystic pelvic lesion without solid enhancement or multi-organ involvement, before definitive diagnosis.\n3. Differential Distinctions: Pelvic tuberculosis presents with chronic pelvic pain, cold abscesses, and lymphadenopathy, accompanied by constitutional symptoms and elevated inflammatory markers. Pelvic neoplasms such as chordoma or schwannoma typically present as solid or heterogeneous masses with bone remodeling or enhancement on MRI. Primary pelvic hydatid disease presents as a solitary, well-defined cystic lesion in an otherwise afebrile patient with normal laboratories and no other visceral involvement.",
+  "case_prompt": "A patient presented for clinical evaluation of chronic pelvic discomfort and a localized pelvic mass. There was no history of fever, weight loss, night sweats, or other constitutional symptoms. Physical examination confirmed a palpable pelvic mass without acute peritoneal signs. Baseline laboratory investigations, including complete blood count and inflammatory markers, were normal. Pelvic magnetic resonance imaging (MRI) demonstrated a well-defined cystic lesion confined entirely to the pelvis, without solid soft-tissue components, and confirmed that no other organs were involved.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pelvic tuberculosis",
+      "rule_out_reason": "Considered because pelvic tuberculous involvement can produce chronic pelvic pain, cold abscess formation, and local mass effect. Ruled out by the absence of constitutional symptoms, normal laboratory investigations, and lack of characteristic tuberculous imaging findings.",
+      "quote": "However, the absence of constitutional symptoms, normal laboratory investigations, and lack of characteristic imaging findings made tuberculosis less likely in this case."
+    },
+    {
+      "candidate": "Pelvic neoplasms (Schwannoma / Chordoma)",
+      "rule_out_reason": "Considered as pelvic tumors presenting with indolent pelvic mass effect and chronic discomfort. Ruled out by MRI showing a purely cystic lesion rather than a solid neoplastic mass.",
+      "quote": "However, the presence of a cystic lesion on MRI reduces the probability of a neoplastic mass."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of an isolated cystic pelvic mass on MRI with absence of involvement in any other anatomical organ, establishing the diagnosis of primary pelvic hydatid disease.",
+      "quote": "No other organ was involved, as revealed by the MRI, and hence the diagnosis of Hydatid disease was made."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly derived from the concise case report text, with zero extrapolation. Zero disease or pathogen names in prompt. Direct verbatim quotes match article text perfectly."
+}

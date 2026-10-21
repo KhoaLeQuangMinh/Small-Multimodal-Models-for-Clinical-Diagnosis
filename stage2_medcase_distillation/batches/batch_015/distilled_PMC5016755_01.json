@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5016755_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 58-year-old immunocompetent woman presents with generalized pruritus and vague abdominal discomfort refractory to antihistamines and topical antifungals, accompanied by marked peripheral eosinophilia (18.6%). The core clinical tension is identifying a chronic indolent parasitic nematode capable of lifelong autoinfection in an immigrant who left an endemic region decades earlier, distinguishing it from scabies, cutaneous allergies, and occult hypereosinophilic syndromes.\n2. Admission Breakpoint: Admission triage encompasses history, vital signs, physical examination of the skin and lymph nodes, complete blood count with differential, inflammatory markers (ESR, CRP), renal and liver panels, and thyroid testing. It strictly concludes prior to send-out serological antibody testing and stool parasitological studies.\n3. Differential Distinctions: Scabies and atopic dermatitis feature primary cutaneous eruptions, burrows, or excoriations, which are notably absent here. Drug reactions and allergic diseases typically lack 7-year chronic persistent eosinophilia. Among helminths, only Strongyloides stercoralis maintains decades-long internal autoinfective cycles in immunocompetent hosts.",
+  "case_prompt": "A 58-year-old Hispanic woman presents with a 4- to 5-month history of generalized pruritus and intermittent vague abdominal discomfort. She immigrated to the United States from Puerto Rico 32 years ago, with her last visit to the island 5 years prior to presentation. She denies rashes, arthralgias, fever, chills, weight loss, or changes in bowel habits. There is no history of trauma, recent illnesses, or new medications. She has no known history of autoimmune disease or immunocompromising conditions. Her pruritus has persisted despite avoiding all commercial skin products and completing empiric trials of oral antihistamines and antifungal shampoos.\n\nOn physical examination, she is afebrile and hemodynamically stable. The skin examination reveals no active rashes, xerosis, excoriations, or burrows. There is no lymphadenopathy, and the remainder of the physical examination is unremarkable.\n\nLaboratory evaluation reveals a white blood cell count of 8,800/µL with 18.6% eosinophils. Hemoglobin is 13.2 g/dL, and platelet count is 419,000/µL. C-reactive protein is mildly elevated at 1.05 mg/dL (reference 0–0.7 mg/dL), and erythrocyte sedimentation rate is 10 mm/h. Serum electrolytes, renal function tests, liver function tests, and thyroid-stimulating hormone are within normal limits. Review of available medical records reveals documented peripheral eosinophilia dating back 7 years.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Scabies Infestation",
+      "rule_out_reason": "Considered because of severe, intractable pruritus, but excluded by the complete absence of classical cutaneous excoriations, papules, web-space lesions, or diagnostic mite burrows.",
+      "quote": "There was no excoriation or burrows suggestive of scabies."
+    },
+    {
+      "candidate": "Allergic Dermatitis / Drug-Induced Hypereosinophilia",
+      "rule_out_reason": "Considered given pruritus with marked eosinophilia, but ruled out by lack of medication exposures, failure of response to antihistamines and skin product avoidance, and historical documentation of eosinophilia persisting across 7 years.",
+      "quote": "Her generalized pruritus persisted despite avoiding any skin products and despite empiric treatment with antihistamines and antifungal shampoos."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High-titer Strongyloides IgG serology confirmed chronic strongyloidiasis driven by decades of subclinical autoinfection, followed by complete clinical resolution and normalization of the eosinophil count after two days of oral ivermectin.",
+      "quote": "Strongyloides IgG antibody was high at 2.43 IV (<=1.49 IV) suggesting Strongyloides infection."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation adheres to Stanford MedCaseReasoning guidelines. Breakpoint stops prior to send-out Strongyloides IgG serology and stool parasitological testing."
+}

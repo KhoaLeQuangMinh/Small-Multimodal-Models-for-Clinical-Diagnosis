@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10694191_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A full-term neonate develops acute apnea, hepatosplenomegaly, bicytopenia, and distributive shock at 3 hours of life mimicking early-onset neonatal bacterial sepsis or congenital viral (TORCH) infection, refractory to broad-spectrum antibiotics, with an initially obscured maternal perinatal history.\n2. Admission Breakpoint: Admission to NICU at 3 hours of life following onset of apnea, vitals, exam showing hepatosplenomegaly, arterial blood gas, baseline CBC (anemia, thrombocytopenia), and initial chest radiograph showing patchy bilateral infiltrates, stopping strictly before send-out TORCH/viral panels, maternal re-interview, and confirmatory NGS.\n3. Differential Distinctions: Early-onset bacterial sepsis typically responds to empiric broad-spectrum antibiotics and yields positive bacterial cultures. Congenital TORCH infections present with similar organomegaly and cytopenias but have characteristic viral serologies/PCR markers. Persistent septic shock with negative bacterial cultures and negative TORCH panel in an endemic setting with maternal eschar history distinguishes congenital rickettsial infection.",
+  "case_prompt": "A full-term male infant (G1P1) delivered at 39+1 weeks' gestation via cesarean section due to fetal distress in Guangdong Province presents to the neonatal intensive care unit at 3 hours of life with sudden-onset apnea. The infant's birth weight was 2.6 kg. Postnatal evaluation showed meconium-stained amniotic fluid, initial heart rate >100 beats/min, good muscle tone, and vigorous crying, with Apgar scores of 10 at 1, 5, and 10 minutes. Maternal prenatal history was reported as uneventful without documented fever, premature rupture of membranes, or gestational diabetes, and maternal screening for group B streptococcus was negative. Examination of the placenta and umbilical cord was unremarkable.\n\nAt 3 hours of life, the neonate experienced acute apnea requiring immediate intensive care. Physical examination revealed hepatosplenomegaly. Initial arterial blood gas demonstrated a pH of 7.23, PaO2 of 55 mmHg, PaCO2 of 60 mmHg, base excess of -6.6 mmol/L, and lactic acid of 7.0 mmol/L. Complete blood count showed anemia and thrombocytopenia. Plain chest radiography revealed patchy bilateral inflammatory pulmonary infiltrates. Empiric intravenous antimicrobial therapy was initiated for presumed neonatal sepsis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Early-Onset Bacterial Neonatal Sepsis",
+      "rule_out_reason": "Considered due to acute postpartum respiratory depression, apnea, and profound hemodynamic instability, but the patient progressively deteriorated despite broad-spectrum beta-lactam and glycopeptide coverage, and all blood cultures remained sterile.",
+      "quote": "The neonate had apnea at 3 h of life, requiring neonatal intensive care unit (NICU) care and IV antibiotics (piperacillin) for suspected sepsis... Antibiotic treatment was changed to meropenem... and vancomycin... the results of subsequent blood culture tests were negative."
+    },
+    {
+      "candidate": "Congenital Viral / TORCH Infections (HSV, CMV, Rubella, Toxoplasmosis)",
+      "rule_out_reason": "Considered due to the prominent combination of hepatosplenomegaly, thrombocytopenia, and diffuse interstitial pneumonitis in a neonate, but exhaustive targeted serological and molecular evaluations were entirely negative.",
+      "quote": "In addition to sepsis, other viral infections were considered, with samples being taken for herpes simplex virus, cytomegalovirus, rubella virus, Toxoplasma gondii, and COVID-19; all of the test results proved negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detailed maternal re-interview uncovered an incompletely treated gestational infection associated with an eschar at 31 weeks of gestation, prompting high-throughput sequencing of neonatal blood which revealed abundant Orientia tsutsugamushi 16S rRNA sequences, followed by rapid clinical recovery upon administration of azithromycin.",
+      "quote": "Further history-taking revealed that the child's mother had been diagnosed with scrub typhus and hospitalized at 31+ weeks of gestation. She had an eschar on the left neck, approximately 3 mm x 3 mm in size, surrounded by a red halo... High-throughput sequencing confirmed a significant presence of 16SrRNA sequences in the blood, confirming an Orientia tsutsugamushi infection."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation cleanly isolated at Day 1 triage before maternal re-history and NGS confirmatory testing. Zero pathogen names in prompt. Verbatim quotes and differential rule-outs verified against source text."
+}

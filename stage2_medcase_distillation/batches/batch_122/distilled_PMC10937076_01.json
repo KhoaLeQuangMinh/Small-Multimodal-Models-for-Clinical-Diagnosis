@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10937076_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 33-year-old woman presents with classic thyrotoxicosis, bilateral exophthalmos, marked TSH suppression, high thyroid hormone levels, elevated anti-TSH receptor antibodies (TRAb), and a diffuse hypervascular goiter. The clinical paradox is that beneath unequivocal autoimmune Graves' disease lies co-existing or masked thyroid tuberculosis that fails medical management and is discovered only upon histological examination after thyroidectomy.\n2. Admission Breakpoint: The breakpoint is at the conclusion of initial outpatient endocrine evaluation following neck physical exam, thyroid hormone panel, TRAb titers, ECG, baseline CBC/LFTs, and Doppler thyroid ultrasound, before longitudinal medical therapy, relapses, and surgical excision.\n3. Differential Distinctions: Uncomplicated Graves' disease is the primary working diagnosis explaining TRAb positivity and ophthalmopathy, but unexpected refractoriness and repeated relapses prompted surgical resection. Subacute thyroiditis or suppurative thyroiditis can cause thyrotoxicosis and neck swelling, but lack TRAb-mediated exophthalmos. Histopathology definitively separates non-infectious autoimmune thyroid hyperplasia from caseating/epithelioid granulomatous destruction.",
+  "case_prompt": "A 33-year-old woman with no prior significant past medical history presented to an endocrinology clinic with palpitations, generalized asthenia, and an unintentional weight loss of 6 kg over the preceding month. She additionally noted bilateral exophthalmos that had been progressive over the previous 6 months. Physical examination revealed resting tachycardia with a heart rate of 120 beats/min and bilateral proptosis. Neck examination disclosed a diffusely and symmetrically enlarged goiter with an elastic consistency and pronounced vascularity without distinct localized masses or lymphadenopathy.\n\nLaboratory workup demonstrated an ultrasensitive thyroid-stimulating hormone (TSH) level of <0.05 mU/L, a markedly elevated free thyroxine (free T4) of 43.24 pmol/L (reference range: 10–28.2 pmol/L), and an elevated free triiodothyronine (free T3) of 13.33 pmol/L (reference range: 4–8.3 pmol/L). Anti-TSH receptor antibody (TRAb) titer was significantly elevated at 24 IU/L (reference range: <1.5 IU/L). Complete blood count, serum liver transaminases, and electrocardiogram were within normal limits. Cervical Doppler ultrasound revealed diffuse, homogeneous thyroid enlargement with marked parenchyma-wide hyperemia ('thyroid inferno').",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Uncomplicated Graves' Disease",
+      "rule_out_reason": "Initially diagnosed and treated as typical autoimmune Graves' disease based on elevated TRAb titers, hypervascular goiter, and exophthalmos; however, the disease exhibited marginal response to carbimazole with repeated relapses over 18 months, prompting total thyroidectomy.",
+      "quote": "Based on these findings, the diagnosis of Graves' disease was made... However, after 18 months of marginally effective antithyroid treatment, the medication was discontinued, and the patient was closely monitored. She experienced two relapses"
+    },
+    {
+      "candidate": "Primary Thyroid Malignancy / Neoplasm",
+      "rule_out_reason": "Rapid enlargement, weight loss, and refractory goiter raised concern for concurrent neoplasm, but histopathology showed no malignant cells and instead showed multiple epithelioid granulomas.",
+      "quote": "Histopathological analysis of the excised thyroid tissue revealed complete erasure of the thyroid parenchyma, replaced by multiple epithelioid granulomas"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological analysis of the totally excised thyroid specimen demonstrated complete destruction and erasure of normal thyroid follicles by multiple confluent epithelioid granulomas, establishing the diagnosis of thyroid tuberculosis in a patient with Graves' disease.",
+      "quote": "Histopathological analysis of the excised thyroid tissue revealed complete erasure of the thyroid parenchyma, replaced by multiple epithelioid granulomas, as illustrated in Figures 1 and 2. In this case, the diagnosis of thyroid tuberculosis was confidently established based on the characteristic histopathological findings"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled in strict compliance with the Stanford MedCaseReasoning methodology. Zero spoilers in the admission presentation. Breakpoint stops prior to thyroidectomy histopathology."
+}

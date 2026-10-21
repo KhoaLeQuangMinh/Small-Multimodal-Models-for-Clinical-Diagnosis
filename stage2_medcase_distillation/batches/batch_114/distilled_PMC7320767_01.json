@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7320767_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 32-year-old multigravida delivers an uncomplicated, healthy term infant in an endemic field hospital setting in South Sudan, but abruptly develops high spiking fevers, rigors, diaphoresis, normocytic anemia, and severe thrombocytopenia 24 hours postpartum. The primary tension lies in distinguishing acute puerperal bacterial sepsis or endometritis from vector-borne parasitic hemoparasitemia, alongside managing the asymptomatic neonate who possesses isolated thrombocytopenia and may harbor congenital transmission.\n2. Admission Breakpoint: The breakpoint occurs right after postpartum triage evaluation and baseline lab testing (maternal CBC showing Hb 8.2 g/dL, platelets 56,000/µL, normal CRP 5.2 mg/L; infant CBC showing Hb 16.3 g/dL, platelets 72,000/µL, normal CRP < 5 mg/L), strictly before blood and urine cultures and peripheral thick and thin blood film microscopy results.\n3. Differential Distinctions: Puerperal bacterial sepsis (e.g., endometritis, chorioamnionitis, urosepsis) typically produces leukocytosis and marked CRP elevation with positive bacterial cultures; normal CRP and sterile cultures point away from bacterial sepsis. Congenital viral/bacterial infections (TORCH) or neonatal bacterial sepsis would typically present with neonatal lethargy, fever, and elevated neonatal inflammatory markers, whereas the newborn remained vigorous despite thrombocytopenia.",
+  "case_prompt": "A 32-year-old woman (gravida 3, para 2, abortus 1) at 39 weeks of gestation was admitted in active labor to the department of gynecology of a field hospital deployed in South Sudan. She had received no formal prenatal screening tests during this pregnancy. Transabdominal ultrasound revealed a fundal posterior placenta, normal amniotic fluid index, and normal fetal growth parameters. Following an uncomplicated labor, she successfully delivered a healthy male infant weighing 2,600 g via spontaneous vaginal delivery, with Apgar scores of 8, 9, and 10, without abnormal blood loss or detected congenital anomalies.\n\nTwenty-four hours postpartum, the mother developed an acute high fever associated with rigors, chills, and profuse diaphoresis. Maternal laboratory evaluation revealed anemia with a hemoglobin of 8.2 g/dL, hematocrit 25.8%, MCV 86.1 fL, MCH 28.5 pg, MCHC 31.5 g/dL, a total leukocyte count of 5.5 x 10^3/µL, and severe thrombocytopenia with a platelet count of 56,000/µL. C-reactive protein (CRP) was normal at 5.2 mg/L, and serum electrolytes were within normal limits.\n\nThe newborn was clinically vigorous and exclusively breastfed, with a normal physical examination. Neonatal laboratory analysis revealed a hemoglobin of 16.3 g/dL, leukocyte count of 7.5 x 10^3/µL, and a decreased platelet count of 72,000/µL, with a normal CRP of <5 mg/L and normal serum electrolytes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Puerperal Sepsis / Postpartum Bacterial Endometritis",
+      "rule_out_reason": "Considered due to the acute onset of high fever, rigors, and chills occurring within 24 hours of vaginal delivery; ruled out by normal maternal C-reactive protein (5.2 mg/L) and sterile blood and urine cultures.",
+      "quote": "C-reactive protein (CRP) was normal (5,2mg/l), with normal range of serum electrolytes. Blood and urine cultures were sterile"
+    },
+    {
+      "candidate": "Early-Onset Neonatal Bacterial Sepsis",
+      "rule_out_reason": "Considered in light of maternal fever during delivery and isolated neonatal thrombocytopenia (platelets 72,000/µL); ruled out by the newborn's vigorous clinical state, normal physical examination, and normal CRP (<5 mg/L).",
+      "quote": "The newborn baby was healthy and vigorous, exclusively breastfed, the clinical examination was normal; biological analysis showed hemoglobin 16.3g/dl, total leucocyte count 7.5x103/ul and platelet count 72,000/ul. C-reactive protein (CRP) was normal (< 5mg/l)"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Maternal and Congenital Falciparum Malaria",
+      "rule_out_reason": "Maternal peripheral blood smear demonstrated Plasmodium falciparum ring forms with 4% parasitemia; subsequent surveillance thick and thin blood films in the infant at day 3 confirmed congenital transmission with P. falciparum trophozoites at 1.5% parasitemia, leading to parasitological clearance following artemether-lumefantrine and chloroquine therapy.",
+      "quote": "peripheral blood smear showed malarial parasites of Plasmodium falciparum parasitemia at 4%... a thick and thin blood film revealed P. falciparum trophozoites, with a parasitaemia of 1,5%."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly adheres to admission breakpoint. No mentions of Plasmodium or malaria in prompt. Clear differential reasoning and exact quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4600139_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 72-year-old non-smoker presenting with progressive hoarseness, anorexia, low-grade fever, and an isolated exophytic growth on the right aryepiglottic fold, in the setting of a completely normal respiratory exam and normal plain chest radiography. The primary clinical challenge is distinguishing primary laryngeal malignancy (such as squamous cell carcinoma) or benign laryngeal neoplasms from rare primary extrapulmonary laryngeal tuberculosis presenting without concomitant active pulmonary disease.\n2. Admission Breakpoint: Admission triage ends following outpatient otolaryngologic assessment of symptoms, medical/social history (non-smoker, absence of toxic habits), head and neck physical examination (absence of cervical lymphadenopathy or neck sinuses), indirect laryngoscopy (identifying an exophytic mass on the right aryepiglottic fold with mobile vocal cords), and a normal plain chest radiograph, immediately prior to tuberculin skin testing (PPD) and operative direct laryngoscopy biopsy.\n3. Differential Distinctions: Laryngeal squamous cell carcinoma is the overwhelmingly common diagnosis in elderly individuals with hoarseness and a solitary laryngeal growth, but histopathology reveals caseating granulomatous inflammation rather than invasive malignant neoplasia. Secondary laryngeal tuberculosis arising from contiguous bronchogenic spread of cavitary pulmonary disease is excluded by clear chest radiography. Primary laryngeal tuberculosis is confirmed by a positive tuberculin skin test (15 mm induration) and biopsy demonstrating epithelioid granulomas with Langhans giant cells and caseous necrosis.",
+  "case_prompt": "A 72-year-old man presents to an outpatient otolaryngology clinic with a 1-month history of progressive hoarseness, decreased appetite, and low-grade fever. He denies cough, sputum production, or hemoptysis. He has no history of tobacco smoking, alcohol abuse, or illicit drug use. His family history is notable for his late wife having been treated for a chronic pulmonary infection 14 years prior and his daughter having been treated for a focal subcutaneous musculoskeletal infection of the femur 16 years prior without pulmonary involvement.\n\nOn physical examination, he is alert and oriented. Examination of the neck reveals no palpable cervical lymphadenopathy, cutaneous scars, or sinus tracts, and there is no digital clubbing. Indirect laryngoscopy demonstrates an exophytic mass involving the right aryepiglottic fold; both vocal cords are mobile with no visible signs of infiltrative fixation. Physical examination of the respiratory system is unremarkable, and a plain chest radiograph is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Laryngeal Squamous Cell Carcinoma",
+      "rule_out_reason": "Considered the primary clinical diagnosis in an elderly patient presenting with hoarseness and an exophytic laryngeal mass, but ruled out by histopathological examination demonstrating chronic granulomatous inflammation rather than invasive malignancy.",
+      "quote": "The histopathological examination revealed biopsy tissue lined by stratified squamous epithelium showing focal dysplasia. Underlying stroma showed diffuse infiltration by lymphocytes, plasma cells, occasional polymorphs along with epitheloid granulomas, langhans giant cells and caseous necrosis (figure 2)."
+    },
+    {
+      "candidate": "Secondary Laryngeal Involvement from Active Pulmonary Disease",
+      "rule_out_reason": "Considered because laryngeal involvement is classically secondary to bronchogenic seeding from active cavitary pulmonary disease, but ruled out by normal respiratory examination and normal chest radiography.",
+      "quote": "The respiratory system examination and chest x-ray were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A positive tuberculin skin test combined with histopathological evaluation of the epiglottic biopsy demonstrating Langhans giant cells, epithelioid granulomas, and caseous necrosis confirmed primary laryngeal tuberculosis.",
+      "quote": "Histopathologic findings confirmed tuberculosis as the cause of his hoarsness and he was treated with standard regimens of therapy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial outpatient presentation (1-month hoarseness, low-grade fever, non-smoker, exam without cervical adenopathy, indirect laryngoscopy showing aryepiglottic fold mass, and normal CXR) strictly before PPD testing or direct laryngeal biopsy. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

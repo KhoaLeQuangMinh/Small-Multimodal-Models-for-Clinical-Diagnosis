@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10546256_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 44-year-old South African woman presents with chronic dyspnea, left pleural effusion with elevated adenosine deaminase, and rapid progression to cardiac tamponade. The clinical presentation mimicked tuberculous pericarditis, but pericardial histology revealed schistosome eggs, followed weeks later by the emergence of a mediastinal high-grade B-cell lymphoma.\n2. Admission Breakpoint: The admission breakpoint occurs at the time of emergency presentation with cardiac tamponade and left pleural effusion, stopping strictly prior to surgical pericardial window drainage, fluid analysis, pericardial biopsy histopathology, and send-out PCR assays.\n3. Differential Distinctions: Pericardial schistosomiasis is distinguished from tuberculous pericarditis by negative mycobacterial cultures/Xpert MTB and presence of Schistosoma ova on histology; from primary lymphomatous pericardial effusion by absence of malignant cells on pericardial biopsy; and from viral pericarditis by chronic presentation, massive hemorrhagic effusion, and tissue PCR confirmation.",
+  "case_prompt": "A 44-year-old HIV-negative female presents with a 3-month history of worsening exertional shortness of breath and a persistent dry, non-productive cough. She reports no fever, night sweats, or unintentional weight loss. Past history includes living in the Eastern Cape province of South Africa during childhood, where she frequently swam in local rivers and freshwater lakes; she also traveled to the Middle East 4 years prior to presentation, where she swam in a river. One week prior to admission, chest radiography at a primary care facility demonstrated a left-sided pleural effusion; subsequent thoracentesis showed monocyte-predominant fluid with an elevated adenosine deaminase level of 56.2 U/L, prompting empirical four-drug antitubercular therapy.\n\nShe now presents with acute clinical deterioration characterized by severe respiratory distress, hypotension, and signs of cardiac tamponade, necessitating urgent transfer to a tertiary center for emergency surgical intervention.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous pericarditis and pleuritis",
+      "rule_out_reason": "Strongly suspected given the high-incidence setting, monocyte-predominant pleural effusion, and markedly elevated pleural adenosine deaminase (56.2 U/L), but excluded by negative mycobacterial cultures and Xpert MTB/RIF Ultra on both pleural and pericardial specimens.",
+      "quote": "Tuberculosis culture and Xpert  MTB/RIF Ultra of the pleural fluid, as well as the pericardial tissue were negative."
+    },
+    {
+      "candidate": "Primary malignant lymphomatous effusion",
+      "rule_out_reason": "Considered due to rapid fluid accumulation, persistent cardiac compression, and subsequent development of a mediastinal mass, but initial pericardial fluid cytology and tissue histology showed no malignant lymphomatous cells.",
+      "quote": "Pericardial fluid cytological examination did not reveal malignant cells. Histology of pericardial tissue showed inflammation and poorly formed granulomas surrounding suspected Schistosoma haematobium ova as did a Ziehl-Neelsen stain, there were no signs of lymphoma (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histological examination of the resected pericardial window revealed granulomatous inflammation centered around Schistosoma ova, confirmed by positive genus-specific PCR on pericardial tissue in a patient with extensive childhood freshwater exposure.",
+      "quote": "Histology of pericardial tissue showed inflammation and poorly formed granulomas surrounding suspected Schistosoma haematobium ova as did a Ziehl-Neelsen stain, there were no signs of lymphoma (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to surgical pericardial window drainage and tissue biopsy. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

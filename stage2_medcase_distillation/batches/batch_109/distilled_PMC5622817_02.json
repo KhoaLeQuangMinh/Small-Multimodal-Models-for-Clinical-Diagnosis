@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5622817_02",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A pediatric patient presenting with an isolated multicystic mass in the pancreatic head and elevated lipase, closely mimicking a congenital pancreatic/duodenal duplication cyst or choledochal cyst, while concealing an exceedingly rare primary pancreatic presentation of hydatid parasitic disease.\n2. Admission Breakpoint: The breakpoint is placed following baseline abdominal ultrasound, contrast angioscan/MRI, and routine blood tests, prior to send-out hydatid serology (ELISA) and surgical exploration.\n3. Differential Distinctions: Choledochal cysts and duodenal duplication cysts present as periampullary cystic masses in young children, but cross-sectional imaging and surgical inspection localized the lesion strictly within the pancreatic parenchyma, confirmed by positive hydatid serology and intraoperative extraction of hydatid membranes and clear \"rock water\" fluid.",
+  "case_prompt": "A 5-year-old girl residing in a rural community in Kenitra province, Morocco, presents with a 2-week history of epigastric abdominal pain, accompanied by postprandial vomiting and diarrhea over the preceding 6 weeks. She has no significant past medical history. Physical examination is unremarkable.\nAdmission laboratory investigations are unremarkable with the exception of an elevated serum lipase of 180 U/L (approximately three times the upper limit of normal). Abdominal ultrasonography reveals a 46-mm multilocular cystic mass located adjacent to the duodenum and gallbladder, directly contacting the anterior aspect of the head of the pancreas. Contrast-enhanced abdominal CT angioscan and abdominal MRI confirm a compartmentalized fluid-attenuation cystic mass measuring 57 mm by 31 mm with thickened internal septa abutting the second portion of the duodenum, displacing the gallbladder and pancreatic head, containing internal small rounded daughter vesicles originating from the pancreatic head. Screening imaging of the liver and lungs demonstrates no other cystic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Choledochal Cyst / Bile Duct Cyst",
+      "rule_out_reason": "An epigastric cystic mass adjacent to the gallbladder and duodenum accompanied by elevated pancreatic enzymes suggested a choledochal cyst; however, MRI and surgical exploration demonstrated normal caliber biliary ducts and showed the mass originated from the pancreatic head rather than the biliary tree.",
+      "quote": "the diagnosis of a cyst of the bile duct or duodenal duplication."
+    },
+    {
+      "candidate": "Duodenal Duplication Cyst",
+      "rule_out_reason": "An intimate anatomical relationship with the second portion of the duodenum in a 5-year-old child strongly raised suspicion for an enteric duplication cyst; however, surgical exploration proved that the mass arose from the pancreatic lodge and merely displaced the duodenum posteriorly without mucosal or muscular wall continuity.",
+      "quote": "Exploration found a cystic mass at the expense of the pancreatic lodge pushing the duodenum backwards without invading it (Figure 4)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive hydatid serology by ELISA followed by exploratory laparotomy demonstrating a pancreatic cyst containing pathognomonic \"rock water\" clear fluid and three proliferating hydatid germinative membranes.",
+      "quote": "draining of the mass was carried out, bringing clear liquid (rock water) (Figure 5) and a sterilization of the cyst, followed Resection of the protruding dome with extraction of 3 proliferating membranes"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly stops after initial MRI and lipase testing, withholding ELISA serology and surgical findings. Zero mentions of hydatid or Echinococcus."
+}

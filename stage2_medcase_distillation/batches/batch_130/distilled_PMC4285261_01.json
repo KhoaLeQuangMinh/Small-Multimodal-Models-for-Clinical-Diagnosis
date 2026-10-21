@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4285261_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 62-year-old diabetic farmer in Gabon presents with septic fever, a cutaneous leg abscess, and acute monoarthritis of the right knee. Bacterial isolates from blood, wound, and synovial fluid were initially misidentified as Pseudomonas species and treated with ceftriaxone, leading to fatal septic shock due to intrinsic beta-lactam resistance of the true environmental pathogen.\n2. Admission Breakpoint: Triage concludes following initial emergency evaluation, vital signs (fever 40.5°C, pulse 130 bpm), physical exam of the leg abscess and knee joint effusion, and initial baseline labs (blood glucose 24 mmol/L, leukocytes 9,800/mm³, creatinine 0.85 mg/dL). Blood cultures, synovial aspiration, drainage, and genomic identification occur post-admission.\n3. Differential Distinctions: Pseudomonas aeruginosa septic arthritis/bacteremia was the phenotypic misdiagnosis, but whole-genome sequencing proved the organism to be B. pseudomallei. Staphylococcus aureus / Streptococcus pyogenes septic arthritis was suspected empirically, but cultures yielded exclusively gram-negative bacilli.",
+  "case_prompt": "A 62-year-old Gabonese woman with poorly controlled type 2 diabetes mellitus treated with glibenclamide presented with a 7-day history of high fever, weakness, headache, vomiting, and a painful right knee. She did not report coughing or shortness of breath. She was a retired schoolteacher actively engaged in family farming involving soil contact. On physical examination, her blood pressure was 160/90 mm Hg, pulse rate was 130 beats per minute, and temperature was 40.5°C. Examination of the right leg revealed a cutaneous wound with an underlying fluctuant abscess, alongside diffuse tenderness, warmth, erythema, joint effusion, and marked restriction of active and passive motion of the right knee. Neurologic, cardiovascular, and respiratory examinations were normal. Baseline admission laboratory findings showed a blood glucose of 24 mmol/L, hemoglobin of 9.2 g/dL, leukocyte count of 9,800/mm³, and serum creatinine of 0.85 mg/dL. No chest radiograph was obtained.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pseudomonas aeruginosa / Pseudomonas spp. bacteremia and septic arthritis",
+      "rule_out_reason": "Isolates from blood, abscess, and synovial fluid were initially classified phenotypically as Pseudomonas species, but melioidosis is inherently resistant to cephalosporins like ceftriaxone, and genomic typing later refuted this classification.",
+      "quote": "Cultures of blood, wound, and synovial fluid grew identical gram-negative rods, which were initially classified as Pseudomonas spp."
+    },
+    {
+      "candidate": "Staphylococcal or Streptococcal pyogenic abscess and septic arthritis",
+      "rule_out_reason": "Cutaneous wound abscesses and septic monoarthritis in diabetic agriculturalists are commonly caused by gram-positive pyogenic cocci, but no typical gram-positive pathogens were recovered.",
+      "quote": "No other pathogens were detected."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Subsequent multilocus sequence typing (MLST) and whole-genome sequencing reclassified the gram-negative bacillus as Burkholderia pseudomallei (strain Gb100), confirming fatal septicemic melioidosis.",
+      "quote": "After the patient's death, the Pseudomonas species was classified as B. pseudomallei (patient strain Gb100) and confirmed by MLST and whole-genome sequencing."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly ends prior to blood and joint fluid culture incubation and organism identification. Zero pathogen spoilers. Verbatim quotes matched."
+}

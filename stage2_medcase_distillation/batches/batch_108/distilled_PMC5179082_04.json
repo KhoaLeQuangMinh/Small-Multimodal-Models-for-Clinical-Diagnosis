@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5179082_04",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 41-year-old female presenting with acute fever, abdominal pain, leukocytosis, hemoconcentration, and free intra-abdominal fluid (ascites), strongly mimicking an acute surgical abdomen, ruptured viscus, or bacterial peritonitis.\n2. Admission Breakpoint: Admission triage ends following presentation with fever, abdominal pain, and baseline laboratory/imaging findings (hematocrit 48%, leukocytosis, and intra-abdominal free fluid), strictly prior to terminal progression to acute pulmonary edema and death.\n3. Differential Distinctions: Acute bacterial peritonitis or ruptured intra-abdominal abscess causes fever, leukocytosis, abdominal pain, and free fluid, but hemoconcentration reflects systemic plasma leakage rather than localized peritoneal exudation; decompensated liver disease causes ascites and weakness, but lacks acute febrile hemoconcentration.",
+  "case_prompt": "A 41-year-old female presented to the emergency triage service with an acute history of fever, generalized weakness, and severe abdominal pain.\n\nOn initial clinical assessment and emergency evaluation, diagnostic workup revealed leukocytosis and significant hemoconcentration with a hematocrit of 48%. Bedside clinical and imaging evaluation demonstrated the presence of free fluid within the abdominal cavity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Peritonitis / Acute Surgical Abdomen",
+      "rule_out_reason": "Severe abdominal pain, fever, leukocytosis, and free fluid in the peritoneal cavity strongly raised suspicion for an acute intra-abdominal catastrophe or bacterial peritonitis requiring emergency laparotomy; however, the elevated hematocrit (48%) represented systemic vascular hyperpermeability and plasma extravasation rather than primary hollow viscus perforation.",
+      "quote": "A 41-year-old female presenting fever, weakness, abdominal pain, leukocytosis, hematocrit of 48% and fluid in the abdominal cavity."
+    },
+    {
+      "candidate": "Decompensated Cirrhosis with Spontaneous Bacterial Peritonitis",
+      "rule_out_reason": "The combination of intra-abdominal fluid (ascites), weakness, and fever can be seen in decompensated chronic liver disease with secondary peritonitis; however, the acute hemoconcentration and absence of chronic stigmata reflected acute capillary leak syndrome.",
+      "quote": "A 41-year-old female presenting fever, weakness, abdominal pain, leukocytosis, hematocrit of 48% and fluid in the abdominal cavity."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The triad of acute fever, plasma extravasation manifested by hemoconcentration (hematocrit 48%) and ascites, evolving rapidly into vascular collapse and acute pulmonary edema, established the diagnosis of dengue hemorrhagic fever.",
+      "quote": "The patient was diagnosed with dengue hemorrhagic fever and died from an acute pulmonary edema."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage narrative stops strictly at admission findings before respiratory decompensation and death. Zero pathogen spoilers."
+}

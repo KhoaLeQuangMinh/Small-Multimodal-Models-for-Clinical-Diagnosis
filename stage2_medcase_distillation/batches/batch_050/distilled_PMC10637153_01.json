@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10637153_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presents with an acute, blistering skin eruption accompanied by peripheral eosinophilia and transaminitis within days of commencing a new four-drug antimicrobial regimen for chronic pulmonary disease. The tension lies in differentiating a severe cutaneous adverse drug reaction (SCAR) such as drug reaction with eosinophilia and systemic symptoms (DRESS) or Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) overlap from viral/bullous dermatoses or infectious exanthems, while recognizing that the underlying disease necessitating this regimen is pulmonary tuberculosis.\n2. Admission Breakpoint: Admission triage ends after physical examination, vital signs, electrocardiography, and initial triage laboratory studies (revealing eosinophilia and transaminitis) are recorded, immediately prior to drug discontinuation and systemic corticosteroid/second-line therapeutic intervention.\n3. Differential Distinctions: SJS/TEN is distinguished by extensive mucous membrane/conjunctival erosions, which were notably absent here. Infectious exanthems lack peripheral eosinophilia and the immediate temporal correlation with antimicrobial initiation. The diagnosis hinges on recognizing a severe cutaneous adverse drug reaction secondary to the standard first-line antitubercular regimen.",
+  "case_prompt": "A 49-year-old obese (93 kg) male from Western Nepal presented to the hospital with a diffuse skin eruption of 3 days' duration. He had recently been initiated on a standard oral four-drug antimicrobial regimen for a newly diagnosed chronic pulmonary infection. Within 24 hours of treatment initiation, he developed a pruritic rash on his left palm accompanied by flushing and generalized cutaneous eruptions. Three days later, vesicular-bullous lesions erupted on the palmar and dorsal aspects of his hands, alongside a blanching and erythematous maculopapular rash extending across the upper extremities, abdomen, buttocks, and dorsum, with bullae formation. Systemic physical examination revealed no conjunctival involvement. Past medical history was significant for type 2 diabetes mellitus treated with linagliptin (5 mg once daily) for 4 months and hypertension treated with telmisartan (80/12.5 mg once daily) and amlodipine (5 mg once daily) for 5 years. He reported a 4-year smoking history and no alcohol consumption, with no prior known allergies to medications or other substances. On presentation, blood pressure was 130/100 mmHg, pulse rate was 74 beats per minute, and oxygen saturation was 97% while breathing ambient air. Initial laboratory investigations revealed a normal hemoglobin level, leukocyte count, and platelet count, but demonstrated increased eosinophils. Liver enzyme testing demonstrated elevated serum glutamic oxaloacetic transaminase and serum glutamic pyruvic transaminase, with other biochemical parameters within normal limits. An electrocardiogram demonstrated normal sinus rhythm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis (SJS/TEN) Overlap",
+      "rule_out_reason": "Considered due to the rapid onset of blistering bullous lesions and widespread erythematous maculopapular eruption following initiation of new oral medications; ruled out by the absence of mucosal detachment, lip ulceration, or conjunctival congestion.",
+      "quote": "No conjunctival involvement was observed during systemic examination."
+    },
+    {
+      "candidate": "Acute Viral Exanthem / Bullous Dermatosis",
+      "rule_out_reason": "Considered given the abrupt eruption of generalized rash, vesicular-bullous lesions, and elevated transaminases, but ruled out by prominent eosinophilia and strict temporal onset within 24 hours of commencing antimicrobial therapy.",
+      "quote": "The patient developed a pruritic rash on his left palm with flushing and rashes all over the body within 24 h of treatment initiation."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cutaneous Adverse Drug Reaction Secondary to Antitubercular Therapy",
+      "rule_out_reason": "The clinical presentation of acute bullous-vesicular lesions, peripheral eosinophilia, and transaminitis within days of starting therapy established a severe adverse drug reaction secondary to standard first-line treatment for pulmonary Tuberculosis, confirmed by complete resolution upon drug withdrawal and tolerance of second-line therapy.",
+      "quote": "Due to the suspected allergic reaction, the standard antitubercular regimen was immediately discontinued."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation for PMC10637153_01. Admission prompt strictly preserved Day 1 presentation without disclosing the underlying diagnosis of pulmonary tuberculosis or specific antitubercular drug names, preserving the diagnostic tension between primary infectious dermatoses, SJS/TEN, and severe cutaneous adverse drug reactions. Differential diagnoses and diagnostic pivot are rigorously verified with direct verbatim quotes from the case report."
+}

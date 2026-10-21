@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9894277_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young, immunocompetent non-smoker presents with subacute upper-lobe acinar consolidations, constitutional wasting, and thrombocytosis. The core challenge is differentiating typical community-acquired pyogenic pneumonia or standard drug-susceptible tuberculosis from highly resistant disease requiring novel second-line antimicrobials.\n2. Admission Breakpoint: The presentation ends after clinical evaluation, baseline laboratory tests (ESR, CBC, hepatic/renal panels), and plain chest radiography, immediately prior to sputum acid-fast bacilli smear staining, automated nucleic acid amplification, and line probe resistance assays.\n3. Differential Distinctions: Typical bacterial pneumonia follows an acute rather than a 1-month wasting course and typically lacks isolated upper-zone acinar consolidation. Standard drug-susceptible pulmonary infection was refuted by subsequent treatment failure on first-line therapy and molecular identification of extensive multidrug resistance mutations.",
+  "case_prompt": "A 25-year-old previously healthy man, a non-smoker with no known medical co-morbidities, presents with an insidious onset of cough and constitutional symptoms lasting one month. The cough is productive of mucoid sputum, accompanied by poor appetite, generalized malaise, and an involuntary 5-kilogram weight loss. On physical examination, the patient appears chronically ill. Chest auscultation reveals bronchial breath sounds in the left infraclavicular and interscapular regions, as well as fine crackles over the right anterior mammary zone. Baseline laboratory evaluation demonstrates thrombocytosis and an elevated erythrocyte sedimentation rate (ESR). Hemoglobin concentration, renal parameters, and liver function tests are within normal limits. A plain chest radiograph demonstrates dense acinar radiopacities localized to the left upper zone and the superior aspect of the left middle zone.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Community-acquired bacterial pneumonia / Pyogenic lung infection",
+      "rule_out_reason": "Bacterial pneumonia was considered given dense acinar consolidation, crackles, and elevated inflammatory reactants; however, the indolent one-month duration, severe constitutional wasting, upper-lobe predilection, and lack of acute pyogenic response pointed away from typical acute bacterial pathogens.",
+      "quote": "His chest radiograph showed dense acinar radiopacities in the left upper zone and superior part of Left middle zone, suggestive of active pulmonary tuberculosis [Figure 1a]."
+    },
+    {
+      "candidate": "Standard drug-susceptible pulmonary tuberculosis",
+      "rule_out_reason": "First-line anti-tubercular therapy was initially initiated following positive smear microscopy, but the patient experienced treatment failure with clinical deterioration, inability to gain weight, and worsening radiographic consolidation.",
+      "quote": "He showed features of clinical deterioration with no weight gain, worsening of his chest radiograph and continued to be sputum smear positive even after one month of ATT."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum Ziehl-Neelsen staining demonstrated 2+ acid-fast bacilli, CBNAAT showed high Mycobacterium burden with rifampicin resistance, LJ culture confirmed resistance to first-line agents and levofloxacin, and line probe assays confirmed rpoB, katG, and fluoroquinolone resistance, establishing pre-extensively drug-resistant pulmonary tuberculosis.",
+      "quote": "His sputum MTB LJ medium culture showed positive growth for MTB with resistance to isoniazid, rifampicin, pyrazinamide, levofloxacin and ethambutol."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to sputum smear and molecular drug-resistance assays. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

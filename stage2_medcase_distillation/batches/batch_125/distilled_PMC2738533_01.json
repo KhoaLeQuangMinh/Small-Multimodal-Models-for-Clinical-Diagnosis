@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2738533_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 36-year-old French Foreign Legion soldier returning from deployment in Djibouti presents with exercise-induced hemoptysis and progressive fatigue, but completely lacks fever, night sweats, anorexia, weight loss, cough, or dyspnea. Thoracic imaging reveals a spicular cavitary mass in the left upper lobe mimicking bronchogenic carcinoma versus a chronic tropical cavitary granuloma.\n2. Admission Breakpoint: Clinical examination, routine admission laboratory tests, chest radiography, and thoracic CT scan showing excavated spicular nodular lesions, stopping before tuberculin skin testing, bronchoscopy smear, and mycobacterial cultures.\n3. Differential Distinctions:\n- Bronchogenic Carcinoma / Pulmonary Malignancy: Spicular excavated upper-lobe nodular consolidations on CT in an adult presenting with hemoptysis strongly evoke cavitating lung carcinoma; however, bronchial mucosal biopsy revealed only nonspecific inflammation, and microbiological examination of bronchial washings demonstrated acid-fast bacilli.\n- Endemic Fungal Infection (e.g., Histoplasmosis, Coccidioidomycosis, Aspergilloma) or Lung Abscess: Excavated spicular lesions in a military traveler returning from an arid tropical deployment can be caused by fungal infection or necrotizing bacterial abscess, but bacterial and fungal cultures were negative and acid-fast smears confirmed mycobacterial disease.\n- Pulmonary Infarction / Arteriovenous Malformation: Hemoptysis triggered by running in an otherwise asymptomatic young soldier can suggest focal vascular malformation or thromboembolism, but imaging demonstrated parenchymal consolidation with cavitary necrosis and micronodular infiltration rather than vascular malformation.",
+  "case_prompt": "A 36-year-old male soldier in the French Foreign Legion was evacuated back to France from deployment in Djibouti after developing hemoptysis. He reported expectorating bloody sputum specifically following vigorous running and on several subsequent occasions over the preceding two weeks, accompanied by progressive fatigue. He denied fever, chills, night sweats, anorexia, weight loss, dyspnea, pleuritic chest pain, or chronic sputum production. His past medical history was unremarkable.\n\nPhysical examination upon admission was entirely normal. He was afebrile and in no respiratory distress. Pulmonary auscultation revealed clear breath sounds bilaterally without wheezes or crackles. Cardiovascular examination was normal without murmurs or pericardial friction rub. There was no cervical, axillary, or inguinal lymphadenopathy, no hepatosplenomegaly, no bone tenderness, and no evidence of ascites. Genital, neurological, and ophthalmological examinations were unremarkable.\n\nRoutine baseline laboratory studies, complete blood count, and serum chemistry were within normal reference limits. Urinalysis showed normal sediment with <1,000 red blood cells/L and <5,000 leukocytes/L. Plain chest radiography demonstrated a triangular consolidation within the left upper lobe with ill-defined margins and small cavitary lucencies, with no mediastinohilar lymphadenopathy. Contrast-enhanced computed tomography (CT) of the chest confirmed a cavitary process: three excavated nodular lesions displaying radiating spicules situated within a surrounding micronodular infiltrate in the left upper lobe. Flexible bronchoscopy revealed moderate localized inflammation of the airway mucosa in the left upper lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchogenic Carcinoma / Excavating Pulmonary Malignancy",
+      "rule_out_reason": "Considered because the patient presented with hemoptysis and CT revealed three excavated nodular lesions with radiating spicules highly concerning for malignancy, but endobronchial biopsy showed only nonspecific inflammation and bronchial washings revealed acid-fast bacilli.",
+      "quote": "three excavated nodular images showed radiating spicules within a micronodular infiltrate. Bronchoscopy showed a moderate inflammation of airway mucosa, especially in the left upper lobe. Biopsy specimens exhibited nonspecific inflammation."
+    },
+    {
+      "candidate": "Pulmonary Fungal Infection (Aspergilloma or Endemic Mycosis) / Bacterial Abscess",
+      "rule_out_reason": "Considered due to the cavitary pulmonary syndrome in a military traveler returning from East Africa, but ruled out by the absence of leukocytosis, lack of fungal growth, and positive acid-fast staining of bronchial washings.",
+      "quote": "A bronchial washing smear from the left upper lobe was positive for acid-fast bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A strongly positive Mantoux tuberculin test (15 mm induration) in a soldier deployed to the Horn of Africa with left upper lobe spicular cavitary lesions, confirmed by positive acid-fast bacilli on bronchial washing smear and culture isolation of Mycobacterium tuberculosis subsp. canetti susceptible to all first-line antituberculous agents.",
+      "quote": "Cultures revealed a strain identified as M. tuberculosis subsp. canetti that was susceptible to all primary antituberculous drugs."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Excluded Mantoux test, bronchial AFB smear, and cultures from presentation. Zero spoilers, full quote fidelity."
+}

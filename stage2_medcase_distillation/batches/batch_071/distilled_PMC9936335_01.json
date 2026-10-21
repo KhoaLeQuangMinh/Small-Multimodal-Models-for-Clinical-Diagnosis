@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9936335_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 13-year-old boy presents with mechanical bowel obstruction, fever, peritoneal signs, a right lower quadrant mass, and target-sign ileocolic intussusception. Because intussusception is distinctly rare in adolescent children, the clinical dilemma centers on distinguishing acute appendiceal phlegmon or idiopathic mesenteric lymphoid hyperplasia from a parasitic mechanical lead point in an endemic setting.\n2. Admission Breakpoint: The presentation ends after emergency clinical evaluation, baseline laboratory studies (demonstrating anemia, leukocytosis, and 10% eosinophilia), plain radiography, and bedside abdominal sonography confirming ileocolic intussusception, immediately prior to sonographic detection of intraluminal worm echoes and emergent exploratory laparotomy.\n3. Differential Distinctions: Appendiceal abscess or phlegmon produces RLQ mass, fever, and leukocytosis, but sonography clearly demonstrated multi-layered bowel-in-bowel telescoping rather than appendiceal phlegmon. Idiopathic intussusception driven by reactive mesenteric lymphadenitis is predominantly seen in infants and toddlers; in an adolescent with pica and eosinophilia, an intraluminal parasitic lead point must be suspected.",
+  "case_prompt": "A 13-year-old boy from an agricultural family of low socioeconomic status is brought to the emergency department with a two-day history of severe colicky abdominal pain, recurrent vomiting, and obstipation. His past medical history is notable for four to five episodes of intermittent abdominal pain over the preceding six months, a chronic history of pica, and failure to thrive. On physical examination, the child appears acutely ill and moderately dehydrated. Vital signs reveal a body temperature of 38.0\u00b0C, pulse rate of 100 beats/min, respiratory rate of 25 breaths/min, and blood pressure of 110/70 mmHg. The abdomen is diffusely distended with marked tenderness, voluntary guarding, and a distinct, tender palpable mass in the right lower quadrant. Emergency laboratory investigations reveal microcytic anemia with hemoglobin 8.8 g/dL, leukocytosis with a white blood cell count of 14,000/mm\u00b3 (75% neutrophils, 10% eosinophils), normal platelets, and normal renal and liver function panels. An erect plain abdominal radiograph shows multiple air-fluid levels indicating mechanical intestinal obstruction. Emergency high-resolution abdominal ultrasonography demonstrates a transverse swirled pattern of alternating hyperechoic and hypoechoic concentric rings ('target' sign) and longitudinal bowel-within-bowel telescoping in the right iliac fossa consistent with ileocolic intussusception, accompanied by enlarged, non-necrotic mesenteric lymph nodes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Idiopathic / Reactive mesenteric lymphadenitis-induced intussusception",
+      "rule_out_reason": "Enlarged mesenteric lymph nodes accompanied by ileocolic intussusception initially suggested reactive lymphoid hyperplasia; however, intussusception in a 13-year-old child strongly implies a pathological lead point, and the presence of pica with 10% peripheral eosinophilia pointed toward an enteric helminthic etiology.",
+      "quote": "The images also showed multiple, rounded, and enlarged hypoechoic lymph nodes (black arrow) in the adjacent mesentery, suggestive of lymphadenopathy. However, no necrosis, calcification, or conglomeration was seen."
+    },
+    {
+      "candidate": "Acute complicated appendicitis / Periappendiceal phlegmon",
+      "rule_out_reason": "A palpable right lower quadrant mass, fever, guarding, and leukocytosis mimicked appendiceal phlegmon; however, erect abdominal radiography demonstrated acute mechanical obstruction and ultrasonography revealed the classic concentric target sign of telescoping bowel.",
+      "quote": "High-resolution sonography on the transverse plane of the abdomen, via a linear transducer placed in the right iliac fossa region, showed a swirled pattern of alternating hyperechogenicity and hypoechogenicity. This gave the classical \"target\" appearance representing the alternating layers of mucosa, muscularis, and serosa."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sonographic demonstration of tubular hypoechoic structures with parallel echogenic margins within dilated proximal bowel, followed by urgent exploratory laparotomy revealing gangrenous ileocolic intussusception with an obstructing bolus of Ascaris lumbricoides as the mechanical lead point, confirmed soil-transmitted helminthiasis.",
+      "quote": "The telescopic loop of the ileum was found to be gangrenous and was resected, and a loop ileostomy was performed. The clumped Ascaris was milked out intraoperatively (Figure 6)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation ending prior to sonographic worm identification and emergency laparotomy. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10756233_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 59-year-old male liver transplant recipient on immunosuppressive therapy presents with relapsing cavitary pulmonary disease, progressive anemia, and bilateral lower extremity neuropathic pain and numbness following multiple interrupted empiric antimicrobial regimens complicated by linezolid hematologic and neurologic toxicity. In an immunosuppressed transplant recipient, cavitary lung disease raises a wide differential including opportunistic invasive fungal infections (e.g., invasive pulmonary aspergillosis, cryptococcosis, mucormycosis), Nocardia, post-transplant lymphoproliferative disorder, or multidrug-resistant tuberculosis.\n2. Admission Breakpoint: The admission clinical presentation concludes following the patient's transfer and readmission on September 18, 2021, documenting his clinical history, transplant status, recurrent pulmonary symptoms, exam showing distal lower extremity sensory neuropathy, baseline triage labs (WBC 5.05 x 10^9/L, neutrophils 70.5%, Hb 86 g/L, PLT 226 x 10^9/L, normal biochemistry), negative fungal screens (GM and G tests), negative autoimmune panels, and chest CT demonstrating bilateral patchy infiltrates with left lung cavitation, prior to sputum acid-fast smear, Xpert MTB testing, sputum culture, and mycobacterial resistance genotyping.\n3. Differential Distinctions: Invasive pulmonary aspergillosis is a major opportunistic threat in liver transplant recipients presenting with cavitary pulmonary infiltrates and constitutional decline, but serum GM and G tests were negative and mycobacterial pathogens were confirmed. Pulmonary nocardiosis causes subacute cavitary pulmonary infiltrates and systemic symptoms in solid organ transplant recipients, but species-specific culture and molecular assays confirmed M. tuberculosis complex rather than branching filamentous bacteria. Multidrug-resistant pulmonary tuberculosis is established by positive sputum smear, Xpert MTB DNA positivity with rpoB gene resistance mutations, and sputum culture positive for M. tuberculosis complex.",
+  "case_prompt": "A 59-year-old man who underwent orthotopic liver transplantation nine years prior for end-stage liver disease secondary to hepatitis C and alcoholic cirrhosis presents with recurrent productive cough, purulent sputum, and dyspnea. Over the preceding eighteen months, he had experienced recurrent episodes of fever, night sweats, fatigue, and productive cough associated with bilateral cavitary pulmonary infiltrates. He had received multiple empirical antimicrobial regimens, each of which was discontinued prematurely due to adverse reactions, including a severe cutaneous drug rash, profound anemia (with hemoglobin nadir of 44 g/L), and bilateral lower-extremity neuropathic pain and numbness. A repeat chest computed tomography (CT) scan demonstrated progression of bilateral patchy pulmonary consolidations with a prominent cavitary lesion in the left lung. On physical examination, he appears chronically ill and pale. Vital signs are within normal limits. Neurological examination reveals bilateral symmetric distal lower-extremity sensory loss to light touch and pinprick. Admission laboratory investigations show: white blood cell count 5.05 × 10^9/L (neutrophils 70.5%), hemoglobin 86 g/L, and platelet count 226 × 10^9/L. Serum biochemistry demonstrates no significant abnormalities. Serum galactomannan antigen (GM) test, 1,3-beta-D-glucan (G) test, and autoimmune serological evaluations are all negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive pulmonary aspergillosis / Opportunistic fungal infection",
+      "rule_out_reason": "In an immunosuppressed solid organ transplant recipient with cavitary lung disease, invasive fungal pneumonia is a primary differential consideration, but serum GM and G tests were completely negative, and sputum microbiological studies confirmed mycobacterial infection.",
+      "quote": "No obvious abnormality was found in the blood biochemistry, GM test, G test, or blood autoimmune disease examination."
+    },
+    {
+      "candidate": "Pulmonary nocardiosis",
+      "rule_out_reason": "Nocardia commonly causes subacute cavitary pulmonary infiltrates in solid organ transplant recipients, but sputum culture and molecular assays specifically confirmed Mycobacterium tuberculosis complex rather than branched filamentous bacteria.",
+      "quote": "Sputum culture results showed M. tuberculosis complex positivity."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Relapsed multidrug-resistant pulmonary tuberculosis",
+      "rule_out_reason": "The diagnostic turning point was the microbiological detection of acid-fast bacilli on sputum smear (2+), positive Xpert assay demonstrating TB bacterial DNA with rpoB gene resistance mutations, and positive sputum culture for M. tuberculosis complex.",
+      "quote": "Sputum smear results showed positivity for acid-fast bacilli (2+). The Xpert results showed that the positive content of TB DNA was medium, and mutation resistance occurred. Sputum culture results showed M. tuberculosis complex positivity."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Baseline labs, negative fungal screens, and CT findings are preserved at triage, while AFB smear, Xpert, culture, and resistance profiling are placed in diagnostic reasoning."
+}

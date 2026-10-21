@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4237767_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient develops progressive paraplegia 5 days following thoracic epidural anesthesia for open cholecystectomy, with an intramedullary ring-enhancing thoracic spinal cord lesion. The presentation strongly mimics anesthesia-related complications (acute transverse myelitis or spinal cord infarction) or an intramedullary spinal cord neoplasm, especially in the setting of negative systemic tuberculosis screening (normal chest X-ray and negative tuberculin skin test).\n2. Admission Breakpoint: Clinical triage ends after transfer and re-evaluation at the tertiary facility: clinical documentation of subacute paraplegia, sensory level below T7, thoracic spinal MRI showing T6-T7 cord expansion with ring enhancement, normal CSF biochemistry/culture, negative PPD, and normal chest radiography, before secondary worsening and surgical laminectomy.\n3. Differential Distinctions: Transverse myelitis is ruled out by persistent lack of recovery and subsequent focal expansile mass enlargement. Spinal cord infarction is excluded by stable hemodynamics, loss of proprioception, and ring-enhancing lesion morphology. Intramedullary neoplasm is ruled out by surgical excision and histopathologic confirmation of a caseating tuberculous granuloma.",
+  "case_prompt": "A 42-year-old man presents with progressive lower extremity weakness and sensory loss. Two months prior to admission, he underwent an open cholecystectomy for cholecystolithiasis under epidural anesthesia at a community hospital. The epidural catheter was inserted via the T7-T8 interspace and directed cephalad; during insertion, he experienced a transient shooting pain radiating down his right lower leg that disappeared immediately. Intraoperative vital signs were stable without hypotension, and 2% lidocaine with epinephrine was administered without immediate complication.\n\nOn the fifth postoperative day, the patient developed numbness and paresis of the right leg that rapidly spread to the left leg. Neurological examination revealed a sensory deficit below the T7 dermatome, muscle power of 2/5 in the right lower extremity and 4/5 in the left lower extremity, hyperactive deep tendon reflexes bilaterally, and bilateral positive Babinski signs. He had urinary incontinence, constipation, and impaired proprioception in the left leg. Emergency thoracic CT ruled out disc herniation, epidural hematoma, and epidural abscess, while initial thoracic MRI was reported as normal. He was presumptively treated for acute transverse myelitis with dexamethasone and intravenous immunoglobulin, but showed no improvement after 2 months and was transferred for evaluation.\n\nUpon admission to the tertiary center, repeat thoracic spine MRI demonstrates a hyperintense expansile lesion of the cord extending from T6 through T7 on T2-weighted images, which appears isointense on T1-weighted images with prominent ring enhancement following gadolinium administration. Lumbar puncture yields normal cerebrospinal fluid (CSF) parameters with negative bacterial cultures. A tuberculin skin test is negative, and chest radiography demonstrates no cardiopulmonary abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute transverse myelitis (ATM)",
+      "rule_out_reason": "Post-anesthetic acute transverse myelitis was initially diagnosed and treated aggressively with corticosteroids and intravenous immunoglobulins; however, complete absence of clinical response after 2 months and subsequent focal mass enlargement argued against uncomplicated idiopathic demyelinating myelitis.",
+      "quote": "Both thoracic magnetic resonance imaging (MRI) studies and motor-evoked potentials recorded from the lower limbs were normal. Therefore, transverse myelitis was diagnosed and the patient was administered dexamethasone and gamma-globulin. Two months after initiation of therapy, the patient had not yet shown any neurologic improvement, and was transferred to our hospital for further treatment."
+    },
+    {
+      "candidate": "Spinal cord infarction (SCI)",
+      "rule_out_reason": "Transient radicular shooting pain during catheterization and use of epinephrine raised suspicion for anterior spinal artery ischemia; however, the absence of intraoperative hypotension, prominent loss of posterior column proprioception, and well-circumscribed ring enhancement on MRI were incompatible with SCI.",
+      "quote": "However, the absence of hypotension during the operation, the loss of positional sense in the patient's left leg, and the characteristics of signal abnormity on MRI examination do not completely support the diagnosis of SCI."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Due to progressive neurological deterioration and an ambiguous ring-enhancing intramedullary mass, surgical laminectomy and complete microsurgical excision were performed; histopathological analysis established a tuberculous granulomatous lesion.",
+      "quote": "Histopathologic examination revealed a tuberculous granulomatous lesion (Figure 3)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of thoracic intramedullary spinal tuberculoma mimicking post-epidural myelopathy. Admission narrative excludes surgical excision, histopathologic confirmation, and antituberculous drug therapy."
+}

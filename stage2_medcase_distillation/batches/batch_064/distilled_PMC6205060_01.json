@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6205060_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old Eritrean woman with HIV infection and a strong family history of early breast cancer presents with a massive right breast mass (10–12 cm) and widespread colliquated lymphadenopathy (cervical, axillary, retropectoral, and abdominal). The clinical presentation strongly mimics metastatic breast cancer or HIV-associated systemic lymphoma. Distinguishing an atypical tuberculous \"cold abscess\" and scrofula from aggressive malignancy is critical.\n2. Admission Breakpoint: The admission clinical presentation concludes following the physical examination of the non-erythematous fluctuant breast mass, baseline laboratory evaluation (showing low leukocyte count, low ESR, and hypergammaglobulinemia), CT staging, mammography, and ultrasound, immediately prior to fine-needle aspiration of purulent fluid and excisional/core cervical lymph node biopsy.\n3. Differential Distinctions: Systemic lymphoma was the leading initial admission diagnosis due to multi-station lymphadenopathy and breast involvement, but lymph node core biopsy ruled out lymphoma and showed caseating granulomas. Breast adenocarcinoma was considered given her family history, but ultrasound and aspiration confirmed a fluid-filled cystic lesion rather than a malignant solid mass. Pyogenic bacterial abscess was ruled out by lack of cardinal signs of acute inflammation (\"cold abscess\") and sterile bacterial/fungal cultures. Nucleic acid amplification confirmed Mycobacterium tuberculosis.",
+  "case_prompt": "A 26-year-old Eritrean woman with a known history of human immunodeficiency virus (HIV) infection presented to the emergency department with progressive generalized weakness, generalized lymphadenopathy, and a rapidly expanding mass involving the right breast. Her family history was notable for breast cancer in her sister, who had died of the disease at age 34.\n\nOn physical examination, the patient was afebrile and appeared fatigued. Examination of the right breast revealed a large, soft, fluctuant, and mobile mass measuring approximately 12 × 10 cm involving virtually the entire breast parenchyma. The overlying skin lacked erythema, warmth, or tenderness, demonstrating features of a \"cold abscess.\" Palpable, mobile right axillary and bilateral lateral cervical lymph nodes were present.\n\nInitial laboratory evaluation revealed a low total leukocyte count and a low erythrocyte sedimentation rate (ESR). Serum chemistries and renal function were normal, while serum protein electrophoresis demonstrated marked hypergammaglobulinemia.\n\nComputed tomography (CT) scan of the neck, chest, and abdomen demonstrated a large cystic mass in the right breast measuring approximately 10 × 7 cm, extensive bilateral colliquated cervical lymphadenopathy (the largest node measuring 27 × 20 mm), multiple right axillary and retropectoral lymph nodes, and extensive para-aortic, celiac, and paracaval lymphadenopathy, with no pulmonary parenchymal lesions or pleural effusions. Mammography showed diffuse radio-opacity across the right breast without clustered microcalcifications. Breast ultrasonography with color Doppler confirmed an ill-defined, avascular-centered hypoechoic fluid collection with irregular borders and peripheral vascularity, excluding a solid neoplastic mass.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant lymphoma (HIV-associated)",
+      "rule_out_reason": "Strongly suspected on initial admission due to constitutional weakness and extensive cervical, axillary, retropectoral, and retroperitoneal lymphadenopathy, but cervical lymph node biopsy was negative for neoplastic lymphoid proliferation.",
+      "quote": "For this reason she was hospitalized in Medicine Department with a suspicious diagnosis of lymfoma... The patient had a latercervical lymph node core biopsy that exluded lymphoma. The evaluation of the specimen revealed only inflammatory cells, including neutrophils, lymphocytes, and abundant macrophages, granulomas with central caseaous necrosis and epitheloid histiocytes."
+    },
+    {
+      "candidate": "Breast carcinoma",
+      "rule_out_reason": "Considered given her family history of fatal young-onset breast cancer and a massive breast lesion with axillary adenopathy, but mammography and ultrasonography excluded a solid tumor, and fluid cytology showed no malignant cells.",
+      "quote": "Ultrasound scan was apparently useful for characterising the ill-defined breast mass and excluding the presence of solid masses."
+    },
+    {
+      "candidate": "Acute pyogenic bacterial breast abscess",
+      "rule_out_reason": "Initially managed as a bacterial infection, but lacked heat, erythema, and acute pain (\"cold abscess\"), failed empiric antibiotics, and aspirate cultures were negative for bacteria and fungi.",
+      "quote": "Her skin was not erythematous and local temperature was normal. She was painless... It meant the possible presence of a \"cold abscess\" or a big cystis... The pus was sent for bacteriological, citological and coltural test, the results of which were negative for aerobic, anaerobic bacteria and fungi."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of a colliquated cervical lymph node core biopsy revealed caseating granulomas with central necrosis, and molecular testing by nucleic acid amplification and PCR confirmed Mycobacterium tuberculosis.",
+      "quote": "The evaluation of the specimen revealed only inflammatory cells, including neutrophils, lymphocytes, and abundant macrophages, granulomas with central caseaous necrosis and epitheloid histiocytes. But by means of nucleic acid probes and PCR, it was possibile to identify the Mycobacterium tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC6205060_01. The case prompt ends strictly prior to diagnostic needle aspiration, microbiological staining/cultures, and nodal core biopsy. Zero pathogen disclosure in the case prompt. Candidate differential rule-outs and diagnostic pivot cite verbatim text from the case report."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4710411_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A patient presenting with 178 polymorphic, crusted, ulcerated, and nodular lesions covering the face, trunk, genitalia, and soles mimics disseminated secondary syphilis (lues maligna), disseminated fungal disease (paracoccidioidomycosis, histoplasmosis), or ecthyma gangrenosum, obscuring a rare hematogenously disseminated form of New World cutaneous protozoan infection in an immunocompetent host.\n2. Admission Breakpoint: The breakpoint occurs at initial presentation and physical examination documenting the 178 polymorphic skin lesions alongside normal baseline CBC, hepatic, renal labs, and negative routine serologies, immediately before diagnostic skin scraping, imprint cytology, culture, and leishmanin skin testing.\n3. Differential Distinctions: Secondary syphilis/lues maligna features widespread papulosquamous or ulceronecrotic lesions but yields positive treponemal serology. Disseminated deep fungal infections (histoplasmosis, paracoccidioidomycosis) occur predominantly in immunocompromised hosts and show characteristic yeast forms rather than kinetoplast-bearing amastigotes. Ecthyma/pyoderma gangrenosum lacks amastigotes on imprint cytology.",
+  "case_prompt": "A 52-year-old male agricultural laborer from Ceará state in northeast Brazil presented with a 4-month history of extensive cutaneous eruptions. The lesions initially appeared on his face and lower legs before progressively spreading over much of his body, including the scalp, genitalia, and plantar surfaces of the feet. He recalled having daily fevers during the first two weeks of the illness. Physical examination revealed 178 polymorphic skin lesions of varying dimensions, demonstrating papular, nodular, pustular, crusted, and ulcerated morphologies, with evidence of superficial bacterial superinfection on several ulcer bases. The remainder of the physical examination was normal. Complete blood count and hepatic and renal function panels were within normal reference ranges. Baseline screening serologies for chronic treponemal and retroviral infections were non-reactive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Disseminated secondary syphilis (Lues maligna)",
+      "rule_out_reason": "Considered due to the widespread polymorphic ulcerated, papular, and crusted lesions involving the trunk, genitalia, and plantar surfaces; excluded by non-reactive syphilis serological testing.",
+      "quote": "Serological tests for syphilis and human immunodeficiency virus were negative."
+    },
+    {
+      "candidate": "Opportunistic disseminated fungal infection in HIV",
+      "rule_out_reason": "Considered given the hundreds of polymorphic cutaneous ulcers and nodules in a rural agricultural worker, which frequently reflects disseminated histoplasmosis or paracoccidioidomycosis in immunocompromised states; ruled out by negative HIV serology and normal organ function.",
+      "quote": "A complete blood count and liver and kidney function tests were within normal limits. Serological tests for syphilis and human immunodeficiency virus were negative."
+    },
+    {
+      "candidate": "Primary bacterial ecthyma / Pyogenic pyoderma",
+      "rule_out_reason": "Considered due to the pustular and crusted appearance of numerous ulcers, but bacterial involvement represented secondary superinfection of a primary parasitic process.",
+      "quote": "Many had apparent bacterial superinfections (Figure 1C)... Bacterial superinfection of the ulcers was treated with cephalexin."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Skin biopsy imprint directly identified amastigotes, skin culture on Novy-MacNeal-Nicolle (NNN) medium isolated promastigotes characterized by isoenzyme analysis as Leishmania (Viannia) braziliensis, and the leishmanin skin test was positive, confirming disseminated cutaneous leishmaniasis cured with oral fluconazole.",
+      "quote": "A skin biopsy imprint revealed amastigotes. Skin culture in Novy-MacNeal-Nicolle medium grew promastigotes characterized as Leishmania (Viannia) braziliensis by isoenzymes. The leishmanin skin test was positive."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to skin biopsy imprint and NNN culture. Farm labor exposure and baseline panels captured with zero pathogen spoilers."
+}

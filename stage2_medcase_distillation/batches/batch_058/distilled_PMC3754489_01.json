@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3754489_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 66-year-old male presenting with widespread cutaneous nodules, ulcers, and progressive peripheral neuropathy spanning nearly two decades after premature discontinuation of dapsone monotherapy, followed by irregular rifampicin monotherapy. The clinical tension lies in distinguishing clinical and microbiological relapse of lepromatous disease complicated by secondary antimicrobial resistance from non-mycobacterial granulomatous infections (e.g., deep fungal infections, cutaneous leishmaniasis) or cutaneous lymphomas, while understanding the pathophysiologic role of monotherapy in selecting for resistant bacilli.\n2. Admission Breakpoint: Admission triage ends following history of presenting illness, prior antimicrobial exposures, and physical examination documenting peripheral sensory loss (symmetric limb numbness) and widespread cutaneous nodules and ulcers. Confirmatory testing begins with slit-skin smear microscopy for bacillary index, histopathologic examination of skin biopsy specimens, and molecular sequencing (PCR of repetitive element, 16S rDNA, and drug-resistance genes).\n3. Differential Distinctions: Cutaneous leishmaniasis and systemic deep fungal infections (e.g., histoplasmosis, blastomycosis) present with chronic noduloulcerative cutaneous lesions, but do not characteristically produce extensive, slowly progressive peripheral glove-and-stocking sensory neuropathy over nearly two decades. Cutaneous T-cell lymphoma (mycosis fungoides) or prurigo nodularis may present with chronic pruritic plaques and nodules, but would not respond transiently to rifampicin nor harbor acid-fast bacilli. The diagnosis is confirmed by slit-skin smears showing a high bacillary index (5.0), skin biopsy demonstrating acid-fast bacilli, and PCR/gene sequencing identifying Mycobacterium leprae with an rpoB mutation conferring rifampicin resistance.",
+  "case_prompt": "A 66-year-old male from China presented with a two-year history of worsening generalized skin lesions and an 18-year history of progressive numbness involving both upper and lower extremities. Twenty years earlier, he had received dapsone monotherapy (50 mg daily) for a widespread dermatologic condition; he discontinued the medication after six months once his skin lesions cleared and subsequently relied on alternative remedies without medical follow-up. Despite clearance of his initial lesions, he experienced insidiously progressive, symmetric sensory loss in all four limbs over the ensuing 18 years.\n\nTwo years prior to the current admission, he developed pruritic macules and plaques over his abdomen, buttocks, and groin. A local clinician initiated antimycobacterial therapy; however, the patient took oral rifampicin only irregularly. Although he experienced transient improvement, widespread firm cutaneous nodules and ulcerative lesions subsequently erupted across his entire trunk and extremities. Physical examination revealed extensive nodular and ulcerative skin lesions distributed over the body, along with marked, symmetric sensory loss over the distal extremities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Leishmaniasis / Deep Fungal Infection",
+      "rule_out_reason": "Chronic disseminated noduloulcerative cutaneous eruptions can simulate leishmaniasis or systemic fungal infections, but the hallmark eighteen-year progression of extensive peripheral limb numbness points definitively to a neurotropic mycobacterial infection.",
+      "quote": "the patient continued experiencing progressive and worsening numbness of the limbs for the next 18 years, during which he was out of medical record and took alternative medicine instead."
+    },
+    {
+      "candidate": "Drug-Sensitive Clinical Relapse",
+      "rule_out_reason": "Although clinical relapse was suspected following years of untreated disease, the failure of subsequent therapy and development of new lesions while taking rifampicin suggested acquired drug resistance selected by prior irregular monotherapy rather than simple drug-sensitive relapse.",
+      "quote": "He was prescribed isoniazid, RFP, and DDS, but the patient only took RFP irregularly. An initial response to treatment was observed, but new nodules and ulcers soon developed all over the patient's body."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis of relapsed lepromatous disease was confirmed by slit-skin smears demonstrating a high bacillary index (5.0) and skin biopsy isolating acid-fast bacilli, with 16S rDNA and repetitive element gene sequencing identifying the pathogen and rpoB codon 441 mutation confirming secondary rifampicin resistance.",
+      "quote": "Acid-fast bacilli were isolated from a skin biopsy specimen (Figure 1A). Identification of the isolate by polymerase chain reaction and gene sequencing of M. leprae-specific repetitive element and 16S rDNA genes was carried out. The sequence analysis of M. leprae-specific repetitive element and 16S rDNA genes showed 100% similarity with M. leprae."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly redacted of pathogen names and bacillary index results. Breakpoint placed before slit-skin smear and skin biopsy PCR."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10687792_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: An 81-year-old man from São Paulo, Brazil, was found dead at home with no prior recorded medical or travel history. Post-mortem evaluation revealed severe malnutrition and acute-on-chronic peritonitis with serosanguineous ascites, diffuse ulcerations from cecum to rectum, and right colonic perforation. The primary diagnostic tension is differentiating a lethal infectious fulminant colitis from non-infectious catastrophic colonic conditions such as acute ischemic colitis/mesenteric infarction, perforated diverticulitis, or severe inflammatory bowel disease (Crohn's disease or toxic ulcerative colitis) in an isolated elderly individual.\n2. Admission Breakpoint: Gross post-mortem abdominal cavity opening and macroscopic bowel inspection demonstrating serosanguineous ascites, diffuse ulceration from cecum to rectum, and right colonic perforation, strictly prior to microscopic histopathology and PAS stain parasite identification.\n3. Differential Distinctions: Ischemic colitis typically respects vascular distributions (watershed regions like splenic flexure) and spares the rectum, showing transmural coagulative necrosis rather than deep flask-shaped ulcers extending to the rectum with erythrophagocytic amoebae. Inflammatory bowel disease presents with distinct transmural lymphoid aggregate patterns or continuous mucosal crypt architectural distortions rather than paucicellular necrotic debris with trophozoites.",
+  "case_prompt": "An 81-year-old retired lawyer was found unresponsive at his residence in São Paulo state, Southern Brazil, and was submitted to the local coroner's office for post-mortem evaluation. He lived alone and was married; no antecedent history of dysentery, chronic illnesses, prescription medications, or recent travel could be retrieved from available records.\n\nExternal physical examination demonstrated a malnourished elderly male weighing 50 kg with a height of 165 cm (body mass index 18.4 kg/m²). Post-mortem opening of the peritoneal cavity disclosed 1,400 mL of serosanguineous ascitic fluid. Macroscopic examination of the gastrointestinal tract revealed extensive involvement of the entire large intestine, characterized by multiple necrotizing lesions and deep ulcerations extending contiguously from the cecum to the rectum, some displaying a flask-shaped appearance. A macroscopic perforation was identified in the right colon, accompanied by localized acute suppurative peritonitis. The liver, lungs, and other extra-intestinal viscera exhibited no gross lesions or metastatic abscesses.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Ischemic colitis / Mesenteric ischemia with bowel necrosis",
+      "rule_out_reason": "Ischemic colitis is common in the elderly and can cause colonic gangrene and perforation, but it typically affects vascular watershed areas and spares the rectum, whereas this patient presented with pancolonic necrotizing ulcerations extending from cecum to rectum with flask-shaped morphology.",
+      "quote": "The gross examination of the gastrointestinal tract revealed the involvement of the entire colon by many necrotizing lesions and ulcers, sometimes with a flask-shaped appearance extending from the cecum to the rectum (Figure 1)."
+    },
+    {
+      "candidate": "Inflammatory bowel disease (Fulminant Ulcerative Colitis or Crohn's Disease)",
+      "rule_out_reason": "Severe inflammatory bowel disease can lead to toxic megacolon, pancolitis, and perforation, but histopathological evaluation of the ulcer beds revealed deep undermining margins composed of necrotic debris with a striking paucity of inflammatory cells, unlike the dense cryptolytic or transmural lymphoid inflammatory infiltrates characteristic of IBD.",
+      "quote": "The lesions comprised necrotic material with prominent nuclear debris and few inflammatory cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the colonic ulcer margins demonstrated necrotic undermining ulcers containing trophozoites with foamy cytoplasm and eccentric nuclei showing ingested erythrocytes positive on Periodic Acid-Schiff (PAS) staining, establishing fulminant necrotizing colitis caused by Entamoeba histolytica.",
+      "quote": "Amebic trophozoites had a foamy cytoplasm with round eccentric nuclei resembling large macrophages. Red blood cells were phagocytized by the trophozoites, which were stained by Periodic Acid-Schiff (PAS) (Figure 2B)."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative faithfully captures post-mortem triage presentation without revealing histopathologic confirmation or pathogen identity. Strict zero-spoiler compliance maintained."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10442170_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An immunocompetent adult male presenting with multiple left-lobe liver abscesses refractory to standard empiric oral and parenteral antibiotics, with an unremarkable chest radiograph and absent pulmonary symptoms.\n2. Admission Breakpoint: Immediately following cross-sectional imaging (CT abdomen showing multiple left lobe abscesses) and baseline labs, prior to ultrasound-guided pus aspiration and microbiological/cytological analysis.\n3. Differential Distinctions: Pyogenic liver abscess (excluded by failure of multiple empiric antibiotic regimens), amebic liver abscess (excluded by persistent lesions despite broad antimicrobial therapy and negative amebic response), and necrotic malignancy (ruled out by cytology and molecular confirmation).",
+  "case_prompt": "A 48-year-old male with no known comorbidities presents with a one-month history of abdominal pain, low-grade fever, anorexia, and weight loss. Prior to admission, he was evaluated at multiple health centers and treated empirically with various courses of oral and injectable antibiotics without symptomatic or radiological improvement. Physical examination shows a patient weighing 52 kg with tenderness in the epigastric and left hypochondriac regions. Laboratory evaluation reveals anemia, hypoalbuminemia, and significantly elevated C-reactive protein (CRP). Chest radiography is normal with clear lung fields. Abdominal ultrasonography and computed tomography demonstrate multiple discrete abscesses confined to the left lobe of the liver, the largest measuring 4.5 x 4.8 x 3.6 cm, with no other intra-abdominal abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic liver abscess",
+      "rule_out_reason": "Pyogenic bacterial abscesses were considered the primary differential but were ruled out following complete lack of response to multiple empiric injectable and oral antibacterial regimens administered over a one-month period.",
+      "quote": "for which the patient had received various treatments at multiple health centers over the past month including injectable and oral antibiotics."
+    },
+    {
+      "candidate": "Amebic liver abscess",
+      "rule_out_reason": "Amebic abscess is a frequent etiology in endemic regions but was rendered unlikely by refractory progression despite extensive multi-center antibiotic therapies and absence of typical amebic aspirate characteristics.",
+      "quote": "Ultrasound abdomen of this patient was suggestive of multiple abscesses in the left lobe of the liver, the largest measuring 4.5 x 4.8 x 3.6 cm, for which the patient had received various treatments at multiple health centers over the past month"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ultrasound-guided pus aspiration revealed suppurative necrosis containing acid-fast bacilli on cytology, and cartridge-based nucleic acid amplification test (CBNAAT) definitively identified rifampicin-sensitive Mycobacterium tuberculosis.",
+      "quote": "The fluid cytology showed that fluid was suppurative with primarily degraded, viable polymorphs, acid fast bacilli in a necrotic backdrop. The cartridge-based nucleic acid amplification test (CBNAAT) for MTB of the aspirated sample detected MTB that was rifampicin-sensitive."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation completed. Presentation strictly capped at triage CT/ultrasound prior to pus aspiration. Absolute zero-spoiler adherence."
+}

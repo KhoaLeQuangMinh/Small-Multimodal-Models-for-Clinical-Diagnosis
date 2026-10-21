@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7490298_06",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 29-year-old pregnant woman developed a pruritic exanthema during the second trimester without reported prostrating systemic signs. Pruritic rash in pregnancy frequently gets dismissed as benign pregnancy-related dermatoses (e.g., PUPPP or eczema), concealing an active neurotropic arbovirus with severe fetopathic potential.\n2. Admission Breakpoint: The admission clinical presentation concludes following the clinical history and dermatologic evaluation of the pruritic exanthema in the second trimester of pregnancy, prior to any arboviral serological and neutralization testing.\n3. Differential Distinctions: Polymorphic eruption of pregnancy (PUPPP) occurs typically in the third trimester, lacks infectious viral etiology, and carries zero fetal neurologic risk; dengue virus produces high fever, pain, and cytopenias; Zika virus causes prominent pruritic maculopapular exanthema and exhibits high neurotropism leading to transplacental infection and congenital microcephaly.",
+  "case_prompt": "A 29-year-old pregnant woman presented to the outpatient obstetric clinic during the second trimester of gestation reporting the acute onset of a generalized pruritic cutaneous eruption. She reported no prior medical conditions, drug exposures, or obstetric complications. Physical examination demonstrated a diffuse erythematous maculopapular exanthema involving the trunk and limbs accompanied by marked excoriations from pruritus, without systemic shock, lymphadenopathy, or enanthem. Physical and obstetric examination confirmed a singleton second-trimester intrauterine pregnancy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Polymorphic Eruption of Pregnancy (PUPPP) / Gestational Pruritus",
+      "rule_out_reason": "Pruritic rash in pregnancy is frequently attributed to benign non-infectious dermatoses; however, PUPPP typically arises in late pregnancy (third trimester) and lacks the characteristic infectious serological markers and teratogenic risk of viral exanthems.",
+      "quote": "Case 6: A 29 year old patient that reported exanthema and pruritus in the second trimester of gestation."
+    },
+    {
+      "candidate": "Other Tropical Arboviral Infections (Dengue / Chikungunya)",
+      "rule_out_reason": "Dengue and chikungunya are common differentials for acute tropical exanthems but are not classically associated with congenital microcephaly, and confirmatory testing established high titers of neutralizing antibodies specific to Zika virus.",
+      "quote": "Her IgM serology was positive for Zika and the PRNT90% was positive for neutralizing antibodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation was established by positive maternal Zika-specific IgM serology and high-specificity PRNT90% neutralizing antibodies, with maternal-fetal transmission evidenced by severe fetal microcephaly (head circumference 30 cm) at delivery.",
+      "quote": "Her IgM serology was positive for Zika and the PRNT90% was positive for neutralizing antibodies. At 38 weeks of gestation, her baby girl was born by cesarean that presented a cephalic circumference of 30 cm."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation strictly stops before serologic or neutralization testing. Zero mentions of Zika or arbovirus in prompt. Differential includes verbatim quotes from the report."
+}

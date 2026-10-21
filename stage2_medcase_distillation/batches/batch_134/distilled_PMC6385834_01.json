@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6385834_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 22-year-old male presents with exertional angina and proximal coronary artery occlusions. In a young patient without traditional atherosclerotic risk factors, exertional ischemia caused by an infiltrating myocardial cystic mass compressing the coronary arteries is an extraordinary and challenging clinical presentation.\n2. Admission Breakpoint: The breakpoint stops after initial clinical evaluation, chest imaging, exercise stress electrocardiography, transthoracic echocardiography, and coronary angiography, prior to open median sternotomy, surgical cyst excision, and send-out serology/pathology.\n3. Differential Distinctions: Premature atherosclerotic coronary disease and coronary spasm do not account for a 2x2 cm well-defined myocardial cystic mass; primary cardiac tumors (such as cardiac myxomas or fibromas) lack classic fluid characteristics and associated calcified parenchymal lesions; intraoperative finding of 'eau de roche' fluid and positive echinococcal IgG-ELISA confirm intracoronary hydatid cyst (Echinococcosis).",
+  "case_prompt": "A 22-year-old male presented to the cardiology clinic with progressive exertional angina. His past medical history was notable for a pulmonary cystic lesion treated surgically via cystectomy and capitonnage followed by a 12-week course of oral anthelmintic therapy five years prior.\n\nPhysical examination and vital signs were normal, with no murmurs, gallops, or signs of heart failure. Plain chest radiography and thoracic computed tomography (CT) demonstrated only a few scattered calcifications within the pulmonary parenchyma.\n\nAn exercise stress test was performed, which elicited ST segment depression reproducing his exertional chest pain. Transthoracic echocardiography revealed a 2 × 2 cm cystic mass with well-defined borders situated on the anterior wall of the left ventricle. Subsequent coronary cineangiography demonstrated proximal occlusion of the left anterior descending artery (LAD) and first diagonal artery.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Premature Atherosclerotic Coronary Artery Disease",
+      "rule_out_reason": "Exertional angina with exercise-induced ST depression and angiographic coronary occlusions suggests severe coronary atherosclerosis, but this is exceptionally rare in a 22-year-old without metabolic risk factors and fails to account for the well-defined left ventricular cystic mass.",
+      "quote": "Cineangiography of the patient with ST segment depression in exercise test revealed that the left diagonal artery (LAD) and 1st diagonal arteries were proximally occluded (Figure 2). In transthoracic echocardiography, a cystic mass of 2x2 cm with well-defined borders was detected on the left ventricular anterior wall"
+    },
+    {
+      "candidate": "Primary Cardiac Neoplasm (Cardiac Myxoma or Fibroma)",
+      "rule_out_reason": "A well-circumscribed anterior left ventricular mass detected on echocardiography can represent a primary benign cardiac tumor, but primary cardiac neoplasms are usually solid, do not typically infiltrate between the left main and coronary branches, and do not present with clear fluid content.",
+      "quote": "In transthoracic echocardiography, a cystic mass of 2x2 cm with well-defined borders was detected on the left ventricular anterior wall (Figure 3)... Since calcified, the cyst was isolated en bloc with the coronary artery segments it had infiltrated"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical excision revealed a calcified 2x2 cm cyst infiltrating the coronary arteries containing crystal-clear fluid ('eau de roche'), with pathological examination and positive echinococcal IgG-ELISA confirming an intracoronary hydatid cyst (Echinococcosis).",
+      "quote": "Macroscopically, it was detected that the cyst contains clear colorless fluid (eau de rock). Microbiological and pathological analysis of both the cyst and its ingredients revealed findings consistent with the hydatid cyst. Echinococcal IgG-ELISA test was found to be positive (sensitivity: 94%, specificity: 99%)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly positioned before sternotomy and surgical pathology. All disease-specific terms (hydatidosis, albendazole) desensitized in case_prompt. Verbatim quotes from source text substantiate all reasoning steps."
+}

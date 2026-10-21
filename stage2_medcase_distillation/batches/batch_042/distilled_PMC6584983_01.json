@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6584983_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 47-year-old man presenting with chronic abdominal distension, nausea, 10-kg weight loss, exudative ascites, elevated serum CA-125, omental smudging, and multiple parietal peritoneal nodules on CT, with centrally congregated small bowel loops encapsulated within a thick membrane. The clinical tension is differentiating peritoneal carcinomatosis or malignant peritoneal mesothelioma from an atypical chronic infectious peritonitis presenting as an abdominal cocoon (sclerosing encapsulating peritonitis) secondary to Mycobacterium tuberculosis.\n2. Admission Breakpoint: Initial clinical assessment and staging workup including physical examination, baseline laboratory investigations (serum tumor markers, CA-125, serum ADA, ESR), paracentesis fluid analysis, chest radiography, and contrast-enhanced CT of the abdomen and pelvis. Confirmatory diagnostic laparoscopy, peritoneal biopsy, acid-fast staining, and mycobacterial cultures begin after this point.\n3. Differential Distinctions: Peritoneal carcinomatosis was ruled out by negative gastroscopy, repeatedly negative ascitic cytologies for malignant cells, and laparoscopic biopsy showing caseating granulomas rather than malignant adenocarcinoma. Peritoneal mesothelioma was excluded by the absence of asbestos exposure and biopsy demonstration of granulomatous inflammation with acid-fast bacilli. Tuberculous peritonitis was confirmed by positive acid-fast staining and culture isolation of Mycobacterium tuberculosis from the peritoneal cocoon membrane.",
+  "case_prompt": "A 47-year-old man presented with a history of progressive abdominal distension, intermittent abdominal pain, nausea, and vomiting, accompanied by increasing fatigue, emaciation, and a 10-kg weight loss over recent months. He reported no fever, chronic cough, or night sweats. He had no history of abdominal surgery, liver cirrhosis, or viral hepatitis, but noted a remote history of pleurisy approximately 20 years earlier.\nOn physical examination, the abdomen was grossly distended and non-tender, with clinical signs of large-volume ascites. No peripheral lymphadenopathy, jaundice, or physical stigmata of chronic liver disease were present.\nLaboratory blood analyses revealed an erythrocyte sedimentation rate (ESR) of 28 mm/h (normal: 0-15 mm/h), a serum adenosine deaminase (ADA) level of 21 U/L (normal: 4-18 U/L), and an elevated serum CA-125 level of 97.39 U/mL (normal: <35 U/mL). Standard serum tumor markers, specific infectious serologies, and HIV screening were negative, and a tuberculin skin test was negative. Chest radiography showed no evidence of active pulmonary disease. Plain abdominal radiographs showed colonic air without air-fluid levels or free subdiaphragmatic gas.\nDiagnostic paracentesis yielded blood-stained, exudative ascitic fluid with an elevated ascitic ADA level of 41 U/L; fluid cytology was negative for malignant cells, and smears were negative for bacteria and special-stain micro-organisms. Gastroscopy revealed no mucosal malignancy.\nContrast-enhanced computed tomography (CT) of the abdomen and pelvis demonstrated congregated small bowel loops centrally pooled and encased within massive ascites surrounded by a distinct membrane. In addition, CT revealed a smudged appearance of the greater omentum and multiple small nodules and sheetlike plaque lesions along the parietal peritoneum, concerning for peritoneal carcinomatosis; mesenteric lymphadenopathy was absent.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal carcinomatosis (PC)",
+      "rule_out_reason": "Considered due to progressive abdominal distension, marked weight loss, elevated serum CA-125, omental smudging, and sheetlike peritoneal nodularity on CT. However, gastroscopy was negative for primary malignancy, multiple paracentesis fluid cytologies revealed no malignant cells, and surgical biopsy confirmed granulomatous inflammation with acid-fast bacilli rather than neoplastic implants.",
+      "quote": "multiple small nodules and sheetlike lesions on the parietal peritoneum (Fig. 2. s, arrowhead), which the radiologists considered to be peritoneal carcinomatosis (PC)."
+    },
+    {
+      "candidate": "Malignant peritoneal mesothelioma",
+      "rule_out_reason": "Considered because of extensive sheetlike thickening of the parietal peritoneum, encasement of small bowel loops, and recurrent hemorrhagic exudative ascites. However, histopathology of the encapsulating membrane and peritoneal nodules demonstrated caseating granulomas rather than malignant mesothelial proliferation.",
+      "quote": "The presumptive diagnosis was PC or tuberculous peritonitis in our patient, however, other differential diagnosis, such as peritoneal mesothelioma, could not be completely ruled out."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal confirmatory turning point was diagnostic laparoscopy demonstrating the small bowel encapsulated within a dense fibrous cocoon-like membrane with miliary peritoneal tubercles, with biopsy showing caseous granulomatous inflammation positive for acid-fast bacilli and positive culture for Mycobacterium tuberculosis.",
+      "quote": "Biopsy of the nodules and plaques revealed caseous granulomatous inflammation and the specimen were stained positive for acid-fast bacilli."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified admission breakpoint strictly excludes laparoscopy findings, biopsy histology, culture growth of M. tuberculosis, and antitubercular medical regimen."
+}

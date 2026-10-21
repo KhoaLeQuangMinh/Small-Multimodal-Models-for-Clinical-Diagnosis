@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC2808561_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 50-year-old businessman with 20 years of residence in Indonesia presented with chronic intermittent fever, cough, sputum, and myalgias. He was empirically treated in Indonesia for typhoid fever without relief, and initial chest imaging showing satellite nodules was considered highly suggestive of pulmonary tuberculosis. After moxifloxacin failed, repeat imaging demonstrated migrating pulmonary infiltrates (resolution of prior nodules with new infiltrates in a different lobe), mimicking systemic necrotizing vasculitis (granulomatosis with polyangiitis) or eosinophilic pneumonia.\n2. Admission Breakpoint: The admission clinical narrative halts upon admission to the hospital for evaluation of migratory pulmonary infiltrates, including clinical history (Indonesia travel, prior treatment failures), physical examination (fever 38\u00b0C, absence of other focal signs), and initial admission laboratories (WBC 5,240/\u00b5L, Hb 11.6 g/dL, normal LFTs and renal function, normal IgA, negative c-ANCA). Repeat bronchoscopy, bronchial washing cytology, Gram stain showing safety-pin morphology, biochemical API20NE/VITEK identification, and 16S rRNA gene sequencing occur post-breakpoint.\n3. Differential Distinctions: Pulmonary tuberculosis typically produces apical or upper lobe consolidations and satellite nodules, but bronchial washing cultures and moxifloxacin failure in the setting of migratory infiltrates argues against TB. Granulomatosis with polyangiitis produces migratory pulmonary nodules and infiltrates but is excluded by negative c-ANCA and absence of renal involvement. Pulmonary melioidosis presents in travelers/residents returning from Southeast Asia as subacute or chronic fever with protean pulmonary infiltrates that can migrate or fluctuate, definitively identified by safety-pin Gram-negative bacilli on culture yielding Burkholderia pseudomallei.",
+  "case_prompt": "A 50-year-old man presented for hospital admission due to persistent intermittent fever, productive cough, sputum production, generalized myalgias, and progressive general weakness of approximately four weeks' duration. He had resided in Indonesia for twenty years for business. Prior to returning, he had presented to a local hospital in Indonesia, where he was empirically treated for suspected typhoid fever without clinical improvement. He had no history of diabetes mellitus, chronic lung disease, or prior medical illnesses. Upon initial presentation to an outpatient clinic in Korea, chest radiography and computed tomography (CT) demonstrated multiple satellite nodules distributed within the left upper and lower lobes, which were initially interpreted as radiographically suspicious for an atypical or granulomatous mycobacterial infection; however, initial bronchoscopy showed no endobronchial lesions, and bronchial washing cytology and mycobacterial cultures were negative. He was prescribed oral moxifloxacin, but his respiratory symptoms and fevers failed to improve. Three months later, follow-up chest radiography and CT revealed resolution of the previous left upper and lower lobe nodules, but demonstrated new consolidative infiltration in the left lower lobe. He was admitted for further evaluation of these migrating pulmonary lesions. On admission physical examination, his body temperature was 38.0\u00b0C; pulmonary auscultation and the remainder of the physical examination were normal. Initial laboratory studies revealed a white blood cell count of 5,240/\u00b5L, hemoglobin of 11.6 g/dL, and normal hepatic and renal function panels. Serum IgA was 227 mg/dL (reference range 90\u2013400 mg/dL), and cytoplasmic antineutrophil cytoplasmic antibodies (c-ANCA) were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Tuberculosis",
+      "rule_out_reason": "Considered the most likely initial diagnosis based on chest radiograph and CT findings showing multiple satellite nodules in the left lower and upper lobes. Ruled out by negative initial bronchial washing cytology and cultures, lack of improvement on moxifloxacin, and eventual isolation of Gram-negative bacilli from repeat bronchoalveolar lavage.",
+      "quote": "Initial chest radiograph and computed tomography (CT) images showed multiple satellite nodules in the left lower and upper lobes, and judging from that roentgenographic examination, tuberculosis was the most probable diagnosis (Fig. 1). Bronchoscopy showed no endobronchial lesion and washing cytology and culture were also negative."
+    },
+    {
+      "candidate": "Typhoid Fever (Enteric Fever)",
+      "rule_out_reason": "Considered during the patient's initial presentation in Indonesia given prolonged fever, myalgias, and constitutional weakness in an endemic region. Ruled out by complete lack of symptomatic response to empiric anti-typhoid therapy and subsequent development of progressive, migratory pulmonary infiltrates.",
+      "quote": "visited a local hospital in Indonesia and was treated for typhoid fever without improvement of symptoms."
+    },
+    {
+      "candidate": "Granulomatosis with Polyangiitis (Wegener's Granulomatosis) / Systemic Vasculitis",
+      "rule_out_reason": "Considered due to constitutional symptoms accompanied by migratory pulmonary nodular infiltrates that resolved in some areas while emerging in others, refractory to fluoroquinolones. Ruled out by normal renal function, normal serum IgA, negative cytoplasmic ANCA (c-ANCA), and culture recovery of a bacterial pathogen.",
+      "quote": "IgA was 227 mg/dL (normal range: 90-400 mg/dL) and anti-neutrophilic cytoplasmic antibodies with cytoplasmic staining pattern (CANCA) was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic breakthrough occurred following repeat bronchoscopy, where left lower lobe secretions grew a Gram-negative, safety-pin-shaped bacterium forming rugose colonies on blood agar, identified as Burkholderia pseudomallei via API20NE strip, VITEK GNI card, and 100% homologous 16S ribosomal RNA gene sequencing, leading to rapid resolution on intravenous ceftazidime.",
+      "quote": "By biochemical examination of API20NE strip and VITEK GNI card (BioMerieux, Inc., Hazelwood, U.S.A.), the organism was identified as Burkholderia pseudomallei."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict compliance with Stanford MedCaseReasoning principles. The admission narrative halts prior to repeat bronchoscopic culture, bacterial morphology, and sequencing. Zero spoilers in case prompt. Verbatim quotes verify each candidate rule-out."
+}

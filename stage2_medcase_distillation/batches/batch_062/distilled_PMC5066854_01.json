@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5066854_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 65-year-old shepherd from an endemic region presents in profound septic shock and coma (GCS 8) with extreme hyperpyrexia (40.5 C), severe normocytic anemia, and jaundice. The acute multi-organ collapse can easily be mistaken for acute bacterial meningitis or primary hepatobiliary sepsis.\n2. Admission Breakpoint: The admission presentation stops after initial triage vital signs, physical exam, and baseline laboratory panels (CBC, LFTs, blood glucose, urinalysis, initial CSF testing), prior to rapid diagnostic testing for hemoparasites and blood smear microscopy.\n3. Differential Distinctions: Acute bacterial meningitis causes high fever, altered mental status, and circulatory collapse, but lumbar puncture demonstrates purulent CSF pleocytosis. Severe Plasmodium falciparum infection presents with normal CSF but profound intravascular hemolysis, acute renal injury, microvascular sequestration leading to cerebral involvement (Glasgow 8), and jaundice with direct hyperbilirubinemia.",
+  "case_prompt": "A 65-year-old male shepherd residing in the Hodh El Gharbi region of Mauritania with no prior history of renal disease presented with acute high-grade fever, chills, severe myalgias, vomiting, and sudden loss of consciousness. Three days prior to admission, he developed a flu-like prodrome consisting of fever, headache, arthralgias, and diffuse abdominal pain.\n\nOn physical examination, the patient was obtunded in a comatose state with a Glasgow Coma Scale (GCS) score of 8. He exhibited marked scleral icterus, cutaneous jaundice, dyspnea, and profound conjunctival and mucosal pallor. There were no cutaneous rashes, peripheral edema, or palpable lymphadenopathy. Vital signs were severely deranged: blood pressure was 60/40 mmHg (distributive/septic shock), pulse was tachycardic, respiratory rate was 38 breaths per minute, and core body temperature was 40.5 C.\n\nInitial laboratory evaluation revealed marked normocytic anemia with a hemoglobin of 7.0 g/dL and mean corpuscular volume (MCV) of 87 fL. Hepatic panel showed elevated transaminases (AST 104 IU/L, ALT 93 IU/L) and conjugated hyperbilirubinemia with a total bilirubin of 49 mumol/L and direct bilirubin of 77 mumol/L. Random blood glucose was 1.02 g/L. Urinalysis was negative for proteinuria or active sediment, and initial cerebrospinal fluid examination was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Meningitis / Sepsis",
+      "rule_out_reason": "Considered because of extreme hyperpyrexia (40.5 C), acute coma with a GCS of 8, and septic shock, but cerebrospinal fluid analysis was entirely normal.",
+      "quote": "Urinalysis and cerebrospinal fluid tests were negative."
+    },
+    {
+      "candidate": "Primary Hepatobiliary Sepsis / Cholangitis",
+      "rule_out_reason": "Considered due to abdominal pain, jaundice, direct hyperbilirubinemia, and transaminitis in the setting of shock, but ruled out by lack of biliary signs and rapid confirmation of intraerythrocytic parasitemia.",
+      "quote": "Clinical examination on admission showed severe impairment of consciousness with a Glasgow score of 8, jaundice, dyspnea, and pallor."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid diagnostic antigen testing and microscopic examination of blood smears confirmed heavy Plasmodium falciparum parasitemia, explaining the severe cerebral involvement, intravascular hemolysis, and secondary acute renal failure with pulmonary edema.",
+      "quote": "The rapid diagnostic test for malaria and microscopic examination of blood smears were positive for P. falciparum."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission narrative capturing vital signs, exam, and initial lab/CSF results before parasitologic confirmation. Strict breakpoint maintained. All candidate quotes verified."
+}

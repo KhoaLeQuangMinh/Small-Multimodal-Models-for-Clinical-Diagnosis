@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5005598_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 32-year-old man presents with a deep, painless perianal mass and chronic constipation originally referred under suspicion of an invasive retroperitoneal sarcoma. Pelvic imaging discloses two distinct anatomic abnormalities: an expansive retrorectal multilocular cyst and a separate contiguous cluster of smaller cysts in the left ischioanal fossa breaching the levator ani. The diagnostic tension lies in resolving whether these represent a single extensive malignancy, a developmental anomaly, or co-existing benign/infectious cystic pathology.\n2. Admission Breakpoint: Admission evaluation includes the clinical history, physical exam, contrast-enhanced CT, FDG-PET/CT, and pelvic MRI demonstrating the anatomical contours and signal characteristics of the lesions. It strictly concludes before surgical resection and histopathologic examination.\n3. Differential Distinctions: Retroperitoneal sarcomas typically display solid enhancing soft tissue elements, invasion into bone or adjacent viscera, and FDG avidity on PET, all absent here. An isolated tailgut cyst (retrorectal hamartoma) accounts for the retrorectal mass but cannot explain an anatomically distinct, contiguous cystic cluster in the ischioanal fossa displaying a low T1/high T2 multivesicular daughter cyst architecture characteristic of perineal hydatid disease.",
+  "case_prompt": "A 32-year-old male with a history of childhood poliomyelitis presents to a tertiary care medical center with a 1-year history of a progressively enlarging, painless deep perianal mass accompanied by intermittent chronic constipation. He was referred for evaluation of a suspected retroperitoneal sarcoma. Physical examination reveals asymmetric atrophy of the right hemipelvis and proximal thigh muscles consistent with his prior poliomyelitis, and a large deep perianal mass.\n\nContrast-enhanced computed tomography (CT) of the pelvis reveals a large (7.2 x 7.9 x 15.5 cm) multilocular, hypoattenuating retrorectal cystic lesion that displaces the rectum and rectosigmoid anteriorly without invading the prostate, seminal vesicles, or major adjacent pelvic vessels. CT additionally reveals a separate collection of smaller contiguous cysts in the left ischioanal fossa and left perineal subcutaneous fat, running parallel and adjacent to the left puborectalis muscle and breaching the left levator ani. No lesions are identified elsewhere in the abdominal cavity.\n\nAn 18F-fluorodeoxyglucose (FDG) positron emission tomography/CT (PET/CT) scan demonstrates no abnormal tracer uptake within either lesion, and no regional lymphadenopathy or distant metastases are present. Pelvic magnetic resonance imaging (MRI) reveals the retrorectal mass to have intermediate signal intensity on both T1- and T2-weighted sequences with multiple internal T1-hypointense and T2-hyperintense foci. The separate left ischioanal fossa collection demonstrates low T1 and high T2 signal intensity with multiple internal cysts and a T1/T2 hypointense rim, exhibiting thin peripheral enhancement without any enhancing mural solid component or osseous involvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Retroperitoneal Sarcoma",
+      "rule_out_reason": "Considered as the initial referral diagnosis for an extensive pelvic mass, but ruled out by the absence of solid enhancing mural nodules, absence of osseous invasion, and lack of abnormal FDG uptake on PET/CT imaging.",
+      "quote": "An 18F-fluorodeoxyglucose (FDG) positron emission tomography (PET/CT) scan was performed and showed no abnormal uptake in these lesions; no regional lymphadenopathy or distant metastases were seen"
+    },
+    {
+      "candidate": "Isolated Tailgut Cyst (Retrorectal Hamartoma)",
+      "rule_out_reason": "Tailgut cyst correctly accounted for the benign multilocular retrorectal retro-cystic mass, but failed to explain the separate contiguous cluster of smaller cysts infiltrating the left ischioanal fossa and subcutaneous perineum.",
+      "quote": "The histopathologic examination of the resected retrorectal cyst revealed a benign tailgut cyst."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the separate resected left ischioanal and gluteal cystic lesions revealed an outer histiocytic inflammatory response surrounding a hydatid cyst, confirming primary perineal/ischioanal echinococcosis co-occurring with a benign developmental tailgut cyst.",
+      "quote": "The resected left ischioanal and gluteal cystic lesions showed an outer histiocytic reaction to a hydatid cyst."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation strictly complies with Stanford MedCaseReasoning criteria. Case prompt stops prior to surgical exploration and tissue histopathology."
+}

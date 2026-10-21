@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10589028_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old immigrant from Ghana with newly diagnosed advanced HIV infection (CD4 count 22 cells/uL) presents with subacute odynophagia, profound weight loss, fever, night sweats, a bulky subcarinal mediastinal mass encasing the mid-esophagus, and multiple splenic hypodensities. The presentation heavily mimics lymphoma or invasive esophageal malignancy, concealing disseminated mycobacterial infection with secondary esophageal ulceration.\n2. Admission Breakpoint: The breakpoint is positioned following admission emergency department assessment, baseline laboratories (leukocyte count 5.37 × 10^9/L, CD4+ count 22 cells/uL, and reactive HIV fourth-generation screen), and cross-sectional CT imaging of the chest, abdomen, and pelvis, strictly prior to upper endoscopy (EGD), endoscopic ultrasound (EUS) fine-needle aspiration, and sputum culture results.\n3. Differential Distinctions: Mediastinal and splenic lymphoma is the top imaging differential given diffuse B-symptoms and necrotic lymphadenopathy in advanced HIV, but cytology demonstrates necrotizing granulomatous inflammation rather than clonal neoplastic lymphocytes. Opportunistic viral esophagitis (CMV or HSV) accounts for severe odynophagia in profound immunosuppression, but biopsy demonstrates granulomatous tissue lacking viral cytopathic changes.",
+  "case_prompt": "A 29-year-old male from Ghana who had immigrated 2 years prior presented to the emergency department with a 6-month history of retrosternal chest pain and worsening odynophagia. His medical history was notable only for gastroesophageal reflux disease. Over the preceding 3 weeks, his symptoms had accelerated significantly, accompanied by subjective fevers, drenching nocturnal hyperhidrosis, and an unintentional weight loss of approximately 6.8 kg. Initial laboratory evaluation revealed a total white blood cell count of 5.37 × 10^9/L. Screening for human immunodeficiency virus (HIV) using a fourth-generation assay was reactive, and flow cytometry revealed a CD4+ T-lymphocyte count of 22 cells/μL. Computed tomography angiography (CTA) of the chest showed marked soft tissue thickening in the subcarinal mediastinum extending into the aortopulmonary window and precarinal region, encasing the adjacent esophagus, alongside an indeterminate 4-mm nodule in the right lower lobe. Contrast-enhanced CT of the abdomen and pelvis demonstrated multiple sub-centimeter hypodense lesions scattered throughout the spleen and a 1.6-cm low-density lymph node adjacent to the distal esophagus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Mediastinal and Splenic Lymphoma / Metastatic Malignancy",
+      "rule_out_reason": "In a patient with advanced HIV, B-symptoms, bulky subcarinal adenopathy, and multiple splenic hypodense nodules, lymphoma or metastatic neoplasia was the leading radiological suspicion; however, EUS-FNA of the lymph nodes and spleen revealed necrotizing granulomas rather than malignant lymphoid cells.",
+      "quote": "Significant soft tissue thickening in the subcarinal region extending into the AP window and precarinal region. Findings are suspicious for a mass/adenopathy with primary differential consideration including lymphoma. Metastatic disease is a differential diagnostic consideration."
+    },
+    {
+      "candidate": "Opportunistic Viral Esophagitis (CMV / HSV) or Primary Esophageal Carcinoma",
+      "rule_out_reason": "Severe odynophagia in a severely immunocompromised host commonly represents opportunistic CMV/HSV mucosal ulceration or esophageal malignancy; however, endoscopic biopsy of the cratered esophageal ulcer demonstrated granulation tissue with negative viral immunohistochemistry.",
+      "quote": "The patient then underwent EGD which found an esophageal ulcer, surgical pathology of the esophageal ulcer showed acute and chronic granulations tissue but negative for CMV, HSV and AFB stains."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endoscopic ultrasound-guided fine-needle aspiration of mediastinal nodes demonstrated necrotizing granulomatous inflammation, followed by definitive isolation of Mycobacterium tuberculosis from sputum cultures sent on admission, establishing disseminated tuberculosis with mediastinal lymphadenitis and secondary esophageal involvement.",
+      "quote": "Later, he underwent a subsequent EUS guided FNA of the subcarinal lymph nodes and splenic lesions. Surgical pathology showed necrotizing granulomas, Scant fragments of necrotic material with histiocytes, blood and fibrin mixed with scant lymphocytes... once we received the culture report of the sputum which was sent three weeks ago on admission showing positivity for Mycobacterium tuberculosis, we discontinued azithromycin and continued ATT."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission case narrative terminates cleanly after initial emergency labs (including HIV screening/CD4) and chest/abdominal CT scans, excluding IGRA, endoscopy, biopsy, and mycobacterial cultures. Verbatim quotations support all rule-outs and diagnostic pivot."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11748752_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 47-year-old male living with well-controlled HIV and extensive exposure to domestic swine and unboiled water in rural Tanzania presented for routine clinical evaluation. Despite harbouring massive, disseminated intracranial and extracranial calcified lesions across the cerebral parenchyma, basal ganglia, cerebellum, orbits, and head/neck soft tissues, he remained completely asymptomatic with no history of seizures, headaches, cognitive disturbance, or focal neurologic deficits.\n2. Admission Breakpoint: The breakpoint occurs prior to send-out serological screening and cranial computed tomography ('Serological testing for T. solium was positive for cysticercosis antibodies...').\n3. Differential Distinctions: Active/viable neurocysticercosis (ruled out by absence of mass effect, absence of perilesional edema, negative circulating antigen ELISA, and presence of dense quiescent calcifications), opportunistic intracranial infections such as toxoplasmosis or tuberculoma (ruled out by long-term viral suppression on ART, normal chest radiograph, and diffuse calcified rather than ring-enhancing lesions), and primary seizure disorder (ruled out by negative seizure history and normal exam).",
+  "case_prompt": "A 47-year-old male living with HIV attended an infectious diseases care and treatment clinic in the Southern Highlands of Tanzania for routine health assessment and endemic parasitic screening. He was diagnosed with HIV nine years earlier with a nadir CD4 count of 31 cells/mm³ (WHO stage II) and was established on combination antiretroviral therapy (tenofovir disoproxil fumarate, lamivudine, and dolutegravir), maintaining an undetectable HIV viral load over consecutive annual evaluations.\n\nHe worked as an artisanal small-scale gold miner for over a decade and maintained domestic swine on his homestead for ten years. He reported consuming pork and drinking unboiled surface water. He consistently utilized a household pit latrine and practiced regular hand hygiene. He denied any personal or family history of seizures, loss of consciousness, involuntary limb movements, progressive headaches, or cognitive impairment.\n\nOn physical examination, the patient was afebrile, healthy-appearing, and without pallor or jaundice. Thorough palpation of the head, neck, trunk, and extremities revealed no subcutaneous nodules. Complete neurological examination was entirely unremarkable, with intact cranial nerves, normal motor strength, preserved sensation, and no focal deficits. Dilated fundoscopic examination demonstrated normal red reflexes, clear vitreous bodies and choroid without floaters, and sharp, normal-appearing optic discs and maculae bilaterally.\n\nA plain chest radiograph showed a cardiac silhouette of normal size and configuration, clear lung fields bilaterally, sharp costophrenic angles, and an intact bony thorax.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Active / Viable Parenchymal Neurocysticercosis",
+      "rule_out_reason": "Considered given the patient's extensive pork consumption and decade-long pig farming in an endemic area, but ruled out clinically by the complete absence of neurological symptoms and immunologically by a negative circulating antigen ELISA.",
+      "quote": "negative for cysticercosis antigen by the apDia Cysticercosis Antigen (Ag) ELISA test"
+    },
+    {
+      "candidate": "Opportunistic Intracranial Infection (Cerebral Toxoplasmosis / CNS Tuberculoma)",
+      "rule_out_reason": "In a patient living with HIV and a historical CD4 nadir of 31 cells/mm³, space-occupying opportunistic CNS lesions must be considered, but sustained virological suppression on antiretroviral therapy, a normal chest radiograph, and absence of focal neurological deficits argued strongly against active opportunistic infection.",
+      "quote": "His viral load was undetectable and remained undetectable in all subsequent viral load tests in 2018, 2020, and 2021"
+    },
+    {
+      "candidate": "Primary Seizure Disorder / Symptomatic Epilepsy",
+      "rule_out_reason": "New-onset seizures are the predominant clinical hallmark of neurocysticercosis in endemic regions; however, this patient had never experienced seizures, syncope, or altered mental status.",
+      "quote": "The patient denied having experienced any loss of consciousnessor involuntary movements of limbs or having been diagnosed with epilepsy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Western blot antibody serology was positive, and contrast-enhanced cranial CT demonstrated widespread, punctate calcifications throughout the brain parenchyma, basal ganglia, cerebellum, and extracranial soft tissues without edema or mass effect, establishing the diagnosis of extensive inactive calcified neurocysticercosis.",
+      "quote": "Multiple calcifications typical for neurocysticercosis were seen in the cerebral parenchyma, basal ganglia, and cerebellum"
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of extensive calcified neurocysticercosis in an asymptomatic HIV-positive individual. Clean admission breakpoint with zero exposure of serology, CT imaging, or parasite nomenclature."
+}

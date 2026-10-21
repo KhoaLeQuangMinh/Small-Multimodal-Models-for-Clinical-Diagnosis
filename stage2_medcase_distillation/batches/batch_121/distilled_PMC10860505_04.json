@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10860505_04",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 56-year-old man presented with a 5-year history of seizures, progressive gait ataxia, urinary incontinence, and cognitive decline (Hakim-Adams triad features). He had previously been misdiagnosed with and unsuccessfully treated for chronic infectious meningitis with hydrocephalus. The fundamental clinical tension is distinguishing common causes of chronic communicating hydrocephalus or chronic basilar meningitis from subarachnoid racemose cysticercosis causing occult cisternal entrapment and brainstem compression.\n2. Admission Breakpoint: Clinical history of a 5-year neurocognitive and motor decline, treatment failure with prior empiric therapy, and repeat conventional brain MRI showing hydrocephalus and dilation of the ambient cistern with pontine indentation, strictly prior to high-resolution FIESTA imaging delineating internal cisternal septations.\n3. Differential Distinctions: CNS tuberculosis typically produces basal meningeal enhancement, CSF pleocytosis, and responds to standard antitubercular therapy, which failed completely in this patient. Idiopathic normal pressure hydrocephalus presents with gait apraxia, incontinence, and dementia, but does not typically induce seizures or cause focal mass effect/indentation on the pons and Sylvian fissures with multi-septated cystic structures.",
+  "case_prompt": "A 56-year-old male presented to the neurology service with a 5-year history of recurrent seizures, progressive gait impairment, ataxia, urinary incontinence, and insidious memory loss and forgetfulness. Based on the presence of hydrocephalus identified on prior neuroimaging, he had previously been evaluated at an outside center and treated empirically for chronic infectious meningitis with hydrocephalus, completing a 3-month course of targeted antimicrobial therapy without clinical improvement.\n\nOn physical examination, the patient was disoriented with prominent cognitive slowing. Neurological examination confirmed cerebellar and sensory ataxia, gait apraxia, and urinary urgency/incontinence, with generalized hyperreflexia.\n\nRepeat magnetic resonance imaging (MRI) of the brain was performed to investigate an alternative etiology. Conventional sequences demonstrated a markedly dilated ambient cistern with focal mass effect indenting the pons. The lateral ventricles were markedly enlarged, with concomitant dilatation of cerebrospinal fluid spaces across the bilateral temporoparietal regions and dominant widening of the Sylvian fissures, accompanied by moderate hydrocephalus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Central nervous system tuberculosis / Chronic tuberculous meningitis",
+      "rule_out_reason": "Initially suspected elsewhere as the cause of chronic hydrocephalus and progressive neurological deficits; ruled out by complete lack of clinical improvement following 3 months of compliant targeted medical therapy, absence of basal meningeal exudates, and demonstration of non-enhancing cisternal cysts.",
+      "quote": "Based on the presence of hydrocephalus on the previous MRI, he was treated elsewhere on the line for CNS tuberculosis. However, despite 3 months of antitubercular treatment, he showed no signs of improvement."
+    },
+    {
+      "candidate": "Idiopathic normal pressure hydrocephalus (iNPH)",
+      "rule_out_reason": "Considered due to the 5-year insidious clinical triad of gait disturbance, urinary incontinence, and progressive cognitive decline accompanied by marked ventriculomegaly; ruled out by the co-occurrence of seizures and the demonstration of focal cyst-like cisternal expansion causing structural pontine indentation.",
+      "quote": "A 56-year-old male patient came to our hospital with a history of seizures, gait impairment, incontinence, ataxia, and forgetfulness for 5 years."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "High-resolution FIESTA sequence MRI demonstrated pathognomonic thin internal septations within the dilated ambient cistern and Sylvian fissures exerting mass effect upon the pons, confirming the diagnosis of racemose neurocysticercosis.",
+      "quote": "On FIESTA MRI (Figure 4C and D), the lesion showed thin septations in the ambient cistern and Sylvian fissures, which strongly suggested the diagnosis of racemose NCC. Moderate hydrocephalus was also present."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set prior to FIESTA sequence disclosure. Previous empiric course appropriately desensitized to avoid spoilers. Exact quotes from source text verify candidates."
+}

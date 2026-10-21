@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9283086_01",
+  "disease": "Foodborne Trematodes",
+  "think": "<think>\n1. Core Clinical Tension: A 49-year-old male 9 months post-liver transplantation presents with abnormal temperature fluctuations, leukocytosis, and massive hypereosinophilia (60.9%). In an immunosuppressed allograft recipient, differentiating parasitic liver fluke infection from post-transplant bacterial cholangitis, acute allograft rejection, or drug-induced hypereosinophilia is the key challenge.\n2. Admission Breakpoint: The breakpoint is positioned after hospital admission, physical examination, and initial complete blood count with differential (leukocytosis with 60.90% eosinophils), prior to trial and failure of broad-spectrum antibiotics, repeat inflammatory biomarker surges, mNGS sequencing, and trematode serologies.\n3. Differential Distinctions: Bacterial cholangitis/sepsis is initially considered due to fever and elevated acute-phase reactants but excluded by failure to improve on cefoperazone/sulbactam; acute allograft rejection and drug reactions are ruled out by direct demonstration of biliary parasites; foodborne trematodiasis (Clonorchis sinensis) is established by mNGS detecting 60 C. sinensis reads, positive trematode IgG, and direct visualization of adult flukes flushed from the biliary tract.\n</think>",
+  "case_prompt": "A 49-year-old male who had undergone orthotopic liver transplantation approximately nine months earlier was admitted to the hospital with a one-week history of recurrent episodes of abnormal temperature regulation and hypothermia.\n\nOn physical examination upon admission, he was clinically stable without localized abdominal tenderness or acute peritoneal signs.\n\nAdmission laboratory evaluation demonstrated leukocytosis with a white blood cell count of 16.17 x 10^9/L (reference range: 3.5-9.5 x 10^9/L). The peripheral differential revealed profound hypereosinophilia with an eosinophil percentage of 60.90% (reference range: 0.4-8.0%) and a relative neutropenia with a neutrophil percentage of 30.90% (reference range: 40-75%).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-Transplant Bacterial Cholangitis / Sepsis",
+      "rule_out_reason": "Considered given fever, leukocytosis, and subsequent rise of inflammatory markers (CRP 61.8 mg/L, procalcitonin 0.85 ng/mL, IL-6 48 pg/mL) in an immunosuppressed liver transplant recipient, but ruled out by complete lack of response to broad-spectrum intravenous antibiotic coverage.",
+      "quote": "Despite several days of antibiotic treatment (Cefoperazone Sodium and Sulbactam Sodium, 1.5 g, Q8H), the laboratory examination on August 11 showed elevated C-reactive protein of 61.815 mg/L (CRP; normal, <10 mg/L), procalcitonin (Pct) of 0.85 ng/mL, and IL6 of 48 pg/mL (normal, 0-7 mg/mL)."
+    },
+    {
+      "candidate": "Acute Allograft Rejection / Drug-Induced Hypereosinophilic Syndrome",
+      "rule_out_reason": "Considered due to profound peripheral blood hypereosinophilia (60.90%) in an allograft recipient on immunosuppressive therapy, but ruled out by direct pathogen identification and mechanical parasite recovery rather than immunological rejection.",
+      "quote": "while CDC did not report a positive trematode IGg until four days later... On August 21, many Clonorchis Sinensis worms were flushed out of the biliary tract"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Foodborne Trematodes (Biliary Clonorchiasis)",
+      "rule_out_reason": "Prompted by profound peripheral hypereosinophilia (60.9%) and refractory fevers despite antibiotics; confirmed by plasma metagenomic next-generation sequencing (mNGS) identifying 60 Clonorchis sinensis sequence reads, subsequent CDC trematode IgG positivity, and macroscopic visualization of numerous adult flukes flushed from the biliary tree during biliary drainage, leading to full clinical and hematologic normalization following oral praziquantel.",
+      "quote": "To determine the cause of the fever, mNGS was performed, and the next day's sequencing data showed 60 clonorchis sinensis sequences, while CDC did not report a positive trematode IGg until four days later. The patient was prescribed praziquantel (0.2 g, Tid) orally for 3 consecutive days from August 14 to 16 and from August 31 to September 2, respectively. On August 21, many Clonorchis Sinensis worms were flushed out of the biliary tract (Figure 5A). Subsequently, all blood indicators of the patient returned to normal"
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. Metagenomic NGS, CDC trematode IgG, and biliary flushing held until diagnostic reasoning."
+}

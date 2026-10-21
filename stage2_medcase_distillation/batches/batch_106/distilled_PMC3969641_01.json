@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3969641_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 11-year-old child presenting with an indolent firm thyroid mass, necrotic changes on neck CT, and widespread thoracic (mediastinal/hilar) and intra-abdominal (portal, periportal, peripancreatic, para-aortic) lymphadenopathy. The clinical picture strongly simulated thyroid carcinoma with systemic nodal metastases or lymphoma, versus disseminated granulomatous disease.\n2. Admission Breakpoint: The admission clinical encounter ends following multiregional imaging (neck CT, chest CT/X-ray, abdominal ultrasound) and baseline triage labs (CBC, ESR, thyroid hormones, anti-TPO, HIV), immediately before fine-needle aspiration (FNA) of the thyroid lesion.\n3. Differential Distinctions: Thyroid malignancy (e.g., papillary thyroid cancer or lymphoma) was the primary differential diagnosis due to necrotic nodular thyroid enlargement and widespread multiregional lymphadenopathy, but cytology revealed benign follicular cells and caseating granulomas. Autoimmune thyroiditis was excluded by normal thyroid function and negative anti-TPO antibodies. Definitive confirmation of thyroid tuberculosis was made on FNA demonstrating cheesy caseous necrosis, epithelioid granulomas, and acid-fast bacilli on Ziehl-Neelsen and Auramine-O stains.",
+  "case_prompt": "An 11-year-old female child presented with a 2-month history of progressive swelling in the anterior neck in the thyroid region. On physical examination, the thyroid gland was palpably enlarged, measuring 4.0 x 2.5 cm, firm in consistency, and moved freely with deglutition. No cervical lymphadenopathy was palpable on initial physical examination.\n\nComputed tomography (CT) of the neck revealed enlarged bilateral thyroid lobes (right lobe measuring 21 x 13 mm, left lobe measuring 16 x 18 mm) demonstrating heterogeneous tissue density with internal necrosis, accompanied by bilateral cervical lymphadenopathy. Chest radiography revealed a non-homogeneous opacity in the right lower lung zone. CT of the thoracic cavity demonstrated enlargement of hilar and mediastinal lymph nodes, along with a minimal right-sided pleural effusion and pleural thickening. Transabdominal ultrasound showed multiple enlarged lymph nodes in the periportal, portal, peripancreatic, and para-aortic regions.\n\nLaboratory evaluation demonstrated hemoglobin of 10 g/dL with microcytic hypochromic indices on peripheral smear, and an erythrocyte sedimentation rate (ESR) of 40 mm in the 1st hour. Serum triiodothyronine (T3), thyroxine (T4), and thyroid-stimulating hormone (TSH) levels were within normal limits. Anti-thyroid peroxidase (anti-TPO) antibodies and serology for HIV antibodies were negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Thyroid carcinoma with lymph node metastases or lymphoma",
+      "rule_out_reason": "Considered strongly due to a rapidly enlarging firm thyroid mass with internal necrosis and extensive bilateral cervical, mediastinal, and retroperitoneal lymphadenopathy; ruled out by fine-needle aspiration cytology demonstrating benign follicular epithelial cells, epithelioid granulomas, and caseating necrosis rather than malignant neoplastic cells.",
+      "quote": "computed tomography (CT) scan neck showed large bilateral lobes of thyroid right measuring 21 x 13 mm and left 16 x 18 mm showing heterogeneous tissue density with evidence of necrosis, bilateral cervical lymphadenopathy... smears of the sediment showed caseating necrosis, few epithelioid cell granulomas and occasional benign follicular epithelial cells [Figures 1 and 2]."
+    },
+    {
+      "candidate": "Autoimmune thyroiditis (Hashimoto's disease)",
+      "rule_out_reason": "Considered in a young female presenting with firm diffuse thyroid enlargement; ruled out by preserved euthyroid hormone levels, absence of anti-TPO autoantibodies, and presence of caseating granulomas with mycobacteria.",
+      "quote": "T3, T4 and thyroid stimulating hormone were within the normal limits and anti-thyroid peroxidase antibody was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Thyroid Tuberculosis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "Fine-needle aspiration of the thyroid mass yielded thick cheesy aspirate; microscopic examination revealed caseating necrosis, epithelioid cell granulomas, and acid-fast bacilli on Ziehl-Neelsen staining and Auramine-O immunofluorescence, confirming primary/disseminated thyroid tuberculosis.",
+      "quote": "On fine-needle aspiration from the thyroid swelling, thick cheesy fluid was aspirated. The fluid was centrifuged and smears of the sediment showed caseating necrosis, few epithelioid cell granulomas and occasional benign follicular epithelial cells [Figures 1 and 2]. On Ziehl-Neelsen staining, smears showed acid fast bacilli (AFB). Tubercle bacilli were also detected by immunoflorescence microscopy using fluorescent Auramine-O stain. Based on caseating necrosis, epithelioid cell granulomas and demonstration of AFB, diagnosis of thyroid tuberculosis was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Thyroid tuberculosis is an exceptionally rare disease, representing less than 0.1% to 1% of all tuberculous lesions due to the thyroid gland's high vascularity, rich iodine content, and bactericidal properties. Fine-needle aspiration cytology with AFB staining avoids unnecessary surgical resection."
+}

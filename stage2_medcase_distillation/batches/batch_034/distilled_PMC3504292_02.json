@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3504292_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: The patient presents with painless, non-ulcerative, indurated dusky erythematous plaques localized to the anterior upper chest of 10 weeks' duration, completely refractory to a 2-week course of oral amoxicillin-clavulanic acid. Unlike prototypical ulcerative facial or extremity lesions of cutaneous leishmaniasis, these lesions are atypical in morphology (non-ulcerative, indurated plaques) and location (anterior chest wall). Furthermore, comprehensive systemic workup (complete blood count, liver and renal function panels, chest radiograph, and abdominal ultrasound) was unremarkable, and biopsy demonstrated prominent septal and lobular panniculitis, which can easily be misdiagnosed as primary autoimmune or connective tissue panniculitis (such as lupus panniculitis or sarcoidosis).\n\n2. Admission Breakpoint: The admission breakpoint occurs following complete triage clinical examination and non-invasive baseline systemic workup (normal chest radiograph, normal abdominal ultrasound, normal CBC and metabolic chemistries), strictly prior to obtaining the 6 mm punch biopsy and histopathologic staining.\n\n3. Differential Distinctions:\n- Subacute Bacterial Soft Tissue Infection: Empiric consideration for persistent erythematous skin lesions; excluded by absence of response to two weeks of amoxicillin-clavulanate and indolent non-suppurative course.\n- Primary Connective Tissue / Autoimmune Panniculitis (e.g., Lupus Panniculitis / Sarcoidosis): Suggested by indurated non-ulcerative chest plaques and prominent septal/lobular fat inflammation; excluded by normal systemic screening tests and histological identification of characteristic intracellular protozoal amastigotes restricted to the superficial dermis.\n- Cutaneous Lymphoma / Pseudolymphoma: Infiltrative plaques on the trunk with dense mononuclear infiltrate; excluded by demonstration of Leishmania tropica bodies with non-metachromatic nuclei on Giemsa stain.",
+  "case_prompt": "A 45-year-old female presents with painless, persistent cutaneous lesions on her anterior chest of 10 weeks' duration. Prior to presentation, she was treated with a two-week course of oral amoxicillin-clavulanic acid without clinical improvement. She is otherwise in good health with no known chronic medical conditions.\n\nPhysical examination reveals two non-tender, non-ulcerative, indurated, dusky erythematous plaques on her upper anterior chest. Systemic examination is unremarkable. Initial baseline laboratory and imaging investigations—including a complete blood film, renal function tests, liver function tests, plain chest radiograph, and abdominal ultrasonography—are all within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Subacute Bacterial Soft Tissue Infection",
+      "rule_out_reason": "Considered initially as a localized bacterial skin infection. Excluded by lack of clinical response to a two-week regimen of oral amoxicillin-clavulanic acid and non-ulcerative indolent plaque appearance.",
+      "quote": "She was treated with oral (amoxicillin-clavulanic acid) antibiotic for two weeks without any response, otherwise she was completely healthy."
+    },
+    {
+      "candidate": "Primary Autoimmune / Connective Tissue Panniculitis",
+      "rule_out_reason": "Considered due to the indurated nature of the chest wall plaques and prominent histopathologic finding of mixed septal and lobular panniculitis. Excluded by an entirely normal systemic diagnostic workup and the absence of parasite bodies in the adipose tissue despite their high concentration in the superficial dermis.",
+      "quote": "Complete workup included chest XR, complete blood film, liver function test, renal function test, and abdominal sonography, all these investigations were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis was confirmed by a 6 mm punch biopsy of a chest plaque demonstrating dense dermal lymphohistiocytic and plasma cell infiltration with granuloma formation and aggregations of high numbers of intracellular Leishmania tropica (LT) bodies on H&E and Giemsa staining.",
+      "quote": "Aggregations of high number of LT bodies were seen mainly inside of macrophages of the superficial dermis stained by H&E (Figure 2(b)). Gimesa stain confirmed the presence of the non-metachromatic nuclei of the LT bodies (Figure 2(c))."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Presentation captures non-ulcerative indurated chest plaques and normal baseline labs/imaging prior to punch biopsy. Differentials and diagnostic pivot are anchored to verbatim quotes."
+}

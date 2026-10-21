@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC11003597_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 27-year-old kidney transplant recipient presents with high fever, retro-orbital pain, myalgia, profound hypotension, allograft dysfunction, and progressive pancytopenia. The clinical tension is balancing transplant rejection versus severe tropical infection, while recognizing a life-threatening hyperinflammatory cascade (secondary hemophagocytic lymphohistiocytosis) triggered by a viral pathogen.\n2. Admission Breakpoint: The breakpoint is reached after initial emergency resuscitation, vital sign recording, abdominal ultrasound demonstrating mild splenomegaly, and baseline admission labs (pancytopenia, acute graft dysfunction, hyponatremia), immediately before tropical infectious serology (NS1 antigen, malaria, leptospirosis) returns.\n3. Differential Distinctions: Acute allograft rejection and calcineurin-inhibitor toxicity present with rising creatinine, but cannot explain acute retro-orbital headache, high fever, household illness clustering, and pancytopenia. Bacterial sepsis and other tropical pathogens (malaria, leptospirosis, scrub typhus) present with acute febrile illness and multiorgan dysfunction, but are excluded by sterile cultures and negative specific serologies/smears. Rapid detection of dengue NS1 antigen establishes the primary etiology.",
+  "case_prompt": "A 27-year-old male, who had undergone a deceased-donor kidney transplantation 6 months prior for end-stage renal disease secondary to IgA nephropathy, presented with a 3-day history of high-grade fever, retro-orbital pain, severe headache, and generalized myalgia. His cohabitating brother had developed an identical acute febrile illness during the same week. The patient's baseline post-transplant serum creatinine was 0.8 mg/dL on maintenance triple-drug immunosuppression consisting of tacrolimus, mycophenolate mofetil, and oral prednisolone. He denied abdominal pain, dysuria, dark urine, scleral icterus, rash, joint pain, or altered mental status.\n\nOn physical examination, he appeared dehydrated and acutely ill. Vital signs showed hypotension with a blood pressure of 90/60 mmHg and tachycardia. Systemic cardiopulmonary, abdominal, and neurological examinations were otherwise unremarkable. Electrocardiogram demonstrated sinus tachycardia. Routine laboratory investigations revealed pancytopenia, hyponatremia, and acute allograft dysfunction with an elevated serum creatinine. Tacrolimus trough level was therapeutic at 7 ng/mL. Bedside abdominal and pelvic ultrasonography revealed mild splenomegaly without hydronephrosis of the renal allograft. Intravenous fluid resuscitation was immediately instituted, resulting in prompt improvement of his blood pressure.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered given the abrupt onset of high-grade fever, myalgia, splenomegaly, and thrombocytopenia in an endemic tropical region, but excluded by negative peripheral blood smears and diagnostic assays.",
+      "quote": "Workup for leptospirosis, malaria, and scrub typhus was negative."
+    },
+    {
+      "candidate": "Leptospirosis",
+      "rule_out_reason": "Considered due to the combination of acute fever, hypotension, thrombocytopenia, and acute kidney injury, but ruled out by negative serological testing.",
+      "quote": "Workup for leptospirosis, malaria, and scrub typhus was negative."
+    },
+    {
+      "candidate": "Scrub Typhus",
+      "rule_out_reason": "Considered among acute febrile tropical etiologies causing systemic inflammation and cytopenias, but eliminated by negative specific testing.",
+      "quote": "Workup for leptospirosis, malaria, and scrub typhus was negative."
+    },
+    {
+      "candidate": "Bacterial Sepsis / Urinary Tract Infection",
+      "rule_out_reason": "Initial severe hypotension, tachycardia, and graft dysfunction raised concern for bacterial urosepsis, but cultures were negative.",
+      "quote": "Blood and urine cultures were sterile."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serological testing returned positive for dengue NS1 antigen, establishing acute dengue virus infection as the primary trigger, which subsequently induced secondary hemophagocytic lymphohistiocytosis.",
+      "quote": "Because of thrombocytopenia, investigations were sent to look for tropical infections. Dengue NS1 antigen returned positive... Hence, a diagnosis of dengue fever was made."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to Stanford MedCaseReasoning methodology. Co-inhabitant diagnosis kept generic in case_prompt to avoid pathogen leakage. Breakpoint ends prior to NS1 and bone marrow biopsy."
+}

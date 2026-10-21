@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4323713_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A chronic, progressive lower extremity ulcer with fibrino-necrotic changes that failed multiple empirical courses of antibiotics, antifungals, and steroids, presenting with an entirely nonreactive PPD skin test and normal systemic imaging, which profoundly misleads clinicians away from a mycobacterial etiology.\n2. Admission Breakpoint: The admission clinical presentation concludes following baseline serum inflammatory markers (ESR 48 mm/hr), autoimmune and infectious serologies (ANA, VDRL, HIV), nonreactive PPD skin testing, and normal plain radiographs of the chest and lower extremities, immediately before biopsy histopathology, specialized AFB cultures, and molecular PCR testing return.\n3. Differential Distinctions: Cutaneous leishmaniasis is excluded by nonreactive serology and lack of amastigotes; deep fungal/bacterial ulcerative pyoderma is ruled out by negative fungal and bacterial cultures and lack of response to prior therapies; the diagnosis of cutaneous tuberculosis is established despite a negative PPD by granulomatous histology, positive AFB culture, and IS6110 PCR amplification.",
+  "case_prompt": "A 63-year-old female presented with a chronic, progressive dermatological lesion on her right leg. The lesion had begun as an indurated, infiltrated erythematous-ferruginous plaque with central atrophic scars and subsequently progressed into a 6-cm ulcer displaying irregular borders and fibrino-necrotic areas. She had received prior sequential empirical courses of broad-spectrum antibacterial, antifungal, and systemic corticosteroid therapies without any clinical improvement.\n\nOn physical examination, the lesion was confined to the right lower leg as described, without peripheral stigmata of systemic vasculitis. Baseline complete blood cell count, Venereal Disease Research Laboratory (VDRL) test, antinuclear antibodies (ANA), and human immunodeficiency virus (HIV) screening were all negative or within normal limits. Plain radiographs of the chest and right lower extremity revealed no osseous or pulmonary abnormalities. The erythrocyte sedimentation rate (ESR) was elevated at 48 mm/hr, while a tuberculin purified protein derivative (PPD) skin test was nonreactive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous Leishmaniasis",
+      "rule_out_reason": "Considered in the differential diagnosis of a chronic indurated, non-healing necrotic cutaneous ulcer on the lower extremity; ruled out by negative targeted serological testing and absence of characteristic Leishmania amastigotes.",
+      "quote": "The following tests were normal: blood cell count, VDRL, ANA, AFB in the lymph nodes, HIV, culture for bacteria and fungi (in biopsy material), serology for leishmaniasis, and radiography of the chest and legs."
+    },
+    {
+      "candidate": "Deep Mycosis / Refractory Bacterial Pyoderma",
+      "rule_out_reason": "Considered due to the chronic ulcerative and fibrino-necrotic progression of the plaque; ruled out by complete lack of response to antibacterial and antifungal regimens as well as negative bacterial and fungal cultures from biopsy material.",
+      "quote": "She had been treated with antibiotics, antifungal and corticosteroid therapy with no improvement."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cutaneous Tuberculosis",
+      "rule_out_reason": "The definitive diagnosis was established despite the nonreactive PPD skin test by histopathologic demonstration of histiocytic and multinucleated giant cell granulomas, recovery of acid-fast bacilli on culture, and molecular confirmation via PCR targeting the IS6110 sequence of Mycobacterium tuberculosis.",
+      "quote": "The anatomicopathological study showed histiocytes and multinucleated giant cells (Figure 3). Culture was positive for AFB. PCR (polymerase chain reaction) revealed genotypic characters of Mycobacterium tuberculosis (primers TB1 (primers: TB1 (5'-CCTGCGAGCGTAGGCGTCGG-3') and TB2 (5'-CTCGTCCAGCGCCGCTTCGG-3')), which amplify a fragment of 123 base-pairs (bp) of the IS6110 sequence (Figure 4)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4323713. Case prompt stops following initial bloods, nonreactive PPD, and plain films, strictly excluding biopsy histopathology, tissue cultures, and IS6110 PCR. Zero diagnostic leakage."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5824505_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 25-year-old man presented with a 2-year history of an indolent, hard, lobulated palatal mass fixed to the maxillary bone causing mechanical masticatory and articulation disturbances, without sensory loss or mucosal ulceration. In the oral cavity, an osseous-fixed palatal mass typically suggests minor salivary gland neoplasia (pleomorphic adenoma, adenoid cystic carcinoma) or mesenchymal bone tumors, while subtle facial cutaneous suffusion provides the critical systemic dermatologic clue.\n2. Admission Breakpoint: The admission breakpoint falls immediately after intraoral examination, head and neck physical assessment (noting a suffused face and hard lobulated palatal mass without cervical lymphadenopathy), and normal baseline blood investigations, before incisional tissue biopsy and histopathologic confirmation.\n3. Differential Distinctions: Minor salivary gland tumors or maxillary osteosarcomas present as firm palatal masses but do not feature generalized cutaneous facial suffusion/infiltrative leonine facies, and histologically exhibit distinct glandular or malignant mesenchymal patterns rather than histiocytic granulomatous inflammation with intracellular acid-fast bacilli.",
+  "case_prompt": "A 25-year-old male presented to the clinic with a 2-year history of a slowly and progressively enlarging mass located on the hard palate. The mass initially appeared the size of a peanut and had steadily increased to its current size. He reported mechanical difficulty with mastication and phonetic articulation due to the mass effect, but denied local pain or numbness and reported no sensory loss over the hard palate or oral mucosa.\n\nOn physical examination, vital signs were normal. General physical examination was unremarkable with the notable exception of a distinctly suffused, mildly infiltrated facial appearance. On intraoral examination, a large, well-defined, lobulated mass was present on the hard palate. The lesion was firm-to-hard in consistency and fixed to the underlying maxillary bone. The overlying mucosa was intact, and the surface of the mass did not bleed upon touch. There was no associated cervical or submandibular lymphadenopathy.\n\nBaseline routine blood investigations, including complete blood count and basic metabolic parameters, were within normal reference ranges.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Salivary gland neoplasm (Pleomorphic adenoma / Adenoid cystic carcinoma)",
+      "rule_out_reason": "While minor salivary gland tumors represent the most frequent cause of firm palatal masses, they do not explain the patient's subtle systemic facial cutaneous infiltration ('suffused face') and are excluded by biopsy.",
+      "quote": "His general and physical examination was normal, except for his suffused face."
+    },
+    {
+      "candidate": "Malignant bone / mucosal tumor (Squamous cell carcinoma / Maxillary sarcoma)",
+      "rule_out_reason": "The lesion demonstrated very indolent two-year growth without mucosal ulceration, contact hemorrhage, sensory nerve deficit, or regional lymph node involvement.",
+      "quote": "The surface of the growth did not bleed on touch, and there was no associated lymphadenopathy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The slowly progressive lobulated palatal mass occurring in conjunction with subtle facial infiltration led to an incisional biopsy, which established the diagnosis by revealing characteristic histopathology with abundant foamy macrophages and mycobacteria.",
+      "quote": "Incisional biopsy was performed, and a histopathological diagnosis of lepromatous leprosy was confirmed [Figures 2-4]."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the admission prompt; verified canonical diagnosis."
+}

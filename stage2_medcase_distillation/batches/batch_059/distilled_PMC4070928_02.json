@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4070928_02",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 46-year-old woodcutter presents with progressive fistulae and nodules in his below-knee amputation stump, six years after undergoing amputation for an uncharacterized, treatment-refractory foot infection. An above-knee amputation has been proposed. The critical clinical tension is differentiating persistent post-surgical pyogenic osteomyelitis or soft-tissue malignancy from a chronic grain-producing granulomatous actinomycotic infection that remains medically curable, thereby preventing further limb loss.\n2. Admission Breakpoint: Admission triage concludes after documenting the occupational outdoor history, chronology of disease progression following amputation, and physical examination of the swollen stump with discharging sinus tracts and white granules. Confirmatory testing begins with needle aspiration and microbiological isolation of the causative organism.\n3. Differential Distinctions: Chronic bacterial stump osteomyelitis or fistulae produce purulent drainage but lack macroscopic grain extrusion and do not typically respond to targeted actinomycete antimicrobial regimens. True fungal mycetoma (eumycetoma) typically produces pigmented grains and requires wide surgical resection, whereas actinomycetoma produces pale/white grains responsive to medical therapy.",
+  "case_prompt": "A 46-year-old male woodcutter from Albania presents for evaluation of progressive swelling and non-healing lesions on his right lower extremity amputation stump.\n\nHis clinical history began nearly two decades earlier with chronic inflammatory swelling of the right foot. Despite multiple empiric courses of systemic antibiotics (including intravenous penicillin and gentamicin followed by other unspecified agents), the disease progressed inexorably, leading to a right below-knee amputation six years prior. Following surgery, the disease recurred proximally along the amputation stump. An above-knee amputation was recommended, which the patient refused.\n\nOn physical examination, the right below-knee amputation stump is prominently swollen and indurated, with multiple subcutaneous nodules and active sinus tracts extruding purulent fluid containing visible macroscopic white granules.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic bacterial stump osteomyelitis / Post-surgical sinus tract",
+      "rule_out_reason": "Persistent draining sinuses in an amputation stump are frequently attributed to deep bacterial osteomyelitis or retained foreign material; however, long-standing lack of response to penicillin and aminoglycosides and the production of organized white granules pointed away from standard pyogenic pathogens.",
+      "quote": "After receiving several courses of antibiotics (penicillin plus gentamycin followed by other unspecified drugs) without response, he underwent a below-knee amputation in 1995. Nevertheless, the disease showed further progression"
+    },
+    {
+      "candidate": "Eumycetoma (True fungal mycetoma)",
+      "rule_out_reason": "Chronic grain-producing fistulous tumefaction refractory to standard antibiotics is characteristic of mycetoma; distinguishing eumycetoma from actinomycetoma was essential, as fungal etiologies (such as Madurella mycetomatis) often produce dark/black grains and mandate aggressive surgical re-amputation, whereas bacterial forms respond to medical therapy.",
+      "quote": "He presented a swollen stump with nodules and sinuses draining white granules... One patient with Madurella mycetomatis infection had the infected foot amputated."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when needle aspiration of the stump nodules and white granules isolated Actinomadura madurae, definitively establishing recurrent actinomycetoma of the stump and guiding successful curative medical antibiotic therapy without requiring above-knee amputation.",
+      "quote": "The specimens obtained through needle aspiration permitted to diagnose, again, a mycetoma due to Actinomadura madurae. The patient was successfully treated with antibiotic therapy, similarly to patient 1, and showed no recurrence during the 2 year-follow up"
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning case for PMC4070928_02. Admission breakpoint strictly maintained before needle aspiration culture and therapeutic outcome. Zero pathogen spoilers in prompt."
+}

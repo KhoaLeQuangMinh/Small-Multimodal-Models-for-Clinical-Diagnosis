@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3173917_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: Subacute spastic paraplegia and bilateral thoracic sensory level in a 10-year-old child due to an isolated intramedullary spinal lesion with an eccentric nodule, which typically prompts suspicion of an intramedullary cord neoplasm (astrocytoma, ependymoma) or spinal tuberculoma.\n2. Admission Breakpoint: Admission clinical workup terminates with contrast-enhanced spinal MRI demonstrating the intramedullary ring-enhancing cystic lesion with an isointense mural nodule and normal brain MRI; lumbar puncture CSF examination, specific IgG ELISA serology, and subsequent medical response constitute confirmatory investigation.\n3. Differential Distinctions: Intramedullary spinal neoplasms (ependymoma/astrocytoma) present as infiltrating solid masses with irregular enhancement and absence of a cystic scolex; spinal tuberculoma features solid/rim-enhancing granulomas commonly associated with systemic signs or positive tuberculin testing; neurocysticercosis is characterized by a cystic lesion with an eccentric mural nodule (representing the invaginated scolex) and confirmed by CSF ELISA.",
+  "case_prompt": "A 10-year-old female patient presented with a 3-month history of progressive weakness in both lower limbs, numbness extending from the lower thorax to the feet, and new-onset bowel and bladder incontinence. There was no preceding history of fever, cutaneous rash, or trauma.\n\nOn physical examination, the child was conscious with preserved higher mental functions. Neurological examination revealed spastic paraplegia with bilateral lower extremity motor power of 3/5, brisk deep tendon reflexes, bilateral extensor plantar responses, and bilateral loss of pinprick sensation below the T5 dermatome.\n\nInitial laboratory evaluation showed a normal peripheral blood cell count. A Mantoux test was negative. Plain radiographs of the thoracic spine and chest revealed no abnormalities.\n\nContrast-enhanced MRI of the spine demonstrated an isolated, well-defined, intramedullary cystic lesion measuring 1.8 x 1.0 cm at the level of the D2 vertebral body. On T1-weighted sequences, the lesion was hypointense with a central isointense mural nodule. On T2-weighted sequences, the cystic component was hyperintense with a persistent isointense mural nodule and surrounding cord edema. Post-contrast T1-weighted images demonstrated ring enhancement around the cyst wall. A screening MRI of the brain was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramedullary Spinal Cord Tumor (Astrocytoma / Ependymoma)",
+      "rule_out_reason": "Primary intramedullary spinal cord tumors typically display expansile, infiltrating heterogeneous solid tissue enhancement and syrinx formation, whereas MRI in this child demonstrated a discrete, well-circumscribed cystic lesion with an eccentric mural nodule and ring enhancement.",
+      "quote": "Contrast-enhanced MRI of the spine revealed an isolated, well-defined, intramedullary cystic lesion measuring 1.8 1.0 cm at the level of D2 vertebral body. On T1-weighted imaging, the lesion was hypointense with a central isointense mural nodule [Figure 1a]."
+    },
+    {
+      "candidate": "Spinal Tuberculoma",
+      "rule_out_reason": "Tuberculous granulomas of the spinal cord are an important consideration in endemic settings, but spinal and chest radiographs showed no evidence of bony or pulmonary tuberculosis, and the tuberculin skin test was negative.",
+      "quote": "Mantoux test was negative and radiographs of the spine and chest revealed no abnormality."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Spinal MRI revealed pathognomonic cysticercosis features consisting of a well-defined intramedullary cyst with an isointense mural nodule (scolex) and ring enhancement, and CSF analysis demonstrated lymphocytic-eosinophilic pleocytosis with positive ELISA for anti-Taenia solium IgG antibodies, followed by rapid neurological recovery on antiparasitic and steroid therapy.",
+      "quote": "The lesion was hyperintense on T2-weighted image with an isointense mural nodule [Figure 1b and c]... CSF examination done revealed elevated protein and normal glucose levels with increased lymphocytes, and few eosinophils and positive enzyme-linked immunosorbent assay (ELISA) for anti-T. solium IgG immunoglobulin."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission prompt ends after spine and brain MRI. Zero mention of Taenia solium or antiparasitic therapy in presentation."
+}

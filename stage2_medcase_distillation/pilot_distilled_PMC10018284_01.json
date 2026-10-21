@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC10018284_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: The primary clinical tension lies in resolving whether this patient's chronic (10-year), generalized presentation of thick hyperkeratotic erythematous plaques, crusts, excoriations, and cloudy fluid-filled blisters/bullae represents an autoimmune bullous dermatosis (such as bullous pemphigoid), a severe chronic papulosquamous disorder (such as plaque psoriasis, severe atopic dermatitis, or exfoliative erythroderma), or an exuberant, atypical presentation of an ectoparasitic infestation (crusted/Norwegian scabies with bullous scabies).\n2. Admission Breakpoint: The admission breakpoint is established strictly at the initial outpatient dermatology clinic presentation and triage physical examination, immediately after documenting the HPI, epidemiological exposures, general physical exam, and initial negative viral serologies (COVID-19 rapid antigen, HIV serology), but strictly BEFORE skin scraping microscopy or histopathological punch biopsy are performed.\n3. Differential Distinctions: Autoimmune bullous disorders and intrinsic inflammatory dermatoses fail to explain the simultaneous household transmission pattern—specifically, the patient's child presenting with pruritic interdigital lesions worsening at night. Furthermore, the nocturnal exacerbation of pruritus, exposure risks (children in Islamic boarding schools, bus driver interacting with the public), and communal unheated clothes laundering strongly pivot suspicion toward an ectoparasitic infestation over primary autoimmune blistering or atopic disease.",
+  "case_prompt": "A 44-year-old married Acehnese male presented to the dermatology and venereology outpatient clinic with a chief complaint of thick, red, scaly patches and scabs distributed all over his body, accompanied by intense pruritus that was notably worse at night. The symptoms had appeared intermittently over the preceding 10 years, with significant worsening and generalized spread over the last 2 months.\n\nHis initial lesions, first noted in 2011, began as red patches and small blisters filled with cloudy fluid on his elbow and left leg. Over time, the lesions spread to his abdomen, buttocks, thighs, and calves, accompanied by nocturnal itching. Previous treatment at primary health care and referral to a dermatologist failed to resolve the condition.\n\nSocial and exposure history revealed that he works as a bus driver and frequently interacts with many people. He cohabits with his wife and children; some of his children attend Islamic boarding schools. Over the last 2 months, coinciding with the exacerbation of his rash, one of his children developed itchy red spots between the fingers, which also felt notably more pruritic at night. Although the patient bathes twice daily and uses separate towels from family members, family clothing is laundered together with normal-temperature water. He denied any history of diabetes mellitus, HIV/AIDS, leprosy, or other autoimmune diseases, and reported no history of allergies to food, drugs, or other allergens.\n\nOn physical examination, the patient was fully alert and oriented, with vital signs within normal limits. Cardiopulmonary and abdominal examinations were unremarkable. Dermatological examination revealed generalized lesions distributed across the entire body, characterized by multiple hyperpigmented macules, erythematous papules, excoriations, erosions, thick scales, and crusts, as well as several fluid-filled blisters and bullae on the extremities. Additional initial triage laboratory tests were performed, including a COVID-19 rapid antigen serology test (negative) and an HIV screening test (non-reactive).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bullous Pemphigoid / Autoimmune Bullous Dermatosis",
+      "rule_out_reason": "Considered because the patient presented with tense blisters and bullae filled with cloudy fluid, erosions, and widespread distribution in an adult. However, bullous pemphigoid is an autoimmune blistering condition and does not account for secondary household transmission or the child's nocturnal interdigital pruritus. Furthermore, the patient had no prior history of autoimmune disease.",
+      "quote": "The patient's child also complained of itchy, red spots between the fingers, especially at night, for the last 2 months."
+    },
+    {
+      "candidate": "Plaque Psoriasis / Psoriatic Erythroderma",
+      "rule_out_reason": "Considered due to the 10-year chronicity of thick, red, scaly plaques and hyperkeratotic crusts involving extensor surfaces (elbows) and generalized body surfaces. However, psoriasis is non-communicable and does not explain the concurrent nocturnal interdigital eruption in his child, nor does classic plaque psoriasis feature prominent cloudy fluid-filled vesicles and bullae.",
+      "quote": "The initial lesions were red patches and small blisters filled with cloudy fluid that were noted on the elbow and left leg in 2011."
+    },
+    {
+      "candidate": "Atopic Dermatitis / Chronic Severe Eczema",
+      "rule_out_reason": "Considered in light of intense generalized pruritus, excoriations, diffuse scaling plaques, and a 10-year relapsing course. However, the patient reported no history of atopy, asthma, or allergies. Most critically, atopic eczema cannot account for identical nocturnal pruritic symptoms developing simultaneously in a cohabiting child.",
+      "quote": "There was no history of allergies to food, drugs, or other allergens."
+    },
+    {
+      "candidate": "Leprosy (Hansen's Disease)",
+      "rule_out_reason": "Considered due to the chronic 10-year indolent course of generalized macules, plaques, and crusts in an endemic region. However, lepromatous or tuberculoid leprosy lesions are typically anesthetic or hypoesthetic without intense nocturnal pruritus, and the patient had no reported history of leprosy.",
+      "quote": "No history of diabetes mellitus, HIV/AIDS, leprosy, or other autoimmune diseases was noted."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Crusted Scabies with Bullous Scabies (Norwegian Scabies)",
+      "rule_out_reason": "The diagnostic pivot is achieved by synthesizing the generalized thick hyperkeratotic plaques and crusts with the pathognomonic epidemiologic pattern: intense nocturnal pruritus and simultaneous transmission to a cohabiting family member (child developing itchy red papules in the web spaces between the fingers, worse at night). Coupled with high-density exposure risks (children in boarding schools, communal unheated clothes washing), this presentation firmly pivots the diagnosis toward an exuberant ectoparasitic hyperinfestation by Sarcoptes scabiei presenting atypically with bullous lesions.",
+      "quote": "The patient's child also complained of itchy, red spots between the fingers, especially at night, for the last 2 months."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Editor Audit confirmed zero leakage of the gold-standard disease name ('Scabies' or 'Sarcoptes') or therapeutic agents ('permethrin', 'ivermectin') within the case_prompt. The admission breakpoint is strictly respected, terminating after triage examination and non-reactive viral serology, and omitting all microscopic skin scraping, histopathological biopsy, and bacterial culture findings. Salient clinical features (nocturnal pruritus, distribution of crusts/bullae, child's interdigital web-space rash, communal laundry) were faithfully retained to enable sound clinical reasoning without providing diagnostic spoilers."
+}

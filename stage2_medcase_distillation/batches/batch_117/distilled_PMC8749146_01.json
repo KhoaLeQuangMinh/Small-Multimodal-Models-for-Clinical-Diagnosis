@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8749146_01",
+  "disease": "Dengue",
+  "think": "<think>\n1. Core Clinical Tension: A patient presents in Brazil with an acute febrile syndrome characterized by severe leukocytosis (20,900/mm^3) and extraordinarily high CRP (240.59 mg/dL) alongside mixed hepatic enzyme elevation. These inflammatory parameters strongly mimic fulminant bacterial sepsis rather than typical viral illness, and standard rapid dengue antibody and NS1 tests are negative.\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency room triage, physical assessment, and baseline laboratory panels (CBC, bilirubin, ALT, AST, GGT, and CRP), prior to blood/urine culture results, viral serologies, and multiplex qRT-PCR arboviral testing.\n3. Differential Distinctions: Pyogenic bacterial sepsis is suggested by marked leukocytosis and severe CRP elevation but excluded by negative blood and urine cultures; acute viral hepatitis (HBV, HCV) and acute HIV are ruled out by negative serologies; dengue (with concurrent yellow fever coinfection) is confirmed by multiplex qRT-PCR detecting DENV2 and YFV RNA despite negative rapid serological and NS1 assays.\n</think>",
+  "case_prompt": "A resident of the municipality of Sao Bernardo do Campo, Brazil, was admitted to a public hospital in July 2018 with an acute febrile syndrome characterized by fever, diffuse myalgias, and headache.\n\nOn physical examination, the patient was febrile and appeared acutely ill. Systemic physical examination did not reveal localized cutaneous or focal suppurative findings.\n\nTriage laboratory investigations revealed significant marked leukocytosis with a white blood cell count of 20,900/mm^3. Biochemical testing demonstrated an elevated direct bilirubin of 0.9 mg/dL, alanine aminotransferase (ALT) of 68 U/L, aspartate aminotransferase (AST) of 60 U/L, and gamma-glutamyl transferase (GGT) of 301 U/L. Serum C-reactive protein (CRP) was markedly elevated at 240.59 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Sepsis / Occult Bacterial Infection",
+      "rule_out_reason": "Strongly considered due to the dramatic leukocytosis (20,900/mm^3) and severe elevation of C-reactive protein (240.59 mg/dL), but ruled out by sterile bacterial cultures.",
+      "quote": "Haemoculture and urine cultures were both negative."
+    },
+    {
+      "candidate": "Acute Viral Hepatitis (Hepatitis B or C) / Acute Retroviral Syndrome",
+      "rule_out_reason": "Considered given the acute febrile syndrome with hepatocellular injury (elevated AST, ALT, GGT, and direct bilirubin), but ruled out by non-reactive viral serologies.",
+      "quote": "Serology for hepatitis B, C and HIV I and II were all negative, while IgG was positive for toxoplasmosis, cytomegalovirus and Epstein-Barr virus."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue (DENV-2 Serotype Coinfection with Yellow Fever Virus)",
+      "rule_out_reason": "Although initial rapid diagnostic tests for dengue (IgM, IgG, NS1) were negative and yellow fever IgM was inconclusive, multiplex quantitative real-time PCR (qRT-PCR) decisively detected genetic material from both dengue virus serotype 2 (DENV2) and yellow fever virus (YFV).",
+      "quote": "Rapid antibody tests for dengue (IgM and IgG) and viral protein NS1 were negative, while the test for YFV IgM was inconclusive. In multiplex qRT-PCR, genetic material from DENV2 and YFV was detected."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. Multiplex qRT-PCR and serology held until diagnostic reasoning."
+}

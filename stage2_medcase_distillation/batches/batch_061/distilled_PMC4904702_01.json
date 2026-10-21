@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4904702_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 49-year-old Brazilian male presenting with profound iron deficiency anemia, syncope, esophageal varices, and sonographic splenomegaly, historically labeled as cirrhosis despite completely normal liver enzymes, normal hepatic synthetic function, and no histologic cirrhosis. The clinical challenge lies in identifying a non-cirrhotic, presinusoidal etiology of severe portal hypertension in an endemic traveler.\n2. Admission Breakpoint: The admission breakpoint occurs following emergency department presentation, baseline lab results, abdominal ultrasonography, and upper/lower endoscopy findings, immediately prior to histologic examination of the colonic polyp and repeat liver biopsy.\n3. Differential Distinctions: Cirrhosis of the liver was the prevailing initial diagnosis based on varices and ultrasound, but excluded by normal liver biochemistries and liver biopsies demonstrating absence of nodular regeneration or architectural distortion; idiopathic non-cirrhotic portal hypertension was considered, but histopathology revealed a specific parasitic granulomatous etiology. The diagnosis pivots on colonic polyp biopsy demonstrating eggs with a characteristic prominent lateral spine surrounded by an eosinophilic infiltrate.",
+  "case_prompt": "A 49-year-old Brazilian male presents to the emergency department with a five-day history of abdominal pain, dark stools, and syncope. His past medical history includes an episode of esophageal variceal bleeding that was presumed to be secondary to cirrhosis; however, an extensive workup for chronic liver disease at that time was negative, and a prior liver tissue core evaluation demonstrated no evidence of steatosis, fibrosis, or cirrhosis.\n\nOn physical examination, the patient has no melena detected on digital rectal examination, and there are no peripheral stigmata of chronic liver disease (no spider angiomas, palmar erythema, jaundice, or ascites).\n\nLaboratory studies reveal a hemoglobin of 47 g/L, mean corpuscular volume (MCV) of 80 fL, and serum ferritin of 6 ng/mL. Serum aminotransferases, alkaline phosphatase, total bilirubin, and liver synthetic function tests are completely normal. Abdominal ultrasonography reveals a nodular liver contour with splenomegaly and venous collaterals indicative of portal hypertension. Subsequent esophagogastroduodenoscopy reveals large esophageal varices without high-risk stigmata or active bleeding. Colonoscopy to the terminal ileum is normal with the exception of a solitary 5-mm sessile polyp in the descending colon.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cirrhosis of the liver",
+      "rule_out_reason": "Esophageal varices, splenomegaly, and nodular hepatic appearance on ultrasound suggested decompensated cirrhosis; however, hepatic synthetic function was entirely normal, peripheral stigmata were absent, and liver histology demonstrated portal fibrosis without the architectural distortion or regenerative nodules characteristic of cirrhosis.",
+      "quote": "His past medical history was significant for cirrhosis, based on a previous esophageal variceal bleed; but a workup for chronic liver disease was negative and a liver biopsy at that time did not show steatosis, fibrosis, or cirrhosis."
+    },
+    {
+      "candidate": "Idiopathic non-cirrhotic portal hypertension / Portal vein thrombosis",
+      "rule_out_reason": "Presinusoidal portal hypertension with preserved hepatic synthetic function can occur in idiopathic non-cirrhotic portal hypertension, but this was ruled out by the discovery of an active parasitic cause within the gastrointestinal tract.",
+      "quote": "The arrow is pointing to portal fibrosis, with no significant architectural distortion or nodularity typical of cirrhosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic examination of the descending colonic polyp revealed numerous large parasitic eggs featuring a prominent lateral spine surrounded by an eosinophil-rich granulomatous inflammatory infiltrate, diagnostic of Schistosoma mansoni infection causing presinusoidal periportal fibrosis (Symmers' pipe-stem fibrosis) and chronic blood loss.",
+      "quote": "Arrows are pointing to numerous eggs in the stroma of the colonic mucosa, surrounded by eosinophil-rich inflammatory infiltrate. The eggs are large and have a characteristic shape, with a prominent lateral spine."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed prior to biopsy pathology; zero mentions of Schistosoma or lateral spine in case prompt; quotes verified."
+}

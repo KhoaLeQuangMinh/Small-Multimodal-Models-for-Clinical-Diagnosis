@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3959373_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 70-year-old immunocompetent woman residing in a rural village presents with a 6-month history of devastating chronic watery diarrhea (>10 episodes/day) and an 18-kg weight loss. Remarkably, she exhibits completely normal routine labs, normal absolute eosinophil count, negative stool parasite exams, and normal colonoscopy and duodenal biopsies. The clinical picture mimics celiac disease, microscopic colitis, or neuroendocrine neoplasia, while representing an elusive, chronic small-bowel Strongyloides stercoralis infection.\n2. Admission Breakpoint: Admission triage encompasses history of chronic high-frequency watery diarrhea, massive weight loss, rural dwelling, normal complete blood count (absence of peripheral eosinophilia), normal inflammatory markers, normal serum vitamins and iron, normal chest radiograph, ESR 40 mm/hr, repeat negative stool parasite exams/cultures, unremarkable colonoscopy with biopsies, non-diagnostic duodenal biopsies, and negative celiac/neuroendocrine serologies. The diagnostic breakpoint stops strictly before small bowel videocapsule endoscopy (SBVCE) which visualized the parasite.\n3. Differential Distinctions: Celiac disease / gluten-sensitive enteropathy is a primary consideration for chronic severe watery diarrhea, weight loss, and duodenal villous changes, but ruled out by negative tissue transglutaminase and endomysial antibodies. Neuroendocrine tumor (carcinoid) is considered given voluminous secretory diarrhea and profound weight loss without fever, but ruled out by normal serum chromogranin-A. Microscopic or inflammatory bowel disease is ruled out by normal colonoscopy and colonic biopsies.",
+  "case_prompt": "A 70-year-old woman, a housewife residing in a rural village, presented with a 6-month history of severe, intractable diarrhea consisting of more than 10 watery bowel movements per day, accompanied by an involuntary weight loss of 18 kg. She reported no blood in her stool, fever, or prior gastrointestinal disorders.\n\nPhysical examination revealed a frail, elderly woman with evidence of significant weight loss and mild abdominal discomfort, but no palpable abdominal masses, organomegaly, or lymphadenopathy.\n\nInitial laboratory evaluation revealed completely normal hematological parameters, including normal hemoglobin, normal white blood cell count, and a normal differential without peripheral eosinophilia. Inflammatory markers showed a normal C-reactive protein (CRP) and an erythrocyte sedimentation rate (ESR) of 40 mm/hr. Serum albumin, serum total immunoglobulins, iron panel, ferritin, vitamin B12, and folate levels were all within normal limits. A screening chest radiograph was normal.\n\nStool examinations performed on two separate occasions for occult blood, fecal leukocytes, enteric bacterial pathogens, and ova and parasites were repeatedly negative. An upper gastrointestinal endoscopy with duodenal mucosal biopsies revealed only mild, non-diagnostic changes of mucosal villi. A colonoscopy with mucosal biopsies was entirely normal. Serological testing for celiac disease, including anti-tissue transglutaminase and anti-endomysial antibodies, was negative. Serum chromogranin-A was within normal limits, and human immunodeficiency virus (HIV) screening was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Celiac Disease (Gluten-Sensitive Enteropathy)",
+      "rule_out_reason": "High-priority diagnosis in an elderly patient with severe watery diarrhea, dramatic weight loss, and blunted duodenal mucosal villi, but ruled out by negative anti-tissue transglutaminase and anti-endomysial antibodies.",
+      "quote": "Antibodies to tissue transglutaminase, endomysial antibodies and serum chromogranin-A were negative, including HIV infection."
+    },
+    {
+      "candidate": "Neuroendocrine Neoplasm / Carcinoid Syndrome",
+      "rule_out_reason": "Considered given severe chronic secretory watery diarrhea and profound cachexia without systemic signs of infection, but excluded by normal serum chromogranin-A levels.",
+      "quote": "Antibodies to tissue transglutaminase, endomysial antibodies and serum chromogranin-A were negative, including HIV infection."
+    },
+    {
+      "candidate": "Microscopic / Inflammatory Colitis",
+      "rule_out_reason": "Considered for chronic high-volume watery diarrhea in an elderly female, but ruled out by completely normal colonoscopic mucosal inspection and normal serial biopsies.",
+      "quote": "Colonoscopy with biopsies was normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Small bowel videocapsule endoscopy (SBVCE) revealed denuded villi with prominent submucosal vessels in the jejunum, linear whitish mucosal lesions, and direct visualization of active parasites swimming within ileal fluid and penetrating the ileal mucosa, which completely resolved with albendazole.",
+      "quote": "A small bowel videocapsule endoscopy (SBVCE) study showed mucosal areas of denuded villi and prominent small bowel submucosal vessels in the jejunum, multiple linear whitish lesions surrounded by reddish mucosa (Fig. 1), and parasites within the ileal fluid, entering the ileal mucosa (Fig. 2)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Videocapsule endoscopy findings excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

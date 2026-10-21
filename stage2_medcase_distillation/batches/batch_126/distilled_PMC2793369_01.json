@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2793369_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: The patient presented with neurological complications\u2014prostration, disorientation, and multiple generalized convulsions\u2014accompanied by high fever, fulfilling WHO criteria for severe malaria. Severe malaria is almost universally caused by Plasmodium falciparum; severe monoinfection due to Plasmodium malariae is exceedingly rare, and the typical quartan fever periodicity (every 72 hours) was absent, mimicking cerebral falciparum malaria or bacterial/viral meningoencephalitis.\n2. Admission Breakpoint: Admission triage terminates after documenting the clinical presentation of fevers and seizures, vital signs (fever 38.9 \u00b0C, pulse 110, BP 95/55, RR 28), GCS 14/15 with disorientation, unremarkable general physical exam, normal blood glucose and biochemistry, and mild thrombocytopenia (93,000/mm\u00b3), immediately prior to peripheral blood film microscopy and species-specific rapid antigen/PCR tests.\n3. Differential Distinctions: Plasmodium falciparum cerebral malaria was the primary differential given the acute febrile encephalopathy and seizures in Bangladesh, but was excluded by negative PfHRP2 rapid antigen assay and negative species-specific PCR. Infections with other Plasmodium species (P. vivax, P. ovale, P. knowlesi) were ruled out by negative nested PCR.",
+  "case_prompt": "A 32-year-old previously well male labourer from Fatickchari in Chittagong District, Bangladesh, was admitted to a tertiary teaching hospital in July 2008 with a 10-day history of evening fevers, chills, rigors, headache, anorexia, generalised myalgia, dry cough, palpitations, drowsiness, and several generalised convulsions. He also described abdominal pain and nausea without vomiting or diarrhoea over the preceding 5 days. Initial treatment with paracetamol at a local health complex temporarily controlled his fever. However, the day before admission, he became disorientated and had further generalized convulsions, prompting urgent transfer.\n\nOn physical examination at admission, the patient was febrile with an oral temperature of 38.9 \u00b0C, tachycardic with a pulse rate of 110 beats per minute, blood pressure 95/55 mmHg, and tachypneic with a respiratory rate of 28 breaths per minute. His Glasgow Coma Scale was 14/15 (eye opening 4/4, verbal response 4/5, motor response 6/6), exhibiting disorientation in time and place. The remainder of the physical examination was unremarkable.\n\nTriage laboratory evaluation showed normal hemoglobin, leukocyte count, blood glucose, and serum biochemistry (including serum creatinine). Complete blood count was notable for mild thrombocytopenia with a platelet count of 93,000 per mm\u00b3.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Plasmodium falciparum malaria (Cerebral Malaria)",
+      "rule_out_reason": "Considered the leading differential given high fever, disorientation, and multiple convulsions meeting WHO severe criteria in an endemic area; excluded by negative rapid antigen testing and species-specific nested PCR.",
+      "quote": "Rapid PfHRP2-based antigen testing was negative for P. falciparum (Paracheck, Orchid Biomedical Systems, Goa, India)."
+    },
+    {
+      "candidate": "Non-falciparum Plasmodium infection (P. vivax, P. ovale, P. knowlesi)",
+      "rule_out_reason": "Considered as potential etiologies of severe acute febrile illness; excluded by species-specific nested PCR targeting the 18S rRNA gene.",
+      "quote": "whereas the PCRs for P. falciparum, P. vivax, P. ovale and P. knowlesi were negative (Supplementary file 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral thin blood film demonstrated typical band form trophozoites, schizonts containing 4-6 merozoites, and erythrocyte rosette formation, with nested 18S rRNA PCR confirming monoinfection with Plasmodium malariae.",
+      "quote": "A thin blood film showed P. malariae with a parasitaemia of 3 per 1000 red cells (14 017/uL), with typical band form trophozoites, schizonts containing 4-6 merozoites, and occasional gametocytes."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Remarkable presentation of PCR-confirmed monoinfection with Plasmodium malariae manifesting as WHO-defined severe malaria with neurological involvement (prostration, disorientation, generalized convulsions) and peripheral blood rosette formation, lacking classic quartan fever synchronicity."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6560971_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 45-year-old woman presents with a 4-month history of a painful, erythematous submandibular/parotid mass and low-grade fever. Cervical ultrasound and MRI reveal a cystic, rim-enhancing deep parotid lesion mimicking an acute/subacute bacterial parotid abscess or cystic salivary neoplasm.\n2. Admission Breakpoint: The breakpoint stops after clinical evaluation, cervical ultrasound, parotid MRI, and baseline chest radiography, prior to conservative parotidectomy, histopathology, and mycobacterial culture.\n3. Differential Distinctions: Acute pyogenic parotid abscess is suggested by rim enhancement, pain, and erythema, but lacks acute toxic signs or purulent ductal discharge over a 4-month course; cystic salivary neoplasm does not typically present with fever and restricted diffusion; caseous granulomatous necrosis and acid-fast bacilli on Lowenstein-Jensen culture confirm primary parotid tuberculosis.",
+  "case_prompt": "A 45-year-old woman with no notable past medical history presented with a left sub-angulo-mandibular mass that had been evolving for approximately four months. The swelling was accompanied by localized pain, mild erythema, and low-grade fever reaching 38.0°C, without weight loss, chewing discomfort, trismus, or salivary purulence.\n\nOn physical examination, she was in good general health with a firm, fixed, painless swelling of the left parotid region measuring approximately 4 cm in its longest axis. There was no limitation of mouth opening and no peripheral facial nerve palsy. Inspection of the oral cavity and Stensen's duct orifice showed no inflammation or purulent discharge. Cervical lymph node examination was normal, and the remainder of the ear, nose, and throat exam was unremarkable.\n\nBaseline laboratory investigations and chest radiography were normal. Cervical ultrasound showed a 29 × 28 × 14 mm mass with mixed echostructure and central liquid predominance located at the lower pole of the left parotid gland. Parotid MRI demonstrated a 30 × 29 × 15 mm lesion in the deep compartment of the left parotid gland with low T1 signal intensity, high signal on diffusion-weighted imaging, and peripheral rim enhancement. The contralateral salivary glands and thyroid appeared normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Parotid Abscess",
+      "rule_out_reason": "A cystic deep parotid lesion with peripheral rim enhancement, restricted diffusion, local tenderness, erythema, and low-grade fever strongly suggested an acute or subacute bacterial abscess, but the indolent 4-month progression without purulent discharge from Stensen's duct or systemic leukocytosis was atypical for common pyogenic parotitis.",
+      "quote": "Parotid MRI showed a lesional process in the deep compartment of the left parotid gland, with low intensity T1 signal, and in the other hand, high intensity signal in diffusion sequence with peripheral enhancement, measuring 30 x 29 x 15 mm... This was in favor of a left parotid abscess"
+    },
+    {
+      "candidate": "Cystic Salivary Gland Neoplasm (Warthin Tumor / Mucoepidermoid Carcinoma)",
+      "rule_out_reason": "A 4 cm well-defined mass of mixed echostructure with central fluid predominance in the parotid gland can mimic a cystic salivary neoplasm, but localized inflammatory signs, fever, and diffusion restriction favored an infectious or inflammatory granulomatous process.",
+      "quote": "A cervical ultrasound was done to show a tumor lesion, measuring 29 x 28 x 14 mm, of mixed echostructure with central liquid predominance at the lower pole of the left parotid."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Conservative parotidectomy with facial nerve preservation revealed epithelial-gigantocellular granulomas with caseous necrosis on histopathology, and culture of aspirated fluid on Lowenstein-Jensen medium yielded acid-fast bacilli, confirming primary tuberculosis of the parotid gland.",
+      "quote": "Histopathological study of the cyst wall found epithelial-gigantocellular granuloma with caseous necrosis. The culture of the puncture fluid on Lowenstein-Jensen medium revealed an acid-resistant bacillus, which allowed us to confirm the diagnosis of primary tuberculosis of the parotid gland."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint strictly precedes parotidectomy and culture results. Zero pathogen names in case_prompt. Differential clearly addresses pyogenic abscess vs cystic tumor vs mycobacterial parotitis."
+}

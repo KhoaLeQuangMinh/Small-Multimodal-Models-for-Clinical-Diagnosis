@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12854188_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 56-year-old male with chronic inflammatory small joint polyarthritis developed progressive painful subcutaneous abscesses, ulcerating nodular lesions on multiple extremities, and proximal muscle weakness with leukocytosis, strongly mimicking disseminated pyogenic bacterial pyomyositis, deep fungal infection, or cutaneous nocardiosis. Primary skeletal muscle involvement is exceptionally rare in extrapulmonary tuberculosis due to high lactic acid and muscle vascularity.\n2. Admission Breakpoint: The admission clinical narrative halts after initial presentation, physical examination (subcutaneous abscesses, ulcerating nodules, muscle weakness), and baseline blood work (CBC showing Hb 8.3 g/dL, leukocytosis 15,000/\u00b5L, ESR 95 mm/hr, LDH 95 U/L). Aspiration of abscess pus, CBNAAT, line probe assay, skin biopsy, PET/CT, and pus cultures are post-breakpoint confirmatory procedures.\n3. Differential Distinctions: Pyogenic bacterial pyomyositis (e.g. Staphylococcus aureus) typically produces acute localized suppurative collections with positive standard aerobic cultures. Nocardiosis and fungal subcutaneous infections cause nodular lymphangitic or ulcerating lesions but are identified by modified Kinyoun/ZN staining or fungal KOH mounts. Tuberculous pyomyositis manifests as cold abscesses and granulomatous myositis, confirmed by CBNAAT/LPA positivity for Mycobacterium tuberculosis and extensive muscular uptake on 18F-FDG PET/CT.",
+  "case_prompt": "A 56-year-old man with a 3-year history of chronic inflammatory small joint polyarthritis presented with progressively enlarging, painful subcutaneous swellings and abscesses over the left thoracic and lower back regions. Over the preceding weeks, he had also developed multiple ulcerating nodular skin lesions distributed over the right forearm, palm, right thigh, and left elbow. These lesions were accompanied by progressive proximal muscle weakness, low-grade fevers with chills, and significant unintentional weight loss. He was not taking oral corticosteroids or other immunosuppressive disease-modifying agents. Physical examination revealed tender, fluctuant subcutaneous swellings over the left posterior thorax and lumbar back, as well as multiple discrete ulcerated subcutaneous nodules on the upper and lower extremities with associated symmetrical proximal muscle weakness. Initial laboratory investigations revealed a hemoglobin level of 8.3 g/dL, total leukocyte count of 15,000 cells/\u00b5L with a differential count of 87% neutrophils, 5% lymphocytes, and 7% monocytes, platelet count of 272,000/\u00b5L, erythrocyte sedimentation rate (ESR) markedly elevated at 95 mm/hr (reference range 0\u201315 mm/hr), and lactate dehydrogenase (LDH) of 95 U/L (reference range 0\u2013247 U/L).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Abscesses / Pyomyositis",
+      "rule_out_reason": "Considered due to the combination of acute-on-chronic painful muscular and subcutaneous swellings, prominent neutrophilic leukocytosis (15,000 cells/\u00b5L, 87% neutrophils), and marked ESR elevation. Ruled out by negative routine aerobic pus cultures and lack of response to empiric antibacterial coverage.",
+      "quote": "following which pus cultures, aerobic cultures, KOH mount and modified ZN staining for nocardia were all found to be negative."
+    },
+    {
+      "candidate": "Nocardiosis",
+      "rule_out_reason": "Considered in view of disseminated cutaneous and subcutaneous abscesses with ulcerating nodules in a patient with underlying chronic joint disease. Ruled out by negative modified Ziehl-Neelsen (ZN) staining specifically for Nocardia on aspirated pus.",
+      "quote": "modified ZN staining for nocardia were all found to be negative."
+    },
+    {
+      "candidate": "Deep Subcutaneous Fungal Infection",
+      "rule_out_reason": "Considered given the multifocal indolent ulcerating nodular lesions across multiple limbs and trunk. Ruled out by negative potassium hydroxide (KOH) direct examination and absence of fungal growth on cultures.",
+      "quote": "KOH mount and modified ZN staining for nocardia were all found to be negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis was confirmed when CBNAAT and line probe assay (LPA) performed on pus aspirated from an abscess yielded Mycobacterium tuberculosis sensitive to rifampicin, supported by a skin biopsy demonstrating non-necrotizing granulomatous inflammation and 18F-FDG PET/CT delineating extensive disseminated pyomyositis across multiple muscle groups.",
+      "quote": "CBNAAT testing of pus aspirated from an abscess was positive for Mycobacterium tuberculosis, sensitive to rifampicin. A skin biopsy showed non-necrotizing granulomatous inflammation. LPA from an abscess confirmed rifampicin-sensitive Mycobacterium tuberculosis"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to admission breakpoint principles. Triage presentation details constitutional symptoms, joint history, and initial blood counts without disclosing aspirate PCR, biopsy, or PET findings. Differential diagnoses feature verbatim textual quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4646473_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 38-year-old immunocompetent woman who underwent splenectomy 2 months prior for an asymptomatic multilocular splenic mass (histology showing necrotizing granulomas) presents with new fever, headache, a 4.0 x 3.3 cm right frontal lobe mass causing midline shift, and bilateral cavitary pulmonary nodules. The clinical dilemma is distinguishing systemic hematogenous dissemination of an indolent granulomatous pathogen triggered by surgical violation/splenectomy from pyogenic bacterial brain abscess, fungal metastasis, or intracranial malignancy.\n2. Admission Breakpoint: The admission breakpoint occurs upon readmission at 2 months post-splenectomy, following neurological exam, brain MRI demonstrating the right frontal lobe mass, chest CT showing cavitary nodules, and baseline triage blood/CSF labs, immediately prior to linking with delayed mycobacterial culture results and initiating definitive anti-tuberculous chemotherapy.\n3. Differential Distinctions: Pyogenic brain abscess / bacterial septic embolization (favored by acute fever, headache, ring-enhancing intracranial mass, and leukocytosis, but inconsistent with chronic pulmonary cavitation and history of necrotizing granulomas); high-grade central nervous system neoplasm or metastasis (favored by large frontal mass with midline shift, but contradicted by concurrent pulmonary cavitations and CSF lymphocytic pleocytosis/high protein); fungal infection (e.g., Cryptococcus or Aspergillus, but excluded by positive bacillary culture); disseminated tuberculosis (necrotizing splenic granulomas, post-surgical hematogenous dissemination to frontal lobe and lungs, confirmed by intraoperative pus growing acid-fast bacilli and response to HRZE regimen).",
+  "case_prompt": "A 38-year-old female presents to the hospital with fever and headache. Two months prior, she had undergone an elective splenectomy following the incidental discovery of an asymptomatic multilocular splenic mass with splenomegaly on routine physical examination; surgical exploration had revealed tense adhesions and caseous curdled suppuration, and postoperative histology reported intrasplenic granulation tissue with necrosis, but she had received no specific targeted antimicrobial therapy. On examination, her body temperature is 38\u00b0C. Neurologic examination reveals an alert patient with headache, no nausea or vomiting, no loss of consciousness, and no myoclonus. Laboratory evaluation reveals a white blood cell count of 10.6 \u00d7 10^9/L, a platelet count of 792 \u00d7 10^9/L, and a C-reactive protein level of 11.0 mg/L. Lumbar puncture yields cerebrospinal fluid (CSF) with a chloride level of 128 mmol/L, glucose level of 3.3 mmol/L, and elevated protein level of 1.13 g/L. Magnetic resonance imaging (MRI) of the brain demonstrates a 4.0 \u00d7 3.3 cm mass in the right frontal lobe with right ventricular deformation and left midline shift, diagnosed as an intracranial abscess. Computed tomography (CT) of the chest reveals multiple pulmonary nodular lesions and pulmonary cavitation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic brain abscess with septic pulmonary emboli",
+      "rule_out_reason": "Considered given the acute fever, headache, leukocytosis, elevated CRP, and solitary intracranial abscess with midline shift. However, pyogenic bacterial infections typically present with fulminant acute sepsis, neutrophilic meningitis, and absence of extensive multiorgan caseating granulomatous disease.",
+      "quote": "The diagnosis from the MRI was intracranial abscess (Figure 3). Lung computed tomography (CT) suggested multiple pulmonary nodular lesion and pulmonary cavitation (Figure 4)."
+    },
+    {
+      "candidate": "Primary central nervous system neoplasm (e.g., high-grade glioma or metastatic disease)",
+      "rule_out_reason": "Considered due to the large 4.0 x 3.3 cm mass in the right frontal lobe causing mass effect and midline shift. However, the concurrent presence of fever, multiple cavitary lung nodules, and elevated CSF protein indicated a multi-system infectious etiology rather than isolated primary neoplasm.",
+      "quote": "MRI indicates a 4.0x3.3 cm mass in the right frontal lobe. The right ventricle was deformed with a left midline shift."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Delayed intraoperative splenic pus cultures confirmed bacillary growth, revealing that surgical manipulation of the splenic lesion without postoperative coverage led to hematogenous dissemination, resulting in tuberculous brain abscess and cavitary pulmonary tuberculosis.",
+      "quote": "Twenty days after the surgery, the intraoperative pus culture demonstrated positive bacillus growth. The patient had not received any anti-TB medications at this point."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4646473_01 following Stanford MedCaseReasoning guidelines. The presentation captures the second admission with intracranial abscess and pulmonary cavitation following splenectomy without spoiling the microbiological diagnosis."
+}

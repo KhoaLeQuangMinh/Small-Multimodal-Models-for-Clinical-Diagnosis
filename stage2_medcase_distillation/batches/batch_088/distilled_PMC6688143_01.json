@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6688143_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 65-year-old laborer with chronic kidney disease presents with a chronic draining tibial sinus, cortical thickening, and cavitary bone lesions with a sclerotic halo on CT and MRI, closely mimicking pyogenic chronic osteomyelitis (Brodie's abscess), with initial negative aspirate cultures and smear microscopy delaying recognition of tuberculous osteomyelitis.\n2. Admission Breakpoint: The admission clinical presentation halts after clinical examination, baseline blood inflammatory markers, plain leg/chest radiography, thorax CT, multidetector CT of the leg, and MRI of the tibia, immediately prior to percutaneous aspirate microbiology, empiric broad-spectrum antibiotic failure, surgical curettage/biopsy, and molecular PCR testing.\n3. Differential Distinctions: Pyogenic osteomyelitis (Brodie's abscess) was the primary presumptive diagnosis due to chronic sinus discharge, intramedullary fluid collection with a sclerotic rim, and typical MRI characteristics, but failed to respond to broad-spectrum antibiotics, had sterile pyogenic cultures, and displayed caseating granulomas on histopathology. Chronic fungal osteomyelitis or non-tuberculous mycobacterial osteomyelitis was ruled out by positive Mycobacterium tuberculosis complex-specific real-time PCR and growth on Lowenstein-Jensen medium.",
+  "case_prompt": "A 65-year-old male laborer presented with pain, swelling, and localized tenderness in his left lower leg. Twelve years earlier, he had sustained blunt trauma to the left leg without breach of skin integrity. One year following the trauma, he developed progressive pain, swelling, and cutaneous sinus tract drainage; he was diagnosed with a bone infection and treated with antibiotic therapy. Over the preceding six months, his pain and swelling had steadily escalated. He had a history of cigarette smoking and chronic kidney disease. He reported prior Bacillus Calmette-Guerin (BCG) vaccination in childhood and had no known family history of chronic pulmonary illness.\n\nOn physical examination, he was afebrile. Examination of the left lower extremity revealed a chronic sinus orifice with active drainage, edema, localized tenderness, and mild warmth over the medial aspect of the left tibia at the metaphyseal-diaphyseal junction.\n\nLaboratory testing revealed an erythrocyte sedimentation rate (ESR) of 36 mm/h, C-reactive protein (CRP) of 7.15 mg/dL, and a white blood cell count of 10,050/µL. Plain chest radiography revealed a sequelae lesion in the lung, and thoracic computed tomography (CT) showed pleural thickening and calcification. Direct plain roentgenograms of the left leg demonstrated intramedullary sclerosis accompanied by cortical thickening and multifocal radiolucent areas extending from below the diaphysis into the metaphysis of the tibia. Multidetector CT of the leg showed marked cortical thickening with irregular contours, periosteal reaction, and intramedullary fluid collections circumscribed by a sclerotic halo. Magnetic resonance imaging (MRI) of the tibia showed a hypointense serpiginous intramedullary lesion on coronal T1-weighted images and a hyperintense cavitary lesion on T2-weighted images with diffuse peripheral ring enhancement on contrast-enhanced fat-suppressed sequences, surrounded by marked soft-tissue edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Chronic Osteomyelitis / Brodie's Abscess",
+      "rule_out_reason": "Considered the primary diagnosis because of the chronic draining sinus tract, intramedullary fluid collection surrounded by a sclerotic halo on CT, and typical T1 serpiginous / T2 hyperintense cavitary appearance on MRI, but empiric broad-spectrum antibiotic therapy produced no clinical improvement, routine aspirate cultures were sterile, and open biopsy demonstrated caseating granulomas.",
+      "quote": "Broad-spectrum antibiotics were started considering pyogenic osteomyelitis. The patient's complaints did not resolve with medical treatment"
+    },
+    {
+      "candidate": "Bone Neoplasm (e.g., Osteoid Osteoma or Osteosarcoma)",
+      "rule_out_reason": "Cortical thickening, periosteal reaction, and radiolucent nidus-like areas in the tibial metaphysis can mimic bony neoplasms, but the presence of an active draining sinus orifice, systemic inflammatory markers, and sequestra inside caseating granulation tissue ruled out primary bone tumor.",
+      "quote": "Chronic sinus orifice, pain, edema and minimal temperature increase were observed in the medial leg at the diaphyseal-metaphyseal junctional region of the tibia"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical biopsy and curettage revealed caseating granulomas with Langhans giant cells and bony sequestra, and real-time PCR on tissue blocks detected Mycobacterium tuberculosis complex-specific DNA, later confirmed by culture growth on Lowenstein-Jensen medium.",
+      "quote": "On histopathological examination, caseating granulomas with Langhans giant cells and a mixed inflammatory cell infiltration were seen. Dead bone fragments (sequestra) were present within the inflamed granulation tissue"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates prior to PPD, aspirate stain results, antibiotic failure, curettage biopsy, and PCR results. Exact quotes verified."
+}

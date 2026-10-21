@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3518955_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 30-year-old female with preexisting renal failure presents with severe hypertensive emergency, fever, profound anemia, metabolic acidosis, and abdominal pain. Later, during immune reconstitution after commencing antiretroviral therapy, she develops acute bilateral blindness. The critical diagnostic challenge is differentiating opportunistic central nervous system infection (e.g., cryptococcal or tuberculous meningitis, progressive multifocal leukoencephalopathy) or infectious retinitis from posterior reversible encephalopathy syndrome (PRES) in the setting of disseminated mycobacterial disease and HIV coinfection.\n2. Admission Breakpoint: The breakpoint occurs at initial presentation in May 2010 with fever, headache, severe anemia, renal failure, metabolic acidosis, severe hypertension (180/100 mmHg), and normal visual acuity/funduscopy, immediately prior to send-out HIV viral load/CD4 testing, Quantiferon testing, sputum acid-fast bacilli smear, and total-body CT.\n3. Differential Distinctions: Active opportunistic CNS infection (such as tuberculous meningitis or cryptococcosis) is ruled out by a non-inflammatory lumbar puncture; infectious retinitis is ruled out by normal funduscopic examination; disseminated tuberculosis is confirmed by positive Quantiferon, sputum acid-fast bacilli smear, and abdominal abscess, with the acute visual loss subsequently established as PRES.",
+  "case_prompt": "A 30-year-old African female with a history of preexisting compensated renal failure presented with high fever, headache, abdominal pain, and severe hypertension with a blood pressure of 180/100 mmHg. On initial laboratory evaluation, serum blood urea nitrogen was 35 mg/dL, serum creatinine was 9.5 mg/dL, and hemoglobin was 5 g/dL. Arterial blood gas analysis demonstrated metabolic acidosis with a pH of 7.33, pCO2 of 28 mmHg, and calculated serum bicarbonate of 14.8 mmol/L. Ophthalmological examination at presentation revealed a normal fundus and visual acuity of 20/20 in both eyes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Active central nervous system opportunistic infection (e.g., tuberculous or fungal meningitis)",
+      "rule_out_reason": "Considered when the patient later developed acute bilateral vision loss, severe asthenia, and motor weakness, but cerebrospinal fluid examination showed no inflammatory or infectious changes.",
+      "quote": "Lumbar puncture, executed at this time, showed no evidence of active central nervous system inflammation/infection."
+    },
+    {
+      "candidate": "Infectious or structural ocular retinopathy / optic neuropathy",
+      "rule_out_reason": "Considered as a primary cause of acute bilateral blindness to light perception, but funduscopic evaluation showed normal optic discs and vasculature without retinitis.",
+      "quote": "fundus examination showed a normal optic head and normal vascularization."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Tuberculosis (with subsequent PRES)",
+      "rule_out_reason": "The patient's disseminated systemic illness was confirmed by interferon-gamma release assay, detection of acid-fast bacilli in sputum, and identification of an abdominal abscess, while neuroimaging confirmed characteristic parietooccipital and cerebellar hyperintensities of PRES.",
+      "quote": "(Quantiferon test was positive, and this result was confirmed by the study of the sputum which was positive for the presence of alcohol acid resistant bacilli.)"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint set at initial presentation with hypertensive crisis, renal failure, severe anemia, and intact visual acuity. CD4 counts, HIV status, AFB sputum results, and neuroimaging are sequestered strictly to the diagnostic reasoning."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9448255_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 65-year-old male with chronic B-symptoms (14 kg weight loss, daily fevers with chills, night sweats) and generalized lymphadenopathy presents with PET-CT imaging highly suggestive of a systemic lymphoproliferative disorder. Conventional leishmaniasis serological tests (rk39 rapid test, ELISA, IFAT) were negative due to species differences (Leishmania amazonensis), masquerading completely as isolated Hodgkin's lymphoma until bone marrow aspiration demonstrated intracellular protozoa.\n2. Admission Breakpoint: Admission triage concludes following physical examination identifying generalized lymphadenopathy (largest 3 cm inguinal node), baseline laboratory studies (normocytic anemia, elevated CRP 99.9 mg/L, elevated canalicular enzymes GGT 570 U/L and ALP 574 U/L, beta-2 microglobulin 3.3 mcg/mL), normal echocardiography, and staging PET-CT showing generalized nodal conglomerates and hepatosplenosplenic/bone hypermetabolism, prior to bone marrow aspiration or excisional lymph node biopsy.\n3. Differential Distinctions: Isolated Hodgkin's lymphoma / lymphoproliferative disorder was strongly supported by constitutional B-symptoms and hypermetabolic nodal conglomerates, but bone marrow aspiration revealed Leishmania amastigotes. Systemic viral/parasitic infections (HIV, syphilis, hepatitis B/C, toxoplasmosis, CMV, EBV) cause fever and lymphadenopathy but had non-reactive serologies. Classical visceral leishmaniasis (L. infantum) was considered but failed to bind rk39/standard serological assays, highlighting the rare visceral presentation of L. amazonensis.",
+  "case_prompt": "A 65-year-old male builder is admitted to the hospital with a 1-year history of diffuse abdominal pain, an unintentional weight loss of 14 kg, and daily fevers over the preceding 4 months. The fevers occur once or twice daily, predominantly in the morning and night, and are accompanied by profuse sweating and shivers. He was born in Para\u00edba in northeastern Brazil, lived in Pernambuco between ages 7 and 9, and has resided in the city of S\u00e3o Paulo since age 9 without subsequent travel outside the metropolitan area. He has a chronic history of smoking but no other known prior medical conditions. He denies contact with unpasteurized dairy, domestic animals, farm animals, or rodents.\n\nOn physical examination, he appears chronically unwell. Examination is remarkable for enlarged lymph nodes palpated in several anatomic regions; the largest node measures 3 cm and is situated in the left inguinal region. Abdominal examination reveals diffuse tenderness without localized rebound.\n\nInitial laboratory testing reveals a C-reactive protein (CRP) level of 99.9 mg/L and a serum sodium level of 130 mEq/L. Complete blood count shows normocytic normochromic anemia with hemoglobin 11.1 g/dL, hematocrit 32.4%, leukocytes 5,300/mm\u00b3 (neutrophils 3,260/mm\u00b3, lymphocytes 910/mm\u00b3, monocytes 850/mm\u00b3, eosinophils 270/mm\u00b3, and basophils 10/mm\u00b3). Liver chemistry shows canalicular enzyme elevation: gamma-glutamyl transferase (GGT) 570 U/L and alkaline phosphatase 574 U/L. Serum beta-2 microglobulin is 3.3 mcg/mL. Renal and routine liver functions are otherwise normal. Transthoracic echocardiography is normal.\n\nPositron emission tomography (PET) reveals increased glycolytic metabolism throughout lymph nodes forming conglomerates above and below the diaphragm, as well as diffuse hypermetabolism in the spleen, liver, and bones.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary lymphoproliferative disorder / Hodgkin's lymphoma",
+      "rule_out_reason": "Heavily favored based on profound B-symptoms, generalized adenopathy, and intense multi-station nodal and reticuloendothelial FDG avidity on PET imaging; although excisional lymph node biopsy confirmed concurrent nodular sclerosing Hodgkin's lymphoma, this did not account for the intracellular protozoa seen in the bone marrow aspirate.",
+      "quote": "The positron emission tomography revealed an increased glycolytic metabolism in several lymph nodes, some of them forming conglomerates, both above and below the diaphragm, as well as increased glycolytic metabolism in the spleen, liver and bones, suggestive of lymphoproliferative disorder"
+    },
+    {
+      "candidate": "Systemic infectious diseases (HIV, syphilis, viral hepatitis, EBV, CMV, toxoplasmosis)",
+      "rule_out_reason": "Evaluated as infectious causes of persistent fever of unknown origin, hepatosplenic involvement, and lymphadenopathy, but excluded by universally negative serologic panels.",
+      "quote": "The following serology tests were all negative: HIV, syphilis, hepatitis C and B, toxoplasmosis, CMV, EBV"
+    },
+    {
+      "candidate": "Classical Visceral Leishmaniasis (L. donovani / L. infantum)",
+      "rule_out_reason": "Considered given fever, splenomegaly, and cytopenia in a patient from Brazil, but routinely employed rapid and indirect serological assays were completely negative due to antigenic variation in this rare visceral strain.",
+      "quote": "rk39 rapid test, enzyme-linked immunosorbent assay, and indirect immunofluorescence for L. (L.) major-like antigen."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Visceral leishmaniasis (Leishmania amazonensis) in Hodgkin's lymphoma",
+      "rule_out_reason": "Bone marrow aspiration definitively visualized Leishmania amastigotes on direct microscopy, subsequently confirmed by PCR and culture with species identification as L. amazonensis, accompanied by lymph node biopsy demonstrating concurrent nodular sclerosing Hodgkin's lymphoma with positive Leishmania immunohistochemistry.",
+      "quote": "The bone marrow aspiration identified the presence of Leishmania spp. in direct microscopy, which was confirmed by a positive polymerase chain reaction and culture of the aspirate, and further identified as L. (L.) amazonensis. The biopsy of the inguinal lymph node revealed a high-grade nodular sclerosing Hodgkin's lymphoma (Figures 2A and 2B) and positive immunohistochemistry for Leishmania spp."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation complete. Case prompt stops at admission baseline (labs + PET scan), completely omitting marrow cytology, PCR, and histology results. Exact quotes verified."
+}

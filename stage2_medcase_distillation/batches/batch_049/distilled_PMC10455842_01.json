@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10455842_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 54-year-old man from Guangxi, China presents with subacute constitutional symptoms, cough, and focal neurologic deficits, found to have bilateral pulmonary patches and a 3.5 cm rim-enhancing intracranial mass. Despite being HIV-negative with a normal CD4+ T-cell count, he harbored dual severe opportunistic infections (pulmonary talaromycosis and a nocardial brain abscess) driven by an underlying adult-onset immunodeficiency with anti-interferon-gamma autoantibodies.\n2. Admission Breakpoint: The breakpoint occurs after admission labs (revealing leukocytosis, elevated ESR, negative anti-HIV serology, and normal CD4 count), chest CT (bilateral high-density patchy shadows), and brain MRI (3.5 cm irregular lesion), strictly before sputum/bronchoalveolar lavage culture results or craniotomy histopathology.\n3. Differential Distinctions: Bronchogenic carcinoma with intracranial metastases is the primary non-infectious concern given his age, smoking history, and simultaneous thoracic-CNS masses. Disseminated cryptococcosis or tuberculosis also presents with pulmonary infiltrates and CNS lesions in endemic zones, but microbiologic isolation of Talaromyces marneffei from the respiratory tract confirmed talaromycosis.",
+  "case_prompt": "A 54-year-old male native and resident of Guangxi, China, presented to the hospital with a 1-month history of fever, cough productive of sputum, and a 9-day history of progressive dizziness, headache, and gait imbalance. He had a history of cigarette smoking but no prior history of organ transplantation, hematologic malignancy, diabetes mellitus, or autoimmune disorders. On admission, baseline laboratory investigations revealed a leukocyte count of 10.12 × 10^9/L, lymphocyte count of 3.55 × 10^9/L, and an elevated erythrocyte sedimentation rate (ESR) of 46 mm/h. Absolute neutrophil count, C-reactive protein, and serum IgG and IgM levels were within normal limits. Peripheral blood CD4+ T-cell count was 1,181 cells/mm^3 (reference range 561–1,137), natural killer (NK) cell percentage was 33.56% (reference range 9.5–23.5%), and fourth-generation anti-HIV antibody testing was negative. A chest computed tomography (CT) scan demonstrated multiple high-density patchy parenchymal shadows across both lungs. A non-contrast head CT revealed a low-attenuation lesion in the right occipital lobe interpreted as a cerebral infarction, and subsequent contrast-enhanced brain magnetic resonance imaging (MRI) revealed an irregular intracranial mass measuring up to 3.5 cm × 2.5 cm × 3.2 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary Bronchogenic Carcinoma with Brain Metastasis",
+      "rule_out_reason": "In a middle-aged smoker presenting with concurrent pulmonary infiltrates and a large solitary cerebral mass, metastatic lung carcinoma was a leading clinical suspicion; however, neurosurgical resection of the lesion demonstrated infectious suppurative necrosis without neoplastic cells.",
+      "quote": "Histological examination of brain tissue revealed no evidence of malignancy but suggested the presence of a chronic brain abscess with Gram-positive filamentous bacilli (Figure 2B)."
+    },
+    {
+      "candidate": "Disseminated Cryptococcosis / Tuberculosis",
+      "rule_out_reason": "Concurrent pulmonary and central nervous system lesions in patients from Southern China commonly suggest disseminated Cryptococcus neoformans or Mycobacterium tuberculosis; however, specific mycological and bacterial cultures confirmed an alternative endemic dimorphic fungus and actinomycete.",
+      "quote": "The diagnosis of Nocardia brain abscess was confirmed by the identification of Nocardia farcinica in purulent fluid culture, while testing for TM yielded negative results."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoalveolar lavage fluid and sputum cultures definitively isolated Talaromyces marneffei, with rapid respiratory response to voriconazole, establishing pulmonary talaromycosis alongside a co-existing Nocardia brain abscess in the setting of neutralising anti-interferon-gamma autoantibodies.",
+      "quote": "T. marneffei isolated from sputum and bronchoalveolar lavage fluid (BALF) culture (Figure 2A), while blood cultures were negative. After receiving antifungal treatment with voriconazole (0.2g twice daily), the patient's fever, coughing and expectoration symptoms improved 1 week later."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Zero-leakage admission narrative terminates at the completion of initial neuroimaging and triage laboratories, omitting all fungal/bacterial culture results and antibody testing. Verbatim quotes validate rule-outs and diagnostic pivot."
+}

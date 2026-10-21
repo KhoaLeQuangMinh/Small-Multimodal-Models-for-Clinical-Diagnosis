@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5661914_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A cluster of military personnel on Guam presented with an acute febrile illness featuring high fever, severe headache, prominent lower back myalgias, profound prostration, and skin abrasions following an overnight jungle trek with freshwater and mud exposure. The clinical picture overlaps with arboviral infections (e.g., dengue), rickettsial spotted fevers, or enteric fever, but notable absences include lack of rash, conjunctival injection, or gastrointestinal symptoms, along with relatively preserved baseline lab values (mild renal and hepatic dysfunction).\n2. Admission Breakpoint: The admission breakpoint occurs immediately after initial physical examination and baseline triage laboratory evaluation (revealing tachycardia, fever, upper/lower extremity abrasions, mildly elevated creatinine, and isolated mild transaminase/CK elevations), prior to send-out microbiologic blood cultures and convalescent serologic panels.\n3. Differential Distinctions: Rickettsial infection or scrub typhus typically present with eschar or rash. Dengue or chikungunya typically feature significant thrombocytopenia, leukopenia, retro-orbital pain, or prominent arthralgias/maculopapular exanthem. Enteric fever presents with prominent abdominal symptoms and relative bradycardia rather than persistent tachycardia with mucosal/cutaneous abrasions following freshwater jungle immersion.",
+  "case_prompt": "A 24-year-old male military service member stationed on Guam presented to the clinic with 3 days of subjective fever, severe headache, intense myalgias particularly focused in the lower back, profound fatigue, and insomnia that progressively worsened throughout the day. He also reported drenching night sweats, anorexia, and variable weight loss. He denied abdominal pain, nausea, vomiting, diarrhea, or rash. He had no sick contacts, reported no recent off-island travel, insect bites, or consumption of unpasteurized milk or unusual foods. His immunizations were up to date for hepatitis A, hepatitis B, typhoid, and influenza, and he was taking no routine medications.\n\nOver the next 48 hours, seven additional service members from the same unit presented to the clinic and emergency department with an identical clinical syndrome characterized by high fever, severe headache, extreme fatigue, and lower back pain. Epidemiologic evaluation revealed that approximately 2 weeks prior to symptom onset, the cohort had participated in an outdoor running event on southern Guam where they became lost overnight in the jungle, sustaining extensive exposures to wet river banks, mud, and swamps.\n\nOn physical examination, the patients were ill-appearing and prostrate on the examination table. Temperatures ranged from 101.2°F to 103.0°F (38.4°C to 39.4°C), and all were tachycardic. Physical exams were notable for cutaneous abrasions along the upper arms and lower legs. There was no conjunctival injection, scleral icterus, lymphadenopathy, pharyngeal erythema, or rash. Abdominal examination revealed no hepatosplenomegaly or focal tenderness. Initial triage laboratory evaluation was largely unremarkable, notable only for slightly elevated serum creatinine in several patients, and elevated liver aminotransferases and creatine kinase levels in one patient.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Enteric fever (Typhoid)",
+      "rule_out_reason": "The patient had documented prior immunization against typhoid, lacked gastrointestinal manifestations such as diarrhea or abdominal pain, and microbiologic blood cultures yielded no growth.",
+      "quote": "He had been immunized against hepatitis A and B, typhoid, influenza, and took no routine medications."
+    },
+    {
+      "candidate": "Arboviral illness / Rickettsial infection",
+      "rule_out_reason": "Patients lacked insect bite exposures, had no characteristic skin rashes or conjunctival injection, and showed no hepatosplenomegaly on physical examination.",
+      "quote": "The majority of their exams were normal, with no hepatosplenomegaly, rashes or conjunctival injection noted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Epidemic clustering 2 weeks after freshwater and mud immersion in the jungle with skin abrasions, followed by seroconversion on convalescent serologic testing and rapid clinical recovery on doxycycline therapy.",
+      "quote": "The cluster of cases presented approximately 2 weeks after a particular water exposure during a hash running event on the south side of Guam where 20 or so hikers had gotten lost and spent the night in the jungle. They noted multiple exposures to wet river banks, mud, and swamps."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in case prompt, exact article quotes used for rule-outs and pivot."
+}

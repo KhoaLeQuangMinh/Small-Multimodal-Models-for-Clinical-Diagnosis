@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7757284_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 35-year-old oil palm plantation worker presents with an extensive, verrucous, malodorous plaque with ulcerations and purulent discharge covering the buttocks, thigh, and scrotum unresponsive to antibacterial and antifungal treatments, mimicking deep mycoses, squamous cell carcinoma, or pyoderma vegetans, occurring alongside chronic untreated pulmonary disease.\n2. Admission Breakpoint: Admission presentation concludes following physical and dermatological examination, occupational history, and baseline blood work (mild leukocytosis, normal LFTs and renal panel, nonreactive HIV), strictly prior to tuberculin skin testing, chest radiograph disclosing pulmonary cavitation, sputum GeneXpert, and cutaneous biopsy.\n3. Differential Distinctions: Deep fungal infections (chromoblastomycosis, blastomycosis) are ruled out by negative skin scraping KOH examination and negative PAS staining on skin biopsy; secondary bacterial pyoderma is ruled out by failure of prior antibiotics and finding that E. coli represented colonizing flora; diagnosis of tuberculosis verrucosa cutis with pulmonary tuberculosis was confirmed by sputum GeneXpert positivity for M. tuberculosis and biopsy showing caseating epithelioid granulomas with pseudoepitheliomatous hyperplasia.",
+  "case_prompt": "A 35-year-old male is referred to an outpatient dermatology clinic with an extensive verrucous plaque and malodorous purulent discharge involving his buttocks, left thigh, and scrotum. The cutaneous condition began two years ago as small, mildly pruritic plaques confined to the buttocks. Five months prior to presentation, painful and itchy nodules developed across the lesions, which subsequently ulcerated and drained foul-smelling seropurulent exudate. The lesions rapidly thickened and expanded across the left buttock, thigh, and scrotum, forming an annular hyperkeratotic plaque with central healing. He has previously received empirical courses of antibacterial and antifungal therapy at a local hospital without clinical improvement. There is no history of prior discrete cutaneous trauma. He is employed on an oil palm plantation, where he frequently wears shorts and sits directly on the ground during work. Over the past two years, he also notes an untreated chronic cough and night sweats without documented fever. He reports no known family or household contacts with chronic pulmonary illness.\n\nDermatological examination reveals an extensive verrucous plaque covered by dark dense crusts with irregular borders across the buttocks, left thigh, and scrotum. Fissures and multiple ulcerations with foul-smelling seropurulent discharge are present throughout the dense crusts. Baseline laboratory testing shows normal hepatic function, normal renal function, and normal blood glucose. Complete blood count reveals a mildly elevated leukocyte count of 14,580/uL. HIV antibody screening is nonreactive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Deep Fungal Infection (Chromoblastomycosis / Blastomycosis)",
+      "rule_out_reason": "Verrucous plaques following soil contact in tropical plantation workers strongly suggest subcutaneous/deep mycoses, but direct fungal microscopic examination and specialized biopsy stains were negative.",
+      "quote": "Fungal infection was ruled out by negative potassium hydroxide (KOH) examination from the lesion skin scraping and negative Periodic Acid-Schiff (PAS) stain from the skin biopsy specimen."
+    },
+    {
+      "candidate": "Primary Pyogenic Bacterial Infection / Pyoderma Vegetans",
+      "rule_out_reason": "Pus culture yielded gram-negative bacteria, but this reflected secondary superficial colonizing flora rather than the primary etiologic pathogen, consistent with past antibiotic failure and presence of caseating granulomas.",
+      "quote": "Pus culture was performed and revealed Escherichia coli colonization."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Sputum GeneXpert molecular testing detected Mycobacterium tuberculosis, while cutaneous biopsy demonstrated pseudoepitheliomatous hyperplasia and caseating epithelioid granulomatous inflammation, confirming tuberculosis verrucosa cutis with active pulmonary tuberculosis.",
+      "quote": "Acid Fast Bacilli (AFB) were not found in the sputum specimen, but The GeneXpert was able to detect M. tuberculosis that was sensitive to rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7757284. The admission breakpoint isolates the extensive verrucous plaque, chronic cough, and baseline labs, excluding chest radiograph, Mantoux test, sputum GeneXpert, and biopsy findings. All diagnostic candidates are backed by direct quotes from the text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7083182_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 77-year-old man with diabetic end-stage renal disease presents with an acute, rapidly progressive painless preauricular swelling over 5 days, marked neutrophilic leukocytosis, and an extraordinarily high C-reactive protein (330 mg/L). This presentation closely mimics acute suppurative bacterial parotitis or an aggressive salivary gland neoplasm. However, the patient remains refractory to multiple oral and intravenous broad-spectrum antibacterial regimens, and imaging demonstrates diffuse infiltration without a drainable abscess cavity.\n2. Admission Breakpoint: The admission presentation concludes following initial inpatient triage, physical exam, admission laboratory evaluation (WBC 17.59x10^9/L, CRP 330 mg/L, ESRD renal panel, normal LFTs/coagulation), and negative initial autoimmune screens (ACE, ANA, anti-SSA/SSB), prior to inpatient antibiotic failure, neck CT scan, and fine-needle aspiration.\n3. Differential Distinctions: Acute pyogenic bacterial parotitis (e.g., Staphylococcus aureus) was initially suspected due to rapid unilateral swelling, striking neutrophilia, and extreme CRP elevation; however, the patient failed outpatient ciprofloxacin and inpatient ceftriaxone/metronidazole, blood cultures were negative, and imaging showed diffuse phlegmonous infiltration without purulence. Autoimmune sialadenitis (Sjögren syndrome) or sarcoidosis was considered due to salivary enlargement and anterior cervical lymphadenopathy, but anti-SSA/SSB, ANA, and serum ACE were negative. Extrapulmonary mycobacterial involvement of intraparotid lymph nodes should be considered in immunocompromised hosts with ESRD.",
+  "case_prompt": "A 77-year-old man is admitted to the internal medicine ward with a 5-day history of progressive left preauricular swelling. The swelling was painless and insidious in onset, progressively increasing in size. Over the preceding week, he noted generalized fatigue and weakness. Prior to admission, he was evaluated twice in primary care and completed a course of oral ciprofloxacin without improvement. He denies fever, cough, dyspnea, night sweats, or weight loss. His medical history is significant for end-stage renal disease secondary to diabetic nephropathy, hypertension, coronary artery disease, and chronic obstructive pulmonary disease, with no known personal history of sick contacts with chronic cough or recent travel. On physical examination, he is alert with a pulse rate of 84 beats per minute, blood pressure of 110/70 mm Hg, respiratory rate of 20 breaths per minute, and oxygen saturation of 95% on room air. Local examination reveals a 4 x 3 cm, slightly tender swelling in the left parotid region accompanied by small, non-tender anterior cervical lymphadenopathy. Cardiac and pulmonary examinations are unremarkable. Blood tests demonstrate a C-reactive protein of 330 mg/L, leukocyte count of 17.59 x 10^9/L with neutrophil predominance (13.72 x 10^9/L), and platelet count of 555 x 10^9/L. Estimated glomerular filtration rate is 15 mL/min, serum creatinine is 357 μmol/L, and urea is 31.8 mmol/L. Electrolytes, coagulation profiles, liver panels, and thyroid function tests are normal. Angiotensin-converting enzyme, antinuclear antibodies, and anti-SSA/SSB antibodies are all negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute suppurative bacterial parotitis",
+      "rule_out_reason": "Rapid parotid enlargement with marked neutrophilic leukocytosis and CRP 330 mg/L strongly suggested pyogenic bacterial infection, but the patient failed outpatient oral ciprofloxacin and inpatient intravenous ceftriaxone and metronidazole, blood cultures were negative, and imaging lacked a drainable purulent abscess.",
+      "quote": "The patient had been previously evaluated by his primary doctor on 2 occasions and was on oral ciprofloxacin without any improvement... On day 5 after admission, no clinical or biological improvement was achieved."
+    },
+    {
+      "candidate": "Autoimmune sialadenitis (Sjögren syndrome) / Sarcoidosis",
+      "rule_out_reason": "Unilateral salivary gland enlargement and cervical lymphadenopathy prompted evaluation for granulomatous or autoimmune sialadenitis, but antinuclear antibodies, anti-SSA/SSB serologies, and serum angiotensin-converting enzyme were all negative.",
+      "quote": "Angiotensin-converting enzyme, antinuclear antibodies and anti-SSA/SSB were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fine-needle aspiration cytology of the parotid compartment revealed neutrophils, lymphocytes, and necrotic debris, with smear examination demonstrating acid-fast bacilli on Ziehl-Neelsen staining, a positive PCR for Mycobacterium tuberculosis, and subsequent confirmatory mycobacterial culture.",
+      "quote": "Smear staining with the Ziehl-Neelsen stain as well as a PCR test were positive for Mycobacterium tuberculosis. These results were confirmed with culture of the sample. The patient was diagnosed with tuberculous parotitis and anti-tuberculous drugs were initiated."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Tuberculous parotitis is an unusual form of extrapulmonary tuberculosis that occurs primarily via hematogenous dissemination or lymphatic spread to intraparotid lymph nodes. In elderly patients with uremia and diabetic immunosuppression, it can present acutely with inflammatory signs and marked leukocytosis mimicking pyogenic parotitis, leading to delayed diagnosis and ineffective antibacterial therapy until fine-needle aspiration cytology is performed."
+}

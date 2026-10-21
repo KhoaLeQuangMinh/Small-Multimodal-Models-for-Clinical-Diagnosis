@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8216418_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Patients living with HIV in Uganda presenting with pulmonary symptoms initially treated with standard first-line antibacterial/antitubercular regimens fail to clear or experience persistent smear positivity. This creates tension between poor medication adherence, intercurrent opportunistic infection (e.g., Pneumocystis or bacterial pneumonia), and multidrug/polydrug resistance requiring complex second-line regimens.\n2. Admission Breakpoint: The breakpoint occurs at initial clinical presentation of respiratory symptoms and chronic cough in the HIV clinic, prior to return of mycobacterial sputum smear/culture results, GeneXpert, and phenotypic drug susceptibility testing (DST).\n3. Differential Distinctions: Common HIV-associated bacterial pneumonia or fungal infections (e.g., PJP, Cryptococcus) cause respiratory disease but are excluded by persistent acid-fast positive sputum; drug-susceptible pulmonary infection is refuted by lack of smear/culture conversion on standard RHZE therapy; phenotypic/genotypic resistance profiling confirming MDR-TB and polydrug resistance establishes drug-resistant tuberculosis.",
+  "case_prompt": "An adult patient with confirmed human immunodeficiency virus (HIV) infection presents to a clinical referral center in Uganda for evaluation of chronic respiratory symptoms, persistent productive cough, and constitutional decline. The patient is engaged in HIV care and is initiated on clinical evaluation and baseline monitoring for chronic pulmonary infection in an endemic sub-Saharan African setting.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic bacterial or fungal pneumonia (e.g., Pneumocystis jirovecii or Streptococcus pneumoniae)",
+      "rule_out_reason": "In HIV-infected individuals, opportunistic bacterial or fungal pathogens frequently cause acute-on-chronic respiratory symptoms, but ongoing microbiological evaluation confirmed persistent positive sputum smears indicating an acid-fast mycobacterial etiology.",
+      "quote": "sputum remained positive up to the time she was declared lost to follow-up 5 weeks into TB treatment."
+    },
+    {
+      "candidate": "Drug-susceptible pulmonary tuberculosis",
+      "rule_out_reason": "Standard first-line therapy (rifampicin, isoniazid, pyrazinamide, and ethambutol [RHZE]) typically results in rapid clinical and microbiological conversion in susceptible disease, but the patient exhibited persistent positive smears and documented resistance to first-line agents.",
+      "quote": "After starting with RHZE, some clinical improvement was seen, but sputum remained positive up to the time she was declared lost to follow-up 5 weeks into TB treatment."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Comprehensive mycobacterial drug susceptibility testing identified drug-resistant strains—including multidrug resistance (MDR-TB resistant to rifampicin and isoniazid) and poly-drug resistance (resistant to isoniazid, ethambutol, and pyrazinamide)—necessitating second-line regimens.",
+      "quote": "Patient 1 showed resistance to R and H (MDR-TB) and was referred to the National Referral Tuberculosis Treatment Centre and started on a 24-month second-line MDR-TB regimen with levofloxacin, cycloserine, ethionamide and pyrazinamide, plus kanamycin for the first 6 months."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case cleanly maintains the admission breakpoint without disclosing pathogen name or resistance profile in the presentation. Quoted text verbatim."
+}

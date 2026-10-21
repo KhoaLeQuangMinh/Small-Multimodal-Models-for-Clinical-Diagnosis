@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC9957551_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 53-year-old morbidly obese, hypertensive woman presents with sudden coma (GCS 5), dense hemiparesis, and a large right basal ganglia intracerebral hemorrhage on head CT. The clinical picture mimicked typical primary hypertensive intracerebral hemorrhage until severe persistent hyperpyrexia (106-107 \u00b0F), massive rhabdomyolysis (CK 10,000 IU/L), coagulopathy, and acute kidney injury unfolded, revealing Expanded Dengue Syndrome triggered by antecedent arboviral infection.\n2. Admission Breakpoint: Admission triage terminates after emergent endotracheal intubation for airway protection (post-intubation GCS 6), admission vitals, physical examination confirming left hemiparesis, admission ECG showing sinus tachycardia, clear chest radiograph, and emergency noncontrast head CT demonstrating right basal ganglia bleeding with intraventricular hemorrhage, prior to ICU multi-organ complications, sterile cultures, or tropical serology panels.\n3. Differential Distinctions: Primary hypertensive basal ganglia hemorrhage accounted for the acute focal stroke syndrome in a hypertensive patient, but failed to explain the antecedent febrile prodrome, persistent extreme hyperpyrexia, profound rhabdomyolysis, and coagulopathy. Bacterial septic shock was considered but blood/fluid cultures remained sterile. Drug-induced hyperthermia / neuroleptic malignant syndrome was ruled out by history. Other tropical illnesses (malaria, typhoid, leptospirosis, scrub typhus, chikungunya) were excluded by targeted serology, establishing Expanded Dengue Syndrome.",
+  "case_prompt": "A 53-year-old morbidly obese woman with a history of hypertension is brought to the emergency department following an acute loss of consciousness and left-sided weakness for two days, accompanied by high-grade fever and vomiting. Family members describe an antecedent illness characterized by fever with chills and myalgias approximately one week prior to presentation.\n\nOn physical examination upon admission, she is unconscious with a Glasgow Coma Scale (GCS) score of 5. She is tachypneic with a respiratory rate of 30 to 35 breaths per minute, tachycardic with a heart rate of 114 beats per minute, and hypertensive with a blood pressure of 153/90 mmHg. Oxygen saturation is 94% on ambient air, and spontaneous urine output is 40 to 50 mL/hour. Due to inability to protect her airway, emergent endotracheal intubation is performed; following intubation, her GCS is 6. Neurological examination reveals dense left flaccid hemiparesis.\n\nElectrocardiography demonstrates sinus tachycardia. Chest radiography is normal.\n\nNoncontrast computed tomography (NCCT) of the brain reveals an acute hemorrhage centered in the right basal ganglia with intraventricular extension.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary hypertensive intracerebral hemorrhage",
+      "rule_out_reason": "Initially suspected as the sole diagnosis given chronic hypertension, morbid obesity, acute left hemiparesis, and basal ganglia hematoma; however, persistent extreme hyperthermia, massive rhabdomyolysis, coagulopathy, and antecedent flu-like illness indicated that the hemorrhage was a complication of systemic arboviral infection.",
+      "quote": "Noncontrast computerized tomography (NCCT) of the brain revealed right basal ganglia bleeding with intraventricular hemorrhage"
+    },
+    {
+      "candidate": "Pyogenic bacterial sepsis / Septic shock",
+      "rule_out_reason": "Considered because the patient spiked extreme fevers with acute renal failure, multiorgan involvement, and shock, but repeated microbiological blood and body fluid cultures remained sterile.",
+      "quote": "On workup, cultures turned out to be sterile."
+    },
+    {
+      "candidate": "Drug-induced hyperthermia / Malignant hyperthermia",
+      "rule_out_reason": "Evaluated in the differential diagnosis of extreme hyperthermia (core temperature 106-107 \u00b0F) and profound rhabdomyolysis (creatine kinase 10,000 IU/L), but eliminated after thorough medication and toxin reconciliation.",
+      "quote": "Other possibilities of hyperthermia (such as drug toxicity) were ruled out."
+    },
+    {
+      "candidate": "Other tropical pathogens (Malaria, typhoid, leptospirosis, chikungunya, scrub typhus, COVID-19)",
+      "rule_out_reason": "Systematically screened in the setting of acute febrile multi-organ failure with myalgia and chills in an endemic setting, but ruled out by non-reactive tests.",
+      "quote": "Workup for COVID-19 was also negative. On account of a history of fever with chill and myalgia around a week before ED admission, a tropical workup was sent for malaria, typhoid, leptospirosis, dengue, chikungunya, and scrub typhus"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Expanded Dengue Syndrome",
+      "rule_out_reason": "Tropical serology returned positive for dengue IgM antibodies, establishing the definitive diagnosis of Expanded Dengue Syndrome characterized by atypical spontaneous basal ganglia hemorrhage, extreme hyperthermia, rhabdomyolysis, coagulopathy, and acute kidney injury.",
+      "quote": "a tropical workup was sent for malaria, typhoid, leptospirosis, dengue, chikungunya, and scrub typhus, in which serology (IgM antibodies) for dengue turned out to be positive."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Stanford MedCaseReasoning distillation. Clean admission prompt ending with emergency intubation, vitals, and initial head CT. Serology and ICU course documented in reasoning. All quotes verified verbatim."
+}

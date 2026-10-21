@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10038010_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A previously healthy 26-year-old male presents with a subacute 12-day history of fever, headache, diplopia, and altered sensorium with profound hyponatremia, but normal peripheral leukocyte count, normal chest radiograph, and an initial non-contrast head CT showing no acute abnormalities. This indolent course contrasts with fulminant pyogenic bacterial meningitis, while the severe basal signs and hyponatremia point toward basilar granulomatous infection.\n2. Admission Breakpoint: Admission triage ends following initial emergency presentation, baseline blood chemistry, chest radiograph, and initial non-contrast head CT, immediately prior to lumbar puncture on hospital day 3.\n3. Differential Distinctions: Acute bacterial meningitis is excluded by normal peripheral leukocyte count, negative blood cultures, and subacute onset; viral and parasitic meningoencephalitides are excluded by negative CMV, toxoplasmosis, and HIV testing alongside marked CSF hypoglycorrhachia and basal enhancement leading to hydrocephalus.",
+  "case_prompt": "A 26-year-old male was admitted to the emergency department with fever and altered mental status. His family reported a 12-day history of persistent fevers ranging between 38°C and 39°C, severe headaches, photosensitivity, diplopia, and profound fatigue. He was self-employed, a mild cigarette smoker, a non-drinker, and had no history of illicit drug use. He denied chest discomfort, cough, or palpitations.\n\nOn physical examination, he was drowsy with a Glasgow Coma Scale score of 13. He was febrile with a body temperature of 38.0°C and tachycardic with a pulse of 110 beats per minute. No cutaneous petechiae, purpura, or rash were observed. Cardiopulmonary and abdominal examinations were normal. Neurological assessment demonstrated mild nuchal rigidity without overt Kernig's or Brudzinski's signs.\n\nTriage laboratory investigations revealed a white blood cell count of 5.8 × 10^9/L (89.5% neutrophils, 3.1% lymphocytes), hemoglobin of 11.2 g/dL, and platelet count of 243 × 10^9/L. Serum electrolytes showed marked hyponatremia with sodium of 126 mmol/L, potassium of 4.0 mmol/L, and random blood glucose of 134 mg/dL. Initial chest radiography demonstrated clear lung fields without consolidation or focal infiltrates. A baseline non-contrast computed tomography scan of the head showed no acute intracranial abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial Meningitis",
+      "rule_out_reason": "Considered because of fever, headache, altered mental status, and neck stiffness; however, the indolent 12-day symptom progression, normal peripheral leukocyte count, lack of peripheral bacteremia, and subsequent clear lymphocytic CSF with profound hypoglycorrhachia argued strongly against classical purulent bacterial meningitis.",
+      "quote": "Blood cultures did not detect any growth."
+    },
+    {
+      "candidate": "Viral or Opportunistic Meningoencephalitis (CMV, Toxoplasmosis, HIV)",
+      "rule_out_reason": "Considered given the subacute meningoencephalitic presentation with cranial neuropathy in a young adult; however, specific serological testing was negative and the marked CSF hypoglycorrhachia was atypical for uncomplicated viral encephalitis.",
+      "quote": "Both were negative for cytomegalovirus (CMV), toxoplasmosis IgM, and human immunodeficiency virus (HIV) serology."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Lumbar puncture revealed marked lymphocytic pleocytosis with pronounced protein elevation and severe hypoglycorrhachia, and subsequent neuroimaging demonstrated characteristic basilar leptomeningeal enhancement with triventricular obstructive hydrocephalus confirming tuberculous central nervous system infection.",
+      "quote": "On the third day, the results of his lumbar puncture suggested tuberculous meningitis: clear appearance, increased white cell counts (40/L) with lymphocytes predominating, red blood cells (16/L), high protein (2.09 g/L), and low glucose (40 mg/dL). The cerebral fluid to serum glucose ratio was less than 50%."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning principles. Admission breakpoint separates initial presentation from Day 3 lumbar puncture and Day 8 follow-up contrast CT. Zero spoilers in case_prompt."
+}

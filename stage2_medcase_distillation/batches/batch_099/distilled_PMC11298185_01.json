@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11298185_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 59-year-old man receiving biologic therapy with the interleukin-17A antagonist ixekizumab for chronic plaque psoriasis presents with subacute constitutional symptoms (10-pound weight loss, night sweats) and a cough with scanty sputum. Chest CT reveals bilateral multifocal cavitary lung opacities and mediastinal lymphadenopathy. Although TNF-alpha inhibitors carry a high, well-recognized risk of mycobacterial reactivation, IL-17 inhibitors have historically been considered to pose minimal risk for active tuberculosis. The clinical tension revolves around distinguishing opportunistic cavitary fungal pneumonias (e.g., aspergillosis, endemic mycoses), cavitary bacterial lung abscesses, or malignancy from atypical primary or reactivated pulmonary tuberculosis in a patient receiving anti-IL-17 biologic therapy.\n2. Admission Breakpoint: The admission breakpoint is established after clinical and dermatological examination, baseline inflammatory labs (CRP 61 mg/L), and thoracic CT imaging demonstrating bilateral apical and basal cavitary opacities and mediastinal lymphadenopathy, immediately prior to send-out interferon-gamma release assay (IGRA) results and referral for antitubercular quadruple therapy.\n3. Differential Distinctions: Opportunistic fungal infection (pulmonary aspergillosis or histoplasmosis) and cavitary bacterial lung abscess were major diagnostic considerations given immunosuppression and cavitary infiltrates, but were ruled out by a positive interferon-gamma release assay and complete treatment response to standard antitubercular chemotherapy. Malignancy was excluded by the bilateral multifocal infectious cavitary pattern and response to antimycobacterial drugs.",
+  "case_prompt": "A 59-year-old man presents to the clinic with a 2-week history of cough producing scanty sputum and drenching night sweats. Over the preceding 3 months, he has experienced an unintentional 10-pound weight loss, though his general activity and sleep architecture have otherwise remained stable.\n\nThe patient has an 8-year history of plaque psoriasis for which he has been receiving intermittent biologic therapy with ixekizumab (80 mg subcutaneously) over the past two years, having received a total of 10 doses. He has no other history of chronic medical conditions or antecedent infectious diseases.\n\nOn physical examination, the patient is afebrile with stable vital signs. Dermatologic inspection reveals scattered dark erythematous plaques ranging from walnut- to palm-sized across the lumbar and dorsal regions, exhibiting sparse overlying silvery-white scales. The remainder of the physical examination, including cardiopulmonary examination, is unremarkable.\n\nBaseline laboratory testing demonstrates an elevated C-reactive protein of 61 mg/L. Computed tomography (CT) of the chest reveals increased bilateral bronchovascular markings and multifocal patchy opacities with cavitation involving the left upper lobe apicoposterior segment, lingular segment, basal segments of the lower lobe, and segments of the right upper and middle lobes. Mild mediastinal lymphadenopathy, bilateral pleural thickening, and calcification of the aortic and coronary arterial walls are present, without pleural effusions or chest wall abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic Fungal Infection (Pulmonary Aspergillosis / Endemic Mycosis)",
+      "rule_out_reason": "Strongly considered because the patient was immunosuppressed on a monoclonal antibody and presented with multifocal cavitary lung disease, but ruled out in favor of mycobacterial infection confirmed by a positive interferon-gamma release assay.",
+      "quote": "The chest CT scan revealed multifocal infective lesions in both lungs with cavitation... positive interferon-gamma release assay for tuberculosis infection."
+    },
+    {
+      "candidate": "Pyogenic Cavitary Bacterial Pneumonia / Lung Abscess",
+      "rule_out_reason": "Considered given cavitary opacities and elevated inflammatory markers (CRP 61 mg/L), but the indolent 3-month course of constitutional wasting and night sweats pointed toward a chronic granulomatous process rather than acute pyogenic suppuration.",
+      "quote": "elevated C-reactive protein (61 mg/L) and positive interferon-gamma release assay for tuberculosis infection."
+    },
+    {
+      "candidate": "Pulmonary Neoplasm with Central Cavitation",
+      "rule_out_reason": "Considered due to subacute weight loss, night sweats, and cavitary masses with mediastinal lymph node enlargement, but the bilateral multifocal distribution was consistent with an active infectious disease, corroborated by antimycobacterial response.",
+      "quote": "patchy opacities with cavitation in the left upper lobe apicoposterior segment, lingular segment, basal segments of the lower lobe, and segments of the right upper lobe and middle lobe. There were also slightly enlarged mediastinal lymph nodes"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "A positive interferon-gamma release assay in conjunction with bilateral cavitary infiltrates on chest CT established active pulmonary tuberculosis occurring during anti-IL-17A biologic therapy, prompting quadruple antitubercular therapy.",
+      "quote": "Laboratory findings showed elevated C-reactive protein (61 mg/L) and positive interferon-gamma release assay for tuberculosis infection... The treatment plan included ixekizumab injection (80mg) every two months, along with oral isoniazid, rifampicin, ethambutol, and pyrazinamide"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed after chest CT imaging, prior to IGRA results. No spoilers or pathogen names present."
+}

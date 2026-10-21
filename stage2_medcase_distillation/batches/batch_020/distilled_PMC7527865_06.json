@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7527865_06",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 59-year-old multimorbid woman with HTLV-1 infection, end-stage organ dysfunction, and acute ulcerating malar and lower-extremity lesions complicated by secondary bacterial sepsis, creating uncertainty between primary bacterial ecthyma/cellulitis, HTLV-1-associated cutaneous T-cell lymphoma, and endemic mucocutaneous leishmaniasis.\n2. Admission Breakpoint: The breakpoint occurs in September 2012 when the patient was admitted to the university hospital with enlarging ulcerated malar and knee lesions, prior to Montenegro intradermal testing, blood cultures, and dialysis-supported antifungal therapy.\n3. Differential Distinctions: Bacterial ecthyma/cellulitis and HTLV-1 associated malignant cutaneous ulcerations (adult T-cell leukemia/lymphoma) were key considerations; however, Montenegro skin testing confirmed mucocutaneous leishmaniasis, while bacterial cultures reflected secondary superinfection (Proteus vulgaris and Staphylococcus aureus bacteremia).",
+  "case_prompt": "A 59-year-old Caucasian woman, unemployed, presents to the university hospital for admission due to non-healing, enlarging ulcerated lesions on her face and right leg. Her medical history is notable for diabetes mellitus, hypertension, congestive heart failure, chronic kidney disease, and spastic paraparesis secondary to human T-cell leukemia virus type 1 (HTLV-1) infection. Three months prior to admission, she noticed a small papule in the left malar region of her face that gradually increased in size and subsequently ulcerated. Fifteen days after the onset of the facial lesion, a similar lesion appeared over her right knee.\n\nOn physical examination, the patient appears chronically ill. Facial examination reveals an enlarging, deep ulcerated lesion over the left malar region. Lower extremity examination demonstrates an ulcerated lesion over the right knee along with chronic paraparesis. Initial triage blood work reveals baseline renal impairment complicated by hyperkalemia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary bacterial ecthyma gangrenosum / Necrotizing staphylococcal-proteus soft tissue infection",
+      "rule_out_reason": "Bacterial pathogens were isolated from the lesions and blood, but these represented fatal secondary hospital-associated superinfections complicating the pre-existing chronic protozoal ulcerations.",
+      "quote": "The culture examination of the malleolar lesion was performed, being positive for Proteus vulgaris and hemoculture was positive for Staphylococcus aureus."
+    },
+    {
+      "candidate": "HTLV-1 associated Adult T-Cell Leukemia/Lymphoma (ATLL) / Cutaneous T-cell malignancy",
+      "rule_out_reason": "Given her HTLV-1 retroviral carrier status with paraparesis, chronic enlarging malar ulcers could represent neoplastic lymphoid infiltration, but the ulceration was confirmed to be infectious in origin.",
+      "quote": "with diabetes, hypertension, congestive heart failure, chronic renal disease and paraparesis secondary to Human T-cell leukemia virus type 1 (HTLV-1) infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Mucocutaneous Leishmaniasis",
+      "rule_out_reason": "The underlying diagnosis was established by a positive Montenegro intradermal skin test, confirming endemic mucocutaneous leishmaniasis complicated by renal toxicity and fatal secondary bacteremia.",
+      "quote": "Patient was positive for Montenegro intradermal test and diagnosed with mucocutaneous leishmaniasis and was admitted in the University Hospital in September 2012."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to university hospital admission presentation. Captures complex multimorbidity and secondary bacteremic superinfection."
+}

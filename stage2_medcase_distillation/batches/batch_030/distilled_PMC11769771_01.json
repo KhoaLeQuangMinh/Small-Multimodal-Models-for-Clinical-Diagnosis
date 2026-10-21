@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11769771_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 51-year-old man presents with acute febrile illness, profound jaundice, severe renal failure, and rapidly progressive respiratory failure leading to refractory hypoxemia following outdoor rain exposure. A co-incidental positive rapid influenza A test and a lower extremity scab wound created prominent diagnostic anchoring on severe primary viral influenza pneumonia or scrub typhus (tsutsugamushi disease), masking life-threatening zoonotic spirochetal multiorgan involvement and diffuse pulmonary alveolar hemorrhage.\n2. Admission Breakpoint: Initial hospital presentation concludes following initial vital signs, physical exam showing the calf scab and jaundice, baseline triage blood work, and the admission chest CT demonstrating bilateral exudative infiltrates, immediately prior to intubation, ECMO cannulation, bronchoscopy, and mNGS.\n3. Differential Distinctions: Tsutsugamushi disease (scrub typhus) typically presents with a punched-out necrotic black eschar with regional lymphadenopathy, macular rash, and response to doxycycline, but Orientia was not detected by sequencing. Severe primary influenza A can cause acute fulminant viral pneumonitis and ARDS, but does not account for profound direct hyperbilirubinemia (total bilirubin 261 µmol/L), marked oliguric renal failure (creatinine 606 µmol/L), conjunctival suffusion, and severe diffuse pulmonary alveolar hemorrhage following outdoor freshwater exposure. Severe leptospirosis (Weil's syndrome with severe pulmonary hemorrhagic syndrome) classically causes the triad of jaundice, renal failure, and pulmonary hemorrhage after environmental freshwater/soil exposure.",
+  "case_prompt": "A 51-year-old man presented to the hospital with a 9-day history of fever and fatigue, accompanied by 8 days of progressively worsening shortness of breath. Symptoms of fever, chills, headache, and generalized weakness began acutely after he was caught in heavy rainfall while fishing in an outdoor wilderness area. One day into his illness, he developed nausea, vomiting, and breathlessness that steadily deteriorated.\n\nOn physical examination, he was noted to have prominent generalized jaundice throughout his body, conjunctival congestion, and wet rales throughout both lung fields. Examination of the left lower extremity revealed a 2 × 2 cm scab wound on the outer aspect of his left calf. No peripheral lymphadenopathy was palpable.\n\nLaboratory evaluations demonstrated severe hepatic and renal impairment: total bilirubin 261 µmol/L, albumin 17 g/L, alanine aminotransferase (ALT) 36 U/L, aspartate aminotransferase (AST) 75 U/L, serum creatinine 606 µmol/L, and blood urea nitrogen 35 mmol/L. Urinalysis showed protein(+), and the erythrocyte sedimentation rate (ESR) was elevated at 86 mm/h.\n\nA computed tomography (CT) scan of the chest revealed extensive, diffuse exudative lesions throughout both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tsutsugamushi disease (scrub typhus)",
+      "rule_out_reason": "Considered prominently at initial presentation because of acute febrile multiorgan failure following outdoor wilderness exposure and a 2 × 2 cm calf scab wound mimicking an inoculation eschar, but ruled out when microbial metagenomic next-generation sequencing did not detect Orientia tsutsugamushi.",
+      "quote": "At the time of diagnosis, it was suspected that tsutsugamushi disease was complicated with H1N1 infection."
+    },
+    {
+      "candidate": "Isolated severe influenza A pneumonia",
+      "rule_out_reason": "Considered because a local clinic rapid assay was positive for influenza A, which explained respiratory distress and lung infiltrates; however, primary viral influenza cannot account for profound direct hyperbilirubinemia (total bilirubin 261 µmol/L), severe renal failure (creatinine 606 µmol/L), and massive pulmonary hemorrhage after freshwater immersion.",
+      "quote": "On June 11, 2024, a positive case of influenza A virus was found in the local hospital."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred with bronchoscopic visualization of diffuse active alveolar hemorrhage and identification of spirochetal reads via blood metagenomic next-generation sequencing (mNGS), prompting high-dose penicillin therapy.",
+      "quote": "On June 15, 2024, diffuse bloody secretions of the airway were observed under fiberoptic bronchoscopy (Figure 3), and metagenomic next-generation sequencing (mNGS) was performed on the patient's blood and bronchoalveolar lavage fluid. The mNGS of blood only indicates a possibility of Leptospira infection (blood reads 2)."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to intubation, bronchoscopy, and mNGS. Zero pathogen spoilers in case prompt. Verbatim quotes validated against text."
+}

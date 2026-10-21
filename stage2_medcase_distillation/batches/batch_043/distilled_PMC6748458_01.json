@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6748458_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 2-month-old infant born to HIV-positive parents on antiretroviral prophylaxis presents with cyclical fevers recurring every 2-3 days, marked hepatosplenomegaly, and anemia. In very young infants, cyclical paroxysms are frequently masked or misdiagnosed as neonatal bacterial sepsis, while maternal antibodies and co-trimoxazole prophylaxis complicate the clinical suspicion.\n2. Admission Breakpoint: Triage presentation at the clinic with recurrent fever paroxysms, pallor, hepatosplenomegaly, and initial complete blood count showing packed cell volume of 29%, before peripheral blood film microscopy and HIV DNA PCR results.\n3. Differential Distinctions: Neonatal/infantile bacterial sepsis manifests with lethargy, poor feeding, toxic appearance, and marked neutrophilia or left shift, whereas this infant appeared completely well when afebrile, had normal total WBC without leukocytosis, and failed to improve on intravenous/oral cefuroxime. Perinatal HIV transmission was excluded by strict maternal virologic suppression and negative infant virologic testing. Cyclical tertian fever (every 48 hours) with splenomegaly and normocytic anemia in an endemic setting strongly points to intraerythrocytic protozoal infection.",
+  "case_prompt": "A 2-month-old male infant in Nigeria presented for outpatient evaluation accompanied by his mother with a one-week history of fevers occurring rhythmically every 2 to 3 days. His mother noted that the infant appeared distinctly unwell while febrile, but acted active and well when afebrile. The fever was accompanied by a single episode of nonprojectile vomiting of ingested formula. There was no history of irritability, excessive crying, jaundice, poor feeding, cough, rhinorrhea, or dyspnea. The infant was born at term via elective cesarean section with a birth weight of 2.8 kg to parents with human immunodeficiency virus (HIV) on antiretroviral therapy. He had received neonatal nevirapine prophylaxis for the first 6 weeks of life, followed by oral co-trimoxazole prophylaxis. On physical examination, the infant had a temperature of 37.5°C, heart rate of 144 beats per minute, and weight of 3.6 kg. He was clinically pale without jaundice or cyanosis. Cardiopulmonary and neurological examinations were normal. Abdominal examination revealed marked organomegaly, with both the liver and spleen palpable 4 cm below their respective costal margins. Complete blood count revealed a packed cell volume (PCV) of 29% and a total white cell count of 9,800/mm³ (84% lymphocytes and 16% neutrophils).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neonatal/infantile bacterial sepsis",
+      "rule_out_reason": "Considered because fever, hepatosplenomegaly, and pallor in a 2-month-old infant strongly suggest systemic bacterial infection; however, the infant was interactive and well when afebrile, lacked leukocytosis or neutrophilia, and experienced fever recurrence despite intravenous and oral cephalosporin therapy.",
+      "quote": "A diagnosis of sepsis was entertained and the patient was admitted and treated with intravenous cefuroxime before complete blood count investigation."
+    },
+    {
+      "candidate": "Perinatal HIV infection",
+      "rule_out_reason": "Considered due to maternal and paternal HIV status; however, the mother had sustained adherence to antiretroviral therapy, the infant received postnatal antiretroviral prophylaxis, and infant virologic testing returned negative.",
+      "quote": "Blood investigations for HIV by polymerase chain reaction were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The rhythmic paroxysm of fevers every 2 to 3 days accompanied by pallor, worsening anemia, and massive splenomegaly in an endemic area established clinical suspicion, confirmed by microscopic examination of the peripheral blood film demonstrating intraerythrocytic trophozoites.",
+      "quote": "A diagnosis of malaria was therefore entertained, which was confirmed after detection of trophozoites of Plasmodium falciparum in the peripheral blood film following microscopy."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Fully compliant with Stanford MedCaseReasoning distillation guidelines. Breakpoint set at admission triage and baseline CBC before peripheral smear microscopy. No disease names in prompt. Verbatim quotes match article."
+}

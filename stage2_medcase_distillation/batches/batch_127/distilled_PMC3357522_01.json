@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3357522_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 66-year-old male with newly diagnosed retroviral disease presents with pruritus, modest weight loss, and hypopigmented trunk lesions that are misdiagnosed and empirically managed as a superficial dermatophytosis (tinea corporis). The clinical dilemma is recognizing chronic mycobacterial neural and cutaneous infection (Hansen's disease) presenting with hypoaesthesia in an immunocompromised host where typical dermatologic clues can be overlooked as common superficial fungal infections.\n2. Admission Breakpoint: The admission evaluation concludes after clinical examination, dermatologic mapping of the hypopigmented lesions with sensory testing, baseline CD4 count (145/µL), CBC, liver enzymes, creatinine, and normal plain chest radiograph. Empirical antifungal therapy, antiretroviral initiation, slit-skin smear, and skin biopsy comprise subsequent post-admission steps.\n3. Differential Distinctions: Tinea corporis is the most common cause of annular or macular scaling patches in tropical settings and was the initial clinical impression; however, persistence despite topical clotrimazole and the distinct presence of hypoaesthesia within the lesions rule out dermatophyte infection. Pityriasis versicolor or post-inflammatory hypopigmentation can cause hypopigmented macules, but do not produce localized cutaneous anaesthesia or acid-fast bacilli on slit-skin smear.",
+  "case_prompt": "A 66-year-old male presented to an outpatient medical clinic in western Kenya complaining of generalized body pruritus and persistent skin patches on his chest of 3 months' duration. He had been diagnosed with HIV infection 3 months prior to presentation. He also reported poor appetite and an intentional/unintentional weight loss of 3 kg. He took alcohol (local brew) 2 to 3 times weekly, with no history of tobacco use or allergies. On physical examination, he was in fair general condition. Blood pressure was 100/60 mmHg, pulse rate 92 beats per minute, body temperature 36.1°C, and oxygen saturation 93% while breathing ambient air. Body weight was 65 kg. Dermatologic examination revealed three distinct hypopigmented and hypoaesthetic cutaneous patches located on the right chest wall and right upper arm; the largest lesion measured 5 × 6 cm and the smallest measured 2 × 3 cm. There was no palpable peripheral nerve trunk enlargement, and motor and sensory examination of the extremities was otherwise intact. Examination of other organ systems was unremarkable. Baseline investigations revealed a CD4 cell count of 145/µL (CD4 percentage 10%), total white blood cell count of 2,800/µL, hemoglobin of 12.3 g/dL, and platelet count of 178,000/µL. Serum alanine aminotransferase (SGPT) and creatinine were within normal reference ranges. A plain chest radiograph showed no evidence of cardiopulmonary pathology.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tinea Corporis / Superficial Dermatophytosis",
+      "rule_out_reason": "Well-demarcated hypopigmented cutaneous lesions in an immunocompromised patient were initially diagnosed as tinea corporis; however, the patches failed to respond to prolonged topical clotrimazole therapy and exhibited objective hypoaesthesia.",
+      "quote": "An impression of Tinea corporis was made and the patient assigned WHO clinical stage 2 due to weight loss of <10%. He was given cotrimoxazole prophylactic therapy and clotrimazole cream... All this time the skin lesions persisted despite regular use of clotrimazole cream."
+    },
+    {
+      "candidate": "Pityriasis Versicolor / Post-Inflammatory Hypopigmentation",
+      "rule_out_reason": "Hypopigmented macular lesions can mimic pityriasis versicolor or post-inflammatory pigmentary alterations, but these conditions do not feature cutaneous hypoaesthesia or dermal infiltration with acid-fast bacilli.",
+      "quote": "His skin had 3 hypopigmented and hypoaesthetic patches on the right chest wall and right upper arm... where a skin smear was done and was positive for acid fast bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Three asymmetrical, well-demarcated hypopigmented and hypoaesthetic skin lesions without major nerve enlargement, confirmed by a slit-skin smear positive for acid-fast bacilli and classified as borderline tuberculoid / multibacillary leprosy, which resolved completely following WHO multidrug therapy (rifampicin, clofazimine, dapsone).",
+      "quote": "A decision to refer him to the regional center for leprosy was made where a skin smear was done and was positive for acid fast bacilli. According to Ridley-Jopling system, he was classified as having borderline tuberculoid leprosy based on having three lesions only that were well demarcated, asymmetrical, and unilateral."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Borderline tuberculoid / multibacillary leprosy diagnosed via slit-skin smear in an HIV-positive Kenyan male, previously misdiagnosed as tinea corporis."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12743525_03",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 61-year-old male heavy smoker and alcohol user presents with subacute headache, vomiting, altered sensorium, and multiple bilateral white matter hypodensities on head CT, in the absence of fever, seizures, or weight loss. The key diagnostic dilemma is distinguishing multiple metastatic brain lesions from an unknown primary carcinoma from intracranial granulomatous infection (CNS tuberculomas or tuberculous abscesses) in an older adult without active pulmonary findings.\n2. Admission Breakpoint: The admission breakpoint is established immediately after initial physical and neurological examination, head CT demonstrating bilateral hypodense white matter lesions, and direct funduscopic examination identifying bilateral choroidal tubercles, but prior to lumbar puncture CSF biochemical analysis/ADA on Day 3, contrast brain MRI on Day 6, and systemic oncologic staging investigations.\n3. Differential Distinctions: Cerebral metastases from occult lung/gastrointestinal cancer were strongly suspected given patient age, smoking/drinking history, absent constitutional fever, and multifocal white matter hypodensities, but disproven by the presence of choroidal tubercles, lymphocytic pleocytosis with elevated ADA in CSF, and negative systemic malignancy staging. Pyogenic brain abscess typically presents with prominent acute fever and leukocytosis and is differentiated by CSF findings and response to antitubercular therapy.",
+  "case_prompt": "A 61-year-old man, a chronic tobacco smoker and alcohol user, presented to the hospital with a 10-day history of progressively worsening headache, vomiting, and altered sensorium.\n\nHe reported no history of fever, chills, seizures, or unintentional weight loss. Past medical history was otherwise non-contributory.\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Neurological examination revealed confusion and altered sensorium without focal cranial nerve palsies or neck stiffness at triage. Funduscopic examination revealed bilateral choroidal tubercles. The remainder of the systemic examination was normal.\n\nEmergency non-contrast computed tomography (CT) of the brain demonstrated bilateral multiple hypodense white matter lesions with surrounding edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic brain disease from occult primary malignancy",
+      "rule_out_reason": "Considered as the primary suspect upon initial neuroimaging due to the patient's older age, extensive tobacco use, and multiple bilateral hypodense lesions without fever; however, excluded by funduscopic visualization of choroidal tubercles, absence of a primary tumor on systemic oncologic staging, and inflammatory CSF profile.",
+      "quote": "CT brain showed bilateral multiple hypodense white matter lesions, raising suspicion of metastatic disease from an unknown primary... Systemic evaluation revealed no evidence of malignancy, and culture remained negative."
+    },
+    {
+      "candidate": "Pyogenic or tuberculous brain abscess",
+      "rule_out_reason": "Considered in the differential diagnosis of multiple ring-enhancing lesions with surrounding vasogenic edema, but the discrete solid nodular ring-enhancing morphology and clinical response favored non-liquefied tuberculomas rather than mature liquefied abscess cavities requiring surgical drainage.",
+      "quote": "Given the ring-enhancing morphology and surrounding edema, a tuberculous abscess was considered in the differential, although overall features favored tuberculoma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Direct funduscopic examination revealing bilateral choroidal tubercles, CSF analysis on Day 3 demonstrating lymphocytic pleocytosis with elevated ADA (18 U/L) and low glucose (42 mg/dL), and Day 6 MRI demonstrating multiple ring-enhancing tuberculomas with complete clinical recovery upon initiation of antitubercular therapy and corticosteroids.",
+      "quote": "However, fundus examination revealed bilateral choroidal tubercles, raising suspicion of tuberculosis... CSF analysis on Day 3 revealed lymphocytic pleocytosis, low glucose (42 mg/dL), elevated ADA (18 U/L), and negative CBNAAT. MRI on Day 6 demonstrated multiple ring-enhancing lesions with surrounding edema, consistent with tuberculomas"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt stops at initial head CT and funduscopic exam. Excluded Day 3 CSF findings, Day 6 MRI, CBNAAT, and malignancy staging."
+}

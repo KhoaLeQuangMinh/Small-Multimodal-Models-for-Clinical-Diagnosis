@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4763574_03",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 7-month-old infant presenting with acute fulminant necrotizing purpura (purpura fulminans) and cytopenias, strongly mimicking meningococcemia, septic shock, or inherited protein C/S deficiency, caused instead by a severe rickettsial vector-borne infection.\n2. Admission Breakpoint: Admission triage ends following history, physical examination of the necrotic purpuric lesions, and baseline emergency laboratory panel (CBC with differential, platelets, and ESR), strictly prior to the Weil-Felix serologic test.\n3. Differential Distinctions: Acute meningococcal septicemia causes rapid purpura fulminans and shock, but lacks OX-K agglutination and typically shows positive blood cultures/meningeal signs; congenital protein C or S deficiency causes neonatal purpura fulminans and skin necrosis, but is ruled out by infectious systemic inflammatory signs and prompt response to antirickettsial antibiotics.",
+  "case_prompt": "A 7-month-old female infant born to a consanguineous couple presented with an 8-day history of persistent fever and a 2-day history of an acute, progressive purpuric rash. The eruption began over the face and rapidly spread to involve the trunk and extremities.\n\nOn physical examination, cutaneous inspection revealed sharply demarcated purpuric patches with prominent central necrotic changes distributed over the upper limbs, buttocks, and lower limbs. Systemic physical examination, including cardiovascular, respiratory, and abdominal evaluations, was normal.\n\nEmergency laboratory investigations demonstrated dimorphic anemia, neutrophilic leukocytosis, marked thrombocytopenia, and an elevated erythrocyte sedimentation rate (ESR). Standard metabolic and biochemical profiles were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Meningococcemia / Bacterial Sepsis-Induced Purpura Fulminans",
+      "rule_out_reason": "The sudden evolution of fever and rapidly expanding necrotic purpura in an infant strongly raised suspicion for Neisseria meningitidis or invasive bacterial sepsis; however, standard bacteriological workup was negative and serologic testing identified a rickettsial infection.",
+      "quote": "The infant was diagnosed with acute PF secondary to infection with rickettsial scrub typhus group."
+    },
+    {
+      "candidate": "Congenital Protein C / Protein S Deficiency",
+      "rule_out_reason": "Parental consanguinity in an infant presenting with severe cutaneous necrosis and microvascular thrombosis raised suspicion for an autosomal recessive coagulation disorder such as homozygous protein C or protein S deficiency; however, the acute febrile onset, marked leukocytosis, elevated ESR, and rapid resolution with antimicrobial therapy favored an infectious etiology.",
+      "quote": "A 7-month-old female baby born to a consanguineous couple presented with fever of eight days duration associated with a purpuric rash of two days duration, which began over the face and rapidly progressed to involve the trunk and extremities."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serologic testing demonstrating positive agglutination for Proteus OX-K antigen on the Weil-Felix test (WFT) in the setting of acute febrile purpura fulminans confirmed infection with the scrub typhus rickettsial group.",
+      "quote": "Investigations revealed dimorphic anemia with neutrophilic leukocytosis, thrombocytopenia, and an elevated erythrocyte sedimentation rate (ESR). WFT was positive for Ox-K Ag."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage stopped before serological agglutination testing (Weil-Felix). Strict source fidelity maintained."
+}

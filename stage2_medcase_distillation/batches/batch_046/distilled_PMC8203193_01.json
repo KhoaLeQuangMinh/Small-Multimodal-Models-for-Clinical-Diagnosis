@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC8203193_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 49-year-old previously healthy man from Guangxi, China presents with prolonged respiratory and constitutional decline (cough, fever, emaciation for 7 months) accompanied by large, inflamed cervical and submental necrotic masses. The patient is HIV-negative with preserved peripheral CD4+ T-cell counts, making disseminated opportunistic fungal disease unexpected on routine immune profiling, masking an adult-onset immunodeficiency syndrome with anti-interferon-gamma autoantibodies complicated by bacterial and fungal co-infection.\n2. Admission Breakpoint: The admission narrative halts after baseline vitals, examination of the 8-cm cervical mass, pulmonary auscultation, initial hematologic/inflammatory markers, T-cell subset enumeration, HIV serology, galactomannan index, and initial non-invasive neck CT, strictly prior to surgical incision, drainage of hemopurulent pus, bacterial/fungal culture isolates, bronchoscopy, and anti-IFN-gamma autoantibody quantification.\n3. Differential Distinctions: Pyogenic bacterial cervical lymphadenitis is initially supported by pus cultures isolating Burkholderia cepacia, but failure to control pulmonary disease with targeted antibacterials indicates a secondary or primary opportunistic pathogen; invasive aspergillosis is excluded by a normal serum galactomannan index; metastatic malignancy or lymphoma is ruled out by endobronchial biopsy and microbiological identification of Talaromyces marneffei by culture and metagenomic sequencing.",
+  "case_prompt": "A 49-year-old man from Guangxi, China, presented to the hospital with a seven-month history of cough, fever, and progressive emaciation, and a one-month history of an enlarging mass on the left side of his neck. He had received intravenous ceftazidime at an outside hospital, which temporarily resolved his fever, but the cervical mass continued to expand. He had no history of previous medical illness and took no regular medications.\n\nOn physical examination at admission, his body temperature was 38.0\u00b0C. Examination of the head and neck revealed two palpable masses: one located on the left lateral neck and the other in the right submental area. The left cervical mass measured 8 cm in diameter; both masses were erythematous, inflamed, and tender to palpation. Auscultation of the chest revealed moist rales localized to the upper lobe of the left lung. The remainder of the physical examination was unremarkable.\n\nLaboratory evaluation revealed a white blood cell count of 14,200/\u00b5L with 12,200 neutrophils/\u00b5L and 1,390 lymphocytes/\u00b5L, a hemoglobin level of 124 g/L, and a platelet count of 167,000/\u00b5L. Inflammatory markers were elevated, with a C-reactive protein level of 167.04 mg/L, an erythrocyte sedimentation rate of 70 mm/h, and a procalcitonin level of 0.61 ng/mL. Flow cytometric analysis of lymphocyte subsets demonstrated total CD3+, CD4+, and CD8+ T-lymphocyte counts of 1,137 cells/\u00b5L, 470 cells/\u00b5L, and 620 cells/\u00b5L, respectively. Serum liver enzymes, renal function parameters, and total serum immunoglobulins were within normal limits. The serum galactomannan index was 0.35, and an immunoassay for human immunodeficiency virus was negative. Computed tomography of the neck showed mixed-density lesions on the left side of the neck and in the right submental region.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial lymphadenitis / Burkholderia cepacia abscess",
+      "rule_out_reason": "Rapid enlargement of tender, fluctuant cervical masses with neutrophilic leukocytosis suggested bacterial lymphadenitis, and initial pus cultures did recover Burkholderia cepacia; however, despite susceptibility-guided antibacterial therapy, the patient developed worsening pulmonary consolidations and endobronchial lesions driven by an underlying dimorphic fungus.",
+      "quote": "B. cepacia was cultured from the mass on the neck and submental pus after 1 week."
+    },
+    {
+      "candidate": "Invasive pulmonary aspergillosis",
+      "rule_out_reason": "Subacute febrile pulmonary consolidation and pulmonary nodules in a debilitated patient raised concern for invasive pulmonary aspergillosis, but the serum galactomannan index was normal.",
+      "quote": "The galactomannan index was 0.35, and the patient was HIV negative."
+    },
+    {
+      "candidate": "Head and neck malignancy / Lymphoma",
+      "rule_out_reason": "A solitary 8-cm cervical mass associated with profound weight loss and submental lesions in an adult male suggested lymphoma or metastatic carcinoma, but bronchofibroscopic biopsy revealed inflammatory endobronchial nodules without malignant cytopathology.",
+      "quote": "Bronchofibroscopy revealed bronchial nodules in the left upper and lower lobes, obstructing the lumen, and mucosal hyperplasia and hypertrophy"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was reached when bronchofibroscopy identified obstructive bronchial nodules and hilar lymphadenopathy, and fungal cultures along with next-generation sequencing confirmed Talaromyces marneffei from bronchial tissue, hilar lymph nodes, and bronchoalveolar lavage fluid in a patient subsequently found to harbor neutralizing anti-interferon-gamma autoantibodies.",
+      "quote": "TM (Figure 2) was cultured from a bronchial nodule, left hilar lymph node, and bronchoalveolar lavage fluid."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Complies fully with admission breakpoint principles. Triage presentation captures the full clinical history, exam, labs, and baseline neck CT while strictly omitting pus microbiology, bronchoscopic biopsy, fungal isolation, and autoantibody testing."
+}

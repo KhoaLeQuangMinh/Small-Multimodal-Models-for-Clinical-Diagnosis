@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8605226_01",
+  "disease": "Tuberculosis",
+  "think": "<think>\n1. Core Clinical Tension: A 3-month-old infant presents with severe malnutrition, conjugated hyperbilirubinemia, transaminitis, sensorineural hearing loss, and a depressed CD4 percentage. The preexisting attribution to congenital viral infection complicates the recognition of life-threatening household transmission of drug-resistant mycobacterial disease.\n2. Admission Breakpoint: The breakpoint occurs after initial bedside evaluation, audiology, ophthalmology, echocardiography, routine liver chemistries, and plain chest radiography, but strictly before gastric aspirate GeneXpert MTB/RIF, tuberculin skin test results, and mycobacterial culture/drug-susceptibility testing return.\n3. Differential Distinctions: Congenital viral hepatitis (CMV) explains cholestasis and hearing loss but is ruled out as the primary etiology by negative viral PCR and clear retinal findings; perinatal HIV infection causes wasting and low CD4% but is excluded by negative ELISA and lack of exposure; drug-susceptible tuberculosis is superseded by rapid molecular and phenotypic demonstration of resistance to both first-line and second-line injectable regimens.\n</think>",
+  "case_prompt": "A 3-month-old boy was brought to a tertiary pediatric clinic with severe malnutrition, failure to thrive, and persistent jaundice. He had previously been diagnosed with neonatal cholestatic jaundice attributed to a congenital viral infection. The family reported a history of close household contact with the child's father, who was receiving treatment for a chronic pulmonary infection but was known to be non-compliant with therapy.\n\nOn physical examination, the infant was severely malnourished and emaciated, weighing 3.6 kg. Jaundice of the skin and sclerae was present. Audiological evaluation demonstrated mild to moderate hearing loss. Ophthalmological evaluation revealed normal visual response, clear media, and normal retinas without chorioretinitis. Echocardiography identified a small atrial septal defect.\n\nLaboratory evaluation revealed elevated total bilirubin and markedly increased transaminases (alanine aminotransferase and aspartate aminotransferase). Serological testing revealed positive IgM antibodies against a common congenital virus, but corresponding quantitative plasma viral molecular testing was negative. Testing for retroviral infection was non-reactive on HIV ELISA, and he was confirmed to be HIV-unexposed, although his CD4 percentage was low at 19%. Plain chest radiography demonstrated active infiltrates at the right perihilar and right upper-to-middle lung fields with prominent bronchovascular markings.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital Cytomegalovirus (CMV) Infection with Active Hepatitis / Retinitis",
+      "rule_out_reason": "Considered due to neonatal cholestasis, elevated transaminases, hearing impairment, and positive CMV IgM, but active systemic viral disease was ruled out by negative plasma viral PCR and normal fundoscopy.",
+      "quote": "positive cytomegalovirus (CMV) IgM with a negative CMV PCR... ophthalmoscopy examination of the retina was also done to exclude CMV retinitis symptom and the result was normal."
+    },
+    {
+      "candidate": "Perinatal Human Immunodeficiency Virus (HIV) Infection",
+      "rule_out_reason": "Considered given severe failure to thrive, opportunistic pulmonary infection, and depressed CD4 percentage (19%), but ruled out by negative maternal exposure history and non-reactive serology.",
+      "quote": "He was HIV-unexposed and his HIV ELISA was negative, but CD4% was low (19%)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pre-Extensively Drug-Resistant Tuberculosis (pre-XDR-TB)",
+      "rule_out_reason": "Suspected due to positive tuberculin skin test, right upper-middle infiltrates on chest radiography, household exposure to a non-compliant father with drug-resistant disease, and rapid GeneXpert MTB/RIF positivity on gastric aspirate showing rifampicin resistance; confirmed by positive mycobacterial culture and line-probe assays demonstrating resistance to isoniazid, rifampicin, and second-line injectable agents, with preserved susceptibility to fluoroquinolones.",
+      "quote": "His tuberculin skin test was positive, chest radiograph revealed right perihilar infiltrate and X-pert MTB/RIF on gastric aspirate was positive for M. tuberculosis complex with resistance to rifampicin... Culture of the gastric aspirate eventually was positive, confirming M. tuberculosis resistant to isoniazid and rifampicin on line-probe assay as well as resistant to second-line injectable agents with second-line LPA, but susceptible to the fluoroquinolones. He was therefore confirmed as pre-XDR-TB."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in admission case prompt. Confirmatory GeneXpert, TST, culture, and line-probe assays preserved for diagnostic reasoning."
+}

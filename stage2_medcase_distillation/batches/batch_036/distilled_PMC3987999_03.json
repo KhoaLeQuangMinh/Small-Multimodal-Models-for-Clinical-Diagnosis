@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3987999_03",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A previously healthy 21-year-old woman presents after an 8-day febrile illness with sudden progression to heavy abnormal uterine bleeding (metrorrhagia), gastrointestinal losses, critical thrombocytopenia (10,000/mm³), and rapid respiratory failure. The clinical challenge is distinguishing severe arboviral plasma leakage with consumptive coagulopathy from fulminant bacterial sepsis, thrombotic microangiopathy (TTP/HUS), or acute promyelocytic leukemia.\n2. Admission Breakpoint: Admission triage concludes upon transfer to the intensive care unit with acute respiratory failure, profound thrombocytopenia (platelet count 10,000/mm³), leukopenia, transaminitis (AST 149 IU/L, ALT 66 IU/L), and baseline metabolic panel (creatinine 1.10 mg/dL, urea 9.0 mg/dL). Confirmatory progression entails multiorgan collapse, refractory shock, and post-mortem examination.\n3. Differential Distinctions: Thrombotic thrombocytopenic purpura (TTP) features profound thrombocytopenia and neurologic or renal dysfunction, but does not cause acute transaminitis or bilateral pleural effusions with sudden respiratory failure following an 8-day febrile prodrome. Acute bacterial sepsis with disseminated intravascular coagulation typically features marked leukocytosis and toxic granulation rather than severe leukopenia, whereas severe dengue hemorrhagic fever classically produces severe leukopenia, critical thrombocytopenia, capillary leak, and spontaneous mucosal/vaginal hemorrhage.",
+  "case_prompt": "A 21-year-old woman is admitted to the intensive care unit with respiratory failure following an 8-day history of acute fever, intense myalgias, and persistent headache. Over the preceding 48 hours, her symptoms escalated to include nausea, vomiting, watery diarrhea, and spontaneous severe metrorrhagia. Prior to transfer from an outside clinic, she was found to have marked hematologic abnormalities.\n\nOn admission to the intensive care unit, she is in acute respiratory distress and exhibiting hemodynamic compromise. Physical examination reveals widespread cutaneous ecchymoses, conjunctival hemorrhages, and signs of bilateral pulmonary consolidation or effusion.\n\nInitial laboratory studies reveal profound thrombocytopenia with a platelet count of 10,000/mm³ and severe leukopenia. Serum chemistry demonstrates: aspartate aminotransferase (AST) 149 IU/L, alanine aminotransferase (ALT) 66 IU/L, blood glucose 158 mg/dL, serum creatinine 1.10 mg/dL, and blood urea nitrogen 9.0 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Thrombotic Thrombocytopenic Purpura (TTP)",
+      "rule_out_reason": "Considered due to severe thrombocytopenia (10,000/mm³), fever, and acute organ compromise in a young female, but the 8-day biphasic febrile illness, prominent diarrhea, transaminitis, and capillary leak with pleural effusions and pulmonary hemorrhage are indicative of a severe arboviral hemorrhagic syndrome rather than microangiopathic thrombosis.",
+      "quote": "A 21-year-old female patient who experienced fever, myalgia and headache for 8 days and symptoms progressed to metrorrhagia, nausea, vomiting and diarrhea."
+    },
+    {
+      "candidate": "Bacterial Sepsis with Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "Considered given the progression to refractory shock, respiratory failure, and severe consumptive coagulopathy, but fulminant bacterial sepsis typically produces prominent leukocytosis and procalcitonin elevation rather than marked leukopenia following an indolent 8-day viral prodrome.",
+      "quote": "she was examined in another health service with a hypothesized dengue diagnosis due to severe leukopenia and thrombocytopenia (platelet 10.000/mm3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of prolonged high fever, severe leukopenia, critical thrombocytopenia (10,000/mm³), metrorrhagia, and acute vascular permeability progressing to bilateral pleural effusion, pulmonary hemorrhage, and refractory shock confirmed fatal severe dengue hemorrhagic fever.",
+      "quote": "The patient was admitted in the intensive care unit (ICU) at the Hospital Universitario Clementino Fraga Filho with respiratory failure, followed by the evolution of multiple organ failure and refractory shock... Necropsy data: Ecchymosis, conjunctival hemorrhage, bilateral pleural effusion, pulmonary hemorrhage, renal congestion and splenomegaly."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case extracted cleanly from PMC3987999_03. Zero spoilers in admission prompt. Metrorrhagia and critical thrombocytopenia of 10,000/mm3 highlighted. Canonical disease: Dengue."
+}

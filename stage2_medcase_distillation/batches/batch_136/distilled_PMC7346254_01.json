@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7346254_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: The patient presented with an indolent 2-year history of productive cough and severe wasting in the absence of fevers, hemoptysis, or urinary symptoms. Sputum analyses were negative, and chest imaging demonstrated atypical nonconfluent clusters of micronodules alongside chronic apical scarring. The incidental identification of hydronephrosis in a duplex kidney raised concern for urinary tract malignancy versus obstruction, creating diagnostic ambiguity between malignancy, old inactive fibrocalcific disease, and active occult paucibacillary infection.\n2. Admission Breakpoint: The admission phase ends following initial clinical evaluation, routine laboratories, chest radiography, and thoracic/abdominal computed tomography demonstrating apical scarring, micronodular clusters, and left hydronephrosis, strictly before specialized urine mycobacterial culture results return.\n3. Differential Distinctions: Atypical cluster-of-micronodules pattern can mimic sarcoidosis, bronchioloalveolar/adenocarcinoma, or fungal infection; hydronephrosis in an elderly male typically suggests urolithiasis or urothelial carcinoma. Active infection was distinguished by characteristic tree-in-bud morphology, sterile pyuria/hydronephrosis from ureteral stricturing, and definitive culture isolation.",
+  "case_prompt": "A 65-year-old immunocompetent man presented to a respiratory outpatient clinic with a 2-year history of recurrent productive cough and progressive weight loss. He denied fevers, night sweats, hemoptysis, dysuria, hematuria, or known sick contacts. His past medical history was notable for benign prostatic hyperplasia and a remote history of a healed scrotal abscess.\n\nOn physical examination, he was afebrile and hemodynamically stable: blood pressure 130/70 mmHg, heart rate 76 beats per minute, respiratory rate normal, and oxygen saturation 98% while breathing ambient air. He appeared cachectic, with a body mass index of 17 kg/m². Pulmonary examination demonstrated reduced air entry in the left upper lung field without wheezing or crackles. The abdomen was soft and nontender, with no palpable masses or costovertebral angle tenderness.\n\nInitial laboratory evaluation revealed a normal complete blood count and unremarkable routine urine profile; inflammatory parameters were not significantly elevated, with a white cell count of 11. Initial diagnostic sputum evaluations were negative. A plain chest radiograph revealed bilateral upper zone fibrotic changes, predominantly on the left. High-resolution computed tomography of the thorax showed extensive apical scarring bilaterally (more pronounced on the left), nonconfluent clusters of micronodules in the right lung with small regions of tree-in-bud nodularity, and no significant mediastinal or hilar adenopathy. Computed tomography extending through the upper abdomen incidentally revealed a partial duplex system of the left kidney with mild-to-moderate hydronephrosis and proximal hydroureter in the lower moiety. A dedicated multiphasic renal CT scan demonstrated no evidence of nephrolithiasis, ureteral mass, or extrinsic compression.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Urothelial Carcinoma / Obstructive Urolithiasis",
+      "rule_out_reason": "The unexpected unilateral hydroureter and hydronephrosis in the lower moiety of a duplex kidney raised high suspicion for calculus or urothelial malignancy, but dedicated multiphasic renal CT showed no mass, calculi, or compressive lymphadenopathy.",
+      "quote": "To further investigate this urinary finding, a multiphasic renal CT scan was then performed and did not reveal any calculus, suspicious ureteric mass or external compression from lymphadenopathy."
+    },
+    {
+      "candidate": "Inactive Fibrocalcific Pulmonary Scarring / Non-infectious Bronchiolitis",
+      "rule_out_reason": "Initial negative sputum examinations and chronic apical scarring suggested inactive remote insult, but the coexistence of tree-in-bud micronodules and constitutional wasting indicated an active paucibacillary infectious process.",
+      "quote": "His sputum sample was sent for tuberculosis workup; however, the results were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive diagnosis was established when specialized urine culture yielded Mycobacterium tuberculosis complex, revealing extrapulmonary genitourinary involvement coexisting with active pulmonary disease, followed by clinical weight gain and radiographic clearance on quadruple therapy.",
+      "quote": "The culture of his urine sample grew mycobacterium tuberculosis (MTB) complex, and he was diagnosed with active genitourinary and pulmonary tuberculosis. He was commenced on antituberculous medication (Akurit-4). His symptoms improved, and he started to gain weight. A repeated CT scan at 4 months revealed significant improvement of the aforementioned clusters of micronodules, tree-in-bud changes, and left hydronephrosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation accurately describes clinical features and initial radiologic findings while strictly withholding microbiological culture results and disease names. Differential rule-outs include exact verbatim quotes from the report."
+}

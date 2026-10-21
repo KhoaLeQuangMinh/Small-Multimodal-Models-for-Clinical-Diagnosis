@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3625586_01",
+  "disease": "Dengue, Malaria",
+  "think": "1. Core Clinical Tension: A 25-year-old male traveler returns from Delhi with acute fever, chills, myalgias, severe headache, and thrombocytopenia (86,000/mm\u00b3). The clinical tension centers on whether the patient has acute dengue fever (coinciding with a seasonal epidemic), acute malaria (endemic in the destination without prophylaxis), or an unexpected concurrent dual infection with both pathogens.\n2. Admission Breakpoint: The admission breakpoint is located right after admission history, normal physical examination, baseline blood count (isolated thrombocytopenia of 86,000/mm\u00b3), and normal baseline chemistries/imaging, prior to dengue IgM ELISA, malaria antigen card testing, and blood smear examination.\n3. Differential Distinctions: Isolated Dengue fever (supported by travel during a dengue outbreak, fever, retro-orbital/headache, and thrombocytopenia, but challenged when fever spikes and rigors persisted despite supportive management), isolated Malaria (which explains chills, rigors, and thrombocytopenia, but would miss the concurrent acute arboviral infection), and Enteric fever (typhoid fever, ruled out by normal organ function and specific dual microbiological identification). Positive dengue IgM ELISA along with positive pLDH/HRP2 card test and smear-positive P. falciparum ring forms confirm concurrent dengue and malaria.",
+  "case_prompt": "A 25-year-old male businessman residing in Srinagar presents to the hospital with acute fever, chills, diffuse myalgias, and severe headache. Two days prior to symptom onset, he had returned from a one-week trip to Delhi in October; he took no prophylactic medications before or during travel. He initially self-treated with paracetamol, but symptoms intensified with severe headache and high-grade fever reaching 102 \u00b0F, prompting hospitalization. Physical examination is entirely unremarkable. Initial hemogram reveals a normal study with the exception of a low platelet count of 86,000/mm\u00b3. Renal and liver function tests, spot urine examination, plain chest radiography, and abdominal ultrasound are all within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Dengue fever monoinfection",
+      "rule_out_reason": "Initial viral serology confirmed acute dengue infection matching the regional Delhi outbreak, but persistence of marked fever spikes and chills despite supportive therapy prompted further investigation that revealed an active concurrent parasite infection.",
+      "quote": "A diagnosis of dengue fever was made and supportive therapy was initiated. Patient continued to have fever spikes and chills despite the therapy."
+    },
+    {
+      "candidate": "Isolated Malaria monoinfection",
+      "rule_out_reason": "Malaria was strongly considered due to travel to an endemic area without prophylaxis, chills, and thrombocytopenia, but isolated malaria could not account for the independently verified positive dengue IgM ELISA serology.",
+      "quote": "a viral serology test using IgM ELISA for dengue virus was carried out that turned out to be positive."
+    },
+    {
+      "candidate": "Enteric fever (Typhoid fever)",
+      "rule_out_reason": "A common cause of acute high fever and headache in travelers returning from urban India, but ruled out by normal liver enzymes, normal abdominal ultrasound, and positive specific tests for viral and parasitic agents.",
+      "quote": "His renal and liver function tests, spot urine examination, chest X-ray, and USG abdomen were ordered and all parameters were within normal limits."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Positive IgM ELISA for dengue virus combined with Malaria Ag (pLDH/HRP2) card test positive for both Plasmodium vivax and Plasmodium falciparum and blood smears showing intra-erythrocytic ring forms of P. falciparum, confirming concurrent dual infection.",
+      "quote": "The Malaria Ag (pLDH/HRP2) card test was positive for both Plasmodium vivax as well as Plasmodium falciparum and blood smears showed ring forms of Plasmodium falciparum. This suggested that the patient had concurrent dengue fever and malaria."
+    }
+  ],
+  "final_diagnosis": "Dengue, Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to admission breakpoint. Zero mentions of dengue, malaria, Plasmodium, chloroquine, or primaquine in the case prompt. Target disease is Dengue, Malaria."
+}

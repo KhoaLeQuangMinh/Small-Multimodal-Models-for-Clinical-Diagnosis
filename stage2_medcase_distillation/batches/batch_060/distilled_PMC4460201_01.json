@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4460201_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 44-year-old woman with systemic lupus erythematosus maintained on intense immunosuppression (high-dose prednisone and cyclophosphamide) presenting with acute high-grade fever, vomiting, watery diarrhea, headache, and nuchal rigidity. The critical clinical dilemma is distinguishing an autoimmune neuropsychiatric lupus flare or recurrent thrombotic microangiopathy from opportunistic central nervous system infection, and recognizing the risk of nematode hyperinfection where mucosal barrier breakdown facilitates the translocation of enteric bacteria into the bloodstream, meninges, and lungs.\n2. Admission Breakpoint: Admission triage ends following initial emergency assessment of fever, gastrointestinal symptoms, nuchal rigidity, absence of peripheral lupus activity, normal head CT and plain chest radiograph, and baseline triage laboratories (normal haptoglobins, normal serum complement C3, unreactive eosinophil count of 150 cells/mm3, and mild transaminitis), immediately prior to diagnostic lumbar puncture cerebrospinal fluid analysis, bacteriological cultures, and subsequent tissue biopsies.\n3. Differential Distinctions: Neuropsychiatric lupus flare and lupus-associated diffuse alveolar hemorrhage are primary concerns in patients with SLE, but complement levels are normal, lupus activity signs are absent, and immunosuppression precipitates catastrophic deterioration. Recurrence of thrombotic thrombocytopenic purpura or disseminated intravascular coagulation is ruled out by normal haptoglobin and absence of microangiopathic hemolysis. Nosocomial pneumonia is ruled out by lack of diagnostic criteria. Disseminated strongyloidiasis is definitively demonstrated by visualization of Strongyloides stercoralis filariform larvae in cutaneous and visceral biopsies.",
+  "case_prompt": "A 44-year-old woman of low socioeconomic background from Veracruz, Mexico, presents to the emergency department with a one-week history of progressive headache, phonophobia, high-grade fever, vomiting, and watery diarrhea. She has a history of systemic lupus erythematosus (SLE) diagnosed in 2003 with joint, cutaneous, and renal involvement. One month prior to admission, she was diagnosed with SLE-associated thrombotic thrombocytopenic purpura (TTP) and treated with plasmapheresis, cyclophosphamide, and oral prednisone at 1 mg/kg/day.\n\nOn physical examination, she demonstrates signs of systemic inflammatory response syndrome and distinct nuchal rigidity. Focal neurological deficits are absent, and there are no outward physical stigmata of active peripheral lupus flares.\n\nBaseline laboratory testing demonstrates a hemoglobin of 11.2 g/dL, mean corpuscular volume of 103 fL, eosinophil count of 150 cells/mm3, serum creatinine of 0.8 mg/dL, haptoglobin of 77 mg/dL (reference range >30), alanine aminotransferase of 59 U/L (reference range <34), aspartate aminotransferase of 78 U/L (reference range <40), lactate dehydrogenase of 310 U/L (reference range <270), cobalamin of 406 pg/mL, folate of 49.6 ng/mL, complement C3 of 96.5 mg/dL (reference range 87–200), serum lactate of 0.9 mmol/L, and mild baseline proteinuria of 310 mg/day. Initial plain chest radiography and non-contrast computed tomography of the head reveal no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic Lupus Erythematosus (SLE) Flare / Lupus Pneumonitis",
+      "rule_out_reason": "Considered the primary diagnosis given her underlying autoimmune disease history and subsequent development of acute pulmonary hemorrhage, but ruled out by absence of active lupus stigmata at presentation and failure to respond to high-dose intravenous corticosteroid boluses.",
+      "quote": "clinical signs of lupus activity were absent."
+    },
+    {
+      "candidate": "Recurrent Thrombotic Thrombocytopenic Purpura (TTP) / Microangiopathic Hemolysis / DIC",
+      "rule_out_reason": "Considered given her recent history of TTP and the subsequent emergence of a purpuric cutaneous rash, but excluded by normal haptoglobin levels and absence of laboratory evidence of intravascular hemolysis or consumptive coagulopathy.",
+      "quote": "The additional approach did not show any evidence of hemolysis, disseminated intravascular coagulation, nor TTP."
+    },
+    {
+      "candidate": "Nosocomial Bacterial Pneumonia",
+      "rule_out_reason": "Considered when pulmonary infiltrates and acute hypoxemic respiratory failure developed during hospitalization, but excluded due to lack of diagnostic clinical criteria.",
+      "quote": "The initial clinical diagnosis was diffuse alveolar hemorrhage caused by SLE activity without sufficient clinical criteria of nosocomial pneumonia."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the purpuric skin lesions and postmortem autopsy revealed filariform larvae of Strongyloides stercoralis migrating throughout the skin, lungs, thyroid, liver, and gastrointestinal tract, confirming fatal disseminated strongyloidiasis.",
+      "quote": "Filariform larvae of S. stercoralis were observed in the skin biopsy and postmortem examination report was SLE and DS with lung, thyroid, liver, gut, and skin involvement (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial presentation (fever, diarrhea, headache, meningismus, immunosuppressive history, triage labs with normal haptoglobin/C3, suppressed eosinophil count of 150/mm3, and normal head CT / CXR) strictly before lumbar puncture CSF analysis, bacterial isolation, or skin biopsy. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

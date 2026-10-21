@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9152368_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 66-year-old woman presenting with subacute fatigue, headache, photophobia, mild confusion, and profound hyponatremia due to SIADH 4 months after spinal fusion, initially mimicking routine surgical convalescence, pyogenic discitis, or central nervous system pathology, obscuring hematogenous dissemination from an infected allograft.\n2. Admission Breakpoint: The presentation ends after initial history, physical examination, and admission serum and urine laboratory workup documenting severe hyponatremia and elevated inflammatory markers, prior to the CDC public health notification, chest imaging, lumbar puncture, and spinal MRI.\n3. Differential Distinctions: Intracranial space-occupying lesions, hydrocephalus, or basilar meningitis were considered due to headache, photophobia, and encephalopathy but excluded by normal brain MRI; acute spinal cord compression was excluded by absence of thecal sac compression; the diagnostic pivot was the CDC alert identifying allograft contamination with Mycobacterium tuberculosis, corroborated by miliary pulmonary nodules.",
+  "case_prompt": "A 66-year-old female with a medical history of peripheral arterial disease status post left common iliac stenting and spinal stenosis presented to the hospital with a 3-week history of generalized weakness, fatigue, and headache. She also complained of intermittent back pain, fever, chills, and night sweats, along with new-onset migraine-like headaches and photophobia over the preceding month. She denied cough, dyspnea, or prior headache history. Four months earlier, she had undergone a minimally invasive L3–L5 lumbar fusion with allograft bone graft placement. On admission, she was afebrile with normal vital signs. On physical examination, she was oriented to person and place but disoriented to time, and could not answer all questions appropriately. Well-healed surgical incisions without erythema, fluctuance, or drainage were noted in the lumbar region. Cranial nerves II through XII were grossly intact. Bilateral lower extremity strength was 4/5 (unchanged from baseline), with no other focal neurologic deficits. Laboratory evaluation was significant for severe hyponatremia with a serum sodium of 117 mmol/L (down from 129 mmol/L two months prior), serum chloride of 77 mmol/L, and thrombocytosis with a platelet count of 425,000/μL. Inflammatory markers were markedly elevated, with an ESR >130 mm/h and C-reactive protein of 61.8 mg/L. Serum osmolality was 256 mOsm/kg, urine osmolality was 487 mOsm/kg, and urine sodium was 32 mmol/L. Thyroid-stimulating hormone (2.4 mIU/mL), random cortisol (29.5 μg/dL), urine toxicology screen, and HIV serology were non-contributory.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intracranial Space-Occupying Lesion, Hydrocephalus, or Basilar Meningitis",
+      "rule_out_reason": "Considered due to subacute progressive headache, photophobia, altered mental status, and profound SIADH, but neuroimaging revealed no intracranial lesions or meningeal enhancement.",
+      "quote": "MRI of the brain with contrast did not show any evidence of hydrocephalus, space-occupying lesions, or basilar meningitis."
+    },
+    {
+      "candidate": "Structural Spinal Cord or Thecal Sac Compression",
+      "rule_out_reason": "Considered given persistent post-surgical back pain and bilateral lower extremity weakness, but imaging demonstrated no thecal sac effacement or cord compromise requiring surgical decompression.",
+      "quote": "Due to the lack of cord compression symptoms and no evidence of compression of the thecal sac of the lumbar cistern, leading to severe stenosis, the risk of reoperating was deemed to be higher than any benefit."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The public health notification that the surgical bone graft was contaminated with Mycobacterium tuberculosis prompted systemic evaluation, revealing miliary pulmonary nodules and L4-L5 osteomyelitis.",
+      "quote": "At this time, the treatment team and neurosurgeon who performed the lumbar surgery were informed by the Center for Disease Control (CDC) that the bone graft used in her surgery was contaminated with Mycobacterium tuberculosis. A chest X-ray (Figure 1) was done and showed diffuse miliary nodular pattern of both the lungs, which was confirmed by the presence of innumerable micronodules on CT chest (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to the admission breakpoint. The prompt provides the full clinical picture of severe SIADH and headache following lumbar fusion while carefully stopping before the CDC alert and confirmatory imaging."
+}

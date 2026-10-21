@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7388635_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A young, immunocompetent male presented with a 3-week history of an erythematous, stretched left sternoclavicular joint swelling lacking warmth, constitutional symptoms, or severe tenderness. Computed tomography demonstrated aggressive cortico-osseous destruction with loculated soft-tissue fluid mimicking acute pyogenic bacterial septic arthritis or an aggressive osseous neoplasm, yet systemic inflammatory response and peripheral leukocytosis were absent.\n2. Admission Breakpoint: The admission evaluation concludes after presentation, baseline hematologic labs, inflammatory markers, and computed tomography of the neck and chest showing extensive cortical destruction and loculated joint collection, immediately preceding open surgical drainage, biopsy, and microbiological culture.\n3. Differential Distinctions: Acute pyogenic septic arthritis typically presents with intense warmth, severe localized tenderness, fever, and leukocytosis responding to broad-spectrum beta-lactams; primary bone/cartilage tumors lack purulent fluid collections; tuberculous cold abscess presents indolently with soft, minimally tender swelling, elevated sedimentation rate, and characteristic caseating granulomas on histopathology.",
+  "case_prompt": "A 37-year-old previously healthy man presented to the clinic with a 3-week history of swelling and dull discomfort over the left sternoclavicular joint region. He reported no fever, night sweats, anorexia, or weight loss. An empirical 1-week course of oral antibiotics prescribed by his primary care physician had yielded no improvement. He had no history of intravenous drug use, high-risk sexual behaviors, or known exposure to chronic pulmonary disease. His past medical history was notable only for primary male infertility undergoing hormonal evaluation.\n\nOn physical examination, the patient was afebrile and all vital signs were within normal limits. His body mass index was 34 kg/m². There was no palpable cervical or axillary lymphadenopathy. Examination of the anterior chest wall revealed a 4 × 4 cm visible swelling overlying the left sternoclavicular joint. The overlying skin was stretched and erythematous; however, the mass was non-tender and soft in consistency. Active and passive range of motion of the left shoulder joint were preserved and pain-free. Cardiopulmonary and abdominal examinations were normal.\n\nLaboratory tests demonstrated a hemoglobin of 11.8 g/dL, white blood cell count of 6.8 × 10³/µL (57.7% neutrophils, 33.4% lymphocytes, 5.7% monocytes, 2.6% eosinophils, 0.6% basophils). The erythrocyte sedimentation rate was markedly elevated at 70 mm/hr, and C-reactive protein was elevated at 30 mg/L. Serology for HIV was negative. A plain chest radiograph showed clear lung parenchyma with subtle irregularity at the medial clavicular margin. Computed tomography of the chest and lower neck demonstrated extensive cortical destruction involving both the clavicular and sternal articular ends of the joint, associated with a loculated fluid collection in the subcutaneous soft tissues extending into the left sternoclavicular and first sternochondral joints.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Septic Arthritis",
+      "rule_out_reason": "The CT demonstration of cortical joint destruction and loculated fluid suggested pyogenic septic arthritis, prompting initial intravenous ceftriaxone; however, the absence of fever, lack of leukocytosis, lack of warmth/tenderness (cold abscess), and negative routine bacterial cultures ruled out pyogenic bacteria.",
+      "quote": "A computerized tomographic scan showed extensive destruction involving cortices of clavicular as well as the sternal end of the joint with loculated collection in the subcutaneous tissue at the left side of lower neck extending into the left sternoclavicular and first sternochondral joint with the impression of septic arthritis in these two joints (Figure 2). Ceftriaxone one gram intravenously was commenced."
+    },
+    {
+      "candidate": "Primary Osseous Malignancy (e.g., Osteosarcoma or Chondrosarcoma)",
+      "rule_out_reason": "Aggressive osteolysis of the clavicular and sternal heads can mimic malignant neoplasms, but the presence of frank purulent fluid communicating with the joint space pointed towards a chronic infectious granulomatous process.",
+      "quote": "An open biopsy was performed. Frank yellow creamy pus found in the subcutaneous communicating with the joint."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Open biopsy revealed frank caseous pus growing Mycobacterium tuberculosis, with histological confirmation of multiple granulomatous lesions with prominent caseous necrosis.",
+      "quote": "Culture of pus identified as Mycobacterium tuberculosis. Biopsy of the abscess wall showed multiple granulomatous lesion with large caseous necrosis (Figure 3, Figure 4). A diagnosis of tuberculous arthritis was made, based on the presence of granulomatous lesion and mycobacteria in the histological material."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint established prior to open biopsy and mycobacterial culture. All pathogen references and testing details (e.g. tuberculin skin test) excluded from admission presentation. Canonical disease correctly identified."
+}

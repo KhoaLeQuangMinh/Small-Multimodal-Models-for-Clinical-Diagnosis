@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10864149_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 77-year-old man presents with chronic biventricular failure symptoms (dyspnea, bilateral leg edema) and infiltrative nodular, mass-like pericardial lesions with restricted diffusion and mediastinal lymphadenopathy. The radiological features strongly suggest a malignant primary or secondary pericardial neoplasm rather than an infectious process.\n2. Admission Breakpoint: The breakpoint is positioned after initial noninvasive cardiopulmonary evaluation, including chest radiography, contrast chest CT, and cardiac MRI demonstrating infiltrative nodular pericardial thickening and pleural effusions, prior to whole-body PET/CT, surgical pericardiectomy/biopsy, and mycobacterial PCR testing.\n3. Differential Distinctions: Pericardial malignant mesothelioma and pericardial lymphoma present with identical infiltrative masses, rim enhancement, and restricted diffusion on MRI, but histology reveals malignant cytology or clonal lymphocytic proliferation without necrotizing granulomas. Metastasis of unknown origin was excluded by PET/CT showing no extracardiac disease. Tuberculous pericarditis was confirmed by macroscopic caseous necrosis, necrotizing granulomatous inflammation on histopathology, and positive M. tuberculosis PCR.",
+  "case_prompt": "A 77-year-old male is referred to the hospital for evaluation of progressive dyspnea and bilateral lower extremity edema persisting for over six months. His medical history is notable for hypertension managed with oral antihypertensive therapy. He has no prior history of cardiopulmonary disease, chronic infections, or known malignancy.\n\nOn physical examination, the patient is in mild respiratory distress with bilateral pitting lower extremity edema. Heart sounds are regular but somewhat distant; no pericardial friction rub is auscultated. Respiratory examination reveals decreased breath sounds and dullness to percussion over the bilateral lung bases. Vital signs are stable.\n\nAdmission laboratory evaluation, including complete blood count, basic metabolic panel, and cardiac biomarkers (troponin and cardiac enzymes), is normal. Initial chest radiography demonstrates mild cardiomegaly and bilateral pleural effusions. Contrast-enhanced computed tomography (CT) of the chest reveals infiltrative nodular and mass-like lesions along the pericardium with heterogeneous enhancement, diffuse pericardial thickening, moderate bilateral pleural effusions, and multiple enlarged lymph nodes in the mediastinal and cardiophrenic spaces. Cardiac magnetic resonance imaging (MRI) reveals multiple nodular lesions along the pericardium that are isointense to hyperintense on T1- and T2-weighted images, show high signal intensity on T1-weighted fat-suppressed sequences, peripheral rim enhancement following gadolinium administration, and marked diffusion restriction (high signal intensity at b = 800 s/mm² with corresponding low signal on the apparent diffusion coefficient map).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant pericardial mesothelioma",
+      "rule_out_reason": "Infiltrative nodular masses coating the pericardium with heterogeneous enhancement and restricted diffusion on MRI were highly suspicious for malignant mesothelioma preoperatively, but excisional biopsy demonstrated caseous necrosis and granulomatous inflammation rather than malignant mesothelial proliferation.",
+      "quote": "Therefore, a malignant pericardial tumor, such as malignant mesothelioma, lymphoma, or metastasis of unknown origin, was diagnosed preoperatively."
+    },
+    {
+      "candidate": "Pericardial lymphoma",
+      "rule_out_reason": "Mass-like pericardial thickening accompanied by prominent mediastinal and cardiophrenic lymphadenopathy suggested pericardial involvement by lymphoma, but metabolic PET/CT imaging showed no extracardiac disease and histopathological evaluation revealed necrotizing granulomas rather than atypical lymphocytes.",
+      "quote": "PET/CT scans were performed to rule out the presence of other malignancies and nodal diseases; no evidence of a hypermetabolic focus of the primary malignancy except for the pericardium was found (Fig. 1D)."
+    },
+    {
+      "candidate": "Metastatic pericardial neoplasm of unknown origin",
+      "rule_out_reason": "Nodular pericardial infiltration in an elderly patient is most commonly secondary to metastatic carcinoma, but systemic PET/CT staging identified no occult primary tumor and histopathology revealed epithelioid granulomatous inflammation.",
+      "quote": "Therefore, a malignant pericardial tumor, such as malignant mesothelioma, lymphoma, or metastasis of unknown origin, was diagnosed preoperatively."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excisional biopsy of the pericardial nodules revealed abundant gross caseous material, intraoperative frozen section and permanent H&E staining demonstrated necrotizing granulomatous inflammation with epithelioid histiocytes, and PCR was positive for Mycobacterium tuberculosis.",
+      "quote": "A substantial amount of caseous material was observed in the specimen. An intraoperative frozen section revealed granulomatous inflammation with necrosis, suggestive of tuberculosis... The patient had a positive polymerase chain reaction (PCR) test for Mycobacterium tuberculosis (M. tuberculosis) (TB-PCR), and the final diagnosis was TBP."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set prior to PET/CT, biopsy, and PCR. Verbatim quotes verified."
+}

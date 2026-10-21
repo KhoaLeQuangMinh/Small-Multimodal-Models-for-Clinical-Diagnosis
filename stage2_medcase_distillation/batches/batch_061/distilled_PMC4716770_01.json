@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4716770_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: The clinical presentation of severe, recurrent, generalized hyperkeratotic and crusted plaques in a young adult with end-stage renal disease and dysmorphic features creates diagnostic confusion between palmoplantar keratoderma, severe psoriasis, refractory dermatophytosis, and an underlying immunodeficiency syndrome. The lack of typical burrows and the atypical, exuberant crusting mask the underlying parasitic infestation.\n2. Admission Breakpoint: The triage evaluation concludes with physical examination of the cutaneous lesions and review of baseline laboratory screening (HIV, SPEP, ANA, routine renal chemistry, and CBC), immediately before mineral oil skin scrapings and fungal cultures are obtained.\n3. Differential Distinctions: Tinea corporis/onychomycosis was considered due to nail changes and recurrent annular lesions but ruled out by lack of active lesions on exam; severe psoriasis/keratoderma was considered due to thick hyperkeratotic palmoplantar plaques but argued against by diffuse excoriated papules on face and trunk; systemic autoimmune disease was ruled out by negative ANA and normal SPEP. The diagnosis pivots on microscopic examination of mineral oil scrapings demonstrating numerous live mites.",
+  "case_prompt": "A 34-year-old woman is referred to the dermatology clinic for evaluation of a severe, diffuse, and recurrent cutaneomucosal dermatosis that has been intermittent over the preceding 3 years. The patient has failed multiple empiric topical therapies. Her medical history is significant for end-stage renal disease on hemodialysis, obesity, non-insulin-dependent diabetes mellitus, hypertension, bilateral cataracts, mild unilateral sensorineural hearing loss, recurrent cellulitis at her dialysis catheter site, and past episodes of catheter-related bacteremia. She has lived with her maternal grandmother since birth, with no known family history of birth defects or primary immunodeficiency.\n\nOn physical examination, the patient appears significantly older than her stated age. Facial features demonstrate a prominent brow ridge, midface hypoplasia, prognathism, and slight downslanting of the palpebral fissures. Dermatologic examination reveals thick, hyperkeratotic, white, flaking plaques across the palms, soles, digits, and subungual spaces with associated distal onycholysis. Moist erosions and bright erythema are present along multiple proximal nail folds. Crusted papules and erosions consistent with excoriations are diffusely scattered over the face, ears, trunk, and extremities.\n\nBaseline laboratory studies reveal a serum electrolyte panel consistent with end-stage renal disease on maintenance hemodialysis. The absolute lymphocyte count is normal, with white blood cell counts fluctuating between prior admissions. Serologic evaluation is negative for human immunodeficiency virus (HIV) antibodies, antinuclear antibodies (ANA) are negative, and serum protein electrophoresis is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tinea corporis / Onychomycosis",
+      "rule_out_reason": "Although the patient had a history of recurrent fungal infections and dystrophic nail changes, physical inspection showed no active fungal lesions at presentation, and prior topical antifungals failed to control the disease.",
+      "quote": "There was no evidence of active tinea at the time of the patient visit."
+    },
+    {
+      "candidate": "Psoriasis / Palmoplantar keratoderma",
+      "rule_out_reason": "Thick white hyperkeratotic plaques on the hands, feet, and nail beds resemble severe palmoplantar psoriasis or hereditary keratoderma, but the widespread excoriations and generalized crusted papules suggest a severely pruritic, non-keratinization process.",
+      "quote": "There were crusted papules and erosions diffusely scattered on the face, ears, trunk, and extremities consistent with excoriations."
+    },
+    {
+      "candidate": "Systemic lupus erythematosus / Autoimmune connective tissue disease",
+      "rule_out_reason": "Systemic autoimmune disease was considered given multisystem pathology and early-onset nephrotic syndrome with renal failure, but autoimmune and monoclonal workups were negative.",
+      "quote": "Importantly, the patient was HIV negative, had a normal serum protein electrophoresis interpretation, and was negative for antinuclear antibodies."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of mineral oil skin scrapings prepared from the hyperkeratotic plaques revealed numerous live mites, establishing crusted (Norwegian) scabies occurring in a host with suspected cutaneous immunodeficiency.",
+      "quote": "Earlier mineral oil scrapings had revealed multiple live mites and exam was consistent with crusted scabies."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly adheres to breakpoint prior to microscopic scraping; zero pathogen spoilers; exact verbatim quotes verified."
+}

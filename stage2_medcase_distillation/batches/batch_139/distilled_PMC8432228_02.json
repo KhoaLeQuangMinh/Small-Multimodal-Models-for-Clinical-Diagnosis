@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8432228_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 7-month-old infant presents with prolonged fever (10 days), marked hepatosplenomegaly, pallor, anasarca, bicytopenia, and severe hyperferritinemia. The prominent generalized edema and anasarca can mimic severe nephrotic syndrome, congestive cardiac failure, or septic shock with capillary leak, while the clinical and laboratory features meet criteria for hemophagocytic lymphohistiocytosis (HLH).\n2. Admission Breakpoint: Admission presentation stops after initial clinical findings (10 days of fever, hepatosplenomegaly, bicytopenia, pallor, anasarca, ferritin elevation), strictly prior to rK39 antigen testing, bone marrow myelogram, and antileishmanial/immunosuppressive treatment.\n3. Differential Distinctions: Congenital/familial HLH and acute leukemia are key considerations in an infant with cytopenias, organomegaly, and hyperferritinemia, but are ruled out by rapid antigen testing and bone marrow aspirate demonstrating amastigotes. Severe bacterial sepsis with capillary leak prompted empiric cefepime and transfusions due to neutropenia, but the underlying driver was visceral parasitic infection.",
+  "case_prompt": "A 7-month-old male infant presented with fever for 10 days associated with hepatosplenomegaly, bicytopenia, pallor, anasarca, and markedly elevated serum ferritin.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary / Familial Hemophagocytic Lymphohistiocytosis (HLH)",
+      "rule_out_reason": "An infant presenting with prolonged fever, hepatosplenomegaly, bicytopenia, and severe hyperferritinemia fulfills diagnostic criteria for HLH; however, the hyperinflammatory syndrome was determined to be secondary to an infectious protozoan etiology rather than a primary genetic immune defect.",
+      "quote": "A 7-month-old male infant presented with fever for 10 days associated with hepatosplenomegaly, bicytopenia, pallor, anasarca, and increased ferritin."
+    },
+    {
+      "candidate": "Severe bacterial sepsis with capillary leak / Febrile neutropenia",
+      "rule_out_reason": "The presence of anasarca, fever, and neutropenia raised immediate concern for severe bacterial infection and capillary leak, necessitating broad-spectrum antibiotics (cefepime) and supportive transfusions of platelets, packed red blood cells, and albumin; however, the illness was caused by a protozoan parasite.",
+      "quote": "cefepime was used due to fever-associated neutropenia. In addition, he underwent transfusion of platelets, red blood cells, and albumin."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis was confirmed by a positive rK39 immunochromatographic rapid test and detection of amastigotes alongside hemophagocytosis on bone marrow myelogram, leading to full recovery following liposomal amphotericin B and corticosteroids.",
+      "quote": "Immunochromatographic rapid test with rK39 antigen was positive for Leishmania spp., and amastigotes were detected in a myelogram, which also presented hemophagocytosis."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

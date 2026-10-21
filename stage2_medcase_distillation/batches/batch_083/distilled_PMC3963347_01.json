@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3963347_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 43-year-old man presents with progressive urinary obstruction, suprapubic mass, and unilateral renal atrophy from a giant pelvic cystic mass that encases the ureter. The clinical and imaging appearance strongly mimics a cystic retroperitoneal/pelvic neoplasm or giant bladder diverticulum, particularly with negative echinococcal serology.\n2. Admission Breakpoint: The presentation ends after clinical evaluation, suprapubic catheterization, abdominopelvic CT scan defining the large retrovesical cystic mass with ureteral encasement, and baseline renal function showing creatinine of 2.0 mg/dL, prior to diagnostic cystoscopy, serology, and exploratory surgical resection.\n3. Differential Distinctions: Cystic pelvic malignancy and bladder diverticulum are ruled out by imaging lack of invasive solid neoplastic tissue, normal cystoscopic examination of the bladder, and definitive histopathological demonstration of hydatid architecture despite non-reactive serology.",
+  "case_prompt": "A 43-year-old man presents with a 6-month history of left flank pain and progressive severe obstructive urinary symptoms. His past medical history is notable for multiple laparotomies following abdominal gunshot injuries in 1984, including splenectomy, appendectomy, and cholecystectomy.\n\nOn physical examination, he demonstrates left costovertebral angle tenderness and a hard, non-mobile suprapubic mass. A Foley catheter is inserted with difficulty, but the suprapubic mass persists unchanged following catheterization.\n\nAn abdominopelvic computed tomography (CT) scan reveals a large pelvic cyst measuring 14.9 x 12.7 x 14.8 cm. The mass displaces the urinary bladder anteriorly and superiorly to the right. It exhibits an irregular wall with a soft tissue component measuring 2 cm in maximal thickness at its right lateral aspect. The left ureter is encased by the mass, causing secondary left hydroureteronephrosis and severe thinning of the left renal cortex.\n\nBaseline laboratory testing demonstrates a serum creatinine level of 2.0 mg/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pelvic malignancy / Retrovesical sarcoma",
+      "rule_out_reason": "The large size, ureteral encasement, irregular wall, and 2-cm soft tissue component raised concern for a pelvic sarcoma or cystic neoplasm; however, exploratory laparotomy and surgical histopathology demonstrated characteristic benign hydatid cyst architecture rather than neoplastic tissue.",
+      "quote": "The mass had an irregular wall with a soft tissue component seen at its right lateral aspect, measuring 2 cm in maximal thickness."
+    },
+    {
+      "candidate": "Giant urinary bladder diverticulum",
+      "rule_out_reason": "A massive retrovesical cystic collection causing persistent suprapubic mass and urinary outlet obstruction could represent a giant bladder diverticulum, but endoscopic visualization of the bladder lumen demonstrated normal mucosa without any diverticular opening.",
+      "quote": "The patient underwent flexible cystoscopy, revealing a normal bladder with no diverticulae."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Although indirect hemagglutination serology was negative (< 1:32), exploratory laparotomy with pericystectomy and histopathologic examination of the surgical specimen established hydatid disease.",
+      "quote": "The pathologic examination of the surgical specimen confirmed hydatid disease, and the remnant kidney was negative for the disease."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case of a retrovesical hydatid cyst presenting with obstructive uropathy and left renal atrophy. Admission prompt strictly excludes serological titer results, surgical intervention, and histopathologic confirmation."
+}

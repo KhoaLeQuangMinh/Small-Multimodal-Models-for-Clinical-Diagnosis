@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5798098_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 20-year-old female presents with a 2-month fever of unknown origin, marked constitutional symptoms, serositis (ascites and pleural effusion), profoundly elevated acute-phase reactants (ESR 100, CRP >320), and a positive ANA test. This clinical constellation strongly points toward a systemic autoimmune disease such as systemic lupus erythematosus or Takayasu arteritis, concealing an atypical, culture-negative disseminated extrapulmonary tuberculosis complicated by infectious aorto-arteritis.\n2. Admission Breakpoint: The breakpoint occurs following the admission workup of FUO, including baseline complete blood count, acute phase reactants, autoantibodies, and abdominal ultrasonography, strictly prior to whole-body 18F-FDG PET-CT and initiation of antitubercular therapy.\n3. Differential Distinctions: Systemic lupus erythematosus presents with positive ANA, serositis, and constitutional symptoms, but does not explain hypermetabolic large-vessel arteritis coupled with widespread necrotizing lymphadenopathy. Takayasu arteritis causes primary large-vessel inflammation in young females, but typically lacks prominent mediastinal and abdominal necrotic lymphadenopathy and responds to immunosuppression alone rather than antimycobacterials.",
+  "case_prompt": "A 20-year-old female presented for evaluation of a prolonged, unremitting fever of two months' duration. The fever was characterized by evening rises of temperature, accompanied by chills, rigors, and a productive cough with expectoration. Over the 10 days preceding admission, she developed frequent vomiting, profound anorexia, and substantial weight loss. She had received a 7-day course of broad-spectrum intravenous antibiotics at an outside facility without clinical response.\n\nOn physical examination, she appeared chronically ill, febrile, and wasted. Breath sounds were decreased at the left lung base, and abdominal examination revealed distension with shifting dullness indicative of ascites, without focal organomegaly or tenderness. Peripheral pulses were symmetric and no bruits were auscultated.\n\nAdmission laboratory investigations revealed a total leukocyte count of 5,300 cells/cu mm, an erythrocyte sedimentation rate (ESR) of 100 mm/h, and a C-reactive protein (CRP) level >320 mg/L. Antinuclear antibody (ANA) testing was positive by indirect immunofluorescence. Abdominal ultrasonography demonstrated mild-to-moderate free ascites and a minimal left pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Systemic lupus erythematosus or primary autoimmune large-vessel vasculitis",
+      "rule_out_reason": "Considered due to the patient's young female demographic, positive antinuclear antibodies (ANA), polyserositis (pleural effusion and ascites), and extreme inflammatory markers, but ruled out as the primary etiology by advanced PET imaging demonstrating contiguous large-vessel aortitis driven by hypermetabolic mediastinal and abdominal lymphadenopathy that resolved with antimycobacterial therapy.",
+      "quote": "Antinuclear antibodies (ANA) were positive by indirect immunofluorescence test. ... Transaxial images showed increased FDG uptake in mediastinal lymph nodes, abdominal lymph nodes, wall of arch of aorta, thickened wall of ascending aorta, and pericardial effusion."
+    },
+    {
+      "candidate": "Occult deep bacterial infection or pyogenic sepsis",
+      "rule_out_reason": "Considered in light of the severe systemic symptoms, chills, rigors, and extreme elevation of C-reactive protein (>320 mg/L), but ruled out by the complete lack of response to empirical higher-generation antibiotics and the absence of peripheral leukocytosis.",
+      "quote": "The patient did not respond to higher antibiotics for 7 days. Laboratory investigations revealed erythrocyte sedimentation rate (ESR) 100 mm/h, total leukocyte count was 5300 cells/cu mm, and C-reactive protein levels (CRP) >320 mg/L."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "18F-FDG PET-CT revealed intense linear FDG uptake along the ascending aorta and aortic arch associated with extensive hypermetabolic mediastinal and abdominal lymphadenopathy, establishing disseminated extrapulmonary tuberculosis with secondary aorto-arteritis, which achieved complete clinical resolution on antitubercular therapy and steroids.",
+      "quote": "On 18F-FDG PET-CT, maximum intensity projection (MIP) image revealed linearly increased tracer concentration in large vessels and multiple foci of increased FDG uptake in mediastinum and abdomen. Transaxial images showed increased FDG uptake in mediastinal lymph nodes, abdominal lymph nodes, wall of arch of aorta, thickened wall of ascending aorta, and pericardial effusion. ... Then, the patient was diagnosed to have disseminated extrapulmonary tuberculosis (TB) with aorto-arteritis. Treatment was started with antitubercular treatment (ATT) and low-dose steroids. Patient responded well and symptomatic improvement was seen after 3 months"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "This case highlights an extraordinary presentation of disseminated extrapulmonary tuberculosis mimicking primary large vessel vasculitis (Takayasu arteritis) and systemic lupus erythematosus in a young female with positive ANA, diagnosed definitively using 18F-FDG PET-CT."
+}

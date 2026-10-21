@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6233691_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 57-year-old male with long-standing diabetes and peripheral neuropathy presents with a chronic, non-healing foot ulcer and Charcot neuroarthropathy. The initial presentation is universally managed as routine diabetic foot infection and was initially misattributed to common nosocomial colonizers (Pseudomonas sp.). Failure of standard oral fluroquinolone/cephalosporin therapy unmasks an underlying tropical endemic infection capable of indolent soft-tissue persistence.\n2. Admission Breakpoint: Concludes immediately following initial outpatient clinical examination, baseline blood tests, and normal plain radiographs of the feet and chest, strictly prior to outpatient empirical antibiotic failure, initial bacterial swab cultures, and selective agar plating/PCR.\n3. Differential Distinctions: Common polymicrobial diabetic foot infection / Pseudomonas wound infection is suggested by ulcer depth and chronic hyperglycemia, but ruled out by complete non-response to ciprofloxacin and subsequent isolation of characteristic bipolar Gram-negative bacilli on selective media. Diabetic osteomyelitis is ruled out by normal foot radiographs and lack of bone involvement on deep exploration. Melioidosis is confirmed by growth of wrinkled purple colonies on Ashdown agar with characteristic earthy/putrid odor and positive Burkholderia pseudomallei-specific nested PCR.",
+  "case_prompt": "A 57-year-old man presents to the clinic in Yogyakarta, Indonesia, with a recurrent non-healing wound infection on the plantar aspect of his right foot. He was diagnosed with type 2 diabetes mellitus 22 years prior, managed on mixed insulin for the preceding three months, and has a history of hypertension and peripheral artery disease. He denies coronary artery disease, stroke, deep venous thrombosis, visual changes, or renal disease. The current plantar ulcer developed spontaneously from a blister three months ago; he recalls a similar ulcer on the same foot seven years earlier.\n\nOn physical examination, he is afebrile with normal vital signs. Examination of the right foot reveals an infected, full-thickness ulcer on the sole measuring 5 x 4 cm, with depth extending into the intrinsic muscle layer. Both lower extremities demonstrate dry, scaly skin, sparse hair distribution, cutaneous hyperpigmentation, and superficial ulcerations. In addition, the right foot exhibits thickened dystrophic nails and structural deformity consistent with Charcot neuroarthropathy.\n\nBaseline laboratory testing reveals a hemoglobin level of 11.5 g/dL, random blood glucose of 337 mg/dL, and high-density lipoprotein (HDL) of 9 mg/dL. Plain radiographs of both feet and the chest are unremarkable, with no evidence of cortical erosion, periosteal reaction, or osteomyelitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Common diabetic neuroischemic foot ulcer / Pseudomonas aeruginosa superinfection",
+      "rule_out_reason": "Although initial superficial wound swab yielded scanty growth of Pseudomonas sp., targeted antibiotic therapy with ciprofloxacin and cefixime resulted in zero clinical improvement, indicating colonization rather than the true primary pathogen.",
+      "quote": "culture and sensitivity tests were conducted, resulting in a scanty growth of Pseudomonas sp., resistant to gentamycin... given a 3 week course of oral cefixime and ciprofloxacin, with no improvement."
+    },
+    {
+      "candidate": "Diabetic neuropathic osteomyelitis",
+      "rule_out_reason": "Plain radiographs of the right foot showed no bony destruction or periosteal reaction, and the ulcer extended to muscle without bony involvement.",
+      "quote": "Physical examination on admission revealed an infected ulcer on the sole, 5x4 cm, with depth reaching the muscle layer... Feet and chest X-rays were unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cutaneous Melioidosis",
+      "rule_out_reason": "Repeat deep microbiological wound swab culture demonstrated bipolar-staining Gram-negative rods growing characteristically dry, wrinkled, purple colonies on Ashdown agar with a sweetish-putrid odor, and nested PCR targeting the 16S rRNA gene definitively identified Burkholderia pseudomallei.",
+      "quote": "Microbiology examination on a swab sample from the wound base revealed B. pseudomallei. Culture on blood agar, MacConkey agar, and Ashdown agar yielded short Gram-negative rods with bipolar staining. On Ashdown agar, these colonies appeared pale pink, and after prolonged incubation became dark purple, dry, and wrinkled in the center (Figure 2)... Visualization of a 397 bp-sized DNA bands in electrophoresis with 1% agarose gel confirmed the presence of 16S rRNA gene of B. pseudomallei."
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Accurate distillation capturing an insidious case of primary cutaneous melioidosis mimicking a typical diabetic foot ulcer in an endemic Indonesian region. Clean admission breakpoint without spoilers."
+}

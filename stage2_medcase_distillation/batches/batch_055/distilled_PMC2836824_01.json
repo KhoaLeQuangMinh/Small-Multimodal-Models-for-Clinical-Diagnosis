@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2836824_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 56-year-old traveler living in Haiti develops fever, headache, and diarrhea progressing rapidly to encephalopathy, seizures, hematemesis, melena, oliguria, DIC, and multiorgan failure despite falling parasite loads on initial antimalarial therapy. The severe progressive neurological decline, gastrointestinal bleeding, and multiorgan failure created diagnostic ambiguity between primary viral/bacterial encephalitis, severe sepsis from enteric pathogens, and complicated severe falciparum infection with bacterial/fungal coinfections.\n2. Admission Breakpoint: The breakpoint occurs upon transfer and admission to the intensive care unit in Miami with multiorgan failure, DIC, and acute renal failure, prior to blood culture identification of Clostridium perfringens and Candida tropicalis, and send-out viral encephalitis PCR panels.\n3. Differential Distinctions: Acute viral encephalitis/meningoencephalitis was suspected due to fever, refractory seizures, and altered mental status, but excluded by a negative viral encephalitis panel. Primary bacterial dysentery / severe abdominal sepsis was considered given hematemesis, bloody diarrhea, and DIC, but peripheral blood smears demonstrated intraerythrocytic parasites (with secondary C. perfringens bacteremia and C. tropicalis fungemia complicating the severe infection).",
+  "case_prompt": "A 56-year-old man living in Haiti, with a history of heavy alcohol consumption and two previous episodes of tropical febrile illness treated with chloroquine, presented with acute fever, headache, nausea, and diarrhea of six days duration. Over the preceding 24 hours, he had developed acute confusion and altered mental status requiring endotracheal intubation and mechanical ventilation. During this period, generalized seizures, bloody stools, hematemesis, and decreased urinary output were documented.\n\nUpon transfer and admission to an intensive care unit, the patient was comatose and mechanically ventilated. Physical examination confirmed critical illness with signs of coagulopathy.\n\nInitial triage laboratory evaluation revealed profound thrombocytopenia, disseminated intravascular coagulation, severe electrolyte imbalances, and acute renal failure.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Encephalitis / Meningoencephalitis",
+      "rule_out_reason": "Considered due to the rapid deterioration from fever and headache into altered sensorium and generalized seizures, but an infectious encephalitis panel was completely negative.",
+      "quote": "An encephalitis panel was also negative."
+    },
+    {
+      "candidate": "Primary Sepsis / Severe Bacterial Enteric Infection",
+      "rule_out_reason": "Considered given fever, diarrhea, hematemesis, bloody stools, DIC, and acute multiorgan failure, but peripheral blood smears confirmed intraerythrocytic parasites, indicating complicated parasitic infection with secondary polymicrobial coinfections.",
+      "quote": "Blood smears showed few malaria parasites, but treatment with antimalarial agents was continued."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Initial presentation in Haiti demonstrated Plasmodium falciparum ring forms on peripheral blood smear, and despite antiparasitic therapy, he suffered fulminant complicated disease with multiorgan failure and secondary Clostridium perfringens bacteremia and Candida tropicalis fungemia.",
+      "quote": "On November 3rd he visited a local hospital in Cotes des Arcadins and was diagnosed with P. falciparum infection by peripheral blood smear."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation isolated to ICU admission triage findings. Blood cultures, viral panels, and autopsy results sequestered to diagnostic reasoning."
+}

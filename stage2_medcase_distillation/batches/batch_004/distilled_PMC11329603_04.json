@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11329603_04",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A chronic one-year history of recurrent productive cough in an otherwise healthy adolescent boy presents a wide differential ranging from chronic suppurative airway infection and bronchiectasis to retained foreign body or endobronchial neoplasm, obscuring indolent necrotizing mycobacterial disease.\n2. Admission Breakpoint: The admission triage evaluation ends upon recording the chronic respiratory presentation and preliminary physical examination, immediately prior to invasive tracheal endoscopy, tissue biopsy, and sputum mycobacterial cultures.\n3. Differential Distinctions: Chronic bacterial bronchitis and bronchiectasis manifest with persistent sputum production but lack severe ulcerative caseating endobronchial destruction and acid-fast bacilli on histochemical staining; endobronchial neoplasms lack necrotizing granulomatous inflammation.",
+  "case_prompt": "A 16-year-old boy presented to the respiratory clinic with a one-year history of recurrent cough and sputum production. He had no reported past medical history of chronic illnesses and no previous known exposure to toxic inhalants. Physical examination was notable for an adolescent in stable condition with normal vital signs. Pulmonary auscultation revealed bilateral breath sounds with intermittent coarse rhonchi, but no acute respiratory distress or stridor. The remainder of the physical examination, including cardiovascular and abdominal exams, was unremarkable. Baseline triage evaluation was initiated to evaluate the etiology of his chronic productive cough.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Suppurative Bronchitis / Bronchiectasis",
+      "rule_out_reason": "Protracted cough and sputum in a young patient commonly represent persistent bacterial airway suppuration or structural bronchiectasis; however, endoscopic evaluation demonstrated severe necrotizing tracheobronchial lesions with acid-fast bacillary staining rather than simple bacterial bronchitis.",
+      "quote": "a 16-year-old boy presented to our department with a one-year history of recurrent cough and sputum."
+    },
+    {
+      "candidate": "Endobronchial Neoplasm / Foreign Body Granuloma",
+      "rule_out_reason": "Unresolving chronic localized cough and sputum production can stem from tracheobronchial adenoma, carcinoid, or unrecognized retained foreign body; however, tracheal mucosal biopsy revealed extensive caseous necrosis and acid-fast staining rather than neoplastic proliferation or foreign-body reaction.",
+      "quote": "Tracheal endoscopy biopsy revealed extensive caseous necrosis, with acid-fast staining positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Tracheal endoscopy biopsy showing extensive caseating necrosis with acid-fast positivity, followed by isolation of Mycobacterium tuberculosis from sputum and lavage fluid with drug susceptibility testing, confirmed rifampicin-resistant tuberculosis.",
+      "quote": "The patient was diagnosed with rifampicin-resistant tuberculosis (RR-TB) based on the culture of M. tuberculosis from sputum and lavage fluid, along with DST."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Admission breakpoint ends before invasive tracheal endoscopy biopsy and cultures. Zero pathogen names or spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

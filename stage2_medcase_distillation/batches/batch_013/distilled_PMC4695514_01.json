@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4695514_01",
+  "disease": "Viral Hemorrhagic Fevers",
+  "think": "1. Core Clinical Tension: A young traveler presenting with acute fever, vomiting, and watery diarrhea without overt bleeding in West Africa mimics ubiquitous endemic conditions such as acute bacterial gastroenteritis, cholera, severe malaria, or typhoid fever, obscuring a lethal filoviral hemorrhagic fever in its early 'dry' or purely gastrointestinal phase.\n2. Admission Breakpoint: The breakpoint occurs upon hospitalization at the tertiary infectious diseases service for persistent gastrointestinal symptoms and fever, strictly before public health contact-tracing alerts, isolation room transfer, and reference laboratory PCR testing.\n3. Differential Distinctions: Acute infectious gastroenteritis/cholera causes severe diarrhea and dehydration but lacks epidemiological clustering with fatal hemorrhagic fevers. Severe malaria typically causes paroxysmal fever and hemolytic anemia. Enteric fever causes sustained pyrexia and abdominal discomfort but lacks filoviral transmissibility.",
+  "case_prompt": "A 21-year-old male traveler from Guinea presented to an infectious diseases service in Dakar, Senegal, with a 6-day history of fever, persistent vomiting, and watery diarrhea without overt hemorrhage. He had arrived in the city one week earlier via an overnight bus journey, having been completely asymptomatic during travel. Three days post-arrival, he developed progressive fever and gastrointestinal symptoms. He initially sought care at a local suburban health center, where he was treated supportively for three days without resolution, prompting referral and admission to the regional tertiary infectious disease center.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute infectious gastroenteritis / Cholera",
+      "rule_out_reason": "Considered due to the sudden onset of watery diarrhea, vomiting, and fever without initial bleeding, but refractory to routine clinic management and subsequently linked to fatal epidemic exposures.",
+      "quote": "Three days after his arrival, he started showing signs of fever, vomiting and diarrhea with no bleeding, and then decided to consult in a suburban health centre where he had been taken in charge for three days."
+    },
+    {
+      "candidate": "Severe malaria or Enteric fever",
+      "rule_out_reason": "Common endemic differentials for acute febrile illness with gastrointestinal symptoms in West African travelers, but superseded when epidemiological surveillance traced high-risk contacts with fatal index cases.",
+      "quote": "During all those consultations, he had never informed practitioners as regards the contacts he likely had with other people affected by the Ebola virus disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Cross-border surveillance notification from public health authorities in Guinea confirmed the patient was an untraced contact of fatal cases, prompting immediate strict isolation and confirmatory blood testing by the Pasteur Institute demonstrating Zaire ebolavirus.",
+      "quote": "Senegal had been alerted by some WHO authorities based in Guinea that a contact-case had probably travelled to Senegal; the investigation undertaken revealed that it was related to the patient hospitalized at the Fann Hospital Infectious Disease Service. He was then immediately placed in an isolation room and some fluid samples were gathered. On August 28, the test operated on the blood sample by the Dakar Pasteur Institute returned as Zaire-Ebola-virus-positive."
+    }
+  ],
+  "final_diagnosis": "Viral Hemorrhagic Fevers",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to contact-tracing alert and Pasteur Institute PCR. Travel timeline and clinical features preserved with zero spoilers."
+}

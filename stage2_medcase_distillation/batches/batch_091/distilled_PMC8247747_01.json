@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8247747_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 16-year-old adolescent boy presenting with subacute intracranial hypertension, Parinaud-like neuro-ophthalmic signs (papilledema, vertical nystagmus, diplopia), and an enhancing pineal region midline mass with obstructive supratentorial hydrocephalus, in the complete absence of fever, systemic symptoms, chest findings, or known sick contacts. The presentation was clinically and radiologically virtually identical to a pineal germinoma.\n2. Admission Breakpoint: Emergency presentation, physical examination, baseline routine blood tests, and initial gadolinium-enhanced brain MRI showing the enhancing pineal mass, prior to serum tumor marker measurement (AFP, beta-hCG), neurosurgical CSF diversion, and excision biopsy.\n3. Differential Distinctions: Pineal gland germinoma is the most common pineal neoplasm in adolescent males, causing obstructive hydrocephalus and vertical gaze palsy; ruled out by normal tumor markers (AFP, beta-hCG) and histopathology demonstrating granulomatous encephalitis without malignancy. Neurosarcoidosis produces non-necrotizing central nervous system granulomas with negative acid-fast stains, but was excluded by normal chest CT, negative ACE levels, and definitive response to antitubercular therapy. Central nervous system tuberculoma can arise as an isolated solitary pineal lesion without systemic tuberculosis.",
+  "case_prompt": "A 16-year-old boy with no prior medical history presents to the emergency department complaining of a severe, progressive headache of 1-month duration. Over recent days, the headache has been accompanied by episodes of vomiting and blurred vision. There is no history of fever, weight loss, night sweats, recent travel, or contact with sick individuals.\n\nNeurological examination reveals massive bilateral papilledema, vertical nystagmus, and diplopia.\n\nRoutine laboratory evaluations, including complete blood count, blood urea, serum electrolytes, and liver function tests, are within normal limits.\n\nMagnetic resonance imaging (MRI) of the brain with intravenous gadolinium demonstrates an enhancing midline mass centered at the pineal region causing obstructive supratentorial hydrocephalus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pineal gland germinoma / Germ cell tumor",
+      "rule_out_reason": "Considered the primary suspect given the patient's age, sex, midline pineal lesion, and obstructive hydrocephalus, but excluded by normal serum AFP and beta-hCG levels, and biopsy demonstrating granulomatous inflammation without malignant cells.",
+      "quote": "Additional laboratory tests for AFP and BHCG showed normal results. Pineal gland germinoma was suspected. MRI of the whole spine was performed and returned to be normal."
+    },
+    {
+      "candidate": "Neurosarcoidosis",
+      "rule_out_reason": "Considered because histopathology revealed small non-necrotizing granulomas and Ziehl-Neelsen staining was negative, but ruled out by a normal chest CT, normal serum angiotensin-converting enzyme (ACE) levels, and clinical regression on antitubercular therapy.",
+      "quote": "However, considering the low sensitivity of the stain, TB was the leading diagnosis while sarcoidosis was the less likely second differential consideration. Sarcoidosis was excluded as CT chest was normal and angiotensin-converting enzyme level was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excision biopsy with frozen section and final histopathology demonstrated small non-necrotizing granulomas, perivascular lymphocytic infiltrates, and reactive microglia consistent with tuberculous encephalitis without malignancy, followed by significant radiological tumor regression on anti-TB therapy.",
+      "quote": "The patient underwent excision biopsy with frozen section histopathology demonstrating granuloma consistent with TB with encephalitis without any malignant cells. The final pathology report confirmed the diagnosis and showed few small non-necrotizing granulomas, perivascular lymphocytic infiltrates, and reactive microglia without evidence of malignancy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at initial brain MRI and baseline routine labs, before tumor markers or biopsy. Zero spoilers in case_prompt. Direct quotes verified verbatim from case text."
+}

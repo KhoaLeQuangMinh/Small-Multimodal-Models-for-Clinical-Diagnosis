@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10362652_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 76-year-old farmer presents with catastrophic bilateral blindness, anterior staphyloma, collapsed nasal bridge, and resorption of manual and pedal digits. Because the presentation represents late-stage 'burnt-out' neuropathic and structural sequelae, standard microbial confirmation by slit-skin smear is negative, requiring accurate clinicopathological recognition of characteristic peripheral nerve hypertrophy and trophic changes.\n2. Admission Breakpoint: Admission triage ends following initial history and facial/extremity physical examination, immediately prior to formal multi-site peripheral nerve palpation mapping and slit skin smear acid-fast microscopy.\n3. Differential Distinctions: Advanced diabetic neurotrophic arthropathy/keratopathy is excluded by prominent peripheral nerve trunk hypertrophy and saddle nose deformity; active lepromatous disease is ruled out by negative slit-skin smear examinations, confirming quiescent 'burnt-out' pathology.",
+  "case_prompt": "A 76-year-old male farmer presented to the outpatient clinic with bilateral loss of vision and mutilating digital resorption progressing over the preceding twenty years. On inquiry, he reported that decades earlier he had received an unconfirmed diagnosis of a chronic dermatologic condition for which he took inconsistent, irregular medications before discontinuing care. Over the subsequent two decades, he experienced recurrent bouts of redness, pain, and lacrimation in both eyes, managed symptomatically by local practitioners.\n\nOn physical examination, ocular evaluation revealed complete absence of light perception bilaterally, wide palpebral apertures, complete loss of eyebrows and eyelashes, and severe bilateral ectropion of the upper and lower eyelids with restriction of extraocular motility in all fields of gaze. The bulbar and palpebral conjunctivae were keratinized, with prominent bilateral anterior staphyloma. Systemic physical examination was notable for a collapsed nasal bridge (saddle nose deformity) and marked painless resorption and auto-amputation of multiple fingers and toes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "End-Stage Diabetic Peripheral Neuropathy with Neurotrophic Keratopathy",
+      "rule_out_reason": "Considered due to the glove-and-stocking sensory deficit, acral resorption, and neurotrophic corneal melting; however, profound palpable enlargement of multiple major peripheral nerve trunks and midfacial cartilaginous collapse are characteristic of mycobacterial neurotropism rather than diabetic microvascular neuropathy.",
+      "quote": "Sensations were absent on the upper and diminished on the lower limbs in a glove and stocking pattern."
+    },
+    {
+      "candidate": "Active Multibacillary Lepromatous Disease",
+      "rule_out_reason": "Considered given the extensive facies changes, madarosis, and catastrophic tissue resorption; however, direct slit-skin smear microscopy from earlobes and fingers was negative for acid-fast bacilli, establishing that the presentation was a quiescent, burnt-out manifestation rather than active ongoing bacillary replication.",
+      "quote": "Slit skin smear (SSS) examination from earlobes and dorsal surface of fingers were negative for acid-fast bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detailed neurological assessment identifying multiple thickened peripheral nerve trunks (bilateral ulnar, median, radial cutaneous, lateral popliteal, and anterior tibial) along with glove-and-stocking anesthesia, madarosis, and acral resorption confirmed the clinical diagnosis of burnt-out leprosy.",
+      "quote": "peripheral nerve examination revealed thickened bilateral ulnar, bilateral median, bilateral radial cutaneous, left lateral popliteal and left anterior tibial nerves."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning framework. Overt disease names and smear results withheld from case_prompt. Direct verbatim quotes ground all reasoning entries."
+}

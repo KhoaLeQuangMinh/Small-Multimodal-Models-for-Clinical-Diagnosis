@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7152536_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 76-year-old male with polycythemia vera managed with the JAK1/2 inhibitor ruxolitinib and a history of resected ascending colon adenocarcinoma presents with pyrexia, severe fatigue, progressive abdominal distension, and markedly elevated CRP. Cross-sectional imaging reveals peritoneal thickening and massive ascites. In a patient with recent colon cancer and immunosuppression, this presentation strongly suggests peritoneal carcinomatosis, while negative IGRA and negative tissue PCR make diagnosing opportunistic tuberculous peritonitis particularly elusive.\n2. Admission Breakpoint: The presentation concludes upon hospital evaluation in September 2018 with fever, fatigue, abdominal distension, triage laboratory tests (WBC 10.2x10^9/L, platelets 789x10^9/L, Hb 11.5 g/dL, CRP 15.0 mg/dL, LDH 296 U/L), and CT scan demonstrating peritoneal thickening and massive ascites, immediately prior to diagnostic paracentesis and ascitic fluid analysis.\n3. Differential Distinctions: Peritoneal carcinomatosis / recurrence of colon adenocarcinoma was the leading differential given previous colon adenocarcinoma and massive ascites with peritoneal thickening, but paracentesis cytology demonstrated an exudative lymphocytic effusion completely devoid of malignant/neoplastic cells. Atypical non-tuberculous mycobacterial peritonitis was considered under ruxolitinib immunosuppression, but atypical PCR was negative and ascites fluid yielded Mycobacterium tuberculosis on prolonged culture. Markedly elevated ascitic adenosine deaminase (ADA 57.5 U/L) provided the critical clinical turning point.",
+  "case_prompt": "A 76-year-old male with JAK2V617F mutation-positive polycythemia vera, maintained on ruxolitinib 20 mg daily since March 2018, presents to the hospital in September 2018 with a several-week history of pyrexia, fatigue, and progressive abdominal distension. His medical history is notable for successfully resected bladder cancer, hypertension, dyslipidemia, subclinical nonspecific interstitial pneumonia, and a solitary ascending colon adenocarcinoma alongside benign-appearing peritoneal nodules resected laparoscopically three months prior. On physical examination, he appears chronically ill and febrile with marked abdominal distension, shifting dullness, and diffuse abdominal discomfort. Laboratory testing reveals a leukocyte count of 10.2 x 10^9/L (83% neutrophils, 8% lymphocytes, 7% monocytes, 1% eosinophils, 1% basophils), marked thrombocytosis of 789 x 10^9/L, and normocytic anemia with hemoglobin of 11.5 g/dL. Serum C-reactive protein is elevated at 15.0 mg/dL, and lactate dehydrogenase is 296 U/L. An interferon-gamma release assay is negative. Contrast-enhanced computed tomography of the abdomen and pelvis shows abnormal diffuse peritoneal thickening accompanied by massive ascites.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Peritoneal carcinomatosis / metastatic recurrence of colon adenocarcinoma",
+      "rule_out_reason": "Diffuse peritoneal thickening and massive ascites in a patient with recently resected colon adenocarcinoma raised primary concern for metastatic peritoneal carcinomatosis, but diagnostic paracentesis revealed an exudative mononuclear effusion with total absence of neoplastic cells.",
+      "quote": "Abdominal paracentesis revealed the presence of exudative ascites containing 1.21x109 cells/L of mononuclear cells and 0.71x109 cells/L of lobulated neutrophils without neoplastic cells."
+    },
+    {
+      "candidate": "Atypical / non-tuberculous mycobacterial peritonitis",
+      "rule_out_reason": "In the setting of targeted immunosuppression from the JAK inhibitor ruxolitinib, opportunistic non-tuberculous mycobacterial peritonitis was evaluated, but specific atypical mycobacterial PCR was negative and culture exclusively isolated Mycobacterium tuberculosis.",
+      "quote": "while PCR for MTB or atypical mycobacteria was negative... Finally, a mycobacterial culture of ascites yielded MTB colonies after 50 days of culture"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Ascitic fluid analysis revealed a markedly elevated adenosine deaminase (ADA) level of 57.5 U/L (normal threshold ≤36.0 U/L), which alongside prior surgical findings of necrotic epithelioid granulomas prompted anti-tuberculous therapy, definitively confirmed after 50 days by positive mycobacterial ascites culture.",
+      "quote": "Further work-up of ascites disclosed an elevated level of adenosine deaminase (ADA) to 57.5 U/L (-36.0 U/L)... Finally, a mycobacterial culture of ascites yielded MTB colonies after 50 days of culture, which led to the definitive diagnosis of tuberculosis peritonitis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Targeted kinase inhibitors such as ruxolitinib (JAK1/2 inhibitor) impair cell-mediated immunity and interferon signaling, predisposing patients to reactivation of latent tuberculosis even when baseline IGRA screens are negative. Tuberculous peritonitis can closely mimic peritoneal carcinomatosis in cancer survivors, making ascitic fluid ADA quantification and prolonged mycobacterial culture indispensable."
+}

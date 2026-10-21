@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5394413_01",
+  "disease": "Melioidosis",
+  "think": "1. Core Clinical Tension: A 54-year-old agricultural worker from Thailand presents with a 1-month history of fever, right upper quadrant pain, cholestatic jaundice, leukocytosis, and newly unmasked severe diabetes mellitus (HbA1c 12.8%). CT reveals multiple small liver abscesses accompanied by left portal vein thrombosis and cavernous transformation. The clinical challenge is distinguishing between regional opportunistic infections (amebic vs. pyogenic vs. melioidosis) and malignant portal vein thrombosis with secondary cholangitis.\n2. Admission Breakpoint: Admission triage ends following physical examination, baseline laboratory evaluation (leukocytosis, marked cholestatic jaundice, new hyperglycemia with HbA1c 12.8%, normal coagulation profile), clear chest radiograph, and abdominal CT demonstrating multiple hepatic microabscesses and left portal vein thrombosis with cavernous transformation. It stops strictly before blood culture organism identification returns.\n3. Differential Distinctions: Amebic liver abscess typically produces a solitary large right-lobe cavity without portal venous thrombosis, occurring mainly in young males. Typical pyogenic pylephlebitis (from E. coli or K. pneumoniae) usually stems from overt intra-abdominal suppurative foci (such as acute diverticulitis or appendicitis). In contrast, Burkholderia pseudomallei is an endemic soil/water saprophyte with a strong predilection for diabetic hosts, causing multi-focal microabscesses ('necklace sign') and septic vascular thromboses.",
+  "case_prompt": "A 54-year-old Thai agricultural worker residing in Nakhon Si Thammarat presented to the emergency department with a 1-month history of persistent fever and right upper abdominal pain. He had no known past medical or surgical history, and had no prior diagnosis of diabetes or immune compromise. Prior to presentation, he had received multiple empiric courses of oral antibiotics and antipyretics from local outpatient clinics without symptom relief.\n\nOn arrival, the patient was febrile, icteric, and visibly dehydrated. Vital signs included a body temperature of 38.9°C, blood pressure of 100/70 mmHg, pulse rate of 110 beats per minute, and respiratory rate of 30 breaths per minute. Physical examination revealed mild hepatomegaly on abdominal palpation, with tenderness in the right upper quadrant. Cardiovascular and respiratory examinations were normal.\n\nLaboratory investigations revealed a leukocytosis of 16,700 cells/mm3 with 80% segmented neutrophils. Serum chemistry revealed a fasting blood glucose of 202 mg/dL and a glycosylated hemoglobin (HbA1c) of 12.8%. Liver function tests demonstrated a marked cholestatic picture: total bilirubin was 4.74 mg/dL, direct bilirubin was 3.49 mg/dL, and alkaline phosphatase was 553 U/L, with an AST of 27 U/L and an ALT of 39 U/L. Serum total protein and albumin were 7.2 g/dL and 3.6 g/dL, respectively. Coagulation studies (prothrombin time and INR) were within normal limits. A plain chest radiograph was unremarkable, with no pulmonary infiltrates or nodules. Contrast-enhanced computed tomography (CT) of the abdomen demonstrated multiple small liver abscesses, left portal vein thrombosis with cavernous transformation of the portal vein, gallbladder wall congestion, and a periportal halo, with a normal spleen and pancreas.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Amebic liver abscess",
+      "rule_out_reason": "Considered because of a 1-month history of fever, right upper quadrant pain, and hepatomegaly in a tropical endemic area. Ruled out because amebiasis typically presents as large solitary or confluent cavity lesions rather than multiple scattered microabscesses complicated by portal vein thrombosis, and blood cultures yielded Burkholderia pseudomallei.",
+      "quote": "His CT study showed multiple small liver abscesses, left portal vein thrombosis, and cavernous transformation of the portal vein (Figures 1 and 2)... Blood culture results showed Burkholderia pseudomallei."
+    },
+    {
+      "candidate": "Typical enteric pyogenic liver abscess / pylephlebitis",
+      "rule_out_reason": "Considered because of suppurative pylephlebitis with portal vein thrombosis and jaundice in a patient with severe uncontrolled diabetes mellitus. Excluded by the lack of an identifiable gastrointestinal luminal source (e.g., appendicitis or diverticulitis) and microbiological isolation of Burkholderia pseudomallei.",
+      "quote": "His pancreas and spleen appeared normal. Gallbladder wall congestion and periportal halo were also noted (Figure 3)... Blood culture results showed Burkholderia pseudomallei."
+    },
+    {
+      "candidate": "Hepatobiliary malignancy with vascular invasion",
+      "rule_out_reason": "Considered given the 1-month subacute duration, marked alkaline phosphatase elevation, and chronic-appearing portal vein obstruction with cavernous transformation. Excluded by the acute septic clinical presentation, lack of a focal neoplastic parenchyma lesion, complete recanalization following targeted antimicrobial and anticoagulant therapy, and blood cultures positive for Burkholderia pseudomallei.",
+      "quote": "His CT study showed multiple small liver abscesses, left portal vein thrombosis, and cavernous transformation of the portal vein (Figures 1 and 2)... A follow-up CT scan was done after 8 weeks of treatment, showing a completely recanalized left portal vein."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Isolation of Burkholderia pseudomallei in blood culture from a newly diagnosed diabetic farmer in Thailand presenting with multiple small hepatic microabscesses and left portal vein thrombosis with cavernous transformation, establishing the diagnosis of systemic melioidosis complicated by septic pylephlebitis.",
+      "quote": "Blood culture results showed Burkholderia pseudomallei... His CT study showed multiple small liver abscesses, left portal vein thrombosis, and cavernous transformation of the portal vein (Figures 1 and 2)... The treatment comprised an initial 2-week acute-phase intravenous therapy consisting of ceftazidime and metronidazole, followed by oral amoxicillin-clavulanic acid for 12 weeks, in addition to anticoagulants"
+    }
+  ],
+  "final_diagnosis": "Melioidosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "The case prompt rigorously adheres to admission triage: stops immediately prior to blood culture results without revealing Burkholderia. Differential diagnoses thoroughly evaluate amebic abscess, enteric pyogenic pylephlebitis, and hepatobiliary malignancy with exact quotations."
+}

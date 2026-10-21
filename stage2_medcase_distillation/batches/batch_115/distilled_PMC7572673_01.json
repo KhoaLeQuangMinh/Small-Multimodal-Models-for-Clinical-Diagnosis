@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7572673_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 66-year-old German woman on chronic immunosuppressive therapy with methotrexate and adalimumab presents in a non-endemic European setting with progressive nasal obstruction and an ulcerative septal lesion, mimicking autoimmune midline destructive granuloma (granulomatosis with polyangiitis) or sinonasal malignancy, which actually represented mucosal leishmaniasis reactivating years after resolving cutaneous disease acquired in Mallorca.\n2. Admission Breakpoint: Admission triage terminates after history of present illness, past immunosuppressive history for rheumatoid arthritis, remote travel history, and physical examination identifying the nodular and ulcerative nasal septal lesion, strictly before nasal endoscopic biopsy histopathology and molecular PCR testing.\n3. Differential Distinctions: Granulomatosis with polyangiitis (GPA) and other autoimmune destructive midline lesions are primary look-alikes given the patient's active rheumatoid arthritis and anti-TNF therapy, but are ruled out by histopathology showing intracellular amastigotes; localized cutaneous recurrence is ruled out by deep endonasal mucosal destructive involvement; Leishmania infantum DNA PCR confirmed mucocutaneous leishmaniasis.",
+  "case_prompt": "A 66-year-old German woman presents to a university hospital otorhinolaryngology clinic with progressive nasal obstruction. Her past medical history is notable for hypothyroidism and rheumatoid arthritis, for which she received continuous immunosuppressive therapy including methotrexate and an anti-TNF-blocker (adalimumab) initiated several years ago. Travel history includes a trip to Mallorca five years prior, after which she was treated with a 4-week course of intravenous amphotericin B for a localized cutaneous lesion on the left elbow.\n\nOn physical examination, anterior rhinoscopy reveals a prominent nodular and ulcerative lesion situated on the nasal septum. No other systemic cutaneous lesions or acute distress are noted.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Granulomatosis with Polyangiitis (GPA) / Autoimmune Midline Destructive Lesion",
+      "rule_out_reason": "Considered as a primary differential given the patient's known severe autoimmune history (rheumatoid arthritis) and destructive septal ulceration under biologic therapy, but ruled out by histopathology demonstrating intracellular parasites rather than vasculitis.",
+      "quote": "The medical history includes hypothyroidism and rheumatoid arthritis for which she was under continuous immunosuppressive treatment with methotrexate and anti-TNF-blocker (Humira ) several years ago."
+    },
+    {
+      "candidate": "Isolated Cutaneous Recurrence",
+      "rule_out_reason": "Distinguished from simple cutaneous recurrence because the patient had previously received definitive treatment for her elbow lesion and now presented with aggressive endonasal mucosal tissue destruction.",
+      "quote": "Moreover, she was treated for cutaneous leishmaniasis in the left elbow after a travel history in Mallorca five years ago (4 weeks, amphotericin B)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Biopsy of the nasal septal lesion revealed chronic inflammation, necrosis, and intracellular amastigotes, with molecular PCR confirming Leishmania infantum DNA, establishing mucocutaneous leishmaniasis.",
+      "quote": "Histology of the left nasal septum biopsy revealed necrosis, chronic inflammation and intracellular amastigote that was suggestive of leishmaniasis (Figure 1). The molecular-pathological detection of parasite DNA was positive for leishmania infantum."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7572673. The prompt isolates admission presentation and examination (nodular ulcerative septal lesion, immunosuppressive medications, travel history) without naming the pathogen or prior diagnosis. Confirmatory biopsy histology and molecular DNA detection are preserved for diagnostic reasoning."
+}

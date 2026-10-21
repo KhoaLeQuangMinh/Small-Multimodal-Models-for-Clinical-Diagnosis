@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8047292_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 47-year-old man presents with acute, vision-threatening orbital cellulitis and a subperiosteal abscess accompanied by an odontogenic fistula. The core tension is recognizing that the acute facial and orbital infection is not merely an extension of chronic dental disease, but a manifestation occurring in the background of chronic pulmonary infection signified by long-standing hemoptysis.\n2. Admission Breakpoint: The breakpoint occurs at initial emergency room triage and evaluation, including ophthalmic examination, CT scanning confirming orbital cellulitis with subperiosteal abscess, and baseline blood work (leukocytosis, high ESR), right before incision and drainage cultures and subsequent sputum acid-fast smear testing.\n3. Differential Distinctions: Isolated pyogenic odontogenic orbital cellulitis is excluded by persistent fevers, active purulence, and chronic hemoptysis despite surgical drainage and standard IV ceftriaxone/metronidazole. ESBL bacterial superinfection alone fails to account for chronic 5-month pulmonary symptoms. Definitive diagnosis of underlying tuberculosis is confirmed by Ziehl-Neelsen staining demonstrating acid-fast bacilli and prompt clinical cure upon fixed-dose anti-tuberculosis therapy.",
+  "case_prompt": "A 47-year-old man presented to the emergency department with severe swelling and pain involving his right eye and right side of his face that had been progressively worsening over the preceding eight days. Three days prior to presentation, the facial swelling expanded rapidly and spontaneous purulent drainage developed. He reported a history of chronic toothache dating back two years, as well as an intermittent cough productive of blood over the past five months. There was no history of facial or ocular trauma.\n\nOn physical examination, the patient was drowsy, noticeably pale, and febrile. Ophthalmic examination of the right eye revealed visual acuity reduced to light perception only, with marked limitation of extraocular movements in all fields of gaze. There was prominent non-axial proptosis, profound edema of the upper and lower eyelids with active purulent discharge, conjunctival chemosis, purulent exudate on the bulbar conjunctiva, and cornea haziness. Intraoral examination revealed an active fistulous tract extending from the right mandible to the inner buccal mucosa that discharged pus.\n\nLaboratory investigations demonstrated significant leukocytosis and a markedly elevated erythrocyte sedimentation rate (ESR). Emergent computed tomography (CT) of the orbits revealed extensive soft tissue swelling involving the right orbit and a subperiosteal abscess along the upper lateral orbital wall.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Odontogenic Bacterial Orbital Cellulitis",
+      "rule_out_reason": "Considered the primary initial diagnosis given the 2-year history of severe toothache and an active mandibular fistulous tract releasing pus; ruled out as the solitary etiology because the patient failed standard broad-spectrum cephalosporin and nitroimidazole therapy and harbored chronic pulmonary symptoms.",
+      "quote": "On 3rd day of treatment, patient still had fever, cough, swelling on the right eye and face with active pus production."
+    },
+    {
+      "candidate": "Isolated Enteric / Opportunistic Bacterial Orbital Superinfection",
+      "rule_out_reason": "Considered due to isolation of ESBL-producing Escherichia coli and Staphylococcus cohnii from the orbital drainage; ruled out as the primary systemic driver because it could not explain the 5-month bloody cough, which proved to be active pulmonary disease.",
+      "quote": "On the 5th day, the culture of the pus was confirmed using identification (ID) and antimicrobial susceptibility testing (AST), BD Phoenix (BD Diagnostic Systems, Sparks, MD) as extended spectrum beta-lactamases (ESBLs) producing Escherichia coli and Staphylococcus cohnii ssp urealyticum with susceptibility to ampicilin-sulbactam."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Re-evaluation of the chronic bloody cough leading to chest radiography and sputum Ziehl-Neelsen smear microscopy, which demonstrated acid-fast bacilli and prompt resolution upon antitubercular fixed-dose combination therapy.",
+      "quote": "Ziehl-Neelson staining test (fig 3) revealed acid fast bacillus with pulmonary inflammation highly pathognomonic of tuberculosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint. Sputum AFB and pus cultures excluded from prompt. Zero pathogen spoilers."
+}

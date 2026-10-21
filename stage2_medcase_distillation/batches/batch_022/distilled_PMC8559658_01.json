@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8559658_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 40-year-old male smoker from the Middle East presents with a 2-month history of cough, dyspnea, focal crackles, and chest imaging demonstrating bronchiectasis with left lower lobe collapse. While initial expectorated sputum and QuantiFERON are negative, and his later clinical trajectory is further complicated by the emergence of a primary cardiac angiosarcoma presenting as pericardial effusion, his initial pulmonary destruction represents active mycobacterial infection.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following initial triage examination, chest radiography, and thoracic CT scan showing left lower lobe collapse and bronchiectasis, strictly prior to flexible bronchoscopy, bronchoalveolar lavage staining, and longitudinal cardiovascular investigations.\n3. Differential Distinctions: Pulmonary thromboembolism was evaluated due to elevated D-dimer and progressive shortness of breath, but ruled out by pulmonary CT angiography. Constrictive tuberculous pericarditis was suspected when pericardial effusion and dyspnea arose, but excluded hemodynamically by echocardiography and cardiac MRI. The pulmonary collapse and bronchiectasis in this endemic setting are established as pulmonary tuberculosis by positive acid-fast bacilli staining on bronchoalveolar lavage.",
+  "case_prompt": "A 40-year-old male smoker with no prior medical or family history presents with a 2-month history of progressive dyspnea and cough. He is a resident of the Middle East and reports no alcohol intake.\n\nOn physical examination, vital signs are within normal limits. Auscultation of the respiratory system reveals crackles localized to the base of the left lung; cardiac examination and the remainder of the physical examination are unremarkable.\n\nA plain chest radiograph and chest computed tomography (CT) scan reveal evidence of bronchiectasis and complete collapse (atelectasis) of the left lower lung lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Thromboembolism",
+      "rule_out_reason": "Pulmonary embolism was evaluated during the patient's subacute course due to refractory dyspnea and an elevated D-dimer, but was excluded by contrast pulmonary angiography.",
+      "quote": "D-dimer was requested for the patient which was reported to be high. Pulmonary computed tomography angiography was done for the patient which showed no evidence of pulmonary embolism (figure 1B)."
+    },
+    {
+      "candidate": "Constrictive Pericarditis / Pure Tuberculous Pericardial Disease",
+      "rule_out_reason": "Pericardial constriction was considered following the development of progressive pericardial effusion and dyspnea, but echocardiography and cardiac MRI confirmed normal hemodynamics and ultimately unveiled an intracardiac mass.",
+      "quote": "There was no evidence for constrictive pericarditis on echocardiography... CMR showed a non-homogenous mass around RA and RA appendage with a size of 64x14mm (figure 3 and supplementary video file 2). There was mild pericardial thickening without hemodynamic evidence for constrictive pericarditis."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Tuberculosis",
+      "rule_out_reason": "The subacute respiratory illness with lobar atelectasis and bronchiectasis in a patient from an endemic region was confirmed by positive acid-fast bacilli staining on bronchoalveolar lavage fluid despite initial negative sputum.",
+      "quote": "Sputum evaluation for mycobacterium tuberculosis was negative and bronchoscopy and bronchoalveolar lavage were done for the patient and the pathology revealed positive Ziehl-Neelsen staining for TB but negative QuantiFERON. Considering the clinical setting and high probability of tuberculosis, treatment with anti-TB medications was started for the patient."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case presentation halts at initial triage imaging of lobar collapse, excluding bronchoscopic pathology and subsequent oncologic findings."
+}

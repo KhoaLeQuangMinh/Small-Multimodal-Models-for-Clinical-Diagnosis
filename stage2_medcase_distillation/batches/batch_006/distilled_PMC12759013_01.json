@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC12759013_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 28-year-old woman with a documented history of treated pulmonary infection presents with acute copious hemoptysis, pleuritic chest pain, and a solitary pulmonary mass. In an endemic setting, the clinical picture overwhelmingly favors disease reactivation or fungal ball colonization within a pre-existing cavity, obscuring the alternative diagnosis of an isolated pulmonary hydatid cyst.\n2. Admission Breakpoint: The breakpoint occurs following initial emergency triage, respiratory stabilization, baseline laboratory investigations, and plain chest radiography demonstrating the right-sided mass, prior to chest CT cross-sectional imaging and sputum microbiological testing (AFB smear and KOH exam).\n3. Differential Distinctions: Reactivation of pulmonary tuberculosis was the primary clinical suspicion given prior medical history, hemoptysis, and solitary mass, but sputum acid-fast bacilli staining was repeatedly negative. Pulmonary fungal disease (aspergilloma/mycetoma) was suspected due to yeast cells on sputum KOH preparation, but represented non-pathogenic colonization rather than an invasive fungal mass. Pulmonary neoplasm was ruled out by characteristic multiloculated/cystic features on chest CT and response to antiparasitic therapy.",
+  "case_prompt": "A 28-year-old female, a permanent resident of Peshawar, presented to the Emergency Department in February 2025 with complaints of shortness of breath on moderate exertion, cough, and copious hemoptysis for the past 3–4 days. The cough was initially dry but subsequently became productive of fresh blood with each coughing episode. She also reported right-sided chest pain that worsened when lying flat. Family history and psychosocial history were non-contributory. Her past medical history was notable for a pulmonary infection diagnosed in 2022, for which she completed a full curative medical regimen in 2023.\n\nOn presentation:\n- Vital signs: oxygen saturation 94% on room air, respiratory rate 34 breaths/min, pulse rate 86 beats/min, body temperature 99°F (37.2°C), blood pressure 125/80 mmHg.\n- Physical examination: alert and oriented without cyanosis. Breath sounds were decreased over the right hemithorax.\n\nInitial triage and laboratory evaluation:\n- Complete blood count: total leukocyte count 7.68 × 10^3/µL (neutrophils 70%, eosinophils 2%), hemoglobin 12.2 g/dL\n- Liver function tests, renal function tests, serum electrolytes, coagulation profile, and urinalysis were all within normal limits\n- Arterial blood gas analysis showed no abnormalities\n\nInitial radiological evaluation:\n- Chest radiograph demonstrated a well-defined mass on the right side of the chest.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Reactivation of pulmonary tuberculosis",
+      "rule_out_reason": "Considered the primary suspect given the patient's previous treated pulmonary history, prominent hemoptysis, and focal lung mass, but ruled out by negative sputum acid-fast bacilli smears.",
+      "quote": "Sputum was sent for acid-fast bacilli (AFB) to evaluate for possible reactivation of tuberculosis; the results were negative with no growth of acid-fast bacilli."
+    },
+    {
+      "candidate": "Pulmonary fungal infection / Mycetoma",
+      "rule_out_reason": "Considered when sputum KOH examination demonstrated fungal yeast cells, but this represented non-invasive airway colonization rather than a primary fungal cavity or mycetoma.",
+      "quote": "However, fungal screening of the sputum using KOH preparation revealed yeast cells... The main challenge was distinguishing between TB reactivation and other causes of hemoptysis and pulmonary mass, particularly as sputum AFB was negative. Identification of fungal elements and confirmation of hydatid cysts required additional testing."
+    },
+    {
+      "candidate": "Pulmonary neoplasm",
+      "rule_out_reason": "Considered in the differential of a well-defined solitary pulmonary mass presenting with hemoptysis and chest pain, but excluded based on distinctive cystic radiological characteristics on cross-sectional imaging.",
+      "quote": "Based on these findings, the working diagnosis was a pulmonary hydatid cyst, with differential diagnoses including reactivation of pulmonary tuberculosis, fungal infection, and pulmonary neoplasm."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Subsequent chest CT imaging established the definitive features of a pulmonary hydatid cyst, leading to targeted antiparasitic therapy with albendazole and resolution of respiratory symptoms.",
+      "quote": "A subsequent chest CT scan was consistent with the presence of a hydatid cyst, as shown in Figure 2a,b... Following sputum fungal identification and imaging, albendazole was started for the hydatid cyst, alongside antibiotics to treat secondary infection."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Prior tuberculosis history generalized to avoid pathogen spoilers. All quotes verbatim verified."
+}

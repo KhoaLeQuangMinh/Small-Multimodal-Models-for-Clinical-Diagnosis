@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3245499_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 8-year-old girl with type 1 diabetes presented with classical diabetic ketoacidosis (DKA) accompanied by marked leukocytosis and lethargy. The profound metabolic disturbance initially masked an underlying central nervous system infection; persistent neurological depression and new diabetes insipidus after metabolic correction triggered advanced neuroimaging that uncovered intracranial tuberculomas.\n2. Admission Breakpoint: The presentation halts following admission triage evaluation, vital signs, physical exam, and initial laboratory results (venous blood gas, CBC, metabolic panel, urinalysis). It stops before initiation of DKA protocols, subsequent development of bradycardia/stupor, cranial imaging, and lumbar puncture.\n3. Differential Distinctions: Severe uncomplicated DKA with metabolic encephalopathy or osmotic cerebral edema was initially suspected, but refuted by persistent coma and development of diabetes insipidus despite complete biochemical normalization. Acute pyogenic bacterial meningitis was considered given extreme leukocytosis with left shift, but ruled out by lack of meningismus and CSF profile demonstrating low cell count with acid-fast bacilli on smear rather than neutrophilic pleocytosis.",
+  "case_prompt": "An 8-year-old girl with type 1 diabetes mellitus (diagnosed three years prior and maintained on a four-times-daily insulin regimen) presented with a 24-hour history of fever, nausea, persistent vomiting, anorexia, headache, and progressive lethargy. There was no past history of seizures or prior neurological disorders. Her immunization history revealed that she had not received the Bacillus Calmette–Guérin (BCG) vaccine.\n\nOn physical examination, she had a body temperature of 38.1°C, a pulse rate of 112 beats per minute, and a respiratory rate of 30 breaths per minute. She exhibited deep, rapid Kussmaul respirations and signs of mild dehydration. Neurological evaluation revealed lethargy alternating with marked irritability; cranial nerves were intact, and there were no signs of nuchal rigidity or meningeal irritation.\n\nTriage laboratory findings were notable for a hemoglobin of 15.5 g/dL and a marked leukocytosis of 36,100/µL with a left shift and toxic granulations in neutrophils. The serum C-reactive protein (CRP) level was 5 mg/dL. Point-of-care and venous blood glucose was markedly elevated at 444 mg/dL. Venous blood gas analysis demonstrated severe metabolic acidosis with a pH of 7.19. Serum chemistry revealed blood urea nitrogen (BUN) 16 mg/dL, creatinine 0.86 mg/dL, sodium 124 mmol/L, potassium 3.6 mmol/L, chloride 102 mmol/L, and calculated serum osmolarity of 312 mOsm/kg. Hemoglobin A1c was 8.1%. Urinalysis revealed strongly positive glycosuria and heavy ketonuria.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Diabetic Ketoacidosis Encephalopathy / Osmotic Cerebral Edema",
+      "rule_out_reason": "Considered the primary culprit given hyperglycemia, metabolic acidosis, ketonuria, and lethargy; ruled out as the sole etiology when neurological deterioration progressed to stupor and diabetes insipidus emerged despite full metabolic correction with insulin and fluids.",
+      "quote": "With treatment, the metabolic parameters became normal, but the neurological status was not improved."
+    },
+    {
+      "candidate": "Acute Pyogenic Meningitis",
+      "rule_out_reason": "Considered due to high fever, severe peripheral leukocytosis (36,100/µL) with toxic granulations, elevated CRP, and altered consciousness; ruled out by absence of nuchal rigidity on admission and cerebrospinal fluid analysis lacking prominent neutrophilic pleocytosis.",
+      "quote": "There were no signs of meningeal irritation... In the cerebrospinal fluid (CSF) examination, glucose level was 129 mg/dL, protein: 44 mg/dL, and leukocyte count was 3 ([i][/i]2 lymphocytes, 1 polymorphonuclear leukocyte)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Brain magnetic resonance imaging revealed parenchymal and basilar meningeal lesions consistent with tuberculomas, and subsequent lumbar puncture demonstrated acid-fast bacilli on smear, confirming tuberculous meningitis precipitating DKA.",
+      "quote": "Magnetic resonance imaging (MRI) was performed in order to detect any central nervous system (CNS) infection and revealed structures which were consistent with tuberculoma, such as is seen in tuberculous meningitis (Figure 1)... CSF staining demonstrated acid-fast bacilli, implying a diagnosis of tuberculosis (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict adherence to admission breakpoint. Case prompt stops at admission DKA presentation and triage labs, before clinical progression, head CT/MRI, and lumbar puncture."
+}

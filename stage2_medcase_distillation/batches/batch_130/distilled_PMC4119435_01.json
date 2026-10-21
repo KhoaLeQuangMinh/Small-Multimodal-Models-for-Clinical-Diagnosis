@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4119435_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 6-year-old previously healthy boy presents with a 3-month history of progressive headache, vomiting, and focal right hemiplegia without fever or seizures. Neuroimaging reveals a giant calcified heterogeneous lesion in the left fronto-temporo-parietal region with massive edema and mass effect, strongly mimicking a high-grade pediatric brain neoplasm.\n2. Admission Breakpoint: Admission triage concludes with physical examination, normal chest radiograph, normal baseline blood tests, and initial brain CT revealing the expansive mass lesion. Urgent craniotomy with histopathological analysis represents the confirmatory turning point.\n3. Differential Distinctions: High-grade glioma or primitive neuroectodermal tumors show invasive hypervascularity and cellular anaplasia on histology rather than a firm avascular granulomatous mass. Cerebral toxoplasmosis or lymphoma typically occur in immunocompromised patients, but the patient was immunocompetent and HIV-negative.",
+  "case_prompt": "A 6-year-old boy with no prior medical history presented with progressive headache, vomiting, and right-sided weakness developing over the preceding 3 months. There was no reported history of fever or seizures. On physical examination, he was conscious but had nuchal rigidity (stiff neck) and right hemiplegia. Baseline routine blood tests and a plain chest radiograph were completely normal. Computed tomography (CT) of the brain demonstrated a large, heterogeneous, calcified mass-like lesion in the left fronto-temporo-parietal region, characterized by irregular contrast enhancement, extensive perilesional edema, and marked mass effect.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malignant brain tumor (pediatric intracranial neoplasm)",
+      "rule_out_reason": "The large size, calcification, irregular enhancement, prominent perilesional edema, and severe mass effect initially raised high suspicion for a malignant neuroepithelial tumor, but intraoperative findings showed a firm, avascular mass with granulomatous histology.",
+      "quote": "There was a strong suspicion of malignant tumor."
+    },
+    {
+      "candidate": "HIV-associated intracranial opportunistic lesion or CNS lymphoma",
+      "rule_out_reason": "Focal mass lesions with marked surrounding vasogenic edema in endemic areas require ruling out immunosuppression-associated infections or lymphoma, but serologic screening was non-reactive.",
+      "quote": "Serological test for HIV was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Rapid neurologic deterioration dictated urgent craniotomy, where complete excision of a firm, yellowish, avascular intra-axial lesion demonstrated histopathologic features diagnostic of an intracranial tuberculoma in a child from an endemic area.",
+      "quote": "At operation there was a large intra-axial yellowish, firm, and relatively avascular lesion. Total excision of the mass was done (D). Histological features were consistent with tuberculoma."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly truncated prior to urgent surgical resection and histological verification. Zero pathogen names in presentation. Verbatim quotes match source text."
+}

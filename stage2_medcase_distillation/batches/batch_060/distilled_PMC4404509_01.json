@@ -1,0 +1,38 @@
+{
+  "case_id": "PMC4404509_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 44-year-old man presenting with chronic constitutional symptoms lasting 3 months (fever, chills, severe weight loss, night sweats, abdominal fullness) and a solitary 7-cm mass in segment VIII of the liver, in the presence of a completely normal chest radiograph. The core diagnostic challenge is distinguishing a primary or metastatic hepatic neoplasm from pyogenic or parasitic abscesses (amoebic abscess, hydatid disease) and extrapulmonary mycobacterial pseudotumor/tuberculoma in an otherwise immunocompetent patient.\n2. Admission Breakpoint: Admission triage ends following physical examination (fever of 38.7°C, cachexia, right hypochondrial knocking tenderness, and hepatomegaly), baseline blood work (markedly elevated CRP, anemia of chronic disease, severe hyponatremia of 121 mEq/L, elevated creatinine, and mild hyperbilirubinemia), normal plain chest radiography, and abdominal ultrasonography/CT identifying the 7-cm low-density hepatic lesion, immediately prior to send-out tumor markers, parasitological serologies, microbial cultures, and core needle liver biopsy.\n3. Differential Distinctions: Hepatic malignancy is the leading suspicion for a 7-cm solid/cystic liver mass with profound weight loss and cachexia, but is ruled out by negative tumor markers (AFP, CEA, CA 19-9, PSA) and biopsy showing non-neoplastic granulomas. Amoebic abscess and hydatid cyst mimic focal liver lesions but are excluded by specific negative serologies. Pyogenic liver abscess is ruled out by sterile blood/sputum cultures and negative direct microscopy of aspirate. Extrapulmonary primary hepatic tuberculosis is confirmed by biopsy demonstrating Langhans giant cell granulomatous inflammation with radiographic resolution on antituberculous therapy.",
+  "case_prompt": "A 44-year-old man with a history of gastroesophageal reflux disease presents to the emergency department with a 3-month history of intermittent fever, chills, night sweats, poor appetite, abdominal fullness, and profound involuntary weight loss of 11 kg over the past month. He had received outpatient oral antibiotics without symptomatic relief.\n\nOn physical examination, he appears mildly cachectic and pyrexial with a temperature of 38.7°C, heart rate of 91 beats/min, blood pressure of 135/89 mmHg, respiratory rate of 18 breaths/min, and oxygen saturation of 100% on ambient air. Abdominal examination demonstrates mild right hypochondrial knocking tenderness and marked hepatomegaly, without splenomegaly, palpable gallbladder, or peripheral lymphadenopathy. Examination of the conjunctivae shows no icterus.\n\nBaseline laboratory testing demonstrates an elevated C-reactive protein of 152 mg/L (reference range <10), elevated erythrocyte sedimentation rate, marked hyponatremia of 121 mEq/L (reference range 135–145), serum potassium of 4.16 mEq/L (reference range 3.5–5.0), white blood cell count of 8,500/µL (reference range 3,500–9,100), hemoglobin of 10.9 g/dL (reference range 13.5–18.0), platelet count of 280,000/µL, aspartate aminotransferase of 18 IU/L, alanine aminotransferase of 25 IU/L, total bilirubin of 2.2 mg/dL (reference range 0.2–1.0), serum creatinine of 3.2 mg/dL (reference range 0.6–1.5), and blood urea nitrogen of 21 mg/dL. Prothrombin time is normal. A plain chest radiograph is normal.\n\nAbdominal ultrasound reveals marked hepatomegaly with an ill-defined 7-cm mass in hepatic subsegment VIII containing hypoechoic and hyperechoic components, without ascites or adenopathy. Contrast-enhanced abdominal CT confirms a 7-cm low-density lesion in segment VIII showing varying fat attenuation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary or Metastatic Hepatic Malignancy",
+      "rule_out_reason": "Considered the primary diagnosis given severe cachexia, constitutional decline, and a solitary 7-cm solid liver lesion, but excluded by negative serum oncologic biomarkers (CEA, CA 19-9, AFP, PSA) and absence of neoplastic cells on histopathology.",
+      "quote": "Further evaluations, including tests for human immunodeficiency virus, carcinoembryonic antigen, cancer antigen 19-9, alpha-fetoprotein, prostate-specific antigen, serologic diagnosis of hydatid disease and amoebic hemagglutination were all negative."
+    },
+    {
+      "candidate": "Hepatic Hydatid Disease (Echinococcosis)",
+      "rule_out_reason": "Considered due to the large focal hepatic mass in an adult male, but excluded by negative hydatid serological evaluation.",
+      "quote": "serologic diagnosis of hydatid disease and amoebic hemagglutination were all negative."
+    },
+    {
+      "candidate": "Amoebic Liver Abscess",
+      "rule_out_reason": "Considered in a patient with chronic fevers, right upper quadrant knocking pain, and solitary liver mass, but ruled out by negative amoebic hemagglutination serology.",
+      "quote": "serologic diagnosis of hydatid disease and amoebic hemagglutination were all negative."
+    },
+    {
+      "candidate": "Pyogenic Bacterial Liver Abscess",
+      "rule_out_reason": "Considered given fever, chills, right hypochondrial tenderness, and hepatic space-occupying lesion, but ruled out by sterile blood/sputum cultures and absence of bacteria on direct examination of aspirate exudates.",
+      "quote": "Several sets of blood and sputum cultures were negative for bacteria, fungus, and acid-fast bacilli. Abdominal ultrasound revealed marked hepatomegaly with a tumor with an unclear border in the VIII subsegment of the liver consisting partially of hypoechoic mass, with the hyperechoic area measuring 7 cm. No ascites or adenopathy was seen. Similarly, Abdominal computed tomography (CT) revealed a low-density lesion approximately 7 cm in diameter at the SVIII segment, showing various fat concentrations. Chest X-ray examination was normal (Figure 1, Figure 2). Therefore, we scheduled a liver biopsy in order to rule out malignancy and to have a definitive diagnosis. The direct appreciation of the exudates did not reveal bacteria"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological evaluation of the liver biopsy revealed chronic granulomatous inflammation with Langhans giant cells consistent with tuberculoma, resulting in complete resolution upon administration of antituberculosis chemotherapy.",
+      "quote": "histological study suggested an inflammatory pseudotumor with Langerhans giant cells and without caseous necrosis. Anti-TB medications including isoniazid, rifampin, ethambutol, and pyrazinamide were administered accordingly."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Vignette restricted to initial presentation (3-month fever, severe weight loss, abdominal pain, triage labs with hyponatremia/creatinine/CRP, normal CXR, and abdominal ultrasound/CT showing 7 cm segment VIII mass) strictly before tumor markers, serologies, cultures, or liver biopsy. Zero pathogen or disease spoilers in case_prompt. Direct verbatim quotes provided for all differential candidates and diagnostic pivot."
+}

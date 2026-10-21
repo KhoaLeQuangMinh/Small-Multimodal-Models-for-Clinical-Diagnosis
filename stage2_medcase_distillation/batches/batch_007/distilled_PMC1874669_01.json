@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC1874669_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 55-year-old postmenopausal woman presents with one month of painless vaginal bleeding with passage of clots and an enlarged uterus with a heterogeneous, irregular endometrial lining on pelvic ultrasound. In a postmenopausal patient, this clinical picture classic for endometrial carcinoma or endometrial hyperplasia masks an unexpected granulomatous infection of the female genital tract.\n2. Admission Breakpoint: The admission breakpoint concludes after gynecological history, physical and bimanual pelvic examination, routine hematologic and biochemical laboratory testing, and initial transvaginal pelvic ultrasonography. Endometrial curettage/biopsy, histopathologic evaluation, and paraffin-embedded tissue PCR represent the confirmatory stage.\n3. Differential Distinctions: Endometrial adenocarcinoma is the predominant concern in postmenopausal bleeding with an abnormal ultrasound echo pattern, but endometrial curettage revealed epithelioid cell granulomas and Langhans giant cells with no malignant epithelial changes. Active pulmonary tuberculosis was considered, but chest radiography showed normal lung fields without infiltrates or apical scarring, indicating isolated pelvic genital involvement.",
+  "case_prompt": "A 55-year-old postmenopausal woman (gravida 5, para 5), who reached menopause 3 years ago, presents with irregular vaginal bleeding with the passage of blood clots for the past month. She reports no pelvic or abdominal pain, foul-smelling vaginal discharge, postcoital bleeding, fever, weight loss, or anorexia. Her medical history is unremarkable, with no personal or family history of gynecological or other malignancies. She reports no history of cigarette smoking, alcohol consumption, oral contraceptive use, or hormone replacement therapy.\n\nOn physical examination, her vital signs are normal, and general systemic examination is unremarkable without peripheral lymphadenopathy or abdominal masses. Speculum examination demonstrates normal vaginal mucosa with active bleeding issuing from the cervical os. Bimanual pelvic examination reveals an anteverted, non-tender uterus enlarged to 8 to 10 weeks gestational size, with bilateral adnexal fornices clear and free of masses.\n\nTransvaginal pelvic ultrasonography demonstrates an anteverted uterus with a grossly abnormal endometrial echo pattern, showing heterogeneous echogenicity and an irregular endometrial surface.\n\nRoutine complete blood count, basic metabolic panel, and biochemical investigations are within normal limits. Serologic testing for viral hepatitis and human immunodeficiency virus (HIV) is negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Endometrial carcinoma or endometrial hyperplasia",
+      "rule_out_reason": "Primary initial suspicion given postmenopausal vaginal bleeding, uterine enlargement, and an irregular, heterogeneous endometrial echo pattern on pelvic ultrasound; excluded by endometrial biopsy demonstrating granulomatous inflammation rather than malignant neoplastic tissue.",
+      "quote": "Histopathology of the curettings showed epithelioid cell granulomas with Langhans giant cells (Figure 2)."
+    },
+    {
+      "candidate": "Active pulmonary tuberculosis with pelvic dissemination",
+      "rule_out_reason": "Considered once granulomatous inflammation was detected, but chest radiography showed no parenchymal pulmonary lesions or cavitation.",
+      "quote": "A chest X-ray showed mild cardiomegaly but no evidence of pulmonary tuberculosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endometrial curettage demonstrated epithelioid cell granulomas with Langhans giant cells, and polymerase chain reaction (PCR) performed on endometrial tissue confirmed Mycobacterium tuberculosis DNA, corroborated by an elevated erythrocyte sedimentation rate (77 mm/h) and a strongly positive Mantoux skin test (32 mm).",
+      "quote": "PCR was positive for  Mycobacterium tuberculosis in the endometrium. Other tests for tuberculosis, namely, Mantoux was positive at 32mm and ESR was 77mm."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation cleanly ends before invasive endometrial curettage and histopathology. No pathogen or tuberculosis hints in the prompt. Quotes are exact matches from the text."
+}

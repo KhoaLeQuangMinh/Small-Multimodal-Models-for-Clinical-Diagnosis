@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC4085892_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 90-year-old female farmer from a rural region presents with one month of right upper quadrant abdominal pain and normal routine blood counts. A plain chest radiograph unexpectedly reveals a large, spherical, calcified cystic lesion at the right base. The core challenge is differentiating whether this calcified mass represents an intrathoracic pulmonary lesion, a primary hepatic neoplasm, a bacterial or amebic abscess, or a slow-growing zoonotic hydatid cyst elevating the right hemidiaphragm.\n2. Admission Breakpoint: Admission triage terminates following emergency department history, physical examination, normal routine blood tests, and the initial plain chest radiograph showing the calcified ringed cyst. Confirmatory cross-sectional abdominal ultrasound and CT imaging mark the transition to definitive anatomical and etiological diagnosis.\n3. Differential Distinctions: Hepatocellular carcinoma typically manifests as a solid, vascular lesion without well-organized peripheral rim calcification. Pyogenic or amebic hepatic abscesses present with acute toxic febrile illness and leukocytosis rather than normal hematologic parameters and a dense calcified wall. Simple cysts and polycystic liver disease feature thin walls lacking curvilinear calcification.",
+  "case_prompt": "A 90-year-old woman presented to the emergency department complaining of right upper quadrant abdominal pain that began approximately one month prior. She was in good physical condition, without a history of chronic medical disease, tobacco use, or alcohol abuse. She is a farmer residing in a rural Greek district. Baseline routine blood tests were all within normal reference ranges. A triage plain chest radiograph was obtained, which demonstrated a large, spherical cystic lesion with a characteristic calcified ring around it in the right lower hemithorax, projecting from the base of the right lung.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Hepatocellular carcinoma",
+      "rule_out_reason": "Hepatocellular carcinoma typically presents as a solid, invasive vascular mass in patients with chronic liver injury, rather than a well-demarcated spherical fluid collection with dense peripheral ring calcification and normal hematology.",
+      "quote": "The differential diagnosis of liver hydatid cyst includes polycystic liver disease, hepatic abscess, hepatocellular carcinoma, hepatic and amebic cysts, but the very specific imaging findings in CT are usually enough to establish the diagnosis."
+    },
+    {
+      "candidate": "Hepatic abscess (pyogenic or amebic)",
+      "rule_out_reason": "Hepatic abscesses typically cause acute systemic illness, fever, and marked leukocytosis with irregular inflammatory cavity walls, which is inconsistent with this patient's chronic indolent course, normal blood counts, and calcified rim.",
+      "quote": "Her blood tests were all within the normal ranges, but her chest x-ray revealed a surprise at the right lower: a big, spherical cystic lesion with a characteristic calcified ring around it, coming out of the right lung."
+    },
+    {
+      "candidate": "Polycystic liver disease and simple hepatic cysts",
+      "rule_out_reason": "Simple and polycystic liver lesions are congenital thin-walled epithelial cysts lacking heavy circumferential calcification and typical hydatid architecture.",
+      "quote": "The differential diagnosis of liver hydatid cyst includes polycystic liver disease, hepatic abscess, hepatocellular carcinoma, hepatic and amebic cysts, but the very specific imaging findings in CT are usually enough to establish the diagnosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Prompted by the serendipitous chest radiograph finding in a rural farmer, abdominal computed tomography and ultrasonography were performed, confirming the classical features of an 8.5 x 9.5 cm hydatid cyst localized to the right hepatic lobe.",
+      "quote": "In view of this finding, the patient was admitted and abdominal computer tomography (CT) and ultrasound were performed, which demonstrated the typical imaging features of an hydatid cyst (8.5 x 9.5 cm), sited at the right lobe of the liver."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly isolated to emergency presentation, routine labs, and plain radiograph prior to cross-sectional abdominal CT. Zero pathogen spoilers. Differential candidates verified with exact quotes."
+}

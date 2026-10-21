@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10926963_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 59-year-old woman presented with 1 day of mild abdominal pain, normothermia (36.6 \u00b0C), severe hypotension (75/53 mmHg), and profound hypokalemia (2.62 mmol/L), progressing precipitously to multi-organ dysfunction syndrome (MODS) with renal and hepatic failure. The absence of fever and prominence of abdominal symptoms masked the classic rickettsial toxemia, raising suspicion for acute intra-abdominal sepsis or purpura fulminans before cutaneous examination.\n2. Admission Breakpoint: Admission triage and EICU physical examination identifying small purple cutaneous lesions and a solitary eschar on the left buttock, immediately preceding blood collection for metagenomic next-generation sequencing (mNGS), quantitative PCR, and initiation of targeted doxycycline therapy.\n3. Differential Distinctions: Septic shock secondary to acute intra-abdominal infection or urosepsis (suggested by acute abdominal pain, left renal calculus, and elevated procalcitonin) and meningococcemia / acute purpura fulminans (suggested by severe coagulopathy, thrombocytopenia, and diffuse purpura). The diagnostic discriminator was the characteristic necrotic buttock eschar in an endemic region (Guangdong).",
+  "case_prompt": "A 59-year-old woman with a history of hypertension presented to the emergency department in Guangdong Province on June 26, 2022 with mild abdominal pain that had been present for 1 day. On admission, her vital signs included a blood pressure of 75/53 mmHg, a heart rate of 85 beats per minute, a body temperature of 36.6 \u00b0C, and a respiratory rate of 22 breaths per minute. Physical examination revealed small purple skin lesions distributed over her body and an eschar on her left buttock. Laboratory test results revealed a platelet count of 71 \u00d7 10^9/L, white blood cell count of 8.92 \u00d7 10^9/L, C-reactive protein of 239.10 mg/L, procalcitonin of 3.97 ng/mL, and blood lactic acid of 4.96 mmol/L. Liver function tests showed elevated alanine aminotransferase (ALT) at 178 U/L, aspartate aminotransferase (AST) at 197 U/L, total bilirubin at 23.4 \u03bcmol/L, direct bilirubin at 21.3 \u03bcmol/L, total protein at 60.0 g/L, and albumin at 33.4 g/L. Serum potassium was decreased at 2.62 mmol/L, and sodium was 128 mmol/L. Serum creatinine was elevated at 272 \u03bcmol/L, and blood urea was 10.40 mmol/L. Coagulation studies revealed a prothrombin time of 14.3 seconds, an activated partial thromboplastin time of 36.8 seconds, an international normalized ratio of 1.26, and a D-dimer of 12.64 mg/L. Computed tomography of the chest and abdomen revealed a renal calculus on the left side. Preliminary diagnoses of septic shock and multiple organ dysfunction syndrome involving the liver, kidney, circulation, and blood were made, and she was admitted to the intensive care unit.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute intra-abdominal sepsis / uroseptic shock",
+      "rule_out_reason": "Considered because of acute abdominal pain, a left renal calculus seen on computed tomography, marked lactic acidosis, and elevated procalcitonin; however, diffuse purpuric skin lesions and a solitary eschar are incompatible with uncomplicated bacterial urosepsis.",
+      "quote": "Based on the clinical history, laboratory test results, and imaging findings, preliminary diagnoses of septic shock and multiple organ dysfunction syndrome (MODS) involving the liver, kidney, circulation, blood, acute liver failure, acute kidney failure, hypertension, and electrolyte disorders (hypokalemia and hyponatremia) were made."
+    },
+    {
+      "candidate": "Meningococcemia / Bacterial purpura fulminans",
+      "rule_out_reason": "Considered given the abrupt onset of distributive shock, thrombocytopenia, elevated D-dimer, coagulopathy, and diffuse purple skin lesions; however, the presence of a distinct necrotic cutaneous eschar on the left buttock pointed to a vector-borne rickettsial etiology rather than meningococcal disease.",
+      "quote": "On physical examination, the patient's body was found to be covered with small purple skin lesions, and an eschar was present on her left buttock"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Recognition of the characteristic buttock eschar prompted rapid molecular testing, where blood metagenomic next-generation sequencing and quantitative PCR confirmed Orientia tsutsugamushi.",
+      "quote": "The mNGS and qPCR results (Figure 2) confirmed the presence of O. tsutsugamushi, suggesting that scrub typhus was the underlying cause."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case cleanly adheres to admission triage boundary with zero pathogen or send-out test leaks in the prompt. Confirmatory quotes match source text verbatim."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7467883_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 3-month-old infant presenting with acute, dramatic digital ischemia and gangrenous necrosis of the toes on the left foot in the setting of a one-month generalized pruritic eruption. Acute acral gangrene in infancy is alarming and commonly prompts evaluation for macrovascular thrombosis, severe bacteremia/purpura fulminans, or systemic necrotizing vasculitis, which can distract from an underlying parasitic infestation and household cluster.\n2. Admission Breakpoint: The admission breakpoint occurs upon presentation to the emergency department when physical examination reveals the generalized papulopustular eruption with toe necrosis and bedside limb Doppler ultrasound demonstrates patent vessels without thrombus, prior to cutaneous swab cultures (Staphylococcus aureus), skin biopsy, and treatment administration.\n3. Differential Distinctions: Acute arterial thrombosis / thromboembolism vs. Primary systemic necrotizing vasculitis / Henoch-Schönlein purpura vs. Secondary bacterial pyoderma / Staphylococcal scalded skin syndrome vs. Scabies complicated by necrotizing lymphocytic vasculitis. Intact peripheral pulses, negative Doppler ultrasound, absence of immune complex deposits on direct immunofluorescence, and bilateral parental pruritus confirmed ectoparasitic infestation with hypersensitivity-induced microvascular necrosis.",
+  "case_prompt": "A three-month-old infant boy with no significant past medical history presents to the emergency department with acute onset of ischemia and discoloration of the left foot evolving over 12 hours. His mother reports that he has had a generalized, severely pruritic rash evolving over the past month. The infant is not taking any medications. Both parents report concurrent severe generalized pruritus and scratching at home. On physical examination, the infant is well-appearing and afebrile. Dermatologic evaluation reveals severe generalized pruritus, a diffuse pimple-like papular rash, and scattered pustules, alongside distinct cutaneous vasculitic elements. In addition, dry gangrenous necrosis is evident on the third and fourth toes of the left foot. Peripheral pulses are palpable and symmetrical in all four limbs. Doppler ultrasound examination of the left lower extremity demonstrates patent vessels with no visualized intraluminal thrombus.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Macrovascular Arterial Thromboembolism",
+      "rule_out_reason": "Acute acral ischemia and digital gangrene in an infant immediately suggested acute arterial thrombosis or embolus; however, peripheral pulses were intact across all four limbs and Doppler ultrasound showed no intraluminal thrombus.",
+      "quote": "Peripheral pulses of the four limbs were well perceived. Doppler of the left limb did not visualize any thrombus."
+    },
+    {
+      "candidate": "Primary Autoimmune Vasculitis (e.g., Henoch-Schönlein Purpura or Polyarteritis)",
+      "rule_out_reason": "Cutaneous vasculitic features with digit necrosis suggested a primary immune-complex-mediated vasculitis; however, immunofluorescence demonstrated an absence of perivascular IgG, IgM, IgA, or C3 deposits, confirming a reactive cell-mediated lymphocytic vasculitis.",
+      "quote": "Biopsy and pathology examination found a lymphocytic vasculitis of the dermis and hypodermis. There was no IgG, IgM, IgA or C3 perivascular deposits on immunofluorescence."
+    },
+    {
+      "candidate": "Primary Staphylococcal Pyoderma or Ecthyma Gangrenosum",
+      "rule_out_reason": "Pustular lesions prompted skin swabbing which isolated methicillin-sensitive Staphylococcus aureus, but secondary bacterial colonization did not account for the extensive non-thrombotic lymphocytic microvascular necrosis.",
+      "quote": "The presence of pustules suggested additional bacterial infection. Swab sampling was performed and methicillin-sensitive Staphylococcus aureuswas isolated on culture."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The clinical finding of an intensely pruritic, diffuse papular eruption coupled with household epidemiological clustering (both parents suffering from severe generalized scratching) confirmed primary scabies infestation complicated by reactive lymphocytic microvasculopathy.",
+      "quote": "Both parents suffered from generalized scratching. At the examination, the infant was afebrile and had severe itchiness and a pimple-like rash typical of scabies."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to ED presentation with acute toe necrosis, generalized rash, and family pruritus history. Doppler included. Biopsy, bacterial cultures, and scabicide/antibiotics excluded from prompt."
+}

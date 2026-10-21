@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11165128_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old man who underwent allogeneic peripheral blood stem cell transplantation for AML with pre-transplant negative screening developed post-engraftment fever and abdominal pain on day +26. Contrast CT revealed isolated peritoneal lymphadenopathy without pulmonary cavitation, creating diagnostic difficulty between post-transplant lymphoproliferative disease (PTLD), deep bacterial infection, and occult extrapulmonary tuberculosis.\n2. Admission Breakpoint: The breakpoint stops after initial clinical assessment and CT imaging showing subtle lung nodules and peritoneal lymphadenopathy, strictly before broad-spectrum antibacterial trials, blood mNGS testing, and anti-tubercular therapy.\n3. Differential Distinctions: PTLD is a major cause of post-transplant fever and abdominal lymphadenopathy, but was ruled out clinically and by imaging follow-up. Typical opportunistic bacterial infections fail to improve on empiric therapy. Blood mNGS detected circulating cell-free Mycobacterium tuberculosis DNA, and anti-TB therapy resolved fever and shrank the lymph nodes.",
+  "case_prompt": "A 25-year-old man with acute myeloid leukemia (AML) with myelodysplasia-related changes developed fever and abdominal pain starting on day +26 following allogeneic peripheral blood stem cell transplantation. He had received cytarabine and daunorubicin before undergoing transplantation. Prior to transplantation, screening including an interferon-gamma release assay, thoracic CT, and abdominal CT showed no evidence of latent or active infection. He then received myeloablative conditioning followed by G-CSF-mobilized peripheral blood stem cells from his biological father with graft-versus-host disease prophylaxis. Neutrophil and platelet engraftment were achieved on days +14 and +13, respectively.\n\nOn physical examination at the onset of fever and abdominal pain, the abdomen was tender on palpation, with no superficial lymphadenopathy noted.\n\nThoracic computed tomography (CT) showed only small nodules in both lungs and faint shadows in the lower lobe of the left lung, lacking typical cavitation or consolidation. Contrast abdominal CT and ultrasonography revealed isolated multiple enlarged peritoneal lymph nodes measuring up to 1.57 cm × 1.08 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-transplant lymphoproliferative disease",
+      "rule_out_reason": "Post-engraftment fever accompanied by isolated peritoneal lymphadenopathy and pulmonary nodules in a heavily immunosuppressed allogeneic HSCT recipient strongly suggested PTLD, but diagnostic workup ruled it out.",
+      "quote": "Potential causes of fever and lymphadenopathy, such as post-transplant lymphoproliferative disease, were ruled out, and routine examinations for MTB were negative."
+    },
+    {
+      "candidate": "Conventional pyogenic bacterial sepsis / Neutropenic typhlitis",
+      "rule_out_reason": "Acute fever and abdominal pain in a post-transplant patient suggested deep opportunistic bacterial infection, but broad-spectrum empirical anti-infection regimens produced no clinical response.",
+      "quote": "After unsuccessful empirical anti-infection therapies and the impracticality of performing a biopsy on peritoneal lymph nodes, mNGS was attempted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Blood metagenomic next-generation sequencing during febrile episodes identified circulating Mycobacterium tuberculosis DNA fragments, and targeted triple anti-TB therapy prompted rapid defervescence, pain relief, and documented nodal shrinkage on follow-up CT.",
+      "quote": "During episodes of fever, 5 mL of blood was collected and analyzed for the presence of MTB DNA fragments. Subsequently, experimental anti-MTB treatment with isoniazid, rifampin, and pyrazinamide was initiated, resulting in the resolution of fever and abdominal pain after 2 weeks. Shrunken lymph nodes were noticed on a CT scan during a later follow-up."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to presentation and imaging breakpoint. Excluded mNGS results, treatment course, and pathogen names from case prompt. Quotes verified against source text."
+}

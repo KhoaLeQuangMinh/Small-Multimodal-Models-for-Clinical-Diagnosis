@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8727127_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 33-year-old male presents with acute severe right flank/abdominal pain, nausea, vomiting, and oliguria following a trip to rural villages, accompanied by right costovertebral angle tenderness and mild leukocytosis. While the acute presentation strongly suggests acute renal colic or complicated obstructive urolithiasis, cross-sectional imaging reveals two large pelvic cystic masses causing extrinsic ureteral obstruction and right hydroureteronephrosis without primary hepatic or pulmonary involvement.\n2. Admission Breakpoint: Internal medicine admission documenting the 3-day history of right-sided pain, oliguria, CVA tenderness, rural food exposure, baseline blood work, urinalysis, and IV/oral contrast abdomino-pelvic CT demonstrating two large pelvic cystic masses compressing the right ureter with hydroureteronephrosis, immediately prior to double-J stenting, hydatid serology (ELISA), and surgical cystectomy.\n3. Differential Distinctions: Obstructive urolithiasis / acute pyelonephritis was suspected based on acute flank pain, vomiting, CVA tenderness, oliguria, and leukocytosis (12,000/uL, 88% PMNs); however, urinalysis was normal and contrast CT demonstrated that the obstruction was extrinsic due to large cystic pelvic masses rather than an intraluminal calculus. Mesenteric, peritoneal, or retroperitoneal cystic neoplasm / lymphangioma was considered given the isolated pelvic location and absence of hepatic or splenic hydatid cysts. Echinococcosis (isolated pelvic hydatid disease) was confirmed by a positive Echinococcus ELISA antibody index of 29 (normal < 11) and surgical histopathology following exploratory laparotomy.",
+  "case_prompt": "A 33-year-old single male insurance company employee presented with a 3-day history of acute, severe right-sided abdominal pain, intractable nausea and vomiting unresponsive to antiemetics, generalized weakness, and decreased urine output. Approximately one month prior, he had traveled to rural villages near Hamadan, Iran, where he had stayed for ten days and consumed local cuisine. He had no history of tobacco use and no chronic medical conditions.\n\nOn physical examination, the patient was alert and oriented with mild cutaneous pallor. The body temperature was 37.0 \u00b0C, heart rate 90 beats per minute, respiratory rate 15 breaths per minute, and blood pressure 105/75 mmHg. Heart and lung auscultation was normal. Abdominal examination revealed marked right-sided tenderness to percussion at the costovertebral angle.\n\nInitial laboratory evaluation demonstrated a white blood cell count of 12,000/uL with 88% polymorphonuclear leukocytes. Serum renal function tests, liver function tests, and random blood glucose were normal. Urinalysis was completely normal. Contrast-enhanced computed tomography (CT) of the abdomen and pelvis with intravenous and oral contrast revealed two large cystic masses confined to the pelvic region; the larger cyst was exerting direct extrinsic compression against the right ureter, causing right hydroureteronephrosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Obstructive Urolithiasis / Acute Pyelonephritis",
+      "rule_out_reason": "Considered on initial emergency presentation given acute severe right flank pain, oliguria, nausea/vomiting, CVA tenderness, and neutrophilic leukocytosis (12,000/uL, 88% PMNs); however, urinalysis was unremarkable and CT showed no nephrolithiasis, revealing instead extrinsic ureteral compression from large pelvic cysts.",
+      "quote": "Except for the leukocyte count (12000 with pmn 88%), all tests were normal, including the differential count, renal function tests, liver function tests, random blood sugar, and urinalysis... On CT, the patient had only two large cystic masses in the pelvic region, one of which was compressed against the right ureter, resulting in right urinary tract hydroureteronephrosis"
+    },
+    {
+      "candidate": "Non-Parasitic Pelvic Cystic Neoplasm / Mesenteric Cyst",
+      "rule_out_reason": "Considered given the atypical, isolated pelvic localization of the two large cysts in the absence of typical hepatic, splenic, or pulmonary cystic involvement; however, serological and histopathological analysis confirmed a parasitic etiology.",
+      "quote": "The ELISA test was requested because there was a possibility of a hydatid cyst. The hydatid antibody index was 29 (normal index range below 11)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Pelvic Hydatid Cyst)",
+      "rule_out_reason": "Serological testing demonstrated a markedly elevated hydatid antibody index of 29 on ELISA (normal < 11), prompting albendazole therapy and exploratory laparotomy with cyst resection; histopathological examination confirmed an Echinococcus hydatid cyst.",
+      "quote": "After two days of drug administration, the patient underwent exploratory laparotomy, which resulted in removing two cysts. The pathologist confirmed the hydatid cyst (Figures 2(a) and 2(b))."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly following Stanford MedCaseReasoning principles. The admission breakpoint isolates baseline imaging from send-out ELISA serology and surgical pathology. Zero spoilers present."
+}

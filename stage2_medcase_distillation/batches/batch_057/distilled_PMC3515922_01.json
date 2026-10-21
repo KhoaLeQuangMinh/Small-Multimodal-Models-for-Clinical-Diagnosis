@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3515922_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 48-year-old immunocompetent man presents with a 6-year history of chronic foot swelling and tarsometatarsal osteomyelitis unresponsive to multiple antibacterial regimens and surgical drainage procedures. The clinical presentation is diagnostically challenging because it completely lacks the classic triad elements of sinus tracts and macroscopic grain discharge, thereby mimicking refractory bacterial osteomyelitis.\n2. Admission Breakpoint: The admission clinical presentation includes disease chronology, prior failed antibacterial therapies, physical findings of encrusted dorsal foot swelling without sinuses or granules, normal baseline laboratory parameters, and initial plain radiographs demonstrating tarsal/metatarsal osteomyelitis, stopping strictly prior to magnetic resonance imaging (MRI) and tissue biopsy.\n3. Differential Distinctions: Chronic bacterial osteomyelitis is excluded by total failure of broad-spectrum antibiotics and lack of purulent bacterial drainage; actinomycetoma is ruled out by mycological culture isolating a fungal pathogen rather than aerobic actinomycetes; and MRI identification of the 'dot in circle' sign combined with fungal isolation of Curvularia lunata definitively confirms eumycetoma.",
+  "case_prompt": "A 48-year-old nondiabetic, immunocompetent man presents with a 6-year history of slowly progressive swelling of the left foot. Over several years, he had received multiple empirical courses of oral and intravenous antibacterial agents at primary care facilities without clinical improvement, and had undergone two unsuccessful incision and drainage procedures at a regional hospital. For the past month, he experienced dull aching pain in the foot that worsened at night. He reports no systemic fevers. Physical examination reveals soft tissue swelling localized to the dorsal aspect of the left foot with overlying hyperpigmentation, encrustation, and superficial ulceration. There are no discharging sinus tracts, and the patient reports no past expulsion of visible macroscopic granules from the foot. Routine hematologic and serum biochemical profiles are unremarkable. Plain radiographs of the left foot reveal soft tissue swelling accompanied by osseous changes of chronic osteomyelitis involving the tarsals and metatarsals.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic Bacterial Osteomyelitis",
+      "rule_out_reason": "Suspected due to long-standing tarsal/metatarsal osteolysis and soft tissue ulceration, but was completely unresponsive to multiple oral and parenteral antibiotic courses and repeated surgical drainage attempts.",
+      "quote": "The patient had been treated with multiple courses of oral and intravenous antibiotics in a primary health center. The patient did not respond to the treatment. At the peripheral hospital two attempts were made to incise and drain the lesion."
+    },
+    {
+      "candidate": "Actinomycetoma (Actinomycotic Madura Foot)",
+      "rule_out_reason": "While clinically similar, actinomycetes were excluded when tissue cultures demonstrated true dematiaceous fungal mycelia rather than filamentous bacteria.",
+      "quote": "The final microbiological test showed the presence of Curvularia lunata (Eumycetoma Sp.) [Figure 4]."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Eumycetoma (Curvularia lunata)",
+      "rule_out_reason": "Despite the atypical absence of discharging sinuses, MRI demonstrated the classic 'dot in circle' sign, and surgical biopsy verified granulomatous inflammation with microbiological culture isolating Curvularia lunata.",
+      "quote": "Few of these lesions showed a central tiny hypointense focus suggestive of \"dot in circle\" sign [Figure 2]... On the basis of MRI findings, the diagnosis of mycetoma was considered and a biopsy was performed. The biopsy revealed granulomatous inflammation. The final microbiological test showed the presence of Curvularia lunata (Eumycetoma Sp.)"
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt highlights the atypical absence of sinuses and granules, ending at plain radiography before MRI or mycological confirmation. Audit flags verified as NONE."
+}

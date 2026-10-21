@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2853045_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old female presenting with a painful nodular lesion and draining purulent sinus over the third metacarpal bone following minor abrasions, completely refractory to a one-month course of empiric oral antibiotics. The presentation mimics pyogenic bacterial osteomyelitis, deep fungal infection/mycetoma, or a primary osseous neoplasm, masking paucisymptomatic extrapulmonary skeletal tuberculosis.\n2. Admission Breakpoint: The admission clinical examination, hematologic labs, ESR, normal chest radiograph, and hand radiograph demonstrating an osteolytic metacarpal lesion, prior to the reading of the 72-hour Mantoux tuberculin skin test and pus AFB smear/Bactec mycobacterial culture.\n3. Differential Distinctions: Pyogenic bacterial osteomyelitis (e.g., Staphylococcus aureus) typically causes marked localized inflammatory erythema, acute suppuration, and prominent neutrophilic leukocytosis, and resolves with appropriate standard antibacterials; deep fungal infection or mycetoma features indurated woody tumefaction with granule-containing discharge; primary benign/malignant osseous neoplasms (enchondroma, giant cell tumor) present as lytic lesions but lack active pus-discharging sinus tracts and high inflammatory markers.",
+  "case_prompt": "A 27-year-old female presents with persistent pain and a pus-discharging sinus over the proximal portion of the third metacarpal bone of her left hand. Two months prior, she sustained minor superficial abrasions from a trivial injury to the hand. The abrasions healed spontaneously, but a small nodular swelling subsequently developed over the proximal third metacarpal, associated with localized pain and low-grade pyrexia. She completed a one-month course of oral antibiotics and supportive treatment without clinical improvement, after which an active sinus tract formed with spontaneous purulent discharge. She reports no prior personal history of chronic pulmonary infections and no known sick contacts.\n\nOn physical examination, she is of average build with no peripheral lymphadenopathy. Her resting pulse is 92 beats/min and blood pressure is 112/68 mmHg. Examination of the left hand reveals skin retraction over the proximal third metacarpal bone and an active sinus discharging pus. Systemic examination is otherwise unremarkable.\n\nBaseline laboratory investigation shows a hemoglobin of 14.0 g/dL, a total leukocyte count of 8,900/mm³ (72% neutrophils, 17% lymphocytes, 7% monocytes, 4% eosinophils), and an erythrocyte sedimentation rate (ESR) of 58 mm/hr. Blood cultures are sterile, and HIV serology is negative. A chest radiograph is normal. Plain radiography of the left hand (AP and lateral views) demonstrates osteolytic lesions over the neck of the third metacarpal bone. Abdominal ultrasonography is normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic Bacterial Osteomyelitis",
+      "rule_out_reason": "Considered due to the antecedent traumatic cutaneous abrasion and active pus drainage, but ruled out by normal total white blood cell count, failure to improve after a month of antibacterial therapy, sterile routine blood cultures, and positive slow-growing mycobacterial culture.",
+      "quote": "She was given antibiotics and other supportive treatment for one month. After one month there was no improvement and sinus formed with discharging pus in that swelling."
+    },
+    {
+      "candidate": "Primary Osseous Neoplasm (e.g., Enchondroma or Giant Cell Tumor)",
+      "rule_out_reason": "Considered due to an isolated osteolytic lesion in a metacarpal bone in a young adult, but excluded by the infectious inflammatory picture of low-grade fever, marked ESR elevation (58 mm/hr), cutaneous retraction with active purulent sinus drainage, and complete radiological healing with antimycobacterial therapy.",
+      "quote": "X-ray left hand AP and lateral view revealed osteolytic lesions over neck of third metacarpal bone (fig 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis of tubercular dactylitis of the metacarpal bone was confirmed by a strongly reactive Mantoux tuberculin skin test (34 mm induration at 72 hours) and isolation of Mycobacterium tuberculosis from the sinus pus culture using the Bactec method.",
+      "quote": "Her mantoux test showed 34 mm indurations at 72 hours. Pus from discharging sinus was negative for acid fast bacilli on three occasions. Pus culture was positive for Mycobacterium Tuberculosis by Bactec method."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to baseline admission presentation and initial hand/chest radiography before Mantoux reading and pus Bactec culture. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

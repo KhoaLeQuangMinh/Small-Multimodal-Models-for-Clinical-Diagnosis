@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8497823_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old man presents with sudden-onset right-sided hemiparesis and global aphasia (NIHSS 10) of 3 hours' duration, with initial non-contrast head CT showing left frontal and insular hypodensity interpreted as acute ischemic stroke. He received intravenous rt-PA with initial improvement, but persistent fever, 1-month prodromal headaches, and refractory hyponatremia revealed that the CT hypodensity was actually perilesional edema around an infectious focus, and his stroke was vasculitic ischemia caused by tuberculous meningitis.\n2. Admission Breakpoint: Clinical evaluation concludes after emergency triage evaluation: 3-hour onset right hemiparesis/aphasia, 1-month headache/fever prodrome, NIHSS 10, initial labs (WBC 12.56 x 10^9/L, Na 124.2 mmol/L, Cl 88.2 mmol/L), non-contrast head CT, and echocardiogram, immediately prior to lumbar puncture, CSF metagenomic sequencing, and anti-tubercular therapy.\n3. Differential Distinctions: Primary thromboembolic/atherothrombotic ischemic stroke was the primary admission suspicion leading to IV rt-PA administration; however, the persistent fever, refractory hyponatremia, and subsequent contrast MRI demonstrating perilesional vasogenic edema and pontine cistern nodular enhancement ruled out simple atherothrombosis. Infective endocarditis with septic cerebral emboli was considered due to fever, chills, and acute stroke, but excluded by a normal transthoracic echocardiogram.",
+  "case_prompt": "A 50-year-old man was admitted to the emergency department with sudden-onset right-sided weakness and aphasia that occurred 3 hours prior to presentation. Over the preceding month, he had experienced headaches manifested by paroxysmal pain in both temples and the base of the neck, alongside a history of fever and chills and an episode of vomiting 3 days ago. On initial evaluation, his National Institutes of Health Stroke Scale (NIHSS) score was 10 based on drowsiness, global aphasia, dysarthria, right-sided hypoesthesia, and right facial nerve paralysis. Initial laboratory testing showed a white blood cell count of 12.56 x 10^9/L with 88.2% neutrophils, a serum sodium of 124.2 mmol/L, and a serum chlorine of 88.2 mmol/L. Initial non-enhanced head computed tomography (CT) revealed no hemorrhage but showed hypodensity throughout the left frontal lobe and left insular lobe, interpreted as acute ischemia. Transthoracic echocardiography showed no obvious intracardiac neoplasms or vegetations.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary atherothrombotic / thromboembolic acute ischemic stroke",
+      "rule_out_reason": "The sudden focal deficit within 3 hours and non-contrast CT hypodensity led to initial thrombolysis with rt-PA; however, persistent fever, refractory hyponatremia, and subsequent MRI revealed that the CT hypodensity was perilesional vasogenic edema around a tuberculoma rather than primary ischemic infarction.",
+      "quote": "Initial non-enhanced head computed tomography (CT) revealed no hemorrhage but showed hypodensity throughout the left frontal lobe and left insular lobe, indicating acute ischemia"
+    },
+    {
+      "candidate": "Cardioembolic stroke secondary to infective endocarditis",
+      "rule_out_reason": "The combination of fever, chills, leukocytosis, and acute stroke syndrome suggested septic embolization from infective endocarditis; however, transthoracic echocardiography ruled out intracardiac vegetations or neoplasms.",
+      "quote": "Transthoracic echocardiography showed no obvious neoplasms, and cerebral infarction caused by infective endocarditis was thus not considered."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Lumbar puncture performed for persistent fever and refractory hyponatremia revealed elevated opening pressure (>40 cmH2O) and lymphocytic pleocytosis, with high-throughput CSF sequencing detecting Mycobacterium tuberculosis, and contrast MRI demonstrating pontine cistern nodular enhancement confirming tuberculous meningitis complicated by vasculitic cerebral infarctions.",
+      "quote": "High-throughput sequencing of the CSF detected Mycobacterium tuberculosis with high confidence."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation verified clean with strict breakpoint enforcement; zero pathogen or disease names present prior to confirmatory testing. All candidate differential rule-outs and diagnostic pivot supported by direct verbatim quotes from the case report. Target canonical disease matches ground truth."
+}

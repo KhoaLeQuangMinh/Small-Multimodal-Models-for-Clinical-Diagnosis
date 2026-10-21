@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10183450_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 61-year-old diabetic male from Central Iran presents with an indolent, 2-month, non-painful scabrous plaque on the left ear auricle. The principal diagnostic challenge lies in distinguishing this chronic localized crusty skin lesion from common cutaneous malignancies (squamous cell carcinoma or basal cell carcinoma) and superficial fungal infections (such as dermatophytosis or deep mycosis) common in diabetic individuals, without premature disclosure of microscopic parasitology.\n2. Admission Breakpoint: Admission triage ends following history, physical examination of the lesion, and baseline bedside triage diagnostics (negative 10% potassium hydroxide mount of skin scrapings). Confirmatory testing begins with sterile scalpel blade border scraping for Giemsa-stained smear microscopy and species-specific minicircle kDNA PCR testing.\n3. Differential Distinctions: Superficial fungal kerion or tinea incognito is ruled out by negative direct 10% KOH examination. Cutaneous malignancy (SCC/BCC) is excluded by microscopic visualization of intracellular amastigotes rather than dysplastic or malignant keratinocytes. Leishmaniasis is confirmed by microscopic detection of amastigotes and PCR verification.",
+  "case_prompt": "A 61-year-old man weighing 65 kg presents for evaluation of a localized skin lesion on his left ear that has been present for 2 months. He has a history of diabetes mellitus. He reports no travel outside his home region in Central Iran during the preceding year.\n\nHe reports that the ear lesion feels uncomfortable, rough, and scabrous, but is completely painless and has caused no systemic symptoms such as fevers, chills, or weight loss.\n\nPhysical examination reveals a well-demarcated 1x3 cm scabrous plaque on the left ear pinna. There is no surrounding cellulitis and no regional cervical lymphadenopathy. Systemic examination is unremarkable.\n\nDirect microscopic examination of scales scraped from the lesion using a 10% potassium hydroxide (KOH) wet mount is negative for fungal hyphae, pseudohyphae, or budding yeast elements.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cutaneous fungal infection / Tinea incognito",
+      "rule_out_reason": "Considered due to the scaly, crusting auricular lesion in an immunocompromised diabetic host, but ruled out by direct microscopic examination of lesion scales with potassium hydroxide showing no fungal elements.",
+      "quote": "Direct microscopy examination of the scales by 10% potassium hydroxide (KOH) preparation was negative for fungus elements."
+    },
+    {
+      "candidate": "Cutaneous squamous cell carcinoma / Non-melanoma skin cancer",
+      "rule_out_reason": "Considered given the patient's age and a chronic, painless, scabrous, non-healing ulcerated plaque on a sun-exposed auricle, but ruled out when tissue smears revealed intracellular amastigotes rather than malignant epithelial cells.",
+      "quote": "He complained that his feature of ear was uncomfortable and scabrous, but has not any pain or any systemic complaints."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Cutaneous Leishmaniasis (Leishmania tropica)",
+      "rule_out_reason": "Confirmed when Giemsa-stained microscopic smears of marginal scrapings revealed numerous intracellular amastigotes, and species-specific kDNA PCR demonstrated a 760-bp amplicon diagnostic of Leishmania tropica.",
+      "quote": "In the microscopy examination, many amastigotes forms of Leishmania spp were observed (Fig. 2)."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean admission narrative stopping at negative KOH triage mount. Strict zero leak of parasite, amastigote, Giemsa, or PCR findings. Verbatim quotes match article text."
+}

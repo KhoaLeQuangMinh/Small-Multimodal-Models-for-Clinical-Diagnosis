@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12884678_04",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: A patient hospitalized for a large hepatic abscess receives empiric antibacterial therapy (eravacycline monotherapy) and defervesces, despite standard bacterial and fungal diagnostic studies yielding negative results. The clinical tension centers on determining whether the sterile abscess represents an unusual pyogenic organism masked by broad-spectrum therapy, a necrotic hepatic malignancy, or invasive protozoan infection.\n2. Admission Breakpoint: The breakpoint occurs while the patient is receiving inpatient antibacterial therapy for a hepatic abscess, with initial diagnostic specimens (blood cultures, lesion aspirate, tumor markers, HIV) collected, immediately prior to the finalization of negative culture/PCR results, aspirate cytology/tumor markers, and positive stool antigen testing.\n3. Differential Distinctions: Pyogenic or fungal abscess was suspected based on the large hepatic collection requiring drainage and empiric antimicrobial therapy, but blood cultures, aspirate cultures, and universal bacterial/fungal PCR panels were entirely negative. Hepatic neoplasm was ruled out by negative aspirate cytology and normal tumor markers (CEA, BCG, AFP). Positive Entamoeba histolytica stool antigen confirmed invasive amebic liver abscess, prompting transition to metronidazole.",
+  "case_prompt": "A patient was hospitalized and undergoing medical management for a large suspected hepatic abscess collection. The clinical course was managed with broad-spectrum antimicrobial coverage while diagnostic evaluations were initiated to identify the underlying etiology. HIV serology was negative. Blood cultures and percutaneous aspirate specimens of the hepatic abscess fluid were obtained and submitted for microbiological and cytologic evaluation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic or fungal liver abscess",
+      "rule_out_reason": "Considered the primary suspect for a large hepatic fluid collection, but excluded when bacterial blood cultures, aspirate cultures, and broad-range universal PCR for fungi and bacteria all returned negative.",
+      "quote": "Blood cultures and abscess aspirate cultures were finalized as negative... while universal PCR for fungi and bacteria was negative."
+    },
+    {
+      "candidate": "Hepatic malignancy / Cystic liver neoplasm",
+      "rule_out_reason": "Considered due to the large focal hepatic mass, but fluid cytology and tumor markers (CEA, BCG, and AFP) from the aspirate were completely negative.",
+      "quote": "Cytology and CEA, BCG, and AFP tests from the aspirate were also negative, lowering concerns for malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Stool antigen testing returned positive for Entamoeba histolytica alongside sterile cultures, establishing amebic liver abscess and prompting transition to oral metronidazole as definitive standard-of-care therapy.",
+      "quote": "Stool antigen testing returned positive for E. histolytica, while universal PCR for fungi and bacteria was negative. The patient was then transitioned to the standard of care, oral metronidazole."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Facts restricted strictly to the provided case fragment without extrapolation. Exact quotes verified."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9254553_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 52-year-old female from Pará in northern Brazil presents with a nearly two-decade history of chronic abdominal pain, jaundice, pruritus, shivering, and recurrent bouts of cholangitis, having undergone three prior hepatic resections. The critical clinical dilemma is differentiating advanced, irresectable infiltrative intrahepatic cholangiocarcinoma or secondary sclerosing cholangitis from diffuse alveolar hepatic echinococcosis, and determining whether the disease has caused irreversible biliary destruction requiring orthotopic liver transplantation.\n2. Admission Breakpoint: Admission triage terminates after the clinical history, symptoms of cholangitis, physical findings, and baseline liver assessments confirming bilateral irresectable hepatic mass involvement with biliary tract destruction and a MELD score of 7 (upgraded to 20 due to recurrent life-threatening cholangitis), immediately prior to formal surgical exploration and explant pathology.\n3. Differential Distinctions: Intrahepatic cholangiocarcinoma (ruled out by slow 17-year indolent progression without extrahepatic metastases despite extensive bilateral parenchyma involvement), primary sclerosing cholangitis / recurrent pyogenic cholangitis (ruled out by the presence of aggressive, space-occupying infiltrative mass lesions requiring repeated resections rather than isolated biliary strictures), and Caroli disease with secondary cholangitis (ruled out by histology confirming diffuse alveolar echinococcosis).",
+  "case_prompt": "A 52-year-old female from Portel, Pará State, northern Brazil, presented for evaluation of recurrent right upper quadrant abdominal pain, jaundice, pruritus, fever, and shivering. Her clinical illness began nearly two decades earlier (1983) and followed a chronic, relapsing course marked by recurrent episodes of obstructive cholangitis. Over the preceding years, she had undergone three partial hepatic resections and multiple prolonged courses of pharmacotherapy for infiltrative liver disease.\n\nShe presented with another acute presentation of cholangitis. Clinical and hepatic evaluations revealed extensive bilateral, irresectable hepatic lesions with direct involvement and destruction of the biliary tract, but without evidence of distant metastases. Baseline Model for End-Stage Liver Disease (MELD) score was calculated at 7, which was upgraded to an exceptional MELD score of 20 due to the life-threatening recurrent episodes of cholangitis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intrahepatic cholangiocarcinoma",
+      "rule_out_reason": "Extensive bilateral irresectable hepatic mass lesions causing obstructive jaundice and recurrent cholangitis mimic advanced intrahepatic cholangiocarcinoma, but the extraordinarily prolonged 17-year timeline and absence of distant metastasis ruled against malignancy.",
+      "quote": "The disease was bilateral, irresectable, without distant metastasis, and associated with recurrent cholangitis and involvement of the biliary tract"
+    },
+    {
+      "candidate": "Primary sclerosing cholangitis / recurrent pyogenic cholangitis",
+      "rule_out_reason": "Recurrent fever, shivering, pruritus, and biliary tract involvement resemble chronic bacterial or autoimmune cholangiopathy, but the aggressive invasive parenchymal mass lesions that required three prior liver resections pointed to an infiltrative parasitic etiology.",
+      "quote": "The patient presented abdominal pain, jaundice, pruritus, fever, and shivering since 1983. She underwent three liver resections"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Definitive clinical and histopathologic confirmation of diffuse alveolar hepatic echinococcosis involving both hepatic lobes with irresectable biliary destruction and recurrent cholangitis, establishing the indication for orthotopic liver transplantation.",
+      "quote": "In 2000, there was another presentation of cholangitis, and the patient was diagnosed with diffuse alveolar hepatic echinococcosis. The disease was bilateral, irresectable, without distant metastasis, and associated with recurrent cholangitis and involvement of the biliary tract, with an indication of LT"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Exemplary case of advanced diffuse alveolar echinococcosis in the Brazilian Amazon requiring liver transplantation. Zero mention of antiparasitic drug names or pathogen names in admission prompt."
+}

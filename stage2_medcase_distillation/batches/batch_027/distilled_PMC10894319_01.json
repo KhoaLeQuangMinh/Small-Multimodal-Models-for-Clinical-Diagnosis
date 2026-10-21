@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10894319_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 52-year-old male undergoes open right hepatectomy for a massive hepatic cystic lesion complicated by significant blood loss and blood transfusion, and on postoperative day 1 abruptly develops severe headache, hypertension, complete left-eye blindness, and contralateral right-eye temporal hemianopia. The core clinical tension is identifying acute pituitary apoplexy occurring as an acute vascular complication following major abdominal surgery for an underlying hepatic hydatid cyst.\n2. Admission Breakpoint: Immediate postoperative evaluation on postoperative day 1 upon onset of acute neurologic deficits, including vital signs, neurologic examination documenting asymmetric visual field defects, routine hematology/coagulation labs, and emergency non-contrast brain CT scan, immediately prior to high-dose intravenous corticosteroid administration and urgent transsphenoidal surgical decompression.\n3. Differential Distinctions: Acute ischemic stroke (transcortical territorial infarct) or posterior reversible encephalopathy syndrome (PRES) can present with post-surgical hypertension and visual disturbance, but brain CT showed patent intracranial vasculature without cortical ischemia or edema; cerebral venous sinus thrombosis or subarachnoid hemorrhage causes severe headache but was excluded by imaging; brain CT showing a hyperattenuating sellar/suprasellar mass expanding the sella turcica and effacing the suprasellar cistern firmly points to pituitary apoplexy.",
+  "case_prompt": "A 52-year-old man with no prior history of chronic medical illness was admitted to the intensive care unit following an open right hepatectomy for a large, multilocular cystic hepatic lesion. During the operation, he experienced considerable blood loss necessitating intraoperative transfusion of one unit of packed red blood cells. He was extubated in the operating room and was conscious, alert, and oriented upon ICU transfer, with a Glasgow Coma Scale (GCS) score of 15/15 and normal baseline vital signs.\n\nOn postoperative day 1, the patient abruptly developed an excruciating, severe headache associated with sudden-onset vision loss in the left eye and newly elevated blood pressure. He reported no history of decreased level of consciousness, seizures, focal motor weakness, sensory numbness, dysarthria, or speech comprehension deficits.\n\nOn physical examination, the patient was conscious, alert, and oriented (GCS 15/15). Vital signs demonstrated: blood pressure 142/77 mmHg, heart rate 85 beats per minute, body temperature 37.5°C, respiratory rate 24 breaths per minute, and oxygen saturation 97% on room air. Neurological examination was notable for complete vision loss in the left eye and temporal hemianopia in the right eye; cranial nerves were otherwise intact and motor-sensory examination of the extremities was normal.\n\nRoutine laboratory investigations, including complete blood count, serum electrolytes, and coagulation profile, were within normal reference ranges.\n\nAn emergency non-contrast computed tomography (CT) scan of the brain was performed. The scan revealed a well-defined, relatively hyperattenuating, homogeneous sellar and suprasellar mass lesion that mildly expanded the sella turcica and effaced the suprasellar cistern. Remodeling of the sella with mild calcification was noted.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Ischemic Stroke / Transcortical Territorial Infarct",
+      "rule_out_reason": "Sudden vision loss and neurological symptoms following major abdominal surgery with considerable intraoperative blood loss raised strong suspicion for perioperative hypotensive watershed ischemia or embolic stroke; however, emergency neuroimaging demonstrated patent cerebral arteries and no acute cortical territorial infarction.",
+      "quote": "There was no evidence of intracranial hemorrhage, acute transcortical territorial infarct, cerebral arterial occlusion, or venous thrombosis."
+    },
+    {
+      "candidate": "Cerebral Venous Sinus Thrombosis / Subarachnoid Hemorrhage",
+      "rule_out_reason": "Acute excruciating postoperative headache accompanied by visual impairment could signify intracranial hemorrhage or cerebral venous sinus thrombosis, but non-contrast CT confirmed the absence of extravascular intracranial blood or venous occlusion.",
+      "quote": "There was no evidence of intracranial hemorrhage, acute transcortical territorial infarct, cerebral arterial occlusion, or venous thrombosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency brain CT demonstrating a hyperattenuating, homogeneous sellar and suprasellar mass causing sella expansion, suprasellar cistern effacement, and bony remodeling confirmed acute pituitary apoplexy complicating major hepatic resection of a hydatid cyst, successfully managed with intravenous steroids and urgent transsphenoidal surgical decompression.",
+      "quote": "The CT scan showed well-defined, relatively hyperattenuating, homogeneous sellar and suprasellar mass lesions (Figures 1, 2), mildly expanding the sella and effacing the suprasellar cistern... With the confirmed diagnosis of pituitary apoplexy, the patient was started on steroids and underwent transsphenoidal surgical decompression."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning guidelines. The case prompt presents the Day 1 postoperative clinical and emergency neuroimaging findings before steroid initiation and transsphenoidal decompression. Zero spoilers or pathogen names."
+}

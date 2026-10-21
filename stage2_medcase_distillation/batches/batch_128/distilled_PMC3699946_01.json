@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3699946_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 33-year-old immunosuppressed man with polymyositis on irregular methotrexate and prednisone presents with fever, leukocytosis, thrombocytosis, and multiple painful, warm subcutaneous nodules and fluctuant gummatous lesions. The clinical dilemma is distinguishing pyogenic bacterial abscesses (e.g., Staphylococcal), disease flare with inflammatory panniculitis, drug-induced panniculitis, or lymphoma from metastatic mycobacterial gummas.\n2. Admission Breakpoint: The admission breakpoint falls right after admission vitals, physical examination, baseline laboratory investigations (leukocytosis of 21,100/\u03bcL, thrombocytosis of 573,000/\u03bcL, elevated LDH 515 U/L, CPK 282 IU/L), and normal chest radiograph, prior to empiric antibiotics (oxacillin, vancomycin), ultrasound of the nodule, skin biopsies, and acid-fast bacilli microscopy/cultures.\n3. Differential Distinctions: Pyogenic staphylococcal abscesses/pyomyositis (presumed initially, but cultures showed no staphylococci and lesions failed to respond to oxacillin or vancomycin), methotrexate-related panniculitis or erythema nodosum (considered due to immunosuppressive therapy and septal/lobular inflammation, but fail to explain infectious gummatous breakdown with acid-fast organisms), and polymyositis flare with vasculitis (ruled out as CPK normalized while skin lesions progressed). Demonstration of acid-fast bacilli (+++) and positive culture for Mycobacterium tuberculosis confirms cutaneous tuberculous gummas.",
+  "case_prompt": "A 33-year-old male residing in Rio de Janeiro, Brazil, presents to the hospital with painful, warm nodules of various sizes across his body, in addition to gummatous subcutaneous lesions that developed over the previous two months. He reports intermittent fever responsive to metamizole, throbbing limb pain exacerbated by movement and relieved by rest, and progressive muscle weakness in the pectoral and pelvic girdles. He was diagnosed with polymyositis 18 months prior and has been taking methotrexate (15 mg/week) and prednisone (40 mg/day) irregularly. One year earlier, he completed a 6-month antimicrobial regimen for a hospitalized pulmonary infection. On physical examination, he has tachypnea, tachycardia, and fever with normal blood pressure; lymphadenopathy is absent. Admission laboratory tests reveal leukocytosis (21,100 leukocytes/\u03bcL), thrombocytosis (573,000 platelets/\u03bcL), and normocytic normochromic anemia. Lactate dehydrogenase is 515 U/L and creatine phosphokinase is 282 IU/L. Plain chest radiography reveals no abnormalities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial pyoderma / Staphylococcal abscesses",
+      "rule_out_reason": "Empiric intravenous therapy against Staphylococcus with oxacillin and subsequently vancomycin was administered, but no bacterial growth was recovered and the patient experienced neither clinical improvement nor defervescence.",
+      "quote": "At admission antibiotic therapy with oxacillin was initiated against infection by Staphylococcus. However, no specimen has confirmed the suspicion of diagnosis."
+    },
+    {
+      "candidate": "Methotrexate-related panniculitis or Weber-Christian disease",
+      "rule_out_reason": "Considered because the patient was receiving methotrexate and prednisone and had nodular subcutaneous necrosis, but sterile non-infectious panniculitis was ruled out by identification of viable acid-fast bacilli and mycobacterial growth.",
+      "quote": "The differential diagnosis of the nodular disease mainly considered myositis and vasculitis, methotrexate-related panniculitis, Weber-Christian disease, subcutaneous panniculitis-like T-cell lymphoma, erythema nodosum, bacterial, fungal and mycobacterial infections."
+    },
+    {
+      "candidate": "Polymyositis flare with reactive cutaneous vasculitis",
+      "rule_out_reason": "Considered due to the patient's underlying history of polymyositis with proximal muscle weakness and elevated CPK (282 IU/L), but CPK rapidly normalized during hospitalization while cutaneous gummas and fever persisted, pointing away from an autoimmune flare.",
+      "quote": "During hospitalization, leukocytosis, thrombocytosis and normocytic normochromic anemia persisted, as well as increased LDH levels. Creatine phosphokinase returned to normal levels."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of numerous acid-fast bacilli (+++) on repeated aspirated secretion from the gummatous lesions followed by culture growth of Mycobacterium tuberculosis, with rapid clinical cure following quadruple anti-tuberculosis therapy.",
+      "quote": "One week later, a new sample showed acid-fast bacilli (+ + +)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint before antibiotics and biopsy. Zero mention of tuberculosis, Mycobacterium, rifampicin, isoniazid, pyrazinamide, or ethambutol in prompt. Target disease is Tuberculosis."
+}

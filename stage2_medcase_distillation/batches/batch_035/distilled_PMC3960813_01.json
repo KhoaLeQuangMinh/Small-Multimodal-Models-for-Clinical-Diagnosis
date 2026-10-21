@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3960813_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 62-year-old male from West Bengal presents with a 6-month history of cough, chest pain, cachexia, and a small left-sided pleural effusion, without the classic visceral leishmaniasis hallmark of prolonged fever. The clinical presentation mimics pulmonary tuberculosis, bronchogenic carcinoma, or lymphoma, but unexplained mild splenomegaly, severe pancytopenia, marked ESR elevation (100 mm/hr), and reversed A:G ratio reveal visceral leishmaniasis with atypical pleural involvement.\n2. Admission Breakpoint: Admission triage encompasses residence in West Bengal, chronic cough and chest pain, physical exam (moderate pallor, cachexia, mild splenomegaly, lack of peripheral lymphadenopathy), baseline CBC (pancytopenia, hemoglobin 7.7 g/dL), ESR (100 mm/hr), chest radiograph confirming small left-sided pleural effusion, negative Mantoux test, negative sputum AFB smears/cultures, normal liver biochemistries, and negative viral hepatitis/HIV/malaria screening. Breakpoint stops strictly before Napier's aldehyde formalin test and confirmatory bone marrow aspiration.\n3. Differential Distinctions: Pulmonary tuberculosis is the leading differential in an endemic area for chronic cough, chest pain, pleural effusion, high ESR, and cachexia, but ruled out by negative Mantoux test and repeatedly negative sputum acid-fast bacilli smears and cultures. Bronchogenic carcinoma is suspected in an elderly male with cachexia and unilateral effusion, but ruled out by lack of mass lesions and complete resolution following antiprotozoal therapy. Malaria and enteric fever are considered for splenomegaly and pancytopenia, but excluded by negative rapid antigen tests and Widal serology.",
+  "case_prompt": "A 62-year-old man, resident of West Bengal, presented with a 6-month history of persistent cough and left-sided chest pain. He was a non-smoker, did not consume alcohol, and took no regular medications. He reported no history of fever, hemoptysis, hematemesis, melena, diarrhea, headache, or joint pain. He had no past history of chronic granulomatous pulmonary infection, asthma, chronic obstructive pulmonary disease, or gastroesophageal reflux disease.\n\nOn physical examination, the patient appeared cachectic with moderate conjunctival pallor. There was no peripheral lymphadenopathy, clubbing, cyanosis, or peripheral edema. Auscultation of the lungs revealed normal vesicular breath sounds bilaterally without adventitious sounds. Abdominal examination revealed a non-tender, mild splenomegaly palpable below the left costal margin without hepatomegaly or ascites.\n\nInitial laboratory investigations demonstrated pancytopenia with a hemoglobin level of 7.7 g/dL, while the erythrocyte sedimentation rate was markedly elevated at 100 mm/1 hr. Sputum smears and cultures for special-stain micro-organisms were negative on repeated examinations, and a Mantoux skin test was negative. Serum bilirubin, aminotransferases, and prothrombin time were within normal limits. Serological tests for hepatitis B surface antigen, hepatitis C antibodies, and HIV antibodies were nonreactive. Rapid diagnostic testing for intraerythrocytic parasites antigens and Widal agglutination testing for enteric fever were negative.\n\nA plain chest radiograph demonstrated the presence of a small left-sided pleural effusion with clear lung parenchymal fields.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Tuberculosis",
+      "rule_out_reason": "Foremost consideration for chronic cough, chest pain, cachexia, marked ESR elevation, and unilateral pleural effusion in an endemic region, but excluded by a negative Mantoux test and repeatedly negative sputum acid-fast bacilli smears and cultures.",
+      "quote": "Mantoux test for tuberculosis was negative. Sputum culture for acid-fast bacilli (AFB) was negative. Ziehl-Neelsen stain of the sputum smears was also negative for AFB."
+    },
+    {
+      "candidate": "Bronchogenic Carcinoma / Malignant Pleural Effusion",
+      "rule_out_reason": "Considered in an elderly male with chronic chest pain, progressive cachexia, and unexplained unilateral pleural effusion, but ruled out by the absence of pulmonary parenchymal masses and complete radiographic resolution with antiparasitic therapy.",
+      "quote": "Known causes of pleural effusion like heart failure, pneumonia, tuberculosis, or carcinoma of lung were absent in this patient."
+    },
+    {
+      "candidate": "Malaria / Enteric Fever",
+      "rule_out_reason": "Considered as endemic infectious causes of splenomegaly and cytopenias, but ruled out by negative malaria antigen tests and negative Widal agglutination serology.",
+      "quote": "Widal test for enteric fever and test for malaria antigens were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Marked hypergammaglobulinemia with a reversed albumin/globulin ratio of 0.2 and positive Napier's aldehyde test prompted bone marrow aspiration, which demonstrated intracellular and extracellular Leishmania donovani amastigote forms, establishing visceral leishmaniasis.",
+      "quote": "Subsequently, bone-marrow aspiration was undertaken, which showed both intracellular and extracellular amastigote forms of L. donovani. Slight excess of plasma cells was also noted [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to admission triage breakpoint. Napier aldehyde test and bone marrow microscopy excluded from case_prompt. Direct quotes substantiate differentials and diagnostic pivot."
+}

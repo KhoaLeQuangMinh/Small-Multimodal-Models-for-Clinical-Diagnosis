@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10726230_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 34-year-old female presents with 7 months of persistent flank and back pain with low-grade fevers, repeatedly misdiagnosed and treated outpatient as recurrent urinary tract infections. Extensive vertebral destruction, canal encroachment, and massive bilateral psoas abscesses developed insidiously without pulmonary symptoms or abnormal chest radiography before mycobacterial testing confirmed extrapulmonary tuberculosis.\n2. Admission Breakpoint: The admission breakpoint occurs following surgical evaluation, abdominal ultrasound, plain chest radiography, and abdominal/pelvic CT revealing spondylodiscitis and retroperitoneal collections, stopping strictly prior to surgical incision and drainage, routine fluid cultures, contact tracing interviews, and mycobacterial laboratory testing.\n3. Differential Distinctions: Pott's disease with psoas abscess is distinguished from recurrent urinary tract infections by normal urine studies and radiologic demonstration of vertebral destruction and retroperitoneal collections; from pyogenic bacterial spondylodiscitis (e.g. S. aureus) by negative routine bacterial cultures, lack of acute toxic symptoms, and positive mycobacterial testing; and from metastatic spinal malignancy by subacute cold abscess formation, disk space involvement, and response to antitubercular therapy.",
+  "case_prompt": "A 34-year-old Melanesian female presents to the emergency department with a 7-month history of persistent back and bilateral flank pain accompanied by intermittent low-grade fever. Her past medical history includes a Bartholin abscess, a right ovarian cyst, and a self-resolved pleural effusion in the preceding year. Over the preceding 7 months, she had been treated as an outpatient on multiple occasions for suspected recurrent urinary tract infections with standard regimens of nitrofurantoin, metronidazole, trimethoprim, and amoxicillin, with no relief. Her pain subsequently radiated to involve the upper lumbar region (L1-L2).\n\nOn physical examination, vital signs are within normal limits with low-grade pyrexia. Spinal examination reveals tenderness over the upper lumbar spine and right flank.\n\nAbdominal and renal ultrasonography reveals a large complex fluid collection measuring 10.5 x 4.8 x 7.4 cm inferior to the right kidney with loss of the normal architecture of the proximal right psoas muscle. Subsequent computed tomography (CT) of the abdomen and pelvis demonstrates extensive destructive changes involving the T8 to T12 vertebrae with loss of vertebral height and severe kyphosis at T11. Inflammatory debris and bony fragments from T11 encroach into the spinal canal at the T11-T12 level, and lytic lesions are visible on L1 and L2 vertebrae. A paravertebral abscess extends from T8 to L1, and bilateral irregular psoas abscesses are visualized (measuring 5.0 x 4.3 x 15.3 cm on the right and 1.1 x 1.3 x 3.4 cm on the left), along with focal right lower quadrant omental lymphadenopathy. Plain chest radiography is unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent complicated urinary tract infection / pyelonephritis",
+      "rule_out_reason": "Suspected repeatedly over 7 months and managed empirically with multiple outpatient antibiotic courses (nitrofurantoin, metronidazole, trimethoprim, amoxicillin), but symptoms persisted and cross-sectional imaging revealed large retroperitoneal abscesses and vertebral destruction rather than primary renal pathology.",
+      "quote": "The patient was treated outpatient for a suspected UTI within the past year with a standard regimen of nitrofurantoin (100 mg 2x/day), metronidazole (400 mg 3x/day), with acetaminophen, and ibuprofen for pain management. Nevertheless, back pain persisted for 7 months."
+    },
+    {
+      "candidate": "Pyogenic bacterial spondylodiscitis / acute psoas abscess",
+      "rule_out_reason": "Presumed following identification of large psoas collections and treated empirically with oral cloxacillin, but surgical fluid obtained during bilateral drainage remained sterile on routine bacterial culture media.",
+      "quote": "When this sample did not culture, the surgical team suspected TB and screened the patient for TB exposure."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Failure of fluid from the psoas abscess to yield routine bacterial growth prompted targeted epidemiologic screening, uncovering a history of having been primary caretaker for her mother with pulmonary tuberculosis; subsequent mycobacterial laboratory testing of the aspirate confirmed tuberculous spondylitis (Pott's disease) with bilateral cold psoas abscesses.",
+      "quote": "Further questioning revealed that the patient had been the primary caretaker for her mother during an infection of pulmonary tuberculosis four years prior. Subsequent mycobacterial testing was positive, and the patient was diagnosed with Pott's disease involving a bilateral psoas abscess."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission breakpoint set prior to surgical incision, drainage, and aspirate microbiological analysis. All pathogen and disease names excluded from admission prompt. Exact verbatim quotes verified."
+}

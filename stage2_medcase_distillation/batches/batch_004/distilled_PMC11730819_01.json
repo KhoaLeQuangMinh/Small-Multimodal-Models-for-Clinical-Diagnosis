@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11730819_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An asymptomatic 64-year-old male presenting with an incidental solitary pulmonary nodule and subsequent PET/CT demonstrating intense metabolic uptake in the posterior nasopharynx, palatine tonsils, and cervical lymph nodes strongly mimics locally advanced nasopharyngeal carcinoma with cervical nodal metastasis or primary bronchogenic carcinoma; primary extrapulmonary nasopharyngeal tuberculosis is an extremely rare mimicker of head and neck malignancy.\n2. Admission Breakpoint: The admission triage evaluation ends when otolaryngologic endoscopy and whole-body PET/CT identify the nasopharyngeal mass, tonsillar hypertrophy, and hypermetabolic cervical lymphadenopathy, immediately prior to cervical node needle aspiration, nasopharyngeal deep biopsy histopathology, and nested TB-PCR.\n3. Differential Distinctions: Nasopharyngeal carcinoma (non-keratinizing or keratinizing squamous cell carcinoma) presents with identical endoscopic and PET/CT features but reveals neoplastic epithelial sheets on biopsy; lymphoma shows diffuse lymphoid effacement without granulomas; nasopharyngeal tuberculosis produces caseating/non-caseating chronic granulomatous inflammation confirmed by mycobacterial nested PCR.",
+  "case_prompt": "A 64-year-old male was evaluated in the outpatient clinic following an incidental finding on a health checkup chest computed tomography (CT), which revealed a solitary nodule in the right upper lobe of the lung. He reported no overt constitutional symptoms such as fever, night sweats, cough, hemoptysis, or unintentional weight loss. The patient had no known history of occupational dust exposure or chronic infectious diseases. Physical examination was notable for an asymptomatic gentleman with normal vital signs. Palpation of the neck revealed mildly enlarged, nontender cervical lymph nodes. Staging positron emission tomography/computed tomography (PET/CT) demonstrated increased fluorodeoxyglucose uptake localized to the posterior wall of the nasopharynx, bilateral palatine tonsils, and multiple cervical lymph nodes, raising high suspicion for head and neck malignancy. He was referred to the otolaryngology clinic, where flexible nasopharyngoscopy and laryngoscopy revealed bilateral hypertrophy of the palatine tonsils and a distinct mass-like mucosal lesion occupying the posterior nasopharyngeal wall, prompting immediate histologic investigation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Nasopharyngeal Carcinoma with Cervical Nodal Metastases",
+      "rule_out_reason": "Intense FDG uptake in the posterior nasopharynx, tonsils, and cervical lymph nodes along with an endoscopic nasopharyngeal mass strongly pointed toward primary nasopharyngeal carcinoma; however, cervical lymph node aspiration was benign and biopsy of the nasopharyngeal mass revealed chronic granulomatous inflammation without malignant cells.",
+      "quote": "positron emission tomography/computed tomography (PETCT) revealed increased uptake in the posterior wall of the nasopharynx, bilateral tonsils, and multiple cervical lymph nodes, which could not exclude the possibility of malignancy."
+    },
+    {
+      "candidate": "Primary Bronchogenic Carcinoma with Distant Metastasis",
+      "rule_out_reason": "An initial solitary right upper lobe pulmonary nodule discovered on routine chest CT raised suspicion for primary lung cancer; however, bronchoalveolar lavage cytology was negative and the pulmonary lesion was not the primary malignant driver.",
+      "quote": "A 64-year-old male patient underwent chest computed tomography (CT) as part of a health checkup, which revealed a nodule in the right upper lobe of the lung."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the nasopharyngeal mass demonstrating chronic granulomatous inflammation, followed by positive nested polymerase chain reaction for Mycobacterium tuberculosis, confirmed primary extrapulmonary nasopharyngeal tuberculosis.",
+      "quote": "However, histopathological examination of the nasopharyngeal mass revealed a chronic granulomatous inflammation. (Fig. 5) Subsequently, immunohistochemical staining and nested polymerase TB-PCR were performed, and the nested TB-PCR results were positive. The patient was diagnosed with extrapulmonary tuberculosis (TB)"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt terminates after nasopharyngoscopy and PET/CT. Biopsy histopathology, cervical node cytology, nested PCR, and anti-TB treatment excluded from prompt. Direct verbatim quotes provided."
+}

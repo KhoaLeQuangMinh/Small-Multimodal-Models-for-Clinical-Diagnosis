@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12950461_04",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A patient presents with flexor tendon sheath swelling containing intraoperative \"rice bodies\" accompanied by pulmonary infiltrates on chest radiography. The tension revolves around distinguishing rheumatoid tenosynovitis, seronegative arthritis, or atypical nontuberculous mycobacterial infection from disseminated Mycobacterium tuberculosis presenting primarily as musculoskeletal tenosynovitis with subclinical pulmonary involvement.\n2. Admission Breakpoint: Gross orthopedic surgical exploration identifying tendon sheath rice bodies and initial plain chest radiograph showing infiltrates, immediately before confirmatory AFB smear/culture, GeneXpert NAAT, and histopathologic tissue biopsy results.\n3. Differential Distinctions:\n- Rheumatoid Tenosynovitis / Autoimmune Synovitis: Synovial \"rice bodies\" are classically described in rheumatoid arthritis or chronic non-infectious synovitis resulting from microvascular ischemia and synovial shedding; however, rheumatoid disease does not account for pulmonary infiltrates, caseating granulomas, or positive mycobacterial molecular amplification.\n- Nontuberculous Mycobacterial Tenosynovitis (e.g., M. marinum, M. kansasii): Atypical mycobacteria frequently present as chronic indolent tenosynovitis following aquatic or puncture exposures, but specific nucleic acid amplification (GeneXpert Ultra) and culture verified Mycobacterium tuberculosis complex.\n- Primary Synovial Chondromatosis or Neoplasm: Synovial proliferative lesions can cause mass effect and multiple loose bodies, but histopathology demonstrated chronic granulomatous inflammation with Langhans giant cells and epithelioid histiocytes rather than cartilaginous metaplasia.",
+  "case_prompt": "An adult patient presented for orthopedic surgical evaluation of progressive swelling, pain, and functional limitation involving the flexor tendon sheath. On initial diagnostic evaluation, a plain chest radiograph demonstrated unexpected pulmonary infiltrates. Due to persistent musculoskeletal compromise, an orthopedic consultation was obtained and the patient was taken to the operating room for surgical exploration. Intraoperative visualization of the tendon sheath revealed marked synovial proliferation and numerous shiny, white synovial loose bodies resembling rice bodies filling the tendon sheath.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Rheumatoid Arthritis / Non-Infectious Inflammatory Tenosynovitis",
+      "rule_out_reason": "Considered because rice body formation within the tendon sheath is classically associated with rheumatoid arthritis and chronic autoimmune synovial proliferation, but ruled out by concomitant pulmonary infiltrates and the demonstration of caseating necrotizing granulomas on biopsy.",
+      "quote": "intraoperative picture showing rice bodies of the tendon sheath (Fig. 2)."
+    },
+    {
+      "candidate": "Nontuberculous Mycobacterial Tenosynovitis",
+      "rule_out_reason": "Considered because atypical mycobacteria (such as Mycobacterium marinum) are well-known causes of indolent granulomatous tenosynovitis, but ruled out by species-specific molecular amplification confirming Mycobacterium tuberculosis complex in both synovial tissue and sputum.",
+      "quote": "Tissue samples sent for acid-fast bacilli (AFB) smear, AFB culture and nucleic acid amplification test (NAAT- Gene Xpert Ultra) for M.tuberculosis complex were positive."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The intraoperative discovery of tendon sheath rice bodies in conjunction with pulmonary infiltrates, definitively confirmed by positive GeneXpert Ultra NAAT, AFB culture, and histopathology revealing chronic synovial inflammation with Langhans multinucleated giant cells and epithelioid granulomas.",
+      "quote": "Histopathology of tissue biopsy showed synovial tissue infiltrated by chronic inflammatory cells with multiple well-formed granulomas composed of epithelioid histiocytes with Langhans type multinucleate giant cells surrounded by lymphocytes and plasma cells (Figs. 3A, 3B)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled Stanford MedCaseReasoning presentation stopping strictly at the admission breakpoint. Zero spoilers, full quote fidelity."
+}

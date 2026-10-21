@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5337757_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 68-year-old woman with cryptogenic chronic liver disease presents with insidious cough, weakness, weight loss, and marked, persistent peripheral hypereosinophilia (32%, absolute count 4,000/uL). Hypereosinophilia typically suggests parasitic helminthiasis, allergic bronchopulmonary disease, EGPA, or hypereosinophilic syndrome, while tuberculosis rarely presents with marked peripheral eosinophilia.\n2. Admission Breakpoint: The admission narrative halts following initial triage vital signs, physical examination, baseline laboratory tests (CBC with differential, ESR, LFTs, RFTs, viral hepatitis/HIV serology), tuberculin skin test, baseline stool ova/parasite exams, abdominal ultrasound, and admission chest radiography, prior to empiric antiparasitic therapy, autoimmune serologies, CT imaging, bone marrow aspiration, and EBUS-guided fine-needle aspiration with mycobacterial cultures.\n3. Differential Distinctions: Helminthic infections (strongyloidiasis, filariasis) and eosinophilic granulomatosis with polyangiitis (EGPA) are common causes of cough with marked eosinophilia; however, stool tests, serologies, and autoimmune markers (ANCA) are negative. Tuberculous mediastinal lymphadenitis can rarely provoke a marked paraneoplastic or immune-mediated reactive hypereosinophilia that resolves completely upon initiation of antitubercular therapy.",
+  "case_prompt": "A 68-year-old woman residing in Haryana, North India, with a past medical history of diet-controlled diabetes mellitus for 5 years and cryptogenic chronic liver disease for 3 years, presented with a 1-month history of insidious dry cough, generalized weakness, and significant unintentional weight loss. The cough was non-productive, persistent, and lacked clear aggravating or relieving factors. There was no history of similar illness among household contacts.\n\nOn physical examination, the patient was thin and pale. She was afebrile and hemodynamically stable. There was no peripheral lymphadenopathy. Systemic examination, including chest auscultation and abdominal palpation, was unremarkable without audible wheezing, crackles, or palpable masses.\n\nInitial blood investigations revealed normocytic normochromic anemia with a hemoglobin of 10.2 g/dL, mean corpuscular volume (MCV) of 84 fL, and mean corpuscular hemoglobin concentration (MCHC) of 32 g/dL. Total leukocyte count was 12 x 10^9/L, with a differential count showing marked peripheral eosinophilia of 32% (absolute eosinophil count 4.0 x 10^9/L), neutrophils 41%, and lymphocytes 27%. Platelet count was 150 x 10^9/L, and erythrocyte sedimentation rate (ESR) was markedly elevated at 59 mm/hour. Serum albumin was reduced at 2.78 g/dL, while the remainder of the hepatic panel and renal function tests were normal. Serologic assays for HIV-1, HIV-2, hepatitis B surface antigen, and hepatitis C antibodies were all negative. A tuberculin skin test demonstrated an induration of less than 10 mm. Two separate stool examinations showed no ova or parasites. Transabdominal ultrasound showed coarse liver parenchymal echotexture consistent with her known chronic liver disease. Chest radiography demonstrated increased bronchovascular markings with right hilar prominence.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intestinal or Tissue Helminthic Infection (Strongyloidiasis / Filariasis / Echinococcosis)",
+      "rule_out_reason": "Considered the most likely etiology for severe peripheral hypereosinophilia (32%, absolute eosinophils 4,000/uL) and pulmonary symptoms, but ruled out by repeated negative stool examinations, negative antifilarial and Echinococcus serologies, and failure to respond to empiric albendazole and diethylcarbamazine.",
+      "quote": "Stool samples tested two times but did not reveal any ova or parasite."
+    },
+    {
+      "candidate": "Eosinophilic Granulomatosis with Polyangiitis (EGPA) / Autoimmune Vasculitis",
+      "rule_out_reason": "Considered due to subacute dry cough, systemic constitutional symptoms, elevated ESR, and marked peripheral eosinophilia, but excluded by negative ANA and ANCA serologies, normal echocardiogram, and bone marrow biopsy devoid of vasculitis.",
+      "quote": "Tests for anti-nuclear and anti-neutrophil cytoplasmic antibodies were negative. Echocardiography was normal with no evidence of vegetation."
+    },
+    {
+      "candidate": "Hematologic Malignancy / Clonal Hypereosinophilic Syndrome",
+      "rule_out_reason": "Considered because of weight loss, persistent leukocytosis with marked eosinophilia, and mediastinal lymphadenopathy, but bone marrow aspiration and biopsy showed only reactive eosinophilic precursors with no neoplastic or abnormal cells.",
+      "quote": "Microscopic examination of needle-aspirated bone marrow and biopsy examination revealed increased eosinophilic precursors with no abnormal cells."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endobronchial ultrasound-guided fine-needle aspiration (EBUS-TBNA) of enlarged mediastinal lymph nodes demonstrated necrotizing granulomatous inflammation with acid-fast bacilli on smear, and BACTEC liquid culture subsequently grew Mycobacterium tuberculosis, followed by rapid normalization of eosinophilia upon antitubercular treatment.",
+      "quote": "Endoscopic bronchial ultrasound-guided fine-needle aspiration of mediastinal lymph nodes was consistent with tubercular inflammation with acid-fast stain positive for bacilli. Acid-fast bacilli culture grew Mycobacterium tuberculosis over a period of 3 weeks in the BACTEC medium."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt terminates strictly after baseline labs, CXR, and initial stool/skin tests. Zero spoilers or pathogen names. Exact quotes verified against source text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7580483_01",
+  "disease": "Scrub Typhus",
+  "think": "1. Core Clinical Tension: A 26-year-old previously healthy woman presenting with fulminant septic shock, meningoencephalitis, multiorgan dysfunction (ARDS, AKI, hepatic failure, thrombocytopenia), and goiter-associated thyroid storm, challenging clinicians to identify an underlying zoonotic vector-borne rickettsial etiology triggering hyperthyroid crisis.\n2. Admission Breakpoint: The breakpoint occurs in the critical care resuscitation room upon initial stabilization, endotracheal intubation, and triage blood testing, prior to lumbar puncture analysis, scrub typhus serology, and thyroid hormone quantitation.\n3. Differential Distinctions: Acute bacterial / meningococcal meningitis, severe sepsis from acute bacterial pneumonia, and uncomplicated primary thyroid storm were critical differentials; however, lumbar puncture revealed a viral/lymphocytic meningoencephalitis pattern, and positive scrub typhus IgM confirmed Orientia tsutsugamushi infection as the precipitator of multiorgan failure and thyroid storm (BWPS 55).",
+  "case_prompt": "A 26-year-old previously healthy woman presents to the department of critical care medicine with a five-day history of acute fever, productive cough, progressive shortness of breath, recurrent vomiting, abnormal involuntary body movements, and rapid loss of consciousness.\n\nOn arrival, the patient is in extremis and comatose with a Glasgow Coma Scale (GCS) of 7/15. Vital signs reveal a body temperature of 102.0°F, pulse rate of 140 beats/min, blood pressure of 70/40 mmHg, respiratory rate of 31 breaths/min, and oxygen saturation of 81% while receiving 15 L/min of oxygen via a non-rebreather mask. Physical examination reveals an enlarged thyroid gland (goiter), marked scleral icterus, bilateral lower extremity pitting edema, prominent neck rigidity, and a positive Kernig's sign. Chest auscultation demonstrates bilateral diffuse crepitations. The patient is immediately resuscitated and endotracheally intubated for airway protection and mechanical ventilation.\n\nInitial emergency laboratory evaluations reveal:\n- Total leukocyte count: 25,000/mm³\n- Hemoglobin: 9.0 g/dL\n- Platelet count: 100,000/mm³\n- Renal Function: Blood urea 90 mg/dL, serum creatinine 1.8 mg/dL, with normal serum sodium and potassium\n- Liver Function and Proteins: Total bilirubin 6.0 mg/dL (direct bilirubin 3.0 mg/dL), total protein 5.9 g/dL, serum albumin 3.1 g/dL, alanine aminotransferase (ALT) 301 U/L, and aspartate aminotransferase (AST) 281 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Bacterial / Meningococcal Meningitis and Septic Shock",
+      "rule_out_reason": "Severe septic shock with leukocytosis (25,000/mm³) and meningeal signs suggested fulminant bacterial meningitis, but CSF analysis showed a viral/lymphocytic-pattern meningoencephalitis rather than pyogenic bacterial infection.",
+      "quote": "Lumbar puncture (LP) showed viral meningoencephalitis."
+    },
+    {
+      "candidate": "Isolated Thyrotoxic Crisis / Primary Thyroid Storm",
+      "rule_out_reason": "The patient met criteria for thyroid storm (Burch-Wartofsky score of 55), but hyperthyroidism alone does not account for alveolar pneumonia and meningoencephalitis, serving instead as a complication triggered by acute infection.",
+      "quote": "Burch-Wartofsky point scale(BWPS) was 55."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Scrub Typhus Meningoencephalitis with Secondary Thyroid Storm",
+      "rule_out_reason": "The unifying diagnosis of scrub typhus was established by positive IgM serology, demonstrating Orientia tsutsugamushi infection presenting as meningoencephalitis, multiorgan dysfunction, bilateral pneumonia, and precipitating thyroid storm.",
+      "quote": "IgM for scrub typhus was positive.Chest X-ray showed bilateral pneumonia (Figure 1). She was diagnosed as scrub meningoencephalitis with multiorgan dysfunction and septic shock."
+    }
+  ],
+  "final_diagnosis": "Scrub Typhus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Emergency admission breakpoint stops before LP, CXR interpretation, and scrub IgM test. Highlights the life-threatening interplay of scrub typhus sepsis and thyroid storm."
+}

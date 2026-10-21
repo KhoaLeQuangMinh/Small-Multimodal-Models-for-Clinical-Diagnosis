@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7339070_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 55-year-old HIV-negative Chinese farmer living in a non-endemic region (Zhejiang) with a remote history of travel to Guangzhou 20 years earlier presents with a 2-month history of cough, hoarseness, fever, a destructive right forehead scalp mass, and an enhancing left lower lobe lung mass with necrotic mediastinal lymphadenopathy. Cranial CT and MRI reveal osteolytic bone destruction of the frontal bone. The key tension is differentiating between metastatic bronchogenic carcinoma, disseminated skeletal and pulmonary tuberculosis, invasive mold infection (aspergillosis/mucormycosis), versus disseminated endemic dimorphic fungal infection (Talaromyces marneffei) occurring in an HIV-negative host.\n2. Admission Breakpoint: The admission breakpoint occurs following completion of emergency triage assessment, physical examination, initial laboratory evaluations (CBC, inflammatory markers, serum albumin, HIV/HBV/syphilis serologies, T-cell subsets), and cranial/chest contrast CT and MRI imaging, prior to obtaining endobronchial/percutaneous needle biopsies, fungal antigen assays, bone marrow biopsy, forehead abscess aspiration, and microbiological cultures.\n3. Differential Distinctions: Metastatic lung cancer with calvarial metastases is ruled out by transbronchial and percutaneous biopsies showing acute and chronic inflammatory changes without malignant or tumor cells. Tuberculosis is excluded by negative sputum AFB, negative PPD, and negative pus stains. Invasive aspergillosis is excluded by negative serum galactomannan and 1,3-beta-D-glucan assays. The diagnostic pivot is fungal isolation of Talaromyces marneffei from aspirated forehead pus, bone marrow, sputum, and blood, demonstrating characteristic thermal dimorphism with red pigment production at 25°C and yeast phase at 37°C.",
+  "case_prompt": "A 55-year-old Chinese man presents in 2016 with a 2-month history of cough, expectoration, increasing dyspnea, and headache, accompanied by hoarseness for 1 week. He is a farmer who grew up in a small town in Zhejiang Province and resided in Guangzhou for 2 years approximately 20 years earlier. Two months prior to admission, he took unspecified remedies for relief of his headache, and one month prior to admission, he noticed a progressively enlarging scalp mass on his forehead. He reports no high-risk sexual contacts, history of blood transfusions, or chronic medical illnesses.\n\nOn physical examination, he is febrile with a body temperature of 38.5°C. Examination of the head reveals a 3-cm ill-defined, firm, non-fluctuant mass over the right forehead scalp. Respiratory examination reveals decreased breath sounds over the left lower lung base. Oxygen saturation on room air is 97%. Cardiovascular, abdominal, and neurological examinations are unremarkable.\n\nInitial laboratory evaluation reveals marked leukocytosis with a white blood cell count of 27,900/µL (87.3% neutrophils, 6.7% lymphocytes), hemoglobin of 12.2 g/dL, and platelet count of 243,000/µL. Inflammatory markers are markedly elevated: erythrocyte sedimentation rate 78 mm/hour, C-reactive protein 184.9 mg/L, procalcitonin 0.611 ng/mL, and serum albumin decreased at 28 g/L. Serological testing is negative for human immunodeficiency virus (HIV-1/HIV-2 by ELISA and chemiluminescence), hepatitis B surface antigen, and syphilis. Lymphocyte subset analysis reveals CD4+ T-cell percentage of 23.6% (absolute count 2,785/µL), CD8+ T-cell percentage of 35% (absolute count 4,130/µL), and a CD4/CD8 ratio of 0.67.\n\nCranial CT and MRI reveal osteolytic bone destruction of the right frontal calvarium with an adjacent soft tissue mass penetrating the damaged bone defect. Contrast-enhanced chest CT demonstrates a high-density, markedly enhancing mass in the left lower lobe along with enlarged, necrotic mediastinal lymph nodes; no vertebral bone lesions are identified.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Metastatic Bronchogenic Carcinoma",
+      "rule_out_reason": "The synchronous combination of an enhancing pulmonary mass with necrotic mediastinal lymphadenopathy and an osteolytic calvarial lesion strongly mimicked advanced lung carcinoma with skull metastases, but endobronchial ultrasound-guided and percutaneous needle aspiration biopsies demonstrated inflammatory changes without malignant cells.",
+      "quote": "The endobronchial ultrasound-guided transbronchial needle aspiration and the CT-guided percutaneous needle aspiration all showed acute and chronic inflammation pathological change, but no tumor cell was found."
+    },
+    {
+      "candidate": "Disseminated Tuberculosis",
+      "rule_out_reason": "Chronic cough, necrotic mediastinal lymphadenitis, and osteolytic bone destruction in an endemic country raised high clinical suspicion for systemic tuberculosis, but sputum acid-fast bacillus smear and purified protein derivative skin testing were negative.",
+      "quote": "Acid-fast bacillus test of sputum smear was negative. Purified protein derivative (PPD) test was negative."
+    },
+    {
+      "candidate": "Invasive Aspergillosis",
+      "rule_out_reason": "Invasive fungal infection was considered given angioinvasive necrotic lesions, but serum fungal biomarker assays were non-reactive.",
+      "quote": "Pastorex aspergillus testing with patient's serum, including galactomannan testing and fungi 1-3-beta-D glucan testing, was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Fungal cultures of aspirated pus from the forehead mass, bone marrow, sputum, and blood yielding Talaromyces marneffei exhibiting classic thermal dimorphism (filamentous mold producing soluble red pigment at 25°C and yeast phase at 37°C) confirmed disseminated talaromycosis.",
+      "quote": "T. marneffei was isolated from pus after 4 days of pus culture. On the same day, T. marneffei was isolated from bone marrow culture, blood culture and sputum culture. Figure 5(a) shows fungal culture of pus yielded mycelia at 25 C with production of red pigment"
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Admission prompt strictly excludes post-admission biopsies, fungal serologies, microbiological cultures, and fungal species names."
+}

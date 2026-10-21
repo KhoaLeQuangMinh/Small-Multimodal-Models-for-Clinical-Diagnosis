@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11338169_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 53-year-old man with a chronic pulmonary infiltrative process treated with antimicrobial therapy presented with profound weakness, severe microangiopathic anemia (Hb 65 g/L), severe thrombocytopenia (15 \u00d7 10^9/L), acute renal failure, and elevated troponin, rapidly progressing to encephalopathy, seizures, and coma. The diagnostic challenge lay in recognizing secondary thrombotic thrombocytopenic purpura (TTP) induced by active pulmonary infection rather than drug-induced immune thrombocytopenia or sepsis-induced DIC.\n2. Admission Breakpoint: Following initial emergency department physical examination, 12-lead ECG, chest radiography showing bilateral infiltrates, and admission laboratory panels demonstrating severe bicytopenia, acute renal insufficiency, and myocardial injury, immediately prior to intensive care admission, bone marrow biopsy, schistocyte review, and ADAMTS13 assays.\n3. Differential Distinctions: Drug-induced immune thrombocytopenia (DITP) / rifampicin-induced hemolytic uremic syndrome (due to prolonged antimicrobial exposure), sepsis-induced disseminated intravascular coagulation (DIC), and primary thrombotic microangiopathy. Differentiated by peripheral blood schistocytes, severe deficiency of ADAMTS13 activity (1.8%) with positive anti-ADAMTS13 antibodies, and dramatic response to therapeutic plasma exchange alongside antitubercular therapy.",
+  "case_prompt": "A 53-year-old man with a history of gout for 14 years and hypertension for 5 years presented with dizziness and weakness of 3 days' duration, on a background of an 11-month history of weight loss, intermittent cough, and recurrent fever for which he had been placed on prolonged multi-drug antimicrobial therapy (isoniazid, rifampicin, and moxifloxacin) after chest computed tomography revealed pulmonary infiltration. On admission, he was awake but lethargic. Vital signs were: body temperature 37.4 \u00b0C, pulse 91 beats per minute, respiratory rate 20 breaths per minute, blood pressure 143/94 mmHg, and oxygen saturation 93% on ambient air. Physical examination was notable for lip cyanosis, decreased breath sounds in the right lower chest, and multiple gouty tophi in the hands and feet, without skin rash. Electrocardiography showed sinus rhythm with biphasic T waves in the lateral leads. Chest radiography demonstrated multiple bilateral patchy infiltrations with increased interstitial markings. Admission laboratory studies revealed a white blood cell count of 4.5 \u00d7 10^9/L (neutrophils 64.8%, lymphocytes 13.0%), red blood cell count of 2.2 \u00d7 10^12/L, hemoglobin of 65 g/L, and a platelet count of 15.0 \u00d7 10^9/L. Serum creatinine was markedly elevated at 345.4 \u03bcmol/L, and cardiac troponin I was elevated at 2.3 \u03bcg/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Drug-induced immune thrombocytopenia (DITP) / Drug-induced thrombotic microangiopathy",
+      "rule_out_reason": "Considered because of long-standing antimicrobial therapy with rifampicin and abrupt acute thrombocytopenia with renal injury; however, the pathophysiology was confirmed to be autoantibody-mediated ADAMTS13 deficiency rather than drug-dependent platelet antibodies.",
+      "quote": "In addition, blood ADAMTS13 activity was 1.8% (normal range, 42.1%-126.3%), and the anti-ADAMTS13 antibody test was positive."
+    },
+    {
+      "candidate": "Sepsis-induced Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "Considered given fever, multiorgan failure, and pulmonary disease; excluded by bone marrow biopsy showing active trilineage hematopoiesis without consumptive hypoplasia, accompanied by clinical remission after plasma exchange.",
+      "quote": "bone marrow biopsy was performed, which revealed active myeloproliferation with 65% nucleated myeloid cells, active granulopoiesis with predominantly neutrophil granulocytes and metamyelocytes, active erythropoiesis with polychromatic and orthochromatic normoblasts, and a normal karyotype."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of peripheral schistocytes, reticulocytosis, and severely reduced ADAMTS13 activity (1.8%) with positive anti-ADAMTS13 antibodies established secondary TTP triggered by underlying active pulmonary tuberculosis.",
+      "quote": "The blood smear revealed schistocyte and reticulocyte percentages of <1% and 10.5%, respectively. In addition, blood ADAMTS13 activity was 1.8% (normal range, 42.1%-126.3%), and the anti-ADAMTS13 antibody test was positive. Considering the patient's medical history and laboratory test results, we made a diagnosis of TTP."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage boundary preserves the diagnostic challenge of TTP complicating pulmonary infection. Verbatim quotes verified."
+}

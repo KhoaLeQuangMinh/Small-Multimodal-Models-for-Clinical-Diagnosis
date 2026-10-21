@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7524186_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 21-year-old male plaster worker from northwestern Iran presents with a 3-month history of pruritic, hyperkeratotic, and hemorrhagic nodular lesions on his face and upper lip, with normal baseline labs and normal chest radiography. The lesions failed oral antibiotics and antihistamines but partially regressed with topical steroids. The clinical challenge is distinguishing rare primary/secondary cutaneous tuberculosis (lupus vulgaris/tuberculosis verrucosa cutis) from common dermatologic entities such as bacterial pyoderma, cutaneous leishmaniasis, deep fungal infections, or contact dermatitis in an otherwise healthy young man without pulmonary disease.\n2. Admission Breakpoint: Outpatient dermatologic evaluation, physical examination of the facial plaques, normal baseline hematology, and normal chest radiography, immediately prior to punch skin biopsy, Ziehl-Neelsen staining, and PPD tuberculin skin testing.\n3. Differential Distinctions: Bacterial pyoderma / impetigo (refractory to multiple courses of oral antibiotics and topical therapies), contact/allergic dermatitis (pruritic and responsive to steroids, but hyperkeratotic nodularity and non-caseating/caseating granulomas rule out eczema), cutaneous leishmaniasis (endemic in Iran causing facial nodules, but excluded by acid-fast staining and absence of Leishmania amastigotes), and deep fungal infections (excluded by histological stains).",
+  "case_prompt": "A 21-year-old male plaster worker living in northwestern Iran presented with persistent skin lesions involving his face and upper lip that had been present for three months. The lesions were pruritic, and several had become prominent, nodular, and hemorrhagic. He reported no constitutional symptoms such as fever, chills, fatigue, or weight loss, and denied respiratory, urinary, or gastrointestinal complaints. He had no history of atopy, drug allergies, or chronic medical illness, and family history was unremarkable. Prior to evaluation, he had visited multiple clinics and received empirical treatment with various topical formulations, oral antibiotics, and antihistamines without clinical benefit, though topical corticosteroids provided transient partial reduction of local erythema and swelling.\n\nOn physical examination, vital signs were normal. Dermatologic examination revealed multiple discrete, hyperkeratotic nodular lesions with erythematous, prominent borders localized to the face and upper lip, with normal intervening and surrounding skin. There was no regional lymphadenopathy in the head or neck, and systemic physical examination was unremarkable.\n\nRoutine blood tests, including complete blood count and biochemical profiles, were normal. Plain chest radiography showed normal lung fields without infiltrates, cavitary lesions, or lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial pyoderma / ecthyma",
+      "rule_out_reason": "Infectious impetigo or ecthyma causes crusted and erythematous perioral lesions, but is rapidly responsive to antibacterial agents, whereas this patient's lesions showed no response to multiple systemic oral antibiotics and topical treatments.",
+      "quote": "The patient had visited multiple physicians/clinics and had been treated with multiple topical therapies, oral antibiotics, and antihistamines but the medications had no affect on the lesions."
+    },
+    {
+      "candidate": "Allergic or contact dermatitis",
+      "rule_out_reason": "Pruritic facial plaques that partially improve with topical corticosteroids can mimic allergic or contact eczema; however, the discrete hyperkeratotic nodular morphology and subepithelial tuberculoid granulomas with multinucleated giant cells rule out a primary eczematous dermatosis.",
+      "quote": "Topical corticosteroids subsided inflammation and swelling of the skin lesions. Finally, a skin biopsy, a chest x-ray and blood tests were performed."
+    },
+    {
+      "candidate": "Cutaneous leishmaniasis",
+      "rule_out_reason": "Cutaneous leishmaniasis is highly endemic in Iran and characteristically manifests as chronic facial nodules or crusted plaques; however, histopathology revealed epithelioid granulomas containing acid-fast bacilli on Ziehl-Neelsen stain rather than Leishmania amastigotes.",
+      "quote": "Due to the high prevalence of TB infection in North-Western Iran, no response to medications but topical corticosteroids, and normal blood tests we suspected the cutaneous manifestation of TB in spite of its rarity."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred with histopathological analysis of the skin biopsy, which demonstrated multiple subepithelial granulomas composed of epithelioid cells, multinucleated giant cells, and lymphocytes, confirmed as Mycobacterium tuberculosis infection by positive Ziehl-Neelsen acid-fast staining and a strongly reactive purified protein derivative (PPD) skin test.",
+      "quote": "The Ziehl-Neelsen stained histopathological assessment and positive PPD test confirmed the tuberculosis diagnosis. The patient underwent standard anti-TB regimens involving 2 months of quadruple therapy of isoniazid, rifampin, pyrazinamide, and ethambutol followed by a further 4 months of isoniazid plus rifampin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case prompt strictly covers clinical history, occupational plastering exposure in Iran, facial lesion exam, normal routine labs, and normal chest radiography prior to skin biopsy and acid-fast staining. Zero pathogen names in prompt."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9571235_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 41-year-old woman in Madagascar presented with chronic dry cough and was found to have a solitary subpleural pulmonary nodule with a ground-glass halo and peripheral eosinophilia. The clinical challenge lies in distinguishing an early thoracic malignancy or pulmonary tuberculosis from an ectopic helminthic granuloma (pulmonary schistosomiasis), particularly when classic urinary and intestinal manifestations are completely absent.\n2. Admission Breakpoint: The admission breakpoint falls immediately after initial specialist thoracic surgical consultation and cross-sectional imaging (identifying the 15 x 14 mm right upper lobe nodule and stable hepatic hemangioma), before specific send-out serologies, GeneXpert PCR, and stool/urine parasitological investigations.\n3. Differential Distinctions: Pulmonary tuberculosis was excluded by negative GeneXpert DNA testing and lack of constitutional symptoms. Invasive pulmonary neoplasm was considered due to the subpleural solitary nodule but favored inflammatory etiology given marked peripheral eosinophilia and lack of contrast enhancement. Amebiasis was excluded by negative amoebic serology and benign hepatic nodule characteristics. Diagnostic confirmation was cemented by positive Schistosoma serology and complete nodule involution following targeted praziquantel therapy.",
+  "case_prompt": "A 41-year-old woman residing in the western region of Madagascar presented to the thoracic surgery outpatient clinic for evaluation of chronic dry cough. She was an office worker and had no significant prior medical history. She was a lifetime non-smoker, lived with two family members without respiratory symptoms, and reported no history of subjective fevers, night sweats, or unintentional weight loss.\n\nOn physical examination, she was in good general health and hemodynamically stable. Examination of the head, neck, heart, abdomen, and lungs was unremarkable, with clear breath sounds bilaterally and no peripheral lymphadenopathy.\n\nInitial laboratory evaluation revealed marked leukocytosis with prominent eosinophilia. Liver biochemical tests, including serum transaminases, gamma-glutamyl transferase, alkaline phosphatase, and total bilirubin, were normal. A standard frontal chest radiograph demonstrated clear lung fields without focal consolidation, masses, or pleural effusion. Due to persistent coughing, a contrast-enhanced thoraco-abdominal computed tomographic (CT) scan was obtained, revealing a 15 x 14 mm solid subpleural nodule in the right upper lobe adjacent to the anterior arch of the fourth rib, surrounded by a halo of ground-glass opacity, without significant contrast enhancement. An incidental hypodense subcapsular nodule in hepatic segment VI was also noted, which demonstrated peripheral arterial enhancement with portal-phase equilibration on CT and a well-circumscribed, homogeneous hyperechoic appearance on ultrasound.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary tuberculosis",
+      "rule_out_reason": "Considered high on the differential diagnosis given the high endemicity in Madagascar, chronic cough, and nodular parenchymal lesion; excluded by preserved general condition, lack of constitutional symptoms, and negative molecular testing for Mycobacterium tuberculosis.",
+      "quote": "Genexpert test for Koch bacillus DNA was negative."
+    },
+    {
+      "candidate": "Primary bronchogenic carcinoma / solitary pulmonary metastasis",
+      "rule_out_reason": "Prompted initial referral to the thoracic surgery department due to the solid subpleural nodule; ruled out by young non-smoking status, lack of internal contrast enhancement, surrounding ground-glass halo, peripheral eosinophilia, and subsequent complete radiologic disappearance with anti-helminthic therapy.",
+      "quote": "This was a 41-year-old woman, a bureaucrat in the western region of Madagascar, who presented episodes of chronic dry coughs which justified a consultation in the Thoracic Surgery service... In view of the atypical appearance and small size of the nodule and the positivity of bilharzia serology, awaiting further check, an anti-bilharzia treatment test with praziquantel at 40 mg / kg in a single dose was initiated."
+    },
+    {
+      "candidate": "Invasive amebiasis / amoebic abscess",
+      "rule_out_reason": "Considered because of concurrent pulmonary and hepatic nodular findings with peripheral eosinophilia in an endemic area; excluded by normal liver biochemistries and negative amoebic serological testing.",
+      "quote": "Hepatic transaminases, hepatitis and amoebic serology as well as gamma globulin transferase, bilirubinemia and alkaline phosphatase were unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Demonstration of positive Schistosoma serology in the context of prominent peripheral eosinophilia and solitary subpleural nodule, followed by rapid symptom resolution and radiologic disappearance (>75% reduction at 3 months, complete resolution at 6 months) after a single dose of praziquantel, confirmed pulmonary nodular schistosomiasis.",
+      "quote": "Schistosoma serology was positive and there was an eosinophilic polynuclear leukocytosis... Three months later, control of bilharzia serology returned to normal, and CT-scan showed reduction of more than 75% in the size of the nodule and disappearance of the surrounding ground glass opacity... The third CT scan performed three months from the previous one showed the disappearance of the nodular lesion."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation cleanly separated at the admission/thoracic surgery consultation breakpoint. Zero mention of Schistosoma, bilharzia, GeneXpert, or praziquantel in case prompt. Eosinophilic leukocytosis and thoracic/abdominal imaging findings preserved faithfully."
+}

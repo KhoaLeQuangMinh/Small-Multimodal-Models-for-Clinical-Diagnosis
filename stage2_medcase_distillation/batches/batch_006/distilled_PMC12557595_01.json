@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12557595_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 9-year-old girl from an endemic rural district presents with intermittent upper abdominal pain and cough, found to have an isolated multiloculated cystic lesion located in the pancreatic body and tail rather than the typical hepatic or pulmonary sites. The unusual anatomical localization leads to diagnostic ambiguity between congenital/neoplastic pancreatic cysts, cystic lymphangioma, and hydatid disease.\n2. Admission Breakpoint: The breakpoint is positioned immediately after initial emergency/outpatient presentation, baseline laboratory investigations, chest HRCT, and bedside abdominopelvic ultrasound revealing the pancreatic tail multiloculated cyst, before contrast-enhanced multiphasic CT misinterpretation, MRI, and operative exploration.\n3. Differential Distinctions: Congenital pancreatic cysts and epithelial cysts (serous/mucinous) or pseudocysts were suspected due to perceived wall enhancement on contrast CT, but the lesion lacked internal mucin/debris and had pre-contrast hyperdense septa. Cystic lymphangioma was favored on MRI due to multilocularity and lack of diffusion restriction, but surgical exploration revealed characteristic daughter cysts and pathognomonic scolices/hooklets of Echinococcus granulosus.",
+  "case_prompt": "A 9-year-old girl presented to the hospital with a history of cough and intermittent upper abdominal pain. She had no significant past medical or surgical history and was taking no medications. She lived in Semirom, a rural district of Isfahan Province. There was no personal history of direct contact with dogs, cattle, sheep, or goats. Family history was notable for a close family member who recently underwent a percutaneous aspiration-injection-reaspiration procedure for a hepatic cyst.\n\nOn admission, physical examination was unremarkable: she was afebrile, hemodynamically stable, and abdominal examination revealed no palpable mass, tenderness, or organomegaly.\n\nInitial laboratory evaluation revealed:\n- Hemoglobin: 12.4 g/dL (reference: 11.5–15.5 g/dL)\n- White blood cell count: 5,200/mm³ (reference: 5,000–13,000/mm³) with a normal absolute eosinophil count\n- Liver function tests, renal function tests, serum amylase, and serum lipase were all within normal reference ranges.\n\nImaging studies:\n- High-resolution computed tomography (HRCT) of the chest performed to evaluate cough showed clear lung fields without parenchymal infiltrates or space-occupying lesions; however, limited visualization of the upper abdomen demonstrated a well-circumscribed, multiloculated cystic lesion with a relatively thick hyperdense wall and septa.\n- Abdominopelvic ultrasound identified a multiloculated, thick-walled cystic lesion measuring 50 × 50 × 67 mm (approximate volume 100 mL) in the pancreatic body and tail. There were no other intra-abdominal lesions, and no gallstones were observed.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital pancreatic cyst / Epithelial cyst (serous/mucinous) / Pseudocyst / Müllerian cyst remnants",
+      "rule_out_reason": "Considered when multiphase contrast-enhanced CT was interpreted without referencing non-contrast HRCT, causing non-contrast hyperdense walls and septa to be misclassified as enhancing tissue, leading radiologists to favor congenital or epithelial pancreatic cysts over rare parasitic pathology.",
+      "quote": "the hyperdense septa and wall were considered as enhancing and so congenital pancreatic cysts and less likely epithelial cysts (serous or mucinous), pseudocyst and remnants of mullerian cysts were reported. The hydatid cyst was also mentioned, but as a much less probable diagnosis according to its rarity and lab data correlation was recommended."
+    },
+    {
+      "candidate": "Cystic lymphangioma",
+      "rule_out_reason": "Favored on magnetic resonance imaging as the most probable benign retroperitoneal/pancreatic cystic lesion due to its thin-walled multiloculated appearance and absence of restricted diffusion on DWI/ADC, but definitively excluded during surgical visualization and pathology.",
+      "quote": "No evidence of true restriction diffusion was seen on DWI/ADC. Cystic lymphangioma (most favored), congenital cyst and, less likely, hydatid cyst was considered as differential diagnoses."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Laparotomy revealed a large multiloculated cyst in the pancreatic body and tail containing numerous daughter cysts, with pathological examination confirming Echinococcus granulosus.",
+      "quote": "A large cyst was seen in the pancreatic body and tail, which resembled hydatid. A marsupialization procedure was done, and many daughter cysts were extracted. The surgical appearance was in favor of a hydatid cyst. But for further evaluation the cyst content and wall were sent for pathological investigation, which confirmed the diagnosis by visualization of Echinococcus granulosus and inflammatory cells."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled strictly adhering to Stanford MedCaseReasoning principles. Zero spoilers in case prompt, exact quotes verified."
+}

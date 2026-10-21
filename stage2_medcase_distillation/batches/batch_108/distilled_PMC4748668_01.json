@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4748668_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 29-year-old non-smoking male presenting with subacute cough, low-grade fever, and diffuse bilateral 1-2 mm micronodules on chest CT in a miliary pattern, posing a critical diagnostic challenge between disseminated tuberculosis and sarcoidosis.\n2. Admission Breakpoint: Admission triage ends following history, physical exam, baseline hematology, biochemistry, sterile routine cultures, delayed-type hypersensitivity skin testing, and admission chest CT, strictly prior to flexible bronchoscopy and transbronchial lung biopsy/cryobiopsy.\n3. Differential Distinctions: Pulmonary sarcoidosis presents with identical diffuse micronodular infiltrates and transaminitis but exhibits well-formed non-caseating granulomas without necrosis on histopathology; hypersensitivity pneumonitis causes crackles and micronodules but requires specific antigen exposures and non-caseating centrilobular interstitial changes.",
+  "case_prompt": "A 29-year-old previously healthy man presented with a 1-month history of persistent fever and nonproductive cough. He denied shortness of breath, chest pain, hemoptysis, anorexia, or weight loss. He had no history of occupational or environmental exposure to farm dust, metallic dust, chemical fumes, or animal dander, and reported no household pets or birds. He denied alcohol, tobacco, or illicit substance use.\n\nOn physical examination, the pulse rate was 90 beats/min, respiratory rate 18 breaths/min, blood pressure 110/80 mmHg, and body temperature 100.0°F (37.8°C). Pulse oximetric oxygen saturation was 98% while breathing ambient room air. Auscultation of the chest revealed a few inspiratory crackles over both lung bases. The remainder of the physical examination was unremarkable.\n\nInitial complete blood count and renal function tests were normal. Serum biochemistry demonstrated mild transaminitis with AST 66 U/L and ALT 88 U/L, alongside normal alkaline phosphatase (126 U/L) and total bilirubin (0.7 mg/dL). Coagulation profile and urinalysis were normal. Blood and urine cultures were sterile. A purified protein derivative (PPD) skin test was reactive with 13 mm of induration. Chest radiography demonstrated diffusely distributed bilateral pulmonary nodules. Computed tomography (CT) of the chest showed randomly distributed tiny micronodules (1–2 mm in size) throughout both lungs, accompanied by mild hepatomegaly and a few subcentimetric lymph nodes at the porta hepatis and retroperitoneum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Sarcoidosis",
+      "rule_out_reason": "Diffuse bilateral 1–2 mm micronodules, subcentimetric lymphadenopathy, and elevated liver enzymes in a young adult strongly suggested pulmonary sarcoidosis; however, transbronchial cryobiopsy revealed necrotizing epithelioid cell granulomas with central necrosis and nuclear debris rather than non-caseating sarcoid granulomas.",
+      "quote": "The granulomas found in CB were well formed with Langhans type of giant cells and showed the presence of central necrosis with nuclear debris pointing toward a diagnosis of tuberculosis rather than sarcoidosis."
+    },
+    {
+      "candidate": "Hypersensitivity Pneumonitis / Occupational Pneumoconiosis",
+      "rule_out_reason": "Subacute cough, bibasilar crackles, and diffuse interstitial micronodules raised concern for hypersensitivity pneumonitis or dust-related pneumoconiosis; however, detailed history excluded avian, farm, metallic, or chemical antigen exposures, and histology confirmed caseating granulomatous inflammation.",
+      "quote": "There was no history of exposure to farm dust, metallic dust, fumes, or animal dander. The patient did not keep any pets or birds at home, and denied having any addictions."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of flexible transbronchial cryobiopsy specimens demonstrating well-formed epithelioid granulomas with Langhans giant cells and definitive central caseous necrosis, in the context of a 13 mm positive tuberculin skin test, established the diagnosis of pulmonary tuberculosis.",
+      "quote": "The granulomas found in CB were well formed with Langhans type of giant cells and showed the presence of central necrosis with nuclear debris pointing toward a diagnosis of tuberculosis rather than sarcoidosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation stops strictly before invasive bronchoscopic biopsy. No pathogen spoilers included."
+}

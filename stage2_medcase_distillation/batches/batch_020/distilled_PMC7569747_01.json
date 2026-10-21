@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7569747_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 33-year-old woman presenting with subacute cough, fever, cavitary pulmonary lesions, and profound asymptomatic baseline transaminitis (AST >600 U/L, ALT >300 U/L) without pre-existing liver disease or viral hepatitis, forcing a critical clinical decision on whether hepatic injury was drug-induced, viral, or an intrinsic systemic manifestation of the primary infection prior to initiating hepatotoxic therapy.\n2. Admission Breakpoint: The breakpoint occurs in the emergency department following chest radiography showing cavitary upper lobe disease and initial baseline laboratories, prior to AFB smear microscopy, GeneXpert confirmation, and viral hepatitis serology panels.\n3. Differential Distinctions: Acute viral hepatitis (HAV, HBV, HCV, HEV), toxic/drug-induced liver injury, and chronic liver disease were critical differentials for the marked transaminitis; non-reactive viral serologies, negative toxin history, and normal abdominal ultrasound confirmed absence of primary liver disease, while rapid normalization of liver enzymes under full anti-tubercular therapy confirmed tuberculosis-associated transaminitis.",
+  "case_prompt": "A 33-year-old Newar housewife from Kathmandu, Nepal, with no known chronic comorbidities, presents to the emergency department with a 20-day history of cough with occasional sputum production and a 10-day history of low-grade fever. She reports associated anorexia and weight loss. She denies chest pain, dyspnea, hemoptysis, headache, vomiting, altered mentation, abdominal pain, jaundice, dark or burning urine, hair loss, photosensitivity, arthralgias, or rash. She does not consume alcohol, acetaminophen, herbal remedies, or traditional medications. Her father-in-law was treated for a chronic pulmonary infection five years earlier, but there is no family history of liver disease.\n\nOn physical examination, body temperature is 101.0°F, pulse rate is 110 beats/min, respiratory rate is 26 breaths/min, and blood pressure is normal. Chest auscultation reveals diffuse fine crepitations throughout the left hemithorax without wheezing. There is no cervical or axillary lymphadenopathy, scleral icterus, or peripheral edema. Jugular venous pressure is not elevated. Abdominal examination is unremarkable with a non-tender, non-palpable liver and spleen.\n\nInitial laboratory evaluation reveals:\n- Complete Blood Count: White cell count 7,800/mm³ (80% neutrophils, 16% lymphocytes, 4% monocytes), hemoglobin 10.6 g/dL, red blood cells 3.6 x 10¹²/L, and platelet count 410,000/mm³.\n- Serum Biochemistry: Random blood glucose 126 mg/dL, blood urea 39 mg/dL, serum creatinine 1.1 mg/dL, sodium 138 mmol/L, and potassium 4.0 mmol/L.\n\nA plain chest radiograph demonstrates thick-walled cavitating lesions in the left upper lobe, patchy infiltrates in the left middle and lower lung zones, hyperinflated lung fields, and blunting of the left costophrenic angle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Hepatitis (HAV, HBV, HCV, HEV) / HIV-associated Hepatitis",
+      "rule_out_reason": "Marked elevation of AST (605 U/L) and ALT (308 U/L) initially suggested acute viral hepatitis co-infection, but comprehensive viral serologies were entirely non-reactive.",
+      "quote": "Serologies for HIV, HBsAg, Hepatitis C virus (HCV), Hepatitis A virus (HAV) and Hepatitis E virus (HEV) were nonreactive."
+    },
+    {
+      "candidate": "Toxin / Drug-Induced Liver Injury (DILI) or Alcoholic Hepatitis",
+      "rule_out_reason": "Severe transaminitis can result from xenobiotic exposure, but the patient had zero exposure to alcohol, acetaminophen, herbal compounds, or hepatotoxins.",
+      "quote": "She did not consume alcohol or any drugs including acetaminophen, aflatoxin or herbal products."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Tuberculosis with Tuberculosis-Associated Transaminitis",
+      "rule_out_reason": "The diagnosis was confirmed by sputum smear revealing 3+ acid-fast bacilli and GeneXpert detection of Rifampicin-sensitive Mycobacterium tuberculosis; remarkably, transaminases normalized following initiation of standard 4-drug anti-tubercular therapy.",
+      "quote": "Sputum smear examination showed 3+ acid fast bacilli. Sputum Gene Xpert was positive for Rifampicin sensitive tubercle bacilli."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation includes emergency labs and chest radiograph without AFB or GeneXpert spoilers. Focuses on the dilemma of starting hepatotoxic therapy in the presence of severe baseline transaminitis."
+}

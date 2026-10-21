@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5866905_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 47-year-old man presented with acute high fever (102°F), headache, dark urine, and right upper quadrant pain marking his 7th recurrent febrile illness over the course of 10 months following remote Venezuelan jungle exposure. Despite completing multiple directly observed courses of anti-hypnozoite therapy, the infection persistently relapsed without any re-exposure, challenging clinicians to differentiate drug-resistant strains, compliance failure, or host pharmacogenomic enzymatic inactivation.\n2. Admission Breakpoint: The admission breakpoint falls immediately following emergency evaluation, triage vital signs (fever to 102°F), physical assessment (RUQ tenderness), dark urine observation, and review of prior tropical exposure and treatment history, prior to repeat thin/thick blood smear examination and send-out host CYP2D6 pharmacogenomic testing.\n3. Differential Distinctions: Acute viral hepatitis, leptospirosis, or ascending cholangitis present with fever, RUQ pain, and dark urine, but do not manifest as stereotyped periodic relapsing paroxysms originating from an untreated latent hepatic hypnozoite reservoir. Relapse despite directly observed primaquine suggests impaired host cytochrome bioactivation rather than reinfection.",
+  "case_prompt": "A 47-year-old man presented to the emergency department with a 5-day history of progressive generalized weakness, lightheadedness, frontal headaches, and fevers up to 102°F (38.9°C). Four days prior to arrival, he developed an episode of nonbilious, nonbloody vomiting followed by right upper quadrant abdominal pain. Over the preceding three days, he endorsed several watery, nonbloody diarrheal bowel movements and noticed that his urine had become noticeably dark. He denied recent international travel or ill contacts.\n\nHis medical history was remarkable for an initial acute febrile illness accompanied by a seizure in July 2015 while spending 20 days in the Venezuelan jungle. Over the subsequent ten months following his return to the United States, he had experienced six distinct recurrent episodes of fever, chills, myalgias, nausea, and right upper quadrant discomfort. He had received multiple outpatient and inpatient courses of antimicrobial regimens, including standard and doubled-dose therapeutic regimens administered under directly observed therapy (DOT) at a hospital clinic, with the most recent course completed two months prior to this presentation.\n\nOn physical examination, he was febrile with a temperature of 102°F. He was alert and oriented. Sclerae were mildly icteric. Abdominal examination revealed tenderness to palpation in the right upper quadrant without peritoneal signs or organomegaly. Neurologic examination was non-focal. Urinalysis confirmed dark amber urine.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute viral hepatitis / Acute cholangitis",
+      "rule_out_reason": "While fever, right upper quadrant pain, vomiting, diarrhea, and dark urine suggested an acute hepatobiliary process, the clinical pattern represented episodic paroxysms tied to remote jungle exposure.",
+      "quote": "Four days before presenting, he felt lightheaded and had one episode of nonbilious, nonbloody vomiting, later developing right upper quadrant pain. He also endorsed several bouts of nonbloody diarrhea for the three days prior to arrival with associated fevers up to 102 F."
+    },
+    {
+      "candidate": "Patient non-adherence / True drug-resistant parasitic strain",
+      "rule_out_reason": "Repeated recrudescence after multiple regimens was thought to be compliance failure or parasite resistance, but compliance had been verified under directly observed therapy and without re-exposure.",
+      "quote": "By his seventh presentation, he had completed an approved treatment regimen, endorsed compliance, and had no risk for reexposure."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Smear confirmation of recurrent intraerythrocytic parasites and host CYP2D6 pharmacogenomic testing revealing a *4/*5 null-allele variation (poor metabolizer genotype) preventing metabolic bioactivation of primaquine, resolving with extended chloroquine prophylaxis.",
+      "quote": "When tested for the CYP2D6 allele during his May 8th admission, he was found to have a *4/*5 allele variation, which corresponds to a poor metabolizer. There are numerous alleles rendering CYP2D6 inactive, and *4/*5 are among those \"null alleles\"."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to Stanford MedCaseReasoning guidelines. Zero spoilers or pathogen names in admission prompt, differential ruled out with exact verbatim quotes, confirmed as relapsing Plasmodium vivax malaria."
+}

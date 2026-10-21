@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10757573_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: An 8-year-old boy presented with classic signs of acute appendicitis (Alvarado score of 9, right lower quadrant tenderness, fever, neutrophilic leukocytosis), but abdominal ultrasonography failed to demonstrate standard sonographic features of appendicitis and instead revealed an unusual intraluminal tubular structure in the distal ileal loops, creating clinical tension between uncomplicated appendicitis, mesenteric lymphadenitis/ileitis, and a parasitic etiology.\n2. Admission Breakpoint: The breakpoint occurs following initial emergency department evaluation, vital signs, physical examination, complete blood count, and abdominal ultrasonography, immediately prior to operative surgical exploration and histopathologic examination.\n3. Differential Distinctions: Isolated uncomplicated appendicitis was suspected given the high Alvarado score, but classic sonographic signs (aperistalsis, wall thickening, periappendiceal fluid) were absent, and surgery revealed coexistent intraluminal nematode infestation. Terminal ileitis and mesenteric adenitis were considered as non-surgical causes of pediatric right lower quadrant pain, but intraoperative exploration confirmed retrocecal appendicitis with a palpable intraluminal parasite in the ileum, subsequently cured with appendectomy and albendazole.",
+  "case_prompt": "An 8-year-old boy from a low socioeconomic background with no significant past medical or surgical history presented to the emergency department with a 3-day history of intermittent to severe cramping abdominal pain rated 7 out of 10. The pain was localized to the periumbilical region and the right lower quadrant and was accompanied by low-grade fever and persistent nausea. There was no notable family history.\n\nOn physical examination, the patient was hemodynamically stable. Vital signs included a temperature of 38.4 °C, blood pressure of 90/65 mmHg, heart rate of 93 beats per minute, respiratory rate of 17 breaths per minute, and oxygen saturation of 98% on room air. Abdominal examination revealed marked tenderness localized to the right lower quadrant with mild rebound tenderness; no palpable masses, hernias, or surgical scars were identified, and digital rectal examination was unremarkable. The clinical presentation corresponded to an Alvarado score of 9.\n\nInitial triage laboratory evaluation demonstrated leukocytosis with a white blood cell count of 18,500/mcL, a neutrophil proportion of 85%, and a platelet count of 200,000/mcL. Abdominal ultrasonography demonstrated a tubular hypoechoic structure within the distal ileal loops extending toward the appendiceal base; however, classic sonographic signs of appendicitis, including an aperistaltic, non-compressible, or dilated appendix or periappendiceal fluid collection, were absent.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Acute Appendicitis",
+      "rule_out_reason": "Although the clinical presentation and Alvarado score of 9 strongly suggested classic appendicitis, ultrasound did not show typical appendiceal dilatation, aperistalsis, or periappendiceal fluid, and exploration revealed co-occurrence with an intraluminal nematode infestation.",
+      "quote": "Despite acute appendicitis being the primary concern, as reflected by an Alvarado score of 9, we also considered various other potential diagnoses... the sonogram did not exhibit classic signs of appendicitis, such as an aperistaltic, non-compressible, or dilated appendix, or any peri-appendiceal fluid collection."
+    },
+    {
+      "candidate": "Terminal Ileitis",
+      "rule_out_reason": "Considered due to right lower quadrant pain, low-grade fever, and leukocytosis, but surgical exploration revealed no bowel wall inflammation, perforation, or intrinsic ileal obstruction.",
+      "quote": "we also considered various other potential diagnoses, such as terminal ileitis and mesenteric adenitis... However, no obstruction or perforation was evident at the site where a worm was palpated approximately 30 cm from the ileocecal valve."
+    },
+    {
+      "candidate": "Mesenteric Adenitis",
+      "rule_out_reason": "A common mimicker of acute appendicitis in pediatric patients presenting with fever, nausea, and right lower quadrant periumbilical pain; ruled out by operative confirmation of retrocecal appendicitis and parasite identification.",
+      "quote": "we also considered various other potential diagnoses, such as terminal ileitis and mesenteric adenitis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal ultrasonography identified an intraluminal tubular structure extending to the appendiceal base, and intraoperative exploration confirmed acute retrocecal appendicitis alongside a palpable worm 30 cm from the ileocecal valve; single-dose albendazole led to expulsion of the nematode in stool and histopathological confirmation of concurrent appendicitis and Ascaris lumbricoides infestation.",
+      "quote": "Intraoperatively, retrocecal appendicitis was confirmed, and it was observed that the Ascaris had shifted from its location, as indicated by sonographic findings. However, no obstruction or perforation was evident at the site where a worm was palpated approximately 30 cm from the ileocecal valve... adjusted post-operatively to include a single dose of albendazole (400 mg), leading to the successful expulsion of the worm in the patient's stool within 24 hours post-surgery, and the histopathological examination confirmed the co-occurrence of Ascaris lumbricoides infestation and appendicitis."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation completed following Stanford MedCaseReasoning guidelines. Admission prompt captures triage presentation and bedside ultrasound findings while strictly omitting species and parasite names. Reasoning incorporates direct quotes from the report."
+}

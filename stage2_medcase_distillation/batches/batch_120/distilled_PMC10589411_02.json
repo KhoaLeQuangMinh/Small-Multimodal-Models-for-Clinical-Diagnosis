@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10589411_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old woman presents with 1 week of lower abdominal pain, ascites, an adnexal mass measuring 56x48 mm on ultrasound, elevated CA 125 (198 U/mL), and CT findings suggestive of advanced ovarian malignancy with peritoneal carcinomatosis. The core clinical challenge is avoiding the diagnostic trap of presumed ovarian carcinoma in a young female and recognizing peritoneal tuberculosis as an insidious, treatable mimicker.\n2. Admission Breakpoint: Admission triage ends following initial clinical evaluation, pelvic ultrasound, baseline laboratory tests (normal WBC of 6,000/\u00b5L, mild anemia Hb 10.4 g/dL, CA 125 elevated at 198 U/mL), and abdominopelvic CT showing adnexal mass, ascites, and peritoneal carcinomatosis features with clear lungs. Confirmatory testing begins with surgical exploration (mini-laparotomy) and peritoneal/omental tissue histopathology.\n3. Differential Distinctions: Advanced ovarian adenocarcinoma with peritoneal carcinomatosis is ruled out by intraoperative visualization of preserved ovaries with tubal expansion and histopathology showing granulomatous inflammation without malignant cells. Peritoneal mesothelioma or metastatic gastrointestinal carcinoma is excluded by the absence of malignant cells on histopathology and rapid clinical cure with anti-tuberculosis therapy.",
+  "case_prompt": "A 27-year-old woman, gravida 1 para 1, is referred to the emergency department with a 1-week history of lower abdominal pain localized to the hypogastric region. She reports subjective fevers at home, although she is afebrile on arrival.\n\nOn physical examination, she is hemodynamically stable. Abdominal examination reveals moderate abdominal distension with shifting dullness indicative of ascites, but without guarding, rigidity, or peritoneal signs.\n\nEmergency abdominal ultrasound confirms moderate ascites and demonstrates a well-delineated ovarian mass measuring 56x48 mm.\n\nLaboratory testing reveals a normal white blood cell count of 6,000/\u00b5L and a hemoglobin level of 10.4 g/dL. Serum cancer antigen 125 (CA 125) is elevated at 198 U/mL. An abdominal and pelvic computed tomography (CT) scan shows an adnexal mass with features interpreted as peritoneal carcinomatosis and ascites; concurrent chest imaging is completely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Advanced ovarian adenocarcinoma with peritoneal carcinomatosis",
+      "rule_out_reason": "The leading clinical and radiologic diagnosis based on the 56x48 mm adnexal mass, ascites, markedly elevated CA 125 (198 U/ml), and peritoneal nodularity on CT scan, but disproven intraoperatively when the ovaries were found to be intact without a primary ovarian tumor.",
+      "quote": "An additional CT scan was in favor of a possible malignant ovarian mass with peritoneal carcinomatosis, with normal chest images."
+    },
+    {
+      "candidate": "Peritoneal carcinomatosis / Malignant peritoneal mesothelioma",
+      "rule_out_reason": "Considered due to the diffuse small bowel and peritoneal deposits with mesenteric lymphadenopathy found on exploration, but anatomopathological analysis confirmed benign granulomatous disease and excluded neoplastic or malignant cells.",
+      "quote": "subsequently, the patient underwent a mini-laparotomy, finding no ovarian mass but an increase in the volume of the ovarian tubes as well as several peritoneal and small bowel deposits (Figure 1) and mesenteric lymphadenopathy (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Peritoneal Tuberculosis",
+      "rule_out_reason": "Confirmed when histopathological examination of multiple peritoneal and epiploic nodule biopsies demonstrated necrotizing granulomatous inflammation diagnostic of peritoneal tuberculosis without any malignant cells.",
+      "quote": "The anatomopathological examination of the various epiploic peritoneal samples and nodules was in favor of peritoneal tuberculosis, without the presence of cells suspected of malignancy."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative preserves full clinical ambiguity mimicking ovarian cancer. Strict zero leak of laparotomy, histology, or tuberculosis in prompt. Verbatim quotes match article text."
+}

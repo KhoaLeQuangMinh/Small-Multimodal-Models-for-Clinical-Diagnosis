@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9132012_01",
+  "disease": "Foodborne Trematodes",
+  "think": "<think>\n1. Core Clinical Tension: An asymptomatic 31-year-old female presents postpartum with extreme hypereosinophilia (72%) and a focal hepatic lesion discovered incidentally during pregnancy screening. The diagnostic tension lies in distinguishing clonal hematologic hypereosinophilic neoplasms or isolated tissue nematode infection from a dual parasitic coinfection involving occult hepatic trematodiasis.\n2. Admission Breakpoint: The breakpoint is set at admission following delivery for extensive diagnostic workup, encompassing baseline physical examination, complete blood count showing profound hypereosinophilia (11.37 x 10^9/L), normal baseline liver enzymes/tumor markers, negative fecal ova/parasite exams, and routine abdominal Doppler ultrasound demonstrating a hypoechoic hepatic lesion.\n3. Differential Distinctions: Clonal hypereosinophilic syndrome (HES) or chronic eosinophilic leukemia (CEL) presents with massive eosinophilia and bone marrow involvement, but is excluded by absence of clonal precursor proliferation and negative FIP1L1-PDGFRA gene testing. Isolated hepatic trichinellosis is suspected due to undercooked pork ingestion and initial positive serology, but persistence of marked hypereosinophilia and appearance of a new expanding periportal hepatic lesion despite anthelmintic therapy indicates coinfection; metagenomic sequencing and PCR from liver biopsy confirm foodborne trematode infection.\n</think>",
+  "case_prompt": "<case_prompt>\nA 31-year-old female office worker presents for comprehensive diagnostic evaluation of persistent and worsening hypereosinophilia, initially detected on routine antenatal screening (eosinophil count 0.34 x 10^9/L, 6.3%) and escalating postpartum. She is asymptomatic, denying fever, rash, abdominal pain, or myalgias. Her dietary history includes past consumption of scalded or grilled pork that may have been undercooked, as well as a habit of eating raw vegetables. She denies animal exposures, illicit drug use, travel history, or a family history of inflammatory disorders. Serial stool microscopic examinations demonstrate no parasites, ova, or cysts.\n\nFollowing delivery, she is admitted for evaluation. Repeat complete blood count reveals marked leukocytosis with an absolute eosinophil count of 11.37 x 10^9/L (72.0% eosinophils). Serum alanine aminotransferase, aspartate aminotransferase, albumin, and globulin are within normal ranges. Inflammatory markers, including C-reactive protein and erythrocyte sedimentation rate, are mildly elevated. Serum tumor markers are normal. Routine abdominal color Doppler ultrasonography reveals a 4.1 x 2.0 cm hypoechoic area in the posterior right hepatic lobe, initially interpreted as possible focal steatosis.\n</case_prompt>",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Clonal Hypereosinophilic Syndrome / Chronic Eosinophilic Leukemia",
+      "rule_out_reason": "Considered due to the massive peripheral eosinophilia (72%) and hypercellular bone marrow (35% eosinophils); excluded by the lack of clonal proliferation of eosinophil precursors and a negative FIP1L1-PDGFRA fusion gene assay.",
+      "quote": "However, the FIP1L1-PAGFRalpha gene test, a clonal marker for hypereosinophilic syndrome (HES) or chronic eosinophilic leukemia (CEL), was negative."
+    },
+    {
+      "candidate": "Isolated Hepatic Trichinellosis",
+      "rule_out_reason": "Initially diagnosed based on positive anti-T. spiralis IgG serology and undercooked pork consumption; ruled out as an isolated process because anthelmintic treatment failed to lower eosinophil counts, IgE surged above 2,500 IU/mL, and an extending necrotizing hepatic lesion emerged adjacent to the biliary tract.",
+      "quote": "Based on these results, the patient was initially diagnosed with hepatic trichinellosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was percutaneous liver biopsy histopathology revealing eosinophilic abscess formation, with metagenomic next-generation sequencing (mNGS) identifying 1,299 species-specific reads of Fasciola hepatica, confirmed by PCR, establishing a coinfection.",
+      "quote": "Liver sample was also collected to identify the pathogen using metagenomic next generation sequencing (mNGS) technology, the number of species-specific reads aligning to the Fasciola hepatica (F. hepatica) genome in the liver biopsy was 1,299 (Supplementary Table 1, Figure 3A), which was further confirmed by polymerase chain reaction (PCR) (Supplementary Table 2, Figures 3B,C)."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to admission breakpoint. Clean prompt without pathogen names. Verbatim quotes from source text."
+}

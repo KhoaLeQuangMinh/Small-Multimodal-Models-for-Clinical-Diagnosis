@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11425589_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 6-year-old child presenting acutely with fever, abdominal pain, severe hypoxemia (oxygen saturation 82%), leukocytosis, and left lung consolidation strongly mimics severe community-acquired bacterial pneumonia or lung abscess; persistent fevers despite multiple broad-spectrum antibiotics and post-infusion urticaria distract from zoonotic parasitic transmission from household canine contacts.\n2. Admission Breakpoint: The admission triage evaluation ends after physical exam, baseline triage laboratories (WBC, CRP, procalcitonin), and initial plain chest radiograph demonstrating left lung consolidation, immediately prior to subsequent hospital-course computed tomography, tertiary referral, and Echinococcus serology.\n3. Differential Distinctions: Acute bacterial lobar pneumonia and lung abscess typically improve with appropriate intravenous beta-lactams and vancomycin; cystic echinococcosis produces well-defined cystic or cavitary lesions in lung and liver associated with domestic dog exposure and confirmed by positive Echinococcus IgG serology.",
+  "case_prompt": "A 6-year-old girl from Ecuador with a history of asthma and allergic rhinitis presented to the emergency department with a 3-day history of abdominal pain, cough, fever, and vomiting on five occasions. Detailed exposure history revealed that the household kept three unvetted dogs. On physical examination, she was febrile with a body temperature of 38.0°C and displayed severe hypoxia with an oxygen saturation of 82% on ambient air. Chest auscultation revealed bilateral crackles and diminished breath sounds, particularly over the left hemithorax. Abdominal examination revealed diffuse mild tenderness without peritoneal signs. Laboratory workup showed a peripheral leukocytosis of 16,700/uL, an elevated C-reactive protein (CRP) of 64.9 mg/L, an elevated procalcitonin of 3.68 ng/mL, and a negative SARS-CoV-2 rapid antigen test. A baseline plain chest radiograph (CXR) revealed a dense consolidation in the left lung field, leading to an initial clinical diagnosis of acute pneumonia.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Bacterial Community-Acquired Pneumonia",
+      "rule_out_reason": "High fever, hypoxia, elevated procalcitonin, and left lung consolidation initially prompted empiric therapy for acute bacterial pneumonia; however, the patient failed to respond clinically and deteriorated on intravenous cephalosporins.",
+      "quote": "She was admitted, diagnosed with acute bacterial pneumonia, and initiated on ceftriaxone (1 g IV every 12 h) and acetaminophen (315 mg IV every 6 h) therapy."
+    },
+    {
+      "candidate": "Complicated Bacterial Pneumonia with Lung Abscess",
+      "rule_out_reason": "Persistent fever, worsening oxygen requirement, and appearance of a cavitary lesion in the left lower lobe suggested a necrotizing bacterial lung abscess; however, leukocytosis and inflammatory markers continued to spike despite broad-spectrum coverage with vancomycin and levofloxacin.",
+      "quote": "Consequently, it was decided to proceed with a chest CT (CCT), which revealed a cavitary lesion in the left inferior lobe, suggestive of complicated pneumonia with a lung abscess (Figure 1A)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of household exposure to three unvetted dogs, discovery of a coexisting cystic liver lesion on abdominal ultrasound, and a strongly positive Echinococcus granulosus IgG ELISA (20.28 U/mL) established definitive pulmonary and hepatic cystic echinococcosis.",
+      "quote": "The subsequent ELISA test for E. granulosus using the SERION ELISA Classic Echinococcus IgG ESR107G was positive (20.28 U/ml). A definitive diagnosis of pulmonary CE was made, revealing that the patient did not have isolated acute bacterial pneumonia nor was it associated with the current infectious process."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case. Case prompt concludes after baseline triage labs, physical exam, and initial CXR. Antibiotic therapy trials, chest CT cavitary progression, and Echinococcus ELISA excluded from prompt. Direct verbatim quotes provided."
+}

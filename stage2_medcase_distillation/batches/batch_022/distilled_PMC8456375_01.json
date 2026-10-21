@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8456375_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 33-year-old female presents with 1 week of spiking fevers, chills, diarrhea, dark urine, pale stools, peripheral lymphadenopathy (axillary and inguinal), and pancytopenia with severe intravascular hemolysis (markedly elevated LDH) after returning from Côte d'Ivoire. The constellation of acute fever, gastrointestinal symptoms, and peripheral lymphadenopathy can easily mislead clinicians toward viral mononucleosis (EBV/CMV), viral hepatitis, or enteric fever, delaying the recognition of acute protozoan hemolysis.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following emergency triage examination, documentation of high fever, conjunctival pallor, and lymphadenopathy, and baseline laboratory evaluation demonstrating pancytopenia and severe hemolysis, strictly prior to blood smear parasite identification and viral serology.\n3. Differential Distinctions: Acute EBV and CMV mononucleosis syndromes are ruled out by serologies indicating past exposure (positive IgG, negative IgM) and the presence of brisk intravascular hemolysis. Enteric fever and zoonoses are excluded by absence of raw milk or animal exposure and presence of hemolytic pancytopenia. Characteristic peripheral blood film findings demonstrating concurrent crescentic and amoeboid gametocytes confirm mixed malaria.",
+  "case_prompt": "A 33-year-old previously healthy female presents to an infectious disease department with a 7-day history of high fever, rigors, chills, anorexia, and generalized body pain, accompanied by dark urine, pale stools, and diarrhea. She recently returned from a 20-day trip to Côte d'Ivoire. She denies animal exposure, ingestion of unpasteurized milk, or medication use other than over-the-counter paracetamol. There is no personal or family history of hematologic disorders.\n\nOn physical examination, the patient appears acutely ill with pale conjunctivae. Vital signs reveal an oral temperature of 39.9 °C, heart rate of 118 beats per minute, blood pressure of 135/85 mmHg, and respiratory rate of 20 breaths per minute. Palpable lymphadenopathy is present in the left axillary region (nodes measuring 1 x 1 cm and 0.5 x 1.5 cm) and the left inguinal region (node measuring 0.5 x 2 cm). The skin is clear with no petechiae or exanthem.\n\nInitial laboratory evaluation demonstrates pancytopenia with a normocytic normochromic anemia. Liver function tests show borderline aminotransferase elevations and markedly elevated serum lactate dehydrogenase (LDH) consistent with active intravascular hemolysis. Both C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) are significantly elevated.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Epstein-Barr Virus (EBV) or Cytomegalovirus (CMV) Mononucleosis",
+      "rule_out_reason": "Acute viral mononucleosis was considered due to high fever, prominent peripheral lymphadenopathy, and pancytopenia, but serologies confirmed prior past immunity rather than acute active infection.",
+      "quote": "Serological testing included measuring the antibody levels (both their Immunoglobulin (Ig) IgG and IgM forms) for Epstein-Barr virus (EBV), and Cytomegalovirus (CMV). The patient's results were positive for both EBV IgG and CMV IgG ( Table 4)."
+    },
+    {
+      "candidate": "Enteric Fever / Zoonotic Infection (e.g., Brucellosis)",
+      "rule_out_reason": "Enteric pathogens and brucellosis were evaluated given travel to West Africa, diarrhea, pale stools, and fever of unknown origin, but history excluded unpasteurized dairy and animal contacts, and marked hemolysis pointed to intraerythrocytic parasitism.",
+      "quote": "The patient didn't have any form of comorbidities and denied any history of animal contact, immunocompromised status, or intake of any kind of prescribed or illicit drugs or raw milk ingestion during this period."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Mixed Malaria (Plasmodium falciparum and Plasmodium vivax)",
+      "rule_out_reason": "The clinical presentation of febrile hemolytic anemia in a traveler returning from an endemic region was definitively confirmed by microscopic examination of the peripheral blood smear identifying diagnostic morphological stages of both parasite species.",
+      "quote": "The peripheral blood smear (PBS) depicted P. falciparum gametocytes (crescent) and P. vivax gametocytes (of ameboid shape with Schuffner's dots)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic teaching case adhering strictly to Stanford MedCaseReasoning methodology. Presentation isolates Day 1 triage findings prior to blood smear parasite examination."
+}

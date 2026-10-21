@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2822819_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 43-year-old female presented with erythema nodosum, dry cough, bilateral hilar lymphadenopathy, elevated serum ACE (108 U/L), high BAL CD4/CD8 ratio (5.5:1), and bronchial biopsies demonstrating non-caseating granulomas\u2014findings classic for pulmonary and cutaneous sarcoidosis. However, HRCT also revealed apical-posterior cavitation and the PPD skin test was strongly positive (14 mm). Corticosteroid therapy unmasked an active underlying Mycobacterium tuberculosis infection.\n2. Admission Breakpoint: Admission triage concludes after documenting presentation with erythema nodosum and dry cough, vital signs, physical examination, baseline laboratory investigations (ESR 37 mm/hr, elevated CRP, elevated transaminases/GGT, normal renal function/calcium, elevated ACE 108 U/L, PPD 14 mm induration), spirometry, ABG, and initial plain chest radiograph (bilateral fibroindurative and micronodular interstitial infiltrates with hilar changes), immediately prior to invasive fiberoptic bronchoscopy, bronchial biopsy histopathology, and mycobacterial cultures.\n3. Differential Distinctions: Sarcoidosis was considered the primary diagnosis supported by erythema nodosum, high serum ACE, and non-caseating granulomas on lung biopsy, but coexistence of active pulmonary tuberculosis was proven by culture. Foreign body reaction was previously diagnosed on a facial biopsy following shrapnel trauma, which represented early cutaneous sarcoidal granulomas.",
+  "case_prompt": "A 43-year-old female refugee from Kosovo was admitted as an outpatient to a pulmonary disease clinic in 2003 with erythema nodosum and a dry cough. She had smoked up to 30 cigarettes daily and had otherwise been healthy, with a past medical history notable for wartime head and facial trauma from shelling in 1995. Three years before the onset of erythema nodosum, two small red subcutaneous nodules had appeared on her forehead near the left eyebrow; a previous histopathological examination of these lesions had demonstrated chronic granulomatous inflammation interpreted as a foreign body reaction.\n\nOn physical examination, she was afebrile and in good general condition. Tender erythematous nodules consistent with erythema nodosum were present on the lower extremities, along with dry cough on respiratory exam.\n\nLaboratory evaluation revealed an erythrocyte sedimentation rate (ESR) of 37 mm/hr (normal 0\u201315), leukocyte count of 9,030/mm\u00b3, red blood cell count of 3.7 \u00d7 10^6/mm\u00b3, and C-reactive protein of 9.8 mg/L. Liver chemistry tests showed AST 60 U/L, ALT 76 U/L, GGT 86 U/L, and alkaline phosphatase 79 U/L, while urea, creatinine, serum calcium, and 24-hour urine calcium were normal. Angiotensin-converting enzyme (ACE) was markedly elevated at 108 U/L (normal 0\u201356). A purified protein derivative (PPD) skin test (2 IU) demonstrated 14 mm of induration. Spirometry showed vital capacity 85%, forced vital capacity (FVC) 94.5%, FEV 77%, and FEV1/FVC 87.2% of predicted. Arterial blood gases showed pO2 9.8 kPa, pH 7.45, and diffusing capacity of carbon monoxide (DLCO) was 72%.\n\nPlain chest radiography revealed fibroindurative changes in both upper lobes with lung traction, a subpleural focus with ground-glass appearance in the left upper lobe, and bilateral micronodular interstitial infiltrations with fibrous changes of the hila.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated pulmonary and cutaneous sarcoidosis",
+      "rule_out_reason": "Initially favored due to erythema nodosum, elevated serum ACE (108 U/L), bilateral micronodular infiltrates with hilar adenopathy, high BAL CD4/CD8 ratio (5.5:1), and non-caseating granulomas on lung biopsy; however, positive culture confirmed concurrent active mycobacterial infection.",
+      "quote": "All relative findings, including pathohistological examination indicate lung sarcoidosis."
+    },
+    {
+      "candidate": "Foreign body granulomatous reaction",
+      "rule_out_reason": "Considered on prior facial biopsy following war shrapnel injury, but the subsequent development of erythema nodosum, elevated ACE, and pulmonary lesions confirmed a systemic granulomatous disease process.",
+      "quote": "The biopsy test showed chronic granulomatous infection that was described as a reaction to a foreign body."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Despite negative Ziehl-Neelsen direct smear and absence of caseous necrosis on histology, mycobacterial liquid culture (MGIT) and Lowenstein-Jensen solid medium grew Mycobacterium tuberculosis after corticosteroid initiation, confirming pulmonary tuberculosis occurring simultaneously with sarcoidosis.",
+      "quote": "Three weeks after introducing corticosteroid therapy, culturing the sample on Lowenstein-Jensen solid medium by using liquid culture method MGIT (Mycobacterium Growth Indicator Tube), Mycobacterium tuberculosis was isolated."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "A rare documented case of simultaneous active pulmonary tuberculosis and sarcoidosis, where classic clinical, biochemical, and histopathologic signs of sarcoidosis masked occult mycobacterial infection that unmasked following systemic steroid initiation."
+}

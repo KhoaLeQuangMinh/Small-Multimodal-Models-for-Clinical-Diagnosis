@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11074860_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: A 10-year-old boy presents with subacute colicky lower abdominal pain progressing to acute mechanical small bowel obstruction, bilious emesis, obstipation, and localized peritoneal signs. The central clinical dilemma is differentiating recrudescent or cicatricial abdominal tuberculosis (\"Koch's abdomen\"), for which he completed treatment one year prior, from acute intraluminal bolus obstruction by helminths, as both entities can cause mural ileal thickening, peritoneal signs, and mesenteric lymphadenopathy in endemic settings.\n2. Admission Breakpoint: The admission breakpoint is established at the completion of initial emergency physical examination and noncontrast abdominal CT imaging demonstrating mechanical small bowel obstruction with distal ileal thickening, proximal dilatation, and mesenteric lymphadenopathy, immediately prior to exploratory laparotomy.\n3. Differential Distinctions: Recurrent abdominal tuberculosis was strongly suspected on history and CT findings of distal ileal thickening and mesenteric adenopathy, but was refuted intraoperatively by sterile ascites with normal adenosine deaminase (ADA) levels and negative histopathology. Mechanical obstruction was caused entirely by aggregated intraluminal worm boluses (Ascaris lumbricoides) leading to focal bowel ischemia.",
+  "case_prompt": "A 10-year-old boy presents to the emergency department with a 3-month history of recurrent colicky lower abdominal pain that has acutely worsened over recent days. The pain initially was mild and intermittent, causing him to occasionally miss school, and was partially alleviated with nonnarcotic analgesics. However, the pain recently became severe and intractable, accompanied by progressive abdominal distension, emesis, and complete obstipation without passage of feces or flatus.\n\nMedical history reveals that he completed a full course of antimycobacterial therapy one year earlier for suspected chronic intra-abdominal granulomatous disease; further diagnostic records from that episode are unavailable. He has no history of previous abdominal surgical interventions.\n\nOn physical examination, the child appears acutely ill with abdominal distension. Palpation demonstrates diffuse abdominal tenderness with marked rebound tenderness in the lower abdomen and localized muscular guarding. Digital rectal examination reveals an empty rectal vault with a collapsed lumen.\n\nNoncontrast CT imaging of the abdomen reveals marked dilation of the proximal small bowel with prominent mural thickening of the distal ileum and subcentimeter mesenteric lymph nodes, as well as intraluminal thread-like filling defects in the terminal ileum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Abdominal Tuberculosis (Koch's Abdomen)",
+      "rule_out_reason": "Strongly considered due to prior medical history and CT findings of terminal ileal thickening with mesenteric lymphadenopathy, but excluded by sterile ascites with normal adenosine deaminase (ADA) levels and mucosal histopathology showing no granulomas or evidence of tuberculosis.",
+      "quote": "Intraoperatively, there was 300 mL of ascitic fluid (culture was sterile with normal adenosine deaminase levels)... Histopathology showed roundworm eggs in the appendix and small bowel mucosa and lumen with no evidence of tuberculosis."
+    },
+    {
+      "candidate": "Adhesive or Post-inflammatory Small Bowel Obstruction",
+      "rule_out_reason": "Considered given the history of previous intra-abdominal inflammation, but no surgical adhesions were identified; rather, mechanical luminal occlusion was caused by intraluminal helminth aggregations.",
+      "quote": "There was no history of surgical interventions in the past... Small bowel was encased in a cocoon and filled with roundworms. There was a formation of worm balls in the proximal jejunum and ileum causing obstruction."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Emergency exploratory laparotomy revealed small bowel encasement and intraluminal worm balls obstructing the proximal jejunum and ileum with ischemic necrosis of the distal ileum, establishing mechanical soil-transmitted helminthic obstruction.",
+      "quote": "Small bowel was encased in a cocoon and filled with roundworms. There was a formation of worm balls in the proximal jejunum and ileum causing obstruction. A segment of ileum, two feet away proximal to the ileocecal junction, was found to be ischemic and was resected."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint preserved at the emergency evaluation and noncontrast CT imaging, prior to laparotomy. Zero pathogen names or spoilers in the presentation."
+}

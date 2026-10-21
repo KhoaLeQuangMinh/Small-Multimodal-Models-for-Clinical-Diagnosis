@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5807655_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 5-year-old child presents with a 3-month history of waxing and waning painless gross hematuria (tea-colored to reddish urine). In pediatric nephrology, painless tea-colored hematuria predominantly points toward glomerular diseases (post-streptococcal or autoimmune glomerulonephritis) or bacterial urinary infections. Automated urine microscopy failed to detect parasitic elements, leading to diagnostic confusion and unhelpful empiric antibiotics until manual concentrated sediment microscopy was pursued based on travel history.\n2. Admission Breakpoint: The admission clinical presentation concludes after the initial clinic evaluation, physical examination, baseline nephrology screening (ruling out acute glomerulonephritis and routine bacterial infection), and renal/bladder ultrasonography demonstrating bladder debris, immediately prior to manual centrifuged urine parasite microscopy and renal biopsy.\n3. Differential Distinctions: Post-infectious and autoimmune glomerulonephritis were ruled out by the absence of preceding pharyngeal/skin infections, normal blood pressure, absence of edema, and unremarkable renal biopsy findings. Bacterial urinary tract infection was excluded by the absence of dysuria, fever, or foul odor, along with failure to respond to empirical antimicrobial therapy. Urolithiasis was excluded by ultrasonography showing no stones. Manual centrifuged urine microscopy definitively revealed terminal-spined eggs confirming urinary schistosomiasis.",
+  "case_prompt": "A 5-year-old girl presented to a pediatric nephrology and hypertension clinic with a 3-month history of painless, waxing and waning gross hematuria. The urine varied between reddish and tea-colored, with blood present throughout the entire urinary stream. Prior to presentation, she had received empirical courses of oral antibiotics from a general practitioner for presumed urinary tract infection without clinical resolution.\n\nThe patient and her family reported no dysuria, urgency, increased urinary frequency, or passage of calculi. There was no history of preceding trauma, easy bruising, foul-smelling urine, recurrent fevers, or prior diagnosed urinary tract infections. There was no antecedent history of pharyngitis, skin impetigo, periorbital or peripheral edema, or alteration in urine output.\n\nOn physical examination, blood pressure readings were normal for age, sex, and height percentiles. Examination was notable for hypopigmented macules consistent with a known medical history of vitiligo and a soft grade II/VI pansystolic murmur. Abdominal examination was soft and non-tender without palpable masses or costovertebral angle tenderness.\n\nInitial diagnostic workup to evaluate for bacterial infection and autoimmune or post-infectious glomerulonephritis was undertaken. Initial automated urinalysis and automated flow imaging microscopy were non-diagnostic for parasitic pathogens. Renal and bladder ultrasonography revealed internal debris within the urinary bladder but was otherwise unremarkable, with normal renal architecture and no evidence of nephrolithiasis or hydronephrosis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Post-infectious or autoimmune glomerulonephritis",
+      "rule_out_reason": "Considered due to subacute painless tea-colored hematuria, but the patient had normal blood pressure, no edema, no preceding skin or pharyngeal infection, and kidney biopsy confirmed normal parenchyma with negative immunofluorescence.",
+      "quote": "Initially, the child underwent a workup to rule out bacterial infectious causes, glomerular, and autoimmune-related glomerulonephritis... Kidney biopsy pathology result was reported as normal light (H&E, special stains) and negative immunofluorescence"
+    },
+    {
+      "candidate": "Bacterial urinary tract infection (cystitis)",
+      "rule_out_reason": "Empirically treated by a general practitioner, but excluded based on persistent waxing and waning gross hematuria lacking dysuria, urgency, foul odor, or fevers.",
+      "quote": "She was treated with antibiotics by a general practitioner for a presumptive urinary tract infection. The severity of her gross hematuria was waxing and waning, persistent, and throughout the urination."
+    },
+    {
+      "candidate": "Urolithiasis",
+      "rule_out_reason": "Considered as a mechanical cause of gross hematuria, but the child lacked flank colic or stone passage, and ultrasound revealed only bladder debris without calculi.",
+      "quote": "There were no associated symptoms of dysuria, urgency, frequency, or stone passage... Kidney and bladder ultrasound was significant for bladder debris, otherwise unremarkable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Centrifuged manual urine sediment microscopy directly identified characteristic parasite eggs of S. haematobium after eliciting a history of travel to an endemic area.",
+      "quote": "A history of travel to a schistosomiasis endemic area was elicited on a subsequent visit, prompting a thorough ova and parasite examination of the urine. Manual urine microscopy on a centrifuged urine sample confirmed the diagnosis of S. hematobium infection."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized distillation of PMC5807655_01. The case prompt details the clinical presentation of chronic hematuria in a 5-year-old child up through initial physical exam, baseline triage testing, and ultrasound showing bladder debris. Zero mention of Schistosoma or tropical travel in the case prompt. The diagnostic reasoning documents the rule-outs and diagnostic pivot with direct quotes."
+}

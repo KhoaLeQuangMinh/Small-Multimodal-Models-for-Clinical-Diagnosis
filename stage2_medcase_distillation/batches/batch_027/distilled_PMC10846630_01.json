@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10846630_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 25-year-old immunocompetent male presents with a solitary, chronic indurated scaly facial plaque that progressed over six months in the complete absence of systemic or pulmonary symptoms. The central clinical dilemma is differentiating paucibacillary cutaneous tuberculosis (lupus vulgaris) from autoimmune discoid lupus erythematosus, cutaneous leishmaniasis, and tuberculoid leprosy on a purely clinical and morphological basis.\n2. Admission Breakpoint: Day 1 outpatient clinical triage following physical examination, diascopy, baseline hematology and biochemistry, and normal plain chest radiography, immediately prior to the 48-hour tuberculin skin test evaluation, fungal/mycobacterial cultures, and skin punch biopsy histopathology.\n3. Differential Distinctions: Discoid lupus erythematosus is excluded by the lack of follicular plugging, adherent carpet-tack scale, telangiectasia, and scarring; tuberculoid leprosy is excluded by preserved cutaneous tactile sensation; lupus vulgaris is supported by characteristic peripheral apple-jelly nodules on diascopy and high tuberculin reactivity despite typical paucibacillary smear negativity.",
+  "case_prompt": "A 25-year-old male presented to the outpatient clinic with a thick, scaly lesion on his left cheek that had been present for six months. He had been well until six months prior, when he noted small papules on the cheek that gradually enlarged and coalesced into a single lesion. The lesion was painless, non-pruritic, and lacked discharging sinuses or ulceration. The patient reported no history of fever, weight loss, night sweats, or other constitutional symptoms. He had no history of preexisting chronic dermatologic conditions, immunosuppression, prior cutaneous trauma, or known sick contacts. He was a working professional with no history of tobacco smoking, alcohol consumption, or illicit substance use.\n\nOn physical examination, the patient was comfortable and hemodynamically stable. There was no cyanosis, icterus, pallor, lymphadenopathy, peripheral edema, clubbing, or koilonychia. Systemic cardiovascular, respiratory, abdominal, and neurological examinations were unremarkable. Dermatologic examination revealed a solitary, well-defined, non-tender, pink-colored indurated plaque measuring 4 cm x 3 cm on the left cheek, featuring central atrophy, minimal surface scaling, and an elevated irregular peripheral border. There were no telangiectasias, scarring, adherent scales, follicular plugging, or loss of sensation over the lesion. Diascopy of the plaque demonstrated an apple-jelly color at the periphery.\n\nBaseline laboratory investigations, including complete blood count and standard serum biochemistry, were unremarkable. Plain chest radiography showed clear lung fields without infiltrates, consolidation, cavitation, or lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Discoid Lupus Erythematosus",
+      "rule_out_reason": "Discoid lupus erythematosus classically presents on sun-exposed facial areas with follicular plugging, adherent carpet-tack scale, telangiectasia, and cicatricial atrophy, none of which were observed in this patient's lesion.",
+      "quote": "There were no signs of telangiectasia, scarring, adherent scales, follicular clogging, or loss of sensation (Figure 1)."
+    },
+    {
+      "candidate": "Tuberculoid Leprosy",
+      "rule_out_reason": "Tuberculoid leprosy (Hansen's disease) typically manifests as hypopigmented or erythematous plaques associated with definite cutaneous sensory loss and thickened peripheral nerves, whereas sensation across this lesion was completely intact.",
+      "quote": "There were no signs of telangiectasia, scarring, adherent scales, follicular clogging, or loss of sensation (Figure 1)."
+    },
+    {
+      "candidate": "Deep Fungal Infection / Cutaneous Leishmaniasis",
+      "rule_out_reason": "Chronic granulomatous or lupoid lesions of the face can mimic deep fungal infections or cutaneous leishmaniasis, but cultures for bacteria, fungi, and acid-fast bacilli were completely negative.",
+      "quote": "The culture yielded negative results for bacteria, fungus, and acid-fast bacteria."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The demonstration of peripheral apple-jelly nodules on diascopy, a strongly positive tuberculin skin test (25 mm induration), and histopathologic confirmation of well-formed dermal epithelioid granulomas with Langhans giant cells established the diagnosis of lupus vulgaris (cutaneous tuberculosis).",
+      "quote": "Diascopy showed an apple jelly color at the periphery... the tuberculin skin test resulted in a strong positive with a 25 mm diameter... Both the clinical and microscopic characteristics supported the lupus vulgaris diagnosis."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Admission presentation is restricted to pre-biopsy Day 1 triage findings with diascopy and baseline labs, containing zero spoilers or disease names. Verbatim quotes match source text exactly."
+}

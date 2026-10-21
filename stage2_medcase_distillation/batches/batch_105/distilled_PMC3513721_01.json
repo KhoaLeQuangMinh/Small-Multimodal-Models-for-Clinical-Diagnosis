@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3513721_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 24-year-old male presents with acute stinging chest pain, dyspnea, distant heart sounds, and decreased breath sounds in the right hemithorax. Initial plain chest radiography reveals mediastinal enlargement, right costophrenic sinus blunting, and an apical contour abnormality that resembles a solid mediastinal or cardiac neoplasm. The primary diagnostic challenge is distinguishing a primary solid or cystic cardiac neoplasm or purulent bacterial pericarditis/myocardial abscess from an isolated myocardial parasitic cyst in a young patient who cohabitates with domestic pets.\n2. Admission Breakpoint: The admission breakpoint is reached following initial history, physical examination, normal electrocardiography, and chest teleradiography showing mediastinal enlargement, right costophrenic angle closure, and an apical radiolucent extraspur, immediately prior to transthoracic echocardiography revealing a mobile scolex.\n3. Differential Distinctions: Solid cardiac or mediastinal tumors (e.g., cardiac fibroma, teratoma, or sarcoma) are ruled out by radiolucency on radiography and fluid-filled cystic architecture; pyogenic myocardial abscess is ruled out by sterile culture results; echinococcosis is definitively established by echocardiographic visualization of a mobile scolex and histopathological identification of germinative and cuticular membranes.",
+  "case_prompt": "A 24-year-old male presented with pungent, stinging chest pain accompanied by shortness of breath. His social history was notable for keeping multiple cats and dogs as domestic pets. On physical examination, vital signs were stable. Cardiovascular examination revealed markedly decreased heart sounds, with cardiac beats sounding distant and barely audible. Respiratory examination demonstrated diminished breath sounds over the middle and basal segments of the right lung. Other systemic examinations were normal. Electrocardiography demonstrated no pathological abnormalities. Chest teleradiography revealed an enlarged mediastinum, blunting (closure) of the right costophrenic sinus, superior and leftward displacement of the cardiac apex, and an extraspur at the cardiac apex that appeared as radiolucent tissue rather than a solid mass.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Solid cardiac neoplasm or mediastinal mass",
+      "rule_out_reason": "Considered due to the enlarged mediastinum and apical extraspur, but plain radiography and subsequent cross-sectional evaluation revealed the apical mass was radiolucent and cystic rather than a solid infiltrative neoplasm.",
+      "quote": "When we looked more carefully, we noticed that extraspur at apex was not a solid mass. Instead, it was a kind of a radiolucent tissue"
+    },
+    {
+      "candidate": "Pyogenic myocardial abscess or bacterial pericarditis",
+      "rule_out_reason": "Considered given the aspiration of purulent-appearing fluid from the mass cavity, but microbiologic evaluation was negative for bacterial growth.",
+      "quote": "Laboratory results revealed no reproduction at culture-antibiogram."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Myocardial hydatid cyst)",
+      "rule_out_reason": "Transthoracic echocardiography directly visualized a mobile scolex within a cystic left ventricular lesion, and surgical exploration confirmed germinative membranes, daughter vesicles, and cuticular layers with eosinophilic inflammation.",
+      "quote": "Transthoracic echocardiography revealed cystic structure with mobile-scolex inside."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly at the admission breakpoint following plain teleradiography and cardiac physical examination. Case prompt contains zero pathogen names, zero diagnostic leaks, and zero post-admission tests. Differential rule-outs and diagnostic pivot are supported by exact verbatim quotes from the source text."
+}

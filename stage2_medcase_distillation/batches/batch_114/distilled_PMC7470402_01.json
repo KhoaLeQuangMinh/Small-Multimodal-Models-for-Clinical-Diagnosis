@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7470402_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 55-year-old male farmer in northern India presents with acute/subacute progressive quadriparesis and acral paresthesias following a febrile flu-like illness, initially prompting a provisional diagnosis of Guillain-Barré syndrome (GBS). The underlying reality of chronic hypopigmented anesthetic skin patches treated with multi-drug therapy complicates the neurological localization, demanding differentiation between an acute post-infectious polyradiculoneuropathy, multi-agent drug-induced peripheral neuropathy, and infectious neuropathic exacerbation/co-morbidity.\n2. Admission Breakpoint: The breakpoint is positioned after the neurology ward admission, detailed medical history (revealing the 8-month history of hypopigmented anesthetic lesions and 6 months of multi-agent antimicrobial therapy), and neurological physical exam (quadriparesis and distal acral tingling), strictly prior to six-site slit-skin scraping, acid-fast staining, and nocturnal microfilarial blood smears.\n3. Differential Distinctions: Guillain-Barré syndrome typically presents with ascending post-infectious weakness and areflexia, but does not account for focal cutaneous hypopigmented patches with thermal/tactile hypoesthesia. Dapsone-induced peripheral neuropathy presents as a motor-predominant axonal polyneuropathy in patients on dapsone, but would not produce inflammatory cutaneous infiltration or acid-fast bacilli on slit-skin smear.",
+  "case_prompt": "A 55-year-old male farmer presented to the neurology outpatient department in northern India with progressive weakness involving all four extremities over the preceding 15 days. Approximately 1 week prior to the onset of weakness, he had experienced an episode of fever with flu-like symptoms that subsided with antipyretic therapy. Following this febrile illness, he noted a tingling sensation in the toes of both feet and the fingers of his left hand, which was followed by gradual, simultaneous weakness across all four limbs.\n\nUpon hospital admission to the neurology ward, a detailed history revealed that he had noted hypopigmented patches with loss of sensation on his left forearm approximately 8 months earlier, for which he had been prescribed a multi-agent antimicrobial regimen (rifampicin, dapsone, and clofazimine) by a local physician and had been taking these medications over the past 6 months.\n\nOn physical examination, the patient had weakness affecting both upper and lower limbs. Cutaneous examination confirmed hypopigmented macules and patches over the left forearm with associated loss of thermal and pain sensation. The remainder of the systemic examination was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Guillain-Barré Syndrome (GBS)",
+      "rule_out_reason": "Considered as the initial provisional diagnosis due to acute post-febrile weakness affecting all four limbs preceded 1 week earlier by flu-like illness; ruled out by the presence of chronic hypopigmented anesthetic skin patches and demonstration of mycobacterial dermatoneuropathy on slit-skin sampling rather than acute autoimmune demyelinating polyradiculopathy.",
+      "quote": "About 1 week prior to the onset of weakness, the patient gave a history of fever with flu-like symptoms that subsided on taking antipyretics... A provisional diagnosis of GBS was made and the patient was admitted to the Neurology ward."
+    },
+    {
+      "candidate": "Drug-Induced Peripheral Neuropathy (Dapsone Toxicity)",
+      "rule_out_reason": "Considered because the patient had been taking dapsone for 6 months as part of multi-agent therapy; ruled out as the primary etiology for the patient's acute presentations given the persistence of viable acid-fast bacilli on cutaneous smears and coincidental nocturnal filarial parasitemia.",
+      "quote": "He had noticed hypo-pigmented patches with loss of sensation on the left forearm about 8 months previously, for which he had been prescribed rifampicin, dapsone and clofazimine by a physician in his home town"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Leprosy Complicated by Asymptomatic Lymphatic Filariasis",
+      "rule_out_reason": "Six-site slit-skin sampling confirmed short acid-fast bacilli under oil immersion (100x) confirming active leprosy, along with the unexpected incidental demonstration of sheathed microfilariae on earlobe slit smears and nocturnal blood films confirming Wuchereria bancrofti co-infection; the patient was initiated on diethylcarbamazine alongside continued multi-agent leprosy therapy.",
+      "quote": "Initial screening of the slides under a 10x objective led to the incidental finding of sheathed structures resembling Mf on the smear made from ear lobules... In addition, short AFB were observed under the oil-immersion objective (100x). A tentative diagnosis of co-infection with asymptomatic filariasis and leprosy was made."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly scrubbed of leprosy and filariasis disease names. Breakpoint established before slit-skin smears and night blood films."
+}

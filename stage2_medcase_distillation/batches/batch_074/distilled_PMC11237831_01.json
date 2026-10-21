@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11237831_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 66-year-old woman presents with an 8.5 cm painless cystic mass in the left supraclavicular neck that has insidiously enlarged over 3 years, suspected of mediastinal extension and initially diagnosed as a vascular lesion. Primary isolated extrahepatic echinococcal hydatid cyst of the neck in the absence of thoracic or abdominal visceral involvement is an extraordinary rarity.\n2. Admission Breakpoint: The breakpoint occurs following clinical outpatient examination, superficial neck ultrasonography, and cross-sectional neck/thorax CT and MRI characterizing the cystic masses without vascular or mediastinal invasion, prior to surgical exploration and pathology.\n3. Differential Distinctions: Cervical vascular lesions (lymphangioma, aneurysm, slow-flow venous malformation) were the preliminary clinical diagnosis but were ruled out by ultrasonography and MRI showing avascular architecture separate from cervical vessels. Congenital cervical cysts (branchial cleft cyst, cystic hygroma) share benign non-enhancing cystic features on MRI, but surgical incision revealed laminated parasitic membranes and histopathology definitively confirmed Echinococcus hydatid cyst.",
+  "case_prompt": "A 66-year-old woman is referred to the surgical clinic by the otorhinolaryngology department for evaluation of a large, painless swelling in the left neck region suspected of extending into the upper mediastinum. The patient reports that the mass has been growing gradually and insidiously over the preceding three years. She reports no compressive symptoms such as dysphagia, dyspnea, hoarseness, stridor, or pain, and denies fever, chills, night sweats, or unintentional weight loss. Her past medical history is notable for hypertension, type 2 diabetes mellitus, cerebrovascular disease, and a prior cholecystectomy.\n\nOn physical examination, her general condition is good and vital signs are stable. Examination of the neck reveals a smoothly circumscribed, soft-consistency cystic lesion approximately 8 cm in diameter in the left supraclavicular region. The mass is non-tender and non-pulsatile, with no overlying skin erythema or warmth. No regional cervical lymphadenopathy is palpable.\n\nSuperficial neck ultrasonography is performed, which reveals two adjacent cystic lesions with no communication or anatomical relationship to cervical vascular structures. A computed tomography (CT) scan of the neck and thorax demonstrates a well-circumscribed, regular cyst on the left side of the neck in the left supraclavicular area measuring 8 cm in diameter, along with an adjacent 3.5 cm hypodense component, with no mediastinal connection. Subsequent magnetic resonance imaging (MRI) of the neck and thorax demonstrates an 8.5 cm × 6.5 cm cystic mass in the left supraclavicular area alongside an adjacent 4 cm × 2 cm medial lesion; the masses are hypointense on T1-weighted sequences, heterogeneously hyperintense on T2-weighted sequences, and demonstrate no significant internal contrast enhancement, consistent with a benign cystic entity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cervical vascular pathology / Lymphangioma",
+      "rule_out_reason": "A soft, slowly growing supraclavicular cystic lesion was initially suspected to represent a vascular or lymphatic malformation, but superficial ultrasonography demonstrated complete lack of flow and no relationship to cervical vascular structures.",
+      "quote": "With the preliminary diagnosis of vascular pathology, the superficial neck was evaluated by ultrasonography. No relationship was found with vascular structures, two adjacent cystic lesions were reported."
+    },
+    {
+      "candidate": "Congenital cervical cyst (branchial cleft cyst / cystic hygroma)",
+      "rule_out_reason": "Indolent growth, benign cystic architecture, and lack of MRI contrast enhancement were consistent with a benign developmental cyst, but intraoperative exploration revealed clear yellow hydatid fluid and characteristic laminated parasitic membranes.",
+      "quote": "Magnetic resonance imaging (MRI) of the neck and thorax showed an 8.5x6.5-cm cystic mass located at the left supraclavicular area, 4x2-cm lesion in the medial area adjacent to the lesion (hypointense in T1 sequence, heterogeneous hyperintense in T2 sequence, no significant contrast enhancement, cystic lesion in favor of benign pathologies) (Fig. 3)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical incision of the 8 cm mass yielding clear yellow cyst fluid and characteristic laminated cyst membranes, combined with complete resection and histopathological examination of both neck lesions, confirmed hydatid cyst disease.",
+      "quote": "Approximately 8 cm lesion was incised, clear yellow-colored cyst fluid was aspirated, cyst membranes were located and removed, and cyst wall was resected... Both lesions were in the neck region and there was no relationship with the mediastinum. Pathologic diagnosis was reported as hydatid cyst for both lesions."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized Stanford MedCaseReasoning distillation. Zero pathogen or disease spoilers in case_prompt. Breakpoint set after MRI. Verbatim quotes verified."
+}

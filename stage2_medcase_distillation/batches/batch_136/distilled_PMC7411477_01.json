@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7411477_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 16-year-old girl presented with high-grade fever, facial edema, and pedal swelling alongside flaccid, wrinkled skin plaques resembling anetoderma, initially treated as acute bacterial sepsis or an autoimmune connective tissue disorder. The presence of atrophic macules masquerading as elastolytic disease rather than typical infiltrated lepromatous nodules poses a significant diagnostic trap.\n2. Admission Breakpoint: The admission clinical presentation concludes following history, physical examination (including specialized sensory and peripheral nerve examination), and baseline serologies/autoantibody tests, immediately prior to slit-skin smear and skin punch/excisional biopsy.\n3. Differential Distinctions: Anetoderma presents with focal loss of dermal elastic tissue but never causes cutaneous hypoesthesia or peripheral nerve trunk enlargement; systemic lupus erythematosus causes fever, edema, and elastolysis but tests positive for antinuclear antibodies; lepromatous/borderline disease during an acute Type 1 reversal reaction produces sudden inflammatory swelling of preexisting lesions, facial/extremity edema, and peripheral neuritis with sensory impairment.",
+  "case_prompt": "A 16-year-old female from the Terai region presented to the emergency department with a 5-day history of high-grade fever that had not responded to empirical parenteral antibiotics. A dermatology consultation was requested for concurrent asymptomatic, skin-colored cutaneous lesions over her extremities that had developed insidiously over the preceding 6 months, beginning on the left lower leg and subsequently involving the right arm. She had no significant past medical history or known family history of chronic illnesses.\n\nOn physical examination, she appeared acutely ill with documented fever, diffuse facial edema, and bilateral pedal pitting edema. Vital signs were otherwise stable. Dermatologic examination revealed multiple discrete round-to-oval plaques measuring approximately 1 × 1 cm² on the right arm, forearm, left lower leg, and left lower thigh. The plaques exhibited an atrophic, wrinkled surface that became completely flat upon stretching the skin and returned to their wrinkled, lax texture upon release. Neurologic examination of the skin revealed marked impairment of cold and light touch sensation across all plaques. Palpation of peripheral nerve trunks revealed bilaterally enlarged, tender ulnar nerves and an enlarged, tender left common peroneal nerve. There were no motor deficits or claw deformities.\n\nInitial laboratory workup revealed negative antinuclear antibody (ANA) titers, a non-reactive Venereal Disease Research Laboratory (VDRL) test, and negative serologies for HIV, hepatitis B, and hepatitis C.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Primary or Autoimmune Anetoderma (e.g., associated with Systemic Lupus Erythematosus)",
+      "rule_out_reason": "The flaccid, wrinkling plaques with loss of dermal elastic recoil strongly suggested anetoderma; however, antinuclear antibody testing was negative, and classical anetoderma does not feature peripheral nerve enlargement or sensory deficits.",
+      "quote": "On skin examination, few round-to-oval plaques with an atrophic, wrinkled surface of approximate 1 x 1 cm2 were present... On stretching, atrophic plaques became flat... The antinuclear antibodies test was negative as well."
+    },
+    {
+      "candidate": "Secondary Syphilis",
+      "rule_out_reason": "Disseminated cutaneous plaques accompanied by acute constitutional symptoms and edema can mimic treponemal disease, but nontreponemal serologic screening was non-reactive.",
+      "quote": "Venereal disease research laboratory (VDRL) tests and serologies for HIV and hepatitis B and C were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The combination of cutaneous hypoesthesia, tender peripheral neuropathy, facial and peripheral edema representing an acute Type 1 reversal reaction, confirmed by slit skin smear demonstrating acid-fast bacilli (BI 3+) and neurotropic granulomatous histology.",
+      "quote": "All the plaques had decreased sensation to cold and touch. Bilateral ulnar nerves and the left common peroneal nerve were enlarged and tender. No motor deficit or deformity was noted during the examination. A slit skin smear with Ziehl-Neelsen stain was performed, revealing multiple acid-fast bacilli with a bacillary index (BI) of 3+... The patient was diagnosed as a case of multibacillary leprosy with Type 1 reaction."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint prior to slit-skin smear and biopsy. Zero pathogen or disease names in prompt. Nerve enlargement and hypoesthesia correctly retained as physical exam findings. Canonical disease name confirmed."
+}

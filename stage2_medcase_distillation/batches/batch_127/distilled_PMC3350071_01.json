@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3350071_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 10-year-old girl returning from an ecotourism vacation in a Costa Rican rainforest presents with acute high fever, sore throat, abdominal pain, conjunctival suffusion, and transaminitis. The clinical challenge is differentiating common childhood pharyngitis or travel-associated arboviral fevers (such as dengue) from spirochetal zoonosis contracted via environmental freshwater exposure and animal contact.\n2. Admission Breakpoint: The outpatient triage evaluation concludes when initial primary care examination identifies bilateral eye pain/redness following fever and sore throat, alongside baseline laboratory tests demonstrating transaminitis (ALT 102 U/L, AST 73 U/L, alkaline phosphatase 314 U/L, albumin 3.1 g/dL) and negative rapid streptococcal screening. Subsequent referral to an infectious disease clinic, specialized indirect hemagglutination serology, EMJH urine cultures, and CDC microscopic agglutination testing represent confirmatory testing.\n3. Differential Distinctions: Group A streptococcal pharyngitis is ruled out by a negative direct antigen screen and the presence of prominent conjunctival suffusion and elevated liver transaminases. Dengue fever causes travel-associated acute fever, retro-orbital eye discomfort, and transaminitis, but prominent conjunctival injection without hemorrhage, history of freshwater splashing and rodent exposure, and demonstration of spirochetes in urine differentiate it from flavivirus infection.",
+  "case_prompt": "A 10-year-old previously healthy girl presented for medical evaluation with fever following a 1-week ecotourism trip to Costa Rica. During her travel, she stayed in a rainforest hotel, participated in rainforest hikes, saw numerous animals including rodents, swam in ocean and chlorinated pools, and was splashed with fresh surface water. None of her accompanying family members developed any signs of illness. Five days after returning home to Los Angeles County, she developed high fever (up to 39.5°C) lasting 1 week, accompanied by abdominal pain, nausea, and sore throat. One week into her illness, she was evaluated by her primary care physician, where a rapid direct antigen screen of the throat was negative. Two days later, she developed bilateral eye pain and redness (conjunctival injection) and returned for follow-up evaluation. Physical examination confirmed bilateral conjunctival redness without purulent discharge. Triage laboratory evaluation revealed an alanine aminotransferase of 102 U/L, aspartate aminotransferase of 73 U/L, alkaline phosphatase of 314 U/L, serum albumin of 3.1 g/dL, and total bilirubin of 0.5 mg/dL. Coagulation profile demonstrated a prothrombin time of 12.9 seconds and a partial thromboplastin time of 38.1 seconds.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Group A Streptococcal Pharyngitis",
+      "rule_out_reason": "High-grade fever, sore throat, and abdominal pain in a school-aged child initially suggested streptococcal pharyngitis; however, the rapid direct antigen screen was negative, and the subsequent appearance of bilateral conjunctival suffusion and elevated liver enzymes indicated systemic illness.",
+      "quote": "At that time, she had a negative throat beta streptococcus direct antigen screen."
+    },
+    {
+      "candidate": "Dengue Fever / Acute Viral Hepatitis",
+      "rule_out_reason": "Acute febrile illness with headache, ocular pain, gastrointestinal upset, and transaminitis following tropical travel raises suspicion for dengue or acute viral hepatitis; however, prominent conjunctival suffusion following freshwater splashing and rodent exposure pointed toward a zoonotic spirochetal infection, later confirmed by serology and urine culture.",
+      "quote": "Further workup demonstrated a positive Leptospira indirect hemagglutination test (Focus technologies, Cypress, CA) with a titer of 1 : 200."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "History of freshwater splashing and rainforest animal exposure followed by fever, conjunctival suffusion, and transaminitis, with definitive confirmation by positive indirect hemagglutination, convalescent MAT seroconversion (1:400 to serogroup Mini/serovar Georgia), and isolation of viable spirochetes from urine culture on EMJH medium.",
+      "quote": "A urine culture for Leptospira was obtained and incubated onto Ellinghausen McCullough Johnson Harris medium with 200 micrograms per mL of 5-Fluorouracil. Urine cultures 6 weeks following her trip were positive for spirochetes."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Acute leptospirosis acquired via freshwater and rainforest exposure in Costa Rica, presenting with prolonged viable urinary shedding of Leptospira for over 6 weeks."
+}

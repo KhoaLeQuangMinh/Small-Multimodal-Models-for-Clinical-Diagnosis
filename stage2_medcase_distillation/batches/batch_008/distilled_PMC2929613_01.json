@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC2929613_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A former granite worker with long-standing chronic silicosis presenting with sudden massive life-threatening hemoptysis (>200 mL) and bilateral conglomerate masses with cavitation. In the setting of negative expectorated sputum acid-fast smears, differentiating mycobacterial reactivation from complicated progressive massive fibrosis (PMF), secondary aspergilloma within an existing cavity, or bronchogenic carcinoma requires invasive bronchoscopy and fungal immunodiffusion.\n2. Admission Breakpoint: The admission clinical evaluation including vitals, physical exam, baseline blood chemistries, negative expectorated sputum AFB smears, chest radiography, and thoracic HRCT, prior to invasive bronchoscopy with bronchoalveolar lavage culture and Aspergillus immunodiffusion testing.\n3. Differential Distinctions: Chronic cavitary pulmonary aspergillosis / aspergilloma is a classic cause of severe hemoptysis arising in pre-existing silicotic cavities, but was ruled out by negative Aspergillus immunodiffusion and negative fungal BAL cultures; bronchogenic carcinoma, frequent in older smokers with pneumoconiosis, causes cachexia, cavitary masses, and hemoptysis, but was ruled out by negative BAL cytology; uncomplicated silicotic progressive massive fibrosis (PMF) causes conglomerate masses but does not explain active cavitation, massive hemoptysis, and positive mycobacterial BAL culture.",
+  "case_prompt": "A 55-year-old man, a former smoker with known chronic silicosis resulting from 14 years of occupational work in the granite industry, is admitted to the hospital following an acute episode of severe hemoptysis with more than 200 mL of expectorated blood. He also reports a one-month history of productive cough with blood-streaked sputum. He had previously completed a 6-month antimycobacterial regimen for a pulmonary infection two years prior and had remained entirely asymptomatic until the current illness.\n\nOn physical examination, the patient appears emaciated and pale. His blood pressure is 100/70 mmHg, pulse is 104 beats/min, and respiratory rate is 20 breaths/min. Lung auscultation reveals bilateral rhonchi and wheezing throughout both lung fields. The remainder of the physical examination is unremarkable.\n\nBaseline blood chemistry screening is normal, and HIV serology is non-reactive. A plain chest radiograph and high-resolution computed tomography (HRCT) of the thorax show bilateral conglomerate masses\u2014one with central cavitation\u2014associated with multiple small nodules, calcifications of the hilar and mediastinal lymph nodes, paracicatricial emphysema, marked architectural distortion, and enlargement of the central pulmonary arteries. Initial expectorated sputum examinations are negative for special-stain micro-organisms.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pulmonary Aspergillosis / Cavitary Aspergilloma",
+      "rule_out_reason": "Considered because Aspergillus saprophytic colonization within pre-existing fibrotic or silicotic cavities is a common cause of massive hemoptysis, but ruled out by negative serum immunodiffusion testing and negative fungal cultures from bronchoalveolar lavage.",
+      "quote": "Immunodiffusion tests were negative for Aspergillus."
+    },
+    {
+      "candidate": "Bronchogenic Carcinoma / Pulmonary Malignancy",
+      "rule_out_reason": "Considered in a former smoker with silica exposure presenting with cachexia, hemoptysis, and cavitating conglomerate lung masses, but excluded by negative direct cytologic examination for malignancy on bronchoalveolar lavage.",
+      "quote": "Direct examination of the bronchoalveolar lavage was negative for tuberculosis, fungi, or malignancy."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Although direct sputum and BAL smears were negative, bronchoalveolar lavage culturing yielded viable Mycobacterium tuberculosis, establishing active reactivation silicotuberculosis complicated by hypertrophied bronchial arterial hemorrhage.",
+      "quote": "Culturing was positive for Mycobacterium tuberculosis and negative for fungi."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission triage and baseline imaging before bronchoscopy, BAL culture, and bronchial arteriography. Zero spoilers or pathogen names in case_prompt. Direct verbatim quotes provided for all candidates and the diagnostic pivot."
+}

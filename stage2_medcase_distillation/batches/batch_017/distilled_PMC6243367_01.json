@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6243367_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old man of Indian origin presents with acute left third cranial nerve palsy and meningeal signs. In an individual from South Asia with basal leptomeningeal inflammation and multiple parenchymal nodular and cisternal ring-enhancing lesions, distinguishing neurocysticercosis (especially the racemose variety) or fungal meningitis from disseminated central nervous system tuberculosis is critical.\n2. Admission Breakpoint: Concludes immediately following the admission clinical neurological exam, initial lumbar puncture cell count and glucose measurement, and brain MRI with contrast demonstrating bilateral parenchymal nodular enhancing lesions, strictly before CSF ADA, CSF mycobacterial PCR results, and cysticercosis serology titers return.\n3. Differential Distinctions: Neurocysticercosis is strongly considered given origin and ring-enhancing lesions / racemose patterns, but excluded by negative cysticercosis IgG serology. HIV-related opportunistic meningoencephalitis is excluded by negative HIV serology. Central nervous system tuberculosis (tuberculomas and tuberculous meningitis) is confirmed by profound CSF hypoglycorrhachia, markedly elevated CSF adenosine deaminase (ADA 23.3 IU/L), and positive CSF PCR for Mycobacterium tuberculosis complex.",
+  "case_prompt": "A 26-year-old male of Indian origin presents with acute onset of left eyelid drooping and diplopia. He has a history of prior treatment default for chronic peritonitis, but no other known past medical conditions.\n\nOn physical examination, he is alert and oriented. Vital signs are within normal limits. Neurological examination reveals marked ptosis of the left eye with fixed downward and outward deviation of the globe, consistent with a complete left oculomotor (third cranial) nerve palsy. Pupillary asymmetry and left pupil dilation are present. Nuchal rigidity and positive Kernig's sign are elicited on meningeal testing. The remainder of the cranial nerve and motor-sensory examinations is unremarkable.\n\nAn urgent lumbar puncture yields clear cerebrospinal fluid (CSF). Routine biochemical and microscopic analysis of the CSF demonstrates an opening pressure within normal limits, a prominent lymphocytic pleocytosis, and profound hypoglycorrhachia with a CSF glucose level of 18 mg/dL (serum glucose reference range 45–80 mg/dL). Contrast-enhanced magnetic resonance imaging (MRI) of the brain reveals multiple parenchymal nodular enhancing lesions distributed across all lobes of bilateral cerebral hemispheres, accompanied by mild surrounding perilesional edema and basal leptomeningeal enhancement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Given the patient's demographic origin in India and intracranial nodular/racemose-enhancing lesions, neurocysticercosis was a primary consideration, but specific cysticercosis immunoglobulin G antibody testing was non-reactive.",
+      "quote": "Cysticercosis immunoglobulin G level was found to be 0.9 ( >1.1 ng dl-1 is considered positive)."
+    },
+    {
+      "candidate": "HIV-associated opportunistic meningoencephalitis / Cryptococcal meningitis",
+      "rule_out_reason": "Highly destructive basal meningitis with cranial nerve palsy frequently occurs in immunocompromised hosts, but retroviral screening was negative.",
+      "quote": "Serology was negative for human immunodeficiency virus infection."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Intracranial Tuberculomas and Tuberculous Meningitis",
+      "rule_out_reason": "Markedly elevated CSF adenosine deaminase (ADA 23.3 IU/L) together with positive CSF polymerase chain reaction confirming Mycobacterium tuberculosis complex established intracranial tuberculomas complicated by tuberculous meningitis.",
+      "quote": "CSF adenosine deaminase level was 23.3 (normal 1-9 IU l-1). CSF polymerase chain reaction detected M. tuberculosis and M. tuberculosis complex consisting of M. bovis, M. microti and M. africanum."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-yield distillation of CNS tuberculomas with tuberculous meningitis presenting with acute third cranial nerve palsy. Clean admission breakpoint stopping before CSF ADA, PCR, and cysticercosis serology."
+}

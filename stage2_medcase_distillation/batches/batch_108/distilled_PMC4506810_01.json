@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4506810_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 72-year-old traveler returning from West Africa presenting with high fever, rigors, and right upper quadrant abdominal pain with imaging suggestive of acute acalculous cholecystitis or pancreatitis, whose disease trajectory was complicated by catastrophic acute renal failure and massive nephrotic-range proteinuria despite reported mefloquine prophylaxis.\n2. Admission Breakpoint: Admission triage ends following initial emergency presentation, vital sign recording, physical examination, and initial emergency laboratory panel (CBC, baseline metabolic profile showing creatinine 2.09 mg/dL, LFTs showing bilirubin 1.6 mg/dL and albumin 2.6 g/dL, CK, and normal pancreatic enzymes), prior to secondary blood cultures, influenza swab, abdominal CT/ultrasound, glomerulopathy serologies, peripheral blood smear, and renal biopsy.\n3. Differential Distinctions: Acute acalculous cholecystitis or acute pancreatitis can cause fever, rigors, and RUQ pain, but amylase and lipase were normal; acute glomerulonephritis causes nephrotic-range proteinuria and renal failure, but autoimmune workup was negative and travel history directed testing toward parasitology.",
+  "case_prompt": "A 72-year-old man with a history of hypertension, hypercholesterolemia, gout, and hypertensive chronic kidney disease (baseline serum creatinine 1.5 mg/dL six months prior) presented to the emergency department with a 3-day history of right upper quadrant abdominal pain, generalized body aches, night sweats, shivering chills, subjective nocturnal fevers, and marked weakness. One month prior to presentation, he completed a 2-week trip to Ghana, returning 10 days before symptom onset. He reported taking mefloquine for prophylaxis during his visit. Self-treatment with over-the-counter cold medications provided no relief. He denied sick contacts, nausea, vomiting, diarrhea, cough, shortness of breath, or chest pain. Home medications included allopurinol, losartan, amlodipine, labetalol, furosemide, and simvastatin.\n\nOn physical examination, the patient was shivering and in acute distress. Body temperature was 39.3°C, blood pressure 184/86 mmHg, heart rate 76 beats/min, and respiratory rate 18 breaths/min. The neck was supple. Auscultation of the chest revealed clear lungs bilaterally and regular heart sounds without murmurs, rubs, or gallops. The abdomen was soft and nontender with normal bowel sounds throughout. There was no peripheral edema.\n\nInitial emergency blood tests showed a normal complete blood count with normal differential, platelet count, and hemoglobin of 12.3 g/dL. Basic metabolic profile revealed acute kidney injury with a serum creatinine of 2.09 mg/dL (up from his baseline of 1.5 mg/dL), blood urea nitrogen of 30 mg/dL, and an estimated GFR of 38 mL/min/1.73 m². Liver function tests were unremarkable except for a serum albumin of 2.6 g/dL and total bilirubin of 1.6 mg/dL. Serum creatine kinase was 514 IU/L. Serum amylase was 54 U/L and lipase was 35 U/L.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pancreatitis / Acalculous Cholecystitis",
+      "rule_out_reason": "Right upper quadrant abdominal tenderness, high fevers, and subsequent cross-sectional imaging suggested acute acalculous cholecystitis or pancreatitis; however, pancreatic enzymes remained within normal limits (amylase 54 U/L, lipase 35 U/L) and systemic infection drove the clinical presentation.",
+      "quote": "An abdominal computerized tomography scan without contrast showed findings concerning acute pancreatitis or acalculous cholecystitis."
+    },
+    {
+      "candidate": "Primary Autoimmune Glomerulopathy",
+      "rule_out_reason": "Rapidly deteriorating renal function accompanied by massive nephrotic proteinuria (protein-to-creatinine ratio ~7929) raised high suspicion for an idiopathic rapidly progressive glomerulonephritis or collapsing FSGS; however, comprehensive serologic panels for autoimmune and secondary glomerulopathies were negative.",
+      "quote": "Laboratory tests for different glomerulopathy causes resulted negative (Table 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Peripheral blood smear examination prompted by recent travel to West Africa revealed crescentic gametocytes characteristic of Plasmodium falciparum with 1.64% parasitemia, establishing severe acute malaria as the trigger for collapsing glomerulopathy.",
+      "quote": "In view of recent travel, a blood smear for malaria was done that showed crescentic shaped gametocyte which is usually the shape of Plasmodium falciparum and parasitemia of 1.64% (Figure 1)."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation truncated prior to abdominal imaging, blood smears, and renal biopsy. Zero pathogen spoilers."
+}

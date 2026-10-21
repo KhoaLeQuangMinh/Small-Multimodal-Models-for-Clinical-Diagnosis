@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6875186_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: Evaluating extensive, friable vegetative oral mucosal lesions in a patient undergoing treatment for chronic cavitary pulmonary disease, balancing whether oral pathology represents extrapulmonary dissemination versus an endemic fungal or parasitic co-infection.\n2. Admission Breakpoint: The breakpoint occurs following the oral physical examination and social/exposure history, prior to incisional biopsy, fungal histochemistry (PAS, GMS), and polyclonal immunohistochemistry.\n3. Differential Distinctions: Paracoccidioidomycosis frequently causes ulcerative 'mulberry-like' stomatitis in rural agricultural workers, but was excluded by negative polyclonal immunostaining; mucocutaneous leishmaniasis causes destructive oropharyngeal lesions but was ruled out immunohistochemically; primary oral squamous cell carcinoma is excluded by absence of malignancy on biopsy.",
+  "case_prompt": "A 46-year-old male presents to a dental clinic complaining of painful, progressive oral lesions of two months' duration. He describes marked constitutional symptoms, including significant unintentional weight loss and asthenia over the preceding three months. Approximately one month prior to evaluation, he was diagnosed with a subacute cavitary pulmonary disease based on positive respiratory smears and initiated on a four-drug oral antimicrobial regimen. His social history is notable for heavy tobacco smoking and chronic alcohol consumption. He works as a nighttime highway flow controller and resides near rural countryside.\nOn physical examination, the patient appears chronically ill. Intraoral inspection reveals extensive, diffuse, friable, and vegetative mucosal plaques involving the right upper alveolar ridge, the hard palate, and the left inferior alveolar ridge. The remainder of the physical examination shows temporal wasting and evidence of chronic malnutrition without acute distress.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Oral Paracoccidioidomycosis",
+      "rule_out_reason": "Specific polyclonal immunohistochemical reactivity against Paracoccidioides brasiliensis was negative in the biopsied granulomatous tissue.",
+      "quote": "for polyclonal P. brasiliensis, Leishmania spp. and Calmette-Guerin bacillus were negative."
+    },
+    {
+      "candidate": "Mucocutaneous Leishmaniasis",
+      "rule_out_reason": "Immunohistochemical evaluation with polyclonal antibodies directed against Leishmania spp. was negative.",
+      "quote": "for polyclonal P. brasiliensis, Leishmania spp. and Calmette-Guerin bacillus were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Initial sputum smear positivity confirmed underlying pulmonary tuberculosis, and subsequent incisional oral biopsy with special fungal staining (PAS and GMS) confirmed concurrent opportunistic oral histoplasmosis.",
+      "quote": "His medical history revealed a diagnosis of tuberculosis about a month ago in which the expectorated sputum smears were positive for bacteria and acid-fast bacilli."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Validated distillation for PMC6875186_01. Sputum smear AFB details and biopsy histopathology are properly segregated to diagnostic reasoning."
+}

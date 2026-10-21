@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4430154_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 32-year-old traveler returning from Central Africa with acute febrile encephalopathy, rapidly progressive coma, generalized seizures, and multiorgan failure (acute renal failure, hepatic dysfunction, retinopathy) with an initially normal cranial CT, requiring differentiation between viral encephalitis, bacterial meningoencephalitis, cerebral venous thrombosis, and severe cerebral malaria.\n2. Admission Breakpoint: Admission triage ends following initial emergency stabilization, seizure management with phenytoin, GCS assessment, detection of acute renal and hepatic failure, funduscopic identification of retinopathy, and normal Day 1 cranial CT, strictly prior to peripheral blood smear examination.\n3. Differential Distinctions: Cerebral venous sinus thrombosis presents with seizures and acute altered mental status in systemic illness but is excluded by normal imaging without venous occlusion; acute bacterial or viral meningoencephalitis presents with febrile coma and seizures but fails to account for multiorgan pigment nephropathy and retinopathy without focal parenchymal lesions.",
+  "case_prompt": "A 32-year-old man presented with acute fever, confusion, and rapid progression to coma after returning from a 5-month stay in the Democratic Republic of the Congo, where he had neglected prescribed travel chemoprophylaxis. He was transferred for emergency evaluation.\n\nOn initial emergency neurological examination, his Glasgow Coma Scale (GCS) score was 7. While in the emergency department, he experienced an acute generalized tonic-clonic seizure lasting 30 seconds, which was controlled with intravenous phenytoin. Funduscopic examination revealed retinopathy. He was endotracheally intubated and placed on mechanical ventilation for airway protection.\n\nInitial emergency laboratory evaluation demonstrated acute renal failure and acute hepatic failure. Emergency non-contrast cranial computed tomography (CT) on day 1 was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Viral Encephalitis / Bacterial Meningoencephalitis",
+      "rule_out_reason": "High fever, rapid progression to coma, and generalized seizures in a returning traveler initially raised suspicion for an acute central nervous system infection such as herpes simplex encephalitis or acute bacterial meningitis; however, emergency cranial CT was normal without mass effect or localized temporal abnormalities, and systemic multiorgan involvement pointed toward a systemic infection.",
+      "quote": "A brain CT on the first day was normal."
+    },
+    {
+      "candidate": "Cerebral Dural Venous Sinus Thrombosis",
+      "rule_out_reason": "Acute encephalopathy, severe seizures, and multiorgan dysfunction prompted consideration of intracranial venous sinus thrombosis; however, neuroimaging showed normal flow voids and no evidence of clot within the dural venous sinuses.",
+      "quote": "There was also no evidence for dural sinus thrombosis."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The pivotal diagnostic turning point was the examination of the peripheral blood smear, which identified intraerythrocytic trophozoites of Plasmodium falciparum, establishing the diagnosis of cerebral malaria complicated by acute renal and hepatic dysfunction.",
+      "quote": "Plasmodium falciparum was seen on the blood smear. Other complications of malaria included acute renal failure, hepatic failure and retinopathy was determined."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to emergency admission presentation prior to peripheral blood smear confirmation; zero pathogen spoilers included."
+}

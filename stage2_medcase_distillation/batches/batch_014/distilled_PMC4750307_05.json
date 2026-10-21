@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_05",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 34-year-old man presents in deep coma (GCS 7) with generalized hypotonia, recurrent status-like seizures, severe meningismus, and lower extremity purpuric spots. The co-occurrence of purpura and fulminant meningoencephalitis immediately mimics meningococcemia (purpura fulminans) or thrombotic microangiopathy, challenging clinicians to identify an arboviral etiology with direct CNS neuro-invasion.\n2. Admission Breakpoint: Initial clinical assessment documenting deep stupor/coma (GCS E1M4V2), purpuric macules/spots on lower limbs, neck rigidity, generalized hypotonia, and bilateral extensor plantars, before brain MRI and CSF analysis.\n3. Differential Distinctions: Meningococcal meningitis with purpura fulminans presents with acute septic shock, rapid cardiovascular collapse, and purulent CSF; acute disseminated encephalomyelitis typically lacks cutaneous purpura; whereas dengue meningoencephalitis combines hemorrhagic cutaneous manifestations with neuro-invasion confirmed by intrathecal IgM antibody positivity and thalamic/splenial MRI lesions.",
+  "case_prompt": "A 34-year-old man presented with a 7-day history of continuous high-grade fever associated with chills and rigors, persistent severe headache for 6 days, multiple episodes of vomiting, and progressive disorientation for 5 days. For the preceding 4 days, he had experienced multiple episodes of generalized tonic-clonic seizures and the appearance of purpuric spots over his lower extremities.\n\nOn physical examination at admission, the patient was deeply comatose with a Glasgow Coma Scale (GCS) score of 7 (E1M4V2). Examination of the skin revealed purpuric spots distributed across both lower extremities. Neurological examination showed marked neck rigidity with a positive Kernig sign. Cranial nerve evaluation revealed no gross deficits. Motor examination showed generalized hypotonia across all four limbs, and plantar responses were bilaterally extensor. Further detailed neurological assessment could not be performed due to coma. Examination of other organ systems was within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Meningococcal Meningitis / Purpura Fulminans",
+      "rule_out_reason": "The sudden combination of severe meningismus, profound coma, and lower extremity purpura raised strong clinical concern for Neisseria meningitidis infection, but the patient achieved gradual recovery without antibacterial therapy and neuroimaging showed parenchymal thalamic and splenial involvement.",
+      "quote": "Again, treatment was started only with IV fluid, paracetamol as antipyretic and anticonvulsant."
+    },
+    {
+      "candidate": "Acute Disseminated Encephalomyelitis (ADEM)",
+      "rule_out_reason": "Splenial and thalamic altered signal intensity on MRI raised ADEM as a consideration, but the presence of cutaneous purpuric manifestations and direct intrathecal antibody production confirmed acute primary arboviral neuro-invasion.",
+      "quote": "MRI scan of brain (plain and contrast), done on 8th day of fever, showed mild diffusion restricted altered signal intensity (hypointense in T1, hyperintense in T2, and FLAIR) in both thalamic and splenium of corpus callosum region [Figure 6], and the diagnosis of dengue meningoencephalitis was done."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Detection of specific IgM antibodies in the cerebrospinal fluid established definitive proof of direct viral neuro-invasion and confirmed dengue meningoencephalitis.",
+      "quote": "He was the only patient to have IgM dengue positivity in CSF."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation captures the critical clinical features (coma, purpura, meningismus) without revealing the underlying viral etiology or CSF findings. All reasoning grounded in direct quotes."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11165128_02",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old man with heavily pretreated refractory Hodgkin lymphoma who underwent haploidentical HSCT with persistent graft failure of platelets developed fever, cough, and a new focal upper lobe pulmonary consolidation on day +30. The diagnostic dilemma lies in distinguishing bacterial pneumonia, invasive fungal infection, or lymphoma recurrence from opportunistic pulmonary tuberculosis in an engraftment-deficient host.\n2. Admission Breakpoint: The breakpoint stops after the day +30 clinical presentation and thoracic CT demonstrating new focal left upper lobe opacity, strictly prior to broad-spectrum antimicrobials, blood mNGS, sputum isolation of MTB, and the onset of TA-TMA.\n3. Differential Distinctions: Bacterial pneumonia is the most common cause of focal post-transplant consolidations but failed to respond to empirical antibiotics. Invasive aspergillosis occurs commonly with graft failure, but comprehensive fungal screening was negative. Blood mNGS identified Mycobacterium tuberculosis DNA, confirmed by sputum culture.",
+  "case_prompt": "A 27-year-old man with classical Hodgkin lymphoma (stage IIA) developed fever and cough on day +30 following haploidentical allogeneic hematopoietic stem cell transplantation. He had a history of extensive prior therapies, including multiple chemotherapy regimens, autologous stem cell transplantation followed by disease recurrence, PD-1 inhibitor therapy, decitabine, CD30 monoclonal antibody, and bendamustine. Pre-transplant screening including an interferon-gamma release assay was negative. He subsequently underwent haploidentical HSCT from his biological father following reduced-dose conditioning, with intensive graft-versus-host disease prophylaxis including cyclophosphamide, cyclosporine A, methotrexate, mycophenolate mofetil, and antithymocyte globulin. Neutrophil engraftment was achieved on day +15, but platelet engraftment failed, resulting in persistent severe thrombocytopenia.\n\nOn physical examination at the onset of fever, he had a fever and was coughing, with decreased breath sounds over the left hemithorax.\n\nA thoracic CT scan revealed a new local opacity in the upper lobe of the left lung, which was absent on the pre-transplant thoracic CT scan.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic bacterial pneumonia",
+      "rule_out_reason": "In a post-transplant patient with persistent thrombocytopenia and new focal upper lobe pulmonary consolidation, acute bacterial pneumonia was the primary suspect, but empirical antibiotics failed and standard bacterial cultures were negative.",
+      "quote": "Empirical anti-infection therapies were immediately initiated, including antibiotics, while screening was done for bacteria, fungi, viruses, and parasites to identify the underlying cause. Consequently, due to the lack of positive results from the laboratory, poor response to the treatment"
+    },
+    {
+      "candidate": "Invasive fungal infection (Aspergillus)",
+      "rule_out_reason": "Severely immunocompromised HSCT recipients with graft failure and multi-agent immunosuppression are at high risk for invasive pulmonary mold disease; however, systematic fungal screening was negative.",
+      "quote": "screening was done for bacteria, fungi, viruses, and parasites to identify the underlying cause. Consequently, due to the lack of positive results from the laboratory, poor response to the treatment"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Blood mNGS performed due to thrombocytopenia preventing BAL identified Mycobacterium tuberculosis DNA on day +45, followed by microbiological isolation of MTB from sputum on day +50, establishing pulmonary tuberculosis.",
+      "quote": "A DNA fragment of MTB was identified on day +45 and subsequently examined for its presence in sputum samples. Finally, MTB was successfully isolated on day +50."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly to presentation and imaging breakpoint. Excluded mNGS, sputum microbiological isolation, TA-TMA course, and pathogen names from case prompt. Quotes verified against source text."
+}

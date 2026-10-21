@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC6380144_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 26-year-old female presents with acute unilateral vision loss and an elevated amelanotic choroidal mass accompanied by subretinal fluid, requiring differentiation between amelanotic choroidal melanoma, choroidal hemangioma, choroidal metastasis, and intraocular granuloma.\n2. Admission Breakpoint: Following initial ophthalmologic examination and swept-source optical coherence tomography (SS-OCT) imaging of the left eye, prior to integrating lymph node histopathology and treatment response.\n3. Differential Distinctions: Choroidal melanoma exhibits hyperreflective acoustic shadowing and lacks anterior vitreous cells; choroidal hemangioma is vascular and orange-red; choroidal tuberculoma exhibits homogeneous hyporeflective thickening on SS-OCT with vitreous cellular activity and clinical association with necrotizing granulomatous lymphadenitis.",
+  "case_prompt": "A 26-year-old Asian Indian female presented with sudden blurring of vision in the left eye of 1 week duration. Her medical history was notable for chronic cervical lymphadenopathy under ongoing medical therapy for the past 3 months.\n\nOn ophthalmic examination, best-corrected visual acuity was 6/6 in the right eye and 6/9 in the left eye. Slit-lamp biomicroscopy demonstrated quiet anterior chambers bilaterally and cellular infiltration within the anterior vitreous of the left eye. Fundus examination of the right eye was unremarkable; funduscopic evaluation of the left eye revealed a subretinal mass measuring approximately 1.5 disc diameters in size located near the superotemporal arcade, associated with surrounding subretinal fluid extending to the fovea.\n\nSwept-source optical coherence tomography (SS-OCT) of the left eye demonstrated a lobulated, homogeneous, hyporeflective thickening of the choroid measuring 1359 μm × 4047 μm, causing a dome-shaped elevation of the overlying neurosensory retina, with moderate subretinal reflective echoes and adjacent subretinal fluid.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Amelanotic Choroidal Melanoma",
+      "rule_out_reason": "Choroidal melanoma typically presents as a mushroom-shaped or dome-shaped mass displaying high internal optical reflectivity and lacks vitreous cellular inflammation; the homogeneous hyporeflectivity on SS-OCT and vitritis rule it out.",
+      "quote": "SS-OCT of the left eye [Figure 2a] revealed the mass to be a lobulated, homogeneous, hyporeflective thickening of choroid with size of 1359 mum x 4047 mum, giving rise to a dome-shaped appearance of the overlying retina with subretinal moderate reflective echoes with surrounding SRF."
+    },
+    {
+      "candidate": "Circumscribed Choroidal Hemangioma",
+      "rule_out_reason": "Choroidal hemangiomas are vascular reddish-orange lesions that demonstrate high optical and acoustic reflectivity without associated vitreous cells or inflammatory exudates.",
+      "quote": "Slit-lamp examination showed quiet anterior chamber in both eyes and presence of cells in anterior vitreous of the left eye."
+    },
+    {
+      "candidate": "Choroidal Metastasis",
+      "rule_out_reason": "Choroidal metastases usually present as multifocal, placoid, diffuse lesions in patients with known primary carcinoma, rather than an isolated solitary lobulated subretinal granulomatous mass.",
+      "quote": "the left eye revealed a subretinal mass approximately of 1.5 disc diameter in size near superotemporal arcade with surrounding SRF extending till fovea"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathologic analysis of her cervical lymph node demonstrating necrotizing granulomatous inflammation with acid-fast bacilli, combined with characteristic SS-OCT hyporeflective choroidal thickening and regression under anti-tubercular therapy and corticosteroids, established choroidal tuberculoma.",
+      "quote": "Her cervical lymph node biopsy showed necrotizing granulomatous inflammation with the presence of acid-fast bacilli on histopathology."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation scrubbed of explicit disease/pathogen mentions (tubercular, acid-fast bacilli, ATT) to preserve clinical tension. Quotes verified against article text."
+}

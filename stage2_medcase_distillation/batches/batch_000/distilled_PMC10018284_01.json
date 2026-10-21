@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10018284_01",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: The patient presents with a decade-long history of severe, generalized crusted, scaly, and bullous cutaneous lesions mimicking chronic autoimmune blistering diseases (e.g., bullous pemphigoid), erythroderma, or lepromatous leprosy. The atypical formation of vesicles and bullae obscures classical presentation, though the nocturnal pruritus and household contact involvement strongly suggest a contagious parasitic etiology.\n2. Admission Breakpoint: Admission triage ends following baseline triage examination and negative rapid HIV/antigen serology, immediately prior to microscopic skin scraping examination.\n3. Differential Distinctions: Leprosy and autoimmune bullous dermatoses are excluded by lack of sensory deficit, negative chronic disease history, familial web-space clustering, and direct microscopic demonstration of mites rather than primary autoimmune or mycobacterial pathology.",
+  "case_prompt": "A 44-year-old married man presented to the dermatology outpatient clinic with a chief complaint of thick, red, scaly patches and crusted scabs generalized across his entire body, accompanied by intense pruritus that worsened markedly at night. The symptoms had recurred intermittently over the preceding 10 years, with substantial exacerbation over the past 2 months. The cutaneous lesions had initially begun as erythematous patches and small fluid-filled blisters on his elbow and left leg before progressively disseminating to his abdomen, buttocks, thighs, and calves. The patient resided with his wife and children; his child had also developed itchy, erythematous spots in the digital web spaces of the hands, particularly at night, over the preceding 2 months. His children attended a boarding school. He worked as a bus driver with frequent interpersonal contact. Family clothing was laundered together using room-temperature water. Past medical history was negative for diabetes mellitus, immunodeficiency, or chronic dermatologic disorders, with no reported food or medication allergies.\n\nOn physical examination, the patient was fully alert and oriented. Vital signs were within normal limits. Dermatologic examination revealed diffuse, generalized distribution of multiple hyperpigmented macules, erythematous papules, excoriations, erosions, thick scales, and crusts across the body. The remainder of the systemic physical examination was unremarkable. Baseline rapid COVID-19 antigen serology was negative, and screening HIV serology was non-reactive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Leprosy",
+      "rule_out_reason": "Considered due to the chronic decade-long duration of thick, scaly, erythematous, and crusted plaques in an endemic region; however, there was no reported history of mycobacterial disease and the eruption featured intense nocturnal pruritus and familial web-space transmission rather than anesthetic hypoesthetic macules or peripheral nerve thickening.",
+      "quote": "No history of diabetes mellitus, HIV/AIDS, leprosy, or other autoimmune diseases was noted."
+    },
+    {
+      "candidate": "Autoimmune Bullous Dermatosis (e.g., Bullous Pemphigoid)",
+      "rule_out_reason": "Considered given the presentation with diffuse erythroderma, crusted lesions, and tense blisters/vesicles; however, primary autoimmune etiology was contradicted by the simultaneous onset of pruritic interdigital lesions in his child and rapid confirmation of parasitic infestation on direct bedside microscopy.",
+      "quote": "The patient's child also complained of itchy, red spots between the fingers, especially at night, for the last 2 months."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Microscopic examination of skin scrapings definitively established the parasitic etiology, confirming Norwegian (crusted) scabies with bullous manifestation.",
+      "quote": "Skin scraping examination was performed, and Sarcoptes scabiei mites were found (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled successfully following Stanford MedCaseReasoning methodology. Zero spoilers, pathogen names, or microscopic findings present in case_prompt. Direct verbatim quotes ground all diagnostic reasoning steps."
+}

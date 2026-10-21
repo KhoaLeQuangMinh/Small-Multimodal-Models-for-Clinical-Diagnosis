@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3927189_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 29-year-old male presenting with acute oliguric renal failure, profound Coombs-negative microangiopathic hemolytic anemia (schistocytes, reticulocytosis 13%, LDH 1,242 U/L), and severe thrombocytopenia one week after recovering from a febrile illness. The clinical tension centers on determining the trigger of this life-threatening thrombotic microangiopathy (HUS)—distinguishing between Shiga toxin enteritis, thrombotic thrombocytopenic purpura (TTP), drug-induced microangiopathy (e.g., quinine), systemic lupus erythematosus, and post-infectious complement-mediated microangiopathy induced by Plasmodium vivax.\n2. Admission Breakpoint: Admission triage ends following history, triage physical examination (hypertension, severe pallor, hemic murmur, absence of neurological deficit or edema), and initial emergency laboratory evaluation (hemoglobin 4.8 g/dL, platelets 61,000/μL, creatinine 8.3 mg/dL, schistocytes on peripheral smear, LDH 1,242 U/L, reticulocyte count 13%, normal coagulation profile, and proteinuria/hematuria on urinalysis). Confirmatory testing begins with secondary autoimmune/viral serologies, complement levels, therapeutic trial of plasma exchange, and renal biopsy.\n3. Differential Distinctions: Thrombotic Thrombocytopenic Purpura (TTP) shares microangiopathic hemolytic anemia and thrombocytopenia, but typically presents with fluctuating neurological signs and fever, with less severe acute renal failure; this patient had intact sensorium and predominant renal failure. Quinine-induced thrombotic microangiopathy was excluded by negative exposure history. Autoimmune diseases and viral nephritides were ruled out by negative ANA, HIV, HBV, and HCV serologies. Shiga toxin-producing E. coli (STEC) HUS was ruled out by absence of diarrhea. The diagnosis is confirmed by preceding documented Plasmodium vivax parasitemia triggering acute hemolytic uremic syndrome, with renal biopsy demonstrating characteristic arteriolar onion-skinning, glomerular endothelial swelling, and capillary wall double contours.",
+  "case_prompt": "A 29-year-old previously healthy male presented with a three-day history of persistent vomiting, abdominal pain, and marked decrease in urine output. Two weeks prior, he had been hospitalized at a local facility for a one-week febrile illness accompanied by jaundice, anemia (hemoglobin 8.8 g/dL), thrombocytopenia (platelet count 55,000/μL), and mild renal dysfunction (serum creatinine 1.5 mg/dL), which was managed with a 7-day course of oral antimicrobial therapy before discharge upon resolution of fever. He reported no subsequent fevers, diarrhea, hematochezia, cutaneous rash, active bleeding, or altered mental status. He specifically denied any past or recent ingestion of quinine.\n\nOn physical examination, he was alert, oriented, and afebrile, but significantly hypertensive. He exhibited severe conjunctival and cutaneous pallor. No peripheral edema, jaundice, or petechiae were present. Systemic examination was notable only for an audible systolic hemic murmur. Emergency laboratory evaluation revealed critical anemia with a hemoglobin of 4.8 g/dL, thrombocytopenia with a platelet count of 61,000/μL, and severe azotemia with a serum creatinine of 8.3 mg/dL. Peripheral blood smear examination demonstrated numerous schistocytes and a reticulocyte count of 13%. Serum lactate dehydrogenase (LDH) was markedly elevated at 1,242 U/L, and indirect hyperbilirubinemia was present. Urinalysis revealed microscopic hematuria and severe proteinuria (3.75 g/24 hr). The coagulation profile was normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Thrombotic Thrombocytopenic Purpura (TTP)",
+      "rule_out_reason": "TTP was considered in the setting of microangiopathic hemolytic anemia, thrombocytopenia, and elevated LDH, but was argued against by the absence of fever or fluctuating neurological abnormalities, the predominance of acute oliguric renal failure, and prompt stabilization with plasma exchange.",
+      "quote": "He did not have fever, loose motions, rash, bleeding or alteration in sensorium."
+    },
+    {
+      "candidate": "Quinine-Induced Thrombotic Microangiopathy",
+      "rule_out_reason": "Drug-induced thrombotic microangiopathy, particularly from quinine used in febrile illnesses, is a well-known cause of acute HUS, but the patient had no exposure to this medication.",
+      "quote": "There was no history of treatment with quinine."
+    },
+    {
+      "candidate": "Systemic Lupus Erythematosus / Viral-Associated Glomerulopathy",
+      "rule_out_reason": "Connective tissue disease and viral hepatitides/retroviral glomerulopathies were excluded by negative autoimmune and viral serologies, as well as absence of immune deposits on renal immunofluorescence.",
+      "quote": "Antinuclear antibodies and enzyme-linked immuno sorbent assay for human immunodeficiency virus were negative. Hepatitis B surface antigen and anti-hepatitis C antibodies were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was post-infectious hemolytic uremic syndrome triggered by Plasmodium vivax infection (documented by schizonts on prior blood smear and negative P. falciparum testing), with persistent renal thrombotic microangiopathy confirmed on kidney biopsy showing glomerular capillary double contours and arteriolar onion-skin changes.",
+      "quote": "Peripheral smear showed the presence of schizonts of Plasmodium vivax. Antigen test for Plasmodium falciparum was negative."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical prompt strictly redacted of pathogen names and prior specific malaria diagnoses. Breakpoint placed before complement studies, viral serologies, and renal biopsy."
+}

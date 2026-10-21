@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10860505_05",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 61-year-old man with a documented prior ischemic stroke in the right middle cerebral artery (MCA) distribution presented with acute headache and fever of 2–3 days duration, found to have an impaired swallowing reflex and an enhancing cystic lesion in the right Sylvian fissure. The diagnostic tension centers on differentiating an acute pyogenic brain abscess, cystic neoplasm, or cystic post-infarct encephalomalacia from an active parasitic infection (neurocysticercosis) occurring within the cisternal spaces.\n2. Admission Breakpoint: Outpatient clinical presentation, neurological examination documenting impaired swallowing reflex, and initial conventional T2-weighted and contrast-enhanced MRI showing an enhancing multilobulated cystic mass in the right Sylvian fissure, strictly prior to specialized susceptibility-weighted imaging (SWI) identifying an eccentric scolex and steady-state FIESTA sequences.\n3. Differential Distinctions: Pyogenic bacterial abscess typically features acute fever and ring enhancement with central restricted diffusion, but lacks an eccentric calcified mural scolex and complex arborizing subarachnoid septations. Post-infarction cystic encephalomalacia shows CSF signal intensity with adjacent gliosis without active expansile rim enhancement, mural nodule formation, or fine proliferative internal membranes.",
+  "case_prompt": "A 61-year-old male presented to the outpatient department with a 3-day history of headaches and a 2-day history of fever. His past medical history was notable for an ischemic stroke in the right middle cerebral artery (MCA) distribution three years prior (January 2020).\n\nOn physical examination, the patient was alert and hemodynamically stable. Neurological examination was unremarkable with preserved strength and sensation in all four extremities, except for a sluggish, impaired swallowing reflex. There were no signs of acute meningismus or localized cranial nerve palsies.\n\nBrain magnetic resonance imaging (MRI) was obtained. Conventional T2-weighted sequences revealed a hyperintense, multilobulated cystic lesion located in the right Sylvian fissure. Contrast-enhanced imaging demonstrated smooth, thin peripheral enhancement outlining the cystic margin.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Recurrent ischemic stroke / Post-infarction cystic encephalomalacia",
+      "rule_out_reason": "Considered due to the patient's prior right MCA ischemic stroke presenting with acute headache, fever, and bulbar symptoms; ruled out by MRI showing an active, expansile multilobulated cystic mass with distinct peripheral enhancement and internal structural architecture, rather than non-enhancing gliotic cystic encephalomalacia.",
+      "quote": "He had a history of a right middle cerebral artery territory infarct in January 2020."
+    },
+    {
+      "candidate": "Pyogenic brain abscess",
+      "rule_out_reason": "Considered because of acute fever, headache, and a ring-enhancing lesion in the Sylvian fissure; ruled out by absence of toxic leukocytosis or surrounding mass effect with prominent vasogenic edema, and the specific demonstration of a calcified mural scolex on susceptibility imaging without purulent necrosis.",
+      "quote": "A 61-year-old male complaining of headaches for 3 days and fever for 2 days came to our outpatient department."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Susceptibility-weighted imaging (SWI) identified an eccentric blooming focus representing the characteristic larval scolex within the right Sylvian fissure cyst, while FIESTA imaging demonstrated multiple thin communicating septations throughout the fissure, establishing racemose neurocysticercosis.",
+      "quote": "Eccentric blooming focus representing scolex was seen on susceptibility-weighted imaging (SWI, Figure 5D)."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint established before SWI mural nodule detection and FIESTA sequences. Zero spoilers in case prompt. Verbatim quotes from source text used."
+}

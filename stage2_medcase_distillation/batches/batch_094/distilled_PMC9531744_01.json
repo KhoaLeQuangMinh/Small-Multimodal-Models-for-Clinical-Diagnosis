@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9531744_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 23-year-old man presents with acute-on-chronic right iliac fossa pain, peritoneal signs (positive Rovsing's, Obturator, and Psoas signs), and a large 8 x 10 cm inflammatory mass on ultrasound, having had a similar gastrointestinal illness one month earlier. Clinically, this is indistinguishable from common acute perforated appendicitis with an appendiceal phlegmon or periappendiceal abscess. The unexpected underlying etiology is ectopic parasite ovadeposition triggering transmural fibrotic granulomatous inflammation in the appendix.\n2. Admission Breakpoint: The admission breakpoint concludes immediately following the initial triage evaluation, abdominal examination, baseline laboratory investigations (packed cell volume, renal panel), and abdominal ultrasound demonstrating the 8 x 10 cm appendiceal mass, strictly prior to the therapeutic response to antibiotics, interval appendectomy, and surgical histopathology.\n3. Differential Distinctions: Acute pyogenic appendicitis with phlegmon was the primary clinical diagnosis given classic migratory right lower quadrant peritonitis and ultrasound mass, which temporarily improved on ceftriaxone and metronidazole. Cecal or appendiceal neoplasm was considered due to the large 8 x 10 cm mass, but interval laparotomy showed normal colon and cecum. Definitive histopathology identified parasitic granulomas containing Schistosoma eggs in the appendiceal wall.",
+  "case_prompt": "A 23-year-old male student presents with a 3-day history of recurrent, colicky, migratory right iliac fossa pain. Prior to presentation, medical interventions at a peripheral medical center had failed to alleviate his symptoms. One month earlier, he experienced an episode of severe abdominal discomfort accompanied by several episodes of bilious vomiting, watery diarrhea, and low-grade fever.\n\nOn physical examination, the patient appears ill, warm to touch, and mildly febrile with a right axillary temperature of 37.3°C. He is tachycardic with a heart rate of 114 beats per minute and tachypneic with a respiratory rate of 28 breaths per minute; chest examination reveals normal vesicular breath sounds. Abdominal examination demonstrates marked right iliac fossa tenderness with positive Rovsing's, Obturator, and Psoas signs. A vague, tender mass is palpable in the right iliac fossa; bowel sounds are present and normal, and there is no suprapubic tenderness.\n\nTriage laboratory testing demonstrates a packed cell volume and serum electrolytes, urea, and creatinine within normal limits. An abdominal ultrasound scan reveals an appendiceal mass measuring 8 cm x 10 cm in the right lower quadrant.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Pyogenic Appendicitis with Appendiceal Phlegmon",
+      "rule_out_reason": "Considered the primary provisional diagnosis based on migratory right iliac fossa pain, peritoneal irritation signs, and a large inflammatory mass on ultrasound; although the acute inflammatory phlegmon regressed with intravenous antibiotics, the underlying driver was an ectopic parasitic granulomatous process.",
+      "quote": "Abdominal ultrasound scan showed an appendiceal mass that measured 8 cm x 10 cm... He received conservative management with intravenous ceftriaxone and metronidazole as well as analgesics. Forty-eight hours later, his vital signs had normalized and the mass had regressed."
+    },
+    {
+      "candidate": "Appendiceal / Cecal Neoplasm",
+      "rule_out_reason": "Considered in a young adult presenting with a large 8 x 10 cm right lower quadrant mass; however, the mass regressed with conservative medical therapy, interval appendectomy showed a grossly normal cecum and ileum without neoplastic invasion, and histology revealed non-neoplastic granulomas.",
+      "quote": "Intraoperative findings were: a 12 cm long inflamed retrocecal appendix with fibrotic adhesions of the greater omentum to the tip of appendix. The ceacum, ileum and colon were grossly normal. There was no fluid collection."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Histopathological examination of the resected appendix following interval appendectomy revealed transmural chronic fibrotic granulomatous inflammation encasing both viable and non-viable ova of Schistosoma mansoni and Schistosoma hematobium, and the patient was successfully cured with oral praziquantel therapy.",
+      "quote": "Histology of the appendix showed transmural chronic fibrotic granulomatous inflammation around dead and viable schistosoma ova of both Schistosoma mansoni and Schistosoma hematobium [Figures 1 and 2]. He had stool microscopy done which did not show schistosoma ova. He was then treated with praziquantel 600 mg three times per day for 1 day."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly per Stanford MedCaseReasoning methodology. Zero spoilers or pathogen mentions in the admission presentation, stopping cleanly at the triage ultrasound and baseline labs."
+}

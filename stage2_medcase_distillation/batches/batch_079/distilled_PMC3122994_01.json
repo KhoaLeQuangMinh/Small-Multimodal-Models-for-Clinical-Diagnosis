@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3122994_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 14-year-old immigrant adolescent presenting with a 10-day history of fever, headache, and vomiting who abruptly deteriorates on admission into coma, seizures, bradycardia, and hypotension with profound CSF hypoglycorrhachia (glucose 13 mg/dL vs blood 109 mg/dL) and elevated protein (243 mg/dL). This acute neurological catastrophe closely mimics acute bacterial meningitis or herpes simplex encephalitis, prompting empiric ceftriaxone and acyclovir before subacute mycobacterial meningoencephalitis with miliary dissemination is recognized.\n2. Admission Breakpoint: Initial emergency triage, acute decompensation to the ICU, routine blood tests, normal non-contrast cranial CT, baseline CSF examination (pleocytosis, profound hypoglycorrhachia, high protein, negative India ink), and admission chest radiograph suspecting a miliary pattern, prior to HSV PCR, GeneXpert MTB-RIF, QuantiFERON gold, and contrast-enhanced brain MRI.\n3. Differential Distinctions: Herpes simplex encephalitis explains fever, altered consciousness, and seizures with lymphocytic CSF, but is excluded by negative viral testing. Acute pyogenic bacterial meningitis typically presents with predominant neutrophilic pleocytosis rather than a 10-day subacute lymphocytic prodrome. Cryptococcal meningitis is excluded by negative India ink. Tuberculous meningoencephalitis is confirmed by profound hypoglycorrhachia, suspected miliary pattern on chest radiograph, maternal history, and positive PCR/culture.",
+  "case_prompt": "A 14-year-old immigrant child, native of Azerbaijan living in Turkey for 10 years, presented to the emergency clinic with a 10-day history of fever, persistent headache, and vomiting. \n\nOn physical examination, the patient exhibited mild confusion, nuchal rigidity, and positive signs of meningeal irritation. Shortly after initial evaluation, the patient experienced a sudden loss of consciousness, bradycardia, hypotension, and seizures requiring emergent transfer to the intensive care unit.\n\nInitial laboratory evaluation revealed a white blood cell count of 12,300/mm³, hemoglobin of 11.7 g/dL, C-reactive protein of 12 mg/dL, and a negative anti-HIV antibody test. Emergent non-contrast cranial computed tomography showed no acute intracranial abnormalities. Cerebrospinal fluid (CSF) analysis revealed a total cell count of 57/mm³ with 18 leukocytes/mm³ (60% lymphocytes), marked hypoglycorrhachia with a CSF glucose of 13 mg/dL (simultaneous blood glucose 109 mg/dL), and an elevated protein of 243 mg/dL. India ink stain of the CSF was negative. Chest radiography showed subtle, diffuse micronodular markings suspicious for a miliary pattern.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Herpes Simplex Encephalitis",
+      "rule_out_reason": "Acute loss of consciousness, seizures, and lymphocytic pleocytosis prompted urgent empiric acyclovir therapy; however, specific viral diagnostic testing returned negative.",
+      "quote": "Ceftriaxone and acyclovir therapy was started due to clinical deterioration, loss of consciousness and seizure on the same day. A negative Herpes Simplex Virus (HSV) test result was obtained on the seventh day."
+    },
+    {
+      "candidate": "Acute Bacterial / Pyogenic Meningitis",
+      "rule_out_reason": "Rapid hemodynamic collapse and profound hypoglycorrhachia led to broad-spectrum cephalosporin therapy, but the 10-day prodrome and lymphocytic predominance were incompatible with typical acute pyogenic bacterial meningitis.",
+      "quote": "Ceftriaxone and acyclovir therapy was started due to clinical deterioration, loss of consciousness and seizure on the same day."
+    },
+    {
+      "candidate": "Cryptococcal Meningitis",
+      "rule_out_reason": "Subacute headache, fever, vomiting, lymphocytic pleocytosis, and pronounced hypoglycorrhachia suggested fungal meningoencephalitis, but microscopic evaluation was negative.",
+      "quote": "The India ink stain was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Severe CSF hypoglycorrhachia, lymphocytic pleocytosis, markedly elevated protein, suspected miliary chest pattern, and maternal history culminated in positive molecular testing and isolation of Mycobacterium tuberculosis from the CSF.",
+      "quote": "CSF polymerase chain reaction (PCR) for TB (GeneXpert MTB-RIF, Cepheid , Sunnyvale, CA, USA) and Quantiferon TB gold test (Cellestis , Australia) were positive on the third day. Mycobacterium tuberculosis was isolated from the CSF on the 21st day in Loewenstein Jensen (L-J) medium."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation distilled strictly to Day 1 triage findings prior to HSV PCR, GeneXpert PCR, QuantiFERON testing, and contrast MRI. Zero pathogen names or spoilers in the case prompt."
+}

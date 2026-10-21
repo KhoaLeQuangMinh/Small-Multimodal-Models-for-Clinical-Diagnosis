@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC11835094_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 48-year-old male in China presented with progressive, tender cervical lymphadenopathy that worsened despite empirical multidrug antimycobacterial therapy for biopsy-proven necrotizing granulomatous inflammation. The primary diagnostic challenge was identifying an imported endemic dimorphic mycosis reactivating after a four-year latent period following his return from agricultural work in rural Brazil.\n2. Admission Breakpoint: The breakpoint occurs immediately prior to admission send-out molecular testing, advanced fungal biomarkers, PET-CT imaging, and lymph node metagenomic sequencing ('After the patient was admitted, serum hepatitis B surface antigen, anti-HCV, HIV virus antibody and antigen...').\n3. Differential Distinctions: Tuberculous lymphadenitis / scrofula (ruled out by disease progression during standard and fluoroquinolone-based therapy, along with negative molecular and culture assays), lymphoid malignancy / metastatic head and neck carcinoma (ruled out by granulomatous microabscess histology without malignant cytology), and regional endemic mycoses such as talaromycosis (ruled out by specific South American exposure and molecular identification of Paracoccidioides).",
+  "case_prompt": "A 48-year-old male presented to a tertiary hospital in China for evaluation of a progressively enlarging neck mass of greater than five months' duration. Five months prior, he noticed bilateral cervical swellings without pain, overlying erythema, or fevers. Three months prior, following continued node enlargement, he underwent surgical excision of a right cervical mass; postoperative histological evaluation revealed chronic granulomatous inflammation with microabscess formation, prompting presumptive empirical therapy for mycobacterial infection with rifampicin, isoniazid, ethambutol, and moxifloxacin. One week later, therapy was briefly interrupted due to drug-induced hepatotoxicity; after hepatic recovery, he resumed a modified regimen of isoniazid, ethambutol, and moxifloxacin. Despite continuous adherent therapy over the preceding month, the right cervical lymph nodes progressively expanded into an egg-sized tender mass.\n\nEpidemiological and occupational history revealed that he had lived and worked as a restaurant chef on an agricultural farm in Brazil for 24 years (from 1993 to 2017) before returning to China four years prior to presentation. Past medical history included chronic hepatitis B virus infection diagnosed 20 years earlier, for which entecavir was initiated five months prior. He had a 20 pack-year smoking history (quit seven years ago) and a 20-year history of alcohol intake (abstained for one year).\n\nOn physical examination, the patient was afebrile and hemodynamically stable. Palpation of the neck revealed multiple enlarged lymph nodes bilaterally. On the right side, a coalescent mass measured approximately 4.7 × 3.7 cm, firm in consistency, tender to palpation, moderately mobile, without fluctuance, cutaneous erythema, or fistulous drainage. Examination of the axillary and inguinal nodal basins was normal, with no hepatosplenomegaly.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Tuberculous Lymphadenitis (Scrofula)",
+      "rule_out_reason": "Considered the primary diagnosis initially due to granulomatous inflammation with microabscesses on prior excision; however, the nodal mass progressively expanded despite adherent first- and second-line antimycobacterial therapy, and subsequent automated cultures, smears, and GeneXpert assays were negative.",
+      "quote": "Although the patient received regular antituberculosis treatment, the lymph nodes in the right neck still progressively enlarged."
+    },
+    {
+      "candidate": "Lymphoma / Head and Neck Squamous Cell Carcinoma Metastasis",
+      "rule_out_reason": "Raised due to a solitary, hard, rapidly enlarging cervical tumor in a former heavy smoker and drinker, but excisional biopsy demonstrated granulomatous inflammation with suppurative abscess formation without malignant cellular atypia.",
+      "quote": "Postoperative pathological tissue examination indicated chronic granulomatous inflammation with a small abscess formation (Fig. 1A-C), suggesting a high risk of tuberculosis."
+    },
+    {
+      "candidate": "Endemic Dimorphic Mycoses (e.g., Talaromycosis / Histoplasmosis)",
+      "rule_out_reason": "Considered in chronic granulomatous lymphadenitis, but the patient's long-term residence and agricultural work on a Brazilian farm pointed to South American blastomycosis, which can remain dormant for years before reactivating.",
+      "quote": "He had a history of traveling abroad and working as a restaurant chef in a Brazilian farm from 1993 to 2017."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing (mNGS) of the repeat cervical lymph node biopsy identified Paracoccidioides, confirming latent paracoccidioidomycosis reactivated four years after returning from South America, with prompt clinical response and cure following voriconazole therapy.",
+      "quote": "Two weeks later, he was diagnosed with paracoccidioidomycosis and began treatment with voriconazole on March 9, 2021"
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "High-fidelity distillation of imported paracoccidioidomycosis presenting as treatment-refractory cervical granulomatous lymphadenitis four years after agricultural exposure in Brazil. Clean admission breakpoint with zero mention of Paracoccidioides, mNGS, or antifungal treatment."
+}

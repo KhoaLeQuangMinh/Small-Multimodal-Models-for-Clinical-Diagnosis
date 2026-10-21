@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5771930_01",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 60-year-old man presented with a 3-week history of fever of unknown origin, profound constitutional symptoms, massive splenomegaly, and mild bicytopenia with marked systemic inflammation (markedly elevated CRP and soluble IL-2 receptor). The initial differential encompasses hematologic malignancies, infective endocarditis, hemophagocytic lymphohistiocytosis, and zoonotic/travel-related infections following visits to Mediterranean Europe (Crete and Spain).\n2. Admission Breakpoint: The admission breakpoint falls immediately after initial physical exam, baseline triage laboratories (mild anemia, mild thrombocytopenia, elevated CRP, elevated sIL-2R, mild GGT elevation), and initial non-invasive imaging (chest radiograph, echocardiography, and abdominal sonography establishing splenomegaly), prior to send-out infectious serologies/PCRs, PET-CT, and bone marrow aspirate/biopsy.\n3. Differential Distinctions: Infective endocarditis is distinguished by normal cardiac valves on TTE/TEE and persistently negative serial blood cultures. Acute viral fevers, malaria, or leptospirosis are excluded by negative specific diagnostic testing and persistent, unremitting progression to pancytopenia unresponsive to broad-spectrum antibacterial regimens.",
+  "case_prompt": "A 60-year-old male Austrian resident presented with a three-week history of fever of unknown origin, severe fatigue, and an unintentional weight loss of 6 kg. His medical history was notable for type 2 diabetes mellitus and hypothyroidism, both managed on medical therapy. Travel history included a two-week trip to southern Crete 12 months prior and a two-week trip to southern Spain 4 months prior.\n\nOn physical examination, the patient was febrile; otherwise, the initial physical examination was unremarkable with no localized signs of infection, cutaneous lesions, or peripheral lymphadenopathy. \n\nInitial laboratory evaluation revealed a C-reactive protein (CRP) elevated between 94.2 and 188.9 mg/L (reference range 0–5 mg/L), a slight hypochromic normocytic anemia with a hemoglobin of 12.5 g/dL (without signs of hemolysis), mild thrombocytopenia with a platelet count of 127,000/μL (reference range 140,000–440,000/μL), and a discreetly elevated gamma-glutamyltransferase (GGT). Soluble interleukin-2 receptor (sIL-2R) was markedly elevated at 5,156.1 pg/mL (reference range 458.0–1,997.0 pg/mL). Baseline metabolic panel was otherwise unremarkable.\n\nChest radiography and urinalysis revealed no focus of infection. Transthoracic and transesophageal echocardiography demonstrated no valvular vegetation or evidence of endocarditis. Abdominal ultrasonography identified no focal intra-abdominal abscess or hepatomegaly but revealed marked splenomegaly measuring 7.2 × 16.4 cm.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Infective endocarditis / Pyogenic bacterial infection",
+      "rule_out_reason": "Transthoracic and transesophageal echocardiography identified no structural valvular focus of infection, serial blood cultures showed no growth, and prolonged broad-spectrum intravenous antibacterial regimens failed to improve symptoms.",
+      "quote": "Chest X-ray, urine analysis, abdominal sonography, transthoracic as well as transoesophageal echocardiography showed no focus of infection but revealed splenomegaly (7.2 x 16.4 cm)."
+    },
+    {
+      "candidate": "Malaria / Leptospirosis / Viral infections / Tuberculosis",
+      "rule_out_reason": "Specific infectious disease diagnostics—including blood smear, serology, interferon-gamma release assay, and molecular viral assays—were repeatedly negative.",
+      "quote": "Serial blood cultures were negative, as were tests for influenza (negative PCR), other viral infections (negative IgM antibody test for Puumala, Dobrava, and Hantaan virus, negative PCR for cytomegalovirus and Epstein-Barr virus), leptospirosis (negative antibody test), malaria (negative blood smear), tuberculosis (negative interferon-gamma release assay), and human immunodeficiency virus (HIV) (negative antibody)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Progression of mild bicytopenia to severe pancytopenia in the setting of persistent high fevers, massive splenomegaly, and Mediterranean travel, leading to bone marrow examination demonstrating intracellular amastigotes inside macrophages and confirmatory molecular testing.",
+      "quote": "Bone marrow biopsy revealed microorganisms within macrophages (Fig. 2). PCR from peripheral blood and bone marrow confirmed infection with Leishmania donovani."
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized to Stanford MedCaseReasoning guidelines. Zero spoilers or pathogen names in admission prompt, differential ruled out with exact verbatim quotes, confirmed as visceral leishmaniasis."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3518950_01",
+  "disease": "Mycetoma",
+  "think": "1. Core Clinical Tension: A 34-year-old nomadic male presents with a 4-year history of chronic anteromedial leg tumefaction, multiple discharging sinuses extruding yellowish granules, severe anemia, leukocytosis, and superficial cortical tibial bone lysis. The clinical challenge is distinguishing this chronic granulomatous process from chronic bacterial osteomyelitis, cutaneous tuberculosis/scrofuloderma, and soft-tissue sarcomas, as well as recognizing potential dual bacterial and fungal etiology.\n2. Admission Breakpoint: The admission breakpoint is located right after admission triage, physical examination of the limb, plain radiography showing cortical lytic defects, and baseline hematology (Hb 5.4 g/dL, WBC 15,500/mm\u00b3), prior to incisional biopsy and antifungal/antibacterial regimens.\n3. Differential Distinctions: Chronic bacterial osteomyelitis (typically shows periosteal new bone formation, involucrum, and sequestrum, which were absent here), cutaneous tuberculosis/scrofuloderma (presents with draining ulcers and caseous discharge without macroscopic grain formation), and malignant mesenchymal tumors (which do not drain granules from sinus tracts). Incisional biopsy demonstrating both actinomycotic and eumycotic grains confirms mixed mycetoma.",
+  "case_prompt": "A 34-year-old nomadic male presents to the hospital with chronic swelling of his anteromedial left leg accompanied by multiple sinuses discharging yellowish granules, which have developed progressively over the past 4 years. He denies preceding trauma but reports localized pain, unintentional weight loss, and progressive inability to use the limb; ankle and foot function remain intact. He also reports concurrent right testicular pain. Plain radiographs of the left lower extremity reveal tibial superficial cortical lytic defects without periosteal reaction. Laboratory investigations show a severe normocytic, normochromic anemia with hemoglobin 5.4 g/dL, leukocytosis with 15,500 white blood cells/mm\u00b3, and a negative HIV screening test.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Chronic bacterial osteomyelitis (e.g., Staphylococcus aureus)",
+      "rule_out_reason": "Bacterial osteomyelitis causes chronic discharging sinuses, but plain radiographs typically show prominent periosteal reaction, sequestrum, and involucrum, which were absent here, and the purulent drainage lacks characteristic fungal/actinomycotic grains.",
+      "quote": "Radiographs revealed tibial superficial cortical lytic defects without periosteal reaction (Figure 2)."
+    },
+    {
+      "candidate": "Cutaneous tuberculosis / Scrofuloderma",
+      "rule_out_reason": "Tuberculosis cutis can produce chronic subcutaneous nodules and sinuses in pastoralists with weight loss, but discharges caseous necrotic debris rather than discrete grains, and tissue biopsy revealed fungal and actinomycotic microabscesses.",
+      "quote": "An incisional biopsy revealed both actinomycetoma and eumycetoma with abscesses (Figures 3(a) and 3(b))."
+    },
+    {
+      "candidate": "Soft tissue sarcoma (e.g., synovial sarcoma or fibrosarcoma)",
+      "rule_out_reason": "Mesenchymal malignancies can cause chronic lower-extremity soft-tissue mass with cortical bone erosion, but do not present with multiple grain-discharging sinus tracts and are ruled out by histopathology showing suppurative granulomas containing grains.",
+      "quote": "An incisional biopsy revealed both actinomycetoma and eumycetoma with abscesses (Figures 3(a) and 3(b))."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Incisional biopsy histopathology demonstrating abscesses containing both actinomycetoma and eumycetoma grains, definitively establishing the diagnosis of mixed mycetoma.",
+      "quote": "An incisional biopsy revealed both actinomycetoma and eumycetoma with abscesses (Figures 3(a) and 3(b))."
+    }
+  ],
+  "final_diagnosis": "Mycetoma",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed strictly prior to incisional biopsy and antifungal/antibacterial therapy. Zero mention of mycetoma, actinomycetoma, or eumycetoma in the case prompt. Target disease is Mycetoma."
+}

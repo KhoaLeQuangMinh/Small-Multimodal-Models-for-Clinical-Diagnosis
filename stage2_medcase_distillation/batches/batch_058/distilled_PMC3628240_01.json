@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3628240_01",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: A 9-year-old boy from Nepal presenting with five months of recurrent low-grade fever, right upper quadrant abdominal pain, facial puffiness, peripheral eosinophilia, and multiple small liver microabscesses with common bile duct dilatation. On initial abdominal imaging, intraluminal filling defects in the common bile duct were interpreted as 'round worms', creating diagnostic confusion between biliary ascariasis and biliary trematodiasis (Fasciola hepatica flukes).\n2. Admission Breakpoint: Admission triage ends following history, physical exam (mild fever, tender hepatomegaly without jaundice), and baseline laboratories (anemia, eosinophilia, raised ESR, normal LFTs). Confirmatory evaluation begins with advanced biliary imaging (MRCP), endoscopic retrograde cholangiopancreatography (ERCP), and parasitic extraction.\n3. Differential Distinctions: Biliary ascariasis was the initial working diagnosis based on ultrasound appearance suggesting roundworms in the common bile duct, but direct endoscopic extraction revealed flat liver flukes (trematodes) rather than cylindrical nematodes. Pyogenic bacterial cholangitis or liver abscesses were considered due to recurrent fevers and microabscesses, but normal LFTs, prominent peripheral eosinophilia, and recovery of flukes excluded a primary pyogenic process. Biliary fascioliasis is confirmed by ERCP demonstrating CBD filling defects and endoscopic basket extraction of adult Fasciola hepatica flukes.",
+  "case_prompt": "A 9-year-old boy from Nepal presented with a five-month history of mild, dull right upper quadrant abdominal pain and recurrent low-grade fevers. Over the preceding four months, his family also noted mild intermittent facial puffiness. He had no history of dark urine, clay-colored stools, pruritus, or clinical jaundice. On physical examination, he was mildly febrile. Sclerae were anicteric. Abdominal examination revealed tender hepatomegaly without splenomegaly, ascites, or peritoneal signs. Initial laboratory investigations revealed normocytic anemia, peripheral blood eosinophilia, and an elevated erythrocyte sedimentation rate (ESR). Liver function tests, including serum bilirubin, alanine aminotransferase, aspartate aminotransferase, and alkaline phosphatase, were completely within normal reference limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Biliary Ascariasis (Ascaris lumbricoides)",
+      "rule_out_reason": "Initial sonographic evaluation suggested cylindrical roundworms in the common bile duct, a frequent cause of biliary colic in endemic areas, but endoscopic extraction recovered flat leaf-like trematodes rather than nematodes.",
+      "quote": "appearance suggestive of \"round worms\" in the common bile duct"
+    },
+    {
+      "candidate": "Pyogenic Bacterial Cholangitis / Hepatic Microabscesses",
+      "rule_out_reason": "Considered due to chronic fevers, right upper quadrant tenderness, hepatomegaly, and liver microabscesses, but patient had completely normal liver biochemistries without icterus, marked peripheral eosinophilia, and intraluminal parasitic flukes on cholangiography.",
+      "quote": "The liver function tests were within normal limits. An ultrasonography (USG) of the abdomen revealed multiple small cholangitic abscesses, cholangitis, mild intrahepatic biliary radical (IHBR) dilatation"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The definitive diagnosis was confirmed by endoscopic retrograde cholangiopancreatography (ERCP), which revealed irregular intraluminal filling defects in the common bile duct, from which multiple adult Fasciola hepatica flukes were successfully extracted following sphincterotomy.",
+      "quote": "Sphincterotomy was performed, and multiple worms of FH were extracted using basket and balloon catheter [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly redacted of pathogen names and parasite descriptions. Breakpoint placed before MRCP and ERCP extraction."
+}

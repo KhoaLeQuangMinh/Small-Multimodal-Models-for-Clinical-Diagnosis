@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3748632_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: An 8-year-old child presents with a 5-month history of a painful, swollen left index finger with a draining sinus and radiographic osteomyelitis, accompanied by ipsilateral draining axillary ulcers and cachexia. The major diagnostic tension is differentiating pyogenic staphylococcal/streptococcal osteomyelitis and chronic suppurative lymphadenitis from skeletal and cutaneous tuberculosis (spina ventosa with scrofuloderma), especially given that direct finger aspirates are paucibacillary and pyogenic cultures are negative.\n2. Admission Breakpoint: The breakpoint occurs after initial presentation with 5 months of finger swelling, 4 months of fever and weight loss, physical exam showing emaciation, pallor, index finger draining abscess, and draining axillary ulcers/lymphadenopathy, baseline ESR (73 mm/1st hr), plain radiographs showing proximal phalanx osteomyelitis distal to the physis, and normal chest radiography, immediately prior to tuberculin testing, microbiologic cultures, and lymph node fine-needle aspiration.\n3. Differential Distinctions: Pyogenic bacterial osteomyelitis (e.g., Staphylococcus aureus) is ruled out by sterile bacterial cultures from the draining sinus aspirate; fungal or atypical mycobacterial osteomyelitis is ruled out by strongly positive tuberculin reactivity and nodal cytopathology; tuberculosis is confirmed by a strongly positive tuberculin skin test (12 mm) and axillary lymph node fine needle aspirate demonstrating necrotizing granulomatous inflammation with acid-fast bacilli on Ziehl-Neelsen stain.",
+  "case_prompt": "An 8-year-old girl presented with pain and swelling of the left index finger that had persisted for 5 months. Additional history revealed low-grade fever and significant weight loss over the preceding 4 months. On physical examination, she appeared emaciated and pale. Local examination of the left hand revealed features of a draining abscess on the dorso-ulnar aspect of the proximal phalanx of the left index finger. Examination of the left axilla revealed three small, scantily draining ulcers with accompanying axillary lymphadenopathy, as well as an additional satellite ulcer in the midaxillary line near the anterior axillary fold. The remainder of the general and systemic examinations was unremarkable. Plain radiographs of the left hand showed features of osteomyelitis in the proximal phalanx of the index finger distal to the physis. Plain chest radiography was normal, and the erythrocyte sedimentation rate (ESR) was 73 mm in the first hour.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial osteomyelitis and suppurative lymphadenitis (e.g., Staphylococcus aureus)",
+      "rule_out_reason": "Considered as the most common etiology of pediatric acute-to-subacute dactylitis with draining abscess, but pyogenic bacterial cultures from the finger sinus aspirate yielded no bacterial growth.",
+      "quote": "no pyogenic bacteria grew on culture."
+    },
+    {
+      "candidate": "Atypical mycobacterial infection or paucibacillary dactylitis",
+      "rule_out_reason": "Initial evaluation of the digital sinus aspirate was inconclusive with absence of demonstrable acid-fast organisms, necessitating evaluation of contiguous regional lymph nodes.",
+      "quote": "Aspirate from the small abscess around the sinus of the index finger showed no acid fast bacilli (AFB) on Ziehl Neelsen (ZN) staining and no pyogenic bacteria grew on culture."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Disseminated Tuberculosis (Tuberculous dactylitis with scrofuloderma)",
+      "rule_out_reason": "Diagnosis was established by a strongly positive tuberculin skin test (12 mm) and fine-needle aspiration of the ipsilateral axillary lymph node demonstrating granulomatous inflammation with necrosis and acid-fast bacilli on Ziehl-Neelsen stain.",
+      "quote": "Fine needle aspirate from the ipsilateral axillary lymph node however, showed granulomatous inflammation with necrosis and additional slide subsequently came positive for AFB on ZN staining."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly limits imaging to initial plain hand and chest radiographs, alongside exam and triage ESR. Tuberculin test, AFB smears, culture results, and axillary lymph node FNA findings are reserved for diagnostic reasoning."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4285284_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: Acute febrile illness in an elderly traveler returning from West African nations (Togo and Burkina Faso) historically considered non-endemic for this pathogen, where malaria is typically presumed, challenging standard geographical risk assumptions for arboviral transmission.\n2. Admission Breakpoint: The presentation ends immediately after the travel history and clinical presentation to the tropical medicine clinic are established, before send-out serological assays (NS1 antigen, IgM) and molecular reverse transcription PCR testing return.\n3. Differential Distinctions: Other endemic West African febrile illnesses (such as Plasmodium falciparum malaria, typhoid fever, or yellow fever) are the initial primary differentials in travelers returning from this region; excluded by negative workup and molecular/serological identification of dengue virus serotype 3.",
+  "case_prompt": "In 2013, a 71-year-old male presented to a tropical medicine clinic in Germany with an acute febrile illness 3 days after returning from an extensive travel itinerary in West Africa.\n\nHis travel history spanned 6 weeks from mid-September through mid-October, during which he stayed in Togo (Lomie, first 3 weeks), Benin (Ouidah, 1 week), returned to Togo (Lomie, 1 week), and concluded his trip in Burkina Faso (Ouagadougou, 3 days). He sought medical evaluation due to acute fever developing shortly after his return.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Malaria and Other Endemic West African Febrile Illnesses",
+      "rule_out_reason": "Considered the primary differential diagnosis in any traveler returning from West Africa with acute fever; excluded as clinicians must evaluate emerging arboviral etiologies in patients presenting with tropical febrile syndromes.",
+      "quote": "Dengue fever should be considered in travelers returning from Africa with acute febrile illness."
+    },
+    {
+      "candidate": "Exclusion of Non-Endemic Regional Transmission Assumption",
+      "rule_out_reason": "Initially considered less probable due to the historical view that Togo and Burkina Faso were non-endemic territories; refuted by the incubation window of under 14 days confirming local transmission.",
+      "quote": "If one assumes a maximum incubation time of 14 days, our case-patient was most probably exposed to DENV in Togo or Burkina Faso. These 2 countries have not been considered as areas to which DENV is endemic."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Dengue Virus Serotype 3 Infection",
+      "rule_out_reason": "The diagnosis was confirmed by positive NS1 antigen and IgM serology, followed by real-time RT-PCR and envelope gene sequencing identifying DENV-3 genotype III.",
+      "quote": "Tests results for DENV nonstructural protein 1 and IgM against DENV were positive. The result of a real-time reverse transcription PCR for DENV 1-4 was also positive. A serotype-specific real-time reverse transcription PCR identified DENV-3."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly from PMC4285284. The phrase 'suspected dengue fever' in the original text was sanitized from the prompt to maintain complete diagnostic neutrality and isolate admission triage. Confirmatory serology and RT-PCR reserved for diagnostic reasoning."
+}

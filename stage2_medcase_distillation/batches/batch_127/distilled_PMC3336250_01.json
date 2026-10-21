@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3336250_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 28-year-old postpartum woman presents 1 week after uncomplicated delivery with high-grade fevers and chills, accompanied by normocytic anemia, elevated ESR, but normal physical exam, clear chest radiograph, and normal abdominal ultrasound. The challenge is distinguishing common postpartum pelvic sepsis, viral syndromes, or enteric fever from disseminated/miliary mycobacterial disease presenting cryptogenically during the postpartum immune rebound.\n2. Admission Breakpoint: The admission triage phase ends after the baseline clinical evaluation, initial CBC, ESR, renal and liver function tests, and the initial normal plain chest radiograph and abdominal ultrasound. Subsequent empirical therapies, serial repeat sonograms, serologies, and eventual high-resolution chest CT scan belong to the extended confirmatory investigation.\n3. Differential Distinctions: Puerperal sepsis / endometritis presents with postpartum fever, but typically features uterine tenderness, foul lochia, and leukocytosis, which were absent here with persistently sterile cultures. Enteric fever and malaria were suspected given the persistent fever and eventual hepatosplenomegaly, but were ruled out by noncontributory Widal testing, negative malaria rapid strip test, sterile blood cultures, and lack of response to empirical therapies.",
+  "case_prompt": "A 28-year-old woman (gravida 2, para 1) presented with intermittent high-grade fever associated with chills commencing 1 week after an uncomplicated, full-term normal vaginal delivery. She had no cough, dyspnea, pelvic pain, abnormal vaginal discharge, or urinary symptoms. She reported no history of chronic medical illness or known contact with individuals with chronic respiratory disease. On physical examination, she was febrile and appeared pale. There was no peripheral lymphadenopathy. Abdominal examination was unremarkable, with no palpable hepatomegaly or splenomegaly. Respiratory examination demonstrated clear breath sounds bilaterally. Initial laboratory evaluation revealed normocytic anemia with a hemoglobin of 8.3 g/dL, mean corpuscular volume of 96.5 fL, mean corpuscular hemoglobin of 28.2 pg, and mean corpuscular hemoglobin concentration of 29.2 g/dL. Total leukocyte count was 7,500/mm^3 (57% polymorphonuclear cells and 30% lymphocytes). The erythrocyte sedimentation rate was elevated at 45 mm/hr. Liver and renal function tests were within normal limits. Baseline plain chest radiography and abdominal ultrasonography performed during the second week of fever were essentially normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Puerperal Sepsis / Pelvic Endometritis",
+      "rule_out_reason": "Acute high-grade fever and chills developing 1 week postpartum strongly suggested pelvic or genital tract puerperal sepsis; however, the patient lacked pelvic symptoms or tenderness, and blood and urine cultures were noncontributory.",
+      "quote": "Widal test for enteric fever, strip test for malarial parasite, and urine and blood culture were not contributory."
+    },
+    {
+      "candidate": "Enteric Fever / Acute Malaria",
+      "rule_out_reason": "Prolonged remittent fever, chills, and the subsequent appearance of hepatosplenomegaly prompted empiric regimens for enteric fever and malaria; however, diagnostic strip testing and Widal serologies were negative, and the patient failed to improve clinically.",
+      "quote": "Widal test for enteric fever, strip test for malarial parasite, and urine and blood culture were not contributory... Patient was now put empirically on antimalarials but she continued to be symptomatic."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Persistence of fever and night sweats led to repeat chest radiography 4 weeks later showing bilateral miliary mottling, which was confirmed as diffuse miliary tuberculosis by high-resolution chest CT scan, resulting in complete clinical remission following antituberculosis therapy.",
+      "quote": "Chest radiograph repeated four weeks later suggested the presence of bilateral miliary mottling (Figure 1). The diagnosis of miliary tuberculosis was confirmed by high resolution CT scan (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Disseminated miliary tuberculosis presenting cryptogenically as puerperal pyrexia with initially normal imaging, diagnosed on repeat imaging 4 weeks later."
+}

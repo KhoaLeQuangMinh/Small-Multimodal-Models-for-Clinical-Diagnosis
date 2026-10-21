@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7566203_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 19-year-old male presenting with subacute, progressive paraparesis, sensory level at T6, and neurogenic urinary hesitancy without systemic constitutional signs (no fever, night sweats, or weight loss). MRI demonstrates an intramedullary mass at T6-T8, which strongly mimics a primary intramedullary central nervous system neoplasm such as an ependymoma or glioma, concealing an isolated intramedullary spinal cord tuberculoma.\n2. Admission Breakpoint: Following neurological examination, triage sputum analysis (negative on admission), and neuroimaging (normal chest and plain spine radiographs, MRI demonstrating an intramedullary mass at T6-T8), immediately prior to surgical decompression and biopsy.\n3. Differential Distinctions: Intramedullary ependymomas and astrocytomas show neoplastic glial/ependymal proliferations and lack caseating granulomas; spinal tuberculoma exhibits epithelioid histiocytes, Langhans multinucleated giant cells, peripheral lymphocytic infiltrate, and central caseous necrosis.",
+  "case_prompt": "A 19-year-old male presented to the hospital with progressive mid-back pain and weakness of both lower extremities of 3 months duration. Neurological weakness had started in the left lower extremity and progressively involved the right lower extremity. He also noted new urinary hesitancy and a sensation of incomplete bladder emptying, with preserved bowel continence. He had presented to a primary clinic 2 months earlier and was started on empiric antimicrobial therapy, although he had no preceding cough, night sweats, or weight loss, and reported no history of sick contacts.\n\nOn physical examination, his cognitive functions and cranial nerves were intact. Motor examination revealed normal 5/5 muscle power in both upper extremities, but bilateral lower extremity strength was markedly reduced to 2/5. Deep tendon reflexes were brisk throughout both lower extremities, with bilateral extensor plantar responses (Babinski sign). Sensory examination demonstrated hypoesthesia and diminished sensation with a distinct sensory level below the T6 dermatome.\n\nRoutine laboratory investigations and repeat admission sputum smear examinations were negative. Testing for HIV was non-reactive. Plain radiographs of the chest, thoracolumbar spine, and lateral views were completely normal. Magnetic resonance imaging (MRI) of the spine revealed an intradural, intramedullary mass lesion extending across the T6, T7, and T8 vertebral levels; on T1-weighted images, a hypointense perimeter surrounded an isointense center, while T2-weighted sequences demonstrated low signal intensity throughout the lesion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Spinal Cord Ependymoma",
+      "rule_out_reason": "Considered as a primary differential diagnosis for a well-circumscribed intramedullary cord mass causing progressive myelopathy; excluded on excisional biopsy which revealed chronic granulomatous inflammation rather than an ependymal neoplasm.",
+      "quote": "With the above imaging characteristics of intramedullary lesion, differential diagnosis of tuberculous granuloma, ependymoma and glioma were suggested."
+    },
+    {
+      "candidate": "Spinal Cord Astrocytoma / Glioma",
+      "rule_out_reason": "Considered given the intramedullary location and signal characteristics on MRI; ruled out by histopathology demonstrating epithelioid histiocytes, Langhans giant cells, and central caseous necrosis without neoplastic glial proliferation.",
+      "quote": "The patient suspected with intramedullary mass spinal tumour. With the above imaging characteristics of intramedullary lesion, differential diagnosis of tuberculous granuloma, ependymoma and glioma were suggested."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Posterior T6-T8 laminectomy and durotomy revealed a brown-greyish, multilobulated intramedullary mass whose excisional biopsy demonstrated classic chronic granulomatous inflammation with Langhans multinucleated giant cells, peripheral lymphocytic cuffing, and central caseating necrosis diagnostic of spinal cord tuberculoma.",
+      "quote": "Excisional biopsy resulted as granulomatous chronic inflammation process, which was seen by the formation of epitheloid histiocytes (multinucleated langerhans type giant cells), with peripheral lymphocytes and plasma cells, and a central area of caseous necrosis. These pictures below were suggestive for tuberculoma of the spinal cord (Fig. 4)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled to pre-operative admission breakpoint. The case prompt is free of pathogen spoilers, describing an intramedullary mass presenting with subacute myelopathy. Quotes matched verbatim."
+}

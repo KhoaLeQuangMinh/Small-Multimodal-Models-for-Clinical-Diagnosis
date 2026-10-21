@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10467300_03",
+  "disease": "Scabies",
+  "think": "1. Core Clinical Tension: A 24-year-old man developed intensely pruritic papules and nodules across his lower abdomen, thighs, groins, and genitalia with nocturnal exacerbation that largely cleared after three cycles of topical sulfur cream, except for intensely pruritic nodules localized to the foreskin of his penis. These nodules proved refractory to topical and intralesional corticosteroids and systemic antihistamines. The tension lies in distinguishing post-scabetic nodular hypersensitivity (nodular scabies) from sexually transmitted lesions (condylomata acuminata, secondary syphilis), localized genital prurigo nodularis, or cutaneous pseudolymphoma.\n2. Admission Breakpoint: The admission clinical presentation concludes when the patient is admitted for evaluation and treatment of refractory foreskin nodules that resisted topical steroids, intralesional steroid injections, and antihistamines following sulfur cream therapy, prior to initiation of rescue targeted immunomodulatory therapy.\n3. Differential Distinctions: Condylomata acuminata typically presents as flesh-colored or pigmented verrucous or smooth genital papules that are generally painless, non-pruritic, and do not follow an acute multi-site pruritic eruption with nocturnal worsening. Lichen simplex chronicus or genital neurodermatitis presents with chronic pruritic lichenified plaques or nodules but lacks the acute preceding eruption involving groins, thighs, and lower abdomen responsive to sulfur therapy. Recalcitrant nodular scabies presents as persistent, severely itchy nodules on male genitalia that persist despite parasite clearance due to an enduring delayed-type hypersensitivity reaction.",
+  "case_prompt": "A 24-year-old man is admitted for evaluation of severe, persistent itchy nodules on the foreskin of his penis. Six months prior, he had developed an acute eruption of pruritic papules and nodules distributed across his lower abdomen, thighs, groins, and genitalia, characterized by pronounced nocturnal exacerbation of itching. He was treated with three cycles (spaced one week apart) of topical 10% sulfur cream applied twice daily for three days, which resulted in excellent clinical resolution of the lesions over his lower abdomen, thighs, and groins. However, intensely pruritic nodules on his genitalia persisted. These residual nodules proved refractory to topical corticosteroids, intralesional corticosteroid injections, and systemic antihistamines. On physical examination, firm, discrete, erythematous-to-hyperpigmented nodules with signs of excoriation are confined to the penile foreskin; no ulcers, urethral discharge, or inguinal lymphadenopathy are identified.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Condylomata acuminata (Genital warts)",
+      "rule_out_reason": "Genital HPV lesions present with asymptomatic or mildly irritating exophytic papules on the penis, but do not explain an acute multi-focal eruption across the lower abdomen, thighs, and groins with nocturnal exacerbation that cleared with sulfur therapy.",
+      "quote": "He presented with pruritic papules and nodules on his lower abdomen, thighs, groins, and genitalia associated with nocturnal exacerbation of itching 6 months ago"
+    },
+    {
+      "candidate": "Lichen simplex chronicus / Genital prurigo nodularis",
+      "rule_out_reason": "Neurodermatitis or localized prurigo causes chronic pruritic plaques or nodules, but cannot account for preceding widespread involvement of the lower abdomen and thighs that cleared completely after topical sulfur cream.",
+      "quote": "Three cycles of treatment (a week apart) with topical 10% sulfur cream twice daily for 3 days led to excellent response for the signs and symptoms except for some of the itching nodules over the genitalia."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Recalcitrant nodular scabies",
+      "rule_out_reason": "The diagnostic turning point is the classic history of widespread pruritic papules in characteristic predilection sites with nocturnal exacerbation, resolution of peripheral lesions following topical sulfur, and persistent isolated genital nodules resistant to intralesional and topical steroids and antihistamines.",
+      "quote": "The residual refractory itching nodules also resisted topical and intralesional injection of steroids as well as systemic antihistamines."
+    }
+  ],
+  "final_diagnosis": "Scabies",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled in strict adherence to the Stanford MedCaseReasoning methodology. Zero spoilers or pathogen names in the clinical presentation. Verbatim quotes from the published report support each differential diagnosis and diagnostic pivot."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6477187_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 35-year-old woman presents with a chronic, slow-growing, painless cystic mass in the right pectoralis major muscle. Primary skeletal muscle hydatidosis is extremely rare (representing 1-4% of echinococcosis cases) and commonly misdiagnosed as a benign soft tissue neoplasm, cystic hygroma, cold abscess, or hematoma.\n2. Admission Breakpoint: The admission evaluation concludes after outpatient physical examination, unremarkable baseline laboratory workup, and chest CT demonstrating the multiseptated intramuscular cystic mass, prior to surgical exploration and daughter cyst removal.\n3. Differential Distinctions: Intramuscular lipoma or benign mesenchymal tumors are disproven by fluid attenuation and multiseptation on CT. Cold abscess / pyogenic collection is unlikely given normal baseline laboratory values, absence of inflammatory signs, and absence of fever or pain. Congenital lymphangioma / cystic hygroma typically manifests earlier in life and has thin unilocular or poorly demarcated channels rather than a well-circumscribed multiseptated intramuscular mass.",
+  "case_prompt": "A 35-year-old woman presented to the outpatient surgical clinic complaining of a painless swelling over the right upper chest, situated 3 cm inferior to the clavicle, which had been present for two and a half years. The swelling had begun as a small nodule and gradually enlarged over time. She denied local pain, tenderness, fever, chills, constitutional symptoms, or a history of trauma to the area. Her medical, surgical, family, medication, and psychosocial histories were unremarkable, and she was a non-smoker.\n\nOn physical examination, vital signs were normal. Examination of the right upper anterior chest wall revealed a 6 x 8 cm soft, non-tender, cystic swelling. The overlying skin was completely intact with no erythema, warmth, or draining sinuses.\n\nRoutine baseline laboratory investigations were within normal reference ranges. A computed tomography (CT) scan of the chest demonstrated a multiseptated, hypodense cystic lesion located within the right pectoralis major muscle, with no intralesional calcification and no extension into the thoracic cavity.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Intramuscular Soft Tissue Neoplasm / Lipoma / Lymphangioma",
+      "rule_out_reason": "Soft tissue mesenchymal tumors of the chest wall present as painless chronic swellings, but chest CT demonstrated a hypodense multiseptated cystic mass rather than adipose tissue or a solid mesenchymal tumor.",
+      "quote": "a computed tomography scan of the chest demonstrated a multiseptated hypodense cystic lesion in the right pectoralis major muscle with no intralesional calcification and no intrathoracic extension"
+    },
+    {
+      "candidate": "Pyogenic or Tuberculous Cold Abscess / Chronic Hematoma",
+      "rule_out_reason": "An infectious collection or chronic organizing hematoma would typically feature local pain, inflammatory changes, systemic signs, or an antecedent trauma history, all of which were absent.",
+      "quote": "The patient denied any history of pain, fever or any trauma."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Surgical exploration of the pectoralis major mass revealed a thick-walled cystic cavity containing numerous pathognomonic daughter cysts, establishing the definitive diagnosis of primary intramuscular echinococcal hydatid cyst.",
+      "quote": "Per-op finding revealed a 6 x 7 cm hydatid cyst in the right pectoralis major muscle with multiple daughter cysts"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation cleanly stops before surgical resection and operative identification of daughter cysts. Zero pathogen leaks."
+}

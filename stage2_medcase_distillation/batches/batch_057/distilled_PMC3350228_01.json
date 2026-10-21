@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3350228_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 23-year-old woman presents with life-threatening massive hemoptysis ('five cups filled with blood') against a 3-month history of subacute constitutional symptoms (cough, weight loss, night sweats). While over 90% of massive hemoptysis cases in cavitary disease originate from hypertrophied bronchial circulation, this presentation involves a low-pressure pulmonary artery branch aneurysm (Rasmussen aneurysm) requiring targeted angiography and endovascular embolization.\n2. Admission Breakpoint: The admission phase includes emergency resuscitation, documentation of hemorrhagic shock (BP 100/60 mmHg, Hb 6 g/dL requiring transfusion of 4 units PRBCs), and initial plain chest radiography showing bilateral cavitary lesions, stopping strictly prior to sputum acid-fast bacilli smear, CT imaging, and invasive angiography.\n3. Differential Distinctions: Common sources like bronchial artery neovascularization or pyogenic bacterial lung abscesses are differentiated by selective arteriography and microbiological smear; identifying acid-fast bacilli together with pulmonary angiography confirms a tuberculous Rasmussen aneurysm.",
+  "case_prompt": "A 23-year-old woman presents to the emergency department with a one-day history of coughing up approximately five cups filled with blood. For the preceding 3 months, she had been experiencing a persistent cough, significant weight loss, and drenching night sweats. On examination, she appears diaphoretic and in severe distress. Her blood pressure is 100/60 mmHg, and triage blood analysis reveals profound anemia with a hemoglobin level of 6 g/dL. She is urgently resuscitated with fluid support and transfused with 4 units of packed red blood cells, which raises her hemoglobin to 10 g/dL. Plain chest radiography demonstrates multiple cavitary lesions distributed throughout both lungs.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bronchial Artery Hemorrhage / Neovascular Extravasation",
+      "rule_out_reason": "Bronchial arterial hypertrophy represents the primary source of massive hemoptysis in cavitary lung disease, but selective bronchial angiography demonstrated normal vessels without active contrast extravasation.",
+      "quote": "The bronchial arteries were not enlarged, and no active contrast extravasation was detected from them."
+    },
+    {
+      "candidate": "Pyogenic Lung Abscess / Cavitary Bacterial Pneumonia",
+      "rule_out_reason": "While pyogenic cavitary lung abscess can produce chronic constitutional symptoms and cavitation, the etiology was verified as mycobacterial by positive acid-fast bacilli staining.",
+      "quote": "Chest X-ray revealed active pulmonary tuberculosis with multiple cavities in both lungs. Sputum was positive for acid-fast bacilli."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary Artery (Rasmussen) Aneurysm secondary to Tuberculosis",
+      "rule_out_reason": "Contrast CT demonstrated focal parenchymal enhancement, and selective pulmonary angiography definitively identified a 5-cm pulmonary artery aneurysm originating from the left lower lobe, which was successfully treated with coil embolization.",
+      "quote": "A 5 cm diameter oval aneurysm was detected originating from the left lower lobe posterior-medial segment pulmonary artery (Figure 1(c))... A single Gianturco steel coil 5 mm in diameter was selectively placed at the neck of the aneurysm with occlusion of the pulmonary aneurysm"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning methodology. Case prompt ends at admission triage and emergency chest radiograph prior to AFB smears and invasive angiography. Zero spoilers in case prompt. Audit flags verified as NONE."
+}

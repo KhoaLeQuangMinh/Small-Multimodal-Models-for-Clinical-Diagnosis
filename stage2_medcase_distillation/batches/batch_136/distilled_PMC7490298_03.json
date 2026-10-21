@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7490298_03",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 21-year-old pregnant woman developed an isolated febrile episode during her second trimester. In an endemic tropical setting, acute gestational fever raises broad concern for classic congenital TORCH pathogens and co-circulating arboviruses that carry varying maternal-fetal morbidity.\n2. Admission Breakpoint: The admission clinical presentation concludes following the initial clinical assessment of second-trimester gestational fever, strictly prior to send-out serological panels and neutralization assays.\n3. Differential Distinctions: Dengue and chikungunya present with acute fever but are ruled out by negative IgM serologies; classic TORCH infections (toxoplasmosis, cytomegalovirus, rubella, syphilis) are excluded by specific non-reactive IgM and treponemal panels; Zika virus is confirmed by reactive IgM and plaque reduction neutralization testing (PRNT90%).",
+  "case_prompt": "A 21-year-old pregnant woman presented for clinical evaluation during the second trimester of gestation after developing an acute episode of fever. She had no documented antecedent medical problems, and her antenatal course up to that point had been uneventful. On physical examination, she was febrile but hemodynamically stable. The cardiopulmonary examination was normal, the abdomen was gravid consistent with second-trimester dates, and there were no localized signs of infection.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Co-circulating Arboviruses (Dengue Virus / Chikungunya Virus)",
+      "rule_out_reason": "Dengue and chikungunya frequently cause acute febrile illness in pregnant women in the same geographic areas, but specific IgM serologies for both viruses were non-reactive.",
+      "quote": "Her IgM serology for ZIKV was positive and non-reactive for dengue, chikungunya, rubella, toxoplasmosis, HIV, syphilis and cytomegalovirus."
+    },
+    {
+      "candidate": "Congenital TORCH Pathogens / Treponemal / Retroviral Infection",
+      "rule_out_reason": "Maternal fever during pregnancy warrants exclusion of classic teratogenic infections; however, IgM assays and serological tests for toxoplasmosis, cytomegalovirus, rubella, syphilis, and HIV were non-reactive, with IgG positivity merely reflecting preexisting distant immunity to rubella and CMV.",
+      "quote": "Her IgM serology for ZIKV was positive and non-reactive for dengue, chikungunya, rubella, toxoplasmosis, HIV, syphilis and cytomegalovirus... Her IgG serology was positive for cytomegalovirus and rubella."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Specific IgM serology was reactive for ZIKV and confirmed by high-specificity 90% plaque reduction neutralization test (PRNT90%) demonstrating neutralizing antibodies.",
+      "quote": "Her IgM serology for ZIKV was positive... The PRNT90% was positive for neutralizing antibodies."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission presentation stops before serological testing. Zero spoilers or pathogen names in prompt. Exact verbatim quotes from the report used for differential rule-outs."
+}

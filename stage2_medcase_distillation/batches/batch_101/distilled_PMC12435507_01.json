@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12435507_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 71-year-old woman with a family history of breast cancer in two sisters presents with a 1-year history of painful, progressive swelling in her left breast with ulceration and purulent sinus drainage refractory to multiple courses of antibiotics and herbal therapies. Physical exam reveals hard, irregular 4x3 cm masses above and below the breast with draining sinuses, mimicking invasive breast carcinoma or idiopathic granulomatous mastitis.\n2. Admission Breakpoint: Admission triage concludes after clinical history, physical examination, breast ultrasound (hypoechoic nodules and axillary lymphadenopathy), and chest CT showing left breast lesions without lung involvement, immediately prior to surgical debridement and operative histopathological/molecular examinations.\n3. Differential Distinctions: Breast carcinoma is ruled out by previous cytology showing mixed inflammatory cell infiltrates rather than malignancy. Idiopathic granulomatous mastitis is distinguished by intraoperative finding of caseous necrosis with deep extension along the pectoralis major and acid-fast bacillary staining with positive mycobacterial molecular DNA testing.",
+  "case_prompt": "A 71-year-old woman presented with a 1-year history of progressive erythema, swelling, and pain in her left breast, complicated by spontaneous ulceration with thin purulent drainage over the past month. Symptoms had begun one year earlier with spontaneous left breast pain followed by a palpable submammary swelling. Initial cytopathology from an outside hospital had suggested non-specific inflammatory changes. Over subsequent months, she developed a second swelling superior to the breast. A subsequent diagnostic needle puncture aspiration had demonstrated inflammatory changes with extensive acute and chronic inflammatory cell infiltration and abscess formation, but repeated empiric antibiotic therapy provided no symptomatic improvement. Over the preceding month, a lump spontaneously ruptured, forming a discharging sinus tract. She reported fatigue, fair appetite, and disturbed sleep, with no recent significant weight loss.\n\nHer medical history was notable for a remote history of granulomatous cervical lymphadenitis five decades earlier, hypertension, and recently diagnosed type 2 diabetes mellitus. She had two children, had been postmenopausal for 20 years, and reported a strong family history of breast carcinoma in two sisters.\n\nPhysical examination revealed a normal body temperature of 36.7 deg C, pulse rate of 72 beats/min, respiratory rate of 18 breaths/min, and blood pressure of 122/74 mmHg. The breasts were grossly symmetrical without nipple retraction or discharge. Palpation of the left breast revealed hard, dark red masses both superiorly and inferiorly, measuring approximately 4 x 3 cm, with poorly defined borders, irregular margins, and active seropurulent secretion from an inferior sinus tract. The right breast had no palpable masses. Auscultation of both lungs was clear without adventitious sounds.\n\nBreast ultrasonography revealed multiple hypoechoic nodules in the left breast consistent with an inflammatory process, along with bilateral axillary lymphadenopathy. A chest computed tomography (CT) scan confirmed a prominent soft tissue lesion in the left breast without evidence of parenchymal pulmonary lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive Breast Carcinoma / Inflammatory Breast Cancer",
+      "rule_out_reason": "The patient's advanced age, family history of breast cancer in two sisters, and a hard, fixed mass with poorly defined borders strongly suggested breast carcinoma; however, repeated cytological examinations demonstrated mixed inflammatory cells and abscess formation rather than neoplastic epithelial proliferation.",
+      "quote": "The cytopathology of a tertiary western hospital in Beijing suggested that it was consistent with inflammation."
+    },
+    {
+      "candidate": "Idiopathic Granulomatous Mastitis / Pyogenic Breast Abscess",
+      "rule_out_reason": "Recurrent breast abscesses with sinus tracts frequently indicate idiopathic granulomatous mastitis or refractory bacterial abscess; however, the lack of response to antibiotics and intraoperative identification of extensive caseous necrosis and deep sinus tracts tracking to the pectoralis muscle pointed to a specific mycobacterial infection.",
+      "quote": "She was treated with antibiotics, which were not effective."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred during surgical excision, which revealed dark red necrotic and caseous material along deep pectoralis sinus tracts, confirmed on histopathology by multifocal caseous necrosis, granulomas, positive acid-fast staining, and positive TB-DNA molecular PCR testing.",
+      "quote": "During the operation, some dark red fish-like necrotic material and a large amount of caseous necrotic material were seen... Postoperative histologic pathology suggested (Figure 4A and B): multifocal caseous necrosis and peripheral chronic granuloma formation were seen in the breast tissue, and antacid staining was suspiciously positive"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly terminates at admission ultrasound and chest CT. Remote TB history paraphrased as granulomatous cervical lymphadenitis to prevent pathogen leakage. Operative findings, caseous necrosis, and PCR reserved for diagnostic reasoning."
+}

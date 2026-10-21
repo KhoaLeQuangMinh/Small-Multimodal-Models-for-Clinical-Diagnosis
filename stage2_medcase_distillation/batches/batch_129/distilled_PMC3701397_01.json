@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC3701397_01",
+  "disease": "Leptospirosis",
+  "think": "1. Core Clinical Tension: A 36-week pregnant woman presents with acute febrile jaundice, marked thrombocytopenia, coagulopathy, and acute oliguric renal failure. This multiorgan syndrome strongly mimics severe obstetric catastrophes (such as HELLP syndrome or acute fatty liver of pregnancy) as well as fulminant viral hepatitis and bacterial sepsis.\n2. Admission Breakpoint: Clinical history, gestation age, physical exam, admission vital signs, initial laboratory evaluations (CBC, platelets, metabolic panel, liver function tests, coagulation panel, CPK, troponin), ECG, obstetrical exam, and abdominal/obstetric ultrasound, stopping before sterile culture results and infectious serological panels.\n3. Differential Distinctions: HELLP syndrome is unlikely given persistent high fever (38°C), myalgias, and normotensive blood pressure readings throughout pregnancy and on admission. Viral hepatitis (A, B, C, CMV) and HIV are ruled out by negative serologies, and bacterial pyelonephritis/sepsis by sterile cultures. History of public bath immersion 15 days prior, profound hyperbilirubinemia, and positive IgM ELISA confirm severe leptospirosis (Weil disease).",
+  "case_prompt": "A 35-year-old multiparous woman at 36 weeks of gestation with no significant past medical history presented to the emergency department with an 8-day history of malaise, chills, myalgias, jaundice, abdominal pain, and asthenia. She had no history of travel abroad or contact with animals; however, family interview revealed that she had visited a public bath 15 days prior. Both systolic and diastolic arterial pressures had been documented as normal and stable earlier during pregnancy.\n\nOn physical examination, she was conscious but irritable. Her heart rate was 120 beats/min, blood pressure was 105/66 mmHg, respiratory rate was 17 breaths/min, and axillary temperature was 38.0°C. She was oliguric, with a urine output of 500 mL over the preceding 24 hours. Physical examination revealed dark icteric conjunctivae and ecchymoses/bruises across all extremities. Obstetrical examination showed no genital bleeding.\n\nInitial laboratory evaluation revealed: hemoglobin 10.0 g/dL, leukocyte count 15.2 × 10^9/L (75% neutrophils), platelet count 40 × 10^9/L, and C-reactive protein (CRP) 115 mg/L. Blood glucose was 0.92 g/L, blood urea 1.05 g/L, and serum creatinine 18 mg/L. Liver function tests showed AST 165 U/L, ALT 145 U/L, total bilirubin 7.0 mg/dL, and conjugated bilirubin 5.8 mg/dL. Coagulation profile demonstrated prothrombin time (PT) 45%, activated clotting time (ACT) 220 seconds, D-dimer 600 ng/mL, and fibrinogen 1.5 g/L. Creatine phosphokinase (CPK) was 355 U/L and troponin Ic was 0.4 ng/mL.\n\nAn electrocardiogram demonstrated negative T waves in leads II, III, and aVF. Bedside ultrasound showed a single live pregnancy with oligohydramnios; the kidneys, spleen, and liver appeared normal without dilatation of the biliary canaliculi. Fetal cardiotocography was reactive.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Viral hepatitis (HAV, HBV, HCV, CMV) and HIV",
+      "rule_out_reason": "Considered because of acute deep conjugated hyperbilirubinemia and transaminitis in a febrile patient, but eliminated by negative specific viral serologies.",
+      "quote": "the serology tests for hepatitis A, B, C, cytomegalovirus, and HIV were all negative."
+    },
+    {
+      "candidate": "Bacterial sepsis / Biliary tract infection",
+      "rule_out_reason": "Considered due to high fever, leukocytosis, elevated CRP, and multiorgan failure, but ruled out by sterile blood/urine cultures and normal biliary imaging on ultrasound.",
+      "quote": "Blood and urine cultures were sterile"
+    },
+    {
+      "candidate": "HELLP syndrome / Acute Fatty Liver of Pregnancy",
+      "rule_out_reason": "Considered given the third-trimester onset of microangiopathic-like features with thrombocytopenia, renal failure, and elevated transaminases, but rendered improbable by stable normotensive pressures, high fever, and severe myalgias.",
+      "quote": "Earlier during her pregnancy both systolic and diastolic arterial pressures were noted to be stable."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Epidemiologic history of public bath exposure and positive specific IgM antibody titers established the diagnosis of severe leptospirosis complicated by multivisceral organ failure and acute respiratory distress syndrome.",
+      "quote": "Leptospira IgM antibodies by enzyme-linked immunosorbent assay were positive at 1/300 dilution."
+    }
+  ],
+  "final_diagnosis": "Leptospirosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clean extraction conforming to Stanford MedCaseReasoning admission breakpoint protocol."
+}

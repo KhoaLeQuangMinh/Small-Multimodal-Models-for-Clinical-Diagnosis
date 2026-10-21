@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3754416_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 15-year-old girl presenting with recurrent right flank colic, dysuria, and hydatiduria—the dramatic passage of small pale ruptured-grape like structures in her urine—associated with a massive multiseptated renal mass. The diagnostic challenge is recognizing that this complex multilocular cystic renal mass with a spoke-wheel sonographic pattern represents communicating renal hydatid disease rupturing into the pelvicalyceal system rather than a complex cystic renal cell carcinoma, multilocular cystic nephroma, or complicated polycystic kidney disease.\n2. Admission Breakpoint: Admission triage ends following history of presenting illness, physical exam, routine laboratory tests (which were completely normal), and initial abdominal ultrasound showing a multiloculated cystic lesion with a spoke-wheel sign in the right kidney. Confirmatory testing begins with echinococcal antibody ELISA, contrast-enhanced CT, and surgical resection.\n3. Differential Distinctions: Simple renal cyst (Gharbi Type I / Bosniak I) is typically unilocular, thin-walled, and asymptomatic, lacking internal septations, daughter cysts, or communication with the urinary collecting system. Multilocular cystic renal neoplasm or cystic nephroma can share multiseptated architecture, but does not present with the passage of grape-like cystic membranes in the urine (hydatiduria), which occurs exclusively when hydatid cysts rupture into the collecting system. Renal echinococcosis is confirmed by sonographic spoke-wheel sign, positive echinococcus antibody ELISA, and CT demonstrating the classic 'cyst within a cyst' appearance extending into the ureter, verified by histopathology following nephroureterectomy.",
+  "case_prompt": "A 15-year-old girl presented with a six-month history of intermittent colicky pain in the right lumbar region and dysuria, accompanied by the visible passage of small, pale, ruptured grape-skin-like membranous structures in her urine. On physical examination, she appeared healthy, was afebrile, and had normal vital signs. Abdominal examination revealed no palpable abdominal or flank masses, and there was no costovertebral angle tenderness. Routine triage laboratory evaluations, including a complete blood count, serum creatinine, electrolytes, liver biochemistries, and urinalysis, were completely within normal limits. Transabdominal ultrasonography of the abdomen revealed an 11-cm multiloculated cystic mass with internal radiating septa demonstrating a characteristic \"spoke-wheel\" appearance centered in the mid pole of the right kidney.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Simple Renal Cyst (Gharbi Type I / Bosniak Type I)",
+      "rule_out_reason": "Simple cysts present as thin-walled, non-septated fluid collections lacking internal architecture or communication with the pelvicalyceal system, whereas this patient presented with multiseptated architecture containing daughter cysts and active rupture into the collecting system.",
+      "quote": "Contrary to this, the most common variety reported in different paediatric series are Type I cysts, that have appearance of simple renal cysts but with double-contoured thick wall and hydatid sand as \"falling snowflakes\" [2, 3]."
+    },
+    {
+      "candidate": "Cystic Renal Cell Carcinoma / Multilocular Cystic Nephroma",
+      "rule_out_reason": "Complex multiseptated cystic renal masses can simulate malignant cystic tumors, but the passage of collapsed daughter cyst membranes (hydatiduria) is pathognomonic for communicating parasitic cyst rupture into the calyces.",
+      "quote": "In communicating cysts, all the three layers of the cyst rupture with direct communication into the collecting system, causing hydatiduria and acute colic or obstruction but it is seen in only 10-20% of renal hydatidosis"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnosis was confirmed by positive serum ELISA for echinococcal antibodies, abdominal CT demonstrating an 11.5 × 11.0 cm multilocular lesion with a 'cyst within the cyst' appearance involving the kidney and upper ureter, and histopathologic confirmation of hydatid disease following nephroureterectomy.",
+      "quote": "CT scan obtained which revealed 11.5 cm X 11.0 cm multiseptated cystic lesion in mid and lower pole of right kidney and upper ureter with typical \"cyst within the cyst\" appearance (Fig. 1), without any contrast excretion from right kidney."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly redacted of pathogen names and serology. Breakpoint placed before ELISA serology and CT urography."
+}

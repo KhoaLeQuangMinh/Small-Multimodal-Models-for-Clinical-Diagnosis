@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7387959_01",
+  "disease": "Soil-Transmitted Helminths",
+  "think": "1. Core Clinical Tension: An older Lao immigrant farmer presents with severe iron deficiency anemia (hemoglobin 4.7 g/dL) and an ulcerated, friable gastric antral mass strongly mimicking gastric adenocarcinoma or GIST. Endoscopic biopsies repeatedly fail to identify malignancy or typical mucosal changes, creating tension between suspected neoplasm requiring oncologic resection and unrecognized chronic parasitic infection capable of establishing decadal autoinfection and pseudotumoral gastric lesions.\n2. Admission Breakpoint: Initial emergency triage and admission workup demonstrating severe microcytic anemia, iron deficiency, abdominal CT showing gastric wall thickening, and initial upper endoscopy demonstrating an ulcerated antral mass extending to the incisura angularis, immediately prior to serial biopsies, surgical gastrectomy, and parasitological stool examination.\n3. Differential Distinctions: Gastric adenocarcinoma (primary suspicion given age, smoking, and ulcerated friable antral mass, but excluded by repeated benign biopsies and surgical pathology), Helicobacter pylori-associated peptic ulcer disease (excluded by negative gastric histopathology and persistence despite PPI therapy), and NSAID gastropathy (denied by history and incompatible with mass-forming mucosal infiltration).",
+  "case_prompt": "A 68-year-old Lao-speaking man presented to the emergency department with generalized weakness, postprandial dull epigastric pain, early satiety, and bloating of two months' duration. He denied fevers, night sweats, melena, hematochezia, hematemesis, or unintentional weight loss. Past medical history included hyperlipidemia and an ascending aortic aneurysm; medications were aspirin 81 mg daily, atorvastatin 40 mg daily, and a multivitamin. He explicitly denied nonsteroidal anti-inflammatory drug use. He had a 12.5 pack-year smoking history and drank alcohol socially. He had emigrated from Laos to the United States in 1980, where he worked as an agricultural farmer. Family history was non-contributory.\n\nOn physical examination, the patient was thin and notably pale. Vital signs showed a blood pressure of 121/82 mmHg, heart rate of 84 beats per minute, and temperature of 98.4°F (36.9°C). Examination revealed pale conjunctivae and faint bibasilar crackles, without peripheral edema or heart murmurs. The abdomen was soft, non-tender, and non-distended without palpable masses. Rectal examination revealed heme-negative stool.\n\nLaboratory testing revealed profound microcytic hypochromic anemia: hemoglobin 4.7 g/dL, hematocrit markedly reduced, mean corpuscular volume (MCV) 68 fL, white blood cell count 10,600/mm³, and platelet count 509,000/mm³. Iron parameters confirmed marked iron deficiency: serum iron 11 µg/dL, total iron-binding capacity 275 µg/dL, transferrin saturation 4%, and ferritin 10 ng/mL. Abdominal computed tomography demonstrated gastric wall thickening. Upper endoscopy identified an ulcerated, friable mass in the gastric antrum extending proximally to the incisura angularis.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Gastric adenocarcinoma",
+      "rule_out_reason": "Given the patient's age, smoking history, severe occult gastrointestinal bleeding, and an ulcerated friable antral mass, gastric carcinoma was the foremost suspicion; however, multiple endoscopic biopsies and definitive subtotal gastrectomy specimens were completely negative for malignant cells.",
+      "quote": "There was no evidence of malignancy."
+    },
+    {
+      "candidate": "Helicobacter pylori peptic ulcer disease",
+      "rule_out_reason": "Chronic peptic ulceration can cause blood loss anemia and epigastric discomfort, but tissue evaluation was negative for H. pylori, and the mass failed to heal despite proton-pump inhibitor treatment.",
+      "quote": "Multiple biopsies were taken from the mass, and histopathology showed chronic active gastritis with mucosal necrosis, granulation tissue, and necroinflammatory exudate, negative for Helicobacter pylori infection."
+    },
+    {
+      "candidate": "NSAID-induced mucosal gastropathy",
+      "rule_out_reason": "NSAID gastropathy produces erosive mucosal injury and blood loss, but the patient had no history of NSAID use and only received low-dose aspirin, which does not account for a tumefactive ulcerated mass.",
+      "quote": "He did not have any history of taking nonsteroidal anti-inflammatory drugs, and there was no history of overt gastrointestinal bleeding."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred upon histopathological evaluation of the resected gastric specimen following subtotal gastrectomy, revealing chronic inflammation and scattered microscopic nematode morphology favoring Strongyloides, followed by concentrated stool wet mount demonstrating Strongyloides stercoralis rhabditiform larvae and positive serum IgG serology.",
+      "quote": "Histopathology of the ulcerated mass showed ulceration, inflammation, granulation tissue, fibrosis, reactive changes, focal gastritis with intestinal metaplasia, and scattered microscopic foci with morphology consistent with a nematode favoring strongyloides (Figure 2). Postoperatively, stool assay by wet mount after concentration showed strongyloides stercoralis larvae. Serum strongyloides IgG ELISA resulted positive."
+    }
+  ],
+  "final_diagnosis": "Soil-Transmitted Helminths",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled case prompt strictly covers admission presentation of severe iron-deficiency anemia and ulcerated gastric mass before tissue biopsy and parasitological identification. Zero parasite names mentioned in presentation."
+}

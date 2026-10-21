@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3926763_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 10-year-old afebrile female presenting with chronic progressive headaches, vision loss, and lower-extremity seizures found to have a solitary, contrast-enhancing intraventricular nodule causing obstructive hydrocephalus in the anterior third ventricle. The core clinical dilemma is distinguishing an intraventricular neuroepithelial or congenital tumor (such as a colloid cyst, ependymoma, or pilocytic astrocytoma) from an isolated intracranial tuberculoma in a child with no pulmonary symptoms, normal chest radiograph, and negative tuberculin skin testing.\n2. Admission Breakpoint: The admission clinical presentation halts after clinical history, physical/neurological examination, and cranial computed tomography revealing the contrast-enhancing anterior third ventricular mass and obstructive hydrocephalus, strictly before surgical excision, histological examination, postoperative TST/HIV tests, and mycobacterial PCR testing.\n3. Differential Distinctions: Colloid cyst of the third ventricle typically arises at the foramen of Monro and produces obstructive hydrocephalus and episodic headache; however, histopathology reveals an epithelial wall containing mucin rather than caseating granulomatous necrosis. Ependymoma or intraventricular glioma enhances on imaging and obstructs CSF flow, but demonstrates neoplastic glial architecture. Solitary third-ventricular tuberculoma is an exceptionally rare manifestation confirmed by caseating granulomatous histology and positive Mycobacterium tuberculosis PCR.",
+  "case_prompt": "A 10-year-old female presents with a 4-month history of intense frontal headaches, progressive loss of vision, and tonic seizures of the lower extremities. On physical examination, the patient is afebrile with normal vital signs. Neurological examination is normal, with no focal motor or sensory deficits, and systemic examination reveals no abnormalities. Cranial computed tomography demonstrates a well-defined nodular lesion measuring 19 mm in height by 16.7 mm in width located in the anterior portion of the third ventricle, producing obstructive hydrocephalus. The lesion demonstrates prominent enhancement following intravenous contrast administration.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Colloid cyst of the third ventricle",
+      "rule_out_reason": "Considered the primary preoperative presumptive diagnosis given the patient's age and an anterior third-ventricular mass causing acute-on-chronic obstructive hydrocephalus. Excluded on surgical pathology, which revealed necrotizing granulomatous inflammation rather than a mucin-filled cyst.",
+      "quote": "The likely diagnosis of intraventricular tumor (colloid cyst) was evoked."
+    },
+    {
+      "candidate": "Intraventricular neoplasm (e.g., Ependymoma / Pilocytic astrocytoma)",
+      "rule_out_reason": "Considered due to the solid, nodular, contrast-enhancing appearance in the third ventricle with obstructive ventricular dilation in a child. Excluded by histopathological demonstration of central caseous necrosis surrounded by granulomatous inflammation without neoplastic cells.",
+      "quote": "Computed tomography scan (CT Scan) revealed a nodular formation (19 mm high on 16.7 mm wide) in the anterior part of the third ventricle with an obstructive hydrocephalus (Figure 1)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Total microsurgical resection via a subchoroidal approach demonstrated central necrosis surrounded by granulomatous inflammation, definitively confirmed as mycobacterial disease by positive Polymerase Chain Reaction (PCR).",
+      "quote": "Histological examination revealed the presence of central necrosis surrounded by a tuberculous like granuloma"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint strictly placed prior to subchoroidal resection and histopathological/PCR confirmation."
+}

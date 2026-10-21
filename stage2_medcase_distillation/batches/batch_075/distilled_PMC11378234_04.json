@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11378234_04",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 3.5-year-old boy 8 months post-allogeneic stem cell transplant for beta-thalassemia major, on cyclosporine and active antimycobacterial therapy for a post-transplant pulmonary infection, presents with acute high-grade fever and body ache for 1-2 days. Initial labs reveal rapid leukopenia, thrombocytopenia (nadir 15 × 10^9/L), and coagulopathy during the febrile phase without plasma leakage. The clinical challenge is distinguishing drug-induced bone marrow toxicity or bacterial sepsis from an uncomplicated viral febrile illness in a heavily treated toddler.\n2. Admission Breakpoint: The admission breakpoint occurs immediately following admission evaluation and initial triage blood counts showing early acute leukopenia, thrombocytopenia, and coagulopathy, prior to the clinical diagnosis of dengue fever and multi-day observation of platelet nadir and recovery.\n3. Differential Distinctions: Drug-induced myelosuppression (from cyclosporine or antitubercular medications) can cause cytopenias and coagulopathy, but typically causes insidious, progressive suppression without acute high fever, body aches, and rapid spontaneous recovery upon defervescence. Bacterial sepsis was suspected due to rapid cytopenias and coagulopathy, but the lack of plasma leakage and uneventful recovery supported viral dengue.",
+  "case_prompt": "A 3.5-year-old boy presents with high-grade fever and body ache of 1 to 2 days' duration, 8 months following an allogeneic stem cell transplant for transfusion-dependent beta-thalassemia major. His current medications include cyclosporine for graft-versus-host disease prophylaxis and active antimycobacterial therapy for a pulmonary granulomatous infection that developed 4 months post-transplant.\n\nInitial laboratory evaluation during the early febrile phase reveals acute leukopenia and thrombocytopenia, accompanied by deranged coagulation parameters, without clinical signs of plasma leakage.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Sepsis / Neutropenic Infection",
+      "rule_out_reason": "Sudden high fever, body aches, acute leukopenia, and coagulopathy in an immunosuppressed toddler on cyclosporine strongly suggested acute bacterial sepsis; however, the illness followed a self-limiting course without septic shock or localized bacterial infection, entering a spontaneous recovery phase after defervescence.",
+      "quote": "developed thrombocytopenia and leucopenia rapidly with deranged coagulation during febrile phase. After 5 days of febrile illness, his platelet counts further dropped to a nadir of 15 x 109/L, followed by recovery phase."
+    },
+    {
+      "candidate": "Antitubercular / Cyclosporine-Induced Hematologic Toxicity",
+      "rule_out_reason": "Concomitant multi-drug antimycobacterial regimens and cyclosporine can induce profound myelosuppression and coagulopathy; however, the abrupt onset of high fever and transient nature of the cytopenias with prompt rebound following the febrile phase ruled out static drug toxicity.",
+      "quote": "He was on cyclosporine for GVHD prophylaxis and antitubercular treatment for pulmonary tuberculosis which he developed 4 months after transplant... After 5 days of febrile illness, his platelet counts further dropped to a nadir of 15 x 109/L, followed by recovery phase."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the clinical confirmation of acute dengue fever characterized by the classical biphasic evolution of rapid leukopenia, coagulopathy, a platelet nadir of 15 × 10^9/L at day 5, and subsequent uneventful recovery without plasma leakage.",
+      "quote": "He was diagnosed with dengue fever and developed thrombocytopenia and leucopenia rapidly with deranged coagulation during febrile phase. After 5 days of febrile illness, his platelet counts further dropped to a nadir of 15 x 109/L, followed by recovery phase. There were no signs of plasma leakage."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage presentation halts prior to confirmatory dengue diagnosis and multi-day platelet monitoring. Strict exclusion of pathogen/disease names in case_prompt. Differentials cover bacterial sepsis and drug-induced marrow suppression with verbatim citations."
+}

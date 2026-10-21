@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11681884_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 63-year-old diabetic and hypertensive male in Ethiopia presents with chronic, thick whitish 'cheese-like' discharge from all four laparoscopic trocar sites one month after cholecystectomy, without fever or systemic symptoms. Standard bacterial cultures and initial AFB smears were negative, and standard oral antibiotic therapy failed, mimicking a simple superficial surgical site infection or foreign body reaction while representing port-site seeding of Mycobacterium tuberculosis.\n2. Admission Breakpoint: The narrative concludes following admission outpatient evaluation, vital signs, physical exam of the trocar wounds, baseline laboratory evaluation (CBC, ESR, HbA1c, HIV serology), initial negative wound microscopy, and abdominal ultrasound demonstrating subcutaneous collections, prior to surgical wound debridement, empiric Augmentin therapy, or repeat fine needle aspiration cytology (FNAC).\n3. Differential Distinctions: Pyogenic bacterial surgical site infection presents with erythema, warmth, purulent discharge, and responds to wound debridement and broad-spectrum beta-lactam antibiotics. Foreign body or suture granuloma can cause chronic wound drainage, but rarely involves multiple surgical ports simultaneously with copious caseous material and deep collections. Port-site tuberculosis arises from occult peritoneal involvement or contaminated instruments, characterized by indolent caseous discharge and granulomatous cytology.",
+  "case_prompt": "A 63-year-old male from Debre Tabor, Ethiopia, presents to the outpatient surgical clinic with a one-month history of persistent drainage from his abdominal incisions following an elective laparoscopic cholecystectomy. The patient has a medical history of type II diabetes mellitus, treated with metformin 1 g orally twice daily, and hypertension, treated with amlodipine 10 mg orally daily. He reports that all four laparoscopic trocar port sites have been draining a thick, whitish, cheese-like material, accompanied by discoloration of the surrounding skin. He denies fever, chills, cough, shortness of breath, abdominal pain, or gastrointestinal disturbances.\n\nOn physical examination, his vital signs are normal (afebrile, normal heart rate and blood pressure). Abdominal examination reveals four laparoscopic port-site wounds actively draining a thick, cheese-like, caseous discharge with surrounding cutaneous pigmentation changes, but no abdominal wall tenderness, involuntary guarding, or signs of generalized peritonitis. The remainder of the examination is normal.\n\nLaboratory workup demonstrates a white blood cell count of 7,700/uL (35.2% granulocytes and 59.5% lymphocytes), hemoglobin of 14.5 g/dL, platelet count of 329,000/uL, and an erythrocyte sedimentation rate (ESR) of 65 mm/h. Renal and liver function tests, as well as serum electrolytes, are within reference ranges. His hemoglobin A1c is 7.5%. Routine wound exudate Gram stain reveals no bacteria. An abdominal ultrasound demonstrates multiple fluid collections underlying the surgical port sites, with the largest measuring 2.6 cm in depth.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Standard Pyogenic Bacterial Surgical Site Infection (SSI)",
+      "rule_out_reason": "Postoperative port site purulent drainage initially raised suspicion for typical bacterial surgical site infection; however, standard antibacterial therapy and wound debridement yielded zero clinical response, and wound Gram stains and cultures remained negative.",
+      "quote": "A diagnosis of surgical site infection was initially suspected, and the patient received wound debridement and daily wound care. Augmentin was prescribed for one week, and wound care was continued. Despite the patient taking the antibiotics as instructed, there was no improvement, and he continued to experience wound discharge and pain."
+    },
+    {
+      "candidate": "Foreign Body Reaction / Suture Sinus",
+      "rule_out_reason": "Foreign body reaction to surgical sutures can cause chronic non-healing discharging sinuses, but simultaneous involvement of all four trocar sites with copious cheese-like caseous drainage and deep subcutaneous fluid collections in an endemic setting pointed toward a specific infective granulomatous process.",
+      "quote": "His presenting complaint was discharge from the surgical port sites, which had been present for one month following a laparoscopic cholecystectomy. The discharge was whitish and thick on all four port sites, with adjacent skin color change."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Following treatment failure with standard antibiotics, fine needle aspiration cytology (FNAC) of the indurated abdominal wall tissue demonstrated diagnostic granulomatous inflammation, leading to initiation of antimycobacterial therapy with complete wound healing.",
+      "quote": "However, a fine needle aspiration cytology (FNAC) of the abdominal wall showed granulomatous inflammation, as depicted in Fig. 1."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative stops at Day 1 triage prior to antibiotics and cytology. Zero mentions of tuberculosis or treatment regimens in case_prompt. Exact verbatim quotes validated."
+}

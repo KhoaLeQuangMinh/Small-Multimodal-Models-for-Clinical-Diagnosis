@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10390344_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 52-year-old woman with active systemic lupus erythematosus maintained on combination immunosuppression (corticosteroids, mycophenolate, belimumab) presents with subtle exertional dyspnea, normal inflammatory markers, and bilateral diffuse ground-glass opacities with cavitary nodules on chest CT. The clinical dilemma centers on differentiating an active autoimmune lupus pneumonitis flare from opportunistic fungal infection, in the face of completely negative standard fungal biomarkers (serum beta-D-glucan, galactomannan, cryptococcal antigen).\n2. Admission Breakpoint: Admission triage ends following baseline laboratory workup, serum serologic and fungal biomarker screening, and initial chest computed tomography, immediately prior to bronchoscopy and bronchoalveolar lavage next-generation sequencing.\n3. Differential Distinctions: Acute lupus pneumonitis is excluded by identification of invasive fungal pathogens on bronchoscopic sampling; invasive aspergillosis, candidiasis, and cryptococcosis are excluded by non-reactive serum biomarkers and direct culture of dimorphic fungus; definitive confirmation is achieved by BALF next-generation sequencing and culture demonstrating Talaromyces marneffei co-infection with Pneumocystis jirovecii.",
+  "case_prompt": "A 52-year-old woman with a recent diagnosis of systemic lupus erythematosus, lupus nephritis, and polyserositis presented for her scheduled fifth infusion of belimumab complaining of new-onset occasional chest tightness and mild dyspnea on exertion. Over the preceding four months, her disease had been treated with methylprednisolone, prednisone, cyclosporine, mycophenolate mofetil, hydroxychloroquine, and four cycles of belimumab. One month prior to presentation, she had developed localized herpes zoster. She reported no cough, fever, or sputum production.\n\nOn physical examination, vital signs were normal and resting oxygen saturation was maintained. Auscultation revealed clear breath sounds bilaterally without wheezes or crackles. Cutaneous examination showed healing herpes zoster lesions without active umbilicated papules or rashes.\n\nInitial laboratory evaluation revealed a normal complete white blood cell count and a normal C-reactive protein level. Human immunodeficiency virus serology and anti-interferon-gamma autoantibody assays were negative. Triage fungal and infectious serologies\u2014including serum (1,3)-beta-D-glucan, galactomannan, cryptococcal capsular antigen, chronic granulomatous disease antibodies, and Candida antigen/antibodies\u2014were all negative. Immunologic profiling demonstrated a CD4+ T lymphocyte count of 332/\u00b5L, CD8+ T lymphocyte count of 646/\u00b5L, absolute NK cell count of 16/\u00b5L, and IgG of 5.44 g/L. Baseline chest computed tomography demonstrated patchy, nodular, and flocculent ground-glass attenuation throughout all pulmonary lobes, alongside discrete nodules and frank cavitation in the dorsal segment of the left lower lobe.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Lupus Pneumonitis / Autoimmune Pulmonary Infiltration",
+      "rule_out_reason": "Initially considered given the patient's underlying active lupus erythematosus and ground-glass opacities on thoracic imaging during immunosuppressive taper; however, cavitary nodular necrosis is atypical for uncomplicated lupus pneumonitis and invasive bronchoscopic evaluation confirmed opportunistic fungal pathogens.",
+      "quote": "These findings indicated pulmonary infiltration associated with SLE and pulmonary infectious lesions (Figure 1a and b)."
+    },
+    {
+      "candidate": "Invasive Aspergillosis or Cryptococcosis",
+      "rule_out_reason": "Considered the primary opportunistic differentials for cavitary nodular infiltrates in an immunosuppressed host; however, all serum circulating fungal biomarkers and antigens were non-reactive.",
+      "quote": "Serum beta-D-glucan, serum galactomannan, cryptococcal capsular antigen, tuberculosis antibody, candida IgG antibody and candida antigen test were negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Metagenomic next-generation sequencing and fungal culture of bronchoalveolar lavage fluid identified Talaromyces marneffei concurrent with Pneumocystis jirovecii, definitively establishing opportunistic dimorphic fungal talaromycosis.",
+      "quote": "The next generation sequencing (NGS) of bronchoalveolar lavage fluid (BALF) showed that Pneumocystis jirovecii (sequence number 178940) and Talaromyces marneffei (sequence number 7480). TM was cultured from the patients' BALF (Figure 2a and b)."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled according to Stanford MedCaseReasoning methodology. Confirmatory BALF NGS, PCR, and culture results are strictly excluded from case_prompt. Direct verbatim quotes ground all differential candidates."
+}

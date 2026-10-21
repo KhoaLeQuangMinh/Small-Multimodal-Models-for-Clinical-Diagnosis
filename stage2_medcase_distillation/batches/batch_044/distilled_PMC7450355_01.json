@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC7450355_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 11-year-old boy with Down's syndrome presents with progressive dyspnea and reduced exercise tolerance, found to have an interventricular septal cyst measuring 50 x 52 mm with systolic dysfunction (LVEF 45%) and a rural domestic animal exposure history. Because congenital cardiac defects are frequent in Down syndrome and primary cardiac cysts/tumors are rare, the presentation easily mimics congenital cysts or primary cardiac neoplasms (such as fibroma or rhabdomyoma), while concealing multiorgan echinococcal dissemination that subsequently manifested as intracranial hypertension.\n2. Admission Breakpoint: Initial cardiology evaluation, ECG showing ventricular hypertrophy and T wave inversion, chest radiograph, echocardiogram revealing the 50 x 52 mm interventricular septal cyst, and negative abdominal ultrasound, immediately prior to send-out hydatid serological testing and subsequent emergency craniotomy.\n3. Differential Distinctions: Congenital cardiac cyst or ventricular diverticulum (common in genetic syndromes, but non-parasitic, indolent, lacking subsequent acute intracranial cyst formation), cardiac benign neoplasm / fibroma (solid echogenic myocardial tumors rather than clear unilocular fluid-filled cysts), and neurocysticercosis (causes central nervous system cysts, but cardiac septal localization is exceedingly rare and serology specifically targets Echinococcus).",
+  "case_prompt": "An 11-year-old boy with Down's syndrome, intellectual disability, and hyperexcitability was brought to a pediatric cardiology clinic by his parents due to progressive dyspnea and decreased exercise tolerance. The family lived in a rural farming community in close contact with domestic animals. The patient was unable to articulate specific physical complaints due to cognitive impairment.\n\nOn physical examination, the child was irritable with strangers. Cardiopulmonary auscultation revealed normal heart sounds without murmurs, gallops, or friction rubs, and lungs were clear to auscultation bilaterally. Vital signs showed a regular pulse of 110 beats per minute.\n\nElectrocardiography demonstrated sinus rhythm at 110 beats per minute and left ventricular hypertrophy (Sokolow-Lyon index of 37 mm) with inverted T waves. Frontal chest radiography showed clear lung parenchyma without infiltrates or pleural effusion, a normal cardiothoracic ratio, and an abnormal globular silhouette of the lower left cardiac contour. Transthoracic echocardiography revealed a large, well-circumscribed cystic mass measuring 50 mm by 52 mm located in the middle portion of the interventricular septum, causing severe compression of both the left and right ventricular chambers. Left ventricular ejection fraction was reduced at 45%, and minimal tricuspid regurgitation was present without pericardial effusion. Bedside abdominal ultrasonography revealed normal liver, splenic, and renal parenchyma without cystic lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Congenital cardiac cyst or ventricular diverticulum",
+      "rule_out_reason": "Congenital heart anomalies and cardiac cysts can occur in Down's syndrome; however, congenital cystic malformations do not explain subsequent synchronous large intracerebral cystic development or strongly positive parasitic serology.",
+      "quote": "Transthoracic echocardiography revealed a large cyst measuring 50 mm/52 mm in the middle part of the interventricular septum, crushing left and right ventricular (Figure 3)."
+    },
+    {
+      "candidate": "Primary cardiac neoplasm (cardiac fibroma or rhabdomyoma)",
+      "rule_out_reason": "Intramyocardial tumors such as fibromas or rhabdomyomas frequently involve the interventricular septum and induce ventricular dysfunction, but typically present as solid or heterogeneous intramural masses rather than well-defined, unilocular fluid-filled cysts.",
+      "quote": "His left ventricular systolic function was altered with a low left ventricular ejection fraction (45%). Minimal tricuspid regurgitation was noted. There was no pericardial effusion."
+    },
+    {
+      "candidate": "Neurocysticercosis",
+      "rule_out_reason": "Cysticercosis causes parasitic cyst formation in humans with domestic animal exposures, but primarily targets the brain and skeletal muscle, whereas primary interventricular septal cyst involvement with subsequent cerebral hydatid disease is characteristic of Echinococcus.",
+      "quote": "The family lives in a rural area in companion with domestic animals."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred with strongly positive hydatid serological assays (hemagglutination titer >1:5,000 and positive ELISA OD 1.034), followed by emergent left fronto-temporo-parietal craniotomy with intact Dowling-Orlando enucleation of a synchronous giant cerebral cyst, whose histopathological evaluation definitively confirmed hydatid echinococcosis.",
+      "quote": "Hydatid serology was positive (hemagglutination greater than 1/5,000 (threshold 1/320), ELISA was positive, and optic density was 1.034 (threshold 0.275))... Histopathological examination confirmed the diagnostic of hydatid cyst, and the medical therapy using albendazole was pursued."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage presentation limited strictly to cardiac examination, ECG, echocardiography, and abdominal ultrasound. All serology, neurosurgical emergency details, and parasite names withheld from prompt."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7475761_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 8-year-old boy presents with massive hepatomegaly and 3 giant (>=10 cm) cystic lesions involving both liver lobes, but displays completely normal routine blood work and a negative specific echinococcal ELISA, creating a challenge in differentiating between non-parasitic cysts, biliary cystadenoma, and seronegative parasitic hydatid cysts.\n2. Admission Breakpoint: Admission triage concludes after physical examination revealing massive hepatomegaly, baseline blood tests, and abdominal ultrasonography establishing the presence of 3 giant hepatic cysts involving both lobes, strictly before send-out echinococcal serology, advanced CT staging, laparotomy, and cyst fluid aspiration.\n3. Differential Distinctions: Acute pyogenic or amebic hepatic abscess is ruled out by the 1-year indolent presentation lacking fever, jaundice, or constitutional decline; non-parasitic simple cysts are ruled out by intraoperative aspiration of hooklets and cuticular membrane histopathology; seronegative status in hydatid disease reflects the known false-negative rate of ELISA in thick-walled or intact cysts.",
+  "case_prompt": "An 8-year-old boy from a rural area in Nepal presents with a 1-year history of progressive fullness and pain over the upper abdomen. He reports no fever, jaundice, vomiting, or altered bowel habits. There is no preceding history of abdominal trauma or unintentional weight loss.\n\nOn physical examination, the abdomen is markedly distended and palpation reveals massive hepatomegaly. Baseline blood investigations (complete blood count and routine chemistries) are unremarkable. Bedside abdominal ultrasonography demonstrates three giant cysts (each measuring >=10 cm in diameter) involving both the right and left lobes of the liver.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic or Amebic Liver Abscess",
+      "rule_out_reason": "Ruled out by the chronic one-year duration and total absence of fever, jaundice, systemic toxicity, leukocytosis, or bowel symptoms.",
+      "quote": "presented with progressive fullness and pain over the upper abdomen for a year without associated fever, jaundice, vomiting, or bowel complaints. There was no preceding history of trauma or weight loss."
+    },
+    {
+      "candidate": "Non-parasitic / Simple Congenital Hepatic Cyst",
+      "rule_out_reason": "Considered given the initial negative serological screening, but seronegativity is known to occur in intact or thick-walled hydatid cysts, prompting subsequent operative confirmation.",
+      "quote": "Blood investigations were unremarkable, and echinococcal ELISA was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CT confirmed features favoring hydatid etiology, and definitive confirmation was established during laparotomy by cytological identification of free hooklets in cyst aspirate and histopathology demonstrating a laminated cuticular layer with protoscolices.",
+      "quote": "Aspiration revealed clear fluid from the 2 subphrenic cysts and bile-stained aspirates from the cyst over the under surface of the liver, cytology of which showed free hooklets as shown in Figure 4."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled from PMC7475761. Strict admission breakpoint maintained at ultrasound confirmation of 3 giant liver cysts and unremarkable routine labs. Echinococcal ELISA, CT findings, albendazole therapy, and surgical pathology are held until diagnostic reasoning. Exact quotes used for differential rule-outs."
+}

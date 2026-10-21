@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3810932_01",
+  "disease": "Trypanosomiasis",
+  "think": "1. Core Clinical Tension: A 33-year-old pregnant woman with advanced AIDS (CD4 count 18 cells/uL) presenting in the third trimester with intracranial hypertension, hemiparesis, and a focal CNS mass lesion on brain MRI. The core clinical dilemma is distinguishing cerebral toxoplasmosis, primary CNS lymphoma, and fungal mass lesions from acute reactivation of American trypanosomiasis (Chagasic encephalitis / chagoma) in an endemic patient, and managing severe parasitic neuroinfection during late gestation.\n2. Admission Breakpoint: The admission narrative stops after documenting the patient's gestational age, HIV history, nadir CD4 count, neurological manifestations of meningoencephalitis and intracranial hypertension, and brain MRI showing a CNS mass lesion with edema, strictly before send-out serological panels, blood microhematocrit, and PCR testing.\n3. Differential Distinctions: Cerebral toxoplasmosis is the leading cause of focal brain mass lesions in patients with AIDS and CD4 counts below 100 cells/uL; it was ruled out by negative Toxoplasma gondii serology. Neurosyphilis was excluded by negative Treponema pallidum serology. Chagasic meningoencephalitis presents as a pseudotumoral mass lesion (chagoma) with meningoencephalitis occurring during severe immunosuppression, confirmed by positive T. cruzi serology, direct microhematocrit parasite detection, and PCR.",
+  "case_prompt": "A 33-year-old pregnant woman with an 11-year history of human immunodeficiency virus (HIV) infection is admitted at 32 weeks of gestation with clinical manifestations of intracranial hypertension and meningoencephalitis, including temporospatial disorientation, slurred speech, nausea, vomiting, and hemiparesis. She had previously initiated antiretroviral therapy but discontinued treatment after several months due to poor adherence. Antiretroviral therapy had been reinstituted at 26 weeks of gestation, at which time her CD4 cell count was 18 cells/uL. She had resided during her childhood in a disease-endemic province in Argentina. Magnetic resonance imaging (MRI) of the brain demonstrates a focal central nervous system mass lesion with surrounding edema and midline displacement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cerebral toxoplasmosis",
+      "rule_out_reason": "Considered the primary suspect for a focal central nervous system mass lesion with edema in a severely immunocompromised patient with AIDS and a CD4 count under 100 cells/uL. Excluded by negative Toxoplasma gondii serological assays.",
+      "quote": "Results of serologic tests were negative for Toxoplasma gondii, Treponema pallidum, and hepatitis B and C viruses but positive for T. cruzi."
+    },
+    {
+      "candidate": "Neurosyphilis / Syphilitic gumma",
+      "rule_out_reason": "Considered as a potential etiology of meningoencephalitis and focal mass lesions in advanced HIV infection. Excluded by nonreactive Treponema pallidum serology.",
+      "quote": "Results of serologic tests were negative for Toxoplasma gondii, Treponema pallidum, and hepatitis B and C viruses but positive for T. cruzi."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Endemic exposure history in Argentina combined with severe immunosuppression raised suspicion for reactivated Chagas disease, which was confirmed by positive anti-T. cruzi serology, direct detection of circulating parasites by microhematocrit, and high-level parasitic DNA on quantitative PCR.",
+      "quote": "Reactivation of Chagas disease was confirmed by a positive microhematocrit measurement."
+    }
+  ],
+  "final_diagnosis": "Trypanosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled following Stanford MedCaseReasoning guidelines. Admission breakpoint maintained before serologic and parasitologic microhematocrit results."
+}

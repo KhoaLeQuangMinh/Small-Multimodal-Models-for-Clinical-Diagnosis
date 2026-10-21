@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5177614_02",
+  "disease": "Zika Virus",
+  "think": "1. Core Clinical Tension: A 40-something male in Suriname presenting with acute ascending quadriparesis, generalized areflexia, and transient cranial neuropathy following an influenza-like illness, with an atypical antecedent episode of acute urinary retention that raised initial suspicion of transverse myelitis or cauda equina syndrome.\n2. Admission Breakpoint: Admission triage ends following history, physical exam (demonstrating lower extremity flaccid weakness, generalized areflexia, and lack of sensory level), and review of prior unrevealing spinal cord MRI, strictly prior to day 2 lumbar puncture (CSF analysis), urine RT-PCR testing, and electrodiagnostic nerve conduction studies.\n3. Differential Distinctions: Acute transverse myelitis and cauda equina syndrome present with lower extremity weakness and urinary retention, but are ruled out by a normal spinal cord MRI and absence of a sensory level; Miller Fisher syndrome or brainstem encephalitis cause diplopia and areflexia, but diplopia was transient and electrophysiology showed classic demyelinating polyradiculoneuropathy.",
+  "case_prompt": "A male in his 40s residing in Paramaribo, Suriname, presented to the neurology service with progressive lower extremity muscle weakness that had started 7 days prior to admission. At presentation, he was completely unable to walk without assistance. Two weeks before the onset of muscle weakness, he had visited the hospital for acute urinary retention, at which time an emergent magnetic resonance imaging (MRI) scan of the spine was performed and demonstrated no abnormalities. One week before the weakness began, he developed an acute influenza-like illness and experienced a transient episode of diplopia.\n\nOn physical examination upon admission, neurological assessment revealed symmetrical flaccid weakness predominantly affecting the lower extremities, with a Medical Research Council (MRC) score of 4. Deep tendon reflexes were absent in all four extremities, confirming generalized areflexia in both legs and arms. The patient complained of bilateral paresthesias and pain in the legs, but objective sensory testing demonstrated no sensory level, and there were no other signs of spinal cord involvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Transverse Myelitis / Cauda Equina Syndrome",
+      "rule_out_reason": "The antecedent presentation of acute urinary retention followed by progressive paraparesis raised strong suspicion for an acute spinal cord or cauda equina lesion; however, neuroimaging of the entire spine showed no abnormalities, and neurological exam revealed generalized areflexia without a sensory level.",
+      "quote": "Acute myelitis and a cauda syndrome were excluded with an MRI-scan, which showed no abnormalities."
+    },
+    {
+      "candidate": "Compressive Myelopathy / Cord Lesion",
+      "rule_out_reason": "Bilateral leg weakness, paresthesias, and leg pain could indicate an intrinsic spinal cord lesion or compressive neuropathy, but detailed sensory testing demonstrated preserved sensation without a dermatomal sensory level or upper motor neuron signs.",
+      "quote": "The patient complained of paresthesias and pain in the legs but did not have a sensory level or other signs of myelum involvement."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "CSF examination demonstrating albuminocytological dissociation (protein 4.4 g/L with mild pleocytosis) alongside detection of viral RNA by RT-PCR in a post-admission urine sample established the diagnosis of Guillain-Barré syndrome triggered by acute Zika virus infection.",
+      "quote": "A urine sample, taken at day two after admission, was tested positive for ZIKV RNA with a Ct-value of 35.7."
+    }
+  ],
+  "final_diagnosis": "Zika Virus",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission triage terminates prior to lumbar puncture, nerve conduction study, and viral RT-PCR. Zero pathogen spoilers."
+}

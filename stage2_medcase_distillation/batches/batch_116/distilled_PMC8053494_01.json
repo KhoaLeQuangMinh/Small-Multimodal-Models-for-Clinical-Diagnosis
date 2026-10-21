@@ -1,0 +1,23 @@
+{
+  "case_id": "PMC8053494_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 53-year-old heavy smoker presenting with a solid, non-cavitary right hilar mass invading the tracheobronchial tree with elevated tumor markers and negative routine sputum bacteriology. The diagnostic challenge lies in suspecting and identifying active pulmonary tuberculosis nested within what radiologically and clinically appears to be an isolated, advanced bronchogenic carcinoma.\n2. Admission Breakpoint: Initial clinical assessment, laboratory testing including CYFRA 21-1 and sputum smears, and contrast-enhanced chest CT imaging, prior to bronchoscopic transbronchial lung biopsy (TBLB).\n3. Differential Distinctions: Absence of classic apical fibrocavitary changes or calcifications on CT, elevated CYFRA 21-1 pointing toward primary lung carcinoma, and microbiological/molecular detection of Mycobacterium tuberculosis DNA within necrotizing chronic inflammatory tissue confirming coexistent active tuberculosis.",
+  "case_prompt": "A 53-year-old man presented to the hospital with a 4-month history of progressive cough and a 2-month history of exertional polypnea. He was a former smoker with a 60 pack-year history (consuming 30 cigarettes per day for 40 years). He had no significant prior personal medical illness and no family history of malignant or chronic pulmonary disease.\n\nOn physical examination, the patient was hemodynamically stable: blood pressure 126/86 mmHg, pulse rate 92 beats/min, respiratory rate 20 breaths/min, and body temperature 36.4°C. Chest auscultation revealed diminished breath sounds over the right lung fields. The remainder of the physical examination was unremarkable.\n\nLaboratory workup showed a serum cytokeratin fragment (CYFRA) 21-1 level elevated to 4.62 ng/mL (normal <3.3 ng/mL). Other routine haematological and biochemical parameters were within normal limits. Sputum smear microscopy and routine bacteriological examinations were negative.\n\nContrast-enhanced computed tomography (CT) of the chest revealed a 5.9 × 3.9 cm lobular mass in the right hilar region with irregular margins exhibiting heterogeneous enhancement, without evidence of internal necrosis, cavitation, fibrotic scarring, or calcification. The mass produced contiguous tracheobronchial stenosis involving the right upper-middle lobar bronchus, and lymphadenopathy was observed in the right hilar and mediastinal stations. Staging evaluation including contrast-enhanced brain MRI, contrast-enhanced abdominal CT, and whole-body bone scintigraphy showed no distant metastatic disease.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Isolated Bronchogenic Squamous Cell Carcinoma",
+      "rule_out_reason": "Considered the primary diagnosis given the heavy smoking history, elevated CYFRA 21-1, and invasive hilar mass lacking calcification or cavitation; confirmed as coexisting malignancy by peripheral biopsy but excluded as the sole pathology once transbronchial biopsy revealed necrotizing granulomatous inflammation with mycobacterial DNA.",
+      "quote": "Considering that the patient had no history of tuberculosis and the CT scan showed no features of obsolete tuberculosis, the patient was diagnosed with TB. However, the CT and the TBLB findings still indicated highly possibility of coexisting lung cancer. Thus, the patient received a CT-guided percutaneous lung biopsy at the periphery of the same mass (Figure 3). The pathology showed a poorly differentiated squamous cell carcinoma (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Transbronchial lung biopsy (TBLB) of the right hilar mass demonstrated chronic necrotizing inflammation, and molecular testing identified Mycobacterium tuberculosis DNA directly within the lesion, establishing active pulmonary tuberculosis coexisting with lung cancer.",
+      "quote": "Pathologic results by the TBLB revealed the mass in the right hilar region as chronic inflammation with necrosis, and the DNA fragment of Mycobacterium tuberculosis (Mtb) was found in the specimen (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled cleanly following Stanford MedCaseReasoning methodology, maintaining diagnostic tension of tumor versus granulomatous disease without admission spoilers."
+}

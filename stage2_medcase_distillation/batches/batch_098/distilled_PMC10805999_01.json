@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC10805999_01",
+  "disease": "Neurocysticercosis",
+  "think": "1. Core Clinical Tension: A 65-year-old woman with no prior seizure disorder presented with new-onset adult focal motor seizures and a two-month history of mild headache without systemic infectious signs or focal neurological deficits. The presentation raised consideration of cerebrovascular disease, late-onset idiopathic epilepsy, metabolic seizure, or intracranial space-occupying lesions in the context of rural pig farming exposure.\n2. Admission Breakpoint: The breakpoint occurs after initial emergency department triage, vital sign recording, comprehensive physical and neurological examinations, and baseline serum biochemistry/metabolic laboratory results, immediately prior to neuroimaging with contrast-enhanced brain computed tomography.\n3. Differential Distinctions: Idiopathic or genetic epilepsy was unlikely given elderly onset and negative family history. Acute CNS bacterial or viral meningoencephalitis was ruled out by afebrile state, lack of meningismus, and normal peripheral blood counts. Acute metabolic seizure was excluded by normal serum electrolytes, calcium, magnesium, and blood glucose. Parenchymal neurocysticercosis was definitively confirmed on brain CT showing pathognomonic cystic lesions with eccentric internal scolex calcifications.",
+  "case_prompt": "A 65-year-old woman with no significant past medical history was brought to the emergency department of a district hospital in Ghana following an acute episode of seizure activity. Her family witnessed repetitive nodding movements of the head accompanied by involuntary rhythmic jerking of the left upper limb lasting 1 to 2 minutes. This was her first lifetime seizure episode. The event was not preceded by an aura, and there was no loss of consciousness, urinary or fecal incontinence, speech impairment, limb weakness, sensory deficits, fever, or neck stiffness. She reported a 2-month history of antecedent recurrent mild headaches. She had no personal or family history of epilepsy and no history of international travel. She resided in a rural community with poor sanitation in northern Ghana, where free-roaming pigs were present; she previously engaged in pig farming and frequently consumed pork.\n\nOn physical examination, she was afebrile (temperature 36.7 °C), conscious, alert, and oriented. Vital signs included a heart rate of 84 beats per minute and a blood pressure of 118/72 mmHg. Physical examination revealed no pallor, jaundice, wasting, oral lesions, or peripheral lymphadenopathy. Neurological examination showed no meningeal signs and no focal cranial nerve or motor/sensory deficits.\n\nInitial triage laboratory evaluation revealed a random blood glucose of 8.7 mmol/L. Complete blood count, serum electrolytes (sodium, potassium, calcium, magnesium), renal function tests, and liver function panels were all within normal limits. Serologic testing for HIV was negative.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Late-Onset Idiopathic or Familial Epilepsy",
+      "rule_out_reason": "Considered because of a new-onset focal motor seizure, but elderly onset without preceding aura or family history made idiopathic epilepsy unlikely, indicating an acquired structural intracranial lesion.",
+      "quote": "This lasted about 1-2 min and it was the first time she had ever had a seizure. The episode was not preceded by an aura... She had no family history of epilepsy or history of foreign travel."
+    },
+    {
+      "candidate": "Acute Meningoencephalitis / CNS Infection",
+      "rule_out_reason": "In an infectious-endemic setting, new-onset seizures and headaches could signify acute central nervous system infection; however, the patient was completely afebrile, alert, without neck stiffness or meningeal signs, and had normal hematologic indices.",
+      "quote": "There was no loss of consciousness... fever or neck pain... She was conscious and alert with no signs of meningeal irritation. Neurological assessment was unremarkable."
+    },
+    {
+      "candidate": "Metabolic or Electrolyte-Induced Seizure",
+      "rule_out_reason": "Electrolyte abnormalities (hyponatremia, hypocalcemia, hypomagnesemia) and acute glycemic swings are frequent triggers of new seizures in elderly patients; all metabolic and electrolyte panels were completely normal.",
+      "quote": "Random blood sugar was 8.7 mmol/L... Her full blood count, renal and liver biochemistries as well as serum electrolytes (Ca2+, Mg2+, Na+, K+) were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Contrast-enhanced brain CT demonstrated pathognomonic subcortical cystic lesions with eccentric internal hyperdense foci (scolex) in the bilateral frontal lobes and left insular cortex without perilesional edema, confirming vesicular-stage parenchymal neurocysticercosis, which responded successfully to combined albendazole, praziquantel, dexamethasone, and anticonvulsant therapy.",
+      "quote": "Contrast enhanced computed tomography (CT) scan of the brain revealed subcortical cystic lesions without perilesional oedema with eccentric internal hyperdense foci measuring 1.3 x 1.0 cm and 1.8 x 1.2 cm in the right and left frontal lobes respectively (Figure 1). There was a similar lesion in the left insular cortex measuring 1.0 x 0.8 cm (Figure 2). She was diagnosed with vesicular stage of parenchymal neurocysticercosis."
+    }
+  ],
+  "final_diagnosis": "Neurocysticercosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distillation completed following Stanford MedCaseReasoning guidelines. Admission prompt strictly excludes neuroimaging and confirmatory parasitic diagnosis while providing full clinical, epidemiological, and baseline lab triage findings. Verbatim text quotes utilized throughout differential reasoning."
+}

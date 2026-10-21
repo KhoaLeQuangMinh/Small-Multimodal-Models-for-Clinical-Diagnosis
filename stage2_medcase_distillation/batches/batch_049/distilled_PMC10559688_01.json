@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10559688_01",
+  "disease": "Amebiasis",
+  "think": "1. Core Clinical Tension: An elderly indigenous Ecuadorian woman presents with acute colicky abdominal pain, distension, obstipation, and focal peritonism mimicking an acute mechanical bowel obstruction or diverticular perforation. The absence of leukocytosis and initial negative stool microscopy obscured the diagnosis of acute fulminant invasive colitis until mucosal ulceration with erythrophagocytic trophozoites was recognized.\n2. Admission Breakpoint: The breakpoint occurs on Day 1 following initial emergency department evaluation, triage labs (noting marked C-reactive protein elevation, normal leukocytes, and mild hypokalemia), negative routine stool examination, and abdominal/pelvic CT scanning (ruling out a transition zone or free air), strictly before colonoscopic inspection and mucosal biopsy on hospital day 7.\n3. Differential Distinctions: Mechanical small bowel obstruction secondary to surgical adhesions was favored based on prior cholecystectomy and obstipation, but cross-sectional imaging lacked a caliber transition point. Acute diverticulitis or ischemic colitis commonly causes left lower quadrant peritoneal signs in older adults, but endoscopic biopsy and surgical pathology revealed transmural necrotizing inflammation with amoebic trophozoites containing phagocytosed erythrocytes.",
+  "case_prompt": "A 73-year-old woman of Ecuadorian indigenous ancestry presented to the emergency department with a 2-day history of intense, diffuse, colicky abdominal pain associated with progressive abdominal distension and absolute obstipation (inability to eliminate flatus or stool). Her past medical history was notable for hypothyroidism and an open cholecystectomy performed 20 years earlier, with no preceding history of chronic colitis or bowel disorders. On arrival, her vital signs were within normal limits. Abdominal examination revealed distension with localized signs of peritonism (rebound tenderness and involuntary guarding) over the left lower quadrant. Initial laboratory investigations showed a markedly elevated C-reactive protein level of 307 mg/L, a normal leukocyte count of 5,600/mm^3 without neutrophilia, no metabolic acidosis, and mild hypokalemia (potassium 3.3 mEq/L). Routine stool microscopy revealed no visible parasites, cysts, or erythrocytes. Non-contrast and contrast-enhanced computed tomography (CT) of the abdomen and pelvis demonstrated a small volume of free fluid within the pouch of Douglas, but identified no mechanical transition zone and no evidence of pneumoperitoneum.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Mechanical Bowel Obstruction (Adhesive)",
+      "rule_out_reason": "In the setting of prior open abdominal surgery, severe colicky pain, distension, and failure to pass gas, adhesive mechanical bowel obstruction was the initial presumptive diagnosis; however, abdominal CT scan revealed no caliber transition point or mechanical transition zone.",
+      "quote": "In the context of surgical history and clinical picture, we presumed an obstructive abdomen. Simple and contrast-enhanced tomography of the abdomen and pelvis did not reveal a transition zone or pneumoperitoneum, and demonstrated a small amount of fluid in Douglas sac."
+    },
+    {
+      "candidate": "Acute Diverticulitis / Ischemic Colitis",
+      "rule_out_reason": "Left lower quadrant peritoneal irritation in an elderly patient frequently reflects acute sigmoid diverticulitis or colonic ischemia; however, colonoscopy demonstrated extensive multifocal mucosal ulcerations throughout the transverse, descending, and sigmoid colon with invasive trophozoites rather than localized diverticular phlegmon.",
+      "quote": "A colonoscopy was performed on the seventh day of hospitalization and reported numerous mucosal patches, erosions, and edema localized at the sigmoid, descendant colon, and transverse colon."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Colonic mucosal biopsy, followed by transmural examination of the emergency colectomy specimen, demonstrated necrotizing ulceration with parasitic bodies exhibiting erythrophagocytosis (ingested red blood cells), diagnostic of invasive Entamoeba histolytica colitis.",
+      "quote": "Sections under the microscope showed fragments of colonic mucosa with ulceration of the epithelium and a lymphoplasmacytic infiltration with eosinophiles, accompanied with edema, congestion, hemorrhage, and parasitic bodies with phagocyted red blood cells suggestive of E. histolytica trophozoites."
+    }
+  ],
+  "final_diagnosis": "Amebiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly adhering to the Stanford MedCaseReasoning methodology. Case presentation terminates at initial emergency department triage and baseline abdominal CT, strictly omitting endoscopic biopsies, parasite identification (E. histolytica), and subsequent colectomy. Verbatim quotes support all differential candidates and diagnostic pivot."
+}

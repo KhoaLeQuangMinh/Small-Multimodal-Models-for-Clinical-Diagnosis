@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC9852623_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 50-year-old man presents with progressive postoperative neck pain and adjacent-segment vertebral erosion two months after an anterior cervical discectomy and fusion (ACDF). The clinical presentation lacks typical systemic signs of acute infection and fails to improve with broad-spectrum intravenous antibiotics (ceftriaxone, vancomycin). The core tension is differentiating adjacent-segment surgical disease or bacterial spondylodiscitis from indolent reactivation spinal tuberculosis.\n2. Admission Breakpoint: The breakpoint occurs when the patient is evaluated for progressive neck pain and cervical MRI reveals C4/C5 endplate erosion, discitis, and paravertebral soft tissue swelling failing empiric antibacterial therapy, immediately prior to the emergence of low-grade fever, night sweats, and confirmatory tuberculosis-specific T-cell interferon-gamma release testing.\n3. Differential Distinctions: Pyogenic spondylodiscitis typically responds to standard broad-spectrum antibacterial therapy or manifests with high acute phase reactants, whereas this patient had an indolent course refractory to ceftriaxone and vancomycin. Cervical neoplasm was excluded by preoperative contrast-enhanced MRI. Mechanical adjacent segment failure would not account for discitis, bone erosion, and paravertebral phlegmon.",
+  "case_prompt": "A 50-year-old retired man presents with persistent, worsening neck pain two months following cervical spine surgery. His past surgical history is notable for an anterior cervical discectomy and fusion (ACDF) performed at the C3–C4 level for cervical spondylotic myelopathy, which had manifested as a one-year history of neck stiffness, lower extremity weakness described as 'walking on cotton,' bilateral hyperreflexia, and positive Hoffmann signs. Preoperative inflammatory markers were normal (erythrocyte sedimentation rate 5 mm/hr, C-reactive protein 1.2 mg/L), chest CT showed old apical fibrocalcific pulmonary lesions in the left upper lobe, and enhanced cervical MRI ruled out neoplasm. Initial postoperative recovery was uncomplicated, with confirmed spinal cord decompression and normal inflammatory markers (ESR 5 mm/hr, CRP 4.1 mg/L).\n\nTwo weeks following discharge, he developed severe neck pain that worsened when turning his head to the left and when recumbent. On re-evaluation, he had localized cervical spine tenderness without acute focal neurological deficits in the extremities. Initial systemic symptoms such as fever or weight loss were absent. A cervical spine MRI obtained two months after the initial surgery demonstrates bone erosion at the C4–C5 vertebral endplates with inflammatory changes of the intervertebral disc and swelling of the adjacent paravertebral soft tissues. The patient received 48 hours of intravenous ceftriaxone followed by 48 hours of intravenous vancomycin, with no symptomatic or clinical improvement. Vital signs subsequently demonstrate a low-grade temperature elevation, accompanied by patient-reported night sweats and insomnia over the prior 48 hours. Routine blood analysis reveals a leukocyte differential with 52.1% neutrophils and 41.1% lymphocytes.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pyogenic bacterial spondylodiscitis / Postoperative surgical site infection",
+      "rule_out_reason": "Pyogenic spinal infection typically responds to potent broad-spectrum coverage or presents with acute toxic features, but the patient experienced no symptomatic relief after sequential empiric courses of ceftriaxone and vancomycin.",
+      "quote": "The patient's pain was not relieved after 48 h of empiric antibiotic (ceftriaxone) treatment. Although vancomycin was used to upgrade the antibiotics, after 48 h, there was still no obvious improvement."
+    },
+    {
+      "candidate": "Cervical spine neoplasm / Primary or metastatic spinal tumor",
+      "rule_out_reason": "Destructive endplate erosion with soft-tissue phlegmon raised suspicion for an underlying neoplasm, but this possibility had been formally evaluated and ruled out on preoperative contrast-enhanced imaging.",
+      "quote": "A preoperative enhanced MRI ruled out the possibility of a tumour in the patient's cervical spine (Figures 3A-D)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The emergence of nocturnal diaphoresis and low-grade pyrexia, historical apical pulmonary scarring, nonresponse to antibacterial therapy, and positive tuberculosis-specific T-cell culture with interferon-gamma release confirmed secondary adjacent-segment tuberculous spondylodiscitis.",
+      "quote": "Six hours before the operation, the patient reported insomnia and night sweats for the past 2 days. After follow-up, the patient was found to have a low fever. New assay results showed neutrophil percentage 52.10%; lymphocyte percentage 41.1%; tuberculosis -infected T cell culture (TBA: 13sfc/2.5*10e5; TBB: 6 sfc/2.5*10e5) was positive and IFN release was detected -gamma-specific lymphocytes."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Verified Stanford MedCaseReasoning distillation. Clean admission presentation strictly ending before send-out IGRA/T-cell testing. Exact verbatim quotes used for all differentials and diagnostic pivot."
+}

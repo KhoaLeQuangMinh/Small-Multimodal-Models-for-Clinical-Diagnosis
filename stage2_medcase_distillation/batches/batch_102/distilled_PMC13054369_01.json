@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC13054369_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 52-year-old hypertensive man presented in deep coma (GCS 3) with anisocoria from a massive right hemispheric subdural hematoma causing brainstem herniation, completely in the absence of head trauma, occurring 5 days after an acute febrile illness with severe thrombocytopenia.\n2. Admission Breakpoint: Immediate presentation to the emergency room with coma, anisocoria, thrombocytopenia (74,000/μL), and noncontrast head CT showing large frontotemporoparietal subdural hematoma with midline shift, prior to linking the hemorrhage to antecedent dengue hemorrhagic fever serology.\n3. Differential Distinctions: Traumatic subdural hematoma was ruled out by explicit lack of head trauma; hypertensive intracerebral hemorrhage was excluded by extra-axial subdural location and lack of intraparenchymal or subarachnoid hematoma; spontaneous subdural hematoma was linked to capillary leakage and severe thrombocytopenia from dengue hemorrhagic fever.",
+  "case_prompt": "A 52-year-old man with a history of untreated essential hypertension presented to the emergency department after acute onset of coma lasting 1 hour. On the day preceding presentation, he developed severe, progressive headache accompanied by more than five episodes of vomiting. Family members denied any seizures, limb weakness, facial droop, or history of head trauma. Notably, 5 days prior to this presentation, he had completed a 4-day hospital admission for an acute febrile syndrome characterized by severe thrombocytopenia with a nadir platelet count of 30,000/μL. On arrival, he was comatose and unresponsive. Vital signs revealed a temperature of 38.6 °C, blood pressure of 160/90 mmHg, heart rate of 102 beats/min, and respiratory rate of 24 breaths/min with oxygen saturation of 97% on room air. Neurological examination revealed a Glasgow Coma Scale score of 3/15 and anisocoric pupils (right pupil 6 mm, left pupil 2 mm) that were nonreactive to light; there were no signs of meningeal irritation. Initial laboratory investigations demonstrated persistent thrombocytopenia with a platelet count of 74,000/μL, hemoglobin of 14.3 g/dL, hematocrit of 41%, normal leukocyte count, blood glucose of 136 mg/dL, and normal coagulation profile and renal function. Chest radiography revealed mild cardiomegaly. A noncontrast head CT demonstrated a wide hyperdense extra-axial collection in the right frontotemporoparietal region extending along the falx cerebri with subacute hypodense transition, associated with midline shift, compression of the left lateral ventricle, and marked cerebral edema.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Traumatic subdural hematoma",
+      "rule_out_reason": "Subdural hematomas typically develop following blunt head trauma or falls; however, the patient's family explicitly corroborated the total absence of head injury or antecedent trauma, confirming spontaneous intracranial hemorrhage.",
+      "quote": "His family denied any other complaints, including seizures, limb weakness, facial drops, and a history of head trauma."
+    },
+    {
+      "candidate": "Hypertensive intracerebral hemorrhage / Ruptured berry aneurysm",
+      "rule_out_reason": "Considered due to a history of untreated hypertension and acute severe headache with vomiting; however, cranial CT showed an extensive extra-axial subdural hematoma along the cerebral convexity rather than basal ganglionic intraparenchymal or subarachnoid hemorrhage, and baseline coagulation parameters were normal.",
+      "quote": "CT scan showed a wide, hyperdense lesion in the right frontotemporoparietal region extending to the falc cerebri, with a hypodense transition suggestive of a subacute SDH [Figure 1]. Midline shift, a narrowed left ventricle, and cerebral edema were also noted."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The patient had been hospitalized 5 days prior with confirmed dengue hemorrhagic fever characterized by profound thrombocytopenia (30,000/μL) and positive serum anti-dengue IgM antibodies; persistent thrombocytopenia (74,000/μL) and disease-induced capillary fragility precipitated a fatal spontaneous subdural hematoma.",
+      "quote": "Five days earlier, the patient was hospitalized with DHF. Laboratory findings showed 30,000 thrombocytes and positive immunoglobulin M anti-dengue, and the patient was discharged on the 4th day."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Spontaneous non-traumatic subdural hematoma presenting as a catastrophic hemorrhagic complication of dengue hemorrhagic fever."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9172725_01",
+  "disease": "Talaromycosis",
+  "think": "1. Core Clinical Tension: A 61-year-old renal transplant recipient maintained on triple immunosuppressive therapy presents with subacute progressive fever, cough, and dyspnea lasting over 5 months. The clinical dilemma is distinguishing an opportunistic bacterial infection (such as Pseudomonas aeruginosa) or common invasive mold (such as Aspergillus) from endemic dimorphic fungal infection (Talaromyces marneffei) in an immunocompromised host residing in Guangxi, China, particularly when empiric voriconazole and routine fungal biomarkers (G test and GM test) produce negative or equivocal results.\n2. Admission Breakpoint: Admission triage concludes after the physical examination, comprehensive hematological, hepatic, renal, immunologic, and serological profiles, fungal biomarker tests (G test, GM test), tacrolimus level, and initial admission chest CT, immediately before bronchoalveolar lavage fluid (BALF) metagenomic next-generation sequencing and bacterial cultures return.\n3. Differential Distinctions: Invasive pulmonary aspergillosis (ruled out by low/equivocal GM test of 0.598, negative G-test <10 pg/mL, and metagenomic confirmation of Talaromyces marneffei), isolated opportunistic bacterial pneumonia (ruled out as the sole etiology because despite isolation of Pseudomonas aeruginosa, subacute 5-month duration and persistence pointed to dimorphic fungal co-infection), and Pneumocystis jirovecii pneumonia (ruled out by negative G test and specific metagenomic sequence identification).",
+  "case_prompt": "A 61-year-old male residing in Guangxi, China, presented with recurrent cough, expectoration, and intermittent fever of more than 5 months' duration. Symptoms began subacutely with cough and sputum production and insidiously progressed to fever and exertional dyspnea. Prior outpatient empiric antifungal therapy with voriconazole provided only transient improvement with subsequent recurrence. His past medical history was notable for hypertension, diabetes mellitus, and end-stage renal disease managed with allograft renal transplantation 10 months prior; his maintenance immunosuppressive regimen consisted of mycophenolate mofetil 720 mg every 12 hours, prednisone 10 mg daily, and tacrolimus.\n\nOn physical examination upon admission, his maximum temperature was 39.0°C. Auscultation of the chest revealed moist rhonchi over the left lower lung field.\n\nLaboratory evaluation showed a white blood cell count of 9.28 x 10^9/L with 83.3% neutrophils and 9.0% lymphocytes, hemoglobin of 113.5 g/L, and platelet count of 247.8 x 10^9/L. Serum albumin was 31.1 g/L, alanine aminotransferase 10 U/L, aspartate aminotransferase 18 U/L, and serum creatinine 128 µmol/L. Inflammatory markers revealed a procalcitonin level of 0.079 ng/mL, erythrocyte sedimentation rate of 62 mm/hr, and C-reactive protein of 97.06 mg/L. Fungal serological markers showed a plasma 1,3-beta-D-glucan (G test) of <10 pg/mL and a Galactomannan (GM) test index of 0.598. Immunological assessment demonstrated CD3+ T-lymphocyte count of 893 cells/µL, CD4+ T-lymphocyte count of 265 cells/µL, IgA 1.49 g/L, IgM 0.82 g/L, IgG 11.73 g/L, and IgE 1.100 IU/mL. Complement C3 was 0.792 g/L and C4 was 0.191 g/L. Whole-blood tacrolimus trough concentration was 14.7 ng/mL. Chest computed tomography demonstrated active pulmonary lesions.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive pulmonary aspergillosis",
+      "rule_out_reason": "Although solid organ transplant recipients on calcineurin inhibitors are susceptible to Aspergillus, the serum 1,3-beta-D-glucan was negative (<10 pg/mL), the galactomannan index was equivocal (0.598), and bronchoalveolar lavage metagenomic sequencing identified Talaromyces marneffei rather than Aspergillus species.",
+      "quote": "plasma 1,3-beta glucan test (G test) was < 10 pg/mL, Galactomannan test (GM test) was 0.598"
+    },
+    {
+      "candidate": "Isolated bacterial pneumonia (Pseudomonas aeruginosa)",
+      "rule_out_reason": "While bronchoalveolar lavage culture isolated Pseudomonas aeruginosa, the subacute 5-month duration, normal procalcitonin (0.079 ng/mL), and failure to resolve with antibacterial therapy indicated that bacterial colonization/infection was secondary to underlying opportunistic fungal infection.",
+      "quote": "Candida and Pseudomonas aeruginosa were cultured from the patient's BALF."
+    },
+    {
+      "candidate": "Pneumocystis jirovecii pneumonia (PJP)",
+      "rule_out_reason": "PJP is a common cause of subacute fever and dyspnea in transplant recipients with depressed cellular immunity, but normal procalcitonin, negative plasma 1,3-beta-D-glucan, and metagenomic next-generation sequencing excluded Pneumocystis as the driver.",
+      "quote": "plasma 1,3-beta glucan test (G test) was < 10 pg/mL"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Bronchoalveolar lavage fluid next-generation sequencing detected Talaromyces marneffei sequence reads in a kidney transplant recipient from endemic Guangxi, establishing the definitive diagnosis of pulmonary talaromycosis complicated by Pseudomonas co-infection.",
+      "quote": "the bronchoalveolar lavage fluid (BALF) NGS revealed that the output reading of TM were 11."
+    }
+  ],
+  "final_diagnosis": "Talaromycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Clear representation of pulmonary talaromycosis in an immunocompromised kidney transplant recipient in southern China. Admission breakpoint set before bronchoalveolar lavage metagenomics and microbiology return."
+}

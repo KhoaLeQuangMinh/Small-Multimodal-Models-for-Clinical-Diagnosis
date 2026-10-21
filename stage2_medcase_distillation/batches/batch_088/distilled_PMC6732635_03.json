@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC6732635_03",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 42-year-old man presents with acute febrile encephalopathy, marked tachycardia, and baseline hemoglobin of 10.3 g/dL, who experiences a catastrophic drop in hemoglobin to 5.5 g/dL, anuric acute kidney injury (creatinine 720 µmol/L), conjunctival jaundice, and port wine-colored urine within 12 hours of initiating quinine therapy.\n2. Admission Breakpoint: The admission clinical presentation halts following the onset of clinical deterioration with port wine-colored urine and emergency follow-up laboratory testing (creatinine 720 µmol/L, urea 28 mmol/L, hemoglobin 5.5 g/dL), immediately prior to parasite quantification on thick smear, diagnosis of blackwater fever, artemether rescue, and terminal circulatory collapse.\n3. Differential Distinctions: Septic shock with disseminated intravascular coagulation (DIC) was considered given rapid cardiovascular collapse and multi-organ failure, but the acute hemoglobin collapse to 5.5 g/dL with port-wine urine specifically reflected massive intravascular hemoglobinuria rather than primary septic shock. Fulminant acute hepatic failure was ruled out as jaundice and encephalopathy coincided with catastrophic hemolysis and pigment nephropathy.",
+  "case_prompt": "A 42-year-old man with no significant medical history was admitted to the hospital with acute drowsiness, fever, and marked palpitations.\n\nOn initial examination, he weighed 55 kg. He was drowsy but arousable, with a body temperature of 38.9°C and severe sinus tachycardia with a heart rate of 140 beats/min. Initial laboratory evaluation revealed a hemoglobin concentration of 10.3 g/dL and blood glucose of 9.4 mmol/L. Antimicrobial management with intravenous quinine at a dose of 25 mg/kg per 24 hours was instituted in the emergency department.\n\nTwelve hours into hospitalization, his clinical condition deteriorated precipitously. He developed progressive obnubilation and marked conjunctival jaundice, while becoming afebrile. His urine turned a dark port wine color, followed by acute anuria. Emergency repeat laboratory testing revealed severe acute renal failure with a serum creatinine of 720 µmol/L, blood urea of 28 mmol/L, and a precipitous decline in hemoglobin to 5.5 g/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Septic Shock with Disseminated Intravascular Coagulation (DIC)",
+      "rule_out_reason": "Initial high fever, extreme tachycardia (140 bpm), and rapid circulatory collapse suggested overwhelming bacterial septic shock, but the acute precipitous plunge in hemoglobin from 10.3 g/dL to 5.5 g/dL within 12 hours accompanied by port wine-colored urine indicated massive intravascular hemolysis rather than consumptive coagulopathy.",
+      "quote": "The emergency bioassay showed a creatinemia of 720 mumol, urea of 28 mmol, and hemoglobin of 5.5 g/dl."
+    },
+    {
+      "candidate": "Acute Fulminant Hepatic Failure / Hepatorenal Syndrome",
+      "rule_out_reason": "Worsening obnubilation and prominent conjunctival jaundice can mimic acute hepatic encephalopathy, but the development of port wine-colored urine and massive anemia reflect pigment-induced hemoglobinuric acute tubular necrosis rather than primary end-stage hepatic necrosis.",
+      "quote": "the diagnosis of BWF was evoked due to the port wine color of his urine"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Confirmation of severe malaria with 17,400 Plasmodium falciparum trophozoites/mm³ on thick blood smear, coupled with sudden catastrophic post-quinine intravascular hemolysis, port wine-colored hemoglobinuria, and anuric uremic syndrome, confirmed fatal blackwater fever.",
+      "quote": "The thick peripheral blood smear was positive with 17,400 Plasmodium falciparum trophozoites per mm3."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case presentation cleanly includes the initial evaluation and 12-hour acute hemoglobin/renal collapse with port wine urine while strictly excluding the confirmatory blood smear parasite identification and blackwater fever nomenclature."
+}

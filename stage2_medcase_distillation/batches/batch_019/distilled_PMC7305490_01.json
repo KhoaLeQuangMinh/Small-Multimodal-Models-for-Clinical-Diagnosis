@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7305490_01",
+  "disease": "Malaria",
+  "think": "1. Core Clinical Tension: A 34-year-old previously healthy man with recent travel to Pakistan presents with high fever (39.6 °C), extreme sinus tachycardia (148 bpm), vomiting, marked jaundice, right upper quadrant abdominal tenderness, and extraordinarily elevated inflammatory biomarkers (procalcitonin 61.3 ng/L, CRP 238 mg/L, ferritin 1,831 μg/L, D-dimer 5.4 mg/L) alongside severe thrombocytopenia (30,000/μL) and direct hyperbilirubinemia (7.66 mg/dL). This presentation closely mimics acute cholangitis/septic cholecystitis or fulminant bacterial sepsis/enteric fever, distracting from protozoal hemoparasitic infection.\n2. Admission Breakpoint: The admission breakpoint occurs immediately after initial physical examination, triage blood work (revealing intravascular hemolysis, cytopenias, and high inflammatory markers), chest radiography, and abdominal ultrasonography, strictly before peripheral blood smear microscopy and respiratory viral PCR results are obtained.\n3. Differential Distinctions: Acute calculous cholecystitis or cholangitis is ruled out by abdominal ultrasonography demonstrating the absence of gallstones and biliary ductal dilatation; bacterial sepsis (e.g., typhoid fever) is ruled out by demonstration of intravascular hemolysis (undetectable haptoglobin, elevated LDH) and intraerythrocytic protozoa on blood smear; definitive diagnosis is established by microscopic identification of Plasmodium vivax trophozoites.",
+  "case_prompt": "A 34-year-old man with no previously diagnosed medical conditions presented to the emergency department with a 3-day history of high fever, myalgias, nausea, and vomiting, accompanied by right upper quadrant abdominal pain. He denied cough, dyspnea, sore throat, or other respiratory symptoms. He reported no diarrhea, constipation, or urinary complaints. Three months prior to presentation, he had traveled to Pakistan.\n\nOn physical examination, the patient was febrile with a body temperature of 39.6 °C, heart rate of 148 beats per minute, blood pressure of 109/72 mm Hg, respiratory rate of 24 breaths per minute, and oxygen saturation of 97% on ambient room air. He was visibly jaundiced. Abdominal examination revealed tenderness in the right hypochondrium without guarding or rebound tenderness. Cardiovascular exam showed regular tachycardia without murmurs. Pulmonary examination was clear to auscultation.\n\nInitial laboratory evaluation revealed leukopenia with a white blood cell count of 3,600/μL, absolute lymphopenia of 200/μL, hemoglobin of 14.5 g/dL, and marked thrombocytopenia with a platelet count of 30,000/μL. Markers of hemolysis were prominent, including an elevated lactate dehydrogenase of 481 U/L and an undetectable haptoglobin (<10 mg/dL). Liver biochemistries showed direct hyperbilirubinemia with total bilirubin of 7.66 mg/dL and direct bilirubin of 4.27 mg/dL. Inflammatory and metabolic markers were profoundly elevated: C-reactive protein was 238 mg/L, procalcitonin was 61.30 ng/L, ferritin was 1,831.0 μg/L, D-dimer was 5.40 mg/L, and lactic acid was 2.4 mmol/L. An electrocardiogram demonstrated sinus tachycardia. A plain chest radiograph was unremarkable. Bedside abdominal ultrasonography revealed a hypoechoic hepatic parenchyma with prominent periportal tracts and no evidence of cholelithiasis or biliary dilation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Calculous Cholecystitis or Ascending Cholangitis",
+      "rule_out_reason": "Considered because of fever, right hypochondrial tenderness, marked hyperbilirubinemia, and procalcitonin >60 ng/L. Ruled out by abdominal ultrasound demonstrating the absence of gallstones, sludge, or biliary dilation, paired with laboratory evidence of Coombs-negative intravascular hemolysis.",
+      "quote": "Ultrasound of the abdomen revealed hypoechoic liver with prominent periportal tracts and no evidence of cholelithiasis."
+    },
+    {
+      "candidate": "Severe Bacterial Sepsis / Typhoid Fever",
+      "rule_out_reason": "Considered due to travel to South Asia, acute gastrointestinal symptoms, profound procalcitonin elevation, and high inflammatory markers. Ruled out by the identification of intraerythrocytic protozoal parasites on microscopic smear.",
+      "quote": "Malaria smear was positive for Plasmodium vivax with a parasitemia of 1.2 % with concomitant positive nasopharyngeal PCR for SARS-CoV-2."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred when peripheral blood smear microscopy directly identified Plasmodium vivax at 1.2% parasitemia (concomitant with positive SARS-CoV-2 RT-PCR), with prompt clinical resolution following intravenous artesunate and artemether-lumefantrine.",
+      "quote": "Malaria smear was positive for Plasmodium vivax with a parasitemia of 1.2 % with concomitant positive nasopharyngeal PCR for SARS-CoV-2. Initial treatment with artemether-lumefantrine was initiated with fluid resuscitation. Due to vomiting, artemether-lumefantrine was discontinued and intravenous artesunate was administered at a dose of 2.4 mg/kg at 0, 12, 24, and 48 hours."
+    }
+  ],
+  "final_diagnosis": "Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case distilled faithfully from PMC7305490. Admission breakpoint maintained before blood smear and SARS-CoV-2 PCR. Zero pathogen names leaked in case prompt."
+}

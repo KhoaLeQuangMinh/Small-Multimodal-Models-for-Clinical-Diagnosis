@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC9795948_01",
+  "disease": "Paracoccidioidomycosis",
+  "think": "1. Core Clinical Tension: A 48-year-old woman undergoing induction chemotherapy for early T-cell precursor acute lymphoblastic leukemia developed neutropenic fever and ground-glass pulmonary nodules. In this immunocompromised setting, clinical suspicion initially focused heavily on invasive aspergillosis and opportunistic mold infections, obscuring an underlying endemic systemic dimorphic mycosis that later manifested with progressive lymphadenopathy.\n2. Admission Breakpoint: The admission breakpoint falls immediately following the initial detection of fever and pulmonary ground-glass nodules on chest CT during induction chemotherapy, before the initiation of targeted antifungal therapy, galactomannan testing, and subsequent invasive diagnostic biopsies.\n3. Differential Distinctions: Invasive pulmonary aspergillosis commonly presents with fever and pulmonary nodules/halo signs in neutropenic patients, but typically yields positive galactomannan and responds to mold-active triazoles. Leukemic infiltration causes pulmonary and nodal masses without necrotizing granulomatous features. Tuberculosis produces granulomatous disease with positive acid-fast bacilli and molecular tests. In this South American patient, systemic paracoccidioidomycosis presented with refractory fever, ground-glass nodules, and necrotic cervical lymphadenopathy containing characteristic yeasts.",
+  "case_prompt": "A 48-year-old Caucasian female from Colombia with a recent diagnosis of high-risk early T-cell precursor acute lymphoblastic leukemia was admitted for scheduled induction chemotherapy. She had no prior significant personal or family medical history. Induction therapy was initiated with a standardized multi-agent chemotherapy protocol alongside prophylactic intrathecal chemotherapy.\n\nDuring her inpatient hospitalization for induction therapy, the patient developed an acute febrile episode. Physical examination confirmed an elevated temperature, while remaining vital signs were stable. Cardiovascular, respiratory, and abdominal examinations were initially non-contributory, with no overt focal signs of infection.\n\nBaseline laboratory evaluation showed profound therapy-induced cytopenias. A computed tomography (CT) scan of the chest was obtained to investigate the source of fever, demonstrating multiple bilateral ground-glass nodules throughout the lung parenchyma without dense consolidation or pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Invasive pulmonary aspergillosis",
+      "rule_out_reason": "Initially strongly suspected due to febrile neutropenia with ground-glass pulmonary nodules in a patient undergoing leukemia chemotherapy, but excluded by negative serum galactomannan, negative bronchoalveolar lavage galactomannan and fungal cultures, and lack of response to voriconazole and isavuconazole.",
+      "quote": "started on Voriconazole, due to a high suspicion of invasive pulmonary aspergillosis infection. The assessment of serum galactomannan was negative... Galactomannan and fungal cultures were negative."
+    },
+    {
+      "candidate": "Leukemic infiltration / Disease relapse",
+      "rule_out_reason": "Considered when hepatic injury and persistent pulmonary nodules developed, and later when lymphadenopathy appeared, but excluded by liver biopsy showing no hematologic malignancy and subsequent lymph node histology demonstrating granulomatous inflammation rather than lymphoblasts.",
+      "quote": "liver biopsy, which ruled out fungal infection or infiltration due to her hematologic malignancy... A biopsy was performed to rule out possible T cell lymphoblastic leukemia"
+    },
+    {
+      "candidate": "Tuberculosis",
+      "rule_out_reason": "Considered during evaluation of persistent lung nodules and prominent cervical lymphadenopathy, but excluded by negative molecular assays from bronchoalveolar lavage and negative Ziehl-Neelsen staining and PCR on lymph node tissue.",
+      "quote": "Tuberculosis molecular assays, Galactomannan and fungal cultures were negative... Ziehl-Neelsen stain and polymerase chain reaction assays for tuberculosis were negative"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Following persistent fever, pulmonary nodules unresponsive to azoles, and the appearance of prominent cervical lymphadenopathy, an excisional lymph node biopsy was performed, which definitively demonstrated necrotizing granulomatous inflammation containing diagnostic yeasts.",
+      "quote": "the histopathologic study exhibited chronic necrotizing granulomatous inflammation, with large areas of liquefactive necrosis, containing Paracoccidioides brasiliensis yeasts"
+    }
+  ],
+  "final_diagnosis": "Paracoccidioidomycosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Presentation restricted to initial fever and chest CT ground-glass nodules during ALL induction chemotherapy, omitting voriconazole toxicity, BAL, galactomannan, and lymph node histopathology."
+}

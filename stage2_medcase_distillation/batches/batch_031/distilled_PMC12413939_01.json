@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12413939_01",
+  "disease": "Amebiasis, Malaria",
+  "think": "1. Core Clinical Tension: A 29-year-old pregnant woman presents in prolonged labor with intrauterine fetal demise, pyrexia, severe hypoglycemia, profound hypotension, and life-threatening anemia in a resource-limited rural African hospital. The clinical tension centers on determining whether refractory postpartum septic shock is driven entirely by severe obstetric sepsis/peritonitis, or represents dual life-threatening tropical protozoan infections (massive parasitic liver abscess and severe falciparum malaria).\n2. Admission Breakpoint: The breakpoint occurs immediately after emergency cesarean delivery and transfer to the local intensive care unit with persistent hemodynamic instability, pyrexia, hypoglycemia, and profound anemia, but prior to Giemsa-stained thick blood smear examination, abdominal ultrasound revealing the liver abscess, and percutaneous pus aspiration.\n3. Differential Distinctions: Puerperal sepsis and ruptured intra-abdominal viscous are standard causes of postpartum peritonitis and septic shock, but surgical inspection during cesarean delivery ruled out pelvic/peritoneal rupture, and persistent hypoglycemia and hemolytic anemia pointed towards dual parasitic processes (Plasmodium falciparum and Entamoeba histolytica).",
+  "case_prompt": "A 29-year-old primigravida at 22 weeks of gestation presented with fetal demise to the Emergency Obstetric Care Unit in Ngozi, Burundi, after having been in spontaneous labor since the previous day.\n\nUpon admission, she was pyrexial (temperature 38.0 C), hypotensive (blood pressure 85/55 mmHg), and tachycardic, with a heart rate of 120 beats per minute, a respiratory rate of 22 breaths per minute, a shock index of 1.4, and a Glasgow Coma Scale score of 14. She weighed 48 kg with a height of 158 cm (BMI 19.2 kg/m2). Physical examination revealed generalized abdominal tenderness. Vaginal examination demonstrated a closed internal cervical os.\n\nDue to prolonged labor, fetal demise, and marked hemodynamic instability, an emergency cesarean section was performed. A demised fetus at 22 weeks of gestation was delivered. Surgical exploration revealed no intra-abdominal pathology or ascites.\n\nFollowing surgery, the patient was transferred to the intensive care unit due to persistent respiratory and hemodynamic instability. She was pyrexial, confused, with severe hypotension (blood pressure immeasurable) and profound hypoglycemia (blood glucose 40 mg/dL). Hemoglobin assessment demonstrated a level of 6.5 g/dL.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Puerperal bacterial sepsis / pelvic peritonitis",
+      "rule_out_reason": "Considered as the initial presumed cause of fever, labor arrest, and shock, and managed with empiric broad-spectrum intravenous ampicillin and gentamicin; however, direct intra-abdominal inspection during cesarean section showed no uterine perforation or purulent peritonitis, and hemodynamic collapse persisted despite antibacterial coverage.",
+      "quote": "No signs of ascites or other intra-abdominal pathology were observed during the CS... ampicillin (1000 mg, IV) every 8 h, gentamicin (1 mg/kg) every 8 h"
+    },
+    {
+      "candidate": "Pyogenic bacterial liver abscess",
+      "rule_out_reason": "Considered when subsequent abdominal ultrasound demonstrated an 11 x 12-cm hepatic cavity, but excluded by aspiration of classic anchovy-paste fluid, absence of bacterial growth on culture, and demonstration of characteristic amoebic trophozoites on microscopy.",
+      "quote": "An 18-gauge needle was used to aspirate the abscess cavity, and 200 mL of \"anchovy paste\" was drained from the abscess... when microscopy of the pus revealed Entamoeba histolytica, although no organism was cultured"
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Identification of Plasmodium falciparum on Giemsa-stained thick blood smear accounting for the severe hemolytic anemia and refractory hypoglycemia, combined with bedside ultrasound demonstrating an 11 x 12-cm right lobe liver abscess with aspiration of anchovy-paste pus containing Entamoeba histolytica trophozoites.",
+      "quote": "Malaria was confirmed by the identification of Plasmodium falciparum upon microscopic examination of Giemsa-stained thick blood smear... An ultrasonographic exam was performed, revealing an 11 x 12-cm liver abscess located in the right upper quadrant... 200 mL of \"anchovy paste\" was drained from the abscess... when microscopy of the pus revealed Entamoeba histolytica"
+    }
+  ],
+  "final_diagnosis": "Amebiasis, Malaria",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled strictly according to Stanford MedCaseReasoning protocol. Case prompt stops at post-CS ICU admission. Zero pathogen names in prompt. Exact verbatim quotes validated."
+}

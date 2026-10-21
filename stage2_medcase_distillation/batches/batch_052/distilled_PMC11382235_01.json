@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11382235_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 33-year-old postpartum woman presents with subacute abdominal distension, constitutional weight loss (9 kg), ascites, and significantly elevated CA-125 (396 U/mL). Pelvic MRI reveals a large multiseptated cystic mass originating from the left adnexa with nodular peritoneal thickening and iliac lymphadenopathy, clinically and radiologically mimicking metastatic ovarian carcinoma with peritoneal carcinomatosis.\n2. Admission Breakpoint: The narrative concludes following admission physical examination, laboratory workup (elevated CRP and CA-125), normal chest radiography, and abdominopelvic CT/MRI identifying the complex multilocular mass and ascites, prior to diagnostic laparoscopy and histopathological tissue sampling.\n3. Differential Distinctions: Advanced epithelial ovarian carcinoma shares ascites, elevated CA-125, peritoneal implants, and complex adnexal masses, but histopathology shows adenocarcinoma rather than caseating granulomas. Peritoneal carcinomatosis from gastrointestinal primaries typically presents with mucosal lesions or malignant cytology. Tuberculous peritonitis presents in young patients or postpartum women with constitutional symptoms, inflammatory syndrome, and necrotizing granulomas on laparoscopy.",
+  "case_prompt": "A 33-year-old woman presents to the gastroenterology clinic for the evaluation of progressive ascites and involuntary weight loss. She reports a 6-month history of dull lower abdominal pain and an unintentional weight loss of 9 kg. Over the preceding two months, she noted progressive abdominal distension and secondary amenorrhea. Her obstetric history is notable for delivering a healthy full-term infant seven months prior to presentation.\n\nOn physical examination, the patient appears thin and mildly fatigued. Abdominal examination demonstrates distension with shifting dullness consistent with moderate ascites, but no discrete palpable masses, focal tenderness, or peripheral lymphadenopathy are appreciated. The remainder of the systemic physical examination is normal.\n\nLaboratory evaluation demonstrates an elevated C-reactive protein of 138 mg/L and a markedly elevated serum cancer antigen 125 (CA-125) level of 396 U/mL (reference range: <35 U/mL). Other routine hematologic, renal, and hepatic laboratory panels are within normal limits. A plain chest radiograph is unremarkable, showing clear lung fields with no hilar lymphadenopathy or pleural effusion.\n\nAn abdominal computed tomography (CT) scan reveals a large multicystic, thick-walled formation measuring 155 x 168 x 80 mm with both ovaries protruding into the lesion, while the uterus, liver, spleen, pancreas, and kidneys appear normal. Pelvic magnetic resonance imaging (MRI) delineates a 140 x 135 x 180 mm multiseptated cystic abdominopelvic mass, likely originating from the left ovary, with irregular, nodular wall thickening, internal vegetations, T1 hypointensity, intermediate T2 hypointensity, marked restricted diffusion, and avid contrast enhancement. Associated findings include moderate ascites, diffuse peritoneal thickening, two regular peritoneal nodules, and bilateral iliac lymphadenopathy (largest left external iliac node measuring 15 x 8.5 mm).",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Epithelial Ovarian Carcinoma with Peritoneal Carcinomatosis",
+      "rule_out_reason": "The combination of an adnexal multicystic mass with nodular vegetations, peritoneal nodules, ascites, and elevated CA-125 strongly suggested malignant ovarian neoplasm with peritoneal dissemination; however, surgical inspection and frozen-section histology demonstrated necrotizing granulomatous inflammation without malignancy.",
+      "quote": "The diagnosis of ovarian cancer with peritoneal carcinomatosis was suspected, leading to a laparoscopy."
+    },
+    {
+      "candidate": "Primary Peritoneal Serous Carcinoma or Peritoneal Mesothelioma",
+      "rule_out_reason": "Extensive peritoneal thickening, omental hardening, and nodular implants can represent primary peritoneal malignancy, but multiple biopsy specimens confirmed epithelioid granulomas and caseous necrosis rather than neoplastic proliferation.",
+      "quote": "All specimens showed epitheliod granulomas with central caseous necrosis and no evidence of malignancy (Figure 2)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Diagnostic laparoscopy with frozen-section and permanent histopathological examination of the peritoneum, omentum, and pelvic mass demonstrated epithelioid cell granulomas with pathognomonic central caseous necrosis, confirming pelviperitoneal mycobacterial infection.",
+      "quote": "Biopsies were taken from the peritoneal surface, pelvic mass, and omentum for frozen-section analysis. All specimens showed epitheliod granulomas with central caseous necrosis and no evidence of malignancy (Figure 2)."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation stops prior to surgical laparoscopy and frozen section biopsy. Zero disease spoilers or histology results are present in case_prompt. Direct quotes from the article are matched verbatim."
+}

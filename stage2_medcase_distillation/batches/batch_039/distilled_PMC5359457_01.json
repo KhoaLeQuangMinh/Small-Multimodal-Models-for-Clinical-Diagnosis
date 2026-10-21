@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5359457_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 32-year-old Asian female kidney transplant recipient on dual immunosuppression following alemtuzumab induction presents 3 months post-transplantation with high fever, elevated liver enzymes, and periaortic lymphadenopathy. The clinical challenge is differentiating opportunistic viral hepatitis (CMV, EBV) or post-transplant lymphoproliferative disorder (PTLD) from extrapulmonary tuberculosis, which subsequently triggers paradoxical immune reconstitution inflammatory syndrome (IRIS) upon treatment and immunosuppression reduction.\n2. Admission Breakpoint: Admission triage ends following presentation with fever and transaminitis and abdominal CT demonstrating periaortic lymphadenopathy, before send-out viral PCR panels, blood cultures, liver biopsy, and lymph node biopsy.\n3. Differential Distinctions: Opportunistic viral infections (CMV, EBV, parvovirus B-19) are ruled out by negative quantitative PCR assays; PTLD is ruled out by liver biopsy showing noncaseating granulomas without lymphoproliferative neoplasia; extrapulmonary tuberculosis is confirmed by identification of acid-fast bacilli on para-aortic lymph node biopsy with positive NAAT and culture.",
+  "case_prompt": "A 32-year-old Asian woman who had received a two-antigen mismatched deceased donor renal transplant 3 months prior presented with acute fever. Her post-transplant induction had included alemtuzumab and methylprednisolone, followed by maintenance immunosuppression with delayed-release mycophenolic acid (720 mg twice daily) and tacrolimus (target trough 9\u201312 ng/mL). Her immediate post-transplant course had been uncomplicated, with a nadir serum creatinine of 0.9 mg/dL.\n\nOn physical examination, she had a fever of 102\u00b0F (38.9\u00b0C). The remainder of the physical examination was unremarkable, with no peripheral lymphadenopathy or abdominal tenderness over the renal allograft. Initial laboratory workup revealed elevated liver enzymes. Computed tomographic (CT) imaging of the abdomen and pelvis demonstrated periaortic lymphadenopathy.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Opportunistic viral infection (CMV, EBV, Parvovirus B-19)",
+      "rule_out_reason": "High clinical suspicion in an alemtuzumab-depleted renal transplant recipient presenting with fever and hepatitis 3 months post-transplant; ruled out by negative quantitative PCR assays.",
+      "quote": "Initial blood cultures, CMV, parvovirus B-19 and EBV by quantitative polymerase chain reaction were negative."
+    },
+    {
+      "candidate": "Posttransplant lymphoproliferative disorder (PTLD)",
+      "rule_out_reason": "Considered given intense lymphocyte-depleting induction and retroperitoneal adenopathy; excluded by histopathology which demonstrated granulomas without neoplastic lymphoproliferation.",
+      "quote": "Liver biopsy revealed noncaseating granulomas and no evidence of posttransplant lymphoproliferative disorder (Figure 2(a))."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Extrapulmonary tuberculosis complicated by IRIS",
+      "rule_out_reason": "Para-aortic lymph node biopsy demonstrated acid-fast bacilli confirmed as Mycobacterium tuberculosis by NAAT and culture; following treatment initiation and reduction of immunosuppression, she experienced sterile abscesses consistent with immune reconstitution inflammatory syndrome.",
+      "quote": "Para-aortic lymph node biopsy revealed acid fast bacilli which were confirmed to be Mycobacterium tuberculosis (MTB) by nucleic acid amplification test and culture (Figure 2(b))."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Triage presentation ends at CT periaortic adenopathy. Zero spoilers. Quotes verified from source text."
+}

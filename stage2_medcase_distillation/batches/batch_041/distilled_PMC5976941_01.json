@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5976941_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: An 86-year-old rural woman presents with productive cough, mild dyspnea, and lower lung opacities on chest radiography mimicking community-acquired pneumonia or atelectasis, who is found on vascular cross-sectional imaging to have rare intraluminal cystic filling defects within the right main pulmonary artery along with bilateral pulmonary parenchymal and hepatic cysts.\n2. Admission Breakpoint: The breakpoint occurs immediately after initial clinical evaluation and plain chest radiography demonstrating a right lower paracardial mass-like opacity and left lower airspace opacity with small effusion, prior to thoracic CT, thoracic MRI, sputum microbiology, and nasal viral swabs.\n3. Differential Distinctions: Lower lobe bacterial pneumonia is ruled out by sputum cultures growing only scanty normal flora, lack of fever, and thoracic CT/MRI demonstrating discrete multilocular cystic lesions and pulmonary artery filling defects rather than alveolar consolidation. Pulmonary atelectasis was present secondarily adjacent to the compressive parenchymal cyst rather than representing a primary collapse. The definitive diagnosis of echinococcosis is established by cross-sectional imaging demonstrating cystic intraluminal filling defects in the right pulmonary artery, bilateral parenchymal hydatid cysts with characteristic internal septations, and a coexistent hepatic hydatid cyst.",
+  "case_prompt": "An 86-year-old woman residing in a rural area presents with a subacute history of productive cough yielding yellowish-green sputum, mild shortness of breath, and loss of appetite. She has a documented medical history of a hepatic cystic lesion identified four years earlier, for which she received long-term medical therapy with unspecified agents. She reports no chest pain, fever, palpitations, nausea, vomiting, or alterations in bowel or urinary habits.\n\nOn physical examination, she is afebrile and hemodynamically stable. Respiratory examination reveals clear breath sounds with symmetric air entry bilaterally, though fine bibasilar crepitations are audible on auscultation. The remainder of the physical examination is unremarkable.\n\nInitial plain chest radiography demonstrates a mass-like opacity in the right lower lung zone within the right paracardial area, as well as a nonhomogeneous airspace opacity in the left lower lung zone associated with a small left-sided pleural effusion.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Bacterial Pneumonia / Lower Respiratory Tract Infection",
+      "rule_out_reason": "The patient remained afebrile without leukocytosis, sputum cultures demonstrated only scanty normal respiratory flora, and advanced thoracic imaging showed circumscribed cystic lesions rather than infectious parenchymal consolidation.",
+      "quote": "Sputum culture showed scanty growth of normal respiratory flora, and rhino virus was detected in nasal swab culture."
+    },
+    {
+      "candidate": "Pulmonary Atelectasis",
+      "rule_out_reason": "Airspace opacification was initially suspected to represent atelectasis, but thoracic imaging revealed this was secondary volume loss adjacent to a large parenchymal cystic lesion and pleural effusion.",
+      "quote": "A nonhomogenous airspace opacity was observed in the left lower lung zone associated with a small left pleural effusion that indicated atelectasis or infection as differential diagnosis."
+    },
+    {
+      "candidate": "Pulmonary Thromboembolism",
+      "rule_out_reason": "Intraluminal filling defects in the pulmonary arterial tree were evaluated, but MRI demonstrated fluid-signal intensity with characteristic internal septations diagnostic of intraluminal hydatid cysts rather than vascular thrombi.",
+      "quote": "We conducted magnetic resonance imaging (MRI) of the thorax, which confirmed the presence of the cystic lesion within the right pulmonary trunk extending to the right lower lobe, showing low signal intensity on T1 and high intensity on T2 images with septation"
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Pulmonary Artery and Parenchymal Hydatid Cysts)",
+      "rule_out_reason": "Thoracic CT and MRI established the diagnosis by revealing multiple intraluminal cystic filling defects within the right main pulmonary artery and lobar branches, bilateral parenchymal lung cysts, and a known hepatic cyst.",
+      "quote": "The CT showed multiple intraluminal cystic filling defects in the right main pulmonary artery and right lobar branches, mostly pulmonary artery hydatid cysts (see Figures 1 and 2). There was one large cyst in the right lower lung lobe representing a parenchymal hydatid cyst and another large cyst existed with air in the left lower lobe representing hydatid cyst in the left lung"
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Distilled following Stanford MedCaseReasoning methodology. Admission prompt stops cleanly after plain chest radiography, excluding subsequent thoracic CT, MRI, sputum cultures, and parasite names. Diagnostic reasoning details the differentiation of vascular/parenchymal echinococcal cysts from pneumonia, atelectasis, and thromboembolism."
+}

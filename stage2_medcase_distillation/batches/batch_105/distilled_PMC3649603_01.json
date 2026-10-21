@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3649603_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 55-year-old male presents with lower abdominal pain and an isolated calcified pelvic retrovesical mass adherent to the seminal vesicle, rectum, and urinary bladder. The diagnostic challenge is distinguishing a primary pelvic mesenchymal tumor (such as a calcified pelvic sarcoma, teratoma, or leiomyoma) or non-parasitic seminal vesicle cyst from an isolated retrovesical parasitic cyst, especially when serum parasite serology is negative.\n2. Admission Breakpoint: The breakpoint occurs following clinical history, unremarkable physical examination (including non-palpable rectal exam), normal routine laboratory investigations, and plain abdominal radiography demonstrating a calcified mass around the right seminal vesicle, immediately prior to pelvic CT scan and send-out Echinococcus serology.\n3. Differential Distinctions: Seminal vesicle neoplasm or calcified pelvic tumor is ruled out by the cystic multiseptated internal morphology on CT; congenital pelvic or seminal vesicle cyst is ruled out by thick shell calcification and internal hydatid debris; echinococcosis is established by pelvic CT features of internal septations and hydatid debris, with intraoperative confirmation of a thickly calcified ectocyst.",
+  "case_prompt": "A 55-year-old man presented with lower abdominal pain of 4 months duration. He had no urinary symptoms, altered bowel habits, or systemic complaints. On physical examination, vital signs were stable, systemic examination was unremarkable, and digital rectal examination revealed no palpable mass. Routine laboratory investigations were within normal limits. A plain radiograph of the abdomen demonstrated the presence of a calcified mass around the right seminal vesicle.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Pelvic mesenchymal tumor / seminal vesicle neoplasm",
+      "rule_out_reason": "Considered given an isolated calcified retrovesical mass in close proximity to the seminal vesicle, rectum, and bladder, but ruled out when cross-sectional imaging revealed internal fluid septations and debris rather than a solid invasive mesenchymal neoplasm.",
+      "quote": "An X-ray of the abdomen showed the presence of a calcified mass around the right seminal vesicle [Figure 1]."
+    },
+    {
+      "candidate": "Non-parasitic seminal vesicle cyst / pelvic abscess",
+      "rule_out_reason": "Considered particularly after specific serum IgG enzyme-linked immunosorbent assay returned negative, but simple cysts lack dense circumferential calcification and complex internal septations.",
+      "quote": "His serology for Echinococcus (IgG by enzyme-linked immunosorbent assay system) was negative."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Echinococcosis (Retrovesical hydatid cyst)",
+      "rule_out_reason": "Cross-sectional CT imaging demonstrated pathognomonic parenchymal calcification, internal septae, and hydatid debris, and laparoscopic exploration directly confirmed a thickly calcified ectocyst adherent to the bladder and sigmoid colon.",
+      "quote": "A CT scan of the abdomen and pelvis confirmed an isolated well-defined lesion (6.5 x 5.6 cm2) in the right hemi pelvis with parenchymal calcification, internal septae, and debris suggestive of hydatid cyst; adherent to both the bladder and rectum [Figure 2]."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly stops after plain abdominal radiography and negative rectal examination. Pelvic CT multiseptated characteristics, negative IgG ELISA, and laparoscopic Palanivelu hydatid system intervention are reserved for diagnostic reasoning."
+}

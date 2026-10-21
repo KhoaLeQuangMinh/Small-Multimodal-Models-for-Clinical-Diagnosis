@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4366982_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 76-year-old man presented with a 3-month history of progressive dysphagia, odynophagia, anorexia, and proliferative bilateral tonsillar enlargement covered by yellowish-white plaques with matted, fixed cervical lymphadenopathy in the absence of pulmonary symptoms or radiographic abnormalities. This presentation closely mimics tonsillar squamous cell carcinoma, lymphoma, or refractory bacterial tonsillitis, representing an exceptionally rare primary extrapulmonary presentation of mycobacterial infection.\n\n2. Admission Breakpoint: Admission triage terminates after clinical otolaryngologic and cervical examination, complete blood count, erythrocyte sedimentation rate, throat swab Gram stain/bacterial culture, chest radiography, and documented failure of empiric oral aminopenicillin-beta-lactamase inhibitor therapy. Cervical lymph node fine-needle aspiration cytology and surgical bilateral tonsillectomy with histopathological sectioning mark the confirmatory phase.\n\n3. Differential Distinctions: Tonsillar squamous cell carcinoma and malignant lymphoma were primary clinical concerns given the fixed, matted cervical adenopathy in an elderly patient, while bacterial tonsillitis was excluded by negative bacterial cultures and lack of response to amoxicillin-clavulanate. Histopathologic examination of the excised tonsils demonstrated necrotizing granulomatous inflammation with classic caseation necrosis, confirming tonsillar tuberculosis.",
+  "case_prompt": "A 76-year-old nonsmoking, non-diabetic man presented with a 3-month history of recurrent severe sore throat, progressive difficulty in deglutition, odynophagia, and anorexia. He denied cough, fever, night sweats, fatigue, retrosternal pyrosis, or symptoms of gastroesophageal reflux. He reported no personal history of chronic pulmonary disease and no known household contact with individuals diagnosed with active respiratory infections.\n\nPhysical examination revealed mucosal pallor. Vitals showed a temperature of 37.4°C, blood pressure of 140/84 mmHg, heart rate of 96 beats per minute, and respiratory rate of 18 breaths per minute. Examination of the neck demonstrated bilateral cervical lymphadenopathy involving both the jugulodigastric chain and the posterior triangles. The nodes measured approximately 2 x 2.5 cm and were multiple, matted, firm, nontender, and fixed to underlying deep fascial structures, with normal overlying skin and indistinct margins. Oropharyngeal examination revealed marked bilateral proliferative enlargement of both palatine tonsils with erythema and edema of the surrounding posterior pharyngeal wall. Both tonsils were coated with yellowish-white plaques, and the tonsillar crypts were filled with purulent material, without mucosal ulceration or active bleeding.\n\nLaboratory workup revealed a hemoglobin of 8.5 g/dL and an erythrocyte sedimentation rate (ESR) of 56 mm/hr; the remainder of the complete hemogram and serum biochemistry profiles were normal. Throat swab Gram stain and routine bacterial cultures yielded no growth. Chest radiography was clear with no active pulmonary infiltrates or hilar adenopathy. A trial course of oral amoxicillin-clavulanate (625 mg three times daily) resulted in no symptomatic or objective improvement.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Oropharyngeal Malignancy (Squamous Cell Carcinoma / Tonsillar Lymphoma)",
+      "rule_out_reason": "In a 76-year-old patient, chronic progressive odynophagia with asymmetric or bilateral proliferative tonsillar enlargement and matted, fixed cervical lymphadenopathy strongly pointed toward tonsillar carcinoma or lymphoma; however, surgical tissue histology demonstrated caseating epithelioid granulomas with Langhans giant cells without malignant cytopathology.",
+      "quote": "Jugulo-digastric lymph nodes and lymph nodes of posterior triangle were enlarged which were multiple in number, matted, nontender, firm, and fixed to underlying structure."
+    },
+    {
+      "candidate": "Chronic Pyogenic Bacterial Tonsillitis",
+      "rule_out_reason": "Bilateral proliferative tonsillar hypertrophy with crypts filled with purulent exudate suggested refractory pyogenic tonsillopharyngitis; however, throat swab bacterial cultures showed no pathogen growth, and the patient showed no response to empiric broad-spectrum amoxicillin-clavulanate.",
+      "quote": "Tablet Co-amoxiclav - 625 mg three times daily was given, but no improvement was documented."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Because of persisting lesions refractory to antibiotics, fine needle aspiration of cervical nodes revealed epithelioid granulomas, and definitive bilateral tonsillectomy was performed; histopathology revealed lymphoid follicles, epithelioid granulomas with Langhans giant cells, and extensive areas of caseous necrosis, establishing extrapulmonary tonsillar tuberculosis.",
+      "quote": "histopathological examination of the resected specimen showed lymphoid follicles with germinal centres, epithelioid granulomas with Langhans' and foreign body giant cells and areas of caseous necrosis - suggestive of chronic granulomatous inflammation due to tuberculosis [Figure 1]."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Standardized admission diagnostic case following Stanford MedCaseReasoning methodology. Admission breakpoint stops after triage exam, labs, throat swab culture, normal chest X-ray, and failure of empiric oral antibacterial therapy, strictly withholding invasive lymph node FNAC and tonsillectomy histopathology."
+}

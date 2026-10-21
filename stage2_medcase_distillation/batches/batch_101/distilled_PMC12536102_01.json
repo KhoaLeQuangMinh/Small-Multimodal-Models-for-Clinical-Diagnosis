@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC12536102_01",
+  "disease": "Schistosomiasis",
+  "think": "1. Core Clinical Tension: A 23-year-old woman (G2P1, 7 weeks + 1 day pregnant) presents with acute diffuse abdominal pain, vaginal bleeding, rebound tenderness, and hemodynamic signs of hemoperitoneum. While the immediate surgical presentation is a ruptured ectopic pregnancy (right adnexal mass with hemoperitoneum), the underlying pathological cause of tubal distortion and chronic pelvic pain is an unsuspected parasitic infection.\n2. Admission Breakpoint: Admission triage terminates with the emergency gynecological exam, positive immunological pregnancy test, and pelvic ultrasonography demonstrating an empty uterus with trilaminar endometrium, a 4x3 cm right adnexal mass, and free fluid in the pouch of Douglas, immediately prior to emergent exploratory laparotomy.\n3. Differential Distinctions: Acute appendicitis is ruled out by the positive pregnancy test, vaginal bleeding, and pelvic ultrasound showing a right adnexal mass. Idiopathic tubal rupture is differentiated by histopathological examination of the excised fallopian tube, which reveals typical calcified parasitic helminth ova embedded within the tubal wall.",
+  "case_prompt": "A 23-year-old woman (gravida 2, para 1, with one living child) at 7 weeks and 1 day of gestational age presented to the emergency department with acute lower abdominal pain initially concerning for acute appendicitis. She denied any chronic or past medical conditions. She reported a 2-week history of hypogastric pain that had exacerbated sharply over the past two days, accompanied by diffuse abdominal pain, vaginal bleeding, and amenorrhea.\n\nOn physical examination, her blood pressure was 140/80 mmHg and heart rate was 105 beats/min. Abdominal palpation revealed diffuse peritoneal signs with positive rebound tenderness (positive Blumberg sign). Speculum examination showed a normal-appearing cervix without mucosal lesions, with active blood emerging from the external cervical os and slight bulging of the pouch of Douglas. Bimanual pelvic examination revealed a normal-sized uterus and a tender right adnexal mass.\n\nAn immunological urine pregnancy test was positive. Pelvic ultrasonography demonstrated a uterus of normal size and structure with a trilaminar endometrium, a right adnexal mass measuring 4 x 3 cm, and limited free fluid in the pouch of Douglas.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Acute Appendicitis",
+      "rule_out_reason": "Although referred for suspected acute appendicitis, the patient's amenorrhea, active cervical bleeding, positive pregnancy test, and pelvic ultrasound demonstrating a right adnexal mass confirmed an acute gynecologic/ectopic pathology rather than appendicitis.",
+      "quote": "referred to the hospital for acute abdominal pain and suspected appendicitis."
+    },
+    {
+      "candidate": "Isolated / Idiopathic Ectopic Pregnancy",
+      "rule_out_reason": "While an ectopic rupture accounted for the acute hemoperitoneum, it did not explain the underlying tubal architectural damage; histological examination of the resected fallopian tube revealed that parasitic egg deposition was the causative driver of tubal inflammation.",
+      "quote": "The diagnosis was ruptured ectopic pregnancy (7 weeks + 1 day) and an urgent laparotomy was performed."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot occurred during histopathological examination of the salpingectomy specimen, which demonstrated calcified Schistosoma eggs embedded alongside chorionic villi within the fallopian tube, confirming female genital schistosomiasis as the underlying pathology.",
+      "quote": "Histological examination of removed tissues revealed the presence of chorionic villi, abundant triploblastic proliferation and calcified Schistosoma eggs (Figure 2(a) and (b))."
+    }
+  ],
+  "final_diagnosis": "Schistosomiasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical presentation cleanly ends at emergency triage and pelvic ultrasound. Operative findings, pathology, and helminth ova identification are strictly isolated to diagnostic reasoning."
+}

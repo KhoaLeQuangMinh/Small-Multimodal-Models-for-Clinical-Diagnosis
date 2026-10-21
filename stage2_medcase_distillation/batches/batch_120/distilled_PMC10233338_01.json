@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10233338_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 7-month-old infant in Kenya presents with a 5-week history of persistent pneumonia and fevers unresponsive to multiple broad-spectrum intravenous antibiotics (penicillin, gentamicin, ceftriaxone, meropenem), accompanied by oral candidiasis and left axillary lymphadenopathy ipsilateral to a BCG scar. The central diagnostic challenge is distinguishing between pyogenic bacterial pneumonia, opportunistic fungal infection, adverse BCG vaccine disease (BCGitis/BCGosis), and primary Mycobacterium tuberculosis infection, while managing clinical suspicion for an underlying inborn error of immunity.\n2. Admission Breakpoint: Admission triage ends following initial history, physical examination, admission plain chest radiograph showing bilateral airspace opacities, and initiation of empiric inpatient antimicrobial stabilization. Invasive diagnostic workup ensues with chest CT revealing multiple large lung nodules, left axillary lymph node excisional biopsy, tuberculin skin testing, and targeted molecular line probe assay testing.\n3. Differential Distinctions: Persistent pyogenic bacterial or fungal pneumonia is ruled out by negative bronchoalveolar lavage bacterial and fungal cultures and negative PAS tissue stains. BCG disease was initially considered due to ipsilateral adenopathy, but molecular Genotype MTBDRplus testing identified Mycobacterium tuberculosis complex sensitive to isoniazid and rifampicin. Inborn immunodeficiency (X-linked CGD) predisposed the infant to this presentation.",
+  "case_prompt": "A 7-month-old male infant in Kenya presents with persistent fevers, cough, and rapid breathing that have been ongoing for 5 weeks. He is the only child of non-consanguineous parents. Prior to presentation, he was treated at an outside healthcare facility for pneumonia with broad-spectrum antimicrobials including crystalline penicillin, gentamicin, ceftriaxone, and meropenem without clinical improvement.\n\nOn physical examination, the infant appears sickly, irritable, and febrile. He has oral thrush and notable left axillary lymphadenopathy ipsilateral to his BCG vaccination scar. Vital signs reveal tachypnea with mild lower chest wall indrawing, but normal oxygen saturation breathing ambient air. Auscultation of the chest reveals bilateral air entry with fine bilateral basal crepitations. Abdominal examination is unremarkable.\n\nInitial admission chest radiography demonstrates bilateral airspace opacities.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Refractory pyogenic bacterial or opportunistic fungal pneumonia",
+      "rule_out_reason": "Considered due to protracted 5-week respiratory failure, persistent fever, oral thrush, and failure of multiple broad-spectrum antibiotics, but bronchoalveolar lavage bacterial and fungal cultures were negative and periodic acid-Schiff stain on tissue was negative for fungi.",
+      "quote": "On day 9 of admission, bronchoalveolar lavage (BAL) bacterial and fungal culture results returned negative."
+    },
+    {
+      "candidate": "Localized / Disseminated BCG vaccine disease (BCGitis)",
+      "rule_out_reason": "Considered because axillary lymphadenitis occurred ipsilaterally to the BCG vaccination scar in an infant with suspected underlying inborn immunodeficiency, but molecular line probe assay confirmed Mycobacterium tuberculosis complex sensitive to isoniazid and rifampicin.",
+      "quote": "BCG disease was a differential diagnosis based on axillary lymphadenopathy on the arm with the BCG scar. We were cognizant that BCG would be resistant to pyrazinamide."
+    },
+    {
+      "candidate": "Diagnostic Pivot: Pulmonary and Lymphatic Tuberculosis (Mycobacterium tuberculosis)",
+      "rule_out_reason": "Confirmed when left axillary lymph node biopsy demonstrated caseous granulomatous lymphadenitis, the tuberculin skin test was strongly positive (26 mm induration at 72 hours), and Genotype MTBDRplus VER 2.0 molecular testing of lymph node tissue detected Mycobacterium tuberculosis complex.",
+      "quote": "On day 10 of hospitalization, the Genotype MTBDRplus VER 2.0 (Hain) test result of lymph node tissue was received, detecting a Mycobacterium tuberculosis complex isolate susceptible to isoniazid and rifampicin."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint stopping at admission CXR and triage exam. Zero mention of Mycobacterium tuberculosis, CGD, genetic testing, or biopsy findings in prompt. Quotes match source text."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC3215560_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 37-year-old woman with advanced retroviral disease initiated combination antiretroviral therapy (HAART) after a 1-year history of chronic diarrhea and wasting with an initially unremarkable chest radiograph. Four weeks into therapy, she develops an acute systemic and respiratory deterioration characterized by high fever, non-productive cough, dyspnea, and rapidly progressive, tender cervical lymphadenopathy. The clinical challenge is distinguishing immune reconstitution inflammatory syndrome (IRIS) unmasking an occult disseminated mycobacterial infection from an acute antiretroviral drug reaction (such as nevirapine-induced hypersensitivity) or an emerging HIV-associated malignancy (such as lymphoma).\n2. Admission Breakpoint: The triage evaluation terminates following the physical examination, repeat plain chest radiography showing perihilar adenopathy, and initial hematologic and biochemical screening (PCV 28%, WBC 2.9 × 10^3/µL, normal renal and liver function). Excisional cervical lymph node biopsy and histopathology mark the initiation of confirmatory diagnostic procedures.\n3. Differential Distinctions: Lymphoma and other HIV-related neoplasms present with progressive adenopathy and wasting, but the acute inflammatory and painful onset following ART initiation suggests IRIS rather than neoplasia. Drug hypersensitivity to nevirapine can occur within 4 weeks of initiation, but typically presents with cutaneous eruption and abnormal liver transaminases, whereas her liver profile was normal and adenopathy was prominent.",
+  "case_prompt": "A 37-year-old woman presented to the hospital with a 4-week history of worsening non-productive cough, progressive breathlessness, fever, and painful bilateral swelling in the neck. Four weeks prior to presentation, she had commenced combination antiretroviral therapy comprising emtricitabine, tenofovir, and nevirapine following a 1-year history of progressive weight loss and recurrent diarrhea; at the time of antiretroviral initiation, she had no fever or cough, and baseline chest radiography had shown no parenchymal or nodal abnormalities. On physical examination, she was febrile and in respiratory distress. Examination of the neck revealed progressive, painful, bilateral inflammatory cervical lymphadenopathy. Chest auscultation was unremarkable. Initial laboratory evaluation revealed a packed cell volume of 28% and a total white blood cell count of 2.9 × 10^3/µL, with a differential of 52% neutrophils and 40% lymphocytes. Renal and liver function tests were within normal limits. A repeat plain chest radiograph revealed abnormal features suggestive of perihilar adenopathies.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Non-Hodgkin Lymphoma / HIV-Associated Malignancy",
+      "rule_out_reason": "Rapid enlargement of bilateral cervical lymph nodes in a patient with profound chronic wasting and immunosuppression is suspicious for high-grade lymphoma; however, the acute painful inflammatory onset temporally tied to recent antiretroviral initiation reflects immune reconstitution, and excisional node histology demonstrated granulomatous inflammation rather than malignant lymphoid proliferation.",
+      "quote": "Histology of biopsied cervical node confirmed tuberculosis-(TB) granuloma."
+    },
+    {
+      "candidate": "Antiretroviral Drug Hypersensitivity Reaction",
+      "rule_out_reason": "Fever and systemic deterioration starting 4 weeks after initiating a nevirapine-containing regimen could represent severe drug-induced hypersensitivity; however, the patient lacked cutaneous eruptions or hepatic dysfunction, and had prominent thoracic and cervical adenopathy.",
+      "quote": "Renal and liver function tests were normal."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Reconstitution of cellular immunity following initiation of antiretroviral therapy unmasked a subclinical disseminated infection, presenting as unmasking IRIS. Histopathologic examination of the biopsied cervical lymph node confirmed granuloma formation, establishing disseminated infection involving the lymph nodes and lungs.",
+      "quote": "Histology of biopsied cervical node confirmed tuberculosis-(TB) granuloma. A diagnosis of disseminated TB-(lungs and nodes) secondary to IRIS was made."
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Disseminated tuberculosis involving perihilar nodes and cervical lymph nodes unmasked as immune reconstitution inflammatory syndrome (IRIS) 4 weeks after initiating HAART."
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC7712452_01",
+  "disease": "Tuberculosis",
+  "think": "1. Core Clinical Tension: A 27-year-old hospital laboratory physician presents with isolated acute hoarseness for one week without constitutional symptoms (no fever, cough, night sweats, or weight loss), with completely normal inflammatory markers and a normal chest CT. Laryngoscopy reveals hyperemic, milky hyperplastic vocal cord lesions. The primary diagnostic challenge is distinguishing isolated laryngeal tuberculosis from vocal cord malignancy, benign vocal cord polyps/papillomatosis, or fungal laryngitis, particularly when conventional non-invasive smears and chest imaging show no evidence of pulmonary disease.\n2. Admission Breakpoint: The admission evaluation concludes after outpatient/admission triage, normal chest CT, and direct laryngoscopic visualization of bilateral hyperemic, milky vocal cord lesions, prior to surgical vocal cord biopsy histopathology, special histochemical stains, and tissue gene-chip molecular testing.\n3. Differential Distinctions: Laryngeal carcinoma presents with hoarseness and irregular exophytic vocal cord lesions but reveals cellular dysplasia and invasive malignant squamous epithelium on biopsy. Fungal laryngitis produces white exophytic mucosal plaques but is readily identified by positive PAS or GMS fungal stains. Chronic nonspecific laryngitis or benign polyps lack epithelioid granulomatous architecture and test negative on mycobacterial molecular profiling.",
+  "case_prompt": "A 27-year-old female laboratory physician presented to the hospital with a 7-day history of hoarseness. She denied fever, cough, expectoration, weight loss, night sweats, sore throat, fatigue, or myalgias. Her medical history was negative for immunosuppressive therapy, and she had no family history of chronic respiratory infections. In her clinical work, she routinely handled sputum specimens from patients with pulmonary infections.\n\nOn physical examination, vital signs were normal. Examination of the head, neck, and chest was unremarkable, with no palpable cervical lymphadenopathy. Cardiopulmonary auscultation was clear.\n\nInitial laboratory evaluation demonstrated normal routine blood chemistry and a normal erythrocyte sedimentation rate (ESR). Serum tumor markers were within normal reference ranges. High-resolution computed tomography (CT) of the chest revealed clear lung parenchyma without infiltrates, cavitary lesions, or mediastinal lymphadenopathy.\n\nDirect laryngoscopic examination was performed, revealing diffuse hyperaemia of the laryngeal mucosa and bilateral milky, hyperplastic exophytic lesions involving the vocal cords.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Laryngeal carcinoma / Vocal cord squamous neoplasm",
+      "rule_out_reason": "Considered because persistent hoarseness accompanied by irregular milky hyperplastic lesions of the vocal cords strongly mimics primary laryngeal carcinoma or papillomatosis. However, serum tumor markers were normal and histopathologic examination of the vocal cord biopsy demonstrated chronic granulomatous inflammation without cellular atypia or malignancy.",
+      "quote": "The patient's chest computed tomography (CT) and routine blood chemistry results, erythrocyte sedimentation rate (ESR), and tumour markers were all normal."
+    },
+    {
+      "candidate": "Fungal laryngitis / Mycotic vocal cord granuloma",
+      "rule_out_reason": "Considered because fungal infections such as candidiasis or deep fungal granulomas can present with white hyperplastic vocal cord plaques and hoarseness. However, special fungal staining of the vocal cord biopsy tissue with periodic acid-Schiff (PAS) and Gomori methenamine silver (GMS) was negative.",
+      "quote": "negative results of periodic acid-Schiff stain (PAS), acid-fast stain (Figure 2b), and Gomori methenamine silver stain (GMS)."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Although sputum smears, throat swab PCR, and tissue acid-fast stains were negative, direct homogenate processing of the vocal cord biopsy utilizing a mycobacterial identification gene chip array successfully amplified Mycobacterium tuberculosis DNA, confirming primary laryngeal tuberculosis.",
+      "quote": "We cut the biopsy vocal cords directly, digested the homogenised tissues with proteinase K, and prepared template deoxyribonucleic acid (DNA) for PCR amplification. The mycobacteria gene chips (Mycobacteria Identification Array Kit and Tuberculosis Drug Resistance Detection Array Kit, CapitalBio Corp., China) were used to identify the bacteria and resistance genes. The results showed that MTB was positive"
+    }
+  ],
+  "final_diagnosis": "Tuberculosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Isolated primary laryngeal tuberculosis in a laboratory physician handling sputum, with completely normal chest CT. All histopathology, special stains, PCR, and pathogen names strictly excluded from case_prompt."
+}

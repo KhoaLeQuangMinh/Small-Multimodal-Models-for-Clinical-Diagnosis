@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC10765237_01",
+  "disease": "Leprosy",
+  "think": "1. Core Clinical Tension: A 39-year-old woman in Cali, Colombia presented with a 6-month history of progressive reddish-brown nodules over her extremities with superficial ulceration, accompanied by madarosis (eyebrow loss), xerosis, and fatigue, without overt cutaneous sensory loss. The diagnostic tension arises from distinguishing common endemic granulomatous or infectious mimics—especially secondary nodular syphilis and cutaneous leishmaniasis—from multibacillary lepromatous leprosy, where neural damage and sensory loss may be subtle or absent early in the nodular stage.\n2. Admission Breakpoint: Initial clinical evaluation and physical examination detailing cutaneous lesions, eyebrow alopecia, and baseline laboratory panels, strictly before serological titer comparisons, empiric penicillin trial, and diagnostic nodule biopsy with Fite-Faraco staining.\n3. Differential Distinctions: Secondary syphilis (lues maligna or nodular syphilis) presents with disseminated reddish-brown nodules and papules, but reliably regresses following intramuscular benzathine penicillin G and displays treponemes on tissue examination rather than abundant acid-fast bacilli globi. Cutaneous leishmaniasis presents in endemic South America with indolent noduloulcerative lesions on exposed extremities, but features intracellular amastigotes rather than acid-fast mycobacterial aggregates in Virchow cells.",
+  "case_prompt": "A 39-year-old woman residing in Cali, Colombia, presented with a 6-month history of pruritic macules on her limbs that had progressively evolved into reddish-brown papules and nodules, some demonstrating mild scaling and superficial ulceration. She additionally reported diffuse dry skin, loss of eyebrow hair, and persistent fatigue. She had no significant past medical history and was taking no immunosuppressive medications.\n\nOn physical examination, the patient demonstrated generalized skin xerosis and multiple firm, reddish-brown nodules distributed bilaterally over the forearms, ankles, and dorsal aspects of the feet, with occasional fine scaling and superficial crusting/ulceration. Sensation to light touch and temperature tested over and adjacent to the skin lesions was intact, with no demonstrable cutaneous anesthesia or palpable peripheral nerve enlargement. Complete blood count and standard hematologic parameters were within normal limits.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Secondary syphilis (nodular syphilis / lues maligna)",
+      "rule_out_reason": "Considered primary diagnosis given disseminated reddish-brown nodular eruptions and positive treponemal screening; ruled out by complete lack of clinical improvement after completing three weekly cycles of intramuscular benzathine penicillin G, negative tissue PCR for Treponema pallidum DNA, and histopathologic confirmation of acid-fast bacilli.",
+      "quote": "An initial diagnosis of nodular secondary syphilis was considered, and treatment was provided with 3 doses of 2,400,000 U of benzathine penicillin G (1 dose weekly) per local treatment guidelines. At 6-month follow-up and despite adherence to syphilis treatment, the patient did not show any clinical improvement."
+    },
+    {
+      "candidate": "Cutaneous leishmaniasis",
+      "rule_out_reason": "Prevalent in Colombia causing chronic papulonodular and ulcerated cutaneous lesions on exposed limbs; ruled out by histopathology lacking intracellular amastigotes (Leishman-Donovan bodies) and instead revealing lipid-laden histiocytic granulomas filled with acid-fast bacilli.",
+      "quote": "Given the lack of clinical response to treatment for syphilis, we considered alternative diagnosis and performed excisional biopsy of 2 nodules."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Excisional biopsy of two cutaneous nodules demonstrated chronic granulomatous inflammation containing globi of acid-fast bacilli on Fite-Faraco staining, confirming multibacillary lepromatous leprosy in a patient with madarosis.",
+      "quote": "Histopathology study (Fig 2, A) revealed chronic granulomatous inflammation with globi grouped acid-fast bacilli on Fite-Faraco staining (Fig 2, B), confirming a diagnosis of lepromatous leprosy (multibacillary)."
+    }
+  ],
+  "final_diagnosis": "Leprosy",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission narrative strictly adheres to the admission breakpoint by omitting serological titers, treatment trials, and histopathology. Verbatim quotes match source text exactly."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "PMC5779429_01",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 63-year-old immunosuppressed Texan woman presents with persistent fevers, hypotension, worsening cytopenias, jaundice, and massive hyperferritinemia, culminating in fatal hemophagocytic lymphohistiocytosis (HLH). The tension involves untangling cross-reactive arboviral serologies (weakly positive West Nile virus IgM) from locally acquired autochthonous Dengue virus type 3 (DENV-3) triggering reactive secondary HLH in an immunosuppressed host.\n2. Admission Breakpoint: The admission breakpoint is placed at presentation to the tertiary emergency department and inpatient admission on hospital day 1\u20132, where hypotension, icteric sclerae, bicytopenia, and acute liver injury are documented, before bone marrow biopsy, CDC viral sequencing, and multiorgan failure.\n3. Differential Distinctions: West Nile virus infection was initially diagnosed based on geographic endemicity and weakly positive IgM, but WNV RT-PCR was negative. Murine/endemic typhus causes similar systemic febrile illness and thrombocytopenia in Texas, but serology was negative. Viral hepatitis (HAV, HBV, HCV) causes acute jaundice and coagulopathy, but viral serologies were non-reactive. Autochthonous dengue infection was obscured by flavivirus serologic cross-reactivity and absence of international travel, until bone marrow molecular testing confirmed DENV-3.",
+  "case_prompt": "A 63-year-old woman residing in central Texas presented to a regional emergency department because of persistent fatigue, recurrent fevers, and chills lasting three weeks. Her past medical history was notable for Crohn's disease treated with mercaptopurine and mesalamine, hypertension, coronary artery disease, chronic kidney disease with microhematuria, obesity, and depression. Initial outpatient evaluations over the preceding weeks had documented intermittent hypotension and leukopenia (white blood cell count 3,600/mm\u00b3). At emergency department triage, she was afebrile, hypotensive, tachycardic, and had an oxygen saturation of 90% on ambient air. Physical examination revealed icteric sclerae without peripheral lymphadenopathy or organomegaly. Laboratory evaluation revealed bicytopenia with a hemoglobin of 11.3 g/dL and platelet count of 94,000/mm\u00b3, alongside acute hepatocellular and cholestatic injury with an aspartate aminotransferase (AST) of 662 IU/L and total bilirubin of 6.5 mg/dL. Diagnostic testing for acute hepatitis A, B, and C viruses was negative. Abdominal ultrasound revealed diffuse fatty infiltration of the liver without biliary tract dilation.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "West Nile virus (WNV) infection",
+      "rule_out_reason": "Initially suspected because of residence in an endemic Texas region and a weakly positive anti-WNV IgM, but specific molecular testing by reverse transcription-polymerase chain reaction failed to detect WNV nucleic acid.",
+      "quote": "Although the result of reverse transcription-polymerase chain reaction (RT-PCR) testing to detect WNV nucleic acid was negative on the same day, interferon therapy was initiated because of the possibility of WNV-induced hepatitis."
+    },
+    {
+      "candidate": "Endemic/murine typhus (Rickettsia)",
+      "rule_out_reason": "Considered during early outpatient evaluation due to persistent fever, headache, and cytopenias in Texas, prompting empiric doxycycline, but specific rickettsial serology was negative.",
+      "quote": "Doxycycline was discontinued because of negative typhus serology."
+    },
+    {
+      "candidate": "Acute viral hepatitis (A, B, C)",
+      "rule_out_reason": "Considered due to acute jaundice, scleral icterus, and significant transaminitis, but serologic markers for acute viral hepatitis were non-reactive.",
+      "quote": "Diagnostic testing was negative for infection with hepatitis A, B, and C viruses."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic pivot was the histological confirmation of hemophagocytic lymphohistiocytosis (HLH) on bone marrow biopsy (macrophages phagocytosing erythrocytes) driven by severe systemic flavivirus infection, followed by bone marrow RT-PCR and sequencing confirming locally acquired dengue virus type 3.",
+      "quote": "Sequencing of the flavivirus-specific PCR product on November 7 revealed 98% nucleotide identity with DENV-3, which was confirmed with DENV-type specific RT-PCR."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Superb diagnostic tension capturing autochthonous dengue presenting as fatal HLH with cross-reactive WNV serology. Breakpoint stops prior to bone marrow aspirate, CDC molecular testing, or fatal decompensation. Zero pathogen leaks. Quotes confirmed verbatim."
+}

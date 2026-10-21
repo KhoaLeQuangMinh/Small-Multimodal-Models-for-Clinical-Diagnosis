@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC11251414_02",
+  "disease": "Leishmaniasis",
+  "think": "1. Core Clinical Tension: A 61-year-old immunocompetent female in northeastern Brazil develops a new vegetative ulcer on the nasal dorsum combined with recurrent ulcerations of the lower limb. The core diagnostic tension is distinguishing between invasive mucocutaneous malignancy, endemic blastomycosis/paracoccidioidomycosis, and an atypical cutaneous/mucocutaneous parasitic infection caused by a visceral complex organism.\n2. Admission Breakpoint: Day 1 triage ends after clinical examination documenting the vegetative nasal and leg ulcers and routine baseline workup confirming negative HIV serology and normal blood counts, immediately prior to skin biopsy and promastigote isolation.\n3. Differential Distinctions: Systemic visceral disease is ruled out by negative rapid serology and absent hepatosplenomegaly. Cutaneous squamous cell carcinoma and fungal granulomas are ruled out by parasite demonstration on skin biopsy.",
+  "case_prompt": "A 61-year-old woman residing in northeastern Brazil presented to the outpatient clinic with a two-month history of a new ulcerated, vegetative lesion on the nasal dorsum along with recurrent ulcerations on her right lower extremity. \n\nTwo years previously, she had presented with a solitary, mildly painful ulcerated lesion on her right leg that had initially regressed after a 20-day course of systemic therapy. On follow-up two months prior, she had appeared clear of disease, but subsequently developed the progressive nasal lesion and recurrent lower limb breakdown.\n\nOn physical examination, a raised, slightly vegetative ulcerative lesion was observed over the dorsum of the nose, alongside active ulcerated plaques on the right lower extremity. Physical examination revealed no hepatosplenomegaly or generalized lymphadenopathy. Routine blood counts were within normal limits, HIV serology was negative, and there was no evidence of secondary bacterial infection.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Visceral Leishmaniasis with Cutaneous Manifestations",
+      "rule_out_reason": "Considered because the causative species belongs to the visceral group. Ruled out by negative specific visceral serological testing and absence of hepatosplenomegaly, fever, or cytopenias on blood count.",
+      "quote": "Serological screening for VL was conducted for both patients using Leishmaniose VH Bio test (Bioclin ), and the results were negative. Additionally, neither of the patients exhibited clinical signs of visceral disease such as hepatosplenomegaly or alterations in blood count tests."
+    },
+    {
+      "candidate": "Cutaneous Malignancy (Squamous Cell Carcinoma) / Deep Mycosis",
+      "rule_out_reason": "Considered given the patient's age and the presence of an exophytic, vegetative ulcer on the midface (nasal dorsum). Ruled out by skin biopsy yielding viable parasitic promastigote cultures.",
+      "quote": "HIV serology was negative, and no other secondary infections were reported. At this point, an isolate was obtained from skin biopsy and referred to as BG05."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "The diagnostic turning point occurred when skin biopsy yielded parasite isolate BG05, which molecular typing identified as Leishmania infantum belonging to the L. donovani complex, achieving full remission after oral miltefosine.",
+      "quote": "At this point, an isolate was obtained from skin biopsy and referred to as BG05... the PCR analysis indicated that both isolates belong to the L. (L.) donovani complex... The full nucleotide sequences of BG03 and BG05 showed at least 99.8% identity with L. (L.) infantum LD strain sequence"
+    }
+  ],
+  "final_diagnosis": "Leishmaniasis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission clinical narrative highlights the unusual facial vegetative lesion and recurrent limb ulcers without premature disclosure of molecular isolate findings."
+}

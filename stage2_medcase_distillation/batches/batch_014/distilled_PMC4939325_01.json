@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4939325_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 44-year-old woman presents with chronic epigastric pain, low-grade fever, and a palpable left hypogastric mass corresponding to a multicystic renal lesion. The primary clinical challenge is distinguishing a rare, isolated renal hydatid cyst (occurring in the absence of hepatic or pulmonary involvement) from cystic renal cell carcinoma or complex renal cystic neoplasms.\n2. Admission Breakpoint: Surgical admission clinical presentation (chronic epigastric pain, mild fever, palpable smooth nontender left abdominal mass) and initial outpatient/admission ultrasound demonstrating a multicystic lesion in the left kidney, prior to contrast-enhanced abdominal CT, tumor marker panels, Echinococcus serology, and exploratory laparotomy.\n3. Differential Distinctions: Cystic renal cell carcinoma or multilocular cystic nephroma presents as an expansile complex renal mass with thickened septa and malignant potential, but lacks peripheral wall calcification and echinococcal seropositivity; polycystic or simple renal cysts lack thick calcified walls and constitutional symptoms; whereas isolated renal echinococcosis displays hypodense multicystic architecture with thick calcified walls, high Echinococcus IgG antibody titers, and intraoperative parasitic daughter cysts.",
+  "case_prompt": "A 44-year-old woman presented to the surgical department complaining of chronic epigastric pain and persistent low-grade fever. In evaluation of these symptoms prior to admission, abdominal ultrasonography had revealed a multicystic lesion located in the left kidney.\n\nOn physical examination upon admission, systemic examination revealed a smooth, nontender mass palpable in the left hypogastric region. Physical examination of all other organ systems was entirely normal.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Cystic Renal Cell Carcinoma / Malignant Renal Neoplasm",
+      "rule_out_reason": "A multicystic, thick-walled renal mass in an adult commonly represents cystic renal cell carcinoma or multilocular cystic nephroma, but serum tumor markers were entirely normal and surgical exploration confirmed an intact parasitic cyst rather than neoplastic tissue.",
+      "quote": "Tumor markers as CEA, CA19-9, and AFP were all within normal limits, as well... Abdominal exploration revealed the renal hydatid cyst and open cystectomy was performed (Figures 3(a), 3(b), 3(c), and 4). No other intra-abdominal pathology was noticed, as well."
+    },
+    {
+      "candidate": "Complicated Benign Renal Cyst / Polycystic Kidney Disease",
+      "rule_out_reason": "Benign simple or polycystic renal disease was considered, but the presence of thick calcified cyst walls on computed tomography and associated fever indicated an infectious parasitic process rather than simple cysts.",
+      "quote": "contrast-enhanced computed tomography (CT) of the upper abdomen was performed, which confirmed the ultrasonography data (Figure 1), displaying a hypodense multicystic mass with calcified thick walls, which is a characteristic of hydatid disease."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal CT demonstrating a hypodense multicystic mass with calcified thick walls, corroborated by markedly elevated Echinococcus IgG antibody titers and surgical open cystectomy, established isolated renal hydatid disease.",
+      "quote": "displaying a hypodense multicystic mass with calcified thick walls, which is a characteristic of hydatid disease... Immunological examination revealed elevated Echinococcus antibody titers (IgG levels: 2.50 - positive values >1.1)."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Case prompt strictly restricted to admission history, abdominal palpation, and triage ultrasound. Zero mentions of hydatid cyst, serology, tumor markers, CT, or surgery in prompt. Direct quotes substantiate all differential evaluations."
+}

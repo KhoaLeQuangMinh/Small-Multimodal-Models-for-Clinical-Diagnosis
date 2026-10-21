@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC8213628_03",
+  "disease": "Foodborne Trematodes",
+  "think": "1. Core Clinical Tension: An 80-year-old farmer presenting with non-specific, isolated fever and chills without localizing symptoms. In elderly agricultural workers, this picture typically prompts suspicion for occult bacteremia, urinary sepsis, brucellosis, or malaria, obscuring a dietary parasitic fluke infection.\n2. Admission Breakpoint: Clinical history documenting fever, chills, and exposure to wild aquatic plants, before diagnostic ELISA serology, stool microscopy, and PCR.\n3. Differential Distinctions: Brucellosis and occult bacterial sepsis present with recurrent fevers and chills in agricultural workers, but are unassociated with trematode ova in stool. Malaria produces cyclical fevers and rigors but shows intraerythrocytic parasites on blood smear. Fascioliasis in the hepatic invasive phase causes systemic fever and chills, linked to wild aquatic plant ingestion and confirmed by stool egg shedding and positive ELISA.",
+  "case_prompt": "An 80-year-old male farmer living in Venaei Village in Borujerd County, Lorestan Province, western Iran, presents with a history of recurrent fever and chills. He reports no other localizing clinical symptoms.\n\nHistory is significant for the consumption of raw wild aquatic plants harvested locally.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Brucellosis / Occult bacterial sepsis",
+      "rule_out_reason": "Common causes of fever and chills in elderly farmers, but excluded by positive trematode serology and identification of liver fluke eggs in stool.",
+      "quote": "He had a history of fever and chills and consumptions of aquatic plants. He had no other clinical symptoms."
+    },
+    {
+      "candidate": "Malaria",
+      "rule_out_reason": "Considered in rural farmers presenting with fevers and chills, but ruled out in favor of trematode infection following specific serological and stool microscopic testing.",
+      "quote": "An 80-yr-old man that was a farmer living in Venaei Village in Borujerd County, Lorestan Province. He had a history of fever and chills and consumptions of aquatic plants."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Serum ELISA testing was positive and microscopic stool examination revealed operculated Fasciola hepatica eggs, with PCR confirmation sequencing to F. hepatica (GenBank accession MF991068).",
+      "quote": "ELISA blood tests were positive in this patient. Also stool examinations were positive for F. hepatica eggs (Fig. 1. C). PCR product showed a similar band like previous cases."
+    }
+  ],
+  "final_diagnosis": "Foodborne Trematodes",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Admission breakpoint placed at clinical triage and dietary history. Zero spoilers in case_prompt. Direct quotes verified verbatim from case text."
+}

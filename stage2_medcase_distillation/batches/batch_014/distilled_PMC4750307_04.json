@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC4750307_04",
+  "disease": "Dengue",
+  "think": "1. Core Clinical Tension: A 45-year-old male presents with continuous high fever, headache, vomiting, seizures, semiconsciousness (GCS 9), and complete absence of deep tendon reflexes with bilateral extensor plantars. The lack of rigors and profound depressed consciousness raise an urgent differential including cerebral malaria, bacterial meningoencephalitis, and Japanese encephalitis.\n2. Admission Breakpoint: Admission clinical evaluation documenting semiconsciousness (GCS E3M4V2), positive Kernig sign, generalized areflexia, and bilateral extensor plantars, prior to neuroimaging on day 6 of illness.\n3. Differential Distinctions: Japanese encephalitis classically produces bilateral thalamic hyperintensities often accompanied by parkinsonian/dystonic features; acute pyogenic meningitis demonstrates meningeal exudate and marked inflammatory response; whereas dengue meningoencephalitis exhibits symmetrical thalamic T2 hyperintensities with complete functional recovery on supportive fluid and antipyretic care.",
+  "case_prompt": "A 45-year-old man presented with a 5-day history of continuous high-grade fever without chills or rigors, accompanied by persistent severe headache and recurrent episodes of vomiting. Over the preceding 3 days, he experienced generalized tonic-clonic seizures followed by progressive drowsiness and declining consciousness.\n\nOn initial evaluation, the patient was semiconscious with a Glasgow Coma Scale (GCS) score of 9 (E3M4V2). Neurological examination revealed neck rigidity with a positive Kernig sign. Deep tendon reflexes were universally absent, and plantar responses were bilaterally extensor. The remainder of the detailed central nervous system examination could not be performed due to his depressed conscious state. Examination of other organ systems was unremarkable.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Japanese Encephalitis",
+      "rule_out_reason": "Bilateral symmetrical thalamic hyperintensities and altered sensorium in an endemic region strongly suggested Japanese encephalitis, but specific flaviviral assessment identified dengue as the causative pathogen, with resolution without classic extrapyramidal sequelae.",
+      "quote": "MRI brain (plain and contrast), done on the 6th day of fever, showed bilateral symmetrical T2 hyperintensities in both thalamic regions [Figure 5]. So, the diagnosis of dengue meningoencephalitis was done."
+    },
+    {
+      "candidate": "Acute Bacterial Meningoencephalitis",
+      "rule_out_reason": "High-grade fever, vomiting, depressed sensorium, and positive Kernig sign raised suspicion of pyogenic bacterial CNS infection, but the patient recovered fully on conservative fluid and anticonvulsant therapy without antibiotics.",
+      "quote": "This patient also was treated only with IV fluid, paracetamol as antipyretic and anticonvulsant. On 2nd day onward he had no event focal or generalized convulsion. Patient improved gradually, and neck rigidity was absent on the 11th day of hospital stay."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Neuroimaging demonstrating bilateral symmetrical T2 hyperintensities isolated to both thalami in the setting of acute febrile encephalopathy established the diagnosis of dengue meningoencephalitis.",
+      "quote": "MRI brain (plain and contrast), done on the 6th day of fever, showed bilateral symmetrical T2 hyperintensities in both thalamic regions [Figure 5]. So, the diagnosis of dengue meningoencephalitis was done."
+    }
+  ],
+  "final_diagnosis": "Dengue",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Strict admission breakpoint maintained. Case prompt contains no mention of pathogen or MRI. Differential and diagnostic pivot supported by verbatim text."
+}

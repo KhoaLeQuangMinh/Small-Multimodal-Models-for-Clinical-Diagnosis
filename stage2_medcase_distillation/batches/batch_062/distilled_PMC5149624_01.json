@@ -1,0 +1,28 @@
+{
+  "case_id": "PMC5149624_01",
+  "disease": "Echinococcosis",
+  "think": "1. Core Clinical Tension: A 44-year-old man presents with chronic right flank pain and an incidental large (8.5 cm) heavily calcified right adrenal cystic mass. Adrenal masses of this size typically raise immediate concern for primary adrenocortical malignancy or functional neuroendocrine tumors (pheochromocytoma), but extensive hormonal evaluations are completely normal.\n2. Admission Breakpoint: The admission breakpoint falls after clinical history, physical exam, complete endocrine workup, and initial cross-sectional imaging (abdominal CT/MRI) revealing the calcified mass, prior to specific serological assays (IHA), medical antiparasitic prophylaxis, and surgical adrenalectomy with histopathology.\n3. Differential Distinctions: Adrenocortical carcinoma and pheochromocytoma present as large suprarenal masses; pheochromocytomas typically cause hypertension and elevated catecholamines/metanephrines, while carcinomas display irregular contrast enhancement and hormonal dysregulation. In contrast, an adrenal hydatid cyst presents as an avascular cystic mass with peripheral shell calcification, non-enhancement, and internal detachment of membranes ('water lily sign'), associated with zoonotic canine contact.",
+  "case_prompt": "A 44-year-old man presented for clinical evaluation of recurrent right flank pain of two years duration. Two years earlier, an abdominal ultrasound and subsequent computed tomography (CT) scan had detected an incidental right suprarenal mass. He denied any history of episodic headaches, palpitations, diaphoresis, hypertension, or syncopal episodes. On detailed social history, he noted significant childhood contact with domestic animals, including dogs; his older brother had previously undergone abdominal surgery for multiple visceral cysts. He had no urinary complaints or systemic symptoms.\n\nOn physical examination, vital signs including blood pressure were entirely normal. The abdomen was soft with mild focal tenderness elicited at the right renal angle, but without palpable masses or peritoneal signs.\n\nEndocrine biochemical evaluation demonstrated normal adrenal hormonal baselines: serum cortisol was 201 nmol/L, plasma adrenocorticotropic hormone (ACTH) was 2.8 pmol/L (reference range 1.6–13.90), plasma free metanephrine was 29 ng/L (reference <90), and normetanephrine was 92.0 ng/L (reference <129). Plasma aldosterone and renin levels were normal, with an aldosterone-to-renin ratio of 3.6. Serum testosterone was 5.94 nmol/L and dehydroepiandrosterone sulphate (DHEAS) was 3.61 mumol/L, confirming a non-functioning adrenal mass.\n\nSubsequent contrast-enhanced CT of the abdomen demonstrated a large, well-defined oval-shaped, heavily calcified cystic mass arising from the right adrenal gland, measuring 8.5 x 6.6 cm, causing mass effect on the upper pole of the right kidney and abutting segment VI of the liver. Abdominal magnetic resonance imaging (MRI) confirmed the presence of a non-enhancing mass demonstrating low T1 signal and heterogeneous high T2 signal intensity with internal stripes on T2-weighted sequences (resembling a water lily sign), surrounded by a dark T2 rim consistent with peripheral calcification.",
+  "diagnostic_reasoning": [
+    {
+      "candidate": "Functional Adrenal Neoplasm (Pheochromocytoma / Functional Adenoma)",
+      "rule_out_reason": "Considered due to the large suprarenal mass, but excluded by entirely normal serum cortisol, ACTH, aldosterone/renin ratio, and fractionated metanephrine and normetanephrine levels.",
+      "quote": "Serum cortisol, ACTH, metanephrine, and normetanephrine were normal at 201 nmol/L, 2.8 pmol/L (NR 1.6-13.90), 29 ng/L (NR < 90), and 92.0 ng/L (NR < 129), sequentially. Similarly, aldosterone and renin levels were normal with aldosterone/renin ratio of 3.6."
+    },
+    {
+      "candidate": "Adrenocortical Carcinoma / Malignant Adrenal Tumor",
+      "rule_out_reason": "Considered given the large size (>8 cm) and mass effect on the kidney and liver, but excluded radiologically by lack of contrast enhancement and pathologically by a three-layered acellular laminated cyst wall devoid of neoplastic cells.",
+      "quote": "No scolices or hooks were seen and no associated granulomas or neoplasia. The histological features were consistent with hydatid cyst."
+    },
+    {
+      "candidate": "Diagnostic Pivot",
+      "rule_out_reason": "Abdominal MRI revealed pathognomonic undulating internal membranes (water lily sign) in a non-enhancing calcified cyst, and histopathologic examination of the resected adrenal mass confirmed a three-layered fibrous capsule with a characteristic middle laminated cuticular layer diagnostic of echinococcal cyst.",
+      "quote": "The mass depicts low T1 and heterogeneous high T2 signal intensity with internal stripes in T2 resembling water lily sign but showed no enhancement."
+    }
+  ],
+  "final_diagnosis": "Echinococcosis",
+  "audit_flags": [
+    "NONE"
+  ],
+  "editor_comments": "Adheres strictly to the admission breakpoint. Zero mentions of echinococcus or hydatid in the case prompt. Cross-sectional imaging findings included as baseline imaging without disclosing the final microscopic diagnosis."
+}
