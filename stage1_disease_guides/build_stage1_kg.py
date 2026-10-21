@@ -31,14 +31,17 @@ import shutil
 import asyncio
 import argparse
 import numpy as np
-import torch
-
 # Prevent PyTorch threading conflicts on macOS ARM64
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
-os.environ["OMP_NUM_THREADS"] = "1"
-torch.set_num_threads(1)
+try:
+    import torch
+    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    os.environ["OMP_NUM_THREADS"] = "1"
+    torch.set_num_threads(1)
+    from sentence_transformers import SentenceTransformer
+except ImportError:
+    torch = None
+    SentenceTransformer = None
 
-from sentence_transformers import SentenceTransformer
 from lightrag import LightRAG
 from lightrag.utils import EmbeddingFunc
 
@@ -99,9 +102,50 @@ CANONICAL_SYNONYM_MAP = {
 # =====================================================================
 # BLOCK 2: LOAD MASTER EXTRACTION TRIPLES & MONOGRAPHS
 # =====================================================================
+def compile_canonical_triples(output_path: str, diseases_dir: str):
+    """Compiles canonical_triples.jsonl from individual disease extraction.json files."""
+    folders = [f for f in sorted(os.listdir(diseases_dir)) if os.path.isdir(os.path.join(diseases_dir, f))]
+    lines = []
+    for f in folders:
+        p = os.path.join(diseases_dir, f, "extraction.json")
+        if not os.path.exists(p):
+            continue
+        data = json.load(open(p, "r", encoding="utf-8"))
+        disease = data.get("disease")
+        if "extraction" in data and "entities" in data["extraction"]:
+            ext = data["extraction"]
+        else:
+            ext = {
+                "entities": data.get("entities", []),
+                "relationships": data.get("relationships", [])
+            }
+        for r in ext.get("relationships", []):
+            if not r.get("predicate"):
+                desc = r.get("description", "")
+                if desc.startswith("[") and "]" in desc:
+                    r["predicate"] = desc.split("]")[0].strip("[")
+                elif r.get("keywords"):
+                    r["predicate"] = r["keywords"].split(",")[0].strip()
+                else:
+                    r["predicate"] = "ASSOCIATED_WITH"
+        record = {
+            "case_id": f,
+            "disease": disease,
+            "extraction": ext
+        }
+        lines.append(json.dumps(record, ensure_ascii=False))
+
+    with open(output_path, "w", encoding="utf-8") as out_f:
+        for l in lines:
+            out_f.write(l + "\n")
+
 def load_data():
     if not os.path.exists(EXTRACTED_TRIPLES_FILE):
-        sys.exit(f"ERROR: Extracted triples file not found at: {EXTRACTED_TRIPLES_FILE}")
+        if os.path.exists(DISEASES_DIR):
+            print(f"[build_stage1_kg] Compiling canonical triples from {DISEASES_DIR}...")
+            compile_canonical_triples(EXTRACTED_TRIPLES_FILE, DISEASES_DIR)
+        else:
+            sys.exit(f"ERROR: Extracted triples file not found at: {EXTRACTED_TRIPLES_FILE}")
 
     with open(EXTRACTED_TRIPLES_FILE, "r", encoding="utf-8") as f:
         extracted_data = {
@@ -248,6 +292,9 @@ async def main():
     # -----------------------------------------------------------------
     embedding_model_name = args.model
     embedding_dim = 384 if "minilm" in embedding_model_name.lower() or "bge-small" in embedding_model_name.lower() else 768
+
+    if SentenceTransformer is None:
+        sys.exit("ERROR: sentence-transformers is required to build embeddings. Please install dependencies via: pip install -r requirements.txt")
 
     print(f"\nInitializing Embedding Model: '{embedding_model_name}' (dim={embedding_dim})...")
     embed_model = SentenceTransformer(embedding_model_name)

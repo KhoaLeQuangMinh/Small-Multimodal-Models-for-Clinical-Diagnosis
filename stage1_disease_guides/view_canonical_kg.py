@@ -28,10 +28,52 @@ STAGE1_DIR = os.path.join(PROJECT_ROOT, "stage1_disease_guides")
 TRIPLES_FILE = os.path.join(STAGE1_DIR, "canonical_triples.jsonl")
 GRAPHML_FILE = os.path.join(STAGE1_DIR, "canonical_kg", "graph_chunk_entity_relation.graphml")
 
+def compile_canonical_triples(output_path: str, diseases_dir: str):
+    """Compiles canonical_triples.jsonl from individual disease extraction.json files."""
+    folders = [f for f in sorted(os.listdir(diseases_dir)) if os.path.isdir(os.path.join(diseases_dir, f))]
+    lines = []
+    for f in folders:
+        p = os.path.join(diseases_dir, f, "extraction.json")
+        if not os.path.exists(p):
+            continue
+        data = json.load(open(p, "r", encoding="utf-8"))
+        disease = data.get("disease")
+        if "extraction" in data and "entities" in data["extraction"]:
+            ext = data["extraction"]
+        else:
+            ext = {
+                "entities": data.get("entities", []),
+                "relationships": data.get("relationships", [])
+            }
+        for r in ext.get("relationships", []):
+            if not r.get("predicate"):
+                desc = r.get("description", "")
+                if desc.startswith("[") and "]" in desc:
+                    r["predicate"] = desc.split("]")[0].strip("[")
+                elif r.get("keywords"):
+                    r["predicate"] = r["keywords"].split(",")[0].strip()
+                else:
+                    r["predicate"] = "ASSOCIATED_WITH"
+        record = {
+            "case_id": f,
+            "disease": disease,
+            "extraction": ext
+        }
+        lines.append(json.dumps(record, ensure_ascii=False))
+
+    with open(output_path, "w", encoding="utf-8") as out_f:
+        for l in lines:
+            out_f.write(l + "\n")
+
 def load_canonical_data():
+    diseases_dir = os.path.join(STAGE1_DIR, "diseases")
     if not os.path.exists(TRIPLES_FILE):
-        print(f"Error: Triples file not found at {TRIPLES_FILE}")
-        sys.exit(1)
+        if os.path.exists(diseases_dir):
+            print(f"[view_canonical_kg] Compiling canonical triples from {diseases_dir}...")
+            compile_canonical_triples(TRIPLES_FILE, diseases_dir)
+        else:
+            print(f"Error: Triples file not found at {TRIPLES_FILE}")
+            sys.exit(1)
     diseases_data = []
     with open(TRIPLES_FILE, "r", encoding="utf-8") as f:
         for line in f:
