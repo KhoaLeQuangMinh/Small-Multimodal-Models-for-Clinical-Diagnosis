@@ -102,6 +102,13 @@ parser.add_argument(
     help="LightRAG keyword extraction mode: 'clues' (instant, uses case clues) or 'ollama' (calls local LLM)"
 )
 parser.add_argument(
+    "--prompt-mode",
+    type=str,
+    choices=["cot", "direct"],
+    default="cot",
+    help="Prompt schema: 'cot' (constrained differential elimination) or 'direct' (standard primary + diffs JSON)"
+)
+parser.add_argument(
     "--temperature",
     type=float,
     default=0.0,
@@ -124,6 +131,7 @@ TOP_K_TRIPLES = args.top_k_triples
 TOP_K_TWINS = args.top_k_twins
 MIN_TRIPLE_SCORE = args.min_triple_score
 KEYWORD_MODE = args.keyword_mode
+PROMPT_MODE = args.prompt_mode
 TEMPERATURE = args.temperature
 NUM_CTX = args.num_ctx
 
@@ -177,29 +185,51 @@ CONSTRAINTS:
 
 def build_cot_prompt(
     masked_presentation: str,
-    graph_triples_context: str,
-    patient_twins_context: str
+    graph_triples_context: str = "",
+    patient_twins_context: str = "",
+    prompt_mode: str = "cot"
 ) -> str:
     candidate_list_str = "\n".join([f"- {d}" for d in CANDIDATE_DISEASES])
 
-    prompt = f"""### CANDIDATE DISEASES LIST (Choose strictly from these 22 options):
-{candidate_list_str}
+    sections = [
+        f"### CANDIDATE DISEASES LIST (Choose strictly from these 22 options):\n{candidate_list_str}",
+        f"### PATIENT CLINICAL PRESENTATION (Admission Findings, Diagnostics Masked):\n{masked_presentation}"
+    ]
 
----
-### PATIENT CLINICAL PRESENTATION (Admission Findings, Diagnostics Masked):
-{masked_presentation}
+    # Dynamically inject patient twins if available
+    if patient_twins_context and patient_twins_context.strip():
+        sections.append(patient_twins_context.strip())
 
----
-{patient_twins_context}
+    # Dynamically inject graph triples if available
+    if graph_triples_context and graph_triples_context.strip():
+        sections.append(f"### RETRIEVED CANONICAL KNOWLEDGE GRAPH EVIDENCE:\n{graph_triples_context.strip()}")
 
----
-### RETRIEVED CANONICAL KNOWLEDGE GRAPH EVIDENCE:
-{graph_triples_context}
+    if prompt_mode == "direct":
+        schema_section = """### INSTRUCTIONS & OUTPUT FORMAT:
+Identify the single most likely primary diagnosis and up to two differential diagnoses based on the evidence.
+Return your response strictly as a JSON object with this exact schema:
 
----
-### CLINICAL DIAGNOSTIC DECISION SCHEMA:
-Synthesize the clinical presentation with the historical precedents and knowledge graph evidence:
-1. matched_precedent: State which Precedent (Precedent 1, Precedent 2, or Neither) best matches the patient presentation.
+{
+  "primary_diagnosis": "<Exact disease name from the 22 candidate list>",
+  "confidence": "<high | medium | low>",
+  "differential_diagnoses": [
+    "<Second most likely disease from the candidate list>",
+    "<Third most likely disease from the candidate list>"
+  ],
+  "key_evidence": [
+    "<Key clinical findings or precedent clues supporting this decision>"
+  ]
+}
+
+Return your response strictly as a valid JSON object adhering to this schema."""
+    else:  # cot
+        has_precedents = bool(patient_twins_context and patient_twins_context.strip())
+        precedent_line = "1. matched_precedent: State which Precedent (Precedent 1, Precedent 2, or Neither) best matches the patient presentation." if has_precedents else '1. matched_precedent: Output "N/A" (no precedents provided).'
+        precedent_schema = '  "matched_precedent": "<Precedent 1 | Precedent 2 | Neither>",' if has_precedents else '  "matched_precedent": "N/A",'
+
+        schema_section = f"""### CLINICAL DIAGNOSTIC DECISION SCHEMA:
+Synthesize the clinical presentation with the available evidence:
+{precedent_line}
 2. final_diagnosis: Output the exact primary disease name (must strictly be one of the 22 classes).
 3. differential_hypotheses: List your top 3 differential candidates [Primary Candidate matching final_diagnosis, Second Candidate, Third Candidate] strictly from the 22 classes.
 4. rule_out_rationale: Provide exactly 2 concise sentences:
@@ -209,7 +239,7 @@ Synthesize the clinical presentation with the historical precedents and knowledg
 
 Expected JSON Schema:
 {{
-  "matched_precedent": "<Precedent 1 | Precedent 2 | Neither>",
+{precedent_schema}
   "final_diagnosis": "<Exact primary disease name strictly from the 22 classes>",
   "differential_hypotheses": [
     "<Primary Candidate matching final_diagnosis>",
@@ -224,7 +254,9 @@ Expected JSON Schema:
 }}
 
 Return your response strictly as a valid JSON object adhering to this schema."""
-    return prompt
+
+    sections.append(schema_section)
+    return "\n\n---\n".join(sections)
 
 # =====================================================================
 # BLOCK 3: EVALUATION & CANONICAL MATCHING
@@ -263,7 +295,7 @@ def evaluate_prediction(pred_data: dict, ground_truth_list: list[str]) -> dict:
     canonical_targets = [canonical_key(t) for t in ground_truth_list if t]
 
     final_diag = str(pred_data.get("final_diagnosis") or pred_data.get("primary_diagnosis") or "").strip()
-    diffs = pred_data.get("differential_hypotheses", [])
+    diffs = pred_data.get("differential_hypotheses") or pred_data.get("differential_diagnoses") or []
     if not isinstance(diffs, list):
         diffs = [str(diffs)]
 
@@ -534,53 +566,63 @@ async def main():
             current_case_clues = tc.get("remaining_clues", "")
 
             # A. Retrieve Top-k Patient Twins from Stage 2 Vector Memory (Episodic Brain)
-            # Fast cosine similarity (<2ms) identifies the top twin precedent diseases to guide semantic graph search
-            twins = case_memory.retrieve(masked_text, top_k=TOP_K_TWINS)
-            current_twin_diseases.clear()
-            current_twin_diseases.extend(list(dict.fromkeys([t["disease"] for t in twins if t.get("disease")])))
-            patient_twins_str = case_memory.format_precedent_cards(
-                masked_text,
-                top_k=TOP_K_TWINS
-            )
+            if TOP_K_TWINS > 0:
+                twins = case_memory.retrieve(masked_text, top_k=TOP_K_TWINS)
+                current_twin_diseases.clear()
+                current_twin_diseases.extend(list(dict.fromkeys([t["disease"] for t in twins if t.get("disease")])))
+                patient_twins_str = case_memory.format_precedent_cards(
+                    masked_text,
+                    top_k=TOP_K_TWINS
+                )
+            else:
+                twins = []
+                current_twin_diseases.clear()
+                patient_twins_str = ""
 
             # B. Retrieve from LightRAG Canonical KG (guided by twin disease hypotheses)
-            param = QueryParam(mode="hybrid", top_k=25)
-            try:
-                retrieved_res = await rag.aquery_data(masked_text, param=param)
-                data_payload = retrieved_res.get("data", {})
-                retrieved_relations = data_payload.get("relationships", [])
-            except Exception as e:
-                print(f"  [Case {cid}] LightRAG retrieval exception: {e}")
+            if TOP_K_TRIPLES > 0:
+                param = QueryParam(mode="hybrid", top_k=25)
+                try:
+                    retrieved_res = await rag.aquery_data(masked_text, param=param)
+                    data_payload = retrieved_res.get("data", {})
+                    retrieved_relations = data_payload.get("relationships", [])
+                except Exception as e:
+                    print(f"  [Case {cid}] LightRAG retrieval exception: {e}")
+                    retrieved_relations = []
+
+                # C. Format candidate triples for Stage 3 Ranker
+                candidate_triples = []
+                for r in retrieved_relations:
+                    desc = r.get("description", "").strip()
+                    rel = "associated_with"
+                    if desc.startswith("[") and "]" in desc:
+                        rel = desc[1:desc.index("]")]
+                        desc = desc[desc.index("]") + 1:].strip()
+                    candidate_triples.append({
+                        "source": r.get("src_id", ""),
+                        "relation": rel,
+                        "target": r.get("tgt_id", ""),
+                        "description": desc,
+                        "weight": float(r.get("weight", 1.0))
+                    })
+
+                graph_context_str = triple_ranker.format_triples_for_prompt(
+                    candidate_triples,
+                    patient_text=masked_text,
+                    top_k=TOP_K_TRIPLES,
+                    min_score=MIN_TRIPLE_SCORE
+                )
+            else:
                 retrieved_relations = []
+                candidate_triples = []
+                graph_context_str = ""
 
-            # C. Format candidate triples for Stage 3 Ranker
-            candidate_triples = []
-            for r in retrieved_relations:
-                desc = r.get("description", "").strip()
-                rel = "associated_with"
-                if desc.startswith("[") and "]" in desc:
-                    rel = desc[1:desc.index("]")]
-                    desc = desc[desc.index("]") + 1:].strip()
-                candidate_triples.append({
-                    "source": r.get("src_id", ""),
-                    "relation": rel,
-                    "target": r.get("tgt_id", ""),
-                    "description": desc,
-                    "weight": float(r.get("weight", 1.0))
-                })
-
-            graph_context_str = triple_ranker.format_triples_for_prompt(
-                candidate_triples,
-                patient_text=masked_text,
-                top_k=TOP_K_TRIPLES,
-                min_score=MIN_TRIPLE_SCORE
-            )
-
-            # D. Synthesize Constrained CoT Prompt
+            # D. Synthesize Prompt
             user_prompt = build_cot_prompt(
                 masked_presentation=masked_text,
                 graph_triples_context=graph_context_str,
-                patient_twins_context=patient_twins_str
+                patient_twins_context=patient_twins_str,
+                prompt_mode=PROMPT_MODE
             )
 
             # E. Query Ollama (qwen2.5:3b)

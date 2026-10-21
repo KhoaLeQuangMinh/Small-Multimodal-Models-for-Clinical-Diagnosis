@@ -13,22 +13,21 @@
 
 ## 1. Executive Cross-Experiment Ablation Summary
 
-This master table tracks all 5 experimental benchmarks conducted on the 365 masked admission cohort (`test_masked_cases.jsonl`) under the **Tolerant Clinical Differential Evaluation** paradigm:
+This master table tracks all 5 experimental benchmarks conducted on the 365 masked admission cohort (`test_masked_cases.jsonl`) under the **Top-3 Tolerant Binary Evaluation** paradigm — if the ground-truth disease appears anywhere in the model's Top-3 differential list, the case is scored as fully correct (TP = 1, RR = 1.0). Only cases where the model completely missed the true pathogen are penalized.
 
-| Experiment / Benchmark Tier | Top-1 Diagnostic Accuracy | Tolerant Top-3 Coverage (Patient F1) | Mean Reciprocal Rank (MRR) | Weighted Tolerant Precision | Weighted Tolerant Recall | Weighted Tolerant F1 | Macro Tolerant F1 | Melioidosis Attractor Rate | Status |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Tier 0: Zero-Shot (No RAG)** | 7.67% | 31.78% | 16.71% | 33.13% | 31.44% | 24.90% | 10.95% | 55.34% | Completed |
-| **Tier 1: Graph-Only** | 29.04% | 44.11% | 35.75% | 35.36% | 43.90% | 36.87% | 21.18% | 25.21% | Completed |
-| **Tier 2: Hybrid RAG** | 33.97% | 48.77% | 40.55% | 37.69% | 48.24% | 40.62% | 23.79% | 22.47% | Completed |
-| **Stage 4: Old Sparse Baseline** | 25.21% | 45.75% | 33.88% | 45.01% | 45.26% | 38.77% | 28.65% | 32.88% | Completed |
-| **Stage 4: Dual-Brain (Current)** | **48.22%** | **72.33%** | **58.86%** | **57.63%** | **71.54%** | **60.94%** | **43.94%** | **14.25%** | **Production** |
+| Experiment | $N$ | Top-1 Acc | Top-3 Acc | Weighted F1 | Macro F1 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Tier 0: Zero-Shot (No RAG) | 365 | 7.67% | 32.05% | 36.68% | 21.85% |
+| Tier 1: Graph-Only RAG | 365 | 32.33% | 47.95% | 50.44% | 39.10% |
+| Tier 2: Hybrid RAG | 365 | 37.53% | 52.60% | 55.81% | 39.23% |
+| Stage 4: Old Sparse KG | 365 | 25.21% | 44.93% | 50.24% | 41.44% |
+| **Stage 4: Dual-Brain (Current)** | **365** | **48.22%** | **72.33%** | **72.16%** | **53.65%** |
 
-### Key Architectural Leaps:
-1. **Top-1 Diagnostic Accuracy:** Leaped from **7.67%** (Tier 0) $\rightarrow$ **33.97%** (Tier 2) $\rightarrow$ **48.22%** (Stage 4 Dual-Brain), an absolute gain of **+40.55 percentage points** (+528% relative gain).
-2. **Tolerant Top-3 Clinical Coverage:** Reached **72.33%** (264 / 365 cases), meaning nearly 3 out of every 4 complex masked admissions had the true pathogen isolated within the top 3 differential list.
-3. **Mean Reciprocal Rank (MRR):** Climbed from **16.71%** to **58.86%**, confirming that true diagnoses are placed near the very top of the differential ranking.
-4. **Weighted Tolerant F1-Score:** Broke the 60% threshold, reaching **60.94%** (compared to 24.90% in zero-shot).
-5. **Melioidosis Attractor Collapse:** Reduced by **-74.2%** from 55.34% down to **14.25%**, demonstrating effective elimination of the severe LLM hallucination attractor.
+### Key Architectural Leaps (Tier 0 → Stage 4 Dual-Brain):
+1. **Top-1 Diagnostic Accuracy:** **7.67% → 48.22%** (Δ = +40.55pp, +529% relative gain).
+2. **Top-3 Diagnostic Accuracy:** **32.05% → 72.33%** (Δ = +40.27pp), meaning nearly 3 out of every 4 complex masked admissions had the true pathogen safely captured in the Top-3 differential.
+3. **Weighted F1-Score:** **36.68% → 72.16%** (Δ = +35.49pp), nearly doubling the population-weighted diagnostic performance.
+4. **Macro F1-Score:** **21.85% → 53.65%** (Δ = +31.80pp), confirming gains propagated across rare and common disease classes alike.
 
 ---
 

@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\title{\textbf{Comparison of Fine-Tuning Paradigms for Diagnostic SLMs}}
+\author{SLM for Disease Diagnosis Project}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\vspace{1em}
+
+\begin{table}[h!]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{\textbf{Fine-Tuning WITHOUT RAG vs. Fine-Tuning WITH RAG (RAFT)}}
+\label{tab:rag_vs_norag}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{Dimension} & \textbf{Fine-Tuning WITHOUT RAG (Closed-Book)} & \textbf{Fine-Tuning WITH RAG (RAFT / Open-Book)} \\
+\midrule
+\textbf{Knowledge Source}    & Internal model weights (Parametric)  & External Database / Knowledge Graph (Non-parametric) \\
+\textbf{3B Model Capacity}   & Bottlenecked; parameter interference & Unconstrained; weights focus purely on reasoning \\
+\textbf{Hallucination Risk}  & High (unverifiable memory recall)    & Low (strictly grounded in retrieved evidence) \\
+\textbf{Noise / Distractors} & None (no external context)           & High resistance (trained on hard negative distractors) \\
+\textbf{Clinical Audit}      & Black-box justification              & Verifiable citations to guideline rules \& patient twins \\
+\textbf{Guideline Updates}   & Requires full model retraining       & Instant (update external database index only) \\
+\textbf{Input Token Length}  & Short ($\sim$200 tokens)             & Long ($\sim$2,000--3,000 tokens) \\
+\textbf{Inference Latency}   & Ultra-fast ($\sim$15--30\,ms)        & Moderate ($\sim$150--250\,ms) \\
+\textbf{System Footprint}    & Standalone SLM binary (Edge-friendly)& SLM + Retriever + Vector DB / Graph \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}

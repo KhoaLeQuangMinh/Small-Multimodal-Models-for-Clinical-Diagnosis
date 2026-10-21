@@ -13,7 +13,8 @@
 
 ## 1. Executive Cross-Experiment Ablation Summary
 
-This master table tracks all 5 experimental benchmarks conducted on the 365 masked admission cohort (`test_masked_cases.jsonl`) under the **Tolerant Clinical Differential Evaluation** paradigm:
+### A. Progressive Architectural Tiers
+This master table tracks the progressive benchmarks conducted on the 365 masked admission cohort (`test_masked_cases.jsonl`) under the **Tolerant Clinical Differential Evaluation** paradigm:
 
 | Experiment / Benchmark Tier | Top-1 Diagnostic Accuracy | Tolerant Top-3 Coverage (Patient F1) | Mean Reciprocal Rank (MRR) | Weighted Tolerant Precision | Weighted Tolerant Recall | Weighted Tolerant F1 | Macro Tolerant F1 | Melioidosis Attractor Rate | Status |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -22,6 +23,19 @@ This master table tracks all 5 experimental benchmarks conducted on the 365 mask
 | **Tier 2: Hybrid RAG** | 33.97% | 48.77% | 40.55% | 37.69% | 48.24% | 40.62% | 23.79% | 22.47% | Completed |
 | **Stage 4: Old Sparse Baseline** | 25.21% | 45.75% | 33.88% | 45.01% | 45.26% | 38.77% | 28.65% | 32.88% | Completed |
 | **Stage 4: Dual-Brain (Current)** | **48.22%** | **72.33%** | **58.86%** | **57.63%** | **71.54%** | **60.94%** | **43.94%** | **14.25%** | **Production** |
+
+---
+
+### B. Factorial Component Ablation Matrix ($2 \times 2$ Knowledge Modality $\times$ Reasoning Mode)
+This targeted ablation disentangles the individual contributions of the Semantic Brain (3,696-triple textbook KG), Episodic Brain (1,427-case Patient Memory), and Reasoning Mode (Direct Prompting vs. Constrained Differential CoT) across the identical $N = 365$ cohort:
+
+| Knowledge Modality | Reasoning Mode | Top-1 | Top-3 | Weighted F1 | Macro F1 | Result CSV Source |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **Knowledge Graph ONLY** | Direct | 22.74% | 42.74% | 47.55% | 40.81% | `ablation_new_kg_only_direct.csv` |
+| **Knowledge Graph ONLY** | Constrained CoT | 23.84% | 46.58% | 51.60% | 44.83% | `ablation_new_kg_only_cot.csv` |
+| **Patient Memory ONLY** | Direct | **50.41%** | 67.12% | 65.69% | 50.18% | `ablation_patient_memory_direct.csv` |
+| **Patient Memory ONLY** | Constrained CoT | 47.67% | 65.75% | 66.22% | 48.36% | `ablation_patient_memory_cot.csv` |
+| **Dual-Brain (KG + Memory)** | **Constrained CoT** | 48.22% | **72.33%** | **72.16%** | **53.65%** | `stage4_results.csv` |
 
 ### Key Architectural Leaps:
 1. **Top-1 Diagnostic Accuracy:** Leaped from **7.67%** (Tier 0) $\rightarrow$ **33.97%** (Tier 2) $\rightarrow$ **48.22%** (Stage 4 Dual-Brain), an absolute gain of **+40.55 percentage points** (+528% relative gain).
