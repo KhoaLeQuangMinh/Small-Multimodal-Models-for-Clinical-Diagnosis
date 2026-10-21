@@ -5,6 +5,10 @@ Demonstrates the before-and-after ranking of candidate triples
 for an acute febrile clinical scenario with pathognomonic clues.
 """
 
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from triple_ranker import ClinicalTripleRanker
 
 def run_unit_test():

@@ -33,7 +33,7 @@ class ClinicalTripleRanker:
         self.patient_match_mult = weights.get("patient_match_multiplier", 2.00)
         self.patho_bonus_mult = weights.get("pathognomonic_bonus_multiplier", 2.50)
         self.default_top_k = weights.get("default_top_k", 15)
-        self.min_score_threshold = float(weights.get("min_score_threshold", 2.0))
+        self.min_score_threshold = float(weights.get("min_score_threshold", 0.0))
 
     def _entity_specificity_weight(self, entity_text: str) -> float:
         """Computes specificity multiplier W(entity) using regex penalties."""
