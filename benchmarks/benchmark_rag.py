@@ -20,7 +20,7 @@ from lightrag.utils import EmbeddingFunc
 # =====================================================================
 # BLOCK 1: CLI ARGUMENTS & CONFIGURATION
 # =====================================================================
-parser = argparse.ArgumentParser(description="Tropical Disease Diagnosis - Phase 1 Clinical Slot Keyword Benchmark")
+parser = argparse.ArgumentParser(description="Tropical Disease Diagnosis - LightRAG SLM Benchmark")
 parser.add_argument(
     "--tier",
     type=int,
@@ -47,6 +47,13 @@ parser.add_argument(
     help="Ollama model name (default: qwen2.5:3b)"
 )
 parser.add_argument(
+    "--keyword-mode",
+    type=str,
+    choices=["ollama", "clues"],
+    default=os.getenv("KEYWORD_MODE", "ollama"),
+    help="Keyword extraction mode for LightRAG: 'ollama' or 'clues'"
+)
+parser.add_argument(
     "--max-cases",
     type=int,
     default=int(os.getenv("MAX_TEST_CASES", "0")),
@@ -61,23 +68,33 @@ parser.add_argument(
 
 args, _ = parser.parse_known_args()
 
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-WORKING_DIR = os.path.join(PROJECT_DIR, "test_kg_output")
-TEST_FILE = os.path.join(PROJECT_DIR, "test_masked_cases.jsonl")
+BENCHMARK_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BENCHMARK_DIR, ".."))
+PROJECT_DIR = PROJECT_ROOT
+WORKING_DIR = os.getenv(
+    "WORKING_DIR",
+    os.path.join(BENCHMARK_DIR, "test_kg_output") if os.path.exists(os.path.join(BENCHMARK_DIR, "test_kg_output"))
+    else os.path.join(PROJECT_ROOT, "test_kg_output")
+)
+_data_test_file = os.path.join(PROJECT_ROOT, "data", "test_masked_cases.jsonl")
+TEST_FILE = os.getenv("TEST_FILE", _data_test_file if os.path.exists(_data_test_file) else os.path.join(PROJECT_ROOT, "test_masked_cases.jsonl"))
 
 TIER = args.tier
 TOP_CHUNKS = args.top_chunks
 MAX_RELATIONS = args.max_relations
 OLLAMA_MODEL = args.model
+KEYWORD_MODE = args.keyword_mode
 MAX_TEST_CASES = args.max_cases if args.max_cases > 0 else None
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://127.0.0.1:11434/api/generate")
 
 if args.output_csv:
     OUTPUT_CSV = args.output_csv
 else:
+    chunk_tag = f"_{TOP_CHUNKS}chunks" if TIER == 2 and TOP_CHUNKS != 2 else ""
     OUTPUT_CSV = os.path.join(
-        PROJECT_DIR,
-        f"rag_tier{TIER}_slot_prompt_results.csv"
+        BENCHMARK_DIR,
+        "results",
+        f"rag_tier{TIER}_{'graph_only' if TIER == 1 else 'hybrid'}{chunk_tag}_results.csv"
     )
 
 # The 22 Canonical Tropical Disease Classes
@@ -124,7 +141,7 @@ else:
     print(f"Loaded {len(test_cases)} test cases.")
 
 # =====================================================================
-# BLOCK 3: EMBEDDING FUNCTION (384-DIM all-MiniLM-L6-v2)
+# BLOCK 3: EMBEDDING FUNCTION & KEYWORD LLM FOR LIGHTRAG
 # =====================================================================
 embed_model = SentenceTransformer("all-MiniLM-L6-v2", local_files_only=True)
 embed_lock = asyncio.Lock()
@@ -145,97 +162,56 @@ embedding_wrapper = EmbeddingFunc(
     model_name="all-MiniLM-L6-v2",
 )
 
-# =====================================================================
-# BLOCK 4: CLINICAL SLOT-FILLING KEYWORD EXTRACTION PROMPT
-# =====================================================================
-CLINICAL_SLOT_KEYWORD_PROMPT_TEMPLATE = """---Role---
-You are an expert Tropical Medicine Physician analyzing an admission clinical vignette where final diagnoses are masked.
-Your goal is to extract high-discrimination medical search anchors to retrieve disease pathways from a Medical Knowledge Graph.
-
----Clinical Axes to Extract---
-1. EPIDEMIOLOGICAL EXPOSURES: Geographical origin, animal reservoirs (dogs, sheep, cattle, rodents), insect/mite vectors, freshwater or soil exposure, occupational risks.
-2. CARDINAL PHYSICAL & ANATOMICAL SIGNS: Characteristic lesions (eschars, burrows, hypoesthetic macules), organ involvement, cardiac rhythm disorders (AV block, bradycardia), cysts or masses.
-3. LABORATORY & RADIOLOGICAL PATTERNS: CT/ultrasound features (anechoic, calcified, daughter cysts), blood abnormalities (thrombocytopenia, eosinophilia), response to specific therapies (e.g., rapid response to doxycycline or antiparasitics).
-
----Negative Constraints---
-- NEVER extract generic medical stop-words: 'patient', 'male', 'female', 'hospital', 'admission', 'infection', 'disease', 'symptoms', 'treatment', 'history', 'medical care'.
-
----Output Format---
-Return strictly a valid JSON object with exactly two keys:
-{{
-  "high_level_keywords": [
-    "<2 to 4 overarching clinical syndromes or pathophysiological categories>"
-  ],
-  "low_level_keywords": [
-    "<6 to 10 specific anatomical sites, physical lesions, exposures, or drug responses>"
-  ]
-}}
-
----Clinical Case---
-{query}
-
----Output---"""
-
-current_masked_text = ""
 current_clues = ""
 
 async def keyword_llm_func(prompt: str, **kwargs) -> str:
-    """Uses specialized Clinical Slot-Filling to extract disease anchors."""
-    # LightRAG calls keyword_llm_func with its internal keywords_extraction template.
-    # We substitute our clinical slot prompt with the active patient narrative.
-    clinical_prompt = CLINICAL_SLOT_KEYWORD_PROMPT_TEMPLATE.format(
-        query=current_masked_text if current_masked_text else prompt
-    )
-    
-    payload = {
-        "model": OLLAMA_MODEL,
-        "prompt": clinical_prompt,
-        "stream": False,
-        "format": "json",
-        "options": {
-            "temperature": 0.0,
-            "num_ctx": 4096
-        }
-    }
-    
-    try:
-        timeout = aiohttp.ClientTimeout(total=45)
-        async with aiohttp.ClientSession(timeout=timeout) as session:
-            async with session.post(OLLAMA_URL, json=payload) as resp:
-                data = await resp.json()
-                resp_text = data.get("response", "{}")
-                parsed = json.loads(resp_text)
-                if "high_level_keywords" in parsed and "low_level_keywords" in parsed:
-                    return resp_text
-    except Exception:
-        pass
+    """LightRAG calls this function strictly to extract search keywords."""
+    if "high_level_keywords" in prompt and "low_level_keywords" in prompt:
+        if KEYWORD_MODE == "clues" and current_clues:
+            words = [w.strip(".,;:()\"'") for w in current_clues.split() if len(w) > 4]
+            selected = list(dict.fromkeys(words))[:8]
+            return json.dumps({
+                "high_level_keywords": ["infectious disease", "clinical diagnosis"],
+                "low_level_keywords": selected
+            })
+        elif KEYWORD_MODE == "ollama":
+            url = "http://127.0.0.1:11434/api/generate"
+            payload = {"model": OLLAMA_MODEL, "prompt": prompt, "stream": False, "format": "json"}
+            try:
+                timeout = aiohttp.ClientTimeout(total=45)
+                async with aiohttp.ClientSession(timeout=timeout) as session:
+                    async with session.post(url, json=payload) as resp:
+                        data = await resp.json()
+                        resp_text = data.get("response", "{}")
+                        if resp_text and "high_level_keywords" in resp_text:
+                            return resp_text
+            except Exception:
+                pass
 
-    # Graceful fallback: extract clinical keywords from case clues
-    if current_clues:
-        words = [w.strip(".,;:()\"'") for w in current_clues.split() if len(w) > 4]
-        selected = list(dict.fromkeys(words))[:8]
-        return json.dumps({
-            "high_level_keywords": ["tropical infectious disease", "clinical syndrome"],
-            "low_level_keywords": selected
-        })
-        
-    return json.dumps({
-        "high_level_keywords": ["infectious disease"],
-        "low_level_keywords": ["fever", "rash", "organomegaly"]
-    })
+            # Fallback to clues if Ollama call fails/times out
+            if current_clues:
+                words = [w.strip(".,;:()\"'") for w in current_clues.split() if len(w) > 4]
+                selected = list(dict.fromkeys(words))[:8]
+                return json.dumps({
+                    "high_level_keywords": ["infectious disease", "clinical diagnosis"],
+                    "low_level_keywords": selected
+                })
+    return "{}"
 
 # =====================================================================
-# BLOCK 5: CONTEXT FORMATTER (GRAPH TRIPLES & CHUNKS)
+# BLOCK 4: CONTEXT FORMATTER (GRAPH TRIPLES & CHUNKS)
 # =====================================================================
 def format_graph_triples(entities: list[dict], relationships: list[dict], max_relations: int = 30) -> str:
+    """Formats retrieved entities and relationships into concise clinical facts."""
     lines = []
     
-    # 1. Key Medical Entities
+    # 1. Format Key Clinical Entities
     entity_lines = []
     for e in entities[:15]:
         name = e.get("entity_name", "").strip()
         etype = e.get("entity_type", "").strip()
         desc = e.get("description", "").strip()
+        # Truncate long descriptions to first sentence
         if "<SEP>" in desc:
             desc = desc.split("<SEP>")[0].strip()
         if len(desc) > 120:
@@ -251,7 +227,8 @@ def format_graph_triples(entities: list[dict], relationships: list[dict], max_re
         lines.extend(entity_lines)
         lines.append("")
 
-    # 2. Clinical Relational Triples
+    # 2. Format Clinical Relational Triples
+    # Prioritize relationships connecting to known candidate diseases or symptoms
     cand_lower = [c.lower() for c in CANDIDATE_DISEASES]
     
     def rel_priority(rel):
@@ -265,6 +242,7 @@ def format_graph_triples(entities: list[dict], relationships: list[dict], max_re
         return score
 
     sorted_relations = sorted(relationships, key=rel_priority, reverse=True)
+    
     triple_lines = []
     seen_pairs = set()
     for r in sorted_relations:
@@ -301,16 +279,18 @@ def format_graph_triples(entities: list[dict], relationships: list[dict], max_re
 
 
 def format_chunks(chunks: list[dict], max_chunks: int = 2) -> str:
+    """Formats top-N document chunks into clean reference excerpts."""
     chunk_lines = []
     for idx, c in enumerate(chunks[:max_chunks], start=1):
         content = c.get("content", "").strip()
+        # Cap chunk length to ~1200 characters to prevent context bloat
         if len(content) > 1200:
             content = content[:1197] + "..."
         chunk_lines.append(f"[Excerpt {idx}]:\n{content}\n")
     return "\n".join(chunk_lines)
 
 # =====================================================================
-# BLOCK 6: PROMPT TEMPLATES FOR DOWNSTREAM DIAGNOSTIC LLM
+# BLOCK 5: PROMPT TEMPLATES
 # =====================================================================
 SYSTEM_PROMPT = """You are an expert Infectious Disease Physician specializing in Tropical Medicine.
 Your task is to analyze an admission clinical case presentation where final diagnostic confirmations have been masked.
@@ -364,9 +344,10 @@ Return your response strictly as a JSON object with this exact schema:
     return prompt
 
 # =====================================================================
-# BLOCK 7: EVALUATION & CANONICAL MATCHING
+# BLOCK 6: EVALUATION & CANONICAL MATCHING
 # =====================================================================
 def canonical_key(term: str) -> str:
+    """Deterministic normalizer: lowercase, strip punctuation, remove hyphens."""
     if not term or not isinstance(term, str):
         return ""
     term = term.lower().strip()
@@ -385,7 +366,10 @@ def evaluate_prediction(pred_data: dict, ground_truth_list: list[str]):
     canonical_primary = canonical_key(primary)
     canonical_diffs = [canonical_key(d) for d in diffs if d]
 
+    # Top-1 Accuracy: is primary diagnosis in ground truth?
     top1_hit = 1 if any(t in canonical_primary or canonical_primary in t for t in canonical_targets) else 0
+
+    # Top-3 Accuracy: is ground truth in primary + differentials?
     all_top3 = [canonical_primary] + canonical_diffs[:2]
     top3_hit = 1 if any(any(t in cand or cand in t for t in canonical_targets) for cand in all_top3 if cand) else 0
 
@@ -398,6 +382,7 @@ def evaluate_prediction(pred_data: dict, ground_truth_list: list[str]):
     }
 
 def clean_json_response(raw_text: str) -> dict:
+    """Safely extracts JSON even if LLM surrounds it with markdown codeblocks."""
     raw_text = raw_text.strip()
     try:
         return json.loads(raw_text)
@@ -411,7 +396,7 @@ def clean_json_response(raw_text: str) -> dict:
     return {"primary_diagnosis": "", "differential_diagnoses": [], "confidence": "unknown"}
 
 # =====================================================================
-# BLOCK 8: LLM QUERY VIA OLLAMA
+# BLOCK 7: LLM QUERY VIA OLLAMA
 # =====================================================================
 async def query_ollama(session: aiohttp.ClientSession, user_prompt: str) -> dict:
     payload = {
@@ -421,7 +406,7 @@ async def query_ollama(session: aiohttp.ClientSession, user_prompt: str) -> dict
         "stream": False,
         "format": "json",
         "options": {
-            "temperature": 0.0,
+            "temperature": 0.0,  # Deterministic greedy decoding
             "num_ctx": int(os.getenv("NUM_CTX", "8192")),
         }
     }
@@ -434,17 +419,17 @@ async def query_ollama(session: aiohttp.ClientSession, user_prompt: str) -> dict
         return {"error": str(e), "primary_diagnosis": "", "differential_diagnoses": []}
 
 # =====================================================================
-# BLOCK 9: BENCHMARK EXECUTION PIPELINE
+# BLOCK 8: BENCHMARK EXECUTION PIPELINE
 # =====================================================================
 async def main():
-    tier_desc = "TIER 1 (GRAPH-ONLY RAG + CLINICAL SLOT PROMPT)" if TIER == 1 else f"TIER 2 (HYBRID + {TOP_CHUNKS} CHUNKS + CLINICAL SLOT PROMPT)"
+    tier_name = "TIER 1 (GRAPH-ONLY RAG)" if TIER == 1 else f"TIER 2 (HYBRID RAG: GRAPH + {TOP_CHUNKS} CHUNKS)"
     print(f"\n=============================================================")
-    print(f"      PHASE 1 OPTIMIZATION: {tier_desc}")
+    print(f"      {tier_name}")
     print(f"=============================================================")
     print(f"  Model               : {OLLAMA_MODEL}")
     print(f"  Total Cases         : {len(test_cases)}")
-    print(f"  Keyword Extractor   : CLINICAL SLOT-FILLING (Epidemiology + Pathognomonic + Syndromic)")
     print(f"  Candidate Classes   : {len(CANDIDATE_DISEASES)} tropical diseases")
+    print(f"  Keyword Mode        : {KEYWORD_MODE.upper()}")
     print(f"  Max Graph Triples   : {MAX_RELATIONS}")
     if TIER == 2:
         print(f"  Top Chunks Included : {TOP_CHUNKS}")
@@ -466,7 +451,7 @@ async def main():
 
     print("Initializing LightRAG storages...")
     await rag.initialize_storages()
-    print("LightRAG ready. Running Clinical Slot benchmark...\n")
+    print("LightRAG storages ready. Commencing benchmark...\n")
 
     # Check for existing progress to enable Auto-Resume
     completed_case_ids = set()
@@ -506,7 +491,7 @@ async def main():
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
 
-    global current_masked_text, current_clues
+    global current_clues
 
     async with aiohttp.ClientSession() as session:
         for i, tc in enumerate(test_cases, start=1):
@@ -518,10 +503,9 @@ async def main():
 
             masked_text = tc["masked_text"]
             ground_truth = tc["ground_truth"]
-            current_masked_text = masked_text
             current_clues = tc.get("remaining_clues", "")
 
-            # 1. Retrieve structured data with Clinical Slot Keyword Search
+            # 1. Retrieve structured data from LightRAG
             param = QueryParam(mode="hybrid", top_k=20)
             try:
                 retrieved_res = await rag.aquery_data(masked_text, param=param)
@@ -530,7 +514,7 @@ async def main():
                 retrieved_relations = data_payload.get("relationships", [])
                 retrieved_chunks = data_payload.get("chunks", [])
             except Exception as e:
-                print(f"  [Case {cid}] Retrieval failed: {e}")
+                print(f"  [Case {cid}] LightRAG retrieval failed: {e}")
                 retrieved_entities, retrieved_relations, retrieved_chunks = [], [], []
 
             # 2. Format context according to selected Tier
@@ -589,14 +573,14 @@ async def main():
             )
 
     # =====================================================================
-    # BLOCK 10: SUMMARY REPORT
+    # BLOCK 9: SUMMARY REPORT
     # =====================================================================
     total = len(results_log)
     final_top1 = sum(int(r["top1_acc"]) for r in results_log) / total * 100 if total > 0 else 0
     final_top3 = sum(int(r["top3_acc"]) for r in results_log) / total * 100 if total > 0 else 0
 
     print("\n" + "=" * 65)
-    print(f"         {tier_desc} REPORT")
+    print(f"         {tier_name} REPORT")
     print("=" * 65)
     print(f"  Model Evaluated             : {OLLAMA_MODEL}")
     print(f"  Total Test Cases Evaluated  : {total}")

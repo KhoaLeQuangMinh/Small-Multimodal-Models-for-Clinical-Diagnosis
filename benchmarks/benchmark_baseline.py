@@ -7,9 +7,12 @@ import asyncio
 # =====================================================================
 # BLOCK 1: PATHS & CONFIGURATION
 # =====================================================================
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-TEST_FILE = os.path.join(PROJECT_DIR, "test_masked_cases.jsonl")
-OUTPUT_CSV = os.getenv("OUTPUT_CSV", os.path.join(PROJECT_DIR, "baseline_results.csv"))
+BENCHMARK_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BENCHMARK_DIR, ".."))
+PROJECT_DIR = PROJECT_ROOT
+_data_test_file = os.path.join(PROJECT_ROOT, "data", "test_masked_cases.jsonl")
+TEST_FILE = os.getenv("TEST_FILE", _data_test_file if os.path.exists(_data_test_file) else os.path.join(PROJECT_ROOT, "test_masked_cases.jsonl"))
+OUTPUT_CSV = os.getenv("OUTPUT_CSV", os.path.join(BENCHMARK_DIR, "results", "baseline_results.csv"))
 
 # Model configuration
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://127.0.0.1:11434/api/generate")

@@ -23,6 +23,9 @@ env/
 dist/
 build/
 .env
+.env.*
+.env.local
+!.env.example
 
 # Image Files & Folders (NEVER commit medical images to git)
 *.jpg
@@ -47,6 +50,7 @@ Custom_Tropical_Project/2_Clinical_Verification/*
 !stage2_medcase_distillation/train_medcase_profiles.jsonl
 !data_pipeline/llm/label_additions.jsonl
 !stage1_disease_guides/canonical_triples.jsonl
+!data/test_masked_cases.jsonl
 !test_masked_cases.jsonl
 *.zip
 *.tar
@@ -58,6 +62,8 @@ Custom_Tropical_Project/2_Clinical_Verification/*
 tropical_kg_storage/
 tropical_kg_gemini_storage/
 test_storage/
+test_kg_output/
+benchmarks/test_kg_output/
 *.graphml
 kv_store_*.json
 vdb_*.json

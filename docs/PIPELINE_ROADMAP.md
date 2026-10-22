@@ -69,9 +69,9 @@ It implements the **Clinician's Dual-Brain Architecture** (grounded in cognitive
 - [x] **4.1** Implement the Structured Chain-of-Thought (CoT) diagnostic prompt (`differentials` $\to$ `rule_out` $\to$ `rule_in` $\to$ `final_diagnosis`).
 - [x] **4.2** Synthesize prompt inputs: Patient Presentation + Top 2 Patient Twins (Stage 2) + Top 15 Graph Triples (Stages 1 & 3).
 - [x] **4.3** Build the automated evaluation script (`benchmark_stage4_cot.py`) with per-case auto-saving and resume capability.
-- [ ] **4.4** Run benchmark across all 365 masked admission test cases (`test_masked_cases.jsonl`) on local Ollama (`qwen2.5:3b`).
+- [ ] **4.4** Run benchmark across all 365 masked admission test cases ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl)) on local Ollama (`qwen2.5:3b`).
 - [ ] **4.5** Compute primary metrics: Top-1 Diagnostic Accuracy, Top-3 Differential Coverage, and Melioidosis Bias Rate.
-- [ ] **4.6** Update master ablation tables in `RESULT.md`.
+- [ ] **4.6** Update master ablation tables in [`docs/RESULT.md`](RESULT.md).
 
 ---
 
@@ -79,7 +79,8 @@ It implements the **Clinician's Dual-Brain Architecture** (grounded in cognitive
 
 ```
 .
-├── PIPELINE_ROADMAP.md                 <-- Master roadmap & checklist (this file)
+├── docs/
+│   └── PIPELINE_ROADMAP.md             <-- Master roadmap & checklist (this file)
 ├── stage1_disease_guides/             <-- Stage 1: 22 Canonical Guides & LightRAG Index
 │   ├── README.md
 │   └── guides/                         <-- Individual disease guide files

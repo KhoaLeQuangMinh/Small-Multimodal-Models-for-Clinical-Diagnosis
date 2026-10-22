@@ -2,7 +2,7 @@
 ## Small Language Models (Qwen2.5-3B) with Dual-Brain Architecture for Tropical Disease Diagnosis
 
 - **Model Evaluated:** `qwen2.5:3b` (Local Ollama, greedy decoding `temperature=0.0`, `num_ctx=8192`)
-- **Dataset:** 365 verified masked clinical case admissions (`test_masked_cases.jsonl`)
+- **Dataset:** 365 verified masked clinical case admissions ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl))
 - **Disease Space:** 22 canonical tropical and neglected infectious diseases
 - **Knowledge Base:** Dual-Brain System:
   - **Semantic Brain:** Stage 1 Canonical Knowledge Graph (3,719 entities, 3,696 relationships in PubMedBERT 768-d space) + Stage 3 Soft-Weighted Triple Ranker
@@ -13,7 +13,7 @@
 
 ## 1. Executive Cross-Experiment Ablation Summary
 
-This master table tracks all 5 experimental benchmarks conducted on the 365 masked admission cohort (`test_masked_cases.jsonl`) under the **Tolerant Clinical Differential Evaluation** paradigm:
+This master table tracks all 5 experimental benchmarks conducted on the 365 masked admission cohort ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl)) under the **Tolerant Clinical Differential Evaluation** paradigm:
 
 | Experiment / Benchmark Tier | Top-1 Diagnostic Accuracy | Tolerant Top-3 Coverage (Patient F1) | Mean Reciprocal Rank (MRR) | Weighted Tolerant Precision | Weighted Tolerant Recall | Weighted Tolerant F1 | Macro Tolerant F1 | Melioidosis Attractor Rate | Status |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -195,6 +195,8 @@ Stage 2 retrieves real confirmed clinical twins from historical memory. Preceden
 ---
 
 ## 8. Pipeline Artifacts
-- **Benchmark Runner:** [`stage4_constrained_inference/benchmark_stage4_cot.py`](stage4_constrained_inference/benchmark_stage4_cot.py)
-- **Full Results CSV:** [`stage4_constrained_inference/stage4_results.csv`](stage4_constrained_inference/stage4_results.csv)
-- **Prompt Specification:** [`stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md`](stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md)
+- **Benchmark Suite & Runners:** [`benchmarks/`](../benchmarks/)
+- **Baseline & LightRAG Evaluation Results:** [`benchmarks/results/`](../benchmarks/results/)
+- **Stage 4 Dual-Brain Benchmark Runner:** [`stage4_constrained_inference/benchmark_stage4_cot.py`](../stage4_constrained_inference/benchmark_stage4_cot.py)
+- **Stage 4 Results CSV:** [`stage4_constrained_inference/stage4_results.csv`](../stage4_constrained_inference/stage4_results.csv)
+- **Stage 4 Prompt Specification:** [`stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md`](../stage4_constrained_inference/MICRO_COT_PROMPT_SPECIFICATION.md)

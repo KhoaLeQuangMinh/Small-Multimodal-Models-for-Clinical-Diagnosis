@@ -16,10 +16,12 @@ from lightrag.utils import EmbeddingFunc
 # =====================================================================
 # BLOCK 1: PATH CONFIGURATION
 # =====================================================================
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-EXTRACTED_TRIPLES_FILE = os.path.join(PROJECT_DIR, "test-batch", "extracted_triples.jsonl")
-TRAIN_CASES_FILE = os.path.join(PROJECT_DIR, "train_kg_cases.jsonl")
-WORKING_DIR = os.path.join(PROJECT_DIR, "test_kg_output")
+BENCHMARK_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BENCHMARK_DIR, ".."))
+PROJECT_DIR = PROJECT_ROOT
+EXTRACTED_TRIPLES_FILE = os.getenv("EXTRACTED_TRIPLES_FILE", os.path.join(PROJECT_ROOT, "test-batch", "extracted_triples.jsonl"))
+TRAIN_CASES_FILE = os.getenv("TRAIN_CASES_FILE", os.path.join(PROJECT_ROOT, "train_kg_cases.jsonl"))
+WORKING_DIR = os.getenv("WORKING_DIR", os.path.join(BENCHMARK_DIR, "test_kg_output"))
 
 # =====================================================================
 # BLOCK 2: LOAD DATA

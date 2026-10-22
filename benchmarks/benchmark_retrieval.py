@@ -18,9 +18,16 @@ from lightrag.utils import EmbeddingFunc
 # =====================================================================
 # BLOCK 1: PATHS & CONFIGURATION
 # =====================================================================
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-WORKING_DIR = os.path.join(PROJECT_DIR, "test_kg_output")
-TEST_FILE = os.path.join(PROJECT_DIR, "test_masked_cases.jsonl")
+BENCHMARK_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BENCHMARK_DIR, ".."))
+PROJECT_DIR = PROJECT_ROOT
+WORKING_DIR = os.getenv(
+    "WORKING_DIR",
+    os.path.join(BENCHMARK_DIR, "test_kg_output") if os.path.exists(os.path.join(BENCHMARK_DIR, "test_kg_output"))
+    else os.path.join(PROJECT_ROOT, "test_kg_output")
+)
+_data_test_file = os.path.join(PROJECT_ROOT, "data", "test_masked_cases.jsonl")
+TEST_FILE = os.getenv("TEST_FILE", _data_test_file if os.path.exists(_data_test_file) else os.path.join(PROJECT_ROOT, "test_masked_cases.jsonl"))
 # Keyword extraction mode:
 #   "clues"  : Uses the case's remaining clinical clues (instant, offline, no GPU/Ollama needed)
 #   "ollama" : Queries local Ollama model (e.g. qwen2.5:3b)
@@ -30,7 +37,8 @@ OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
 OUTPUT_CSV = os.getenv(
     "OUTPUT_CSV",
     os.path.join(
-        PROJECT_DIR,
+        BENCHMARK_DIR,
+        "results",
         f"retrieval_benchmark_{KEYWORD_MODE}_results.csv" if KEYWORD_MODE != "clues" else "retrieval_benchmark_results.csv"
     )
 )

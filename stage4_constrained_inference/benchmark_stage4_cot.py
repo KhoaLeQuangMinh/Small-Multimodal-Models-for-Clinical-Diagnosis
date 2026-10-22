@@ -128,7 +128,11 @@ TEMPERATURE = args.temperature
 NUM_CTX = args.num_ctx
 
 CANONICAL_KG_DIR = os.path.join(STAGE1_DIR, "canonical_kg")
-TEST_CASES_FILE = os.path.join(PROJECT_ROOT, "test_masked_cases.jsonl")
+_data_test_file = os.path.join(PROJECT_ROOT, "data", "test_masked_cases.jsonl")
+TEST_CASES_FILE = os.getenv(
+    "TEST_FILE",
+    _data_test_file if os.path.exists(_data_test_file) else os.path.join(PROJECT_ROOT, "test_masked_cases.jsonl")
+)
 
 # The 22 Canonical Tropical Disease Classes
 CANDIDATE_DISEASES = [

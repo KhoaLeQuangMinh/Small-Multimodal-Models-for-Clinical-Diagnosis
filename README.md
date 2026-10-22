@@ -65,7 +65,7 @@ Evaluated across the 365-case clinical test cohort with zero test leakage:
 | **Tier 2 Hybrid LightRAG** | Hybrid (Graph + Vector, 10 chunks) | Qwen2.5-3B-Instruct | 28.77% | 59.45% | ~2.1s |
 | **Tier 4 Dual-Brain Engine** | **Semantic KG + Episodic Twins (k=2)** | **Qwen2.5-3B-Instruct** | **48.22%** | **72.33%** | **~2.8s** |
 
-*For complete ablation breakdowns, see [`RESULT.md`](RESULT.md).*
+*For complete ablation breakdowns, see [`docs/RESULT.md`](docs/RESULT.md).*
 
 ---
 
@@ -73,43 +73,55 @@ Evaluated across the 365-case clinical test cohort with zero test leakage:
 
 ```text
 Datasets/
-├── README.md                                       # [You are here] Master system documentation
-├── CHANGELOG.md                                    # Chronological development ledger and update guidelines
-├── GIT_GUIDELINES.md                               # Git/GitHub developer manual and ML best practices
-├── requirements.txt                                # Python dependencies (PyTorch, transformers, LightRAG, Ollama)
-├── PIPELINE_ROADMAP.md                             # Dual-Brain architecture roadmap
-├── PROMPTS.md                                      # Clinical prompt repository
-├── STAGE_ONE_PROMPT.md                             # Clinical illness script prompt specification
-├── RESULT.md                                       # Detailed benchmark evaluation report
+├── README.md                                           # Master documentation & entry point
+├── CHANGELOG.md                                        # Chronological project ledger
+├── requirements.txt                                    # Python dependencies
+├── .gitignore                                          # VCS ignore patterns & explicit whitelists
 │
-├── build_clinical_kg.py                            # LightRAG graph builder with biomedical embeddings
-├── benchmark_rag.py                                # LightRAG multi-tier evaluation engine
-├── benchmark_rag_slot.py                           # Clinical slot-prompted LightRAG evaluation
-├── benchmark_retrieval.py                          # LightRAG retrieval hit-rate evaluator
-├── benchmark_baseline.py                           # Zero-shot SLM diagnostic baseline
-├── prepare_test_masked.py                          # Cohort splitter and test dataset preparer
+├── benchmarks/                                         # [Pillar 2] Benchmark Suite & Runners
+│   ├── README.md                                       # CLI usage guide for all evaluation tiers
+│   ├── benchmark_baseline.py                           # Tier 0: Zero-shot baseline SLM diagnostic runner
+│   ├── benchmark_rag.py                                # Tiers 1 & 2: LightRAG (Graph & Hybrid) runner
+│   ├── benchmark_rag_slot.py                           # Phase 1: Clinical slot keyword LightRAG runner
+│   ├── benchmark_retrieval.py                          # Knowledge Graph retrieval hit-rate evaluator
+│   ├── build_clinical_kg.py                            # LightRAG biomedical KG index builder
+│   ├── prepare_test_masked.py                          # Cohort splitter & masked test cohort builder
+│   └── results/                                        # Output CSV benchmark evaluations
+│       ├── baseline_results.csv
+│       ├── rag_tier1_graph_only_results.csv
+│       ├── rag_tier1_slot_prompt_results.csv
+│       ├── rag_tier2_hybrid_results.csv
+│       ├── rag_tier2_hybrid_10chunks_results.csv
+│       ├── retrieval_benchmark_results.csv
+│       └── retrieval_benchmark_ollama_results.csv
 │
-├── rag_tier1_graph_only_results.csv                # LightRAG Tier 1 evaluation results
-├── rag_tier2_hybrid_results.csv                    # LightRAG Tier 2 evaluation results
-├── rag_tier2_hybrid_10chunks_results.csv           # LightRAG Tier 2 (10 chunks) results
+├── data/                                               # Shared Canonical Evaluation Datasets
+│   ├── README.md                                       # Cohort description, masking protocol & provenance
+│   └── test_masked_cases.jsonl                         # 365 verified masked clinical admissions cohort
 │
-├── data_pipeline/                                  # [Pillar 1] Clinical curation pipeline (from smmcd-data-pipeline)
-│   ├── README.md                                   # Execution manual for data curation
-│   ├── docs/                                       # Case definitions (WHO/CDC) and references
-│   └── llm/                                        # Stages 1-5 extraction, rewrite, and grading scripts
+├── docs/                                               # Architecture, Prompt & Research Documentation
+│   ├── GIT_GUIDELINES.md                               # Team git branching & PR guidelines + Secret prevention
+│   ├── PIPELINE_ROADMAP.md                             # 4-stage Dual-Brain architecture roadmap
+│   ├── PROMPTS.md                                      # Clinical prompt repository (Tiers 0, 1, 2)
+│   └── RESULT.md                                       # Master diagnostic benchmark results report
 │
-├── stage1_disease_guides/                          # [Pillar 3 - Stage 1] 22 Disease Monographs + Canonical Semantic KG
-├── stage2_medcase_distillation/                    # [Pillar 3 - Stage 2] 1,427 Patient Vignettes & Vector Twin Memory
-├── stage3_graph_weighting/                         # [Pillar 3 - Stage 3] Hub Suppression & Degree Discounting
-├── stage4_constrained_inference/                   # [Pillar 3 - Stage 4] Constrained CoT SLM Diagnostic Engine
+├── data_pipeline/                                      # [Pillar 1] Clinical Data Curation Pipeline
+│   ├── README.md
+│   ├── docs/
+│   └── llm/
 │
-├── Custom_Tropical_Project/                        # Clinical project core & notebooks
-│   ├── 1_Data_Exploration/                         # Cohort derivation & EDA notebooks
-│   ├── 2_Clinical_Verification/                    # Gold dataset, DOID taxonomy, download instructions
-│   └── 4_Literature_and_Materials/                 # Foundational literature PDFs
+├── stage1_disease_guides/                              # [Pillar 3 - Stage 1] 22 Disease Monographs & Semantic KG
+├── stage2_medcase_distillation/                        # [Pillar 3 - Stage 2] 1,427 Patient Vignettes & Episodic Twins
+├── stage3_graph_weighting/                             # [Pillar 3 - Stage 3] Hub Suppression & Degree Discounting
+├── stage4_constrained_inference/                       # [Pillar 3 - Stage 4] Constrained CoT SLM Diagnostic Engine
 │
-├── Official_MultiCaRe/                             # Upstream MultiCaRe reference dataset
-└── scripts/                                        # Multi-account evaluation split/merge utilities
+├── Custom_Tropical_Project/                            # Clinical project core & notebooks
+│   ├── 1_Data_Exploration/                             # Cohort derivation & EDA notebooks
+│   ├── 2_Clinical_Verification/                        # Gold dataset, DOID taxonomy, download instructions
+│   └── 4_Literature_and_Materials/                     # Foundational literature PDFs
+│
+├── Official_MultiCaRe/                                 # Upstream MultiCaRe reference dataset
+└── scripts/                                            # Multi-account evaluation split/merge utilities
 ```
 
 ---
@@ -149,13 +161,13 @@ for t in twins:
 #### B. LightRAG Knowledge Graph Benchmarks
 ```bash
 # Tier 1 (Graph-Only RAG):
-python3 benchmark_rag.py --tier 1 --max-cases 5
+python3 benchmarks/benchmark_rag.py --tier 1 --max-cases 5
 
 # Tier 2 (Hybrid Graph + Vector RAG, 10 chunks):
-python3 benchmark_rag.py --tier 2 --top-chunks 10 --max-cases 5
+python3 benchmarks/benchmark_rag.py --tier 2 --top-chunks 10 --max-cases 5
 
 # Retrieval Hit-Rate Evaluation:
-python3 benchmark_retrieval.py
+python3 benchmarks/benchmark_retrieval.py
 ```
 
 #### C. Dual-Brain Constrained Inference Engine (Stage 4)
@@ -169,5 +181,8 @@ python3 benchmark_stage4_cot.py --max-cases 5
 ## 📖 Team Guidelines & Contributing
 
 All contributors, student researchers, and AI agents must review and follow:
-- **`GIT_GUIDELINES.md`**: Git/GitHub branch conventions (`feature/*`, `bugfix/*`, `experiment/*`), safe rebasing, force-push limits, and ML research best practices (zero test leakage, fixed seeds, multi-metric evaluation).
-- **`CHANGELOG.md`**: Project version ledger with strict formatting rules for logging updates.
+- **[`docs/GIT_GUIDELINES.md`](docs/GIT_GUIDELINES.md)**: Git/GitHub branch conventions (`feature/*`, `bugfix/*`, `experiment/*`), credential security & secret leak prevention, safe rebasing, force-push limits, and ML research best practices (zero test leakage, fixed seeds, multi-metric evaluation).
+- **[`docs/PIPELINE_ROADMAP.md`](docs/PIPELINE_ROADMAP.md)**: Architectural roadmap and development checklist.
+- **[`docs/PROMPTS.md`](docs/PROMPTS.md)**: Master repository for clinical prompts.
+- **[`docs/RESULT.md`](docs/RESULT.md)**: Master diagnostic accuracy and ablation evaluation report.
+- **[`CHANGELOG.md`](CHANGELOG.md)**: Project version ledger with strict formatting rules for logging updates.

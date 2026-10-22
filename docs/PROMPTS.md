@@ -8,7 +8,7 @@ This document serves as the single source of truth for all prompts utilized acro
 ## 1. Diagnostic Prompts (Downstream Diagnostic LLM: `qwen2.5:3b`)
 
 ### 1.1 Tier 0: Baseline Zero-Shot Prompt (No RAG)
-*Script: `benchmark_baseline.py`*
+*Script: `benchmarks/benchmark_baseline.py`*
 
 #### System Prompt:
 ```text
@@ -73,7 +73,7 @@ Return your response strictly as a JSON object with this exact schema:
 ---
 
 ### 1.2 Tier 1: Graph-Only RAG Prompt
-*Script: `benchmark_rag.py --tier 1`*
+*Script: `benchmarks/benchmark_rag.py --tier 1`*
 
 #### System Prompt:
 ```text
@@ -143,7 +143,7 @@ Return your response strictly as a JSON object with this exact schema:
 ---
 
 ### 1.3 Tier 2: Hybrid RAG Prompt (Graph + Text Chunks)
-*Script: `benchmark_rag.py --tier 2 --top-chunks 2`*
+*Script: `benchmarks/benchmark_rag.py --tier 2 --top-chunks 2`*
 
 #### System Prompt:
 *(Identical to Tier 1 System Prompt)*

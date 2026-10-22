@@ -152,8 +152,60 @@ Do not evaluate clinical models on raw accuracy alone:
   1. A naive baseline (majority class or zero-shot unprompted SLM).
   2. Standard RAG (dense vector retrieval).
   3. Graph-only RAG (pure triple matching).
-- Document performance deltas in `RESULT.md`.
+- Document performance deltas in `docs/RESULT.md`.
 
 ### 5. Data vs. Code Discipline
 - **NEVER** commit raw medical images (`.jpg`, `.png`, `.webp`), bulk PMC parquets (>50MB), or vector database storage caches to Git.
-- Large datasets belong in local storage or cloud buckets. Git must only track curated scripts, monographs, schema definitions, and explicitly whitelisted benchmark JSONLs (`test_masked_cases.jsonl`, `train_medcase_profiles.jsonl`).
+- Large datasets belong in local storage or cloud buckets. Git must only track curated scripts, monographs, schema definitions, and explicitly whitelisted benchmark JSONLs (`data/test_masked_cases.jsonl`, `stage2_medcase_distillation/train_medcase_profiles.jsonl`).
+
+---
+
+## 6. Credential Security & Secret Leak Prevention
+
+Preventing credential leaks is a non-negotiable security requirement. Public GitHub repositories and commit histories are continuously monitored by automated threat actors.
+
+### 1. Mandatory Environment Variable Loading
+- **NEVER hardcode API keys, access tokens, passwords, or credentials** in Python scripts, Jupyter notebooks (`.ipynb`), configuration files, or documentation.
+- All API keys (`GEMINI_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `HUGGINGFACE_TOKEN`, etc.) must strictly be loaded from environment variables or untracked local `.env` files:
+  ```python
+  import os
+  from dotenv import load_dotenv
+
+  load_dotenv()  # Loads variables from local untracked .env file
+  api_key = os.getenv("GEMINI_API_KEY")
+  if not api_key:
+      raise ValueError("GEMINI_API_KEY environment variable is not set. Please set it in your environment or .env file.")
+  ```
+
+### 2. Standardized `.env.example`
+- Keep a clean, tracked `.env.example` file in the repository root demonstrating variable names without secret values:
+  ```bash
+  # .env.example - Copy to .env and fill in real values
+  GEMINI_API_KEY=your_gemini_api_key_here
+  OPENAI_API_KEY=your_openai_api_key_here
+  ANTHROPIC_API_KEY=your_anthropic_api_key_here
+  OLLAMA_URL=http://127.0.0.1:11434/api/generate
+  ```
+
+### 3. Automated Secret Scanning Before Commit
+Always inspect files staged for commit or run a regex scan for common credential signatures:
+```bash
+# Scan working tree and staged index for known secret patterns:
+git grep -I -E "AIzaSy[0-9A-Za-z_-]{33}|sk-proj-[0-9A-Za-z_-]{40,}|ghp_[0-9A-Za-z]{36}"
+```
+To automate this locally, install a pre-commit hook in `.git/hooks/pre-commit`:
+```bash
+#!/bin/bash
+# Pre-commit hook to block hardcoded API keys
+SECRET_PATTERN="AIzaSy[0-9A-Za-z_-]{33}|sk-proj-[0-9A-Za-z_-]{40,}|ghp_[0-9A-Za-z]{36}"
+if git diff --cached -S"AIzaSy" --name-only | xargs grep -E "$SECRET_PATTERN" 2>/dev/null; then
+    echo "ERROR: Attempting to commit an API key or token! Commit rejected."
+    exit 1
+fi
+```
+
+### 4. Incident Response: What to Do if an API Key is Leaked
+If an API key is ever committed (even locally or on a branch):
+1. **Immediate Revocation (Priority 1):** Go directly to the cloud provider console (e.g. Google Cloud Console / Google AI Studio / OpenAI Platform) and immediately **delete or revoke the compromised key**. Never assume that deleting the commit or file removes the risk, as commit objects persist in Git packfiles.
+2. **Rotate Credentials:** Generate a replacement key and update local `.env` files.
+3. **Notify Team:** Inform the repository maintainers immediately so audit logs can be reviewed.
