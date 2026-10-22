@@ -24,12 +24,14 @@ import argparse
 import asyncio
 import aiohttp
 import numpy as np
-import torch
-
 # Prevent PyTorch threading conflicts on macOS ARM64
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["OMP_NUM_THREADS"] = "1"
-torch.set_num_threads(1)
+try:
+    import torch
+    torch.set_num_threads(1)
+except ImportError:
+    pass
 
 # Dynamically resolve project directories
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -275,7 +277,7 @@ def evaluate_prediction(pred_data: dict, ground_truth_list: list[str]) -> dict:
     canonical_diffs = [canonical_key(str(d)) for d in diffs if d]
 
     # Top-1 Accuracy: is final_diagnosis matching ground truth?
-    top1_hit = 1 if any(t in canonical_final or canonical_final in t for t in canonical_targets) else 0
+    top1_hit = 1 if (canonical_final and any(t in canonical_final or canonical_final in t for t in canonical_targets)) else 0
 
     # Top-3 Accuracy: is ground truth present in final_diagnosis or differential hypotheses?
     all_candidates = [canonical_final] + canonical_diffs[:3]

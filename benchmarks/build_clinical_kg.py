@@ -2,12 +2,14 @@ import os
 import json
 import asyncio
 import numpy as np
-import torch
-
 # Prevent PyTorch threading conflicts on macOS ARM64
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["OMP_NUM_THREADS"] = "1"
-torch.set_num_threads(1)
+try:
+    import torch
+    torch.set_num_threads(1)
+except ImportError:
+    pass
 
 from sentence_transformers import SentenceTransformer
 from lightrag import LightRAG
@@ -26,15 +28,28 @@ WORKING_DIR = os.getenv("WORKING_DIR", os.path.join(BENCHMARK_DIR, "test_kg_outp
 # =====================================================================
 # BLOCK 2: LOAD DATA
 # =====================================================================
-with open(EXTRACTED_TRIPLES_FILE, "r", encoding="utf-8") as f:
-    extracted_data = {item["case_id"]: item for line in f if (item := json.loads(line))}
+extracted_data = {}
+cases_dict = {}
 
-with open(TRAIN_CASES_FILE, "r", encoding="utf-8") as f:
-    cases_dict = {
+def load_data():
+    if not os.path.exists(EXTRACTED_TRIPLES_FILE):
+        raise FileNotFoundError(f"Extracted triples file not found: {EXTRACTED_TRIPLES_FILE}")
+    if not os.path.exists(TRAIN_CASES_FILE):
+        raise FileNotFoundError(f"Training cases file not found: {TRAIN_CASES_FILE}")
+
+    with open(EXTRACTED_TRIPLES_FILE, "r", encoding="utf-8") as f:
+        data = {item["case_id"]: item for line in f if (item := json.loads(line))}
+
+    cases = {
         item["case_id"]: item
-        for line in f
-        if (item := json.loads(line))["case_id"] in extracted_data
+        for line in open(TRAIN_CASES_FILE, "r", encoding="utf-8")
+        if (item := json.loads(line))["case_id"] in data
     }
+
+    for cid in data:
+        data[cid]["extraction"] = normalise_extraction(data[cid]["extraction"])
+
+    return data, cases
 
 # =====================================================================
 # BLOCK 3: ENTITY NAME NORMALISATION
@@ -79,9 +94,6 @@ def normalise_extraction(extraction: dict) -> dict:
 
     return {"entities": normalised_entities, "relationships": normalised_relationships}
 
-for cid in extracted_data:
-    extracted_data[cid]["extraction"] = normalise_extraction(extracted_data[cid]["extraction"])
-
 # =====================================================================
 # BLOCK 4: EMBEDDING FUNCTION
 # =====================================================================
@@ -118,6 +130,9 @@ async def my_llm_func(prompt: str, **kwargs) -> str:
 # BLOCK 6: LIGHTRAG INGESTION PIPELINE
 # =====================================================================
 async def main():
+    global extracted_data, cases_dict
+    extracted_data, cases_dict = load_data()
+
     rag = LightRAG(
         working_dir=WORKING_DIR,
         llm_model_func=my_llm_func,

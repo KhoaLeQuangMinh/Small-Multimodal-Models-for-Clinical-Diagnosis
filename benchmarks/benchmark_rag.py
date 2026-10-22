@@ -6,12 +6,14 @@ import argparse
 import asyncio
 import aiohttp
 import numpy as np
-import torch
-
 # Prevent PyTorch threading conflicts on macOS ARM64
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["OMP_NUM_THREADS"] = "1"
-torch.set_num_threads(1)
+try:
+    import torch
+    torch.set_num_threads(1)
+except ImportError:
+    pass
 
 from sentence_transformers import SentenceTransformer
 from lightrag import LightRAG, QueryParam
@@ -367,7 +369,7 @@ def evaluate_prediction(pred_data: dict, ground_truth_list: list[str]):
     canonical_diffs = [canonical_key(d) for d in diffs if d]
 
     # Top-1 Accuracy: is primary diagnosis in ground truth?
-    top1_hit = 1 if any(t in canonical_primary or canonical_primary in t for t in canonical_targets) else 0
+    top1_hit = 1 if (canonical_primary and any(t in canonical_primary or canonical_primary in t for t in canonical_targets)) else 0
 
     # Top-3 Accuracy: is ground truth in primary + differentials?
     all_top3 = [canonical_primary] + canonical_diffs[:2]
@@ -487,6 +489,7 @@ async def main():
 
     # If starting fresh, write header
     if not os.path.exists(OUTPUT_CSV) or len(completed_case_ids) == 0:
+        os.makedirs(os.path.dirname(os.path.abspath(OUTPUT_CSV)), exist_ok=True)
         with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()

@@ -4,12 +4,14 @@ import csv
 import json
 import asyncio
 import numpy as np
-import torch
-
 # Prevent PyTorch threading conflicts on macOS ARM64
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["OMP_NUM_THREADS"] = "1"
-torch.set_num_threads(1)
+try:
+    import torch
+    torch.set_num_threads(1)
+except ImportError:
+    pass
 
 from sentence_transformers import SentenceTransformer
 from lightrag import LightRAG, QueryParam
@@ -225,7 +227,7 @@ def evaluate_case(retrieved_text: str, ground_truth_list: list[str], candidates_
 
     # Was the true disease selected as top candidate?
     canonical_top = canonical_key(top_cand)
-    candidate_acc = 1 if any(t in canonical_top or canonical_top in t for t in canonical_targets) else 0
+    candidate_acc = 1 if (canonical_top and any(t in canonical_top or canonical_top in t for t in canonical_targets)) else 0
 
     # Evidence Margin
     target_score = candidate_scores.get(ground_truth_list[0], 0)
@@ -315,6 +317,7 @@ async def main():
     # =====================================================================
     # BLOCK 7: SAVE CSV & PRINT SUMMARY REPORT
     # =====================================================================
+    os.makedirs(os.path.dirname(os.path.abspath(OUTPUT_CSV)), exist_ok=True)
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(results_log[0].keys()))
         writer.writeheader()

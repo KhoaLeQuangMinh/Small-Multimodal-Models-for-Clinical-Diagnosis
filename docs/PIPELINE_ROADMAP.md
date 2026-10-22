@@ -71,7 +71,7 @@ It implements the **Clinician's Dual-Brain Architecture** (grounded in cognitive
 - [x] **4.3** Build the automated evaluation script (`benchmark_stage4_cot.py`) with per-case auto-saving and resume capability.
 - [ ] **4.4** Run benchmark across all 365 masked admission test cases ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl)) on local Ollama (`qwen2.5:3b`).
 - [ ] **4.5** Compute primary metrics: Top-1 Diagnostic Accuracy, Top-3 Differential Coverage, and Melioidosis Bias Rate.
-- [ ] **4.6** Update master ablation tables in [`docs/RESULT.md`](RESULT.md).
+- [ ] **4.6** Update master ablation tables in [`RESULT.md`](RESULT.md).
 
 ---
 

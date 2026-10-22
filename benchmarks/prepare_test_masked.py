@@ -140,6 +140,7 @@ def main():
     # =====================================================================
     # SAVE OUTPUT
     # =====================================================================
+    os.makedirs(os.path.dirname(os.path.abspath(OUTPUT_FILE)), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         for rec in extracted_records:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")

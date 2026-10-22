@@ -1,7 +1,7 @@
 # Stage 4: Constrained Diagnostic CoT for Small Language Model
 
 ## 🎯 Objective
-Formulate and execute a **Constrained Diagnostic Chain-of-Thought (CoT)** inference pipeline tailored for the Small Language Model (`qwen2.5:3b`), evaluating all **365 masked admission test cases** (`test_masked_cases.jsonl`) against the weighted clinical knowledge graph.
+Formulate and execute a **Constrained Diagnostic Chain-of-Thought (CoT)** inference pipeline tailored for the Small Language Model (`qwen2.5:3b`), evaluating all **365 masked admission test cases** ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl)) against the weighted clinical knowledge graph.
 
 ---
 
@@ -74,4 +74,4 @@ CONSTRAINTS:
      - Tier 1 Graph-Only (35.07% Top-1, 47.95% Top-3)
      - Tier 2 Hybrid RAG (39.73% Top-1, 52.60% Top-3)
 4. **Publish Master Report:**
-   - Document complete per-disease confusion matrices and differential capture rates in `RESULT.md`.
+   - Document complete per-disease confusion matrices and differential capture rates in [`docs/RESULT.md`](../docs/RESULT.md).

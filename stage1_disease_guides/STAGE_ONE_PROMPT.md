@@ -2,7 +2,7 @@
 
 This prompt is designed to extract high-density, discriminative clinical Knowledge Graph profiles from comprehensive disease monographs and authoritative clinical literature (WHO, CDC, Europe PMC Landmark Reviews).
 
-It is strictly grounded in **Cognitive Illness Script Theory** (*Schmidt & Boshuizen, 1990; Bowen, NEJM 2006*) and **Bayesian Likelihood Thresholds** (*Pauker & Kassirer, NEJM 1980*), and is 100% plug-and-play compatible with the LightRAG ingestion engine in `build_clinical_kg.py`.
+It is strictly grounded in **Cognitive Illness Script Theory** (*Schmidt & Boshuizen, 1990; Bowen, NEJM 2006*) and **Bayesian Likelihood Thresholds** (*Pauker & Kassirer, NEJM 1980*), and is 100% plug-and-play compatible with the LightRAG ingestion engine in [`benchmarks/build_clinical_kg.py`](../benchmarks/build_clinical_kg.py).
 
 ---
 

@@ -126,7 +126,7 @@ def evaluate_prediction(pred_data: dict, ground_truth_list: list[str]):
     canonical_diffs = [canonical_key(d) for d in diffs if d]
 
     # Top-1 Accuracy: is primary diagnosis in ground truth?
-    top1_hit = 1 if any(t in canonical_primary or canonical_primary in t for t in canonical_targets) else 0
+    top1_hit = 1 if (canonical_primary and any(t in canonical_primary or canonical_primary in t for t in canonical_targets)) else 0
 
     # Top-3 Accuracy: is ground truth in primary + differentials?
     all_top3 = [canonical_primary] + canonical_diffs[:2]
@@ -202,6 +202,7 @@ async def main():
     # =====================================================================
     # BLOCK 6: SAVE CSV & SUMMARY REPORT
     # =====================================================================
+    os.makedirs(os.path.dirname(os.path.abspath(OUTPUT_CSV)), exist_ok=True)
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         fieldnames = ["case_id", "ground_truth", "predicted_primary", "predicted_diffs", "confidence", "top1_acc", "top3_acc", "raw_response"]
         writer = csv.DictWriter(f, fieldnames=fieldnames)

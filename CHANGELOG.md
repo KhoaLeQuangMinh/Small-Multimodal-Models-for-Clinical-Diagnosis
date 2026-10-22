@@ -41,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **2026-10-22 12:30:00 +07:00** | `[refactor]` `(architecture)` Modularized repository root: moved 6 benchmark/KG scripts to `benchmarks/`, 7 CSV evaluation tables to `benchmarks/results/`, 365-case test cohort to `data/`, and documentation to `docs/`; anchored paths via `PROJECT_ROOT` without altering business logic. (Agent Antigravity)
 - **2026-10-22 12:30:00 +07:00** | `[infra]` `(security)` Hardened credential security: expanded `.gitignore` environment variable patterns and LightRAG storage ignores, added Section 6 Credential Security & Secret Leak Prevention in `docs/GIT_GUIDELINES.md`, and completed a clean forensic audit for API keys in active trees. (Agent Antigravity)
 - **2026-10-22 12:30:00 +07:00** | `[docs]` `(benchmarks)` Added `benchmarks/README.md` CLI invocation guide and `data/README.md` cohort schema specification; updated master `README.md` and `docs/RESULT.md`. (Agent Antigravity)
+- **2026-10-22 12:50:00 +07:00** | `[fix]` `(evaluation)` Patched fatal false-positive evaluation bug in benchmark runners where empty predictions matched non-empty ground truth targets, added automatic parent directory creation for CSV exports, guarded PyTorch imports for environments without torch, and refreshed relative markdown links across stage folders. (Agent Antigravity)
 
 ---
 

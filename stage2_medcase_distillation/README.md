@@ -76,7 +76,7 @@ Using the known ground-truth labels in `train_kg_cases.jsonl`, Gemini 1.5 Flash 
 > [!IMPORTANT]
 > **Gemini Flash MUST anchor only on admission-accessible clinical findings.**
 > 
-> In our unseen test set (`test_masked_cases.jsonl`), all confirmatory PCR, serology titers, and biopsy organisms are masked with `[MASK]`.
+> In our unseen test set ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl)), all confirmatory PCR, serology titers, and biopsy organisms are masked with `[MASK]`.
 > If the training profile states: *"Anchor finding: Confirmed because PCR grew Burkholderia pseudomallei"*, a test patient at admission will never match this profile.
 > 
 > Distillation must anchor strictly on:

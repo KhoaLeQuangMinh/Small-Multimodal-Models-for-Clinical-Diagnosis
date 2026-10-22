@@ -190,15 +190,15 @@ Preventing credential leaks is a non-negotiable security requirement. Public Git
 ### 3. Automated Secret Scanning Before Commit
 Always inspect files staged for commit or run a regex scan for common credential signatures:
 ```bash
-# Scan working tree and staged index for known secret patterns:
-git grep -I -E "AIzaSy[0-9A-Za-z_-]{33}|sk-proj-[0-9A-Za-z_-]{40,}|ghp_[0-9A-Za-z]{36}"
+# Scan working tree and staged index for known secret patterns (excluding guidelines):
+git grep -I -E "AIza[0-9A-Za-z_-]{35}|sk-[a-zA-Z0-9_-]{20,}|gh[p]_[0-9A-Za-z]{20,}" -- ':!docs/GIT_GUIDELINES.md'
 ```
 To automate this locally, install a pre-commit hook in `.git/hooks/pre-commit`:
 ```bash
 #!/bin/bash
 # Pre-commit hook to block hardcoded API keys
-SECRET_PATTERN="AIzaSy[0-9A-Za-z_-]{33}|sk-proj-[0-9A-Za-z_-]{40,}|ghp_[0-9A-Za-z]{36}"
-if git diff --cached -S"AIzaSy" --name-only | xargs grep -E "$SECRET_PATTERN" 2>/dev/null; then
+SECRET_PATTERN="AIza[0-9A-Za-z_-]{35}|sk-[a-zA-Z0-9_-]{20,}|gh[p]_[0-9A-Za-z]{20,}"
+if git diff --cached --name-only | grep -v "docs/GIT_GUIDELINES.md" | xargs grep -E "$SECRET_PATTERN" 2>/dev/null; then
     echo "ERROR: Attempting to commit an API key or token! Commit rejected."
     exit 1
 fi
