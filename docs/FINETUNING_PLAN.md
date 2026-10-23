@@ -45,6 +45,7 @@ To ensure 100% academic transparency, every concept, mechanism, and engineering 
 | **Multi-Wave Subagent Pipeline Integration** (Mapping existing repository subagents `mask_agent`, `css_agent`, `casedef_agent`, `rewrite_agent` to sequential waves) | `[AGENT THINKING]` | Synthesis connecting the team's existing data pipeline codebase with the TA's 4-step framework |
 | **80% RAFT / 20% Retrieval-Dropout Hybrid Distribution** (Combining RAFT with zero-context dropout to allow graceful offline rural health post execution) | `[AGENT THINKING]` | Engineering design decision combining RAFT paper principles with edge medical deployment constraints |
 | **Dual-Brain Memory Ingestion into RAFT** (Using Stage 1/3 monographs as $D^*$ and Stage 2 Patient Twins as precedent context) | `[AGENT THINKING]` | Bridging Khoa's existing Dual-Brain cognitive architecture into the fine-tuning data generator |
+| **Dynamic Prompt Assembly Engine** (Concatenating Case Data + RAG Triples + Section 5.1 `<think>` Directives + 4-Step Schema into Final Teacher Prompt) | `[AGENT THINKING]`<br/>`[FROM TA SLIDE]` | Section 5.3 pipeline combining TA Slide 4/7 with RAFT $(Q, D^*, D_{\text{distract}})$ context |
 | **Modular 3-Notebook Sequence** (`1_prepare_raft_sft_dataset.ipynb`, `2_qlora_finetuning_qwen3b.ipynb`, `3_evaluate_reasoning_recall.ipynb`) | `[AGENT THINKING]` | Structured experimental layout following the `notebook-guidance` and `managing-python-dependencies` skills |
 
 ---
@@ -318,6 +319,138 @@ The distilled output strictly follows the schema specified by TA Le Viet Tin (Sl
   ]
 }
 ```
+
+### 5.3 The Dynamic Prompt Assembly Engine (Case Data + Context + Deliberation $\rightarrow$ Final Teacher Prompt) `[AGENT THINKING]` & `[FROM TA SLIDE]`
+
+To prepare each clinical case for the Teacher LLM / subagent, the pipeline executes an automated **Dynamic Prompt Builder** ([`Datasets/data_pipeline/llm/build_distillation_prompts.py`](../data_pipeline/llm/build_distillation_prompts.py)).
+
+This script takes the case attributes, retrieves the RAG knowledge, injects Section 5.1's deliberation directives, and appends the 4-step schema to form the **exact prompt given to the subagent to produce the thinking process**.
+
+```mermaid
+flowchart TD
+    subgraph Inputs["1. Individual Case & RAG Inputs"]
+        A["Case Data (triage_prompt + disease + casedef criteria)"]
+        B["Stage 1/3 Oracle KG Triples (D*)"]
+        C["Look-Alike Distractor Triples (D_distract)"]
+        D["Stage 2 Patient Twin Precedent"]
+    end
+
+    subgraph Assembly["2. Dynamic Prompt Builder (build_distillation_prompts.py)"]
+        Builder["Assembly Engine concatenates:<br/>Role + Case + Context + Section 5.1 &lt;think&gt; + Section 5.2 Schema"]
+    end
+
+    subgraph Prompt["3. Assembled Teacher Prompt"]
+        FP["batch_XXX/case_YYY_prompt.json"]
+    end
+
+    subgraph Execution["4. Antigravity Subagent Execution"]
+        Subagent["Teacher Subagent (Gemini 3.8 Flash / Pro)"]
+        Output["Distilled Clinical CoT (<think> Deliberation + 4-Step JSON)"]
+    end
+
+    A --> Builder
+    B --> Builder
+    C --> Builder
+    D --> Builder
+    Builder --> FP
+    FP --> Subagent
+    Subagent --> Output
+```
+
+#### Exact Anatomy of the Assembled Teacher Prompt
+
+Below is the exact prompt string assembled for each individual case:
+
+```text
+================================================================================
+PART 1: CLINICAL ROLE & CONTEXT [FROM TA SLIDE 4 & 7]
+================================================================================
+You are an expert infectious disease clinician-educator modeling NEJM Clinicopathologic Conferences.
+Your objective is to generate an authoritative clinical diagnostic reasoning chain that bridges admission presentation to the confirmed diagnosis.
+
+Patient Case ID: {case_id}
+True Verified Disease: {primary_disease} ({subtype_info})
+Confirmation Strength Tier: {css_tier} ({casedef_level})
+
+================================================================================
+PART 2: CLINICAL ADMISSION VIGNETTE [FROM GOLD DATASET]
+================================================================================
+The following is the objective admission presentation stopping strictly at hospital triage:
+{triage_prompt}
+
+================================================================================
+PART 3: RETRIEVED KNOWLEDGE GRAPH TRIPLES & PRECEDENTS (RAFT Context) [FROM PAPER IN SLIDE]
+================================================================================
+[Oracle Knowledge Graph Triples (D*)]:
+{oracle_graph_triples}
+
+[Look-Alike Distractor Triples (D_distract)]:
+{distractor_graph_triples}
+
+[Historical Patient Twin Precedent]:
+- Patient Twin Case ID: {patient_twin_id} ({patient_twin_disease})
+- Vignette: {patient_twin_summary}
+
+================================================================================
+PART 4: MANDATORY COGNITIVE DELIBERATION (<think> Directives from Section 5.1)
+================================================================================
+Before generating your final structured differential diagnosis, you MUST deliberate inside <think>...</think> tags:
+1. Core Tension:
+   - What makes this case presentation atypical, challenging, or easily misdiagnosed?
+   - What high-probability mimics (e.g. {distractor_disease_1}, {distractor_disease_2}) present with identical syndromic signs?
+2. Breakpoint Verification:
+   - Confirm that this vignette terminates strictly at admission triage.
+   - Confirm that post-admission microbiology cultures, biopsies, specific serologies, and targeted treatments are completely masked.
+3. Differential Discrimination Logic:
+   - What pertinent negative signs or laboratory markers rule out the dangerous mimics?
+   - What unique pathognomonic sign, geographic exposure vector, or incubation timeline anchors the true diagnosis ({primary_disease})?
+4. Knowledge Graph Alignment:
+   - How do retrieved canonical disease triples and WHO/CDC case definition criteria confirm this diagnosis?
+
+================================================================================
+PART 5: MANDATORY OUTPUT SCHEMA (TA 4-Step Clinical Framework from Section 5.2)
+================================================================================
+Output strict JSON matching the schema below:
+{
+  "reasoning": {
+    "step1_evidence_assembly": {
+      "key_positives": "...",
+      "pertinent_negatives": "...",
+      "epidemiology_and_exposures": "...",
+      "time_course": "...",
+      "severity_markers": "..."
+    },
+    "step2_symptom_pattern_recognition": {
+      "anatomical_localization": "...",
+      "syndromic_mechanism": "...",
+      "probability_shift": "..."
+    },
+    "step3_competing_diagnoses": [
+      {
+        "candidate": "...",
+        "supporting_evidence": "...",
+        "opposing_evidence": "...",
+        "tag": "Leading | [Must Not Miss] | Secondary"
+      }
+    ],
+    "step4_final_diagnostic_anchor": {
+      "primary_diagnosis": "{primary_disease}",
+      "clinical_justification": "...",
+      "remaining_uncertainty": "..."
+    }
+  },
+  "differential_diagnosis": [
+    "Rank 1: {primary_disease} | Supporting: ... | Against: ...",
+    "Rank 2: ... | Supporting: ... | Against: ...",
+    "Rank 3: ... | Supporting: ... | Against: ..."
+  ]
+}
+```
+
+#### Where and When It Runs:
+1. **Script:** [`Datasets/data_pipeline/llm/build_distillation_prompts.py`](../data_pipeline/llm/build_distillation_prompts.py).
+2. **Timing:** Executed immediately after train/test cohort partitioning.
+3. **Output:** Creates batch folders (`distillation_batches/batch_001/` to `batch_098/`), where each case has its fully rendered prompt ready to be dispatched to Antigravity subagents.
 
 ---
 
