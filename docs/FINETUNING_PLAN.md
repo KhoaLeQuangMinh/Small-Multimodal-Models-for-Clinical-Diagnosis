@@ -42,6 +42,8 @@ To ensure 100% academic transparency, every concept, mechanism, and engineering 
 | **Domain Adaptation for Rare Medical Conditions** | `[FROM EXTERNAL PAPER]` | *Med-PaLM* (Singhal et al., Nature, 2023) |
 | **Native Antigravity Subagent Orchestration** (Zero external cloud API fees; running batch distillation via autonomous Antigravity subagents) | `[AGENT THINKING]` | Architectural design requested by user and designed for local Antigravity environment |
 | **Strict Zero-Leakage Cohort Partitioning** (Detecting that 255 of the 1,236 Gold cases overlap with the 365 test set; partitioning into 981 safe train vs 255 test) | `[AGENT THINKING]` | Empirical set-intersection analysis of workspace files (`dataset_gold_1236.jsonl` vs `test_masked_cases.jsonl`) |
+| **Stratified Train/Val Split & Anti-Attractor Rebalancing** (Splitting 981 safe cases into 881 Train / 100 Val; capping Tuberculosis at 75 diverse cases and 3x–5x RAFT-upsampling extreme long-tail classes $<15$ cases) | `[AGENT THINKING]` | Empirical class distribution audit of the 981 safe pool (`TB=416` vs `Cholera=1`) |
+| **Dual-Stage Teacher-to-Student Prompt Transformation** (Stripping Teacher `<think>` scratchpads and merging `[Oracle]`/`[Distractor]` headers into a shuffled neutral `[Retrieved Clinical Knowledge Triples]` block) | `[AGENT THINKING]`<br/>`[FROM PAPER IN SLIDE]` | Prevents ground-truth header shortcut learning at inference time (*RAFT*, Zhang et al., 2024) |
 | **Multi-Wave Subagent Pipeline Integration** (Mapping existing repository subagents `mask_agent`, `css_agent`, `casedef_agent`, `rewrite_agent` to sequential waves) | `[AGENT THINKING]` | Synthesis connecting the team's existing data pipeline codebase with the TA's 4-step framework |
 | **80% RAFT / 20% Retrieval-Dropout Hybrid Distribution** (Combining RAFT with zero-context dropout to allow graceful offline rural health post execution) | `[AGENT THINKING]` | Engineering design decision combining RAFT paper principles with edge medical deployment constraints |
 | **Dual-Brain Memory Ingestion into RAFT** (Using Stage 1/3 monographs as $D^*$ and Stage 2 Patient Twins as precedent context) | `[AGENT THINKING]` | Bridging Khoa's existing Dual-Brain cognitive architecture into the fine-tuning data generator |
@@ -88,25 +90,40 @@ This plan strictly implements the roadmap from TA Lecture 4:
 * **Data Version 2 ("Current Gold 1,236"):** [`Custom_Tropical_Project/2_Clinical_Verification/dataset_gold_1236.jsonl`](../Custom_Tropical_Project/2_Clinical_Verification/dataset_gold_1236.jsonl) ($N = 1,236$ verified cases: 936 Confirmed, 318 Probable).
 * **Upcoming Refined Version (Friend's In-Progress Data):** Expands coverage toward ~1,700 cases, rebalances low-support tropical classes (e.g. Cholera, VHF, Mycetoma), and binds multimodal image panels.
 
-### 2.2 Strict Zero-Leakage Cohort Partitioning `[AGENT THINKING]`
-Our empirical cross-reference reveals that **255 cases in `dataset_gold_1236.jsonl` are present in the frozen 365 benchmark test set** (`data/test_masked_cases.jsonl`). Training on the raw gold file without filtering would cause a **69.86% test set leakage**.
+### 2.2 Strict Zero-Leakage Cohort Partitioning & Anti-Attractor Rebalancing `[AGENT THINKING]`
+Our empirical cross-reference reveals that **255 cases in `dataset_gold_1236.jsonl` are present in the frozen 365 benchmark test set** (`data/test_masked_cases.jsonl`). Furthermore, an audit of `train_medcase_profiles.jsonl` (Stage 2 Patient Twins memory bank) confirms **0 case ID overlap and 0 PMC article ID overlap** with the 365 test cases.
 
 ```
-                           [ dataset_gold_1236.jsonl ]
-                                   (1,236 cases)
-                                         │
-                    ┌────────────────────┴────────────────────┐
-                    ▼                                         ▼
-         [ Safe SFT Training Pool ]             [ Frozen Benchmark Test Pool ]
-                (981 cases)                               (255 cases)
-                    │                                         │
-       (Subagent Distillation & RAFT)          (+ 110 raw masked = 365 test cases)
-                    │                                         │
-                    ▼                                         ▼
-         [ sft_raft_qwen3b.jsonl ]                  [ docs/RESULT.md Benchmark ]
+                       [ dataset_gold_1236.jsonl ]
+                              (1,236 cases)
+                                    │
+               ┌────────────────────┴────────────────────┐
+               ▼                                         ▼
+    [ Safe SFT Pool: 981 ]                    [ Frozen Benchmark Test Pool ]
+               │                                    (255 Gold overlaps
+  (Stratified 90/10 Partition)                    + 110 raw = 365 test cases)
+     ┌─────────┴─────────┐                               │
+     ▼                   ▼                               ▼
+[ Raw Train: 881 ]   [ Validation: 100 ]         [ docs/RESULT.md Benchmark ]
+     │                   │                     (Strictly held out until
+(Anti-Attractor Balance) ▼                            Notebook 3)
+* Cap TB: 416 -> 75   [ val_raft_qwen3b.jsonl ]
+* 3x-5x RAFT Upsample
+  for N < 15 classes
+     │
+     ▼
+[ train_raft_qwen3b.jsonl ]
 ```
 
-When the friend delivers the newer dataset, our automated ingestion script filters out test case IDs using a set-difference guard to ensure 100% test isolation.
+#### Class Imbalance Mitigation Protocol (The "TB Attractor" Guard)
+Empirical counts on the 981 safe pool reveal severe skew across the 22 diseases:
+* **Majority Over-Representation:** `Tuberculosis` accounts for **416 cases (42.4%)**. Unweighted SFT would replace the zero-shot Melioidosis attractor with a Tuberculosis attractor.
+* **Extreme Long-Tail ($N < 15$):** `Cholera` ($1$), `Viral Hemorrhagic Fevers` ($8$), `Mycetoma` ($10$), `Zika Virus` ($11$), `Trypanosomiasis` ($12$).
+
+To enforce balanced gradient updates without modifying `DataCollatorForCompletionOnlyLM`:
+1. **Stratified Sub-Selection of Tuberculosis:** Retain **75 maximally diverse TB cases** in the training split (stratified across pulmonary, meningeal, miliary, and extrapulmonary presentations, prioritizing `Confirmed` CSS tier).
+2. **Synthetic RAFT Multi-View Upsampling for Long-Tail Classes:** For the 5 classes with $N < 15$, generate **3 to 5 distinct RAFT training instances per case** by pairing the same admission vignette with different combinations of look-alike distractor triples ($D_{\text{distract}}$) and Patient Twin precedents, ensuring every class has **$\ge 25$ effective training instances**.
+3. **Single-Instance Guard (`Cholera`, $N=1$):** Place the 1 real Cholera case in the 881 training pool (upsampled $5\times$ via varied RAFT distractors) and construct 2 clinically verified synthetic Cholera vignettes exclusively for the 100-case validation set until the expanded cohort arrives.
 
 ---
 
@@ -197,7 +214,7 @@ mindmap
    * *Citation:* **Zhang, Patil, Stoica, Gonzalez et al. (UC Berkeley, 2024)** (*RAFT*, cited in TA Slide 7).
 4. **Prompt Length & Inference Latency Reduction `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`:**
    * *Problem:* Production Stage 4 prompting requires ~3,500 tokens of system rules, candidate lists, and few-shot formatting on every query.
-   * *Method:* Fine-tuning internalizes disease definitions into weights, collapsing prompt length to under 200 tokens and accelerating inference by $5\times\text{--}8\times$.
+   * *Method:* Fine-tuning internalizes the 22 candidate disease definitions and JSON formatting rules into parametric weights, collapsing **system instruction overhead from ~3,500 tokens to < 200 tokens** (yielding a total query input of **~650–900 tokens** in 80% RAFT mode and **< 450 tokens** in 20% offline closed-book mode), accelerating time-to-first-token by $5\times\text{--}8\times$.
    * *Citations:* **TA Lecture 4 Slide 4 vs. Slide 5**; **Ouyang et al. (NeurIPS 2022)** (*InstructGPT*).
 5. **Niche Domain Specialization for Neglected Tropical Diseases `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`:**
    * *Problem:* Standard pre-training corpora underrepresent rare tropical infections like Talaromycosis, Mycetoma, and Paracoccidioidomycosis.
@@ -248,6 +265,10 @@ sequenceDiagram
         Orchestrator->>DB: Append to sft_raft_qwen3b.jsonl
     end
 ```
+
+> **Execution Status Note (`dataset_gold_1236.jsonl` vs. Future Cohorts):**
+> * **Waves 1 & 2 (Pre-Materialized):** For the current 981 safe cases in `dataset_gold_1236.jsonl`, Wave 1 (`mask_agent.py`, `css_agent.py`, `casedef_agent.py`) and Wave 2 (`rewrite_agent.py`) have **already been executed and verified**. Their outputs (`triage_prompt`, `css_tier`, `casedef_level`) are stored directly in the gold JSONL records.
+> * **Wave 3 (Active Execution Focus):** Our immediate subagent orchestration runs **Wave 3 (Teacher Diagnostic Distiller)** using the prompt engine in Section 5.3. Waves 1 and 2 remain part of the automated pipeline strictly to ingest and sanitize new, unverified cases from the upcoming ~1,700-case cohort expansion.
 
 ### 5.1 Subagent Deliberation Prompt Template `[AGENT THINKING]` & `[FROM TA SLIDE]`
 Every Antigravity subagent prompt includes a mandatory `<think>` deliberation scratchpad before generating output (adhering to TA Slide 10 guidance):
@@ -452,31 +473,105 @@ Output strict JSON matching the schema below:
 2. **Timing:** Executed immediately after train/test cohort partitioning.
 3. **Output:** Creates batch folders (`distillation_batches/batch_001/` to `batch_098/`), where each case has its fully rendered prompt ready to be dispatched to Antigravity subagents.
 
+### 5.4 Student SFT ChatML Transformation & Anti-Shortcut Sanitation `[AGENT THINKING]` & `[FROM PAPER IN SLIDE]`
+
+While the **Teacher Subagent** (Section 5.3) receives ground-truth labels and separated `[Oracle]` / `[Distractor]` headers to write an authoritative differential, the **Student Model (`Qwen2.5-3B-Instruct`)** must only see inputs that are realistically available at blind clinical inference time.
+
+In [`Datasets/notebooks/1_prepare_raft_sft_dataset.ipynb`](../notebooks/1_prepare_raft_sft_dataset.ipynb), every distilled record undergoes three mandatory transformations before saving to `train_raft_qwen3b.jsonl` and `val_raft_qwen3b.jsonl`:
+
+#### 1. Merging & Shuffling RAG Context Under Neutral Headers (80% RAFT Mode)
+* **KG Triples:** The Oracle triples ($D^*$, capped at $\le 8$) and Distractor triples ($D_{\text{distract}}$, capped at $\le 7$, total $\le 15$ triples) are merged, deduplicated, and **randomly shuffled** under a single neutral header: `[Retrieved Clinical Knowledge Triples]`. All `[Oracle]` and `[Distractor]` labels are stripped.
+* **Patient Twin Precedent Anti-Shortcut Guard:** To prevent the Student from blindly copying the precedent's disease label, the explicit `{patient_twin_disease}` tag is masked (`Suspected Tropical Syndrome — Precedent Case {patient_twin_id}`), and training pairs include a **50% True-Match / 50% Look-Alike Mimic** Patient Twin distribution retrieved via embedding similarity on `triage_prompt`.
+* **20% Retrieval-Dropout Mode:** For 20% of training instances, the `[Retrieved Clinical Knowledge Triples]` and `[Historical Patient Twin Precedent]` blocks are completely omitted so the model maintains strong closed-book diagnostic accuracy during offline rural clinic deployment.
+
+#### 2. Regex Extraction & Stripping of `<think>` Blocks
+Following TA Slide 10 (Instruction models output directly without `<think>` tags to preserve token budget), the preparation script extracts the Teacher's `<think>` block into metadata and strips it from the Student's target completion:
+
+```python
+import re, json
+
+def extract_student_completion(raw_teacher_output: str) -> tuple[str, dict]:
+    # 1. Extract <think> scratchpad for audit metadata
+    think_match = re.search(r"<think>(.*?)</think>", raw_teacher_output, flags=re.DOTALL)
+    deliberation_trace = think_match.group(1).strip() if think_match else ""
+    
+    # 2. Strip <think> block and markdown fences to isolate strict JSON
+    clean_text = re.sub(r"<think>.*?</think>", "", raw_teacher_output, flags=re.DOTALL).strip()
+    clean_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", clean_text).strip()
+    
+    # 3. Parse and re-serialize to guarantee 100% valid JSON formatting
+    parsed_json = json.loads(clean_text)
+    return deliberation_trace, parsed_json
+```
+
+#### 3. Exact Anatomy of the Assembled Student ChatML Record
+
+Every record in `train_raft_qwen3b.jsonl` and `val_raft_qwen3b.jsonl` is formatted as follows:
+
+```json
+{
+  "case_id": "PMC_XXXXX",
+  "mode": "raft_80",
+  "primary_disease": "Leptospirosis",
+  "teacher_deliberation_trace": "1. Core Tension: Acute febrile jaundice mimics Dengue...",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a clinical diagnostic assistant specializing in 22 Neglected Tropical Diseases. Analyze the admission presentation and any retrieved clinical evidence to produce a structured 4-step diagnostic reasoning JSON and ranked Top-3 differential diagnosis."
+    },
+    {
+      "role": "user",
+      "content": "[Clinical Admission Vignette]\n{triage_prompt}\n\n[Retrieved Clinical Knowledge Triples]\n- {shuffled_triple_1}\n- {shuffled_triple_2}\n- {shuffled_triple_3}\n\n[Historical Patient Twin Precedent]\n- Precedent Case ID: {patient_twin_id}\n- Presentation Summary: {patient_twin_summary}"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"reasoning\": {\n    \"step1_evidence_assembly\": { ... },\n    \"step2_symptom_pattern_recognition\": { ... },\n    \"step3_competing_diagnoses\": [ ... ],\n    \"step4_final_diagnostic_anchor\": { ... }\n  },\n  \"differential_diagnosis\": [\n    \"Rank 1: ...\",\n    \"Rank 2: ...\",\n    \"Rank 3: ...\"\n  ]\n}"
+    }
+  ]
+}
+```
+
 ---
 
 ## 6. Training Mechanics & Reference Implementation `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`
 
 Following TA Lecture 4 Slide 8 ([`mlciv/nlp-notebooks`](https://github.com/mlciv/nlp-notebooks)), training is executed using `TRL`'s `SFTTrainer` with 4-bit QLoRA and prompt-loss masking.
 
-### 6.1 Prompt-Loss Masking `[FROM EXTERNAL PAPER]`
-Without loss masking, the model wastes capacity learning to predict the input case vignette tokens. Using `DataCollatorForCompletionOnlyLM`, we set label tokens prior to `<|im_start|>assistant\n` to `-100`, ensuring gradients only update on intermediate reasoning and the differential diagnosis:
+### 6.1 Prompt-Loss Masking & Tokenizer Alignment Guard `[FROM EXTERNAL PAPER]`
+Without loss masking, the model wastes capacity learning to predict the input case vignette tokens. Using `DataCollatorForCompletionOnlyLM`, we mask all tokens prior to `<|im_start|>assistant\n` to `-100`. Because fast BPE tokenizers (`Qwen2TokenizerFast`) can merge newline characters differently depending on context, we encode the template without special tokens and run a mandatory pre-flight assertion before `trainer.train()`:
 
 ```python
 from trl import DataCollatorForCompletionOnlyLM
 
-response_template = "<|im_start|>assistant\n"
+response_template_ids = tokenizer.encode(
+    "<|im_start|>assistant\n", add_special_tokens=False
+)
 collator = DataCollatorForCompletionOnlyLM(
-    response_template=response_template,
+    response_template=response_template_ids,
     tokenizer=tokenizer
 )
+
+# Mandatory Pre-Flight Masking Verification
+sample_batch = collator([tokenized_train_dataset[0]])
+active_tokens = (sample_batch["labels"][0] != -100).sum().item()
+assert active_tokens > 50, f"FATAL: Prompt-loss masking failed! Active target tokens: {active_tokens}"
 ```
 
-### 6.2 QLoRA Hyperparameters `[FROM TA SLIDE]` & `[AGENT THINKING]`
+### 6.2 QLoRA Hyperparameters & Dual-Hardware Profiles `[FROM TA SLIDE]` & `[AGENT THINKING]`
+
 * **Base Model:** `Qwen/Qwen2.5-3B-Instruct`
-* **Quantization:** 4-bit NormalFloat (NF4), double quantization, bfloat16 compute dtype.
+* **Max Sequence Length:** **`3,072 tokens`** (increased from 2,048 based on empirical token audit showing outlier cases reach ~2,300 total tokens; prevents right-truncation of closing JSON brackets). Input RAG context is clamped at $\le 15$ triples and 1 Patient Twin ($\le 1,500$ total input tokens).
 * **Target Modules:** All linear attention and MLP projections (`["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]`).
 * **LoRA Rank & Alpha:** $r = 16, \alpha = 32$, dropout = $0.05$.
-* **Training Arguments:** Cosine learning rate schedule ($2 \times 10^{-4}$), effective batch size 16 (batch size 4, gradient accumulation steps 4), 3 epochs, max sequence length 2,048 tokens.
+* **Schedule & Evaluation:** Cosine learning rate schedule ($2 \times 10^{-4}$), warmup ratio $0.05$, 3 epochs, evaluating `eval_loss` every 25 steps on the 100-case validation split (`load_best_model_at_end=True`).
+
+| Parameter | Profile A: Colab Pro (A100 40GB / L4 24GB) | Profile B: Kaggle / Colab Free (NVIDIA T4 16GB) |
+| --- | --- | --- |
+| `bnb_4bit_quant_type` | `"nf4"` (Double Quantization enabled) | `"nf4"` (Double Quantization enabled) |
+| `bnb_4bit_compute_dtype` | `torch.bfloat16` (Native Ampere/Ada support) | `torch.float16` (Turing CC 7.5 lacks native bf16) |
+| `per_device_train_batch_size` | `4` | `2` |
+| `gradient_accumulation_steps` | `4` (Effective batch size = 16) | `8` (Effective batch size = 16) |
+| `gradient_checkpointing` | `True` (Peak VRAM ~11.2 GB) | `True` (Peak VRAM ~12.8 GB) |
 
 ---
 
@@ -493,10 +588,13 @@ Following the `notebook-guidance` skill, the experimental journey is divided int
    * Sets up `DataCollatorForCompletionOnlyLM` prompt-loss masking.
    * Runs `SFTTrainer`, tracks loss curves, and exports adapter weights.
 3. **[`Datasets/notebooks/3_evaluate_reasoning_recall.ipynb`](../notebooks/3_evaluate_reasoning_recall.ipynb):**
-   * Evaluates the adapter on the frozen 365 test set.
-   * Computes exact Top-1 Accuracy, Tolerant Top-3 Differential Coverage, and MRR.
-   * Implements the automated **Reasoning Recall** LLM Judge (`[FROM TA SLIDE]`, Slide 11).
-   * Updates the master evaluation table in [`Datasets/docs/RESULT.md`](RESULT.md).
+   * Evaluates the best validation checkpoint on the frozen **365 benchmark test set**.
+   * Computes exact Top-1 Accuracy, Tolerant Top-3 Differential Coverage, Melioidosis/TB Attractor Rate, and MRR.
+   * **Fair-Denominator Reasoning Recall (`[FROM TA SLIDE]`, Slide 11):**
+     * Generates the Gold Reference Clinical Reasoning Traces ($R^*$) on the 365 test cases by running the Teacher Subagent with the **same Section 5.3 admission-bounded prompt** (masked `triage_prompt` + verified `{primary_disease}` + Oracle triples, strictly terminating at hospital admission triage).
+     * Compares the Student's blind admission reasoning ($\hat{R}$) against $R^*$ using the TA Slide 11 LLM Judge prompt:
+       $$\text{Reasoning Recall} = \frac{\sum \text{Full Matches} + 0.5 \times \sum \text{Partial Matches}}{\text{Total Admission-Bounded Teacher Statements in } R^*}$$
+   * Updates the master ablation table in [`Datasets/docs/RESULT.md`](RESULT.md).
 
 ---
 
@@ -504,26 +602,54 @@ Following the `notebook-guidance` skill, the experimental journey is divided int
 
 ### Automated Verification `[AGENT THINKING]`
 ```bash
-# 1. Zero Data Leakage Assertion
+# 1. Zero Data Leakage Assertion (Train vs. Val vs. 365 Test Set)
 python -c "
 import json
 test_cids = {json.loads(l)['case_id'] for l in open('data/test_masked_cases.jsonl')}
-train_cids = {json.loads(l)['case_id'] for l in open('data/sft_raft_qwen3b.jsonl')}
-leakage = test_cids.intersection(train_cids)
-assert len(leakage) == 0, f'LEAKAGE DETECTED: {len(leakage)} cases overlap!'
-print('Verification Passed: 0% data leakage into benchmark test cohort.')
+train_cids = {json.loads(l)['case_id'] for l in open('data/train_raft_qwen3b.jsonl')}
+val_cids = {json.loads(l)['case_id'] for l in open('data/val_raft_qwen3b.jsonl')}
+
+assert len(test_cids & train_cids) == 0, f'FATAL: {len(test_cids & train_cids)} train cases leak into test!'
+assert len(test_cids & val_cids) == 0, f'FATAL: {len(test_cids & val_cids)} val cases leak into test!'
+assert len(train_cids & val_cids) == 0, f'FATAL: {len(train_cids & val_cids)} train cases leak into val!'
+print('Verification 1 Passed: 0% leakage across Train, Val, and 365 Test cohorts.')
 "
 
-# 2. Schema Integrity Assertion
+# 2. Schema Integrity & Anti-Shortcut Sanitation Assertion
 python -c "
 import json
-for line in open('data/sft_raft_qwen3b.jsonl'):
-    rec = json.loads(line)
-    output = json.loads(rec['messages'][1]['content'])
-    assert 'step1_evidence_assembly' in output['reasoning']
-    assert 'step4_final_diagnostic_anchor' in output['reasoning']
-    assert len(output['differential_diagnosis']) >= 3
-print('Verification Passed: 100% of records conform to the TA 4-step schema.')
+for split_file in ['data/train_raft_qwen3b.jsonl', 'data/val_raft_qwen3b.jsonl']:
+    for idx, line in enumerate(open(split_file)):
+        rec = json.loads(line)
+        user_msg = rec['messages'][1]['content']
+        asst_msg = rec['messages'][2]['content']
+        
+        # Ensure no Teacher headers or ground-truth spoilers leaked into Student User Prompt
+        for forbidden in ['[Oracle', 'Distractor Triples', 'True Verified Disease:']:
+            assert forbidden not in user_msg, f'SPOILER LEAK in {split_file}:{idx} -> {forbidden}'
+            
+        # Ensure <think> tags were stripped from Student Assistant Target
+        assert '<think>' not in asst_msg and '</think>' not in asst_msg, f'UNSTRIPPED <think> in {split_file}:{idx}'
+        
+        # Validate 4-Step JSON Schema
+        output = json.loads(asst_msg)
+        for step_key in ['step1_evidence_assembly', 'step2_symptom_pattern_recognition', 'step3_competing_diagnoses', 'step4_final_diagnostic_anchor']:
+            assert step_key in output['reasoning'], f'Missing {step_key} in {split_file}:{idx}'
+        assert len(output['differential_diagnosis']) >= 3, f'Less than 3 diffs in {split_file}:{idx}'
+print('Verification 2 Passed: 100% of records sanitized of spoilers/<think> and conform to TA 4-step schema.')
+"
+
+# 3. Class Balance & Single-Disease Dominance Guard
+python -c "
+import json
+from collections import Counter
+counts = Counter(json.loads(l)['primary_disease'] for l in open('data/train_raft_qwen3b.jsonl'))
+total = sum(counts.values())
+max_disease, max_count = counts.most_common(1)[0]
+min_disease, min_count = counts.most_common()[-1]
+assert (max_count / total) <= 0.12, f'ATTRACTOR RISK: {max_disease} is {max_count/total:.1%} of training data (>12% cap)!'
+assert min_count >= 20, f'LONG-TAIL STARVATION: {min_disease} has only {min_count} instances (<20 floor)!'
+print(f'Verification 3 Passed: Class balance within safe bounds (Max: {max_disease}={max_count}, Min: {min_disease}={min_count}).')
 "
 ```
 
@@ -531,5 +657,5 @@ print('Verification Passed: 100% of records conform to the TA 4-step schema.')
 * **Top-1 Diagnostic Accuracy:** $\ge 58.0\%$ (up from 48.22% in Dual-Brain prompting, and 7.67% zero-shot).
 * **Tolerant Top-3 Differential Coverage:** $\ge 80.0\%$ (up from 72.33%).
 * **Melioidosis Attractor Rate:** $\le 5.0\%$ (down from 55.34% zero-shot).
-* **Prompt Length per Query:** Under 250 tokens (down from ~3,500 tokens).
+* **System Instruction Overhead:** `< 200 tokens` (down from ~3,500 tokens in Stage 4 prompting; total input with RAFT context: `650–900 tokens`).
 * **Reasoning Recall (TA Slide 11):** $\ge 75.0\%$ semantic alignment with expert clinical reasoning.
