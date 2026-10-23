@@ -9,9 +9,49 @@
 
 ---
 
+## Provenance & Attribution Legend
+
+To ensure 100% academic transparency, every concept, mechanism, and engineering choice in this plan is tagged with its exact origin:
+
+| Badge | Provenance Category | Description & Source |
+|---|---|---|
+| `[FROM TA SLIDE]` | **Teaching Assistant Slides** | Directly from TA Le Viet Tin's presentation: [`Project in AI - Lecture 4.pdf`](../../Project%20in%20AI%20-%20Lecture%204.pdf). |
+| `[FROM PAPER IN SLIDE]` | **Papers Cited in TA Slide** | From the 3 foundational papers cited on Slide 7: *MedCaseReasoning* (Wu et al., 2025), *MedReason* (Jin et al., 2024), and *RAFT* (Zhang et al., 2024). |
+| `[FROM EXTERNAL PAPER]` | **External Peer-Reviewed Literature** | Authoritative papers validating supporting ML concepts (*ToolLLM*, *Guided Generation*, *Med-PaLM*, *InstructGPT*). |
+| `[AGENT THINKING]` | **Our Agent & Workspace Architecture** | Novel synthesis, Antigravity subagent orchestration, zero-leakage data partitioning, and integration with our Dual-Brain codebase. |
+
+---
+
+## Master Provenance & Attribution Matrix
+
+| Plan Component / Specific Section | Origin Badge | Exact Source & Citation |
+|---|:---:|---|
+| **5 Core Reasons for Fine-Tuning** (Style & tone, strict format, niche expertise, reduced prompt length/costs, lower latency) | `[FROM TA SLIDE]` | TA Lecture 4 Slide 3 |
+| **"Super Long System Prompt" (Before) vs. "Shorter Prompt" (After)** | `[FROM TA SLIDE]` | TA Lecture 4 Slides 4 & 5 |
+| **4-Step Clinical Diagnostic Framework** (Evidence Assembly $\rightarrow$ Pattern Recognition $\rightarrow$ Competing Diagnoses with `[Must Not Miss]` $\rightarrow$ Final Anchor) | `[FROM TA SLIDE]`<br/>`[FROM PAPER IN SLIDE]` | TA Lecture 4 Slide 4 & Slide 7;<br/>*MedCaseReasoning* (Wu et al., Stanford, 2025) |
+| **Distillation Pipeline Concept** (Case text + optional RAG chunks $\rightarrow$ Frontier Teacher LLM $\rightarrow$ Distilled CoT) | `[FROM TA SLIDE]` | TA Lecture 4 Slide 7 |
+| **RAFT Framework & Distractor Robustness** ($(Q, D^*, D_{\text{distract}})$ instances; training SLM to cite oracle evidence and discard look-alike distractor triples) | `[FROM PAPER IN SLIDE]` | *RAFT* (Zhang et al., UC Berkeley, 2024), cited on TA Slide 7 |
+| **Knowledge Graph-Grounded Clinical Reasoning** (Intermediate CoT steps anchored in medical KG triples to eliminate hallucinations) | `[FROM PAPER IN SLIDE]` | *MedReason* (Jin et al., 2024), cited on TA Slide 7 |
+| **Clinical Diagnostic Reasoning Distillation from Case Reports** | `[FROM PAPER IN SLIDE]` | *MedCaseReasoning* (Wu et al., Stanford, 2025), cited on TA Slide 7 |
+| **Reference SFT / QLoRA Implementation** (`mlciv/nlp-notebooks/docs/notebooks/hw5/Part1-sft_trl_lora_qlora.ipynb`) | `[FROM TA SLIDE]` | TA Lecture 4 Slide 8 |
+| **Model Architecture Categorization** (Base vs. Instruction vs. Reasoning models: Ministral 3, Qwen3.5, etc.) | `[FROM TA SLIDE]` | TA Lecture 4 Slide 9 |
+| **`<think>` Tag Usage Rule** ("When training base model, no `<think>` tag needed; When training reasoning model, must have `<think>`") | `[FROM TA SLIDE]` | TA Lecture 4 Slide 10 |
+| **Reasoning Recall Metric & LLM Judge Prompt** (Automated semantic equivalence audit of student reasoning vs. teacher statements) | `[FROM TA SLIDE]`<br/>`[FROM PAPER IN SLIDE]` | TA Lecture 4 Slide 11;<br/>*MedCaseReasoning* (Wu et al., Stanford, 2025) |
+| **Prompt-Loss Masking via `DataCollatorForCompletionOnlyLM`** | `[FROM EXTERNAL PAPER]` | Hugging Face TRL; *InstructGPT* (Ouyang et al., NeurIPS 2022); referenced in `mlciv/nlp-notebooks` |
+| **Strict JSON Schema Guided Generation** | `[FROM EXTERNAL PAPER]` | *Guided Generation for LLMs* (Willard & Louf, 2023); *ToolLLM* (Qin et al., ICLR 2024) |
+| **Domain Adaptation for Rare Medical Conditions** | `[FROM EXTERNAL PAPER]` | *Med-PaLM* (Singhal et al., Nature, 2023) |
+| **Native Antigravity Subagent Orchestration** (Zero external cloud API fees; running batch distillation via autonomous Antigravity subagents) | `[AGENT THINKING]` | Architectural design requested by user and designed for local Antigravity environment |
+| **Strict Zero-Leakage Cohort Partitioning** (Detecting that 255 of the 1,236 Gold cases overlap with the 365 test set; partitioning into 981 safe train vs 255 test) | `[AGENT THINKING]` | Empirical set-intersection analysis of workspace files (`dataset_gold_1236.jsonl` vs `test_masked_cases.jsonl`) |
+| **Multi-Wave Subagent Pipeline Integration** (Mapping existing repository subagents `mask_agent`, `css_agent`, `casedef_agent`, `rewrite_agent` to sequential waves) | `[AGENT THINKING]` | Synthesis connecting the team's existing data pipeline codebase with the TA's 4-step framework |
+| **80% RAFT / 20% Retrieval-Dropout Hybrid Distribution** (Combining RAFT with zero-context dropout to allow graceful offline rural health post execution) | `[AGENT THINKING]` | Engineering design decision combining RAFT paper principles with edge medical deployment constraints |
+| **Dual-Brain Memory Ingestion into RAFT** (Using Stage 1/3 monographs as $D^*$ and Stage 2 Patient Twins as precedent context) | `[AGENT THINKING]` | Bridging Khoa's existing Dual-Brain cognitive architecture into the fine-tuning data generator |
+| **Modular 3-Notebook Sequence** (`1_prepare_raft_sft_dataset.ipynb`, `2_qlora_finetuning_qwen3b.ipynb`, `3_evaluate_reasoning_recall.ipynb`) | `[AGENT THINKING]` | Structured experimental layout following the `notebook-guidance` and `managing-python-dependencies` skills |
+
+---
+
 ## 1. Executive Summary & Strategy Shift
 
-### 1.1 Zero External API Reliance — Native Antigravity Subagent Orchestration
+### 1.1 Zero External API Reliance — Native Antigravity Subagent Orchestration `[AGENT THINKING]`
 As instructed, **we do not use paid commercial cloud APIs (OpenAI, Anthropic, or external Gemini API keys)** with per-token billing or external network dependencies. 
 
 Instead, the entire data synthesis, evidence auditing, and reasoning distillation pipeline is executed natively inside **Google Antigravity** by spawning autonomous subagents:
@@ -19,35 +59,35 @@ Instead, the entire data synthesis, evidence auditing, and reasoning distillatio
 * **Deterministic File & Workspace Tooling:** Subagents directly read partitioned clinical cases, evaluate WHO/CDC criteria, formulate diagnostic hypotheses inside structured `<think>` scratchpads, and write verified JSONL records directly into the workspace.
 * **Batch Fault Tolerance:** Cases are partitioned into 10-to-15 case batch directories (following our established `create_batches.py` architecture in [`stage2_medcase_distillation/`](../stage2_medcase_distillation/)), allowing subagents to process batches in parallel with automated validation and resumption.
 
-### 1.2 Integration with TA Lecture 4 (Le Viet Tin)
+### 1.2 Integration with TA Lecture 4 (Le Viet Tin) `[FROM TA SLIDE]` & `[FROM PAPER IN SLIDE]`
 This plan strictly implements the roadmap from TA Lecture 4:
-1. **Core Papers Cited by the TA (Slide 7):**
+1. **Core Papers Cited by the TA (Slide 7) `[FROM PAPER IN SLIDE]`:**
    - *MedCaseReasoning* (Wu et al., Stanford, 2025): Eliciting clinical reasoning from case reports.
    - *MedReason* (Jin et al., 2024): Knowledge-graph-grounded factual reasoning steps.
    - *RAFT* (Zhang et al., UC Berkeley, 2024): Retrieval-Augmented Fine-Tuning with distractor rejection.
-2. **4-Step Clinical Diagnostic Framework (Slide 4 & 7):**
+2. **4-Step Clinical Diagnostic Framework (Slide 4 & 7) `[FROM TA SLIDE]`:**
    - **Step 1:** Evidence Assembly (positives, negatives, timeline, risk factors, missing data).
    - **Step 2:** Symptom Pattern Recognition (syndrome, anatomical system, probability shift).
    - **Step 3:** Competing Diagnoses Assessment (supporting/opposing points, `[Must Not Miss]` tags).
    - **Step 4:** Final Diagnostic Anchor (leading diagnosis, 3–5 sentence justification, remaining uncertainty).
-3. **Training Architecture & Reference Implementation (Slide 8):**
+3. **Training Architecture & Reference Implementation (Slide 8) `[FROM TA SLIDE]`:**
    - Adapting `mlciv/nlp-notebooks/docs/notebooks/hw5/Part1-sft_trl_lora_qlora.ipynb` using Hugging Face `TRL`'s `SFTTrainer`, 4-bit QLoRA (NF4), and prompt-loss masking via `DataCollatorForCompletionOnlyLM`.
-4. **Base vs. Instruction vs. Reasoning Models & `<think>` Tags (Slide 9 & 10):**
+4. **Base vs. Instruction vs. Reasoning Models & `<think>` Tags (Slide 9 & 10) `[FROM TA SLIDE]`:**
    - When fine-tuning our primary instruction model (`Qwen2.5-3B-Instruct`), reasoning is delivered directly in the schema without separate `<think>` tokens to protect generation budgets.
    - Subagents executing the distillation waves use mandatory `<think>` scratchpads to deliberate before outputting the 4-step clinical schema.
-5. **Evaluation Metric (Slide 11):**
+5. **Evaluation Metric (Slide 11) `[FROM TA SLIDE]` & `[FROM PAPER IN SLIDE]`:**
    - Automated LLM Judge computing **Reasoning Recall** alongside **Tolerant Top-3 Differential Coverage** and **Top-1 Accuracy**.
 
 ---
 
 ## 2. Dataset Anatomy & Leakage Prevention Guard
 
-### 2.1 The Two Data Versions
+### 2.1 The Two Data Versions `[AGENT THINKING]`
 * **Data Version 1 ("Old Data / Part A"):** 1,797 cases (`kaggle_partA`), split into 1,427 train cases and 365 test cases ([`data/test_masked_cases.jsonl`](../data/test_masked_cases.jsonl)). Used to build the existing LightRAG index and the baseline ablation study in [`docs/RESULT.md`](RESULT.md).
 * **Data Version 2 ("Current Gold 1,236"):** [`Custom_Tropical_Project/2_Clinical_Verification/dataset_gold_1236.jsonl`](../Custom_Tropical_Project/2_Clinical_Verification/dataset_gold_1236.jsonl) ($N = 1,236$ verified cases: 936 Confirmed, 318 Probable).
 * **Upcoming Refined Version (Friend's In-Progress Data):** Expands coverage toward ~1,700 cases, rebalances low-support tropical classes (e.g. Cholera, VHF, Mycetoma), and binds multimodal image panels.
 
-### 2.2 Strict Zero-Leakage Cohort Partitioning
+### 2.2 Strict Zero-Leakage Cohort Partitioning `[AGENT THINKING]`
 Our empirical cross-reference reveals that **255 cases in `dataset_gold_1236.jsonl` are present in the frozen 365 benchmark test set** (`data/test_masked_cases.jsonl`). Training on the raw gold file without filtering would cause a **69.86% test set leakage**.
 
 ```
@@ -101,7 +141,7 @@ flowchart TD
 
 ### Detailed Trade-Off Matrix
 
-| Dimension | Without LightRAG (Closed-Book SFT) | With LightRAG (RAFT Recipe) | Recommended Hybrid Strategy |
+| Dimension | Without LightRAG (Closed-Book SFT) `[FROM PAPER IN SLIDE]` | With LightRAG (RAFT Recipe) `[FROM PAPER IN SLIDE]` | Recommended Hybrid Strategy `[AGENT THINKING]` |
 |---|---|---|---|
 | **Input Context** | Pure case presentation | Case + Oracle Triples + Distractor Triples + Patient Twins | 80% RAFT / 20% Zero-Context |
 | **Inference Latency** | **Fastest (~300ms)** | ~1.5s – 1.8s (includes vector retrieval) | Sub-second offline / ~1.5s online |
@@ -117,55 +157,55 @@ flowchart TD
 ```mermaid
 mindmap
   root((Fine-Tuning Objectives))
-    Output Structure Control
+    Output Structure Control [EXTERNAL PAPER]
       100% Valid JSON Schema
       Direct EHR Integration
       Willard & Louf 2023
       ToolLLM Qin et al. 2024
-    Diagnostic Reasoning
+    Diagnostic Reasoning [PAPER IN SLIDE]
       4-Step Clinical CoT
       Attractor Bias Collapse
       MedCaseReasoning Wu et al. 2025
       MedReason Jin et al. 2024
-    Distractor Invariance
+    Distractor Invariance [PAPER IN SLIDE]
       Rejecting Look-Alike Diseases
       Verbatim Evidence Grounding
       RAFT Zhang et al. 2024
-    Prompt & Latency Reduction
+    Prompt & Latency Reduction [TA SLIDE]
       Collapse from 3.5k to 200 tokens
       5x to 8x Faster Serving
       TA Lecture 4 Slides 4 and 5
       InstructGPT Ouyang et al. 2022
-    Niche Tropical Specialization
+    Niche Tropical Specialization [TA SLIDE & EXTERNAL]
       22 Neglected Tropical Diseases
       Endemic Exposure Vectors
       Med-PaLM Singhal et al. Nature 2023
 ```
 
-1. **Strict Format & Output Structure Enforcement:**
+1. **Strict Format & Output Structure Enforcement `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`:**
    * *Problem:* Base SLMs wrap outputs in conversational prose, omit brackets, or truncate keys.
    * *Method:* SFT with prompt-loss masking restricts generation solely to schema keys (`step1_evidence_assembly`, `step2_symptom_pattern_recognition`, `step3_competing_diagnoses`, `step4_final_diagnostic_anchor`, `differential_diagnosis`).
-   * *Citations:* **Willard & Louf (2023)** (*Guided Generation for LLMs*); **Qin et al. (ICLR 2024)** (*ToolLLM*).
-2. **Clinical Diagnostic Reasoning & Attractor Elimination:**
+   * *Citations:* **TA Slide 3**; **Willard & Louf (2023)** (*Guided Generation for LLMs*); **Qin et al. (ICLR 2024)** (*ToolLLM*).
+2. **Clinical Diagnostic Reasoning & Attractor Elimination `[FROM PAPER IN SLIDE]`:**
    * *Problem:* Qwen2.5-3B zero-shot guesses `Melioidosis` in **55.34% of unprompted cases** ([`result.md:20`](../stage4_constrained_inference/result.md#L20)).
    * *Method:* Distilling structured diagnostic elimination forces the model to deliberate on pertinent negatives before committing to a final anchor.
    * *Citations:* **Wu, Wu, Thapa et al. (Stanford University, 2025)** (*MedCaseReasoning*, cited in TA Slide 7); **Jin et al. (2024)** (*MedReason*, cited in TA Slide 7).
-3. **Distractor Robustness & Evidence Grounding (RAFT):**
+3. **Distractor Robustness & Evidence Grounding (RAFT) `[FROM PAPER IN SLIDE]`:**
    * *Problem:* LightRAG retrieves high-degree nodes that represent competing look-alike tropical diseases (e.g. Dengue triples for Leptospirosis).
    * *Method:* Training on $(Q, D^*, D_{\text{distract}})$ instances teaches the network to explicitly reject distractor triples while citing pathognomonic evidence from oracle triples.
    * *Citation:* **Zhang, Patil, Stoica, Gonzalez et al. (UC Berkeley, 2024)** (*RAFT*, cited in TA Slide 7).
-4. **Prompt Length & Inference Latency Reduction (TA Slides 4 & 5):**
+4. **Prompt Length & Inference Latency Reduction `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`:**
    * *Problem:* Production Stage 4 prompting requires ~3,500 tokens of system rules, candidate lists, and few-shot formatting on every query.
    * *Method:* Fine-tuning internalizes disease definitions into weights, collapsing prompt length to under 200 tokens and accelerating inference by $5\times\text{--}8\times$.
    * *Citations:* **TA Lecture 4 Slide 4 vs. Slide 5**; **Ouyang et al. (NeurIPS 2022)** (*InstructGPT*).
-5. **Niche Domain Specialization for Neglected Tropical Diseases:**
+5. **Niche Domain Specialization for Neglected Tropical Diseases `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`:**
    * *Problem:* Standard pre-training corpora underrepresent rare tropical infections like Talaromycosis, Mycetoma, and Paracoccidioidomycosis.
    * *Method:* SFT on CDC/WHO verified clinical vignettes embeds specialized clinical vocabulary and endemic risk factors.
-   * *Citation:* **Singhal et al. (Nature, 2023)** (*Med-PaLM*).
+   * *Citations:* **TA Slide 3**; **Singhal et al. (Nature, 2023)** (*Med-PaLM*).
 
 ---
 
-## 5. Multi-Wave Antigravity Subagent Reasoning Extraction Pipeline
+## 5. Multi-Wave Antigravity Subagent Reasoning Extraction Pipeline `[AGENT THINKING]`
 
 Instead of invoking third-party APIs, we orchestrate our existing subagents natively within Antigravity across three sequential waves:
 
@@ -180,7 +220,7 @@ sequenceDiagram
     participant DB as Curated Training Pool (sft_raft_qwen3b.jsonl)
 
     Orchestrator->>Batch: Partition 981 safe training cases into 10-case batch folders
-    Batch-->>Orchestrator: 98 batch directories initialized
+    Batch-->>Orchestrator: Batch directories initialized
 
     loop For each batch of cases
         rect rgb(240, 248, 255)
@@ -208,8 +248,8 @@ sequenceDiagram
     end
 ```
 
-### 5.1 Subagent Deliberation Prompt Template
-Every Antigravity subagent prompt includes a mandatory `<think>` deliberation scratchpad before generating output:
+### 5.1 Subagent Deliberation Prompt Template `[AGENT THINKING]` & `[FROM TA SLIDE]`
+Every Antigravity subagent prompt includes a mandatory `<think>` deliberation scratchpad before generating output (adhering to TA Slide 10 guidance):
 
 ```text
 You are an expert infectious disease clinician and clinical educator.
@@ -233,8 +273,8 @@ Before generating the structured clinical output, analyze the case inside <think
 </think>
 ```
 
-### 5.2 The Standardized 4-Step Clinical Target Schema (TA Lecture 4 Slide 4)
-The distilled output strictly follows the schema specified by TA Le Viet Tin:
+### 5.2 The Standardized 4-Step Clinical Target Schema `[FROM TA SLIDE]` & `[FROM PAPER IN SLIDE]`
+The distilled output strictly follows the schema specified by TA Le Viet Tin (Slide 4):
 
 ```json
 {
@@ -281,11 +321,11 @@ The distilled output strictly follows the schema specified by TA Le Viet Tin:
 
 ---
 
-## 6. Training Mechanics & Reference Implementation
+## 6. Training Mechanics & Reference Implementation `[FROM TA SLIDE]` & `[FROM EXTERNAL PAPER]`
 
 Following TA Lecture 4 Slide 8 ([`mlciv/nlp-notebooks`](https://github.com/mlciv/nlp-notebooks)), training is executed using `TRL`'s `SFTTrainer` with 4-bit QLoRA and prompt-loss masking.
 
-### 6.1 Prompt-Loss Masking
+### 6.1 Prompt-Loss Masking `[FROM EXTERNAL PAPER]`
 Without loss masking, the model wastes capacity learning to predict the input case vignette tokens. Using `DataCollatorForCompletionOnlyLM`, we set label tokens prior to `<|im_start|>assistant\n` to `-100`, ensuring gradients only update on intermediate reasoning and the differential diagnosis:
 
 ```python
@@ -298,7 +338,7 @@ collator = DataCollatorForCompletionOnlyLM(
 )
 ```
 
-### 6.2 QLoRA Hyperparameters
+### 6.2 QLoRA Hyperparameters `[FROM TA SLIDE]` & `[AGENT THINKING]`
 * **Base Model:** `Qwen/Qwen2.5-3B-Instruct`
 * **Quantization:** 4-bit NormalFloat (NF4), double quantization, bfloat16 compute dtype.
 * **Target Modules:** All linear attention and MLP projections (`["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]`).
@@ -307,7 +347,7 @@ collator = DataCollatorForCompletionOnlyLM(
 
 ---
 
-## 7. Modular Jupyter Notebook Architecture (`notebook-guidance`)
+## 7. Modular Jupyter Notebook Architecture `[AGENT THINKING]`
 
 Following the `notebook-guidance` skill, the experimental journey is divided into 3 narrative notebooks:
 
@@ -322,14 +362,14 @@ Following the `notebook-guidance` skill, the experimental journey is divided int
 3. **[`Datasets/notebooks/3_evaluate_reasoning_recall.ipynb`](../notebooks/3_evaluate_reasoning_recall.ipynb):**
    * Evaluates the adapter on the frozen 365 test set.
    * Computes exact Top-1 Accuracy, Tolerant Top-3 Differential Coverage, and MRR.
-   * Implements the automated **Reasoning Recall** LLM Judge (TA Slide 11).
+   * Implements the automated **Reasoning Recall** LLM Judge (`[FROM TA SLIDE]`, Slide 11).
    * Updates the master evaluation table in [`Datasets/docs/RESULT.md`](RESULT.md).
 
 ---
 
 ## 8. Verification & Acceptance Criteria
 
-### Automated Verification
+### Automated Verification `[AGENT THINKING]`
 ```bash
 # 1. Zero Data Leakage Assertion
 python -c "
@@ -354,7 +394,7 @@ print('Verification Passed: 100% of records conform to the TA 4-step schema.')
 "
 ```
 
-### Performance Targets
+### Performance Targets `[FROM TA SLIDE]` & `[AGENT THINKING]`
 * **Top-1 Diagnostic Accuracy:** $\ge 58.0\%$ (up from 48.22% in Dual-Brain prompting, and 7.67% zero-shot).
 * **Tolerant Top-3 Differential Coverage:** $\ge 80.0\%$ (up from 72.33%).
 * **Melioidosis Attractor Rate:** $\le 5.0\%$ (down from 55.34% zero-shot).
