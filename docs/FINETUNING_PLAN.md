@@ -235,7 +235,7 @@ sequenceDiagram
     participant W1 as Wave 1 Subagent (mask_agent + casedef)
     participant W2 as Wave 2 Subagent (rewrite_agent)
     participant W3 as Wave 3 Subagent (TA 4-Step CoT Distiller)
-    participant DB as Curated Training Pool (sft_raft_qwen3b.jsonl)
+    participant DB as Curated Dataset Pool (train/val_raft_qwen3b.jsonl)
 
     Orchestrator->>Batch: Partition 981 safe training cases into 10-case batch folders
     Batch-->>Orchestrator: Batch directories initialized
@@ -262,7 +262,7 @@ sequenceDiagram
             W3-->>Orchestrator: Validated 4-Step Clinical JSON Record
         end
 
-        Orchestrator->>DB: Append to sft_raft_qwen3b.jsonl
+        Orchestrator->>DB: Compile into train_raft_qwen3b.jsonl / val_raft_qwen3b.jsonl
     end
 ```
 
