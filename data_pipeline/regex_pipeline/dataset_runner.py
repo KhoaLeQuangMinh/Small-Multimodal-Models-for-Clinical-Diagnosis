@@ -2,6 +2,7 @@ from __future__ import annotations
 import os
 import re
 import json
+import argparse
 import pandas as pd
 import pyarrow.parquet as pq
 from pathlib import Path
@@ -707,8 +708,9 @@ def filter_and_route_multicare(
     cases_parquet_path: str,
     metadata_parquet_path: str,
     csv_dictionary_path: str,
-    output_parquet_path: str = "multicare_tropical_diseases_filtered.parquet",
-    output_csv_path: str = "multicare_tropical_diseases_filtered.csv",
+    output_parquet_path: str = "multicare_tropical_diseases_hard_filtered.parquet",
+    output_csv_path: str = "multicare_tropical_diseases_hard_filtered.csv",
+    workers: int = 8,
 ) -> pd.DataFrame:
     print("1. Compiling regex engine from master_umls_dictionary.csv...")
     engine = build_ontology_regex_engine(csv_dictionary_path)
@@ -784,7 +786,7 @@ def filter_and_route_multicare(
         + merged_df.loc[is_single_case, "case_text"].fillna("")
     )
 
-    workers = 8
+    workers = max(1, workers)
     print(
         f"3. Scanning and routing {len(merged_df):,} clinical cases across 74 disease nodes on {workers} CPU workers...")
     cols_df = merged_df[["case_id", "article_id", "case_count", "search_text"]]
@@ -836,34 +838,151 @@ def filter_and_route_multicare(
     return result_df
 
 
+# ==============================================================================
+# STEP 5: CLINICAL POST-FILTERING (STAGE 5 REFINEMENT)
+# ==============================================================================
+
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent.parent  # Datasets/ repository root
+
+TARGET_26_BENCHMARK_CLASSES: Set[str] = {
+    "malaria", "amebiasis", "visceral leishmaniasis", "cutaneous leishmaniasis",
+    "Chagas disease", "mucocutaneous leishmaniasis", "echinococcosis", "cysticercosis",
+    "schistosomiasis", "strongyloidiasis", "filarial elephantiasis", "leptospirosis",
+    "typhoid fever", "leprosy", "scrub typhus", "cholera", "melioidosis",
+    "dengue disease", "chikungunya", "rabies", "yellow fever", "Japanese encephalitis",
+    "Zika fever", "Ebola virus disease", "paracoccidioidomycosis", "scabies",
+}
+
+
+def load_post_filtering_classes(txt_path: str | Path | None = None) -> Set[str]:
+    """Parse disease_post_filtering.txt if available, falling back to TARGET_26_BENCHMARK_CLASSES."""
+    if txt_path and Path(txt_path).exists():
+        classes: Set[str] = set()
+        pattern = re.compile(r"^[│\s]*[├└]──\s+DOID:\S+\s+([^(]+?)\s+\(")
+        with open(txt_path, "r", encoding="utf-8") as f:
+            for line in f:
+                m = pattern.search(line)
+                if m:
+                    classes.add(m.group(1).strip())
+        if len(classes) == 26:
+            return classes
+    return set(TARGET_26_BENCHMARK_CLASSES)
+
+
+def apply_clinical_post_filtering(
+    hard_filtered_df: pd.DataFrame,
+    output_parquet_path: str | Path,
+    output_csv_path: str | Path,
+    post_filter_txt_path: str | Path | None = None,
+) -> pd.DataFrame:
+    """
+    Stage 5: Filter hard-filtered dataset (50 classes) to the 26 target benchmark classes.
+    Eliminates 18 ultra-rare tail diseases (<= 20 cases), 3 parent fallbacks lacking definitive guidelines,
+    and 3 incidental/polymorphic diseases.
+    """
+    target_classes = load_post_filtering_classes(post_filter_txt_path)
+    final_df = hard_filtered_df[
+        hard_filtered_df["label_disease_name"].isin(target_classes)
+    ].reset_index(drop=True)
+
+    output_parquet_path = Path(output_parquet_path)
+    output_csv_path = Path(output_csv_path)
+    output_parquet_path.parent.mkdir(parents=True, exist_ok=True)
+    output_csv_path.parent.mkdir(parents=True, exist_ok=True)
+
+    final_df.to_parquet(output_parquet_path, index=False)
+    final_df.to_csv(output_csv_path, index=False, encoding="utf-8-sig")
+
+    print(f"\n✅ POST-FILTERING STAGE 5 COMPLETED (Final Benchmark Dataset):")
+    print(f"   - Total gold records                : {len(final_df):,}")
+    print(f"   - Total unique case_id count        : {final_df['case_id'].nunique():,}")
+    print(f"   - Target disease classes            : {final_df['label_disease_name'].nunique():,}")
+    print(f"   - Saved final parquet to            : {output_parquet_path}")
+    print(f"   - Saved final csv to                : {output_csv_path}")
+
+    return final_df
+
+
 if __name__ == "__main__":
     BASE_DIR = Path(__file__).resolve().parent
-    CSV_DICT_PATH = BASE_DIR / \
-        r"D:\SMMCD\Small-Multimodal-Models-for-Clinical-Diagnosis\Regex_Final_Pipeline\UMLS\master_umls_dictionary.csv"
+    PROJECT_ROOT = BASE_DIR.parent.parent  # Datasets/ root
 
-    engine_info = build_ontology_regex_engine(str(CSV_DICT_PATH))
+    DEFAULT_DICT = BASE_DIR / "UMLS" / "master_umls_dictionary.csv"
+    DEFAULT_POST_TXT = BASE_DIR / "disease_post_filtering.txt"
+
+    parser = argparse.ArgumentParser(
+        description="MultiCaRe Tropical Diseases Regex Extraction & Taxonomy Routing Runner"
+    )
+    parser.add_argument("--cases", type=Path, default=None, help="Path to cases.parquet")
+    parser.add_argument("--metadata", type=Path, default=None, help="Path to metadata.parquet")
+    parser.add_argument("--dict", type=Path, default=DEFAULT_DICT, help="Path to master_umls_dictionary.csv")
+    parser.add_argument("--out-dir", type=Path, default=BASE_DIR, help="Directory to save generated outputs")
+    parser.add_argument("--workers", type=int, default=min(os.cpu_count() or 4, 8), help="CPU workers for parallel scan")
+    parser.add_argument("--skip-scan", action="store_true", help="Compile and export dictionary preview only (no MultiCaRe scan)")
+
+    args = parser.parse_args()
+
+    # 1. Compile engine and export keyword preview
+    engine_info = build_ontology_regex_engine(str(args.dict))
     print(
-        f"Successfully compiled {len(engine_info['standalone'])} Standalone diseases and {len(engine_info['parent_folders'])} Parent hierarchies.")
+        f"Successfully compiled {len(engine_info['standalone'])} Standalone diseases and {len(engine_info['parent_folders'])} Parent hierarchies."
+    )
+    args.out_dir.mkdir(parents=True, exist_ok=True)
     export_cleaned_dictionary_preview(
         engine_info,
-        str(BASE_DIR / "verified_74_doid_keywords.csv")
+        str(args.out_dir / "verified_74_doid_keywords.csv")
     )
 
-    CASES_PARQUET = Path(
-        r"D:\SMMCD\Small-Multimodal-Models-for-Clinical-Diagnosis\Regex_Final_Pipeline\cases.parquet")
-    METADATA_PARQUET = Path(
-        r"D:\SMMCD\Small-Multimodal-Models-for-Clinical-Diagnosis\Regex_Final_Pipeline\metadata.parquet")
+    if args.skip_scan:
+        print("\n✅ Dictionary compilation complete. Scanning skipped per --skip-scan flag.")
+        exit(0)
 
-    if CASES_PARQUET.exists() and METADATA_PARQUET.exists():
-        filter_and_route_multicare(
-            cases_parquet_path=str(CASES_PARQUET),
-            metadata_parquet_path=str(METADATA_PARQUET),
-            csv_dictionary_path=str(CSV_DICT_PATH),
-            output_parquet_path=str(
-                BASE_DIR / "multicare_tropical_diseases_hard_filtered.parquet"),
-            output_csv_path=str(
-                BASE_DIR / "multicare_tropical_diseases_hard_filtered.csv"),
+    # 2. Resolve cases.parquet and metadata.parquet
+    def resolve_candidate(provided: Path | None, filename: str) -> Path | None:
+        if provided and provided.exists():
+            return provided
+        env_val = os.getenv(f"MULTICARE_{filename.split('.')[0].upper()}")
+        if env_val and Path(env_val).exists():
+            return Path(env_val)
+        candidates = [
+            BASE_DIR / filename,
+            PROJECT_ROOT / "Official_MultiCaRe" / "whole_multicare_dataset" / filename,
+            PROJECT_ROOT / "Archive-001" / filename,
+            PROJECT_ROOT / "medical_datasets" / "whole_multicare_dataset" / filename,
+        ]
+        for c in candidates:
+            if c.exists():
+                return c
+        return None
+
+    cases_path = resolve_candidate(args.cases, "cases.parquet")
+    metadata_path = resolve_candidate(args.metadata, "metadata.parquet")
+
+    if cases_path and metadata_path:
+        print(f"\n📂 Using input datasets:")
+        print(f"   - Cases parquet   : {cases_path}")
+        print(f"   - Metadata parquet: {metadata_path}")
+        hard_filtered_df = filter_and_route_multicare(
+            cases_parquet_path=str(cases_path),
+            metadata_parquet_path=str(metadata_path),
+            csv_dictionary_path=str(args.dict),
+            output_parquet_path=str(args.out_dir / "multicare_tropical_diseases_hard_filtered.parquet"),
+            output_csv_path=str(args.out_dir / "multicare_tropical_diseases_hard_filtered.csv"),
+            workers=args.workers,
         )
+        if not hard_filtered_df.empty:
+            apply_clinical_post_filtering(
+                hard_filtered_df=hard_filtered_df,
+                output_parquet_path=args.out_dir / "multicare_tropical_disease_final.parquet",
+                output_csv_path=args.out_dir / "multicare_tropical_disease_final.csv",
+                post_filter_txt_path=DEFAULT_POST_TXT,
+            )
     else:
-        print(
-            "\n⚠️ cases.parquet or metadata.parquet not found at the default paths.")
+        print("\n⚠️ MultiCaRe dataset parquets not found in default paths.")
+        print("   Searched locations:")
+        print(f"   - {BASE_DIR}")
+        print(f"   - {PROJECT_ROOT / 'Official_MultiCaRe' / 'whole_multicare_dataset'}")
+        print(f"   - {PROJECT_ROOT / 'Archive-001'}")
+        print("\n   To run the full extraction, provide explicit paths via:")
+        print("   python dataset_runner.py --cases /path/to/cases.parquet --metadata /path/to/metadata.parquet")

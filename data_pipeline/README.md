@@ -4,7 +4,24 @@ Code for building **Part A**, a multimodal dataset of 1,797 published patient ca
 
 The dataset itself (cases, images, rewrites, case-definition grading) is published on Kaggle with a detailed README. This repository holds the scripts and prompts that produced it.
 
-## Pipeline
+## Pipeline Components
+
+The `data_pipeline/` module houses two complementary clinical extraction and curation frameworks:
+
+1. **LLM Extraction & Verification Suite (`data_pipeline/llm/`):**
+   - Multi-stage LLM-assisted clinical extraction requiring exact verbatim evidence quotes.
+   - MedCaseReasoning blind case rewriting removing diagnostic spoilers from admission vignettes.
+   - Algorithmic case-definition checklists (22 WHO/CDC classes).
+   - Generates the 1,797-case `partA_final.jsonl` cohort.
+
+2. **UMLS Regex Extraction & Taxonomic Routing Engine (`data_pipeline/regex_pipeline/`):**
+   - Grounded in 74 DOID ontology nodes and 16 clean medical vocabularies in the UMLS Metathesaurus.
+   - Implements two-pass hierarchical scanning (Child-First -> Sibling Differential Masking Fallback).
+   - Solves critical microbiological disambiguations (Yaws vs Syphilis, Trachoma vs Urogenital Chlamydia).
+   - Produces the 26-class gold benchmark dataset (`multicare_tropical_disease_final.parquet`, 2,674 rows).
+   - Full documentation and usage guide: see [`data_pipeline/regex_pipeline/README.md`](regex_pipeline/README.md).
+
+## LLM Pipeline (Part A)
 
 ```
 MultiCaRe: 76,137 case reports

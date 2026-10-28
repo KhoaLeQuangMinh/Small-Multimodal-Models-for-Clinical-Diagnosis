@@ -72,27 +72,28 @@ Following an exhaustive audit comparing extraction keywords against source artic
 
 ## 3. Directory Structure & File Manifest
 
-All files in this directory (`Dataset/Khang's Latest Update/`) represent the curated pipeline:
+All files in this directory (`data_pipeline/regex_pipeline/`) represent the curated pipeline:
 
 ```text
-Khang's Latest Update/
+data_pipeline/regex_pipeline/
 │
 ├── README.md                                    # This comprehensive dataset documentation
 ├── disease_post_filtering.txt                   # Flat 26-disease taxonomy organized by pathogen class
 ├── disease_pre_filtering.txt                    # Original 74-DOID hierarchical taxonomy (11 parent + 33 standalone)
 │
-├── multicare_tropical_disease_final.parquet     # Official clean gold dataset (2,674 rows, 2,140 patients, 26 classes)
+├── multicare_tropical_disease_final.parquet     # Official clean gold benchmark dataset (2,674 rows, 2,140 patients, 26 classes)
 ├── multicare_tropical_disease_final.csv         # CSV counterpart of the final gold dataset
 │
-├── multicare_tropical_diseases_hard_filtered.parquet # Intermediate extraction before post-filtering
+├── multicare_tropical_diseases_hard_filtered.parquet # Intermediate extraction before post-filtering (50 classes, 2,967 rows)
 ├── multicare_tropical_diseases_hard_filtered.csv     # CSV counterpart of the hard-filtered extraction
 │
 ├── verified_74_doid_keywords.csv                # Audited, cleaned dictionary of keywords and routing rules
 ├── dataset_runner.py                            # Unified regex extraction & hierarchy routing engine
 │
-├── UMLS/                                        # Master UMLS dictionary and cleaned keyword caches
-│   └── master_umls_dictionary.csv
-└── UMLS_raw_backup/                             # Raw concept definitions and backups
+├── UMLS/                                        # Master UMLS dictionary and cleaned keyword caches (78 disease CSVs)
+│   ├── master_umls_dictionary.csv
+│   └── UMLS_LOOKUP_TABLE.md
+└── UMLS_raw_backup/                             # Raw concept definitions and backups (if present locally)
 ```
 
 ---
@@ -238,11 +239,14 @@ Every row in `multicare_tropical_disease_final.parquet` and `.csv` contains 13 f
 
 ## 8. Quick Start: Loading and Inspecting the Data
 
+### A. Loading the Dataset in Python
+
 ```python
 import pandas as pd
 from pathlib import Path
 
-DATA_DIR = Path("D:/SMMCD/Small-Multimodal-Models-for-Clinical-Diagnosis/Dataset/Khang's Latest Update")
+# Cross-platform relative path
+DATA_DIR = Path(__file__).resolve().parent if "__file__" in locals() else Path("data_pipeline/regex_pipeline")
 
 # 1. Load the official gold dataset
 df = pd.read_parquet(DATA_DIR / "multicare_tropical_disease_final.parquet")
@@ -267,6 +271,22 @@ for labels in multi_patients:
 print("\nTop 5 Co-occurring Disease Pairs:")
 for pair, count in pairs.most_common(5):
     print(f"  {pair[0]} + {pair[1]}: {count} cases")
+```
+
+### B. Running the Dataset Extraction & Routing Engine
+
+```bash
+# 1. Compile regex dictionary and preview keywords only (fast smoke test):
+python3 data_pipeline/regex_pipeline/dataset_runner.py --skip-scan
+
+# 2. Run full extraction over MultiCaRe (auto-detects Official_MultiCaRe/whole_multicare_dataset):
+python3 data_pipeline/regex_pipeline/dataset_runner.py
+
+# 3. Or provide custom file locations explicitly:
+python3 data_pipeline/regex_pipeline/dataset_runner.py \
+    --cases Official_MultiCaRe/whole_multicare_dataset/cases.parquet \
+    --metadata Official_MultiCaRe/whole_multicare_dataset/metadata.parquet \
+    --workers 8
 ```
 
 ---
