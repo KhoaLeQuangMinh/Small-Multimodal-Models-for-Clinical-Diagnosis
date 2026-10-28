@@ -1,0 +1,86 @@
+FINAL POST-FILTERED GOLD BENCHMARK TAXONOMY (26 TARGET TROPICAL DISEASES)
+========================================================================================
+Source: MultiCaRe Cleaned Extraction (multicare_tropical_disease_final.parquet)
+Total Case Records : 2,674
+Unique Patients     : 2,140
+Unique PMC Articles: 1,951
+Target Classes     : 26
+
+Exclusion Rationale:
+- Omitted 24 diseases (Classes 31-50, 20, 22, 25, 28 from the initial extraction).
+- Filters out ultra-rare tail diseases (<= 20 cases, down to 1 case), non-specific parent fallbacks lacking definitive guidelines (unspecified leishmaniasis/filariasis/trypanosomiasis), incidental helminths with non-standardized diagnostic criteria (ascariasis, fascioliasis), and polymorphic fungi lacking unified clinical diagnostic standards (sporotrichosis).
+
+========================================================================================
+TAXONOMY ORGANIZED BY PATHOGEN CLASS (6 CLASSES)
+========================================================================================
+
+1. PROTOZOAN (6 Diseases | 748 Case Records | 465 Single | 283 Multi)
+   ├── DOID:12365  malaria                      (436 cases | 273 single | 163 multi | Parent Rollup)
+   ├── DOID:9181   amebiasis                    ( 91 cases |  62 single |  29 multi | Standalone Leaf)
+   ├── DOID:9146   visceral leishmaniasis       ( 87 cases |  51 single |  36 multi | Specific Child)
+   ├── DOID:9111   cutaneous leishmaniasis      ( 60 cases |  34 single |  26 multi | Specific Child)
+   ├── DOID:12140  Chagas disease               ( 53 cases |  41 single |  12 multi | Specific Child)
+   └── DOID:9155   mucocutaneous leishmaniasis  ( 21 cases |   4 single |  17 multi | Specific Child)
+
+2. HELMINTH (5 Diseases | 687 Case Records | 601 Single | 86 Multi)
+   ├── DOID:1496   echinococcosis               (371 cases | 344 single |  27 multi | Parent Rollup / Hydatid)
+   ├── DOID:10079  cysticercosis                (132 cases | 119 single |  13 multi | Specific Child / Neurocysticercosis)
+   ├── DOID:1395   schistosomiasis              ( 98 cases |  74 single |  24 multi | Parent Rollup)
+   ├── DOID:10955  strongyloidiasis             ( 59 cases |  43 single |  16 multi | Standalone Leaf)
+   └── DOID:12211  filarial elephantiasis       ( 27 cases |  21 single |   6 multi | Specific Child)
+
+3. BACTERIAL (6 Diseases | 577 Case Records | 368 Single | 209 Multi)
+   ├── DOID:2297   leptospirosis                (141 cases |  78 single |  63 multi | Standalone Leaf)
+   ├── DOID:13258  typhoid fever                (136 cases |  68 single |  68 multi | Standalone Leaf)
+   ├── DOID:1024   leprosy                      (124 cases | 108 single |  16 multi | Parent Rollup / Hansen's)
+   ├── DOID:13371  scrub typhus                 ( 64 cases |  27 single |  37 multi | Standalone Leaf)
+   ├── DOID:1498   cholera                      ( 56 cases |  42 single |  14 multi | Standalone Leaf)
+   └── DOID:5052   melioidosis                  ( 56 cases |  45 single |  11 multi | Standalone Leaf)
+
+4. VIRAL (7 Diseases | 571 Case Records | 282 Single | 289 Multi)
+   ├── DOID:12205  dengue disease               (332 cases | 159 single | 173 multi | Parent Rollup)
+   ├── DOID:0050012 chikungunya                 ( 58 cases |  13 single |  45 multi | Standalone Leaf)
+   ├── DOID:11260  rabies                       ( 58 cases |  49 single |   9 multi | Standalone Leaf)
+   ├── DOID:10844  Japanese encephalitis        ( 41 cases |  24 single |  17 multi | Standalone Leaf)
+   ├── DOID:0060478 Zika fever                  ( 34 cases |  18 single |  16 multi | Standalone Leaf)
+   ├── DOID:9682   yellow fever                 ( 27 cases |   5 single |  22 multi | Standalone Leaf)
+   └── DOID:4325   Ebola virus disease          ( 21 cases |  14 single |   7 multi | Standalone Leaf)
+
+5. ECTOPARASITIC (1 Disease | 50 Case Records | 46 Single | 4 Multi)
+   └── DOID:8295   scabies                      ( 50 cases |  46 single |   4 multi | Parent Rollup)
+
+6. FUNGAL (1 Disease | 41 Case Records | 29 Single | 12 Multi)
+   └── DOID:12662  paracoccidioidomycosis       ( 41 cases |  29 single |  12 multi | Standalone Leaf)
+
+========================================================================================
+LIST OF 24 OMITTED DISEASES
+========================================================================================
+1. Unspecified Parent Fallbacks (3):
+   - leishmaniasis (DOID:9065, 46 cases)
+   - filariasis (DOID:1080, 20 cases)
+   - trypanosomiasis (DOID:10113, 4 cases)
+
+2. Difficult Guidelines / Incidental / Polymorphic (3):
+   - ascariasis (DOID:456, 32 cases)
+   - fascioliasis (DOID:885, 23 cases)
+   - sporotrichosis (DOID:14484, 41 cases)
+
+3. Ultra-Rare Tail Diseases (18):
+   - chromoblastomycosis (DOID:1562, 14 cases)
+   - clonorchiasis (DOID:13767, 13 cases)
+   - Buruli ulcer disease (DOID:0050456, 13 cases)
+   - eumycotic mycetoma (DOID:13078, 13 cases)
+   - angiostrongyliasis (DOID:0050256, 12 cases)
+   - paragonimiasis (DOID:10699, 11 cases)
+   - taeniasis (DOID:0050596, 8 cases)
+   - Rift Valley fever (DOID:1328, 7 cases)
+   - ancylostomiasis (DOID:12841, 7 cases)
+   - trichuriasis (DOID:1252, 6 cases)
+   - sleeping sickness (DOID:10112, 5 cases)
+   - onchocerciasis (DOID:11678, 5 cases)
+   - trachoma (DOID:11265, 5 cases)
+   - loiasis (DOID:13523, 4 cases)
+   - dracunculiasis (DOID:14418, 1 case)
+   - mansonelliasis (DOID:1081, 1 case)
+   - necatoriasis (DOID:2790, 1 case)
+   - yaws (DOID:10371, 1 case)
