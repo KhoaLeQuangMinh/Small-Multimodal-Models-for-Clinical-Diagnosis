@@ -34,10 +34,11 @@ This repository unifies three interconnected clinical engineering pillars into a
 
 ### Pillar 1: Clinical Data Curation Pipeline (`data_pipeline/`)
 Curated from upstream PMC open-access case reports:
-- **MeSH Disease Cohort Derivation (`build_partA.py`):** Selects cases mapped to 22 WHO/CDC neglected tropical diseases.
-- **Verbatim Evidence Verification (`prompt_v4.py`, `check_v4.py`, `merge_v4.py`):** Multi-stage LLM extraction requiring exact source quotes.
-- **Blinded Case Rewriting (`rewrite_agent.py`):** MedCaseReasoning-style reformulations removing diagnostic spoilers from admission vignettes.
-- **Algorithmic Case Definition Checklist (`casedef_agent.py`):** Grades diagnostic certainty (Confirmed / Probable / Suspected) against published CDC/WHO/EORTC surveillance guidelines.
+- **MeSH Disease Cohort Derivation (`llm/build_partA.py`):** Selects cases mapped to 22 WHO/CDC neglected tropical diseases.
+- **Verbatim Evidence Verification (`llm/prompt_v4.py`, `check_v4.py`, `merge_v4.py`):** Multi-stage LLM extraction requiring exact source quotes.
+- **Blinded Case Rewriting (`llm/rewrite_agent.py`):** MedCaseReasoning-style reformulations removing diagnostic spoilers from admission vignettes.
+- **Algorithmic Case Definition Checklist (`llm/casedef_agent.py`):** Grades diagnostic certainty (Confirmed / Probable / Suspected) against published CDC/WHO/EORTC surveillance guidelines.
+- **UMLS & Regex Extraction Engine (`regex_pipeline/dataset_runner.py`):** Multi-tier regex engine with Latin binomial expansion, sibling differential masking, and hierarchical routing over 74 DOID concepts, producing an audited 26-class gold benchmark (2,674 cases).
 
 ### Pillar 2: LightRAG Knowledge Graph & Benchmark Suite
 A multi-tier evaluation framework benchmarking Knowledge Graph retrieval for clinical differential diagnosis:
@@ -108,7 +109,8 @@ Datasets/
 ├── data_pipeline/                                      # [Pillar 1] Clinical Data Curation Pipeline
 │   ├── README.md
 │   ├── docs/
-│   └── llm/
+│   ├── llm/                                            # LLM curation pipeline (Billy: Part A, prompts, casedef)
+│   └── regex_pipeline/                                 # UMLS regex curation pipeline (Khang: 26-class benchmark)
 │
 ├── stage1_disease_guides/                              # [Pillar 3 - Stage 1] 22 Disease Monographs & Semantic KG
 ├── stage2_medcase_distillation/                        # [Pillar 3 - Stage 2] 1,427 Patient Vignettes & Episodic Twins
